@@ -1,0 +1,272 @@
+[
+  {
+    "idx": 1,
+    "id": "qifo",
+    "title": "七佛传法偈",
+    "author": "迦叶尊者等",
+    "category": "佛祖授记",
+    "summary": "过去七佛传法偈颂，展现从释迦牟尼佛至迦叶尊者的正法眼藏印心偈言。",
+    "word_count": 1602,
+    "filename": "01_qifo.md"
+  },
+  {
+    "idx": 2,
+    "id": "juelin",
+    "title": "觉林菩萨偈",
+    "author": "觉林菩萨",
+    "category": "华严精义",
+    "summary": "“若人欲了知，三世一切佛，应观法界性，一切唯心造。”禅宗最核心的心造万法偈颂。",
+    "word_count": 2277,
+    "filename": "02_juelin.md"
+  },
+  {
+    "idx": 3,
+    "id": "wenshu",
+    "title": "文殊师利所说摩诃般若波罗蜜经",
+    "author": "文殊菩萨",
+    "category": "般若经群",
+    "summary": "阐明一行三昧与摩诃般若无相之理，为达摩与六祖所依凭的核心经文。",
+    "word_count": 11256,
+    "filename": "03_wenshu.md"
+  },
+  {
+    "idx": 4,
+    "id": "wuran",
+    "title": "无染觉性直观自行解脱之道",
+    "author": "莲花生大士",
+    "category": "直指心性",
+    "summary": "莲花生大士开示直观本觉、无染自解脱之大圆满与禅宗同质心法。",
+    "word_count": 7141,
+    "filename": "04_wuran.md"
+  },
+  {
+    "idx": 5,
+    "id": "zhangzhi",
+    "title": "杖指教授",
+    "author": "禅宗密意",
+    "category": "直指心性",
+    "summary": "以杖直指当下灵觉，令学人直下见性，当下顿悟。",
+    "word_count": 2411,
+    "filename": "05_zhangzhi.md"
+  },
+  {
+    "idx": 6,
+    "id": "xuemaicong",
+    "title": "菩提达摩大师血脉论",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "达摩祖师直指“若见性即是佛，不见性即是众生”。立心即佛、离心无佛之教外别传旨趣。",
+    "word_count": 6192,
+    "filename": "06_xuemaicong.md"
+  },
+  {
+    "idx": 7,
+    "id": "wuxinglun",
+    "title": "菩提达摩大师悟性论",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "论述寂照不二、无念无妄与大圆镜智之悟性极旨。",
+    "word_count": 5313,
+    "filename": "07_wuxinglun.md"
+  },
+  {
+    "idx": 8,
+    "id": "poxianglun",
+    "title": "菩提达摩大师破相论",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "破除外在名相形式执着，将六度、持戒、建寺、诵经归结于自心观照。",
+    "word_count": 6022,
+    "filename": "08_poxianglun.md"
+  },
+  {
+    "idx": 9,
+    "id": "wuxinlun",
+    "title": "菩提达摩大师无心论",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "直探“无心”之真谛，无妄心者即名无心，非同木石。",
+    "word_count": 2556,
+    "filename": "09_wuxinlun.md"
+  },
+  {
+    "idx": 10,
+    "id": "xixulun",
+    "title": "菩提达摩大师息许论",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "阐明息灭妄想狂心、契入无生法忍之顿悟修行。",
+    "word_count": 2764,
+    "filename": "10_xixulun.md"
+  },
+  {
+    "idx": 11,
+    "id": "sixingguan",
+    "title": "菩提达摩大师入道四行观",
+    "author": "菩提达摩",
+    "category": "达摩四论",
+    "summary": "报冤行、随缘行、无所求行、称法行，理入与行入并重。",
+    "word_count": 1537,
+    "filename": "11_sixingguan.md"
+  },
+  {
+    "idx": 12,
+    "id": "xinxinming",
+    "title": "信心铭",
+    "author": "三祖僧璨",
+    "category": "祖师铭颂",
+    "summary": "“至道无难，唯嫌挑选。但莫憎爱，洞然明白。”禅宗不二法门第一铭文。",
+    "word_count": 1842,
+    "filename": "12_xinxinming.md"
+  },
+  {
+    "idx": 13,
+    "id": "fangcunlun",
+    "title": "方寸论",
+    "author": "禅宗古德",
+    "category": "祖师铭颂",
+    "summary": "直论方寸本心之清净寂照。",
+    "word_count": 1155,
+    "filename": "13_fangcunlun.md"
+  },
+  {
+    "idx": 14,
+    "id": "anxin",
+    "title": "入道安心要方便法门",
+    "author": "四祖道信",
+    "category": "祖师心法",
+    "summary": "依《楞伽经》诸佛心第一，依《文殊说般若经》一行三昧。",
+    "word_count": 5423,
+    "filename": "14_anxin.md"
+  },
+  {
+    "idx": 15,
+    "id": "zuishangcheng",
+    "title": "最上乘论",
+    "author": "五祖弘忍",
+    "category": "祖师心法",
+    "summary": "“守本真心”为成佛第一要务，自心本来清净。",
+    "word_count": 4659,
+    "filename": "15_zuishangcheng.md"
+  },
+  {
+    "idx": 16,
+    "id": "tanjing",
+    "title": "六祖坛经",
+    "author": "六祖惠能",
+    "category": "宗门至宝",
+    "summary": "禅宗最具代表性核心经典。自性顿悟、定慧等持、无念无相无住。",
+    "word_count": 24893,
+    "filename": "16_tanjing.md"
+  },
+  {
+    "idx": 17,
+    "id": "zhengdaoge",
+    "title": "永嘉证道歌",
+    "author": "永嘉玄觉",
+    "category": "祖师铭颂",
+    "summary": "“君不见，绝学无为闲道人，不除妄想不求真。”一宿觉禅师顿悟高歌。",
+    "word_count": 3183,
+    "filename": "17_zhengdaoge.md"
+  },
+  {
+    "idx": 18,
+    "id": "mazu",
+    "title": "马祖道一禅师语录",
+    "author": "马祖道一",
+    "category": "江左洪州",
+    "summary": "“即心即佛”、“平常心是道”，开创江左洪州雄浑禅风。",
+    "word_count": 6666,
+    "filename": "18_mazu.md"
+  },
+  {
+    "idx": 19,
+    "id": "baizhang",
+    "title": "百丈怀海禅师语录",
+    "author": "百丈怀海",
+    "category": "清规祖师",
+    "summary": "立禅门清规，“一日不作，一日不食”，开创丛林制度。",
+    "word_count": 4358,
+    "filename": "19_baizhang.md"
+  },
+  {
+    "idx": 20,
+    "id": "huangbo",
+    "title": "黄檗山断际禅师传心法要",
+    "author": "黄檗希运",
+    "category": "传心要门",
+    "summary": "诸佛与一切众生唯是一心，更无别法。裴休相国记录集结。",
+    "word_count": 1828,
+    "filename": "20_huangbo.md"
+  },
+  {
+    "idx": 21,
+    "id": "xiuxinjue",
+    "title": "高丽国普照禅师修心诀",
+    "author": "普照知呐",
+    "category": "海东禅法",
+    "summary": "海东禅宗巨擘普照知呐禅师论顿悟渐修、定慧双修之切要开示。",
+    "word_count": 1900,
+    "filename": "21_xiuxinjue.md"
+  },
+  {
+    "idx": 22,
+    "id": "linji",
+    "title": "镇州临济慧照禅师语录",
+    "author": "临济义玄",
+    "category": "临济棒喝",
+    "summary": "临济宗开山祖师，棒喝交驰，“赤肉团上有一无位真人”。",
+    "word_count": 1859,
+    "filename": "22_linji.md"
+  },
+  {
+    "idx": 23,
+    "id": "dunwu",
+    "title": "顿悟入道要门论",
+    "author": "大珠慧海",
+    "category": "顿悟捷径",
+    "summary": "“顿者，顿除妄念；悟者，悟无所得。”解禅门切要问答。",
+    "word_count": 1907,
+    "filename": "23_dunwu.md"
+  },
+  {
+    "idx": 24,
+    "id": "zhenxin",
+    "title": "高丽国普照禅师真心直说",
+    "author": "普照知呐",
+    "category": "海东禅法",
+    "summary": "全套 15 章直论真心正信、真心名体、真心所往，海东最著名禅修法要。",
+    "word_count": 2090,
+    "filename": "24_zhenxin.md"
+  },
+  {
+    "idx": 25,
+    "id": "zhigong",
+    "title": "宝志公禅师颂偈诗",
+    "author": "宝志公",
+    "category": "古德颂偈",
+    "summary": "梁代宝志公大士《大乘赞》《十二时颂》《万空歌》顿悟警世诗偈。",
+    "word_count": 2474,
+    "filename": "25_zhigong.md"
+  },
+  {
+    "idx": 26,
+    "id": "xinwangming",
+    "title": "傅大士心王铭",
+    "author": "傅大士",
+    "category": "古德颂偈",
+    "summary": "“观心空王，玄妙难测。”傅大士直指自性心王顿悟铭文。",
+    "word_count": 1346,
+    "filename": "26_xinwangming.md"
+  },
+  {
+    "idx": 27,
+    "id": "shenhui",
+    "title": "荷泽大师显宗记",
+    "author": "荷泽神会",
+    "category": "南宗法脉",
+    "summary": "荷泽神会大师定曹溪南宗顿悟正统之切要铭记。",
+    "word_count": 1461,
+    "filename": "27_shenhui.md"
+  }
+]

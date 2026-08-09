@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.env*
+*.tsbuildinfo
+next-env.d.ts
+raw_ocr/
+page_imgs/
+.agents/
+.DS_Store
+Thumbs.db

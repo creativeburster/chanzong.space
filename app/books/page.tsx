@@ -1,0 +1,93 @@
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { Sidebar } from '@/components/Sidebar';
+import { TopHeader } from '@/components/TopHeader';
+import { SearchModal } from '@/components/SearchModal';
+import manifest from '@/manifest.json';
+import { BookOpen, ChevronRight } from 'lucide-react';
+
+export default function BooksPage() {
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('全部');
+
+  const categories = ['全部', ...Array.from(new Set(manifest.map((item) => item.category)))];
+
+  const filtered = activeCategory === '全部' ? manifest : manifest.filter((item) => item.category === activeCategory);
+
+  return (
+    <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
+      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
+
+      <div className="flex-1 flex flex-col min-w-0">
+        <TopHeader />
+
+        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+          <div className="mb-8">
+            <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-800 mb-2">
+              <BookOpen className="w-4 h-4" />
+              <span>全量典籍藏经阁</span>
+            </div>
+            <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
+              书籍总览 ({filtered.length})
+            </h1>
+            <p className="text-sm text-slate-500 mt-1">
+              汇聚从《七佛传法偈》、达摩祖师四论、《六祖坛经》，到高丽国普照知呐禅师《真心直说》《修心诀》全量经典。
+            </p>
+          </div>
+
+          <div className="flex items-center space-x-2 overflow-x-auto pb-4 mb-6 scrollbar-none">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-3.5 py-1.5 rounded-xl text-[13px] font-semibold whitespace-nowrap transition-all ${
+                  activeCategory === cat
+                    ? 'bg-slate-900 text-white shadow-sm'
+                    : 'bg-white text-slate-600 border border-slate-200 hover:border-amber-600 hover:text-amber-800'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filtered.map((item) => (
+              <Link
+                key={item.id}
+                href={`/classics/${item.id}`}
+                className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200/60">
+                      {item.category}
+                    </span>
+                    <span className="text-xs text-slate-400 font-mono">#{item.idx}</span>
+                  </div>
+
+                  <h3 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-[13px] text-slate-500 mb-3">
+                    作者：{item.author}
+                  </p>
+                </div>
+
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
+                  <span>研读全文</span>
+                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </main>
+      </div>
+
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
+    </div>
+  );
+}

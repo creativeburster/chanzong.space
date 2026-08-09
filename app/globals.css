@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-zen: #FAF9F6;
+  --paper-zen: #FFFFFF;
+  --ink-zen: #18181B;
+  --stone-zen: #71717A;
+  --amber-zen: #A16207;
+}
+
+body {
+  background-color: var(--bg-zen);
+  color: var(--ink-zen);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.font-serif-zen {
+  font-family: 'Noto Serif SC', 'Crimson Pro', 'Songti SC', 'STSong', Georgia, serif;
+}
+
+/* Prose typography for the classic reader (no @tailwindcss/typography installed).
+   Modeled on ramanamaharshi.space reading rhythm: generous line-height, clear
+   heading hierarchy, gold-accented blockquotes. */
+.prose {
+  line-height: 1.9;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 700;
+  color: #1c1917;
+  line-height: 1.4;
+  margin: 1.8em 0 0.9em;
+}
+.prose h1 {
+  font-size: 1.6em;
+}
+.prose h2 {
+  font-size: 1.35em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid #e7e5e4;
+}
+.prose h3 {
+  font-size: 1.15em;
+}
+.prose h1:first-child,
+.prose h2:first-child {
+  margin-top: 0.4em;
+}
+.prose p {
+  margin: 1em 0;
+}
+.prose blockquote {
+  border-left: 4px solid #A16207;
+  background: #FDF8EF;
+  padding: 0.8em 1.2em;
+  margin: 1.4em 0;
+  border-radius: 0 8px 8px 0;
+  color: #5C4813;
+  font-style: italic;
+}
+.prose blockquote p {
+  margin: 0.3em 0;
+}
+.prose strong {
+  font-weight: 700;
+  color: #09090b;
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid #e7e5e4;
+  margin: 2.5em 0;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+  margin: 1em 0;
+}
+.prose li {
+  margin: 0.4em 0;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Zen Card Shadow & Effects */
+.zen-card {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  transition: all 0.2s ease-in-out;
+}
+
+.zen-card:hover {
+  border-color: #A16207;
+  box-shadow: 0 10px 25px -5px rgba(161, 98, 7, 0.08);
+  transform: translateY(-2px);
+}
