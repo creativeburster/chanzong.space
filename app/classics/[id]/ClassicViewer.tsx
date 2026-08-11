@@ -6,6 +6,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import { TranslationCard } from '@/components/TranslationCard';
+import { GlossaryCard } from '@/components/GlossaryCard';
 import { ClassicItem } from '@/lib/data';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
 import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare } from 'lucide-react';
@@ -31,6 +32,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [searchOpen, setSearchOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [fontSize, setFontSize] = useState<'normal' | 'large'>('normal');
+  const [displayRatio, setDisplayRatio] = useState(0.15);
   const { t } = useLang();
 
   const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id));
@@ -103,12 +105,40 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               className={`prose prose-zinc max-w-none font-serif-zen text-zinc-800 leading-relaxed ${
                 fontSize === 'large' ? 'text-[19px] sm:text-[21px] space-y-6' : 'text-[17px] sm:text-[19px] space-y-4'
               }`}
-              dangerouslySetInnerHTML={{ __html: htmlContent }}
+              dangerouslySetInnerHTML={{ __html: htmlContent.slice(0, Math.ceil(htmlContent.length * displayRatio)) }}
             />
+
+            {displayRatio < 1 && (
+              <div className="mt-8 flex flex-col items-center gap-3">
+                <div className="w-full max-w-xs h-1.5 bg-zinc-200 rounded-full overflow-hidden">
+                  <div className="h-full bg-amber-600 rounded-full transition-all" style={{ width: `${Math.round(displayRatio * 100)}%` }} />
+                </div>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => setDisplayRatio((r) => Math.min(1, r + 0.15))}
+                    className="px-5 py-2.5 rounded-xl bg-amber-900 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
+                  >
+                    {t('加载更多')}
+                  </button>
+                  <button
+                    onClick={() => setDisplayRatio(1)}
+                    className="px-5 py-2.5 rounded-xl border border-zinc-300 text-zinc-600 text-[14px] font-semibold hover:border-amber-700 hover:text-amber-800 transition-all"
+                  >
+                    {t('显示全部')}
+                  </button>
+                </div>
+                <p className="text-xs text-zinc-400">
+                  {t('已显示')} {Math.round(displayRatio * 100)}% · {t('约')} {Math.round(rawContent.length * displayRatio)} / {rawContent.length} {t('字')}
+                </p>
+              </div>
+            )}
           </article>
 
           {/* 白话今译（分页） */}
           <TranslationCard classicId={meta.id} />
+
+          {/* 生僻字解释 */}
+          <GlossaryCard sourceIds={[meta.id]} />
 
           {/* 延伸阅读：交叉引用 */}
           {(relPersons.length > 0 || relConcepts.length > 0 || relMethods.length > 0 || relQas.length > 0) && (

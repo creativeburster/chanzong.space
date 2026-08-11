@@ -268,5 +268,85 @@
     "summary": "荷泽神会大师定曹溪南宗顿悟正统之切要铭记。",
     "word_count": 1461,
     "filename": "27_shenhui.md"
+  },
+  {
+    "idx": 28,
+    "id": "jingangjing",
+    "title": "金刚般若波罗蜜经",
+    "author": "鸠摩罗什 译",
+    "category": "般若经群",
+    "summary": "禅宗印心第一圣经。离我相人相众生相寿者相，应无所住而生其心，凡所有相皆是虚妄。",
+    "word_count": 5580,
+    "filename": "28_jingangjing.md"
+  },
+  {
+    "idx": 29,
+    "id": "xinjing",
+    "title": "般若波罗蜜多心经",
+    "author": "玄奘 译",
+    "category": "般若经群",
+    "summary": "全大藏经般若核心精华。照见五蕴皆空，度一切苦厄，色不异空空不异色，心无挂碍远离颠倒梦想。",
+    "word_count": 260,
+    "filename": "29_xinjing.md"
+  },
+  {
+    "idx": 30,
+    "id": "yuanjuejing",
+    "title": "大方广圆觉修多罗了义经",
+    "author": "佛陀多罗 译",
+    "category": "般若经群",
+    "summary": "禅宗顿悟见性第一了义指南。知幻即离不作方便，离幻即觉亦无渐次。十二大菩萨请问圆觉清净妙心。",
+    "word_count": 14121,
+    "filename": "30_yuanjuejing.md"
+  },
+  {
+    "idx": 31,
+    "id": "chanlinbaoxun",
+    "title": "禅林宝训 (全四卷)",
+    "author": "大慧宗杲 · 竹庵士珪 辑",
+    "category": "禅门警策",
+    "summary": "宋代至今禅门丛林弟子必读的道德修持与住持指南。汇聚黄龙慧南、杨岐方会、慈明楚圆、灵源惟清、死心悟新等数十位大宗师警策法语。",
+    "word_count": 44110,
+    "filename": "31_chanlinbaoxun.md"
+  },
+  {
+    "idx": 32,
+    "id": "lengyanjing",
+    "title": "大佛顶首楞严经 (全十卷)",
+    "author": "般刺密帝 译 / 房融 笔受",
+    "category": "般若经群",
+    "summary": "开悟的楞严至尊神典。七处征心破除妄识，八还辨见显显湛然见性，观音耳根圆通反闻自性，五十阴魔辟除一切邪见魔障。",
+    "word_count": 256359,
+    "filename": "32_lengyanjing.md"
+  },
+  {
+    "idx": 33,
+    "id": "weimojiejing",
+    "title": "维摩诘所说经 (全十四品)",
+    "author": "鸠摩罗什 译",
+    "category": "般若经群",
+    "summary": "大乘居士禅顿悟第一极旨圣典。心净则佛土净，维摩长者弹叱小乘声闻，天女散花破除执着，维摩一默如雷震直入不二法门。",
+    "word_count": 142511,
+    "filename": "33_weimojiejing.md"
+  },
+  {
+    "idx": 34,
+    "id": "shiniutu",
+    "title": "十牛图颂并序",
+    "author": "宋·廓庵师远",
+    "category": "祖师铭颂",
+    "summary": "禅宗修行次第图示经典。以寻牛、见迹、见牛、得牛、牧牛、骑牛归家、忘牛存人、人牛俱忘、返本还源、入廛垂手十阶段，系统描绘从发心修行到明心见性、入世度生的完整心路历程。",
+    "word_count": 1200,
+    "filename": "34_shiniutu.md"
+  },
+  {
+    "idx": 35,
+    "id": "baojingsanmei",
+    "title": "宝镜三昧歌",
+    "author": "唐·洞山良价",
+    "category": "曹洞宗典",
+    "summary": "曹洞宗根本经典。洞山良价以四言九十四句阐明偏正回互之旨，以宝镜喻心性，以形影喻体用，以重离六爻演五位说，以主中主收束全篇。全篇三百七十六字，集曹洞宗纲宗之大成。",
+    "word_count": 376,
+    "filename": "35_baojingsanmei.md"
   }
 ]

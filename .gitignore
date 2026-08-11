@@ -9,3 +9,24 @@ page_imgs/
 .agents/
 .DS_Store
 Thumbs.db
+
+# 临时脚本
+_*.py
+*.ps1
+_pdf_pages/
+
+# C禅宗全书下载目录（正在下载，勿提交）
+C禅宗全书*/
+
+# baiduyun下载缓存
+*.baiduyun.p.downloading
+
+# PDF源文件
+*.pdf
+
+# 文本源文件
+wumenguan.txt
+yongjiaji.txt
+bashiguijusong.txt
+changuancejin.txt
+dachengqixinlun.txt

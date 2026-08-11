@@ -100,35 +100,44 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {manifest.slice(0, 6).map((item) => (
-                <Link
-                  key={item.id}
-                  href={`/classics/${item.id}`}
-                  className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800">
-                        {item.category}
-                      </span>
-                      <span className="text-xs text-slate-400 font-mono">#{item.idx}</span>
+              {[
+                manifest.find((m) => m.id === 'weimojiejing'),
+                manifest.find((m) => m.id === 'lengyanjing'),
+                manifest.find((m) => m.id === 'chanlinbaoxun'),
+                manifest.find((m) => m.id === 'yuanjuejing'),
+                manifest.find((m) => m.id === 'xinjing'),
+                manifest.find((m) => m.id === 'jingangjing'),
+              ]
+                .filter((item): item is NonNullable<typeof item> => Boolean(item))
+                .map((item) => (
+                  <Link
+                    key={item.id}
+                    href={`/classics/${item.id}`}
+                    className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800">
+                          {item.category}
+                        </span>
+                        <span className="text-xs text-slate-400 font-mono">#{item.idx}</span>
+                      </div>
+
+                      <h4 className="text-base font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
+                        {item.title}
+                      </h4>
+
+                      <p className="text-[13px] text-slate-500 mb-3">
+                        作者：{item.author}
+                      </p>
                     </div>
 
-                    <h4 className="text-base font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
-                      {item.title}
-                    </h4>
-
-                    <p className="text-[13px] text-slate-500 mb-3">
-                      作者：{item.author}
-                    </p>
-                  </div>
-
-                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
-                    <span>研读原文</span>
-                    <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
-              ))}
+                    <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
+                      <span>研读原文</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Link>
+                ))}
             </div>
           </div>
         </main>

@@ -526,7 +526,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["baojingsanmei"]
   },
   {
     "id": "chinul",
@@ -559,6 +559,531 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedBooks": [
       "xiuxinjue",
       "zhenxin"
+    ]
+  },
+  {
+    "id": "fudaoshi",
+    "name": "傅大士",
+    "title": "双林大士 / 梁代大士",
+    "era": "南北朝 (497 - 569)",
+    "lifeStory": "傅大士，名翕，字玄风，号双林大士，义乌人。与达摩祖师、宝志公并称“梁代三大士”。傅大士虽然身处居士身，但道高德备，创立双林禅寺。梁武帝请其讲《金刚经》，大士升座，以尺挥案一下，便下座。帝惊愕，宝志公问帝：“陛下会否？”帝曰：“不会。”宝志公曰：“大士讲经竟。”大士所作《心王铭》倡“观心空王，玄妙难测”，直指本心；其偈曰：“夜夜抱佛眠，朝朝还共起。起坐镇相随，语默同居止。纤毫无间隔，如形影相似。欲识佛去处，只这语声是。”是禅宗早期极其璀璨之见性绝唱。",
+    "teachings": "倡导心王独照、即心即佛。直指身中本具之灵觉自性，不假外求。",
+    "quotes": [
+      "夜夜抱佛眠，朝朝还共起。 —《偈颂》",
+      "观心空王，玄妙难测。 —《心王铭》"
+    ],
+    "classics": [
+      "傅大士心王铭"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "mind-transmission",
+      "buddha-nature"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "bodhidharma",
+      "zhigong"
+    ],
+    "relatedBooks": [
+      "xinwangming"
+    ]
+  },
+  {
+    "id": "zhigong",
+    "name": "宝志禅师",
+    "title": "志公禅师 / 梁代国师",
+    "era": "南北朝 (418 - 514)",
+    "lifeStory": "宝志禅师（志公大士），南朝宋、齐、梁代高僧，梁武帝尊为国师。世传为观音菩萨化身，性格旷达，言词俚俗而机锋极其犀利。所作《大乘赞》《十四科颂》《十二时颂》《万空歌》风行禅林。志公斥死坐枯禅者“莫作长坐痴人，泥土如何有道”，痛陈“不解即心即佛，真似骑驴觅驴”，为后世世俗破执、直指心性开辟了广阔先河。",
+    "teachings": "大道常在目前，莫除声色言语；即心即佛，切忌向外求他。",
+    "quotes": [
+      "大道常在目前，虽在目前难睹。 —《大乘赞》",
+      "不解即心即佛，真似骑驴觅驴。 —《大乘赞》",
+      "佛是不作底人，莫作如来事业。 —《大乘赞》"
+    ],
+    "classics": [
+      "宝志公禅师颂偈诗"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "instant-enlightenment",
+      "no-abiding"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "bodhidharma",
+      "fudaoshi"
+    ],
+    "relatedBooks": [
+      "zhigong"
+    ]
+  },
+  {
+    "id": "peixiu",
+    "name": "裴休",
+    "title": "唐代宰相 / 黄檗门下大护法",
+    "era": "唐代 (791 - 864)",
+    "lifeStory": "裴休，字公美，唐代名相，精通经论，深入禅宗。拜黄檗希运禅师为师，极其虔敬。曾于钟陵请黄檗开示，并亲自辑录集结了《黄檗山断际禅师传心法要》与《宛陵录》。裴休为《传心法要》作序，称黄檗“独佩最上乘离文字心印”，使得黄檗禅师一心之旨得以永耀后世。裴休亦亲造禅寺，护持丛林，为禅宗史上传佳话之第一要角护法。",
+    "teachings": "记录并护持“一心即佛，无别胜法”之绝对顿悟见地。",
+    "quotes": [
+      "独佩最上乘离文字心印，唯传一心，更无别法。 —《传心法要序》"
+    ],
+    "classics": [
+      "黄檗山断际禅师传心法要"
+    ],
+    "relatedConcepts": [
+      "mind-transmission",
+      "instant-enlightenment"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "huangbo",
+      "linji"
+    ],
+    "relatedBooks": [
+      "huangbo"
+    ]
+  },
+  {
+    "id": "huairang",
+    "name": "南岳怀让",
+    "title": "南岳尊者 / 六祖大弟子",
+    "era": "唐代 (677 - 744)",
+    "lifeStory": "南岳怀让禅师，吉州安成俗姓杜氏。前往曹溪参六祖惠能，六祖问：“什么物？怎么来？”怀让八年冥契，方白祖曰：“说似一物即不中。”六祖问：“还可修证否？”怀让曰：“修证即不无，污染即不得。”六祖遂印可：“只此不污染，诸佛之所护念。汝既如是，吾亦如是。”怀让后住南岳般若寺，接引马祖道一，以“磨砖作镜、打车打牛”顿破马祖执坐之病，开出洪州一脉，繁衍出临济、沩仰二宗。",
+    "teachings": "修证即不无，污染即不得。打车不如打牛，心即是佛。",
+    "quotes": [
+      "说似一物即不中。",
+      "修证即不无，污染即不得。"
+    ],
+    "classics": [
+      "马祖道一禅师语录"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "instant-enlightenment",
+      "direct-pointing"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "huineng",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "mazu"
+    ]
+  },
+  {
+    "id": "xingsi",
+    "name": "青原行思",
+    "title": "青原弘济禅师 / 六祖大弟子",
+    "era": "唐代 (671 - 740)",
+    "lifeStory": "青原行思禅师，吉州安城俗姓刘氏。参六祖惠能，问曰：“当何所务，即不落阶级？”六祖曰：“汝曾作什么来？”行思曰：“圣谛亦不为。”六祖曰：“落何阶级？”行思曰：“圣谛尚不为，何阶级之有！”六祖大器之，命分座接引。后住吉州青原山静居寺，接引石头希迁，下出曹洞、云门、法眼三宗，与南岳一系交相辉映，共享“一花五叶”之盛。",
+    "teachings": "圣谛尚不为，何阶级之有！直超阶级，直下承当。",
+    "quotes": [
+      "圣谛尚不为，何阶级之有！"
+    ],
+    "classics": [
+      "六祖坛经"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "instant-enlightenment",
+      "direct-pointing"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "huineng",
+      "shitou"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
+  },
+  {
+    "id": "shitou",
+    "name": "石头希迁",
+    "title": "石头和尚 / 青原嫡孙",
+    "era": "唐代 (700 - 790)",
+    "lifeStory": "石头希迁禅师，端州高要俗姓陈氏。幼诣曹溪，六祖临迁化前遗命“寻思去”，希迁后往吉州参青原行思，大彻大悟。后于湖南南岳结庵于大石之上，世称“石头和尚”。与江西马祖道一遥相呼应，天下学者“不归江西，即归湖南”。所著《参同契》阐明“回互不回互”之理，为曹洞宗五位君臣之基石；《草庵歌》高歌“庵中人，理常在，不见不知无处所”，极为深邃。",
+    "teachings": "门门一切境，回互不回互。心即是佛，直下承当。",
+    "quotes": [
+      "言下便会，自知本际。 —《参同契》",
+      "执事原是迷，契理亦非悟。 —《参同契》"
+    ],
+    "classics": [
+      "六祖坛经"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedMethods": [
+      "mozhao"
+    ],
+    "relatedPersons": [
+      "xingsi",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
+  },
+  {
+    "id": "xubuti",
+    "name": "须菩提",
+    "title": "须菩提尊者 / 解空第一",
+    "era": "古印度 (佛陀大弟子)",
+    "lifeStory": "须菩提（Subhūti），释迦牟尼佛十大弟子之一，被誉为“解空第一”、“无诤第一”。在《金刚般若波罗蜜经》中，须菩提代一切发阿耨多罗三藐三菩提者问佛“云何应住？云何降伏其心？”，引发佛陀宣说“应无所住而生其心”、“凡所有相，皆是虚妄”之无上般若极旨。须菩提闻经深解义趣，涕泪悲泣，感叹“我从昔来所得慧眼，未曾得闻如是之经”，为大乘般若法门之第一当机听者。",
+    "teachings": "解空第一，问发菩提心者云何应住降伏其心，引发无住生心之教。",
+    "quotes": [
+      "希有！世尊！如来善护念诸菩萨，善付嘱诸菩萨。 —《金刚经》",
+      "实无有法名阿罗汉。 —《金刚经》"
+    ],
+    "classics": [
+      "金刚般若波罗蜜经"
+    ],
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedMethods": [
+      "yixing-sanmei-practice"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "hongren"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "guanzizai",
+    "name": "观自在菩萨",
+    "title": "观自在菩萨 / 观世音菩萨",
+    "era": "大乘菩萨 (般若玄门总持)",
+    "lifeStory": "观自在菩萨（Avalokiteśvara），又称观世音菩萨。在《般若波罗蜜多心经》中，菩萨入深般若波罗蜜多大定，以无上般若妙智照见色受想行识五蕴皆空，顿超一切苦厄，并向舍利子宣说“色不异空、空不异色、色即是空、空即是色”以及“无所得”、“心无挂碍”之至极妙理，为大乘般若观照与圆通法门之总祖。",
+    "teachings": "行深般若波罗蜜多时，照见五蕴皆空，度一切苦厄。",
+    "quotes": [
+      "色不异空，空不异色，色即是空，空即是色。 —《心经》",
+      "心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想，究竟涅槃。 —《心经》"
+    ],
+    "classics": [
+      "般若波罗蜜多心经"
+    ],
+    "relatedConcepts": [
+      "wu-yun-jie-kong",
+      "se-ji-shi-kong",
+      "wu-gua-ai"
+    ],
+    "relatedMethods": [
+      "guan-zizai-banya-practice"
+    ],
+    "relatedPersons": [
+      "xubuti",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "puxian-yuanjue",
+    "name": "普贤菩萨",
+    "title": "普贤菩萨 / 大行离幻第一",
+    "era": "大乘菩萨 (圆觉因地上首)",
+    "lifeStory": "普贤菩萨（Samantabhadra），在大乘般若与禅宗中代表大行与无上顿悟。在《大方广圆觉修多罗了义经》第二章中，普贤菩萨代一切修行人请问“云何以幻还修于幻”、“云何令妄想心解脱”。佛陀因而宣说了震古烁今的“知幻即离，不作方便；离幻即觉，亦无渐次”之顿悟极旨。",
+    "teachings": "知幻即离，不作方便；离幻即觉，亦无渐次。",
+    "quotes": [
+      "知幻即离，不作方便；离幻即觉，亦无渐次。 —《圆觉经·普贤章》",
+      "一切众生种种幻化，皆生如来圆觉妙心。 —《圆觉经》"
+    ],
+    "classics": [
+      "大方广圆觉修多罗了义经"
+    ],
+    "relatedConcepts": [
+      "zhi-huan-ji-li",
+      "yuanjue-qingjing-xinxing"
+    ],
+    "relatedMethods": [
+      "yuanjue-sanzhong-jingguan"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "fotuoduoluo",
+    "name": "佛陀多罗",
+    "title": "佛陀多罗三藏 / 罽宾国译经大师",
+    "era": "唐代 (古印度罽宾国高僧)",
+    "lifeStory": "佛陀多罗（Buddhadrāta），唐代罽宾国（今克什米尔一带）三藏法师。于唐高宗永徽年间携梵文本《大方广圆觉修多罗了义经》至长安，在白马寺翻译出此经。其译文文辞极其优美典雅，气势宏勃，将般若圆觉顿悟之妙旨展现得淋漓尽致，成为后世禅宗与华严宗最尊奉的译本。",
+    "teachings": "译出《圆觉经》，为禅宗顿悟见性提供至高教证。",
+    "quotes": [
+      "大方广圆觉修多罗了义经，百千万亿恒河沙诸佛所共宣说。 —《圆觉经》"
+    ],
+    "classics": [
+      "大方广圆觉修多罗了义经"
+    ],
+    "relatedConcepts": [
+      "yuanjue-qingjing-xinxing"
+    ],
+    "relatedMethods": [
+      "yuanjue-sanzhong-jingguan"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "huanglong-huinan",
+    "name": "黄龙慧南",
+    "title": "黄龙慧南禅师 / 临济宗黄龙派开山祖师",
+    "era": "北宋 (1002—1069)",
+    "lifeStory": "黄龙慧南禅师（1002—1069），信州玉山人，北宋著名大禅师，临济宗黄龙派开山宗祖。继承石霜楚圆（慈明）法脉，住江西黄龙山，以“生缘、佛手、驴脚”三关勘验学者，世称“黄龙三关”。慧南大师极重道德治理，开示“住持大有三：德化也，礼治也，政刑也”，其训示为《禅林宝训》卷首第一章。",
+    "teachings": "住持大有三：德化也，礼治也，政刑也。以德感人，长治久安。",
+    "quotes": [
+      "住持大有三：德化也，礼治也，政刑也。 —《禅林宝训》",
+      "道不虚行，应物即现；心无妄求，何处不自在？ —《黄龙语录》"
+    ],
+    "classics": [
+      "禅林宝训",
+      "黄龙慧南禅师语录"
+    ],
+    "relatedConcepts": [
+      "de-hua-li-zhi",
+      "tou-xin-wei-si"
+    ],
+    "relatedMethods": [
+      "chanlin-jingce-practice"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "chuyuan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "yangqi-fanghui",
+    "name": "杨岐方会",
+    "title": "杨岐方会禅师 / 临济宗杨岐派开山祖师",
+    "era": "北宋 (996—1049)",
+    "lifeStory": "杨岐方会禅师（996—1049），袁州萍乡人，北宋临济宗杨岐派开山宗祖。参慈明楚圆大彻大悟。住袁州杨岐山，宗风高峻，机锋敏捷，后世禅宗绝大多数法脉皆出自杨岐派。大师甘于淡泊贫困，住修破屋宁受风雪吹打亦不劳众求安适，成为千古禅林苦行守道的典范。",
+    "teachings": "屋破遮风雪，修炼心道念。宁苦一身，不劳大众。",
+    "quotes": [
+      "杨岐屋壁破，风雪满床打。缩却脖项卧，寒夜终日过。 —《禅林宝训》",
+      "百尺竿头重进步，十方世界现全身。 —《杨岐语录》"
+    ],
+    "classics": [
+      "禅林宝训",
+      "杨岐方会禅师语录"
+    ],
+    "relatedConcepts": [
+      "tou-xin-wei-si"
+    ],
+    "relatedMethods": [
+      "chanlin-jingce-practice"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "chuyuan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "anan",
+    "name": "阿难尊者",
+    "title": "阿难尊者 / 多闻第一与禅宗二祖",
+    "era": "佛陀时代 (古印度圣者)",
+    "lifeStory": "阿难（Ānanda），佛陀侍者，多闻第一，禅宗西天二十八祖之第二祖。在《大佛顶首楞严经》开篇，阿难因乞食遭遇摩登伽女大幻术之难，世尊派文殊菩萨持神咒救护。佛陀随后对阿难进行“七处征心”与“八还辨见”的伟大对话，启发阿难破除妄识、见湛然常住见性。",
+    "teachings": "多闻不如真修实证，破除六尘缘影妄识，反闻闻自性。",
+    "quotes": [
+      "将此深心奉尘刹，是则名为报佛恩。 —《楞严经》",
+      "妙湛总持不动尊，首楞严王世稀有。 —《楞严经》"
+    ],
+    "classics": [
+      "大佛顶首楞严经",
+      "金刚般若波罗蜜经"
+    ],
+    "relatedConcepts": [
+      "qi-chu-zheng-xin",
+      "ba-huan-bian-jian"
+    ],
+    "relatedMethods": [
+      "er-gen-yuan-tong-practice"
+    ],
+    "relatedPersons": [
+      "xubuti",
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "lengyanjing",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "banramidi",
+    "name": "般刺密帝",
+    "title": "般刺密帝三藏 / 中天竺译经巨匠",
+    "era": "唐代 (古印度高僧)",
+    "lifeStory": "般刺密帝（Pramiti），唐代中天竺（中印度）沙门。因感念大乘首楞严绝旨应弘于震旦（中国），冒禁将《大佛顶首楞严经》梵本藏于臂膀剖肉之中带至广州。唐神龙元年（705年），在广州制旨寺（今光孝寺）与房融同译出此经，译完后即乘船西归，留下了这部震古烁今的开悟至尊圣典。",
+    "teachings": "刺臂藏经渡海，译出《楞严经》开悟震旦众生。",
+    "quotes": [
+      "大佛顶如来密因修证了义诸菩萨万行首楞严经。 —《楞严经》"
+    ],
+    "classics": [
+      "大佛顶首楞严经"
+    ],
+    "relatedConcepts": [
+      "qi-chu-zheng-xin",
+      "ba-huan-bian-jian"
+    ],
+    "relatedMethods": [
+      "er-gen-yuan-tong-practice"
+    ],
+    "relatedPersons": [
+      "anan"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "weimojie",
+    "name": "维摩诘长者",
+    "title": "维摩诘居士 / 大乘居士禅第一祖",
+    "era": "佛陀时代 (古印度毗耶离城大长者)",
+    "lifeStory": "维摩诘（Vimalakīrti），意译为“无垢称”，古印度毗耶离城大富长者，金粟如来之后身示现。虽在居家执持世俗产业，而心常在无上顿悟大定。在《维摩诘所说经》中，维摩诘称病示疾，弹叱舍利子、目犍连、大迦叶、弥勒菩萨等小乘与大乘执相习气，最终以“维摩一默如雷震”直示入不二法门，成为千年来禅宗居士见性成佛的第一模范标杆。",
+    "teachings": "随其心净则佛土净。不复起定示诸威仪，才是真正坐禅！默然无言，是真入不二法门。",
+    "quotes": [
+      "随其心净则佛土净。 —《维摩诘经》",
+      "一切众生病，是故我病；若一切众生病灭，则我病灭。 —《维摩诘经》"
+    ],
+    "classics": [
+      "维摩诘所说经"
+    ],
+    "relatedConcepts": [
+      "xin-jing-ji-fo-tu-jing",
+      "ru-bu-er-fa-men"
+    ],
+    "relatedMethods": [
+      "weimo-buer-practice"
+    ],
+    "relatedPersons": [
+      "wenshu-yuanjue",
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
+  },
+  {
+    "id": "wenshu-yuanjue",
+    "name": "文殊师利菩萨",
+    "title": "文殊师利菩萨 / 大智般若第一",
+    "era": "大乘菩萨 (圆觉、维摩、楞严诸法会上首)",
+    "lifeStory": "文殊师利（Mañjuśrī），意译“妙吉祥”，大乘般若智慧之化身，过去七佛之师。在《圆觉经》首章代众请问“如来本起清净因地法行”，引出全经总纲；在《维摩诘经》中奉命率诸菩萨声闻前往问疾，与维摩诘往复酬唱，至入不二法门处亲赞“默然无言”为究竟；在《楞严经》中受佛敕令拣选二十五圆通，判观世音耳根圆通为娑婆当机第一。禅宗尊其为“大智”，凡般若法筵，必以文殊为当机唱导之首。",
+    "teachings": "法界一相，无所取舍；知身心如幻，即无轮转。智慧不从外得，反闻自性，性成无上道。",
+    "quotes": [
+      "知是空华，即无轮转，亦无身心受彼生死。 —《圆觉经·文殊章》",
+      "善哉善哉！乃至无有文字语言，是真入不二法门。 —《维摩诘经·入不二法门品》",
+      "反闻闻自性，性成无上道。 —《楞严经·文殊拣选圆通》"
+    ],
+    "classics": [
+      "大方广圆觉修多罗了义经",
+      "维摩诘所说经",
+      "大佛顶首楞严经",
+      "文殊师利所说摩诃般若波罗蜜经"
+    ],
+    "relatedConcepts": [
+      "prajna",
+      "yuanjue-qingjing-xinxing",
+      "ru-bu-er-fa-men"
+    ],
+    "relatedMethods": [
+      "er-gen-yuan-tong-practice"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "weimojie",
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "yuanjuejing",
+      "weimojiejing",
+      "lengyanjing",
+      "wenshu"
+    ]
+  },
+  {
+    "id": "chuyuan",
+    "name": "慈明楚圆",
+    "title": "石霜慈明楚圆禅师 / 临济宗第七世",
+    "era": "北宋 (986—1039)",
+    "lifeStory": "慈明楚圆禅师（986—1039），全州清湘人，俗姓李。少业儒，二十二岁出家，与大愚、谷泉、琅琊结伴同参汾阳善昭禅师，得其心印，为临济宗第七世。历住袁州南源、潭州道吾、石霜诸刹，赐号“慈明”。平生真率作事、为法忘躯：河东苦寒，众人惮行，师志在于道，晓夕不怠，夜坐欲睡则引锥自刺。门下出黄龙慧南、杨岐方会两大宗匠，临济宗由此分为黄龙、杨岐二派，杨岐一系绵延至今，师实为宋代以后临济正脉之总源。《禅林宝训》屡载其德业苦节，以为后世住持楷模。",
+    "teachings": "住持丛林，以道念为宗、以德行为先；领众行道，胜似守道老死丘壑。为生死事大，废寝忘食，纵遇毁辱，含垢忍耻而道终起。",
+    "quotes": [
+      "与其守道老死丘壑，不若行道领众于丛林。 —《禅林宝训》载慈明语",
+      "夜坐欲睡，引锥自刺，叹曰：古人为生死事大，不食不寝，我何人哉而纵荒逸！ —《禅林宝训》"
+    ],
+    "classics": [
+      "禅林宝训",
+      "慈明禅师语录"
+    ],
+    "relatedConcepts": [
+      "de-hua-li-zhi",
+      "tou-xin-wei-si"
+    ],
+    "relatedMethods": [
+      "chanlin-jingce-practice"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "jiaye",
+    "name": "摩诃迦叶尊者",
+    "title": "西天初祖 / 禅宗传法第一人",
+    "era": "佛陀时代 (古印度圣者)",
+    "lifeStory": "摩诃迦叶尊者，佛陀十大弟子之一，以头陀苦行第一著称。生于王舍城摩诃娑婆陀村婆罗门家，年幼即厌离欲乐，志在清净。后于多子塔前见佛，豁然大悟，剃度出家。迦叶行头陀行，常居冢间、树下、阿兰若处，不以衣食卧具为念，于一切境界中保持正念。灵山会上，世尊拈花示众，百万人天罔措，唯迦叶破颜微笑——世尊遂曰：\u201c吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。\u201d此即禅宗传法之始，迦叶被尊为西天第一祖。后于鸡足山入定，待弥勒下生。禅宗一切传法源流，皆从此一拈一笑流出。",
+    "teachings": "头陀苦行，少欲知足；于一切境不生欣厌，以清净心行于世间。灵山拈花一笑，不以言说，唯以心印——禅宗\u201c教外别传、不立文字\u201d之旨由此而立。",
+    "quotes": [
+      "世尊拈花，迦叶微笑。 —《联灯会要·无门关》",
+      "吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。 —世尊付法偈"
+    ],
+    "classics": [
+      "七佛传法偈",
+      "联灯会要"
+    ],
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedMethods": [],
+    "relatedPersons": [
+      "bodhidharma",
+      "anan"
+    ],
+    "relatedBooks": [
+      "qifo"
     ]
   }
 ];
@@ -641,24 +1166,30 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "non-duality",
     "title": "不二",
     "category": "境界",
-    "summary": "不二，即超越一切对立分别：凡圣、迷悟、生死涅槃、烦恼菩提，体性无二。《维摩诘经》三十三位菩萨各说不二法门，文殊曰“于一切法无言无说”，维摩诘默然不语，文殊叹曰：“善哉善哉，乃至无有文字语言，是真入不二法门。”三祖僧璨《信心铭》承此旨曰：“至道无难，唯嫌拣择。但莫憎爱，洞然明白。”曹洞宗以正偏五位明体用回互，永明延寿以一心统摄万法，皆不二之施设。禅宗之所以“不立文字”，正因第一义不可作二边解会。",
+    "summary": "不二（不二法门），即超越一切对立分别：凡圣、迷悟、动静、生死涅槃、烦恼菩提，体性无二。《维摩诘经》三十三位菩萨各说不二法门，文殊曰“于一切法无言无说”，维摩诘默然不语，文殊叹曰：“善哉善哉，乃至无有文字语言，是真入不二法门。”三祖僧璨《信心铭》承此旨曰：“至道无难，唯嫌拣择。但莫憎爱，洞然明白。”宝志公《十四科颂》更以“菩提烦恼不二”“持犯不二”“生死涅槃不二”直透万法平等一如。曹洞宗以正偏五位明体用回互，皆不二之施设。禅宗之所以“不立文字”，正因第一义不可作二边解会。",
     "etymology": "梵语 advaya；《维摩诘经·入不二法门品》为宗本，《信心铭》为禅门纲宗。",
     "quotes": [
       "至道无难，唯嫌拣择。但莫憎爱，洞然明白。 —《信心铭》",
-      "如我意者，于一切法无言无说，无示无识，离诸问答，是为入不二法门。 —《维摩诘经》"
+      "如我意者，于一切法无言无说，无示无识，离诸问答，是为入不二法门。 —《维摩诘经》",
+      "信心不二，不二信心。 —《信心铭》",
+      "菩提烦恼不二，生死涅槃一如。 —宝志公《十四科颂》"
     ],
     "guidance": "日用中凡起好恶、取舍、凡圣之见，即是二；但莫拣择，一种平怀，泯然自尽。不二不是混滥是非，而是于心无所住。",
     "classicRef": "维摩诘经 · 信心铭",
     "relatedConcepts": [
       "samadhi",
-      "affliction-bodhi"
+      "affliction-bodhi",
+      "emptiness"
     ],
     "relatedPersons": [
       "sengcan",
-      "dongshan"
+      "dongshan",
+      "zhigong"
     ],
     "relatedBooks": [
-      "xinxinming"
+      "xinxinming",
+      "weimojiejing",
+      "zhigong"
     ]
   },
   {
@@ -976,25 +1507,29 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "ordinary-mind",
     "title": "平常心",
     "category": "心法",
-    "summary": "平常心是道，马祖道一接人的核心宗风。所谓平常心，即无造作、无是非、无取舍、无断常、无凡无圣的当下自然之心。南泉示赵州云：“道不属知，不属不知。知是妄觉，不知是无记。若真达不疑之道，犹如太虚，廓然荡豁，岂可强是非邪？”赵州于言下悟理，后以“吃茶去”“洗钵去”“庭前柏树子”等日用话头接人，将深奥禅法化为穿衣吃饭、运水搬柴。此语扫却修行的一切玄妙化与神圣化：道不在蒲团上、不在经卷里，只在日用寻常处；但莫染污，即是保任。",
+    "summary": "平常心是道，马祖道一开创的洪州宗核心宗旨。马祖云：“若欲直会其道，平常心是道。何谓平常心？无造作，无是非，无取舍，无断常，无凡无圣。”南泉示赵州云：“道不属知，不属不知。知是妄觉，不知是无记。若真达不疑之道，犹如太虚，廓然荡豁，岂可强是非邪？”赵州于言下悟理，后以“吃茶去”“洗钵去”“庭前柏树子”等日用话头接人；临济继之曰“佛法无用功处，只是平常无事”。此语将禅宗从高深玄理落实在穿衣吃饭、运水搬柴的平实日常，扫却修行的一切玄妙化与神圣化：道不在蒲团上、不在经卷里，只在日用寻常处；但莫染污，即是保任。",
     "quotes": [
       "平常心是道。 —马祖道一",
       "道不用修，但莫染污。 —马祖道一",
+      "佛法无用功处，只是平常无事。 —《临济录》",
       "道不属知，不属不知。知是妄觉，不知是无记。 —南泉普愿示赵州"
     ],
     "guidance": "日用之中，饥来吃饭，困来即眠，随缘任运，不加计较。但于寻常举动上不起第二念的贪嗔拣择，即是保任平常心。切莫将平常心错认作放逸懈怠。",
-    "classicRef": "马祖道一禅师语录",
+    "classicRef": "马祖道一禅师语录 · 临济录",
     "relatedConcepts": [
       "mind-is-buddha",
       "self-nature",
-      "no-abiding"
+      "no-abiding",
+      "instant-enlightenment"
     ],
     "relatedPersons": [
       "mazu",
-      "zhaozhou"
+      "zhaozhou",
+      "linji"
     ],
     "relatedBooks": [
-      "mazu"
+      "mazu",
+      "linji"
     ]
   },
   {
@@ -1047,10 +1582,571 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "zhenxin",
       "xiuxinjue"
     ]
+  },
+  {
+    "id": "yinian-wusheng",
+    "title": "一念无生",
+    "category": "般若观照",
+    "summary": "于当下前念已灭、后念未生之隙，妄念顿歇，湛然寂照。直探念头生起之源头本来寂灭，无生无灭。三祖僧璨《信心铭》云：“一心不生，万法无咎。”一心不生，则一切生死烦恼妄执皆无立脚之处。",
+    "classicRef": "三祖僧璨《信心铭》· 荷泽神会《显宗记》",
+    "quotes": [
+      "一心不生，万法无咎。 —《信心铭》",
+      "一念无生，即入佛地。"
+    ],
+    "guidance": "参修时切忌硬压念头，亦不可随念流转。只需回光返照念头生起之处，看清其无自性，念头自然消融于寂照之中。",
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "sengcan",
+      "shenhui"
+    ],
+    "relatedBooks": [
+      "xinxinming",
+      "shenhui"
+    ]
+  },
+  {
+    "id": "zixin-xianliang",
+    "title": "自心现量",
+    "category": "心性根源",
+    "summary": "达摩祖师以四卷《楞伽经》印心之核心极旨。谓世间一切现象、色相、山河大地、乃至顺逆境界，皆非心外实有，而是自心如来藏之所现量变现。了达“自心现量”，则不再于境上起贪嗔爱恶，当下破除一切外境执着。",
+    "classicRef": "达摩祖师《入道四行观》·《楞伽经》",
+    "quotes": [
+      "自心现量，无有心外法。",
+      "得赤肉团上无位真人，显自心现量。"
+    ],
+    "guidance": "遇顺境不生欢喜取著，遇逆境不生怨恨惊怖。时刻观照一切境界皆如镜中花、水中月，本是自心现量。",
+    "relatedConcepts": [
+      "self-nature",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "sixingguan"
+    ]
+  },
+  {
+    "id": "yixing-sanmei",
+    "title": "一行三昧",
+    "category": "顿悟修持",
+    "summary": "源自《文殊说摩诃般若波罗蜜经》，四祖道信与六祖惠能极度推崇。六祖《坛经》解曰：“于一切处，行住坐卧，常行直心是也。”不拘泥于打坐盘腿之相，而是于一切日常生活处，心无谄曲，直下合于本性。",
+    "classicRef": "《文殊说摩诃般若波罗蜜经》·《六祖坛经》",
+    "quotes": [
+      "于一切处，行住坐卧，常行直心。 —《六祖坛经》",
+      "系心一佛，专称名字。 —《文殊说般若经》"
+    ],
+    "guidance": "在工作、生活、待人接物中，保持一颗坦荡无谄之直心。不作伪造作，直下承当。",
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "daoxin",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "wenshu",
+      "anxin",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "sanlun-tikong",
+    "title": "三轮体空",
+    "category": "破执开示",
+    "summary": "达摩祖师《入道四行观》“称法行”之极旨。谓行布施或作一切功德时，无能施之人、无受施之人、无所施之物与功德相，三者皆空。如此行持，福慧方能称合自性法体，不落凡情功德相。",
+    "classicRef": "达摩祖师《入道四行观》",
+    "quotes": [
+      "通达施者、受者、施物三轮体空，不偏不着。 —《四行观》"
+    ],
+    "guidance": "做善事、行布施或助人后，切勿挂在心头求回报或自矜功德，当下作完当下放下。",
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "sixingguan"
+    ]
+  },
+  {
+    "id": "weishi-yixin",
+    "title": "唯是一心",
+    "category": "心性根源",
+    "summary": "黄檗希运禅师《传心法要》核心教示。黄檗云：“诸佛与一切众生，唯是一心，更无别法。”此心不曾生不曾灭，不青不黄，无形无相。一动念即背离，惟有当下无心，方契唯是一心。",
+    "classicRef": "黄檗希运《传心法要》",
+    "quotes": [
+      "诸佛与一切众生唯是一心，更无别法。 —《传心法要》",
+      "唯传一心，更无别法。"
+    ],
+    "guidance": "明白一切佛法、神通、妙用皆不离自己当下这颗灵觉之心，勿向心外寻觅任何奇特。",
+    "relatedConcepts": [
+      "mind-transmission",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "peixiu"
+    ],
+    "relatedBooks": [
+      "huangbo"
+    ]
+  },
+  {
+    "id": "ying-wu-suo-zhu",
+    "title": "应无所住而生其心",
+    "category": "顿悟修持",
+    "summary": "《金刚经》中最震撼古今之禅宗第一关要心法。谓修道者于世间一切六尘境界中，心不粘着取舍，犹如虚空大日，光明照耀却无一丝留滞，即于“无住”处生起清净无碍之大用。六祖惠能大师闻此句大彻大悟，高歌“何期自性本自清净”。",
+    "classicRef": "《金刚般若波罗蜜经》·《六祖坛经》",
+    "quotes": [
+      "应无所住，而生其心。 —《金刚经》",
+      "何期自性本自清净，何期自性本不生灭。 —《六祖坛经》"
+    ],
+    "guidance": "于日常工作中全情投入，事毕即空，心如明镜照物，物去不留痕。切忌于心头挂碍执着不放。",
+    "relatedConcepts": [
+      "no-abiding",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "hongren",
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "si-xiang",
+    "title": "破除四相",
+    "category": "破执开示",
+    "summary": "《金刚经》扫荡一切有相之极旨。四相者：我相（执着有实我）、人相（执着有相对之他人）、众生相（执着一切众生界）、寿者相（执着有寿命与时间流转相）。佛云：“若菩萨有我相人相众生相寿者相，即非菩萨。”离一切诸相，即名诸佛。",
+    "classicRef": "《金刚般若波罗蜜经》",
+    "quotes": [
+      "若菩萨有我相、人相、众生相、寿者相，即非菩萨。 —《金刚经》",
+      "离一切诸相，则名诸佛。 —《金刚经》"
+    ],
+    "guidance": "随时觉察自己是否陷于“自我优越感”、“他人评判”、“群体偏见”或“生死恐惧”中。四相破除，真性自现。",
+    "relatedConcepts": [
+      "emptiness",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "xubuti",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "ru-meng-huan-pao-ying",
+    "title": "如梦幻泡影",
+    "category": "般若观照",
+    "summary": "《金刚经》结尾至至切切之四句偈极旨：“一切有为法，如梦幻泡影，如露亦如电，应作如是观。”将一切世间有生有灭之名利、功德、境界、身心皆看作如梦如幻、如水泡如影子、如早晨露水与闪电般稍纵即逝，从而当下解脱不染。",
+    "classicRef": "《金刚般若波罗蜜经》",
+    "quotes": [
+      "一切有为法，如梦幻泡影，如露亦如电，应作如是观。 —《金刚经》"
+    ],
+    "guidance": "在面对人生得失荣辱、生老病死时，常以此四句偈提撕观照，当下脱离幻局，归于本真。",
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "wu-yun-jie-kong",
+    "title": "照见五蕴皆空",
+    "category": "般若现量",
+    "summary": "《心经》开篇第一句大彻大悟总持极旨。五蕴指色（物质身心）、受（感受）、想（思想）、行（意志造作）、识（心识）。观自在菩萨行深般若波罗蜜多时，以觉照智慧洞穿五蕴皆无独立固定的自性，当下破除假我，超越世间一切痛苦与灾难。",
+    "classicRef": "《般若波罗蜜多心经》",
+    "quotes": [
+      "观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空，度一切苦厄。 —《心经》"
+    ],
+    "guidance": "当焦虑、痛苦、悲伤生起时，觉察“受与想”只是流动不居的幻象，并非真正的你。五蕴照空，痛苦顿消。",
+    "relatedConcepts": [
+      "emptiness",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xinjing"
+    ]
+  },
+  {
+    "id": "se-ji-shi-kong",
+    "title": "色即是空，空即是色",
+    "category": "不二真理",
+    "summary": "《心经》中最具代表性的“性相不二”至理。“色”指一切有形有相现象，“空”指现象背后的无自性空寂本源。“色不异空”谓现象不离空性；“空不异色”谓空性不离现象；“色即是空，空即是色”说明空与色绝非两物，而是同一真相的两个维度：真空不碍妙有，妙有当体即空。",
+    "classicRef": "《般若波罗蜜多心经》",
+    "quotes": [
+      "色不异空，空不异色，色即是空，空即是色。 —《心经》"
+    ],
+    "guidance": "不要执着于物质世界（色），也不要陷入冷枯虚无（空）。在滚滚红尘中行所当行，心却如虚空般一尘不染。",
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "fudaoshi"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "wu-gua-ai",
+    "title": "心无挂碍",
+    "category": "究竟解脱",
+    "summary": "《心经》指出的离苦得乐最高境界。“以无所得故”，菩萨依般若智慧，心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想，究竟涅槃。无所得是一切挂碍消除的唯一根基——因为本无所得，所以无所失去；无所失去，故无恐怖失落。",
+    "classicRef": "《般若波罗蜜多心经》",
+    "quotes": [
+      "以无所得故，菩提萨埵，依般若波罗蜜多故，心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想，究竟涅槃。 —《心经》"
+    ],
+    "guidance": "检视自己内心深处对名利、得失、人际关系的羁绊。能放下“有所得”的贪念，即能获得真正的自在无碍。",
+    "relatedConcepts": [
+      "no-abiding",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "zhi-huan-ji-li",
+    "title": "知幻即离，离幻即觉",
+    "category": "顿悟修持",
+    "summary": "《圆觉经·普贤章》中震古烁今之顿悟顿修十六字极旨。谓众生妄认四大六尘为身心，全属幻化。然而“一切众生种种幻化，皆生如来圆觉妙心”。离幻无需任何迂曲中间方便，“知幻即离，不作方便；离幻即觉，亦无渐次”。如钻火两木，火出木尽灰飞烟灭，幻灭觉动，当体圆满。",
+    "classicRef": "《大方广圆觉修多罗了义经》",
+    "quotes": [
+      "知幻即离，不作方便；离幻即觉，亦无渐次。 —《圆觉经》",
+      "众生幻心还依幻灭，诸幻尽灭觉心不动。 —《圆觉经》"
+    ],
+    "guidance": "于生活中一旦觉察到焦虑、欲望或妄念，只需看清它是“幻化”，看清的瞬间即已脱离（知幻即离），无需费力对治打击。",
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "yuanjuejing",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "yuanjue-qingjing-xinxing",
+    "title": "圆觉清净心性",
+    "category": "心性",
+    "summary": "《圆觉经》所立一切众生本具之无上真如觉性。此觉性“非性性有，循诸性起，无取无证”。众生迷时，觉性不减；悟时，觉性不增。身心虽如空中花虚妄生灭，而圆觉妙心清净常住，湛然不动。",
+    "classicRef": "《大方广圆觉修多罗了义经》",
+    "quotes": [
+      "无上法王有大陀罗尼门，名为圆觉。 —《圆觉经》",
+      "圆觉自性，非性性有，循诸性起，无取无证。 —《圆觉经》"
+    ],
+    "guidance": "坚信自心本具圆觉，不假外求。在日常行住坐卧中，安住于本觉寂照，不随客尘妄想流转。",
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "fotuoduoluo"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "si-bing",
+    "title": "作止任灭四种修行病",
+    "category": "破执开示",
+    "summary": "《圆觉经·普觉章》警策修道人求圆觉时极易落入的四种心理陷阱（四病）：一“作病”（刻意妄作种种功夫求圆觉）；二“止病”（强制息灭诸念、死水沉舟）；三“任病”（任放一切放任自流）；四“灭病”（断灭烦恼入断灭空）。离此四病，方为正观清净。",
+    "classicRef": "《大方广圆觉修多罗了义经》",
+    "quotes": [
+      "彼圆觉性，非作得故说名为病；非止合故说名为病；非任有故说名为病；非寂相故说名为病。 —《圆觉经》"
+    ],
+    "guidance": "检查自己的修持：是否在用力强做（作）、死压念头（止）、随波逐流（任）或逃避厌世（灭）？超越这四种执着，即是正观。",
+    "relatedConcepts": [
+      "no-abiding",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "tou-xin-wei-si",
+    "title": "偷心未死",
+    "category": "修持警策",
+    "summary": "《禅林宝训》中大慧宗杲与死心悟新大师切痛呵斥参禅者最致命之心理通病。所谓“偷心”，即口言解脱生死，内则暗抱攀缘权贵、贪求名闻利养、侥幸速成之私心。偷心一日未死，道念一日不纯，遇风浪考验定然败溃破落。",
+    "classicRef": "《禅林宝训》",
+    "quotes": [
+      "参禅学者极恶偷心未死。偷心未死，即是名利客。 —《禅林宝训》"
+    ],
+    "guidance": "深省内心：是否在修道或工作中暗藏侥幸、虚荣、讨巧、谄媚之私念？将偷心死尽，灵明自性方显。",
+    "relatedConcepts": [
+      "non-mind",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "de-hua-li-zhi",
+    "title": "德化与礼治",
+    "category": "丛林规矩",
+    "summary": "《禅林宝训·卷一》黄龙慧南大师立丛林住持安众之三大法则：一“德化”（以高尚道德感化人心），二“礼治”（以尊卑礼制规范秩序），三“政刑”（以法度刑罚惩处邪过）。道德感化为根本，无德而光靠严刑，如建楼无基，败坏必至。",
+    "classicRef": "《禅林宝训》",
+    "quotes": [
+      "住持大有三：德化也，礼治也，政刑也。 —《禅林宝训》"
+    ],
+    "guidance": "无论是管理团队还是修身立命，先立道德心与公义心，以德服人，远胜于强权与威压。",
+    "relatedConcepts": [
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "chuyuan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "qi-chu-zheng-xin",
+    "title": "七处征心·破妄识心",
+    "category": "破妄见性",
+    "summary": "《楞严经·卷一》佛陀七次盘问阿难“心在何处”之至高对话。阿难分别答心在身内、心在身外、心潜伏眼根、心在暗处、心随合随有、心在中间、心在无着处，全被佛陀以智照逻辑彻底破除，点明阿难所认之“心”全属攀缘六尘之虚妄影像，非是本觉真心。",
+    "classicRef": "《大佛顶首楞严经》",
+    "quotes": [
+      "此非汝心！乃是前尘虚妄相想，惑汝真性。 —《楞严经》",
+      "一切众生，从无始来，生死相续，皆由不知常住真心性净明体，用诸妄想，此想不真，故有轮转。 —《楞严经》"
+    ],
+    "guidance": "检视当下起心动念：随情绪、环境起伏的喜怒哀乐，全是被外境牵着走的“缘影妄心”，非你自性真正的灵魂主宰。",
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "banramidi"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "ba-huan-bian-jian",
+    "title": "八还辨见·显不灭见性",
+    "category": "见性常住",
+    "summary": "《楞严经·卷二》佛陀示现世间万物皆有归还处（明还日轮、暗还黑夜、通还户牖、壅还墙壁），唯独能见外境之“见性”无可还处——“彼尚非汝，况复云何含妄许汝！”更以波斯匿王观恒河水之典故，证明肉体眼皮虽随岁月变衰，而能观能见之自性永无衰老死亡。",
+    "classicRef": "《大佛顶首楞严经》",
+    "quotes": [
+      "诸可还者，自然非汝；不汝还者，非汝而谁？ —《楞严经》",
+      "波斯匿王观河之见，变者受灭，彼不变者，原无生灭！ —《楞严经》"
+    ],
+    "guidance": "认清身体与外在名利有生老病死衰变，而你当下能知能觉的灵明自性永远不动不坏，从而获得无畏安心。",
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "wu-shi-yin-mo",
+    "title": "五十阴魔辨析",
+    "category": "防魔金刚铠",
+    "summary": "《楞严经·卷九卷十》佛陀详剖修道者在破除色、受、想、行、识五阴过程中，极易遇到的五十种细微魔障境界（色阴十魔、受阴十魔等）。如误认暂得之轻安为成佛、妄执神奇境界、见狂空拨无因果等。佛敕令：见怪不怪，其怪自败；心生贪着执取，即入魔道。",
+    "classicRef": "《大佛顶首楞严经》",
+    "quotes": [
+      "不作圣心，名善境界；若作圣解，即受群邪。 —《楞严经》"
+    ],
+    "guidance": "修道或冥想时若出现异景、异香、轻安快感，切勿傲慢执着或自命不凡，保持平静平常心即是破魔铠甲。",
+    "relatedConcepts": [
+      "no-abiding",
+      "si-bing"
+    ],
+    "relatedPersons": [
+      "anan"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "xin-jing-ji-fo-tu-jing",
+    "title": "心净则佛土净",
+    "category": "佛土现量",
+    "summary": "《维摩诘经·佛国品》大乘佛法最核心之顿悟极旨。宝积长者子请问清净佛土之法，佛言：“宝积！随其心净则佛土净。欲净佛土，先净其心。”净土并非心外遥远之神秘世界，亦非死后去处，而是当下内心纯净无染时显现之现量实相。六祖惠能“心净即东方，心染即西方”正源于此。",
+    "classicRef": "《维摩诘所说经》",
+    "quotes": [
+      "随其心净则佛土净；欲净佛土，先净其心。 —《维摩诘经》",
+      "若菩萨欲得净土，当净其心；随其心净，则佛土净。 —《维摩诘经》"
+    ],
+    "guidance": "不必寄希望于改变外在环境或逃避尘劳。将注意力收回自身内心，洗涤攀缘执着与贪嗔痴，当下所在之处即是琉璃清净佛土。",
+    "relatedConcepts": [
+      "self-nature",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "weimojiejing",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "ru-bu-er-fa-men",
+    "title": "入不二法门·维摩一默",
+    "category": "绝言契理",
+    "summary": "《维摩诘经·第九品》震古烁今之终极关要。三十二位大菩萨各用言语阐释苦乐、垢净、生灭等二边对待之“不二”。文殊菩萨言：“无言无说，无示无识，离诸问答，是入不二法门。”文殊转问维摩诘，维摩长者“默然无言”！文殊叹曰：“善哉！乃至无有文字言语，是真入不二法门！”",
+    "classicRef": "《维摩诘所说经》",
+    "quotes": [
+      "维摩一默如雷震！言语道断，心行处灭。 —《维摩诘经》",
+      "无言无说，无示无识，离诸问答，是真入不二法门。 —《维摩诘经》"
+    ],
+    "guidance": "超越黑与白、对与错、成功与失败的双重对立思维。在言语词穷、思维断绝处，直下契入本来平等的生命真如。",
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
+  },
+  {
+    "id": "wei-xin-zao",
+    "title": "一切唯心造",
+    "category": "心性根源",
+    "summary": "《华严经》觉林菩萨偈之极旨：\u201c若人欲了知，三世一切佛，应观法界性，一切唯心造。\u201d谓世间一切染净因果、凡圣境界、山河大地，皆非心外实有，而是自心如来藏之所变现。此偈为禅宗\u201c即心即佛\u201d教旨之大经依据：佛不在外，法不在外，天堂地狱皆自心所造。达摩四行观之\u201c称法行\u201d亦承此义——于万法中不生分别，知皆是自心现量故。六祖云\u201c何期自性能生万法\u201d，正与\u201c一切唯心造\u201d遥相呼应。",
+    "etymology": "出自《华严经·夜摩天宫品》觉林菩萨偈，为华严宗与禅宗共尊之心性极旨。",
+    "quotes": [
+      "若人欲了知，三世一切佛，应观法界性，一切唯心造。 —《华严经·觉林菩萨偈》",
+      "何期自性能生万法。 —《六祖坛经》"
+    ],
+    "guidance": "遇顺逆境界时，不作外境实有之想，回观自心：顺境之喜由心生，逆境之恼亦由心生。心若不染，境自清净。",
+    "classicRef": "华严经 · 六祖坛经",
+    "relatedConcepts": [
+      "self-nature",
+      "mind-is-buddha",
+      "zixin-xianliang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "juelin",
+      "tanjing",
+      "sixingguan"
+    ]
+  },
+  {
+    "id": "wu-ran-jue-xing",
+    "title": "无染觉性",
+    "category": "心性",
+    "summary": "莲花生大士《无染觉性直观自行解脱之道》之核心教旨。谓众生本具之觉性，本来清净、无染无着，不因烦恼而减，不因修证而增。此觉性如虚空，烦恼如云，云来云去虚空不动；如明镜，垢来垢去镜体不改。只需直观此觉性本面，不整治、不造作、不修整，妄念自解脱，即是无染觉性自行解脱。此与大圆满\u201c立断\u201d之旨相通，亦与禅宗\u201c直指人心、见性成佛\u201d及六祖\u201c何期自性本自清净\u201d同出一辙——皆直指当下一念灵明觉知，不假外求、不须次第。",
+    "etymology": "藏传佛教大圆满教法核心概念，莲花生大士所传；与禅宗\u201c自性清净\u201d异名同体。",
+    "quotes": [
+      "此觉性本来清净，无染无着，不因烦恼而减，不因修证而增。 —莲花生大士",
+      "何期自性本自清净。 —《六祖坛经》"
+    ],
+    "guidance": "不用刻意去\u201c修\u201d一个清净心，只需认取当下能知能觉者，让它自然安住。妄念起时不随不拒，直观其自生自灭——这本身就是解脱。",
+    "classicRef": "无染觉性直观自行解脱之道 · 六祖坛经",
+    "relatedConcepts": [
+      "self-nature",
+      "real-mind",
+      "non-mind",
+      "originally-nothing"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "wuran",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "po-xiang",
+    "title": "破相",
+    "category": "破执开示",
+    "summary": "达摩祖师《破相论》之核心教旨。谓一切修行功德不在外在形式：建寺造塔不如自心清净，诵经持戒不如无念无住。六度之真义在于心行而非事相——布施是心舍悭贪，非捐钱财；持戒是心净无染，非守条文；忍辱是心不动摇，非强压怒火；精进是心不懈怠，非劳形苦身；禅定是心不散乱，非枯坐不动；般若是心明实相，非多闻强记。破相不是否定事相，而是透过事相见其空性：相是方便，性是究竟；执相则成魔，离相即名佛。故《金刚经》云：\u201c凡所有相，皆是虚妄。若见诸相非相，即见如来。\u201d",
+    "etymology": "达摩祖师《破相论》立名；与《金刚经》\u201c凡所有相皆是虚妄\u201d一脉相承。",
+    "quotes": [
+      "凡所有相，皆是虚妄。若见诸相非相，即见如来。 —《金刚经》",
+      "修六度者，在于心行，非在事相。 —《破相论》"
+    ],
+    "guidance": "修行不在形式多寡，在心是否清净。拜佛诵经时回光返照：能拜能诵者是谁？若心外求佛、心外求法，纵然建七级浮屠，亦是梦中佛事。",
+    "classicRef": "菩提达摩大师破相论 · 金刚经",
+    "relatedConcepts": [
+      "emptiness",
+      "beyond-words",
+      "no-abiding",
+      "si-xiang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "poxianglun",
+      "jingangjing"
+    ]
   }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
+
   {
     "id": "nianfo-chan",
     "title": "念佛禅",
@@ -1289,6 +2385,178 @@ export const ZEN_METHODS: MethodItem[] = [
       "zhaozhou"
     ],
     "relatedBooks": []
+  },
+  {
+    "id": "yixing-sanmei-practice",
+    "title": "一行三昧实修法",
+    "summary": "依《文殊说摩诃般若波罗蜜经》与四祖道信《入道安心要方便法门》、六祖《坛经》。于一切处，行住坐卧，常行直心。不用作观行，亦不用澄清心，不起贪嗔，荡荡无碍。系心一佛，专称名字，随佛方所，端身正向，念念相续，即于念中亲见自性本源。",
+    "origin": "源自《文殊说般若经》，由四祖道信引为“安心方便”，六祖惠能进一步发扬为“行住坐卧常行直心”。",
+    "steps": [
+      "端身正向，随佛方所，系心一佛",
+      "专称名字，念念相续，无有杂想",
+      "于日常行住坐卧中，保持坦荡无谄之直心",
+      "不作观行，不澄清心，随缘任运"
+    ],
+    "classicRef": "《文殊说摩诃般若波罗蜜经》· 四祖道信《入道安心要方便法门》",
+    "relatedConcepts": [
+      "yixing-sanmei",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "daoxin",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "wenshu",
+      "anxin",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "shouben-zhenxin",
+    "title": "守本真心",
+    "summary": "五祖弘忍《最上乘论》最胜修持法门。弘忍云：“守本真心为成佛第一要务。”自心本来清净，无生无灭。但能凝神守一，不随外妄流转，明净自现。妄念若起，亦不须对治，但守本真心，自当消殒。",
+    "origin": "五祖弘忍住黄梅东山，以《最上乘论》教诲门人“守本真心”，开东山法门顿渐兼容之宗风。",
+    "steps": [
+      "盘腿端坐，平心静气",
+      "回光返照，凝神守于当下自心",
+      "妄念生时，不随不压，单单守住本觉灵明",
+      "久久纯熟，妄心自泯，真性历历"
+    ],
+    "classicRef": "五祖弘忍《最上乘论》",
+    "relatedConcepts": [
+      "self-nature",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "hongren"
+    ],
+    "relatedBooks": [
+      "zuishangcheng"
+    ]
+  },
+  {
+    "id": "guan-zizai-banya-practice",
+    "title": "观自在般若观照法门",
+    "summary": "《心经》所授之第一等般若现量观修法门。不落心识分别推求，而以清净觉照之“行深般若波罗蜜多”，直下照见眼耳鼻舌身意六根、色声香味触法六尘、色受想行识五蕴当体即空。凡有烦恼挂碍起时，即以此照破，直入无挂碍恐怖之究竟涅槃。",
+    "origin": "《般若波罗蜜多心经》观自在菩萨开示舍利子之圣法。",
+    "steps": [
+      "端坐平息，收摄眼耳鼻舌身意六根",
+      "起般若觉照，观察当下身心五蕴",
+      "体照色不异空、空不异色，色即是空、空即是色",
+      "心无所得，不滞一相，归于无挂碍寂灭涅槃"
+    ],
+    "classicRef": "《般若波罗蜜多心经》",
+    "relatedConcepts": [
+      "wu-yun-jie-kong",
+      "se-ji-shi-kong",
+      "wu-gua-ai"
+    ],
+    "relatedPersons": [
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "xinjing"
+    ]
+  },
+  {
+    "id": "yuanjue-sanzhong-jingguan",
+    "title": "圆觉三种清净观门",
+    "summary": "《圆觉经·威德自在章》佛授菩萨随顺圆觉之三大清净观门：一者“奢摩他”（取静为行，澄诸念发静慧）；二者“三摩钵提”（知根尘皆幻，起诸幻以除幻，发大悲轻安）；三者“禅那”（不取幻化及静相，身心挂碍永脱，发寂灭轻安）。菩萨随顺此三种事业修习，乃至轮转二十五轮，皆能究竟顿入圆觉。",
+    "origin": "《大方广圆觉修多罗了义经》威德自在菩萨与辩音菩萨章。",
+    "steps": [
+      "奢摩他门：静居正念，澄治妄念客尘，发内寂轻安",
+      "三摩钵提门：以幻修幻，变化诸幻开示众生，起大悲心",
+      "禅那门：不滞静与幻，脱离碍无碍境，随顺寂灭",
+      "轮转合修：依二十五轮随顺修行，直登清净法殿"
+    ],
+    "classicRef": "《大方广圆觉修多罗了义经》",
+    "relatedConcepts": [
+      "zhi-huan-ji-li",
+      "yuanjue-qingjing-xinxing",
+      "si-bing"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "fotuoduoluo"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "chanlin-jingce-practice",
+    "title": "禅林宝训日用反省警策法",
+    "summary": "《禅林宝训》提炼之禅门修道与日常生活反省法门。修行者每日晨昏行住坐卧间，持宋代诸大尊宿（黄龙慧南、杨岐方会、大慧宗杲）警策法语，照检内心是否生起偷心、名利心、怯弱心与轻慢心。顿息妄缘，坚守本真。",
+    "origin": "《禅林宝训》宋代大慧宗杲、竹庵士珪、净善大禅师遗训。",
+    "steps": [
+      "晨起端坐，提撕“光阴迅速，生死事大”，发无上道心",
+      "历境验心，检视言行是否轻浮虚妄，有无谄媚攀缘",
+      "遇挫受辱时，忆念“屈己从人、忍辱安贫”，默然省察",
+      "昏夜结账，照检“偷心死尽否？道念纯熟否？”，反省忏悔"
+    ],
+    "classicRef": "《禅林宝训》",
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "de-hua-li-zhi"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "er-gen-yuan-tong-practice",
+    "title": "观音耳根圆通反闻法门",
+    "summary": "《楞严经·卷六》文殊菩萨赞择全经二十五圣圆通第一圣法。观世音菩萨自述因地修持：“初于闻中，入流亡所。所入既寂，动静二相，了然不生。如是渐增，闻所闻尽，尽闻不住；觉所觉空，空觉极圆；空所空灭，生灭既灭，寂灭现前。”将听闻声音之习惯反转向内，听闻那能听的觉性本身，彻断生灭动静之相。",
+    "origin": "《大佛顶首楞严经·卷六》观世音菩萨章。",
+    "steps": [
+      "静坐收摄耳根，不随外界声响动静流转（入流亡所）",
+      "观察声音生灭动静，而能听之觉性不起动静二相",
+      "反闻能闻之觉性本身，能闻与所闻顿然消殒",
+      "空觉极圆，生灭既灭，寂灭现前，顿悟无上菩提"
+    ],
+    "classicRef": "《大佛顶首楞严经》",
+    "relatedConcepts": [
+      "ba-huan-bian-jian",
+      "self-nature",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "anan"
+    ],
+    "relatedBooks": [
+      "lengyanjing",
+      "xinjing"
+    ]
+  },
+  {
+    "id": "weimo-buer-practice",
+    "title": "维摩居士入不二法门观照",
+    "summary": "《维摩诘经》大乘居士在家顿悟修持极旨。维摩诘长者示现“处俗不染俗，入泥生莲花”，教导修行者不离世间家庭工作、不执死定苦行，而在日常行住坐卧与人际世务中，照见心净即土净，泯灭对立分别，直契默然不二。",
+    "origin": "《维摩诘所说经·方便品·入不二法门品》维摩长者开示。",
+    "steps": [
+      "居家处世，不离世间社会家庭职务而作佛事",
+      "起般若觉照：不复起定示诸威仪，才是真正坐禅",
+      "历烦恼尘劳，体认高原陆地不生莲花、卑湿淤泥乃生莲花",
+      "离言绝虑，超越二边对待，直入维摩默然不二"
+    ],
+    "classicRef": "《维摩诘所说经》",
+    "relatedConcepts": [
+      "xin-jing-ji-fo-tu-jing",
+      "ru-bu-er-fa-men"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   }
 ];
 
@@ -1506,6 +2774,228 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": [
       "anxin"
     ]
+  },
+  {
+    "id": "qa-14",
+    "question": "心悟转法华",
+    "answer": "心迷法华转，心悟转法华。诵经三千部，曹溪一句亡。",
+    "context": "僧法达，洪州人，七岁出家，常诵《法华经》。来礼六祖，头不至地。六祖诃曰：“礼不投地，何如不礼！汝心中必有一物，蕴习何事邪？”对曰：“念《法华经》已达三千部。”六祖曰：“汝若念至万部，得其经意，不以为胜，即与吾并行。汝今负此事业，都不知过。”乃说偈曰：“礼本折慢幢，头何不至地？有我罪即生，亡功福无比。”遂为宣说《法华经》“开示悟入佛之知见”极大旨，法达当下大悟，以偈赞曰：“经诵三千部，曹溪一句亡。未明出世旨，空纳世盈长。”",
+    "interpretation": "法达诵《法华经》三千部，自恃功德，礼拜时头不至地。六祖点破：被经文文字所转、生出贡高我慢，就是“心迷法华转”；若明自心本具“佛之知见”，驾驭经文以为道用，才是“心悟转法华”。经典本是指月之手，切勿将手当月亮。",
+    "master": "六祖惠能",
+    "source": "六祖坛经 · 机缘品",
+    "relatedConcepts": [
+      "self-nature",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
+  },
+  {
+    "id": "qa-15",
+    "question": "非关文字",
+    "answer": "诸佛妙理，非关文字。",
+    "context": "六祖惠能隐居韶州曹溪时，有一尼名无尽藏，常诵《大般涅槃经》。六祖听闻片刻，即知经中妙理，遂为解说。尼执卷问字，六祖曰：“字即不识，义即请问。”尼曰：“字尚不识，焉能解义？”六祖曰：“诸佛妙理，非关文字。”尼大为惊异，遍告乡里，同来瞻礼。",
+    "interpretation": "文字只是标月指，真理则是空中月。盲人认指为月，终不见月。六祖虽不识字，却能直透经文背后的真如自性。直指人心，不立文字，正谓此也。",
+    "master": "六祖惠能",
+    "source": "六祖坛经 · 行由品",
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
+  },
+  {
+    "id": "qa-16",
+    "question": "一宿觉",
+    "answer": "生死事大，无常迅速！——体即无生，了本无速。",
+    "context": "永嘉玄觉禅师，精通三观十门，看《维摩经》发明心地。后因左溪策禅师劝往曹溪参六祖。玄觉至曹溪，振锡绕祖三匝，卓然而立。六祖曰：“夫沙门者，具三千威仪、八万细行。大德自何方而来，生大我慢？”玄觉曰：“生死事大，无常迅速！”六祖曰：“何不体取无生，了无速乎？”玄觉曰：“体即无生，了本无速！”六祖遂印可：“如是！如是！”玄觉留宿一宵，时人号为“一宿觉”。",
+    "interpretation": "世人皆被“生死”与“无常迅速”所逼迫惊怖。六祖直逼一步：何不回光返照、体取不生不灭之自性？玄觉一答“体即无生，了本无速”，直透自性本无生死、本无来去，当下彻悟。",
+    "master": "六祖惠能",
+    "source": "六祖坛经 · 顿渐品 · 永嘉证道歌",
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "zhengdaoge"
+    ]
+  },
+  {
+    "id": "qa-17",
+    "question": "黄檗三打临济",
+    "answer": "黄檗佛法无多子！——赤肉团上无位真人。",
+    "context": "临济义玄在黄檗门下，行业纯一。首座睦州劝其问黄檗：“如何是佛法的大意？”临济去问，语未卒，黄檗便打。如是三问，三度被打。临济辞黄檗，往参大愚。大愚问：“甚处来？”临济曰：“黄檗处来。”大愚曰：“黄檗有何言句？”临济曰：“某甲三问佛法大意，三度被打，不知过在何处？”大愚曰：“黄檗与么老老婆心，为汝得彻困，更来这里问过在何处！”临济于言下大悟曰：“元来黄檗佛法无多子！”大愚一把揪住曰：“这尿床鬼！适间道有过无过，如今却道黄檗佛法无多子！你道得什么道理？速道！速道！”临济于大愚肋下肋三拳。大愚托开曰：“汝师黄檗，非干吾事。”临济遂回黄檗，开出临济一宗。",
+    "interpretation": "黄檗之打，不是嗔怒，而是大慈悲之截断。学人问“佛法大意”，便是求心外之法；黄檗一棒打下，痛切处前后际断，逼其回光返照。大愚点破“老婆心切”，临济顿悟：自性本自具足，佛法绝无多余奇特！“无多子”三字，道尽最彻底之自性具足。",
+    "master": "黄檗希运",
+    "source": "镇州临济慧照禅师语录",
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "linji"
+    ],
+    "relatedBooks": [
+    ]
+  },
+  {
+    "id": "qa-19",
+    "question": "应无所住而生其心",
+    "answer": "何期自性本自清净！何期自性本不生灭！何期自性本自具足！何期自性本无动摇！何期自性能生万法！",
+    "context": "六祖惠能早年在新州采柴，卖于市市，闻客诵《金刚经》至“应无所住而生其心”，心即开悟。遂往黄梅参五祖弘忍。弘忍命其于碓房破柴踏碓八余月。后五祖夜半召惠能入室，以袈裟遮围，为说《金刚经》，至“应无所住而生其心”，惠能言下大彻大悟，遂唱五句“何期自性”，五祖便传衣钵为第六代祖。",
+    "interpretation": "六祖闻《金刚经》“应无所住而生其心”两度契悟。第一度是解悟，第二度是黄梅夜半彻悟。五句“何期自性”，道尽了自性清净、不生不灭、本自具足、本不动摇、能生万法之全貌。金刚经一经，成就曹溪南宗顿教圣道。",
+    "master": "六祖惠能",
+    "source": "六祖坛经 · 行由品",
+    "relatedConcepts": [
+      "ying-wu-suo-zhu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "hongren"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "qa-20",
+    "question": "傅大士挥案讲经",
+    "answer": "大士讲经竟。——以尺挥案一下便下座。",
+    "context": "梁武帝请傅大士讲《金刚经》。大士升座，手执木尺击案一下，便下座。梁武帝惊愕不已。宝志公在一旁问皇帝：“陛下会否？”帝曰：“不会。”宝志公曰：“大士讲经竟。”",
+    "interpretation": "《金刚经》讲“如来无所说”、“若人言如来有所说法即为谤佛”。傅大士升座，一尺击案，“啪”地一响，言语道断，心行处灭——当体即是真般若！宝志公一旁作陪下转语“大士讲经竟”，二人一唱一和，将《金刚经》离言绝相之极旨演绎得淋漓尽致。",
+    "master": "傅大士",
+    "source": "碧岩录 · 景德传灯录",
+    "relatedConcepts": [
+      "emptiness",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "fudaoshi",
+      "zhigong"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "xinwangming"
+    ]
+  },
+  {
+    "id": "qa-21",
+    "question": "照见五蕴皆空·度一切苦厄",
+    "answer": "以无所得故，心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想！",
+    "context": "玄奘法师当年西行求法途经蜀中，见一老病僧人身上生疮身臭，遂衣物食物照顾。老僧以《般若波罗蜜多心经》相授。玄奘西行过八百里莫贺延碛沙漠，夜逢诸恶鬼怪奇异绕人，诵诸佛名皆不能退，一诵《心经》，声发恶鬼皆散！及西天取经成功，归国翻译此经，成为千古传诵之般若总持圣典。",
+    "interpretation": "《心经》虽仅 260 字，却为大乘般若之至极神咒。玄奘西行渡沙漠、遇绝境，全凭单单一部《心经》“照见五蕴皆空”，心无挂碍恐怖而横渡戈壁险关。心若无所得、五蕴洞空，则世间一切魔障、灾难、恐怖当体即化为乌有。",
+    "master": "玄奘法师 / 观自在菩萨",
+    "source": "大唐大慈恩寺三藏法师传 · 心经",
+    "relatedConcepts": [
+      "wu-yun-jie-kong",
+      "wu-gua-ai",
+      "se-ji-shi-kong"
+    ],
+    "relatedPersons": [
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "qa-22",
+    "question": "知幻即离·离幻即觉",
+    "answer": "知幻即离，不作方便；离幻即觉，亦无渐次。",
+    "context": "普贤菩萨在圆觉法会上问佛：“世尊！若众生知身心皆如幻，云何以幻还修于幻？若幻灭无心，谁为修行？云何令妄想心解脱？”佛告普贤菩萨：“一切众生种种幻化，皆生如来圆觉妙心。离幻无需迂曲方便，知幻即离，不作方便；离幻即觉，亦无渐次。如钻火两木相磨，火出木尽灰飞烟灭，诸幻虽尽觉心不动。”",
+    "interpretation": "《圆觉经·普贤章》十六字偈是顿悟顿修的最巅峰教理。许多修道者苦于断除妄想烦恼，越压念头念头越多。佛陀点破：妄想身心本来就是虚妄幻化，你只要“看清它是幻”，看清的瞬间你已经不在幻中了（知幻即离），根本不需要再找个方法去打灭它；离幻的瞬间本觉立刻现前（离幻即觉），绝无阶梯渐次。",
+    "master": "释迦牟尼佛 / 普贤菩萨",
+    "source": "大方广圆觉修多罗了义经 · 普贤章",
+    "relatedConcepts": [
+      "zhi-huan-ji-li",
+      "yuanjue-qingjing-xinxing",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
+  },
+  {
+    "id": "qa-23",
+    "question": "杨岐屋破·宁受风雪",
+    "answer": "佛陀树下宿，吾有屋遮身。屋破炼道心，岂敢劳大众！",
+    "context": "杨岐方会禅师住在袁州杨岐山，当上住持后房屋破旧不堪，风雪直吹入卧室。门徒弟子心疼大师，请求为大师修缮房屋。杨岐禅师谢绝说：“世尊当年在菩提树下露宿，我们如今有片瓦遮头已经是莫大福报！冬天虽然冷，但正好锤炼我们的道念。若为了我一个人的舒适去大兴土木劳役大众，这是损福灭道的举动。”遂作偈曰：“杨岐屋壁破，风雪满床打。缩却脖项卧，寒夜终日过。”",
+    "interpretation": "《禅林宝训·卷二》记载的这一则典故，是千年来禅门苦行守道、甘于淡泊的第一标杆。禅宗宗师绝不追求物质安逸，视富贵名利如浮云，唯以悟道度生为唯一天职。",
+    "master": "杨岐方会",
+    "source": "禅林宝训 · 卷二",
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "de-hua-li-zhi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
+  },
+  {
+    "id": "qa-24",
+    "question": "七处征心·观河见性",
+    "answer": "此非汝心！前尘虚妄缘影。波斯匿王观河之见，变者受灭，彼不变者，原无生灭！",
+    "context": "阿难尊者乞食遇摩登伽女大幻术，佛陀放光派文殊持神咒救回。佛陀连续七次逼问阿难“心在何处”，阿难七次回答全被佛陀以智照逻辑打翻，点明那只是妄想缘影。波斯匿王问佛：“此身死后，云何知不灭？”佛陀问王：“汝昔三岁见恒河水，至年六十，观河之见有异否？”王曰：“见无有异。”佛言：“汝面虽皱，观河见性未尝皱！变者受灭，彼不变者原无生灭！”波斯匿王与阿难于言下大悟欢喜。",
+    "interpretation": "《楞严经·卷一卷二》最具代表性的破妄见性对决。许多人恐惧衰老死亡，以为肉体一死灵魂皆空。佛陀通过“观河之见”这极生动直观的比喻点破：肉体细胞眼皮固然在天天衰老变坏，但你那个能知能觉、几十年来观察世界的“见性觉知”本无一丝一毫衰老！认清此点，生死妄想顿消。",
+    "master": "释迦牟尼佛 / 阿难尊者",
+    "source": "大佛顶首楞严经 · 卷一卷二",
+    "relatedConcepts": [
+      "qi-chu-zheng-xin",
+      "ba-huan-bian-jian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "banramidi"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "qa-25",
+    "question": "维摩一默如雷震·天女散花不附着",
+    "answer": "默然无言，是真入不二法门！结习未尽，故花粘身；结习尽者，花不附着。",
+    "context": "文殊菩萨问维摩诘长者：“何等是菩萨入不二法门？”维摩诘长者默然无言！文殊菩萨赞叹曰：“善哉！善哉！乃至无有文字言语，是真入不二法门！”丈室内天女天花散下，花至菩萨身上纷纷坠落，至舍利子身上紧黏不去。舍利子用神通去花不能。天女笑曰：“结习未尽，故花粘身！若无分别执着，花自坠落。”",
+    "interpretation": "《维摩诘经·第七品与第九品》两大绝妙高潮。第一，“维摩一默”绝非不知不答，而是当一切对立分别与文字言说尽数断绝时，本来面目湛然现前，故称“一默如雷震”；第二，“天女散花”点破贪嗔痴与戒律执着：心有分别求去之念，花反粘身；心无挂碍清净自如，花自坠落脱离。",
+    "master": "维摩诘长者 / 文殊菩萨",
+    "source": "维摩诘所说经 · 第七品·第九品",
+    "relatedConcepts": [
+      "ru-bu-er-fa-men",
+      "xin-jing-ji-fo-tu-jing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   }
 ];
 
@@ -1514,76 +3004,329 @@ export interface FAQItem {
   question: string;
   answer: string;
   relatedQa?: string;
+  relatedBooks?: string[];
 }
 
-/* ---- AI 阅读理解 FAQ：围绕公案的常见疑问与义理辨析 ---- */
+/* ---- AI 阅读理解 FAQ：围绕公案与经典的常见疑问与义理辨析 ---- */
 export const ZEN_FAQS: FAQItem[] = [
   {
     id: 'faq-1',
     question: '公案到底是什么？为什么不能按字面意思理解？',
     answer: '公案原指官府的案牍，禅门借指祖师应机的言行记录——它是"已然判决的范例"，用来勘验学人的悟境。公案的话头往往故意违背常识逻辑（无、斩猫、顶鞋），目的不是传递信息，而是截断你的思维惯性。若按字面求解，恰恰落入它要破除的义理分别；须在言外转身，方有少分相应。',
-    relatedQa: 'qa-2'
+    relatedQa: 'qa-2',
+    relatedBooks: ['mazu']
   },
   {
     id: 'faq-2',
     question: '赵州说"无"，是认为狗子没有佛性吗？',
     answer: '不是。经文明说一切众生皆有佛性，赵州岂能不知？这个"无"不是有无对待之无，而是一把剑：学人抱着"有佛性"的成见来问，赵州一个"无"字斩断他的执取。大慧宗杲教人就此"无"字提撕起疑——不作有无会、不作道理会，疑到极处方知此"无"是无你开口处的"无"。',
-    relatedQa: 'qa-2'
+    relatedQa: 'qa-2',
+    relatedBooks: ['mazu']
   },
   {
     id: 'faq-3',
     question: '南泉斩猫，岂不是杀生犯戒？',
     answer: '这正是后世议论最多的地方。须知南泉举刀时说的是"道得即救取猫儿"——刀是逼拶，逼两堂僧人于当下转身。众人着了"猫归谁"的相，无人道得，南泉方行此非常手段。禅门于此只说：斩的是两堂的人我是非。若停留在道德评判层面争论杀生，恰恰成了公案里"道不得"的第三千人。',
-    relatedQa: 'qa-1'
+    relatedQa: 'qa-1',
+    relatedBooks: ['mazu']
   },
   {
     id: 'faq-4',
     question: '德山棒、临济喝，是不是粗暴的教学方式？',
     answer: '看似粗暴，实是极高明的"直指"。学人开口动念处皆是思维卜度，禅师于电光石火间一棒一喝，斩断其意识流，令其前后际断、能所双亡，于言语道断处瞥见本心。但前提是施设者须有真实证悟的眼目，否则便是狐禅野喝；学人若以挨棒学喝为奇货，又是另一种执着。',
-    relatedQa: 'qa-3'
+    relatedQa: 'qa-3',
+    relatedBooks: ['linji']
   },
   {
     id: 'faq-5',
     question: '"仁者心动"是说风和幡其实没有动吗？',
     answer: '不是抹杀现象。风幡之动是现量事实，二僧之错不在看见动，而在心动——于境上起分别是非，争论不休。六祖一语点破：争端不在风幡，在仁者之心。心若不随境转，风自吹幡自动，何争之有？这正是"万法唯心"的活用，而非要人闭眼说无动。',
-    relatedQa: 'qa-6'
+    relatedQa: 'qa-6',
+    relatedBooks: ['tanjing']
   },
   {
     id: 'faq-6',
     question: '怀让磨砖作镜，是反对坐禅吗？',
     answer: '不是反对坐禅，是反对"执坐为佛"。坐禅是摄心的方便，成佛是悟心的本怀；错认方便为究竟，犹如磨砖求镜。怀让打牛不打车的比喻说得很清楚：身如车，心如牛，只调身不调心是外求。初学者非坐无以摄心，但不可执坐相为道——禅在行住坐卧，佛非定相。',
-    relatedQa: 'qa-7'
+    relatedQa: 'qa-7',
+    relatedBooks: ['mazu']
   },
   {
     id: 'faq-7',
     question: '"不昧因果"与"不落因果"一字之差，为何一个解脱一个堕野狐？',
     answer: '"不落因果"是断灭见——以为大修行人超出因果之外，这是拨无因果的狂慧，故堕野狐身五百世。"不昧因果"则是中道：悟者照样生老病死、因果历然，只是了了分明、不被其瞒。百丈一字之转说明：真解脱不在因果之外逍遥，而在因果之中不昧。',
-    relatedQa: 'qa-4'
+    relatedQa: 'qa-4',
+    relatedBooks: ['baizhang']
   },
   {
     id: 'faq-8',
     question: '香严上树，开口即堕、不答即违，到底该怎么回答？',
     answer: '这一则公案故意把人逼到绝处：答也不是、不答也不是——这正是参禅者疑情成片时的真实处境，吞吐不得。虎头招上座的问法值得玩味："未上树时请和尚道"——尚未涉入言句之前的本来面目，本无问答可立。香严呵呵大笑，便是不答之答。',
-    relatedQa: 'qa-5'
+    relatedQa: 'qa-5',
+    relatedBooks: ['tanjing']
   },
   {
     id: 'faq-9',
     question: '公案有没有标准答案？',
-    answer: '没有文字上的标准答案，但有真实的勘验标准。同一问"如何是佛"，干屎橛、麻三斤、庭前柏树子，答案各不相同——因为公案答的是问者当下的病，不是千古一律的理。祖师以勘辨接人：学人呈解，师家一验便知是实悟还是口头三昧。所以公案须亲参实证，背诵"答案"正是参禅大忌。'
+    answer: '没有文字上的标准答案，但有真实的勘验标准。同一问"如何是佛"，干屎橛、麻三斤、庭前柏树子，答案各不相同——因为公案答的是问者当下的病，不是千古一律的理。祖师以勘辨接人：学人呈解，师家一验便知是实悟还是口头三昧。所以公案须亲参实证，背诵"答案"正是参禅大忌。',
+    relatedBooks: ['mazu']
   },
   {
     id: 'faq-10',
     question: '什么是"看话头"？普通人如何参究公案？',
-    answer: '看话头是宋代大慧宗杲所倡的参禅方法：取公案中一句无意味的话头（如"无"字），时时提在心头，不起第二念，不生分别解，只就这话头上起大疑情——"毕竟如何？"行住坐卧不离此疑，疑团打成一片、穷到无路处，豁然爆破，即是悟时。要点是：只许疑，不许解。'
+    answer: '看话头是宋代大慧宗杲所倡的参禅方法：取公案中一句无意味的话头（如"无"字），时时提在心头，不起第二念，不生分别解，只就这话头上起大疑情——"毕竟如何？"行住坐卧不离此疑，疑团打成一片、穷到无路处，豁然爆破，即是悟时。要点是：只许疑，不许解。',
+    relatedBooks: ['chanlinbaoxun']
   },
   {
     id: 'faq-11',
     question: '为什么强调"大疑大悟，小疑小悟"？',
-    answer: '疑情是参禅的发动机。公案的话头违背常识，逼你起"到底如何"的真实疑问；这疑问越真切绵密，妄想越被收摄归一。疑到全身心只剩一个疑团，能所界限自然松动，一旦时节因缘到来（一棒、一喝、一句闲话），疑团顿破，本来面目现前。不疑则无悟，故作聪明求解者，终身在门外。'
+    answer: '疑情是参禅的发动机。公案的话头违背常识，逼你起"到底如何"的真实疑问；这疑问越真切绵密，妄想越被收摄归一。疑到全身心只剩一个疑团，能所界限自然松动，一旦时节因缘到来（一棒、一喝、一句闲话），疑团顿破，本来面目现前。不疑则无悟，故作聪明求解者，终身在门外。',
+    relatedBooks: ['chanlinbaoxun']
   },
   {
     id: 'faq-12',
     question: '现代人不参禅，读公案有什么用？',
-    answer: '公案的价值不限于宗门修行。它训练的是对"思维边界"的觉察：当你发现逻辑在某处失效、语言在某处词穷，你就触碰到了概念框架的边缘——这与现代人反思认知局限、跳出思维定势的诉求完全相通。读公案不求玄悟，但学其"于执着处转身"的灵活性，已足以受用。'
+    answer: '公案的价值不限于宗门修行。它训练的是对"思维边界"的觉察：当你发现逻辑在某处失效、语言在某处词穷，你就触碰到了概念框架的边缘——这与现代人反思认知局限、跳出思维定势的诉求完全相通。读公案不求玄悟，但学其"于执着处转身"的灵活性，已足以受用。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-13',
+    question: '达摩"面壁九年"是在做什么？',
+    answer: '达摩渡海来华，在嵩山少林寺面壁九年，不是在"发呆"或"逃避"，而是在等待可传法之人。面壁是寂照不二的实际功夫——外息诸缘，内心无喘，心如墙壁。直到慧可立雪断臂求法，达摩才开口。九年沉默本身即是身教：道在实证，不在多言。',
+    relatedBooks: ['xuemaicong', 'wuxinlun']
+  },
+  {
+    id: 'faq-14',
+    question: '慧可断臂求法，为什么达摩要先说"将心来，与汝安"？',
+    answer: '慧可说"我心未宁，乞师与安"，达摩说"将心来，与汝安"——这是逼慧可回光返照：你那个不安的心到底在哪里？找得出来吗？慧可沉默良久说"觅心了不可得"，达摩曰"我与汝安心竟"。不安的心本无实体，只是妄想因缘；你一旦认真去找它，它就消散了。这就是"直指人心"的活样板。',
+    relatedBooks: ['xuemaicong', 'sixingguan']
+  },
+  {
+    id: 'faq-15',
+    question: '"即心即佛"和"非心非佛"矛盾吗？',
+    answer: '不矛盾，是同一枚硬币的两面。马祖初说"即心即佛"为止小儿啼——给初学一个信入处：你的心就是佛，不必外求。等人执着了"心是佛"，又说"非心非佛"来破这个执着。大梅法常闻"即心即佛"而悟，住山不移；马祖遣人勘之曰"和尚近日又道非心非佛"，法常答"任汝非心非佛，我只管即心即佛"——马祖印可"梅子熟也"。药病皆施，方见祖师本意。',
+    relatedBooks: ['mazu', 'huangbo']
+  },
+  {
+    id: 'faq-16',
+    question: '六祖不识字，怎么能讲经说法？',
+    answer: '六祖惠能本是岭南樵夫，不识文字。尼无尽藏问字于六祖，六祖曰"字即不识，义即请问"，尼惊曰"字尚不识，焉能解义？"六祖答"诸佛妙理，非关文字"——文字是符号，义理是实相；悟者见月，何须指月之指？六祖虽不识字，却直指自性，所说皆从悟处流出，故《坛经》成为唯一被尊为"经"的中国祖师著述。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-17',
+    question: '"本来无一物"和"时时勤拂拭"哪个对？',
+    answer: '两首偈代表两种见地。神秀"时时勤拂拭"是渐修——承认有尘埃、有镜子，需要不断清洁。惠能"本来无一物"是顿悟——自性本自清净，何来尘埃可拂？五祖选惠能，不是因为神秀错了，而是因为神秀还在"有修有证"的二元对立中，惠能已超越到"无修无证"的般若空慧。但后世须知：理可顿悟，事须渐修；悟后保任，犹须拂拭。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-18',
+    question: '《金刚经》为什么反复说"即非……是名……"？',
+    answer: '"所谓佛法，即非佛法，是名佛法"——这是《金刚经》的三段论：先立一个名相（是佛法），再破它（即非佛法），再安立假名（是名佛法）。立是方便，破是般若，安立是中道。佛说一切法，为度一切心；若无一切心，何用一切法？所以"即非"不是否定存在，而是否定执着；"是名"不是肯定实有，而是随顺世间。',
+    relatedBooks: ['jingangjing']
+  },
+  {
+    id: 'faq-19',
+    question: '"应无所住而生其心"到底什么意思？',
+    answer: '"无所住"是心不粘着于任何境界——不执著于色声香味触法。"生其心"不是不生心，而是生清净心、生慈悲心、生智慧心，只是生而无住。六祖闻此句大悟，连叹五句"何期自性"。关键在于：无住不是无心无事，而是即相离相——就像镜子照物，物来即照，物去不留，恰恰无住之时，妙用无穷。',
+    relatedBooks: ['jingangjing', 'tanjing']
+  },
+  {
+    id: 'faq-20',
+    question: '《心经》只有260字，为什么被称为般若精华？',
+    answer: '《心经》浓缩六百卷《大般若经》之精华：开篇"照见五蕴皆空"是般若正观，"色不异空"是性相不二，"无眼耳鼻舌身意"是破十八界，"心无挂碍"是究竟解脱，"揭谛揭谛"是般若波罗蜜多咒。260字涵盖了般若系佛法从理论到实修到证果的全部要义，故为禅宗印心之根本经典。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-21',
+    question: '黄檗说"无心"，和心理学说的"放空大脑"一样吗？',
+    answer: '完全不同。心理学说的"放空"是暂时停止思维活动，是一种昏沉或无记状态。黄檗的"无心"是"无妄心"——不是没有知觉，而是于一切境界不生分别执着。如《顿悟要门》所辨："不作意分别，非同木石。若见善恶，心不染着，即是无生心。"无心是即相离相的活泼智慧，不是木然无知。',
+    relatedBooks: ['huangbo', 'dunwu']
+  },
+  {
+    id: 'faq-22',
+    question: '马祖说"平常心是道"，那凡夫的平常心就是道吗？',
+    answer: '不是。马祖说的"平常心"有特定内涵："无造作，无是非，无取舍，无断常，无凡无圣。"凡夫的"平常"恰恰充满造作、是非、取舍——吃饭时百种思量，睡觉时千般计较。马祖的平常心是悟后的任运自然：饥来吃饭困来眠，于中不起第二念。看似相同，实则天壤之别——一个是随业流转，一个是即相离相。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-23',
+    question: '《信心铭》说"至道无难，唯嫌拣择"，是不让人做选择吗？',
+    answer: '"拣择"不是日常生活中的必要选择（吃饭选菜、出门选路），而是指心于一切境界起憎爱取舍——喜欢就追，不喜欢就避。三祖僧璨指出：道本来现成，只因你不断分别好恶，才把道遮蔽了。"但莫憎爱，洞然明白"——当你不再于境上起好恶执着，心性本来的光明自然显现。这是"不二法门"在日用中的落实。',
+    relatedBooks: ['xinxinming']
+  },
+  {
+    id: 'faq-24',
+    question: '百丈"一日不作，一日不食"是不是太苦了？',
+    answer: '百丈怀海立清规，以身作则，年过九旬犹随众出坡劳作。弟子藏其农具劝歇，百丈竟绝食抗议——"一日不作，一日不食"。这不是苦行自虐，而是将禅落实于劳动：搬柴运水皆是道场，不作不食是因果历然。禅门清规由此立，"农禅并重"成为中国禅宗的优良传统。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-25',
+    question: '临济"无位真人"是什么人？',
+    answer: '临济上堂云："赤肉团上有一无位真人，常在汝等面门出入，未证据者看看！"——"赤肉团"指身体，"无位真人"指超越一切阶位、名相的本觉灵知。它不是灵魂、不是意识，而是你当下能听能看、能知能觉的那个。临济直指：此人常在你面门出入（眼耳鼻舌身意），你却认不得。认得了，即是见性成佛。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-26',
+    question: '永嘉玄觉见六祖，为何被称为"一宿觉"？',
+    answer: '永嘉玄觉参访六祖，振锡绕床三匝而立，六祖勘验数番，玄觉对答如流，言下大悟。欲留一宿，次日即归，故称"一宿觉"。其《证道歌》云"君不见，绝学无为闲道人，不除妄想不求真"——顿悟之人不须渐次对治，妄本空故不须除，真本具故不须求。一宿者，非时间长短，乃悟之彻也。',
+    relatedBooks: ['zhengdaoge', 'tanjing']
+  },
+  {
+    id: 'faq-27',
+    question: '《圆觉经》"知幻即离"和"看话头"有什么不同？',
+    answer: '"知幻即离"是文殊般若系顿观：直接认取妄念的空性，看清它是幻化，当下即脱——重在"观"。"看话头"是大慧宗杲系参究：以一"无"字逼拶起疑，疑到无路处爆破——重在"参"。前者适合利根，直下承当；后者适合中下根，以疑破妄。法门虽异，同归向上一路：都是逼你离开思维分别，直见本心。',
+    relatedBooks: ['yuanjuejing']
+  },
+  {
+    id: 'faq-28',
+    question: '《楞严经》"七处征心"到底在破什么？',
+    answer: '阿难七次回答"心在何处"——身内、身外、潜伏眼根、暗处、随合随有、中间、无着处——全被佛陀破除。所破的不是某个具体答案，而是阿难"心有处所"的根本妄执：你以为心在某个地方，就已经把心当成了一个客体、一个物。真心无在无不在，犹如虚空，不可指陈。七处征心是破"妄识有处所"的执念，逼阿难回光返照能推求者本身。',
+    relatedBooks: ['lengyanjing']
+  },
+  {
+    id: 'faq-29',
+    question: '《维摩诘经》维摩诘为什么"默然无言"就是入不二法门？',
+    answer: '三十二位菩萨各以言语说不二法门，文殊总结"无言无说是真不二"，再问维摩诘。维摩诘默然——这不是答不上来，而是以沉默直显：不二法门超越一切语言对立，开口即落二边。文殊叹"善哉乃至无有文字言语，是真入不二法门"——一默如雷震，胜过千言万语。禅宗"不立文字"之旨，于此经中找到最经典的示范。',
+    relatedBooks: ['weimojiejing']
+  },
+  {
+    id: 'faq-30',
+    question: '《禅林宝训》不是经，为什么禅门如此重视？',
+    answer: '《禅林宝训》是宋代大慧宗杲与竹庵士珪辑录的丛林住持格言集，汇聚黄龙慧南、杨岐方会、慈明楚圆等数十位大宗师的道德警策法语。它不谈玄妙，专讲道心、品行、住持、待人——是禅僧从"开悟"到"做人"的落地指南。悟后不修德，如花开不结果；道在日用，丛林规矩即是禅的实践场。故千百年来禅门必读。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-31',
+    question: '达摩四论（血脉论、悟性论、破相论、无心论）各自讲什么？',
+    answer: '《血脉论》直指"若见性即是佛"，立禅宗"见性成佛"之纲宗；《悟性论》论寂照不二、无念无妄，明悟后之境；《破相论》破外在形式执着，将六度归于心行；《无心论》直探"无妄心者即名无心"，辨无心非木石。四论从见地到行持，从破妄到显真，构成达摩禅的完整教理体系，是禅宗中土传承的理论基石。',
+    relatedBooks: ['xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun']
+  },
+  {
+    id: 'faq-32',
+    question: '四祖道信"念佛心是佛"和净土宗念佛有什么区别？',
+    answer: '净土宗念佛求生西方，事相上信有阿弥陀佛接引。四祖道信依《文殊说般若经》"一行三昧"教人念佛，是借佛号收摄散心，念到能所双亡时亲见自性弥陀——"念佛心是佛，妄念是凡夫"。前者向外求佛接引，后者向内借佛号见自性。事相不同，理体相通：都从一声佛号入，只是归宿一在西方、一在自心。',
+    relatedBooks: ['anxin', 'wenshu']
+  },
+  {
+    id: 'faq-33',
+    question: '五祖弘忍"守本真心"和六祖"本来无一物"冲突吗？',
+    answer: '不冲突，是同一心体从不同角度的表述。弘忍"守本真心"是从"用"说：自性本具，但须守护不失，如保赤子。惠能"本来无一物"是从"体"说：自性空寂，无有一法可得，何物可守？守是初心方便，无一物是究竟见地。悟者守而无守，无守而守——守的是"无一物"之真心，非守一个可得之物。',
+    relatedBooks: ['zuishangcheng', 'tanjing']
+  },
+  {
+    id: 'faq-34',
+    question: '普照知讷是韩国人，为什么他的著作被收入禅宗知识库？',
+    answer: '普照知讷（1158-1210）是高丽禅宗巨擘，毕生阐扬"真心"与"顿悟渐修"之旨。其《真心直说》十五门与《修心诀》直承中国禅宗如来藏系心性思想，又融入华严、天台教理，形成独特的海东禅法体系。知讷的"真心"说与六祖"自性"、黄檗"一心"一脉相承，是连接中韩禅法的重要枢纽，故收入禅宗知识库。',
+    relatedBooks: ['zhenxin', 'xiuxinjue']
+  },
+  {
+    id: 'faq-35',
+    question: '"烦恼即菩提"是不是说可以放纵烦恼？',
+    answer: '恰恰相反。"烦恼即菩提"是说不二：烦恼的本性即是空，空处即是菩提。不是"烦恼就是菩提所以不用管"，而是"于烦恼起处当下照破，烦恼即转为菩提"。永嘉《证道歌》云"无明实性即佛性，幻化空身即法身"——是就体性说不二，不是就事相说混滥。执之者以烦恼为不妨而放逸，是错会祖意，堕于狂禅。',
+    relatedBooks: ['zhengdaoge', 'tanjing']
+  },
+  {
+    id: 'faq-36',
+    question: '莲花生大士的"无染觉性"和禅宗的"自性"是同一个东西吗？',
+    answer: '体性相同，教法风格不同。莲花生大士《无染觉性直观自行解脱之道》直指本觉本来清净、无染无着，妄念自解脱——与六祖"何期自性本自清净"同出一辙。差异在于：禅宗偏于"直指—见性—保任"的路径，大圆满偏于"直指—自解脱—任运"的路径。但所指的"那个"——当下灵明不昧的觉性——完全一致。故禅密可以互参。',
+    relatedBooks: ['wuran', 'tanjing']
+  },
+  {
+    id: 'faq-37',
+    question: '《楞严经》"五十阴魔"对现代人有什么启示？',
+    answer: '五十阴魔是佛陀详剖修道中五十种心理陷阱：轻安快感、神通境界、空无感受、狂慧分别……每一种都看似"成就"实是魔障。对现代人的启示：冥想中出现的任何"特殊体验"——光明、喜乐、顿悟感——都不是目标，执着即入魔道。佛说"不作圣心，名善境界；若作圣解，即受群邪"——保持平常心，不追不拒，才是安全的修行态度。',
+    relatedBooks: ['lengyanjing']
+  },
+  {
+    id: 'faq-38',
+    question: '宝志公《十四科颂》说"菩提烦恼不二"，和《维摩诘经》什么关系？',
+    answer: '宝志公《十四科颂》以"菩提烦恼不二""持犯不二""生死涅槃不二"等十四组对立范畴直透万法平等一如，是《维摩诘经》"入不二法门品"在中国禅宗的早期本土化表达。志公处于梁代，早于六祖，其颂偈将般若不二思想以诗偈形式普及化，对后世禅宗"平常心是道""烦恼即菩提"等教旨有直接启发。',
+    relatedBooks: ['zhigong', 'weimojiejing']
+  },
+  {
+    id: 'faq-39',
+    question: '傅大士"心王铭"的"心王"是什么？',
+    answer: '傅大士《心王铭》云"观心空王，玄妙难测"——"心王"指本觉真心，它无形无相却统摄万法，如国王统理国土。六根六尘皆是心王之臣民，心王若正，臣民自顺；心王若失，臣民作乱。故修行不在枝末上用功——不在眼耳鼻舌身上修，而在心王上修。心王安住，身心世界自然清净。这与六祖"但用此心，直了成佛"同一意旨。',
+    relatedBooks: ['xinwangming', 'tanjing']
+  },
+  {
+    id: 'faq-40',
+    question: '荷泽神会为什么在禅宗史上很重要？',
+    answer: '荷泽神会是六祖晚年弟子，在六祖入灭后于滑台无遮大会力辩南北二宗是非，确立"南宗顿悟"为禅宗正统，使六祖一脉成为中国禅宗主流。其《显宗记》以"无念为宗"概括南宗宗旨，云"理即顿悟，乘悟并销；事非顿除，因次第尽"——顿悟理体，渐除事习，为后世"顿悟渐修"说之先声。',
+    relatedBooks: ['shenhui', 'tanjing']
+  },
+  {
+    id: 'faq-41',
+    question: '"万法归一，一归何处"这个公案怎么参？',
+    answer: '赵州答"我在青州作一领布衫，重七斤"——这不是答非所问，而是以最日常的事物截断你的思量。你问"一归何处"，已经在找"一"的归处，但"一"不是数目之一，是绝待之全体；全体不在别处，就在穿衣吃饭。参此公案不是找一个巧妙答案，而是把能问能寻的那个彻底放下——布衫重七斤，冷时穿热时脱，会么？',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-42',
+    question: '大珠慧海"饥来吃饭困来即眠"就是修行吗？',
+    answer: '有源律师问大珠慧海："和尚修道还用功否？"慧海曰"用功"。曰"如何用功？"曰"饥来吃饭困来即眠。"源曰"一切人总如是，同师用功否？"慧海曰"不同。"曰"何故不同？"曰"他吃饭时百种须索，睡觉时千般计较；我吃饭时吃饭，睡觉时睡觉。"——差别在于：凡夫吃饭睡觉时心不在当下，满腹妄想；悟者吃饭睡觉时了了分明，不起第二念。平常心不平常，就在此处分野。',
+    relatedBooks: ['dunwu']
+  },
+  {
+    id: 'faq-43',
+    question: '《八识规矩颂》和禅宗有什么关系？',
+    answer: '《八识规矩颂》是玄奘大师对唯识宗八识（眼耳鼻舌身意六识加末那识、阿赖耶识）的精炼概括。禅宗虽标榜"不立文字"，但实际修行须明了心识运作：前六识是感官与思维，第七末那识是恒审思量"我"的根——一切我执从此出；第八阿赖耶识是含藏一切种子的心体。禅宗"直指人心"所指的"心"，在唯学层面即转八识成四智——前五识成成所作智，第六识成妙观察智，第七识成平等性智，第八识成大圆镜智。明此理，参禅更有方向感。',
+    relatedBooks: ['bashiguijusong']
+  },
+  {
+    id: 'faq-44',
+    question: '《大乘起信论》对禅宗有什么影响？',
+    answer: '《大乘起信论》立"一心二门"——心真如门与心生灭门，明众生心本具觉性（本觉），但因无明熏习而起妄念（不觉），修行是"本觉内熏"与"外缘正熏"合力回归真如。此论为禅宗"自性本觉"提供了系统的理论依据：六祖"何期自性本自清净"即本觉义，"但用此心直了成佛"即始觉合本觉。达摩以《楞伽》印心，后世以《起信》明理，禅教相资。',
+    relatedBooks: ['dachengqixinlun', 'tanjing']
+  },
+  {
+    id: 'faq-45',
+    question: '"拈花微笑"是真实历史事件还是传说？',
+    answer: '"拈花微笑"最早见于《联灯会要》与《无门关》，在早期佛经中并无明确记载，学界多认为是禅宗为确立"教外别传"法脉而构造的溯源传说。但禅宗看重的是它的象征意义：正法眼藏不依文字、不借言说，以心印心——这恰恰是禅宗区别于教下诸宗的根本特质。无论史实与否，"拈花微笑"已成为禅宗传法精神的最凝练表达。',
+    relatedBooks: ['qifo']
+  },
+  {
+    id: 'faq-46',
+    question: '禅宗"不立文字"为什么还有那么多语录和著作？',
+    answer: '"不立"不是"不用"。禅宗标榜"不立文字"是破对文字的执着，不是废除经典。达摩以《楞伽》印心，六祖因《金刚》开悟，历代语录汗牛充栋——文字如指月之指，病在认指为月，不在指本身。故禅门以言遣言、以楔出楔，机锋转语皆是"活句"：不堕义解，直下截断思量。读经看教须作活句会，得意忘言，方不负佛祖。',
+    relatedBooks: ['xuemaicong', 'shenhui']
+  },
+  {
+    id: 'faq-47',
+    question: '《禅关策进》是什么书？对参禅有什么帮助？',
+    answer: '《禅关策进》是明代袾宏大师辑录的古德参禅警策法语集，精选宗杲、死心、高峰、中峰等祖师的逼拶开示，专为逼拶参禅者发起真实疑情。其特色是"不谈玄理，只说苦切"——专讲参禅中实际遇到的昏沉、掉举、偷心、懈怠等毛病与对治。对现代人的价值：它把"参禅"从玄妙拉回现实——你以为自己在用功，其实偷心未死；你以为疑情成片，其实只是轻安假相。策进者，鞭策也。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-48',
+    question: '禅宗讲"顿悟"，那不悟的人怎么办？',
+    answer: '顿悟是"理可顿悟"——于刹那间契悟自性全体；但"事须渐除"——无始习气非一时能净。普照知讷喻为"顿悟如开目，渐修如行路"：睁开眼看见路了（顿悟），但走到目的地还需一步步走（渐修）。不悟者当先借教明理、借坐摄心，或参公案起疑情，时节因缘到来自有悟处。六祖云"迷闻经累劫，悟则刹那间"——但迷时的累劫正是悟的资粮，没有白走的路。',
+    relatedBooks: ['tanjing', 'xiuxinjue', 'zhenxin']
+  },
+  {
+    id: 'faq-49',
+    question: '"三轮体空"在日常生活中怎么用？',
+    answer: '行布施或做善事时，不执著"我在帮人"（能施者）、"他受我帮"（受施者）、"我帮了什么"（施物）——三者皆是因缘和合，无独立自性。做完即放下，如雁过长空不留痕迹。日常中：帮了同事不求感谢，捐了善款不挂心头，做了好事不自我感动。心若无住，虽日行万善而无一善可执；心若有住，虽行一善亦是轮回之因。',
+    relatedBooks: ['sixingguan', 'jingangjing']
+  },
+  {
+    id: 'faq-50',
+    question: '《景德传灯录》和《五灯会元》是什么关系？',
+    answer: '《景德传灯录》是北宋道原所编禅宗史传，记录从七佛到法眼宗各派祖师的传法机缘语录，是禅宗灯史之祖。《五灯会元》是南宋普济将五部灯录（《景德传灯录》《天圣广灯录》《建中靖国续灯录》《联灯会要》《嘉泰普灯录》）合编删繁而成，更为精炼通行。两部灯史是禅宗人物与公案的最大来源库，本知识库中的人物传记与公案原文多取材于此。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-51',
+    question: '初学者应该从哪部经典入手读禅宗？',
+    answer: '建议从《六祖坛经》入手——它是唯一被尊为"经"的中国祖师著述，语言直白，义理完整，从见地到修行到证悟一以贯之。其次可读《信心铭》（146字，极简极深）和《心经》（260字，般若精华）。有一定基础后再读达摩四论和马祖、临济、赵州语录。切忌一开始就钻入《楞严经》《圆觉经》等大部头——先立见地，再广经教，方不本末倒置。',
+    relatedBooks: ['tanjing', 'xinxinming', 'xinjing']
+  },
+  {
+    id: 'faq-52',
+    question: '禅宗和净土宗可以同时修吗？',
+    answer: '可以，古德云"有禅有净土，犹如戴角虎"。禅宗直指自性弥陀，净土宗仰仗他力接引，看似不同，实则互补：禅重理悟，净土重事修；禅破我执，净土破法执。四祖道信即以"念佛心是佛"开念佛禅之先河，永明延寿更倡禅净合流。现代人根器参禅不易，借佛号摄心、以禅观照性，禅净双修是稳妥路径。但须注意：参禅时参禅，念佛时念佛，不可两头狐疑。',
+    relatedBooks: ['anxin', 'wenshu']
   }
 ];

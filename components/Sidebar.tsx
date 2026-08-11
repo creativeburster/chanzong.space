@@ -14,9 +14,60 @@ import {
   ChevronDown,
   ChevronRight,
   X,
+  Lightbulb,
 } from 'lucide-react';
-import { ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS, ZEN_PERSONS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS, ZEN_PERSONS, ZEN_FAQS } from '@/lib/taxonomy';
+import manifest from '@/manifest.json';
 import { useLang } from '@/context/LangContext';
+
+const conceptIconMap: Record<string, string> = {
+  'buddha-nature': '🪷',
+  'prajna': '🔮',
+  'emptiness': '🌫️',
+  'non-duality': '☯️',
+  'koan': '🧩',
+  'samadhi': '🧘',
+  'affliction-bodhi': '🌱',
+  'no-abiding': '🌊',
+  'mind-is-buddha': '🪷',
+  'not-mind-not-buddha': '❓',
+  'all-returns-to-one': '🎯',
+  'direct-pointing': '👆',
+  'mind-transmission': '📨',
+  'beyond-words': '🤐',
+  'originally-nothing': '∅',
+  'self-nature': '💎',
+  'instant-enlightenment': '⚡',
+  'ordinary-mind': '🍵',
+  'non-mind': '🚫',
+  'real-mind': '❤️',
+  'yinian-wusheng': '✨',
+  'zixin-xianliang': '💡',
+  'yixing-sanmei': '🪑',
+  'sanlun-tikong': '🌀',
+  'weishi-yixin': '👁️',
+  'ying-wu-suo-zhu': '🕊️',
+  'si-xiang': '🎭',
+  'ru-meng-huan-pao-ying': '🎭',
+  'wu-yun-jie-kong': '☁️',
+  'se-ji-shi-kong': '🌈',
+  'wu-gua-ai': '🔓',
+  'zhi-huan-ji-li': '🔄',
+  'yuanjue-qingjing-xinxing': '💠',
+  'si-bing': '🩹',
+  'tou-xin-wei-si': '🫀',
+  'de-hua-li-zhi': '📜',
+  'qi-chu-zheng-xin': '🔍',
+  'ba-huan-bian-jian': '🪞',
+  'wu-shi-yin-mo': '🧶',
+  'xin-jing-ji-fo-tu-jing': '🗺️',
+  'ru-bu-er-fa-men': '⚖️',
+  'wei-xin-zao': '🎨',
+  'wu-ran-jue-xing': '🌅',
+  'po-xiang': '🔨',
+};
+
+const conceptIcon = (id: string) => conceptIconMap[id] ?? '💎';
 
 interface SidebarProps {
   onOpenSearch: () => void;
@@ -25,13 +76,15 @@ interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = ({
   onOpenSearch,
-  classicsCount = 27,
+  classicsCount = 33,
 }) => {
   const pathname = usePathname();
   const { t } = useLang();
   const [coreOpen, setCoreOpen] = useState(true);
   const [classicsOpen, setClassicsOpen] = useState(true);
   const [conceptsOpen, setConceptsOpen] = useState(true);
+  const [moreClassicsOpen, setMoreClassicsOpen] = useState(false);
+  const [moreConceptsOpen, setMoreConceptsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   // 监听顶栏汉堡按钮派发的开关事件
@@ -146,22 +199,55 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </Link>
 
-              <Link
-                href="/qa"
-                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
-                  isActive('/qa')
-                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
-                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
-                }`}
-              >
-                <div className="flex items-center space-x-3">
-                  <MessageSquare className="w-5 h-5 text-rose-400" />
-                  <span>{t('禅宗公案')}</span>
+              <div className="relative group">
+                <Link
+                  href="/qa"
+                  className={`relative flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                    isActive('/qa') || pathname.startsWith('/qa')
+                      ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                      : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                  }`}
+                >
+                  <div className="flex items-center space-x-3">
+                    <MessageSquare className="w-5 h-5 text-rose-400" />
+                    <span>{t('禅宗公案')}</span>
+                  </div>
+                  <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
+                    {ZEN_QAS.length}
+                  </span>
+                </Link>
+
+                <div className="hidden group-hover:block absolute left-full top-1/2 -translate-y-1/2 w-52 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl py-2 z-50 hover:block">
+                  <Link
+                    href="/qa"
+                    className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
+                      isActive('/qa')
+                        ? 'text-amber-300 font-semibold bg-amber-500/10'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-2.5">
+                      <MessageSquare className="w-4 h-4 text-rose-400" />
+                      <span>{t('公案原案')}</span>
+                    </div>
+                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_QAS.length}</span>
+                  </Link>
+                  <Link
+                    href="/qa/faq"
+                    className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
+                      isActive('/qa/faq')
+                        ? 'text-amber-300 font-semibold bg-amber-500/10'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-2.5">
+                      <Lightbulb className="w-4 h-4 text-amber-400" />
+                      <span>{t('参究 FAQ')}</span>
+                    </div>
+                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_FAQS.length}</span>
+                  </Link>
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                  {ZEN_QAS.length}
-                </span>
-              </Link>
+              </div>
 
               <Link
                 href="/persons"
@@ -209,36 +295,41 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           {classicsOpen && (
             <div className="space-y-1 pl-2">
-              <Link
-                href="/classics/xuemaicong"
-                className="block px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
-              >
-                📖 菩提达摩血脉论
-              </Link>
-              <Link
-                href="/classics/tanjing"
-                className="block px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
-              >
-                📖 六祖法宝坛经
-              </Link>
-              <Link
-                href="/classics/huangbo"
-                className="block px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
-              >
-                📖 黄檗山传心法要
-              </Link>
-              <Link
-                href="/classics/zhenxin"
-                className="block px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
-              >
-                📖 普照知呐真心直说
-              </Link>
-              <Link
-                href="/classics/xiuxinjue"
-                className="block px-3 py-2 rounded-xl text-slate-300 hover:text-amber-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
-              >
-                📖 普照知呐修心诀
-              </Link>
+              {(manifest as any[]).slice(0, 5).map((book) => (
+                <Link
+                  key={book.id}
+                  href={`/classics/${book.id}`}
+                  className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
+                    pathname === `/classics/${book.id}`
+                      ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
+                      : 'text-slate-300 hover:text-amber-300 hover:bg-slate-800/60'
+                  }`}
+                >
+                  📖 {t(book.title)}
+                </Link>
+              ))}
+              {(manifest as any[]).length > 5 && (
+                <button
+                  onClick={() => setMoreClassicsOpen(!moreClassicsOpen)}
+                  className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[12px] font-semibold text-slate-400 hover:text-amber-300 hover:bg-slate-800/60 transition-colors"
+                >
+                  <span>{moreClassicsOpen ? t('收起') : `${t('展开其余')} ${(manifest as any[]).length - 5} ${t('部')}`}</span>
+                  {moreClassicsOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
+                </button>
+              )}
+              {moreClassicsOpen && (manifest as any[]).slice(5).map((book) => (
+                <Link
+                  key={book.id}
+                  href={`/classics/${book.id}`}
+                  className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
+                    pathname === `/classics/${book.id}`
+                      ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
+                      : 'text-slate-300 hover:text-amber-300 hover:bg-slate-800/60'
+                  }`}
+                >
+                  📖 {t(book.title)}
+                </Link>
+              ))}
             </div>
           )}
         </div>
@@ -255,13 +346,39 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           {conceptsOpen && (
             <div className="space-y-1 pl-2">
-              {ZEN_CONCEPTS.slice(0, 4).map((concept) => (
+              {ZEN_CONCEPTS.slice(0, 5).map((concept) => (
                 <Link
                   key={concept.id}
                   href={`/concepts/${concept.id}`}
-                  className="block px-3 py-2 rounded-xl text-slate-300 hover:text-emerald-400 hover:bg-slate-800/60 truncate transition-colors text-sm font-semibold"
+                  className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
+                    pathname === `/concepts/${concept.id}`
+                      ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
+                      : 'text-slate-300 hover:text-emerald-400 hover:bg-slate-800/60'
+                  }`}
                 >
-                  💎 {t(concept.title)}
+                  {conceptIcon(concept.id)} {t(concept.title)}
+                </Link>
+              ))}
+              {ZEN_CONCEPTS.length > 5 && (
+                <button
+                  onClick={() => setMoreConceptsOpen(!moreConceptsOpen)}
+                  className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[12px] font-semibold text-slate-400 hover:text-emerald-400 hover:bg-slate-800/60 transition-colors"
+                >
+                  <span>{moreConceptsOpen ? t('收起') : `${t('展开其余')} ${ZEN_CONCEPTS.length - 5} ${t('个')}`}</span>
+                  {moreConceptsOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
+                </button>
+              )}
+              {moreConceptsOpen && ZEN_CONCEPTS.slice(5).map((concept) => (
+                <Link
+                  key={concept.id}
+                  href={`/concepts/${concept.id}`}
+                  className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
+                    pathname === `/concepts/${concept.id}`
+                      ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
+                      : 'text-slate-300 hover:text-emerald-400 hover:bg-slate-800/60'
+                  }`}
+                >
+                  {conceptIcon(concept.id)} {t(concept.title)}
                 </Link>
               ))}
             </div>

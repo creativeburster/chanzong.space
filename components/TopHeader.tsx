@@ -16,6 +16,7 @@ export const TopHeader: React.FC = () => {
     { href: '/concepts', label: t('概念') },
     { href: '/methods', label: t('法门') },
     { href: '/qa', label: t('公案') },
+    { href: '/qa/faq', label: t('问答') },
     { href: '/persons', label: t('人物') },
     { href: '/graph', label: t('图谱') },
   ];

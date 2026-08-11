@@ -9,6 +9,7 @@ import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
 import { ArrowLeft, BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Share2, Tag } from 'lucide-react';
+import { GlossaryCard } from '@/components/GlossaryCard';
 import { useLang } from '@/context/LangContext';
 
 interface PageProps {
@@ -176,6 +177,8 @@ export default function PersonDetailPage({ params }: PageProps) {
 
           {/* 5. 传世经典 */}
           {person.classics && person.classics.length > 0 && (
+             <>
+             {person.relatedBooks && person.relatedBooks.length > 0 && <GlossaryCard sourceIds={person.relatedBooks} />}
              <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                <BookOpen className="w-5 h-5 text-amber-700" />
@@ -217,6 +220,7 @@ export default function PersonDetailPage({ params }: PageProps) {
                })}
              </div>
            </div>
+             </>
           )}
         </main>
 

@@ -7,12 +7,11 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_QAS, ZEN_FAQS } from '@/lib/taxonomy';
-import { MessageCircle, Lightbulb, ChevronDown, ArrowRight } from 'lucide-react';
+import { MessageCircle, Lightbulb, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
 export default function QAsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
-  const [openFaq, setOpenFaq] = useState<string | null>(ZEN_FAQS[0]?.id ?? null);
   const { t } = useLang();
 
   return (
@@ -36,8 +35,18 @@ export default function QAsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* 左列：公案原案 */}
+          <div className="mb-6">
+            <Link
+              href="/qa/faq"
+              className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-800 text-[13px] font-semibold hover:bg-amber-100 hover:border-amber-400 transition-all"
+            >
+              <Lightbulb className="w-4 h-4" />
+              <span>{t('参究 FAQ')} ({ZEN_FAQS.length})</span>
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 items-start">
             <section>
               <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-700 mb-4 px-1">
                 <MessageCircle className="w-4 h-4" />
@@ -73,57 +82,6 @@ export default function QAsPage() {
                     </div>
                   </Link>
                 ))}
-              </div>
-            </section>
-
-            {/* 右列：AI 阅读理解 FAQ */}
-            <section className="lg:sticky lg:top-24">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-800 mb-4 px-1">
-                <Lightbulb className="w-4 h-4" />
-                <span>{t('参究 FAQ')} ({ZEN_FAQS.length})</span>
-              </div>
-
-              <div className="space-y-3">
-                {ZEN_FAQS.map((faq) => {
-                  const isOpen = openFaq === faq.id;
-                  return (
-                    <div
-                      key={faq.id}
-                      className={`rounded-2xl bg-white border shadow-sm transition-all ${
-                        isOpen ? 'border-amber-500/60 shadow-md' : 'border-slate-200/80 hover:border-amber-500/40'
-                      }`}
-                    >
-                      <button
-                        onClick={() => setOpenFaq(isOpen ? null : faq.id)}
-                        className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left"
-                      >
-                        <span className="text-[15px] font-bold font-serif-zen text-slate-900 leading-snug">
-                          {t(faq.question)}
-                        </span>
-                        <ChevronDown
-                          className={`w-4 h-4 shrink-0 text-amber-700 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-                        />
-                      </button>
-
-                      {isOpen && (
-                        <div className="px-5 pb-5 -mt-1">
-                          <p className="text-[15px] font-serif-zen text-slate-700 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/60">
-                            {t(faq.answer)}
-                          </p>
-                          {faq.relatedQa && (
-                            <Link
-                              href={`/qa/${faq.relatedQa}`}
-                              className="inline-flex items-center space-x-1.5 mt-3 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
-                            >
-                              <span>{t('参看相关公案')}</span>
-                              <ArrowRight className="w-3.5 h-3.5" />
-                            </Link>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
               </div>
             </section>
           </div>
