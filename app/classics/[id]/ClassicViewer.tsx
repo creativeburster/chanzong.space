@@ -7,6 +7,8 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import { TranslationCard } from '@/components/TranslationCard';
 import { GlossaryCard } from '@/components/GlossaryCard';
+import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCard, RelatedBooksCard, AudioCard } from '@/components/ClassicCards';
+import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
 import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare } from 'lucide-react';
@@ -39,6 +41,10 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
   const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
   const relQas = ZEN_QAS.filter((q) => q.relatedBooks.includes(meta.id));
+
+  // 自动提取卡片数据
+  const extracted = extractCards(rawContent);
+  const relQuotes = relPersons.flatMap((p) => p.quotes || []);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(rawContent);
@@ -134,11 +140,35 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             )}
           </article>
 
+          {/* 语音朗读 */}
+          <AudioCard rawContent={rawContent} />
+
+          {/* 核心偈颂 */}
+          <VerseCard verses={extracted.verses} />
+
+          {/* 公案精选 */}
+          <KoanCard koans={extracted.koans} />
+
           {/* 白话今译（分页） */}
           <TranslationCard classicId={meta.id} />
 
           {/* 生僻字解释 */}
           <GlossaryCard sourceIds={[meta.id]} />
+
+          {/* 祖师名言 */}
+          <QuoteCard quotes={relQuotes} personNames={relPersons.map(p => p.name)} />
+
+          {/* 实践指导 */}
+          <PracticeCard practices={extracted.practices} relMethods={relMethods} />
+
+          {/* 现代启示 */}
+          <ModernAppCard apps={extracted.modernApp} />
+
+          {/* 历史背景 */}
+          <HistoryCard meta={meta} relPersons={relPersons} />
+
+          {/* 相关经典 */}
+          <RelatedBooksCard manifest={manifest} currentId={meta.id} />
 
           {/* 延伸阅读：交叉引用 */}
           {(relPersons.length > 0 || relConcepts.length > 0 || relMethods.length > 0 || relQas.length > 0) && (
