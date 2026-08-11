@@ -8,7 +8,8 @@ import { StatsOverview } from '@/components/StatsOverview';
 import { QuickEntryGrid } from '@/components/QuickEntryGrid';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { ZEN_CONCEPTS, ZEN_PERSONS } from '@/lib/taxonomy';
+import { STATS } from '@/lib/stats';
+import { FEATURED_CONCEPTS } from '@/lib/featured';
 import { ChevronRight, Gem, Users, BookOpen } from 'lucide-react';
 
 export default function Home() {
@@ -58,12 +59,12 @@ export default function Home() {
                 <span>核心概念精选</span>
               </div>
               <Link href="/concepts" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {ZEN_CONCEPTS.length} 概念 →
+                查看全部 {STATS.concepts} 概念 →
               </Link>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {ZEN_CONCEPTS.slice(0, 4).map((concept) => (
+              {FEATURED_CONCEPTS.map((concept) => (
                 <div
                   key={concept.id}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-emerald-600/50 hover:shadow-sm transition-all"

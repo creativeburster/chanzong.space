@@ -16,7 +16,8 @@ import {
   X,
   Lightbulb,
 } from 'lucide-react';
-import { ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_PERSONS, ZEN_FAQS } from '@/lib/taxonomy';
+import { STATS } from '@/lib/stats';
+import sidebarConcepts from '@/lib/sidebar-concepts.json';
 import manifest from '@/manifest.json';
 import { useLang } from '@/context/LangContext';
 
@@ -178,7 +179,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <span>{t('核心概念')}</span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                  {ZEN_CONCEPTS.length}
+                  {STATS.concepts}
                 </span>
               </Link>
 
@@ -195,7 +196,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <span>{t('修持法门')}</span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                  {ZEN_METHODS.length}
+                  {STATS.methods}
                 </span>
               </Link>
 
@@ -213,7 +214,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <span>{t('禅宗公案')}</span>
                   </div>
                   <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                    {ZEN_KOANS.length}
+                    {STATS.koans}
                   </span>
                 </Link>
 
@@ -230,7 +231,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <MessageSquare className="w-4 h-4 text-rose-400" />
                       <span>{t('公案原案')}</span>
                     </div>
-                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_KOANS.length}</span>
+                    <span className="text-[11px] text-slate-400 font-mono">{STATS.koans}</span>
                   </Link>
                   <Link
                     href="/faq"
@@ -244,7 +245,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <Lightbulb className="w-4 h-4 text-amber-400" />
                       <span>{t('参究 FAQ')}</span>
                     </div>
-                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_FAQS.length}</span>
+                    <span className="text-[11px] text-slate-400 font-mono">{STATS.faqs}</span>
                   </Link>
                 </div>
               </div>
@@ -262,7 +263,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <span>{t('祖师人物')}</span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                  {ZEN_PERSONS.length}
+                  {STATS.persons}
                 </span>
               </Link>
 
@@ -346,7 +347,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           {conceptsOpen && (
             <div className="space-y-1 pl-2">
-              {ZEN_CONCEPTS.slice(0, 5).map((concept) => (
+              {sidebarConcepts.slice(0, 5).map((concept) => (
                 <Link
                   key={concept.id}
                   href={`/concepts/${concept.id}`}
@@ -359,16 +360,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   {conceptIcon(concept.id)} {t(concept.title)}
                 </Link>
               ))}
-              {ZEN_CONCEPTS.length > 5 && (
+              {sidebarConcepts.length > 5 && (
                 <button
                   onClick={() => setMoreConceptsOpen(!moreConceptsOpen)}
                   className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[12px] font-semibold text-slate-400 hover:text-emerald-400 hover:bg-slate-800/60 transition-colors"
                 >
-                  <span>{moreConceptsOpen ? t('收起') : `${t('展开其余')} ${ZEN_CONCEPTS.length - 5} ${t('个')}`}</span>
+                  <span>{moreConceptsOpen ? t('收起') : `${t('展开其余')} ${sidebarConcepts.length - 5} ${t('个')}`}</span>
                   {moreConceptsOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
                 </button>
               )}
-              {moreConceptsOpen && ZEN_CONCEPTS.slice(5).map((concept) => (
+              {moreConceptsOpen && sidebarConcepts.slice(5).map((concept) => (
                 <Link
                   key={concept.id}
                   href={`/concepts/${concept.id}`}

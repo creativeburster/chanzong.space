@@ -1,12 +1,13 @@
 // ChanZong Knowledge Base - Service Worker v1
-const CACHE_NAME = 'chanzong-kb-v1';
+const CACHE_NAME = 'chanzong-kb-v2';
 
 const CORE_ASSETS = [
   '/',
   '/books',
   '/concepts',
   '/methods',
-  '/qas',
+  '/koan',
+  '/faq',
   '/persons',
   '/graph',
   '/manifest.json'

@@ -7,6 +7,7 @@ export interface ClassicItem {
   title: string;
   author: string;
   category: string;
+  summary?: string;
   word_count: number;
   filename: string;
 }

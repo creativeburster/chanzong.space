@@ -99,7 +99,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
 
         {/* Modal Footer */}
         <div className="px-4 py-3 bg-zinc-50 border-t border-zinc-200 text-xs text-zinc-500 flex items-center justify-between">
-          <span>共收录 27 部核心禅宗典籍</span>
+          <span>共收录 40 部核心禅宗典籍</span>
           <span>按 ESC 退出</span>
         </div>
       </div>

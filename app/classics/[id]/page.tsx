@@ -1,5 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { getClassicById, getManifest } from '@/lib/data';
 import { ClassicViewer } from './ClassicViewer';
 import { marked } from 'marked';
@@ -15,6 +16,35 @@ export function generateStaticParams() {
   return manifest.map((item) => ({
     id: item.id,
   }));
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const { meta } = getClassicById(params.id);
+  if (!meta) return {};
+
+  const summary = meta.summary || `${meta.title}，${meta.author}著，${meta.category}类经典。`;
+
+  return {
+    title: `${meta.title} · ${meta.author}`,
+    description: `${summary.slice(0, 100)} 作者：${meta.author}，约${Math.round(meta.word_count / 1000)}千字。`,
+    alternates: {
+      canonical: `/classics/${meta.id}`,
+    },
+    openGraph: {
+      type: 'article',
+      title: `${meta.title} · ${meta.author} | 禅宗知识库`,
+      description: summary.slice(0, 160),
+      url: `https://chanzong.space/classics/${meta.id}`,
+      siteName: '禅宗知识库',
+      locale: 'zh_CN',
+      authors: [meta.author],
+    },
+    twitter: {
+      card: 'summary',
+      title: `${meta.title} · ${meta.author}`,
+      description: summary.slice(0, 140),
+    },
+  };
 }
 
 export default function ClassicPage({ params }: PageProps) {

@@ -1,12 +1,9 @@
-'use client';
-
-import React from 'react';
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { BookOpen, Gem, Compass, Users, MessageSquare, GitFork } from 'lucide-react';
 
-export const QuickEntryGrid: React.FC = () => {
+export const QuickEntryGrid = () => {
   const entries = [
-    { title: '书籍总览', desc: '全量 27+ 核心禅宗经典文库', icon: BookOpen, color: 'text-amber-600', bg: 'bg-amber-50', href: '/books' },
+    { title: '书籍总览', desc: '全量 40+ 核心禅宗经典文库', icon: BookOpen, color: 'text-amber-600', bg: 'bg-amber-50', href: '/books' },
     { title: '核心概念', desc: '自性、顿悟、平常心、无心等宗旨', icon: Gem, color: 'text-emerald-600', bg: 'bg-emerald-50', href: '/concepts' },
     { title: '修行方法', desc: '看话头、默照禅、四行观与直观解脱', icon: Compass, color: 'text-sky-600', bg: 'bg-sky-50', href: '/methods' },
     { title: '人物索引', desc: '达摩、六祖、马祖、黄檗至普照国师', icon: Users, color: 'text-purple-600', bg: 'bg-purple-50', href: '/persons' },
