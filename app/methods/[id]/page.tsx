@@ -7,7 +7,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_QAS } from '@/lib/taxonomy';
+import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS } from '@/lib/taxonomy';
 import { ArrowLeft, BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { useLang } from '@/context/LangContext';
@@ -144,7 +144,7 @@ export default function MethodDetailPage({ params }: PageProps) {
           )}
 
           {/* 5b. 相关公案 */}
-          {ZEN_QAS.filter(q =>
+          {ZEN_KOANS.filter(q =>
             q.relatedConcepts.some(c => method.relatedConcepts.includes(c)) ||
             q.relatedPersons.some(p => method.relatedPersons.includes(p))
           ).length > 0 && (
@@ -154,11 +154,11 @@ export default function MethodDetailPage({ params }: PageProps) {
                 <span>{t('❓ 相关公案机锋')}</span>
               </div>
               <div className="flex flex-wrap gap-2">
-                {ZEN_QAS.filter(q =>
+                {ZEN_KOANS.filter(q =>
                   q.relatedConcepts.some(c => method.relatedConcepts.includes(c)) ||
                   q.relatedPersons.some(p => method.relatedPersons.includes(p))
                 ).map(q => (
-                  <Link key={q.id} href={`/qa/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
+                  <Link key={q.id} href={`/koan/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
                     {t(q.question)}
                   </Link>
                 ))}

@@ -8,7 +8,7 @@ import { GraphCanvas } from '@/components/GraphCanvas';
 import { LineageGraph } from '@/components/LineageGraph';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
+import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { GitFork, Quote, Gem, BookOpen } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
@@ -42,7 +42,7 @@ export default function GraphPage() {
               <span>{t('全景传法印心与概念图谱')}</span>
             </div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
-              {t('知识图谱')} ({ZEN_CONCEPTS.length} {t('概念')} · {manifest.length} {t('著作')} · {ZEN_PERSONS.length} {t('祖师')} · {ZEN_QAS.length} {t('公案')})
+              {t('知识图谱')} ({ZEN_CONCEPTS.length} {t('概念')} · {manifest.length} {t('著作')} · {ZEN_PERSONS.length} {t('祖师')} · {ZEN_KOANS.length} {t('公案')})
             </h1>
             <p className="text-sm text-slate-500 mt-1">
               {t('鼠标悬停节点查看关联线与关系语义，单击直达详情研读页。右上角可按类型筛选节点，左上角支持缩放与重置。')}

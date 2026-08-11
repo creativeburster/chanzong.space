@@ -11,10 +11,13 @@ import { BookOpen, ChevronRight } from 'lucide-react';
 export default function BooksPage() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('全部');
+  const [displayCount, setDisplayCount] = useState(12);
 
   const categories = ['全部', ...Array.from(new Set(manifest.map((item) => item.category)))];
 
   const filtered = activeCategory === '全部' ? manifest : manifest.filter((item) => item.category === activeCategory);
+  const visibleBooks = filtered.slice(0, displayCount);
+  const hasMore = displayCount < filtered.length;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -54,7 +57,7 @@ export default function BooksPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filtered.map((item) => (
+            {visibleBooks.map((item) => (
               <Link
                 key={item.id}
                 href={`/classics/${item.id}`}
@@ -84,6 +87,26 @@ export default function BooksPage() {
               </Link>
             ))}
           </div>
+
+          {hasMore && (
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                <div className="h-full bg-amber-600 rounded-full transition-all" style={{ width: `${Math.round((displayCount / filtered.length) * 100)}%` }} />
+              </div>
+              <button
+                onClick={() => setDisplayCount((c) => c + 12)}
+                className="px-6 py-3 rounded-xl bg-amber-700 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
+              >
+                加载更多 ({displayCount} / {filtered.length})
+              </button>
+            </div>
+          )}
+
+          {!hasMore && filtered.length > 12 && (
+            <p className="mt-6 text-center text-xs text-slate-400">
+              已显示全部 {filtered.length} 部经典
+            </p>
+          )}
         </main>
       </div>
 

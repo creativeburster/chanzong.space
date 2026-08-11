@@ -10,12 +10,24 @@ import { ZEN_FAQS } from '@/lib/taxonomy';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Filter } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
+type FAQEntry = {
+  id: string;
+  question: string;
+  answer: string;
+  relatedQa?: string;
+  relatedBooks?: string[];
+};
+
 export default function FAQPage() {
   const [searchOpen, setSearchOpen] = useState(false);
-  const [openFaq, setOpenFaq] = useState<string | null>(ZEN_FAQS[0]?.id ?? null);
+  const [openFaq, setOpenFaq] = useState<string | null>(null);
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [displayCount, setDisplayCount] = useState(10);
   const { t } = useLang();
+
+  const allFaqs: FAQEntry[] = useMemo(() => {
+    return ZEN_FAQS.map(f => ({ ...f }));
+  }, []);
 
   const bookMap = useMemo(() => {
     const map: Record<string, { id: string; title: string }> = {};
@@ -27,7 +39,7 @@ export default function FAQPage() {
 
   const booksWithFaqs = useMemo(() => {
     const ids = new Set<string>();
-    for (const faq of ZEN_FAQS) {
+    for (const faq of allFaqs) {
       if (faq.relatedBooks) {
         for (const bid of faq.relatedBooks) {
           ids.add(bid);
@@ -38,12 +50,12 @@ export default function FAQPage() {
       .map((id) => bookMap[id])
       .filter(Boolean)
       .sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
-  }, [bookMap]);
+  }, [allFaqs, bookMap]);
 
   const filteredFaqs = useMemo(() => {
-    if (!selectedBook) return ZEN_FAQS;
-    return ZEN_FAQS.filter((faq) => faq.relatedBooks?.includes(selectedBook));
-  }, [selectedBook]);
+    if (!selectedBook) return allFaqs;
+    return allFaqs.filter((faq) => faq.relatedBooks?.includes(selectedBook));
+  }, [allFaqs, selectedBook]);
 
   const visibleFaqs = filteredFaqs.slice(0, displayCount);
   const hasMore = displayCount < filteredFaqs.length;
@@ -68,7 +80,7 @@ export default function FAQPage() {
               <span>{t('参究常见疑问与义理辨析')}</span>
             </div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
-              {t('参究 FAQ')} ({ZEN_FAQS.length})
+              {t('参究 FAQ')} ({allFaqs.length})
             </h1>
             <p className="text-sm text-slate-500 mt-1">
               {t('围绕公案、经典与禅宗义理的常见疑问解答。可按书籍筛选，点击展开查看详细辨析。')}
@@ -97,10 +109,10 @@ export default function FAQPage() {
                     : 'bg-white text-slate-600 border-slate-200 hover:border-amber-400 hover:text-amber-700'
                 }`}
               >
-                {t('全部')} ({ZEN_FAQS.length})
+                {t('全部')} ({allFaqs.length})
               </button>
               {booksWithFaqs.map((book) => {
-                const count = ZEN_FAQS.filter((f) => f.relatedBooks?.includes(book.id)).length;
+                const count = allFaqs.filter((f) => f.relatedBooks?.includes(book.id)).length;
                 const isActive = selectedBook === book.id;
                 return (
                   <button
@@ -137,24 +149,26 @@ export default function FAQPage() {
                     onClick={() => setOpenFaq(isOpen ? null : faq.id)}
                     className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left"
                   >
-                    <span className="text-[15px] font-bold font-serif-zen text-slate-900 leading-snug">
-                      {t(faq.question)}
-                    </span>
+                    <div className="flex items-start gap-2 min-w-0">
+                      <span className="text-[15px] font-bold font-serif-zen text-slate-900 leading-snug">
+                        {t(faq.question)}
+                      </span>
+                    </div>
                     <ChevronDown
                       className={`w-4 h-4 shrink-0 text-amber-700 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                     />
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 pb-5 -mt-1">
+                    <div className="px-5 pb-5 -mt-1 space-y-3">
                       <p className="text-[15px] font-serif-zen text-slate-700 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/60">
                         {t(faq.answer)}
                       </p>
 
-                      <div className="flex flex-wrap items-center gap-3 mt-3">
+                      <div className="flex flex-wrap items-center gap-3">
                         {faq.relatedQa && (
                           <Link
-                            href={`/qa/${faq.relatedQa}`}
+                            href={`/koan/${faq.relatedQa}`}
                             className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
                           >
                             <span>{t('参看相关公案')}</span>
@@ -204,14 +218,14 @@ export default function FAQPage() {
 
           {!hasMore && filteredFaqs.length > 10 && (
             <p className="mt-6 text-center text-xs text-slate-400">
-              {t('已显示全部')} {filteredFaqs.length} {t('条FAQ')}
+              {t('已显示全部')} {filteredFaqs.length} {t('条')}
             </p>
           )}
 
           {filteredFaqs.length === 0 && (
             <div className="text-center py-16 text-slate-400">
               <Lightbulb className="w-12 h-12 mx-auto mb-4 opacity-30" />
-              <p className="text-[15px]">{t('该书籍暂无关联FAQ')}</p>
+              <p className="text-[15px]">{t('该书籍暂无关联问答')}</p>
             </div>
           )}
         </main>

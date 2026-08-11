@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 import { RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
+import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
 interface NodeData extends d3.SimulationNodeDatum {
   id: string;
@@ -26,7 +26,7 @@ const colorMap: Record<string, string> = {
   book: '#fd79a8',
   concept: '#e0aaff',
   method: '#4ecdc4',
-  qa: '#ffd700',
+  koan: '#ffd700',
 };
 
 const baseRadiusMap: Record<string, number> = {
@@ -34,7 +34,7 @@ const baseRadiusMap: Record<string, number> = {
   book: 11,
   concept: 10,
   method: 10,
-  qa: 9,
+  koan: 9,
 };
 
 // 关系强度权重：数值越高关联越强
@@ -57,10 +57,10 @@ const typeLabelMap: Record<string, string> = {
   book: '经典',
   concept: '概念',
   method: '法门',
-  qa: '公案'
+  koan: '公案'
 };
 
-const FILTER_TYPES = ['person', 'book', 'concept', 'method', 'qa'] as const;
+const FILTER_TYPES = ['person', 'book', 'concept', 'method', 'koan'] as const;
 
 const shortLabel = (t: string, n = 8) => (t.length > n ? t.slice(0, n) + '…' : t);
 
@@ -68,7 +68,7 @@ const shortLabel = (t: string, n = 8) => (t.length > n ? t.slice(0, n) + '…' :
 const EXCLUDE_GRAPH_IDS = new Set([
   'bodhidharma', 'huike', 'sengcan', 'daoxin', 'hongren',
   'xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun', 'sixingguan',
-  'qa-11', 'qa-12'
+  'koan-11', 'koan-12'
 ]);
 
 /* ---- Nodes & links generated dynamically from taxonomy + manifest ---- */
@@ -78,7 +78,7 @@ function getGraphData() {
     ...manifest.filter(b => !EXCLUDE_GRAPH_IDS.has(b.id)).map((b) => ({ id: b.id, name: shortLabel(b.title), type: 'book', url: `/classics/${b.id}`, desc: `${b.author} · ${b.category}` })),
     ...ZEN_CONCEPTS.filter(c => !EXCLUDE_GRAPH_IDS.has(c.id)).map((c) => ({ id: c.id, name: c.title, type: 'concept', url: `/concepts/${c.id}`, desc: c.summary.slice(0, 50) + '…' })),
     ...ZEN_METHODS.filter(m => !EXCLUDE_GRAPH_IDS.has(m.id)).map((m) => ({ id: m.id, name: m.title, type: 'method', url: `/methods/${m.id}`, desc: m.summary.slice(0, 50) + '…' })),
-    ...ZEN_QAS.filter(q => !EXCLUDE_GRAPH_IDS.has(q.id)).map((q) => ({ id: q.id, name: shortLabel(q.question, 7), type: 'qa', url: `/qa/${q.id}`, desc: `${q.master} · ${q.source}` })),
+    ...ZEN_KOANS.filter(q => !EXCLUDE_GRAPH_IDS.has(q.id)).map((q) => ({ id: q.id, name: shortLabel(q.question, 7), type: 'koan', url: `/koan/${q.id}`, desc: `${q.master} · ${q.source}` })),
   ];
 
   const nodeIdSet = new Set(allNodes.map((n) => n.id));
@@ -104,7 +104,7 @@ function getGraphData() {
   ZEN_METHODS.forEach((m) => {
     m.relatedPersons.forEach((t) => addLink(t, m.id, '行持'));
   });
-  ZEN_QAS.forEach((q) => {
+  ZEN_KOANS.forEach((q) => {
     q.relatedPersons.forEach((t) => addLink(t, q.id, '问答'));
   });
 
@@ -151,7 +151,7 @@ export const GraphCanvas: React.FC = () => {
     book: true,
     concept: true,
     method: true,
-    qa: true,
+    koan: true,
   });
 
   const [tooltip, setTooltip] = useState<{show: boolean, x: number, y: number, name: string, type: string, desc: string, color: string}>({

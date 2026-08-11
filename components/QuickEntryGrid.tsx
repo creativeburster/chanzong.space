@@ -10,7 +10,7 @@ export const QuickEntryGrid: React.FC = () => {
     { title: '核心概念', desc: '自性、顿悟、平常心、无心等宗旨', icon: Gem, color: 'text-emerald-600', bg: 'bg-emerald-50', href: '/concepts' },
     { title: '修行方法', desc: '看话头、默照禅、四行观与直观解脱', icon: Compass, color: 'text-sky-600', bg: 'bg-sky-50', href: '/methods' },
     { title: '人物索引', desc: '达摩、六祖、马祖、黄檗至普照国师', icon: Users, color: 'text-purple-600', bg: 'bg-purple-50', href: '/persons' },
-    { title: '公案问答', desc: '古德机锋对决与问答精粹', icon: MessageSquare, color: 'text-rose-600', bg: 'bg-rose-50', href: '/qa' },
+    { title: '公案', desc: '古德机锋对决与祖师开悟因缘', icon: MessageSquare, color: 'text-rose-600', bg: 'bg-rose-50', href: '/koan' },
     { title: '知识图谱', desc: '交互式全景法脉与概念网图', icon: GitFork, color: 'text-amber-700', bg: 'bg-amber-50', href: '/graph' },
   ];
 

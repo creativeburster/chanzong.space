@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getManifest } from '@/lib/data';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
+import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
 export async function GET() {
   const manifest = getManifest();
@@ -29,8 +29,8 @@ export async function GET() {
   });
 
   content += `\n## 公案机锋\n\n`;
-  ZEN_QAS.forEach((q) => {
-    content += `- [${q.question}](https://chanzong.space/qa/${q.id}): ${q.master} · ${q.source}\n`;
+  ZEN_KOANS.forEach((q) => {
+    content += `- [${q.question}](https://chanzong.space/koan/${q.id}): ${q.master} · ${q.source}\n`;
   });
 
   return new NextResponse(content, {

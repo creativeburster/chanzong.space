@@ -40,7 +40,7 @@ export interface MethodItem {
   relatedBooks: string[];
 }
 
-export interface QAItem {
+export interface KoanItem {
   id: string;
   question: string;
   answer: string;
@@ -500,7 +500,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "dongshan"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
     "id": "dongshan",
@@ -1423,11 +1423,11 @@ export const ZEN_PERSONS: PersonItem[] = [
       "七处征心，八还辨见。 —《楞严经》",
       "心生则种种法生，心灭则种种法灭。"
     ],
-    "classics": ["成唯识论", "大般若经"],
-    "relatedConcepts": ["weishi-yixin", "emptiness"],
+    "classics": ["成唯识论", "大般若经", "八识规矩颂"],
+    "relatedConcepts": ["weishi-yixin", "emptiness", "zhuan-shi-cheng-zhi", "alaiye-shi", "mo-na-shi"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing"]
+    "relatedBooks": ["lengyanjing", "bashiguijusong"]
   },
   {
     "id": "sengzhao",
@@ -1564,7 +1564,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "emptiness"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "nagarjuna",
@@ -1700,7 +1700,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["zhaozhou", "dahui-zonggao"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "niutou-farong",
@@ -1821,7 +1821,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "changlu-zongze",
@@ -2040,7 +2040,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["tou-xin-wei-si", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": [],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "puming",
@@ -2222,6 +2222,20 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["tongrong"],
     "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "wumen-huikai",
+    "name": "无门慧开",
+    "title": "宋代禅宗高僧",
+    "era": "宋",
+    "lifeStory": "无门慧开（1183-1260），宋代禅宗高僧，参学于月林禅师，参\u201c无\u201d字话头六年无消息，某日闻斋鼓声蓦然打破疑团。宋绍定元年（1228年）于东嘉龙翔寺首众时，因衲子请益，将古人公案作敲门瓦子，编集四十八则公案，每则附评唱与颂古，名曰《无门关》。以\u201c无门为法门\u201d为宗，逼拶学人当下透脱。",
+    "teachings": "以\u201c无门\u201d为法门，以参\u201c无\u201d字为敲门瓦子。通身起疑团，如吞热铁丸，吐又吐不出，久久纯熟，蓦然打发，惊天动地。逢佛杀佛，逢祖杀祖，于生死岸头得大自在。",
+    "quotes": ["大道无门，千差有路。透得此关，乾坤独步。", "参禅须透祖师关，妙悟要穷心路绝。"],
+    "classics": ["无门关"],
+    "relatedConcepts": ["koan", "kanhua-chan-concept", "yiqing"],
+    "relatedMethods": ["kanhuatou", "wumen"],
+    "relatedPersons": ["zhaozhou", "mazu", "huineng"],
+    "relatedBooks": ["wumenguan"]
   }
 ];
 
@@ -3371,7 +3385,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《从容录》《无门关》",
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedPersons": ["yuanwu-keqin", "wansong-xingxiu", "fenyang-shanzhao"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "mozhao-chan-concept",
@@ -3397,7 +3411,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》",
     "relatedConcepts": ["koan", "tou-xin-wei-si", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["zhenxin", "chanlinbaoxun"]
   },
   {
     "id": "canjiu",
@@ -3410,7 +3424,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "koan", "tou-xin-wei-si"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai", "boshan-yuanlai"],
-    "relatedBooks": ["wumenguan", "changuancejin"]
+    "relatedBooks": ["zhenxin", "chanlinbaoxun"]
   },
   {
     "id": "yiqing",
@@ -3423,7 +3437,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "canjiu", "tou-xin-wei-si"],
     "relatedPersons": ["dahui-zonggao", "boshan-yuanlai"],
-    "relatedBooks": ["wumenguan", "changuancejin"]
+    "relatedBooks": ["zhenxin"]
   },
   {
     "id": "zhuan-shen-ju",
@@ -3436,7 +3450,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《临济语录》",
     "relatedConcepts": ["koan", "beyond-words", "instant-enlightenment"],
     "relatedPersons": ["linji", "huangbo", "deshan-xuanjian"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["dongshanyulu"]
   },
   {
     "id": "xiangshang-guanliezi",
@@ -3449,7 +3463,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《临济语录》",
     "relatedConcepts": ["koan", "direct-pointing", "mind-transmission"],
     "relatedPersons": ["linji", "yuanwu-keqin"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "yunmen"]
   },
   {
     "id": "gewai-xuanji",
@@ -3462,7 +3476,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《五灯会元》",
     "relatedConcepts": ["koan", "beyond-words", "non-duality"],
     "relatedPersons": ["danxia-tianran", "mazu", "linji"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["mazu", "linji"]
   },
   {
     "id": "chanbing",
@@ -3475,7 +3489,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《博山参禅警语》《禅林宝训》《玄沙师备禅师广录》",
     "relatedConcepts": ["tou-xin-wei-si", "self-nature", "mozhao-chan-concept"],
     "relatedPersons": ["xuansha-shibei", "boshan-yuanlai", "dahui-zonggao"],
-    "relatedBooks": ["changuancejin", "chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "wu-nian",
@@ -3527,7 +3541,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《大乘起信论》",
     "relatedConcepts": ["instant-enlightenment", "self-nature", "originally-nothing"],
     "relatedPersons": ["huineng", "yongjia", "shenhui", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing", "yongjiaji", "dachengqixinlun"]
+    "relatedBooks": ["tanjing", "yongjia"]
   },
   {
     "id": "yixin-sanguan",
@@ -3553,7 +3567,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《大乘起信论》",
     "relatedConcepts": ["self-nature", "mind-is-buddha", "buddha-nature"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "liudu",
@@ -3605,7 +3619,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《坛经》《大乘起信论》",
     "relatedConcepts": ["tathagatagarbha", "buddha-nature", "self-nature"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "fashen",
@@ -3618,7 +3632,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《大乘起信论》",
     "relatedConcepts": ["self-nature", "tathagatagarbha", "buddha-nature"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "sanbao",
@@ -3657,7 +3671,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
     "relatedConcepts": ["yuanqi", "emptiness", "self-nature"],
     "relatedPersons": ["huineng", "yongjia", "baizhang"],
-    "relatedBooks": ["tanjing", "yongjiaji", "biyanlu"]
+    "relatedBooks": ["tanjing", "yongjia"]
   },
   {
     "id": "lunhui",
@@ -3722,7 +3736,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《五灯会元》《传灯录》",
     "relatedConcepts": ["dunwu-jianxiu", "direct-pointing", "instant-enlightenment"],
     "relatedPersons": ["yangshan-huiji", "xiangyan-zhixian"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
     "id": "jiaowai-biechuan",
@@ -3735,7 +3749,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《传灯录》",
     "relatedConcepts": ["direct-pointing", "mind-transmission", "beyond-words"],
     "relatedPersons": ["bodhidharma", "huineng"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["qifo", "xuemaicong", "chanlinbaoxun"]
   },
   {
     "id": "zhengfa-yancang",
@@ -3748,7 +3762,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《无门关》《碧岩录》",
     "relatedConcepts": ["mind-transmission", "direct-pointing", "jiaowai-biechuan"],
     "relatedPersons": ["buddha", "mahakashyapa", "bodhidharma"],
-    "relatedBooks": ["wumenguan", "biyanlu"]
+    "relatedBooks": ["qifo", "xuemaicong", "tanjing"]
   },
   {
     "id": "niepan-miaoxin",
@@ -3761,7 +3775,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《坛经》《心经》",
     "relatedConcepts": ["zhengfa-yancang", "self-nature", "niepan"],
     "relatedPersons": ["buddha", "mahakashyapa", "huineng"],
-    "relatedBooks": ["wumenguan", "tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "shixiang",
@@ -3787,7 +3801,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大乘起信论》《坛经》《楞伽经》",
     "relatedConcepts": ["self-nature", "tathagatagarbha", "shixiang"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun", "tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "fajie",
@@ -3878,7 +3892,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《涅槃经》《坛经》《大乘起信论》",
     "relatedConcepts": ["buddha-nature", "self-nature", "zhenru"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "yinian-sanqian",
@@ -3917,7 +3931,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大乘起信论》《坛经》《中论》",
     "relatedConcepts": ["fanrao-puti", "self-nature", "lunhui"],
     "relatedPersons": ["huineng", "ming-bodhisattva", "nagarjuna"],
-    "relatedBooks": ["dachengqixinlun", "tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "sanshen",
@@ -3930,7 +3944,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《大乘起信论》",
     "relatedConcepts": ["fashen", "self-nature", "buddha-nature"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "sizhi",
@@ -4021,7 +4035,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
     "relatedConcepts": ["jiaowai-biechuan", "beyond-words", "wenzi-chan"],
     "relatedPersons": ["huineng", "yongjia"],
-    "relatedBooks": ["tanjing", "yongjiaji"]
+    "relatedBooks": ["tanjing", "yongjia"]
   },
   {
     "id": "zhijie-zongtu",
@@ -4047,7 +4061,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《禅林宝训》《禅关策进》",
     "relatedConcepts": ["wenzi-chan", "zhijie-zongtu", "canjiu"],
     "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "kuang-chan",
@@ -4060,7 +4074,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《永嘉集》《禅林宝训》《禅关策进》",
     "relatedConcepts": ["yinguo", "fanrao-puti", "baoren"],
     "relatedPersons": ["yongjia", "dahui-zonggao", "zhuhong"],
-    "relatedBooks": ["yongjiaji", "changuancejin"]
+    "relatedBooks": ["yongjia"]
   },
   {
     "id": "kumu-chan",
@@ -4190,7 +4204,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《中论》《大乘起信论》",
     "relatedConcepts": ["zhenru", "self-nature", "shixiang"],
     "relatedPersons": ["huineng", "nagarjuna"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "xinxin-xiangyin",
@@ -4203,7 +4217,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《碧岩录》《无门关》",
     "relatedConcepts": ["mind-transmission", "jiaowai-biechuan", "zhengfa-yancang"],
     "relatedPersons": ["bodhidharma", "huineng", "mahakashyapa"],
-    "relatedBooks": ["wumenguan", "biyanlu"]
+    "relatedBooks": ["qifo", "xuemaicong", "chanlinbaoxun"]
   },
   {
     "id": "yihua-wuye",
@@ -4216,7 +4230,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission", "jiaowai-biechuan", "direct-pointing"],
     "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["wumenguan", "biyanlu"]
+    "relatedBooks": ["qifo", "xuemaicong", "tanjing"]
   },
   {
     "id": "xitian-ershiba-zu",
@@ -4229,7 +4243,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission", "zhengfa-yancang", "jiaowai-biechuan"],
     "relatedPersons": ["bodhidharma", "mahakashyapa", "nagarjuna"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["xuemaicong", "yunmen"]
   },
   {
     "id": "yixiu-jue",
@@ -4242,7 +4256,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《传灯录》",
     "relatedConcepts": ["instant-enlightenment", "direct-pointing", "self-nature"],
     "relatedPersons": ["yongjia", "huineng"],
-    "relatedBooks": ["tanjing", "yongjiaji"]
+    "relatedBooks": ["tanjing", "yongjia"]
   },
   {
     "id": "dunjiao",
@@ -4450,7 +4464,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《碧岩录》",
     "relatedConcepts": ["bore", "guanzhao-bore", "shixiang-bore"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "biyanlu"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "guanzhao-bore",
@@ -4567,7 +4581,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《万善同归集》《宗镜录》",
     "relatedConcepts": ["weixin-jingtu", "dunwu-jianxiu", "fangbian"],
     "relatedPersons": ["yongming-yanshou", "zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["xinwangming", "weimojiejing"]
   },
   {
     "id": "jiaoli-guanxing",
@@ -4593,7 +4607,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大乘起信论》《坛经》",
     "relatedConcepts": ["self-nature", "buddha-nature", "foxing-changzhu"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "zhengjue",
@@ -4632,7 +4646,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《维摩诘经》《大乘起信论》",
     "relatedConcepts": ["self-nature", "buddha-nature", "yuanman"],
     "relatedPersons": ["huineng", "weimojie"],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "fanyin",
@@ -4659,6 +4673,45 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["wu-zhu", "self-nature", "wu-nian"],
     "relatedPersons": ["huineng", "weimojie"],
     "relatedBooks": ["tanjing", "weimojiejing"]
+  },
+  {
+    "id": "mo-na-shi",
+    "title": "末那识",
+    "category": "唯识",
+    "summary": "末那识是唯识宗第七识，恒审思量第八识为\u201c我\u201d——是一切俱生我执的根源。玄奘大师《八识规矩颂》云\u201c恒审思量我相随，有情日夜镇昏迷\u201d——末那识日夜不停地将第八识执为\u201c我\u201d，有情因此沉迷昏昧。与四大烦恼（我痴、我见、我慢、我爱）及八大随烦恼相应。禅宗参\u201c念佛是谁\u201d——正是直探末那识的俱生我执：逼这个\u201c我\u201d现形，而后破之。末那识在初地转为平等性智，但俱生我执须到第八地无功用行方恒被摧灭。",
+    "etymology": "梵语 manas-vijñāna，末那意为思量。",
+    "quotes": ["恒审思量我相随，有情日夜镇昏迷。 —《八识规矩颂》", "四惑八大相应起，六转呼为染净依。 —《八识规矩颂》"],
+    "guidance": "末那识是\u201c我执\u201d的根源——一切\u201c我\u201d\u201c我所\u201d的执着都从此出。参禅参\u201c谁\u201d字，正是逼此识现形。破我执不是道理上破，而是参究到山穷水尽处，蓦然爆破——俱生我执顿断，平等性智现前。",
+    "classicRef": "八识规矩颂 · 成唯识论",
+    "relatedConcepts": ["zhuan-shi-cheng-zhi", "alaiye-shi"],
+    "relatedPersons": ["xuanzang"],
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "wu-men",
+    "title": "无门",
+    "category": "实修",
+    "summary": "无门是无门慧开以\u201c无门为法门\u201d的参究宗风。大道本无门，以无门为法门——\u201c从门入者，不是家珍；从缘得者，始终成坏。\u201d公案不是用来理解的，是用来参究的敲门砖。无门慧开令学人参\u201c无\u201d字——通身起疑团，如吞热铁丸，吐又吐不出，久久纯熟，蓦然打发，惊天动地。透得此关，乾坤独步——逢佛杀佛，逢祖杀祖，于生死岸头得大自在。《无门关》四十八则公案，每一则都是一把锁，须以疑情为钥匙一一打开。",
+    "etymology": "无门慧开《无门关》：\u201c佛语心为宗，无门为法门。\u201d",
+    "quotes": ["大道无门，千差有路。透得此关，乾坤独步。 —《无门关》", "参禅须透祖师关，妙悟要穷心路绝。 —《无门关》"],
+    "guidance": "无门不是没有方法，而是不从任何\u201c门\u201d（概念、道理、方便）进入——直以疑情逼拶到无路处，蓦然透脱。参\u201c无\u201d字时，莫作虚无会，莫作有无会，只管提撕。",
+    "classicRef": "无门关",
+    "relatedConcepts": ["koan", "yiqing", "beyond-words"],
+    "relatedPersons": ["wumen-huikai"],
+    "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "ben-lai-mian-mu",
+    "title": "本来面目",
+    "category": "心性",
+    "summary": "本来面目是六祖惠能为惠明上座直指的禅宗核心概念。\u201c不思善不思恶，正与么时，那个是明上座本来面目？\u201d——善恶念头不起的当下，那个能知能觉的，就是本来面目。它不是生灭法，不在时空之中——\u201c本来面目没处藏，世界坏时渠不朽\u201d。无门慧开评曰\u201c譬如新荔支剥了壳，去了核送在尔口里，只要尔咽一咽\u201d——六祖老婆心切，几乎替你嚼碎了。本来面目即自性、即佛性、即真心，只是从不同角度命名。",
+    "etymology": "六祖惠能于大庾岭为惠明直指，出自《六祖坛经》及《无门关》第二十三则。",
+    "quotes": ["不思善不思恶，正与么时，那个是明上座本来面目。 —六祖惠能", "本来面目没处藏，世界坏时渠不朽。 —《无门关》"],
+    "guidance": "不要向思善思恶处寻觅本来面目——善恶不起时，那个了了常知的，就是。它不是你\u201c找到\u201d的，而是你\u201c认出\u201d的——本自具足，从未丢失。",
+    "classicRef": "六祖坛经 · 无门关",
+    "relatedConcepts": ["self-nature", "buddha-nature", "wu-nian"],
+    "relatedPersons": ["huineng"],
+    "relatedBooks": ["tanjing", "wumenguan"]
   }
 ];
 
@@ -4812,9 +4865,10 @@ export const ZEN_METHODS: MethodItem[] = [
     ],
     "relatedPersons": [
       "zhaozhou",
-      "chinul"
+      "chinul",
+      "wumen-huikai"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["zhenxin", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "four-practices",
@@ -4872,7 +4926,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "dongshan",
       "yongjia"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["baojingsanmei", "dongshanyulu", "yongjia"]
   },
   {
     "id": "kanhuatou",
@@ -4901,7 +4955,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "chinul",
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun"]
   },
   {
     "id": "yixing-sanmei-practice",
@@ -5125,7 +5179,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "canjiu"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai", "boshan-yuanlai"],
-    "relatedBooks": ["wumenguan", "changuancejin"]
+    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun"]
   },
   {
     "id": "baoren",
@@ -5149,7 +5203,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《坛经》《禅林宝训》《大慧语录》",
     "relatedConcepts": ["dunwu-jianxiu", "self-nature", "wu-nian"],
     "relatedPersons": ["huineng", "dahui-zonggao", "boshan-yuanlai"],
-    "relatedBooks": ["tanjing", "changuancejin"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "jifeng",
@@ -5169,7 +5223,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《碧岩录》《无门关》《五灯会元》",
     "relatedConcepts": ["koan", "beyond-words", "zhuan-shen-ju"],
     "relatedPersons": ["mazu", "zhaozhou", "linji", "yunmen"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["mazu", "linji", "yunmen", "chanlinbaoxun"]
   },
   {
     "id": "muniu-tuxi",
@@ -5241,7 +5295,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《禅林宝训》《大慧语录》《碧岩录》",
     "relatedConcepts": ["canjiu", "jifeng", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun", "biyanlu"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "chanjing-shuangxiu",
@@ -5263,7 +5317,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《万善同归集》《禅关策进》《坛经》",
     "relatedConcepts": ["ordinary-mind", "self-nature", "nianfo-chan"],
     "relatedPersons": ["yongming-yanshou", "zhuhong", "daoxin"],
-    "relatedBooks": ["changuancejin", "tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "banghe",
@@ -5284,7 +5338,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《临济语录》《碧岩录》《五灯会元》",
     "relatedConcepts": ["jifeng", "zhuan-shen-ju", "gewai-xuanji"],
     "relatedPersons": ["linji", "huangbo", "deshan-xuanjian"],
-    "relatedBooks": ["biyanlu", "linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
     "id": "biguan-daqi",
@@ -5308,13 +5362,13 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《坐禅仪》《参禅警语》《禅关策进》",
     "relatedConcepts": ["canjiu", "yiqing", "samadhi"],
     "relatedPersons": ["changlu-zongze", "boshan-yuanlai", "zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   }
 ];
 
-export const ZEN_QAS: QAItem[] = [
+export const ZEN_KOANS: KoanItem[] = [
   {
-    "id": "qa-1",
+    "id": "koan-1",
     "question": "南泉斩猫",
     "answer": "斩却！——赵州归来，脱履安头上而出。",
     "context": "一日，池州南泉普愿禅师的东西两堂僧人为争一只猫儿相持不下，各言猫属己堂。南泉闻之，一手提起猫儿，一手举刀，对众曰：“道得即救取猫儿，道不得即斩却也！”两堂僧人面面相觑，无有一人下得转语。南泉遂斩猫。其日晚，首座赵州从谂自外归来，南泉举前话问之，赵州脱下草鞋顶在头上，转身走出。南泉叹曰：“子若在，即救得猫儿也。”",
@@ -5328,10 +5382,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-2",
+    "id": "koan-2",
     "question": "赵州狗子",
     "answer": "无。",
     "context": "有僧问赵州从谂禅师：“狗子还有佛性也无？”经云一切众生皆有佛性，狗子既是众生，合有佛性——这是学人依文解义的问处。赵州答曰：“无。”僧又举似问：“和尚，一切众生皆有佛性，狗子为什么却无？”赵州曰：“为伊有业识在。”又一僧问：“狗子还有佛性也无？”赵州答：“有。”僧曰：“既有，为什么入这皮袋里来？”赵州曰：“知而故犯。”一“无”一“有”，皆出赵州口。",
@@ -5345,10 +5399,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-3",
+    "id": "koan-3",
     "question": "德山棒，临济喝",
     "answer": "道！道！——便喝，便棒。",
     "context": "禅门至唐末，棒喝之施臻于极盛：德山宣鉴禅师接人，才见僧入门便棒，曰：“我宗无语句，实无一法与人。”临济义玄三度问黄檗“如何是佛法的大意”，三度被打，后于大愚言下大悟，归来便施棒喝，建立四料简、四照用、四宾主、三玄三要等施设。临济上堂，常以“喝”接人：有时一喝如金刚王宝剑，有时一喝如踞地狮子，有时一喝如探竿影草，有时一喝不作一喝用。故丛林有“德山棒，临济喝”之目，与“云门饼，赵州茶”并称。",
@@ -5368,7 +5422,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-4",
+    "id": "koan-4",
     "question": "百丈野狐",
     "answer": "不昧因果。",
     "context": "百丈怀海禅师每上堂，常有一老人随众听法。一日众退，老人独留不去。百丈问：“汝是何人？”老人曰：“某非人也。于过去迦叶佛时曾住此山，因学人问：‘大修行底人还落因果也无？’某答云：‘不落因果。’以此一句，堕野狐身五百世。今请和尚代一转语，贵脱野狐身。”百丈曰：“汝问来。”老人曰：“大修行底人还落因果也无？”百丈曰：“不昧因果。”老人于言下大悟，作礼曰：“某已脱野狐身，住在后山，敢告和尚，乞依亡僧津送。”百丈令维那白椎告众，食后送亡僧。大众聚议：一众皆安，涅槃堂又无病人，何故如此？食后百丈领众至后山岩下，以杖挑出一死野狐，乃依火葬。",
@@ -5387,7 +5441,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-5",
+    "id": "koan-5",
     "question": "香严上树",
     "answer": "开口即堕，不答即违。",
     "context": "邓州香严智闲禅师上堂示众曰：“如人上树，口衔树枝，手不攀枝，脚不踏树。树下忽有人问：‘如何是祖师西来意？’不对即违他所问，若对又丧身失命。正当恁么时，作么生对？”时有虎头招上座出众曰：“树上即不问，未上树时请和尚道。”师乃呵呵大笑。",
@@ -5399,10 +5453,10 @@ export const ZEN_QAS: QAItem[] = [
       "beyond-words"
     ],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-6",
+    "id": "koan-6",
     "question": "风幡之辩",
     "answer": "不是风动，不是幡动，仁者心动。",
     "context": "六祖惠能得法后，隐于四会猎人队十五年。后至广州法性寺，值印宗法师讲《涅槃经》。时有风吹幡动，一僧曰风动，一僧曰幡动，议论不已，各不相下。惠能进曰：“不是风动，不是幡动，仁者心动。”一众骇然。印宗知是肉身菩萨，延入室内，问：“行者定非常人，久闻黄梅衣法南来，莫是行者否？”惠能曰：“不敢。”于是印宗为惠能剃度，请说东山法门，惠能自此正式出世说法，大阐顿教。",
@@ -5421,7 +5475,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-7",
+    "id": "koan-7",
     "question": "磨砖作镜",
     "answer": "磨砖既不成镜，坐禅岂能成佛？",
     "context": "开元年间，沙门道一（后称马祖）在衡岳传法院结庵，常习坐禅，日夜不辍。南岳怀让禅师知是法器，一日持砖于庵前石上磨之。马祖见而问曰：“师作什么？”怀让曰：“磨作镜。”马祖失笑曰：“磨砖岂得成镜耶？”怀让曰：“磨砖既不成镜，坐禅岂得成佛耶？”马祖悚然，问曰：“如何即是？”怀让曰：“如牛驾车，车若不行，打车即是，打牛即是？”马祖无语。怀让又曰：“汝学坐禅，为学坐佛？若学坐禅，禅非坐卧；若学坐佛，佛非定相。于无住法，不应取舍。汝若坐佛，即是杀佛；若执坐相，非达其理。”马祖闻示诲，如饮醍醐，遂礼怀让为师，侍奉十秋，得受心印。",
@@ -5440,7 +5494,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-8",
+    "id": "koan-8",
     "question": "庭前柏树子",
     "answer": "庭前柏树子。",
     "context": "有僧问赵州从谂禅师：“如何是祖师西来意？”——达摩祖师从西天来，传的是什么大意？这是禅门最常被问的一问。赵州答曰：“庭前柏树子。”僧曰：“和尚莫将境示人？”（莫要拿眼前境界搪塞人）赵州曰：“我不将境示人。”僧曰：“如何是祖师西来意？”赵州曰：“庭前柏树子。”",
@@ -5454,10 +5508,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-9",
+    "id": "koan-9",
     "question": "吃茶去",
     "answer": "吃茶去。",
     "context": "赵州从谂禅师住观音院时，有新到僧来参。赵州问：“曾到此间么？”僧曰：“曾到。”赵州曰：“吃茶去。”又问一僧：“曾到此间么？”僧曰：“不曾到。”赵州曰：“吃茶去。”院主在旁不解，问曰：“为什么曾到也云吃茶去，不曾到也云吃茶去？”赵州召曰：“院主！”院主应诺。赵州曰：“吃茶去。”",
@@ -5471,10 +5525,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-10",
+    "id": "koan-10",
     "question": "万法归一",
     "answer": "我在青州作一领布衫，重七斤。",
     "context": "有僧问赵州从谂禅师：“万法归一，一归何处？”——千差万别的万法同归一心，那么这一个“一”又归向何处？这是教下学人依义理设问的典型话头。赵州答曰：“我在青州作一领布衫，重七斤。”——我在青州做了一件布衫，重七斤。",
@@ -5488,10 +5542,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-11",
+    "id": "koan-11",
     "question": "拈花微笑",
     "answer": "吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。",
     "context": "灵山会上，世尊拈花示众。是时众皆默然，唯迦叶尊者破颜微笑。世尊曰：“吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。”——此即禅宗“教外别传”的源头：不依经教文字，以心印心。自此迦叶为西天初祖，代代相传，至第二十八祖菩提达摩，泛海东来，为东土初祖；又六传至曹溪惠能，一花开五叶，禅宗遂遍于天下。",
@@ -5505,10 +5559,10 @@ export const ZEN_QAS: QAItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["xuemaicong"]
   },
   {
-    "id": "qa-12",
+    "id": "koan-12",
     "question": "慧可断臂",
     "answer": "觅心了不可得。——我与汝安心竟。",
     "context": "二祖慧可，初名神光，久居伊洛，博学善谈，然每叹曰：“孔老之教，礼术风规；庄易之书，未尽妙理。”闻达摩住止少林，乃往参礼。其年十二月九日夜，神光立于雪中，至明雪深过膝，达摩悯而问曰：“汝久立雪中，当求何事？”神光悲泣曰：“惟愿和尚慈悲，开甘露门，广度群品。”达摩曰：“诸佛无上妙道，旷劫精勤，难行能行，非忍而忍，岂以小德小智、轻心慢心而得？徒劳勤苦。”神光闻诲，乃潜取利刀，自断左臂，置于师前。达摩知是法器，曰：“诸佛最初求道，为法忘形；汝今断臂吾前，求亦可在。”遂为更名慧可。慧可问：“诸佛法印，可得闻乎？”达摩曰：“诸佛法印，匪从人得。”慧可曰：“我心未宁，乞师与安。”达摩曰：“将心来，与汝安。”慧可良久曰：“觅心了不可得。”达摩曰：“我与汝安心竟。”",
@@ -5528,7 +5582,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-14",
+    "id": "koan-14",
     "question": "心悟转法华",
     "answer": "心迷法华转，心悟转法华。诵经三千部，曹溪一句亡。",
     "context": "僧法达，洪州人，七岁出家，常诵《法华经》。来礼六祖，头不至地。六祖诃曰：“礼不投地，何如不礼！汝心中必有一物，蕴习何事邪？”对曰：“念《法华经》已达三千部。”六祖曰：“汝若念至万部，得其经意，不以为胜，即与吾并行。汝今负此事业，都不知过。”乃说偈曰：“礼本折慢幢，头何不至地？有我罪即生，亡功福无比。”遂为宣说《法华经》“开示悟入佛之知见”极大旨，法达当下大悟，以偈赞曰：“经诵三千部，曹溪一句亡。未明出世旨，空纳世盈长。”",
@@ -5547,7 +5601,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-15",
+    "id": "koan-15",
     "question": "非关文字",
     "answer": "诸佛妙理，非关文字。",
     "context": "六祖惠能隐居韶州曹溪时，有一尼名无尽藏，常诵《大般涅槃经》。六祖听闻片刻，即知经中妙理，遂为解说。尼执卷问字，六祖曰：“字即不识，义即请问。”尼曰：“字尚不识，焉能解义？”六祖曰：“诸佛妙理，非关文字。”尼大为惊异，遍告乡里，同来瞻礼。",
@@ -5566,7 +5620,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-16",
+    "id": "koan-16",
     "question": "一宿觉",
     "answer": "生死事大，无常迅速！——体即无生，了本无速。",
     "context": "永嘉玄觉禅师，精通三观十门，看《维摩经》发明心地。后因左溪策禅师劝往曹溪参六祖。玄觉至曹溪，振锡绕祖三匝，卓然而立。六祖曰：“夫沙门者，具三千威仪、八万细行。大德自何方而来，生大我慢？”玄觉曰：“生死事大，无常迅速！”六祖曰：“何不体取无生，了无速乎？”玄觉曰：“体即无生，了本无速！”六祖遂印可：“如是！如是！”玄觉留宿一宵，时人号为“一宿觉”。",
@@ -5586,7 +5640,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-17",
+    "id": "koan-17",
     "question": "黄檗三打临济",
     "answer": "黄檗佛法无多子！——赤肉团上无位真人。",
     "context": "临济义玄在黄檗门下，行业纯一。首座睦州劝其问黄檗：“如何是佛法的大意？”临济去问，语未卒，黄檗便打。如是三问，三度被打。临济辞黄檗，往参大愚。大愚问：“甚处来？”临济曰：“黄檗处来。”大愚曰：“黄檗有何言句？”临济曰：“某甲三问佛法大意，三度被打，不知过在何处？”大愚曰：“黄檗与么老老婆心，为汝得彻困，更来这里问过在何处！”临济于言下大悟曰：“元来黄檗佛法无多子！”大愚一把揪住曰：“这尿床鬼！适间道有过无过，如今却道黄檗佛法无多子！你道得什么道理？速道！速道！”临济于大愚肋下肋三拳。大愚托开曰：“汝师黄檗，非干吾事。”临济遂回黄檗，开出临济一宗。",
@@ -5605,7 +5659,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-19",
+    "id": "koan-19",
     "question": "应无所住而生其心",
     "answer": "何期自性本自清净！何期自性本不生灭！何期自性本自具足！何期自性本无动摇！何期自性能生万法！",
     "context": "六祖惠能早年在新州采柴，卖于市市，闻客诵《金刚经》至“应无所住而生其心”，心即开悟。遂往黄梅参五祖弘忍。弘忍命其于碓房破柴踏碓八余月。后五祖夜半召惠能入室，以袈裟遮围，为说《金刚经》，至“应无所住而生其心”，惠能言下大彻大悟，遂唱五句“何期自性”，五祖便传衣钵为第六代祖。",
@@ -5626,7 +5680,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-20",
+    "id": "koan-20",
     "question": "傅大士挥案讲经",
     "answer": "大士讲经竟。——以尺挥案一下便下座。",
     "context": "梁武帝请傅大士讲《金刚经》。大士升座，手执木尺击案一下，便下座。梁武帝惊愕不已。宝志公在一旁问皇帝：“陛下会否？”帝曰：“不会。”宝志公曰：“大士讲经竟。”",
@@ -5647,7 +5701,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-21",
+    "id": "koan-21",
     "question": "照见五蕴皆空·度一切苦厄",
     "answer": "以无所得故，心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想！",
     "context": "玄奘法师当年西行求法途经蜀中，见一老病僧人身上生疮身臭，遂衣物食物照顾。老僧以《般若波罗蜜多心经》相授。玄奘西行过八百里莫贺延碛沙漠，夜逢诸恶鬼怪奇异绕人，诵诸佛名皆不能退，一诵《心经》，声发恶鬼皆散！及西天取经成功，归国翻译此经，成为千古传诵之般若总持圣典。",
@@ -5668,7 +5722,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-22",
+    "id": "koan-22",
     "question": "知幻即离·离幻即觉",
     "answer": "知幻即离，不作方便；离幻即觉，亦无渐次。",
     "context": "普贤菩萨在圆觉法会上问佛：“世尊！若众生知身心皆如幻，云何以幻还修于幻？若幻灭无心，谁为修行？云何令妄想心解脱？”佛告普贤菩萨：“一切众生种种幻化，皆生如来圆觉妙心。离幻无需迂曲方便，知幻即离，不作方便；离幻即觉，亦无渐次。如钻火两木相磨，火出木尽灰飞烟灭，诸幻虽尽觉心不动。”",
@@ -5688,7 +5742,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-23",
+    "id": "koan-23",
     "question": "杨岐屋破·宁受风雪",
     "answer": "佛陀树下宿，吾有屋遮身。屋破炼道心，岂敢劳大众！",
     "context": "杨岐方会禅师住在袁州杨岐山，当上住持后房屋破旧不堪，风雪直吹入卧室。门徒弟子心疼大师，请求为大师修缮房屋。杨岐禅师谢绝说：“世尊当年在菩提树下露宿，我们如今有片瓦遮头已经是莫大福报！冬天虽然冷，但正好锤炼我们的道念。若为了我一个人的舒适去大兴土木劳役大众，这是损福灭道的举动。”遂作偈曰：“杨岐屋壁破，风雪满床打。缩却脖项卧，寒夜终日过。”",
@@ -5708,7 +5762,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-24",
+    "id": "koan-24",
     "question": "七处征心·观河见性",
     "answer": "此非汝心！前尘虚妄缘影。波斯匿王观河之见，变者受灭，彼不变者，原无生灭！",
     "context": "阿难尊者乞食遇摩登伽女大幻术，佛陀放光派文殊持神咒救回。佛陀连续七次逼问阿难“心在何处”，阿难七次回答全被佛陀以智照逻辑打翻，点明那只是妄想缘影。波斯匿王问佛：“此身死后，云何知不灭？”佛陀问王：“汝昔三岁见恒河水，至年六十，观河之见有异否？”王曰：“见无有异。”佛言：“汝面虽皱，观河见性未尝皱！变者受灭，彼不变者原无生灭！”波斯匿王与阿难于言下大悟欢喜。",
@@ -5729,7 +5783,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-25",
+    "id": "koan-25",
     "question": "维摩一默如雷震·天女散花不附着",
     "answer": "默然无言，是真入不二法门！结习未尽，故花粘身；结习尽者，花不附着。",
     "context": "文殊菩萨问维摩诘长者：“何等是菩萨入不二法门？”维摩诘长者默然无言！文殊菩萨赞叹曰：“善哉！善哉！乃至无有文字言语，是真入不二法门！”丈室内天女天花散下，花至菩萨身上纷纷坠落，至舍利子身上紧黏不去。舍利子用神通去花不能。天女笑曰：“结习未尽，故花粘身！若无分别执着，花自坠落。”",
@@ -5750,7 +5804,7 @@ export const ZEN_QAS: QAItem[] = [
     ]
   },
   {
-    "id": "qa-24",
+    "id": "koan-24",
     "question": "如何是祖师西来意？",
     "answer": "庭前柏树子。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d州曰：\u201c庭前柏树子。\u201d僧曰：\u201c和尚莫将境示人？\u201d州曰：\u201c我不将境示人。\u201d僧曰：\u201c如何是祖师西来意？\u201d州曰：\u201c庭前柏树子。\u201d",
@@ -5759,10 +5813,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 无门关第三十七则",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-25",
+    "id": "koan-25",
     "question": "学人乍入丛林，乞师指示。",
     "answer": "吃粥了也未？——洗钵去。",
     "context": "僧参赵州从谂禅师，问：\u201c学人乍入丛林，乞师指示。\u201d州曰：\u201c吃粥了也未？\u201d僧曰：\u201c吃粥了也。\u201d州曰：\u201c洗钵去。\u201d僧于此言下大悟。",
@@ -5771,10 +5825,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 无门关第七则",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-26",
+    "id": "koan-26",
     "question": "一击忘所知",
     "answer": "香严智闲因击竹声而悟道。",
     "context": "香严智闲初参沩山，沩山问：\u201c汝未出胞胎、未辨东西时，本分事试道一句来。\u201d智闲茫然无对。后住香严山，一日锄地，抛瓦砾击竹作声，忽然大悟，作偈曰：\u201c一击忘所知，更不自修持。处处无踪迹，声色外威仪。诸方达道者，咸言上上机。\u201d",
@@ -5783,10 +5837,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 碧岩录",
     "relatedConcepts": ["self-nature", "beyond-words", "instant-enlightenment"],
     "relatedPersons": ["xiangyan-zhixian", "weishan-lingyou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-27",
+    "id": "koan-27",
     "question": "何得烧我木佛？",
     "answer": "既无舍利，更取两尊烧。",
     "context": "丹霞天然禅师于慧林寺遇大寒，取木佛烧火取暖。院主呵曰：\u201c何得烧我木佛？\u201d师以杖拨灰曰：\u201c吾烧取舍利。\u201d院主曰：\u201c木佛何有舍利？\u201d师曰：\u201c既无舍利，更取两尊烧。\u201d院主随后眉须堕落。",
@@ -5795,10 +5849,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 碧岩录",
     "relatedConcepts": ["beyond-words", "self-nature", "non-duality"],
     "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-28",
+    "id": "koan-28",
     "question": "如何是西来意？",
     "answer": "大好岭上云。",
     "context": "僧问天皇道悟禅师：\u201c如何是西来意？\u201d师曰：\u201c大好岭上云。\u201d僧曰：\u201c意旨如何？\u201d师曰：\u201c可惜许，不知有祖师西来意。\u201d",
@@ -5810,7 +5864,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-29",
+    "id": "koan-29",
     "question": "如何是佛？",
     "answer": "麻三斤。",
     "context": "僧问洞山良价禅师：\u201c如何是佛？\u201d山曰：\u201c麻三斤。\u201d",
@@ -5819,10 +5873,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第十八则 / 无门关第十二则",
     "relatedConcepts": ["koan", "beyond-words", "self-nature"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["biyanlu", "wumenguan"]
+    "relatedBooks": ["dongshanyulu"]
   },
   {
-    "id": "qa-30",
+    "id": "koan-30",
     "question": "如何是佛法大意？",
     "answer": "春来草自青。",
     "context": "僧问云门文偃禅师：\u201c如何是佛法大意？\u201d师曰：\u201c春来草自青。\u201d",
@@ -5831,10 +5885,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-31",
+    "id": "koan-31",
     "question": "狗子还有佛性也无？",
     "answer": "无。",
     "context": "僧问赵州从谂禅师：\u201c狗子还有佛性也无？\u201d州曰：\u201c无。\u201d僧曰：\u201c上至诸佛，下至蝼蚁，皆有佛性，狗子为什么却无？\u201d州曰：\u201c为伊有业识在。\u201d",
@@ -5843,10 +5897,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第一则",
     "relatedConcepts": ["koan", "buddha-nature", "kanhua-chan-concept"],
     "relatedPersons": ["zhaozhou", "wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-32",
+    "id": "koan-32",
     "question": "如何是父母未生前本来面目？",
     "answer": "（参究此话头）",
     "context": "僧问六祖慧能：\u201c父母未生时，如何是本来面目？\u201d六祖不答，唯令其自参。此为禅宗著名话头之一，后世看话禅以之为重要参究对象。",
@@ -5855,10 +5909,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "坛经 / 无门关第二十三则",
     "relatedConcepts": ["self-nature", "kanhua-chan-concept", "yiqing"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "wumenguan"]
+    "relatedBooks": ["tanjing"]
   },
   {
-    "id": "qa-33",
+    "id": "koan-33",
     "question": "万法归一，一归何处？",
     "answer": "（参究此话头）",
     "context": "僧问赵州从谂禅师：\u201c万法归一，一归何处？\u201d州曰：\u201c我在青州做一领布衫，重七斤。\u201d",
@@ -5867,10 +5921,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 无门关",
     "relatedConcepts": ["koan", "kanhua-chan-concept", "all-returns-to-one"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-34",
+    "id": "koan-34",
     "question": "不落因果，不昧因果",
     "answer": "不昧因果。",
     "context": "百丈怀海禅师每上堂，常有一老者随众听法。一日众散，老者独留，问百丈：\u201c大修行人还落因果也无？\u201d百丈曰：\u201c不昧因果。\u201d老者于言下大悟，曰：\u201c某甲已脱野狐身，在后山。乞师依亡僧例送化。\u201d百丈遂依例送化。",
@@ -5879,10 +5933,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第二则 / 五灯会元",
     "relatedConcepts": ["yinguo", "emptiness", "self-nature"],
     "relatedPersons": ["baizhang"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["baizhang"]
   },
   {
-    "id": "qa-35",
+    "id": "koan-35",
     "question": "如何是佛法大意？",
     "answer": "即心即佛。",
     "context": "僧问马祖道一禅师：\u201c如何是佛法大意？\u201d师曰：\u201c即心即佛。\u201d",
@@ -5894,7 +5948,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-36",
+    "id": "koan-36",
     "question": "如何是佛？",
     "answer": "即心是佛。",
     "context": "僧问马祖：\u201c如何是佛？\u201d师曰：\u201c即心是佛。\u201d僧曰：\u201c如何是即心是佛？\u201d师曰：\u201c汝唤什么作心？汝唤什么作佛？\u201d",
@@ -5906,7 +5960,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-37",
+    "id": "koan-37",
     "question": "如何是祖师西来意？",
     "answer": "即今是什么意？",
     "context": "僧问马祖道一禅师：\u201c如何是祖师西来意？\u201d马祖曰：\u201c即今是什么意？\u201d",
@@ -5918,7 +5972,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-38",
+    "id": "koan-38",
     "question": "如何是西来意？",
     "answer": "三十年后大有人错会。",
     "context": "僧问临济义玄禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c三十年后大有人错会。\u201d",
@@ -5927,10 +5981,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 传灯录",
     "relatedConcepts": ["beyond-words", "koan", "direct-pointing"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-39",
+    "id": "koan-39",
     "question": "如何是佛？",
     "answer": "干屎橛。",
     "context": "僧问云门文偃禅师：\u201c如何是佛？\u201d师曰：\u201c干屎橛。\u201d",
@@ -5939,10 +5993,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 无门关第二十一则",
     "relatedConcepts": ["koan", "beyond-words", "non-duality"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-40",
+    "id": "koan-40",
     "question": "如何是祖师西来意？",
     "answer": "板齿生风。",
     "context": "僧问云门文偃禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c板齿生风。\u201d",
@@ -5951,10 +6005,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "jifeng"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-41",
+    "id": "koan-41",
     "question": "如何是诸佛出身处？",
     "answer": "薰风自南来，殿阁生微凉。",
     "context": "僧问五祖法演禅师：\u201c如何是诸佛出身处？\u201d师曰：\u201c薰风自南来，殿阁生微凉。\u201d",
@@ -5963,10 +6017,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 碧岩录",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-42",
+    "id": "koan-42",
     "question": "如何是道？",
     "answer": "大好山。",
     "context": "僧问天皇道悟禅师：\u201c如何是道？\u201d师曰：\u201c大好山。\u201d僧曰：\u201c学人道，何得好山？\u201d师曰：\u201c汝何不问道何得好山？\u201d",
@@ -5978,7 +6032,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-43",
+    "id": "koan-43",
     "question": "如何是平常心是道？",
     "answer": "要眠即眠，要坐即坐。",
     "context": "僧问南泉普愿禅师：\u201c如何是道？\u201d师曰：\u201c平常心是道。\u201d僧曰：\u201c还可趣向也无？\u201d师曰：\u201c拟向即乖。\u201d僧曰：\u201c不拟争知是道？\u201d师曰：\u201c道不属知不知。知是妄觉，不知是无记。若真达不疑之道，犹如太虚，廓然荡豁，岂可强是非耶？\u201d",
@@ -5987,10 +6041,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 传灯录 / 无门关第十九则",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "non-mind"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-44",
+    "id": "koan-44",
     "question": "德山托钵",
     "answer": "这老汉未忘所得在。",
     "context": "德山宣鉴禅师一日托钵至法堂前，见沩山灵祐禅师。沩山曰：\u201c德山！来迟了。\u201d德山无对，便退。至法堂前，自叹曰：\u201c这老汉未忘所得在。\u201d",
@@ -5999,10 +6053,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 碧岩录",
     "relatedConcepts": ["koan", "self-nature", "wu-nian"],
     "relatedPersons": ["deshan-xuanjian", "weishan-lingyou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-45",
+    "id": "koan-45",
     "question": "尽大地撮来如粟米大",
     "answer": "抛向漆桶里。",
     "context": "僧问雪峰义存禅师：\u201c尽大地撮来如粟米大，抛向什么处？\u201d师曰：\u201c抛向漆桶里。\u201d",
@@ -6011,10 +6065,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 碧岩录",
     "relatedConcepts": ["yiji-yiqie", "fanrao-puti", "non-duality"],
     "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-46",
+    "id": "koan-46",
     "question": "如何是学人自己？",
     "answer": "从来无寸尺。",
     "context": "僧问玄沙师备禅师：\u201c如何是学人自己？\u201d师曰：\u201c从来无寸尺。\u201d",
@@ -6026,7 +6080,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-47",
+    "id": "koan-47",
     "question": "如何是佛？",
     "answer": "蹋着秤锤硬似铁。",
     "context": "僧问石巩慧藏禅师：\u201c如何是佛？\u201d师曰：\u201c蹋着秤锤硬似铁。\u201d",
@@ -6038,7 +6092,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-48",
+    "id": "koan-48",
     "question": "如何是西来意？",
     "answer": "神通并妙用，运水及搬柴。",
     "context": "庞蕴居士问马祖道一禅师：\u201c如何是西来意？\u201d师曰：\u201c即今是什么意？\u201d庞居士于言下有省，乃述偈曰：\u201c日用事无别，唯吾自偶谐。神通并妙用，运水及搬柴。\u201d",
@@ -6050,7 +6104,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-49",
+    "id": "koan-49",
     "question": "如何是道？",
     "answer": "出门便是草。",
     "context": "僧问赵州从谂禅师：\u201c如何是道？\u201d师曰：\u201c出门便是草。\u201d",
@@ -6059,10 +6113,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-50",
+    "id": "koan-50",
     "question": "如何是祖师西来意？",
     "answer": "井底泥牛吼，窗间木马嘶。",
     "context": "僧问石霜庆诸禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c井底泥牛吼，窗间木马嘶。\u201d",
@@ -6074,7 +6128,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-51",
+    "id": "koan-51",
     "question": "如何是和尚家风？",
     "answer": "不使学者断肠。",
     "context": "僧问法眼文益禅师：\u201c如何是和尚家风？\u201d师曰：\u201c不使学者断肠。\u201d",
@@ -6086,7 +6140,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-52",
+    "id": "koan-52",
     "question": "如何是活句？如何是死句？",
     "answer": "一句透千句，一句坠万丈。",
     "context": "黄龙慧南禅师示众曰：\u201c一句透千句，如狮子王，一切毛兽无敢近者，是为活句。一句坠万丈，如死蛇弄人，打即头破，不打即尾破，是为死句。\u201d",
@@ -6098,7 +6152,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-53",
+    "id": "koan-53",
     "question": "如何是佛？",
     "answer": "殿里底。",
     "context": "僧问赵州从谂禅师：\u201c如何是佛？\u201d师曰：\u201c殿里底。\u201d僧曰：\u201c殿里者岂不是泥龛塑像？\u201d师曰：\u201c是。\u201d僧曰：\u201c学人只问如何是佛？\u201d师曰：\u201c殿里底。\u201d",
@@ -6107,10 +6161,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "buddha-nature", "non-duality"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-54",
+    "id": "koan-54",
     "question": "如何是祖师西来意？",
     "answer": "与我将禅板来。",
     "context": "僧问临济义玄禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c与我将禅板来。\u201d僧便近前递禅板，师接过便打。",
@@ -6119,10 +6173,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["koan", "banghe", "beyond-words"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-55",
+    "id": "koan-55",
     "question": "如何是西来意？",
     "answer": "适来记得，今却忘却。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c适来记得，今却忘却。\u201d",
@@ -6131,10 +6185,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "wu-nian", "ordinary-mind"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-56",
+    "id": "koan-56",
     "question": "如何是西来意？",
     "answer": "斋后困。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c斋后困。\u201d",
@@ -6143,10 +6197,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-57",
+    "id": "koan-57",
     "question": "如何是道？",
     "answer": "大好山。云在青天水在瓶。",
     "context": "李翱问药山惟俨禅师：\u201c如何是道？\u201d师以手指上下，曰：\u201c会么？\u201d李翱曰：\u201c不会。\u201d师曰：\u201c云在青天水在瓶。\u201d李翱于言下有省，乃述偈曰：\u201c练得身形似鹤形，千株松下两函经。我来问道无余说，云在青天水在瓶。\u201d",
@@ -6158,7 +6212,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-58",
+    "id": "koan-58",
     "question": "如何是祖师西来意？",
     "answer": "三年逢一闰。",
     "context": "僧问云门文偃禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c三年逢一闰。\u201d",
@@ -6167,10 +6221,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "koan", "beyond-words"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-59",
+    "id": "koan-59",
     "question": "如何是佛法大意？",
     "answer": "春来草自青。",
     "context": "僧问云门文偃禅师：\u201c如何是佛法大意？\u201d师曰：\u201c春来草自青。\u201d",
@@ -6179,10 +6233,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "self-nature"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-60",
+    "id": "koan-60",
     "question": "如何是西来意？",
     "answer": "久响不如初闻。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c久响不如初闻。\u201d",
@@ -6191,10 +6245,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["wu-nian", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-61",
+    "id": "koan-61",
     "question": "如何是吹毛剑？",
     "answer": "吹毛。",
     "context": "僧问云门文偃禅师：\u201c如何是吹毛剑？\u201d师曰：\u201c吹毛。\u201d",
@@ -6203,10 +6257,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["koan", "jifeng", "beyond-words"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-62",
+    "id": "koan-62",
     "question": "如何是佛？",
     "answer": "麻三斤。",
     "context": "僧问洞山良价禅师：\u201c如何是佛？\u201d师曰：\u201c麻三斤。\u201d",
@@ -6215,10 +6269,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第十八则 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "non-duality"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-63",
+    "id": "koan-63",
     "question": "如何是祖师西来意？",
     "answer": "待汝一口吸尽西江水，即向汝道。",
     "context": "僧问马祖道一禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c待汝一口吸尽西江水，即向汝道。\u201d",
@@ -6230,7 +6284,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-64",
+    "id": "koan-64",
     "question": "即心即佛，非心非佛",
     "answer": "不是物。",
     "context": "僧问马祖道一禅师：\u201c和尚为什么说即心即佛？\u201d师曰：\u201c为止小儿啼。\u201d僧曰：\u201c啼止时如何？\u201d师曰：\u201c非心非佛。\u201d僧曰：\u201c此外还有为人处也无？\u201d师曰：\u201c不是心，不是佛，不是物。\u201d",
@@ -6242,7 +6296,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-65",
+    "id": "koan-65",
     "question": "如何是西来意？",
     "answer": "会即自己，不会即别求。",
     "context": "大梅法常禅师初参马祖，问：\u201c如何是佛？\u201d马祖曰：\u201c即心即佛。\u201d大梅即大悟，后隐居大梅山。马祖闻之，遣一僧往勘验。僧问：\u201c和尚见马祖得个什么，便住此山？\u201d梅曰：\u201c马祖向我说即心即佛，我便向这里住。\u201d僧曰：\u201c马祖近日佛法又别，不说即心即佛了。\u201d梅曰：\u201c这老汉惑乱人未有了日，任他非心非佛，我只管即心即佛。\u201d马祖闻之曰：\u201c梅子熟也。\u201d",
@@ -6254,7 +6308,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-66",
+    "id": "koan-66",
     "question": "如何是和尚家风？",
     "answer": "一圆相。",
     "context": "僧问南阳慧忠国师：\u201c如何是西来意？\u201d师画一圆相，曰：\u201c会么？\u201d僧曰：\u201c不会。\u201d师曰：\u201c老僧脚跟下已泥深三尺。\u201d",
@@ -6266,7 +6320,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-67",
+    "id": "koan-67",
     "question": "如何是祖师西来意？",
     "answer": "吃茶去。",
     "context": "赵州从谂禅师问新到僧：\u201c曾到此间么？\u201d僧曰：\u201c曾到。\u201d州曰：\u201c吃茶去。\u201d又问一僧：\u201c曾到此间么？\u201d僧曰：\u201c不曾到。\u201d州曰：\u201c吃茶去。\u201d院主问：\u201c为什么曾到也教吃茶去，不曾到也教吃茶去？\u201d州唤院主，主应诺。州曰：\u201c吃茶去。\u201d",
@@ -6275,10 +6329,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 无门关第七则",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-68",
+    "id": "koan-68",
     "question": "如何是祖师西来意？",
     "answer": "砖瓦将来。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c砖瓦将来。\u201d僧曰：\u201c砖瓦岂不是物？\u201d师曰：\u201c物即砖瓦。\u201d",
@@ -6287,10 +6341,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "non-duality", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-69",
+    "id": "koan-69",
     "question": "如何是道？",
     "answer": "好灯。",
     "context": "僧问俱胝和尚：\u201c如何是道？\u201d师竖一指。僧又问：\u201c如何是道？\u201d师又竖一指。凡有参学僧问，师唯竖一指。",
@@ -6299,10 +6353,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 无门关",
     "relatedConcepts": ["koan", "beyond-words", "all-returns-to-one"],
     "relatedPersons": ["juzhi"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-70",
+    "id": "koan-70",
     "question": "如何是佛？",
     "answer": "去，莫向吾这里觅。",
     "context": "僧问黄檗希运禅师：\u201c如何是佛？\u201d师曰：\u201c去，莫向吾这里觅。\u201d",
@@ -6314,7 +6368,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-71",
+    "id": "koan-71",
     "question": "如何是西来意？",
     "answer": "山河大地。",
     "context": "僧问法眼文益禅师：\u201c如何是西来意？\u201d师曰：\u201c山河大地。\u201d",
@@ -6326,7 +6380,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-72",
+    "id": "koan-72",
     "question": "如何是祖师西来意？",
     "answer": "龟毛拂子，兔角杖子。",
     "context": "僧问洞山良价禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c龟毛拂子，兔角杖子。\u201d",
@@ -6335,10 +6389,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "洞山语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "emptiness"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-73",
+    "id": "koan-73",
     "question": "如何是西来意？",
     "answer": "白日太升天，黑夜不打鼓。",
     "context": "僧问曹山本寂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c白日太升天，黑夜不打鼓。\u201d",
@@ -6350,7 +6404,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-74",
+    "id": "koan-74",
     "question": "南泉斩猫",
     "answer": "救得猫儿也未？",
     "context": "东西两堂争猫儿，南泉普愿禅师见之，提起猫儿曰：\u201c道得即不斩，道不得即斩去。\u201d众无对，泉遂斩猫儿。后赵州归来，泉举前话，州脱草鞋安头上而出。泉曰：\u201c汝若在，即救得猫儿。\u201d",
@@ -6359,10 +6413,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第十四则 / 五灯会元",
     "relatedConcepts": ["koan", "non-duality", "jifeng"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-75",
+    "id": "koan-75",
     "question": "沩山踢瓶",
     "answer": "踢倒净瓶。",
     "context": "沩山灵祐禅师为百丈怀海之弟子。百丈一日令沩山拨净瓶，沩山不动手，以脚踢倒净瓶。百丈笑曰：\u201c这汉子如痴如醉。\u201d",
@@ -6374,7 +6428,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-76",
+    "id": "koan-76",
     "question": "石巩张弓",
     "answer": "看箭。",
     "context": "石巩慧藏禅师凡见僧来，即张弓曰：\u201c看箭。\u201d三平义忠禅师来，巩张弓，三平拊掌。巩曰：\u201c三十年一张弓，两枝箭，只射得半个圣人。\u201d",
@@ -6386,7 +6440,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-77",
+    "id": "koan-77",
     "question": "灵默闭门",
     "answer": "无人接汝。",
     "context": "灵默禅师初参石头希迁，至门首曰：\u201c一言相契即住，不契即去。\u201d石头坐然不顾。灵默便行。石头随后呼曰：\u201c上座。\u201d灵默回首。石头曰：\u201c从生至死，只是这个。回头转脑作么？\u201d灵默于言下大悟。",
@@ -6398,7 +6452,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-78",
+    "id": "koan-78",
     "question": "临济四料简",
     "answer": "夺人不夺境，夺境不夺人，人境俱夺，人境俱不夺。",
     "context": "临济义玄禅师示众曰：\u201c我有时夺人不夺境，有时夺境不夺人，有时人境俱夺，有时人境俱不夺。\u201d",
@@ -6407,10 +6461,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "jifeng", "fangbian"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-79",
+    "id": "koan-79",
     "question": "如何是洞山鸟道？",
     "answer": "鸟道虚通，无遮无碍。",
     "context": "僧问洞山良价禅师：\u201c如何是鸟道？\u201d师曰：\u201c鸟道虚通，无遮无碍。\u201d僧曰：\u201c如何是鸟道虚通？\u201d师曰：\u201c不履不游，不飞不度。\u201d",
@@ -6419,10 +6473,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "洞山语录 / 五灯会元",
     "relatedConcepts": ["self-nature", "beyond-words", "wu-xiang"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-80",
+    "id": "koan-80",
     "question": "如何是云门一字关？",
     "answer": "一字。",
     "context": "僧问云门文偃禅师：\u201c如何是云门一字关？\u201d师曰：\u201c一字。\u201d",
@@ -6431,10 +6485,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "jifeng"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-81",
+    "id": "koan-81",
     "question": "二祖断臂",
     "answer": "将心来，与汝安。",
     "context": "慧可参达摩曰：\u201c诸佛无上妙道，广大劫精进，难行能行，难忍能忍，尚不得至。今吾以凡夫之身，求道未成，愿和尚慈悲，开甘露门。\u201d达摩曰：\u201c诸佛无上妙道，旷劫精进，难行能行，非小德小智所堪。汝以凡夫之身，求无上道，徒劳无益。\u201d慧可乃自断左臂，置于达摩前。达摩曰：\u201c将心来，与汝安。\u201d慧可曰：\u201c觅心了不可得。\u201d达摩曰：\u201c我与汝安心竟。\u201d",
@@ -6443,10 +6497,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "传灯录 / 五灯会元",
     "relatedConcepts": ["self-nature", "emptiness", "direct-pointing"],
     "relatedPersons": ["bodhidharma", "huike"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["xuemaicong", "anxin"]
   },
   {
-    "id": "qa-82",
+    "id": "koan-82",
     "question": "船子夹山",
     "answer": "阇黎。",
     "context": "夹山善会禅师参船子德诚禅师。船子曰：\u201c阇黎。\u201d夹山回首。船子曰：\u201c丝毫系念，即落冤家。如人上山，各自努力。\u201d乃覆船入水而逝。",
@@ -6458,7 +6512,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-83",
+    "id": "koan-83",
     "question": "如何是祖师西来意？",
     "answer": "今日风起。",
     "context": "僧问鲁祖宝云禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c今日风起。\u201d",
@@ -6470,7 +6524,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-84",
+    "id": "koan-84",
     "question": "如何是祖师西来意？",
     "answer": "好雪片片，不落别处。",
     "context": "庞蕴居士参石头希迁，问：\u201c不与万法为侣者是什么人？\u201d石头以手掩其口。庞蕴有省。后参马祖，问：\u201c不与万法为侣者是什么人？\u201d马祖曰：\u201c待汝一口吸尽西江水，即向汝道。\u201d庞蕴于言下大悟。后庞蕴见雪，曰：\u201c好雪片片，不落别处。\u201d",
@@ -6482,7 +6536,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-85",
+    "id": "koan-85",
     "question": "如何是佛？",
     "answer": "佛是木头。",
     "context": "丹霞天然禅师诣慧林寺，遇天寒，取殿中木佛焚烧取暖。院主呵曰：\u201c何得烧我木佛？\u201d师以杖拨灰曰：\u201c吾烧取舍利。\u201d院主曰：\u201c木佛何有舍利？\u201d师曰：\u201c既无舍利，更取两尊烧。\u201d",
@@ -6494,7 +6548,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-86",
+    "id": "koan-86",
     "question": "如何是祖师西来意？",
     "answer": "百草头上祖师意。",
     "context": "僧问长沙景岑禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c百草头上祖师意。\u201d",
@@ -6506,7 +6560,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-87",
+    "id": "koan-87",
     "question": "如何是祖师西来意？",
     "answer": "庭前柏树子。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c庭前柏树子。\u201d僧曰：\u201c和尚莫将境示人。\u201d师曰：\u201c我不将境示人。\u201d僧曰：\u201c如何是祖师西来意？\u201d师曰：\u201c庭前柏树子。\u201d",
@@ -6515,10 +6569,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 无门关第三十七则",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-88",
+    "id": "koan-88",
     "question": "如何是祖师西来意？",
     "answer": "三十年后，莫错举。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c三十年后，莫错举。\u201d",
@@ -6527,10 +6581,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-89",
+    "id": "koan-89",
     "question": "如何是祖师西来意？",
     "answer": "三十年后，大有人错举在。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c板齿生毛。\u201d",
@@ -6539,10 +6593,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "emptiness"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-90",
+    "id": "koan-90",
     "question": "如何是祖师西来意？",
     "answer": "镇州萝卜重三斤。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c镇州萝卜重三斤。\u201d",
@@ -6551,10 +6605,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "beyond-words"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-91",
+    "id": "koan-91",
     "question": "如何是西来意？",
     "answer": "过在老僧。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c过在老僧。\u201d",
@@ -6563,10 +6617,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-92",
+    "id": "koan-92",
     "question": "如何是祖师西来意？",
     "answer": "壁上画土泥。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c壁上画土泥。\u201d",
@@ -6575,10 +6629,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wenzi-zhang"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-93",
+    "id": "koan-93",
     "question": "如何是祖师西来意？",
     "answer": "老僧不在明白里。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c老僧不在明白里。\u201d",
@@ -6587,10 +6641,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "non-duality", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-94",
+    "id": "koan-94",
     "question": "如何是佛法大意？",
     "answer": "且坐吃茶。",
     "context": "僧问赵州从谂禅师：\u201c如何是佛法大意？\u201d师曰：\u201c且坐吃茶。\u201d",
@@ -6599,10 +6653,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-95",
+    "id": "koan-95",
     "question": "黄檗三顿棒",
     "answer": "黄檗佛法无多子。",
     "context": "临济义玄禅师初在黄檗会下，三次问佛法，三次被打。后参大愚，大愚问：\u201c什么处来？\u201d临济曰：\u201c黄檗来。\u201d大愚曰：\u201c黄檗有何言句？\u201d临济曰：\u201c某甲三度问佛法，三度被打，不知某甲有过无过。\u201d大愚曰：\u201c黄檗恁么老婆心切，为汝得彻困，更来这里问有过无过。\u201d临济于言下大悟，曰：\u201c原来黄檗佛法无多子。\u201d",
@@ -6611,10 +6665,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "direct-pointing", "beyond-words"],
     "relatedPersons": ["linji", "huangbo", "dayu"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-96",
+    "id": "koan-96",
     "question": "如何是祖师西来意？",
     "answer": "喝。",
     "context": "僧问临济义玄禅师：\u201c如何是祖师西来意？\u201d师便喝。僧礼拜。师曰：\u201c你这个好礼拜。\u201d",
@@ -6623,10 +6677,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "koan", "beyond-words"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-97",
+    "id": "koan-97",
     "question": "香严上树",
     "answer": "道将一句来。",
     "context": "香严智闲禅师上堂曰：\u201c如人上树，口衔树枝，手不攀枝，脚不踏枝。树下忽有人问：如何是祖师西来意？不对他，又违他所问；对他，又丧身失命。此时作么生？\u201d",
@@ -6638,7 +6692,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-98",
+    "id": "koan-98",
     "question": "沩山说破",
     "answer": "如人饮水，冷暖自知。",
     "context": "沩山灵祐禅师谓香严智闲曰：\u201c汝虽在吾左右，然未尝问吾佛法。今当问汝：如何是父母未生前本来面目？\u201d香严茫然。沩山曰：\u201c我若说破，恐汝日后骂我。如人饮水，冷暖自知——须自参自悟。\u201d",
@@ -6650,7 +6704,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-99",
+    "id": "koan-99",
     "question": "如何是祖师西来意？",
     "answer": "待汝舌头烂了，即向汝道。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c待汝舌头烂了，即向汝道。\u201d",
@@ -6659,10 +6713,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-100",
+    "id": "koan-100",
     "question": "百丈再参马祖",
     "answer": "以后鼻孔，全被汝扭。",
     "context": "百丈怀海禅师再参马祖道一。马祖见百丈来，取绳床角拂子竖起。百丈曰：\u201c即此用，离此用。\u201d马祖曰：\u201c汝向后开两片皮，将何为人？\u201d百丈取拂子竖起。马祖曰：\u201c即此用，离此用。\u201d百丈挂拂子于旧处。马祖振威一喝，百丈直得三日耳聋。",
@@ -6674,7 +6728,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-101",
+    "id": "koan-101",
     "question": "如何是祖师西来意？",
     "answer": "神通并妙用，运水及搬柴。",
     "context": "庞蕴居士有偈曰：\u201c日用事无别，唯吾自偶谐。神通并妙用，运水及搬柴。\u201d",
@@ -6686,7 +6740,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-102",
+    "id": "koan-102",
     "question": "如何是祖师西来意？",
     "answer": "汝唤什么作祖师西来意？",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c汝唤什么作祖师西来意？\u201d僧无语。",
@@ -6695,10 +6749,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-103",
+    "id": "koan-103",
     "question": "如何是佛？",
     "answer": "嘶风木马。",
     "context": "僧问投子大同禅师：\u201c如何是佛？\u201d师曰：\u201c嘶风木马。\u201d",
@@ -6710,7 +6764,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-104",
+    "id": "koan-104",
     "question": "如何是西来意？",
     "answer": "册子上亦不明。",
     "context": "僧问赵州从谂禅师：\u201c如何是西来意？\u201d师曰：\u201c册子上亦不明。\u201d",
@@ -6719,10 +6773,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wenzi-zhang"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-105",
+    "id": "koan-105",
     "question": "如何是祖师西来意？",
     "answer": "井中月。",
     "context": "僧问曹山本寂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c井中月。\u201d僧曰：\u201c如何是井中月？\u201d师曰：\u201c捞不得。\u201d",
@@ -6734,7 +6788,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-106",
+    "id": "koan-106",
     "question": "如何是祖师西来意？",
     "answer": "十字街头起一间茅草店。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c十字街头起一间茅草店。\u201d",
@@ -6743,10 +6797,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "koan", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-107",
+    "id": "koan-107",
     "question": "如何是祖师西来意？",
     "answer": "黑豆未生芽时。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c黑豆未生芽时。\u201d",
@@ -6755,10 +6809,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "wu-nian", "self-nature"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-108",
+    "id": "koan-108",
     "question": "如何是祖师西来意？",
     "answer": "一人吃饭一人饱。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c一人吃饭一人饱。\u201d",
@@ -6767,10 +6821,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["self-nature", "direct-pointing", "koan"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-109",
+    "id": "koan-109",
     "question": "如何是祖师西来意？",
     "answer": "大好山色。",
     "context": "僧问翠微无学禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c大好山色。\u201d",
@@ -6782,7 +6836,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-110",
+    "id": "koan-110",
     "question": "如何是祖师西来意？",
     "answer": "山花笑，野鸟啼。",
     "context": "僧问雪窦重显禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c山花笑，野鸟啼。\u201d",
@@ -6791,10 +6845,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "五灯会元 / 传灯录",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["xuedou-chongxian"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-111",
+    "id": "koan-111",
     "question": "如何是祖师西来意？",
     "answer": "三十年后，大有人错举在。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c老僧今夜答汝，恐后人录去，作口实。\u201d僧曰：\u201c和尚慈悲，为学人答。\u201d师曰：\u201c三十年后，大有人错举在。\u201d",
@@ -6803,10 +6857,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wenzi-zhang"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-112",
+    "id": "koan-112",
     "question": "如何是祖师西来意？",
     "answer": "不答。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c不可答汝。\u201d僧曰：\u201c为什么不可答？\u201d师曰：\u201c答汝即落今时。\u201d",
@@ -6815,10 +6869,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wu-zhu"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-113",
+    "id": "koan-113",
     "question": "如何是祖师西来意？",
     "answer": "汝道什么？",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c汝道什么？\u201d僧无语。",
@@ -6827,10 +6881,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-114",
+    "id": "koan-114",
     "question": "如何是祖师西来意？",
     "answer": "钟鸣鼓响。",
     "context": "僧问禾山无殷禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c钟鸣鼓响。\u201d",
@@ -6842,7 +6896,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-115",
+    "id": "koan-115",
     "question": "如何是祖师西来意？",
     "answer": "三尺杖子破阎浮。",
     "context": "僧问睦州道明禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c三尺杖子破阎浮。\u201d",
@@ -6854,7 +6908,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-116",
+    "id": "koan-116",
     "question": "如何是祖师西来意？",
     "answer": "南山起云，北山下雨。",
     "context": "僧问云门文偃禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c南山起云，北山下雨。\u201d",
@@ -6863,10 +6917,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "yuanqi", "direct-pointing"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-117",
+    "id": "koan-117",
     "question": "如何是祖师西来意？",
     "answer": "日里看山。",
     "context": "僧问法眼文益禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c日里看山。\u201d",
@@ -6878,7 +6932,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-118",
+    "id": "koan-118",
     "question": "如何是祖师西来意？",
     "answer": "入水求人。",
     "context": "僧问风穴延沼禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c入水求人。\u201d",
@@ -6890,7 +6944,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-119",
+    "id": "koan-119",
     "question": "如何是祖师西来意？",
     "answer": "波斯面壁。",
     "context": "僧问罗汉桂琛禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c波斯面壁。\u201d",
@@ -6902,7 +6956,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-120",
+    "id": "koan-120",
     "question": "如何是祖师西来意？",
     "answer": "古佛未生前。",
     "context": "僧问首山省念禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c古佛未生前。\u201d僧曰：\u201c古佛未生前如何？\u201d师曰：\u201c古佛未生前。\u201d",
@@ -6914,7 +6968,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-121",
+    "id": "koan-121",
     "question": "如何是祖师西来意？",
     "answer": "风吹碧海。",
     "context": "僧问大阳警玄禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c风吹碧海。\u201d",
@@ -6926,7 +6980,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-122",
+    "id": "koan-122",
     "question": "如何是祖师西来意？",
     "answer": "五通仙人问世尊。",
     "context": "僧问天童子凝禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c五通仙人问世尊。\u201d",
@@ -6938,7 +6992,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-123",
+    "id": "koan-123",
     "question": "如何是祖师西来意？",
     "answer": "三十年后，大有人错举在。",
     "context": "僧问杨岐方会禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c春日春山里，春明春草鲜。\u201d",
@@ -6950,7 +7004,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-124",
+    "id": "koan-124",
     "question": "如何是佛？",
     "answer": "殿里底。",
     "context": "僧问赵州从谂禅师：\u201c如何是佛？\u201d师曰：\u201c殿里底。\u201d",
@@ -6959,10 +7013,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "buddha-nature", "ordinary-mind"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-125",
+    "id": "koan-125",
     "question": "如何是佛？",
     "answer": "麻三斤。",
     "context": "僧问洞山良价禅师：\u201c如何是佛？\u201d师曰：\u201c麻三斤。\u201d",
@@ -6971,10 +7025,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第十八则 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "ordinary-mind"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-126",
+    "id": "koan-126",
     "question": "如何是佛？",
     "answer": "干屎橛。",
     "context": "僧问云门文偃禅师：\u201c如何是佛？\u201d师曰：\u201c干屎橛。\u201d",
@@ -6983,10 +7037,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第二十一则 / 五灯会元",
     "relatedConcepts": ["koan", "non-duality", "buddha-nature"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-127",
+    "id": "koan-127",
     "question": "如何是佛？",
     "answer": "张三李四。",
     "context": "僧问慈化普庵禅师：\u201c如何是佛？\u201d师曰：\u201c张三李四。\u201d",
@@ -6998,7 +7052,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-128",
+    "id": "koan-128",
     "question": "如何是佛？",
     "answer": "即汝是。",
     "context": "僧问大珠慧海禅师：\u201c如何是佛？\u201d师曰：\u201c即汝是。\u201d僧曰：\u201c如何领会？\u201d师曰：\u201c更问什么？\u201d",
@@ -7010,7 +7064,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-129",
+    "id": "koan-129",
     "question": "如何是道？",
     "answer": "山深水冷。",
     "context": "僧问赵州从谂禅师：\u201c如何是道？\u201d师曰：\u201c山深水冷。\u201d",
@@ -7019,10 +7073,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-130",
+    "id": "koan-130",
     "question": "如何是道？",
     "answer": "动即失，不动即迷。",
     "context": "僧问石头希迁禅师：\u201c如何是道？\u201d师曰：\u201c动即失，不动即迷。\u201d",
@@ -7034,7 +7088,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-131",
+    "id": "koan-131",
     "question": "如何是禅？",
     "answer": "砖瓦将来。",
     "context": "僧问赵州从谂禅师：\u201c如何是禅？\u201d师曰：\u201c砖瓦将来。\u201d",
@@ -7043,10 +7097,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-132",
+    "id": "koan-132",
     "question": "如何是禅？",
     "answer": "春来草自青。",
     "context": "僧问云门文偃禅师：\u201c如何是禅？\u201d师曰：\u201c春来草自青。\u201d",
@@ -7055,10 +7109,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "yuanqi"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-133",
+    "id": "koan-133",
     "question": "如何是禅？",
     "answer": "不道不知，不道知。",
     "context": "僧问赵州从谂禅师：\u201c如何是禅？\u201d师曰：\u201c不道不知，不道知。\u201d僧曰：\u201c为什么不道知？\u201d师曰：\u201c因为不知。\u201d",
@@ -7067,10 +7121,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["non-duality", "wu-nian", "beyond-words"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-134",
+    "id": "koan-134",
     "question": "如何是法？",
     "answer": "大好山色。",
     "context": "僧问赵州从谂禅师：\u201c如何是法？\u201d师曰：\u201c大好山色。\u201d",
@@ -7079,10 +7133,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "fajie"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-135",
+    "id": "koan-135",
     "question": "如何是僧？",
     "answer": "剃头着袈裟。",
     "context": "僧问赵州从谂禅师：\u201c如何是僧？\u201d师曰：\u201c剃头着袈裟。\u201d",
@@ -7091,10 +7145,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "non-duality", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-136",
+    "id": "koan-136",
     "question": "如何是解脱？",
     "answer": "谁缚汝？",
     "context": "僧问大珠慧海禅师：\u201c如何是解脱？\u201d师曰：\u201c谁缚汝？\u201d僧无语。",
@@ -7106,7 +7160,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-137",
+    "id": "koan-137",
     "question": "如何是心？",
     "answer": "即汝是。",
     "context": "僧问大珠慧海禅师：\u201c如何是心？\u201d师曰：\u201c即汝是。\u201d",
@@ -7118,7 +7172,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-138",
+    "id": "koan-138",
     "question": "如何是悟？",
     "answer": "本自悟。",
     "context": "僧问大珠慧海禅师：\u201c如何是悟？\u201d师曰：\u201c本自悟。\u201d僧曰：\u201c本自悟，何须更悟？\u201d师曰：\u201c汝今未悟，故须悟。既悟，即知本自悟。\u201d",
@@ -7130,7 +7184,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-139",
+    "id": "koan-139",
     "question": "如何是涅槃？",
     "answer": "不生不灭。",
     "context": "僧问赵州从谂禅师：\u201c如何是涅槃？\u201d师曰：\u201c不生不灭。\u201d僧曰：\u201c如何是不生不灭？\u201d师曰：\u201c汝今在生灭中。\u201d",
@@ -7139,10 +7193,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["niepan", "bu-sheng-bu-mie", "non-duality"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-140",
+    "id": "koan-140",
     "question": "如何是般若？",
     "answer": "无不知。",
     "context": "僧问大珠慧海禅师：\u201c如何是般若？\u201d师曰：\u201c无不知。\u201d僧曰：\u201c无不知，与知何异？\u201d师曰：\u201c知是分别，无不知是般若。\u201d",
@@ -7154,7 +7208,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-141",
+    "id": "koan-141",
     "question": "如何是善知识？",
     "answer": "自性是。",
     "context": "僧问大珠慧海禅师：\u201c如何是善知识？\u201d师曰：\u201c自性是。\u201d僧曰：\u201c何故自性是善知识？\u201d师曰：\u201c自性本自具足，能生万法，非善知识而何？\u201d",
@@ -7166,7 +7220,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-142",
+    "id": "koan-142",
     "question": "如何是修行？",
     "answer": "饥来吃饭，困来即眠。",
     "context": "有源律师问大珠慧海禅师：\u201c和尚修道，还用功否？\u201d师曰：\u201c用功。\u201d曰：\u201c如何用功？\u201d师曰：\u201c饥来吃饭，困来即眠。\u201d曰：\u201c一切人总如是，同用功否？\u201d师曰：\u201c不同。\u201d曰：\u201c何故不同？\u201d师曰：\u201c他吃饭时百种须索，睡时千般计较。所以不同也。\u201d",
@@ -7178,7 +7232,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-143",
+    "id": "koan-143",
     "question": "如何是祖师西来意？",
     "answer": "汝什么处去来？",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c汝什么处去来？\u201d僧曰：\u201c某甲从定州来。\u201d师曰：\u201c汝从定州来，何不问定州西来意？\u201d僧无语。",
@@ -7187,10 +7241,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-144",
+    "id": "koan-144",
     "question": "如何是宾中宾？",
     "answer": "客舍相逢，各自东西。",
     "context": "临济义玄禅师立四宾主：宾中宾、宾中主、主中宾、主中主。僧问：\u201c如何是宾中宾？\u201d师曰：\u201c客舍相逢，各自东西。\u201d",
@@ -7199,10 +7253,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "jifeng", "koan"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-145",
+    "id": "koan-145",
     "question": "如何是宾中主？",
     "answer": "学人礼拜，师家不顾。",
     "context": "僧问临济义玄禅师：\u201c如何是宾中主？\u201d师曰：\u201c学人礼拜，师家不顾。\u201d",
@@ -7211,10 +7265,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "beyond-words", "direct-pointing"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-146",
+    "id": "koan-146",
     "question": "如何是主中宾？",
     "answer": "师家垂语，学人罔措。",
     "context": "僧问临济义玄禅师：\u201c如何是主中宾？\u201d师曰：\u201c师家垂语，学人罔措。\u201d",
@@ -7223,10 +7277,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "wenzi-zhang", "beyond-words"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-147",
+    "id": "koan-147",
     "question": "如何是主中主？",
     "answer": "不入尘中，不居尘外。",
     "context": "僧问临济义玄禅师：\u201c如何是主中主？\u201d师曰：\u201c不入尘中，不居尘外。\u201d",
@@ -7235,10 +7289,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["non-duality", "wu-zhu", "self-nature"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-148",
+    "id": "koan-148",
     "question": "如何是云门一字关？",
     "answer": "一字。",
     "context": "云门文偃禅师常以一字答学人问——僧问：\u201c如何是云门一字关？\u201d师曰：\u201c一字。\u201d",
@@ -7247,10 +7301,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["beyond-words", "koan", "jifeng"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-149",
+    "id": "koan-149",
     "question": "如何是云门三句？",
     "answer": "涵盖乾坤，截断众流，随波逐浪。",
     "context": "云门文偃禅师立三句：一、涵盖乾坤；二、截断众流；三、随波逐浪。",
@@ -7259,10 +7313,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["self-nature", "instant-enlightenment", "wu-xing"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["yunmen"]
   },
   {
-    "id": "qa-150",
+    "id": "koan-150",
     "question": "如何是法眼三界？",
     "answer": "界内、界外、界间。",
     "context": "法眼文益禅师立三界：界内、界外、界间。僧问：\u201c如何是法眼三界？\u201d师曰：\u201c界内、界外、界间。\u201d",
@@ -7274,7 +7328,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-151",
+    "id": "koan-151",
     "question": "如何是曹洞君臣？",
     "answer": "正中偏，偏中正，正中来，偏中至，兼中到。",
     "context": "洞山良价禅师立五位君臣：正中偏、偏中正、正中来、偏中至、兼中到。僧问：\u201c如何是曹洞君臣？\u201d师举五位。",
@@ -7286,7 +7340,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-152",
+    "id": "koan-152",
     "question": "如何是临济三玄？",
     "answer": "体中玄，句中玄，玄中玄。",
     "context": "临济义玄禅师立三玄三要。僧问：\u201c如何是临济三玄？\u201d师曰：\u201c体中玄，句中玄，玄中玄。\u201d",
@@ -7295,10 +7349,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "临济语录 / 五灯会元",
     "relatedConcepts": ["banghe", "non-duality", "self-nature"],
     "relatedPersons": ["linji"],
-    "relatedBooks": ["linji-yulu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-153",
+    "id": "koan-153",
     "question": "如何是沩仰圆相？",
     "answer": "画一圆相。",
     "context": "沩山灵祐禅师与仰山慧寂禅师常以画圆相为机锋。僧问：\u201c如何是沩仰圆相？\u201d仰山画一圆相，曰：\u201c是什么？\u201d僧无语。",
@@ -7310,7 +7364,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-154",
+    "id": "koan-154",
     "question": "如何是达摩西来意？",
     "answer": "不立文字，直指人心，见性成佛。",
     "context": "达摩祖师自天竺西来，传佛心印于中土。僧问：\u201c如何是达摩西来意？\u201d师曰：\u201c不立文字，直指人心，见性成佛。\u201d",
@@ -7319,10 +7373,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "六祖坛经 / 传灯录",
     "relatedConcepts": ["direct-pointing", "beyond-words", "jianxing-chengfo"],
     "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["liuzu-tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
-    "id": "qa-155",
+    "id": "koan-155",
     "question": "六祖得法偈",
     "answer": "菩提本无树，明镜亦非台，本来无一物，何处惹尘埃。",
     "context": "五祖弘忍令弟子作偈以验见性。神秀偈曰：\u201c身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃。\u201d六祖慧能偈曰：\u201c菩提本无树，明镜亦非台，本来无一物，何处惹尘埃。\u201d五祖以此偈密授衣法于六祖。",
@@ -7331,10 +7385,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "六祖坛经",
     "relatedConcepts": ["self-nature", "emptiness", "dunwu-jianxiu"],
     "relatedPersons": ["huineng", "shenxiu"],
-    "relatedBooks": ["liuzu-tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
-    "id": "qa-156",
+    "id": "koan-156",
     "question": "如何是即心即佛？",
     "answer": "即心即佛。",
     "context": "僧问马祖道一禅师：\u201c如何是即心即佛？\u201d师曰：\u201c即心即佛。\u201d",
@@ -7346,7 +7400,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-157",
+    "id": "koan-157",
     "question": "如何是非心非佛？",
     "answer": "非心非佛。",
     "context": "僧问马祖道一禅师：\u201c如何是非心非佛？\u201d师曰：\u201c非心非佛。\u201d",
@@ -7358,7 +7412,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-158",
+    "id": "koan-158",
     "question": "百丈野狐",
     "answer": "不昧因果。",
     "context": "百丈怀海禅师每上堂，有一老人随众听法。一日众退，老人不去。师问：\u201c汝是何人？\u201d老人曰：\u201c某甲非人，于迦叶佛时曾住此山。学人问：\u2018大修行人还落因果也无？\u2019某甲答：\u2018不落因果。\u2019以此答错，五百生堕野狐身。今请和尚代一转语。\u201d师曰：\u201c不昧因果。\u201d老人于言下大悟，脱野狐身。",
@@ -7367,10 +7421,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第二则 / 五灯会元",
     "relatedConcepts": ["yinguo", "koan", "self-nature"],
     "relatedPersons": ["baizhang"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["baizhang"]
   },
   {
-    "id": "qa-159",
+    "id": "koan-159",
     "question": "如何是无心？",
     "answer": "无心即是道。",
     "context": "僧问黄檗希运禅师：\u201c如何是无心？\u201d师曰：\u201c无心即是道。\u201d",
@@ -7382,7 +7436,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["huangbo"]
   },
   {
-    "id": "qa-160",
+    "id": "koan-160",
     "question": "如何是本来面目？",
     "answer": "父母未生前。",
     "context": "僧问六祖慧能：\u201c如何是本来面目？\u201d师曰：\u201c父母未生前。\u201d",
@@ -7391,10 +7445,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "六祖坛经",
     "relatedConcepts": ["self-nature", "wu-nian", "benlai-mianmu"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["liuzu-tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
-    "id": "qa-161",
+    "id": "koan-161",
     "question": "如何是真空妙有？",
     "answer": "色即是空，空即是色。",
     "context": "僧问黄檗希运禅师：\u201c如何是真空妙有？\u201d师曰：\u201c色即是空，空即是色。\u201d",
@@ -7406,7 +7460,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["huangbo"]
   },
   {
-    "id": "qa-162",
+    "id": "koan-162",
     "question": "如何是平常心是道？",
     "answer": "平常心是道。",
     "context": "僧问马祖道一禅师：\u201c如何是平常心是道？\u201d师曰：\u201c若欲直会其道，平常心是道。何谓平常心？无造作、无是非、无取舍、无断常、无凡无圣。\u201d",
@@ -7418,7 +7472,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["mazu"]
   },
   {
-    "id": "qa-163",
+    "id": "koan-163",
     "question": "如何是见性成佛？",
     "answer": "见自本性，即名为佛。",
     "context": "僧问六祖慧能：\u201c如何是见性成佛？\u201d师曰：\u201c见自本性，即名为佛。不悟即佛是众生，一念悟时众生是佛。\u201d",
@@ -7427,10 +7481,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "六祖坛经",
     "relatedConcepts": ["jianxing-chengfo", "self-nature", "instant-enlightenment"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["liuzu-tanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
-    "id": "qa-164",
+    "id": "koan-164",
     "question": "南泉斩猫",
     "answer": "道得即不斩，道不得即斩。",
     "context": "南泉普愿禅师因东西两堂争猫儿，师提起猫儿曰：\u201c道得即不斩，道不得即斩。\u201d众无语，师斩猫儿。后赵州来，师举前话，赵州脱草鞋安头上而出。师曰：\u201c汝若在，救得猫儿。\u201d",
@@ -7439,10 +7493,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第十四则 / 五灯会元",
     "relatedConcepts": ["koan", "banghe", "non-duality"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-165",
+    "id": "koan-165",
     "question": "丹霞烧佛",
     "answer": "烧取舍利。",
     "context": "丹霞天然禅师至慧林寺，遇天寒，取木佛烧之。院主呵曰：\u201c何得烧我木佛？\u201d师以杖拨灰曰：\u201c吾烧取舍利。\u201d院主曰：\u201c木佛何有舍利？\u201d师曰：\u201c既无舍利，更取两尊烧。\u201d",
@@ -7454,7 +7508,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-166",
+    "id": "koan-166",
     "question": "俱胝一指",
     "answer": "一指。",
     "context": "俱胝和尚凡有参学僧问，唯举一指。后有童子于外人问佛法时，亦竖一指。师知之，以刀断童子指。童子叫痛出走，师唤回，童子回首，师竖一指，童子豁然大悟。",
@@ -7463,10 +7517,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第三则 / 五灯会元",
     "relatedConcepts": ["koan", "direct-pointing", "self-nature"],
     "relatedPersons": ["juzhi"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-167",
+    "id": "koan-167",
     "question": "香严击竹",
     "answer": "一击忘所知。",
     "context": "香严智闲禅师在沩山参学，沩山问：\u201c汝父母未生前本来面目是什么？\u201d香严不能答。后香严在山中除草，以瓦砾击竹作声，忽然大悟。作偈曰：\u201c一击忘所知，更不假修治，动容扬古路，不堕悄然机。\u201d",
@@ -7478,7 +7532,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-168",
+    "id": "koan-168",
     "question": "灵云桃花",
     "answer": "自从一见桃花后，直至如今更不疑。",
     "context": "灵云志勤禅师参沩山，久参不悟。一春游山，见桃花盛开，忽然大悟。作偈曰：\u201c三十年来寻剑客，几回落叶又抽枝。自从一见桃花后，直至如今更不疑。\u201d",
@@ -7490,7 +7544,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-169",
+    "id": "koan-169",
     "question": "如何是禅？",
     "answer": "猛火燃眉毛。",
     "context": "僧问赵州从谂禅师：\u201c如何是禅？\u201d师曰：\u201c猛火燃眉毛。\u201d",
@@ -7499,10 +7553,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "instant-enlightenment", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-170",
+    "id": "koan-170",
     "question": "如何是道？",
     "answer": "白云覆青障，明月照澄江。",
     "context": "僧问法眼文益禅师：\u201c如何是道？\u201d师曰：\u201c白云覆青障，明月照澄江。\u201d",
@@ -7514,7 +7568,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-171",
+    "id": "koan-171",
     "question": "如何是法身？",
     "answer": "虚空。",
     "context": "僧问大珠慧海禅师：\u201c如何是法身？\u201d师曰：\u201c虚空。\u201d",
@@ -7526,7 +7580,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-172",
+    "id": "koan-172",
     "question": "如何是报身？",
     "answer": "光明。",
     "context": "僧问大珠慧海禅师：\u201c如何是报身？\u201d师曰：\u201c光明。\u201d",
@@ -7538,7 +7592,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-173",
+    "id": "koan-173",
     "question": "如何是化身？",
     "answer": "随类现身。",
     "context": "僧问大珠慧海禅师：\u201c如何是化身？\u201d师曰：\u201c随类现身。\u201d",
@@ -7550,7 +7604,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-174",
+    "id": "koan-174",
     "question": "如何是祖师西来意？",
     "answer": "青州布衫重七斤。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c青州布衫重七斤。\u201d",
@@ -7559,10 +7613,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第四十五则 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "ordinary-mind"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-175",
+    "id": "koan-175",
     "question": "如何是祖师西来意？",
     "answer": "板齿生毛。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c板齿生毛。\u201d",
@@ -7571,10 +7625,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "emptiness"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-176",
+    "id": "koan-176",
     "question": "如何是祖师西来意？",
     "answer": "待汝一口吸尽西江水，即向汝道。",
     "context": "僧问马祖道一禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c待汝一口吸尽西江水，即向汝道。\u201d",
@@ -7583,10 +7637,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第三则 / 传灯录",
     "relatedConcepts": ["koan", "beyond-words", "direct-pointing"],
     "relatedPersons": ["mazu"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-177",
+    "id": "koan-177",
     "question": "如何是祖师西来意？",
     "answer": "神通并妙用，运水及搬柴。",
     "context": "庞蕴居士参马祖，问：\u201c如何是祖师西来意？\u201d马祖曰：\u201c我若向汝道，汝将不信。\u201d庞居士再问，马祖曰：\u201c神通并妙用，运水及搬柴。\u201d",
@@ -7598,7 +7652,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-178",
+    "id": "koan-178",
     "question": "如何是祖师西来意？",
     "answer": "砖瓦将来。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c砖瓦将来。\u201d",
@@ -7607,10 +7661,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-179",
+    "id": "koan-179",
     "question": "如何是祖师西来意？",
     "answer": "黑豆未生芽。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c黑豆未生芽。\u201d",
@@ -7619,10 +7673,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "wu-nian", "self-nature"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-180",
+    "id": "koan-180",
     "question": "如何是祖师西来意？",
     "answer": "一人吃饭一人饱。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c一人吃饭一人饱。\u201d",
@@ -7631,10 +7685,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "self-nature"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-181",
+    "id": "koan-181",
     "question": "如何是祖师西来意？",
     "answer": "三十年后，大有人错举在。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c三十年后，大有人错举在。\u201d",
@@ -7643,10 +7697,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "wenzi-zhang"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-182",
+    "id": "koan-182",
     "question": "如何是祖师西来意？",
     "answer": "井中月。",
     "context": "僧问曹山本寂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c井中月。\u201d",
@@ -7658,7 +7712,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-183",
+    "id": "koan-183",
     "question": "如何是祖师西来意？",
     "answer": "山花笑野鸟啼。",
     "context": "僧问雪窦重显禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c山花笑野鸟啼。\u201d",
@@ -7667,10 +7721,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["xuedou-chongxian"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-184",
+    "id": "koan-184",
     "question": "船子夹山",
     "answer": "竿头丝线从君弄，不犯清波意自殊。",
     "context": "船子德诚禅师嘱夹山善会曰：\u201c汝向去直须藏身处没踪迹，没踪迹处莫藏身。\u201d夹山辞行，回顾，船子翻船入水而逝。夹山后住持，僧问：\u201c如何是道？\u201d夹山举船子偈曰：\u201c竿头丝线从君弄，不犯清波意自殊。\u201d",
@@ -7682,7 +7736,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-185",
+    "id": "koan-185",
     "question": "鲁祖面壁",
     "answer": "面壁。",
     "context": "鲁祖宝云禅师见僧来，便面壁。僧无语。",
@@ -7694,7 +7748,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-186",
+    "id": "koan-186",
     "question": "落汤鸡",
     "answer": "落汤鸡。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c落汤鸡。\u201d",
@@ -7703,10 +7757,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "non-duality"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-187",
+    "id": "koan-187",
     "question": "大梅即心即佛",
     "answer": "即心即佛。",
     "context": "大梅法常禅师初参马祖，问：\u201c如何是佛？\u201d马祖曰：\u201c即心即佛。\u201d大梅即大悟，后住大梅山。马祖令僧探之，僧问：\u201c和尚见马祖得个什么便住此山？\u201d大梅曰：\u201c马祖向我说即心即佛，我便向这里住。\u201d僧曰：\u201c马祖近日佛法又别，不道即心即佛，亦不道非心非佛。\u201d大梅曰：\u201c这老汉惑乱人未有了日，任他非心非佛，我只管即心即佛。\u201d马祖闻之曰：\u201c梅子熟也。\u201d",
@@ -7718,7 +7772,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-188",
+    "id": "koan-188",
     "question": "鸟窠吹毛",
     "answer": "吹毛。",
     "context": "白居易问鸟窠道林禅师：\u201c如何是佛法大意？\u201d师吹布毛，曰：\u201c如是。\u201d白居易不悟。",
@@ -7730,7 +7784,7 @@ export const ZEN_QAS: QAItem[] = [
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
-    "id": "qa-189",
+    "id": "koan-189",
     "question": "如何是祖师西来意？",
     "answer": "庭前柏树子。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c庭前柏树子。\u201d",
@@ -7739,10 +7793,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第三十七则 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "ordinary-mind"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-190",
+    "id": "koan-190",
     "question": "如何是祖师西来意？",
     "answer": "镇州大萝卜。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c镇州大萝卜。\u201d",
@@ -7751,10 +7805,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "碧岩录第三十则 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "ordinary-mind"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": ["linji"]
   },
   {
-    "id": "qa-191",
+    "id": "koan-191",
     "question": "如何是祖师西来意？",
     "answer": "吃茶去。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c吃茶去。\u201d",
@@ -7763,10 +7817,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-192",
+    "id": "koan-192",
     "question": "如何是祖师西来意？",
     "answer": "洗钵去。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c洗钵去。\u201d",
@@ -7775,10 +7829,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-193",
+    "id": "koan-193",
     "question": "如何是祖师西来意？",
     "answer": "今日好晴。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c今日好晴。\u201d",
@@ -7787,10 +7841,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-194",
+    "id": "koan-194",
     "question": "狗子还有佛性也无？",
     "answer": "无。",
     "context": "僧问赵州从谂禅师：\u201c狗子还有佛性也无？\u201d师曰：\u201c无。\u201d僧曰：\u201c上至诸佛下至蝼蚁皆有佛性，狗子为什么却无？\u201d师曰：\u201c为伊有业识在。\u201d",
@@ -7799,10 +7853,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "无门关第一则 / 五灯会元",
     "relatedConcepts": ["koan", "buddha-nature", "emptiness"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-195",
+    "id": "koan-195",
     "question": "如何是祖师西来意？",
     "answer": "大好山色。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c大好山色。\u201d",
@@ -7811,10 +7865,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-196",
+    "id": "koan-196",
     "question": "如何是祖师西来意？",
     "answer": "老僧正在困。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c老僧正在困。\u201d",
@@ -7823,10 +7877,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-197",
+    "id": "koan-197",
     "question": "如何是祖师西来意？",
     "answer": "老僧不在明白里。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c老僧不在明白里。\u201d",
@@ -7835,10 +7889,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "wu-nian", "non-duality"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-198",
+    "id": "koan-198",
     "question": "如何是祖师西来意？",
     "answer": "春来草自青。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c春来草自青。\u201d",
@@ -7847,10 +7901,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-199",
+    "id": "koan-199",
     "question": "如何是祖师西来意？",
     "answer": "盐青米白。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c盐青米白。\u201d",
@@ -7859,10 +7913,10 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
   },
   {
-    "id": "qa-200",
+    "id": "koan-200",
     "question": "如何是祖师西来意？",
     "answer": "老僧正在洗脚。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d师曰：\u201c老僧正在洗脚。\u201d",
@@ -7871,6 +7925,66 @@ export const ZEN_QAS: QAItem[] = [
     "source": "赵州语录 / 五灯会元",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+  },
+  {
+    "id": "koan-201",
+    "question": "\u72d7\u5b50\u8fd8\u6709\u4f5b\u6027\u4e5f\u65e0\uff1f",
+    "answer": "\u65e0\u3002",
+    "context": "\u8d75\u5dde\u4ece\u8c02\u7985\u5e08\u95ee\uff1a\u201c\u72d7\u5b50\u8fd8\u6709\u4f5b\u6027\u4e5f\u65e0\uff1f\u201d\u5e08\u65e5\uff1a\u201c\u65e0\u3002\u201d\u2014\u2014\u300a\u65e0\u95e8\u5173\u300b\u7b2c\u4e00\u5219\uff0c\u65e0\u95e8\u6167\u5f00\u8bc4\u65e5\uff1a\u201c\u53c2\u7985\u987b\u900f\u7956\u5e08\u5173\uff0c\u5999\u609f\u8981\u7a77\u5fc3\u8def\u7edd\u3002\u72d7\u5b50\u4f5b\u6027\uff0c\u5168\u63d0\u7956\u5e08\u897f\u6765\u610f\uff0c\u4e0d\u5982\u53c2\u4e00\u65e0\u5b57\u3002\u201d",
+    "interpretation": "\u65e0\u95e8\u6167\u5f00\u4ee5\u8d75\u5dde\u201c\u72d7\u5b50\u65e0\u4f5b\u6027\u201d\u4e3a\u300a\u65e0\u95e8\u5173\u300b\u5f00\u7bc7\u7b2c\u4e00\u5219\u3002\u4f5b\u7ecf\u660e\u8a00\u4e17\u751f\u7686\u6709\u4f5b\u6027\uff0c\u8d75\u5dde\u5374\u7b54\u201c\u65e0\u201d\uff0c\u4e0d\u662f\u62e8\u65e0\u4f5b\u6027\uff0c\u800c\u662f\u4ee5\u4e00\u5b57\u65a9\u65ad\u5b66\u4eba\u201c\u6709\u201d\u201c\u65e0\u201d\u7684\u601d\u91cf\u5206\u522b\u3002\u65e0\u95e8\u4ee4\u5b66\u4eba\u53c2\u8fd9\u4e2a\u201c\u65e0\u201d\u5b57\u2014\u2014\u4e0d\u4f5c\u865a\u65e0\u4f1a\uff0c\u4e0d\u4f5c\u6709\u65e0\u4f1a\uff0c\u53ea\u7ba1\u63d0\u6495\uff0c\u901a\u8eab\u8d77\u7591\u56e2\uff0c\u5982\u541e\u70ed\u94c1\u4e38\uff0c\u5410\u53c8\u5410\u4e0d\u51fa\uff0c\u4e45\u4e45\u7eaf\u719f\uff0c\u84e6\u7136\u6253\u53d1\uff0c\u60ca\u5929\u52a8\u5730\u3002",
+    "master": "\u8d75\u5dde\u4ece\u8c02 / \u65e0\u95e8\u6167\u5f00\u8bc4\u5531",
+    "source": "\u65e0\u95e8\u5173 \u7b2c\u4e00\u5219",
+    "relatedConcepts": ["koan", "wu-men", "buddha-nature"],
+    "relatedPersons": ["zhaozhou", "wumen-huikai"],
+    "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "koan-202",
+    "question": "\u767e\u4e88\u91ce\u72d0",
+    "answer": "\u4e0d\u5982\u4e00\u5410\u3002",
+    "context": "\u767e\u4e08\u6000\u6d77\u7985\u5e08\u6bcf\u5347\u5802\u5e38\u8bf4\uff1a\u201c\u6587\u6b8a\u3001\u666e\u8d24\u3001\u8fdc\u516c\u3001\u6c34\u6d77\u4e0d\u53ef\u4e0d\u662f\u5927\u5584\u77e5\u8bc6\u3002\u6709\u4e00\u822c\u5bfa\u9662\u5374\u4e0d\u8bb8\u4ed6\u77e5\u3002\u201d\u65e0\u95e8\u6167\u5f00\u8bc4\u65e5\uff1a\u201c\u4ed6\u65e2\u662f\u5927\u5584\u77e5\u8bc6\uff0c\u4e3a\u4ec0\u4e48\u4e0d\u8bb8\u4ed6\u77e5\uff1f\u201d\u2014\u2014\u300a\u65e0\u95e8\u5173\u300b\u7b2c\u4e8c\u5219\u3002",
+    "interpretation": "\u767e\u4e08\u4e4b\u201c\u4e0d\u8bb8\u77e5\u201d\uff0c\u610f\u5728\u659c\u65ad\u5b66\u4eba\u4ee5\u77e5\u89c1\u535c\u5ea6\u4e3a\u609f\u3002\u77e5\u89c1\u5373\u662f\u6c61\u67d3\uff0c\u201c\u4e0d\u77e5\u201d\u65b9\u662f\u51c0\u571f\u3002\u65e0\u95e8\u8bc4\u65e5\uff1a\u201c\u8981\u662f\u4ed6\u77e5\uff0c\u4fbf\u662f\u9646\u7fbd\u516c\u3001\u6c34\u6d77\uff1b\u4ed6\u82e5\u4e0d\u77e5\uff0c\u4fbf\u662f\u9971\u98df\u9192\u7720\u7684\u6c61\u6ce5\u3002\u201d\u2014\u2014\u77e5\u4e0e\u4e0d\u77e5\uff0c\u4e24\u8fb9\u4e0d\u7acb\uff0c\u65b9\u662f\u65e0\u95e8\u610f\u3002",
+    "master": "\u767e\u4e08\u6000\u6d77 / \u65e0\u95e8\u6167\u5f00\u8bc4\u5531",
+    "source": "\u65e0\u95e8\u5173 \u7b2c\u4e8c\u5219",
+    "relatedConcepts": ["koan", "wu-men", "beyond-words"],
+    "relatedPersons": ["baizhang-huaihai", "wumen-huikai"],
+    "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "koan-203",
+    "question": "\u4e0d\u601d\u5584\u4e0d\u601d\u6076\uff0c\u6b63\u4e0e\u4e48\u65f6\uff0c\u90a3\u4e2a\u662f\u660e\u4e0a\u5ea7\u672c\u6765\u9762\u76ee\uff1f",
+    "answer": "\u516d\u7956\u60e0\u80fd\u76f4\u6307\u3002",
+    "context": "\u516d\u7956\u60e0\u80fd\u4f8d\u5e08\u4e94\u7956\u5f18\u5fcd\uff0c\u5f18\u5fcd\u5c06\u4f4d\u4f20\u4e0e\u60e0\u80fd\u3002\u60e0\u80fd\u9001\u4e4b\u81f3\u5927\u5ebe\u5cad\uff0c\u60e0\u660e\u8ffd\u53ca\u3002\u60e0\u80fd\u4e0e\u4e4b\u5e76\u5750\u77f3\u4e0a\uff0c\u65e5\uff1a\u201c\u4e0d\u601d\u5584\u4e0d\u601d\u6076\uff0c\u6b63\u4e0e\u4e48\u65f6\uff0c\u90a3\u4e2a\u662f\u660e\u4e0a\u5ea7\u672c\u6765\u9762\u76ee\uff1f\u201d\u60e0\u660e\u8a00\u4e0b\u5927\u609f\u3002\u2014\u2014\u300a\u65e0\u95e8\u5173\u300b\u7b2c\u4e09\u5219\u3002",
+    "interpretation": "\u516d\u7956\u4ee5\u201c\u4e0d\u601d\u5584\u4e0d\u601d\u6076\u201d\u76f4\u6307\u672c\u6765\u9762\u76ee\u2014\u2014\u5584\u6076\u5ffd\u5ff5\u4e0d\u8d77\u65f6\uff0c\u90a3\u4e2a\u4e86\u4e86\u5e38\u77e5\u7684\uff0c\u5c31\u662f\u672c\u6765\u9762\u76ee\u3002\u65e0\u95e8\u8bc4\u65e5\uff1a\u201c\u8b6c\u5982\u65b0\u8354\u679d\u5243\u4e86\u58f3\uff0c\u53bb\u4e86\u6838\u9001\u5728\u5c14\u53e3\u91cc\uff0c\u53ea\u8981\u5c14\u54bd\u4e00\u54bd\u201d\u2014\u2014\u516d\u7956\u8001\u5a46\u5fc3\u5207\uff0c\u51e0\u4e4e\u66ff\u4f60\u56bc\u788e\u4e86\u3002\u672c\u6765\u9762\u76ee\u4e0d\u662f\u201c\u627e\u5230\u201d\u7684\uff0c\u800c\u662f\u201c\u8ba4\u51fa\u201d\u7684\u2014\u2014\u672c\u81ea\u5177\u8db3\uff0c\u4ece\u672a\u4e22\u5931\u3002",
+    "master": "\u516d\u7956\u60e0\u80fd",
+    "source": "\u65e0\u95e8\u5173 \u7b2c\u4e09\u5219 / \u516d\u7956\u575b\u7ecf",
+    "relatedConcepts": ["ben-lai-mian-mu", "wu-nian", "self-nature"],
+    "relatedPersons": ["huineng", "wumen-huikai"],
+    "relatedBooks": ["wumenguan", "tanjing"]
+  },
+  {
+    "id": "koan-204",
+    "question": "\u672c\u6765\u9762\u76ee\u6ca1\u5904\u85cf\uff0c\u4e16\u754c\u574f\u65f6\u6e2f\u4e0d\u673d\u3002",
+    "answer": "\u5343\u5dee\u6709\u8def\uff0c\u900f\u5f97\u6b64\u5173\uff0c\u4e7e\u5764\u72ec\u6b65\u3002",
+    "context": "\u65e0\u95e8\u6167\u5f00\u9882\u65e5\uff1a\u201c\u5927\u9053\u65e0\u95e8\uff0c\u5343\u5dee\u6709\u8def\u3002\u900f\u5f97\u6b64\u5173\uff0c\u4e7e\u5764\u72ec\u6b65\u3002\u201d\u2014\u2014\u300a\u65e0\u95e8\u5173\u300b\u5f00\u7bc7\u9882\u3002",
+    "interpretation": "\u5927\u9053\u672c\u65e0\u95e8\uff0c\u4f46\u5343\u5dee\u4e07\u522b\u7686\u662f\u5165\u9053\u4e4b\u8def\u3002\u900f\u5f97\u65e0\u95e8\u4e4b\u5173\uff0c\u5219\u5343\u5dee\u4e07\u522b\u7686\u662f\u6211\u5bb6\u73cd\u5b9d\uff0c\u4e7e\u5764\u72ec\u6b65\uff0c\u81ea\u5728\u65e0\u788d\u3002\u65e0\u95e8\u4ee5\u201c\u65e0\u201d\u5b57\u4e3a\u6572\u95e8\u74e6\u5b50\uff0c\u901a\u8eab\u8d77\u7591\u56e2\uff0c\u5982\u541e\u70ed\u94c1\u4e38\uff0c\u5410\u53c8\u5410\u4e0d\u51fa\uff0c\u4e45\u4e45\u7eaf\u719f\uff0c\u84e6\u7136\u6253\u53d1\uff0c\u60ca\u5929\u52a8\u5730\u3002",
+    "master": "\u65e0\u95e8\u6167\u5f00",
+    "source": "\u65e0\u95e8\u5173 \u9882",
+    "relatedConcepts": ["wu-men", "koan", "beyond-words"],
+    "relatedPersons": ["wumen-huikai"],
+    "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "koan-205",
+    "question": "\u4e16\u5c0a\u5219\u5c0f\u4e58\u4e0d\u53ef\u4e71\u4e45\uff0c\u4e00\u5410\u80fd\u6c89\u5c40\u9662\u5c71\u5417\uff1f",
+    "answer": "\u4e0d\u53ef\u4e71\u4e45\u3002",
+    "context": "\u65e0\u95e8\u6167\u5f00\u8bc4\u65e5\uff1a\u201c\u5343\u76df\u5410\u4e0d\u5982\u4e00\u5410\uff0c\u4e07\u91cc\u5410\u4e0d\u5982\u4e00\u5410\u3002\u201d\u2014\u2014\u300a\u65e0\u95e8\u5173\u300b\u7b2c\u5341\u4e03\u5219\u3002\u4e16\u5c0a\u95ee\uff1a\u201c\u5c0f\u4e58\u4e0d\u53ef\u4e71\u4e45\uff0c\u4e00\u5410\u80fd\u6c89\u5c40\u9662\u5c71\u5417\uff1f\u201d\u65e0\u95e8\u65e5\uff1a\u201c\u4e0d\u53ef\u4e71\u4e45\u3002\u201d",
+    "interpretation": "\u4e16\u5c0a\u4e4b\u95ee\uff0c\u610f\u5728\u52d8\u9a8c\u65e0\u95e8\u4e4b\u89c1\u5730\u3002\u65e0\u95e8\u7b54\u201c\u4e0d\u53ef\u4e71\u4e45\u201d\u2014\u2014\u4e00\u5410\u80fd\u6c89\u5c40\u9662\u5c71\uff0c\u4f46\u4e0d\u53ef\u4e71\u4e45\u3002\u4e71\u4e45\u5219\u843d\u5165\u51e1\u60c5\uff0c\u4e0d\u4e71\u4e45\u5219\u4fdd\u4efb\u81ea\u5728\u3002\u6b64\u4e0e\u8d75\u5dde\u201c\u5403\u8336\u53bb\u201d\u5f02\u66f2\u540c\u5de5\u2014\u2014\u5e73\u5e38\u5fc3\u662f\u9053\uff0c\u4f46\u4e0d\u53ef\u6267\u7740\u5e73\u5e38\u3002",
+    "master": "\u4e16\u5c0a / \u65e0\u95e8\u6167\u5f00",
+    "source": "\u65e0\u95e8\u5173 \u7b2c\u5341\u4e03\u5219",
+    "relatedConcepts": ["koan", "wu-men", "ordinary-mind"],
+    "relatedPersons": ["wumen-huikai"],
     "relatedBooks": ["wumenguan"]
   }
 ];
@@ -7889,56 +8003,56 @@ export const ZEN_FAQS: FAQItem[] = [
     id: 'faq-1',
     question: '公案到底是什么？为什么不能按字面意思理解？',
     answer: '公案原指官府的案牍，禅门借指祖师应机的言行记录——它是"已然判决的范例"，用来勘验学人的悟境。公案的话头往往故意违背常识逻辑（无、斩猫、顶鞋），目的不是传递信息，而是截断你的思维惯性。若按字面求解，恰恰落入它要破除的义理分别；须在言外转身，方有少分相应。',
-    relatedQa: 'qa-2',
+    relatedQa: 'koan-2',
     relatedBooks: ['mazu']
   },
   {
     id: 'faq-2',
     question: '赵州说"无"，是认为狗子没有佛性吗？',
     answer: '不是。经文明说一切众生皆有佛性，赵州岂能不知？这个"无"不是有无对待之无，而是一把剑：学人抱着"有佛性"的成见来问，赵州一个"无"字斩断他的执取。大慧宗杲教人就此"无"字提撕起疑——不作有无会、不作道理会，疑到极处方知此"无"是无你开口处的"无"。',
-    relatedQa: 'qa-2',
+    relatedQa: 'koan-2',
     relatedBooks: ['mazu']
   },
   {
     id: 'faq-3',
     question: '南泉斩猫，岂不是杀生犯戒？',
     answer: '这正是后世议论最多的地方。须知南泉举刀时说的是"道得即救取猫儿"——刀是逼拶，逼两堂僧人于当下转身。众人着了"猫归谁"的相，无人道得，南泉方行此非常手段。禅门于此只说：斩的是两堂的人我是非。若停留在道德评判层面争论杀生，恰恰成了公案里"道不得"的第三千人。',
-    relatedQa: 'qa-1',
+    relatedQa: 'koan-1',
     relatedBooks: ['mazu']
   },
   {
     id: 'faq-4',
     question: '德山棒、临济喝，是不是粗暴的教学方式？',
     answer: '看似粗暴，实是极高明的"直指"。学人开口动念处皆是思维卜度，禅师于电光石火间一棒一喝，斩断其意识流，令其前后际断、能所双亡，于言语道断处瞥见本心。但前提是施设者须有真实证悟的眼目，否则便是狐禅野喝；学人若以挨棒学喝为奇货，又是另一种执着。',
-    relatedQa: 'qa-3',
+    relatedQa: 'koan-3',
     relatedBooks: ['linji']
   },
   {
     id: 'faq-5',
     question: '"仁者心动"是说风和幡其实没有动吗？',
     answer: '不是抹杀现象。风幡之动是现量事实，二僧之错不在看见动，而在心动——于境上起分别是非，争论不休。六祖一语点破：争端不在风幡，在仁者之心。心若不随境转，风自吹幡自动，何争之有？这正是"万法唯心"的活用，而非要人闭眼说无动。',
-    relatedQa: 'qa-6',
+    relatedQa: 'koan-6',
     relatedBooks: ['tanjing']
   },
   {
     id: 'faq-6',
     question: '怀让磨砖作镜，是反对坐禅吗？',
     answer: '不是反对坐禅，是反对"执坐为佛"。坐禅是摄心的方便，成佛是悟心的本怀；错认方便为究竟，犹如磨砖求镜。怀让打牛不打车的比喻说得很清楚：身如车，心如牛，只调身不调心是外求。初学者非坐无以摄心，但不可执坐相为道——禅在行住坐卧，佛非定相。',
-    relatedQa: 'qa-7',
+    relatedQa: 'koan-7',
     relatedBooks: ['mazu']
   },
   {
     id: 'faq-7',
     question: '"不昧因果"与"不落因果"一字之差，为何一个解脱一个堕野狐？',
     answer: '"不落因果"是断灭见——以为大修行人超出因果之外，这是拨无因果的狂慧，故堕野狐身五百世。"不昧因果"则是中道：悟者照样生老病死、因果历然，只是了了分明、不被其瞒。百丈一字之转说明：真解脱不在因果之外逍遥，而在因果之中不昧。',
-    relatedQa: 'qa-4',
+    relatedQa: 'koan-4',
     relatedBooks: ['baizhang']
   },
   {
     id: 'faq-8',
     question: '香严上树，开口即堕、不答即违，到底该怎么回答？',
     answer: '这一则公案故意把人逼到绝处：答也不是、不答也不是——这正是参禅者疑情成片时的真实处境，吞吐不得。虎头招上座的问法值得玩味："未上树时请和尚道"——尚未涉入言句之前的本来面目，本无问答可立。香严呵呵大笑，便是不答之答。',
-    relatedQa: 'qa-5',
+    relatedQa: 'koan-5',
     relatedBooks: ['tanjing']
   },
   {
@@ -8200,9 +8314,1545 @@ export const ZEN_FAQS: FAQItem[] = [
     relatedBooks: ['tanjing', 'xinxinming', 'xinjing']
   },
   {
+    id: 'faq-53',
+    question: '七佛传法偈中"法本法无法"是什么意思？',
+    answer: '释迦佛传法偈云"法本法无法，无法法亦法。今付无法时，法法何曾法。"第一句"法本法无法"：一切法的根本是"无法"——无有定法可得。第二句"无法法亦法"：把"无法"当作法，它也成了法。第三句"今付无法时"：今天传给你这"无法"。第四句"法法何曾法"：哪里有一个实在的法被传呢？四句层层递进：先立"无法"破对法的执着，再破"无法"本身的执着，最后连"传法"也一并扫除——正法眼藏，实无一法可得。',
+    relatedBooks: ['qifo']
+  },
+  {
+    id: 'faq-54',
+    question: '"身从无相中受生，犹如幻出诸形象"——身体是幻，那修行还有什么意义？',
+    answer: '毗婆尸佛偈说身体如幻，不是否定身体的存在，而是指出它没有独立的自性——因缘和合而生，因缘消散而灭。修行意义正在于此：既然身体是幻，就不应执着身体为"我"；但幻身可以借来修行，如借幻身修真实。犹如以箭射箭——以幻身之修行，悟真实之自性。若执幻为实则随业流转，知幻即离则当下解脱。',
+    relatedBooks: ['qifo']
+  },
+  {
+    id: 'faq-55',
+    question: '觉林菩萨偈"一切唯心造"和唯心主义哲学有什么区别？',
+    answer: '觉林菩萨偈"应观法界性，一切唯心造"所说的心，不是哲学意义上的意识或精神实体，而是指万法没有独立于心之外的自性——一切现象都是心识的显现，离却心识不可指陈。但此"心"本身也空无自性，不是有一个造物主式的"心"在创造万物。禅宗进一步指出：能造的心与所造的法，都是自性的妙用，体性空寂。所以"一切唯心造"不是唯心哲学，而是般若中观在心性论上的展开。',
+    relatedBooks: ['juelin', 'tanjing']
+  },
+  {
+    id: 'faq-56',
+    question: '文殊般若经"一行三昧"怎么修？',
+    answer: '《文殊师利所说摩诃般若波罗蜜经》开示一行三昧：法界一相，系缘法界，是名一行三昧。修法是在行住坐卧一切时中，心系法界——法界即是一相，一相即是无相。具体而言，四祖道信教人"念佛心是佛"：端坐正身，专称一佛名字，念念相续，能念所念渐渐消融，心佛不二，即入一行三昧。不是离开日常生活另修一个三昧，而是在一切时中保持心不散乱、不分别，了了分明。',
+    relatedBooks: ['wenshu', 'anxin']
+  },
+  {
+    id: 'faq-57',
+    question: '莲花生大士的"无染觉性"和六祖的"自性"有何异同？',
+    answer: '体性完全一致，教法路径有别。莲花生大士直指本觉本来清净、妄念自解脱——"无染"指觉性不被妄念染污，如虚空不被云染；六祖直指"何期自性本自清净"——自性本来清净，不须修添。差异在路径：大圆满偏于"直指—自解脱—任运"，禅宗偏于"直指—见性—保任"。但所指的"那个"——当下灵明不昧的觉性——完全一致。故古德云"禅密可以互参"。',
+    relatedBooks: ['wuran', 'tanjing']
+  },
+  {
+    id: 'faq-58',
+    question: '"杖指教授"是什么内容？',
+    answer: '《杖指教授》是禅宗古德以拄杖为方便、直指学人自性的机缘开示集。禅师举杖示众："唤作杖则触，不唤作杖则背"——你叫它拄杖就落了名相，不叫它拄杖又违背了常识。这一拄杖，逼你在"是"与"不是"之间截断思量，直见那个能唤能背的本来面目。禅宗的"拄杖子"由此成为最经典的接引方便之一。',
+    relatedBooks: ['zhangzhi']
+  },
+  {
+    id: 'faq-59',
+    question: '达摩《血脉论》说"若见性即是佛"，那不见性的人念佛有用吗？',
+    answer: '达摩不是说念佛无用，而是指出念佛的究竟目的在见性。不见性时念佛，是借佛号摄心、积累资粮；但若执着心外有佛可念、有西方可生，则始终在门外。四祖道信即以"念佛心是佛"教人——从持名念佛入手，念到能所双亡时亲见自性弥陀。所以念佛与见性不矛盾：念佛是方便，见性是究竟；以念佛入一心，以一心见自性，方是达摩本意。',
+    relatedBooks: ['xuemaicong', 'anxin']
+  },
+  {
+    id: 'faq-60',
+    question: '达摩《悟性论》说"寂照不二"，寂和照怎么同时？',
+    answer: '"寂"是心体不动不摇、无念无相；"照"是心用灵明不昧、了了觉知。寂而不照则落死水，照而不寂则随境转。寂照不二是：心体虽寂而常照——如镜体不动而能照物；心用虽照而常寂——如镜照物而镜体不留。修行中：打坐时不是什么都不想（那是死寂），而是了了分明而不起分别——这正是寂照同时。六祖云"何期自性本不动摇（寂），何期自性能生万法（照）"——寂照不二即是自性本然。',
+    relatedBooks: ['wuxinglun', 'tanjing']
+  },
+  {
+    id: 'faq-61',
+    question: '达摩《破相论》说六度不在形式，那还要不要布施持戒？',
+    answer: '达摩不是否定布施持戒，而是破对形式的执着。《破相论》将六度归于心行：布施是心行慈舍，不是算捐了多少钱；持戒是心不起恶，不是算守了多少条。形式上的六度是方便，心行上的六度是实质。若心无悭贪，则一切施舍皆是布施；若心无恶念，则一切行为皆是持戒。反之，形式上做满了六度，心中悭贪恶念依旧，则如蒸沙作饭，终不可得。故达摩破相不是废行，而是令行归于心。',
+    relatedBooks: ['poxianglun']
+  },
+  {
+    id: 'faq-62',
+    question: '达摩《无心论》的"无心"和什么都不想有什么区别？',
+    answer: '什么都不想是无记、是昏沉，如木石一般。达摩的"无心"是"无妄心"——不是没有知觉，而是于一切境界不生分别执着。无心者，如镜照物：物来即照，物去不留，照而不住。你吃饭时知道吃饭，走路时知道走路，只是不于其上起贪嗔爱憎——这就是无心。达摩明言"无心者，无一切心也"——不是没有心，是没有一切执着心、分别心、妄念心。本心常在，妄心本无，故名无心。',
+    relatedBooks: ['wuxinlun']
+  },
+  {
+    id: 'faq-63',
+    question: '达摩《息诤论》为什么说"诤是生死本"？',
+    answer: '《息诤论》指出：一切诤论皆从分别心起——我是你非、我对你错，正是人我相、是非相。有诤则有对立，有对立则有取舍，有取舍则有生死。修行人若于佛法中生诤——争宗派、争顿渐、争是非——恰恰违背了佛法"无诤"的根本精神。真悟者无诤：不是不敢诤，是无可诤——法本无一法可得，诤什么？六祖云"此宗本无诤，诤即失道意"，与达摩息诤之旨一脉相承。',
+    relatedBooks: ['xixulun', 'tanjing']
+  },
+  {
+    id: 'faq-64',
+    question: '达摩"二入四行"中"报冤行"怎么理解？',
+    answer: '《入道四行观》中"报冤行"：修道者若受苦时，当自念言"我往劫中，弃本逐末，流浪诸有，多起冤憎，违害无限。今虽无犯，是我宿殃，恶业果熟，非天非人所能见与，甘心忍受，都无冤诉。"这不是消极认命，而是转苦为道：苦来时不怨天尤人，了知因果历然，甘心承受，心不生恼。一旦心不随苦转，苦即成了悟道的助缘。报冤行是四行中最难行的一行——于逆境中不动心，方见真实功夫。',
+    relatedBooks: ['sixingguan']
+  },
+  {
+    id: 'faq-65',
+    question: '"随缘行"是不是随波逐流？',
+    answer: '不是。达摩"随缘行"是：苦乐得失皆从缘生，缘聚则生、缘散则灭，了知此理则得失不动于心。逢苦不忧，遇乐不喜——不是不分辨，是不执着。随波逐流是心随境转——境好就贪、境坏就嗔；随缘行是境来即应、境去即离——如镜照物，物来不拒、物去不留。区别在于：随波逐流是迷，随缘行是悟；迷者随业流转，悟者即相离相。',
+    relatedBooks: ['sixingguan']
+  },
+  {
+    id: 'faq-66',
+    question: '"无所求行"和现代人的进取心矛盾吗？',
+    answer: '不矛盾。达摩"无所求行"的"求"指向外驰求——求名求利求佛求法，心有所求即有所缺，有所缺即不安。无所求不是什么都不做，而是做而不求——努力工作但不执着结果，修行用功但不求悟境。现代人进取是事相上的努力，无所求是心地上的超脱。以无所求之心行进取之事——事上精进，心上无事——这才是菩萨道。若心有所求而进取，则是轮回之因；若心无所求而不做事，则是断灭见。',
+    relatedBooks: ['sixingguan']
+  },
+  {
+    id: 'faq-67',
+    question: '"称法行"怎么理解？',
+    answer: '达摩四行中"称法行"是最高一行：称法性而行，法性本空寂、无相、无愿。行六度而不着六度之相，度众生而不见众生相。如《金刚经》"灭度一切众生已，而无有一众生实灭度者"——做了即放下，不立能度所度之相。称法行是悟后的自然行履：不是刻意去做什么，而是法性如此，自然流露。前三行（报冤、随缘、无所求）是悟前方便，称法行是悟后本然。',
+    relatedBooks: ['sixingguan', 'jingangjing']
+  },
+  {
+    id: 'faq-68',
+    question: '《信心铭》"至道无难，唯嫌拣择"——不拣择是不是什么都不分？',
+    answer: '三祖僧璨说的"拣择"不是日常必要的分辨（分辨冷暖善恶是生存所需），而是心于一切境界起憎爱取舍——喜欢就追，不喜欢就避。"唯嫌拣择"是说道本现成，只因你不断分别好恶，才把道遮蔽了。"但莫憎爱，洞然明白"——当你不再于境上起好恶执着，心性本来的光明自然显现。不是不分，是不执——分别而不分别，不分别而分别，方是活般若。',
+    relatedBooks: ['xinxinming']
+  },
+  {
+    id: 'faq-69',
+    question: '"才有是非，纷然失心"——有是非判断就失去了本心吗？',
+    answer: '《信心铭》此句不是说不能有是非判断，而是说一旦心落入是非对立的执着中，就离开了无分别的真心。是非本身是世俗谛的必要工具，但执着是非为绝对真实，就堕入了二元对立。真心超越是非——不是不分是非，是不被是非所缚。如镜照物：美丑皆照，而镜体不分美丑。所以"才有是非，纷然失心"是破执着，不是破判断。',
+    relatedBooks: ['xinxinming']
+  },
+  {
+    id: 'faq-70',
+    question: '"信心铭"为什么叫"信心"铭？信的是什么心？',
+    answer: '"信心"有两层含义：一是信自心——信自己本具佛性，不假外求；二是信真心——真心本自清净，不生不灭。三祖僧璨以"信"为入道之门：不信自心是佛，纵修万行皆是外求。全篇146字，从"至道无难，唯嫌拣择"到"信心不二，不二信心"，始终围绕一个"信"字——信得及，则当下即是；信不及，则向外驰求。故信心铭者，铭刻信心之要也。',
+    relatedBooks: ['xinxinming']
+  },
+  {
+    id: 'faq-71',
+    question: '《方寸论》"方寸含法界"——小小的心怎么能含容整个法界？',
+    answer: '"方寸"指心。心无形无相，故能含容一切——正因为它没有大小、没有边际，所以法界不在心外。迷时方寸被妄念遮蔽，似乎只有烦恼妄想；悟时方寸即是法界，山河大地皆是自心显现。如《华严经》"心如工画师，能画诸世间"——心造万法，万法在心。方寸含法界不是空间上的包含，而是体性上的不二：心即是法界，法界即是心。',
+    relatedBooks: ['fangcunlun']
+  },
+  {
+    id: 'faq-72',
+    question: '四祖道信"入道安心要方便法门"怎么修？',
+    answer: '四祖道信依《文殊说般若经》"一行三昧"教人：一、端坐正身，专称一佛名字，念念相续——借佛号摄心。二、念佛心相续时，能念所念渐渐消融，心佛不二——入一行三昧。三、于三昧中观察身心如幻、法界一相——亲见自性。四祖强调"念佛心是佛，妄念是凡夫"——念佛不是求外面的佛，是借佛号见自性佛。此法门将净土念佛与禅宗见性融为一体，是早期禅净合修的典范。',
+    relatedBooks: ['anxin', 'wenshu']
+  },
+  {
+    id: 'faq-73',
+    question: '五祖弘忍《最上乘论》"守本真心"具体怎么守？',
+    answer: '弘忍大师教人"守本真心"：先识得什么是真心——真心即是当下能知能觉、不生不灭的本性。识得之后，于一切时中守护不失——不随妄念跑、不向外驰求、不执着境界。如保赤子，如鸡孵卵，念念不离。守不是抓住一个东西——真心无形无相，抓什么？守是不忘——于行住坐卧中了了分明，不被境转。守到打成一片，能守所守自然脱落，即见本心。弘忍云"但守真心，胜念十方诸佛"——因为十方诸佛皆从真心流出。',
+    relatedBooks: ['zuishangcheng']
+  },
+  {
+    id: 'faq-74',
+    question: '六祖"菩提自性，本来清净"——既然本来清净，为什么还会迷？',
+    answer: '自性本来清净，迷的不是自性，是妄念。如虚空本来清净，云来云去虚空不变——云是妄念，虚空是自性。迷时自性不曾染污，悟时自性不曾清净——清净是本然，不是修出来的。迷之所以为迷，是因不觉——不知自性本净，向外驰求。一旦觉悟，方知迷悟同一真性：迷时似有妄可除，悟时方知本无妄可除。故六祖云"本来无一物，何处惹尘埃"。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-75',
+    question: '六祖"无念为宗"——无念是不是不思考？',
+    answer: '不是。六祖明言"无念者，于念而无念"——不是不生念，是念而不执。如镜照物：物来即照，物去不留。你吃饭时知道吃饭，思考时知道思考，只是不于念上起执着——不分别好坏、不起憎爱。六祖又云"于诸境上心不染"——无念是即境离境，不是避境。百物不思是断灭见，不是无念；于念而离念，方是真无念。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-76',
+    question: '"定慧等持"——定和慧不是先定后慧吗？',
+    answer: '通途教法确实先定后慧——先修止得定，再修观发慧。但六祖说"定慧一体，不是二"——定是慧体，慧是定用，如灯与光：有灯即有光，无灯即暗。不是先有灯后有光，灯光同时。六祖所说是自性定慧：自性不动即定，自性明了即慧——不动而明了，明了而不动，同时具足。修行中：你于一切境不染时，既是定（不随境转）又是慧（了了分明），不分先后。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-77',
+    question: '六祖说"功德在法身中，不在修福"——做善事没有功德吗？',
+    answer: '六祖区分了"功德"与"福德"：福德是事相上的善行——造寺度僧、布施持戒，感得人天福报，是有漏的；功德是心性上的证悟——见性平等、心不染着，是无漏的。梁武帝造寺度僧无数，达摩说"无功德"——因为着相修行，只有福德没有功德。但六祖不是否定修福，而是指出：着相修福只得福德，离相修福即功德。心若清净，一切善行皆是功德；心若染着，修万种善法也只是福德。',
+    relatedBooks: ['tanjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-78',
+    question: '六祖"三十六对法"是什么？有什么用？',
+    answer: '六祖临终付嘱三十六对法：明与暗、阴与阳、有与无、色与空、动与静、清与浊等三十六组对立范畴。教人"出没即离两边"——说话时不要落在一端，要即两边而离两边。如人问"有"，答以"无"破之；问"无"，答以"有"破之。三十六对法是教学人破除二元对立的善巧方便：你执着哪一端，就从对面来破。终极目的是超越一切对立，回归中道实相。此法后来成为禅宗接引学人的基本手法。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-79',
+    question: '永嘉《证道歌》"顿觉了如来禅"和"祖师禅"有什么区别？',
+    answer: '如来禅是经教中所说的禅定——从凡夫到成佛的渐修次第，依经论而修。祖师禅是达摩以来"教外别传"的直指——不依经论次第，直指人心见性成佛。永嘉玄觉虽唱"顿觉了如来禅"，但其风格实是祖师禅——"君不见，绝学无为闲道人，不除妄想不求真"，这不是渐修，是顿悟。区别在于：如来禅有次第可循，祖师禅无次第可立；如来禅从教入观，祖师禅以心传心。',
+    relatedBooks: ['zhengdaoge']
+  },
+  {
+    id: 'faq-80',
+    question: '"行亦禅，坐亦禅，语默动静体安然"——怎么做到？',
+    answer: '永嘉《证道歌》此句是悟后的境界，不是初学能到。悟者在一切时中——行住坐卧、语默动静——心不染着，了了分明，自性不动。不是走路时专门修禅、打坐时才修禅，而是禅贯穿一切时处。做到的关键在于"无心"——于一切境不生分别执着，则行住坐卧皆是禅。初学者做不到，可以先从坐禅入手，渐渐将禅延伸到日常，最终行亦禅坐亦禅。但须知：这是悟后自然如此，不是刻意模仿得来的。',
+    relatedBooks: ['zhengdaoge']
+  },
+  {
+    id: 'faq-81',
+    question: '马祖"即心即佛"之后又说"非心非佛"，到底哪个对？',
+    answer: '两个都对，是不同阶段的药。初学执着心外有佛，马祖说"即心即佛"——你的心就是佛，不必外求，给一个信入处。等人执着了"心是佛"，马祖又说"非心非佛"——破这个新的执着。大梅法常闻"即心即佛"而悟，住山不移；马祖遣人勘之曰"和尚近日又道非心非佛"，法常答"任汝非心非佛，我只管即心即佛"——马祖印可"梅子熟也"。药病皆施，方见祖师本意：不是要你记住哪句话，是要你会得那言外之意。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-82',
+    question: '马祖"道不用修，但莫染污"——不用修那还修行什么？',
+    answer: '"不用修"不是不修行，是道本现成、不须造作。但众生妄念染污，遮蔽了本有的道。所以"但莫染污"——只要不去染污它，道自然显现。染污是什么？贪嗔痴、分别执着、人我是非。不染污就是不去起这些妄念。这不是什么都不做，而是做而不染——吃饭不染于饭，说话不染于话，待人接物不染于境。如镜照物而不染，如雁过长空不留。道不用修，但须莫染；莫染即是修，修而无修。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-83',
+    question: '百丈"野鸭子"公案——百丈被扭鼻子就悟了？',
+    answer: '马祖与百丈同行，见野鸭子飞过。马祖问"是什么？"百丈答"野鸭子。"马祖问"甚处去也？"百丈答"飞过去也。"马祖扭百丈鼻，百丈痛得大叫。马祖曰"又道飞过去也！"百丈于痛处有省。此公案的要点：百丈答"飞过去也"时，心已随境转——跟着鸭子飞走了。马祖一扭鼻子，把百丈从"随境转"拉回"当下觉知"——痛的是谁？能觉知痛的那个，可曾飞过去？百丈于痛处回光返照，瞥见那个不动的觉性，故有省。',
+    relatedBooks: ['mazu', 'baizhang']
+  },
+  {
+    id: 'faq-84',
+    question: '百丈"一日不作，一日不食"——老和尚何必这么拼？',
+    answer: '百丈怀海立清规，年过九旬犹随众出坡劳作。弟子藏其农具劝歇，百丈竟绝食——"一日不作，一日不食"。这不是苦行自虐，而是将禅落实于劳动：搬柴运水皆是道场，不作不食是因果历然。百丈以身作则，破除"修行人不劳作"的偏见——禅不在蒲团上，在日用中。农禅并重由此成为中国禅宗的优良传统，禅僧自食其力、不依赖信众，保证了禅宗的独立性与生命力。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-85',
+    question: '黄檗"唯是一心"——这个"一心"到底是什么？',
+    answer: '黄檗《传心法要》反复强调"诸佛与一切众生，唯是一心，更无别法"。这个"一心"不是意识、不是思维、不是哲学概念，而是当下灵明不昧的觉性之体。它无形无相、不生不灭、超越一切限量名言。你此刻能听、能看、能觉知的那个——就是一心。但一拟说"是什么"，早已不是了——因为它超越言说。黄檗的教法是：不要去想象一心是什么，只须无心——无心则一心自显。如人饮水冷暖自知，不在言说中。',
+    relatedBooks: ['huangbo']
+  },
+  {
+    id: 'faq-86',
+    question: '黄檗说"不经一番寒彻骨，怎得梅花扑鼻香"——修行一定要吃苦吗？',
+    answer: '黄檗此句不是说故意吃苦，而是说真实修行必然要经历磨砺。参禅中的"寒彻骨"不是身体的苦，是心路的苦——疑情逼拶到无路可走、妄念翻腾到无法控制、我执被逼到无处可藏。这个过程如同梅花经历严寒——寒是因缘，香是果报。没有寒彻骨的逼拶，偷心不死、妄念不断，悟境不会真实。但也不是越苦越好——关键是真实用功，不是形式上的苦行。苦是悟道的助缘，不是悟道本身。',
+    relatedBooks: ['huangbo']
+  },
+  {
+    id: 'faq-87',
+    question: '普照知讷《修心诀》"顿悟渐修"怎么理解？',
+    answer: '普照知讷立"顿悟渐修"：先顿悟自性本具——知真心本来清净，不假外求；后渐修无始习气——悟后习气犹在，须念念观照、渐渐磨除。喻如"顿悟如开目，渐修如行路"：睁开眼看见路了（顿悟），但走到目的地还需一步步走（渐修）。此说调和了顿渐之争：六祖虽唱顿悟，但悟后犹须保任；神秀虽唱渐修，但修到最后仍须见性。顿悟是知，渐修是行；知行合一，方为究竟。',
+    relatedBooks: ['xiuxinjue', 'zhenxin']
+  },
+  {
+    id: 'faq-88',
+    question: '《真心直说》十五门太多了，普通人怎么入手？',
+    answer: '十五门看似繁多，核心只在三步：一、真心正信——信自心本具真心，不生不灭。二、真心息妄——于日用中不随妄念跑，妄起即觉，觉之即无。三、真心出死——妄念尽处，生死即了，真心全显。初学者不必逐门研究，只须抓住"见色闻声皆是真心之用，用时不着诸相"这一句——在见闻觉知中认取真心，同时不执着所见所闻，如镜照物而不染。一门通则门门通，不必拘于名相。',
+    relatedBooks: ['zhenxin']
+  },
+  {
+    id: 'faq-89',
+    question: '临济"逢佛杀佛，逢祖杀祖"——这不是大逆不道吗？',
+    answer: '"杀"不是真的杀，是破执着。你心中有一个"佛"的相——以为佛在外面、法在外面，向外驰求。临济说"逢佛杀佛"是杀你心中那个佛相——佛不在外，心外无佛。你心中有一个"祖"的相——以为祖师有什么玄妙可传。临济说"逢祖杀祖"是杀你心中那个祖相——祖师无法可传，只传一心。杀的是心中的偶像崇拜和精神依附，不是杀佛杀祖。一旦心中佛见祖见尽除，方见自性真佛。临济的峻烈，正是对学人最大的慈悲。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-90',
+    question: '临济"四料简"是什么？',
+    answer: '临济四料简是接引学人的四种方法：一、夺人不夺境——破学人对"我"的执着，保留境界。二、夺境不夺人——破学人对"境"的执着，保留主体。三、人境俱夺——主体客体一并破除，直显空性。四、人境俱不夺——悟后境界，人境各住本位，即相离相。四料简是临济根据学人不同的执着偏重，对病施药：你执人我则夺人，你执境则夺境，你两者都执则俱夺，你两者都不执则俱不夺。看似复杂，核心只在"破执着"三字。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-91',
+    question: '临济"无位真人"和神秀"时时勤拂拭"的境界差在哪里？',
+    answer: '神秀"时时勤拂拭"还在二元对立中——有镜子可拂、有尘埃可除、有我在拂。临济"无位真人"已超越二元——没有位次、没有能所、没有拂与不拂。无位真人不是修出来的，是本具的；不是拂拭后的清净，是从来未曾染污。神秀的境界是"有修有证"，临济的境界是"无修无证"。但须知：六祖选惠能不是否定神秀，而是指出见地有深浅——神秀在门外，惠能已入门。悟后保任时，拂拭仍然需要，只是拂而无拂、无拂而拂。',
+    relatedBooks: ['linji', 'tanjing']
+  },
+  {
+    id: 'faq-92',
+    question: '大珠慧海《顿悟入道要门论》"饥来吃饭困来即眠"——这就是修行？',
+    answer: '有源律师问大珠慧海用功之道，慧海答"饥来吃饭困来即眠"。源曰"一切人总如是，同师用功否？"慧海曰"不同——他吃饭时百种须索，睡觉时千般计较；我吃饭时吃饭，睡觉时睡觉。"差别在于：凡夫吃饭睡觉时心不在当下，满腹妄想；悟者吃饭睡觉时了了分明，不起第二念。所以"饥来吃饭困来即眠"不是懒散放任，是最高明的修行——于一切时中安住当下，心不外驰。看似平常，实则非凡。',
+    relatedBooks: ['dunwu']
+  },
+  {
+    id: 'faq-93',
+    question: '宝志公《十四科颂》为什么说"持犯不二"？持戒和犯戒怎么能不二？',
+    answer: '宝志公的"持犯不二"不是混淆持犯，而是就体性说：持戒和犯戒都是心行——心清净则一切行皆是持，心染着则一切行皆是犯。形式上守戒而心不清净，不是真持；形式上看似不拘而心清净，不是真犯。如《维摩诘经》中维摩诘示现居士身，不拘僧仪，但心清净无染——诸佛印可。志公之意：不要执着持犯的形式，要看心地。心若清净，持犯俱息；心若染着，持亦是犯。此说非废戒律，而是令戒归于心。',
+    relatedBooks: ['zhigong', 'weimojiejing']
+  },
+  {
+    id: 'faq-94',
+    question: '傅大士《心王铭》"心王"和八识是什么关系？',
+    answer: '傅大士《心王铭》的"心王"指本觉真心——统摄万法的主宰。唯识学说的八识（眼耳鼻舌身意六识加末那识、阿赖耶识）是心王的臣民——八识各有功用，但都受心王统摄。心王若正，八识自然清净；心王若失，八识就作乱——前六识造业，第七识执我，第八识含藏染种。所以修行不在八识上逐个用功，而在心王上安住——心王安住，八识自然转成四智。傅大士的"心王"说，与禅宗"直指人心"同一意旨。',
+    relatedBooks: ['xinwangming']
+  },
+  {
+    id: 'faq-95',
+    question: '荷泽神会"无念为宗"和六祖"无念为宗"有何不同？',
+    answer: '六祖的"无念"是"于念而无念"——念而不执，即相离相，活泼自在。神会的"无念"偏于"不作意"——不起了别，侧重于止息妄念。六祖批评这种倾向："若只百物不思，念尽除却，一念绝即死，别处受生，是为大错。"六祖的无念是活般若——了了分明而不执着；神会的无念容易落入死寂——什么都不想以为就是道。后世禅宗主流继承六祖的活无念，而非神会的死无念。但神会在确立南宗正统上有不可磨灭的历史贡献。',
+    relatedBooks: ['shenhui', 'tanjing']
+  },
+  {
+    id: 'faq-96',
+    question: '《金刚经》"凡所有相，皆是虚妄"——那佛相也是虚妄吗？',
+    answer: '是的。《金刚经》云"凡所有相，皆是虚妄。若见诸相非相，即见如来。"佛的三十二相、八十种好，也是因缘所生、无有自性，故是虚妄。但"虚妄"不是"不存在"，而是"无实自性"。真正的如来不是有相的佛——"若以色见我，以音声求我，是人行邪道，不能见如来"。如来者，无所从来亦无所去——是法身、是自性、是那个无形无相的觉性。所以执着佛相求佛，恰恰背离了佛；见相非相，方见真佛。',
+    relatedBooks: ['jingangjing']
+  },
+  {
+    id: 'faq-97',
+    question: '《心经》"色不异空，空不异色"——色和空到底是什么关系？',
+    answer: '色是物质现象，空是无自性。"色不异空"：一切物质现象都没有独立的自性——因为它们是因缘和合而生，离了因缘就不可得。"空不异色"：空不是离开色另有一个空——空就是色的本性，色本身就是空的显现。如水与波：波是水形成的，波不异水；水以波显现，水不异波。不是色之外有空，也不是空之外有色——色即是空，空即是色。这是般若中观的核心见地：现象与空性不二。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-98',
+    question: '《圆觉经》"知幻即离，离幻即觉"——这么简单就悟了？',
+    answer: '"知幻即离"看似简单，实则极难。关键在"知"——不是概念上知道"一切是幻"，而是当下真切照见妄念的空性。你正在生气时，能照见"此是幻"——怒火当下失去力量，这就是"知幻即离"。离的不是外境，是对境的执着。离幻的同时即是觉——不是离了幻之后再去觉，离的当下就是觉。如暗室点灯：灯一亮暗即消，不是先消暗后亮灯。难处在于：真能"知幻"的人，须有相当的定力与般若基础；对大多数人来说，需要经过长期参究才能达到这一"知"。',
+    relatedBooks: ['yuanjuejing']
+  },
+  {
+    id: 'faq-99',
+    question: '《楞严经》"七处征心"——心到底在哪里？',
+    answer: '阿难七次回答心在何处——身内、身外、潜伏眼根、暗处、随合随有、中间、无着处——全被佛陀破除。所破的不是某个具体答案，而是阿难"心有处所"的根本妄执。真心无在无不在：说它在内不对，在外不对，在中间也不对——因为它不是空间中的一个物体。但说它不在也不对——它能知能觉，灵明不昧。真心超越空间方位，如虚空不可指陈。七处征心逼阿难回光返照：那个推寻"心在哪里"的，本身是什么？',
+    relatedBooks: ['lengyanjing']
+  },
+  {
+    id: 'faq-100',
+    question: '《维摩诘经》"心净则佛土净"——净土不在西方吗？',
+    answer: '维摩诘言"若菩萨欲得净土，当净其心；随其心净，则佛土净。"这不是否定西方净土的存在，而是指出净土的根本在心。心净时，所在之处即是净土；心染时，虽在极乐世界也如娑婆。舍利弗疑佛土不净——"我见此土山石瓦砾，荆棘沙砾。"佛以足指按地，大地顿现金色庄严。不是土变了，是舍利弗的心眼变了。所以净土不在东方西方，在净心。心净则十方皆是净土，心染则十方皆是秽土。',
+    relatedBooks: ['weimojiejing']
+  },
+  {
+    id: 'faq-101',
+    question: '《禅林宝训》为什么说"道在立品"？',
+    answer: '《禅林宝训》专讲禅僧的品行修养——道心、操守、住持、待人。它不谈玄妙，只说做人。因为禅宗虽标榜"直指人心"，但悟后不离日用——若人品不立，悟境再高也如空中楼阁。古德云"有德者必有言，有言者不必有德"——开口谈禅容易，落实在品行上难。禅林宝训将禅从"玄妙"拉回"做人"：你能不能于逆境中不动心？能不能于名利前不伸手？能不能于无人处不自欺？这些才是真实的禅。道在立品，品即是道。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-102',
+    question: '十牛图中"寻牛"和"见迹"有什么区别？',
+    answer: '"寻牛"是发心阶段——知道有心可觅，开始修行，但还不知道心是什么，茫茫然拨草追寻。"见迹"是初见方向——通过经教或师指，知道了修行路径，看到了心性的踪迹（如理解了"即心即佛"的道理），但还没有亲见。寻牛是不知道往哪走，见迹是知道方向但还没到。前者是发心，后者是解悟；前者是"我要修行"，后者是"我知道该怎么修"。但从见迹到真正见牛，还有很长的路要走。',
+    relatedBooks: ['shiniutu']
+  },
+  {
+    id: 'faq-103',
+    question: '十牛图中"得牛"之后为什么还要"牧牛"？',
+    answer: '"得牛"是初步见性——看到了牛（真心），但牛还没被驯服，野性犹存（习气还在）。"牧牛"是悟后保任——时时不离观照，鞭索在手，妄念起即觉，觉之即无。如刚捕获一头野牛，不时时看管就会跑掉。初悟之人最怕得而复失——悟境不稳固，遇到顺逆境界又随境转。所以牧牛阶段最为关键：不是再去找牛，是守住已得的牛，念念不放逸，直到牛完全驯服、人牛合一（骑牛归家），才算保任成熟。',
+    relatedBooks: ['shiniutu']
+  },
+  {
+    id: 'faq-104',
+    question: '"人牛俱忘"是什么境界？',
+    answer: '十牛图第八阶段"人牛俱忘"：不仅牛（所观之心）消失了，牧童（能观之我）也消失了——能所双泯，主客不二。这不是虚无，而是超越了一切二元对立的绝对境界。前七阶段还有"我"在修行、"心"在调伏，到第八阶段连修行的相也不可得。如《信心铭》云"一切不留，无可记忆"——不是什么都不知道，是心无所住、不着一切。此境界相当于禅宗"向上一路"，言语道断，心行处灭，唯证方知。',
+    relatedBooks: ['shiniutu', 'xinxinming']
+  },
+  {
+    id: 'faq-105',
+    question: '"返本还源"之后为什么还要"入廛垂手"？',
+    answer: '十牛图最后两阶段："返本还源"是回归本来清净——山还是山，水还是水，法本如是；"入廛垂手"是悟后入世——灰头土面，和光同尘，在市井中化导众生。禅宗不居正位——不是悟了就躲在深山享受清净，而是回到烦恼丛中度众生。如观音菩萨"以何身得度即现何身"——悟者无悟者相，混迹市廛，随缘度化。这正是大乘佛法的精神：上求佛道（返本还源），下化众生（入廛垂手）。',
+    relatedBooks: ['shiniutu']
+  },
+  {
+    id: 'faq-106',
+    question: '《宝镜三昧歌》"银盌盛雪，明月藏鹭"是什么意思？',
+    answer: '银碗盛着雪——银与雪同色难辨；明月映着白鹭——月与鹭浑然一体。洞山良价以此喻本体与现象的关系：本体（真心）与现象（万法）不是两个东西，但也不是完全混同——同中有异，异中有同。银碗是体，雪是用；月是体，鹭是用。体用交融而不混杂，这就是曹洞宗"回互"的核心义理。不可说是一（银雪同色），不可说是二（碗是碗雪是雪）；即一即二，即二即一——理事无碍，体用不二。',
+    relatedBooks: ['baojingsanmei']
+  },
+  {
+    id: 'faq-107',
+    question: '"汝不是渠，渠正是汝"——这话怎么理解？',
+    answer: '《宝镜三昧歌》云"如临宝镜，形影相睹。汝不是渠，渠正是汝。"宝镜喻自性，形影喻万法。"汝不是渠"——你不是镜中的影像，影像不是你本身（本体不是现象）。"渠正是汝"——但影像由你而生，不离你身（现象不离本体）。如人照镜：镜中影不是你（影是幻相），但影由你身而来（不离你身）。万法不是真心（法是缘起幻相），但万法不离真心（法是真心显现）。体用不二，即相离相。',
+    relatedBooks: ['baojingsanmei']
+  },
+  {
+    id: 'faq-108',
+    question: '洞山良价"偏正五位"是什么？',
+    answer: '曹洞宗核心教法"偏正五位"：偏（臣/事/用）与正（君/理/体）的五种组合。一、正中偏——理体中含事用。二、偏中正——事用中显理体。三、正中来——从体起用。四、偏中至——事用即理体。五、兼中到——体用交融，偏正不二。五位从不同角度说明本体与现象的关系，层层递进，最终归到"主中主"——超越一切对立的绝对境界。',
+    relatedBooks: ['baojingsanmei', 'dongshanyulu']
+  },
+  {
+    id: 'faq-109',
+    question: '洞山"三渗漏"是什么？',
+    answer: '洞山良价指出修行中的三种偏差：一、见渗漏——执着于位次高低、境界深浅，被知见所障。二、情渗漏——滞于向背取舍，被好恶情绪所障。三、语渗漏——执着言辞旨意，被文字所障。三种渗漏分别对应"知"、"情"、"言"三个层面的执着。修行者或执着于自己证到了什么位次，或执着于喜欢什么排斥什么，或执着于经文语句的含义——三者皆能"渗漏"真性，使修行偏离正道。',
+    relatedBooks: ['dongshanyulu']
+  },
+  {
+    id: 'faq-110',
+    question: '"潜行密用，如愚如鲁"——最高境界就是装傻？',
+    answer: '《宝镜三昧歌》结尾云"潜行密用，如愚如鲁，但能相续，名主中主。"这不是装傻，是真正的高境界。悟到极处的人，不显山不露水——没有悟者相、没有修行相、没有奇特相，看起来就像普通人一样。大智若愚，大巧若拙。潜行密用是内在的觉照绵绵密密、不曾间断，外在却平淡无奇。主中主是曹洞宗最高位：不涉宾主，不落正偏，只是一味平常，相续不断。',
+    relatedBooks: ['baojingsanmei']
+  },
+  {
+    id: 'faq-111',
+    question: '永嘉玄觉《永嘉禅宗集》和《证道歌》是什么关系？',
+    answer: '《永嘉禅宗集》是永嘉玄觉早期的著作，偏于教理分析，系统阐述禅修次第，从发心到见性到保任，层次分明。《证道歌》是永嘉见六祖后所作，偏于悟后自述，以歌行体直唱悟境，痛快淋漓。前者是"解"——从教入观；后者是"证"——从宗流出。一解一证，互为表里。《永嘉集》适合初学者建立见地，《证道歌》适合已悟者印证悟境。',
+    relatedBooks: ['yongjia', 'zhengdaoge']
+  },
+  {
+    id: 'faq-112',
+    question: '云门文偃"一字关"是什么？',
+    answer: '云门宗以"一字关"著称：学人问"如何是云门一曲？"云门答"参。"问"如何是祖师西来意？"答"日。"问"如何是禅？"答"是。"无论什么问题，云门常以一字作答。这一字不是答案，是截断——你的问题建立在思维分别上，我以一字截断你的思维流，逼你在言语道断处回光返照。一字关的妙处在于：字越少，越没有你着落的处所，越能逼你向上一路。',
+    relatedBooks: ['yunmen']
+  },
+  {
+    id: 'faq-113',
+    question: '云门"三句"是什么？',
+    answer: '云门宗三句：一、涵盖乾坤句——直指本体，涵盖一切。二、截断众流句——截断一切思维分别。三、随波逐浪句——随顺学人根器，善巧接引。三句分别对应体（涵盖）、用（截断）、相（随波），是云门接人的三种方便。第一句明理体，第二句破执着，第三句随缘度。三句不是固定的三句话，是三种教学风格——因病与药，对机而施。',
+    relatedBooks: ['yunmen']
+  },
+  {
+    id: 'faq-114',
+    question: '"日日是好日"是什么意思？',
+    answer: '云门文偃上堂云"十五日已前不问汝，十五日已后道将一句来。"众无对。云门自代云"日日是好日。"——这不是说每天天气都好、事事顺心，而是说悟者心中无好无坏、无吉无凶，日日皆是本来面目。凡夫分别日子好坏——顺心则好，不顺则坏；悟者不分别——晴也好雨也好，顺也安逆也安。日日是好日，是超越了好坏对立之后的平等心、平常心。',
+    relatedBooks: ['yunmen']
+  },
+  {
+    id: 'faq-115',
+    question: '禅宗五家有什么区别？',
+    answer: '五家宗旨同一——皆直指人心见性成佛，但接引风格各有特色。临济宗：棒喝峻烈，机锋峭拔，以"四料简"破执着。曹洞宗：绵密细致，以"偏正五位"明体用，回互不二。沩仰宗：师资默契，以圆相表法，理事圆融。云门宗：简捷明快，以"一字关"截断思量。法眼宗：温详细密，以"六相"明理事，善巧方便。五家如五条路同登一山顶——路虽不同，所到一处。',
+    relatedBooks: ['linji', 'dongshanyulu', 'yunmen']
+  },
+  {
+    id: 'faq-116',
+    question: '"看话头"和"默照禅"有什么区别？',
+    answer: '看话头是大慧宗杲所倡：取公案中一句无意味话头（如"无"字），时时提在心头起大疑情，疑到无路处爆破——重在"参"。默照禅是宏智正觉所倡：端坐默然，不参公案、不起疑情，只于沉默中观照本心——重在"照"。大慧批评默照禅容易落入"默照邪禅"——沉空滞寂、鬼窟里作活计。宏智则认为看话头太着力于疑情，有违无为。实则二法各有擅场：看话头适合妄想多、需要逼拶的人；默照禅适合心较细、能直接观照的人。法无高下，对机即好。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-117',
+    question: '禅宗讲"教外别传"是不是不要经教？',
+    answer: '"教外别传"不是不要经教，是在经教之外另传一心。达摩以《楞伽》印心，六祖因《金刚》开悟——祖师从未废经。但禅宗强调：经教是指月之指，不可认指为月；经教是渡河之筏，到岸须舍。教下从文字入理解，再依理解修观；宗门直指人心，以心传心，不经文字。但悟后看经，如自家屋里事——经中所说皆是自心注脚。所以"教外别传"不是反经教，是超越经教——不拘于文字，直探本源。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-118',
+    question: '"不立文字"为什么还有这么多语录？',
+    answer: '"不立"不是"不用"。禅宗标榜"不立文字"是破对文字的执着，不是废除经典。历代语录汗牛充栋——文字如指月之指，病在认指为月，不在指本身。故禅门以言遣言、以楔出楔，机锋转语皆是"活句"：不堕义解，直下截断思量。读经看教须作活句会，得意忘言，方不负佛祖。六祖虽不识字，但《坛经》所说皆从悟处流出；马祖、临济语录皆是对机之谈，非为立文字而说。',
+    relatedBooks: ['xuemaicong', 'shenhui']
+  },
+  {
+    id: 'faq-119',
+    question: '什么是"活句"和"死句"？',
+    answer: '活句是能截断思量、引人悟道的言句——如"麻三斤"、"干屎橛"，不着落在字面意思上，逼你向上一路。死句是落在义理分别中的言句——如解释"麻三斤"是什么意思，一解释就成了死句。禅门云"从门入者不是家珍"——从文字理解来的都是死句，从自心流出的是活句。学人看公案须作活句会——不去求解，只去参；一求解就成死句。师家接人须说活句——不对机解释，只对机截断。',
+    relatedBooks: ['linji', 'mazu']
+  },
+  {
+    id: 'faq-120',
+    question: '什么是"机锋"？',
+    answer: '机锋是禅师接引学人时，于电光石火间发出的言句或动作——或一喝、或一棒、或一句不相干的话、或一个动作——目的不是传递信息，而是截断学人的思维惯性，逼其在走投无路处瞥见本心。机锋的"机"指学人的根机、当下的心理状态；"锋"指禅师如利剑般锋利的回应。机锋须对机——对什么人说什么话，不对机则成戏论。机锋不是故弄玄虚，是师家以慧眼观机、以悲心施教的真实方便。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-121',
+    question: '什么是"转语"？',
+    answer: '转语是禅宗中改变学人思维方向的话——学人落在一边，师家以一句话令其转身。如学人执着"有"，师家说"无"破之；学人执着"无"，师家说"有"破之。转语的"转"是转身——从执着处转身，从思维死角处转身。如"如何是佛？"答"干屎橛"——你 expecting 一个庄严的答案，给你一个干屎橛，你的思维在此处"转"不过来，就在转不过来处，有可能瞥见本心。转语须活，不可死执。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-122',
+    question: '什么是"印心"？',
+    answer: '印心是禅师对学人悟境的印证——学人自述所见，师家以慧眼勘验，若悟境真实则予印可，若不真实则予遮止。印心不是传授什么，是确认你见到的就是。如达摩印慧可"我与汝安心竟"——不是给慧可安了心，是确认慧可"觅心了不可得"的见地真实。印心须有师承——自己印证自己不可靠，须过来人勘验方真。但印心也不在形式——六祖云"若识自本心，见自本性，即名丈夫天人师"，自悟自证，佛祖印可。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-123',
+    question: '什么是"保任"？悟后为什么还要保任？',
+    answer: '保任是悟后的功夫——保护悟境不失，任运自然不造作。初悟之人如初生婴儿——虽见自性但力量薄弱，遇到强境还可能随转。如十牛图中"得牛"之后须"牧牛"——时时看护，不令走失。保任不是再去找什么，是守住已见的。方法是不离当下——行住坐卧了了分明，妄起即觉，觉之即无。久而久之，打成一片，能保所保自然脱落，方为究竟。六祖云"迷时师度，悟了自度"——保任即是自度。',
+    relatedBooks: ['shiniutu', 'tanjing']
+  },
+  {
+    id: 'faq-124',
+    question: '什么是"参禅"？和"坐禅"有什么区别？',
+    answer: '坐禅是形式——端坐摄心，是禅修的基础。参禅是内容——以公案话头逼拶起疑，疑到无路处爆破，是禅宗的核心方法。坐禅可以不参禅（如默照禅），参禅可以不拘坐（行住坐卧皆可参）。六祖云"外离相即禅，内不乱即定"——禅不在坐相，在心地。但初学者非坐无以摄心，故坐禅是参禅的基础。到得行亦禅坐亦禅时，坐不坐皆是参，方为自在。',
+    relatedBooks: ['tanjing', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-125',
+    question: '什么是"疑情"？疑情怎么发起？',
+    answer: '疑情是参禅的核心动力——不是普通的怀疑，是对公案话头"到底如何"的深切追问。如参"无"字：狗子还有佛性也无？赵州云无。为什么说无？到底这个"无"是什么？——不是用思维去找答案，是把这个问题悬在心头，堵住一切思路。疑情发起的方法：取一个无意味的话头，不要找答案，只问"到底如何"——行住坐卧不离此疑。疑到成团成片，如话头横在胸中，吞吐不得——时节因缘到来，疑团爆破，即是大悟。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-126',
+    question: '"大疑大悟，小疑小悟，不疑不悟"——疑越多越好？',
+    answer: '此处的"疑"不是普通的怀疑，是参禅的疑情。大疑是疑情深切——整个身心投入话头，如撞铜墙铁壁，无路可走、无理可寻——这种逼拶到极处的疑，一旦爆破就是大悟。小疑是疑情轻浮——虽参话头但力量不够，时断时续——爆破时也只是小悟。不疑是不起疑情——或以理解代替参究，或根本不用功——则永无悟处。所以疑情越深切，悟境越彻底。但须知：疑不是目的，是手段——疑到极处自然不疑，不疑处即是悟。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-127',
+    question: '什么是"偷心"？',
+    answer: '偷心是禅宗对修行中微细偷懒、走捷径之心的称呼。参禅时，不愿在疑情上死磕，总想找个巧妙答案、找个理论解释、找个轻松法门——这些都是偷心。偷心不死，疑情不真；疑情不真，悟境不实。大慧宗杲痛斥偷心："参禅须是起疑情，疑来疑去，忽然如百丈冰消。若偷心不死，只在外面寻觅，终无了日。"对治偷心的方法：死尽偷心——不找答案、不求悟境、不贪轻安，只抱住话头不放，逼到无路可走，自然有转身处。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-128',
+    question: '什么是"轻安"？轻安是悟吗？',
+    answer: '轻安是修行中身体轻快、心情舒畅的状态——坐禅到一定程度，身体轻安如云、心无粗重，这是好现象，但不是悟。轻安是定力的副产品，不是般若的现前。很多人把轻安当悟境，以为"身心轻安、空空荡荡"就是见性——这是错认。真正的悟是般若现前——了了分明、能所双泯，不是一种舒服的感受。《楞严经》五十阴魔中，轻安快感正是魔障之一——执着轻安即入魔道。故修行中遇轻安：不拒不追，继续参究，方为正行。',
+    relatedBooks: ['lengyanjing', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-129',
+    question: '什么是"昏沉"和"掉举"？怎么对治？',
+    answer: '昏沉是心神昏暗、沉没无力——坐禅时打瞌睡、模模糊糊，心沉不起来了。掉举是心神飞扬、散乱不安——坐禅时妄念纷飞、心浮气躁，心定不下来。二者是参禅的两大障碍。对治昏沉：挺直腰背、睁开眼睛、提起话头、或经行拜佛。对治掉举：放松身体、放慢呼吸、专注话头、不随妄念跑。昏沉重者须提精力，掉举重者须放身心。二者交替出现时，须善调适中——不紧不松，如调琴弦，方入正行。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-130',
+    question: '什么是"执事废理"和"执理废事"？',
+    answer: '执事废理：只做形式上的修行——念佛、持咒、诵经、打坐——但不明白为什么要修、修的是什么，着在事相上。执理废事：只研究理论——谈空说有、讲禅论道——但不肯真实修行，落在口头禅上。二者皆偏。禅宗主张理事圆融：理须顿悟，事须渐修；悟理不废事修，事修不违理悟。如六祖"本来无一物"是理，"时时勤拂拭"是事——悟后保任，拂而无拂，方为中道。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-131',
+    question: '什么是"口头禅"？',
+    answer: '口头禅是说得出禅理但做不到的人——满嘴"即心即佛"、"本来无一物"、"烦恼即菩提"，但遇到境界就随境转，烦恼照旧。口头禅是大慧宗杲痛斥的"葛藤窟里作活计"——在别人的悟境上做文章，自己没有真实见地。对治口头禅的方法：真实参究——不要说别人的话，只参自己的疑情。你亲见自性后说出来的每一句话都是活句，否则说得再好也是死句。禅不在嘴上，在心地上。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-132',
+    question: '什么是"狂禅"？',
+    answer: '狂禅是错解禅宗"顿悟"、"无修"之旨，以为既然"本来是佛"就不用修行，既然"烦恼即菩提"就放纵烦恼，既然"不立文字"就废弃经教——拨无因果、放任自流。这是最危险的偏差。达摩说"理须顿悟，事须渐除"——悟理不废修行。六祖说"迷时师度，悟了自度"——悟后更须保任。百丈说"一日不作一日不食"——悟者不废劳作。真悟者不放纵——因为悟后自然不染，不是故意去染。以悟为借口而放逸，是假悟不是真悟。',
+    relatedBooks: ['tanjing', 'sixingguan']
+  },
+  {
+    id: 'faq-133',
+    question: '什么是"枯木禅"？',
+    answer: '枯木禅是只管打坐、心如死灰的修行——身体如枯木不动，心如寒潭不起，看似清净实则死寂。这是禅宗极力反对的偏差。马祖说"磨砖不能成镜"——枯坐不能成佛。六祖说"若只百物不思，念尽除却，一念绝即死，别处受生，是为大错。"枯木禅的病在"沉空滞寂"——落在空的一边，失去了灵明觉知。真正的禅是寂而常照、照而常寂——如镜体不动而能照物，不是如木石无知。',
+    relatedBooks: ['mazu', 'tanjing']
+  },
+  {
+    id: 'faq-134',
+    question: '什么是"野狐禅"？',
+    answer: '野狐禅典出百丈野狐公案：学人问"大修行人还落因果也无？"答"不落因果"——因一字之差，堕野狐身五百世。后百丈代答"不昧因果"，狐遂脱身。野狐禅引申为：错解佛法、拨无因果的修行——以为悟了就超越因果，可以不受果报。这是最危险的邪见。真悟者"不昧因果"——因果历然，了了分明，只是不被因果所瞒。以为"不落因果"可以逍遥法外，恰恰是野狐身之因。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-135',
+    question: '什么是"葛藤"？',
+    answer: '葛藤是禅宗对文字知解、理论分析的贬称——如葛藤缠绕，纠缠不清。学人问"如何是佛"，不在当下直指，却引经据典、分析义理——这就是葛藤。大慧宗杲常说"葛藤窟里作活计"——在文字理论中讨生活，终无出头之日。禅宗要人离却葛藤，直下承当——不在语言文字上转，在自心上悟。但师家接人有时也用葛藤——以言遣言，以楔出楔——但这是方便，不是究竟。会得言外之意，葛藤即是活句；会不得，活句也成葛藤。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-136',
+    question: '什么是"平常心"？马祖说的平常心和我们说的平常心一样吗？',
+    answer: '不一样。我们说的平常心是"普通人的心态"——充满造作、是非、取舍。马祖说的平常心是"无造作，无是非，无取舍，无断常，无凡无圣"——是悟后的任运自然。凡夫的平常是随业流转——吃饭时百种思量，睡觉时千般计较。悟者的平常是即相离相——饥来吃饭困来眠，于中不起第二念。看似相同，实则天壤之别。马祖的平常心是"道不用修，但莫染污"——不是修出来的，是本来如此，只须不染污。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-137',
+    question: '什么是"直指人心"？',
+    answer: '直指人心是禅宗的根本教法——不借经教、不立文字、不涉阶次，直接指向你当下的心。达摩来华，不携一卷经，只传一心：你那个能听、能看、能觉知的，就是佛心——不必外求。直指不是告诉你一个道理，是逼你回光返照——你问"如何是佛？"禅师不答道理，或答"干屎橛"、或便打、或便喝——截断你的思维，逼你看那个能问的。直指人心，见性成佛——这是禅宗八字的纲宗。',
+    relatedBooks: ['xuemaicong', 'mazu']
+  },
+  {
+    id: 'faq-138',
+    question: '"见性成佛"——见什么性？成什么佛？',
+    answer: '见的是自性——你当下能知能觉的那个，无形无相、不生不灭。不是见一个什么境界、得一个什么体验——是认取那个一直在的。成的是自性佛——不是成了三十二相的佛，是悟了自心本来是佛。六祖云"何期自性本自清净"——自性本来清净，你只是不知道；一旦知道，就是见性。见性不是得到什么，是发现本来有的。成佛不是变成什么，是回归本来是的。故云"但用此心，直了成佛"。',
+    relatedBooks: ['tanjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-139',
+    question: '什么是"向上一路"？',
+    answer: '向上一路是禅宗指超越一切语言思维、能所对立的究竟境界。一切可以言说、可以思维的都在"向下一路"——即二元对立的世界。向上一路是"言语道断，心行处灭"——不是语言能到、不是思维能及的。如人问"如何是向上一路？"赵州答"正恁么时作么生"——你当下能问的这个，就是向上一路的入口。但一落言诠，早已不是。向上一路须亲证，不可说、不可思，唯悟方知。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-140',
+    question: '什么是"末后句"？',
+    answer: '末后句是禅宗指最终究极的言句——超越一切阶次、截断一切思量的最后一着。临济云"山僧今日见处，作么生是末后句？"——不是有一个特别的句子，是悟到极处时，一切言句皆是末后句。末后句不是学来的，是悟后自然流出的。如"麻三斤"、"干屎橛"——在未悟者听来莫名其妙，在悟者则是末后句。末后句不可说——说出来的已经不是末后句了。它只在悟者的机用中显现，如电光石火，不可捉摸。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-141',
+    question: '什么是"一宿觉"？永嘉玄觉为什么只住了一夜？',
+    answer: '永嘉玄觉参访六祖，振锡绕床三匝而立，六祖勘验数番，玄觉对答如流，言下大悟。欲留一宿即归，故称"一宿觉"。只住一夜不是时间短——是悟得彻。永嘉来时已有所悟，经六祖一印即定，不须多留。其《证道歌》云"豁然得悟百千门，只在一时辰"——悟在刹那，不在久坐。一宿者，非时间长短，乃悟之彻也。若不悟，住十年亦无用；若真悟，一宿已足。',
+    relatedBooks: ['zhengdaoge', 'tanjing']
+  },
+  {
+    id: 'faq-142',
+    question: '什么是"壁观"？达摩面壁是在修什么？',
+    answer: '达摩面壁九年，不是在"发呆"或"逃避"，而是在修"壁观"——心如墙壁，外息诸缘，内心无喘。壁观是达摩禅的核心方法：心如墙壁般不动，不被一切外境所动——善恶美丑来了，心不随之转；内心无喘——妄念不起，如墙壁无隙。但壁观不是死寂——壁观的同时灵明觉知常在，寂照不二。达摩以壁观待可传之人，九年沉默本身即是身教：道在实证，不在多言。',
+    relatedBooks: ['xuemaicong', 'wuxinlun']
+  },
+  {
+    id: 'faq-143',
+    question: '"二入四行"是什么？理入和行入有什么区别？',
+    answer: '达摩《入道四行观》立二入四行：理入是理上的悟入——舍妄归真，凝住壁观，无自无他，凡圣等一，坚住不移，即与理冥符。行入是事上的行持——报冤行、随缘行、无所求行、称法行。理入是见地，行入是行持；理入是顿悟自性，行入是渐修日用。二者如鸟双翼，缺一不可。有理入无行入则成狂慧——说得好听做不来；有行入无理入则成盲修——苦行一生不见性。理入为体，行入为用，体用不二，方为达摩正禅。',
+    relatedBooks: ['sixingguan']
+  },
+  {
+    id: 'faq-144',
+    question: '什么是"一行三昧"？和"看话头"有什么不同？',
+    answer: '一行三昧出自《文殊说般若经》：法界一相，系缘法界，是名一行三昧。四祖道信以此教人念佛——念到能所双亡，心佛不二，即入一行三昧。看话头是大慧宗杲所倡：以公案话头起疑情，疑到无路处爆破。一行三昧重在"止"——心系一境，渐渐消融能所；看话头重在"参"——以疑破妄，逼到无路处转身。前者适合心较细、能直接安住的人；后者适合妄想多、需要逼拶的人。法门虽异，同归见性。',
+    relatedBooks: ['wenshu', 'anxin', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-145',
+    question: '什么是"法身边事"和"法身向上"？',
+    answer: '法身边事是初步见性——见到了法身（自性），但还住在法身边，执着于"我悟了"、"我见了"。法身向上是超越法身——不仅见性，连"见性"的相也不可得。如十牛图：得牛是法身边事，人牛俱忘是法身向上。临济云"山僧见处，佛法不用功，只是平常无事"——连悟也不立，方为法身向上。禅宗不许学人住在法身边——你悟了，还须超越悟；见了，还须超越见。向上一路，方为究竟。',
+    relatedBooks: ['linji', 'shiniutu']
+  },
+  {
+    id: 'faq-146',
+    question: '什么是"宾主"？临济四宾主是什么？',
+    answer: '宾主是禅宗对师徒关系的比喻：主是师家（有真实见地者），宾是学人（未悟或浅悟者）。临济四宾主：一、宾中主——学人中有真见地者，虽在宾位而有主之实。二、主中宾——师家虽居主位但见地不真，实是宾。三、宾中宾——师徒俱未悟，盲人瞎马。四、主中主——师徒俱悟，机用自在，师资道合。四宾主是临济勘验师徒真实见地的方法——不在位次高低，在见地真假。真正的主中主，是超越宾主的绝对境界。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-147',
+    question: '什么是"三玄三要"？',
+    answer: '临济宗三玄三要：每一句言语中须具三玄——体中玄、句中玄、玄中玄；每一玄中须具三要——不立言句、不落言句、不离言句。三玄三要是临济对"活句"的分析：一句中含三层意——表层（句中玄）、深层（体中玄）、超越层（玄中玄）；每层又有三个要点——不立、不落、不离。看似复杂，核心只在"说而不着"——说了但不落在说的相上。会得三玄三要，则一切言句皆是活句；会不得，则一切言句皆是死句。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-148',
+    question: '什么是"四照用"？',
+    answer: '临济四照用是接引学人的四种方法：一、先照后用——先观机，再施教。二、先用后照——先打一棒或喝一声，再观察学人反应。三、照用同时——棒喝与观机同时进行，如电光石火。四、照用不同时——或照或用，交替施设。照是慧眼观机，用是方便施教。四照用是临济根据学人不同状态，灵活运用棒喝的方法。核心在"对机"——不是固定套路，是观机施教、因病与药。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-149',
+    question: '什么是"五位君臣"？',
+    answer: '曹洞宗五位君臣是偏正五位的另一表述：君（正/理/体）、臣（偏/事/用）、君臣道合（兼中到/体用不二）。五位：一、君位——理体独尊，事用未显。二、臣位——事用偏行，理体隐没。三、君视臣——理体中含事用。四、臣向君——事用中显理体。五、君臣道合——理事圆融，体用不二。五位君臣以政治比喻说明修行中理与事、体与用的五种关系，层层递进，最终归到君臣道合——偏正回互、体用兼带的究竟境界。',
+    relatedBooks: ['baojingsanmei', 'dongshanyulu']
+  },
+  {
+    id: 'faq-150',
+    question: '什么是"圆相"？沩仰宗为什么用圆相表法？',
+    answer: '圆相是沩仰宗特有的表法方式——师家画一个圆圈，或于圆中写一字、画一相，以示学人。圆相表法界一相、圆满无缺。沩山灵祐与仰山慧寂之间常以圆相默契——沩山画一圆相，仰山便知师意，不须多言。圆相的妙处在于：不在言句中传递信息，在形相上直显理体。如人画圆，圆即圆满——不说一字，已表法界全相。但圆相也不可执——执圆相则成死相。会得圆相之意，圆相即是活句；会不得，圆相也只是葛藤。',
+    relatedBooks: ['dongshanyulu']
+  },
+  {
+    id: 'faq-151',
+    question: '什么是"法眼六相"？',
+    answer: '法眼宗依据《华严经》立六相：总相、别相、同相、异相、成相、坏相。六相说明一切法从六个角度观察：总（全体）、别（部分）、同（共性）、异（差异）、成（形成）、坏（消散）。六相互相圆融——总中有别，别中有总；同中有异，异中有同；成中有坏，坏中有成。法眼宗以六相明理事无碍、事事无碍的法界观。如一栋房子：房子是总，梁柱是别；同为木料是同，各有功用是异；建成是成， eventual朽坏是坏。六相圆融，方见法界实相。',
+    relatedBooks: ['yuanjuejing']
+  },
+  {
+    id: 'faq-152',
+    question: '什么是"话头"？怎么选话头？',
+    answer: '话头是参禅时提撕的公案语句——如"无"字、"谁"字、"万法归一，一归何处"等。话头的选择：一、须是无意味的——不能通过思维找到答案，否则成了知识问答。二、须是祖师公案中的——有传承、有勘验。三、须与学人根机相应——妄想多用"无"字斩断，疑情多用"谁"字逼拶。选定后不可频换——今日参"无"，明日参"谁"，终无入手处。只抱住一个话头死参，行住坐卧不离，疑情自然发起。话头是敲门砖——门开即弃，不可执着。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-153',
+    question: '《金刚经》"应无所住而生其心"——六祖为什么听到这句就悟了？',
+    answer: '六祖在客店听人诵《金刚经》，到"应无所住而生其心"处豁然大悟。这句话之所以能令六祖开悟，因为它一语道破了自性的体用：无所住是体——心不粘着任何境界；生其心是用——不是不生心，是生而无住。六祖悟后连叹五句"何期自性"：本自清净、本不生灭、本自具足、本无动摇、能生万法——前四句说"无所住"（体），末一句说"生其心"（用）。体用不二，正是自性本然。这句话是《金刚经》的眼目，也是禅宗印心之根本。',
+    relatedBooks: ['jingangjing', 'tanjing']
+  },
+  {
+    id: 'faq-154',
+    question: '《金刚经》"过去心不可得，现在心不可得，未来心不可得"——心为什么不可得？',
+    answer: '过去心已灭——你能找回来吗？未来心未生——你能预先得到吗？现在心不住——刚说"现在"已成过去。三心了不可得，说明心没有实体——它只是念念生灭的相续，如流水般不曾停留。你找心，找不到；不找，它一直在。不可得不是没有心，是心无实体可得。达摩教慧可"将心来与汝安"，慧可"觅心了不可得"——正是此意。了不可得处，即是安心处；不可得处，即是自性显处。',
+    relatedBooks: ['jingangjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-155',
+    question: '《金刚经》"所谓……即非……是名……"三段论是什么意思？',
+    answer: '如"所谓佛法，即非佛法，是名佛法"——先立一个名相（是佛法），再破它（即非佛法），再安立假名（是名佛法）。立是方便，破是般若，安立是中道。佛说一切法，为度一切心；若无一切心，何用一切法？所以"即非"不是否定存在，而是否定执着；"是名"不是肯定实有，而是随顺世间。三段论是般若中观的核心方法：先承认世俗谛的假名，再以胜义谛破其自性执，最后回到中道——不坏假名而达实相。',
+    relatedBooks: ['jingangjing']
+  },
+  {
+    id: 'faq-156',
+    question: '《心经》"无眼耳鼻舌身意"——六根都没有了吗？',
+    answer: '"无"不是不存在，是无自性。眼耳鼻舌身意六根都是因缘和合而有——眼根需色尘、光线、神经系统等条件才能起作用，没有独立自性。如《金刚经》"凡所有相，皆是虚妄"——六根是相，故无实自性。《心经》从"五蕴皆空"到"无眼耳鼻舌身意"到"无无明亦无无明尽"，层层破除对一切法的自性执着。不是否定六根的功能，是破对六根的执着——六根可用而不可执，即相离相，方是般若正观。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-157',
+    question: '《心经》"心无挂碍，无挂碍故无有恐怖"——怎么才能心无挂碍？',
+    answer: '挂碍是心粘着于境界——对顺境贪恋、对逆境恐惧、对未来忧虑、对过去悔恨。心有挂碍则有恐怖——怕失去、怕得不到、怕老病死。心无挂碍则无恐怖——不是不怕，是无所挂碍故无恐怖可生。怎么做到？《心经》说"依般若波罗蜜多故"——依般若智慧照见五蕴皆空，了知一切法无自性，则无可挂碍。如人知梦中事皆幻，梦中虽有苦乐，醒来何须挂碍？般若智慧就是"醒"——从无明大梦中醒来。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-158',
+    question: '《圆觉经》"一切众生本来成佛"——那为什么我们还是凡夫？',
+    answer: '"本来成佛"是从理体说——自性本具佛德，不欠不缺。是凡夫从事相说——无始无明遮蔽，不见自性。如太阳本来常明，被云遮住不见阳光——太阳没变，只是被遮。修行不是从凡夫修成佛，而是去除遮蔽、显发本有的佛性。如擦镜子——镜体本明，尘垢遮蔽，擦去尘垢光明自现。所以《圆觉经》说"知幻即离，离幻即觉"——不是修出一个觉，是幻离了觉自然现前。本来成佛是理，须修证方显是事；理可顿悟，事须渐除。',
+    relatedBooks: ['yuanjuejing']
+  },
+  {
+    id: 'faq-159',
+    question: '《楞严经》"五十阴魔"——修行中会有魔障吗？',
+    answer: '五十阴魔是《楞严经》详剖修行中五十种心理陷阱：色阴十种、受阴十种、想阴十种、行阴十种、识阴十种。每种都看似"成就"实是魔障——轻安快感、神通境界、空无感受、狂慧分别……佛说"不作圣心，名善境界；若作圣解，即受群邪"——任何特殊体验都不是目标，执着即入魔道。对现代人的启示：冥想中出现的光明、喜乐、顿悟感都不是究竟，不追不拒不执着，才是安全的修行态度。真悟者无奇特相——平常心是道。',
+    relatedBooks: ['lengyanjing']
+  },
+  {
+    id: 'faq-160',
+    question: '《楞严经》"反闻闻自性"——怎么反闻？',
+    answer: '观世音菩萨的修行方法：不是向外听声音，而是回光返照能听的那个。声音来了，你知道——那个"知道"是从哪里来的？不去追逐声音的内容，而是观照"能闻之性"。如听流水声——不分别水声大小好听不好听，只观照那个能听的。声音有生有灭，能闻之性不生不灭——声来即闻，声去闻性不灭。如此反闻，渐渐能所双泯，闻性与声尘合一，入"闻所闻尽"的境界。这是从耳根入手的参禅方法，也是《楞严经》推崇的圆通法门。',
+    relatedBooks: ['lengyanjing']
+  },
+  {
+    id: 'faq-161',
+    question: '《维摩诘经》"芥子纳须弥"——小芥子怎么能装下大须弥山？',
+    answer: '维摩诘示现芥子纳须弥，是就法界缘起说：一切法无有自性大小——大小是相对概念，不是绝对真实。须弥山无自性，芥子亦无自性；既无自性，大小不可得。如镜中小镜能照大山——镜不大山不小，镜中影即山即镜。又如一念心能含容三千大千世界——心无形无相，故能含一切。芥子纳须弥不是物理上的压缩，是般若空性下的法界实相：无自性故，小非小、大非大，一即一切，一切即一。',
+    relatedBooks: ['weimojiejing']
+  },
+  {
+    id: 'faq-162',
+    question: '《大乘起信论》"一心二门"是什么？',
+    answer: '《大乘起信论》立"一心二门"：心真如门——心之体，本来清净、不生不灭、平等一味；心生灭门——心之用，随缘起灭、有染有净、有凡有圣。一心二门不是有两个心，是同一心从体和用两个角度看。真如门是体，生灭门是用；体不离用，用不离体。如水与波：水是真如门（湿性不动），波是生灭门（随风起灭），水波不二。此说为禅宗"自性本觉"提供了理论依据：六祖"何期自性本自清净"即真如门，"何期自性能生万法"即生灭门。',
+    relatedBooks: ['dachengqixinlun', 'tanjing']
+  },
+  {
+    id: 'faq-163',
+    question: '《八识规矩颂》对参禅有什么帮助？',
+    answer: '玄奘大师的《八识规矩颂》精炼概括唯识八识：前六识是感官与思维，第七末那识恒审思量"我"——一切我执从此出，第八阿赖耶识含藏一切种子。禅宗"直指人心"所指的"心"，在唯识层面即转八识成四智：前五识成成所作智，第六识成妙观察智，第七识成平等性智，第八识成大圆镜智。参禅时明了心识运作，有助于辨别什么是妄想（六识分别）、什么是我执（七识恒审）、什么是本觉（八识转智）。但禅宗不拘于唯识分析——分析是方便，见性是究竟。',
+    relatedBooks: ['bashiguijusong']
+  },
+  {
+    id: 'faq-164',
+    question: '什么是"转识成智"？',
+    answer: '唯识宗说修行究竟即转八识成四智：一、前五识转为成所作智——感官不再追逐外境，而是利益众生。二、第六意识转为妙观察智——思维不再分别执着，而是善巧观察缘起。三、第七末那识转为平等性智——"我"执消除，自他平等。四、第八阿赖耶识转为大圆镜智——含藏一切种子的心体转为清净无染的大圆镜。转识成智不是消灭八识，是转变其功能——从染污到清净，从执着到觉照。禅宗"直指人心"即是直接在第八识（本觉）上转身。',
+    relatedBooks: ['bashiguijusong']
+  },
+  {
+    id: 'faq-165',
+    question: '什么是"如来藏"？和"自性"是同一个东西吗？',
+    answer: '如来藏是佛经中指众生本具的佛性——虽被烦恼包裹，但本来清净，如金在矿。禅宗的"自性"与如来藏体性一致，但表述角度不同：如来藏偏从"本具"说——你本来有，只是被遮蔽；自性偏从"直指"说——你当下的心就是。如来藏如矿中金，须炼去杂质方现；自性如水中月，拨开波纹即见。二者所指相同——都是那个不生不灭、本来清净的觉性。六祖"何期自性本自清净"即如来藏义，达摩"若见性即是佛"即如来藏的显发。',
+    relatedBooks: ['dachengqixinlun', 'tanjing']
+  },
+  {
+    id: 'faq-166',
+    question: '什么是"中道"？禅宗的中道和天台宗的中道一样吗？',
+    answer: '中道是超越二边——不落有、不落无，不落常、不落断。天台宗的中道是"空假中"三谛圆融——即空即假即中，从教理入。禅宗的中道是"即相离相"——于一切法不取不舍，从宗门入。天台以教理明中道，禅宗以直指显中道。但二者体性不二——都是般若中观的展开。六祖三十六对法"出没即离两边"即是禅宗中道的具体施设：你说有，我说无破之；你说无，我说有破之——不落任何一边，即是中道。',
+    relatedBooks: ['tanjing', 'jingangjing']
+  },
+  {
+    id: 'faq-167',
+    question: '什么是"缘起性空"？',
+    answer: '缘起性空是佛法的根本见地：一切法都是因缘和合而生（缘起），没有独立的自性（性空）。如花：需要种子、土壤、阳光、水分等条件才能生长——离开这些条件，花不可得。花没有独立于因缘之外的"自性"，故说"性空"。但花不是不存在——它作为因缘和合的显现而存在，故说"缘起"。缘起故性空，性空故缘起——二者不二。禅宗的"即相离相"即基于此：相是缘起（有），离相是性空（空），即相离相即缘起性空。',
+    relatedBooks: ['jingangjing', 'xinjing']
+  },
+  {
+    id: 'faq-168',
+    question: '什么是"涅槃"？涅槃是死了吗？',
+    answer: '涅槃不是死。涅槃是烦恼的止息——贪嗔痴永灭、生死执尽。有两种涅槃：有余涅槃——烦恼已尽但身体还在，如佛陀成道后说法四十九年；无余涅槃——身体也舍报，五蕴全灭。禅宗说的涅槃更偏向"当下涅槃"——心不随境转、不起烦恼，当下即是涅槃。六祖云"前念着境即烦恼，后念离境即菩提"——烦恼与菩提只在一念间，离境即涅槃。涅槃不在死后，在当下心不染着。如《维摩诘经》"不舍生死而证涅槃"——不离世间即涅槃。',
+    relatedBooks: ['tanjing', 'weimojiejing']
+  },
+  {
+    id: 'faq-169',
+    question: '什么是"般若"？和智慧有什么区别？',
+    answer: '般若（Prajna）是佛法特指的智慧，不同于世间的聪明才智。世间智慧是分别心——善于分析、判断、创造，但仍在二元对立中。般若是无分别的觉照——直见万法空性，超越能所、主客。般若有三种：文字般若（理解经教）、观照般若（依教修观）、实相般若（亲证空性）。禅宗所说是实相般若——不从文字来，从自性流出。六祖闻"应无所住而生其心"豁然大悟，即般若现前。般若不是学来的，是自性本具——但须因缘触发方能显发。',
+    relatedBooks: ['jingangjing', 'tanjing']
+  },
+  {
+    id: 'faq-170',
+    question: '什么是"波罗蜜"？',
+    answer: '波罗蜜（Paramita）意为"到彼岸"——从烦恼的此岸到觉悟的彼岸。六波罗蜜：布施、持戒、忍辱、精进、禅定、般若——六种到彼岸的方法。禅宗强调"般若波罗蜜"——以般若智慧到彼岸。但禅宗进一步指出：彼岸不在彼岸——心迷即此岸，心悟即彼岸；烦恼即此岸，菩提即彼岸。如《心经》"般若波罗蜜多"——以般若智慧到彼岸，到后发现此岸即彼岸，本来不曾离开。所以波罗蜜不是从A到B的旅行，是心从迷到悟的转身。',
+    relatedBooks: ['xinjing', 'jingangjing']
+  },
+  {
+    id: 'faq-171',
+    question: '什么是"菩提心"？禅宗怎么发菩提心？',
+    answer: '菩提心是上求佛道、下化众生的心。通途教法发菩提心有仪轨：对佛前发愿"众生无边誓愿度"等四弘誓愿。禅宗发菩提心更直截——识自本心即是菩提心。六祖云"自心众生无边誓愿度，自心烦恼无边誓愿断"——一切归于自心。度众生先度自心众生——每一个妄念就是一个众生，妄念息灭即是度众生。成佛道先见自性佛——自性本来是佛，不假外求。禅宗的菩提心是"无相菩提心"——不执着度众生的相、不执着成佛的相，而自然任运度生。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-172',
+    question: '什么是"善知识"？怎么辨别真善知识？',
+    answer: '善知识是能引导你修行的过来人——有正见、有实证、能观机施教。辨别真善知识：一、不以名利为务——不贪供养、不慕虚荣。二、不标新立异——所说与佛祖经教相符，不违正理。三、不弄玄虚——不以神通境界惑人，以平常心教人。四、能对病施药——不是千篇一律的教条，能针对你的问题给药。五、自己有真实见地——不以解代证，不以口头禅为实悟。临济云"切要求取真正见解，免被一般精魅狐鬼惑乱"——辨别善知识须自己有正见。',
+    relatedBooks: ['linji', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-173',
+    question: '没有师父可以自己参禅吗？',
+    answer: '可以参，但悟后须善知识印证。自己参禅：取一公案话头，如"无"字，行住坐卧提撕不放过，疑情自然发起。经典如《六祖坛经》《信心铭》等是最好的"文字善知识"。但须注意：一、不可把理解当悟境——读经理解不等于亲证。二、不可把轻安当见性——身心轻快不等于般若现前。三、若有特殊境界，不可执着——《楞严经》五十阴魔即是警示。若真有悟处，须寻善知识印证——自己印证自己不可靠，须过来人勘验方真。六祖云"迷时师度，悟了自度"——迷时须师，悟后自度。',
+    relatedBooks: ['tanjing', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-174',
+    question: '现代人工作忙碌，怎么抽时间参禅？',
+    answer: '禅不在形式，在心地。忙碌中参禅：一、早晚各坐15-30分钟——先摄心，再提话头。二、工作中保持觉照——做事时了了分明，不随妄念跑，这就是"行亦禅"。三、通勤时提话头——走路、坐车时默默参究，不浪费时间。四、逆境中用功——烦恼来时正好参"烦恼的是谁？"——逆境是参禅的最好助缘。五、睡前醒后——睡前静坐片刻，醒来先提话头。马祖云"道不用修，但莫染污"——不是要你专门抽时间修，是在日用中不染污。忙不是障碍，心随境转才是障碍。',
+    relatedBooks: ['mazu', 'zhengdaoge']
+  },
+  {
+    id: 'faq-175',
+    question: '参禅可以治心理疾病吗？',
+    answer: '参禅不是心理治疗，但对心理健康有积极作用。参禅培养的觉照力——观察自己的念头而不随转——与正念疗法原理相通。参禅的"无住"——不执着境界——有助于减少焦虑和抑郁。但须注意：一、严重的心理疾病（抑郁症、焦虑症等）须先寻求专业治疗，不可只靠参禅。二、参禅中可能触发深层心理问题——须有善知识指导。三、不可把参禅当药——参禅的目的是见性，不是治病；治病是副产品，不是主产品。四、禅修中的某些境界可能加重心理问题——如《楞严经》五十阴魔所警示。',
+    relatedBooks: ['lengyanjing', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-176',
+    question: '女性可以参禅吗？禅宗有女性祖师吗？',
+    answer: '当然可以。佛性没有男女相——六祖云"人虽有南北，佛性本无南北"，同样"人虽有男女，佛性本无男女"。禅宗史上有众多女性成就者：末山尼——灌溪和尚去参，末山问"你是何人？"灌溪答"凡夫。"末山曰"何不超越？"灌溪无语。灌溪后来对人说"我在末山尼处折腰。"又如总印尼、妙总尼等，皆为禅宗史上杰出女性。禅宗从不以性别设限——只看你见不见性，不看你是男是女。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-177',
+    question: '在家居士可以参禅悟道吗？',
+    answer: '可以。维摩诘是在家菩萨，其智慧超过声闻乘弟子。庞蕴居士一家四人皆悟道——庞蕴、庞婆、庞灵照、庞大郎。六祖惠能在家人时已悟道——闻《金刚经》即开悟。禅宗从不以出家在家设限——只看你见不见性。在家参禅的优势：在烦恼中修行，逆境多、对境强，反而更容易发起疑情。劣势：俗务多、干扰多，定力不易培养。但如能于日用中保持觉照，在烦恼中参究，则在家修行与出家无异——禅在心地，不在身份。',
+    relatedBooks: ['tanjing', 'weimojiejing']
+  },
+  {
+    id: 'faq-178',
+    question: '参禅和打坐是什么关系？不打坐可以参禅吗？',
+    answer: '打坐是参禅的基础——初学者非坐无以摄心。但参禅不限于打坐——行住坐卧皆可参。六祖云"外离相即禅，内不乱即定"——禅在心地不在坐相。马祖"磨砖作镜"公案破的就是执坐为佛。但初学者不可以此为借口不打坐——连坐都坐不住，何况在动中参？正确次第：先从打坐入手，培养定力；定力渐深后，将参究延伸到日常；最终行亦禅坐亦禅，不拘形式。十牛图中牧牛不限于坐——鞭索时时不离身，行住坐卧都在牧牛。',
+    relatedBooks: ['tanjing', 'mazu', 'shiniutu']
+  },
+  {
+    id: 'faq-179',
+    question: '什么是"禅定"？禅和定有什么区别？',
+    answer: '禅是梵语Dhyana（禅那）的略称，意为静虑——静中思虑修。定是梵语Samadhi（三昧）的意译，意为心一境性——心专注一境不散乱。禅偏于观——静中观照；定偏于止——心不散乱。禅定合说是止观双运——既有定的不动，又有禅的觉照。六祖重新定义禅定："外离相即禅，内不乱即定"——不在形式上的打坐，在心地上的离相不乱。所以禅宗的禅定是活禅定——行住坐卧皆不离定，语默动静皆是禅。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-180',
+    question: '什么是"戒定慧"三学？禅宗怎么持戒？',
+    answer: '戒定慧是佛法的基本修学次第：由戒生定，由定发慧。戒是防非止恶，定是摄心不乱，慧是照见实相。禅宗虽标榜"直指人心"，但不废戒律——百丈立清规即是禅宗的戒。禅宗持戒的特点：不从形式上持，从心地上持。达摩《破相论》云"心不起恶为戒，心不染着为定，心了了常明为慧"——三学归于一心。六祖"无相忏悔"和"自性三归依"即是将戒定慧归于自性。禅宗不是不持戒，是以心戒为根本——心若清净，一切戒自然具足。',
+    relatedBooks: ['poxianglun', 'tanjing']
+  },
+  {
+    id: 'faq-181',
+    question: '什么是"四弘誓愿"？禅宗怎么发四弘誓愿？',
+    answer: '四弘誓愿：众生无边誓愿度，烦恼无尽誓愿断，法门无量誓愿学，佛道无上誓愿成。通途教法是对佛前发愿。六祖重新诠释："自心众生无边誓愿度，自心烦恼无边誓愿断，自性法门无量誓愿学，自性佛道无上誓愿成。"——一切归于自心自性。度众生先度自心妄念——妄念即众生，妄念息即度众生。断烦恼即断自心执着。学法门即悟自性本具无量法门。成佛道即证自性本来是佛。禅宗的四弘誓愿是"无相发愿"——不向外求，向内悟。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-182',
+    question: '什么是"三宝"？禅宗怎么归依三宝？',
+    answer: '三宝是佛、法、僧。通途归依是归依外在的佛像、经书、僧团。六祖立"自性三归依"："归依觉，两足尊——自心觉悟即是归依佛。归依正，离欲尊——自心正念即是归依法。归依净，众中尊——自心清净即是归依僧。"——三宝不在外，在自性。外在三宝是方便——借佛像启发自性觉，借经书启发自性正，借僧团启发自性净。但不可执外在三宝为实——真正的三宝是自性觉正净。归依自性三宝，方是真归依。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-183',
+    question: '什么是"因果"？悟了还受因果吗？',
+    answer: '因果是宇宙的根本法则——如是因，如是果，丝毫不爽。百丈野狐公案：答"不落因果"堕野狐身，答"不昧因果"脱野狐身。悟了不是不受因果，是"不昧因果"——因果历然，了了分明，只是不被因果所瞒。悟者照样吃饭睡觉、生老病死——这是因果；但悟者于因果中不染不着——这是不昧。以为悟了就超越因果，是野狐禅。真正的悟者比迷者更尊重因果——因为他清楚地看到因果的运作。故古德云"大修行人不如小因果"——越悟越谨慎。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-184',
+    question: '什么是"福德"和"功德"？做善事是福德还是功德？',
+    answer: '福德是事相上的善行——布施、持戒、造寺、度僧，感得人天福报，是有漏的。功德是心性上的证悟——见性平等、心不染着，是无漏的。梁武帝造寺度僧无数，达摩说"无功德"——因为着相修行。但做善事可以是福德也可以是功德：着相做善事是福德——做了记在心里，求回报、求福报；离相做善事是功德——做了即放下，不记、不求、不着。六祖云"功德在法身中，不在修福"——心若清净，一切善行皆是功德；心若染着，修万种善法也只是福德。',
+    relatedBooks: ['tanjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-185',
+    question: '什么是"回向"？禅宗怎么回向？',
+    answer: '回向是将修行功德回转趋向——或回向众生，或回向佛道，或回向净土。通途教法有明确的回向文。禅宗的回向是"无相回向"——不执着回向的相。六祖云"自性众生无边誓愿度"——一切修行归于自性，自性清净即是最大回向。禅宗不废回向，但不拘形式——悟后一切善行自然回向法界众生，因为悟者不见自他分别。如《金刚经》"灭度一切众生已，而无有一众生实灭度者"——度了即放下，不立能度所度之相，这就是无相回向。',
+    relatedBooks: ['tanjing', 'jingangjing']
+  },
+  {
+    id: 'faq-186',
+    question: '什么是"方便"？禅宗的方便和教下的方便有什么不同？',
+    answer: '方便是度人的善巧方法——根据众生不同根器，以不同的方式引导。教下的方便是经教——依经论次第，从文字入理解，再依理解修观。禅宗的方便是直指——或棒或喝、或言或默、或举杖或竖拂，不借文字，直指人心。教下方便如说明书，禅宗方便如电击——前者循序渐进，后者直截了当。但禅宗方便须有师承眼目——不是谁都能用棒喝接人，须自己有真实悟境，方能观机施教。否则，东施效颦，反成戏论。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-187',
+    question: '什么是"宗门"和"教下"？',
+    answer: '宗门指禅宗——以心传心，教外别传，不依经教次第，直指人心。教下指依经教修行的宗派——天台、华严、唯识等，依经论建立理论体系，从理解入观行。宗门如宗门直接入——不看说明书直接操作；教下如先看说明书再操作。但二者不是对立的——宗门悟后看经教，如自家屋里事，经中所说皆是自心注脚；教下修到深处，也须超越文字，亲证实相。六祖虽不识字，但所说《坛经》与经教完全相符——宗门教下，殊途同归。',
+    relatedBooks: ['tanjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-188',
+    question: '什么是"顿悟"和"渐修"？一定要先顿悟吗？',
+    answer: '顿悟是刹那间契悟自性——理可顿悟。渐修是渐渐磨除习气——事须渐除。不一定先顿悟——根机不同，路径不同。上根利智如六祖，闻经即悟，悟后保任。中下根器如神秀，先渐修摄心，修到时节因缘到来，自然有悟。普照知讷立"顿悟渐修"——先悟理体，后除事习。但也有"渐修顿悟"——先渐修积聚资粮，因缘到时豁然顿悟。无论顿渐，最终同归见性。顿不是跳过修行，渐不是不见性——顿渐是路径不同，见性是共同目标。',
+    relatedBooks: ['tanjing', 'xiuxinjue']
+  },
+  {
+    id: 'faq-189',
+    question: '什么是"根机"？我怎么知道自己是什么根机？',
+    answer: '根机是众生的修行资质——上根利智一闻即悟，中根须渐修渐悟，下根须久修方入。判断自己的根机：一、看信心的深浅——上根闻即信受不疑，中根半信半疑，下根多疑多障。二、看放下的快慢——上根一放即放，中根慢慢放，下根放不下。三、看疑情的生起——上根提话头即起疑，中根须久参方起，下根始终不起疑。但根机不是固定的——通过修行可以提升。六祖虽是樵夫，但根机大利；很多出家人修行数十年，未必比六祖悟得快。根机在心不在身份。',
+    relatedBooks: ['tanjing', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-190',
+    question: '什么是"业障"？业障可以消除吗？',
+    answer: '业障是过去恶业造成的修行障碍——或身体多病、或环境恶劣、或心生烦恼、或遇不到善知识。业障可以消除：一、忏悔——真心悔过，后不复造。二、修行——以定慧力消业力，如日光消暗。三、看破——了知业障本空，如《圆觉经》"知幻即离"。六祖"无相忏悔"——忏从前恶业，归于自性清净。真正的消业不是做形式上的仪式，是从心地上下功夫——心若清净，业障自然消融。如冰雪遇日，不须刻意消除，自然化尽。',
+    relatedBooks: ['tanjing', 'yuanjuejing']
+  },
+  {
+    id: 'faq-191',
+    question: '什么是"着相"？修行中容易着哪些相？',
+    answer: '着相是心执着于境界——把幻相当真实。修行中容易着的相：一、着修行相——执着打坐时间长短、功夫深浅。二、着境界相——执着光明、轻安、空寂等体验。三、着悟境相——执着"我悟了"，把悟境当成一个东西。四、着功德相——执着做了多少善事、修了多少法门。五、着佛相——执着心外有佛可求。六祖云"外离相即禅"——禅的本质是离相。但离相不是否定一切——是即相离相，如镜照物而不染。着相修行如蒸沙作饭，纵经百劫终不可得。',
+    relatedBooks: ['tanjing', 'jingangjing']
+  },
+  {
+    id: 'faq-192',
+    question: '什么是"无明"？无明从哪里来？',
+    answer: '无明是不觉——对自性的无知。无明从哪里来？《楞严经》云"知见立知，即无明本"——在本来清净的觉性上，起了一念"知见"（分别心），这就是无明的源头。如虚空本无一物，忽起一云——云从哪里来？从虚空中来。无明从真性中来，但真性本身不含无明——无明是妄，真性是真；妄不离真，但真不含妄。如镜含影，影不离镜，但镜不是影。无明本空——如梦中事，醒来方知本无。故《圆觉经》云"知幻即离，离幻即觉"——知道无明是幻，无明即消。',
+    relatedBooks: ['lengyanjing', 'yuanjuejing']
+  },
+  {
+    id: 'faq-193',
+    question: '什么是"烦恼即菩提"？',
+    answer: '"烦恼即菩提"是说不二——烦恼的本性即是空，空处即是菩提。不是"烦恼就是菩提所以不用管"，而是"于烦恼起处当下照破，烦恼即转为菩提"。永嘉《证道歌》云"无明实性即佛性，幻化空身即法身"——是就体性说不二，不是就事相说混滥。水与波：波是水形成的，波即是水；但波不是水的全部。烦恼是真心起用时的妄动，烦恼的实性就是真心。于烦恼不起分别、不生厌离，当下照破，烦恼即菩提。执之者以烦恼为不妨而放逸，是错会祖意。',
+    relatedBooks: ['zhengdaoge', 'tanjing']
+  },
+  {
+    id: 'faq-194',
+    question: '什么是"生死即涅槃"？',
+    answer: '"生死即涅槃"是就体性说：生死本是因缘和合的幻相，无有自性——当下了悟生死本空，生死即是涅槃。不是"在生死中受苦就是涅槃"，是"于生死中不执着生死，当下即是涅槃"。如《维摩诘经》"不舍生死而证涅槃"——不离生死另求涅槃，因为生死本空，涅槃本具。迷时生死是生死、涅槃是涅槃（对立）；悟时生死即涅槃（不二）。如水与波：波是水，水是波——迷者见波不见水，悟者见波即见水。',
+    relatedBooks: ['weimojiejing', 'tanjing']
+  },
+  {
+    id: 'faq-195',
+    question: '什么是"色心不二"？',
+    answer: '色是物质现象，心是精神活动。色心不二指物质与精神不是两个独立的实体——都是同一真心的显现。如《心经》"色不异空，空不异色"——色（物质）与空（心性）不二。又如《华严经》"心如工画师，能画诸世间"——物质世界是心识的显现。禅宗进一步说：山河大地皆是自性的显现，色与心同一体性。悟者见色即是见心，见心即是见色——如镜与影，镜是体（心），影是用（色），镜影不二。故云"青青翠竹尽是法身，郁郁黄花无非般若"。',
+    relatedBooks: ['xinjing', 'juelin']
+  },
+  {
+    id: 'faq-196',
+    question: '什么是"理事无碍"？',
+    answer: '理是本体——真如空性。事是现象——万法差别。理事无碍指本体与现象互相含摄：理不离事——空性不在别处，就在一切现象中；事不离理——一切现象当体即空。如水与波：水（理）不离波（事），波（事）不离水（理）。华严宗立四法界：事法界、理法界、理事无碍法界、事事无碍法界。禅宗的"即相离相"即是理事无碍——即事相（不离现象）而离事相（不执着现象），即理体（安住空性）而离理体（不执着空性）。理事无碍是菩萨的境界，事事无碍是佛的境界。',
+    relatedBooks: ['yuanjuejing', 'jingangjing']
+  },
+  {
+    id: 'faq-197',
+    question: '什么是"事事无碍"？',
+    answer: '事事无碍是华严宗四法界的最高境界——不仅理与事无碍，事与事也互相无碍。一即一切，一切即一；小能容大，大能入小；一念含三世，一尘见法界。如《维摩诘经》"芥子纳须弥"——小芥子能容大须弥山。事事无碍的原理：一切法无自性，故一法即一切法，一切法即一法。禅宗的"一花一世界，一叶一菩提"即是事事无碍的境界。悟者见一花即见法界全相——因为法界不离自性，自性不离一花。此境界唯佛果位方能究竟，菩萨分证。',
+    relatedBooks: ['weimojiejing', 'yuanjuejing']
+  },
+  {
+    id: 'faq-198',
+    question: '什么是"法界"？',
+    answer: '法界是佛教对宇宙全体的称呼——一切法的总汇。法界有十界：佛、菩萨、缘觉、声闻（四圣）加天、人、阿修罗、畜生、饿鬼、地狱（六凡）。每一界都含摄其他九界——一界即十界，十界即一界。禅宗说的法界更彻底——法界即是自性。六祖云"何期自性能生万法"——万法（法界）从自性生。一行三昧"法界一相，系缘法界"——法界一相即自性一相。悟者不见法界外有自性，不见自性外有法界——自性即法界，法界即自性。',
+    relatedBooks: ['tanjing', 'wenshu']
+  },
+  {
+    id: 'faq-199',
+    question: '什么是"实相"？',
+    answer: '实相是一切法的真实相貌——不是我们概念中的相貌，是离却一切概念分别后的本来面目。实相无相——没有固定的形相可以指陈；实相无不相——又不妨碍一切相的显现。如《金刚经》"凡所有相，皆是虚妄。若见诸相非相，即见如来"——见诸相非相（见实相）即见如来。禅宗说明心见性，所见的就是实相。实相不可说——说出来的已是概念，不是实相本身。如人饮水冷暖自知——实相须亲证，不可说、不可思，唯悟方知。',
+    relatedBooks: ['jingangjing', 'tanjing']
+  },
+  {
+    id: 'faq-200',
+    question: '什么是"真如"？',
+    answer: '真如是诸法的真实本性——"真"即不妄，"如"即不变。真如不在别处，就是当下一切法的空性。如水与波：波有生灭变化，水的湿性不变——湿性即真如。真如不是有一个东西叫真如，是一切法当体即空——空性即真如。《大乘起信论》立"心真如门"——心体本来清净，不生不灭，即是真如。禅宗"直指人心"所指的就是真如——你当下能知能觉的，不生不灭、不来不去的，就是真如。真如不可作对象来认识——它就是能认识的本身。',
+    relatedBooks: ['dachengqixinlun', 'huangbo']
+  },
+  {
+    id: 'faq-201',
+    question: '什么是"佛性"？众生都有佛性吗？',
+    answer: '佛性是成佛的可能性——众生本具的觉性。一切众生都有佛性，这是大乘佛法的根本见地。如《涅槃经》云"一切众生悉有佛性"。六祖云"何期自性本自清净"——自性（佛性）本来清净，不欠不缺。佛性不是修出来的——修只是去除遮蔽，佛性自然显现。如矿中金——金本来在矿中，炼去杂质金自现。但"有佛性"不等于"是佛"——有佛性是理，成佛是事。理可顿悟——知有佛性；事须渐修——显发佛性。悟佛性、显佛性、成佛，是三个阶段。',
+    relatedBooks: ['tanjing', 'xuemaicong']
+  },
+  {
+    id: 'faq-202',
+    question: '什么是"法身"？法身和色身有什么区别？',
+    answer: '法身是佛的真身——以法性为身，无形无相、不生不灭、遍满法界。色身是佛的应化之身——有形有相、有生有灭，如释迦牟尼佛的肉身。法身是体，色身是用；法身是理，色身是事。禅宗"见性成佛"所见的是法身——无形无相的觉性。六祖云"清净法身，汝之性也；圆满报身，汝之智也；千百亿化身，汝之行也"——三身皆归于自性。法身不在色身之外——色身是法身的显现，法身是色身的本性。悟者见色身即见法身，如见波即见水。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-203',
+    question: '什么是"报身"和"化身"？',
+    answer: '三身佛中的报身是智慧功德所成之身——圆满报身，享受法乐。化身是应众生机缘而化现之身——千百亿化身，随类化导。六祖云"清净法身，汝之性也；圆满报身，汝之智也；千百亿化身，汝之行也"——三身皆归于自性。法身是体——自性本来清净。报身是智——自性本具智慧光明。化身是行——自性起用利益众生。三身不是佛独有的，每个众生本具三身——只是迷而不觉。悟者三身圆显：法身安住不动，报身智慧明了，化身随缘度生。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-204',
+    question: '什么是"心、佛、众生三无差别"？',
+    answer: '《华严经》云"心、佛及众生，是三无差别"——心、佛、众生体性同一。心是迷时的佛，佛是悟时的心，众生是心佛之间的过渡。如水：冰是众生，水是佛，冰水同体——冰融即水，水冻即冰。差别只在迷悟，体性不曾差别。六祖云"前念迷即凡夫，后念悟即佛"——迷悟只在一念。所以禅宗不轻众生——众生即未来佛；不崇佛相——佛即本心。三无差别是禅宗"直指人心"的理论基础：你当下这心，与佛无二无别。',
+    relatedBooks: ['tanjing', 'juelin']
+  },
+  {
+    id: 'faq-205',
+    question: '什么是"一念三千"？',
+    answer: '天台宗智顗大师立"一念三千"：一念心中具足十法界（佛、菩萨、缘觉、声闻、天、人、阿修罗、畜生、饿鬼、地狱），每界又具十界，成百界；每界具十如是，成千如；百界千如乘以三世间（五阴世间、众生世间、国土世间），成三千。一念心即含三千法界——不是一念生出三千，是一念本具三千。禅宗虽不用此分析框架，但义理相通：六祖"何期自性能生万法"——万法从自性生，一念心即万法之源。一念迷即三千迷境，一念悟即三千悟境。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-206',
+    question: '什么是"唯心净土"？净土在哪里？',
+    answer: '唯心净土是禅宗对净土的根本见地：净土不在心外，心净即是净土。《维摩诘经》云"欲得净土，当净其心；随其心净，则佛土净。"六祖云"迷人念佛求生于彼，悟人自净其心……但心清净，即是自性西方。"不是否定西方净土的存在，是指出净土的根本在心。心染时，虽在极乐也如娑婆；心净时，虽在娑婆即是极乐。如人戴墨镜——世界皆暗，摘去墨镜——世界皆明。净土不是地理位置，是心的清净状态。',
+    relatedBooks: ['tanjing', 'weimojiejing']
+  },
+  {
+    id: 'faq-207',
+    question: '什么是"自性弥陀"？',
+    answer: '自性弥陀是禅宗对阿弥陀佛的重新诠释：阿弥陀佛不在西方十万亿佛土之外，就是你的自性。六祖云"自性若悟，众生是佛；自性若迷，佛是众生"——弥陀不在外，在自性。念阿弥陀佛就是念自性佛——一声佛号唤醒自性觉。四祖道信"念佛心是佛"即此义：念佛念到能所双亡，亲见自性弥陀。但禅宗不否定西方弥陀——弥陀是自性的化现，自性是弥陀的本体。事相上求生西方，理体上即心即佛——事理不二，方为圆融。',
+    relatedBooks: ['tanjing', 'anxin']
+  },
+  {
+    id: 'faq-208',
+    question: '禅宗和密宗有什么异同？',
+    answer: '同：都直指本觉——禅宗指"自性"，密宗指"无染觉性"，体性一致。都重视传承——禅宗以心传心，密宗以灌顶传法。都不拘文字——禅宗"不立文字"，密宗重视口耳相传。异：禅宗以直指为主——直下承当，不借仪轨；密宗以方便为主——借灌顶、曼陀罗、咒语等方便渐入。禅宗偏于"理悟"——先悟理体，后渐修事习；密宗偏于"事修"——借事相方便渐证理体。莲花生大士的"无染觉性"与六祖的"自性"完全一致，故禅密可以互参。',
+    relatedBooks: ['wuran', 'tanjing']
+  },
+  {
+    id: 'faq-209',
+    question: '禅宗和华严宗有什么关系？',
+    answer: '华严宗以《华严经》为根本，立四法界、十玄门、六相圆融等教理。禅宗虽"不立文字"，但义理与华严相通：禅宗"事事无碍"的境界与华严"事事无碍法界"一致；禅宗"一花一世界"与华严"一即一切"相通。法眼宗依据华严六相明理事圆融，是禅教融合的典范。觉林菩萨偈"一切唯心造"被置于《华严经》之首，也是禅宗"万法唯心"的根据。禅宗教外别传，华严依教明理——路径不同，所证法界实相不二。',
+    relatedBooks: ['juelin', 'yuanjuejing']
+  },
+  {
+    id: 'faq-210',
+    question: '禅宗和天台宗有什么关系？',
+    answer: '天台宗以《法华经》为根本，立一心三观、三谛圆融等教理。禅宗的"即相离相"与天台"空假中三谛圆融"义理相通：离相即空谛，即相即假谛，即离不二即中谛。天台宗智者大师虽立教理体系，但也重视止观实修——"教观双美"。禅宗虽不依天台教理，但六祖"定慧等持"与天台"止观双运"原理一致。天台从教入观，禅宗从宗直指——路径不同，同归见性。荷泽神会的"顿悟渐修"也与天台"圆顿止观"有相通之处。',
+    relatedBooks: ['tanjing', 'shenhui']
+  },
+  {
+    id: 'faq-211',
+    question: '什么是"禅净双修"？怎么修？',
+    answer: '禅净双修是禅宗与净土宗结合的修行方法。永明延寿倡"有禅有净土，犹如戴角虎"——禅宗见性加上净土念佛，如虎添翼。修法：一、以禅观心——参"念佛是谁？"将念佛与参禅结合。二、以念佛摄心——借佛号收摄散乱心，念到能所双亡时即是一行三昧。三、悟后念佛——悟者念佛不是求生西方，是称性起用，自性弥陀自念自听。四祖道信"念佛心是佛"即是禅净双修的先驱。关键：参禅时参禅，念佛时念佛，不可两头狐疑。',
+    relatedBooks: ['anxin', 'wenshu']
+  },
+  {
+    id: 'faq-212',
+    question: '什么是"禅教一致"？',
+    answer: '禅教一致指禅宗（宗门）与经教（教下）不是对立的。宗密大师倡"禅教一致"——禅是佛心，教是佛语；佛语表佛心，佛心合佛语。禅宗虽"不立文字"，但所说与经教完全相符：六祖所说《坛经》与《金刚经》一致，达摩四论与《楞伽经》一致。教下虽依文字，但修到深处也须超越文字——天台"圆顿止观"即超越文字的实修。故宗门教下，如车两轮，缺一不可。悟后看经，如自家屋里事；依教修行，终须见性方为究竟。',
+    relatedBooks: ['tanjing', 'xuemaicong', 'jingangjing']
+  },
+  {
+    id: 'faq-213',
+    question: '什么是"默照禅"？为什么大慧宗杲批评它？',
+    answer: '默照禅是曹洞宗宏智正觉所倡：端坐默然，不参公案、不起疑情，只于沉默中观照本心——重在"默"与"照"。大慧宗杲批评默照禅为"默照邪禅"——认为容易落入沉空滞寂：身体不动、心无觉照，如"鬼窟里作活计"。大慧的批评有其道理——默照禅若不得要领，确实容易落入昏沉死寂。但宏智正觉本人是真实悟道的，其默照禅并非大慧所批评的那种。实则默照与看话，法门不同，各有擅场：看话适合妄想多者，默照适合心较细者。法无高下，对机即好。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-214',
+    question: '什么是"公案"？公案有多少则？',
+    answer: '公案原指官府案牍，禅门借指祖师应机的言行记录——是"已然判决的范例"，用来勘验学人的悟境。公案数量：传统公案约1700则，主要来源于《景德传灯录》《五灯会元》等灯史。《碧岩录》选100则，《无门关》选48则，《从容录》选100则。本知识库收录200条公案（ZEN_KOANS），涵盖历代重要祖师的机缘语录。公案不是用来理解的，是用来参究的——通过参公案逼拶起疑，疑到无路处爆破，即是大悟。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-215',
+    question: '《碧岩录》是什么书？',
+    answer: '《碧岩录》是宋代圜悟克勤所著的公案评唱集，选100则公案，每则加以评唱、颂古、注释——是禅宗"文字禅"的巅峰之作。圜悟以精美的文字剖析公案，使学人借文字理解公案旨趣。但大慧宗杲认为《碧岩录》使学人落于文字理解，失了参究实参的精神，故焚其版——这就是"大慧焚碧岩"的典故。实则《碧岩录》本身是悟后的绝佳读物——悟者看碧岩如自家屋里事；但未悟者以理解代替参究，则成毒药。故碧岩录是"悟后印心之书"，不是"初学参究之书"。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-216',
+    question: '《无门关》是什么书？',
+    answer: '《无门关》是宋代无门慧开所辑的48则公案集，每则附有评唱和颂偈。书名"无门"——以"无"字为参禅之门：无门为门，无路为路。48则公案从"赵州狗子"（无字）开始，层层递进，是参禅入门的最佳教材。与《碧岩录》不同，《无门关》文字简练，不加过多注释，保留公案的"活句"性质——不替学人解释，逼学人自己参究。无门慧开云"参禅须透祖师关，妙悟要穷心路绝"——祖师关即无门，心路绝即悟处。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-217',
+    question: '什么是"颂古"？',
+    answer: '颂古是以诗偈形式评论古德公案——将公案旨趣以诗歌表达。如《碧岩录》每则公案后附圜悟克勤的颂古，《无门关》每则后附无门慧开的颂偈。颂古不是解释公案——是用诗的形式"重演"公案的意境，让学人从另一个角度体悟。好的颂古本身也是活句——不落在字面意思上，逼学人参究。如无门颂"狗子佛性，全提正令。才涉有无，丧身失命"——不是解释"无"字，是以四句诗将"无"字的逼拶力再现。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-218',
+    question: '什么是"评唱"？',
+    answer: '评唱是对公案的评论和阐扬——师家对古德公案加以剖析、评判、引申。《碧岩录》是评唱的代表作：圜悟克勤对每则公案加以"垂示"（总评）、"著语"（夹注）、"评唱"（详细分析）。评唱的作用：一、为已悟者印证——悟后看评唱，如自家屋里事。二、为未悟者指方向——虽不能代替参究，但能帮助学人理解公案的背景和旨趣。但评唱也有风险——学人可能以理解代替参究，故大慧焚碧岩。评唱是"以言遣言"的方便，不可执为实法。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-219',
+    question: '什么是"灯录"？',
+    answer: '灯录是禅宗史传体著作——记录历代祖师的传法机缘和语录。"灯"喻法灯——法灯相传，灯灯相续。主要灯录：《景德传灯录》（北宋道原编，30卷）、《天圣广灯录》、《建中靖国续灯录》、《联灯会要》、《嘉泰普灯录》——以上五部合称"五灯"。南宋普济将五灯合编删繁为《五灯会元》20卷，最为通行。灯录是禅宗人物与公案的最大来源库——本知识库中的人物传记与公案原文多取材于此。灯录不仅是历史文献，更是参究素材——每一则机缘语录都可以作为参禅的话头。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-220',
+    question: '什么是"语录"？',
+    answer: '语录是禅师开示和机缘对话的记录——不拘格式，随问随答，活录当时场景。重要语录：马祖语录、百丈语录、黄檗传心法要、临济录、洞山语录、云门广录等。语录的特点：一、活——不是理论文章，是当时的实际对话，活泼泼地。二、峻——不循常规，或棒或喝，或答非所问。三、简——言简意赅，一字一句皆是活句。语录是禅宗最珍贵的文献——从中可以看到祖师接引学人的活方法。本知识库收录了38部经典，其中多部为语录体。',
+    relatedBooks: ['mazu', 'linji', 'huangbo']
+  },
+  {
+    id: 'faq-221',
+    question: '什么是"清规"？禅宗为什么有自己的规矩？',
+    answer: '清规是禅宗寺院的规章制度——百丈怀海所立《百丈清规》是禅宗第一部完整清规。禅宗之所以有自己的规矩，因为禅僧不依戒律传统——不依律寺居住，另立禅寺。百丈立清规："一日不作，一日不食"——农禅并重，自食其力。清规涵盖：普请（集体劳作）、上堂（说法）、入室（参问、迁单（开除）、入院（住持）等。清规将禅落实于日常——搬柴运水皆是道场，规矩即是修行。禅宗清规是中国佛教本土化的标志，也是禅宗独立于其他宗派制度上的体现。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-222',
+    question: '什么是"普请"？',
+    answer: '普请是禅宗寺院的集体劳作制度——全寺上下，从住持到清众，一律参加劳动。百丈怀海立"一日不作，一日不食"——年过九旬犹随众出坡。普请的内容：种田、砍柴、挑水、做饭、修缮等。普请的意义：一、自食其力——不依赖信众供养，保证禅宗独立性。二、禅在劳动——搬柴运水皆是道场，不拘坐禅形式。三、平等——住持与清众同劳，破除阶级。普请是农禅并重的核心制度，也是禅宗"平常心是道"在制度上的落实。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-223',
+    question: '什么是"参学"？禅宗怎么参学？',
+    answer: '参学是禅僧参访善知识、学习禅法的过程。禅宗参学的特点：一、行脚——不拘一处，遍参天下善知识。二、参问——带着话头或疑情去参访，以机锋对答勘验彼此。三、参学不限一处——临济参黄檗三度被打，又参大愚方悟；赵州八十犹行脚。参学的目的不是收集知识，是寻找能令自己悟道的因缘。参学须有基础——先在一处建立见地，再遍参方家印证。无基础而乱参，如盲人摸象，终无头绪。参学也须择师——临济云"切要求取真正见解，免被一般精魅狐鬼惑乱"。',
+    relatedBooks: ['linji', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-224',
+    question: '什么是"行脚"？',
+    answer: '行脚是禅僧背着行囊步行参访各地善知识——又称"云游"、"游方"。行脚的意义：一、寻师——寻找能令自己悟道的因缘。二、历练——在不同环境中考验自己的功夫。三、破执着——不拘一处，破对安逸环境的依赖。赵州从谂八十岁犹行脚，云"只为心未稳在"——心未安稳，虽老仍须行脚。行脚是禅宗的特色——其他宗派重定居一处学习，禅宗重遍参天下。行脚须有目的——不是漫无目的地游山玩水，是带着疑情参访善知识。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-225',
+    question: '什么是"机缘"？',
+    answer: '机缘是禅宗指学人与师家相遇、对答的因缘——"机"指学人的根机和当下心理状态，"缘"指师家应机施教的因缘。机缘成熟则悟——如六祖闻《金刚经》而悟，永嘉见六祖一宿而悟。机缘不熟则不悟——如梁武帝与达摩相遇而不契。机缘不在师家——师家只是缘，学人的根机才是因。因+缘=果。故参学须先充实自己（因），再寻善知识（缘），因缘和合方能悟道。灯录中每一则机缘语录，都是师家观机施教、学人因机悟道的生动记录。',
+    relatedBooks: ['mazu', 'linji', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-226',
+    question: '什么是"师资"？',
+    answer: '师资是师徒传承关系——师传法，徒受法。禅宗极重师资：一、传法须有师承——不可自封开悟，须有师父印可。二、师资道合——师有法可传，徒有器可受，方能道合。三、以心传心——师资之间不是知识传授，是心法相传。如达摩传慧可、五祖传六祖、马祖传百丈——皆是师资道合的典范。师资不是形式上的师徒——有真实法传受的师资，方为真师资。六祖云"迷时师度，悟了自度"——迷时须师指路，悟后自度度人。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-227',
+    question: '什么是"法脉"？禅宗法脉怎么传承？',
+    answer: '法脉是禅宗传法的谱系——从释迦佛到达摩，达摩到慧可，慧可到僧璨，僧璨到道信，道信到弘忍，弘忍到惠能——这是"东土六代"。惠能之后不再单传，法脉分出五家七宗——临济、曹洞、沩仰、云门、法眼，加上临济分出的杨岐、黄龙，合称"五家七宗"。法脉传承的核心是"以心传心"——不是传一个什么东西，是印证所见相同。法脉如灯灯相续——一灯点千灯，灯灯不绝。法脉不是世俗的血统，是法的传承——有法即有脉，无法即断脉。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-228',
+    question: '什么是"传衣钵"？',
+    answer: '衣钵是袈裟和钵——代表法脉传承的信物。达摩来华传法，以衣钵为信：从达摩到六祖，代代相传衣钵。六祖之后不再传衣钵——六祖云"衣为争端，止汝不传"——衣钵成了争夺的对象，故不再传。传衣钵的意义：衣钵是法脉传承的外在信物——证明得法者的正统性。但衣钵不是法本身——法在心传，不在衣钵。五祖传六祖时云"衣为争端，止汝不传。若传此衣，命如悬丝"——衣钵虽是信物，但执着衣钵则成争端。故六祖之后，以心传心，不再传衣。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-229',
+    question: '什么是"一花开五叶"？',
+    answer: '达摩偈云"吾本来兹土，传法救迷情。一花开五叶，结果自然成。"——"一花"指达摩所传禅法（或指六祖惠能），"五叶"指禅宗五家（临济、曹洞、沩仰、云门、法眼）。达摩一人来华，传法至六祖，六祖之后禅宗花开五家——一花而五叶，各成宗派。五家宗旨同一，但接引风格各异——如五片叶子同出一花，形态不同而同根。达摩预记禅宗将大兴于中国，果然从六祖之后禅宗成为中国佛教主流，五家七宗遍布天下。',
+    relatedBooks: ['xuemaicong']
+  },
+  {
+    id: 'faq-230',
+    question: '什么是"南顿北渐"？',
+    answer: '南顿北渐指禅宗南北二宗的分歧：南宗以六祖惠能为首，主"顿悟"——直指人心，见性成佛；北宗以神秀为首，主"渐修"——拂拭尘垢，渐次清净。荷泽神会在滑台无遮大会力辩南北是非，确立南宗为正统。六祖偈"本来无一物，何处惹尘埃"是顿悟见地；神秀偈"时时勤拂拭，勿使惹尘埃"是渐修行持。实则顿渐不二：理可顿悟，事须渐除——六祖虽唱顿悟，悟后犹须保任；神秀虽唱渐修，修到极处亦须见性。后世禅宗主流继承南宗顿悟，但不废渐修。',
+    relatedBooks: ['tanjing', 'shenhui']
+  },
+  {
+    id: 'faq-231',
+    question: '什么是"滑台大会"？为什么它很重要？',
+    answer: '滑台大会是唐开元二十年（732年），荷泽神会在滑台（今河南滑县）无遮大会上与北宗学者崇远辩论南北二宗是非。神会力主：达摩禅法以"顿悟"为正宗，六祖惠能是达摩禅法的真正继承者，北宗神秀一系是"渐修"旁支。此会确立了南宗顿悟为禅宗正统，使六祖一脉成为中国禅宗主流。没有滑台大会，南宗可能被北宗压制——禅宗历史将完全不同。故神会虽在禅法上不如马祖、临济出色，但在确立南宗正统上有不可磨灭的历史贡献。',
+    relatedBooks: ['shenhui', 'tanjing']
+  },
+  {
+    id: 'faq-232',
+    question: '什么是"会昌法难"？对禅宗有什么影响？',
+    answer: '会昌法难是唐武宗会昌五年（845年）的灭佛运动——大规模拆毁寺庙、勒令僧尼还俗、没收寺产。对禅宗的影响：一、其他依经教的宗派（天台、华严、唯识）因经论散失而衰落，禅宗因"不立文字"不依赖经论，受影响最小。二、禅宗农禅并重、自食其力，不依赖信众供养，在法难中生存能力最强。三、法难后禅宗成为中国佛教主流——"天下寺院皆禅院"。会昌法难是禅宗独大的历史转折点——其他宗派衰落，禅宗独存，故唐宋以后中国佛教几乎等于禅宗。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-233',
+    question: '什么是"文字禅"？',
+    answer: '文字禅是宋代禅宗的倾向——以文字著述阐释禅法，如《碧岩录》《从容录》等公案评唱集。文字禅的兴起：宋代禅宗已无唐代直指人心的机锋气概，转向以文字研析公案。优点：使禅法有迹可循，便于学人理解公案旨趣。缺点：学人以理解代替参究，落在文字上，失了真参实悟的精神。大慧宗杲焚《碧岩录》版，就是痛感文字禅之弊。但文字禅也有其价值——悟后看文字禅著述，如自家屋里事，是最好的印证。文字禅是"悟后印心之具"，不是"初学参究之具"。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-234',
+    question: '什么是"看话禅"？',
+    answer: '看话禅是宋代大慧宗杲所倡的参禅方法：取公案中一句无意味话头（如"无"字），时时提在心头，不起第二念，不生分别解，只就这话头上起大疑情——"毕竟如何？"行住坐卧不离此疑，疑团打成一片、穷到无路处，豁然爆破，即是悟时。看话禅的特点：一、重在"疑"——以疑破妄。二、重在"参"——不是理解，是逼拶。三、重在"实"——不尚空谈，只管参究。大慧以此对治文字禅和默照禅，复兴了禅宗真参实悟的传统。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-235',
+    question: '什么是"活句"和"死句"的区别？怎么用？',
+    answer: '活句是能截断思量、引人悟道的言句——不着落在字面意思上，逼你向上一路。死句是落在义理分别中的言句——可以理解、可以解释，但无法引人悟道。区别在于：活句无义路可寻，死句有义路可寻。如"麻三斤"——你不明白什么意思，这就是活句；如果有人解释"麻三斤是比喻万法缘起"，就成了死句。用法：参禅时只参活句——不求解，只起疑。师家接人只说活句——不解释，只截断。死句是药方，活句是手术刀——药方可以研究，手术刀须直接使用。',
+    relatedBooks: ['linji', 'mazu']
+  },
+  {
+    id: 'faq-236',
+    question: '什么是"禅病"？有哪些常见的禅病？',
+    answer: '禅病是修行中因方法不当或见地不正而产生的偏差。常见禅病：一、枯木禅——只管打坐心如死灰，沉空滞寂。二、狂禅——以"本来是佛"为借口拨无因果、放纵烦恼。三、口头禅——说得头头是道，遇到境界随境转。四、野狐禅——错解佛法，拨无因果。五、着相禅——执着境界相、悟境相、功德相。六、轻安禅——把轻安快感当悟境。对治方法：一、有善知识指导——不自以为是。二、依经教印证——不偏离正理。三、真实参究——不以理解代替实证。四、保持平常心——不追境界、不立奇特。',
+    relatedBooks: ['chanlinbaoxun', 'lengyanjing']
+  },
+  {
+    id: 'faq-237',
+    question: '什么是"悟后迷"？',
+    answer: '悟后迷是指初悟之人悟境不稳固，遇到强境又随境转，失去了悟境。如十牛图中"得牛"之后须"牧牛"——不牧则牛可能跑掉。悟后迷的原因：一、习气未尽——无始习气深厚，悟境力量尚弱。二、保任不够——悟后不继续观照，任由妄念翻腾。三、逆境太强——遇到重大打击或诱惑，力量超过悟境。对治方法：一、悟后保任——时时观照，不离当下。二、逆境中用功——烦恼来时正好参究。三、寻善知识印证——有善知识指导，少走弯路。悟后保任成熟，打成一片，方不退转。',
+    relatedBooks: ['shiniutu', 'tanjing']
+  },
+  {
+    id: 'faq-238',
+    question: '什么是"解悟"和"证悟"？',
+    answer: '解悟是理解层面的悟——通过阅读经教、思维分析，明白了禅法的道理，但只是"知解"，没有亲证。证悟是实证层面的悟——亲见自性，如人饮水冷暖自知，不依赖文字。解悟如看地图——知道目的地在哪；证悟如亲自到达——真正到了目的地。解悟容易，证悟难——很多人解悟了就以为悟道，其实只是"知解宗徒"。禅宗要的是证悟——不依文字、不借思维，亲见自性。但解悟也有价值——是证悟的先导，先明白方向再真实参究。从解悟到证悟，须经过疑情的逼拶——将"知解"打成"疑团"，疑团爆破方为证悟。',
+    relatedBooks: ['chanlinbaoxun', 'tanjing']
+  },
+  {
+    id: 'faq-239',
+    question: '什么是"破参"？破参之后怎么办？',
+    answer: '破参是参禅中疑团爆破的瞬间——话头逼拶到无路可走，忽然如桶底脱落、百丈冰消，亲见自性。破参不是得到什么——是发现本来有的。破参之后：一、保任——守住悟境，念念不离。如十牛图"得牛"之后须"牧牛"。二、印证——寻善知识勘验，确认悟境真实。三、深入——悟境有深浅，初悟后须继续参究，层层深入。四、起用——悟后不仅自度，还要度人。破参不是终点——是修行的真正起点。悟前是"如丧考妣"——找不到心；悟后还是"如丧考妣"——保任不敢忘。',
+    relatedBooks: ['chanlinbaoxun', 'shiniutu']
+  },
+  {
+    id: 'faq-240',
+    question: '什么是"重关"和"末后关"？',
+    answer: '禅宗参悟有三个层次：初关（破本参）、重关、末后关。初关是初步见性——打破根本无明，亲见自性。重关是深悟——超越"我悟了"的执着，能所双泯。末后关是究竟——连"超越"也超越，回归平常，如十牛图"入廛垂手"。三关不是固定的三个阶段——是悟境深浅的比喻。有人一悟即透三关，有人须多次悟入。三关的核心：初关破"我执"，重关破"法执"，末后关破"佛见"——层层超越，直到无一丝法可立，方为究竟。',
+    relatedBooks: ['chanlinbaoxun', 'shiniutu']
+  },
+  {
+    id: 'faq-241',
+    question: '什么是"禅宗无门关"？',
+    answer: '《无门关》是宋代无门慧开所辑48则公案集。书名"无门"有两层含义：一、以"无"字为参禅之门——赵州"无"字是第一则公案。二、禅宗之门是无门之门——没有固定的方法可循，须各自参究。无门慧开云"参禅须透祖师关，妙悟要穷心路绝。祖关不透，心路不绝，如何是透祖师关？只这一个无字，乃宗门一关也。"——无字就是关，透得过无字，即是透祖师关。48则公案从无字开始，层层递进，是参禅入门的最佳教材。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-242',
+    question: '什么是"禅宗公案的答案"？为什么没有标准答案？',
+    answer: '公案没有文字上的标准答案，但有真实的勘验标准。同一问"如何是佛"，干屎橛、麻三斤、庭前柏树子——答案各不相同，因为公案答的是问者当下的病，不是千古一律的理。祖师以勘辨接人：学人呈解，师家一验便知是实悟还是口头三昧。所以公案须亲参实证，背诵"答案"正是参禅大忌。公案的"答案"不在文字中，在学人的见地中——你真见了性，怎么答都是对的；你没见性，说得再好也是死的。故公案不在答，在悟。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-243',
+    question: '禅宗讲"不二法门"——什么是不二？',
+    answer: '不二是超越二元对立——不分能所、不分主客、不分凡圣、不分生死涅槃。《维摩诘经》"入不二法门品"中三十二位菩萨各说不二，最后维摩诘默然——一默如雷，以沉默直显不二。禅宗的不二更直截：六祖"三十六对法"教人"出没即离两边"——不落有、不落无，不落善、不落恶，即两边而离两边。不二不是混同一切——是即分别而不分别。如镜照物：美丑皆照（分别），而镜体不分美丑（不分别）。分别而不分别，不分别而分别——方是活般若。',
+    relatedBooks: ['weimojiejing', 'tanjing']
+  },
+  {
+    id: 'faq-244',
+    question: '什么是"一心"？黄檗的"一心"和唯识宗的"一心"有什么区别？',
+    answer: '黄檗《传心法要》的"一心"是当下灵明不昧的觉性之体——超越八识、超越心物，是诸佛与众生共同的本来面目。唯识宗的"一心"指阿赖耶识——含藏一切种子的第八识，是心识运作的核心。区别在于：黄檗的"一心"是"绝待"的——超越一切对立，不可思量、不可指陈；唯识的"一心"是"相待"的——在八识体系中可以分析。但二者也有联系：阿赖耶识转成大圆镜智后，即与黄檗的"一心"体性一致。禅宗直指的"一心"是唯识修行的究竟果位——转识成智后的清净心体。',
+    relatedBooks: ['huangbo', 'bashiguijusong']
+  },
+  {
+    id: 'faq-245',
+    question: '什么是"无心"？黄檗的"无心"和庄子说的"心斋"一样吗？',
+    answer: '不同。黄檗的"无心"是"无妄心"——不是没有知觉，是于一切境界不生分别执着。如镜照物：物来即照，物去不留，照而不住。庄子的"心斋"是"虚而待物"——心空虚以接纳万物，偏于"虚静"。黄檗的无心偏于"觉照"——了了分明而不执着；庄子的心斋偏于"虚静"——空虚以容物。二者都有"不执着"的意味，但黄檗的无心有般若觉照在其中——不是空虚，是灵明不昧；不是被动接纳，是即相离相。故黄檗云"无心者，无一切心也"——不是无心，是无执着心。',
+    relatedBooks: ['huangbo']
+  },
+  {
+    id: 'faq-246',
+    question: '什么是"即相离相"？在日常生活中怎么用？',
+    answer: '即相是面对一切境界——不回避、不排斥。离相是不执着境界——不染着、不分别。即相离相是面对境界而不被境界转——如镜照物：物来即照（即相），物去不留（离相）。日常中：一、见色闻声——了了分明（即相），不起爱憎（离相）。二、待人接物——认真对待（即相），不执着结果（离相）。三、工作做事——尽心尽力（即相），做完放下（离相）。四、顺逆境界——全盘接受（即相），心不随转（离相）。即相离相是禅宗"无相"的活用——不是离一切相去修，是在一切相中离一切相。',
+    relatedBooks: ['tanjing', 'jingangjing']
+  },
+  {
+    id: 'faq-247',
+    question: '什么是"无住"？和"无念""无相"什么关系？',
+    answer: '六祖立三纲领："无念为宗，无相为体，无住为本。"无念是于念而不执——念而不念。无相是于相而不染——即相离相。无住是念念不住——不粘着于任何境界。三者是一体三面：无念是从"念"说，无相是从"相"说，无住是从"行"说。核心都是"不执着"——不执着于念（无念）、不执着于相（无相）、不执着于任何处（无住）。无住是根本——念念不住则自然无念无相。如《金刚经》"应无所住而生其心"——无住生心，生心无住，即是禅宗根本宗旨。',
+    relatedBooks: ['tanjing', 'jingangjing']
+  },
+  {
+    id: 'faq-248',
+    question: '什么是"任运"？和"放任"有什么区别？',
+    answer: '任运是悟后的自然行履——心不造作，随缘自在。如十牛图"返本还源"后"入廛垂手"——不刻意做什么，随缘度生。放任是不修行者的放逸——以"任运"为借口不修善法、不除恶习。区别在于：任运是悟后的"无修而修"——不是不修行，是修行而无修行相；放任是迷中的"不修而乱"——不是任运，是随业流转。永嘉《证道歌》"顿觉了如来禅，六度万行体中圆"——悟者六度万行自然具足，不是不做，是做而无做。以任运为借口而放逸，是错会祖意。',
+    relatedBooks: ['zhengdaoge', 'shiniutu']
+  },
+  {
+    id: 'faq-249',
+    question: '什么是"和光同尘"？悟者为什么要和光同尘？',
+    answer: '和光同尘是悟者入世的姿态——收敛光芒，与世俗同处。如十牛图"入廛垂手"——悟后不居正位、不显奇特，灰头土面，混迹市廛。为什么？一、度生须同事——与众生同处方能化导。二、高则成障——显悟者相则人不敢近。三、平常是道——马祖"平常心是道"，悟者无悟者相。四、大智若愚——真正的智慧不在锋芒外露。如《宝镜三昧歌》"潜行密用，如愚如鲁"——最高境界是平常，不是奇特。和光同尘不是同流合污——是即世间而离世间，如莲华出淤泥而不染。',
+    relatedBooks: ['shiniutu', 'baojingsanmei']
+  },
+  {
+    id: 'faq-250',
+    question: '什么是"平常心是道"？马祖这句话怎么用？',
+    answer: '马祖道一云"道不用修，但莫染污。何为染污？但有生死心，造作趋向，皆是染污。若欲直会其道，平常心是道。"平常心是"无造作，无是非，无取舍，无断常，无凡无圣"——不是凡夫的平常（充满造作是非），是悟后的任运自然。怎么用：一、饥来吃饭困来眠——于日用中不起第二念。二、不刻意修行——道本现成，不须造作。三、不染污——不加贪嗔造作。四、即事而真——搬柴运水皆是道。平常心不是不修行，是修行而无修行相——做而无做，无做而做。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-251',
+    question: '什么是"道在屎尿"？禅宗为什么这么说？',
+    answer: '僧问云门"如何是佛？"云门答"干屎橛。"僧问赵州"如何是祖师西来意？"赵州答"厕筹子。"禅宗以最粗俗的事物指佛、指道——不是亵渎，是破执着。你心中有一个庄严的佛相、清净的道相——以为佛在高处、道在净处。祖师以屎尿破之：佛不在别处，道不在高处——干屎橛即是佛，厕筹子即是道。因为一切法无自性，佛性遍一切处——岂独在庄严处？如《心经》"色不异空"——色法（包括屎尿）当体即空，空即佛性。道在屎尿是破"净秽分别"的活般若。',
+    relatedBooks: ['linji', 'mazu']
+  },
+  {
+    id: 'faq-252',
+    question: '什么是"即心即佛"？马祖为什么先说后否定？',
+    answer: '马祖初说"即心即佛"——给初学一个信入处：你的心就是佛，不必外求。等人执着了"心是佛"，马祖又说"非心非佛"——破这个新的执着。最后说"不是心，不是佛，不是物"——连"非"也破。三说层层递进：先立（即心即佛），再破（非心非佛），再双遣（不是心不是佛不是物）。大梅法常闻"即心即佛"而悟，住山不移；马祖遣人勘之曰"和尚近日又道非心非佛"，法常答"任汝非心非佛，我只管即心即佛"——马祖印可"梅子熟也"。三说不是矛盾，是对病施药：你执什么，就破什么。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-253',
+    question: '什么是"作用是性"？马祖说的"扬眉瞬目皆是佛性"怎么理解？',
+    answer: '马祖云"一切施为，尽是法身"——扬眉瞬目、动转施为，皆是佛性的作用。但须辨明："作用是性"不是说一切行为本身就是佛性，而是说一切作用的功能来自佛性。如镜照物——照是镜的用，镜是照的体；没有镜就没有照，但照不是镜。同理：扬眉瞬目是佛性的用，佛性是扬眉瞬目的体。未悟者错认意识分别为佛性——把"能分别"当作"佛性"；悟者知道：能分别的是佛性的用，佛性是那个能起用的体。故"作用是性"须有明眼人勘验，不可自以为是。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-254',
+    question: '什么是"磨砖作镜"？南岳磨砖到底想告诉马祖什么？',
+    answer: '马祖年轻时在南岳衡山坐禅，南岳怀让取一块砖在庵前磨。马祖问"磨砖作什么？"怀让答"磨作镜。"马祖曰"磨砖岂能成镜？"怀让曰"磨砖既不成镜，坐禅岂能成佛？"——怀让以此破马祖对坐禅的执着。坐禅是方便，不是目的；佛不在坐相，在心地。如人磨砖——砖是砖，永不成镜；枯坐——坐是坐，不成佛。但怀让不是否定坐禅——他否定的是"执坐为佛"。马祖由此悟入，后开洪州禅风，接引学人活泼峻烈，不再拘于坐相。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-255',
+    question: '百丈"野鸭子"公案中，马祖为什么要扭百丈的鼻子？',
+    answer: '马祖与百丈同行，见野鸭子飞过。马祖问"是什么？"百丈答"野鸭子。"马祖问"甚处去也？"百丈答"飞过去也。"马祖扭百丈鼻，百丈痛得大叫。马祖曰"又道飞过去也！"百丈于痛处有省。此公案的要点：百丈答"飞过去也"时，心已随境转——心跟着鸭子飞走了。马祖一扭鼻子，把百丈从"随境转"拉回当下——痛的是谁？能觉知痛的那个，可曾飞过去？鸭子有来去，觉性无来去。百丈于痛处回光返照，瞥见那个不动的觉性，故有省。这是马祖接引百丈的关键一着。',
+    relatedBooks: ['mazu', 'baizhang']
+  },
+  {
+    id: 'faq-256',
+    question: '临济三度被打——黄檗为什么要打他？',
+    answer: '临济在黄檗会下三年，不敢问法。首座鼓励他去问"如何是佛法大意？"临济去问，黄檗便打。三问三打。临济失望离去，经大愚指点："黄檗老婆心切——为你彻困，你却来这里想过错了。"临济大悟。黄檗打临济，不是惩罚——是以打截断临济的思维。临济问"如何是佛法大意"时，心中已有一个"佛法大意"的期待——期待一个答案。黄檗一打，打掉他的期待、打掉他的思维、打掉他的向外求。三打是三番逼拢——但临济当时不懂，经大愚点破方知黄檗的老婆心切。',
+    relatedBooks: ['linji', 'huangbo']
+  },
+  {
+    id: 'faq-257',
+    question: '什么是"老婆禅"？',
+    answer: '"老婆禅"不是老太太修的禅——"老婆"是"老婆心切"的简称，指禅师接引学人时如老太婆般苦口婆心、反复叮咛。禅宗本以"直指"为尚，不尚多说。但有些禅师悲心深切，怕学人不悟，反复开示、层层剖析——这就是老婆禅。黄檗打临济三度，大愚说"黄檗老婆心切"——打就是老婆心切，因为打是为了令临济悟道。老婆禅虽不似机锋峻烈，但有其价值——对中下根人，老婆禅更亲切、更易入。但过度老婆则成葛藤——说多了反而遮蔽了直指。',
+    relatedBooks: ['linji', 'huangbo']
+  },
+  {
+    id: 'faq-258',
+    question: '什么是"棒喝"？为什么临济宗特别用棒喝？',
+    answer: '棒是打，喝是大声呵斥。棒喝是禅宗接引学人的激烈方式——以物理冲击截断学人的思维流。临济宗以棒喝交驰著称：临济义玄在黄檗棒下大悟，后自开宗门，以棒喝接人。棒喝的作用：一、截断思维——你正在想，一棒打来，思维断了。二、逼拶——打喝之下，你无处可逃，只能向上一路。三、勘验——师家以棒喝测试学人反应，反应中可见见地。但棒喝须有师承眼目——不是谁都可以乱打乱喝。会则活人，不会则死人。临济云"我有时一喝如金刚王宝剑，有时一喝如踞地师子，有时一喝如探竿影草，有时一喝不作一喝用"——喝有四种不同用意。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-259',
+    question: '临济"四喝"是什么？',
+    answer: '临济云"我有时一喝如金刚王宝剑"——以一喝斩断学人思维，如金刚宝剑斩铁如泥。"有时一喝如踞地师子"——以一喝震慑学人，如师子蹲踞怒吼，令学人不敢动弹。"有时一喝如探竿影草"——以一喝试探学人深浅，如以竿探水、以草影物。"有时一喝不作一喝用"——一喝之中含多义，不只是一种用意。四喝是临济以喝接人的四种不同方式：或斩、或震、或探、或兼。核心在对机——看你什么病，给什么喝。不是乱喝一通，是观机施教的活方便。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-260',
+    question: '什么是"立处皆真"？',
+    answer: '临济云"随处作主，立处皆真"——无论在哪里，自己做得了主，那么你站立的每一处都是真实的道场。立处皆真是悟后的境界：悟者不见有凡有圣、有净有秽——一切处皆是道场，一切时皆是修行。如维摩诘在闹市中说法、庞居士在市场中悟道——道不在深山，在当下立处。但"立处皆真"须"随处作主"为前提——若心随境转，则立处皆妄；若心不随转，则立处皆真。作主是关键——能作主则处处是道场，不能作主则处处是牢笼。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-261',
+    question: '什么是"无事是贵人"？',
+    answer: '临济云"道流，佛法无用功处，只是平常无事。屙屎送尿，著衣吃饭，困来即眠。"又云"无事是贵人"——"贵人"不是世俗的达官贵人，是心无事的人。无事不是什么都不做，是心无牵挂、无造作、无求无避。凡夫的心总是有事——忧虑、期待、恐惧、贪求，心从未闲过。悟者的心无事——不是没有事做，是做了即放下，心中不留痕迹。如百丈"一日不作一日不食"——作而不有事，忙而心无事。无事是贵人，是禅宗对悟者最朴素的描述。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-262',
+    question: '什么是"真正见解"？临济为什么强调它？',
+    answer: '临济反复强调"切要求取真正见解"——真正见解是自悟自证的见地，不是从别人那里听来的。临济痛斥"向外驰求的汉子"——不求自心，只向佛求、向法求、向祖师求。真正见解的特征：一、不从外得——自性本具。二、不借文字——亲证方知。三、不被境转——一切境界不能动摇。四、能作主——随处自在。临济强调真正见解，是因为他看到太多学人"认奴作郎"——把别人的悟境当作自己的，把佛祖的言句当作自己的。没有真正见解，就是"被一般精魅狐鬼惑乱"——被各种似是而非的说法牵着走。',
+    relatedBooks: ['linji']
+  },
+  {
+    id: 'faq-263',
+    question: '什么是"吹毛用了急须磨"？',
+    answer: '此句出自禅宗古德，意指悟后保任如吹毛剑——锋利无比的宝剑用过了也须急磨。吹毛剑是极锋利的宝剑——以毛吹之，毛即断为两截。比喻悟者的智慧如吹毛剑——能斩断一切烦恼。但"用了急须磨"——即使如此锋利的剑，用过了也须磨砺，否则会钝。比喻悟后仍须保任——悟境虽真，不保任则力量减弱。保任的方法：时时观照，不离当下，妄起即觉。如十牛图"牧牛"——鞭索时时不离身。悟后不保任，如利剑不用则锈——悟境会退失。故古德云"悟后如初"——悟后保任的功夫，不亚于悟前的参究。',
+    relatedBooks: ['shiniutu', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-264',
+    question: '什么是"不离烦恼求菩提"？',
+    answer: '《维摩诘经》云"不离烦恼而求涅槃"——不是离开烦恼另找菩提，是在烦恼中见菩提。如水与波——波是烦恼，水是菩提；离波求水不可得，即波即水。六祖云"烦恼暗宅中，常须生慧日"——在烦恼的暗室中点亮智慧的太阳。怎么做到？于烦恼起处当下观照——贪心起时，照见贪心无自性；嗔心起时，照见嗔心无自性。照破的当下，烦恼即转为菩提。不是消灭烦恼，是转烦恼为菩提——如转毒药为良药，关键在般若智慧。',
+    relatedBooks: ['weimojiejing', 'tanjing']
+  },
+  {
+    id: 'faq-265',
+    question: '什么是"不除妄想不求真"？',
+    answer: '永嘉《证道歌》云"君不见，绝学无为闲道人，不除妄想不求真。"——悟者不除妄想，因为妄本空——如梦中事，醒来何须除？不求真，因为真本具——如水中月，拨开波纹即现，何须求？除妄想是有所除——有能除有所除，落在二元；求真是有所求——有能求有所求，也落二元。悟者超越除与求——不除不求，当下即是。但须知：这是悟后的境界，不是初学的法门。初学须除妄想、须求真——通过除和求，渐渐达到不除不求。以悟后境界为借口而不修行，是狂禅。',
+    relatedBooks: ['zhengdaoge']
+  },
+  {
+    id: 'faq-266',
+    question: '什么是"绝学无为"？',
+    answer: '永嘉《证道歌》"绝学无为闲道人"——绝学不是不学，是学而无学——学到了极致，超越了学。无为不是不做，是做而无做——做到了极致，超越了做。如六祖"何期自性本自具足"——自性本具一切法，不须外学。但未悟者不可借口"绝学无为"而不学不修——那是懒散放逸。绝学无为是悟后的境界：悟者不见有法可学、有法可修——因为一切法从自性流出。但悟前须学须修——通过学和修，达到绝学无为。如过河须舟——到岸方舍，未到岸不可舍。',
+    relatedBooks: ['zhengdaoge', 'tanjing']
+  },
+  {
+    id: 'faq-267',
+    question: '什么是"一念无明"和"无始无明"？',
+    answer: '一念无明是当下一念的妄动——如《楞严经》"知见立知，即无明本"——在本来清净的觉性上起了一念分别，就是无明的开始。无始无明是从时间维度说——无明没有起点，如圆没有起点。二者是同一无明的不同表述：一念无明从当下说，无始无明从时间说。禅宗对治无明的方法：不渐次对治，而是当下照破——如《圆觉经》"知幻即离，离幻即觉"。知无明是幻，无明即消——不是消灭无明，是了知无明本空。如梦中见虎——醒来不见虎，不是赶走了虎，是虎本不曾有。',
+    relatedBooks: ['lengyanjing', 'yuanjuejing']
+  },
+  {
+    id: 'faq-268',
+    question: '什么是"阿赖耶识"？它和自性什么关系？',
+    answer: '阿赖耶识是唯识宗的第八识——含藏一切种子的心体，如超级仓库储存一切业力种子。阿赖耶识有染有净：染分——含藏无始染污种子，是生死的根源；净分——本具觉性种子，是成佛的依据。阿赖耶识与自性的关系：阿赖耶识的净分即自性——如矿中金，金在矿中但被杂质包裹。修行是转阿赖耶识为大圆镜智——如炼矿出金，杂质去尽金性全显。禅宗"直指人心"所指的心，在唯识层面即阿赖耶识的净分——超越染净的本来清净心。但禅宗不做唯识分析，直指本源。',
+    relatedBooks: ['bashiguijusong', 'dachengqixinlun']
+  },
+  {
+    id: 'faq-269',
+    question: '什么是"末那识"？为什么它是我执的根源？',
+    answer: '末那识是唯识宗的第七识——恒审思量第八阿赖耶识为"我"。末那识的功能是持续不断地执着"我"——它不像前六识有间断，末那识从不停止"我"的执着。一切我执——我见、我爱、我慢、我痴——都从末那识出。修行中：前六识可以暂时停止（如深睡、入定），但末那识的"我执"从不停息。禅宗"直指人心"所破的"我"，在唯识层面就是末那识的恒审思量。转末那识为平等性智——"我"执消除，自他平等。参禅中"谁"字话头——"念佛是谁？"——正是直探末那识的"我"，逼它现形而后破之。',
+    relatedBooks: ['bashiguijusong']
+  },
+  {
+    id: 'faq-270',
+    question: '什么是"种子"？阿赖耶识中的种子是什么？',
+    answer: '唯识宗说阿赖耶识含藏一切"种子"——种子是业力的潜能，如植物的种子，遇缘则发芽。种子有染种和净种：染种——贪嗔痴等烦恼的潜能；净种——戒定慧等善法的潜能。修行就是熏习净种、消减染种——如六祖"自性众生无边誓愿度，自心烦恼无边誓愿断"。但禅宗进一步指出：种子本空——种子也是因缘所生，无有自性。悟者不见有种子可断、有净种可熏——因为自性本清净，种子只是妄念的别名。如梦中种子——醒来方知本无。',
+    relatedBooks: ['bashiguijusong', 'dachengqixinlun']
+  },
+  {
+    id: 'faq-271',
+    question: '什么是"五蕴"？为什么说"五蕴皆空"？',
+    answer: '五蕴是构成"人"的五种要素：色（物质身体）、受（感受）、想（思维概念）、行（意志行为）、识（分别意识）。"五蕴皆空"指这五种要素都没有独立自性——都是因缘和合的产物。如色身：需要地水火风、父母精血、食物滋养等条件，没有独立自性。受想行识亦然——都是心识的运作，没有独立实体。"五蕴皆空"不是否定五蕴的存在，是破对五蕴的执着——五蕴可用而不可执，即相离相，方是般若正观。如《心经》"照见五蕴皆空，度一切苦厄"——照见五蕴空性，苦厄自消。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-272',
+    question: '什么是"十八界"？',
+    answer: '十八界是六根（眼耳鼻舌身意）、六尘（色声香味触法）、六识（眼识耳识鼻识舌识身识意识）的合称。六根是感官，六尘是外境，六识是根尘相触产生的分别心。十八界涵盖了众生认识世界的全部机制——从感官到对象到意识。十八界说明：认识不是单一的，是根尘识三者和合的结果——如看花：眼根（根）+花（尘）+眼识（识）=看见。三者缺一不可，且都无独立自性。《心经》"无眼耳鼻舌身意，无色声香味触法，无眼识界乃至无意识界"——十八界皆空，破对整个认识机制的执着。',
+    relatedBooks: ['xinjing']
+  },
+  {
+    id: 'faq-273',
+    question: '什么是"十二因缘"？',
+    answer: '十二因缘是原始佛教对生死流转的分析：无明缘行，行缘识，识缘名色，名色缘六入，六入缘触，触缘受，受缘爱，爱缘取，取缘有，有缘生，生缘老死。从无明到老死，十二个环节环环相扣，构成生死轮回的链条。禅宗对十二因缘的态度：不做逐支分析，直破无明——无明一破，整条链条瓦解。如《圆觉经》"知幻即离"——知无明是幻，无明即消；无明消则行消，行消则识消……整条链条同时瓦解。故禅宗"直指人心"是最截断十二因缘的方法——不从枝末逐个破，从根本无明一破到底。',
+    relatedBooks: ['yuanjuejing']
+  },
+  {
+    id: 'faq-274',
+    question: '什么是"四谛"？',
+    answer: '四谛是原始佛教的根本教义：苦谛（世间是苦）、集谛（苦的原因是贪爱）、灭谛（苦可以灭）、道谛（灭苦的方法是八正道）。四谛是"知苦、断集、慕灭、修道"——从认识苦到灭苦的完整路径。禅宗对四谛的态度：不否定四谛，但超越四谛。六祖"烦恼即菩提"——苦谛即集谛即灭谛即道谛，四谛不二。迷时见苦可灭、有道可修；悟时苦本空、集本空、灭本空、道本空——如《心经》"无苦集灭道"。不是没有四谛，是四谛当体即空——空处即是实相。',
+    relatedBooks: ['xinjing', 'tanjing']
+  },
+  {
+    id: 'faq-275',
+    question: '什么是"八正道"？',
+    answer: '八正道是原始佛教的修行方法：正见、正思维、正语、正业、正命、正精进、正念、正定。从正确的见解到正确的禅定，涵盖修行者生活的全部。禅宗对八正道的态度：不废八正道，但将八正道归于心。达摩《破相论》将六度归于心行——同样，八正道也归于心：正见是心正见实相，正思维是心不起邪思，正语是心正故语正……心若正，八正道自然具足；心若不正，形式上守八正道也只是人天福报。禅宗的八正道是"无相八正道"——不拘形式，在心地上用功。',
+    relatedBooks: ['poxianglun']
+  },
+  {
+    id: 'faq-276',
+    question: '什么是"六度"？禅宗怎么修六度？',
+    answer: '六度是布施、持戒、忍辱、精进、禅定、般若——六种从生死此岸到涅槃彼岸的方法。禅宗修六度的特点：将六度归于心。达摩《破相论》云"行六度而不着六度之相"——布施是心行慈舍，不是算捐了多少钱；持戒是心不起恶，不是算守了多少条；忍辱是心不动于逆境，不是咬牙忍；精进是心不懈怠，不是拼命劳作；禅定是心不散乱，不是死坐不动；般若是心了了常明，不是世智辩聪。六度归于一心——心若清净，六度自然具足；心若染着，修万种六度也只是福德。',
+    relatedBooks: ['poxianglun']
+  },
+  {
+    id: 'faq-277',
+    question: '什么是"慈悲"？禅宗的慈悲和世间的善良有什么区别？',
+    answer: '世间的善良是有条件的——对喜欢的人好，对不喜欢的人不一定好；有能善和所善的对立。禅宗的慈悲是无缘大慈、同体大悲——无缘是不分亲疏条件，同体是视众生与自己一体。悟者不见有我能度、有众生为我所度——如《金刚经》"灭度一切众生已，而无有一众生实灭度者"。禅宗的慈悲不是刻意去做善事，是悟后自然流露——如十牛图"入廛垂手"，悟者自然入世度生。慈悲不在形式，在心——心与众生同体，则一举一动皆是慈悲。',
+    relatedBooks: ['jingangjing', 'shiniutu']
+  },
+  {
+    id: 'faq-278',
+    question: '什么是"方便般若"？',
+    answer: '般若是智慧——照见实相的根本智。方便般若是善巧——以般若为体，以方便为用，度众生时的善巧方法。般若是"知"，方便是"行"——知万法皆空，而行六度万行度众生。如观世音"以何身得度即现何身"——知众生本空（般若），而现种种身度众生（方便）。禅宗的棒喝、机锋、转语都是方便般若——以般若为体，以各种善巧为用。没有般若的方便是世俗智巧——度不了人；没有方便的般若是枯木慧——度不了众生。般若与方便如鸟双翼，缺一不可。',
+    relatedBooks: ['mazu', 'linji']
+  },
+  {
+    id: 'faq-279',
+    question: '什么是"三轮体空"？在布施中怎么用？',
+    answer: '三轮体空是行布施时不执着三轮：能施者（我）、受施者（对方）、施物（所施之物）——三者皆空。怎么用：布施时不执着"我在帮人"——我是因缘和合，无独立自性；不执着"他受我帮"——他也是因缘和合；不执着"我帮了什么"——施物也是缘起。做完即放下，如雁过长空不留痕迹。心若无住，虽日行万善而无一善可执；心若有住，虽行一善亦是轮回之因。三轮体空是般若在六度中的落实——以空慧行善，善而不着。',
+    relatedBooks: ['jingangjing', 'sixingguan']
+  },
+  {
+    id: 'faq-280',
+    question: '什么是"文字般若"、"观照般若"、"实相般若"？',
+    answer: '三种般若是修行的三个层次：文字般若——通过阅读经教、听闻佛法而理解般若义理，是入门。观照般若——依文字理解而起观照，于日用中观照万法皆空，是实修。实相般若——亲证万法实相，不借文字，如人饮水冷暖自知，是证悟。三般如灯：文字般若是灯说明书，观照般若是点灯，实相般若是灯亮了。禅宗所说是实相般若——不从文字来，从自性流出。但文字般若和观照般若是必经之路——不经文字不解方向，不经观照不证实相。六祖虽不识字，但闻经即悟——这是上根利智，非常人能及。',
+    relatedBooks: ['jingangjing', 'tanjing']
+  },
+  {
+    id: 'faq-281',
+    question: '什么是"止观"？和禅宗的参禅有什么关系？',
+    answer: '止是止息妄念——心专注一境不散乱。观是观照实相——以智慧照见万法皆空。止观是天台宗的核心教法——"教观双美"。止观与参禅的关系：止相当于定——摄心不乱；观相当于慧——照见实相。参禅中的看话头——提话头是止（心系一境），起疑情是观（观照话头）。默照禅更直接——默是止，照是观。六祖"定慧等持"即止观不二——定是止，慧是观，定慧一体即止观同时。禅宗虽不用止观之名，但实际功夫不离止观——只是禅宗更强调"即止即观、止观不二"。',
+    relatedBooks: ['tanjing']
+  },
+  {
+    id: 'faq-282',
+    question: '什么是"一行三昧"？和"般舟三昧"有什么区别？',
+    answer: '一行三昧出自《文殊说般若经》：法界一相，系缘法界——于一切时中安住法界一相（无相之相）。四祖道信以此教人念佛——念到能所双亡即入一行三昧。般舟三昧出自《般舟三昧经》：九十日中常行不坐不卧，专念阿弥陀佛——见佛现前。区别：一行三昧重在"理"——安住法界一相，不拘形式；般舟三昧重在"事"——九十日常行念佛，见佛现前。一行三昧偏于禅宗——心佛不二；般舟三昧偏于净土——求见佛。但二者都是三昧——心一境性，只是入手方法不同。',
+    relatedBooks: ['wenshu', 'anxin']
+  },
+  {
+    id: 'faq-283',
+    question: '什么是"法界观"？',
+    answer: '法界观是华严宗的观行方法——观法界缘起、事事无碍。法界观有三种：一、真空观——观一切法当体即空。二、理事无碍观——观理体与事相互相含摄。三、周遍含容观——观一事含一切事、一切事入一事。法界观是从教理入手的观行——通过分析理解法界缘起，渐入事事无碍的境界。禅宗的法界观更直截——不分析，直指：你当下这一心就是法界全相。六祖"何期自性能生万法"——万法从自性生，自性即法界。悟者一念即法界，不须渐次观。',
+    relatedBooks: ['yuanjuejing', 'tanjing']
+  },
+  {
+    id: 'faq-284',
+    question: '什么是"唯识观"？',
+    answer: '唯识观是唯识宗的观行方法——观一切法都是心识的变现，离识无境。唯识观从"万法唯识"入手：先观外境非有——一切外境都是心识变现，如梦中境。再观内识非有——心识本身也无自性，如《唯识三十颂》"乃至识想转，有所得乃无"。唯识观的目的是转识成智——从八识的染污转为四智的清净。禅宗虽不做唯识分析，但"万法唯心"的义理相通——六祖"何期自性能生万法"即唯识义。禅宗直指"能变的心"——不分析所变的境，直探心源。',
+    relatedBooks: ['bashiguijusong', 'tanjing']
+  },
+  {
+    id: 'faq-285',
+    question: '什么是"中观"？',
+    answer: '中观是龙树菩萨所立的根本见地——不落有、不落无，不落常、不落断，即二边而离二边。中观的核心方法：八不中道——"不生不灭，不常不断，不一不异，不来不去。"以八不破一切自性见——万法无自性，故不生不灭、不常不断……中观与禅宗的关系：禅宗的"即相离相"即中观——即相（不落空）、离相（不落有），即离不二即中道。六祖三十六对法"出没即离两边"即中观的活用。般若系经典（《金刚经》《心经》）都是中观思想的展开，禅宗以般若印心，故与中观一脉相承。',
+    relatedBooks: ['jingangjing', 'xinjing']
+  },
+  {
+    id: 'faq-286',
+    question: '什么是"如来禅"和"祖师禅"的区别？',
+    answer: '如来禅是经教中所说的禅定——从凡夫到成佛的渐修次第，依经论而修，有阶位可循。祖师禅是达摩以来"教外别传"的直指——不依经论次第，直指人心见性成佛，无阶位可立。区别：如来禅有次第——从初地到十地到佛果，渐次而修；祖师禅无次第——一悟即至佛地，不经阶次。如来禅从教入观——先理解再修证；祖师禅以心传心——不经理解直下承当。但二者不是对立的——如来禅是基础，祖师禅是超越；没有如来禅的基础，祖师禅易成狂慧。永嘉"顿觉了如来禅"——实则其风格已是祖师禅。',
+    relatedBooks: ['zhengdaoge']
+  },
+  {
+    id: 'faq-287',
+    question: '什么是"教外别传"？',
+    answer: '教外别传是禅宗的根本定位——在经教（教下）之外，另传一心。达摩来华，不携经卷，只传一心：以心传心，不立文字。教下从文字入理解，再依理解修观；宗门直指人心，不经文字，以心传心。但"教外别传"不是反经教——达摩以《楞伽》印心，六祖因《金刚》开悟。教外别传的意义：一、强调实证——不依赖文字理解，须亲证。二、直截——不经阶次，直下承当。三、超越——不拘经教，以心为宗。教外别传是禅宗区别于其他宗派的根本特质——其他宗派依教理修行，禅宗依心传修行。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-288',
+    question: '什么是"以心传心"？',
+    answer: '以心传心是禅宗传法的核心方式——师家以自心印证学人的心，不借文字言语。传的不是什么"东西"，是印证——师家所见与学人所见相同，即予印可。如达摩印慧可"我与汝安心竟"——不是给慧可安了心，是确认慧可"觅心了不可得"的见地真实。以心传心的前提：师家有真实悟境，学人也有真实悟境——悟境相同方能"以心传心"。如两镜相照——镜中镜，光光相摄。以心传心不是神秘体验，是悟者之间的默契——如人饮水冷暖自知，过来人一验便知。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-289',
+    question: '什么是"直指人心，见性成佛"？',
+    answer: '这八个字是禅宗的纲宗——直指人心：不借经教、不立阶次，直接指向你当下的心。见性成佛：见自本性，即名为佛。达摩来华传的就是这八个字。直指——不是告诉你一个道理，是逼你回光返照：你那个能听能看、能知能觉的，就是佛心——不必外求。见性——不是见一个什么境界，是认取那个一直在的。成佛——不是成了三十二相的佛，是悟了自心本来是佛。直指是方法，见性是目的，成佛是结果——三位一体，当下完成。这是禅宗最简洁、最直截的教法。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-290',
+    question: '什么是"不立文字，教外别传，直指人心，见性成佛"？',
+    answer: '这十六字是禅宗的完整纲宗：不立文字——不依赖文字经教，破对文字的执着。教外别传——在经教之外另传一心，不经文字直传心法。直指人心——直接指向你当下的心，不借阶次方便。见性成佛——见自本性即名为佛，不假外求。十六字从方法到目的，一以贯之：不立文字是方法，教外别传是定位，直指人心是手段，见性成佛是目标。达摩来华传的就是这十六字——禅宗一切教法皆从此流出。但须知：不立文字不是不用文字，教外别传不是不要经教——是超越，不是否定。',
+    relatedBooks: ['xuemaicong', 'tanjing']
+  },
+  {
+    id: 'faq-291',
+    question: '什么是"禅宗一千七百公案"？',
+    answer: '传统说法禅宗有约1700则公案，主要来源于《景德传灯录》《五灯会元》等灯史中历代祖师的机缘语录。每一则公案都是祖师应机施教的实录——或棒或喝、或言或默、或举杖或竖拂。1700则公案不是1700个谜题——是1700种接引学人的活方法。本知识库收录200条公案（ZEN_KOANS），涵盖历代重要祖师的机缘语录。公案不是用来理解的——是用来参究的。通过参公案逼拶起疑，疑到无路处爆破，即是大悟。1700则公案，归元无二——皆指归自性。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-292',
+    question: '什么是"禅宗史上的重要转折"？',
+    answer: '禅宗史上有几个重要转折：一、达摩来华——禅宗传入中国。二、六祖得法——南宗顿悟成为主流。三、滑台大会——神会确立南宗正统。四、五家分灯——禅宗从一花分为五叶，各成宗派。五、会昌法难——其他宗派衰落，禅宗独大。六、宋代文字禅——从唐代直指转向文字评唱。七、大慧宗杲倡看话禅——复兴真参实悟。八、明清禅宗衰落——禅净合流成为主流。每个转折都深刻影响了禅宗的面貌——从唐代活泼泼的直指，到宋代的文字评唱，到明清的禅净合流，禅宗不断在适应时代。',
+    relatedBooks: ['tanjing', 'shenhui', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-293',
+    question: '什么是"农禅并重"？为什么它对禅宗很重要？',
+    answer: '农禅并重是百丈怀海立清规所确立的禅宗传统——禅僧自食其力，以农业生产维持寺院。百丈"一日不作，一日不食"——年过九旬犹随众出坡。农禅并重的重要性：一、经济独立——不依赖信众供养，禅宗不受外部经济波动影响。二、禅在劳动——搬柴运水皆是道场，不拘坐禅形式。三、平等——住持与清众同劳，破除阶级。四、健康——农作锻炼身体，有助于坐禅。五、适应中国——印度佛教僧人不劳动，百丈适应中国社会将劳动纳入修行。农禅并重是禅宗中国化的重要标志。',
+    relatedBooks: ['baizhang']
+  },
+  {
+    id: 'faq-294',
+    question: '什么是"禅宗的中国化"？',
+    answer: '禅宗是佛教中国化的最高成果。印度佛教重出世、重禅定、重经教；禅宗重入世、重顿悟、重直指。中国化的表现：一、融入儒家——重视伦理品行（禅林宝训）、师道尊严（法脉传承）。二、融入道家——"平常心是道"与道家自然无为相通、"无心"与庄子心斋相通。三、农禅并重——适应中国农业社会。四、清规制度——不依印度律藏，自立禅门规矩。五、语录文体——使用中国白话，不拘梵文翻译格式。六、顿悟思想——契合中国人好简恶繁的文化性格。禅宗是印度佛教与中国文化融合的产物。',
+    relatedBooks: ['tanjing', 'baizhang', 'mazu']
+  },
+  {
+    id: 'faq-295',
+    question: '什么是"禅宗的衰落的内因"？',
+    answer: '禅宗从唐宋鼎盛到明清衰落，内因主要有：一、师资堕落——后世禅师无真实悟境，以盲引盲。二、文字禅泛滥——以理解代替参究，失了真参实悟。三、狂禅流弊——以"顿悟"为借口拨无因果。四、禅净合流——禅宗特色渐失，被净土宗同化。五、法门僵化——棒喝机锋成了固定套路，失去活般若。六、社会变迁——科举制度吸引人才，寺院人才减少。其中最根本的是师资堕落——没有真实悟境的禅师，一切法门都成死法。故禅宗复兴的关键在人才——有真实见地的善知识，方有活禅宗。',
+    relatedBooks: ['chanlinbaoxun']
+  },
+  {
+    id: 'faq-296',
+    question: '现代人学禅有什么优势和困难？',
+    answer: '优势：一、信息丰富——经典、语录、注解随手可得。二、科学思维——现代人逻辑思维强，有助于理解教理。三、心理压力大——逆境多，反而更容易发起疑情。四、禅修经验普及——正念、冥想等普及，有基础。困难：一、信息过载——看得多参得少，容易落入文字禅。二、生活节奏快——难以长时间专修。三、善知识难遇——真实有悟境的禅师极少。四、功利心强——求速成、求效果，与禅宗"无心"相违。五、信仰基础薄弱——对因果、轮回等缺乏信心。现代人学禅须注意：不要以理解代替参究，不要以效率思维对待修行，找到善知识或以经典为师。',
+    relatedBooks: ['chanlinbaoxun', 'tanjing']
+  },
+  {
+    id: 'faq-297',
+    question: '什么是"禅宗的现代意义"？',
+    answer: '禅宗在现代社会的意义：一、心理健康——禅的"无住""无心"有助于减轻焦虑和压力。二、生活智慧——"平常心是道"教人在忙碌中保持内心安宁。三、超越物质——"本来无一物"破对物质的执着，提供精神层面的满足。四、生态智慧——"一切唯心造"和"理事无碍"提供人与自然和谐的思想基础。五、跨文化对话——禅宗已被西方广泛接受，成为东西方文化交流的桥梁。六、自我认知——"直指人心"提供了一种直探自我本源的方法。禅宗的现代意义不在宗教形式，在其智慧——无住、无相、无得的智慧，对治现代人的执着和焦虑。',
+    relatedBooks: ['tanjing', 'mazu']
+  },
+  {
+    id: 'faq-298',
+    question: '什么是"禅与艺术"？禅宗对中国艺术有什么影响？',
+    answer: '禅宗深刻影响了中国艺术：一、绘画——禅画以简练笔墨直显心性，如牧溪、梁楷的写意画。二、书法——禅僧书法不拘法度，如怀素狂草、弘一大师书法。三、诗歌——禅诗以平常语显不平常境，如王维"行到水穷处，坐看云起时"。四、园林——禅意园林以枯山水表达空寂之美。五、茶道——禅茶一味，以茶事为修行。六、武术——禅宗"无心"与武术"无念"相通。禅对艺术的影响核心在"意境"——不重形似重神似，不重技巧重心性，以简驭繁，以无显有。这正是禅宗"即相离相"在艺术中的体现。',
+    relatedBooks: ['tanjing', 'mazu']
+  },
+  {
+    id: 'faq-299',
+    question: '什么是"禅茶一味"？',
+    answer: '"禅茶一味"指禅与茶在精神上的统一——以茶事为修行，以禅心品茶。起源：赵州从谂问新到僧"曾到过此间么？"僧答"曾到。"赵州曰"吃茶去。"又问一僧，答"不曾到。"赵州亦曰"吃茶去。"院主问"为什么到也吃茶去，不到也吃茶去？"赵州呼院主，院主应诺。赵州曰"吃茶去。"——三人都叫"吃茶去"，这就是著名的"赵州茶"。禅茶一味的核心：吃茶时了了分明，不起分别——好茶不贪、劣茶不嫌，当下即是禅。茶事中的烧水、备茶、奉茶，皆是修行——平常心是道，吃茶即是参禅。',
+    relatedBooks: ['mazu']
+  },
+  {
+    id: 'faq-300',
+    question: '初学者如何开始禅宗修行？完整的入门路径是什么？',
+    answer: '完整入门路径：一、建立见地——先读《六祖坛经》，明白"自性本清净、但用此心直了成佛"的根本见地。再读《信心铭》《心经》巩固般若基础。二、选择法门——妄想多者选看话头（参"无"字或"谁"字），心较细者选默照禅，信愿强者选念佛禅。三、每日坐禅——早晚各30分钟，先摄心再参究。四、日常保任——行住坐卧保持觉照，不离当下。五、逆境用功——烦恼来时正好参"烦恼的是谁"。六、寻善知识——有因缘则参访，无因缘则以经典为师。七、不急不躁——不求速悟，不贪境界，只管参究。时节因缘到来自有悟处。记住：禅在心地不在形式，在坚持不在猛利。',
+    relatedBooks: ['tanjing', 'xinxinming', 'xinjing', 'chanlinbaoxun']
+  },
+  {
     id: 'faq-52',
     question: '禅宗和净土宗可以同时修吗？',
     answer: '可以，古德云"有禅有净土，犹如戴角虎"。禅宗直指自性弥陀，净土宗仰仗他力接引，看似不同，实则互补：禅重理悟，净土重事修；禅破我执，净土破法执。四祖道信即以"念佛心是佛"开念佛禅之先河，永明延寿更倡禅净合流。现代人根器参禅不易，借佛号摄心、以禅观照性，禅净双修是稳妥路径。但须注意：参禅时参禅，念佛时念佛，不可两头狐疑。',
     relatedBooks: ['anxin', 'wenshu']
+  },
+  {
+    id: 'faq-301',
+    question: '《八识规矩颂》是唯识宗经典，与禅宗有什么关系？',
+    answer: '《八识规矩颂》虽为唯识宗纲要，但与禅宗修行密切相关。禅宗参"念佛是谁"——正是直探第七末那识的俱生我执；参至极处，须透过第八阿赖耶识方见本来面目。玄奘大师所云"五八六七果因转"——第六识分别心息，即妙观察智现；第七识我执破，即平等性智现。禅宗之"悟"本质上即是"转识成智"——一念迷即八识，一念悟即四智。故《八识规矩颂》可作禅者理解心识结构的参考。',
+    relatedBooks: ['bashiguijusong', 'tanjing']
+  },
+  {
+    id: 'faq-302',
+    question: '阿赖耶识与禅宗说的"自性"是同一个东西吗？',
+    answer: '不完全相同。阿赖耶识是唯识宗对心识结构的分析，含藏一切善恶种子，有染污与清净两面——迷时为阿赖耶（染污），悟时为大圆镜智（清净）。禅宗说的"自性"直指本来面目，本自清净，不属迷悟。可以说：阿赖耶识的清净面与自性相通，但唯识宗从分析入手，禅宗从直指入手——唯识教人转识成智，禅宗教人直下顿悟。法门不同，归趣一致。',
+    relatedBooks: ['bashiguijusong', 'tanjing']
+  },
+  {
+    id: 'faq-303',
+    question: '"转识成智"的"转"是转变还是消灭？',
+    answer: '是转变，不是消灭。如冰转为水——体性不变，功用迥异。冰能阻塞，水能润物；识能造业，智能度生。修行不是消灭八识，而是转其染污为清净：前五识转为成所作智，第六识转为妙观察智，第七识转为平等性智，第八识转为大圆镜智。六祖云"大圆镜智性清净"——转阿赖耶识为大圆镜智，即禅宗之"转识成智"。一念迷即八识，一念悟即四智。',
+    relatedBooks: ['bashiguijusong', 'tanjing']
+  },
+  {
+    id: 'faq-304',
+    question: '《无门关》的"无门"是什么意思？如何参"无"字？',
+    answer: '"无门"即以无门为法门——大道本无门，不从任何概念、道理、方便进入。无门慧开令学人参赵州"狗子无佛性"的"无"字——不是作虚无会，不是作有无会，只管提撕。通身起疑团，如吞热铁丸，吐又吐不出，久久纯熟，蓦然打发，惊天动地。透得此关，乾坤独步——逢佛杀佛，逢祖杀祖，于生死岸头得大自在。《无门关》四十八则公案，每一则都是一把锁，须以疑情为钥匙一一打开。',
+    relatedBooks: ['wumenguan']
+  },
+  {
+    id: 'faq-305',
+    question: '《无门关》与《碧岩录》有什么区别？',
+    answer: '《碧岩录》是圜悟克勤对百则公案的评唱，以文字华丽、引经据典著称，重在对公案的阐释与赏析；《无门关》是无门慧开对四十八则公案的评唱，以简练直截著称，重在逼拶学人参究。《碧岩录》如老师讲解，引人入胜；《无门关》如禅师逼拶，逼人透脱。大慧宗杲因学人沉迷《碧岩录》文字而焚其刻板，无门慧开则干脆以"无门"为宗——两者风格不同，同归向上一路。',
+    relatedBooks: ['wumenguan', 'chanlinbaoxun']
+  },
+  {
+    id: 'faq-306',
+    question: '六祖惠能直指惠明"本来面目"——什么是本来面目？',
+    answer: '六祖云"不思善不思恶，正与么时，那个是明上座本来面目"——善恶念头不起的当下，那个了了常知的，就是本来面目。它不是生灭法，不在时空之中——"本来面目没处藏，世界坏时渠不朽"。无门慧开评曰"譬如新荔支剥了壳，去了核送在尔口里，只要尔咽一咽"——六祖老婆心切，几乎替你嚼碎了。本来面目即自性、即佛性、即真心，只是从不同角度命名。它不是你"找到"的，而是你"认出"的——本自具足，从未丢失。',
+    relatedBooks: ['wumenguan', 'tanjing']
+  },
+  {
+    id: 'faq-307',
+    question: '末那识是什么？与禅宗参"谁"字有什么关系？',
+    answer: '末那识是唯识宗第七识，恒审思量第八识为"我"——是一切俱生我执的根源。《八识规矩颂》云"恒审思量我相随，有情日夜镇昏迷"——末那识日夜不停地将第八识执为"我"，有情因此沉迷昏昧。禅宗参"念佛是谁"——正是直探末那识的俱生我执：逼这个"我"现形，而后破之。破我执不是道理上破，而是参究到山穷水尽处，蓦然爆破——俱生我执顿断，平等性智现前。',
+    relatedBooks: ['bashiguijusong']
+  },
+  {
+    id: 'faq-308',
+    question: '"大道无门，千差有路"——无门慧开的禅风有什么特色？',
+    answer: '无门慧开以"无门为法门"立宗，其特色有三：一、简练直截——不尚文字华美，每则公案评唱不过数行，颂古四句，直指人心。二、逼拶参究——不以道理解释公案，而以公案为敲门砖，逼学人起疑情、参话头。三、以"无"字为宗——将赵州"狗子无佛性"的"无"字作为四十八则公案之首，令学人参究此"无"字，通身起疑团，如吞热铁丸，久久纯熟，蓦然透脱。其禅风对后世日本禅宗影响极深。',
+    relatedBooks: ['wumenguan']
   }
 ];

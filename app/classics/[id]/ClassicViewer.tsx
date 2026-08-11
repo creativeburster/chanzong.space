@@ -10,7 +10,7 @@ import { GlossaryCard } from '@/components/GlossaryCard';
 import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCard, RelatedBooksCard, AudioCard } from '@/components/ClassicCards';
 import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS } from '@/lib/taxonomy';
+import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
@@ -40,7 +40,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id));
   const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
   const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
-  const relQas = ZEN_QAS.filter((q) => q.relatedBooks.includes(meta.id));
+  const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
 
   // 自动提取卡片数据
   const extracted = extractCards(rawContent);
@@ -233,7 +233,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {relQas.map((q) => (
-                      <Link key={q.id} href={`/qa/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
+                      <Link key={q.id} href={`/koan/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
                         {t(q.question)}
                       </Link>
                     ))}

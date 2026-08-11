@@ -12,7 +12,11 @@ import { useLang } from '@/context/LangContext';
 
 export default function ConceptsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [displayCount, setDisplayCount] = useState(12);
   const { t } = useLang();
+
+  const visibleConcepts = ZEN_CONCEPTS.slice(0, displayCount);
+  const hasMore = displayCount < ZEN_CONCEPTS.length;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -36,7 +40,7 @@ export default function ConceptsPage() {
           </div>
 
           <div className="space-y-4">
-            {ZEN_CONCEPTS.map((concept) => (
+            {visibleConcepts.map((concept) => (
               <Link
                 key={concept.id}
                 href={`/concepts/${concept.id}`}
@@ -66,6 +70,26 @@ export default function ConceptsPage() {
               </Link>
             ))}
           </div>
+
+          {hasMore && (
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                <div className="h-full bg-emerald-600 rounded-full transition-all" style={{ width: `${Math.round((displayCount / ZEN_CONCEPTS.length) * 100)}%` }} />
+              </div>
+              <button
+                onClick={() => setDisplayCount((c) => c + 12)}
+                className="px-6 py-3 rounded-xl bg-emerald-700 text-white text-[14px] font-semibold hover:bg-emerald-800 transition-all shadow-md"
+              >
+                {t('加载更多')} ({displayCount} / {ZEN_CONCEPTS.length})
+              </button>
+            </div>
+          )}
+
+          {!hasMore && ZEN_CONCEPTS.length > 12 && (
+            <p className="mt-6 text-center text-xs text-slate-400">
+              {t('已显示全部')} {ZEN_CONCEPTS.length} {t('条概念')}
+            </p>
+          )}
         </main>
       </div>
 

@@ -4,13 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import manifest from '@/manifest.json';
-import { ZEN_CONCEPTS, ZEN_QAS, ZEN_PERSONS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS, ZEN_KOANS, ZEN_PERSONS } from '@/lib/taxonomy';
 
 export const StatsOverview: React.FC = () => {
   const stats = [
     { num: `${manifest.length}`, label: '核心著作', action: '查看全部', href: '/books' },
     { num: `${ZEN_CONCEPTS.length}`, label: '核心概念', action: '探索概念', href: '/concepts' },
-    { num: `${ZEN_QAS.length}`, label: '精选问答', action: '研读问答', href: '/qa' },
+    { num: `${ZEN_KOANS.length}`, label: '公案', action: '参究公案', href: '/koan' },
     { num: `${ZEN_PERSONS.length}`, label: '关键人物', action: '阅读传记', href: '/persons' },
   ];
 

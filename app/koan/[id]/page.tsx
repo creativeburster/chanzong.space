@@ -7,7 +7,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { ZEN_QAS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS } from '@/lib/taxonomy';
+import { ZEN_KOANS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS } from '@/lib/taxonomy';
 import { ArrowLeft, BookOpen, Quote, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { useLang } from '@/context/LangContext';
@@ -18,11 +18,11 @@ interface PageProps {
   };
 }
 
-export default function QADetailPage({ params }: PageProps) {
+export default function KoanDetailPage({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const { t } = useLang();
 
-  const qa = ZEN_QAS.find((q) => q.id === params.id);
+  const qa = ZEN_KOANS.find((q) => q.id === params.id);
   if (!qa) {
     notFound();
   }
@@ -36,7 +36,7 @@ export default function QADetailPage({ params }: PageProps) {
 
         <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
           <Link
-            href="/qa"
+            href="/koan"
             className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-slate-500 hover:text-rose-800 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />

@@ -12,7 +12,11 @@ import { useLang } from '@/context/LangContext';
 
 export default function PersonsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [displayCount, setDisplayCount] = useState(12);
   const { t } = useLang();
+
+  const visiblePersons = ZEN_PERSONS.slice(0, displayCount);
+  const hasMore = displayCount < ZEN_PERSONS.length;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -36,7 +40,7 @@ export default function PersonsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {ZEN_PERSONS.map((person) => (
+            {visiblePersons.map((person) => (
               <Link
                 key={person.id}
                 href={`/persons/${person.id}`}
@@ -74,6 +78,26 @@ export default function PersonsPage() {
               </Link>
             ))}
           </div>
+
+          {hasMore && (
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                <div className="h-full bg-purple-600 rounded-full transition-all" style={{ width: `${Math.round((displayCount / ZEN_PERSONS.length) * 100)}%` }} />
+              </div>
+              <button
+                onClick={() => setDisplayCount((c) => c + 12)}
+                className="px-6 py-3 rounded-xl bg-purple-700 text-white text-[14px] font-semibold hover:bg-purple-800 transition-all shadow-md"
+              >
+                {t('加载更多')} ({displayCount} / {ZEN_PERSONS.length})
+              </button>
+            </div>
+          )}
+
+          {!hasMore && ZEN_PERSONS.length > 12 && (
+            <p className="mt-6 text-center text-xs text-slate-400">
+              {t('已显示全部')} {ZEN_PERSONS.length} {t('位人物')}
+            </p>
+          )}
         </main>
       </div>
 

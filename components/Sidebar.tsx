@@ -16,7 +16,7 @@ import {
   X,
   Lightbulb,
 } from 'lucide-react';
-import { ZEN_CONCEPTS, ZEN_METHODS, ZEN_QAS, ZEN_PERSONS, ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_PERSONS, ZEN_FAQS } from '@/lib/taxonomy';
 import manifest from '@/manifest.json';
 import { useLang } from '@/context/LangContext';
 
@@ -201,9 +201,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
               <div className="relative group">
                 <Link
-                  href="/qa"
+                  href="/koan"
                   className={`relative flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
-                    isActive('/qa') || pathname.startsWith('/qa')
+                    isActive('/koan') || pathname.startsWith('/koan')
                       ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
                       : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
                   }`}
@@ -213,15 +213,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <span>{t('禅宗公案')}</span>
                   </div>
                   <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
-                    {ZEN_QAS.length}
+                    {ZEN_KOANS.length}
                   </span>
                 </Link>
 
                 <div className="hidden group-hover:block absolute left-full top-1/2 -translate-y-1/2 w-52 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl py-2 z-50 hover:block">
                   <Link
-                    href="/qa"
+                    href="/koan"
                     className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
-                      isActive('/qa')
+                      isActive('/koan')
                         ? 'text-amber-300 font-semibold bg-amber-500/10'
                         : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
                     }`}
@@ -230,12 +230,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <MessageSquare className="w-4 h-4 text-rose-400" />
                       <span>{t('公案原案')}</span>
                     </div>
-                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_QAS.length}</span>
+                    <span className="text-[11px] text-slate-400 font-mono">{ZEN_KOANS.length}</span>
                   </Link>
                   <Link
-                    href="/qa/faq"
+                    href="/faq"
                     className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
-                      isActive('/qa/faq')
+                      isActive('/faq')
                         ? 'text-amber-300 font-semibold bg-amber-500/10'
                         : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
                     }`}
