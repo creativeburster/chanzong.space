@@ -2241,6 +2241,24 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["kanhuatou", "wumen"],
     "relatedPersons": ["zhaozhou", "mazu", "huineng"],
     "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "nanyang-huizhong",
+    "name": "南阳慧忠",
+    "title": "南阳国师 / 六祖门下三大士之一",
+    "era": "唐代 (675-775)",
+    "lifeStory": "慧忠禅师，越州诸暨（今浙江诸暨）人，俗姓冉。少依六祖惠能出家，为六祖门下三大士之一（与荷泽神会、永嘉玄觉齐名）。师住南阳白崖山党子谷，四十余年不下山，道俗归向者众。唐代宗、唐德宗两朝皆礼为国师，赐号\u201c南阳慧忠国师\u201d。师以\u201c无缝塔\u201d公案闻名：代宗问\u201c师百年后所须何物？\u201d师曰\u201c但建一无缝塔\u201d。帝曰\u201c请师塔样\u201d，师良久曰\u201c会么？\u201d帝曰\u201c不会\u201d。师曰\u201c贫道有息虑忘机之友，令他造去\u201d。无缝塔者，喻真心本圆，无有缝隙，不假修造。师又以\u201c三三昧\u201d接人——圆通三昧、一行三昧、无碍三昧，融通教理与禅观，为六祖门下学养最深者。",
+    "teachings": "慧忠宗风以\u201c无缝塔\u201d为施设：真心本圆，无有缝隙，不假修造。其教融通教理与禅观，以三三昧接人，既承六祖\u201c直指人心\u201d之旨，又兼通经教，为六祖门下学养最深者。师常以\u201c国师三唤侍者\u201d公案勘验学人——连唤三声\u201c佛殿\u201d，侍者三应，师曰\u201c我以为你辜负我，原来是你辜负我\u201d，于平常呼唤中示\u201c即心即佛\u201d之旨。",
+    "quotes": [
+      "但建一无缝塔。 —答代宗问",
+      "贫道有息虑忘机之友，令他造去。",
+      "我以为你辜负我，原来是你辜负我。 —三唤侍者公案"
+    ],
+    "classics": [],
+    "relatedConcepts": ["self-nature", "samadhi", "non-duality"],
+    "relatedMethods": [],
+    "relatedPersons": ["huineng"],
+    "relatedBooks": ["tanjing"]
   }
 ];
 

@@ -29,11 +29,11 @@ export const LineageGraph: React.FC = () => {
 
   // 2. 六祖门下五大分支
   const huinengDisciples: MasterNode[] = [
-    { name: '南阳慧忠', title: '国师', sub: '无缝塔' },
+    { id: 'nanyang-huizhong', name: '南阳慧忠', title: '国师', sub: '无缝塔' },
     { id: 'yongjia', name: '永嘉玄觉', title: '真觉禅师', sub: '证道歌' },
     { id: 'shenhui', name: '荷泽神会', title: '荷泽宗', sub: '显宗记 奠定南宗正统' },
-    { name: '南岳怀让', title: '南岳系主干', sub: '磨砖作镜 开马祖一脉' },
-    { name: '青原行思', title: '青原系主干', sub: '圣谛亦不为 开石头一脉' },
+    { id: 'huairang', name: '南岳怀让', title: '南岳系主干', sub: '磨砖作镜 开马祖一脉' },
+    { id: 'xingsi', name: '青原行思', title: '青原系主干', sub: '圣谛亦不为 开石头一脉' },
   ];
 
   return (
@@ -237,9 +237,11 @@ export const LineageGraph: React.FC = () => {
 
                       {/* 沩山 -> 沩仰宗 */}
                       <div className="p-3 rounded-xl bg-amber-50/80 border border-amber-200">
-                        <div className="text-xs font-bold text-slate-900">{t('沩山灵祐')}</div>
+                        <Link href="/persons/weishan-lingyou" className="text-xs font-bold text-slate-900 hover:underline">
+                      {t('沩山灵祐')}
+                    </Link>
                         <div className="mt-1 flex items-center justify-between">
-                          <span className="text-xs font-bold font-serif-zen text-amber-900">{t('仰山慧寂')}</span>
+                          <Link href="/persons/yangshan-huiji" className="text-xs font-bold font-serif-zen text-amber-900 hover:underline">{t('仰山慧寂')}</Link>
                           <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-600 text-white shadow-sm">
                             {t('沩仰宗')}
                           </span>
@@ -253,7 +255,7 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-xs font-bold text-slate-500 mb-1">{t('南泉系')}</div>
-                    <div className="text-base font-bold font-serif-zen text-slate-900">{t('南泉普愿')}</div>
+                    <Link href="/persons/nanquan-puyuan" className="text-base font-bold font-serif-zen text-slate-900 hover:text-amber-800 hover:underline">{t('南泉普愿')}</Link>
                     <div className="text-[11px] text-slate-500 mb-3">{t('南泉斩猫')}</div>
 
                     <div className="pt-3 border-t border-slate-200">
@@ -294,7 +296,9 @@ export const LineageGraph: React.FC = () => {
               {/* 石头 */}
               <div className="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-center mb-6">
                 <div className="text-xs font-bold text-emerald-800">{t('石头大师')}</div>
-                <div className="text-lg font-bold font-serif-zen text-slate-900">{t('石头希迁')}</div>
+                <Link href="/persons/shitou" className="text-lg font-bold font-serif-zen text-slate-900 hover:text-emerald-800 hover:underline">
+                  {t('石头希迁')}
+                </Link>
                 <div className="text-xs text-slate-500 mt-0.5">{t('参同契 · 草庵歌')}</div>
               </div>
 
@@ -305,13 +309,13 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('药山枝线')}</div>
-                    <div className="text-xs font-bold text-slate-900">{t('药山惟俨')}</div>
+                    <Link href="/persons/yaoshan-weiyan" className="text-xs font-bold text-slate-900 hover:underline">{t('药山惟俨')}</Link>
                     <div className="text-xs font-bold text-slate-900 mt-1">
                       <Link href="/persons/dongshan" className="hover:underline hover:text-emerald-800">
                         {t('洞山良价')}
                       </Link>
                     </div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">{t('曹山本寂')}</div>
+                    <Link href="/persons/caoshan-benji" className="text-[11px] text-slate-500 mt-0.5 hover:underline">{t('曹山本寂')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-emerald-600 text-white shadow-sm block">
@@ -324,9 +328,19 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('天皇枝线')}</div>
-                    <div className="text-[11px] text-slate-700">{t('天皇道悟 → 龙潭')}</div>
-                    <div className="text-[11px] text-slate-700">{t('德山宣鉴 → 雪峰')}</div>
-                    <div className="text-xs font-bold text-slate-900 mt-1">{t('云门文偃')}</div>
+                    <div className="text-[11px] text-slate-700">
+                      <Link href="/persons/tianhuang-daowu" className="hover:text-purple-700 hover:underline">{t('天皇道悟')}</Link>
+                      {' → '}
+                      <Link href="/persons/longtan-chongxin" className="hover:text-purple-700 hover:underline">{t('龙潭')}</Link>
+                    </div>
+                    <div className="text-[11px] text-slate-700">
+                      <Link href="/persons/deshan-xuanjian" className="hover:text-purple-700 hover:underline">{t('德山宣鉴')}</Link>
+                      {' → '}
+                      <Link href="/persons/xuefeng-yicun" className="hover:text-purple-700 hover:underline">{t('雪峰')}</Link>
+                    </div>
+                    <div className="text-xs font-bold text-slate-900 mt-1">
+                      <Link href="/persons/yunmen" className="hover:text-purple-700 hover:underline">{t('云门文偃')}</Link>
+                    </div>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-purple-600 text-white shadow-sm block">
@@ -339,9 +353,11 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('罗汉枝线')}</div>
-                    <div className="text-xs font-bold text-slate-900">{t('罗汉桂琛')}</div>
-                    <div className="text-[11px] text-slate-700 mt-0.5">{t('玄沙师备')}</div>
-                    <div className="text-xs font-bold text-slate-900 mt-1">{t('法眼文益')}</div>
+                    <Link href="/persons/luohan-guichen" className="text-xs font-bold text-slate-900 hover:underline">{t('罗汉桂琛')}</Link>
+                    <div className="text-[11px] text-slate-700 mt-0.5">
+                      <Link href="/persons/xuansha-shibei" className="hover:text-indigo-700 hover:underline">{t('玄沙师备')}</Link>
+                    </div>
+                    <Link href="/persons/fayan-wenyi" className="text-xs font-bold text-slate-900 mt-1 hover:underline">{t('法眼文益')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-indigo-600 text-white shadow-sm block">
