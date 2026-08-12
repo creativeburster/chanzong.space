@@ -7,6 +7,7 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { BookOpen, ChevronRight } from 'lucide-react';
+import { SiteFooter } from '@/components/SiteFooter';
 
 export default function BooksPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -108,6 +109,8 @@ export default function BooksPage() {
             </p>
           )}
         </main>
+
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

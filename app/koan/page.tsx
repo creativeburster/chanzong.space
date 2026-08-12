@@ -9,6 +9,7 @@ import manifest from '@/manifest.json';
 import { ZEN_KOANS } from '@/lib/taxonomy';
 import { MessageCircle } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { SiteFooter } from '@/components/SiteFooter';
 
 export default function KoansPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -99,6 +100,8 @@ export default function KoansPage() {
             </section>
           </div>
         </main>
+
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

@@ -6,12 +6,14 @@ export const StatsOverview = () => {
   const stats = [
     { num: `${STATS.classics}`, label: '核心著作', action: '查看全部', href: '/books' },
     { num: `${STATS.concepts}`, label: '核心概念', action: '探索概念', href: '/concepts' },
+    { num: `${STATS.methods}`, label: '修持法门', action: '修持法门', href: '/methods' },
     { num: `${STATS.koans}`, label: '公案', action: '参究公案', href: '/koan' },
+    { num: `${STATS.faqs}`, label: '经典问答', action: '阅读问答', href: '/faq' },
     { num: `${STATS.persons}`, label: '关键人物', action: '阅读传记', href: '/persons' },
   ];
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 my-10 max-w-6xl mx-auto">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 my-10 max-w-6xl mx-auto">
       {stats.map((item, idx) => (
         <Link
           key={idx}

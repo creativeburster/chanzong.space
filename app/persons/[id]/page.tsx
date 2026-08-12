@@ -12,6 +12,7 @@ import { ArrowLeft, BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Shar
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
 import { useLang } from '@/context/LangContext';
+import { SiteFooter } from '@/components/SiteFooter';
 
 interface PageProps {
   params: {
@@ -216,9 +217,7 @@ export default function PersonDetailPage({ params }: PageProps) {
           })()}
         </main>
 
-        <footer className="bg-[#0B1120] text-slate-400 border-t border-slate-800 py-8 text-xs text-center">
-          © {new Date().getFullYear()} 禅宗知识库 (chanzong.space)
-        </footer>
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

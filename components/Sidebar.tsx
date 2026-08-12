@@ -15,6 +15,8 @@ import {
   ChevronRight,
   X,
   Lightbulb,
+  PanelLeftClose,
+  PanelLeftOpen,
 } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 import sidebarConcepts from '@/lib/sidebar-concepts.json';
@@ -133,6 +135,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const [moreClassicsOpen, setMoreClassicsOpen] = useState(false);
   const [moreConceptsOpen, setMoreConceptsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopCollapsed, setDesktopCollapsed] = useState(false);
 
   // 监听顶栏汉堡按钮派发的开关事件
   useEffect(() => {
@@ -145,6 +148,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
+
+  const toggleDesktopSidebar = () => {
+    setDesktopCollapsed((v) => {
+      const next = !v;
+      localStorage.setItem('zen:sidebar-collapsed', String(next));
+      return next;
+    });
+  };
 
   const isActive = (path: string) => pathname === path;
 
@@ -297,6 +308,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </div>
 
               <Link
+                href="/faq"
+                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                  isActive('/faq')
+                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center space-x-3">
+                  <Lightbulb className="w-5 h-5 text-amber-400" />
+                  <span>{t('经典问答')}</span>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
+                  {STATS.faqs}
+                </span>
+              </Link>
+
+              <Link
                 href="/persons"
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/persons')
@@ -438,9 +466,30 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <>
       {/* 桌面端固定侧边栏 */}
-      <aside className="hidden md:flex w-72 bg-[#0F172A] text-slate-200 flex-col h-screen sticky top-0 shrink-0 border-r border-slate-800 shadow-2xl overflow-y-auto scrollbar-none z-30">
-        {sidebarContent}
-      </aside>
+      {!desktopCollapsed && (
+        <aside className="hidden md:flex w-72 bg-[#0F172A] text-slate-200 flex-col h-screen sticky top-0 shrink-0 border-r border-slate-800 shadow-2xl overflow-y-auto overflow-x-visible scrollbar-none z-30">
+          {/* 右上角折叠按钮 */}
+          <button
+            onClick={toggleDesktopSidebar}
+            className="absolute top-[-3.5px] right-[-6px] z-40 w-12 h-12 rounded-2xl flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800/80 transition-all"
+            aria-label="收起侧边栏"
+          >
+            <PanelLeftClose className="w-6 h-6" />
+          </button>
+          {sidebarContent}
+        </aside>
+      )}
+
+      {/* 桌面端折叠后的展开按钮 */}
+      {desktopCollapsed && (
+        <button
+          onClick={toggleDesktopSidebar}
+          className="hidden md:flex fixed -left-1 top-0 z-30 w-12 h-12 bg-[#0F172A] border-r border-t border-b border-slate-800 rounded-r-2xl items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-all shadow-lg"
+          aria-label="展开侧边栏"
+        >
+          <PanelLeftOpen className="w-6 h-6" />
+        </button>
+      )}
 
       {/* 移动端抽屉菜单 */}
       {mobileOpen && (

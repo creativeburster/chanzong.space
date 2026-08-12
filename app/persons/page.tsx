@@ -9,6 +9,7 @@ import manifest from '@/manifest.json';
 import { ZEN_PERSONS } from '@/lib/taxonomy';
 import { Users, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { SiteFooter } from '@/components/SiteFooter';
 
 export default function PersonsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -99,6 +100,8 @@ export default function PersonsPage() {
             </p>
           )}
         </main>
+
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

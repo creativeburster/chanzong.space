@@ -14,6 +14,7 @@ import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/l
 import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare, HelpCircle } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { LinkCardGrid } from '@/components/InternalLinkCards';
+import { SiteFooter } from '@/components/SiteFooter';
 
 interface ClassicViewerProps {
   meta: ClassicItem;
@@ -284,9 +285,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           </div>
         </main>
 
-        <footer className="bg-[#0B1120] text-slate-400 border-t border-slate-800 py-8 text-xs text-center">
-          © {new Date().getFullYear()} 禅宗知识库 (chanzong.space)
-        </footer>
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

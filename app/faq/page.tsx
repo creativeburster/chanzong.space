@@ -9,6 +9,7 @@ import manifest from '@/manifest.json';
 import { ZEN_FAQS } from '@/lib/taxonomy';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Filter } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { SiteFooter } from '@/components/SiteFooter';
 
 type FAQEntry = {
   id: string;
@@ -229,6 +230,8 @@ export default function FAQPage() {
             </div>
           )}
         </main>
+
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />

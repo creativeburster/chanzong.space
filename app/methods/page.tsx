@@ -9,6 +9,7 @@ import manifest from '@/manifest.json';
 import { ZEN_METHODS } from '@/lib/taxonomy';
 import { Compass, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { SiteFooter } from '@/components/SiteFooter';
 
 export default function MethodsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -96,6 +97,8 @@ export default function MethodsPage() {
             </p>
           )}
         </main>
+
+        <SiteFooter />
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
