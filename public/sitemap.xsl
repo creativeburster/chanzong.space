@@ -55,9 +55,9 @@
           <p class="stats">共 <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> 个页面</p>
 
           <details class="g-static" open="open">
-            <summary><div class="left"><span>主要页面</span><span class="group-badge"><xsl:value-of select="count(sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq'))])"/></span></div><span class="arrow">▶</span></summary>
+            <summary><div class="left"><span>主要页面</span><span class="group-badge"><xsl:value-of select="count(sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))])"/></span></div><span class="arrow">▶</span></summary>
             <div class="table-wrap"><table><thead><tr><th>URL</th><th style="width:130px;">更新频率</th><th style="width:90px;text-align:center;">优先级</th></tr></thead><tbody>
-              <xsl:for-each select="sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq'))]"><xsl:call-template name="row"/></xsl:for-each>
+              <xsl:for-each select="sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))]"><xsl:call-template name="row"/></xsl:for-each>
             </tbody></table></div>
           </details>
 
