@@ -14,7 +14,7 @@ import { BookOpen, Gem, Compass, MessageSquare, Users, Lightbulb, ChevronDown, C
 export default function SitemapPage() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
-    classics: true,
+    classics: false,
     concepts: false,
     methods: false,
     koans: false,
