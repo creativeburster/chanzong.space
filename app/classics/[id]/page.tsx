@@ -44,6 +44,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
       title: `${meta.title} · ${meta.author}`,
       description: summary.slice(0, 140),
     },
+    other: {
+      'article:author': meta.author,
+      'article:section': meta.category,
+    },
   };
 }
 
@@ -61,14 +65,42 @@ export default function ClassicPage({ params }: PageProps) {
 
   const htmlContent = marked.parse(content || '*正在提取该篇章全文中，请稍候刷新...*', { async: false });
 
+  const articleSummary = meta.summary || `${meta.title}，${meta.author}著，${meta.category}类经典。`;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: meta.title,
+    author: {
+      '@type': 'Person',
+      name: meta.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: '禅宗知识库',
+      url: 'https://chanzong.space',
+    },
+    description: articleSummary.slice(0, 160),
+    url: `https://chanzong.space/classics/${meta.id}`,
+    inLanguage: 'zh-CN',
+    genre: meta.category,
+    wordCount: meta.word_count,
+  };
+
   return (
-    <ClassicViewer
-      meta={meta}
-      htmlContent={htmlContent}
-      rawContent={content}
-      manifest={manifest}
-      prevItem={prevItem}
-      nextItem={nextItem}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ClassicViewer
+        meta={meta}
+        htmlContent={htmlContent}
+        rawContent={content}
+        manifest={manifest}
+        prevItem={prevItem}
+        nextItem={nextItem}
+      />
+    </>
   );
 }

@@ -7,9 +7,10 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS } from '@/lib/taxonomy';
-import { ArrowLeft, BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare } from 'lucide-react';
+import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import { ArrowLeft, BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare, Lightbulb } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
+import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
 import { useLang } from '@/context/LangContext';
 
 interface PageProps {
@@ -108,17 +109,13 @@ export default function MethodDetailPage({ params }: PageProps) {
                 <Users className="w-5 h-5 text-blue-700" />
                 <span>{t('👥 代表祖师')}</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {method.relatedPersons.map(pid => {
+              <LinkCardGrid
+                items={method.relatedPersons.map(pid => {
                   const rp = ZEN_PERSONS.find(p => p.id === pid);
-                  if (!rp) return null;
-                  return (
-                    <Link key={pid} href={`/persons/${pid}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
-                      {t(rp.name)}
-                    </Link>
-                  );
-                })}
-              </div>
+                  return rp ? { id: rp.id, title: rp.name, summary: rp.title, href: `/persons/${pid}` } : null;
+                }).filter(Boolean) as any[]}
+                variant="blue"
+              />
             </div>
           )}
 
@@ -129,17 +126,13 @@ export default function MethodDetailPage({ params }: PageProps) {
                 <Tag className="w-5 h-5 text-purple-700" />
                 <span>{t('🔗 核心关联概念')}</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {method.relatedConcepts.map(cid => {
+              <LinkCardGrid
+                items={method.relatedConcepts.map(cid => {
                   const rc = ZEN_CONCEPTS.find(c => c.id === cid);
-                  if (!rc) return null;
-                  return (
-                    <Link key={cid} href={`/concepts/${cid}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition-colors">
-                      {t(rc.title)}
-                    </Link>
-                  );
-                })}
-              </div>
+                  return rc ? { id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${cid}` } : null;
+                }).filter(Boolean) as any[]}
+                variant="purple"
+              />
             </div>
           )}
 
@@ -153,16 +146,16 @@ export default function MethodDetailPage({ params }: PageProps) {
                 <MessageSquare className="w-5 h-5 text-rose-700" />
                 <span>{t('❓ 相关公案机锋')}</span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {ZEN_KOANS.filter(q =>
+              <LinkCardGrid
+                items={ZEN_KOANS.filter(q =>
                   q.relatedConcepts.some(c => method.relatedConcepts.includes(c)) ||
                   q.relatedPersons.some(p => method.relatedPersons.includes(p))
-                ).map(q => (
-                  <Link key={q.id} href={`/koan/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
-                    {t(q.question)}
-                  </Link>
-                ))}
-              </div>
+                ).map(q => ({
+                  id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}`
+                }))}
+                variant="rose"
+                columns={3}
+              />
             </div>
           )}
 
@@ -175,29 +168,42 @@ export default function MethodDetailPage({ params }: PageProps) {
                <BookOpen className="w-5 h-5 text-amber-700" />
                <span>{t('📚 相关传世经典')}</span>
              </div>
- 
-             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-               {method.relatedBooks.map((bookId, idx) => {
+
+             <LinkCardGrid
+               items={method.relatedBooks.map(bookId => {
                  const book = manifest.find(m => m.id === bookId);
-                 return (
-                 <Link
-                   key={idx}
-                   href={`/classics/${bookId}`}
-                   className="p-4 rounded-2xl bg-amber-50/50 border border-amber-200/60 flex items-center justify-between hover:bg-amber-100/50 transition-colors"
-                 >
-                   <span className="text-[15px] font-semibold font-serif-zen text-slate-900">
-                     📖 {t(book ? book.title : bookId)}
-                   </span>
-                   <span className="text-[13px] font-semibold text-amber-800">
-                     {t('研读原文')} →
-                   </span>
-                 </Link>
-                 );
+                 return { id: bookId, title: book ? book.title : bookId, summary: book?.author, href: `/classics/${bookId}` };
                })}
-             </div>
+               variant="amber"
+             />
            </div>
              </>
           )}
+
+          {/* 相关问答 */}
+          {ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
+                <Lightbulb className="w-5 h-5 text-emerald-700" />
+                <span>{t('💡 相关参究问答')}</span>
+              </div>
+              <LinkCardGrid
+                items={ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
+                  id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
+                }))}
+                variant="emerald"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 上下篇导航 */}
+          {(() => {
+            const idx = ZEN_METHODS.findIndex(m => m.id === method.id);
+            const prev = idx > 0 ? { id: ZEN_METHODS[idx - 1].id, title: ZEN_METHODS[idx - 1].title, href: `/methods/${ZEN_METHODS[idx - 1].id}` } : null;
+            const next = idx < ZEN_METHODS.length - 1 ? { id: ZEN_METHODS[idx + 1].id, title: ZEN_METHODS[idx + 1].title, href: `/methods/${ZEN_METHODS[idx + 1].id}` } : null;
+            return <PrevNextNav prev={prev} next={next} />;
+          })()}
         </main>
 
         <footer className="bg-[#0B1120] text-slate-400 border-t border-slate-800 py-8 text-xs text-center">

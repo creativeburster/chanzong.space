@@ -70,6 +70,52 @@ const conceptIconMap: Record<string, string> = {
 
 const conceptIcon = (id: string) => conceptIconMap[id] ?? '💎';
 
+// 40部经典差异化图标映射
+const classicIconMap: Record<string, string> = {
+  'qifo': '🪷',
+  'juelin': '🕉️',
+  'wenshu': '🗡️',
+  'wuran': '🌅',
+  'zhangzhi': '👆',
+  'xuemaicong': '🩸',
+  'wuxinglun': '💡',
+  'poxianglun': '🔨',
+  'wuxinlun': '🚫',
+  'xixulun': '🤫',
+  'sixingguan': '🚪',
+  'xinxinming': '✉️',
+  'fangcunlun': '📐',
+  'anxin': '🧘',
+  'zuishangcheng': '👑',
+  'tanjing': '📜',
+  'zhengdaoge': '🎵',
+  'mazu': '🐎',
+  'baizhang': '🌲',
+  'huangbo': '🌿',
+  'xiuxinjue': '🔑',
+  'linji': '⚡',
+  'dunwu': '⚡',
+  'zhenxin': '❤️',
+  'zhigong': '🎭',
+  'xinwangming': '🫀',
+  'shenhui': '💎',
+  'jingangjing': '💎',
+  'xinjing': '🪞',
+  'yuanjuejing': '🔵',
+  'chanlinbaoxun': '📚',
+  'lengyanjing': '👁️',
+  'weimojiejing': '🏠',
+  'shiniutu': '🐂',
+  'baojingsanmei': '🪞',
+  'dongshanyulu': '⛰️',
+  'yongjia': '🎵',
+  'yunmen': '☁️',
+  'bashiguijusong': '👁️',
+  'wumenguan': '🚪',
+};
+
+const classicIcon = (id: string) => classicIconMap[id] ?? '📖';
+
 interface SidebarProps {
   onOpenSearch: () => void;
   classicsCount?: number;
@@ -306,7 +352,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       : 'text-slate-300 hover:text-amber-300 hover:bg-slate-800/60'
                   }`}
                 >
-                  📖 {t(book.title)}
+                  {classicIcon(book.id)} {t(book.title)}
                 </Link>
               ))}
               {(manifest as any[]).length > 5 && (
@@ -328,7 +374,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       : 'text-slate-300 hover:text-amber-300 hover:bg-slate-800/60'
                   }`}
                 >
-                  📖 {t(book.title)}
+                  {classicIcon(book.id)} {t(book.title)}
                 </Link>
               ))}
             </div>

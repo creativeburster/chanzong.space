@@ -292,7 +292,130 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
   );
 };
 
-/* ===================== 8. 语音朗读卡（Web Speech API，免费） ===================== */
+/* ===================== 8a. 语音朗读工具栏按钮（紧凑版，放在右上角） ===================== */
+export const AudioToolbarButton: React.FC<{ rawContent: string }> = ({ rawContent }) => {
+  const { t } = useLang();
+  const [playing, setPlaying] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [rate, setRate] = useState(1);
+  const [supported, setSupported] = useState(true);
+  const utterRef = React.useRef<SpeechSynthesisUtterance | null>(null);
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined' && !('speechSynthesis' in window)) {
+      setSupported(false);
+    }
+    return () => {
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
+  if (!supported) return null;
+
+  const cleanText = rawContent
+    .replace(/^#+\s*/gm, '')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/^>\s*/gm, '')
+    .replace(/^[-*]\s*/gm, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[💡🗝️📌⚠️💬✅❌🔗]/g, '')
+    .replace(/\n{2,}/g, '。')
+    .replace(/\n/g, '，')
+    .trim();
+
+  const doSpeak = (r: number) => {
+    const synth = window.speechSynthesis;
+    synth.cancel();
+    const utter = new SpeechSynthesisUtterance(cleanText);
+    utter.lang = 'zh-CN';
+    utter.rate = r;
+    utter.onend = () => { setPlaying(false); setPaused(false); };
+    utter.onerror = () => { setPlaying(false); setPaused(false); };
+    utterRef.current = utter;
+    synth.speak(utter);
+    setPlaying(true);
+    setPaused(false);
+  };
+
+  const togglePlay = () => {
+    const synth = window.speechSynthesis;
+    if (playing && !paused) {
+      synth.pause();
+      setPaused(true);
+      return;
+    }
+    if (paused) {
+      synth.resume();
+      setPaused(false);
+      return;
+    }
+    doSpeak(rate);
+  };
+
+  const stop = () => {
+    window.speechSynthesis.cancel();
+    setPlaying(false);
+    setPaused(false);
+  };
+
+  const changeRate = (r: number) => {
+    setRate(r);
+    if (playing && !paused) {
+      doSpeak(r);
+    }
+  };
+
+  if (!playing) {
+    return (
+      <button
+        onClick={togglePlay}
+        className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-zinc-100 border border-zinc-200 text-[13px] font-semibold text-zinc-700 hover:border-rose-700 hover:text-rose-700 transition-all"
+      >
+        <Volume2 className="w-4 h-4" />
+        <span>{t('朗读全文')}</span>
+      </button>
+    );
+  }
+
+  return (
+    <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-0.5 bg-zinc-100 rounded-lg p-0.5">
+        {[0.75, 1, 1.25, 1.5].map(r => (
+          <button
+            key={r}
+            onClick={() => changeRate(r)}
+            className={`px-2 py-1 rounded-md text-[11px] font-semibold transition-all ${
+              rate === r ? 'bg-rose-700 text-white shadow-sm' : 'text-zinc-600 hover:text-zinc-900'
+            }`}
+          >
+            {r}x
+          </button>
+        ))}
+      </div>
+      <button
+        onClick={togglePlay}
+        className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-rose-700 text-white text-[13px] font-semibold hover:bg-rose-600 transition-all shadow-md"
+      >
+        {playing && !paused ? (
+          <><Pause className="w-4 h-4" /><span>{t('暂停')}</span></>
+        ) : (
+          <><Play className="w-4 h-4" /><span>{t('继续')}</span></>
+        )}
+      </button>
+      <button
+        onClick={stop}
+        className="flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-zinc-200 text-zinc-700 text-[13px] font-semibold hover:bg-zinc-300 transition-all"
+      >
+        <Square className="w-3.5 h-3.5" />
+        <span>{t('停止')}</span>
+      </button>
+    </div>
+  );
+};
+
+/* ===================== 8b. 语音朗读卡（旧版独立卡片，保留兼容） ===================== */
 export const AudioCard: React.FC<{ rawContent: string }> = ({ rawContent }) => {
   const { t } = useLang();
   const [playing, setPlaying] = useState(false);

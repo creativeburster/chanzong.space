@@ -52,5 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...classicPages, ...conceptPages, ...personPages, ...methodPages, ...koanPages];
+  const faqPages: MetadataRoute.Sitemap = ZEN_FAQS.map((f) => ({
+    url: `${base}/faq#${f.id}`,
+    lastModified: now,
+    changeFrequency: 'yearly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...classicPages, ...conceptPages, ...personPages, ...methodPages, ...koanPages, ...faqPages];
 }

@@ -7,12 +7,13 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import { TranslationCard } from '@/components/TranslationCard';
 import { GlossaryCard } from '@/components/GlossaryCard';
-import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCard, RelatedBooksCard, AudioCard } from '@/components/ClassicCards';
+import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCard, RelatedBooksCard, AudioToolbarButton } from '@/components/ClassicCards';
 import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
-import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare } from 'lucide-react';
+import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare, HelpCircle } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { LinkCardGrid } from '@/components/InternalLinkCards';
 
 interface ClassicViewerProps {
   meta: ClassicItem;
@@ -41,6 +42,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
   const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
   const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
+  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
 
   // 自动提取卡片数据
   const extracted = extractCards(rawContent);
@@ -84,13 +86,15 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               </div>
 
               {/* Toolbar Controls */}
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 flex-wrap">
                 <button
                   onClick={() => setFontSize(fontSize === 'normal' ? 'large' : 'normal')}
                   className="px-3.5 py-2 rounded-xl bg-zinc-100 border border-zinc-200 text-[13px] font-semibold text-zinc-700 hover:border-amber-700 transition-all"
                 >
                   {fontSize === 'normal' ? t('大号字体') : t('标准字体')}
                 </button>
+
+                <AudioToolbarButton rawContent={rawContent} />
 
                 <button
                   onClick={handleCopy}
@@ -140,9 +144,6 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             )}
           </article>
 
-          {/* 语音朗读 */}
-          <AudioCard rawContent={rawContent} />
-
           {/* 核心偈颂 */}
           <VerseCard verses={extracted.verses} />
 
@@ -171,7 +172,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           <RelatedBooksCard manifest={manifest} currentId={meta.id} />
 
           {/* 延伸阅读：交叉引用 */}
-          {(relPersons.length > 0 || relConcepts.length > 0 || relMethods.length > 0 || relQas.length > 0) && (
+          {(relPersons.length > 0 || relConcepts.length > 0 || relMethods.length > 0 || relQas.length > 0 || relFaqs.length > 0) && (
             <div className="mt-10 bg-white p-8 sm:p-10 rounded-3xl border border-zinc-200 shadow-md space-y-6">
               <h2 className="text-xl font-bold font-serif-zen text-zinc-900">
                 {t('🔗 延伸阅读 · 知识网络')}
@@ -183,13 +184,10 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <Users className="w-5 h-5 text-blue-700" />
                     <span>{t('相关祖师')}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {relPersons.map((p) => (
-                      <Link key={p.id} href={`/persons/${p.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
-                        {t(p.name)}
-                      </Link>
-                    ))}
-                  </div>
+                  <LinkCardGrid
+                    items={relPersons.map(p => ({ id: p.id, title: p.name, summary: p.title, href: `/persons/${p.id}` }))}
+                    variant="blue"
+                  />
                 </div>
               )}
 
@@ -199,13 +197,10 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <Gem className="w-5 h-5 text-purple-700" />
                     <span>{t('相关概念')}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {relConcepts.map((c) => (
-                      <Link key={c.id} href={`/concepts/${c.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition-colors">
-                        {t(c.title)}
-                      </Link>
-                    ))}
-                  </div>
+                  <LinkCardGrid
+                    items={relConcepts.map(c => ({ id: c.id, title: c.title, summary: c.summary?.slice(0, 60), href: `/concepts/${c.id}` }))}
+                    variant="purple"
+                  />
                 </div>
               )}
 
@@ -215,13 +210,10 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <Compass className="w-5 h-5 text-sky-700" />
                     <span>{t('相关法门')}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {relMethods.map((m) => (
-                      <Link key={m.id} href={`/methods/${m.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition-colors">
-                        {t(m.title)}
-                      </Link>
-                    ))}
-                  </div>
+                  <LinkCardGrid
+                    items={relMethods.map(m => ({ id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}` }))}
+                    variant="sky"
+                  />
                 </div>
               )}
 
@@ -231,11 +223,26 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <MessageSquare className="w-5 h-5 text-rose-700" />
                     <span>{t('相关公案')}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {relQas.map((q) => (
-                      <Link key={q.id} href={`/koan/${q.id}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition-colors">
-                        {t(q.question)}
-                      </Link>
+                  <LinkCardGrid
+                    items={relQas.map(q => ({ id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}` }))}
+                    variant="rose"
+                    columns={3}
+                  />
+                </div>
+              )}
+
+              {relFaqs.length > 0 && (
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
+                    <HelpCircle className="w-5 h-5 text-emerald-700" />
+                    <span>{t('相关问答')}</span>
+                  </div>
+                  <div className="space-y-3">
+                    {relFaqs.map(f => (
+                      <div key={f.id} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+                        <div className="text-[14px] font-semibold text-emerald-900 mb-1">{t(f.question)}</div>
+                        <div className="text-[13px] text-emerald-800/80 leading-relaxed">{t(f.answer).slice(0, 120)}{f.answer.length > 120 ? '...' : ''}</div>
+                      </div>
                     ))}
                   </div>
                 </div>

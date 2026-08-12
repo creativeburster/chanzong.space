@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     default: '禅宗知识库 | ChanZong.space',
     template: '%s | 禅宗知识库',
   },
-  description: '全量收录40部核心禅宗典籍——七佛传法偈、达摩四论、六祖坛经、黄檗传心法要、无门关、八识规矩颂及高丽普照知呐禅师《真心直说》《修心诀》等，含153个核心概念、205则公案、101位祖师、25种修持法门。',
-  keywords: ['禅宗', '禅宗知识库', '真心直说', '修心诀', '六祖坛经', '达摩四论', '黄檗传心法要', '无门关', '八识规矩颂', '公案', '禅宗典籍', 'ChanZong', 'Zen Buddhism', '见性成佛', '顿悟'],
+  description: '全量收录42部核心禅宗典籍——七佛传法偈、达摩四论、六祖坛经、黄檗传心法要、无门关、八识规矩颂、禅关策进、大乘起信论及高丽普照知讷禅师《真心直说》《修心诀》等，含157个核心概念、212则公案、102位祖师、26种修持法门、470条问答。',
+  keywords: ['禅宗', '禅宗知识库', '真心直说', '修心诀', '六祖坛经', '达摩四论', '黄檗传心法要', '无门关', '八识规矩颂', '禅关策进', '大乘起信论', '公案', '禅宗典籍', 'ChanZong', 'Zen Buddhism', '见性成佛', '顿悟', '止观', '看话头', '参禅', '禅修', '祖师语录'],
   manifest: '/manifest.json',
   metadataBase: new URL(SITE_URL),
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     siteName: '禅宗知识库',
     title: '禅宗知识库 | ChanZong.space',
-    description: '全量收录40部核心禅宗典籍，含153个概念、205则公案、101位祖师、25种法门。传承顿悟见性之道。',
+    description: '全量收录42部核心禅宗典籍，含157个概念、212则公案、102位祖师、26种法门、470条问答。传承顿悟见性之道。',
     url: SITE_URL,
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '禅宗知识库 | ChanZong.space',
-    description: '全量收录40部核心禅宗典籍，含153个概念、205则公案、101位祖师、25种法门。',
+    description: '全量收录42部核心禅宗典籍，含157个概念、212则公案、102位祖师、26种法门。',
     images: ['/logo-nianhua-new.jpg'],
   },
   icons: {
@@ -78,7 +78,7 @@ export default function RootLayout({
     name: '禅宗知识库',
     alternateName: 'ChanZong.space',
     url: SITE_URL,
-    description: '全量收录40部核心禅宗典籍，含153个概念、205则公案、101位祖师、25种法门。传承顿悟见性之道。',
+    description: '全量收录42部核心禅宗典籍，含157个概念、212则公案、102位祖师、26种法门、470条问答。传承顿悟见性之道。',
     inLanguage: 'zh-CN',
     potentialAction: {
       '@type': 'SearchAction',
@@ -96,8 +96,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Inter:wght@400;600;700&display=swap"
+        />
+        <link
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Inter:wght@400;600;700&display=swap"
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" href="/favicon.png" />
