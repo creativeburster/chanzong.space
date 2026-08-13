@@ -149,7 +149,7 @@ export default function SitemapPage() {
           {/* 静态页面 */}
           <div className="mb-6">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800 mb-3">
-              <ChevronRight className="w-4 h-4 text-slate-400" />
+              <ChevronRight className="w-4 h-4 text-slate-500" />
               <span>主要页面</span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -203,7 +203,7 @@ export default function SitemapPage() {
                       >
                         查看全部 →
                       </Link>
-                      {isOpen ? <ChevronDown className="w-5 h-5 text-slate-400" /> : <ChevronRight className="w-5 h-5 text-slate-400" />}
+                      {isOpen ? <ChevronDown className="w-5 h-5 text-slate-500" /> : <ChevronRight className="w-5 h-5 text-slate-500" />}
                     </div>
                   </button>
 
@@ -222,7 +222,7 @@ export default function SitemapPage() {
                                 {item.title}
                               </span>
                               {item.sub && (
-                                <span className="text-xs text-slate-400 block truncate">
+                                <span className="text-xs text-slate-500 block truncate">
                                   {item.sub}
                                 </span>
                               )}

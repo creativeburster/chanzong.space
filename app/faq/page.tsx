@@ -90,7 +90,7 @@ export default function FAQPage() {
 
           <div className="mb-6">
             <div className="flex items-center space-x-2 mb-3">
-              <Filter className="w-4 h-4 text-slate-400" />
+              <Filter className="w-4 h-4 text-slate-500" />
               <span className="text-[13px] font-semibold text-slate-500">{t('按书籍筛选')}</span>
               {selectedBook && (
                 <button
@@ -218,13 +218,13 @@ export default function FAQPage() {
           )}
 
           {!hasMore && filteredFaqs.length > 10 && (
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-500">
               {t('已显示全部')} {filteredFaqs.length} {t('条')}
             </p>
           )}
 
           {filteredFaqs.length === 0 && (
-            <div className="text-center py-16 text-slate-400">
+            <div className="text-center py-16 text-slate-500">
               <Lightbulb className="w-12 h-12 mx-auto mb-4 opacity-30" />
               <p className="text-[15px]">{t('该书籍暂无关联问答')}</p>
             </div>

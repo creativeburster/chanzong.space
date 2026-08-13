@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import {
   Search,
@@ -164,7 +165,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Brand Header（点击回到主页） */}
       <Link href="/" className="p-6 border-b border-slate-800 flex items-center space-x-3.5 bg-slate-950/60 hover:bg-slate-900/60 transition-colors group">
         <div className="w-16 h-16 rounded-2xl overflow-hidden border border-slate-700/60 shrink-0 shadow-md bg-[#0F172A]">
-          <img src="/logo-nianhua.png" alt="拈花微笑" className="w-full h-full object-cover" />
+          <Image src="/logo-nianhua.png" alt="拈花微笑" width={64} height={64} className="w-full h-full object-cover" priority />
         </div>
         <div>
           <h1 className="font-serif-zen text-lg font-bold text-white tracking-wide leading-snug whitespace-nowrap">

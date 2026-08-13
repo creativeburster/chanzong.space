@@ -61,7 +61,7 @@ export default function PersonDetailPage({ params }: PageProps) {
             {/* 7. 师承法嗣 */}
             {person.relatedPersons && person.relatedPersons.length > 0 && (
               <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-100">
-                <Users className="w-4 h-4 text-slate-400" />
+                <Users className="w-4 h-4 text-slate-500" />
                 <span className="text-[15px] font-semibold text-slate-600 mr-2">法脉关联:</span>
                 {person.relatedPersons.map(rid => {
                   const rp = ZEN_PERSONS.find(p => p.id === rid);

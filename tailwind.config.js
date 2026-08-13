@@ -19,8 +19,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        serif: ['"Noto Serif SC"', '"Crimson Pro"', '"Songti SC"', '"STSong"', 'Georgia', 'serif'],
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', '"Noto Sans SC"', 'sans-serif'],
+        serif: ['var(--font-noto-serif-sc)', '"Crimson Pro"', '"Songti SC"', '"STSong"', 'Georgia', 'serif'],
+        sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', '"Noto Sans SC"', 'sans-serif'],
       },
     },
   },

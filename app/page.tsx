@@ -84,11 +84,11 @@ export default function Home() {
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800">
                         {item.category}
                       </span>
-                      <span className="text-xs text-slate-400 font-mono">#{item.idx}</span>
+                      <span className="text-xs text-slate-500 font-mono">#{item.idx}</span>
                     </div>
-                    <h4 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
+                    <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
                       {item.title}
-                    </h4>
+                    </h3>
                     <p className="text-base text-slate-600 mb-3">{item.author}</p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
@@ -129,7 +129,7 @@ export default function Home() {
                   <p className="text-base text-slate-600 leading-relaxed font-normal mb-3 line-clamp-3">
                     {concept.summary}
                   </p>
-                  <div className="text-xs text-slate-400 font-medium border-t border-slate-100 pt-2">
+                  <div className="text-xs text-slate-500 font-medium border-t border-slate-100 pt-2">
                     出处：{concept.classicRef}
                   </div>
                 </Link>
@@ -255,7 +255,7 @@ export default function Home() {
 
           {/* 禅宗传法世系图表 */}
           <div className="my-16">
-            <Suspense fallback={<div className="h-96 flex items-center justify-center text-slate-400">加载传法世系图…</div>}>
+            <Suspense fallback={<div className="h-96 flex items-center justify-center text-slate-500">加载传法世系图…</div>}>
               <LineageGraph />
             </Suspense>
           </div>

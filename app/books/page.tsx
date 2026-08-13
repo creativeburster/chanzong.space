@@ -69,7 +69,7 @@ export default function BooksPage() {
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200/60">
                       {item.category}
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">#{item.idx}</span>
+                    <span className="text-xs text-slate-500 font-mono">#{item.idx}</span>
                   </div>
 
                   <h3 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
@@ -104,7 +104,7 @@ export default function BooksPage() {
           )}
 
           {!hasMore && filtered.length > 12 && (
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-500">
               已显示全部 {filtered.length} 部经典
             </p>
           )}

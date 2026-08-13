@@ -56,7 +56,7 @@ export default function MethodsPage() {
                   </p>
 
                   <div className="space-y-1.5 mb-4">
-                    <div className="text-[11px] font-bold text-slate-400 uppercase">{t('关键要领')}：</div>
+                    <div className="text-[11px] font-bold text-slate-500 uppercase">{t('关键要领')}：</div>
                     <div className="flex flex-wrap gap-2">
                       {method.steps.map((step, idx) => (
                         <span key={idx} className="px-2.5 py-1 rounded-md bg-sky-50 text-sky-800 border border-sky-200 text-xs font-semibold">
@@ -92,7 +92,7 @@ export default function MethodsPage() {
           )}
 
           {!hasMore && ZEN_METHODS.length > 12 && (
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-500">
               {t('已显示全部')} {ZEN_METHODS.length} {t('种法门')}
             </p>
           )}

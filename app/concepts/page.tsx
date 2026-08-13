@@ -87,7 +87,7 @@ export default function ConceptsPage() {
           )}
 
           {!hasMore && ZEN_CONCEPTS.length > 12 && (
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-500">
               {t('已显示全部')} {ZEN_CONCEPTS.length} {t('条概念')}
             </p>
           )}

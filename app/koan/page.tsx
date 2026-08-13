@@ -69,7 +69,7 @@ export default function KoansPage() {
                         </p>
                       </div>
 
-                      <div className="text-xs text-slate-400 font-medium pt-2 flex items-center justify-between">
+                      <div className="text-xs text-slate-500 font-medium pt-2 flex items-center justify-between">
                         <span>{t('回答禅师：')}<strong className="text-slate-800">{t(qa.master)}</strong></span>
                         <span>{t('出处：')}{t(qa.source)}</span>
                       </div>
@@ -93,7 +93,7 @@ export default function KoansPage() {
               )}
 
               {!hasMore && ZEN_KOANS.length > 12 && (
-                <p className="mt-6 text-center text-xs text-slate-400">
+                <p className="mt-6 text-center text-xs text-slate-500">
                   {t('已显示全部')} {ZEN_KOANS.length} {t('条公案')}
                 </p>
               )}

@@ -52,7 +52,7 @@ export default function PersonsPage() {
                     <span className="text-[13px] font-semibold px-3 py-1 rounded-full bg-purple-50 text-purple-800 border border-purple-200">
                       {t(person.title)}
                     </span>
-                    <span className="text-xs text-slate-400 font-bold">{t(person.era)}</span>
+                    <span className="text-xs text-slate-500 font-bold">{t(person.era)}</span>
                   </div>
 
                   <h2 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-purple-800 transition-colors mb-2">
@@ -95,7 +95,7 @@ export default function PersonsPage() {
           )}
 
           {!hasMore && ZEN_PERSONS.length > 12 && (
-            <p className="mt-6 text-center text-xs text-slate-400">
+            <p className="mt-6 text-center text-xs text-slate-500">
               {t('已显示全部')} {ZEN_PERSONS.length} {t('位人物')}
             </p>
           )}

@@ -44,7 +44,7 @@ export default function GraphPage() {
           </div>
 
           {/* Interactive Force Graph */}
-          <Suspense fallback={<div className="h-96 flex items-center justify-center text-slate-400">加载中…</div>}>
+          <Suspense fallback={<div className="h-96 flex items-center justify-center text-slate-500">加载中…</div>}>
             <GraphCanvas />
           </Suspense>
 

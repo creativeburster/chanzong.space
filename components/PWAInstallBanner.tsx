@@ -87,9 +87,9 @@ export const PWAInstallBanner: React.FC = () => {
             <Feather className="w-5 h-5" />
           </div>
           <div className="min-w-0">
-            <h4 className="text-sm font-bold text-white truncate font-serif-zen">
+            <h3 className="text-sm font-bold text-white truncate font-serif-zen">
               {t('安装禅宗知识库 App')}
-            </h4>
+            </h3>
             <p className="text-xs text-slate-400 truncate">
               {t('支持离线阅读与快速桌面访问')}
             </p>
