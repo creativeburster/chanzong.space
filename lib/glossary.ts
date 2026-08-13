@@ -52,7 +52,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '抟', pinyin: 'tuán', meaning: '把东西揉成球形' },
     { char: '醐', pinyin: 'hú', meaning: '醍醐，酥酪提炼出的最精纯之物，喻佛果' },
     { char: '醍', pinyin: 'tí', meaning: '同上，醍醐连用' },
-    { char: '阿難', pinyin: 'ā nán', meaning: '佛陀堂弟，多闻第一' },
+    { char: '阿难', pinyin: 'ā nán', meaning: '佛陀堂弟，多闻第一' },
     { char: '摩登伽', pinyin: 'mó dēng jiā', meaning: '低种姓女子，以咒术迷惑阿难' },
     { char: '毘', pinyin: 'pí', meaning: '同"毗"，相近、相邻' },
     { char: '楞严', pinyin: 'léng yán', meaning: '一切事究竟坚固，此经名' },
