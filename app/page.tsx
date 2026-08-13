@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, lazy, Suspense } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
@@ -9,8 +10,13 @@ import { QuickEntryGrid } from '@/components/QuickEntryGrid';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
-import { FEATURED_CONCEPTS } from '@/lib/featured';
-import { ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import {
+  FEATURED_CONCEPTS,
+  FEATURED_METHODS,
+  FEATURED_KOANS,
+  FEATURED_PERSONS,
+  FEATURED_FAQS,
+} from '@/lib/featured';
 import { ChevronRight, Gem, BookOpen, Compass, MessageSquare, Users, Lightbulb } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 
@@ -23,10 +29,10 @@ export default function Home() {
     .map(id => manifest.find(m => m.id === id))
     .filter(Boolean) as typeof manifest;
 
-  const featuredMethods = ZEN_METHODS.slice(0, 4);
-  const featuredKoans = ZEN_KOANS.slice(0, 4);
-  const featuredPersons = ZEN_PERSONS.filter(p => ['bodhidharma', 'huineng', 'mazu', 'huangbo', 'linji', 'yongjia'].includes(p.id));
-  const featuredFaqs = ZEN_FAQS.slice(0, 4);
+  const featuredMethods = FEATURED_METHODS;
+  const featuredKoans = FEATURED_KOANS;
+  const featuredPersons = FEATURED_PERSONS;
+  const featuredFaqs = FEATURED_FAQS;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900 selection:bg-amber-900 selection:text-white">
@@ -46,7 +52,7 @@ export default function Home() {
             </p>
 
             <h1 className="text-3xl sm:text-4xl font-bold font-serif-zen text-slate-900 tracking-tight flex items-center justify-center space-x-3 mb-3">
-              <img src="/favicon.png" alt="拈花微笑" className="w-12 h-12 object-contain" />
+              <Image src="/favicon.png" alt="拈花微笑" width={48} height={48} className="w-12 h-12 object-contain" priority />
               <span>禅宗知识库</span>
             </h1>
 
