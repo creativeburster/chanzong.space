@@ -2,23 +2,6 @@ import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
-import { Noto_Serif_SC, Inter } from 'next/font/google';
-
-const notoSerifSC = Noto_Serif_SC({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-serif-sc',
-  preload: false,
-});
-
-const inter = Inter({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-});
-
 const SITE_URL = 'https://chanzong.space';
 
 export const metadata: Metadata = {
@@ -107,7 +90,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="zh-CN" className={`scroll-smooth ${notoSerifSC.variable} ${inter.variable}`}>
+    <html lang="zh-CN" className="scroll-smooth">
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" href="/favicon.png" />

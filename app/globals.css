@@ -13,13 +13,13 @@
 body {
   background-color: var(--bg-zen);
   color: var(--ink-zen);
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   line-height: 1.8;
   overflow-x: hidden;
 }
 
 .font-serif-zen {
-  font-family: var(--font-noto-serif-sc), 'Songti SC', 'STSong', 'SimSun', 'Crimson Pro', Georgia, serif;
+  font-family: 'Songti SC', 'STSong', 'SimSun', 'Source Han Serif SC', 'Noto Serif SC', Georgia, serif;
 }
 
 /* Prose typography for the classic reader (no @tailwindcss/typography installed).
