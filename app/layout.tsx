@@ -9,6 +9,7 @@ const notoSerifSC = Noto_Serif_SC({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-noto-serif-sc',
+  preload: false,
 });
 
 const inter = Inter({
