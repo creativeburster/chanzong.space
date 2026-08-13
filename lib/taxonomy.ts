@@ -1256,7 +1256,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
     "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
     "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuxinyao"]
+    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "luohouluo",
@@ -4835,7 +4835,33 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "圜悟心要",
     "relatedConcepts": ["baoren", "jingang-zhengti"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
+  },
+  {
+    "id": "jieduan-zhongliu",
+    "title": "截断众流",
+    "category": "禅法",
+    "summary": "截断众流是圜悟克勤宗风的核心特征。众流指一切思量分别、知见解路、凡情圣解。圜悟上堂云“玄机独唱截断众流，摆拨不拘更无回互”——以金刚圈、栗棘蓬接人，不令学人有丝毫回避处。此法非否定语言文字，而是于言句中截断言句，令学人于思量不及处亲见本来。与云门三句“截断众流”一脉相承。",
+    "etymology": "出《圜悟佛果禅师语录》卷一“玄机独唱截断众流”。云门宗有三句，其一为“截断众流”。",
+    "quotes": ["玄机独唱截断众流，摆拨不拘更无回互。 —圜悟克勤", "三世诸佛只言自知，历代祖师全提不起。 —圜悟克勤"],
+    "guidance": "截断众流不是让你不说话不思维，而是于说话思维处蓦然截断，直下透脱。如人正问时忽然被打，正思量时忽然被喝——于思量不及处，方有少分相应。",
+    "classicRef": "圜悟佛果禅师语录",
+    "relatedConcepts": ["jingang-zhengti", "wangqing-juezhao", "koan"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu", "huanwuxinyao"]
+  },
+  {
+    "id": "yiyin-yanfa",
+    "title": "一音演法",
+    "category": "教理",
+    "summary": "一音演法是《维摩诘经》所言“佛以一音演说法，众生随类各得解”。圜悟语录序中耿延禧以此统摄圜悟全部语录：三世诸佛此一音，六代祖师此一音，天下老和尚此一音，乃至风动林响泉鸣谷应亦此音。麻三斤、庭前柏树子、无孔铁锤，无非此音。不作此音会而作语言謷讹妄生分别，则无有是处。",
+    "etymology": "出《维摩诘经·佛国品》“佛以一音演说法，众生随类各得解”。圜悟语录序引此义。",
+    "quotes": ["佛以一音而演说法，故一切法同此一音。 —耿延禧序圜悟语录", "不作此音会而作语言謷讹妄生分别，无有是处。 —耿延禧序圜悟语录"],
+    "guidance": "一音不是某种特殊的声音，而是指一切法皆是佛的教化。风声水声、鸟鸣虫叫，乃至麻三斤、庭前柏树子——若能于此音中会得，处处是佛法；若作语言文字会，则处处是謷讹。",
+    "classicRef": "圜悟佛果禅师语录·序",
+    "relatedConcepts": ["jiaowai-biechuan", "beyond-words", "koan"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu"]
   }
 ];
 
@@ -5522,7 +5548,29 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "圜悟心要",
     "relatedConcepts": ["jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
+  },
+  {
+    "id": "tuibu-xiuxie",
+    "title": "退步休歇",
+    "summary": "退步休歇是圜悟克勤于语录法语中反复指示的修行方法。圜悟云“但只退步愈退愈明，愈不会愈有力量。异念才起拟心才生，即猛自割断令不相续，则智照洞然步步踏实地”。此法与忘情绝照相辅相成：忘情绝照是总纲，退步休歇是具体下手处。退步非退缩，而是放下知见执着；休歇非懒惰，而是停止意识造作。如牧牛喻，久久纯熟自然成片。",
+    "origin": "出《圜悟佛果禅师语录》卷十四示张持满法语。圜悟云“但只退步愈退愈明”，又引石霜“休去歇去，如古庙里香炉去”。",
+    "steps": [
+      "但只退步，愈退愈明",
+      "愈不会愈有力量",
+      "异念才起拟心才生，即猛自割断令不相续",
+      "智照洞然步步踏实地",
+      "无明习气旋起旋消，悠久间自无力能扰人"
+    ],
+    "pitfalls": [
+      "将退步当作懈怠，落入放逸",
+      "将休歇当作断灭，不知真空妙有",
+      "猛自割断时用力太猛，反成压抑"
+    ],
+    "classicRef": "圜悟佛果禅师语录",
+    "relatedConcepts": ["wangqing-juezhao", "jingang-zhengti", "dacheng-yipian"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu", "huanwuxinyao"]
   }
 ];
 
@@ -8262,7 +8310,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "圜悟心要·示印禅人",
     "relatedConcepts": ["jingang-zhengti"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
+  },
+  {
+    "id": "koan-216",
+    "question": "马祖扭百丈鼻孔",
+    "answer": "马祖与百丈同游山，见野鸭子飞过。祖云“是什么”，丈云“野鸭子”。祖云“向什么处去也”，丈云“飞过了也”。祖将百丈鼻孔扭，丈作忍痛声。祖云“何曾飞去”，丈于此有省。圜悟颂云“野鸭过前溪，千峰凛寒色，相顾不知归，未免资傍击。扭破疑团葛怛消，捎风直下透青霄”。",
+    "context": "出《圜悟佛果禅师语录》卷十九颂古。圜悟以诗偈颂唱此公案，谓百丈于被扭鼻孔处扭破疑团，葛怛消落，直下透青霄。",
+    "interpretation": "马祖扭百丈鼻孔，扭的不是鼻孔而是执着。百丈说“飞过了也”，心已随野鸭子飞去——马祖一扭，将他的心从外境上拉回来。何曾飞去——野鸭子飞了，但你的心何曾飞去？百丈于此有省：外境生灭来去，心性不动不摇。",
+    "master": "马祖道一",
+    "source": "圜悟佛果禅师语录卷十九",
+    "relatedConcepts": ["self-nature", "koan", "jieduan-zhongliu"],
+    "relatedPersons": ["mazu", "baizhang-huaihai", "yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "koan-217",
+    "question": "百丈独坐大雄峰",
+    "answer": "僧问百丈“如何是奇特事”，丈云“独坐大雄峰”，僧礼拜，丈便打。圜悟颂云“酱里著盐雪中送炭，才捋虎须棒头有眼。怪来独坐大雄山，他家曾踏上头关”。",
+    "context": "出《圜悟佛果禅师语录》卷十九颂古。圜悟赞百丈独坐大雄峰之气象，如踏最上头关。",
+    "interpretation": "独坐大雄峰——不是傲慢，而是彻悟后的绝对自在。僧人礼拜表示会得，百丈便打——打的是他的“会得”，因为会得本身已是第二头。圜悟颂“才捋虎须棒头有眼”，赞百丈机锋之峻烈精准。",
+    "master": "百丈怀海",
+    "source": "圜悟佛果禅师语录卷十九",
+    "relatedConcepts": ["self-nature", "koan"],
+    "relatedPersons": ["baizhang-huaihai", "yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "koan-218",
+    "question": "丹霞见马祖托幞头",
+    "answer": "丹霞初见马祖，以两手托幞头。祖云“吾非汝师，南岳石头处去”。霞遂至石头，如前托幞头。头云“著槽厂去”。霞依童行次。一日石头为众云“今日斋后普请刬佛殿前草”，众竞具锄锹，霞独洗头棒剃刀于石头前胡跪。头笑为剃发。霞掩耳而去。却回马祖院，骑圣僧项。圜悟颂云“问一答十告往知来，龙驰虎骤玉转珠回”。",
+    "context": "出《圜悟佛果禅师语录》卷十九颂古。圜悟以诗偈颂唱丹霞参马祖、石头之因缘。",
+    "interpretation": "丹霞托幞头——以动作表示求法之诚恳。马祖不收，指他去石头处，因马祖知丹霞之根机在石头座下方能成就。丹霞于石头处从杂役做起，待时机成熟，以“请师刬草”一语获得剃发。骑圣僧项——彻底超越佛圣相，方见本来面目。",
+    "master": "丹霞天然",
+    "source": "圜悟佛果禅师语录卷十九",
+    "relatedConcepts": ["self-nature", "koan", "beyond-words"],
+    "relatedPersons": ["mazu", "shitou-xiqian", "yuanwu-keqin"],
+    "relatedBooks": ["huanwuyulu"]
   }
 ];
 
@@ -11177,5 +11261,77 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《圜悟心要》列举了哪些古德苦修实例？",
     "answer": "大迦叶鸡足峰论劫打坐、达磨面壁九年、六祖四会县看猎、大沩深山卓庵十载、大梅一住绝人迹、无业阅大藏、长庆坐破七个蒲团。圜悟云“是皆为此一段大因缘，其志可尚，终古作后昆标准”——以此激励学人发长远心。",
     "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-483",
+    "question": "《圆悟佛果禅师语录》与《圜悟心要》有何区别？",
+    "answer": "《语录》二十卷是圜悟克勤的全面记录，由门人虎丘绍隆等编集，涵盖上堂、小参、法语、拈古、颂古、偈颂、真赞、佛事等各种体裁。《心要》则是法语书信的精选集，由嗣法弟子子文编集。语录内容远比心要丰富全面，是研究圜悟宗风最完整的第一手文献。两者内容互为补充。",
+    "relatedBooks": ["huanwuyulu", "huanwuxinyao"]
+  },
+  {
+    "id": "faq-484",
+    "question": "圜悟语录中\u201c一音演法\u201d是什么意思？",
+    "answer": "耿延禧序以\u201c一音\u201d统摄圜悟全部语录。佛以一音演说法，一切法同此一音——三世诸佛、历代祖师、天下老和尚皆此一音。乃至风动林响、泉鸣谷应、雷霆霹雳亦此一音。麻三斤、庭前柏树子、无孔铁锤，无非此音。不作此音会而作语言謷讹妄生分别，则无有是处。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-485",
+    "question": "圜悟开堂说\u201c蜗牛角上三千界\u201d是何意？",
+    "answer": "蜗牛角上三千界，云月溪山共一家——圜悟开堂第一句便将华严宗\u201c一花一世界\u201d的境界与禅宗\u201c随处作主\u201d的宗风融为一体。蜗牛角极小，三千界极大，以小容大，说明大小不二、万法一体。既尔业缘无避处，不如随分纳些些——既然业缘无处可避，不如随缘安住。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-486",
+    "question": "\u201c三世诸佛只言自知，历代祖师全提不起\u201d如何理解？",
+    "answer": "三世诸佛只说自己知道的事，历代祖师全然提不起来，一大藏教诠注不及，明眼衲僧自救不了。这不是谦虚，而是直指——此事不在言语知解中，唯须自证自知。若据本分草料，连这些话都是节外生枝。圜悟以此截断学人向外求觅的心。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-487",
+    "question": "\u201c火不待日而热，风不待月而凉\u201d是何意？",
+    "answer": "火不需要太阳才热，风不需要月亮才凉。鹤胫自长，凫胫自短，松直棘曲，鹄白乌玄——一切法本来如此，头头露现。若能委悉得，随处作主，遇缘即宗，竿木随身，逢场作戏。圜悟以此说明：道不假外求，万法各住本位，只须识得本来面目。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-488",
+    "question": "圜悟如何指导士大夫修行？",
+    "answer": "圜悟在法语中多示士大夫以\u201c退步休歇\u201d之法。示张持满云\u201c但只退步愈退愈明，愈不会愈有力量。异念才起拟心才生，即猛自割断令不相续\u201d。示吴教授云\u201c应当猛利诚志信重如救头然\u201d。示许庭龟云\u201c在家菩萨修出家行如火中出莲\u201d——放下廓尔平常彻证无心，即与维摩诘傅大士庞居士同其正因。",
+    "relatedBooks": ["huanwuyulu", "huanwuxinyao"]
+  },
+  {
+    "id": "faq-489",
+    "question": "\u201c绵密无间寂照同时，岁月悠久打成一片\u201d是何意？",
+    "answer": "此圜悟示张持满法语。修行要绵密无间，寂照同时，岁月悠久自然打成一片。根本愈牢密密作用，当处全真，则彼我遐迩触处皆渠，刹刹尘尘皆在自己大圆镜中。愈绵愈密则愈能转换。此是悟后保任的要领。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-490",
+    "question": "圜悟如何看待\u201c在家修行\u201d？",
+    "answer": "圜悟示许庭龟云\u201c在家菩萨修出家行，如火中出莲\u201d。名位权势意气卒难调伏，何况火宅烦扰煎熬百端千绪。除非自己直下明悟本真妙圆，到大寂定休歇之场，放下廓尔平常彻证无心，观一切法如梦幻泡，即与维摩诘、傅大士、庞居士同其正因。随自己力量转化未悟，同入无为无事法性海中。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-491",
+    "question": "圜悟颂\u201c即心即佛\u201d的诗偈是什么意思？",
+    "answer": "圜悟颂云\u201c无须锁子八面玲珑，不拨自转南北西东。海神知贵不知价，留向人间光照夜\u201d。没有锁簧的锁子八面玲珑，不须拨动自然转动——本心自然运作不假造作。海神知其珍贵却不知其价——本心之价值超越一切比较，留在人间光照暗夜。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-492",
+    "question": "马祖扭百丈鼻孔的公案，圜悟如何颂唱？",
+    "answer": "圜悟颂云\u201c野鸭过前溪，千峰凛寒色。相顾不知归，未免资傍击。扭破疑团葛怛消，捎风直下透青霄。云山海月浑闲事，一语归宗万国朝\u201d。百丈说\u201c飞过了也\u201d，心已随野鸭子飞去——马祖一扭，将他的心从外境拉回来。何曾飞去——外境生灭来去，心性不动不摇。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-493",
+    "question": "圜悟为佛眼和尚下火时说了什么？",
+    "answer": "圜悟云\u201c看取亘天红焰里，华发优昙大地春\u201d。于佛眼和尚荼毗时，以烈火比喻般若之光，以优昙花比喻悟道之难得。佛眼禅师以栗棘蓬驱耕夫之牛，以金刚圈夺饥人之食，传持一大事，提升向上机。一弹指顷坐断报化佛头，遽失人天正眼。于生死关头尽显禅者得大自在的境界。",
+    "relatedBooks": ["huanwuyulu"]
+  },
+  {
+    "id": "faq-494",
+    "question": "《圆悟佛果禅师语录》的体裁结构是怎样的？",
+    "answer": "二十卷，体裁丰富：卷一至八为上堂法语，机锋峻烈；卷八至十三为小参普说，更为亲切；卷十四至十六为法语书信，系统详尽，与《圜悟心要》互为补充；卷十六至十八为拈古，简洁犀利；卷十八至十九为颂古，以诗偈评唱公案；卷二十为偈颂、真赞、佛事文。各种体裁全面展现了圜悟宗风。",
+    "relatedBooks": ["huanwuyulu"]
   }
 ];
