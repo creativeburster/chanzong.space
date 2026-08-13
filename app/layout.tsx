@@ -5,14 +5,14 @@ import { PWAInstallBanner } from '@/components/PWAInstallBanner';
 import { Noto_Serif_SC, Inter } from 'next/font/google';
 
 const notoSerifSC = Noto_Serif_SC({
-  weight: ['400', '700', '900'],
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-noto-serif-sc',
 });
 
 const inter = Inter({
-  weight: ['400', '600', '700'],
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',

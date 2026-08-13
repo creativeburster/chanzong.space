@@ -19,7 +19,7 @@ body {
 }
 
 .font-serif-zen {
-  font-family: var(--font-noto-serif-sc), 'Crimson Pro', 'Songti SC', 'STSong', Georgia, serif;
+  font-family: var(--font-noto-serif-sc), 'Songti SC', 'STSong', 'SimSun', 'Crimson Pro', Georgia, serif;
 }
 
 /* Prose typography for the classic reader (no @tailwindcss/typography installed).
