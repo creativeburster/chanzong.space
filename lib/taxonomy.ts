@@ -1253,10 +1253,10 @@ export const ZEN_PERSONS: PersonItem[] = [
       "大凡扶宗立教，须是英灵汉。"
     ],
     "classics": ["碧岩录", "圆悟心要"],
-    "relatedConcepts": ["koan", "beyond-words"],
-    "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
+    "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
+    "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
+    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuxinyao"]
   },
   {
     "id": "luohouluo",
@@ -4784,6 +4784,58 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["self-nature", "buddha-nature", "wu-nian"],
     "relatedPersons": ["huineng"],
     "relatedBooks": ["tanjing", "wumenguan"]
+  },
+  {
+    "id": "jingang-zhengti",
+    "title": "金刚正体",
+    "category": "心性",
+    "summary": "金刚正体是圜悟克勤常用的核心概念，指众生本具的清净妙明真心。如金刚般坚固不坏、能破一切而不为一切所破。此体本无名相非言句所能拟议，含吐十虚独脱根尘。圜悟云“无非发扬个金刚正体”——香严击竹、灵云见桃花，皆是无情说法发扬此金刚正体。证悟此体则生死幻翳永消，亘古不变不异。",
+    "etymology": "圜悟克勤于《圜悟心要》中反复使用此词，如“无非发扬个金刚正体”“金刚正体独露”。金刚喻其坚固不坏，正体谓其本然真实。",
+    "quotes": ["无非发扬个金刚正体。 —圜悟克勤", "生死幻翳永消，金刚正体独露。 —圜悟克勤"],
+    "guidance": "金刚正体不是修成的，而是本具的。修行只是拂去遮蔽它的客尘，让它自然显露。如摩尼宝在矿秽中，不施功力终不可得清净，但功力只是去矿，非是造宝。",
+    "classicRef": "圜悟心要",
+    "relatedConcepts": ["zhenru", "self-nature", "buddha-nature"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "tongdi-tuo",
+    "title": "桶底子脱",
+    "category": "悟境",
+    "summary": "桶底子脱是禅宗形容悟道的经典比喻。如水桶底突然脱落，桶中水一泻无余，比喻从前知见解路、凡情圣解一时脱落，豁然契证本来面目。圜悟云“到究竟至实之处须是桶底子脱始得”。此悟境非理路可到，非渐次可求，乃是时节因缘到来，蓦然透脱。",
+    "etymology": "禅宗古德常用比喻，圜悟克勤于《圜悟心要》中多次引用，如“似大死人已绝气息”后桶底子脱。",
+    "quotes": ["到究竟至实之处须是桶底子脱始得。 —圜悟克勤", "待渠时节到来，翛然自桶底子脱。 —圜悟克勤"],
+    "guidance": "桶底子脱不是理解来的，而是放下到极处自然发生的。如人负重行走，到力尽处自然放下。不要试图“使”桶底脱落，只管放下身心，冥然叩寂，待时节到来。",
+    "classicRef": "圜悟心要",
+    "relatedConcepts": ["benlai-mianmu", "jingang-zhengti"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "wuxin-dao-ren",
+    "title": "无心道人",
+    "category": "悟境",
+    "summary": "无心道人是圜悟克勤提出的究竟修行目标。圜悟云“我见百千个汉子只是觅作佛底的，中间觅个无心道人难得”。无心非如木石无心，乃是不起分别执著、不生爱憎取舍的清净心。无心道人饥来吃饭困来睡，等闲荡荡地，如痴似兀，方为真实到家。此与庞居士女灵照“也不难也不易，饥来吃饭困来睡”一脉相承。",
+    "etymology": "出《圜悟心要》，圜悟克勤引古语“我见百千个汉子只是觅作佛底的，中间觅个无心道人难得”。",
+    "quotes": ["我见百千个汉子只是觅作佛底的，中间觅个无心道人难得。 —圜悟克勤"],
+    "guidance": "不要试图“成为”无心道人——试图成为本身已是“有心”。无心是情想都尽后的自然状态，如人睡醒后不再做梦，不是努力不做梦。",
+    "classicRef": "圜悟心要",
+    "relatedConcepts": ["ordinary-mind", "jingang-zhengti"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "dacheng-yipian",
+    "title": "打成一片",
+    "category": "悟境",
+    "summary": "打成一片是圜悟克勤描述悟后保任境界的关键概念。圜悟云“世法佛法打成一片，物物头头有出身处，不堕尘机不为物转”。悟后须绵密管带令无间断，二六时中纯一无杂，世法佛法初不间隔，自然左右逢源打成一片。此非初悟可到，须久长保任方至。",
+    "etymology": "出《圜悟心要》，圜悟克勤反复强调悟后须“打成一片”。",
+    "quotes": ["世法佛法打成一片，物物头头有出身处。 —圜悟克勤", "二六时中纯一无杂，自然左右逢源打成一片。 —圜悟克勤"],
+    "guidance": "打成一片不是消除差别，而是于差别中见无差别。吃饭穿衣、迎宾待客皆是道用，不须离俗求真。初时或有间断，久自无间。",
+    "classicRef": "圜悟心要",
+    "relatedConcepts": ["baoren", "jingang-zhengti"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
   }
 ];
 
@@ -5450,6 +5502,27 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["zhi-guan", "zhenru", "samadhi", "yi-xin-er-men"],
     "relatedPersons": ["maming"],
     "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "wangqing-juezhao",
+    "title": "忘情绝照",
+    "summary": "忘情绝照是圜悟克勤指示的核心修行方法。情谓凡情圣解、知见会解，照谓觉照观想、有为功用。忘情即放下一切知见解路，绝照即息灭一切有为觉照。圜悟云“以铁石心将从前妄想见解世智辩聪彼我得失倒底一时放却，直下如枯木死灰，情尽见除到净倮倮赤洒洒处”。此法直截根源，不立阶渐，是圜悟宗风的特色。",
+    "steps": [
+      "以铁石心将从前妄想见解世智辩聪倒底一时放却",
+      "直下如枯木死灰，情尽见除",
+      "到净倮倮赤洒洒处，豁然契证",
+      "悟后绵密管带，令无间断",
+      "世法佛法打成一片"
+    ],
+    "pitfalls": [
+      "将忘情绝照当作断灭，落入枯木寒灰死水一潭",
+      "以为不须修行即可自然成就，落狂慧",
+      "忘情后起断灭见，不知真空妙有"
+    ],
+    "classicRef": "圜悟心要",
+    "relatedConcepts": ["jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
   }
 ];
 
@@ -8157,6 +8230,39 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["zhenru", "tathagatagarbha", "xun-xi"],
     "relatedPersons": ["maming"],
     "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "koan-213",
+    "question": "庞居士一家三口说难说易",
+    "answer": "居士云“难难，十石油麻树上摊”，庞婆云“易易，百草头上祖师意”，灵照云“也不难也不易，饥来吃饭困来睡”。圜悟评：三人各出一手共提个没底篮儿捞虾摝蚬，著著有杀人之机，处处有出身之路。",
+    "context": "庞居士浑家向火，居士蓦云“难难，十石油麻树上摊”，庞婆云“易易，百草头上祖师意”，灵照云“也不难也不易，饥来吃饭困来睡”。圜悟克勤于《圜悟心要》示华藏明首座中举此公案，评曰“若能忘言体意，方见此三人各出一手”。",
+    "master": "庞蕴居士",
+    "source": "圜悟心要·示华藏明首座",
+    "relatedConcepts": ["wuxin-dao-ren", "ordinary-mind"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "koan-214",
+    "question": "严阳尊者一物不将来",
+    "answer": "严阳问赵州“一物不将来时如何”，州云“放下著”，阳云“既一物不将来，放下个什么”，州云“放不下，担取去”。圜悟评：此正是无心境界的精彩公案。",
+    "context": "圜悟克勤于《圜悟心要》示坚道者中举此公案，以说明无心境界——到无心之地，一切妄想差别荡然无遗，自然一切威仪万行施为无不合辙。",
+    "master": "赵州从谂",
+    "source": "圜悟心要·示坚道者",
+    "relatedConcepts": ["wuxin-dao-ren"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "koan-215",
+    "question": "大梅即心即佛",
+    "answer": "大梅受马祖“即心即佛”而去住山，后闻马祖说“非心非佛”，便云“这老汉鼓弄人家男女有甚了期，你但非心非佛，我只即心即佛也”。圜悟评：岂不是有逆水之波觑破马师漏逗耶？",
+    "context": "圜悟克勤于《圜悟心要》示印禅人中举此公案，赞大梅信得及、把得住，不为师家言语所转。此正是“信得及”的典范。",
+    "master": "大梅法常",
+    "source": "圜悟心要·示印禅人",
+    "relatedConcepts": ["jingang-zhengti"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["huanwuxinyao"]
   }
 ];
 
@@ -10999,5 +11105,77 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《大乘起信论》中“一心二门“如何理解？",
     "answer": "一心即众生心。二门：一、心真如门——心之体，清净本然；二、心生灭门——心之用，随缘起灭。真如非离生灭别有，生灭当体即真如。如水与波：水是真如门，波是生灭门，波不异水。",
     "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-471",
+    "question": "《圜悟心要》的核心宗旨是什么？",
+    "answer": "直指人心见性成佛。圜悟克勤反复强调：人人脚跟下本具金刚正体，不假外求。修行要径在于忘情绝照、休歇身心，将从前知见解路倒底放下，如枯木死灰到一念不生处，蓦然桶底子脱。悟后须绵密保任，世法佛法打成一片，终至无心无为大解脱。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-472",
+    "question": "圜悟克勤所说的“金刚正体”是什么？",
+    "answer": "金刚正体指众生本具的清净妙明真心。如金刚般坚固不坏、能破一切而不为一切所破。此体本无名相非言句所能拟议，含吐十虚独脱根尘。香严击竹、灵云见桃花，皆是无情说法发扬此金刚正体。证悟此体则生死幻翳永消。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-473",
+    "question": "圜悟如何论述“悟后保任”？",
+    "answer": "圜悟引曹山语“保任此事如经蛊毒之乡水也不得沾他一滴”。悟后须绵密管带令无间断，世法佛法初不间隔，二六时中纯一无杂，自然左右逢源打成一片。如人饮水冷暖自知，他人如何知得。此是悟后长养圣胎的切要语。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-474",
+    "question": "《圜悟心要》如何论述“在家修行”？",
+    "answer": "圜悟开示：在家菩萨修出家行如火中出莲。于火宅烦扰中直下本真妙圆到大寂定，放下廓尔平常彻证无心，观一切法如梦如幻。即与维摩诘、傅大士、裴相国等在家胜士同其正因。不以名位权实为碍，转烦恼为道用。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-475",
+    "question": "圜悟所说的“无心道人”是什么境界？",
+    "answer": "圜悟云“我见百千个汉子只是觅作佛底的，中间觅个无心道人难得”。无心非如木石无心，乃是不起分别执著、不生爱憎取舍的清净心。无心道人饥来吃饭困来睡，等闲荡荡地，如痴似兀，方为真实到家。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-476",
+    "question": "《圜悟心要》如何论述“纯一长久”的修行态度？",
+    "answer": "圜悟指出今人参禅之病在于“不纯一长久”——根性差钝而驳杂，虽参寻日久仍怀犹豫。古人十年二十年只参透一着子，倘能不舍昼夜废寝忘餐矻矻在道，不患不如古人。贵在久长，久长最难得人。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-477",
+    "question": "圜悟如何评析庞居士一家三口的公案？",
+    "answer": "庞居士说“难难”，庞婆说“易易”，灵照说“也不难也不易”。圜悟评：若作随语解则全错。忘言体意，方见三人各出一手共提个没底篮儿捞虾摝蚬，著著有杀人之机，处处有出身之路。三人各从不同角度共显一个本分事。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-478",
+    "question": "《圜悟心要》如何论述“无情说法”？",
+    "answer": "圜悟广举古德悟道因缘：香严击竹而悟、灵云见桃花而悟、资福刹竿头、道吾神杖子、大仰插锹、地藏种田，皆是无情说法。无非发扬金刚正体，使当人不动步参大解脱。森罗万象百草颠头长时遍参，无不普摄圆融法界。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-479",
+    "question": "圜悟如何论述“教外别传”？",
+    "answer": "圜悟云：此个大法三世诸佛同证、历代祖师共传、一印印定、直指人心见性成佛、不立文字语句，谓之教外别行单传心印。若涉言诠路布则失却本宗辜负先圣。须以铁石心将从前妄想见解倒底放下，到净倮倮赤洒洒处豁然契证。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-480",
+    "question": "《圜悟心要》如何论述“平常心是道”？",
+    "answer": "圜悟引南泉“平常心是道”，但指出“纔起念待要平常早乖差了”。此最为微细难凑处。须抵死咬嚼教断，似大死人绝气息然后苏醒，始知廓同太虚。平常心不是造作出来的，而是情想都尽后的自然状态。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-481",
+    "question": "圜悟如何评析大梅法常“即心即佛”公案？",
+    "answer": "大梅受马祖“即心即佛”而去住山，后闻“非心非佛”仍不为所动，云“你但非心非佛，我只即心即佛”。圜悟赞其有逆水之波，觑破马师漏逗。此正是信得及、把得住的典范——不为师家言语所转，一悟到底。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-482",
+    "question": "《圜悟心要》列举了哪些古德苦修实例？",
+    "answer": "大迦叶鸡足峰论劫打坐、达磨面壁九年、六祖四会县看猎、大沩深山卓庵十载、大梅一住绝人迹、无业阅大藏、长庆坐破七个蒲团。圜悟云“是皆为此一段大因缘，其志可尚，终古作后昆标准”——以此激励学人发长远心。",
+    "relatedBooks": ["huanwuxinyao"]
   }
 ];
