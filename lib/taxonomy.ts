@@ -6729,7 +6729,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-2",
@@ -6746,7 +6746,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-3",
@@ -6800,7 +6800,7 @@ export const ZEN_KOANS: KoanItem[] = [
       "beyond-words"
     ],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-6",
@@ -6855,7 +6855,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-9",
@@ -6872,7 +6872,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-10",
@@ -6906,7 +6906,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": ["xuemaicong"]
+    "relatedBooks": ["xuemaicong", "wumenguan"]
   },
   {
     "id": "koan-12",
@@ -7160,7 +7160,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 无门关第三十七则",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-25",
@@ -7172,7 +7172,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 无门关第七则",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-26",
@@ -7220,7 +7220,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "碧岩录第十八则 / 无门关第十二则",
     "relatedConcepts": ["koan", "beyond-words", "self-nature"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["dongshanyulu"]
+    "relatedBooks": ["dongshanyulu", "wumenguan"]
   },
   {
     "id": "koan-30",
@@ -7232,7 +7232,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "云门广录 / 五灯会元",
     "relatedConcepts": ["ordinary-mind", "self-nature", "wu-nian"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["linji"]
+    "relatedBooks": ["linji", "yunmen"]
   },
   {
     "id": "koan-31",
@@ -7244,7 +7244,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第一则",
     "relatedConcepts": ["koan", "buddha-nature", "kanhua-chan-concept"],
     "relatedPersons": ["zhaozhou", "wumen-huikai"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-32",
@@ -7256,7 +7256,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "坛经 / 无门关第二十三则",
     "relatedConcepts": ["self-nature", "kanhua-chan-concept", "yiqing"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["tanjing", "wumenguan"]
   },
   {
     "id": "koan-33",
@@ -7268,7 +7268,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 无门关",
     "relatedConcepts": ["koan", "kanhua-chan-concept", "all-returns-to-one"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-34",
@@ -7280,7 +7280,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第二则 / 五灯会元",
     "relatedConcepts": ["yinguo", "emptiness", "self-nature"],
     "relatedPersons": ["baizhang"],
-    "relatedBooks": ["baizhang"]
+    "relatedBooks": ["baizhang", "wumenguan"]
   },
   {
     "id": "koan-35",
@@ -7340,7 +7340,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "五灯会元 / 无门关第二十一则",
     "relatedConcepts": ["koan", "beyond-words", "non-duality"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedBooks": ["yunmen", "wumenguan"]
   },
   {
     "id": "koan-40",
@@ -7388,7 +7388,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 传灯录 / 无门关第十九则",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "non-mind"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-44",
@@ -7676,7 +7676,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 无门关第七则",
     "relatedConcepts": ["ordinary-mind", "wu-nian", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-68",
@@ -7700,7 +7700,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "五灯会元 / 无门关",
     "relatedConcepts": ["koan", "beyond-words", "all-returns-to-one"],
     "relatedPersons": ["juzhi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-70",
@@ -7736,7 +7736,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "洞山语录 / 五灯会元",
     "relatedConcepts": ["koan", "beyond-words", "emptiness"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["linji"]
+    "relatedBooks": ["linji", "dongshanyulu"]
   },
   {
     "id": "koan-73",
@@ -7760,7 +7760,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第十四则 / 五灯会元",
     "relatedConcepts": ["koan", "non-duality", "jifeng"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-75",
@@ -7820,7 +7820,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "洞山语录 / 五灯会元",
     "relatedConcepts": ["self-nature", "beyond-words", "wu-xiang"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["linji"]
+    "relatedBooks": ["linji", "dongshanyulu"]
   },
   {
     "id": "koan-80",
@@ -7916,7 +7916,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "赵州语录 / 无门关第三十七则",
     "relatedConcepts": ["koan", "ordinary-mind", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-88",
@@ -8384,7 +8384,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第二十一则 / 五灯会元",
     "relatedConcepts": ["koan", "non-duality", "buddha-nature"],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedBooks": ["yunmen", "wumenguan"]
   },
   {
     "id": "koan-127",
@@ -8684,7 +8684,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "洞山语录 / 五灯会元",
     "relatedConcepts": ["non-duality", "li-ju-shi-zao", "zhongdao"],
     "relatedPersons": ["dongshan-liangjia"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu"]
   },
   {
     "id": "koan-152",
@@ -8768,7 +8768,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第二则 / 五灯会元",
     "relatedConcepts": ["yinguo", "koan", "self-nature"],
     "relatedPersons": ["baizhang"],
-    "relatedBooks": ["baizhang"]
+    "relatedBooks": ["baizhang", "wumenguan"]
   },
   {
     "id": "koan-159",
@@ -8804,7 +8804,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "黄檗传心法要 / 心经",
     "relatedConcepts": ["emptiness", "zhen-kong-miao-you", "non-duality"],
     "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo"]
+    "relatedBooks": ["huangbo", "xinjing"]
   },
   {
     "id": "koan-162",
@@ -8840,7 +8840,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第十四则 / 五灯会元",
     "relatedConcepts": ["koan", "banghe", "non-duality"],
     "relatedPersons": ["nanquan", "zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-165",
@@ -8864,7 +8864,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第三则 / 五灯会元",
     "relatedConcepts": ["koan", "direct-pointing", "self-nature"],
     "relatedPersons": ["juzhi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-167",
@@ -9200,7 +9200,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无门关第一则 / 五灯会元",
     "relatedConcepts": ["koan", "buddha-nature", "emptiness"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun", "yunmen"]
+    "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "koan-195",
@@ -9427,7 +9427,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "圜悟心要·示华藏明首座",
     "relatedConcepts": ["wuxin-dao-ren", "ordinary-mind"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "koan-214",
@@ -9438,7 +9438,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "圜悟心要·示坚道者",
     "relatedConcepts": ["wuxin-dao-ren"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "koan-215",
@@ -9540,7 +9540,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "无心论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran"]
+    "relatedBooks": ["wuran", "wuxinlun"]
   },
   {
     "id": "koan-224",
@@ -9716,7 +9716,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "证道歌",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["yongjia"]
+    "relatedBooks": ["yongjia", "zhengdaoge"]
   },
   {
     "id": "koan-240",
