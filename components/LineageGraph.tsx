@@ -229,7 +229,7 @@ export const LineageGraph: React.FC = () => {
                           <Link href="/persons/linji" className="text-xs font-bold font-serif-zen text-rose-900 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                             {t('临济义玄')}
                           </Link>
-                          <span className="px-2 py-0.5 rounded text-[10px] font-black bg-rose-600 text-white shadow-sm">
+                          <span className="px-2 py-0.5 rounded text-[10px] font-black bg-rose-700 text-white shadow-sm">
                             {t('临济宗')}
                           </span>
                         </div>
@@ -242,7 +242,7 @@ export const LineageGraph: React.FC = () => {
                     </Link>
                         <div className="mt-1 flex items-center justify-between">
                           <Link href="/persons/yangshan-huiji" className="text-xs font-bold font-serif-zen text-amber-900 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('仰山慧寂')}</Link>
-                          <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-600 text-white shadow-sm">
+                          <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white shadow-sm">
                             {t('沩仰宗')}
                           </span>
                         </div>
@@ -318,7 +318,7 @@ export const LineageGraph: React.FC = () => {
                     <Link href="/persons/caoshan-benji" className="text-[11px] text-slate-500 mt-0.5 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('曹山本寂')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
-                    <span className="px-2 py-1 rounded text-[10px] font-black bg-emerald-600 text-white shadow-sm block">
+                    <span className="px-2 py-1 rounded text-[10px] font-black bg-emerald-700 text-white shadow-sm block">
                       {t('曹洞宗')}
                     </span>
                   </div>
@@ -343,7 +343,7 @@ export const LineageGraph: React.FC = () => {
                     </div>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
-                    <span className="px-2 py-1 rounded text-[10px] font-black bg-purple-600 text-white shadow-sm block">
+                    <span className="px-2 py-1 rounded text-[10px] font-black bg-purple-700 text-white shadow-sm block">
                       {t('云门宗')}
                     </span>
                   </div>
@@ -360,7 +360,7 @@ export const LineageGraph: React.FC = () => {
                     <Link href="/persons/fayan-wenyi" className="text-xs font-bold text-slate-900 mt-1 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('法眼文益')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
-                    <span className="px-2 py-1 rounded text-[10px] font-black bg-indigo-600 text-white shadow-sm block">
+                    <span className="px-2 py-1 rounded text-[10px] font-black bg-indigo-700 text-white shadow-sm block">
                       {t('法眼宗')}
                     </span>
                   </div>

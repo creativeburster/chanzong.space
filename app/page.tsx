@@ -70,10 +70,10 @@ export default function Home() {
           {/* 1. 经典著作精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <BookOpen className="w-4 h-4 text-amber-700" />
                 <span>经典著作精选</span>
-              </div>
+              </h2>
               <Link href="/books" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.classics} 部 →
               </Link>
@@ -109,10 +109,10 @@ export default function Home() {
           {/* 2. 核心概念精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Gem className="w-4 h-4 text-emerald-600" />
                 <span>核心概念精选</span>
-              </div>
+              </h2>
               <Link href="/concepts" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.concepts} 概念 →
               </Link>
@@ -146,10 +146,10 @@ export default function Home() {
           {/* 3. 修持法门精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Compass className="w-4 h-4 text-sky-600" />
                 <span>修持法门精选</span>
-              </div>
+              </h2>
               <Link href="/methods" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.methods} 法门 →
               </Link>
@@ -175,10 +175,10 @@ export default function Home() {
           {/* 4. 公案精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <MessageSquare className="w-4 h-4 text-rose-600" />
                 <span>公案精选</span>
-              </div>
+              </h2>
               <Link href="/koan" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.koans} 则公案 →
               </Link>
@@ -206,10 +206,10 @@ export default function Home() {
           {/* 5. 祖师人物精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Users className="w-4 h-4 text-purple-600" />
                 <span>祖师人物精选</span>
-              </div>
+              </h2>
               <Link href="/persons" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.persons} 位祖师 →
               </Link>
@@ -233,10 +233,10 @@ export default function Home() {
           {/* 6. 经典问答精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Lightbulb className="w-4 h-4 text-amber-600" />
                 <span>经典问答精选</span>
-              </div>
+              </h2>
               <Link href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.faqs} 条问答 →
               </Link>
