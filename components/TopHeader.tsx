@@ -37,7 +37,7 @@ export const TopHeader: React.FC = () => {
       </Link>
 
       {/* Top Nav Links */}
-      <nav className="hidden md:flex items-center space-x-8 text-[14px] font-medium ml-auto">
+      <nav className="hidden md:flex items-center space-x-5 text-[14px] font-medium ml-auto">
         {navLinks.map((link) => (
           <Link
             key={link.href}
