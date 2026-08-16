@@ -33,7 +33,7 @@ export default function GraphPage() {
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
 
-        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-12">
+        <main className="flex-1 max-w-[1434px] mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-12">
           <div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
               {t('知识图谱')} ({STATS.concepts} {t('概念')} · {STATS.classics} {t('著作')} · {STATS.persons} {t('祖师')} · {STATS.koans} {t('公案')})

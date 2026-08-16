@@ -463,7 +463,7 @@ export const GraphCanvas: React.FC = () => {
   const countByType = (t: string) => getGraphData().allNodes.filter((n) => n.type === t).length;
 
   return (
-    <div className="relative isolate w-full h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[560px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800" ref={containerRef}>
+    <div className="relative isolate w-full h-[75vh] min-h-[525px] md:h-[90vh] md:min-h-[700px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800" ref={containerRef}>
       {/* Filter chips */}
       <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[60%]">
         {FILTER_TYPES.map((t) => (
