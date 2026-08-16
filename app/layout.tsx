@@ -1,6 +1,5 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
 const SITE_URL = 'https://chanzong.space';
@@ -101,18 +100,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
-          strategy="afterInteractive"
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"></script>
+        <script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-E33EPY0QV7');
+            `,
+          }}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E33EPY0QV7');
-          `}
-        </Script>
       </head>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
         <LangProvider>
