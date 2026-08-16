@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { StatsOverview } from '@/components/StatsOverview';
 import { QuickEntryGrid } from '@/components/QuickEntryGrid';
-import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
 import {
@@ -20,7 +20,18 @@ import {
 import { ChevronRight, Gem, BookOpen, Compass, MessageSquare, Users, Lightbulb } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 
-const LineageGraph = lazy(() => import('@/components/LineageGraph').then(m => ({ default: m.LineageGraph })));
+const LineageGraph = dynamic(
+  () => import('@/components/LineageGraph').then((m) => m.LineageGraph),
+  {
+    ssr: false,
+    loading: () => <div className="h-96 flex items-center justify-center text-slate-500 font-serif-zen">加载传法世系图…</div>,
+  }
+);
+
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 
 export default function Home() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -261,9 +272,7 @@ export default function Home() {
 
           {/* 禅宗传法世系图表 */}
           <div className="my-16">
-            <Suspense fallback={<div className="h-96 flex items-center justify-center text-slate-500">加载传法世系图…</div>}>
-              <LineageGraph />
-            </Suspense>
+            <LineageGraph />
           </div>
         </main>
 
