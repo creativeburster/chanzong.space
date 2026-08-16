@@ -101,19 +101,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E33EPY0QV7');
+          `}
+        </Script>
       </head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-E33EPY0QV7');
-        `}
-      </Script>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
         <LangProvider>
           {children}
