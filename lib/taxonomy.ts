@@ -5323,19 +5323,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": ["poxianglun", "zuishangcheng", "huangbo", "lengyanjing", "weimojiejing", "yongjia", "bashiguijusong", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
-    "id": "wuxingguan",
-    "title": "五行观",
-    "category": "实修",
-    "summary": "《大乘起信论》所明五种修行：施门、戒门、忍门、进门、止观门。禅宗以止观为根本，兼摄前四。",
-    "etymology": "",
-    "quotes": [],
-    "guidance": "",
-    "classicRef": "",
-    "relatedConcepts": [],
-    "relatedPersons": [],
-    "relatedBooks": []
-  },
-  {
     "id": "zhenkong-miaoyou",
     "title": "真空妙有",
     "category": "本体",
@@ -5360,19 +5347,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "relatedBooks": ["tanjing", "shenhui", "weimojiejing"]
-  },
-  {
-    "id": "sammiao-wu",
-    "title": "三妙悟",
-    "category": "境界",
-    "summary": "禅宗悟道之三层次：解悟、行悟、证悟。解悟为知解，行悟为践行，证悟为亲证。",
-    "etymology": "",
-    "quotes": [],
-    "guidance": "",
-    "classicRef": "",
-    "relatedConcepts": [],
-    "relatedPersons": [],
-    "relatedBooks": []
   },
   {
     "id": "yixinyuan",
