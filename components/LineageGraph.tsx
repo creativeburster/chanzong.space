@@ -21,12 +21,12 @@ export const LineageGraph: React.FC = () => {
 
   // 1. 直传主干 (达摩至惠能)
   const patriarchs: MasterNode[] = [
-    { id: 'bodhidharma', name: '菩提达摩', title: '东土初祖', sub: '直指人心 见性成佛' },
+    { id: 'bodhidharma', name: '菩提达摩', title: '东土初祖', sub: '直指人心 见性成佛', subLinks: [{ text: '直指人心', href: '/concepts/direct-pointing' }] },
     { id: 'huike', name: '二祖慧可', title: '二祖', sub: '断臂求法 安心法门' },
-    { id: 'sengcan', name: '三祖僧璨', title: '三祖', sub: '信心铭 绝能所' },
+    { id: 'sengcan', name: '三祖僧璨', title: '三祖', sub: '信心铭 绝能所', subLinks: [{ text: '信心铭', href: '/classics/xinxinming' }] },
     { id: 'daoxin', name: '四祖道信', title: '四祖', sub: '入道方便 农禅并重' },
     { id: 'hongren', name: '五祖弘忍', title: '五祖', sub: '东山法门 最上乘论' },
-    { id: 'huineng', name: '六祖惠能', title: '六祖', sub: '菩提本无树 曹溪顿教' },
+    { id: 'huineng', name: '六祖惠能', title: '六祖', sub: '菩提本无树 曹溪顿教', subLinks: [{ text: '菩提本无树', href: '/classics/tanjing' }] },
   ];
 
   // 2. 六祖门下五大分支
@@ -34,7 +34,7 @@ export const LineageGraph: React.FC = () => {
     { id: 'nanyang-huizhong', name: '南阳慧忠', title: '国师', sub: '无缝塔', subLinks: [{ text: '无缝塔', href: '/persons/nanyang-huizhong' }] },
     { id: 'yongjia', name: '永嘉玄觉', title: '真觉禅师', sub: '证道歌', subLinks: [{ text: '证道歌', href: '/classics/zhengdaoge' }] },
     { id: 'shenhui', name: '荷泽神会', title: '荷泽宗', sub: '显宗记 奠定南宗正统', subLinks: [{ text: '显宗记', href: '/classics/shenhui' }] },
-    { id: 'huairang', name: '南岳怀让', title: '南岳系主干', sub: '磨砖作镜 开马祖一脉' },
+    { id: 'huairang', name: '南岳怀让', title: '南岳系主干', sub: '磨砖作镜 开马祖一脉', subLinks: [{ text: '磨砖作镜', href: '/koan/koan-7' }] },
     { id: 'xingsi', name: '青原行思', title: '青原系主干', sub: '圣谛亦不为 开石头一脉' },
   ];
 
@@ -94,7 +94,21 @@ export const LineageGraph: React.FC = () => {
                       </div>
                       {node.sub && (
                         <div className="text-xs text-slate-500 mt-0.5">
-                          {t(node.sub)}
+                          {node.subLinks
+                            ? t(node.sub).split(node.subLinks[0].text).map((part, i) => (
+                                <React.Fragment key={i}>
+                                  {part}
+                                  {i < node.subLinks!.length && (
+                                    <Link
+                                      href={node.subLinks![i].href}
+                                      className="text-amber-700 hover:text-amber-900 hover:underline font-semibold"
+                                    >
+                                      {t(node.subLinks![i].text)}
+                                    </Link>
+                                  )}
+                                </React.Fragment>
+                              ))
+                            : t(node.sub)}
                         </div>
                       )}
                     </div>
@@ -237,7 +251,9 @@ export const LineageGraph: React.FC = () => {
                     <Link href="/persons/baizhang" className="text-base font-bold font-serif-zen text-slate-900 hover:text-amber-800 hover:underline">
                       {t('百丈怀海')}
                     </Link>
-                    <div className="text-[11px] text-slate-500 mb-3">{t('一日不作 一日不食')}</div>
+                    <div className="text-[11px] text-slate-500 mb-3">
+                      <Link href="/methods/daily-zen" className="text-amber-700 hover:text-amber-900 hover:underline font-semibold">{t('一日不作 一日不食')}</Link>
+                    </div>
 
                     <div className="space-y-3 pt-3 border-t border-slate-200">
                       {/* 黄檗 -> 临济宗 */}
@@ -276,14 +292,20 @@ export const LineageGraph: React.FC = () => {
                   <div>
                     <div className="text-xs font-bold text-slate-500 mb-1">{t('南泉系')}</div>
                     <Link href="/persons/nanquan-puyuan" className="text-base font-bold font-serif-zen text-slate-900 hover:text-amber-800 hover:underline">{t('南泉普愿')}</Link>
-                    <div className="text-[11px] text-slate-500 mb-3">{t('南泉斩猫')}</div>
+                    <div className="text-[11px] text-slate-500 mb-3">
+                      <Link href="/koan/koan-1" className="text-amber-700 hover:text-amber-900 hover:underline font-semibold">{t('南泉斩猫')}</Link>
+                    </div>
 
                     <div className="pt-3 border-t border-slate-200">
                       <div className="p-3 rounded-xl bg-sky-50/80 border border-sky-200">
                         <Link href="/persons/zhaozhou" className="text-xs font-bold font-serif-zen text-sky-900 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                           {t('赵州从谂')}
                         </Link>
-                        <div className="text-[10px] text-sky-700 mt-0.5">{t('吃茶去 · 庭前柏树子')}</div>
+                        <div className="text-[11px] text-sky-700 mt-0.5">
+                          <Link href="/concepts/chi-cha-qu" className="text-amber-700 hover:text-amber-900 hover:underline font-semibold">{t('吃茶去')}</Link>
+                          {' · '}
+                          <Link href="/concepts/ting-qian-baishuzi" className="text-amber-700 hover:text-amber-900 hover:underline font-semibold">{t('庭前柏树子')}</Link>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -329,13 +351,13 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('药山枝线')}</div>
-                    <Link href="/persons/yaoshan-weiyan" className="text-xs font-bold text-slate-900 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('药山惟俨')}</Link>
+                    <Link href="/persons/yaoshan-weiyan" className="text-xs text-slate-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('药山惟俨')}</Link>
                     <div className="text-xs font-bold text-slate-900 mt-1">
                       <Link href="/persons/dongshan" className="hover:underline hover:text-emerald-800 min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                         {t('洞山良价')}
                       </Link>
                     </div>
-                    <Link href="/persons/caoshan-benji" className="text-[11px] text-slate-500 mt-0.5 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('曹山本寂')}</Link>
+                    <Link href="/persons/caoshan-benji" className="text-xs text-slate-700 mt-0.5 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('曹山本寂')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-emerald-700 text-white shadow-sm block">
@@ -348,12 +370,12 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('天皇枝线')}</div>
-                    <div className="text-[11px] text-slate-700">
+                    <div className="text-xs text-slate-700">
                       <Link href="/persons/tianhuang-daowu" className="hover:text-purple-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('天皇道悟')}</Link>
                       {' → '}
                       <Link href="/persons/longtan-chongxin" className="hover:text-purple-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('龙潭')}</Link>
                     </div>
-                    <div className="text-[11px] text-slate-700">
+                    <div className="text-xs text-slate-700">
                       <Link href="/persons/deshan-xuanjian" className="hover:text-purple-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('德山宣鉴')}</Link>
                       {' → '}
                       <Link href="/persons/xuefeng-yicun" className="hover:text-purple-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('雪峰')}</Link>
@@ -373,8 +395,8 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 mb-1">{t('罗汉枝线')}</div>
-                    <Link href="/persons/luohan-guichen" className="text-xs font-bold text-slate-900 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('罗汉桂琛')}</Link>
-                    <div className="text-[11px] text-slate-700 mt-0.5">
+                    <Link href="/persons/luohan-guichen" className="text-xs text-slate-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('罗汉桂琛')}</Link>
+                    <div className="text-xs text-slate-700 mt-0.5">
                       <Link href="/persons/xuansha-shibei" className="hover:text-indigo-700 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('玄沙师备')}</Link>
                     </div>
                     <Link href="/persons/fayan-wenyi" className="text-xs font-bold text-slate-900 mt-1 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('法眼文益')}</Link>
