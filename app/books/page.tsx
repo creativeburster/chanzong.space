@@ -8,6 +8,7 @@ import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { BookOpen, ChevronRight } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function BooksPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -28,6 +29,7 @@ export default function BooksPage() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+          <Breadcrumb items={[{ label: '书籍总览' }]} />
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-800 mb-2">
               <BookOpen className="w-4 h-4" />

@@ -10,6 +10,7 @@ import { STATS } from '@/lib/stats';
 import { ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS, ZEN_CONCEPTS } from '@/lib/taxonomy';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 const GraphCanvas = lazy(() => import('@/components/GraphCanvas').then(m => ({ default: m.GraphCanvas })));
 
@@ -34,6 +35,7 @@ export default function GraphPage() {
         <TopHeader />
 
         <main className="flex-1 max-w-[1434px] mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-12">
+          <Breadcrumb items={[{ label: '知识图谱' }]} />
           <div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
               {t('知识图谱')} ({STATS.concepts} {t('概念')} · {STATS.classics} {t('著作')} · {STATS.persons} {t('祖师')} · {STATS.koans} {t('公案')})

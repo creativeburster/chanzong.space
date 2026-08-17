@@ -10,6 +10,7 @@ import { ZEN_KOANS } from '@/lib/taxonomy';
 import { MessageCircle } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function KoansPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function KoansPage() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+          <Breadcrumb items={[{ label: '禅宗公案' }]} />
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-700 mb-2">
               <MessageCircle className="w-4 h-4" />

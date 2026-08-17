@@ -8,11 +8,12 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
-import { ArrowLeft, BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Share2, Tag, Lightbulb } from 'lucide-react';
+import { BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Share2, Tag, Lightbulb } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 interface PageProps {
   params: {
@@ -37,13 +38,7 @@ export default function PersonDetailPage({ params }: PageProps) {
         <TopHeader />
 
         <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
-          <Link
-            href="/persons"
-            className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-slate-500 hover:text-purple-800 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>{t('返回祖师人物列表')}</span>
-          </Link>
+          <Breadcrumb items={[{ label: '人物', href: '/persons' }, { label: person.name }]} />
 
           {/* 1. 祖师概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">

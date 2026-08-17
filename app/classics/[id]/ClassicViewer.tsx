@@ -11,10 +11,11 @@ import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCar
 import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
-import { ArrowLeft, ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare, HelpCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Copy, Check, Users, Gem, Compass, MessageSquare, HelpCircle } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { LinkCardGrid } from '@/components/InternalLinkCards';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 interface ClassicViewerProps {
   meta: ClassicItem;
@@ -65,13 +66,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
         {/* Top Banner Header */}
         <div className="bg-white border-b border-zinc-200 py-10 shadow-sm">
           <div className="max-w-6xl mx-auto px-6">
-            <Link
-              href="/books"
-              className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-slate-500 hover:text-amber-800 transition-colors mb-4"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>{t('返回典籍大库')}</span>
-            </Link>
+            <Breadcrumb items={[{ label: '经典', href: '/books' }, { label: meta.title }]} />
 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>

@@ -10,6 +10,7 @@ import { ZEN_METHODS } from '@/lib/taxonomy';
 import { Compass, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function MethodsPage() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function MethodsPage() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+          <Breadcrumb items={[{ label: '修行方法' }]} />
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-sky-700 mb-2">
               <Compass className="w-4 h-4" />

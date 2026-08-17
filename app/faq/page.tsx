@@ -10,6 +10,7 @@ import { ZEN_FAQS } from '@/lib/taxonomy';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Filter } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 type FAQEntry = {
   id: string;
@@ -75,6 +76,7 @@ export default function FAQPage() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+          <Breadcrumb items={[{ label: '参究 FAQ' }]} />
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-700 mb-2">
               <Lightbulb className="w-4 h-4" />
