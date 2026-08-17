@@ -120,8 +120,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "bodhidharma",
       "sengcan"
     ],
-    "relatedBooks": [
-      "anxin", "wuxinlun"]
+    "relatedBooks": ["wuxinlun"]
   },
   {
     "id": "sengcan",
@@ -427,8 +426,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "baizhang",
       "linji"
     ],
-    "relatedBooks": [
-      "huangbo", "changuancejin"]
+    "relatedBooks": ["huangbo"]
   },
   {
     "id": "linji",
@@ -490,7 +488,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "dongshan"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen", "changuancejin", "zhaozhouyulu"]
+    "relatedBooks": ["yunmen", "changuancejin", "zhaozhouyulu"]
   },
   {
     "id": "dongshan",
@@ -660,10 +658,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "huineng",
       "mazu"
     ],
-    "relatedBooks": [
-      "tanjing",
-      "mazu"
-    ]
+    "relatedBooks": ["mazu"]
   },
   {
     "id": "xingsi",
@@ -690,9 +685,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "huineng",
       "shitou"
     ],
-    "relatedBooks": [
-      "tanjing"
-    ]
+    "relatedBooks": ["tanjing", "chanlinbaoxun", "wumenguan", "huanwuyulu"]
   },
   {
     "id": "shitou",
@@ -723,9 +716,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "mazu",
       "yaoshan-weiyan"
     ],
-    "relatedBooks": [
-      "tanjing"
-    ]
+    "relatedBooks": ["wuxinlun", "mazu", "chanlinbaoxun", "lengyanjing", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "xubuti",
@@ -782,10 +773,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "xubuti",
       "huineng"
     ],
-    "relatedBooks": [
-      "xinjing",
-      "jingangjing"
-    ]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "puxian-yuanjue",
@@ -927,10 +915,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "xubuti",
       "guanzizai"
     ],
-    "relatedBooks": [
-      "lengyanjing",
-      "jingangjing"
-    ]
+    "relatedBooks": ["lengyanjing"]
   },
   {
     "id": "banramidi",
@@ -1019,11 +1004,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "weimojie",
       "guanzizai"
     ],
-    "relatedBooks": [
-      "yuanjuejing",
-      "weimojiejing",
-      "lengyanjing",
-      "wenshu", "juelin"]
+    "relatedBooks": ["yuanjuejing", "weimojiejing", "lengyanjing", "juelin"]
   },
   {
     "id": "chuyuan",
@@ -1051,8 +1032,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "huanglong-huinan",
       "yangqi-fanghui"
     ],
-    "relatedBooks": [
-      "chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "jiaye",
@@ -1078,9 +1058,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "bodhidharma",
       "anan"
     ],
-    "relatedBooks": [
-      "qifo"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "weishan-lingyou",
@@ -1098,7 +1076,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["baizhang", "yangshan-huiji"],
-    "relatedBooks": ["baojingsanmei", "dongshanyulu"]
+    "relatedBooks": ["dongshanyulu"]
   },
   {
     "id": "yangshan-huiji",
@@ -1115,7 +1093,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["mind-is-buddha", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["weishan-lingyou"],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": ["baizhang", "yuanjuejing", "chanlinbaoxun", "yunmen", "wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "caoshan-benji",
@@ -1132,7 +1110,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dongshan"],
-    "relatedBooks": ["baojingsanmei", "dongshanyulu"]
+    "relatedBooks": ["baojingsanmei"]
   },
   {
     "id": "yunyan-tancheng",
@@ -1149,7 +1127,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["dongshan", "baizhang"],
-    "relatedBooks": ["baojingsanmei", "dongshanyulu"]
+    "relatedBooks": ["baojingsanmei"]
   },
   {
     "id": "nanquan-puyuan",
@@ -1167,7 +1145,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "no-abiding"],
     "relatedMethods": [],
     "relatedPersons": ["mazu", "zhaozhou"],
-    "relatedBooks": ["baizhang", "mazu"]
+    "relatedBooks": ["baizhang"]
   },
   {
     "id": "fenzhou-wuye",
@@ -1220,7 +1198,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "mind-is-buddha"],
     "relatedMethods": [],
     "relatedPersons": ["mazu", "shitou"],
-    "relatedBooks": ["mazu"]
+    "relatedBooks": ["mazu", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "guifeng-zongmi",
@@ -1256,7 +1234,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
     "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
     "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": ["changuancejin", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "luohouluo",
@@ -1342,7 +1320,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "kuoan",
@@ -1396,7 +1374,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["prajna", "emptiness", "no-abiding"],
     "relatedMethods": [],
     "relatedPersons": ["sengzhao"],
-    "relatedBooks": ["xinjing", "jingangjing", "weimojiejing"]
+    "relatedBooks": ["jingangjing", "weimojiejing"]
   },
   {
     "id": "xuanzang",
@@ -1414,7 +1392,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["weishi-yixin", "emptiness", "zhuan-shi-cheng-zhi", "alaiye-shi", "mo-na-shi"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing", "bashiguijusong"]
+    "relatedBooks": ["bashiguijusong"]
   },
   {
     "id": "sengzhao",
@@ -1449,7 +1427,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["yunmen", "deshan-xuanjian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "deshan-xuanjian",
@@ -1466,7 +1444,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "hongzhi-zhengjue",
@@ -1483,7 +1461,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["baojingsanmei", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "yongming-yanshou",
@@ -1500,7 +1478,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["weishi-yixin", "samadhi"],
     "relatedMethods": [],
     "relatedPersons": ["tiantai-deshao"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "fayan-wenyi",
@@ -1517,7 +1495,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["yongming-yanshou", "tiantai-deshao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["qifo", "wenshu", "xuemaicong", "anxin", "tanjing", "mazu", "jingangjing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "shiniutu", "dongshanyulu", "yongjia", "yunmen", "wumenguan", "huanwuxinyao", "huanwuyulu", "chanjia_guijian"]
   },
   {
     "id": "tiantai-deshao",
@@ -1534,7 +1512,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["tanjing", "zhengdaoge", "chanlinbaoxun", "weimojiejing", "dongshanyulu", "yongjia", "yunmen", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "zuochanyi", "zhaozhouyulu"]
   },
   {
     "id": "ming-bodhisattva",
@@ -1551,7 +1529,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "emptiness"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing", "dachengqixinlun"]
+    "relatedBooks": ["dachengqixinlun"]
   },
   {
     "id": "nagarjuna",
@@ -1568,7 +1546,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["emptiness", "prajna", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["kumarajiva", "sengzhao"],
-    "relatedBooks": ["xinjing"]
+    "relatedBooks": []
   },
   {
     "id": "longtan-chongxin",
@@ -1585,7 +1563,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["deshan-xuanjian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "xuansha-shibei",
@@ -1602,7 +1580,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["xuefeng-yicun", "fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "luohan-guichen",
@@ -1619,7 +1597,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["xuansha-shibei", "fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wenshu", "xixulun", "mazu", "linji", "jingangjing", "yuanjuejing", "lengyanjing", "weimojiejing", "dongshanyulu", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "fenyang-shanzhao",
@@ -1636,7 +1614,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "koan"],
     "relatedMethods": [],
     "relatedPersons": ["chuyuan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "changuancejin", "huanwuxinyao"]
   },
   {
     "id": "wuzu-fayan",
@@ -1653,7 +1631,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["yuanwu-keqin", "baiyun-shouduan"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "baiyun-shouduan",
@@ -1670,7 +1648,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["yangqi-fanghui", "wuzu-fayan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["mazu", "chanlinbaoxun", "dongshanyulu", "yongjia", "wumenguan", "huanwuxinyao", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "wumen-huikai",
@@ -1687,7 +1665,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["zhaozhou", "dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun", 'wumenguan']
+    "relatedBooks": []
   },
   {
     "id": "niutou-farong",
@@ -1705,7 +1683,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-mind", "emptiness", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["daoxin"],
-    "relatedBooks": ["chanlinbaoxun", "xinxinming", 'wuran', 'wuxinlun', 'xinwangming', 'juelin']
+    "relatedBooks": ["xinxinming"]
   },
   {
     "id": "tianhuang-daowu",
@@ -1722,7 +1700,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["shitou", "longtan-chongxin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["anxin", "chanlinbaoxun", "huanwuxinyao"]
   },
   {
     "id": "danxia-tianran",
@@ -1739,7 +1717,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "self-nature", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["shitou", "mazu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "xiangyan-zhixian",
@@ -1756,7 +1734,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "beyond-words"],
     "relatedMethods": [],
     "relatedPersons": ["weishan-lingyou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["lengyanjing", "weimojiejing", "wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "li-ao",
@@ -1773,7 +1751,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["yaoshan-weiyan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "wansong-xingxiu",
@@ -1790,7 +1768,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "samadhi"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["hongzhi-zhengjue"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "zhuhong",
@@ -1808,7 +1786,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "changlu-zongze",
@@ -1825,7 +1803,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "muzhou-daoming",
@@ -1842,7 +1820,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["yunmen"],
-    "relatedBooks": ["chanlinbaoxun", 'yunmen']
+    "relatedBooks": []
   },
   {
     "id": "youpoli",
@@ -1876,7 +1854,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["mind-transmission", "beyond-words", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["anan", "bodhidharma"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "daoyuan",
@@ -1893,7 +1871,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["hongzhi-zhengjue", "changlu-zongze"],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": []
   },
   {
     "id": "shoushan-xingnian",
@@ -1909,7 +1887,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedMethods": [],
     "relatedPersons": ["fenyang-shanzhao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "foyan-qingyuan",
@@ -1926,7 +1904,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["wuzu-fayan", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["jingangjing", "chanlinbaoxun", "weimojiejing", "shiniutu", "yongjia", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "huitang-zuxin",
@@ -1977,7 +1955,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "tou-xin-wei-si"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["huitang-zuxin", "lingyuan-weiqing"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "zhantang-wenzhun",
@@ -2010,7 +1988,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["tou-xin-wei-si", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["xuemaicong", "tanjing", "chanlinbaoxun", "yunmen", "wumenguan", "changuancejin", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "puming",
@@ -2027,7 +2005,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["kuoan"],
-    "relatedBooks": ["shiniutu"]
+    "relatedBooks": []
   },
   {
     "id": "danxia-zichun",
@@ -2043,7 +2021,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["hongzhi-zhengjue"],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": ["mazu", "changuancejin", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "yelu-chucai",
@@ -2060,7 +2038,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["wansong-xingxiu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "furong-daookai",
@@ -2077,7 +2055,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["danxia-zichun"],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": []
   },
   {
     "id": "taiping-huiman",
@@ -2093,7 +2071,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["wuzu-fayan", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "fengxue-yanzhao",
@@ -2109,7 +2087,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "koan"],
     "relatedMethods": [],
     "relatedPersons": ["shoushan-xingnian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wumenguan", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "daoyuan-monk",
@@ -2125,7 +2103,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["mind-transmission"],
     "relatedMethods": [],
     "relatedPersons": ["tiantai-deshao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "puji",
@@ -2141,7 +2119,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["mind-transmission"],
     "relatedMethods": [],
     "relatedPersons": ["dahui-zonggao", "daoyuan-monk"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "huangtingjian",
@@ -2158,7 +2136,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["huitang-zuxin", "lingyuan-weiqing"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "tongrong",
@@ -2174,7 +2152,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words", "koan"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "yinyuan-longqi",
@@ -2191,7 +2169,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["tongrong"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "nanyang-huizhong",
@@ -2209,7 +2187,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "samadhi", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["dongshanyulu", "huanwuyulu"]
   },
   {
     "id": "huqiu-shaolong",
@@ -2237,7 +2215,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedMethods": [],
     "relatedPersons": ["yuanwu-keqin", "yunmen-wenyan"],
-    "relatedBooks": ["huanwuyulu", 'huanwuxinyao']
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "touzi-datong",
@@ -2251,7 +2229,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "shide",
@@ -2279,7 +2257,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["poan-zuxian"],
-    "relatedBooks": ["chanlinbaoxun", 'changuancejin']
+    "relatedBooks": []
   },
   {
     "id": "zhongfeng-mingben",
@@ -2293,7 +2271,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["xiuxinjue", "lengyanjing", "changuancejin", "huanwuyulu"]
   },
   {
     "id": "gaofeng-yuanmiao",
@@ -2307,7 +2285,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["xueyan-zuqin", "zhongfeng-mingben"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["changuancejin", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "zhenjing-kewen",
@@ -2321,7 +2299,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["tanjing", "chanlinbaoxun", "lengyanjing", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "xueyan-zuqin",
@@ -2349,7 +2327,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["wuzhun-shifan"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["changuancejin", "huanwuyulu"]
   },
   {
     "id": "foyin-liaoyuan",
@@ -2363,7 +2341,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "emptiness"],
     "relatedMethods": [],
     "relatedPersons": ["huangtingjian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "lengyanjing", "huanwuyulu"]
   },
   {
     "id": "niaoke-daolin",
@@ -2377,7 +2355,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedBooks": ["huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "sheli-fu",
@@ -2391,7 +2369,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["prajna", "emptiness"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinjing", "lengyanjing", "weimojiejing"]
+    "relatedBooks": ["lengyanjing", "weimojiejing"]
   },
   {
     "id": "mulian",
@@ -2419,7 +2397,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["instant-enlightenment", "buddha-nature"],
     "relatedMethods": [],
     "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["lengyanjing", "weimojiejing"]
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "zhenxie-qingliao",
@@ -2433,7 +2411,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["danxia-zichun", "hongzhi-zhengjue"],
-    "relatedBooks": ["lengyanjing"]
+    "relatedBooks": ["lengyanjing", "weimojiejing", "zuochanyi"]
   },
   {
     "id": "tianyi-yihuai",
@@ -2447,7 +2425,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan"],
     "relatedMethods": [],
     "relatedPersons": ["xuedou-zhongxian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "kaifu-daoning",
@@ -2461,7 +2439,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["wuzu-fayan", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "fojian-huiqin",
@@ -2475,7 +2453,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["wuzu-fayan", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "huanwuyulu"]
     },
   {
     "id": "tuiyin",
@@ -2558,9 +2536,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "zongmi"
     ],
-    "relatedBooks": [
-      "zuochanyi"
-    ]
+    "relatedBooks": ["dongshanyulu", "huanwuyulu", "zuochanyi"]
   }
 ];
 
@@ -2730,9 +2706,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huineng",
       "yongjia"
     ],
-    "relatedBooks": [
-      "tanjing",
-      "zhengdaoge", "zhigong"]
+    "relatedBooks": ["tanjing", "zhigong"]
   },
   {
     "id": "no-abiding",
@@ -2774,9 +2748,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "mazu",
       "huangbo"
     ],
-    "relatedBooks": [
-      "mazu",
-      "huangbo", "xuemaicong", "zhigong", "xinwangming"]
+    "relatedBooks": ["mazu", "xuemaicong", "zhigong", "xinwangming"]
   },
   {
     "id": "not-mind-not-buddha",
@@ -2817,8 +2789,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "zhaozhou"
     ],
-    "relatedBooks": [
-      "mazu", "zhigong"]
+    "relatedBooks": ["zhigong"]
   },
   {
     "id": "direct-pointing",
@@ -2839,8 +2810,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "bodhidharma",
       "linji"
     ],
-    "relatedBooks": [
-      "xuemaicong", "qifo", "wuran", "huangbo", "xiuxinjue", "zhenxin", "xinwangming", "bashiguijusong"]
+    "relatedBooks": ["qifo", "wuran", "huangbo", "xiuxinjue", "zhenxin", "xinwangming", "bashiguijusong"]
   },
   {
     "id": "mind-transmission",
@@ -2884,9 +2854,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "bodhidharma",
       "linji"
     ],
-    "relatedBooks": [
-      "xuemaicong",
-      "shenhui", "qifo"]
+    "relatedBooks": ["xuemaicong", "qifo"]
   },
   {
     "id": "originally-nothing",
@@ -2960,10 +2928,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "yongjia",
       "chinul"
     ],
-    "relatedBooks": [
-      "tanjing",
-      "dunwu",
-      "xiuxinjue", "zhangzhi", "xixulun", "baizhang", "xinwangming", "shenhui", "xinxinming", "zhengdaoge"]
+    "relatedBooks": ["tanjing", "dunwu", "xiuxinjue", "zhangzhi", "xixulun", "baizhang", "xinwangming", "shenhui", "zhengdaoge"]
   },
   {
     "id": "ordinary-mind",
@@ -2989,10 +2954,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "zhaozhou",
       "linji"
     ],
-    "relatedBooks": [
-      "mazu",
-      "linji"
-    ]
+    "relatedBooks": ["mazu"]
   },
   {
     "id": "non-mind",
@@ -3062,10 +3024,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "sengcan",
       "shenhui"
     ],
-    "relatedBooks": [
-      "xinxinming",
-      "shenhui"
-    ]
+    "relatedBooks": ["shenhui"]
   },
   {
     "id": "zixin-xianliang",
@@ -3086,10 +3045,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "bodhidharma",
       "huike"
     ],
-    "relatedBooks": [
-      "xuemaicong",
-      "sixingguan"
-    ]
+    "relatedBooks": ["sixingguan"]
   },
   {
     "id": "yixing-sanmei",
@@ -3133,9 +3089,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": [
-      "sixingguan"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "weishi-yixin",
@@ -3156,9 +3110,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huangbo",
       "peixiu"
     ],
-    "relatedBooks": [
-      "huangbo",
-      "fangcunlun", "zuishangcheng"]
+    "relatedBooks": ["huangbo", "zuishangcheng"]
   },
   {
     "id": "ying-wu-suo-zhu",
@@ -3180,10 +3132,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "hongren",
       "xubuti"
     ],
-    "relatedBooks": [
-      "jingangjing",
-      "tanjing"
-    ]
+    "relatedBooks": ["jingangjing"]
   },
   {
     "id": "si-xiang",
@@ -3204,9 +3153,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "xubuti",
       "bodhidharma"
     ],
-    "relatedBooks": [
-      "jingangjing"
-    ]
+    "relatedBooks": ["poxianglun", "wuxinlun", "dunwu", "chanlinbaoxun", "lengyanjing", "weimojiejing"]
   },
   {
     "id": "ru-meng-huan-pao-ying",
@@ -3269,10 +3216,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "guanzizai",
       "fudaoshi"
     ],
-    "relatedBooks": [
-      "xinjing",
-      "tanjing"
-    ]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "wu-gua-ai",
@@ -3292,10 +3236,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "guanzizai",
       "xubuti"
     ],
-    "relatedBooks": [
-      "xinjing",
-      "jingangjing"
-    ]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "zhi-huan-ji-li",
@@ -3316,10 +3257,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "puxian-yuanjue",
       "huineng"
     ],
-    "relatedBooks": [
-      "yuanjuejing",
-      "tanjing"
-    ]
+    "relatedBooks": ["yuanjuejing"]
   },
   {
     "id": "yuanjue-qingjing-xinxing",
@@ -3361,9 +3299,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "puxian-yuanjue"
     ],
-    "relatedBooks": [
-      "yuanjuejing"
-    ]
+    "relatedBooks": ["yuanjuejing", "chanlinbaoxun"]
   },
   {
     "id": "tou-xin-wei-si",
@@ -3383,9 +3319,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huanglong-huinan",
       "yangqi-fanghui"
     ],
-    "relatedBooks": [
-      "chanlinbaoxun"
-    ]
+    "relatedBooks": ["lengyanjing"]
   },
   {
     "id": "de-hua-li-zhi",
@@ -3404,9 +3338,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huanglong-huinan",
       "chuyuan"
     ],
-    "relatedBooks": [
-      "chanlinbaoxun"
-    ]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "qi-chu-zheng-xin",
@@ -3427,9 +3359,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "anan",
       "banramidi"
     ],
-    "relatedBooks": [
-      "lengyanjing"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "ba-huan-bian-jian",
@@ -3450,9 +3380,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "anan",
       "guanzizai"
     ],
-    "relatedBooks": [
-      "lengyanjing"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "wu-shi-yin-mo",
@@ -3471,9 +3399,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "anan"
     ],
-    "relatedBooks": [
-      "lengyanjing"
-    ]
+    "relatedBooks": ["jingangjing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "bashiguijusong", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "chanjia_guijian"]
   },
   {
     "id": "xin-jing-ji-fo-tu-jing",
@@ -3494,10 +3420,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "weimojie",
       "huineng"
     ],
-    "relatedBooks": [
-      "weimojiejing",
-      "tanjing"
-    ]
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "ru-bu-er-fa-men",
@@ -3518,9 +3441,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "weimojie",
       "wenshu-yuanjue"
     ],
-    "relatedBooks": [
-      "weimojiejing"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "wei-xin-zao",
@@ -3543,11 +3464,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huineng",
       "bodhidharma"
     ],
-    "relatedBooks": [
-      "juelin",
-      "tanjing",
-      "sixingguan"
-    ]
+    "relatedBooks": ["juelin", "tanjing"]
   },
   {
     "id": "wu-ran-jue-xing",
@@ -3571,11 +3488,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huineng",
       "bodhidharma"
     ],
-    "relatedBooks": [
-      "wuran",
-      "zhangzhi",
-      "tanjing"
-    ]
+    "relatedBooks": ["wuran", "tanjing"]
   },
   {
     "id": "po-xiang",
@@ -3599,10 +3512,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "bodhidharma",
       "huineng"
     ],
-    "relatedBooks": [
-      "poxianglun",
-      "jingangjing"
-    ]
+    "relatedBooks": ["poxianglun"]
   },
   {
     "id": "tathagatagarbha",
@@ -3615,7 +3525,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
     "relatedConcepts": ["buddha-nature", "self-nature", "real-mind"],
     "relatedPersons": ["huineng", "bodhidharma"],
-    "relatedBooks": ["tanjing", "lengqiejing", "dachengqixinlun"]
+    "relatedBooks": ["lengqiejing", "dachengqixinlun"]
   },
   {
     "id": "zhongdao",
@@ -3628,7 +3538,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《中论》《金刚经》《坛经》",
     "relatedConcepts": ["emptiness", "non-duality", "prajna"],
     "relatedPersons": ["nagarjuna", "huineng", "mazu"],
-    "relatedBooks": ["xinjing", "tanjing", "wuxinlun", "fangcunlun", "yongjia"]
+    "relatedBooks": ["tanjing", "wuxinlun", "fangcunlun", "yongjia"]
   },
   {
     "id": "yuanqi",
@@ -3641,7 +3551,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《中论》《金刚经》《楞伽经》",
     "relatedConcepts": ["emptiness", "zhongdao", "prajna"],
     "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["xinjing", "lengqiejing"]
+    "relatedBooks": ["lengqiejing"]
   },
   {
     "id": "wuwo",
@@ -3654,7 +3564,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《楞伽经》《金刚经》《坛经》",
     "relatedConcepts": ["emptiness", "originally-nothing", "self-nature"],
     "relatedPersons": ["huineng", "nagarjuna"],
-    "relatedBooks": ["tanjing", "lengqiejing", "xinjing", "xixulun", "sixingguan"]
+    "relatedBooks": ["tanjing", "lengqiejing", "xixulun", "sixingguan"]
   },
   {
     "id": "niepan",
@@ -3667,7 +3577,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《涅槃经》《坛经》《金刚经》",
     "relatedConcepts": ["emptiness", "affliction-bodhi", "self-nature"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "xinjing", "fangcunlun", "huangbo", "zhenxin", "yongjia"]
+    "relatedBooks": ["xinjing", "fangcunlun", "huangbo", "zhenxin", "yongjia"]
   },
   {
     "id": "banruo-boluomi",
@@ -3693,7 +3603,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《从容录》《无门关》",
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedPersons": ["yuanwu-keqin", "wansong-xingxiu", "fenyang-shanzhao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "mozhao-chan-concept",
@@ -3706,7 +3616,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《默照铭》《宏智正觉禅师广录》",
     "relatedConcepts": ["samadhi", "self-nature", "non-mind"],
     "relatedPersons": ["hongzhi-zhengjue", "dahui-zonggao"],
-    "relatedBooks": ["baojingsanmei", "yongjia"]
+    "relatedBooks": ["yongjia"]
   },
   {
     "id": "kanhua-chan-concept",
@@ -3719,7 +3629,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》",
     "relatedConcepts": ["koan", "tou-xin-wei-si", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai"],
-    "relatedBooks": ["zhenxin", "chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
   },
   {
     "id": "canjiu",
@@ -3732,7 +3642,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "koan", "tou-xin-wei-si"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai", "boshan-yuanlai"],
-    "relatedBooks": ["zhenxin", "chanlinbaoxun", "changuancejin", "bashiguijusong", "xuemaicong", "wuxinglun", "poxianglun", "wuxinlun", "xixulun", "sixingguan", "dunwu"]
+    "relatedBooks": ["zhenxin", "chanlinbaoxun", "changuancejin", "bashiguijusong", "wuxinglun", "poxianglun", "wuxinlun", "xixulun", "sixingguan", "dunwu"]
   },
   {
     "id": "yiqing",
@@ -3758,7 +3668,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《临济语录》",
     "relatedConcepts": ["koan", "beyond-words", "instant-enlightenment"],
     "relatedPersons": ["linji", "huangbo", "deshan-xuanjian"],
-    "relatedBooks": ["dongshanyulu"]
+    "relatedBooks": ["dongshanyulu", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "xiangshang-guanliezi",
@@ -3771,7 +3681,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《临济语录》",
     "relatedConcepts": ["koan", "direct-pointing", "mind-transmission"],
     "relatedPersons": ["linji", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "yunmen"]
+    "relatedBooks": ["dongshanyulu", "yunmen"]
   },
   {
     "id": "gewai-xuanji",
@@ -3784,7 +3694,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《无门关》《五灯会元》",
     "relatedConcepts": ["koan", "beyond-words", "non-duality"],
     "relatedPersons": ["danxia-tianran", "mazu", "linji"],
-    "relatedBooks": ["mazu", "linji"]
+    "relatedBooks": ["linji"]
   },
   {
     "id": "chanbing",
@@ -3797,7 +3707,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《博山参禅警语》《禅林宝训》《玄沙师备禅师广录》",
     "relatedConcepts": ["tou-xin-wei-si", "self-nature", "mozhao-chan-concept"],
     "relatedPersons": ["xuansha-shibei", "boshan-yuanlai", "dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "wu-nian",
@@ -3810,7 +3720,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》",
     "relatedConcepts": ["no-abiding", "self-nature", "non-mind"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "xinjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "wu-xiang",
@@ -3823,7 +3733,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》",
     "relatedConcepts": ["emptiness", "self-nature", "wu-nian"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "xinjing", "xuemaicong", "fangcunlun", "huangbo", "zhenxin"]
+    "relatedBooks": ["tanjing", "xuemaicong", "fangcunlun", "huangbo", "zhenxin"]
   },
   {
     "id": "wu-zhu",
@@ -3836,7 +3746,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》",
     "relatedConcepts": ["no-abiding", "ying-wu-suo-zhu", "wu-nian"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "xinjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "dunwu-jianxiu",
@@ -3849,7 +3759,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《大乘起信论》",
     "relatedConcepts": ["instant-enlightenment", "self-nature", "originally-nothing"],
     "relatedPersons": ["huineng", "yongjia", "shenhui", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing", "yongjia", "xiuxinjue"]
+    "relatedBooks": ["yongjia", "xiuxinjue"]
   },
   {
     "id": "yixin-sanguan",
@@ -3862,7 +3772,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《宗镜录》《摩诃止观》",
     "relatedConcepts": ["zhongdao", "samadhi", "weishi-yixin"],
     "relatedPersons": ["tiantai-deshao", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wuran", "xuemaicong", "wuxinglun", "xixulun", "xinxinming", "zuishangcheng", "zhengdaoge", "mazu", "huangbo", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "yongjia", "yunmen", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "putixin",
@@ -3888,7 +3798,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《大乘起信论》",
     "relatedConcepts": ["banruo-boluomi", "samadhi", "wuwo"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "jingangjing", "sixingguan"]
+    "relatedBooks": ["jingangjing", "sixingguan"]
   },
   {
     "id": "fanrao-puti",
@@ -3914,7 +3824,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《中论》《金刚经》",
     "relatedConcepts": ["zhongdao", "non-duality", "emptiness"],
     "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["xinjing", "jingangjing"]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "ru-lai-zhi",
@@ -3927,7 +3837,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《坛经》《大乘起信论》",
     "relatedConcepts": ["tathagatagarbha", "buddha-nature", "self-nature"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "fashen",
@@ -3966,7 +3876,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《楞严经》",
     "relatedConcepts": ["samadhi", "prajna", "self-nature"],
     "relatedPersons": ["huineng", "youpoli"],
-    "relatedBooks": ["tanjing", "lengyanjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "yinguo",
@@ -3979,7 +3889,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
     "relatedConcepts": ["yuanqi", "emptiness", "self-nature"],
     "relatedPersons": ["huineng", "yongjia", "baizhang"],
-    "relatedBooks": ["tanjing", "yongjia", "sixingguan"]
+    "relatedBooks": ["yongjia", "sixingguan"]
   },
   {
     "id": "lunhui",
@@ -4005,7 +3915,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》",
     "relatedConcepts": ["wuwo", "niepan", "originally-nothing"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "xinjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "weishi",
@@ -4018,7 +3928,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《宗镜录》《坛经》",
     "relatedConcepts": ["weishi-yixin", "self-nature", "wei-xin-zao"],
     "relatedPersons": ["xuanzang", "yongming-yanshou"],
-    "relatedBooks": ["bashiguijusong", "chanlinbaoxun"]
+    "relatedBooks": ["bashiguijusong"]
   },
   {
     "id": "alaiye-shi",
@@ -4031,7 +3941,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《楞伽经》《坛经》",
     "relatedConcepts": ["weishi", "tathagatagarbha", "self-nature"],
     "relatedPersons": ["xuanzang", "huineng"],
-    "relatedBooks": ["bashiguijusong", "lengqiejing", "tanjing", "dachengqixinlun"]
+    "relatedBooks": ["bashiguijusong", "lengqiejing", "dachengqixinlun"]
   },
   {
     "id": "rulai-chan-zushi-chan",
@@ -4044,7 +3954,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《五灯会元》《传灯录》",
     "relatedConcepts": ["dunwu-jianxiu", "direct-pointing", "instant-enlightenment"],
     "relatedPersons": ["yangshan-huiji", "xiangyan-zhixian"],
-    "relatedBooks": ["linji"]
+    "relatedBooks": []
   },
   {
     "id": "jiaowai-biechuan",
@@ -4083,7 +3993,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《坛经》《心经》",
     "relatedConcepts": ["zhengfa-yancang", "self-nature", "niepan"],
     "relatedPersons": ["buddha", "mahakashyapa", "huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "shixiang",
@@ -4096,7 +4006,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《中论》",
     "relatedConcepts": ["emptiness", "self-nature", "zhongdao"],
     "relatedPersons": ["huineng", "nagarjuna"],
-    "relatedBooks": ["jingangjing", "tanjing"]
+    "relatedBooks": ["jingangjing"]
   },
   {
     "id": "zhenru",
@@ -4122,7 +4032,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《坛经》《宗镜录》",
     "relatedConcepts": ["self-nature", "wei-xin-zao", "emptiness"],
     "relatedPersons": ["huineng", "yongming-yanshou"],
-    "relatedBooks": ["tanjing", "chanlinbaoxun", "fangcunlun", "baojingsanmei"]
+    "relatedBooks": ["tanjing", "fangcunlun", "baojingsanmei"]
   },
   {
     "id": "lishi-wuai",
@@ -4135,7 +4045,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["fajie", "non-duality", "ordinary-mind"],
     "relatedPersons": ["yongming-yanshou", "tiantai-deshao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["mazu", "baojingsanmei", "yongjia", "huanwuyulu"]
   },
   {
     "id": "shishi-wuai",
@@ -4148,7 +4058,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["fajie", "lishi-wuai", "non-duality"],
     "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "yiji-yiqie",
@@ -4161,7 +4071,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["fajie", "all-returns-to-one", "self-nature"],
     "relatedPersons": ["yongming-yanshou", "fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "sekong-buer",
@@ -4174,7 +4084,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《心经》《金刚经》《坛经》",
     "relatedConcepts": ["emptiness", "non-duality", "wu-xiang"],
     "relatedPersons": ["huineng", "xuanzang"],
-    "relatedBooks": ["xinjing", "jingangjing"]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "busheng-bumie",
@@ -4200,7 +4110,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《涅槃经》《坛经》《大乘起信论》",
     "relatedConcepts": ["buddha-nature", "self-nature", "zhenru"],
     "relatedPersons": ["huineng", "ming-bodhisattva"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["wuran", "xuemaicong", "wuxinglun", "poxianglun", "xixulun", "anxin", "zuishangcheng", "tanjing", "zhengdaoge", "mazu", "linji", "zhigong", "shenhui", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia", "yunmen", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "chanjia_guijian", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "yinian-sanqian",
@@ -4213,7 +4123,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《摩诃止观》《宗镜录》",
     "relatedConcepts": ["yiji-yiqie", "fajie", "self-nature"],
     "relatedPersons": ["tiantai-deshao", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["wenshu", "wuran", "zhangzhi", "xuemaicong", "wuxinglun", "poxianglun", "xinxinming", "fangcunlun", "anxin", "tanjing", "mazu", "baizhang", "huangbo", "xiuxinjue", "linji", "zhigong", "shenhui", "jingangjing", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "yongjia", "wumenguan", "changuancejin", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "xingju-shane",
@@ -4226,7 +4136,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《摩诃止观》《坛经》",
     "relatedConcepts": ["buddha-nature", "self-nature", "non-duality"],
     "relatedPersons": ["tiantai-deshao", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun", "tanjing"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "wuming",
@@ -4265,7 +4175,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《八识规矩颂》《成唯识论》",
     "relatedConcepts": ["alaiye-shi", "weishi", "self-nature"],
     "relatedPersons": ["huineng", "xuanzang"],
-    "relatedBooks": ["tanjing", "bashiguijusong"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "zhuan-shi-cheng-zhi",
@@ -4278,7 +4188,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《八识规矩颂》《成唯识论》",
     "relatedConcepts": ["sizhi", "alaiye-shi", "weishi"],
     "relatedPersons": ["huineng", "xuanzang"],
-    "relatedBooks": ["tanjing", "bashiguijusong"]
+    "relatedBooks": ["bashiguijusong"]
   },
   {
     "id": "buke-siyi",
@@ -4343,7 +4253,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
     "relatedConcepts": ["jiaowai-biechuan", "beyond-words", "wenzi-chan"],
     "relatedPersons": ["huineng", "yongjia"],
-    "relatedBooks": ["tanjing", "yongjia"]
+    "relatedBooks": ["yongjia"]
   },
   {
     "id": "zhijie-zongtu",
@@ -4356,7 +4266,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《禅林宝训》",
     "relatedConcepts": ["wenzi-zhang", "wenzi-chan", "beyond-words"],
     "relatedPersons": ["huineng", "shenhui"],
-    "relatedBooks": ["tanjing", "chanlinbaoxun"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "koutou-chan",
@@ -4382,7 +4292,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《永嘉集》《禅林宝训》《禅关策进》",
     "relatedConcepts": ["yinguo", "fanrao-puti", "baoren"],
     "relatedPersons": ["yongjia", "dahui-zonggao", "zhuhong"],
-    "relatedBooks": ["yongjia"]
+    "relatedBooks": []
   },
   {
     "id": "kumu-chan",
@@ -4395,7 +4305,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《默照铭》《禅林宝训》",
     "relatedConcepts": ["mozhao-chan-concept", "chan-bing", "samadhi"],
     "relatedPersons": ["dahui-zonggao", "hongzhi-zhengjue"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "rulai",
@@ -4434,7 +4344,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》",
     "relatedConcepts": ["emptiness", "wu-xiang", "wu-wo"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["jingangjing", "tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "liuxiang-yuanrong",
@@ -4447,7 +4357,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["shishi-wuai", "fajie", "non-duality"],
     "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["lengyanjing"]
   },
   {
     "id": "weixin-jingtu",
@@ -4460,7 +4370,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《维摩诘经》《万善同归集》",
     "relatedConcepts": ["wei-xin-zao", "self-nature", "chanjing-shuangxiu"],
     "relatedPersons": ["huineng", "yongming-yanshou", "weimojie"],
-    "relatedBooks": ["tanjing", "weimojiejing"]
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "xin-fo-zhongsheng",
@@ -4473,7 +4383,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《坛经》",
     "relatedConcepts": ["mind-is-buddha", "self-nature", "buddha-nature"],
     "relatedPersons": ["huineng", "yongming-yanshou"],
-    "relatedBooks": ["tanjing", "chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "fanrao-puti",
@@ -4499,7 +4409,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《维摩诘经》《坛经》",
     "relatedConcepts": ["fanrao-puti", "niepan", "non-duality"],
     "relatedPersons": ["huineng", "weimojie"],
-    "relatedBooks": ["tanjing", "weimojiejing", "changuancejin"]
+    "relatedBooks": ["weimojiejing", "changuancejin"]
   },
   {
     "id": "faxing",
@@ -4525,7 +4435,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《碧岩录》《无门关》",
     "relatedConcepts": ["mind-transmission", "jiaowai-biechuan", "zhengfa-yancang"],
     "relatedPersons": ["bodhidharma", "huineng", "mahakashyapa"],
-    "relatedBooks": ["qifo", "xuemaicong", "chanlinbaoxun"]
+    "relatedBooks": ["xuemaicong", "chanlinbaoxun"]
   },
   {
     "id": "yihua-wuye",
@@ -4538,7 +4448,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission", "jiaowai-biechuan", "direct-pointing"],
     "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["qifo", "xuemaicong", "tanjing"]
+    "relatedBooks": ["xuemaicong", "tanjing"]
   },
   {
     "id": "xitian-ershiba-zu",
@@ -4551,7 +4461,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission", "zhengfa-yancang", "jiaowai-biechuan"],
     "relatedPersons": ["bodhidharma", "mahakashyapa", "nagarjuna"],
-    "relatedBooks": ["xuemaicong", "yunmen"]
+    "relatedBooks": ["yunmen"]
   },
   {
     "id": "yixiu-jue",
@@ -4590,7 +4500,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《楞严经》",
     "relatedConcepts": ["dunwu-jianxiu", "dunjiao", "fangbian"],
     "relatedPersons": ["shenhui"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "yin-yuan",
@@ -4616,7 +4526,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《阿含经》《中论》《坛经》",
     "relatedConcepts": ["emptiness", "wu-wo", "niepan"],
     "relatedPersons": ["nagarjuna", "huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "si-yi",
@@ -4629,7 +4539,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《涅槃经》《坛经》",
     "relatedConcepts": ["jiaowai-biechuan", "wenzi-zhang", "beyond-words"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "er-di",
@@ -4642,7 +4552,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《中论》《坛经》",
     "relatedConcepts": ["zhongdao", "emptiness", "yuanqi"],
     "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "ba-zhengdao",
@@ -4655,7 +4565,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《阿含经》《坛经》",
     "relatedConcepts": ["jie-ding-hui", "fangbian", "baoren"],
     "relatedPersons": ["buddha", "huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "shi-er-yinyuan",
@@ -4668,7 +4578,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《阿含经》《中论》《坛经》",
     "relatedConcepts": ["wuming", "lunhui", "yuanqi"],
     "relatedPersons": ["buddha", "nagarjuna"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "si-di",
@@ -4681,7 +4591,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《阿含经》《坛经》",
     "relatedConcepts": ["ba-zhengdao", "wuming", "niepan"],
     "relatedPersons": ["buddha", "huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "wu-yun",
@@ -4720,7 +4630,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《百丈清规》《梵网经》",
     "relatedConcepts": ["jie-ding-hui", "self-nature", "baoren"],
     "relatedPersons": ["huineng", "baizhang"],
-    "relatedBooks": ["tanjing", "chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun"]
   },
   {
     "id": "chanding",
@@ -4746,7 +4656,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《大智度论》《金刚经》",
     "relatedConcepts": ["bore", "self-nature", "sizhi"],
     "relatedPersons": ["huineng", "nagarjuna"],
-    "relatedBooks": ["tanjing", "jingangjing"]
+    "relatedBooks": ["tanjing"]
   },
   {
     "id": "cibei",
@@ -4772,7 +4682,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《碧岩录》",
     "relatedConcepts": ["bore", "guanzhao-bore", "shixiang-bore"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["qifo", "wenshu", "zhangzhi", "xuemaicong", "wuxinglun", "wuxinlun", "xixulun", "anxin", "tanjing", "baizhang", "huangbo", "shenhui", "chanlinbaoxun", "lengyanjing", "weimojiejing", "yongjia", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "chanjia_guijian", "huangbo_wanlinglu"]
   },
   {
     "id": "guanzhao-bore",
@@ -4785,7 +4695,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》《心经》",
     "relatedConcepts": ["bore", "wenzi-bore", "shixiang-bore"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing", "jingangjing"]
+    "relatedBooks": ["jingangjing"]
   },
   {
     "id": "shixiang-bore",
@@ -4798,7 +4708,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《大智度论》",
     "relatedConcepts": ["bore", "wenzi-bore", "guanzhao-bore"],
     "relatedPersons": ["huineng", "nagarjuna"],
-    "relatedBooks": ["tanjing", "jingangjing"]
+    "relatedBooks": ["jingangjing"]
   },
   {
     "id": "yuanman",
@@ -4824,7 +4734,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["yuanqi", "shishi-wuai", "fajie"],
     "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": []
   },
   {
     "id": "xingqi",
@@ -4876,7 +4786,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《摩诃止观》《坛经》",
     "relatedConcepts": ["xingqi", "self-nature", "yuanqi"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "chanjing-shuangxiu",
@@ -4889,7 +4799,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《万善同归集》《宗镜录》",
     "relatedConcepts": ["weixin-jingtu", "dunwu-jianxiu", "fangbian"],
     "relatedPersons": ["yongming-yanshou", "zhuhong"],
-    "relatedBooks": ["xinwangming", "weimojiejing", "zhengdaoge", "shenhui"]
+    "relatedBooks": []
   },
   {
     "id": "jiaoli-guanxing",
@@ -4902,7 +4812,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《禅源诸诠集都序》",
     "relatedConcepts": ["si-yi", "fangbian", "guanzhao-bore"],
     "relatedPersons": ["huineng", "zongmi"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["xinwangming", "shenhui", "weimojiejing", "yongjia", "huanwuxinyao", "dahuiyulu"]
   },
   {
     "id": "benjue-shijue",
@@ -4915,7 +4825,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大乘起信论》《坛经》",
     "relatedConcepts": ["self-nature", "buddha-nature", "foxing-changzhu"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["wuran", "anxin", "lengyanjing", "shiniutu", "dachengqixinlun", "huanwuyulu"]
   },
   {
     "id": "zhengjue",
@@ -4928,7 +4838,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《金刚经》",
     "relatedConcepts": ["puti", "self-nature", "zhengjue"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "wuxing",
@@ -4941,7 +4851,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《维摩诘经》",
     "relatedConcepts": ["wu-zhu", "wu-nian", "baoren"],
     "relatedPersons": ["huineng", "weimojie"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "zixing-qingjing",
@@ -4967,7 +4877,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《法华经》《坛经》",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "jiaoli-guanxing"],
     "relatedPersons": ["xiangyan-zhixian", "dongshan-liangjia"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "wuzhu-benti",
@@ -4980,7 +4890,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《维摩诘经》《坛经》",
     "relatedConcepts": ["wu-zhu", "self-nature", "wu-nian"],
     "relatedPersons": ["huineng", "weimojie"],
-    "relatedBooks": ["tanjing", "weimojiejing"]
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "mo-na-shi",
@@ -5163,7 +5073,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "圜悟佛果禅师语录·序",
     "relatedConcepts": ["jiaowai-biechuan", "beyond-words", "koan"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedBooks": ["tanjing", "weimojiejing", "dongshanyulu", "yongjia", "huanwuyulu"]
   },
   {
     "id": "wuchang",
@@ -5696,7 +5606,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》",
     "relatedConcepts": ["wenzi-chan", "kanhua-chan-concept"],
     "relatedPersons": ["dahui-zonggao", "yuanwu-keqin"],
-    "relatedBooks": ["dahuiyulu", "huanwuxinyao"]
+    "relatedBooks": ["dahuiyulu"]
   },
   {
     "id": "zongfeng",
@@ -5709,7 +5619,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《五灯会元》",
     "relatedConcepts": ["kanhua-chan-concept", "mozhao-chan-concept"],
     "relatedPersons": ["dahui-zonggao", "hongzhi-zhengjue", "linji-yixuan"],
-    "relatedBooks": ["dahuiyulu", "chanlinbaoxun"]
+    "relatedBooks": ["dahuiyulu"]
   },
   {
     "id": "pu-shuo",
@@ -5748,7 +5658,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《禅家龟鉴》",
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "huatou-shibing"],
     "relatedPersons": ["tuiyin", "dahui-zonggao"],
-    "relatedBooks": ["chanjia_guijian", "wumenguan"]
+    "relatedBooks": ["chanjia_guijian"]
   },
   {
     "id": "huatou-shibing",
@@ -5774,7 +5684,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《禅家龟鉴》",
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "huoju-siju"],
     "relatedPersons": ["tuiyin", "yongjiaxuanjue"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedBooks": []
   },
   {
     "id": "wuzong-jiafeng",
@@ -5815,9 +5725,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "farong"
     ],
-    "relatedBooks": [
-      "xinming"
-    ]
+    "relatedBooks": ["qifo", "juelin", "wenshu", "xuemaicong", "wuxinglun", "poxianglun", "wuxinlun", "anxin", "tanjing", "mazu", "baizhang", "huangbo", "dunwu", "zhigong", "xinwangming", "shenhui", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "xin-busheng-fajue",
@@ -5838,9 +5746,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "farong"
     ],
-    "relatedBooks": [
-      "xinming"
-    ]
+    "relatedBooks": ["qifo", "juelin", "wenshu", "wuran", "xuemaicong", "wuxinglun", "poxianglun", "wuxinlun", "xinxinming", "anxin", "zuishangcheng", "tanjing", "mazu", "huangbo", "dunwu", "zhenxin", "jingangjing", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia", "yunmen", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "dajibenyou",
@@ -5863,9 +5769,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "farong",
       "huineng"
     ],
-    "relatedBooks": [
-      "xinming"
-    ]
+    "relatedBooks": ["baizhang", "chanlinbaoxun", "weimojiejing", "huanwuxinyao", "huanwuyulu", "chanjia_guijian"]
   },
   {
     "id": "jingji-ziran",
@@ -5909,9 +5813,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "zongze"
     ],
-    "relatedBooks": [
-      "zuochanyi"
-    ]
+    "relatedBooks": []
   },
   {
     "id": "chanding-jiwu",
@@ -5933,9 +5835,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "zongze"
     ],
-    "relatedBooks": [
-      "zuochanyi"
-    ]
+    "relatedBooks": ["wuxinglun", "poxianglun", "anxin", "tanjing", "dunwu", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "zuochanyi"]
   },
   {
     "id": "no-views",
@@ -5945,7 +5845,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "黄檗断际禅师宛陵录",
     "relatedConcepts": ["non-mind", "mind-is-buddha", "not-mind-not-buddha"],
     "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu", "huangbo"]
+    "relatedBooks": ["huangbo_wanlinglu"]
   },
   {
     "id": "wu-wei-famen",
@@ -5955,7 +5855,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "黄檗断际禅师宛陵录",
     "relatedConcepts": ["non-mind", "mind-is-buddha", "direct-pointing"],
     "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu", "huangbo"]
+    "relatedBooks": ["huangbo_wanlinglu"]
   },
   {
     "id": "benfen-shi",
@@ -5968,7 +5868,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "赵州真际禅师语录",
     "relatedConcepts": ["ordinary-mind", "direct-pointing", "wu-nian", "self-nature"],
     "relatedPersons": ["zhaozhou", "nanquan"],
-    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+    "relatedBooks": ["zhaozhouyulu"]
   },
   {
     "id": "chi-cha-qu",
@@ -5981,7 +5881,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "赵州真际禅师语录",
     "relatedConcepts": ["ordinary-mind", "benfen-shi", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+    "relatedBooks": ["zhaozhouyulu"]
   },
   {
     "id": "ting-qian-baishuzi",
@@ -6025,9 +5925,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": [
       "daoxin"
     ],
-    "relatedBooks": [
-      "anxin",
-      "wenshu", "xuemaicong", "wuxinglun", "poxianglun", "zhengdaoge", 'qifo']
+    "relatedBooks": ["anxin", "wenshu", "wuxinglun", "poxianglun", "zhengdaoge"]
   },
   {
     "id": "banghe",
@@ -6056,8 +5954,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "huangbo",
       "baizhang"
     ],
-    "relatedBooks": [
-      "linji", "zhangzhi", "huangbo"]
+    "relatedBooks": ["linji", "huangbo"]
   },
   {
     "id": "daily-zen",
@@ -6086,9 +5983,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "dahui",
       "baizhang"
     ],
-    "relatedBooks": [
-      "mazu",
-      "dunwu", "baizhang", "huangbo", "zhengdaoge", "shenhui"]
+    "relatedBooks": ["mazu", "dunwu", "baizhang", "huangbo", "shenhui"]
   },
   {
     "id": "jiefeng",
@@ -6117,8 +6012,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "linji",
       "mazu"
     ],
-    "relatedBooks": [
-      "mazu", "baizhang", "huangbo", "dunwu"]
+    "relatedBooks": ["mazu", "huangbo", "dunwu"]
   },
   {
     "id": "wumen",
@@ -6147,7 +6041,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "chinul",
       "wumen-huikai"
     ],
-    "relatedBooks": ["zhenxin", "chanlinbaoxun", "wumenguan", "xinxinming"]
+    "relatedBooks": ["zhenxin", "chanlinbaoxun", "wumenguan"]
   },
   {
     "id": "four-practices",
@@ -6174,8 +6068,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": [
-      "sixingguan", "xuemaicong"]
+    "relatedBooks": ["sixingguan"]
   },
   {
     "id": "mozhao",
@@ -6204,7 +6097,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "dongshan",
       "yongjia"
     ],
-    "relatedBooks": ["baojingsanmei", "dongshanyulu", "yongjia"]
+    "relatedBooks": ["dongshanyulu", "yongjia"]
   },
   {
     "id": "kanhuatou",
@@ -6233,7 +6126,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "chinul",
       "zhaozhou"
     ],
-    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "xinxinming", "huangbo", 'huanwuxinyao', 'huanwuyulu']
+    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo"]
   },
   {
     "id": "yixing-sanmei-practice",
@@ -6255,10 +6148,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "daoxin",
       "huineng"
     ],
-    "relatedBooks": [
-      "wenshu",
-      "anxin",
-      "tanjing", "juelin"]
+    "relatedBooks": ["wenshu", "anxin", "tanjing"]
   },
   {
     "id": "shouben-zhenxin",
@@ -6279,8 +6169,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": [
       "hongren"
     ],
-    "relatedBooks": [
-      "zuishangcheng", "xuemaicong", "wuxinglun", "fangcunlun", 'wuran']
+    "relatedBooks": ["zuishangcheng", "wuxinglun", "fangcunlun"]
   },
   {
     "id": "guan-zizai-banya-practice",
@@ -6302,8 +6191,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": [
       "guanzizai"
     ],
-    "relatedBooks": [
-      "xinjing", "jingangjing"]
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "yuanjue-sanzhong-jingguan",
@@ -6326,9 +6214,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "puxian-yuanjue",
       "fotuoduoluo"
     ],
-    "relatedBooks": [
-      "yuanjuejing"
-    ]
+    "relatedBooks": ["zhengdaoge", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "huanwuyulu", "zuochanyi"]
   },
   {
     "id": "chanlin-jingce-practice",
@@ -6350,9 +6236,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "huanglong-huinan",
       "yangqi-fanghui"
     ],
-    "relatedBooks": [
-      "chanlinbaoxun"
-    ]
+    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuyulu"]
   },
   {
     "id": "er-gen-yuan-tong-practice",
@@ -6375,10 +6259,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "guanzizai",
       "anan"
     ],
-    "relatedBooks": [
-      "lengyanjing",
-      "xinjing"
-    ]
+    "relatedBooks": ["lengyanjing"]
   },
   {
     "id": "weimo-buer-practice",
@@ -6400,9 +6281,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "weimojie",
       "wenshu-yuanjue"
     ],
-    "relatedBooks": [
-      "weimojiejing"
-    ]
+    "relatedBooks": ["anxin", "zuishangcheng", "tanjing", "zhengdaoge", "dunwu", "chanlinbaoxun", "weimojiejing", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "zhiguan-dazuo",
@@ -6428,7 +6307,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《默照铭》《普劝坐禅仪》《正法眼藏》",
     "relatedConcepts": ["mozhao-chan-concept", "samadhi", "self-nature"],
     "relatedPersons": ["hongzhi-zhengjue", "daoyuan", "changlu-zongze"],
-    "relatedBooks": ["baojingsanmei", "xinxinming", "fangcunlun", "yongjia"]
+    "relatedBooks": ["baojingsanmei", "fangcunlun", "yongjia"]
   },
   {
     "id": "can-huatou",
@@ -6454,7 +6333,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "canjiu"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai", "boshan-yuanlai"],
-    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo", "xinxinming", "dunwu"]
+    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo", "dunwu"]
   },
   {
     "id": "baoren",
@@ -6478,7 +6357,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《坛经》《禅林宝训》《大慧语录》",
     "relatedConcepts": ["dunwu-jianxiu", "self-nature", "wu-nian"],
     "relatedPersons": ["huineng", "dahui-zonggao", "boshan-yuanlai"],
-    "relatedBooks": ["tanjing", "zhengdaoge", "dunwu", "shenhui"]
+    "relatedBooks": ["zhengdaoge", "dunwu", "shenhui"]
   },
   {
     "id": "jifeng",
@@ -6498,7 +6377,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《碧岩录》《无门关》《五灯会元》",
     "relatedConcepts": ["koan", "beyond-words", "zhuan-shen-ju"],
     "relatedPersons": ["mazu", "zhaozhou", "linji", "yunmen"],
-    "relatedBooks": ["mazu", "linji", "yunmen", "chanlinbaoxun"]
+    "relatedBooks": ["mazu", "linji", "yunmen"]
   },
   {
     "id": "muniu-tuxi",
@@ -6549,7 +6428,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《禅林宝训》《赵州语录》《五灯会元》",
     "relatedConcepts": ["canjiu", "ordinary-mind", "self-nature"],
     "relatedPersons": ["zhaozhou", "dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["tanjing", "dongshanyulu", "yunmen", "huanwuxinyao", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "pushuo-xiaocan",
@@ -6570,7 +6449,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《禅林宝训》《大慧语录》《碧岩录》",
     "relatedConcepts": ["canjiu", "jifeng", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "yuanwu-keqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuyulu", "dahuiyulu"]
   },
   {
     "id": "chanjing-shuangxiu",
@@ -6592,7 +6471,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《万善同归集》《禅关策进》《坛经》",
     "relatedConcepts": ["ordinary-mind", "self-nature", "nianfo-chan"],
     "relatedPersons": ["yongming-yanshou", "zhuhong", "daoxin"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "banghe",
@@ -6613,7 +6492,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《临济语录》《碧岩录》《五灯会元》",
     "relatedConcepts": ["jifeng", "zhuan-shen-ju", "gewai-xuanji"],
     "relatedPersons": ["linji", "huangbo", "deshan-xuanjian"],
-    "relatedBooks": ["linji"]
+    "relatedBooks": ["linji", "huangbo"]
   },
   {
     "id": "biguan-daqi",
@@ -6637,7 +6516,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《坐禅仪》《参禅警语》《禅关策进》",
     "relatedConcepts": ["canjiu", "yiqing", "samadhi"],
     "relatedPersons": ["changlu-zongze", "boshan-yuanlai", "zhuhong"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["changuancejin"]
   },
   {
     "id": "zhiguan",
@@ -6703,7 +6582,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "圜悟佛果禅师语录",
     "relatedConcepts": ["wangqing-juezhao", "jingang-zhengti", "dacheng-yipian"],
     "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu", "huanwuxinyao"]
+    "relatedBooks": ["huanwuyulu"]
   },
   {
     "id": "baoyuan-xing",
@@ -6763,7 +6642,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "观心论",
-    "relatedBooks": ["zhangzhi"]
+    "relatedBooks": ["poxianglun", "anxin", "tanjing", "xinwangming", "lengyanjing", "weimojiejing", "yongjia"]
   },
   {
     "id": "po-xiang-fa",
@@ -6773,7 +6652,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "破相论",
-    "relatedBooks": ["poxianglun"]
+    "relatedBooks": ["wuxinglun", "poxianglun"]
   },
   {
     "id": "xi-zheng-fa",
@@ -6783,7 +6662,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "息诤论",
-    "relatedBooks": ["xixulun"]
+    "relatedBooks": []
   },
   {
     "id": "wunian-fa",
@@ -6793,7 +6672,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "六祖坛经",
-    "relatedBooks": ["tanjing", 'wuxinlun']
+    "relatedBooks": ["wenshu", "wuran", "wuxinglun", "zuishangcheng", "tanjing", "zhengdaoge", "dunwu", "shenhui", "chanlinbaoxun", "weimojiejing", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "wuxiang-fa",
@@ -6803,7 +6682,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "六祖坛经",
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": []
   },
   {
     "id": "wuzhu-fa",
@@ -6813,7 +6692,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "六祖坛经",
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["qifo", "juelin", "wenshu", "zhangzhi", "tanjing", "mazu", "linji", "dunwu", "shenhui", "jingangjing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "changuancejin", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu"]
   },
   {
     "id": "zhiguan-shuangxiu",
@@ -6833,7 +6712,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "信心铭",
-    "relatedBooks": ["xinxinming", "zhengdaoge"]
+    "relatedBooks": ["zhengdaoge"]
   },
   {
     "id": "jingxin-fa",
@@ -6843,7 +6722,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "真心直说",
-    "relatedBooks": ["zhenxin", "xiuxinjue", 'fangcunlun', 'xinwangming', 'zhigong', 'zuishangcheng']
+    "relatedBooks": ["zhenxin"]
   },
   {
     "id": "dunwu-fa",
@@ -6863,7 +6742,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "大乘起信论",
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedBooks": ["huangbo", "lengyanjing", "weimojiejing", "dongshanyulu"]
   },
   {
     "id": "shamatha",
@@ -6932,7 +6811,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《大慧语录》",
     "relatedConcepts": ["yiqing", "kanhua-chan-concept", "canjiu"],
     "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu", "changuancejin"]
+    "relatedBooks": ["dahuiyulu"]
   },
   {
     "id": "po-wo-zhi",
@@ -6952,7 +6831,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《大慧语录》",
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "self-nature"],
     "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedBooks": ["huanwuyulu"]
     },
   {
     "id": "canhuoju",
@@ -6974,7 +6853,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "《禅家龟鉴》",
     "relatedConcepts": ["huoju-siju", "kanhua-chan-concept", "yiqing", "huatou-shibing"],
     "relatedPersons": ["tuiyin", "dahui-zonggao"],
-    "relatedBooks": ["chanjia_guijian", "wumenguan"]
+    "relatedBooks": ["chanjia_guijian"]
     },
   {
     "id": "jueguan-wangshou",
@@ -7055,7 +6934,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "黄檗断际禅师宛陵录",
     "relatedConcepts": ["non-mind", "no-views", "wu-wei-famen"],
     "relatedPersons": ["huangbo", "zhaozhou"],
-    "relatedBooks": ["huangbo_wanlinglu", "wumenguan"]
+    "relatedBooks": ["huangbo_wanlinglu"]
   },
   {
     "id": "benfen-jieren",
@@ -7079,7 +6958,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "赵州真际禅师语录",
     "relatedConcepts": ["benfen-shi", "ordinary-mind", "chi-cha-qu"],
     "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+    "relatedBooks": ["zhaozhouyulu"]
   }
 ]
 ;
