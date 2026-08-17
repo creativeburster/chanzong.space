@@ -58,7 +58,7 @@ export default function Home() {
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
           {/* Header Tagline & Hero */}
           <div className="text-center mb-10">
-            <p className="text-base text-slate-600 font-serif-zen tracking-wide mb-4 leading-relaxed">
+            <p className="text-base text-slate-800 font-serif-zen tracking-wide mb-4 leading-relaxed">
               千载祖师心印 · 顿悟见性之道
             </p>
 
@@ -67,7 +67,7 @@ export default function Home() {
               <span>禅宗知识库</span>
             </h1>
 
-            <p className="text-base text-slate-600 font-serif-zen max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base text-slate-800 font-serif-zen max-w-2xl mx-auto leading-relaxed">
               传承自西天二十八祖与东土达摩、六祖、马祖、黄檗、永嘉诸祖 · 自我了悟见性之道
             </p>
           </div>
