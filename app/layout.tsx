@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
 const SITE_URL = 'https://chanzong.space';
@@ -100,28 +101,24 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                var s = document.createElement('script');
-                s.async = true;
-                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7';
-                document.head.appendChild(s);
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-E33EPY0QV7');
-              })();
-            `,
-          }}
-        />
       </head>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
         <LangProvider>
           {children}
           <PWAInstallBanner />
         </LangProvider>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E33EPY0QV7');
+          `}
+        </Script>
       </body>
     </html>
   );
