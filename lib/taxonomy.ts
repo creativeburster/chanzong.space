@@ -5086,7 +5086,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wenshu", "wuran", "xuemaicong", "anxin", "zuishangcheng", "tanjing", "zhengdaoge", "xiuxinjue", "chanlinbaoxun", "lengyanjing", "weimojiejing", "yongjia", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "kongxing",
@@ -5099,7 +5099,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["qifo", "juelin", "wenshu", "wuran", "zhangzhi", "xuemaicong", "wuxinglun", "poxianglun", "sixingguan", "xinxinming", "fangcunlun", "anxin", "zuishangcheng", "tanjing", "zhengdaoge", "mazu", "baizhang", "huangbo", "xiuxinjue", "dunwu", "zhenxin", "zhigong", "xinwangming", "shenhui", "jingangjing", "xinjing", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "shiniutu", "dongshanyulu", "yongjia", "yunmen", "bashiguijusong", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "chanjia_guijian", "xinming", "zuochanyi", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "baoshen",
@@ -5112,7 +5112,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wuran", "wuxinglun", "zuishangcheng", "tanjing", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia"]
   },
   {
     "id": "huashen",
@@ -5125,7 +5125,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wuran", "wuxinglun", "tanjing", "zhigong", "lengyanjing", "weimojiejing", "yongjia", "huanwuyulu"]
   },
   {
     "id": "wuzhiliang",
@@ -5138,7 +5138,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["xinjing"]
   },
   {
     "id": "wusuode",
@@ -5151,7 +5151,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["tanjing", "huangbo", "dunwu", "zhigong", "jingangjing", "xinjing", "yuanjuejing", "lengyanjing", "weimojiejing", "yongjia", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "zhengliang",
@@ -5164,7 +5164,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wuran"]
   },
   {
     "id": "xianliang",
@@ -5177,7 +5177,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["xinjing", "bashiguijusong", "huanwuxinyao"]
   },
   {
     "id": "biliang",
@@ -5190,7 +5190,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["bashiguijusong"]
   },
   {
     "id": "fengxian",
@@ -5203,7 +5203,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["tanjing", "wumenguan", "huanwuxinyao"]
   },
   {
     "id": "wujian",
@@ -5216,7 +5216,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["xuemaicong", "anxin", "tanjing", "zhengdaoge", "linji", "lengyanjing", "weimojiejing", "baojingsanmei", "dongshanyulu", "yongjia", "changuancejin", "huanwuxinyao", "huanwuyulu", "zuochanyi"]
   },
   {
     "id": "jiaocan",
@@ -5229,7 +5229,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["dongshanyulu", "huanwuyulu"]
   },
   {
     "id": "huangji",
@@ -5242,7 +5242,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["lengyanjing", "shiniutu", "yongjia", "huanwuyulu"]
   },
   {
     "id": "zhengyin",
@@ -5255,7 +5255,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wuran", "poxianglun", "zhigong", "chanlinbaoxun", "weimojiejing", "yongjia", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "liaoyin",
@@ -5268,7 +5268,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["lengyanjing", "bashiguijusong"]
   },
   {
     "id": "yuan-yin",
@@ -5281,7 +5281,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["huanwuyulu"]
   },
   {
     "id": "sande",
@@ -5294,7 +5294,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["yongjia", "zhaozhouyulu"]
   },
   {
     "id": "eryi",
@@ -5307,7 +5307,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["lengyanjing", "weimojiejing", "huanwuyulu"]
   },
   {
     "id": "shidi",
@@ -5320,7 +5320,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["poxianglun", "zuishangcheng", "huangbo", "lengyanjing", "weimojiejing", "yongjia", "bashiguijusong", "huanwuyulu", "huangbo_wanlinglu"]
   },
   {
     "id": "wuxingguan",
@@ -5346,7 +5346,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["shenhui"]
   },
   {
     "id": "wuzhu-ben",
@@ -5359,7 +5359,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["tanjing", "shenhui", "weimojiejing"]
   },
   {
     "id": "sammiao-wu",
@@ -5385,7 +5385,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["zhengdaoge"]
   },
   {
     "id": "benjue",
@@ -5398,7 +5398,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wenshu", "wuran", "zhangzhi", "xuemaicong", "poxianglun", "anxin", "zuishangcheng", "tanjing", "huangbo", "xinwangming", "yuanjuejing", "lengyanjing", "shiniutu", "dachengqixinlun", "huanwuyulu"]
   },
   {
     "id": "shijue",
@@ -5411,7 +5411,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["dachengqixinlun"]
   },
   {
     "id": "bujue",
@@ -5424,7 +5424,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wenshu", "xuemaicong", "wuxinlun", "xixulun", "zuishangcheng", "tanjing", "baizhang", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "xinming", "zhaozhouyulu"]
   },
   {
     "id": "ranxiu",
@@ -5437,7 +5437,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["poxianglun", "dachengqixinlun", "huanwuyulu"]
   },
   {
     "id": "jingxin",
@@ -5450,7 +5450,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["poxianglun", "anxin", "tanjing", "baizhang", "xinwangming", "jingangjing", "yuanjuejing", "lengyanjing", "weimojiejing", "dachengqixinlun"]
   },
   {
     "id": "wuhou",
@@ -5463,7 +5463,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wenshu", "weimojiejing", "yunmen"]
   },
   {
     "id": "dangnian",
@@ -5476,7 +5476,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["wenshu", "tanjing", "weimojiejing", "huanwuyulu"]
   },
   {
     "id": "yiguan",
@@ -5489,7 +5489,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["weimojiejing", "huanwuxinyao", "huanwuyulu"]
   },
   {
     "id": "zhengming",
@@ -5502,7 +5502,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["weimojiejing", "yongjia", "huanwuyulu"]
   },
   {
     "id": "zhengye",
@@ -5515,7 +5515,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "zhengyu",
@@ -5528,7 +5528,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "song-gu",
@@ -6662,7 +6662,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "息诤论",
-    "relatedBooks": []
+    "relatedBooks": ["xixulun"]
   },
   {
     "id": "wunian-fa",
@@ -6682,7 +6682,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "六祖坛经",
-    "relatedBooks": []
+    "relatedBooks": ["weimojiejing"]
   },
   {
     "id": "wuzhu-fa",
