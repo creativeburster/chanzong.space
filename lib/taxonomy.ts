@@ -490,7 +490,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "dongshan"
     ],
-    "relatedBooks": ["chanlinbaoxun", "yunmen", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun", "yunmen", "changuancejin", "zhaozhouyulu"]
   },
   {
     "id": "dongshan",
