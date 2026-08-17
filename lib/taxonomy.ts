@@ -5956,6 +5956,45 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["non-mind", "mind-is-buddha", "direct-pointing"],
     "relatedPersons": ["huangbo"],
     "relatedBooks": ["huangbo_wanlinglu", "huangbo"]
+  },
+  {
+    "id": "benfen-shi",
+    "title": "本分事",
+    "category": "心法",
+    "summary": "赵州宗风之核心。'本分事'意谓以学人本来面目、当下日用接机，不假扎根机、不随宜说教。赵州示众云：'老僧此间即以本分事接人。若教老僧随伊根机接人，自有三乘十二分教接他了也。'吃茶去、洗钵去、庭前柏树子，皆是本分事。后世以'本分事'概括赵州接机之特色：不落知解、不落玄妙，只就当人日用处直指心性。",
+    "etymology": "'本分'意为本分、常态；'事'指日用接机之事。赵州以'本分事'为宗，不立言句、不假功用，只就学人当下一句一动直指。",
+    "quotes": ["老僧此间即以本分事接人", "但有人问，以本分事接人"],
+    "guidance": "'本分事'不是不理人，而是不随人根机说教。学人问'如何是佛'，赵州答'你是佛么'；问'如何是祖师西来意'，答'庭前柏树子'。看似答非所问，实则直指当人本分，截断一切拟议思量。",
+    "classicRef": "赵州真际禅师语录",
+    "relatedConcepts": ["ordinary-mind", "direct-pointing", "wu-nian", "self-nature"],
+    "relatedPersons": ["zhaozhou", "nanquan"],
+    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+  },
+  {
+    "id": "chi-cha-qu",
+    "title": "吃茶去",
+    "category": "心法",
+    "summary": "赵州最著名的接机语。师问新到'曾到此间否'，不论曾到不曾到，皆云'吃茶去'。院主问'曾到为什么也教吃茶去'，赵州亦云'吃茶去'。三个'吃茶去'，将学人、院主的一切拟议、分别、知解全部截断。吃茶去之意不在茶，而在'去'字——只管当下去吃茶，不要思量曾到不曾到、有法无法。此是'平常心是道'最充分的体现。",
+    "etymology": "赵州语录原文：师问二新到'曾到此间否'，不论曾到与否，皆云'吃茶去'。后世将此列为公案，尾言'吃茶去'三字包含千古密意。",
+    "quotes": ["吃茶去"],
+    "guidance": "吃茶去之密意在'去'字，不在'茶'字。赵州不论问者曾到与否，皆以吃茶去截断之，意在令学人放下一切思量分别，只管当下吃茶去。此与'平常心是道'一脉相承：道不在思量中，只于当下吃茶处便是。",
+    "classicRef": "赵州真际禅师语录",
+    "relatedConcepts": ["ordinary-mind", "benfen-shi", "wu-nian"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+  },
+  {
+    "id": "ting-qian-baishuzi",
+    "title": "庭前柏树子",
+    "category": "心法",
+    "summary": "赵州答'如何是祖师西来意'之语。学人问祖师西来意，赵州答'庭前柏树子'。学人疑是将境示人，赵州再答'庭前柏树子'。此语超越一切言语道断——不答西来意是什，不答西来意非什，只指出庭前柏树子。柏树子就在眼前，不属知、不属不知，是祖意、是佛意，当下便是。后世将此语与'吃茶去''洗钵去'并列为赵州三大公案。",
+    "etymology": "赵州语录原文：僧问'如何是祖师西来意'，赵州云'庭前柏树子'。学人再问，再答'庭前柏树子'。此语以无情说法，超越思量分别。",
+    "quotes": ["庭前柏树子", "柏树子还有佛性也无？有。几时成佛？待虚空落地。"],
+    "guidance": "庭前柏树子之妙，在于不答而答。不答西来意是什，因为一说即是知解；不答非什，因为一落否定即属拣择。只指出眼前柏树子，令学人于当下见处自悟。此与'吃茶去'同一机杼：道在日用中，不在思量中。",
+    "classicRef": "赵州真际禅师语录",
+    "relatedConcepts": ["ordinary-mind", "benfen-shi", "buddha-nature", "direct-pointing"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
   }]
 ;
 
@@ -7017,6 +7056,30 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["non-mind", "no-views", "wu-wei-famen"],
     "relatedPersons": ["huangbo", "zhaozhou"],
     "relatedBooks": ["huangbo_wanlinglu", "wumenguan"]
+  },
+  {
+    "id": "benfen-jieren",
+    "title": "本分事接人",
+    "summary": "赵州接机之根本法门。不随学人根机说教，只以本分事直指。赵州云：'老僧此间即以本分事接人。若教老僧随伊根机接人，自有三乘十二分教接他了也。'本分事接人之要：不立阶梯、不设方便、不落知解，只就学人当下一句一动，直指其本来面目。吃茶去、洗钵去、庭前柏树子、你是佛么，皆是本分事接人之语。",
+    "origin": "赵州从谂禅师接机法门",
+    "steps": ["不立言句", "不随根机", "只就当下直指", "以本分事截断拟议"],
+    "pitfalls": ["不可将本分事作玄妙解", "不可求奇特语", "不可离日用求道"],
+    "classicRef": "赵州真际禅师语录",
+    "relatedConcepts": ["benfen-shi", "ordinary-mind", "direct-pointing"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "xi-bo-qu",
+    "title": "洗钵去",
+    "summary": "赵州接学名语。学人问'如何是学人自己'，赵州问'吃粥了也未'，学人答'吃粥了'，赵州即云'洗钵盂去'。此语之要：学人问'自己'，赵州不答'自己'是什么，而令学人于吃粥洗钵之日用中自己体会。洗钵去之意不在钵盂，而在令学人放下思量，于当下日用中自见本分。后世禅林以'洗钵去'与'吃茶去'并称，皆为赵州本分事接人之典范。",
+    "origin": "赵州从谂禅师接机法门",
+    "steps": ["不答所问", "令学人于日用中体会", "洗钵去即截断思量", "于当下见本分"],
+    "pitfalls": ["不可将洗钵去作境会", "不可求义理解", "不可离日用求自己"],
+    "classicRef": "赵州真际禅师语录",
+    "relatedConcepts": ["benfen-shi", "ordinary-mind", "chi-cha-qu"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
   }
 ]
 ;
@@ -10265,7 +10328,104 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["no-views", "non-mind", "wu-wei-famen"],
     "relatedPersons": ["huangbo", "zhaozhou"],
     "relatedBooks": ["huangbo_wanlinglu", "wumenguan"]
-  }];
+  },
+  {
+    "id": "koan-258",
+    "question": "庭前柏树子",
+    "answer": "僧问：如何是祖师西来意？赵州云：庭前柏树子。学人云：和尚莫将境示人。赵州云：我不将境示人。学人云：如何是祖师西来意？赵州云：庭前柏树子。",
+    "context": "赵州以庭前柏树子答祖师西来意",
+    "interpretation": "赵州不答西来意是什，只指出眼前柏树子。柏树子不属知、不属不知，是祖意、是佛意，当下便是。学人再疑莫将境示人，赵州再答庭前柏树子，截断一切拟议。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["ting-qian-baishuzi", "benfen-shi", "ordinary-mind", "direct-pointing"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu", "wumenguan"]
+  },
+  {
+    "id": "koan-259",
+    "question": "狗子无佛性",
+    "answer": "问：狗子还有佛性也无？赵州云：无。学人云：上至诸佛下至蚁子皆有佛性，狗子为什么无？赵州云：为伊有业识性在。",
+    "context": "赵州以无字截断学人对佛性的思量",
+    "interpretation": "赵州答无，非谓狗子实无佛性，而是截断学人有、无之思量。后世大慧宗杲教人只看个无字，即本于此。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["buddha-nature", "wu-nian", "direct-pointing"],
+    "relatedPersons": ["zhaozhou", "dahui"],
+    "relatedBooks": ["zhaozhouyulu", "wumenguan", "biyanlu"]
+  },
+  {
+    "id": "koan-260",
+    "question": "吃茶去",
+    "answer": "师问二新到：上座曾到此间否？云：不曾到。师云：吃茶去！又问那一人：曾到此间否？云：曾到。师云：吃茶去！院主问：不曾到，教伊吃茶去，即且致；曾到，为什么教伊吃茶去？师云：院主。院主应喏。师云：吃茶去！",
+    "context": "赵州以吃茶去三字接引一切来僧",
+    "interpretation": "三个吃茶去，将学人、院主的一切拟议分别全部截断。吃茶去之密意在去字——只管当下去吃茶，不要思量曾到不曾到。此是平常心是道最充分的体现。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["chi-cha-qu", "ordinary-mind", "benfen-shi"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu", "wumenguan"]
+  },
+  {
+    "id": "koan-261",
+    "question": "洗钵去",
+    "answer": "问：如何是学人自己？赵州云：吃粥了也未？学人云：吃粥了。赵州云：洗钵盂去。",
+    "context": "赵州以洗钵去指示学人于日用中自见本分",
+    "interpretation": "学人问自己，赵州不答自己是什么，而问吃粥了也未，再令洗钵盂去。此语之要：学人不可思量自己是什么，只于吃粥洗钵之日用中自己体会。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["xi-bo-qu", "benfen-shi", "ordinary-mind"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "wumenguan"]
+  },
+  {
+    "id": "koan-262",
+    "question": "万法归一，一归何所",
+    "answer": "问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。",
+    "context": "赵州以布衫重七斤答万法归一之问",
+    "interpretation": "学人问一归何所，落在思量中。赵州答我在青州作一领布衫重七斤，截断学人一切拟议。布衫重七斤，不属万法、不属一、不属何所，只是赵州当日实事。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["benfen-shi", "ordinary-mind", "wu-nian"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  },
+  {
+    "id": "koan-263",
+    "question": "赵州石桥度驴度马",
+    "answer": "问：久响赵州石桥，到来只见掠彴子。赵州云：你只见掠彴子，不见赵州石桥？问：如何是赵州石桥？赵州云：过来过来。又问：如何是石桥？赵州云：度驴度马。",
+    "context": "赵州以石桥接引学人",
+    "interpretation": "学人只见掠彴子，不见赵州石桥。赵州云过来过来，令学人当下过来。再问石桥，答度驴度马——石桥之功用在度驴度马，佛法之功用在度一切众生。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["ordinary-mind", "benfen-shi", "direct-pointing"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "koan-264",
+    "question": "赵州勘婆子",
+    "answer": "台山路有一婆子，要问僧。僧问：台山路，向什么处去？婆云：蓦直去！僧才行，婆云：又这么去也！赵州闻后，便去问：台山路，向什么处去？婆云：蓦直去！赵州才行，婆云：又这么去也！赵州便归，举似大众云：婆子今日被老僧勘破了也。",
+    "context": "赵州勘破台山婆子",
+    "interpretation": "婆子以蓦直去接僧，僧才行，婆云又这么去也。赵州去问，婆子仍云蓦直去，赵州才行，婆云又这么去也。赵州便归云婆子今日被老僧勘破了也。赵州之勘破，在于他不落婆子圈套。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["ordinary-mind", "benfen-shi", "wu-nian"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  },
+  {
+    "id": "koan-265",
+    "question": "一领布衫重七斤",
+    "answer": "问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。",
+    "context": "赵州以布衫重七斤截断思量",
+    "interpretation": "学人问一归何所，赵州答我在青州作一领布衫重七斤。此语截断学人一切拟议：不属万法、不属一、不属何所，只是赵州当日实事。道不在思量中，只在当下实事中。",
+    "master": "赵州从谂",
+    "source": "赵州真际禅师语录",
+    "relatedConcepts": ["benfen-shi", "ordinary-mind", "wu-nian"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  }
+];
 
 export interface FAQItem {
   id: string;
@@ -14844,5 +15004,126 @@ export const ZEN_FAQS: FAQItem[] = [
     question: '《宛陵录》适合什么人读？',
     answer: '《宛陵录》适合所有对禅宗有兴趣的学人。对初学者，黄檗的“即心是佛”能建立正信；对久学者，“破一切见”能扫除知解障碍；对实修者，“看无字”提供下手方便。但黄檗语言峻烈，破执尤力，读者不可执言句为实法。如黄檗自己所说：此意唯是默契得，若用心拟学取，即转远去。建议与《传心法要》合参，相互发明。',
     relatedBooks: ['huangbo_wanlinglu', 'huangbo']
-  }];
+  },
+  {
+    "id": "faq-761",
+    "question": "赵州为什么说'佛之一字，吾不喜闻'？",
+    "answer": "赵州云'佛之一字，吾不喜闻'，非谤佛也。其意在于：学人若执着'佛'字，便落知解；若求佛见，便成障碍。赵州不喜闻'佛'字，是要截断学人对佛的一切思量拟议，令学人于当下自见本分。此与黄檗'佛之一字永不喜闻'一脉相承。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-762",
+    "question": "'庭前柏树子'到底是什么意思？",
+    "answer": "'庭前柏树子'不是将境界示人，而是截断学人对'西来意'的思量。赵州不答西来意是什，也不答非什，只指出眼前柏树子。柏树子就在眼前，不属知、不属不知，是祖意、是佛意，当下便是。学人若思量柏树子有什么密意，便错过了。",
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  },
+  {
+    "id": "faq-763",
+    "question": "'狗子无佛性'的'无'字应该怎么参？",
+    "answer": "赵州答'无'，非谓狗子实无佛性，而是截断学人'有''无'之思量。大慧宗杲教人'只看个无字'：二六时中不间断地看，行住坐卧皆不离，猛着精彩，打成一片，忽然心花顿发。看'无'字不是作有无之无解会，不是思量揣度，而是将此'无'字作为话头，截断一切妄念。",
+    "relatedBooks": ["zhaozhouyulu", "wumenguan", "biyanlu"]
+  },
+  {
+    "id": "faq-764",
+    "question": "'吃茶去'三字有什么密意？",
+    "answer": "'吃茶去'之密意在'去'字，不在'茶'字。赵州不论问者曾到与否，皆以吃茶去截断之，意在令学人放下一切思量分别，只管当下吃茶去。此与'平常心是道'一脉相承：道不在思量中，只于当下吃茶处便是。三个吃茶去，将学人、院主的一切拟议全部截断。",
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  },
+  {
+    "id": "faq-765",
+    "question": "赵州为什么以'本分事'接人？",
+    "answer": "赵州云'老僧此间即以本分事接人'，意谓不随学人根机说教，只以本分事直指。本分事者，学人本来面目、当下日用处之事也。赵州不立阶梯、不设方便、不落知解，只就学人当下一句一动直指其本分。吃茶去、洗钵去、庭前柏树子，皆是本分事。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-766",
+    "question": "赵州勘婆子为什么说他'勘破了'婆子？",
+    "answer": "婆子以'蓦直去'接僧，僧才行，婆云'又这么去也'——意谓僧虽蓦直去，却落思量。赵州去问，婆子仍云'蓦直去'，赵州才行，婆云'又这么去也'。赵州便归云'婆子今日被老僧勘破了也'。赵州之勘破，在于他不落婆子圈套：婆子以'蓦直去'为玄妙，赵州以平常心行平常事，不被其语所转。",
+    "relatedBooks": ["zhaozhouyulu", "biyanlu"]
+  },
+  {
+    "id": "faq-767",
+    "question": "赵州为什么对大王说'见人无力下禅床'？",
+    "answer": "大王来礼拜，赵州不起，以手拍膝云'会么'。大王云不会。赵州云'自小出家今已老，见人无力下禅床'。赵州之不起，非傲慢也。赵州以禅床上接上等人——大王是上等根机，不当以中下等之礼接之。赵州之不起，正是以本分事接大王。大王欢喜，再三请入内供养。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-768",
+    "question": "赵州语录与黄檗语录有什么关系？",
+    "answer": "赵州与黄檗同为马祖再传，皆以'即心是佛'为宗。黄檗教人'看无字'，赵州则示'狗子无佛性'——此'无'字正是后世看话禅之源头。赵州之'本分事'与黄檗之'无心'，皆是指向心性本净、当下即是。二人语风不同而宗旨一贯：黄檗峻烈，赵州平实；黄檗破执，赵州截断思量。",
+    "relatedBooks": ["zhaozhouyulu", "huangbo", "huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-769",
+    "question": "赵州的'十二时歌'表达了什么？",
+    "answer": "赵州'十二时歌'以通俗语言描述禅僧一日十二时之修行生活，兼寓深意。如'鸡鸣丑：愁见起来还漏逗'写晨起之困顿；'日出卯：清净却翻为烦恼'写修行之艰辛；'日昳未：这回不践光阴地'写当下之安然。歌中自嘲'谁知变作不唧溜'，正显赵州不装模作样、以平常心过平常日之本色。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-770",
+    "question": "赵州为什么说'金佛不度炉，木佛不度火，泥佛不度水'？",
+    "answer": "赵州云'金佛不度炉，木佛不度火，泥佛不度水，真佛内里坐'。金佛入炉则熔，木佛入火则焚，泥佛入水则坏——一切有形有相之佛皆有所避。唯有真佛内里坐，不属形相、不属造作，当下便是。菩提、涅槃、真如、佛性，尽是贴体衣服，亦名烦恼。一心不生，万法无咎。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-771",
+    "question": "赵州语录适合什么人读？",
+    "answer": "赵州语录适合所有对禅宗有兴趣的学人。对初学者，赵州之'吃茶去''洗钵去'能令学人于日用中体会禅意；对久学者，赵州之'本分事'能扫除一切知解玄妙；对实修者，赵州之'看无字'提供下手方便。但赵州语言平实，读者不可作玄妙解，只于平常处体会。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-772",
+    "question": "赵州与南泉的关系如何？",
+    "answer": "赵州于南泉处悟'平常心是道'之旨。赵州问南泉'如何是道'，南泉云'平常心是道'，赵州于言下顿悟。后赵州在南泉处作炉头，与南泉多有酬唱。南泉斩猫，赵州以鞋戴头上救之，南泉云'你若在，救得猫儿'。赵州之宗风，实承南泉'平常心是道'一脉。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-773",
+    "question": "赵州为什么说'老僧使得十二时'？",
+    "answer": "学人问'十二时中如何用心'，赵州云'你被十二时使，老僧使得十二时'。学人被十二时使，意谓学人被时间所转、被境缘所牵；赵州使得十二时，意谓赵州于十二时中自由自在、不被境缘所转。此语之要：修行者当于日用中作得主，不被十二时所使。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-774",
+    "question": "赵州语录中有哪些著名公案？",
+    "answer": "赵州语录中最著名的公案有：一、庭前柏树子——答祖师西来意；二、狗子无佛性——看话禅之源头；三、吃茶去——以本分事接引来僧；四、洗钵去——指示学人于日用中自见本分；五、万法归一，一归何所——以布衫重七斤截断思量；六、赵州石桥度驴度马——指示佛法在日常；七、赵州勘婆子——显示宗师手段。",
+    "relatedBooks": ["zhaozhouyulu", "biyanlu", "wumenguan"]
+  },
+  {
+    "id": "faq-775",
+    "question": "赵州为什么对学人说'你被十二时使'？",
+    "answer": "学人问'十二时中如何用心'，赵州不答如何用心，而云'你被十二时使，老僧使得十二时'。此语截断学人'如何用心'之思量：学人问如何用心，正是被十二时所使；赵州使得十二时，正是于十二时中自由自在。学人若于十二时中作得主，便不被十二时所使。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-776",
+    "question": "赵州为什么对僧写他的真像说'若似老僧，即打杀我'？",
+    "answer": "僧写赵州真呈师，赵州云'若似老僧，即打杀我；若不似，即烧却'。赵州之意：真像若似老僧，则学人执着形相，当以打杀截断之；真像若不似，则学人离却形相，当以烧却破除之。赵州不令学人执着真像，亦不令学人离却真像，只令学人于当下自见本分。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-777",
+    "question": "赵州为什么对刘相公说'从外来'？",
+    "answer": "刘相公见赵州扫地，问'大善知识，为什么却扫尘'，赵州云'从外来'。相公之意：大善知识不当扫地；赵州之意：扫地即是从外来——不执着大善知识之名，不执着扫地之事，只于当下扫地。赵州之扫地，正是本分事，正是平常心。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-778",
+    "question": "赵州语录中'平常心是道'如何体现？",
+    "answer": "赵州于南泉处悟'平常心是道'之旨，后以此宗旨接引学人。赵州之'吃茶去''洗钵去''庭前柏树子'，皆是平常心是道之体现：道不在玄妙处，只在日用中。赵州示众云'老僧行脚时，除二时斋粥是杂用心力处，余外更无别用心处也'，正是平常心是道之最好注脚。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-779",
+    "question": "赵州为什么对学人说'这贩私盐汉'？",
+    "answer": "新到从南方来，赵州问'还知有赵州关么'，学人云'须知赵州关者'，赵州叱云'这贩私盐汉'。赵州关者，赵州之宗风也。学人云'须知赵州关者'，正是要过赵州关；赵州叱之为'贩私盐汉'，意谓学人以知解过赵州关，如贩私盐者以私智过官关，终被擒获。赵州之叱，正是截断学人一切拟议。",
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "faq-780",
+    "question": "赵州语录在禅宗史上的地位如何？",
+    "answer": "赵州语录在禅宗史上地位极高。赵州上承南泉'平常心是道'之旨，下开看话禅之先河。其'狗子无佛性'之'无'字，为大慧宗杲看话禅之源头；其'庭前柏树子''吃茶去''洗钵去'，为后世禅林最著名之公案。赵州年寿一百二十岁，住持赵州观音院四十年，人称'赵州古佛'。其语录为研究唐代禅宗最重要之文献之一。",
+    "relatedBooks": ["zhaozhouyulu", "biyanlu", "wumenguan"]
+  }
+];
 
