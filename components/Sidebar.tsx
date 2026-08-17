@@ -472,10 +472,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
           {/* 右上角折叠按钮 */}
           <button
             onClick={toggleDesktopSidebar}
-            className="absolute top-[-3.5px] right-[-6px] z-40 w-10 h-10 rounded-2xl flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800/80 transition-all"
+            className="absolute top-[-3.5px] right-[-6px] z-40 w-12 h-12 rounded-2xl flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800/80 transition-all"
             aria-label="收起侧边栏"
           >
-            <PanelLeftClose className="w-5 h-5" />
+            <PanelLeftClose className="w-6 h-6" />
           </button>
           {sidebarContent}
         </aside>
@@ -485,10 +485,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {desktopCollapsed && (
         <button
           onClick={toggleDesktopSidebar}
-          className="hidden md:flex fixed -left-2 top-0 z-30 w-10 h-10 bg-[#0F172A] border-r border-t border-b border-slate-800 rounded-r-2xl items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-all shadow-lg"
+          className="hidden md:flex fixed -left-2 top-0 z-30 w-12 h-12 bg-[#0F172A] border-r border-t border-b border-slate-800 rounded-r-2xl items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-all shadow-lg"
           aria-label="展开侧边栏"
         >
-          <PanelLeftOpen className="w-5 h-5" />
+          <PanelLeftOpen className="w-6 h-6" />
         </button>
       )}
 
