@@ -3089,7 +3089,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": []
+    "relatedBooks": ["sixingguan"]
   },
   {
     "id": "weishi-yixin",
@@ -4334,19 +4334,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": ["tanjing", "jingangjing"]
   },
   {
-    "id": "sanlun-tikong",
-    "title": "三轮体空",
-    "category": "般若",
-    "summary": "三轮体空，即布施等善法中之三轮——施者、受者、施物——皆无自性，当体即空。如布施时，不见有施者（能施空）、不见有受者（所受空）、不见有施物（施物空）——三轮清净，即为\u201c三轮体空\u201d。此为般若之重要修法——于一切善法中不见能所，即善法而见性空。禅宗之\u201c无相布施\u201d即三轮体空之体现——六祖云：\u201c布施不望报，是名无相布施。\u201d——不望报者，即三轮体空。",
-    "etymology": "三轮（施者、受者、施物）+ 体空（当体即空），三轮皆无自性。",
-    "quotes": ["布施不望报，是名无相布施。 —六祖坛经义"],
-    "guidance": "三轮体空非不行善——乃行善时不见能所。如镜照物——物来不迎，物去不追，镜体清净。行善亦如是——善行虽起而心无所着。",
-    "classicRef": "《金刚经》《坛经》",
-    "relatedConcepts": ["emptiness", "wu-xiang", "wu-wo"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": []
-  },
-  {
     "id": "liuxiang-yuanrong",
     "title": "六相圆融",
     "category": "般若",
@@ -4384,19 +4371,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["mind-is-buddha", "self-nature", "buddha-nature"],
     "relatedPersons": ["huineng", "yongming-yanshou"],
     "relatedBooks": ["chanlinbaoxun"]
-  },
-  {
-    "id": "fanrao-puti",
-    "title": "烦恼即菩提",
-    "category": "心性",
-    "summary": "烦恼即菩提，即烦恼与菩提非二——烦恼之本性即菩提。迷时为烦恼，悟时为菩提——如冰之于水：冰即水之凝，水即冰之融——冰水不二，烦恼菩提不二。六祖云：\u201c前念迷即凡夫，后念悟即佛。\u201d——迷即烦恼，悟即菩提；非别有菩提，乃烦恼之清净面。此为禅宗\u201c即烦恼成菩提\u201d之根本立场——不须断烦恼别求菩提，即烦恼便是菩提。然此非放纵烦恼——乃于烦恼中悟得本来清净。",
-    "etymology": "烦恼（klesha）即（即是）菩提（bodhi），烦恼本性即菩提。",
-    "quotes": ["前念迷即凡夫，后念悟即佛。 —六祖坛经", "烦恼即菩提。 —天台教义"],
-    "guidance": "烦恼即菩提非放纵烦恼——乃于烦恼中见性。如冰即水——不须断冰别求水，只须融冰。烦恼即菩提——不须断烦恼别求菩提，只须悟得烦恼本空。",
-    "classicRef": "《坛经》《维摩诘经》",
-    "relatedConcepts": ["wuming", "self-nature", "non-duality"],
-    "relatedPersons": ["huineng", "weimojie"],
-    "relatedBooks": ["tanjing", "weimojiejing"]
   },
   {
     "id": "shengsi-jielun",

@@ -485,10 +485,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {desktopCollapsed && (
         <button
           onClick={toggleDesktopSidebar}
-          className="hidden md:flex fixed -left-1 top-0 z-30 w-12 h-12 bg-[#0F172A] border-r border-t border-b border-slate-800 rounded-r-2xl items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-all shadow-lg"
+          className="hidden md:flex fixed -left-2 top-0 z-30 w-10 h-10 bg-[#0F172A] border-r border-t border-b border-slate-800 rounded-r-2xl items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-slate-800 transition-all shadow-lg"
           aria-label="展开侧边栏"
         >
-          <PanelLeftOpen className="w-6 h-6" />
+          <PanelLeftOpen className="w-5 h-5" />
         </button>
       )}
 
