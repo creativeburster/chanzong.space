@@ -887,7 +887,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     ],
     "relatedBooks": [
       "chanlinbaoxun"
-    ]
+    , "fayanyulu"]
   },
   {
     "id": "anan",
@@ -1461,7 +1461,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["changuancejin", "fayanyulu"]
   },
   {
     "id": "yongming-yanshou",
@@ -1631,7 +1631,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["yuanwu-keqin", "baiyun-shouduan"],
-    "relatedBooks": ["changuancejin"]
+    "relatedBooks": ["changuancejin", "fayanyulu"]
   },
   {
     "id": "baiyun-shouduan",
@@ -1648,7 +1648,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["ordinary-mind", "self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["yangqi-fanghui", "wuzu-fayan"],
-    "relatedBooks": ["mazu", "chanlinbaoxun", "dongshanyulu", "yongjia", "wumenguan", "huanwuxinyao", "huanwuyulu", "zhaozhouyulu"]
+    "relatedBooks": ["mazu", "chanlinbaoxun", "dongshanyulu", "yongjia", "wumenguan", "huanwuxinyao", "huanwuyulu", "zhaozhouyulu", "fayanyulu"]
   },
   {
     "id": "wumen-huikai",
