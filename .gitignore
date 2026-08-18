@@ -3,7 +3,8 @@ node_modules/
 out/
 .env*
 *.tsbuildinfo
-next-env.d.ts
+	next-env.d.ts
+__pycache__/
 raw_ocr/
 page_imgs/
 .agents/
