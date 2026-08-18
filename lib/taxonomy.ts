@@ -1110,7 +1110,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality", "self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dongshan"],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": ["baojingsanmei", "caoshanyulu"]
   },
   {
     "id": "yunyan-tancheng",
@@ -5903,7 +5903,128 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["wuxin-jueguan", "si-jian-zheng-jian"],
     "relatedPersons": ["farong"],
     "relatedBooks": ["jueguanlun"]
+  },
+  {
+    "id": "wuwei-junchen",
+    "title": "五位君臣",
+    "category": "曹洞宗核心理论",
+    "summary": "曹山以君臣配正偏五位，明理事回互之妙。正位即空界本来无物，偏位即色界有万象形。君为正位，臣为偏位，君视臣是正中偏，臣向君是偏中正，君臣道合是兼带。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["hu-hu", "zheng-pian", "jian-dai"],
+    "relatedPersons": ["caoshan-benji", "dongshan"],
+    "relatedBooks": ["caoshanyulu", "baojingsanmei"]
+  },
+  {
+    "id": "sanduo",
+    "title": "三等堕",
+    "category": "曹洞宗修行方法",
+    "summary": "曹山立三等堕明沙门取食之要：披毛戴角（类堕/沙门堕）、不断声色（随堕/随类堕）、不受食（尊贵堕）。堕非堕落，乃不执圣位、不舍众生之修行方式。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["wuwei-junchen", "yilei-zhongxing"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "yilei-zhongxing",
+    "title": "异类中行",
+    "category": "曹洞宗入世度生之行",
+    "summary": "曹山列举四种异类：往来异类、菩萨同异类、沙门异类、宗门中异类。菩萨先明自己后入生死异类中摄他，沙门触处得自由不入圣报位。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["sanduo", "wuwei-junchen"],
+    "relatedPersons": ["caoshan-benji", "dongshan"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "jian-dai-yu",
+    "title": "兼带语",
+    "category": "曹洞宗语言观",
+    "summary": "曹山示兼带语不涉有语无语，全无的的也。作家语不偏不正，不有不无，呼为异类中虚。直须正面而去，不可卜度。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["wuwei-junchen", "hu-hu"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "sijin-ji",
+    "title": "四禁偈",
+    "category": "曹山警策学人之偈",
+    "summary": "曹山作四禁偈：莫行心处路，不挂本来衣。何须正恁么，切忌未生时。莫行心处路是不落意识分别，不挂本来衣是不执本来面目。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": [],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "bayao-xuanji",
+    "title": "八要玄机",
+    "category": "曹洞宗修行纲领",
+    "summary": "曹山示八要玄机：回互、不回互、宛转、傍参、枢机、密用、正按、傍提。涵盖理事回互、机用宛转、正傍参透等曹洞宗修行要领。",
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["wuwei-junchen", "hu-hu"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "baiyun-wanli",
+    "category": "禅宗概念",
+    "title": "白云万里",
+    "summary": "法演以“白云万里”为勘验学人的最高标尺，无论说佛说法、拀槌竖拉，还是德山棒临济喝，都隔了万里。真正的禅，不在任何形式和手段中。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["toushi-guan", "diyi-yi"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "wuzi-huatou",
+    "category": "禅宗概念",
+    "title": "无字话头",
+    "summary": "法演极力提倡赵州“狗子无佛性”话头，以“无”字为参究核心，开创了后世看话禅的先声。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["toushi-guan", "baiyun-wanli"],
+    "relatedPersons": ["wuzu-fayan", "zhaozhou-congshen"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "toushi-guan",
+    "category": "禅宗概念",
+    "title": "透祖师关",
+    "summary": "法演强调“须是透祖师关始得”，认为只有透过言语思量的极限处，才能真正领会禅的旨意。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["baiyun-wanli", "wuzi-huatou"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "qugeng-duoshi",
+    "category": "禅宗概念",
+    "title": "驱耕夫之牛夺饥人之食",
+    "summary": "法演说驱耕夫之牛令他苗稽滋盛，夺饥人之食令他永绝饥虚。这是禅宗的大死大活。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["baiyun-wanli"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "baiyun-yidi-shui",
+    "category": "禅宗概念",
+    "title": "白云一滴水",
+    "summary": "法演以打碛打矨比喻禅法，又以教你无著面处表示禅的不可把抓。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["baiyun-wanli", "pingchangxin-shidao"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "diyi-yi",
+    "category": "禅宗概念",
+    "title": "第一义",
+    "summary": "法演说三世诸佛若无第一义将什么化度有情。第一义是万法源头，但必须自己悟得。",
+        "classicRef": "fayanyulu",
+    "relatedConcepts": ["baiyun-wanli", "toushi-guan"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
   }
+
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -6967,6 +7088,61 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["benfen-shi", "ordinary-mind", "chi-cha-qu"],
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "wuwei-junchen-fa",
+    "title": "五位君臣法",
+    "summary": "曹山传承洞山五位君臣之旨，以正偏五位配君臣关系，明理事回互之妙。正中偏是背理就事，偏中正是舍事入理，兼带是君臣道合。",
+    "steps": [],
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["wuwei-junchen", "hu-hu"],
+    "relatedPersons": ["caoshan-benji", "dongshan"],
+    "relatedBooks": ["caoshanyulu", "baojingsanmei"]
+  },
+  {
+    "id": "sanduo-fa",
+    "title": "三等堕法",
+    "summary": "曹山示沙门取正命食须具三种堕：披毛戴角、不断声色、不受食。堕非堕落，乃不执圣位、不舍众生。",
+    "steps": [],
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["sanduo", "yilei-zhongxing"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "yilei-zhongxing-fa",
+    "title": "异类中行法",
+    "summary": "曹山传承洞山异类中行之旨，明菩萨入世度生之行。先明自己后入生死异类中摄他，不舍生死类。",
+    "steps": [],
+    "classicRef": "caoshanyulu",
+    "relatedConcepts": ["yilei-zhongxing", "sanduo"],
+    "relatedPersons": ["caoshan-benji", "dongshan"],
+    "relatedBooks": ["caoshanyulu"]
+  }
+,
+  {
+    "id": "wuzi-can",
+    "title": "无字参究法",
+    "summary": "法演极力提倡赵州狗子无佛性话头，以无字为参究入手，开创了后世看话禅的先声。",
+    "origin": "《五祖法演禅师语录》卷上",
+    "steps": [],
+    "pitfalls": ["不可将无字作知见会，不可作有无不有不无会。"],
+    "classicRef": "fayanyulu",
+    "relatedConcepts": ["wuzi-huatou", "toushi-guan"],
+    "relatedPersons": ["wuzu-fayan", "zhaozhou-congshen"],
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "baiyun-wanli-kan",
+    "title": "白云万里勘验法",
+    "summary": "法演以白云万里四字作为勘验学人的最高标尺，无论说佛说法拀槌竖拉还是德山棒临济喝，都以白云万里扫除一切知见。",
+    "origin": "《五祖法演禅师语录》卷上",
+    "steps": [],
+    "pitfalls": ["白云万里本身也不可执为实法，若以为有一个白云万里的境界可得，则又隔万里。"],
+    "classicRef": "fayanyulu",
+    "relatedConcepts": ["baiyun-wanli", "toushi-guan"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
   }
 ]
 ;
@@ -10388,7 +10564,118 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["wuxin-jueguan", "self-nature"],
     "relatedPersons": ["farong"],
     "relatedBooks": ["jueguanlun"]
+  },
+  {
+    "id": "koan-278",
+    "question": "不名本寂",
+    "answer": "不道。为什么不道？不名本寂。",
+    "context": "洞山问曹山：阇黎名什么？答：本寂。洞山问：向上更道。答：不道。洞山问：为什么不道？答：不名本寂。洞山深器之。名字只是假名，本寂之性岂可以名相得之？一语双关，既答师问，又示本体不可说之旨。",
+    "interpretation": "曹山与洞山的开场对话，是曹洞宗师徒开始的经典公案。本寂是名，不名本寂是道——名可以称呼，但真实的本寂之性超越名相，无法用语言表达。",
+    "master": "曹山本寂",
+    "source": "抚州曹山本寂禅师语录",
+    "relatedConcepts": ["non-duality", "self-nature"],
+    "relatedPersons": ["caoshan-benji", "dongshan"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "koan-279",
+    "question": "填沟塞壑",
+    "answer": "填沟塞壑。",
+    "context": "僧问：如何是佛法大意？曹山答：填沟塞壑。佛法大意不是高深玄妙，而是平实填平一切分别沟壑，平等如如。",
+    "interpretation": "曹山以最平实的语句表达最高深的佛法大意。沟壑是人为的分别，填平就是佛法——不高不下，不增不减，平等如如。",
+    "master": "曹山本寂",
+    "source": "抚州曹山本寂禅师语录",
+    "relatedConcepts": ["non-duality", "wuwei-junchen"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "koan-280",
+    "question": "死猫儿头最贵",
+    "answer": "死猫儿头最贵。为什么？无人著价。",
+    "context": "僧问：世间什么物最贵？曹山答：死猫儿头最贵。僧问：为什么？曹山答：无人著价。无人著价之物方为最贵，喻佛法无可估量，亦喻彻底死尽偷心之人方为尊贵。",
+    "interpretation": "死猫儿头是无人看重、无人出价之物，曹山以此喻佛法之尊贵——不可估量，不可比拟。亦喻彻底死尽偷心的修行者，无人珍视却最为尊贵。",
+    "master": "曹山本寂",
+    "source": "抚州曹山本寂禅师语录",
+    "relatedConcepts": ["self-nature", "non-duality"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "koan-281",
+    "question": "枯木龙吟",
+    "answer": "枯木龙吟真见道，髑髅无识眼初明。喜识尽时消息尽，当人那辨浊中清。",
+    "context": "僧问香严：如何是道？香严答：枯木里龙吟。问：如何是道中人？香严答：髑髅里眼睛。石霜评：犹带喜在、犹带识在。曹山评石霜为声闻见解，自作颂：枯木龙吟真见道，髑髅无识眼初明。喜识尽时消息尽，当人那辨浊中清。枯木中血脉不断，髑髅中干不尽，方是真见道。",
+    "interpretation": "枯木龙吟、髑髅眼睛，喻空寂中有活用、死尽中有生机。石霜犹带喜识，故曹山评为声闻见解。真见道须喜识尽时消息尽，方辨浊中清。",
+    "master": "曹山本寂",
+    "source": "抚州曹山本寂禅师语录",
+    "relatedConcepts": ["non-duality", "self-nature"],
+    "relatedPersons": ["caoshan-benji", "xiangyan-zhixian", "shishuang-qingzhu"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "koan-282",
+    "question": "通身是病",
+    "answer": "不医。教你求生不得，求死不得。",
+    "context": "僧问：学人通身是病，请师医。曹山答：不医。僧问：为什么不医？曹山答：教你求生不得，求死不得。此病非色身之病，乃法身大病，非世医可治。不医者，令其超越生死两端，到无所求处。",
+    "interpretation": "通身是病喻法身大病，攒簇不得。不医不是不治，而是令其超越生死两端——求生不得求死不得，到无所求处方见本分事。",
+    "master": "曹山本寂",
+    "source": "抚州曹山本寂禅师语录",
+    "relatedConcepts": ["non-duality", "self-nature"],
+    "relatedPersons": ["caoshan-benji"],
+    "relatedBooks": ["caoshanyulu"]
+  },
+{
+    "id": "koan-283",
+    "question": "法演白云万里",
+    "answer": "法演说说佛说法拀槌竖拉白云万里，德山进门便棒临济进门便喝白云万里。白云万里是法演勘验学人的最高标尺，无论说佛说法德山棒临济喝都隔了万里。",
+    "master": "五祖法演",
+    "source": "《五祖法演禅师语录》卷上",
+    "relatedConcepts": ["baiyun-wanli"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+{
+    "id": "koan-284",
+    "question": "法演一口吸尽西江水",
+    "answer": "法演举庵居士问马大师公案，说一口吸尽西江水洛阳牡丹新吰蕊簹土飔尘勿处寻抬头撞著自家底。一口吸尽西江水不是向外寻来的而是自家本有的。",
+    "master": "五祖法演",
+    "source": "《五祖法演禅师语录》卷中",
+    "relatedConcepts": ["baiyun-wanli", "baiyun-yidi-shui"],
+    "relatedPersons": ["wuzu-fayan", "mazu-daoyi"],
+    "relatedBooks": ["fayanyulu"]
+  },
+{
+    "id": "koan-285",
+    "question": "法演驱耕夫之牛夺饥人之食",
+    "answer": "法演说驱耕夫之牛令他苗稽滋盛夺饥人之食令他永绝饥虚。这就是禅宗的大死大活。",
+    "master": "五祖法演",
+    "source": "《五祖法演禅师语录》卷中",
+    "relatedConcepts": ["qugeng-duoshi"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
+  },
+{
+    "id": "koan-286",
+    "question": "法演达磨得皮肉骨髓",
+    "answer": "法演举达磨勘验四弟子公案，评说当时若见他三人恣么道各人好与三十棒。只如白云今日也合吃二十九棒留一棒与你们。",
+    "master": "五祖法演",
+    "source": "《五祖法演禅师语录》卷中",
+    "relatedConcepts": ["baiyun-wanli"],
+    "relatedPersons": ["wuzu-fayan", "bodhidharma"],
+    "relatedBooks": ["fayanyulu"]
+  },
+{
+    "id": "koan-287",
+    "question": "法演无缝塔",
+    "answer": "法演举肓宗问忠国师无缝塔公案，国师良久后问肓会么肓不会。法演评说当时肓宗如果是作家君王但向道国师国师何必后来该词耽源。",
+    "master": "五祖法演",
+    "source": "《五祖法演禅师语录》卷上",
+    "relatedConcepts": ["diyi-yi"],
+    "relatedPersons": ["wuzu-fayan"],
+    "relatedBooks": ["fayanyulu"]
   }
+
 ];
 
 export interface FAQItem {
@@ -15220,6 +15507,247 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《绝观论》适合什么人读？",
     "answer": "《绝观论》适合所有对禅宗有兴趣的学人。对初学者，\"不须立心\"能建立正信；对久学者，\"似见非正见\"能扫除知解障碍；对实修者，\"智者求心不求佛\"提供下手方便。但论中\"行于非道\"一段极为峻烈，读者不可作字面解。建议与《心铭》合参，相互发明。二书一偈一论，一总一别，合参可窥牛头禅之全貌。",
     "relatedBooks": ["jueguanlun", "xinming"]
+  },
+  {
+    "id": "faq-823",
+    "question": "曹山五位君臣的具体含义是什么？",
+    "answer": "曹山以君臣配正偏五位：正位即空界本来无物（君），偏位即色界有万象形（臣）。正中偏是背理就事（君视臣），偏中正是舍事入理（臣向君），兼带是冥应众缘不堕诸有（君臣道合）。五位不是阶梯次第，而是理事回互的五种关系，须回互体会，不可执于文字。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-824",
+    "question": "曹山的“三等堕”是什么意思？“堕”为什么不是堕落？",
+    "answer": "三等堕是沙门取正命食的三种方式：披毛戴角（类堕/沙门堕）——不执沙门边事及诸圣报位，作水牯牛；不断声色（随堕/随类堕）——于声色中转身不被染污；不受食（尊贵堕）——了达正因不存胜解，本分事知有不取。堕在此不是堕落，而是“转身投入”——不执圣位、不舍众生，以最平实的方式修行。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-825",
+    "question": "曹山“不名本寂”这句话的深意是什么？",
+    "answer": "洞山问曹山名字，曹山答“本寂”。洞山问向上的，曹山答“不道”。洞山问为什么不道，曹山答“不名本寂”。深意是：名字只是假名，本寂之性岂可以名相得之？“本寂”是名，“不名本寂”是道——一语双关，既答师问，又示本体不可说之旨。这是曹洞宗师徒印心的经典对话。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-826",
+    "question": "曹山为什么说“填沟塞壑”是佛法大意？",
+    "answer": "僧问佛法大意，曹山答“填沟塞壑”。沟壑是人我分别、凡圣情见所造成的鸿沟。填平这些沟壑，就是佛法大意——不高不下，不增不减，平等如如。曹山以最平实的语句表达最高深的道理，体现曹洞宗“回互”不偏之旨。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-827",
+    "question": "“死猫儿头最贵”是什么意思？",
+    "answer": "僧问世间什么物最贵，曹山答“死猫儿头最贵”，因为“无人著价”。无人著价之物方为最贵——喻佛法无可估量，不可比拟。亦喻彻底死尽偷心之人，虽无人珍视却最为尊贵。曹山以俗语说妙理，体现禅宗“平常心是道”之旨。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-828",
+    "question": "曹山说“如经蛊毒之乡，水不得沾著一滴”是什么意思？",
+    "answer": "僧问十二时中如何保任，曹山答“如经蛊毒之乡，水不得沾著一滴”。修行保任须如行经毒乡，一丝一毫不沾染。六根门头不被染污，于一切声色物物上转身去不随阶级。这是曹洞宗“随类堕”的修行要领——在万法中不被染污。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-829",
+    "question": "曹山评石霜“枯木龙吟”公案为什么说“犹带喜在”是声闻见解？",
+    "answer": "石霜评香严“枯木里龙吟”说“犹带喜在”，评“髑髅里眼睛”说“犹带识在”。曹山评此为声闻见解，因为石霜虽知枯木中有龙吟，但犹带喜识之心——还有能喜能识的微细分别。真见道须喜识尽时消息尽，方辨浊中清。枯木中血脉不断，髑髅中干不尽，方是真见道。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-830",
+    "question": "曹山“四禁偈”的具体含义是什么？",
+    "answer": "四禁偈：“莫行心处路，不挂本来衣。何须正恁么，切忌未生时。”莫行心处路是不落意识分别——心处路即意识活动的路径；不挂本来衣是不执著本来面目——本来衣即对本来面目的概念执取；何须正恁么是当下即是——不必另求；切忌未生时是不落未生前的概念——不要在时间上做文章。四句皆禁，禁即不执。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-831",
+    "question": "曹山“异类中行”的四种异类分别是什么？",
+    "answer": "四种异类：一者往来异类——未知有自己，一切言语声色是非；二者菩萨同异类——先明自己后入生死异类中摄他，不舍生死类，自利利他；三者沙门异类——知有本分事，丧尽凡圣因果，触处得自由，不入诸圣报位，亦云披毛戴角；四者宗门中异类——作家语不偏不正，不有不无，呼为异类中虚，直须虚一位全无的的也。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-832",
+    "question": "曹山如何解释“兼带语”？",
+    "answer": "曹山示兼带语不涉有语无语，全无的的也。有语是恁么来，无语是恁么去。作家中不无言语，但不涉有语无语，这个唤作兼带语。兼带语直须正面而去，不偏不正，不有不无。在途之语总是病，当人先须辨得语句，正面而去。兼带是五位中最妙最玄的一位——君臣道合，冥应众缘。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-833",
+    "question": "曹山“通身是病请师医”的公案是什么意思？",
+    "answer": "僧问通身是病请师医，曹山答“不医”，因为“教你求生不得求死不得”。此病非色身之病，乃法身大病，攒簇不得，非世医可治。不医不是不治，而是令其超越生死两端——求生不得求死不得，到无所求处方见本分事。曹山又开示“吾有大病非世所医”是攒簇不得的病，人人尽有，佛亦有此病而不病，因为伊惺惺。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-834",
+    "question": "曹山如何评价格胝和尚“一指禅”？",
+    "answer": "俱胝和尚凡有诘问唯举一指，将顺世时说“吾得天龙一指头禅一生用不尽”。曹山评：“俱胝承当处莽卤，只认得一机一境。”意谓一指虽是方便，但俱胝只认得一机一境的方便，未透彻到兼带语全无的的的境界。曹山此评体现曹洞宗对“一机一境”的超越要求。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-835",
+    "question": "曹山“法身偈”注释中“渠如我是佛，我如渠即驴”是什么意思？",
+    "answer": "曹山读杜顺傅大士法身偈后自作偈注释：“渠如我是佛（要且不是佛），我如渠即驴（二俱不立）。”渠如我是佛——若以渠为我则是佛，但要且不是佛，不可执佛相；我如渠即驴——若以我为渠则是驴，二俱不立，佛与驴皆不落。意谓法身不落佛驴两边，不立一法，方显法身之妙。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-836",
+    "question": "曹山“朗月当空”公案中“月落后来相见”是什么意思？",
+    "answer": "僧问朗月当空时如何，曹山答“犹是阶下汉”。僧请师接上阶，曹山答“月落后来相见”。朗月当空喻光明境界，但仍有境界可执，故是阶下汉。月落后无境界可执，方得真正相见。意谓修行不可执著光明境界，须到无境界可执处方见本来面目。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-837",
+    "question": "曹山“八要玄机”具体是哪八个要领？",
+    "answer": "八要玄机：回互、不回互、宛转、傍参、枢机、密用、正按、傍提。回互是理事交融，不回互是各住本位，宛转是机用自在，傍参是旁通参透，枢机是关键机用，密用是不露痕迹，正按是正面勘验，傍提是旁敲侧击。八要涵盖曹洞宗修行的核心要领。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-838",
+    "question": "曹山示众说“黧奴白牯修行却快”是什么意思？",
+    "answer": "曹山示众说：黧奴白牯修行却快，不是有禅有道，如汝种种驰求觅佛觅祖乃至菩提涅槃，几时休歇成办？皆是生灭心。不如黧奴白牯兀兀无知，不知佛不知祖，但饥来吃草渴来饮水。若能恁么，不愁不成办。意谓修行不在驰求觅佛觅祖，而在兀兀无知、饥餐渴饮的平常心中。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-839",
+    "question": "曹山如何解释“五位旨诀”中正中偏、偏中正、正中来、兼中至、兼中到的含义？",
+    "answer": "曹山解释：正中偏——心机泯色空忘更无覆藏全体露现；偏中正——山是山水是水无人安名无物比伦；正中来——净裸裸赤洒洒面目堂堂尽天尽地独尊无二；兼中至——宛如寰中天子不借禹汤尧舜令眼见耳闻终不借他力；兼中到——不是心不是境不是事不是理从来离名状天真忘性相。五位各有侧重，须回互体会。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-840",
+    "question": "曹山语录适合什么人读？初学者应该如何使用此书？",
+    "answer": "曹山语录适合对曹洞宗有兴趣的学人，尤其是想深入了解五位君臣、回互之旨的修行者。对初学者，建议从“五位君臣旨诀”读起，理解正偏五位的基本框架；再读“三等堕”了解沙门修行的三种方式；最后读“异类中行”了解菩萨入世度生之行。语录中的机缘问答如“不名本寂”“填沟塞壑”“死猫儿头最贵”等，可作为参究的话头。",
+    "relatedBooks": ["caoshanyulu"]
+  },
+  {
+    "id": "faq-841",
+    "question": "“白云万里”是什么意思？法演为什么反复说这句话？",
+    "answer": "“白云万里”是法演勘验学人的最高标尺。无论说佛说法、拀槌竖拉，还是德山棒临济喝，法演都说“白云万里”——意思是还隔得很远，还没到家。真正的禅，不在任何形式和手段中，即使是佛法、棒喝这样的禅宗传统手段，也都隔了万里。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-842",
+    "question": "法演为什么要提倡赵州“狗子无佛性”话头？",
+    "answer": "法演说“我平时只举一个无字就完了，你们若能透得这一个无字，天下人都奈何不了你”。他将“无”字话头提升为参禅核心，这是后世看话禅的先声。学人参究“无”字，不是理解为没有，而是透过这个话头打破一切知见执着。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-843",
+    "question": "“一口吸尽西江水”是什么意思？",
+    "answer": "庵居士问马大师“不与万法为伴是什么人”，马大师答“等你一口吸尽西江水我再向你说”。法演说：一口吸尽西江水，洛阳牡丹新吰蕊，簹土飔尘勿处寻，抬头撞著自家底。意思是这个境界不是向外寻来的，而是自家本有的，簹土扬尘到处找，却不知抬头就撞见自家的宝贝。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-844",
+    "question": "“驱耕夫之牛夺饥人之食”怎么理解？",
+    "answer": "法演说驱耕夫之牛令他苗稽滋盛，夺饥人之食令他永绝饥虚。夺走农夫的牛，农夫不能耕田，反而让庄稽自生自长；抢掉饥人的饭，饥人无食可吃，反而永远不再饥饿。这是禅宗的大死大活——先夺去一切依靠，逼你绝处逊生，才能真正自在。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-845",
+    "question": "法演说“透祖师关”是什么意思？",
+    "answer": "法演说“须是透祖师关始得”，意思是要想领会祖师的话，必须透过“祖师关”——即言语思量的极限处。透不过祖师关，连正眼看都看不了。六祖说“我不会佛法”“我空手去空手回”，透不过祖师关，这些话都听不懂。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-846",
+    "question": "法演对赵州“狗子无佛性”的颂词“露刃剑”是什么意思？",
+    "answer": "法演颂道：赵州露刃剑，寒霜光焰焰。更拟问如何，分身作两段。意思是赵州的“无”字就像露出刃口的剑，寒光焰焰，无块可遮。如果还要追问怎么样，就把自己分身作两段。这是法演对话头禅的极高评价。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-847",
+    "question": "法演评价达磨得皮肉骨髓公案说“各人好与三十棒”是什么意思？",
+    "answer": "达磨勘验四弟子，尼总持得皮，道育得肉，二祖得髓。法演评说当时若见他三人恣么道，各人好与三十棒。自己也合吃二十九棒，留一棒与学人。意思是真正的禅，连得髓也不能执，法演的峻烈在于打破一切层次。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-848",
+    "question": "法演说“归堂吃茶”是什么意思？",
+    "answer": "法演上堂讲了闲忙语默互为表里后，说“归堂吃茶”。意思是别想太多，回去吃茶吧。禅就在日常生活中，不在高深的理论里。这与赵州“吃茶去”一脉相承，体现了平常心是道的禅风。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-849",
+    "question": "法演举云门“糊饼”公案后说“驴屎似马粪”是什么意思？",
+    "answer": "云门答“糊饼”已是高手，法演更以“驴屎似马粪”“破草鞋”“灵龟曳尾”扫除一切知见。意思是超佛越祖之谈不在高深的话语，而在最平常、最不起眼的事物中。法演的转语比云门更徹底。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-850",
+    "question": "法演说“佛祖生冤家，悟道染泥土”是什么意思？",
+    "answer": "意思是佛祖反而是冤家，悟道反而染上了泥土。真正无为无事的人，对声色如同聋盲。法演进一步说“恣么也不得，不恣么也不得，恣么不恣么总不得”，怎么说都不对，都是在鬼窟里作活计。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-851",
+    "question": "法演说“第一义”的重要性是什么？",
+    "answer": "法演说三世诸佛若无第一义将什么化度有情，西天四十七唐土二三乃至天下老和尚若无第一义将什么建立宗风，就连当今圣帝若无第一义将什么统御天下。但后又说“也须各各自悟始得”——第一义必须自己悟得，不可代替。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-852",
+    "question": "法演的“白云一滴水”公案怎么理解？",
+    "answer": "僧问什么是白云的一滴水，法演答打碛打矨，僧又问喝了怎么样，法演答教你无著面处。法演以最朴实的劳作比喻禅法，又以无处著面表示禅的不可把抓。禅就在日常生活中，但不可执着。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-853",
+    "question": "法演评巴陵“鸡寒上树鸭寒下水”只道得一半，自己补的“掎水月在手，弄花香满衣”是什么意思？",
+    "answer": "巴陵说祖意教意是同是别，鸡寒上树鸭寒下水——各有各的去处。法演评他只道得一半，补上掎水月在手弄花香满衣——意谓祖意教意本不可分，同个不二，就像掎水月在手弄花香满衣一样自然。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-854",
+    "question": "法演说“难难几何般，易易没巴鼻”是什么意思？",
+    "answer": "禅说难也有几种难，说易也没什么把鼻。好好催人老是认真用功，默默从此得是静中得力。过了难难易易好好默默这四重关，方见大道。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-855",
+    "question": "法演在黄梅开堂时说“三处住持只这滋味”是什么意思？",
+    "answer": "法演在四面山、太平、白云海会、黄梅东山四处住持，说只这滋味——就是这个味道，到处都一样。佛法不因场合不同而改变，真正的禅就是那个味道。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-856",
+    "question": "法演自述得皮肉骨髓的参学历程是怎么回事？",
+    "answer": "法演说十五年行脚，初参过和尚得其毛，次于四海参见尊宿得其皮，又到浮山垍鉴老处得其骨，后在白云端和尚处得其髓，方敢承受与人为师。这是禅宗传承的缩影，层层递进，不可跳级。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-857",
+    "question": "法演“悟了同未悟”这句话怎么理解？",
+    "answer": "法演说悟了同未悟，归家寻旧路。一字是一字，一句是一句。自小不脱空，两岁学移步。湛水生莲花，一年生一度。意思是悟了之后就像没悟一样，回到原点，踏踏实实，不脱空造作，就像莲花每年自然开放一次。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-858",
+    "question": "法演的偶作“多时欲写天边雁，毛色观来苦未全”是什么意思？",
+    "answer": "禅就像天边的大雁，不必看毛色，只须听其叫声便知节令。养成了飞去的能力，什么都不难。这是法演对禅者的励勉——不要在外表上用功，而要养成真实的能力。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-859",
+    "question": "法演逈蜀僧的偶说“水在江湖月在天”是什么意思？",
+    "answer": "法演逈蜀僧回四川，说如果有人问西来意是什么，就告诉他水在江湖里月亮在天上。这是法演对西来意最简洁的回答——万法本自自然，不必向外寻求。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-860",
+    "question": "法演说“从门入者不是家珍”是什么意思？",
+    "answer": "法演在白云海会上堂时说从门入者不是家珍。意思是从外面学来的知识、理解、理论，都不是自己的东西。真正的禅必须是自己亲证的，就像家里的珍宝，不是从别人那里拿来的。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-861",
+    "question": "法演举洞山“纸捽无油”公案后说“也较洞山三千里”是什么意思？",
+    "answer": "洞山说纸捽无油，法演补了无油不点灯，虽如此仍隔三千里。但法演又说黑地里撞见露柱也能悟去，意谓禅机就在普通生活中，不必向高处寻。",
+    "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-862",
+    "question": "法演说“祖师遗下一只履，千古万古播人耳”是什么意思？",
+    "answer": "法演说祖师留下的鞋子，千古万古传颂，但你空自肩担跣足行，何曾踏到自家的宝贝呢？意思是禅不在外面的传承，而在自家本有。别只顾着祖师留下的鞋子，而忘了自己的脚。",
+    "relatedBooks": ["fayanyulu"]
   }
+
 ];
 
