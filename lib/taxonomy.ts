@@ -55,22 +55,54 @@ export interface KoanItem {
 
 export const ZEN_PERSONS: PersonItem[] = [
   {
-    "id": "longshu",
-    "name": "龙树菩萨",
-    "title": "中观学派创始人",
-    "era": "约2-3世纪",
-    "lifeStory": "龙树菩萨（Nāgārjuna），印度大乘佛教中观学派创始人，约生于2-3世纪。出身南印度婆罗门家庭，幼年精通四吠陀，后因厌世出家学佛，遍学三藏，尤精般若经。据传曾入龙宫取得《华严经》等大乘经典，被尊为“千部论主”。主要著作有《中论》《大智度论》《十二门论》等，以“八不中道”为核心，破斥一切边见，显示缘起性空的中道实相，为大乘佛教奠定理论基础。在中国被尊为八宗共祖。",
-    "teachings": "龙树菩萨的核心思想是“八不中道”：不生不灭、不常不断、不一不异、不来不出。通过严密的逻辑推理，破斥一切边见执着，显示缘起性空的中道实相。提出“二谛”理论：世俗谛与第一义谛，二谛不相离。运用“四句”方法破斥有、无、亦有亦无、非有非无四种边见。采用“破而不立”的方法，不提出自己的主张，只破斥对方观点，使其自悟其非。",
+    "id": "jiu-mo-luo-shi",
+    "name": "鸠摩罗什",
+    "title": "译经大师",
+    "era": "344-413",
+    "lifeStory": "鸠摩罗什（Kumārajīva，344-413），龟兹国人，中国佛教四大译经家之一。七岁随母出家，遍学大小乘。后秦弘始三年（401）入长安，受姚兴礼遇，组织译场，译出《中论》《百论》《十二门论》《大智度论》《法华经》《金刚经》《阿弥陀经》等七十四部三百八十四卷。其译文流畅优美，义理准确，对中观思想在中国的传播奠定决定性基础。",
+    "teachings": "鸠摩罗什以译经为毕生事业，将龙树中观学派的根本论典系统译介到中国。其翻译的“三论”（《中论》《百论》《十二门论》）成为后世三论宗的根本经典。罗什的翻译风格既忠实原文又符合汉语习惯，被誉为“意译”典范。",
     "quotes": [
-      "不生亦不灭，不常亦不断，不一亦不异，不来亦不出。",
-      "众因缘生法，我说即是空，亦为是假名，亦是中道义。",
-      "以有空义故，一切法得成；若无空义者，一切则不成。",
-      "未曾有一法，不从因缘生；是故一切法，无不是空者。"
+      "译经事业，利益众生。",
+      "若所传无误，焚身之后，舌根不烂。"
     ],
     "classics": ["zhonglun"],
-    "relatedConcepts": ["zhongdao", "babu", "yuanqi", "xingkong", "erdi", "siju", "zhongguan"],
+    "relatedConcepts": ["zhongguan", "zhongdao"],
     "relatedMethods": [],
-    "relatedPersons": [],
+    "relatedPersons": ["longshu", "seng-rui"],
+    "relatedBooks": ["zhonglun"]
+  },
+  {
+    "id": "ti-po",
+    "name": "提婆",
+    "title": "中观学派继承者",
+    "era": "约3世纪",
+    "lifeStory": "提婆（Āryadeva，约3世纪），南印度人，龙树菩萨弟子。继承并发展龙树的中观思想，著有《百论》《四百论》等。提婆以破斥外道著称，与龙树并称“龙提”，共为中观学派奠基。其思想对后世中观学派影响深远。",
+    "teachings": "提婆继承龙树的“破而不立”方法，以破斥外道邪见为己任。《百论》破斥数论、胜论等外道学说，《四百论》阐明中观要义。提婆的思想更加犀利，破斥更加彻底，被称为“破邪显正”的典范。",
+    "quotes": [
+      "破邪即是显正，无邪可破，无正可显。",
+      "诸法无自性，因缘和合而有。"
+    ],
+    "classics": ["zhonglun"],
+    "relatedConcepts": ["zhongguan", "zhongdao"],
+    "relatedMethods": [],
+    "relatedPersons": ["longshu"],
+    "relatedBooks": ["zhonglun"]
+  },
+  {
+    "id": "seng-rui",
+    "name": "僧叡",
+    "title": "译经助手",
+    "era": "约4-5世纪",
+    "lifeStory": "僧叡（约4-5世纪），鸠摩罗什弟子，参与译经工作。为《中论》作序，阐述中观思想的要旨。僧叡的序文是理解《中论》的重要文献，对中观思想在中国的传播有重要贡献。",
+    "teachings": "僧叡在《中论序》中阐述：龙树菩萨以“八不中道”破斥一切边见，显示缘起性空的中道实相。序文指出《中论》的翻译对于纠正当时般若学的偏颇具有重要意义。",
+    "quotes": [
+      "龙树大士，析之以中道，使惑趣之徒望玄指而一变。",
+      "括之以即化，令玄悟之宾丧咨询于朝彻。"
+    ],
+    "classics": ["zhonglun"],
+    "relatedConcepts": ["zhongguan", "zhongdao"],
+    "relatedMethods": [],
+    "relatedPersons": ["jiu-mo-luo-shi", "longshu"],
     "relatedBooks": ["zhonglun"]
   },
   {
@@ -2614,76 +2646,6 @@ export const ZEN_PERSONS: PersonItem[] = [
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
-  {
-    "id": "zhongdao",
-    "title": "中道",
-    "category": "concept",
-    "summary": "不落空有二边的正见。龙树菩萨以“八不”揭示中道实相：不生不灭、不常不断、不一不异、不来不出。超越一切二元对立，即是中道。中道不是折中，而是超越对立。",
-    "classicRef": "《中论》：不生亦不灭，不常亦不断，不一亦不异，不来亦不出。",
-    "relatedConcepts": ["babu", "yuanqi", "xingkong"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "babu",
-    "title": "八不",
-    "category": "concept",
-    "summary": "龙树菩萨《中论》开篇揭示的中道实相：不生不灭、不常不断、不一不异、不来不出。涵盖时间（生灭、常断）、空间（一异）、运动（来出）三个维度，破斥人们对现象界的一切执着。",
-    "classicRef": "《中论》：不生亦不灭，不常亦不断，不一亦不异，不来亦不出。",
-    "relatedConcepts": ["zhongdao", "yuanqi"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "yuanqi",
-    "title": "缘起",
-    "category": "concept",
-    "summary": "因缘和合而生起。一切法皆因缘和合而生，无有独立自存的自性。缘起是佛教对事物存在方式的根本解释。正因为缘起，所以是空；正因为空，缘起才能成立。",
-    "classicRef": "《中论》：众因缘生法，我说即是空。",
-    "relatedConcepts": ["xingkong", "zhongdao"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "xingkong",
-    "title": "性空",
-    "category": "concept",
-    "summary": "一切法无有自性，本质为空。空非虚无，而是指事物的存在方式是依他而起、无有自性。正因为空，缘起才能成立；正因为缘起，所以是空。空与缘起，一体两面。",
-    "classicRef": "《中论》：以有空义故，一切法得成。",
-    "relatedConcepts": ["yuanqi", "zhongdao"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "erdi",
-    "title": "二谛",
-    "category": "concept",
-    "summary": "世俗谛与第一义谛。世俗谛是世间约定的真理，如因果、善恶、生死等；第一义谛是超越言说的究竟真理，即诸法实相。二谛不相离：不离世俗谛而说第一义谛，不离第一义谛而说世俗谛。",
-    "classicRef": "《中论》：诸佛依二谛，为众生说法。",
-    "relatedConcepts": ["zhongdao"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "siju",
-    "title": "四句",
-    "category": "concept",
-    "summary": "有、无、亦有亦无、非有非无。龙树菩萨运用四句方法破斥一切执着，指出这四种观点都是边见，都不能如实认识事物的真相。真正的中道，是超越四句、离一切执着的。",
-    "classicRef": "《中论》：一切实非实，亦实亦非实，非实非非实，是名诸佛法。",
-    "relatedConcepts": ["zhongdao"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
-  {
-    "id": "zhongguan",
-    "title": "中观",
-    "category": "concept",
-    "summary": "龙树菩萨创立的大乘佛教学派，以《中论》为根本论典。中观思想的核心是缘起性空、八不中道。采用“破而不立”的方法，不提出自己的主张，只破斥对方观点，使其自悟其非。",
-    "classicRef": "《中论》：众因缘生法，我说即是空，亦为是假名，亦是中道义。",
-    "relatedConcepts": ["zhongdao", "babu", "yuanqi", "xingkong"],
-    "relatedPersons": ["longshu"],
-    "relatedBooks": ["zhonglun"]
-  },
   {
     "id": "buddha-nature",
     "title": "佛性",
