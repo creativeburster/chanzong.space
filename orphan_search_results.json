@@ -1,0 +1,1359 @@
+[
+  {
+    "id": "wuchang",
+    "name": "无常",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "xiuxinjue",
+        "book_title": "高丽国普照禅师修心诀",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "无常"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "matched_term": "无常"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "kongxing",
+    "name": "空性",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "juelin",
+        "book_title": "觉林菩萨偈",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "zhangzhi",
+        "book_title": "杖指教授",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "sixingguan",
+        "book_title": "菩提达摩大师入道四行观",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "xinxinming",
+        "book_title": "信心铭",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "fangcunlun",
+        "book_title": "方寸论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "xiuxinjue",
+        "book_title": "高丽国普照禅师修心诀",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zhenxin",
+        "book_title": "高丽国普照禅师真心直说",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "xinjing",
+        "book_title": "般若波罗蜜多心经",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "空性"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "matched_term": "空"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "matched_term": "空"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "baoshen",
+    "name": "报身",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "matched_term": "报身"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "报身"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "huashen",
+    "name": "化身",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "化身"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "化身"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wuzhiliang",
+    "name": "无智亦无得",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "xinjing",
+        "book_title": "般若波罗蜜多心经",
+        "matched_term": "无智亦无得"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wusuode",
+    "name": "无所得",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "xinjing",
+        "book_title": "般若波罗蜜多心经",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "无所得"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "matched_term": "无所得"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "zhengliang",
+    "name": "证量",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "证量"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "xianliang",
+    "name": "现量",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "xinjing",
+        "book_title": "般若波罗蜜多心经",
+        "matched_term": "现量"
+      },
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "matched_term": "现量"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "现量"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "biliang",
+    "name": "比量",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "matched_term": "比量"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "fengxian",
+    "name": "风幡",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "风幡"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "matched_term": "风幡"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "风幡"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wujian",
+    "name": "无间",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "linji",
+        "book_title": "镇州临济慧照禅师语录",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "baojingsanmei",
+        "book_title": "宝镜三昧歌",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "无间"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "matched_term": "无间"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "jiaocan",
+    "name": "交参",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "matched_term": "交参"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "交参"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "huangji",
+    "name": "还源",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "还源"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "matched_term": "还源"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "还源"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "还源"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "zhengyin",
+    "name": "正因",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "正因"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "正因"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "liaoyin",
+    "name": "了因",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "了因"
+      },
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "matched_term": "了因"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "yuan-yin",
+    "name": "缘因",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "缘因"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "sande",
+    "name": "三德",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "三德"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "matched_term": "三德"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "eryi",
+    "name": "二义",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "二义"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "二义"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "二义"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "shidi",
+    "name": "十地",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "十地"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "matched_term": "十地"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wuxingguan",
+    "name": "五行观",
+    "type": "concept",
+    "matches": [],
+    "found": false
+  },
+  {
+    "id": "zhenkong-miaoyou",
+    "name": "真空妙有",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "matched_term": "真空妙有"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wuzhu-ben",
+    "name": "无住为本",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "无住为本"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "matched_term": "无住为本"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无住为本"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "sammiao-wu",
+    "name": "三妙悟",
+    "type": "concept",
+    "matches": [],
+    "found": false
+  },
+  {
+    "id": "yixinyuan",
+    "name": "一心圆",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "matched_term": "一心圆"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "benjue",
+    "name": "本觉",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "matched_term": "本觉"
+      },
+      {
+        "book_id": "zhangzhi",
+        "book_title": "杖指教授",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "matched_term": "本觉"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "matched_term": "觉性"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "本觉"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "matched_term": "本觉"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "本觉"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "本觉"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "shijue",
+    "name": "始觉",
+    "type": "concept",
+    "matches": [],
+    "found": false
+  },
+  {
+    "id": "bujue",
+    "name": "不觉",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "xixulun",
+        "book_title": "菩提达摩大师息许论",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "matched_term": "不觉"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "matched_term": "不觉"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "ranxiu",
+    "name": "染心",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "染心"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "染心"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "染心"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "jingxin",
+    "name": "净心",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "净心"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "matched_term": "净心"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "wuhou",
+    "name": "无后",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "无后"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无后"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "matched_term": "无后"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "dangnian",
+    "name": "当念",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "matched_term": "当念"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "matched_term": "当念"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "当念"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "当念"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "yiguan",
+    "name": "一贯",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "一贯"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "matched_term": "一贯"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "一贯"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "zhengming",
+    "name": "正命",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "正命"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "matched_term": "正命"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "matched_term": "正命"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "zhengye",
+    "name": "正业",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "正业"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "zhengyu",
+    "name": "正语",
+    "type": "concept",
+    "matches": [
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "正语"
+      }
+    ],
+    "found": true
+  },
+  {
+    "id": "xi-zheng-fa",
+    "name": "息诤法门",
+    "type": "method",
+    "matches": [],
+    "found": false
+  },
+  {
+    "id": "wuxiang-fa",
+    "name": "无相法门",
+    "type": "method",
+    "matches": [
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "matched_term": "无相法门"
+      }
+    ],
+    "found": true
+  }
+]

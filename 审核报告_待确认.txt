@@ -1,0 +1,2014 @@
+====================================================================================================
+瞎关联审核报告 - 待确认修复
+====================================================================================================
+
+说明：以下列出的关联疑似错误，请审核确认后修复
+修复方式：从条目的 relatedBooks 中移除该经典ID，不删除条目本身
+
+【七佛传法偈】(qifo)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: jiaye
+  名称: 摩诃迦叶尊者
+  问题: 经典中未出现"摩诃迦叶尊者"
+  操作: 从 relatedBooks 中移除 "qifo"
+
+  类型: 概念
+  ID: xinxin-xiangyin
+  名称: 心心相印
+  问题: 经典中未出现"心心相印"相关内容
+  操作: 从 relatedBooks 中移除 "qifo"
+
+  类型: 概念
+  ID: yihua-wuye
+  名称: 一花开五叶
+  问题: 经典中未出现"一花开五叶"相关内容
+  操作: 从 relatedBooks 中移除 "qifo"
+
+【觉林菩萨偈】(juelin)
+----------------------------------------------------------------------------------------------------
+  类型: 法门
+  ID: yixing-sanmei-practice
+  名称: 一行三昧实修法
+  问题: 经典中未教导"一行三昧实修法"
+  操作: 从 relatedBooks 中移除 "juelin"
+
+【文殊师利所说摩诃般若波罗蜜经】(wenshu)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: wenshu-yuanjue
+  名称: 文殊师利菩萨
+  问题: 经典中未出现"文殊师利菩萨"
+  操作: 从 relatedBooks 中移除 "wenshu"
+
+  类型: 法门
+  ID: yixing-sanmei-practice
+  名称: 一行三昧实修法
+  问题: 经典中未教导"一行三昧实修法"
+  操作: 从 relatedBooks 中移除 "wenshu"
+
+【杖指教授】(zhangzhi)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: wu-ran-jue-xing
+  名称: 无染觉性
+  问题: 经典中未出现"无染觉性"相关内容
+  操作: 从 relatedBooks 中移除 "zhangzhi"
+
+  类型: 法门
+  ID: banghe
+  名称: 棒喝
+  问题: 经典中未教导"棒喝"
+  操作: 从 relatedBooks 中移除 "zhangzhi"
+
+  类型: 法门
+  ID: guanxin-fa
+  名称: 观心法门
+  问题: 经典中未教导"观心法门"
+  操作: 从 relatedBooks 中移除 "zhangzhi"
+
+【菩提达摩大师血脉论】(xuemaicong)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: direct-pointing
+  名称: 直指人心
+  问题: 经典中未出现"直指人心"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 概念
+  ID: zixin-xianliang
+  名称: 自心现量
+  问题: 经典中未出现"自心现量"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 概念
+  ID: xinxin-xiangyin
+  名称: 心心相印
+  问题: 经典中未出现"心心相印"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 概念
+  ID: yihua-wuye
+  名称: 一花开五叶
+  问题: 经典中未出现"一花开五叶"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 概念
+  ID: xitian-ershiba-zu
+  名称: 西天二十八祖
+  问题: 经典中未出现"西天二十八祖"相关内容
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 法门
+  ID: nianfo-chan
+  名称: 念佛禅
+  问题: 经典中未教导"念佛禅"
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 法门
+  ID: four-practices
+  名称: 二入四行观
+  问题: 经典中未教导"二入四行观"
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+  类型: 法门
+  ID: shouben-zhenxin
+  名称: 守本真心
+  问题: 经典中未教导"守本真心"
+  操作: 从 relatedBooks 中移除 "xuemaicong"
+
+【菩提达摩大师悟性论】(wuxinglun)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "wuxinglun"
+
+  类型: 法门
+  ID: nianfo-chan
+  名称: 念佛禅
+  问题: 经典中未教导"念佛禅"
+  操作: 从 relatedBooks 中移除 "wuxinglun"
+
+  类型: 法门
+  ID: shouben-zhenxin
+  名称: 守本真心
+  问题: 经典中未教导"守本真心"
+  操作: 从 relatedBooks 中移除 "wuxinglun"
+
+【菩提达摩大师破相论】(poxianglun)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "poxianglun"
+
+  类型: 法门
+  ID: nianfo-chan
+  名称: 念佛禅
+  问题: 经典中未教导"念佛禅"
+  操作: 从 relatedBooks 中移除 "poxianglun"
+
+  类型: 法门
+  ID: po-xiang-fa
+  名称: 破相法门
+  问题: 经典中未教导"破相法门"
+  操作: 从 relatedBooks 中移除 "poxianglun"
+
+【菩提达摩大师无心论】(wuxinlun)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "wuxinlun"
+
+【菩提达摩大师息许论】(xixulun)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "xixulun"
+
+  类型: 法门
+  ID: xi-zheng-fa
+  名称: 息诤法门
+  问题: 经典中未教导"息诤法门"
+  操作: 从 relatedBooks 中移除 "xixulun"
+
+【菩提达摩大师入道四行观】(sixingguan)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: zixin-xianliang
+  名称: 自心现量
+  问题: 经典中未出现"自心现量"相关内容
+  操作: 从 relatedBooks 中移除 "sixingguan"
+
+  类型: 概念
+  ID: sanlun-tikong
+  名称: 三轮体空
+  问题: 经典中未出现"三轮体空"相关内容
+  操作: 从 relatedBooks 中移除 "sixingguan"
+
+  类型: 概念
+  ID: wei-xin-zao
+  名称: 一切唯心造
+  问题: 经典中未出现"一切唯心造"相关内容
+  操作: 从 relatedBooks 中移除 "sixingguan"
+
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "sixingguan"
+
+  类型: 法门
+  ID: four-practices
+  名称: 二入四行观
+  问题: 经典中未教导"二入四行观"
+  操作: 从 relatedBooks 中移除 "sixingguan"
+
+【信心铭】(xinxinming)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: instant-enlightenment
+  名称: 顿悟
+  问题: 经典中未出现"顿悟"相关内容
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 概念
+  ID: yinian-wusheng
+  名称: 一念无生
+  问题: 经典中未出现"一念无生"相关内容
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 法门
+  ID: wumen
+  名称: 无门关
+  问题: 经典中未教导"无门关"
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 法门
+  ID: kanhuatou
+  名称: 看话头
+  问题: 经典中未教导"看话头"
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 法门
+  ID: zhiguan-dazuo
+  名称: 只管打坐
+  问题: 经典中未教导"只管打坐"
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+  类型: 法门
+  ID: canjiu-fa
+  名称: 参究法门
+  问题: 经典中未教导"参究法门"
+  操作: 从 relatedBooks 中移除 "xinxinming"
+
+【方寸论】(fangcunlun)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: weishi-yixin
+  名称: 唯是一心
+  问题: 经典中未出现"唯是一心"相关内容
+  操作: 从 relatedBooks 中移除 "fangcunlun"
+
+  类型: 法门
+  ID: shouben-zhenxin
+  名称: 守本真心
+  问题: 经典中未教导"守本真心"
+  操作: 从 relatedBooks 中移除 "fangcunlun"
+
+  类型: 法门
+  ID: zhiguan-dazuo
+  名称: 只管打坐
+  问题: 经典中未教导"只管打坐"
+  操作: 从 relatedBooks 中移除 "fangcunlun"
+
+【入道安心要方便法门】(anxin)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: huike
+  名称: 二祖慧可
+  问题: 经典中未出现"二祖慧可"
+  操作: 从 relatedBooks 中移除 "anxin"
+
+  类型: 法门
+  ID: nianfo-chan
+  名称: 念佛禅
+  问题: 经典中未教导"念佛禅"
+  操作: 从 relatedBooks 中移除 "anxin"
+
+  类型: 法门
+  ID: yixing-sanmei-practice
+  名称: 一行三昧实修法
+  问题: 经典中未教导"一行三昧实修法"
+  操作: 从 relatedBooks 中移除 "anxin"
+
+【六祖坛经】(tanjing)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: huairang
+  名称: 南岳怀让
+  问题: 经典中未出现"南岳怀让"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 人物
+  ID: xingsi
+  名称: 青原行思
+  问题: 经典中未出现"青原行思"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 人物
+  ID: shitou
+  名称: 石头希迁
+  问题: 经典中未出现"石头希迁"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 人物
+  ID: ming-bodhisattva
+  名称: 马鸣菩萨
+  问题: 经典中未出现"马鸣菩萨"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 人物
+  ID: dajiaye
+  名称: 大迦叶
+  问题: 经典中未出现"大迦叶"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 人物
+  ID: nanyang-huizhong
+  名称: 南阳慧忠
+  问题: 经典中未出现"南阳慧忠"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: ying-wu-suo-zhu
+  名称: 应无所住而生其心
+  问题: 经典中未出现"应无所住而生其心"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: se-ji-shi-kong
+  名称: 色即是空，空即是色
+  问题: 经典中未出现"色即是空，空即是色"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: zhi-huan-ji-li
+  名称: 知幻即离，离幻即觉
+  问题: 经典中未出现"知幻即离，离幻即觉"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: xin-jing-ji-fo-tu-jing
+  名称: 心净则佛土净
+  问题: 经典中未出现"心净则佛土净"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wei-xin-zao
+  名称: 一切唯心造
+  问题: 经典中未出现"一切唯心造"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wu-ran-jue-xing
+  名称: 无染觉性
+  问题: 经典中未出现"无染觉性"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: tathagatagarbha
+  名称: 如来藏
+  问题: 经典中未出现"如来藏"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: niepan
+  名称: 涅槃
+  问题: 经典中未出现"涅槃"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: dunwu-jianxiu
+  名称: 顿悟渐修
+  问题: 经典中未出现"顿悟渐修"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: liudu
+  名称: 六度
+  问题: 经典中未出现"六度"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: ru-lai-zhi
+  名称: 如来智
+  问题: 经典中未出现"如来智"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: yinguo
+  名称: 因果
+  问题: 经典中未出现"因果"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: alaiye-shi
+  名称: 阿赖耶识
+  问题: 经典中未出现"阿赖耶识"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: niepan-miaoxin
+  名称: 涅槃妙心
+  问题: 经典中未出现"涅槃妙心"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: shixiang
+  名称: 实相
+  问题: 经典中未出现"实相"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: foxing-changzhu
+  名称: 佛性常住
+  问题: 经典中未出现"佛性常住"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: xingju-shane
+  名称: 性具善恶
+  问题: 经典中未出现"性具善恶"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: zhuan-shi-cheng-zhi
+  名称: 转识成智
+  问题: 经典中未出现"转识成智"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wenzi-zhang
+  名称: 文字障
+  问题: 经典中未出现"文字障"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: sanlun-tikong
+  名称: 三轮体空
+  问题: 经典中未出现"三轮体空"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: weixin-jingtu
+  名称: 唯心净土
+  问题: 经典中未出现"唯心净土"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: xin-fo-zhongsheng
+  名称: 心佛众生三无差别
+  问题: 经典中未出现"心佛众生三无差别"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: shengsi-jielun
+  名称: 生死即涅槃
+  问题: 经典中未出现"生死即涅槃"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: jianjiao
+  名称: 渐教
+  问题: 经典中未出现"渐教"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: sanfa-yin
+  名称: 三法印
+  问题: 经典中未出现"三法印"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: si-yi
+  名称: 四依
+  问题: 经典中未出现"四依"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: er-di
+  名称: 二谛
+  问题: 经典中未出现"二谛"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: ba-zhengdao
+  名称: 八正道
+  问题: 经典中未出现"八正道"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: shi-er-yinyuan
+  名称: 十二因缘
+  问题: 经典中未出现"十二因缘"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: si-di
+  名称: 四谛
+  问题: 经典中未出现"四谛"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: jielv
+  名称: 戒律
+  问题: 经典中未出现"戒律"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wenzi-bore
+  名称: 文字般若
+  问题: 经典中未出现"文字般若"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: guanzhao-bore
+  名称: 观照般若
+  问题: 经典中未出现"观照般若"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: shixiang-bore
+  名称: 实相般若
+  问题: 经典中未出现"实相般若"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: li-ju-shi-zao
+  名称: 理具事造
+  问题: 经典中未出现"理具事造"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: jiaoli-guanxing
+  名称: 教理观行
+  问题: 经典中未出现"教理观行"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: benjue-shijue
+  名称: 本觉始觉
+  问题: 经典中未出现"本觉始觉"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: zhengjue
+  名称: 正觉
+  问题: 经典中未出现"正觉"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wuxing
+  名称: 无行
+  问题: 经典中未出现"无行"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: fanyin
+  名称: 法音
+  问题: 经典中未出现"法音"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 概念
+  ID: wuzhu-benti
+  名称: 无住本
+  问题: 经典中未出现"无住本"相关内容
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: yixing-sanmei-practice
+  名称: 一行三昧实修法
+  问题: 经典中未教导"一行三昧实修法"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: baoren
+  名称: 保任
+  问题: 经典中未教导"保任"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: chanjing-shuangxiu
+  名称: 禅净双修
+  问题: 经典中未教导"禅净双修"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: wunian-fa
+  名称: 无念法门
+  问题: 经典中未教导"无念法门"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: wuxiang-fa
+  名称: 无相法门
+  问题: 经典中未教导"无相法门"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+  类型: 法门
+  ID: wuzhu-fa
+  名称: 无住法门
+  问题: 经典中未教导"无住法门"
+  操作: 从 relatedBooks 中移除 "tanjing"
+
+【永嘉证道歌】(zhengdaoge)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: affliction-bodhi
+  名称: 烦恼即菩提
+  问题: 经典中未出现"烦恼即菩提"相关内容
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+  类型: 概念
+  ID: chanjing-shuangxiu
+  名称: 禅净双修
+  问题: 经典中未出现"禅净双修"相关内容
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+  类型: 法门
+  ID: nianfo-chan
+  名称: 念佛禅
+  问题: 经典中未教导"念佛禅"
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+  类型: 法门
+  ID: baoren
+  名称: 保任
+  问题: 经典中未教导"保任"
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+  类型: 法门
+  ID: canjiu-fa
+  名称: 参究法门
+  问题: 经典中未教导"参究法门"
+  操作: 从 relatedBooks 中移除 "zhengdaoge"
+
+【马祖道一禅师语录】(mazu)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: huairang
+  名称: 南岳怀让
+  问题: 经典中未出现"南岳怀让"
+  操作: 从 relatedBooks 中移除 "mazu"
+
+  类型: 人物
+  ID: nanquan-puyuan
+  名称: 南泉普愿
+  问题: 经典中未出现"南泉普愿"
+  操作: 从 relatedBooks 中移除 "mazu"
+
+  类型: 人物
+  ID: pang-yun
+  名称: 庞蕴
+  问题: 经典中未出现"庞蕴"
+  操作: 从 relatedBooks 中移除 "mazu"
+
+  类型: 概念
+  ID: all-returns-to-one
+  名称: 万法归一
+  问题: 经典中未出现"万法归一"相关内容
+  操作: 从 relatedBooks 中移除 "mazu"
+
+  类型: 概念
+  ID: gewai-xuanji
+  名称: 格外玄机
+  问题: 经典中未出现"格外玄机"相关内容
+  操作: 从 relatedBooks 中移除 "mazu"
+
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "mazu"
+
+【百丈怀海禅师语录】(baizhang)
+----------------------------------------------------------------------------------------------------
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "baizhang"
+
+  类型: 法门
+  ID: jiefeng
+  名称: 机锋
+  问题: 经典中未教导"机锋"
+  操作: 从 relatedBooks 中移除 "baizhang"
+
+【黄檗山断际禅师传心法要】(huangbo)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: mind-is-buddha
+  名称: 即心即佛
+  问题: 经典中未出现"即心即佛"相关内容
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 概念
+  ID: no-views
+  名称: 莫起诸见
+  问题: 经典中未出现"莫起诸见"相关内容
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 概念
+  ID: wu-wei-famen
+  名称: 无为法门
+  问题: 经典中未出现"无为法门"相关内容
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 法门
+  ID: banghe
+  名称: 棒喝
+  问题: 经典中未教导"棒喝"
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 法门
+  ID: jiefeng
+  名称: 机锋
+  问题: 经典中未教导"机锋"
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 法门
+  ID: kanhuatou
+  名称: 看话头
+  问题: 经典中未教导"看话头"
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "huangbo"
+
+【高丽国普照禅师修心诀】(xiuxinjue)
+----------------------------------------------------------------------------------------------------
+  类型: 法门
+  ID: kanhuatou
+  名称: 看话头
+  问题: 经典中未教导"看话头"
+  操作: 从 relatedBooks 中移除 "xiuxinjue"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "xiuxinjue"
+
+  类型: 法门
+  ID: jingxin-fa
+  名称: 净心法门
+  问题: 经典中未教导"净心法门"
+  操作: 从 relatedBooks 中移除 "xiuxinjue"
+
+【镇州临济慧照禅师语录】(linji)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: ordinary-mind
+  名称: 平常心
+  问题: 经典中未出现"平常心"相关内容
+  操作: 从 relatedBooks 中移除 "linji"
+
+  类型: 概念
+  ID: gewai-xuanji
+  名称: 格外玄机
+  问题: 经典中未出现"格外玄机"相关内容
+  操作: 从 relatedBooks 中移除 "linji"
+
+  类型: 概念
+  ID: rulai-chan-zushi-chan
+  名称: 如来禅与祖师禅
+  问题: 经典中未出现"如来禅与祖师禅"相关内容
+  操作: 从 relatedBooks 中移除 "linji"
+
+【顿悟入道要门论】(dunwu)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: canjiu
+  名称: 参究
+  问题: 经典中未出现"参究"相关内容
+  操作: 从 relatedBooks 中移除 "dunwu"
+
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "dunwu"
+
+  类型: 法门
+  ID: jiefeng
+  名称: 机锋
+  问题: 经典中未教导"机锋"
+  操作: 从 relatedBooks 中移除 "dunwu"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "dunwu"
+
+  类型: 法门
+  ID: baoren
+  名称: 保任
+  问题: 经典中未教导"保任"
+  操作: 从 relatedBooks 中移除 "dunwu"
+
+【高丽国普照禅师真心直说】(zhenxin)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: kanhua-chan-concept
+  名称: 看话
+  问题: 经典中未出现"看话"相关内容
+  操作: 从 relatedBooks 中移除 "zhenxin"
+
+  类型: 法门
+  ID: wumen
+  名称: 无门关
+  问题: 经典中未教导"无门关"
+  操作: 从 relatedBooks 中移除 "zhenxin"
+
+  类型: 法门
+  ID: kanhuatou
+  名称: 看话头
+  问题: 经典中未教导"看话头"
+  操作: 从 relatedBooks 中移除 "zhenxin"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "zhenxin"
+
+  类型: 法门
+  ID: jingxin-fa
+  名称: 净心法门
+  问题: 经典中未教导"净心法门"
+  操作: 从 relatedBooks 中移除 "zhenxin"
+
+【傅大士心王铭】(xinwangming)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: chanjing-shuangxiu
+  名称: 禅净双修
+  问题: 经典中未出现"禅净双修"相关内容
+  操作: 从 relatedBooks 中移除 "xinwangming"
+
+【荷泽大师显宗记】(shenhui)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: beyond-words
+  名称: 不立文字
+  问题: 经典中未出现"不立文字"相关内容
+  操作: 从 relatedBooks 中移除 "shenhui"
+
+  类型: 概念
+  ID: yinian-wusheng
+  名称: 一念无生
+  问题: 经典中未出现"一念无生"相关内容
+  操作: 从 relatedBooks 中移除 "shenhui"
+
+  类型: 概念
+  ID: chanjing-shuangxiu
+  名称: 禅净双修
+  问题: 经典中未出现"禅净双修"相关内容
+  操作: 从 relatedBooks 中移除 "shenhui"
+
+  类型: 法门
+  ID: daily-zen
+  名称: 行住坐卧即禅
+  问题: 经典中未教导"行住坐卧即禅"
+  操作: 从 relatedBooks 中移除 "shenhui"
+
+  类型: 法门
+  ID: baoren
+  名称: 保任
+  问题: 经典中未教导"保任"
+  操作: 从 relatedBooks 中移除 "shenhui"
+
+【金刚般若波罗蜜经】(jingangjing)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: guanzizai
+  名称: 观自在菩萨
+  问题: 经典中未出现"观自在菩萨"
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 人物
+  ID: anan
+  名称: 阿难尊者
+  问题: 经典中未出现"阿难尊者"
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: si-xiang
+  名称: 破除四相
+  问题: 经典中未出现"破除四相"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: wu-gua-ai
+  名称: 心无挂碍
+  问题: 经典中未出现"心无挂碍"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: po-xiang
+  名称: 破相
+  问题: 经典中未出现"破相"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: liudu
+  名称: 六度
+  问题: 经典中未出现"六度"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: buyi-buyi
+  名称: 不一不异
+  问题: 经典中未出现"不一不异"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: sekong-buer
+  名称: 色空不二
+  问题: 经典中未出现"色空不二"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: sanlun-tikong
+  名称: 三轮体空
+  问题: 经典中未出现"三轮体空"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: bore-zhi
+  名称: 般若智
+  问题: 经典中未出现"般若智"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: guanzhao-bore
+  名称: 观照般若
+  问题: 经典中未出现"观照般若"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 概念
+  ID: shixiang-bore
+  名称: 实相般若
+  问题: 经典中未出现"实相般若"相关内容
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+  类型: 法门
+  ID: guan-zizai-banya-practice
+  名称: 观自在般若观照法门
+  问题: 经典中未教导"观自在般若观照法门"
+  操作: 从 relatedBooks 中移除 "jingangjing"
+
+【般若波罗蜜多心经】(xinjing)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: kumarajiva
+  名称: 鸠摩罗什
+  问题: 经典中未出现"鸠摩罗什"
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 人物
+  ID: nagarjuna
+  名称: 龙树菩萨
+  问题: 经典中未出现"龙树菩萨"
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 人物
+  ID: sheli-fu
+  名称: 舍利弗
+  问题: 经典中未出现"舍利弗"
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: zhongdao
+  名称: 中道
+  问题: 经典中未出现"中道"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: yuanqi
+  名称: 缘起
+  问题: 经典中未出现"缘起"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: wuwo
+  名称: 无我
+  问题: 经典中未出现"无我"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: wu-nian
+  名称: 无念
+  问题: 经典中未出现"无念"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: wu-xiang
+  名称: 无相
+  问题: 经典中未出现"无相"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: wu-zhu
+  名称: 无住
+  问题: 经典中未出现"无住"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: buyi-buyi
+  名称: 不一不异
+  问题: 经典中未出现"不一不异"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: jietuo
+  名称: 解脱
+  问题: 经典中未出现"解脱"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 概念
+  ID: sekong-buer
+  名称: 色空不二
+  问题: 经典中未出现"色空不二"相关内容
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 法门
+  ID: guan-zizai-banya-practice
+  名称: 观自在般若观照法门
+  问题: 经典中未教导"观自在般若观照法门"
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+  类型: 法门
+  ID: er-gen-yuan-tong-practice
+  名称: 观音耳根圆通反闻法门
+  问题: 经典中未教导"观音耳根圆通反闻法门"
+  操作: 从 relatedBooks 中移除 "xinjing"
+
+【大方广圆觉修多罗了义经】(yuanjuejing)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: si-bing
+  名称: 作止任灭四种修行病
+  问题: 经典中未出现"作止任灭四种修行病"相关内容
+  操作: 从 relatedBooks 中移除 "yuanjuejing"
+
+  类型: 法门
+  ID: yuanjue-sanzhong-jingguan
+  名称: 圆觉三种清净观门
+  问题: 经典中未教导"圆觉三种清净观门"
+  操作: 从 relatedBooks 中移除 "yuanjuejing"
+
+【禅林宝训 (全四卷)】(chanlinbaoxun)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: zhaozhou
+  名称: 赵州从谂
+  问题: 经典中未出现"赵州从谂"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: yuanwu-keqin
+  名称: 圆悟克勤
+  问题: 经典中未出现"圆悟克勤"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: yunmen
+  名称: 云门文偃
+  问题: 经典中未出现"云门文偃"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: xuefeng-yicun
+  名称: 雪峰义存
+  问题: 经典中未出现"雪峰义存"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: deshan-xuanjian
+  名称: 德山宣鉴
+  问题: 经典中未出现"德山宣鉴"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: yongming-yanshou
+  名称: 永明延寿
+  问题: 经典中未出现"永明延寿"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: fayan-wenyi
+  名称: 法眼文益
+  问题: 经典中未出现"法眼文益"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: tiantai-deshao
+  名称: 天台德韶
+  问题: 经典中未出现"天台德韶"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: longtan-chongxin
+  名称: 龙潭崇信
+  问题: 经典中未出现"龙潭崇信"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: xuansha-shibei
+  名称: 玄沙师备
+  问题: 经典中未出现"玄沙师备"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: luohan-guichen
+  名称: 罗汉桂琛
+  问题: 经典中未出现"罗汉桂琛"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: fenyang-shanzhao
+  名称: 汾阳善昭
+  问题: 经典中未出现"汾阳善昭"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: wuzu-fayan
+  名称: 五祖法演
+  问题: 经典中未出现"五祖法演"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: baiyun-shouduan
+  名称: 白云守端
+  问题: 经典中未出现"白云守端"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: wumen-huikai
+  名称: 无门慧开
+  问题: 经典中未出现"无门慧开"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: niutou-farong
+  名称: 牛头法融
+  问题: 经典中未出现"牛头法融"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: tianhuang-daowu
+  名称: 天皇道悟
+  问题: 经典中未出现"天皇道悟"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: danxia-tianran
+  名称: 丹霞天然
+  问题: 经典中未出现"丹霞天然"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: xiangyan-zhixian
+  名称: 香严智闲
+  问题: 经典中未出现"香严智闲"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: li-ao
+  名称: 李翱
+  问题: 经典中未出现"李翱"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: wansong-xingxiu
+  名称: 万松行秀
+  问题: 经典中未出现"万松行秀"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: zhuhong
+  名称: 袾宏
+  问题: 经典中未出现"袾宏"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: changlu-zongze
+  名称: 长芦宗赜
+  问题: 经典中未出现"长芦宗赜"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: muzhou-daoming
+  名称: 睦州道明
+  问题: 经典中未出现"睦州道明"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: shoushan-xingnian
+  名称: 首山省念
+  问题: 经典中未出现"首山省念"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: foyan-qingyuan
+  名称: 佛眼清远
+  问题: 经典中未出现"佛眼清远"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: boshan-yuanlai
+  名称: 博山元来
+  问题: 经典中未出现"博山元来"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: yelu-chucai
+  名称: 耶律楚材
+  问题: 经典中未出现"耶律楚材"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: taiping-huiman
+  名称: 太平慧懑
+  问题: 经典中未出现"太平慧懑"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: fengxue-yanzhao
+  名称: 风穴延沼
+  问题: 经典中未出现"风穴延沼"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: daoyuan-monk
+  名称: 道原
+  问题: 经典中未出现"道原"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: puji
+  名称: 普济
+  问题: 经典中未出现"普济"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: huangtingjian
+  名称: 黄庭坚
+  问题: 经典中未出现"黄庭坚"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: tongrong
+  名称: 通容
+  问题: 经典中未出现"通容"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: yinyuan-longqi
+  名称: 隐元隆琦
+  问题: 经典中未出现"隐元隆琦"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: touzi-datong
+  名称: 投子大同
+  问题: 经典中未出现"投子大同"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: wuzhun-shifan
+  名称: 无准师范
+  问题: 经典中未出现"无准师范"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: zhenjing-kewen
+  名称: 真净克文
+  问题: 经典中未出现"真净克文"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: foyin-liaoyuan
+  名称: 佛印了元
+  问题: 经典中未出现"佛印了元"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: tianyi-yihuai
+  名称: 天衣义怀
+  问题: 经典中未出现"天衣义怀"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: kaifu-daoning
+  名称: 开福道宁
+  问题: 经典中未出现"开福道宁"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 人物
+  ID: fojian-huiqin
+  名称: 佛鉴慧勤
+  问题: 经典中未出现"佛鉴慧勤"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: tou-xin-wei-si
+  名称: 偷心未死
+  问题: 经典中未出现"偷心未死"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: de-hua-li-zhi
+  名称: 德化与礼治
+  问题: 经典中未出现"德化与礼治"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: wenzi-chan
+  名称: 文字禅
+  问题: 经典中未出现"文字禅"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: kanhua-chan-concept
+  名称: 看话
+  问题: 经典中未出现"看话"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: xiangshang-guanliezi
+  名称: 向上关捩子
+  问题: 经典中未出现"向上关捩子"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: chanbing
+  名称: 禅病
+  问题: 经典中未出现"禅病"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: yixin-sanguan
+  名称: 一心三观
+  问题: 经典中未出现"一心三观"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: weishi
+  名称: 唯识
+  问题: 经典中未出现"唯识"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: fajie
+  名称: 法界
+  问题: 经典中未出现"法界"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: lishi-wuai
+  名称: 理事无碍
+  问题: 经典中未出现"理事无碍"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: shishi-wuai
+  名称: 事事无碍
+  问题: 经典中未出现"事事无碍"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: yiji-yiqie
+  名称: 一即一切
+  问题: 经典中未出现"一即一切"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: yinian-sanqian
+  名称: 一念三千
+  问题: 经典中未出现"一念三千"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: xingju-shane
+  名称: 性具善恶
+  问题: 经典中未出现"性具善恶"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: zhijie-zongtu
+  名称: 知解宗徒
+  问题: 经典中未出现"知解宗徒"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: kumu-chan
+  名称: 枯木禅
+  问题: 经典中未出现"枯木禅"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: liuxiang-yuanrong
+  名称: 六相圆融
+  问题: 经典中未出现"六相圆融"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: xin-fo-zhongsheng
+  名称: 心佛众生三无差别
+  问题: 经典中未出现"心佛众生三无差别"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: xinxin-xiangyin
+  名称: 心心相印
+  问题: 经典中未出现"心心相印"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: fajie-yuanqi
+  名称: 法界缘起
+  问题: 经典中未出现"法界缘起"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 概念
+  ID: zongfeng
+  名称: 宗风
+  问题: 经典中未出现"宗风"相关内容
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: wumen
+  名称: 无门关
+  问题: 经典中未教导"无门关"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: kanhuatou
+  名称: 看话头
+  问题: 经典中未教导"看话头"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: chanlin-jingce-practice
+  名称: 禅林宝训日用反省警策法
+  问题: 经典中未教导"禅林宝训日用反省警策法"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: can-huatou
+  名称: 参话头
+  问题: 经典中未教导"参话头"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: jifeng
+  名称: 机锋
+  问题: 经典中未教导"机锋"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: youfang-canfang
+  名称: 游方参访
+  问题: 经典中未教导"游方参访"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: pushuo-xiaocan
+  名称: 普说与小参
+  问题: 经典中未教导"普说与小参"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+  类型: 法门
+  ID: biguan-daqi
+  名称: 闭关打七
+  问题: 经典中未教导"闭关打七"
+  操作: 从 relatedBooks 中移除 "chanlinbaoxun"
+
+【大佛顶首楞严经 (全十卷)】(lengyanjing)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: xuanzang
+  名称: 玄奘
+  问题: 经典中未出现"玄奘"
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 人物
+  ID: zhu-daosheng
+  名称: 竺道生
+  问题: 经典中未出现"竺道生"
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 人物
+  ID: zhenxie-qingliao
+  名称: 真歇清了
+  问题: 经典中未出现"真歇清了"
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 概念
+  ID: qi-chu-zheng-xin
+  名称: 七处征心·破妄识心
+  问题: 经典中未出现"七处征心·破妄识心"相关内容
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 概念
+  ID: ba-huan-bian-jian
+  名称: 八还辨见·显不灭见性
+  问题: 经典中未出现"八还辨见·显不灭见性"相关内容
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 概念
+  ID: wu-shi-yin-mo
+  名称: 五十阴魔辨析
+  问题: 经典中未出现"五十阴魔辨析"相关内容
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 概念
+  ID: jiedinghui
+  名称: 戒定慧
+  问题: 经典中未出现"戒定慧"相关内容
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+  类型: 法门
+  ID: er-gen-yuan-tong-practice
+  名称: 观音耳根圆通反闻法门
+  问题: 经典中未教导"观音耳根圆通反闻法门"
+  操作: 从 relatedBooks 中移除 "lengyanjing"
+
+【维摩诘所说经 (全十四品)】(weimojiejing)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: ru-bu-er-fa-men
+  名称: 入不二法门·维摩一默
+  问题: 经典中未出现"入不二法门·维摩一默"相关内容
+  操作: 从 relatedBooks 中移除 "weimojiejing"
+
+  类型: 概念
+  ID: shengsi-jielun
+  名称: 生死即涅槃
+  问题: 经典中未出现"生死即涅槃"相关内容
+  操作: 从 relatedBooks 中移除 "weimojiejing"
+
+  类型: 概念
+  ID: chanjing-shuangxiu
+  名称: 禅净双修
+  问题: 经典中未出现"禅净双修"相关内容
+  操作: 从 relatedBooks 中移除 "weimojiejing"
+
+  类型: 法门
+  ID: weimo-buer-practice
+  名称: 维摩居士入不二法门观照
+  问题: 经典中未教导"维摩居士入不二法门观照"
+  操作: 从 relatedBooks 中移除 "weimojiejing"
+
+【十牛图颂并序】(shiniutu)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: puming
+  名称: 普明禅师
+  问题: 经典中未出现"普明禅师"
+  操作: 从 relatedBooks 中移除 "shiniutu"
+
+  类型: 法门
+  ID: muniu-tuxi
+  名称: 十牛图牧心
+  问题: 经典中未教导"十牛图牧心"
+  操作: 从 relatedBooks 中移除 "shiniutu"
+
+【宝镜三昧歌】(baojingsanmei)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: weishan-lingyou
+  名称: 沩山灵祐
+  问题: 经典中未出现"沩山灵祐"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 人物
+  ID: yangshan-huiji
+  名称: 仰山慧寂
+  问题: 经典中未出现"仰山慧寂"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 人物
+  ID: hongzhi-zhengjue
+  名称: 宏智正觉
+  问题: 经典中未出现"宏智正觉"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 人物
+  ID: daoyuan
+  名称: 道元
+  问题: 经典中未出现"道元"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 人物
+  ID: danxia-zichun
+  名称: 丹霞子淳
+  问题: 经典中未出现"丹霞子淳"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 人物
+  ID: furong-daookai
+  名称: 芙蓉道楷
+  问题: 经典中未出现"芙蓉道楷"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 概念
+  ID: mozhao-chan-concept
+  名称: 默照
+  问题: 经典中未出现"默照"相关内容
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 法门
+  ID: mozhao
+  名称: 默照禅
+  问题: 经典中未教导"默照禅"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+  类型: 法门
+  ID: zhiguan-dazuo
+  名称: 只管打坐
+  问题: 经典中未教导"只管打坐"
+  操作: 从 relatedBooks 中移除 "baojingsanmei"
+
+【洞山良价禅师语录】(dongshanyulu)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: weishan-lingyou
+  名称: 沩山灵祐
+  问题: 经典中未出现"沩山灵祐"
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+  类型: 人物
+  ID: caoshan-benji
+  名称: 曹山本寂
+  问题: 经典中未出现"曹山本寂"
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+  类型: 人物
+  ID: yunyan-tancheng
+  名称: 云岩昙晟
+  问题: 经典中未出现"云岩昙晟"
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+  类型: 概念
+  ID: zhuan-shen-ju
+  名称: 转身句
+  问题: 经典中未出现"转身句"相关内容
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+  类型: 概念
+  ID: xiangshang-guanliezi
+  名称: 向上关捩子
+  问题: 经典中未出现"向上关捩子"相关内容
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+  类型: 法门
+  ID: mozhao
+  名称: 默照禅
+  问题: 经典中未教导"默照禅"
+  操作: 从 relatedBooks 中移除 "dongshanyulu"
+
+【永嘉禅宗集】(yongjia)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: dunwu-jianxiu
+  名称: 顿悟渐修
+  问题: 经典中未出现"顿悟渐修"相关内容
+  操作: 从 relatedBooks 中移除 "yongjia"
+
+  类型: 概念
+  ID: wenzi-zhang
+  名称: 文字障
+  问题: 经典中未出现"文字障"相关内容
+  操作: 从 relatedBooks 中移除 "yongjia"
+
+  类型: 概念
+  ID: kuang-chan
+  名称: 狂禅
+  问题: 经典中未出现"狂禅"相关内容
+  操作: 从 relatedBooks 中移除 "yongjia"
+
+  类型: 法门
+  ID: zhiguan-dazuo
+  名称: 只管打坐
+  问题: 经典中未教导"只管打坐"
+  操作: 从 relatedBooks 中移除 "yongjia"
+
+【云门匡真禅师广录】(yunmen)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: zhaozhou
+  名称: 赵州从谂
+  问题: 经典中未出现"赵州从谂"
+  操作: 从 relatedBooks 中移除 "yunmen"
+
+  类型: 概念
+  ID: xiangshang-guanliezi
+  名称: 向上关捩子
+  问题: 经典中未出现"向上关捩子"相关内容
+  操作: 从 relatedBooks 中移除 "yunmen"
+
+【八识规矩颂】(bashiguijusong)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: sizhi
+  名称: 四智
+  问题: 经典中未出现"四智"相关内容
+  操作: 从 relatedBooks 中移除 "bashiguijusong"
+
+【禅宗无门关】(wumenguan)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: huoju-siju
+  名称: 活句死句
+  问题: 经典中未出现"活句死句"相关内容
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+  类型: 概念
+  ID: benfen-shi
+  名称: 本分事
+  问题: 经典中未出现"本分事"相关内容
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+  类型: 概念
+  ID: chi-cha-qu
+  名称: 吃茶去
+  问题: 经典中未出现"吃茶去"相关内容
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+  类型: 法门
+  ID: canhuoju
+  名称: 参活句
+  问题: 经典中未教导"参活句"
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+  类型: 法门
+  ID: kan-wuzi
+  名称: 看无字
+  问题: 经典中未教导"看无字"
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+  类型: 法门
+  ID: xi-bo-qu
+  名称: 洗钵去
+  问题: 经典中未教导"洗钵去"
+  操作: 从 relatedBooks 中移除 "wumenguan"
+
+【禅关策进】(changuancejin)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: huangbo
+  名称: 黄檗希运
+  问题: 经典中未出现"黄檗希运"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: zhaozhou
+  名称: 赵州从谂
+  问题: 经典中未出现"赵州从谂"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: chuyuan
+  名称: 慈明楚圆
+  问题: 经典中未出现"慈明楚圆"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: yuanwu-keqin
+  名称: 圆悟克勤
+  问题: 经典中未出现"圆悟克勤"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: hongzhi-zhengjue
+  名称: 宏智正觉
+  问题: 经典中未出现"宏智正觉"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: yongming-yanshou
+  名称: 永明延寿
+  问题: 经典中未出现"永明延寿"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: xuansha-shibei
+  名称: 玄沙师备
+  问题: 经典中未出现"玄沙师备"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: wuzu-fayan
+  名称: 五祖法演
+  问题: 经典中未出现"五祖法演"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: sixin-wuxin
+  名称: 死心悟新
+  问题: 经典中未出现"死心悟新"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: zhongfeng-mingben
+  名称: 中峰明本
+  问题: 经典中未出现"中峰明本"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: gaofeng-yuanmiao
+  名称: 高峰原妙
+  问题: 经典中未出现"高峰原妙"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: xueyan-zuqin
+  名称: 雪岩祖钦
+  问题: 经典中未出现"雪岩祖钦"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 人物
+  ID: poan-zuxian
+  名称: 破庵祖先
+  问题: 经典中未出现"破庵祖先"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 概念
+  ID: shengsi-jielun
+  名称: 生死即涅槃
+  问题: 经典中未出现"生死即涅槃"相关内容
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 法门
+  ID: biguan-daqi
+  名称: 闭关打七
+  问题: 经典中未教导"闭关打七"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+  类型: 法门
+  ID: can-shengsi
+  名称: 参生死
+  问题: 经典中未教导"参生死"
+  操作: 从 relatedBooks 中移除 "changuancejin"
+
+【大乘起信论】(dachengqixinlun)
+----------------------------------------------------------------------------------------------------
+  类型: 法门
+  ID: huixiang-fa
+  名称: 回向法门
+  问题: 经典中未教导"回向法门"
+  操作: 从 relatedBooks 中移除 "dachengqixinlun"
+
+【佛果圜悟真觉禅师心要】(huanwuxinyao)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: yuanwu-keqin
+  名称: 圆悟克勤
+  问题: 经典中未出现"圆悟克勤"
+  操作: 从 relatedBooks 中移除 "huanwuxinyao"
+
+  类型: 人物
+  ID: niaoke-daolin
+  名称: 鸟窠道林
+  问题: 经典中未出现"鸟窠道林"
+  操作: 从 relatedBooks 中移除 "huanwuxinyao"
+
+  类型: 概念
+  ID: fen-biyanlu
+  名称: 焚毁碧岩录
+  问题: 经典中未出现"焚毁碧岩录"相关内容
+  操作: 从 relatedBooks 中移除 "huanwuxinyao"
+
+  类型: 法门
+  ID: tuibu-xiuxie
+  名称: 退步休歇
+  问题: 经典中未教导"退步休歇"
+  操作: 从 relatedBooks 中移除 "huanwuxinyao"
+
+【圆悟佛果禅师语录】(huanwuyulu)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: yuanwu-keqin
+  名称: 圆悟克勤
+  问题: 经典中未出现"圆悟克勤"
+  操作: 从 relatedBooks 中移除 "huanwuyulu"
+
+  类型: 人物
+  ID: xuedou-zhongxian
+  名称: 雪窦重显
+  问题: 经典中未出现"雪窦重显"
+  操作: 从 relatedBooks 中移除 "huanwuyulu"
+
+  类型: 概念
+  ID: yiyin-yanfa
+  名称: 一音演法
+  问题: 经典中未出现"一音演法"相关内容
+  操作: 从 relatedBooks 中移除 "huanwuyulu"
+
+  类型: 法门
+  ID: tuibu-xiuxie
+  名称: 退步休歇
+  问题: 经典中未教导"退步休歇"
+  操作: 从 relatedBooks 中移除 "huanwuyulu"
+
+【大慧普觉禅师语录】(dahuiyulu)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: fen-biyanlu
+  名称: 焚毁碧岩录
+  问题: 经典中未出现"焚毁碧岩录"相关内容
+  操作: 从 relatedBooks 中移除 "dahuiyulu"
+
+  类型: 法门
+  ID: can-shengsi
+  名称: 参生死
+  问题: 经典中未教导"参生死"
+  操作: 从 relatedBooks 中移除 "dahuiyulu"
+
+  类型: 法门
+  ID: po-wo-zhi
+  名称: 破我执
+  问题: 经典中未教导"破我执"
+  操作: 从 relatedBooks 中移除 "dahuiyulu"
+
+【禅家龟鉴】(chanjia_guijian)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: can-san-yao
+  名称: 参禅三要
+  问题: 经典中未出现"参禅三要"相关内容
+  操作: 从 relatedBooks 中移除 "chanjia_guijian"
+
+【心铭】(xinming)
+----------------------------------------------------------------------------------------------------
+  类型: 概念
+  ID: wuxin-jueguan
+  名称: 无心绝观
+  问题: 经典中未出现"无心绝观"相关内容
+  操作: 从 relatedBooks 中移除 "xinming"
+
+  类型: 概念
+  ID: xin-busheng-fajue
+  名称: 心不生法绝
+  问题: 经典中未出现"心不生法绝"相关内容
+  操作: 从 relatedBooks 中移除 "xinming"
+
+  类型: 概念
+  ID: dajibenyou
+  名称: 大机本有
+  问题: 经典中未出现"大机本有"相关内容
+  操作: 从 relatedBooks 中移除 "xinming"
+
+【坐禅仪】(zuochanyi)
+----------------------------------------------------------------------------------------------------
+  类型: 人物
+  ID: zongze
+  名称: 长芦宗赣
+  问题: 经典中未出现"长芦宗赣"
+  操作: 从 relatedBooks 中移除 "zuochanyi"
+
+  类型: 概念
+  ID: zuochan-weiyi
+  名称: 坐禅威仪
+  问题: 经典中未出现"坐禅威仪"相关内容
+  操作: 从 relatedBooks 中移除 "zuochanyi"
+
+  类型: 概念
+  ID: chanding-jiwu
+  名称: 禅定即务
+  问题: 经典中未出现"禅定即务"相关内容
+  操作: 从 relatedBooks 中移除 "zuochanyi"
+
+====================================================================================================
+总计: 319 处疑似错误关联待审核
+====================================================================================================

@@ -1,0 +1,930 @@
+[
+  {
+    "type": "persons",
+    "id": "jiaye",
+    "name": "摩诃迦叶尊者",
+    "wrong_book": "qifo",
+    "wrong_book_title": "七佛传法偈",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "xingsi",
+    "name": "青原行思",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "shitou",
+    "name": "石头希迁",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "dajiaye",
+    "name": "大迦叶",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "nanyang-huizhong",
+    "name": "南阳慧忠",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "pang-yun",
+    "name": "庞蕴",
+    "wrong_book": "mazu",
+    "wrong_book_title": "马祖道一禅师语录",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "nagarjuna",
+    "name": "龙树菩萨",
+    "wrong_book": "xinjing",
+    "wrong_book_title": "般若波罗蜜多心经",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "yunmen",
+    "name": "云门文偃",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "xuefeng-yicun",
+    "name": "雪峰义存",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "deshan-xuanjian",
+    "name": "德山宣鉴",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "fayan-wenyi",
+    "name": "法眼文益",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "tiantai-deshao",
+    "name": "天台德韶",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "longtan-chongxin",
+    "name": "龙潭崇信",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "luohan-guichen",
+    "name": "罗汉桂琛",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "fenyang-shanzhao",
+    "name": "汾阳善昭",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "baiyun-shouduan",
+    "name": "白云守端",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "wumen-huikai",
+    "name": "无门慧开",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "tianhuang-daowu",
+    "name": "天皇道悟",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "danxia-tianran",
+    "name": "丹霞天然",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "xiangyan-zhixian",
+    "name": "香严智闲",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "li-ao",
+    "name": "李翱",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "wansong-xingxiu",
+    "name": "万松行秀",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "changlu-zongze",
+    "name": "长芦宗赜",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "muzhou-daoming",
+    "name": "睦州道明",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "shoushan-xingnian",
+    "name": "首山省念",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "foyan-qingyuan",
+    "name": "佛眼清远",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "boshan-yuanlai",
+    "name": "博山元来",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "yelu-chucai",
+    "name": "耶律楚材",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "taiping-huiman",
+    "name": "太平慧懑",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "fengxue-yanzhao",
+    "name": "风穴延沼",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "daoyuan-monk",
+    "name": "道原",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "puji",
+    "name": "普济",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "huangtingjian",
+    "name": "黄庭坚",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "tongrong",
+    "name": "通容",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "yinyuan-longqi",
+    "name": "隐元隆琦",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "touzi-datong",
+    "name": "投子大同",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "wuzhun-shifan",
+    "name": "无准师范",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "zhenjing-kewen",
+    "name": "真净克文",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "foyin-liaoyuan",
+    "name": "佛印了元",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "tianyi-yihuai",
+    "name": "天衣义怀",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "kaifu-daoning",
+    "name": "开福道宁",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "fojian-huiqin",
+    "name": "佛鉴慧勤",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "zhenxie-qingliao",
+    "name": "真歇清了",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "puming",
+    "name": "普明禅师",
+    "wrong_book": "shiniutu",
+    "wrong_book_title": "十牛图颂并序",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "yangshan-huiji",
+    "name": "仰山慧寂",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "daoyuan",
+    "name": "道元",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "danxia-zichun",
+    "name": "丹霞子淳",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "furong-daookai",
+    "name": "芙蓉道楷",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "zhongfeng-mingben",
+    "name": "中峰明本",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "gaofeng-yuanmiao",
+    "name": "高峰原妙",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "xueyan-zuqin",
+    "name": "雪岩祖钦",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "poan-zuxian",
+    "name": "破庵祖先",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "niaoke-daolin",
+    "name": "鸟窠道林",
+    "wrong_book": "huanwuxinyao",
+    "wrong_book_title": "佛果圜悟真觉禅师心要",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "xuedou-zhongxian",
+    "name": "雪窦重显",
+    "wrong_book": "huanwuyulu",
+    "wrong_book_title": "圆悟佛果禅师语录",
+    "correct_books": []
+  },
+  {
+    "type": "persons",
+    "id": "zongze",
+    "name": "长芦宗赣",
+    "wrong_book": "zuochanyi",
+    "wrong_book_title": "坐禅仪",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "sanlun-tikong",
+    "name": "三轮体空",
+    "wrong_book": "sixingguan",
+    "wrong_book_title": "菩提达摩大师入道四行观",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "ru-lai-zhi",
+    "name": "如来智",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "niepan-miaoxin",
+    "name": "涅槃妙心",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "foxing-changzhu",
+    "name": "佛性常住",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "jianjiao",
+    "name": "渐教",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "sanfa-yin",
+    "name": "三法印",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "si-yi",
+    "name": "四依",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "er-di",
+    "name": "二谛",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "ba-zhengdao",
+    "name": "八正道",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "shi-er-yinyuan",
+    "name": "十二因缘",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "si-di",
+    "name": "四谛",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "wenzi-bore",
+    "name": "文字般若",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "li-ju-shi-zao",
+    "name": "理具事造",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "jiaoli-guanxing",
+    "name": "教理观行",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "benjue-shijue",
+    "name": "本觉始觉",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "zhengjue",
+    "name": "正觉",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "wuxing",
+    "name": "无行",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "fanyin",
+    "name": "法音",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "rulai-chan-zushi-chan",
+    "name": "如来禅与祖师禅",
+    "wrong_book": "linji",
+    "wrong_book_title": "镇州临济慧照禅师语录",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "si-xiang",
+    "name": "破除四相",
+    "wrong_book": "jingangjing",
+    "wrong_book_title": "金刚般若波罗蜜经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "si-bing",
+    "name": "作止任灭四种修行病",
+    "wrong_book": "yuanjuejing",
+    "wrong_book_title": "大方广圆觉修多罗了义经",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "tou-xin-wei-si",
+    "name": "偷心未死",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "de-hua-li-zhi",
+    "name": "德化与礼治",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "wenzi-chan",
+    "name": "文字禅",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "chanbing",
+    "name": "禅病",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "yixin-sanguan",
+    "name": "一心三观",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "lishi-wuai",
+    "name": "理事无碍",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "shishi-wuai",
+    "name": "事事无碍",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "yiji-yiqie",
+    "name": "一即一切",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "yinian-sanqian",
+    "name": "一念三千",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "kumu-chan",
+    "name": "枯木禅",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "liuxiang-yuanrong",
+    "name": "六相圆融",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "fajie-yuanqi",
+    "name": "法界缘起",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "qi-chu-zheng-xin",
+    "name": "七处征心·破妄识心",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "ba-huan-bian-jian",
+    "name": "八还辨见·显不灭见性",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "wu-shi-yin-mo",
+    "name": "五十阴魔辨析",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "ru-bu-er-fa-men",
+    "name": "入不二法门·维摩一默",
+    "wrong_book": "weimojiejing",
+    "wrong_book_title": "维摩诘所说经 (全十四品)",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "zhuan-shen-ju",
+    "name": "转身句",
+    "wrong_book": "dongshanyulu",
+    "wrong_book_title": "洞山良价禅师语录",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "kuang-chan",
+    "name": "狂禅",
+    "wrong_book": "yongjia",
+    "wrong_book_title": "永嘉禅宗集",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "yiyin-yanfa",
+    "name": "一音演法",
+    "wrong_book": "huanwuyulu",
+    "wrong_book_title": "圆悟佛果禅师语录",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "can-san-yao",
+    "name": "参禅三要",
+    "wrong_book": "chanjia_guijian",
+    "wrong_book_title": "禅家龟鉴",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "wuxin-jueguan",
+    "name": "无心绝观",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "xin-busheng-fajue",
+    "name": "心不生法绝",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "dajibenyou",
+    "name": "大机本有",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "zuochan-weiyi",
+    "name": "坐禅威仪",
+    "wrong_book": "zuochanyi",
+    "wrong_book_title": "坐禅仪",
+    "correct_books": []
+  },
+  {
+    "type": "concepts",
+    "id": "chanding-jiwu",
+    "name": "禅定即务",
+    "wrong_book": "zuochanyi",
+    "wrong_book_title": "坐禅仪",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "guanxin-fa",
+    "name": "观心法门",
+    "wrong_book": "zhangzhi",
+    "wrong_book_title": "杖指教授",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "po-xiang-fa",
+    "name": "破相法门",
+    "wrong_book": "poxianglun",
+    "wrong_book_title": "菩提达摩大师破相论",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "xi-zheng-fa",
+    "name": "息诤法门",
+    "wrong_book": "xixulun",
+    "wrong_book_title": "菩提达摩大师息许论",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "chanjing-shuangxiu",
+    "name": "禅净双修",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "wunian-fa",
+    "name": "无念法门",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "wuxiang-fa",
+    "name": "无相法门",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "wuzhu-fa",
+    "name": "无住法门",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "yuanjue-sanzhong-jingguan",
+    "name": "圆觉三种清净观门",
+    "wrong_book": "yuanjuejing",
+    "wrong_book_title": "大方广圆觉修多罗了义经",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "chanlin-jingce-practice",
+    "name": "禅林宝训日用反省警策法",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "youfang-canfang",
+    "name": "游方参访",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "pushuo-xiaocan",
+    "name": "普说与小参",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "weimo-buer-practice",
+    "name": "维摩居士入不二法门观照",
+    "wrong_book": "weimojiejing",
+    "wrong_book_title": "维摩诘所说经 (全十四品)",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "muniu-tuxi",
+    "name": "十牛图牧心",
+    "wrong_book": "shiniutu",
+    "wrong_book_title": "十牛图颂并序",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "huixiang-fa",
+    "name": "回向法门",
+    "wrong_book": "dachengqixinlun",
+    "wrong_book_title": "大乘起信论",
+    "correct_books": []
+  },
+  {
+    "type": "methods",
+    "id": "po-wo-zhi",
+    "name": "破我执",
+    "wrong_book": "dahuiyulu",
+    "wrong_book_title": "大慧普觉禅师语录",
+    "correct_books": []
+  }
+]

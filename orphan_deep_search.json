@@ -1,0 +1,3951 @@
+[
+  {
+    "id": "xingsi",
+    "name": "青原行思",
+    "type": "persons",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "青原",
+        "context": "众。一日师谓曰。汝当分化一方。无令 断绝。思既得法。遂回吉州青原山。弘法绍化。谥号弘济禅师。 怀让禅师。金州杜氏子也。初谌嵩"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "alias",
+        "matched_term": "行思",
+        "context": "也 ( 智林集 )  妙喜曰。古人⻅善则迁。有过则改。率德循行思免无咎。所患莫甚于  不知其恶。所美莫善于好闻其过。然岂古人"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "青原",
+        "context": "尚。因僧问云。清税孤贫。乞师赈济。山云。税阇梨税应诺。山曰。青原白家酒。三盏吃了犹道。未沾唇。  【无门曰】 清税输机。是何"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "青原",
+        "context": "。尔作什么。云和尚教我寻 思去。所以坐禅。同参云。错了也。有青原师兄名思。指汝去见 他。石头方省。遂往青原。原问。甚处来。云"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "shitou",
+    "name": "石头希迁",
+    "type": "persons",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "木石。  白话：没有了虚妄分别的心，就叫无心——可不是像木头石头那样毫无知觉。  > 无心既见闻觉知，还是无心能知无心？  "
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "礼拜作么。  马祖道一禅师语录 邓隐峰辞祖。祖曰。甚处去。云石头去。祖曰。石头路滑。 云竿木随身。逢场作戏。便去。才到石头。"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "先圣知于未然。遂选明哲之士主于丛林。  使人具瞻不喻而化。故石头⻢祖道化盛行之时。英杰之士出威仪柔嘉  雍雍肃肃发言举令。瞬"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "河流注, 水势弱于火势, 水火相结就  成为高山,所以山上的石头,用力打击时,就发出火焰,岩石融化就成为水。土势弱于水,  "
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "\"枯木。\"僧又举似逍遥忠。忠云：\"三从六义。\"）  举五泄到石头处云：\"一言相契即住，不契即去。\"石头据坐。五泄便去。石头随"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "这里无恁闲家具。又问德山如何是 佛。山云佛是西天老比丘。又问石头如何是道。答云木头。如何是 禅。云碌塼。僧问云门如何是超佛越"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "窠臼有 依倚。黏皮著骨有得有失有传授。尽打入弄泥团处去。若是石头马 师百丈黄檗临济云门玄沙岩头法眼沩仰曹洞。此等之流。皆是向"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "石头",
+        "context": "运腾腾，如痴人相似，世人尽不识你，你亦不用教人识不识，心如顽石头，都无缝罅，一切法透汝心不入，兀然无著，如此始有少分相应！ "
+      }
+    ],
+    "has_match": true,
+    "match_count": 8
+  },
+  {
+    "id": "nanyang-huizhong",
+    "name": "南阳慧忠",
+    "type": "persons",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "南阳",
+        "context": "# 📌 重点内容  - **无情说法因缘**：洞山参沩山，问南阳忠国师\"无情说法\"话。沩山不答，令其转参云岩。云岩竖起拂子，"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "南阳",
+        "context": "神物护持云。绍兴四年二月日。检校少保定国军节度使知枢密院 事南阳郡开国侯张浚序。  ### 圆悟佛果禅师语录卷第一  上堂一"
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "pang-yun",
+    "name": "庞蕴",
+    "type": "persons",
+    "wrong_book": "mazu",
+    "wrong_book_title": "马祖道一禅师语录",
+    "matches": [
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "alias",
+        "matched_term": "庞居士",
+        "context": "。后告众云。自从一吃马师蹋。直至如今笑  正法心传 不休。 庞居士问祖云。不与万法为侣者。是甚么人。祖曰。待汝 一口吸尽西江水"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "alias",
+        "matched_term": "庞居士",
+        "context": "*古德公案以为印证**：书中广引赵州柏树子、严阳一物不将来、庞居士吸尽西江水、德山棒、临济喝等公案，以为学人参究之资。  7."
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "alias",
+        "matched_term": "庞居士",
+        "context": "放下廓尔平常彻证无心，观一切法如梦幻泡，即与维摩诘、傅大士、庞居士同其正因。（示许庭龟法语）  ### 7. \"悬崖撒手，弃舍"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "deshan-xuanjian",
+    "name": "德山宣鉴",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "德山",
+        "context": "者疏之。贵无丑恶之谤偏党之乱也。如此则⻢  祖百丈可侔。临济德山可逮 ( 智林集 )  音首座曰。古之圣人以无灾为惧。乃曰。"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "德山",
+        "context": "云：\"大众吃个什么？\"雪峰遂覆却米盆。师云：\"据子因缘，合在德山。\"（琅琊觉云：雪峰与么去，大似抛却甜桃树，寻山摘醋梨。天童"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "德山",
+        "context": "认识神　无量劫来生死本　痴人唤作本来人  ### 第十三则 德山托钵  德山一日托钵下堂。见雪峰问者。老汉钟未鸣鼓未响。托钵"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "德山",
+        "context": "以悟为则\"。日本禅宗亦将本书奉为必读典籍。书中大量引用赵州、德山、临济、云门、雪峰等古德公案，并予以精要评唱，是研究宋代禅宗"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "德山",
+        "context": "现了其\"透顶透底、截断笼罗\"的宗风特色。  语录中广引赵州、德山、临济、云门、雪峰等古德公案，以拈古颂古的形式加以评唱，既承"
+      }
+    ],
+    "has_match": true,
+    "match_count": 5
+  },
+  {
+    "id": "fayan-wenyi",
+    "name": "法眼文益",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "核心旨趣  过去七佛传法偈颂，展现从释迦牟尼佛至迦叶尊者的正法眼藏印心偈言。 本典籍直指“若见性即是佛”的核心见地，倡导在日"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "塞、四万优婆夷、六十亿那由 他六欲诸天，远尘离垢，于诸法中得法眼净。 文殊师利所说摩诃般若波罗蜜经卷上（终）  正法心传 文"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": " - **传法偈与拈花公案**：文末述世尊拈花、迦叶微笑，正法眼藏自此以心传心。  ## ⚠️ 阅读难点  论中大量使用否定"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "如此同异，并皆是相貌也，未为得心。真得心者，自识分明，久 后法眼自开，善别虚之与伪。或复有人计身空无，心性亦灭。此 是断见人"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "师从此去。早晚可回。 师曰。叶落归根。来时无口。 又问日。正法眼藏传付何人。 师曰。有道者得。无心者通。 日。未知从上佛祖应"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "汝缘合故。当见其道。又问曰。道非色相。 云何能见。让日。心地法眼能见乎道。无相三味。亦复然矣。师 日。有成坏否。让曰。若以成"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": " “如是，世尊！如来有慧眼。”  “须菩提！于意云何？如来有法眼不？”  “如是，世尊！如来有法眼。”  “须菩提！于意云何"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": ")  高庵曰。先师尝言。行脚出关。所至小院多有不如意事。因思法眼参  地藏明教⻅神鼎时。便不⻅有烦恼也 ( 记闻 )  高庵"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "根尘识心应时销落。 想相为尘, 识情为垢,  二俱远离,则汝法眼应时清明,云何不成无上知觉!  因为一切众生, 从无始以来,"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "4],诸天及人,知有为法[65],皆悉无常,远尘离垢,  得法眼净[66]。八千比丘,不受诸法,漏尽意解[67]。  注释:"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "教与顿渐。从粗及细，自浅至深。末后目瞬青莲，引得头陀微笑。正法眼藏，自此流通。天上人间，此方他界，得其理也超宗越格，如鸟道而"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "心铭，弟子拟注。\"师云：\"才有是非，纷然失心，作么生注？\"（法眼代云：恁么则弟子不注也。）  师初行脚时，路逢一婆担水。师索"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "。惑见纷驰。穷之则唯一寂。灵源不状。鉴之则以千差。千差不同。法眼之名自立。一寂非异。慧眼之号斯存。理量双消。佛眼之功圆著。是"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "如何是和尚自己？\"师云：\"赖遇维那不在。\"  问：\"如何是正法眼？\"师云：\"普。\"  问：\"如何是沙门行？\"师云：\"会不得。"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "世尊拈花（第六则）**：灵山会上拈花示众，迦叶破颜微笑——正法眼藏，涅槃妙心，不立文字，教外别传。 - **香严上树（第五则"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "水是水。更 应转向那边千圣笼罗不住处。便契廼祖以来所证传持正法眼藏。及 至应用为物。仍当驱耕夫之牛夺饥人之食。证验得十成无渗"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "。三世诸佛此一音。六 代祖师此一音。天下老和尚此一音。吾有正法眼藏。分付摩诃迦 叶。乃此一音。正法眼藏向这瞎驴边灭却。亦此一"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "strategy": "core2",
+        "matched_term": "法眼",
+        "context": "开五位善接三根，云门剑锋有路铁壁无门，沩仰师资唱和父子一家，法眼言中有响句里藏锋。 7. **临济宗旨**：三玄三要、四料拣"
+      }
+    ],
+    "has_match": true,
+    "match_count": 18
+  },
+  {
+    "id": "tiantai-deshao",
+    "name": "天台德韶",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "禅宗。敕谥大慧禅师。 永嘉玄觉禅师。温州戴氏子。少习经论。精天台止观法门。 因看维摩经。发明心地。偶师弟子玄策相访。与其剧谈"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "，全诗气势磅礴，直指自性本来具足的顿悟要旨。玄觉禅师早年精通天台止观，后拜谒六祖惠能大师，机锋对答言下契悟，获六祖印可，留宿"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "老病者立常住。尔不病不死也。四  方识者高其为人。及退云居过天台。衲子相从者仅五十辈。间有不能  往者泣涕而别。盖其德感人如"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "的  思想。首先创立并弘扬这种“妙有”思想的是智者大师创建的天台宗。  天台宗把《法华经》作为立宗的经典依据,故又称“法华宗"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "\"  ### 接众法语  师问雪峰：\"从甚处来？\"雪峰云：\"天台来。\"师云：\"见智者否？\"雪峰云：\"义存吃铁棒有分。\"  雪"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "读与核心旨趣  《永嘉禅宗集》是唐代永嘉玄觉大师所着，融合了天台止观与禅宗心法的系统论着。全书十章，从皈敬三宝到观心十门，系"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "在半途，未是透脱一路。\"僧便问：\"如何是透脱一路？\"师云：\"天台华顶，赵州石桥。\"  举仰山云：\"如来禅即许师兄会。\"僧便问"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "门龙象。后学之 人可以仰其陈躅。无使虗弃光阴有忝昔贤耳。 昔天台韶国师少负俊才游丛林。所至投机已领师席。最后抵金陵清 凉大法"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "举一不得举二。放过一著落 在第二。云门大师出众云。昨日有人从天台来。却往径山去。峰 云。典座今日不得普请。师云。闪电光中著眼"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "最重要的宗风之争，须了解双方立场方能深入。 - **法语中的天台教观**：大慧法语中常引用天台、华严教理，须有一定教理基础。"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "强调坐禅是\"安乐法门\"，不善用心则反致疾患；又引《楞严经》《天台止观》提醒学人预防魔事。末后以\"超凡越圣必假静缘\"收束，劝勉"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "天台",
+        "context": "济拂袖去，师云：「三十年行脚，今日为人错下注脚。」  师因到天台国清寺，见寒山、拾得，师云：「久响寒山、拾得，到来只见两头水"
+      }
+    ],
+    "has_match": true,
+    "match_count": 12
+  },
+  {
+    "id": "longtan-chongxin",
+    "name": "龙潭崇信",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "龙潭",
+        "context": "　任从沧海变　终不为君通  ### 第二十八则 不落因果  龙潭因德山请益抵夜。潭云。夜深子何不下去。山遂珍重揭帘而出。见外"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "龙潭",
+        "context": "。付授时亦不率易。如让师在曹溪八 年。马祖之与观音。德峤之与龙潭。仰山之于大圆。临济之于断 际。皆不下一二十载。是故一言一句"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "龙潭",
+        "context": "四分罢楞严。　按下云头彻底参。　莫学亮公亲马祖。 还如德峤访龙潭。　七年往返游昭觉。 三载翱翔上碧岩。　今日烦充第一座。　百"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "luohan-guichen",
+    "name": "罗汉桂琛",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "。” 舍利弗言：“云何复名不调比丘？”文殊师利言：“漏尽 阿罗汉，是名不调。何以故？诸结已尽，更无所调，故名不调。 若过心行"
+      },
+      {
+        "book_id": "xixulun",
+        "book_title": "菩提达摩大师息许论",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "登，所以多求，返生堕落；但看周利，触事无堪，箕 帚存心，由登罗汉。据斯道理，何假多求？事籍专精，心居在定。 菩提之路，不近不"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "马祖道一禅师语录 江西道一禅师。汉州什那县人也。姓马氏。本邑罗汉寺出 家。容貌奇异。牛行虎视。引舌过鼻。足下有二轮文。幼岁依"
+      },
+      {
+        "book_id": "linji",
+        "book_title": "镇州临济慧照禅师语录",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "见解，但莫受人惑。向里向外，逢着便杀。逢佛杀佛，逢祖杀祖，逢罗汉杀罗汉，逢父母杀父母，逢眷属杀眷属，始得解脱，不与物拘，透脱"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "不来，而实无不来，是故名阿那含。”  “须菩提！于意云何？阿罗汉能作是念：『我得阿罗汉道』不？”  须菩提言：“不也，世尊！"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "证即成圆觉。善男子。假使有人修于圣道。教化成就百千万亿人得阿罗汉果。不如有人闻此圆觉无碍法门一刹那顷随顺修习。尔时世尊。欲重"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "3. **二十五圣圆通与观音耳根圆通**：二十五位大菩萨与阿罗汉依次陈述各自凭眼耳鼻舌身意、地水火风空见识悟入圆觉的法门，文"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "》中，天女在丈室散花，花至大菩萨身上纷纷坠落，至舍利子等大阿罗汉身上却粘附不脱。舍利子用神通去花，花终不可去。天女点破：心有"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "：\"翠微来。\"师云：\"翠微有何言句示徒？\"云居云：\"翠微供养罗汉。某甲问：供养罗汉，罗汉还来否？翠微云：尔每日瞳个什么？\"师"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "欺凡罔圣苟利图名作无间业。纵无机缘只恁 度世亦无业果。真出尘罗汉也。 僧问天皇如何是戒定慧。皇云我这里无恁闲家具。又问德山如"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "罗汉",
+        "context": "开世界 起。可谓殊胜中最殊胜。奇特中倍奇特。感慈塔前凝瑞气。罗汉洞 边显真容。法会俨然人天普集。到这里合谈何事。说玄说妙得么"
+      }
+    ],
+    "has_match": true,
+    "match_count": 11
+  },
+  {
+    "id": "fenyang-shanzhao",
+    "name": "汾阳善昭",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "汾阳",
+        "context": "何苦自伤。昔慈明琅 [ 王 * 耶 ] 谷泉大愚。结伴  参汾阳。适当⻄北用兵。遂易衣混火队中往。今径山衡阳相去不远。  道"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "汾阳",
+        "context": "无下手处。\"师云：\"犹是这边事。那边事作么生？\"雪峰休去。（汾阳昭代云：某甲早是困也。）  雪峰辞师。师云：\"子甚处去？\"雪"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "汾阳",
+        "context": "。专精不二。后遂超悟。  引锥自刺 慈明谷泉瑯瑘三人。结伴参汾阳。时河东苦寒。众人惮之。慈明志在于道。晓夕不忘。夜坐欲睡。引"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "汾阳",
+        "context": "。今既万里西归。但存行脚 本志。亦不必拘去留也。 慈明昔辞。汾阳祝云。修造自有人。且与佛法为主。自尔五据大刹 不动一椽。唯提"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "baiyun-shouduan",
+    "name": "白云守端",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "祖。祖问。什么处来。日云。乌白来。祖云。 乌臼近日有何言句。白云。几人于此茫然在。祖云。茫然且置。 悄然一句作么生。白乃近前"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "时 ( 坦然庵集 )  功辅自当涂 ( 太平州也 ) 绝江访白云端和尚于海会。白云问公。牛淳  乎。公曰淳矣。白云叱之。公拱"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "亦草漫漫地。且道合向什么处行履？良久云：莫守寒岩异草青，坐着白云宗不妙。白云端云：若见得庵主，便见得洞山。若见得洞山，便见得"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "峰顶。振锡常游。石室岩龛。拂乎宴坐。青松碧沼。明月自生。风扫白云。纵目千里。名花香果。峰鸟衔将。猨啸长吟。远近皆听。锄头当枕"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "度关。不问关吏。岂不见玄沙道。无门解脱之门。无意道人之意。又白云道明明知道。只是者个为甚么。透不过。恁么说话。也是赤土搽牛嬭"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "只贵紧峭。万苦千辛至崄至毒。下得断命手 脚。然后不虗印授也。白云师公云。神仙秘诀父子不传。 示杲书记 (住杭州径山) 临济正"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": " 三毒颂 真赞 睦州和尚 死心和尚舍利 六祖大师 杨岐和尚 白云端和尚 五祖演和尚 真如喆和尚 丹霞佛智裕长老请赞 华藏民长"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "白云",
+        "context": "后为什么百鸟不衔花供养？」师云：「应世、不应世。」  问：「白云自在时如何？」师云：「争似春风处处闲。」  问：「如何是露地"
+      }
+    ],
+    "has_match": true,
+    "match_count": 8
+  },
+  {
+    "id": "tianhuang-daowu",
+    "name": "天皇道悟",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "alias",
+        "matched_term": "道悟",
+        "context": "天亲论云：应化非真佛，亦非说法者。  最上乘 又名：《凡趣圣道悟解真宗修心要论》 【唐】弘忍述 注1：此经出自《大藏经》第4"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "天皇",
+        "context": "云起。昔江⻄⻢祖因百丈南泉而显其大机  大用。南岳石头得药山天皇而着其大智大能。所以千载一合论说无  疑。翼然若鸿毛之遇⻛。"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "天皇",
+        "context": "名作无间业。纵无机缘只恁 度世亦无业果。真出尘罗汉也。 僧问天皇如何是戒定慧。皇云我这里无恁闲家具。又问德山如何是 佛。山云"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "xiangyan-zhixian",
+    "name": "香严智闲",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "香严",
+        "context": " 根据我的所证, 色尘为本  修之因,应该以色尘为最上。  香严童子,即从座起,顶礼佛足,而白佛言:我闻如来教我谛观诸有为相"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "香严",
+        "context": "时,香积佛与诸位菩萨正坐在一起进食。有众多天子,名字都叫  香严,都已经发起无上正等正觉之心,供养香积佛与众位菩萨。这种种情"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "香严",
+        "context": "颜微笑——正法眼藏，涅槃妙心，不立文字，教外别传。 - **香严上树（第五则）**：如人上树口衔树枝，树下有人问西来意——不"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "香严",
+        "context": "生参学事毕。 南塔云。我拈片木叶入城。便是移一坐仰山去也。故香严击竹。灵 云见桃花。资福刹竿头。道吾神杖子。大仰插锹。地藏种"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "香严",
+        "context": "。门下青山泼 黛。途中细雨如膏。灵云陌上桃华。处处芳菲溢目。香严岩畔翠 竹。时时撼影摇风。直得一击忘所知。一见绝疑惑。不免尚"
+      }
+    ],
+    "has_match": true,
+    "match_count": 5
+  },
+  {
+    "id": "wansong-xingxiu",
+    "name": "万松行秀",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "shoushan-xingnian",
+    "name": "首山省念",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "首山",
+        "context": "　渠侬得自由　神头并鬼面　败阙当风流  ### 第四十三则 首山竹篦  首山和尚。拈竹篦示众云。汝等诸人若唤作竹篦则触。不唤"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "首山",
+        "context": "脱。然后的 的相承。可以起此大法幢。然此大法炬也。继马祖百丈首山杨岐不 为叨窃耳。 示报宁静长老 灵山单传少室密付。要卓卓绝"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "首山",
+        "context": "论。于古寺闲房且恁么过时。不谓行到 汝州叶县。被一阵业风吹到首山。曲录木床上见个老和尚。当时把 不住。礼却他三拜。直至如今悔"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "foyan-qingyuan",
+    "name": "佛眼清远",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": " “如是，世尊！如来有法眼。”  “须菩提！于意云何？如来有佛眼不？”  “如是，世尊！如来有佛眼。”  “须菩提！于意云何"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "者。孰不来归。住持将传道德兴教化。不明斯要而莫之得也 ( 与佛眼  书 )  演祖自海会迁东山。太平佛鉴。⻰门佛眼。二人诣山"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "真空无相之眼)、法眼(菩萨彻见世间出世间一切  法门之眼)、佛眼(如来之眼,能无所不知,无所不见之眼)。  [57]五力:指"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "情脱落，圣意皆空。有佛处不用遨游，无佛处急须走过。两头不着，佛眼难窥。百鸟衔花，一场懡㦬。  ---  ### 第九：返本还"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "。千差不同。法眼之名自立。一寂非异。慧眼之号斯存。理量双消。佛眼之功圆著。是以三谛一境。法身之理恒清。三智一心。般若之明常照"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "。惟务退藏似兀如 痴。孤运独照融通[淴-心+口]合密密绵绵。佛眼亦覰不见。况乎魔 外。长养成就。自然有入心入髓之功。便于根尘"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛眼",
+        "context": "（卷二十） 收录偈颂、祖师画像赞、入龛举哀下火等佛事文。如为佛眼和尚下火云\"看取亘天红焰里，华发优昙大地春\"——于生死关头尽"
+      }
+    ],
+    "has_match": true,
+    "match_count": 7
+  },
+  {
+    "id": "boshan-yuanlai",
+    "name": "博山元来",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "即是自在人，无事无 作人。若不见性，终日茫茫，向外驰求，觅佛元来不得。虽无一 物可得，若求会亦须参善知识，切须苦求，令心会解"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": " 迷人修福不修道。只言修福便是道。 布施供养福无边。心中三恶元来造。  正法心传 拟将修福欲灭罪。后世得福罪还在。 但向心中"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "博山",
+        "context": "。僧云。福州来。雪堂  云。沿路⻅好⻓老⺓。僧云。近过信州。博山住持本和尚。虽不曾拜  识好⻓老也。雪堂曰。安得知其为好。僧"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "悟道、见色明心？\"乃云：\"观世音菩萨将钱来买餬饼，放下手云：元来只是馒头。\"  师有时云：\"灯笼是尔自己，把钵盂噇饭。饭不是"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": " 国师三唤  国师三唤侍者。侍者三应。国师云。将谓吾辜负汝。元来却是汝辜负吾。  【无门曰】 国师三唤舌头堕地。侍者三应。和"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "。心随境化。触着还知。自然念虑内忘。心识路绝。忽然打破髑髅。元来不从他得。那时岂不庆快平生者哉。  径山大慧杲禅师普说  此"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "有过无过。愚云。黄檗 与么老婆。你更来覔过在。济猛省。不觉云元来黄檗佛法无多子。 此二老皆丛林杰出者。并于棒下发明。后来大振"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "不快哉。临济在黄檗三 度设问。吃六十棒。及至大愚面前不觉道。元来黄檗佛法无多子。 似此得处。岂不惊群。诸公还曾消息么。若也翻"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "alias",
+        "matched_term": "元来",
+        "context": "汝迷时亦不失，悟时亦不得，天真自性，本无迷悟，尽十方虚空界，元来是我一心体，纵汝动用造作，岂离虚空？虚空本来无大无小，无漏无"
+      }
+    ],
+    "has_match": true,
+    "match_count": 9
+  },
+  {
+    "id": "yelu-chucai",
+    "name": "耶律楚材",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "taiping-huiman",
+    "name": "太平慧懑",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "太平",
+        "context": "明斯要而莫之得也 ( 与佛眼  书 )  演祖自海会迁东山。太平佛鉴。⻰门佛眼。二人诣山头省觐。祖集耆  旧主事。备汤果夜话"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "太平",
+        "context": "执赤幡。把明鉴。说如铁 橛子传法偈。达磨六宗与外道立义。天下太平翻转我天尔狗。皆神 机迅捷。非拟议思量所测。洎到梁游魏。尤复"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "太平",
+        "context": "焰。且道。放 行为人好。把住为人好。横按镆[铒*ㄗ]全正令。太平寰宇斩痴 顽。下座。 上堂云。化育之本物我同途。祖佛之源古今"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "fengxue-yanzhao",
+    "name": "风穴延沼",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "风穴",
+        "context": "目没处藏　世界坏时渠不朽  ### 第二十四则 离却语言  风穴和尚。因僧问。语默涉离微。如何通不犯。穴云。长忆江南三月里。"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "风穴",
+        "context": "笼罗出窠臼。虎骤龙驰星飞 电激。卷舒擒纵皆据本分绵绵的的。到风穴兴化唱愈高机愈峻。西 河弄师子。霜华奋金刚王。非深入阃奥亲授"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "风穴",
+        "context": "出窠臼。虎骤龙驰星飞 电激。卷舒擒纵皆据本分。绵绵的的到兴化风穴唱愈高机愈峻。西 河弄师子。霜华奋金刚王。非深入阃奥亲受印记"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "tongrong",
+    "name": "通容",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "yinyuan-longqi",
+    "name": "隐元隆琦",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "zhenjing-kewen",
+    "name": "真净克文",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "真净",
+        "context": "故于涅繁了义教中。破彼偏见。  正法心传 而显说真常真乐真我真净。汝今依言背义。以断灭无常。及确定 死常。而错解佛之圆妙最后"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "真净",
+        "context": "之学者治心。今之学者治迹。然心与迹相去霄  壤矣  英邵武谓真净文和尚曰。物暴⻓者必夭折。功速成者必易坏。不推久  ⻓之计。"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "真净",
+        "context": "同于交芦,是故汝今知见立知,即无明本,知见无见,斯即涅槃无漏真净,云何是中  更容他物!尔时世尊,欲重宣此义,而说偈言。  "
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "真净",
+        "context": "着。实 须是猛利奋发。倒肠换肚莫取恶知恶见莫杂毒食。一味纯正真净妙 明。直下蹋着本地风光。到安稳大解脱之地。坐断报化佛头。凛"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "真净",
+        "context": "达空拨无因果处。则永劫出他地狱三涂因果不得。若真实彻 证。到真净明妙实际理地。则四圣六凡三世诸佛天下祖师有情无 情。悉于是中"
+      }
+    ],
+    "has_match": true,
+    "match_count": 5
+  },
+  {
+    "id": "foyin-liaoyuan",
+    "name": "佛印了元",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "佛印",
+        "context": "别。盖其德感人如此 ( 山堂小参 )  高庵退云居。圆悟欲治佛印卧⻰庵为燕休之所。高庵曰。林下人苟有  道义之乐形骸可外。予"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "佛印",
+        "context": ", 也都能精微洞悉, 真实了然, 就象看手掌中的果子一样, 佛印证我已经得成阿罗汉  的果位, 现在佛问我们什么最圆满通达,"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛印",
+        "context": "说玄说妙说理说事。却须放却玄妙放却理 性。打破向上向下。截断佛印祖机。直得东西不辨南北不分蒙蒙 [目*董][目*董]。遇饭吃"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "tianyi-yihuai",
+    "name": "天衣义怀",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "kaifu-daoning",
+    "name": "开福道宁",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "fojian-huiqin",
+    "name": "佛鉴慧勤",
+    "type": "persons",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "佛鉴",
+        "context": "闻⻅疑而不信矣。尔辈  他日若有把茅盖头。当以此而自勉 ( 佛鉴与佛果书 )  演祖曰。师翁初住杨岐。老屋败椽仅蔽⻛雨。适临"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛鉴",
+        "context": "次请升座说偈 众生本来是佛 寓言 举民公充座元有偈曰 示众 佛鉴和尚忌辰示众 示丹霞佛智裕禅师 示择言禅人三偈 示若平禅人 "
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "zhenxie-qingliao",
+    "name": "真歇清了",
+    "type": "persons",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "alias",
+        "matched_term": "清了",
+        "context": "制食品,这  样的比丘, 才是真正脱离了世间烦恼的束缚, 还清了宿世的债务, 再也不会浮游于三界之间,  为什么这样说呢?穿"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "alias",
+        "matched_term": "清了",
+        "context": "众生的病的区别,以及不厌离  身、不乐涅槃的菩萨行;同时也划清了与众魔外道的区别,“众魔者乐生  死,菩萨于生死而不舍;外道"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "strategy": "alias",
+        "matched_term": "清了",
+        "context": "在水里捞珠子，最好等波浪平息；水动荡时去取，很难得到。定水澄清了，心中的明珠自然显现。  > 若无定力，甘伏死门。掩目空归，"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "puming",
+    "name": "普明禅师",
+    "type": "persons",
+    "wrong_book": "shiniutu",
+    "wrong_book_title": "十牛图颂并序",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "yangshan-huiji",
+    "name": "仰山慧寂",
+    "type": "persons",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "matches": [
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "齐。减师半德。见过于师。 方堪传授。子甚有超师之见。后沙山问仰山。白丈再参马祖竖拂 因缘。此二尊宿意旨如何。仰山云。此是显大"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "alias",
+        "matched_term": "慧寂",
+        "context": "先修三摩钵提次修禅那后修奢摩他。若诸菩萨以幻力起变化用资于静慧寂灭双俱。此菩萨名先修三摩钵提齐修奢摩他禅那。若诸菩萨以幻力起"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "而能使衲子  服从。法度凌迟而欲禁丛林暴慢。昔育王谌遣首座。仰山伟贬侍僧。  载于典文。足为令范。今则各徇私欲。大堕百丈规绳"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "问：\"如何是透脱一路？\"师云：\"天台华顶，赵州石桥。\"  举仰山云：\"如来禅即许师兄会。\"僧便问：\"如何是如来禅？\"师云：\""
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "　进步口喃喃　知君大罔措  ### 第二十五则 三座说法  仰山和尚。梦见往弥勒所安第三座。有一尊者。白槌云。今日当第三座说"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "时亦不率易。如让师在曹溪八 年。马祖之与观音。德峤之与龙潭。仰山之于大圆。临济之于断 际。皆不下一二十载。是故一言一句一机一"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "仰山",
+        "context": "威风。有如是自在。若随人脚跟转。觅人涎唾吃。则没交 涉。且如仰山问同参道。近日见处如何。对曰。实无一法可当情。 山云。师弟解"
+      }
+    ],
+    "has_match": true,
+    "match_count": 7
+  },
+  {
+    "id": "danxia-zichun",
+    "name": "丹霞子淳",
+    "type": "persons",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "matches": [
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "丹霞",
+        "context": "。 欲益无所益。欲为无所为。宜作舟航。无久住此。山乃辞祖。 丹霞天然禅师再参祖。未参礼。便入僧堂内。骑圣僧颈而 坐。时大众惊"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "丹霞",
+        "context": "后嗣汾阳。道风大振。号西河师子。  暗室不忽 宏智禅师。初侍丹霞淳。因与僧征诘公案。不觉大咲。淳责曰。汝咲这一声。失了多少好"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "丹霞",
+        "context": "示无住道人 示元长禅人 示超然居士赵判监 贵妃乔氏求法语 示丹霞佛智裕禅师 示杨无咎居士 示成都府雷公悦居士 书 与耿龙学书"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "丹霞",
+        "context": "窟？」师云：「曾有问我，直得五年分疏不得。」  有官人问：「丹霞烧木佛，院主为什么眉须堕落？」师云：「官人宅中变生作熟，是什"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "furong-daookai",
+    "name": "芙蓉道楷",
+    "type": "persons",
+    "wrong_book": "baojingsanmei",
+    "wrong_book_title": "宝镜三昧歌",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "zhongfeng-mingben",
+    "name": "中峰明本",
+    "type": "persons",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "matches": [
+      {
+        "book_id": "xiuxinjue",
+        "book_title": "高丽国普照禅师修心诀",
+        "strategy": "alias",
+        "matched_term": "明本",
+        "context": "事，自恃顿悟，不除习气，终成狂禅，遇境即迷。二者执事废理，不明本心，盲目苦行，犹如磨砖作镜，终不能成。  欲除烦恼，当观烦恼"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "alias",
+        "matched_term": "明本",
+        "context": "无  上正觉  卷五  一、根尘同缘,脱缚无二,知见立知即无明本,知见无就是无漏的涅槃  二、六根之结开解,一根之说亦亡,就"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "中峰",
+        "context": "古德行持——道安独坐静室十二年、慈明引锥自刺、高峰胁不沾席、中峰以头触柱、圜悟十年无一时异缘。皆示修行须吃苦耐劳、死志做工夫"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "alias",
+        "matched_term": "明本",
+        "context": "言道合随处 皆真。一句无私全彰宝印。问得也善不问甚奇。烜赫光明本无向 背。所以道。无边刹海。自他不隔于毫端。十世古今。始终不"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "gaofeng-yuanmiao",
+    "name": "高峰原妙",
+    "type": "persons",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "matches": [
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "高峰",
+        "context": "\"诸祖苦功\"录古德行持——道安独坐静室十二年、慈明引锥自刺、高峰胁不沾席、中峰以头触柱、圜悟十年无一时异缘。皆示修行须吃苦耐"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "高峰",
+        "context": "方来共守寂寥。若信得及。不在忉忉。 或未谙详。听取个末后句。高峰突兀倚天门。青嶂虚闲可垜跟。折 脚铛儿幸然在。不妨携去隐深云"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "高峰",
+        "context": "师云：「问问。」  问：「高峻难上时如何？」师云：「老僧不向高峰顶。」  问：「不与万法为侣者是什么人？」师云：「非人。」 "
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "xueyan-zuqin",
+    "name": "雪岩祖钦",
+    "type": "persons",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "matches": [
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "雪岩",
+        "context": "。没兴路头穷。踏翻波是水。超群老赵州。面目只如此。秋间临安见雪岩．退耕．石坑．虚舟．诸大老。舟劝往皖山。山问。光明寂照遍河沙"
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  },
+  {
+    "id": "poan-zuxian",
+    "name": "破庵祖先",
+    "type": "persons",
+    "wrong_book": "changuancejin",
+    "wrong_book_title": "禅关策进",
+    "matches": [
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "alias",
+        "matched_term": "祖先",
+        "context": "正坐禅研究根尘。以真古教精炼定慧。况至鞭策怠慢激发中止者。佛祖先鉴。可仰以依行矣。  宝历十二年龙集壬午孟正月 住豆之龙泽东"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "alias",
+        "matched_term": "祖先",
+        "context": "水乳相合。得坐披衣养得纯熟待霜露果熟出头来。便与么用。 始合祖先本因地。发行一周佛事。所以道。要穷恁么事。须是恁么 人。若是"
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "niaoke-daolin",
+    "name": "鸟窠道林",
+    "type": "persons",
+    "wrong_book": "huanwuxinyao",
+    "wrong_book_title": "佛果圜悟真觉禅师心要",
+    "matches": [
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "鸟窠",
+        "context": "透。目前万法平沉。无始妄想荡尽。 德山隔江招扇。使有人承当。鸟窠吹布毛。寻有人省悟。得非此段 大因缘时至。根苗自生耶。抑机感"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "鸟窠",
+        "context": "睦州得 此时节便道现成公案放尔三十棒。俱胝一指头上用此时节。鸟窠吹 布毛处见此时节。以要言之。古来宗师无不皆用此个时节。只如"
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "xuedou-zhongxian",
+    "name": "雪窦重显",
+    "type": "persons",
+    "wrong_book": "huanwuyulu",
+    "wrong_book_title": "圆悟佛果禅师语录",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "雪窦",
+        "context": "如煮木札羹炊铁钉  饭。与后辈咬嚼目为拈古。其颂始自汾阳。暨雪窦宏其音显其旨。汪  洋乎不可涯。后之作者。驰骋雪窦而为之。不"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "雪窦",
+        "context": "道洞山不肯雪峰，意在什么处？万里无云天有过，碧潭似镜月难来。雪窦宗云：直木不栖鸾凤，金针已绣鸳鸯。若不是新丰老人，便见冰消瓦"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "雪窦",
+        "context": "归乡。潜神隐照于水晶宫。成四十年一片事。拨正智门。老祚寻 出雪窦大云门正宗。或留再出皆以缘断。今既万里西归。但存行脚 本志。"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "雪窦",
+        "context": "作么生是不离当处底一句。鹤飞千尺雪。龙起 一潭氷。 上堂云。雪窦道。义出丰年。俭生不孝。于衲僧门下是放行是把 住。若人道得。"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "zongze",
+    "name": "长芦宗赣",
+    "type": "persons",
+    "wrong_book": "zuochanyi",
+    "wrong_book_title": "坐禅仪",
+    "matches": [
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "长芦",
+        "context": "岩芝云：总不合得他衣钵，却与古佛同参。且道参阿谁？天童觉云：长芦则不然，直须将来。若不将来，争知不受？将来底必应是眼，不受底"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "长芦",
+        "context": "圣。若也不见。切忌踌蹰。拨转上头关捩子。分身百亿化无边。 请长芦觉禅师上堂。多子塔前分半座。截断众流。少林端拱历九 年。壁立"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "strategy": "core2",
+        "matched_term": "长芦",
+        "context": "# 坐禅仪  > **作者**: 长芦宗赜 | **分类**: 禅修指南 | **出处**: 宋·"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "sanlun-tikong",
+    "name": "三轮体空",
+    "type": "concepts",
+    "wrong_book": "sixingguan",
+    "wrong_book_title": "菩提达摩大师入道四行观",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "foxing-changzhu",
+    "name": "佛性常住",
+    "type": "concepts",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "议！纵然流转于婴 婆世界，却无损其身，真是不可思议！纵使得证佛性，对它亦无 所增益，真是不可思议！它存在每个人内，却无人认出"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "见么？ 故知有为之法，如梦幻等，若不急寻师，空过一生。然则 佛性自有，若不因师，终不明了。不因师悟者，万中希有。若自 己以缘"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "与主旨  **关键词**：寂灭为体 · 离相为宗 · 三毒即佛性 · 五蕴窟宅 · 无心见佛  **主旨**：《悟性论》以“"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "苦。何以故？由彼染心，障真如体故。十地经云： 众生身中有金刚佛性，犹如日轮，体明圆满，广大无边，只为五 阴重云所覆，如瓶内灯"
+      },
+      {
+        "book_id": "xixulun",
+        "book_title": "菩提达摩大师息许论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "关键词与主旨  **关键词**：息妄 · 得意忘言 · 真如佛性 · 不逐文辞 · 一乘  **主旨**：《息心论》（此页题"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "，只在你当下这一念。  > 守一不移，动静常住，能令学者明见佛性。  白话：守住这一念真心不令移动，动时静时都安住其中，修行"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "# 🗝️ 关键词与主旨  **关键词**：守本真心 · 金刚佛性 · 日轮之喻 · 五阴黑云 · 本来清净  **主旨**："
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "言。汝是岭南人。又是猿獠。若为堪作佛。 惠能曰。人虽有南北。佛性本无南北。獠身与和尚不同。 佛性有何差别。 五祖更欲与语。且"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "，直下契会**：“绝学无为闲道人，不除妄想不求真。无明实性即佛性，幻化空身即法身。”直指本性天真，无需外求或刻意除妄。 2."
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "宗师手眼，不可执一语为定法。又“作用是性”之语（扬眉瞬目皆是佛性），未悟者易错认意识分别为佛性，须有明眼人勘验。  ## 💬"
+      },
+      {
+        "book_id": "linji",
+        "book_title": "镇州临济慧照禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "“立处皆真”与“无位真人”——指出每一个活生生的人当下即具足佛性，无需向外攀缘求佛、求法。临济反复呵斥那些死读经书、盲目崇拜"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "一念之心即是，何须别处寻讨。 大道晓在目前，迷倒愚人不了。 佛性天真自然，亦无因缘修造。 不识三毒虚假，妄执浮沉生老。 昔时"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "于“无念为宗，无相为体，无住为本”，直斥渐修法门的滞碍，强调佛性本有，不假雕饰，一念回光，即同本得。此文不仅是了解南宗顿教思"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "庄旱损我总不忧。只忧禅家无眼。今夏  百余人。室中举个狗子无佛性话。无一人会得。此可为忧。至哉斯  言。与忧院门不办。怕官人"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "、行阴、识阴等心理与生理的本能,  阴就是说它能遮蔽我们真如佛性的光辉。另阴同蕴,蕴涵、含藏,含藏在如来藏性之中)六  入("
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "”,倡声闻乘、缘觉乘、菩萨乘  同归一佛乘,主张一切众生悉有佛性。《法华经》是南北朝之后,中国佛  教走向以大乘佛教为主流的"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "说法**：南阳忠国师说\"墙壁瓦砾是古佛心\"，看似与\"有情才有佛性\"矛盾。实则忠国师是从\"无其情识系执\"的意义上说无情——无情"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "言有。无则言无。是则言是。非则言非。二理实者。一切众生。皆有佛性。如来涅槃。常住不变。是以智者。行四实语。观彼众主。旷劫已来"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "，更须知有全提时节。\"  师有时云：\"横说竖说，菩提涅槃真如佛性，总是向下商量。直得拈槌竖拂时节，亦是横说竖说。对前头犹较些"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "# 📌 重点内容  - **赵州狗子（第一则）**：狗子还有佛性也无？州云\"无\"。无门令参此\"无\"字——通身起疑团，如吞热铁"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "夫。只管道难了又难。若是丈夫汉。看个公案。僧问赵州。狗子还有佛性也无。州云无。但二六时中看个无字。昼参夜参。行住坐卧。着衣吃"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "正是此论所开显的\"一心\"。\"真如内熏\"之说，为禅宗\"众生本具佛性\"提供了理论依据。论中\"依于一心有二种门\"的架构，与禅宗\"迷"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "。辨其由来。验其存坐。攻其所偏坠。夺其所执着。直截指示令 见佛性。到大休大歇安乐之场。所谓抽钉拔楔解黏去缚。切不可将 实法系"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "道。有一物上拄天下拄地。常在动 用中。动用中收不得。谓之本源佛性显成。知解宗徒更云。说似一 物即不中。亦不免涉三寸路。直得不"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "、参究、圜悟克勤、临济宗、杨岐派、径山宗杲、宗门三关、狗子无佛性  ## 主旨  大慧宗杲以看话禅为宗，力主参\"无\"字话头，"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "**：六祖问\"吾有一物无名无字\"，神会答\"诸佛之本源，神会之佛性\"却被斥为孽子，怀让答\"说似一物即不中\"被印可为嫡子。差别在"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "；八十种好属色，若以色见我，是人行邪道，不能见如来。  问：佛性与众生性，为同为别？  师云：性无同异。若约三乘教，即说有佛"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "佛性",
+        "context": "机锋峻烈，一言半句便能令人言下知归。其\"庭前柏树子\"\"狗子无佛性\"\"吃茶去\"\"洗钵去\"等公案，流传千古，为后世参禅最熟之话头"
+      }
+    ],
+    "has_match": true,
+    "match_count": 28
+  },
+  {
+    "id": "wenzi-bore",
+    "name": "文字般若",
+    "type": "concepts",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "。今付无法时，法法何曾法。”传的是“无法之法”，正是禅宗不立文字的根据。 - **觉林菩萨偈**（附）：“心如工画师，能画诸"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "文殊与佛的问答，层层荡相遣执——众生界不增不减、般若不可住、文字性空——最终归于一行三昧：法界一相，系缘法界。四祖道信“念佛"
+      },
+      {
+        "book_id": "zhangzhi",
+        "book_title": "杖指教授",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "别了。老人家，好好修持这真实义吧！将这修持谨记于心！ 不要将文字错认为意义，不要与你的友人，即勤勉精进， 相互分离！要以正念"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "词与主旨  **关键词**：见性成佛 · 心即是佛 · 不立文字 · 离心无佛 · 实相无相  **主旨**：《血脉论》为达"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "，此皆大禅定 力。 凡将心求法者为迷，不将心求法者为悟。不著文字名解脱， 不染六尘名护法，出离生死名出家，不受后有名得道，不"
+      },
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "既不可得，过去诸佛皆得菩提，此谓 可乎？” 答曰：“但以世谛文字之言得，于真谛实无可得。故《维 摩经》云：“菩提者，不可以身"
+      },
+      {
+        "book_id": "xixulun",
+        "book_title": "菩提达摩大师息许论",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "此页题作“息许论”，传本异名）主旨在于“息”：息诸诤论、息逐文字之心。论云道真如难辨，不在强文之中；如来设教虽演三乘，义归于"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "分明，然后乃当为人师耳。复须内外相称，理行不相 违，决须断绝文字语言，有为圣道，独一净处，自证道果也。 或复有人，未了究竟法"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": " ## ⚠️ 阅读难点  坛经版本较多（宗宝本、敦煌本等），文字小有出入；“无念”最易错解为百物不思——六祖明言“无念者，于"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": " - **灵光独耀颂**：灵光独耀，迥脱根尘；体露真常，不拘文字。心性无染，本自圆成；但离妄缘，即如如佛。 - **歇缘之教"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "安县黄檗山鹫峰下。乃曹溪六祖之嫡孙，百丈之子也。独佩最上乘离文字之印，唯传一心，更无别法。心体亦空，万缘俱寂。如大日轮升虚空"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "之辨**：理即顿悟，乘悟并销；事非顿除，因次第尽。 - **文字之辨**：此宗非文字相，不离文字；执文字是魔网，离文字亦为魔"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": ")  灵源谓觉范曰。闻在南中时究楞严特加笺释。非不肖所望。盖文字之  学不能洞当人之性源。徒与后学障先佛之智眼。病在依他作解"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "所知的妄想识心, 来测度如来无上  的菩提正觉,用世间的语言文字,就想进入佛的正知正见,这就象是琴瑟、 箜篌、 琵琶等乐  "
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "摩诘长者“默然无言”，文殊菩萨赞叹曰：“善哉！善哉！乃至无有文字言语，是真入不二法门！”——此即震古烁今的“维摩一默如雷震”"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "空。当知诸法。但有名字。故经云。乃至涅槃。亦但有名字。又云。文字性离。名字亦空。何以故。法不自名。假名诠法。法既非法。名亦非"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "公案集之一。与《碧岩录》并称\"双璧\"，但风格迥异——碧岩录重文字评唱，无门关则以\"无门\"为法门，以极简的公案逼拶学人当下透脱"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "时。总用不着。  评曰。不可见恁么说。便谤经毁法。盖此语为著文字。而不修行者戒也。非为不识一丁者。立赤帜也。  东山演禅师送"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "。  ### 三、真如义 > 一切诸法从本已来性离语言。一切文字不能显说。离心攀缘无有诸相。究竟平等永无变异不可破坏。唯是一"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "无为大解脱人。**  ## 重点  1. **直指人心，不立文字**：圜悟反复强调祖师西来唯直指人心，不在言语句上作解会。人"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "颂古，以诗偈形式评唱公案，既具文学之美，又含机锋之利，是宋代文字禅的巅峰之作。  ## 📖 重点内容  ### 一、上堂法语"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "处蓦然透脱。他曾焚其师圜悟克勤的《碧岩录》刻板，以防学人沉迷文字而失却禅宗直指人心之旨。  本语录共三十卷，内容涵盖：上堂示"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "大愤志、大疑情；须离十种病——意根卜度、扬眉瞬目、语路活计、文字引证、举起承当、无事匣里、有无会、真无会、道理会、将迷待悟。"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "文字",
+        "context": "外道水陆诸神，如此修行，当复何益？志公云：本体是自心作，那得文字中求？如今但识自心，息却思惟，妄想尘劳，自然不生。净名云：唯"
+      }
+    ],
+    "has_match": true,
+    "match_count": 24
+  },
+  {
+    "id": "li-ju-shi-zao",
+    "name": "理具事造",
+    "type": "concepts",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "jiaoli-guanxing",
+    "name": "教理观行",
+    "type": "concepts",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "心本具的灵明觉性，方能顿悟成佛。阅读此铭，能让人从纷繁复杂的教理中跳脱出来，直达禅宗“直指人心，见性成佛”的最上乘境界。  "
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "总结。全篇对仗工整，气势磅礴，犹如一篇禅宗的战斗檄文。其核心教理在于“无念为宗，无相为体，无住为本”，直斥渐修法门的滞碍，强"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "言,曾受业于大乘学者支娄迦谶的弟子、同族学者支亮,精通大乘佛教理  论,与支娄迦谶、支亮并称为“三支”。东汉末年,支谦避乱迁"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "章层层递进：先立根本（皈敬发愿），次修加行（净业亲师），再明教理（三乘渐次、事理不二），终入正行（正修止观、观心十门）。  "
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "理语与禅语交织**：圜悟文中常融摄教下理路与宗门机用，需兼具教理素养与禅宗体验方能透彻。 2. **古德公案引用密集**：书"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "教理",
+        "context": "。 - **法语中的天台教观**：大慧法语中常引用天台、华严教理，须有一定教理基础。  ## 名句白话  - **\"一茎草上"
+      }
+    ],
+    "has_match": true,
+    "match_count": 6
+  },
+  {
+    "id": "benjue-shijue",
+    "name": "本觉始觉",
+    "type": "concepts",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": "》  ## 💡 现代白话导读与核心旨趣  莲花生大士开示直观本觉、无染自解脱之大圆满与禅宗同质心法。 本典籍直指“若见性即是"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": "亦名佛性，亦名诸法 实性实际，亦名净土，亦名菩提、金刚三味、本觉等，亦名涅 界、般若等。名虽无量，皆同一体，亦无能观所观之意"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": ",随众生心,应所知量  五、阿难说偈赞佛  卷四  一、 把本觉妙明的体性妄立为所明的对象, 就妄有了世界、 众生、 业果等"
+      },
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": " **骑牛归家**：骑牛迤逦欲还家——妄念调伏，人牛合一，归本觉故乡。 - **忘牛存人**：牛也空兮人也闲——能所双泯，无"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": "来不如实知真法一故。不觉心起而有妄念。然彼妄念自无实相。不离本觉。犹如迷人依方故迷。迷无自相不离于方。众生亦尔。依于觉故而有"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "本觉",
+        "context": "竟如何。 八角磨盘空里走。 郓王请小参。僧问。无修无证。乃是本觉妙明。为求佛果菩提。正 是有作之因。去此二途。请师直指。师云"
+      }
+    ],
+    "has_match": true,
+    "match_count": 6
+  },
+  {
+    "id": "si-xiang",
+    "name": "破除四相",
+    "type": "concepts",
+    "wrong_book": "jingangjing",
+    "wrong_book_title": "金刚般若波罗蜜经",
+    "matches": [
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "**: 《正法心传》  ## 💡 现代白话导读与核心旨趣  破除外在名相形式执着，将六度、持戒、建寺、诵经归结于自心观照。 "
+      },
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "知 · 安心  **主旨**：《无心论》专辨“无心”的真义，破除两种错会：一者以无心为百物不思、如木如石（断灭见）；二者以无"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "得”。书中深入浅出地辨析了戒定慧、色空、心佛等核心概念，不仅破除了修行人在名相上的执着，更为后学提供了一条清晰直截的入道阶梯"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "食舒适、谄媚权贵，则心性已染，绝不可能彻悟本来。 3. **破除名利虚妄**：死心悟新与大慧宗杲大师痛陈“光阴迅速，生死事大"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "为缘起，佛陀放光召文殊师利菩萨持神咒救护，继而展开了一场关于破除妄想识心、彻见湛然常住圆满真心的伟大对话。  《楞严经》在禅"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "破除",
+        "context": "够摄伏、  怖畏群兽。此喻诸菩萨演说佛法,能够灭除一切戏论,破除各种异见,摄  伏种种异学。  [9]三宝:即佛、法、僧三宝"
+      }
+    ],
+    "has_match": true,
+    "match_count": 6
+  },
+  {
+    "id": "si-bing",
+    "name": "作止任灭四种修行病",
+    "type": "concepts",
+    "wrong_book": "yuanjuejing",
+    "wrong_book_title": "大方广圆觉修多罗了义经",
+    "matches": [
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "作止",
+        "context": "大自各离。谁为和合者。如是渐修习。一切皆清净。不动遍法界。无作止任灭。亦无能证者。一切佛世界。犹如虚空花。三世悉平等。毕竟无"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "作止",
+        "context": "智能。多⻅于已然。不能⻅于未然。止观定慧。  防于未然之前。作止任灭。觉于已然之后。故作止任灭所用易⻅。止  观定慧所为难知"
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "tou-xin-wei-si",
+    "name": "偷心未死",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "偷心",
+        "context": ", 其心不偷, 则不随其生死相续。 汝修三昧, 本出尘劳, 偷心不除,  尘不可出,纵有多智,禅定现前,如不断偷,必落邪道。"
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  },
+  {
+    "id": "de-hua-li-zhi",
+    "name": "德化与礼治",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "德化",
+        "context": "基**：警策学者修道必先立德。黄龙慧南大师云：“住持大有三：德化也，礼治也，政刑也。”无德而徒施严刑，适足以败坏丛林。 2."
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  },
+  {
+    "id": "yixin-sanguan",
+    "name": "一心三观",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "幸佛子，谛听觉照！ 三味耶！ 何其奥妙！娑婆与涅繁同时圆具于一心之内，它的本性亘 古即然，你却无缘得识。它空明无染，永世不灭"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "中反复破斥心外求佛、着相修行的种种歧路，指出“三界兴起，同归一心”，一切众生本来是佛，但因妄想执着不能证得。其文如老吏断狱，"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "即入三 界；一念心灭，即出三界。是知三界生灭，万法有无，皆由一心。 凡言一法者，似破瓦石竹木无情之物。若知心是假名，无有实体"
+      },
+      {
+        "book_id": "xixulun",
+        "book_title": "菩提达摩大师息许论",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "，必达其源，事成不久。 夫道体之本，以己为源；万行缘由，不离一心为主。只为 人多不信，一执坚牢，一向贪着，外求总总，不及向己"
+      },
+      {
+        "book_id": "xinxinming",
+        "book_title": "信心铭",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "见不住，慎勿追寻。才有是非，纷然失心。 二由一有，一亦莫守。一心不生，万法无咎。 无咎无法，不生不心。能随境灭，境逐能沉。 "
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "并皆是空，妄想而见也。 经云：十方国土皆如虚空，三界虚幻唯是一心作。若不得 定，不见一切境界者，亦不须怪。但于行住坐卧中，常"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "*一月之喻**：一月普现一切水，一切水月一月摄——法界缘起与一心圆融的绝妙比喻。 - **师子吼**：师子吼，无畏说，深嗟懵"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "自心是佛。此心即佛。达摩大 师。从南天竺国。来至中华。传上乘一心之法。令汝等开悟。又 弓[楞伽经。以印众生心地。恐汝颠倒不信"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "的法嗣，临济义玄的师父，其禅风以孤峻高直著称。本书通篇围绕“一心”展开，明确指出“诸佛与一切众生，唯是一心，更无别法”。黄檗"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "禅那。先取数门。心中分明起止念数。如是乃至于出入息分明觉了。一心寂静。渐次增进。如是乃至心住至静。非彼所闻一切境界终不可取。"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "，动作不轻，动静有序。”修禅绝非狂禅口头禅，而是从一言一行、一心一意中彰显自性尊贵。  本典籍为全4卷完整汇编，是当代参学修"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "发明妙用, 圆融遍照十方法界, 所以在妙明正觉的妙觉心中, 一心能生万法, 万法  唯是一心, 小中可以现大,大中可以现小,"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "清净,摄诸毁禁;以忍调行,摄诸恚怒;  以大精进,摄诸懈怠;一心禅寂,摄诸乱意;以决定慧,摄诸无智。  虽为白衣[3],奉持"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "定慧均等。舍于二边。三乘渐次第七。定慧既均。则寂而常照。三观一心。何疑不遣。何照不圆。自解虽明。悲他未悟。悟有浅深。故次第七"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "\"如何是和尚禅？\"师叱云：\"元来只在者里。\"  举三祖云：\"一心不生，万法无咎。\"师云：\"只者里悟了。\"乃拈起拄杖云：\"乾坤"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "。昏睡惑心。有悬崖。下望千仞。旁出一树。以草藉之。趺坐其上。一心系念。动经宵日。怖死既重。专精不二。后遂超悟。  引锥自刺 "
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "》相传为印度马鸣菩萨所造，是大乘佛教的核心论典之一。此论以\"一心二门三大\"的框架，系统阐述了大乘佛教的根本教义：一切众生心含"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "于小小得失是非 荣枯寂乱。直下截断。把得住作得主。长养将去。一心不生万法无 咎。只是切忌起见作承当。便落彼我必生爱憎。不能脱"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "承谁恩力。还委悉么。五蕴山头无相佛。放光动地廓周沙。颂 云。一心无住著。遍界法王家。崇成无漏福。端坐宝莲华。 坦然居士为贡沙"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "，明寂自现。  前际如空，知处迷宗。 分明照境，随照冥蒙。 一心有滞，诸法不通。 去来自尔，胡假推穷。  生无生相，生照一同"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "法之核心文献。文中裴休以学人身份层层设问，黄檗棒喝交施，直指一心。其要旨曰\"即心是佛，无心是道\"——心本是佛，不假修成；但能"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "一心",
+        "context": "，尽是贴体衣服，亦名烦恼。不问即无烦恼，实际理地，什么处着。一心不生，万法无咎。但究理而坐二三十年，若不会，截取老僧头去。梦"
+      }
+    ],
+    "has_match": true,
+    "match_count": 22
+  },
+  {
+    "id": "lishi-wuai",
+    "name": "理事无碍",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "理事",
+        "context": "一切法尽  正法心传 是理。若立事。一切法尽是事。举一千从。理事无别。尽是妙用。 更无别理。皆由心之回转。警如月影有若千。真"
+      },
+      {
+        "book_id": "baojingsanmei",
+        "book_title": "宝镜三昧歌",
+        "strategy": "core2",
+        "matched_term": "理事",
+        "context": "交融而不混杂。全篇以\"银盌盛雪，明月藏鹭\"开篇，喻法界一相、理事交融；以\"重离六爻，偏正回互\"为核心，以《周易》离卦之变说明"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "理事",
+        "context": "圆顿之理。 - **事理不二**：事非理不成，理非事不显——理事交融，方为圆顿。 - **正修止观**：奢摩他（止）为定，毗"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "理事",
+        "context": "慴。妖邪拟之魂亡。千圣拱手归降。十方居然坐断。外绝四维 内绝理事。直下便是。诸人还见么。不离当处常湛然。觅则知君不 可见。下"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "yinian-sanqian",
+    "name": "一念三千",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "专称他的名号，面向那方净土端身正坐；一佛念到相续不断，就在这一念里，三世诸佛一齐显现——念的不是心外之佛，是自心本具之佛。 "
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "本觉就 是这个，你怎能说，你寻不看自已的心性？心性原本就是那一念， 你百般寻找，为何仍说找不到那个起心动念的人？ 由是可见，"
+      },
+      {
+        "book_id": "zhangzhi",
+        "book_title": "杖指教授",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "既寂又照。认出它，你就见到了自己的本来面目——成佛大事，在此一念。  ## 📜 典籍原文  杖指教授 当伟大的上师莲花生居住"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "：见性成佛。若见性即是佛，不见性即是众生；佛与差别，只在迷悟一念。论中反复破斥心外求佛、着相修行的种种歧路，指出“三界兴起，"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "知有相，是无相之相，不可以眼见，唯 可以智知。若闻此法者，生一念信心，此人以发大乘超三界。三 界者，贪嗔痴是。返贪嗔痴为戒定"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "也。故 言阿僧祗，汉名不可数。此三毒心，于中有恒沙恶念，于一一念 中，皆为一劫，如是恒沙不可数也，故言三大阿僧祗。真如之性，"
+      },
+      {
+        "book_id": "xinxinming",
+        "book_title": "信心铭",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "言不二。不二皆同，无不包容。 十方智者，皆入此宗。宗非促延，一念万年。 无在不在，十方目前。极小同大，忘绝境界。 极大同小，"
+      },
+      {
+        "book_id": "fangcunlun",
+        "book_title": "方寸论",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "就在天堂；恶念一生，此刻就堕地狱——天堂地狱不在别处，就在你一念之间。  > 有无双遣，中道不存。此即方寸之真境，圣凡之同源"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "颗心就是佛，打妄想的这颗心就是凡夫——佛与凡夫，只在你当下这一念。  > 守一不移，动静常住，能令学者明见佛性。  白话：守"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "截去修。  > 前念着境即烦恼，后念离境即菩提。  白话：前一念执着境界，就是烦恼；后一念离境不染，就是菩提——迷悟只在一念"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "观空入定。即属造作。更若向外驰求。转疏转远。但尽三界 心量。一念妄心。即是三界生死根本。但无一念。即除生死根本。 即得法王无"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "解会。起若干种知见。生若干种爱畏。 但了诸法不自生。皆从自己一念妄想颠倒取相而有。知心与境。 本不相到。当处解脱。一一诸法。"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "”等弊病，强调这绝对清净的真心，不生不灭，无形无相，只要当下一念“无心”，当下便与诸佛无异。全书言语透彻，直指人心，不仅是南"
+      },
+      {
+        "book_id": "xiuxinjue",
+        "book_title": "高丽国普照禅师修心诀",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "因此提出了“顿悟渐修”的著名理论。他强调，悟理如同太阳破云，一念之间即见本性；但烦恼习气如同冰冻三尺，非一日之寒，需要悟后起"
+      },
+      {
+        "book_id": "linji",
+        "book_title": "镇州临济慧照禅师语录",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "向外求佛求法，就是在造地狱业；求菩萨也一样——因为佛不在外，一念外求，早已背觉合尘。  > 道流，佛法无用功处，只是平常无事"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "众生不解修道，便欲断除烦恼。 烦恼本来空寂，将道更欲觅道。 一念之心即是，何须别处寻讨。 大道晓在目前，迷倒愚人不了。 佛性"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "体，无住为本”，直斥渐修法门的滞碍，强调佛性本有，不假雕饰，一念回光，即同本得。此文不仅是了解南宗顿教思想的必读文献，也是中"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "佛三四五佛而种善根，已于无量千万佛所种诸善根。闻是章句，乃至一念生净信者，须菩提！如来悉知悉见，是诸众生得如是无量福德。何以"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "虑思惟求哀忏悔。心持二十五轮名字。随结抽掷随手所执便知顿渐。一念疑悔即不成就。尔时世尊。欲重宣此义。而说偈言。  辩音汝当知"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "所以。如人⻓在家愁什么家  中事不办。沩山云。今时人虽从缘得一念顿悟自理。犹有无始习气未  能顿尽。须教渠净除现业流识。即是"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "明, 妙明就是觉性, 根本就没有相同与不同的分别, 只是因为一念妄想心,  炽然成了两个不同的方面, 有了能明与所明、 能觉"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": ",也是最具创造性和思辨性的佛教宗  派。天台宗的理论核心即是一念心。所谓的“一念心”,即“一念无明法性  心”。具有以下特点"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "坐时。更不思惟世间善恶。及无记等事。即此作功。故言即静。串习一念初生者。多接续故起二念。懈怠者有别生一念。惭愧者多即静一念。"
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "作主。遇缘即宗。其或未然、麤餐易饱、细嚼难饥。  【颂曰】 一念普观无量劫　无量劫事即如今　如今觑破个一念　觑破如今觑底人 "
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "到家消息。也巴得搆。也撮得着只待时刻而已。却不得见恁么说。起一念精进心求之。又不得将心待之。又不得纵之弃之。但自坚凝正念。以"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "行要径在于将从前知见、解路、世智辩聪倒底放下，如枯木死灰，到一念不生处，蓦然桶底子脱，契证本光。  3. **专一长久，以悟"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "在于忘情绝照、休歇身心，将从前知见解路倒底放下，如枯木死灰到一念不生处，蓦然桶底子脱。悟后须绵密保任，世法佛法打成一片，终至"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "一念",
+        "context": "，得否？  师云：无心便是行此道，更说什么得与不得？且如瞥起一念便是境，若无一念，便是境妄心自灭，无复可追寻。  问：如何是"
+      }
+    ],
+    "has_match": true,
+    "match_count": 28
+  },
+  {
+    "id": "liuxiang-yuanrong",
+    "name": "六相圆融",
+    "type": "concepts",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "六相",
+        "context": "行中相续, 云我在色。 皆计度言死后有相, 如是循环, 有十六相。 从此或计毕竟烦恼,  毕竟菩提,两性并驱,各不相触。  "
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  },
+  {
+    "id": "wu-shi-yin-mo",
+    "name": "五十阴魔辨析",
+    "type": "concepts",
+    "wrong_book": "lengyanjing",
+    "wrong_book_title": "大佛顶首楞严经 (全十卷)",
+    "matches": [
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "  如是我闻。一时，佛在舍卫国祇树给孤独园，与大比丘众千二百五十人俱。  尔时，世尊食时，着衣持钵，入舍卫大城乞食。于其城中"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "。惜其年深蠹损首尾不完。后来或⻅于语录传记中。积之十年  仅五十篇馀。仍取⻩⻰下至佛照简堂诸老遗语。节葺类三百篇。其所  得"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "成无上道”，为最契合娑婆世界众生的顿悟修行通路。 4. **五十阴魔警策**：全经后半部分详细剖析了修道者在色受想行识五阴阶"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": ",凉主吕隆兵败投降,罗什才被迎入关,东至长  安,这时他已经五十八岁了。姚兴对罗什十分敬重,待以国师之礼。宗室  显贵都信奉"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": " 头角才生已不堪，拟心求佛好羞惭。 迢迢空劫无人识，肯向南询五十三。  师因曹山辞，遂嘱曰：\"吾在云岩先师处，亲印宝镜三昧，"
+      },
+      {
+        "book_id": "bashiguijusong",
+        "book_title": "八识规矩颂",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "六识颂（三首）  三性三量通三境，三界轮时易可知。 相应心所五十一，善恶临时分配之。  性界受三恒转易，根随信等总相连。 动"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "甚生死去来。轩知属缘 于本分事了无交涉。五祖老师常说。我在此五十年。见却千千万万 禅和。到禅床角头只是覔佛做说佛法。并不曾见"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "可谓一回拈出一回新。一度用来一度快。师云。七十二 棒翻成一百五十。师乃云。剑轮顶上。全机独露于孤峰。石火光 中。利刃横施于百"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "迈请退。得旨退居明月堂。隆兴元年八月九日。示寂。寿七十五。腊五十八。谥曰普觉。塔曰宝光。师讳宗杲。宣州宁国奚氏子。十三岁入乡"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "strategy": "core2",
+        "matched_term": "五十",
+        "context": "西山退隐禅师述，是一部禅宗修行指南。退隐禅师住西山十年，博览五十本经论语录，将日用中参决要切之语句辑录成编，间加注解，钩锁连"
+      }
+    ],
+    "has_match": true,
+    "match_count": 10
+  },
+  {
+    "id": "zhuan-shen-ju",
+    "name": "转身句",
+    "type": "concepts",
+    "wrong_book": "dongshanyulu",
+    "wrong_book_title": "洞山良价禅师语录",
+    "matches": [
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "转身",
+        "context": "岩乃开粥同共过夏。（天童杰云：明投暗合，八面玲珑。不犯当头，转身有路。曹洞门下，足可观光。若是临济儿孙，棒折也未放在。当时若"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "转身",
+        "context": "。见蒋山佛果何曾有两种佛法。 若担带来是纳败阙。不担带来须知转身处始得。如今时衲子到处丛 林有宗匠莫不咨参。然求一实证到本分"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "转身",
+        "context": "身。佛眼觑不见。圣智离言说。海口莫能宣。直 截当阳已成阶级。转身吐气转见周遮。明明无覆藏。明明绝点翳。 宽若太虚清如古镜。若"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "yiyin-yanfa",
+    "name": "一音演法",
+    "type": "concepts",
+    "wrong_book": "huanwuyulu",
+    "wrong_book_title": "圆悟佛果禅师语录",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "一音",
+        "context": "量人。通达无取舍。 以知五蕴法。及以蕴中我。 外现众色像。一一音声相。 平等如梦幻。不起凡圣见。 不作涅繁解。二边三际断。 "
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "一音",
+        "context": "净心观佛靡不欣!  各见世尊在其前,斯则神力不共法;  佛以一音演说法,众生随类各得解。  皆谓世尊同其语,斯则神力不共法;"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "一音",
+        "context": "山接诱学徒，厥后盛化豫章高安之洞山。权开五位，善接三根。大阐一音，广弘万品。横抽宝剑，剪诸见之稠林。妙叶弘通，截万端之穿凿。"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "一音",
+        "context": "尘刹。  稽首湛然真妙觉，甚深十二修多罗。 非文非字非言诠，一音随类皆明了。  稽首清净诸贤圣，十方和合应真僧。 执持禁戒无"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "一音",
+        "context": "龙图阁直学士左朝奉大夫知处州军州事兼管内劝农使耿延禧撰 佛以一音。而演说法。故一切法。同此一音。三世诸佛此一音。六 代祖师此"
+      }
+    ],
+    "has_match": true,
+    "match_count": 5
+  },
+  {
+    "id": "wuxin-jueguan",
+    "name": "无心绝观",
+    "type": "concepts",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "无实性 毗舍浮佛偈曰： 假借四大以为身心本无生因境有 前境若无心亦无罪福如幻起亦灭 拘留孙佛偈日： 见身无实是佛身了心如幻是"
+      },
+      {
+        "book_id": "juelin",
+        "book_title": "觉林菩萨偈",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "，色中无大种， 亦不离大种，而有色可得。 心中无彩画，彩画中无心， 然不离于心，有彩画可得。 彼心恒不住，无量难思议， 示现"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "议者。云何而言入不思议三味？ 我初发心欲入是定，而今思惟，实无心相而入三味。如人学射， 久习则巧，后虽无心，以久习故，箭发皆"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "若不见性，皆是外道有为法；“若欲见佛，须是见性”。 - **无心是道**：无心不是没有觉知，是无执着心、无造作心；“无心即无"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "：寂灭为体 · 离相为宗 · 三毒即佛性 · 五蕴窟宅 · 无心见佛  **主旨**：《悟性论》以“道以寂灭为体，修以离相为"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "无边，若唯观心，何由免无穷之苦？ 答：三界业报唯心所生，本若无心，于三界中，即出三界。 其三界者，即三毒也。贪为欲界，嗔为色"
+      },
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "# 菩提达摩大师无心论  > **作者**: 菩提达摩 | **分类**: 达摩"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "信曰：正以如来法性之身清净圆满，一切像类悉于中现， 现法性身无心起作，如颇梨镜悬在高堂，一切像悉于中现，镜亦 无心，能现种种"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "汝在此作 什么。 隍曰。入定。 策云。汝云入定。为有心入耶。无心入耶。若无心入者。 一切无情草木瓦石应合得定。若有心入者。一"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "僧问祖云。请和尚离四句绝百非。直指某甲西来意。祖云。 我今日无心情。汝去问取智藏。其僧乃问藏。藏云。汝何不问取 和尚。僧云。"
+      },
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "师云。一切诸法。本不 自言。空不自言。色亦不言。是非垢净。亦无心系缚人。但为人 自生虚妄系着。作若干种解会。起若干种知见。生"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "病，强调这绝对清净的真心，不生不灭，无形无相，只要当下一念“无心”，当下便与诸佛无异。全书言语透彻，直指人心，不仅是南宗禅法"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "心。 - **禅定新解**：妄念不生为禅，坐见本性为定；对境无心，八风不能动。 - **定慧等学**：定是体，慧是用，如灯与"
+      },
+      {
+        "book_id": "zhigong",
+        "book_title": "宝志公禅师颂偈诗",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "何好。 - **不作底人**：佛是不作底人，莫作如来事业——无心合道，不造佛相。 - **万空之旨**：《万空歌》历数世出世"
+      },
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "心与佛、心与法、心与万物的关系。文章核心在于“心外无佛，佛外无心”，强调一切外求皆是徒劳，唯有回光返照，体认自心本具的灵明觉"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": " 阅读难点  本篇骈俪铿锵，易被文气带过而忽其义；“无念”“无心”诸语须与《坛经》互证——无念者于念而无念，非百物不思。“理"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "迹于负桩贱役之下。初无念于荣  达。而卒当传灯之列。故得之于无心。则其道大其德宏。计之于有  求。则其名卑其志狭。惟师度量凝"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "令谤法, 永退善根,  亦因此心。 若此发明不是心者, 我乃无心同诸土木,离此觉知,更无所有, 云何如来说此非  心,我实惊"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": ",善恶之业亦不亡;  始在佛树力降魔,得甘露灭觉道成。  已无心意无受行,而悉摧伏诸外道;  三转法轮于大千,其轮本来常清净"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "认门头。恰似入京朝圣主，只到潼关即便休。\"  师上堂云：\"道无心合人，人无心合道。欲识个中意，一老一不老。\"（后僧问曹山：\""
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": " ### 第四章 奢摩他颂  奢摩他颂第四 恰恰用心时。恰恰无心用。无心恰恰用。常用恰恰无。夫念非忘尘。而不息尘。非息念而不"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "长养圣胎，打成一片——悟后须绵密保任，世法佛法融通无碍；四、无心无为，平常自在——终不以奇特玄妙为事，只守闲闲地，如痴似兀。"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": " 平常心是道 - 棒喝交施 - 拈古颂古 - 打成一片 - 无心道人 - 教外别传  ## 🎯 主旨  圜悟语录的核心宗旨是"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "，层层破遣，从\"一切莫作\"到\"绝观忘守\"，从\"心外无境\"到\"无心顺物\"，最终归于\"智者方知，非言诠悟\"——与三祖僧璨《信心铭"
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "人身份层层设问，黄檗棒喝交施，直指一心。其要旨曰\"即心是佛，无心是道\"——心本是佛，不假修成；但能无心，便是究竟。黄檗破执尤"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "无心",
+        "context": "：「老僧无工夫趍得者闲汉。」  问：「才有心念，落在人天；直无心念，落在眷属时如何？」师云：「非但老僧，作家亦畣你不得。」 "
+      }
+    ],
+    "has_match": true,
+    "match_count": 26
+  },
+  {
+    "id": "xin-busheng-fajue",
+    "name": "心不生法绝",
+    "type": "concepts",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "普造诸世间， 是人则见佛，了佛真实性。 .6·  正法心传 心不住于身，身亦不住心， 而能作佛事，自在未曾有。 若人欲了知，"
+      },
+      {
+        "book_id": "juelin",
+        "book_title": "觉林菩萨偈",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "普造诸世间， 是人则见佛，了佛真实性。 .6·  正法心传 心不住于身，身亦不住心， 而能作佛事，自在未曾有。 若人欲了知，"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "了决定，是名菩萨摩 诃萨。何以故？得闻如是甚深般若波罗蜜相，心不惊不怖，不没 不悔。” 弥勒菩萨白佛言：“世尊！得闻如是般若"
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "观之，根本无法可修，故无 需修持。既然，那儿本不散乱，你只需心不散乱地安住此境。不 修不整也不散乱，只是觉照一切，你的觉性便"
+      },
+      {
+        "book_id": "xuemaicong",
+        "book_title": "菩提达摩大师血脉论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "道有为法；“若欲见佛，须是见性”。 - **无心是道**：无心不是没有觉知，是无执着心、无造作心；“无心即无佛”与“即心即佛"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "此岸，若悟时无此岸。何以故？为凡夫一向住此。 若觉最上乘者，心不住此，亦不住彼，故能离于此彼岸也。若见 彼岸异于此岸，此人之"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "是防非止恶于自心、忍辱是心无嗔恚、精进是勤修心地法门、禅定是心不散乱、般若是观照自心——度在心上度，不在事相上度。 - **"
+      },
+      {
+        "book_id": "wuxinlun",
+        "book_title": "菩提达摩大师无心论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "是没有真心，是无妄心可得。 - **见闻觉知处即无心**：无心不是离见闻觉知别有，而是见闻觉知而不染着。 - **无心之功*"
+      },
+      {
+        "book_id": "xinxinming",
+        "book_title": "信心铭",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "不住，慎勿追寻。才有是非，纷然失心。 二由一有，一亦莫守。一心不生，万法无咎。 无咎无法，不生不心。能随境灭，境逐能沉。 境"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "，念佛心即是佛。 - **守一不移**：无论行住坐卧，守一真心不移，动中静中一如。 - **五种方便**：知心体（体性清净）"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "起，则是 漏心，只欲亡心，则是无明昏住，又不当理。只欲不止，心不缘 义，即恶取空，虽受人身，行畜生行；尔时无有定慧方便，而不"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "若波罗蜜是梵语。此言大智慧到彼岸。此 须心行。不在口念。口念心不行。如幻如化。如露如电。口念心 行。则心口相应。本性是佛。离"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "。故三界唯心。森罗及 万象。一法之所印。凡所见色。皆是见心。心不自心。因色故有。 汝但随时言说。即事即理。都无所碍。菩提道果"
+      },
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "  - **一心之体**：此心即是佛，佛即是众生；为众生时此心不减，为诸佛时此心不添。 - **无心是道**：但能无心，便是"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "禅定（妄念不生为禅，坐见本性为定）、定慧（如灯与光）、无住（心不住一切处），并以“本自无缚，不用求解脱”一句收束全篇。马祖誉"
+      },
+      {
+        "book_id": "zhenxin",
+        "book_title": "高丽国普照禅师真心直说",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "心出死——宛如十五把钥匙，层层开启心地之锁。其要在于指认：真心不在见闻觉知之外，见色闻声、知寒识热皆是真心之用；但用时不着诸"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "心，应生无所住心。若心有住，则为非住。”  “是故佛说：菩萨心不应住色布施。须菩提！菩萨为利益一切众生，应如是布施。如来说："
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "空花从空而有。花虽销灭空性不坏。众生幻心还依幻灭。诸幻尽灭觉心不动。依幻说觉亦复名幻。若说有觉犹未离幻。说无觉者亦复如是。是"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "( ⻄湖记闻 )  远公谓演首座曰。心为一身之主。万行之本。心不妙悟妄情自生。妄  情既生⻅理不明。⻅理不明是非谬乱。所以治"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "生无量功德。阿难  已知如来世尊,诃须菩提及大迦叶,为阿罗汉心不均平,钦仰如来,开阐无遮,度诸疑谤。  这一天没有人供奉食物"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "境的量度。僧肇《注维摩诘经》卷  一:“既得法身,入无为境,心不可以智求,形不可以像取,故曰无量。  六住已下,名有量也。”"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "三有者么？\"众无对。又云：\"若不体此意，何超始终之患？直须心心不触物，步步无处所，常无间断，始得相应。直须努力，莫闲过日。\""
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "*净修三业**：身口意三业为升沉之基——口无恶说、身无恶行、心不谄曲，三业清净方为道器。 - **三乘渐次**：声闻、缘觉、"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "还梦见未？\"僧云：\"一切智智清净且置，如何是教意？\"师云：\"心不负人，面无惭色。放尔三十棒。\"  问：\"如何是诸佛出身处？\""
+      },
+      {
+        "book_id": "wumenguan",
+        "book_title": "禅宗无门关",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "有不与人说底法么。泉云有僧云。如何是不与人说底法。泉云。不是心不是佛不是物。  【无门曰】 南泉被者一问。直得揣尽家私。郎当"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "应者○看话头做工夫。最是立脚稳当。悟处亲切。纵此生不悟。但信心不退。不隔一生两生。更无不获开悟者○或三十年二十年。未即开悟。"
+      },
+      {
+        "book_id": "dachengqixinlun",
+        "book_title": "大乘起信论",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "取着。经于无量阿僧祇劫。惯习力故无明则灭。无明灭故心相不起。心不起故境界相灭。如是一切染因染缘及以染果。心相都灭名得涅槃。 "
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "转上头关键。万世不拔之功。与古佛同 见同闻同知同用。四祖云非心不问佛。德山云佛只是个无事人。永 嘉云不离当处常湛然覔即知君不"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "。见成公案放行正是黠儿 落节。恁么不恁么。总得曳尾灵龟。不是心不是佛不是物。虚空钉 橛进得。许多闲门破户。独是死水藏龙。倾湫"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "即觉无觉。 得失两边，谁论好恶。 一切有为，本无造作。  知心不心，无病无药。 迷时舍事，悟罢非异。 本无可取，今何用弃。 "
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "道。大道本来平等，所以深信含生同一真性，心性不异，即性即心，心不异性，名之为祖。所以云：认得心性时，可说不思议。  问：佛度"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "心不",
+        "context": "便近前蓦鼻便拽。泉云：「是即是，太粗生。」  师问南泉云：「心不是佛、智不是道，还有过也无？」泉云：「有。」师云：「过在什么"
+      }
+    ],
+    "has_match": true,
+    "match_count": 32
+  },
+  {
+    "id": "dajibenyou",
+    "name": "大机本有",
+    "type": "concepts",
+    "wrong_book": "xinming",
+    "wrong_book_title": "心铭",
+    "matches": [
+      {
+        "book_id": "baizhang",
+        "book_title": "百丈怀海禅师语录",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "云。子已后莫承嗣马祖去么。檗云。不然。今 归因师举。得见马祖大机之用。然且不识马祖。若嗣马祖。已后 丧我儿孙。师曰。如是如是"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "  之衲子。是为虎啸⻛冽⻰骧云起。昔江⻄⻢祖因百丈南泉而显其大机  大用。南岳石头得药山天皇而着其大智大能。所以千载一合论说"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "二乘所议,乃是“穷微  尽化,体幽用玄,眇莽无为而无不为”之大机大用,“纵任无碍,尘累不能  拘”之不可思议解脱。  尔时,"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "切是非莫管。盖上智利根天机已具。 唯务确实透彻。当受用时。握大机发大用。先机而动绝物而转。岩 头云。却物为上。逐物为下。若论"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "神威。杲日当空澄澄光彩。无物不为妙用。无法不是真乘。控佛祖 大机。廓人天正眼。当阳晓示。只贵知归。才涉思量。白云万里。 是故"
+      },
+      {
+        "book_id": "chanjia_guijian",
+        "book_title": "禅家龟鉴",
+        "strategy": "core2",
+        "matched_term": "大机",
+        "context": "旨**：三玄三要、四料拣、四宾主、四照用、四喝、八棒等，皆是大机大用，全身出没，全身担荷。  ## 难点  1. **\"一物"
+      }
+    ],
+    "has_match": true,
+    "match_count": 6
+  },
+  {
+    "id": "chanding-jiwu",
+    "name": "禅定即务",
+    "type": "concepts",
+    "wrong_book": "zuochanyi",
+    "wrong_book_title": "坐禅仪",
+    "matches": [
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "贪嗔痴外更无别有佛性。又出“五蕴窟宅名禅院”“不忆一切法乃名禅定”等语，把禅堂与禅定都从形式中解放出来。  ## 📌 重点内"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "、持戒是防非止恶于自心、忍辱是心无嗔恚、精进是勤修心地法门、禅定是心不散乱、般若是观照自心——度在心上度，不在事相上度。 -"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "不计心性是灭，常度众生，不 起爱见；常学智慧，愚智平等；常在禅定，静乱不二；常见众生，  入道安心要方便法门 未曾是有；究竟"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "复问曰。黄梅付瞩如何指授。惠能日。指授即无。惟论 见性。不论禅定解脱。宗曰。何不论禅定解脱。能曰。为是二法。 不是佛法。佛法"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "关键词与主旨  **关键词**：顿除妄念 · 心为根本 · 禅定新解 · 定慧等学 · 八风不动  **主旨**：《顿悟入道"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "此义。而说偈言。  辩音汝当知。一切诸菩萨。无碍清净慧。皆依禅定生。所谓奢摩他。三摩提禅那。三六二十五。随顺勤修习。若能如是"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "庵像求赞曰。嗣清禅人。孤硬无敌。晨昏一斋。胁不  至席。深入禅定。离出入息。名达九重。谈禅选德。⻰颜大悦。赐以  金帛。力辞"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "取食物之气味精华, 而得饱满谓之触食。 四禅天人, 思  惟禅定,身心怡悦,谓之思食。四空天人,禅定深入与八识相应,身心愉快"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "];念定总持[14],辩才不断;布施、  持戒、忍辱、精进、禅定、智慧[15],及方便力[16],无不具足;逮无所  得,不"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "strategy": "core2",
+        "matched_term": "禅定",
+        "context": "，鼻与脐对，舌拄上腭，唇齿相著。  目须微开，免致昏睡。若得禅定，其力最胜。古有习定高僧，坐常开目。向法云圆通禅师，亦诃人闭"
+      }
+    ],
+    "has_match": true,
+    "match_count": 10
+  },
+  {
+    "id": "guanxin-fa",
+    "name": "观心法门",
+    "type": "methods",
+    "wrong_book": "zhangzhi",
+    "wrong_book_title": "杖指教授",
+    "matches": [
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "。  ---  ## 🗝️ 关键词与主旨  **关键词**：观心 · 净心染心 · 六度内修 · 破相 · 心为根本  **"
+      },
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "悔者，  正法心传 端坐念实相。是名第一忏悔。摒除三毒心、觉观心。念佛心心相 续，忽然澄寂，更无所缘念。《大品经》云：无所念"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "悟。顿见真如本性。 是以将此教法流行。令学道者顿悟菩提。各自观心。自见本性。 若自不悟。须觅大善知识解最上乘法者直示正路。是"
+      },
+      {
+        "book_id": "xinwangming",
+        "book_title": "傅大士心王铭",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "向外寻  **主旨**：《心王铭》相传为梁代傅大士所作，以“观心空王”开篇，以四言韵语直指心王：观之无形，呼之有声；决定是有"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "风力所转。 我于尔时,观界安立,观世动  时, 观身动止, 观心动念, 诸动无二, 等无差别。 我时觉了此群动性, 来无所从"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "云:豁然还得本心”(《楞  伽师资记》卷一)。如果能做到坐禅观心,豁然还得本心,也就见性成佛  了。除了静坐观心,道信也提倡"
+      },
+      {
+        "book_id": "yongjia",
+        "book_title": "永嘉禅宗集",
+        "strategy": "core2",
+        "matched_term": "观心",
+        "context": "，融合了天台止观与禅宗心法的系统论着。全书十章，从皈敬三宝到观心十门，系统阐述了从发心、持戒、亲近师友，到正修止观、妙契元源"
+      }
+    ],
+    "has_match": true,
+    "match_count": 7
+  },
+  {
+    "id": "po-xiang-fa",
+    "name": "破相法门",
+    "type": "methods",
+    "wrong_book": "poxianglun",
+    "wrong_book_title": "菩提达摩大师破相论",
+    "matches": [
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "破相",
+        "context": "若能无念即真求。更若有求还不识。 ·77.  菩提達摩大师 破相 【梁】菩提达摩述 注1：此经出自《大藏经》第48卷，《壮续"
+      },
+      {
+        "book_id": "poxianglun",
+        "book_title": "菩提达摩大师破相论",
+        "strategy": "core2",
+        "matched_term": "破相",
+        "context": "# 菩提达摩大师破相论  > **作者**: 菩提达摩 | **分类**: 达摩"
+      }
+    ],
+    "has_match": true,
+    "match_count": 2
+  },
+  {
+    "id": "xi-zheng-fa",
+    "name": "息诤法门",
+    "type": "methods",
+    "wrong_book": "xixulun",
+    "wrong_book_title": "菩提达摩大师息许论",
+    "matches": [],
+    "has_match": false,
+    "match_count": 0
+  },
+  {
+    "id": "wunian-fa",
+    "name": "无念法门",
+    "type": "methods",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "能知者。何 以故？菩提之相，实无有法而可知故，无见无闻，无得无念，无 生无灭，无说无听。如是菩提性相空寂，无证无知，无形无相"
+      },
+      {
+        "book_id": "wuran",
+        "book_title": "无染觉性直观自行解脱之道",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "。  无染觉性直观自行解脱之道 如此的觉照实在平凡无奇，无思无念地观照自我，若仅仅 纯粹的观照，唯见明空之境，并无任何观者存"
+      },
+      {
+        "book_id": "wuxinglun",
+        "book_title": "菩提达摩大师悟性论",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "心传》  ## 💡 现代白话导读与核心旨趣  论述寂照不二、无念无妄与大圆镜智之悟性极旨。 本典籍直指“若见性即是佛”的核心"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "惺不昧、不随妄转；若执“守”为造作，又成新的妄念。宜与六祖“无念为宗”互参：守而无守，是真守。  ## 💬 名句白话解读  "
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "读与核心旨趣  禅宗最具代表性核心经典。自性顿悟、定慧等持、无念无相无住。 本典籍直指“若见性即是佛”的核心见地，倡导在日常"
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "损益，寂灭性中莫问觅。 比来尘镜未曾磨，今日分明须剖析。 谁无念，谁无生，若实无生无不生。 唤取机关木人问，求佛施功早晚成。"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "即是不二法门。  问：修此法者，用何为宗？用何为本？ 答：用无念为宗，用无相为本。  问：何名无念？何名无相？ 答：无念者，"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "使南宗禅风靡天下。本篇《显宗记》是神会大师为了彰显南宗“顿悟无念”宗旨而作的精炼总结。全篇对仗工整，气势磅礴，犹如一篇禅宗的"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "绝意  于功名。而一旦奉紫泥之诏。韬光匿迹于负桩贱役之下。初无念于荣  达。而卒当传灯之列。故得之于无心。则其道大其德宏。计"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "二  法门。”  善宿菩萨曰:“是动、是念为二[4]。不动则无念,无念即无分别;通达  此者,是为入不二法门。”  注释: "
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "切忌起见作承当。便落彼我必生爱憎。不能脱洒也。此个 无心境界无念真宗。要猛利人方能着实。祖师西来只是直指人心。 令人见性成佛"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "无念",
+        "context": "祖师道。但尽凡情别无圣量。凡 情尽处圣量见前。直须顿歇妄缘。无念无为放教虚静。千圣万圣未 有不从此门而得入者。只在存诚坚固努"
+      }
+    ],
+    "has_match": true,
+    "match_count": 12
+  },
+  {
+    "id": "wuzhu-fa",
+    "name": "无住法门",
+    "type": "methods",
+    "wrong_book": "tanjing",
+    "wrong_book_title": "六祖坛经",
+    "matches": [
+      {
+        "book_id": "qifo",
+        "book_title": "七佛传法偈",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "容  - **七佛偈的共同见地**：身如幻像、心如风影、罪福无住——非断灭之空，而是即幻明真。 - **释迦佛传法偈**：“"
+      },
+      {
+        "book_id": "juelin",
+        "book_title": "觉林菩萨偈",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "殊答佛问“云何住般若波罗蜜”——“以不住法为住般若波罗蜜”，无住即住，与《金刚经》“应无所住而生其心”同出一辙。  ## ⚠"
+      },
+      {
+        "book_id": "wenshu",
+        "book_title": "文殊师利所说摩诃般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "达。 - **不住为住**：“以不住法为住般若波罗蜜”；“以无住相，即住般若波罗蜜。” - **无说而说**：“我说法中无有"
+      },
+      {
+        "book_id": "zhangzhi",
+        "book_title": "杖指教授",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "子心间，直示“觉醒心”——它无形无色、无中无边，初无来处、中无住处、终无去处，三际皆空；而这空性并非顽空，是清明而觉知的。认"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "旨趣  禅宗最具代表性核心经典。自性顿悟、定慧等持、无念无相无住。 本典籍直指“若见性即是佛”的核心见地，倡导在日常生活与参"
+      },
+      {
+        "book_id": "mazu",
+        "book_title": "马祖道一禅师语录",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "坐禅。为学坐佛。若学坐禅。禅非 坐卧。若学坐佛。佛非定相。于无住法。不应取舍。汝若坐佛。 即是杀佛。若执坐相。非达其理。师闻"
+      },
+      {
+        "book_id": "linji",
+        "book_title": "镇州临济慧照禅师语录",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "药，切忌作字面会；“无位真人”不可作灵魂、神我解——它是无位无住的，拟议即不是。又其棒喝施设须有师承眼目，不可模仿。  ##"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "新定义禅定（妄念不生为禅，坐见本性为定）、定慧（如灯与光）、无住（心不住一切处），并以“本自无缚，不用求解脱”一句收束全篇。"
+      },
+      {
+        "book_id": "shenhui",
+        "book_title": "荷泽大师显宗记",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "犹如一篇禅宗的战斗檄文。其核心教理在于“无念为宗，无相为体，无住为本”，直斥渐修法门的滞碍，强调佛性本有，不假雕饰，一念回光"
+      },
+      {
+        "book_id": "jingangjing",
+        "book_title": "金刚般若波罗蜜经",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "维上下虚空可思量不？”  “不也，世尊！”  “须菩提！菩萨无住相布施，福德亦复如是不可思量。须菩提！菩萨但应如所教住。” "
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "世而持之无过失者乃尔 ( 幻庵集 )  侍郎尤公曰。祖师以前无住持事。其后应世行道迫不得已。然居则蓬  荜取蔽⻛雨。食则粗粝"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "言:谁动谁静?阿难言:佛  手不住,而我见性,尚无有静,谁为无住?佛言如是。  佛对阿难说: 你看见我的手在众中一开一合, "
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "“故经云:‘能善分别诸法相,  于第一义而不动。’”其七,“无住为本”。(以上《定慧品》)这些内容基  本涵盖了慧能佛学思想"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "懈怠者亦然。 释曰。当以智慧钻注一境。以方便绳善巧回转。心智无住。四仪无间。则圣道可生。瞥尔起心。暂时忘照。皆名息也。  般"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "运用一时看破。  ### 二、本来面目 > 只今现定作为全是无住。根本既明如人有目。日光明照见种种色。岂非般若关捩乎。  *"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "贤良 示远猷奉议 法语下 示宗觉大师 示一书记 示胜首座 示无住道人 示元长禅人 示超然居士赵判监 贵妃乔氏求法语 示丹霞佛"
+      },
+      {
+        "book_id": "xinming",
+        "book_title": "心铭",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "运浮沉。  非清非浊，非浅非深。 本来非古，见在非今。 见在无住，见在本心。 本来不存，本来即今。  菩提本有，不须用守。 "
+      },
+      {
+        "book_id": "huangbo_wanlinglu",
+        "book_title": "黄檗断际禅师宛陵录",
+        "strategy": "core2",
+        "matched_term": "无住",
+        "context": "：菩提无所得，你今但发无所得心，决定不得一法，即菩提心。菩提无住处，是故无有得者，故云：我于然灯佛所，无有少法可得，佛即与我"
+      }
+    ],
+    "has_match": true,
+    "match_count": 18
+  },
+  {
+    "id": "yuanjue-sanzhong-jingguan",
+    "name": "圆觉三种清净观门",
+    "type": "methods",
+    "wrong_book": "yuanjuejing",
+    "wrong_book_title": "大方广圆觉修多罗了义经",
+    "matches": [
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "放四大，莫把捉，寂灭性中随饮啄。 诸行无常一切空，即是如来大圆觉。 决定说，表真乘，有人不肯任情征。 直截根源佛所印，摘叶寻"
+      },
+      {
+        "book_id": "yuanjuejing",
+        "book_title": "大方广圆觉修多罗了义经",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "# 大方广圆觉修多罗了义经 (圆觉经)  > **作者**: 唐罽宾国三藏"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "戒律不必持。定慧不必习。道德  不必修。嗜欲不必去。又引维摩圆觉为证。赞贪瞋痴杀盗淫为梵行。  乌乎斯言。岂特起丛林今日之害"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "大菩萨与阿罗汉依次陈述各自凭眼耳鼻舌身意、地水火风空见识悟入圆觉的法门，文殊菩萨最终选定“观音耳根圆通法门”——“反闻闻自性"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "经典有:《心经》、《胜鬘经》、《观经》、《无量寿经》、  《圆觉经》、《金光明经》、《梵网经》、《坛经》。此外,《四十二章 "
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "是 无面目底。芍药华开菩萨脸。椶榈叶现夜叉头。 解夏上堂云。圆觉伽蓝豁开户牖。华严刹海大座当轩。促百千亿劫 为一念。岂止百二"
+      },
+      {
+        "book_id": "zuochanyi",
+        "book_title": "坐禅仪",
+        "strategy": "core2",
+        "matched_term": "圆觉",
+        "context": "须茫然。所以探珠宜静浪，动水取应难。定水澄清，心珠自现。故《圆觉经》云：\"无碍清净慧，皆依禅定生。\"《法华经》云：\"在于闲处"
+      }
+    ],
+    "has_match": true,
+    "match_count": 7
+  },
+  {
+    "id": "chanlin-jingce-practice",
+    "name": "禅林宝训日用反省警策法",
+    "type": "methods",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "禅林",
+        "context": "# 禅林宝训 (全四卷)  > **作者**: 宋·大慧宗杲 · 竹"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "禅林",
+        "context": "繁取要，便于时时省览。  此书对后世禅宗影响深远，尤其在日本禅林备受推崇。日本白隐禅师的老师正受老人，正是因偶阅此书\"引锥自"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "禅林",
+        "context": "门去也。江心一峰楼台相映。水面双 塔金碧交辉。诚圣帝福田。乃禅林上刹。为琳宫为佛宇。为净土为 秽邦。建立法幢弘荷祖道。若非今"
+      }
+    ],
+    "has_match": true,
+    "match_count": 3
+  },
+  {
+    "id": "youfang-canfang",
+    "name": "游方参访",
+    "type": "methods",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "。初参五祖。自谓已得正受。庵居长坐。积二十 年。师弟子玄策。游方至河朔。闻隍之名。造庵问云。汝在此作 什么。 隍曰。入定。 "
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "汝师。\"即指往五泄山礼默禅师披剃。年二十一，诣嵩山具戒。  游方首谒南泉。值马祖讳辰修斋，南泉问众云：\"来日设马祖斋，未审马"
+      },
+      {
+        "book_id": "yunmen",
+        "book_title": "云门匡真禅师广录",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "树凡数十年，堂虚首席。众屡请命上座，知圣不许，尝曰：\"首座才游方矣。\"及师至，始命首众焉。  洎知圣将示灭，欲师踵其席，乃潜"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "内翰李驸马都尉便可与庞居士并驱。盖具大力量。 在仕路不舍宰官游方之外。提佛祖巴鼻。钳锤世人。操同事摄。向 鸳鹭行中出。作方面"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "量。白云万里。 是故先圣道。我此法印。为欲利益世间故说。在所游方勿妄宣传。 今日人天普集。对众分明剖露。举拂示众云。大众见么"
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "游方",
+        "context": "州西，住护国院，乃归院省觐。到後，本师令郝氏云：「君家之子，游方已回。」其家亲属忻怿不已，只候来日，咸往观焉。师闻之，乃云："
+      }
+    ],
+    "has_match": true,
+    "match_count": 6
+  },
+  {
+    "id": "pushuo-xiaocan",
+    "name": "普说与小参",
+    "type": "methods",
+    "wrong_book": "chanlinbaoxun",
+    "wrong_book_title": "禅林宝训 (全四卷)",
+    "matches": [
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "普说",
+        "context": "主法者清净。所以上行下效也 ( 清泉集 )  万庵节俭以小参普说当供。衲子间有窃议者。万庵闻之曰。朝飨膏梁  暮厌粗粝。人之"
+      },
+      {
+        "book_id": "changuancejin",
+        "book_title": "禅关策进",
+        "strategy": "core2",
+        "matched_term": "普说",
+        "context": "搀一杓冷水相似。如此做工夫。定有到家时节。  佛迹颐庵真禅师普说  信有十分。疑有十分。疑有十分。悟有十分。可将平生所见所闻"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "普说",
+        "context": "并列为圜悟克勤三大著作，但体裁最为丰富——涵盖上堂法语、小参普说、示众法语、拈古、颂古、偈颂、真赞、佛事等各种形式，是研究圜"
+      },
+      {
+        "book_id": "dahuiyulu",
+        "book_title": "大慧普觉禅师语录",
+        "strategy": "core2",
+        "matched_term": "普说",
+        "context": "、室中机缘、颂古（卷十）、偈颂（卷十一）、赞佛祖（卷十二）、普说（卷十三至卷十八）、法语（卷十九至卷二十四）。其中**普说*"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "weimo-buer-practice",
+    "name": "维摩居士入不二法门观照",
+    "type": "methods",
+    "wrong_book": "weimojiejing",
+    "wrong_book_title": "维摩诘所说经 (全十四品)",
+    "matches": [
+      {
+        "book_id": "anxin",
+        "book_title": "入道安心要方便法门",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "大、五阴之所合，终归无常， 不得自在。虽未坏灭，毕竟是空。《维摩经》云：是身如浮云， 须臾变灭。又常观自身空净如影，可见不可"
+      },
+      {
+        "book_id": "zuishangcheng",
+        "book_title": "最上乘论",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "现。故知自心本来清净。 问曰：何知自心本来不生不灭？ 答曰：维摩经云：如，无有生；如，无有灭。如者，真如 佛性，自性清净。清"
+      },
+      {
+        "book_id": "tanjing",
+        "book_title": "六祖坛经",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "若言坐不动是。只如舍利弗宴坐林中。却被  六祖大师法宝坛经 维摩语诃。 善知识。又有人教坐。看心观静。不动不起。从此置功。 "
+      },
+      {
+        "book_id": "zhengdaoge",
+        "book_title": "永嘉证道歌",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "气概。  ## ⚠️ 阅读难点  歌行体气势磅礴，用典密集（维摩、法华、楞严、天台），初读易眩；宜先诵其名句会其神，再逐句细"
+      },
+      {
+        "book_id": "dunwu",
+        "book_title": "顿悟入道要门论",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "？ 答：《楞伽经》云：“心生即种种法生，心灭即种种法灭。”《维摩经》云：“欲得净土，当净其心。随其心净，即佛土净。”《遗教经"
+      },
+      {
+        "book_id": "chanlinbaoxun",
+        "book_title": "禅林宝训 (全四卷)",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "云。戒律不必持。定慧不必习。道德  不必修。嗜欲不必去。又引维摩圆觉为证。赞贪瞋痴杀盗淫为梵行。  乌乎斯言。岂特起丛林今日"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "# 维摩诘所说经 (全十四品)  > **作者**: 姚秦·鸠摩罗什"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "\"为什么并无一人肯？\"师云：\"为他个个气宇如王。\"  师问讲维摩经僧云：\"不可以智知，不可以识识，唤作什么语？\"僧云：\"赞法"
+      },
+      {
+        "book_id": "huanwuxinyao",
+        "book_title": "佛果圜悟真觉禅师心要",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "世法佛法曾无以异。唯日用照 了镜心像迹初不遗鉴廼大定也。是故维摩取饭香积借座灯王。抟妙 喜世界如陶家轮。纳须弥于芥子中。吸劫"
+      },
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "大寂定休歇之场，放下廓尔平常彻证无心，观一切法如梦幻泡，即与维摩诘、傅大士、庞居士同其正因。（示许庭龟法语）  ### 7."
+      },
+      {
+        "book_id": "zhaozhouyulu",
+        "book_title": "赵州真际禅师语录",
+        "strategy": "core2",
+        "matched_term": "维摩",
+        "context": "论，佛法未在。」无语。  师问座主：「所习何业？」云：「讲《维摩经》。」师云：「《维摩经》：『步步是道场。』座主在什么处？」"
+      }
+    ],
+    "has_match": true,
+    "match_count": 11
+  },
+  {
+    "id": "muniu-tuxi",
+    "name": "十牛图牧心",
+    "type": "methods",
+    "wrong_book": "shiniutu",
+    "wrong_book_title": "十牛图颂并序",
+    "matches": [
+      {
+        "book_id": "shiniutu",
+        "book_title": "十牛图颂并序",
+        "strategy": "core2",
+        "matched_term": "十牛",
+        "context": "# 十牛图颂并序  > **作者**: 宋·廓庵师远 | **分类*"
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  },
+  {
+    "id": "huixiang-fa",
+    "name": "回向法门",
+    "type": "methods",
+    "wrong_book": "dachengqixinlun",
+    "wrong_book_title": "大乘起信论",
+    "matches": [
+      {
+        "book_id": "huangbo",
+        "book_title": "黄檗山断际禅师传心法要",
+        "strategy": "core2",
+        "matched_term": "回向",
+        "context": "然证此心，有迟有疾。有闻法一念便得无心者，有至十信十住十行十回向乃得无心者，有至十地乃得无心者。长短虽殊，得无心而已，更无所"
+      },
+      {
+        "book_id": "lengyanjing",
+        "book_title": "大佛顶首楞严经 (全十卷)",
+        "strategy": "core2",
+        "matched_term": "回向",
+        "context": "胜义中真胜义性,  令汝会中定性声闻, 及诸一切未得二空, 回向上乘阿罗汉等, 皆获一乘寂灭场地, 真阿练若,  正修行处。"
+      },
+      {
+        "book_id": "weimojiejing",
+        "book_title": "维摩诘所说经 (全十四品)",
+        "strategy": "core2",
+        "matched_term": "回向",
+        "context": ",念处、正勤、神  足、根、力、觉、道众生来生其国[57];回向心是菩萨净土[58],菩萨成佛  时,得一切具足功德国土;说"
+      },
+      {
+        "book_id": "dongshanyulu",
+        "book_title": "洞山良价禅师语录",
+        "strategy": "core2",
+        "matched_term": "回向",
+        "context": "师云：\"当时从什么路出？\"雪峰云：\"从飞猿岭出。\"师云：\"今回向什么路去？\"雪峰云：\"从飞猿岭去。\"师云：\"有一人不从飞猿岭"
+      }
+    ],
+    "has_match": true,
+    "match_count": 4
+  },
+  {
+    "id": "po-wo-zhi",
+    "name": "破我执",
+    "type": "methods",
+    "wrong_book": "dahuiyulu",
+    "wrong_book_title": "大慧普觉禅师语录",
+    "matches": [
+      {
+        "book_id": "huanwuyulu",
+        "book_title": "圆悟佛果禅师语录",
+        "strategy": "core2",
+        "matched_term": "破我",
+        "context": "间。随众生欲种种说法。将知所说皆为方便。只为 破执破疑破解路破我见。若无许多恶觉恶见。佛亦不必出现。而况 说种种法耶。古人得"
+      }
+    ],
+    "has_match": true,
+    "match_count": 1
+  }
+]

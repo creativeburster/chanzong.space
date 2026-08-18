@@ -1,0 +1,1254 @@
+[
+  {
+    "id": "jiaye",
+    "name": "摩诃迦叶尊者",
+    "type": "person",
+    "relatedPersons": [
+      "bodhidharma",
+      "anan"
+    ],
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "yunmen",
+    "name": "云门文偃",
+    "type": "person",
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedConcepts": [
+      "beyond-words",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "xuefeng-yicun",
+    "name": "雪峰义存",
+    "type": "person",
+    "relatedPersons": [
+      "yunmen",
+      "deshan-xuanjian"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "nagarjuna",
+    "name": "龙树菩萨",
+    "type": "person",
+    "relatedPersons": [
+      "kumarajiva",
+      "sengzhao"
+    ],
+    "relatedConcepts": [
+      "emptiness",
+      "prajna",
+      "non-duality"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wumen-huikai",
+    "name": "无门慧开",
+    "type": "person",
+    "relatedPersons": [
+      "zhaozhou",
+      "dahui-zonggao"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "kanhuatou"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "danxia-tianran",
+    "name": "丹霞天然",
+    "type": "person",
+    "relatedPersons": [
+      "shitou",
+      "mazu"
+    ],
+    "relatedConcepts": [
+      "beyond-words",
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "li-ao",
+    "name": "李翱",
+    "type": "person",
+    "relatedPersons": [
+      "yaoshan-weiyan"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wansong-xingxiu",
+    "name": "万松行秀",
+    "type": "person",
+    "relatedPersons": [
+      "hongzhi-zhengjue"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "samadhi"
+    ],
+    "relatedMethods": [
+      "mozhao"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "changlu-zongze",
+    "name": "长芦宗赜",
+    "type": "person",
+    "relatedPersons": [],
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "mozhao"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "muzhou-daoming",
+    "name": "睦州道明",
+    "type": "person",
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedConcepts": [
+      "beyond-words",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "dajiaye",
+    "name": "大迦叶",
+    "type": "person",
+    "relatedPersons": [
+      "anan",
+      "bodhidharma"
+    ],
+    "relatedConcepts": [
+      "mind-transmission",
+      "beyond-words",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "daoyuan",
+    "name": "道元",
+    "type": "person",
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "changlu-zongze"
+    ],
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "mozhao"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "puming",
+    "name": "普明禅师",
+    "type": "person",
+    "relatedPersons": [
+      "kuoan"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "yelu-chucai",
+    "name": "耶律楚材",
+    "type": "person",
+    "relatedPersons": [
+      "wansong-xingxiu"
+    ],
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "furong-daookai",
+    "name": "芙蓉道楷",
+    "type": "person",
+    "relatedPersons": [
+      "danxia-zichun"
+    ],
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "mozhao"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "daoyuan-monk",
+    "name": "道原",
+    "type": "person",
+    "relatedPersons": [
+      "tiantai-deshao"
+    ],
+    "relatedConcepts": [
+      "mind-transmission"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "puji",
+    "name": "普济",
+    "type": "person",
+    "relatedPersons": [
+      "dahui-zonggao",
+      "daoyuan-monk"
+    ],
+    "relatedConcepts": [
+      "mind-transmission"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "huangtingjian",
+    "name": "黄庭坚",
+    "type": "person",
+    "relatedPersons": [
+      "huitang-zuxin",
+      "lingyuan-weiqing"
+    ],
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "tongrong",
+    "name": "通容",
+    "type": "person",
+    "relatedPersons": [],
+    "relatedConcepts": [
+      "beyond-words",
+      "koan"
+    ],
+    "relatedMethods": [
+      "kanhuatou"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "yinyuan-longqi",
+    "name": "隐元隆琦",
+    "type": "person",
+    "relatedPersons": [
+      "tongrong"
+    ],
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "kanhuatou"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "touzi-datong",
+    "name": "投子大同",
+    "type": "person",
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wuzhun-shifan",
+    "name": "无准师范",
+    "type": "person",
+    "relatedPersons": [
+      "poan-zuxian"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "kanhuatou"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "tianyi-yihuai",
+    "name": "天衣义怀",
+    "type": "person",
+    "relatedPersons": [
+      "xuedou-zhongxian"
+    ],
+    "relatedConcepts": [
+      "koan"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "kaifu-daoning",
+    "name": "开福道宁",
+    "type": "person",
+    "relatedPersons": [
+      "wuzu-fayan",
+      "yuanwu-keqin"
+    ],
+    "relatedConcepts": [
+      "koan"
+    ],
+    "relatedMethods": [
+      "kanhuatou"
+    ],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "sanlun-tikong",
+    "name": "三轮体空",
+    "type": "concept",
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "qi-chu-zheng-xin",
+    "name": "七处征心·破妄识心",
+    "type": "concept",
+    "relatedPersons": [
+      "anan",
+      "banramidi"
+    ],
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "ba-huan-bian-jian",
+    "name": "八还辨见·显不灭见性",
+    "type": "concept",
+    "relatedPersons": [
+      "anan",
+      "guanzizai"
+    ],
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "ru-bu-er-fa-men",
+    "name": "入不二法门·维摩一默",
+    "type": "concept",
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wenzi-chan",
+    "name": "文字禅",
+    "type": "concept",
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "wansong-xingxiu",
+      "fenyang-shanzhao"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "beyond-words"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "chanbing",
+    "name": "禅病",
+    "type": "concept",
+    "relatedPersons": [
+      "xuansha-shibei",
+      "boshan-yuanlai",
+      "dahui-zonggao"
+    ],
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "self-nature",
+      "mozhao-chan-concept"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "ru-lai-zhi",
+    "name": "如来智",
+    "type": "concept",
+    "relatedPersons": [
+      "huineng",
+      "ming-bodhisattva"
+    ],
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "buddha-nature",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "rulai-chan-zushi-chan",
+    "name": "如来禅与祖师禅",
+    "type": "concept",
+    "relatedPersons": [
+      "yangshan-huiji",
+      "xiangyan-zhixian"
+    ],
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "direct-pointing",
+      "instant-enlightenment"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "niepan-miaoxin",
+    "name": "涅槃妙心",
+    "type": "concept",
+    "relatedPersons": [
+      "buddha",
+      "mahakashyapa",
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "zhengfa-yancang",
+      "self-nature",
+      "niepan"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "shishi-wuai",
+    "name": "事事无碍",
+    "type": "concept",
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
+    "relatedConcepts": [
+      "fajie",
+      "lishi-wuai",
+      "non-duality"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "yiji-yiqie",
+    "name": "一即一切",
+    "type": "concept",
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi"
+    ],
+    "relatedConcepts": [
+      "fajie",
+      "all-returns-to-one",
+      "self-nature"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "kuang-chan",
+    "name": "狂禅",
+    "type": "concept",
+    "relatedPersons": [
+      "yongjia",
+      "dahui-zonggao",
+      "zhuhong"
+    ],
+    "relatedConcepts": [
+      "yinguo",
+      "fanrao-puti",
+      "baoren"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "kumu-chan",
+    "name": "枯木禅",
+    "type": "concept",
+    "relatedPersons": [
+      "dahui-zonggao",
+      "hongzhi-zhengjue"
+    ],
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "chan-bing",
+      "samadhi"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "sanlun-tikong",
+    "name": "三轮体空",
+    "type": "concept",
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "jianjiao",
+    "name": "渐教",
+    "type": "concept",
+    "relatedPersons": [
+      "shenhui"
+    ],
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "dunjiao",
+      "fangbian"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "sanfa-yin",
+    "name": "三法印",
+    "type": "concept",
+    "relatedPersons": [
+      "nagarjuna",
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "emptiness",
+      "wu-wo",
+      "niepan"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "si-yi",
+    "name": "四依",
+    "type": "concept",
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "jiaowai-biechuan",
+      "wenzi-zhang",
+      "beyond-words"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "er-di",
+    "name": "二谛",
+    "type": "concept",
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedConcepts": [
+      "zhongdao",
+      "emptiness",
+      "yuanqi"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "ba-zhengdao",
+    "name": "八正道",
+    "type": "concept",
+    "relatedPersons": [
+      "buddha",
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "jie-ding-hui",
+      "fangbian",
+      "baoren"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "shi-er-yinyuan",
+    "name": "十二因缘",
+    "type": "concept",
+    "relatedPersons": [
+      "buddha",
+      "nagarjuna"
+    ],
+    "relatedConcepts": [
+      "wuming",
+      "lunhui",
+      "yuanqi"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "si-di",
+    "name": "四谛",
+    "type": "concept",
+    "relatedPersons": [
+      "buddha",
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "ba-zhengdao",
+      "wuming",
+      "niepan"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "fajie-yuanqi",
+    "name": "法界缘起",
+    "type": "concept",
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
+    "relatedConcepts": [
+      "yuanqi",
+      "shishi-wuai",
+      "fajie"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "li-ju-shi-zao",
+    "name": "理具事造",
+    "type": "concept",
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "xingqi",
+      "self-nature",
+      "yuanqi"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "chanjing-shuangxiu",
+    "name": "禅净双修",
+    "type": "concept",
+    "relatedPersons": [
+      "yongming-yanshou",
+      "zhuhong"
+    ],
+    "relatedConcepts": [
+      "weixin-jingtu",
+      "dunwu-jianxiu",
+      "fangbian"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "zhengjue",
+    "name": "正觉",
+    "type": "concept",
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedConcepts": [
+      "puti",
+      "self-nature",
+      "zhengjue"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wuxing",
+    "name": "无行",
+    "type": "concept",
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
+    "relatedConcepts": [
+      "wu-zhu",
+      "wu-nian",
+      "baoren"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "fanyin",
+    "name": "法音",
+    "type": "concept",
+    "relatedPersons": [
+      "xiangyan-zhixian",
+      "dongshan-liangjia"
+    ],
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "jiaoli-guanxing"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "wuchang",
+    "name": "无常",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "kongxing",
+    "name": "空性",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "baoshen",
+    "name": "报身",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "huashen",
+    "name": "化身",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wuzhiliang",
+    "name": "无智亦无得",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wusuode",
+    "name": "无所得",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhengliang",
+    "name": "证量",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "xianliang",
+    "name": "现量",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "biliang",
+    "name": "比量",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "fengxian",
+    "name": "风幡",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wujian",
+    "name": "无间",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "jiaocan",
+    "name": "交参",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "huangji",
+    "name": "还源",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhengyin",
+    "name": "正因",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "liaoyin",
+    "name": "了因",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "yuan-yin",
+    "name": "缘因",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "sande",
+    "name": "三德",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "eryi",
+    "name": "二义",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "shidi",
+    "name": "十地",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wuxingguan",
+    "name": "五行观",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhenkong-miaoyou",
+    "name": "真空妙有",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wuzhu-ben",
+    "name": "无住为本",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "sammiao-wu",
+    "name": "三妙悟",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "yixinyuan",
+    "name": "一心圆",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "benjue",
+    "name": "本觉",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "shijue",
+    "name": "始觉",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "bujue",
+    "name": "不觉",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "ranxiu",
+    "name": "染心",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "jingxin",
+    "name": "净心",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wuhou",
+    "name": "无后",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "dangnian",
+    "name": "当念",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "yiguan",
+    "name": "一贯",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhengming",
+    "name": "正命",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhengye",
+    "name": "正业",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "zhengyu",
+    "name": "正语",
+    "type": "concept",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "can-san-yao",
+    "name": "参禅三要",
+    "type": "concept",
+    "relatedPersons": [
+      "tuiyin",
+      "yongjiaxuanjue"
+    ],
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "huoju-siju"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "zuochan-weiyi",
+    "name": "坐禅威仪",
+    "type": "concept",
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedConcepts": [
+      "samadhi",
+      "chanding-jiwu"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "chanjing-shuangxiu",
+    "name": "禅净双修",
+    "type": "concept",
+    "relatedPersons": [
+      "yongming-yanshou",
+      "zhuhong"
+    ],
+    "relatedConcepts": [
+      "weixin-jingtu",
+      "dunwu-jianxiu",
+      "fangbian"
+    ],
+    "relatedMethods": [],
+    "is_orphan": false,
+    "has_any_relation": true
+  },
+  {
+    "id": "xi-zheng-fa",
+    "name": "息诤法门",
+    "type": "method",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  },
+  {
+    "id": "wuxiang-fa",
+    "name": "无相法门",
+    "type": "method",
+    "relatedPersons": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "is_orphan": true,
+    "has_any_relation": false
+  }
+]

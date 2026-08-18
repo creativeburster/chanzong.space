@@ -1,0 +1,6043 @@
+[
+  {
+    "id": "qifo",
+    "title": "七佛传法偈",
+    "persons": {
+      "wrong": [
+        {
+          "id": "jiaye",
+          "name": "摩诃迦叶尊者",
+          "current_books": [
+            "qifo"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "jiaye",
+          "name": "摩诃迦叶尊者"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "xinxin-xiangyin",
+          "name": "心心相印",
+          "current_books": [
+            "qifo",
+            "xuemaicong",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yihua-wuye",
+          "name": "一花开五叶",
+          "current_books": [
+            "qifo",
+            "xuemaicong",
+            "tanjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "beyond-words",
+          "name": "不立文字"
+        },
+        {
+          "id": "jiaowai-biechuan",
+          "name": "教外别传"
+        },
+        {
+          "id": "zhengfa-yancang",
+          "name": "正法眼藏"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "juelin",
+    "title": "觉林菩萨偈",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "wenshu-yuanjue",
+          "name": "文殊师利菩萨"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "wei-xin-zao",
+          "name": "一切唯心造"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "yixing-sanmei-practice",
+          "name": "一行三昧实修法",
+          "current_books": [
+            "wenshu",
+            "anxin",
+            "tanjing",
+            "juelin"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "wenshu",
+    "title": "文殊师利所说摩诃般若波罗蜜经",
+    "persons": {
+      "wrong": [
+        {
+          "id": "wenshu-yuanjue",
+          "name": "文殊师利菩萨",
+          "current_books": [
+            "yuanjuejing",
+            "weimojiejing",
+            "lengyanjing",
+            "wenshu",
+            "juelin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "daoxin",
+          "name": "四祖道信"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "yixing-sanmei",
+          "name": "一行三昧"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "yixing-sanmei-practice",
+          "name": "一行三昧实修法",
+          "current_books": [
+            "wenshu",
+            "anxin",
+            "tanjing",
+            "juelin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅"
+        },
+        {
+          "id": "yixing-sammei",
+          "name": "一行三昧"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "wuran",
+    "title": "无染觉性直观自行解脱之道",
+    "persons": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "wu-ran-jue-xing",
+          "name": "无染觉性"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zhangzhi",
+    "title": "杖指教授",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "wu-ran-jue-xing",
+          "name": "无染觉性",
+          "current_books": [
+            "wuran",
+            "zhangzhi",
+            "tanjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "banghe",
+          "name": "棒喝",
+          "current_books": [
+            "linji",
+            "zhangzhi",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "guanxin-fa",
+          "name": "观心法门",
+          "current_books": [
+            "zhangzhi"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "guanxin-fa",
+          "name": "观心法门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "xuemaicong",
+    "title": "菩提达摩大师血脉论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "direct-pointing",
+          "name": "直指人心",
+          "current_books": [
+            "xuemaicong",
+            "qifo",
+            "wuran",
+            "huangbo",
+            "xiuxinjue",
+            "zhenxin",
+            "xinwangming",
+            "bashiguijusong"
+          ]
+        },
+        {
+          "id": "zixin-xianliang",
+          "name": "自心现量",
+          "current_books": [
+            "xuemaicong",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "xinxin-xiangyin",
+          "name": "心心相印",
+          "current_books": [
+            "qifo",
+            "xuemaicong",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yihua-wuye",
+          "name": "一花开五叶",
+          "current_books": [
+            "qifo",
+            "xuemaicong",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "xitian-ershiba-zu",
+          "name": "西天二十八祖",
+          "current_books": [
+            "xuemaicong",
+            "yunmen"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "mind-is-buddha",
+          "name": "即心即佛"
+        },
+        {
+          "id": "mind-transmission",
+          "name": "以心传心"
+        },
+        {
+          "id": "beyond-words",
+          "name": "不立文字"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相"
+        },
+        {
+          "id": "jiaowai-biechuan",
+          "name": "教外别传"
+        },
+        {
+          "id": "zhengfa-yancang",
+          "name": "正法眼藏"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅",
+          "current_books": [
+            "anxin",
+            "wenshu",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "four-practices",
+          "name": "二入四行观",
+          "current_books": [
+            "sixingguan",
+            "xuemaicong"
+          ]
+        },
+        {
+          "id": "shouben-zhenxin",
+          "name": "守本真心",
+          "current_books": [
+            "zuishangcheng",
+            "xuemaicong",
+            "wuxinglun",
+            "fangcunlun"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "wuxinglun",
+    "title": "菩提达摩大师悟性论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅",
+          "current_books": [
+            "anxin",
+            "wenshu",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "shouben-zhenxin",
+          "name": "守本真心",
+          "current_books": [
+            "zuishangcheng",
+            "xuemaicong",
+            "wuxinglun",
+            "fangcunlun"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "poxianglun",
+    "title": "菩提达摩大师破相论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "po-xiang",
+          "name": "破相"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅",
+          "current_books": [
+            "anxin",
+            "wenshu",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "po-xiang-fa",
+          "name": "破相法门",
+          "current_books": [
+            "poxianglun"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "po-xiang-fa",
+          "name": "破相法门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wuxinlun",
+    "title": "菩提达摩大师无心论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        },
+        {
+          "id": "huike",
+          "name": "二祖慧可"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "zhongdao",
+          "name": "中道"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xixulun",
+    "title": "菩提达摩大师息许论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "wuwo",
+          "name": "无我"
+        },
+        {
+          "id": "fashen",
+          "name": "法身"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "xi-zheng-fa",
+          "name": "息诤法门",
+          "current_books": [
+            "xixulun"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "xi-zheng-fa",
+          "name": "息诤法门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sixingguan",
+    "title": "菩提达摩大师入道四行观",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "zixin-xianliang",
+          "name": "自心现量",
+          "current_books": [
+            "xuemaicong",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "sanlun-tikong",
+          "name": "三轮体空",
+          "current_books": [
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "wei-xin-zao",
+          "name": "一切唯心造",
+          "current_books": [
+            "juelin",
+            "tanjing",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "wuwo",
+          "name": "无我"
+        },
+        {
+          "id": "liudu",
+          "name": "六度"
+        },
+        {
+          "id": "yinguo",
+          "name": "因果"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "sanlun-tikong",
+          "name": "三轮体空"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "four-practices",
+          "name": "二入四行观",
+          "current_books": [
+            "sixingguan",
+            "xuemaicong"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "baoyuan-xing",
+          "name": "报冤行"
+        },
+        {
+          "id": "suiyuan-xing",
+          "name": "随缘行"
+        },
+        {
+          "id": "wusuoqiu-xing",
+          "name": "无所求行"
+        },
+        {
+          "id": "chengfa-xing",
+          "name": "称法行"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xinxinming",
+    "title": "信心铭",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "sengcan",
+          "name": "三祖僧璨"
+        },
+        {
+          "id": "niutou-farong",
+          "name": "牛头法融"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟",
+          "current_books": [
+            "tanjing",
+            "dunwu",
+            "xiuxinjue",
+            "zhangzhi",
+            "xixulun",
+            "baizhang",
+            "xinwangming",
+            "shenhui",
+            "xinxinming",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "yinian-wusheng",
+          "name": "一念无生",
+          "current_books": [
+            "xinxinming",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "fashen",
+          "name": "法身"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "wumen",
+          "name": "无门关",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "wumenguan",
+            "xinxinming"
+          ]
+        },
+        {
+          "id": "kanhuatou",
+          "name": "看话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "xinxinming",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "zhiguan-dazuo",
+          "name": "只管打坐",
+          "current_books": [
+            "baojingsanmei",
+            "xinxinming",
+            "fangcunlun",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "canjiu-fa",
+          "name": "参究法门",
+          "current_books": [
+            "xinxinming",
+            "zhengdaoge"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "fangcunlun",
+    "title": "方寸论",
+    "persons": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "weishi-yixin",
+          "name": "唯是一心",
+          "current_books": [
+            "huangbo",
+            "fangcunlun",
+            "zuishangcheng"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "zhongdao",
+          "name": "中道"
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃"
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相"
+        },
+        {
+          "id": "fajie",
+          "name": "法界"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "shouben-zhenxin",
+          "name": "守本真心",
+          "current_books": [
+            "zuishangcheng",
+            "xuemaicong",
+            "wuxinglun",
+            "fangcunlun"
+          ]
+        },
+        {
+          "id": "zhiguan-dazuo",
+          "name": "只管打坐",
+          "current_books": [
+            "baojingsanmei",
+            "xinxinming",
+            "fangcunlun",
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "anxin",
+    "title": "入道安心要方便法门",
+    "persons": {
+      "wrong": [
+        {
+          "id": "huike",
+          "name": "二祖慧可",
+          "current_books": [
+            "anxin",
+            "wuxinlun"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "daoxin",
+          "name": "四祖道信"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "yixing-sanmei",
+          "name": "一行三昧"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅",
+          "current_books": [
+            "anxin",
+            "wenshu",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "yixing-sanmei-practice",
+          "name": "一行三昧实修法",
+          "current_books": [
+            "wenshu",
+            "anxin",
+            "tanjing",
+            "juelin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "yixing-sammei",
+          "name": "一行三昧"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zuishangcheng",
+    "title": "最上乘论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "hongren",
+          "name": "五祖弘忍"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "weishi-yixin",
+          "name": "唯是一心"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "shouben-zhenxin",
+          "name": "守本真心"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "tanjing",
+    "title": "六祖坛经",
+    "persons": {
+      "wrong": [
+        {
+          "id": "huairang",
+          "name": "南岳怀让",
+          "current_books": [
+            "tanjing",
+            "mazu"
+          ]
+        },
+        {
+          "id": "xingsi",
+          "name": "青原行思",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "shitou",
+          "name": "石头希迁",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "ming-bodhisattva",
+          "name": "马鸣菩萨",
+          "current_books": [
+            "tanjing",
+            "dachengqixinlun"
+          ]
+        },
+        {
+          "id": "dajiaye",
+          "name": "大迦叶",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "nanyang-huizhong",
+          "name": "南阳慧忠",
+          "current_books": [
+            "tanjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "huineng",
+          "name": "六祖惠能"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "xingsi",
+          "name": "青原行思"
+        },
+        {
+          "id": "shitou",
+          "name": "石头希迁"
+        },
+        {
+          "id": "dajiaye",
+          "name": "大迦叶"
+        },
+        {
+          "id": "nanyang-huizhong",
+          "name": "南阳慧忠"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "ying-wu-suo-zhu",
+          "name": "应无所住而生其心",
+          "current_books": [
+            "jingangjing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "se-ji-shi-kong",
+          "name": "色即是空，空即是色",
+          "current_books": [
+            "xinjing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "zhi-huan-ji-li",
+          "name": "知幻即离，离幻即觉",
+          "current_books": [
+            "yuanjuejing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "xin-jing-ji-fo-tu-jing",
+          "name": "心净则佛土净",
+          "current_books": [
+            "weimojiejing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wei-xin-zao",
+          "name": "一切唯心造",
+          "current_books": [
+            "juelin",
+            "tanjing",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "wu-ran-jue-xing",
+          "name": "无染觉性",
+          "current_books": [
+            "wuran",
+            "zhangzhi",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "tathagatagarbha",
+          "name": "如来藏",
+          "current_books": [
+            "tanjing",
+            "lengqiejing",
+            "dachengqixinlun"
+          ]
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃",
+          "current_books": [
+            "tanjing",
+            "xinjing",
+            "fangcunlun",
+            "huangbo",
+            "zhenxin",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "dunwu-jianxiu",
+          "name": "顿悟渐修",
+          "current_books": [
+            "tanjing",
+            "yongjia",
+            "xiuxinjue"
+          ]
+        },
+        {
+          "id": "liudu",
+          "name": "六度",
+          "current_books": [
+            "tanjing",
+            "jingangjing",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "ru-lai-zhi",
+          "name": "如来智",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "yinguo",
+          "name": "因果",
+          "current_books": [
+            "tanjing",
+            "yongjia",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "alaiye-shi",
+          "name": "阿赖耶识",
+          "current_books": [
+            "bashiguijusong",
+            "lengqiejing",
+            "tanjing",
+            "dachengqixinlun"
+          ]
+        },
+        {
+          "id": "niepan-miaoxin",
+          "name": "涅槃妙心",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "shixiang",
+          "name": "实相",
+          "current_books": [
+            "jingangjing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "foxing-changzhu",
+          "name": "佛性常住",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "xingju-shane",
+          "name": "性具善恶",
+          "current_books": [
+            "chanlinbaoxun",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "zhuan-shi-cheng-zhi",
+          "name": "转识成智",
+          "current_books": [
+            "tanjing",
+            "bashiguijusong"
+          ]
+        },
+        {
+          "id": "wenzi-zhang",
+          "name": "文字障",
+          "current_books": [
+            "tanjing",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "sanlun-tikong",
+          "name": "三轮体空",
+          "current_books": [
+            "jingangjing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "weixin-jingtu",
+          "name": "唯心净土",
+          "current_books": [
+            "tanjing",
+            "weimojiejing"
+          ]
+        },
+        {
+          "id": "xin-fo-zhongsheng",
+          "name": "心佛众生三无差别",
+          "current_books": [
+            "tanjing",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "shengsi-jielun",
+          "name": "生死即涅槃",
+          "current_books": [
+            "tanjing",
+            "weimojiejing",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "jianjiao",
+          "name": "渐教",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "sanfa-yin",
+          "name": "三法印",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "si-yi",
+          "name": "四依",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "er-di",
+          "name": "二谛",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "ba-zhengdao",
+          "name": "八正道",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "shi-er-yinyuan",
+          "name": "十二因缘",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "si-di",
+          "name": "四谛",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "jielv",
+          "name": "戒律",
+          "current_books": [
+            "tanjing",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wenzi-bore",
+          "name": "文字般若",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "guanzhao-bore",
+          "name": "观照般若",
+          "current_books": [
+            "tanjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "shixiang-bore",
+          "name": "实相般若",
+          "current_books": [
+            "tanjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "li-ju-shi-zao",
+          "name": "理具事造",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "jiaoli-guanxing",
+          "name": "教理观行",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "benjue-shijue",
+          "name": "本觉始觉",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "zhengjue",
+          "name": "正觉",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wuxing",
+          "name": "无行",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "fanyin",
+          "name": "法音",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wuzhu-benti",
+          "name": "无住本",
+          "current_books": [
+            "tanjing",
+            "weimojiejing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "affliction-bodhi",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "originally-nothing",
+          "name": "本来无一物"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "yixing-sanmei",
+          "name": "一行三昧"
+        },
+        {
+          "id": "zhongdao",
+          "name": "中道"
+        },
+        {
+          "id": "wuwo",
+          "name": "无我"
+        },
+        {
+          "id": "banruo-boluomi",
+          "name": "般若波罗蜜"
+        },
+        {
+          "id": "wu-nian",
+          "name": "无念"
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相"
+        },
+        {
+          "id": "wu-zhu",
+          "name": "无住"
+        },
+        {
+          "id": "putixin",
+          "name": "菩提心"
+        },
+        {
+          "id": "fanrao-puti",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "fashen",
+          "name": "法身"
+        },
+        {
+          "id": "sanbao",
+          "name": "三宝"
+        },
+        {
+          "id": "jiedinghui",
+          "name": "戒定慧"
+        },
+        {
+          "id": "lunhui",
+          "name": "轮回"
+        },
+        {
+          "id": "jietuo",
+          "name": "解脱"
+        },
+        {
+          "id": "zhengfa-yancang",
+          "name": "正法眼藏"
+        },
+        {
+          "id": "zhenru",
+          "name": "真如"
+        },
+        {
+          "id": "fajie",
+          "name": "法界"
+        },
+        {
+          "id": "busheng-bumie",
+          "name": "不生不灭"
+        },
+        {
+          "id": "wuming",
+          "name": "无明"
+        },
+        {
+          "id": "sanshen",
+          "name": "三身"
+        },
+        {
+          "id": "sizhi",
+          "name": "四智"
+        },
+        {
+          "id": "buke-siyi",
+          "name": "不可思议"
+        },
+        {
+          "id": "yicheng",
+          "name": "一乘"
+        },
+        {
+          "id": "fangbian",
+          "name": "方便"
+        },
+        {
+          "id": "shan-zhishi",
+          "name": "善知识"
+        },
+        {
+          "id": "zhijie-zongtu",
+          "name": "知解宗徒"
+        },
+        {
+          "id": "rulai",
+          "name": "如来"
+        },
+        {
+          "id": "puti",
+          "name": "菩提"
+        },
+        {
+          "id": "fanrao-puti",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "faxing",
+          "name": "法性"
+        },
+        {
+          "id": "yihua-wuye",
+          "name": "一花开五叶"
+        },
+        {
+          "id": "yixiu-jue",
+          "name": "一宿觉"
+        },
+        {
+          "id": "dunjiao",
+          "name": "顿教"
+        },
+        {
+          "id": "yin-yuan",
+          "name": "因缘"
+        },
+        {
+          "id": "wu-yun",
+          "name": "五蕴"
+        },
+        {
+          "id": "shiba-jie",
+          "name": "十八界"
+        },
+        {
+          "id": "chanding",
+          "name": "禅定"
+        },
+        {
+          "id": "bore-zhi",
+          "name": "般若智"
+        },
+        {
+          "id": "cibei",
+          "name": "慈悲"
+        },
+        {
+          "id": "yuanman",
+          "name": "圆满"
+        },
+        {
+          "id": "xingqi",
+          "name": "性起"
+        },
+        {
+          "id": "zixing-qingjing",
+          "name": "自性清净"
+        },
+        {
+          "id": "ben-lai-mian-mu",
+          "name": "本来面目"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "ru-lai-zhi",
+          "name": "如来智"
+        },
+        {
+          "id": "niepan-miaoxin",
+          "name": "涅槃妙心"
+        },
+        {
+          "id": "foxing-changzhu",
+          "name": "佛性常住"
+        },
+        {
+          "id": "jianjiao",
+          "name": "渐教"
+        },
+        {
+          "id": "sanfa-yin",
+          "name": "三法印"
+        },
+        {
+          "id": "si-yi",
+          "name": "四依"
+        },
+        {
+          "id": "er-di",
+          "name": "二谛"
+        },
+        {
+          "id": "ba-zhengdao",
+          "name": "八正道"
+        },
+        {
+          "id": "shi-er-yinyuan",
+          "name": "十二因缘"
+        },
+        {
+          "id": "si-di",
+          "name": "四谛"
+        },
+        {
+          "id": "wenzi-bore",
+          "name": "文字般若"
+        },
+        {
+          "id": "li-ju-shi-zao",
+          "name": "理具事造"
+        },
+        {
+          "id": "jiaoli-guanxing",
+          "name": "教理观行"
+        },
+        {
+          "id": "benjue-shijue",
+          "name": "本觉始觉"
+        },
+        {
+          "id": "zhengjue",
+          "name": "正觉"
+        },
+        {
+          "id": "wuxing",
+          "name": "无行"
+        },
+        {
+          "id": "fanyin",
+          "name": "法音"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "yixing-sanmei-practice",
+          "name": "一行三昧实修法",
+          "current_books": [
+            "wenshu",
+            "anxin",
+            "tanjing",
+            "juelin"
+          ]
+        },
+        {
+          "id": "baoren",
+          "name": "保任",
+          "current_books": [
+            "tanjing",
+            "zhengdaoge",
+            "dunwu",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wunian-fa",
+          "name": "无念法门",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wuxiang-fa",
+          "name": "无相法门",
+          "current_books": [
+            "tanjing"
+          ]
+        },
+        {
+          "id": "wuzhu-fa",
+          "name": "无住法门",
+          "current_books": [
+            "tanjing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修"
+        },
+        {
+          "id": "wunian-fa",
+          "name": "无念法门"
+        },
+        {
+          "id": "wuxiang-fa",
+          "name": "无相法门"
+        },
+        {
+          "id": "wuzhu-fa",
+          "name": "无住法门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zhengdaoge",
+    "title": "永嘉证道歌",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "bodhidharma",
+          "name": "菩提达摩"
+        },
+        {
+          "id": "huineng",
+          "name": "六祖惠能"
+        },
+        {
+          "id": "yongjia",
+          "name": "永嘉玄觉"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "affliction-bodhi",
+          "name": "烦恼即菩提",
+          "current_books": [
+            "tanjing",
+            "zhengdaoge",
+            "zhigong"
+          ]
+        },
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修",
+          "current_books": [
+            "xinwangming",
+            "weimojiejing",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "nianfo-chan",
+          "name": "念佛禅",
+          "current_books": [
+            "anxin",
+            "wenshu",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "zhengdaoge"
+          ]
+        },
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "baoren",
+          "name": "保任",
+          "current_books": [
+            "tanjing",
+            "zhengdaoge",
+            "dunwu",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "canjiu-fa",
+          "name": "参究法门",
+          "current_books": [
+            "xinxinming",
+            "zhengdaoge"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "mazu",
+    "title": "马祖道一禅师语录",
+    "persons": {
+      "wrong": [
+        {
+          "id": "huairang",
+          "name": "南岳怀让",
+          "current_books": [
+            "tanjing",
+            "mazu"
+          ]
+        },
+        {
+          "id": "nanquan-puyuan",
+          "name": "南泉普愿",
+          "current_books": [
+            "baizhang",
+            "mazu"
+          ]
+        },
+        {
+          "id": "pang-yun",
+          "name": "庞蕴",
+          "current_books": [
+            "mazu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "mazu",
+          "name": "马祖道一"
+        },
+        {
+          "id": "fenzhou-wuye",
+          "name": "汾州无业"
+        },
+        {
+          "id": "yaoshan-weiyan",
+          "name": "药山惟俨"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "pang-yun",
+          "name": "庞蕴"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "all-returns-to-one",
+          "name": "万法归一",
+          "current_books": [
+            "mazu",
+            "zhigong"
+          ]
+        },
+        {
+          "id": "gewai-xuanji",
+          "name": "格外玄机",
+          "current_books": [
+            "mazu",
+            "linji"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "koan",
+          "name": "公案"
+        },
+        {
+          "id": "mind-is-buddha",
+          "name": "即心即佛"
+        },
+        {
+          "id": "not-mind-not-buddha",
+          "name": "非心非佛"
+        },
+        {
+          "id": "ordinary-mind",
+          "name": "平常心"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "jiefeng",
+          "name": "机锋"
+        },
+        {
+          "id": "jifeng",
+          "name": "机锋"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "baizhang",
+    "title": "百丈怀海禅师语录",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "baizhang",
+          "name": "百丈怀海"
+        },
+        {
+          "id": "nanquan-puyuan",
+          "name": "南泉普愿"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "koan",
+          "name": "公案"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "jiefeng",
+          "name": "机锋",
+          "current_books": [
+            "mazu",
+            "baizhang",
+            "huangbo",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "huangbo",
+    "title": "黄檗山断际禅师传心法要",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "baizhang",
+          "name": "百丈怀海"
+        },
+        {
+          "id": "huangbo",
+          "name": "黄檗希运"
+        },
+        {
+          "id": "linji",
+          "name": "临济义玄"
+        },
+        {
+          "id": "peixiu",
+          "name": "裴休"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "mind-is-buddha",
+          "name": "即心即佛",
+          "current_books": [
+            "mazu",
+            "huangbo",
+            "xuemaicong",
+            "zhigong",
+            "xinwangming"
+          ]
+        },
+        {
+          "id": "no-views",
+          "name": "莫起诸见",
+          "current_books": [
+            "huangbo_wanlinglu",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "wu-wei-famen",
+          "name": "无为法门",
+          "current_books": [
+            "huangbo_wanlinglu",
+            "huangbo"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "weishi-yixin",
+          "name": "唯是一心"
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃"
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "banghe",
+          "name": "棒喝",
+          "current_books": [
+            "linji",
+            "zhangzhi",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "jiefeng",
+          "name": "机锋",
+          "current_books": [
+            "mazu",
+            "baizhang",
+            "huangbo",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "kanhuatou",
+          "name": "看话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "xinxinming",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xiuxinjue",
+    "title": "高丽国普照禅师修心诀",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "chinul",
+          "name": "普照知讷"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "dunwu-jianxiu",
+          "name": "顿悟渐修"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "kanhuatou",
+          "name": "看话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "xinxinming",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "jingxin-fa",
+          "name": "净心法门",
+          "current_books": [
+            "zhenxin",
+            "xiuxinjue"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "linji",
+    "title": "镇州临济慧照禅师语录",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "linji",
+          "name": "临济义玄"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "ordinary-mind",
+          "name": "平常心",
+          "current_books": [
+            "mazu",
+            "linji"
+          ]
+        },
+        {
+          "id": "gewai-xuanji",
+          "name": "格外玄机",
+          "current_books": [
+            "mazu",
+            "linji"
+          ]
+        },
+        {
+          "id": "rulai-chan-zushi-chan",
+          "name": "如来禅与祖师禅",
+          "current_books": [
+            "linji"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "rulai-chan-zushi-chan",
+          "name": "如来禅与祖师禅"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "banghe",
+          "name": "棒喝"
+        },
+        {
+          "id": "jifeng",
+          "name": "机锋"
+        },
+        {
+          "id": "banghe",
+          "name": "棒喝"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "dunwu",
+    "title": "顿悟入道要门论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "mazu",
+          "name": "马祖道一"
+        },
+        {
+          "id": "dahui",
+          "name": "大珠慧海"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "canjiu",
+          "name": "参究",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "bashiguijusong",
+            "xuemaicong",
+            "wuxinglun",
+            "poxianglun",
+            "wuxinlun",
+            "xixulun",
+            "sixingguan",
+            "dunwu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "jiefeng",
+          "name": "机锋",
+          "current_books": [
+            "mazu",
+            "baizhang",
+            "huangbo",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "baoren",
+          "name": "保任",
+          "current_books": [
+            "tanjing",
+            "zhengdaoge",
+            "dunwu",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "dunwu-fa",
+          "name": "顿悟法门"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zhenxin",
+    "title": "高丽国普照禅师真心直说",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "chinul",
+          "name": "普照知讷"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "kanhua-chan-concept",
+          "name": "看话",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃"
+        },
+        {
+          "id": "canjiu",
+          "name": "参究"
+        },
+        {
+          "id": "yiqing",
+          "name": "疑情"
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "wumen",
+          "name": "无门关",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "wumenguan",
+            "xinxinming"
+          ]
+        },
+        {
+          "id": "kanhuatou",
+          "name": "看话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "xinxinming",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "jingxin-fa",
+          "name": "净心法门",
+          "current_books": [
+            "zhenxin",
+            "xiuxinjue"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zhigong",
+    "title": "宝志公禅师颂偈诗",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "fudaoshi",
+          "name": "傅大士"
+        },
+        {
+          "id": "zhigong",
+          "name": "宝志禅师"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "affliction-bodhi",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "mind-is-buddha",
+          "name": "即心即佛"
+        },
+        {
+          "id": "all-returns-to-one",
+          "name": "万法归一"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xinwangming",
+    "title": "傅大士心王铭",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "fudaoshi",
+          "name": "傅大士"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修",
+          "current_books": [
+            "xinwangming",
+            "weimojiejing",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "mind-is-buddha",
+          "name": "即心即佛"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        },
+        {
+          "id": "non-mind",
+          "name": "无心"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "shenhui",
+    "title": "荷泽大师显宗记",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "shenhui",
+          "name": "荷泽神会"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "beyond-words",
+          "name": "不立文字",
+          "current_books": [
+            "xuemaicong",
+            "shenhui",
+            "qifo"
+          ]
+        },
+        {
+          "id": "yinian-wusheng",
+          "name": "一念无生",
+          "current_books": [
+            "xinxinming",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修",
+          "current_books": [
+            "xinwangming",
+            "weimojiejing",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "buddha-nature",
+          "name": "佛性"
+        },
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "instant-enlightenment",
+          "name": "顿悟"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "daily-zen",
+          "name": "行住坐卧即禅",
+          "current_books": [
+            "mazu",
+            "dunwu",
+            "baizhang",
+            "huangbo",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        },
+        {
+          "id": "baoren",
+          "name": "保任",
+          "current_books": [
+            "tanjing",
+            "zhengdaoge",
+            "dunwu",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "jingangjing",
+    "title": "金刚般若波罗蜜经",
+    "persons": {
+      "wrong": [
+        {
+          "id": "guanzizai",
+          "name": "观自在菩萨",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "anan",
+          "name": "阿难尊者",
+          "current_books": [
+            "lengyanjing",
+            "jingangjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "hongren",
+          "name": "五祖弘忍"
+        },
+        {
+          "id": "huineng",
+          "name": "六祖惠能"
+        },
+        {
+          "id": "xubuti",
+          "name": "须菩提"
+        },
+        {
+          "id": "kumarajiva",
+          "name": "鸠摩罗什"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "si-xiang",
+          "name": "破除四相",
+          "current_books": [
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "wu-gua-ai",
+          "name": "心无挂碍",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "po-xiang",
+          "name": "破相",
+          "current_books": [
+            "poxianglun",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "liudu",
+          "name": "六度",
+          "current_books": [
+            "tanjing",
+            "jingangjing",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "buyi-buyi",
+          "name": "不一不异",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "sekong-buer",
+          "name": "色空不二",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "sanlun-tikong",
+          "name": "三轮体空",
+          "current_books": [
+            "jingangjing",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "bore-zhi",
+          "name": "般若智",
+          "current_books": [
+            "tanjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "guanzhao-bore",
+          "name": "观照般若",
+          "current_books": [
+            "tanjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "shixiang-bore",
+          "name": "实相般若",
+          "current_books": [
+            "tanjing",
+            "jingangjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "prajna",
+          "name": "般若"
+        },
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "no-abiding",
+          "name": "无住"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "ying-wu-suo-zhu",
+          "name": "应无所住而生其心"
+        },
+        {
+          "id": "ru-meng-huan-pao-ying",
+          "name": "如梦幻泡影"
+        },
+        {
+          "id": "banruo-boluomi",
+          "name": "般若波罗蜜"
+        },
+        {
+          "id": "shixiang",
+          "name": "实相"
+        },
+        {
+          "id": "rulai",
+          "name": "如来"
+        },
+        {
+          "id": "puti",
+          "name": "菩提"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "si-xiang",
+          "name": "破除四相"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "guan-zizai-banya-practice",
+          "name": "观自在般若观照法门",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xinjing",
+    "title": "般若波罗蜜多心经",
+    "persons": {
+      "wrong": [
+        {
+          "id": "kumarajiva",
+          "name": "鸠摩罗什",
+          "current_books": [
+            "xinjing",
+            "jingangjing",
+            "weimojiejing"
+          ]
+        },
+        {
+          "id": "nagarjuna",
+          "name": "龙树菩萨",
+          "current_books": [
+            "xinjing"
+          ]
+        },
+        {
+          "id": "sheli-fu",
+          "name": "舍利弗",
+          "current_books": [
+            "xinjing",
+            "lengyanjing",
+            "weimojiejing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "guanzizai",
+          "name": "观自在菩萨"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "nagarjuna",
+          "name": "龙树菩萨"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "zhongdao",
+          "name": "中道",
+          "current_books": [
+            "xinjing",
+            "tanjing",
+            "wuxinlun",
+            "fangcunlun",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "yuanqi",
+          "name": "缘起",
+          "current_books": [
+            "xinjing",
+            "lengqiejing"
+          ]
+        },
+        {
+          "id": "wuwo",
+          "name": "无我",
+          "current_books": [
+            "tanjing",
+            "lengqiejing",
+            "xinjing",
+            "xixulun",
+            "sixingguan"
+          ]
+        },
+        {
+          "id": "wu-nian",
+          "name": "无念",
+          "current_books": [
+            "tanjing",
+            "xinjing"
+          ]
+        },
+        {
+          "id": "wu-xiang",
+          "name": "无相",
+          "current_books": [
+            "tanjing",
+            "xinjing",
+            "xuemaicong",
+            "fangcunlun",
+            "huangbo",
+            "zhenxin"
+          ]
+        },
+        {
+          "id": "wu-zhu",
+          "name": "无住",
+          "current_books": [
+            "tanjing",
+            "xinjing"
+          ]
+        },
+        {
+          "id": "buyi-buyi",
+          "name": "不一不异",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "jietuo",
+          "name": "解脱",
+          "current_books": [
+            "tanjing",
+            "xinjing"
+          ]
+        },
+        {
+          "id": "sekong-buer",
+          "name": "色空不二",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "wu-yun-jie-kong",
+          "name": "照见五蕴皆空"
+        },
+        {
+          "id": "se-ji-shi-kong",
+          "name": "色即是空，空即是色"
+        },
+        {
+          "id": "wu-gua-ai",
+          "name": "心无挂碍"
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃"
+        },
+        {
+          "id": "banruo-boluomi",
+          "name": "般若波罗蜜"
+        },
+        {
+          "id": "busheng-bumie",
+          "name": "不生不灭"
+        },
+        {
+          "id": "wu-yun",
+          "name": "五蕴"
+        },
+        {
+          "id": "shiba-jie",
+          "name": "十八界"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "guan-zizai-banya-practice",
+          "name": "观自在般若观照法门",
+          "current_books": [
+            "xinjing",
+            "jingangjing"
+          ]
+        },
+        {
+          "id": "er-gen-yuan-tong-practice",
+          "name": "观音耳根圆通反闻法门",
+          "current_books": [
+            "lengyanjing",
+            "xinjing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "yuanjuejing",
+    "title": "大方广圆觉修多罗了义经",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "puxian-yuanjue",
+          "name": "普贤菩萨"
+        },
+        {
+          "id": "fotuoduoluo",
+          "name": "佛陀多罗"
+        },
+        {
+          "id": "wenshu-yuanjue",
+          "name": "文殊师利菩萨"
+        },
+        {
+          "id": "guifeng-zongmi",
+          "name": "圭峰宗密"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "si-bing",
+          "name": "作止任灭四种修行病",
+          "current_books": [
+            "yuanjuejing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "zhi-huan-ji-li",
+          "name": "知幻即离，离幻即觉"
+        },
+        {
+          "id": "yuanjue-qingjing-xinxing",
+          "name": "圆觉清净心性"
+        },
+        {
+          "id": "lunhui",
+          "name": "轮回"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "si-bing",
+          "name": "作止任灭四种修行病"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "yuanjue-sanzhong-jingguan",
+          "name": "圆觉三种清净观门",
+          "current_books": [
+            "yuanjuejing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "yuanjue-sanzhong-jingguan",
+          "name": "圆觉三种清净观门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chanlinbaoxun",
+    "title": "禅林宝训 (全四卷)",
+    "persons": {
+      "wrong": [
+        {
+          "id": "zhaozhou",
+          "name": "赵州从谂",
+          "current_books": [
+            "chanlinbaoxun",
+            "yunmen",
+            "changuancejin",
+            "zhaozhouyulu"
+          ]
+        },
+        {
+          "id": "yuanwu-keqin",
+          "name": "圆悟克勤",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin",
+            "huanwuxinyao",
+            "huanwuyulu"
+          ]
+        },
+        {
+          "id": "yunmen",
+          "name": "云门文偃",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xuefeng-yicun",
+          "name": "雪峰义存",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "deshan-xuanjian",
+          "name": "德山宣鉴",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yongming-yanshou",
+          "name": "永明延寿",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "fayan-wenyi",
+          "name": "法眼文益",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "tiantai-deshao",
+          "name": "天台德韶",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "longtan-chongxin",
+          "name": "龙潭崇信",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xuansha-shibei",
+          "name": "玄沙师备",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "luohan-guichen",
+          "name": "罗汉桂琛",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "fenyang-shanzhao",
+          "name": "汾阳善昭",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wuzu-fayan",
+          "name": "五祖法演",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "baiyun-shouduan",
+          "name": "白云守端",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wumen-huikai",
+          "name": "无门慧开",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "niutou-farong",
+          "name": "牛头法融",
+          "current_books": [
+            "chanlinbaoxun",
+            "xinxinming"
+          ]
+        },
+        {
+          "id": "tianhuang-daowu",
+          "name": "天皇道悟",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "danxia-tianran",
+          "name": "丹霞天然",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xiangyan-zhixian",
+          "name": "香严智闲",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "li-ao",
+          "name": "李翱",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wansong-xingxiu",
+          "name": "万松行秀",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "zhuhong",
+          "name": "袾宏",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "changlu-zongze",
+          "name": "长芦宗赜",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "muzhou-daoming",
+          "name": "睦州道明",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "shoushan-xingnian",
+          "name": "首山省念",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "foyan-qingyuan",
+          "name": "佛眼清远",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "boshan-yuanlai",
+          "name": "博山元来",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yelu-chucai",
+          "name": "耶律楚材",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "taiping-huiman",
+          "name": "太平慧懑",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "fengxue-yanzhao",
+          "name": "风穴延沼",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "daoyuan-monk",
+          "name": "道原",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "puji",
+          "name": "普济",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "huangtingjian",
+          "name": "黄庭坚",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "tongrong",
+          "name": "通容",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yinyuan-longqi",
+          "name": "隐元隆琦",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "touzi-datong",
+          "name": "投子大同",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wuzhun-shifan",
+          "name": "无准师范",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "zhenjing-kewen",
+          "name": "真净克文",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "foyin-liaoyuan",
+          "name": "佛印了元",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "tianyi-yihuai",
+          "name": "天衣义怀",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "kaifu-daoning",
+          "name": "开福道宁",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "fojian-huiqin",
+          "name": "佛鉴慧勤",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "huanglong-huinan",
+          "name": "黄龙慧南"
+        },
+        {
+          "id": "yangqi-fanghui",
+          "name": "杨岐方会"
+        },
+        {
+          "id": "chuyuan",
+          "name": "慈明楚圆"
+        },
+        {
+          "id": "dahui-zonggao",
+          "name": "大慧宗杲"
+        },
+        {
+          "id": "huitang-zuxin",
+          "name": "晦堂祖心"
+        },
+        {
+          "id": "lingyuan-weiqing",
+          "name": "灵源惟清"
+        },
+        {
+          "id": "sixin-wuxin",
+          "name": "死心悟新"
+        },
+        {
+          "id": "zhantang-wenzhun",
+          "name": "湛堂文准"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "yunmen",
+          "name": "云门文偃"
+        },
+        {
+          "id": "xuefeng-yicun",
+          "name": "雪峰义存"
+        },
+        {
+          "id": "deshan-xuanjian",
+          "name": "德山宣鉴"
+        },
+        {
+          "id": "fayan-wenyi",
+          "name": "法眼文益"
+        },
+        {
+          "id": "tiantai-deshao",
+          "name": "天台德韶"
+        },
+        {
+          "id": "longtan-chongxin",
+          "name": "龙潭崇信"
+        },
+        {
+          "id": "luohan-guichen",
+          "name": "罗汉桂琛"
+        },
+        {
+          "id": "fenyang-shanzhao",
+          "name": "汾阳善昭"
+        },
+        {
+          "id": "baiyun-shouduan",
+          "name": "白云守端"
+        },
+        {
+          "id": "wumen-huikai",
+          "name": "无门慧开"
+        },
+        {
+          "id": "tianhuang-daowu",
+          "name": "天皇道悟"
+        },
+        {
+          "id": "danxia-tianran",
+          "name": "丹霞天然"
+        },
+        {
+          "id": "xiangyan-zhixian",
+          "name": "香严智闲"
+        },
+        {
+          "id": "li-ao",
+          "name": "李翱"
+        },
+        {
+          "id": "wansong-xingxiu",
+          "name": "万松行秀"
+        },
+        {
+          "id": "changlu-zongze",
+          "name": "长芦宗赜"
+        },
+        {
+          "id": "muzhou-daoming",
+          "name": "睦州道明"
+        },
+        {
+          "id": "shoushan-xingnian",
+          "name": "首山省念"
+        },
+        {
+          "id": "foyan-qingyuan",
+          "name": "佛眼清远"
+        },
+        {
+          "id": "boshan-yuanlai",
+          "name": "博山元来"
+        },
+        {
+          "id": "yelu-chucai",
+          "name": "耶律楚材"
+        },
+        {
+          "id": "taiping-huiman",
+          "name": "太平慧懑"
+        },
+        {
+          "id": "fengxue-yanzhao",
+          "name": "风穴延沼"
+        },
+        {
+          "id": "daoyuan-monk",
+          "name": "道原"
+        },
+        {
+          "id": "puji",
+          "name": "普济"
+        },
+        {
+          "id": "huangtingjian",
+          "name": "黄庭坚"
+        },
+        {
+          "id": "tongrong",
+          "name": "通容"
+        },
+        {
+          "id": "yinyuan-longqi",
+          "name": "隐元隆琦"
+        },
+        {
+          "id": "touzi-datong",
+          "name": "投子大同"
+        },
+        {
+          "id": "wuzhun-shifan",
+          "name": "无准师范"
+        },
+        {
+          "id": "zhenjing-kewen",
+          "name": "真净克文"
+        },
+        {
+          "id": "foyin-liaoyuan",
+          "name": "佛印了元"
+        },
+        {
+          "id": "tianyi-yihuai",
+          "name": "天衣义怀"
+        },
+        {
+          "id": "kaifu-daoning",
+          "name": "开福道宁"
+        },
+        {
+          "id": "fojian-huiqin",
+          "name": "佛鉴慧勤"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "tou-xin-wei-si",
+          "name": "偷心未死",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "de-hua-li-zhi",
+          "name": "德化与礼治",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "wenzi-chan",
+          "name": "文字禅",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "kanhua-chan-concept",
+          "name": "看话",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "xiangshang-guanliezi",
+          "name": "向上关捩子",
+          "current_books": [
+            "chanlinbaoxun",
+            "dongshanyulu",
+            "yunmen"
+          ]
+        },
+        {
+          "id": "chanbing",
+          "name": "禅病",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yixin-sanguan",
+          "name": "一心三观",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "weishi",
+          "name": "唯识",
+          "current_books": [
+            "bashiguijusong",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "fajie",
+          "name": "法界",
+          "current_books": [
+            "tanjing",
+            "chanlinbaoxun",
+            "fangcunlun",
+            "baojingsanmei"
+          ]
+        },
+        {
+          "id": "lishi-wuai",
+          "name": "理事无碍",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "shishi-wuai",
+          "name": "事事无碍",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yiji-yiqie",
+          "name": "一即一切",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "yinian-sanqian",
+          "name": "一念三千",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xingju-shane",
+          "name": "性具善恶",
+          "current_books": [
+            "chanlinbaoxun",
+            "tanjing"
+          ]
+        },
+        {
+          "id": "zhijie-zongtu",
+          "name": "知解宗徒",
+          "current_books": [
+            "tanjing",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "kumu-chan",
+          "name": "枯木禅",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "liuxiang-yuanrong",
+          "name": "六相圆融",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xin-fo-zhongsheng",
+          "name": "心佛众生三无差别",
+          "current_books": [
+            "tanjing",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "xinxin-xiangyin",
+          "name": "心心相印",
+          "current_books": [
+            "qifo",
+            "xuemaicong",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "fajie-yuanqi",
+          "name": "法界缘起",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "zongfeng",
+          "name": "宗风",
+          "current_books": [
+            "dahuiyulu",
+            "chanlinbaoxun"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "canjiu",
+          "name": "参究"
+        },
+        {
+          "id": "jiaowai-biechuan",
+          "name": "教外别传"
+        },
+        {
+          "id": "shan-zhishi",
+          "name": "善知识"
+        },
+        {
+          "id": "koutou-chan",
+          "name": "口头禅"
+        },
+        {
+          "id": "jielv",
+          "name": "戒律"
+        },
+        {
+          "id": "chanding",
+          "name": "禅定"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "tou-xin-wei-si",
+          "name": "偷心未死"
+        },
+        {
+          "id": "de-hua-li-zhi",
+          "name": "德化与礼治"
+        },
+        {
+          "id": "wenzi-chan",
+          "name": "文字禅"
+        },
+        {
+          "id": "chanbing",
+          "name": "禅病"
+        },
+        {
+          "id": "yixin-sanguan",
+          "name": "一心三观"
+        },
+        {
+          "id": "lishi-wuai",
+          "name": "理事无碍"
+        },
+        {
+          "id": "shishi-wuai",
+          "name": "事事无碍"
+        },
+        {
+          "id": "yiji-yiqie",
+          "name": "一即一切"
+        },
+        {
+          "id": "yinian-sanqian",
+          "name": "一念三千"
+        },
+        {
+          "id": "kumu-chan",
+          "name": "枯木禅"
+        },
+        {
+          "id": "liuxiang-yuanrong",
+          "name": "六相圆融"
+        },
+        {
+          "id": "fajie-yuanqi",
+          "name": "法界缘起"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "wumen",
+          "name": "无门关",
+          "current_books": [
+            "zhenxin",
+            "chanlinbaoxun",
+            "wumenguan",
+            "xinxinming"
+          ]
+        },
+        {
+          "id": "kanhuatou",
+          "name": "看话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "xinxinming",
+            "huangbo"
+          ]
+        },
+        {
+          "id": "chanlin-jingce-practice",
+          "name": "禅林宝训日用反省警策法",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头",
+          "current_books": [
+            "xiuxinjue",
+            "zhenxin",
+            "chanlinbaoxun",
+            "changuancejin",
+            "huangbo",
+            "xinxinming",
+            "dunwu"
+          ]
+        },
+        {
+          "id": "jifeng",
+          "name": "机锋",
+          "current_books": [
+            "mazu",
+            "linji",
+            "yunmen",
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "youfang-canfang",
+          "name": "游方参访",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "pushuo-xiaocan",
+          "name": "普说与小参",
+          "current_books": [
+            "chanlinbaoxun"
+          ]
+        },
+        {
+          "id": "biguan-daqi",
+          "name": "闭关打七",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "chanlin-jingce-practice",
+          "name": "禅林宝训日用反省警策法"
+        },
+        {
+          "id": "youfang-canfang",
+          "name": "游方参访"
+        },
+        {
+          "id": "pushuo-xiaocan",
+          "name": "普说与小参"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lengyanjing",
+    "title": "大佛顶首楞严经 (全十卷)",
+    "persons": {
+      "wrong": [
+        {
+          "id": "xuanzang",
+          "name": "玄奘",
+          "current_books": [
+            "lengyanjing",
+            "bashiguijusong"
+          ]
+        },
+        {
+          "id": "zhu-daosheng",
+          "name": "竺道生",
+          "current_books": [
+            "lengyanjing",
+            "weimojiejing"
+          ]
+        },
+        {
+          "id": "zhenxie-qingliao",
+          "name": "真歇清了",
+          "current_books": [
+            "lengyanjing"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "anan",
+          "name": "阿难尊者"
+        },
+        {
+          "id": "banramidi",
+          "name": "般刺密帝"
+        },
+        {
+          "id": "wenshu-yuanjue",
+          "name": "文殊师利菩萨"
+        },
+        {
+          "id": "fulouna",
+          "name": "富楼那"
+        },
+        {
+          "id": "jiazhanyan",
+          "name": "迦旃延"
+        },
+        {
+          "id": "analvtu",
+          "name": "阿那律"
+        },
+        {
+          "id": "youpoli",
+          "name": "优波离"
+        },
+        {
+          "id": "sheli-fu",
+          "name": "舍利弗"
+        },
+        {
+          "id": "mulian",
+          "name": "目犍连"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "zhenxie-qingliao",
+          "name": "真歇清了"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "qi-chu-zheng-xin",
+          "name": "七处征心·破妄识心",
+          "current_books": [
+            "lengyanjing"
+          ]
+        },
+        {
+          "id": "ba-huan-bian-jian",
+          "name": "八还辨见·显不灭见性",
+          "current_books": [
+            "lengyanjing"
+          ]
+        },
+        {
+          "id": "wu-shi-yin-mo",
+          "name": "五十阴魔辨析",
+          "current_books": [
+            "lengyanjing"
+          ]
+        },
+        {
+          "id": "jiedinghui",
+          "name": "戒定慧",
+          "current_books": [
+            "tanjing",
+            "lengyanjing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "qi-chu-zheng-xin",
+          "name": "七处征心·破妄识心"
+        },
+        {
+          "id": "ba-huan-bian-jian",
+          "name": "八还辨见·显不灭见性"
+        },
+        {
+          "id": "wu-shi-yin-mo",
+          "name": "五十阴魔辨析"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "er-gen-yuan-tong-practice",
+          "name": "观音耳根圆通反闻法门",
+          "current_books": [
+            "lengyanjing",
+            "xinjing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "weimojiejing",
+    "title": "维摩诘所说经 (全十四品)",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "weimojie",
+          "name": "维摩诘长者"
+        },
+        {
+          "id": "wenshu-yuanjue",
+          "name": "文殊师利菩萨"
+        },
+        {
+          "id": "luohouluo",
+          "name": "罗睺罗"
+        },
+        {
+          "id": "fulouna",
+          "name": "富楼那"
+        },
+        {
+          "id": "jiazhanyan",
+          "name": "迦旃延"
+        },
+        {
+          "id": "analvtu",
+          "name": "阿那律"
+        },
+        {
+          "id": "kumarajiva",
+          "name": "鸠摩罗什"
+        },
+        {
+          "id": "sengzhao",
+          "name": "僧肇"
+        },
+        {
+          "id": "sheli-fu",
+          "name": "舍利弗"
+        },
+        {
+          "id": "mulian",
+          "name": "目犍连"
+        },
+        {
+          "id": "zhu-daosheng",
+          "name": "竺道生"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "ru-bu-er-fa-men",
+          "name": "入不二法门·维摩一默",
+          "current_books": [
+            "weimojiejing"
+          ]
+        },
+        {
+          "id": "shengsi-jielun",
+          "name": "生死即涅槃",
+          "current_books": [
+            "tanjing",
+            "weimojiejing",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "chanjing-shuangxiu",
+          "name": "禅净双修",
+          "current_books": [
+            "xinwangming",
+            "weimojiejing",
+            "zhengdaoge",
+            "shenhui"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "xin-jing-ji-fo-tu-jing",
+          "name": "心净则佛土净"
+        },
+        {
+          "id": "fanrao-puti",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "buke-siyi",
+          "name": "不可思议"
+        },
+        {
+          "id": "fangbian",
+          "name": "方便"
+        },
+        {
+          "id": "weixin-jingtu",
+          "name": "唯心净土"
+        },
+        {
+          "id": "fanrao-puti",
+          "name": "烦恼即菩提"
+        },
+        {
+          "id": "wuzhu-benti",
+          "name": "无住本"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "ru-bu-er-fa-men",
+          "name": "入不二法门·维摩一默"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "weimo-buer-practice",
+          "name": "维摩居士入不二法门观照",
+          "current_books": [
+            "weimojiejing"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "weimo-buer-practice",
+          "name": "维摩居士入不二法门观照"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shiniutu",
+    "title": "十牛图颂并序",
+    "persons": {
+      "wrong": [
+        {
+          "id": "puming",
+          "name": "普明禅师",
+          "current_books": [
+            "shiniutu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "kuoan",
+          "name": "廓庵师远"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "puming",
+          "name": "普明禅师"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "zhengfa-yancang",
+          "name": "正法眼藏"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "muniu-tuxi",
+          "name": "十牛图牧心",
+          "current_books": [
+            "shiniutu"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "muniu-tuxi",
+          "name": "十牛图牧心"
+        }
+      ]
+    }
+  },
+  {
+    "id": "baojingsanmei",
+    "title": "宝镜三昧歌",
+    "persons": {
+      "wrong": [
+        {
+          "id": "weishan-lingyou",
+          "name": "沩山灵祐",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu"
+          ]
+        },
+        {
+          "id": "yangshan-huiji",
+          "name": "仰山慧寂",
+          "current_books": [
+            "baojingsanmei"
+          ]
+        },
+        {
+          "id": "hongzhi-zhengjue",
+          "name": "宏智正觉",
+          "current_books": [
+            "baojingsanmei",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "daoyuan",
+          "name": "道元",
+          "current_books": [
+            "baojingsanmei"
+          ]
+        },
+        {
+          "id": "danxia-zichun",
+          "name": "丹霞子淳",
+          "current_books": [
+            "baojingsanmei"
+          ]
+        },
+        {
+          "id": "furong-daookai",
+          "name": "芙蓉道楷",
+          "current_books": [
+            "baojingsanmei"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "dongshan",
+          "name": "洞山良价"
+        },
+        {
+          "id": "caoshan-benji",
+          "name": "曹山本寂"
+        },
+        {
+          "id": "yunyan-tancheng",
+          "name": "云岩昙晟"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "yangshan-huiji",
+          "name": "仰山慧寂"
+        },
+        {
+          "id": "daoyuan",
+          "name": "道元"
+        },
+        {
+          "id": "danxia-zichun",
+          "name": "丹霞子淳"
+        },
+        {
+          "id": "furong-daookai",
+          "name": "芙蓉道楷"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "mozhao-chan-concept",
+          "name": "默照",
+          "current_books": [
+            "baojingsanmei",
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "self-nature",
+          "name": "自性"
+        },
+        {
+          "id": "zhenru",
+          "name": "真如"
+        },
+        {
+          "id": "fajie",
+          "name": "法界"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "mozhao",
+          "name": "默照禅",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "zhiguan-dazuo",
+          "name": "只管打坐",
+          "current_books": [
+            "baojingsanmei",
+            "xinxinming",
+            "fangcunlun",
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "dongshanyulu",
+    "title": "洞山良价禅师语录",
+    "persons": {
+      "wrong": [
+        {
+          "id": "weishan-lingyou",
+          "name": "沩山灵祐",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu"
+          ]
+        },
+        {
+          "id": "caoshan-benji",
+          "name": "曹山本寂",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu"
+          ]
+        },
+        {
+          "id": "yunyan-tancheng",
+          "name": "云岩昙晟",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "dongshan",
+          "name": "洞山良价"
+        },
+        {
+          "id": "shide",
+          "name": "拾得"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "zhuan-shen-ju",
+          "name": "转身句",
+          "current_books": [
+            "dongshanyulu"
+          ]
+        },
+        {
+          "id": "xiangshang-guanliezi",
+          "name": "向上关捩子",
+          "current_books": [
+            "chanlinbaoxun",
+            "dongshanyulu",
+            "yunmen"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "zhuan-shen-ju",
+          "name": "转身句"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "mozhao",
+          "name": "默照禅",
+          "current_books": [
+            "baojingsanmei",
+            "dongshanyulu",
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "yongjia",
+    "title": "永嘉禅宗集",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "yongjia",
+          "name": "永嘉玄觉"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "dunwu-jianxiu",
+          "name": "顿悟渐修",
+          "current_books": [
+            "tanjing",
+            "yongjia",
+            "xiuxinjue"
+          ]
+        },
+        {
+          "id": "wenzi-zhang",
+          "name": "文字障",
+          "current_books": [
+            "tanjing",
+            "yongjia"
+          ]
+        },
+        {
+          "id": "kuang-chan",
+          "name": "狂禅",
+          "current_books": [
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "non-duality",
+          "name": "不二"
+        },
+        {
+          "id": "zhongdao",
+          "name": "中道"
+        },
+        {
+          "id": "niepan",
+          "name": "涅槃"
+        },
+        {
+          "id": "mozhao-chan-concept",
+          "name": "默照"
+        },
+        {
+          "id": "yinguo",
+          "name": "因果"
+        },
+        {
+          "id": "yixiu-jue",
+          "name": "一宿觉"
+        },
+        {
+          "id": "jiaochan-yizhi",
+          "name": "教禅一致"
+        },
+        {
+          "id": "shili-buer",
+          "name": "事理不二"
+        },
+        {
+          "id": "jijing-xingxing",
+          "name": "寂寂惺惺"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "kuang-chan",
+          "name": "狂禅"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "zhiguan-dazuo",
+          "name": "只管打坐",
+          "current_books": [
+            "baojingsanmei",
+            "xinxinming",
+            "fangcunlun",
+            "yongjia"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "mozhao",
+          "name": "默照禅"
+        },
+        {
+          "id": "shamatha",
+          "name": "奢摩他（止）"
+        },
+        {
+          "id": "vipashyana",
+          "name": "毗婆舍那（观）"
+        },
+        {
+          "id": "upa-shiksha",
+          "name": "优毕叉（止观等持）"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "yunmen",
+    "title": "云门匡真禅师广录",
+    "persons": {
+      "wrong": [
+        {
+          "id": "zhaozhou",
+          "name": "赵州从谂",
+          "current_books": [
+            "chanlinbaoxun",
+            "yunmen",
+            "changuancejin",
+            "zhaozhouyulu"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "xiangshang-guanliezi",
+          "name": "向上关捩子",
+          "current_books": [
+            "chanlinbaoxun",
+            "dongshanyulu",
+            "yunmen"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "xitian-ershiba-zu",
+          "name": "西天二十八祖"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "jifeng",
+          "name": "机锋"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "bashiguijusong",
+    "title": "八识规矩颂",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "xuanzang",
+          "name": "玄奘"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "sizhi",
+          "name": "四智",
+          "current_books": [
+            "tanjing",
+            "bashiguijusong"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "emptiness",
+          "name": "空"
+        },
+        {
+          "id": "direct-pointing",
+          "name": "直指人心"
+        },
+        {
+          "id": "real-mind",
+          "name": "真心"
+        },
+        {
+          "id": "canjiu",
+          "name": "参究"
+        },
+        {
+          "id": "weishi",
+          "name": "唯识"
+        },
+        {
+          "id": "alaiye-shi",
+          "name": "阿赖耶识"
+        },
+        {
+          "id": "jiaowai-biechuan",
+          "name": "教外别传"
+        },
+        {
+          "id": "zhuan-shi-cheng-zhi",
+          "name": "转识成智"
+        },
+        {
+          "id": "mo-na-shi",
+          "name": "末那识"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "wumenguan",
+    "title": "禅宗无门关",
+    "persons": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "huoju-siju",
+          "name": "活句死句",
+          "current_books": [
+            "chanjia_guijian",
+            "wumenguan"
+          ]
+        },
+        {
+          "id": "benfen-shi",
+          "name": "本分事",
+          "current_books": [
+            "zhaozhouyulu",
+            "wumenguan"
+          ]
+        },
+        {
+          "id": "chi-cha-qu",
+          "name": "吃茶去",
+          "current_books": [
+            "zhaozhouyulu",
+            "wumenguan"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "wu-men",
+          "name": "无门"
+        },
+        {
+          "id": "ben-lai-mian-mu",
+          "name": "本来面目"
+        },
+        {
+          "id": "song-gu",
+          "name": "颂古"
+        },
+        {
+          "id": "ping-chang",
+          "name": "评唱"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "canhuoju",
+          "name": "参活句",
+          "current_books": [
+            "chanjia_guijian",
+            "wumenguan"
+          ]
+        },
+        {
+          "id": "kan-wuzi",
+          "name": "看无字",
+          "current_books": [
+            "huangbo_wanlinglu",
+            "wumenguan"
+          ]
+        },
+        {
+          "id": "xi-bo-qu",
+          "name": "洗钵去",
+          "current_books": [
+            "zhaozhouyulu",
+            "wumenguan"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "wumen",
+          "name": "无门关"
+        },
+        {
+          "id": "can-wu-zi",
+          "name": "参无字"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "changuancejin",
+    "title": "禅关策进",
+    "persons": {
+      "wrong": [
+        {
+          "id": "huangbo",
+          "name": "黄檗希运",
+          "current_books": [
+            "huangbo",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "zhaozhou",
+          "name": "赵州从谂",
+          "current_books": [
+            "chanlinbaoxun",
+            "yunmen",
+            "changuancejin",
+            "zhaozhouyulu"
+          ]
+        },
+        {
+          "id": "chuyuan",
+          "name": "慈明楚圆",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "yuanwu-keqin",
+          "name": "圆悟克勤",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin",
+            "huanwuxinyao",
+            "huanwuyulu"
+          ]
+        },
+        {
+          "id": "hongzhi-zhengjue",
+          "name": "宏智正觉",
+          "current_books": [
+            "baojingsanmei",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "yongming-yanshou",
+          "name": "永明延寿",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "xuansha-shibei",
+          "name": "玄沙师备",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "wuzu-fayan",
+          "name": "五祖法演",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "sixin-wuxin",
+          "name": "死心悟新",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "zhongfeng-mingben",
+          "name": "中峰明本",
+          "current_books": [
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "gaofeng-yuanmiao",
+          "name": "高峰原妙",
+          "current_books": [
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "xueyan-zuqin",
+          "name": "雪岩祖钦",
+          "current_books": [
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "poan-zuxian",
+          "name": "破庵祖先",
+          "current_books": [
+            "changuancejin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "dahui-zonggao",
+          "name": "大慧宗杲"
+        },
+        {
+          "id": "zhuhong",
+          "name": "袾宏"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "zhongfeng-mingben",
+          "name": "中峰明本"
+        },
+        {
+          "id": "gaofeng-yuanmiao",
+          "name": "高峰原妙"
+        },
+        {
+          "id": "xueyan-zuqin",
+          "name": "雪岩祖钦"
+        },
+        {
+          "id": "poan-zuxian",
+          "name": "破庵祖先"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "shengsi-jielun",
+          "name": "生死即涅槃",
+          "current_books": [
+            "tanjing",
+            "weimojiejing",
+            "changuancejin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "samadhi",
+          "name": "三昧"
+        },
+        {
+          "id": "kanhua-chan-concept",
+          "name": "看话"
+        },
+        {
+          "id": "canjiu",
+          "name": "参究"
+        },
+        {
+          "id": "yiqing",
+          "name": "疑情"
+        },
+        {
+          "id": "zuo-gong-fu",
+          "name": "做工夫"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "biguan-daqi",
+          "name": "闭关打七",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "can-shengsi",
+          "name": "参生死",
+          "current_books": [
+            "dahuiyulu",
+            "changuancejin"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "kanhuatou",
+          "name": "看话头"
+        },
+        {
+          "id": "can-huatou",
+          "name": "参话头"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "dachengqixinlun",
+    "title": "大乘起信论",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "ming-bodhisattva",
+          "name": "马鸣菩萨"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "tathagatagarbha",
+          "name": "如来藏"
+        },
+        {
+          "id": "alaiye-shi",
+          "name": "阿赖耶识"
+        },
+        {
+          "id": "zhenru",
+          "name": "真如"
+        },
+        {
+          "id": "wuming",
+          "name": "无明"
+        },
+        {
+          "id": "yi-xin-er-men",
+          "name": "一心二门"
+        },
+        {
+          "id": "xun-xi",
+          "name": "熏习"
+        },
+        {
+          "id": "zhi-guan",
+          "name": "止观"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "huixiang-fa",
+          "name": "回向法门",
+          "current_books": [
+            "dachengqixinlun"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "zhiguan",
+          "name": "止观双修"
+        },
+        {
+          "id": "zhiguan-shuangxiu",
+          "name": "止观双修"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "huixiang-fa",
+          "name": "回向法门"
+        }
+      ]
+    }
+  },
+  {
+    "id": "huanwuxinyao",
+    "title": "佛果圜悟真觉禅师心要",
+    "persons": {
+      "wrong": [
+        {
+          "id": "yuanwu-keqin",
+          "name": "圆悟克勤",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin",
+            "huanwuxinyao",
+            "huanwuyulu"
+          ]
+        },
+        {
+          "id": "niaoke-daolin",
+          "name": "鸟窠道林",
+          "current_books": [
+            "huanwuxinyao"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "niaoke-daolin",
+          "name": "鸟窠道林"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "fen-biyanlu",
+          "name": "焚毁碧岩录",
+          "current_books": [
+            "dahuiyulu",
+            "huanwuxinyao"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "jingang-zhengti",
+          "name": "金刚正体"
+        },
+        {
+          "id": "tongdi-tuo",
+          "name": "桶底子脱"
+        },
+        {
+          "id": "wuxin-dao-ren",
+          "name": "无心道人"
+        },
+        {
+          "id": "dacheng-yipian",
+          "name": "打成一片"
+        },
+        {
+          "id": "jieduan-zhongliu",
+          "name": "截断众流"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "tuibu-xiuxie",
+          "name": "退步休歇",
+          "current_books": [
+            "huanwuyulu",
+            "huanwuxinyao"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "wangqing-juezhao",
+          "name": "忘情绝照"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "huanwuyulu",
+    "title": "圆悟佛果禅师语录",
+    "persons": {
+      "wrong": [
+        {
+          "id": "yuanwu-keqin",
+          "name": "圆悟克勤",
+          "current_books": [
+            "chanlinbaoxun",
+            "changuancejin",
+            "huanwuxinyao",
+            "huanwuyulu"
+          ]
+        },
+        {
+          "id": "xuedou-zhongxian",
+          "name": "雪窦重显",
+          "current_books": [
+            "huanwuyulu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "huqiu-shaolong",
+          "name": "虎丘绍隆"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "xuedou-zhongxian",
+          "name": "雪窦重显"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "yiyin-yanfa",
+          "name": "一音演法",
+          "current_books": [
+            "huanwuyulu"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "dacheng-yipian",
+          "name": "打成一片"
+        },
+        {
+          "id": "jieduan-zhongliu",
+          "name": "截断众流"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "yiyin-yanfa",
+          "name": "一音演法"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "tuibu-xiuxie",
+          "name": "退步休歇",
+          "current_books": [
+            "huanwuyulu",
+            "huanwuxinyao"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "wangqing-juezhao",
+          "name": "忘情绝照"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "dahuiyulu",
+    "title": "大慧普觉禅师语录",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "dahui-zonggao",
+          "name": "大慧宗杲"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "fen-biyanlu",
+          "name": "焚毁碧岩录",
+          "current_books": [
+            "dahuiyulu",
+            "huanwuxinyao"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "zongfeng",
+          "name": "宗风"
+        },
+        {
+          "id": "pu-shuo",
+          "name": "普说"
+        },
+        {
+          "id": "fa-yu",
+          "name": "法语"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [
+        {
+          "id": "can-shengsi",
+          "name": "参生死",
+          "current_books": [
+            "dahuiyulu",
+            "changuancejin"
+          ]
+        },
+        {
+          "id": "po-wo-zhi",
+          "name": "破我执",
+          "current_books": [
+            "dahuiyulu"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "po-wo-zhi",
+          "name": "破我执"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chanjia_guijian",
+    "title": "禅家龟鉴",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "tuiyin",
+          "name": "退隐禅师"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "can-san-yao",
+          "name": "参禅三要",
+          "current_books": [
+            "chanjia_guijian"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "huoju-siju",
+          "name": "活句死句"
+        },
+        {
+          "id": "huatou-shibing",
+          "name": "话头十病"
+        },
+        {
+          "id": "wuzong-jiafeng",
+          "name": "五宗家风"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "can-san-yao",
+          "name": "参禅三要"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "canhuoju",
+          "name": "参活句"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "xinming",
+    "title": "心铭",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "farong",
+          "name": "牛头法融"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "wuxin-jueguan",
+          "name": "无心绝观",
+          "current_books": [
+            "xinming"
+          ]
+        },
+        {
+          "id": "xin-busheng-fajue",
+          "name": "心不生法绝",
+          "current_books": [
+            "xinming"
+          ]
+        },
+        {
+          "id": "dajibenyou",
+          "name": "大机本有",
+          "current_books": [
+            "xinming"
+          ]
+        }
+      ],
+      "correct": [
+        {
+          "id": "jingji-ziran",
+          "name": "明寂自然"
+        }
+      ],
+      "empty_after": [
+        {
+          "id": "wuxin-jueguan",
+          "name": "无心绝观"
+        },
+        {
+          "id": "xin-busheng-fajue",
+          "name": "心不生法绝"
+        },
+        {
+          "id": "dajibenyou",
+          "name": "大机本有"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "jueguan-wangshou",
+          "name": "绝观忘守"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zuochanyi",
+    "title": "坐禅仪",
+    "persons": {
+      "wrong": [
+        {
+          "id": "zongze",
+          "name": "长芦宗赣",
+          "current_books": [
+            "zuochanyi"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "zongze",
+          "name": "长芦宗赣"
+        }
+      ]
+    },
+    "concepts": {
+      "wrong": [
+        {
+          "id": "zuochan-weiyi",
+          "name": "坐禅威仪",
+          "current_books": [
+            "zuochanyi"
+          ]
+        },
+        {
+          "id": "chanding-jiwu",
+          "name": "禅定即务",
+          "current_books": [
+            "zuochanyi"
+          ]
+        }
+      ],
+      "correct": [],
+      "empty_after": [
+        {
+          "id": "zuochan-weiyi",
+          "name": "坐禅威仪"
+        },
+        {
+          "id": "chanding-jiwu",
+          "name": "禅定即务"
+        }
+      ]
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "zuochan-yi",
+          "name": "坐禅仪"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "huangbo_wanlinglu",
+    "title": "黄檗断际禅师宛陵录",
+    "persons": {
+      "wrong": [],
+      "correct": [],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "no-views",
+          "name": "莫起诸见"
+        },
+        {
+          "id": "wu-wei-famen",
+          "name": "无为法门"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "kan-wuzi",
+          "name": "看无字"
+        }
+      ],
+      "empty_after": []
+    }
+  },
+  {
+    "id": "zhaozhouyulu",
+    "title": "赵州真际禅师语录",
+    "persons": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "zhaozhou",
+          "name": "赵州从谂"
+        }
+      ],
+      "empty_after": []
+    },
+    "concepts": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "benfen-shi",
+          "name": "本分事"
+        },
+        {
+          "id": "chi-cha-qu",
+          "name": "吃茶去"
+        },
+        {
+          "id": "ting-qian-baishuzi",
+          "name": "庭前柏树子"
+        }
+      ],
+      "empty_after": []
+    },
+    "methods": {
+      "wrong": [],
+      "correct": [
+        {
+          "id": "benfen-jieren",
+          "name": "本分事接人"
+        },
+        {
+          "id": "xi-bo-qu",
+          "name": "洗钵去"
+        }
+      ],
+      "empty_after": []
+    }
+  }
+]

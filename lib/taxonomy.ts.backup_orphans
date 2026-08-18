@@ -1,4 +1,4 @@
-﻿export interface PersonItem {
+export interface PersonItem {
   id: string;
   name: string;
   title: string;
@@ -2506,7 +2506,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     ],
     "relatedBooks": [
       "xinming"
-    , "jueguanlun"]
+    ]
   },
   {
     "id": "zongze",
@@ -3089,7 +3089,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "bodhidharma"
     ],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": []
   },
   {
     "id": "weishi-yixin",
@@ -4334,6 +4334,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": ["tanjing", "jingangjing"]
   },
   {
+    "id": "sanlun-tikong",
+    "title": "三轮体空",
+    "category": "般若",
+    "summary": "三轮体空，即布施等善法中之三轮——施者、受者、施物——皆无自性，当体即空。如布施时，不见有施者（能施空）、不见有受者（所受空）、不见有施物（施物空）——三轮清净，即为\u201c三轮体空\u201d。此为般若之重要修法——于一切善法中不见能所，即善法而见性空。禅宗之\u201c无相布施\u201d即三轮体空之体现——六祖云：\u201c布施不望报，是名无相布施。\u201d——不望报者，即三轮体空。",
+    "etymology": "三轮（施者、受者、施物）+ 体空（当体即空），三轮皆无自性。",
+    "quotes": ["布施不望报，是名无相布施。 —六祖坛经义"],
+    "guidance": "三轮体空非不行善——乃行善时不见能所。如镜照物——物来不迎，物去不追，镜体清净。行善亦如是——善行虽起而心无所着。",
+    "classicRef": "《金刚经》《坛经》",
+    "relatedConcepts": ["emptiness", "wu-xiang", "wu-wo"],
+    "relatedPersons": ["huineng"],
+    "relatedBooks": []
+  },
+  {
     "id": "liuxiang-yuanrong",
     "title": "六相圆融",
     "category": "般若",
@@ -4371,6 +4384,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["mind-is-buddha", "self-nature", "buddha-nature"],
     "relatedPersons": ["huineng", "yongming-yanshou"],
     "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "fanrao-puti",
+    "title": "烦恼即菩提",
+    "category": "心性",
+    "summary": "烦恼即菩提，即烦恼与菩提非二——烦恼之本性即菩提。迷时为烦恼，悟时为菩提——如冰之于水：冰即水之凝，水即冰之融——冰水不二，烦恼菩提不二。六祖云：\u201c前念迷即凡夫，后念悟即佛。\u201d——迷即烦恼，悟即菩提；非别有菩提，乃烦恼之清净面。此为禅宗\u201c即烦恼成菩提\u201d之根本立场——不须断烦恼别求菩提，即烦恼便是菩提。然此非放纵烦恼——乃于烦恼中悟得本来清净。",
+    "etymology": "烦恼（klesha）即（即是）菩提（bodhi），烦恼本性即菩提。",
+    "quotes": ["前念迷即凡夫，后念悟即佛。 —六祖坛经", "烦恼即菩提。 —天台教义"],
+    "guidance": "烦恼即菩提非放纵烦恼——乃于烦恼中见性。如冰即水——不须断冰别求水，只须融冰。烦恼即菩提——不须断烦恼别求菩提，只须悟得烦恼本空。",
+    "classicRef": "《坛经》《维摩诘经》",
+    "relatedConcepts": ["wuming", "self-nature", "non-duality"],
+    "relatedPersons": ["huineng", "weimojie"],
+    "relatedBooks": ["tanjing", "weimojiejing"]
   },
   {
     "id": "shengsi-jielun",
@@ -5060,7 +5086,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu", "wuran", "xuemaicong", "anxin", "zuishangcheng", "tanjing", "zhengdaoge", "xiuxinjue", "chanlinbaoxun", "lengyanjing", "weimojiejing", "yongjia", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
+    "relatedBooks": []
   },
   {
     "id": "kongxing",
@@ -5073,7 +5099,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["qifo", "juelin", "wenshu", "wuran", "zhangzhi", "xuemaicong", "wuxinglun", "poxianglun", "sixingguan", "xinxinming", "fangcunlun", "anxin", "zuishangcheng", "tanjing", "zhengdaoge", "mazu", "baizhang", "huangbo", "xiuxinjue", "dunwu", "zhenxin", "zhigong", "xinwangming", "shenhui", "jingangjing", "xinjing", "yuanjuejing", "chanlinbaoxun", "lengyanjing", "weimojiejing", "shiniutu", "dongshanyulu", "yongjia", "yunmen", "bashiguijusong", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "dahuiyulu", "chanjia_guijian", "xinming", "zuochanyi", "huangbo_wanlinglu", "zhaozhouyulu"]
+    "relatedBooks": []
   },
   {
     "id": "baoshen",
@@ -5086,7 +5112,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran", "wuxinglun", "zuishangcheng", "tanjing", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia"]
+    "relatedBooks": []
   },
   {
     "id": "huashen",
@@ -5099,7 +5125,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran", "wuxinglun", "tanjing", "zhigong", "lengyanjing", "weimojiejing", "yongjia", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "wuzhiliang",
@@ -5112,7 +5138,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinjing"]
+    "relatedBooks": []
   },
   {
     "id": "wusuode",
@@ -5125,7 +5151,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing", "huangbo", "dunwu", "zhigong", "jingangjing", "xinjing", "yuanjuejing", "lengyanjing", "weimojiejing", "yongjia", "huanwuyulu", "huangbo_wanlinglu"]
+    "relatedBooks": []
   },
   {
     "id": "zhengliang",
@@ -5138,7 +5164,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran"]
+    "relatedBooks": []
   },
   {
     "id": "xianliang",
@@ -5151,7 +5177,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinjing", "bashiguijusong", "huanwuxinyao"]
+    "relatedBooks": []
   },
   {
     "id": "biliang",
@@ -5164,7 +5190,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedBooks": []
   },
   {
     "id": "fengxian",
@@ -5177,7 +5203,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing", "wumenguan", "huanwuxinyao"]
+    "relatedBooks": []
   },
   {
     "id": "wujian",
@@ -5190,7 +5216,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xuemaicong", "anxin", "tanjing", "zhengdaoge", "linji", "lengyanjing", "weimojiejing", "baojingsanmei", "dongshanyulu", "yongjia", "changuancejin", "huanwuxinyao", "huanwuyulu", "zuochanyi"]
+    "relatedBooks": []
   },
   {
     "id": "jiaocan",
@@ -5203,7 +5229,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dongshanyulu", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "huangji",
@@ -5216,7 +5242,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing", "shiniutu", "yongjia", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "zhengyin",
@@ -5229,7 +5255,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran", "poxianglun", "zhigong", "chanlinbaoxun", "weimojiejing", "yongjia", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "liaoyin",
@@ -5242,7 +5268,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing", "bashiguijusong"]
+    "relatedBooks": []
   },
   {
     "id": "yuan-yin",
@@ -5255,7 +5281,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "sande",
@@ -5268,7 +5294,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["yongjia", "zhaozhouyulu"]
+    "relatedBooks": []
   },
   {
     "id": "eryi",
@@ -5281,7 +5307,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing", "weimojiejing", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "shidi",
@@ -5294,7 +5320,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun", "zuishangcheng", "huangbo", "lengyanjing", "weimojiejing", "yongjia", "bashiguijusong", "huanwuyulu", "huangbo_wanlinglu"]
+    "relatedBooks": []
+  },
+  {
+    "id": "wuxingguan",
+    "title": "五行观",
+    "category": "实修",
+    "summary": "《大乘起信论》所明五种修行：施门、戒门、忍门、进门、止观门。禅宗以止观为根本，兼摄前四。",
+    "etymology": "",
+    "quotes": [],
+    "guidance": "",
+    "classicRef": "",
+    "relatedConcepts": [],
+    "relatedPersons": [],
+    "relatedBooks": []
   },
   {
     "id": "zhenkong-miaoyou",
@@ -5307,7 +5346,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["shenhui"]
+    "relatedBooks": []
   },
   {
     "id": "wuzhu-ben",
@@ -5320,7 +5359,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing", "shenhui", "weimojiejing"]
+    "relatedBooks": []
+  },
+  {
+    "id": "sammiao-wu",
+    "title": "三妙悟",
+    "category": "境界",
+    "summary": "禅宗悟道之三层次：解悟、行悟、证悟。解悟为知解，行悟为践行，证悟为亲证。",
+    "etymology": "",
+    "quotes": [],
+    "guidance": "",
+    "classicRef": "",
+    "relatedConcepts": [],
+    "relatedPersons": [],
+    "relatedBooks": []
   },
   {
     "id": "yixinyuan",
@@ -5333,7 +5385,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["zhengdaoge"]
+    "relatedBooks": []
   },
   {
     "id": "benjue",
@@ -5346,7 +5398,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu", "wuran", "zhangzhi", "xuemaicong", "poxianglun", "anxin", "zuishangcheng", "tanjing", "huangbo", "xinwangming", "yuanjuejing", "lengyanjing", "shiniutu", "dachengqixinlun", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "shijue",
@@ -5359,7 +5411,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedBooks": []
   },
   {
     "id": "bujue",
@@ -5372,7 +5424,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu", "xuemaicong", "wuxinlun", "xixulun", "zuishangcheng", "tanjing", "baizhang", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "wumenguan", "changuancejin", "dachengqixinlun", "huanwuxinyao", "huanwuyulu", "xinming", "zhaozhouyulu"]
+    "relatedBooks": []
   },
   {
     "id": "ranxiu",
@@ -5385,7 +5437,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun", "dachengqixinlun", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "jingxin",
@@ -5398,7 +5450,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun", "anxin", "tanjing", "baizhang", "xinwangming", "jingangjing", "yuanjuejing", "lengyanjing", "weimojiejing", "dachengqixinlun"]
+    "relatedBooks": []
   },
   {
     "id": "wuhou",
@@ -5411,7 +5463,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu", "weimojiejing", "yunmen"]
+    "relatedBooks": []
   },
   {
     "id": "dangnian",
@@ -5424,7 +5476,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu", "tanjing", "weimojiejing", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "yiguan",
@@ -5437,7 +5489,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "zhengming",
@@ -5450,7 +5502,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing", "yongjia", "huanwuyulu"]
+    "relatedBooks": []
   },
   {
     "id": "zhengye",
@@ -5463,7 +5515,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": []
   },
   {
     "id": "zhengyu",
@@ -5476,7 +5528,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": []
   },
   {
     "id": "song-gu",
@@ -5673,7 +5725,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": [
       "farong"
     ],
-    "relatedBooks": ["qifo", "juelin", "wenshu", "xuemaicong", "wuxinglun", "poxianglun", "wuxinlun", "anxin", "tanjing", "mazu", "baizhang", "huangbo", "dunwu", "zhigong", "xinwangming", "shenhui", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu", "zhaozhouyulu", "jueguanlun"]
+    "relatedBooks": ["qifo", "juelin", "wenshu", "xuemaicong", "wuxinglun", "poxianglun", "wuxinlun", "anxin", "tanjing", "mazu", "baizhang", "huangbo", "dunwu", "zhigong", "xinwangming", "shenhui", "chanlinbaoxun", "lengyanjing", "weimojiejing", "dongshanyulu", "yongjia", "huanwuxinyao", "huanwuyulu", "xinming", "huangbo_wanlinglu", "zhaozhouyulu"]
   },
   {
     "id": "xin-busheng-fajue",
@@ -5717,7 +5769,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "farong",
       "huineng"
     ],
-    "relatedBooks": ["baizhang", "chanlinbaoxun", "weimojiejing", "huanwuxinyao", "huanwuyulu", "chanjia_guijian", "jueguanlun"]
+    "relatedBooks": ["baizhang", "chanlinbaoxun", "weimojiejing", "huanwuxinyao", "huanwuyulu", "chanjia_guijian"]
   },
   {
     "id": "jingji-ziran",
@@ -5740,7 +5792,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "relatedBooks": [
       "xinming"
-    , "jueguanlun"]
+    ]
   },
   {
     "id": "zuochan-weiyi",
@@ -5843,68 +5895,8 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["ordinary-mind", "benfen-shi", "buddha-nature", "direct-pointing"],
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["zhaozhouyulu", "biyanlu"]
-    },
-  {
-    "id": "kong-wei-daoben",
-    "title": "空为道本",
-    "category": "心性",
-    "summary": "牛头法融《绝观论》之核心命题。\u201c虚空为道本，参罗为法用\u201d——虚空是道的根本，森罗万象是法的妙用。此说以虚空喻道体，以万象喻法用，体用一如，本末不二。法界性自然，无有作者，非众生业力所造，非神通意生所成。此说与三论宗\u201c缘起性空\u201d相通，而更直指法界本然之寂灭。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["fa-jie-xing-ziran", "wuxin-jueguan"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "xing-yu-feidao",
-    "title": "行于非道",
-    "category": "修行",
-    "summary": "牛头法融《绝观论》之极端修行观。\u201c善恶无分别，于法不生心\u201d——心同野火烧山般无分别时，一切行为皆合道。此非纵欲放任，而是指心境达到无分别之境时，善恶界限自然消融。若起分别犹预，乃至蚂蚁亦系你命。此说与《维摩诘经》\u201c行于非道为通达佛道\u201d一脉相承，为牛头禅最具特色之教法。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "non-mind"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "benwu-xijie",
-    "title": "本无系缚",
-    "category": "心性",
-    "summary": "牛头法融《绝观论》之解脱观。\u201c尚无系缚，何有解脱人\u201d——本来没有被系缚，哪里有需要解脱的人？此说直指究竟层面：系缚与解脱都是假名，众生本不被缚，何须求脱？与四祖道信\u201c本来成佛\u201d、六祖\u201c本来无一物\u201d同出一轴，将修行从\u201c求解脱\u201d的二元对立中彻底解放。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "dajibenyou"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "si-jian-zheng-jian",
-    "title": "似见与正见",
-    "category": "修行",
-    "summary": "牛头法融《绝观论》第十五节之精妙辨析。缘门已悟\u201c不见一法如微尘许可对说\u201d，入理仍指出此只是\u201c似见\u201d——如外道学隐形而未灭影亡迹。真正正见是\u201c本无心境，莫起生灭之见\u201d。此一层翻进，将\u201c绝观\u201d之旨推至极则：不仅不见一法，连\u201c不见\u201d之见也不可立。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "wu-shi-zhi-zhi"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "fa-jie-xing-ziran",
-    "title": "法界性自然",
-    "category": "宇宙观",
-    "summary": "牛头法融《绝观论》之法界观。\u201c虚空为道本，参罗为法用，法界性自然，无有作者\u201d——法界本来如此，不是谁创造的，不是业力所成的，不是神通所现的。此说与道家\u201c道法自然\u201d相通，而归于佛家\u201c法尔如是\u201d之旨，为牛头禅融通老庄与般若之特色。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["kong-wei-daoben", "jingji-ziran"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "wu-shi-zhi-zhi",
-    "title": "无知之知",
-    "category": "心性",
-    "summary": "牛头法融《绝观论》之认识论。\u201c无知之知，无见之见\u201d——没有能知之心的知，没有能见之眼的见，才是真正的知与见。圣人见非眼见、知非意知，因为超越了根量。此说与僧肇《般若无知论》\u201c圣心无知故无所不知\u201d一脉相承，为牛头禅般若思想之核心。",
-    "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "si-jian-zheng-jian"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  }
-];
+  }]
+;
 
 export const ZEN_METHODS: MethodItem[] = [
 
@@ -6670,7 +6662,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "息诤论",
-    "relatedBooks": ["xixulun"]
+    "relatedBooks": []
   },
   {
     "id": "wunian-fa",
@@ -6690,7 +6682,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": [],
     "relatedPersons": [],
     "classicRef": "六祖坛经",
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": []
   },
   {
     "id": "wuzhu-fa",
@@ -6892,7 +6884,7 @@ export const ZEN_METHODS: MethodItem[] = [
     ],
     "relatedBooks": [
       "xinming"
-    , "jueguanlun"]
+    ]
   },
   {
     "id": "zuochan-yi",
@@ -10311,83 +10303,6 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["benfen-shi", "ordinary-mind", "wu-nian"],
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["zhaozhouyulu", "biyanlu"]
-  },
-  {
-    "id": "koan-266",
-    "question": "云何名心？云何安心？",
-    "answer": "汝不须立心，亦不须强安，可谓安矣。",
-    "interpretation": "缘门问心与安心，入理直答不须立心、不须强安。此语将\u201c安心\u201d从\u201c有心可安\u201d的二元对立中解放——心本不有，何须更安？不立不安，即是真安。此为《绝观论》开宗明义之问，与达摩慧可\u201c安心\u201d公案遥相呼应：达摩说\u201c将心来与汝安\u201d，法融说\u201c不须立心\u201d，一脉相承。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "non-mind"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "koan-267",
-    "question": "有念即有心，无心即真道",
-    "answer": "有念即有心，有心即乖道。无念即无心，无心即真道。",
-    "interpretation": "法融以四句破立，将心与道的关系一语道破。有念→有心→乖道；无念→无心→真道。此非渐次修行，而是顿悟见地：心与道不二，只在一念之转。此语为牛头禅\u201c无心\u201d宗旨之最简洁表述，与《心铭》\u201c心性不生，何须知见\u201d互为表里。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "non-mind"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "koan-268",
-    "question": "龟毛喻何物？龟喻何物？",
-    "answer": "龟喻于道，毛喻于我。故圣人无我而有道。",
-    "interpretation": "法融以龟毛为喻，破除有无之见。龟有甲无毛——道真实而我本空。道非先无今有故不言有，毛非先有今无故不言无。此喻精妙：既破凡夫执我之有见，又破外道执道可求之无见，双遣有无，直指中道。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "dajibenyou"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "koan-269",
-    "question": "道究竟属谁？",
-    "answer": "究竟无所属，如空无所依。道若有系属，即有遮有开、有主有寄也。",
-    "interpretation": "缘门问道属谁，入理答无所属。道若有归属，就有遮有开、有主有寄——落入二元对立。道如虚空，无所依止，无所系属，此为法界性自然之旨。此语破除\u201c道属佛\u201d\u201c道属圣\u201d之一切执着。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["fa-jie-xing-ziran", "kong-wei-daoben"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "koan-270",
-    "question": "若如此者，即一切众生本来解脱",
-    "answer": "尚无系缚，何有解脱人！",
-    "interpretation": "缘门从\u201c无谁无说\u201d推出\u201c本来解脱\u201d，入理更进一步：连系缚都没有，哪里有解脱的人？此语将\u201c解脱\u201d也一并扫却——解脱是对治系缚的药，本无系缚何须解脱？此为《绝观论》究竟之旨，与《心铭》\u201c菩提本有，不须用守；烦恼本无，不须用除\u201d同出一轴。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["benwu-xijie", "wuxin-jueguan"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "koan-271",
-    "question": "云何似见、非正见乎？",
-    "answer": "汝今所见无有一法者，如彼外道，虽学隐形，而未能灭影亡迹。本无心境，汝莫起生灭之见。",
-    "interpretation": "缘门已悟\u201c不见一法如微尘许可对说\u201d，入理仍指出此只是\u201c似见\u201d——如外道隐形而未灭影。真正的正见是\u201c本无心境，莫起生灭之见\u201d。此一层翻进，将绝观之旨推至极则：不仅不见一法，连\u201c不见\u201d之见也不可立。此为《绝观论》最精妙之处。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["si-jian-zheng-jian", "wuxin-jueguan"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "koan-272",
-    "question": "智者求心不求佛，了本心源即无余",
-    "answer": "若人求道不习此，千劫万劫枉功夫。徒自疲劳忍辛苦，究竟不免堕三涂。譬如求酥钻摇水，力尽不获实由愚。智者求心不求佛，了本心源即无余。",
-    "interpretation": "法融以偈颂总结《绝观论》之旨。求酥钻水——酥在乳中不在水中，求道求心——道在心中不在佛处。智者向内求心，愚人向外求佛。此偈为全书归结，与达摩\u201c理入\u201d之\u201c含生同一真性\u201d、六祖\u201c佛向性中作，莫向身外求\u201d一脉相承。",
-    "master": "牛头法融",
-    "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan", "self-nature"],
-    "relatedPersons": ["farong"],
-    "relatedBooks": ["jueguanlun"]
   }
 ];
 
@@ -15088,138 +15003,6 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "赵州语录在禅宗史上的地位如何？",
     "answer": "赵州语录在禅宗史上地位极高。赵州上承南泉'平常心是道'之旨，下开看话禅之先河。其'狗子无佛性'之'无'字，为大慧宗杲看话禅之源头；其'庭前柏树子''吃茶去''洗钵去'，为后世禅林最著名之公案。赵州年寿一百二十岁，住持赵州观音院四十年，人称'赵州古佛'。其语录为研究唐代禅宗最重要之文献之一。",
     "relatedBooks": ["zhaozhouyulu", "biyanlu", "wumenguan"]
-  },
-  {
-    "id": "faq-781",
-    "question": "《绝观论》是一部什么书？",
-    "answer": "《绝观论》是牛头法融禅师的重要论著，以师徒问答形式阐扬无心绝观之旨。师主名入理，弟子号缘门，通过十六节问答，层层破除学人对心、道、圣凡、因果等一切妄执，直指法界本然寂灭之理。此论与《心铭》互为表里，是牛头禅宗的奠基性文献。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-782",
-    "question": "\"不须立心，亦不须强安\"——这和达摩的\"安心\"有什么关系？",
-    "answer": "达摩对慧可说\"将心来与汝安\"，慧可说\"觅心了不可得\"，达摩说\"与汝安心竟\"。法融的\"不须立心，不须强安\"是对这一公案的进一步阐发：既然心本不可得，就不需要立一个心再去安它。不立不安，即是真安。二者一脉相承，都是指向心本不有的实相。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-783",
-    "question": "\"有念即有心，无心即真道\"——无心不就是木头石头吗？",
-    "answer": "无心不是变成木石，而是不生分别妄念。法融说\"无心即无物，无物即天真，天真即大道\"——无心是没有妄执的心，是本来面目的心。木石是无知无觉的死物，无心是灵知自照的活般若。区别在于：木石无心而不能知，圣人无心而无所不知。",
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "faq-784",
-    "question": "龟毛兔角的比喻是什么意思？",
-    "answer": "法融以龟喻道，以毛喻我。龟有甲无毛——道真实存在而我本空。道非先无今有，所以不说有；毛非先有今无，所以不说无。凡夫执着有我有名，就像横执有龟毛兔角一样——把本来没有的\"我\"当作实有。圣人无我而有道，如龟有甲而无毛。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-785",
-    "question": "\"一法不断，一法不得，即为圣也\"——圣人什么都不做吗？",
-    "answer": "不是什么都不做，而是不妄有所断、不妄有所得。凡夫妄有所断（要断烦恼）、妄有所得（要求菩提），都是将烦恼与菩提作二法看。圣人彻见本源，烦恼本空何须断，菩提本有何须得。一法不断不是不断，是无可断；一法不得不是不得，是无可得。",
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "faq-786",
-    "question": "\"虚空为道本，参罗为法用\"怎么理解？",
-    "answer": "虚空是道的根本，森罗万象是法的妙用。道体如虚空般空寂无为，法用如万象般森罗显现。体用一如：虚空不离万象，万象不离虚空。法界性自然，没有造作者——不是谁创造的，不是业力所成的，本来如此。此说将道家\"道法自然\"与佛家\"法尔如是\"融通为一。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-787",
-    "question": "\"道遍草木\"——草木也能成佛吗？",
-    "answer": "法融说道无所不遍，草木无情本来合道。经云\"于一微尘中具含一切法\"，又云\"一切法亦如也\"——如无二无差别。草木与人在道面前平等无二。但法融并非说草木成佛，而是说道本遍一切处，草木本来在道中，不需要\"成\"佛——它们从来就在法性之中。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-788",
-    "question": "\"行于非道\"一段似乎允许杀生偷盗淫欲妄语，这怎么解释？",
-    "answer": "此段是极端比喻，说明\"心同如此\"的境界。野火烧山、猛风折树——自然界无分别地毁灭与创造，心如这般无分别时，一切行为皆合道。关键在\"若有犹预之心，见生见杀中有心不尽，乃至蚂蚁也系你命\"——只要还有分别心，哪怕杀一只蚂蚁也有罪。此段不可作字面解，而是说明无心分别之境。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-789",
-    "question": "\"知名亦不妨，只恐心中有事\"——知道\"我\"的名字也不妨碍吗？",
-    "answer": "法融的意思是：口头上说\"我\"这个名字不妨碍，妨碍的是心里真的执着了什么事。名字是假名施设，知道有这个假名不碍道；但如果心里执着了这个假名，以为真有一个\"我\"，就成障碍。所以问题不在名字，在于心是否有所住。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-790",
-    "question": "\"非惑即是道，非离惑是道\"——惑与道是什么关系？",
-    "answer": "法融以醉醒为喻：醉时非醒，醒时非醉，但不离醉有醒，也不是醉就是醒。惑与道也是如此：不是惑本身就是道，也不是离开惑另有道。惑性本空即道，道非离惑别有。如手翻覆——翻时不应更问手何在，手还是那只手，只是状态不同。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-791",
-    "question": "\"自眼未明，焉治他目\"——那还能说法度人吗？",
-    "answer": "法融并非完全否定说法度人，而是强调必须先自悟。若不达道理而说法，名为无明力——助己烦恼作气力。即使教人十善五戒，安处人天，至理无益更招二损：自陷（自妨于道）陷他（不免轮回）。圣人无心说差别法，但众生自心希望现——法本是一乘，因众生心而有差别。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-792",
-    "question": "\"尚无系缚，何有解脱人\"——那还需要修行吗？",
-    "answer": "法融说\"尚无系缚，何有解脱人\"是从究竟层面说的。系缚与解脱都是假名：众生本不被缚，何须求脱？但法融同时说\"譬如矿中虽有其金，若不施功终不可得\"——金虽本有，不炼不得；心虽本寂，不观不定。所以修行不是\"从缚到脱\"的过程，而是\"发现本来解脱\"的过程。",
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "faq-793",
-    "question": "\"似见\"与\"正见\"有什么区别？",
-    "answer": "缘门已悟\"不见一法如微尘许可对说\"，入理仍指出这只是\"似见\"——如外道学隐形而未灭影亡迹。隐形虽不见人，但影子还在；不见一法虽无可对说，但\"不见\"之见还在。真正正见是\"本无心境，莫起生灭之见\"——不仅不见一法，连\"不见\"之见也不可立。此为绝观之极则。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-794",
-    "question": "\"觉了无物谓之佛，通彼一切谓之道\"——佛和道是同一个吗？",
-    "answer": "法融从不同角度定义：觉了无物叫佛——侧重觉悟；通彼一切叫道——侧重通达。佛是能觉之智，道是所通之理，实则理智不二。法界出生为变化，究竟寂灭为常住——变化与常住也是一体两面。法融将佛、道、变化、常住统一于法界实相之中。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-795",
-    "question": "\"无知之知，无见之见\"是什么意思？",
-    "answer": "无知之知是没有能知之心的知——知而不起知想；无见之见是没有能见之眼的见——见而不起见想。圣人见非眼见、知非意知，因为超越了根量。如玄光照物，没有能照之眼而物自照；如阴阳感应，没有能知之意而物自知。此与僧肇《般若无知论》\"圣心无知故无所不知\"一脉相承。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-796",
-    "question": "\"起心易，灭心难；是身易，非身难\"——为什么说修道甚难？",
-    "answer": "法融指出：起心容易灭心难——妄念起之即生，要彻底寂灭却极难。认同身体容易，超越身体难。有所作为容易，无所作为难。所以\"不动即真，三圣希及\"——不动不是什么都不做，而是心不妄动，这连三圣都难以达到。法融以此说明：虽然道本现成，但众生习气深重，真正做到无心绝观极为罕见。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-797",
-    "question": "\"如犬逐块\"的比喻是什么意思？",
-    "answer": "法融以犬逐块喻修道人不知心量。人掷土块打狗，狗追土块而不追人——土块从人而起，狗不知追因。修道人若不知万法从心起，只在法上用功（追块），不在心上下手（咬人），则永不得定。若了心量，则块自息——万法本空，心若不生，法自然灭。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-798",
-    "question": "\"智者求心不求佛，了本心源即无余\"——不该念佛求佛吗？",
-    "answer": "法融并非否定念佛求佛，而是指出究竟层面：佛在心中不在心外。求酥钻水——酥在乳中不在水中，求道求佛当向心中求。法融在第四节也说\"为愚痴众生教令念佛，若有道心之士即令观身实相\"——念佛是方便门，求心是究竟门。二者不矛盾：未悟者念佛为方便，已悟者求心为究竟。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-799",
-    "question": "如来藏是实有还是方便说？",
-    "answer": "法融在《绝观论》末尾明确指出：如来藏是为见身人说有如来藏，若不见身者即不说有如来藏。佛就众生见实而说如来藏，说如来藏者是不了教说。又知如来藏是无我之异名，亦是尽义——如来藏并非一个实有的\"藏\"，而是无我的异名，是烦恼尽灭的表述。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-800",
-    "question": "《绝观论》与《心铭》有什么关系？",
-    "answer": "二书同为牛头法融所作，互为表里。《心铭》是偈颂体，以\"心性不生，何须知见\"为宗，精炼概括无心绝观之旨；《绝观论》是问答体，以师徒对话层层破执，更为详尽地展开论证。《心铭》如总纲，《绝观论》如细目。二书共同构成牛头禅的理论基础，与达摩壁观、东山方便鼎足而三。",
-    "relatedBooks": ["jueguanlun", "xinming"]
-  },
-  {
-    "id": "faq-801",
-    "question": "\"腾腾任运\"的修行方式有什么深意？",
-    "answer": "法融说真学道人不多专精持戒、护威仪不殷勤、不化众生、腾腾任运，看似懈怠，实则\"欲亡一切分别心，欲灭一切诸有见\"。虽似腾腾任运，而内行无间——外表不刻意，内心不间断。此与后来禅宗\"平常心是道\"相通：不是不修行，而是将修行融入日用，不立修行相。",
-    "relatedBooks": ["jueguanlun"]
-  },
-  {
-    "id": "faq-802",
-    "question": "《绝观论》适合什么人读？",
-    "answer": "《绝观论》适合所有对禅宗有兴趣的学人。对初学者，\"不须立心\"能建立正信；对久学者，\"似见非正见\"能扫除知解障碍；对实修者，\"智者求心不求佛\"提供下手方便。但论中\"行于非道\"一段极为峻烈，读者不可作字面解。建议与《心铭》合参，相互发明。二书一偈一论，一总一别，合参可窥牛头禅之全貌。",
-    "relatedBooks": ["jueguanlun", "xinming"]
   }
 ];
 
