@@ -1985,10 +1985,10 @@ export const ZEN_PERSONS: PersonItem[] = [
       "偷心不死，参禅无分。"
     ],
     "classics": ["博山参禅警语"],
-    "relatedConcepts": ["tou-xin-wei-si", "self-nature"],
-    "relatedMethods": ["kanhuatou"],
+    "relatedConcepts": ["tou-xin-wei-si", "self-nature", "po-shengsi-xin", "qie-zi-jue", "jiang-xin-dai-wu", "shishen", "fashen-bing", "zhuan-shen-tu-qi"],
+    "relatedMethods": ["kanhuatou", "sizi-tie-e-fa", "jingyu-zijing-fa", "siyao-gongfu-fa"],
     "relatedPersons": [],
-    "relatedBooks": ["xuemaicong", "tanjing", "chanlinbaoxun", "yunmen", "wumenguan", "changuancejin", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu"]
+    "relatedBooks": ["xuemaicong", "tanjing", "chanlinbaoxun", "yunmen", "wumenguan", "changuancejin", "huanwuxinyao", "huanwuyulu", "huangbo_wanlinglu", "boshan-canchanjingyu"]
   },
   {
     "id": "puming",
@@ -3319,7 +3319,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huanglong-huinan",
       "yangqi-fanghui"
     ],
-    "relatedBooks": ["lengyanjing"]
+    "relatedBooks": ["lengyanjing", "boshan-canchanjingyu"]
   },
   {
     "id": "de-hua-li-zhi",
@@ -3629,7 +3629,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》",
     "relatedConcepts": ["koan", "tou-xin-wei-si", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai"],
-    "relatedBooks": ["chanlinbaoxun", "changuancejin"]
+    "relatedBooks": ["chanlinbaoxun", "changuancejin", "boshan-canchanjingyu"]
   },
   {
     "id": "canjiu",
@@ -3642,7 +3642,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "koan", "tou-xin-wei-si"],
     "relatedPersons": ["dahui-zonggao", "wumen-huikai", "boshan-yuanlai"],
-    "relatedBooks": ["zhenxin", "chanlinbaoxun", "changuancejin", "bashiguijusong", "wuxinglun", "poxianglun", "wuxinlun", "xixulun", "sixingguan", "dunwu"]
+    "relatedBooks": ["zhenxin", "chanlinbaoxun", "changuancejin", "bashiguijusong", "wuxinglun", "poxianglun", "wuxinlun", "xixulun", "sixingguan", "dunwu", "boshan-canchanjingyu"]
   },
   {
     "id": "yiqing",
@@ -3655,7 +3655,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《大慧语录》《博山参禅警语》",
     "relatedConcepts": ["kanhua-chan-concept", "canjiu", "tou-xin-wei-si"],
     "relatedPersons": ["dahui-zonggao", "boshan-yuanlai"],
-    "relatedBooks": ["zhenxin", "changuancejin"]
+    "relatedBooks": ["zhenxin", "changuancejin", "boshan-canchanjingyu"]
   },
   {
     "id": "zhuan-shen-ju",
@@ -3707,7 +3707,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《博山参禅警语》《禅林宝训》《玄沙师备禅师广录》",
     "relatedConcepts": ["tou-xin-wei-si", "self-nature", "mozhao-chan-concept"],
     "relatedPersons": ["xuansha-shibei", "boshan-yuanlai", "dahui-zonggao"],
-    "relatedBooks": []
+    "relatedBooks": ["boshan-canchanjingyu"]
   },
   {
     "id": "wu-nian",
@@ -5981,7 +5981,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "summary": "法演极力提倡赵州“狗子无佛性”话头，以“无”字为参究核心，开创了后世看话禅的先声。",
         "classicRef": "fayanyulu",
     "relatedConcepts": ["toushi-guan", "baiyun-wanli"],
-    "relatedPersons": ["wuzu-fayan", "zhaozhou-congshen"],
+    "relatedPersons": ["wuzu-fayan", "zhaozhou"],
     "relatedBooks": ["fayanyulu"]
   },
   {
@@ -6023,6 +6023,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["baiyun-wanli", "toushi-guan"],
     "relatedPersons": ["wuzu-fayan"],
     "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "po-shengsi-xin",    "title": "破生死心",    "category": "禅法",    "summary": "破生死心，即参禅最初须发起的坚固决心——看破世界身心悉是假缘、无实主宰，以了办生死大事为唯一急务。博山元来以此为做工夫第一着：生死心不破，则无常念念相逼，排遣无门；将此一念作为敲门瓦子，如坐在烈焰中求出，乱行一步不得、停止一步不得、别生一念不得、望别人救不得。此心坚硬如铁，方能举起话头、发起疑情，逼拶至言语道断处而悟。古云“参禅须铁汉”，铁汉之心即破生死心。",    "etymology": "破（看破、勘破）+ 生死（生死大事）+ 心（心愿决心），参禅之初发起的了脱生死之坚固心愿。",    "quotes": ["做工夫，最初要发个破生死心坚硬，看破世界身心悉是假缘，无实主宰。 —博山元来《参禅警语》", "将此一念，作个敲门瓦子，如坐在烈火焰中求出相似。 —博山元来"],    "guidance": "现代人虽不必人人出家，亦可时时自警：生死大事未明，一口气不来便随业流转。以此警觉为修行之底色，工夫才不致因循成口头禅。破生死心是疑情之母——生死心真切，则话头自然亲切，疑情自然浓密。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["yiqing", "qie-zi-jue"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "qie-zi-jue",    "title": "切字诀",    "category": "禅法",    "summary": "切字诀，博山做工夫心法之核心一着。“切”即真切、迫切、恳切——博山云：做工夫最要紧是个“切”字，切字最有力，不切则懈怠生，懈怠生则放逸纵意靡所不至。用心真切，则不思善、不思恶、不落无记，当下超越善恶无记三性；话头切，则无掉举、无昏沉；用心亲切，则无毫厘闲隙，魔不能入；不生计度有无等，则不落外道。舍此切字别求佛法，博山斥为“皆是痴狂外边走”。",    "etymology": "切（真切、迫切），做工夫用心之火候口诀，以一字总摄精进。",    "quotes": ["做工夫最要紧是个“切”字。切字最有力，不切则懈怠生。 —博山元来《参禅警语》", "切之一字，是最亲切句。用心亲切，则无闲隙，故魔不能入。 —博山元来"],    "guidance": "修行如百里程途，行一步则少一步；切字便是步步不停之力。现代人用功最忌“不打紧”三字——今日复明日，大事蹉跎。无论参禅做事，把心切下去，懈怠放逸自然无隙可乘。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["po-shengsi-xin", "yiqing"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "jiang-xin-dai-wu",    "title": "将心待悟",    "category": "禅病辨析",    "summary": "将心待悟，即做工夫时心存一念“等待开悟”——如人行路，住在路上待到家，终不到家，只须行到家。博山云：若将心待悟，终不悟，只须逼拶令悟。悟如莲花忽开、如大梦忽觉——梦不待觉，睡熟时自觉；花不待开，时节到自开；悟不待悟，因缘会合时自悟。期待之心本身即是别念、即是妄念，恰恰障蔽悟门。此病最微细：连“求开悟”的念头也是偷心一种。",    "etymology": "将心（起心动念）+ 待（期待等待）+ 悟（开悟），以待悟之心障真悟之病。",    "quotes": ["做工夫不得将心待悟！如人行路，住在路上待到家终不到家，只须行到家。 —博山元来《参禅警语》"],    "guidance": "参禅只管提起话头、发起疑情，悟不悟时节到来自然成就，不容拟议安排。此理通于万事：种树但管浇水松土，开花自有时节；日日盯着“怎么还不开花”，反添焦虑障成长。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["chanbing", "yiqing", "tou-xin-wei-si"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "shishen",    "title": "识神",    "category": "禅病辨析",    "summary": "识神，即妄认能知能觉、能动能静的分别意识为自性真心。博山云：做工夫最怕认识神为佛事，或扬眉瞬目、摇头转脑，将谓有多少奇特——若把识神当事，做外道奴也不得。玄沙勘云：认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？识神者，生死根、妄想缘气，认贼为子，万劫轮回。禅宗参“念佛是谁”，正是要于此能知觉者背后，勘破识神巢穴。",    "etymology": "识（八识分别）+ 神（灵知神识），妄认灵知意识为真宰之谓。",    "quotes": ["做工夫最怕认识神为佛事……若把识神当事，做外道奴也不得。 —博山元来《参禅警语》", "汝若认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？ —玄沙师备"],    "guidance": "清醒时了了分明的灵知并非本来面目——熟睡时它何在？生死到来它何在？用功须向“能知觉者”未生前究，莫在知觉门头认主宰。今人谈“觉察”“觉知”亦当辨此：觉察是工具，非主人。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语、卷下·评古德垂示警语",    "relatedConcepts": ["chanbing", "non-mind"],    "relatedPersons": ["boshan-yuanlai", "xuansha-shibei"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "fashen-bing",    "title": "法身病",    "category": "禅病辨析",    "summary": "法身病，即疑情发得起、与法身理相应之后所患的微细之病。博山云：法身中病最多，只须大病一场，始识得病根。坐在法身量边不肯撒手、耽着相应受用、生度量心、沉沉寂寂休去歇去、滞在法身边、面前隐隐似有个物、领略解路不肯求进、淡淡没滋味自谓究竟、见光见华作圣解、放下疑情不肯参究——通身是病，非禅也。云门亦立法身两般病：得法身为法执忘、己见犹坐在法身边是病；直饶透得法身去，仔细点检将来有甚么气息，亦是病。",    "etymology": "法身（真如理体）+ 病（微细执着），与理相应后所著之深细禅病。",    "quotes": ["法身中病最多，只须大病一场，始识得病根。 —博山元来《参禅警语》", "假饶尽大地人参禅，未有一个不受法身病者。 —博山元来"],    "guidance": "悟非终点，法身边亦须转身。凡有一境可住、一得可守——光皎皎地、净裸裸地、隐隐有物——皆是病。博山示人：既与理相应，须向万仞岩头翻筋斗打将下来，方是大人用心。修行人得少为足、认光影门头，宜深警此病。",    "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",    "relatedConcepts": ["chanbing", "zhuan-shen-tu-qi"],    "relatedPersons": ["boshan-yuanlai", "yunmen"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "zhuan-shen-tu-qi",    "title": "转身吐气",    "category": "禅法",    "summary": "转身吐气，即疑团打破、命根断后，更从法身边转身高步、入廛垂手之悟后功夫。博山云：若命根断去，不知转身吐气，唤作堕身死汉，非究竟也。引洞山“峰峦挺异，鹤不停机；灵木迢然，凤无依倚”——不停无依，方为活泼。又引天童“坐断十方犹点额，密移一步看飞龙”——纵坐断十方，犹须密移一步。石霜门下坐脱立亡者众，若不知痛痒、不得受用，只饶坐断十方有甚用处？转身吐气，方是禅门活泼泼的全提大用。",    "etymology": "转身（从法身边转身出）+ 吐气（吐气如新、舒展大用），悟后起用之谓。",    "quotes": ["若命根断去，不知转身吐气，唤作堕身死汉，非究竟也。 —博山元来《参禅警语》", "坐断十方犹点额，密移一步看飞龙。 —天童正觉"],    "guidance": "死水不藏龙。修行到一念不生、澄澄湛湛处，正须转身——从静入动、从体起用、入廛垂手接引学人。今人闭关清修得轻安境界，若以此为极则，正是坐在饭箩边饿杀。悟后重起疑、更见人，方能转身吐气。",    "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",    "relatedConcepts": ["zhuan-shen-ju", "fashen-bing"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
   }
 
 ];
@@ -6255,7 +6273,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "chinul",
       "zhaozhou"
     ],
-    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo"]
+    "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo", "boshan-canchanjingyu"]
   },
   {
     "id": "yixing-sanmei-practice",
@@ -6603,7 +6621,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": []
   },
   {
-    "id": "banghe",
+    "id": "banghe-jiaocan",
     "title": "棒喝交参",
     "summary": "棒喝交参，临济宗接引学人之峻烈方便。棒者，宗师以棒打学人，截断其意识流；喝者，宗师以大喝震慑学人，令其思量顿断。临济义玄之棒、德山宣鉴之棒、黄檗希运之喝，皆为禅宗最著名之棒喝。临济四料简——夺人不夺境、夺境不夺人、人境俱夺、人境俱不夺——皆以棒喝施设。棒喝非嗔怒打骂，乃大宗师为破学人执着而施设之\u201c格外方便\u201d——如良医以毒攻毒，以峻烈手段令学人于思量不及处亲见本来。",
     "origin": "黄檗希运以喝著称，临济义玄承之，以棒喝交参大弘临济宗风。德山宣鉴亦以棒闻名——\u201c道得也三十棒，道不得也三十棒\u201d。",
@@ -7129,7 +7147,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "pitfalls": ["不可将无字作知见会，不可作有无不有不无会。"],
     "classicRef": "fayanyulu",
     "relatedConcepts": ["wuzi-huatou", "toushi-guan"],
-    "relatedPersons": ["wuzu-fayan", "zhaozhou-congshen"],
+    "relatedPersons": ["wuzu-fayan", "zhaozhou"],
     "relatedBooks": ["fayanyulu"]
   },
   {
@@ -7143,6 +7161,15 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["baiyun-wanli", "toushi-guan"],
     "relatedPersons": ["wuzu-fayan"],
     "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "sizi-tie-e-fa",    "title": "死字贴额法",    "summary": "博山教人把“死”字贴在额头上，将血肉身心看作死去一般，唯有要究明的这一念现前。此一念如倚天长剑，触其锋者了不可得；若淘滞磨钝，剑去久矣。念死之力能逼出真切的参究心——如猛虎赶来，若不直走到家，必丧身失命，何可住脚。博山又云“工夫一日要见一日工夫”，以“香尽了，工夫如前无有损益”日日自策。此法远承佛门念死无常之教，为激发生死心最猛利之方便。",    "origin": "出自《博山参禅警语》卷上“做工夫把个死字贴在额头上”，远承佛陀“人命在呼吸间”念死无常之教，为禅门策发道心之要术。",    "steps": ["每日晨起提撕“大限到来，唯此一事”之念，看破身心世界悉是假缘、无实主宰", "将“死”字如贴额上，行住坐卧不离，如猛虎在后，不敢住脚半步", "单单提起本参话头，发起疑情，行不知行、坐不知坐", "每晚勘验：今日一枝香，工夫有损益否？光景易过，时不待人"],    "pitfalls": ["念死非消极厌世——是以死为师策发道心，若沉溺恐惧颓唐，反成障碍", "不可念成口头禅：口说无常，心逐五欲，正博山所斥“不打紧”三字之病"],    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["po-shengsi-xin", "yiqing"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "jingyu-zijing-fa",    "title": "警语自警法",    "summary": "博山全书以“警策”为宗——如刘崇庆序所喻：贼瞰巨室，主人张灯夜坐、謦欬作声则贼惧不敢动，稍尔昏睡则乘间而入、橐为之倾。修行人心中之贼（偷心、懈怠、识神）时刻窥伺，故须以痛切警语时时自警：或提黄檗“不是一番寒彻骨，怎得梅花扑鼻香”，或诵大义禅师“切莫信道不须参，古圣孜孜为指南”，或自勘“大事未明，何日是了”。警语如击柝鸣刁斗，卒有变而无虞，以其警备于机先。",    "origin": "《博山和尚参禅警语》全书即此法之集成——刘崇庆序以“贼瞰巨室、严城击柝”喻警备之要，博山示初心五章皆痛切警策之语。",    "steps": ["择一二痛切警语（如“光景易过，时不待人，大事未明，何日是了”）书之座右", "每日插香自省：工夫如前有损益否？一年若干许香耶？", "遇逆顺境缘动人念处，即时觉破，提起话头，不随境转", "以“参禅须铁汉，毋论期与限”等偈颂时时提撕，防止因循度日"],    "pitfalls": ["警语用于自警，不可用来责人——博山云自己打未彻，只可办自己事，不可教人", "若只诵警语而不实做工夫，警语反成文字障、口头禅"],    "classicRef": "《博山参禅警语》全卷",    "relatedConcepts": ["qie-zi-jue", "po-shengsi-xin"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "siyao-gongfu-fa",    "title": "四要工夫法",    "summary": "博山总结做工夫四要：紧——人命在呼吸，大事未明不得不紧，如麻绳着水一步紧一步；正——须具择法眼，三千七百祖师大有样子，毫厘有差则入邪径；绵密——眉毛与虚空厮结，针札不入水洒不湿，不容有毫厘闲隙，若有闲隙魔境乘隙而入；融豁——世界阔一丈则古镜阔一丈，决不拘执住在一处，捉定死蛇头。四者相资：紧而不正则枉用工，正而不紧则不能入，既入须绵密始得相应，既相应须融豁方为化境。",    "origin": "出自《博山参禅警语》卷上“做工夫要紧、要正、要绵密、要融豁”段，博山为初心学人立做工夫之总纲。",    "steps": ["紧：念人命无常、前路茫茫，提话头如救头燃、如一人与万人敌", "正：以祖师言教印证所行，具择法眼，不落邪径、不沾世法", "绵密：行住坐卧不离本参话头，针札不入水洒不湿，无毫厘闲隙", "融豁：不拘执一处、不系坠两头，内不见身心、外不见世界，漭漭荡荡"],    "pitfalls": ["紧而不正则枉用工，正而不紧则不能入——四要偏废皆病", "绵密而成拘执，即失融豁之妙；融豁而成散漫，即失绵密之功"],    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["yiqing", "kanhua-chan-concept"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
   }
 ]
 ;
@@ -7585,7 +7612,7 @@ export const ZEN_KOANS: KoanItem[] = [
     ]
   },
   {
-    "id": "koan-24",
+    "id": "koan-293",
     "question": "如何是祖师西来意？",
     "answer": "庭前柏树子。",
     "context": "僧问赵州从谂禅师：\u201c如何是祖师西来意？\u201d州曰：\u201c庭前柏树子。\u201d僧曰：\u201c和尚莫将境示人？\u201d州曰：\u201c我不将境示人。\u201d僧曰：\u201c如何是祖师西来意？\u201d州曰：\u201c庭前柏树子。\u201d",
@@ -7597,7 +7624,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": ["yunmen", "chanlinbaoxun", "wumenguan"]
   },
   {
-    "id": "koan-25",
+    "id": "koan-294",
     "question": "学人乍入丛林，乞师指示。",
     "answer": "吃粥了也未？——洗钵去。",
     "context": "僧参赵州从谂禅师，问：\u201c学人乍入丛林，乞师指示。\u201d州曰：\u201c吃粥了也未？\u201d僧曰：\u201c吃粥了也。\u201d州曰：\u201c洗钵去。\u201d僧于此言下大悟。",
@@ -10674,6 +10701,21 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["diyi-yi"],
     "relatedPersons": ["wuzu-fayan"],
     "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "koan-288",    "question": "如何是家产？",    "answer": "卸却皮囊即向汝道。",    "context": "赵州云：老僧十八岁便解破家荡产。又云：我当时被十二时辰使，如今使得十二时。博山评曰：在家产上作活计，被十二时辰使；破得家产者，便使得十二时。忽有僧问：如何是家产？博山答云：卸却皮囊即向汝道。",    "interpretation": "赵州十八岁便“破家荡产”，荡尽的是心中业识家当——五欲眷属、知见葛藤。未破时被十二时辰使唤，做习气的奴仆；破尽后反使得十二时，做时间的主人。僧问“如何是家产”，博山道“卸却皮囊即向汝道”——皮囊即色身，家产即执身为我的一切所有；肯当下卸却，家产本空，何须更道？此一则与赵州语连璧，正见博山评唱之妙：不塞人问路，只指人转身。",    "master": "博山元来",    "source": "《博山参禅警语》卷上·评古德垂示警语",    "relatedConcepts": ["non-mind", "emptiness"],    "relatedPersons": ["boshan-yuanlai", "zhaozhou"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "koan-289",    "question": "博山看“三千里外”语，为何打失布袋？",    "answer": "如放下千斤担子，自谓大悟——逮见宝方，方知未了。",    "context": "博山自述：当时看船子和尚“没踪迹”句，一日因阅《传灯录》，见赵州嘱僧云“三千里外逢人始得”，不觉打失布袋，如放下千斤担子，自谓大悟。逮见宝方和尚，如方木逗圆孔，始具惭愧。乃叹云：若悟后不见大善知识，纵得安逸，终是未了。",    "interpretation": "此段自叙悟缘，正是《警语》全书之骨血。博山悟后不以此自足，反去见宝方和尚勘验，一勘便知往日“大悟”只是解路——如方木逗圆孔，方圆不合。由此乃有“我得宝方不肯两个字，受用不尽”之叹。禅师尚且如此，后人稍有心境相应、光影门头便自称彻悟，可不惧哉？博山一生痛陈禅病、教人悟后须见人，皆从这段亲历中来。",    "master": "博山元来",    "source": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["chanbing", "fashen-bing"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "koan-290",    "question": "宝方“不肯”两字，为何受用不尽？",    "answer": "空拶空兮功莫大，有追有也德犹微；谤他迦叶安生理，得便宜处失便宜。",    "context": "博山悟后见宝方和尚，宝方不肯其悟处，勉以偈云：“空拶空兮功莫大，有追有也德犹微；谤他迦叶安生理，得便宜处失便宜。”博山尝谓学者云：我得宝方“不肯”两个字，受用不尽。此是百尺竿头进步句，衲僧辈不可不审。",    "interpretation": "善知识之“不肯”，是抹掉学人最后的执着——连“悟”也不许你把住。空拶空，是以话头逼拶到能所双亡处，功莫大焉；若还追有个“悟”可得，德犹微矣。“得便宜处失便宜”：占得的便宜正是吃亏处，认下的悟境正是病根。博山一生警策学人勿认光影、勿坐法身边，皆从这两个字中流出。父母能予人衣食，善知识能予人“不肯”——肯处即死处，不肯处才有活路。",    "master": "博山元来",    "source": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["fashen-bing", "zhuan-shen-tu-qi"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "koan-291",    "question": "瞌睡时，昭昭灵灵在甚么处？",    "answer": "认贼为子，是生死根，妄想缘气！",    "context": "玄沙云：更有一般说昭昭灵灵、灵台智性，能见能闻，向五蕴身田里作主宰，恁么为善知识大赚人。我今问汝：汝若认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？若瞌睡时不是，为甚么有昭昭时？汝还会么？这个唤作认贼为子，是生死根、妄想缘气！博山评：此是弄精魂汉，瞌睡时既做不得主，生死到来作么生折合？",    "interpretation": "“昭昭灵灵”即清醒时了了分知的灵知之心。玄沙一问直勘命根：若它真是你的主人，为何熟睡时便不见踪影、做不得主？可见此灵知仍是识心缘影，认它为真即认贼为子。博山进而点醒：睡时尚做不得主，死时四大分离更如何？今日修行人于“能觉察者”上认主宰、认“观照者”为真我，正是识神门头光影，非本来面目。勘验之法至简：境界转换时主人公在么？",    "master": "玄沙师备（博山评）",    "source": "《博山参禅警语》卷下·评古德垂示警语",    "relatedConcepts": ["shishen", "chanbing"],    "relatedPersons": ["xuansha-shibei", "boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "koan-292",    "question": "前面万丈深坑，背后野火来逼，两畔荆棘林，作么生免得？",    "answer": "直须不顾危亡，始得个彻头——稍生疑议，则丧身失命。",    "context": "芭蕉示众：如人行次，忽遇前面万丈深坑，背后野火来逼，两畔是荆棘林。若也向前，则堕在坑堑；若也退后，则野火烧身；转侧则被荆棘林碍。当与恁么时，作么生免得？若也免得，有出身之路；若免不得，堕身死汉。博山评：此语最为工夫紧要。学者多求知解，堕在玄奥窠臼里，不向这里留意，是谓空过一生。",    "interpretation": "芭蕉以绝境喻参禅：进不得、退不得、躲不得——正是不许你左思右卜、稍生疑议之处。博山谓做工夫做到无可用心处、万仞悬崖处、水穷山尽处、罗纹结角处，如老鼠入牛角，自有倒断。绝处正是出身之路：疑情逼到无路可走，一时桶底脱落。今人参禅稍有难处便求解会、问人讨说法，正是“免不得”的堕身死汉——不肯死于疑团，便不得活于悟门。",    "master": "芭蕉禅师（博山评）",    "source": "《博山参禅警语》卷上·评古德垂示警语",    "relatedConcepts": ["yiqing", "po-shengsi-xin"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
   }
 
 ];
@@ -15747,6 +15789,72 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "法演说“祖师遗下一只履，千古万古播人耳”是什么意思？",
     "answer": "法演说祖师留下的鞋子，千古万古传颂，但你空自肩担跣足行，何曾踏到自家的宝贝呢？意思是禅不在外面的传承，而在自家本有。别只顾着祖师留下的鞋子，而忘了自己的脚。",
     "relatedBooks": ["fayanyulu"]
+  },
+  {
+    "id": "faq-863",    "question": "博山说的“做工夫”是什么意思？和平时说的“下功夫”有何不同？",    "answer": "“做工夫”是禅门术语，特指提起话头、参究公案的实地修行。与世间“下功夫”的本质区别在于：世间功夫是心有所求、日进一寸的积累；做工夫却是提起一则话头（如“万法归一，一归何处”），发起疑情，行住坐卧单单究这一句，做到“行不知行、坐不知坐”，通身只是一个疑团。博山强调做工夫要“紧、正、绵密、融豁”，一日要见一日工夫——不是坐等开悟，而是如觅失物般穷追不舍。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-864",    "question": "“大疑大悟，小疑小悟，不疑不悟”——疑情和普通的怀疑有何区别？",    "answer": "普通怀疑是犹豫不决、向外找理由的念头；疑情是向内穷追不舍的参究之力。博山形容：生不知何来，不得不疑来处；死不知何去，不得不疑去处——疑情结在眉睫上，放亦不下，趁亦不去，如石头堵在胸口，吐不出、咽不下。疑情不是想答案，而是守住“不明白”穷追到明白自现。现代人可理解为高度专注的追问状态，但禅门疑情以生死为背景，力道远胜寻常好奇。",    "relatedQa": "koan-292",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-865",    "question": "为什么说“偷心不死，参禅无分”？什么是偷心？",    "answer": "偷心即投机取巧、不肯老实用功之心——想绕过实参、靠聪明解会悟道，想讨便宜、走捷径、让人说破。偷心种种：向经书上引证是偷心，向意根下卜度是偷心，将心待悟是偷心，稍得轻安便自谓悟也是偷心。博山说参禅如“一人与万人敌”，觌面不容眨眼——偷心便是乘隙而入的贼。刘崇庆序喻之如贼瞰巨室：主人（正念）稍一昏睡，贼便把家当搬空。偷心死尽，方容真疑情活。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-866",    "question": "博山为何教人把“死”字贴在额头上？参禅要一直想着死吗？",    "answer": "不是消极念死，是以死为师激发生死心。博山说做工夫最初要发个破生死心坚硬——看破身心世界是假缘，把血肉身心如死去一般，只剩要究明的那一念。为何如此？因为人不肯真用功，根本原因是忘了无常：光景易过，时不待人，一口气不来又是一生。念死之念如倚天长剑，斩断对世法的攀缘沾着。若把念死修成恐惧焦虑、颓唐厌世，便违背本意——它是策进之鞭，不是枷锁。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-867",    "question": "为什么“切”字被博山称为做工夫最要紧的一个字？",    "answer": "切是真切、迫切、恳切。博山说：切字最有力，不切则懈怠生；懈怠生则放逸纵意，靡所不至。用心真切有五种现前利益：不思善、不思恶、不落无记（超越三性）；无掉举；无昏沉；无闲隙故魔不能入；不生计度有无则不落外道。一个切字统摄了精进、摄心、防魔。舍此切字，纵然博览经教、坐破蒲团，博山斥为“痴狂外边走”。修行如百里程途，切字便是步步不停。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-868",    "question": "“将心待悟”为什么是病？不想开悟反而能开悟吗？",    "answer": "博山打了个比方：如人行路，住在路上等“到家”，终不能到家——只管走去，自然到家。将心待悟的“待”字即是病：期待本身是别念、是妄念，与话头不相应。悟的时机不由期待而来——如莲花时节到自开，如睡熟时梦自觉，悟是因缘会合时自然成就。所以正路是“逼拶令悟”：只管提起话头穷追，不安排悟、不等待悟。注意：不是“不想开悟”，而是不把“悟”变成心中把玩期待的另一个对象。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-869",    "question": "静坐时觉得澄澄湛湛、清清净净，为什么博山说耽着静境是禅病？",    "answer": "因为动境人厌、静境人贪——行人一向处喧闹场中，一与静境相应，如食饴蜜、如倦人喜睡，不知不觉便沉溺进去。博山警告：外道使身心断灭化为顽石，正是从静境而入；枯之又枯、寂之又寂，堕于无知，与木石何异？正路是“于大事中求其静相了不可得”——不是为了静而坐，是为了明生死大事而参。玄沙更斥“凝心敛念、摄事归空”为落空亡外道、魂不散的死人。静境不是道，只是做工夫的余波。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-870",    "question": "什么是“识神”？为什么说认识神为佛事“做外道奴也不得”？",    "answer": "识神即能知能觉、能动能静的分别灵知——扬眉瞬目、见闻觉知的那个“能”者。博山说最怕把它当作佛事：误认灵知为真性，修行便全盘错路，故云“若把识神当事，做外道奴也不得”。勘验之法玄沙早已示明：认昭昭灵灵是汝真实，为何瞌睡时它就不见、做不得主？生死到来更如何？识神是生死根、妄想缘气，认贼作子，万劫缠缚。参“念佛是谁”正是要勘破这能知觉者背后的机关。",    "relatedQa": "koan-291",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-871",    "question": "为什么求人说破没用？博山用“问路到长安”比喻什么？",    "answer": "博山说：做工夫不得求人说破——若说破，终是别人的，与自己没相干。如人问路到长安，路人但可指路，不可替你一一说明长安风景；他纵说得再详细，终是他亲见的，不是问路者亲见。修行同理：善知识能指方法，不能代替你悟；听来的“悟境”只是知识，命根不断。今人爱读禅书、听开示、搜公案“标准答案”，恰恰是求人说破的现代版——博山早指出：念来念去，与己没交涉。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-872",    "question": "为什么念公案没用？“念到弥勒下生也没交涉”是什么意思？",    "answer": "念公案是把参究变成了诵读——口念千遍，心中不起疑情，与做工夫全没交涉。博山说得更尖锐：与其空念公案，何不念阿弥陀佛，更有利益！因为念佛至少摄心，空念公案却增长一场我慢知解。正确用法是“举起话头起疑情”：看“无”字便就“无”上起疑，看“万法归一”便就“一归何处”起疑——公案不是用来念的，是用来疑的。念是口腔运动，疑才是心地功夫。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-873",    "question": "云门说“光不透脱有两般病”，指哪两种病？",    "answer": "一是“一切处不明，面前有物”——心光被境障蔽，触处滞碍，如隔雾看山。二是“透得一切法空，隐隐地似有个物”——连空也透了，却还残留一个“隐隐有物”的微妙感觉，仍是光不透脱。云门更补法身两般病：得法身而法执不忘、己见犹坐在法身边是病；直饶透得法身去，仔细点检将来“有甚么气息”，亦是病。博山评：此病全在境量上作活计，不曾坐断、不曾透脱、不曾得转身吐气。病病相续，皆因有一个可得的境界在。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-874",    "question": "什么是“法身病”？为什么疑情发得起、与法身理相应了还通身是病？",    "answer": "法身病是悟后微细病：与法身理相应，见尽大地光皎皎无丝毫障碍，便欲承当个事不肯撒手，坐在法身量边——命根不断，通身是病。博山列举：耽着受用如守宝汉、沉沉寂寂休去歇去滞在法身边、面前隐隐似有个物、领略解路不肯求进、见光见华作圣解、放下疑情自谓究竟……他说：法身中病最多，只须大病一场，始识得病根；尽大地人参禅，未有一个不受法身病者。对治之道唯在“转身吐气”——从法身边转身出，不肯停、不肯依。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-875",    "question": "“悬崖撒手，自肯承当；绝后再苏，欺君不得”如何理解？",    "answer": "这是古德形容大悟的两段关口。悬崖撒手：把一切依靠——道理、境界、身心、能所——全体放下，如临崖撒手，自肯承当大事，更无一物可把。绝后再苏：疑团逼到命根断处、大死一番之后，绝处复苏，方是真实悟境——至此欺君不得：自他俱瞒不过，悟与不悟、浅与深，明眼人一勘便知。博山引此示人：若命根不断，全是生灭心；若命根断去而不知转身吐气，唤作堕身死汉。大死与大活，必须连成一片。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-876",    "question": "博山自述“打失布袋”自谓大悟，为何见了宝方和尚反而“始具惭愧”？",    "answer": "这是博山修行自传中最紧要的一段。他参“没踪迹”句，一日阅《传灯录》见赵州“三千里外逢人始得”，忽然打失布袋，如放下千斤担子，自谓大悟。但去见宝方和尚，被一勘验，如方木逗圆孔——方圆不合，始知从前悟处只是解路，惭愧无比。宝方更“不肯”他，以偈勉之。博山由此得出全书最重要的教训：悟后若不见大善知识，纵得安逸，终是未了。连宗匠尚须经历“自谓悟—被勘破—真悟”的进程，后人稍有境界便自称证悟，正是博山痛警的狂病。",    "relatedQa": "koan-289",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-877",    "question": "为什么“伶俐心”是参禅大忌？聪明人反而难开悟吗？",    "answer": "博山说：做工夫最怕一个伶俐心——伶俐心为之药忌，犯着些毫，虽真药现前不能救。伶俐心即 quick brain：反应快、会解释、善领略，一闻公案便“懂了”，一上座便“相应了”。恰恰是这秒懂，让疑情永远发不起来——疑情需要“不明白”，伶俐心制造“我明白”。真参禅汉须眼如盲、耳如聋，心念才起如撞着银山铁壁。所以聪明人参禅反而多障：知识越多，解路越熟，偷心越难死。不是聪明有罪，是聪明成了逃进理路的便道。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-878",    "question": "“休去歇去”“莫管一切”错在哪里？径山为何斥为外道法？",    "answer": "径山见有人教人“死獦狚地休去歇去”，痛斥：若如此休歇，到千佛出世也休歇不得，转使心头迷闷——不肯起疑情则命根不断，休亦不去、歇亦不得，“休歇”二字正是生死根本。又斥“随缘管带、忘情默照”：有能带之心、所照之境，能所对立，非妄而何？博山点破真静：若要真个静，须是生死心破——疑情发得起，生死心凝在一处；疑情破，生死心破，于此破处求动相了不可得，那才是自静。歇不是压制念头，是连“歇的心”也歇。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-879",    "question": "参禅会走火入魔吗？博山如何看《楞严经》五十种阴魔？",    "answer": "答六雪关主问时，博山细剖《楞严》五十种魔事，结论只有一句：总以妄想为根。着即成魔，计则名外——魔不从外来，全是自心妄想凝结、乘隙而现。对治之法不是与魔对抗（那是雪上加霜），而是“但全身入理，不待遣，不待护，妄想念尽，则魔业自尽”。引思大禅师“十方诸佛被我一口吞尽”，佛祖位中留渠不住，邪魔外种其奈尔何。要点：不作圣解，名善境界；若作圣解，即受群邪。见光见华不以为奇，魔自无门可入。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-880",    "question": "“不是一番寒彻骨，怎得梅花扑鼻香”出自哪里？",    "answer": "出自黄檗希运禅师偈：“尘劳迥脱事非常，紧把绳头作一场；不是一番寒彻骨，怎得梅花扑鼻香。”博山在《警语》中特引此偈，说“此语最亲切！若将此偈时时警策，工夫自然做得上”。世人常引后两句励志，却常忘了前两句的分量：“尘劳迥脱”是透脱生死，“紧把绳头”是死命做工夫——正是在寒彻骨的紧把中，才有梅花的香气。博山又引百里程途为喻：说得乡里事业再了了分明，不走终不到家。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-881",    "question": "博山为学人开示参“无”字、“万法归一”、“念佛是谁”等不同话头，该选哪一个？",    "answer": "博山在卷下“示禅人参公案警语”中分别开示：参无字要“有无俱剿绝，直探骊龙珠”，如四面火起唯求一线生路；参万法归一要“竖起眉毛，如大火聚，生与同生，死与同死”；参念佛公案要知“一句阿弥陀，如珠投浊水”，念至妄止处再究“依稀识得娘生面，展似眉毛作么生”；看父母未生前则“单提句话头，不堕诸方便”。选话头的原则：对机即是好——疑情发得起的那个就是你的本参。选定之后贵专一：“只在一则公案上用心，不可一切公案上作解会。”",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-882",    "question": "为什么悟后还必须见善知识？“悟后不见大善知识，终是未了”",    "answer": "博山以自身为例：他自谓大悟后见宝方，方知未了；得宝方“不肯”两字，受用不尽。原因有三：一、悟处可能有解路混入，如方木逗圆孔，须宗师勘验方能拣别；二、法身病微细——坐在法身量边、耽着受用、隐隐有物，自己最难自查，须善知识磕着痛处；三、悟后转身吐气、入廛垂手的向上一路，须人抽钉拔楔。故博山反复叮咛：悟后只须见人，若不肯见人，皆唤作自欺底汉。“不肯见人，为执己见，禅中大病无过此者。”",    "relatedQa": "koan-290",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-883",    "question": "“不执修证，不废修证”——禅宗到底要不要修行证果？",    "answer": "博山答此问分两刀：先破执修证——真参究时，坐在铁壁银山只求迸出，观照功行无处安寄；一念迸开如披云见天，观照功行亦无所施，故不以功行、观照立名。再破废修证——南岳云“修证即不无，染污即不得”：不染污之修是圆修，不染污之证是圆证；终日修而无修，扫地焚香悉是无量佛事，“但不着修证耳”。如九地菩萨尚无功用行，等觉说法如雨如云犹被南泉呵斥。一句话：修而不住修相，不修而佛事不断——执则成病，废则落空。",    "relatedBooks": ["boshan-canchanjingyu"]
+  },
+  {
+    "id": "faq-884",    "question": "“参禅须铁汉，毋论期与限”——现代人有工作家庭，如何用博山的方法？",    "answer": "铁汉之心可学，铁汉之形不必泥。博山方法对现代人的转译：一、警觉为本——每日提醒自己何事为重、时不待人，把“切”字用在工作与修学上，一日要见一日工夫；二、话头随身——行住坐卧、着衣吃饭里都可提“念佛是谁”，不必拘于坐香；三、以病为药——博山痛陈的种种禅病（将心待悟、求人说破、偷心取巧、得少为足）正是现代人学习修行的通病自检表；四、知非便舍——纵然行在错处，肯一念知非便是进步的基本。修行不在形仪猛利，在心念真切。",    "relatedBooks": ["boshan-canchanjingyu"]
   }
 
 ];
