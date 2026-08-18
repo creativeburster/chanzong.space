@@ -665,5 +665,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '泗洲', pinyin: 'sì zhōu', meaning: '地名，法演诗中引用大圣参拜之典' },
     { char: '叮咽', pinyin: 'dīng yè', meaning: '絮叨、叮咛' },
     { char: '柴棚', pinyin: 'chái péng', meaning: '柴草搭的棚子' },
+  ],  zhonglun: [
+    { char: '偈', pinyin: 'jì', meaning: '佛经中的颂诗、诗偈，通常为四句' },
+    { char: '瞿昙', pinyin: 'qú tán', meaning: '佛陀的姓氏，也代指佛陀' },
+    { char: '稽首', pinyin: 'qǐ shǒu', meaning: '头至手或地，佛教最敬礼' },
+    { char: '因缘', pinyin: 'yīn yuán', meaning: '佛教核心概念，指事物生起的条件' },
+    { char: '二谛', pinyin: 'èr dì', meaning: '世俗谛与第一义谛，佛教真理的两个层次' },
+    { char: '四句', pinyin: 'sì jù', meaning: '有、无、亦有亦无、非有非无，龙树破斥的四种边见' },
+    { char: '中道', pinyin: 'zhōng dào', meaning: '不落空有二边的正见，佛教的核心义理' },
+    { char: '缘起', pinyin: 'yuán qǐ', meaning: '因缘和合而生起，佛教对事物存在方式的解释' },
+    { char: '性空', pinyin: 'xìng kōng', meaning: '一切法无有自性，本质为空' },
+    { char: '龙树', pinyin: 'lóng shù', meaning: '印度大乘佛教中观学派创始人，约2-3世纪' },
   ],
 };
