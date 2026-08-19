@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: '禅宗知识库 | ChanZong.space',
     template: '%s | 禅宗知识库',
   },
-  description: '全量收录55部核心禅宗典籍——七佛传法偈、达摩四论、六祖坛经、黄檗传心法要、黄檗断际禅师宛陵录、赵州真际禅师语录、无门关、八识规矩颂、禅关策进、大乘起信论、圜悟心要、圆悟佛果禅师语录、心铭、坐禅仪、绝观论、博山参禅警语、曹山语录、法演语录及高丽普照知讷禅师《真心直说》《修心诀》等，含254个核心概念、287则公案、143位祖师、64种修持法门、884条问答。',
+  description: '全量收录55部核心禅宗典籍——七佛传法偈、达摩四论、六祖坛经、黄檗传心法要、黄檗断际禅师宛陵录、赵州真际禅师语录、无门关、八识规矩颂、禅关策进、大乘起信论、圜悟心要、圆悟佛果禅师语录、心铭、坐禅仪、绝观论、博山参禅警语、曹山语录、法演语录、中论及高丽普照知讷禅师《真心直说》《修心诀》等，含261个核心概念、292则公案、143位祖师、66种修持法门、906条问答。',
   keywords: ['禅宗', '禅宗知识库', '真心直说', '修心诀', '六祖坛经', '达摩四论', '黄檗传心法要', '无门关', '八识规矩颂', '禅关策进', '大乘起信论', '公案', '禅宗典籍', 'ChanZong', 'Zen Buddhism', '见性成佛', '顿悟', '止观', '看话头', '参禅', '禅修', '祖师语录'],
   manifest: '/manifest.json',
   metadataBase: new URL(SITE_URL),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     siteName: '禅宗知识库',
     title: '禅宗知识库 | ChanZong.space',
-    description: '全量收录55部核心禅宗典籍，含254个概念、287则公案、143位祖师、64种法门、884条问答。传承顿悟见性之道。',
+    description: '全量收录55部核心禅宗典籍，含261个概念、292则公案、143位祖师、66种法门、906条问答。传承顿悟见性之道。',
     url: SITE_URL,
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '禅宗知识库 | ChanZong.space',
-    description: '全量收录55部核心禅宗典籍，含254个概念、287则公案、143位祖师、64种法门。',
+    description: '全量收录55部核心禅宗典籍，含261个概念、292则公案、143位祖师、66种法门。',
     images: ['/logo-nianhua-new.jpg'],
   },
   icons: {
@@ -78,7 +78,7 @@ export default function RootLayout({
     name: '禅宗知识库',
     alternateName: 'ChanZong.space',
     url: SITE_URL,
-    description: '全量收录55部核心禅宗典籍，含254个概念、287则公案、143位祖师、64种法门、884条问答。传承顿悟见性之道。',
+    description: '全量收录55部核心禅宗典籍，含261个概念、292则公案、143位祖师、66种法门、906条问答。传承顿悟见性之道。',
     inLanguage: 'zh-CN',
     potentialAction: {
       '@type': 'SearchAction',
