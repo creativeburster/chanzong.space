@@ -1,1 +1,1082 @@
-[{"id":"buddha-nature","title":"佛性"},{"id":"prajna","title":"般若"},{"id":"emptiness","title":"空"},{"id":"non-duality","title":"不二"},{"id":"koan","title":"公案"},{"id":"samadhi","title":"三昧"},{"id":"affliction-bodhi","title":"烦恼即菩提"},{"id":"no-abiding","title":"无住"},{"id":"mind-is-buddha","title":"即心即佛"},{"id":"not-mind-not-buddha","title":"非心非佛"},{"id":"all-returns-to-one","title":"万法归一"},{"id":"direct-pointing","title":"直指人心"},{"id":"mind-transmission","title":"以心传心"},{"id":"beyond-words","title":"不立文字"},{"id":"originally-nothing","title":"本来无一物"},{"id":"self-nature","title":"自性"},{"id":"instant-enlightenment","title":"顿悟"},{"id":"ordinary-mind","title":"平常心"},{"id":"non-mind","title":"无心"},{"id":"real-mind","title":"真心"},{"id":"yinian-wusheng","title":"一念无生"},{"id":"zixin-xianliang","title":"自心现量"},{"id":"yixing-sanmei","title":"一行三昧"},{"id":"sanlun-tikong","title":"三轮体空"},{"id":"weishi-yixin","title":"唯是一心"},{"id":"ying-wu-suo-zhu","title":"应无所住而生其心"},{"id":"si-xiang","title":"破除四相"},{"id":"ru-meng-huan-pao-ying","title":"如梦幻泡影"},{"id":"wu-yun-jie-kong","title":"照见五蕴皆空"},{"id":"se-ji-shi-kong","title":"色即是空，空即是色"},{"id":"wu-gua-ai","title":"心无挂碍"},{"id":"zhi-huan-ji-li","title":"知幻即离，离幻即觉"},{"id":"yuanjue-qingjing-xinxing","title":"圆觉清净心性"},{"id":"si-bing","title":"作止任灭四种修行病"},{"id":"tou-xin-wei-si","title":"偷心未死"},{"id":"de-hua-li-zhi","title":"德化与礼治"},{"id":"qi-chu-zheng-xin","title":"七处征心·破妄识心"},{"id":"ba-huan-bian-jian","title":"八还辨见·显不灭见性"},{"id":"wu-shi-yin-mo","title":"五十阴魔辨析"},{"id":"xin-jing-ji-fo-tu-jing","title":"心净则佛土净"},{"id":"ru-bu-er-fa-men","title":"入不二法门·维摩一默"},{"id":"wei-xin-zao","title":"一切唯心造"},{"id":"wu-ran-jue-xing","title":"无染觉性"},{"id":"po-xiang","title":"破相"},{"id":"tathagatagarbha","title":"如来藏"},{"id":"zhongdao","title":"中道"},{"id":"yuanqi","title":"缘起"},{"id":"wuwo","title":"无我"},{"id":"niepan","title":"涅槃"},{"id":"banruo-boluomi","title":"般若波罗蜜"},{"id":"wenzi-chan","title":"文字禅"},{"id":"mozhao-chan-concept","title":"默照"},{"id":"kanhua-chan-concept","title":"看话"},{"id":"canjiu","title":"参究"},{"id":"yiqing","title":"疑情"},{"id":"zhuan-shen-ju","title":"转身句"},{"id":"xiangshang-guanliezi","title":"向上关捩子"},{"id":"gewai-xuanji","title":"格外玄机"},{"id":"chanbing","title":"禅病"},{"id":"wu-nian","title":"无念"},{"id":"wu-xiang","title":"无相"},{"id":"wu-zhu","title":"无住"},{"id":"dunwu-jianxiu","title":"顿悟渐修"},{"id":"yixin-sanguan","title":"一心三观"},{"id":"putixin","title":"菩提心"},{"id":"liudu","title":"六度"},{"id":"fanrao-puti","title":"烦恼即菩提"},{"id":"buyi-buyi","title":"不一不异"},{"id":"ru-lai-zhi","title":"如来智"},{"id":"fashen","title":"法身"},{"id":"sanbao","title":"三宝"},{"id":"jiedinghui","title":"戒定慧"},{"id":"yinguo","title":"因果"},{"id":"lunhui","title":"轮回"},{"id":"jietuo","title":"解脱"},{"id":"weishi","title":"唯识"},{"id":"alaiye-shi","title":"阿赖耶识"},{"id":"rulai-chan-zushi-chan","title":"如来禅与祖师禅"},{"id":"jiaowai-biechuan","title":"教外别传"},{"id":"zhengfa-yancang","title":"正法眼藏"},{"id":"niepan-miaoxin","title":"涅槃妙心"},{"id":"shixiang","title":"实相"},{"id":"zhenru","title":"真如"},{"id":"fajie","title":"法界"},{"id":"lishi-wuai","title":"理事无碍"},{"id":"shishi-wuai","title":"事事无碍"},{"id":"yiji-yiqie","title":"一即一切"},{"id":"sekong-buer","title":"色空不二"},{"id":"busheng-bumie","title":"不生不灭"},{"id":"foxing-changzhu","title":"佛性常住"},{"id":"yinian-sanqian","title":"一念三千"},{"id":"xingju-shane","title":"性具善恶"},{"id":"wuming","title":"无明"},{"id":"sanshen","title":"三身"},{"id":"sizhi","title":"四智"},{"id":"zhuan-shi-cheng-zhi","title":"转识成智"},{"id":"buke-siyi","title":"不可思议"},{"id":"yicheng","title":"一乘"},{"id":"fangbian","title":"方便"},{"id":"shan-zhishi","title":"善知识"},{"id":"wenzi-zhang","title":"文字障"},{"id":"zhijie-zongtu","title":"知解宗徒"},{"id":"koutou-chan","title":"口头禅"},{"id":"kuang-chan","title":"狂禅"},{"id":"kumu-chan","title":"枯木禅"},{"id":"rulai","title":"如来"},{"id":"puti","title":"菩提"},{"id":"sanlun-tikong","title":"三轮体空"},{"id":"liuxiang-yuanrong","title":"六相圆融"},{"id":"weixin-jingtu","title":"唯心净土"},{"id":"xin-fo-zhongsheng","title":"心佛众生三无差别"},{"id":"fanrao-puti","title":"烦恼即菩提"},{"id":"shengsi-jielun","title":"生死即涅槃"},{"id":"faxing","title":"法性"},{"id":"xinxin-xiangyin","title":"心心相印"},{"id":"yihua-wuye","title":"一花开五叶"},{"id":"xitian-ershiba-zu","title":"西天二十八祖"},{"id":"yixiu-jue","title":"一宿觉"},{"id":"dunjiao","title":"顿教"},{"id":"jianjiao","title":"渐教"},{"id":"yin-yuan","title":"因缘"},{"id":"sanfa-yin","title":"三法印"},{"id":"si-yi","title":"四依"},{"id":"er-di","title":"二谛"},{"id":"ba-zhengdao","title":"八正道"},{"id":"shi-er-yinyuan","title":"十二因缘"},{"id":"si-di","title":"四谛"},{"id":"wu-yun","title":"五蕴"},{"id":"shiba-jie","title":"十八界"},{"id":"jielv","title":"戒律"},{"id":"chanding","title":"禅定"},{"id":"bore-zhi","title":"般若智"},{"id":"cibei","title":"慈悲"},{"id":"wenzi-bore","title":"文字般若"},{"id":"guanzhao-bore","title":"观照般若"},{"id":"shixiang-bore","title":"实相般若"},{"id":"yuanman","title":"圆满"},{"id":"fajie-yuanqi","title":"法界缘起"},{"id":"xingqi","title":"性起"},{"id":"shi-ru","title":"十如"},{"id":"sandi-yuanrong","title":"三谛圆融"},{"id":"li-ju-shi-zao","title":"理具事造"},{"id":"chanjing-shuangxiu","title":"禅净双修"},{"id":"jiaoli-guanxing","title":"教理观行"},{"id":"benjue-shijue","title":"本觉始觉"},{"id":"zhengjue","title":"正觉"},{"id":"wuxing","title":"无行"},{"id":"zixing-qingjing","title":"自性清净"},{"id":"fanyin","title":"法音"},{"id":"wuzhu-benti","title":"无住本"},{"id":"mo-na-shi","title":"末那识"},{"id":"wu-men","title":"无门"},{"id":"ben-lai-mian-mu","title":"本来面目"},{"id":"po-shengsi-xin","title":"破生死心"},{"id":"qie-zi-jue","title":"切字诀"},{"id":"jiang-xin-dai-wu","title":"将心待悟"},{"id":"shishen","title":"识神"},{"id":"fashen-bing","title":"法身病"},{"id":"zhuan-shen-tu-qi","title":"转身吐气"},{"id":"jifeng","title":"机锋"},{"id":"baoren","title":"保任"},{"id":"zheng-pian","title":"正偏五位"},{"id":"hu-hu","title":"回互"},{"id":"dinghui","title":"定慧"},{"id":"jianxing-chengfo","title":"见性成佛"},{"id":"shentong","title":"神通"}]
+[
+  {
+    "id": "babu",
+    "title": "八不"
+  },
+  {
+    "id": "xingkong",
+    "title": "性空"
+  },
+  {
+    "id": "erdi",
+    "title": "二谛"
+  },
+  {
+    "id": "siju",
+    "title": "四句"
+  },
+  {
+    "id": "zhongguan",
+    "title": "中观"
+  },
+  {
+    "id": "buddha-nature",
+    "title": "佛性"
+  },
+  {
+    "id": "prajna",
+    "title": "般若"
+  },
+  {
+    "id": "emptiness",
+    "title": "空"
+  },
+  {
+    "id": "non-duality",
+    "title": "不二"
+  },
+  {
+    "id": "koan",
+    "title": "公案"
+  },
+  {
+    "id": "samadhi",
+    "title": "三昧"
+  },
+  {
+    "id": "affliction-bodhi",
+    "title": "烦恼即菩提"
+  },
+  {
+    "id": "no-abiding",
+    "title": "无住"
+  },
+  {
+    "id": "mind-is-buddha",
+    "title": "即心即佛"
+  },
+  {
+    "id": "not-mind-not-buddha",
+    "title": "非心非佛"
+  },
+  {
+    "id": "all-returns-to-one",
+    "title": "万法归一"
+  },
+  {
+    "id": "direct-pointing",
+    "title": "直指人心"
+  },
+  {
+    "id": "mind-transmission",
+    "title": "以心传心"
+  },
+  {
+    "id": "beyond-words",
+    "title": "不立文字"
+  },
+  {
+    "id": "originally-nothing",
+    "title": "本来无一物"
+  },
+  {
+    "id": "self-nature",
+    "title": "自性"
+  },
+  {
+    "id": "instant-enlightenment",
+    "title": "顿悟"
+  },
+  {
+    "id": "ordinary-mind",
+    "title": "平常心"
+  },
+  {
+    "id": "non-mind",
+    "title": "无心"
+  },
+  {
+    "id": "real-mind",
+    "title": "真心"
+  },
+  {
+    "id": "yinian-wusheng",
+    "title": "一念无生"
+  },
+  {
+    "id": "zixin-xianliang",
+    "title": "自心现量"
+  },
+  {
+    "id": "yixing-sanmei",
+    "title": "一行三昧"
+  },
+  {
+    "id": "sanlun-tikong",
+    "title": "三轮体空"
+  },
+  {
+    "id": "weishi-yixin",
+    "title": "唯是一心"
+  },
+  {
+    "id": "ying-wu-suo-zhu",
+    "title": "应无所住而生其心"
+  },
+  {
+    "id": "si-xiang",
+    "title": "破除四相"
+  },
+  {
+    "id": "ru-meng-huan-pao-ying",
+    "title": "如梦幻泡影"
+  },
+  {
+    "id": "wu-yun-jie-kong",
+    "title": "照见五蕴皆空"
+  },
+  {
+    "id": "se-ji-shi-kong",
+    "title": "色即是空，空即是色"
+  },
+  {
+    "id": "wu-gua-ai",
+    "title": "心无挂碍"
+  },
+  {
+    "id": "zhi-huan-ji-li",
+    "title": "知幻即离，离幻即觉"
+  },
+  {
+    "id": "yuanjue-qingjing-xinxing",
+    "title": "圆觉清净心性"
+  },
+  {
+    "id": "si-bing",
+    "title": "作止任灭四种修行病"
+  },
+  {
+    "id": "tou-xin-wei-si",
+    "title": "偷心未死"
+  },
+  {
+    "id": "de-hua-li-zhi",
+    "title": "德化与礼治"
+  },
+  {
+    "id": "qi-chu-zheng-xin",
+    "title": "七处征心·破妄识心"
+  },
+  {
+    "id": "ba-huan-bian-jian",
+    "title": "八还辨见·显不灭见性"
+  },
+  {
+    "id": "wu-shi-yin-mo",
+    "title": "五十阴魔辨析"
+  },
+  {
+    "id": "xin-jing-ji-fo-tu-jing",
+    "title": "心净则佛土净"
+  },
+  {
+    "id": "ru-bu-er-fa-men",
+    "title": "入不二法门·维摩一默"
+  },
+  {
+    "id": "wei-xin-zao",
+    "title": "一切唯心造"
+  },
+  {
+    "id": "wu-ran-jue-xing",
+    "title": "无染觉性"
+  },
+  {
+    "id": "po-xiang",
+    "title": "破相"
+  },
+  {
+    "id": "tathagatagarbha",
+    "title": "如来藏"
+  },
+  {
+    "id": "zhongdao",
+    "title": "中道"
+  },
+  {
+    "id": "yuanqi",
+    "title": "缘起"
+  },
+  {
+    "id": "wuwo",
+    "title": "无我"
+  },
+  {
+    "id": "niepan",
+    "title": "涅槃"
+  },
+  {
+    "id": "banruo-boluomi",
+    "title": "般若波罗蜜"
+  },
+  {
+    "id": "wenzi-chan",
+    "title": "文字禅"
+  },
+  {
+    "id": "mozhao-chan-concept",
+    "title": "默照"
+  },
+  {
+    "id": "kanhua-chan-concept",
+    "title": "看话"
+  },
+  {
+    "id": "canjiu",
+    "title": "参究"
+  },
+  {
+    "id": "yiqing",
+    "title": "疑情"
+  },
+  {
+    "id": "zhuan-shen-ju",
+    "title": "转身句"
+  },
+  {
+    "id": "xiangshang-guanliezi",
+    "title": "向上关捩子"
+  },
+  {
+    "id": "gewai-xuanji",
+    "title": "格外玄机"
+  },
+  {
+    "id": "chanbing",
+    "title": "禅病"
+  },
+  {
+    "id": "wu-nian",
+    "title": "无念"
+  },
+  {
+    "id": "wu-xiang",
+    "title": "无相"
+  },
+  {
+    "id": "wu-zhu",
+    "title": "无住"
+  },
+  {
+    "id": "dunwu-jianxiu",
+    "title": "顿悟渐修"
+  },
+  {
+    "id": "yixin-sanguan",
+    "title": "一心三观"
+  },
+  {
+    "id": "putixin",
+    "title": "菩提心"
+  },
+  {
+    "id": "liudu",
+    "title": "六度"
+  },
+  {
+    "id": "fanrao-puti",
+    "title": "烦恼即菩提"
+  },
+  {
+    "id": "buyi-buyi",
+    "title": "不一不异"
+  },
+  {
+    "id": "ru-lai-zhi",
+    "title": "如来智"
+  },
+  {
+    "id": "fashen",
+    "title": "法身"
+  },
+  {
+    "id": "sanbao",
+    "title": "三宝"
+  },
+  {
+    "id": "jiedinghui",
+    "title": "戒定慧"
+  },
+  {
+    "id": "yinguo",
+    "title": "因果"
+  },
+  {
+    "id": "lunhui",
+    "title": "轮回"
+  },
+  {
+    "id": "jietuo",
+    "title": "解脱"
+  },
+  {
+    "id": "weishi",
+    "title": "唯识"
+  },
+  {
+    "id": "alaiye-shi",
+    "title": "阿赖耶识"
+  },
+  {
+    "id": "rulai-chan-zushi-chan",
+    "title": "如来禅与祖师禅"
+  },
+  {
+    "id": "jiaowai-biechuan",
+    "title": "教外别传"
+  },
+  {
+    "id": "zhengfa-yancang",
+    "title": "正法眼藏"
+  },
+  {
+    "id": "niepan-miaoxin",
+    "title": "涅槃妙心"
+  },
+  {
+    "id": "shixiang",
+    "title": "实相"
+  },
+  {
+    "id": "zhenru",
+    "title": "真如"
+  },
+  {
+    "id": "fajie",
+    "title": "法界"
+  },
+  {
+    "id": "lishi-wuai",
+    "title": "理事无碍"
+  },
+  {
+    "id": "shishi-wuai",
+    "title": "事事无碍"
+  },
+  {
+    "id": "yiji-yiqie",
+    "title": "一即一切"
+  },
+  {
+    "id": "sekong-buer",
+    "title": "色空不二"
+  },
+  {
+    "id": "busheng-bumie",
+    "title": "不生不灭"
+  },
+  {
+    "id": "foxing-changzhu",
+    "title": "佛性常住"
+  },
+  {
+    "id": "yinian-sanqian",
+    "title": "一念三千"
+  },
+  {
+    "id": "xingju-shane",
+    "title": "性具善恶"
+  },
+  {
+    "id": "wuming",
+    "title": "无明"
+  },
+  {
+    "id": "sanshen",
+    "title": "三身"
+  },
+  {
+    "id": "sizhi",
+    "title": "四智"
+  },
+  {
+    "id": "zhuan-shi-cheng-zhi",
+    "title": "转识成智"
+  },
+  {
+    "id": "buke-siyi",
+    "title": "不可思议"
+  },
+  {
+    "id": "yicheng",
+    "title": "一乘"
+  },
+  {
+    "id": "fangbian",
+    "title": "方便"
+  },
+  {
+    "id": "shan-zhishi",
+    "title": "善知识"
+  },
+  {
+    "id": "wenzi-zhang",
+    "title": "文字障"
+  },
+  {
+    "id": "zhijie-zongtu",
+    "title": "知解宗徒"
+  },
+  {
+    "id": "koutou-chan",
+    "title": "口头禅"
+  },
+  {
+    "id": "kuang-chan",
+    "title": "狂禅"
+  },
+  {
+    "id": "kumu-chan",
+    "title": "枯木禅"
+  },
+  {
+    "id": "rulai",
+    "title": "如来"
+  },
+  {
+    "id": "puti",
+    "title": "菩提"
+  },
+  {
+    "id": "liuxiang-yuanrong",
+    "title": "六相圆融"
+  },
+  {
+    "id": "weixin-jingtu",
+    "title": "唯心净土"
+  },
+  {
+    "id": "xin-fo-zhongsheng",
+    "title": "心佛众生三无差别"
+  },
+  {
+    "id": "shengsi-jielun",
+    "title": "生死即涅槃"
+  },
+  {
+    "id": "faxing",
+    "title": "法性"
+  },
+  {
+    "id": "xinxin-xiangyin",
+    "title": "心心相印"
+  },
+  {
+    "id": "yihua-wuye",
+    "title": "一花开五叶"
+  },
+  {
+    "id": "xitian-ershiba-zu",
+    "title": "西天二十八祖"
+  },
+  {
+    "id": "yixiu-jue",
+    "title": "一宿觉"
+  },
+  {
+    "id": "dunjiao",
+    "title": "顿教"
+  },
+  {
+    "id": "jianjiao",
+    "title": "渐教"
+  },
+  {
+    "id": "yin-yuan",
+    "title": "因缘"
+  },
+  {
+    "id": "sanfa-yin",
+    "title": "三法印"
+  },
+  {
+    "id": "si-yi",
+    "title": "四依"
+  },
+  {
+    "id": "er-di",
+    "title": "二谛"
+  },
+  {
+    "id": "ba-zhengdao",
+    "title": "八正道"
+  },
+  {
+    "id": "shi-er-yinyuan",
+    "title": "十二因缘"
+  },
+  {
+    "id": "si-di",
+    "title": "四谛"
+  },
+  {
+    "id": "wu-yun",
+    "title": "五蕴"
+  },
+  {
+    "id": "shiba-jie",
+    "title": "十八界"
+  },
+  {
+    "id": "jielv",
+    "title": "戒律"
+  },
+  {
+    "id": "chanding",
+    "title": "禅定"
+  },
+  {
+    "id": "bore-zhi",
+    "title": "般若智"
+  },
+  {
+    "id": "cibei",
+    "title": "慈悲"
+  },
+  {
+    "id": "wenzi-bore",
+    "title": "文字般若"
+  },
+  {
+    "id": "guanzhao-bore",
+    "title": "观照般若"
+  },
+  {
+    "id": "shixiang-bore",
+    "title": "实相般若"
+  },
+  {
+    "id": "yuanman",
+    "title": "圆满"
+  },
+  {
+    "id": "fajie-yuanqi",
+    "title": "法界缘起"
+  },
+  {
+    "id": "xingqi",
+    "title": "性起"
+  },
+  {
+    "id": "shi-ru",
+    "title": "十如"
+  },
+  {
+    "id": "sandi-yuanrong",
+    "title": "三谛圆融"
+  },
+  {
+    "id": "li-ju-shi-zao",
+    "title": "理具事造"
+  },
+  {
+    "id": "chanjing-shuangxiu",
+    "title": "禅净双修"
+  },
+  {
+    "id": "jiaoli-guanxing",
+    "title": "教理观行"
+  },
+  {
+    "id": "benjue-shijue",
+    "title": "本觉始觉"
+  },
+  {
+    "id": "zhengjue",
+    "title": "正觉"
+  },
+  {
+    "id": "wuxing",
+    "title": "无行"
+  },
+  {
+    "id": "zixing-qingjing",
+    "title": "自性清净"
+  },
+  {
+    "id": "fanyin",
+    "title": "法音"
+  },
+  {
+    "id": "wuzhu-benti",
+    "title": "无住本"
+  },
+  {
+    "id": "mo-na-shi",
+    "title": "末那识"
+  },
+  {
+    "id": "wu-men",
+    "title": "无门"
+  },
+  {
+    "id": "yi-xin-er-men",
+    "title": "一心二门"
+  },
+  {
+    "id": "xun-xi",
+    "title": "熏习"
+  },
+  {
+    "id": "zuo-gong-fu",
+    "title": "做工夫"
+  },
+  {
+    "id": "zhi-guan",
+    "title": "止观"
+  },
+  {
+    "id": "ben-lai-mian-mu",
+    "title": "本来面目"
+  },
+  {
+    "id": "jingang-zhengti",
+    "title": "金刚正体"
+  },
+  {
+    "id": "tongdi-tuo",
+    "title": "桶底子脱"
+  },
+  {
+    "id": "wuxin-dao-ren",
+    "title": "无心道人"
+  },
+  {
+    "id": "dacheng-yipian",
+    "title": "打成一片"
+  },
+  {
+    "id": "jieduan-zhongliu",
+    "title": "截断众流"
+  },
+  {
+    "id": "yiyin-yanfa",
+    "title": "一音演法"
+  },
+  {
+    "id": "wuchang",
+    "title": "无常"
+  },
+  {
+    "id": "kongxing",
+    "title": "空性"
+  },
+  {
+    "id": "baoshen",
+    "title": "报身"
+  },
+  {
+    "id": "huashen",
+    "title": "化身"
+  },
+  {
+    "id": "wuzhiliang",
+    "title": "无智亦无得"
+  },
+  {
+    "id": "wusuode",
+    "title": "无所得"
+  },
+  {
+    "id": "zhengliang",
+    "title": "证量"
+  },
+  {
+    "id": "xianliang",
+    "title": "现量"
+  },
+  {
+    "id": "biliang",
+    "title": "比量"
+  },
+  {
+    "id": "fengxian",
+    "title": "风幡"
+  },
+  {
+    "id": "wujian",
+    "title": "无间"
+  },
+  {
+    "id": "jiaocan",
+    "title": "交参"
+  },
+  {
+    "id": "huangji",
+    "title": "还源"
+  },
+  {
+    "id": "zhengyin",
+    "title": "正因"
+  },
+  {
+    "id": "liaoyin",
+    "title": "了因"
+  },
+  {
+    "id": "yuan-yin",
+    "title": "缘因"
+  },
+  {
+    "id": "sande",
+    "title": "三德"
+  },
+  {
+    "id": "eryi",
+    "title": "二义"
+  },
+  {
+    "id": "shidi",
+    "title": "十地"
+  },
+  {
+    "id": "zhenkong-miaoyou",
+    "title": "真空妙有"
+  },
+  {
+    "id": "wuzhu-ben",
+    "title": "无住为本"
+  },
+  {
+    "id": "yixinyuan",
+    "title": "一心圆"
+  },
+  {
+    "id": "benjue",
+    "title": "本觉"
+  },
+  {
+    "id": "shijue",
+    "title": "始觉"
+  },
+  {
+    "id": "bujue",
+    "title": "不觉"
+  },
+  {
+    "id": "ranxiu",
+    "title": "染心"
+  },
+  {
+    "id": "jingxin",
+    "title": "净心"
+  },
+  {
+    "id": "wuhou",
+    "title": "无后"
+  },
+  {
+    "id": "dangnian",
+    "title": "当念"
+  },
+  {
+    "id": "yiguan",
+    "title": "一贯"
+  },
+  {
+    "id": "zhengming",
+    "title": "正命"
+  },
+  {
+    "id": "zhengye",
+    "title": "正业"
+  },
+  {
+    "id": "zhengyu",
+    "title": "正语"
+  },
+  {
+    "id": "song-gu",
+    "title": "颂古"
+  },
+  {
+    "id": "ping-chang",
+    "title": "评唱"
+  },
+  {
+    "id": "jiaochan-yizhi",
+    "title": "教禅一致"
+  },
+  {
+    "id": "shili-buer",
+    "title": "事理不二"
+  },
+  {
+    "id": "jijing-xingxing",
+    "title": "寂寂惺惺"
+  },
+  {
+    "id": "fen-biyanlu",
+    "title": "焚毁碧岩录"
+  },
+  {
+    "id": "zongfeng",
+    "title": "宗风"
+  },
+  {
+    "id": "pu-shuo",
+    "title": "普说"
+  },
+  {
+    "id": "fa-yu",
+    "title": "法语"
+  },
+  {
+    "id": "huoju-siju",
+    "title": "活句死句"
+  },
+  {
+    "id": "huatou-shibing",
+    "title": "话头十病"
+  },
+  {
+    "id": "can-san-yao",
+    "title": "参禅三要"
+  },
+  {
+    "id": "wuzong-jiafeng",
+    "title": "五宗家风"
+  },
+  {
+    "id": "wuxin-jueguan",
+    "title": "无心绝观"
+  },
+  {
+    "id": "xin-busheng-fajue",
+    "title": "心不生法绝"
+  },
+  {
+    "id": "dajibenyou",
+    "title": "大机本有"
+  },
+  {
+    "id": "jingji-ziran",
+    "title": "明寂自然"
+  },
+  {
+    "id": "zuochan-weiyi",
+    "title": "坐禅威仪"
+  },
+  {
+    "id": "chanding-jiwu",
+    "title": "禅定即务"
+  },
+  {
+    "id": "no-views",
+    "title": "莫起诸见"
+  },
+  {
+    "id": "wu-wei-famen",
+    "title": "无为法门"
+  },
+  {
+    "id": "benfen-shi",
+    "title": "本分事"
+  },
+  {
+    "id": "chi-cha-qu",
+    "title": "吃茶去"
+  },
+  {
+    "id": "ting-qian-baishuzi",
+    "title": "庭前柏树子"
+  },
+  {
+    "id": "kong-wei-daoben",
+    "title": "空为道本"
+  },
+  {
+    "id": "xing-yu-feidao",
+    "title": "行于非道"
+  },
+  {
+    "id": "benwu-xijie",
+    "title": "本无系缚"
+  },
+  {
+    "id": "si-jian-zheng-jian",
+    "title": "似见与正见"
+  },
+  {
+    "id": "fa-jie-xing-ziran",
+    "title": "法界性自然"
+  },
+  {
+    "id": "wu-shi-zhi-zhi",
+    "title": "无知之知"
+  },
+  {
+    "id": "wuwei-junchen",
+    "title": "五位君臣"
+  },
+  {
+    "id": "sanduo",
+    "title": "三等堕"
+  },
+  {
+    "id": "yilei-zhongxing",
+    "title": "异类中行"
+  },
+  {
+    "id": "jian-dai-yu",
+    "title": "兼带语"
+  },
+  {
+    "id": "sijin-ji",
+    "title": "四禁偈"
+  },
+  {
+    "id": "bayao-xuanji",
+    "title": "八要玄机"
+  },
+  {
+    "id": "baiyun-wanli",
+    "title": "白云万里"
+  },
+  {
+    "id": "wuzi-huatou",
+    "title": "无字话头"
+  },
+  {
+    "id": "toushi-guan",
+    "title": "透祖师关"
+  },
+  {
+    "id": "qugeng-duoshi",
+    "title": "驱耕夫之牛夺饥人之食"
+  },
+  {
+    "id": "baiyun-yidi-shui",
+    "title": "白云一滴水"
+  },
+  {
+    "id": "diyi-yi",
+    "title": "第一义"
+  },
+  {
+    "id": "po-shengsi-xin",
+    "title": "破生死心"
+  },
+  {
+    "id": "qie-zi-jue",
+    "title": "切字诀"
+  },
+  {
+    "id": "jiang-xin-dai-wu",
+    "title": "将心待悟"
+  },
+  {
+    "id": "shishen",
+    "title": "识神"
+  },
+  {
+    "id": "fashen-bing",
+    "title": "法身病"
+  },
+  {
+    "id": "zhuan-shen-tu-qi",
+    "title": "转身吐气"
+  },
+  {
+    "id": "jifeng",
+    "title": "机锋"
+  },
+  {
+    "id": "baoren",
+    "title": "保任"
+  },
+  {
+    "id": "zheng-pian",
+    "title": "正偏五位"
+  },
+  {
+    "id": "hu-hu",
+    "title": "回互"
+  },
+  {
+    "id": "dinghui",
+    "title": "定慧"
+  },
+  {
+    "id": "jianxing-chengfo",
+    "title": "见性成佛"
+  },
+  {
+    "id": "shentong",
+    "title": "神通"
+  },
+  {
+    "id": "chanyuan",
+    "title": "禅源"
+  },
+  {
+    "id": "rulai-qingjing-chan",
+    "title": "如来清净禅（最上乘禅）"
+  },
+  {
+    "id": "sanzong",
+    "title": "禅门三宗"
+  },
+  {
+    "id": "sanjiao",
+    "title": "三种教"
+  },
+  {
+    "id": "lingzhi",
+    "title": "灵知"
+  },
+  {
+    "id": "chanyiao-yizhi",
+    "title": "禅教一致"
+  },
+  {
+    "id": "miwu-shizhong",
+    "title": "迷悟十重"
+  },
+  {
+    "id": "wanshan-tonggui",
+    "title": "万善同归"
+  },
+  {
+    "id": "chan-jing-shuangxiu",
+    "title": "禅净双修"
+  },
+  {
+    "id": "quanshi-shuangxing",
+    "title": "权实双行"
+  },
+  {
+    "id": "erdi-bingchen",
+    "title": "二谛并陈"
+  },
+  {
+    "id": "xingxiang-rongji",
+    "title": "性相融即"
+  },
+  {
+    "id": "tiyong-zizai",
+    "title": "体用自在"
+  },
+  {
+    "id": "kongyou-xiangcheng",
+    "title": "空有相成"
+  },
+  {
+    "id": "zhengzhu-jianxiu",
+    "title": "正助兼修"
+  },
+  {
+    "id": "xiuxing-buer",
+    "title": "修性不二"
+  }
+]
