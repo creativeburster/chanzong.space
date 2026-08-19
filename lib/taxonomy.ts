@@ -11089,6 +11089,42 @@ export const ZEN_KOANS: KoanItem[] = [
   },
   {
     "id": "koan-299",    "question": "违宗趣而不守，废关防而不据，无乃乖秘藏密契之道乎？",    "answer": "诸佛有密语，无密藏。",    "context": "裴休作序记或人之难：自古如来未尝把诸宗统一，你现在把门户之防全撤了，岂不违背秘藏密契之道？裴休引《涅槃经》答：迦叶菩萨曰\"诸佛有密语，无密藏\"，世尊赞曰\"如来之言开发显露清净无翳，愚人不解为之秘藏，智者了达则不名藏\"。如王道兴则外户不闭，佛道备则诸法总持——不当再执情攘臂于其间。并嘱后学：当取信于佛，无取信于人；当取证于本法，无取证于未习。",    "interpretation": "真理需要保密吗？裴休的回答干脆之至：佛没有秘密，只有愚人解不开的密语。和会诸宗不是泄露天机，是把各宗自封的\"秘藏\"摊开在佛语之下让大家看清——本是一味。这段对话也立了学道者的独立品格：不迷信人（包括祖师），只以法和佛为据。千年之后读之，仍是判别正法与门派之见的试金石。",    "master": "裴休",    "source": "《禅源诸诠集都序·裴休叙》",    "relatedConcepts": ["chanyiao-yizhi"],    "relatedPersons": ["peixiu", "guifeng-zongmi"],    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "koan-300",
+    "question": "延寿依德韶印心",
+    "answer": "汝与我有缘，他日大兴佛事，当弘法眼正宗。",
+    "context": "永明延寿禅师初参天台德韶国师。德韶一见深加器重，密授玄旨，谓之曰：\u201c汝与我有缘，他日大兴佛事，当弘法眼正宗。\u201d延寿于言下顿明本心，彻见理事不二之旨。后驻锡永明寺，果大阐法眼宗风，集华严、法相、天台诸宗大德会于永明，著《宗镜录》《万善同归集》。",
+    "interpretation": "德韶一印，非特印延寿一人之心，实印法眼一宗之化境。延寿得韶师密印后，并不耽著一己枯寂，而以\u201c大兴佛事\u201d为本愿。宗门极则处不在绝尘离世，而在一心圆具万行、广建水月道场。韶师预记弘法眼，正显禅宗至极、理事无阂之全提宗风。",
+    "master": "天台德韶 / 永明延寿",
+    "source": "《景德传灯录》卷二十六·永明延寿章",
+    "relatedConcepts": ["mind-transmission", "wanshan-tonggui", "lishi-wuai"],
+    "relatedPersons": ["tiantai-deshao", "yongming-yanshou"],
+    "relatedBooks": ["wanshantongguiji", "chanlinbaoxun"]
+  },
+  {
+    "id": "koan-301",
+    "question": "延寿放生盗官钱·临刑自若",
+    "answer": "将此身命，随所施物，同归实相。",
+    "context": "延寿俗姓王，早年为余杭库吏，性慈好生，屡挪用库钱买鱼虾等生物放生。后事发论死，吴越王钱镠知其好善，密戒监斩官：\u201c若其临刑颜色变动即斩之，如无所惧则赦之。\u201d及就刑地，延寿神色自若，欢喜而言曰：\u201c吾用库钱尽为放生，今得舍身归向佛道，何憾之有！\u201d王闻之大惊，遂赦其罪，并听其出家。",
+    "interpretation": "平常人视死为大变，延寿视死如归家。挪用库钱非私贪，全出一片同体大悲；就刑无惧非佯狂，盖已了达四大假合、本无死生之实相。这正是《万善同归集》\u201c以无所得而修万善\u201d的最初写照——不惜身命，随顺慈悲，以事显理，生死关头真见本来。",
+    "master": "永明延寿",
+    "source": "《宋高僧传》卷二十八·永明延寿传",
+    "relatedConcepts": ["po-shengsi-xin", "cibei", "wanshan-tonggui"],
+    "relatedPersons": ["yongming-yanshou"],
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "koan-302",
+    "question": "天台智者岩·二阄决行门",
+    "answer": "七度拈得\u201c一心禅净双修、广行万善\u201d。",
+    "context": "延寿出家后于国清寺结坛修法华忏，行道中见普贤菩萨像现前。后登智者岩，未决专修禅定还是兼修万善净土，乃作二阄：一曰\u201c一心禅定\u201d，二曰\u201c诵经万善庄严净土\u201d。于佛前精诚祈祷，七度抽拈，七度皆得\u201c诵经万善庄严净土\u201d阄。自此定散双融、禅净并修，矢志不移。",
+    "interpretation": "延寿拈阄，看似凭神契，实是藉相显心、决断大疑。禅门学人易堕偏空独善，延寿深达法界圆融之旨，以七度拈阄打破\u201c唯禅非净、唯理废事\u201d之隔阂。自此理事齐平、万善同归，开一代宗门定慧庄严、禅净双修之坦途。",
+    "master": "永明延寿",
+    "source": "《佛祖统纪》卷二十六",
+    "relatedConcepts": ["chan-jing-shuangxiu", "wanshan-tonggui", "zhengzhu-jianxiu"],
+    "relatedPersons": ["yongming-yanshou"],
+    "relatedBooks": ["wanshantongguiji"]
   }
 
 ];
