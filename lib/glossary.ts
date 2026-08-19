@@ -1,4 +1,4 @@
-﻿/* ---- 生僻字解释：按经典 id 对应，每条含字/词、读音、释义 ---- */
+/* ---- 生僻字解释：按经典 id 对应，每条含字/词、读音、释义 ---- */
 export interface GlossaryEntry {
   char: string;
   pinyin: string;
@@ -710,7 +710,17 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '四句', pinyin: 'sì jù', meaning: '有、无、亦有亦无、非有非无，龙树破斥的四种边见' },
     { char: '中道', pinyin: 'zhōng dào', meaning: '不落空有二边的正见，佛教的核心义理' },
     { char: '缘起', pinyin: 'yuán qǐ', meaning: '因缘和合而生起，佛教对事物存在方式的解释' },
-    { char: '性空', pinyin: 'xìng kōng', meaning: '一切法无有自性，本质为空' },
-    { char: '龙树', pinyin: 'lóng shù', meaning: '印度大乘佛教中观学派创始人，约2-3世纪' },
+  ],
+  wanshantongguiji: [
+    { char: '阂', pinyin: 'ài', meaning: '阻碍、妨碍。理事无阂即理事互不妨碍' },
+    { char: '翳', pinyin: 'yì', meaning: '遮蔽、蒙蔽。如“久翳尘劳”' },
+    { char: '莹彻', pinyin: 'yíng chè', meaning: '晶莹透彻，明净照彻' },
+    { char: '醍醐', pinyin: 'tí hú', meaning: '从乳中提炼的至甘精华，比喻至高圆顿之佛性法味' },
+    { char: '遮诠', pinyin: 'zhē quán', meaning: '从否定与破执层面表述真理（如“非心非佛”），与“表诠”相对' },
+    { char: '表诠', pinyin: 'biǎo quán', meaning: '从正面直接显发指陈真理（如“即心即佛”），与“遮诠”相对' },
+    { char: '秖', pinyin: 'zhǐ', meaning: '古同“只”，仅仅、只管' },
+    { char: '阇黎', pinyin: 'shé lí', meaning: '阿阇梨简称，意为轨范师、教授师' },
+    { char: '水月道场', pinyin: 'shuǐ yuè dào chǎng', meaning: '比喻虽知一切道场如水中月幻化无实，仍大作佛事庄严修持' },
+    { char: '实相', pinyin: 'shí xiàng', meaning: '一切诸法真实不变之本体，离一切虚妄之相' },
   ],
 };
