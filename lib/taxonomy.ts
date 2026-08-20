@@ -1272,7 +1272,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
     "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
     "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
-    "relatedBooks": ["changuancejin", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": ["changuancejin", "huanwuxinyao", "huanwuyulu", "biyanlu"]
   },
   {
     "id": "luohouluo",
@@ -2238,7 +2238,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedMethods": [],
     "relatedPersons": ["yuanwu-keqin", "yunmen"],
-    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "biyanlu"]
   },
   {
     "id": "touzi-datong",
@@ -3762,7 +3762,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《碧岩录》《从容录》《无门关》",
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedPersons": ["yuanwu-keqin", "wansong-xingxiu", "fenyang-shanzhao"],
-    "relatedBooks": []
+    "relatedBooks": ["biyanlu"]
   },
   {
     "id": "mozhao-chan-concept",
@@ -5648,7 +5648,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "无门关",
     "relatedConcepts": ["koan", "ping-chang", "wu-men"],
     "relatedPersons": ["wumen-huikai", "yuanwu-keqin"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["wumenguan", "biyanlu"]
   },
   {
     "id": "ping-chang",
@@ -5661,7 +5661,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "无门关 · 碧岩录",
     "relatedConcepts": ["koan", "song-gu", "wu-men"],
     "relatedPersons": ["wumen-huikai", "yuanwu-keqin"],
-    "relatedBooks": ["wumenguan"]
+    "relatedBooks": ["wumenguan", "biyanlu"]
   },
   {
     "id": "jiaochan-yizhi",
@@ -6344,7 +6344,29 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["wanshan-tonggui", "lishi-wuai"],
     "relatedPersons": ["yongming-yanshou"],
     "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "zhuoyu",
+    "title": "着语",
+    "category": "禅宗概念",
+    "summary": "着语是圆悟克勤在《碧岩录》公案与颂古句下所作的夹注点评，或褒或贬、或擒或纵，随文点破机关，如“勘破了也”“错”“谢答话”等，是文字禅评唱体例中画龙点睛之笔。",
+    "classicRef": "biyanlu",
+    "relatedConcepts": ["ping-chang", "song-gu", "wenzi-chan"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "chuishi",
+    "title": "垂示",
+    "category": "禅宗概念",
+    "summary": "垂示是圆悟克勤在《碧岩录》每则公案之前所作的总纲提示，寥寥数语总提本则纲宗，如“隔山见烟，早知是火”，令学人未入公案先识家风光景，是碧岩录六重体例之首。",
+    "classicRef": "biyanlu",
+    "relatedConcepts": ["ping-chang", "song-gu", "zhuoyu"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["biyanlu"]
   }
+
+
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -7453,6 +7475,9 @@ export const ZEN_METHODS: MethodItem[] = [
   },
   {
     "id": "shizhong-fanzhao-fa",    "title": "十重反照法",    "summary": "依宗密迷悟十重图作观：先顺观凡夫十重之生起——从本觉真心如何一念不觉、念起见生、境现执实、人我对立、三毒造业、六道受报，观自己当下落第几重；再逆观悟修十重之翻破——从遇善知识、发心修行至色自在心自在、一念相应成佛。顺观知病根所在，逆观知出路所从。宗密嘱谛观此图：对勘自他，为同为异，我在何门，佛在何位——即自然不执著凡夫、不僭滥圣位。",    "origin": "《禅源诸诠集都序》卷下：宗密画迷悟十重图，朱画表净法，墨画表染法，令学者一时现于心镜。",    "steps": ["顺观：从本觉真心起，次第推究十重迷相如何展转生起", "勘位：反照自身，见色闻声时落在第几重——执实？分自他？起贪嗔？", "逆观：依悟后十重，从粗逆次翻破，先破我执次破法执", "对图自问：我在何门，佛在何位，为当别体，为复同源"],    "pitfalls": ["观图成知识讲谈，不对自身勘验则枉费", "见自己是凡夫而自弃，或妄计圣位而僭滥——图正治此二病", "执十重为实有次第，不知一即因该果海"],    "classicRef": "《禅源诸诠集都序》卷下",    "relatedConcepts": ["miwu-shizhong", "dunwu-jianxiu"],    "relatedPersons": ["guifeng-zongmi"],    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "songgu-canjiu",    "title": "颂古参究法",    "summary": "以雪窦颂古与圆悟评唱为所缘，通过研读公案本则、咀嚼颂古偈意、参详评唱着语，层层剥开公案机关，由文字入实相的参究方法。此法贵活句不贵死句，须因指见月，不死于句下。",    "origin": "《碧岩录》",    "steps": ["先读垂示，总提一则纲宗", "次读公案本则，直探古人行履", "细参圆悟着语，看其随文点破", "再读评唱，明其血脉出处", "终参颂古，借诗偈见玄关"],    "pitfalls": ["不可徒记言句以资谈柄——大慧焚版之诫", "不可死于句下作情解会", "不可执评唱为实法"],    "classicRef": "biyanlu",    "relatedConcepts": ["song-gu", "ping-chang", "zhuoyu", "chuishi"],    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],    "relatedBooks": ["biyanlu"]
   }
 ]
 ;
@@ -11059,7 +11084,91 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["chan-jing-shuangxiu", "wanshan-tonggui", "zhengzhu-jianxiu"],
     "relatedPersons": ["yongming-yanshou"],
     "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "koan-303",
+    "question": "廓然无圣（碧岩录第一则）",
+    "answer": "梁武帝问达摩“如何是圣谛第一义”，达摩云“廓然无圣”。帝曰“对朕者谁”，摩云“不识”。帝不契，达摩遂渡江至魏。圣谛荡荡，何圣凡之可言？武帝以有为功德求圣，达摩以无为真心扫之——廓然无圣，正是第一义的直答。",
+    "master": "达摩",
+    "source": "《碧岩录》第一则",
+    "relatedConcepts": ["beyond-words", "direct-pointing"],
+    "relatedPersons": ["bodhidharma"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-304",
+    "question": "麻三斤（碧岩录第十二则）",
+    "answer": "僧问洞山“如何是佛”，山云“麻三斤”。佛之一字，不可于言句上寻讨；洞山答处截断众流，麻三斤即佛、佛即麻三斤，直是难咬嚼、无尔下口处。若向句中觅，参到弥勒下生也未梦见在。",
+    "master": "洞山守初",
+    "source": "《碧岩录》第十二则",
+    "relatedConcepts": ["koan", "direct-pointing"],
+    "relatedPersons": ["dongshan-shouchu"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-305",
+    "question": "日日是好日（碧岩录第六则）",
+    "answer": "云门垂语“十五日已前不问汝，十五日已后道将一句来”，自代云“日日是好日”。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第六则",
+    "relatedConcepts": ["ordinary-mind", "present-moment"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-306",
+    "question": "对一说（碧岩录第十四则）",
+    "answer": "僧问云门“如何是一代时教”，门云“对一说”。一代时教千言万语，对着“一”说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个“一”上。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第十四则",
+    "relatedConcepts": ["one-dharma", "direct-pointing"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-307",
+    "question": "云门糊饼（碧岩录第七十七则）",
+    "answer": "僧问云门“如何是超佛越祖之谈”，门云“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第七十七则",
+    "relatedConcepts": ["ordinary-mind", "direct-pointing"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-308",
+    "question": "野鸭子（碧岩录第五十三则）",
+    "answer": "马祖与百丈行次见野鸭子飞过，祖云“是什么”，丈云“野鸭子”，祖云“什么处去也”，丈云“飞过去也”，祖遂扭百丈鼻头云“何曾飞去”。百丈于言下大悟——野鸭飞去是境，鼻头一扭处，境消心现，何曾飞去？",
+    "master": "马祖道一",
+    "source": "《碧岩录》第五十三则",
+    "relatedConcepts": ["self-nature", "direct-pointing"],
+    "relatedPersons": ["mazu-daoyi", "baizhang-huaihai"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-309",
+    "question": "犀牛扇子（碧岩录第九十一则）",
+    "answer": "盐官唤侍者“与我将犀牛扇子来”，侍者云“扇子破也”，官云“扇子既破还我犀牛儿来”，侍者无对。扇子破是事，犀牛儿是理——破的是物，不晦的是那个。盐官以破扇子逼出学人本分田地。",
+    "master": "盐官齐安",
+    "source": "《碧岩录》第九十一则",
+    "relatedConcepts": ["self-nature", "koan"],
+    "relatedPersons": ["yanguan-qian"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-310",
+    "question": "好雪片片（碧岩录第四十二则）",
+    "answer": "庞居士辞药山，山命十人禅客相送，居士指空中雪云“好雪片片不落别处”。时有全禅客云“落在什么处”，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问“落在什么处”，早已落别处了也。",
+    "master": "庞蕴居士",
+    "source": "《碧岩录》第四十二则",
+    "relatedConcepts": ["present-moment", "self-nature"],
+    "relatedPersons": ["pang-yun"],
+    "relatedBooks": ["biyanlu"]
   }
+
+
+
+
 
 ];
 
@@ -22513,4 +22622,138 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "它的发决定志、起大疑情、以悟为则，对现代人同样适用：做事贵专一，修行贵真切。把参话头的专注精神用在当下所行，把生死心切转化为不放逸的日常，都是古今相通的结合点。",
     "relatedBooks": ["changuancejin"]
   },
+  {
+    id: 'faq-2005',
+    question: '《碧岩录》为什么被称为“宗门第一书”？',
+    answer: '《碧岩录》以百则公案为纲，通过垂示、着语、评唱、颂古层层发明，把公案的机关、血脉、照用彻底抉发，文字之美与勘验之精并臻极致。它集宋代文字禅之大成，是公案文学与机锋勘验的至高巅峰，故被尊为“宗门第一书”。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2006',
+    question: '《碧岩录》的六重体例是什么？',
+    answer: '每则完整包含六层：一垂示（圆悟总提本则纲宗）；二本则公案（雪窦所选古德机缘）；三本则着语（圆悟随文夹注，或褒或贬）；四本则评唱（圆悟详解公案出处血脉）；五颂古（雪窦以诗偈颂出公案玄关）；六颂古着语与评唱（圆悟再就颂古发明）。层层递进，如剥蕉抽茧。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2007',
+    question: '什么是“垂示”？',
+    answer: '垂示是圆悟在每则公案前所作的总纲提示，寥寥数语总提本则纲宗，如第一则“隔山见烟，早知是火；隔墙见角，便知是牛”，令学人未入公案先识家风光景。垂示是读公案的入门钥匙。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2008',
+    question: '什么是“着语”？',
+    answer: '着语是圆悟在公案与颂古句下所作的夹注点评，多为一二字短语，如“勘破了也”“错”“谢答话”“放过”等。它是评唱者随文点破的勘验之语，或褒或贬、或擒或纵，画龙点睛。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2009',
+    question: '什么是“颂古”？',
+    answer: '颂古是雪窦重显以诗偈颂出公案玄关的文学形式，以诗写禅、含蓄深隐，用典繁多、意象跳跃。如第一则“圣谛廓然，何当辨的”，须配合圆悟的颂评唱方能得其旨归。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2010',
+    question: '什么是“评唱”？',
+    answer: '评唱是圆悟对公案与颂古所作的详细讲解发明，雄辨纵横、文采斐然。它抉发公案的机关、血脉与落处，使学人知恩解义。评唱是《碧岩录》的主体，也是其最易令人沉迷处。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2011',
+    question: '为什么大慧宗杲要焚毁《碧岩录》刻板？',
+    answer: '圆悟的弟子大慧宗杲见学人竞记《碧岩录》言句、流于知解，愤而焚毁刻板，以矫“死于句下”之弊。这不是否定此书价值，而是提醒：公案是用来悟的，不是用来背的——因指见月，不可执指为月。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2012',
+    question: '“廓然无圣”是什么意思？',
+    answer: '达摩答梁武帝“如何是圣谛第一义”云“廓然无圣”——一切功德、圣凡、名相全都扫荡干净，荡荡然没有任何“圣”可执着。武帝求的是有为功德，达摩示的是无为真心，正是第一义的直答。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2013',
+    question: '“日日是好日”怎么理解？',
+    answer: '云门答“十五日已后道将一句来”云“日日是好日”。不是挑个好日子才叫好日——悟了之后，行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2014',
+    question: '“麻三斤”如何是佛？',
+    answer: '洞山答“如何是佛”云“麻三斤”。佛之一字不可于言句上寻讨，洞山答处截断众流，麻三斤即佛、佛即麻三斤。若向句中觅佛，参到弥勒下生也未梦见在。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2015',
+    question: '“对一说”与“倒一说”有何区别？',
+    answer: '“对一说”（第14则）是云门答“如何是一代时教”——对着“一”说，万法归一；“倒一说”（第15则）是答“不是目前机亦非目前事时如何”——倒转一说，不落言诠。二者皆云门截断众流之句，一顺一逆，皆归向上。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2016',
+    question: '“无缝塔”是什么？',
+    answer: '忠国师答肃宗“百年后所须何物”云“与老僧作个无缝塔”。无缝塔者，无门无窗、无内无外，喻法身无相、全体圆成——本自现成，何须更造？耽源偈“湘之南潭之北”，正是指此。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2017',
+    question: '“好雪片片不落别处”落在何处？',
+    answer: '庞居士指空中雪云“好雪片片不落别处”。片片好雪正落当人自己，不离当下。全禅客一问“落在什么处”，早已落别处了——此一问即是头上安头，故居士打他一掌。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2018',
+    question: '“野鸭子”公案中马祖为什么扭百丈鼻头？',
+    answer: '百丈答“野鸭子飞过去也”，是随境流转、心在物上。马祖扭其鼻头云“何曾飞去”——境虽生灭，见性何尝飞去？一扭之下，百丈悟得能所双亡，野鸭飞去是境，见性不随境迁。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2019',
+    question: '“犀牛扇子”公案的机关在哪里？',
+    answer: '盐官唤侍者“将犀牛扇子来”，侍者云“扇子破也”，官云“还我犀牛儿来”。扇子破是事，犀牛儿是理——破的是物，不晦的是那个本分田地。侍者无对，正是被事瞒却，不见理。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2020',
+    question: '“糊饼”为什么是超佛越祖之谈？',
+    answer: '僧问“超佛越祖之谈”，云门答“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2021',
+    question: '读《碧岩录》应该注意什么？',
+    answer: '切忌死于句下：此书文字太美太密，最易令人徒记言句以资谈柄。读法当以悟为期——先读垂示与公案本则，直探古人行履；再参着语评唱，明其血脉出处；终参颂古，借诗偈见玄关。不可作情解会，须因指见月。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2022',
+    question: '《碧岩录》与《从容录》有何异同？',
+    answer: '《碧岩录》是临济宗圆悟克勤评唱，《从容录》是曹洞宗万松行秀评唱，并称“禅门双璧”。《碧岩录》峻烈纵横、如金刚王宝剑；《从容录》绵密稳顺、如轻轻点拨。一临济一曹洞，宗风不同而公案同归。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2023',
+    question: '“杀人刀活人剑”是什么意思？',
+    answer: '圆悟垂示云“杀人刀，活人剑”——宗师手段有两面：杀人刀斩断学人的情识执着，活人剑救活其慧命灵性。杀与活不在言语，全在当机：该杀时不伤一毫，该活时丧身失命。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2024',
+    question: '为什么说“古人到这里为什么不肯住”？',
+    answer: '莲花峰庵主拈拄杖示众云“古人到这里为什么不肯住”，自代云“为他途路不得力”“楖栗横担不顾人，直入千峰万峰去”。悟道者不住于悟，更不向千峰万峰里藏身——转身一路，才见自在。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2025',
+    question: '“并却咽喉唇吻，作么生道”三答有何高下？',
+    answer: '百丈此问，沩山答“却请和尚道”是把定封疆，五峰答“和尚也须并却”是截断众流，云岩答“和尚有也未”是触破窠臼。圆悟评：沩山把定封疆，五峰截断众流，云岩丧我儿孙——三答各有千秋，皆见作家手段。',
+    relatedBooks: ['biyanlu']
+  },
+  {
+    id: 'faq-2026',
+    question: '雪窦重显与圆悟克勤在《碧岩录》中各起什么作用？',
+    answer: '雪窦重显（云门宗）选百则公案并作颂古，以诗偈颂出公案玄关；圆悟克勤（临济宗杨岐派）加垂示、着语、评唱，层层发明使颂意昭然。一选一颂一评，云门之含蓄与临济之纵横合于一书，遂成文字禅巅峰。',
+    relatedBooks: ['biyanlu']
+  }
+
+,
 ];
