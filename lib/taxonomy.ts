@@ -11075,6 +11075,544 @@ export interface FAQItem {
 export const ZEN_FAQS: FAQItem[] = [
 
   {
+    "id": "faq-1466",
+    "question": "圜悟克勤如何看直指人心？",
+    "answer": "圜悟说：祖师西来唯直指人心，不在言语句上作解会。人人本具清净妙明真心，只须当下承当，不从他得。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1467",
+    "question": "什么是金刚正体？",
+    "answer": "金刚正体即本心佛性：本无名相，非言句所能拟议。众生迷真逐妄，故祖师曲垂方便令其识取本来面目。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1468",
+    "question": "圜悟如何教人参话头？",
+    "answer": "圜悟说看话头做工夫：只将所参话头蕴之于怀，行也如是参坐也如是参，参到用力不及处、留意不得时，蓦忽打脱方知成佛。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1469",
+    "question": "什么是忘情绝照？",
+    "answer": "忘情绝照是圜悟修行要径：将从前知见解路倒底放下，如枯木死灰，到一念不生处，蓦然桶底子脱契证本光。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1470",
+    "question": "什么是长养圣胎？",
+    "answer": "悟后须绵密保任：如曹山说经蛊毒之乡水也不得沾他一滴。令悟境不退，习气渐除，长养圣胎至于纯熟。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1471",
+    "question": "什么是打成一片？",
+    "answer": "打成一片是悟后功夫纯熟：世法佛法融通无碍，二六时中纯一无杂，行住坐卧左右逢源，法界与身心无二。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1472",
+    "question": "什么是无心道人？",
+    "answer": "无心道人即究竟境界：百不知百不会，等闲荡荡地，饥来吃饭困来睡，如痴似兀，方为真实到家。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1473",
+    "question": "圜悟如何看碧岩录？",
+    "answer": "碧岩录是圜悟评唱雪窦颂古之作：以颂古为镜，评唱公案，开文字禅之先河，与幻惑心要并为圜悟代表作。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1474",
+    "question": "什么是圜悟的竹篦子话？",
+    "answer": "圜悟以竹篦子勘验学人：唤作竹篦则触，不唤作竹篦则背。学人于此转身不得处，方见本分。大慧即于此悟入。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1475",
+    "question": "什么是圜悟的栗棘蓬金刚圈？",
+    "answer": "圜悟承杨岐家风，以栗棘蓬金刚圈为接人手段：如栗棘蓬吞不下吐不出，如金刚圈跳不出挣不脱，逼令学人绝思量处见性。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1476",
+    "question": "圜悟如何看默照？",
+    "answer": "圜悟不废静坐但反对死坐：参禅须活泼起疑，若一味默照沉空守寂，便堕鬼窟活计。然静坐观心亦是方便。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1477",
+    "question": "什么是圜悟的透顶透底？",
+    "answer": "透顶透底是圜悟所倡的悟境：彻骨彻髓，从上以来宗乘事，全体现前，无有纤毫隔碍，方为究竟。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1478",
+    "question": "圜悟如何看生死？",
+    "answer": "圜悟说生死事大：无常迅速，若不真参实究，纵有解会皆不济事。须以生死心切，勇猛精进，以悟为期。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1479",
+    "question": "什么是圜悟的三昧？",
+    "answer": "圜悟说真三昧是念念相应：于一切时中，行住坐卧皆是三昧，动静一如，不假修持而常在大定。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1480",
+    "question": "圜悟如何接引学人？",
+    "answer": "圜悟接人多以本分事：或举公案，或示话头，或棒喝，或直指，随根机施设，务令学人直下承当。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1481",
+    "question": "什么是圜悟的本地风光？",
+    "answer": "本地风光即本分事：从本以来现成，不假外求。一切施为皆是本地风光，只须回光返照当下即是。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1482",
+    "question": "圜悟如何看经教？",
+    "answer": "圜悟不废经教：经论是佛祖语，可印证心地。然不得执文解义，须以悟印证，文字与禅不二。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1483",
+    "question": "什么是圜悟的赵州茶？",
+    "answer": "圜悟常举赵州吃茶去公案：吃茶去三字，当下即是，不假言说。日用平常处即是道。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1484",
+    "question": "圜悟与五祖法演的关系？",
+    "answer": "圜悟是五祖法演弟子：法演以铁酸馅等话头锻炼，圜悟于法演会下十年无异缘，后大彻大悟，得法演印可。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1485",
+    "question": "什么是圜悟的十方同聚会？",
+    "answer": "圜悟说十方同聚会皆学无为法：大众同聚丛林，唯以参究本分为务，不涉外求，方名学无为法。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1486",
+    "question": "圜悟如何看参禅与世法？",
+    "answer": "圜悟说世法即佛法：二六时中一切施为皆是道用，不须离世求道，只须于一切处无心合道。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1487",
+    "question": "圜悟语录对日本禅的影响？",
+    "answer": "圜悟语录（幻惑心要）传入日本，为日本禅宗所重。大慧看话禅亦承圜悟，影响东亚禅宗。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1488",
+    "question": "如何学幻惑心要？",
+    "answer": "先明直指人心之旨，次发疑情以悟为期，悟后长养保任打成一片，终成无心无为之道人。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+
+  {
+    "id": "faq-1440",
+    "question": "禅林宝训为什么叫宝训？",
+    "answer": "宝训即宝贵之训诫。此书汇集历代禅师德行言教，作为丛林学人修行与住持的准则，如宝可珍，故称宝训。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1441",
+    "question": "禅林宝训是谁编的？",
+    "answer": "禅林宝训为宋代净善禅师重编。原书由大慧宗杲门人记录历代祖师嘉言，净善重加编次，成三百余条。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1442",
+    "question": "明教契嵩说什么是至美？",
+    "answer": "契嵩说：天下至尊至美者莫过于道与德。道德所在之人虽为匹夫亦足以化人。道与德是丛林乃至天下的根本。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1443",
+    "question": "黄龙慧南如何看住持？",
+    "answer": "黄龙说：住持要在得众，得众要在见情。又说：端居丈室，以本分事接方来人，乃长老之职，其余细事付之知事。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1444",
+    "question": "什么是住持三要？",
+    "answer": "浮山远说住持有三要：仁、明、勇。仁者行道德兴教化，明者识安危辨贤愚，勇者断不疑除奸佞。三者备则丛林兴。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1445",
+    "question": "五祖法演说惠与德的关系？",
+    "answer": "法演说：住持大柄在惠与德，二者兼行废一不可。惠而罔德则人不敬，德而罔惠则人不怀。惠德相济方为善住持。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1446",
+    "question": "什么是禅林宝训的上下观？",
+    "answer": "远公说：住持居上当谦恭以接下，执事在下要尽情以奉上。上下既和则住持之道通，上下不和则道塞。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1447",
+    "question": "湛堂说什么是治心？",
+    "answer": "湛堂说：所谓学者求治心也，学虽多而心不治，纵学而奚益。学者当以治心为本，非徒博学。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1448",
+    "question": "什么是居必择处游必就士？",
+    "answer": "湛堂说：学者居必择处，游必就士，遂能绝邪僻近中正闻正言。如虻附骥尾则有追风逐日之能。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1449",
+    "question": "灵源说祸福如何相生？",
+    "answer": "灵源说：祸能生福，福能生祸。处灾危则思安求理而生福，居安泰则纵欲骄怠而生祸。安不忘危，理不忘乱。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1450",
+    "question": "什么是言行枢机？",
+    "answer": "白云说：可言不可行不若勿言，可行不可言不若勿行。发言必虑其所终，立行必稽其所蔽。言行为君子枢机。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1451",
+    "question": "圆悟说诚信有多重要？",
+    "answer": "圆悟说：学道存乎信，立信在乎诚。衣食可去，诚信不可失。诚信为立身传道之本，善知识当教人以诚信。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1452",
+    "question": "什么是禅林宝训的学者观？",
+    "answer": "宝训说学者当：求治心、亲师友、笃行履、慎言行、勤精进。学多而心不治是弃本逐末。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1453",
+    "question": "佛鉴说长老要一物无所好吗？",
+    "answer": "佛鉴说：凡称长老要须一物无所好，一有所好则被外物贼矣。好嗜欲则贪爱生，好利养则奔竞起。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1454",
+    "question": "什么是禅林宝训的报恩观？",
+    "answer": "宝训强调报四恩：报佛恩、报法恩、报师恩、报众生恩。以弘法利生为报恩，非徒口说。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1455",
+    "question": "死心悟新如何看因果？",
+    "answer": "死心说：劳生如梦幻，因果不昧。虽修禅定，因果昭然，不可拨无因果。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1456",
+    "question": "什么是克己惠物？",
+    "answer": "大觉说：为一方主者先须克己惠物，下心于一切，然后视金帛如粪土，则四众尊而归之矣。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1457",
+    "question": "禅林宝训讲谦恭吗？",
+    "answer": "讲。宝训多处强调谦恭：舜老夫赋性简直，日有定课；浮山说住持当谦恭接下。谦恭是住持与学者共德。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1458",
+    "question": "什么是禅林宝训的精进观？",
+    "answer": "宝训以诸祖苦功励人：道安独坐十二年、慈明引锥自刺、伊庵晚必涕泣，皆示精进不辍、痛念生死。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1459",
+    "question": "云居舜如何看节义？",
+    "answer": "舜老夫说：玉贵洁润故丹紫莫能渝其质，松表岁寒故霜雪莫能凋其操。节义为天下之大，学者当自励。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1460",
+    "question": "什么是禅林宝训的用人观？",
+    "answer": "宝训说：量才能请执事，察言行定可否，乃求贤之实。用人之际必慎择委任，令不败事始得。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1461",
+    "question": "真净如何看服饰？",
+    "answer": "真净见舒王斋衬素缣，指所衣布伽黎说：我寻常披此，见者亦不甚嫌恶。即令送库司估卖供众。不事服饰。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1462",
+    "question": "什么是禅林宝训的遗风？",
+    "answer": "宝训保存宋代丛林遗风：住持德行、学者操履、丛林规矩，为后世丛林教育之典范，至今仍有借鉴意义。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1463",
+    "question": "禅林宝训如何看名利？",
+    "answer": "宝训多处诫名利：学道不求名闻利养，唯务透脱生死。得少为足、慕名求利皆是道之障。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1464",
+    "question": "什么是禅林宝训的报怨观？",
+    "answer": "宝训说遇谤毁讪辱，退步自照于己无歉，一切勿与较量，久久魔孽自消。以忍辱对治怨害。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1465",
+    "question": "禅林宝训的住持择人？",
+    "answer": "浮山说智愚贤不肖如水火不同器：禅林得贤者道德修纲纪立，厕一不肖者则搅群乱众。择人不可不慎。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+
+  {
+    "id": "faq-1420",
+    "question": "什么是赵州无字话头？",
+    "answer": "大慧极推赵州狗子无佛性话头：赵州被问狗子还有佛性也无，答无。大慧说参此无字，不得作有无会，只须疑着，久久自然悟入。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1421",
+    "question": "大慧如何看参禅与静坐？",
+    "answer": "大慧说参禅不在静坐：行住坐卧皆可参，只须话头绵绵不断。若执着静坐，反成障碍。但静坐亦是助缘，不必偏废。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1422",
+    "question": "什么是大慧的三段？",
+    "answer": "大慧说参禅有三段：始则提起话头，次则疑情成片，末则疑破见性。三段功夫须绵密相续，不可间断。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1423",
+    "question": "大慧如何对治昏沉散乱？",
+    "answer": "大慧说：话头在则昏沉自去，疑情起则散乱自消。若昏沉则提起精神，若散乱则收回话头，总以一念提撕。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1424",
+    "question": "什么是大慧的转身？",
+    "answer": "大慧说参到极处须转身：疑情打成一片，忽然迸开，如桶底脱，山河大地焕然一新，方是真转身。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1425",
+    "question": "大慧如何看待开悟？",
+    "answer": "大慧说开悟不是另外得个什么：只是识取本有真心，如亲到家乡。悟后更须保任，不可得少为足。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1426",
+    "question": "什么是大慧的入泥入水？",
+    "answer": "大慧说菩萨入泥入水度众生：虽悟而回入尘劳，随缘接物，不居圣位。看话禅悟后亦须回入世间。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1427",
+    "question": "大慧如何看语言文字？",
+    "answer": "大慧说：参话头不在语言文字，然亦不离语言文字。以话头为敲门瓦子，透过即舍，不可执守。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1428",
+    "question": "什么是大慧的干屎橛？",
+    "answer": "大慧引云门干屎橛公案示人：如何是佛，干屎橛。截断对佛的执著，直下见本心。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1429",
+    "question": "大慧如何看自心即佛？",
+    "answer": "大慧说：即心即佛，心外无佛。但不可口头说了便休，须真参实究，亲证方知。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1430",
+    "question": "什么是大慧的香严击竹？",
+    "answer": "大慧常举香严击竹悟道公案：香严闻击竹声而悟，一击忘所知。示人于当下闻声处见性。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1431",
+    "question": "大慧如何看庞蕴？",
+    "answer": "大慧常举庞蕴居士：庞公说但愿空诸所有，慎勿实诸所无。以居士身示在家修行之要。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1432",
+    "question": "什么是大慧的坐断？",
+    "answer": "大慧说参禅须坐断：一念坐断，更不回头，只向话头上穷究，如断崖千尺，不容拟议。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1433",
+    "question": "大慧如何看经论？",
+    "answer": "大慧说不废经论：经论是佛祖语，参究是自家行。以经印证，以悟为则，理事并进。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1434",
+    "question": "什么是大慧的三教？",
+    "answer": "大慧说三教皆归于心：儒以仁义，道以自然，佛以觉性，其本一心。然禅宗直指最为痛快。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1435",
+    "question": "大慧如何对治魔境？",
+    "answer": "大慧说修行中见光见佛等境，不作圣解即无碍；若作圣解即受群邪。但提话头，一切境界自消。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1436",
+    "question": "什么是大慧的普说？",
+    "answer": "普说是大慧上堂为大众开示的形式，其普说语录生动活泼，直指人心，是看话禅教学的重要资料。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1437",
+    "question": "大慧与秦桧的因缘？",
+    "answer": "大慧因与张九成等主战派交好，被秦桧流放衡州、梅州，仍弘法不辍，后遇赦归径山，声望愈隆。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1438",
+    "question": "什么是大慧的圆悟传承？",
+    "answer": "大慧得法于圆悟克勤：圆悟以竹篦子话勘验，大慧屡答不契，后于圆悟举佛果语下大悟，得印证。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1439",
+    "question": "大慧语录对现代修行的启示？",
+    "answer": "大慧看话禅以参话头对治妄念，适合现代人：以一则话头摄心，于日用中绵绵参究，不假外求，是切实可行的禅修方法。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+
+  {
+    "id": "faq-1400",
+    "question": "大慧宗杲是谁？",
+    "answer": "大慧宗杲（1089-1163），宋代禅宗大师，圆悟克勤弟子，临济宗杨岐派祖师。创立看话禅（参话头）法门，提倡以悟为则，对禅宗影响深远。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1401",
+    "question": "什么是看话禅？",
+    "answer": "看话禅是大慧宗杲创立的参禅法门：将一则古德公案（如赵州狗子无佛性）作为话头，发起疑情，行住坐卧绵绵参究，不求解会，直至疑情迸开见性。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1402",
+    "question": "大慧为什么要创看话禅？",
+    "answer": "大慧针对当时禅门默照禅（静坐观心）之弊，提倡参话头起疑情，以活泼的参究代替枯坐，令学人于疑情中真参实究，以悟为期。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1403",
+    "question": "什么是狗子无佛性话头？",
+    "answer": "大慧极力提倡参赵州狗子无佛性话头：只参一个无字，昼参夜参，行住坐卧提撕，如咬铁橛，疑情成片，时节若至自然迸开。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1404",
+    "question": "大慧如何批评默照禅？",
+    "answer": "大慧批评默照禅：以昭昭灵灵为极则，坐在无事甲里，如枯木死灰，唤作鬼窟活计。参禅须起疑情，不可沉空守寂。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1405",
+    "question": "什么是以悟为则？",
+    "answer": "以悟为则是大慧的修行原则：参禅以开悟为最终目的，不悟不休。所谓不得悟则不休，唯以悟为期。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1406",
+    "question": "大慧如何看待看经？",
+    "answer": "大慧认为看经是助道因缘，但不可执文解义代替实参。须于经教发明心地，又以悟印证经义。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1407",
+    "question": "什么是疑情？",
+    "answer": "疑情是看话禅的关键：对话头生起疑情，如撞着银山铁壁，放亦不下趁亦不去。疑情成片即是工夫得力，疑破即是悟。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1408",
+    "question": "大慧如何看无字话头？",
+    "answer": "大慧说参无字：只于无字上起疑，不落有无，不得作无字会，不得作有无会。只是疑着，久久自然相应。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1409",
+    "question": "什么是大慧的棒喝？",
+    "answer": "大慧接人亦用棒喝：有时一喝一棒截断学人思量，令其于当下了悟。但棒喝是方便，根本在令其起疑参究。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1410",
+    "question": "大慧与默照禅的争论？",
+    "answer": "大慧（看话）与宏智正觉（默照）的争论是禅宗著名公案：大慧主参话头起疑，宏智主静坐观照，二家各有所长，后互相融合。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1411",
+    "question": "什么是禅病？",
+    "answer": "大慧说禅病：认光影为悟、得少为足、沉空守寂、执理废事等皆是禅病。须以悟印证，不为境界所惑。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1412",
+    "question": "大慧如何看生死？",
+    "answer": "大慧说生死事大：无常迅速，一口气不来便是隔生。参禅为脱生死，须以生死心切为动力，真参实究。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1413",
+    "question": "什么是大慧的妙喜世界？",
+    "answer": "大慧晚年住径山妙喜庵，自称妙喜，故又称径山宗杲、妙喜老人。其语录称大慧普觉禅师语录。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1414",
+    "question": "大慧语录是谁编的？",
+    "answer": "大慧语录由其弟子蕴闻等编集，收录大慧上堂、示众、书问、颂古等，是看话禅的重要文献。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1415",
+    "question": "大慧如何接引居士？",
+    "answer": "大慧与张九成等士大夫交往甚密，以书信开示参禅要旨，有大量答居士问，是禅宗居士佛教的重要推动者。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1416",
+    "question": "什么是大慧的看话头要诀？",
+    "answer": "要诀是：一、信得及（信自心即佛）；二、疑情起（于话头起大疑）；三、绵密提（行住坐卧不断）；四、不求解（不于意识卜度）；五、以悟为则（不悟不休）。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1417",
+    "question": "大慧如何看待悟后保任？",
+    "answer": "大慧说悟后仍须保任：悟只是见地，习气未尽，须绵密用功，长养圣胎，令悟境与日用打成一片。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1418",
+    "question": "大慧语录的影响？",
+    "answer": "大慧语录确立看话禅法门，影响宋以后禅宗主流，看话禅成为禅宗最普遍的修行方法，远及日本韩国。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+  {
+    "id": "faq-1419",
+    "question": "如何参究大慧语录？",
+    "answer": "先明看话禅要旨，选一则话头（如无字）提起参究，于日用中绵绵不断，发大疑情，以悟为期。",
+    "relatedBooks": ["dahuiyulu"]
+  },
+
+  {
     "id": "faq-1323",
     "question": "维摩诘经是什么经？",
     "answer": "维摩诘所说经，鸠摩罗什译，述维摩诘居士以在家身示现大乘妙理，是居士佛教的代表经典，含十四品。",
