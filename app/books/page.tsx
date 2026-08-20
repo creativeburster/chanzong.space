@@ -74,9 +74,16 @@ export default function BooksPage() {
                     <span className="text-xs text-slate-500 font-mono">#{item.idx}</span>
                   </div>
 
-                  <h3 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
-                    {item.title}
-                  </h3>
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
+                      {item.title}
+                    </h3>
+                    {(item as any).translation_note && (
+                      <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300/60 whitespace-nowrap shrink-0">
+                        精选译
+                      </span>
+                    )}
+                  </div>
 
                   <p className="text-[13px] text-slate-500 mb-3">
                     作者：{item.author}

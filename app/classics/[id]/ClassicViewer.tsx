@@ -79,6 +79,11 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                 <p className="mt-2 text-xs text-zinc-500 font-bold">
                   {t('作者')}：{t(meta.author)} · {t('出处：《正法心传》')} · {Math.round(meta.word_count / 1000 * 10) / 10}k {t('字')}
                 </p>
+                {(meta as any).translation_note && (
+                  <p className="mt-2 inline-flex items-center text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-amber-100/80 text-amber-900 border border-amber-300/60">
+                    📖 {(meta as any).translation_note}
+                  </p>
+                )}
               </div>
 
               {/* Toolbar Controls */}
