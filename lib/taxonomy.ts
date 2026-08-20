@@ -11073,6 +11073,1793 @@ export interface FAQItem {
 
 /* ---- AI 阅读理解 FAQ：围绕公案与经典的常见疑问与义理辨析 ---- */
 export const ZEN_FAQS: FAQItem[] = [
+
+  {
+    "id": "faq-1186",
+    "question": "禅源诸诠集都序是谁写的？",
+    "answer": "禅源诸诠集都序是唐代圭峰宗密禅师所作，为其所编禅源诸诠集写的总序，阐述禅教一致、三宗三教相配的思想。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1187",
+    "question": "宗密是谁？",
+    "answer": "宗密（780-841），唐代华严宗五祖兼禅宗荷泽系传人，圭峰山沙门。主张禅教一致，会通华严与禅。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1188",
+    "question": "什么是禅三宗？",
+    "answer": "禅三宗：息妄修心宗、泯绝无寄宗、直显心性宗。宗密以此三宗判摄禅门诸派。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1189",
+    "question": "什么是教三种？",
+    "answer": "教三种：密意依性说相教、密意破相显性教、显示真心即性教。宗密以此三教配禅三宗。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1190",
+    "question": "什么是十所以？",
+    "answer": "十所以是宗密论证禅须依经论的十个理由：师有本末、禅有诸宗、经如绳墨、经有权实、量有三种、疑有多般、法义不同、心通性相、悟修顿渐、师资传授。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1191",
+    "question": "什么是八不中道与禅源？",
+    "answer": "宗密以禅源即本觉真性：此性是禅之本源，亦名佛性，亦名心地。源即一切众生本觉真性。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1192",
+    "question": "宗密如何看顿渐？",
+    "answer": "宗密说顿渐非唯不相乖反，而乃互相资也。顿悟资于渐修，证师说符于佛意。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1193",
+    "question": "什么是知之一字众妙之门？",
+    "answer": "宗密引荷泽神会：知之一字，众妙之门。空寂之知是汝真性，此知即本觉灵知。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1194",
+    "question": "宗密如何看禅教关系？",
+    "answer": "宗密主张禅教一致：经是佛语，禅是佛意，诸佛心口必不相违。以教照心，以心解教。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1195",
+    "question": "什么是禅源诸诠集？",
+    "answer": "禅源诸诠集是宗密编录诸家禅语而成的集子，都序为其总纲，原集已佚，独存此序。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1196",
+    "question": "宗密如何判摄诸宗？",
+    "answer": "宗密以三宗三教相配：息妄修心对密意依性说相，泯绝无寄对密意破相显性，直显心性对显示真心即性。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1197",
+    "question": "什么是妄识空妄念？",
+    "answer": "宗密论真妄和合：依妄识空妄念而有差别，若离妄念则无境界差别之相，直见真心。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1198",
+    "question": "禅源诸诠集都序的意义？",
+    "answer": "此序是禅教一致思想的重要文献，影响后世三教融合思想，为华严禅之代表作。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1199",
+    "question": "宗密如何看心性？",
+    "answer": "宗密说：心性本净，被无明覆盖。真如不变随缘，随缘不变。四种心中唯坚实心是真心。",
+    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "faq-1200",
+    "question": "无染觉性是什么？",
+    "answer": "无染觉性即莲花生大士开示的直指心性教言，阐述本觉无染、本来清净，直观自行解脱之道。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1201",
+    "question": "什么是觉性？",
+    "answer": "觉性即本觉心性，本来清净无染，空明不灭，处处显现无碍。是一切众生本具的明觉。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1202",
+    "question": "无染觉性讲无修之修吗？",
+    "answer": "讲。此法既无前行也无续修，不是不修，而是不以造作心去修本自圆满的觉性。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1203",
+    "question": "什么是本觉三要点？",
+    "answer": "清除过去之念不留纤毫痕迹；向未来之念开放不受他境所染；安住当下心境不修整造作。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1204",
+    "question": "什么是三身圆满？",
+    "answer": "在本觉内法报化三身圆满如一：因它不生及空性是法身，因空性圆具是报身，因能显现是化身。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1205",
+    "question": "如何理解自性如虚空？",
+    "answer": "自性本空，无实无根，如虚空。但虚空非顽空，觉性光明遍在，如日光照耀。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1206",
+    "question": "无染觉性如何看烦恼？",
+    "answer": "觉性本来无染，烦恼如水上画图，随画随消，从未真正污染觉性。念起即觉，觉已即空。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1207",
+    "question": "什么是直观自行解脱？",
+    "answer": "无染觉性直观自行解脱：无思无念观照自我，唯见明空之境，并无观者存在，当下只是纯粹觉照。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1208",
+    "question": "无染觉性讲轮回吗？",
+    "answer": "讲。不觉自心则轮回流转六道三界受尽诸苦；觉性本来无染，直观自行解脱。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1209",
+    "question": "如何修无染觉性？",
+    "answer": "安住当下心境不修整造作，观念头自生自灭，觉性本自解脱，无须造作对治。",
+    "relatedBooks": ["wuran"]
+  },
+  {
+    "id": "faq-1210",
+    "question": "安心法门是什么？",
+    "answer": "安心法门相传为禅宗四祖道信所说，阐述入道安心的修行方便，是早期禅宗重要文献。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1211",
+    "question": "道信是谁？",
+    "answer": "道信（580-651），禅宗四祖，得法于僧璨，住黄梅双峰山，传法于弘忍。提倡一行三昧、守一不移。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1212",
+    "question": "什么是守一不移？",
+    "answer": "守一不移是道信提倡的修行法：以此空净眼注意看一物，无间昼夜专精常不动。其心欲驰散，急手还摄来。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1213",
+    "question": "什么是一行三昧？",
+    "answer": "一行三昧：念佛心是佛，妄念是凡夫。于一切处行住坐卧常行一直心，即一行三昧。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1214",
+    "question": "道信如何看念佛？",
+    "answer": "道信引文殊般若经：系心一佛专称名字，随佛方所端身正向，即是一行三昧。念佛即念心。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1215",
+    "question": "什么是实相忏悔？",
+    "answer": "道信说：一切业障海皆从妄想生，若欲忏悔者端坐念实相。实相忏悔是观罪性本空。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1216",
+    "question": "道信如何看身与心？",
+    "answer": "道信说：心者万法之根本，一切诸法唯心所生。观身空寂如影，观心明净如镜。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1217",
+    "question": "什么是四种人？",
+    "answer": "道信说学者有四种人：有行有解有证上上人，无行有解有证中上人，有行有解无证中下人，有行无解无证下下人。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1218",
+    "question": "道信如何看西方？",
+    "answer": "道信说：若知心本来不生不灭究竟清净，即是净佛国土，更不须向西方。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1219",
+    "question": "安心法门的意义？",
+    "answer": "安心法门承达摩二入四行，开东山法门之先，是禅宗由印度禅转向中国禅的关键文献。",
+    "relatedBooks": ["anxin"]
+  },
+  {
+    "id": "faq-1220",
+    "question": "传心法要是谁说的？",
+    "answer": "传心法要是唐代黄檗希运禅师所说，裴休编录，阐述即心即佛、无心是道的禅法。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1221",
+    "question": "黄檗传心法要的核心？",
+    "answer": "核心是即心是佛，无心是道。黄檗说：此心即是佛，更无别佛，亦无别心。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1222",
+    "question": "什么是无心？",
+    "answer": "无心不是无念，而是无一切执著之心。黄檗说：但学无心，顿息诸缘，莫生妄想分别。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1223",
+    "question": "黄檗如何看佛性？",
+    "answer": "黄檗说：佛与众生一心无异，犹如虚空无杂无坏。众生迷故有佛有众生，悟则本无二。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1224",
+    "question": "什么是黄檗的一念不生？",
+    "answer": "黄檗说：一念不生即如如佛。又说：前念不生即心，后念不灭即佛。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1225",
+    "question": "黄檗如何看修行？",
+    "answer": "黄檗说：学道人若欲得知要诀，但莫于心上着一物。心无挂碍，自然合道。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1226",
+    "question": "什么是黄檗的棒喝？",
+    "answer": "黄檗接引临济，三度问佛法大意三度棒打。棒下断妄想，令其直下承当。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1227",
+    "question": "传心法要的影响？",
+    "answer": "传心法要直指人心，影响临济宗形成。黄檗门风峻烈，为临济棒喝之先声。",
+    "relatedBooks": ["huangbo"]
+  },
+  {
+    "id": "faq-1228",
+    "question": "文殊说般若经是什么经？",
+    "answer": "文殊师利所说摩诃般若波罗蜜经，述文殊师利与佛对答般若深义，是般若经重要单行本。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1229",
+    "question": "文殊如何修般若？",
+    "answer": "文殊说：以不住法为住般若波罗蜜。不见诸法有生有灭，不见有增有减，是修般若。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1230",
+    "question": "什么是无住法？",
+    "answer": "无住法即不执著一切法：不见法可取可舍，不见生死可厌涅槃可乐，心无增减。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1231",
+    "question": "文殊说般若讲一行三昧吗？",
+    "answer": "讲。经中开示一行三昧：系心一佛专称名字，随佛方所端身正向，能于一佛念念相续即是念中能见过去未来现在诸佛。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1232",
+    "question": "文殊如何看佛与众生？",
+    "answer": "文殊说：众生界量不可思议，众生无住犹如空住。一切法皆无相，故闻般若不惊不怖。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1233",
+    "question": "什么是实际？",
+    "answer": "文殊说：身见等是实际。身见如相，非实非不实，不来不去，亦身非身，是名实际。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1234",
+    "question": "文殊说般若的意义？",
+    "answer": "此经以文殊智慧第一示般若深义，与禅宗直指本心相通，是般若与禅融合的重要经典。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1235",
+    "question": "如何学文殊说般若？",
+    "answer": "于一切法不取不舍，心无增减，见诸法无生灭，即是修般若波罗蜜。",
+    "relatedBooks": ["wenshu"]
+  },
+  {
+    "id": "faq-1236",
+    "question": "神会是谁？",
+    "answer": "神会（684-758），荷泽神会，六祖惠能弟子，为南宗争正统，确立六祖地位，开荷泽宗。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1237",
+    "question": "神会与滑台大会？",
+    "answer": "神会在滑台大云寺与北宗辩论，力斥神秀北宗渐修之说，确立南宗顿悟正统，史称滑台论辩。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1238",
+    "question": "神会的核心思想？",
+    "answer": "神会主张无念为宗，无作为本；以知为体，见性成佛。知之一字众妙之门。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1239",
+    "question": "什么是无念？",
+    "answer": "神会说：无念者，念而不念，不念而念。无念不是百物不思，而是于念无念，念起即觉。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1240",
+    "question": "神会如何看顿悟？",
+    "answer": "神会主张顿悟：理即顿悟，乘悟并销；事非顿除，因次第尽。一念相应，见性成佛。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1241",
+    "question": "什么是知之一字众妙之门？",
+    "answer": "神会说：知之一字，众妙之门。此知是空寂之知，灵知不昧，是众生本具的觉性。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1242",
+    "question": "神会与北宗的差别？",
+    "answer": "北宗神秀主张渐修（时时勤拂拭），南宗神会主张顿悟（本来无一物）。神会以顿悟破渐修。",
+    "relatedBooks": ["shenhui"]
+  },
+  {
+    "id": "faq-1243",
+    "question": "荷泽宗的特点？",
+    "answer": "荷泽宗以知为宗体，倡知之一字众妙之门，开禅宗灵知之说，影响宗密等后世。",
+    "relatedBooks": ["shenhui"]
+  },
+
+  {
+    "id": "faq-1131",
+    "question": "云门文偃是谁？",
+    "answer": "云门文偃（864-949），五代禅宗大师，雪峰义存弟子，开创云门宗。机锋峭峻，答话多一字关，门风高峻。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1132",
+    "question": "什么是云门宗三句？",
+    "answer": "云门三句：函盖乾坤、截断众流、随波逐浪。函盖乾坤是体，截断众流是用，随波逐浪是机，三句摄尽云门宗纲宗。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1133",
+    "question": "什么是云门一字关？",
+    "answer": "云门答话多用一字：问如何是佛，答是；问如何是祖师西来意，答东。一字之下截断言思，直指本心。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1134",
+    "question": "如何理解函盖乾坤？",
+    "answer": "函盖乾坤：乾坤并万象，地狱及天堂，物物皆真现，头头总不伤。一切法皆是真如显现，无欠无余。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1135",
+    "question": "如何理解截断众流？",
+    "answer": "截断众流：堆山积岳来，一一尽尘埃。一切言思路径全部截断，不容拟议，直下见性。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1136",
+    "question": "如何理解随波逐浪？",
+    "answer": "随波逐浪：辩口利舌问，高低总不亏。应机接物如随波逐浪，因病与药，无有定法。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1137",
+    "question": "什么是云门饼？",
+    "answer": "僧问云门如何是超佛越祖之谈，云门答糊饼。饼是日用之物，超佛越祖不离日用，直指当下。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1138",
+    "question": "什么是云门露柱？",
+    "answer": "云门示众：古佛与露柱相交是第几机。又：灯笼是你自己，露柱是你自己。直指一切皆是本心显现。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1139",
+    "question": "云门如何看佛？",
+    "answer": "僧问如何是佛？云门答：干屎橛。以最不净之物答佛，截断对佛的执著，直指本心非名相。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1140",
+    "question": "云门如何接人？",
+    "answer": "云门接人多用一字、一问、一棒、一喝，或顾视、或放身，皆令学人于当下绝言思、见本心。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1141",
+    "question": "什么是云门一曲？",
+    "answer": "问如何是云门一曲？答：腊月二十五。曲不在声，腊月二十五即当下，平常即是。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1142",
+    "question": "云门如何看经教？",
+    "answer": "云门举心经无眼耳鼻舌身意：为尔有箇眼见，所以言无不可。如今见时不可说无也。经义不离当下一念。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1143",
+    "question": "什么是云门坐断？",
+    "answer": "云门说：尽十方世界乾坤大地，以拄杖一画百杂碎。三乘十二分教达磨西来，放过即不可。坐断一切，直指本心。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1144",
+    "question": "云门如何看祖师西来意？",
+    "answer": "问如何是祖师西来意？答：日里看山。西来意不在言说，日里看山即是，当下分明。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1145",
+    "question": "云门与雪峰的关系？",
+    "answer": "云门参雪峰，雪峰问从甚处来，答天台来。雪峰问见智者否？云门答义存吃铁棒有分。师徒机锋相契，云门得法。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1146",
+    "question": "什么是云门家风？",
+    "answer": "云门家风高峻，答语峭拔，一字一句皆有出身之路。所谓云门一曲，涵盖乾坤，截断众流，随波逐浪。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1147",
+    "question": "云门如何看修行？",
+    "answer": "云门说：除却着衣吃饭、屙屎送尿，更有什么事？无端起得如许多般妄想作什么？修行不离日用。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1148",
+    "question": "云门遗诫讲了什么？",
+    "answer": "云门临终遗诫：置吾于方丈中，不得哭泣孝服，出家者本务超越，毋得同俗。佛法流通不负四恩。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1149",
+    "question": "什么是云门金屎法？",
+    "answer": "云门说：金屑虽贵，眼里着不得。再珍贵之法，若成执著即是病。连佛法也不可执。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1150",
+    "question": "云门如何看禅？",
+    "answer": "圣上问如何是禅？云门答：皇帝有敕，臣僧对。禅在当机应物，不在言说定义。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1151",
+    "question": "什么是日日是好日？",
+    "answer": "云门示众：十五日已前不问汝，十五日已后道将一句来。自代云：日日是好日。日日是好日，无日不佳。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1152",
+    "question": "云门如何看生死？",
+    "answer": "云门说：生死事大，无常迅速。念念不忘生死，方能真参实究。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1153",
+    "question": "云门宗的特点是什么？",
+    "answer": "云门宗风高古，以一字禅、三句纲宗著称。答话简洁峭拔，截断众流，与临济、沩仰、曹洞、法眼并称禅门五家。",
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "faq-1154",
+    "question": "禅林宝训是什么书？",
+    "answer": "禅林宝训是宋代净善禅师编集的禅门格言集，汇集明教契嵩、黄龙慧南、五祖法演等禅师德行训诫，共三百余条，是丛林教育的经典。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1155",
+    "question": "禅林宝训的核心精神？",
+    "answer": "核心是道德为本、精进为务。强调住持须具道德，学者须守戒律，丛林须正法度，皆以真实为本。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1156",
+    "question": "明教契嵩说了什么？",
+    "answer": "明教契嵩说：天下至尊至美者莫过于道与德。道德所在之人虽为匹夫，亦足以化人。道德是丛林根本。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1157",
+    "question": "黄龙慧南说了什么？",
+    "answer": "黄龙说：住持要在得众，得众要在见情。又说：端居丈室以本分事接方来人，乃长老之职。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1158",
+    "question": "五祖法演说了什么？",
+    "answer": "法演说：住持大柄在惠与德，二者兼行废一不可。惠而罔德则人不敬，德而罔惠则人不怀。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1159",
+    "question": "浮山远说了什么？",
+    "answer": "浮山远说：住持有三要：仁、明、勇。仁者行道德，明者识安危，勇者断不疑。三者备则丛林兴。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1160",
+    "question": "什么是禅林宝训的住持观？",
+    "answer": "住持当以道德为本，谦恭接下，与众同欲，勤于接人，慎于用人。身正则丛林自正。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1161",
+    "question": "禅林宝训如何看学者？",
+    "answer": "学者当求治心，专一长久，亲师择友，先立德行。学多而心不治，纵学何益。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1162",
+    "question": "湛堂说了什么？",
+    "answer": "湛堂说：有道德者乐于众，无道德者乐于身。又说：居必择处，游必就士。学者当亲近善友。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1163",
+    "question": "什么是禅林宝训的祸福观？",
+    "answer": "灵源说：祸能生福，福能生祸。处灾危则思安求理而生福，居安泰则纵欲骄怠而生祸。安不忘危。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1164",
+    "question": "禅林宝训讲诚信吗？",
+    "answer": "讲。圆悟说：学道存乎信，立信在乎诚。衣食可去，诚信不可失。诚信为立身之本。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1165",
+    "question": "禅林宝训的教化意义？",
+    "answer": "禅林宝训是丛林道德教育的经典，以祖师言行垂范后人，是研究宋代禅林制度与思想的重要文献。",
+    "relatedBooks": ["chanlinbaoxun"]
+  },
+  {
+    "id": "faq-1166",
+    "question": "万善同归集是谁作的？",
+    "answer": "万善同归集是五代宋初永明延寿禅师所作，阐述万善同归净土、理事无阂之旨，是禅净双修的重要文献。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1167",
+    "question": "万善同归集的核心思想？",
+    "answer": "核心是万善同归：一切善行最终归向佛道净土。延寿主张理事无阂、禅净双修，万行庄严。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1168",
+    "question": "什么是理事无阂？",
+    "answer": "理是无为，事是有为。终日为而未尝有为，终日不为而未尝无为。离理无事全水是波，离事无理全波是水。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1169",
+    "question": "什么是权实双行？",
+    "answer": "实是真际本体，权是教化法门。从真际起化实外无权，因事迹得本权外无实。常冥一旨无阂双行。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1170",
+    "question": "延寿如何看禅净？",
+    "answer": "延寿提倡禅净双修：以禅宗明心见性，以净土念佛往生。有禅有净土，犹如戴角虎。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1171",
+    "question": "什么是万善同归此一心？",
+    "answer": "延寿诗：万善同归此一心，瓶盘钗钏总黄金。一切善行归根结底都是这一心的妙用，如瓶盘钗钏都是黄金。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1172",
+    "question": "延寿如何看修行？",
+    "answer": "延寿说：心虽即佛，久翳尘劳。故以万行增修，令其莹彻。理须顿悟，事须渐修。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1173",
+    "question": "什么是建立水月道场？",
+    "answer": "建立水月道场，庄严性空世界。虽知道场如幻，仍精进修行，即大作梦中佛事。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1174",
+    "question": "延寿如何看善恶？",
+    "answer": "延寿主张众善奉行：万善是菩萨入圣资粮，众行乃诸佛助道阶渐。不执善而修善，无住而行善。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1175",
+    "question": "万善同归集的意义？",
+    "answer": "此书对治禅宗空腹高心之病，确立禅净双修、万行庄严的传统，影响宋明佛教甚巨。",
+    "relatedBooks": ["wanshantongguiji"]
+  },
+  {
+    "id": "faq-1176",
+    "question": "幻惑心要是什么书？",
+    "answer": "幻惑心要即佛果圜悟真觉禅师心要，是圜悟克勤禅师示众法语集，由弟子子文编集，与碧岩录并为圜悟代表作。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1177",
+    "question": "圜悟克勤是谁？",
+    "answer": "圜悟克勤（1063-1135），宋代禅宗大师，五祖法演弟子，著碧岩录，是大慧宗杲之师，杨岐派重要祖师。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1178",
+    "question": "幻惑心要的核心思想？",
+    "answer": "核心是直指人心见性成佛：人人脚跟下本具金刚正体，不假外求。主张忘情绝照、长养圣胎、打成一片。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1179",
+    "question": "什么是金刚正体？",
+    "answer": "金刚正体即本心佛性，本无名相，非言句所能拟议。众生迷真逐妄，故祖师曲垂方便令其识取本来面目。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1180",
+    "question": "圜悟如何教人参禅？",
+    "answer": "圜悟教人发疑情、看话头、以悟为期：古人十年二十年只参透一着子，贵在纯一长久。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1181",
+    "question": "什么是长养圣胎？",
+    "answer": "悟后须绵密保任，如曹山所说经蛊毒之乡水也不得沾一滴。令悟境不退，习气渐除，打成一片。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1182",
+    "question": "什么是打成一片？",
+    "answer": "打成一片是悟后功夫纯熟，世法佛法融通无碍，二六时中纯一无杂，左右逢源。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1183",
+    "question": "圜悟如何看平常心？",
+    "answer": "圜悟说：无心无为，平常自在。终不以奇特玄妙为事，只守闲闲地，如痴似兀，饥来吃饭困来睡。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1184",
+    "question": "幻惑心要的影响？",
+    "answer": "幻惑心要影响深远：大慧宗杲承圜悟之教开看话禅，日本禅宗亦奉为必读。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+  {
+    "id": "faq-1185",
+    "question": "如何参究幻惑心要？",
+    "answer": "先明直指人心之旨，次发疑情以悟为期，悟后长养保任，世法佛法打成一片，成就无心道人。",
+    "relatedBooks": ["huanwuxinyao"]
+  },
+
+  {
+    "id": "faq-1067",
+    "question": "坛经是谁的记录？",
+    "answer": "坛经是六祖惠能在大梵寺开法说法的记录，由弟子法海集录，是禅宗唯一以经命名的祖师语录，记录了六祖一生行迹与开示。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1068",
+    "question": "六祖如何开悟？",
+    "answer": "六祖惠能本为砍柴人，听人诵金刚经至应无所住而生其心，言下开悟。后赴黄梅参五祖，作菩提本无树偈，得五祖印可，夜半得法。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1069",
+    "question": "什么是菩提本无树？",
+    "answer": "六祖偈曰：菩提本无树，明镜亦非台；本来无一物，何处惹尘埃。意即佛性本自清净，无一物可得，无须拂拭，此偈胜神秀时时勤拂拭偈，得五祖印可。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1070",
+    "question": "什么是无念为宗？",
+    "answer": "六祖说：我此法门，从上以来，先立无念为宗，无相为体，无住为本。无念是于念而无念，不染著于念，非百物不思。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1071",
+    "question": "什么是定慧等持？",
+    "answer": "六祖说：定慧一体不是二。定是慧体，慧是定用，犹如灯光，有灯即光，无灯即暗。定慧等学，不可偏废。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1072",
+    "question": "什么是见性成佛？",
+    "answer": "六祖说：菩提般若之智，世人本自有之，只缘心迷不能自悟。见性即见自本心，见性即是佛，不离自性即是净土。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1073",
+    "question": "风幡公案是什么？",
+    "answer": "六祖初至法性寺，见二僧争风动幡动。六祖曰：不是风动，不是幡动，仁者心动。二僧叹服，众人乃知是得法之人。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1074",
+    "question": "什么是三十六对法？",
+    "answer": "六祖临终付嘱三十六对法，如天与地对、日与月对、明与暗对等，用以说法时出没即离两边，不落二边。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1075",
+    "question": "六祖如何看西方净土？",
+    "answer": "六祖说：随其心净，则佛土净。东方人造罪念佛求生西方，西方人造罪念佛求生何国？心净即是净土，不离当下。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1076",
+    "question": "什么是三科法门？",
+    "answer": "六祖说三科法门：阴界入。五阴（色受想行识）、十二入（六尘六门）、十八界（六尘六门六识），皆从自性起用。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1077",
+    "question": "坛经如何看禅定？",
+    "answer": "六祖说：外离相为禅，内不乱为定。外若著相，内心即乱；外若离相，心即不乱。坐禅不在形式，在于心离相不乱。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1078",
+    "question": "六祖如何看功德？",
+    "answer": "六祖答韦使君：功德在法身中，不在修福。见性是功，平等是德。内心谦下是功，外行于礼是德。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1079",
+    "question": "什么是无相忏悔？",
+    "answer": "六祖说无相忏悔：从前念今念后念，念念不被愚迷染。忏悔是念念自净其心，不是口说。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1080",
+    "question": "六祖如何看坐禅？",
+    "answer": "六祖批评住心观静、长坐不卧，说：生来坐不卧，死去卧不坐，一具臭骨头，何为立功课。禅在心悟，不在形坐。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1081",
+    "question": "六祖付法时说了什么？",
+    "answer": "五祖传法时，六祖言下大悟，说：何期自性本自清净，何期自性本不生灭，何期自性本自具足，何期自性本无动摇，何期自性能生万法。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1082",
+    "question": "六祖如何看神会？",
+    "answer": "神会十三岁来参，问六祖坐禅还见不见。六祖打三下问痛不痛，神会说亦痛亦不痛。六祖斥其弄精魂，神会乃知错，终成荷泽宗祖师。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1083",
+    "question": "什么是顿渐？",
+    "answer": "六祖说：法本一宗，人有南北；法即一种，见有迟疾。法无顿渐，人有利钝，故名顿渐。顿悟渐修，本无二法。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1084",
+    "question": "六祖如何看经教？",
+    "answer": "六祖不识文字，却能解经。无尽藏尼问字，六祖说：诸佛妙理，非关文字。但又说不离经教，悟后经义自明。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1085",
+    "question": "什么是摩诃般若？",
+    "answer": "六祖说：摩诃是大，心量广大犹如虚空。般若者智慧，一切时中念念不愚。摩诃般若波罗蜜，即大智慧到彼岸。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1086",
+    "question": "坛经的付嘱品讲了什么？",
+    "answer": "付嘱品是六祖临终教诫：说三科法门、三十六对，嘱咐弟子以无念为宗无相为体无住为本，并预言身后之事。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1087",
+    "question": "什么是慧能没伎俩？",
+    "answer": "有人举卧轮偈：卧轮有伎俩，能断百思想。六祖说：惠能没伎俩，不断百思想，对境心数起，菩提作么长。不断而无所著，方契自性。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1088",
+    "question": "坛经为什么重要？",
+    "answer": "坛经是禅宗根本经典，确立了顿悟见性的禅法，影响整个中国禅宗乃至东亚佛教。六祖被尊为禅宗六祖，坛经为禅门心要。",
+    "relatedBooks": ["tanjing"]
+  },
+  {
+    "id": "faq-1089",
+    "question": "圆觉经是什么？",
+    "answer": "圆觉经全称大方广圆觉修多罗了义经，述佛为文殊、普贤等十二菩萨开示圆觉妙心，是华严系重要经典，十二菩萨各启一问。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1090",
+    "question": "什么是圆觉？",
+    "answer": "圆觉即圆满觉性，一切众生本具的清净觉性。经云：无上法王有大陀罗尼门名为圆觉，流出一切清净真如菩提涅槃。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1091",
+    "question": "圆觉经如何讲无明？",
+    "answer": "经云：一切众生妄认四大为自身相，六尘缘影为自心相。如病眼妄见空花，空实无花，病者妄执。此即无明。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1092",
+    "question": "什么是知幻即离？",
+    "answer": "经云：知幻即离，不作方便；离幻即觉，亦无渐次。知一切如幻，当下即离；离幻即觉，无须渐次。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1093",
+    "question": "圆觉经的修行方法是什么？",
+    "answer": "经说修奢摩他（止）、三摩钵提（观）、禅那（寂灭）三种法门，单修或双修，排列成二十五种清净定轮。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1094",
+    "question": "什么是二十五轮？",
+    "answer": "以奢摩他、三摩钵提、禅那三法，单修、双修、圆修排列组合，共二十五种修行方式，随根机选择。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1095",
+    "question": "圆觉经讲四病吗？",
+    "answer": "讲。普觉菩萨章说修行四病：作病（造作求觉）、任病（任其自然）、止病（止念求寂）、灭病（灭心求寂），四病皆非正修。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1096",
+    "question": "什么是圆觉经的销金矿喻？",
+    "answer": "经云：譬如销金矿，金非销故有。虽复本来金，终以销成就。佛性本有，须假修行显发，如金矿须炼方成真金。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1097",
+    "question": "圆觉经如何看轮回？",
+    "answer": "经云：一切众生从无始际由有种种恩爱贪欲故有轮回。众生爱命，还依欲本，爱欲为因，爱命为果。断爱即断轮回。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1098",
+    "question": "什么是净诸业障？",
+    "answer": "净诸业障菩萨章说：一切众生由执我人众生寿者四相，妄见流转。若能断除四相，憎爱既除，自然成佛道。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1099",
+    "question": "圆觉经讲修证阶梯吗？",
+    "answer": "讲。清净慧章说凡夫随顺觉性、未入地菩萨随顺觉性、已入地菩萨随顺觉性、如来随顺觉性，四种层次。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1100",
+    "question": "圆觉经与禅宗关系？",
+    "answer": "圆觉经以圆觉妙心为宗，与禅宗直指本心相通。经中知幻即离、离幻即觉，正是禅宗顿悟法门的经教依据。",
+    "relatedBooks": ["yuanjuejing"]
+  },
+  {
+    "id": "faq-1101",
+    "question": "大乘起信论是谁造的？",
+    "answer": "大乘起信论相传为马鸣菩萨所造，是融合般若中观与唯识的重要论典，为中国佛教各宗所依。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1102",
+    "question": "起信论的核心是什么？",
+    "answer": "核心是一心二门：一切众生心摄一切法，开为心真如门与心生灭门。真如门显体，生灭门显相用。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1103",
+    "question": "什么是心真如门？",
+    "answer": "心真如门即心的本体：不生不灭，离言说相，究竟平等，唯是一心。真如是一切法之体。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1104",
+    "question": "什么是心生灭门？",
+    "answer": "心生灭门即心的现象：依阿赖耶识有无明不觉起，能见能现能取境界，生灭流转。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1105",
+    "question": "什么是三大？",
+    "answer": "体大：真如性恒平等无增减；相大：如来藏具足无量功德；用大：能生一切世出世间善因果。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1106",
+    "question": "什么是熏习？",
+    "answer": "净法（真如）与染法（无明）互相熏习，如衣受香。真如熏无明令厌生死求涅槃，无明熏真如令流转。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1107",
+    "question": "起信论如何修行？",
+    "answer": "论说止观双修：止是息灭戏论，观是明见因果。单修止则沉没，单修观则散乱，止观并运方得无上菩提。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1108",
+    "question": "什么是五种发心？",
+    "answer": "信成就发心（正直心深重心大悲心）、解行发心、证发心。发心是修行的起点。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1109",
+    "question": "起信论与楞严经关系？",
+    "answer": "起信论一心二门与楞严经如来藏思想相通，都是真常唯心系经典，为禅宗与天台华严所共依。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1110",
+    "question": "如何学起信论？",
+    "answer": "先明一心二门之体用，次观无明熏习之流转，修止观以断惑证真，发大心以自利利他。",
+    "relatedBooks": ["dachengqixinlun"]
+  },
+  {
+    "id": "faq-1111",
+    "question": "禅关策进是谁编的？",
+    "answer": "禅关策进是明代莲池祩宏大师编集的禅门修行策励集，汇集诸祖苦功与经论警策，激励学人精进参禅。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1112",
+    "question": "禅关策进的核心是什么？",
+    "answer": "核心是精进参究、以悟为期。莲池集诸祖师苦行事迹与经论开示，策励学人发起生死心、真实用功。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1113",
+    "question": "书中有哪些祖师苦功？",
+    "answer": "如道安独坐十二年、慈明引锥自刺、高峰以头触柱、蒙山带病精修等，皆激励学人痛念生死、刻苦办道。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1114",
+    "question": "什么是铁酸馅？",
+    "answer": "五祖法演常举铁酸馅喻话头：咬破铁酸馅方知味。比喻参话头须咬定不放，至疑情迸开方见本心。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1115",
+    "question": "如何看话头？",
+    "answer": "参禅看话头如看万法归一，一归何处，于话头起疑情，行住坐卧绵绵参究，如猫捕鼠，心不旁骛。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1116",
+    "question": "禅关策进讲信解行证吗？",
+    "answer": "讲。莲池引沩山以悟为则，强调信为入道之门，疑为参究之要，悟为究竟之则。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1117",
+    "question": "什么是生死心切？",
+    "answer": "生死心切是参禅先决条件：无常迅速，生死事大，如救头然。有此心方能真参实究。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1118",
+    "question": "禅关策进如何对治懈怠？",
+    "answer": "集诸祖苦功以警懈怠：伊庵晚必涕泣、喆侍者圆枕警睡等，皆以精进对治放逸。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1119",
+    "question": "书中的经论引证有哪些？",
+    "answer": "引华严经钻燧取火、四十二章经一人与万人战、楞严经等，皆示精进之要。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1120",
+    "question": "如何用禅关策进？",
+    "answer": "日常读诵以策发道心，于参究中借祖师榜样激励自己，发长远心、真实心，久久必有相应。",
+    "relatedBooks": ["changuancejin"]
+  },
+  {
+    "id": "faq-1121",
+    "question": "洞山良价是谁？",
+    "answer": "洞山良价（807-869），唐代禅宗大师，云岩昙晟弟子，开创曹洞宗，著宝镜三昧歌，立五位君臣之说。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1122",
+    "question": "洞山如何开悟？",
+    "answer": "洞山参云岩问无情说法，云岩开示后仍疑。后过水睹影，见水中影像，大悟，作偈：切忌从他觅，迢迢与我疏。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1123",
+    "question": "什么是过水睹影？",
+    "answer": "洞山过河时见水中倒影，忽然大悟：渠今正是我，我今不是渠。影不是我，我非影，而影即我之显现，悟得真我。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1124",
+    "question": "什么是五位君臣？",
+    "answer": "曹洞宗五位：正中偏、偏中正、正中来、兼中至、兼中到。以正（体）偏（用）交互说明理事关系。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1125",
+    "question": "什么是宝镜三昧？",
+    "answer": "宝镜三昧歌是洞山所作，以镜喻心性，阐述曹洞宗回互之旨：如镜照像，像不离镜。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1126",
+    "question": "洞山如何看无情说法？",
+    "answer": "洞山问云岩无情说法，云岩云：水鸟树林悉皆念佛念法。洞山悟后作偈：也大奇也大奇，无情说法不思议；若将耳听终难会，眼处闻声方得知。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1127",
+    "question": "什么是洞山三顿棒？",
+    "answer": "有僧问洞山如何是佛，洞山三顿棒打。棒下见性，截断妄想，此即曹洞家风亦用棒喝。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1128",
+    "question": "洞山临终有何开示？",
+    "answer": "洞山临终，弟子请留偈，洞山说：吾闲名已谢。众请不已，乃说偈：学者恒沙无一悟，过在寻他舌头路；欲得忘形泯踪迹，努力殷勤空里步。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1129",
+    "question": "洞山与曹山的关系？",
+    "answer": "曹山本寂是洞山嗣法弟子，师徒共同完成五位君臣理论，曹洞宗因师徒住洞山曹山得名。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "faq-1130",
+    "question": "如何参究洞山语录？",
+    "answer": "洞山宗旨贵在回互：理事不二，君臣回互。参究时当于日用动静中体会体用不二，明暗交参。",
+    "relatedBooks": ["dongshanyulu"]
+  },
+
+  {
+    "id": "faq-1007",
+    "question": "十牛图是什么？",
+    "answer": "十牛图是宋代廓庵师远所作的十幅图，以牧牛比喻修行过程：寻牛、见迹、见牛、得牛、牧牛、骑牛归家、忘牛存人、人牛俱忘、返本还源、入廛垂手。描绘从迷失到彻悟再入世度人的完整历程。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1008",
+    "question": "寻牛图的含义？",
+    "answer": "寻牛是修行第一步：茫茫拨草去追寻，水阔山遥路更深。牛喻本心佛性，众生迷失本心，向外寻求，如寻失牛。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1009",
+    "question": "见迹图的含义？",
+    "answer": "见迹是初见法要：依经解义，阅教知踪，明见诸法痕迹。如见牛之足迹，知道牛在附近，但仍未见牛。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1010",
+    "question": "见牛图的含义？",
+    "answer": "见牛是初见本心：从声入道，见色明心，于一切处得见本心。如黄莺枝上啼，声韵宛转，初见牛身。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1011",
+    "question": "得牛图的含义？",
+    "answer": "得牛是把握本心：久埋郊外，今日逢渠，由境胜人，牛今已露全身。虽然得牛，犹须调伏。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1012",
+    "question": "牧牛图的含义？",
+    "answer": "牧牛是调伏功夫：鞭索时时不离身，恐伊纵步入红尘。得牛后须勤加牧养，不令放逸，如牧牛人时刻看管。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1013",
+    "question": "骑牛归家图的含义？",
+    "answer": "骑牛归家是保任成熟：骑牛迤逦欲还家，羌笛声声送晚霞。功夫纯熟，本心自然，安然归家。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1014",
+    "question": "忘牛存人的含义？",
+    "answer": "忘牛存人是人牛俱忘的过渡：骑牛已得到家山，牛也空兮人也闲。牛已到家，连牛的执著也放下。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1015",
+    "question": "返本还源的境界？",
+    "answer": "返本还源是彻悟本然：返本还源已费功，争如直下若盲聋。一切法本自圆成，无修无证，如寒山子迥出常情。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1016",
+    "question": "入廛垂手的含义？",
+    "answer": "入廛垂手是大悲度生：露胸跣足入廛来，抹土涂灰笑满腮。彻悟后回入世间，以平常姿态度化众生，不居圣位。",
+    "relatedBooks": ["shiniutu"]
+  },
+  {
+    "id": "faq-1017",
+    "question": "八识规矩颂是谁作的？",
+    "answer": "八识规矩颂是唐代玄奘法师所作，以偈颂形式概述唯识学的八识（眼耳鼻舌身意、末那、阿赖耶）规矩与修证。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1018",
+    "question": "八识指哪八识？",
+    "answer": "前五识眼耳鼻舌身，第六意识，第七末那识（意根），第八阿赖耶识（藏识）。八识规矩颂逐一阐述其性相与转依。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1019",
+    "question": "前五识的特点？",
+    "answer": "前五识通善恶，现量缘境，不待作意。眼识缘色，耳识缘声等，各缘自境，是现量亲证。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1020",
+    "question": "第六意识的特点？",
+    "answer": "意识具分别计度，通三量（现量比量非量），能缘三世，是造业之枢纽。善恶业都由意识发动。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1021",
+    "question": "第七末那识的特点？",
+    "answer": "末那识恒审思量，执第八识见分为我，是染污意，人我执的根源。转末那识为平等性智即无我执。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1022",
+    "question": "第八阿赖耶识的特点？",
+    "answer": "阿赖耶识是藏识，含藏一切种子，是生死流转的根本。转阿赖耶为大圆镜智即究竟成佛。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1023",
+    "question": "如何转识成智？",
+    "answer": "转前五识为成所作智，转第六意识为妙观察智，转第七末那为平等性智，转第八阿赖耶为大圆镜智。转识成智是唯识修证核心。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1024",
+    "question": "八识规矩颂的意义？",
+    "answer": "八识规矩颂概括唯识学精要，为唯识宗修行指南。玄奘西行求法即为此学，回国译传，开创法相唯识宗。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1025",
+    "question": "八识与禅宗的关系？",
+    "answer": "禅宗虽重直指，亦通唯识。如楞严经七处征心即辨心识，禅门转识成智、转凡成圣与唯识转依相通。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1026",
+    "question": "如何修学八识规矩颂？",
+    "answer": "先明八识性相差别，再观转识成智之理，于日用中舍染取净，渐次转依，方得其实。",
+    "relatedBooks": ["bashiguijusong"]
+  },
+  {
+    "id": "faq-1027",
+    "question": "禅家龟鉴是什么书？",
+    "answer": "禅家龟鉴是明代禅僧所作禅门修行指南，以公案和开示阐述参禅要旨，是禅门重要参考书。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1028",
+    "question": "禅家龟鉴的核心思想？",
+    "answer": "强调参禅须明本心、起疑情、看话头。以参究话头为入道要门，提倡真参实悟，反对口头禅。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1029",
+    "question": "如何看话头？",
+    "answer": "看话头即提起一则公案（如万法归一，一归何处），于话头起疑情，行住坐卧绵绵参究，不求解会，只穷究到底。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1030",
+    "question": "什么是疑情？",
+    "answer": "疑情是参禅的关键：生不知来处，死不知去处，于此生大疑惑，念念不舍。疑情成片，时节若至，桶底子脱。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1031",
+    "question": "禅家龟鉴讲棒喝吗？",
+    "answer": "讲。书中述德山棒、临济喝等宗门施设，说明棒喝是截断妄想的方便，令学人于当下了悟本心。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1032",
+    "question": "如何对治昏沉散乱？",
+    "answer": "参禅中昏沉则提振精神，散乱则收摄念头，总以话头为主，提起放下，绵绵密密，久自相应。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1033",
+    "question": "禅家龟鉴如何看公案？",
+    "answer": "公案是祖师悟道机缘，参公案不是解义，而是于公案上起疑情，透脱疑情即见本心。所谓大疑大悟。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1034",
+    "question": "参禅与看经的关系？",
+    "answer": "看经明理是助缘，参禅是正行。若只解义不实参，如数他人财宝；若只盲参不看经，则无慧眼。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1035",
+    "question": "什么是桶底子脱？",
+    "answer": "桶底子脱是比喻疑情参究到极处，豁然打破，如桶底脱落，身心世界一时透脱，即是开悟见性。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1036",
+    "question": "禅家龟鉴的修行次第？",
+    "answer": "先发生死心，次参话头起疑情，疑情成片则工夫得力，力极则桶底脱，悟后保任，绵密无间，终至打成一片。",
+    "relatedBooks": ["chanjia_guijian"]
+  },
+  {
+    "id": "faq-1037",
+    "question": "坐禅仪是什么？",
+    "answer": "坐禅仪是阐述禅宗坐禅方法要点的文献，通常指天台宗或禅宗关于打坐姿势、调身调息调心的指南。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1038",
+    "question": "坐禅的正确姿势？",
+    "answer": "坐禅当结跏趺坐，或以半跏趺坐，脊背竖直，头正颈直，双手结定印，舌抵上腭，两眼微闭或视鼻端。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1039",
+    "question": "如何调身？",
+    "answer": "调身即端身正坐，宽衣解带，放松身体，不倚不靠，脊直头正，全身放松而不懈惰。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1040",
+    "question": "如何调息？",
+    "answer": "调息即呼吸自然，不刻意控制，绵绵若存，用志不分。息调则心定，心定则息细。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1041",
+    "question": "如何调心？",
+    "answer": "调心即放下妄想，不昏沉不掉举。若心散乱则收摄，若昏沉则提起，念起即觉，觉已即空。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1042",
+    "question": "坐禅中昏沉怎么办？",
+    "answer": "昏沉时睁眼、挺腰、深呼吸，或经行片刻再坐。昏沉是坐禅大敌，须以正念对治。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1043",
+    "question": "坐禅与悟道的关系？",
+    "answer": "坐禅是助道方便，非究竟目的。坐禅令心安定，于定中观照，方能发起智慧。但不可执坐为道，磨砖作镜之讥即为此。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1044",
+    "question": "一日行禅怎么坐？",
+    "answer": "行住坐卧皆可禅：坐时端身正念，行时步履安详，立时挺然独立，卧时吉祥而卧。不拘形式，贵在心安。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1045",
+    "question": "坐禅的禁忌？",
+    "answer": "不宜饭后即坐，不宜风处久坐，不宜过饥过饱。坐中若见光见佛等境界，不作圣解，不执不取。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1046",
+    "question": "如何用坐禅仪指导日常？",
+    "answer": "将坐禅的调身调息调心之法，应用于日常行住坐卧，念念觉照，处处安然，则坐卧皆是道场。",
+    "relatedBooks": ["zuochanyi"]
+  },
+  {
+    "id": "faq-1047",
+    "question": "宛陵录是什么？",
+    "answer": "宛陵录是黄檗希运禅师语录，与传心法要同为其弟子裴休编录，阐述黄檗直指人心见性成佛之旨。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1048",
+    "question": "黄檗希运是谁？",
+    "answer": "黄檗希运（?-855），唐代禅宗大师，百丈怀海弟子，临济义玄之师。提倡即心即佛、无心为道，门风峻烈。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1049",
+    "question": "宛陵录的核心思想？",
+    "answer": "核心是即心是佛，无心是道。黄檗说：你如今一切时中行住坐卧，但学无心，久久须实得。心即是佛，佛即是心。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1050",
+    "question": "如何理解无心是道？",
+    "answer": "无心不是无念头，而是不著一念、不执一物，心如虚空而灵明不昧。黄檗说：无心者，无一切心也。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1051",
+    "question": "宛陵录如何看佛与众生？",
+    "answer": "黄檗说：佛与众生，一心无异。犹如虚空，无杂无坏。众生迷故有佛有众生，悟则本来无二。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1052",
+    "question": "黄檗如何教导参学？",
+    "answer": "黄檗常当头棒喝，直指本心。其接引临济三度打之，成就临济宗风。主张不假外求，当下即是。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1053",
+    "question": "什么是黄檗的壁立万仞？",
+    "answer": "黄檗门风峻峭，所谓黄檗门风，壁立万仞。学人稍有拟议，即遭棒喝，令其言语道断、直下承当。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1054",
+    "question": "宛陵录如何看经典？",
+    "answer": "黄檗说：若形于纸墨，何有吾宗？主张不立文字，直指人心。但也说不离经教，悟后一切皆通。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1055",
+    "question": "如何参究宛陵录？",
+    "answer": "先明即心即佛之旨，再参无心是道之妙，于日用中时时回光返照，久久自然契入。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1056",
+    "question": "宛陵录的影响？",
+    "answer": "宛陵录与传心法要影响深远，临济宗即承黄檗宗风。黄檗禅法直截了当，为后世禅门标榜。",
+    "relatedBooks": ["huangbo_wanlinglu"]
+  },
+  {
+    "id": "faq-1057",
+    "question": "血脉论是谁所作？",
+    "answer": "血脉论相传为达摩祖师所说，与悟性论、破相论等并称达摩四论，阐述即心即佛、见性成佛之旨。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1058",
+    "question": "血脉论的核心思想？",
+    "answer": "核心是即心即佛，心外无佛。达摩说：三界混起，同归一心。前佛后佛以心传心，不立文字。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1059",
+    "question": "如何理解血脉？",
+    "answer": "血脉指佛法传承如血脉相续：前佛后佛同一心传，达摩西来传心印，即此心即佛之法脉。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1060",
+    "question": "血脉论如何看佛与心？",
+    "answer": "达摩说：佛是自心作得，因何离此心外觅佛？心即是佛，佛即是心，心外无佛，佛外无心。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1061",
+    "question": "什么是见性即佛？",
+    "answer": "若欲觅佛，须是见性，见性即是佛。若不见性，念佛诵经持斋持戒亦无益处。见性是成佛关键。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1062",
+    "question": "血脉论如何看念佛诵经？",
+    "answer": "达摩说：念佛得因果，诵经得聪明，持戒得生天，布施得福报，觅佛终不得也。若不见性，一切外修皆是福德而非见性。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1063",
+    "question": "什么是血脉论的动心观？",
+    "answer": "达摩说：动是心动，动即其用。动用外无心，心外无动。一切见闻觉知皆是动心动用，识得此心即见本心。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1064",
+    "question": "血脉论如何看善恶？",
+    "answer": "达摩说：佛不持戒，佛不修善，佛不造恶，佛不精进，佛不懈怠。佛是无作人，心性本空，无有持犯。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1065",
+    "question": "什么是心心心难可寻？",
+    "answer": "达摩颂曰：心心心难可寻，宽时遍法界，窄也不容针。心量广大则遍法界，执著则不容针，此心不可思议。",
+    "relatedBooks": ["xuemaicong"]
+  },
+  {
+    "id": "faq-1066",
+    "question": "如何参究血脉论？",
+    "answer": "血脉论直指本心，参究时当回光返照，于一切动用心处识取本心，见性即佛，不假外求。",
+    "relatedBooks": ["xuemaicong"]
+  },
+
+  {
+    "id": "faq-947",
+    "question": "证道歌是谁所作？内容是什么？",
+    "answer": "《证道歌》是唐代永嘉玄觉禅师所作，全篇为七言韵文体，共二百余句。玄觉禅师初参六祖惠能，言下契悟，后作此歌阐述悟后见地。内容涵盖佛性、定慧、三身四智、顿悟法门等，被誉为禅宗重要文献。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-948",
+    "question": "证道歌开篇说了什么？",
+    "answer": "开篇即说：君不见，绝学无为闲道人，不除妄想不求真。无明实性即佛性，幻化空身即法身。开宗明义指出：绝学无为才是道人本色，不必除妄想、不必求真，因为无明的实性就是佛性，幻化的空身就是法身。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-949",
+    "question": "如何理解绝学无为闲道人？",
+    "answer": "绝学是绝诸有为学问，不靠知解；无为是不造作、不攀缘。闲道人是心中无事、随缘自在的修行人。这三者合起来，描绘了悟道者的境界：不执著于学解，不造作有为，心地闲闲、无所挂碍。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-950",
+    "question": "证道歌如何讲顿悟？",
+    "answer": "证道歌说：顿觉了，如来禅，六度万行体中圆。梦里明明有六趣，觉后空空无大千。即顿悟如来禅后，六度万行都在体性中圆满具足；迷时如梦中见六道轮回，悟后知本来空寂。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-951",
+    "question": "证道歌如何看待烦恼与菩提？",
+    "answer": "证道歌说：菩提本有，不须用守；烦恼本无，不须用除。又说：无明实性即佛性，幻化空身即法身。烦恼与菩提不二，无明的实性当下就是佛性。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-952",
+    "question": "证道歌讲三身四智吗？",
+    "answer": "讲。证道歌说：三身四智体中圆，八解六通心地印。法身报身化身本是一体，大圆镜智等四智在体性中圆满。迷时依识，悟时转识成智。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-953",
+    "question": "证道歌如何理解法身？",
+    "answer": "证道歌说：法身觉了无一物，本源自性天真佛。法身无形无相，觉了之后无一物可得；这本来清净的自性，就是天真佛，不是外求而得。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-954",
+    "question": "证道歌讲行持吗？",
+    "answer": "讲。证道歌说：行亦禅，坐亦禅，语默动静体安然。行住坐卧都在禅定中，语默动静体性安然。又说：入深山，住兰若，岑崟幽邃长松下，优游静坐野僧家，阒寂安居实潇洒。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-955",
+    "question": "证道歌与六祖是什么关系？",
+    "answer": "永嘉玄觉初见六祖惠能，绕祖三匝，振锡而立。六祖印可其悟，留宿一宵，世称一宿觉。证道歌是玄觉悟后所作，体现了六祖门下顿悟法门的见地。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-956",
+    "question": "证道歌中最著名的一句是什么？",
+    "answer": "最著名的是：梦里明明有六趣，觉后空空无大千。以及：绝学无为闲道人，不除妄想不求真。这两句集中体现了禅宗顿悟见性、生死梦觉的核心思想。",
+    "relatedBooks": ["zhengdaoge"]
+  },
+  {
+    "id": "faq-957",
+    "question": "马祖道一是谁？",
+    "answer": "马祖道一（709-788），唐代禅宗大师，南岳怀让弟子，六祖惠能再传。在江西洪州弘法，开洪州宗，门下有百丈怀海等。主张即心即佛、平常心是道，是禅宗史上承前启后的关键人物。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-958",
+    "question": "什么是即心即佛？",
+    "answer": "即心即佛是说当下这颗心就是佛，不必向外求佛。马祖说：汝等诸人各信自心是佛，此心即是佛心。达摩从西天来，唯传一心法。心外无佛，佛外无心。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-959",
+    "question": "什么是平常心是道？",
+    "answer": "平常心是道：道不用修，但莫污染。何为污染？但有生死心、造作趋向，皆是污染。若欲直会其道，平常心是道。行住坐卧、应机接物，尽是道。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-960",
+    "question": "马祖如何看修行？",
+    "answer": "马祖说：道不属修，若言修得，修成还坏，即同声闻；若言不修，即同凡夫。道不是修出来的，也不是不修，关键在于不污染本心，随缘自在。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-961",
+    "question": "什么是非心非佛？",
+    "answer": "有人问马祖：和尚为什么说即心即佛？马祖答：为止小儿啼。又问：啼止时如何？答：非心非佛。即心即佛是方便施设，契入后连心佛也不执著。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-962",
+    "question": "马祖的棒喝教学是怎样的？",
+    "answer": "马祖常以峻烈手段接人：或棒打，或大喝，或扭鼻，截断学人思量。其弟子百丈被马祖一喝，三日耳聋，传为佳话。棒喝为临济宗风之先声。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-963",
+    "question": "马祖如何看文字？",
+    "answer": "马祖说：凡所见色，皆是见心；心不自心，因色故有。又说：若执于名，即失其旨。强调直指本心，不滞文字名相。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-964",
+    "question": "马祖门下有哪些高徒？",
+    "answer": "马祖门下龙象辈出，有百丈怀海、南泉普愿、西堂智藏、大珠慧海、庞蕴居士等。百丈开丛林制度，南泉有斩猫公案，大珠有自家宝藏之悟，法脉广布天下。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-965",
+    "question": "马祖与怀让磨砖作镜的公案是什么？",
+    "answer": "马祖初在南岳衡山习定，怀让取砖于庵前磨。马祖问磨砖作么？怀让答：磨作镜。马祖说：磨砖岂能成镜？怀让反问：磨砖既不能成镜，坐禅岂能成佛？马祖言下开悟。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-966",
+    "question": "什么是自家宝藏？",
+    "answer": "大珠慧海初参马祖，马祖问：来此拟须何事？大珠答：来求佛法。马祖说：自家宝藏不顾，抛家散走作什么？我这里一物也无，求什么佛法？大珠当下省悟：即今问我者是汝宝藏，一切具足。",
+    "relatedBooks": ["mazu"]
+  },
+  {
+    "id": "faq-967",
+    "question": "百丈怀海是谁？",
+    "answer": "百丈怀海（720-814），唐代禅宗大师，马祖道一高足。创立禅宗丛林清规（百丈清规），提出一日不作一日不食，对禅宗制度影响深远。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-968",
+    "question": "什么是百丈清规？",
+    "answer": "百丈怀海制定禅宗丛林清规，确立僧团生活制度：普请劳作、尊卑有序、长老住持等，使禅宗摆脱寺院依赖，独立发展。其要义是一日不作一日不食。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-969",
+    "question": "一日不作一日不食的含义？",
+    "answer": "百丈九十高龄仍坚持劳作，弟子藏其农具，百丈不食，曰：一日不作，一日不食。体现禅宗自食其力、劳动即修行的精神。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-970",
+    "question": "什么是野鸭子公案？",
+    "answer": "百丈随马祖行，见野鸭飞过。马祖问：是什么？百丈答：野鸭子。马祖问：甚处去也？百丈答：飞过去也。马祖扭百丈鼻，百丈痛而大悟。此即截断妄想、直指当下的著名公案。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-971",
+    "question": "什么是独坐大雄峰？",
+    "answer": "僧问百丈：如何是奇特事？百丈答：独坐大雄峰。大雄峰是百丈所居之山，独坐大雄峰即当下即是、别无奇特，体现了禅的平常与自足。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-972",
+    "question": "百丈如何教导学人？",
+    "answer": "百丈常示众云：灵光独耀，迥脱根尘。体露真常，不拘文字。心性无染，本自圆成。但离妄缘，即如如佛。教导学人离妄缘、见本性。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-973",
+    "question": "什么是百丈上堂？",
+    "answer": "百丈上堂，大众集定，百丈以拄杖一时赶散，召曰：大众速去，咽喉被塞了也。或曰：上来讲什么？答：但得本，莫愁末。示大众直取根本。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-974",
+    "question": "百丈与马祖的关系？",
+    "answer": "百丈是马祖门下最有成就的弟子之一。经马祖扭鼻开悟后，深得马祖心法。马祖圆寂后，百丈继席洪州，弘扬马祖即心即佛之旨。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-975",
+    "question": "百丈清规对后世影响？",
+    "answer": "百丈清规确立丛林制度，禅宗由此独立发展。后世丛林皆依百丈清规，百丈被尊为丛林清规之祖。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-976",
+    "question": "百丈如何看禅定？",
+    "answer": "百丈说：若执空坐禅，即是顽空。又说：心如木石相似，亦不著于木石。禅定不在形式，在于心地清净、不被境转。",
+    "relatedBooks": ["baizhang"]
+  },
+  {
+    "id": "faq-977",
+    "question": "临济义玄是谁？",
+    "answer": "临济义玄（?-866），唐代禅宗大师，黄檗希运弟子，创立临济宗。以棒喝门风著称，是禅宗五家中影响最大的一支。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-978",
+    "question": "什么是临济喝？",
+    "answer": "临济义玄常用大喝接引学人，有有时一喝如金刚王宝剑，有时一喝如踞地金毛师子，有时一喝如探竿影草，有时一喝不作一喝用。一喝之中，有杀有活、有照有用。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-979",
+    "question": "什么是无位真人？",
+    "answer": "临济说：赤肉团上有一无位真人，常从汝等诸人面门出入，未证据者看看。无位真人即本来面目、本心自性，无位次可安立。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-980",
+    "question": "什么是四料简？",
+    "answer": "四料简是临济接人的四种方式：夺人不夺境、夺境不夺人、人境俱夺、人境俱不夺。因人根机不同，施设不同方便。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-981",
+    "question": "什么是三玄三要？",
+    "answer": "临济说：一句中具三玄，一玄中具三要。三玄三要指言语机锋的三种玄妙层次与要点，是临济宗辨别言语真伪的施设。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-982",
+    "question": "什么是四宾主？",
+    "answer": "四宾主是临济辨别师资接引真伪的四种情况：宾看主、主看宾、主看主、宾看宾。宾是学人，主是师家，辨其问答是否相应。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-983",
+    "question": "临济如何看佛？",
+    "answer": "临济说：逢佛杀佛，逢祖杀祖。意即不可执著于佛祖名相，须扫除一切知解，直见本心。又说：你一念心上清净光，是你屋里法身佛。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-984",
+    "question": "临济如何修行？",
+    "answer": "临济说：随缘消旧业，任运着衣裳，要行即行，要坐即坐，无一念心希求佛果。修行不在形式，在于随缘自在、不著一念。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-985",
+    "question": "临济宗风有何特点？",
+    "answer": "临济宗风峻烈，以棒喝齐施、机锋峭峻著称。所谓临济喝，德山棒。其门风刚猛，直指人心，后世有临济儿孙满天下之说。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-986",
+    "question": "临济开悟因缘？",
+    "answer": "临济问黄檗如何是佛法的的大意，三次发问三度被打。后参大愚，大愚说：黄檗与么老婆心切。临济于言下大悟，说：原来黄檗佛法无多子。",
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "faq-987",
+    "question": "金刚经的核心思想是什么？",
+    "answer": "金刚经全称《金刚般若波罗蜜经》，鸠摩罗什译。核心是应无所住而生其心，一切有为法如梦幻泡影。教导破除四相（我相人相众生相寿者相），以无住生心修行。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-988",
+    "question": "如何理解应无所住而生其心？",
+    "answer": "应无所住是说心不执著于任何外境，而生其心是说清净心自然生起妙用。不住色声香味触法生心，才是真清净心。六祖惠能闻此句而悟道。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-989",
+    "question": "金刚经如何讲空？",
+    "answer": "金刚经说：凡所有相，皆是虚妄，若见诸相非相，即见如来。又说：过去心不可得，现在心不可得，未来心不可得。一切相皆虚妄，诸心皆不可得。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-990",
+    "question": "什么是四相？",
+    "answer": "四相即我相、人相、众生相、寿者相。我相是执著有我，人相是分别人我，众生相是执著有众生，寿者相是执著寿命相续。菩萨应离四相修行。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-991",
+    "question": "如何理解佛说般若波罗蜜即非般若波罗蜜？",
+    "answer": "佛说般若波罗蜜，即非般若波罗蜜，是名般若波罗蜜。即说般若非实有自性，只是假名安立。这就是金刚经的三句义。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-992",
+    "question": "金刚经的布施观是什么？",
+    "answer": "菩萨于法应无所住行于布施，所谓不住色布施，不住声香味触法布施。无住相布施，其福德不可思量，如虚空不可限量。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-993",
+    "question": "什么是筏喻？",
+    "answer": "法尚应舍，何况非法。佛法如渡河之筏，到岸则舍。不可执著佛法本身，何况非法之法。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-994",
+    "question": "金刚经如何看佛身？",
+    "answer": "不可以身相见如来。如来所说身相，即非身相。若以色见我，以音声求我，是人行邪道，不能见如来。如来法身无相，不可执形相见。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-995",
+    "question": "如何受持金刚经？",
+    "answer": "若复有人得闻是经，信心清净则生实相。当知是人成就第一希有功德。受持读诵此经，为他人说，其福胜于布施无量七宝。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-996",
+    "question": "金刚经的终极境界？",
+    "answer": "不取于相，如如不动。一切有为法，如梦幻泡影，如露亦如电，应作如是观。这是金刚经的总结：观一切如幻，心不取相，如如不动。",
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "faq-997",
+    "question": "心经是谁翻译的？内容多长？",
+    "answer": "《心经》全称《般若波罗蜜多心经》，玄奘法师翻译，全文仅二百六十余字，是般若经的精髓浓缩，也是流传最广的佛经之一。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-998",
+    "question": "心经的核心思想？",
+    "answer": "核心是照见五蕴皆空，度一切苦厄。观自在菩萨行深般若波罗蜜多时，照见五蕴皆空，即色空不二，五蕴无自性，故能度一切苦厄。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-999",
+    "question": "如何理解色即是空空即是色？",
+    "answer": "色不异空，空不异色；色即是空，空即是色。物质现象（色）与空性不是两回事：色依空而立，空不离色而显。受想行识亦复如是。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1000",
+    "question": "心经讲哪些是空的？",
+    "answer": "五蕴（色受想行识）、十二处、十八界、十二因缘、四谛、六度等一切法皆空。无眼耳鼻舌身意，无色声香味触法。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1001",
+    "question": "什么是无智亦无得？",
+    "answer": "无智亦无得，以无所得故。连般若智也不执著，连证果也不执著。因为一切法本来空寂，本无所得，正是无所得故，菩提萨埵依般若得究竟。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1002",
+    "question": "心经的咒语是什么？",
+    "answer": "揭谛揭谛，波罗揭谛，波罗僧揭谛，菩提萨婆诃。意为：去呀去呀，到彼岸去，大家到彼岸去，疾速成就菩提。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1003",
+    "question": "心经如何破苦？",
+    "answer": "照见五蕴皆空，度一切苦厄。苦由执五蕴为实有而来；照见五蕴本空，苦即无从安立。观空不是逃避，而是照见实相。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1004",
+    "question": "心经与禅宗的关系？",
+    "answer": "心经是禅宗必读经典，其空有不二的见地与禅宗直指本心相通。六祖慧能即闻金刚经（般若系）而悟，般若空观是禅宗理论基础之一。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1005",
+    "question": "如何诵持心经？",
+    "answer": "心经可诵可持可思惟。日常诵持能摄心清净；深解其义，观照五蕴皆空，能断烦恼、开智慧。般若为诸佛之母，心经即般若之心要。",
+    "relatedBooks": ["xinjing"]
+  },
+  {
+    "id": "faq-1006",
+    "question": "心经的究竟义？",
+    "answer": "究竟义是诸法空相，不生不灭，不垢不净，不增不减。一切法本来如是，无生灭、无垢净、无增减，这就是诸法实相。",
+    "relatedBooks": ["xinjing"]
+  },
   {
     "id": "faq-885",
     "question": "《中论》的核心思想是什么？",

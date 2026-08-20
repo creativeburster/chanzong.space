@@ -33,6 +33,14 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 
+const formatCount = (n: number) => {
+  if (n >= 1000) {
+    const v = (n / 1000).toFixed(1).replace(/\.0$/, '');
+    return v + 'k';
+  }
+  return String(n);
+};
+
 export default function Home() {
   const [searchOpen, setSearchOpen] = useState(false);
 
@@ -249,7 +257,7 @@ export default function Home() {
                 <span>经典问答精选</span>
               </h2>
               <Link href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.faqs} 条问答 →
+                查看全部 {formatCount(STATS.faqs)} 条问答 →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

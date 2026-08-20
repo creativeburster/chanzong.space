@@ -2,13 +2,21 @@
 import { ArrowRight } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 
+const formatCount = (n: number) => {
+  if (n >= 1000) {
+    const v = (n / 1000).toFixed(1).replace(/\.0$/, '');
+    return `${v}k`;
+  }
+  return `${n}`;
+};
+
 export const StatsOverview = () => {
   const stats = [
     { num: `${STATS.classics}`, label: '核心著作', action: '查看全部', href: '/books' },
     { num: `${STATS.concepts}`, label: '核心概念', action: '探索概念', href: '/concepts' },
     { num: `${STATS.methods}`, label: '修持法门', action: '修持法门', href: '/methods' },
     { num: `${STATS.koans}`, label: '公案', action: '参究公案', href: '/koan' },
-    { num: `${STATS.faqs}`, label: '经典问答', action: '阅读问答', href: '/faq' },
+    { num: formatCount(STATS.faqs), label: '经典问答', action: '阅读问答', href: '/faq' },
     { num: `${STATS.persons}`, label: '关键人物', action: '阅读传记', href: '/persons' },
   ];
 
