@@ -11075,6 +11075,801 @@ export interface FAQItem {
 export const ZEN_FAQS: FAQItem[] = [
 
   {
+    "id": "faq-1323",
+    "question": "维摩诘经是什么经？",
+    "answer": "维摩诘所说经，鸠摩罗什译，述维摩诘居士以在家身示现大乘妙理，是居士佛教的代表经典，含十四品。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1324",
+    "question": "维摩诘是谁？",
+    "answer": "维摩诘是毗耶离城长者，已曾供养无量诸佛，得无生忍，辩才无碍，虽为白衣而奉持沙门律行，以方便力示疾说法。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1325",
+    "question": "什么是心净则佛土净？",
+    "answer": "佛告宝积：随其心净则佛土净。菩萨取净国皆为饶益众生，众生之类是菩萨佛土。心净则土净，不假外求。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1326",
+    "question": "维摩诘为何示疾？",
+    "answer": "维摩诘以方便现身有疾，国王大臣长者居士皆往问疾，维摩诘因身疾广为说法：是身无常无强无力，当乐佛身。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1327",
+    "question": "维摩诘如何说身？",
+    "answer": "维摩诘说身：是身如聚沫、如泡、如焰、如芭蕉、如幻、如梦、如影、如响、如浮云、如电，念念不住，当厌离而乐佛身。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1328",
+    "question": "什么是佛身？",
+    "answer": "佛身即法身，从无量功德智慧生，从戒定慧解脱解脱知见生，从慈悲喜舍生，从六波罗蜜生。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1329",
+    "question": "什么是宴坐？",
+    "answer": "维摩诘破舍利弗宴坐：于三界中身心不起名为宴坐，于诸见不动而修行三十七品，不断烦恼而入涅槃，是为宴坐。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1330",
+    "question": "维摩诘如何折服十大弟子？",
+    "answer": "十大弟子（舍利弗、目犍连、大迦叶、须菩提、富楼那、迦旃延、阿那律、优波离、罗睺罗、阿难）各被维摩诘折服，不敢往问疾。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1331",
+    "question": "维摩诘如何破目犍连说法？",
+    "answer": "维摩诘告目犍连：说法当如法说。法无众生、无我、无寿者，法常寂灭，法离于相，法无名字，言语道断。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1332",
+    "question": "什么是罪性本空？",
+    "answer": "优波离为二比丘解罪，维摩诘说：罪性不在内、不在外、不在中间。心垢故众生垢，心净故众生净。罪性本空，勿扰其心。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1333",
+    "question": "维摩诘如何折弥勒？",
+    "answer": "弥勒为兜率天王说不退转地，维摩诘破之：过去生已灭、未来生未至、现在生无住，无生正位中无受记。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1334",
+    "question": "文殊为何问疾？",
+    "answer": "佛遣文殊问疾，文殊言彼上人难为酬对，深达实相善说法要。于是八千菩萨五百声闻百千天人随从，二大士共谈妙法。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1335",
+    "question": "什么是从痴有爱则我病生？",
+    "answer": "维摩诘答文殊：从痴有爱则我病生。以一切众生病是故我病，众生病愈则我病愈。菩萨为众生故入生死。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1336",
+    "question": "维摩诘室为何空？",
+    "answer": "文殊问室何以空，维摩诘说：诸佛国土亦复皆空。空于六十二见中求，解脱于众生心行中求。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1337",
+    "question": "什么是病本？",
+    "answer": "病本谓攀缘。断攀缘以无所得，无所得则无攀缘。离二见（内见外见）即无所得。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1338",
+    "question": "什么是不可思议解脱？",
+    "answer": "住不思议解脱菩萨：以须弥之高广纳芥子中无所增减，以四大海水入一毛孔不娆水性之属，断取大千世界如陶家轮。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1339",
+    "question": "如何观众生？",
+    "answer": "观众生如幻师见幻人，如水中月镜中像热时焰呼声响，如空中云水聚沫水上泡，如芭蕉坚如电久住。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1340",
+    "question": "什么是天女散花？",
+    "answer": "维摩诘室天女散花，花着大弟子不着诸菩萨：菩萨已断一切分别想故花不着，声闻有分别想故花着。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1341",
+    "question": "什么是天女转女身？",
+    "answer": "舍利弗问天女何以不转女身，天女以神通变舍利弗如天女，示诸法无定相：求女人相了不可得，当何所转。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1342",
+    "question": "什么是入不二法门？",
+    "answer": "三十二菩萨各说不二法门，文殊说于一切法无言无说无示无识离诸问答是入不二法门，维摩诘默然无言，文殊叹：乃至无有文字语言是真入不二法门。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1343",
+    "question": "什么是烦恼为如来种？",
+    "answer": "维摩诘说：高原陆地不生莲华，卑湿淤泥乃生此华。一切烦恼为如来种，如不入烦恼大海则不能得一切智宝。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1344",
+    "question": "什么是行于非道通达佛道？",
+    "answer": "菩萨行五无间而无恼恚，示行贪欲离诸染着，示行嗔恚无有恚阂，示行愚痴以智慧调伏，行于非道而通达佛道。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1345",
+    "question": "什么是香积佛国？",
+    "answer": "上方四十二恒河沙佛土有国名众香，佛号香积，其国香气为十方最。维摩诘神通取香饭来，香饭能作佛事。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1346",
+    "question": "什么是香饭无尽？",
+    "answer": "化菩萨说：勿以声闻小德小智称量如来无量福慧。四海有竭此饭无尽，无尽戒定慧解脱解脱知见功德所食之余终不可尽。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1347",
+    "question": "什么是见阿閦佛品？",
+    "answer": "维摩诘答佛问观如来：如自观身实相观佛亦然，前际不来后际不去今亦不住。又示妙喜国不动如来。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1348",
+    "question": "什么是法供养？",
+    "answer": "月盖思惟供养之最，空中天曰：法之供养胜诸供养。受持读诵深经，随顺缘起，离诸邪见，是法供养。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1349",
+    "question": "维摩诘经为什么重要？",
+    "answer": "维摩诘经是大乘居士佛教经典，以在家居士示现般若妙用，折服声闻菩萨，为禅宗所重，天女散花、不二法门等公案流传极广。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1350",
+    "question": "维摩诘经与禅宗的关系？",
+    "answer": "维摩诘一默如雷、不二法门、心净则土净等思想与禅宗直指本心相通，是禅门常引的经典之一。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1351",
+    "question": "什么是维摩诘的默然？",
+    "answer": "文殊问何等是入不二法门，维摩诘默然无言。以无言说显不二，胜过一切言说，故文殊叹为真入不二法门。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1352",
+    "question": "维摩诘经讲布施吗？",
+    "answer": "讲。维摩诘说布施：无所舍而行檀，不见施者受者财物三轮体空，方为真布施。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1353",
+    "question": "什么是香积佛国菩萨问法？",
+    "answer": "众香国菩萨来此土，初见生下劣想，佛说诸佛国土以种种方便而作佛事，有以光明、以菩萨、以菩提树、以虚空等作佛事者。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1354",
+    "question": "维摩诘如何看生死？",
+    "answer": "维摩诘说：菩萨于生死畏中当依如来功德之力，住度脱一切众生。不畏生死而度众生，方是菩萨行。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1355",
+    "question": "什么是四摄法？",
+    "answer": "维摩诘说菩萨修行四摄法：布施、爱语、利行、同事，以此摄化众生，是度生方便。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1356",
+    "question": "维摩诘如何看福田？",
+    "answer": "维摩诘说：若施主等心施一最下乞人，犹如如来福田之相，无所分别，等于大悲，不求果报，是则具足檀波罗蜜。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1357",
+    "question": "维摩诘经讲三十二菩萨各说不二，其中有哪些？",
+    "answer": "法自在说生灭不二，德顶说垢净不二，善宿说动念不二，妙臂说声闻心菩萨心不二，弗沙说善不善不二，师子说罪福不二，那罗延说世间出世间不二等。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1358",
+    "question": "什么是文殊师利的不二？",
+    "answer": "文殊师利说：如我意者，于一切法无言无说，无示无识，离诸问答，是为入不二法门。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1359",
+    "question": "维摩诘经如何看声闻？",
+    "answer": "维摩诘折服声闻：声闻执着法相，小根小智；大乘菩萨不舍有为不住无为，不尽有为故能度生，不住无为故不滞寂灭。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1360",
+    "question": "什么是维摩诘的方便？",
+    "answer": "维摩诘以无量方便饶益众生：示现长者居士刹利婆罗门等身，随类现身，为说胜法，皆以方便度人。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1361",
+    "question": "维摩诘经讲净土吗？",
+    "answer": "讲。佛国品讲净土：菩萨随所化众生而取佛土，心净则佛土净，净土不离众生心。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1362",
+    "question": "什么是善巧方便？",
+    "answer": "善巧方便是菩萨度生之智：知众生根机，应机施教，或示贪嗔痴而实离染着，以方便力成就众生。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1363",
+    "question": "维摩诘经如何看神通？",
+    "answer": "维摩诘示现种种神通：借灯王座、取香积饭、断取世界，但神通是方便非究竟，究竟在般若妙用。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1364",
+    "question": "什么是维摩诘的师子吼？",
+    "answer": "维摩诘说法如师子吼：摧伏外道邪见，折服声闻执著，显大乘无上妙理，无所畏惧。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1365",
+    "question": "维摩诘经讲不二法门的意义？",
+    "answer": "不二法门是维摩诘经核心：超越一切二元对待（生灭、垢净、善恶、空有），以无分别智直契实相，是禅宗不二思想的经典依据。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1366",
+    "question": "维摩诘如何看淫怒痴？",
+    "answer": "维摩诘对须菩提说：若不断淫怒痴亦不与俱，不灭痴爱起于明脱，以五逆相而得解脱。烦恼即菩提，不断而离。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1367",
+    "question": "什么是维摩诘的离垢？",
+    "answer": "维摩诘虽处居家不着三界，示有妻子常修梵行：即世间而离世间，是为真离垢。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1368",
+    "question": "维摩诘经的嘱累品讲了什么？",
+    "answer": "佛以无量劫所集大法付嘱弥勒：于佛灭后末世之中，当以神力广宣流布，无令断绝。又嘱阿难受持此经。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1369",
+    "question": "维摩诘经对后世影响？",
+    "answer": "维摩诘经影响深远：不二法门、心净土净、香积饭、天女散花等成为中国佛教与文学艺术的重要意象，为禅宗居士佛教之典范。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1370",
+    "question": "如何修学维摩诘经？",
+    "answer": "先明不二法门之理，次观心净土净之义，于日用中以无住心行一切善，不离烦恼而证菩提。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1371",
+    "question": "维摩诘经讲毕竟空吗？",
+    "answer": "讲。维摩诘说：法常寂灭，灭诸相故；法离于相，无所缘故；法无名字，言语断故。毕竟空寂，而妙用宛然。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1372",
+    "question": "什么是维摩诘的现病说法？",
+    "answer": "维摩诘示疾说法：以此身无常警策，令闻者生厌离欣佛身之心。以身疾为方便，广度众生。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1373",
+    "question": "维摩诘经与净土的关系？",
+    "answer": "维摩诘经佛国品讲净土，心净则佛土净，与净土宗他力往生相补：唯心净土与西方净土，理无二致。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1374",
+    "question": "什么是维摩诘的无所住？",
+    "answer": "维摩诘虽处诸境而心无所住：住无所住，是名正住。不住有为不住无为，自在无碍。",
+    "relatedBooks": ["weimojiejing"]
+  },
+  {
+    "id": "faq-1375",
+    "question": "维摩诘经讲六度吗？",
+    "answer": "讲。维摩诘说六度：以布施度悭贪、持戒度毁犯、忍辱度嗔恚、精进度懈怠、禅定度散乱、般若度愚痴，而皆无住相。",
+    "relatedBooks": ["weimojiejing"]
+  },
+
+  {
+    "id": "faq-1285",
+    "question": "楞严经的缘起是什么？",
+    "answer": "阿难独自入城乞食，遭摩登伽女以先梵天咒摄入淫席，将毁戒体。佛顶放光宣说神咒，敕文殊持咒往护，阿难归佛后乃有此经之开示。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1286",
+    "question": "什么是淫室之难？",
+    "answer": "阿难托钵乞食，误入淫室，被摩登伽女幻术所迷。此难成为楞严法会缘起，佛由此开示修心要道。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1287",
+    "question": "楞严经如何讲四科？",
+    "answer": "楞严经以四科（五阴、六入、十二处、十八界）皆如来藏妙真如性，破凡夫对身心世界的执著。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1288",
+    "question": "什么是六入本如来藏？",
+    "answer": "六入（眼耳鼻舌身意）虚妄，本非因缘非自然性，皆是如来藏妙真如性。能入之根与所入之尘皆无自性。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1289",
+    "question": "什么是十二处本如来藏？",
+    "answer": "十二处（六根六尘）虚妄，本非因缘非自然性，皆是如来藏妙真如性。根尘相对而无实体。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1290",
+    "question": "什么是十八界本如来藏？",
+    "answer": "十八界（六根六尘六识）虚妄，本非因缘非自然性，皆是如来藏妙真如性。根尘识三处都无。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1291",
+    "question": "什么是地大？",
+    "answer": "地大性色真空，性空真色，清净本然周遍法界。粗为大地细为微尘，析至极微终归空性，故地大即如来藏。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1292",
+    "question": "什么是水大火大风大？",
+    "answer": "水大火大风大同是如来藏：水性真空性空真水，火大性火真空，风大性风真空，皆清净本然周遍法界。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1293",
+    "question": "什么是空大识大？",
+    "answer": "空大性觉真空性空真觉；识大性识明知觉明真识。七大皆如来藏，随众生心应所知量。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1294",
+    "question": "楞严经讲世界相续吗？",
+    "answer": "讲。卷四说世界相续：觉明空昧相待成摇故有风轮，坚明立碍故有金轮，风金相摩故有火光，宝明生润故有水轮。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1295",
+    "question": "什么是众生相续？",
+    "answer": "众生相续：因爱想纳胎，同业相缠，异见成憎同想成爱，流爱为种纳想为胎，故有轮回。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1296",
+    "question": "什么是业果相续？",
+    "answer": "业果相续：贪嗔痴等习气为因，造业受报，如影随形。杀盗淫三业为根本，感三途苦报。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1297",
+    "question": "楞严经如何断三种相续？",
+    "answer": "断三种相续（世界、众生、业果）之缘：狂心顿歇，歇即菩提。知妄本无因，妄灭无所从。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1298",
+    "question": "什么是五十五位真菩提路？",
+    "answer": "从干慧地经十信、十住、十行、十回向、四加行、十地、等觉至妙觉，共五十五位，是成佛的完整阶位。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1299",
+    "question": "楞严经讲十信吗？",
+    "answer": "讲。十信：信心住、念心住、精进心、慧心住、定心住、不退心、护法心、回向心、戒心住、愿心住。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1300",
+    "question": "楞严经讲十地吗？",
+    "answer": "讲。十地：欢喜地、离垢地、发光地、焰慧地、难胜地、现前地、远行地、不动地、善慧地、法云地。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1301",
+    "question": "什么是等觉妙觉？",
+    "answer": "等觉是最后一品无明将尽之觉，妙觉是究竟成佛之觉。五十五位至此圆满，成无上正觉。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1302",
+    "question": "楞严经讲七趣吗？",
+    "answer": "讲。楞严经说七趣：地狱、饿鬼、畜生、人、仙、天（六欲天至无色界）、阿修罗。皆是业感升坠。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1303",
+    "question": "什么是十习因？",
+    "answer": "十习因：淫、贪、慢、嗔、诈、诳、怨、见、枉、讼。十种习因感地狱报，是造恶感果之因。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1304",
+    "question": "什么是六交报？",
+    "answer": "六交报：见报、闻报、嗅报、味报、触报、思报。六根交互造业，交互受报，感召地狱苦。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1305",
+    "question": "楞严经讲欲界天吗？",
+    "answer": "讲。欲界六天：四天王天、忉利天、须焰摩天、兜率天、化乐天、他化自在天。由十善及禅定升天。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1306",
+    "question": "什么是色界四禅天？",
+    "answer": "色界四禅：初禅（梵众梵辅大梵）、二禅（少光无量光光音）、三禅（少净无量净遍净）、四禅（福生福爱广果无想等）。离欲清净而住。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1307",
+    "question": "什么是无色界四空天？",
+    "answer": "无色界四空天：空无边处、识无边处、无所有处、非想非非想处。灭色归空，但未断无明。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1308",
+    "question": "楞严经讲阿修罗吗？",
+    "answer": "讲。阿修罗有四类：卵生（鬼道）、胎生（天道）、化生（修罗王）、湿生（下劣修罗）。嗔慢为因，与天争权。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1309",
+    "question": "楞严经如何看五阴区宇？",
+    "answer": "五阴各有区宇（范围界限）：色阴区宇如处幽暗，受阴如魇，想阴如寱，行阴如野马，识阴如鸡鸣东方精色。尽则超脱。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1310",
+    "question": "如何避免着魔？",
+    "answer": "着魔皆由妄想执著：若作圣解即受群邪，不作圣心名善境界。见光见佛不执不取，魔自无隙可乘。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1311",
+    "question": "楞严经与般若有关系吗？",
+    "answer": "楞严经融般若空观与如来藏：性空真色、性色真空，与般若色空不二相通，而更显妙有之用。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1312",
+    "question": "楞严经为什么重要？",
+    "answer": "楞严经被誉为开悟的楞严：从破妄显真到修行证果、防魔辨邪，开示完整，为禅宗修行最重要的经教依据之一。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1313",
+    "question": "如何理解诸法所生唯心所现？",
+    "answer": "楞严经说：诸法所生，唯心所现，一切因果世界微尘因心成体。万法唯心，心为万法之本。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1314",
+    "question": "楞严经讲常住真心吗？",
+    "answer": "讲。佛说一切众生生死相续皆由不知常住真心性净明体，用诸妄想。常住真心即本觉妙明之心。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1315",
+    "question": "什么是紫金光聚？",
+    "answer": "阿难见佛三十二相胜妙殊绝，形体映彻犹如琉璃，常自思惟此相非是欲爱所生。紫金光聚喻佛身清净庄严。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1316",
+    "question": "楞严经如何破我执？",
+    "answer": "楞严经破我执：观五阴六入十二处十八界皆无自性，我相不可得。又破众生执身为我、执心为我等妄见。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1317",
+    "question": "什么是楞严经的结解？",
+    "answer": "结解之喻：六根为结，令众生缠缚生死；解六根之结，即得解脱。根尘同缘，脱缚无二。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1318",
+    "question": "如何用楞严经指导修行？",
+    "answer": "以七处征心破妄，以十番显见明真，以耳根圆通入道，以四种清净明诲护戒，以五十阴魔防邪。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1319",
+    "question": "楞严经讲如来密因吗？",
+    "answer": "讲。经题即如来密因修证了义：如来成就之秘密因地，即众生本具之如来藏心，修证此法方能成佛。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1320",
+    "question": "什么是首楞严大定？",
+    "answer": "首楞严是佛之三昧，坚固不坏。修证楞严大定，即得究竟坚固，不为一切烦恼魔境所动。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1321",
+    "question": "楞严经如何看生死？",
+    "answer": "楞严经说生死由妄：迷真逐妄故有生死，狂心顿歇歇即菩提。生死与涅槃皆在当下一念迷悟。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1322",
+    "question": "什么是即心即佛与楞严？",
+    "answer": "楞严经虽未明言即心即佛，而其常住真心、如来藏思想与禅宗即心即佛相通，七处征心即辨明此心。",
+    "relatedBooks": ["lengyanjing"]
+  },
+
+  {
+    "id": "faq-1244",
+    "question": "楞严经的全名是什么？谁翻译的？",
+    "answer": "楞严经全称《大佛顶如来密因修证了义诸菩萨万行首楞严经》，般剌密谛主译，房融笔受，唐神龙元年译成。原藏龙宫，般剌密谛剖膊藏经方携入中国。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1245",
+    "question": "为什么叫大佛顶首楞严？",
+    "answer": "大佛顶喻此经尊贵无上（佛顶最尊）；首楞严是梵语，意为坚固不坏、究竟坚固，指此经所明之理颠扑不破，为修证了义。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1246",
+    "question": "楞严经为什么被称为开悟的楞严？",
+    "answer": "此经以七处征心、十番显见破妄显真，直指见性；以二十五圆通示修行门径，以五十阴魔防修行歧途，对开悟见性开示最详，故称开悟的楞严。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1247",
+    "question": "什么是七处征心？",
+    "answer": "佛问阿难心在何处，阿难七次作答：心在身内、身外、潜于眼根、开眼见明闭眼见暗、随所合处、在中间、一切无著。佛一一破斥，显真心无处而遍在。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1248",
+    "question": "七处征心说明了什么？",
+    "answer": "七处征心破除对妄心的执著：真心不在内、不在外、不在中间、不在任何处所，而能显现一切。识心无体，真心常住。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1249",
+    "question": "什么是十番显见？",
+    "answer": "十番显见是佛十次开示见性：见性是心非眼、见性不动、见性不灭、见性无还、见性不杂、见性超情、见性非因缘非自然、见性不迁、见性离见。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1250",
+    "question": "如何理解见性不动？",
+    "answer": "佛以客尘为喻：客尘摇动，虚空寂然；尘自摇动，空常寂然。见性如虚空，不生不灭，不随境界动摇。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1251",
+    "question": "什么是两种根本？",
+    "answer": "佛说众生有二种根本：一是无始生死根本，即攀缘心（用妄想为自性）；二是无始菩提涅槃元清净体，即识精元明（本觉真心）。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1252",
+    "question": "如何理解狂心顿歇歇即菩提？",
+    "answer": "狂心是攀缘妄心，歇即停歇妄动。狂心一歇，菩提自现——不是另外得到一个菩提，而是妄歇真显，如云散月明。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1253",
+    "question": "什么是二十五圆通？",
+    "answer": "二十五圆通是二十五位圣者各述悟入法门，依六尘（色声香味触法）、六根（眼耳鼻舌身意）、六识、七大（地水火风空见识）而悟，门门皆可入道。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1254",
+    "question": "什么是观音耳根圆通？",
+    "answer": "观音菩萨以耳根修入：初于闻中，入流亡所，所入既寂，动静二相了然不生，如是渐增，闻所闻尽，尽闻不住，觉所觉空，空觉极圆，空所空灭，生灭既灭，寂灭现前。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1255",
+    "question": "为什么耳根圆通最胜？",
+    "answer": "文殊菩萨评二十五圆通，独赞耳根：此方真教体，清净在音闻。欲取三摩提，实以闻中入。娑婆众生耳根最利，故以观音耳根圆通为最。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1256",
+    "question": "什么是反闻闻自性？",
+    "answer": "反闻闻自性即不循声尘向外分别，返闻能闻之性。如观音菩萨从闻思修入三摩地，反闻自性，性成无上道。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1257",
+    "question": "什么是四种清净明诲？",
+    "answer": "佛说修行三决定义：摄心为戒，因戒生定，因定发慧。又开示断淫、断杀、断盗、断妄四种清净明诲，为修行根本。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1258",
+    "question": "如何理解淫心不除尘不可出？",
+    "answer": "佛说若不断淫修禅定者，如蒸砂石欲其成饭，经百千劫只名热砂。淫为生死根本，不断淫则尘不可出。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1259",
+    "question": "楞严咒的功德是什么？",
+    "answer": "楞严咒出生十方一切诸佛。持咒能除一切轻重罪障，如汤销雪，不久皆得悟无生忍，为护持正法之咒王。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1260",
+    "question": "什么是五十阴魔？",
+    "answer": "五十阴魔即色受想行识五阴各十种魔境（色十、受十、想十、行十、识十）。修行中五阴将尽时易现魔境，须辨识不执。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1261",
+    "question": "如何对治五十阴魔？",
+    "answer": "对治之法：不作圣心，名善境界；若作圣解，即受群邪。凡见光见华、得大神通等境界，不执不取，魔自无隙。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1262",
+    "question": "什么是色阴区宇？",
+    "answer": "色阴区宇是修行初期的障碍：如明目人处大幽暗，精性妙净心未发光。色阴尽时十方洞开，无复幽黯。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1263",
+    "question": "什么是受阴区宇？",
+    "answer": "受阴区宇如魇人：手足宛然见闻不惑，心触客邪而不能动。受阴尽时其心离身，返观其面，去住自由。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1264",
+    "question": "什么是想阴区宇？",
+    "answer": "想阴区宇如熟寐寱言：虽无别所知，其言已成音韵。想阴尽时浮想销除，于觉明心如去尘垢。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1265",
+    "question": "什么是行阴区宇？",
+    "answer": "行阴区宇是生灭根元披露：见诸十方十二众生同生基犹如野马。行阴尽时幽清扰动倏然堕裂。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1266",
+    "question": "什么是识阴区宇？",
+    "answer": "识阴区宇于涅槃天将大明悟：如鸡后鸣瞻顾东方已有精色。识阴尽时内外明彻，如吠琉璃。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1267",
+    "question": "什么是五阴本因？",
+    "answer": "佛说五阴本因同是妄想：色阴是坚固妄想，受阴是虚明妄想，想阴是融通妄想，行阴是幽隐妄想，识阴是罔象虚无颠倒妄想。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1268",
+    "question": "楞严经如何讲七大？",
+    "answer": "楞严经讲地水火风空见识七大：性色真空，性空真色，清净本然，周遍法界，随众生心应所知量。七大皆如来藏妙真如性。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1269",
+    "question": "什么是如来藏？",
+    "answer": "如来藏是众生本具的佛性宝藏：在缠名如来藏，出缠名净法身。一切染净诸法皆如来藏随缘显现。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1270",
+    "question": "楞严经与禅宗什么关系？",
+    "answer": "楞严经虽非禅宗祖师语录，但其七处征心、十番显见与禅宗参究见性之理相通；观音耳根圆通、五十阴魔为禅修重要指南，历代禅师常引此经印证，故为禅门所重。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1271",
+    "question": "楞严经讲三摩地吗？",
+    "answer": "讲。楞严经说修三摩提（三摩地）是成就楞严大定的关键，二十五圆通即二十五种入三摩地法门。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1272",
+    "question": "什么是奢摩他三摩禅那？",
+    "answer": "楞严经以奢摩他（止）、三摩钵提（观）、禅那（寂照）三种修法，配二十五圆通，为楞严大定之方便。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1273",
+    "question": "楞严经讲六根结缚吗？",
+    "answer": "讲。佛说众生与世界缠缚在于六根：根尘同缘，脱缚无二。知见立知即无明本，知见无见斯即涅槃。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1274",
+    "question": "什么是三渐次？",
+    "answer": "三种渐次：一者断除五辛（助因），二者严持净戒断淫杀（正性），三者现前安立增上信（安立圣位）。修行须依此渐次。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1275",
+    "question": "楞严经讲十地吗？",
+    "answer": "讲。楞严经说十信、十住、十行、十回向、四加行、十地、等觉、妙觉，共五十五位真菩提路。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1276",
+    "question": "什么是演若多迷头认影？",
+    "answer": "演若多喻众生：忽觉头失，狂走觅头，其实头本在。众生迷本真心，向外觅佛，如演若多觅头，狂心歇处即菩提。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1277",
+    "question": "楞严经如何看因果？",
+    "answer": "楞严经说因果丝毫不爽：十习因六交报感地狱苦，善恶业报如影随形。修行者当慎因果，勿拨无因果。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1278",
+    "question": "什么是耳根圆通的三十二应？",
+    "answer": "观音菩萨以耳根圆通与佛同慈力，现三十二应身（佛身、独觉身、声闻身、梵王身、帝释身等）随类现身度众生。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1279",
+    "question": "什么是十四无畏？",
+    "answer": "观音菩萨与众生同悲仰，令众生获十四种无畏功德：苦恼众生观其音声即得解脱，入火不烧、入水不溺等。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1280",
+    "question": "楞严经讲阿难吗？",
+    "answer": "讲。楞严经以阿难遭摩登伽女之难为缘起：阿难被幻术所摄，佛敕文殊持咒救护，由此开示七处征心等大法。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1281",
+    "question": "什么是知见立知？",
+    "answer": "知见立知即无明本：于本觉知见上再立一个妄知，即是无明。知见无见，斯即涅槃无漏真净。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1282",
+    "question": "楞严经与唯识的关系？",
+    "answer": "楞严经以如来藏为体，兼摄唯识：八识皆如来藏随缘显现。经中辨五阴六入十二处十八界皆如来藏妙真如性。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1283",
+    "question": "如何修楞严经的法门？",
+    "answer": "可依耳根圆通反闻闻自性，或持楞严咒，或修奢摩他三摩禅那。总以摄心为戒、因戒生定、因定发慧为要。",
+    "relatedBooks": ["lengyanjing"]
+  },
+  {
+    "id": "faq-1284",
+    "question": "楞严经讲的真心是什么？",
+    "answer": "真心即如来藏妙真如性：不生不灭，不垢不净，清净本然，周遍法界。迷则生死，悟则菩提，体性无二。",
+    "relatedBooks": ["lengyanjing"]
+  },
+
+  {
     "id": "faq-1186",
     "question": "禅源诸诠集都序是谁写的？",
     "answer": "禅源诸诠集都序是唐代圭峰宗密禅师所作，为其所编禅源诸诠集写的总序，阐述禅教一致、三宗三教相配的思想。",

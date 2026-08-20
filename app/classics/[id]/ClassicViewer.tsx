@@ -84,6 +84,11 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     📖 {(meta as any).translation_note}
                   </p>
                 )}
+                {(meta as any).tradition_note && (
+                  <p className="mt-2 text-[11px] leading-relaxed font-medium px-2.5 py-1.5 rounded-lg bg-indigo-50/80 text-indigo-800 border border-indigo-200/60">
+                    ℹ️ {(meta as any).tradition_note}
+                  </p>
+                )}
               </div>
 
               {/* Toolbar Controls */}
