@@ -1,221 +1,63 @@
-'use client';
+import type { Metadata } from 'next';
+import PersonDetailPageClient from './PersonDetailPageClient';
+import { ZEN_PERSONS } from '@/lib/taxonomy';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { Sidebar } from '@/components/Sidebar';
-import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
-import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
-import { BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Share2, Tag, Lightbulb } from 'lucide-react';
-import { GlossaryCard } from '@/components/GlossaryCard';
-import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
-import { useLang } from '@/context/LangContext';
-import { SiteFooter } from '@/components/SiteFooter';
-import { Breadcrumb } from '@/components/Breadcrumb';
+interface PageProps { params: { id: string } }
 
-interface PageProps {
-  params: {
-    id: string;
+
+
+function EntityJsonLd({ item }: { item: any }) {
+  const name = String(item.name || '');
+  const desc = String(item.teachings || '').replace(/\s+/g, ' ').slice(0, 160);
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    description: desc,
+    url: `https://chanzong.space/persons/${item.id}`,
   };
-}
-
-export default function PersonDetailPage({ params }: PageProps) {
-  const [searchOpen, setSearchOpen] = useState(false);
-  const { t } = useLang();
-
-  const person = ZEN_PERSONS.find((p) => p.id === params.id);
-  if (!person) {
-    notFound();
-  }
-
   return (
-    <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
-      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
-
-      <div className="flex-1 flex flex-col min-w-0">
-        <TopHeader />
-
-        <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
-          <Breadcrumb items={[{ label: '人物', href: '/persons' }, { label: person.name }]} />
-
-          {/* 1. 祖师概览卡片 */}
-          <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">
-            <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="text-[13px] font-semibold px-3 py-1 rounded-full bg-purple-50 text-purple-800 border border-purple-200">
-                {t(person.title)}
-              </span>
-              <span className="text-xs text-slate-500 font-bold">{t(person.era)}</span>
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl font-bold font-serif-zen text-slate-900 mb-6">
-              👤 {t(person.name)}
-            </h1>
-            
-            {/* 7. 师承法嗣 */}
-            {person.relatedPersons && person.relatedPersons.length > 0 && (
-              <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-100">
-                <Users className="w-4 h-4 text-slate-500" />
-                <span className="text-[15px] font-semibold text-slate-600 mr-2">法脉关联:</span>
-                {person.relatedPersons.map(rid => {
-                  const rp = ZEN_PERSONS.find(p => p.id === rid);
-                  if (!rp) return null;
-                  return (
-                    <Link key={rid} href={`/persons/${rid}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
-                      {t(rp.name)}
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-
-          {/* 2. 生平与求法历程 */}
-          <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-            <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
-              <Compass className="w-5 h-5 text-purple-700" />
-              <span>{t('📌 祖师生平与求法历程')}</span>
-            </div>
-            <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed whitespace-pre-wrap">
-              {t(person.lifeStory)}
-            </p>
-          </div>
-
-          {/* 3. 核心教风 */}
-          <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-            <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-900">
-              <Sparkles className="w-5 h-5 text-amber-700" />
-              <span>{t('💡 核心教风与宗理玄旨')}</span>
-            </div>
-            <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed bg-amber-50/50 p-6 rounded-2xl border border-amber-200/60">
-              {t(person.teachings)}
-            </p>
-          </div>
-
-          {/* 4. 名言警策 */}
-          {person.quotes && person.quotes.length > 0 && (
-            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
-                <Quote className="w-5 h-5 text-rose-700" />
-                <span>{t('📜 祖师名言警策与机锋开示')}</span>
-              </div>
-              <div className="space-y-3">
-                {person.quotes.map((quote, idx) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
-                  >
-                    “{t(quote)}”
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* 6. 相关概念 */}
-          {person.relatedConcepts && person.relatedConcepts.length > 0 && (
-            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-               <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
-                <Tag className="w-5 h-5 text-purple-700" />
-                <span>{t('🏷️ 相关核心概念')}</span>
-              </div>
-              <LinkCardGrid
-                items={person.relatedConcepts.map(cid => {
-                  const rc = ZEN_CONCEPTS.find(c => c.id === cid);
-                  return rc ? { id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${cid}` } : null;
-                }).filter(Boolean) as any[]}
-                variant="purple"
-              />
-            </div>
-          )}
-
-          {/* 6b. 相关法门 */}
-          {person.relatedMethods && person.relatedMethods.length > 0 && (
-            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
-                <Compass className="w-5 h-5 text-sky-700" />
-                <span>{t('🧘 相关修持法门')}</span>
-              </div>
-              <LinkCardGrid
-                items={person.relatedMethods.map(mid => {
-                  const rm = ZEN_METHODS.find(m => m.id === mid);
-                  return rm ? { id: rm.id, title: rm.title, summary: rm.summary?.slice(0, 60), href: `/methods/${mid}` } : null;
-                }).filter(Boolean) as any[]}
-                variant="sky"
-              />
-            </div>
-          )}
-
-          {/* 6c. 相关公案 */}
-          {ZEN_KOANS.filter(q => q.relatedPersons.includes(person.id)).length > 0 && (
-            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
-                <Quote className="w-5 h-5 text-rose-700" />
-                <span>{t('❓ 相关公案机锋')}</span>
-              </div>
-              <LinkCardGrid
-                items={ZEN_KOANS.filter(q => q.relatedPersons.includes(person.id)).map(q => ({
-                  id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}`
-                }))}
-                variant="rose"
-                columns={3}
-              />
-            </div>
-          )}
-
-          {/* 5. 传世经典 */}
-          {person.classics && person.classics.length > 0 && (
-             <>
-             {person.relatedBooks && person.relatedBooks.length > 0 && <GlossaryCard sourceIds={person.relatedBooks} />}
-             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
-               <BookOpen className="w-5 h-5 text-amber-700" />
-               <span>{t('📚 传世经典与开示法要')}</span>
-             </div>
-
-             <LinkCardGrid
-               items={person.classics.map((classicName, idx) => {
-                 const bookId = person.relatedBooks?.[idx];
-                 const book = bookId ? manifest.find(m => m.id === bookId) : undefined;
-                 return { id: bookId || `c${idx}`, title: classicName, summary: book?.author, href: book ? `/classics/${book.id}` : '#' };
-               }).filter(item => item.href !== '#')}
-               variant="amber"
-             />
-           </div>
-             </>
-          )}
-
-          {/* 相关问答 */}
-          {ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).length > 0 && (
-            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
-                <Lightbulb className="w-5 h-5 text-emerald-700" />
-                <span>{t('💡 相关参究问答')}</span>
-              </div>
-              <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
-                  id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
-                }))}
-                variant="emerald"
-                columns={3}
-              />
-            </div>
-          )}
-
-          {/* 上下篇导航 */}
-          {(() => {
-            const idx = ZEN_PERSONS.findIndex(p => p.id === person.id);
-            const prev = idx > 0 ? { id: ZEN_PERSONS[idx - 1].id, title: ZEN_PERSONS[idx - 1].name, href: `/persons/${ZEN_PERSONS[idx - 1].id}` } : null;
-            const next = idx < ZEN_PERSONS.length - 1 ? { id: ZEN_PERSONS[idx + 1].id, title: ZEN_PERSONS[idx + 1].name, href: `/persons/${ZEN_PERSONS[idx + 1].id}` } : null;
-            return <PrevNextNav prev={prev} next={next} />;
-          })()}
-        </main>
-
-        <SiteFooter />
-      </div>
-
-      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
-    </div>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
   );
 }
+
+export function generateStaticParams() {
+  return ZEN_PERSONS.map((x: any) => ({ id: x.id }));
+}
+
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const item = ZEN_PERSONS.find((x: any) => x.id === params.id);
+  if (!item) return {};
+  const name = String(item.name || params.id);
+  const rawDesc = String(item.teachings || '');
+  const desc = rawDesc.replace(/\s+/g, ' ').slice(0, 140);
+  const title = `${name} · 人物`;
+  return {
+    title,
+    description: desc || '人物条目',
+    alternates: { canonical: `/persons/${params.id}` },
+    openGraph: {
+      type: 'article',
+      title: `${name} · 人物 | 禅宗知识库`,
+      description: desc.slice(0, 150) || '人物条目',
+      url: `https://chanzong.space/persons/${params.id}`,
+      siteName: '禅宗知识库',
+      locale: 'zh_CN',
+    },
+  };
+}
+export default function PersonDetailPagePage({ params }: PageProps) {
+  const item = ZEN_PERSONS.find((x: any) => x.id === params.id);
+  if (!item) return null;
+  return (
+    <>
+      <EntityJsonLd item={item} />
+      <PersonDetailPageClient params={params} />
+    </>
+  );
+}
+
