@@ -4931,7 +4931,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "禅净双修非混同——乃明体同用异。以禅明心，以净保任；以禅为理，以净为事。理事并修，顿渐兼资——如鸟双翼，缺一不可。",
     "classicRef": "《万善同归集》《宗镜录》",
     "relatedConcepts": ["weixin-jingtu", "dunwu-jianxiu", "fangbian"],
-    "relatedPersons": ["yongming-yanshou", "zhuhong"],
+    "relatedPersons": ["yongming-yanshou", "zhuhong", "daoxin"],
     "relatedBooks": []
   },
   {
@@ -6202,10 +6202,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "zhuan-shen-tu-qi",    "title": "转身吐气",    "category": "禅法",    "summary": "转身吐气，即疑团打破、命根断后，更从法身边转身高步、入廛垂手之悟后功夫。博山云：若命根断去，不知转身吐气，唤作堕身死汉，非究竟也。引洞山\u201c峰峦挺异，鹤不停机；灵木迢然，凤无依倚\u201d——不停无依，方为活泼。又引天童\u201c坐断十方犹点额，密移一步看飞龙\u201d——纵坐断十方，犹须密移一步。石霜门下坐脱立亡者众，若不知痛痒、不得受用，只饶坐断十方有甚用处？转身吐气，方是禅门活泼泼的全提大用。",    "etymology": "转身（从法身边转身出）+ 吐气（吐气如新、舒展大用），悟后起用之谓。",    "quotes": ["若命根断去，不知转身吐气，唤作堕身死汉，非究竟也。 —博山元来《参禅警语》", "坐断十方犹点额，密移一步看飞龙。 —天童正觉"],    "guidance": "死水不藏龙。修行到一念不生、澄澄湛湛处，正须转身——从静入动、从体起用、入廛垂手接引学人。今人闭关清修得轻安境界，若以此为极则，正是坐在饭箩边饿杀。悟后重起疑、更见人，方能转身吐气。",    "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",    "relatedConcepts": ["zhuan-shen-ju", "fashen-bing"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
   },
   {
-    "id": "jifeng",    "title": "机锋",    "category": "禅法",    "summary": "机锋，禅师接引学人之峻烈方便：于学人开口动念处，以迅捷不可拟议的言语、动作、棒喝，截断其意识卜度，令其于言语道断、心行处灭之际亲见本来。机者，时机与根机——对症下药，当下即是；锋者，剑锋——出鞘必中，不容拟议。古人一语一言如大火聚，近之不得触之不得；机锋非卖弄口舌，乃大宗师从悟境中流出之活用。",    "etymology": "机（时机、根机、弩机）+ 锋（剑锋），应机而发、锋刃直指之谓。",    "quotes": ["古人一语一言，如大火聚，近之不得、触之不得。 —博山元来《参禅警语》"],    "guidance": "机锋不可学、不可仿——学来的机锋是口头三昧。参机锋公案，不当谜语猜，须见其截断意识之用：凡让你左思右想皆不是处的，正是机锋立处。今人读公案若只觉说话艺术高明，尽失其旨。",    "classicRef": "《临济录》《无门关》《博山参禅警语》",    "relatedConcepts": ["koan", "instant-enlightenment"],    "relatedPersons": ["linji", "deshan-xuanjian", "yunmen"],    "relatedBooks": ["linji", "wumenguan", "boshan-canchanjingyu"]
+    "id": "jifeng",    "title": "机锋",    "category": "禅法",    "summary": "机锋，禅师接引学人之峻烈方便：于学人开口动念处，以迅捷不可拟议的言语、动作、棒喝，截断其意识卜度，令其于言语道断、心行处灭之际亲见本来。机者，时机与根机——对症下药，当下即是；锋者，剑锋——出鞘必中，不容拟议。古人一语一言如大火聚，近之不得触之不得；机锋非卖弄口舌，乃大宗师从悟境中流出之活用。",    "etymology": "机（时机、根机、弩机）+ 锋（剑锋），应机而发、锋刃直指之谓。",    "quotes": ["古人一语一言，如大火聚，近之不得、触之不得。 —博山元来《参禅警语》"],    "guidance": "机锋不可学、不可仿——学来的机锋是口头三昧。参机锋公案，不当谜语猜，须见其截断意识之用：凡让你左思右想皆不是处的，正是机锋立处。今人读公案若只觉说话艺术高明，尽失其旨。",    "classicRef": "《临济录》《无门关》《博山参禅警语》",    "relatedConcepts": ["koan", "instant-enlightenment"],    "relatedPersons": ["linji", "deshan-xuanjian", "yunmen", "mazu", "zhaozhou"],    "relatedBooks": ["linji", "wumenguan", "boshan-canchanjingyu"]
   },
   {
-    "id": "baoren",    "title": "保任",    "category": "禅法",    "summary": "保任，悟后护持长养之功夫。悟非一悟便休——初心顿悟，无始习气未能顿净，须于日用中绵密护持，不令悟境退失，亦不执著悟境，久久纯熟，方得受用。如初生婴孩须善养护。狂禅之病正在无悟而任、未保先狂；枯木之病则在保而不任，坐在悟境不敢起用。庞蕴悟后不离日用，皆是保任之榜样。",    "etymology": "保（保护、护持）+ 任（任运、放任），悟后保护任运之谓。",    "quotes": ["初心顿悟，犹有无始旷劫习气未能顿净，须教渠净除现业流识。 —沩山灵祐"],    "guidance": "悟后不可自足——博山云：悟后不见大善知识，纵得安逸，终是未了。保任不是守着一片寂静，而是在行住坐卧、逆顺境缘中勘验：境缘当前，悟境还在么？不动摇，方是真保任。",    "classicRef": "《真心直说》《禅林宝训》",    "relatedConcepts": ["real-mind", "chanbing"],    "relatedPersons": ["pang-yun", "boshan-yuanlai"],    "relatedBooks": ["zhenxin", "chanlinbaoxun", "boshan-canchanjingyu"]
+    "id": "baoren",    "title": "保任",    "category": "禅法",    "summary": "保任，悟后护持长养之功夫。悟非一悟便休——初心顿悟，无始习气未能顿净，须于日用中绵密护持，不令悟境退失，亦不执著悟境，久久纯熟，方得受用。如初生婴孩须善养护。狂禅之病正在无悟而任、未保先狂；枯木之病则在保而不任，坐在悟境不敢起用。庞蕴悟后不离日用，皆是保任之榜样。",    "etymology": "保（保护、护持）+ 任（任运、放任），悟后保护任运之谓。",    "quotes": ["初心顿悟，犹有无始旷劫习气未能顿净，须教渠净除现业流识。 —沩山灵祐"],    "guidance": "悟后不可自足——博山云：悟后不见大善知识，纵得安逸，终是未了。保任不是守着一片寂静，而是在行住坐卧、逆顺境缘中勘验：境缘当前，悟境还在么？不动摇，方是真保任。",    "classicRef": "《真心直说》《禅林宝训》",    "relatedConcepts": ["real-mind", "chanbing"],    "relatedPersons": ["pang-yun", "boshan-yuanlai", "huineng", "dahui-zonggao"],    "relatedBooks": ["zhenxin", "chanlinbaoxun", "boshan-canchanjingyu"]
   },
   {
     "id": "zheng-pian",    "title": "正偏五位",    "category": "曹洞宗修行纲领",    "summary": "正偏五位，曹洞宗明心地之纲要：正中偏、偏中正、正中来、兼中至、兼中到。正者，理体、君、空；偏者，事用、臣、色。正中偏是背理就事，偏中正是舍事入理，正中来是从体起用，兼中至是体用双行，兼中到是君臣道合、理事俱融之极则。洞山良价立五位君臣以明此旨，曹山本寂详为发挥；兼带语即君臣道合之位，五位之极。",    "etymology": "正（理体）+ 偏（事用）+ 五位（五个阶位），曹洞以五位明理事回互之功程。",    "quotes": ["正位即空界，本来无物；偏位即色界，有万象形。 —曹山本寂"],    "guidance": "五位非次第渐进之阶梯，乃勘验心地之五面照镜。行人勿于名相上排比，须自勘：我今坐在正中偏（唯认理体）乎？偏中正（沉空守寂）乎？还是理事双融、君臣道合？",    "classicRef": "《曹山语录》《宝镜三昧》",    "relatedConcepts": ["wuwei-junchen", "hu-hu"],    "relatedPersons": ["dongshan", "caoshan-benji"],    "relatedBooks": ["caoshanyulu", "baojingsanmei"]
@@ -6785,50 +6785,6 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": ["xiuxinjue", "zhenxin", "chanlinbaoxun", "changuancejin", "huangbo", "dunwu"]
   },
   {
-    "id": "baoren",
-    "title": "保任",
-    "summary": "保任，即悟后之保护任运。禅宗以为，悟道非终点，乃起点——悟后仍须保任，令悟境不退，习气渐除。如初生婴儿，虽具人身，仍须乳哺养育方能长大；初悟之人，虽见自性，仍须保任磨炼方能成熟。六祖云：\u201c迷时师度，悟了自度。\u201d——悟后之保任，须自度自修。保者，保护悟境不令退失；任者，任运自然不假造作。保中有任，任中有保——非死守悟境，亦非放纵习气。",
-    "origin": "禅宗悟后修行之传统，六祖\u201c迷时师度，悟了自度\u201d即含保任之旨。",
-    "steps": [
-      "悟后认识悟境——确认所悟为真悟，非伪悟、非浅悟",
-      "保护悟境——于日用中不令烦恼覆盖，如护初生之苗",
-      "任运自然——不假造作，不强行压制烦恼，于烦恼中见性",
-      "磨炼习气——悟后仍有习气，须于事上磨炼，如真金入火",
-      "打成一片——悟境与日用渐渐合一，行住坐卧皆是悟境",
-      "透脱自在——至习气净尽、能所双亡时，方为究竟"
-    ],
-    "pitfalls": [
-      "悟后不保任——以为一悟便了，悟境渐退",
-      "死守悟境——将悟境执着为实，成新知见",
-      "放纵习气——以\u201c烦恼即菩提\u201d为借口，放纵烦恼",
-      "急求进步——保任须从容自然，急则反退"
-    ],
-    "classicRef": "《坛经》《禅林宝训》《大慧语录》",
-    "relatedConcepts": ["dunwu-jianxiu", "self-nature", "wu-nian"],
-    "relatedPersons": ["huineng", "dahui-zonggao", "boshan-yuanlai"],
-    "relatedBooks": ["zhengdaoge", "dunwu", "shenhui"]
-  },
-  {
-    "id": "jifeng",
-    "title": "机锋",
-    "summary": "机锋，宗师接引学人之峻烈方便。机者，学人之根机；锋者，宗师之言锋。宗师观学人根机，以一言半句——或问或答、或棒或喝——如刀锋般截断学人意识流，令其于思量不及处亲见本来。机锋之要在于\u201c快\u201d——不容拟议，一拟议即落第二义。如僧问赵州：\u201c如何是祖师西来意？\u201d州曰：\u201c庭前柏树子。\u201d——此即机锋之典型：不以道理答，而以一句截断学人思量。",
-    "origin": "机锋为禅宗宗师接引学人之重要方便，马祖、石头以降，临济、德山、赵州等皆以机锋闻名。",
-    "steps": [
-      "宗师观察学人根机——知其执着在何处",
-      "以一言半句截断学人意识流——或答非所问，或反诘，或棒喝",
-      "学人于思量不及处，或悟或疑——悟则亲见本来，疑则继续参究"
-    ],
-    "pitfalls": [
-      "以机锋为口头禅——学得几句禅语，便以为悟道",
-      "以机锋为狂妄——故意说些不着边际之语，冒充机锋",
-      "错会机锋——以意识分别解会机锋之语，成知见禅"
-    ],
-    "classicRef": "《碧岩录》《无门关》《五灯会元》",
-    "relatedConcepts": ["koan", "beyond-words", "zhuan-shen-ju"],
-    "relatedPersons": ["mazu", "zhaozhou", "linji", "yunmen"],
-    "relatedBooks": ["mazu", "linji", "yunmen"]
-  },
-  {
     "id": "muniu-tuxi",
     "title": "十牛图牧心",
     "summary": "十牛图牧心，以牧牛喻修心之禅法。廓庵师远与普明禅师各作十牛图，以牧牛之十阶段喻修行之十次第。廓庵版：寻牛、见迹、见牛、得牛、牧牛、骑牛归家、忘牛存人、人牛俱忘、返本还源、入廛垂手。普明版：未牧、初调、受制、回首、驯伏、无碍、任运、相忘、独照、双泯。十图层层递进，从初发心到究竟成道，再到入廛垂手度生，将禅宗修行次第圆满呈现。",
@@ -6899,28 +6855,6 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["canjiu", "jifeng", "self-nature"],
     "relatedPersons": ["dahui-zonggao", "yuanwu-keqin"],
     "relatedBooks": ["chanlinbaoxun", "changuancejin", "huanwuyulu", "dahuiyulu"]
-  },
-  {
-    "id": "chanjing-shuangxiu",
-    "title": "禅净双修",
-    "summary": "禅净双修，即禅宗与净土宗并修之修行方式。禅宗直指自性弥陀，净土宗仰仗他力接引——看似不同，实则互补。永明延寿倡\u201c有禅有净土，犹如戴角虎\u201d，为禅净双修之根本依据。禅重理悟——悟自性本清净；净土重事修——念佛求生西方。理悟与事修并重，自力与他力兼资，为后世禅净合流之典范。四祖道信即以\u201c念佛心是佛\u201d开念佛禅之先河，可知禅净本非二法。",
-    "origin": "永明延寿倡禅净双修，着《万善同归集》明禅净不二之旨。后世袾宏、憨山等皆主禅净双修。",
-    "steps": [
-      "参禅时参禅——以参究话头或默照为禅修",
-      "念佛时念佛——以称名念佛为净土修",
-      "禅净不二——参禅时参\u201c念佛是谁\u201d，即禅即净",
-      "悟理行事——悟自性本清净（禅），同时念佛求生西方（净土）",
-      "互为增上——禅悟助念佛一心不乱，念佛助禅悟根基稳固"
-    ],
-    "pitfalls": [
-      "两头狐疑——参禅时疑念佛，念佛时疑参禅",
-      "偏废一边——或执禅废净，或执净废禅",
-      "以净土为退路——参禅不力时方念佛，非真双修"
-    ],
-    "classicRef": "《万善同归集》《禅关策进》《坛经》",
-    "relatedConcepts": ["ordinary-mind", "self-nature"],
-    "relatedPersons": ["yongming-yanshou", "zhuhong", "daoxin"],
-    "relatedBooks": []
   },
   {
     "id": "banghe-jiaocan",
