@@ -11102,7 +11102,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "洞山守初",
     "source": "《碧岩录》第十二则",
     "relatedConcepts": ["koan", "direct-pointing"],
-    "relatedPersons": ["dongshan-shouchu"],
+    "relatedPersons": [],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11111,8 +11111,8 @@ export const ZEN_KOANS: KoanItem[] = [
     "answer": "云门垂语“十五日已前不问汝，十五日已后道将一句来”，自代云“日日是好日”。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。",
     "master": "云门文偃",
     "source": "《碧岩录》第六则",
-    "relatedConcepts": ["ordinary-mind", "present-moment"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedConcepts": ["ordinary-mind"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11121,8 +11121,8 @@ export const ZEN_KOANS: KoanItem[] = [
     "answer": "僧问云门“如何是一代时教”，门云“对一说”。一代时教千言万语，对着“一”说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个“一”上。",
     "master": "云门文偃",
     "source": "《碧岩录》第十四则",
-    "relatedConcepts": ["one-dharma", "direct-pointing"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedConcepts": [ "direct-pointing"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11132,7 +11132,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "云门文偃",
     "source": "《碧岩录》第七十七则",
     "relatedConcepts": ["ordinary-mind", "direct-pointing"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11142,7 +11142,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "马祖道一",
     "source": "《碧岩录》第五十三则",
     "relatedConcepts": ["self-nature", "direct-pointing"],
-    "relatedPersons": ["mazu-daoyi", "baizhang-huaihai"],
+    "relatedPersons": ["mazu", "baizhang"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11152,7 +11152,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "盐官齐安",
     "source": "《碧岩录》第九十一则",
     "relatedConcepts": ["self-nature", "koan"],
-    "relatedPersons": ["yanguan-qian"],
+    "relatedPersons": [],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -11161,7 +11161,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "answer": "庞居士辞药山，山命十人禅客相送，居士指空中雪云“好雪片片不落别处”。时有全禅客云“落在什么处”，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问“落在什么处”，早已落别处了也。",
     "master": "庞蕴居士",
     "source": "《碧岩录》第四十二则",
-    "relatedConcepts": ["present-moment", "self-nature"],
+    "relatedConcepts": [ "self-nature"],
     "relatedPersons": ["pang-yun"],
     "relatedBooks": ["biyanlu"]
   }
