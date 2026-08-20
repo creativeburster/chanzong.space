@@ -12,6 +12,7 @@ import {
   MessageSquare,
   Users,
   GitFork,
+  Info,
   ChevronDown,
   ChevronRight,
   X,
@@ -353,6 +354,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <div className="flex items-center space-x-3">
                   <GitFork className="w-5 h-5 text-amber-400" />
                   <span>{t('知识图谱')}</span>
+                </div>
+              </Link>
+
+              <Link
+                href="/about"
+                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                  isActive('/about')
+                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center space-x-3">
+                  <Info className="w-5 h-5 text-amber-400" />
+                  <span>{t('关于本站')}</span>
                 </div>
               </Link>
             </div>

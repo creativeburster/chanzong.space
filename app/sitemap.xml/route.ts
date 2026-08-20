@@ -20,6 +20,7 @@ export function GET(_req: NextRequest) {
     { path: '/persons', freq: 'monthly', prio: 0.9 },
     { path: '/faq', freq: 'monthly', prio: 0.8 },
     { path: '/graph', freq: 'yearly', prio: 0.5 },
+    { path: '/about', freq: 'yearly', prio: 0.4 },
     { path: '/sitemap', freq: 'monthly', prio: 0.3 },
   ];
   for (const p of staticPages) {

@@ -2156,7 +2156,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "桃李春风一杯酒，江湖夜雨十年灯。 —山谷诗句"
     ],
     "classics": [],
-    "relatedConcepts": ["ordinary-mind", "self-nature"],
+    "relatedConcepts": [],
     "relatedMethods": [],
     "relatedPersons": ["huitang-zuxin", "lingyuan-weiqing"],
     "relatedBooks": []
@@ -2164,17 +2164,17 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "tongrong",
     "name": "通容",
-    "title": "临济宗 / 隐元隆琦之师",
+    "title": "费隐通容 / 临济宗 / 隐元隆琦之师",
     "era": "明末清初 (1593-1661)",
-    "lifeStory": "通容禅师，福建福清人，俗姓陈。少出家，参密云圆悟，于圆悟座下开悟。师住黄檗山（今福建福清），大弘临济宗风。门下出隐元隆琦，隆琦后东渡日本，开创日本黄檗宗——为日本禅宗三大宗之一。师之教承临济\u201c棒喝\u201d之传统，以峻烈机锋接人，不假方便。",
-    "teachings": "通容宗风承临济\u201c棒喝\u201d之传统，以峻烈机锋逼学人于思量不及处亲见本来。其教下启隐元隆琦，东渡日本开黄檗宗，为中日禅宗交流之重要桥梁。",
+    "lifeStory": "费隐通容禅师，福建福清人，俗姓何。十四岁出家，博通经论。历参无明慧经、湛然圆澄诸师。明天启二年（1622年）参谒密云圆悟，师徒棒喝交驰，至第七打，知见冰释，遂嗣其法。其后历住黄檗山万福寺、金粟山广慧寺、天童山景德寺、径山兴圣万寿寺等诸刹，俱能复兴古刹、大弘圆悟法道。师编《五灯严统》二十五卷，严考灯录法脉，力辨当时曹洞宗世系之讹，为明末禅宗史学之重要着述；又着《祖庭钳锤录》《费隐禅师语录》《般若心经斫轮解》等。法嗣六十四人，隐元隆琦其最著者——隆琦后东渡日本，开创日本黄檗宗。清顺治十八年示寂，世寿六十九。",
+    "teachings": "通容宗风承临济棒喝之传统，以峻烈机锋逼学人于思量不及处亲见本来。其《五灯严统》以严整法脉为己任，正讹辨谬，为禅宗史学之重镇。其教下启隐元隆琦，东渡日本开黄檗宗，为中日禅宗交流之重要桥梁。",
     "quotes": [
       "棒喝之下，不容思量。"
     ],
-    "classics": [],
+    "classics": ["五灯严统", "祖庭钳锤录", "费隐禅师语录"],
     "relatedConcepts": ["beyond-words", "koan"],
     "relatedMethods": ["kanhuatou"],
-    "relatedPersons": [],
+    "relatedPersons": ["yinyuan-longqi"],
     "relatedBooks": []
   },
   {

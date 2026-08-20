@@ -42,12 +42,38 @@ export async function GET() {
   });
 
   content += `\n## 常见问答 (${ZEN_FAQS.length})\n\n`;
-  ZEN_FAQS.slice(0, 30).forEach((f) => {
-    content += `- ${f.question}\n`;
+  content += `> 问答按经典分组，每部经典20+条，涵盖核心义理、修行方法、历史背景。\n\n`;
+  
+  // 按经典分组FAQ
+  const faqByBook: Record<string, typeof ZEN_FAQS> = {};
+  ZEN_FAQS.forEach(f => {
+    if (f.relatedBooks && f.relatedBooks.length > 0) {
+      f.relatedBooks.forEach(bookId => {
+        if (!faqByBook[bookId]) faqByBook[bookId] = [];
+        faqByBook[bookId].push(f);
+      });
+    }
   });
-  if (ZEN_FAQS.length > 30) {
-    content += `- ... (共${ZEN_FAQS.length}条问答，详见 https://chanzong.space/faq)\n`;
-  }
+  
+  manifest.forEach(item => {
+    const bookFaqs = faqByBook[item.id] || [];
+    if (bookFaqs.length > 0) {
+      content += `### ${item.title} (${bookFaqs.length}条)\n\n`;
+      bookFaqs.slice(0, 10).forEach(f => {
+        content += `- ${f.question}\n`;
+      });
+      if (bookFaqs.length > 10) {
+        content += `- ... (共${bookFaqs.length}条，详见 https://chanzong.space/faq?book=${item.id})\n\n`;
+      } else {
+        content += `\n`;
+      }
+    }
+  });
+
+  content += `\n## 关于本站\n\n`;
+  content += `- 编辑原则、文本来源、版权声明: https://chanzong.space/about\n`;
+  content += `- 站点地图: https://chanzong.space/sitemap\n`;
+  content += `- GitHub: https://github.com/gstar-byte/chanzong.space\n`;
 
   return new NextResponse(content, {
     headers: {

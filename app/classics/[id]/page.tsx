@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { getClassicById, getManifest } from '@/lib/data';
 import { ClassicViewer } from './ClassicViewer';
 import { marked } from 'marked';
+import { ZEN_FAQS } from '@/lib/taxonomy';
 
 interface PageProps {
   params: {
@@ -90,12 +91,33 @@ export default function ClassicPage({ params }: PageProps) {
     wordCount: meta.word_count,
   };
 
+  // FAQPage schema for this classic's FAQs
+  const classicFaqs = ZEN_FAQS.filter(f => f.relatedBooks && f.relatedBooks.includes(meta.id)).slice(0, 20);
+  const faqPageJsonLd = classicFaqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: classicFaqs.map(f => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqPageJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
+        />
+      )}
       <ClassicViewer
         meta={meta}
         htmlContent={htmlContent}
