@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import manifest from '@/manifest.json';
-import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
 export const dynamic = 'force-static';
 
@@ -51,10 +51,7 @@ export function GET(_req: NextRequest) {
     urls.push({ loc: `${base}/persons/${p.id}`, lastmod: now, changefreq: 'yearly', priority: 0.8 });
   }
 
-  // FAQs
-  for (const f of ZEN_FAQS) {
-    urls.push({ loc: `${base}/faq#${f.id}`, lastmod: now, changefreq: 'yearly', priority: 0.6 });
-  }
+  // FAQs 不逐条收录: FAQ 页为单页交互渲染(分页加载), 锚点条目不可直接定位, 已由 staticPages 中的 /faq 覆盖
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>

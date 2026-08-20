@@ -146,7 +146,8 @@ export default function FAQPageClient() {
               return (
                 <div
                   key={faq.id}
-                  className={`rounded-2xl bg-white border shadow-sm transition-all ${
+                  id={faq.id}
+                  className={`rounded-2xl bg-white border shadow-sm transition-all scroll-mt-24 ${
                     isOpen ? 'border-amber-500/60 shadow-md' : 'border-slate-200/80 hover:border-amber-500/40'
                   }`}
                 >
