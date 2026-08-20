@@ -85,6 +85,8 @@ export default function FAQPageClient() {
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
               {t('参究 FAQ')} ({allFaqs.length})
             </h1>
+            <h2 className="text-lg font-bold font-serif-zen text-slate-800 mb-4">经典问答</h2>
+
             <p className="text-sm text-slate-500 mt-1">
               {t('围绕公案、经典与禅宗义理的常见疑问解答。可按书籍筛选，点击展开查看详细辨析。')}
             </p>

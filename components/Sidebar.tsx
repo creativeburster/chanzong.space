@@ -168,9 +168,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <Image src="/logo-nianhua.png" alt="拈花微笑" width={64} height={64} className="w-full h-full object-cover" priority />
         </div>
         <div>
-          <h1 className="font-serif-zen text-lg font-bold text-white tracking-wide leading-snug whitespace-nowrap">
+          <div className="font-serif-zen text-lg font-bold text-white tracking-wide leading-snug whitespace-nowrap">
             {t('禅宗知识库')}
-          </h1>
+          </div>
           <span className="text-[10px] text-slate-400 font-bold tracking-widest uppercase font-sans mt-0.5 inline-block">
             ChanZong Knowledge Base
           </span>

@@ -62,10 +62,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           {/* 2. 修行步骤 */}
           {method.steps && method.steps.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-green-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-green-900">
                 <Route className="w-5 h-5 text-green-700" />
                 <span>{t('🛤️ 参修步骤与方法')}</span>
-              </div>
+              </h2>
               <div className="space-y-3 pl-4">
                 {method.steps.map((step, idx) => (
                   <div key={idx} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-green-500 before:rounded-full">
@@ -81,10 +81,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           {/* 3. 修行误区 */}
           {method.pitfalls && method.pitfalls.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <AlertTriangle className="w-5 h-5 text-rose-700" />
                 <span>{t('⚠️ 常见误区与警惕')}</span>
-              </div>
+              </h2>
               <div className="space-y-3">
                 {method.pitfalls.map((pitfall, idx) => (
                   <div
@@ -101,10 +101,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           {/* 4. 相关人物 */}
           {method.relatedPersons && method.relatedPersons.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-               <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
+               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                 <Users className="w-5 h-5 text-blue-700" />
                 <span>{t('👥 代表祖师')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={method.relatedPersons.map(pid => {
                   const rp = ZEN_PERSONS.find(p => p.id === pid);
@@ -118,10 +118,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           {/* 5. 相关概念 */}
           {method.relatedConcepts && method.relatedConcepts.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-               <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
+               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
                 <Tag className="w-5 h-5 text-purple-700" />
                 <span>{t('🔗 核心关联概念')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={method.relatedConcepts.map(cid => {
                   const rc = ZEN_CONCEPTS.find(c => c.id === cid);
@@ -138,10 +138,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
             q.relatedPersons.some(p => method.relatedPersons.includes(p))
           ).length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <MessageSquare className="w-5 h-5 text-rose-700" />
                 <span>{t('❓ 相关公案机锋')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={ZEN_KOANS.filter(q =>
                   q.relatedConcepts.some(c => method.relatedConcepts.includes(c)) ||
@@ -160,10 +160,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
              <>
              <GlossaryCard sourceIds={method.relatedBooks} />
              <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
+             <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                <BookOpen className="w-5 h-5 text-amber-700" />
                <span>{t('📚 相关传世经典')}</span>
-             </div>
+             </h2>
 
              <LinkCardGrid
                items={method.relatedBooks.map(bookId => {
@@ -179,10 +179,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           {/* 相关问答 */}
           {ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`

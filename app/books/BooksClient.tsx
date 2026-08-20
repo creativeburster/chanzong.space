@@ -38,6 +38,8 @@ export default function BooksClient() {
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
               书籍总览 ({filtered.length})
             </h1>
+            <h2 className="text-lg font-bold font-serif-zen text-slate-800 mb-4">全部典籍</h2>
+
             <p className="text-sm text-slate-500 mt-1">
               汇聚从《七佛传法偈》、达摩祖师四论、《六祖坛经》，到高丽国普照知呐禅师《真心直说》《修心诀》全量经典。
             </p>

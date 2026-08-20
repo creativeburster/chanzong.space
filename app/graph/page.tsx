@@ -40,6 +40,7 @@ export default function GraphPage() {
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
               {t('知识图谱')} ({STATS.concepts} {t('概念')} · {STATS.classics} {t('著作')} · {STATS.persons} {t('祖师')} · {STATS.koans} {t('公案')})
             </h1>
+            <h2 className="text-lg font-bold font-serif-zen text-slate-800 mt-4">{t('禅宗法脉与知识关联全景图')}</h2>
             <p className="text-sm text-slate-500 mt-1">
               {t('鼠标悬停节点查看关联线与关系语义，单击直达详情研读页。右上角可按类型筛选节点，左上角支持缩放与重置。')}
             </p>

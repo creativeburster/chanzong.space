@@ -73,10 +73,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
 
           {/* 2. 生平与求法历程 */}
           <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-            <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
+            <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
               <Compass className="w-5 h-5 text-purple-700" />
               <span>{t('📌 祖师生平与求法历程')}</span>
-            </div>
+            </h2>
             <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed whitespace-pre-wrap">
               {t(person.lifeStory)}
             </p>
@@ -84,10 +84,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
 
           {/* 3. 核心教风 */}
           <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-            <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-900">
+            <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-amber-900">
               <Sparkles className="w-5 h-5 text-amber-700" />
               <span>{t('💡 核心教风与宗理玄旨')}</span>
-            </div>
+            </h2>
             <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed bg-amber-50/50 p-6 rounded-2xl border border-amber-200/60">
               {t(person.teachings)}
             </p>
@@ -96,10 +96,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           {/* 4. 名言警策 */}
           {person.quotes && person.quotes.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <Quote className="w-5 h-5 text-rose-700" />
                 <span>{t('📜 祖师名言警策与机锋开示')}</span>
-              </div>
+              </h2>
               <div className="space-y-3">
                 {person.quotes.map((quote, idx) => (
                   <div
@@ -116,10 +116,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           {/* 6. 相关概念 */}
           {person.relatedConcepts && person.relatedConcepts.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-               <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
+               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
                 <Tag className="w-5 h-5 text-purple-700" />
                 <span>{t('🏷️ 相关核心概念')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={person.relatedConcepts.map(cid => {
                   const rc = ZEN_CONCEPTS.find(c => c.id === cid);
@@ -133,10 +133,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           {/* 6b. 相关法门 */}
           {person.relatedMethods && person.relatedMethods.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
                 <Compass className="w-5 h-5 text-sky-700" />
                 <span>{t('🧘 相关修持法门')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={person.relatedMethods.map(mid => {
                   const rm = ZEN_METHODS.find(m => m.id === mid);
@@ -150,10 +150,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           {/* 6c. 相关公案 */}
           {ZEN_KOANS.filter(q => q.relatedPersons.includes(person.id)).length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <Quote className="w-5 h-5 text-rose-700" />
                 <span>{t('❓ 相关公案机锋')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={ZEN_KOANS.filter(q => q.relatedPersons.includes(person.id)).map(q => ({
                   id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}`
@@ -169,10 +169,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
              <>
              {person.relatedBooks && person.relatedBooks.length > 0 && <GlossaryCard sourceIds={person.relatedBooks} />}
              <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
+             <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                <BookOpen className="w-5 h-5 text-amber-700" />
                <span>{t('📚 传世经典与开示法要')}</span>
-             </div>
+             </h2>
 
              <LinkCardGrid
                items={person.classics.map((classicName, idx) => {
@@ -189,10 +189,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           {/* 相关问答 */}
           {ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
-              <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
-              </div>
+              </h2>
               <LinkCardGrid
                 items={ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`

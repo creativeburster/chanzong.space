@@ -63,7 +63,10 @@ export default function ClassicPage({ params }: PageProps) {
   const prevItem = currentIndex > 0 ? manifest[currentIndex - 1] : null;
   const nextItem = currentIndex < manifest.length - 1 ? manifest[currentIndex + 1] : null;
 
-  const htmlContent = marked.parse(content || '*正在提取该篇章全文中，请稍候刷新...*', { async: false });
+  const htmlContent = marked
+    .parse(content || '*正在提取该篇章全文中，请稍候刷新...*', { async: false })
+    .replace(/<h1/g, '<h2')
+    .replace(/<\/h1>/g, '</h2>');
 
   const articleSummary = meta.summary || `${meta.title}，${meta.author}著，${meta.category}类经典。`;
 
