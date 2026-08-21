@@ -771,5 +771,13 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '阃', pinyin: 'kǔn', meaning: '门槛' },
     { char: '霹雳', pinyin: 'pī lì', meaning: '疾雷' },
     { char: '拗', pinyin: 'ǎo', meaning: '折断' },
+    { char: '鍮', pinyin: 'tōu', meaning: '黄铜似金者' },
+    { char: '摵', pinyin: 'shè', meaning: '击打声' },
+    { char: '捩', pinyin: 'liè', meaning: '扭转' },
+    { char: '幞', pinyin: 'fú', meaning: '包头软巾' },
+    { char: '蟭螟', pinyin: 'jiāo míng', meaning: '极微小的虫' },
+    { char: '鼈', pinyin: 'biē', meaning: '同鳖' },
+    { char: '拕', pinyin: 'tuō', meaning: '同拖' },
+    { char: '邈', pinyin: 'miǎo', meaning: '描绘' },
   ],
 };

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
     template: '%s | 禅宗知识库 ChanZong.space',
   },
-  description: '禅宗知识库（chanzong.space）——收录58部禅宗核心典籍，含273个概念、303则公案、145位祖师、66种修持法门、1350条问答。从达摩四论、六祖坛经到无门关、碧岩录，传承顿悟见性之道。',
+  description: '禅宗知识库（chanzong.space）——收录59部禅宗核心典籍，含277个概念、307则公案、145位祖师、67种修持法门、1966条问答。从达摩四论、六祖坛经到无门关、碧岩录，传承顿悟见性之道。',
   keywords: ['禅宗', '禅宗知识库', '六祖坛经', '达摩四论', '黄檗传心法要', '无门关', '碧岩录', '禅关策进', '大乘起信论', '公案', '禅宗典籍', 'ChanZong', 'Zen Buddhism', '见性成佛', '顿悟', '止观', '看话头', '参禅', '禅修', '祖师语录'],
   manifest: '/manifest.json',
   metadataBase: new URL(SITE_URL),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     siteName: '禅宗知识库',
     title: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
-    description: '收录58部禅宗核心典籍，含273个概念、303则公案、145位祖师、66种法门、1350条问答。传承顿悟见性之道。',
+    description: '收录59部禅宗核心典籍，含277个概念、307则公案、145位祖师、67种法门、1966条问答。传承顿悟见性之道。',
     url: SITE_URL,
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
-    description: '收录58部禅宗核心典籍，含273个概念、303则公案、145位祖师、66种法门。',
+    description: '收录59部禅宗核心典籍，含277个概念、307则公案、145位祖师、67种法门。',
     images: ['/logo-nianhua-new.jpg'],
   },
   icons: {
@@ -78,7 +78,7 @@ export default function RootLayout({
     name: '禅宗知识库',
     alternateName: 'ChanZong.space',
     url: SITE_URL,
-    description: '收录58部禅宗核心典籍，含273个概念、303则公案、145位祖师、66种法门、1350条问答。传承顿悟见性之道。',
+    description: '收录59部禅宗核心典籍，含277个概念、307则公案、145位祖师、67种法门、1966条问答。传承顿悟见性之道。',
     inLanguage: 'zh-CN',
     potentialAction: {
       '@type': 'SearchAction',

@@ -53,6 +53,14 @@ export interface KoanItem {
   relatedBooks: string[];
 }
 
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+  relatedBooks: string[];
+  relatedQa?: string;
+}
+
 export const ZEN_PERSONS: PersonItem[] = [
 
   {
@@ -911,7 +919,8 @@ export const ZEN_PERSONS: PersonItem[] = [
     ],
     "classics": [
       "禅林宝训",
-      "杨岐方会禅师语录"
+      "杨岐方会禅师语录",
+      "杨岐方会和尚后录"
     ],
     "relatedConcepts": [
       "tou-xin-wei-si"
@@ -924,8 +933,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "chuyuan"
     ],
     "relatedBooks": [
-      "chanlinbaoxun"
-    , "fayanyulu"]
+      "chanlinbaoxun", "fayanyulu", "yangqihoulu"
+    ]
   },
   {
     "id": "anan",
@@ -6411,9 +6420,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["ordinary-mind", "no-abiding"],
     "relatedPersons": ["yunmen", "zhaozhou"],
     "relatedBooks": ["biyanlu", "jingangjing"]
+  },
+  {
+    "id": "fansheng-lujue",
+    "title": "凡圣路绝",
+    "category": "境界",
+    "summary": "杨岐方会禅师宗风心要。\u201c杨岐一诀，凡圣路绝\u201d——超越凡夫与圣人的二元对立，不落渐次阶位，直截顿悟。此概念体现临济宗杨岐派直指人心、不涉程途的禅风特色。",
+    "classicRef": "yangqihoulu",
+    "relatedConcepts": ["suiliu-renxing", "yiqiefa-foshi"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "suiliu-renxing",
+    "title": "随流认得性",
+    "category": "修证",
+    "summary": "杨岐方会禅师心要偈\u201c心随万境转，转处实能幽。随流认得性，无喜复无忧\u201d的核心概念。意指不逃避境界，而在万境流转中认取自性，达到无喜无忧的自在境界。",
+    "classicRef": "yangqihoulu",
+    "relatedConcepts": ["fansheng-lujue", "xin-sui-wanjing"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "yiqiefa-foshi",
+    "title": "一切法皆是佛法",
+    "category": "教理",
+    "summary": "杨岐方会上堂开示的核心教示。\u201c佛殿对三门，僧堂对厨库\u201d——日常寺院布局即是佛法，若能会得，便可天下横行。强调平常心即道，不离世间觅菩提。",
+    "classicRef": "yangqihoulu",
+    "relatedConcepts": ["fansheng-lujue", "ordinary-mind"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "xin-sui-wanjing",
+    "title": "心随万境转",
+    "category": "心性",
+    "summary": "杨岐方会禅师反复引用的心要偈颂。心随万境流转，但在流转之处安于幽深之境。关键不在逃避境界，而在境界中认取本性。此偈融合了永嘉玄觉与杨岐宗风的精髓。",
+    "classicRef": "yangqihoulu",
+    "relatedConcepts": ["suiliu-renxing", "no-abiding"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
   }
-
-
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -7525,6 +7572,16 @@ export const ZEN_METHODS: MethodItem[] = [
   },
   {
     "id": "songgu-canjiu",    "title": "颂古参究法",    "summary": "以雪窦颂古与圆悟评唱为所缘，通过研读公案本则、咀嚼颂古偈意、参详评唱着语，层层剥开公案机关，由文字入实相的参究方法。此法贵活句不贵死句，须因指见月，不死于句下。",    "origin": "《碧岩录》",    "steps": ["先读垂示，总提一则纲宗", "次读公案本则，直探古人行履", "细参圆悟着语，看其随文点破", "再读评唱，明其血脉出处", "终参颂古，借诗偈见玄关"],    "pitfalls": ["不可徒记言句以资谈柄——大慧焚版之诫", "不可死于句下作情解会", "不可执评唱为实法"],    "classicRef": "biyanlu",    "relatedConcepts": ["song-gu", "ping-chang", "zhuoyu", "chuishi"],    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "yangqi-yijue",
+    "title": "杨岐一诀",
+    "summary": "杨岐方会禅师宗风心法。\u201c杨岐一诀，凡圣路绝\u201d——以一诀超越凡圣，直截顿悟。兼具临济棒喝之威与云门平和之韵，以拄杖、喝声为方便，直指人心见性成佛。",
+    "steps": ["直下承当：不落凡圣两边，直指当下本心", "拄杖方便：以拄杖横竖拈起，示万法皆是弥勒放光", "喝声截断：以一喝消解理路，不立文字言说", "随流认性：在万境流转中认取自性，无喜无忧"],
+    "classicRef": "yangqihoulu",
+    "relatedConcepts": ["fansheng-lujue", "suiliu-renxing"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
   }
 ]
 ;
@@ -11211,21 +11268,52 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["present-moment", "self-nature"],
     "relatedPersons": ["pang-yun"],
     "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-311",
+    "question": "师唱谁家曲，宗风嗣阿谁？",
+    "master": "杨岐方会",
+    "source": "杨岐方会和尚后录",
+    "answer": "隔江打鼓不闻声。",
+    "interpretation": "僧问杨岐宗风嗣承谁家，杨岐答\u201c隔江打鼓不闻声\u201d——暗示宗风传承不在言语声相中，超越音声形相，直指心印。",
+    "relatedConcepts": ["beyond-words", "fansheng-lujue"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "koan-312",
+    "question": "如何是佛？",
+    "master": "杨岐方会",
+    "source": "杨岐方会和尚后录",
+    "answer": "贼是人做。",
+    "interpretation": "以反常语破除学人对佛的执着。佛不是高高在上的圣者，而是如\u201c贼是人做\u201d一样平常——做人即是做佛，打破凡圣分别。",
+    "relatedConcepts": ["ordinary-mind", "yiqiefa-foshi"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "koan-313",
+    "question": "杨岐一诀，凡圣路绝。无端维摩，特地饶舌。",
+    "master": "杨岐方会",
+    "source": "杨岐方会和尚后录",
+    "answer": "上堂直示，喝一喝。",
+    "interpretation": "杨岐自述宗风心要：一诀之下，凡圣路绝。连维摩诘的辩才也属多余。此是杨岐派直截顿悟、不落渐次的宗风总纲。",
+    "relatedConcepts": ["fansheng-lujue", "suiliu-renxing"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "koan-314",
+    "question": "心随万境转，转处实能幽。随流认得性，无喜复无忧。",
+    "master": "杨岐方会",
+    "source": "杨岐方会和尚后录",
+    "answer": "天堂地狱罩却汝头，释迦老子在尔脚跟下。",
+    "interpretation": "杨岐宗风心要偈。不逃避境界，而在万境流转中认取自性。天堂地狱都在你头上，释迦老子就在你脚跟下——一切不离当下。",
+    "relatedConcepts": ["suiliu-renxing", "xin-sui-wanjing"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqihoulu"]
   }
-
-
-
-
-
 ];
-
-export interface FAQItem {
-  id: string;
-  question: string;
-  answer: string;
-  relatedQa?: string;
-  relatedBooks?: string[];
-}
 
 /* ---- AI 阅读理解 FAQ：围绕公案与经典的常见疑问与义理辨析 ---- */
 export const ZEN_FAQS: FAQItem[] = [
@@ -22800,7 +22888,125 @@ export const ZEN_FAQS: FAQItem[] = [
     question: '雪窦重显与圆悟克勤在《碧岩录》中各起什么作用？',
     answer: '雪窦重显（云门宗）选百则公案并作颂古，以诗偈颂出公案玄关；圆悟克勤（临济宗杨岐派）加垂示、着语、评唱，层层发明使颂意昭然。一选一颂一评，云门之含蓄与临济之纵横合于一书，遂成文字禅巅峰。',
     relatedBooks: ['biyanlu']
+  },
+  {
+    "id": "faq-2027",
+    "question": "\u201c杨岐一诀，凡圣路绝\u201d是什么意思？",
+    "answer": "这是杨岐方会禅师的宗风总纲。\u201c一诀\u201d指一个直截的诀窍，\u201c凡圣路绝\u201d指凡夫与圣人的路都断了——超越凡圣二元对立，不落渐次阶位，直截顿悟。杨岐派不谈次第修行，直指当下见性。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2028",
+    "question": "\u201c心随万境转，转处实能幽\u201d的禅修含义是什么？",
+    "answer": "心跟随万种境界流转，但在流转之处却能安于幽深之境。这不是逃避境界，而是在境界中保持觉性。\u201c幽\u201d指幽深难测的本性——在一切起灭流转中，认取那个不动的自性。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2029",
+    "question": "\u201c随流认得性，无喜复无忧\u201d如何理解？",
+    "answer": "随顺万流而认得自性，便既无欢喜也无忧愁。关键在\u201c认得性\u201d——在一切境界中认取本性，不为境转。既不因顺境而喜，也不因逆境而忧，因为已识得本性不动。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2030",
+    "question": "杨岐方会为什么说\u201c贼是人做\u201d来回答\u201c如何是佛\u201d？",
+    "answer": "以反常语破除学人对佛的执着。正如贼是人做的一样，佛也是人做的——做人即是做佛。杨岐以日常俗语回答神圣问题，打破凡圣分别，直指平常心即佛。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2031",
+    "question": "\u201c一切法皆是佛法\u201d在杨岐禅风中如何体现？",
+    "answer": "杨岐以\u201c佛殿对三门，僧堂对厨库\u201d来说明——日常寺院布局即是佛法。若能会得，担取钵盂拄杖便可天下横行。强调佛法不离世间，平常心即道，不须向外寻觅。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2032",
+    "question": "\u201c隔江打鼓不闻声\u201d是什么机锋？",
+    "answer": "僧问\u201c师唱谁家曲，宗风嗣阿谁\u201d，杨岐答\u201c隔江打鼓不闻声\u201d。暗示宗风传承不在言语声相中——隔江打鼓虽然有声，但听者听不到，说明真正的法脉传承超越音声形相，直指心印。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2033",
+    "question": "杨岐方会为什么善用拄杖开示？",
+    "answer": "杨岐善用拄杖作种种方便：或拈起说\u201c拄杖子岂不是法身\u201d，或掷下说\u201c逞大神通\u201d，或卓一下表示\u201c大千世界百杂碎\u201d。拄杖成为杨岐直指人心的方便工具，横竖皆是弥勒放光，不横不竖则助诸人说般若。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2034",
+    "question": "\u201c万法是心光，诸缘惟性晓\u201d是什么意思？",
+    "answer": "万法都是心光，一切缘起唯有自性才能明了。\u201c本无迷悟人，只要今日了\u201d——本来没有迷和悟的人，只是需要今天了悟。直指当下，不涉渐修，强调今日顿悟的可能。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2035",
+    "question": "杨岐方会\u201c且坐吃茶\u201d的机锋含义是什么？",
+    "answer": "在勘辩来僧时，杨岐多次以\u201c且坐吃茶\u201d结束对话。当僧人拟议思考时，杨岐不说破，只说吃茶去——截断学人的思量分别，让其在日常喝茶中自悟。这与赵州\u201c吃茶去\u201d有异曲同工之妙。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2036",
+    "question": "\u201c金鍮不辨，玉石不分\u201d是杨岐对什么事的评价？",
+    "answer": "杨岐评道吾师兄对世尊与外道的赞叹\u201c世尊只眼通三世，外道双眸贯五天\u201d，认为道吾虽善，但\u201c甚与古人出气\u201d——仍在圣凡之间起分别。杨岐道\u201c金鍮不辨，玉石不分\u201d，意指不应在圣凡、真俗之间起分别心。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2037",
+    "question": "\u201c来年更有新条在，恼乱春风卒未休\u201d出现了两次，有什么深意？",
+    "answer": "此句在杨岐开堂时和另一次上堂时都出现。\u201c新条\u201d指新的法令教化，\u201c恼乱春风\u201d比喻佛法教化如春风不息。意谓禅宗教化无尽，宗风不断，年年有新法度人，春风不止。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2038",
+    "question": "杨岐方会的\u201c自术真赞\u201d表达了什么境界？",
+    "answer": "杨岐自赞\u201c似驴非驴，似马非马\u201d、\u201c指驴又无尾，唤牛又无角\u201d——以自嘲方式消解一切名相执着。既不认同自己是驴是马，也不承认是圣是凡，体现超越二元对立的洒脱境界。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2039",
+    "question": "\u201c心法双忘性即真\u201d在杨岐禅法中的地位如何？",
+    "answer": "杨岐上堂引\u201c心是根，法是尘，两种犹如镜上痕。痕垢尽时光始现，心法双忘性即真\u201d。此偈揭示修行次第：先识心法如镜上痕，再除痕垢，最终心法双忘，方见真性。是杨岐禅法从功夫到见性的完整表述。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2040",
+    "question": "杨岐方会与石霜楚圆是什么关系？",
+    "answer": "杨岐方会嗣法于石霜楚圆（慈明），是临济宗第七世。石霜楚圆门下出杨岐方会和黄龙慧南两支，分别开创杨岐派和黄龙派，合称\u201c杨岐黄龙\u201d，是临济宗在宋代最重要的两大法脉。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2041",
+    "question": "\u201c一即一切，一切即一\u201d在杨岐开示中如何运用？",
+    "answer": "杨岐拈起拄杖说\u201c吞却山河大地了也\u201d，过去未来诸佛天下老和尚总在拄杖头上，遂以拄杖划一划说\u201c不消一喝\u201d。以拄杖示一多相即、万法融通的华严境界，又以一喝消解之，不执于理。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2042",
+    "question": "杨岐方会\u201c脚跟下一句，作么生道\u201d的勘辩手法有什么特点？",
+    "answer": "杨岐在勘辩来僧时反复追问\u201c脚跟下一句作么生道\u201d，逼问学人当下本分事。不管僧人如何应对——摵坐具、画圆相、说愁人语——杨岐都不认可，最终以\u201c且坐吃茶\u201d截断。体现杨岐接人凌厉而不失平和的宗风。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2043",
+    "question": "\u201c太平本是将军致，不许将军见太平\u201d有什么禅机？",
+    "answer": "此句两次出现。字面意：太平本是将军打出来的，但将军却不能享受太平。禅机：开悟境界是修行而来的，但证悟后不再有\u201c修行者\u201d与\u201c开悟\u201d的分别——能所双泯，因果不二。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2044",
+    "question": "杨岐方会如何以\u201c弥勒真弥勒\u201d偈开示？",
+    "answer": "杨岐上堂说\u201c弥勒真弥勒，分身千百亿，时时示时人，时人皆不识\u201d，掷下拄杖便归方丈。后又拈起拄杖说\u201c拄杖子岂不是弥勒\u201d——横竖皆是弥勒放光。以拄杖示弥勒分身千百亿，万物皆是弥勒化现。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2045",
+    "question": "\u201c钵盂口向天\u201d是什么机锋？",
+    "answer": "杨岐上堂：\u201c天得一以清，地得一以宁，君王得一以治天下。衲僧得一，且作么生？\u201d良久说\u201c钵盂口向天\u201d。以钵盂口朝天示\u201c一\u201d——衲僧所得之\u201c一\u201d不是玄妙道理，而是眼前钵盂口朝天这般平常。",
+    "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "faq-2046",
+    "question": "杨岐方会的宗风与临济义玄有何异同？",
+    "answer": "杨岐方会继承临济宗棒喝交加的峻烈宗风，但又有自己的特色：临济以四料简四宾主著称，杨岐则以凡圣路绝为旨，善用拄杖作种种方便，兼具云门平和之韵。杨岐一诀更直截，不立阶位，直指顿悟。",
+    "relatedBooks": ["yangqihoulu"]
   }
-
-,
 ];
