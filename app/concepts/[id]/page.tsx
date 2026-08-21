@@ -42,7 +42,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     alternates: { canonical: `/concepts/${params.id}` },
     openGraph: {
       type: 'article',
-      title: `${name} · 概念 | 禅宗知识库`,
+      title: `${name} · 概念 | 禅宗知识库 ChanZong.space`,
       description: desc.slice(0, 150) || '概念条目',
       url: `https://chanzong.space/concepts/${params.id}`,
       siteName: '禅宗知识库',

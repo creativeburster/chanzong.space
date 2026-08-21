@@ -17,7 +17,7 @@ export function generateMetadata({ params }: LayoutProps): Metadata {
     alternates: { canonical: `/persons/${person.id}` },
     openGraph: {
       type: 'profile',
-      title: `${person.name} · ${person.title} | 禅宗知识库`,
+      title: `${person.name} · ${person.title} | 禅宗知识库 ChanZong.space`,
       description: desc.slice(0, 160),
       url: `https://chanzong.space/persons/${person.id}`,
       siteName: '禅宗知识库',
