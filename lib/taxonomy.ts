@@ -11312,6 +11312,126 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["suiliu-renxing", "xin-sui-wanjing"],
     "relatedPersons": ["yangqi-fanghui"],
     "relatedBooks": ["yangqihoulu"]
+  },
+  {
+    "id": "koan-315",
+    "question": "如何是圣谛第一义？",
+    "answer": "廓然无圣。",
+    "context": "梁武帝问达摩，达摩答\u201c廓然无圣\u201d。帝不契，达摩遂渡江北去。",
+    "interpretation": "圣谛本空，无圣可立。武帝执于圣解，达摩以\u201c廓然无圣\u201d截断其分别。此是禅宗东来第一公案。",
+    "master": "菩提达摩",
+    "source": "《碧岩录》第一则",
+    "relatedConcepts": ["kong-ran-wu-sheng"],
+    "relatedPersons": ["bodhidharma"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-316",
+    "question": "至道无难，唯嫌拣择。一有言语便是拣择。老僧不在明白里，护惜个什么？",
+    "answer": "不知道。",
+    "context": "赵州示众，僧追问，州以\u201c不知\u201d截断。",
+    "interpretation": "至道本无难，唯嫌拣择心。一落言语即是拣择。僧追问护惜什么，州以不知截断——不知即无分别智现前处。",
+    "master": "赵州从谂",
+    "source": "《碧岩录》第二则",
+    "relatedConcepts": ["jianshe"],
+    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-317",
+    "question": "如何是佛？",
+    "answer": "麻三斤。",
+    "context": "僧问洞山，山云\u201c麻三斤\u201d。",
+    "interpretation": "佛不高居殿宇，就在贱物平常处。麻三斤是活句非死句，堵断学人思量，令其于言下回光返照。",
+    "master": "洞山守初",
+    "source": "《碧岩录》第十八则",
+    "relatedConcepts": ["huo-ju-si-ju"],
+    "relatedPersons": ["dongshan-shouchu"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-318",
+    "question": "如何是祖师西来意？",
+    "answer": "庭前柏树子。",
+    "context": "僧问赵州，州云\u201c庭前柏树子\u201d。",
+    "interpretation": "祖师西来意不在别处，就在庭前柏树子里——道在日用，不假外求。柏树子是活句，堵断学人向玄妙处寻觅。",
+    "master": "赵州从谂",
+    "source": "《碧岩录》第三十七则",
+    "relatedConcepts": ["dao-zai-riyong"],
+    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-319",
+    "question": "如何是法身？",
+    "answer": "六不收。",
+    "context": "僧问云门，门云\u201c六不收\u201d。",
+    "interpretation": "法身超绝待对，非六根所能收摄。云门以三字截断思量——六根六识六境皆不能范围法身，须向言语道断处荐取。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第四十七则",
+    "relatedConcepts": ["fashen-wuxiang"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-320",
+    "question": "如何是尘尘三昧？",
+    "answer": "钵里饭，桶里水。",
+    "context": "僧问云门，门云\u201c钵里饭桶里水\u201d。",
+    "interpretation": "尘尘三昧不在玄妙处，就在钵里饭桶里水的日用中。一微尘中含三昧，一钵饭里见全体——道在寻常。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第五十则",
+    "relatedConcepts": ["chenchen-sanmei", "dao-zai-riyong"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-321",
+    "question": "透网金鳞，未审以何为食？",
+    "answer": "待汝出网来，向汝道。",
+    "context": "三圣问雪峰，峰云\u201c待汝出网来向汝道\u201d，圣云\u201c一千五百人善知识话头也不识\u201d，峰云\u201c老僧住持事繁\u201d。",
+    "interpretation": "透网金鳞喻已透脱者。雪峰壁立万仞，三圣亦是作家方敢回击。二人一出一入，未分胜负——作家相见，一擒一纵。",
+    "master": "雪峰义存",
+    "source": "《碧岩录》第四十九则",
+    "relatedConcepts": ["zuo-jia-xiang-jian"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-322",
+    "question": "门外是什么声？",
+    "answer": "雨滴声。众生颠倒，迷己逐物。",
+    "context": "镜清问僧，僧云\u201c雨滴声\u201d，清云\u201c众生颠倒迷己逐物\u201d，僧云\u201c和尚作么生\u201d，清云\u201c洎不迷己\u201d。",
+    "interpretation": "雨滴声本是声色境，若唤作雨声则是迷己逐物。镜清以洎不迷己点拨——出身犹可易，脱体道应难。",
+    "master": "镜清道怤",
+    "source": "《碧岩录》第四十六则",
+    "relatedConcepts": ["mi-ji-zhu-wu"],
+    "relatedPersons": ["jingqing-daofu"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-323",
+    "question": "万法归一，一归何处？",
+    "answer": "我在青州作一领布衫重七斤。",
+    "context": "僧问赵州\u201c万法归一一归何处\u201d，州云\u201c我在青州作一领布衫重七斤\u201d。",
+    "interpretation": "万法归一已是一往之谈，一归何处更无落处。赵州不向玄妙处答，却道青州布衫七斤——直下寻常，截断学人思量。",
+    "master": "赵州从谂",
+    "source": "《碧岩录》第四十五则",
+    "relatedConcepts": ["wanfa-gui-yi"],
+    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "koan-324",
+    "question": "如何是佛法大意？",
+    "answer": "填沟塞壑。",
+    "context": "僧问云门\u201c如何是佛法大意\u201d，门云\u201c填沟塞壑\u201d。",
+    "interpretation": "佛法大意不在别处，就在填沟塞壑的日用中——道在寻常，不假奇特。与马祖平常心是道同宗旨。",
+    "master": "云门文偃",
+    "source": "《碧岩录》第三十六则",
+    "relatedConcepts": ["dao-zai-riyong"],
+    "relatedPersons": ["yunmen-wenyan"],
+    "relatedBooks": ["biyanlu"]
   }
 ];
 
