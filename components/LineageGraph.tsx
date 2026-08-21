@@ -223,7 +223,7 @@ export const LineageGraph: React.FC = () => {
                     {t('南岳怀让 → 马祖道一')}
                   </h3>
                 </div>
-                <div className="text-xs text-slate-900 font-serif-zen italic">
+                <div className="text-base text-slate-900 font-serif-zen italic">
                   {t('【江西洪州宗风】')}
                 </div>
               </div>
@@ -330,7 +330,7 @@ export const LineageGraph: React.FC = () => {
                     {t('青原行思 → 石头希迁')}
                   </h3>
                 </div>
-                <div className="text-xs text-slate-900 font-serif-zen italic">
+                <div className="text-base text-slate-900 font-serif-zen italic">
                   {t('【湖南石头宗风】')}
                 </div>
               </div>
