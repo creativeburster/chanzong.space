@@ -33,7 +33,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
     openGraph: {
       type: 'article',
-      title: `${meta.title} · ${meta.author} | 禅宗知识库`,
+      title: `${meta.title} · ${meta.author} | 禅宗知识库 ChanZong.space`,
       description: summary.slice(0, 160),
       url: `https://chanzong.space/classics/${meta.id}`,
       siteName: '禅宗知识库',
