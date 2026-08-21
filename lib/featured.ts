@@ -135,6 +135,11 @@ export const FEATURED_PERSONS = [
     name: '法眼文益',
     title: '法眼宗开山祖师',
   },
+  {
+    id: 'baizhang',
+    name: '百丈怀海',
+    title: '禅门清规祖师',
+  },
 ];
 
 export const FEATURED_FAQS = [
