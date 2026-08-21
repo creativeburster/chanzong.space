@@ -29,16 +29,15 @@ export default function BooksClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
-          <Breadcrumb items={[{ label: '书籍总览' }]} />
+          <Breadcrumb items={[{ label: '禅宗典籍藏经阁' }]} />
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-800 mb-2">
               <BookOpen className="w-4 h-4" />
               <span>全量典籍藏经阁</span>
             </div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
-              书籍总览 ({filtered.length})
+              禅宗典籍藏经阁 ({filtered.length})
             </h1>
-            <h2 className="text-lg font-bold font-serif-zen text-slate-800 mb-4">全部典籍</h2>
 
             <p className="text-sm text-slate-500 mt-1">
               汇聚从《七佛传法偈》、达摩祖师四论、《六祖坛经》，到高丽国普照知呐禅师《真心直说》《修心诀》全量经典。

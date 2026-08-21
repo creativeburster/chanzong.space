@@ -110,6 +110,36 @@ export const FEATURED_PERSONS = [
     name: '临济义玄',
     title: '临济宗开山祖师',
   },
+  {
+    id: 'zhaozhou',
+    name: '赵州从谂',
+    title: '赵州古佛',
+  },
+  {
+    id: 'deshan-xuanjian',
+    name: '德山宣鉴',
+    title: '德山棒祖师',
+  },
+  {
+    id: 'dongshan',
+    name: '洞山良价',
+    title: '曹洞宗开山祖师',
+  },
+  {
+    id: 'yunmen',
+    name: '云门文偃',
+    title: '云门宗开山祖师',
+  },
+  {
+    id: 'fayan-wenyi',
+    name: '法眼文益',
+    title: '法眼宗开山祖师',
+  },
+  {
+    id: 'baizhang',
+    name: '百丈怀海',
+    title: '禅门清规祖师',
+  },
 ];
 
 export const FEATURED_FAQS = [

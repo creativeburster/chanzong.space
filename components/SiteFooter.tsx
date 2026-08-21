@@ -9,6 +9,10 @@ export const SiteFooter = () => {
         <Link href="/sitemap" className="text-slate-400 hover:text-amber-400 transition-colors">
           站点地图
         </Link>
+        <span className="text-slate-600">|</span>
+        <Link href="/about" className="text-slate-400 hover:text-amber-400 transition-colors">
+          关于本站
+        </Link>
       </div>
     </footer>
   );

@@ -17,7 +17,7 @@ export function generateMetadata({ params }: LayoutProps): Metadata {
     alternates: { canonical: `/koan/${koan.id}` },
     openGraph: {
       type: 'article',
-      title: `${koan.question.slice(0, 30)} | 禅宗知识库`,
+      title: `${koan.question.slice(0, 30)} | 禅宗知识库 ChanZong.space`,
       description: desc.slice(0, 160),
       url: `https://chanzong.space/koan/${koan.id}`,
       siteName: '禅宗知识库',

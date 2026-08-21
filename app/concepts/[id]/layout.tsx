@@ -16,7 +16,7 @@ export function generateMetadata({ params }: LayoutProps): Metadata {
     alternates: { canonical: `/concepts/${concept.id}` },
     openGraph: {
       type: 'article',
-      title: `${concept.title} | 禅宗知识库`,
+      title: `${concept.title} | 禅宗知识库 ChanZong.space`,
       description: concept.summary.slice(0, 160),
       url: `https://chanzong.space/concepts/${concept.id}`,
       siteName: '禅宗知识库',

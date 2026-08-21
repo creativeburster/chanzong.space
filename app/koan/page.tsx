@@ -3,13 +3,13 @@ import KoansPageClient from './KoansPageClient';
 import { STATS } from '@/lib/stats';
 
 export const metadata: Metadata = {
-  title: '公案',
-  description: '禅宗知识库·公案：传承顿悟见性之道。',
+  title: '禅宗公案',
+  description: `禅宗${STATS.koans}则公案全集——赵州狗子、南泉斩猫、百丈野狐、德山棒临济喝等，古德机锋对决与祖师开悟因缘，附出处与相关经典。`,
   alternates: { canonical: '/koan' },
   openGraph: {
     type: 'website',
-    title: '公案',
-    description: '禅宗知识库·公案，传承顿悟见性之道。',
+    title: '禅宗公案 | 禅宗知识库 ChanZong.space',
+    description: `禅宗${STATS.koans}则公案——古德机锋对决与祖师开悟因缘。`,
     url: 'https://chanzong.space/koan',
   },
 };
