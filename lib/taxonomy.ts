@@ -7577,7 +7577,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "id": "yangqi-yijue",
     "title": "杨岐一诀",
     "summary": "杨岐方会禅师宗风心法。\u201c杨岐一诀，凡圣路绝\u201d——以一诀超越凡圣，直截顿悟。兼具临济棒喝之威与云门平和之韵，以拄杖、喝声为方便，直指人心见性成佛。",
-    "steps": ["直下承当：不落凡圣两边，直指当下本心", "拄杖方便：以拄杖横竖拈起，示万法皆是弥勒放光", "喝声截断：以一喝消解理路，不立文字言说", "随流认性：在万境流转中认取自性，无喜无忧"],
+    "steps": ["直下承当：不落凡圣两边，直指当下本心", "拄杖方便：以拄杖横竖拈起，示万法皆是弥勒放光", "喝声截断：以一喝消解理路，不立文字言说", "随流认得性：在万境流转中认取自性，无喜无忧"],
     "classicRef": "yangqihoulu",
     "relatedConcepts": ["fansheng-lujue", "suiliu-renxing"],
     "relatedPersons": ["yangqi-fanghui"],
