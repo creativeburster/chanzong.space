@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_FAQS } from '@/lib/taxonomy';
-import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Filter } from 'lucide-react';
+import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Search } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -24,12 +24,13 @@ export default function FAQPageClient() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<string | null>(null);
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
+  const [keyword, setKeyword] = useState('');
   const [displayCount, setDisplayCount] = useState(10);
+  const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
+  const bookRef = useRef<HTMLDivElement>(null);
   const { t } = useLang();
 
-  const allFaqs: FAQEntry[] = useMemo(() => {
-    return ZEN_FAQS.map(f => ({ ...f }));
-  }, []);
+  const allFaqs: FAQEntry[] = useMemo(() => ZEN_FAQS.map(f => ({ ...f })), []);
 
   const bookMap = useMemo(() => {
     const map: Record<string, { id: string; title: string }> = {};
@@ -43,9 +44,7 @@ export default function FAQPageClient() {
     const ids = new Set<string>();
     for (const faq of allFaqs) {
       if (faq.relatedBooks) {
-        for (const bid of faq.relatedBooks) {
-          ids.add(bid);
-        }
+        for (const bid of faq.relatedBooks) ids.add(bid);
       }
     }
     return Array.from(ids)
@@ -55,9 +54,18 @@ export default function FAQPageClient() {
   }, [allFaqs, bookMap]);
 
   const filteredFaqs = useMemo(() => {
-    if (!selectedBook) return allFaqs;
-    return allFaqs.filter((faq) => faq.relatedBooks?.includes(selectedBook));
-  }, [allFaqs, selectedBook]);
+    let result = allFaqs;
+    if (selectedBook) {
+      result = result.filter((faq) => faq.relatedBooks?.includes(selectedBook));
+    }
+    if (keyword.trim()) {
+      const kw = keyword.trim().toLowerCase();
+      result = result.filter(
+        (f) => f.question.toLowerCase().includes(kw) || f.answer.toLowerCase().includes(kw)
+      );
+    }
+    return result;
+  }, [allFaqs, selectedBook, keyword]);
 
   const visibleFaqs = filteredFaqs.slice(0, displayCount);
   const hasMore = displayCount < filteredFaqs.length;
@@ -68,6 +76,21 @@ export default function FAQPageClient() {
     setOpenFaq(null);
   };
 
+  const selectedBookTitle = selectedBook ? bookMap[selectedBook]?.title : null;
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (bookRef.current && !bookRef.current.contains(e.target as Node)) setBookDropdownOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  useEffect(() => {
+    setDisplayCount(10);
+    setOpenFaq(null);
+  }, [keyword]);
+
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
       <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
@@ -75,70 +98,97 @@ export default function FAQPageClient() {
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
 
-        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
           <Breadcrumb items={[{ label: '参究 FAQ' }]} />
-          <div className="mb-8">
-            <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-700 mb-2">
-              <Lightbulb className="w-4 h-4" />
-              <span>{t('参究常见疑问与义理辨析')}</span>
-            </div>
-            <h1 className="text-3xl font-bold font-serif-zen text-slate-900">
-              {t('参究 FAQ')} ({allFaqs.length})
-            </h1>
 
-            <p className="text-sm text-slate-500 mt-1">
-              {t('围绕公案、经典与禅宗义理的常见疑问解答。可按书籍筛选，点击展开查看详细辨析。')}
-            </p>
+          {/* Header */}
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200/70 flex items-center justify-center">
+              <Lightbulb className="w-5 h-5 text-amber-700" />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
+                {t('参究 FAQ')}
+              </h1>
+              <p className="text-[13px] text-slate-500 mt-0.5">
+                共 {allFaqs.length} 条 · {t('围绕公案、经典与禅宗义理的常见疑问解答')}
+              </p>
+            </div>
           </div>
 
-          <div className="mb-6">
-            <div className="flex items-center space-x-2 mb-3">
-              <Filter className="w-4 h-4 text-slate-500" />
-              <span className="text-[13px] font-semibold text-slate-500">{t('按书籍筛选')}</span>
-              {selectedBook && (
-                <button
-                  onClick={() => handleBookChange(null)}
-                  className="text-[12px] text-amber-700 hover:text-amber-900 font-semibold ml-2"
-                >
-                  {t('清除筛选')}
-                </button>
-              )}
+          {/* Filter Bar */}
+          <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-8">
+            <div className="relative flex-1 min-w-0">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+              <input
+                type="text"
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+                placeholder="搜索问题或回答内容…"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-amber-600/60 focus:ring-2 focus:ring-amber-600/10 transition-all"
+              />
             </div>
-            <div className="flex flex-wrap gap-2">
+
+            {/* Book Filter Dropdown */}
+            <div className="relative" ref={bookRef}>
               <button
-                onClick={() => handleBookChange(null)}
-                className={`px-3 py-1.5 rounded-lg text-[13px] font-semibold border transition-all ${
-                  !selectedBook
-                    ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-amber-400 hover:text-amber-700'
+                onClick={() => setBookDropdownOpen((o) => !o)}
+                className={`w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold transition-all border ${
+                  selectedBook
+                    ? 'bg-slate-900 text-white border-slate-900 shadow-sm'
+                    : 'bg-white text-slate-700 border-slate-200 hover:border-amber-600/60 hover:text-amber-800'
                 }`}
               >
-                {t('全部')} ({allFaqs.length})
+                <span className="flex items-center gap-2 truncate max-w-48">
+                  <BookOpen className="w-4 h-4 shrink-0" />
+                  {selectedBookTitle ? selectedBookTitle : t('全部典籍')}
+                </span>
+                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${bookDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
-              {booksWithFaqs.map((book) => {
-                const count = allFaqs.filter((f) => f.relatedBooks?.includes(book.id)).length;
-                const isActive = selectedBook === book.id;
-                return (
+
+              {bookDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 w-full sm:w-64 max-h-80 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
                   <button
-                    key={book.id}
-                    onClick={() => handleBookChange(book.id)}
-                    className={`px-3 py-1.5 rounded-lg text-[13px] font-semibold border transition-all flex items-center space-x-1.5 ${
-                      isActive
-                        ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
-                        : 'bg-white text-slate-600 border-slate-200 hover:border-amber-400 hover:text-amber-700'
+                    onClick={() => { handleBookChange(null); setBookDropdownOpen(false); }}
+                    className={`w-full text-left px-4 py-2 text-[13px] font-semibold transition-colors ${
+                      !selectedBook
+                        ? 'bg-amber-50 text-amber-800'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                     }`}
                   >
-                    <BookOpen className="w-3.5 h-3.5" />
-                    <span>{t(book.title)}</span>
-                    <span className={`text-[11px] font-mono ${isActive ? 'text-amber-100' : 'text-slate-400'}`}>
-                      {count}
-                    </span>
+                    {t('全部典籍')} ({allFaqs.length})
                   </button>
-                );
-              })}
+                  {booksWithFaqs.map((book) => {
+                    const count = allFaqs.filter((f) => f.relatedBooks?.includes(book.id)).length;
+                    return (
+                      <button
+                        key={book.id}
+                        onClick={() => { handleBookChange(book.id); setBookDropdownOpen(false); }}
+                        className={`w-full text-left px-4 py-2 text-[13px] transition-colors ${
+                          selectedBook === book.id
+                            ? 'bg-amber-50 text-amber-800 font-semibold'
+                            : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                        }`}
+                      >
+                        <span className="flex items-center justify-between">
+                          <span className="truncate">{t(book.title)}</span>
+                          <span className="text-[11px] text-slate-400 font-mono shrink-0 ml-2">{count}</span>
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
 
+          {(keyword.trim() || selectedBook) && (
+            <p className="text-[13px] text-slate-500 mb-4">
+              {t('共找到')} {filteredFaqs.length} {t('条问答')}
+            </p>
+          )}
+
+          {/* FAQ List */}
           <div className="space-y-3">
             {visibleFaqs.map((faq) => {
               const isOpen = openFaq === faq.id;
@@ -230,7 +280,13 @@ export default function FAQPageClient() {
           {filteredFaqs.length === 0 && (
             <div className="text-center py-16 text-slate-500">
               <Lightbulb className="w-12 h-12 mx-auto mb-4 opacity-30" />
-              <p className="text-[15px]">{t('该书籍暂无关联问答')}</p>
+              <p className="text-[15px]">{t('未找到匹配的问答')}</p>
+              <button
+                onClick={() => { setKeyword(''); handleBookChange(null); }}
+                className="mt-3 text-amber-800 text-[13px] font-semibold hover:underline"
+              >
+                {t('清除筛选条件')}
+              </button>
             </div>
           )}
         </main>
