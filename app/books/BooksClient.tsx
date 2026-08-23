@@ -2,21 +2,25 @@
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { BookOpen, ChevronRight, Search, ChevronDown, Library } from 'lucide-react';
+import { BookOpen, ChevronRight, Search, ChevronDown, Library, ArrowRight } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
 export default function BooksClient() {
+  const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('全部');
   const [keyword, setKeyword] = useState('');
   const [displayCount, setDisplayCount] = useState(12);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [catDropdownOpen, setCatDropdownOpen] = useState(false);
+  const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
+  const catRef = useRef<HTMLDivElement>(null);
+  const bookRef = useRef<HTMLDivElement>(null);
 
   const categories = useMemo(
     () => ['全部', ...Array.from(new Set(manifest.map((item) => item.category)))],
@@ -42,9 +46,8 @@ export default function BooksClient() {
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false);
-      }
+      if (catRef.current && !catRef.current.contains(e.target as Node)) setCatDropdownOpen(false);
+      if (bookRef.current && !bookRef.current.contains(e.target as Node)) setBookDropdownOpen(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
@@ -61,27 +64,30 @@ export default function BooksClient() {
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
 
-        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-12">
+        <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
           <Breadcrumb items={[{ label: '禅宗典籍藏经阁' }]} />
 
-          {/* Hero */}
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/70 text-amber-800 text-[13px] font-semibold mb-5">
-              <Library className="w-3.5 h-3.5" />
-              <span>全量典籍 · 共 {manifest.length} 部</span>
+          {/* Header */}
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200/70 flex items-center justify-center">
+                <Library className="w-5 h-5 text-amber-800" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
+                  禅宗典籍藏经阁
+                </h1>
+                <p className="text-[13px] text-slate-500 mt-0.5">
+                  共 {manifest.length} 部经典 · 含原文、白话翻译与生僻字注音
+                </p>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold font-serif-zen text-slate-900 tracking-tight mb-3">
-              禅宗典籍藏经阁
-            </h1>
-            <p className="text-base text-slate-600 font-serif-zen max-w-xl mx-auto leading-relaxed">
-              自七佛传法偈、达摩四论、《六祖坛经》，至《碧岩录》《禅关策进》——历代祖师心要，尽藏于此
-            </p>
           </div>
 
           {/* Filter Bar */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8 max-w-2xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-8">
             {/* Search Input */}
-            <div className="relative flex-1">
+            <div className="relative flex-1 min-w-0">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
               <input
                 type="text"
@@ -93,9 +99,9 @@ export default function BooksClient() {
             </div>
 
             {/* Category Dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            <div className="relative" ref={catRef}>
               <button
-                onClick={() => setDropdownOpen((o) => !o)}
+                onClick={() => { setCatDropdownOpen((o) => !o); setBookDropdownOpen(false); }}
                 className={`w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold transition-all border ${
                   activeCategory !== '全部'
                     ? 'bg-slate-900 text-white border-slate-900 shadow-sm'
@@ -106,20 +112,15 @@ export default function BooksClient() {
                   <BookOpen className="w-4 h-4 shrink-0" />
                   {activeCategory}
                 </span>
-                <ChevronDown
-                  className={`w-4 h-4 shrink-0 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`}
-                />
+                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${catDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
-              {dropdownOpen && (
-                <div className="absolute right-0 sm:left-0 top-full mt-2 w-full sm:w-52 max-h-72 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
+              {catDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 w-full sm:w-52 max-h-72 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
                   {categories.map((cat) => (
                     <button
                       key={cat}
-                      onClick={() => {
-                        setActiveCategory(cat);
-                        setDropdownOpen(false);
-                      }}
+                      onClick={() => { setActiveCategory(cat); setCatDropdownOpen(false); }}
                       className={`w-full text-left px-4 py-2 text-[13px] font-semibold transition-colors ${
                         activeCategory === cat
                           ? 'bg-amber-50 text-amber-800'
@@ -132,11 +133,49 @@ export default function BooksClient() {
                 </div>
               )}
             </div>
+
+            {/* Direct Book Picker */}
+            <div className="relative" ref={bookRef}>
+              <button
+                onClick={() => { setBookDropdownOpen((o) => !o); setCatDropdownOpen(false); }}
+                className="w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold bg-amber-700 text-white border border-amber-700 hover:bg-amber-800 transition-all shadow-sm"
+              >
+                <span className="flex items-center gap-2">
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                  直达典籍
+                </span>
+                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${bookDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {bookDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 w-full sm:w-72 max-h-80 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
+                  {manifest.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => router.push(`/classics/${item.id}`)}
+                      className="w-full text-left px-4 py-2 text-[13px] transition-colors hover:bg-amber-50 group/item"
+                    >
+                      <span className="flex items-center justify-between gap-2">
+                        <span className="font-semibold text-slate-700 group-hover/item:text-amber-800 truncate">
+                          {item.title}
+                        </span>
+                        <span className="text-[11px] text-slate-400 font-mono shrink-0">
+                          #{item.idx}
+                        </span>
+                      </span>
+                      <span className="block text-[11px] text-slate-400 mt-0.5 truncate">
+                        {item.author} · {item.category}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Result count */}
           {(keyword.trim() || activeCategory !== '全部') && (
-            <p className="text-center text-[13px] text-slate-500 mb-6">
+            <p className="text-[13px] text-slate-500 mb-4">
               共找到 {filtered.length} 部经典
             </p>
           )}
@@ -187,10 +226,7 @@ export default function BooksClient() {
               <BookOpen className="w-10 h-10 text-slate-300 mx-auto mb-4" />
               <p className="text-slate-500 text-[15px]">未找到匹配的经典</p>
               <button
-                onClick={() => {
-                  setKeyword('');
-                  setActiveCategory('全部');
-                }}
+                onClick={() => { setKeyword(''); setActiveCategory('全部'); }}
                 className="mt-3 text-amber-800 text-[13px] font-semibold hover:underline"
               >
                 清除筛选条件
