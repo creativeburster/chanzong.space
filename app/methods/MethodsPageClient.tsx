@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_METHODS } from '@/lib/taxonomy';
-import { Compass, ChevronRight, Search } from 'lucide-react';
+import { Compass, ChevronRight, Search, ChevronDown, BookOpen } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -16,21 +16,44 @@ export default function MethodsPageClient() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [displayCount, setDisplayCount] = useState(12);
   const [keyword, setKeyword] = useState('');
+  const [activeRef, setActiveRef] = useState('全部');
+  const [refDropdownOpen, setRefDropdownOpen] = useState(false);
+  const refRef = useRef<HTMLDivElement>(null);
   const { t } = useLang();
 
+  const classicRefs = useMemo(
+    () => ['全部', ...Array.from(new Set(ZEN_METHODS.map((m) => m.classicRef)))],
+    []
+  );
+
   const filtered = useMemo(() => {
-    if (!keyword.trim()) return ZEN_METHODS;
-    const kw = keyword.trim().toLowerCase();
-    return ZEN_METHODS.filter(
-      (m) =>
-        m.title.toLowerCase().includes(kw) ||
-        m.summary.toLowerCase().includes(kw) ||
-        m.steps.some((s) => s.toLowerCase().includes(kw))
-    );
-  }, [keyword]);
+    let result = activeRef === '全部' ? ZEN_METHODS : ZEN_METHODS.filter((m) => m.classicRef === activeRef);
+    if (keyword.trim()) {
+      const kw = keyword.trim().toLowerCase();
+      result = result.filter(
+        (m) =>
+          m.title.toLowerCase().includes(kw) ||
+          m.summary.toLowerCase().includes(kw) ||
+          m.steps.some((s) => s.toLowerCase().includes(kw))
+      );
+    }
+    return result;
+  }, [keyword, activeRef]);
 
   const visibleMethods = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (refRef.current && !refRef.current.contains(e.target as Node)) setRefDropdownOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  useEffect(() => {
+    setDisplayCount(12);
+  }, [activeRef, keyword]);
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -40,7 +63,7 @@ export default function MethodsPageClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
-          <Breadcrumb items={[{ label: '修行方法' }]} />
+          <Breadcrumb items={[{ label: '法门' }]} />
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-8">
@@ -49,7 +72,7 @@ export default function MethodsPageClient() {
             </div>
             <div>
               <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
-                {t('修行方法')}
+                {t('法门')}
               </h1>
               <p className="text-[13px] text-slate-500 mt-0.5">
                 共 {ZEN_METHODS.length} 种 · {t('参究公案、看话头、默照禅、二入四行等实修法门')}
@@ -57,21 +80,56 @@ export default function MethodsPageClient() {
             </div>
           </div>
 
-          {/* Search Bar */}
-          <div className="mb-8">
-            <div className="relative max-w-lg">
+          {/* Filter Bar */}
+          <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-8">
+            <div className="relative flex-1 min-w-0">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
               <input
                 type="text"
                 value={keyword}
-                onChange={(e) => { setKeyword(e.target.value); setDisplayCount(12); }}
+                onChange={(e) => setKeyword(e.target.value)}
                 placeholder="搜索法门名称、要领或描述…"
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-sky-600/60 focus:ring-2 focus:ring-sky-600/10 transition-all"
               />
             </div>
+
+            <div className="relative" ref={refRef}>
+              <button
+                onClick={() => setRefDropdownOpen((o) => !o)}
+                className={`w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold transition-all border ${
+                  activeRef !== '全部'
+                    ? 'bg-slate-900 text-white border-slate-900 shadow-sm'
+                    : 'bg-white text-slate-700 border-slate-200 hover:border-sky-600/60 hover:text-sky-800'
+                }`}
+              >
+                <span className="flex items-center gap-2 truncate max-w-48">
+                  <BookOpen className="w-4 h-4 shrink-0" />
+                  {activeRef === '全部' ? '全部出处' : activeRef}
+                </span>
+                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${refDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {refDropdownOpen && (
+                <div className="absolute right-0 top-full mt-2 w-full sm:w-64 max-h-72 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
+                  {classicRefs.map((ref) => (
+                    <button
+                      key={ref}
+                      onClick={() => { setActiveRef(ref); setRefDropdownOpen(false); }}
+                      className={`w-full text-left px-4 py-2 text-[13px] font-semibold transition-colors ${
+                        activeRef === ref
+                          ? 'bg-sky-50 text-sky-800'
+                          : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                      }`}
+                    >
+                      {ref === '全部' ? '全部出处' : ref}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          {keyword.trim() && (
+          {(keyword.trim() || activeRef !== '全部') && (
             <p className="text-[13px] text-slate-500 mb-4">
               {t('共找到')} {filtered.length} {t('种法门')}
             </p>
@@ -119,10 +177,10 @@ export default function MethodsPageClient() {
               <Compass className="w-10 h-10 text-slate-300 mx-auto mb-4" />
               <p className="text-slate-500 text-[15px]">{t('未找到匹配的法门')}</p>
               <button
-                onClick={() => setKeyword('')}
+                onClick={() => { setKeyword(''); setActiveRef('全部'); }}
                 className="mt-3 text-sky-800 text-[13px] font-semibold hover:underline"
               >
-                {t('清除搜索')}
+                {t('清除筛选条件')}
               </button>
             </div>
           )}
