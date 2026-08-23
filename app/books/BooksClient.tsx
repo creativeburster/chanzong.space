@@ -86,6 +86,43 @@ export default function BooksClient() {
 
           {/* Filter Bar */}
           <div className="flex flex-col sm:flex-row items-stretch gap-3 mb-8">
+            {/* Direct Book Picker */}
+            <div className="relative" ref={bookRef}>
+              <button
+                onClick={() => { setBookDropdownOpen((o) => !o); setCatDropdownOpen(false); }}
+                className="w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold bg-amber-700 text-white border border-amber-700 hover:bg-amber-800 transition-all shadow-sm"
+              >
+                <span className="flex items-center gap-2">
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                  直达典籍
+                </span>
+                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${bookDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {bookDropdownOpen && (
+                <div className="absolute left-0 top-full mt-2 w-full sm:w-72 max-h-80 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
+                  {manifest.map((item) => (
+                    <button
+                      key={item.id}
+                      onClick={() => router.push(`/classics/${item.id}`)}
+                      className="w-full text-left px-4 py-2 text-[13px] transition-colors hover:bg-amber-50 group/item"
+                    >
+                      <span className="flex items-center justify-between gap-2">
+                        <span className="font-semibold text-slate-700 group-hover/item:text-amber-800 truncate">
+                          {item.title}
+                        </span>
+                        <span className="text-[11px] text-slate-400 font-mono shrink-0">
+                          #{item.idx}
+                        </span>
+                      </span>
+                      <span className="block text-[11px] text-slate-400 mt-0.5 truncate">
+                        {item.author} · {item.category}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
             {/* Search Input */}
             <div className="relative flex-1 min-w-0">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
@@ -110,7 +147,7 @@ export default function BooksClient() {
               >
                 <span className="flex items-center gap-2">
                   <BookOpen className="w-4 h-4 shrink-0" />
-                  {activeCategory}
+                  {activeCategory === '全部' ? '全部分类' : activeCategory}
                 </span>
                 <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${catDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -134,43 +171,6 @@ export default function BooksClient() {
               )}
             </div>
 
-            {/* Direct Book Picker */}
-            <div className="relative" ref={bookRef}>
-              <button
-                onClick={() => { setBookDropdownOpen((o) => !o); setCatDropdownOpen(false); }}
-                className="w-full sm:w-auto flex items-center justify-between gap-2 px-4 py-2.5 rounded-xl text-[14px] font-semibold bg-amber-700 text-white border border-amber-700 hover:bg-amber-800 transition-all shadow-sm"
-              >
-                <span className="flex items-center gap-2">
-                  <ArrowRight className="w-4 h-4 shrink-0" />
-                  直达典籍
-                </span>
-                <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${bookDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
-
-              {bookDropdownOpen && (
-                <div className="absolute right-0 top-full mt-2 w-full sm:w-72 max-h-80 overflow-y-auto rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-30">
-                  {manifest.map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => router.push(`/classics/${item.id}`)}
-                      className="w-full text-left px-4 py-2 text-[13px] transition-colors hover:bg-amber-50 group/item"
-                    >
-                      <span className="flex items-center justify-between gap-2">
-                        <span className="font-semibold text-slate-700 group-hover/item:text-amber-800 truncate">
-                          {item.title}
-                        </span>
-                        <span className="text-[11px] text-slate-400 font-mono shrink-0">
-                          #{item.idx}
-                        </span>
-                      </span>
-                      <span className="block text-[11px] text-slate-400 mt-0.5 truncate">
-                        {item.author} · {item.category}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Result count */}
