@@ -302,7 +302,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   >
                     <div className="flex items-center space-x-2.5">
                       <Lightbulb className="w-4 h-4 text-amber-400" />
-                      <span>{t('参究 FAQ')}</span>
+                      <span>{t('问答')}</span>
                     </div>
                     <span className="text-[11px] text-slate-400 font-mono">{STATS.faqs}</span>
                   </Link>
@@ -319,7 +319,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               >
                 <div className="flex items-center space-x-3">
                   <Lightbulb className="w-5 h-5 text-amber-400" />
-                  <span>{t('经典问答')}</span>
+                  <span>{t('问答')}</span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
                   {STATS.faqs}
@@ -336,7 +336,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               >
                 <div className="flex items-center space-x-3">
                   <Users className="w-5 h-5 text-purple-400" />
-                  <span>{t('祖师人物')}</span>
+                  <span>{t('禅门人物')}</span>
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
                   {STATS.persons}

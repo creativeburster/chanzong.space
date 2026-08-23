@@ -4,13 +4,13 @@ import { STATS } from '@/lib/stats';
 import { ZEN_FAQS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
-  title: '经典问答',
-  description: `禅宗${STATS.faqs}条经典问答——公案解读、义理辨析、修证疑问，从"什么是公案"到"如何参话头"，覆盖禅宗核心议题与常见疑惑。`,
+  title: '问答',
+  description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析、修证疑问，覆盖禅宗核心议题与常见疑惑。`,
   alternates: { canonical: '/faq' },
   openGraph: {
     type: 'website',
-    title: '经典问答 | 禅宗知识库 ChanZong.space',
-    description: `禅宗${STATS.faqs}条经典问答——公案解读、义理辨析与修证疑问。`,
+    title: '问答 | 禅宗知识库 ChanZong.space',
+    description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析与修证疑问。`,
     url: 'https://chanzong.space/faq',
   },
 };

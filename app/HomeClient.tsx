@@ -222,15 +222,15 @@ export default function HomeClient() {
             </div>
           </div>
 
-          {/* 5. 祖师人物精选 */}
+          {/* 5. 禅门人物精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Users className="w-4 h-4 text-purple-600" />
-                <span>祖师人物精选</span>
+                <span>禅门人物精选</span>
               </h2>
               <Link href="/persons" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.persons} 位祖师 →
+                查看全部 {STATS.persons} 位人物 →
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -249,15 +249,15 @@ export default function HomeClient() {
             </div>
           </div>
 
-          {/* 6. 经典问答精选 */}
+          {/* 6. 问答精选 */}
           <div className="my-12">
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Lightbulb className="w-4 h-4 text-amber-600" />
-                <span>经典问答精选</span>
+                <span>问答精选</span>
               </h2>
               <Link href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {formatCount(STATS.faqs)} 条问答 →
+                查看全部 {formatCount(STATS.faqs)} 条 →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

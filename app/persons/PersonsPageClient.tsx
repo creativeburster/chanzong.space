@@ -64,7 +64,7 @@ export default function PersonsPageClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
-          <Breadcrumb items={[{ label: '祖师人物' }]} />
+          <Breadcrumb items={[{ label: '禅门人物' }]} />
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-8">
@@ -73,10 +73,10 @@ export default function PersonsPageClient() {
             </div>
             <div>
               <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
-                {t('祖师人物')}
+                {t('禅门人物')}
               </h1>
               <p className="text-[13px] text-slate-500 mt-0.5">
-                共 {ZEN_PERSONS.length} 位 · {t('从达摩、六祖到马祖、黄檗、临济等历代传法宗师')}
+                共 {ZEN_PERSONS.length} 位 · {t('历代禅师、护法、文人及公案中出现的各类人物')}
               </p>
             </div>
           </div>
