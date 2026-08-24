@@ -2685,7 +2685,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["linjianlu", "linjianhoulu"],
     "relatedConcepts": ["wenzi-chan"],
     "relatedMethods": [],
-    "relatedPersons": ["baizhang", "yongjia", "yunmen-wenyan", "fayan-wenyi"],
+    "relatedPersons": ["baizhang", "yongjia", "yunmen", "fayan-wenyi"],
     "relatedBooks": ["linjianhoulu"]
   },
   {
@@ -2730,34 +2730,8 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["huihong-juefan"],
     "relatedBooks": ["linjianhoulu"]
   },
-  {
-    "id": "xiangyan-zhixian",
-    "name": "香严智闲",
-    "title": "击竹悟道禅师",
-    "era": "唐代 (?-898)",
-    "lifeStory": "香严智闲，唐代禅僧，沩山灵祐弟子。初在百丈门下参学，后参沩山，因沩山问\u201c父母未生时面目\u201d而茫然，遂辞去。后于南阳慧忠国师遗址居止，一日芟除草木，掷瓦击竹作声，豁然顿悟。悟后作偈曰\u201c一击忘所知，更不假修治\u201d。世称香严击竹，为禅宗著名公案。不立文字，直指心源。",
-    "teachings": "以无声之声启悟，击竹开悟，不立文字。",
-    "quotes": ["一击忘所知，更不假修治。"],
-    "classics": [],
-    "relatedConcepts": ["jizhu-kaiwu"],
-    "relatedMethods": [],
-    "relatedPersons": ["huihong-juefan", "weishan-lingyou"],
-    "relatedBooks": ["linjianhoulu"]
-  },
-  {
-    "id": "danxia-tianran",
-    "name": "丹霞天然",
-    "title": "烧佛取暖禅师",
-    "era": "唐代 (739-824)",
-    "lifeStory": "丹霞天然，唐代禅僧。初欲选官，遇禅客劝令选佛，遂往参石头希迁、马祖道一。于慧林寺遇天寒，取木佛烧火取暖，院主呵之，师曰\u201c吾烧取舍利\u201d，院主曰\u201c木佛何有舍利\u201d，师曰\u201c既无舍利，更取两尊来烧\u201d。其狂放不羁，不拘规矩，为禅宗破执之典范。",
-    "teachings": "以狂放破执着，不守常轨，直指本心。",
-    "quotes": ["选官不如选佛。", "既无舍利，更取两尊来烧。"],
-    "classics": [],
-    "relatedConcepts": ["pozhi-kuangfang"],
-    "relatedMethods": [],
-    "relatedPersons": ["huihong-juefan", "shitou-xiqian", "mazu-daoyi"],
-    "relatedBooks": ["linjianhoulu"]
-  },
+
+
   {
     "id": "konggu-jinglong",
     "name": "空谷景隆",
@@ -2885,20 +2859,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [],
     "relatedBooks": ["yangqiyulu"]
   },
-  {
-    "id": "baiyun-shouduan",
-    "name": "白云守端",
-    "era": "宋（1025-1072）",
-    "title": "白云守端禅师",
-    "lifeStory": "白云守端禅师（1025-1072），杨岐方会禅师法嗣，住舒州白云峰。编集《杨岐方会和尚语录》云盖山部分。为杨岐派重要传人。",
-    "teachings": "白云守端禅师，杨岐方会禅师法嗣，住舒州白云峰。编集《杨岐方会和尚语录》云盖山部分，为杨岐派重要传人。",
-    "quotes": [],
-    "classics": ["yangqiyulu"],
-    "relatedConcepts": [],
-    "relatedMethods": [],
-    "relatedPersons": [],
-    "relatedBooks": ["yangqiyulu"]
-  },
+
   {
     "id": "yang-tian",
     "name": "杨畋",
@@ -2966,7 +2927,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["chanzongjueyiji"],
     "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu", "tui-sui-duizhi"],
     "relatedMethods": ["canhuatou-qiyiqing-fa"],
-    "relatedPersons": ["yunfeng-heshang", "zhaozhou-congshen"],
+    "relatedPersons": ["yunfeng-heshang", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -3011,20 +2972,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["seng-zhao"],
     "relatedBooks": ["zhaolun"]
   },
-  {
-    "id": "kumarajiva",
-    "name": "鸠摩罗什",
-    "title": "译经大师",
-    "era": "后秦（344-413）",
-    "lifeStory": "鸠摩罗什，西域龟兹人，后秦弘始三年入长安，于逍遥园译经三百余卷。门下弟子三千，僧肇为其中解空第一。什公译《大品般若》《维摩诘》《法华》《中论》《百论》《十二门论》等，奠定中国佛教般若学与三论宗基础。赞僧肇\u201c解空第一，肇公其人\u201d。",
-    "teachings": "以般若中观为宗，译传龙树三论，开创中国佛教般若学新纪元。",
-    "quotes": ["解空第一，肇公其人。"],
-    "classics": ["zhaolun", "zhonglun"],
-    "relatedConcepts": ["zongbenyi"],
-    "relatedMethods": ["zhongguan-bore"],
-    "relatedPersons": ["seng-zhao", "hui-da"],
-    "relatedBooks": ["zhaolun", "zhonglun"]
-  },
+
 
   {
     "id": "yunfeng-heshang",
@@ -3066,7 +3014,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["shangzhibian"],
     "relatedConcepts": ["dao-xue-yuanliu", "taiji-tu", "shangzhi-hujiao"],
     "relatedMethods": ["shangzhi-bianzheng"],
-    "relatedPersons": ["konggu-jinglong", "huanglong-huinan", "fo-yin-yuan", "donglin-zong", "zhuxi-zhunan", "cheng-hao", "cheng-yi"],
+    "relatedPersons": ["konggu-jinglong", "huanglong-huinan", "foyin-liaoyuan", "donglin-zong", "zhuxi-zhunan", "cheng-hao", "cheng-yi"],
     "relatedBooks": ["shangzhibian"]
   },
   {
@@ -6966,16 +6914,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["yangqi-fanghui"],
     "relatedBooks": ["yangqihoulu"]
   },
-  {
-    "id": "wenzi-chan",
-    "title": "文字禅",
-    "category": "禅法",
-    "summary": "以文字般若入禅，以诗偈赞铭显心。不离言说而悟道，即俗而真。惠洪觉范为代表人物，其《林间录》《石门文字禅》以骈俪文学笔法传达禅宗见地，开创北宋文字禅之风。文字禅非以文字代禅，而是借文字为方便，令人于言外得旨。",
-    "classicRef": "linjianhoulu",
-    "relatedConcepts": ["yijiao-buzong", "self-nature"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
-  },
+
   {
     "id": "zanming",
     "title": "赞铭",
@@ -7134,7 +7073,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "summary": "临济宗纲宗。道吾真禅师开示：第一玄——释尊光射阿难肩；第二玄——孤轮众象攒；第三玄——泣向枯桑泪涟涟。第一要——最好精粗照；第二要——闪烁乾坤光晃耀；第三要——夹路青松老。三玄三要是临济义玄接人的三种境界与三种要旨。",
     "classicRef": "yangqiyulu",
     "relatedConcepts": ["linji-zongfeng", "sibinzhu"],
-    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedPersons": ["daowu-zhen", "linji"],
     "relatedBooks": ["yangqiyulu"]
   },
   {
@@ -7144,7 +7083,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "summary": "临济宗纲宗。道吾真禅师开示四照用：先照后用——语路分明说，投针不回避；先用后照——金刚觌面亲分付；照用同时——祖佛道中行路异，森罗影里不留身；照用不同时——清凉金色光先照，峨嵋银界一时铺。照即照见，用即施用，四种配合展现不同的接人手段。",
     "classicRef": "yangqiyulu",
     "relatedConcepts": ["linji-zongfeng", "sanxuan-sanyao", "sibinzhu"],
-    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedPersons": ["daowu-zhen", "linji"],
     "relatedBooks": ["yangqiyulu"]
   },
   {
@@ -7154,7 +7093,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "summary": "临济宗纲宗。道吾真禅师开示：宾中宾——谁说有疏亲；宾中主——磕额无回互，对面与谁陈；主中宾——瑞云空里布霹雳震乾坤；主中主——古皇令高举，巧辨徒申吐。宾主之分即师徒机锋对决中的主从关系，四宾主展现临济宗接人的四种格局。",
     "classicRef": "yangqiyulu",
     "relatedConcepts": ["linji-zongfeng", "sanxuan-sanyao", "sizhaoyong"],
-    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedPersons": ["daowu-zhen", "linji"],
     "relatedBooks": ["yangqiyulu"]
   },
   {
@@ -7164,7 +7103,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "summary": "曹洞宗纲宗，道吾真禅师亦开示。正中来——皎洁乾坤震地雷；正中偏——诸子投来见大仙；偏中正——万水千山明似镜；兼中至——施设纵横无所畏；兼中到——黑白未分已前过。以正偏五位配君臣关系，展现从迷到悟的五个阶段。",
     "classicRef": "yangqiyulu",
     "relatedConcepts": ["caodong-zongfeng", "sibinzhu"],
-    "relatedPersons": ["daowu-zhen", "dongshan-liangjia"],
+    "relatedPersons": ["daowu-zhen", "dongshan"],
     "relatedBooks": ["yangqiyulu"]
   },
   {
@@ -7207,7 +7146,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "用疑时先须发愤怒心，疑赵州因甚道无。此愤怒心或出声不出声学人自取方便。这一箇疑字单只疑赵州因甚道无，不是看赵州无，不是念赵州无。",
     "classicRef": "chanzongjueyiji",
     "relatedConcepts": ["huatou-gongfu", "kan-wu-nian-wu-yi-wu"],
-    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -7220,7 +7159,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "参无字不是看也不是念，而是疑赵州因甚道无。先须发愤怒心，单只疑这一个无字。",
     "classicRef": "chanzongjueyiji",
     "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
-    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -7246,7 +7185,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "初举万法归一一归何处，或举三五次随意放收，然后万法归一少举，只在一字上起疑。",
     "classicRef": "chanzongjueyiji",
     "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
-    "relatedPersons": ["zhiche", "yunfeng-heshang", "zhaozhou-congshen"],
+    "relatedPersons": ["zhiche", "yunfeng-heshang", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -7597,7 +7536,217 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["shiniu"],
     "relatedPersons": ["shishuang-chuyuan"],
     "relatedBooks": ["shishuangchuyuan"]
-  }
+  },
+  {
+    "id": "yangqi-yijue",
+    "title": "杨岐一脚",
+    "category": "宗风",
+    "summary": "杨岐方会以“一脚”为宗风施设。一脚者，独脚之意，喻其宗风单刀直入、不假方便。杨岐接人，如“跨三脚驴”“种田博饭”，于平常日用中显奇特手段。",
+    "classicRef": "杨岐方会禅师语录",
+    "relatedConcepts": ["linji-zongfeng"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "banghe",
+    "title": "棒喝",
+    "category": "接引",
+    "summary": "棒喝者，禅宗接引学人之独特施设。棒始于德山宣鉴，喝始于临济义玄，合称“德山棒、临济喝”。学人拟议思量之际，师家以棒打或大喝截断其意识分别，令于言语道断处瞥见本来。",
+    "classicRef": "临济录",
+    "relatedConcepts": ["jifeng"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "linji-zongfeng",
+    "title": "临济宗风",
+    "category": "宗风",
+    "summary": "临济宗风以峻烈著称。义玄禅师承黄檗心印，立三玄三要、四料简、四宾主等纲宗，机锋峭拔，棒喝交加。临济一宗后分杨岐、黄龙二派，杨岐一派尤盛，终成禅门主流。",
+    "classicRef": "临济语录",
+    "relatedConcepts": ["sanxuan-sanyao"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "caodong-zongfeng",
+    "title": "曹洞宗风",
+    "category": "宗风",
+    "summary": "曹洞宗风以绵密著称。洞山良价立五位君臣、偏正回互等纲宗，以理事圆融为宗眼。曹洞一脉以默照禅为修行特色，宏智正觉大弘之。",
+    "classicRef": "洞山语录",
+    "relatedConcepts": [],
+    "relatedPersons": ["dongshan"],
+    "relatedBooks": ["dongshanyulu"]
+  },
+  {
+    "id": "dao-zai-riyong",
+    "title": "道在日用",
+    "category": "禅理",
+    "summary": "道在日用，禅宗核心见地之一。佛法不在玄妙奇特处，只在日常用心中。穿衣吃饭、屙屎送尿，无非道场。赵州“吃茶去”、云门“日日是好日”，皆指向此。",
+    "classicRef": "赵州语录",
+    "relatedConcepts": ["ordinary-mind"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "fashen-wuxiang",
+    "title": "法身无相",
+    "category": "禅理",
+    "summary": "法身无相，大乘佛教与禅宗核心义理。法身者，诸法实相之体，超越一切形相名言。《金刚经》云“凡所有相皆是虚妄，若见诸相非相即见如来”。",
+    "classicRef": "金刚经",
+    "relatedConcepts": ["emptiness", "self-nature"],
+    "relatedPersons": [],
+    "relatedBooks": ["jingangjing"]
+  },
+  {
+    "id": "jianshe",
+    "title": "建舍",
+    "category": "禅理",
+    "summary": "建舍之喻，出赵州禅师语录。以建造房舍比喻修行工夫，根基不固则屋必倾，见地不明则修必偏。",
+    "classicRef": "赵州语录",
+    "relatedConcepts": ["ordinary-mind"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "huo-ju-si-ju",
+    "title": "活句死句",
+    "category": "禅法",
+    "summary": "活句死句，禅宗参学之关键分别。死句者，有义路可寻之语；活句者，无义路可寻、截断意识分别之语。参禅须参活句不参死句。",
+    "classicRef": "赵州语录",
+    "relatedConcepts": [],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "kong-ran-wu-sheng",
+    "title": "廓然无圣",
+    "category": "禅理",
+    "summary": "廓然无圣，达摩祖师初见梁武帝之答。帝问“如何是圣谛第一义”，曰“廓然无圣”。此语截断梁武帝功德执着，直指超越凡圣对待之绝对境界。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["emptiness", "beyond-words"],
+    "relatedPersons": ["bodhidharma"],
+    "relatedBooks": ["wumenguan"]
+  },
+  {
+    "id": "chenchen-sanmei",
+    "title": "尘尘三昧",
+    "category": "禅法",
+    "summary": "尘尘三昧，于一微尘中含摄一切三昧。华严境界之禅法表达，事事无碍，一即一切。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["emptiness", "non-duality"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["yunmen"]
+  },
+  {
+    "id": "zuo-jia-xiang-jian",
+    "title": "作家相见",
+    "category": "接引",
+    "summary": "作家相见，禅门宗师之间或宗师与上根学人之间的机锋对决。作家者，真正行家、彻悟之人。作家相见如击石火闪电光，不涉思量拟议。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["jifeng"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "mi-ji-zhu-wu",
+    "title": "密机诸悟",
+    "category": "接引",
+    "summary": "密机诸悟，指禅宗师徒间隐秘而深微的悟道机缘。非大张旗鼓之接引，乃于日常细微处触发学人悟境。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["jifeng"],
+    "relatedPersons": [],
+    "relatedBooks": []
+  },
+  {
+    "id": "daji-dayong",
+    "title": "大机大用",
+    "category": "接引",
+    "summary": "大机大用，禅宗宗师接引学人之最高施设。机者应机之便，用者妙用之施。不拘常格，纵横自在，皆从般若妙智中流出。",
+    "classicRef": "临济录",
+    "relatedConcepts": ["jifeng", "banghe"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["linji"]
+  },
+  {
+    "id": "shentong-miaoyong",
+    "title": "神通妙用",
+    "category": "禅理",
+    "summary": "神通妙用，禅宗对神通之独特理解。不以身通变化为神通，而以日用中般若妙用为真神通。运水搬柴、穿衣吃饭，无一不是神通妙用。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["ordinary-mind"],
+    "relatedPersons": [],
+    "relatedBooks": []
+  },
+  {
+    "id": "shenyi-fangbian",
+    "title": "深密方便",
+    "category": "禅法",
+    "summary": "深密方便，佛法度生之善巧施设。以深密之方便法门引导学人渐入究竟。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["self-nature"],
+    "relatedPersons": ["baozhi"],
+    "relatedBooks": []
+  },
+  {
+    "id": "shanjian-wudao",
+    "title": "善见悟道",
+    "category": "禅理",
+    "summary": "善见悟道，以善见善观而悟入道体。见者非肉眼之见，乃慧眼之观照。于一切处见法性平等，于一切时中见自本性。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["self-nature"],
+    "relatedPersons": [],
+    "relatedBooks": []
+  },
+  {
+    "id": "wanfa-gui-yi",
+    "title": "万法归一",
+    "category": "禅法",
+    "summary": "万法归一，禅宗看话禅之核心话头。赵州禅师答僧问“万法归一，一归何处”，曰“我在青州作一领布衫，重七斤”。以此话头起疑情，参究至疑团爆破，方见本来面目。",
+    "classicRef": "赵州语录",
+    "relatedConcepts": ["non-duality"],
+    "relatedPersons": ["zhaozhou"],
+    "relatedBooks": ["zhaozhouyulu"]
+  },
+  {
+    "id": "yijiao-buzong",
+    "title": "言教不宗",
+    "category": "禅理",
+    "summary": "言教不宗，禅宗“不立文字、教外别传”之另一表述。不以言教文字为究竟，以心传心为宗。然不立文字非废文字，乃透过文字而见月。",
+    "classicRef": "碧岩录",
+    "relatedConcepts": ["wenzi-chan", "beyond-words"],
+    "relatedPersons": [],
+    "relatedBooks": ["biyanlu"]
+  },
+  {
+    "id": "po-zhizhuo",
+    "title": "破执着",
+    "category": "禅理",
+    "summary": "破执着，禅宗修行之核心功夫。执着者心粘着于境而不能脱。禅宗一切施设皆为破学人执着：执着佛相、执着法相、执着空相，直至能所双亡。",
+    "classicRef": "五灯会元",
+    "relatedConcepts": ["emptiness", "no-abiding"],
+    "relatedPersons": [],
+    "relatedBooks": []
+  },
+  {
+    "id": "shier-yuanqi",
+    "title": "十二缘起",
+    "category": "佛理",
+    "summary": "十二缘起，佛教基本教义。无明缘行、行缘识、识缘名色，乃至生缘老死。禅宗虽以直指为宗，然十二缘起之理为修行之基础知见。",
+    "classicRef": "华严经",
+    "relatedConcepts": ["emptiness"],
+    "relatedPersons": [],
+    "relatedBooks": []
+  },
+  {
+    "id": "shiniu",
+    "title": "石牛",
+    "category": "禅理",
+    "summary": "石牛之喻，禅宗常用意象。石雕之牛，喻调心已至纯熟之境，如石牛不动，心不再随境流转。牧牛功行圆满之象。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["mutong-ge"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -12617,7 +12766,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "赵州从谂",
     "source": "《碧岩录》第二则",
     "relatedConcepts": ["jianshe"],
-    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12641,7 +12790,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "赵州从谂",
     "source": "《碧岩录》第三十七则",
     "relatedConcepts": ["dao-zai-riyong"],
-    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12653,7 +12802,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "云门文偃",
     "source": "《碧岩录》第四十七则",
     "relatedConcepts": ["fashen-wuxiang"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12665,7 +12814,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "云门文偃",
     "source": "《碧岩录》第五十则",
     "relatedConcepts": ["chenchen-sanmei", "dao-zai-riyong"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12689,7 +12838,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "镜清道怤",
     "source": "《碧岩录》第四十六则",
     "relatedConcepts": ["mi-ji-zhu-wu"],
-    "relatedPersons": ["jingqing-daofu"],
+    "relatedPersons": [],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12701,7 +12850,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "赵州从谂",
     "source": "《碧岩录》第四十五则",
     "relatedConcepts": ["wanfa-gui-yi"],
-    "relatedPersons": ["zhaozhou-congshen"],
+    "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12713,7 +12862,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "云门文偃",
     "source": "《碧岩录》第三十六则",
     "relatedConcepts": ["dao-zai-riyong"],
-    "relatedPersons": ["yunmen-wenyan"],
+    "relatedPersons": ["yunmen"],
     "relatedBooks": ["biyanlu"]
   },
   {
@@ -12904,7 +13053,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "赵州从谂",
     "source": "禅宗决疑集·彻底穷渊门",
     "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "wanfa-guiyi"],
-    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -12916,7 +13065,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "赵州从谂",
     "source": "禅宗决疑集·指本还真门",
     "relatedConcepts": ["wanfa-guiyi", "yiqing-canjiu", "huatou-gongfu"],
-    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
@@ -13098,7 +13247,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "佛印元",
     "source": "尚直编",
     "relatedConcepts": ["dao-xue-yuanliu", "taiji-tu", "shangzhi-hujiao"],
-    "relatedPersons": ["fo-yin-yuan", "zhou-dunyi", "konggu-jinglong"],
+    "relatedPersons": ["foyin-liaoyuan", "zhou-dunyi", "konggu-jinglong"],
     "relatedBooks": ["shangzhibian"]
   },
   {
@@ -25939,18 +26088,8 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "楚圆为唐明嵩持书上杨亿，杨以对面不相识千里却同风试之。互喝后杨叹为龙象，唤客司点好茶云元来是自家人。后又问为人底句，师云切，杨云长裙新妇拖泥走，师举楚王城畔汝水东流因缘。",
     "relatedBooks": ["shishuangchuyuan"]
   },
-  {
-    "id": "faq-2210",
-    "question": "什么是三玄三要？",
-    "answer": "临济宗核心纲宗。第一玄三世诸佛拟何宣，第二玄灵利衲僧眼未明，第三玄万象森罗宇宙宽。第一要岂话圣贤妙，第二要峰顶敲楗召，第三要起倒令人笑。楚圆禅师以偈颂形式系统阐述。",
-    "relatedBooks": ["shishuangchuyuan"]
-  },
-  {
-    "id": "faq-2211",
-    "question": "什么是五位君臣？",
-    "answer": "曹洞宗纲宗，楚圆禅师以偈颂表达。正中偏：夜半乌鸡室里鸣；偏中正：日落西山观异影；正中来：木马生儿遍九垓；兼中至：矛头交互不伤锋；兼中到：黑白已前休作造。从偏位回互到兼到圆融。",
-    "relatedBooks": ["shishuangchuyuan"]
-  },
+
+
   {
     "id": "faq-2212",
     "question": "什么是波罗提说性在作用？",
