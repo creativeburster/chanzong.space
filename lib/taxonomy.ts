@@ -2845,16 +2845,16 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "shishuang-chuyuan",
     "name": "石霜楚圆",
-    "title": "石霜禅师 / 慈明",
+    "title": "慈明禅师 / 石霜",
     "era": "北宋 (986—1039)",
-    "lifeStory": "石霜楚圆，号慈明，北宋禅僧。临济宗杨岐方会、黄龙慧南之师。迁化后泰首座坐脱而去，处侍者评曰\u201c坐脱立亡则不无，要会先师意则未在\u201d。空谷景隆以此公案辨析坐脱立亡之实到与似到。",
-    "teachings": "坐脱立亡须以悟道为本，仅有定力而非实到。",
-    "quotes": [],
-    "classics": ["shanglibian"],
-    "relatedConcepts": ["zuotuo-liwang", "dinghui-dengchi"],
-    "relatedMethods": [],
-    "relatedPersons": ["konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "lifeStory": "石霜楚圆，号慈明，全州清湘人。临济宗第六世，嗣法汾阳善昭。先后住持袁州南源、潭州道吾、潭州石霜、南岳福严、潭州兴化五处道场。门下出杨岐方会、黄龙慧南，开临济杨岐、黄龙二派，临济宗由此大盛。机锋峻烈，棒喝交加，语言直截了当。与驸马李遵勗、内翰杨亿为方外之交。迁化后泰首座坐脱而去，处侍者评曰\u201c坐脱立亡则不无，要会先师意则未在\u201d。",
+    "teachings": "金刚眼睛、棒喝交加、三玄三要、五位君臣、弄潮须是弄潮人、水出高源、饥来吃饭困来眠",
+    "quotes": ["水出高源", "弄潮须是弄潮人", "路逢剑客须呈剑，不是诗人莫献诗", "饥来吃饭困来眠", "楚王城畔，汝水东流"],
+    "classics": ["shanglibian", "shishuangchuyuan"],
+    "relatedConcepts": ["zuotuo-liwang", "sanxuan-sanyao", "wuwei-junchen", "sizhaoyong", "banghe"],
+    "relatedMethods": ["ciming-wuhui"],
+    "relatedPersons": ["fenyang-shanzhao", "yangqi-fanghui", "huanglong-huinan", "konggu-jinglong", "li-zunxu", "yang-yi-neihan"],
+    "relatedBooks": ["shanglibian", "shishuangchuyuan"]
   },
 
   {
@@ -3110,7 +3110,77 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["shangzhi-bianzheng"],
     "relatedPersons": ["konggu-jinglong", "zhou-dunyi"],
     "relatedBooks": ["shangzhibian"]
-  }
+  },
+{
+    "id": "li-zunxu",
+    "name": "李遵勗",
+    "title": "驸马都尉 / 公明",
+    "era": "北宋 (988—1038)",
+    "lifeStory": "李遵勗，字公明，北宋驸马都尉，尚万寿长公主。好佛老，通禅理，与石霜楚圆为方外之交。常以禅机相勘，著有《天圣广灯录》。楚圆行脚时曾访之，以\u201c金毛师子\u201d相勘验，彼此喝笑，机锋契合。",
+    "teachings": "碑文镌白字，当道种青松",
+    "quotes": ["碑文镌白字，当道种青松", "我闻西河有金毛师子，是否？"],
+    "classics": ["shishuangchuyuan"],
+    "relatedConcepts": ["sanxuan-sanyao"],
+    "relatedMethods": ["ciming-wuhui"],
+    "relatedPersons": ["shishuang-chuyuan", "yang-yi-neihan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "yang-yi-neihan",
+    "name": "杨亿",
+    "title": "内翰 / 大年",
+    "era": "北宋 (974—1020)",
+    "lifeStory": "杨亿，字大年，北宋内翰学士。博学能文，参禅有得。石霜楚圆曾为唐明嵩和尚持书上杨亿，二人以\u201c对面不相识，千里却同风\u201d机锋相见，彼此喝对，杨亿叹为\u201c龙象\u201d。杨亿亦曾参问临济宗风，与楚圆对谈\u201c圆上座为人底句\u201d。",
+    "teachings": "对面不相识，千里却同风",
+    "quotes": ["对面不相识，千里却同风", "作家，作家", "这里是什么所在？"],
+    "classics": ["shishuangchuyuan"],
+    "relatedConcepts": ["sanxuan-sanyao"],
+    "relatedMethods": ["ciming-wuhui"],
+    "relatedPersons": ["shishuang-chuyuan", "li-zunxu"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "zhang-zong",
+    "name": "章倧",
+    "title": "朝奉郎 / 通判泰州",
+    "era": "南宋",
+    "lifeStory": "章倧，南宋左朝奉郎，新通判泰州军州主管学事。绍兴二十三年撰《慈明四家录序》，记述慈明楚圆、杨岐方会、白云守端、五祖法演四代传承之盛，命工重刊《慈明四家录》。",
+    "teachings": "",
+    "quotes": ["临济宗风特盛于天下，盖其儿孙皆鹰扬虎视"],
+    "classics": ["shishuangchuyuan"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["shishuang-chuyuan", "yangqi-fanghui", "baiyun-shouduan", "wuzu-fayan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "ben-yan",
+    "name": "本延",
+    "title": "智度山定林禅寺沙门",
+    "era": "北宋",
+    "lifeStory": "本延，北宋禅僧，住智度山定林禅寺。为《慈明禅师五会住持语录》撰序，赞楚圆禅师\u201c珠生于汾水\u201d，以\u201c希代至宝，应用无穷\u201d喻其法门之广。",
+    "teachings": "",
+    "quotes": ["方今河东有昭，湖南有圆。昭即玉振于首山，圆乃珠生于汾水。"],
+    "classics": ["shishuangchuyuan"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["shishuang-chuyuan", "fenyang-shanzhao"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "tangming-song",
+    "name": "唐明嵩",
+    "title": "禅师",
+    "era": "北宋",
+    "lifeStory": "唐明嵩和尚，北宋禅僧。石霜楚圆曾为其持书上杨亿内翰，由此与杨亿结缘。",
+    "teachings": "",
+    "quotes": [],
+    "classics": ["shishuangchuyuan"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["shishuang-chuyuan", "yang-yi-neihan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -7457,6 +7527,76 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing"],
     "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
     "relatedBooks": ["shangzhibian"]
+  },
+{
+    "id": "jingang-yanjing",
+    "title": "金刚眼睛",
+    "category": "宗门纲宗",
+    "summary": "临济宗接机之要眼。具金刚眼睛者，能辨别魔境，不为情识所转。楚圆禅师云：须得具金刚眼睛，二六时中四威仪内，魔境现前不能辨别，便乃流浪三界。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["sanxuan-sanyao", "sizhaoyong"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "nongchao-xushiren",
+    "title": "弄潮须是弄潮人",
+    "category": "接机勘验",
+    "summary": "楚圆禅师勘验学人之语。僧拟议塞断源头，师便打云：弄潮须是弄潮人。意谓参禅须亲身入局，非旁观者能悟。拟议即落第二头，须有弄潮好手之魄力。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "shui-chu-gaoyuan",
+    "title": "水出高源",
+    "category": "佛性理体",
+    "summary": "楚圆禅师答僧问如何是佛之语。佛性如水发源于高处，自然流淌，不假造作。高源喻本觉真心，水喻妙用流行，从体起用，全用即体。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "fashen-wuxiang"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "ciming-sijia-lu",
+    "title": "慈明四家录",
+    "category": "典籍文献",
+    "summary": "南宋章倧重刊之临济宗四代传承录，收录慈明楚圆、杨岐方会、白云守端、五祖法演四家语录。章倧序称临济儿孙鹰扬虎视，唯慈明负卓绝逸群之韵。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["linji-zongfeng"],
+    "relatedPersons": ["shishuang-chuyuan", "yangqi-fanghui", "baiyun-shouduan", "wuzu-fayan", "zhang-zong"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "wuwei-zhuyong",
+    "title": "五位宗旨",
+    "category": "宗门纲宗",
+    "summary": "楚圆禅师所颂五位：正中偏、偏中正、正中来、兼中至、兼中到。以夜半乌鸡、海底灯、石上花等意象表达从偏位回互到兼到圆融的修行阶次。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["wuwei-junchen", "zheng-pian"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "shier-shi-ge",
+    "title": "十二时歌",
+    "category": "日用修行",
+    "summary": "楚圆禅师所作，从鸡鸣丑到夜半子，十二时辰各有一偈，描绘禅者日用修行写照。语言通俗活泼，将禅修融入日常作息，饥餐困眠皆是道。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["jianxing-chengfo"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "mutong-ge",
+    "title": "牧童歌",
+    "category": "日用修行",
+    "summary": "楚圆禅师所作牧牛歌，以牧童放牛喻调心。从跣足披蓑、横眠牛上，到捏定鼻头、牵向圈眠，展现从放任到调伏的牧牛过程，末后倒骑牛、脱布袄，方是知音。",
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["shiniu"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
   }
 ];
 
@@ -8706,10 +8846,28 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing", "dao-xue-yuanliu"],
     "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
     "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "ciming-wuhui",
+    "title": "慈明五会住持",
+    "summary": "楚圆禅师先后住持南源、道吾、石霜、福严、兴化五处道场的接机风格总称。以金刚眼睛勘验学人，棒喝交加不容拟议，或拄杖吞却僧堂佛殿，或饥来吃饭困来眠，五会各有特色而宗风一致。",
+    "steps": ["南源：水出高源、拄杖穿髑髅", "道吾：天地同根、渡河须筏", "石霜：金刚眼睛、弄潮须是弄潮人", "福严：法不孤起、波罗提说性在作用", "兴化：一尘才举大地全收、祖师心印"],
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["jingang-yanjing", "sanxuan-sanyao", "sizhaoyong", "banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "zhu-zhang-tunque",
+    "title": "拄杖吞却",
+    "summary": "楚圆禅师以拄杖子接引学人之独特机法。竖起拄杖云过去现在未来诸佛总变成拄杖，或将拄杖穿入学人鼻孔、髑髅，以一根拄杖含摄万法，逼拶学人向上一路。",
+    "steps": ["竖起拄杖含摄三世诸佛", "拄杖穿入鼻孔髑髅", "僧堂佛殿穿入鼻孔", "还我草鞋钱来"],
+    "classicRef": "石霜楚圆禅师语录",
+    "relatedConcepts": ["jingang-yanjing", "banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
   }
-
-]
-;
+];
 
 export const ZEN_KOANS: KoanItem[] = [
   {
@@ -12982,10 +13140,130 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["qiangqian-shezhang", "paifo-xinbing", "shangzhi-hujiao"],
     "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
     "relatedBooks": ["shangzhibian"]
-  }
+  },
+/* ---- AI 阅读理解 FAQ：围绕公案与经典的常见疑问与义理辨析 ---- */
+  {
+    "id": "koan-364",
+    "question": "水出高源",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "僧问：如何是佛？师云：水出高源。",
+    "context": "僧问如何是佛，楚圆答\u201c水出高源\u201d。佛性如水发源于高处，自然流淌，不假造作。高源喻本觉真心，水喻妙用流行。",
+    "interpretation": "全用即体，从体起用。佛不在别处，如水之出源，自然而已。",
+    "relatedConcepts": ["shui-chu-gaoyuan", "jianxing-chengfo"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-365",
+    "question": "弄潮须是弄潮人",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "僧问如何是石霜水，师云春夏长如此秋冬亦复然。僧拟议塞断源头，师便打云：弄潮须是弄潮人。",
+    "context": "僧以\u201c塞断源头\u201d拟议，楚圆便打。弄潮须是弄潮好手，参禅亦然——拟议即落第二头。",
+    "interpretation": "非亲身入局者不能悟。拟议即非，拟议即打。",
+    "relatedConcepts": ["nongchao-xushiren", "banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-366",
+    "question": "金毛师子",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "驸马李遵勗问：我闻西河有金毛师子，是否？师云：都尉什么处得这个消息来？都尉便喝，师云：野干鸣。都尉又喝，师云：恰是。都尉拍手大笑。",
+    "context": "李遵勗以\u201c金毛师子\u201d勘验楚圆，楚圆反问消息来源。都尉喝，师云野干鸣——非真师子之吼。又喝，师云恰是——方才相应。",
+    "interpretation": "勘验中的喝，有真有假。野干鸣是假，恰是是真。楚圆一一点破。",
+    "relatedConcepts": ["banghe"],
+    "relatedPersons": ["shishuang-chuyuan", "li-zunxu"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-367",
+    "question": "对面不相识千里却同风",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "杨亿内翰问：对面不相识，千里却同风。师云：某甲奉院门请。内翰云：真个谩语。师云：前月离唐明。内翰便喝，师云：恰是。内翰又喝，师以手面前画一画，内翰吐舌云：龙象。",
+    "context": "杨亿以禅机试楚圆，楚圆以平实语对。内翰喝，师云恰是；又喝，师画一画，内翰叹为龙象。",
+    "interpretation": "平实语中有真机。画一画处，宾主分明，内翰方知非常人。",
+    "relatedConcepts": ["sanxuan-sanyao"],
+    "relatedPersons": ["shishuang-chuyuan", "yang-yi-neihan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-368",
+    "question": "楚王城畔汝水东流",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "杨亿问如何是圆上座为人底句，师云：切。内翰云：与么则长裙新妇拖泥走。师云：谁得似内翰？遂举念和尚因缘：僧问如何是佛法大意？念云：楚王城畔，汝水东流。",
+    "context": "楚圆以\u201c切\u201d答为人之句，杨亿以\u201c长裙新妇拖泥走\u201d回勘。师举念和尚\u201c楚王城畔汝水东流\u201d——佛法大意不在言语，在眼前日用。",
+    "interpretation": "楚王城畔、汝水东流——法法本然，何须更觅？",
+    "relatedConcepts": ["jianxing-chengfo"],
+    "relatedPersons": ["shishuang-chuyuan", "yang-yi-neihan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-369",
+    "question": "大路来小路来",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "兴教明上座持书到，师接得书便问：大路来？小路来？明云：和尚试道看。便打一坐具。师云：瞎汉！乱统作什么？明嘘一声，师便打。",
+    "context": "楚圆以\u201c大路小路\u201d勘验来僧，僧反打坐具。师云瞎汉乱统，僧嘘一声，师便打。",
+    "interpretation": "勘辨中不容拟议。打坐具、嘘一声，皆非本分，师一一截断。",
+    "relatedConcepts": ["banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-370",
+    "question": "拄杖吞却",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "师见僧来，拈起拄杖云：入你鼻孔里去也。僧云：和尚幸是大人。师云：了。又见僧来，拈起拄杖云：你为什么被我拄杖吞却？僧云：不敢。师云：还我草鞋钱来。",
+    "context": "楚圆以拄杖吞却学人——拄杖含摄万法。学人不敢承当，师云还我草鞋钱来——不值一文。",
+    "interpretation": "拄杖即法身，法身即拄杖。不敢承当，则辜负来意。",
+    "relatedConcepts": ["jingang-yanjing"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-371",
+    "question": "新到吃茶",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "问僧近离什么处，僧云：云过千山碧。师云：着忙作什么？僧云：雁去水声凄。师便喝，僧亦喝；师便打，僧亦打。师云：你看这瞎汉，本分打出三门外，念你是新到，且坐吃茶。",
+    "context": "僧以诗句答来处，楚圆以\u201c着忙\u201d截断。互喝互打后，师念新到且坐吃茶——打后给糖。",
+    "interpretation": "勘辨中互喝互打，虽不契本分，念是新到，且与吃茶。恩威并施。",
+    "relatedConcepts": ["banghe"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-372",
+    "question": "波罗提说性在作用",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "师举波罗提尊者答国王问：性在作用。王曰是何作用我今不见。答曰今现作用王自不见。说偈曰：在胎曰身在眼曰见在耳曰闻在鼻辨香在口谈论在手执捉在足运奔。识者知是佛性不识者唤作精魂。",
+    "context": "楚圆举波罗提公案开示：佛性在日用作用中——见闻觉知、手足运奔皆是佛性。识者知是佛性，不识唤作精魂。",
+    "interpretation": "性在作用——日用寻常即是佛性显发。迷则唤精魂，悟则知佛性。",
+    "relatedConcepts": ["jianxing-chengfo", "fashen-wuxiang"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "koan-373",
+    "question": "祖师心印印空印水印泥",
+    "master": "shishuang-chuyuan",
+    "source": "石霜楚圆禅师语录",
+    "answer": "师云：祖师心印，一印印空，一印印水，一印印泥。如今还有印不着者么？良久云：人王三寸铁，遍地是刀枪。",
+    "context": "楚圆以印空印水印泥开示祖师心印——心印无所不印。又云人王三寸铁遍地是刀枪——王令威严，宗师机锋亦如是。",
+    "interpretation": "心印遍一切处，无物不印。宗师接机如王令，不容逃避。",
+    "relatedConcepts": ["sanxuan-sanyao"],
+    "relatedPersons": ["shishuang-chuyuan"],
+    "relatedBooks": ["shishuangchuyuan"]
+  },
 ];
 
-/* ---- AI 阅读理解 FAQ：围绕公案与经典的常见疑问与义理辨析 ---- */
 export const ZEN_FAQS: FAQItem[] = [
 
   {
@@ -25490,18 +25768,18 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2181",
     "question": "《尚直编》是一部什么书？",
-    "answer": "《尚直编》是明代禅僧空谷景隆所著的护教文献，与《尚理编》为姊妹篇。“尚直”意为直说而无纡曲。本书以问答体裁系统驳斥宋儒朱熹排佛言论，揭露朱熹暗用佛法著书立说而表面排佛的心病，详述濂溪周子、二程等宋儒道学之源流实出于禅宗，是明代护教文献代表作。",
+    "answer": "《尚直编》是明代禅僧空谷景隆所著的护教文献，与《尚理编》为姊妹篇。\u201c尚直\u201d意为直说而无纡曲。本书以问答体裁系统驳斥宋儒朱熹排佛言论，揭露朱熹暗用佛法著书立说而表面排佛的心病，详述濂溪周子、二程等宋儒道学之源流实出于禅宗，是明代护教文献代表作。",
     "relatedBooks": ["shangzhibian"]
   },
   {
     "id": "faq-2182",
-    "question": "空谷景隆为什么说朱熹排佛是“心病”？",
+    "question": "空谷景隆为什么说朱熹排佛是\u201c心病\u201d？",
     "answer": "空谷指出，晦庵潜心佛学可谓博矣，其排佛者心病也。朱熹泛用佛理著书立说，却反行排佛，目的是令后学不看佛书——若不排佛则后学多看佛书，凡看佛书则见其心病。因此密设墙壍闲住后学令走不出识不破。所谓心病，即窃他人之德为自己之功，掩他人之德欲张自己之功。",
     "relatedBooks": ["shangzhibian"]
   },
   {
     "id": "faq-2183",
-    "question": "朱熹的“墙壍”具体设在何处？",
+    "question": "朱熹的\u201c墙壍\u201d具体设在何处？",
     "answer": "空谷指出晦庵墙壍设在多处：指程子云佛氏之言比之扬墨尤为近理所以其害为左甚；大学中庸序文或问诸书注语皆存排佛之意；小学有世俗信浮图诳诱等语；文公家礼丧礼篇不作佛事；复指司马温公语注云世俗信浮图诳诱等语，全是晦庵心之所之不是温公之语。如是用心是其设墙壍也。",
     "relatedBooks": ["shangzhibian"]
   },
@@ -25531,13 +25809,13 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2188",
-    "question": "空谷如何论证“虚无寂灭”有权实二义？",
+    "question": "空谷如何论证\u201c虚无寂灭\u201d有权实二义？",
     "answer": "以权言之，虚无寂灭是空幻方便语——破凡夫之有故曰此身虚幻令心寂灭，破小乘之空故责其陷于解脱深坑令求出离，破中乘之不有不空故责其缚于幻有令求大乘，此皆善权方便之术。以实言之，虚无寂灭是万有之母，出生天地人物万法。佛教曰从无住本立一切法，老子曰无名天地之始，孔子曰易无思也无为也寂然不动——三教圣贤之旨皆是真常寂灭真空不空。",
     "relatedBooks": ["shangzhibian"]
   },
   {
     "id": "faq-2189",
-    "question": "空谷如何驳斥“形朽灭神飘散”之说？",
+    "question": "空谷如何驳斥\u201c形朽灭神飘散\u201d之说？",
     "answer": "空谷以梦为喻驳斥：形气既能作梦，死而未殡者形亦尚存何以无梦乎？至于埋之火之何不知痛苦乎？因有神识成此形气，形气如屋神识如人，去住由人屋是闲物也。引牟子曰：人临死则家人上屋呼之，魂神还则复苏不还则不苏。身譬五谷之根叶，魂神譬五谷之种实，根叶生必当死，种实岂有终乎？",
     "relatedBooks": ["shangzhibian"]
   },
@@ -25555,7 +25833,7 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2192",
-    "question": "什么是“逢蒙之计”？",
+    "question": "什么是\u201c逢蒙之计\u201d？",
     "answer": "逢蒙学射于后羿后杀羿。空谷以此喻朱熹用佛法著书排佛——窃他人之德为自己之功，欲张自己之功故掩他人之德。晦庵泛用佛意欲掩佛学之德全归自己之功，故立排佛之言栽于书中令人信伏。后人披览承虚接响排之而已，所谓一人传虚万人传实。排佛用此逢蒙之计者起于张子厚谢良佐杨中立张敬夫等，广之于晦庵。",
     "relatedBooks": ["shangzhibian"]
   },
@@ -25597,7 +25875,7 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2199",
-    "question": "空谷如何论述“无为无不为”？",
+    "question": "空谷如何论述\u201c无为无不为\u201d？",
     "answer": "空谷论吾宗所谓无为者，无为无不为，无心而为为皆正事也，岂是块然不动乎。言无学者，学到万法尽通至于无学之地，惟取其理不取其语。一切法相咸同一相所谓无相，此无相法性相皆空俱无自性俱不可得。大部诸经皆言智为先导，虽修五波罗密乃至万行若无般若皆名魔业。千经万论缘何事只为调治一点心。",
     "relatedBooks": ["shangzhibian"]
   },
@@ -25609,8 +25887,129 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2201",
-    "question": "空谷如何论述“佛法如大路”？",
+    "question": "空谷如何论述\u201c佛法如大路\u201d？",
     "answer": "空谷论佛法如大路，凡欲于此路行者亦不拒之，不欲于此路行者亦不邀之。学佛者得佛法之饶益佛亦无喜，背佛者不得佛法之饶益佛亦无愠。从佛背佛在乎人之有善根无善根而已，安可力致其然欤。北溟有鲲化而为鹏听其自化也，岂人力能俾其化焉。人之从佛亦何益于我乎，人之背佛亦何损于我乎——空谷表明自己非欲罗笼人入佛，而是直说道理令人自见。",
     "relatedBooks": ["shangzhibian"]
-  }
+  },
+  {
+    "id": "faq-2202",
+    "question": "什么是金刚眼睛？",
+    "answer": "楚圆禅师在石霜入院上堂时提出：须得具金刚眼睛。具金刚眼睛者，二六时中四威仪内，魔境现前能辨别，不流浪三界。不具者则不能辨别魔境，休歇无期。金刚眼睛喻指宗门透彻之眼，能照破一切虚妄。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2203",
+    "question": "如何是佛？",
+    "answer": "僧问如何是佛，楚圆答：水出高源。佛性如水发源于高处，自然流淌，不假造作。高源喻本觉真心，水喻妙用流行。从体起用，全用即体，佛性本然如是。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2204",
+    "question": "如何是南源境？",
+    "answer": "楚圆答：黄河九曲，水出昆仑。境中人：随流人不顾，斫手望扶桑。南源之境如黄河九曲出自昆仑，气势磅礴。境中之人则随流不顾，斫手望远——不滞于境，向上一路。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2205",
+    "question": "如何是佛法大意？",
+    "answer": "楚圆答：洞庭湖里浪滔天。佛法大意不在言语文字，如洞庭湖波涛滔天，气势磅礴而又不可把捉。意在言外，须亲到方知。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2206",
+    "question": "如何是石霜水？",
+    "answer": "楚圆答：春夏长如此，秋冬亦复然。僧拟议塞断源头，师便打云：弄潮须是弄潮人。石霜之水四季不变，喻佛性常恒。拟议塞断即落第二头，须亲身入局方为弄潮人。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2207",
+    "question": "什么是慈明四家录？",
+    "answer": "南宋章倧重刊的临济宗四代传承录，收录慈明楚圆、杨岐方会、白云守端、五祖法演四家语录。章倧序称临济儿孙鹰扬虎视，唯慈明负卓绝逸群之韵，命工重刊以续正续之宗。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2208",
+    "question": "楚圆禅师与驸马李遵勗的机缘如何？",
+    "answer": "楚圆行脚时访李遵勗，李令小童问：道得即相见。师云：今日特来相看。李以碑文镌白字当道种青松试之，师以不因今日节余日实难逢回应。坐次李问西河金毛师子，互喝后李拍手大笑，机锋契合。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2209",
+    "question": "楚圆禅师与杨亿内翰的机缘如何？",
+    "answer": "楚圆为唐明嵩持书上杨亿，杨以对面不相识千里却同风试之。互喝后杨叹为龙象，唤客司点好茶云元来是自家人。后又问为人底句，师云切，杨云长裙新妇拖泥走，师举楚王城畔汝水东流因缘。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2210",
+    "question": "什么是三玄三要？",
+    "answer": "临济宗核心纲宗。第一玄三世诸佛拟何宣，第二玄灵利衲僧眼未明，第三玄万象森罗宇宙宽。第一要岂话圣贤妙，第二要峰顶敲楗召，第三要起倒令人笑。楚圆禅师以偈颂形式系统阐述。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2211",
+    "question": "什么是五位君臣？",
+    "answer": "曹洞宗纲宗，楚圆禅师以偈颂表达。正中偏：夜半乌鸡室里鸣；偏中正：日落西山观异影；正中来：木马生儿遍九垓；兼中至：矛头交互不伤锋；兼中到：黑白已前休作造。从偏位回互到兼到圆融。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2212",
+    "question": "什么是波罗提说性在作用？",
+    "answer": "楚圆举西天国王问波罗提尊者何者是佛，答曰见性是佛。问性在何处，答曰性在作用。说偈曰在胎曰身在眼曰见在耳曰闻在鼻辨香在口谈论在手执捉在足运奔。识者知是佛性不识者唤作精魂。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2213",
+    "question": "什么是祖师心印印空印水印泥？",
+    "answer": "楚圆在兴化开堂云：祖师心印，一印印空，一印印水，一印印泥。心印无所不印，空水泥三处皆印，喻心印遍一切处。又云人王三寸铁遍地是刀枪——宗师机锋如王令，不容逃避。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2214",
+    "question": "什么是拄杖吞却？",
+    "answer": "楚圆见僧来拈起拄杖云入你鼻孔里去也。又云你为什么被我拄杖吞却。拄杖含摄万法，穿入学人鼻孔髑髅。学人不敢承当，师云还我草鞋钱来——不值一文。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2215",
+    "question": "楚圆禅师如何勘辨新到？",
+    "answer": "问僧近离什么处，僧以诗句答。师以着忙截断，互喝互打后，师云本分打出三门外，念你是新到且坐吃茶。勘辨中不容拟议，打后给茶，恩威并施。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2216",
+    "question": "什么是十二时歌？",
+    "answer": "楚圆所作，从鸡鸣丑到夜半子十二时辰各一偈。鸡鸣丑梦里逢人莽莽卤，平旦寅觉来路上弄精魂，日出卯烜赫光影里坐，食时辰食饱还知是病因。将禅修融入日常作息，饥餐困眠皆是道。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2217",
+    "question": "什么是牧童歌？",
+    "answer": "楚圆所作牧牛歌，以牧童放牛喻调心。从跣足披蓑横眠牛上，到捏定鼻头牵向圈眠，展现从放任到调伏的过程。末后倒骑牛脱布袄，知音休向途中讨——牧牛究竟，能所俱泯。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2218",
+    "question": "楚圆禅师的五会住持分别在哪些道场？",
+    "answer": "袁州南源山广利禅院、潭州道吾山、潭州石霜山崇胜禅院、南岳山福严禅院、潭州兴化禅院。五处住持各有特色而宗风一致，以金刚眼睛、棒喝交加为统宗。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2219",
+    "question": "楚圆禅师的法脉传承如何？",
+    "answer": "楚圆嗣法汾阳善昭，为临济宗第六世。门下出杨岐方会开杨岐派，黄龙慧南开黄龙派，临济宗由此分为杨岐、黄龙二派，大盛于天下。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2220",
+    "question": "什么是路逢剑客须呈剑？",
+    "answer": "楚圆在道吾上堂云：宗师者，夺贫子之衣珠，究达人之见处。若不如是，尽是和泥合水汉。良久云：路逢剑客须呈剑，不是诗人莫献诗。面对真正的禅者，须以本分事相待，不可虚言敷衍。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+    "id": "faq-2221",
+    "question": "什么是向上一路千圣不传？",
+    "answer": "楚圆在福严上堂云：心若无事万法不生，意绝玄微纤尘何立。向上一路千圣不传，学者劳形如猿捉影。山僧即不然，向上一路千圣不然，学者劳形如猿捉影。以双遣方式表达向上一路不可说、不可传。",
+    "relatedBooks": ["shishuangchuyuan"]
+  },
+
 ];
