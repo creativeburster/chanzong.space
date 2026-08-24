@@ -2758,6 +2758,104 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": ["huihong-juefan", "shitou-xiqian", "mazu-daoyi"],
     "relatedBooks": ["linjianhoulu"]
+  },
+  {
+    "id": "konggu-jinglong",
+    "name": "空谷景隆",
+    "title": "明代禅僧 / 尚理编作者",
+    "era": "明 (约15世纪)",
+    "lifeStory": "空谷景隆，明代禅僧，居中吴。著《尚直编》《尚理编》，以问答体裁辨正禅道之别，护持佛法。其学兼通内外典籍，驳正道家炼术之妄，阐明禅宗见性大道超越形气之学。",
+    "teachings": "禅宗见性大道超越形气之学，炼术属数量成坏之法。以理性辨正禅道之别，护持佛法正道。",
+    "quotes": ["直笔聊为御侮编，三家文献证媸妍。侮辞若灭吾书灭，理正无私不愧天。"],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["shangli-bianzheng", "jianxing-dadao", "shangli-hujiao"],
+    "relatedMethods": ["hujiao-bianzheng"],
+    "relatedPersons": ["huanglong-huiji", "lv-dongbin", "yaoguangxiao"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "huanglong-huiji",
+    "name": "黄龙诲机",
+    "title": "黄龙禅师 / 吕洞宾参访之师",
+    "era": "唐 (约9世纪)",
+    "lifeStory": "黄龙诲机禅师，唐代禅僧。吕洞宾参访之师，以“黄龙出现”一语折伏吕洞宾炼术之傲，使其弃术归禅。此公案为禅道辨正之经典案例。",
+    "teachings": "以“黄龙出现”折伏炼术，直指见性大道。",
+    "quotes": ["饶经八万劫，终是落空亡。"],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["shangli-bianzheng", "lianxu-xingshen"],
+    "relatedMethods": [],
+    "relatedPersons": ["konggu-jinglong", "lv-dongbin"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "lv-dongbin",
+    "name": "吕洞宾",
+    "title": "道教八仙之一 / 后归禅宗",
+    "era": "唐 (约9世纪)",
+    "lifeStory": "吕洞宾，道教著名人物，传说为八仙之一。善炼术，自负“一粒粟中藏世界，半升铛内煮山川”。参黄龙诲机禅师后被折伏，弃炼术而归正法，作偈礼谢。其公案为禅道辨正之典型。",
+    "teachings": "弃炼术而归正法，理之所宜。",
+    "quotes": ["一粒粟中藏世界，半升铛内煮山川。"],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["lianxu-xingshen", "shangli-bianzheng"],
+    "relatedMethods": [],
+    "relatedPersons": ["huanglong-huiji", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "zhang-shangying",
+    "name": "张商英",
+    "title": "宋相国 / 无尽居士",
+    "era": "北宋 (1043—1121)",
+    "lifeStory": "张商英，号无尽居士，北宋相国。尝亲东林常总禅师自谓有所得，后于兜率寺闻悦禅师语，触枕堕地而悟道。著《护法论》护持佛法。空谷景隆于尚理编中述其悟道公案。",
+    "teachings": "真参实悟方始到家，心思意解不是真悟。",
+    "quotes": ["鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。"],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["shanjian-wudao", "dinghui-dengchi"],
+    "relatedMethods": [],
+    "relatedPersons": ["konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "yaoguangxiao",
+    "name": "姚广孝",
+    "title": "明代僧人 / 靖难功臣",
+    "era": "明 (1335—1418)",
+    "lifeStory": "姚广孝，字斯道，长洲人。幼出家为僧，后佐燕王朱棣靖难有功，封荣国公。著《佛法不可灭论》驳斥灭佛之议，论证佛法不可灭之理。空谷景隆于尚理编末附其文。",
+    "teachings": "佛法不可灭也，非惟不可灭也，莫之能灭也。",
+    "quotes": ["佛之道水不能漂、火不能爇、刀剑不能刃、毒药不能中，在凡不减在圣不增，犹太虚空其可能灭乎？"],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["fo-buke-mie", "shangli-hujiao"],
+    "relatedMethods": ["hujiao-bianzheng"],
+    "relatedPersons": ["konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "longtan-xin",
+    "name": "龙潭信禅师",
+    "title": "德山宣鉴之师",
+    "era": "唐 (约9世纪)",
+    "lifeStory": "龙潭信禅师，唐代禅僧。德山宣鉴之师。以“吹灭纸烛”一语令德山大悟，烧却疏钞。此公案为禅宗破除知解、直指人心之经典。",
+    "teachings": "以吹灭纸烛令学人于暗中大悟，破除知解直指人心。",
+    "quotes": [],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["shangli-bianzheng", "jianxing-dadao"],
+    "relatedMethods": [],
+    "relatedPersons": ["deshan-xuanjian", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "shishuang-chuyuan",
+    "name": "石霜楚圆",
+    "title": "石霜禅师 / 慈明",
+    "era": "北宋 (986—1039)",
+    "lifeStory": "石霜楚圆，号慈明，北宋禅僧。临济宗杨岐方会、黄龙慧南之师。迁化后泰首座坐脱而去，处侍者评曰“坐脱立亡则不无，要会先师意则未在”。空谷景隆以此公案辨析坐脱立亡之实到与似到。",
+    "teachings": "坐脱立亡须以悟道为本，仅有定力而非实到。",
+    "quotes": [],
+    "classics": ["shanglibian"],
+    "relatedConcepts": ["zuotuo-liwang", "dinghui-dengchi"],
+    "relatedMethods": [],
+    "relatedPersons": ["konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
   }
 ];
 
@@ -6594,6 +6692,96 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["wenzi-chan", "shier-yuanqi"],
     "relatedPersons": ["li-tongxuan"],
     "relatedBooks": ["linjianhoulu"]
+  },
+  {
+    "id": "shangli-bianzheng",
+    "title": "尚理辨正",
+    "category": "护教",
+    "summary": "以理性辨正禅道之别，阐明禅宗见性大道超越道家炼术形气之学。空谷景隆著《尚理编》以问答体裁驳正道家修炼之妄，辨明炼术属数量成坏之法，禅宗是见性之学超越三界生死。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["jianxing-dadao", "lianxu-xingshen", "shangli-hujiao"],
+    "relatedPersons": ["konggu-jinglong", "huanglong-huiji", "lv-dongbin"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "jianxing-dadao",
+    "title": "见性大道",
+    "category": "禅宗核心",
+    "summary": "禅宗以见性明心为根本大道，超越三界生死。与道家炼术形气之学根本不同：炼术是形气之学，属数量成坏之法；见性是超越三界之大法，不涉神识，直指本心。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-bianzheng", "lianxu-xingshen", "chujia-shenshi"],
+    "relatedPersons": ["konggu-jinglong", "deshan-xuanjian", "longtan-xin"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "lianxu-xingshen",
+    "title": "炼术形神",
+    "category": "道教辨正",
+    "summary": "道家炼术以阴阳为龙虎，以津液为铅汞，以元气为还丹，炼磨功力使魂魄寿长。此为形气之学，属数量成坏之法，不出中阴界。炼术者死后不过为神灵，报尽皆入轮回。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-bianzheng", "chujia-shenshi", "sanjie-chulun"],
+    "relatedPersons": ["lv-dongbin", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "sanjie-chulun",
+    "title": "三界出伦",
+    "category": "佛教宇宙观",
+    "summary": "三界者，欲界、色界、无色界，六凡所居皆受轮回生死。出三界者不受轮回生死，即四种圣人——佛、菩萨、缘觉、声闻。四圣得意生身，于三界内外无住无不住。总为十法界：四圣六凡。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-bianzheng", "jianxing-dadao", "lianxu-xingshen"],
+    "relatedPersons": ["konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "zuotuo-liwang",
+    "title": "坐脱立亡",
+    "category": "禅定境界",
+    "summary": "坐脱立亡有实到与似到之分。参禅悟道、修持得证道果者临终坐脱立亡为实到；不曾悟道仅有静定之功者亦能坐脱立亡为似到。不悟道虽能坐脱立亡，只在识神阴界，不出轮回生死。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["dinghui-dengchi", "chujia-shenshi", "jianxing-dadao"],
+    "relatedPersons": ["shishuang-chuyuan", "caoshan-benji", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "fo-buke-mie",
+    "title": "佛法不可灭",
+    "category": "护教",
+    "summary": "佛法不可灭也，非惟不可灭也，莫之能灭也。有势力者灭佛随灭随兴，天能灭而不敢灭。佛之教诸天奉行，况敢言灭？佛之道水不能漂、火不能爇、刀剑不能刃、毒药不能中，在凡不减在圣不增，犹太虚空其可能灭乎？",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-hujiao", "shangli-bianzheng"],
+    "relatedPersons": ["yaoguangxiao", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "chujia-shenshi",
+    "title": "出神识神",
+    "category": "禅定辨正",
+    "summary": "出神者是鬼神活计，炼家珍之以为正事，吾宗大禁不许出神。大道全体作用不涉神识，才涉神识即落鬼神阴界。神识者，生为念虑，死为精魂。注心养肾、运气养神，全是神识不离阴界。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["lianxu-xingshen", "zuotuo-liwang", "dinghui-dengchi"],
+    "relatedPersons": ["konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "dinghui-dengchi",
+    "title": "定慧等持",
+    "category": "禅修",
+    "summary": "禅定犹雨也，智慧犹日也。常雨而无日则烂坏万物，常日而无雨则焦坏万物。雨日迭施始克成就万物。定慧等持可以造道。仅有禅定而无智慧，虽能坐脱立亡，只是似到而非实到。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["zuotuo-liwang", "jianxing-dadao", "chujia-shenshi"],
+    "relatedPersons": ["konggu-jinglong", "zhang-shangying"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "shangli-hujiao",
+    "title": "尚理护教",
+    "category": "护教",
+    "summary": "空谷景隆以尚理编护教辨正，不忍生民罹疑惑之咎。三教圣人以道为教、以善为劝，分门而为三，归善而为一。著书者应发明圣人之道而垂惠后学，不可藉公伸私。",
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-bianzheng", "fo-buke-mie"],
+    "relatedPersons": ["konggu-jinglong", "yaoguangxiao"],
+    "relatedBooks": ["shanglibian"]
   }
 ];
 
@@ -7727,6 +7915,26 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["wenzi-chan", "zanming"],
     "relatedPersons": ["huihong-juefan"],
     "relatedBooks": ["linjianhoulu"]
+  },
+  {
+    "id": "hujiao-bianzheng",
+    "title": "护教辨正",
+    "summary": "以理性辨正禅道之别，驳正道家炼术之妄，护持佛法正道。空谷景隆著尚理编，以问答体裁逐一辨析炼术形气之学与禅宗见性大道的根本区别，附姚广孝佛法不可灭论。",
+    "steps": ["明辨禅道之别：禅宗是见性之学，炼术是形气之学", "逐一驳正炼术之妄：炼术属数量成坏之法，不出中阴界", "引公案为证：吕洞宾参黄龙、德山烧疏钞等", "阐明佛法不可灭之理"],
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["shangli-bianzheng", "shangli-hujiao", "fo-buke-mie"],
+    "relatedPersons": ["konggu-jinglong", "yaoguangxiao"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "jianxing-dadao-fa",
+    "title": "见性明心大道",
+    "summary": "禅宗以见性明心为根本大道，超越三界生死。不涉神识，直指本心。与道家炼术形气之学根本不同：炼术是数量成坏之法，见性是超越三界之大法。",
+    "steps": ["明了见性大道超越三界生死", "辨识炼术形气之学属数量成坏之法", "参究公案契入见性本心", "定慧等持可以造道"],
+    "classicRef": "shanglibian",
+    "relatedConcepts": ["jianxing-dadao", "shangli-bianzheng", "sanjie-chulun"],
+    "relatedPersons": ["konggu-jinglong", "deshan-xuanjian"],
+    "relatedBooks": ["shanglibian"]
   }
 ]
 ;
@@ -11637,6 +11845,46 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["instant-enlightenment", "self-nature"],
     "relatedPersons": ["yongjia", "huihong-juefan"],
     "relatedBooks": ["linjianhoulu"]
+  },
+  {
+    "id": "koan-330",
+    "question": "吕洞宾参黄龙——“一粒粟中藏世界，半升铛内煮山川”，此意如何？",
+    "answer": "黄龙答：“守尸鬼。”吕曰：“争奈囊中有长生不死药？”龙曰：“饶经八万劫，终是落空亡。”吕含愠而去，至晚飞剑胁之，剑不能入，遂拜求指归。龙厉色问：“如何是一粒粟中藏世界？”吕于言下有省，作偈礼谢。",
+    "master": "黄龙诲机",
+    "source": "尚理编",
+    "relatedConcepts": ["shangli-bianzheng", "lianxu-xingshen", "jianxing-dadao"],
+    "relatedPersons": ["huanglong-huiji", "lv-dongbin", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "koan-331",
+    "question": "德山烧疏钞——龙潭吹灭纸烛，德山何悟？",
+    "answer": "德山出门曰珍重，遽回曰：“外面黑。”龙潭点纸烛度与山，山拟接，潭复吹灭。山于此时大悟，明日将疏钞纵火焚之，自秉炬曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。”",
+    "master": "龙潭信禅师",
+    "source": "尚理编",
+    "relatedConcepts": ["jianxing-dadao", "shangli-bianzheng"],
+    "relatedPersons": ["longtan-xin", "deshan-xuanjian", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "koan-332",
+    "question": "张商英兜率悟道——“捉得贼也”，赃在甚么处？",
+    "answer": "张商英触枕堕地击声悚然有省，趋方丈扣门。悦云：“是谁？”公云：“商英也。”悦云：“作么生？”公云：“捉得贼也。”悦云：“赃在甚么处？”公亦不能答。次日颂云：“鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。”",
+    "master": "兜率悦禅师",
+    "source": "尚理编",
+    "relatedConcepts": ["shanjian-wudao", "dinghui-dengchi"],
+    "relatedPersons": ["zhang-shangying", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "koan-333",
+    "question": "纸衣道者立化——“只解恁么去，不解恁么来”，何意？",
+    "answer": "纸衣道者见曹山章禅师，问纸衣下事，立化而去。山云：“只解恁么去，不解恁么来。”僧复苏问：“一灵真性不假胞胎时如何？”山云：“未是妙。”僧云：“如何是妙？”山云：“不借借。”僧于言下大悟，归单位坐脱而去——此先似到后实到者也。",
+    "master": "曹山本寂",
+    "source": "尚理编",
+    "relatedConcepts": ["zuotuo-liwang", "chujia-shenshi", "dinghui-dengchi"],
+    "relatedPersons": ["caoshan-benji", "konggu-jinglong"],
+    "relatedBooks": ["shanglibian"]
   }
 ];
 
@@ -23477,5 +23725,125 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "渔父词在禅宗文学中有什么独特地位？",
     "answer": "渔父词以渔翁形象比喻禅者心境，是禅宗文学中独特的诗词形式。惠洪以渔家傲词牌歌咏万回、药山、宝志、亮公、香严、丹霞六位禅门人物，将禅意融入词境。如咏丹霞：\u201c不怕石头行路滑，归来那受驹儿踏。言下百骸俱泼撒，无剩法，灵然昼夜光通达。\u201d——以渔翁之逍遥示禅者之洒脱，以词境展现公案禅机。渔父词的独特在于：既有词牌的文学美感，又有公案的禅机勘验；既可吟咏欣赏，又可参究悟道。它是文字禅的典型实践——以诗词为入道方便，不离言说而悟道。",
     "relatedBooks": ["linjianhoulu"]
+  },
+  {
+    "id": "faq-2071",
+    "question": "《尚理编》的作者是谁？主要讲什么？",
+    "answer": "《尚理编》是明代禅僧空谷景隆所著的护教辨正文献。以问答体裁驳正道家炼术之妄，辨明禅宗见性大道与炼术形气之学的根本区别。书中详述吕洞宾参黄龙、德山烧疏钞、张商英兜率悟道、纸衣道者立化等公案，末附姚广孝《佛法不可灭论》。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2072",
+    "question": "空谷景隆为什么写《尚理编》？",
+    "answer": "空谷景隆因道士缪尚诚妄造“神化图”，篡改吕洞宾参黄龙公案之语，虚架陋辞惑乱人心，故不忍坐视而著此编以辨正之。其目的是阐明禅宗见性大道与道家炼术的根本区别，护持佛法正道。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2073",
+    "question": "禅宗与道家炼术的根本区别是什么？",
+    "answer": "禅宗是见性之学，超越三界生死，不涉神识，直指本心。道家炼术是形气之学，以阴阳为龙虎、津液为铅汞、元气为还丹，属数量成坏之法。炼术者死后不过入中阴界为神灵，报尽皆入轮回。炼术似乎灵明的其实是神识，神识即精魂，精魂即妄情，妄情即生死之本。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2074",
+    "question": "吕洞宾参黄龙公案的经过是怎样的？",
+    "answer": "吕洞宾谒黄龙诲机禅师时值龙升堂。龙说“众中有窃法者”，吕说“云水道者”。龙问“云尽水干时如何”，吕不能答。吕反问“一粒粟中藏世界，半升铛内煮山川”，龙答“守尸鬼”。吕说有长生不死药，龙答“饶经八万劫，终是落空亡”。吕飞剑胁之不能入，遂拜求指归，于言下有省，作偈礼谢。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2075",
+    "question": "“守尸鬼”是什么意思？",
+    "answer": "黄龙诲机禅师称吕洞宾的炼术为“守尸鬼”，意指炼术者不过是在守护一具血肉之躯使其暂住，并非真正超越生死。血肉之身终有坏时，炼术魂魄寿长不过入中阴界为神灵，报尽仍入轮回。此语直指炼术的根本局限——执假迷真不免赴死。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2076",
+    "question": "“饶经八万劫，终是落空亡”怎么理解？",
+    "answer": "黄龙禅师此语意为：纵然炼术能活八万大劫，终究还是落空亡。因为炼术是数量成坏之法，凡属有生决定有灭。天地尚有坏时，岂有血肉之身而长生不死？炼术者不出中阴界，报尽皆入轮回生死。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2077",
+    "question": "什么是三界？出三界是什么意思？",
+    "answer": "三界者，欲界、色界、无色界，六凡所居皆受轮回生死。六凡为天、人、修罗、饿鬼、畜生、地狱。出三界者不受轮回生死，即四种圣人——佛、菩萨、缘觉、声闻。四圣得意生身，自利利他，于三界内外无住无不住。总为十法界：四圣六凡。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2078",
+    "question": "德山烧疏钞公案说明了什么？",
+    "answer": "德山宣鉴禅师初不信禅宗有教外别传之道，担负金刚经疏钞出蜀。路上被卖饼婆子以金刚经“三心不可得”之问难住。后至龙潭信禅师处，一夕龙潭吹灭纸烛，德山于暗中大悟，将疏钞纵火焚之，曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。”此公案说明：不得妙悟者，虽造经书五千余卷只是识情计度，如取萤火欲烧须弥终不能着。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2079",
+    "question": "“穷诸玄辩，若一毫置于太虚”是何意？",
+    "answer": "德山禅师悟后焚疏钞时所说。意为：穷尽一切玄妙辩才，如同将一根毫毛放在太虚之中——微不足道。竭尽世间所有机巧思量，如同将一滴水投入大海——了无痕迹。此语说明文字知解在真正的悟道面前毫无分量，唯有见性明心方能超越生死。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2080",
+    "question": "张商英兜率悟道公案说明了什么？",
+    "answer": "宋相国张商英自谓于东林总禅师处有所得，一夕宿兜率寺，悦禅师指出其“于德山托钵、香严独脚颂还有疑处”，说明其未真悟。张商英触枕堕地击声悚然有省，但被问“赃在甚么处”仍不能答。此公案说明：真参实悟方始到家，心思意解不是真悟，纵有所省亦未必透彻。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2081",
+    "question": "坐脱立亡有实到与似到之分，怎么理解？",
+    "answer": "参禅悟道、修持得证道果者临终坐脱立亡为实到——真正超越三界生死。不曾悟道仅有静定之功者亦能坐脱立亡为似到——虽有定力但不出识神阴界。先懒云和尚喻为：禅定犹雨，智慧犹日，雨日迭施始克成就万物。定慧等持可以造道。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2082",
+    "question": "纸衣道者立化公案说明了什么？",
+    "answer": "纸衣道者见曹山本寂禅师，问纸衣下事，立化而去——此为似到。曹山评曰“只解恁么去，不解恁么来”。僧复苏问“一灵真性不假胞胎时如何”，曹山答“未是妙”，又问“如何是妙”，答“不借借”。僧于言下大悟，归单位坐脱而去——此为先似到后实到。说明仅有定力不够，须真悟道方为实到。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2083",
+    "question": "石霜楚圆迁化后泰首座坐脱，处侍者如何评价？",
+    "answer": "石霜楚圆禅师迁化后，泰首座坐脱而去。处侍者评曰：“坐脱立亡则不无，要会先师意则未在。”意为：泰首座虽有坐脱立亡的定力，但并未真正领会石霜禅师的禅旨。此为似到而不到者——有定力而无智慧，虽能坐脱立亡，只在识神阴界，不出轮回生死。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2084",
+    "question": "为什么空谷景隆说“出神是鬼神活计”？",
+    "answer": "大道全体作用不涉神识，才涉神识即落鬼神阴界。出神者，神识离身游走，不过是鬼神的活计。空谷景隆引万峰和尚斥责文藏主出神之事：“圆顶方袍参禅学道，何以出神作此鬼神活计？”佛祖诃斥出神为鬼家活计，禅宗大禁不许出神。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2085",
+    "question": "炼形长生之术为什么是虚妄的？",
+    "answer": "凡属有生决定有灭，天地尚有坏时，岂有血肉之身而长生不死？炼术者妄图血肉之身长生，内以敛精养气，外以吸露餐霞，执假迷真不免赴死，不过魂魄寿长而已。不修戒德禅定不得升天，不离中阴界悠悠无归，一神灵耳。用泥水之术者采他人元气资自己幻身，杀他养己，死入无间地狱。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2086",
+    "question": "佛与老子孰前孰后？",
+    "answer": "佛生于周昭王二十四年，佛灭度后四百二十二年老子方生。佛是圣人中之大圣人，老子是世人中之圣人。佛是三千大千世界天上天下三界大圣，老子是大明一国之圣。阚泽奏对曰：“孔老之教法天制用，不敢违天；佛教诸天奉行，不敢违佛。”",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2087",
+    "question": "姚广孝《佛法不可灭论》的主要论点是什么？",
+    "answer": "姚广孝论证佛法不可灭：一、有势力者灭佛随灭随兴，况兴之愈盛；二、天能灭而不敢灭，因佛之教诸天奉行；三、佛之道水不能漂、火不能爇、刀剑不能刃、毒药不能中，在凡不减在圣不增，犹太虚空其可能灭乎？韩愈欧阳修辈以空言欲灭之，正如精卫填海、蝼蚁穴山，可笑不自量。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2088",
+    "question": "“三武与宋徽”灭佛的结果如何？",
+    "answer": "三武（北魏太武帝、北周武帝、唐武宗）与宋徽宗曾以势力灭佛，但结果是随灭而随兴，况兴之愈盛。纵有势力能灭，但灭其所主之地耳，不能灭普天率土。此为姚广孝《佛法不可灭论》中“有势力者不能灭”之论证。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2089",
+    "question": "空谷景隆如何看待三教关系？",
+    "answer": "空谷景隆认为三教圣人鲜不以道为教、以善为劝，分门而为三，归善而为一。以迹而泥之者是不知其道也。著书者应发明圣人之道而垂惠后学，不可藉其公而伸其私。三教圣人教人为善、教人明道，都是为了共助国家的政化。",
+    "relatedBooks": ["shanglibian"]
+  },
+  {
+    "id": "faq-2090",
+    "question": "《尚理编》中的“尚直尚理二编著毕偶成”诗表达了什么？",
+    "answer": "诗曰：“直笔聊为御侮编，三家文献证媸妍。侮辞若灭吾书灭，理正无私不愧天。”空谷以直笔撰写护教辨正之编，以三教文献辨别是非真伪。纵然侮谤之辞欲灭吾书，吾书终不可灭；理正而无私，不愧于天。此诗表达了空谷以理性护教的坚定信念。",
+    "relatedBooks": ["shanglibian"]
   }
 ];
