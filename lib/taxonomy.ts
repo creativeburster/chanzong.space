@@ -345,8 +345,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     ],
     "relatedBooks": [
       "zhengdaoge", "yongjia"]
-  }
-  ,
+  },
   {
     "id": "mazu",
     "name": "马祖道一",
@@ -2778,8 +2777,8 @@ export const ZEN_PERSONS: PersonItem[] = [
     "name": "黄龙诲机",
     "title": "黄龙禅师 / 吕洞宾参访之师",
     "era": "唐 (约9世纪)",
-    "lifeStory": "黄龙诲机禅师，唐代禅僧。吕洞宾参访之师，以“黄龙出现”一语折伏吕洞宾炼术之傲，使其弃术归禅。此公案为禅道辨正之经典案例。",
-    "teachings": "以“黄龙出现”折伏炼术，直指见性大道。",
+    "lifeStory": "黄龙诲机禅师，唐代禅僧。吕洞宾参访之师，以\u201c黄龙出现\u201d一语折伏吕洞宾炼术之傲，使其弃术归禅。此公案为禅道辨正之经典案例。",
+    "teachings": "以\u201c黄龙出现\u201d折伏炼术，直指见性大道。",
     "quotes": ["饶经八万劫，终是落空亡。"],
     "classics": ["shanglibian"],
     "relatedConcepts": ["shangli-bianzheng", "lianxu-xingshen"],
@@ -2792,7 +2791,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "name": "吕洞宾",
     "title": "道教八仙之一 / 后归禅宗",
     "era": "唐 (约9世纪)",
-    "lifeStory": "吕洞宾，道教著名人物，传说为八仙之一。善炼术，自负“一粒粟中藏世界，半升铛内煮山川”。参黄龙诲机禅师后被折伏，弃炼术而归正法，作偈礼谢。其公案为禅道辨正之典型。",
+    "lifeStory": "吕洞宾，道教著名人物，传说为八仙之一。善炼术，自负\u201c一粒粟中藏世界，半升铛内煮山川\u201d。参黄龙诲机禅师后被折伏，弃炼术而归正法，作偈礼谢。其公案为禅道辨正之典型。",
     "teachings": "弃炼术而归正法，理之所宜。",
     "quotes": ["一粒粟中藏世界，半升铛内煮山川。"],
     "classics": ["shanglibian"],
@@ -2834,7 +2833,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "name": "龙潭信禅师",
     "title": "德山宣鉴之师",
     "era": "唐 (约9世纪)",
-    "lifeStory": "龙潭信禅师，唐代禅僧。德山宣鉴之师。以“吹灭纸烛”一语令德山大悟，烧却疏钞。此公案为禅宗破除知解、直指人心之经典。",
+    "lifeStory": "龙潭信禅师，唐代禅僧。德山宣鉴之师。以\u201c吹灭纸烛\u201d一语令德山大悟，烧却疏钞。此公案为禅宗破除知解、直指人心之经典。",
     "teachings": "以吹灭纸烛令学人于暗中大悟，破除知解直指人心。",
     "quotes": [],
     "classics": ["shanglibian"],
@@ -2848,7 +2847,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "name": "石霜楚圆",
     "title": "石霜禅师 / 慈明",
     "era": "北宋 (986—1039)",
-    "lifeStory": "石霜楚圆，号慈明，北宋禅僧。临济宗杨岐方会、黄龙慧南之师。迁化后泰首座坐脱而去，处侍者评曰“坐脱立亡则不无，要会先师意则未在”。空谷景隆以此公案辨析坐脱立亡之实到与似到。",
+    "lifeStory": "石霜楚圆，号慈明，北宋禅僧。临济宗杨岐方会、黄龙慧南之师。迁化后泰首座坐脱而去，处侍者评曰\u201c坐脱立亡则不无，要会先师意则未在\u201d。空谷景隆以此公案辨析坐脱立亡之实到与似到。",
     "teachings": "坐脱立亡须以悟道为本，仅有定力而非实到。",
     "quotes": [],
     "classics": ["shanglibian"],
@@ -2856,6 +2855,133 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": ["konggu-jinglong"],
     "relatedBooks": ["shanglibian"]
+  },
+
+  {
+    "id": "daowu-zhen",
+    "name": "道吾真禅师",
+    "era": "宋",
+    "title": "临济宗",
+    "lifeStory": "道吾真禅师，杨岐方会禅师法嗣，住潭州道吾山。以\u201c明暗两字截断众流\u201d为宗纲，善开三玄三要、四宾主、四照用等临济纲宗。",
+    "teachings": "明暗两字截断众流；一问一答未有休期，唤作无尽法藏；参须实参，学须实学；智不到处切忌道著",
+    "quotes": ["直饶与么道，也落第三绻", "一问一答未有休期，直饶尔问到未来际，我也答到未来际", "叮咛损君德，无言真有功，任从沧海变，终不为君通"],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "baoning-renyong",
+    "name": "保宁仁勇",
+    "era": "宋",
+    "title": "临济宗杨岐派",
+    "lifeStory": "保宁仁勇禅师，杨岐方会禅师嗣法小师，住江宁府保宁禅院。编集《杨岐方会和尚语录》杨岐山部分。",
+    "teachings": "",
+    "quotes": [],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "baiyun-shouduan",
+    "name": "白云守端",
+    "era": "宋（1025-1072）",
+    "title": "白云守端禅师",
+    "lifeStory": "白云守端禅师（1025-1072），杨岐方会禅师法嗣，住舒州白云峰。编集《杨岐方会和尚语录》云盖山部分。为杨岐派重要传人。",
+    "teachings": "白云守端禅师，杨岐方会禅师法嗣，住舒州白云峰。编集《杨岐方会和尚语录》云盖山部分，为杨岐派重要传人。",
+    "quotes": [],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "yang-tian",
+    "name": "杨畋",
+    "era": "宋",
+    "title": "临济宗杨岐派",
+    "lifeStory": "杨畋，宋提刑官，参问杨岐方会禅师，有机锋对话。杨岐以\u201c共钵盂吃饭\u201d答其法嗣之问，以\u201c什么处是不见\u201d折之。",
+    "teachings": "",
+    "quotes": ["和尚为什么就身打劫"],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "jiufeng-qin",
+    "name": "九峰勤",
+    "era": "宋",
+    "title": "临济宗",
+    "lifeStory": "九峰勤和尚，与杨岐方会为同参。杨岐下座时，九峰把住云\u201c今日喜遇同参\u201d，以\u201c九峰牵犁杨岐拽杷\u201d试之，杨岐以\u201c杨岐在前九峰在前\u201d反勘，九峰拟议，杨岐托开云\u201c将谓同参，元来不是\u201d。",
+    "teachings": "",
+    "quotes": ["九峰牵犁杨岐拽杷", "今日喜遇同参"],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "wen-zheng",
+    "name": "文政",
+    "era": "宋",
+    "title": "临济宗",
+    "lifeStory": "湘中苾刍文政，为《杨岐方会和尚语录》作序，记述杨岐方会传承谱系：百丈海→黄檗运→颙→沼→念→昭→圆（石霜楚圆）→会（杨岐方会）。师袁州宜春人，姓冷氏，落发于潭州浏阳道吾山，俗龄五十四，卒于云盖山。",
+    "teachings": "",
+    "quotes": ["海得其大机，运得其大用，兼而得者独会师欤"],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "yang-jie",
+    "name": "杨杰",
+    "era": "宋",
+    "title": "临济宗",
+    "lifeStory": "杨杰，号无为子，为《杨岐方会老语录》作题跋。赞杨岐\u201c跨三脚驴，入水牯牛队中，拽把牵犁，种田博饭\u201d的奇特宗风，以\u201c说梦\u201d呼应杨岐当日开示。",
+    "teachings": "",
+    "quotes": ["杨岐会老，跨三脚驴，入水牯牛队中，拽把牵犁，种田博饭", "若要清风再振旧令重行，明眼底人试将此录看"],
+    "classics": ["yangqiyulu"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "zhiche",
+    "name": "智彻",
+    "title": "西蜀野衲",
+    "era": "元（约14世纪）",
+    "lifeStory": "智彻禅师，号西蜀野衲，元代禅僧。二十六岁受戒持斋，三十一岁离俗出家，礼云峰和尚为师。参万法归一话头，历尽退堕懈怠之苦，终得工夫得力。著有禅宗决疑集，以自身修行经历为线索，系统阐述参话头起疑情的完整次第。",
+    "teachings": "以疑为入道之门，以话头为修行工具。区分看无字念无字与疑无字三种态度，强调唯有起疑情方是正途。关注修行者身心健康，指出默默无言会导致吐血之疾。",
+    "quotes": ["无疑不悟，未有不疑而成事者也", "蓦然疑团子上爆地一声，彻见那边消息去也", "得力处省力气，省力处得力"],
+    "classics": ["chanzongjueyiji"],
+    "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu", "tui-sui-duizhi"],
+    "relatedMethods": ["canhuatou-qiyiqing-fa"],
+    "relatedPersons": ["yunfeng-heshang", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "yunfeng-heshang",
+    "name": "云峰和尚",
+    "title": "云峰禅师",
+    "era": "元（约14世纪）",
+    "lifeStory": "云峰和尚，元代禅僧，智彻禅师的请益师。令智彻参万法归一一归何处话头，是智彻修行道路的关键引导者。",
+    "teachings": "以万法归一一归何处为参究话头，引导学人从万法归一处起疑情。",
+    "quotes": [],
+    "classics": ["chanzongjueyiji"],
+    "relatedConcepts": ["wanfa-guiyi"],
+    "relatedMethods": ["canhuatou-qiyiqing-fa"],
+    "relatedPersons": ["zhiche"],
+    "relatedBooks": ["chanzongjueyiji"]
   }
 ];
 
@@ -6477,8 +6603,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
   },
   {
     "id": "miwu-shizhong",    "title": "迷悟十重",    "category": "修行次第",    "summary": "宗密依《起信论》立凡圣迷悟各十重之图。凡夫十重顺次生起：本觉真心—未遇善友不觉—念起—能见相—根身世界妄现—执为实有（法执）—自他分别（我执）—贪嗔痴—造业—受六道报。悟后十重逆次翻破：遇善知识解悟—发悲智愿—修施戒忍进止观—大菩提心显发—知性无悭—六度我法双亡—于色自在—于心自在—一念相应离念—始本不二成佛。迷是迷真逐妄从细至麁，悟是悟妄归真从麁至细；如日光顿出霜露渐消，顿悟之后习气须渐除。",    "etymology": "迷（背觉合尘）悟（背尘合觉）各十重（十个阶位），凡圣本末之全图。",    "quotes": ["日光顿出，霜露渐消；孩子顿生，志气渐立。 —宗密"],    "guidance": "此图是修行地图：常自勘验\"我在何门，佛在何位\"——落在第几重？病在何处？对图服药：执实有的修空观破法执，分自他的修平等破我执。一即因该果海，十即果彻因源——初心即佛与究竟成佛，一图贯通。",    "classicRef": "《禅源诸诠集都序》卷下",    "relatedConcepts": ["dunwu-jianxiu", "tathagatagarbha", "alaiye-shi"],    "relatedPersons": ["guifeng-zongmi"],    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
-  }
-,
+  },
   {
     "id": "wanshan-tonggui",
     "title": "万善同归",
@@ -6574,7 +6699,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "zhuoyu",
     "title": "着语",
     "category": "禅宗概念",
-    "summary": "着语是圆悟克勤在《碧岩录》公案与颂古句下所作的夹注点评，或褒或贬、或擒或纵，随文点破机关，如“勘破了也”“错”“谢答话”等，是文字禅评唱体例中画龙点睛之笔。",
+    "summary": "着语是圆悟克勤在《碧岩录》公案与颂古句下所作的夹注点评，或褒或贬、或擒或纵，随文点破机关，如\u201c勘破了也\u201d\u201c错\u201d\u201c谢答话\u201d等，是文字禅评唱体例中画龙点睛之笔。",
     "classicRef": "biyanlu",
     "relatedConcepts": ["ping-chang", "song-gu", "wenzi-chan"],
     "relatedPersons": ["yuanwu-keqin"],
@@ -6584,7 +6709,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "chuishi",
     "title": "垂示",
     "category": "禅宗概念",
-    "summary": "垂示是圆悟克勤在《碧岩录》每则公案之前所作的总纲提示，寥寥数语总提本则纲宗，如“隔山见烟，早知是火”，令学人未入公案先识家风光景，是碧岩录六重体例之首。",
+    "summary": "垂示是圆悟克勤在《碧岩录》每则公案之前所作的总纲提示，寥寥数语总提本则纲宗，如\u201c隔山见烟，早知是火\u201d，令学人未入公案先识家风光景，是碧岩录六重体例之首。",
     "classicRef": "biyanlu",
     "relatedConcepts": ["ping-chang", "song-gu", "zhuoyu"],
     "relatedPersons": ["yuanwu-keqin"],
@@ -6782,11 +6907,272 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["shangli-bianzheng", "fo-buke-mie"],
     "relatedPersons": ["konggu-jinglong", "yaoguangxiao"],
     "relatedBooks": ["shanglibian"]
-  }
+  },
+
+  {
+    "id": "yangqi-siyi",
+    "title": "杨岐四一",
+    "category": "禅宗纲宗",
+    "summary": "杨岐方会禅师以四种\u201c一\u201d开示宗风：一要——千圣同妙；一言——随方就圆；一语——呵佛叱祖；一句——急著眼觑。从妙到用，从语到行，层层展开杨岐宗风的总纲。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu", "yangqihoulu"]
+  },
+  {
+    "id": "mingan-jieduan",
+    "title": "明暗截断众流",
+    "category": "禅宗纲宗",
+    "summary": "道吾真禅师宗纲。以明暗两字截断一切分别之流，直指本源。明暗既对立又统一，截断众流即超越一切二元对立，直达心性本源。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-yijue", "linji-zongfeng"],
+    "relatedPersons": ["daowu-zhen", "yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "sanxuan-sanyao",
+    "title": "三玄三要",
+    "category": "禅宗纲宗",
+    "summary": "临济宗纲宗。道吾真禅师开示：第一玄——释尊光射阿难肩；第二玄——孤轮众象攒；第三玄——泣向枯桑泪涟涟。第一要——最好精粗照；第二要——闪烁乾坤光晃耀；第三要——夹路青松老。三玄三要是临济义玄接人的三种境界与三种要旨。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["linji-zongfeng", "sibinzhu"],
+    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "sizhaoyong",
+    "title": "四照用",
+    "category": "禅宗纲宗",
+    "summary": "临济宗纲宗。道吾真禅师开示四照用：先照后用——语路分明说，投针不回避；先用后照——金刚觌面亲分付；照用同时——祖佛道中行路异，森罗影里不留身；照用不同时——清凉金色光先照，峨嵋银界一时铺。照即照见，用即施用，四种配合展现不同的接人手段。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["linji-zongfeng", "sanxuan-sanyao", "sibinzhu"],
+    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "sibinzhu",
+    "title": "四宾主",
+    "category": "禅宗纲宗",
+    "summary": "临济宗纲宗。道吾真禅师开示：宾中宾——谁说有疏亲；宾中主——磕额无回互，对面与谁陈；主中宾——瑞云空里布霹雳震乾坤；主中主——古皇令高举，巧辨徒申吐。宾主之分即师徒机锋对决中的主从关系，四宾主展现临济宗接人的四种格局。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["linji-zongfeng", "sanxuan-sanyao", "sizhaoyong"],
+    "relatedPersons": ["daowu-zhen", "linji-yixuan"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "wuwei-jianji",
+    "title": "五位君臣",
+    "category": "禅宗纲宗",
+    "summary": "曹洞宗纲宗，道吾真禅师亦开示。正中来——皎洁乾坤震地雷；正中偏——诸子投来见大仙；偏中正——万水千山明似镜；兼中至——施设纵横无所畏；兼中到——黑白未分已前过。以正偏五位配君臣关系，展现从迷到悟的五个阶段。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["caodong-zongfeng", "sibinzhu"],
+    "relatedPersons": ["daowu-zhen", "dongshan-liangjia"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "shuo-meng",
+    "title": "说梦",
+    "category": "禅宗纲宗",
+    "summary": "杨岐方会禅师以\u201c说梦\u201d破除一切言教执着。\u201c释迦老子说梦，三世诸佛说梦，天下老和尚说梦\u201d——一切言教皆是梦中说梦，唯有当下心是真实。杨杰题跋亦以\u201c不知杨岐自作梦后，还觉也未\u201d呼应之。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui", "yang-jie"],
+    "relatedBooks": ["yangqiyulu", "yangqihoulu"]
+  },
+  {
+    "id": "zuoduan-fangguo",
+    "title": "坐断与放过",
+    "category": "禅宗纲宗",
+    "summary": "杨岐方会禅师开示：\u201c坐断乾坤天地黯黑，放过一著雨顺风调。\u201d坐断即彻底截断一切分别，放过即慈悲放行。一收一放之间，尽显宗师度生方便。虽自嘲\u201c俗气未除在\u201d，实则坐断与放过皆是度生方便，不可执为实法。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-yijue", "yangqi-siyi"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "sanjiaoluo-mao",
+    "title": "三脚驴子",
+    "category": "禅宗纲宗",
+    "summary": "杨岐方会禅师答\u201c如何是佛\u201d云\u201c三脚驴子弄蹄行\u201d。以残缺之驴弄蹄行走，暗示佛性不在完满中，而在当下残缺处。杨杰题跋亦以\u201c跨三脚驴\u201d赞杨岐宗风之奇特。",
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui", "yang-jie"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "yiqing-canjiu",
+    "title": "疑情参究",
+    "category": "禅修方法",
+    "summary": "疑情是参话头的核心动力。智彻禅师强调无疑不悟，区分看无字念无字与疑无字三种态度——看是视觉执着，念是口头重复，唯有真正起疑情才是参究正途。疑情积聚到极点自然爆开，豁然彻悟。",
+    "etymology": "疑即参究，参究即疑。疑字便是思想用谋之心，体同而名异。",
+    "quotes": ["无疑不悟，未有不疑而成事者也", "疑者疑此一归何处，归何处三字是考究这一向何处安身立命"],
+    "guidance": "用疑时先须发愤怒心，疑赵州因甚道无。此愤怒心或出声不出声学人自取方便。这一箇疑字单只疑赵州因甚道无，不是看赵州无，不是念赵州无。",
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["huatou-gongfu", "kan-wu-nian-wu-yi-wu"],
+    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "kan-wu-nian-wu-yi-wu",
+    "title": "看无念无疑无",
+    "category": "禅修辨析",
+    "summary": "智彻禅师区分参无字话头的三种态度：看无字——将无字贴在眼睛上看，是视觉执着；念无字——口中念念不停如更鼓发擂，无有实益；疑无字——因赵州道无而起疑情，疑彻骨髓，方是正途。前二者是末法时代学人常见误区。",
+    "etymology": "看者眼观，念者口诵，疑者心究。三者体同名异，唯疑为正。",
+    "quotes": ["今时学人多是看这无字念这无字，真可怜也", "详这缓念者恰如冰凌上掷豆子相似，详这急念者浑似更鼓楼上发擂一般"],
+    "guidance": "参无字不是看也不是念，而是疑赵州因甚道无。先须发愤怒心，单只疑这一个无字。",
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
+    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "tui-sui-duizhi",
+    "title": "退堕对治",
+    "category": "禅修障碍",
+    "summary": "退堕是参禅过程中的常见障碍。智彻禅师区分退与不得力——退者退菩提心退长远心退精进心；不得力者或是话头上无疑或是话头举不起。对治方法：向诸佛菩萨像前五体投地，燃指燃香，发露忏悔，勇猛举起话头。",
+    "etymology": "退者退心，堕者堕力。退堕二字，退是心退，堕是行堕。",
+    "quotes": ["退者退菩提心退长远心退精进心", "此念如汤消冰倏尔无余纯一净念"],
+    "guidance": "遇退念起时，即便燃香发露忏悔，求佛哀祐即举话头，此念应时随灭。",
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
+    "relatedPersons": ["zhiche"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "wanfa-guiyi",
+    "title": "万法归一",
+    "category": "禅宗公案",
+    "summary": "万法归一一归何处，是智彻禅师所参的核心话头。此话头以万法归一为前提，以一归何处为疑情着力处。智彻分析：一即是心（灵知之心非肉团心），心即是一（众圣之王故号心王）。疑情应落在一上，归何处是考究方向。",
+    "etymology": "法华经云：惟此一事实，余二则非真。此一法乃众生之本源诸佛之妙道。",
+    "quotes": ["此一法乃众生之本源诸佛之妙道，亦是万法之母众圣之尊", "一即是心，心即是一"],
+    "guidance": "初举万法归一一归何处，或举三五次随意放收，然后万法归一少举，只在一字上起疑。",
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
+    "relatedPersons": ["zhiche", "yunfeng-heshang", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "huatou-gongfu",
+    "title": "话头工夫",
+    "category": "禅修方法",
+    "summary": "话头是参禅的核心工具。智彻禅师强调举话头时或出声不出声皆可，但不得太急又不得太缓，如击钟磬一般匀调。只贵话头上疑情得力不得力处取用切。不可信人说不要开口举话头，闭口禁声后必有患也。",
+    "etymology": "话头者，参究之端绪也。举话头即提起一个参究的着力处。",
+    "quotes": ["如击钟磬一般匀调击之声则和顺", "不可信人说不要开口举话头，若信此语闭口禁声后必有患也"],
+    "guidance": "举话头时或出声不出声皆可，但不得太急又不得太缓。只贵话头上疑情得力不得力处取用切。",
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "wanfa-guiyi"],
+    "relatedPersons": ["zhiche"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "huanglong-sanguan",
+    "title": "黄龙三关",
+    "category": "禅宗纲宗",
+    "summary": "黄龙慧南禅师所设三大勘验关隘：一问“人人尽有生缘处，那个是上座生缘处”，二问“我手何似佛手”，三问“我脚何似驴脚”。三十余年示此三问，学者多不凑机。已过关者掉臂径去安知有关吏，从吏问可否者未透关也。三关不在答语对错，而在验人见处——生缘关破身份执，佛手关破凡圣见，驴脚关破尊卑相。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "人人尽有生缘处，那个是上座生缘处。",
+      "我手何似佛手。",
+      "我脚何似驴脚。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "huanglong-shengyuan",
+    "title": "生缘关",
+    "category": "禅宗纲宗",
+    "summary": "黄龙三关之首。慧南禅师常问僧出家所以乡关来历，复扣云“人人尽有生缘处，那个是上座生缘处”。看似问籍贯出身，实则勘验学人是否执于表象身份。水母何曾离得虾——看似有来历，实则无自性。此关破除学人对身份来历的执着。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "生缘有语人皆识，水母何曾离得虾。但见日头东畔上，谁能更吃赵州茶。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "huanglong-foshou",
+    "title": "佛手关",
+    "category": "禅宗纲宗",
+    "summary": "黄龙三关之二。当机问答正驰锋辩时，禅师伸手云“我手何似佛手”。不是比较手相，而是直指心性——佛与众生本无差别。不动干戈道出，当处超佛越祖。此关破除凡圣分别见。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "我手佛手兼举，禅人直下荐取。不动干戈道出，当处超佛越祖。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "huanglong-lvjiao",
+    "title": "驴脚关",
+    "category": "禅宗纲宗",
+    "summary": "黄龙三关之三。问诸方参请宗师所得后，禅师垂脚云“我脚何似驴脚”。步步踏着无生，会得云收日卷，方知此道纵横。佛手尚可比拟，驴脚更落畜生道，彻底破除尊卑分别。此关最妙——将佛拉至驴处，方是真平等。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "我脚驴脚并行，步步踏着无生。会得云收日卷，方知此道纵横。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "zhanshen-yilu",
+    "title": "转身一路",
+    "category": "禅修方法",
+    "summary": "黄龙慧南禅师开示修行须得“转身一路”——不可死于句下，不可困于知解。拟心即差动念即乖，不拟不动土木无殊。若也转得一为无量无量为一，若转不得布袋里老鸦虽活如死。转身非转念头，而是从知解中跳脱，活通自在。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "行脚人须得转身一路。若也转得，一为无量，无量为一。若转不得，布袋里老鸦虽活如死。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "zijia-baozang",
+    "title": "自家宝藏",
+    "category": "禅宗心性",
+    "summary": "慧南禅师举马祖示大珠“只如今问者是，尔若回头一切具足受用不尽”，指出人人各有自家宝藏，只因不回头故不得其用。佛性本具不假外求，回头即是。此概念与《法华经》衣珠喻相通，为禅宗“教外别行”之根本依据。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "汝等诸人各有自家宝藏，为什么不得其用？只为不回头。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan", "mazu", "dazhu-huihai"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "fansheng-qingjin",
+    "title": "凡圣情尽",
+    "category": "禅宗心性",
+    "summary": "慧南禅师反复举“凡圣情尽，体露真常，但离妄缘，即如如佛”。虽自谦“古人残羹馊饭”，实则直指修行要害——不在多闻博学，但在离妄。凡夫与圣人的情执断尽，真常之体自然显露。此语出自百丈怀海，为禅宗核心见地。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "凡圣情尽，体露真常，但离妄缘，即如如佛。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "tieniu-zhiji",
+    "title": "铁牛之机",
+    "category": "禅宗纲宗",
+    "summary": "慧南禅师入院开堂云“祖师心印状似铁牛之机——去即印住，住即印破。只如不去不住又作么生搭印”。铁牛之机喻祖师心印不可凑泊：动则被印住，静则被印破，动静两亡方是出处。",
+    "classicRef": "黄龙慧南禅师语录",
+    "quotes": [
+      "祖师心印，状似铁牛之机。去即印住，住即印破。只如不去不住，又作么生搭印。"
+    ],
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
-
   {
     "id": "nianfo-chan",
     "title": "念佛禅",
@@ -7810,8 +8196,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["yilei-zhongxing", "sanduo"],
     "relatedPersons": ["caoshan-benji", "dongshan"],
     "relatedBooks": ["caoshanyulu"]
-  }
-,
+  },
   {
     "id": "wuzi-can",
     "title": "无字参究法",
@@ -7935,7 +8320,75 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["jianxing-dadao", "shangli-bianzheng", "sanjie-chulun"],
     "relatedPersons": ["konggu-jinglong", "deshan-xuanjian"],
     "relatedBooks": ["shanglibian"]
-  }
+  },
+  {
+    "id": "yangqi-siyi-fa",
+    "title": "杨岐四一开示法",
+    "summary": "杨岐方会以四种\u201c一\u201d开示宗风：一要千圣同妙、一言随方就圆、一语呵佛叱祖、一句急著眼觑。从妙到用，从语到行，层层展开，是杨岐宗风的总纲开示法。",
+    "origin": "《杨岐方会和尚语录》",
+    "steps": ["先说\u201c一要\u201d——千圣同妙，揭示宗风根本", "次说\u201c一言\u201d——随方就圆，展现应机善巧", "再说\u201c一语\u201d——呵佛叱祖，展现峻烈手段", "终说\u201c一句\u201d——急著眼觑，归于平常行履"],
+    "pitfalls": ["不可将四种\u201c一\u201d作四种法门理解，实是一味", "不可执\u201c一\u201d为实法，\u201c一\u201d亦是方便"],
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["yangqi-siyi", "yangqi-yijue"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu", "yangqihoulu"]
+  },
+  {
+    "id": "daowu-gangzong-fa",
+    "title": "道吾纲宗开示法",
+    "summary": "道吾真禅师以\u201c明暗两字截断众流\u201d为宗纲，系统开示三玄三要、四宾主、四照用、五位君臣等临济宗纲宗的接人方法。",
+    "origin": "《杨岐方会和尚语录》",
+    "steps": ["先立宗纲——明暗截断众流", "次开三玄三要——三种境界与要旨", "再开四照用——照见与施用的四种配合", "终开四宾主与五位——师徒机锋的主从格局"],
+    "pitfalls": ["纲宗是方便不是实法", "不可执纲宗为究竟，须透过纲宗见本心"],
+    "classicRef": "yangqiyulu",
+    "relatedConcepts": ["mingan-jieduan", "sanxuan-sanyao", "sizhaoyong", "sibinzhu", "wuwei-jianji"],
+    "relatedPersons": ["daowu-zhen"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "canhuatou-qiyiqing-fa",
+    "title": "参话头起疑情法",
+    "summary": "智彻禅师所传的参话头起疑情完整方法。以万法归一一归何处或无字为话头，通过发愤怒心起疑情昼夜不舍地参究，直至疑团爆裂彻见本性。强调疑不是看也不是念，而是真正内心参究。",
+    "origin": "《禅宗决疑集》",
+    "steps": ["先发愤怒心——疑赵州因甚道无，或出声不出声自取方便", "单只疑这一个话头——不是看不是念，是疑", "昼夜十二时无顷刻暂息——行住坐卧皆疑", "不得太急不得太缓——如击钟磬匀调", "蓦然疑团子上爆地一声——彻见那边消息"],
+    "pitfalls": ["看无字——将无字贴在眼睛上看，是视觉执着非疑情", "念无字——口中念念不停如更鼓发擂，无有实益", "执空执有执断执常——于无字上各出异见皆为偏枯", "闭口禁声不开口举话头——气郁结胸中伤心损体"],
+    "classicRef": "chanzongjueyiji",
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "huatou-gongfu", "wanfa-guiyi"],
+    "relatedPersons": ["zhiche", "yunfeng-heshang"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "huanglong-sanguan-fa",
+    "title": "黄龙三关勘验法",
+    "summary": "黄龙慧南禅师独创之勘验法门。室中常问僧三问：生缘处、我手何似佛手、我脚何似驴脚。三十余年示此三问，往往学者多不凑机。三关不在答语对错，而在验人见处。已过关者掉臂径去安知有关吏，从吏问可否者未透关也。此法将身份执、凡圣见、尊卑相层层破除，堪称禅宗教育史上最精妙的勘验法门之一。",
+    "origin": "黄龙慧南禅师语录",
+    "steps": [
+      "第一关生缘：问“人人尽有生缘处，那个是上座生缘处”，勘验学人是否执于身份来历",
+      "第二关佛手：当机问答正驰锋辩时伸手云“我手何似佛手”，勘验学人能否直下荐取佛与众生本无差别",
+      "第三关驴脚：问诸方参请所得后垂脚云“我脚何似驴脚”，勘验学人是否彻底破除尊卑凡圣分别",
+      "验人不在答语：已过关者掉臂径去，未透关者方在关前踌躇问可否"
+    ],
+    "classicRef": "huanglonghuinan",
+    "relatedConcepts": ["huanglong-sanguan", "huanglong-shengyuan", "huanglong-foshou", "huanglong-lvjiao"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "huanglong-zhanshen-fa",
+    "title": "黄龙转身一路开示法",
+    "summary": "黄龙慧南禅师开示行脚人须得“转身一路”。拟心即差动念即乖，不拟不动土木无殊。须从知解的布袋里翻出身来，不可死于句下。若转得一为无量无量为一，若转不得布袋里老鸦虽活如死。此法强调禅者不可执于静默或言说，须有活泼泼的转身手段。",
+    "origin": "黄龙慧南禅师语录续补",
+    "steps": [
+      "认识知解之困：拟心即差动念即乖，不拟不动土木无殊",
+      "须得转身一路：不可死于无言无念，须从死水里翻出身来",
+      "转身之效：一为无量无量为一，活泼自在",
+      "不转之患：布袋里老鸦虽活如死，被困知解不得受用"
+    ],
+    "classicRef": "huanglonghuinan",
+    "relatedConcepts": ["zhanshen-yilu", "fansheng-qingjin"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
 ]
 ;
 
@@ -11545,7 +11998,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-303",
     "question": "廓然无圣（碧岩录第一则）",
-    "answer": "梁武帝问达摩“如何是圣谛第一义”，达摩云“廓然无圣”。帝曰“对朕者谁”，摩云“不识”。帝不契，达摩遂渡江至魏。圣谛荡荡，何圣凡之可言？武帝以有为功德求圣，达摩以无为真心扫之——廓然无圣，正是第一义的直答。",
+    "answer": "梁武帝问达摩\u201c如何是圣谛第一义\u201d，达摩云\u201c廓然无圣\u201d。帝曰\u201c对朕者谁\u201d，摩云\u201c不识\u201d。帝不契，达摩遂渡江至魏。圣谛荡荡，何圣凡之可言？武帝以有为功德求圣，达摩以无为真心扫之——廓然无圣，正是第一义的直答。",
     "master": "达摩",
     "source": "《碧岩录》第一则",
     "relatedConcepts": ["beyond-words", "direct-pointing"],
@@ -11555,7 +12008,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-304",
     "question": "麻三斤（碧岩录第十二则）",
-    "answer": "僧问洞山“如何是佛”，山云“麻三斤”。佛之一字，不可于言句上寻讨；洞山答处截断众流，麻三斤即佛、佛即麻三斤，直是难咬嚼、无尔下口处。若向句中觅，参到弥勒下生也未梦见在。",
+    "answer": "僧问洞山\u201c如何是佛\u201d，山云\u201c麻三斤\u201d。佛之一字，不可于言句上寻讨；洞山答处截断众流，麻三斤即佛、佛即麻三斤，直是难咬嚼、无尔下口处。若向句中觅，参到弥勒下生也未梦见在。",
     "master": "洞山守初",
     "source": "《碧岩录》第十二则",
     "relatedConcepts": ["koan", "direct-pointing"],
@@ -11565,7 +12018,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-305",
     "question": "日日是好日（碧岩录第六则）",
-    "answer": "云门垂语“十五日已前不问汝，十五日已后道将一句来”，自代云“日日是好日”。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。",
+    "answer": "云门垂语\u201c十五日已前不问汝，十五日已后道将一句来\u201d，自代云\u201c日日是好日\u201d。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。",
     "master": "云门文偃",
     "source": "《碧岩录》第六则",
     "relatedConcepts": ["ordinary-mind", "present-moment"],
@@ -11575,7 +12028,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-306",
     "question": "对一说（碧岩录第十四则）",
-    "answer": "僧问云门“如何是一代时教”，门云“对一说”。一代时教千言万语，对着“一”说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个“一”上。",
+    "answer": "僧问云门\u201c如何是一代时教\u201d，门云\u201c对一说\u201d。一代时教千言万语，对着\u201c一\u201d说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个\u201c一\u201d上。",
     "master": "云门文偃",
     "source": "《碧岩录》第十四则",
     "relatedConcepts": ["all-returns-to-one", "direct-pointing"],
@@ -11585,7 +12038,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-307",
     "question": "云门糊饼（碧岩录第七十七则）",
-    "answer": "僧问云门“如何是超佛越祖之谈”，门云“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。",
+    "answer": "僧问云门\u201c如何是超佛越祖之谈\u201d，门云\u201c糊饼\u201d。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。",
     "master": "云门文偃",
     "source": "《碧岩录》第七十七则",
     "relatedConcepts": ["ordinary-mind", "direct-pointing"],
@@ -11595,7 +12048,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-308",
     "question": "野鸭子（碧岩录第五十三则）",
-    "answer": "马祖与百丈行次见野鸭子飞过，祖云“是什么”，丈云“野鸭子”，祖云“什么处去也”，丈云“飞过去也”，祖遂扭百丈鼻头云“何曾飞去”。百丈于言下大悟——野鸭飞去是境，鼻头一扭处，境消心现，何曾飞去？",
+    "answer": "马祖与百丈行次见野鸭子飞过，祖云\u201c是什么\u201d，丈云\u201c野鸭子\u201d，祖云\u201c什么处去也\u201d，丈云\u201c飞过去也\u201d，祖遂扭百丈鼻头云\u201c何曾飞去\u201d。百丈于言下大悟——野鸭飞去是境，鼻头一扭处，境消心现，何曾飞去？",
     "master": "马祖道一",
     "source": "《碧岩录》第五十三则",
     "relatedConcepts": ["self-nature", "direct-pointing"],
@@ -11605,7 +12058,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-309",
     "question": "犀牛扇子（碧岩录第九十一则）",
-    "answer": "盐官唤侍者“与我将犀牛扇子来”，侍者云“扇子破也”，官云“扇子既破还我犀牛儿来”，侍者无对。扇子破是事，犀牛儿是理——破的是物，不晦的是那个。盐官以破扇子逼出学人本分田地。",
+    "answer": "盐官唤侍者\u201c与我将犀牛扇子来\u201d，侍者云\u201c扇子破也\u201d，官云\u201c扇子既破还我犀牛儿来\u201d，侍者无对。扇子破是事，犀牛儿是理——破的是物，不晦的是那个。盐官以破扇子逼出学人本分田地。",
     "master": "盐官齐安",
     "source": "《碧岩录》第九十一则",
     "relatedConcepts": ["self-nature", "koan"],
@@ -11615,7 +12068,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-310",
     "question": "好雪片片（碧岩录第四十二则）",
-    "answer": "庞居士辞药山，山命十人禅客相送，居士指空中雪云“好雪片片不落别处”。时有全禅客云“落在什么处”，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问“落在什么处”，早已落别处了也。",
+    "answer": "庞居士辞药山，山命十人禅客相送，居士指空中雪云\u201c好雪片片不落别处\u201d。时有全禅客云\u201c落在什么处\u201d，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问\u201c落在什么处\u201d，早已落别处了也。",
     "master": "庞蕴居士",
     "source": "《碧岩录》第四十二则",
     "relatedConcepts": ["present-moment", "self-nature"],
@@ -11848,8 +12301,8 @@ export const ZEN_KOANS: KoanItem[] = [
   },
   {
     "id": "koan-330",
-    "question": "吕洞宾参黄龙——“一粒粟中藏世界，半升铛内煮山川”，此意如何？",
-    "answer": "黄龙答：“守尸鬼。”吕曰：“争奈囊中有长生不死药？”龙曰：“饶经八万劫，终是落空亡。”吕含愠而去，至晚飞剑胁之，剑不能入，遂拜求指归。龙厉色问：“如何是一粒粟中藏世界？”吕于言下有省，作偈礼谢。",
+    "question": "吕洞宾参黄龙——\u201c一粒粟中藏世界，半升铛内煮山川\u201d，此意如何？",
+    "answer": "黄龙答：\u201c守尸鬼。\u201d吕曰：\u201c争奈囊中有长生不死药？\u201d龙曰：\u201c饶经八万劫，终是落空亡。\u201d吕含愠而去，至晚飞剑胁之，剑不能入，遂拜求指归。龙厉色问：\u201c如何是一粒粟中藏世界？\u201d吕于言下有省，作偈礼谢。",
     "master": "黄龙诲机",
     "source": "尚理编",
     "relatedConcepts": ["shangli-bianzheng", "lianxu-xingshen", "jianxing-dadao"],
@@ -11859,7 +12312,7 @@ export const ZEN_KOANS: KoanItem[] = [
   {
     "id": "koan-331",
     "question": "德山烧疏钞——龙潭吹灭纸烛，德山何悟？",
-    "answer": "德山出门曰珍重，遽回曰：“外面黑。”龙潭点纸烛度与山，山拟接，潭复吹灭。山于此时大悟，明日将疏钞纵火焚之，自秉炬曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。”",
+    "answer": "德山出门曰珍重，遽回曰：\u201c外面黑。\u201d龙潭点纸烛度与山，山拟接，潭复吹灭。山于此时大悟，明日将疏钞纵火焚之，自秉炬曰：\u201c穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。\u201d",
     "master": "龙潭信禅师",
     "source": "尚理编",
     "relatedConcepts": ["jianxing-dadao", "shangli-bianzheng"],
@@ -11868,8 +12321,8 @@ export const ZEN_KOANS: KoanItem[] = [
   },
   {
     "id": "koan-332",
-    "question": "张商英兜率悟道——“捉得贼也”，赃在甚么处？",
-    "answer": "张商英触枕堕地击声悚然有省，趋方丈扣门。悦云：“是谁？”公云：“商英也。”悦云：“作么生？”公云：“捉得贼也。”悦云：“赃在甚么处？”公亦不能答。次日颂云：“鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。”",
+    "question": "张商英兜率悟道——\u201c捉得贼也\u201d，赃在甚么处？",
+    "answer": "张商英触枕堕地击声悚然有省，趋方丈扣门。悦云：\u201c是谁？\u201d公云：\u201c商英也。\u201d悦云：\u201c作么生？\u201d公云：\u201c捉得贼也。\u201d悦云：\u201c赃在甚么处？\u201d公亦不能答。次日颂云：\u201c鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。\u201d",
     "master": "兜率悦禅师",
     "source": "尚理编",
     "relatedConcepts": ["shanjian-wudao", "dinghui-dengchi"],
@@ -11878,13 +12331,216 @@ export const ZEN_KOANS: KoanItem[] = [
   },
   {
     "id": "koan-333",
-    "question": "纸衣道者立化——“只解恁么去，不解恁么来”，何意？",
-    "answer": "纸衣道者见曹山章禅师，问纸衣下事，立化而去。山云：“只解恁么去，不解恁么来。”僧复苏问：“一灵真性不假胞胎时如何？”山云：“未是妙。”僧云：“如何是妙？”山云：“不借借。”僧于言下大悟，归单位坐脱而去——此先似到后实到者也。",
+    "question": "纸衣道者立化——\u201c只解恁么去，不解恁么来\u201d，何意？",
+    "answer": "纸衣道者见曹山章禅师，问纸衣下事，立化而去。山云：\u201c只解恁么去，不解恁么来。\u201d僧复苏问：\u201c一灵真性不假胞胎时如何？\u201d山云：\u201c未是妙。\u201d僧云：\u201c如何是妙？\u201d山云：\u201c不借借。\u201d僧于言下大悟，归单位坐脱而去——此先似到后实到者也。",
     "master": "曹山本寂",
     "source": "尚理编",
     "relatedConcepts": ["zuotuo-liwang", "chujia-shenshi", "dinghui-dengchi"],
     "relatedPersons": ["caoshan-benji", "konggu-jinglong"],
     "relatedBooks": ["shanglibian"]
+  },
+
+  {
+    "id": "koan-334",
+    "question": "三脚驴子弄蹄行",
+    "master": "yangqi-fanghui",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "僧问：\u201c如何是佛？\u201d师云：\u201c三脚驴子弄蹄行。\u201d进云：\u201c莫只者便是。\u201d师云：\u201c湖南长老。\u201d",
+    "interpretation": "以残缺之三脚驴弄蹄行走，暗示佛性不在完满中，而在当下残缺处。学人追问\u201c莫只者便是\u201d，师以\u201c湖南长老\u201d截之——不可在言语上认取。",
+    "relatedConcepts": ["sanjiaoluo-mao", "yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-335",
+    "question": "九峰牵犁杨岐拽杷",
+    "master": "yangqi-fanghui",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "师才下座。九峰勤和尚把住云：\u201c今日喜遇同参。\u201d师云：\u201c同参底事作么生。\u201d峰云：\u201c九峰牵犁杨岐拽杷。\u201d师云：\u201c正当与么时，杨岐在前九峰在前。\u201d峰拟议。师托开云：\u201c将谓同参，元来不是。\u201d",
+    "interpretation": "九峰以\u201c牵犁拽杷\u201d试同参，杨岐以\u201c在前\u201d反勘。九峰一拟议便落第二机，杨岐托开——真同参不在言语拟议中。",
+    "relatedConcepts": ["yangqi-yijue", "yangqi-siyi"],
+    "relatedPersons": ["yangqi-fanghui", "jiufeng-qin"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-336",
+    "question": "河里失钱河里摝",
+    "master": "yangqi-fanghui",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "上堂。身心清净诸境清净。诸境清净身心清净。还知云盖老人落地处么。乃云。河里失钱河里摝。",
+    "interpretation": "在哪里丢了钱就在哪里捞，在哪里迷失就在哪里找回。直指当下，不离本处觅菩提。身心与诸境互为清净，迷悟不二。",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-337",
+    "question": "杨畋提刑共钵盂吃饭",
+    "master": "yangqi-fanghui",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "杨畋提刑问：\u201c和尚法嗣何人？\u201d云：\u201c慈明大师。\u201d杨云：\u201c见个什么道理便法嗣他？\u201d云：\u201c共钵盂吃饭。\u201d杨云：\u201c与么则不见也。\u201d师捺膝云：\u201c什么处是不见。\u201d杨大笑。师云：\u201c须是提刑始得。",
+    "interpretation": "以\u201c共钵盂吃饭\u201d答法嗣之问——平常日用即是传承。杨畋以\u201c不见\u201d反勘，师以\u201c什么处是不见\u201d折之——当下即是，何曾不见？",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui", "yang-tian", "shishuang-chuyuan"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-338",
+    "question": "卖螺蛳公案",
+    "master": "yangqi-fanghui",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "师在慈明会里。一日提螺蛳一篮绕院云卖螺蛳。令众下语。皆不契。有一老宿揭帘见。以目顾视师。放身便卧。师放篮子便行。",
+    "interpretation": "师以\u201c卖螺蛳\u201d试众，众皆不契。老宿不以言语回应，只以目顾视、放身便卧——无言即是。师放下篮子便行——以心传心，不立文字。",
+    "relatedConcepts": ["yangqi-yijue", "jianxing-chengfo"],
+    "relatedPersons": ["yangqi-fanghui", "shishuang-chuyuan"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-339",
+    "question": "道吾真明暗截断众流",
+    "master": "daowu-zhen",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "僧问：\u201c承师有言，明暗两字截断众流，请师便道。\u201d师云：\u201c作么生道。\u201d僧云\u201c作家\u201d，师便喝，僧抚掌，师云\u201c恰是\u201d。",
+    "interpretation": "以明暗截断一切分别之流。僧以\u201c作家\u201d回应，师以喝截之，僧抚掌——默契。师云\u201c恰是\u201d——正是如此，不在言语中。",
+    "relatedConcepts": ["mingan-jieduan", "linji-zongfeng"],
+    "relatedPersons": ["daowu-zhen"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "koan-340",
+    "question": "道吾真掷杖收取",
+    "master": "daowu-zhen",
+    "source": "《杨岐方会和尚语录》",
+    "answer": "上堂。众集。师以拄杖掷下来。随后跳下。众拟散。师乃召大众。众回首。师乃云。为老僧收取拄杖。便归方丈。",
+    "interpretation": "掷杖跳下——以非常规动作惊众。众欲散，师召回首——就在此刻，收杖即是。平常动作中暗藏机锋，不离日用。",
+    "relatedConcepts": ["mingan-jieduan", "linji-zongfeng"],
+    "relatedPersons": ["daowu-zhen"],
+    "relatedBooks": ["yangqiyulu"]
+  },
+
+  {
+    "id": "koan-341",
+    "question": "狗子还有佛性也无？",
+    "answer": "无。",
+    "context": "僧问赵州狗子还有佛性也无，州云无。其僧复问蠢动含灵皆有佛性因甚狗子无佛性，州又云无。",
+    "interpretation": "智彻禅师详析此公案：此僧当下若会得赵州开口处，唾面痛骂一场，赵州只得杜口无言。这僧不能领受，通身堕在疑情。疑情重时行也疑坐也疑着衣吃饭也疑，昼夜十二时无顷刻暂息。蓦然疑团子上爆地一声，彻见那边消息。",
+    "master": "赵州从谂",
+    "source": "禅宗决疑集·彻底穷渊门",
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "wanfa-guiyi"],
+    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "koan-342",
+    "question": "万法归一，一归何处？",
+    "answer": "我在青州做领布衫重七斤。",
+    "context": "僧问赵州万法归一一归何处，州云我在青州做领布衫重七斤。",
+    "interpretation": "智彻禅师评：此僧却不似那僧疑也，空使赵州舌头拕地。盖谓秤尾不鲜故无买者。此一法乃众生之本源诸佛之妙道，亦是万法之母众圣之尊。迷之者则轮回不息，悟之者则了死超生。一即是心，心即是一。",
+    "master": "赵州从谂",
+    "source": "禅宗决疑集·指本还真门",
+    "relatedConcepts": ["wanfa-guiyi", "yiqing-canjiu", "huatou-gongfu"],
+    "relatedPersons": ["zhiche", "zhaozhou-congshen"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "koan-343",
+    "question": "参无字者把这无字贴在眼睛上眼睛便是无字无字便是眼睛只恁么看去——如此做工夫是否正确？",
+    "answer": "非也。看无字者是视觉执着，念无字者是口头重复，唯疑无字方是正途。",
+    "context": "学人见前尊宿说把这无字贴在眼睛上看，或缓念或急念，以此为纯熟工夫。",
+    "interpretation": "智彻禅师设二喻破之：缓念者恰如冰凌上掷豆子，任其所往无可羁绊；急念者浑似更鼓楼上发擂，一通声绝又一通何所益耶？此两种工夫四众用心者甚多，好似一场戏话，深可惜哉。",
+    "master": "智彻",
+    "source": "禅宗决疑集·失正究竟门",
+    "relatedConcepts": ["kan-wu-nian-wu-yi-wu", "yiqing-canjiu", "huatou-gongfu"],
+    "relatedPersons": ["zhiche"],
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "koan-344",
+    "question": "人人尽有生缘处，那个是上座生缘处？",
+    "answer": "水母何曾离得虾。但见日头东畔上，谁能更吃赵州茶。",
+    "context": "黄龙慧南禅师室中常问僧出家所以乡关来历，复扣云“人人尽有生缘处，那个是上座生缘处”。此为黄龙三关之首关，看似问籍贯出身，实则勘验学人是否执于表象身份。水母依赖虾而无自性，喻生缘出处亦无实自性。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["huanglong-sanguan", "huanglong-shengyuan"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-345",
+    "question": "我手何似佛手？",
+    "answer": "我手佛手兼举，禅人直下荐取。不动干戈道出，当处超佛越祖。",
+    "context": "黄龙慧南禅师当机问答正驰锋辩时，却复伸手云“我手何似佛手”。此为三关之二，不是比较手相，而是直指心性——佛与众生本无差别。直下荐取则当处超佛越祖。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["huanglong-sanguan", "huanglong-foshou"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-346",
+    "question": "我脚何似驴脚？",
+    "answer": "我脚驴脚并行，步步踏着无生。会得云收日卷，方知此道纵横。",
+    "context": "黄龙慧南禅师问诸方参请宗师所得后，却复垂脚云“我脚何似驴脚”。此为三关之三，佛手尚可比拟，驴脚更落畜生道，彻底破除凡圣尊卑分别。步步踏着无生法忍，会得则云收日卷万象皆空。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["huanglong-sanguan", "huanglong-lvjiao"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-347",
+    "question": "已过关者掉臂径去，安知有关吏；从吏问可否，此未透关者也。三关之意在何处？",
+    "answer": "关不在答，在心。已悟者不知有关，未悟者方在关前踌躇。",
+    "context": "有人问黄龙慧南三关之故，师曰“已过关者掉臂径去安知有关吏，从吏问可否此未透关者也”。三关之设不在答语对错，而在验人见处——已悟者不知有关，如人过关后掉臂而去；未悟者向关吏询问可否通过，方在关前踌躇。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["huanglong-sanguan"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-348",
+    "question": "如何是黄龙境？",
+    "answer": "昨日方到此，未曾子细看。长者长短者短。",
+    "context": "黄龙慧南禅师入院上堂，僧问“如何是黄龙境”，师云“昨日方到此未曾子细看”。进云“如何是境中人”，师云“长者长短者短”。师乃云祖师心印状似铁牛之机——去即印住，住即印破。只如不去不住又作么生搭印。良久云：烟村三月雨，别是一家春。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["tieniu-zhiji"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-349",
+    "question": "如何是自家宝藏？",
+    "answer": "只如今问者是。尔若回头，一切具足，受用不尽，更无欠少。",
+    "context": "黄龙慧南举大珠参见马祖公案。祖问“尔来作什么”，珠云“来求佛法”。祖云“尔为什么抛家失业，何不回头认取自家宝藏”。珠云“如何是自家宝藏”。祖云“只如今问者是，尔若回头一切具足受用不尽”。师云：汝等诸人各有自家宝藏，为什么不得其用？只为不回头。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["zijia-baozang"],
+    "relatedPersons": ["huanglong-huinan", "mazu", "dazhu-huihai"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-350",
+    "question": "有一人朝看华严暮看般若，有一人不参禅不论义，二人同到黄龙，安下那个即是？",
+    "answer": "功德天黑暗女，有智主人二俱不受。",
+    "context": "黄龙慧南禅师上堂云“有一人朝看华严暮看般若昼夜精勤无有暂暇，有一人不参禅不论义把个破席日里睡。于此二人同到黄龙，一人有为一人无为，安下那个即是”。良久云“功德天黑暗女，有智主人二俱不受”。执有为是妄，执无为亦非，有智主人二俱不受方是自在。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["fansheng-qingjin"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "koan-351",
+    "question": "如何是佛？",
+    "answer": "向汝道，汝不信。合取狗口。",
+    "context": "黄龙慧南禅师续补中，僧问“如何是佛”，师云“向汝道汝不信”。僧云“请师指示”，师云“合取狗口”。禅师以凌厉之语截断学人知解——佛不可说，说了你也不信，不如合嘴。",
+    "master": "huanglong-huinan",
+    "source": "huanglonghuinan",
+    "relatedConcepts": ["fansheng-qingjin"],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["huanglonghuinan"]
   }
 ];
 
@@ -21065,128 +21721,128 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-782",
-    "question": "\"不须立心，亦不须强安\"——这和达摩的\"安心\"有什么关系？",
-    "answer": "达摩对慧可说\"将心来与汝安\"，慧可说\"觅心了不可得\"，达摩说\"与汝安心竟\"。法融的\"不须立心，不须强安\"是对这一公案的进一步阐发：既然心本不可得，就不需要立一个心再去安它。不立不安，即是真安。二者一脉相承，都是指向心本不有的实相。",
+    "question": "\\u201c不须立心，亦不须强安\\u201d——这和达摩的\\u201c安心\\u201d有什么关系？",
+    "answer": "达摩对慧可说\\u201c将心来与汝安\\u201d，慧可说\\u201c觅心了不可得\\u201d，达摩说\\u201c与汝安心竟\\u201d。法融的\\u201c不须立心，不须强安\\u201d是对这一公案的进一步阐发：既然心本不可得，就不需要立一个心再去安它。不立不安，即是真安。二者一脉相承，都是指向心本不有的实相。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-783",
-    "question": "\"有念即有心，无心即真道\"——无心不就是木头石头吗？",
-    "answer": "无心不是变成木石，而是不生分别妄念。法融说\"无心即无物，无物即天真，天真即大道\"——无心是没有妄执的心，是本来面目的心。木石是无知无觉的死物，无心是灵知自照的活般若。区别在于：木石无心而不能知，圣人无心而无所不知。",
+    "question": "\\u201c有念即有心，无心即真道\\u201d——无心不就是木头石头吗？",
+    "answer": "无心不是变成木石，而是不生分别妄念。法融说\\u201c无心即无物，无物即天真，天真即大道\\u201d——无心是没有妄执的心，是本来面目的心。木石是无知无觉的死物，无心是灵知自照的活般若。区别在于：木石无心而不能知，圣人无心而无所不知。",
     "relatedBooks": ["jueguanlun", "xinming"]
   },
   {
     "id": "faq-784",
     "question": "龟毛兔角的比喻是什么意思？",
-    "answer": "法融以龟喻道，以毛喻我。龟有甲无毛——道真实存在而我本空。道非先无今有，所以不说有；毛非先有今无，所以不说无。凡夫执着有我有名，就像横执有龟毛兔角一样——把本来没有的\"我\"当作实有。圣人无我而有道，如龟有甲而无毛。",
+    "answer": "法融以龟喻道，以毛喻我。龟有甲无毛——道真实存在而我本空。道非先无今有，所以不说有；毛非先有今无，所以不说无。凡夫执着有我有名，就像横执有龟毛兔角一样——把本来没有的\\u201c我\\u201d当作实有。圣人无我而有道，如龟有甲而无毛。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-785",
-    "question": "\"一法不断，一法不得，即为圣也\"——圣人什么都不做吗？",
+    "question": "\\u201c一法不断，一法不得，即为圣也\\u201d——圣人什么都不做吗？",
     "answer": "不是什么都不做，而是不妄有所断、不妄有所得。凡夫妄有所断（要断烦恼）、妄有所得（要求菩提），都是将烦恼与菩提作二法看。圣人彻见本源，烦恼本空何须断，菩提本有何须得。一法不断不是不断，是无可断；一法不得不是不得，是无可得。",
     "relatedBooks": ["jueguanlun", "xinming"]
   },
   {
     "id": "faq-786",
-    "question": "\"虚空为道本，参罗为法用\"怎么理解？",
-    "answer": "虚空是道的根本，森罗万象是法的妙用。道体如虚空般空寂无为，法用如万象般森罗显现。体用一如：虚空不离万象，万象不离虚空。法界性自然，没有造作者——不是谁创造的，不是业力所成的，本来如此。此说将道家\"道法自然\"与佛家\"法尔如是\"融通为一。",
+    "question": "\\u201c虚空为道本，参罗为法用\\u201d怎么理解？",
+    "answer": "虚空是道的根本，森罗万象是法的妙用。道体如虚空般空寂无为，法用如万象般森罗显现。体用一如：虚空不离万象，万象不离虚空。法界性自然，没有造作者——不是谁创造的，不是业力所成的，本来如此。此说将道家\\u201c道法自然\\u201d与佛家\\u201c法尔如是\\u201d融通为一。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-787",
-    "question": "\"道遍草木\"——草木也能成佛吗？",
-    "answer": "法融说道无所不遍，草木无情本来合道。经云\"于一微尘中具含一切法\"，又云\"一切法亦如也\"——如无二无差别。草木与人在道面前平等无二。但法融并非说草木成佛，而是说道本遍一切处，草木本来在道中，不需要\"成\"佛——它们从来就在法性之中。",
+    "question": "\\u201c道遍草木\\u201d——草木也能成佛吗？",
+    "answer": "法融说道无所不遍，草木无情本来合道。经云\\u201c于一微尘中具含一切法\\u201d，又云\\u201c一切法亦如也\\u201d——如无二无差别。草木与人在道面前平等无二。但法融并非说草木成佛，而是说道本遍一切处，草木本来在道中，不需要\\u201c成\\u201d佛——它们从来就在法性之中。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-788",
-    "question": "\"行于非道\"一段似乎允许杀生偷盗淫欲妄语，这怎么解释？",
-    "answer": "此段是极端比喻，说明\"心同如此\"的境界。野火烧山、猛风折树——自然界无分别地毁灭与创造，心如这般无分别时，一切行为皆合道。关键在\"若有犹预之心，见生见杀中有心不尽，乃至蚂蚁也系你命\"——只要还有分别心，哪怕杀一只蚂蚁也有罪。此段不可作字面解，而是说明无心分别之境。",
+    "question": "\\u201c行于非道\\u201d一段似乎允许杀生偷盗淫欲妄语，这怎么解释？",
+    "answer": "此段是极端比喻，说明\\u201c心同如此\\u201d的境界。野火烧山、猛风折树——自然界无分别地毁灭与创造，心如这般无分别时，一切行为皆合道。关键在\\u201c若有犹预之心，见生见杀中有心不尽，乃至蚂蚁也系你命\\u201d——只要还有分别心，哪怕杀一只蚂蚁也有罪。此段不可作字面解，而是说明无心分别之境。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-789",
-    "question": "\"知名亦不妨，只恐心中有事\"——知道\"我\"的名字也不妨碍吗？",
-    "answer": "法融的意思是：口头上说\"我\"这个名字不妨碍，妨碍的是心里真的执着了什么事。名字是假名施设，知道有这个假名不碍道；但如果心里执着了这个假名，以为真有一个\"我\"，就成障碍。所以问题不在名字，在于心是否有所住。",
+    "question": "\\u201c知名亦不妨，只恐心中有事\\u201d——知道\\u201c我\\u201d的名字也不妨碍吗？",
+    "answer": "法融的意思是：口头上说\\u201c我\\u201d这个名字不妨碍，妨碍的是心里真的执着了什么事。名字是假名施设，知道有这个假名不碍道；但如果心里执着了这个假名，以为真有一个\\u201c我\\u201d，就成障碍。所以问题不在名字，在于心是否有所住。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-790",
-    "question": "\"非惑即是道，非离惑是道\"——惑与道是什么关系？",
+    "question": "\\u201c非惑即是道，非离惑是道\\u201d——惑与道是什么关系？",
     "answer": "法融以醉醒为喻：醉时非醒，醒时非醉，但不离醉有醒，也不是醉就是醒。惑与道也是如此：不是惑本身就是道，也不是离开惑另有道。惑性本空即道，道非离惑别有。如手翻覆——翻时不应更问手何在，手还是那只手，只是状态不同。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-791",
-    "question": "\"自眼未明，焉治他目\"——那还能说法度人吗？",
+    "question": "\\u201c自眼未明，焉治他目\\u201d——那还能说法度人吗？",
     "answer": "法融并非完全否定说法度人，而是强调必须先自悟。若不达道理而说法，名为无明力——助己烦恼作气力。即使教人十善五戒，安处人天，至理无益更招二损：自陷（自妨于道）陷他（不免轮回）。圣人无心说差别法，但众生自心希望现——法本是一乘，因众生心而有差别。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-792",
-    "question": "\"尚无系缚，何有解脱人\"——那还需要修行吗？",
-    "answer": "法融说\"尚无系缚，何有解脱人\"是从究竟层面说的。系缚与解脱都是假名：众生本不被缚，何须求脱？但法融同时说\"譬如矿中虽有其金，若不施功终不可得\"——金虽本有，不炼不得；心虽本寂，不观不定。所以修行不是\"从缚到脱\"的过程，而是\"发现本来解脱\"的过程。",
+    "question": "\\u201c尚无系缚，何有解脱人\\u201d——那还需要修行吗？",
+    "answer": "法融说\\u201c尚无系缚，何有解脱人\\u201d是从究竟层面说的。系缚与解脱都是假名：众生本不被缚，何须求脱？但法融同时说\\u201c譬如矿中虽有其金，若不施功终不可得\\u201d——金虽本有，不炼不得；心虽本寂，不观不定。所以修行不是\\u201c从缚到脱\\u201d的过程，而是\\u201c发现本来解脱\\u201d的过程。",
     "relatedBooks": ["jueguanlun", "xinming"]
   },
   {
     "id": "faq-793",
-    "question": "\"似见\"与\"正见\"有什么区别？",
-    "answer": "缘门已悟\"不见一法如微尘许可对说\"，入理仍指出这只是\"似见\"——如外道学隐形而未灭影亡迹。隐形虽不见人，但影子还在；不见一法虽无可对说，但\"不见\"之见还在。真正正见是\"本无心境，莫起生灭之见\"——不仅不见一法，连\"不见\"之见也不可立。此为绝观之极则。",
+    "question": "\\u201c似见\\u201d与\\u201c正见\\u201d有什么区别？",
+    "answer": "缘门已悟\\u201c不见一法如微尘许可对说\\u201d，入理仍指出这只是\\u201c似见\\u201d——如外道学隐形而未灭影亡迹。隐形虽不见人，但影子还在；不见一法虽无可对说，但\\u201c不见\\u201d之见还在。真正正见是\\u201c本无心境，莫起生灭之见\\u201d——不仅不见一法，连\\u201c不见\\u201d之见也不可立。此为绝观之极则。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-794",
-    "question": "\"觉了无物谓之佛，通彼一切谓之道\"——佛和道是同一个吗？",
+    "question": "\\u201c觉了无物谓之佛，通彼一切谓之道\\u201d——佛和道是同一个吗？",
     "answer": "法融从不同角度定义：觉了无物叫佛——侧重觉悟；通彼一切叫道——侧重通达。佛是能觉之智，道是所通之理，实则理智不二。法界出生为变化，究竟寂灭为常住——变化与常住也是一体两面。法融将佛、道、变化、常住统一于法界实相之中。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-795",
-    "question": "\"无知之知，无见之见\"是什么意思？",
-    "answer": "无知之知是没有能知之心的知——知而不起知想；无见之见是没有能见之眼的见——见而不起见想。圣人见非眼见、知非意知，因为超越了根量。如玄光照物，没有能照之眼而物自照；如阴阳感应，没有能知之意而物自知。此与僧肇《般若无知论》\"圣心无知故无所不知\"一脉相承。",
+    "question": "\\u201c无知之知，无见之见\\u201d是什么意思？",
+    "answer": "无知之知是没有能知之心的知——知而不起知想；无见之见是没有能见之眼的见——见而不起见想。圣人见非眼见、知非意知，因为超越了根量。如玄光照物，没有能照之眼而物自照；如阴阳感应，没有能知之意而物自知。此与僧肇《般若无知论》\\u201c圣心无知故无所不知\\u201d一脉相承。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-796",
-    "question": "\"起心易，灭心难；是身易，非身难\"——为什么说修道甚难？",
-    "answer": "法融指出：起心容易灭心难——妄念起之即生，要彻底寂灭却极难。认同身体容易，超越身体难。有所作为容易，无所作为难。所以\"不动即真，三圣希及\"——不动不是什么都不做，而是心不妄动，这连三圣都难以达到。法融以此说明：虽然道本现成，但众生习气深重，真正做到无心绝观极为罕见。",
+    "question": "\\u201c起心易，灭心难；是身易，非身难\\u201d——为什么说修道甚难？",
+    "answer": "法融指出：起心容易灭心难——妄念起之即生，要彻底寂灭却极难。认同身体容易，超越身体难。有所作为容易，无所作为难。所以\\u201c不动即真，三圣希及\\u201d——不动不是什么都不做，而是心不妄动，这连三圣都难以达到。法融以此说明：虽然道本现成，但众生习气深重，真正做到无心绝观极为罕见。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-797",
-    "question": "\"如犬逐块\"的比喻是什么意思？",
+    "question": "\\u201c如犬逐块\\u201d的比喻是什么意思？",
     "answer": "法融以犬逐块喻修道人不知心量。人掷土块打狗，狗追土块而不追人——土块从人而起，狗不知追因。修道人若不知万法从心起，只在法上用功（追块），不在心上下手（咬人），则永不得定。若了心量，则块自息——万法本空，心若不生，法自然灭。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-798",
-    "question": "\"智者求心不求佛，了本心源即无余\"——不该念佛求佛吗？",
-    "answer": "法融并非否定念佛求佛，而是指出究竟层面：佛在心中不在心外。求酥钻水——酥在乳中不在水中，求道求佛当向心中求。法融在第四节也说\"为愚痴众生教令念佛，若有道心之士即令观身实相\"——念佛是方便门，求心是究竟门。二者不矛盾：未悟者念佛为方便，已悟者求心为究竟。",
+    "question": "\\u201c智者求心不求佛，了本心源即无余\\u201d——不该念佛求佛吗？",
+    "answer": "法融并非否定念佛求佛，而是指出究竟层面：佛在心中不在心外。求酥钻水——酥在乳中不在水中，求道求佛当向心中求。法融在第四节也说\\u201c为愚痴众生教令念佛，若有道心之士即令观身实相\\u201d——念佛是方便门，求心是究竟门。二者不矛盾：未悟者念佛为方便，已悟者求心为究竟。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-799",
     "question": "如来藏是实有还是方便说？",
-    "answer": "法融在《绝观论》末尾明确指出：如来藏是为见身人说有如来藏，若不见身者即不说有如来藏。佛就众生见实而说如来藏，说如来藏者是不了教说。又知如来藏是无我之异名，亦是尽义——如来藏并非一个实有的\"藏\"，而是无我的异名，是烦恼尽灭的表述。",
+    "answer": "法融在《绝观论》末尾明确指出：如来藏是为见身人说有如来藏，若不见身者即不说有如来藏。佛就众生见实而说如来藏，说如来藏者是不了教说。又知如来藏是无我之异名，亦是尽义——如来藏并非一个实有的\\u201c藏\\u201d，而是无我的异名，是烦恼尽灭的表述。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-800",
     "question": "《绝观论》与《心铭》有什么关系？",
-    "answer": "二书同为牛头法融所作，互为表里。《心铭》是偈颂体，以\"心性不生，何须知见\"为宗，精炼概括无心绝观之旨；《绝观论》是问答体，以师徒对话层层破执，更为详尽地展开论证。《心铭》如总纲，《绝观论》如细目。二书共同构成牛头禅的理论基础，与达摩壁观、东山方便鼎足而三。",
+    "answer": "二书同为牛头法融所作，互为表里。《心铭》是偈颂体，以\\u201c心性不生，何须知见\\u201d为宗，精炼概括无心绝观之旨；《绝观论》是问答体，以师徒对话层层破执，更为详尽地展开论证。《心铭》如总纲，《绝观论》如细目。二书共同构成牛头禅的理论基础，与达摩壁观、东山方便鼎足而三。",
     "relatedBooks": ["jueguanlun", "xinming"]
   },
   {
     "id": "faq-801",
-    "question": "\"腾腾任运\"的修行方式有什么深意？",
-    "answer": "法融说真学道人不多专精持戒、护威仪不殷勤、不化众生、腾腾任运，看似懈怠，实则\"欲亡一切分别心，欲灭一切诸有见\"。虽似腾腾任运，而内行无间——外表不刻意，内心不间断。此与后来禅宗\"平常心是道\"相通：不是不修行，而是将修行融入日用，不立修行相。",
+    "question": "\\u201c腾腾任运\\u201d的修行方式有什么深意？",
+    "answer": "法融说真学道人不多专精持戒、护威仪不殷勤、不化众生、腾腾任运，看似懈怠，实则\\u201c欲亡一切分别心，欲灭一切诸有见\\u201d。虽似腾腾任运，而内行无间——外表不刻意，内心不间断。此与后来禅宗\\u201c平常心是道\\u201d相通：不是不修行，而是将修行融入日用，不立修行相。",
     "relatedBooks": ["jueguanlun"]
   },
   {
     "id": "faq-802",
     "question": "《绝观论》适合什么人读？",
-    "answer": "《绝观论》适合所有对禅宗有兴趣的学人。对初学者，\"不须立心\"能建立正信；对久学者，\"似见非正见\"能扫除知解障碍；对实修者，\"智者求心不求佛\"提供下手方便。但论中\"行于非道\"一段极为峻烈，读者不可作字面解。建议与《心铭》合参，相互发明。二书一偈一论，一总一别，合参可窥牛头禅之全貌。",
+    "answer": "《绝观论》适合所有对禅宗有兴趣的学人。对初学者，\\u201c不须立心\\u201d能建立正信；对久学者，\\u201c似见非正见\\u201d能扫除知解障碍；对实修者，\\u201c智者求心不求佛\\u201d提供下手方便。但论中\\u201c行于非道\\u201d一段极为峻烈，读者不可作字面解。建议与《心铭》合参，相互发明。二书一偈一论，一总一别，合参可窥牛头禅之全貌。",
     "relatedBooks": ["jueguanlun", "xinming"]
   },
   {
@@ -21494,7 +22150,7 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
 
-  "id": "faq-884",    "question": "“参禅须铁汉，毋论期与限”——现代人有工作家庭，如何用博山的方法？",    "answer": "铁汉之心可学，铁汉之形不必泥。博山方法对现代人的转译：一、警觉为本——每日提醒自己何事为重、时不待人，把“切”字用在工作与修学上，一日要见一日工夫；二、话头随身——行住坐卧、着衣吃饭里都可提“念佛是谁”，不必拘于坐香；三、以病为药——博山痛陈的种种禅病（将心待悟、求人说破、偷心取巧、得少为足）正是现代人学习修行的通病自检表；四、知非便舍——纵然行在错处，肯一念知非便是进步的基本。修行不在形仪猛利，在心念真切。",    "relatedBooks": ["boshan-canchanjingyu"]
+  "id": "faq-884",    "question": "\u201c参禅须铁汉，毋论期与限\u201d——现代人有工作家庭，如何用博山的方法？",    "answer": "铁汉之心可学，铁汉之形不必泥。博山方法对现代人的转译：一、警觉为本——每日提醒自己何事为重、时不待人，把\u201c切\u201d字用在工作与修学上，一日要见一日工夫；二、话头随身——行住坐卧、着衣吃饭里都可提\u201c念佛是谁\u201d，不必拘于坐香；三、以病为药——博山痛陈的种种禅病（将心待悟、求人说破、偷心取巧、得少为足）正是现代人学习修行的通病自检表；四、知非便舍——纵然行在错处，肯一念知非便是进步的基本。修行不在形仪猛利，在心念真切。",    "relatedBooks": ["boshan-canchanjingyu"]
   },
   {
     "id": "faq-905",    "question": "《禅源诸诠集都序》是一本什么书？",    "answer": "唐代圭峰宗密（780-841）为其编纂的百卷禅藏《禅源诸诠集》写的总序，四卷约一万六千字。中唐禅门诸宗并立互相攻击——江西、荷泽、北秀、牛头、石头等各立门户，\"以经论为干戈\"。宗密以华严宗师兼荷泽禅传人的双重身份，判禅为三宗、教为三种，一一配对相证，把一代佛法会归一味。裴休赞为\"未曾有也\"。它是禅宗史上第一部系统的判教著作，读懂它就握住了理解整个唐代禅宗格局的钥匙。",    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
@@ -23332,8 +23988,8 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     id: 'faq-2005',
-    question: '《碧岩录》为什么被称为“宗门第一书”？',
-    answer: '《碧岩录》以百则公案为纲，通过垂示、着语、评唱、颂古层层发明，把公案的机关、血脉、照用彻底抉发，文字之美与勘验之精并臻极致。它集宋代文字禅之大成，是公案文学与机锋勘验的至高巅峰，故被尊为“宗门第一书”。',
+    question: '《碧岩录》为什么被称为\u201c宗门第一书\u201d？',
+    answer: '《碧岩录》以百则公案为纲，通过垂示、着语、评唱、颂古层层发明，把公案的机关、血脉、照用彻底抉发，文字之美与勘验之精并臻极致。它集宋代文字禅之大成，是公案文学与机锋勘验的至高巅峰，故被尊为\u201c宗门第一书\u201d。',
     relatedBooks: ['biyanlu']
   },
   {
@@ -23344,86 +24000,86 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     id: 'faq-2007',
-    question: '什么是“垂示”？',
-    answer: '垂示是圆悟在每则公案前所作的总纲提示，寥寥数语总提本则纲宗，如第一则“隔山见烟，早知是火；隔墙见角，便知是牛”，令学人未入公案先识家风光景。垂示是读公案的入门钥匙。',
+    question: '什么是\u201c垂示\u201d？',
+    answer: '垂示是圆悟在每则公案前所作的总纲提示，寥寥数语总提本则纲宗，如第一则\u201c隔山见烟，早知是火；隔墙见角，便知是牛\u201d，令学人未入公案先识家风光景。垂示是读公案的入门钥匙。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2008',
-    question: '什么是“着语”？',
-    answer: '着语是圆悟在公案与颂古句下所作的夹注点评，多为一二字短语，如“勘破了也”“错”“谢答话”“放过”等。它是评唱者随文点破的勘验之语，或褒或贬、或擒或纵，画龙点睛。',
+    question: '什么是\u201c着语\u201d？',
+    answer: '着语是圆悟在公案与颂古句下所作的夹注点评，多为一二字短语，如\u201c勘破了也\u201d\u201c错\u201d\u201c谢答话\u201d\u201c放过\u201d等。它是评唱者随文点破的勘验之语，或褒或贬、或擒或纵，画龙点睛。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2009',
-    question: '什么是“颂古”？',
-    answer: '颂古是雪窦重显以诗偈颂出公案玄关的文学形式，以诗写禅、含蓄深隐，用典繁多、意象跳跃。如第一则“圣谛廓然，何当辨的”，须配合圆悟的颂评唱方能得其旨归。',
+    question: '什么是\u201c颂古\u201d？',
+    answer: '颂古是雪窦重显以诗偈颂出公案玄关的文学形式，以诗写禅、含蓄深隐，用典繁多、意象跳跃。如第一则\u201c圣谛廓然，何当辨的\u201d，须配合圆悟的颂评唱方能得其旨归。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2010',
-    question: '什么是“评唱”？',
+    question: '什么是\u201c评唱\u201d？',
     answer: '评唱是圆悟对公案与颂古所作的详细讲解发明，雄辨纵横、文采斐然。它抉发公案的机关、血脉与落处，使学人知恩解义。评唱是《碧岩录》的主体，也是其最易令人沉迷处。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2011',
     question: '为什么大慧宗杲要焚毁《碧岩录》刻板？',
-    answer: '圆悟的弟子大慧宗杲见学人竞记《碧岩录》言句、流于知解，愤而焚毁刻板，以矫“死于句下”之弊。这不是否定此书价值，而是提醒：公案是用来悟的，不是用来背的——因指见月，不可执指为月。',
+    answer: '圆悟的弟子大慧宗杲见学人竞记《碧岩录》言句、流于知解，愤而焚毁刻板，以矫\u201c死于句下\u201d之弊。这不是否定此书价值，而是提醒：公案是用来悟的，不是用来背的——因指见月，不可执指为月。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2012',
-    question: '“廓然无圣”是什么意思？',
-    answer: '达摩答梁武帝“如何是圣谛第一义”云“廓然无圣”——一切功德、圣凡、名相全都扫荡干净，荡荡然没有任何“圣”可执着。武帝求的是有为功德，达摩示的是无为真心，正是第一义的直答。',
+    question: '\u201c廓然无圣\u201d是什么意思？',
+    answer: '达摩答梁武帝\u201c如何是圣谛第一义\u201d云\u201c廓然无圣\u201d——一切功德、圣凡、名相全都扫荡干净，荡荡然没有任何\u201c圣\u201d可执着。武帝求的是有为功德，达摩示的是无为真心，正是第一义的直答。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2013',
-    question: '“日日是好日”怎么理解？',
-    answer: '云门答“十五日已后道将一句来”云“日日是好日”。不是挑个好日子才叫好日——悟了之后，行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。',
+    question: '\u201c日日是好日\u201d怎么理解？',
+    answer: '云门答\u201c十五日已后道将一句来\u201d云\u201c日日是好日\u201d。不是挑个好日子才叫好日——悟了之后，行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2014',
-    question: '“麻三斤”如何是佛？',
-    answer: '洞山答“如何是佛”云“麻三斤”。佛之一字不可于言句上寻讨，洞山答处截断众流，麻三斤即佛、佛即麻三斤。若向句中觅佛，参到弥勒下生也未梦见在。',
+    question: '\u201c麻三斤\u201d如何是佛？',
+    answer: '洞山答\u201c如何是佛\u201d云\u201c麻三斤\u201d。佛之一字不可于言句上寻讨，洞山答处截断众流，麻三斤即佛、佛即麻三斤。若向句中觅佛，参到弥勒下生也未梦见在。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2015',
-    question: '“对一说”与“倒一说”有何区别？',
-    answer: '“对一说”（第14则）是云门答“如何是一代时教”——对着“一”说，万法归一；“倒一说”（第15则）是答“不是目前机亦非目前事时如何”——倒转一说，不落言诠。二者皆云门截断众流之句，一顺一逆，皆归向上。',
+    question: '\u201c对一说\u201d与\u201c倒一说\u201d有何区别？',
+    answer: '\u201c对一说\u201d（第14则）是云门答\u201c如何是一代时教\u201d——对着\u201c一\u201d说，万法归一；\u201c倒一说\u201d（第15则）是答\u201c不是目前机亦非目前事时如何\u201d——倒转一说，不落言诠。二者皆云门截断众流之句，一顺一逆，皆归向上。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2016',
-    question: '“无缝塔”是什么？',
-    answer: '忠国师答肃宗“百年后所须何物”云“与老僧作个无缝塔”。无缝塔者，无门无窗、无内无外，喻法身无相、全体圆成——本自现成，何须更造？耽源偈“湘之南潭之北”，正是指此。',
+    question: '\u201c无缝塔\u201d是什么？',
+    answer: '忠国师答肃宗\u201c百年后所须何物\u201d云\u201c与老僧作个无缝塔\u201d。无缝塔者，无门无窗、无内无外，喻法身无相、全体圆成——本自现成，何须更造？耽源偈\u201c湘之南潭之北\u201d，正是指此。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2017',
-    question: '“好雪片片不落别处”落在何处？',
-    answer: '庞居士指空中雪云“好雪片片不落别处”。片片好雪正落当人自己，不离当下。全禅客一问“落在什么处”，早已落别处了——此一问即是头上安头，故居士打他一掌。',
+    question: '\u201c好雪片片不落别处\u201d落在何处？',
+    answer: '庞居士指空中雪云\u201c好雪片片不落别处\u201d。片片好雪正落当人自己，不离当下。全禅客一问\u201c落在什么处\u201d，早已落别处了——此一问即是头上安头，故居士打他一掌。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2018',
-    question: '“野鸭子”公案中马祖为什么扭百丈鼻头？',
-    answer: '百丈答“野鸭子飞过去也”，是随境流转、心在物上。马祖扭其鼻头云“何曾飞去”——境虽生灭，见性何尝飞去？一扭之下，百丈悟得能所双亡，野鸭飞去是境，见性不随境迁。',
+    question: '\u201c野鸭子\u201d公案中马祖为什么扭百丈鼻头？',
+    answer: '百丈答\u201c野鸭子飞过去也\u201d，是随境流转、心在物上。马祖扭其鼻头云\u201c何曾飞去\u201d——境虽生灭，见性何尝飞去？一扭之下，百丈悟得能所双亡，野鸭飞去是境，见性不随境迁。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2019',
-    question: '“犀牛扇子”公案的机关在哪里？',
-    answer: '盐官唤侍者“将犀牛扇子来”，侍者云“扇子破也”，官云“还我犀牛儿来”。扇子破是事，犀牛儿是理——破的是物，不晦的是那个本分田地。侍者无对，正是被事瞒却，不见理。',
+    question: '\u201c犀牛扇子\u201d公案的机关在哪里？',
+    answer: '盐官唤侍者\u201c将犀牛扇子来\u201d，侍者云\u201c扇子破也\u201d，官云\u201c还我犀牛儿来\u201d。扇子破是事，犀牛儿是理——破的是物，不晦的是那个本分田地。侍者无对，正是被事瞒却，不见理。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2020',
-    question: '“糊饼”为什么是超佛越祖之谈？',
-    answer: '僧问“超佛越祖之谈”，云门答“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。',
+    question: '\u201c糊饼\u201d为什么是超佛越祖之谈？',
+    answer: '僧问\u201c超佛越祖之谈\u201d，云门答\u201c糊饼\u201d。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。',
     relatedBooks: ['biyanlu']
   },
   {
@@ -23435,25 +24091,25 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     id: 'faq-2022',
     question: '《碧岩录》与《从容录》有何异同？',
-    answer: '《碧岩录》是临济宗圆悟克勤评唱，《从容录》是曹洞宗万松行秀评唱，并称“禅门双璧”。《碧岩录》峻烈纵横、如金刚王宝剑；《从容录》绵密稳顺、如轻轻点拨。一临济一曹洞，宗风不同而公案同归。',
+    answer: '《碧岩录》是临济宗圆悟克勤评唱，《从容录》是曹洞宗万松行秀评唱，并称\u201c禅门双璧\u201d。《碧岩录》峻烈纵横、如金刚王宝剑；《从容录》绵密稳顺、如轻轻点拨。一临济一曹洞，宗风不同而公案同归。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2023',
-    question: '“杀人刀活人剑”是什么意思？',
-    answer: '圆悟垂示云“杀人刀，活人剑”——宗师手段有两面：杀人刀斩断学人的情识执着，活人剑救活其慧命灵性。杀与活不在言语，全在当机：该杀时不伤一毫，该活时丧身失命。',
+    question: '\u201c杀人刀活人剑\u201d是什么意思？',
+    answer: '圆悟垂示云\u201c杀人刀，活人剑\u201d——宗师手段有两面：杀人刀斩断学人的情识执着，活人剑救活其慧命灵性。杀与活不在言语，全在当机：该杀时不伤一毫，该活时丧身失命。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2024',
-    question: '为什么说“古人到这里为什么不肯住”？',
-    answer: '莲花峰庵主拈拄杖示众云“古人到这里为什么不肯住”，自代云“为他途路不得力”“楖栗横担不顾人，直入千峰万峰去”。悟道者不住于悟，更不向千峰万峰里藏身——转身一路，才见自在。',
+    question: '为什么说\u201c古人到这里为什么不肯住\u201d？',
+    answer: '莲花峰庵主拈拄杖示众云\u201c古人到这里为什么不肯住\u201d，自代云\u201c为他途路不得力\u201d\u201c楖栗横担不顾人，直入千峰万峰去\u201d。悟道者不住于悟，更不向千峰万峰里藏身——转身一路，才见自在。',
     relatedBooks: ['biyanlu']
   },
   {
     id: 'faq-2025',
-    question: '“并却咽喉唇吻，作么生道”三答有何高下？',
-    answer: '百丈此问，沩山答“却请和尚道”是把定封疆，五峰答“和尚也须并却”是截断众流，云岩答“和尚有也未”是触破窠臼。圆悟评：沩山把定封疆，五峰截断众流，云岩丧我儿孙——三答各有千秋，皆见作家手段。',
+    question: '\u201c并却咽喉唇吻，作么生道\u201d三答有何高下？',
+    answer: '百丈此问，沩山答\u201c却请和尚道\u201d是把定封疆，五峰答\u201c和尚也须并却\u201d是截断众流，云岩答\u201c和尚有也未\u201d是触破窠臼。圆悟评：沩山把定封疆，五峰截断众流，云岩丧我儿孙——三答各有千秋，皆见作家手段。',
     relatedBooks: ['biyanlu']
   },
   {
@@ -23735,7 +24391,7 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2072",
     "question": "空谷景隆为什么写《尚理编》？",
-    "answer": "空谷景隆因道士缪尚诚妄造“神化图”，篡改吕洞宾参黄龙公案之语，虚架陋辞惑乱人心，故不忍坐视而著此编以辨正之。其目的是阐明禅宗见性大道与道家炼术的根本区别，护持佛法正道。",
+    "answer": "空谷景隆因道士缪尚诚妄造\u201c神化图\u201d，篡改吕洞宾参黄龙公案之语，虚架陋辞惑乱人心，故不忍坐视而著此编以辨正之。其目的是阐明禅宗见性大道与道家炼术的根本区别，护持佛法正道。",
     "relatedBooks": ["shanglibian"]
   },
   {
@@ -23747,18 +24403,18 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2074",
     "question": "吕洞宾参黄龙公案的经过是怎样的？",
-    "answer": "吕洞宾谒黄龙诲机禅师时值龙升堂。龙说“众中有窃法者”，吕说“云水道者”。龙问“云尽水干时如何”，吕不能答。吕反问“一粒粟中藏世界，半升铛内煮山川”，龙答“守尸鬼”。吕说有长生不死药，龙答“饶经八万劫，终是落空亡”。吕飞剑胁之不能入，遂拜求指归，于言下有省，作偈礼谢。",
+    "answer": "吕洞宾谒黄龙诲机禅师时值龙升堂。龙说\u201c众中有窃法者\u201d，吕说\u201c云水道者\u201d。龙问\u201c云尽水干时如何\u201d，吕不能答。吕反问\u201c一粒粟中藏世界，半升铛内煮山川\u201d，龙答\u201c守尸鬼\u201d。吕说有长生不死药，龙答\u201c饶经八万劫，终是落空亡\u201d。吕飞剑胁之不能入，遂拜求指归，于言下有省，作偈礼谢。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2075",
-    "question": "“守尸鬼”是什么意思？",
-    "answer": "黄龙诲机禅师称吕洞宾的炼术为“守尸鬼”，意指炼术者不过是在守护一具血肉之躯使其暂住，并非真正超越生死。血肉之身终有坏时，炼术魂魄寿长不过入中阴界为神灵，报尽仍入轮回。此语直指炼术的根本局限——执假迷真不免赴死。",
+    "question": "\u201c守尸鬼\u201d是什么意思？",
+    "answer": "黄龙诲机禅师称吕洞宾的炼术为\u201c守尸鬼\u201d，意指炼术者不过是在守护一具血肉之躯使其暂住，并非真正超越生死。血肉之身终有坏时，炼术魂魄寿长不过入中阴界为神灵，报尽仍入轮回。此语直指炼术的根本局限——执假迷真不免赴死。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2076",
-    "question": "“饶经八万劫，终是落空亡”怎么理解？",
+    "question": "\u201c饶经八万劫，终是落空亡\u201d怎么理解？",
     "answer": "黄龙禅师此语意为：纵然炼术能活八万大劫，终究还是落空亡。因为炼术是数量成坏之法，凡属有生决定有灭。天地尚有坏时，岂有血肉之身而长生不死？炼术者不出中阴界，报尽皆入轮回生死。",
     "relatedBooks": ["shanglibian"]
   },
@@ -23771,19 +24427,19 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2078",
     "question": "德山烧疏钞公案说明了什么？",
-    "answer": "德山宣鉴禅师初不信禅宗有教外别传之道，担负金刚经疏钞出蜀。路上被卖饼婆子以金刚经“三心不可得”之问难住。后至龙潭信禅师处，一夕龙潭吹灭纸烛，德山于暗中大悟，将疏钞纵火焚之，曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。”此公案说明：不得妙悟者，虽造经书五千余卷只是识情计度，如取萤火欲烧须弥终不能着。",
+    "answer": "德山宣鉴禅师初不信禅宗有教外别传之道，担负金刚经疏钞出蜀。路上被卖饼婆子以金刚经\u201c三心不可得\u201d之问难住。后至龙潭信禅师处，一夕龙潭吹灭纸烛，德山于暗中大悟，将疏钞纵火焚之，曰：\u201c穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。\u201d此公案说明：不得妙悟者，虽造经书五千余卷只是识情计度，如取萤火欲烧须弥终不能着。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2079",
-    "question": "“穷诸玄辩，若一毫置于太虚”是何意？",
+    "question": "\u201c穷诸玄辩，若一毫置于太虚\u201d是何意？",
     "answer": "德山禅师悟后焚疏钞时所说。意为：穷尽一切玄妙辩才，如同将一根毫毛放在太虚之中——微不足道。竭尽世间所有机巧思量，如同将一滴水投入大海——了无痕迹。此语说明文字知解在真正的悟道面前毫无分量，唯有见性明心方能超越生死。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2080",
     "question": "张商英兜率悟道公案说明了什么？",
-    "answer": "宋相国张商英自谓于东林总禅师处有所得，一夕宿兜率寺，悦禅师指出其“于德山托钵、香严独脚颂还有疑处”，说明其未真悟。张商英触枕堕地击声悚然有省，但被问“赃在甚么处”仍不能答。此公案说明：真参实悟方始到家，心思意解不是真悟，纵有所省亦未必透彻。",
+    "answer": "宋相国张商英自谓于东林总禅师处有所得，一夕宿兜率寺，悦禅师指出其\u201c于德山托钵、香严独脚颂还有疑处\u201d，说明其未真悟。张商英触枕堕地击声悚然有省，但被问\u201c赃在甚么处\u201d仍不能答。此公案说明：真参实悟方始到家，心思意解不是真悟，纵有所省亦未必透彻。",
     "relatedBooks": ["shanglibian"]
   },
   {
@@ -23795,19 +24451,19 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2082",
     "question": "纸衣道者立化公案说明了什么？",
-    "answer": "纸衣道者见曹山本寂禅师，问纸衣下事，立化而去——此为似到。曹山评曰“只解恁么去，不解恁么来”。僧复苏问“一灵真性不假胞胎时如何”，曹山答“未是妙”，又问“如何是妙”，答“不借借”。僧于言下大悟，归单位坐脱而去——此为先似到后实到。说明仅有定力不够，须真悟道方为实到。",
+    "answer": "纸衣道者见曹山本寂禅师，问纸衣下事，立化而去——此为似到。曹山评曰\u201c只解恁么去，不解恁么来\u201d。僧复苏问\u201c一灵真性不假胞胎时如何\u201d，曹山答\u201c未是妙\u201d，又问\u201c如何是妙\u201d，答\u201c不借借\u201d。僧于言下大悟，归单位坐脱而去——此为先似到后实到。说明仅有定力不够，须真悟道方为实到。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2083",
     "question": "石霜楚圆迁化后泰首座坐脱，处侍者如何评价？",
-    "answer": "石霜楚圆禅师迁化后，泰首座坐脱而去。处侍者评曰：“坐脱立亡则不无，要会先师意则未在。”意为：泰首座虽有坐脱立亡的定力，但并未真正领会石霜禅师的禅旨。此为似到而不到者——有定力而无智慧，虽能坐脱立亡，只在识神阴界，不出轮回生死。",
+    "answer": "石霜楚圆禅师迁化后，泰首座坐脱而去。处侍者评曰：\u201c坐脱立亡则不无，要会先师意则未在。\u201d意为：泰首座虽有坐脱立亡的定力，但并未真正领会石霜禅师的禅旨。此为似到而不到者——有定力而无智慧，虽能坐脱立亡，只在识神阴界，不出轮回生死。",
     "relatedBooks": ["shanglibian"]
   },
   {
     "id": "faq-2084",
-    "question": "为什么空谷景隆说“出神是鬼神活计”？",
-    "answer": "大道全体作用不涉神识，才涉神识即落鬼神阴界。出神者，神识离身游走，不过是鬼神的活计。空谷景隆引万峰和尚斥责文藏主出神之事：“圆顶方袍参禅学道，何以出神作此鬼神活计？”佛祖诃斥出神为鬼家活计，禅宗大禁不许出神。",
+    "question": "为什么空谷景隆说\u201c出神是鬼神活计\u201d？",
+    "answer": "大道全体作用不涉神识，才涉神识即落鬼神阴界。出神者，神识离身游走，不过是鬼神的活计。空谷景隆引万峰和尚斥责文藏主出神之事：\u201c圆顶方袍参禅学道，何以出神作此鬼神活计？\u201d佛祖诃斥出神为鬼家活计，禅宗大禁不许出神。",
     "relatedBooks": ["shanglibian"]
   },
   {
@@ -23819,7 +24475,7 @@ export const ZEN_FAQS: FAQItem[] = [
   {
     "id": "faq-2086",
     "question": "佛与老子孰前孰后？",
-    "answer": "佛生于周昭王二十四年，佛灭度后四百二十二年老子方生。佛是圣人中之大圣人，老子是世人中之圣人。佛是三千大千世界天上天下三界大圣，老子是大明一国之圣。阚泽奏对曰：“孔老之教法天制用，不敢违天；佛教诸天奉行，不敢违佛。”",
+    "answer": "佛生于周昭王二十四年，佛灭度后四百二十二年老子方生。佛是圣人中之大圣人，老子是世人中之圣人。佛是三千大千世界天上天下三界大圣，老子是大明一国之圣。阚泽奏对曰：\u201c孔老之教法天制用，不敢违天；佛教诸天奉行，不敢违佛。\u201d",
     "relatedBooks": ["shanglibian"]
   },
   {
@@ -23830,8 +24486,8 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2088",
-    "question": "“三武与宋徽”灭佛的结果如何？",
-    "answer": "三武（北魏太武帝、北周武帝、唐武宗）与宋徽宗曾以势力灭佛，但结果是随灭而随兴，况兴之愈盛。纵有势力能灭，但灭其所主之地耳，不能灭普天率土。此为姚广孝《佛法不可灭论》中“有势力者不能灭”之论证。",
+    "question": "\u201c三武与宋徽\u201d灭佛的结果如何？",
+    "answer": "三武（北魏太武帝、北周武帝、唐武宗）与宋徽宗曾以势力灭佛，但结果是随灭而随兴，况兴之愈盛。纵有势力能灭，但灭其所主之地耳，不能灭普天率土。此为姚广孝《佛法不可灭论》中\u201c有势力者不能灭\u201d之论证。",
     "relatedBooks": ["shanglibian"]
   },
   {
@@ -23842,8 +24498,400 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-2090",
-    "question": "《尚理编》中的“尚直尚理二编著毕偶成”诗表达了什么？",
-    "answer": "诗曰：“直笔聊为御侮编，三家文献证媸妍。侮辞若灭吾书灭，理正无私不愧天。”空谷以直笔撰写护教辨正之编，以三教文献辨别是非真伪。纵然侮谤之辞欲灭吾书，吾书终不可灭；理正而无私，不愧于天。此诗表达了空谷以理性护教的坚定信念。",
+    "question": "《尚理编》中的\u201c尚直尚理二编著毕偶成\u201d诗表达了什么？",
+    "answer": "诗曰：\u201c直笔聊为御侮编，三家文献证媸妍。侮辞若灭吾书灭，理正无私不愧天。\u201d空谷以直笔撰写护教辨正之编，以三教文献辨别是非真伪。纵然侮谤之辞欲灭吾书，吾书终不可灭；理正而无私，不愧于天。此诗表达了空谷以理性护教的坚定信念。",
     "relatedBooks": ["shanglibian"]
+  },
+
+  {
+    "id": "faq-2091",
+    "question": "《杨岐方会和尚语录》与《杨岐方会和尚后录》是什么关系？",
+    "answer": "两者是同一位禅师（杨岐方会）的不同语录记录。《语录》记录杨岐方会在杨岐山和云盖山两处道场的开示，由仁勇、守端编集，内容更为丰富全面；《后录》记录其在兴化禅寺的开示与自术真赞，是补充材料。两录合观，可见杨岐宗风全貌。",
+    "relatedBooks": ["yangqiyulu", "yangqihoulu"]
+  },
+  {
+    "id": "faq-2092",
+    "question": "杨岐方会的\u201c三脚驴子弄蹄行\u201d是什么意思？",
+    "answer": "僧问\u201c如何是佛\u201d，杨岐答\u201c三脚驴子弄蹄行\u201d。三脚驴是残缺之驴，却能弄蹄行走——暗示佛性不在完满中，而在当下残缺处。不可执求完满，当下即是。杨杰题跋亦以\u201c跨三脚驴\u201d赞杨岐宗风之奇特。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2093",
+    "question": "杨岐方会的\u201c四种一\u201d开示是什么？",
+    "answer": "杨岐方会以四种\u201c一\u201d开示宗风：一要——千圣同妙；一言——随方就圆；一语——呵佛叱祖；一句——急著眼觑。从妙到用，从语到行，层层展开。一要揭示根本，一言展现善巧，一语显示峻烈，一句归于平常。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2094",
+    "question": "杨岐方会说\u201c释迦老子说梦\u201d是何用意？",
+    "answer": "杨岐上堂云\u201c释迦老子说梦，三世诸佛说梦，天下老和尚说梦\u201d——一切言教皆是梦中说梦，唯有当下心是真实。又问\u201c还曾作梦么\u201d，良久云\u201c人间纵有真消息，偷向杨岐说梦看\u201d。以\u201c说梦\u201d破除对言教的执着，直指言外之旨。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2095",
+    "question": "杨岐方会的\u201c坐断乾坤，放过一著\u201d是什么意思？",
+    "answer": "坐断乾坤即彻底截断一切分别妄想，天地一片黯黑——这是禅师的气概。放过一著即慈悲放行，便雨顺风调——这是禅师的善巧。一收一放之间，尽显宗师度生方便。虽自嘲\u201c俗气未除在\u201d，实则坐断与放过皆是方便施设。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2096",
+    "question": "杨岐方会的\u201c有马骑马无马步行\u201d是何含义？",
+    "answer": "僧问\u201c师唱谁家曲，宗风嗣阿谁\u201d，杨岐答\u201c有马骑马，无马步行\u201d。宗风传承不在形式，有传承的方便就用，没有就靠自己走。随缘自在，不拘一格，这正是杨岐宗风兼具临济与云门特色的表现。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2097",
+    "question": "杨岐方会的\u201c河里失钱河里摝\u201d是什么意思？",
+    "answer": "在河里丢了钱就在河里捞——在哪里迷失就在哪里找回。直指当下，不离本处觅菩提。身心清净则诸境清净，诸境清净则身心清净，迷悟不二，不须向外驰求。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2098",
+    "question": "杨岐方会与杨畋提刑的机锋对话说明了什么？",
+    "answer": "杨畋问法嗣何人，师答慈明大师。杨问见什么道理便法嗣他，师答\u201c共钵盂吃饭\u201d——平常日用即是传承。杨云\u201c不见\u201d，师捺膝云\u201c什么处是不见\u201d——当下即是，何曾不见？杨大笑。这段对话展现了杨岐以平常事接人的宗风特色。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2099",
+    "question": "道吾真禅师的\u201c明暗两字截断众流\u201d是什么意思？",
+    "answer": "道吾真禅师以明暗对立又统一来截断一切分别之流。明暗是二元对立的典型，但\u201c截断众流\u201d即超越一切二元对立，直达心性本源。僧以\u201c作家\u201d回应，师以喝截之，僧抚掌默契——不在言语中。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2100",
+    "question": "道吾真禅师如何开示三玄三要？",
+    "answer": "道吾真禅师开示：第一玄——释尊光射阿难肩；第二玄——孤轮众象攒；第三玄——泣向枯桑泪涟涟。第一要——最好精粗照；第二要——闪烁乾坤光晃耀；第三要——夹路青松老。三玄是临济宗接人的三种境界，三要是三种要旨，层层深入。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2101",
+    "question": "道吾真禅师如何开示四照用？",
+    "answer": "道吾真禅师开示：先照后用——语路分明说，投针不回避；先用后照——金刚觌面亲分付；照用同时——祖佛道中行路异，森罗影里不留身；照用不同时——清凉金色光先照，峨嵋银界一时铺。照即照见学人根机，用即施用方便法门，四种配合展现不同接人手段。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2102",
+    "question": "道吾真禅师如何开示四宾主？",
+    "answer": "道吾真禅师开示：宾中宾——谁说有疏亲；宾中主——磕额无回互，对面与谁陈；主中宾——瑞云空里布霹雳震乾坤；主中主——古皇令高举，巧辨徒申吐。宾主之分即师徒机锋对决中的主从关系，四宾主展现临济宗接人的四种格局。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2103",
+    "question": "杨岐方会的\u201c达磨大师无当门齿\u201d是什么意思？",
+    "answer": "杨岐上堂说\u201c百丈把火开田说大义，是何言欤？杨岐两日种禾，亦有个奇特语。\u201d乃云\u201c达磨大师无当门齿\u201d。以达磨缺门牙的传说，破除对祖师的庄严想象——祖师也是平常人，禅法不在庄严相中，而在平常日用中。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2104",
+    "question": "杨岐方会在慈明忌晨的\u201c揑怪\u201d行为是什么意思？",
+    "answer": "慈明禅师忌晨设斋，杨岐至真前以两手揑拳安头上，以坐具划一划，打一圆相便烧香，退身三步作女人拜。首座云\u201c休揑怪\u201d，师云\u201c兔子吃牛嬭\u201d。第二座亦效之，师打一掌云\u201c者漆桶也乱做\u201d。这是杨岐以非常规行为表达对先师的纪念——不落常规，不拘形式，正是禅宗本色。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2105",
+    "question": "杨岐方会的\u201c卖螺蛳\u201d公案是什么？",
+    "answer": "杨岐在慈明会里时，一日提螺蛳一篮绕院云\u201c卖螺蛳\u201d，令众下语，皆不契。有一老宿揭帘见，以目顾视师，放身便卧。师放篮子便行。老宿不以言语回应，只以目顾视、放身便卧——无言即是。师放下篮子便行——以心传心，机锋在言语之外。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2106",
+    "question": "文政序如何记述杨岐方会的传承谱系？",
+    "answer": "文政序记述：马大师据江西泐潭，出门弟子八十有四人，其角立者唯百丈海得其大机。海出黄檗运得其大用。运出颙，颙出沼，沼出念，念出昭，昭出圆（石霜楚圆），圆出会（杨岐方会）。\u201c海得其大机，运得其大用，兼而得者独会师欤\u201d——杨岐方会兼具大机大用。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2107",
+    "question": "杨杰题跋如何评赞杨岐方会？",
+    "answer": "杨杰题跋赞云：\u201c杨岐会老，跨三脚驴，入水牯牛队中，拽把牵犁，种田博饭。横吹玉笛，饱吞栗蒲。四十年来丛林以为奇特。\u201d又以\u201c三世诸佛说梦，诸方老宿说梦，是杨岐当日语\u201d呼应杨岐开示，最后云\u201c若要清风再振旧令重行，明眼底人试将此录看\u201d。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2108",
+    "question": "杨岐方会的\u201c阿呵呵是什么，僧堂里吃茶去\u201d是什么意思？",
+    "answer": "杨岐上堂云\u201c阿呵呵是什么。僧堂里吃茶去。\u201d以大笑破除一切拟议思量，归入最平常的吃茶——平常心即道。与赵州\u201c吃茶去\u201d异曲同工，展现禅宗以平常日用接人的宗风。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2109",
+    "question": "杨岐方会的偈颂\u201c三妙三诀\u201d是什么内容？",
+    "answer": "三妙：第一妙——古老门风甚奇要，纵去收来总不伤；第二妙——浩浩途中有多少，子细推来对月华；第三妙——高高峰顶猿时啸，孤轮穿透碧潭心。三诀：第一诀——门风尽施设，分明万象分；第二诀——过去现在说，疾焰要须分；第三诀——巧拙定生杀，头头总锋铓。三妙三诀是杨岐宗风的诗偈总结。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+  {
+    "id": "faq-2110",
+    "question": "道吾真禅师的\u201c掷杖收取\u201d公案是什么？",
+    "answer": "道吾真禅师上堂，众集，师以拄杖掷下来，随后跳下。众拟散，师乃召大众，众回首，师乃云\u201c为老僧收取拄杖\u201d，便归方丈。以非常规动作惊众，众欲散时召回首——就在此刻，收杖即是。平常动作中暗藏机锋，不离日用。",
+    "relatedBooks": ["yangqiyulu"]
+  },
+
+  {
+    "id": "faq-2111",
+    "question": "《禅宗决疑集》的作者是谁？",
+    "answer": "元代西蜀野衲智彻禅师所述。智彻二十六岁受戒持斋，三十一岁出家为僧，礼云峰和尚为师，参万法归一一归何处话头。书中以自身修行经历为线索，系统阐述参话头起疑情的完整次第。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2112",
+    "question": "什么是疑情？与普通的想有何区别？",
+    "answer": "智彻禅师指出：此疑之一字便是思想用谋之心，体同而名异耳。疑与想体性相同，但疑是针对一个话头持续参究的力量，如世间工匠各有所务未有不疑而成事者。疑情是悟道的直接动力。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2113",
+    "question": "参无字话头有哪三种态度？哪种是正确的？",
+    "answer": "三种：看无字——将无字贴在眼睛上看，是视觉执着；念无字——口中念念不停如更鼓发擂；疑无字——因赵州道无而起疑情，疑彻骨髓。唯有疑无字才是正途，看和念都是误区。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2114",
+    "question": "为什么智彻禅师反对不开口举话头？",
+    "answer": "智彻亲见兄弟家默默无言者后来多得吐红之疾。此患正是气伤于心，心为血之主，心不能主气血妄行。若不开口出声举话头，气郁结胸中伤心损体自作障碍。故举话头时或出声不出声皆可，但不可闭口禁声。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2115",
+    "question": "什么是退堕？如何对治？",
+    "answer": "退者退菩提心退长远心退精进心——佛不欲礼道不欲修善知识不欲见。对治方法：向诸佛菩萨像前五体投地，燃指燃香，发露前愆求哀忏悔，勇猛举起话头。智彻自述遇退念起时即便燃香忏悔，此念应时随灭。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2116",
+    "question": "什么是不得力？与退有何区别？",
+    "answer": "退与不得力是两回事。退是退心——不想修行了；不得力是工夫上使不上劲——或是话头上无疑，或是话头举不起，或沉或浮或随声色或逐攀缘或喜眠睡。不得力者只向话头上决起疑情，疑情一起此念顿消。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2117",
+    "question": "智彻禅师如何分析万法归一一归何处这个话头？",
+    "answer": "一即是心（灵知之心非肉团心分别心），心即是一（众圣之王故号心王）。用疑时只疑这一法，初举万法归一或三五次随意放收，然后只在一字上起疑。疑者疑此一归何处，归何处三字是考究这一向何处安身立命。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2118",
+    "question": "举话头时应注意什么？",
+    "answer": "或出声不出声皆可，但不得太急又不得太缓。如击钟磬一般匀调击之声则和顺。只贵话头上疑情得力不得力处取用切。不可信人说不要开口举话头，若信此语闭口禁声后必有患也。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2119",
+    "question": "《禅宗决疑集》中的三种善知识指什么？",
+    "answer": "三种：从经教中有悟者、宿有般若力故不参禅而悟者、参禅勇猛工夫未久而悟者。此三种善知识必不能开发初机之人微细做工夫处。若提向上宗乘接上上根器则可，中下之机难以栖泊。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2120",
+    "question": "智彻禅师如何比喻会做工夫的人？",
+    "answer": "譬如惯蹴毬子者——著头头起著肩肩起著肘肘起著手手起著膝膝起著足足起。蹩转一脚踢过毬门辊上三十三天周而复始，无一处可收无一处可著。盖皆因他活辘辘地，三界收他不得。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2121",
+    "question": "什么是三种法门？智彻如何评价？",
+    "answer": "禅林静虑（丛林坐禅）、幽居正派（山间刀耕火种）、祇园圣众（乞食持戒）。此三种法门无出一心，佛祖随时随机方便行道，学人不可执在一隅钉桩摇橹。余于此三种法门上一一批判使四众后学不泥斯惑。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2122",
+    "question": "《禅宗决疑集》如何论述五戒十善与参禅的关系？",
+    "answer": "以五戒为根本，以十善为始末。十善与十恶本同，各随染净缘得此异名，如拳展掌一体互用在人放收。以五戒为体以十善为用，体用双修方成佛事。学人既要明此一件大事来源去就，必须坚持五戒精修十善。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2123",
+    "question": "智彻禅师如何描述疑情成熟的悟境？",
+    "answer": "蓦然疑团子上爆地一声，彻见那边消息去也。疑情积聚到极点，如疑团在心中越积越大，忽然爆裂，豁然彻悟。这是描述桶底脱落豁然开朗的悟境。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2124",
+    "question": "《禅宗决疑集》中得力处省力气是什么意思？",
+    "answer": "古德云得力处省力气，省力处得力。做工夫时不得力处正是用力处。若一向得力更无不得力时则无功用行矣。这是说工夫纯熟后自然省力，而省力处恰恰是真正得力处。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2125",
+    "question": "智彻禅师如何论述信与参禅的关系？",
+    "answer": "弃有著空执法成病。百法十玄千经万论诱引学人皆归十信。诚信实信成佛有分。行解相应潭澄月映。信性自心信心自性。心性如如自信自敬。一切教法最终都指向信——诚信实信。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2126",
+    "question": "《禅宗决疑集》中双林遗戒的核心内容是什么？",
+    "answer": "经云五戒不持人天路绝。五戒者乃诸戒之首万善之初。世尊于双林间欲般涅槃告大众：吾灭度后汝等当依波罗提木叉为师。不言持戒但言以戒为师者，盖欲令学者知戒即是佛佛即是戒，戒佛无二体一而已。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2127",
+    "question": "智彻禅师出家的因缘是什么？",
+    "answer": "智彻自元统乙亥在俗受戒，至庚辰五月出俗，十二月初八日剃度为僧。请益师礼云峰和尚。出俗日承次之兄黎十居士殷勤叮嘱：出家功德非小因缘，入圣超凡续佛慧命。须要忍苦忍饥忍寒忍热，若不精勤道业虚消信施。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2128",
+    "question": "《禅宗决疑集》中却步复升门的比喻是什么？",
+    "answer": "如贫穷之人闻万里外有珍宝所，往而求之。或行五千而生退还。退之不已蓦然自叹：我若退还枉费前功永受饥寒。翻思此宝人人有分何故自弃？于是奋起坚志又复前进直至宝所。以此比喻学人做工夫不得力时退而复进。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2129",
+    "question": "智彻禅师如何论述执碍的四种表现？",
+    "answer": "于无字上各出异见：执空者谓万法本无何疑之有；执有者谓指有言无无中即有；执断者谓万有皆空何必疑耶；执常者谓真性常存何用著疑。所见偏枯故有此失。若不须用疑得菩提者，除是天生弥勒自然释迦始得。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2130",
+    "question": "《禅宗决疑集》的整体结构是什么？",
+    "answer": "全书十七门加六篇附录。十七门从源湛流清到归源实际，涵盖离尘精进却步复升退堕策励懈怠勉勤执碍决疑失正究竟彻底穷渊指本还真顺息免患上根利器禅林静虑幽居正派祇园圣众觉悟玄宗等。附录为来源孝敬体用双修双林遗戒忏悔法门忆昔出尘复惩懈惰。",
+    "relatedBooks": ["chanzongjueyiji"]
+  },
+  {
+    "id": "faq-2131",
+    "question": "黄龙慧南禅师的“三关”具体是什么？",
+    "answer": "三关是黄龙慧南禅师独创的勘验法门：第一关“人人尽有生缘处，那个是上座生缘处”——问出身来历，破身份执着；第二关“我手何似佛手”——当机问答时伸手，破凡圣分别；第三关“我脚何似驴脚”——垂脚而问，破尊卑相。三十余年示此三问，学者多不凑机。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2132",
+    "question": "三关的旨趣是在答语的对错吗？",
+    "answer": "不在答语对错，而在验人见处。慧南禅师自己说：“已过关者掉臂径去，安知有关吏。从吏问可否，此未透关者也。”已悟的人根本不知道有关存在，如过关后甩臂径行；未悟的人才在关前踌躇，问能不能通过。关不在答，在心。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2133",
+    "question": "生缘关中“水母何曾离得虾”是什么意思？",
+    "answer": "这是慧南禅师自颂生缘关的诗句。水母没有自力行动能力，须依附虾才能移动，看似有来历有依靠，实则无自性。比喻学人虽知有生缘出处，但如水母依赖虾一般，何曾有真实自性？只知日头东升西落这些表象，谁能更吃赵州茶——超越表象直指本心。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2134",
+    "question": "“我手何似佛手”是在比较手相吗？",
+    "answer": "不是比较手相。禅师当机问答正驰锋辩时突然伸手问“我手何似佛手”，是直指心性——佛与众生本无差别，手只是手，何须比较？直下荐取则不动干戈道出，当处超佛越祖。此关破除凡圣分别见。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2135",
+    "question": "“我脚何似驴脚”为什么是最妙的一关？",
+    "answer": "因为佛手尚可以比拟——佛是崇高形象，手是人身肢体，还有可比性。但驴脚更落畜生道，将佛与驴并列，彻底破除尊卑凡圣的一切分别。步步踏着无生法忍，会得则云收日卷万象皆空，方知此道纵横自在。此关将崇高拉至卑下，方是真正平等。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2136",
+    "question": "黄龙慧南禅师“转身一路”是什么意思？",
+    "answer": "禅师开示“行脚人须得转身一路”——不可死于句下，不可困于知解。拟心即差动念即乖，不拟不动土木无殊。若也转得一为无量无量为一，若转不得布袋里老鸦虽活如死。转身非转念头，而是从知解中跳脱出来，活通自在。如布袋里的老鸦，虽活着却和死了一样——有佛性却不得受用。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2137",
+    "question": "“铁牛之机”比喻什么？",
+    "answer": "慧南禅师入院开堂时说“祖师心印状似铁牛之机——去即印住，住即印破。只如不去不住又作么生搭印”。铁牛之机喻祖师心印不可凑泊：动则被印住，静则被印破，动静两亡方是出处。良久云“烟村三月雨，别是一家春”——不在动静两边，春雨自落。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2138",
+    "question": "“自家宝藏”的公案出处是什么？",
+    "answer": "出自马祖与大珠慧海的公案。大珠来参马祖，祖问“尔来作什么”，珠云“来求佛法”。祖云“尔为什么抛家失业，何不回头认取自家宝藏”。珠云“如何是自家宝藏”。祖云“只如今问者是，尔若回头一切具足受用不尽”。慧南禅师举此公案后说：汝等诸人各有自家宝藏，为什么不得其用？只为不回头。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2139",
+    "question": "慧南禅师如何评“有为”与“无为”？",
+    "answer": "禅师上堂举二人：一人朝看华严暮看般若昼夜精勤，一人不参禅不论义把个破席日里睡。问“二人同到黄龙，安下那个即是”。良久云“功德天黑暗女，有智主人二俱不受”。执有为是妄，执无为亦非，有智主人二俱不受方是自在——功德天（有为）与黑暗女（无为）皆不执取。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2140",
+    "question": "“凡圣情尽，体露真常”是什么意思？",
+    "answer": "凡夫与圣人的情执断尽，真常之体自然显露。只要远离虚妄的攀缘，当下即是如如佛。慧南禅师反复举此古语，虽自谦“古人残羹馊饭”，实则直指修行要害——不在多闻博学，但在离妄。此语虽古，能真吃得下的人又有几个？",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2141",
+    "question": "慧南禅师的辞世偈是什么？",
+    "answer": "熙宁二年三月十六日上堂辞众，示偈曰：“得不得传不传，归根得旨复何言，忆得首山曾漏泄，新妇骑驴阿家牵。”至十七日午时端坐示寂。“新妇骑驴阿家牵”喻本来面目不离日用——新媳妇骑驴本该自己骑，却让婆婆牵着走，看似颠倒，实则道在寻常。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2142",
+    "question": "“布袋里老鸦虽活如死”是什么比喻？",
+    "answer": "慧南禅师以此比喻学人若不能转身，虽有佛性却不得受用。布袋里的老鸦，虽然活着却和死了一样——被困在知解的布袋里，透不得荆棘林。禅师以此强调：不可死于无言无念，须从死水里翻出身来，方有活泼自在之用。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2143",
+    "question": "慧南禅师如何看待“教外别行”？",
+    "answer": "禅师上堂云“若言当得，一大藏教岂无问答，为什么道‘教外别行，传上根辈’？若言不当，适来许多问答图个什么”。此事非神通修证之能到，非多闻智慧之所谈，三世诸佛只言自知，一大藏教诠注不及。行脚人当自开眼，勿使后悔。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2144",
+    "question": "“云门一曲二十五”是什么意思？",
+    "answer": "有僧问云门“如何是云门一曲”，云门云“腊月二十五”。慧南禅师举此公案后说“今日正当腊月二十五”，为大众重唱一遍：“云门一曲二十五，不属宫商角徵羽，若人问我曲因由，南山起云北山雨。”此曲不属世间音律，南山起云而北山下雨——因果不二，机用自在。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2145",
+    "question": "慧南禅师如何评庞居士父女公案？",
+    "answer": "庞居士卖笊篱下桥吃扑摔倒，女儿灵照也倒在他旁边。士云“尔作什么”，女云“见爷倒地某甲相扶”。士云“赖是无人见”。慧南颂云：“怜儿不觉笑嗄嗄，却于中路陷泥沙。黄龙老汉当时见，一棒打杀这冤家。”看似亲情相扶，实则泥沙俱下，不如一棒打杀干净。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2146",
+    "question": "“道不假修但莫污染”是慧南禅师的修行观吗？",
+    "answer": "是的。禅师上堂云“道不假修但莫污染，禅不假学贵在息心。心息故心心无虑，不修故步步道场。无虑则无三界可出，不修则无菩提可求”。修行不在添加什么，而在减损——但莫污染即足。心息则无虑，不修则步步道场。此为禅宗“无为”修行之要旨。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2147",
+    "question": "慧南禅师如何以“云水”喻自性？",
+    "answer": "禅师云“高高山上云自卷自舒何亲何疏，深深涧底水遇曲遇直无彼无此。众生日用如云水，云水如然人不尔。若得尔三界轮回何处起”。云水无心人有意——有心即堕轮回，无心即是解脱。云自卷舒无亲疏，水遇曲直无彼此，人若如云水般无心，轮回何处生起？",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2148",
+    "question": "“一踏踏翻四大海，一掴掴倒须弥山”是什么境界？",
+    "answer": "慧南禅师举大珠道“身口意清净是名佛出世”后说：既得个入路又须得个出路。登山须到顶入海须到底——登山不到顶不知宇宙之宽广，入海不到底不知沧溟之浅深。一踏踏翻四大海，一掴掴倒须弥山，撒手到家人不识，雀噪鸦鸣柏树间。这是悟后自在境界——须弥可掴，四海可踏，到家后一切平常。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2149",
+    "question": "慧南禅师如何比较古人与今人的求道方式？",
+    "answer": "禅师云“古人求道内求心，求得心空道自亲。今人求道外求声，寻声逐色转劳神”。古人内求于心，心空则道自亲；今人外逐声色，越求越劳神。一内一外，迷悟立判。禅师以此警策学人：莫向外求，当回光返照。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2150",
+    "question": "“钟楼上念赞床脚下种菜”公案是什么意思？",
+    "answer": "黄檗胜禅师出题“钟楼上念赞床脚下种菜，有人下得语契便往住持”。胜上座云“猛虎当路坐”，慧南遂令他去住黄檗。钟楼念赞是常事，床脚种菜是倒行——常与倒行皆不立，猛虎当路坐则截断众流，直承其位。此公案展现禅宗选人方式：不以资历口舌论，但看一句转机。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2151",
+    "question": "慧南禅师如何开示“一乘法”？",
+    "answer": "禅师云“十方佛土中唯有一乘法。头上是天脚下是地，作么生说个一乘法”。开单展钵岂不是一乘法？拈匙把箸岂不是一乘法？遂拈拄杖云“这个是什么”——若唤作一乘法眉须堕落。日用施为皆是一乘法，但不可执著名相，一旦唤作“一乘法”便眉须堕落。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2152",
+    "question": "“二空理”在慧南禅师处如何开示？",
+    "answer": "禅师云“人空法空内空外空凡空圣空一切法空”。何名法王身？四大五蕴行住坐卧开单展钵僧堂佛殿厨库三门无不是法王身。若能于此荐得，乾坤大地日月星辰穿过尔诸人眼睛，四大海水流入尔诸人鼻孔。以二空理破一切执，以法王身显一切用——空而不空，即相离相。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2153",
+    "question": "慧南禅师如何评“僧家毕竟居山”？",
+    "answer": "云居弘觉大师问“僧家毕竟如何”，答“居山好”。僧云“僧家毕竟于善恶生死逆顺境界其心如山之不动”，觉打一棒云“孤负先圣丧我儿孙”。慧南禅师评云：且作么生道得一句不孤负先圣不丧儿孙？若人道得到处青山无非道场。执如山不动亦是死水，须得活泼泼方不负先圣。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2154",
+    "question": "慧南禅师的法脉传承是怎样的？",
+    "answer": "黄龙慧南（1002—1069）嗣法于石霜楚圆（慈明），楚圆嗣汾阳善昭，善昭嗣首山省念，省念嗣风穴延沼，延沼嗣南院慧颙，为临济正宗传承。慧南门下出晦堂祖心、真净克文、东林常总等，开临济宗黄龙派，与杨岐方会开创的杨岐派并称临济二派。慧南先后住持同安崇胜禅院、归宗寺、筠州黄檗山、黄龙山四地道场。",
+    "relatedBooks": ["huanglonghuinan"]
+  },
+  {
+    "id": "faq-2155",
+    "question": "“功德天黑暗女，有智主人二俱不受”出自哪里？",
+    "answer": "出自《涅槃经》。功德天代表福报，黑暗女代表灾祸，二者形影不离。有智慧的主人知道二者相伴而来，所以二俱不受。慧南禅师以此喻有为与无为——执有为如受功德天，执无为如受黑暗女，有智主人二俱不受方是自在。不在有为无为两边，方是衲僧本分。",
+    "relatedBooks": ["huanglonghuinan"]
   }
 ];
