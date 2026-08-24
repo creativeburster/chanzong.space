@@ -1472,8 +1472,8 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["雪峰义存禅师语录"],
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
-    "relatedPersons": ["yunmen", "deshan-xuanjian"],
-    "relatedBooks": []
+    "relatedPersons": ["yunmen", "deshan-xuanjian", "xuansha-shibei"],
+    "relatedBooks": ["xuanshayulu", "xuanshaguanglu"]
   },
   {
     "id": "deshan-xuanjian",
@@ -1616,19 +1616,22 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "xuansha-shibei",
     "name": "玄沙师备",
-    "title": "雪峰义存弟子 / 法眼宗法脉先导",
-    "era": "唐代 (835-908)",
-    "lifeStory": "师备禅师，福州闽县（今福建福州）人，俗姓谢。少时好垂钓，三十岁忽悟无常，弃钓出家。参雪峰义存，与雪峰名为师徒，实为道友。师住福州玄沙山，以\u201c宗门三种病\u201d接人，明示学人修行中之微细障碍。门下出罗汉桂琛，桂琛出法眼文益，开法眼一宗。师与雪峰齐名，时人谓\u201c雪峰高峻，玄沙绵密\u201d。",
-    "teachings": "玄沙宗风以\u201c三种病\u201d为施设：一者不了根身，二者不了境缘，三者不了心体。明示学人修行中易犯之微细执着，层层拨开，令其直见本来。其教绵密细致，与雪峰之高峻形成互补。",
+    "title": "雪峰义存法嗣 / 法眼宗法脉先导",
+    "era": "五代 (835-908)",
+    "lifeStory": "师备禅师，福州闽县（今福建福州）人，俗姓谢，幼年垂钓南台江，世称\u201c谢三郎\u201d。唐咸通初年届三十，忽慕出尘，弃钓舟投芙蓉山灵训禅师落发，往钟陵开元寺道玄律师处受具足戒。与雪峰义存为法门昆季，一日携囊出岭欲遍参诸方，磕伤脚指，流血痛楚之际豁然有省，叹曰：\u201c是身非有，痛从何来？\u201d遂回雪峰。雪峰问何不遍参，师答：\u201c达摩不来东土，二祖不往西天。\u201d峰然之，屡赞\u201c备头陀再来人也\u201d。后阅《楞严经》发明心地，应机敏捷，与修多罗冥契。光化初，闽王王审知请为安国禅院开山，奏赐紫袈裟、\u201c宗一大师\u201d之号，座下常七百余人。闽王尝请师与雪峰入内论佛心印，师直告\u201c有作之心皆是轮回\u201d，为王授真如十一名目。开平二年（908）示灭，世寿七十四。门下罗汉桂琛传清凉文益，开出法眼一宗。",
+    "teachings": "玄沙宗风绵密，以\u201c辨缁素、破儱侗\u201d为要务：痛斥笼统真如之见，主张明是明、暗是暗，混滥分毫不得。其勘\u201c昭昭灵灵\u201d为认贼为子之识神，示\u201c秘密金刚体\u201d圆成正遍、遍周沙界。接机立\u201c三句纲宗\u201d：第一句自承当、现成具足，第二句回因就果、转位投机，第三句明阴洞阳、慈定之门，与云门三句遥相呼应。又垂\u201c三种病人\u201d之语，勘尽诸方接人手段。",
     "quotes": [
+      "达摩不来东土，二祖不往西天。",
+      "我是钓鱼船上谢三郎。",
+      "尽十方世界是一颗明珠，用会作么？",
       "宗门三种病，不了根身、不了境缘、不了心体。",
-      "尽十方世界是真善知识。"
+      "但是有作之心，皆是轮回。 —答闽王问"
     ],
-    "classics": ["玄沙师备禅师广录"],
-    "relatedConcepts": ["self-nature", "non-duality"],
-    "relatedMethods": [],
-    "relatedPersons": ["xuefeng-yicun", "fayan-wenyi"],
-    "relatedBooks": ["changuancejin"]
+    "classics": ["玄沙师备禅师语录", "玄沙师备禅师广录"],
+    "relatedConcepts": ["self-nature", "non-duality", "xuansha-sanju", "sanzhong-bingren", "mimi-jingangti", "shishen", "chanbing"],
+    "relatedMethods": ["sanju-jieyin"],
+    "relatedPersons": ["xuefeng-yicun", "luohan-guichen", "fayan-wenyi", "wang-shenzhi"],
+    "relatedBooks": ["changuancejin", "xuanshayulu", "xuanshaguanglu"]
   },
   {
     "id": "luohan-guichen",
@@ -1645,7 +1648,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["xuansha-shibei", "fayan-wenyi"],
-    "relatedBooks": ["wenshu", "xixulun", "mazu", "linji", "jingangjing", "yuanjuejing", "lengyanjing", "weimojiejing", "dongshanyulu", "huanwuxinyao", "huanwuyulu"]
+    "relatedBooks": ["wenshu", "xixulun", "mazu", "linji", "jingangjing", "yuanjuejing", "lengyanjing", "weimojiejing", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "xuanshayulu", "xuanshaguanglu"]
   },
   {
     "id": "fenyang-shanzhao",
@@ -3181,6 +3184,103 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["shishuang-chuyuan", "yang-yi-neihan"],
     "relatedBooks": ["shishuangchuyuan"]
   },
+  {
+      "id": "wang-shenzhi",
+      "name": "王审知",
+      "title": "闽王 / 忠懿王 / 禅门护法",
+      "era": "五代 (862-925)",
+      "lifeStory": "王审知，字信通，光州固始（今河南固始）人，五代闽国开国君主。割据福建期间轻徭薄赋、礼贤下士，尤笃信佛法，礼雪峰义存、玄沙师备为国师。光化初请玄沙为安国禅院开山，奏赐紫袈裟及“宗一大师”号。尝请雪峰、玄沙二师入内论佛心印，问造寺修福可得成佛否，玄沙直答“不得成佛，但是有作之心，皆是轮回”，王由是大起信心，立誓受持。《入内论佛心印录》即此王室传法之实录，由内尚书三人隔帐随言录之，为禅宗史上罕见之护法文献。",
+      "teachings": "王审知以帝王之尊为佛法外护：造寺度僧、供养三宝，复能折节问道于禅门宗匠，受“即心是佛、见性成佛”之直指。其护教之功，使雪峰、玄沙一系在闽中大盛，为云门、法眼二宗之开出奠定基础。",
+      "quotes": [
+          "相救生死事大。 —礼二师语",
+          "谁是球上座？ —开堂日识卧龙慧球"
+      ],
+      "classics": [
+          "玄沙师备禅师广录"
+      ],
+      "relatedConcepts": [
+          "jianxing-chengfo"
+      ],
+      "relatedMethods": [],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "xuefeng-yicun"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "sun-jue",
+      "name": "孙觉",
+      "title": "北宋官吏 / 《玄沙广录》编刊者",
+      "era": "北宋 (1028-1090)",
+      "lifeStory": "孙觉，字莘老，高邮（今江苏高邮）人，北宋文学家、官吏，官至右司谏、直集贤院。元丰年间知福州军州事，慕玄沙师备之道，求其语录全编不可得，晚得五六种断缺不完之本，合僧校之，虽未尽具，十已得七八，乃命玄沙僧刻板行世，是为《玄沙广录》宋本之源。苏轼、黄庭坚皆与之交游。此宋本后流入日本，藏下野国大中禅寺，元禄年间重刊回传，玄沙法言赖以不坠。",
+      "teachings": "孙觉序《玄沙广录》云：佛学最为多涂，而禅尤多病；古今禅者微言绪论，有见于笔墨之间，收索殆尽。其编刊之功，在使玄沙宗风昭然于世，续千古之宗风，建不磨之盛典。",
+      "quotes": [
+          "佛学最为多涂，而禅尤多病。",
+          "玄沙备师，名遍四海，为禅者宗。"
+      ],
+      "classics": [
+          "玄沙师备禅师广录"
+      ],
+      "relatedConcepts": [],
+      "relatedMethods": [],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "zhanran-yuancheng",
+      "name": "湛然圆澄",
+      "title": "明末曹洞宗匠 / 云门寺住持",
+      "era": "明 (1561-1626)",
+      "lifeStory": "湛然圆澄，号散木，会稽（今浙江绍兴）人，明代曹洞宗大师，住东越云门寺，传曹洞正宗。天启年间，闽中得山居士林弘衍搜辑玄沙师备法言为《玄沙大师语录》三卷，专人走越请师题词。师撰《玄沙大师语录序》，赞玄沙“远传鹫岭，近接曹溪，为石头之亲孙，作雪峰之真子，心印列祖，教贯楞严”，并叹近来唱导者师法无凭、谈禅者出世未准，借玄沙之录以振宗风。",
+      "teachings": "湛然圆澄承曹洞正脉，以玄沙语录之刊行彰显石头宗风。其序点出玄沙悟道因缘——磕著足指处顿悟苦乐无生，当场盘诘时报非干西土——明宗乘有据、血脉相传，痛斥自称悟道、妄意为人之辈。",
+      "quotes": [
+          "磕著足指处，顿悟苦乐无生；当场盘诘时，报道非干西土。",
+          "悟必繇缘，录亦非字。"
+      ],
+      "classics": [
+          "玄沙师备禅师语录"
+      ],
+      "relatedConcepts": [],
+      "relatedMethods": [],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "lin-hongyan"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "lin-hongyan",
+      "name": "林弘衍",
+      "title": "明末居士 / 《玄沙语录》编次者",
+      "era": "明末 (约17世纪)",
+      "lifeStory": "林弘衍，号得山居士，闽中（今福建）人，明末在家居士。初知学佛时便喜宗门下语，而喜玄沙尤甚。因宋代玄沙广录中土久佚，师山居之暇搜览《景德传灯录》《五灯会元》等诸集，汇玄沙法言为三卷，并请云门寺湛然圆澄禅师序而行之，是为《玄沙大师语录》通行本。又重修玄沙窣堵坡遗址，使七百年古刹法言重光。",
+      "teachings": "林弘衍以居士身搜集编次玄沙语录，其《刻玄沙语录缘起》云：玄沙之语如涂毒鼓，一挝闻者皆丧；莫道钓鱼人已寂，只今说法语如雷。把臂古人，扶竖今时——其编录之功，使玄沙门风机括再现于末世。",
+      "quotes": [
+          "莫道钓鱼人已寂，只今说法语如雷。",
+          "一字一句，涂毒鼓声也。"
+      ],
+      "classics": [
+          "玄沙师备禅师语录"
+      ],
+      "relatedConcepts": [],
+      "relatedMethods": [],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "zhanran-yuancheng"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -4415,7 +4515,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《博山参禅警语》《禅林宝训》《玄沙师备禅师广录》",
     "relatedConcepts": ["tou-xin-wei-si", "self-nature", "mozhao-chan-concept"],
     "relatedPersons": ["xuansha-shibei", "boshan-yuanlai", "dahui-zonggao"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedBooks": ["boshan-canchanjingyu", "xuanshayulu", "xuanshaguanglu"]
   },
   {
     "id": "wu-nian",
@@ -6742,7 +6842,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "jiang-xin-dai-wu",    "title": "将心待悟",    "category": "禅病辨析",    "summary": "将心待悟，即做工夫时心存一念\u201c等待开悟\u201d——如人行路，住在路上待到家，终不到家，只须行到家。博山云：若将心待悟，终不悟，只须逼拶令悟。悟如莲花忽开、如大梦忽觉——梦不待觉，睡熟时自觉；花不待开，时节到自开；悟不待悟，因缘会合时自悟。期待之心本身即是别念、即是妄念，恰恰障蔽悟门。此病最微细：连\u201c求开悟\u201d的念头也是偷心一种。",    "etymology": "将心（起心动念）+ 待（期待等待）+ 悟（开悟），以待悟之心障真悟之病。",    "quotes": ["做工夫不得将心待悟！如人行路，住在路上待到家终不到家，只须行到家。 —博山元来《参禅警语》"],    "guidance": "参禅只管提起话头、发起疑情，悟不悟时节到来自然成就，不容拟议安排。此理通于万事：种树但管浇水松土，开花自有时节；日日盯着\u201c怎么还不开花\u201d，反添焦虑障成长。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",    "relatedConcepts": ["chanbing", "yiqing", "tou-xin-wei-si"],    "relatedPersons": ["boshan-yuanlai"],    "relatedBooks": ["boshan-canchanjingyu"]
   },
   {
-    "id": "shishen",    "title": "识神",    "category": "禅病辨析",    "summary": "识神，即妄认能知能觉、能动能静的分别意识为自性真心。博山云：做工夫最怕认识神为佛事，或扬眉瞬目、摇头转脑，将谓有多少奇特——若把识神当事，做外道奴也不得。玄沙勘云：认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？识神者，生死根、妄想缘气，认贼为子，万劫轮回。禅宗参\u201c念佛是谁\u201d，正是要于此能知觉者背后，勘破识神巢穴。",    "etymology": "识（八识分别）+ 神（灵知神识），妄认灵知意识为真宰之谓。",    "quotes": ["做工夫最怕认识神为佛事……若把识神当事，做外道奴也不得。 —博山元来《参禅警语》", "汝若认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？ —玄沙师备"],    "guidance": "清醒时了了分明的灵知并非本来面目——熟睡时它何在？生死到来它何在？用功须向\u201c能知觉者\u201d未生前究，莫在知觉门头认主宰。今人谈\u201c觉察\u201d\u201c觉知\u201d亦当辨此：觉察是工具，非主人。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语、卷下·评古德垂示警语",    "relatedConcepts": ["chanbing", "non-mind"],    "relatedPersons": ["boshan-yuanlai", "xuansha-shibei"],    "relatedBooks": ["boshan-canchanjingyu"]
+    "id": "shishen",    "title": "识神",    "category": "禅病辨析",    "summary": "识神，即妄认能知能觉、能动能静的分别意识为自性真心。博山云：做工夫最怕认识神为佛事，或扬眉瞬目、摇头转脑，将谓有多少奇特——若把识神当事，做外道奴也不得。玄沙勘云：认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？识神者，生死根、妄想缘气，认贼为子，万劫轮回。禅宗参\u201c念佛是谁\u201d，正是要于此能知觉者背后，勘破识神巢穴。",    "etymology": "识（八识分别）+ 神（灵知神识），妄认灵知意识为真宰之谓。",    "quotes": ["做工夫最怕认识神为佛事……若把识神当事，做外道奴也不得。 —博山元来《参禅警语》", "汝若认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？ —玄沙师备"],    "guidance": "清醒时了了分明的灵知并非本来面目——熟睡时它何在？生死到来它何在？用功须向\u201c能知觉者\u201d未生前究，莫在知觉门头认主宰。今人谈\u201c觉察\u201d\u201c觉知\u201d亦当辨此：觉察是工具，非主人。",    "classicRef": "《博山参禅警语》卷上·示初心做工夫警语、卷下·评古德垂示警语",    "relatedConcepts": ["chanbing", "non-mind"],    "relatedPersons": ["boshan-yuanlai", "xuansha-shibei"],    "relatedBooks": ["boshan-canchanjingyu", "xuanshayulu"]
   },
   {
     "id": "fashen-bing",    "title": "法身病",    "category": "禅病辨析",    "summary": "法身病，即疑情发得起、与法身理相应之后所患的微细之病。博山云：法身中病最多，只须大病一场，始识得病根。坐在法身量边不肯撒手、耽着相应受用、生度量心、沉沉寂寂休去歇去、滞在法身边、面前隐隐似有个物、领略解路不肯求进、淡淡没滋味自谓究竟、见光见华作圣解、放下疑情不肯参究——通身是病，非禅也。云门亦立法身两般病：得法身为法执忘、己见犹坐在法身边是病；直饶透得法身去，仔细点检将来有甚么气息，亦是病。",    "etymology": "法身（真如理体）+ 病（微细执着），与理相应后所著之深细禅病。",    "quotes": ["法身中病最多，只须大病一场，始识得病根。 —博山元来《参禅警语》", "假饶尽大地人参禅，未有一个不受法身病者。 —博山元来"],    "guidance": "悟非终点，法身边亦须转身。凡有一境可住、一得可守——光皎皎地、净裸裸地、隐隐有物——皆是病。博山示人：既与理相应，须向万仞岩头翻筋斗打将下来，方是大人用心。修行人得少为足、认光影门头，宜深警此病。",    "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",    "relatedConcepts": ["chanbing", "zhuan-shen-tu-qi"],    "relatedPersons": ["boshan-yuanlai", "yunmen"],    "relatedBooks": ["boshan-canchanjingyu"]
@@ -7597,6 +7697,127 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["shiniu"],
     "relatedPersons": ["shishuang-chuyuan"],
     "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+      "id": "xuansha-sanju",
+      "title": "玄沙三句",
+      "category": "纲宗",
+      "summary": "玄沙师备所立接人纲宗三句。第一句“且自承当，现成具足”——尽十方世界只是仁者心王所为，全成不动智，只欠自承当，唤作开方便门，然但成平等法，明前不明后，死在句下未有自由分；第二句“回因就果，转位投机”——不著平常一如之理，生杀自在，纵夺随宜，出生入死，顿超三界之佛性，二理双明，妙用现前；第三句“知有大智性相之本，通其过量之见”——明阴洞阳，廓周法界，大用现前，应化无方，唤作慈定之门。三句与铁铜银金四轮、十信十地五位六位相配，自成严密教学体系，与云门三句遥相呼应。",
+      "etymology": "玄沙（山名，师备初住之处）+ 三句（纲宗三句），《语录》卷上、《广录》卷中德彦五问详释。",
+      "quotes": [
+          "第一句且自承当，现成具足。 —玄沙师备",
+          "第三句，知有大智性相之本，通其过量之见。 —玄沙师备"
+      ],
+      "guidance": "参三句者须辨：第一句是信位承当，莫死于此；第二句须转出，于生杀纵夺中得自在；第三句方是慈定大用。若于第一句即谓了毕，正是玄沙所斥“死在句下，未有自由分”。",
+      "classicRef": "《玄沙师备禅师语录》卷上 / 《玄沙师备禅师广录》卷中",
+      "relatedConcepts": [
+          "self-nature",
+          "instant-enlightenment"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "sanzhong-bingren",
+      "title": "三种病人",
+      "category": "宗门施设",
+      "summary": "玄沙垂语：诸方老宿尽道接物利生，只如三种病人，汝作么生接？患盲者，拈槌竖拂他又不见；患聋者，语言三昧他又不闻；患痖者，教伊说又说不得。若接不得，佛法无灵验。此一勘破尽诸方接人手段之窠窟：一切施设皆对有眼耳口者而设，若学人真到无见闻觉知处，师家更有何法可施？云门以拄杖挃僧、唤前喝破，一僧当下有省；地藏（桂琛）则以“桂琛现有眼耳口，和尚作么生接”翻转话头。此语遂成禅门千古著名之勘验。",
+      "etymology": "三种（盲、聋、痖）+ 病人（不具足见闻言说之机者），玄沙借以勘验诸方“接物利生”之实。",
+      "quotes": [
+          "若接不得，佛法无灵验。 —玄沙师备",
+          "三种病人，一种法门。 —佛鉴勤颂"
+      ],
+      "guidance": "参此语不可于盲聋哑三字上作道理会。玄沙之意：佛法灵验不在施设之多，而在当人自肯。若向“如何接”处起思忖，正落玄沙彀中。云门一挃一唤，全在当下用过即休。",
+      "classicRef": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "chanbing",
+          "beyond-words"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "yunmen",
+          "luohan-guichen"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "mimi-jingangti",
+      "title": "秘密金刚体",
+      "category": "心性根源",
+      "summary": "玄沙开示：仁者欲出五蕴身田主宰，但识取汝秘密金刚体。古人道：圆成正遍，遍周沙界。如日体周遍，世间人养身活命种种心行莫非承日光成立；欲识金刚体亦复如是——山河大地、十方国土、色空明暗及汝身心，乃至诸佛成道、接物利生，莫非尽承此圆成威光所现。此体无凡夫诸佛之别，当人既有如是奇特当阳出身处，何却随他向五蕴身田中、鬼趣里作活计？玄沙立此以破“昭昭灵灵”之识神见：灵知依前尘而有，瞌睡时便不昭昭，同于龟毛兔角；金刚体则不随明暗生灭，方为真实。",
+      "etymology": "秘密（非思量可及，不从人得）+ 金刚（坚固不坏、能破一切）+ 体（本体），出自《玄沙师备禅师语录》卷上上堂法语。",
+      "quotes": [
+          "但识取汝秘密金刚体。圆成正遍，遍周沙界。 —玄沙师备",
+          "山河大地、十方国土、色空明暗及汝身心，莫非尽承汝圆成威光所现。 —玄沙师备"
+      ],
+      "guidance": "识金刚体之要，在于不向能知能觉上认取。日体之喻最切：万物承日光而成，日体却无一物之形；行人但于山河大地、见闻觉知处回光——能现者是谁？莫认昭昭灵灵之光影门头为真。",
+      "classicRef": "《玄沙师备禅师语录》卷上",
+      "relatedConcepts": [
+          "buddha-nature",
+          "self-nature",
+          "shishen"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "yongchu-buhuanji",
+      "title": "用处不换机",
+      "category": "宗门旨要",
+      "summary": "玄沙屡屡提点之语：“我比来向汝道，用处不换机。”机者，当人之本位、本体之发机；用处不换机，即于一切对答施用、见闻觉知处不移动本位，不被语脉转却，不逐句下寻讨。荔枝公案中，师拈荔枝问众“这个荔枝得恁么红、得恁么赤”，诸人下语尽成对话，师斥：“我比来向汝道用处不换机，因什么只管对话？有什么交涉？”盖学人问来答去，皆逐境生解、随语流失；能不换机者，用处即是本体，酬酢万变不离其宗。",
+      "etymology": "用处（日用施为、对答酬酢）+ 不换机（不移动本位发机），出自《玄沙师备禅师语录》卷中荔枝公案。",
+      "quotes": [
+          "我比来向汝道用处不换机，因什么只管对话？ —玄沙师备",
+          "学者当用处不换机。 —《智证传》引玄沙语"
+      ],
+      "guidance": "日用功夫但验一处：对答之间、应事之际，是逐他语句转，还是自住本位？一念逐境，机已换却；念念不换，用处即是。参学者当于对话生解处猛省。",
+      "classicRef": "《玄沙师备禅师语录》卷中 / 《玄沙师备禅师广录》卷上",
+      "relatedConcepts": [
+          "self-nature",
+          "no-abiding"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "bian-zisu",
+      "title": "辨别缁素",
+      "category": "禅法",
+      "summary": "缁素即黑白、邪正、是非之辨。玄沙教学之要务，在破“儱侗真如”之笼统禅——若但道“总说了也，人人具足，人人成现，尽十方世界只是我去处，更无青黄赤白明暗色空”，师斥为“儱侗中又更儱侗，不辨缁素，不识吉凶”，只成笼统、无有是处。其正宗眼：明是明，暗是暗，人是人，天是天，修罗是修罗，随相区分，混滥分毫也不得；而一一法中又全体解脱，自由自在。故曰“直须辨缁素，莫与么儱侗”。破儱侗之方，在附近明眼道伴，决择人我，破却笼统，明取心要。",
+      "etymology": "缁（黑衣，僧服之色）+ 素（白衣，俗服之色），本谓僧俗之别，宗门借以喻邪正是非之分明。",
+      "quotes": [
+          "直须辨缁素，莫与么儱侗，无有是处。 —玄沙师备",
+          "唤青作黄得么？ —玄沙答“如何是辩黑白”"
+      ],
+      "guidance": "今人学禅最易堕笼统：“都是空”“一切平等”“不要分别”——玄沙谓之儱侗。真平等不妨坏假名而说：青黄赤白一一分明，是非好恶丝毫不混；于分毫不得混滥处，见一一皆得解脱。用功须就明眼人决择，不可自是没头民主张。",
+      "classicRef": "《玄沙师备禅师广录》卷上",
+      "relatedConcepts": [
+          "chanbing",
+          "non-duality"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu",
+          "xuanshayulu"
+      ]
   }
 ];
 
@@ -8866,6 +9087,34 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["jingang-yanjing", "banghe"],
     "relatedPersons": ["shishuang-chuyuan"],
     "relatedBooks": ["shishuangchuyuan"]
+  },
+  {
+      "id": "sanju-jieyin",
+      "title": "三句接引",
+      "summary": "玄沙以三句纲宗接引学人之法门：第一句开方便门，令学人信有真常流注、自承当现成具足；第二句转位投机，夺下平等平实之见，于生杀纵夺中得大自在；第三句慈定之门，明阴洞阳，大用现前，广利群品。三句非理论阶位，乃应机之施设——看学人死于何句，即向何处拔之。",
+      "origin": "出自《玄沙师备禅师语录》卷上师疾大法难举、罕遇上根所示纲宗三句，《广录》卷中德彦伸五问中师逐句详释并配颂。",
+      "steps": [
+          "第一句：且自承当，现成具足——信有一分真常流注，亘古亘今，未有不是",
+          "第二句：回因就果，转位投机——不著平常一如之理，生杀自在，纵夺随宜",
+          "第三句：知有大智性相之本——明阴洞阳，廓周法界，入慈定门，大用现前"
+      ],
+      "pitfalls": [
+          "死于第一句下：但成平等法，明前不明后，未有自由分",
+          "执平等一如为究竟：落在平实分证法身之量，未有出格之句",
+          "不辨缁素、儱侗真如：笼统说个“人人具足”，正是玄沙所斥"
+      ],
+      "classicRef": "《玄沙师备禅师语录》卷上 / 《玄沙师备禅师广录》卷中",
+      "relatedConcepts": [
+          "xuansha-sanju",
+          "instant-enlightenment"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
   }
 ];
 
@@ -13262,6 +13511,165 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["shishuang-chuyuan"],
     "relatedBooks": ["shishuangchuyuan"]
   },
+  {
+      "id": "koan-374",
+      "question": "患盲、患聋、患痖三种病人，如何接得？",
+      "answer": "（云门代玄沙接）以拄杖挃之曰：你不是患盲么？复唤近前曰：你不是患聋么？曰：会么？曰：不会。门曰：你不是患痖么？其僧当下有省。",
+      "context": "玄沙垂语云：诸方老宿尽道接物利生，只如三种病人，汝作么生接？患盲者，拈槌竖拂他又不见；患聋者，语言三昧他又不闻；患痖者，教伊说又说不得。若接不得，佛法无灵验。时有僧出问：三种病人还许学人商量否？师曰：许，汝作么生商量？其僧珍重出。师曰：不是，不是。地藏（桂琛）曰：桂琛现有眼耳口，和尚作么生接？师曰：惭愧。便归方丈。后僧请益云门，云门以拄杖挃之，僧于是有省。",
+      "interpretation": "玄沙此语勘尽诸方：一切接人施设皆对有眼耳口者而设，若学人真到无见闻觉知处，师家更以何法接之？云门一挃一唤，不从见闻言说教入，全在当下用过即休——盲者能觉拄杖，聋者能应呼唤，痖者自不会而省，正显佛法灵验不假根尘。地藏“现有眼耳口”一句又翻一层：接与不接，皆就当人本分，岂在施设？",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "sanzhong-bingren",
+          "chanbing"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "yunmen",
+          "luohan-guichen"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-375",
+      "question": "忽遇明镜来时如何？",
+      "answer": "百杂碎。",
+      "context": "雪峰示众：我这里如一面古镜相似，胡来胡现，汉来汉现。时有僧问：忽遇明镜来时如何？峰云：胡汉俱隐。僧举似玄沙，师云：我不与么道。僧问：忽遇明镜来时如何？师云：百杂碎。",
+      "interpretation": "雪峰以古镜喻心：物来则现，物去不留，胡汉俱隐处犹有镜在。玄沙“百杂碎”更进一步——能照之镜亦打成一片，能所俱泯，纤尘不立。镜未碎时，尚有照与不照之功夫；百杂碎后，方是玄沙绵密宗风之彻底处。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师广录》卷上",
+      "relatedConcepts": [
+          "emptiness",
+          "no-abiding"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "xuefeng-yicun"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "koan-376",
+      "question": "承和尚有言：我与释迦同参。未审参见什么人？",
+      "answer": "钓鱼船上谢三郎。",
+      "context": "玄沙上堂云：我与释迦同参。有僧问：承和尚有言，我与释迦同参，未审参见什么人？师云：钓鱼船上谢三郎。师俗姓谢，少时垂钓南台江，世称谢三郎。",
+      "interpretation": "僧问参见什么人，拟觅圣名、寻高位；玄沙答以未出家时的本色——钓鱼船上谢三郎。佛与祖不从外来，同参者即是当人自己：认得谢三郎，方识释迦；离却自家面目，释迦亦是路人。此语与“达摩不来东土”同一鼻孔，是玄沙直指之本色。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师广录》卷下",
+      "relatedConcepts": [
+          "self-nature",
+          "buddha-nature"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu",
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-377",
+      "question": "（天龙指虎曰）和尚，虎！",
+      "answer": "是汝虎。",
+      "context": "玄沙普请往海坑砍柴，见一虎，天龙曰：和尚，虎。师曰：是汝虎。归院后，天龙问：适来见虎云是汝，未审尊意如何？师曰：娑婆世界有四种极重事，若人透得，不妨出得阴界。",
+      "interpretation": "见虎而怖者，认虎为外境、认身为实我，能所对立，恐怖丛生。玄沙一句“是汝虎”翻转主客——所见之虎，即是能见之心，心外无虎，虎外无心。识得“是汝”，则虎亦不妨为法身全体现；识不得，则步步凶险。四种极重事透得，方出得阴界。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "self-nature",
+          "non-duality"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-378",
+      "question": "如何是无缝塔？",
+      "answer": "这一缝大小？",
+      "context": "有僧问玄沙：如何是无缝塔？师曰：这一缝大小？又，师侍雪峰游山，峰指面前地曰：这一片地好造个无缝塔。师曰：高多少？峰顾视上下。师曰：人天福报即不无，和尚若是灵山授记，未梦见在。峰曰：汝又作么生？师曰：七尺八尺。",
+      "interpretation": "无缝塔本喻法身无形、无迹可寻。僧一问，头上已安“无缝”之名、心中有塔之相——玄沙不与其讲无缝，反问“这一缝大小”，当下令其见缝：才起念处，缝已宛然。游山机缘中，师答“七尺八尺”，更不向无形无相上描画，全体作用即是塔身。无缝不在无迹处，在当人不存塔相见处。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "emptiness",
+          "no-abiding"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "xuefeng-yicun"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-379",
+      "question": "玄沙遣僧送书上雪峰，开缄唯见白纸三幅，意旨如何？",
+      "answer": "孟春犹寒，也不解道。",
+      "context": "玄沙遣僧送书上雪峰，峰开缄，见白纸三幅，问僧：会么？曰：不会。峰云：不见道君子千里同风？僧回举似师，师曰：山头老汉蹉过也不知。曰：和尚如何？师曰：孟春犹寒，也不解道。",
+      "interpretation": "三幅白纸，不着一字，玄沙之本分家书也。雪峰以“君子千里同风”注解之，虽是好语，已落第二头——把无字又翻成有义，故玄沙道其“蹉过”。师自云“孟春犹寒”，更不解释白纸，就地寒暄，全体现成：纸自纸、寒自寒，何处不是家书？言语道断处，正好吃饭添衣。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "beyond-words",
+          "no-abiding"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "xuefeng-yicun"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-380",
+      "question": "此事如一片田地，四至界分结契卖与诸人了，还卖得尽么？",
+      "answer": "只有中心树子犹属老僧在。",
+      "context": "玄沙示众云：若论此事，喻一片田地，四至界分，结契卖与诸人了也，只有中心树子犹属老僧在。",
+      "interpretation": "田地喻本分心地，四至界分皆可分付与人——公案、言句、法门，师家尽皆说破；唯有中心一树，不卖——人人自有一段大事，非师所能代、非言所能传，须当人自肯自证始得。玄沙此语极老婆心切：该说的都说了，剩下一处，要你自去。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师语录》卷中",
+      "relatedConcepts": [
+          "self-nature"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei"
+      ],
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "koan-381",
+      "question": "朕今造寺修福、布施度僧，如此还得成佛否？",
+      "answer": "不得成佛。但是有作之心，皆是轮回。",
+      "context": "闽王王审知请雪峰、玄沙入内论佛心印，问：朕今造寺、修福、布施、度僧，诸恶莫作，众善奉行，如此去还得成佛否？玄沙云：不得成佛，但是有作之心，皆是轮回。王云：得何果报？师云：得生天报，得福寿报。王云：究竟如何？师云：福尽即堕。",
+      "interpretation": "玄沙对帝王直言不讳：有为功德感人天福报，福尽还堕，不出轮回；成佛惟在见性，非造作可得。此与达摩答梁武帝“并无功德”同一宗旨。师复为王授真如十一名目——佛性、真如、灵台、大圆镜智、如来藏等皆一心之假名——令其识取实相，自然成佛。王室传法之难，难在不徇人情，玄沙当之。",
+      "master": "玄沙师备",
+      "source": "《玄沙师备禅师广录》卷下《王大王请雪峰与玄沙入内论佛心印录》",
+      "relatedConcepts": [
+          "jianxing-chengfo",
+          "buddha-nature"
+      ],
+      "relatedPersons": [
+          "xuansha-shibei",
+          "wang-shenzhi",
+          "xuefeng-yicun"
+      ],
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ]
+  }
 ];
 
 export const ZEN_FAQS: FAQItem[] = [
@@ -26011,5 +26419,94 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "楚圆在福严上堂云：心若无事万法不生，意绝玄微纤尘何立。向上一路千圣不传，学者劳形如猿捉影。山僧即不然，向上一路千圣不然，学者劳形如猿捉影。以双遣方式表达向上一路不可说、不可传。",
     "relatedBooks": ["shishuangchuyuan"]
   },
+  {
+      "id": "faq-2222",
+      "question": "玄沙师备是谁？他与法眼宗有什么关系？",
+      "answer": "玄沙师备（835-908），福州闽县人，俗姓谢，少为渔父，世称“谢三郎”。三十岁弃钓出家，嗣法雪峰义存，与雪峰名为师徒、实为道友。闽王王审知请为安国禅院开山，赐“宗一大师”号。其门下罗汉桂琛传清凉文益，文益开出法眼宗——故玄沙为法眼宗法脉之先导，雪峰一系遂为云门、法眼两宗共同源头。",
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "faq-2223",
+      "question": "什么是“玄沙三句”？",
+      "answer": "玄沙师备所立接人纲宗三句：第一句“且自承当，现成具足”——信有真常流注，开方便门，但成平等法，明前不明后；第二句“回因就果，转位投机”——不著平常一如之理，生杀自在，顿超三界之佛性；第三句“知有大智性相之本”——明阴洞阳，廓周法界，入慈定之门，大用现前。三句与四轮五位相配，为玄沙绵密宗风之完整体系。",
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "faq-2224",
+      "question": "“三种病人”公案讲什么？",
+      "answer": "玄沙垂语：诸方老宿尽道接物利生，患盲者拈槌竖拂他不见，患聋者语言三昧他不闻，患痖者教他说又说不得——此三种病人如何接得？若接不得，佛法无灵验。此语勘尽一切接人手段：施设皆对有眼耳口者而设。后云门以拄杖挃僧、唤前喝破，一僧当下有省；地藏桂琛则以“桂琛现有眼耳口”翻转话头。",
+      "relatedBooks": [
+          "xuanshayulu"
+      ],
+      "relatedQa": "koan-374"
+  },
+  {
+      "id": "faq-2225",
+      "question": "什么是玄沙说的“秘密金刚体”？与“昭昭灵灵”有何区别？",
+      "answer": "玄沙开示：欲出五蕴身田主宰，但识取汝秘密金刚体——圆成正遍、遍周沙界，山河大地乃至诸佛成道，莫非承其圆成威光所现，如日体周遍而万物承日光成立。而“昭昭灵灵”是能知能觉的灵识，依前尘色声而有，瞌睡时便不昭昭，同于龟毛兔角，认它为真即认贼为子。金刚体不随明暗生灭，灵知是妄想缘气——一为真主人，一为识神光影，不可不辨。",
+      "relatedBooks": [
+          "xuanshayulu"
+      ]
+  },
+  {
+      "id": "faq-2226",
+      "question": "“用处不换机”是什么意思？",
+      "answer": "机者，当人之本位、本体之发机。用处不换机，即于一切对答施用、见闻觉知处不移动本位，不被语脉转却。玄沙于荔枝公案中斥众：“我比来向汝道用处不换机，因什么只管对话？有什么交涉？”学人问来答去皆逐境生解，能不换机者，用处即是本体，酬酢万变不离其宗。",
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "faq-2227",
+      "question": "玄沙答雪峰“达摩不来东土，二祖不往西天”是什么意思？",
+      "answer": "雪峰劝玄沙出游诸方参访，师答：达摩不来东土，二祖不往西天。意谓佛法不从外得、不在他方——初祖未来，自性不曾欠少；二祖不往，大道何处不通？踏破草鞋不如当下承当。雪峰深然之，赞“备头陀再来人也”。",
+      "relatedBooks": [
+          "xuanshayulu",
+          "xuanshaguanglu"
+      ]
+  },
+  {
+      "id": "faq-2228",
+      "question": "“钓鱼船上谢三郎”有什么深意？",
+      "answer": "玄沙上堂云“我与释迦同参”，僧问参见什么人，师答“钓鱼船上谢三郎”——师俗姓谢，少时垂钓南台江，人称谢三郎。僧拟觅圣名高位，师答以未出家时本色：同参者即是当人自己，认得谢三郎方识释迦；离却自家面目，释迦亦是路人。",
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ],
+      "relatedQa": "koan-376"
+  },
+  {
+      "id": "faq-2229",
+      "question": "“无缝塔”公案如何理解？",
+      "answer": "无缝塔本喻法身无形、无迹可寻。僧问玄沙“如何是无缝塔”，师反问“这一缝大小”——才起念问处，缝已宛然。又雪峰指地“好造个无缝塔”，师问“高多少”，峰顾视上下，师曰“人天福报即不无，灵山授记未梦见在”；峰反问，师曰“七尺八尺”——不向无形无相上描画，全体作用即是塔身。",
+      "relatedBooks": [
+          "xuanshayulu"
+      ],
+      "relatedQa": "koan-378"
+  },
+  {
+      "id": "faq-2230",
+      "question": "闽王王审知请玄沙、雪峰入宫论佛心印是怎么回事？",
+      "answer": "《王大王请雪峰与玄沙入内论佛心印录》载：闽王王审知请二师入宫，问诸佛达摩所传秘密心印。王问造寺修福、布施度僧还得成佛否，玄沙直答“不得成佛，但是有作之心，皆是轮回”，福尽即堕；复为王授真如十一名目——佛性、真如、灵台、大圆镜智、如来藏等皆一心之假名。王大起信心，立誓受持。此录由内尚书三人隔帐随言录之，为禅宗史上罕见的王室传法实录。",
+      "relatedBooks": [
+          "xuanshaguanglu"
+      ],
+      "relatedQa": "koan-381"
+  },
+  {
+      "id": "faq-2231",
+      "question": "玄沙为什么反复强调“辨缁素”？",
+      "answer": "缁素即黑白、邪正、是非之辨。玄沙痛斥“儱侗真如”之笼统禅：若但道“人人具足、更无青黄赤白明暗色空”，正是“儱侗中又更儱侗，不辨缁素，不识吉凶”。其正宗眼：明是明，暗是暗，人是人，天是天，混滥分毫不得；而一一法中又全体解脱。破儱侗之方，在附近明眼道伴，决择人我，明取心要。",
+      "relatedBooks": [
+          "xuanshaguanglu",
+          "xuanshayulu"
+      ]
+  }
 
 ];
