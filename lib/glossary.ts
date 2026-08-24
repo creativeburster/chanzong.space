@@ -243,6 +243,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '声闻', pinyin: 'shēng wén', meaning: '听闻佛法而悟道者，修四谛法' },
     { char: '法性', pinyin: 'fǎ xìng', meaning: '万法的本性，即空性、真如' },
     { char: '恒沙', pinyin: 'héng shā', meaning: '恒河沙，比喻数量极多' },
+    { char: '弋猎', pinyin: 'yì liè', meaning: '以弓箭射猎' },
+    { char: '摑', pinyin: 'guō', meaning: '用巴掌打、掴' },
+    { char: '祗对', pinyin: 'zhī duì', meaning: '应对、对答' },
+    { char: '伎儿', pinyin: 'jì ér', meaning: '表演技艺的人' },
+    { char: '篾', pinyin: 'miè', meaning: '竹篾，劈成细条的竹片' },
+    { char: '蹋', pinyin: 'tà', meaning: '同踏，踩' },
   ],
   baizhang: [
     { char: '怀海', pinyin: 'huái hǎi', meaning: '百丈禅师名，马祖道一的法嗣' },
