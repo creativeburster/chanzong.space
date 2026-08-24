@@ -3040,6 +3040,77 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["zhiche"],
     "relatedBooks": ["chanzongjueyiji"]
   }
+,
+  {
+    "id": "zhuxi-zhunan",
+    "name": "朱熹",
+    "title": "晦庵 / 宋代理学家",
+    "era": "宋 (1130-1200)",
+    "lifeStory": "字元晦，号晦庵，徽州婺源人。宋代理学集大成者，编著四书章句集注。早年从刘屏山游，屏山搜其箧惟有大慧禅师语录。后遍谒禅老，与吕东莱张南轩同问道于大慧禅师。致书开善谦禅师参狗子佛性话头。于竹林小轩诵佛经作禅诗。然其著书立说泛用佛理改头换面，却反行排佛，空谷直指其为心病。",
+    "teachings": "泛用佛经禅语著书立说，注四书皆用佛法。所用量子如虚灵不昧、真实无妄、一旦豁然贯通等皆出佛经禅语。然密设墙壍排佛，令后学不看佛书。",
+    "quotes": ["端居独无事聊披释氏书暂息尘累牵超然与道俱", "把这一念提撕狗子话不要商量勇猛直前一刀两段"],
+    "classics": ["shangzhibian"],
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing", "dao-xue-yuanliu"],
+    "relatedMethods": ["shangzhi-bianzheng"],
+    "relatedPersons": ["konggu-jinglong", "dahui-zonggao", "zhou-dunyi", "cheng-hao", "cheng-yi"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "zhou-dunyi",
+    "name": "周敦颐",
+    "title": "濂溪 / 北宋道学开山",
+    "era": "宋 (1017-1073)",
+    "lifeStory": "字茂叔，号濂溪，道州营道人。北宋道学开山祖师。初扣黄龙慧南禅师教外别传之旨，南谕曰只消向你自家屋里打点。一日扣问佛印元禅师曰毕竟以何为道，元曰满目青山一任看，濂脱然有省。闻东林总禅师得竹林寿涯禅师麻衣道者二师心传易学穷神极性，由是叩之，广东林之语而为太极图说。穆修授以太极图。",
+    "teachings": "太极图说、通书。道学实出于禅宗——得太极图之旨与性理之学于东林总禅师。教人寻仲尼颜子所乐何事。",
+    "quotes": ["满目青山一任看", "性体冲漠惟理而已何疑耶"],
+    "classics": ["shangzhibian"],
+    "relatedConcepts": ["dao-xue-yuanliu", "taiji-tu", "shangzhi-hujiao"],
+    "relatedMethods": ["shangzhi-bianzheng"],
+    "relatedPersons": ["konggu-jinglong", "huanglong-huinan", "fo-yin-yuan", "donglin-zong", "zhuxi-zhunan", "cheng-hao", "cheng-yi"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "cheng-hao",
+    "name": "程颢",
+    "title": "明道先生 / 北宋理学家",
+    "era": "宋 (1032-1085)",
+    "lifeStory": "字伯淳，号明道，洛阳人。与弟程颐同受学于濂溪。深味于华严合论自谓有所心融意会。以亡母寿安院君恩辰往西京长庆寺修冥福，见众僧威仪济济乃叹曰三代礼乐尽在是矣。出入释老几十年。",
+    "teachings": "以识仁为宗旨，谓学者须先识仁。其学多得于佛学，尤深于华严。",
+    "quotes": ["三代礼乐尽在是矣"],
+    "classics": ["shangzhibian"],
+    "relatedConcepts": ["dao-xue-yuanliu", "shangzhi-hujiao"],
+    "relatedMethods": ["shangzhi-bianzheng"],
+    "relatedPersons": ["konggu-jinglong", "zhou-dunyi", "cheng-yi", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "cheng-yi",
+    "name": "程颐",
+    "title": "伊川先生 / 北宋理学家",
+    "era": "宋 (1033-1107)",
+    "lifeStory": "字正叔，号伊川，洛阳人。与兄程颢同受学于濂溪。多入大源清禅师之室，嘉泰普灯录载程伊川咸问道于大源禅师。晦堂心禅师尝以心法授之。其作文注书多取佛祖辞意。谓佛学有上达无下学。",
+    "teachings": "以主敬为宗旨。其学多得于禅宗，问道于大源清禅师，受心法于晦堂。",
+    "quotes": ["佛学有上达无下学"],
+    "classics": ["shangzhibian"],
+    "relatedConcepts": ["dao-xue-yuanliu", "shangzhi-hujiao"],
+    "relatedMethods": ["shangzhi-bianzheng"],
+    "relatedPersons": ["konggu-jinglong", "zhou-dunyi", "cheng-hao", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "donglin-zong",
+    "name": "东林总禅师",
+    "title": "东林常总 / 宋代禅僧",
+    "era": "宋 (约11世纪)",
+    "lifeStory": "宋代禅僧，得竹林寿涯禅师麻衣道者二师心传易学穷神极性。周敦颐叩问太极图之深旨，东林为之委曲割论，濂溪广东林之语而为太极图说。谕濂溪曰吾佛谓实际理地即真实无妄，必要著一路实地工夫直至于一旦豁然悟入。",
+    "teachings": "以性即理为应酬，以易学穷神极性传于濂溪。论太极即易也，无形之理即无极也。",
+    "quotes": ["实际理地即真实无妄", "性即理也"],
+    "classics": ["shangzhibian"],
+    "relatedConcepts": ["dao-xue-yuanliu", "taiji-tu", "shangzhi-hujiao"],
+    "relatedMethods": ["shangzhi-bianzheng"],
+    "relatedPersons": ["konggu-jinglong", "zhou-dunyi"],
+    "relatedBooks": ["shangzhibian"]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -7307,7 +7378,86 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["seng-zhao"],
     "relatedBooks": ["zhaolun"]
   },
-
+  {
+    "id": "shangzhi-hujiao",
+    "title": "尚直护教",
+    "category": "护教",
+    "summary": "空谷景隆以尚直编直说无纡，系统驳斥宋儒朱熹排佛言论。直指晦庵暗用佛法著书立说而表面排佛的心病，揭露道学源流实出于禅宗，密设墙壍令后学走不出识不破。以直笔御侮，理正无私不愧天。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangli-hujiao", "paifo-xinbing", "dao-xue-yuanliu"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "paifo-xinbing",
+    "title": "排佛心病",
+    "category": "护教",
+    "summary": "晦庵潜心佛学可谓博矣，其排佛者心病也。若不排佛则后学多看佛书，凡看佛书则见其心病，由是密设墙壍闲住后学令走不出识不破。泛用佛理著书立说欲归功于自己，所以反行排佛设此暗机令人不识。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "dao-xue-yuanliu"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "dao-xue-yuanliu",
+    "title": "道学源流",
+    "category": "护教",
+    "summary": "宋儒道学实出于禅宗。国一禅师传寿涯，寿涯传麻衣，麻衣传陈搏，陈搏传种放，种放传穆修，穆修传李挺之，李传邵康节。穆修又授太极图于周敦颐。濂溪叩问东林总禅师太极图之深旨，广东林之语而为太极图说。程颢深味华严合论，程颐问道于大源清禅师。朱熹亦从大慧禅师参话头。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "taiji-tu", "paifo-xinbing"],
+    "relatedPersons": ["konggu-jinglong", "zhou-dunyi", "cheng-hao", "cheng-yi", "zhuxi-zhunan", "donglin-zong"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "taiji-tu",
+    "title": "太极图传授",
+    "category": "护教",
+    "summary": "太极图非濂溪所作，乃陈搏之学得于麻衣，麻衣得于寿涯禅师。穆修授太极图于周敦颐，濂溪扣问东林总禅师太极图之深旨，广东林之语而为太极图说。建图之意据吾教中依空立世界，以无为万有之祖。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["dao-xue-yuanliu", "shangzhi-hujiao"],
+    "relatedPersons": ["konggu-jinglong", "zhou-dunyi", "donglin-zong"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "xushi-jimie",
+    "title": "虚无寂灭权实二义",
+    "category": "义理",
+    "summary": "虚无寂灭有权实二义。以权言之，是空幻方便语，破凡夫之有、小乘之空、中乘之不有不空。以实言之，是万有之母，出生天地人物万法。三教圣贤之旨皆是真常寂灭、真空不空。晦庵读佛书只见破凡夫方便语，不识虚无寂灭是万有之母。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "shenshi-bumie",
+    "title": "神识不灭",
+    "category": "义理",
+    "summary": "驳斥晦庵形朽灭神飘散之说。以梦为喻：梦饮食者神识也，死者受苦者亦神识也。幻身如房屋，神识如屋中之人，人出不顾房屋，神识出不顾幻身。身譬五谷之根叶，魂神譬五谷之种实，根叶生必当死，种实岂有终乎。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "fengmeng-zhiji",
+    "title": "逢蒙之计",
+    "category": "护教",
+    "summary": "逢蒙学射于后羿后杀羿。空谷以此喻朱熹用佛法著书排佛——窃他人之德为自己之功，掩他人之德欲张自己之功。后学效之排佛，实是一人传虚万人传实。排佛用此逢蒙之计者起于张子厚谢良佐杨中立张敬夫等，广之于晦庵。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "qiangqian-shezhang",
+    "title": "密设墙壍",
+    "category": "护教",
+    "summary": "晦庵密设墙壍排佛，指程子云佛氏之言比之扬墨尤为近理所以其害为左甚。大学中庸序文或问诸书注语皆存此意。小学有世俗信浮图诳诱等语。文公家礼不作佛事。如是用心是其设墙壍也，皮肤之学者偏要排佛，学而至化出彼墙壍之外自知排佛之非。",
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -8547,6 +8697,16 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": ["seng-zhao"],
     "relatedBooks": ["zhaolun"]
   },
+  {
+    "id": "shangzhi-bianzheng",
+    "title": "尚直辨正",
+    "summary": "以直说无纡的方式系统驳斥排佛言论。直指晦庵心病，揭露道学源流出于禅宗，逐一辨正虚无寂灭、神识不灭、三教关系等议题。以问答体裁层层推进，引证丰富史实为据。",
+    "steps": ["直指晦庵心病：暗用佛法明捎暗用", "揭露道学源流：濂溪程子皆出于禅宗", "辨正虚无寂灭有权实二义", "辨正神识不灭以梦为喻", "引证历代帝王名贤推崇佛法"],
+    "classicRef": "尚直编",
+    "relatedConcepts": ["shangzhi-hujiao", "paifo-xinbing", "dao-xue-yuanliu"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  }
 
 ]
 ;
@@ -12771,6 +12931,57 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["fansheng-qingjin"],
     "relatedPersons": ["huanglong-huinan"],
     "relatedBooks": ["huanglonghuinan"]
+  }
+,
+  {
+    "id": "koan-359",
+    "question": "满目青山一任看",
+    "answer": "佛印元禅师答周敦颐问毕竟以何为道之语。濂溪拟议，元呵呵笑而已，濂脱然有省。道非可言说，满目青山即是道之显现，一任看之而不加分别。拟议即错，呵呵一笑截断知解，濂溪言下有省。",
+    "master": "佛印元",
+    "source": "尚直编",
+    "relatedConcepts": ["dao-xue-yuanliu", "taiji-tu", "shangzhi-hujiao"],
+    "relatedPersons": ["fo-yin-yuan", "zhou-dunyi", "konggu-jinglong"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "koan-360",
+    "question": "只消向你自家屋里打点",
+    "answer": "黄龙慧南禅师谕周敦颐教外别传之旨。南谕濂溪曰：孔子谓朝闻道夕死可矣，毕竟以何为道？颜子不改其乐，所乐者何事？但于此究竟，久久自然有个契合处。不向外求，只消向自家屋里打点——即反观自心、究明本来面目之意。",
+    "master": "黄龙慧南",
+    "source": "尚直编",
+    "relatedConcepts": ["dao-xue-yuanliu", "shangzhi-hujiao"],
+    "relatedPersons": ["huanglong-huinan", "zhou-dunyi", "konggu-jinglong"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "koan-361",
+    "question": "把这一念提撕狗子话不要商量勇猛直前一刀两段",
+    "answer": "开善谦禅师答朱熹请问狗子佛性话头之语。晦庵致书曰向蒙大慧禅师开示狗子佛性话头未有悟入，愿授一言警所不逮。谦答：把这一念提撕狗子话不要商量，勇猛直前一刀两段。晦庵览之有省。此即参话头法——不落知解商量，一味提撕直下契入。",
+    "master": "开善谦",
+    "source": "尚直编",
+    "relatedConcepts": ["dao-xue-yuanliu", "paifo-xinbing", "shangzhi-hujiao"],
+    "relatedPersons": ["zhuxi-zhunan", "konggu-jinglong"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "koan-362",
+    "question": "一人传虚万人传实",
+    "answer": "空谷景隆论晦庵排佛之机。晦庵设个关窍在此后人尚识不破，所谓一人传虚万人传实。晦庵泛用佛意欲掩佛学之德全归自己之功，故立排佛之言栽于书中令人信伏。后人披览承虚接响排之而已，不识其所以然。",
+    "master": "空谷景隆",
+    "source": "尚直编",
+    "relatedConcepts": ["fengmeng-zhiji", "paifo-xinbing", "qiangqian-shezhang"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "koan-363",
+    "question": "学而至化出彼墙壍之外自知排佛之非追悔不及矣",
+    "answer": "空谷景隆论晦庵墙壍之害。皮肤之学者偏要排佛，才读数十卷书心忿忿然遽以排佛为急务。学至宏博自然通泰排佛之心稍觉轻矣。学而至化出彼墙壍之外自知排佛之非追悔不及矣——须学到变化之地步方能跳出晦庵所设的障蔽。",
+    "master": "空谷景隆",
+    "source": "尚直编",
+    "relatedConcepts": ["qiangqian-shezhang", "paifo-xinbing", "shangzhi-hujiao"],
+    "relatedPersons": ["konggu-jinglong", "zhuxi-zhunan"],
+    "relatedBooks": ["shangzhibian"]
   }
 ];
 
@@ -25274,5 +25485,132 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "\u201c功德天黑暗女，有智主人二俱不受\u201d出自哪里？",
     "answer": "出自《涅槃经》。功德天代表福报，黑暗女代表灾祸，二者形影不离。有智慧的主人知道二者相伴而来，所以二俱不受。慧南禅师以此喻有为与无为——执有为如受功德天，执无为如受黑暗女，有智主人二俱不受方是自在。不在有为无为两边，方是衲僧本分。",
     "relatedBooks": ["huanglonghuinan"]
+  }
+,
+  {
+    "id": "faq-2181",
+    "question": "《尚直编》是一部什么书？",
+    "answer": "《尚直编》是明代禅僧空谷景隆所著的护教文献，与《尚理编》为姊妹篇。“尚直”意为直说而无纡曲。本书以问答体裁系统驳斥宋儒朱熹排佛言论，揭露朱熹暗用佛法著书立说而表面排佛的心病，详述濂溪周子、二程等宋儒道学之源流实出于禅宗，是明代护教文献代表作。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2182",
+    "question": "空谷景隆为什么说朱熹排佛是“心病”？",
+    "answer": "空谷指出，晦庵潜心佛学可谓博矣，其排佛者心病也。朱熹泛用佛理著书立说，却反行排佛，目的是令后学不看佛书——若不排佛则后学多看佛书，凡看佛书则见其心病。因此密设墙壍闲住后学令走不出识不破。所谓心病，即窃他人之德为自己之功，掩他人之德欲张自己之功。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2183",
+    "question": "朱熹的“墙壍”具体设在何处？",
+    "answer": "空谷指出晦庵墙壍设在多处：指程子云佛氏之言比之扬墨尤为近理所以其害为左甚；大学中庸序文或问诸书注语皆存排佛之意；小学有世俗信浮图诳诱等语；文公家礼丧礼篇不作佛事；复指司马温公语注云世俗信浮图诳诱等语，全是晦庵心之所之不是温公之语。如是用心是其设墙壍也。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2184",
+    "question": "周敦颐的道学与禅宗有什么关系？",
+    "answer": "周敦颐（濂溪）道学实出于禅宗。初扣黄龙慧南禅师教外别传之旨，南谕曰只消向你自家屋里打点。一日扣问佛印元禅师曰毕竟以何为道，元曰满目青山一任看，濂脱然有省。闻东林总禅师得竹林寿涯禅师麻衣道者二师心传易学，由是叩之，广东林之语而为太极图说。穆修授以太极图，其传授谱系追溯至国一禅师。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2185",
+    "question": "程颢程颐兄弟与禅宗有什么渊源？",
+    "answer": "程氏颢颐同受学于濂溪。程颢（明道）深味于华严合论自谓有所心融意会，往西京长庆寺修冥福见众僧威仪济济乃叹曰三代礼乐尽在是矣，出入释老几十年。程颐（伊川）多入大源清禅师之室，嘉泰普灯录载程伊川咸问道于大源禅师，晦堂心禅师尝以心法授之。其作文注书多取佛祖辞意。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2186",
+    "question": "朱熹本人是否参过禅？",
+    "answer": "是的。晦庵早从学于延平李先生后遍谒禅老，与吕东莱张南轩同问道于大慧禅师。十八岁时刘屏山搜其箧惟有大慧禅师语录一帙。致书开善谦禅师曰向蒙大慧禅师开示狗子佛性话头未有悟入，谦答把这一念提撕狗子话不要商量勇猛直前一刀两段，晦庵览之有省。于竹林小轩诵佛经作禅诗。陆九渊每与晦庵争论太极图说，盖知晦庵有禅学故讥之。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2187",
+    "question": "太极图的传授谱系是怎样的？",
+    "answer": "国一禅师以道学传于寿涯禅师，涯传麻衣，衣传陈搏，搏传种放，放传穆修，修传李挺之，李传康节邵子。穆修又以所传太极图授于濂溪周子。周子扣问东林总禅师太极图之深旨，广东林之语而为太极图说。陈搏之学得于麻衣，麻衣得于寿涯禅师——其源流实出于禅宗。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2188",
+    "question": "空谷如何论证“虚无寂灭”有权实二义？",
+    "answer": "以权言之，虚无寂灭是空幻方便语——破凡夫之有故曰此身虚幻令心寂灭，破小乘之空故责其陷于解脱深坑令求出离，破中乘之不有不空故责其缚于幻有令求大乘，此皆善权方便之术。以实言之，虚无寂灭是万有之母，出生天地人物万法。佛教曰从无住本立一切法，老子曰无名天地之始，孔子曰易无思也无为也寂然不动——三教圣贤之旨皆是真常寂灭真空不空。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2189",
+    "question": "空谷如何驳斥“形朽灭神飘散”之说？",
+    "answer": "空谷以梦为喻驳斥：形气既能作梦，死而未殡者形亦尚存何以无梦乎？至于埋之火之何不知痛苦乎？因有神识成此形气，形气如屋神识如人，去住由人屋是闲物也。引牟子曰：人临死则家人上屋呼之，魂神还则复苏不还则不苏。身譬五谷之根叶，魂神譬五谷之种实，根叶生必当死，种实岂有终乎？",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2190",
+    "question": "空谷如何论证三教各司其化不可缺一？",
+    "answer": "空谷论三教圣人各出只手扶持大道以成天下之化权。天生三教推不向前捺不向后为世模范不可无也，如太空之有天地非天地则无覆载也。儒宗以纲常为先明道兼之，释宗以明道为先纲常兼之，众人观之似乎不同达人观之而实同也。缺一圣之教法则化权之道义不足。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2191",
+    "question": "空谷如何论证佛经非剽窃老庄？",
+    "answer": "空谷指出：佛是三界大圣人，大道周圆万德统备，岂藉老庄之言以为用乎。历朝三藏法师多生西竺未尝善吾中国之书，翻译梵经只是将梵语转作唐言。佛生周昭王时，老子生周定王时，老子后于佛四百余年——前人窃后人之语耶后人窃前人之语耶？道家除老关庄列之外诸经皆是后人采摭佛经之意造成道经。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2192",
+    "question": "什么是“逢蒙之计”？",
+    "answer": "逢蒙学射于后羿后杀羿。空谷以此喻朱熹用佛法著书排佛——窃他人之德为自己之功，欲张自己之功故掩他人之德。晦庵泛用佛意欲掩佛学之德全归自己之功，故立排佛之言栽于书中令人信伏。后人披览承虚接响排之而已，所谓一人传虚万人传实。排佛用此逢蒙之计者起于张子厚谢良佐杨中立张敬夫等，广之于晦庵。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2193",
+    "question": "朱熹注书用了哪些佛经禅语？",
+    "answer": "空谷列举：虚灵不昧（出大智度论并禅书）、不可限量（出华严宝积大集等经）、似是而非（出镡律集）、大学补阙（全是禅语略变之）、真实无妄（东林口授周子语意）、能知觉所知觉（楞严经等）、一旦豁然贯通、物我一理、活鱍鱍地、彻头彻尾做工夫、咬菜根、无缝塔、一刀两段、一棒一条痕一掴一掌血（皆出禅书并诸经）。晦庵注书惟毛诗一经乃是学力注成，自余四书等注皆用佛法改头换面变其语而取其意。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2194",
+    "question": "空谷如何论述佛法对世间的利益？",
+    "answer": "空谷列举九种利益：参禅悟道者得明心见性之益，穷究经教者得明通玄旨之益，依法修行者得渐入菩提之益，持戒念佛者得生净土之益，持戒禅定者得生天上之益，皈依信受者得善根福慧之益，善心敬佛者得善回福果之益，依信佛法者不作诸恶得不烦刑法之益，佛法行于世间得阴翊皇度之益。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2195",
+    "question": "空谷如何论证罪福果报非唯佛书有之？",
+    "answer": "空谷引儒家经典论证：大禹谟曰惠迪吉从逆凶，伊训曰作善降之百祥作不善降之百殃，坤之文言曰积善之家必有余庆积不善之家必有余殃，曾子曰人之好善福虽未至去祸远矣人之为恶凶虽未至去祸近矣。系辞曰死生之说精气为物游魂为变。孔子谓子路曰未知生焉知死。岂非论死生之事乎？轻于圣人之训重于后人之言谓无罪福果报坏其心术也。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2196",
+    "question": "《尚直编》与《尚理编》有什么关系？",
+    "answer": "《尚直编》与《尚理编》为姊妹篇，同为明代禅僧空谷景隆所著护教文献。《尚理编》以理性辨正禅道之别，驳正道家修炼之妄；《尚直编》以直说无纡驳斥宋儒排佛言论，揭露道学源流出于禅宗。二编合观，可见空谷护法之全貌——一驳道家炼术之妄，一驳宋儒排佛之非。",
+    "relatedBooks": ["shangzhibian", "shanglibian"]
+  },
+  {
+    "id": "faq-2197",
+    "question": "空谷如何论述雷击非阴阳相激？",
+    "answer": "空谷论证：惊蛰后二阴在上四阳在下，芒种后五阳在上一阴在下，若阴阳相激则合时时相激雷雨不停，何故晴雨间然耶？二气交运如辘轳之轮互为上下，若相激则安能发育万物乎？日月星辰风云雷雨皆天地体用各有天神主之应时不忒。空谷举多个雷击实例：维那士弘为雷打死复苏自言见诸天神教诫，浙右人造佛天纸马晒干卖之被雷打死，窃米者被雷打死书其背云窃其米者此人也。易云震来虩虩，君子以恐惧修省——畏天谴故修省补过也。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2198",
+    "question": "空谷如何评价范文正公崇佛？",
+    "answer": "范文正公（范仲淹）舍宅为寺，延浮山远禅师为住持，凡莅所守之地必造寺度僧兴崇佛法。公之子孙蕃衍代代为官迨今不绝，苟非佛福田中所植阴德感动天心能若是乎？范文正公与司马温公友善，及范忠宣公登大用却居温公之上，若非父子笃敬佛法阴骘所致安能至于是乎。古之人事乃躬行道德仁义者也。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2199",
+    "question": "空谷如何论述“无为无不为”？",
+    "answer": "空谷论吾宗所谓无为者，无为无不为，无心而为为皆正事也，岂是块然不动乎。言无学者，学到万法尽通至于无学之地，惟取其理不取其语。一切法相咸同一相所谓无相，此无相法性相皆空俱无自性俱不可得。大部诸经皆言智为先导，虽修五波罗密乃至万行若无般若皆名魔业。千经万论缘何事只为调治一点心。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2200",
+    "question": "《尚直编》的著作背景是什么？",
+    "answer": "空谷景隆著于明正统五年（1440年）。当时宋儒排佛之风盛行，朱熹注四书泛用佛理却反行排佛，令后学不看佛书。空谷痛惜害乎至德，故著尚直编以警之。直说而无纡故名尚直。万历庚子季冬重刊板存方肆广印流通。书中以太原王中（字克平）与空谷的问答为体裁，层层推进辨正。",
+    "relatedBooks": ["shangzhibian"]
+  },
+  {
+    "id": "faq-2201",
+    "question": "空谷如何论述“佛法如大路”？",
+    "answer": "空谷论佛法如大路，凡欲于此路行者亦不拒之，不欲于此路行者亦不邀之。学佛者得佛法之饶益佛亦无喜，背佛者不得佛法之饶益佛亦无愠。从佛背佛在乎人之有善根无善根而已，安可力致其然欤。北溟有鲲化而为鹏听其自化也，岂人力能俾其化焉。人之从佛亦何益于我乎，人之背佛亦何损于我乎——空谷表明自己非欲罗笼人入佛，而是直说道理令人自见。",
+    "relatedBooks": ["shangzhibian"]
   }
 ];
