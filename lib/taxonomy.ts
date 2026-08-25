@@ -2307,19 +2307,19 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["xiuxinjue", "lengyanjing", "changuancejin", "huanwuyulu"]
   },
-  {
+    {
     "id": "gaofeng-yuanmiao",
     "name": "高峰原妙",
-    "title": "元代禅宗高僧 / 临济宗",
-    "era": "南宋元 (1238-1295)",
-    "lifeStory": "原妙禅师，吴江（今江苏苏州）人，俗姓徐。少出家，参雪岩祖钦，于祖钦座下开悟。师住天目山（今浙江临安），于山顶结死关，二十年不下山，世称\u201c高峰和尚\u201d。师之教以\u201c万法归一，一归何处\u201d为话头，承临济看话禅之传统。门下出中峰明本，为元代禅宗之代表。师之\u201c死关\u201d示禅僧应以生死大事为重，不慕世俗名利。",
-    "teachings": "高峰宗风以\u201c万法归一，一归何处\u201d为话头，逼拶学人于一字上透脱一切知见。其\u201c死关\u201d之举，示参禅须以生死为念，发决定心，不悟不休。",
-    "quotes": ["万法归一，一归何处？", "参禅须透生死关。"],
-    "classics": [],
-    "relatedConcepts": ["koan", "self-nature"],
+    "title": "宋元禅宗巨匠 / 临济宗杨岐派 / 看话禅集大成者",
+    "era": "南宋嘉熙二年—元元贞元年 (1238-1295)",
+    "lifeStory": "高峰原妙，俗姓徐，苏州吴江人。母周氏梦僧乘舟投宿而孕。宋嘉熙戊戌三月二十三日申时生。才离襁褓，喜跌坐。遇僧入门，辄爱恋欲从之游。十五岁恳请父母出家，投嘉禾密印寺法住为师。十六薙发，十七受具，十八习天台教，不契。二十更衣入净慈，立三年死限学禅。一日父兄寻访，巍然不顾。二十二参断桥伦，令参“生从何来，死从何去”话，于是胁不至席，口体俱忘。后参雪岩祖钦，令看无字。钦忽问“阿谁与你拖个死尸来”，声未绝即打。如是者不知其几，师扣愈虔。后上双径参堂，半月偶梦中断桥所举“万法归一，一归何处”话，疑情顿发，三昼夜目不交睫。一日随众诣三塔讽经次，抬头忽睹五祖演和尚真赞“百年三万六千朝，返覆元来是遮汉”，蓦然打破拖死尸之疑，其年二十四矣。悟后入临安龙须山，自誓“拼一生做个痴呆汉，决要遮一着子明白”。越五载，因同宿友推枕堕地作声，廓然大彻。在龙须九年，缚柴为龛，风穿日炙，冬夏一衲，不扇不炉，日捣松和糜延息而已。尝积雪没龛旬余路梗绝烟火，咸谓死矣，及霁可入，师正宴坐那伽。甲戌迁武康双髻峰，学徒云集。己卯春腰包宵遁，直造天目西峰师子岩，于石洞营小室如舟，榜以“死关”，上溜下淖，风雨飘摇，绝给侍，屏服用，不澡身，不薙发，截瓮为铛，并日一食，晏如也。洞非梯莫登，撤梯断缘，虽弟子罕得瞻视。乃有三关语以验学者。雪岩方住大仰，凡三唤，师坚卧不起，遂有竹篦、麈拂及“绿水青山同一受记”语来授，师怀中瓣香始于人天前拈出。道风所届日益远，遂有他方异域越重海逾万山而来者矣。乙未腊月朔黎明，辞众云“西峰三十年妄谈般若，罪犯弥天，末后有一句子，不敢累及平人，自领去也”。说偈曰“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山”。泊然而寂。寿五十八，腊四十三，弟子仅百人，受毗尼及请益者数万人。",
+    "teachings": "高峰宗风以“万法归一，一归何处”为根本话头，逼拶学人于一字上透脱一切知见。其“死关”之举，示参禅须以生死为念，发决定心，不悟不休。其法语痛切直截，力破谈玄说妙之口头禅，直示“如大火聚，烈焰亘天”之真参实悟。其拈古于世尊拈花、马祖即心、赵州勘婆、雪峰鳖鼻蛇等古则，一一别出手眼，不落古人窠臼。其颂古以诗偈重显，文采与禅机并美。其三关语验学者：大彻底人本脱生死因甚命根不断？佛祖公案只是一个道理因甚有明与不明？大修行人当遵佛行因甚不守毗尼？下语不契则闭门不接。",
+    "quotes": ["万法归一，一归何处？", "来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。", "疑以信为体，悟以疑为用。信有十分，疑有十分；疑得十分，悟得十分。", "千疑万疑，只是一疑。若能决此一疑，免教节上生枝。", "石压笋斜出，崖悬花倒生。", "正是婆子勘破赵州。"],
+    "classics": ["高峰原妙禅师语录"],
+    "relatedConcepts": ["all-returns-to-one", "kanhua-chan-concept", "yiqing", "siquan", "keqi-quzheng"],
     "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["xueyan-zuqin", "zhongfeng-mingben"],
-    "relatedBooks": ["gaofengyulu", "changuancejin", "huanwuyulu", "zhaozhouyulu"]
+    "relatedPersons": ["xueyan-zuqin", "duanqiao-lun", "zhuhong", ],
+    "relatedBooks": ["gaofengyulu"]
   },
   {
     "id": "zhenjing-kewen",
@@ -2986,7 +2986,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "teachings": "以万法归一一归何处为参究话头，引导学人从万法归一处起疑情。",
     "quotes": [],
     "classics": ["chanzongjueyiji"],
-    "relatedConcepts": ["wanfa-guiyi"],
+    "relatedConcepts": ["all-returns-to-one"],
     "relatedMethods": ["canhuatou-qiyiqing-fa"],
     "relatedPersons": ["zhiche"],
     "relatedBooks": ["chanzongjueyiji"]
@@ -7363,19 +7363,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": ["chanzongjueyiji"]
   },
   {
-    "id": "wanfa-guiyi",
-    "title": "万法归一",
-    "category": "禅宗公案",
-    "summary": "万法归一一归何处，是智彻禅师所参的核心话头。此话头以万法归一为前提，以一归何处为疑情着力处。智彻分析：一即是心（灵知之心非肉团心），心即是一（众圣之王故号心王）。疑情应落在一上，归何处是考究方向。",
-    "etymology": "法华经云：惟此一事实，余二则非真。此一法乃众生之本源诸佛之妙道。",
-    "quotes": ["此一法乃众生之本源诸佛之妙道，亦是万法之母众圣之尊", "一即是心，心即是一"],
-    "guidance": "初举万法归一一归何处，或举三五次随意放收，然后万法归一少举，只在一字上起疑。",
-    "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu", "huatou-gongfu"],
-    "relatedPersons": ["zhiche", "yunfeng-heshang", "zhaozhou"],
-    "relatedBooks": ["chanzongjueyiji"]
-  },
-  {
     "id": "huatou-gongfu",
     "title": "话头工夫",
     "category": "禅修方法",
@@ -7384,7 +7371,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": ["如击钟磬一般匀调击之声则和顺", "不可信人说不要开口举话头，若信此语闭口禁声后必有患也"],
     "guidance": "举话头时或出声不出声皆可，但不得太急又不得太缓。只贵话头上疑情得力不得力处取用切。",
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "wanfa-guiyi"],
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "all-returns-to-one"],
     "relatedPersons": ["zhiche"],
     "relatedBooks": ["chanzongjueyiji"]
   },
@@ -7885,16 +7872,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": []
   },
   {
-    "id": "wanfa-gui-yi",
-    "title": "万法归一",
-    "category": "禅法",
-    "summary": "万法归一，禅宗看话禅之核心话头。赵州禅师答僧问“万法归一，一归何处”，曰“我在青州作一领布衫，重七斤”。以此话头起疑情，参究至疑团爆破，方见本来面目。",
-    "classicRef": "赵州语录",
-    "relatedConcepts": ["non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
-  },
-  {
     "id": "yijiao-buzong",
     "title": "言教不宗",
     "category": "禅理",
@@ -8055,16 +8032,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       ]
   },
 
-  {
+    {
     "id": "siquan",
     "title": "死关",
     "category": "禅修行持",
-    "summary": "高峰原妙禅师之独特行持——入张公洞扁其门曰“死关”，不越户十五年。非闭关避世，乃以“死”字逼拶身心，决志不悟即死于此。辞世偈云：“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。”",
-    "etymology": "以“死”字为关，逼拶自己于悟道为止。",
-    "quotes": ["来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。—高峰原妙"],
-    "guidance": "死关非关门窗，乃心关——以必死之志参究本来，不悟不休。",
+    "summary": "高峰原妙禅师之独特行持——入天目山师子岩石洞，扁其门曰“死关”，不越户十五年。非闭关避世，乃以“死”字逼拶身心，决志不悟即死于此。洞非梯莫登，撤梯断缘，绝给侍，屏服用，不澡身，不薙发，截瓮为铛，并日一食。又有三关语以验学者：大彻底人本脱生死因甚命根不断？佛祖公案只是一个道理因甚有明与不明？大修行人当遵佛行因甚不守毗尼？下语不契则闭门不接。辞世偈云“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山”。",
+    "etymology": "以“死”字为关，逼拶自己于悟道为止——不悟即死于此。",
+    "quotes": ["来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。—高峰原妙", "大彻底人本脱生死，因甚命根不断？—高峰三关语"],
+    "guidance": "死关非关门窗，乃心关——以必死之志参究本来，不悟不休。三关语验学者：下语不契则闭门不接，非具大根大志者不能入。",
     "classicRef": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "keqi-quzheng"],
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["gaofengyulu"]
   },
@@ -8175,6 +8152,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
     "relatedPersons": ["zibai-zhenke"],
     "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "keqi-quzheng",
+    "title": "克期取证",
+    "category": "禅修心法",
+    "summary": "高峰原妙禅师之参禅方法——以限期逼拶自己，决定于此期限内取证悟道。高峰法语云“大限九旬，小限七日”，以结制期为克期之限。又云“如人负重过急流溪，行至中间，忽遇黑风暴雨，退亦不能，进亦不能，拟议之间，丧身失命”——克期取证非缓缓用工，乃置之死地而后生，于无退路处逼拶疑情爆破。",
+    "etymology": "克期即限期，取证即决定证悟——以限期逼拶自己决定悟道。",
+    "quotes": ["大限九旬，小限七日。粗中有细，细中有密。—高峰原妙", "如善射者仰箭射空，复以后箭射前箭筈，筈筈承箭，箭箭中筈，住于空中，经久不堕，盖是精进之功。—高峰原妙"],
+    "guidance": "克期取证须具三要：大信根、大愤志、大疑情。十二时中果能具此三要，管取克日成功。如折足之鼎缺一即成废器。",
+    "classicRef": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "siquan"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
   },
 ];
 
@@ -9359,7 +9350,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "steps": ["先发愤怒心——疑赵州因甚道无，或出声不出声自取方便", "单只疑这一个话头——不是看不是念，是疑", "昼夜十二时无顷刻暂息——行住坐卧皆疑", "不得太急不得太缓——如击钟磬匀调", "蓦然疑团子上爆地一声——彻见那边消息"],
     "pitfalls": ["看无字——将无字贴在眼睛上看，是视觉执着非疑情", "念无字——口中念念不停如更鼓发擂，无有实益", "执空执有执断执常——于无字上各出异见皆为偏枯", "闭口禁声不开口举话头——气郁结胸中伤心损体"],
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "huatou-gongfu", "wanfa-guiyi"],
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "huatou-gongfu", "all-returns-to-one"],
     "relatedPersons": ["zhiche", "yunfeng-heshang"],
     "relatedBooks": ["chanzongjueyiji"]
   },
@@ -9764,8 +9755,7 @@ export const ZEN_KOANS: KoanItem[] = [
       "huangbo",
       "linji"
     ],
-    "relatedBooks": [
-    ]
+    "relatedBooks": []
   },
   {
     "id": "koan-19",
@@ -13306,7 +13296,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "万法归一已是一往之谈，一归何处更无落处。赵州不向玄妙处答，却道青州布衫七斤——直下寻常，截断学人思量。",
     "master": "赵州从谂",
     "source": "《碧岩录》第四十五则",
-    "relatedConcepts": ["wanfa-gui-yi"],
+    "relatedConcepts": ["all-returns-to-one"],
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["biyanlu"]
   },
@@ -13509,7 +13499,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "智彻禅师详析此公案：此僧当下若会得赵州开口处，唾面痛骂一场，赵州只得杜口无言。这僧不能领受，通身堕在疑情。疑情重时行也疑坐也疑着衣吃饭也疑，昼夜十二时无顷刻暂息。蓦然疑团子上爆地一声，彻见那边消息。",
     "master": "赵州从谂",
     "source": "禅宗决疑集·彻底穷渊门",
-    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "wanfa-guiyi"],
+    "relatedConcepts": ["yiqing-canjiu", "kan-wu-nian-wu-yi-wu", "all-returns-to-one"],
     "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
@@ -13521,7 +13511,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "智彻禅师评：此僧却不似那僧疑也，空使赵州舌头拕地。盖谓秤尾不鲜故无买者。此一法乃众生之本源诸佛之妙道，亦是万法之母众圣之尊。迷之者则轮回不息，悟之者则了死超生。一即是心，心即是一。",
     "master": "赵州从谂",
     "source": "禅宗决疑集·指本还真门",
-    "relatedConcepts": ["wanfa-guiyi", "yiqing-canjiu", "huatou-gongfu"],
+    "relatedConcepts": ["all-returns-to-one", "yiqing-canjiu", "huatou-gongfu"],
     "relatedPersons": ["zhiche", "zhaozhou"],
     "relatedBooks": ["chanzongjueyiji"]
   },
@@ -14028,83 +14018,11 @@ export const ZEN_KOANS: KoanItem[] = [
       ]
   },
 
-  {
-    "id": "koan-382",
-    "question": "高峰死关",
-    "answer": "来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。",
-    "context": "高峰原妙辞世偈。一生坐断死关，末后以铁蛇入海、撞倒须弥之句告众坐亡——生死来去皆不出此死关，以决志之死功透脱生死根本。",
-    "interpretation": "高峰以“死”字为参禅决志，不悟即死于此。铁蛇钻入海——不可捉摸；撞倒须弥——粉碎根本。此偈是高峰一生行持之总收摄。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "koan-383",
-    "question": "高峰万法归一",
-    "answer": "万法归一，一归何处？",
-    "context": "高峰常以“万法归一，一归何处”为话头接引学人。此话头逼拶学人于“一”之归处起大疑情。",
-    "interpretation": "万法归一是理，一归何处是疑——疑到无路可走时，蓦然爆破即是大悟。高峰以此话头与赵州无字并传。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "koan-384",
-    "question": "高峰评赵州勘婆",
-    "answer": "正是婆子勘破赵州。",
-    "context": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子，高峰则云“正是婆子勘破赵州”。",
-    "interpretation": "高峰别具只眼：赵州自以为勘破，实则被婆子“蓦直去”一语勘破。毕竟以何为验？以手指云：蓦直去。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "koan-385",
-    "question": "高峰评即心是佛",
-    "answer": "苦哉！若作遮般见解，吃铁棒有分在。",
-    "context": "僧举马祖“即心是佛”语，众中商量皆谓心本是佛。高峰痛斥此解。",
-    "interpretation": "即心是佛非道理会，作“心本是佛”解即落识情。高峰下断语：石压笋斜出，崖悬花倒生——道理压不住真机。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "koan-386",
-    "question": "高峰三喻",
-    "answer": "参禅如堕千尺井底，如担雪填井，如死罪人逃狱。",
-    "context": "高峰法语以三喻示参禅之“切”字工夫。",
-    "interpretation": "堕井唯求出、填井不惮寒暑、逃狱一往直前——三喻皆示参禅须发大愤志、起大疑情，单单一念更无二念。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "koan-387",
-    "question": "高峰悬崖",
-    "answer": "向悬崖峭壁无栖泊处立。",
-    "context": "高峰示参禅须向最难处用力。",
-    "interpretation": "舍易就难——三面平夷是寻常路，悬崖无栖泊处方是向上事。高峰教人跳来跳去，跳到人法俱忘、心识路绝，蓦然踏翻大地。",
-    "master": "高峰原妙",
-    "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
-  },
 
   {
     "id": "koan-388",
@@ -14416,6 +14334,266 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
     "relatedPersons": ["zibai-zhenke"],
     "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-412",
+    "question": "高峰拈古·世尊拈花",
+    "answer": "世尊扶头，迦叶扶尾，直至如今，抬举不起。",
+    "context": "世尊在灵山会上拈花示众，众皆默然，惟迦叶破颜微笑。世尊云：吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。高峰拈云：世尊扶头，迦叶扶尾，直至如今抬举不起。莫有共著力者么？以两手作扶势，云：也只兀底。",
+    "interpretation": "世尊拈花、迦叶微笑是禅宗源头——高峰云'扶头扶尾抬举不起'，意谓正法眼藏从世尊到迦叶一脉相承，然而后人只知抬举古人，不知自己承当。以两手作扶势'也只兀底'——直指当下。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-413",
+    "question": "高峰拈古·云门打杀世尊",
+    "answer": "世尊大似灵龟曳尾，自取丧身之兆。云门虽则全提正令，也是为他闲事长无明。",
+    "context": "世尊才生下，一手指天一手指地，周行七步，目顾四方云：天上天下，惟吾独尊。云门云：我当时若见，一棒打杀与狗子吃，贵图天下太平。高峰拈云：世尊大似灵龟曳尾，自取丧身之兆。云门虽则全提正令，也是为他闲事长无明。当时但于地上划一圆相，就圆相中书个丁字，复展两手示之，管取冰消瓦解。",
+    "interpretation": "云门打杀世尊是宗门著名公案——高峰评世尊'灵龟曳尾自取丧身'，评云门'为他闲事长无明'。高峰自己则'划圆相书丁字展两手'——别出手眼，不落二人窠臼。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-414",
+    "question": "高峰拈古·马祖即心是佛",
+    "answer": "苦哉！若作遮般见解，吃铁棒有分在。石压笋斜出，崖悬花倒生。",
+    "context": "僧问马祖：如何是佛？祖云：即心是佛。众中商量皆谓心本是佛，佛外无心。高峰拈云：苦哉！苦哉！若作遮般见解，明后日吃铁棒有分在。既然如是，合作么生？石压笋斜出，崖悬花倒生。",
+    "interpretation": "即心是佛非道理会——作'心本是佛'解即落识情。高峰下断语'石压笋斜出，崖悬花倒生'：道理如石压笋，笋从旁边斜出；如悬崖之花，倒挂着生长——道理压不住真机。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-415",
+    "question": "高峰拈古·百丈野狐",
+    "answer": "前云不落，后云不昧，还有得失也无？总是一队野狐精，莫怪山僧压良为贱。",
+    "context": "百丈老人问'大修行人还落因果也无'，前云'不落因果'堕野狐身，百丈代云'不昧因果'即脱野狐身。高峰拈云：大众！前云不落，后云不昧，还有得失也无？若无，因甚有堕有脱？若有，试举出来分明道看。有么？有么？总是一队野狐精，莫怪山僧压良为贱。",
+    "interpretation": "百丈野狐是宗门著名公案——高峰追问'不落'与'不昧'有无得失：若无得失，因何有堕有脱？若有得失，试分明道看。末后云'总是一队野狐精'——将评唱者一并扫却。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-416",
+    "question": "高峰拈古·赵州勘婆",
+    "answer": "正是婆子勘破赵州。毕竟以何为验？以手指云：蓦直去。",
+    "context": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子。高峰拈云：遮个公案，若据诸方判断，赵州勘破婆子；若据高峰点检将来，正是婆子勘破赵州。毕竟以何为验？以手指云：蓦直去。",
+    "interpretation": "诸方皆谓赵州勘破婆子，高峰别具只眼——赵州自以为勘破，实则被婆子'蓦直去'一语勘破。高峰下断语'以手指云：蓦直去'——三字验破，婆子始终在'蓦直去'处，赵州反落在'勘过'里。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-417",
+    "question": "高峰拈古·赵州狗子无字",
+    "answer": "大小赵州拈出一粒巴豆子，搅恼衲僧肠肚，设有吞吐得者，亦不免丧身失命。",
+    "context": "僧问赵州：狗子还有佛性也无？州云：无。高峰拈云：大小赵州拈出一粒巴豆子，搅恼衲僧肠肚，设有吞吐得者，亦不免丧身失命。何故？急急如律令。",
+    "interpretation": "赵州'无'字是宗门第一话头——高峰喻为'巴豆子'：巴豆是泻药，吞不下搅恼肠肚，吞得下也丧身失命。'无'字之妙正在于此——不论参得透参不透，皆非道理可会。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-418",
+    "question": "高峰拈古·赵州万法归一",
+    "answer": "赵州一段绵密工夫，风吹不入雨打不湿，惜乎不解相体裁衣，翻成钝置。",
+    "context": "僧问赵州：万法归一，一归何处？州云：我在青州作一领布衫，重七斤。高峰拈云：赵州一段绵密工夫，风吹不入雨打不湿，惜乎不解相体裁衣，翻成钝置。高峰则不然，忽有人问：万法归一，一归何处？只向他道：我二十年前曾向遮里打失一只眼睛，至今指鹿为马。",
+    "interpretation": "赵州以'青州布衫重七斤'答万法归一——高峰评其'绵密工夫'虽好，但'不解相体裁衣翻成钝置'。高峰自己则答'打失一只眼睛，至今指鹿为马'——别出手眼，不落古人窠臼。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-419",
+    "question": "高峰拈古·南泉鹅儿出瓶",
+    "answer": "南泉潦倒，手眼不亲，纵饶出得，也是死货。",
+    "context": "陆亘大夫问南泉：弟子家中于一瓶内养得一鹅儿，今来长大，欲出此鹅，且不得打破瓶，亦不得损却鹅。泉召云：大夫！大夫应诺。泉云：出也。高峰拈云：南泉潦倒，手眼不亲，纵饶出得，也是死货。高峰只向他道：大夫还曾示人么？才拟祗对，便与乱棒打出。",
+    "interpretation": "南泉以'召大夫—应诺—出也'出鹅——高峰评其'手眼不亲，纵饶出得也是死货'。高峰自己则'才拟祗对便乱棒打出'——不但为大夫脱却鹘臭布衫，更使天下衲僧个个解粘去缚。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-420",
+    "question": "高峰拈古·雪峰鳖鼻蛇",
+    "answer": "雪峰和尚虽惯作窃，争奈诸子不善参随，未免一场败露。",
+    "context": "雪峰示众云：南山有一条鳖鼻蛇，汝等诸人切须好看。时长庆出云：今日堂中大有人丧身失命。云门以拄杖撺向峰前作怕势。后僧举似玄沙，沙云：用南山作么？高峰拈云：雪峰和尚虽惯作窃，争奈诸子不善参随，未免一场败露，至今千载之下恶声犹在。",
+    "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆云丧身失命，云门作怕势，玄沙云用南山作么。高峰评雪峰'惯作窃'但诸子'不善参随'——一场勘验反成败露，千载之下恶声犹在。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-421",
+    "question": "高峰拈古·德山末后句",
+    "answer": "佛祖机缘，古今公案，其中誵讹，无出于此。",
+    "context": "雪峰在德山作饭头，见德山托钵出，问'钟未鸣鼓未响托钵向甚处去'，山便回方丈。峰举似岩头，头云'大小德山不会末后句'。山闻令岩头来问，岩密启其意，山明日升堂果与寻常不同。岩抚掌大笑'且喜得老汉会末后句，也只得三年'。高峰拈云：佛祖机缘，古今公案，其中誵讹，无出于此。或谓岩头智过于师故有密启，殊不知犯弥天之咎，万劫遭殃。",
+    "interpretation": "德山末后句是宗门最复杂公案之一——高峰评其为'古今公案誵讹无出于此'。岩头密启其意看似助师，高峰却云'犯弥天之咎万劫遭殃'——师徒之间以心传心本不可说破，说破即落第二义。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-422",
+    "question": "高峰拈古·石巩弓箭",
+    "answer": "石巩张弓，傍若无人；三平承箭，弄巧成拙。半个圣人又作么生？落花片片随流水，流水无心恋落花。",
+    "context": "石巩和尚凡见僧以弓架箭示之。一日三平至，巩云：看箭。三平拨开胸云：此是杀人箭，活人箭又作么生？巩扣弓弦三下，平便作礼。巩云：三十年架一张弓，两只箭只射得半个圣人。遂拗折弓箭。高峰拈云：石巩张弓傍若无人，三平承箭弄巧成拙。然虽如是，半个圣人又作么生？落花片片随流水，流水无心恋落花。",
+    "interpretation": "石巩以弓箭接引学人——三平承箭作礼，石巩云只射得半个圣人。高峰评二人'张弓傍若无人，承箭弄巧成拙'，末后以'落花流水'之句别转一路——半个圣人亦不可得。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-423",
+    "question": "高峰死关辞世",
+    "answer": "来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。",
+    "context": "高峰元贞乙未腊月朔黎明，辞众云：西峰三十年妄谈般若，罪犯弥天，末后有一句子，不敢累及平人，自领去也。大众！还有知落处者么？良久云：毫厘有差，天地悬隔。说偈曰：来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。泊然而寂。",
+    "interpretation": "高峰一生坐断死关，末后以此偈总收摄——'来不入去不出'示生死来去皆不出此死关；'铁蛇钻入海'不可捉摸；'撞倒须弥山'粉碎根本。一生行持尽在此二十字中。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-424",
+    "question": "高峰万法归一悟道",
+    "answer": "狗舔热油铛。",
+    "context": "高峰在双径参堂，梦中断桥所举'万法归一，一归何处'话，疑情顿发三昼夜目不交睫。随众诣三塔讽经次，抬头忽睹五祖演真赞'百年三万六千朝，返覆元来是遮汉'，蓦然打破拖死尸之疑。后雪岩钦问'万法归一，一归何处'，师云：狗舔热油铛。钦云：你那里学虚头来？师云：正要和尚疑着。",
+    "interpretation": "高峰悟道因缘——参'无'字三年不成片，改参'万法归一'六日即悟。悟后答雪岩'狗舔热油铛'——热油铛舔不得放不下，正是疑情成片之喻。'正要和尚疑着'示悟后机锋不让。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-425",
+    "question": "高峰参禅三要",
+    "answer": "一要有大信根，二要有大愤志，三要有大疑情。",
+    "context": "高峰法语：若谓着实参禅，决须具足三要。第一要有大信根，明知此事如靠一座须弥山。第二要有大愤志，如遇杀父冤仇直欲便与一刀两段。第三要有大疑情，如暗他做了一件极事正在欲露未露之时。十二时中果能具此三要，管取克日成功，不怕瓮中走鳖。苟阙其一，譬如折足之鼎，终成废器。",
+    "interpretation": "高峰以三要总摄参禅工夫——信根如须弥不可动摇，愤志如遇杀父冤仇一刀两段，疑情如欲露未露之时。三要缺一即成废器，此是高峰一生经验之谈。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-426",
+    "question": "高峰三关语",
+    "answer": "大彻底人本脱生死，因甚命根不断？佛祖公案只是一个道理，因甚有明与不明？大修行人当遵佛行，因甚不守毗尼？",
+    "context": "高峰在死关，有三关语以验学者：大彻底人本脱生死，因甚命根不断？佛祖公案只是一个道理，因甚有明与不明？大修行人当遵佛行，因甚不守毗尼？倘下语不契，遂闭门弗接。",
+    "interpretation": "高峰三关语验学者——非具大根大志者不能下语。三关层层逼拶：第一关勘生死是否真透，第二关勘悟境是否分明，第三关勘行持是否相应。下语不契即闭门不接，门户险绝如此。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-427",
+    "question": "高峰评雪峰鳖鼻蛇颂古",
+    "answer": "雪峰和尚虽惯作窃，争奈诸子不善参随。",
+    "context": "高峰颂古：雪峰示众云南山有一条鳖鼻蛇。长庆云今日堂中大有人丧身失命。云门以拄杖撺向峰前作怕势。玄沙云用南山作么。高峰拈云：雪峰惯作窃，诸子不善参随，一场败露，千载恶声。",
+    "interpretation": "雪峰鳖鼻蛇公案——长庆、云门、玄沙三人各出手眼，高峰评雪峰'惯作窃'但诸子'不善参随'。一则公案四尊宿各呈己见，高峰总评之。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-428",
+    "question": "高峰颂赵州无字",
+    "answer": "赵州狗子佛性无，十分春色播江湖。几多摘叶寻枝客，空使洛阳花满途。",
+    "context": "高峰颂赵州无字示陈太尉：澄潭千载毒龙蟠，倒岳倾湫谁解看？直下一刀成两段，虚空粉碎髑髅乾。又颂：赵州狗子佛性无，十分春色播江湖。几多摘叶寻枝客，空使洛阳花满途。",
+    "interpretation": "高峰颂赵州无字——'直下一刀成两段，虚空粉碎髑髅乾'示参'无'字须一刀两段；'几多摘叶寻枝客，空使洛阳花满途'斥后人于'无'字上摘叶寻枝，不知本干。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-429",
+    "question": "高峰颂万法归一",
+    "answer": "四面洪波万丈深，上天无路地无门。个中有理应难诉，不是愁人也断魂。",
+    "context": "高峰颂万法归一一归何处：四面洪波万丈深，上天无路地无门。个中有理应难诉，不是愁人也断魂。",
+    "interpretation": "高峰颂万法归一——'四面洪波万丈深，上天无路地无门'正是疑情成片时无路可走之境界。疑到此处，蓦然爆破即是大悟。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-430",
+    "question": "高峰示徒三戒",
+    "answer": "开口动舌，无益于人，戒之莫言。举心动念，无益于人，戒之莫起。举足动步，无益于人，戒之莫行。",
+    "context": "高峰示徒三戒：开口动舌，无益于人，戒之莫言。举心动念，无益于人，戒之莫起。举足动步，无益于人，戒之莫行。",
+    "interpretation": "高峰三戒总摄身口意——开口无益戒之莫言，动念无益戒之莫起，举足无益戒之莫行。三业清净方能参究此事，非仅坐禅而已。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-431",
+    "question": "高峰评丹霞烧木佛",
+    "answer": "丹霞烧木佛，为寒所逼，岂有他哉？若作佛法商量，管取入地狱如箭。",
+    "context": "丹霞因过一院值凝寒，于殿中见木佛取烧火。院主诃责：何得烧我木佛？霞以杖拨灰云：吾烧取舍利。院主云：木佛何有舍利？霞云：既无舍利，更请两尊再取烧之。院主自后眉须堕落。高峰拈云：丹霞烧木佛为寒所逼岂有他哉？院主眉须堕落偶尔成文何足疑矣？若作佛法商量，管取入地狱如箭。",
+    "interpretation": "丹霞烧木佛是宗门著名公案——高峰评丹霞'为寒所逼岂有他哉'，评院主'眉须堕落偶尔成文'。末后警云'若作佛法商量管取入地狱如箭'——不可作道理会。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
   },
 ];
 
@@ -27246,40 +27424,10 @@ export const ZEN_FAQS: FAQItem[] = [
       ]
   },
 
-  {
-    "id": "faq-2232",
-    "question": "什么是死关？",
-    "answer": "死关是高峰原妙禅师的独特行持——入张公洞扁其门曰“死关”，不越户十五年。非闭关避世，乃以“死”字逼拶身心，决志不悟即死于此。辞世偈云：“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。”死关非关门窗，乃心关——以必死之志参究本来，不悟不休。",
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "faq-2233",
-    "question": "高峰原妙禅师的万法归一话头怎么参？",
-    "answer": "高峰原妙以“万法归一，一归何处”为根本话头，与赵州“无”字并称宗门两大话头。参法：单单提撕此话头，不涉思量分别，疑到“四面洪波万丈深，上天无路地无门”时，蓦然爆破即是大悟。高峰颂云：“四面洪波万丈深，上天无路地无门。个中有理应难诉，不是愁人也断魂。”",
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "faq-2234",
-    "question": "高峰原妙禅师的三喻是什么意思？",
-    "answer": "高峰法语以三喻示参禅之“切”字工夫：一、如堕千尺井底——从朝至暮单单求出之心；二、如担雪填井——不惮寒暑不分昼夜；三、如死罪人逃狱——一往直前了无所畏。三喻皆示参禅须发大愤志、起大疑情，单单一念更无二念。",
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "faq-2235",
-    "question": "高峰原妙禅师如何评价赵州勘婆子？",
-    "answer": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子。高峰别具只眼，云“正是婆子勘破赵州”——赵州自以为勘破，实则被婆子“蓦直去”一语勘破。高峰下断语：“毕竟以何为验？以手指云：蓦直去。”",
-    "relatedBooks": ["gaofengyulu"]
-  },
 
-  {
-    "id": "faq-2236",
-    "question": "高峰原妙禅师如何评价即心是佛？",
-    "answer": "僧举马祖“即心是佛”语，众中商量皆谓心本是佛。高峰痛斥：“苦哉！若作遮般见解，吃铁棒有分在。”即心是佛非道理会，作“心本是佛”解即落识情。高峰下断语：“石压笋斜出，崖悬花倒生”——道理压不住真机。",
-    "relatedBooks": ["gaofengyulu"]
-  },
 
   {
     "id": "faq-2237",
@@ -27419,5 +27567,110 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《紫柏老人别集》和《紫柏尊者全集》有什么区别？",
     "answer": "《紫柏老人别集》是《紫柏尊者全集》之补遗——取全集所未载者排为四卷：卷一杂文（阿赖识四分略解、前五识略解、天池山煆昏散道场说等）、卷二赞偈诗、卷三书问、卷四语录及附录跋。由钱谦益纂阅，契颖寿梓。别集所载为紫柏中年之作，白衣弟子缪仲淳、周季华、周子介执侍左右手自缮写者。",
     "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2257",
+    "question": "高峰原妙禅师的悟道因缘是怎样的？",
+    "answer": "高峰原妙（1238-1295），俗姓徐，苏州吴江人。十五岁出家，先习天台教不契，入净慈立三年死限学禅。参断桥伦，令参'生从何来，死从何去'。后参雪岩祖钦，令看无字。钦问'阿谁与你拖个死尸来'即打。后上双径参堂，梦中断桥所举'万法归一，一归何处'话，疑情顿发三昼夜目不交睫。随众诣三塔讽经次，抬头忽睹五祖演真赞'百年三万六千朝，返覆元来是遮汉'，蓦然打破拖死尸之疑，年二十四。悟后入龙须山九年苦行，因同宿友推枕堕地作声廓然大彻。后住天目山师子岩死关十五年，元贞乙未腊月朔说偈坐亡。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2258",
+    "question": "什么是死关？",
+    "answer": "死关是高峰原妙禅师的独特行持——入天目山师子岩石洞，扁其门曰'死关'，不越户十五年。非闭关避世，乃以'死'字逼拶身心，决志不悟即死于此。洞非梯莫登，撤梯断缘，绝给侍，屏服用，不澡身，不薙发，截瓮为铛，并日一食。又有三关语以验学者：大彻底人本脱生死因甚命根不断？佛祖公案只是一个道理因甚有明与不明？大修行人当遵佛行因甚不守毗尼？下语不契则闭门不接。辞世偈云'来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山'。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2259",
+    "question": "高峰原妙禅师的万法归一话头怎么参？",
+    "answer": "高峰以'万法归一，一归何处'为根本话头，与赵州'无'字并称宗门两大话头。高峰自述参'无'字三年不成片，改参'一归何处'即一举便有——'一归何处'疑情易发，一举便有，不待返覆思惟计较作意。参法：单单提撕此话头，不涉思量分别。疑情稍稍成片，便无能为之心，既无能为之心，所思即忘，万缘不息而自息，六窗不静而自静，不犯纤尘，顿入无心三昧。高峰颂云'四面洪波万丈深，上天无路地无门。个中有理应难诉，不是愁人也断魂'——正是疑情成片时无路可走之境界。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2260",
+    "question": "高峰原妙禅师的参禅三要是什么？",
+    "answer": "高峰法语云：若谓着实参禅，决须具足三要。第一要有大信根，明知此事如靠一座须弥山。第二要有大愤志，如遇杀父冤仇直欲便与一刀两段。第三要有大疑情，如暗他做了一件极事正在欲露未露之时。十二时中果能具此三要，管取克日成功，不怕瓮中走鳖。苟阙其一，譬如折足之鼎，终成废器。三要缺一即成废器，此是高峰一生经验之谈。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2261",
+    "question": "高峰原妙禅师如何评价赵州勘婆子？",
+    "answer": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子。高峰别具只眼，云'正是婆子勘破赵州'——赵州自以为勘破，实则被婆子'蓦直去'一语勘破。高峰下断语'毕竟以何为验？以手指云：蓦直去'——婆子始终在'蓦直去'处，赵州反落在'勘过'里。此评翻诸方之案，别具只眼。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2262",
+    "question": "高峰原妙禅师如何评价即心是佛？",
+    "answer": "僧举马祖'即心是佛'语，众中商量皆谓心本是佛，佛外无心。高峰痛斥'苦哉！苦哉！若作遮般见解，明后日吃铁棒有分在'。即心是佛非道理会，作'心本是佛'解即落识情。高峰下断语'石压笋斜出，崖悬花倒生'——道理如石压笋，笋从旁边斜出；如悬崖之花，倒挂着生长——道理压不住真机。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2263",
+    "question": "疑情与昏散是什么关系？如何对治？",
+    "answer": "高峰云'疑以信为体，悟以疑为用。信有十分，疑有十分；疑得十分，悟得十分'——疑情以信心为本体，悟道以疑情为功用。高峰自述参'无'字时'常与昏散二魔辊作一团，做尽伎俩打屏不去'，改参'一归何处'后'疑情稍稍成片便无能为之心，所思即忘，万缘不息而自息'——疑情成片则昏散自息，不须别治昏散。如水涨船高，泥多佛大。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2264",
+    "question": "高峰原妙禅师的克期取证是什么意思？",
+    "answer": "克期取证是高峰之参禅方法——以限期逼拶自己决定悟道。高峰法语云'大限九旬，小限七日'，以结制期为克期之限。又云'如善射者仰箭射空，复以后箭射前箭筈，筈筈承箭，箭箭中筈，住于空中经久不堕，盖是精进之功'——克期取证非缓缓用工，乃以精进之力前后相资，如箭箭相承不堕。又云'如人负重过急流溪，行至中间忽遇黑风暴雨，退亦不能进亦不能，拟议之间丧身失命'——置于无退路处逼拶疑情爆破。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2265",
+    "question": "高峰原妙禅师的三关语是什么？",
+    "answer": "高峰在死关有三关语以验学者：一、大彻底人本脱生死，因甚命根不断？二、佛祖公案只是一个道理，因甚有明与不明？三、大修行人当遵佛行，因甚不守毗尼？三关层层逼拶：第一关勘生死是否真透，第二关勘悟境是否分明，第三关勘行持是否相应。下语不契遂闭门弗接，非具大根大志者不能入死关。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2266",
+    "question": "高峰原妙禅师的示徒三戒是什么？",
+    "answer": "高峰示徒三戒：开口动舌，无益于人，戒之莫言。举心动念，无益于人，戒之莫起。举足动步，无益于人，戒之莫行。三戒总摄身口意——开口无益戒之莫言，动念无益戒之莫起，举足无益戒之莫行。三业清净方能参究此事，非仅坐禅而已。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2267",
+    "question": "高峰原妙禅师与雪岩祖钦的关系如何？",
+    "answer": "高峰原妙为雪岩祖钦之嗣法弟子。高峰参雪岩钦，钦令看无字，忽问'阿谁与你拖个死尸来'即打，如是者不知其几。后高峰悟道，钦问'万法归一，一归何处'，师云'狗舔热油铛'，钦云'你那里学虚头来'，师云'正要和尚疑着'——自此机锋不让。钦又问'日间浩浩作得主么'、'睡梦中作得主么'，师皆云'作得主'。钦再问'正睡着时无梦无想无见无闻主在甚处'，师无语。钦嘱云'从今不责汝学佛学法，只饥饭困眠才觉抖擞精神，看此际主人翁竟何在'——此是高峰入龙须九年苦行之缘起。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2268",
+    "question": "高峰原妙禅师评德山末后句公案有何独到见解？",
+    "answer": "德山末后句公案：雪峰在德山作饭头，见德山托钵出，问'钟未鸣鼓未响托钵向甚处去'，山便回方丈。峰举似岩头，头云'大小德山不会末后句'。山闻令岩头来问，岩密启其意，山明日升堂果与寻常不同。岩抚掌大笑'且喜得老汉会末后句，也只得三年'。高峰评云'佛祖机缘古今公案其中誵讹无出于此'——或谓岩头智过于师故有密启，高峰却云'殊不知犯弥天之咎万劫遭殃'——师徒之间以心传心本不可说破，说破即落第二义。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2269",
+    "question": "高峰原妙禅师的辞世偈是什么意思？",
+    "answer": "高峰辞世偈云'来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山'。'来不入去不出'示生死来去皆不出此死关——一生坐断死关，来也在此去也在此。'铁蛇钻入海'不可捉摸——示泊然而寂非言语可及。'撞倒须弥山'粉碎根本——示悟境之透脱。一生行持尽在此二十字中，诚末法光明幢也。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2270",
+    "question": "高峰原妙禅师评丹霞烧木佛公案有何深意？",
+    "answer": "丹霞烧木佛公案：丹霞因寒取木佛烧火，院主诃责，霞云'吾烧取舍利'，院主云'木佛何有舍利'，霞云'既无舍利更请两尊再取烧之'，院主自后眉须堕落。高峰评云'丹霞烧木佛为寒所逼岂有他哉？院主眉须堕落偶尔成文何足疑矣？若作佛法商量管取入地狱如箭'——高峰之意：丹霞烧佛非有意烧佛，为寒所逼而已；院主眉须堕落亦非因果报应，偶尔成文。若作佛法道理商量，反入地狱如箭——不可作道理会。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2271",
+    "question": "《高峰原妙禅师语录》的结构和内容是什么？",
+    "answer": "《高峰原妙禅师语录》二卷，卍续藏第70册No.1400。卷上载：元序（云栖袾宏撰）、双髻庵法语、师子禅寺法语、示众开示、示禅人法语。卷下载：拈古（约30则，评唱世尊拈花、云门打杀、马祖即心、百丈野狐、赵州勘婆、赵州无字、赵州万法归一、南泉鹅儿、雪峰鳖鼻蛇、德山末后句、石巩弓箭等古则）、颂古（约20则，以诗偈重显达磨付法、六祖不会、马祖即心、赵州无字、万法归一等）、补遗法语、偈颂（示徒、辞世等）、小佛事（火葬法语）、赞佛祖、自赞、行状二篇、塔铭。",
+    "relatedBooks": ["gaofengyulu"]
   },
 ];
