@@ -1473,7 +1473,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature", "ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["yunmen", "deshan-xuanjian", "xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu", "xuanshaguanglu"]
+    "relatedBooks": ["xuefengyulu", "xuanshayulu", "xuanshaguanglu"]
   },
   {
     "id": "deshan-xuanjian",
@@ -7996,6 +7996,33 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["gaofengyulu"]
   },
+
+  {
+    "id": "aoshan-chengdao",
+    "title": "鳌山成道",
+    "category": "悟道因缘",
+    "summary": "雪峰义存禅师悟道公案。雪峰与岩头全豁、钦山文邃同行参方，至鳌山阻雪，雪峰终日危坐，岩头鼾睡如雷。雪峰诉参德山之疑，岩头一语点破，雪峰忽悟德山所示之旨，叹曰：“鳌山成道，何处不通。”此为雪峰悟道之关键因缘。",
+    "etymology": "鳌山为雪峰悟道之地，因以为名。",
+    "quotes": ["鳌山成道，何处不通。—雪峰义存"],
+    "guidance": "悟道不在行脚遍参，在于一言之下桶底脱落——鳌山之雪、德山之棒，皆是因缘。",
+    "classicRef": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+  {
+    "id": "zhenru-shiyi",
+    "title": "真如十一名目",
+    "category": "心性根源",
+    "summary": "雪峰义存禅师为闽王王审知所说真如之十一种异名：一佛性、二真如、三玄旨、四清净法身界、五灵台、六真魂、七赤子、八大圆镜智、九空宗、十第一义、十一白净识。此十一名皆指一心，为帝王开示一心法门之要。",
+    "etymology": "雪峰为闽王说真如之十一种名目，皆一心之异名。",
+    "quotes": ["一名佛性，二名真如，三名玄旨，四名清净法身界，五名灵台，六名真魂，七名赤子，八名大圆镜智，九名空宗，十名第一义，十一名白净识。—雪峰义存"],
+    "guidance": "十一名皆指一心——识得一名即识全体，不须遍求十一名。",
+    "classicRef": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature", "buddha-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13924,6 +13951,84 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-388",
+    "question": "雪峰鳌山成道",
+    "answer": "鳌山成道，何处不通。",
+    "context": "雪峰与岩头、钦山同行参方，至鳌山阻雪。雪峰终日危坐，岩头鼾睡如雷。雪峰诉参德山之疑，岩头一语点破，雪峰忽悟。",
+    "interpretation": "雪峰行脚多年未悟，在鳌山阻雪时被岩头一语点破，叹“鳌山成道，何处不通”——悟道不在行脚遍参，在于一言之下桶底脱落。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-389",
+    "question": "雪峰见性成佛",
+    "answer": "须是见性，方得成佛。",
+    "context": "闽王王审知请雪峰与玄沙入内论佛心印，问诸佛达磨所传秘密心印。雪峰直答须见性方得成佛。",
+    "interpretation": "帝王问成佛之道，雪峰不谈修福造寺，直指见性——见自本性，无物可见，此是难信之法。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-390",
+    "question": "雪峰福尽即堕",
+    "answer": "不得成佛。但是有作之心，皆是轮回。福尽即堕。",
+    "context": "闽王问造寺修福布施度僧还得成佛否，雪峰直言不得，但得生天报，福尽即堕。",
+    "interpretation": "有为功德感人天福报，福尽还堕，不出轮回——成佛惟在见性，非造作可得。此与达摩答梁武帝“并无功德”同一宗旨。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-391",
+    "question": "雪峰悟即刹那",
+    "answer": "悟即刹那间，不悟尘沙劫。",
+    "context": "雪峰对闽王说见性之法，称扬此事非言语可尽。",
+    "interpretation": "悟则一刹那间转凡成圣，不悟则尘沙劫轮回不息——迷悟之间，天地悬隔。达磨亲传只是一言，千经万论皆指归一心。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-392",
+    "question": "雪峰三毬",
+    "answer": "三毬堂中，一毬一世界。",
+    "context": "雪峰山道场有三毬堂，为接引学人处。雪峰常以三毬示众。",
+    "interpretation": "三毬堂为雪峰道场标志——三毬喻三界、喻三身、喻三句，接引学人于此处转身。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-393",
+    "question": "雪峰南山鳖鼻蛇",
+    "answer": "南山有一条鳖鼻蛇，汝等诸人切须好看。",
+    "context": "雪峰示众云南山有一条鳖鼻蛇，长庆云今日堂中大有人丧身失命，云门以拄杖撛向峰前作怕势。",
+    "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆识得丧身失命，云门以拄杖直面，玄沙云“用南山作么”。一则公案，三尊宿各出手眼。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
   },
 ];
 
@@ -26787,5 +26892,40 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "高峰原妙禅师如何评价即心是佛？",
     "answer": "僧举马祖“即心是佛”语，众中商量皆谓心本是佛。高峰痛斥：“苦哉！若作遮般见解，吃铁棒有分在。”即心是佛非道理会，作“心本是佛”解即落识情。高峰下断语：“石压笋斜出，崖悬花倒生”——道理压不住真机。",
     "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2237",
+    "question": "雪峰义存禅师的鳌山成道是怎么回事？",
+    "answer": "雪峰义存与岩头全豁、钦山文邃同行参方，至鳌山阻雪。雪峰终日危坐，岩头鼾睡如雷。雪峰诉参德山之疑，岩头一语点破，雪峰忽悟德山所示之旨，叹曰“鳌山成道，何处不通”。此为雪峰悟道之关键因缘——悟道不在行脚遍参，在于一言之下桶底脱落。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2238",
+    "question": "雪峰义存禅师为闽王说的真如十一名目是什么？",
+    "answer": "雪峰为闽王王审知说真如之十一种异名：一佛性、二真如、三玄旨、四清净法身界、五灵台、六真魂、七赤子、八大圆镜智、九空宗、十第一义、十一白净识。此十一名皆指一心，为帝王开示一心法门之要。识得一名即识全体，不须遍求十一名。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2239",
+    "question": "雪峰义存禅师如何评价修福造寺？",
+    "answer": "闽王问造寺修福布施度僧还得成佛否，雪峰直言“不得成佛，但是有作之心，皆是轮回”。修福但得生天报、福寿报，福尽即堕。成佛惟在见性——此与达摩答梁武帝“并无功德”同一宗旨。有为功德不出轮回，唯见性方真。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2240",
+    "question": "雪峰义存禅师在禅宗史上的地位如何？",
+    "answer": "雪峰义存（822-908），泉州南安人，参德山宣鉴开悟。住福州雪峰山，座下常一千五百众，闽王王审知请为安国禅院开山。门下出云门文偃开云门宗、玄沙师备传法眼宗——一雪峰法门开出云门、法眼二宗，为五代禅宗中心人物，法脉之广为六祖以后之最。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2241",
+    "question": "雪峰义存禅师的南山鳖鼻蛇公案是什么？",
+    "answer": "雪峰示众云“南山有一条鳖鼻蛇，汝等诸人切须好看”。长庆出云“今日堂中大有人丧身失命”，云门以拄杖撛向峰前作怕势，玄沙云“用南山作么”。一则公案，三尊宿各出手眼——雪峰以鳖鼻蛇勘验学人，三尊宿各呈己见。",
+    "relatedBooks": ["xuefengyulu"]
   },
 ];
