@@ -2319,7 +2319,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["xueyan-zuqin", "zhongfeng-mingben"],
-    "relatedBooks": ["changuancejin", "huanwuyulu", "zhaozhouyulu"]
+    "relatedBooks": ["gaofengyulu", "changuancejin", "huanwuyulu", "zhaozhouyulu"]
   },
   {
     "id": "zhenjing-kewen",
@@ -3228,7 +3228,22 @@ export const ZEN_PERSONS: PersonItem[] = [
       "relatedBooks": [
           "xuanshayulu"
       ]
-  }
+  },
+
+  {
+    "id": "duanqiao-lun",
+    "name": "断桥伦",
+    "title": "高峰原妙初参之师",
+    "era": "南宋",
+    "lifeStory": "断桥伦禅师，高峰原妙初参之师。高峰入净慈立三年死限学禅后，参断桥伦，令参“生从何来，死从何去”话头。高峰胁不至席，口体俱忘，然未大悟。",
+    "teachings": "令高峰参“生从何来，死从何去”话头，为高峰参禅之启蒙。",
+    "quotes": [],
+    "classics": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": []
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -7966,8 +7981,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
           "xuanshaguanglu",
           "xuanshayulu"
       ]
-  }
+  },
 
+  {
+    "id": "siquan",
+    "title": "死关",
+    "category": "禅修行持",
+    "summary": "高峰原妙禅师之独特行持——入张公洞扁其门曰“死关”，不越户十五年。非闭关避世，乃以“死”字逼拶身心，决志不悟即死于此。辞世偈云：“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。”",
+    "etymology": "以“死”字为关，逼拶自己于悟道为止。",
+    "quotes": ["来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。—高峰原妙"],
+    "guidance": "死关非关门窗，乃心关——以必死之志参究本来，不悟不休。",
+    "classicRef": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13818,7 +13846,85 @@ export const ZEN_KOANS: KoanItem[] = [
       "relatedBooks": [
           "xuanshaguanglu"
       ]
-  }
+  },
+
+  {
+    "id": "koan-382",
+    "question": "高峰死关",
+    "answer": "来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。",
+    "context": "高峰原妙辞世偈。一生坐断死关，末后以铁蛇入海、撞倒须弥之句告众坐亡——生死来去皆不出此死关，以决志之死功透脱生死根本。",
+    "interpretation": "高峰以“死”字为参禅决志，不悟即死于此。铁蛇钻入海——不可捉摸；撞倒须弥——粉碎根本。此偈是高峰一生行持之总收摄。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-383",
+    "question": "高峰万法归一",
+    "answer": "万法归一，一归何处？",
+    "context": "高峰常以“万法归一，一归何处”为话头接引学人。此话头逼拶学人于“一”之归处起大疑情。",
+    "interpretation": "万法归一是理，一归何处是疑——疑到无路可走时，蓦然爆破即是大悟。高峰以此话头与赵州无字并传。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-384",
+    "question": "高峰评赵州勘婆",
+    "answer": "正是婆子勘破赵州。",
+    "context": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子，高峰则云“正是婆子勘破赵州”。",
+    "interpretation": "高峰别具只眼：赵州自以为勘破，实则被婆子“蓦直去”一语勘破。毕竟以何为验？以手指云：蓦直去。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-385",
+    "question": "高峰评即心是佛",
+    "answer": "苦哉！若作遮般见解，吃铁棒有分在。",
+    "context": "僧举马祖“即心是佛”语，众中商量皆谓心本是佛。高峰痛斥此解。",
+    "interpretation": "即心是佛非道理会，作“心本是佛”解即落识情。高峰下断语：石压笋斜出，崖悬花倒生——道理压不住真机。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-386",
+    "question": "高峰三喻",
+    "answer": "参禅如堕千尺井底，如担雪填井，如死罪人逃狱。",
+    "context": "高峰法语以三喻示参禅之“切”字工夫。",
+    "interpretation": "堕井唯求出、填井不惮寒暑、逃狱一往直前——三喻皆示参禅须发大愤志、起大疑情，单单一念更无二念。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-387",
+    "question": "高峰悬崖",
+    "answer": "向悬崖峭壁无栖泊处立。",
+    "context": "高峰示参禅须向最难处用力。",
+    "interpretation": "舍易就难——三面平夷是寻常路，悬崖无栖泊处方是向上事。高峰教人跳来跳去，跳到人法俱忘、心识路绝，蓦然踏翻大地。",
+    "master": "高峰原妙",
+    "source": "高峰原妙禅师语录",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedBooks": ["gaofengyulu"]
+  },
 ];
 
 export const ZEN_FAQS: FAQItem[] = [
@@ -26646,6 +26752,40 @@ export const ZEN_FAQS: FAQItem[] = [
           "xuanshaguanglu",
           "xuanshayulu"
       ]
-  }
+  },
 
+  {
+    "id": "faq-2232",
+    "question": "什么是死关？",
+    "answer": "死关是高峰原妙禅师的独特行持——入张公洞扁其门曰“死关”，不越户十五年。非闭关避世，乃以“死”字逼拶身心，决志不悟即死于此。辞世偈云：“来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。”死关非关门窗，乃心关——以必死之志参究本来，不悟不休。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2233",
+    "question": "高峰原妙禅师的万法归一话头怎么参？",
+    "answer": "高峰原妙以“万法归一，一归何处”为根本话头，与赵州“无”字并称宗门两大话头。参法：单单提撕此话头，不涉思量分别，疑到“四面洪波万丈深，上天无路地无门”时，蓦然爆破即是大悟。高峰颂云：“四面洪波万丈深，上天无路地无门。个中有理应难诉，不是愁人也断魂。”",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2234",
+    "question": "高峰原妙禅师的三喻是什么意思？",
+    "answer": "高峰法语以三喻示参禅之“切”字工夫：一、如堕千尺井底——从朝至暮单单求出之心；二、如担雪填井——不惮寒暑不分昼夜；三、如死罪人逃狱——一往直前了无所畏。三喻皆示参禅须发大愤志、起大疑情，单单一念更无二念。",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2235",
+    "question": "高峰原妙禅师如何评价赵州勘婆子？",
+    "answer": "赵州勘台山婆子公案，诸方皆谓赵州勘破婆子。高峰别具只眼，云“正是婆子勘破赵州”——赵州自以为勘破，实则被婆子“蓦直去”一语勘破。高峰下断语：“毕竟以何为验？以手指云：蓦直去。”",
+    "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2236",
+    "question": "高峰原妙禅师如何评价即心是佛？",
+    "answer": "僧举马祖“即心是佛”语，众中商量皆谓心本是佛。高峰痛斥：“苦哉！若作遮般见解，吃铁棒有分在。”即心是佛非道理会，作“心本是佛”解即落识情。高峰下断语：“石压笋斜出，崖悬花倒生”——道理压不住真机。",
+    "relatedBooks": ["gaofengyulu"]
+  },
 ];
