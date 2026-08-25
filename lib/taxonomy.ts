@@ -3273,6 +3273,49 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["huqiu-shaolong", "mianxian-xianjie"],
     "relatedBooks": []
   },
+
+  {
+    "id": "zibai-zhenke",
+    "name": "紫柏真可",
+    "title": "明代四大高僧之一 / 禅教会通",
+    "era": "明嘉靖二十一年—万历三十一年 (1543-1603)",
+    "lifeStory": "紫柏真可，俗姓沈，吴江人，字达观，号紫柏。十七岁出家于苏州云岩寺，后行脚参方，遍参诸方尊宿。与憨山德清为法门至交，共议复兴明代佛教——紫柏以刻藏为志，倡印《嘉兴藏》；憨山以弘法为任。一生以慈愿戒力住世，因妖书案牵连入狱，万历三十一年圆寂于狱中，世寿六十一。钱谦益序称其“气宇如王，蹚踏天下”，为明代佛教复兴之关键人物。",
+    "teachings": "紫柏之教以禅教会通为宗——以禅宗直指人心为根本，以唯识教理为解门，以净土念佛为归趣。其《阿赖识四分略解》以唯识解禅，其《天池山煆昏散道场说》以煆炼昏散为工夫。",
+    "quotes": ["气宇如王，蹚踏天下。", "拚幻有之躯，息清流之祸。", "煆昏散。"],
+    "classics": ["紫柏老人别集"],
+    "relatedConcepts": ["chan-jiao-huitong", "weishi-jiechan", "xiahunsan"],
+    "relatedMethods": [],
+    "relatedPersons": ["hanshan-deqing", "qianqianyi"],
+    "relatedBooks": ["zibaibieji"]
+  },
+  {
+    "id": "hanshan-deqing",
+    "name": "憨山德清",
+    "title": "明代四大高僧之一 / 紫柏法门至交",
+    "era": "明嘉靖二十五年—天启三年 (1546-1623)",
+    "lifeStory": "憨山德清，俗姓蔡，安徽全椒人。明代四大高僧之一，与紫柏真可为法门至交。共议复兴明代佛教——紫柏刻藏，憨山弘法。著有《憨山老人梦游集》。曾为紫柏撰塔铭，含嚼齿舌间，所谓“我闻有命，不敢以告人”。",
+    "teachings": "憨山之教兼通禅教净，以弘法为任，为明代佛教复兴之重要人物。",
+    "quotes": [],
+    "classics": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": []
+  },
+  {
+    "id": "qianqianyi",
+    "name": "钱谦益",
+    "title": "明末清初文士 / 紫柏别集纂阅者",
+    "era": "明万历十年—清康熙三年 (1582-1664)",
+    "lifeStory": "钱谦益，字受之，号牧斋，虞山白衣私淑弟子。纂阅《紫柏尊者别集》，为序称紫柏“气宇如王，蹚踏天下”。明末清初文坛领袖，为紫柏别集之编纂者。",
+    "teachings": "",
+    "quotes": [],
+    "classics": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": []
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -8092,6 +8135,46 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["banghe", "kanhua-chan-concept"],
     "relatedPersons": ["mianxian-xianjie"],
     "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "chan-jiao-huitong",
+    "title": "禅教会通",
+    "category": "教理宗风",
+    "summary": "紫柏真可禅师之核心教理主张——以禅宗直指人心为根本，以唯识教理为解门，以净土念佛为归趣。禅是佛心，教是佛语，净是佛行——三者本是一佛之全体，不可割裂。紫柏以《阿赖识四分略解》以唯识解禅，示禅教会通之典范。",
+    "etymology": "禅教本是一佛之全体——禅是心，教是语，净是行，会而通之。",
+    "quotes": ["禅是佛心，教是佛语，净是佛行。—紫柏真可"],
+    "guidance": "禅教会通非混滥——须以禅悟为根本，以教理为解门，以净土为归趣，三者相资而不相碍。",
+    "classicRef": "紫柏老人别集",
+    "relatedConcepts": ["weishi-jiechan", "self-nature"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+  {
+    "id": "weishi-jiechan",
+    "title": "唯识解禅",
+    "category": "教理宗风",
+    "summary": "紫柏真可以唯识教理解释禅宗心性之方法——以八识四分解禅宗所悟之心，示“识有四分”之精微。相分是所缘，见分是能缘，自证分是能证，证自证分是究竟——唯识之精微与禅宗之直指相得益彰。",
+    "etymology": "以唯识八识四分之教理解释禅宗心性。",
+    "quotes": ["阿赖识四分略解、前五识略解。—紫柏真可"],
+    "guidance": "唯识解禅非以教代禅——须以教理为解门，以禅悟为证入，教禅相资而不相碍。",
+    "classicRef": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+  {
+    "id": "xiahunsan",
+    "title": "煆昏散",
+    "category": "禅修心法",
+    "summary": "紫柏真可禅师之独特工夫——煆炼昏沉散乱。昏沉与散乱是参禅两大病：昏沉则心神暗昧，散乱则心神外驰。须以决志逼拶煆炼之，如天池山煆昏散道场，以决志之火煆炼身心，令昏散消落，方有悟分。",
+    "etymology": "煆即煆炼，昏即昏沉，散即散乱——煆炼昏沉散乱两大病。",
+    "quotes": ["天池山煆昏散道场说。—紫柏真可"],
+    "guidance": "煆昏散非止非观——须以决志逼拶，如以火煆金，令昏散消落，心体光洁。",
+    "classicRef": "紫柏老人别集",
+    "relatedConcepts": ["kanhua-chan-concept", "yiqing"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
   },
 ];
 
@@ -14255,6 +14338,84 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["poshapen", "banghe"],
     "relatedPersons": ["mianxian-xianjie"],
     "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-406",
+    "question": "紫柏气宇如王",
+    "answer": "气宇如王，蹚踏天下。",
+    "context": "钱谦益序称紫柏真可“气宇如王，蹚踏天下，机缘闷现从地涌出”。",
+    "interpretation": "紫柏气度如王者，蹚踏天下无碍——非具大丈夫志者不能如此。钱谦益以王者喻紫柏，示其非凡之气度。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-407",
+    "question": "紫柏拚幻有之躯",
+    "answer": "拚幻有之躯，息清流之祸。",
+    "context": "紫柏因妖书案牵连入狱，拚幻有之躯、息清流之祸——以慈愿戒力住世。",
+    "interpretation": "以幻有之身拚死，为平息清流之祸——紫柏以慈愿戒力，舍身护法。此是菩萨行，非凡夫所能。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-408",
+    "question": "紫柏煆昏散",
+    "answer": "煆昏散——以决志之火煆炼身心。",
+    "context": "紫柏著《天池山煆昏散道场说》，以煆炼昏沉散乱为做工夫之要。",
+    "interpretation": "昏沉散乱是参禅两大病，须以决志逼拶煆炼——如以火煆金，令昏散消落，心体光洁，方有悟分。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-409",
+    "question": "紫柏阿赖识四分",
+    "answer": "识有四分——相分、见分、自证分、证自证分。",
+    "context": "紫柏著《阿赖识四分略解》，以唯识八识四分解禅宗心性。",
+    "interpretation": "相分是所缘，见分是能缘，自证分是能证，证自证分是究竟——唯识之精微与禅宗之直指相得益彰。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-410",
+    "question": "紫柏刻藏",
+    "answer": "刻藏为志，倡印嘉兴藏。",
+    "context": "紫柏一生以刻藏为志，倡印《嘉兴藏》，为明代佛教文献保存之最大功臣。",
+    "interpretation": "刻藏非寻常事业——紫柏以一生之志倡印嘉兴藏，使佛典广传不坠，为明代佛教文献保存之最大功臣。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-411",
+    "question": "紫柏与憨山",
+    "answer": "紫柏与憨山为法门至交，共议复兴明代佛教。",
+    "context": "紫柏真可与憨山德清为法门至交，共议复兴明代佛教——紫柏刻藏，憨山弘法。",
+    "interpretation": "紫柏刻藏、憨山弘法——二大高僧分工合作，共议复兴明代佛教。法门至交，千古佳话。",
+    "master": "紫柏真可",
+    "source": "紫柏老人别集",
+    "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibaibieji"]
   },
 ];
 
@@ -27223,5 +27384,40 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "密庵咸杰禅师七处住持是哪些道场？",
     "answer": "密庵一生七镇名山：一、衢州西乌巨山干明禅院；二、衢州大中祥符禅寺；三、建康府蒋山太平兴国禅寺；四、常州褒忠显报华藏禅寺；五、临安府径山兴圣万寿禅寺；六、临安府景德灵隐禅寺；七、明州太白名山天童景德禅寺。七处皆江南名刹，道满天下。",
     "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "faq-2252",
+    "question": "紫柏真可禅师是谁？",
+    "answer": "紫柏真可（1543-1603），俗姓沈，吴江人，字达观，号紫柏，明代四大高僧之一。十七岁出家于苏州云岩寺，与憨山德清为法门至交，共议复兴明代佛教——紫柏以刻藏为志倡印《嘉兴藏》，憨山以弘法为任。因妖书案牵连入狱，万历三十一年圆寂于狱中。钱谦益称其“气宇如王，蹚踏天下”，为明代佛教复兴之关键人物。",
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2253",
+    "question": "什么是禅教会通？",
+    "answer": "禅教会通是紫柏真可禅师的核心教理主张——以禅宗直指人心为根本，以唯识教理为解门，以净土念佛为归趣。禅是佛心，教是佛语，净是佛行——三者本是一佛之全体，不可割裂。紫柏以《阿赖识四分略解》以唯识解禅，示禅教会通之典范。禅教会通非混滥——须以禅悟为根本，以教理为解门，以净土为归趣。",
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2254",
+    "question": "什么是煆昏散？",
+    "answer": "煆昏散是紫柏真可禅师的独特工夫——煆炼昏沉散乱。昏沉与散乱是参禅两大病：昏沉则心神暗昧，散乱则心神外驰。须以决志逼拶煆炼之，如天池山煆昏散道场，以决志之火煆炼身心，令昏散消落，方有悟分。煆昏散非止非观——须以决志逼拶，如以火煆金。",
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2255",
+    "question": "紫柏真可禅师的妖书案是怎么回事？",
+    "answer": "万历三十一年（1603）发生妖书案，紫柏真可因牵连入狱，圆寂于狱中。钱谦益序称紫柏“拚幻有之躯、息清流之祸”——以慈愿戒力住世，舍身护法。妖书案是明代政治大案，紫柏因此殉道，诚明代佛教之金刚栋梁。",
+    "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2256",
+    "question": "《紫柏老人别集》和《紫柏尊者全集》有什么区别？",
+    "answer": "《紫柏老人别集》是《紫柏尊者全集》之补遗——取全集所未载者排为四卷：卷一杂文（阿赖识四分略解、前五识略解、天池山煆昏散道场说等）、卷二赞偈诗、卷三书问、卷四语录及附录跋。由钱谦益纂阅，契颖寿梓。别集所载为紫柏中年之作，白衣弟子缪仲淳、周季华、周子介执侍左右手自缮写者。",
+    "relatedBooks": ["zibaibieji"]
   },
 ];
