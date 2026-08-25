@@ -437,8 +437,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "mazu",
       "huangbo"
     ],
-    "relatedBooks": [
-      "baizhang", "huangbo", "chanyuanqinggui"]
+    "relatedBooks": ["baizhang", "huangbo", "chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "huangbo",
@@ -2569,7 +2568,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": [
       "guifeng-zongmi"
     ],
-    "relatedBooks": ["dongshanyulu", "huanwuyulu", "zuochanyi", "chanyuanqinggui"]
+    "relatedBooks": ["dongshanyulu", "huanwuyulu", "zuochanyi", "chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "buddha",    "name": "释迦牟尼佛",    "title": "佛教教主 / 禅宗法源",    "era": "约公元前6-5世纪",    "lifeStory": "释迦牟尼，迦毗罗卫国净饭王太子，名悉达多。少年睹老病死之相，感悟生死无常，逾城出家，于雪山苦行六年，知苦行非道，受牧女乳糜，于菩提树下端坐思惟，睹明星豁然大悟：\u201c奇哉！一切众生皆具如来智慧德相，但以妄想执着不能证得。\u201d此后说法四十九年，谈经三百余会。灵山会上拈花示众，百万人天罔措，唯摩诃迦叶破颜微笑，佛曰：\u201c吾有正法眼藏，涅槃妙心，实相无相，微妙法门，付嘱摩诃迦叶。\u201d禅宗以心传心之法脉，肇端于此。",    "teachings": "一切众生皆具如来智慧德相；教外别传之旨皆从佛心流出。",    "quotes": ["奇哉！奇哉！一切众生皆具如来智慧德相，但以妄想执着不能证得。"],    "classics": [],    "relatedConcepts": ["buddha-nature", "zhengfa-yancang", "niepan-miaoxin"],    "relatedMethods": [],    "relatedPersons": ["jiaye"],    "relatedBooks": ["lengyanjing"]
@@ -3337,6 +3336,39 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": ["bodhidharma", "huike"],
     "relatedBooks": ["lengqiejing"]
+  },
+  {
+    "id": "dehui",
+    "name": "东阳德辉",
+    "title": "敕修百丈清规重编祖师",
+    "era": "元代 (约1280-1350)",
+    "lifeStory": "德辉禅师，婺州东阳人，号东阳。元代百丈山大智寿圣禅寺住持，临济宗高僧。元统三年（1335年），因丛林清规年久诸方增减不一，奉顺帝圣旨重编《敕修百丈清规》，会萃宋代崇宁宗赜、咸淳惟勉、至大弌咸三家清规之精要，删繁补缺，折衷归一，成九章八卷之定本，由笑隐大訢禅师校正后颁行天下丛林。师住百丈山期间，新建天下师表阁以妥百丈怀海禅师遗像，朝廷赐号百丈为\u201c弘宗妙行禅师\u201d。欧阳玄赞其\u201c以负荷为志，以显扬为业，禅门之孝子忠臣\u201d。",
+    "teachings": "德辉重编清规，宗承百丈遗轨：\u201c佛祖制律创规相须为用，使比丘等外格非内弘道，虽千百群居同堂合席齐一寝食，翕然成伦不混世仪，不挠国宪阴翊王度。\u201d以九章纲纪安众修道，体用兼备，使丛林规度与国家教化相协，成为此后七百年中国禅林之法式。",
+    "quotes": [
+      "佛祖制律创规相须为用，使比丘等外格非内弘道。",
+      "繁者芟讹者正缺者补，互有得失者两存之。 —《敕修百丈清规自序》"
+    ],
+    "classics": [
+      "敕修百丈清规"
+    ],
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu",
+      "baizhang-guisheng"
+    ],
+    "relatedMethods": [
+      "daily-zen",
+      "zuochan"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "chanyuanqinggui",
+      "baizhang"
+    ]
   },
 ];
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -8320,7 +8352,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "禅苑清规",
     "relatedConcepts": ["qinggui", "baizhang-guisheng", "shoujie-hujie", "guata", "jiejia-xiejia"],
     "relatedPersons": ["zongze", "baizhang"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedBooks": ["chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "qinggui",
@@ -8333,7 +8365,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "禅苑清规",
     "relatedConcepts": ["conglin-zhidu", "baizhang-guisheng"],
     "relatedPersons": ["zongze", "baizhang"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedBooks": ["chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "baizhang-guisheng",
@@ -8346,7 +8378,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "禅苑清规·百丈规绳颂",
     "relatedConcepts": ["conglin-zhidu", "qinggui"],
     "relatedPersons": ["baizhang", "zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedBooks": ["chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "zuochanyi-fa",
@@ -8464,7 +8496,82 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["shoujie-hujie"],
     "relatedPersons": ["zongze"],
     "relatedBooks": ["chanyuanqinggui"]
-  }];
+  },
+{
+    "id": "zhuli",
+    "title": "祝厘制度",
+    "category": "清规制度",
+    "summary": "禅宗丛林为国祈福、祝延圣寿之制度。元代《敕修百丈清规》将祝厘章冠于全书之首，规定逢皇帝圣节启建金刚无量寿道场一月日、景命四斋日祝赞、旦望藏殿祝赞、每日祝赞等仪轨。体现出世禅修与报国恩相统一的精神，朝廷特蠲免寺院赋役，僧众以专心修道、祝国延寿为报答。",
+    "etymology": "祝，祈祷颂祝；厘，福也、吉祥。祝厘即祈福祝延吉祥寿算。",
+    "quotes": [
+      "人之所贵在明道，故自古圣君崇吾西方圣人之教，不以世礼待吾徒，尊其道也。 —《敕修百丈清规·祝厘章》",
+      "圣恩广博天地莫穷，必也悟明佛性以归乎至善，发挥妙用以超乎至神。 —《敕修百丈清规·祝厘章》"
+    ],
+    "guidance": "祝厘不仅为外在之仪轨，更是佛子报恩尽心之实践。禅林虽处山林超脱世俗，然沐恩波资护助，日用一饭不忘报恩，以安乐慈化回向世间。",
+    "classicRef": "敕修百丈清规·祝厘章",
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "liangxu",
+    "title": "两序体制",
+    "category": "清规制度",
+    "summary": "禅宗丛林协助住持统领寺务之组织架构，分西序头首与东序知事。西序位列法堂西侧，以修持、行化、辅化为主，设前堂首座、后堂首座、书记、知藏、知客、知浴、知殿、侍者等；东序位列法堂东侧，以行政、经济、劳务营运为主，设都监寺、维那、副寺、典座、直岁等。分工严密，各司其局，使丛林大众井然有序。",
+    "etymology": "两序，僧堂中东西分列之次序；西为头首，东为知事。",
+    "quotes": [
+      "开示众僧故有长老，表仪众僧故有首座，荷负众僧故有监院，调和众僧故有维那，供养众僧故有典座。 —《龟镜文》",
+      "凡两序头首知事，皆为众僧办道而设。 —《敕修百丈清规·两序章》"
+    ],
+    "guidance": "两序职务非为谋求世俗权位，而系全心为十方僧众服务。西序重于弘道阐教，东序重于护持常住，二者相辅相成，维持丛林清修。",
+    "classicRef": "敕修百丈清规·两序章",
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faqi-zhangfa",
+    "title": "丛林法器",
+    "category": "清规制度",
+    "summary": "禅宗丛林用于聚集大众、宣示号令、警醒昏惰之音声器具体系。《敕修百丈清规·法器章》系统详述大钟、僧堂钟、殿钟、大版、小版、木鱼、椎、磬、铙钹及六种鼓（法鼓、茶鼓、斋鼓、普请鼓、更鼓、浴鼓）之击奏法式与修持寓意。大钟晓击破长夜警睡眠、暮击觉昏衢，一百八下除百八烦恼；木鱼昼夜常醒警昏惰；文殊白椎昭示法王正令。",
+    "etymology": "梵语犍椎，泛指瓦木铜铁之有声者；法器，助法成道之器物。",
+    "quotes": [
+      "大钟晓击则破长夜警睡眠，暮击则觉昏衢疏冥昧。 —《敕修百丈清规·法器章》",
+      "鱼昼夜常醒，刻木象形击之，所以警昏惰也。 —《敕修百丈清规·法器章》"
+    ],
+    "guidance": "法器音声即是无间说法，鸣扣之间须心存专注与慈悲，声声回向法界众生。听闻钟磬鱼版之声，当即摄心息念，随法器号令而起行止。",
+    "classicRef": "敕修百丈清规·法器章",
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+];
 
 export const ZEN_METHODS: MethodItem[] = [
   {
@@ -8550,7 +8657,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "dazhu-huihai",
       "baizhang"
     ],
-    "relatedBooks": ["mazu", "dunwu", "baizhang", "huangbo", "shenhui"]
+    "relatedBooks": ["mazu", "dunwu", "baizhang", "huangbo", "shenhui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "jiefeng",
@@ -16750,7 +16857,113 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["yibai-ershi-wen", "gui-jing-wen"],
     "relatedPersons": ["zongze"],
     "relatedBooks": ["chanyuanqinggui"]
-  }];
+  },
+{
+    "id": "koan-592",
+    "question": "如何是法王法？",
+    "answer": "谛观法王法，法王法如是。",
+    "context": "《敕修百丈清规·法器章·椎》载：世尊一日升座，大众集定。文殊菩萨白椎云：\u201c谛观法王法，法王法如是！\u201d世尊便下座。清规以此为住持说法、僧堂白椎之祖述。",
+    "interpretation": "世尊未开金口已说尽法要，文殊一槌击下更不留余地。法王大法本自圆成如如不动，才涉唇吻即落第二义。文殊白椎，世尊下座，如行云流水，当下截断一切分别思量。",
+    "master": "文殊师利",
+    "source": "敕修百丈清规·法器章",
+    "relatedConcepts": [
+      "faqi-zhangfa",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "koan-593",
+    "question": "巴陵如何为云门作忌？",
+    "answer": "巴陵三转语报答云门深恩。",
+    "context": "《敕修百丈清规·尊祖章·嗣法师忌》载：\u201c先德唯激扬宗乘发明自己，开示后学知有授受，以报恩也。如巴陵三转语为云门作忌，前辈深有意焉。\u201d昔巴陵颢鉴禅师以三转语（鸡寒上树、金将火试、透网金鳞）呈云门，云门曰：\u201c他日我不患无后矣，开忌日不用肉，但读此三转语供养我足矣。\u201d",
+    "interpretation": "世人祭祖以牲醴香华，禅门祭祖以自性心印。巴陵三转语透彻云门宗风，云门闻之喜其得人，以真悟为最好供养。清规引此明嗣法师忌之重在激扬宗乘、发扬己悟，非仅世俗追远之文也。",
+    "master": "云门文偃",
+    "source": "敕修百丈清规·尊祖章",
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "yunmen"
+    ]
+  },
+  {
+    "id": "koan-594",
+    "question": "百丈山因何得为天下师表？",
+    "answer": "法王居之，天下师表。",
+    "context": "《敕修百丈清规·附录·天下师表阁记》载：唐异人司马头陀善相地理，见百丈山冈峦斗拔、气象非凡，留下钤记云：\u201c法王居之，天下师表。\u201d后百丈怀海禅师移居此山，开辟禅林，创制清规，天下丛林尽宗其制，符司马头陀之悬记。元代德辉禅师遂于山中建\u201c天下师表阁\u201d以尊祖德。",
+    "interpretation": "百丈不立佛殿唯立虚堂，僧堂普请天下均力，开中国禅林千古独立之基。司马头陀之预言非仅指山川形胜，实悬指百丈清规将为普天下学人所依止轨范。法王居之，人法相应，千秋师表。",
+    "master": "百丈怀海",
+    "source": "敕修百丈清规·天下师表阁记",
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
+  },
+  {
+    "id": "koan-595",
+    "question": "程明道过定寺见斋堂仪，因何叹礼乐尽在是？",
+    "answer": "三代礼乐，尽在是矣！",
+    "context": "《敕修百丈清规·敕修叙》欧阳玄引：宋代大儒程明道先生一日过定林寺，偶见僧众斋堂过堂之仪——千百大众食时无声，起止有序，整肃威仪，喟然叹曰：\u201c三代礼乐，尽在是矣！\u201d",
+    "interpretation": "儒家寻觅三代礼乐之盛，不意于禅门丛林日常过堂中亲见。清规以戒律威仪内摄身心，千人共食而寂无杂响，行止步武秩然如一。外显严整礼法，内蕴安详觉照，体现禅宗行住坐卧皆是道场之大机大用。",
+    "master": "百丈怀海",
+    "source": "敕修百丈清规·欧阳玄叙",
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "koan-596",
+    "question": "百丈迁化后大众同记五事有何深意？",
+    "answer": "欲清其流，在澄其本；后来绍续，永愿遵崇。",
+    "context": "《敕修百丈清规·唐洪州百丈山故怀海禅师塔铭》侧记：百丈大智禅师迁化后，大众同议革除山门久远积弊，立碑定五事：一塔院常请一大僧及一沙弥洒扫；二地界内不得置尼台尼坟塔及容俗家居止；三出家童行悉令依院主一人不得各受；四界外不得置庄园田地；五住山徒众不得内外私置钱谷。跋云：\u201c欲清其流，在澄其本。\u201d",
+    "interpretation": "百丈门风以清苦淡泊为宗，农禅并重，自食其力。示寂后大众立碑永禁私置田宅钱谷，防患于未然，断绝贪利争名之源。源头澄澈方保宗风久远，此为禅林永葆清净之金科玉律。",
+    "master": "百丈怀海",
+    "source": "敕修百丈清规·百丈塔铭",
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
+  },
+];
 
 export const ZEN_FAQS: FAQItem[] = [
 
@@ -30419,5 +30632,207 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《禅苑清规》附录新添滤水法有何意义？",
     "answer": "附录新添滤水法广引大集经、菩萨戒经、四分律、义净三藏寄归传、萨婆多论等，以滤水护生为成佛之因——蠢动皆含佛性灵，再三捞漉是修行，君看一掬寻常水，何啻千生与万生。此虽为戒律细行，然体现禅宗慈悲为本之精神。宗赜禅师崇宁元年于洪济院厨前井边安大水槛滤水二十余处，以身作则，常住若不滤水罪归主执之人。滤水护生即慈悲修行，杀戒偏居十重前一虫一堕理照然。",
     "relatedBooks": ["chanyuanqinggui"]
+  },
+{
+    "id": "faq-2360",
+    "question": "《敕修百丈清规》是一部怎样的典籍？",
+    "answer": "《敕修百丈清规》八卷九章，元代百丈山大智寿圣禅寺住持东阳德辉奉敕重编，大龙翔集庆寺住持大訢（笑隐）校正。大正藏第48册No.2025。该书会萃宋代崇宁（宗赜）、咸淳（惟勉）、至大（弌咸）三家清规之精要，删繁补缺、校正归一，定为祝厘、报恩、报本、尊祖、住持、两序、大众、节腊、法器九章，颁行天下丛林，成为此后七百年中国禅宗丛林之标准规范。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2361",
+    "question": "元代朝廷为何敕命德辉重编百丈清规？",
+    "answer": "百丈怀海禅师所创唐代古清规早佚，至宋元时期诸方所传清规互有增减、各出异本，致使丛林行持莫知适从。元统三年（1335年），元顺帝下圣旨，以各寺增减不一为由，敕令百丈祖庭住持德辉重新编纂，命大龙翔集庆寺笑隐大訢长挑选名德校正归一，赐玺书颁行天下，命丛林一律依此校正之本奉行。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2362",
+    "question": "《敕修百丈清规》与北宋《禅苑清规》有何传承与演进？",
+    "answer": "北宋宗赜集《禅苑清规》（崇宁清规，已发布idx=78）为现存最早之清规专著，侧重日常挂搭受戒、知事头首职分与坐禅修行警策。《敕修百丈清规》在其基础上吸收咸淳、至大诸本，进一步扩充并官方化，增设祝厘章（为皇帝祝寿）、报恩章（国忌祈祷），将住持升座、入院、迁化、两序分工与法器号令等仪轨制度化、规范化，体例更为完备宏大。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2363",
+    "question": "《敕修百丈清规》九章各包含哪些主要内容？",
+    "answer": "全书分九章：一祝厘章（圣节金刚无量寿道场、四斋日祝赞、每日祝赞等）；二报恩章（国忌、祈晴祈雨祈雪遣蝗日月食祈祷）；三报本章（佛诞浴佛、佛成道涅槃、帝师涅槃）；四尊祖章（达磨忌、百丈忌、历代祖忌、嗣法师忌）；五住持章（住持日用、请新住持、入院、退院、迁化入龛茶毘唱衣入塔）；六两序章（西序头首、东序知事、列职杂务）；七大众章（沙弥得度受戒、道具、挂搭、坐禅仪、日用轨范、龟镜文、亡僧）；八节腊章（结制解制、楞严会、戒腊牌、月分须知）；九法器章（钟、版、木鱼、椎、磬、铙钹、鼓）。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2364",
+    "question": "为何《敕修百丈清规》将“祝厘章”与“报恩章”列于全书之首？",
+    "answer": "德辉在序中阐明：国家对佛教僧众特加礼遇、蠲免赋役，使其得以安心修道；僧众当悟明自性、导民于化，在日常生活中朝夕祝赞、一饭不忘报君恩与国恩。将祝厘与报恩置于卷首，既体现了元代敕修官定清规的政治背景，也体现了禅门佛子不忘四恩（父母恩、众生恩、国王恩、三宝恩）、出世不离入世的报恩精神。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2365",
+    "question": "禅宗丛林的“两序”具体指什么，西序与东序如何分工？",
+    "answer": "两序指法堂东西两侧设立的辅佐职事体系。西序为头首（辅佐教化），包括前堂首座、后堂首座（代行化导）、书记（掌文牍文书）、知藏（掌三藏经教）、知客（掌接待应接）、知浴（掌浴室）、知殿（掌殿堂佛事）、侍者等；东序为知事（主管行政治理），包括都监寺（总理庶务）、维那（纲纪清规调和大众）、副寺（掌会计出纳）、典座（掌斋粥饮食）、直岁（掌修造农产营运）等。东西相维，使千百僧众同居井然有序。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2366",
+    "question": "清规中“法器章”对钟、版、木鱼、鼓等法器有何规制与寓意？",
+    "answer": "法器为丛林发号施令、警策大众之用。大钟晓击破长夜警睡眠、暮击觉昏衢疏冥昧，鸣一百八下以断百八烦恼；木鱼以鱼昼夜不闭目常醒，刻木击之以警惕昏沉懈怠；文殊白椎以示谛观法王法；鼓分法鼓（住持升座三通如春雷震蛰）、茶鼓、斋鼓、普请鼓、更鼓、浴鼓。法器交参不仅规范僧众作息，更是表显佛法无间演畅之妙用。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2367",
+    "question": "卷末所附《唐百丈怀海禅师塔铭》有何重要史料价值？",
+    "answer": "唐侍御史陈诩所撰百丈塔铭，详载百丈怀海禅师生平：太原王氏福州长乐人，从马祖得心印，栖止百丈山开辟法堂；元和九年示寂后全身葬于西峰；塔铭侧更录当时大众共立之五条遗规——禁止私置田产钱谷、不容俗家居止、童行统一收度等。对于考证禅宗丛林制度起源与百丈农禅宗风具有不可替代之原始文献价值。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
+  },
+  {
+    "id": "faq-2368",
+    "question": "宋儒程明道见禅堂威仪而叹“三代礼乐尽在是矣”有何深意？",
+    "answer": "宋代理学名儒程明道过定林寺，见僧众斋堂过堂千百人同食而寂然无声、起止整肃有序，发出“三代礼乐尽在是矣”之浩叹。此语说明百丈清规所构建的威仪轨度，不仅在佛教内部实现了秩序与和合，而且在社会文化层面保留并体现了中国古礼井然有序、内敬外恭之崇高境界。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2369",
+    "question": "《敕修百丈清规》中“圣节”启建金刚无量寿道场具体如何运作？",
+    "answer": "逢皇帝诞辰圣节前，寺院须提前一月在三门之右张贴黄榜与经单，启建金刚无量寿道场一月日，合寺僧行不给假以示诚敬。堂司预先书写轮差僧簿，每日轮派僧众依戒次登大殿披阅《华严经》《首楞严经》《妙法莲华经》《圆觉经》《金刚经》等金文，住持升座举扬圣谛第一义，祈愿国泰民安、皇帝圣寿万安。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2370",
+    "question": "清规中为何规定了“祈晴”、“祈雨”、“祈雪”与“遣蝗”等祈祷仪式？",
+    "answer": "报恩章设立祈祷仪轨，认为水旱灾蝗皆众生共业所感，佛门弟子当发大悲心，依佛力神咒为世间禳灾祈福。凡遇祈晴、祈雨等事，寺院严设坛场，轮派数十僧人分班接续讽诵《大悲咒》《消灾咒》《大云经咒》等，昼夜不断轮，以诚心感通天地，体现禅僧慈济苍生、利益世间之情怀。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2371",
+    "question": "报本章中“佛降诞”浴佛节的仪式步骤与浴佛偈含义是什么？",
+    "answer": "四月八日佛诞，库司严设花亭置佛诞生像于香汤盆内。住持升座举扬宗乘后，领大众诣大佛殿，住持上香上汤点茶并跪炉宣疏，大众齐唱浴佛偈：\u201c我今灌沐诸如来，净智庄严功德聚，五浊众生令离垢，同证如来净法身。\u201d行道周匝以香汤灌沐佛躯，以此涤除众生无明垢染、显发自性清净法身。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2372",
+    "question": "尊祖章中为何设立“达磨忌”与“百丈忌”，两者仪式有何异同？",
+    "answer": "达磨为东土初祖，开直指人心之宗；百丈为清规鼻祖，立天下禅林之制，故丛林于十月五日设达磨忌，正月十七日设百丈忌。两者皆提前挂真设祭、讽经回向、特为茶汤、大众展拜。达磨忌参前鸣钟念诵毘卢遮那佛十号，百丈忌仪礼大体相仿而不行念诵，均旨在追思法乳、绍隆祖道。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2373",
+    "question": "禅宗“嗣法师忌”与普通祖忌有何根本不同？",
+    "answer": "普通祖忌重在山门历史之追远，而嗣法师忌重在传法授受之印心。清规特别强调先德以激扬宗乘、发明自心为报答师恩之本，如巴陵以三转语为云门作忌。住持须自出己财备办供养，对真像行礼，法眷与同门齐聚，体现宗门重法尊师、代代心印相传的根本宗风。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2374",
+    "question": "住持日常行持中的“上堂”、“晚参”、“小参”与“普说”有何区别？",
+    "answer": "上堂为住持升法堂大座说法，击法鼓三通，两序大众雁立，宾主问答机锋，宣扬第一义谛，仪式最为庄严；晚参于暮夜升座说法，随宜示导；小参多于朔望或结夏、人事交替时于寝堂举行，直切警策当下修证；普说则不拘常日，深入详尽为大众剖析宗乘精微与丛林戒规。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2375",
+    "question": "禅宗新住持“入院”与“开堂祝寿”的具体规制是什么？",
+    "answer": "新命住持受请后，山门具仪仗迎请。入院当日先诣三门、大殿、土地堂、祖师堂依次拈香礼拜，入方丈受两序行礼；次日鸣诸法器集众开堂说法，首拈香祝延国祚圣寿，次拈香祝答嗣法师恩；当晚举行小参，留请两序职事，交割常住砧基什物账目，法度谨严完备。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2376",
+    "question": "住持圆寂“迁化”后，唱衣与灵骨入塔的仪轨如何安排？",
+    "answer": "住持迁化后，合寺推举尊宿主丧，成立丧司执事，依次行入龛、移龛、挂真举哀、奠茶汤、对灵小参等佛事。茶毘火化后收聚舍利灵骨入塔；所遗法衣资物由丧司公开估价唱衣拍卖，所得钱资分充修塔、供养大众及作佛事，一切公开均平，体现丛林公器无私之精神。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2377",
+    "question": "什么是“沙弥得度”与“办道具”，禅僧随身必备的十三件道具包括哪些？",
+    "answer": "大众章详述沙弥得度受戒过程，落发披袈裟诵解脱偈。学人游方参学前须自备十三种行脚道具：三衣（大衣、七条、五条袈裟）、坐具（尼师坛）、偏衫、裙、直裰、钵（应量器）、锡杖、拄杖、拂子、数珠、净瓶、滤水囊、戒刀。每件道具皆有护持戒体与表法之深意。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2378",
+    "question": "游方行脚僧人到丛林“挂搭归堂”的程序与规矩是怎样的？",
+    "answer": "游方僧到寺先于旦过寮歇宿，由知客相看检验度牒戒牒；次日行大挂搭礼，知客引至僧堂巡堂问讯，维那按戒腊高低安插长连床铺位，造入床历名册；新到僧人须赴方丈特为茶礼，向大众行礼结缘，随后正式归堂随众坐禅修道，体现天下纳僧一家同住之风。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2379",
+    "question": "《敕修百丈清规》中的“坐禅仪”与《禅苑清规》坐禅仪有何异曲同工之处？",
+    "answer": "两书坐禅仪皆宗承天台止观与禅门顿悟宗旨：行者先发菩提大悲誓愿，端身结跏趺坐，调顺气息，不宽不急；于念头上不住善恶分别，\u201c念起即觉，觉之即失，久久忘缘，自成一片\u201d。强调若遇魔障境缘，但安住正念当下即化，展现了纯正禅定与慧照圆融的参修法门。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2380",
+    "question": "丛林中的“普请”制度有何禅修意义？",
+    "answer": "普请即全寺大众上下同心出坡劳作（耕种、搬运、修造、柴炭）。百丈怀海禅师首倡“一日不作，一日不食”，长老执事与大众同劳同作，不避艰辛。普请破除了学人贪图闲逸、执着枯坐的弊端，使禅修融于日常劳动，体证行住坐卧、搬柴运水皆是无上妙道。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2381",
+    "question": "亡僧津送中的“唱衣”制度体现了怎样的佛门戒律与分配原则？",
+    "answer": "大众章规定僧人亡故后，堂司抄札其遗留衣钵道具，公开估价，召集大众唱衣拍卖。所得资财按律制“三分得一分”等原则分配——一部分充作亡僧丧葬津送之费，一部分供养看病僧与常住，一部分均分与合寺大众，彻底杜绝私人私吞遗产，体现佛门利和同均与世事无常之教诫。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2382",
+    "question": "什么是“四节秉拂”与“月分须知”？",
+    "answer": "节腊章规定结夏（四月十五）、解夏（七月十五）、冬至、年节四节为丛林重大节点，首座奉住持之命升座持拂子代为说法，称“四节秉拂”；“月分须知”则按一年十二个月的时令节气，逐月列出全寺应举行的法事、出坡、防冻、检修、储粮等具体行事历，使整座丛林运转周密而有条不紊。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2383",
+    "question": "为什么说《敕修百丈清规》是一部将戒律生活化、禅修日常化的典范？",
+    "answer": "佛教小乘戒律多偏重消极防非止恶，而百丈清规融合大乘菩萨戒与禅宗见性成佛宗旨，将吃饭（过堂）、喝茶（煎点）、就寝（吉祥卧）、劳作（普请）、言谈（圣默）等全部转化为修道行持，形成了一套充满禅机、清净严谨的生活体制，开创了独具中国特色的禅门伦理与制度文明。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
+  {
+    "id": "faq-2384",
+    "question": "现代人学习《敕修百丈清规》对组织管理与团队修养有何启示？",
+    "answer": "《敕修百丈清规》展现了极其现代的组织治理智慧：分工明确的两序监督制衡、人人平等的民主议事与公开财务（唱衣、交割砧基）、上下均力的领导带头普请、以慈悲安众为本的服务型领导观念（龟镜文），以及以威仪礼乐熏陶身心的企业文化建设，对现代团队协作、企业制度与个人修养皆具深刻借鉴价值。",
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   }
 ];

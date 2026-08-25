@@ -1038,4 +1038,17 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '钁', pinyin: 'jué', meaning: '锄头' },
     { char: '颋', pinyin: 'tǐng', meaning: '直、自在' },
   ],
+  'chixiu-baizhang-qinggui': [
+    { char: '犍椎', pinyin: 'jiān zhuī', meaning: '梵语犍稚，寺院聚集大众所鸣之钟、磬、木鱼、鼓等发声之法器' },
+    { char: '茶毘', pinyin: 'chá pí', meaning: '梵语，即火葬、焚化僧人遗体之仪式' },
+    { char: '剳', pinyin: 'zhá', meaning: '抄剳、剳付，抄录登记或官府下达文书' },
+    { char: '趺坐', pinyin: 'fū zuò', meaning: '跏趺坐，双盘或单盘端坐修禅' },
+    { char: '䞋', pinyin: 'qián', meaning: '俵䞋、下䞋，施舍或分发钱物以作供养' },
+    { char: '铙钹', pinyin: 'náo bó', meaning: '打击法器，铜制圆盘，用于迎请、送亡等佛事' },
+    { char: '椸', pinyin: 'yí', meaning: '椸架，禅堂中用于悬挂衣服、袈裟等道具之木架' },
+    { char: '祲', pinyin: 'jìn', meaning: '不祥之气、妖气、浊气' },
+    { char: '霶𩃱', pinyin: 'pāng tuó', meaning: '雨水盛大貌，祈雨祈求甘霖之词' },
+    { char: '砧基', pinyin: 'zhēn jī', meaning: '砧基簿，寺院记载田地房产户籍所有权之册籍' },
+    { char: '秉拂', pinyin: 'bǐng fú', meaning: '首座或名德代住持持拂子升座说法' },
+  ],
 };
