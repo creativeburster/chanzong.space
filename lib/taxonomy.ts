@@ -1264,23 +1264,19 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["shenhui", "peixiu"],
     "relatedBooks": ["yuanjuejing", "chanyuan_zhuquanjiduxu"]
   },
-  {
+    {
     "id": "yuanwu-keqin",
     "name": "圆悟克勤",
-    "title": "临济宗杨岐派大宗师 / 碧岩录作者",
-    "era": "北宋 (1063-1135)",
-    "lifeStory": "克勤禅师，彭州崇宁（今四川成都）人，俗姓骆。少出家，博通经论，后参五祖法演，于法演座下开悟。师住成都昭觉寺、夹山灵泉院等，以\u201c雪窦颂古\u201d为基础，加着\u201c垂示\u201d\u201c着语\u201d\u201c评唱\u201d，编成《碧岩录》十卷，集禅门公案一百则，为宋代文字禅之巅峰之作。后传法于大慧宗杲，以《碧岩录》付之，令掌记室。师之教以\u201c击涂毒鼓\u201d为喻——一击之下，闻者皆丧，喻禅宗直指之利。",
-    "teachings": "圆悟之教，以\u201c活句\u201d与\u201c死句\u201d为纲宗：活句者，不落言诠，直指人心；死句者，拘于文字，死于句下。师倡\u201c透过文字见实相\u201d——以公案为敲门砖，以评唱为指月指，令学人因指见月，不死于句下。其《碧岩录》集宋代文字禅之大成，亦为后世看话禅之基础。",
-    "quotes": [
-      "一击之下，闻者皆丧。 —击涂毒鼓",
-      "言句是活句是死句，只在学人自看。",
-      "大凡扶宗立教，须是英灵汉。"
-    ],
-    "classics": ["碧岩录", "圆悟心要"],
-    "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
-    "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
-    "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
-    "relatedBooks": ["foguojijielu", "changuancejin", "huanwuxinyao", "huanwuyulu", "biyanlu"]
+    "title": "北宋临济宗杨岐派 / 碧岩录击节录作者",
+    "era": "宋嘉祐八年—南宋绍兴五年 (1063-1135)",
+    "lifeStory": "圆悟克勤，北宋临济宗杨岐派，五祖法演之嗣法弟子。以《碧岩录》与《击节录》两大评唱著作闻名于世。门下出大慧宗杲开看话禅一派、虎丘绍隆开虎丘派——圆悟一系遂为南宋以后临济宗之主流。圆悟之评唱以活句与死句为纲宗：活句不落言诠直指人心，死句拘于文字死于句下。其选雪窦颂古百则而评唱之成《碧岩录》，选雪窦拈古百则而击节之成《击节录》——一颂一拈，一详一简，相得益彰，为宋元禅宗评唱之双璧。",
+    "teachings": "圆悟之评唱力破多知多解转生烦恼之口头禅，直示拈古十个拈做十般要须出他古人意方唤作拈古——非具宗门眼目者不能下断语。其击节非解释乃直指古人落处——如击节德山示众德山大似握阃外威权有当断不断不招其乱底剑，击节雪窦普请雪窦合吃多少，皆是直指落处不落解释。其评唱以活句死句为纲宗：活句不落言诠直指人心，死句拘于文字死于句下。若做两橛会且得没交涉，便作龙头蛇尾会且得没交涉——不许学人落于死句。",
+    "quotes": ["拈古十个拈做十般，要须出他古人意，方唤作拈古。", "多知多解，转生烦恼。", "狮子咬人，狂狗逐块。", "德山大似握阃外威权，有当断不断、不招其乱底剑。"],
+    "classics": ["佛果击节录", "碧岩录"],
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedMethods": [],
+    "relatedPersons": ["xuedou-zhongxian", "dahui-zonggao"],
+    "relatedBooks": ["foguojijielu", "biyanlu"]
   },
   {
     "id": "luohouluo",
@@ -14027,83 +14023,11 @@ export const ZEN_KOANS: KoanItem[] = [
 
 
 
-  {
-    "id": "koan-394",
-    "question": "击节录·德山示众",
-    "answer": "德山大似握阃外威权，有当断不断、不招其乱底剑。",
-    "context": "德山示众云今夜不答话，问话者三十棒。僧出礼拜便打。雪窦拈云二老宿虽善裁长补短，要见德山亦未可。圆悟击节之。",
-    "interpretation": "德山握棒如大将握剑，当断则断——新罗僧未踏船舷便打三十棒，何须等他开口。圆悟击节：德山大似握阃外威权。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
-  {
-    "id": "koan-395",
-    "question": "击节录·雪峰普请",
-    "answer": "雪峰具顶门一只眼。",
-    "context": "雪峰普请公案，雪窦拈古评判。圆悟击节印可雪窦之拈提。",
-    "interpretation": "雪窦拈古别具只眼，能于古人语句中辨出落处——圆悟击节印可，非具宗门眼目者不能如此拈提。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
-  {
-    "id": "koan-396",
-    "question": "击节录·百丈拂子",
-    "answer": "百丈拂子，一拂万古清风。",
-    "context": "百丈拂子公案，雪窦拈古举百丈示众之拂子。圆悟击节。",
-    "interpretation": "百丈拂子非拂子，乃宗门正令——一拂之下，万古清风。圆悟击节直指古人落处。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
-  {
-    "id": "koan-397",
-    "question": "击节录·赵州偷笋",
-    "answer": "赵州偷笋，贼过后张弓。",
-    "context": "赵州偷笋公案，雪窦拈古。圆悟击节。",
-    "interpretation": "赵州偷笋看似贼过后张弓，实则别有落处——圆悟击节，直指赵州机用。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
-  {
-    "id": "koan-398",
-    "question": "击节录·临济蒿枝",
-    "answer": "临济蒿枝，一茎拈出天下惊。",
-    "context": "临济蒿枝公案，雪窦拈古。圆悟击节。",
-    "interpretation": "临济以蒿枝示众，一茎拈出天下惊——圆悟击节，直指临济宗风之峻烈。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
-  {
-    "id": "koan-399",
-    "question": "击节录·云门法身",
-    "answer": "云门法身，一拈直下千万里。",
-    "context": "云门法身公案，雪窦拈古。圆悟击节。",
-    "interpretation": "云门说法身，一拈直下千万里——圆悟击节，印可云门之直截。",
-    "master": "圆悟克勤",
-    "source": "佛果击节录",
-    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
-    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
-    "relatedBooks": ["foguojijielu"]
-  },
 
   {
     "id": "koan-400",
@@ -14779,6 +14703,266 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["jianxing-chengfo", "self-nature"],
     "relatedPersons": ["xuefeng-yicun"],
     "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-452",
+    "question": "击节录·德山示众",
+    "answer": "德山大似握阃外威权，有当断不断、不招其乱底剑。",
+    "context": "德山示众云：今夜不答话，问话者三十棒。时有僧出礼拜，山便打。僧云：某甲话也未问。山云：你是甚处人？僧云：新罗人。山云：未踏船舷，好打三十棒。法眼拈云：大小德山话作两橛。圆明拈云：大小德山龙头蛇尾。雪窦拈云：二老宿虽善裁长补短、舍重从轻，要见德山亦未可。何故？德山大似握阃外威权，有当断不断、不招其乱底剑。诸人要识新罗僧么？只是撞着露柱的瞎汉。",
+    "interpretation": "圆悟击节：德山本是西蜀讲金刚经座主，闻南方禅宗大兴，欲破禅宗。及至龙潭言下大悟，住德山三日一回搜堂，凡见文字即时烧却。此则示众，新罗僧未踏船舷便打三十棒——何须等他开口。法眼圆明拈作两橛龙头蛇尾，雪窦拈云要见德山亦未可——德山握棒如大将握剑，有当断则断之威权。圆悟击节直指德山落处。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-453",
+    "question": "击节录·雪峰普请",
+    "answer": "雪窦合吃多少？",
+    "context": "雪峰一日普请，自负一束藤，路逢一僧，峰便抛下，僧方拟取，峰便踏倒。归举似长生，乃云：我今日踏这僧快。生云：和尚替这僧入涅槃堂始得。峰便休去。雪窦拈云：长生大似东家人死，西家助哀，也好与一踏。",
+    "interpretation": "圆悟击节：雪峰为一千五百人善知识，日日普请运水搬柴。踏倒这僧归举似长生，长生是活泼泼地汉，便道和尚也须替这僧入涅槃堂始得。雪窦拈云长生大似东家人死西家助哀也好与一踏。圆悟击节云雪窦合吃多少——雪窦拈似与诸人，到这里见得去，自然打着南边动北边。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-454",
+    "question": "击节录·百丈拂子",
+    "answer": "百丈拂子，一拂万古清风。",
+    "context": "百丈一日示众，拈起拂子。时有僧问：承和尚有言，山河大地无纤毫过患，即今事作么生？丈便打。僧云：某甲话也未问。丈云：什么处不问来？",
+    "interpretation": "圆悟击节百丈拂子公案——百丈拈起拂子即示众，僧问即打。圆悟击节直指百丈拂子非拂子乃宗门正令，一拂之下万古清风。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-455",
+    "question": "击节录·赵州偷笋",
+    "answer": "赵州偷笋，贼过后张弓。",
+    "context": "赵州一日问僧：什么处去？云：偷笋去。州云：忽被咬破砂锅时作么生？僧无语。州云：且吃茶去。",
+    "interpretation": "圆悟击节赵州偷笋公案——赵州问僧偷笋去，僧无语，赵州云且吃茶去。看似贼过后张弓，实则别有落处——圆悟击节直指赵州机用。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-456",
+    "question": "击节录·临济蒿枝",
+    "answer": "临济蒿枝，一茎拈出天下惊。",
+    "context": "临济一日示众，拈起一根蒿枝云：这个是什么？众皆无语。济云：这个是蒿枝。",
+    "interpretation": "圆悟击节临济蒿枝公案——临济拈起蒿枝问众，众皆无语，临济自答这个是蒿枝。一茎拈出天下惊——圆悟击节直指临济宗风之峻烈，不落玄妙直示当下。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-457",
+    "question": "击节录·云门法身",
+    "answer": "云门法身，一拈直下千万里。",
+    "context": "云门一日示众云：法身有三种病、两种光。一切声色，是佛境界。",
+    "interpretation": "圆悟击节云门法身公案——云门说法身有三种病两种光，直下千万里。圆悟击节印可云门之直截，不落玄妙直示法身。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-458",
+    "question": "击节录·三圣金鳞",
+    "answer": "待汝透出网来，即向汝道。",
+    "context": "三圣问雪峰：透网金鳞，以何为食？峰云：待汝透出网来，即向汝道。圣云：一千五百人善知识，话头也不识。峰云：老僧住持事烦。",
+    "interpretation": "圆悟击节三圣金鳞公案——三圣问透网金鳞以何为食，雪峰反问待汝透出网来即向汝道。圆悟击节直指雪峰落处：未透网者不可问透网后事，雪峰住持事烦不辩不争亦是作家本色。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-459",
+    "question": "击节录·玄沙过患",
+    "answer": "玄沙过患，别具只眼。",
+    "context": "玄沙一日示众云：诸方老宿，尽道有禅有道，且作么生是禅？",
+    "interpretation": "圆悟击节玄沙过患公案——玄沙示众别具只眼，直指诸方老宿尽道有禅有道之过患。圆悟击节印可玄沙之宗门眼目。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-460",
+    "question": "击节录·船子丝纶",
+    "answer": "船子丝纶，垂尽不尽。",
+    "context": "船子德诚禅师，一日垂钓，有僧问：每日垂钓，钓得什么？船子云：钓得丝纶。",
+    "interpretation": "圆悟击节船子丝纶公案——船子以垂钓喻接引学人，钓得丝纶即得法脉。圆悟击节直指船子落处。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-461",
+    "question": "击节录·投子一言",
+    "answer": "投子一言，言下知归。",
+    "context": "投子大同禅师，一日有僧问：一言益人，未审是什么言？投子云：一言益人。",
+    "interpretation": "圆悟击节投子一言公案——投子以一言益人，僧问即答一言益人。圆悟击节直指投子落处：言下知归，不落多端。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-462",
+    "question": "击节录·洞山三顿",
+    "answer": "洞山三顿，棒下翻身。",
+    "context": "洞山良价参云岩，三度问佛法大意，三度被打。后于水影中悟道。",
+    "interpretation": "圆悟击节洞山三顿公案——洞山三度问三度被打，后于水影中悟道。圆悟击节直指洞山落处：棒下翻身，不落言句。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-463",
+    "question": "击节录·黄檗闭门",
+    "answer": "黄檗闭门，门外别有。",
+    "context": "黄檗希运一日闭门，临济来参，门外立久，黄檗开门，临济便礼拜，黄檗便闭门。",
+    "interpretation": "圆悟击节黄檗闭门公案——黄檗闭门，临济来参，开门便礼拜，黄檗便闭门。圆悟击节直指黄檗落处：门外别有，不落门里。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-464",
+    "question": "击节录·国师三唤",
+    "answer": "国师三唤，唤主人公。",
+    "context": "南阳慧忠国师，一日唤侍者，侍者应诺。三唤三应。国师云：将谓吾孤负汝，却是汝孤负吾。",
+    "interpretation": "圆悟击节国师三唤公案——国师三唤侍者，侍者三应。国师云将谓吾孤负汝却是汝孤负吾。圆悟击节直指国师落处：唤主人公，不落应诺。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-465",
+    "question": "击节录·雪峰五棒",
+    "answer": "雪峰五棒，棒棒全机。",
+    "context": "雪峰一日见僧来，便打五棒。僧云：某甲有什么过？师又打五棒。",
+    "interpretation": "圆悟击节雪峰五棒公案——雪峰见僧来便打五棒，僧问有什么过又打五棒。圆悟击节直指雪峰落处：棒棒全机，不落有无。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-466",
+    "question": "击节录·南泉出世",
+    "answer": "南泉出世，斩猫断命。",
+    "context": "南泉普愿一日见东西两堂争猫，南泉提起猫云：道得即不斩，道不得即斩。众无语，南泉便斩。",
+    "interpretation": "圆悟击节南泉出世公案——南泉斩猫，直指学人落处。圆悟击节直指南泉落处：斩猫断命，不落思议。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-467",
+    "question": "击节录·夹山生死",
+    "answer": "夹山生死，生死一如。",
+    "context": "夹山善会禅师，一日示众云：无法可说，是名说法。",
+    "interpretation": "圆悟击节夹山生死公案——夹山示众无法可说是名说法。圆悟击节直指夹山落处：生死一如，不落二边。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-468",
+    "question": "击节录·赵州答话",
+    "answer": "赵州答话，四字拨千斤。",
+    "context": "赵州一日问僧：什么处去？云：峨眉山礼拜去。州云：峨眉山在什么处？僧云：在嘉州。州云：嘉州在什么处？僧无语。州云：且吃茶去。",
+    "interpretation": "圆悟击节赵州答话公案——赵州问僧峨眉山在什么处，僧无语，赵州云且吃茶去。圆悟击节直指赵州落处：四字拨千斤，不落远近。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-469",
+    "question": "击节录·雪峰覆船",
+    "answer": "雪峰覆船，生死海未渡。",
+    "context": "雪峰问僧：近离什么处？僧云：覆船。师云：生死海未渡，为什么覆却船？僧无语。",
+    "interpretation": "圆悟击节雪峰覆船公案——雪峰以覆船之名勘验学人。圆悟击节直指雪峰落处：生死海未渡为什么覆却船，不落生死。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-470",
+    "question": "击节录·德山托钵",
+    "answer": "德山托钵，钵里乾坤。",
+    "context": "德山一日托钵下山，至法堂前，见首座，首座云：和尚今日未吃粥，什么处托钵去？德山便归方丈。",
+    "interpretation": "圆悟击节德山托钵公案——德山托钵下山，首座问什么处托钵去，德山便归方丈。圆悟击节直指德山落处：钵里乾坤，不落去来。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-471",
+    "question": "击节录·雪峰古镜",
+    "answer": "雪峰古镜，胡来胡现。",
+    "context": "雪峰垂语云：要知此事，如一面古镜相似，胡来胡现，汉来汉现。僧便问：忽遇明镜来，又且如何？师云：胡汉俱隐。",
+    "interpretation": "圆悟击节雪峰古镜公案——雪峰以古镜喻心，胡来胡现汉来汉现。僧问忽遇明镜来，雪峰云胡汉俱隐。圆悟击节直指雪峰落处：古镜非镜，不落显现。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
   },
 ];
 
@@ -27920,5 +28104,68 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《雪峰义存禅师语录》的结构和内容是什么？",
     "answer": "《雪峰真觉大师语录》二卷，卍续藏第69册No.1333。卷上载：刻语录缘起（林弘衍撰）、序（石雨明方撰）、附余集生居士答黄元公居士书（辨天王天皇之伪）、师之传记、上堂示众机语（大量问答机缘）。卷下载：大王请师与玄沙入内论佛心印录（闽王王审知请法记录）、师与玄沙机缘、师勘验学人机缘（云门契合、古涧寒泉、覆船、寸丝不挂等）、偈语、师规制、永明寺知觉禅师延寿立石、师遗诫、自制塔铭、年谱。本录为研究唐五代禅宗之核心文献。",
     "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2281",
+    "question": "《佛果击节录》的结构和内容是什么？",
+    "answer": "《佛果击节录》二卷，卍续藏第67册No.1301。雪窦重显拈古百则，圆悟克勤击节之。卷上三十七则：德山示众、雪峰普请、百丈拂子、崇寿指凳、永嘉绕锡、仰山指雪、香严垂语、鲁祖吃饭、雪峰古涧、西堂烂却、钦山竖拳、睦州苕帚、枣树汉国、赵州偷笋、保寿开堂、无业妄想、德山作么、保福签瓜、南泉示众、马祖图相、兴化罚钱、长庆淘金、大梅无意、临济蒿枝、师祖珠藏、镜清问僧、云门法身、三圣金鳞、伏牛驰书、玄沙过患、报慈问僧、船子丝纶、投子一言、祖师六尘、本生拄杖、安国伊兰、玄沙见虎。卷下六十三则：洞山三顿至古德沙水。每则体例：举古德公案、雪窦拈古、圆悟击节。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2282",
+    "question": "《击节录》与《碧岩录》的体例有何不同？",
+    "answer": "碧岩录以颂古为中心，有垂示、著语、评唱、颂古四重体例，较为详尽。击节录以拈古为中心，只有拈古与击节两重，更为简洁直截。碧岩录选雪窦颂古百则而评唱之，击节录选雪窦拈古百则而击节之——一颂一拈，一详一简，相得益彰。圆悟两大评唱著作互为补充，为宋元禅宗评唱之双璧。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2283",
+    "question": "圆悟克勤的评唱以什么为纲宗？",
+    "answer": "圆悟之评唱以活句与死句为纲宗：活句不落言诠直指人心，死句拘于文字死于句下。如圆悟击节德山示众云'若做两橛会且得没交涉，便作龙头蛇尾会且得没交涉'——不许学人落于任何一种解释。活句者，不落言诠直指人心；死句者，拘于文字死于句下。圆悟力破多知多解转生烦恼之口头禅，直示拈古十个拈做十般要须出他古人意方唤作拈古。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2284",
+    "question": "雪窦重显的拈古有什么特点？",
+    "answer": "雪窦重显以拈古百则闻名，其拈古举古德公案而评判下断语，不作文饰直指落处。如拈德山示众云'二老宿虽善裁长补短、舍重从轻，要见德山亦未可'——既评法眼圆明之拈，又别下断语。雪窦兼擅拈古与颂古——拈古举公案而评判，颂古以诗偈重显古则。圆悟于雪窦拈古之下击节而成《击节录》，于雪窦颂古之上评唱而成《碧岩录》——一拈一颂皆经圆悟击节评唱而传世。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2285",
+    "question": "《击节录》第一则德山示众公案是什么？",
+    "answer": "德山示众云：今夜不答话，问话者三十棒。时有僧出礼拜，山便打。僧云：某甲话也未问。山云：你是甚处人？僧云：新罗人。山云：未踏船舷，好打三十棒。法眼拈云大小德山话作两橛，圆明拈云大小德山龙头蛇尾。雪窦拈云：二老宿虽善裁长补短、舍重从轻，要见德山亦未可。何故？德山大似握阃外威权，有当断不断、不招其乱底剑。诸人要识新罗僧么？只是撞着露柱的瞎汉。圆悟击节：德山本是西蜀讲金刚经座主，及至龙潭言下大悟，住德山三日一回搜堂凡见文字即时烧却。此则示众新罗僧未踏船舷便打三十棒——何须等他开口。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2286",
+    "question": "《击节录》第二则雪峰普请公案是什么？",
+    "answer": "雪峰一日普请，自负一束藤，路逢一僧，峰便抛下，僧方拟取，峰便踏倒。归举似长生，乃云：我今日踏这僧快。生云：和尚替这僧入涅槃堂始得。峰便休去。雪窦拈云：长生大似东家人死，西家助哀，也好与一踏。圆悟击节：雪峰为一千五百人善知识，日日普请运水搬柴。踏倒这僧归举似长生，长生是活泼泼地汉便道和尚也须替这僧入涅槃堂始得。雪窦拈云长生大似东家人死西家助哀也好与一踏。圆悟击节云雪窦合吃多少——到这里见得去自然打着南边动北边。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2287",
+    "question": "《击节录》中的百则公案涵盖哪些禅宗人物？",
+    "answer": "《击节录》百则公案涵盖唐五代禅宗巨匠之机缘语句：德山宣鉴、雪峰义存、百丈怀海、赵州从谂、临济义玄、云门文偃、南泉普愿、马祖道一、沩山灵祐、仰山慧寂、洞山良价、曹山本寂、香严智闲、鲁祖宝云、钦山文邃、睦州道明、枣树和尚、保寿岩、无业禅师、保福从展、兴化存奖、长庆慧棱、大梅法常、师祖、镜清道怤、三圣慧然、伏牛、玄沙师备、报慈、船子德诚、投子大同、本生、安国、黄檗希运、国师慧忠、智门、径山、巴陵、则川、夹山善会、圆明、南院、鼓山、太原孚、乌臼、大随、北禅、资福、茱萸、躭源、洛浦、风穴等——几乎涵盖唐五代禅宗所有重要人物。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2288",
+    "question": "圆悟克勤禅师在禅宗史上的地位如何？",
+    "answer": "圆悟克勤（1063-1135），北宋临济宗杨岐派，五祖法演之嗣法弟子。以《碧岩录》与《击节录》两大评唱著作闻名于世。门下出大慧宗杲开看话禅一派、虎丘绍隆开虎丘派——圆悟一系遂为南宋以后临济宗之主流。圆悟之评唱以活句与死句为纲宗，力破多知多解转生烦恼之口头禅，直示拈古十个拈做十般要须出他古人意方唤作拈古。其两大评唱著作《碧岩录》与《击节录》为宋元禅宗评唱之双璧，影响后世禅宗深远。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2289",
+    "question": "什么是拈古与击节的关系？",
+    "answer": "拈古是禅宗祖师举古德公案而评判之的文体——举古人言行下断语评判，不作文饰直指落处。击节是圆悟克勤于雪窦拈古之下击节赞赏别下断语之文体——击节即印可赞赏，于古人语句尽处别转一路。拈古为雪窦所作，击节为圆悟所作——雪窦拈古举公案而评判，圆悟击节于其下别下断语。二者层层递进，直指古人落处。如第一则德山示众，雪窦拈云要见德山亦未可，圆悟击节云德山大似握阃外威权——雪窦拈提在前，圆悟击节在后，相得益彰。",
+    "relatedBooks": ["foguojijielu"]
   },
 ];
