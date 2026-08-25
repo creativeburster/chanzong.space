@@ -3244,6 +3244,35 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": []
   },
+
+  {
+    "id": "mianxian-xianjie",
+    "name": "密庵咸杰",
+    "title": "南宋临济宗杨岐派 / 圆悟克勤法孙",
+    "era": "南宋 (1118-1186)",
+    "lifeStory": "密庵咸杰，俗姓吴，福州福清人。出家后行脚参方，参应庵昙华禅师于衢州明果山，一见便明大法，为应庵嗣法弟子。一生七镇名山：衢州乌巨山干明禅院、大中祥符寺、蒋山太平兴国寺、常州华藏寺、径山兴圣万寿寺、灵隐寺、天童寺。道满天下，门下出松源崇岳、破庵祖先、曹源道生等，为南宋临济宗中坚。入对中宸，阐扬般若，深契上意。以“破沙盆语”闻名丛林。",
+    "teachings": "密庵宗风以“破沙盆”为标识——接机峻烈，不留情面。其法语直截痛快：“佛说一切法，为度一切心。我无一切心，何用一切法。”其颂古以诗偈重显古则，文采与禅机并美。",
+    "quotes": ["不入洪波里，争见弄潮人。", "佛说一切法，为度一切心。我无一切心，何用一切法。", "字经三写乌焉成马。"],
+    "classics": ["密庵咸杰禅师语录"],
+    "relatedConcepts": ["kanhua-chan-concept", "banghe"],
+    "relatedMethods": ["kanhuatou"],
+    "relatedPersons": ["yingan-tanhua", "huqiu-shaolong", "yuanwu-keqin"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+  {
+    "id": "yingan-tanhua",
+    "name": "应庵昙华",
+    "title": "南宋临济宗杨岐派 / 密庵咸杰之师",
+    "era": "南宋 (1103-1163)",
+    "lifeStory": "应庵昙华禅师，虎丘绍隆之嗣法弟子，密庵咸杰之师。住衢州明果山，密庵参之一见便明大法。应庵为圆悟克勤之法孙，临济杨岐派虎丘系之重要传人。",
+    "teachings": "承虎丘绍隆之宗风，以峻烈机锋接引学人。",
+    "quotes": [],
+    "classics": [],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": ["huqiu-shaolong", "mianxian-xianjie"],
+    "relatedBooks": []
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -8049,6 +8078,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["niangu", "ping-chang"],
     "relatedPersons": ["yuanwu-keqin"],
     "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "poshapen",
+    "title": "破沙盆",
+    "category": "宗风标识",
+    "summary": "密庵咸杰禅师之宗风标识——“破沙盆语”盛播丛林。破沙盆非破器皿，乃破执著——打破一切窠臼，直指人心。密庵一见应庵便明大法，其接机峻烈不留情面，如“字经三写乌焉成马”“不入洪波里争见弄潮人”，皆破沙盆之语。",
+    "etymology": "破沙盆——打破沙盆，喻破一切执著窠臼。",
+    "quotes": ["破沙盆语，盛播丛林。—密庵咸杰语录序"],
+    "guidance": "破沙盆非破器皿，乃破执著——打破一切窠臼，直指人心。",
+    "classicRef": "密庵咸杰禅师语录",
+    "relatedConcepts": ["banghe", "kanhua-chan-concept"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
   },
 ];
 
@@ -14134,6 +14177,84 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["niangu", "jijie", "ping-chang"],
     "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
     "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-400",
+    "question": "密庵不入洪波",
+    "answer": "不入洪波里，争见弄潮人。",
+    "context": "密庵入方丈据座云：此室甚深广大，非语默可及。喝一喝云：不入洪波里，争见弄潮人。",
+    "interpretation": "不亲入生死波涛，怎见得弄潮好手——参禅须亲到险处方有悟分。密庵以弄潮喻参禅，直示须亲入生死洪波。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-401",
+    "question": "密庵无心无法",
+    "answer": "佛说一切法，为度一切心。我无一切心，何用一切法。",
+    "context": "密庵上堂云：既无心又无法，山河大地甚处得来，见闻觉知复是何物。乃喝。",
+    "interpretation": "佛法为度心而设，无心何须法——既无心又无法，山河大地从何而来。密庵直示心法双遣之旨。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-402",
+    "question": "密庵字经三写",
+    "answer": "字经三写乌焉成马。",
+    "context": "密庵评三圣兴化公案：二尊宿各有一处打得著，白云端和尚错下名言，殊不知二尊宿前不至村后不迭店。",
+    "interpretation": "古德语句经辗转传写，乌焉成马——不可执著文字，须识古人落处。密庵以字经三写喻公案传述之失真。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-403",
+    "question": "密庵破沙盆",
+    "answer": "一见应庵，便明大法。破沙盆语，盛播丛林。",
+    "context": "密庵参应庵昙华于衢州明果山，一见便明大法。其语如破沙盆，盛播丛林。",
+    "interpretation": "悟道在机缘契合，不在久参——密庵一见应庵便明大法。破沙盆非破器皿，乃破执著窠臼。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-404",
+    "question": "密庵颂德山托钵",
+    "answer": "德山托钵，岩头笑煞。",
+    "context": "密庵颂古九则之一，颂德山托钵公案。",
+    "interpretation": "德山托钵公案经密庵以诗偈重显——岩头笑煞，笑的是什么？须参究德山托钵之落处。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "koan-405",
+    "question": "密庵颂即心是佛",
+    "answer": "即心是佛，不用别求。",
+    "context": "密庵颂古九则之一，颂马祖即心是佛公案。",
+    "interpretation": "即心是佛非道理会——密庵以诗偈重显，直示不用别求。",
+    "master": "密庵咸杰",
+    "source": "密庵咸杰禅师语录",
+    "relatedConcepts": ["poshapen", "banghe"],
+    "relatedPersons": ["mianxian-xianjie"],
+    "relatedBooks": ["mianxianyulu"]
   },
 ];
 
@@ -27067,5 +27188,40 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "雪窦重显禅师是谁？",
     "answer": "雪窦重显（980-1052），北宋云门宗，以《颂古百则》闻名，即《碧岩录》之底本。雪窦之拈古与颂古皆为禅宗评唱之典范——拈古举公案而评判下断语，颂古以诗偈重显古则。圆悟克勤于雪窦拈古之下击节而成《击节录》，于雪窦颂古之上评唱而成《碧岩录》——一拈一颂，皆经圆悟击节评唱而传世。",
     "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2247",
+    "question": "密庵咸杰禅师是谁？",
+    "answer": "密庵咸杰（1118-1186），俗姓吴，福州福清人，南宋临济宗杨岐派。参应庵昙华于衢州明果山，一见便明大法。一生七镇名山（乌巨、祥符、蒋山、华藏、径山、灵隐、天童），道满天下。门下出松源崇岳、破庵祖先、曹源道生等，为南宋临济宗中坚。以“破沙盆语”闻名丛林——接机峻烈，不留情面。",
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "faq-2248",
+    "question": "什么是破沙盆？",
+    "answer": "破沙盆是密庵咸杰禅师的宗风标识——“破沙盆语”盛播丛林。破沙盆非破器皿，乃破执著——打破一切窠臼，直指人心。密庵一见应庵便明大法，其接机峻烈不留情面，如“字经三写乌焉成马”“不入洪波里争见弄潮人”，皆破沙盆之语。",
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "faq-2249",
+    "question": "密庵咸杰禅师在禅宗史上的地位如何？",
+    "answer": "密庵咸杰为圆悟克勤之法孙——圆悟传虎丘绍隆，虎丘传应庵昙华，应庵传密庵。密庵为临济杨岐派虎丘系之关键传人，门下出松源崇岳、破庵祖先、曹源道生等，开南宋临济宗之盛局。一生七镇名山，入对中宸阐扬般若，以破沙盆语闻名丛林。",
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "faq-2250",
+    "question": "密庵咸杰禅师的颂古九则是哪些？",
+    "answer": "密庵颂古九则：德山托钵、狗子无佛性、女子出定、赵州洗钵盂、临济三顿棒、百丈野狐、一口吸尽西江水、即心是佛、赵州勘婆。此九则皆为宗门著名公案，密庵以诗偈重显，文采与禅机并美。",
+    "relatedBooks": ["mianxianyulu"]
+  },
+
+  {
+    "id": "faq-2251",
+    "question": "密庵咸杰禅师七处住持是哪些道场？",
+    "answer": "密庵一生七镇名山：一、衢州西乌巨山干明禅院；二、衢州大中祥符禅寺；三、建康府蒋山太平兴国禅寺；四、常州褒忠显报华藏禅寺；五、临安府径山兴圣万寿禅寺；六、临安府景德灵隐禅寺；七、明州太白名山天童景德禅寺。七处皆江南名刹，道满天下。",
+    "relatedBooks": ["mianxianyulu"]
   },
 ];
