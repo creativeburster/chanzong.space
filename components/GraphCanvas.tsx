@@ -553,9 +553,9 @@ export const GraphCanvas: React.FC = () => {
         </div>
 
         {/* 页面滚动指引提示 */}
-        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[70px] shadow-sm">
+        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[84px] shadow-sm leading-tight">
           <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
-          <span className="font-medium">此处滚动整页</span>
+          <span className="font-medium">鼠标指针放此处滚动整页</span>
         </div>
       </div>
 
