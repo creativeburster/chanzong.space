@@ -2,20 +2,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, ZoomIn, ZoomOut, Sparkles } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
 interface NodeData extends d3.SimulationNodeDatum {
   id: string;
   name: string;
-  type: 'person' | 'book' | 'concept' | 'method' | 'koan';
+  type: string;
   url: string;
   desc: string;
   r?: number;
-  petalIndex: number; // 0..7 (八瓣花瓣) 或 -1 (花蕊核心)
-  targetX?: number;
-  targetY?: number;
 }
 
 interface LinkData extends d3.SimulationLinkDatum<NodeData> {
@@ -25,20 +22,35 @@ interface LinkData extends d3.SimulationLinkDatum<NodeData> {
 }
 
 const colorMap: Record<string, string> = {
-  person: '#74b9ff',   // 祖师：天青蓝
-  book: '#fd79a8',     // 经典：朱砂粉红
-  concept: '#e0aaff',  // 概念：紫玉
-  method: '#4ecdc4',   // 法门：翡翠碧绿
-  koan: '#ffd700',     // 公案：流金
+  person: '#74b9ff',
+  book: '#fd79a8',
+  concept: '#e0aaff',
+  method: '#4ecdc4',
+  koan: '#ffd700',
 };
 
 const baseRadiusMap: Record<string, number> = {
-  person: 13,
+  person: 14,
   book: 11,
-  concept: 9,
+  concept: 10,
   method: 10,
-  koan: 8,
+  koan: 9,
 };
+
+// 关系强度权重：数值越高关联越强
+const relationWeight: Record<string, number> = {
+  '法脉': 3,
+  '著述': 3,
+  '阐扬': 2,
+  '行持': 2,
+  '问答': 1,
+};
+
+// 每个节点最多保留的连线数（按关系强度优先）
+const MAX_LINKS_PER_NODE = 3;
+
+// 根据关联度数计算节点半径：关联越多节点越大
+const nodeRadius = (n: NodeData) => n.r ?? baseRadiusMap[n.type] ?? 10;
 
 const typeLabelMap: Record<string, string> = {
   person: '祖师',
@@ -52,52 +64,21 @@ const FILTER_TYPES = ['person', 'book', 'concept', 'method', 'koan'] as const;
 
 const shortLabel = (t: string, n = 8) => (t.length > n ? t.slice(0, n) + '…' : t);
 
-// 八瓣莲花花瓣定义 (8 个对称花瓣方位)
-// 0: 东 (0°) - 曹洞宗法门与宝镜三昧
-// 1: 东南 (45°) - 云门法眼宗风与禅林清规
-// 2: 南 (90°) - 南宗祖师法脉谱系
-// 3: 西南 (135°) - 沩仰宗与心法开示
-// 4: 西 (180°) - 临济宗、杨岐黄龙与看话公案
-// 5: 西北 (225°) - 唯识唯心与如来藏
-// 6: 北 (270°) - 般若波罗蜜与核心经论
-// 7: 东北 (315°) - 禅净双修与圆觉实修
-const PETAL_COUNT = 8;
-const PETAL_DIST = 260; // 花瓣中心距花蕊距离
+// 排除在下方《世系图表》中已独立展示且会导致图谱分裂为双星团的早期达摩至五祖系节点
+const EXCLUDE_GRAPH_IDS = new Set([
+  'bodhidharma', 'huike', 'sengcan', 'daoxin', 'hongren',
+  'xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun', 'sixingguan',
+  'koan-11', 'koan-12'
+]);
 
-function assignLotusPetal(node: NodeData, index: number): number {
-  // 核心心性、达摩、六祖等居于花蕊中心 (-1)
-  const coreIds = new Set([
-    'buddha-nature', 'self-nature', 'mind-is-buddha', 'prajna', 'emptiness',
-    'huineng', 'bodhidharma', 'mazu', 'baizhang', 'huangbo', 'linji',
-    'chuanxin-fayao', 'liuzutan-jing', 'jingang-jing', 'xinjing', 'wumen'
-  ]);
-  if (coreIds.has(node.id)) return -1;
-
-  if (node.type === 'book') {
-    // 经典著作居于上方花瓣 (北 6, 东北 7, 西北 5)
-    return [6, 7, 5][index % 3];
-  } else if (node.type === 'person') {
-    // 历代祖师居于下方花瓣 (南 2, 东南 1, 西南 3)
-    return [2, 1, 3][index % 3];
-  } else if (node.type === 'method') {
-    // 修持法门居于两翼花瓣 (东 0, 西 4)
-    return [0, 4][index % 2];
-  } else if (node.type === 'koan') {
-    // 公案机锋居于四隅花瓣尖端 (1, 3, 5, 7)
-    return [1, 3, 5, 7][index % 4];
-  } else {
-    // 概念均匀分布在 8 个花瓣中
-    return index % 8;
-  }
-}
-
+/* ---- Nodes & links generated dynamically from taxonomy + manifest ---- */
 function getGraphData() {
   const allNodes: NodeData[] = [
-    ...ZEN_PERSONS.map((p) => ({ id: p.id, name: p.name, type: 'person' as const, url: `/persons/${p.id}`, desc: `${p.title} · ${p.era}`, petalIndex: 2 })),
-    ...manifest.map((b) => ({ id: b.id, name: shortLabel(b.title), type: 'book' as const, url: `/classics/${b.id}`, desc: `${b.author} · ${b.category}`, petalIndex: 6 })),
-    ...ZEN_CONCEPTS.map((c) => ({ id: c.id, name: c.title, type: 'concept' as const, url: `/concepts/${c.id}`, desc: c.summary.slice(0, 50) + '…', petalIndex: 0 })),
-    ...ZEN_METHODS.map((m) => ({ id: m.id, name: m.title, type: 'method' as const, url: `/methods/${m.id}`, desc: m.summary.slice(0, 50) + '…', petalIndex: 4 })),
-    ...ZEN_KOANS.map((q) => ({ id: q.id, name: shortLabel(q.question, 7), type: 'koan' as const, url: `/koan/${q.id}`, desc: `${q.master} · ${q.source}`, petalIndex: 1 })),
+    ...ZEN_PERSONS.filter(p => !EXCLUDE_GRAPH_IDS.has(p.id)).map((p) => ({ id: p.id, name: p.name, type: 'person', url: `/persons/${p.id}`, desc: `${p.title} · ${p.era}` })),
+    ...manifest.filter(b => !EXCLUDE_GRAPH_IDS.has(b.id)).map((b) => ({ id: b.id, name: shortLabel(b.title), type: 'book', url: `/classics/${b.id}`, desc: `${b.author} · ${b.category}` })),
+    ...ZEN_CONCEPTS.filter(c => !EXCLUDE_GRAPH_IDS.has(c.id)).map((c) => ({ id: c.id, name: c.title, type: 'concept', url: `/concepts/${c.id}`, desc: c.summary.slice(0, 50) + '…' })),
+    ...ZEN_METHODS.filter(m => !EXCLUDE_GRAPH_IDS.has(m.id)).map((m) => ({ id: m.id, name: m.title, type: 'method', url: `/methods/${m.id}`, desc: m.summary.slice(0, 50) + '…' })),
+    ...ZEN_KOANS.filter(q => !EXCLUDE_GRAPH_IDS.has(q.id)).map((q) => ({ id: q.id, name: shortLabel(q.question, 7), type: 'koan', url: `/koan/${q.id}`, desc: `${q.master} · ${q.source}` })),
   ];
 
   const nodeIdSet = new Set(allNodes.map((n) => n.id));
@@ -127,21 +108,19 @@ function getGraphData() {
     q.relatedPersons.forEach((t) => addLink(t, q.id, '问答'));
   });
 
-  // 度数统计
+  // 用全部连线统计度数，作为节点重要性与大小的依据
   const degree = new Map<string, number>();
   allLinks.forEach((l) => {
     degree.set(l.source as string, (degree.get(l.source as string) || 0) + 1);
     degree.set(l.target as string, (degree.get(l.target as string) || 0) + 1);
   });
-
-  allNodes.forEach((n, idx) => {
+  allNodes.forEach((n) => {
     const d = degree.get(n.id) || 0;
     const base = baseRadiusMap[n.type] || 10;
-    n.r = Math.min(base * 2.8, base + Math.min(d, 8) * 2.0);
-    n.petalIndex = assignLotusPetal(n, idx);
+    n.r = Math.min(base * 3.2, base + d * 2.8);
   });
 
-  // 每个节点保留前 2 条最强关联，保证图谱轻盈利落
+  // 每个节点只保留最强的若干条连线，避免连线过密
   const linksByNode = new Map<string, LinkData[]>();
   allLinks.forEach((l) => {
     [l.source as string, l.target as string].forEach((id) => {
@@ -149,18 +128,23 @@ function getGraphData() {
       linksByNode.get(id)!.push(l);
     });
   });
-
   const keptLinks = new Set<LinkData>();
   linksByNode.forEach((arr) => {
-    arr.slice(0, 2).forEach((l) => keptLinks.add(l));
+    arr
+      .slice()
+      .sort((a, b) => (relationWeight[b.relation] || 1) - (relationWeight[a.relation] || 1))
+      .slice(0, MAX_LINKS_PER_NODE)
+      .forEach((l) => keptLinks.add(l));
   });
+  const strongLinks = allLinks.filter((l) => keptLinks.has(l));
 
-  return { allNodes, allLinks: allLinks.filter((l) => keptLinks.has(l)) };
+  return { allNodes, allLinks: strongLinks };
 }
 
 export const GraphCanvas: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const currentNodesRef = useRef<NodeData[]>([]);
 
   const [visible, setVisible] = useState<Record<string, boolean>>({
     person: true,
@@ -179,10 +163,8 @@ export const GraphCanvas: React.FC = () => {
 
   useEffect(() => {
     if (!containerRef.current) return;
-    const width = containerRef.current.clientWidth || 900;
-    const height = containerRef.current.clientHeight || 650;
-    const cx = width / 2;
-    const cy = height / 2;
+    const width = containerRef.current.clientWidth || 800;
+    const height = containerRef.current.clientHeight || 600;
 
     d3.select(containerRef.current).selectAll('svg.graph-canvas-svg').remove();
 
@@ -196,98 +178,14 @@ export const GraphCanvas: React.FC = () => {
       .style('top', '0')
       .style('left', '0')
       .style('display', 'block')
-      .style('overflow', 'hidden')
-      .style('will-change', 'transform');
+      .style('overflow', 'hidden');
 
     svgRef.current = svg;
 
-    const defs = svg.append('defs');
+    const g = svg.append('g');
 
-    // 1. 金色莲花微光渐变
-    const goldGrad = defs.append('linearGradient')
-      .attr('id', 'lotus-gold-grad')
-      .attr('x1', '0%').attr('y1', '0%')
-      .attr('x2', '100%').attr('y2', '100%');
-    goldGrad.append('stop').attr('offset', '0%').attr('stop-color', '#ffd700').attr('stop-opacity', 0.5);
-    goldGrad.append('stop').attr('offset', '100%').attr('stop-color', '#ff9f43').attr('stop-opacity', 0.1);
-
-    // 2. 青莲微光渐变
-    const cyanGrad = defs.append('radialGradient')
-      .attr('id', 'lotus-center-glow')
-      .attr('cx', '50%').attr('cy', '50%').attr('r', '50%');
-    cyanGrad.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(255, 215, 0, 0.4)');
-    cyanGrad.append('stop').attr('offset', '35%').attr('stop-color', 'rgba(78, 205, 196, 0.15)');
-    cyanGrad.append('stop').attr('offset', '100%').attr('stop-color', 'rgba(11, 19, 41, 0)');
-
-    const g = svg.append('g').attr('class', 'main-zoom-layer');
-
-    // ==========================================
-    // 底层：精美八瓣莲花曼陀罗（Lotus Mandala）
-    // ==========================================
-    const lotusGroup = g.append('g')
-      .attr('class', 'lotus-mandala-group')
-      .attr('transform', `translate(${cx}, ${cy})`)
-      .style('pointer-events', 'none')
-      .style('opacity', 0.45);
-
-    // 中心光晕
-    lotusGroup.append('circle')
-      .attr('r', 320)
-      .attr('fill', 'url(#lotus-center-glow)');
-
-    // 八瓣金莲底图
-    for (let i = 0; i < PETAL_COUNT; i++) {
-      const angle = (i * 360) / PETAL_COUNT;
-      lotusGroup.append('path')
-        .attr('d', 'M 0 0 C -25 -60 -45 -140 0 -240 C 45 -140 25 -60 0 0 Z')
-        .attr('transform', `rotate(${angle})`)
-        .attr('fill', 'url(#lotus-gold-grad)')
-        .attr('stroke', 'rgba(255, 215, 0, 0.35)')
-        .attr('stroke-width', 1.2);
-    }
-
-    // 同心金环
-    [75, 160, 260, 360].forEach((r, idx) => {
-      lotusGroup.append('circle')
-        .attr('r', r)
-        .attr('fill', 'none')
-        .attr('stroke', idx === 0 ? 'rgba(255, 215, 0, 0.5)' : 'rgba(255, 255, 255, 0.08)')
-        .attr('stroke-width', 1)
-        .attr('stroke-dasharray', idx % 2 === 1 ? '4,6' : 'none');
-    });
-
-    // 提示条 DOM 元素（直接 DOM 操作，不触发 React 渲染，零卡顿）
-    const hintElement = document.getElementById('zen-graph-scroll-hint');
-
-    const showScrollHint = () => {
-      if (hintElement) {
-        hintElement.style.opacity = '1';
-        hintElement.style.transform = 'translate(-50%, 0)';
-        setTimeout(() => {
-          if (hintElement) {
-            hintElement.style.opacity = '0';
-            hintElement.style.transform = 'translate(-50%, -10px)';
-          }
-        }, 1800);
-      }
-    };
-
-    // ==========================================
-    // D3 Zoom 缩放配置（GPU 硬件加速与滚轮智能解耦）
-    // ==========================================
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.15, 3.5])
-      .filter((event) => {
-        if (event.type === 'wheel') {
-          const isZoomModifier = event.ctrlKey || event.metaKey;
-          if (!isZoomModifier) {
-            showScrollHint();
-            return false; // 原生放行，页面丝滑滚动！
-          }
-          return true;
-        }
-        return !event.button;
-      })
+      .scaleExtent([0.1, 4])
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
       });
@@ -295,123 +193,91 @@ export const GraphCanvas: React.FC = () => {
     svg.call(zoom);
     zoomRef.current = zoom;
 
-    /* ---- 节点与连线数据准备 ---- */
+    /* ---- filter nodes/links by active types ---- */
     const { allNodes, allLinks } = getGraphData();
     const nodesData = allNodes.filter((n) => visible[n.type]);
     const visibleIds = new Set(nodesData.map((n) => n.id));
     const linksData = allLinks.filter((l) => visibleIds.has(l.source as string) && visibleIds.has(l.target as string));
 
-    // 计算 8 个花瓣的中心坐标
-    const petalCenters: Array<{ x: number; y: number }> = [];
-    for (let i = 0; i < PETAL_COUNT; i++) {
-      const angle = (i * Math.PI * 2) / PETAL_COUNT;
-      petalCenters.push({
-        x: cx + Math.cos(angle) * PETAL_DIST,
-        y: cy + Math.sin(angle) * PETAL_DIST,
-      });
-    }
-
-    // 初始化节点位置：精准吸附在花瓣或花蕊
-    const nodes: NodeData[] = nodesData.map((d, idx) => {
-      let targetX = cx;
-      let targetY = cy;
-      if (d.petalIndex >= 0 && d.petalIndex < PETAL_COUNT) {
-        const center = petalCenters[d.petalIndex];
-        const angle = Math.random() * Math.PI * 2;
-        const rad = Math.random() * 85;
-        targetX = center.x + Math.cos(angle) * rad;
-        targetY = center.y + Math.sin(angle) * rad;
-      } else {
-        // 花蕊中心
-        const angle = Math.random() * Math.PI * 2;
-        const rad = Math.random() * 55;
-        targetX = cx + Math.cos(angle) * rad;
-        targetY = cy + Math.sin(angle) * rad;
-      }
-
-      return {
-        ...d,
-        x: targetX + (Math.random() - 0.5) * 20,
-        y: targetY + (Math.random() - 0.5) * 20,
-        targetX,
-        targetY,
-      };
+    // 过滤掉没有任何连线的孤立节点，防止它们飘到屏幕外成为“多余元素”
+    const nodesWithLinks = new Set<string>();
+    linksData.forEach(l => {
+      nodesWithLinks.add(l.source as string);
+      nodesWithLinks.add(l.target as string);
     });
+    
+    const finalNodesData = nodesData.filter(n => nodesWithLinks.has(n.id));
 
+    // 预先将节点坐标初始化在画布中央范围，防止 D3 默认赋给 (7.07, 0) 近原点坐标而落在左上角按钮区
+    const nodes: NodeData[] = finalNodesData.map(d => ({
+      ...d,
+      x: width / 2 + (Math.random() - 0.5) * 80,
+      y: height / 2 + (Math.random() - 0.5) * 80,
+    }));
     const links: LinkData[] = linksData.map(d => ({ ...d }));
 
-    // 八瓣莲花花瓣吸附力（Lotus Petal Radial Attraction）
-    const forceLotusPetal = (alpha: number) => {
-      const k = alpha * 0.35;
-      for (const n of nodes) {
-        if (n.targetX !== undefined && n.targetY !== undefined) {
-          n.vx = (n.vx || 0) + (n.targetX - (n.x || cx)) * k;
-          n.vy = (n.vy || 0) + (n.targetY - (n.y || cy)) * k;
-        }
-      }
-    };
-
-    // 高效物理引擎（2.0秒内瞬间优雅收敛）
     const simulation = d3.forceSimulation<NodeData>(nodes)
-      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(45).strength(0.3))
-      .force('charge', d3.forceManyBody().strength(-30))
-      .force('petal', forceLotusPetal)
-      .force('collide', d3.forceCollide<NodeData>().radius(d => (d.r || 10) + 4).strength(0.7))
-      .alphaDecay(0.045);
+      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(65).strength(0.7))
+      .force('charge', d3.forceManyBody().strength(-90))
+      .force('x', d3.forceX(width / 2).strength(0.12))
+      .force('y', d3.forceY(height / 2).strength(0.12))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collide', d3.forceCollide<NodeData>().radius(d => nodeRadius(d) + 8).strength(0.8))
+      .alphaDecay(0.03);
 
-    // 绘制连线
+    currentNodesRef.current = nodes;
+
+    // Web lines group
+    const webLinesGroup = g.append('g').attr('class', 'web-lines');
+
     const link = g.append('g')
-      .attr('class', 'links-layer')
-      .attr('stroke', 'rgba(255, 255, 255, 0.15)')
-      .attr('stroke-width', 1.0)
+      .attr('stroke', 'rgba(255, 255, 255, 0.16)')
+      .attr('stroke-width', 1.2)
       .selectAll('line')
       .data(links)
       .join('line')
-      .attr('x1', d => (d.source as NodeData).x ?? cx)
-      .attr('y1', d => (d.source as NodeData).y ?? cy)
-      .attr('x2', d => (d.target as NodeData).x ?? cx)
-      .attr('y2', d => (d.target as NodeData).y ?? cy);
+      .attr('x1', d => (d.source as NodeData).x ?? width / 2)
+      .attr('y1', d => (d.source as NodeData).y ?? height / 2)
+      .attr('x2', d => (d.target as NodeData).x ?? width / 2)
+      .attr('y2', d => (d.target as NodeData).y ?? height / 2)
+      .style('opacity', 0);
 
-    // 绘制节点群
+    const linkLabels = g.append('g')
+      .selectAll('text')
+      .data(links)
+      .join('text')
+      .text(d => d.relation)
+      .attr('font-size', '10px')
+      .attr('fill', 'rgba(255, 255, 255, 0.85)')
+      .attr('text-anchor', 'middle')
+      .style('pointer-events', 'none')
+      .style('opacity', 0);
+
     const node = g.append('g')
-      .attr('class', 'nodes-layer')
       .selectAll('g')
       .data(nodes)
       .join('g')
       .attr('cursor', 'pointer')
-      .attr('transform', d => `translate(${d.x ?? cx},${d.y ?? cy})`);
+      .attr('transform', d => `translate(${d.x ?? width / 2},${d.y ?? height / 2})`);
 
-    // 外发光环
     node.append('circle')
-      .attr('r', d => (d.r || 10) + 3)
-      .attr('fill', 'none')
-      .attr('stroke', d => colorMap[d.type] || '#ccc')
-      .attr('stroke-width', 1)
-      .attr('opacity', 0.4);
-
-    // 主实体球
-    node.append('circle')
-      .attr('r', d => d.r || 10)
+      .attr('r', d => nodeRadius(d))
       .attr('fill', d => colorMap[d.type] || '#ccc')
-      .attr('stroke', '#ffffff')
-      .attr('stroke-width', 1.2);
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1.5);
 
-    // 文字标签（使用单个类统一样式，不使用动态每帧重绘）
     node.append('text')
-      .attr('class', 'node-label')
       .text(d => d.name)
-      .attr('font-size', '11px')
-      .attr('fill', '#ffffff')
+      .attr('font-size', '13px')
+      .attr('fill', '#fff')
       .attr('text-anchor', 'middle')
-      .attr('dy', d => (d.r || 10) + 12)
-      .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.95)')
-      .style('pointer-events', 'none')
-      .style('user-select', 'none');
+      .attr('dy', d => nodeRadius(d) + 14)
+      .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.8)');
 
-    // 拖拽
+    // Drag interaction
     const drag = d3.drag<SVGGElement, NodeData>()
       .on('start', (event, d) => {
-        if (!event.active) simulation.alphaTarget(0.15).restart();
+        if (!event.active) simulation.alphaTarget(0.1).restart();
         d.fx = d.x;
         d.fy = d.y;
       })
@@ -426,22 +292,46 @@ export const GraphCanvas: React.FC = () => {
       });
     node.call(drag as any);
 
-    // 悬浮高亮与 Tooltip
-    node.on('mouseenter', (event, d) => {
+    node.on('mouseover', (event, d) => {
+      d3.select(event.currentTarget).select('circle')
+        .transition().duration(200)
+        .attr('r', nodeRadius(d) + 5);
+
       const connectedNodeIds = new Set<string>();
       connectedNodeIds.add(d.id);
 
-      links.forEach(l => {
+      links.filter(l => {
         const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
         const targetId = typeof l.target === 'object' ? l.target.id : l.target;
-        if (sourceId === d.id) connectedNodeIds.add(targetId);
-        if (targetId === d.id) connectedNodeIds.add(sourceId);
+        if (sourceId === d.id) { connectedNodeIds.add(targetId); return true; }
+        if (targetId === d.id) { connectedNodeIds.add(sourceId); return true; }
+        return false;
       });
 
-      node.style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0.15);
+      node.style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0.12);
+
       link
-        .style('stroke', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? colorMap[d.type] : 'rgba(255,255,255,0.03)')
-        .style('stroke-width', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? 2.5 : 1);
+        .style('stroke', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? colorMap[d.type] : 'rgba(255,255,255,0.04)')
+        .style('stroke-width', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? 2.5 : 1)
+        .style('opacity', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? 1 : 0.05);
+
+      linkLabels.style('opacity', l => (connectedNodeIds.has((l.source as NodeData).id) && connectedNodeIds.has((l.target as NodeData).id)) ? 1 : 0);
+
+      webLinesGroup.selectAll('line').remove();
+      const firstDegreeNodes = nodes.filter(n => connectedNodeIds.has(n.id) && n.id !== d.id)
+        .slice(0, 8);
+
+      webLinesGroup.selectAll('line')
+        .data(firstDegreeNodes)
+        .join('line')
+        .attr('x1', d.x!)
+        .attr('y1', d.y!)
+        .attr('x2', n => n.x!)
+        .attr('y2', n => n.y!)
+        .attr('stroke', colorMap[d.type])
+        .attr('stroke-width', 1)
+        .attr('stroke-dasharray', '4,4')
+        .attr('opacity', 0.6);
 
       setTooltip({
         show: true,
@@ -456,13 +346,26 @@ export const GraphCanvas: React.FC = () => {
     .on('mousemove', (event) => {
       setTooltip(prev => ({ ...prev, x: event.clientX, y: event.clientY }));
     })
-    .on('mouseleave', () => {
+    .on('mouseout', () => {
       node.style('opacity', 1);
-      link.style('stroke', 'rgba(255, 255, 255, 0.15)').style('stroke-width', 1.0);
+      node.selectAll('circle')
+        .transition().duration(200)
+        .attr('r', (n: any) => nodeRadius(n));
+      link.style('stroke', 'rgba(255, 255, 255, 0.16)')
+          .style('stroke-width', 1.2)
+          .style('opacity', 0);
+      linkLabels.style('opacity', 0);
+      webLinesGroup.selectAll('line').remove();
       setTooltip(prev => ({ ...prev, show: false }));
     })
     .on('click', (event, d) => {
-      router.push(d.url);
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        setTimeout(() => {
+          router.push(d.url);
+        }, 3000);
+      } else {
+        router.push(d.url);
+      }
     });
 
     simulation.on('tick', () => {
@@ -472,19 +375,37 @@ export const GraphCanvas: React.FC = () => {
         .attr('x2', d => (d.target as NodeData).x!)
         .attr('y2', d => (d.target as NodeData).y!);
 
+      linkLabels
+        .attr('x', d => ((d.source as NodeData).x! + (d.target as NodeData).x!) / 2)
+        .attr('y', d => ((d.source as NodeData).y! + (d.target as NodeData).y!) / 2 - 4);
+
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    // 2.2 秒后停止仿真并自动优雅居中缩放
+    // 仿真 2.8 秒后自动居中并冻结防抖（符合 AGENTS.md 规范）
     const freezeTimer = setTimeout(() => {
       simulation.stop();
-      if (svgRef.current && zoomRef.current) {
-        svgRef.current.transition().duration(700).call(
-          zoomRef.current.transform,
-          d3.zoomIdentity.translate(cx * (1 - 0.72), cy * (1 - 0.72)).scale(0.72)
-        );
+
+      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+      nodes.forEach((n) => {
+        if (n.x !== undefined && n.y !== undefined && isFinite(n.x) && isFinite(n.y)) {
+          minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
+          minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
+        }
+      });
+
+      if (isFinite(minX) && isFinite(maxX) && isFinite(minY) && isFinite(maxY)) {
+        const pad = 60;
+        const bw = maxX - minX + pad * 2 || width;
+        const bh = maxY - minY + pad * 2 || height;
+        const fitScale = Math.min(1.1, Math.max(0.35, Math.min(width / bw, height / bh)));
+        const fitX = width / 2 - fitScale * (minX + maxX) / 2;
+        const fitY = height / 2 - fitScale * (minY + maxY) / 2;
+        if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
+          svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
+        }
       }
-    }, 2200);
+    }, 2800);
 
     return () => {
       clearTimeout(freezeTimer);
@@ -499,116 +420,106 @@ export const GraphCanvas: React.FC = () => {
 
   const handleZoomIn = () => {
     if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 1.3);
+      svgRef.current.transition().duration(500).call(zoomRef.current.scaleBy, 1.3);
     }
   };
 
   const handleZoomOut = () => {
     if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 0.75);
+      svgRef.current.transition().duration(500).call(zoomRef.current.scaleBy, 0.7);
     }
   };
 
   const handleReset = () => {
     if (svgRef.current && zoomRef.current && containerRef.current) {
-      const w = containerRef.current.clientWidth || 900;
-      const h = containerRef.current.clientHeight || 650;
-      svgRef.current.transition().duration(500).call(
-        zoomRef.current.transform,
-        d3.zoomIdentity.translate(w * 0.14, h * 0.14).scale(0.72)
-      );
+      const width = containerRef.current.clientWidth || 800;
+      const height = containerRef.current.clientHeight || 600;
+      const nodes = currentNodesRef.current;
+
+      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+      nodes.forEach((n) => {
+        if (n.x !== undefined && n.y !== undefined && isFinite(n.x) && isFinite(n.y)) {
+          minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
+          minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
+        }
+      });
+
+      if (isFinite(minX) && isFinite(maxX) && isFinite(minY) && isFinite(maxY)) {
+        const pad = 60;
+        const bw = maxX - minX + pad * 2 || width;
+        const bh = maxY - minY + pad * 2 || height;
+        const fitScale = Math.min(1.1, Math.max(0.35, Math.min(width / bw, height / bh)));
+        const fitX = width / 2 - fitScale * (minX + maxX) / 2;
+        const fitY = height / 2 - fitScale * (minY + maxY) / 2;
+        if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
+          svgRef.current.transition().duration(750).call(zoomRef.current.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
+        }
+      } else {
+        svgRef.current.transition().duration(750).call(zoomRef.current.transform, d3.zoomIdentity);
+      }
     }
   };
 
+  const countByType = (t: string) => getGraphData().allNodes.filter((n) => n.type === t).length;
+
   return (
-    <div className="relative w-full h-full min-h-[600px] bg-[#0B132B] rounded-3xl overflow-hidden shadow-2xl border border-slate-800 select-none">
-      {/* 顶部工具栏与分类筛选 */}
-      <div className="absolute top-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
-        <div className="flex items-center space-x-2 bg-slate-900/80 backdrop-blur-md p-1.5 rounded-2xl border border-slate-700/60 shadow-lg pointer-events-auto">
-          {FILTER_TYPES.map((t) => (
-            <button
-              key={t}
-              onClick={() => toggleType(t)}
-              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                visible[t]
-                  ? 'bg-slate-800 text-white shadow-sm border border-slate-600'
-                  : 'text-slate-500 hover:text-slate-300'
-              }`}
-            >
-              <span
-                className="w-2.5 h-2.5 rounded-full"
-                style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.4 }}
-              />
-              <span>{typeLabelMap[t]}</span>
-            </button>
-          ))}
-        </div>
-
-        <div className="flex items-center space-x-2 pointer-events-auto">
-          <div className="hidden sm:flex items-center space-x-1 bg-slate-900/80 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-700/60 text-[11px] text-amber-300/90 shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-            <span>八瓣莲花曼陀罗 · Ctrl+滚轮缩放</span>
-          </div>
-
-          <div className="flex items-center space-x-1 bg-slate-900/80 backdrop-blur-md p-1 rounded-2xl border border-slate-700/60 shadow-lg">
-            <button
-              onClick={handleZoomIn}
-              className="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl transition-colors"
-              title="放大 (或按住 Ctrl 向上滚动)"
-            >
-              <ZoomIn className="w-4 h-4" />
-            </button>
-            <button
-              onClick={handleZoomOut}
-              className="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl transition-colors"
-              title="缩小 (或按住 Ctrl 向下滚动)"
-            >
-              <ZoomOut className="w-4 h-4" />
-            </button>
-            <button
-              onClick={handleReset}
-              className="p-2 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl transition-colors"
-              title="复位八瓣金莲全貌"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
+    <div className="relative isolate w-full h-[75vh] min-h-[525px] md:h-[90vh] md:min-h-[700px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800" ref={containerRef}>
+      {/* Filter chips */}
+      <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[60%]">
+        {FILTER_TYPES.map((t) => (
+          <button
+            key={t}
+            onClick={() => toggleType(t)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
+              visible[t]
+                ? 'bg-white/15 border-white/30 text-white'
+                : 'bg-transparent border-white/10 text-white/35 line-through'
+            }`}
+          >
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
+            {typeLabelMap[t]} {countByType(t)}
+          </button>
+        ))}
       </div>
 
-      {/* 滚轮操作提示浮层 (原生 DOM 切换，零 React 开销) */}
-      <div
-        id="zen-graph-scroll-hint"
-        className="absolute top-16 left-1/2 -translate-x-1/2 z-30 pointer-events-none transition-all duration-300 opacity-0 -translate-y-2 bg-slate-900/90 text-amber-300 text-xs px-4 py-2 rounded-full border border-amber-500/40 shadow-xl backdrop-blur-md flex items-center space-x-2"
-      >
-        <span className="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping" />
-        <span>💡 提示：按住 <b>Ctrl</b> (或 ⌘) 滚动可缩放图谱，直接滚动可平滑浏览下方内容</span>
+      {/* Controls Toolbar */}
+      <div className="absolute top-4 left-4 z-10 flex gap-2">
+        <button onClick={handleZoomIn} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
+          <ZoomIn size={18} />
+        </button>
+        <button onClick={handleZoomOut} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
+          <ZoomOut size={18} />
+        </button>
+        <button onClick={handleReset} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
+          <RotateCcw size={18} />
+        </button>
       </div>
 
-      {/* 主画布容器 */}
-      <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
-
-      {/* 节点悬浮 Tooltip 卡片 */}
+      {/* Interactive Tooltip */}
       {tooltip.show && (
         <div
-          className="fixed z-50 pointer-events-none p-3.5 rounded-2xl bg-slate-900/95 backdrop-blur-md border border-slate-700 shadow-2xl text-xs max-w-xs transition-opacity duration-150"
           style={{
-            left: `${tooltip.x + 16}px`,
-            top: `${tooltip.y + 16}px`,
+            position: 'fixed',
+            left: tooltip.x + 15,
+            top: tooltip.y + 15,
+            background: 'rgba(11,19,41,0.95)',
+            border: '1px solid rgba(255,255,255,0.15)',
+            borderRadius: '12px',
+            padding: '12px 16px',
+            color: 'white',
+            zIndex: 50,
+            pointerEvents: 'none',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
           }}
         >
-          <div className="flex items-center space-x-2 mb-1.5">
-            <span
-              className="w-2.5 h-2.5 rounded-full ring-2 ring-white/20"
-              style={{ backgroundColor: tooltip.color }}
-            />
-            <span className="font-bold text-white text-sm font-serif-zen">{tooltip.name}</span>
-            <span className="px-2 py-0.5 rounded-full text-[10px] bg-slate-800 text-slate-300 border border-slate-700">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: tooltip.color }} />
+            <span className="font-bold text-base">{tooltip.name}</span>
+            <span className="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 ml-2">
               {tooltip.type}
             </span>
           </div>
-          <p className="text-slate-300 leading-relaxed font-serif-zen text-[11px]">{tooltip.desc}</p>
-          <div className="mt-2 text-[10px] text-amber-400/80 font-medium">点击即可前往详情页面 ➔</div>
+          <div className="text-sm text-white/70 mt-2">{tooltip.desc}</div>
         </div>
       )}
     </div>
