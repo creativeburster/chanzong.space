@@ -1027,4 +1027,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '𫑮', pinyin: 'mǎo', meaning: '同"卯"' },
     { char: '謌', pinyin: 'gē', meaning: '同"歌"' },
   ],
+  renyantianmu: [
+    { char: '揀', pinyin: 'jiǎn', meaning: '挑选、选择' },
+    { char: '褫', pinyin: 'chǐ', meaning: '剥夺、除去' },
+    { char: '誵', pinyin: 'xiáo', meaning: '誵讹，差错' },
+    { char: '觌', pinyin: 'dí', meaning: '相见、见面' },
+    { char: '镆', pinyin: 'mò', meaning: '镆铘，古代宝剑名' },
+    { char: '铘', pinyin: 'yé', meaning: '镆铘，古代宝剑名' },
+    { char: '殽', pinyin: 'yáo', meaning: '混杂' },
+    { char: '钁', pinyin: 'jué', meaning: '锄头' },
+    { char: '颋', pinyin: 'tǐng', meaning: '直、自在' },
+  ],
 };

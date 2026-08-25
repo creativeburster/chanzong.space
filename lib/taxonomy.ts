@@ -3309,6 +3309,21 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["zibai-zhenke"],
     "relatedBooks": []
   },
+
+  {
+    "id": "huiyan-zhizhao",
+    "name": "晦岩智昭",
+    "title": "人天眼目编纂者",
+    "era": "南宋（约12世纪）",
+    "lifeStory": "晦岩智昭，南宋禅僧，生平不详。淳熙年间（1174-1189）编纂《人天眼目》六卷，系统整理禅宗五家纲宗语句。自序云：游方时，所至尽诚，咨扣尊宿五宗纲要。其间件目，往往亦有所未知者。因慨念：既据师位，而纲宗语句尚不知其名，况旨诀乎？于是有意于纲要，几二十年矣。或见于遗编，或得于断碣，或闻尊宿称提，或获老衲垂颂。凡是五宗纲要者，即笔而藏诸。晚抵天台万年山寺，始偿其志。编次类列，分为五宗，名之曰人天眼目。",
+    "teachings": "以纲宗语句为禅门指南，为学人提供辨别五家宗风的依据。",
+    "quotes": ["既据师位，而纲宗语句尚不知其名，况旨诀乎？"],
+    "classics": ["renyantianmu"],
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["renyantianmu"]
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -8160,6 +8175,127 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["gaofengyulu"]
   },
+
+  {
+    "id": "wujia-ganzong",
+    "title": "五家纲宗",
+    "category": "禅宗",
+    "summary": "禅宗五家（临济、云门、曹洞、沩仰、法眼）的核心教法与接引学人的标准化施设。临济有四料拣/三玄三要/四照用/四宾主，云门有三句/一字关，曹洞有五位君臣/功勋五位/三种渗漏，沩仰有三种生/圆相，法眼有华严六相义。各家纲宗各具特色，临济峻烈、云门孤峻、曹洞绵密、沩仰镜智、法眼圆融。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": [],
+    "relatedPersons": ["huiyan-zhizhao"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "siliao-jian",
+    "title": "四料拣",
+    "category": "临济宗",
+    "summary": "临济义玄禅师接引学人的四种方式：夺人不夺境（破除对自我的执着）、夺境不夺人（破除对外境的执着）、人境俱夺（两者俱破）、人境俱不夺（任运自然）。以诗偈作答：煦日发生铺地锦/王令已行天下遍/并汾绝信独处一方/王登宝殿野老讴歌。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "sanxuan-sanyao",
+    "title": "三玄三要",
+    "category": "临济宗",
+    "summary": "临济宗纲宗。三玄：体中玄、句中玄、玄中玄。三要：一言中具三要。临济云：大凡举唱宗乘，须于一句中具三玄门，一玄中具三要，有卷有舒，有纵有夺，方得究竟。汾阳颂：三玄三要事难分，得意忘言道易亲。一句明明该万象，重阳九日菊花新。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["linji", "fenzhao-shanzhao"],
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "sizhao-yong",
+    "title": "四照用",
+    "category": "临济宗",
+    "summary": "临济宗纲宗。照则照破学人执着，令见本来面目；用则棒喝交驰，截断学人情识。四照用：先照后用、先用后照、照用同时、照用不同时。随机应物，无有定法。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "sibin-zhu",
+    "title": "四宾主",
+    "category": "临济宗",
+    "summary": "临济宗纲宗。宾中宾（学人）、宾中主（善知识）、主中宾（善知识应机之用）、主中主（善知识之本体）。临济云：大凡举唱宗乘，须辨宾主。一句中须具三玄，一玄中须具三要。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "yunmen-sanju",
+    "title": "云门三句",
+    "category": "云门宗",
+    "summary": "云门文偃禅师纲宗：函盖乾坤句（万法归一）、截断众流句（一言截断学人情识）、随波逐浪句（随缘应机）。僧问函盖乾坤句，师云：天覆地载，北俱卢洲。僧问截断众流句，师云：堆山积岳，一尽殽函。僧问随波逐浪句，师云：水流元在海，月落却归天。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["renyantianmu", "yunmen"]
+  },
+  {
+    "id": "yizi-guan",
+    "title": "一字关",
+    "category": "云门宗",
+    "summary": "云门文偃禅师以一字接引学人，截断众流，不容拟议。僧问如何是一字，师云：是。僧问如何是一字关，师云：过不得。大慧云：云门一字关，截断众流，不容拟议。学人于此，须是透得，方见云门用处。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong", "yunmen-sanju"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["renyantianmu", "yunmen"]
+  },
+  {
+    "id": "wuwei-junchen",
+    "title": "五位君臣",
+    "category": "曹洞宗",
+    "summary": "曹洞宗纲宗。洞山良价禅师立五位君臣：正中偏（理中事）、偏中正（事中理）、正中来（理事俱融）、兼中至（理事纵横）、兼中到（理事俱泯）。以君臣关系比喻理事关系，五位回互展现从理到事、从事到理的修行次第。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["dongshan"],
+    "relatedBooks": ["renyantianmu", "dongshanyulu"]
+  },
+  {
+    "id": "gongxun-wuwei",
+    "title": "功勋五位",
+    "category": "曹洞宗",
+    "summary": "曹洞宗纲宗。洞山良价禅师立功勋五位：向（趣向）、奉（承奉）、功（功用）、共功（功用俱忘）、功功（功功亦不可得）。展现修行次第，从趣向佛法到功功亦不可得的究竟境界。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong", "wuwei-junchen"],
+    "relatedPersons": ["dongshan"],
+    "relatedBooks": ["renyantianmu", "dongshanyulu"]
+  },
+  {
+    "id": "san-zhong-sheng",
+    "title": "三种生",
+    "category": "沩仰宗",
+    "summary": "沩仰宗纲宗。沩山灵祐禅师立三种生：想生（妄想心生，念念相续如瀑流不息）、相生（境相生心，外境现前心生分别）、流注生（念念流注，生灭不已）。指出三种心识活动模式，为学人辨别妄想。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["weishan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "yuanxiang",
+    "title": "圆相",
+    "category": "沩仰宗",
+    "summary": "沩仰宗纲宗。仰山慧寂禅师以圆相接引学人。僧问如何是圆相，师乃画一圆相。僧问圆相因何而起，师云：圆相因心而起。心本无相，因境而现。圆相表法，以图形示现佛法大意。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong", "san-zhong-sheng"],
+    "relatedPersons": ["yangshan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "huayan-liuxiang",
+    "title": "华严六相义",
+    "category": "法眼宗",
+    "summary": "法眼宗纲宗。法眼文益禅师融合华严教理，立六相义：总相（一即一切）、别相（一切即一）、同相（万法同一性）、异相（万法各差别）、成相（万法因缘和合而成）、坏相（万法因缘离散而坏）。以教禅融合、理事双照为特色。",
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wujia-ganzong"],
+    "relatedPersons": ["fayan"],
+    "relatedBooks": ["renyantianmu"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -9456,7 +9592,57 @@ export const ZEN_METHODS: MethodItem[] = [
           "xuanshayulu",
           "xuanshaguanglu"
       ]
-  }
+  },
+  {
+    "id": "linji-ganzong",
+    "title": "临济纲宗",
+    "summary": "临济宗接引学人的标准化施设，以四料拣、三玄三要、四照用、四宾主为纲宗。接引学人，以棒喝为用。其宗风峻烈，如金刚王宝剑，挥得下则活，挥不下则死。",
+    "steps": ["四料拣：夺人不夺境/夺境不夺人/人境俱夺/人境俱不夺", "三玄三要：体中玄/句中玄/玄中玄，一言中具三要", "四照用：先照后用/先用后照/照用同时/照用不同时", "四宾主：宾中宾/宾中主/主中宾/主中主"],
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["siliao-jian", "sanxuan-sanyao", "sizhao-yong", "sibin-zhu"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "yunmen-ganzong",
+    "title": "云门纲宗",
+    "summary": "云门宗接引学人的标准化施设，以三句、一字关为纲宗。接引学人，以一字关为用。其宗风孤峻，如一字关，过不得则死，过得则活。",
+    "steps": ["云门三句：函盖乾坤句/截断众流句/随波逐浪句", "一字关：以一字截断学人情识"],
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["yunmen-sanju", "yizi-guan"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["renyantianmu", "yunmen"]
+  },
+  {
+    "id": "caodong-ganzong",
+    "title": "曹洞纲宗",
+    "summary": "曹洞宗接引学人的标准化施设，以五位君臣、功勋五位、三种渗漏为纲宗。接引学人，以回互为用。其宗风绵密，如金针双锁，绵绵密密。",
+    "steps": ["五位君臣：正中偏/偏中正/正中来/兼中至/兼中到", "功勋五位：向/奉/功/共功/功功", "三种渗漏：见渗漏/情渗漏/语渗漏"],
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["wuwei-junchen", "gongxun-wuwei"],
+    "relatedPersons": ["dongshan", "caoshan"],
+    "relatedBooks": ["renyantianmu", "dongshanyulu"]
+  },
+  {
+    "id": "weiyang-ganzong",
+    "title": "沩仰纲宗",
+    "summary": "沩仰宗接引学人的标准化施设，以三种生、圆相为纲宗。以镜智照用、圆相表法为特色。",
+    "steps": ["三种生：想生/相生/流注生", "圆相：以图形示现佛法大意"],
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["san-zhong-sheng", "yuanxiang"],
+    "relatedPersons": ["weishan", "yangshan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "fayan-ganzong",
+    "title": "法眼纲宗",
+    "summary": "法眼宗接引学人的标准化施设，以华严六相义为纲宗。以教禅融合、理事双照为特色。",
+    "steps": ["华严六相义：总相/别相/同相/异相/成相/坏相"],
+    "classicRef": "人天眼目",
+    "relatedConcepts": ["huayan-liuxiang"],
+    "relatedPersons": ["fayan"],
+    "relatedBooks": ["renyantianmu"]
+  },
 ];
 
 export const ZEN_KOANS: KoanItem[] = [
@@ -15339,6 +15525,107 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["chan-jiao-huitong", "xiahunsan"],
     "relatedPersons": ["zibai-zhenke"],
     "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "koan-512",
+    "question": "如何是夺人不夺境？",
+    "answer": "临济义玄禅师云：煦日发生铺地锦，婴儿垂发白如丝。大慧云：此二句，一句存境，一句夺人。",
+    "master": "临济义玄",
+    "source": "人天眼目",
+    "relatedConcepts": ["siliao-jian"],
+    "relatedPersons": ["linji"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-513",
+    "question": "如何是云门三句？",
+    "answer": "云门文偃禅师云：一者函盖乾坤句，二者截断众流句，三者随波逐浪句。僧问函盖乾坤句，师云：天覆地载，北俱卢洲。僧问截断众流句，师云：堆山积岳，一尽殽函。僧问随波逐浪句，师云：水流元在海，月落却归天。",
+    "master": "云门文偃",
+    "source": "人天眼目",
+    "relatedConcepts": ["yunmen-sanju"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-514",
+    "question": "如何是一字关？",
+    "answer": "云门文偃禅师示众云：我有一字，与诸人商量。僧问：如何是一字？师云：是。僧问：如何是一字关？师云：过不得。大慧云：云门一字关，截断众流，不容拟议。学人于此，须是透得，方见云门用处。",
+    "master": "云门文偃",
+    "source": "人天眼目",
+    "relatedConcepts": ["yizi-guan"],
+    "relatedPersons": ["yunmen"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-515",
+    "question": "如何是五位君臣？",
+    "answer": "洞山良价禅师云：一者正中偏，二者偏中正，三者正中来，四者兼中至，五者兼中到。僧问正中偏，师云：半夜乌鸡室里鸣。僧问偏中正，师云：日落西山观异影。僧问正中来，师云：木马生儿遍九垓。僧问兼中至，师云：彼彼丈夫全意气。僧问兼中到，师云：黑白已前休作造。",
+    "master": "洞山良价",
+    "source": "人天眼目",
+    "relatedConcepts": ["wuwei-junchen"],
+    "relatedPersons": ["dongshan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-516",
+    "question": "如何是三种生？",
+    "answer": "沩山灵祐禅师云：一者想生，二者相生，三者流注生。僧问想生，师云：想生者，妄想心生也。念念相续，如瀑流不息。僧问相生，师云：相生者，境相生心也。外境现前，心生分别。僧问流注生，师云：流注生者，念念流注，生灭不已也。",
+    "master": "沩山灵祐",
+    "source": "人天眼目",
+    "relatedConcepts": ["san-zhong-sheng"],
+    "relatedPersons": ["weishan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-517",
+    "question": "如何是华严六相义？",
+    "answer": "法眼文益禅师云：一者总相，二者别相，三者同相，四者异相，五者成相，六者坏相。僧问总相，师云：总相者，一即一切也。僧问别相，师云：别相者，一切即一也。僧问同相，师云：同相者，万法同一性也。僧问异相，师云：异相者，万法各差别也。僧问成相，师云：成相者，万法因缘和合而成也。僧问坏相，师云：坏相者，万法因缘离散而坏也。",
+    "master": "法眼文益",
+    "source": "人天眼目",
+    "relatedConcepts": ["huayan-liuxiang"],
+    "relatedPersons": ["fayan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-518",
+    "question": "如何是黄龙三关？",
+    "answer": "黄龙慧南禅师，室中常问僧：人人尽有生缘，上座生缘在甚处？又问：我手何似佛手？又问：我脚何似驴脚？凡三十年，莫有契其机者。",
+    "master": "黄龙慧南",
+    "source": "人天眼目",
+    "relatedConcepts": [],
+    "relatedPersons": ["huanglong-huinan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-519",
+    "question": "如何是巴陵三句？",
+    "answer": "巴陵颢鉴禅师，云门侍者。师问：教意有几种？陵曰：祖祢不了，殃及儿孙。师曰：教意有几种？陵曰：我有三句，示诸学人。一曰：鸡寒上树，鸡寒入瓮。二曰：金将火试。三曰：透网金鳞。大慧云：巴陵三句，即云门三句之别名也。",
+    "master": "巴陵颢鉴",
+    "source": "人天眼目",
+    "relatedConcepts": ["yunmen-sanju"],
+    "relatedPersons": [],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-520",
+    "question": "如何是曹山三种堕？",
+    "answer": "曹山本寂禅师示众云：我有三种堕，与诸人商量。何者为三？一者披毛戴角堕，二者见色闻声堕，三者礼绝百僚堕。僧问披毛戴角堕，师云：披毛戴角，随颋自在。僧问见色闻声堕，师云：见色闻声，随处自在。僧问礼绝百僚堕，师云：礼绝百僚，尊贵自在。",
+    "master": "曹山本寂",
+    "source": "人天眼目",
+    "relatedConcepts": [],
+    "relatedPersons": ["caoshan"],
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "koan-521",
+    "question": "如何是汾阳三诀？",
+    "answer": "汾阳善昭禅师示众云：我有三诀，与诸人商量。何者为三？一者金刚圈，二者栗棘蓬，三者金刚王宝剑。僧问金刚圈，师云：金刚圈，跳得过则活，跳不过则死。僧问栗棘蓬，师云：栗棘蓬，吞得下则活，吞不下则死。僧问金刚王宝剑，师云：金刚王宝剑，挥得下则活，挥不下则死。",
+    "master": "汾阳善昭",
+    "source": "人天眼目",
+    "relatedConcepts": [],
+    "relatedPersons": ["fenzhao-shanzhao"],
+    "relatedBooks": ["renyantianmu"]
   },
 ];
 
@@ -28669,5 +28956,102 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "紫柏真可禅师的生平如何？",
     "answer": "紫柏真可（1543-1603）俗姓沈吴江人字达观晚号紫柏。万历中慈圣皇太后钦师道风上亦雅知师谓若此真可名一僧师遂取以更其名。十七岁出家于苏州云岩寺后行脚参方遍参诸方尊宿。师相好魁奇雄硕威掩万众童真绝染肤体如铁石日饭数升过中不食自出家即胁不到席四十余年如一日。所至设高座悬灯趺对。行脚见名蓝废址必发愿恢复从楞严至归宗凡兴建一十五所。与憨山德清为法门至交共议复兴明代佛教。因妖书案牵连入狱万历三十一年圆寂于狱中世寿六十一。钱谦益称其气宇如王蹚踏天下为明代佛教复兴之关键人物。",
     "relatedBooks": ["zibaibieji"]
+  },
+
+  {
+    "id": "faq-2308",
+    "question": "《人天眼目》是一部什么书？",
+    "answer": "《人天眼目》是南宋淳熙年间（1188年）晦岩智昭禅师编纂的禅宗纲宗集，共六卷。系统整理临济、云门、曹洞、沩仰、法眼五家核心教法，包括临济四料拣/三玄三要/四照用/四宾主、云门三句/一字关、曹洞五位君臣/功勋五位/三种渗漏、沩仰三种生/圆相、法眼华严六相义等纲宗语句，并汇集历代祖师颂古评唱。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2309",
+    "question": "什么是五家纲宗？",
+    "answer": "五家纲宗是禅宗五家（临济、云门、曹洞、沩仰、法眼）的核心教法与接引学人的标准化施设。临济有四料拣/三玄三要/四照用/四宾主，云门有三句/一字关，曹洞有五位君臣/功勋五位/三种渗漏，沩仰有三种生/圆相，法眼有华严六相义。各家纲宗各具特色，临济峻烈、云门孤峻、曹洞绵密、沩仰镜智、法眼圆融。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2310",
+    "question": "什么是临济四料拣？",
+    "answer": "四料拣是临济义玄禅师接引学人的四种方式：夺人不夺境（破除对自我的执着）、夺境不夺人（破除对外境的执着）、人境俱夺（两者俱破）、人境俱不夺（任运自然）。以诗偈作答：煦日发生铺地锦/王令已行天下遍/并汾绝信独处一方/王登宝殿野老讴歌。",
+    "relatedBooks": ["renyantianmu", "linji"]
+  },
+  {
+    "id": "faq-2311",
+    "question": "什么是云门三句？",
+    "answer": "云门三句是云门文偃禅师的纲宗：函盖乾坤句（万法归一）、截断众流句（一言截断学人情识）、随波逐浪句（随缘应机）。僧问函盖乾坤句，师云：天覆地载，北俱卢洲。僧问截断众流句，师云：堆山积岳，一尽殽函。僧问随波逐浪句，师云：水流元在海，月落却归天。",
+    "relatedBooks": ["renyantianmu", "yunmen"]
+  },
+  {
+    "id": "faq-2312",
+    "question": "什么是曹洞五位君臣？",
+    "answer": "五位君臣是曹洞宗纲宗。洞山良价禅师立五位君臣：正中偏（理中事）、偏中正（事中理）、正中来（理事俱融）、兼中至（理事纵横）、兼中到（理事俱泯）。以君臣关系比喻理事关系，五位回互展现从理到事、从事到理的修行次第。",
+    "relatedBooks": ["renyantianmu", "dongshanyulu"]
+  },
+  {
+    "id": "faq-2313",
+    "question": "什么是沩仰三种生？",
+    "answer": "三种生是沩仰宗纲宗。沩山灵祐禅师立三种生：想生（妄想心生，念念相续如瀑流不息）、相生（境相生心，外境现前心生分别）、流注生（念念流注，生灭不已）。指出三种心识活动模式，为学人辨别妄想。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2314",
+    "question": "什么是法眼华严六相义？",
+    "answer": "华严六相义是法眼宗纲宗。法眼文益禅师融合华严教理，立六相义：总相（一即一切）、别相（一切即一）、同相（万法同一性）、异相（万法各差别）、成相（万法因缘和合而成）、坏相（万法因缘离散而坏）。以教禅融合、理事双照为特色。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2315",
+    "question": "什么是黄龙三关？",
+    "answer": "黄龙三关是黄龙慧南禅师接引学人的三个问题：人人尽有生缘，上座生缘在甚处？我手何似佛手？我脚何似驴脚？凡三十年，莫有契其机者。三关之设，旨在截断学人情识，令于言语道断处瞥见本来。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2316",
+    "question": "什么是巴陵三句？",
+    "answer": "巴陵三句是巴陵颢鉴禅师（云门侍者）的接引语句：鸡寒上树，鸡寒入瓮（即函盖乾坤句）；金将火试（即截断众流句）；透网金鳞（即随波逐浪句）。大慧云：巴陵三句，即云门三句之别名也。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2317",
+    "question": "什么是曹山三种堕？",
+    "answer": "三种堕是曹山本寂禅师的纲宗：披毛戴角堕（披毛戴角，随颋自在）、见色闻声堕（见色闻声，随处自在）、礼绝百僚堕（礼绝百僚，尊贵自在）。三种堕展现曹洞宗于一切处自在无碍的境界。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2318",
+    "question": "什么是汾阳三诀？",
+    "answer": "汾阳三诀是汾阳善昭禅师的纲宗：金刚圈（跳得过则活，跳不过则死）、栗棘蓬（吞得下则活，吞不下则死）、金刚王宝剑（挥得下则活，挥不下则死）。三诀之设，旨在截断学人情识，令于绝路处回光返照。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2319",
+    "question": "《人天眼目》的编纂者是谁？",
+    "answer": "《人天眼目》的编纂者是南宋晦岩智昭禅师。自序云：游方时，所至尽诚，咨扣尊宿五宗纲要。其间件目，往往亦有所未知者。因慨念：既据师位，而纲宗语句尚不知其名，况旨诀乎？于是有意于纲要，几二十年矣。晚抵天台万年山寺，始偿其志。编次类列，分为五宗，名之曰人天眼目。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2320",
+    "question": "《人天眼目》为什么叫这个名字？",
+    "answer": "'人天'指人天师表，'眼目'指指引迷津的正眼。此书即为禅门学人提供辨别五家宗风、掌握纲宗语句的指南。智昭禅师自序云：若其执拂柄据师位者，外是则无以辩验邪正也。有识博闻者，必垂印可。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2321",
+    "question": "《人天眼目》对后世有什么影响？",
+    "answer": "《人天眼目》是研究禅宗五家宗风差异的核心文献，也是理解'纲宗'——即禅门接引学人的标准化施设——的必读之作。后世禅师辨别五家宗风，多以此书为依据。",
+    "relatedBooks": ["renyantianmu"]
+  },
+  {
+    "id": "faq-2322",
+    "question": "《人天眼目》和《碧岩录》有什么区别？",
+    "answer": "《碧岩录》是圆悟克勤禅师对雪窦重显禅师一百则颂古的评唱，以颂古为中心。《人天眼目》是晦岩智昭禅师编纂的禅宗纲宗集，系统整理五家核心教法。《碧岩录》重在评唱，《人天眼目》重在纲宗。",
+    "relatedBooks": ["renyantianmu", "biyanlu"]
+  },
+  {
+    "id": "faq-2323",
+    "question": "五家宗风各有什么特点？",
+    "answer": "临济宗风峻烈，以棒喝为用，如金刚王宝剑；云门宗风孤峻，以一字关为用，截断众流；曹洞宗风绵密，以回互为用，如金针双锁；沩仰宗风镜智，以圆相表法；法眼宗风圆融，以教禅融合为特色。",
+    "relatedBooks": ["renyantianmu"]
   },
 ];
