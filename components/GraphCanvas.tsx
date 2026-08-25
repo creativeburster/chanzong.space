@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, MoveVertical } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -68,17 +68,45 @@ const shortLabel = (t: string, n = 8) => (t.length > n ? t.slice(0, n) + '…' :
 const EXCLUDE_GRAPH_IDS = new Set([
   'bodhidharma', 'huike', 'sengcan', 'daoxin', 'hongren',
   'xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun', 'sixingguan',
-  'koan-11', 'koan-12'
 ]);
 
-/* ---- Nodes & links generated dynamically from taxonomy + manifest ---- */
 function getGraphData() {
   const allNodes: NodeData[] = [
-    ...ZEN_PERSONS.filter(p => !EXCLUDE_GRAPH_IDS.has(p.id)).map((p) => ({ id: p.id, name: p.name, type: 'person', url: `/persons/${p.id}`, desc: `${p.title} · ${p.era}` })),
-    ...manifest.filter(b => !EXCLUDE_GRAPH_IDS.has(b.id)).map((b) => ({ id: b.id, name: shortLabel(b.title), type: 'book', url: `/classics/${b.id}`, desc: `${b.author} · ${b.category}` })),
-    ...ZEN_CONCEPTS.filter(c => !EXCLUDE_GRAPH_IDS.has(c.id)).map((c) => ({ id: c.id, name: c.title, type: 'concept', url: `/concepts/${c.id}`, desc: c.summary.slice(0, 50) + '…' })),
-    ...ZEN_METHODS.filter(m => !EXCLUDE_GRAPH_IDS.has(m.id)).map((m) => ({ id: m.id, name: m.title, type: 'method', url: `/methods/${m.id}`, desc: m.summary.slice(0, 50) + '…' })),
-    ...ZEN_KOANS.filter(q => !EXCLUDE_GRAPH_IDS.has(q.id)).map((q) => ({ id: q.id, name: shortLabel(q.question, 7), type: 'koan', url: `/koan/${q.id}`, desc: `${q.master} · ${q.source}` })),
+    ...ZEN_PERSONS.filter((p) => !EXCLUDE_GRAPH_IDS.has(p.id)).map((p) => ({
+      id: p.id,
+      name: p.name,
+      type: 'person',
+      url: `/persons/${p.id}`,
+      desc: `${p.title} · ${p.era}`,
+    })),
+    ...manifest.filter((b) => !EXCLUDE_GRAPH_IDS.has(b.id)).map((b) => ({
+      id: b.id,
+      name: shortLabel(b.title),
+      type: 'book',
+      url: `/classics/${b.id}`,
+      desc: `${b.author} · ${b.category}`,
+    })),
+    ...ZEN_CONCEPTS.filter((c) => !EXCLUDE_GRAPH_IDS.has(c.id)).map((c) => ({
+      id: c.id,
+      name: c.title,
+      type: 'concept',
+      url: `/concepts/${c.id}`,
+      desc: c.summary.slice(0, 48) + '…',
+    })),
+    ...ZEN_METHODS.filter((m) => !EXCLUDE_GRAPH_IDS.has(m.id)).map((m) => ({
+      id: m.id,
+      name: m.title,
+      type: 'method',
+      url: `/methods/${m.id}`,
+      desc: m.summary.slice(0, 48) + '…',
+    })),
+    ...ZEN_KOANS.map((q) => ({
+      id: q.id,
+      name: shortLabel(q.question, 7),
+      type: 'koan',
+      url: `/koan/${q.id}`,
+      desc: `${q.master} · ${q.source}`,
+    })),
   ];
 
   const nodeIdSet = new Set(allNodes.map((n) => n.id));
@@ -100,27 +128,32 @@ function getGraphData() {
   });
   ZEN_CONCEPTS.forEach((c) => {
     c.relatedPersons.forEach((t) => addLink(t, c.id, '阐扬'));
+    c.relatedConcepts.forEach((t) => addLink(c.id, t, '法脉'));
+    c.relatedBooks.forEach((t) => addLink(c.id, t, '著述'));
   });
   ZEN_METHODS.forEach((m) => {
     m.relatedPersons.forEach((t) => addLink(t, m.id, '行持'));
+    m.relatedConcepts.forEach((t) => addLink(m.id, t, '阐扬'));
+    m.relatedBooks.forEach((t) => addLink(m.id, t, '著述'));
   });
   ZEN_KOANS.forEach((q) => {
     q.relatedPersons.forEach((t) => addLink(t, q.id, '问答'));
+    q.relatedConcepts.forEach((t) => addLink(q.id, t, '阐扬'));
+    q.relatedBooks.forEach((t) => addLink(q.id, t, '著述'));
   });
 
-  // 用全部连线统计度数，作为节点重要性与大小的依据
   const degree = new Map<string, number>();
   allLinks.forEach((l) => {
     degree.set(l.source as string, (degree.get(l.source as string) || 0) + 1);
     degree.set(l.target as string, (degree.get(l.target as string) || 0) + 1);
   });
+
   allNodes.forEach((n) => {
     const d = degree.get(n.id) || 0;
     const base = baseRadiusMap[n.type] || 10;
     n.r = Math.min(base * 3.2, base + d * 2.8);
   });
 
-  // 每个节点只保留最强的若干条连线，避免连线过密
   const linksByNode = new Map<string, LinkData[]>();
   allLinks.forEach((l) => {
     [l.source as string, l.target as string].forEach((id) => {
@@ -163,8 +196,8 @@ export const GraphCanvas: React.FC = () => {
 
   useEffect(() => {
     if (!containerRef.current) return;
-    const width = containerRef.current.clientWidth || 800;
-    const height = containerRef.current.clientHeight || 600;
+    const width = containerRef.current.clientWidth || 860;
+    const height = containerRef.current.clientHeight || 650;
 
     d3.select(containerRef.current).selectAll('svg.graph-canvas-svg').remove();
 
@@ -178,14 +211,17 @@ export const GraphCanvas: React.FC = () => {
       .style('top', '0')
       .style('left', '0')
       .style('display', 'block')
-      .style('overflow', 'hidden');
+      .style('overflow', 'hidden')
+      .style('background', '#0B1329');
 
     svgRef.current = svg;
 
-    const g = svg.append('g');
+    const g = svg.append('g').attr('class', 'main-zoom-layer');
 
+    // D3 Zoom 缩放配置（平滑阻尼，直接滚轮缩放图谱，极速流畅）
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.1, 4])
+      .scaleExtent([0.15, 3.5])
+      .wheelDelta((event) => -event.deltaY * 0.002)
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
       });
@@ -199,7 +235,6 @@ export const GraphCanvas: React.FC = () => {
     const visibleIds = new Set(nodesData.map((n) => n.id));
     const linksData = allLinks.filter((l) => visibleIds.has(l.source as string) && visibleIds.has(l.target as string));
 
-    // 过滤掉没有任何连线的孤立节点，防止它们飘到屏幕外成为“多余元素”
     const nodesWithLinks = new Set<string>();
     linksData.forEach(l => {
       nodesWithLinks.add(l.source as string);
@@ -208,22 +243,22 @@ export const GraphCanvas: React.FC = () => {
     
     const finalNodesData = nodesData.filter(n => nodesWithLinks.has(n.id));
 
-    // 预先将节点坐标初始化在画布中央范围，防止 D3 默认赋给 (7.07, 0) 近原点坐标而落在左上角按钮区
     const nodes: NodeData[] = finalNodesData.map(d => ({
       ...d,
-      x: width / 2 + (Math.random() - 0.5) * 80,
-      y: height / 2 + (Math.random() - 0.5) * 80,
+      x: width / 2 + (Math.random() - 0.5) * 120,
+      y: height / 2 + (Math.random() - 0.5) * 120,
     }));
     const links: LinkData[] = linksData.map(d => ({ ...d }));
 
+    // 高性能力导向仿真（快速收敛）
     const simulation = d3.forceSimulation<NodeData>(nodes)
-      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(65).strength(0.7))
-      .force('charge', d3.forceManyBody().strength(-90))
-      .force('x', d3.forceX(width / 2).strength(0.12))
-      .force('y', d3.forceY(height / 2).strength(0.12))
+      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(60).strength(0.65))
+      .force('charge', d3.forceManyBody().strength(-80))
+      .force('x', d3.forceX(width / 2).strength(0.15))
+      .force('y', d3.forceY(height / 2).strength(0.15))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collide', d3.forceCollide<NodeData>().radius(d => nodeRadius(d) + 8).strength(0.8))
-      .alphaDecay(0.03);
+      .force('collide', d3.forceCollide<NodeData>().radius(d => nodeRadius(d) + 7).strength(0.75))
+      .alphaDecay(0.045);
 
     currentNodesRef.current = nodes;
 
@@ -272,12 +307,13 @@ export const GraphCanvas: React.FC = () => {
       .attr('fill', '#fff')
       .attr('text-anchor', 'middle')
       .attr('dy', d => nodeRadius(d) + 14)
-      .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.8)');
+      .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.8)')
+      .style('pointer-events', 'none');
 
     // Drag interaction
     const drag = d3.drag<SVGGElement, NodeData>()
       .on('start', (event, d) => {
-        if (!event.active) simulation.alphaTarget(0.1).restart();
+        if (!event.active) simulation.alphaTarget(0.15).restart();
         d.fx = d.x;
         d.fy = d.y;
       })
@@ -382,7 +418,7 @@ export const GraphCanvas: React.FC = () => {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    // 仿真 2.8 秒后自动居中并冻结防抖（符合 AGENTS.md 规范）
+    // 仿真 2.2 秒后自动居中并冻结物理计算，彻底释放 CPU
     const freezeTimer = setTimeout(() => {
       simulation.stop();
 
@@ -402,10 +438,10 @@ export const GraphCanvas: React.FC = () => {
         const fitX = width / 2 - fitScale * (minX + maxX) / 2;
         const fitY = height / 2 - fitScale * (minY + maxY) / 2;
         if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
-          svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
+          svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
         }
       }
-    }, 2800);
+    }, 2200);
 
     return () => {
       clearTimeout(freezeTimer);
@@ -420,20 +456,20 @@ export const GraphCanvas: React.FC = () => {
 
   const handleZoomIn = () => {
     if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(500).call(zoomRef.current.scaleBy, 1.3);
+      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 1.3);
     }
   };
 
   const handleZoomOut = () => {
     if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(500).call(zoomRef.current.scaleBy, 0.7);
+      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 0.75);
     }
   };
 
   const handleReset = () => {
     if (svgRef.current && zoomRef.current && containerRef.current) {
-      const width = containerRef.current.clientWidth || 800;
-      const height = containerRef.current.clientHeight || 600;
+      const width = containerRef.current.clientWidth || 860;
+      const height = containerRef.current.clientHeight || 650;
       const nodes = currentNodesRef.current;
 
       let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
@@ -452,10 +488,10 @@ export const GraphCanvas: React.FC = () => {
         const fitX = width / 2 - fitScale * (minX + maxX) / 2;
         const fitY = height / 2 - fitScale * (minY + maxY) / 2;
         if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
-          svgRef.current.transition().duration(750).call(zoomRef.current.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
+          svgRef.current.transition().duration(500).call(zoomRef.current.transform, d3.zoomIdentity.translate(fitX, fitY).scale(fitScale));
         }
       } else {
-        svgRef.current.transition().duration(750).call(zoomRef.current.transform, d3.zoomIdentity);
+        svgRef.current.transition().duration(500).call(zoomRef.current.transform, d3.zoomIdentity);
       }
     }
   };
@@ -463,39 +499,67 @@ export const GraphCanvas: React.FC = () => {
   const countByType = (t: string) => getGraphData().allNodes.filter((n) => n.type === t).length;
 
   return (
-    <div className="relative isolate w-full h-[75vh] min-h-[525px] md:h-[90vh] md:min-h-[700px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800" ref={containerRef}>
-      {/* Filter chips */}
-      <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[60%]">
-        {FILTER_TYPES.map((t) => (
+    <div className="relative w-full flex items-start gap-4">
+      {/* 1. 黑色背景主图谱卡片（保持经典完整星团，右侧留出空白区） */}
+      <div
+        className="relative flex-1 h-[75vh] min-h-[540px] md:h-[86vh] md:min-h-[660px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800"
+        ref={containerRef}
+      >
+        {/* Filter chips (右上角分类筛选) */}
+        <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[65%]">
+          {FILTER_TYPES.map((t) => (
+            <button
+              key={t}
+              onClick={() => toggleType(t)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
+                visible[t]
+                  ? 'bg-white/15 border-white/30 text-white shadow-sm'
+                  : 'bg-transparent border-white/10 text-white/35 line-through'
+              }`}
+            >
+              <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
+              {typeLabelMap[t]} {countByType(t)}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* 2. 右侧空白区域的竖排悬浮操作面板与页面滚动提示 */}
+      <div className="sticky top-28 flex flex-col items-center space-y-3 z-30 py-2">
+        {/* 缩放与复位按钮组 */}
+        <div className="flex flex-col items-center space-y-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
           <button
-            key={t}
-            onClick={() => toggleType(t)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
-              visible[t]
-                ? 'bg-white/15 border-white/30 text-white'
-                : 'bg-transparent border-white/10 text-white/35 line-through'
-            }`}
+            onClick={handleZoomIn}
+            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
+            title="放大图谱"
           >
-            <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
-            {typeLabelMap[t]} {countByType(t)}
+            <ZoomIn className="w-5 h-5" />
           </button>
-        ))}
+          <button
+            onClick={handleZoomOut}
+            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
+            title="缩小图谱"
+          >
+            <ZoomOut className="w-5 h-5" />
+          </button>
+          <div className="w-5 h-px bg-slate-200 my-0.5" />
+          <button
+            onClick={handleReset}
+            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
+            title="复位图谱全貌"
+          >
+            <RotateCcw className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* 页面滚动指引提示 */}
+        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[70px] shadow-sm">
+          <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
+          <span className="font-medium">此处滚动整页</span>
+        </div>
       </div>
 
-      {/* Controls Toolbar */}
-      <div className="absolute top-4 left-4 z-10 flex gap-2">
-        <button onClick={handleZoomIn} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
-          <ZoomIn size={18} />
-        </button>
-        <button onClick={handleZoomOut} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
-          <ZoomOut size={18} />
-        </button>
-        <button onClick={handleReset} className="p-2 bg-white/10 hover:bg-white/20 rounded-md text-white backdrop-blur-sm transition">
-          <RotateCcw size={18} />
-        </button>
-      </div>
-
-      {/* Interactive Tooltip */}
+      {/* 3. 悬浮 Tooltip */}
       {tooltip.show && (
         <div
           style={{
