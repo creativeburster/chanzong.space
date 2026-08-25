@@ -1458,21 +1458,18 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["kumarajiva"],
     "relatedBooks": ["weimojiejing"]
   },
-  {
+    {
     "id": "xuefeng-yicun",
     "name": "雪峰义存",
-    "title": "云门法眼二宗之师",
-    "era": "唐代 (822-908)",
-    "lifeStory": "义存禅师，泉州南安（今福建南安）人，俗姓曾。十二岁出家，后参德山宣鉴，于德山座下开悟。师住福州雪峰山（今福建闽侯），广接学人，住众常千五百人。门下出云门文偃、玄沙师备等，云门文偃开云门宗，玄沙师备传罗汉桂琛，桂琛传法眼文益，开法眼宗——雪峰一系遂为云门、法眼两宗之源头。师与赵州从谂齐名，时人谓\u201c南有雪峰，北有赵州\u201d。",
-    "teachings": "雪峰宗风以\u201c鳌山成道\u201d为著名公案：师在鳌山阻雪，忽悟德山所示之旨，叹曰：\u201c鳌山成道，何处不通？\u201d其教以\u201c彻底\u201d为要——不存丝毫疑情，不剩一毫知见，直下承当，全体承担。",
-    "quotes": [
-      "鳌山成道，何处不通？",
-      "尽大地是汝自己，何不荐取？"
-    ],
+    "title": "唐五代禅宗巨匠 / 云门法眼二宗之师",
+    "era": "唐长庆二年—梁开平二年 (822-908)",
+    "lifeStory": "雪峰义存，俗姓曾，泉州南安人，家世奉佛。师生恶荤茹，于襁褓中闻钟梵之声，或见幡华像设，必为之动容。年十二，从其父游莆田玉涧寺，见庆玄律师，遽拜曰：我师也。遂留侍焉。十七落发，谒芙蓉弘照大师，照抚而器之。后往幽州宝剎寺受戒，久历禅会，缘契德山宣鉴。在洞山作饭头，淘米次，山问：淘沙去米？淘米去沙？师曰：沙米一时去。山曰：大众吃个什么？师遂覆却米盆。山曰：据于因缘，合在德山。后果参德山，于德山座下开悟。唐咸通中，回闽中雪峰创院，徒侣翕然，住众常千五百人。懿宗赐号真觉禅师，仍赐紫袈裟。师与赵州从谂齐名，时人谓南有雪峰，北有赵州。门下出云门文偃开云门宗、玄沙师备传罗汉桂琛，桂琛传法眼文益，开法眼宗——一雪峰法门开出云门、法眼二宗，法脉之广为六祖以后之最。梁开平戊辰三月示疾，闽帅命医。师曰：吾非疾也。竟不服药，遗偈付法。五月二日，朝游蓝田，暮归澡身，中夜入灭。寿八十七，腊五十九。建塔于本院方丈。师自制塔铭曰：兄弟横十字，同心着一仪。土主曰松山，卵塔号难提。",
+    "teachings": "雪峰宗风以鳌山成道为悟道因缘，以见性成佛为根本宗旨，以三木毬接引学人，以南山鳖鼻蛇勘验来机。其上堂示众直截了当——尽大地撮来如粟米粒大，拝向面前，漆桶不会，打鼓普请看。其答闽王问直指心源——须是见性方得成佛，有作之心皆是轮回，福尽即堕。其与玄沙机缘亲切绵密——我这里近日有个把断乾坤汉，汝须著精彩。其勘验学人凌厉痛快——道得即不剃汝头、速道速道。其一生力斥傍家朦胧老师颔腮下记持言句之口头禅，直示承当者箇事须是大丈夫汉始得。",
+    "quotes": ["须是见性，方得成佛。", "悟即刹那间，不悟尘沙劫。", "尽大地撮来如粟米粒大，拝向面前，漆桶不会，打鼓普请看。", "饭篱边坐饿死人，临河渴死汉。", "南山有一条鳖鼻蛇，汝等诸人切须好看。", "世界阔一尺，古镜阔一尺；世界阔一丈，古镜阔一丈。", "承当者箇事，须是大丈夫汉始得。"],
     "classics": ["雪峰义存禅师语录"],
-    "relatedConcepts": ["self-nature", "ordinary-mind"],
+    "relatedConcepts": ["jianxing-chengfo", "self-nature", "ordinary-mind"],
     "relatedMethods": [],
-    "relatedPersons": ["yunmen", "deshan-xuanjian", "xuansha-shibei"],
+    "relatedPersons": ["yunmen", "deshan-xuanjian", "xuansha-shibei", "zhaozhou"],
     "relatedBooks": ["xuefengyulu", "xuanshayulu", "xuanshaguanglu"]
   },
   {
@@ -14024,83 +14021,11 @@ export const ZEN_KOANS: KoanItem[] = [
 
 
 
-  {
-    "id": "koan-388",
-    "question": "雪峰鳌山成道",
-    "answer": "鳌山成道，何处不通。",
-    "context": "雪峰与岩头、钦山同行参方，至鳌山阻雪。雪峰终日危坐，岩头鼾睡如雷。雪峰诉参德山之疑，岩头一语点破，雪峰忽悟。",
-    "interpretation": "雪峰行脚多年未悟，在鳌山阻雪时被岩头一语点破，叹“鳌山成道，何处不通”——悟道不在行脚遍参，在于一言之下桶底脱落。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
-  {
-    "id": "koan-389",
-    "question": "雪峰见性成佛",
-    "answer": "须是见性，方得成佛。",
-    "context": "闽王王审知请雪峰与玄沙入内论佛心印，问诸佛达磨所传秘密心印。雪峰直答须见性方得成佛。",
-    "interpretation": "帝王问成佛之道，雪峰不谈修福造寺，直指见性——见自本性，无物可见，此是难信之法。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
-  {
-    "id": "koan-390",
-    "question": "雪峰福尽即堕",
-    "answer": "不得成佛。但是有作之心，皆是轮回。福尽即堕。",
-    "context": "闽王问造寺修福布施度僧还得成佛否，雪峰直言不得，但得生天报，福尽即堕。",
-    "interpretation": "有为功德感人天福报，福尽还堕，不出轮回——成佛惟在见性，非造作可得。此与达摩答梁武帝“并无功德”同一宗旨。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
-  {
-    "id": "koan-391",
-    "question": "雪峰悟即刹那",
-    "answer": "悟即刹那间，不悟尘沙劫。",
-    "context": "雪峰对闽王说见性之法，称扬此事非言语可尽。",
-    "interpretation": "悟则一刹那间转凡成圣，不悟则尘沙劫轮回不息——迷悟之间，天地悬隔。达磨亲传只是一言，千经万论皆指归一心。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
-  {
-    "id": "koan-392",
-    "question": "雪峰三毬",
-    "answer": "三毬堂中，一毬一世界。",
-    "context": "雪峰山道场有三毬堂，为接引学人处。雪峰常以三毬示众。",
-    "interpretation": "三毬堂为雪峰道场标志——三毬喻三界、喻三身、喻三句，接引学人于此处转身。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
-  {
-    "id": "koan-393",
-    "question": "雪峰南山鳖鼻蛇",
-    "answer": "南山有一条鳖鼻蛇，汝等诸人切须好看。",
-    "context": "雪峰示众云南山有一条鳖鼻蛇，长庆云今日堂中大有人丧身失命，云门以拄杖撛向峰前作怕势。",
-    "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆识得丧身失命，云门以拄杖直面，玄沙云“用南山作么”。一则公案，三尊宿各出手眼。",
-    "master": "雪峰义存",
-    "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
-  },
 
   {
     "id": "koan-394",
@@ -14594,6 +14519,266 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["kanhua-chan-concept", "yiqing", "all-returns-to-one"],
     "relatedPersons": ["gaofeng-yuanmiao"],
     "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "koan-432",
+    "question": "雪峰鳌山成道",
+    "answer": "鳌山成道，何处不通。",
+    "context": "雪峰与岩头、钦山同行参方，至鳌山阻雪。雪峰终日危坐，岩头鼾睡如雷。雪峰诉参德山之疑，岩头一语点破，雪峰忽悟德山所示之旨，叹曰：鳌山成道，何处不通。",
+    "interpretation": "雪峰行脚多年未悟，在鳌山阻雪时被岩头一语点破——悟道不在行脚遍参，在于一言之下桶底脱落。'鳌山成道何处不通'示悟后一切处皆是道场，不必更向外求。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-433",
+    "question": "雪峰见性成佛",
+    "answer": "须是见性，方得成佛。",
+    "context": "闽王王审知请雪峰与玄沙入内论佛心印。王问：诸佛并达磨所传秘密心印，究竟修何因果乃得成佛？雪峰直答：须是见性，方得成佛。王问：何为见性？师云：见自本性。王问：有形状否？师云：见自本性，无物可见。此是难信之法，百千诸佛同得。",
+    "interpretation": "帝王问成佛之道，雪峰不谈修福造寺，直指见性——见自本性，无物可见，此是难信之法。悟即刹那间，不悟尘沙劫。达磨亲传只是一言，便转凡成圣。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-434",
+    "question": "雪峰福尽即堕",
+    "answer": "不得成佛。但是有作之心，皆是轮回。福尽即堕。",
+    "context": "闽王问：朕今造寺修福布施度僧，诸恶莫作众善奉行，如此去还得成佛否？雪峰直言：不得成佛。但是有作之心，皆是轮回。王云：得何果报？师云：得生天报，得福寿报。王云：究竟如何？师云：福尽即堕。",
+    "interpretation": "有为功德感人天福报，福尽还堕，不出轮回——成佛惟在见性，非造作可得。此与达摩答梁武帝并无功德同一宗旨。帝王修福虽善，若不见性，终不出轮回。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-435",
+    "question": "雪峰南山鳖鼻蛇",
+    "answer": "南山有一条鳖鼻蛇，汝等诸人切须好看。",
+    "context": "雪峰示众云：南山有一条鳖鼻蛇，汝等诸人切须好看。长庆出云：今日堂中大有人丧身失命。云门以拄杖撛向峰前作怕势，张口吐舌。后僧举似玄沙，沙云：须是棱兄始得。然虽如此，我即不与么。僧云：和尚作么生？沙云：用南山作么？",
+    "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆识得丧身失命，云门以拄杖直面，玄沙云用南山作么。一则公案三尊宿各出手眼：长庆落在丧身失命，云门落在怕势，玄沙则总扫一切。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-436",
+    "question": "雪峰三木毬",
+    "answer": "三即一，一即三。",
+    "context": "雪峰凡见僧来参，便辊三个木毬示之。一日玄沙来，三个一时辊出，沙便作偃倒势。师曰：寻常用几个？沙云：三即一，一即三。又一日师辊出木毬，玄沙遂捉来安旧处。",
+    "interpretation": "三木毬为雪峰道场独特接引方式——三毬喻三界、喻三身、喻三句。玄沙云'三即一一即三'示三一不二，捉来安旧处示用毕还源。雪峰以此勘验学人能否直下承当。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-437",
+    "question": "雪峰粟米粒",
+    "answer": "尽大地撮来如粟米粒大，拝向面前，漆桶不会，打鼓普请看。",
+    "context": "雪峰示众云：尽大地撮来如粟米粒大，拝向面前，漆桶不会，打鼓普请看。",
+    "interpretation": "尽大地撮来只有粟米粒大——一心含摄万法，万法不出一心。然而漆桶（无眼人）不会，打鼓普请大家来看。雪峰以一粟米粒示一心之妙，直指当下。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-438",
+    "question": "雪峰古镜",
+    "answer": "世界阔一尺，古镜阔一尺；世界阔一丈，古镜阔一丈。",
+    "context": "雪峰云：世界阔一尺，古镜阔一尺；世界阔一丈，古镜阔一丈。时玄沙侍立次，指火炉云：阔多少？师云：似古镜阔。沙云：老和尚脚跟未点地在。师云：老僧住持事烦。",
+    "interpretation": "古镜喻心——心含摄世界，世界随心显现。玄沙指火炉问阔多少，雪峰答似古镜阔，玄沙评其脚跟未点地——落在道理会。雪峰答住持事烦，不辩不争，亦是作家本色。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-439",
+    "question": "雪峰饭篱饿死人",
+    "answer": "饭篱边坐饿死人，临河渴死汉。",
+    "context": "雪峰云：饭篱边坐饿死人，临河渴死汉。玄沙云：饭篱里坐饿死汉，水里没头浸渴死汉。云门云：通身是饭，通身是水。",
+    "interpretation": "三人各示一境——雪峰云饭篱边坐饿死人，喻守着佛法却不得受用；玄沙改饭篱里坐，喻全身在佛法中仍不得受用；云门改通身是饭通身是水，喻全身即是佛法，更无受用不受用之分。三人层层向上。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-440",
+    "question": "雪峰望州亭相见",
+    "answer": "望州亭与汝相见了也，乌石岭与汝相见了也，僧堂前与汝相见了也。",
+    "context": "雪峰示众云：望州亭与汝相见了也，乌石岭与汝相见了也，僧堂前与汝相见了也。保福问鹅湖：僧堂前且置，望州亭、乌石岭什么处相见？鹅湖骤步归方丈，保福便入僧堂。",
+    "interpretation": "雪峰以三处相见示道无处不在——望州亭、乌石岭、僧堂前，处处皆是相见处。保福问鹅湖什么处相见，鹅湖骤步归方丈——以行动答；保福便入僧堂——亦以行动答。二人不打话，各自转身。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-441",
+    "question": "雪峰洞山淘米",
+    "answer": "沙米一时去。",
+    "context": "雪峰在洞山作饭头，淘米次，山问：淘沙去米？淘米去沙？师曰：沙米一时去。山曰：大众吃个什么？师遂覆却米盆。山曰：据于因缘，合在德山。",
+    "interpretation": "洞山问淘沙去米还是淘米去沙——雪峰答沙米一时去，示不落二边。洞山追问大众吃什么，雪峰覆却米盆——全体放下，更无一粒米可得。洞山印之曰合在德山，预示雪峰当于德山座下开悟。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-442",
+    "question": "雪峰如冰归水",
+    "answer": "如冰归水。",
+    "context": "神楚阇黎问雪峰：亡僧迁化向什么处去？师云：如冰归水。玄沙云：是即是，某甲不与么道。师云：汝作么生？沙云：如水归水。",
+    "interpretation": "雪峰答亡僧迁化如冰归水——冰化为水，形虽灭而性不灭。玄沙改如水归水——更进一步，水本无冰可化，本来如是。二人一转一深，雪峰许之。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-443",
+    "question": "雪峰寸丝不挂",
+    "answer": "大好寸丝不挂。",
+    "context": "师问僧：名什么？僧云：玄机。师云：日织多少？僧云：寸丝不挂。师云：参堂去。僧行三五步，师云：袈裟落地也。僧回首，师便打，云：大好寸丝不挂。",
+    "interpretation": "僧自称寸丝不挂，雪峰以袈裟落地验之——僧回首即落第二念。雪峰打云大好寸丝不挂——寸丝不挂不是口头禅，回首即是挂。此是雪峰勘验学人是否真到寸丝不挂之境。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-444",
+    "question": "雪峰云门契合",
+    "answer": "因什么得到与么地？",
+    "context": "云门参睦州得旨后，造陈操侍郎宅三年。续回礼睦州，州云：南方有雪峰和尚，汝何不去彼中受旨？云门到雪峰庄上，见一向北僧，教其传语：上座到山中见和尚上堂，众才集，握腕立地云：者老汉顶上铁枷何不脱却？其僧一依云门教。师见者僧与么道，便下座拦胸把住，乃云：速道！速道！其僧无语。师一拓拓开云：此不是汝语。僧云：是某甲语。师云：侍者将绳棒来。僧云：是不是某甲语？在庄上见一浙中上座，教某甲来与么道。师云：大众去庄上迎取五百人善知识来。云门来日上山，师才见便云：因什么得到与么地？云门乃低头，从兹契合。",
+    "interpretation": "云门教僧传语勘验雪峰——雪峰拦胸把住速道速道，其僧无语。雪峰一拓拓开即知非其语，追问之下知是庄上浙中上座所教。雪峰云大众去庄上迎取五百人善知识来——识得云门是作家。云门来日上山，雪峰问因什么得到与么地，云门低头从兹契合——师徒以心传心，不打一语。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-445",
+    "question": "雪峰古涧寒泉",
+    "answer": "瞪目不见底。",
+    "context": "僧问：古涧寒泉时如何？师云：瞪目不见底。进云：饮者如何？师云：不从口入。僧举到赵州，州云：不可从鼻孔里入。僧却问赵州：古涧寒泉时如何？州云：苦。进云：饮者如何？州云：死。师闻举，云：赵州古佛从兹不答话。",
+    "interpretation": "雪峰答古涧寒泉瞪目不见底——示深不可测。饮者不从口入——示道非从外得。赵州改答苦与死——更直截了当。雪峰闻之举赵州古佛从兹不答话——印可赵州，亦示自己不及赵州之直截。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-446",
+    "question": "雪峰把断乾坤",
+    "answer": "我这里近日有个把断乾坤汉，汝须著精彩。",
+    "context": "雪峰向玄沙道：我这里近日有个把断乾坤汉，汝须著精彩，同学兄弟也难得。沙云：是即是，作么生把断？师云：岂不是自作用？正是把断。沙云：和尚用甚得？某甲不与么。师云：汝作么生？沙云：和尚是乾，某甲是坤，且作么生说兄弟难得？师云：汝得与么自由自在，要用便用，要收便收。沙云：未是分外，只是自家底。",
+    "interpretation": "雪峰赞玄沙为把断乾坤汉——玄沙不落赞叹，反问作么生把断。雪峰答岂不是自作用，玄沙改云和尚是乾某甲是坤。师徒对答如珠走盘，雪峰印可玄沙自由自在要用便用要收便收，玄沙云未是分外只是自家底——示本分事不在分外。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-447",
+    "question": "雪峰无缝塔",
+    "answer": "高多少？",
+    "context": "雪峰一日与玄沙行次，乃云：者一片地好造个无缝塔。沙云：高多少？师以目顾视上下，沙云：人天福报不如和尚，若是灵山授记，未梦见在。师云：子又作么生？沙云：高六七尺。",
+    "interpretation": "雪峰以一片地喻造无缝塔——无缝塔喻法身无相。玄沙问高多少，雪峰以目顾视上下——以无言答。玄沙评人天福报不如和尚但灵山授记未梦见在——落在有相。玄沙自答高六七尺——以有相破有相，别出手眼。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-448",
+    "question": "雪峰透网金鳞",
+    "answer": "待汝透出网来，即向汝道。",
+    "context": "三圣问师：透网金鳞，以何为食？师云：待汝透出网来，即向汝道。圣云：一千五百人善知识，话头也不识。师云：老僧住持事烦。",
+    "interpretation": "三圣问透网金鳞以何为食——喻悟后之人如何保任。雪峰答待汝透出网来即向汝道——反问三圣是否真透网。三圣云一千五百人善知识话头也不识——评雪峰不答。雪峰云老僧住持事烦——不辩不争，亦是作家本色。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-449",
+    "question": "雪峰覆船生死",
+    "answer": "生死海未渡，为什么覆却船？",
+    "context": "师问僧：近离什么处？僧云：覆船。师云：生死海未渡，为什么覆却船？僧无语，遂回举似覆船，船云：何不道渠无生死？僧再至雪峰，举前话，师云：此不是汝语。僧云：是覆船与么道。师云：我有二十棒寄与覆船，二十棒老僧自吃，不干阇黎事。",
+    "interpretation": "雪峰以覆船之名勘验学人——生死海未渡为什么覆却船。学人无语，覆船教答渠无生死。雪峰闻之知非学人语——二十棒寄覆船（教人答话之过），二十棒自吃（自己勘验不彻之过），不干学人事。此是雪峰作家风范：过在师处不在学人。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-450",
+    "question": "雪峰三圣古镜",
+    "answer": "人人尽有一面古镜，者猕猴亦有一面古镜。",
+    "context": "师与三圣行次，见猕猴，乃云：人人尽有一面古镜，者猕猴亦有一面古镜。圣云：历劫无名，何以彰为古镜？师云：瑕生也。圣喝云：老汉话头也不识。师云：老僧住持事烦。",
+    "interpretation": "雪峰以古镜喻佛性——人人尽有一面古镜，猕猴亦有一面。三圣追问历劫无名何以彰为古镜，雪峰云瑕生也——落于名言即生瑕疵。三圣喝老汉话头也不识，雪峰云住持事烦——二人机锋相当，各不相让。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-451",
+    "question": "雪峰自制塔铭",
+    "answer": "兄弟横十字，同心着一仪。土主曰松山，卵塔号难提。",
+    "context": "雪峰将示寂，自制塔铭并叙曰：夫从缘有者，始终而成坏；非从缘得者，历劫而常坚。坚之则在，坏之则捐。虽然，离未至，何妨预置者哉？铭曰：兄弟横十字，同心着一仪。土主曰松山，卵塔号难提。更有胡家曲，汝等切须知。我唱泥牛吼，汝和木马嘶。但看五六月，冰片满长街。薪尽火灭后，密室烂如泥。",
+    "interpretation": "雪峰自制塔铭——从缘有者成坏，非从缘得者常坚。铭中泥牛吼木马嘶冰片满长街密室烂如泥，皆示悟后境界——非言语可会。雪峰预知示寂，自造塔铭，可谓末后一大事因缘。",
+    "master": "雪峰义存",
+    "source": "雪峰义存禅师语录",
+    "relatedConcepts": ["jianxing-chengfo", "self-nature"],
+    "relatedPersons": ["xuefeng-yicun"],
+    "relatedBooks": ["xuefengyulu"]
   },
 ];
 
@@ -27672,5 +27857,68 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《高峰原妙禅师语录》的结构和内容是什么？",
     "answer": "《高峰原妙禅师语录》二卷，卍续藏第70册No.1400。卷上载：元序（云栖袾宏撰）、双髻庵法语、师子禅寺法语、示众开示、示禅人法语。卷下载：拈古（约30则，评唱世尊拈花、云门打杀、马祖即心、百丈野狐、赵州勘婆、赵州无字、赵州万法归一、南泉鹅儿、雪峰鳖鼻蛇、德山末后句、石巩弓箭等古则）、颂古（约20则，以诗偈重显达磨付法、六祖不会、马祖即心、赵州无字、万法归一等）、补遗法语、偈颂（示徒、辞世等）、小佛事（火葬法语）、赞佛祖、自赞、行状二篇、塔铭。",
     "relatedBooks": ["gaofengyulu"]
+  },
+
+  {
+    "id": "faq-2272",
+    "question": "雪峰义存禅师的三木毬是什么意思？",
+    "answer": "雪峰凡见僧来参，便辊三个木毬示之。一日玄沙来，三个一时辊出，沙便作偃倒势。师曰：寻常用几个？沙云：三即一，一即三。又一日师辊出木毬，玄沙遂捉来安旧处。三木毬为雪峰道场独特接引方式——三毬喻三界、喻三身、喻三句。玄沙云'三即一一即三'示三一不二，捉来安旧处示用毕还源。雪峰以此勘验学人能否直下承当。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2273",
+    "question": "雪峰义存禅师的粟米粒公案是什么意思？",
+    "answer": "雪峰示众云'尽大地撮来如粟米粒大，拝向面前，漆桶不会，打鼓普请看'——尽大地撮来只有粟米粒大，一心含摄万法，万法不出一心。然而漆桶（无眼人）不会，打鼓普请大家来看。雪峰以一粟米粒示一心之妙，直指当下——万法虽多，不出一心；心虽至微，含摄万法。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2274",
+    "question": "雪峰义存禅师的古镜公案是什么意思？",
+    "answer": "雪峰云'世界阔一尺，古镜阔一尺；世界阔一丈，古镜阔一丈'——古镜喻心，心含摄世界，世界随心显现。玄沙指火炉问阔多少，雪峰答似古镜阔，玄沙评其脚跟未点地——落在道理会。雪峰答住持事烦，不辩不争，亦是作家本色。古镜喻佛性本明，世界有多大佛性就有多大，非道理可量。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2275",
+    "question": "雪峰义存禅师与玄沙师备的关系如何？",
+    "answer": "玄沙师备为雪峰义存之嗣法弟子。雪峰与玄沙机缘亲切绵密——雪峰云'我这里近日有个把断乾坤汉，汝须著精彩'，赞玄沙为把断乾坤汉。玄沙不落赞叹，反问作么生把断。二人对答如珠走盘，雪峰印可玄沙自由自在要用便用要收便收，玄沙云未是分外只是自家底。玄沙门下出罗汉桂琛，桂琛传法眼文益，开法眼宗——雪峰一系遂为云门、法眼两宗之源头。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2276",
+    "question": "雪峰义存禅师如何勘验云门文偃？",
+    "answer": "云门参睦州得旨后，睦州令其去雪峰受旨。云门到雪峰庄上，教一向北僧传语：上座到山中见和尚上堂，众才集，握腕立地云'者老汉顶上铁枷何不脱却'。雪峰见者僧与么道，便下座拦胸把住，云'速道！速道'。其僧无语，雪峰一拓拓开即知非其语，追问之下知是庄上浙中上座所教。雪峰云'大众去庄上迎取五百人善知识来'——识得云门是作家。云门来日上山，雪峰问'因什么得到与么地'，云门低头从兹契合——师徒以心传心，不打一语。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2277",
+    "question": "雪峰义存禅师的覆船公案是什么意思？",
+    "answer": "雪峰问僧'近离什么处'，僧云'覆船'。师云'生死海未渡，为什么覆却船'——以覆船之名勘验学人。学人无语，覆船教答'渠无生死'。雪峰闻之知非学人语——二十棒寄覆船（教人答话之过），二十棒自吃（自己勘验不彻之过），不干学人事。此是雪峰作家风范：过在师处不在学人，师徒各吃二十棒。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2278",
+    "question": "雪峰义存禅师的寸丝不挂公案是什么意思？",
+    "answer": "雪峰问僧'名什么'，僧云'玄机'。师云'日织多少'，僧云'寸丝不挂'。师云'参堂去'。僧行三五步，师云'袈裟落地也'。僧回首，师便打，云'大好寸丝不挂'——僧自称寸丝不挂，雪峰以袈裟落地验之，僧回首即落第二念。寸丝不挂不是口头禅，回首即是挂。此是雪峰勘验学人是否真到寸丝不挂之境。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2279",
+    "question": "雪峰义存禅师的古涧寒泉公案是什么意思？",
+    "answer": "僧问'古涧寒泉时如何'，雪峰答'瞪目不见底'——示深不可测。饮者'不从口入'——示道非从外得。僧举到赵州，赵州改答'苦'与'死'——更直截了当。雪峰闻之举'赵州古佛从兹不答话'——印可赵州，亦示自己不及赵州之直截。二人一深一直，各具手眼。",
+    "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2280",
+    "question": "《雪峰义存禅师语录》的结构和内容是什么？",
+    "answer": "《雪峰真觉大师语录》二卷，卍续藏第69册No.1333。卷上载：刻语录缘起（林弘衍撰）、序（石雨明方撰）、附余集生居士答黄元公居士书（辨天王天皇之伪）、师之传记、上堂示众机语（大量问答机缘）。卷下载：大王请师与玄沙入内论佛心印录（闽王王审知请法记录）、师与玄沙机缘、师勘验学人机缘（云门契合、古涧寒泉、覆船、寸丝不挂等）、偈语、师规制、永明寺知觉禅师延寿立石、师遗诫、自制塔铭、年谱。本录为研究唐五代禅宗之核心文献。",
+    "relatedBooks": ["xuefengyulu"]
   },
 ];
