@@ -1280,7 +1280,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words", "jingang-zhengti", "tongdi-tuo", "wuxin-dao-ren", "dacheng-yipian"],
     "relatedMethods": ["kanhuatou", "wangqing-juezhao"],
     "relatedPersons": ["wuzu-fayan", "dahui-zonggao"],
-    "relatedBooks": ["changuancejin", "huanwuxinyao", "huanwuyulu", "biyanlu"]
+    "relatedBooks": ["foguojijielu", "changuancejin", "huanwuxinyao", "huanwuyulu", "biyanlu"]
   },
   {
     "id": "luohouluo",
@@ -2249,7 +2249,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan", "beyond-words"],
     "relatedMethods": [],
     "relatedPersons": ["yuanwu-keqin", "yunmen"],
-    "relatedBooks": ["chanlinbaoxun", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "biyanlu"]
+    "relatedBooks": ["foguojijielu", "chanlinbaoxun", "dongshanyulu", "huanwuxinyao", "huanwuyulu", "biyanlu"]
   },
   {
     "id": "touzi-datong",
@@ -8022,6 +8022,33 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["jianxing-chengfo", "self-nature", "buddha-nature"],
     "relatedPersons": ["xuefeng-yicun"],
     "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "niangu",
+    "title": "拈古",
+    "category": "禅宗文体",
+    "summary": "拈古是禅宗祖师举古德公案而评判之的文体——举古人言行，下断语评判，不作文饰，直指落处。与颂古（以诗偈重显古则）并称禅宗两大公案处理方式。雪窦重显以拈古百则闻名，圆悟克勤于其下击节而成《击节录》。",
+    "etymology": "拈即举，古即古人公案——举古人公案而评判之。",
+    "quotes": ["拈古举公案而评判，颂古以诗偈重显——二者皆为禅宗评唱之体。"],
+    "guidance": "拈古非解释公案，乃举而评判——须具宗门眼目方能下断语。",
+    "classicRef": "佛果击节录",
+    "relatedConcepts": ["ping-chang", "koan"],
+    "relatedPersons": ["xuedou-zhongxian", "yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
+  },
+  {
+    "id": "jijie",
+    "title": "击节",
+    "category": "禅宗文体",
+    "summary": "击节是圆悟克勤于雪窦拈古之下击节赞赏、别下断语之文体——击节即印可、赞赏，于古人语句尽处别转一路。击节非解释，乃直指古人落处。《击节录》以拈古与击节两重评唱为体，与《碧岩录》之垂示、著语、评唱、颂古四重体例相比更为简洁直截。",
+    "etymology": "击节即击节赞赏——印可其落处，别下断语。",
+    "quotes": ["击节非解释，乃直指古人落处——德山大似握阃外威权，雪窦具顶门一只眼。"],
+    "guidance": "击节处正是参究入手处——不可滑口读过，须于圆悟断语处转身。",
+    "classicRef": "佛果击节录",
+    "relatedConcepts": ["niangu", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin"],
+    "relatedBooks": ["foguojijielu"]
   },
 ];
 
@@ -14029,6 +14056,84 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["jianxing-chengfo", "aoshan-chengdao"],
     "relatedPersons": ["xuefeng-yicun"],
     "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "koan-394",
+    "question": "击节录·德山示众",
+    "answer": "德山大似握阃外威权，有当断不断、不招其乱底剑。",
+    "context": "德山示众云今夜不答话，问话者三十棒。僧出礼拜便打。雪窦拈云二老宿虽善裁长补短，要见德山亦未可。圆悟击节之。",
+    "interpretation": "德山握棒如大将握剑，当断则断——新罗僧未踏船舷便打三十棒，何须等他开口。圆悟击节：德山大似握阃外威权。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-395",
+    "question": "击节录·雪峰普请",
+    "answer": "雪峰具顶门一只眼。",
+    "context": "雪峰普请公案，雪窦拈古评判。圆悟击节印可雪窦之拈提。",
+    "interpretation": "雪窦拈古别具只眼，能于古人语句中辨出落处——圆悟击节印可，非具宗门眼目者不能如此拈提。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-396",
+    "question": "击节录·百丈拂子",
+    "answer": "百丈拂子，一拂万古清风。",
+    "context": "百丈拂子公案，雪窦拈古举百丈示众之拂子。圆悟击节。",
+    "interpretation": "百丈拂子非拂子，乃宗门正令——一拂之下，万古清风。圆悟击节直指古人落处。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-397",
+    "question": "击节录·赵州偷笋",
+    "answer": "赵州偷笋，贼过后张弓。",
+    "context": "赵州偷笋公案，雪窦拈古。圆悟击节。",
+    "interpretation": "赵州偷笋看似贼过后张弓，实则别有落处——圆悟击节，直指赵州机用。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-398",
+    "question": "击节录·临济蒿枝",
+    "answer": "临济蒿枝，一茎拈出天下惊。",
+    "context": "临济蒿枝公案，雪窦拈古。圆悟击节。",
+    "interpretation": "临济以蒿枝示众，一茎拈出天下惊——圆悟击节，直指临济宗风之峻烈。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "koan-399",
+    "question": "击节录·云门法身",
+    "answer": "云门法身，一拈直下千万里。",
+    "context": "云门法身公案，雪窦拈古。圆悟击节。",
+    "interpretation": "云门说法身，一拈直下千万里——圆悟击节，印可云门之直截。",
+    "master": "圆悟克勤",
+    "source": "佛果击节录",
+    "relatedConcepts": ["niangu", "jijie", "ping-chang"],
+    "relatedPersons": ["yuanwu-keqin", "xuedou-zhongxian"],
+    "relatedBooks": ["foguojijielu"]
   },
 ];
 
@@ -26927,5 +27032,40 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "雪峰义存禅师的南山鳖鼻蛇公案是什么？",
     "answer": "雪峰示众云“南山有一条鳖鼻蛇，汝等诸人切须好看”。长庆出云“今日堂中大有人丧身失命”，云门以拄杖撛向峰前作怕势，玄沙云“用南山作么”。一则公案，三尊宿各出手眼——雪峰以鳖鼻蛇勘验学人，三尊宿各呈己见。",
     "relatedBooks": ["xuefengyulu"]
+  },
+
+  {
+    "id": "faq-2242",
+    "question": "《佛果击节录》和《碧岩录》有什么区别？",
+    "answer": "《佛果击节录》与《碧岩录》同为圆悟克勤两大评唱著作。碧岩录以颂古为中心，有垂示、著语、评唱、颂古四重体例；击节录以拈古为中心，只有拈古与击节两重，更为简洁直截。碧岩录选雪窦颂古百则而评唱之，击节录选雪窦拈古百则而击节之——一颂一拈，一详一简，相得益彰。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2243",
+    "question": "什么是拈古？",
+    "answer": "拈古是禅宗祖师举古德公案而评判之的文体——举古人言行，下断语评判，不作文饰，直指落处。与颂古（以诗偈重显古则）并称禅宗两大公案处理方式。雪窦重显以拈古百则闻名，圆悟克勤于其下击节而成《击节录》。拈古非解释公案，乃举而评判——须具宗门眼目方能下断语。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2244",
+    "question": "什么是击节？",
+    "answer": "击节是圆悟克勤于雪窦拈古之下击节赞赏、别下断语之文体——击节即印可、赞赏，于古人语句尽处别转一路。击节非解释，乃直指古人落处。如圆悟击节德山示众公案云“德山大似握阃外威权”，击节雪窦拈古云“雪窦具顶门一只眼”——皆是直指落处，不落解释。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2245",
+    "question": "圆悟克勤禅师是谁？",
+    "answer": "圆悟克勤（1063-1135），北宋临济宗杨岐派，五祖法演之嗣法弟子。以《碧岩录》闻名于世，门下出大慧宗杲开看话禅一派。圆悟之评唱以“活句”与“死句”为纲宗：活句不落言诠直指人心，死句拘于文字死于句下。其两大评唱著作《碧岩录》与《击节录》为宋元禅宗评唱之双璧。",
+    "relatedBooks": ["foguojijielu"]
+  },
+
+  {
+    "id": "faq-2246",
+    "question": "雪窦重显禅师是谁？",
+    "answer": "雪窦重显（980-1052），北宋云门宗，以《颂古百则》闻名，即《碧岩录》之底本。雪窦之拈古与颂古皆为禅宗评唱之典范——拈古举公案而评判下断语，颂古以诗偈重显古则。圆悟克勤于雪窦拈古之下击节而成《击节录》，于雪窦颂古之上评唱而成《碧岩录》——一拈一颂，皆经圆悟击节评唱而传世。",
+    "relatedBooks": ["foguojijielu"]
   },
 ];
