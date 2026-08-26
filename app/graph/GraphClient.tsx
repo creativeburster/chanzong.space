@@ -42,7 +42,7 @@ export default function GraphClient() {
             </h1>
             <h2 className="text-lg font-bold font-serif-zen text-slate-800 mt-4">{t('禅宗法脉与知识关联全景图')}</h2>
             <p className="text-sm text-slate-500 mt-1">
-              {t('全站知识凝聚为一朵八瓣金莲：节点可拖拽、松手弹性归位，悬停查看关联线与语义，单击直达详情研读页。默认滚轮滚动页面，点击图谱后滚轮缩放（Ctrl+滚轮随时缩放）；右上角按类型筛选。')}
+              {t('鼠标悬停节点查看关联线与关系语义，单击直达详情研读页。右上角可按类型筛选节点，左上角支持缩放与重置。')}
             </p>
           </div>
 
