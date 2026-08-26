@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, ZoomIn, ZoomOut, Mouse } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, MoveVertical, Mouse } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -59,8 +59,9 @@ const PETAL_SLOTS = 8;
 const PETAL_GAP = 0.1;        // 花瓣间角间隙（弧度）
 const PETAL_R = 1150;         // 整朵莲最大半径
 const PETAL_BASE_R = 180;     // 花心半径（花瓣起点）
-// 卡片内右侧缩放通道宽度：滚轮在通道内缩放图谱，图谱区滚轮正常滚动页面
-const ZOOM_STRIP_W = 132;
+// 卡片左上角缩放通道区域：滚轮在此缩放图谱，图谱区滚轮=正常滚动页面
+const ZOOM_STRIP_W = 176;
+const ZOOM_STRIP_H = 260;
 
 // 根据关联度数计算节点半径：关联越多节点越大
 const nodeRadius = (n: NodeData) => n.r ?? baseRadiusMap[n.type] ?? 10;
@@ -363,7 +364,7 @@ export const GraphCanvas: React.FC = () => {
 
     const g = svg.append('g').attr('class', 'main-zoom-layer');
 
-    // D3 Zoom：滚轮仅在卡片右侧缩放通道内生效（图谱区滚轮正常滚动页面，彻底避免冲突）
+    // D3 Zoom：滚轮仅在卡片缩放通道（左上角区域）内生效，图谱区滚轮正常滚动页面
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.12, 3.5])
       .wheelDelta((event) => -event.deltaY * 0.002)
@@ -372,7 +373,7 @@ export const GraphCanvas: React.FC = () => {
           const el = containerRef.current;
           if (!el) return false;
           const r = el.getBoundingClientRect();
-          return event.clientX > r.right - ZOOM_STRIP_W;
+          return event.clientX < r.left + ZOOM_STRIP_W && event.clientY < r.top + ZOOM_STRIP_H;
         }
         return !event.ctrlKey || event.type === 'wheel';
       })
@@ -698,20 +699,26 @@ export const GraphCanvas: React.FC = () => {
           ))}
         </div>
 
-        {/* 卡片右缘缩放通道：滚轮在此缩放图谱（图谱区滚轮=正常滚动页面） */}
+        {/* 左上角缩放通道：滚轮在此缩放图谱（图谱区滚轮=正常滚动页面）。
+            pointer-events:none 让滚轮事件穿透到下层 SVG 触发缩放 */}
         <div
-          className="absolute top-0 right-0 h-full hidden md:flex flex-col items-center justify-center gap-3 z-10 border-l border-dashed border-white/15 bg-white/[0.03]"
-          style={{ width: ZOOM_STRIP_W }}
+          className="absolute top-0 left-0 hidden md:flex flex-col items-start gap-2 z-[5] rounded-br-2xl border-b border-dashed border-r border-white/15 bg-white/[0.04] px-4 py-3 pointer-events-none select-none"
+          style={{ width: ZOOM_STRIP_W, minHeight: ZOOM_STRIP_H }}
         >
-          <Mouse className="w-4 h-4 text-white/45" />
-          <span className="text-xs font-medium text-white/55 [writing-mode:vertical-rl] tracking-wide select-none">
+          <div className="flex items-center gap-2">
+            <Mouse className="w-4 h-4 text-white/50" />
+            <span className="text-xs font-bold text-white/70">滚轮缩放区</span>
+          </div>
+          <span className="text-[11px] leading-snug text-white/55">
             鼠标指针放此处缩放图谱
           </span>
-          <ZoomIn className="w-3.5 h-3.5 text-white/35" />
+          <span className="text-[10px] leading-snug text-white/35">
+            图谱其余区域滚轮正常滚动页面
+          </span>
         </div>
       </div>
 
-      {/* 2. 右侧悬浮操作面板（缩放与复位） */}
+      {/* 2. 右侧悬浮操作面板（缩放与复位）与页面滚动指引 */}
       <div className="sticky top-28 flex flex-col items-center space-y-3 z-30 py-2">
         <div className="flex flex-col items-center space-y-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
           <button
@@ -736,6 +743,12 @@ export const GraphCanvas: React.FC = () => {
           >
             <RotateCcw className="w-5 h-5" />
           </button>
+        </div>
+
+        {/* 页面滚动指引提示 */}
+        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[84px] shadow-sm leading-tight">
+          <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
+          <span className="font-medium">鼠标指针放此处滚动整页</span>
         </div>
       </div>
 
