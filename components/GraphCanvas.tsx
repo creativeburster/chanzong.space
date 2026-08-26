@@ -1,13 +1,13 @@
 'use client';
 
 /**
- * 知识图谱 · 八瓣莲花版
+ * 知识图谱 · 八瓣莲花版（物理弹性）
  *
  * 设计要点：
- * 1. 性能：Canvas 2D 渲染 + 静态确定性布局（无 D3 力仿真、无逐帧 DOM 更新），
- *    仅在视图/悬停/筛选变化时按需重绘，空闲时 0 CPU；含视口裁剪与 LOD 分级绘制。
- * 2. 形态：节点按类型归入八瓣莲花，花瓣内按连接度沿正弦轮廓排布，
- *    整体轮廓即一朵金色莲花（类 logo/favicon），莲心为「禅」字徽记。
+ * 1. 性能：Canvas 2D 渲染 + 按需重绘 + 视口裁剪 + LOD 分级，空闲时 0 CPU。
+ * 2. 形态与动感：d3-force 物理仿真（斥力/碰撞/连线弹力），每个节点带指向
+ *    八瓣莲花目标位的弱弹力锚点——整体大体呈莲花轮廓，节点可拖拽、松手
+ *    弹性归位，初始加载有一段落位动画；莲心仅金色光晕，无文字徽记。
  * 3. 滚轮：默认不劫持滚轮（页面正常滚动）；点击图谱 / Ctrl+滚轮 / 拖拽后
  *    开启缩放模式（滚轮=缩放图谱），Esc 退出。拖拽平移、双指捏合缩放始终可用。
  */
@@ -15,6 +15,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { RotateCcw, ZoomIn, ZoomOut, MousePointerClick, X } from 'lucide-react';
+import { forceSimulation, forceLink, forceManyBody, forceCollide } from 'd3';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -28,8 +29,14 @@ interface GNode {
   desc: string;
   r: number;
   deg: number;
+  tx: number;              // 花瓣目标位（物理弹力锚点）
+  ty: number;
   x: number;
   y: number;
+  vx?: number;
+  vy?: number;
+  fx?: number | null;
+  fy?: number | null;
 }
 
 interface GLink {
@@ -117,6 +124,8 @@ function buildGraphData() {
       desc: `${p.title} · ${p.era}`,
       r: 0,
       deg: 0,
+      tx: 0,
+      ty: 0,
       x: 0,
       y: 0,
     })),
@@ -128,6 +137,8 @@ function buildGraphData() {
       desc: `${b.author} · ${b.category}`,
       r: 0,
       deg: 0,
+      tx: 0,
+      ty: 0,
       x: 0,
       y: 0,
     })),
@@ -139,6 +150,8 @@ function buildGraphData() {
       desc: c.summary.slice(0, 48) + '…',
       r: 0,
       deg: 0,
+      tx: 0,
+      ty: 0,
       x: 0,
       y: 0,
     })),
@@ -150,6 +163,8 @@ function buildGraphData() {
       desc: m.summary.slice(0, 48) + '…',
       r: 0,
       deg: 0,
+      tx: 0,
+      ty: 0,
       x: 0,
       y: 0,
     })),
@@ -161,6 +176,8 @@ function buildGraphData() {
       desc: `${q.master} · ${q.source}`,
       r: 0,
       deg: 0,
+      tx: 0,
+      ty: 0,
       x: 0,
       y: 0,
     })),
@@ -361,8 +378,11 @@ function buildLayout(visible: Record<string, boolean>): Layout {
           const frac = cap === 1 ? 0 : (j / (cap - 1)) * 2 - 1;
           const a = petal.theta + frac * halfAngle * 0.9;
           const node = bucket[placed];
-          node.x = Math.cos(a) * radius;
-          node.y = Math.sin(a) * radius;
+          node.tx = Math.cos(a) * radius;
+          node.ty = Math.sin(a) * radius;
+          // 初始位在目标位附近随机散开，供物理仿真弹性收拢成莲
+          node.x = node.tx + (Math.random() - 0.5) * 72;
+          node.y = node.ty + (Math.random() - 0.5) * 72;
           placed++;
         }
       }
@@ -399,6 +419,8 @@ export const GraphCanvas: React.FC = () => {
   const rafRef = useRef(0);
   const sizeRef = useRef({ w: 0, h: 0 });
   const userTouchedRef = useRef(false);
+  const simRef = useRef<ReturnType<typeof forceSimulation> | null>(null);
+  const dragNodeRef = useRef<GNode | null>(null);
 
   /* ----- 绘制 ----- */
 
@@ -570,32 +592,18 @@ export const GraphCanvas: React.FC = () => {
       }
     }
 
-    /* 6. 莲心徽记 */
-    const halo = ctx.createRadialGradient(0, 0, 10, 0, 0, 170);
-    halo.addColorStop(0, 'rgba(230,190,100,0.30)');
+    /* 6. 莲心：金色光晕与实心珠点（无文字徽记） */
+    const halo = ctx.createRadialGradient(0, 0, 8, 0, 0, 150);
+    halo.addColorStop(0, 'rgba(230,190,100,0.26)');
     halo.addColorStop(1, 'rgba(230,190,100,0)');
     ctx.fillStyle = halo;
     ctx.beginPath();
-    ctx.arc(0, 0, 170, 0, Math.PI * 2);
+    ctx.arc(0, 0, 150, 0, Math.PI * 2);
     ctx.fill();
-
-    ctx.strokeStyle = 'rgba(230,190,100,0.35)';
-    ctx.lineWidth = 1.5;
+    ctx.fillStyle = 'rgba(232,194,104,0.85)';
     ctx.beginPath();
-    ctx.arc(0, 0, 132, 0, Math.PI * 2);
-    ctx.stroke();
-
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.shadowColor = 'rgba(240,200,110,0.85)';
-    ctx.shadowBlur = 30;
-    ctx.fillStyle = '#e8c268';
-    ctx.font = '700 118px "Noto Serif SC","STSong","SimSun",serif';
-    ctx.fillText('禅', 0, 6);
-    ctx.shadowBlur = 0;
-    ctx.font = '500 20px "PingFang SC","Microsoft YaHei",sans-serif';
-    ctx.fillStyle = 'rgba(232,194,104,0.5)';
-    ctx.fillText('一花开五叶 · chanzong.space', 0, 100);
+    ctx.arc(0, 0, 20, 0, Math.PI * 2);
+    ctx.fill();
   }
 
   /* ----- 视图操作 ----- */
@@ -701,6 +709,28 @@ export const GraphCanvas: React.FC = () => {
     }
   };
 
+  /* ----- 物理仿真：弹性、可拖拽、宏观收拢成莲 ----- */
+
+  function createSimulation(L: Layout) {
+    const simNodes = L.nodes;
+    const simLinks = L.links.map(({ a, b }) => ({ source: simNodes[a], target: simNodes[b] }));
+    return forceSimulation(simNodes as any)
+      .force('charge', forceManyBody().strength(-70).distanceMax(520))
+      .force('link', (forceLink as any)(simLinks).distance(120).strength(0.05))
+      .force('collide', forceCollide((d: any) => d.r + 3).strength(0.8))
+      .force('petal', (alpha: number) => {
+        // 指向花瓣目标位的弱弹力锚点：宏观形态保持莲花，微观允许有机形变
+        for (const n of simNodes) {
+          n.vx = (n.vx || 0) + (n.tx - n.x) * 0.16 * alpha;
+          n.vy = (n.vy || 0) + (n.ty - n.y) * 0.16 * alpha;
+        }
+      })
+      .alpha(1)
+      .alphaDecay(0.022)
+      .velocityDecay(0.42)
+      .on('tick', () => schedule());
+  }
+
   /* ----- 生命周期 ----- */
 
   useEffect(() => {
@@ -737,11 +767,24 @@ export const GraphCanvas: React.FC = () => {
     };
 
     const onPointerDown = (e: PointerEvent) => {
-      pointers.set(e.pointerId, localPos(e));
+      const pos = localPos(e);
+      pointers.set(e.pointerId, pos);
       dragDist = 0;
       pinchPrev = null;
       canvas.setPointerCapture(e.pointerId);
-      if (pointers.size === 1) canvas.style.cursor = 'grabbing';
+      if (pointers.size === 1) {
+        const idx = hitTest(e.clientX, e.clientY);
+        if (idx >= 0) {
+          // 抓住节点：固定其位置并加热仿真，邻接节点随之弹性牵动
+          const node = layoutRef.current.nodes[idx];
+          node.fx = node.x;
+          node.fy = node.y;
+          dragNodeRef.current = node;
+          simRef.current?.alphaTarget(0.28).restart();
+        } else {
+          canvas.style.cursor = 'grabbing';
+        }
+      }
     };
 
     const onPointerMove = (e: PointerEvent) => {
@@ -781,13 +824,21 @@ export const GraphCanvas: React.FC = () => {
       const prev = pointers.get(e.pointerId);
       if (!prev) return;
       pointers.set(e.pointerId, pos);
+      dragDist += Math.abs(pos.x - prev.x) + Math.abs(pos.y - prev.y);
+      userTouchedRef.current = true;
 
       if (pointers.size === 1) {
-        const view = viewRef.current;
-        view.x += pos.x - prev.x;
-        view.y += pos.y - prev.y;
-        dragDist += Math.abs(pos.x - prev.x) + Math.abs(pos.y - prev.y);
-        userTouchedRef.current = true;
+        const node = dragNodeRef.current;
+        if (node) {
+          // 拖拽节点：屏幕坐标转世界坐标，直接驱动固定点
+          const view = viewRef.current;
+          node.fx = (pos.x - view.x) / view.k;
+          node.fy = (pos.y - view.y) / view.k;
+        } else {
+          const view = viewRef.current;
+          view.x += pos.x - prev.x;
+          view.y += pos.y - prev.y;
+        }
         schedule();
       } else if (pointers.size === 2) {
         const [p1, p2] = Array.from(pointers.values());
@@ -800,18 +851,32 @@ export const GraphCanvas: React.FC = () => {
           view.x = midX - (midX - view.x) * ratio + (midX - pinchPrev.midX);
           view.y = midY - (midY - view.y) * ratio + (midY - pinchPrev.midY);
           view.k *= ratio;
-          userTouchedRef.current = true;
           schedule();
         }
         pinchPrev = { dist, midX, midY };
       }
     };
 
+    const releaseDragNode = () => {
+      const node = dragNodeRef.current;
+      if (!node) return;
+      node.fx = null;
+      node.fy = null;
+      simRef.current?.alphaTarget(0); // 松手后逐渐冷却，节点弹性归位
+      dragNodeRef.current = null;
+    };
+
     const onPointerUp = (e: PointerEvent) => {
       const wasClick = pointers.size === 1 && dragDist < 6;
+      const draggedNode = dragNodeRef.current;
+      releaseDragNode();
       pointers.delete(e.pointerId);
       pinchPrev = null;
       canvas.style.cursor = 'grab';
+      if (draggedNode) {
+        if (wasClick) router.push(draggedNode.url);
+        return;
+      }
       if (wasClick) {
         const idx = hitTest(e.clientX, e.clientY);
         if (idx >= 0) {
@@ -826,6 +891,7 @@ export const GraphCanvas: React.FC = () => {
 
     // 浏览器接管手势（如单指竖向滚动页面）时仅清理状态，不触发点击
     const onPointerCancel = (e: PointerEvent) => {
+      releaseDragNode();
       pointers.delete(e.pointerId);
       pinchPrev = null;
       dragDist = Infinity;
@@ -866,6 +932,7 @@ export const GraphCanvas: React.FC = () => {
 
     return () => {
       ro.disconnect();
+      simRef.current?.stop();
       canvas.removeEventListener('pointerdown', onPointerDown);
       canvas.removeEventListener('pointermove', onPointerMove);
       canvas.removeEventListener('pointerup', onPointerUp);
@@ -879,10 +946,17 @@ export const GraphCanvas: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // 筛选变化：重建布局并动画回到全景
+  // 筛选变化：重建布局、重启物理仿真（节点弹性落位）并动画回到全景
   useEffect(() => {
     setHover(-1);
+    dragNodeRef.current = null;
+    const sim = createSimulation(layout);
+    simRef.current = sim;
     fitView(true);
+    return () => {
+      sim.stop();
+      if (simRef.current === sim) simRef.current = null;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [layout]);
 
