@@ -690,11 +690,12 @@ export const GraphCanvas: React.FC = () => {
           </button>
         </div>
 
-        {/* 页面滚动指引提示 */}
-        <div className="flex flex-col items-center text-center p-2.5 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[104px] shadow-sm leading-tight">
+        {/* 页面滚动与缩放指引提示 */}
+        <div className="flex flex-col items-center text-center p-2.5 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[118px] shadow-sm leading-snug">
           <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
-          <span className="font-bold">鼠标指针放此处滚动整页</span>
-          <span className="mt-1 pt-1 border-t border-amber-200 text-amber-800/80">黑色区域内滚轮＝缩放图谱</span>
+          <span className="font-bold">鼠标指针放在黑色区域以外时，滚轮可滚动整页</span>
+          <span className="mt-1.5 pt-1.5 border-t border-amber-200 text-amber-800/80">指针放在黑色区域内操作滚轮＝缩放图谱</span>
+          <span className="mt-1 text-amber-800/70">上方圆形箭头＝复位图谱</span>
         </div>
       </div>
 
