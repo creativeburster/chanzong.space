@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
           </div>
           <div className="flex flex-col">
             <span className="font-serif-zen text-lg font-bold text-zinc-900 tracking-wide group-hover:text-amber-800 transition-colors">
-              禅宗正法心传
+              禅宗知识库
             </span>
             <span className="text-[10px] tracking-widest text-zinc-500 font-sans uppercase">
               ChanZong Knowledge Base
