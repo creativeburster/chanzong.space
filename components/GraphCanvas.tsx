@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, ZoomIn, ZoomOut, MoveVertical } from 'lucide-react';
+import { RotateCcw, ZoomIn, ZoomOut, Mouse } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -13,6 +13,8 @@ interface NodeData extends d3.SimulationNodeDatum {
   url: string;
   desc: string;
   r?: number;
+  tx?: number;   // 花瓣目标位（物理弹力锚点）
+  ty?: number;
 }
 
 interface LinkData extends d3.SimulationLinkDatum<NodeData> {
@@ -49,6 +51,17 @@ const relationWeight: Record<string, number> = {
 // 每个节点最多保留的连线数（按关系强度优先）
 const MAX_LINKS_PER_NODE = 3;
 
+// 剔除全站关联过少的低频节点（度数 < MIN_DEGREE 不入图谱）：节点更精、渲染更流畅
+const MIN_DEGREE = 6;
+
+// 花瓣布局参数（世界坐标，与画布尺寸无关，缩放自适应）
+const PETAL_SLOTS = 8;
+const PETAL_GAP = 0.1;        // 花瓣间角间隙（弧度）
+const PETAL_R = 1150;         // 整朵莲最大半径
+const PETAL_BASE_R = 180;     // 花心半径（花瓣起点）
+// 卡片内右侧缩放通道宽度：滚轮在通道内缩放图谱，图谱区滚轮正常滚动页面
+const ZOOM_STRIP_W = 132;
+
 // 根据关联度数计算节点半径：关联越多节点越大
 const nodeRadius = (n: NodeData) => n.r ?? baseRadiusMap[n.type] ?? 10;
 
@@ -69,6 +82,97 @@ const EXCLUDE_GRAPH_IDS = new Set([
   'bodhidharma', 'huike', 'sengcan', 'daoxin', 'hongren',
   'xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun', 'sixingguan',
 ]);
+
+/**
+ * 花瓣目标位分配：按类型把节点分到 8 个花瓣槽位（相邻尽量异色），
+ * 花瓣内按节点大小（连接度）沿正弦轮廓排布，大节点靠花心。
+ * 力仿真中的 petal 弹力会把宏观形态收拢成一朵八瓣莲。
+ */
+function assignPetalTargets(nodes: NodeData[], cx: number, cy: number) {
+  const byType = new Map<string, NodeData[]>();
+  nodes.forEach((n) => {
+    if (!byType.has(n.type)) byType.set(n.type, []);
+    byType.get(n.type)!.push(n);
+  });
+  byType.forEach((arr) => arr.sort((a, b) => (b.r || 0) - (a.r || 0)));
+
+  const types = FILTER_TYPES.filter((t) => (byType.get(t)?.length || 0) > 0);
+  if (!types.length) return;
+
+  const total = types.reduce((s, t) => s + byType.get(t)!.length, 0);
+  const shares = new Map<string, number>();
+  let used = 0;
+  types.forEach((t) => {
+    const s = Math.max(1, Math.round((PETAL_SLOTS * byType.get(t)!.length) / total));
+    shares.set(t, s);
+    used += s;
+  });
+  shares.set(types[0], Math.max(1, shares.get(types[0])! + PETAL_SLOTS - used));
+
+  // 逐个安放到与左右邻瓣不同色的最靠前空槽
+  const plan: string[] = new Array(PETAL_SLOTS).fill('');
+  const queue: string[] = [];
+  shares.forEach((s, t) => { for (let i = 0; i < s; i++) queue.push(t); });
+  queue.sort((a, b) => byType.get(b)!.length - byType.get(a)!.length);
+  for (const t of queue) {
+    let slot = -1;
+    for (let i = 0; i < PETAL_SLOTS; i++) {
+      if (plan[i]) continue;
+      const left = plan[(i - 1 + PETAL_SLOTS) % PETAL_SLOTS];
+      const right = plan[(i + 1) % PETAL_SLOTS];
+      if (left !== t && right !== t) { slot = i; break; }
+    }
+    if (slot < 0) for (let i = 0; i < PETAL_SLOTS; i++) if (!plan[i]) { slot = i; break; }
+    if (slot >= 0) plan[slot] = t;
+  }
+
+  const slotsByType = new Map<string, number[]>();
+  plan.forEach((t, i) => {
+    if (!slotsByType.has(t)) slotsByType.set(t, []);
+    slotsByType.get(t)!.push(i);
+  });
+
+  const nMax = Math.max(
+    1,
+    ...Array.from(slotsByType.entries()).map(([t, slots]) => Math.ceil(byType.get(t)!.length / slots.length))
+  );
+  const span = (Math.PI * 2) / PETAL_SLOTS - PETAL_GAP;
+
+  slotsByType.forEach((slots, t) => {
+    const arr = byType.get(t)!;
+    slots.forEach((slotIdx, ordinal) => {
+      const theta = -Math.PI / 2 + slotIdx * (Math.PI / 4);
+      const cnt = Math.ceil(arr.length / slots.length);
+      const len = (PETAL_R - PETAL_BASE_R) * (0.6 + 0.4 * Math.min(1, Math.sqrt(cnt / nMax)));
+      const midR = PETAL_BASE_R + len * 0.5;
+      const maxW = Math.tan(span / 2) * midR * 0.86;
+
+      const bucket = arr.filter((_, idx) => idx % slots.length === ordinal);
+      const n = bucket.length;
+      const rows = Math.max(3, Math.ceil(Math.sqrt(n * 2.6)));
+      const capC = Math.max(2, Math.ceil(n / (rows * 0.6366)));
+      let placed = 0;
+      for (let row = 0; row < rows && placed < n; row++) {
+        const t2 = (row + 0.5) / rows;
+        const radius = PETAL_BASE_R + len * t2;
+        const profile = Math.sin(Math.PI * t2);
+        const cap = Math.max(1, Math.round(capC * profile));
+        const halfAngle = Math.atan2(maxW * profile, radius);
+        for (let j = 0; j < cap && placed < n; j++) {
+          const frac = cap === 1 ? 0 : (j / (cap - 1)) * 2 - 1;
+          const a = theta + frac * halfAngle * 0.9;
+          const node = bucket[placed];
+          node.tx = cx + Math.cos(a) * radius;
+          node.ty = cy + Math.sin(a) * radius;
+          // 初始位在目标位附近随机散开，供仿真弹性收拢成莲
+          node.x = node.tx + (Math.random() - 0.5) * 70;
+          node.y = node.ty + (Math.random() - 0.5) * 70;
+          placed++;
+        }
+      }
+    });
+  });
+}
 
 function getGraphData() {
   const allNodes: NodeData[] = [
@@ -148,14 +252,19 @@ function getGraphData() {
     degree.set(l.target as string, (degree.get(l.target as string) || 0) + 1);
   });
 
-  allNodes.forEach((n) => {
+  // 剔除低关联低频节点，连线随之收缩到保留节点之间
+  const keptNodes = allNodes.filter((n) => (degree.get(n.id) || 0) >= MIN_DEGREE);
+  const keptNodeIds = new Set(keptNodes.map((n) => n.id));
+  const keptRawLinks = allLinks.filter((l) => keptNodeIds.has(l.source as string) && keptNodeIds.has(l.target as string));
+
+  keptNodes.forEach((n) => {
     const d = degree.get(n.id) || 0;
     const base = baseRadiusMap[n.type] || 10;
     n.r = Math.min(base * 3.2, base + d * 2.8);
   });
 
   const linksByNode = new Map<string, LinkData[]>();
-  allLinks.forEach((l) => {
+  keptRawLinks.forEach((l) => {
     [l.source as string, l.target as string].forEach((id) => {
       if (!linksByNode.has(id)) linksByNode.set(id, []);
       linksByNode.get(id)!.push(l);
@@ -170,10 +279,10 @@ function getGraphData() {
       .forEach((l) => keptLinks.add(l));
   });
 
-  return { allNodes, allLinks: allLinks.filter((l) => keptLinks.has(l)) };
+  return { allNodes: keptNodes, allLinks: keptRawLinks.filter((l) => keptLinks.has(l)) };
 }
 
-// 图数据为静态内容：模块级只构建一次（此前每次渲染/筛选计数都重复整建，是重大性能损耗点）
+// 图数据为静态内容：模块级只构建一次
 const GRAPH_DATA = getGraphData();
 
 const COUNTS: Record<string, number> = FILTER_TYPES.reduce((acc, t) => {
@@ -204,6 +313,7 @@ export const GraphCanvas: React.FC = () => {
     if (!tip) return;
     tip.style.left = `${event.clientX + 15}px`;
     tip.style.top = `${event.clientY + 15}px`;
+    tip.style.borderColor = colorMap[d.type] || '#fff';
     const nameEl = tip.querySelector('[data-name]');
     const descEl = tip.querySelector('[data-desc]');
     const tagEl = tip.querySelector('[data-type]');
@@ -231,6 +341,8 @@ export const GraphCanvas: React.FC = () => {
     if (!containerRef.current) return;
     const width = containerRef.current.clientWidth || 860;
     const height = containerRef.current.clientHeight || 650;
+    const cx = width / 2;
+    const cy = height / 2;
 
     d3.select(containerRef.current).selectAll('svg.graph-canvas-svg').remove();
 
@@ -251,10 +363,19 @@ export const GraphCanvas: React.FC = () => {
 
     const g = svg.append('g').attr('class', 'main-zoom-layer');
 
-    // D3 Zoom 缩放配置（平滑阻尼，直接滚轮缩放图谱，极速流畅）
+    // D3 Zoom：滚轮仅在卡片右侧缩放通道内生效（图谱区滚轮正常滚动页面，彻底避免冲突）
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.15, 3.5])
+      .scaleExtent([0.12, 3.5])
       .wheelDelta((event) => -event.deltaY * 0.002)
+      .filter((event) => {
+        if (event.type === 'wheel') {
+          const el = containerRef.current;
+          if (!el) return false;
+          const r = el.getBoundingClientRect();
+          return event.clientX > r.right - ZOOM_STRIP_W;
+        }
+        return !event.ctrlKey || event.type === 'wheel';
+      })
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
       });
@@ -276,21 +397,31 @@ export const GraphCanvas: React.FC = () => {
 
     const finalNodesData = nodesData.filter(n => nodesWithLinks.has(n.id));
 
-    const nodes: NodeData[] = finalNodesData.map(d => ({
-      ...d,
-      x: width / 2 + (Math.random() - 0.5) * 120,
-      y: height / 2 + (Math.random() - 0.5) * 120,
-    }));
+    const nodes: NodeData[] = finalNodesData.map(d => ({ ...d }));
     const links: LinkData[] = linksData.map(d => ({ ...d }));
 
-    // 高性能力导向仿真（快速收敛）
+    // 花瓣目标位：宏观八瓣莲 + 微观弹性
+    assignPetalTargets(nodes, cx, cy);
+
+    // 初始视图即整朵莲居中可见
+    const k0 = Math.min(width, height) / ((PETAL_R + 90) * 2);
+    svg.call(zoom.transform, d3.zoomIdentity.translate(cx - k0 * cx, cy - k0 * cy).scale(k0));
+
+    // 力导向仿真：斥力/碰撞/连线弹力 + 花瓣锚点弹力，可拖拽、松手回弹
     const simulation = d3.forceSimulation<NodeData>(nodes)
-      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(60).strength(0.65))
+      .force('link', d3.forceLink<NodeData, LinkData>(links).id(d => d.id).distance(85).strength(0.3))
       .force('charge', d3.forceManyBody().strength(-80))
-      .force('x', d3.forceX(width / 2).strength(0.15))
-      .force('y', d3.forceY(height / 2).strength(0.15))
-      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('x', d3.forceX(cx).strength(0.12))
+      .force('y', d3.forceY(cy).strength(0.12))
+      .force('center', d3.forceCenter(cx, cy))
       .force('collide', d3.forceCollide<NodeData>().radius(d => nodeRadius(d) + 7).strength(0.75))
+      .force('petal', ((alpha: number) => {
+        for (const n of nodes) {
+          if (n.tx === undefined || n.ty === undefined) continue;
+          n.vx = (n.vx || 0) + (n.tx - (n.x || 0)) * 0.32 * alpha;
+          n.vy = (n.vy || 0) + (n.ty - (n.y || 0)) * 0.32 * alpha;
+        };
+      }) as any)
       .alphaDecay(0.045);
 
     currentNodesRef.current = nodes;
@@ -298,9 +429,7 @@ export const GraphCanvas: React.FC = () => {
     // Web lines group
     const webLinesGroup = g.append('g').attr('class', 'web-lines');
 
-    /* 连线性能优化：全部常态连线合并为一条 path，悬停高亮用另一条叠加 path。
-       此前为数千个 <line> 元素逐 tick 写属性（每帧 8000+ 次 DOM 写入），是卡顿主因之一。
-       视觉等效：常态线平时隐藏，悬停时高亮相关连线，与原版一致。 */
+    /* 连线性能优化：全部常态连线合并为一条 path，悬停高亮用另一条叠加 path。 */
     const linkPath = g.append('path')
       .attr('fill', 'none')
       .attr('stroke', 'rgba(255, 255, 255, 0.16)')
@@ -317,14 +446,13 @@ export const GraphCanvas: React.FC = () => {
       for (let i = 0; i < links.length; i++) {
         const s = links[i].source as NodeData;
         const t = links[i].target as NodeData;
-        d += `M${s.x ?? width / 2},${s.y ?? height / 2}L${t.x ?? width / 2},${t.y ?? height / 2}`;
+        d += `M${s.x ?? cx},${s.y ?? cy}L${t.x ?? cx},${t.y ?? cy}`;
       }
       linkPath.attr('d', d);
     };
     updateLinkPath();
 
-    /* 关系标签性能优化：不再为每条连线常驻一个隐藏 <text>（每 tick 徒劳更新坐标），
-       只在悬停时为相关的少数连线按需创建，并仅在可见期间跟随 tick 更新。 */
+    /* 关系标签：悬停时为相关连线按需创建，仅在可见期间跟随 tick 更新。 */
     const linkLabelGroup = g.append('g')
       .attr('font-size', '10px')
       .attr('fill', 'rgba(255, 255, 255, 0.85)')
@@ -348,7 +476,7 @@ export const GraphCanvas: React.FC = () => {
       .data(nodes)
       .join('g')
       .attr('cursor', 'pointer')
-      .attr('transform', d => `translate(${d.x ?? width / 2},${d.y ?? height / 2})`);
+      .attr('transform', d => `translate(${d.x ?? cx},${d.y ?? cy})`);
 
     node.append('circle')
       .attr('r', d => nodeRadius(d))
@@ -400,7 +528,7 @@ export const GraphCanvas: React.FC = () => {
 
       node.style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0.12);
 
-      // 高亮连线（含邻接节点之间的连线，与原逻辑一致）合并为一条 path 一次性写入
+      // 高亮连线（含邻接节点之间的连线）合并为一条 path 一次性写入
       let hd = '';
       links.forEach(l => {
         const s = l.source as NodeData;
@@ -439,11 +567,12 @@ export const GraphCanvas: React.FC = () => {
     .on('mousemove', (event) => {
       moveTooltip(event);
     })
-    .on('mouseout', () => {
-      node.style('opacity', 1);
-      node.selectAll('circle')
+    .on('mouseout', (event, d: any) => {
+      // 仅还原刚离开的节点（此前对全部节点圆圈建过渡动画，是悬停卡顿主因）
+      d3.select(event.currentTarget).select('circle')
         .transition().duration(200)
-        .attr('r', (n: any) => nodeRadius(n));
+        .attr('r', nodeRadius(d));
+      node.style('opacity', 1);
       linkHighlight.style('opacity', 0);
       activeLabels = [];
       linkLabelGroup.selectAll('text').remove();
@@ -466,7 +595,7 @@ export const GraphCanvas: React.FC = () => {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    // 仿真 2.2 秒后自动居中并冻结物理计算，彻底释放 CPU
+    // 仿真 2.2 秒后按实际范围微调居中并冻结物理计算，彻底释放 CPU
     const freezeTimer = setTimeout(() => {
       simulation.stop();
 
@@ -482,7 +611,7 @@ export const GraphCanvas: React.FC = () => {
         const pad = 60;
         const bw = maxX - minX + pad * 2 || width;
         const bh = maxY - minY + pad * 2 || height;
-        const fitScale = Math.min(1.1, Math.max(0.35, Math.min(width / bw, height / bh)));
+        const fitScale = Math.min(1.1, Math.max(0.12, Math.min(width / bw, height / bh)));
         const fitX = width / 2 - fitScale * (minX + maxX) / 2;
         const fitY = height / 2 - fitScale * (minY + maxY) / 2;
         if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
@@ -532,7 +661,7 @@ export const GraphCanvas: React.FC = () => {
         const pad = 60;
         const bw = maxX - minX + pad * 2 || width;
         const bh = maxY - minY + pad * 2 || height;
-        const fitScale = Math.min(1.1, Math.max(0.35, Math.min(width / bw, height / bh)));
+        const fitScale = Math.min(1.1, Math.max(0.12, Math.min(width / bw, height / bh)));
         const fitX = width / 2 - fitScale * (minX + maxX) / 2;
         const fitY = height / 2 - fitScale * (minY + maxY) / 2;
         if (isFinite(fitX) && isFinite(fitY) && isFinite(fitScale)) {
@@ -546,13 +675,13 @@ export const GraphCanvas: React.FC = () => {
 
   return (
     <div className="relative w-full flex items-start gap-4">
-      {/* 1. 黑色背景主图谱卡片（保持经典完整星团，右侧留出空白区） */}
+      {/* 1. 黑色背景主图谱卡片：默认呈现一朵八瓣莲，右缘为滚轮缩放通道 */}
       <div
         className="relative flex-1 h-[75vh] min-h-[540px] md:h-[86vh] md:min-h-[660px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800"
         ref={containerRef}
       >
         {/* Filter chips (右上角分类筛选) */}
-        <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[65%]">
+        <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[55%]">
           {FILTER_TYPES.map((t) => (
             <button
               key={t}
@@ -568,11 +697,22 @@ export const GraphCanvas: React.FC = () => {
             </button>
           ))}
         </div>
+
+        {/* 卡片右缘缩放通道：滚轮在此缩放图谱（图谱区滚轮=正常滚动页面） */}
+        <div
+          className="absolute top-0 right-0 h-full hidden md:flex flex-col items-center justify-center gap-3 z-10 border-l border-dashed border-white/15 bg-white/[0.03]"
+          style={{ width: ZOOM_STRIP_W }}
+        >
+          <Mouse className="w-4 h-4 text-white/45" />
+          <span className="text-xs font-medium text-white/55 [writing-mode:vertical-rl] tracking-wide select-none">
+            鼠标指针放此处缩放图谱
+          </span>
+          <ZoomIn className="w-3.5 h-3.5 text-white/35" />
+        </div>
       </div>
 
-      {/* 2. 右侧空白区域的竖排悬浮操作面板与页面滚动提示 */}
+      {/* 2. 右侧悬浮操作面板（缩放与复位） */}
       <div className="sticky top-28 flex flex-col items-center space-y-3 z-30 py-2">
-        {/* 缩放与复位按钮组 */}
         <div className="flex flex-col items-center space-y-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
           <button
             onClick={handleZoomIn}
@@ -597,15 +737,9 @@ export const GraphCanvas: React.FC = () => {
             <RotateCcw className="w-5 h-5" />
           </button>
         </div>
-
-        {/* 页面滚动指引提示 */}
-        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[84px] shadow-sm leading-tight">
-          <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
-          <span className="font-medium">鼠标指针放此处滚动整页</span>
-        </div>
       </div>
 
-      {/* 3. 悬浮 Tooltip（直接 DOM 更新，避免鼠标移动触发 React 重渲染） */}
+      {/* 3. 悬浮 Tooltip（直接 DOM 更新，边框色随类型） */}
       <div
         ref={tooltipRef}
         style={{
@@ -613,7 +747,8 @@ export const GraphCanvas: React.FC = () => {
           left: 0,
           top: 0,
           background: 'rgba(11,19,41,0.95)',
-          border: '1px solid rgba(255,255,255,0.15)',
+          border: '1px solid rgba(255,255,255,0.3)',
+          borderLeftWidth: '4px',
           borderRadius: '12px',
           padding: '12px 16px',
           color: 'white',
@@ -622,12 +757,13 @@ export const GraphCanvas: React.FC = () => {
           boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
           opacity: 0,
           transition: 'opacity 0.15s ease',
+          maxWidth: '320px',
         }}
       >
         <div className="flex items-center gap-2 mb-1">
-          <span data-dot className="w-2.5 h-2.5 rounded-full" />
+          <span data-dot className="w-2.5 h-2.5 rounded-full shrink-0" />
           <span data-name className="font-bold text-base" />
-          <span data-type className="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 ml-2" />
+          <span data-type className="text-xs px-2 py-0.5 rounded-full bg-white/10 border border-white/20 shrink-0" />
         </div>
         <div data-desc className="text-sm text-white/70 mt-2" />
       </div>
