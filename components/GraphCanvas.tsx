@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, ZoomIn, ZoomOut, MoveVertical, Mouse } from 'lucide-react';
+import { RotateCcw, MoveVertical } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -59,9 +59,6 @@ const PETAL_SLOTS = 8;
 const PETAL_GAP = 0.1;        // 花瓣间角间隙（弧度）
 const PETAL_R = 1150;         // 整朵莲最大半径
 const PETAL_BASE_R = 180;     // 花心半径（花瓣起点）
-// 卡片左上角缩放通道区域：滚轮在此缩放图谱，图谱区滚轮=正常滚动页面
-const ZOOM_STRIP_W = 176;
-const ZOOM_STRIP_H = 260;
 
 // 根据关联度数计算节点半径：关联越多节点越大
 const nodeRadius = (n: NodeData) => n.r ?? baseRadiusMap[n.type] ?? 10;
@@ -364,19 +361,10 @@ export const GraphCanvas: React.FC = () => {
 
     const g = svg.append('g').attr('class', 'main-zoom-layer');
 
-    // D3 Zoom：滚轮仅在卡片缩放通道（左上角区域）内生效，图谱区滚轮正常滚动页面
+    // D3 Zoom：鼠标在黑色卡片内滚轮=缩放图谱；移出黑色区域（如右侧空白）滚轮=正常滚动页面
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.12, 3.5])
       .wheelDelta((event) => -event.deltaY * 0.002)
-      .filter((event) => {
-        if (event.type === 'wheel') {
-          const el = containerRef.current;
-          if (!el) return false;
-          const r = el.getBoundingClientRect();
-          return event.clientX < r.left + ZOOM_STRIP_W && event.clientY < r.top + ZOOM_STRIP_H;
-        }
-        return !event.ctrlKey || event.type === 'wheel';
-      })
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
       });
@@ -632,18 +620,6 @@ export const GraphCanvas: React.FC = () => {
     setVisible((prev) => ({ ...prev, [t]: !prev[t] }));
   };
 
-  const handleZoomIn = () => {
-    if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 1.3);
-    }
-  };
-
-  const handleZoomOut = () => {
-    if (svgRef.current && zoomRef.current) {
-      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, 0.75);
-    }
-  };
-
   const handleReset = () => {
     if (svgRef.current && zoomRef.current && containerRef.current) {
       const width = containerRef.current.clientWidth || 860;
@@ -699,43 +675,12 @@ export const GraphCanvas: React.FC = () => {
           ))}
         </div>
 
-        {/* 左上角缩放通道：滚轮在此缩放图谱（图谱区滚轮=正常滚动页面）。
-            pointer-events:none 让滚轮事件穿透到下层 SVG 触发缩放 */}
-        <div
-          className="absolute top-0 left-0 hidden md:flex flex-col items-start gap-2 z-[5] rounded-br-2xl border-b border-dashed border-r border-white/15 bg-white/[0.04] px-4 py-3 pointer-events-none select-none"
-          style={{ width: ZOOM_STRIP_W, minHeight: ZOOM_STRIP_H }}
-        >
-          <div className="flex items-center gap-2">
-            <Mouse className="w-4 h-4 text-white/50" />
-            <span className="text-xs font-bold text-white/70">滚轮缩放区</span>
-          </div>
-          <span className="text-[11px] leading-snug text-white/55">
-            鼠标指针放此处缩放图谱
-          </span>
-          <span className="text-[10px] leading-snug text-white/35">
-            图谱其余区域滚轮正常滚动页面
-          </span>
-        </div>
+        {/* 左上角缩放区已移除：黑色区域内滚轮直接缩放图谱 */}
       </div>
 
-      {/* 2. 右侧悬浮操作面板（缩放与复位）与页面滚动指引 */}
+      {/* 2. 右侧悬浮操作面板（复位）与页面滚动指引 */}
       <div className="sticky top-28 flex flex-col items-center space-y-3 z-30 py-2">
-        <div className="flex flex-col items-center space-y-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
-          <button
-            onClick={handleZoomIn}
-            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
-            title="放大图谱"
-          >
-            <ZoomIn className="w-5 h-5" />
-          </button>
-          <button
-            onClick={handleZoomOut}
-            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
-            title="缩小图谱"
-          >
-            <ZoomOut className="w-5 h-5" />
-          </button>
-          <div className="w-5 h-px bg-slate-200 my-0.5" />
+        <div className="flex flex-col items-center bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
           <button
             onClick={handleReset}
             className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
@@ -746,9 +691,10 @@ export const GraphCanvas: React.FC = () => {
         </div>
 
         {/* 页面滚动指引提示 */}
-        <div className="flex flex-col items-center text-center p-2 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[84px] shadow-sm leading-tight">
+        <div className="flex flex-col items-center text-center p-2.5 rounded-2xl bg-amber-50/90 border border-amber-200 text-[10px] text-amber-900 max-w-[104px] shadow-sm leading-tight">
           <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
-          <span className="font-medium">鼠标指针放此处滚动整页</span>
+          <span className="font-bold">鼠标指针放此处滚动整页</span>
+          <span className="mt-1 pt-1 border-t border-amber-200 text-amber-800/80">黑色区域内滚轮＝缩放图谱</span>
         </div>
       </div>
 
