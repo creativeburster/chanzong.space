@@ -29,6 +29,7 @@ interface GNode {
   desc: string;
   r: number;
   deg: number;
+  rgb: string;             // 节点颜色（所属花瓣变体色，"r,g,b"）
   tx: number;              // 花瓣目标位（物理弹力锚点）
   ty: number;
   x: number;
@@ -47,6 +48,7 @@ interface GLink {
 
 interface Petal {
   type: NodeType;
+  rgb: string;     // 花瓣专属颜色（同类型多瓣用不同变体色）
   theta: number;    // 花瓣中心角（弧度，-π/2 为正上方）
   length: number;   // 花瓣长度（世界坐标）
   maxW: number;     // 花瓣最大半宽
@@ -58,6 +60,7 @@ interface Layout {
   petals: Petal[];
   links: { a: number; b: number }[];       // 节点索引对
   nodeLinks: number[][];                    // 每个节点的邻接连线索引
+  colorGroups: Map<string, GNode[]>;        // 按颜色分组（批量绘制）
 }
 
 const colorMap: Record<string, string> = {
@@ -66,14 +69,6 @@ const colorMap: Record<string, string> = {
   concept: '#e0aaff',
   method: '#4ecdc4',
   koan: '#ffd700',
-};
-
-const rgbMap: Record<string, string> = {
-  person: '116,185,255',
-  book: '253,121,168',
-  concept: '224,170,255',
-  method: '78,205,196',
-  koan: '255,215,0',
 };
 
 const baseRadiusMap: Record<string, number> = {
@@ -93,6 +88,15 @@ const typeLabelMap: Record<string, string> = {
 };
 
 const FILTER_TYPES: NodeType[] = ['person', 'book', 'concept', 'method', 'koan'];
+
+// 每类型的花瓣变体色（"r,g,b"）：同类型占据多个花瓣时各用一色，整体花色更丰富
+const typeVariants: Record<NodeType, string[]> = {
+  person: ['125,211,252', '167,139,250', '56,189,248'],   // 天蓝 / 紫罗兰 / 亮蓝
+  book: ['253,121,168', '244,114,182', '249,115,22'],     // 粉 / 玫红 / 橙
+  concept: ['232,121,249', '129,140,248', '192,132,252'], // 品红紫 / 靛蓝 / 亮紫
+  method: ['78,205,196', '52,211,153', '45,212,191'],     // 青 / 翡翠 / 水绿
+  koan: ['255,215,0', '251,191,36', '245,158,11'],        // 金黄 / 琥珀 / 橙金
+};
 
 const relationWeight: Record<string, number> = {
   '法脉': 3,
@@ -124,6 +128,7 @@ function buildGraphData() {
       desc: `${p.title} · ${p.era}`,
       r: 0,
       deg: 0,
+      rgb: '',
       tx: 0,
       ty: 0,
       x: 0,
@@ -137,6 +142,7 @@ function buildGraphData() {
       desc: `${b.author} · ${b.category}`,
       r: 0,
       deg: 0,
+      rgb: '',
       tx: 0,
       ty: 0,
       x: 0,
@@ -150,6 +156,7 @@ function buildGraphData() {
       desc: c.summary.slice(0, 48) + '…',
       r: 0,
       deg: 0,
+      rgb: '',
       tx: 0,
       ty: 0,
       x: 0,
@@ -163,6 +170,7 @@ function buildGraphData() {
       desc: m.summary.slice(0, 48) + '…',
       r: 0,
       deg: 0,
+      rgb: '',
       tx: 0,
       ty: 0,
       x: 0,
@@ -176,6 +184,7 @@ function buildGraphData() {
       desc: `${q.master} · ${q.source}`,
       r: 0,
       deg: 0,
+      rgb: '',
       tx: 0,
       ty: 0,
       x: 0,
@@ -342,13 +351,17 @@ function buildLayout(visible: Record<string, boolean>): Layout {
     Math.ceil((nodesByType.get(t)?.length || 0) / slots.length)
   ));
 
+  const ordSeen = new Map<NodeType, number>();
   const petals: Petal[] = plan.map((type, i) => {
     const theta = -Math.PI / 2 + (i * Math.PI) / 4;
+    const ordinal = ordSeen.get(type) || 0;
+    ordSeen.set(type, ordinal + 1);
     const count = Math.ceil((nodesByType.get(type)?.length || 0) / (typeSlots.get(type)?.length || 1));
     const length = MAX_PETAL_LEN * (0.6 + 0.4 * Math.min(1, Math.sqrt(count / nMax)));
     const midR = BASE_R + length * 0.5;
     const span = (Math.PI * 2) / PETAL_SLOTS - PETAL_GAP;
-    return { type, theta, length, maxW: Math.tan(span / 2) * midR * 0.86, count };
+    const variants = typeVariants[type];
+    return { type, rgb: variants[ordinal % variants.length], theta, length, maxW: Math.tan(span / 2) * midR * 0.86, count };
   });
 
   const cursorByType = new Map<NodeType, GNode[][]>(); // type -> [slotOrdinal][nodes]
@@ -378,6 +391,7 @@ function buildLayout(visible: Record<string, boolean>): Layout {
           const frac = cap === 1 ? 0 : (j / (cap - 1)) * 2 - 1;
           const a = petal.theta + frac * halfAngle * 0.9;
           const node = bucket[placed];
+          node.rgb = petal.rgb;
           node.tx = Math.cos(a) * radius;
           node.ty = Math.sin(a) * radius;
           // 初始位在目标位附近随机散开，供物理仿真弹性收拢成莲
@@ -389,7 +403,13 @@ function buildLayout(visible: Record<string, boolean>): Layout {
     });
   });
 
-  return { nodes, petals, links, nodeLinks };
+  const colorGroups = new Map<string, GNode[]>();
+  nodes.forEach((n) => {
+    if (!colorGroups.has(n.rgb)) colorGroups.set(n.rgb, []);
+    colorGroups.get(n.rgb)!.push(n);
+  });
+
+  return { nodes, petals, links, nodeLinks, colorGroups };
 }
 
 /* ---------- 组件 ---------- */
@@ -455,36 +475,14 @@ export const GraphCanvas: React.FC = () => {
     const wx0 = -view.x / k, wy0 = -view.y / k;
     const wx1 = (cw - view.x) / k, wy1 = (ch - view.y) / k;
 
-    /* 1. 花瓣底色与描边 */
-    for (const p of L.petals) {
-      ctx.beginPath();
-      const steps = 22;
-      for (let s = 0; s <= steps; s++) {
-        const t = s / steps;
-        const r = BASE_R + p.length * t;
-        const w = p.maxW * Math.sin(Math.PI * t);
-        const a = p.theta + Math.atan2(w, r);
-        const x = Math.cos(a) * r, y = Math.sin(a) * r;
-        if (s === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-      }
-      for (let s = steps; s >= 0; s--) {
-        const t = s / steps;
-        const r = BASE_R + p.length * t;
-        const w = p.maxW * Math.sin(Math.PI * t);
-        const a = p.theta - Math.atan2(w, r);
-        ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r);
-      }
-      ctx.closePath();
-
-      const grad = ctx.createRadialGradient(0, 0, BASE_R * 0.8, 0, 0, BASE_R + p.length);
-      grad.addColorStop(0, `rgba(${rgbMap[p.type]},0.10)`);
-      grad.addColorStop(1, `rgba(${rgbMap[p.type]},0.015)`);
-      ctx.fillStyle = grad;
-      ctx.fill();
-      ctx.strokeStyle = 'rgba(216,180,100,0.20)';
-      ctx.lineWidth = 2;
-      ctx.stroke();
-    }
+    /* 1. 花形完全由节点圆点本身构成：不画花瓣轮廓线，只留极淡的径向底光 */
+    const bgGlow = ctx.createRadialGradient(0, 0, BASE_R * 0.5, 0, 0, BASE_R + MAX_PETAL_LEN);
+    bgGlow.addColorStop(0, 'rgba(120,140,220,0.10)');
+    bgGlow.addColorStop(1, 'rgba(120,140,220,0)');
+    ctx.fillStyle = bgGlow;
+    ctx.beginPath();
+    ctx.arc(0, 0, BASE_R + MAX_PETAL_LEN, 0, Math.PI * 2);
+    ctx.fill();
 
     const hover = hoverRef.current;
     const hasHover = hover >= 0 && hover < L.nodes.length;
@@ -508,7 +506,7 @@ export const GraphCanvas: React.FC = () => {
         ctx.stroke();
       }
       if (hasHover) {
-        ctx.strokeStyle = `rgba(${rgbMap[L.nodes[hover].type]},0.85)`;
+        ctx.strokeStyle = `rgba(${L.nodes[hover].rgb},0.85)`;
         ctx.lineWidth = 2.4;
         ctx.beginPath();
         hoverLinkRef.current.forEach((li) => {
@@ -520,61 +518,68 @@ export const GraphCanvas: React.FC = () => {
       }
     }
 
-    /* 3. 节点（按类型分批填充；悬停时其余节点压暗） */
+    /* 3. 节点：按颜色分组批量绘制，先加发光光晕（lighter 叠加），再画实心圆点 */
     const inView = (n: GNode) => n.x > wx0 - 40 && n.x < wx1 + 40 && n.y > wy0 - 40 && n.y < wy1 + 40;
-    const isHi = (i: number) => hasHover && (i === hover || neighborRef.current.has(i));
-    const drawBatch = (alpha: number, highlighted: boolean) => {
-      for (const t of FILTER_TYPES) {
-        ctx.fillStyle = `rgba(${rgbMap[t]},${alpha})`;
+    const hiSet = new Set<GNode>();
+    if (hasHover) {
+      hiSet.add(L.nodes[hover]);
+      neighborRef.current.forEach((i) => hiSet.add(L.nodes[i]));
+    }
+    const isHi = (n: GNode) => hiSet.has(n);
+
+    L.colorGroups.forEach((arr, rgb) => {
+      // 光晕层
+      ctx.globalCompositeOperation = 'lighter';
+      const glowPass = (alpha: number, highlighted: boolean) => {
+        ctx.fillStyle = `rgba(${rgb},${alpha})`;
         ctx.beginPath();
-        for (let i = 0; i < L.nodes.length; i++) {
-          const n = L.nodes[i];
-          if (n.type !== t || !inView(n)) continue;
-          if (isHi(i) !== highlighted) continue;
+        for (const n of arr) {
+          if (!inView(n) || isHi(n) !== highlighted) continue;
+          const gr = n.r * 2.1;
+          ctx.moveTo(n.x + gr, n.y);
+          ctx.arc(n.x, n.y, gr, 0, Math.PI * 2);
+        }
+        ctx.fill();
+      };
+      if (hasHover) glowPass(0.04, false);
+      glowPass(hasHover ? 0.16 : 0.11, true);
+
+      // 实心圆点层
+      ctx.globalCompositeOperation = 'source-over';
+      const dotPass = (alpha: number, highlighted: boolean) => {
+        ctx.fillStyle = `rgba(${rgb},${alpha})`;
+        ctx.beginPath();
+        for (const n of arr) {
+          if (!inView(n) || isHi(n) !== highlighted) continue;
           ctx.moveTo(n.x + n.r, n.y);
           ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
         }
         ctx.fill();
-      }
-    };
-    if (hasHover) drawBatch(0.1, false);  // 压暗非邻接节点
-    drawBatch(0.92, hasHover);            // 正常节点（无悬停时全部）
-
-    // 连接度高的节点加金色描环，形成层次
-    if (k > 0.5) {
-      ctx.strokeStyle = 'rgba(232,194,104,0.55)';
-      ctx.lineWidth = 1.6;
-      ctx.beginPath();
-      for (let i = 0; i < L.nodes.length; i++) {
-        const n = L.nodes[i];
-        if (n.deg < 9 || !inView(n)) continue;
-        if (!isHi(i)) continue;
-        ctx.moveTo(n.x + n.r + 3, n.y);
-        ctx.arc(n.x, n.y, n.r + 3, 0, Math.PI * 2);
-      }
-      ctx.stroke();
-    }
+      };
+      if (hasHover) dotPass(0.15, false);
+      dotPass(0.95, true);
+    });
 
     /* 4. 节点标签（LOD：屏幕半径足够大才显示，悬停时始终显示邻接标签） */
-    ctx.font = '13px "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif';
+    ctx.font = '15px "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'top';
     let labelCount = 0;
     for (let i = 0; i < L.nodes.length && labelCount < 450; i++) {
       const n = L.nodes[i];
       if (!inView(n)) continue;
-      const hi = isHi(i);
+      const hi = isHi(n);
       if (hasHover && !hi) continue;
-      if (!hi && n.r * k < 8) continue;
-      ctx.fillStyle = hi ? '#ffffff' : 'rgba(255,255,255,0.82)';
+      if (!hi && n.r * k < 7.5) continue;
+      ctx.fillStyle = hi ? '#ffffff' : 'rgba(255,255,255,0.88)';
       ctx.fillText(n.name, n.x, n.y + n.r + 4);
       labelCount++;
     }
 
-    /* 5. 花瓣类别标签（低倍率时显示，营造 logo/曼陀罗感） */
+    /* 5. 花瓣类别标签（低倍率时显示，颜色即分区色） */
     const titleAlpha = Math.max(0, Math.min(1, (1.05 - k) / 0.45));
     if (titleAlpha > 0.02) {
-      ctx.font = '600 30px "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif';
+      ctx.font = '600 26px "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       for (const p of L.petals) {
@@ -586,23 +591,26 @@ export const GraphCanvas: React.FC = () => {
         ctx.save();
         ctx.translate(px, py);
         ctx.rotate(rot);
-        ctx.fillStyle = `rgba(${rgbMap[p.type]},${0.88 * titleAlpha})`;
+        ctx.fillStyle = `rgba(${p.rgb},${0.85 * titleAlpha})`;
         ctx.fillText(`${typeLabelMap[p.type]} · ${p.count}`, 0, 0);
         ctx.restore();
       }
     }
 
-    /* 6. 莲心：金色光晕与实心珠点（无文字徽记） */
-    const halo = ctx.createRadialGradient(0, 0, 8, 0, 0, 150);
-    halo.addColorStop(0, 'rgba(230,190,100,0.26)');
-    halo.addColorStop(1, 'rgba(230,190,100,0)');
+    /* 6. 花芯：发光的白色金心（无文字徽记） */
+    ctx.globalCompositeOperation = 'lighter';
+    const halo = ctx.createRadialGradient(0, 0, 4, 0, 0, 190);
+    halo.addColorStop(0, 'rgba(255,228,150,0.55)');
+    halo.addColorStop(0.4, 'rgba(240,200,110,0.16)');
+    halo.addColorStop(1, 'rgba(240,200,110,0)');
     ctx.fillStyle = halo;
     ctx.beginPath();
-    ctx.arc(0, 0, 150, 0, Math.PI * 2);
+    ctx.arc(0, 0, 190, 0, Math.PI * 2);
     ctx.fill();
-    ctx.fillStyle = 'rgba(232,194,104,0.85)';
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = 'rgba(255,232,160,0.95)';
     ctx.beginPath();
-    ctx.arc(0, 0, 20, 0, Math.PI * 2);
+    ctx.arc(0, 0, 22, 0, Math.PI * 2);
     ctx.fill();
   }
 
@@ -808,7 +816,7 @@ export const GraphCanvas: React.FC = () => {
               if (nameEl) nameEl.textContent = n.name;
               if (descEl) descEl.textContent = n.desc;
               const dot = tip.querySelector('[data-dot]') as HTMLElement | null;
-              if (dot) dot.style.backgroundColor = colorMap[n.type];
+              if (dot) dot.style.backgroundColor = `rgb(${n.rgb})`;
               const tagEl = tip.querySelector('[data-type]');
               if (tagEl) tagEl.textContent = typeLabelMap[n.type] || n.type;
               tip.style.opacity = '1';
