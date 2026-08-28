@@ -1,4 +1,4 @@
-# 临济录
+# 镇州临济慧照禅师语录
 > **作者**: 临济义玄 | **分类**: 临济棒喝
 
 🔗 经典连线：[黄檗山断际禅师传心法要](/classics/huangbo)（受印黄檗） · [马祖道一禅师语录](/classics/mazu)（洪州远源） · [人天眼目](/classics/renyantianmu)（宗风总览） · [赵州真际禅师语录](/classics/zhaozhouyulu)（同期并世）
