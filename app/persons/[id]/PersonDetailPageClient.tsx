@@ -15,6 +15,33 @@ import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
+/* 书名变体别名：经典卡书名 → manifest id（旧数据书名与现库题名不一致时使用） */
+const CLASSIC_ALIAS: Record<string, string> = {
+  '赵州禅师语录': 'zhaozhouyulu',
+  '六祖法宝坛经': 'tanjing',
+  '六祖坛经': 'tanjing',
+  '杨岐方会禅师语录': 'yangqiyulu',
+  '慈明禅师语录': 'shishuangchuyuan',
+  '沩山语录': 'weishanyulu',
+  '曹山语录': 'caoshanyulu',
+  '金刚经': 'jingangjing',
+  '肇论': 'zhaolun',
+  '绝观论': 'jueguanlun',
+  '无门关': 'wumenguan',
+  '坐禅仪': 'zuochanyi',
+  '禅苑清规': 'chanyuanqinggui',
+  '普明十牛图颂': 'shiniutu',
+  '云门匡真禅师广录': 'yunmen',
+  '文殊师利所说摩诃般若波罗蜜经': 'wenshu',
+  '七佛传法偈': 'qifo',
+  '黄龙慧南禅师语录': 'huanglonghuinan',
+  '筠州洞山悟本禅师语录': 'dongshanyulu',
+  '维摩诘经': 'weimojiejing',
+};
+
+
+
+
 interface PageProps {
   params: {
     id: string;
@@ -176,8 +203,18 @@ export default function PersonDetailPageClient({ params }: PageProps) {
 
              <LinkCardGrid
                items={person.classics.map((classicName, idx) => {
-                 const bookId = person.relatedBooks?.[idx];
-                 const book = bookId ? manifest.find(m => m.id === bookId) : undefined;
+                 // 按书名匹配取链接（修复按下标配对导致的串链）；
+                 // 经典名也可能直接是 manifest id（部分旧数据用拼音 slug）
+                 const rel = person.relatedBooks ?? [];
+                 const aliased = CLASSIC_ALIAS[classicName];
+                 if (aliased) { const ab = manifest.find(m => m.id === aliased); return { id: aliased, title: classicName, summary: ab?.author, href: ab ? `/classics/${aliased}` : '#' }; }
+                 const norm = (s: string) => s.replace(/[《》\s（）()]/g, '');
+                 const cn = norm(classicName);
+                 const book =
+                   manifest.find(m => rel.includes(m.id) && (m.title === classicName || norm(m.title) === cn)) ||
+                   manifest.find(m => rel.includes(m.id) && (m.title.includes(classicName) || classicName.includes(m.title) || norm(m.title).includes(cn) || cn.includes(norm(m.title)))) ||
+                   manifest.find(m => rel.includes(m.id) && m.id === classicName);
+                 const bookId = book?.id;
                  return { id: bookId || `c${idx}`, title: classicName, summary: book?.author, href: book ? `/classics/${book.id}` : '#' };
                }).filter(item => item.href !== '#')}
                variant="amber"

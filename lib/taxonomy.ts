@@ -654,7 +654,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["de-hua-li-zhi","tou-xin-wei-si"],
     "relatedMethods": ["chanlin-jingce-practice"],
     "relatedPersons": ["yangqi-fanghui","chuyuan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "huanglonghuinan"]
   },
   {
     "id": "yangqi-fanghui",
@@ -675,7 +675,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["tou-xin-wei-si"],
     "relatedMethods": ["chanlin-jingce-practice"],
     "relatedPersons": ["huanglong-huinan","chuyuan"],
-    "relatedBooks": ["chanlinbaoxun","fayanyulu","yangqihoulu"]
+    "relatedBooks": ["chanlinbaoxun","fayanyulu","yangqihoulu", "yangqiyulu"]
   },
   {
     "id": "anan",
@@ -695,7 +695,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["qi-chu-zheng-xin","ba-huan-bian-jian"],
     "relatedMethods": ["er-gen-yuan-tong-practice"],
     "relatedPersons": ["xubuti","guanzizai"],
-    "relatedBooks": ["lengyanjing"]
+    "relatedBooks": ["lengyanjing", "jingangjing"]
   },
   {
     "id": "banramidi",
@@ -757,7 +757,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["prajna","yuanjue-qingjing-xinxing","ru-bu-er-fa-men"],
     "relatedMethods": ["er-gen-yuan-tong-practice"],
     "relatedPersons": ["puxian-yuanjue","weimojie","guanzizai"],
-    "relatedBooks": ["yuanjuejing","weimojiejing","lengyanjing","juelin"]
+    "relatedBooks": ["yuanjuejing","weimojiejing","lengyanjing","juelin", "wenshu"]
   },
   {
     "id": "chuyuan",
@@ -777,7 +777,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["de-hua-li-zhi","tou-xin-wei-si"],
     "relatedMethods": ["chanlin-jingce-practice"],
     "relatedPersons": ["huanglong-huinan","yangqi-fanghui"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedBooks": ["chanlinbaoxun", "shishuangchuyuan"]
   },
   {
     "id": "jiaye",
@@ -797,7 +797,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["mind-transmission","direct-pointing"],
     "relatedMethods": [],
     "relatedPersons": ["bodhidharma","anan"],
-    "relatedBooks": []
+    "relatedBooks": ["qifo"]
   },
   {
     "id": "weishan-lingyou",
@@ -1074,7 +1074,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["beyond-words","ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": []
+    "relatedBooks": ["yunmen"]
   },
   {
     "id": "kuoan",
@@ -1176,7 +1176,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["emptiness","prajna","non-duality"],
     "relatedMethods": [],
     "relatedPersons": ["kumarajiva"],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": ["weimojiejing", "zhaolun"]
   },
   {
     "id": "xuefeng-yicun",
@@ -1467,7 +1467,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan","self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["zhaozhou","dahui-zonggao"],
-    "relatedBooks": []
+    "relatedBooks": ["wumenguan"]
   },
   {
     "id": "niutou-farong",
@@ -1488,7 +1488,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-mind","emptiness","self-nature"],
     "relatedMethods": [],
     "relatedPersons": ["daoxin"],
-    "relatedBooks": ["xinxinming"]
+    "relatedBooks": ["xinxinming", "jueguanlun"]
   },
   {
     "id": "tianhuang-daowu",
@@ -1619,7 +1619,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi","self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": [],
-    "relatedBooks": []
+    "relatedBooks": ["zuochanyi", "chanyuanqinggui"]
   },
   {
     "id": "muzhou-daoming",
@@ -1815,7 +1815,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["self-nature","ordinary-mind"],
     "relatedMethods": [],
     "relatedPersons": ["kuoan"],
-    "relatedBooks": []
+    "relatedBooks": ["shiniutu"]
   },
   {
     "id": "danxia-zichun",
