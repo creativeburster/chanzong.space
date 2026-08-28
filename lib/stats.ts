@@ -1,5 +1,5 @@
 export const STATS = {
-  classics: 96,
+  classics: 97,
   concepts: 397,
   methods: 89,
   koans: 566,
