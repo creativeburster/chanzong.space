@@ -89,6 +89,7 @@ export default function ClassicPage({ params }: PageProps) {
     inLanguage: 'zh-CN',
     genre: meta.category,
     wordCount: meta.word_count,
+    dateModified: new Date().toISOString().split('T')[0],
   };
 
   // FAQPage schema for this classic's FAQs

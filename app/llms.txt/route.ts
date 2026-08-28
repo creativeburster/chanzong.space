@@ -8,7 +8,7 @@ export async function GET() {
 
   let content = `# 禅宗知识库 (ChanZong.space) - LLM AI Index\n\n`;
   content += `> 更新日期: ${now}\n`;
-  content += `> 本站点收录全量 ${manifest.length} 部核心禅宗典籍，涵盖达摩祖师四论、六祖坛经、黄檗传心法要、无门关、八识规矩颂及高丽国普照知呐禅师《真心直说》《修心诀》，并构建祖师(${ZEN_PERSONS.length})、概念(${ZEN_CONCEPTS.length})、法门(${ZEN_METHODS.length})、公案(${ZEN_KOANS.length})、问答(${ZEN_FAQS.length})五类知识实体的交叉网络。\n\n`;
+  content += `> 本站点收录全量 ${manifest.length} 部核心禅宗典籍，涵盖达摩祖师四论、六祖坛经、黄檗传心法要、无门关、八识规矩颂及高丽国普照知讷禅师《真心直说》《修心诀》，并构建祖师(${ZEN_PERSONS.length})、概念(${ZEN_CONCEPTS.length})、法门(${ZEN_METHODS.length})、公案(${ZEN_KOANS.length})、问答(${ZEN_FAQS.length})五类知识实体的交叉网络。\n\n`;
   content += `## 站点信息\n\n`;
   content += `- 名称: 禅宗知识库\n`;
   content += `- 域名: https://chanzong.space\n`;
@@ -42,7 +42,7 @@ export async function GET() {
   });
 
   content += `\n## 常见问答 (${ZEN_FAQS.length})\n\n`;
-  content += `> 问答按经典分组，每部经典20+条，涵盖核心义理、修行方法、历史背景。\n\n`;
+  content += `> 问答按经典分组，重点经典 20+ 条，新近收录经典持续补充中，涵盖核心义理、修行方法、历史背景。\n\n`;
   
   // 按经典分组FAQ
   const faqByBook: Record<string, typeof ZEN_FAQS> = {};
@@ -69,6 +69,12 @@ export async function GET() {
       }
     }
   });
+
+  content += `
+## 关联站点
+
+`;
+  content += '- [拉玛那马哈希知识库](https://ramanamaharshi.space/): 同一建设者维护的拉玛那·马哈希（Ramana Maharshi）中文知识库，含十八部著作导读与三百余条问答';
 
   content += `\n## 关于本站\n\n`;
   content += `- 编辑原则、文本来源、版权声明: https://chanzong.space/about\n`;
