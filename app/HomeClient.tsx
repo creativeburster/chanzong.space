@@ -93,7 +93,7 @@ export default function HomeClient() {
                 <BookOpen className="w-4 h-4 text-amber-700" />
                 <span>经典著作精选</span>
               </h2>
-              <Link href="/books" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/books" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.classics} 部 →
               </Link>
             </div>
@@ -101,6 +101,7 @@ export default function HomeClient() {
               {featuredClassics.map((item) => (
                 <Link
                   key={item.id}
+                  prefetch={false}
                   href={`/classics/${item.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
                 >
@@ -132,7 +133,7 @@ export default function HomeClient() {
                 <Gem className="w-4 h-4 text-emerald-600" />
                 <span>核心概念精选</span>
               </h2>
-              <Link href="/concepts" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/concepts" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.concepts} 概念 →
               </Link>
             </div>
@@ -140,6 +141,7 @@ export default function HomeClient() {
               {FEATURED_CONCEPTS.map((concept) => (
                 <Link
                   key={concept.id}
+                  prefetch={false}
                   href={`/concepts/${concept.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-emerald-600/50 hover:shadow-sm transition-all group"
                 >
@@ -169,7 +171,7 @@ export default function HomeClient() {
                 <Compass className="w-4 h-4 text-sky-600" />
                 <span>修持法门精选</span>
               </h2>
-              <Link href="/methods" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/methods" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.methods} 法门 →
               </Link>
             </div>
@@ -177,6 +179,7 @@ export default function HomeClient() {
               {featuredMethods.map((m) => (
                 <Link
                   key={m.id}
+                  prefetch={false}
                   href={`/methods/${m.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-sky-600/50 hover:shadow-sm transition-all group"
                 >
@@ -198,7 +201,7 @@ export default function HomeClient() {
                 <MessageSquare className="w-4 h-4 text-rose-600" />
                 <span>公案精选</span>
               </h2>
-              <Link href="/koan" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/koan" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.koans} 则公案 →
               </Link>
             </div>
@@ -206,6 +209,7 @@ export default function HomeClient() {
               {featuredKoans.map((k) => (
                 <Link
                   key={k.id}
+                  prefetch={false}
                   href={`/koan/${k.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-rose-600/50 hover:shadow-sm transition-all group"
                 >
@@ -229,7 +233,7 @@ export default function HomeClient() {
                 <Users className="w-4 h-4 text-purple-600" />
                 <span>禅门人物精选</span>
               </h2>
-              <Link href="/persons" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/persons" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {STATS.persons} 位人物 →
               </Link>
             </div>
@@ -237,6 +241,7 @@ export default function HomeClient() {
               {featuredPersons.map((p) => (
                 <Link
                   key={p.id}
+                  prefetch={false}
                   href={`/persons/${p.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-purple-600/50 hover:shadow-sm transition-all group text-center"
                 >
@@ -256,7 +261,7 @@ export default function HomeClient() {
                 <Lightbulb className="w-4 h-4 text-amber-600" />
                 <span>问答精选</span>
               </h2>
-              <Link href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
+              <Link prefetch={false} href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
                 查看全部 {formatCount(STATS.faqs)} 条 →
               </Link>
             </div>
@@ -264,6 +269,7 @@ export default function HomeClient() {
               {featuredFaqs.map((f) => (
                 <Link
                   key={f.id}
+                  prefetch={false}
                   href={`/faq#${f.id}`}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/50 hover:shadow-sm transition-all group"
                 >

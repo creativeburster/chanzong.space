@@ -41,6 +41,7 @@ export const TopHeader: React.FC = () => {
         {navLinks.map((link) => (
           <Link
             key={link.href}
+            prefetch={false}
             href={link.href}
             className={`transition-all py-1.5 px-1 ${
               pathname === link.href

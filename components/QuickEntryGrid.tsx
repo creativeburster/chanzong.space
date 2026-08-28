@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { BookOpen, Gem, Compass, Users, MessageSquare, GitFork, Lightbulb } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 
@@ -24,6 +24,7 @@ export const QuickEntryGrid = () => {
           return (
             <Link
               key={idx}
+              prefetch={false}
               href={item.href}
               className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex items-center space-x-4 group"
             >

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 
@@ -25,6 +25,7 @@ export const StatsOverview = () => {
       {stats.map((item, idx) => (
         <Link
           key={idx}
+          prefetch={false}
           href={item.href}
           className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md hover:border-amber-600/50 transition-all text-center group"
         >
