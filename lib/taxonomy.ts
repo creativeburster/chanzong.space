@@ -817,7 +817,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["non-duality","self-nature"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["baizhang","yangshan-huiji"],
-    "relatedBooks": ["dongshanyulu"]
+    "relatedBooks": ["weishanyulu", "dongshanyulu"]
   },
   {
     "id": "yangshan-huiji",
@@ -1152,15 +1152,11 @@ export const ZEN_PERSONS: PersonItem[] = [
       "七处征心，八还辨见。 —《楞严经》",
       "心生则种种法生，心灭则种种法灭。"
 ],
-    "classics": [
-      "成唯识论",
-      "大般若经",
-      "八识规矩颂"
-],
+    "classics": ["八识规矩颂", "大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论", "成唯识论", "大般若经"],
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
     "relatedPersons": [],
-    "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun"]
+    "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
   {
     "id": "sengzhao",
@@ -3764,11 +3760,11 @@ export const ZEN_PERSONS: PersonItem[] = [
       "由此彼皆无，　　故一切唯识。",
       "言无我者，略有二种：一补特伽罗无我、二法无我。"
     ],
-    "classics": ["大乘百法明门论", "唯识三十论颂", "唯识二十论"],
+    "classics": ["大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论"],
     "relatedConcepts": ["weishi", "zhongguan", "zhongdao", "tathagatagarbha"],
     "relatedMethods": [],
     "relatedPersons": ["xuanzang"],
-    "relatedBooks": ["baifamingmenlun", "weishisanshilunsong", "weishiershilun"]
+    "relatedBooks": ["baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
   {
     "id": "runing",
