@@ -107,6 +107,7 @@ MAP = {
  'runingxuyulu': [('runingyulu','六会全录'), ('dongshanyulu','曹山拈提'), ('caoshanyulu','曹山渊源'), ('baojingsanmei','五位纲要')],
  'weishanyulu': [('renyantianmu','沩仰宗风'), ('wumenguan','公案渊薮'), ('linjianlu','沩仰掌故')],
  'chengyelun': [('weishisanshilunsong','唯识颂本'), ('baifamingmenlun','百法名目'), ('zhonglun','观业对照'), ('dachengqixinlun','业感所依')],
+ 'bianzhongbianlun': [('weishisanshilunsong','唯识颂本'), ('baifamingmenlun','百法名目'), ('chengyelun','业论姊妹'), ('dachengqixinlun','中道相承')],
 }
 
 def main():
