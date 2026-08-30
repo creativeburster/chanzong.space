@@ -653,7 +653,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["de-hua-li-zhi","tou-xin-wei-si"],
     "relatedMethods": ["chanlin-jingce-practice"],
-    "relatedPersons": ["yangqi-fanghui","chuyuan"],
+    "relatedPersons": ["yangqi-fanghui","shishuang-chuyuan"],
     "relatedBooks": ["chanlinbaoxun", "huanglonghuinan"]
   },
   {
@@ -674,7 +674,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["tou-xin-wei-si"],
     "relatedMethods": ["chanlin-jingce-practice"],
-    "relatedPersons": ["huanglong-huinan","chuyuan"],
+    "relatedPersons": ["huanglong-huinan","shishuang-chuyuan"],
     "relatedBooks": ["chanlinbaoxun","fayanyulu","yangqihoulu", "yangqiyulu"]
   },
   {
@@ -759,26 +759,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["puxian-yuanjue","weimojie","guanzizai"],
     "relatedBooks": ["yuanjuejing","weimojiejing","lengyanjing","juelin", "wenshu"]
   },
-  {
-    "id": "chuyuan",
-    "name": "慈明楚圆",
-    "title": "石霜慈明楚圆禅师 / 临济宗第七世",
-    "era": "北宋 (986—1039)",
-    "lifeStory": "慈明楚圆禅师（986—1039），全州清湘人，俗姓李。少业儒，二十二岁出家，与大愚、谷泉、琅琊结伴同参汾阳善昭禅师，得其心印，为临济宗第七世。历住袁州南源、潭州道吾、石霜诸刹，赐号“慈明”。平生真率作事、为法忘躯：河东苦寒，众人惮行，师志在于道，晓夕不怠，夜坐欲睡则引锥自刺。门下出黄龙慧南、杨岐方会两大宗匠，临济宗由此分为黄龙、杨岐二派，杨岐一系绵延至今，师实为宋代以后临济正脉之总源。《禅林宝训》屡载其德业苦节，以为后世住持楷模。\n\n其求道历程极为精诚刻苦，遍参诸方善知识，历经千锤百炼与机锋逼拶。于言下豁然大彻大悟，契入本具清净自性，桶底彻底脱落。开悟后受师印可，出世住山开堂说法，随机施设，不拘一格，接引四方参学纳子无数，盛化一方，法席巍然，成为禅宗法脉流布承前启后之关键尊宿。",
-    "teachings": "住持丛林，以道念为宗、以德行为先；领众行道，胜似守道老死丘壑。为生死事大，废寝忘食，纵遇毁辱，含垢忍耻而道终起。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
-    "quotes": [
-      "与其守道老死丘壑，不若行道领众于丛林。 —《禅林宝训》载慈明语",
-      "夜坐欲睡，引锥自刺，叹曰：古人为生死事大，不食不寝，我何人哉而纵荒逸！ —《禅林宝训》"
-],
-    "classics": [
-      "禅林宝训",
-      "慈明禅师语录"
-],
-    "relatedConcepts": ["de-hua-li-zhi","tou-xin-wei-si"],
-    "relatedMethods": ["chanlin-jingce-practice"],
-    "relatedPersons": ["huanglong-huinan","yangqi-fanghui"],
-    "relatedBooks": ["chanlinbaoxun", "shishuangchuyuan"]
-  },
+  
   {
     "id": "jiaye",
     "name": "摩诃迦叶尊者",
@@ -1137,7 +1118,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["prajna","emptiness","no-abiding"],
     "relatedMethods": [],
-    "relatedPersons": ["sengzhao"],
+    "relatedPersons": ["seng-zhao"],
     "relatedBooks": ["jingangjing","weimojiejing","zhonglun", "shoulengyansanmeijing"]
   },
   {
@@ -1158,26 +1139,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["wuzhu-asanga"],
     "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
-  {
-    "id": "sengzhao",
-    "name": "僧肇",
-    "title": "罗什四大弟子之首 / 肇论作者",
-    "era": "后秦 (384-414)",
-    "lifeStory": "僧肇，京兆长安（今陕西西安）人。家贫，以佣书为业，遂博览经史，尤好老庄。后读旧译《维摩诘经》，欢喜顶受，始悟老庄未尽妙理，遂出家。闻鸠摩罗什至姑臧，往从之，为罗什四大弟子之首。随罗什入长安，助译经论。着《肇论》四篇——《物不迁论》《不真空论》《般若无知论》《涅槃无名论》——以中观般若之理，融通老庄玄学，阐明“即动而静”“即静而动”之旨，为中国佛教般若学之巅峰之作。其“天地与我同根，万物与我一体”之语，与禅宗“万法归一”之旨相通。",
-    "teachings": "僧肇之学，以中观般若为宗：物不迁者，即动而静；不真空者，即有而空；般若无知者，即知而无知；涅槃无名者，即名而无名。四论皆以“即”字为眼——即俗而真，即事而理，不离世间而证涅槃。此与禅宗“不离世间觉”之旨一脉相通。",
-    "quotes": [
-      "旋岚偃岳而常静，江河竞注而不流。 —《物不迁论》",
-      "天地与我同根，万物与我一体。 —《涅槃无名论》",
-      "般若无知，无所不知。 —《般若无知论》"
-],
-    "classics": [
-      "肇论"
-],
-    "relatedConcepts": ["emptiness","prajna","non-duality"],
-    "relatedMethods": [],
-    "relatedPersons": ["kumarajiva"],
-    "relatedBooks": ["weimojiejing", "zhaolun"]
-  },
+  
   {
     "id": "xuefeng-yicun",
     "name": "雪峰义存",
@@ -1335,7 +1297,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["emptiness","prajna","non-duality"],
     "relatedMethods": [],
-    "relatedPersons": ["kumarajiva","sengzhao"],
+    "relatedPersons": ["kumarajiva","seng-zhao"],
     "relatedBooks": ["zhonglun"]
   },
   {
@@ -1411,7 +1373,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["beyond-words","koan"],
     "relatedMethods": [],
-    "relatedPersons": ["chuyuan"],
+    "relatedPersons": ["shishuang-chuyuan"],
     "relatedBooks": ["chanlinbaoxun","dongshanyulu","changuancejin","huanwuxinyao"]
   },
   {
@@ -2392,28 +2354,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["linji","huangbo","huineng"],
     "relatedBooks": ["chanjia_guijian"]
   },
-  {
-    "id": "farong",
-    "name": "牛头法融",
-    "title": "牛头宗初祖",
-    "era": "隋唐",
-    "lifeStory": "牛头法融（594-657），润州延陵人。十九岁即博通经史，后阅《般若经》遂入茅山依三论宗灵法师出家。唐贞观年间，法融入牛头山幺栖寺，于北岩石室别坐禅定，百鸟补花之异，时人异之。相传四祖道访之，问曰：“百鸟补花作么生？”法融不能答。道信遂为说法要，付嘱大法，法融遂为四祖旁出法嗣，开牛头一宗。法融著《心铭》《绝观论》等，以“无心”为宗，融通般若中观与禅门心要，主张“心性不生，何须知见”，与东山法门相呼应而别开生面。牛头一宗传六代而止，然其“无心绝观”之教对后世禅宗影响深远。",
-    "teachings": "法融以“无心”为宗，倡“心性不生，何须知见”，主张本来无一法可得，不须造作熏修，但息分别，性自现前。其教融般若中观之空义与禅宗直指之旨，以“绝观忘守”为入道要门——不观不守，不修不证，任运自在。与达摩“理入”相通而更侧重般若无分别智，为牛头禅之特色。",
-    "quotes": [
-      "心性不生，何须知见。 —《心铭》",
-      "菩提本有，不须用守。烦恼本无，不须用除。 —《心铭》",
-      "一切莫顾，安心无处。无处安心，虚明自露。 —《心铭》",
-      "三世诸佛，皆乘此宗。此宗一毫末，沙界含容。 —《心铭》"
-],
-    "classics": [
-      "心铭",
-      "绝观论"
-],
-    "relatedConcepts": ["non-mind","wuxin-jueguan","dajibenyou","jingji-ziran"],
-    "relatedMethods": ["jueguan-wangshou"],
-    "relatedPersons": ["daoxin","huineng"],
-    "relatedBooks": ["xinming","jueguanlun"]
-  },
+  
   {
     "id": "zongze",
     "name": "长芦宗赣",
@@ -2871,24 +2812,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["huihong-juefan"],
     "relatedBooks": ["linjianhoulu"]
   },
-  {
-    "id": "baozhi",
-    "name": "宝志",
-    "title": "宝志禅师",
-    "era": "南朝 (418-514)",
-    "lifeStory": "宝志，又称宝志公、志公和尚，南朝梁代神异僧。金城人，少出家于道林寺，修习禅定。常跣足行于街巷，言行神异，预言多验。梁武帝深为敬信，迎入华林园。世传为观世音菩萨化身。其“剪刀裁衣、杖头挂帽”之风流放旷，为后世禅宗所传颂。\n\n其求道历程极为精诚刻苦，遍参诸方善知识，历经千锤百炼与机锋逼拶。于言下豁然大彻大悟，契入本具清净自性，桶底彻底脱落。开悟后受师印可，出世住山开堂说法，随机施设，不拘一格，接引四方参学纳子无数，盛化一方，法席巍然，成为禅宗法脉流布承前启后之关键尊宿。",
-    "teachings": "以神异方便示现，不立文字，直指人心。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
-    "quotes": [
-      "宝公之宝，不在外求。心即是宝，宝即是心。",
-      "心佛众生，三无差别；但离妄缘，即如如佛。",
-      "直指人心，见性成佛；不立文字，教外别传。"
-],
-    "classics": [],
-    "relatedConcepts": ["shenyi-fangbian"],
-    "relatedMethods": [],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
-  },
+  
   {
     "id": "wanhui",
     "name": "万回",
@@ -4565,7 +4489,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "无论是管理团队还是修身立命，先立道德心与公义心，以德服人，远胜于强权与威压。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅林宝训》",
     "relatedConcepts": ["tou-xin-wei-si"],
-    "relatedPersons": ["huanglong-huinan","chuyuan"],
+    "relatedPersons": ["huanglong-huinan","shishuang-chuyuan"],
     "relatedBooks": ["chanlinbaoxun"]
   },
   {
@@ -7469,7 +7393,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "修行不是增添什么，而是歇下一切造作。知见起处便是妄，观照立处便是病。但一切莫顾，安心无处，无处安心则虚明自露——不是你去见性，是性自己现前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
     "relatedConcepts": ["non-mind","dajibenyou","jingji-ziran"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["qifo","juelin","wenshu","xuemaicong","wuxinglun","poxianglun","wuxinlun","anxin","tanjing","mazu","baizhang","huangbo","dunwu","zhigong","xinwangming","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","yongjia","huanwuxinyao","huanwuyulu","xinming","huangbo_wanlinglu","zhaozhouyulu","jueguanlun"]
   },
   {
@@ -7485,7 +7409,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "不要去灭念头——你灭念头的那个心，本身就是念头。只须后念不生，前念自然成空。如虚云老和尚所说：“不怕念起，只怕觉迟。”念头起了不续，即是修行。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
     "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["qifo","juelin","wenshu","wuran","xuemaicong","wuxinglun","poxianglun","wuxinlun","xinxinming","anxin","zuishangcheng","tanjing","mazu","huangbo","dunwu","zhenxin","jingangjing","yuanjuejing","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","yongjia","yunmen","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","xinming","huangbo_wanlinglu","zhaozhouyulu"]
   },
   {
@@ -7501,7 +7425,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "信得菩提本有，方肯放下守取之心；信得烦恼本无，方肯放下断除之念。守与除，都是将菩提烦恼作二法看。彻见本源，则烦恼即是菩提，何须更除何须更守？ 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
     "relatedConcepts": ["wuxin-jueguan","buddha-nature","self-nature"],
-    "relatedPersons": ["farong","huineng"],
+    "relatedPersons": ["niutou-farong","huineng"],
     "relatedBooks": ["baizhang","chanlinbaoxun","weimojiejing","huanwuxinyao","huanwuyulu","chanjia_guijian","jueguanlun"]
   },
   {
@@ -7517,7 +7441,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "不要落在惺惺里（散乱），也不要落在寂寂里（昏沉）。惺中有寂，寂中有惺，如灯之明与静并存——灯明而不躁，静而不暗，即是明寂自然。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
     "relatedConcepts": ["wuxin-jueguan","samadhi"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["xinming","jueguanlun"]
   },
   {
@@ -7653,7 +7577,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["fa-jie-xing-ziran","wuxin-jueguan"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun","xinming"]
   },
   {
@@ -7671,7 +7595,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -7689,7 +7613,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","dajibenyou"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun","xinming"]
   },
   {
@@ -7707,7 +7631,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","wu-zhi-zhi-zhi"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -7723,7 +7647,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["kong-wei-daoben","jingji-ziran"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -7739,7 +7663,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","si-jian-zheng-jian"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   
@@ -9818,7 +9742,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
     "relatedConcepts": ["self-nature"],
-    "relatedPersons": ["baozhi"],
+    "relatedPersons": ["zhigong"],
     "relatedBooks": []
   },
   {
@@ -11694,7 +11618,7 @@ export const ZEN_METHODS: MethodItem[] = [
 ],
     "classicRef": "心铭",
     "relatedConcepts": ["wuxin-jueguan","dajibenyou","jingji-ziran"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["xinming","jueguanlun"]
   },
   {
@@ -13210,18 +13134,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["yunmen"],
     "relatedBooks": ["yunmen"]
   },
-  {
-    "id": "koan-59",
-    "question": "如何是佛法大意？",
-    "answer": "春来草自青。",
-    "context": "僧问云门文偃禅师：“如何是佛法大意？”师曰：“春来草自青。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "云门之“春来草自青”——春天到来，草自然青。佛法大意不在造作中——如春来草青，不假造作，自然现前。草不须努力变青——春至则青；心不须努力成佛——悟则成佛。此为禅宗“自然”之极致——道法自然，不假功用。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "云门文偃",
-    "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","self-nature"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
-  },
+  
   {
     "id": "koan-60",
     "question": "如何是西来意？",
@@ -13546,18 +13459,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["changsha-jingcen"],
     "relatedBooks": ["chanlinbaoxun"]
   },
-  {
-    "id": "koan-87",
-    "question": "如何是祖师西来意？",
-    "answer": "庭前柏树子。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“庭前柏树子。”僧曰：“和尚莫将境示人。”师曰：“我不将境示人。”僧曰：“如何是祖师西来意？”师曰：“庭前柏树子。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“庭前柏树子”——此为禅宗最著名公案之一。学人问西来意，赵州以眼前柏树答之——祖师西来意不在玄妙处，即此庭前柏树。僧人以为赵州“将境示人”——以境物答佛法，已落境执。赵州答“我不将境示人”——柏树非境，乃自性之显现。僧人再问，赵州再答“庭前柏树子”——不换答案，不容拟议。即此柏树，当下一念不生时，即是祖师西来意。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 无门关第三十七则",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
-  },
+  
   {
     "id": "koan-88",
     "question": "如何是祖师西来意？",
@@ -13834,18 +13736,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["xuedou-zhongxian"],
     "relatedBooks": ["linji"]
   },
-  {
-    "id": "koan-111",
-    "question": "如何是祖师西来意？",
-    "answer": "三十年后，大有人错举在。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“老僧今夜答汝，恐后人录去，作口实。”僧曰：“和尚慈悲，为学人答。”师曰：“三十年后，大有人错举在。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“三十年后大有人错举在”——三十年后，必有很多人错举此话。意谓：祖师西来意不可以言语说，若以言语说破，后人必执言语为西来意——错举此话。赵州不答西来意——非不慈悲，乃大慈悲：恐后人执言语为道，反失西来意。此为禅宗“不说破”之根本立场。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wenzi-zhang"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
+  
   {
     "id": "koan-112",
     "question": "如何是祖师西来意？",
@@ -13990,30 +13881,8 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["yangqi-fanghui"],
     "relatedBooks": ["chanlinbaoxun"]
   },
-  {
-    "id": "koan-124",
-    "question": "如何是佛？",
-    "answer": "殿里底。",
-    "context": "僧问赵州从谂禅师：“如何是佛？”师曰：“殿里底。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“殿里底”——殿里者，佛殿中之佛像。学人问佛，赵州指殿中之佛像答之——此非以佛像为真佛，乃破学人“向外求佛”之执。学人心中之佛在玄妙处，赵州以最平常之殿中佛像答之——佛不在玄妙处，即此殿中佛像。然不可执佛像为佛——佛像为相，佛在自性。赵州之意：你问佛，佛就在眼前——不须远求。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","buddha-nature","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
-  {
-    "id": "koan-125",
-    "question": "如何是佛？",
-    "answer": "麻三斤。",
-    "context": "僧问洞山良价禅师：“如何是佛？”师曰：“麻三斤。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "洞山之“麻三斤”——此为禅宗最著名公案之一。学人问佛，洞山以“麻三斤”答之——麻三斤与佛何干？正因无道理，方能截断学人一切思量。学人问佛，心中必有“佛”之概念——洞山以毫不相干之“麻三斤”答之，令学人于思量不及处转身。即此麻三斤，当下一念不生时，即是佛。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "洞山良价",
-    "source": "碧岩录第十八则 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","ordinary-mind"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["linji"]
-  },
+  
+  
   {
     "id": "koan-126",
     "question": "如何是佛？",
@@ -14278,18 +14147,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["linji"],
     "relatedBooks": ["linji"]
   },
-  {
-    "id": "koan-148",
-    "question": "如何是云门一字关？",
-    "answer": "一字。",
-    "context": "云门文偃禅师常以一字答学人问——僧问：“如何是云门一字关？”师曰：“一字。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "云门一字关——云门宗风以“一字”答学人之问，如“如何是佛”答“干屎橛”（虽非一字，然风格如是）。一字关者，以最少之言语截断最多之思量——一字之下，学人一切思量分别顿断。若于此一字下转身，即见自性。云门一字关为禅宗“不立文字”之极致——以最少之文字，显最多之义。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "云门文偃",
-    "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["beyond-words","koan","jifeng"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
-  },
+  
   {
     "id": "koan-149",
     "question": "如何是云门三句？",
@@ -14638,18 +14496,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["mazu","pang-yun"],
     "relatedBooks": ["chanlinbaoxun"]
   },
-  {
-    "id": "koan-178",
-    "question": "如何是祖师西来意？",
-    "answer": "砖瓦将来。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“砖瓦将来。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“砖瓦将来”——拿砖瓦来。学人问西来意，赵州以“拿砖瓦来”答之——西来意不在玄妙处，即此搬砖运瓦之平常。如庞蕴“运水及搬柴”——西来意在日用中，不在蒲团上。赵州以最平常之劳作示西来意——平常心是道，搬砖运瓦即是西来意之显现。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
+  
   {
     "id": "koan-179",
     "question": "如何是祖师西来意？",
@@ -14662,42 +14509,9 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["chanlinbaoxun","yunmen"]
   },
-  {
-    "id": "koan-180",
-    "question": "如何是祖师西来意？",
-    "answer": "一人吃饭一人饱。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“一人吃饭一人饱。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“一人吃饭一人饱”——一人吃饭一人饱，此乃最平常之理。赵州以最平常之理答西来意——西来意不在别处，即此最平常之“一人吃饭一人饱”。意谓：修行是各人自己的事——如吃饭，一人吃饭一人饱，他人不能代你吃，他人不能代你悟。祖师西来意须自参自悟——如吃饭须自吃自饱。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","self-nature"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
-  {
-    "id": "koan-181",
-    "question": "如何是祖师西来意？",
-    "answer": "三十年后，大有人错举在。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“三十年后，大有人错举在。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“三十年后大有人错举在”——三十年后，大有人错举此公案。赵州预记后人将错举此公案——执着于文字，以思量分别此公案，终不能见西来意。此为赵州对后世之预言：禅宗公案将被后人以思量分别错举——以文字解公案，终不能见道。赵州以此示学人：不可错举——不可以思量分别解公案，须自参自悟。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wenzi-zhang"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
-  {
-    "id": "koan-182",
-    "question": "如何是祖师西来意？",
-    "answer": "井中月。",
-    "context": "僧问曹山本寂禅师：“如何是祖师西来意？”师曰：“井中月。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "曹山之“井中月”——井中月者，月影也。月在天上，影在井中——月非井中物，然井中有月影。祖师西来意亦如是——西来意非言语可及，然言语中有西来意之影。如井中月——不可以手捞取，然可因影知有月。公案言语如井中月影——不可以言语为西来意，然可因言语知有西来意。曹山以“井中月”示学人：因指见月，不可以指为月。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "曹山本寂",
-    "source": "曹山语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","non-duality"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["chanlinbaoxun"]
-  },
+  
+  
+  
   {
     "id": "koan-183",
     "question": "如何是祖师西来意？",
@@ -14866,18 +14680,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedPersons": ["zhaozhou"],
     "relatedBooks": ["chanlinbaoxun","yunmen"]
   },
-  {
-    "id": "koan-197",
-    "question": "如何是祖师西来意？",
-    "answer": "老僧不在明白里。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“老僧不在明白里。” 学人带着多生无始之情识分别与知见葛藤前来参礼请益，期盼从祖师处求得玄妙至理。祖师深知若以文字道理相授，无异于以水救水、益增妄执；遂于电光石火之间施以雷霆机锋，打破学人之思维惯性，令其当下情识路绝，向上一窍霍然开启。",
-    "interpretation": "赵州之“老僧不在明白里”——老僧不在明白之中。学人问西来意，欲求明白——赵州以“不在明白里”答之——西来意不在明白中。明白者，分别心之明白——以分别心明白西来意，已落思量。赵州“不在明白里”——超越明白与不明白之二边——即此不在明白里之当下，便是西来意。如六祖“不思善不思恶正与么时”——不在明白（善）不明白（恶）里，即此当下便是本来面目。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
-    "master": "赵州从谂",
-    "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","wu-nian","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
-  },
+  
   {
     "id": "koan-198",
     "question": "如何是祖师西来意？",
@@ -15499,7 +15302,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "心铭",
     "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["xinming"]
   },
   {
@@ -15511,7 +15314,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "心铭",
     "relatedConcepts": ["dajibenyou","wuxin-jueguan"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["xinming"]
   },
   {
@@ -15535,7 +15338,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "心铭",
     "relatedConcepts": ["wuxin-jueguan","jingji-ziran"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["xinming"]
   },
   {
@@ -15703,7 +15506,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -15715,7 +15518,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun","xinming"]
   },
   {
@@ -15727,7 +15530,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","dajibenyou"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -15739,7 +15542,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["fa-jie-xing-ziran","kong-wei-daoben"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -15751,7 +15554,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["benwu-xijie","wuxin-jueguan"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun","xinming"]
   },
   {
@@ -15763,7 +15566,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["si-jian-zheng-jian","wuxin-jueguan"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -15775,7 +15578,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": ["wuxin-jueguan","self-nature"],
-    "relatedPersons": ["farong"],
+    "relatedPersons": ["niutou-farong"],
     "relatedBooks": ["jueguanlun"]
   },
   {
@@ -21887,12 +21690,7 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "楞严经讲地水火风空见识七大：性色真空，性空真色，清净本然，周遍法界，随众生心应所知量。七大皆如来藏妙真如性。",
     "relatedBooks": ["lengyanjing"]
   },
-  {
-    "id": "faq-1269",
-    "question": "什么是如来藏？",
-    "answer": "如来藏是众生本具的佛性宝藏：在缠名如来藏，出缠名净法身。一切染净诸法皆如来藏随缘显现。",
-    "relatedBooks": ["lengyanjing"]
-  },
+  
   {
     "id": "faq-1270",
     "question": "楞严经与禅宗什么关系？",
@@ -32231,19 +32029,9 @@ export const ZEN_FAQS: FAQItem[] = [
     "relatedBooks": ["mianxianyulu"]
   },
 
-  {
-    "id": "faq-2250",
-    "question": "密庵咸杰禅师的颂古九则是哪些？",
-    "answer": "密庵颂古九则：德山托钵、狗子无佛性、女子出定、赵州洗钵盂、临济三顿棒、百丈野狐、一口吸尽西江水、即心是佛、赵州勘婆。此九则皆为宗门著名公案，密庵以诗偈重显，文采与禅机并美。",
-    "relatedBooks": ["mianxianyulu"]
-  },
+  
 
-  {
-    "id": "faq-2251",
-    "question": "密庵咸杰禅师七处住持是哪些道场？",
-    "answer": "密庵一生七镇名山：一、衢州西乌巨山干明禅院；二、衢州大中祥符禅寺；三、建康府蒋山太平兴国禅寺；四、常州褒忠显报华藏禅寺；五、临安府径山兴圣万寿禅寺；六、临安府景德灵隐禅寺；七、明州太白名山天童景德禅寺。七处皆江南名刹，道满天下。",
-    "relatedBooks": ["mianxianyulu"]
-  },
+  
 
   {
     "id": "faq-2252",
@@ -32266,12 +32054,7 @@ export const ZEN_FAQS: FAQItem[] = [
     "relatedBooks": ["zibaibieji"]
   },
 
-  {
-    "id": "faq-2255",
-    "question": "紫柏真可禅师的妖书案是怎么回事？",
-    "answer": "万历三十一年（1603）发生妖书案，紫柏真可因牵连入狱，圆寂于狱中。钱谦益序称紫柏“拚幻有之躯、息清流之祸”——以慈愿戒力住世，舍身护法。妖书案是明代政治大案，紫柏因此殉道，诚明代佛教之金刚栋梁。",
-    "relatedBooks": ["zibaibieji"]
-  },
+  
 
   {
     "id": "faq-2256",
@@ -32637,48 +32420,18 @@ export const ZEN_FAQS: FAQItem[] = [
     "relatedBooks": ["zibaibieji"]
   },
 
-  {
-    "id": "faq-2308",
-    "question": "《人天眼目》是一部什么书？",
-    "answer": "《人天眼目》是南宋淳熙年间（1188年）晦岩智昭禅师编纂的禅宗纲宗集，共六卷。系统整理临济、云门、曹洞、沩仰、法眼五家核心教法，包括临济四料拣/三玄三要/四照用/四宾主、云门三句/一字关、曹洞五位君臣/功勋五位/三种渗漏、沩仰三种生/圆相、法眼华严六相义等纲宗语句，并汇集历代祖师颂古评唱。",
-    "relatedBooks": ["renyantianmu"]
-  },
+  
   {
     "id": "faq-2309",
     "question": "什么是五家纲宗？",
     "answer": "五家纲宗是禅宗五家（临济、云门、曹洞、沩仰、法眼）的核心教法与接引学人的标准化施设。临济有四料拣/三玄三要/四照用/四宾主，云门有三句/一字关，曹洞有五位君臣/功勋五位/三种渗漏，沩仰有三种生/圆相，法眼有华严六相义。各家纲宗各具特色，临济峻烈、云门孤峻、曹洞绵密、沩仰镜智、法眼圆融。",
     "relatedBooks": ["renyantianmu"]
   },
-  {
-    "id": "faq-2310",
-    "question": "什么是临济四料拣？",
-    "answer": "四料拣是临济义玄禅师接引学人的四种方式：夺人不夺境（破除对自我的执着）、夺境不夺人（破除对外境的执着）、人境俱夺（两者俱破）、人境俱不夺（任运自然）。以诗偈作答：煦日发生铺地锦/王令已行天下遍/并汾绝信独处一方/王登宝殿野老讴歌。",
-    "relatedBooks": ["renyantianmu", "linji"]
-  },
-  {
-    "id": "faq-2311",
-    "question": "什么是云门三句？",
-    "answer": "云门三句是云门文偃禅师的纲宗：函盖乾坤句（万法归一）、截断众流句（一言截断学人情识）、随波逐浪句（随缘应机）。僧问函盖乾坤句，师云：天覆地载，北俱卢洲。僧问截断众流句，师云：堆山积岳，一尽殽函。僧问随波逐浪句，师云：水流元在海，月落却归天。",
-    "relatedBooks": ["renyantianmu", "yunmen"]
-  },
-  {
-    "id": "faq-2312",
-    "question": "什么是曹洞五位君臣？",
-    "answer": "五位君臣是曹洞宗纲宗。洞山良价禅师立五位君臣：正中偏（理中事）、偏中正（事中理）、正中来（理事俱融）、兼中至（理事纵横）、兼中到（理事俱泯）。以君臣关系比喻理事关系，五位回互展现从理到事、从事到理的修行次第。",
-    "relatedBooks": ["renyantianmu", "dongshanyulu"]
-  },
-  {
-    "id": "faq-2313",
-    "question": "什么是沩仰三种生？",
-    "answer": "三种生是沩仰宗纲宗。沩山灵祐禅师立三种生：想生（妄想心生，念念相续如瀑流不息）、相生（境相生心，外境现前心生分别）、流注生（念念流注，生灭不已）。指出三种心识活动模式，为学人辨别妄想。",
-    "relatedBooks": ["renyantianmu"]
-  },
-  {
-    "id": "faq-2314",
-    "question": "什么是法眼华严六相义？",
-    "answer": "华严六相义是法眼宗纲宗。法眼文益禅师融合华严教理，立六相义：总相（一即一切）、别相（一切即一）、同相（万法同一性）、异相（万法各差别）、成相（万法因缘和合而成）、坏相（万法因缘离散而坏）。以教禅融合、理事双照为特色。",
-    "relatedBooks": ["renyantianmu"]
-  },
+  
+  
+  
+  
+  
   {
     "id": "faq-2315",
     "question": "什么是黄龙三关？",
@@ -32709,24 +32462,14 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "《人天眼目》的编纂者是南宋晦岩智昭禅师。自序云：游方时，所至尽诚，咨扣尊宿五宗纲要。其间件目，往往亦有所未知者。因慨念：既据师位，而纲宗语句尚不知其名，况旨诀乎？于是有意于纲要，几二十年矣。晚抵天台万年山寺，始偿其志。编次类列，分为五宗，名之曰人天眼目。",
     "relatedBooks": ["renyantianmu"]
   },
-  {
-    "id": "faq-2320",
-    "question": "《人天眼目》为什么叫这个名字？",
-    "answer": "'人天'指人天师表，'眼目'指指引迷津的正眼。此书即为禅门学人提供辨别五家宗风、掌握纲宗语句的指南。智昭禅师自序云：若其执拂柄据师位者，外是则无以辩验邪正也。有识博闻者，必垂印可。",
-    "relatedBooks": ["renyantianmu"]
-  },
+  
   {
     "id": "faq-2321",
     "question": "《人天眼目》对后世有什么影响？",
     "answer": "《人天眼目》是研究禅宗五家宗风差异的核心文献，也是理解'纲宗'——即禅门接引学人的标准化施设——的必读之作。后世禅师辨别五家宗风，多以此书为依据。",
     "relatedBooks": ["renyantianmu"]
   },
-  {
-    "id": "faq-2322",
-    "question": "《人天眼目》和《碧岩录》有什么区别？",
-    "answer": "《碧岩录》是圆悟克勤禅师对雪窦重显禅师一百则颂古的评唱，以颂古为中心。《人天眼目》是晦岩智昭禅师编纂的禅宗纲宗集，系统整理五家核心教法。《碧岩录》重在评唱，《人天眼目》重在纲宗。",
-    "relatedBooks": ["renyantianmu", "biyanlu"]
-  },
+  
   {
     "id": "faq-2323",
     "question": "五家宗风各有什么特点？",

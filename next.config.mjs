@@ -4,6 +4,10 @@ const nextConfig = {
     return [
       { source: '/classics/runingyulu', destination: '/classics/rujingyulu', permanent: true },
       { source: '/classics/runingxuyulu', destination: '/classics/rujingxuyulu', permanent: true },
+      { source: '/persons/baozhi', destination: '/persons/zhigong', permanent: true },
+      { source: '/persons/sengzhao', destination: '/persons/seng-zhao', permanent: true },
+      { source: '/persons/farong', destination: '/persons/niutou-farong', permanent: true },
+      { source: '/persons/chuyuan', destination: '/persons/shishuang-chuyuan', permanent: true },
       { source: '/persons/runing', destination: '/persons/rujing', permanent: true },
       { source: '/persons/fudaoshi', destination: '/persons/fudashi', permanent: true },
       { source: '/persons/furong-daookai', destination: '/persons/furong-daokai', permanent: true },
