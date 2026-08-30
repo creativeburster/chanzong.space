@@ -2,7 +2,8 @@
 
 > **作者**: 无著菩萨造·玄奘译 | **分类**: 唯识宗典
 
-🔗 经典连线：[唯识三十论颂](/classics/weishisanshilunsong)（唯识颂本） · [辨中边论](/classics/bianzhongbianlun)（三性相承） · [大乘起信论](/classics/dachengqixinlun)（赖耶缘起） · [大乘成业论](/classics/chengyelun)（业论同门）
+🔗 经典连线：[唯识三十论颂](/classics/weishisanshilunsong)（唯识颂本） · [辨中边论](/classics/bianzhongbianlun)（三性相承） · [解深密经](/classics/jieshenmijing)（赖耶经据） · [大乘起信论](/classics/dachengqixinlun)（赖耶缘起） · [大乘成业论](/classics/chengyelun)（业论同门）
+
 
 ## 💡 现代白话导读与核心旨趣
 
