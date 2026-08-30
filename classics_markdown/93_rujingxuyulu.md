@@ -2,7 +2,7 @@
 
 > **作者**: 宋·天童如净（嗣法义远编·道元记） | **分类**: 曹洞宗语录
 
-🔗 经典连线：[如净和尚语录](/classics/runingyulu)（六会全录） · [洞山良价禅师语录](/classics/dongshanyulu)（曹山拈提） · [抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山渊源） · [宝镜三昧歌](/classics/baojingsanmei)（五位纲要）
+🔗 经典连线：[如净和尚语录](/classics/rujingyulu)（六会全录） · [洞山良价禅师语录](/classics/dongshanyulu)（曹山拈提） · [抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山渊源） · [宝镜三昧歌](/classics/baojingsanmei)（五位纲要）
 
 ## 💡 现代白话导读与核心旨趣
 
@@ -43,7 +43,7 @@
 
 ## 📜 典籍原文
 
-*延伸互读：六会全录见[《如净和尚语录》](/classics/runingyulu)；文中"洞山大师道"及曹山诸拈提，渊源见[《洞山良价禅师语录》](/classics/dongshanyulu)与[《抚州曹山本寂禅师语录》](/classics/caoshanyulu)。*
+*延伸互读：六会全录见[《如净和尚语录》](/classics/rujingyulu)；文中"洞山大师道"及曹山诸拈提，渊源见[《洞山良价禅师语录》](/classics/dongshanyulu)与[《抚州曹山本寂禅师语录》](/classics/caoshanyulu)。*
 
 天童遗落录序
 

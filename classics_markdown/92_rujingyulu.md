@@ -2,7 +2,7 @@
 
 > **作者**: 宋·天童如净（门人文素等编集） | **分类**: 曹洞宗语录
 
-🔗 经典连线：[天童如净禅师续语录](/classics/runingxuyulu)（续录合璧） · [洞山良价禅师语录](/classics/dongshanyulu)（曹洞本源） · [抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山家风） · [人天眼目](/classics/renyantianmu)（宗风总览）
+🔗 经典连线：[天童如净禅师续语录](/classics/rujingxuyulu)（续录合璧） · [洞山良价禅师语录](/classics/dongshanyulu)（曹洞本源） · [抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山家风） · [人天眼目](/classics/renyantianmu)（宗风总览）
 
 ## 💡 现代白话导读与核心旨趣
 
@@ -44,7 +44,7 @@
 
 ## 📜 典籍原文
 
-*延伸互读：曹洞本宗源流见[《洞山良价禅师语录》](/classics/dongshanyulu)、[《抚州曹山本寂禅师语录》](/classics/caoshanyulu)与[《宝镜三昧歌》](/classics/baojingsanmei)；五家宗风比较另见[《人天眼目》](/classics/renyantianmu)。本集与[《天童如净禅师续语录》](/classics/runingxuyulu)合观为足本。*
+*延伸互读：曹洞本宗源流见[《洞山良价禅师语录》](/classics/dongshanyulu)、[《抚州曹山本寂禅师语录》](/classics/caoshanyulu)与[《宝镜三昧歌》](/classics/baojingsanmei)；五家宗风比较另见[《人天眼目》](/classics/renyantianmu)。本集与[《天童如净禅师续语录》](/classics/rujingxuyulu)合观为足本。*
 
 如净禅师语录序
 

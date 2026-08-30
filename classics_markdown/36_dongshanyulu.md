@@ -2,7 +2,7 @@
 
 > **作者**: 唐·洞山良价（门人郭凝之编集） | **分类**: 曹洞宗语录 | **出处**: CBETA《筠州洞山悟本禅师语录》No.1986B
 
-🔗 经典连线：[抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山唱和） · [宝镜三昧歌](/classics/baojingsanmei)（五位纲要） · [如净和尚语录](/classics/runingyulu)（洞上中兴） · [十牛图颂并序](/classics/shiniutu)（牧牛次第）
+🔗 经典连线：[抚州曹山本寂禅师语录](/classics/caoshanyulu)（曹山唱和） · [宝镜三昧歌](/classics/baojingsanmei)（五位纲要） · [如净和尚语录](/classics/rujingyulu)（洞上中兴） · [十牛图颂并序](/classics/shiniutu)（牧牛次第）
 
 ## 💡 现代白话导读与核心旨趣
 
