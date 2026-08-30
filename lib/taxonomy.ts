@@ -1138,7 +1138,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["prajna","emptiness","no-abiding"],
     "relatedMethods": [],
     "relatedPersons": ["sengzhao"],
-    "relatedBooks": ["jingangjing","weimojiejing","zhonglun"]
+    "relatedBooks": ["jingangjing","weimojiejing","zhonglun", "shoulengyansanmeijing"]
   },
   {
     "id": "xuanzang",
@@ -1155,7 +1155,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["八识规矩颂", "大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论", "成唯识论", "大般若经"],
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
-    "relatedPersons": [],
+    "relatedPersons": ["wuzhu-asanga"],
     "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
   {
@@ -2132,7 +2132,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["koan","self-nature"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["xiuxinjue","lengyanjing","changuancejin","huanwuyulu"]
+    "relatedBooks": ["xiuxinjue","lengyanjing","changuancejin","huanwuyulu", "huanzhu-anqinggui"]
   },
   {
     "id": "gaofeng-yuanmiao",
@@ -3763,7 +3763,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论"],
     "relatedConcepts": ["weishi", "zhongguan", "zhongdao", "tathagatagarbha"],
     "relatedMethods": [],
-    "relatedPersons": ["xuanzang"],
+    "relatedPersons": ["xuanzang", "wuzhu-asanga"],
     "relatedBooks": ["baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
   {
@@ -3871,6 +3871,24 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": ["ramana", "datateleya"],
     "relatedBooks": ["ashitawakela"]
+  }
+,
+  {
+    "id": "wuzhu-asanga",
+    "name": "无著菩萨",
+    "title": "瑜伽行派开创者 / 唯识立宗论师",
+    "era": "北印度犍陀罗（约4世纪）",
+    "lifeStory": "无著（梵名 Asaṅga，意译无著），古印度大乘瑜伽行派的实际开创者，世亲菩萨之兄，兄弟并称”两圣”。生于北印度犍陀罗国布路沙富罗婆罗门家庭，先于说一切有部化地部出家，修小乘空观久不能入，疑大乘非佛说。后受中印度宾头罗罗汉点拨，改修大乘空观，得入初地（说法忍）。相传上兜率天从弥勒菩萨受《瑜伽师地论》《大乘庄严经论》《辩中边论》等，人间宣扬，是为”弥勒五论”之由来。又夜升兜率、日间下人间为众说法，众问”弥勒所说何似”，答曰”与人间所说无异”。著《摄大乘论》《显扬圣教论》《大乘阿毘达磨集论》《六门教授习定论》等，并造诸论释，奠定”万法唯识、转识成智”的完整体系。弟世亲初谤大乘，无著遣弟子报病危诱其来见，闻《十地经》回心入大乘，兄弟合力弘传，瑜伽行派遂与中观并峙，后经陈那、护法、戒贤，由玄奘大师传入中国，成为法相唯识宗的源头。",
+    "teachings": "无著的宗纲是”所知依”：一切法以阿赖耶识为依而起，故修道即是转所依——转染污的阿赖耶识为清净的无垢识。他以十种殊胜语摄尽大乘（所知依、所知相、入所知相、因果、修差别、三学、果断、果智），次第即道阶；以三相判一切法——于依他起上离遍计所执即证圆成实；以六度十地为行阶，以无住涅槃为果——不舍生死而不染、不住涅槃而恒度生。其学重论议与禅观并进，既立因明量论之基，又传五停心观与念佛三昧之实修。",
+    "quotes": [
+      "无始时来界，一切法等依，由此有诸趣，及涅槃证得。",
+      "由摄藏诸法，一切种子识，故名阿赖耶，胜者我开示。"
+    ],
+    "classics": ["摄大乘论本", "大乘阿毗达磨集论"],
+    "relatedConcepts": ["weishi", "sanxing-wuxing", "tathagatagarbha", "zhongdao"],
+    "relatedMethods": [],
+    "relatedPersons": ["shiqin", "xuanzang"],
+    "relatedBooks": ["shedachenglunben"]
   }
 ];
 
@@ -11340,7 +11358,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "id": "xi-zheng-fa",
     "title": "息诤法门",
     "summary": "禅宗破除争端、契入平等法界之法门。一切诤论与分别皆从我执、法执而生。了知万法本自空寂，人我一体无二，自然言语道断、诤论永息，证入离诸戏论之无诤三昧。此法门直指人心、见性成佛，不历渐次阶级，行者于日常行住坐卧四威仪中体悟当下一念不生，体露真常，破除一切妄想情执，显发本自具足之清净自性。",
-    "origin": "本法门名目实出自敦煌遗书《息诤论》（旧题菩提达摩禅师著，方广锠整理收入《藏外佛教文献》，本站已将讹题"息许论"勘正收录）："学人但能息诤，定得理长"；"真如渺寞，岂在诤论之中"。《金刚经》：“佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。”《肇论》：“言语道断，心行处灭，故知无诤。”六祖云：“诤是胜负心，与道相违背。”历代禅门尊宿代代相传，皆以本分事接人，以大机大用破除学人知见葛藤，为宗门修心了办生死之根本指引。",
+    "origin": "本法门名目实出自敦煌遗书《息诤论》（旧题菩提达摩禅师著，方广锠整理收入《藏外佛教文献》，本站已将讹题“息许论”勘正收录）：“学人但能息诤，定得理长”；“真如渺寞，岂在诤论之中”。《金刚经》：“佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。”《肇论》：“言语道断，心行处灭，故知无诤。”六祖云：“诤是胜负心，与道相违背。”历代禅门尊宿代代相传，皆以本分事接人，以大机大用破除学人知见葛藤，为宗门修心了办生死之根本指引。",
     "steps": [
       "第一步·照破争端：察觉争执之根源在于执着自见为是、执他见为非。",
       "第二步·体认平等：了知万法缘起性空，真理非言辩所能尽，众生同具一性。",
@@ -35031,5 +35049,54 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "《自我解脱直指心性深法》的入手处是什么？",
     "answer": "入手处只有一句：莫向外寻，唯当回光返照，直观自心。先认取：当下这个无形无相、却能知能觉的灵明，即是本来清净法身佛；再相信：它的空寂体是法身、光明相是报身、随缘用是化身，三身五智当下具足，无欠无余。然后于念头上练习不迎不拒——如水放澄清，波浪自息；于日用中保持觉照——穿衣吃饭不离此觉。论中说得直白：心若觅心，如眼自见其眼，终不可得；放下万缘的当下，赤裸裸的觉照即是本面。",
     "relatedBooks": ["ziwojietuo"]
+  }
+,
+  {
+    "id": "faq-2622",
+    "question": "《解深密经》和《楞严经》是什么关系？",
+    "answer": "两部是完全不同的经典。《解深密经》（玄奘译）是唯识宗所依的经典，讲三相、三无性、阿赖耶识与唯识止观；《大佛顶首楞严经》（般剌密帝译）讲二十五圆通与楞严咒。另有一部鸠摩罗什译的《佛说首楞严三昧经》也常被混淆——它是讲三昧体用的早期大乘经。三部经名相近而体系各异。",
+    "relatedBooks": ["jiehensemijing"]
+  },
+  {
+    "id": "faq-2623",
+    "question": "\"我说识所缘，唯识所现故\"是什么意思？",
+    "answer": "这是《解深密经》分别瑜伽品的名句：心识所缘取的对象，唯是心识自己变现的影像。经中以镜子作喻：如清净镜面以质为缘还见本质，定心所现的境界与这颗心\"无有异\"，愚夫却作心外有境的颠倒解。这九个字是唯识止观的总纲，也是\"万法唯识\"最直接的经证。",
+    "relatedBooks": ["jiehensemijing"]
+  },
+  {
+    "id": "faq-2624",
+    "question": "《摄大乘论》的\"十种殊胜\"是哪十种？",
+    "answer": "无著菩萨以十种殊胜殊胜语总摄大乘：所知依（阿赖耶识）、所知相（三相）、入所知相（唯识性）、彼入因果（六度）、彼因果修差别（十地）、增上戒、增上心、增上慧三学、彼果断（无住涅槃）、彼果智（三种佛身）。十处次第即修道路线图，声闻乘经中不见此说，唯大乘处处宣说。",
+    "relatedBooks": ["shedachenglunben"]
+  },
+  {
+    "id": "faq-2625",
+    "question": "为什么说阿赖耶识又叫阿陀那识、又叫心？",
+    "answer": "同一底层识，三名各显一义：约\"摄藏一切种子\"名阿赖耶（藏识）；约\"执受有色根身、令不失坏\"名阿陀那（执持识）；约\"集起\"名心。《解深密经》说阿陀那识\"甚深细，一切种子如瀑流\"，佛不对凡愚开演——怕他们把执持识错执为\"我\"。",
+    "relatedBooks": ["shedachenglunben"]
+  },
+  {
+    "id": "faq-2626",
+    "question": "《幻住庵清规》与《敕修百丈清规》有何不同？",
+    "answer": "体量与定位完全不同：《敕修百丈清规》是元代奉敕编定、颁行天下丛林的\"国家大宪\"，九章统摄数百人寺院的一切仪轨；《幻住庵清规》是中峰明本为数十人庵居小众自订的\"日用须知\"，十门只摄日常起居。更深的差别在立场：明本自言\"不敢效丛林礼法\"，且声明真参实究者视此编为疣赘亦可——规矩为道设，心存乎道则不待礼而自中。",
+    "relatedBooks": ["huanzhu-anqinggui"]
+  },
+  {
+    "id": "faq-2627",
+    "question": "\"心存乎道，不待礼而自中\"如何理解？",
+    "answer": "中峰明本《幻住庵清规》自序的立论核心：心真正安住于道中，不必等礼仪来规范就自然合度，不必靠法则来约束就自然端正——那还要丛林规矩做什么？但紧接着他自答：正因人心不轨已久，日用又不可破规裂矩，所以才立此编。破与立两句话合看，才是清规的完整哲学：规矩不是道，却是失道者的扶手。",
+    "relatedBooks": ["huanzhu-anqinggui"]
+  },
+  {
+    "id": "faq-2628",
+    "question": "樵隐悟逸\"天晴普请拽木\"答的是什么？",
+    "answer": "有僧问雪峰一系的樵隐悟逸：如何是第一句？（雪峰曾良久不答，长生禅师评\"这个是第二句\"，再问则喊\"苍天苍天\"。）樵隐断言两大老都未知第一句，自家只答\"天晴普请拽木\"——天晴了，全寺一起出工搬木头。第一句不在玄妙处，就在搬柴运水的日常里，这与临济\"佛法无用功处，只是平常无事\"同一消息。",
+    "relatedBooks": ["qiaoyinyulu"]
+  },
+  {
+    "id": "faq-2629",
+    "question": "\"年年此日一盆汤，至竟洗尘难洗骨\"说的什么？",
+    "answer": "樵隐悟逸浴佛节上堂语：每年四月初八给佛像洗浴的汤，终究只能洗去尘土、洗不了骨——外在的仪式年年重复，根本的无明生死却不是一盆汤能洗掉的。节令佛事被他一转成逼拶的话头：仪式的意义不在仪式本身，而在提醒你参\"能洗的是什么\"。",
+    "relatedBooks": ["qiaoyinyulu"]
   }
 ];

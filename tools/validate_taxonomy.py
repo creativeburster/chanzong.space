@@ -13,6 +13,15 @@ from collections import Counter
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 FAILS = []
+
+# 0) 真实解析哨兵：Node 直接 import taxonomy.ts（2026-08-30 ASCII 引号事故后加装——
+#    成对插入值内引号可骗过偶数引号检查，唯有真实解析万无一失）
+import subprocess
+_r = subprocess.run(['node', '-e',
+    "import('./lib/taxonomy.ts').then(m=>console.log('PARSING_OK', Object.keys(m).length))"],
+    capture_output=True, text=True, timeout=60)
+_parsing_ok = ('PARSING_OK' in _r.stdout)
+
 def check(name, ok, detail=''):
     print(('✓' if ok else '✗'), name, detail)
     if not ok:
@@ -21,6 +30,7 @@ def check(name, ok, detail=''):
 d = open('lib/taxonomy.ts', encoding='utf-8').read()
 
 # 1) 长度哨兵（防截断：历史损坏时骤降）
+check('Node 真实导入解析', _parsing_ok, _r.stderr.strip()[:120] if not _parsing_ok else '')
 check('长度哨兵 >1MB', len(d) > 1_000_000, f'({len(d)} 字符)')
 
 # 2) 结构完整：五段 export + interface 头
