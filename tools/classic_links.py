@@ -109,6 +109,9 @@ MAP = {
  'chengyelun': [('weishisanshilunsong','唯识颂本'), ('baifamingmenlun','百法名目'), ('zhonglun','观业对照'), ('dachengqixinlun','业感所依')],
  'bianzhongbianlun': [('weishisanshilunsong','唯识颂本'), ('baifamingmenlun','百法名目'), ('chengyelun','业论姊妹'), ('dachengqixinlun','中道相承')],
  'qiaoyinyulu': [('xuefengyulu','再住雪峰道场'), ('linji','临济家法'), ('gaofengyulu','元代同调')],
+ 'shoulengyansanmeijing': [('jingangjing','无住同旨'), ('yuanjuejing','三昧经群'), ('wenshu','文殊主法')],
+ 'shedachenglunben': [('weishisanshilunsong','唯识颂本'), ('bianzhongbianlun','三性相承'), ('dachengqixinlun','赖耶缘起'), ('chengyelun','业论同门')],
+ 'huanzhu-anqinggui': [('gaofengyulu','高峰法嗣'), ('chanyuanqinggui','清规承前'), ('chixiu-baizhang-qinggui','清规对照'), ('changuancejin','警策同参')],
 }
 
 def main():

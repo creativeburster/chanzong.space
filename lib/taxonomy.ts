@@ -1236,7 +1236,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "默照铭",
       "宏智正觉禅师广录"
 ],
-    "relatedConcepts": ["samadhi","self-nature"],
+    "relatedConcepts": ["samadhi","self-nature", "mozhao-chan-concept"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dahui-zonggao"],
     "relatedBooks": ["changuancejin","fayanyulu"]
