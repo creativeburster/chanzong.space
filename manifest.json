@@ -4,7 +4,7 @@
     "id": "qifo",
     "title": "七佛传法偈",
     "author": "迦叶尊者等",
-    "category": "佛祖授记",
+    "category": "祖师铭颂",
     "summary": "过去七佛传法偈颂，展现从释迦牟尼佛至迦叶尊者的正法眼藏印心偈言。",
     "word_count": 1293,
     "filename": "01_qifo.md"
@@ -14,7 +14,7 @@
     "id": "juelin",
     "title": "觉林菩萨偈",
     "author": "觉林菩萨",
-    "category": "华严精义",
+    "category": "祖师铭颂",
     "summary": "“若人欲了知，三世一切佛，应观法界性，一切唯心造。”禅宗最核心的心造万法偈颂。",
     "word_count": 1850,
     "filename": "02_juelin.md"
@@ -24,7 +24,7 @@
     "id": "wenshu",
     "title": "文殊师利所说摩诃般若波罗蜜经",
     "author": "文殊菩萨",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "阐明一行三昧与摩诃般若无相之理，为达摩与六祖所依凭的核心经文。",
     "word_count": 9254,
     "filename": "03_wenshu.md"
@@ -34,7 +34,7 @@
     "id": "wuran",
     "title": "无染觉性直观自行解脱之道",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "莲花生大士开示直观本觉、无染自解脱之大圆满与禅宗同质心法。",
     "word_count": 6223,
     "filename": "04_wuran.md"
@@ -44,7 +44,7 @@
     "id": "zhangzhi",
     "title": "杖指教授",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "莲花生大士以杖直指老人心间指示觉醒心，令其直下见性、彻断疑惑之极简大圆满心髓。",
     "word_count": 2078,
     "filename": "05_zhangzhi.md"
@@ -54,7 +54,7 @@
     "id": "xuemaicong",
     "title": "菩提达摩大师血脉论",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "达摩祖师直指“若见性即是佛，不见性即是众生”。立心即佛、离心无佛之教外别传旨趣。",
     "word_count": 5106,
     "filename": "06_xuemaicong.md"
@@ -64,7 +64,7 @@
     "id": "wuxinglun",
     "title": "菩提达摩大师悟性论",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "论述寂照不二、无念无妄与大圆镜智之悟性极旨。",
     "word_count": 4404,
     "filename": "07_wuxinglun.md"
@@ -74,7 +74,7 @@
     "id": "poxianglun",
     "title": "菩提达摩大师破相论",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "破除外在名相形式执着，将六度、持戒、建寺、诵经归结于自心观照。",
     "word_count": 4970,
     "filename": "08_poxianglun.md"
@@ -84,7 +84,7 @@
     "id": "wuxinlun",
     "title": "菩提达摩大师无心论",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "直探“无心”之真谛，无妄心者即名无心，非同木石。",
     "word_count": 1999,
     "filename": "09_wuxinlun.md"
@@ -94,7 +94,7 @@
     "id": "xixulun",
     "title": "菩提达摩大师息诤论",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "阐明息灭妄想狂心、契入无生法忍之顿悟修行。",
     "word_count": 2233,
     "filename": "10_xixulun.md"
@@ -104,7 +104,7 @@
     "id": "sixingguan",
     "title": "菩提达摩大师入道四行观",
     "author": "菩提达摩",
-    "category": "达摩四论",
+    "category": "达摩论典",
     "summary": "报冤行、随缘行、无所求行、称法行，理入与行入并重。",
     "word_count": 1210,
     "filename": "11_sixingguan.md"
@@ -114,7 +114,7 @@
     "id": "xinxinming",
     "title": "信心铭",
     "author": "三祖僧璨",
-    "category": "祖师铭颂",
+    "category": "宗门心法",
     "summary": "“至道无难，唯嫌挑选。但莫憎爱，洞然明白。”禅宗不二法门第一铭文。",
     "word_count": 1434,
     "filename": "12_xinxinming.md"
@@ -124,7 +124,7 @@
     "id": "fangcunlun",
     "title": "方寸论",
     "author": "禅宗古德",
-    "category": "祖师铭颂",
+    "category": "宗门心法",
     "summary": "直论方寸本心之清净寂照。",
     "word_count": 898,
     "filename": "13_fangcunlun.md"
@@ -134,7 +134,7 @@
     "id": "anxin",
     "title": "入道安心要方便法门",
     "author": "四祖道信",
-    "category": "祖师心法",
+    "category": "宗门心法",
     "summary": "依《楞伽经》诸佛心第一，依《文殊说般若经》一行三昧。",
     "word_count": 4385,
     "filename": "14_anxin.md"
@@ -144,7 +144,7 @@
     "id": "zuishangcheng",
     "title": "最上乘论",
     "author": "五祖弘忍",
-    "category": "祖师心法",
+    "category": "宗门心法",
     "summary": "“守本真心”为成佛第一要务，自心本来清净。",
     "word_count": 3859,
     "filename": "15_zuishangcheng.md"
@@ -154,7 +154,7 @@
     "id": "tanjing",
     "title": "六祖坛经",
     "author": "六祖惠能",
-    "category": "宗门至宝",
+    "category": "宗门心法",
     "summary": "禅宗最具代表性核心经典。自性顿悟、定慧等持、无念无相无住。",
     "word_count": 20747,
     "filename": "16_tanjing.md"
@@ -174,7 +174,7 @@
     "id": "mazu",
     "title": "马祖道一禅师语录",
     "author": "马祖道一",
-    "category": "江左洪州",
+    "category": "禅师语录",
     "summary": "“即心即佛”、“平常心是道”、“非心非佛”，马祖道一开创洪州宗，座下法嗣百三十九人，临济沩仰皆出其门。本录记载其一生开示与机缘语录。",
     "word_count": 5680,
     "filename": "18_mazu.md"
@@ -184,7 +184,7 @@
     "id": "baizhang",
     "title": "百丈怀海禅师语录",
     "author": "百丈怀海",
-    "category": "清规祖师",
+    "category": "禅师语录",
     "summary": "立禅门清规，“一日不作，一日不食”，开创丛林制度。",
     "word_count": 3514,
     "filename": "19_baizhang.md"
@@ -194,7 +194,7 @@
     "id": "huangbo",
     "title": "黄檗山断际禅师传心法要",
     "author": "黄檗希运",
-    "category": "传心要门",
+    "category": "禅师语录",
     "summary": "诸佛与一切众生唯是一心，更无别法。裴休相国记录集结。",
     "word_count": 4078,
     "filename": "20_huangbo.md"
@@ -204,7 +204,7 @@
     "id": "xiuxinjue",
     "title": "高丽国普照禅师修心诀",
     "author": "普照知呐",
-    "category": "海东禅法",
+    "category": "禅修指南",
     "summary": "海东禅宗巨擘普照知呐禅师论顿悟渐修、定慧双修之切要开示。",
     "word_count": 1501,
     "filename": "21_xiuxinjue.md"
@@ -214,7 +214,7 @@
     "id": "linji",
     "title": "镇州临济慧照禅师语录",
     "author": "临济义玄",
-    "category": "临济棒喝",
+    "category": "禅师语录",
     "summary": "临济宗开山祖师，棒喝交驰，“赤肉团上有一无位真人”。",
     "word_count": 1478,
     "filename": "22_linji.md"
@@ -224,7 +224,7 @@
     "id": "dunwu",
     "title": "顿悟入道要门论",
     "author": "大珠慧海",
-    "category": "顿悟捷径",
+    "category": "宗门心法",
     "summary": "“顿者，顿除妄念；悟者，悟无所得。”解禅门切要问答。",
     "word_count": 1472,
     "filename": "23_dunwu.md"
@@ -234,7 +234,7 @@
     "id": "zhenxin",
     "title": "高丽国普照禅师真心直说",
     "author": "普照知呐",
-    "category": "海东禅法",
+    "category": "禅修指南",
     "summary": "全套 15 章直论真心正信、真心名体、真心所往，海东最著名禅修法要。",
     "word_count": 1633,
     "filename": "24_zhenxin.md"
@@ -244,7 +244,7 @@
     "id": "zhigong",
     "title": "宝志公禅师颂偈诗",
     "author": "宝志公",
-    "category": "古德颂偈",
+    "category": "祖师铭颂",
     "summary": "梁代宝志公大士《大乘赞》《十二时颂》《万空歌》顿悟警世诗偈。",
     "word_count": 1914,
     "filename": "25_zhigong.md"
@@ -254,7 +254,7 @@
     "id": "xinwangming",
     "title": "傅大士心王铭",
     "author": "傅大士",
-    "category": "古德颂偈",
+    "category": "祖师铭颂",
     "summary": "“观心空王，玄妙难测。”傅大士直指自性心王顿悟铭文。",
     "word_count": 1035,
     "filename": "26_xinwangming.md"
@@ -264,7 +264,7 @@
     "id": "shenhui",
     "title": "荷泽大师显宗记",
     "author": "荷泽神会",
-    "category": "南宗法脉",
+    "category": "宗门心法",
     "summary": "荷泽神会大师定曹溪南宗顿悟正统之切要铭记。",
     "word_count": 1153,
     "filename": "27_shenhui.md"
@@ -274,7 +274,7 @@
     "id": "jingangjing",
     "title": "金刚般若波罗蜜经",
     "author": "鸠摩罗什 译",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "禅宗印心第一圣经。离我相人相众生相寿者相，应无所住而生其心，凡所有相皆是虚妄。",
     "word_count": 6161,
     "filename": "28_jingangjing.md"
@@ -284,7 +284,7 @@
     "id": "xinjing",
     "title": "般若波罗蜜多心经",
     "author": "玄奘 译",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "全大藏经般若核心精华。照见五蕴皆空，度一切苦厄，色不异空空不异色，心无挂碍远离颠倒梦想。",
     "word_count": 1189,
     "filename": "29_xinjing.md"
@@ -294,7 +294,7 @@
     "id": "yuanjuejing",
     "title": "大方广圆觉修多罗了义经",
     "author": "佛陀多罗 译",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "禅宗顿悟见性第一了义指南。知幻即离不作方便，离幻即觉亦无渐次。十二大菩萨请问圆觉清净妙心。",
     "word_count": 11032,
     "filename": "30_yuanjuejing.md"
@@ -304,7 +304,7 @@
     "id": "chanlinbaoxun",
     "title": "禅林宝训 (全四卷)",
     "author": "大慧宗杲 · 竹庵士珪 辑",
-    "category": "禅门警策",
+    "category": "护教文集",
     "summary": "宋代至今禅门丛林弟子必读的道德修持与住持指南。汇聚黄龙慧南、杨岐方会、慈明楚圆、灵源惟清、死心悟新等数十位大宗师警策法语。",
     "word_count": 34992,
     "filename": "31_chanlinbaoxun.md"
@@ -314,7 +314,7 @@
     "id": "lengyanjing",
     "title": "大佛顶首楞严经 (全十卷)",
     "author": "般刺密帝 译 / 房融 笔受",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "开悟的楞严至尊神典。七处征心破除妄识，八还辨见显显湛然见性，观音耳根圆通反闻自性，五十阴魔辟除一切邪见魔障。",
     "word_count": 201084,
     "filename": "32_lengyanjing.md",
@@ -326,7 +326,7 @@
     "id": "weimojiejing",
     "title": "维摩诘所说经 (全十四品)",
     "author": "鸠摩罗什 译",
-    "category": "般若经群",
+    "category": "印心经藏",
     "summary": "大乘居士禅顿悟第一极旨圣典。心净则佛土净，维摩长者弹叱小乘声闻，天女散花破除执着，维摩一默如雷震直入不二法门。",
     "word_count": 108905,
     "filename": "33_weimojiejing.md",
@@ -347,7 +347,7 @@
     "id": "baojingsanmei",
     "title": "宝镜三昧歌",
     "author": "唐·洞山良价",
-    "category": "曹洞宗典",
+    "category": "祖师铭颂",
     "summary": "曹洞宗根本经典。洞山良价以四言九十四句阐明偏正回互之旨，以宝镜喻心性，以形影喻体用，以重离六爻演五位说，以主中主收束全篇。全篇三百七十六字，集曹洞宗纲宗之大成。",
     "word_count": 1629,
     "filename": "35_baojingsanmei.md"
@@ -357,7 +357,7 @@
     "id": "dongshanyulu",
     "title": "洞山良价禅师语录",
     "author": "唐·洞山良价（门人郭凝之编集）",
-    "category": "曹洞宗语录",
+    "category": "禅师语录",
     "summary": "曹洞宗开山祖师洞山良价的言行录。记载其行脚参学、无情说法悟道、过水睹影证道、五位颂立宗、三路接人、三种渗漏等核心内容，展现曹洞宗偏正回互、绵密细腻的宗风。",
     "word_count": 9415,
     "filename": "36_dongshanyulu.md"
@@ -367,7 +367,7 @@
     "id": "yongjia",
     "title": "永嘉禅宗集",
     "author": "唐·永嘉玄觉",
-    "category": "禅宗论著",
+    "category": "宗门心法",
     "summary": "永嘉玄觉大师所著，融合天台止观与禅宗心法的系统论著。全书十章，从皈敬三宝到观心十门，系统阐述从发心、持戒到正修止观、妙契元源的完整修行路径，为教禅一致的典范之作。",
     "word_count": 13709,
     "filename": "37_yongjia.md"
@@ -377,7 +377,7 @@
     "id": "yunmen",
     "title": "云门匡真禅师广录",
     "author": "五代·云门文偃（门人守坚集）",
-    "category": "云门宗语录",
+    "category": "禅师语录",
     "summary": "云门宗开山祖师文偃的言行录。以对机三百二十则为主体，辅以室中语要、垂示代语、勘辨、偈颂、行录、遗诫等。云门三句（函盖乾坤、截断众流、随波逐浪）为其纲宗，机锋险绝，一句中具三句，一言才举，千差同辙。",
     "word_count": 5051,
     "filename": "38_yunmen.md"
@@ -397,7 +397,7 @@
     "id": "wumenguan",
     "title": "禅宗无门关",
     "author": "宋·无门慧开",
-    "category": "公案集",
+    "category": "公案评唱",
     "summary": "宋代禅宗最著名公案集。无门慧开精选四十八则公案，每则附评唱与颂古。以'无门'为法门，以'无字'为话头，逼拶学人当下透脱。与《碧岩录》并称禅宗双璧，风格更简练峻烈。",
     "word_count": 8205,
     "filename": "40_wumenguan.md"
@@ -407,7 +407,7 @@
     "id": "changuancejin",
     "title": "禅关策进",
     "author": "明·袾宏（云栖莲池大师）",
-    "category": "禅修指导",
+    "category": "禅修指南",
     "summary": "明代云栖莲池大师辑录的禅修策励文集。汇集诸祖法语、苦功事迹与经论引证，专为指导修行人看话头、起疑情、做工夫而编。以古德实参苦功为榜样，激励发决定志、以悟为则、不悟不休。",
     "word_count": 5870,
     "filename": "41_changuancejin.md"
@@ -417,7 +417,7 @@
     "id": "dachengqixinlun",
     "title": "大乘起信论",
     "author": "马鸣菩萨 造 / 唐·实叉难陀 译",
-    "category": "大乘论典",
+    "category": "论释义理",
     "summary": "大乘佛教核心论典。以一心二门三大为框架，系统阐述真如与生灭互熏机理，开示从初发心到证悟的修行阶次。禅宗明心见性之理论基础，真如内熏说为众生本具佛性提供依据。",
     "word_count": 3960,
     "filename": "42_dachengqixinlun.md"
@@ -427,7 +427,7 @@
     "id": "huanwuxinyao",
     "title": "佛果圜悟真觉禅师心要",
     "author": "宋·圜悟克勤禅师",
-    "category": "禅师法语",
+    "category": "禅师语录",
     "summary": "北宋临济宗杨岐派宗师圜悟克勤所撰示众法语集，由嗣法弟子子文编集。分卷上卷下，收录八十余篇开示法语，直指人心见性成佛，痛切令人当下契悟。圜悟承五祖法演宗风，以金刚圈栗棘蓬接人，强调透顶透底截断笼罗。书中广引赵州德山临济云门等古德公案以为印证，是研究宋代禅宗思想的重要文献。",
     "word_count": 47781,
     "filename": "43_huanwuxinyao.md"
@@ -467,7 +467,7 @@
     "id": "xinming",
     "title": "心铭",
     "author": "唐·牛头法融",
-    "category": "祖师铭颂",
+    "category": "宗门心法",
     "summary": "唐代牛头法融禅师所撰四言铭文，共一百九十六句。以“心性不生”开篇，层层破遣，从“一切莫作”到“绝观忘守”，从“心外无境”到“无心顺物”，最终归于“智者方知，非言诠悟”。法融为四祖道信旁出弟子，开牛头宗一脉，其思想以空寂无生为宗，深受般若中观影响。本铭与三祖僧璨《信心铭》遥相呼应，堪称牛头禅思想之精粹。",
     "word_count": 1749,
     "filename": "47_xinming.md"
@@ -487,7 +487,7 @@
     "id": "huangbo_wanlinglu",
     "title": "黄檗断际禅师宛陵录",
     "author": "黄檗希运",
-    "category": "传心要门",
+    "category": "禅师语录",
     "summary": "即心是佛无心是道，裴休问黄檗禅师开示记录。",
     "word_count": 5859,
     "filename": "49_huangbo_wanlinglu.md"
@@ -497,7 +497,7 @@
     "id": "zhaozhouyulu",
     "title": "赵州真际禅师语录",
     "author": "赵州从谂",
-    "category": "唐五代语录",
+    "category": "禅师语录",
     "summary": "赵州从谂禅师语录，参学门人文远记录。以平常心是道为宗，以本分事接人。庭前柏树子、狗子无佛性、吃茶去、洗钵去等公案流传千古，为后世看话禅之源头。",
     "word_count": 20645,
     "filename": "50_zhaozhouyulu.md"
@@ -507,7 +507,7 @@
     "id": "jueguanlun",
     "title": "绝观论",
     "author": "牛头法融",
-    "category": "唐代论著",
+    "category": "宗门心法",
     "summary": "牛头法融禅师重要论著，以师徒问答形式阐扬无心绝观之旨。通过十六节问答，层层破除学人对心、道、圣凡、因果等一切妄执，直指法界本然寂灭之理。",
     "word_count": 6590,
     "filename": "51_jueguanlun.md"
@@ -517,7 +517,7 @@
     "id": "boshan-canchanjingyu",
     "title": "博山参禅警语",
     "author": "博山元来",
-    "category": "明代禅著",
+    "category": "禅修指南",
     "summary": "明代曹洞宗禅师博山元来撰。以警策为宗，痛陈参禅中种种微细弊病——偷心未死、耽着静境、认识神为佛事、疑情发不起等，开示初心学人做工夫之正途：须具真实信心，举起话头，发起疑情，逼拶至极处忽然契悟。全书分上下两卷，含示初心做工夫警语、评古德垂示警语、示疑情发不起警语、示疑情发得起警语、示禅人参公案警语及参禅偈十首，为后世禅修之重要指南。",
     "word_count": 18149,
     "filename": "52_boshan-canchanjingyu.md"
@@ -547,7 +547,7 @@
     "id": "zhonglun",
     "title": "中论",
     "author": "龙树菩萨造 鸠摩罗什译",
-    "category": "中观论典",
+    "category": "论释义理",
     "summary": "龙树菩萨核心论典，以八不中道为纲领，破斥一切边见，显示缘起性空的中道实相。全论27品，运用严密的逻辑推理，破除对有无、生灭、常断等二元对立的执着，为大乘佛教中观学派奠定理论基础。",
     "word_count": 44987,
     "filename": "55_zhonglun.md"
@@ -557,7 +557,7 @@
     "id": "wanshantongguiji",
     "title": "万善同归集",
     "author": "永明延寿",
-    "category": "法眼宗典",
+    "category": "论释义理",
     "summary": "五代永明延寿禅师代表作，阐明万善同归净土、理事无阂圆融之旨。广引经论，对治禅宗空腹高心之病，倡导禅净双修、悲智双运，以万行庄严净土、同证菩提。",
     "word_count": 52477,
     "filename": "56_wanshantongguiji.md"
@@ -567,7 +567,7 @@
     "id": "chanyuan_zhuquanjiduxu",
     "title": "禅源诸诠集都序",
     "author": "宗密",
-    "category": "禅教判释",
+    "category": "论释义理",
     "summary": "唐代圭峰宗密和会禅教之判教巨著：以如来三种教印禅宗三宗，判五味禅以最上乘禅为极致，广辨空宗性宗十异，立迷悟各十重，明顿悟资于渐修。裴休赞为禅门未曾有之会通总纲。",
     "word_count": 19259,
     "filename": "57_chanyuan_zhuquanjiduxu.md"
@@ -597,7 +597,7 @@
     "id": "linjianhoulu",
     "title": "林间录后集",
     "author": "惠洪觉范",
-    "category": "禅宗文学",
+    "category": "护教文集",
     "summary": "北宋禅僧惠洪（觉范）的赞铭诗文合集，为《林间录》续编。收录释迦佛、六代祖师、枣栢大士、百丈怀海、永明延寿、永嘉玄觉、法眼文益、云门文偃、玄沙师备等禅门宗师画像赞辞，观音菩萨、弥勒菩萨像赞，明极斋、明白庵、甘露灭斋、延福钟等铭文，及歌咏万回、药山、宝志、亮公、香严、丹霞六位禅门人物的渔父词。以骈俪文学笔法传达禅宗见地，是“文字禅”的典型作品。",
     "word_count": 6686,
     "filename": "60_linjianhoulu.md"
@@ -607,7 +607,7 @@
     "id": "shanglibian",
     "title": "尚理编",
     "author": "明·空谷景隆",
-    "category": "护教辨正",
+    "category": "护教文集",
     "summary": "明代空谷景隆禅师护教辩论文著。以问答体裁驳正道家修炼之术，辨明禅宗见性大道与炼术形气之学的根本区别，详述吕洞宾参黄龙、德山烧疏钞、纸衣道者立化等公案，附姚广孝《佛法不可灭论》。",
     "word_count": 8966,
     "filename": "61_shanglibian.md"
@@ -628,7 +628,7 @@
     "id": "chanzongjueyiji",
     "title": "禅宗决疑集",
     "author": "元·智彻",
-    "category": "禅修指导",
+    "category": "禅修指南",
     "summary": "元代西蜀野衲智彻禅师所著禅修实践指南，以自身修行经历为线索，系统阐述参话头、起疑情、做工夫的完整次第。全书十七门，从离尘精进到归源实际，详细辨析参禅过程中的疑惑、偏差与退堕，区分看无字、念无字与疑无字三种态度，强调无疑不悟，并关注修行者身心健康。",
     "word_count": 10751,
     "filename": "63_chanzongjueyiji.md"
@@ -648,7 +648,7 @@
     "id": "zhaolun",
     "title": "肇论",
     "author": "后秦·僧肇",
-    "category": "论著",
+    "category": "论释义理",
     "summary": "后秦长安释僧肇法师所著四论合集，由慧达作序。以中观般若学为体，融合老庄玄学与佛家空宗，阐明缘起性空的实相义。物不迁论即动而静，不真空论即伪即真，般若无知论圣心无知而无所不知，涅槃无名论以九折十演穷尽涅槃之理。鸠摩罗什赞为解空第一，是中国佛教哲学的奠基之作，对禅宗影响深远。",
     "word_count": 16287,
     "filename": "65_zhaolun.md"
@@ -658,7 +658,7 @@
     "id": "shangzhibian",
     "title": "尚直编",
     "author": "明·空谷景隆",
-    "category": "护教",
+    "category": "护教文集",
     "summary": "明代禅僧空谷景隆所著护教文献，与《尚理编》为姊妹篇。以问答体裁系统驳斥宋儒朱熹排佛言论，揭露朱熹暗用佛法著书立说而表面排佛的心病。详述濂溪周子、二程道学源流实出于禅宗——周敦颐叩问黄龙慧南、佛印元、东林总禅师，程颢深味华严合论，程颐问道于大源清禅师，朱熹本人亦从大慧禅师参话头。本书引证丰富，从三教关系、虚无寂灭、神识不灭、道学源流等多角度逐一辨正，是明代护教文献代表作。",
     "word_count": 26648,
     "filename": "66_shangzhibian.md"
@@ -668,7 +668,7 @@
     "id": "shishuangchuyuan",
     "title": "石霜楚圆禅师语录",
     "author": "宋·石霜楚圆",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "临济宗石霜楚圆（慈明）禅师五会住持语录，由黄檗慧南重编。收录禅师在南源、道吾、石霜、福严、兴化五处住持的开堂法语、机缘问答、勘辨及偈颂。楚圆嗣法汾阳善昭，门下出杨岐方会、黄龙慧南，开临济杨岐、黄龙二派。语录机锋峻烈，棒喝交加，后附三玄三要、五位君臣、十二时歌等宗门纲宗偈颂，是研究临济宗风的重要文献。",
     "word_count": 16515,
     "filename": "67_shishuangchuyuan.md"
@@ -678,7 +678,7 @@
     "id": "xuanshayulu",
     "title": "玄沙师备禅师语录",
     "author": "五代·玄沙师备",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "雪峰义存法嗣玄沙师备禅师之语录三卷，明天启年间闽中林弘衍搜辑诸集汇编，曹洞宗湛然圆澄作序。卷上载行实与上堂法语，力破妄认昭昭灵灵之识神见，直指秘密金刚体；卷中为垂语纲宗，著名之三种病人公案与玄沙三句俱在，附诸老宿拈颂；卷下举古评唱，于俱胝一指、鲁祖面壁、灵云桃花等千古公案一一下断语。师门下有罗汉桂琛传清凉文益，开出法眼一宗，师遂为法眼法脉之先导。",
     "word_count": 18177,
     "filename": "68_xuanshayulu.md",
@@ -689,7 +689,7 @@
     "id": "xuanshaguanglu",
     "title": "玄沙师备禅师广录",
     "author": "五代·玄沙师备",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "现存最古老完整之玄沙师备语录版本。唐光化三年门人智严集，宋元丰三年孙觉知福州时校合残编刻板行世，中土久佚，赖日本秘藏宋版存续，元禄年间重刊回传。上卷上堂示众与机缘问答，开卷即提清净本然性相般若智海；中卷行光五问、德彦五问及师亲释三句纲宗之长篇法语，与雪峰、招庆师资激扬；下卷法语问答、方丈录及王大王请雪峰与玄沙入内论佛心印录——闽王王审知请二师入宫论心印之实录。末附五代林澂撰宗一大师碑文，为玄沙生平最翔实之早期史料。",
     "word_count": 37886,
     "filename": "69_xuanshaguanglu.md",
@@ -700,7 +700,7 @@
     "id": "gaofengyulu",
     "title": "高峰原妙禅师语录",
     "author": "宋元·高峰原妙",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "宋末元初禅宗巨匠高峰原妙禅师之说，参学门人编集，明万历二十七年云栖袾宏重梓。卷上载序、双髻庵及师子禅寺法语、示禅人；卷下载拈古、颂古、补遗、偈颂、小佛事、赞佛祖、自赞，并附行状二篇及塔铭。高峰一生以万法归一、一归何处为话头接引学人，入张公洞扁死关不越户十五年，为看话禅核心文献。",
     "word_count": 33149,
     "filename": "70_gaofengyulu.md",
@@ -711,7 +711,7 @@
     "id": "xuefengyulu",
     "title": "雪峰义存禅师语录",
     "author": "唐五代·雪峰义存",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "唐五代禅宗巨匠雪峰义存禅师之说，明崇祯己卯年闽中得山居士林弘衍搜辑编次，曹洞宗石雨明方作序。卷上载刻语录缘起、序、师语录、偈语、规制、遗诫；卷下载闽王王审知请雪峰与玄沙入内论佛心印录、年谱、附录。雪峰承德山宣鉴开悟，座下一千五百众，门下出云门、法眼二宗，为五代禅宗中心。",
     "word_count": 33615,
     "filename": "71_xuefengyulu.md",
@@ -722,7 +722,7 @@
     "id": "foguojijielu",
     "title": "佛果击节录",
     "author": "宋·圆悟克勤击节 / 雪窦重显拈古",
-    "category": "禅宗评唱",
+    "category": "公案评唱",
     "summary": "宋圆悟克勤击节、雪窦重显拈古，卍续藏第67册No.1301。全书一百则，每则含雪窦拈古与圆悟击节——雪窦举古德公案而拈提之，圆悟于其下击节赞赏别下断语。与碧岩录为圆悟两大评唱著作：碧岩录以颂古为中心，击节录以拈古为中心，更为简洁直截。元文戊午年常州沙门说驴序重刻，黑太淳校正补阙。",
     "word_count": 35107,
     "filename": "72_foguojijielu.md",
@@ -733,7 +733,7 @@
     "id": "mianxianyulu",
     "title": "密庵咸杰禅师语录",
     "author": "南宋·密庵咸杰",
-    "category": "禅宗语录",
+    "category": "禅师语录",
     "summary": "南宋临济宗杨岐派密庵咸杰禅师之说，参学小师崇岳了悟等编，淳熙十五年张镃序。大正藏第47册No.1999。全书载七处住持语录（乌巨、祥符、蒋山、华藏、径山、灵隐、天童）、小参、普说、颂赞九则、偈颂。密庵为应庵昙华嗣法，应庵为虎丘绍隆嗣法，虎丘为圆悟克勤嗣法——密庵为圆悟法孙，杨岐虎丘系之重要传人。以破沙盆语闻名丛林，门下出松源崇岳、破庵祖先等。",
     "word_count": 35914,
     "filename": "73_mianxianyulu.md",
@@ -744,7 +744,7 @@
     "id": "zibaibieji",
     "title": "紫柏老人别集",
     "author": "明·紫柏真可",
-    "category": "禅宗文集",
+    "category": "护教文集",
     "summary": "明代四大高僧之一紫柏真可尊者之别集，钱谦益纂阅，契颖寿梓。卍续藏第73册No.1453。本集为《紫柏尊者全集》之补遗，取全集所未载者排为四卷：卷一杂文（阿赖识四分略解/前五识略解/天池山煆昏散道场说等）、卷二赞偈诗、卷三书问、卷四语录及附录跋。紫柏以禅教会通为宗，倡印嘉兴藏，因妖书案殉道，为明代佛教复兴之关键人物。",
     "word_count": 42400,
     "filename": "74_zibaibieji.md",
@@ -755,7 +755,7 @@
     "id": "renyantianmu",
     "title": "人天眼目",
     "author": "宋·晦岩智昭",
-    "category": "禅宗纲宗",
+    "category": "论释义理",
     "summary": "南宋淳熙年间晦岩智昭禅师编纂的禅宗纲宗集，共六卷。系统整理临济、云门、曹洞、沩仰、法眼五家核心教法，包括临济四料拣/三玄三要/四照用/四宾主、云门三句/一字关、曹洞五位君臣/功勋五位/三种渗漏、沩仰三种生/圆相、法眼华严六相义等纲宗语句，并汇集历代祖师颂古评唱。是研究禅宗五家宗风差异的核心文献，也是理解纲宗即禅门接引学人的标准化施设的必读之作。",
     "word_count": 40874,
     "filename": "75_renyantianmu.md"
@@ -765,7 +765,7 @@
     "id": "linjianlu",
     "title": "林间录",
     "author": "宋·惠洪（洪觉范）",
-    "category": "禅宗笔记",
+    "category": "护教文集",
     "summary": "北宋惠洪（洪觉范）禅师所撰禅宗笔记，分上下两卷，记录丛林胜士之高行、尊宿之遗训、诸佛菩萨之微旨、贤士大夫之余论，垂十年间得三百余事。后集一卷收录赞铭偈颂。是研究北宋禅宗史、禅宗文学、禅宗与士大夫关系之重要文献。",
     "word_count": 49026,
     "filename": "76_linjianlu.md",
@@ -776,7 +776,7 @@
     "id": "lengqiejing",
     "title": "楞伽阿跋多罗宝经",
     "author": "刘宋·求那跋陀罗译",
-    "category": "禅宗印心经典",
+    "category": "印心经藏",
     "summary": "刘宋元嘉年间天竺三藏求那跋陀罗译出，四卷皆题一切佛语心品。佛入楞伽山答大慧菩萨百八问，广说五法三自性八识二无我如来藏自心现量等义，以佛语心为宗——一切佛语皆以心为宗要。达磨以此经付二祖慧可，以为印心之典，祖祖相授，为禅宗根本经典。",
     "word_count": 44457,
     "filename": "77_lengqiejing.md",
@@ -787,7 +787,7 @@
     "id": "chanyuanqinggui",
     "title": "禅苑清规",
     "author": "宋·宗赜集",
-    "category": "禅宗清规",
+    "category": "清规戒律",
     "summary": "北宋真定府十方洪济禅院住持传法慈觉大师宗赜集，十卷，为现存最早之禅宗清规专著。承百丈怀海禅师百丈规绳颂之遗意，系统编纂禅宗丛林一切轨度制度——受戒护戒、挂搭入室、上堂念诵、结夏解夏、知事头首职分、茶汤煎点、亡僧津送、住持入院退院、坐禅仪、龟镜文、一百二十问、沙弥受戒、百丈规绳颂，并附新添滤水法。后世敕修百丈清规即在此书基础上增删而成，为研究北宋禅宗丛林制度之根本文献。",
     "word_count": 45053,
     "filename": "78_chanyuanqinggui.md",
@@ -798,7 +798,7 @@
     "id": "chixiu-baizhang-qinggui",
     "title": "敕修百丈清规",
     "author": "元·德辉重编 大訢校正",
-    "category": "禅宗清规",
+    "category": "清规戒律",
     "summary": "元代大智寿圣禅寺住持东阳德辉奉敕重编，大龙翔集庆寺住持大訢（笑隐）奉敕校正，八卷九章。会萃宋代崇宁（宗赜）、咸淳（惟勉）、至大（弌咸）三家清规，校正归一，定为祝厘、报恩、报本、尊祖、住持、两序、大众、节腊、法器九章，颁行天下丛林，成为此后七百年中国禅宗丛林之标准规范。附录百丈祖师塔铭、天下师表阁记、古清规序（杨亿）、崇宁咸淳至大清规序及敕修百丈清规叙（欧阳玄），极具禅宗史文献价值。",
     "word_count": 68801,
     "filename": "79_chixiu-baizhang-qinggui.md"
@@ -808,7 +808,7 @@
     "id": "jingangge",
     "title": "大圆满见修行果金刚歌",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "莲花生大士以数十联金刚偈总摄大圆满见、修、行、果：心性本无生灭，明空赤裸自圆成；妄念如波不离水，闹市深山总一般；一念回光，顿见成佛。全篇直指当下灵觉，为大圆满见地之极浓缩纲要。",
     "word_count": 1043,
     "filename": "80_jingangge.md"
@@ -818,7 +818,7 @@
     "id": "ziwojietuo",
     "title": "自我解脱直指心性深法",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "又名《直指觉性赤裸现量自我解脱法》。分四节：直指自心为佛之总纲，三身五智于一念心性中本具，见修行果无上要义，及直指心性金刚语。明言“心外无佛，佛外无心”，若了此心则千经万论一时通达。",
     "word_count": 1578,
     "filename": "81_ziwojietuo.md"
@@ -828,7 +828,7 @@
     "id": "songlingbaoxun",
     "title": "松岭宝训·益西措嘉问答录",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "莲花生大士对佛母益西措嘉之甚深言教，以问答开示四个直指：见无所见方为真见，无修之修是为真修，不舍世缘而行佛道，本来现成无得无失。文短义深，动静一如之无上大修尽在其中。",
     "word_count": 1374,
     "filename": "82_songlingbaoxun.md"
@@ -838,7 +838,7 @@
     "id": "xizangduwangjing",
     "title": "西藏度亡经·中阴闻解脱",
     "author": "莲花生大士",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "即《中阴得度法》，莲师生所说、伏藏大师噶玛林巴掘出。本章精选三阶段口诀：临终中阴直指本面母光明，法性中阴五方佛智光逐日显现之趋入要诀，投生中阴闭合胎门之法。核心印语：一切光明境相皆是自心本具智慧之变现，心不生怖，直下融通，当下解脱。",
     "word_count": 1715,
     "filename": "83_xizangduwangjing.md"
@@ -848,7 +848,7 @@
     "id": "xinxingxiuxisong",
     "title": "大圆满心性休息颂",
     "author": "龙钦巴尊者",
-    "category": "禅修指导",
+    "category": "密法与非二元",
     "summary": "遍知龙钦巴尊者（1308-1364）总结一生闻思修之心髓。九品次第：由暇满难得、寿命无常、轮回过患、业因果转入依师皈依发心，再入奢摩他寂止与毗钵舍那胜观，末以第九品直指心性收摄全论——“识得本来面目者，生死当下即涅槃”。",
     "word_count": 1171,
     "filename": "84_xinxingxiuxisong.md"
@@ -858,7 +858,7 @@
     "id": "henghedashouyin",
     "title": "恒河大手印二十八颂",
     "author": "帝洛巴尊者",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "印度八十四大成就者之首帝洛巴尊者于恒河岸边对弟子那洛巴之传授。大手印法离戏论、无言无说：心无所住住本然，紧缚自然得解脱；无修无整无作意，即是大手印真修。烦恼当下即菩提，生死即是大涅槃。",
     "word_count": 1195,
     "filename": "85_henghedashouyin.md"
@@ -868,7 +868,7 @@
     "id": "zixingcanjiu",
     "title": "自性参究与我是谁",
     "author": "拉玛那·马哈希",
-    "category": "直指心性",
+    "category": "密法与非二元",
     "summary": "近代印度圣哲拉玛那·马哈希（Ramana Maharshi，1879-1950）《我是谁？》与《真实四十颂》精要合刊。以“我是谁”之参究为究竟法门：逐一勘破肉身、感官、呼吸、念头皆非我，最后唯余纯粹觉知即是真我。其回光返照之路径与禅宗参话头异曲同工。",
     "word_count": 1634,
     "filename": "86_zixingcanjiu.md"
@@ -878,7 +878,7 @@
     "id": "awatuotazhige",
     "title": "阿瓦陀塔之歌",
     "author": "古印度·达塔特雷亚",
-    "category": "非二元圣典",
+    "category": "密法与非二元",
     "summary": "古印度托钵圣者达塔特雷亚（Dattatreya）所述之自由解脱绝唱：一切万有皆是唯一绝对梵体，无生无死、无缚无脱；超越心智造作，“饥来吃饭，困来即眠，处处皆是至真解脱”，与禅门日用功夫遥相印证。",
     "word_count": 1133,
     "filename": "87_awatuotazhige.md"
@@ -888,7 +888,7 @@
     "id": "ashitawakela",
     "title": "阿什塔瓦克拉之歌",
     "author": "古印度·八曲仙人",
-    "category": "非二元圣典",
+    "category": "密法与非二元",
     "summary": "吠陀非二元论（Advaita）至高圣典：八曲仙人开示遮罗迦国王。你非地水火风虚空，乃觉照万相之纯粹觉性；“智者不求涅槃，亦不畏生死”，一切造作皆是病、追求皆是网，歇下偷心，无修无证，方为至道。",
     "word_count": 1424,
     "filename": "88_ashitawakela.md"
@@ -928,7 +928,7 @@
     "id": "rujingyulu",
     "title": "如净和尚语录",
     "author": "宋·天童如净（门人文素等编集）",
-    "category": "曹洞宗语录",
+    "category": "禅师语录",
     "summary": "曹洞宗南宋中兴巨匠天童长翁如净禅师六会语录（清凉、瑞岩、净慈、明州瑞岩、再住净慈、天童）合编两卷。上堂、小参、普说、法语、颂古、赞佛祖、小佛事、偈颂俱备。其风孤峻泼辣，拄杖拂子圆相兼施，借杜诗说禅、以恶拳痛棒陶冶学者，卷末附辞世颂，为道元禅师之师、日本曹洞宗远祖之行实录。",
     "word_count": 18952,
     "filename": "92_rujingyulu.md"
@@ -938,7 +938,7 @@
     "id": "rujingxuyulu",
     "title": "天童如净禅师续语录",
     "author": "宋·天童如净（嗣法义远编·道元记）",
-    "category": "曹洞宗语录",
+    "category": "禅师语录",
     "summary": "如净禅师天童上堂法语二十则，由嗣法弟子义远搜辑补遗，日本曹洞宗开祖道元亲记其机缘。上堂孤迥峭拔——\"放行也瓦砾生光，把住也真金失色\"；并举曹山四则公案拈提，重申洞上宗风。卷末道元所记如净行状，正是\"身心脱落\"公案的原始出处：惩坐睡衲子一句，令道元豁然大悟。",
     "word_count": 6725,
     "filename": "93_rujingxuyulu.md"
@@ -948,7 +948,7 @@
     "id": "weishanyulu",
     "title": "沩山灵祐禅师语录",
     "author": "唐·沩山灵祐（语风圆信、郭凝之编集）",
-    "category": "沩仰宗语录",
+    "category": "禅师语录",
     "summary": "沩仰宗开山祖师沩山灵祐（771-853）语录，与仰山慧寂父子唱和实录。载拨炉火悟缘、司马头陀择山、踢倒净瓶、蛇虎让路开山诸缘起，上堂\"实际理地不受一尘，万行门中不舍一法\"之纲宗，摘茶论体用、过净瓶、画圆相通书等著名公案。沩仰宗风\"父子和敬、师资唱和\"，于此卷可亲见。",
     "word_count": 10339,
     "filename": "94_weishanyulu.md"
@@ -988,7 +988,7 @@
     "id": "shoulengyansanmeijing",
     "title": "佛说首楞严三昧经",
     "author": "后秦·鸠摩罗什译",
-    "category": "印心经典",
+    "category": "印心经藏",
     "summary": "鸠摩罗什译，上下两卷。坚意菩萨启问\"何三昧能令菩萨示现诸功德而不毕竟入涅槃\"，佛答以首楞严三昧（意译健相、一切事究竟坚固）。全经以帝释无所住而得、随器取水、大药树王、摩尼珠层层映夺诸喻，阐明住此三昧者智辩不减、随缘度生；文殊说真多闻\"闻一句解千万亿义\"，卷下明四种授记、佛寿七百阿僧祇劫与持经二十不可思议功德。",
     "word_count": 29401,
     "filename": "98_shoulengyansanmeijing.md"
@@ -1008,7 +1008,7 @@
     "id": "huanzhu-anqinggui",
     "title": "幻住庵清规",
     "author": "元·中峰明本（普应国师）",
-    "category": "禅宗清规",
+    "category": "清规戒律",
     "summary": "元代临济宗一代宗匠中峰明本（普应国师）居湖州弁山幻住庵时所订庵居清规，延祐四年自序。以\"日用须知\"十门——日资、月进、年规、世范、营办、家风、名分、践履、摄养、津送——为小规模庵居众立寻常起居之则，坐禅四时、朔望祝圣、节年佛事、盂兰盆疏仪俱备。序中\"心存乎道，不待礼而自中\"一语，道出清规之本质：规矩为道而设，非道为规矩而存。",
     "word_count": 30886,
     "filename": "100_huanzhuanqinggui.md"
