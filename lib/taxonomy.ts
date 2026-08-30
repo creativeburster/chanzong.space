@@ -2060,7 +2060,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["koan","beyond-words"],
     "relatedMethods": [],
-    "relatedPersons": ["yuanwu-keqin","yunmen"],
+    "relatedPersons": ["yuanwu-keqin","yunmen", "tianyi-yihuai"],
     "relatedBooks": ["foguojijielu","chanlinbaoxun","dongshanyulu","huanwuxinyao","huanwuyulu","biyanlu"]
   },
   {
@@ -2350,7 +2350,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["koan","self-nature"],
     "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["wuzu-fayan","yuanwu-keqin"],
+    "relatedPersons": ["wuzu-fayan","yuanwu-keqin", "fayan-wenyi", "wumen-huikai"],
     "relatedBooks": []
   },
   {
@@ -7051,7 +7051,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "平常心是道，著意即差。"
 ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
-    "classicRef": "",
+    "classicRef": "大乘起信论",
     "relatedConcepts": [],
     "relatedPersons": [],
     "relatedBooks": ["dachengqixinlun"]
@@ -11340,7 +11340,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "id": "xi-zheng-fa",
     "title": "息诤法门",
     "summary": "禅宗破除争端、契入平等法界之法门。一切诤论与分别皆从我执、法执而生。了知万法本自空寂，人我一体无二，自然言语道断、诤论永息，证入离诸戏论之无诤三昧。此法门直指人心、见性成佛，不历渐次阶级，行者于日常行住坐卧四威仪中体悟当下一念不生，体露真常，破除一切妄想情执，显发本自具足之清净自性。",
-    "origin": "《金刚经》：“佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。”《肇论》：“言语道断，心行处灭，故知无诤。”六祖云：“诤是胜负心，与道相违背。”历代禅门尊宿代代相传，皆以本分事接人，以大机大用破除学人知见葛藤，为宗门修心了办生死之根本指引。",
+    "origin": "本法门名目实出自敦煌遗书《息诤论》（旧题菩提达摩禅师著，方广锠整理收入《藏外佛教文献》，本站已将讹题"息许论"勘正收录）："学人但能息诤，定得理长"；"真如渺寞，岂在诤论之中"。《金刚经》：“佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。”《肇论》：“言语道断，心行处灭，故知无诤。”六祖云：“诤是胜负心，与道相违背。”历代禅门尊宿代代相传，皆以本分事接人，以大机大用破除学人知见葛藤，为宗门修心了办生死之根本指引。",
     "steps": [
       "第一步·照破争端：察觉争执之根源在于执着自见为是、执他见为非。",
       "第二步·体认平等：了知万法缘起性空，真理非言辩所能尽，众生同具一性。",
