@@ -1137,7 +1137,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
     "relatedPersons": ["wuzhu-asanga", "divakara"],
-    "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
+    "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun", "jieshenmijing"]
   },
   
   {
@@ -3832,6 +3832,25 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["xuanzang", "gunabhadra"],
     "relatedBooks": ["miyanjing"]
   }
+,
+  {
+    "id": "qiaoyin-wuyi",
+    "name": "樵隐悟逸",
+    "title": "元代雪峰崇圣禅寺再住持",
+    "era": "元代（延祐年间住雪峰）",
+    "lifeStory": "樵隐悟逸禅师，法名悟逸，号樵隐，生平主要事迹见自署语录：元仁宗延祐元年（1314）闰三月，奉圣旨再住福州雪峰崇圣禅寺。进寺拈香自署\u201c臣僧悟逸\u201d，先为前住雪峰、后迁净慈的先师佛心大和尚拈香酬恩，自称此来是\u201c为先师了却未了公案\u201d。宗风峻快而富诗情：僧问雪峰如何是第一句，雪峰良久、长生道苍天苍天，他断言二老未知第一句，自家只答\u201c天晴普请拽木\u201d；浴佛上堂云\u201c年年此日一盆汤，至竟洗尘难洗骨\u201d。语录两卷，卷上为再住雪峰语录（侍者正定编），卷下为法语、题跋、偈颂、佛事，卷下偈颂送行诸作近半，足见元代丛林文字禅之风。",
+    "teachings": "樵隐的宗风可括为峻快与诗情两面：节令上堂每以自造偈句收束，评古德公案必下一转语——评真觉大师一握示众，则云浪阔云深、上钩者少。其示众眼目在\u201c平常事是\u201d：第一句不在玄妙答语，而在搬柴运水的日用中。",
+    "quotes": [
+      "天晴普请拽木。",
+      "年年此日一盆汤，至竟洗尘难洗骨。",
+      "曾为浪子偏怜客。"
+    ],
+    "classics": ["樵隐和尚语录"],
+    "relatedConcepts": [],
+    "relatedMethods": [],
+    "relatedPersons": [],
+    "relatedBooks": ["qiaoyinyulu"]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -3950,7 +3969,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "金刚经 · 六祖坛经",
     "relatedConcepts": ["emptiness","no-abiding"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","wenshu","qifo","juelin","wuran","wuxinglun","poxianglun","wuxinlun","xinxinming","zhengdaoge","shenhui","jingangjing"]
+    "relatedBooks": ["tanjing","wenshu","qifo","juelin","wuran","wuxinglun","poxianglun","wuxinlun","xinxinming","zhengdaoge","shenhui","jingangjing", "shoulengyansanmeijing"]
   },
   {
     "id": "emptiness",
@@ -3984,7 +4003,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "维摩诘经 · 信心铭",
     "relatedConcepts": ["samadhi","affliction-bodhi","emptiness"],
     "relatedPersons": ["sengcan","dongshan","zhigong"],
-    "relatedBooks": ["xinxinming","weimojiejing","zhigong","juelin","wenshu","wuran","zhangzhi","wuxinglun","zhengdaoge","xiuxinjue","dunwu","zhenxin","baojingsanmei","yongjia"]
+    "relatedBooks": ["xinxinming","weimojiejing","zhigong","juelin","wenshu","wuran","zhangzhi","wuxinglun","zhengdaoge","xiuxinjue","dunwu","zhenxin","baojingsanmei","yongjia", "henghedashouyin", "zixingcanjiu", "awatuotazhige", "ashitawakela"]
   },
   {
     "id": "koan",
@@ -4178,7 +4197,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "六祖坛经 · 行由品",
     "relatedConcepts": ["buddha-nature","emptiness","originally-nothing","real-mind"],
     "relatedPersons": ["huineng","bodhidharma","hongren"],
-    "relatedBooks": ["tanjing","xuemaicong","wenshu","zhangzhi","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","xinxinming","zuishangcheng","zhengdaoge","baizhang","xiuxinjue","jingangjing","shiniutu","baojingsanmei"]
+    "relatedBooks": ["tanjing","xuemaicong","wenshu","zhangzhi","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","xinxinming","zuishangcheng","zhengdaoge","baizhang","xiuxinjue","jingangjing","shiniutu","baojingsanmei", "ziwojietuo", "xinxingxiuxisong", "zixingcanjiu"]
   },
   {
     "id": "instant-enlightenment",
@@ -4621,7 +4640,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "无染觉性直观自行解脱之道 · 六祖坛经",
     "relatedConcepts": ["self-nature","real-mind","non-mind","originally-nothing"],
     "relatedPersons": ["huineng","bodhidharma", "lianhuasheng"],
-    "relatedBooks": ["wuran","tanjing"]
+    "relatedBooks": ["wuran","tanjing", "songlingbaoxun"]
   },
   {
     "id": "po-xiang",
@@ -4654,7 +4673,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
     "relatedConcepts": ["buddha-nature","self-nature","real-mind"],
     "relatedPersons": ["huineng","bodhidharma"],
-    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing"]
+    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing", "jieshenmijing", "lengqiejing"]
   },
   {
     "id": "zhongdao",
@@ -4671,7 +4690,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《中论》《金刚经》《坛经》",
     "relatedConcepts": ["emptiness","non-duality","prajna"],
     "relatedPersons": ["nagarjuna","huineng","mazu"],
-    "relatedBooks": ["tanjing","wuxinlun","fangcunlun","yongjia"]
+    "relatedBooks": ["tanjing","wuxinlun","fangcunlun","yongjia", "awatuotazhige", "ashitawakela"]
   },
   {
     "id": "yuanqi",
@@ -5171,7 +5190,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《宗镜录》《坛经》",
     "relatedConcepts": ["weishi-yixin","self-nature","wei-xin-zao"],
     "relatedPersons": ["xuanzang","yongming-yanshou"],
-    "relatedBooks": ["bashiguijusong", "miyanjing"]
+    "relatedBooks": ["bashiguijusong", "miyanjing", "chengyelun", "bianzhongbianlun", "jieshenmijing", "shedachenglunben"]
   },
   {
     "id": "alaiye-shi",
@@ -5188,7 +5207,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《楞伽经》《坛经》",
     "relatedConcepts": ["weishi","tathagatagarbha","self-nature"],
     "relatedPersons": ["xuanzang","huineng"],
-    "relatedBooks": ["bashiguijusong","lengyanjing","dachengqixinlun", "miyanjing"]
+    "relatedBooks": ["bashiguijusong","lengyanjing","dachengqixinlun", "miyanjing", "chengyelun", "jieshenmijing", "shedachenglunben", "lengqiejing"]
   },
   {
     "id": "rulai-chan-zushi-chan",
@@ -6338,7 +6357,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《维摩诘经》《大乘起信论》",
     "relatedConcepts": ["self-nature","buddha-nature","yuanman"],
     "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["tanjing"]
+    "relatedBooks": ["tanjing", "xinxingxiuxisong"]
   },
   {
     "id": "fayin",
@@ -6485,7 +6504,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "六祖坛经 · 无门关",
     "relatedConcepts": ["self-nature","buddha-nature","wu-nian"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","wumenguan"]
+    "relatedBooks": ["tanjing","wumenguan", "jingangge", "ziwojietuo", "songlingbaoxun", "xizangduwangjing", "xinxingxiuxisong", "henghedashouyin"]
   },
   {
     "id": "jingang-zhengti",
@@ -10343,7 +10362,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "禅苑清规",
     "relatedConcepts": ["conglin-zhidu","baizhang-guisheng"],
     "relatedPersons": ["zongze","baizhang"],
-    "relatedBooks": ["chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedBooks": ["chanyuanqinggui","chixiu-baizhang-qinggui", "huanzhu-anqinggui"]
   },
   {
     "id": "baizhang-guisheng",
@@ -10603,7 +10622,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "唯识三十论颂·第二十至二十五颂",
     "relatedConcepts": ["weishi", "zhongdao", "zhongguan", "shixiang"],
     "relatedPersons": ["shiqin", "xuanzang"],
-    "relatedBooks": ["weishisanshilunsong", "baifamingmenlun", "weishiershilun"]
+    "relatedBooks": ["weishisanshilunsong", "baifamingmenlun", "weishiershilun", "bianzhongbianlun", "jieshenmijing", "shedachenglunben"]
   }
 ];
 
