@@ -3,6 +3,6 @@ export const STATS = {
   concepts: 397,
   methods: 89,
   koans: 555,
-  persons: 195,
-  faqs: 1934,
+  persons: 196,
+  faqs: 1937,
 };

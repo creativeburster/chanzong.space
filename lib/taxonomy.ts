@@ -1136,7 +1136,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["八识规矩颂", "大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论", "成唯识论", "大般若经"],
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
-    "relatedPersons": ["wuzhu-asanga"],
+    "relatedPersons": ["wuzhu-asanga", "divakara"],
     "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun"]
   },
   
@@ -3631,7 +3631,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["buddha-nature","self-nature"],
     "relatedMethods": [],
-    "relatedPersons": ["bodhidharma","huike"],
+    "relatedPersons": ["bodhidharma","huike", "divakara"],
     "relatedBooks": ["lengqiejing"]
   },
   {
@@ -3813,6 +3813,24 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": ["shiqin", "xuanzang"],
     "relatedBooks": ["shedachenglunben"]
+  }
+,
+  {
+    "id": "divakara",
+    "name": "地婆诃罗",
+    "title": "日照三藏 / 《大乘密严经》译者",
+    "era": "唐·中印度（613-688）",
+    "lifeStory": "地婆诃罗（梵名 Divākara，意译日照），中印度人，那烂陀寺学问僧。唐高宗仪凤初年（约676）随师入华，时玄奘大师已示寂四年，遂于太原寺、弘福寺主持译场。高宗晚年敕召入宫，武后亲临译席。一生译经十八部：《大乘密严经》《大方广佛华严经·入法界品》（四十华严底本）、《证契大乘经》等，兼通显密。译风谨依梵本、文约义丰，所出《密严经》与《楞伽经》同明赖耶缘起，为唯识学与如来藏思想交汇提供了唐译权威文本。垂拱四年示寂于长安，武后敕葬洛阳龙门香山，塔近魏国夫人寺。其译本经武周至宋屡入藏流通，日本、高丽并传。",
+    "teachings": "日照三藏的译经立场是谨守梵本、义不增损——《密严经》'如来清净藏，世间阿赖耶'一颂，正是他以精严汉文传达'赖耶与如来藏一体二名'这一瑜伽行派深义的代表。所译诸经多属瑜伽、华严两大系统，为唐译经典补上了玄奘未译的重要环节。",
+    "quotes": [
+      "如来清净藏，世间阿赖耶，如金与指环，展转无差别。",
+      "当知赖耶识，即名为密严，譬如好真金，光色常充满。"
+    ],
+    "classics": ["大乘密严经"],
+    "relatedConcepts": ["weishi", "tathagatagarbha", "alaiye-shi"],
+    "relatedMethods": [],
+    "relatedPersons": ["xuanzang", "gunabhadra"],
+    "relatedBooks": ["miyanjing"]
   }
 ];
 
@@ -4636,7 +4654,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
     "relatedConcepts": ["buddha-nature","self-nature","real-mind"],
     "relatedPersons": ["huineng","bodhidharma"],
-    "relatedBooks": ["lengyanjing","dachengqixinlun"]
+    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing"]
   },
   {
     "id": "zhongdao",
@@ -5153,7 +5171,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《宗镜录》《坛经》",
     "relatedConcepts": ["weishi-yixin","self-nature","wei-xin-zao"],
     "relatedPersons": ["xuanzang","yongming-yanshou"],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedBooks": ["bashiguijusong", "miyanjing"]
   },
   {
     "id": "alaiye-shi",
@@ -5170,7 +5188,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《楞伽经》《坛经》",
     "relatedConcepts": ["weishi","tathagatagarbha","self-nature"],
     "relatedPersons": ["xuanzang","huineng"],
-    "relatedBooks": ["bashiguijusong","lengyanjing","dachengqixinlun"]
+    "relatedBooks": ["bashiguijusong","lengyanjing","dachengqixinlun", "miyanjing"]
   },
   {
     "id": "rulai-chan-zushi-chan",
@@ -34841,5 +34859,24 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "\"年年此日一盆汤，至竟洗尘难洗骨\"说的什么？",
     "answer": "樵隐悟逸浴佛节上堂语：每年四月初八给佛像洗浴的汤，终究只能洗去尘土、洗不了骨——外在的仪式年年重复，根本的无明生死却不是一盆汤能洗掉的。节令佛事被他一转成逼拶的话头：仪式的意义不在仪式本身，而在提醒你参\"能洗的是什么\"。",
     "relatedBooks": ["qiaoyinyulu"]
+  }
+,
+  {
+    "id": "faq-2630",
+    "question": "《大乘密严经》与《楞伽经》是什么关系？",
+    "answer": "两部同为赖耶缘起思想的经典依据。《楞伽经》以\"五法三自性、八识二无我\"立如来藏藏识之义；《密严经》则直接以密严佛国显赖耶转依之境，卷末\"如来清净藏，世间阿赖耶\"一颂把两系思想融为一体——可以说密严经是楞伽如来藏义的进一步会通与落实。",
+    "relatedBooks": ["miyanjing", "lengqiejing"]
+  },
+  {
+    "id": "faq-2631",
+    "question": "\"如来清净藏，世间阿赖耶，如金与指环\"这个譬喻说什么？",
+    "answer": "清净的如来藏与染污位的阿赖耶识，如同同一块金子打成的指环与金体：相状有别（一为庄严具、一为原材料），体性无二（都是金）。这不是说有两个心，而是说染净只是同一心识的两种状态——迷时名阿赖耶，悟时名如来藏。",
+    "relatedBooks": ["miyanjing"]
+  },
+  {
+    "id": "faq-2632",
+    "question": "密严佛土在哪里？",
+    "answer": "经中说密严国超出欲、色、无色三界，无日月星辰，\"如无为性不同微尘\"——但它不是宇宙中某个远处的星球。经云\"当知赖耶识，即名为密严\"：密严净土就是赖耶识转依（转染成净）后所显的境界。转依之处，即密严之国；所以它不在心外，也不在心内烦恼中。",
+    "relatedBooks": ["miyanjing"]
   }
 ];
