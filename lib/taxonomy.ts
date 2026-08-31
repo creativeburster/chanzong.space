@@ -11133,7 +11133,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "大乘起信论",
     "relatedConcepts": ["zhi-guan","zhenru","samadhi","yi-xin-er-men"],
     "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedBooks": ["dachengqixinlun", "jieshenmijing"]
   },
   {
     "id": "wangqing-juezhao",
@@ -11413,7 +11413,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "classicRef": "六祖坛经 · 定慧品 / 永嘉证道歌",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dachengqixinlun","bashiguijusong","xiuxinjue","wuxinglun","yuanjuejing","lengyanjing","weimojiejing"]
+    "relatedBooks": ["dachengqixinlun","bashiguijusong","xiuxinjue","wuxinglun","yuanjuejing","lengyanjing","weimojiejing", "jieshenmijing"]
   },
   {
     "id": "canjiu-fa",
