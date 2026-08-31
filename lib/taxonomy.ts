@@ -4673,7 +4673,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
     "relatedConcepts": ["buddha-nature","self-nature","real-mind"],
     "relatedPersons": ["huineng","bodhidharma"],
-    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing", "jieshenmijing", "lengqiejing"]
+    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing", "jieshenmijing", "lengqiejing", "baoxinglun"]
   },
   {
     "id": "zhongdao",
@@ -5190,7 +5190,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《八识规矩颂》《宗镜录》《坛经》",
     "relatedConcepts": ["weishi-yixin","self-nature","wei-xin-zao"],
     "relatedPersons": ["xuanzang","yongming-yanshou"],
-    "relatedBooks": ["bashiguijusong", "miyanjing", "chengyelun", "bianzhongbianlun", "jieshenmijing", "shedachenglunben"]
+    "relatedBooks": ["bashiguijusong", "miyanjing", "chengyelun", "bianzhongbianlun", "jieshenmijing", "shedachenglunben", "baoxinglun"]
   },
   {
     "id": "alaiye-shi",
