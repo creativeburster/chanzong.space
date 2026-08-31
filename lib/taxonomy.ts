@@ -4019,7 +4019,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "无门关 · 碧岩录",
     "relatedConcepts": ["beyond-words","instant-enlightenment"],
     "relatedPersons": ["zhaozhou","chinul"],
-    "relatedBooks": ["mazu","baizhang"]
+    "relatedBooks": ["mazu","baizhang", "linjianlu", "weishanyulu", "qiaoyinyulu"]
   },
   {
     "id": "samadhi",
@@ -6119,7 +6119,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《金刚经》《坛经》《碧岩录》",
     "relatedConcepts": ["prajna","guanzhao-bore","shixiang-bore"],
     "relatedPersons": ["huineng"],
-    "relatedBooks": ["qifo","wenshu","zhangzhi","xuemaicong","wuxinglun","wuxinlun","xixulun","anxin","tanjing","baizhang","huangbo","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","yongjia","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian","huangbo_wanlinglu"]
+    "relatedBooks": ["qifo","wenshu","zhangzhi","xuemaicong","wuxinglun","wuxinlun","xixulun","anxin","tanjing","baizhang","huangbo","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","yongjia","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian","huangbo_wanlinglu", "qiaoyinyulu"]
   },
   {
     "id": "guanzhao-bore",
@@ -34897,5 +34897,138 @@ export const ZEN_FAQS: FAQItem[] = [
     "question": "密严佛土在哪里？",
     "answer": "经中说密严国超出欲、色、无色三界，无日月星辰，\"如无为性不同微尘\"——但它不是宇宙中某个远处的星球。经云\"当知赖耶识，即名为密严\"：密严净土就是赖耶识转依（转染成净）后所显的境界。转依之处，即密严之国；所以它不在心外，也不在心内烦恼中。",
     "relatedBooks": ["miyanjing"]
+  }
+,
+  {
+    "id": "faq-2633",
+    "question": "《大圆满心性休息颂》九品的次第说明了什么？",
+    "answer": "前四品（暇满难得、寿命无常、轮回过患、业因果）策发出离心，第五、六品（依师、皈依发心）筑基，第七、八品以寂止与胜观调心，第九品越过一切台阶直指自心——次第本身就是道阶，步步皆为末品的直指作准备。",
+    "relatedBooks": ["xinxingxiuxisong"]
+  },
+  {
+    "id": "faq-2634",
+    "question": "第九品为何说心性\"非由造作修持得\"？",
+    "answer": "自心本性即普贤王，本自光明、任运成就——前八品的修不是造出一个清净心，而是为\"认出\"扫清障碍。识得本来面目，生死当下即涅槃；修是船，到岸即舍。",
+    "relatedBooks": ["xinxingxiuxisong"]
+  },
+  {
+    "id": "faq-2635",
+    "question": "为什么说\"无修无整无作意\"是大手印真修？",
+    "answer": "大手印之体本自圆满，凡有造作皆成系缚——修习禅定若不知无为，反把心捆得更紧。所谓修，只是放下能修所修的对峙，任运安住本明；不是不修，而是修到\"修\"字脱落。",
+    "relatedBooks": ["henghedashouyin"]
+  },
+  {
+    "id": "faq-2636",
+    "question": "\"云雾\"譬喻说明了什么？",
+    "answer": "空中云雾漫天而起，非从外来、非在内住，起无所起、灭无踪迹。念头也是如此：自性净空不曾动摇，分别妄念自然消歇——识此，便不与妄念为敌。",
+    "relatedBooks": ["henghedashouyin"]
+  },
+  {
+    "id": "faq-2637",
+    "question": "参\"我是谁\"的具体方法是什么？",
+    "answer": "念头起时不随不压，只问一句\"此念为谁？\"答案必然是\"为我\"；再追\"我又从何处起\"——一路向内，妄念渐渐枯竭，我念沉回心源，我执粉碎而本性光明朗现。参究不是思考，是回光。",
+    "relatedBooks": ["zixingcanjiu"]
+  },
+  {
+    "id": "faq-2638",
+    "question": "为什么说\"用贼捉贼\"？",
+    "answer": "心智想理解真我，即是以生灭心求不生灭法——注定失败。唯有让心智归于其源头寂灭，真我才自然朗现；所以参究不是增加理解，而是放下能理解的那个\"理解者\"。",
+    "relatedBooks": ["zixingcanjiu"]
+  },
+  {
+    "id": "faq-2639",
+    "question": "\"无缚无脱\"如何理解？",
+    "answer": "绝对梵体本自清净，从来不曾束缚，也就无所谓解脱——\"解脱\"一词只对\"曾被绑住\"才成立。认出本性本自无染，缚脱二名俱泯；这不是否定修行，是指出修行要指向的那个无对待处。",
+    "relatedBooks": ["awatuotazhige"]
+  },
+  {
+    "id": "faq-2640",
+    "question": "\"饥来吃饭，困来即眠\"与放逸有何分别？",
+    "answer": "分别在于\"知\"与\"不知\"：不立不破、不执静坐亦不落散乱，是于一切相离心分别的任运；放逸则是随烦恼流转而不自知。同是吃饭睡觉，一个是觉性的自然运作，一个是业习的惯性滑动。",
+    "relatedBooks": ["awatuotazhige"]
+  },
+  {
+    "id": "faq-2641",
+    "question": "\"你不是五大，是纯粹觉性\"如何体会？",
+    "answer": "把一切\"被觉知的\"排除：身体可归四大，空是觉知的对象，念头感受生灭不停——排除之后剩下的那个能觉照一切的，才是你。了知此点，当下即得解脱，不用等来生。",
+    "relatedBooks": ["ashitawakela"]
+  },
+  {
+    "id": "faq-2642",
+    "question": "为什么说\"一切造作是病、追求是网\"？",
+    "answer": "造作预设了\"现在的我不够好\"，追求预设了\"道在别处\"——两者都在强化匮乏感，离道愈远。至道不在添加什么，而在彻底歇下连\"我要修行、我要证悟\"在内的偷心；无修无证，方为至道。",
+    "relatedBooks": ["ashitawakela"]
+  },
+  {
+    "id": "faq-2643",
+    "question": "五位百法的次第为何如此排列？",
+    "answer": "心法\"一切最胜故\"居首；心所与之相应故居次；色法是心心所所现影像——\"二所现影故\"居三；不相应行法是前三位的分位假立——\"三分位差别故\"居四；无为法由前四所显示——\"四所显示故\"居末。\"如是次第\"四字是理解全论的钥匙。",
+    "relatedBooks": ["baifamingmenlun"]
+  },
+  {
+    "id": "faq-2644",
+    "question": "学百法与\"无我\"有什么关系？",
+    "answer": "百法是把\"一切法\"点清名目：心法八、心所五十一、色法十一、不相应行二十四、无为法六——一一皆缘生无自性。清单点完，落点唯是补特伽罗无我与法无我：认得名相，正是为了不被名相所缚。",
+    "relatedBooks": ["baifamingmenlun"]
+  },
+  {
+    "id": "faq-2645",
+    "question": "三能变各能变什么？",
+    "answer": "初能变阿赖耶识异熟一切种、恒转如瀑流，是一切种子之藏；第二能变末那识恒审思量、与我痴我见我慢我爱相应；第三能变了别境识（前六识）了别尘境。世间万相皆是这三类识转变所现。",
+    "relatedBooks": ["weishisanshilunsong"]
+  },
+  {
+    "id": "faq-2646",
+    "question": "三性与三无性是什么关系？",
+    "answer": "依三性立三无性：遍计所执是相无性（体相俱无）、依他起是生无自然性（待缘而生）、圆成实是胜义无性（由无遍计执故说无性）——\"故佛密意说，一切法无性\"是遣除执著而非拨无诸法；末归\"常如其性故，即唯识实性\"。",
+    "relatedBooks": ["weishisanshilunsong"]
+  },
+  {
+    "id": "faq-2647",
+    "question": "《唯识二十论》的\"四难\"是什么？",
+    "answer": "外人诘难：若没有离识的实境，为什么事物只在特定处所出现（处定）、特定时间出现（时定）、众人同见一物（相续不决定）、且梦中之物无真实作用（作用不应成）？——全论即围绕这四难展开辩护。",
+    "relatedBooks": ["weishiershilun"]
+  },
+  {
+    "id": "faq-2648",
+    "question": "极微为什么不能成立？",
+    "answer": "一极微与六方各一极微相合，应成六分；六微同处聚合，则聚色应如极微不可见——两说皆有过。有方分则非一，无方分则影与障无从安立。极微无论一、多、和合都不能成立，外色实有遂失根据。",
+    "relatedBooks": ["weishiershilun"]
+  },
+  {
+    "id": "faq-2649",
+    "question": "\"打破黑漆桶\"说的是什么？",
+    "answer": "瑞岩谢知事上堂：打破黑漆桶，十方空豁豁，爆雷一喝，变通塞俱泯——漆桶喻无明壳子，禅修第一件大事就是破它。破了之后，东行西行、穿衣吃饭，处处撑架门庭。",
+    "relatedBooks": ["rujingyulu"]
+  },
+  {
+    "id": "faq-2650",
+    "question": "\"一箭透双关\"借的什么典故？",
+    "answer": "上堂举\"韩信造浮桥、李广入布袋，一箭透双关，乾坤无罣碍\"——借史喻道：真实用功人一动便全体起用，不落两边拟议。若有思维计较，早已错过；乾坤无罣碍，是大机大用的现量。",
+    "relatedBooks": ["rujingyulu"]
+  },
+  {
+    "id": "faq-2651",
+    "question": "\"放行也瓦砾生光，把住也真金失色\"是什么意思？",
+    "answer": "曹洞把住放行二门用到极处：放行时碎瓦顽石也放光动地，把住时真金也黯然失色——杀活同时，不容拟议。这是如净峻烈门风的写照：收放之间，全见功夫。",
+    "relatedBooks": ["rujingxuyulu"]
+  },
+  {
+    "id": "faq-2652",
+    "question": "德云比丘不下山，善财为何于别峰相见？",
+    "answer": "不动与相见不二：不下山是体，别峰相见是用。若执\"不下山\"为实有，又被这句冰话绑住——如来藏不在山下也不在别峰，就在转处。谈悟道当于活处着眼。",
+    "relatedBooks": ["rujingxuyulu"]
+  },
+  {
+    "id": "faq-2653",
+    "question": "\"首楞严\"是什么意思？",
+    "answer": "意译\"健相\"、\"一切事究竟坚固\"——得此三昧者于一切法究竟坚固不动：示现生灭而不染生死、现入涅槃而不永灭。注意它与《大佛顶首楞严经》同名异实：本经是罗什译的三昧经典，后者是唐代译的灌顶部经。",
+    "relatedBooks": ["shoulengyansanmeijing"]
+  },
+  {
+    "id": "faq-2654",
+    "question": "佛寿七百阿僧祇劫在说什么？",
+    "answer": "阿难领悟：照明庄严自在王佛\"即是我身\"，彼佛以异名字于异世界度生——神通自在皆是首楞严三昧势力。佛寿命的长短是应化示现，法身常住无始无终；所以经末说\"当知我寿七百阿僧祇劫，乃当毕竟入于涅槃\"，而大众悟入者皆得不退。",
+    "relatedBooks": ["shoulengyansanmeijing"]
   }
 ];
