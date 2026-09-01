@@ -2130,11 +2130,24 @@ export const ZEN_PERSONS: PersonItem[] = [
       "参禅无秘诀，只要生死心切。",
       "一念不生，前后际断。"
 ],
-    "classics": [],
-    "relatedConcepts": ["koan","self-nature"],
+    "classics": [
+      "天目中峰和尚广录"
+    ],
+    "relatedConcepts": [
+      "koan",
+      "self-nature",
+      "huanzhu-sanmei",
+      "chan-jing-he-yi"
+    ],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["xiuxinjue", "lengyanjing", "huanwuyulu", "huanzhu-anqinggui"]
+    "relatedBooks": [
+      "xiuxinjue",
+      "lengyanjing",
+      "huanwuyulu",
+      "huanzhu-anqinggui",
+      "tianmuzhongfengguanglu"
+    ]
   },
   {
     "id": "gaofeng-yuanmiao",
@@ -2157,7 +2170,10 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["all-returns-to-one","kanhua-chan-concept","yiqing","siguan","keqi-quzheng"],
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["xueyan-zuqin","duanqiao-lun","zhuhong"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedBooks": [
+      "gaofengyulu",
+      "tianmuzhongfengguanglu"
+    ]
   },
   {
     "id": "zhenjing-kewen",
@@ -10811,6 +10827,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["san-wu-zi-xing", "zhuan-shi-cheng-zhi"],
     "relatedPersons": ["wuzhu-asanga", "xuanzang"],
     "relatedBooks": ["xianyangshengjiaolun", "shedachenglunben"]
+  },
+  {
+    "id": "huanzhu-sanmei",
+    "title": "幻住三昧",
+    "category": "修持境界",
+    "summary": "幻住三昧指禅者洞见四大假合之身心与山河大地一切境象皆如梦幻泡影，虽随缘安住于世间幻境之中，而自性本来无住、当体即空的解脱大三昧。",
+    "etymology": "出自元代中峰明本禅师《幻住庵歌》及《圆觉经》：“一切诸众生，无始幻无明……幻身灭故，幻心亦灭；幻心灭故，幻尘亦灭；幻灭灭故，非幻不灭。”",
+    "quotes": ["身是幻，心亦幻，幻住庵中无一事。但知万法本来空，游戏人间成三昧。 —《天目中峰广录》"],
+    "guidance": "于日常处事待人中，常观自身如幻人、诸事如幻境。不随幻境生起贪爱取舍，当下便能洒脱自在做得了主。",
+    "classicRef": "天目中峰和尚广录 · 卷二十",
+    "relatedConcepts": ["sui-chu-zuo-zhu", "emptiness", "no-abiding"],
+    "relatedPersons": ["zhongfeng-mingben", "gaofeng-yuanmiao"],
+    "relatedBooks": ["tianmuzhongfengguanglu", "gaofengyulu"]
+  },
+  {
+    "id": "chan-jing-he-yi",
+    "title": "自性弥陀",
+    "category": "禅净合一",
+    "summary": "自性弥陀指阿弥陀佛之无量寿无量光本自具足于行者当下自心，西方极乐不离灵明觉性，以禅悟为本、以念佛为用之圆融实修正见。",
+    "etymology": "出自中峰明本禅师《怀净土诗》及《山房夜话》：“清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。生则决定生，去则实不去。”",
+    "quotes": ["清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。 —《天目中峰广录》"],
+    "guidance": "行者既切忌执事废理，亦不可执理废事。念佛时心心念念回光返照自性真如，心净则佛土净。",
+    "classicRef": "天目中峰和尚广录 · 卷八",
+    "relatedConcepts": ["chan-jing-shuangxiu", "self-nature"],
+    "relatedPersons": ["zhongfeng-mingben", "yongming-yanshou"],
+    "relatedBooks": ["tianmuzhongfengguanglu", "boshan-canchanjingyu"]
   }
 ];
 
@@ -19630,6 +19672,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["cheng-xian-guan", "samadhi"],
     "relatedPersons": ["wuzhu-asanga", "xuanzang"],
     "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "koan-625",
+    "question": "幻住庵主如何随缘游戏大三昧？",
+    "answer": "身是幻心亦幻，幻住庵前春风自起。",
+    "context": "中峰明本禅师一生淡泊名利，屡辞名刹住持之请，随处结茅名“幻住庵”，作《幻住庵歌》唱演一切皆幻之无上心要。",
+    "interpretation": "世间一切功名富贵与身心尘劳皆如空华水月，透脱万法虚妄，当下息灭一切攀缘取舍，于无事安闲中自成圆满解脱。",
+    "master": "中峰明本",
+    "source": "《天目中峰和尚广录》卷二十",
+    "relatedConcepts": ["huanzhu-sanmei", "sui-chu-zuo-zhu"],
+    "relatedPersons": ["zhongfeng-mingben", "gaofeng-yuanmiao"],
+    "relatedBooks": ["tianmuzhongfengguanglu", "gaofengyulu"]
+  },
+  {
+    "id": "koan-626",
+    "question": "山房夜话为何痛斥枯木死灰？",
+    "answer": "死水不藏龙枯木不生花，惺惺寂寂方见真常。",
+    "context": "中峰禅师在《山房夜话》中辨析禅门修持邪正，痛斥死执枯坐不动的顽空顽定，强调菩提自性如明镜照物胡来胡现。",
+    "interpretation": "学道切忌枯木坐禅、落入无记昏沉。真正的佛性是在日用应物中活泼泼了了觉照，寂而常照、照而常寂。",
+    "master": "中峰明本",
+    "source": "《天目中峰和尚广录》卷十二",
+    "relatedConcepts": ["daji-yuanying", "self-nature"],
+    "relatedPersons": ["zhongfeng-mingben", "linji"],
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "koan-627",
+    "question": "念佛投于乱心如何当下见佛？",
+    "answer": "清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。",
+    "context": "中峰禅师示海印居士：单提一句弥陀佛号，当下照破一切妄念烦恼，自心弥陀显现，唯心净土朗然现前。",
+    "interpretation": "念佛非向心外觅佛，一声佛号即是自性光明觉照。以佛号澄净妄心，散乱顿消，当下即是极乐净土。",
+    "master": "中峰明本",
+    "source": "《天目中峰和尚广录》卷八",
+    "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
+    "relatedPersons": ["zhongfeng-mingben", "yongming-yanshou"],
+    "relatedBooks": ["tianmuzhongfengguanglu"]
   }
 ];
 
@@ -35998,5 +36076,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "禅门修行重在“参究心源、转迷为悟”。《显扬圣教论》将庞大的心意识法相与瑜伽止观融会贯通，为禅者扫除疑情分别、提供不落偏空的金刚正见，使禅修者在静定与日用接物中皆能正念分明、直契本来。",
     "relatedQa": "koan-624",
     "relatedBooks": ["xianyangshengjiaolun", "tanjing"]
+  },
+  {
+    "id": "faq-2724",
+    "question": "《天目中峰和尚广录》由谁所著，在元代禅宗史上有何重要地位？",
+    "answer": "《天目中峰和尚广录》三十卷由元代临济宗杨岐派一代泰斗、天目山高峰原妙禅师法嗣中峰明本禅师著。明本禅师被尊为“元代禅门第一人”，元仁宗赐号佛慈圆照广慧禅师，日本高僧入华参叩，开创日本临济宗幻住派，本书为其毕生语录法语集大成之旷世巨作。",
+    "relatedQa": "koan-625",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2725",
+    "question": "中峰明本禅师为何自号“幻住道人”，其“幻住庵”有何禅宗深意？",
+    "answer": "中峰禅师体悟《圆觉经》“知幻即离，离幻即觉”之旨，了达四大肉身与山河万象皆如梦幻，故随缘结茅名“幻住庵”，以示安住世间而不为世相所缚、游戏神通之大乘无住三昧。",
+    "relatedQa": "koan-625",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2726",
+    "question": "《中峰广录》中的《山房夜话》主要阐述了哪些核心禅学见地？",
+    "answer": "《山房夜话》三卷是宗门千古名作，设数十条问答详辨顿渐邪正、批驳枯木顽空与狂慧口头禅，阐明看话禅直指心源之要诀，为后世行者树立了纯正的参修圭臬。",
+    "relatedQa": "koan-626",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2727",
+    "question": "中峰禅师如何以“清珠投于浊水”开示禅净合一的实修妙理？",
+    "answer": "中峰禅师指出：“清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。”一句弥陀佛号如摩尼宝珠，能迅速澄清心中的散乱烦恼；参禅即是念佛，念佛即是参禅，唯心净土即是自性本体。",
+    "relatedQa": "koan-627",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2728",
+    "question": "中峰明本在《信心铭辟义解》中如何阐释“至道无难，唯嫌拣择”？",
+    "answer": "中峰禅师指出，真如大道本无难易，众生之所以迷失受缚，全在内心的爱憎取舍与两边分别；若能在日常顺逆境缘中息灭拣择分别心，自性即如晴空朗照、圆满无缺。",
+    "relatedQa": "koan-625",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2729",
+    "question": "元代名士赵孟頫（松雪道人）与中峰明本禅师有怎样的深厚师友交游？",
+    "answer": "赵孟頫夫妇（管仲姬）皆虔诚依止中峰明本禅师参禅学佛，书信往来频繁（如《致中峰和尚十一札》）。中峰禅师以佛法启迪赵孟頫的出世心境，赵孟頫为中峰禅师抄写多部佛经并作传纪，成为元代禅儒交融之千古佳话。",
+    "relatedQa": "koan-625",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2730",
+    "question": "中峰明本禅师对日本禅宗法脉传播产生了怎样深远的影响？",
+    "answer": "元代日本高僧古先印元、远溪祖雄、复庵宗己等数十位尊宿远渡重洋至天目山师从中峰明本。归国后广泛开创日本临济宗“幻住派”，使中峰禅法深深融入日本禅林清规与修行传统。",
+    "relatedQa": "koan-625",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2731",
+    "question": "现代修行者如何借鉴《中峰广录》指导日常生活与禅修？",
+    "answer": "行者当效法中峰老人“随处作主，生死心切”之精神，在日常繁忙工作中不随名利八风摇摆；修持时善用话头或佛号澄净妄念，了达万法如幻，在行住坐卧中保任本来清净自性。",
+    "relatedQa": "koan-626",
+    "relatedBooks": ["tianmuzhongfengguanglu"]
   }
 ];

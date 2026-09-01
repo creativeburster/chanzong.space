@@ -1171,7 +1171,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '成善巧', pinyin: 'chéng shàn qiǎo', meaning: '通达蕴、界、处、缘起等十种法门之善巧决择大智慧' },
     { char: '三无自性', pinyin: 'sān wú zì xìng', meaning: '相无自性性、生无自性性、胜义无自性性，大乘中道密意' },
   ],
+  'tianmuzhongfengguanglu': [
+    { char: '中峰明本', pinyin: 'zhōng fēng míng běn', meaning: '元代临济宗杨岐派泰斗，高峰原妙法嗣，自号幻住庵僧' },
+    { char: '幻住庵', pinyin: 'huàn zhù ān', meaning: '中峰明本随缘结茅安居之所，意指身心世界如幻而住、当体即空' },
+    { char: '山房夜话', pinyin: 'shān fáng yè huà', meaning: '中峰和尚阐释宗门利病、辨析顿渐邪正之传世论著三卷' },
+    { char: '辟义解', pinyin: 'pì yì jiě', meaning: '开显《信心铭》深义、扫除名相文字执着之精妙注解三卷' },
+    { char: '自性弥陀', pinyin: 'zì xìng mí tuó', meaning: '自心本具之无量寿无量光清净觉性，唯心净土之禅净合一宗趣' },
+  ],
 };
+
 
 
 
