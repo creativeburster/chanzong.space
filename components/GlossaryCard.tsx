@@ -8,6 +8,7 @@ import { useLang } from '@/context/LangContext';
 export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) => {
   const { t } = useLang();
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const seen = new Set<string>();
   const entries = sourceIds
@@ -19,6 +20,10 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
     });
 
   if (entries.length === 0) return null;
+
+  const INITIAL_LIMIT = 8;
+  const shouldLimit = entries.length > INITIAL_LIMIT;
+  const visibleEntries = shouldLimit && !expanded ? entries.slice(0, INITIAL_LIMIT) : entries;
 
   return (
     <div className="mt-6 bg-white rounded-3xl border border-zinc-200 shadow-md overflow-hidden">
@@ -37,9 +42,9 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
       </button>
 
       {open && (
-        <div className="px-6 sm:px-10 pb-8">
+        <div className="px-6 sm:px-10 pb-8 space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {entries.map((entry, i) => (
+            {visibleEntries.map((entry, i) => (
               <div
                 key={i}
                 className="flex items-start gap-3 px-4 py-3 rounded-2xl bg-emerald-50/40 border border-emerald-200/50"
@@ -59,6 +64,17 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
               </div>
             ))}
           </div>
+
+          {shouldLimit && (
+            <div className="flex justify-center pt-2">
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="px-5 py-2 rounded-xl border border-emerald-200 bg-emerald-50/60 text-emerald-800 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-sm"
+              >
+                {expanded ? t('收起') : `${t('展开全部生僻字')} (${t('共')} ${entries.length} ${t('字')})`}
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>

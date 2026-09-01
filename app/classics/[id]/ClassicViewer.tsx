@@ -93,6 +93,23 @@ const THEME_STYLES: Record<
   },
 };
 
+function getSafeHtmlChunk(html: string, ratio: number): string {
+  if (ratio >= 1 || html.length < 3000) return html;
+  const targetLen = Math.ceil(html.length * ratio);
+  const closingTags = ['</p>', '</h2>', '</h3>', '</div>', '</blockquote>', '</ul>', '</ol>', '</li>'];
+  let bestPos = -1;
+  for (const tag of closingTags) {
+    const pos = html.indexOf(tag, targetLen);
+    if (pos !== -1 && (bestPos === -1 || pos < bestPos)) {
+      bestPos = pos + tag.length;
+    }
+  }
+  if (bestPos !== -1 && bestPos <= html.length) {
+    return html.slice(0, bestPos);
+  }
+  return html;
+}
+
 export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   meta,
   htmlContent,
@@ -107,6 +124,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [theme, setTheme] = useState<ReadingTheme>('paper');
   const [tocOpen, setTocOpen] = useState(false);
   const [displayRatio, setDisplayRatio] = useState(0.15);
+  const [faqsExpanded, setFaqsExpanded] = useState(false);
   const [savedProgress, setSavedProgress] = useState<number | null>(null);
   const [showProgressBanner, setShowProgressBanner] = useState(false);
   const { t } = useLang();
@@ -331,7 +349,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
                 fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
               }`}
-              dangerouslySetInnerHTML={{ __html: htmlContent.slice(0, Math.ceil(htmlContent.length * displayRatio)) }}
+              dangerouslySetInnerHTML={{ __html: getSafeHtmlChunk(htmlContent, displayRatio) }}
             />
 
             {displayRatio < 1 && (
@@ -469,15 +487,26 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-800">
                       <HelpCircle className="w-5 h-5 text-emerald-600" />
                       <span>{t('相关问答')}</span>
+                      <span className="text-xs text-emerald-700/60">({t('共')} {relFaqs.length} {t('条')})</span>
                     </div>
                     <div className="space-y-3">
-                      {relFaqs.map(f => (
+                      {(relFaqs.length > 4 && !faqsExpanded ? relFaqs.slice(0, 4) : relFaqs).map(f => (
                         <div key={f.id} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
                           <div className="text-[14px] font-semibold text-emerald-900 mb-1">{t(f.question)}</div>
                           <div className="text-[13px] text-emerald-800/80 leading-relaxed">{t(f.answer).slice(0, 120)}{f.answer.length > 120 ? '...' : ''}</div>
                         </div>
                       ))}
                     </div>
+                    {relFaqs.length > 4 && (
+                      <div className="flex justify-center pt-1">
+                        <button
+                          onClick={() => setFaqsExpanded(!faqsExpanded)}
+                          className="px-4 py-1.5 rounded-xl border border-emerald-200 text-[13px] font-semibold text-emerald-800 hover:bg-emerald-50 transition-all"
+                        >
+                          {faqsExpanded ? t('收起') : `${t('展开全部问答')} (${t('共')} ${relFaqs.length} ${t('条')})`}
+                        </button>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

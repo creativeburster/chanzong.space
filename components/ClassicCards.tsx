@@ -48,7 +48,13 @@ const CollapsibleCard: React.FC<{
 /* ===================== 1. 核心偈颂卡 ===================== */
 export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
   const { t } = useLang();
+  const [expanded, setExpanded] = useState(false);
   if (verses.length === 0) return null;
+
+  const INITIAL_LIMIT = 6;
+  const shouldLimit = verses.length > INITIAL_LIMIT;
+  const visibleVerses = shouldLimit && !expanded ? verses.slice(0, INITIAL_LIMIT) : verses;
+
   return (
     <CollapsibleCard
       icon={<ScrollText className="w-5 h-5 text-amber-700" />}
@@ -59,7 +65,7 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
       defaultOpen={true}
     >
       <div className="space-y-4">
-        {verses.map((verse, i) => {
+        {visibleVerses.map((verse, i) => {
           // 处理加粗格式
           const parts = verse.split(/\*\*/);
           return (
@@ -76,6 +82,17 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
             </div>
           );
         })}
+
+        {shouldLimit && (
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="px-5 py-2 rounded-xl border border-amber-200 bg-amber-50/60 text-amber-800 text-[13px] font-semibold hover:bg-amber-100 transition-all shadow-sm"
+            >
+              {expanded ? t('收起') : `${t('展开全部偈颂')} (${t('共')} ${verses.length} ${t('首')})`}
+            </button>
+          </div>
+        )}
       </div>
     </CollapsibleCard>
   );
@@ -84,7 +101,13 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
 /* ===================== 2. 公案精选卡 ===================== */
 export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
   const { t } = useLang();
+  const [expanded, setExpanded] = useState(false);
   if (koans.length === 0) return null;
+
+  const INITIAL_LIMIT = 4;
+  const shouldLimit = koans.length > INITIAL_LIMIT;
+  const visibleKoans = shouldLimit && !expanded ? koans.slice(0, INITIAL_LIMIT) : koans;
+
   return (
     <CollapsibleCard
       icon={<MessageCircle className="w-5 h-5 text-violet-700" />}
@@ -95,7 +118,7 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
       defaultOpen={true}
     >
       <div className="space-y-4">
-        {koans.map((koan, i) => (
+        {visibleKoans.map((koan, i) => (
           <div key={i} className="p-4 rounded-2xl bg-violet-50/60 border border-violet-200/50">
             <p className="text-[14px] font-semibold text-violet-800 mb-1">
               问：{koan.question}
@@ -105,6 +128,17 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
             </p>
           </div>
         ))}
+
+        {shouldLimit && (
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="px-5 py-2 rounded-xl border border-violet-200 bg-violet-50/60 text-violet-800 text-[13px] font-semibold hover:bg-violet-100 transition-all shadow-sm"
+            >
+              {expanded ? t('收起') : `${t('展开全部公案')} (${t('共')} ${koans.length} ${t('则')})`}
+            </button>
+          </div>
+        )}
       </div>
     </CollapsibleCard>
   );
@@ -113,7 +147,13 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
 /* ===================== 3. 祖师名言卡 ===================== */
 export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = ({ quotes, personNames }) => {
   const { t } = useLang();
+  const [expanded, setExpanded] = useState(false);
   if (quotes.length === 0) return null;
+
+  const INITIAL_LIMIT = 5;
+  const shouldLimit = quotes.length > INITIAL_LIMIT;
+  const visibleQuotes = shouldLimit && !expanded ? quotes.slice(0, INITIAL_LIMIT) : quotes;
+
   return (
     <CollapsibleCard
       icon={<Quote className="w-5 h-5 text-emerald-700" />}
@@ -123,7 +163,7 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
       colorClass="emerald"
     >
       <div className="space-y-3">
-        {quotes.map((quote, i) => {
+        {visibleQuotes.map((quote, i) => {
           const dashIdx = quote.indexOf('—');
           const text = dashIdx > 0 ? quote.substring(0, dashIdx).trim() : quote;
           const source = dashIdx > 0 ? quote.substring(dashIdx + 1).trim() : '';
@@ -138,6 +178,17 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
             </div>
           );
         })}
+
+        {shouldLimit && (
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="px-5 py-2 rounded-xl border border-emerald-200 bg-emerald-50/60 text-emerald-800 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-sm"
+            >
+              {expanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${quotes.length} ${t('则')})`}
+            </button>
+          </div>
+        )}
       </div>
     </CollapsibleCard>
   );
@@ -202,7 +253,13 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
 /* ===================== 5. 现代应用卡 ===================== */
 export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
   const { t } = useLang();
+  const [expanded, setExpanded] = useState(false);
   if (apps.length === 0) return null;
+
+  const INITIAL_LIMIT = 4;
+  const shouldLimit = apps.length > INITIAL_LIMIT;
+  const visibleApps = shouldLimit && !expanded ? apps.slice(0, INITIAL_LIMIT) : apps;
+
   return (
     <CollapsibleCard
       icon={<Globe className="w-5 h-5 text-indigo-700" />}
@@ -212,11 +269,22 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
       colorClass="indigo"
     >
       <div className="space-y-3">
-        {apps.map((app, i) => (
+        {visibleApps.map((app, i) => (
           <div key={i} className="p-4 rounded-2xl bg-indigo-50/60 border border-indigo-200/50">
             <p className="text-[14px] sm:text-[15px] leading-relaxed text-indigo-900">{app}</p>
           </div>
         ))}
+
+        {shouldLimit && (
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="px-5 py-2 rounded-xl border border-indigo-200 bg-indigo-50/60 text-indigo-800 text-[13px] font-semibold hover:bg-indigo-100 transition-all shadow-sm"
+            >
+              {expanded ? t('收起') : `${t('展开全部启示')} (${t('共')} ${apps.length} ${t('条')})`}
+            </button>
+          </div>
+        )}
       </div>
     </CollapsibleCard>
   );

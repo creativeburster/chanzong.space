@@ -23,6 +23,8 @@ interface PageProps {
 
 export default function MethodDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [stepsExpanded, setStepsExpanded] = useState(false);
+  const [pitfallsExpanded, setPitfallsExpanded] = useState(false);
   const { t } = useLang();
 
   const method = ZEN_METHODS.find((m) => m.id === params.id);
@@ -65,9 +67,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-green-900">
                 <Route className="w-5 h-5 text-green-700" />
                 <span>{t('🛤️ 参修步骤与方法')}</span>
+                <span className="text-xs text-green-700/60">({t('共')} {method.steps.length} {t('步')})</span>
               </h2>
               <div className="space-y-3 pl-4">
-                {method.steps.map((step, idx) => (
+                {(method.steps.length > 5 && !stepsExpanded ? method.steps.slice(0, 5) : method.steps).map((step, idx) => (
                   <div key={idx} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-green-500 before:rounded-full">
                     <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed">
                       {t(step)}
@@ -75,6 +78,16 @@ export default function MethodDetailPageClient({ params }: PageProps) {
                   </div>
                 ))}
               </div>
+              {method.steps.length > 5 && (
+                <div className="flex justify-center pt-1">
+                  <button
+                    onClick={() => setStepsExpanded(!stepsExpanded)}
+                    className="px-4 py-1.5 rounded-xl border border-green-200 text-[13px] font-semibold text-green-800 hover:bg-green-50 transition-all shadow-sm"
+                  >
+                    {stepsExpanded ? t('收起') : `${t('展开全部步骤')} (${t('共')} ${method.steps.length} ${t('步')})`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
@@ -84,9 +97,10 @@ export default function MethodDetailPageClient({ params }: PageProps) {
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <AlertTriangle className="w-5 h-5 text-rose-700" />
                 <span>{t('⚠️ 常见误区与警惕')}</span>
+                <span className="text-xs text-rose-700/60">({t('共')} {method.pitfalls.length} {t('条')})</span>
               </h2>
               <div className="space-y-3">
-                {method.pitfalls.map((pitfall, idx) => (
+                {(method.pitfalls.length > 4 && !pitfallsExpanded ? method.pitfalls.slice(0, 4) : method.pitfalls).map((pitfall, idx) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-rose-50 border-l-4 border-rose-500 text-[15px] font-serif-zen text-rose-800"
@@ -95,6 +109,16 @@ export default function MethodDetailPageClient({ params }: PageProps) {
                   </div>
                 ))}
               </div>
+              {method.pitfalls.length > 4 && (
+                <div className="flex justify-center pt-1">
+                  <button
+                    onClick={() => setPitfallsExpanded(!pitfallsExpanded)}
+                    className="px-4 py-1.5 rounded-xl border border-rose-200 text-[13px] font-semibold text-rose-800 hover:bg-rose-50 transition-all shadow-sm"
+                  >
+                    {pitfallsExpanded ? t('收起') : `${t('展开全部误区')} (${t('共')} ${method.pitfalls.length} ${t('条')})`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

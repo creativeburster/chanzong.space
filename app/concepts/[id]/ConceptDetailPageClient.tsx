@@ -23,6 +23,7 @@ interface PageProps {
 
 export default function ConceptDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [quotesExpanded, setQuotesExpanded] = useState(false);
   const { t } = useLang();
 
   const concept = ZEN_CONCEPTS.find((c) => c.id === params.id);
@@ -84,9 +85,10 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <Quote className="w-5 h-5 text-rose-700" />
                 <span>{t('📜 祖师金句')}</span>
+                <span className="text-xs text-rose-700/60">({t('共')} {concept.quotes.length} {t('则')})</span>
               </h2>
               <div className="space-y-3">
-                {concept.quotes.map((quote, idx) => (
+                {(concept.quotes.length > 5 && !quotesExpanded ? concept.quotes.slice(0, 5) : concept.quotes).map((quote, idx) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
@@ -95,6 +97,16 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
                   </div>
                 ))}
               </div>
+              {concept.quotes.length > 5 && (
+                <div className="flex justify-center pt-1">
+                  <button
+                    onClick={() => setQuotesExpanded(!quotesExpanded)}
+                    className="px-4 py-1.5 rounded-xl border border-rose-200 text-[13px] font-semibold text-rose-800 hover:bg-rose-50 transition-all shadow-sm"
+                  >
+                    {quotesExpanded ? t('收起') : `${t('展开全部金句')} (${t('共')} ${concept.quotes.length} ${t('则')})`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

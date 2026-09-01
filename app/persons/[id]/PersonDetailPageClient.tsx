@@ -50,12 +50,17 @@ interface PageProps {
 
 export default function PersonDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [lifeStoryExpanded, setLifeStoryExpanded] = useState(false);
+  const [quotesExpanded, setQuotesExpanded] = useState(false);
+  const [faqsExpanded, setFaqsExpanded] = useState(false);
   const { t } = useLang();
 
   const person = ZEN_PERSONS.find((p) => p.id === params.id);
   if (!person) {
     notFound();
   }
+
+  const isLongStory = person.lifeStory && person.lifeStory.length > 280;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -104,9 +109,26 @@ export default function PersonDetailPageClient({ params }: PageProps) {
               <Compass className="w-5 h-5 text-purple-700" />
               <span>{t('📌 祖师生平与求法历程')}</span>
             </h2>
-            <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed whitespace-pre-wrap">
-              {t(person.lifeStory)}
-            </p>
+            <div className="relative">
+              <p className={`text-[17px] text-slate-700 font-serif-zen leading-relaxed whitespace-pre-wrap transition-all ${
+                isLongStory && !lifeStoryExpanded ? 'line-clamp-4' : ''
+              }`}>
+                {t(person.lifeStory)}
+              </p>
+              {isLongStory && !lifeStoryExpanded && (
+                <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+              )}
+            </div>
+            {isLongStory && (
+              <div className="flex justify-center pt-1">
+                <button
+                  onClick={() => setLifeStoryExpanded(!lifeStoryExpanded)}
+                  className="px-4 py-1.5 rounded-xl border border-purple-200 text-[13px] font-semibold text-purple-800 hover:bg-purple-50 transition-all shadow-sm"
+                >
+                  {lifeStoryExpanded ? t('收起生平') : t('展开完整生平')}
+                </button>
+              </div>
+            )}
           </div>
 
           {/* 3. 核心教风 */}
@@ -126,9 +148,10 @@ export default function PersonDetailPageClient({ params }: PageProps) {
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
                 <Quote className="w-5 h-5 text-rose-700" />
                 <span>{t('📜 祖师名言警策与机锋开示')}</span>
+                <span className="text-xs text-rose-700/60">({t('共')} {person.quotes.length} {t('则')})</span>
               </h2>
               <div className="space-y-3">
-                {person.quotes.map((quote, idx) => (
+                {(person.quotes.length > 5 && !quotesExpanded ? person.quotes.slice(0, 5) : person.quotes).map((quote, idx) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
@@ -137,6 +160,16 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                   </div>
                 ))}
               </div>
+              {person.quotes.length > 5 && (
+                <div className="flex justify-center pt-1">
+                  <button
+                    onClick={() => setQuotesExpanded(!quotesExpanded)}
+                    className="px-4 py-1.5 rounded-xl border border-rose-200 text-[13px] font-semibold text-rose-800 hover:bg-rose-50 transition-all shadow-sm"
+                  >
+                    {quotesExpanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${person.quotes.length} ${t('则')})`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
@@ -231,11 +264,12 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                 <span>{t('💡 相关参究问答')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
+                items={ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).map(f => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
                 }))}
                 variant="emerald"
                 columns={3}
+                initialLimit={6}
               />
             </div>
           )}
