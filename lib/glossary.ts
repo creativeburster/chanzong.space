@@ -1199,7 +1199,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '无位真人', pinyin: 'wú wèi zhēn rén', meaning: '临济义玄直指肉团心上不落阶梯位次之清净自性活佛' },
     { char: '秦时𨍏轢钻', pinyin: 'qín shí zhé lì zuān', meaning: '睦州陈尊宿机锋用语，喻指无孔无柄、绝断一切情识测度的生铁家风' },
   ],
+  'zibailaorenquanji': [
+    { char: '紫柏真可', pinyin: 'zǐ bǎi zhēn kě', meaning: '明末四大高僧之一，号达观，力倡真参实悟，主持创刻方册本大藏经' },
+    { char: '达观大师', pinyin: 'dá guān dà shī', meaning: '紫柏真可法号达观，性情刚烈慷慨，示现大机大用，为法忘躯' },
+    { char: '嘉兴藏', pinyin: 'jiā xīng zàng', meaning: '紫柏大师首倡、憨山等襄助开雕之方册大藏经，便于翻阅普及' },
+    { char: '方册本', pinyin: 'fāng cè běn', meaning: '打破传统笨重梵夹装订、改用便于携带阅读之线装书册形式大藏经' },
+    { char: '圜中语录', pinyin: 'yuán zhōng yǔ lù', meaning: '紫柏大师晚年蒙冤罹诏狱期间所作之开示示众与壮烈临化偈颂' },
+  ],
 };
+
 
 
 

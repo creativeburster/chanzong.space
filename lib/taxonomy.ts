@@ -3627,7 +3627,10 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["chan-jiao-huitong","weishi-jiechan","xiahunsan"],
     "relatedMethods": [],
     "relatedPersons": ["hanshan-deqing"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedBooks": [
+      "zibaibieji",
+      "zibailaorenquanji"
+    ]
   },
   {
     "id": "hanshan-deqing",
@@ -10968,6 +10971,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["daji-yuanying", "banghe", "sui-chu-zuo-zhu"],
     "relatedPersons": ["ze-zang-zhu", "linji", "yunmen"],
     "relatedBooks": ["guzunsuyulu", "linji"]
+  },
+  {
+    "id": "fang-ce-zang",
+    "title": "方册大藏经",
+    "category": "护法文献",
+    "summary": "方册大藏经指明万历年间由紫柏真可倡议、憨山德清等襄助开雕之线装书册形式大藏经（嘉兴藏），改变了传统梵夹笨重难传之局限，便于普天下受持研读。",
+    "etymology": "出自紫柏真可《刻大藏经缘起》：“经教者诸佛之慧命，梵夹大本流通不易，今改刻方册，使天下学人皆得受持读诵。”",
+    "quotes": ["改梵夹为方册，续佛慧命于万代。 —《紫柏老人全集》"],
+    "guidance": "行者当珍惜法宝流通之不易，深入经藏、智慧如海，以正知见引导禅修实践。",
+    "classicRef": "紫柏老人全集 · 卷十七",
+    "relatedConcepts": ["mind-transmission", "chan-jiao-huitong"],
+    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "zhen-can-shi-wu",
+    "title": "真参实悟",
+    "category": "宗门实修",
+    "summary": "真参实悟指修行者彻底死却偷心、痛除多生微细习气、在心地深处脚踏实地做工夫，坚决反对口头文字狂禅。",
+    "etymology": "出自紫柏真可《紫柏老人全集·法语》：“今人参禅多尚口耳之学，弄几个光影门头句子便以为悟；必须真参实悟，脚踏实地。”",
+    "quotes": ["做工夫不可有丝毫自欺，必须痛下针砭，克除习气。 —《紫柏老人全集》"],
+    "guidance": "参究者不可贪图玄妙知见。于日用行住坐卧中咬定话头、历境验心，使动静一如方为真工夫。",
+    "classicRef": "紫柏老人全集 · 卷三",
+    "relatedConcepts": ["kanhuatou", "sui-chu-zuo-zhu", "daji-yuanying"],
+    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
+    "relatedBooks": ["zibailaorenquanji", "boshan-canchanjingyu"]
   }
 ];
 
@@ -19931,6 +19960,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["shi-zhong-kan-bian", "daji-yuanying"],
     "relatedPersons": ["huanglong-huinan", "ze-zang-zhu"],
     "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "koan-637",
+    "question": "紫柏老人狱中蒙难为何能从容一笑而逝？",
+    "answer": "一笑行脚了无生死，处处无心处处归程。",
+    "context": "紫柏大师晚年蒙冤罹诏狱，受酷刑肉绽见骨神色自若，临化留偈‘一笑行脚去了无死与生’端坐而化。",
+    "interpretation": "彻悟本性超越四大肉身生灭，视肉身为客尘，视死生如蜕壳脱屣，直显临济宗金刚铁骨大解脱。",
+    "master": "紫柏真可",
+    "source": "《紫柏老人全集》卷一",
+    "relatedConcepts": ["zhen-can-shi-wu", "self-nature"],
+    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "koan-638",
+    "question": "紫柏大师如何教导学者做工夫痛除习气？",
+    "answer": "死死咬定一句看定，习气除尽法身自现。",
+    "context": "紫柏大师开示参禅不可自欺，须将一句念佛是谁或无字如救头燃般死死按住，动静万缘中痛除多生习气。",
+    "interpretation": "悟后起修痛除多生微细烦恼，使行住坐卧动静一如，方能在生死苦海中获得真受用。",
+    "master": "紫柏真可",
+    "source": "《紫柏老人全集》卷五",
+    "relatedConcepts": ["zhen-can-shi-wu", "kanhuatou"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zibailaorenquanji", "boshan-canchanjingyu"]
+  },
+  {
+    "id": "koan-639",
+    "question": "紫柏大师首倡开雕方册嘉兴藏有何无上功德？",
+    "answer": "改梵夹大本为便携方册，令三藏经教遍入万家。",
+    "context": "紫柏大师见传统大藏经梵夹笨重难传，发宏誓大愿联合海内名士开雕便于阅读的方册本嘉兴藏。",
+    "interpretation": "为法忘躯利济众生，打破文字深锁高阁之障，使经教慧命长流人间，为大乘菩萨护法之极则。",
+    "master": "紫柏真可",
+    "source": "《紫柏老人全集》卷十七",
+    "relatedConcepts": ["fang-ce-zang", "chan-jiao-huitong"],
+    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
+    "relatedBooks": ["zibailaorenquanji"]
   }
 ];
 
@@ -36523,5 +36588,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "研读古尊宿语录能令学人洗尽口头狂慧与文字知解，学习先德宗师“死心办道、自食其力、随处作主”之行持，在日常日用中体认活泼泼的真如菩提。",
     "relatedQa": "koan-634",
     "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2756",
+    "question": "紫柏真可大师是谁，其在明代佛教复兴史上有何崇高地位？",
+    "answer": "紫柏真可大师（1543-1603），字达观，号紫柏，明末四大高僧之一。大师性骨奇伟、慷慨勇决，力倡“真参实悟、痛除习气”，并首倡开雕方册本《嘉兴藏》，为明代禅宗复兴树立了不朽丰碑。",
+    "relatedQa": "koan-637",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2757",
+    "question": "《紫柏老人全集》包含哪些核心部分，其思想特色是什么？",
+    "answer": "全书三十卷收录圜中语录（狱中立化实录）、十卷法语（做工夫与破妄执）、经论深解（以禅解楞严心经八识）、刻藏疏文及与憨山、袁宏道书简，展现了金刚铁骨与禅教会通之大机用。",
+    "relatedQa": "koan-637",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2758",
+    "question": "紫柏大师首创开雕的“方册本大藏经（嘉兴藏）”有何划时代意义？",
+    "answer": "打破了千余年来大藏经笨重梵夹装订深锁寺院阁楼之局限，改为轻便易翻的线装书册，使三藏经教飞入寻常士人百姓手中，为佛法典籍的保存与弘扬立下了万代功勋。",
+    "relatedQa": "koan-639",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2759",
+    "question": "紫柏大师为何痛斥“口耳之学与文字狂禅”？",
+    "answer": "大师见末法流俗学人浮泛弄口头机锋而身心烦恼习气丝毫未除，斥其为大妄语，强调修行必须脚踏实地在心地上真参实悟、死心用功。",
+    "relatedQa": "koan-638",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2760",
+    "question": "紫柏大师教导如何参看话头？",
+    "answer": "将一句‘念佛是谁’或‘无’字如救头燃般死死咬定，行住坐卧动静万缘中不令间断，久久纯熟蓦地翻转粉碎，方显本来面目。",
+    "relatedQa": "koan-638",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2761",
+    "question": "紫柏大师在《圜中语录》中示现了怎样的大解脱风骨？",
+    "answer": "晚年遭诬陷下诏狱，受酷刑拷打皮开肉绽而神色自若诵佛不辍，临终作《绝命偈》端坐从容坐化，视生死如脱屣，惊天地泣鬼神。",
+    "relatedQa": "koan-637",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2762",
+    "question": "紫柏大师与憨山德清大师之间有怎样的深厚法门交谊？",
+    "answer": "二人为明末生死至交与护法双璧，共誓复兴大乘法门——紫柏以刻藏流通为己任，憨山以著述弘法为愿力，共同谱写了明代佛教复兴之壮丽篇章。",
+    "relatedQa": "koan-637",
+    "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2763",
+    "question": "现代学人阅读《紫柏老人全集》最当汲取怎样的修行力量？",
+    "answer": "当学习大师顶天立地、不欺自心的铮铮铁骨，克服软暖浮躁之凡俗习气，在日常百忙中立定脚跟、真参实干，方不负人生难得与佛法难闻。",
+    "relatedQa": "koan-638",
+    "relatedBooks": ["zibailaorenquanji"]
   }
 ];
