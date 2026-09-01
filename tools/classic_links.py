@@ -126,6 +126,7 @@ MAP = {
  'tianmuzhongfengguanglu': [('gaofengyulu','天目法嗣'), ('xutangyulu','杨岐宗风'), ('tanjing','曹溪正宗'), ('boshan-canchanjingyu','参禅警语相承')],
  'dachengapidamojilun': [('shedachenglunben','无著同著'), ('xianyangshengjiaolun','瑜伽对法相承'), ('baifamingmenlun','百法名目所本'), ('chengweishilun','唯识名相渊源')],
  'jingdechuandenglu': [('tanjing','曹溪灯源'), ('biyanlu','公案渊源'), ('wumenguan','机锋所本'), ('congronglu','颂古史料')],
+ 'guzunsuyulu': [('jingdechuandenglu','灯史双璧'), ('zhaozhouyulu','赵州全录所本'), ('linji','临济全集源流'), ('yunmen','云门广录互映')],
 }
 
 def main():

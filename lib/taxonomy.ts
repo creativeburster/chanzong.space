@@ -4024,6 +4024,25 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["prajna"],
     "relatedPersons": ["xuanzang", "wuzhu-asanga"],
     "relatedBooks": ["chengweishilun", "weishisanshilunsong", "baifamingmenlun"]
+  },
+  {
+    "id": "ze-zang-zhu",
+    "name": "赜藏主",
+    "title": "古尊宿语录辑者 / 宋代广慧寺藏主",
+    "era": "北宋 (约11-12世纪)",
+    "lifeStory": "赜藏主，北宋禅僧，曾任广慧寺藏主。师见《传灯录》重在记述法系机缘，而诸师长篇上堂、室中垂示多有散落，遂旁搜博采，汇辑南泉、赵州、百丈、黄檗、临济、云门、真净、佛眼等二十余家唐宋宗师之原生语录，编成《古尊宿语录》四十八卷。为后世保存了最完备纯正的宗门先德真语。",
+    "teachings": "赜藏主之功，在于存先德之真语：不加后人润色删减，直录祖师室中勘辨、上堂示众之险峻大机。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
+    "quotes": [
+      "言语是载道之器，虽佛祖不得而废。",
+      "存先德之真语，起后学之沉疴。"
+    ],
+    "classics": [
+      "古尊宿语录"
+    ],
+    "relatedConcepts": ["mind-transmission", "self-nature"],
+    "relatedMethods": ["kanhuatou"],
+    "relatedPersons": ["daoyuan-monk", "zhaozhou", "linji"],
+    "relatedBooks": ["guzunsuyulu", "jingdechuandenglu"]
   }
 ];
 
@@ -10923,6 +10942,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["chuan-deng", "sui-chu-zuo-zhu", "emptiness"],
     "relatedPersons": ["daoyuan-monk", "bodhidharma"],
     "relatedBooks": ["jingdechuandenglu", "wumenguan"]
+  },
+  {
+    "id": "gu-zun-su",
+    "title": "古尊宿",
+    "category": "宗门称谓",
+    "summary": "古尊宿是对唐宋时期德高望重、具大机大用、开宗立极之禅门先德大宗师的崇高敬称。",
+    "etymology": "出自宋赜藏主所辑《古尊宿语录》序：“异时有藏主者，旁搜广采，仅得南泉而下二十二家示众机语，总曰古尊宿语。”",
+    "quotes": ["古尊宿行到说到，如国家兵器，不得已而用之。 —《古尊宿语录序》"],
+    "guidance": "参究者当体悉古尊宿老婆心切之苦心，于言语相外直取自家本来面目，不作口头知解。",
+    "classicRef": "古尊宿语录 · 序",
+    "relatedConcepts": ["mind-transmission", "daji-yuanying"],
+    "relatedPersons": ["ze-zang-zhu", "daoyuan-monk", "zhaozhou"],
+    "relatedBooks": ["guzunsuyulu", "jingdechuandenglu"]
+  },
+  {
+    "id": "shi-zhong-kan-bian",
+    "title": "室中勘辨",
+    "category": "接引法门",
+    "summary": "室中勘辨指禅师在方丈室中单对单对机勘验学僧见地真伪、运用棒喝截断学人偷心之险峻宗风。",
+    "etymology": "出自《古尊宿语录》物初大观序：“室中垂示勘辨，学者征拈代别，皆有机语流布寰中。”",
+    "quotes": ["室中垂示勘辨，针砭药饵，起死回生。 —《古尊宿语录序》"],
+    "guidance": "行者面对师家勘辨，须毫无遮掩、直下呈露自家真实见地，绝不可玩弄口头套语。",
+    "classicRef": "古尊宿语录 · 卷十三",
+    "relatedConcepts": ["daji-yuanying", "banghe", "sui-chu-zuo-zhu"],
+    "relatedPersons": ["ze-zang-zhu", "linji", "yunmen"],
+    "relatedBooks": ["guzunsuyulu", "linji"]
   }
 ];
 
@@ -19850,6 +19895,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
     "relatedPersons": ["yongming-yanshou", "daoyuan-monk"],
     "relatedBooks": ["jingdechuandenglu", "tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "koan-634",
+    "question": "睦州见僧闭门秦时钻如何截断偷心？",
+    "answer": "无孔铁锤绝断知见，秦时钻头不留余情。",
+    "context": "睦州陈尊宿每见僧来才跨门便闭门大呼莫来，问话则答秦时𨍏轢钻，以生铁家风逼令学人死尽妄情。",
+    "interpretation": "绝断一切依草附木之知解妄想，无处下口方显本来面目，大死一番自能绝后苏生。",
+    "master": "睦州陈尊宿",
+    "source": "《古尊宿语录》卷十三",
+    "relatedConcepts": ["shi-zhong-kan-bian", "gu-zun-su"],
+    "relatedPersons": ["ze-zang-zhu", "yunmen"],
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "koan-635",
+    "question": "临济面门出入无位真人如何亲证？",
+    "answer": "赤肉团上活佛常住，眼见耳闻无非本来。",
+    "context": "临济大师示众：赤肉团上有一无位真人，常从面门出入，僧问即喝无位真人是什么干矢橛。",
+    "interpretation": "自性活佛不假外求，即在目前起心动念与见闻知觉处；若起名相执着，当下便成系缚。",
+    "master": "临济义玄",
+    "source": "《古尊宿语录》卷十五",
+    "relatedConcepts": ["self-nature", "gu-zun-su"],
+    "relatedPersons": ["linji", "ze-zang-zhu"],
+    "relatedBooks": ["guzunsuyulu", "linji"]
+  },
+  {
+    "id": "koan-636",
+    "question": "黄龙三关我手何似佛手驴脚作何会？",
+    "answer": "生缘断处乾坤朗，佛手驴脚同一心。",
+    "context": "黄龙慧南禅师设三关问学者：生缘在甚处、我手何似佛手、我脚何似驴脚，天下少有契者。",
+    "interpretation": "打破圣凡情见与高下差别，佛与众生及微贱之物当下同具一心，了无分别而妙用无碍。",
+    "master": "黄龙慧南",
+    "source": "《古尊宿语录》卷三十四",
+    "relatedConcepts": ["shi-zhong-kan-bian", "daji-yuanying"],
+    "relatedPersons": ["huanglong-huinan", "ze-zang-zhu"],
+    "relatedBooks": ["guzunsuyulu"]
   }
 ];
 
@@ -36386,5 +36467,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "行者读古德机锋时切忌作逻辑分析或猜谜套解，当体会每一则公案皆是祖师在逼令学人截断妄想；将目光反观自心起心动念处，在日用应缘中践行自性清净觉照。",
     "relatedQa": "koan-632",
     "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2748",
+    "question": "《古尊宿语录》由谁纂辑，其在禅宗文献中有何独特价值？",
+    "answer": "《古尊宿语录》四十八卷由宋代沙门赜藏主汇辑，收录唐宋南岳怀让、马祖、百丈、赵州（专集八卷）、睦州、临济、云门等二十余家宗门巨匠原汁原味之上堂法语与室中对机，被公认为禅宗语录专集之开山鼻祖。",
+    "relatedQa": "koan-634",
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2749",
+    "question": "《古尊宿语录》与《景德传灯录》在体例与侧重点上有何显著区别？",
+    "answer": "《传灯录》侧重于记述法脉世系与祖师传记，许多长篇开示有所精简；《古尊宿语录》则专门收录宗师在方丈室中垂示、小参、勘辨的全篇长论与原始对话，原汁原味展现宗门实修大机大用。",
+    "relatedQa": "koan-634",
+    "relatedBooks": ["guzunsuyulu", "jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2750",
+    "question": "《古尊宿语录》中所收录的“赵州从谂禅师语录”有何重要地位？",
+    "answer": "本书卷五至卷十二完整收录赵州和尚语录共八卷，是全天下现存篇幅最大、记录最详实之赵州专集，涵盖“狗子佛性无”、“吃茶去”、“洗钵盂去”、“庭前柏树子”等千古机锋。",
+    "relatedQa": "koan-634",
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2751",
+    "question": "睦州陈尊宿接引学人为何“见僧便闭门”？",
+    "answer": "睦州机锋险绝，以闭门大呼“莫来”与“秦时𨍏轢钻”，旨在瞬间斩断学人向外寻求言句知解的偷心妄念，逼令学人在走投无路处反观自性本来。",
+    "relatedQa": "koan-634",
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2752",
+    "question": "临济大师在《古尊宿语录》中所开示的“无位真人”有何深旨？",
+    "answer": "临济直指在大家血肉身躯之中，有一尊不落阶位、超越名相的自性真佛在六根门头活泼起用；教导行者切莫向心外求佛，当下认取本具清净觉性。",
+    "relatedQa": "koan-635",
+    "relatedBooks": ["guzunsuyulu", "linji"]
+  },
+  {
+    "id": "faq-2753",
+    "question": "什么是黄龙慧南禅师著名的“黄龙三关”？",
+    "answer": "黄龙三关为：“人人尽有生缘，那个是汝生缘？”“我手何似佛手？”“我脚何似驴脚？”以绝待机锋打破学人分别执着，泯灭圣凡凡圣之别。",
+    "relatedQa": "koan-636",
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2754",
+    "question": "《古尊宿语录》中宋代杨歧派与黄龙派诸师语录体现了怎样的发展脉络？",
+    "answer": "书中详收杨歧方会、黄龙慧南、真净克文、死心悟新、佛眼清远等宋代宗门中流砥柱之语录，生动展现了临济宗在宋代分衍为杨歧、黄龙两派并盛极一时的宗风演进。",
+    "relatedQa": "koan-636",
+    "relatedBooks": ["guzunsuyulu"]
+  },
+  {
+    "id": "faq-2755",
+    "question": "现代参禅者研读《古尊宿语录》能获得哪些最宝贵的修行启迪？",
+    "answer": "研读古尊宿语录能令学人洗尽口头狂慧与文字知解，学习先德宗师“死心办道、自食其力、随处作主”之行持，在日常日用中体认活泼泼的真如菩提。",
+    "relatedQa": "koan-634",
+    "relatedBooks": ["guzunsuyulu"]
   }
 ];

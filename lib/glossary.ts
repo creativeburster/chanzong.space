@@ -1192,7 +1192,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '倒却刹竿', pinyin: 'dào què chà gān', meaning: '迦叶问阿难世尊传金襕外别传何物，阿难唤迦叶、迦叶应诺、阿难云倒却门前刹竿' },
     { char: '千七百则', pinyin: 'qiān qī bǎi zé', meaning: '《景德传灯录》所收录千七百余则禅门机锋公案，宗门参禅悟道之总库' },
   ],
+  'guzunsuyulu': [
+    { char: '古尊宿', pinyin: 'gǔ zūn sù', meaning: '唐宋禅宗德高望重、机用峻拔之历代先德宗师总称' },
+    { char: '赜藏主', pinyin: 'zé zàng zhǔ', meaning: '宋代广慧寺藏主僧，旁搜博采辑成四十八卷《古尊宿语录》' },
+    { char: '物初大观', pinyin: 'wù chū dà guān', meaning: '宋代阿育王山广利禅寺住持高僧，为《古尊宿语录》作序' },
+    { char: '无位真人', pinyin: 'wú wèi zhēn rén', meaning: '临济义玄直指肉团心上不落阶梯位次之清净自性活佛' },
+    { char: '秦时𨍏轢钻', pinyin: 'qín shí zhé lì zuān', meaning: '睦州陈尊宿机锋用语，喻指无孔无柄、绝断一切情识测度的生铁家风' },
+  ],
 };
+
 
 
 
