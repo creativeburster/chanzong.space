@@ -116,6 +116,7 @@ MAP = {
  'miyanjing': [('shedachenglunben','赖耶同源'), ('lengqiejing','印心姊妹'), ('jieshenmijing','赖耶经据'), ('dachengqixinlun','如来藏通')],
  'baoxinglun': [('dachengqixinlun','如来藏同源'), ('miyanjing','赖耶即如来藏'), ('jieshenmijing','三性经据'), ('tanjing','即心即佛')],
  'achengjilun': [('baifamingmenlun','百法名目'), ('bianzhongbianlun','三性抉择'), ('weishisanshilunsong','唯识颂本'), ('jieshenmijing','赖耶经据')],
+ 'xutangyulu': [('linji','临济正宗'), ('yangqiyulu','杨岐远源'), ('mianxianyulu','同门法脉'), ('dahuiyulu','宗门互映')],
 }
 
 def main():

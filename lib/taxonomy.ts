@@ -3850,7 +3850,26 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": [],
     "relatedPersons": [],
     "relatedBooks": ["qiaoyinyulu"]
-  }
+  },
+  {
+    "id": "xutang-zhiyu",
+    name: "虚堂智愚",
+    title: "南宋临济宗杨岐派大宗匠·日本应灯关派远祖",
+    era: "南宋 (1185 - 1269)",
+    lifeStory: "南宋临济宗著名高僧，俗姓陈，四明象山（今浙江象山）人。十六岁依普明寺僧师蕴出家，十九岁受具足戒。后历参诸方名德，终嗣法于运庵普岩禅师（松源崇岳法嗣，南岳下十九世）。师住世八十五载，历任嘉兴兴圣、报恩光孝、显孝、瑞岩、万寿、育王、净慈、径山等江南八大名刹住持，化导极盛，门风凌厉高拔。晚年住径山行化，学者云集，被尊为东南法幢之极。日本僧人南浦绍明（大应国师）入宋参扣虚堂，契悟玄旨，得虚堂智愚印可法脉与顶相偈颂。南浦绍明归国后开创日本临济宗“应灯关派”（大应国师—大灯国师—关山慧玄），日本临济宗大德寺派、妙心寺派等天下丛林皆由此繁衍而出，虚堂智愚遂被日本禅门尊为远祖。师圆寂于咸淳五年，世寿八十五，僧腊六十六，敕谥“佛智禅师”。",
+    teachings: "虚堂宗风继承杨岐方会、五祖法演以降之活泼机用，倡导“大机圆应，大道无方，随处作主”，主张以斩钉截铁之机锋照破迷执，直契本来无事之本地风光。",
+    quotes: [
+      "大机圆应，大道无方，去来不以象，动静不以心。",
+      "一气不言含有象，万灵何处谢无私。",
+      "向道莫行山下路，果然猿叫断肠声。",
+      "既能明似镜，何用曲如钩。"
+    ],
+    classics: ["虚堂和尚语录"],
+    relatedConcepts: ["daji-yuanying", "sui-chu-zuo-zhu", "buddha-nature"],
+    relatedMethods: ["kanhuatou", "banghe"],
+    relatedPersons: ["linji", "yangqifanghui", "mianxian-xianjie"],
+    relatedBooks: ["xutangyulu", "linji", "yangqiyulu"]
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -10480,7 +10499,33 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["weishi", "zhongdao", "zhongguan", "shixiang"],
     "relatedPersons": ["shiqin", "xuanzang"],
     "relatedBooks": ["weishisanshilunsong", "baifamingmenlun", "weishiershilun", "bianzhongbianlun", "jieshenmijing", "shedachenglunben"]
-  }
+  },
+  {
+    "id": "daji-yuanying",
+    title: "大机圆应",
+    category: "心性妙用",
+    summary: "大机圆应指禅者彻悟自性后，般若大机如明镜照物般圆满随顺一切因缘境界，无方所、无执著，遇物应缘而自在无碍之妙用。",
+    etymology: "出自《虚堂和尚语录》卷一：“大机圆应，大道无方，去来不以象，掇转虚空；动静不以心，当轩大坐。”",
+    quotes: ["大机圆应，大道无方，去来不以象，掇转虚空，动静不以心，当轩大坐。 —《虚堂和尚语录》"],
+    guidance: "参修时切莫落于死定空寂，当体会日用应物之处活泼泼之觉性，虽应万缘而自性本不动摇。",
+    classicRef: "虚堂和尚语录 · 卷一",
+    relatedConcepts: ["sui-chu-zuo-zhu", "self-nature"],
+    relatedPersons: ["xutang-zhiyu", "linji"],
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "sui-chu-zuo-zhu",
+    title: "随处作主",
+    category: "修持境界",
+    summary: "随处作主指修行者不被顺逆外境所转，于一切时、一切处皆能安住本来觉性，立处皆真，在任何境遇中皆能做得了心性之真正主宰。",
+    etymology: "溯源于《临济录》“随处作主，立处皆真”，《虚堂语录》发挥为“兵随印转，将逐符行，遇物应缘，随处作主”。",
+    quotes: ["兵随印转，将逐符行，遇物应缘，随处作主。 —《虚堂和尚语录》"],
+    guidance: "于日常生活与工作顺逆诸境中，常自回光返照：谁在此处作主？不随客尘流转，当下即得大自在。",
+    classicRef: "虚堂和尚语录 · 卷一",
+    relatedConcepts: ["daji-yuanying", "no-abiding"],
+    relatedPersons: ["xutang-zhiyu", "linji"],
+    relatedBooks: ["xutangyulu", "linji"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -19047,7 +19092,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["qinggui","conglin-zhidu","zhuli-zhidu"],
     "relatedPersons": ["dehui","baizhang"],
     "relatedBooks": ["chixiu-baizhang-qinggui"]
-  }
+  },
+  {
+    "id": "koan-604",
+    question: "虚堂除夜分岁一物",
+    answer: "切忌浑仑吞！",
+    context: "除夕夜小参，虚堂智愚禅师对大众开示：各方丛林都在烹龙肝凤髓大办供养，我这里荒凉没有好东西。只在深山人迹不到之处拾得一件本来之物，藏在无事匣中多年，今晚拿出来给大家分岁过年！说罢用力一卓拄杖。",
+    interpretation: "虚堂禅师以深山悬崖所拾之物，直指人人本具、亘古不磨的自性真如。最后一声“切忌浑仑吞”，当头棒喝，警示学人切莫将自性当作一个现成的实物在情识知见中囫囵吞下，必须真参实悟方见本来。",
+    master: "虚堂智愚",
+    source: "《虚堂和尚语录》卷一",
+    relatedConcepts: ["daji-yuanying", "buddha-nature"],
+    relatedPersons: ["xutang-zhiyu"],
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "koan-605",
+    question: "占波打鼓与大食作舞",
+    answer: "山僧有口只吃饭，不风流处也风流。",
+    context: "僧举三圣禅师“逢人则出，出则不为人”与兴化禅师“逢人不出，出则便为人”两则机锋请益虚堂。虚堂评曰：一人向占波国里打鼓，一人向大食国里作舞。僧问虚堂又如何？虚堂答以有口只吃饭。",
+    interpretation: "三圣与兴化各展宗门大机，虚堂借“占波打鼓大食作舞”照破一切宗门玄奥套路之执念，回归到“有口只吃饭”的平常日用无事风光，平实之中极尽潇洒风流。",
+    master: "虚堂智愚",
+    source: "《虚堂和尚语录》卷一",
+    relatedConcepts: ["daji-yuanying", "sui-chu-zuo-zhu"],
+    relatedPersons: ["xutang-zhiyu", "linji"],
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "koan-606",
+    question: "寒山子为何笑点头？",
+    answer: "既能明似镜，何用曲如钩。",
+    context: "中秋夜上堂，虚堂举“金风吹落叶，玉露滴清秋，尀耐寒山子，无言笑点头”，问大众寒山子到底在笑什么，随即击拂子作答。",
+    interpretation: "众生自心本如中秋明月般圆满清净、明彻如镜，却偏偏生起千万般机巧妄想与曲折情执（曲如钩）。寒山子的笑与虚堂的答，皆在直指自性本直、何须自扰。",
+    master: "虚堂智愚",
+    source: "《虚堂和尚语录》卷一",
+    relatedConcepts: ["self-nature", "daji-yuanying"],
+    relatedPersons: ["xutang-zhiyu"],
+    relatedBooks: ["xutangyulu"]
+  },
 ];
 
 export const ZEN_FAQS: FAQItem[] = [
@@ -35024,4 +35105,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "relatedQa": "faq-2666",
     "relatedBooks": ["chixiu-baizhang-qinggui"]
   },
+  {
+    "id": "faq-2668",
+    question: "《虚堂和尚语录》的核心主旨与宗风特色是什么？",
+    answer: "《虚堂和尚语录》是南宋临济宗杨岐派大宗匠虚堂智愚禅师的传世语录。全书十卷，宗风以峻拔精微、机锋凌厉著称，直倡“大机圆应，大道无方，随处作主”，主张破除学者对禅道言句的死执，直透父母未生前的本来面目。",
+    relatedQa: "koan-604",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2669",
+    question: "虚堂智愚禅师在日本禅宗史上为何具有崇高地位？",
+    answer: "日本高僧南浦绍明（大应国师）入宋参叩虚堂智愚，得其法嗣真传与印可墨宝。南浦绍明归国后开创日本临济宗“应灯关派”（大应—大灯—关山），日本临济宗大德寺派、妙心寺派等天下丛林皆由此繁衍而出，虚堂智愚因而被日本禅门尊为开山远祖。",
+    relatedQa: "koan-604",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2670",
+    question: "虚堂禅师如何解释“大机圆应”与“随处作主”？",
+    answer: "虚堂禅师开示：“大机圆应，大道无方。去来不以象，掇转虚空；动静不以心，当轩大坐。兵随印转，将逐符行，遇物应缘，随处作主。”意指大智慧如明镜照物圆满无碍，遇到任何因缘都能随缘应照，在任何处所都能自在做主，不随境转。",
+    relatedQa: "koan-605",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2671",
+    question: "虚堂除夜小参中“分岁一物”有何深意？",
+    answer: "除夜小参中，虚堂禅师称在人迹罕至的深山悬崖捡得一物分给大众，并卓拄杖喝道“切忌浑仑吞”。这是以本分事直指人人本具的佛性真如，同时警诫学者切莫死在语言文字的知见之中。",
+    relatedQa: "koan-604",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2672",
+    question: "虚堂禅师评“三圣逢人出”与“兴化逢人不出”表达了什么宗门见地？",
+    answer: "虚堂以“一人占波国里打鼓，一人大食国里作舞”打破了二人的执见，并以“山僧有口只吃饭，不风流处也风流”展示了宗门不立奇特、回归平常日用解脱的最高境界。",
+    relatedQa: "koan-605",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2673",
+    question: "虚堂语录中的百则颂古有何独特价值？",
+    answer: "虚堂语录卷六至卷七收录了一百则精妙的颂古，语言优美典雅而机锋内蕴，将灵山拈花、达摩安心、赵州狗子等千古公案以灵动的诗偈重新点化，是宋代禅林文学与修证公案的典范之作。",
+    relatedQa: "koan-606",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2674",
+    question: "修行者如何将虚堂禅师的“随处作主”落实到现代日常生活中？",
+    answer: "在现代生活的纷繁复杂与工作顺逆境遇中，不随贪嗔得失之客尘境象妄动流转，时刻回光反照当下觉照的心体，明了万物皆是自心所现，便能在一切处安详自在做得了主。",
+    relatedQa: "koan-605",
+    relatedBooks: ["xutangyulu"]
+  },
+  {
+    "id": "faq-2675",
+    question: "虚堂语录与《临济录》《杨岐语录》有怎样的法脉传承关系？",
+    answer: "虚堂智愚为临济宗杨岐派第十六世孙，直承临济义玄与杨岐方会之正统法脉。其语录既有临济棒喝之雷霆万钧，又具杨岐家风之幽默洒脱，是南宋临济杨岐派禅法集大成的代表作。",
+    relatedQa: "koan-604",
+    relatedBooks: ["xutangyulu", "linji", "yangqiyulu"]
+  },
 ];
+

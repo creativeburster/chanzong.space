@@ -1122,4 +1122,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '九种譬喻', pinyin: 'jiǔ zhǒng pì yù', meaning: '宝性论用萎花佛、地中宝等九喻明一切众生皆有如来藏' },
     { char: '客尘', pinyin: 'kè chén', meaning: '烦恼非自性所有，如外来宾客与浮游微尘' },
   ],
+  'xutangyulu': [
+    { char: '虚堂智愚', pinyin: 'xū táng zhì yú', meaning: '南宋临济宗杨岐派大宗匠，日本临济宗应灯关派远祖' },
+    { char: '榾柮', pinyin: 'gǔ duò', meaning: '块状柴木，禅门常借“榾柮火”喻暗中微温、本地风光' },
+    { char: '栗棘蓬', pinyin: 'lì jí péng', meaning: '带硬刺之板栗壳，禅门喻吞不进吐不出、绝断情识之公案机锋' },
+    { char: '蹲鸱', pinyin: 'dūn chī', meaning: '大芋头，形如蹲伏之鸱鸟，禅僧山居常食之粗羹' },
+    { char: '豏', pinyin: 'xiàn', meaning: '糕饼肉馅，语录中“铁酸豏”喻无从下口之险绝公案' },
+  ],
 };
+
