@@ -4,5 +4,5 @@ export const STATS = {
   methods: 91,
   koans: 555,
   persons: 197,
-  faqs: 1959,
+  faqs: 1972,
 };

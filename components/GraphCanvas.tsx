@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, MoveVertical } from 'lucide-react';
+import { RotateCcw, MoveVertical, Plus, Minus } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 
@@ -305,12 +305,35 @@ export const GraphCanvas: React.FC = () => {
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const svgRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined> | null>(null);
 
+  const updateTooltipPos = (clientX: number, clientY: number) => {
+    const tip = tooltipRef.current;
+    if (!tip) return;
+    const pad = 15;
+    const tipWidth = tip.offsetWidth || 260;
+    const tipHeight = tip.offsetHeight || 100;
+    const winWidth = typeof window !== 'undefined' ? window.innerWidth : 800;
+    const winHeight = typeof window !== 'undefined' ? window.innerHeight : 600;
+
+    let x = clientX + pad;
+    let y = clientY + pad;
+
+    // 移动端/右边界防溢出
+    if (x + tipWidth > winWidth - 12) {
+      x = Math.max(12, clientX - tipWidth - pad);
+    }
+    // 下边界防溢出
+    if (y + tipHeight > winHeight - 12) {
+      y = Math.max(12, clientY - tipHeight - pad);
+    }
+
+    tip.style.left = `${x}px`;
+    tip.style.top = `${y}px`;
+  };
+
   // tooltip 直接操作 DOM：避免鼠标移动触发 React 整组件重渲染
   const showTooltip = (event: { clientX: number; clientY: number }, d: NodeData) => {
     const tip = tooltipRef.current;
     if (!tip) return;
-    tip.style.left = `${event.clientX + 15}px`;
-    tip.style.top = `${event.clientY + 15}px`;
     tip.style.borderColor = colorMap[d.type] || '#fff';
     const nameEl = tip.querySelector('[data-name]');
     const descEl = tip.querySelector('[data-desc]');
@@ -321,13 +344,11 @@ export const GraphCanvas: React.FC = () => {
     if (tagEl) tagEl.textContent = typeLabelMap[d.type] || d.type;
     if (dotEl) dotEl.style.backgroundColor = colorMap[d.type];
     tip.style.opacity = '1';
+    updateTooltipPos(event.clientX, event.clientY);
   };
 
   const moveTooltip = (event: { clientX: number; clientY: number }) => {
-    const tip = tooltipRef.current;
-    if (!tip) return;
-    tip.style.left = `${event.clientX + 15}px`;
-    tip.style.top = `${event.clientY + 15}px`;
+    updateTooltipPos(event.clientX, event.clientY);
   };
 
   const hideTooltip = () => {
@@ -620,6 +641,15 @@ export const GraphCanvas: React.FC = () => {
     setVisible((prev) => ({ ...prev, [t]: !prev[t] }));
   };
 
+  const handleZoomBy = (factor: number) => {
+    if (svgRef.current && zoomRef.current) {
+      svgRef.current.transition().duration(300).call(zoomRef.current.scaleBy, factor);
+    }
+  };
+
+  const handleZoomIn = () => handleZoomBy(1.3);
+  const handleZoomOut = () => handleZoomBy(0.77);
+
   const handleReset = () => {
     if (svgRef.current && zoomRef.current && containerRef.current) {
       const width = containerRef.current.clientWidth || 860;
@@ -654,39 +684,77 @@ export const GraphCanvas: React.FC = () => {
     <div className="relative w-full flex items-start gap-4">
       {/* 1. 黑色背景主图谱卡片：默认呈现一朵八瓣莲，右缘为滚轮缩放通道 */}
       <div
-        className="relative flex-1 h-[75vh] min-h-[540px] md:h-[86vh] md:min-h-[660px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800"
+        className="relative flex-1 h-[70vh] min-h-[480px] md:h-[86vh] md:min-h-[660px] bg-[#0B1329] rounded-3xl overflow-hidden shadow-2xl border border-slate-800"
         ref={containerRef}
       >
-        {/* Filter chips (右上角分类筛选) */}
-        <div className="absolute top-4 right-4 z-10 flex flex-wrap justify-end gap-2 max-w-[55%]">
+        {/* Filter chips (右上角分类筛选：支持移动端横向滑动) */}
+        <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[80%] md:max-w-[55%] overflow-x-auto no-scrollbar py-1 px-1">
           {FILTER_TYPES.map((t) => (
             <button
               key={t}
               onClick={() => toggleType(t)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
+              className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[11px] md:text-xs font-bold border transition-all shrink-0 ${
                 visible[t]
                   ? 'bg-white/15 border-white/30 text-white shadow-sm'
                   : 'bg-transparent border-white/10 text-white/35 line-through'
               }`}
             >
-              <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
+              <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
               {typeLabelMap[t]} {COUNTS[t]}
             </button>
           ))}
         </div>
 
-        {/* 左上角缩放区已移除：黑色区域内滚轮直接缩放图谱 */}
-      </div>
-
-      {/* 2. 右侧悬浮操作面板（复位）与页面滚动指引 */}
-      <div className="sticky top-28 flex flex-col items-center space-y-3 z-30 py-2">
-        <div className="flex flex-col items-center bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl">
+        {/* 移动端浮动操作按钮组（右下角） */}
+        <div className="absolute bottom-4 right-4 z-20 flex md:hidden items-center bg-slate-900/80 backdrop-blur-md border border-white/20 rounded-full p-1 shadow-lg gap-1">
+          <button
+            onClick={handleZoomIn}
+            className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white active:bg-white/20 rounded-full transition-colors"
+            title="放大"
+          >
+            <Plus className="w-4 h-4" />
+          </button>
+          <button
+            onClick={handleZoomOut}
+            className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white active:bg-white/20 rounded-full transition-colors"
+            title="缩小"
+          >
+            <Minus className="w-4 h-4" />
+          </button>
           <button
             onClick={handleReset}
-            className="p-2.5 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all hover:scale-110 active:scale-95"
+            className="w-8 h-8 flex items-center justify-center text-amber-400 hover:text-amber-300 active:bg-white/20 rounded-full transition-colors"
+            title="复位"
+          >
+            <RotateCcw className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* 2. 桌面端右侧悬浮操作面板（复位、缩放）与页面滚动指引 */}
+      <div className="hidden md:flex sticky top-28 flex-col items-center space-y-3 z-30 py-2">
+        <div className="flex flex-col items-center bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-slate-200 shadow-xl space-y-1">
+          <button
+            onClick={handleZoomIn}
+            className="p-2 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all active:scale-95"
+            title="放大图谱"
+          >
+            <Plus className="w-4 h-4" />
+          </button>
+          <button
+            onClick={handleZoomOut}
+            className="p-2 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all active:scale-95"
+            title="缩小图谱"
+          >
+            <Minus className="w-4 h-4" />
+          </button>
+          <div className="w-4 border-t border-slate-200 my-0.5" />
+          <button
+            onClick={handleReset}
+            className="p-2 text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-all active:scale-95"
             title="复位图谱全貌"
           >
-            <RotateCcw className="w-5 h-5" />
+            <RotateCcw className="w-4 h-4" />
           </button>
         </div>
 
@@ -695,7 +763,7 @@ export const GraphCanvas: React.FC = () => {
           <MoveVertical className="w-4 h-4 text-amber-700 animate-bounce mb-1" />
           <span className="font-bold">鼠标指针放在黑色区域以外时，滚轮可滚动整页</span>
           <span className="mt-1.5 pt-1.5 border-t border-amber-200 text-amber-800/80">指针放在黑色区域内操作滚轮＝缩放图谱</span>
-          <span className="mt-1 text-amber-800/70">上方圆形箭头＝复位图谱</span>
+          <span className="mt-1 text-amber-800/70">上方按钮＝缩放与复位</span>
         </div>
       </div>
 

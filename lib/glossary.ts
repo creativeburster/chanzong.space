@@ -6,119 +6,14 @@ export interface GlossaryEntry {
 }
 
 export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
-  tanjing: [
-    { char: '薙', pinyin: 'tì', meaning: '剃除，指剃发出家' },
-    { char: '獦', pinyin: 'gé', meaning: '獦獠，古时对南方少数民族的贬称' },
-    { char: '獠', pinyin: 'liáo', meaning: '同上，獦獠连用' },
-    { char: '碓', pinyin: 'duì', meaning: '舂米的器具' },
-    { char: '偈', pinyin: 'jì', meaning: '佛经中的颂诗、诗偈' },
-    { char: '阖', pinyin: 'hé', meaning: '全、都' },
-    { char: '刹那', pinyin: 'chà nà', meaning: '极短的时间，一瞬间' },
-    { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
-    { char: '波罗蜜', pinyin: 'bō luó mì', meaning: '到彼岸，即从生死此岸到达涅槃彼岸' },
-    { char: '阿耨多罗三藐三菩提', pinyin: 'ā nòu duō luó sān miǎo sān pú tí', meaning: '无上正等正觉，佛果的智德' },
-  ],
-  jingangjing: [
-    { char: '祇', pinyin: 'qí', meaning: '祇树给孤独园，佛说法处' },
-    { char: '衲', pinyin: 'nà', meaning: '僧衣，也指僧人' },
-    { char: '恒河沙', pinyin: 'héng hé shā', meaning: '比喻数量极多，如恒河中的沙粒' },
-    { char: '须菩提', pinyin: 'xū pú tí', meaning: '佛陀十大弟子之一，解空第一' },
-    { char: '阿兰那', pinyin: 'ā lán nà', meaning: '寂静处，修行之所' },
-    { char: '筏', pinyin: 'fá', meaning: '竹筏，比喻佛法为渡河工具' },
-    { char: '诃', pinyin: 'hē', meaning: '呵斥、责备' },
-  ],
-  xinjing: [
-    { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
-    { char: '波罗蜜多', pinyin: 'bō luó mì duō', meaning: '到彼岸，超越生死到达涅槃' },
-    { char: '羯谛', pinyin: 'jié dì', meaning: '咒语，意为"去"——超越生死' },
-    { char: '僧羯谛', pinyin: 'sēng jié dì', meaning: '咒语，意为"完全去"——究竟超越' },
-    { char: '菩提', pinyin: 'pú tí', meaning: '觉、智，佛果的智德' },
-    { char: '萨婆诃', pinyin: 'sà pó hē', meaning: '咒语结语，意为"成就"' },
-  ],
-  yuanjuejing: [
-    { char: '骛', pinyin: 'wù', meaning: '追求、追逐' },
-    { char: '棼', pinyin: 'fén', meaning: '纷乱、交错' },
-    { char: '翳', pinyin: 'yì', meaning: '遮蔽、障蔽' },
-    { char: '幻', pinyin: 'huàn', meaning: '虚幻不实，如幻术' },
-    { char: '奢摩他', pinyin: 'shē mó tā', meaning: '止，禅定的第一阶段——心专注一境' },
-    { char: '三摩钵提', pinyin: 'sān mó bō tí', meaning: '观，禅定的第二阶段——于定中起观' },
-    { char: '禅那', pinyin: 'chán nà', meaning: '静虑，禅定的第三阶段——止观双运' },
-    { char: '陀罗尼', pinyin: 'tuó luó ní', meaning: '总持，能持集无量善法、遮止恶法' },
-  ],
-  lengyanjing: [
-    { char: '洎', pinyin: 'jì', meaning: '及、到' },
-    { char: '麈', pinyin: 'zhǔ', meaning: '鹿类，尾毛可做拂尘；麈尾即说法时所用拂尘' },
-    { char: '殒', pinyin: 'yǔn', meaning: '死亡、坠落' },
-    { char: '抟', pinyin: 'tuán', meaning: '把东西揉成球形' },
-    { char: '醐', pinyin: 'hú', meaning: '醍醐，酥酪提炼出的最精纯之物，喻佛果' },
-    { char: '醍', pinyin: 'tí', meaning: '同上，醍醐连用' },
-    { char: '阿难', pinyin: 'ā nán', meaning: '佛陀堂弟，多闻第一' },
-    { char: '摩登伽', pinyin: 'mó dēng jiā', meaning: '低种姓女子，以咒术迷惑阿难' },
-    { char: '毘', pinyin: 'pí', meaning: '同"毗"，相近、相邻' },
-    { char: '楞严', pinyin: 'léng yán', meaning: '一切事究竟坚固，此经名' },
-  ],
-  weimojiejing: [
-    { char: '维摩诘', pinyin: 'wéi mó jié', meaning: '在家菩萨，意为"净名"——清净无垢' },
-    { char: '毘耶离', pinyin: 'pí yē lí', meaning: '古印度城名，维摩诘居住之地' },
-    { char: '殁', pinyin: 'mò', meaning: '死亡' },
-    { char: '诃', pinyin: 'hē', meaning: '呵斥、责备' },
-    { char: '寤', pinyin: 'wù', meaning: '醒悟、觉醒' },
-    { char: '筌', pinyin: 'quán', meaning: '捕鱼竹器，比喻言教为得鱼之工具' },
-    { char: '蹄', pinyin: 'tí', meaning: '捕兔网，与"筌"同喻工具' },
-    { char: '阿閦佛', pinyin: 'ā chù fó', meaning: '东方不动佛，意为"不动"' },
-    { char: '殃', pinyin: 'yāng', meaning: '灾祸' },
-    { char: '缶', pinyin: 'fǒu', meaning: '瓦器，盛酒浆的陶器' },
-  ],
-  xinxinming: [
-    { char: '至道', pinyin: 'zhì dào', meaning: '最高的道，指佛道、真如' },
-    { char: '憎爱', pinyin: 'zēng ài', meaning: '厌恶与贪爱，一切烦恼的根源' },
-    { char: '洞然', pinyin: 'dòng rán', meaning: '清楚明白的样子' },
-    { char: '泯', pinyin: 'mǐn', meaning: '消灭、消除' },
-    { char: '毫厘', pinyin: 'háo lí', meaning: '极微小的差别' },
-    { char: '差', pinyin: 'cī', meaning: '差别、不同（读cī时不作"错误"解）' },
-  ],
-  zhengdaoge: [
-    { char: '兀', pinyin: 'wù', meaning: '高耸特立的样子' },
-    { char: '迥', pinyin: 'jiǒng', meaning: '远、差得远' },
-    { char: '澄', pinyin: 'chéng', meaning: '水静而清' },
-    { char: '皎', pinyin: 'jiǎo', meaning: '洁白明亮' },
-    { char: '渊', pinyin: 'yuān', meaning: '深水、深潭' },
-  ],
-  shiniutu: [
-    { char: '廛', pinyin: 'chán', meaning: '市集、店铺集中的街道；入廛即入市井' },
-    { char: '跣', pinyin: 'xiǎn', meaning: '赤脚、光脚' },
-    { char: '迤逦', pinyin: 'yǐ lǐ', meaning: '曲折连绵、缓缓行走的样子' },
-    { char: '羌笛', pinyin: 'qiāng dí', meaning: '古代西北少数民族的管乐器' },
-    { char: '懡㦬', pinyin: 'mǒ luǒ', meaning: '羞愧、惭愧的样子' },
-    { char: '廓庵', pinyin: 'kuò ān', meaning: '禅师号，南宋临济宗杨岐派' },
-    { char: '威音劫', pinyin: 'wēi yīn jié', meaning: '最古远的劫名，指天地未分之前的绝对时间' },
-    { char: '筌鱼', pinyin: 'quán yú', meaning: '筌为捕鱼工具，喻言教为工具' },
-    { char: '蹄兔', pinyin: 'tí tù', meaning: '蹄为捕兔网，喻与筌同' },
-  ],
-  chanlinbaoxun: [
-    { char: '衲子', pinyin: 'nà zǐ', meaning: '僧人，穿衲衣者' },
-    { char: '苞苴', pinyin: 'bāo jū', meaning: '贿赂、馈赠之物' },
-    { char: '砭', pinyin: 'biān', meaning: '古代治病的石针，引申为规劝、救治' },
-    { char: '褫', pinyin: 'chǐ', meaning: '剥夺、脱去' },
-    { char: '谮', pinyin: 'zèn', meaning: '诬陷、中伤' },
-    { char: '刍', pinyin: 'chú', meaning: '割草、草料' },
-    { char: '舂', pinyin: 'chōng', meaning: '用杵臼捣谷物去壳' },
-    { char: '爨', pinyin: 'cuàn', meaning: '烧火做饭' },
-    { char: '恣', pinyin: 'zì', meaning: '放纵、无拘束' },
-    { char: '谧', pinyin: 'mì', meaning: '安静、静默' },
-  ],
-  qifo: [
-    { char: '毗婆尸', pinyin: 'pí pó shī', meaning: '过去七佛之第一佛，意为"胜观"' },
-    { char: '尸弃', pinyin: 'shī qì', meaning: '过去七佛之第二佛，意为"最上"' },
-    { char: '毗舍浮', pinyin: 'pí shè fú', meaning: '过去七佛之第三佛，意为"一切胜"' },
+  'qifo': [
     { char: '拘留孙', pinyin: 'jū liú sūn', meaning: '过去七佛之第四佛' },
-    { char: '拘那含牟尼', pinyin: 'jū nà hán móu ní', meaning: '过去七佛之第五佛，意为"金寂"' },
     { char: '迦叶', pinyin: 'jiā shè', meaning: '过去七佛之第六佛，亦指佛陀大弟子' },
     { char: '偈', pinyin: 'jì', meaning: '佛经中的颂诗、诗偈' },
     { char: '聚沫', pinyin: 'jù mò', meaning: '聚集的水泡，比喻身体虚幻不实' },
     { char: '正法眼藏', pinyin: 'zhèng fǎ yǎn zàng', meaning: '禅宗指佛陀心传的究竟法门' },
   ],
-  juelin: [
+  'juelin': [
     { char: '觉林', pinyin: 'jué lín', meaning: '菩萨名，出自《华严经》' },
     { char: '大种', pinyin: 'dà zhǒng', meaning: '地水火风四大元素' },
     { char: '五蕴', pinyin: 'wǔ yùn', meaning: '色受想行识，构成身心的五种要素' },
@@ -127,7 +22,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '一行三昧', pinyin: 'yī xíng sān mèi', meaning: '专一系缘法界的禅定' },
     { char: '舍利弗', pinyin: 'shè lì fú', meaning: '佛陀十大弟子之一，智慧第一' },
   ],
-  wenshu: [
+  'wenshu': [
     { char: '文殊师利', pinyin: 'wén shū shī lì', meaning: '大智菩萨，智慧第一的菩萨' },
     { char: '摩诃般若', pinyin: 'mó hē bō rě', meaning: '大智慧，通达诸法实相的究竟智慧' },
     { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
@@ -137,7 +32,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '舍利弗', pinyin: 'shè lì fú', meaning: '佛陀十大弟子之一，智慧第一' },
     { char: '曼陀罗仙', pinyin: 'màn tuó luó xiān', meaning: '梁代译经僧，译出《文殊说般若经》' },
   ],
-  wuran: [
+  'wuran': [
     { char: '莲花生', pinyin: 'lián huā shēng', meaning: '藏传佛教宁玛派祖师' },
     { char: '觉性', pinyin: 'jué xìng', meaning: '本觉之性，众生本具的灵知灵觉' },
     { char: '三味耶', pinyin: 'sān mèi yē', meaning: '密宗誓约、印契' },
@@ -150,7 +45,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '瑜珈', pinyin: 'yú jiā', meaning: '相应、结合，密宗修法之一' },
     { char: '无明', pinyin: 'wú míng', meaning: '不觉、愚痴，一切烦恼的根本' },
   ],
-  zhangzhi: [
+  'zhangzhi': [
     { char: '兰若', pinyin: 'lán rě', meaning: '阿兰若的简称，寂静处、寺院' },
     { char: '曼达', pinyin: 'màn dá', meaning: '密宗供养法器，象征宇宙供养' },
     { char: '明觉', pinyin: 'míng jué', meaning: '清明觉知，本觉的灵知作用' },
@@ -159,7 +54,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '常见', pinyin: 'cháng jiàn', meaning: '执着万法恒常不变的错误见解' },
     { char: '断见', pinyin: 'duàn jiàn', meaning: '执着万法断灭归无的错误见解' },
   ],
-  xuemaicong: [
+  'xuemaicong': [
     { char: '菩提', pinyin: 'pú tí', meaning: '觉、智，佛果的智德' },
     { char: '涅槃', pinyin: 'niè pán', meaning: '烦恼熄灭的究竟解脱境界' },
     { char: '三界', pinyin: 'sān jiè', meaning: '欲界、色界、无色界，众生生死轮回的范围' },
@@ -170,13 +65,13 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '皂白', pinyin: 'zào bái', meaning: '黑白，比喻是非善恶' },
     { char: '无间地狱', pinyin: 'wú jiān dì yù', meaning: '受苦无间断的地狱，最苦之处' },
   ],
-  wuxinglun: [
+  'wuxinglun': [
     { char: '寂照', pinyin: 'jì zhào', meaning: '寂而常照、照而常寂，定慧一体的境界' },
     { char: '大圆镜智', pinyin: 'dà yuán jìng zhì', meaning: '转第八识所成之智，如大圆镜映现万法' },
     { char: '无念', pinyin: 'wú niàn', meaning: '不执着妄念，非无心如木石' },
     { char: '三昧', pinyin: 'sān mèi', meaning: '正定，心专注一境而不散乱' },
   ],
-  poxianglun: [
+  'poxianglun': [
     { char: '六度', pinyin: 'liù dù', meaning: '布施、持戒、忍辱、精进、禅定、般若六种修行' },
     { char: '名相', pinyin: 'míng xiàng', meaning: '事物的名称和表相，非实相本体' },
     { char: '伽蓝', pinyin: 'qié lán', meaning: '寺院，僧伽蓝摩的简称' },
@@ -184,18 +79,18 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '持犯', pinyin: 'chí fàn', meaning: '持戒与犯戒' },
     { char: '福田', pinyin: 'fú tián', meaning: '种福之田，比喻供养布施能生福报' },
   ],
-  wuxinlun: [
+  'wuxinlun': [
     { char: '无心', pinyin: 'wú xīn', meaning: '无妄心，非无真心；不起执着分别' },
     { char: '涅槃', pinyin: 'niè pán', meaning: '烦恼熄灭的究竟解脱境界' },
     { char: '妄心', pinyin: 'wàng xīn', meaning: '虚妄分别之心，执着外境之念' },
     { char: '真心', pinyin: 'zhēn xīn', meaning: '本来自性清净之心' },
   ],
-  xixulun: [
+  'xixulun': [
     { char: '无生法忍', pinyin: 'wú shēng fǎ rěn', meaning: '忍可诸法本自无生之真理' },
     { char: '狂心', pinyin: 'kuáng xīn', meaning: '狂乱的妄想心，歇下即菩提' },
     { char: '顿悟', pinyin: 'dùn wù', meaning: '顿时悟入本来实相' },
   ],
-  sixingguan: [
+  'sixingguan': [
     { char: '报冤行', pinyin: 'bào yuān xíng', meaning: '逢苦不怨，认旧业而不报新怨' },
     { char: '随缘行', pinyin: 'suí yuán xíng', meaning: '苦乐随缘，得失不动' },
     { char: '无所求行', pinyin: 'wú suǒ qiú xíng', meaning: '万有皆空，无所贪求' },
@@ -203,7 +98,14 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '理入', pinyin: 'lǐ rù', meaning: '藉教悟宗，深信含生同一真性' },
     { char: '行入', pinyin: 'xíng rù', meaning: '四行实践，于日常中磨炼心性' },
   ],
-  fangcunlun: [
+  'xinxinming': [
+    { char: '至道', pinyin: 'zhì dào', meaning: '最高的道，指佛道、真如' },
+    { char: '憎爱', pinyin: 'zēng ài', meaning: '厌恶与贪爱，一切烦恼的根源' },
+    { char: '洞然', pinyin: 'dòng rán', meaning: '清楚明白的样子' },
+    { char: '泯', pinyin: 'mǐn', meaning: '消灭、消除' },
+    { char: '毫厘', pinyin: 'háo lí', meaning: '极微小的差别' },
+  ],
+  'fangcunlun': [
     { char: '方寸', pinyin: 'fāng cùn', meaning: '心，古人以方寸之地喻心' },
     { char: '须弥', pinyin: 'xū mí', meaning: '须弥山，佛教宇宙观中的世界中心' },
     { char: '涅槃', pinyin: 'niè pán', meaning: '烦恼熄灭的究竟解脱境界' },
@@ -211,7 +113,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '中道', pinyin: 'zhōng dào', meaning: '离空有二边的不二之道' },
     { char: '灵山', pinyin: 'líng shān', meaning: '灵鹫山，佛说法处；亦指自心清净处' },
   ],
-  anxin: [
+  'anxin': [
     { char: '蕲州', pinyin: 'qí zhōu', meaning: '古地名，今湖北蕲春一带' },
     { char: '一行三昧', pinyin: 'yī xíng sān mèi', meaning: '专一系缘法界的禅定' },
     { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
@@ -222,7 +124,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '三昧', pinyin: 'sān mèi', meaning: '正定，心专注一境而不散乱' },
     { char: '泯然', pinyin: 'mǐn rán', meaning: '消融、消失的样子' },
   ],
-  zuishangcheng: [
+  'zuishangcheng': [
     { char: '金刚佛性', pinyin: 'jīn gāng fó xìng', meaning: '坚固不坏、能破一切的佛性' },
     { char: '五阴', pinyin: 'wǔ yīn', meaning: '即五蕴：色受想行识' },
     { char: '涅槃', pinyin: 'niè pán', meaning: '烦恼熄灭的究竟解脱境界' },
@@ -232,7 +134,26 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '凝然', pinyin: 'níng rán', meaning: '安定不动摇的样子' },
     { char: '守心', pinyin: 'shǒu xīn', meaning: '守护本心不令散乱，五祖弘忍的核心教法' },
   ],
-  mazu: [
+  'tanjing': [
+    { char: '薙', pinyin: 'tì', meaning: '剃除，指剃发出家' },
+    { char: '獦', pinyin: 'gé', meaning: '獦獠，古时对南方少数民族的贬称' },
+    { char: '獠', pinyin: 'liáo', meaning: '同上，獦獠连用' },
+    { char: '碓', pinyin: 'duì', meaning: '舂米的器具' },
+    { char: '偈', pinyin: 'jì', meaning: '佛经中的颂诗、诗偈' },
+    { char: '阖', pinyin: 'hé', meaning: '全、都' },
+    { char: '刹那', pinyin: 'chà nà', meaning: '极短的时间，一瞬间' },
+    { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
+    { char: '波罗蜜', pinyin: 'bō luó mì', meaning: '到彼岸，即从生死此岸到达涅槃彼岸' },
+    { char: '阿耨多罗三藐三菩提', pinyin: 'ā nòu duō luó sān miǎo sān pú tí', meaning: '无上正等正觉，佛果的智德' },
+  ],
+  'zhengdaoge': [
+    { char: '兀', pinyin: 'wù', meaning: '高耸特立的样子' },
+    { char: '迥', pinyin: 'jiǒng', meaning: '远、差得远' },
+    { char: '澄', pinyin: 'chéng', meaning: '水静而清' },
+    { char: '皎', pinyin: 'jiǎo', meaning: '洁白明亮' },
+    { char: '渊', pinyin: 'yuān', meaning: '深水、深潭' },
+  ],
+  'mazu': [
     { char: '什邡', pinyin: 'shí fāng', meaning: '古地名，今四川什邡市，马祖故里' },
     { char: '醍醐', pinyin: 'tí hú', meaning: '酥酪提炼出的最精纯之物，喻最上法味' },
     { char: '三昧', pinyin: 'sān mèi', meaning: '正定，心专注一境而不散乱' },
@@ -248,9 +169,8 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '祗对', pinyin: 'zhī duì', meaning: '应对、对答' },
     { char: '伎儿', pinyin: 'jì ér', meaning: '表演技艺的人' },
     { char: '篾', pinyin: 'miè', meaning: '竹篾，劈成细条的竹片' },
-    { char: '蹋', pinyin: 'tà', meaning: '同踏，踩' },
   ],
-  baizhang: [
+  'baizhang': [
     { char: '怀海', pinyin: 'huái hǎi', meaning: '百丈禅师名，马祖道一的法嗣' },
     { char: '该练', pinyin: 'gāi liàn', meaning: '全面通达、熟习' },
     { char: '寮', pinyin: 'liáo', meaning: '僧人住的房间' },
@@ -262,7 +182,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '迥脱', pinyin: 'jiǒng tuō', meaning: '迥然超脱，彻底超越' },
     { char: '根尘', pinyin: 'gēn chén', meaning: '六根（眼耳鼻舌身意）与六尘（色声香味触法）' },
   ],
-  huangbo: [
+  'huangbo': [
     { char: '希运', pinyin: 'xī yùn', meaning: '黄檗禅师名，临济义玄之师' },
     { char: '鹫峰', pinyin: 'jiù fēng', meaning: '灵鹫山，黄檗山所在' },
     { char: '嫡孙', pinyin: 'dí sūn', meaning: '正宗法孙，直系传人' },
@@ -273,7 +193,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '攀缘', pinyin: 'pān yuán', meaning: '心执着外境，如攀枝缘树' },
     { char: '如如', pinyin: 'rú rú', meaning: '真如之体，本来如是、不生不灭' },
   ],
-  xiuxinjue: [
+  'xiuxinjue': [
     { char: '热恼', pinyin: 'rè nǎo', meaning: '炽热的烦恼，如火灼身' },
     { char: '火宅', pinyin: 'huǒ zhái', meaning: '比喻三界生死充满众苦，如着火的房屋' },
     { char: '无漏', pinyin: 'wú lòu', meaning: '没有烦恼漏失的清净法' },
@@ -282,7 +202,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '习气', pinyin: 'xí qì', meaning: '多生多世积累的烦恼惯势' },
     { char: '蒸沙作饭', pinyin: 'zhēng shā zuò fàn', meaning: '蒸沙子想做成饭，比喻方法错误徒劳无功' },
   ],
-  linji: [
+  'linji': [
     { char: '无位真人', pinyin: 'wú wèi zhēn rén', meaning: '临济宗核心概念，超越一切名位框架的本来自性' },
     { char: '干屎橛', pinyin: 'gān shǐ jué', meaning: '干粪块，禅师用以截断学人分别心的峻烈话头' },
     { char: '赤肉团', pinyin: 'chì ròu tuán', meaning: '血肉之躯，指人的身体' },
@@ -293,7 +213,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '驰求', pinyin: 'chí qiú', meaning: '向外奔走追求，指心向外攀缘' },
     { char: '逢着便杀', pinyin: 'féng zhe biàn shā', meaning: '遇佛杀佛遇祖杀祖，比喻彻底放下一切执着' },
   ],
-  dunwu: [
+  'dunwu': [
     { char: '稽首', pinyin: 'qǐ shǒu', meaning: '以头触地行礼，佛教最敬礼' },
     { char: '和南', pinyin: 'hé nán', meaning: '佛教礼敬语，即顶礼' },
     { char: '有情', pinyin: 'yǒu qíng', meaning: '一切有情感知觉的众生' },
@@ -302,7 +222,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '真如', pinyin: 'zhēn rú', meaning: '事物的真实本性，本来如是' },
     { char: '无住', pinyin: 'wú zhù', meaning: '心不执着于任何一处' },
   ],
-  zhenxin: [
+  'zhenxin': [
     { char: '真心', pinyin: 'zhēn xīn', meaning: '本来自性清净之心' },
     { char: '大圆镜智', pinyin: 'dà yuán jìng zhì', meaning: '转第八识所成之智，如大圆镜映现万法' },
     { char: '六尘', pinyin: 'liù chén', meaning: '色声香味触法六种外境' },
@@ -310,20 +230,20 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '法身', pinyin: 'fǎ shēn', meaning: '以空为体的佛身，无形无相' },
     { char: '威仪', pinyin: 'wēi yí', meaning: '行住坐卧四种姿态，僧人举止规范' },
   ],
-  zhigong: [
+  'zhigong': [
     { char: '宝志', pinyin: 'bǎo zhì', meaning: '梁代高僧，又称志公，以神通异行著称' },
     { char: '骑驴觅驴', pinyin: 'qí lǘ mì lǘ', meaning: '骑着驴找驴，比喻本已具足却向外驰求' },
     { char: '波旬', pinyin: 'bō xún', meaning: '魔王名，常干扰修行人' },
     { char: '泥盘', pinyin: 'ní pán', meaning: '同涅槃，烦恼熄灭的解脱境界' },
     { char: '大乘', pinyin: 'dà chéng', meaning: '能载众人至彼岸的佛法，以利他为宗' },
   ],
-  xinwangming: [
+  'xinwangming': [
     { char: '心王', pinyin: 'xīn wáng', meaning: '心之主体，统率诸心所，比喻自性真心' },
     { char: '胶青', pinyin: 'jiāo qīng', meaning: '胶质，比喻真心存在而不可见其形' },
     { char: '波罗蜜', pinyin: 'bō luó mì', meaning: '到彼岸，从生死此岸到达涅槃彼岸' },
     { char: '六道', pinyin: 'liù dào', meaning: '天、人、阿修罗、地狱、饿鬼、畜生六种轮回境界' },
   ],
-  shenhui: [
+  'shenhui': [
     { char: '无念', pinyin: 'wú niàn', meaning: '不执着妄念，非无心如木石' },
     { char: '真空', pinyin: 'zhēn kōng', meaning: '非断灭之空，而是含摄万法的真实空性' },
     { char: '妙有', pinyin: 'miào yǒu', meaning: '从空性中显现的妙用，非实有之有' },
@@ -335,8 +255,74 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '系缚', pinyin: 'xì fù', meaning: '被烦恼捆绑，不得自在' },
     { char: '荷泽', pinyin: 'hé zé', meaning: '神会大师的宗派名，荷泽宗' },
   ],
-  baojingsanmei: [
-    { char: '盌', pinyin: 'wǎn', meaning: '同"碗"，盛器。银盌盛雪，喻本体与现象浑然难辨' },
+  'jingangjing': [
+    { char: '祇', pinyin: 'qí', meaning: '祇树给孤独园，佛说法处' },
+    { char: '衲', pinyin: 'nà', meaning: '僧衣，也指僧人' },
+    { char: '恒河沙', pinyin: 'héng hé shā', meaning: '比喻数量极多，如恒河中的沙粒' },
+    { char: '须菩提', pinyin: 'xū pú tí', meaning: '佛陀十大弟子之一，解空第一' },
+    { char: '阿兰那', pinyin: 'ā lán nà', meaning: '寂静处，修行之所' },
+    { char: '筏', pinyin: 'fá', meaning: '竹筏，比喻佛法为渡河工具' },
+    { char: '诃', pinyin: 'hē', meaning: '呵斥、责备' },
+  ],
+  'xinjing': [
+    { char: '般若', pinyin: 'bō rě', meaning: '智慧，特指通达诸法实相的智慧' },
+    { char: '波罗蜜多', pinyin: 'bō luó mì duō', meaning: '到彼岸，超越生死到达涅槃' },
+    { char: '菩提', pinyin: 'pú tí', meaning: '觉、智，佛果的智德' },
+  ],
+  'yuanjuejing': [
+    { char: '骛', pinyin: 'wù', meaning: '追求、追逐' },
+    { char: '棼', pinyin: 'fén', meaning: '纷乱、交错' },
+    { char: '翳', pinyin: 'yì', meaning: '遮蔽、障蔽' },
+    { char: '幻', pinyin: 'huàn', meaning: '虚幻不实，如幻术' },
+    { char: '奢摩他', pinyin: 'shē mó tā', meaning: '止，禅定的第一阶段——心专注一境' },
+    { char: '三摩钵提', pinyin: 'sān mó bō tí', meaning: '观，禅定的第二阶段——于定中起观' },
+    { char: '禅那', pinyin: 'chán nà', meaning: '静虑，禅定的第三阶段——止观双运' },
+    { char: '陀罗尼', pinyin: 'tuó luó ní', meaning: '总持，能持集无量善法、遮止恶法' },
+  ],
+  'chanlinbaoxun': [
+    { char: '衲子', pinyin: 'nà zǐ', meaning: '僧人，穿衲衣者' },
+    { char: '苞苴', pinyin: 'bāo jū', meaning: '贿赂、馈赠之物' },
+    { char: '砭', pinyin: 'biān', meaning: '古代治病的石针，引申为规劝、救治' },
+    { char: '褫', pinyin: 'chǐ', meaning: '剥夺、脱去' },
+    { char: '谮', pinyin: 'zèn', meaning: '诬陷、中伤' },
+    { char: '刍', pinyin: 'chú', meaning: '割草、草料' },
+    { char: '舂', pinyin: 'chōng', meaning: '用杵臼捣谷物去壳' },
+    { char: '爨', pinyin: 'cuàn', meaning: '烧火做饭' },
+    { char: '恣', pinyin: 'zì', meaning: '放纵、无拘束' },
+    { char: '谧', pinyin: 'mì', meaning: '安静、静默' },
+  ],
+  'lengyanjing': [
+    { char: '洎', pinyin: 'jì', meaning: '及、到' },
+    { char: '麈', pinyin: 'zhǔ', meaning: '鹿类，尾毛可做拂尘；麈尾即说法时所用拂尘' },
+    { char: '殒', pinyin: 'yǔn', meaning: '死亡、坠落' },
+    { char: '抟', pinyin: 'tuán', meaning: '把东西揉成球形' },
+    { char: '醐', pinyin: 'hú', meaning: '醍醐，酥酪提炼出的最精纯之物，喻佛果' },
+    { char: '醍', pinyin: 'tí', meaning: '同上，醍醐连用' },
+    { char: '阿难', pinyin: 'ā nán', meaning: '佛陀堂弟，多闻第一' },
+    { char: '摩登伽', pinyin: 'mó dēng jiā', meaning: '低种姓女子，以咒术迷惑阿难' },
+    { char: '楞严', pinyin: 'léng yán', meaning: '一切事究竟坚固，此经名' },
+  ],
+  'weimojiejing': [
+    { char: '毘耶离', pinyin: 'pí yē lí', meaning: '古印度城名，维摩诘居住之地' },
+    { char: '殁', pinyin: 'mò', meaning: '死亡' },
+    { char: '诃', pinyin: 'hē', meaning: '呵斥、责备' },
+    { char: '寤', pinyin: 'wù', meaning: '醒悟、觉醒' },
+    { char: '筌', pinyin: 'quán', meaning: '捕鱼竹器，比喻言教为得鱼之工具' },
+    { char: '殃', pinyin: 'yāng', meaning: '灾祸' },
+    { char: '缶', pinyin: 'fǒu', meaning: '瓦器，盛酒浆的陶器' },
+  ],
+  'shiniutu': [
+    { char: '廛', pinyin: 'chán', meaning: '市集、店铺集中的街道；入廛即入市井' },
+    { char: '跣', pinyin: 'xiǎn', meaning: '赤脚、光脚' },
+    { char: '迤逦', pinyin: 'yǐ lǐ', meaning: '曲折连绵、缓缓行走的样子' },
+    { char: '羌笛', pinyin: 'qiāng dí', meaning: '古代西北少数民族的管乐器' },
+    { char: '懡㦬', pinyin: 'mǒ luǒ', meaning: '羞愧、惭愧的样子' },
+    { char: '廓庵', pinyin: 'kuò ān', meaning: '禅师号，南宋临济宗杨岐派' },
+    { char: '威音劫', pinyin: 'wēi yīn jié', meaning: '最古远的劫名，指天地未分之前的绝对时间' },
+    { char: '筌鱼', pinyin: 'quán yú', meaning: '筌为捕鱼工具，喻言教为工具' },
+    { char: '蹄兔', pinyin: 'tí tù', meaning: '蹄为捕兔网，喻与筌同' },
+  ],
+  'baojingsanmei': [
     { char: '鹭', pinyin: 'lù', meaning: '鹭鸟，羽毛洁白。明月藏鹭，喻法界一相、理事交融' },
     { char: '窠臼', pinyin: 'kē jiù', meaning: '旧格式、陈套。动成窠臼，谓一动言说便落俗套' },
     { char: '顾伫', pinyin: 'gù zhù', meaning: '迟疑徘徊。差落顾伫，谓稍有迟疑便失机锋' },
@@ -350,7 +336,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '回互', pinyin: 'huí hù', meaning: '曹洞宗核心概念，指体用、偏正、理事相互含摄转化' },
     { char: '主中主', pinyin: 'zhǔ zhōng zhǔ', meaning: '曹洞四宾主最高位，超越宾主、不涉正偏的绝对境界' },
   ],
-  dongshanyulu: [
+  'dongshanyulu': [
     { char: '溈山', pinyin: 'wéi shān', meaning: '沩山灵祐禅师，洞山曾参之。沩仰宗开山祖师' },
     { char: '云岩', pinyin: 'yún yán', meaning: '云岩昙晟禅师，洞山得法师父，药山惟俨法嗣' },
     { char: '阇黎', pinyin: 'shé lí', meaning: '梵语，意为轨范师，对僧人的尊称' },
@@ -360,26 +346,19 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '玄路', pinyin: 'xuán lù', meaning: '洞山三路之一，识偏正回互之路，接中下根器' },
     { char: '展手', pinyin: 'zhǎn shǒu', meaning: '洞山三路之一，当下便了，接上根利智' },
     { char: '乾慧', pinyin: 'qián huì', meaning: '有慧无定之空头智慧，末法时代人之通病' },
-    { char: '粟畬', pinyin: 'sù yú', meaning: '烧荒种田处。洞山答僧"向甚处去"云"粟畬里去"' },
-    { char: '㳂流', pinyin: 'yán liú', meaning: '沿流、顺流而下。洞山答兴平云"㳂流无定止"' },
     { char: '曹洞宗', pinyin: 'cáo dòng zōng', meaning: '洞山良价与曹山本寂共创之禅宗五家之一，以偏正回互、绵密宗风著称' },
   ],
-  yongjia: [
-    { char: '玄觉', pinyin: 'xuán jué', meaning: '永嘉大师法名，谥真觉大师，人称"一宿觉"' },
+  'yongjia': [
     { char: '一宿觉', pinyin: 'yī xiǔ jué', meaning: '永嘉参六祖，一宿之间言下大悟，故得此号' },
-    { char: '奢摩他', pinyin: 'shē mó tā', meaning: '梵语，意为"止"，禅定之异名，令心住于一境' },
-    { char: '毗婆舍那', pinyin: 'pí pó shě nà', meaning: '梵语，意为"观"，以智慧观照诸法实相' },
-    { char: '优毕叉', pinyin: 'yōu bì chā', meaning: '梵语，意为"止观等持"，定慧平等之中道' },
     { char: '四宏誓愿', pinyin: 'sì hóng shì yuàn', meaning: '众生无边誓愿度，烦恼无数誓愿断，法门无量誓愿学，佛道无上誓愿成' },
     { char: '三谛', pinyin: 'sān dì', meaning: '天台宗核心：真谛（空）、俗谛（假）、中谛（中道）' },
     { char: '三乘', pinyin: 'sān shèng', meaning: '声闻乘、缘觉乘、菩萨乘，三种修行阶位' },
     { char: '黄门', pinyin: 'huáng mén', meaning: '古指阉人，发愿文中指不愿生为残缺之身' },
     { char: '曹溪', pinyin: 'cáo xī', meaning: '广东韶关曹溪，六祖惠能道场所在地，代指南宗禅' },
   ],
-  yunmen: [
+  'yunmen': [
     { char: '文偃', pinyin: 'wén yǎn', meaning: '云门大师法名，五代高僧，云门宗开山祖师' },
     { char: '睦州', pinyin: 'mù zhōu', meaning: '睦州道明禅师，黄檗法嗣，云门初参之师，机辩峭捷' },
-    { char: '乾屎橛', pinyin: 'gān shǐ jué', meaning: '拭粪之竹片。云门答"如何是佛"云"乾屎橛"，以秽语破名相执' },
     { char: '函盖乾坤', pinyin: 'hán gài qián kūn', meaning: '云门三句之一：万法皆真，物物全真，天地万法尽在一句中' },
     { char: '截断众流', pinyin: 'jié duàn zhòng liú', meaning: '云门三句之一：斩断妄想之流，言语道断，心行处灭' },
     { char: '随波逐浪', pinyin: 'suí bō zhú làng', meaning: '云门三句之一：随学人根机接引，应病与药，灵活无碍' },
@@ -387,9 +366,8 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '秦时轹钻', pinyin: 'qín shí lì zuān', meaning: '睦州勘云门之语。秦时之钻，钝而无用，截断学人思量' },
     { char: '灵树', pinyin: 'líng shù', meaning: '灵树如敏禅师道场，云门初为首座之处，在广东韶州' },
     { char: '苏噜苏噜', pinyin: 'sū lǔ sū lǔ', meaning: '云门答话惯用语，象声词，截断问头，不落言诠' },
-    { char: '髫龀', pinyin: 'tiáo chèn', meaning: '童年。云门"才自髫龀，志尚率己厌俗"' },
   ],
-  bashiguijusong: [
+  'bashiguijusong': [
     { char: '净色根', pinyin: 'jìng sè gēn', meaning: '佛教术语，指感官的微细生理基础，非肉眼可见' },
     { char: '九缘', pinyin: 'jiǔ yuán', meaning: '眼识生起所需的九种条件：空、明、根、境、作意、分别依、染净依、根本依、种子' },
     { char: '带质境', pinyin: 'dài zhì jìng', meaning: '唯识三境之一，以本质为依据而变现的影像境' },
@@ -398,7 +376,6 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '现量', pinyin: 'xiàn liàng', meaning: '三量之一，不经分别推度，直接缘境的真实认知' },
     { char: '比量', pinyin: 'bǐ liàng', meaning: '三量之一，经由推理比度而得的认知' },
     { char: '非量', pinyin: 'fēi liàng', meaning: '三量之一，错误的认知，不符合实际的判断' },
-    { char: '末那识', pinyin: 'mò nà shí', meaning: '第七识，恒审思量第八识为"我"，是一切我执的根源' },
     { char: '阿赖耶识', pinyin: 'ā lài yē shí', meaning: '第八识，含藏一切种子，受熏持种，异熟果报' },
     { char: '大圆镜智', pinyin: 'dà yuán jìng zhì', meaning: '第八识所转之智，如大圆镜无所不照' },
     { char: '平等性智', pinyin: 'píng děng xìng zhì', meaning: '第七识所转之智，了知自他平等' },
@@ -411,33 +388,26 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '随烦恼', pinyin: 'suí fán nǎo', meaning: '随根本烦恼而起的烦恼，分大随、中随、小随' },
     { char: '金刚道', pinyin: 'jīn gāng dào', meaning: '成佛前最后一念无间道，金刚喻定，断尽最后一品微细无明' },
   ],
-  wumenguan: [
+  'wumenguan': [
     { char: '无门', pinyin: 'wú mén', meaning: '无门慧开，宋代禅宗高僧，编集《无门关》四十八则公案' },
     { char: '慧开', pinyin: 'huì kāi', meaning: '无门慧开之法名，宋绍定元年编集无门关' },
     { char: '敲门瓦子', pinyin: 'qiāo mén wǎ zi', meaning: '敲门砖，比喻公案是参究的工具，非究竟道理' },
-    { char: '热铁丸', pinyin: 'rè tiě wán', meaning: '比喻参"无"字时疑情逼拶之状——吞不下吐不出' },
     { char: '依草附木', pinyin: 'yī cǎo fù mù', meaning: '比喻无实悟者依附他人言句，如精灵依附草木' },
     { char: '那吒', pinyin: 'né zhā', meaning: '那吒太子，佛教护法神，八臂那吒喻勇猛无畏' },
-    { char: '俱胝', pinyin: 'jù zhī', meaning: '俱胝和尚，唐代禅师，以"一指禅"著称' },
     { char: '天龙', pinyin: 'tiān lóng', meaning: '天龙禅师，俱胝之师，传一指禅' },
     { char: '香严', pinyin: 'xiāng yán', meaning: '香严智闲禅师，沩山灵祐法嗣' },
-    { char: '瑞岩', pinyin: 'ruì yán', meaning: '瑞岩师彦禅师，每日自唤"主人公"' },
-    { char: '惺惺', pinyin: 'xīng xīng', meaning: '清醒觉了之状，禅宗常言"惺惺着"' },
     { char: '婆子', pinyin: 'pó zi', meaning: '台山婆子，无门关中勘验学人的女性禅者' },
-    { char: '罔明', pinyin: 'wǎng míng', meaning: '罔明菩萨，出自无门关第四十二则"女子出定"' },
     { char: '竹篦', pinyin: 'zhú bì', meaning: '竹制禅具，首山省念拈竹篦勘验学人' },
-    { char: '话堕', pinyin: 'huà duò', meaning: '言语落套，被言句所堕，云门勘破学人"话堕"' },
     { char: '净瓶', pinyin: 'jìng píng', meaning: '僧人用水器，百丈拈净瓶选沩山主人' },
     { char: '草鞋', pinyin: 'cǎo xié', meaning: '赵州顶草鞋出，以颠倒行径破南泉斩猫之令' },
     { char: '大庾岭', pinyin: 'dà yú lǐng', meaning: '六祖为惠明开示处，在广东江西交界' },
     { char: '本来面目', pinyin: 'běn lái miàn mù', meaning: '六祖为惠明直指——善恶念头不起时的本来觉性' },
     { char: '定盘星', pinyin: 'dìng pán xīng', meaning: '秤上的基准星，比喻错认标准或执着处' },
   ],
-  changuancejin: [
+  'changuancejin': [
     { char: '禅关', pinyin: 'chán guān', meaning: '禅修之关隘，喻修行须经之关卡' },
     { char: '关棙子', pinyin: 'guān lì zi', meaning: '机关枢纽，喻禅修关键处' },
     { char: '蒲团', pinyin: 'pú tuán', meaning: '禅僧坐禅用的圆形坐垫' },
-    { char: '话头', pinyin: 'huà tóu', meaning: '参究的语句，如"无"字、"念佛是谁"' },
     { char: '疑情', pinyin: 'yí qíng', meaning: '参禅时生起的疑团，是悟道的动力' },
     { char: '本参', pinyin: 'běn cān', meaning: '修行者本人在参究的话头或公案' },
     { char: '打彻', pinyin: 'dǎ chè', meaning: '彻底悟透，禅宗语' },
@@ -449,7 +419,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '般舟三昧', pinyin: 'bān zhōu sān mèi', meaning: '九十日常行三昧，不坐不卧的修行法' },
     { char: '头陀', pinyin: 'tóu tuó', meaning: '苦行，舍弃贪着的修行方式' },
   ],
-  dachengqixinlun: [
+  'dachengqixinlun': [
     { char: '摩诃衍', pinyin: 'mó hē yǎn', meaning: '大乘的梵语音译' },
     { char: '真如', pinyin: 'zhēn rú', meaning: '诸法真实本性，离言绝相的绝对真理' },
     { char: '如来藏', pinyin: 'rú lái zàng', meaning: '众生本具的佛性，含藏如来一切功德' },
@@ -468,7 +438,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '摩尼宝', pinyin: 'mó ní bǎo', meaning: '如意宝珠，能满足所愿' },
     { char: '客尘', pinyin: 'kè chén', meaning: '外在的烦恼染污，如客尘染污明镜' },
   ],
-  huanwuxinyao: [
+  'huanwuxinyao': [
     { char: '覰', pinyin: 'qù', meaning: '看、窥视，禅宗多用此字表示机锋审视' },
     { char: '蹊径', pinyin: 'qī jìng', meaning: '小路，比喻修行的方法途径' },
     { char: '铢两', pinyin: 'zhū liǎng', meaning: '极微小的重量，比喻精密的判断' },
@@ -479,9 +449,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '湫湫', pinyin: 'qiū qiū', meaning: '冷清寂静的样子' },
     { char: '倮倮', pinyin: 'luǒ luǒ', meaning: '赤裸无遮，比喻心无挂碍' },
     { char: '洒洒', pinyin: 'sǎ sǎ', meaning: '洒脱无拘的样子' },
-    { char: '踈', pinyin: 'shū', meaning: '同"疏"，疏通、疏远' },
     { char: '蹋', pinyin: 'tà', meaning: '踩、踏，禅宗机锋中常指一踏令悟' },
-    { char: '箇', pinyin: 'gè', meaning: '同"个"，禅宗语录常用量词' },
     { char: '觑', pinyin: 'qù', meaning: '看、窥，禅宗指审视观照' },
     { char: '蓦', pinyin: 'mò', meaning: '忽然、突然' },
     { char: '踟蹰', pinyin: 'chí chú', meaning: '犹豫不决、徘徊不前' },
@@ -490,17 +458,13 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '杲', pinyin: 'gǎo', meaning: '明亮，杲日即明亮的太阳' },
     { char: '趺', pinyin: 'fū', meaning: '盘腿坐，结加趺坐即双盘打坐' },
   ],
-  huanwuyulu: [
+  'huanwuyulu': [
     { char: '謷', pinyin: 'áo', meaning: '诋毁、讥讽，謷讹即讹误差错' },
     { char: '鹁鸠', pinyin: 'bó jiū', meaning: '一种鸟名，斑鸠类' },
-    { char: '蟇', pinyin: 'má', meaning: '同"蟆"，蛤蟆' },
     { char: '仓庚', pinyin: 'cāng gēng', meaning: '黄鹂鸟' },
     { char: '寒蝉', pinyin: 'hán chán', meaning: '秋天的蝉，天冷不再鸣叫' },
-    { char: '椀', pinyin: 'wǎn', meaning: '同"碗"，小碗' },
     { char: '幞头', pinyin: 'fú tóu', meaning: '古代男子头巾' },
-    { char: '刬', pinyin: 'chǎn', meaning: '同"铲"，铲除' },
     { char: '镆', pinyin: 'mò', meaning: '镆铘，古代宝剑名' },
-    { char: '毘', pinyin: 'pí', meaning: '同"毗"，毗卢遮那佛' },
     { char: '凫', pinyin: 'fú', meaning: '野鸭' },
     { char: '胫', pinyin: 'jìng', meaning: '小腿' },
     { char: '棘', pinyin: 'jí', meaning: '荆棘' },
@@ -510,48 +474,26 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '龛', pinyin: 'kān', meaning: '供奉佛像或存放骨灰的小阁' },
     { char: '刈', pinyin: 'yì', meaning: '割、收割' },
     { char: '蟭螟', pinyin: 'jiāo míng', meaning: '极微小的虫' },
-    { char: '拕', pinyin: 'tuō', meaning: '同"拖"，拖拽' },
   ],
-  dahuiyulu: [
+  'dahuiyulu': [
     { char: '劄', pinyin: 'zhá', meaning: '奏札，臣下呈给皇帝的文书' },
-    { char: '𦶟', pinyin: 'ruò', meaning: '点燃、焚烧，同"爇"' },
-    { char: '拈', pinyin: 'niān', meaning: '用手指夹取，禅宗常用"拈拄杖""拈香"' },
-    { char: '槌', pinyin: 'chuí', meaning: '锤子，禅宗"白槌"为打椎宣布开堂' },
-    { char: '搀', pinyin: 'chān', meaning: '抢先、插话，"搀前"即上前' },
-    { char: '磕', pinyin: 'kē', meaning: '碰撞，"筑著磕著"为禅宗俗语，意为恰好说中' },
-    { char: '谩', pinyin: 'màn', meaning: '欺骗、蒙蔽，"热谩"为禅宗斥语' },
-    { char: '噇', pinyin: 'chuáng', meaning: '大口吃喝，"噇眠"即吃了睡' },
     { char: '鞦韆', pinyin: 'qiū qiān', meaning: '秋千，禅宗喻指虚妄不实' },
-    { char: '夤', pinyin: 'yín', meaning: '攀附连结，"夤缘"为攀缘向上' },
-    { char: '泞', pinyin: 'nìng', meaning: '泥泞，"淡泞"形容云烟淡荡' },
     { char: '蒺蔾', pinyin: 'jí lí', meaning: '蒺藜，带刺植物，喻指难以吞咽的话头' },
     { char: '鍚', pinyin: 'yáng', meaning: '马额上的金属饰物' },
-    { char: '刬', pinyin: 'chǎn', meaning: '同"铲"，削平、除去' },
-    { char: '搦', pinyin: 'nuò', meaning: '握持、挑惹，"搦生"为禅宗机语' },
-    { char: '趂', pinyin: 'chèn', meaning: '同"趁"，乘机、追逐' },
-    { char: '蓦', pinyin: 'mò', meaning: '突然、忽然，"蓦然"为禅宗常用语' },
     { char: '拄杖', pinyin: 'zhǔ zhàng', meaning: '禅师手中的法杖，用于开示和接引学人' },
     { char: '白槌', pinyin: 'bái chuí', meaning: '打椎宣布开堂，禅宗开法仪式' },
     { char: '热谩', pinyin: 'rè màn', meaning: '禅宗斥语，意为蒙骗、糊弄' },
   ],
-  chanjia_guijian: [
-    { char: '挆', pinyin: 'duǒ', meaning: '同"垛"，此处指落根、着落' },
-    { char: '飏', pinyin: 'yáng', meaning: '抛掷、丢开，"飏在无事匣里"指把话头丢在无事中' },
+  'chanjia_guijian': [
     { char: '卜度', pinyin: 'bǔ duó', meaning: '猜测、揣度，禅宗斥为意识分别' },
     { char: '逼拶', pinyin: 'bī zā', meaning: '逼迫、催迫，禅宗指以言句或话头逼迫学人至思量不及处' },
-    { char: '漆桶', pinyin: 'qī tǒng', meaning: '禅宗喻指无明暗昧之心，"打破漆桶"喻开悟' },
     { char: '龟鉴', pinyin: 'guī jiàn', meaning: '龟甲可卜，青铜镜可照，比喻借鉴、指南' },
     { char: '嫡子', pinyin: 'dí zǐ', meaning: '正室所生之子，禅宗喻指得法正宗的弟子' },
     { char: '孽子', pinyin: 'niè zǐ', meaning: '庶出或非正统之子，禅宗喻指偏离宗旨的弟子' },
-    { char: '葛藤', pinyin: 'gé téng', meaning: '禅宗喻指文字语言的纠缠，"一篇葛藤"指一堆文字说理' },
-    { char: '踞地', pinyin: 'jù dì', meaning: '蹲踞于地，"踞地狮子"为临济四喝之一' },
-    { char: '探竿', pinyin: 'tàn gān', meaning: '探测之竿，"探竿影草"为临济四喝之一，指试探学人' },
-    { char: '料拣', pinyin: 'liào jiǎn', meaning: '同"料简"，选择、简别，临济四料拣为接人法门' },
-    { char: '甲子', pinyin: 'jiǎ zǐ', meaning: '天干地支纪年，"年代甲子总不知"指不计时日' },
     { char: '八风', pinyin: 'bā fēng', meaning: '利、衰、毁、誉、称、讥、苦、乐八种境界' },
     { char: '四恩', pinyin: 'sì ēn', meaning: '父母恩、国王恩、师友恩、施主恩' },
   ],
-  xinming: [
+  'xinming': [
     { char: '熏炼', pinyin: 'xūn liàn', meaning: '熏习修炼，指渐次修持以转化心性' },
     { char: '惺惺', pinyin: 'xīng xīng', meaning: '清醒明觉貌，禅宗指灵知不昧的状态' },
     { char: '寂寂', pinyin: 'jì jì', meaning: '寂静无为之貌，与惺惺相对' },
@@ -561,73 +503,41 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '诠神', pinyin: 'quán shén', meaning: '诠释神妙，指以言语表述不可言之境界' },
     { char: '四等', pinyin: 'sì děng', meaning: '即慈悲喜舍四无量心，又称四等心' },
   ],
-  zuochanyi: [
+  'zuochanyi': [
     { char: '跏趺', pinyin: 'jiā fū', meaning: '佛陀坐法，两足交叠置于两腿之上，全跏趺为双盘，半跏趺为单盘' },
-    { char: '髀', pinyin: 'bì', meaning: '大腿，"安左髀上"即安放在左大腿上' },
-    { char: '拄', pinyin: 'zhǔ', meaning: '支撑、抵住，"拇指相拄"即两拇指相抵' },
-    { char: '腭', pinyin: 'è', meaning: '口腔上壁，"舌拄上腭"即舌抵上腭' },
     { char: '欠', pinyin: 'qiàn', meaning: '欠身，身体前倾的动作' },
-    { char: '浮屠', pinyin: 'fú tú', meaning: '佛塔，"状如浮屠"指身正如塔' },
-    { char: '卒暴', pinyin: 'cù bào', meaning: '仓促粗暴，"不得卒暴"指出定时不可动作太猛' },
     { char: '蹉跎', pinyin: 'cuō tuó', meaning: '虚度光阴，错失时机' },
   ],
-  huangbo_wanlinglu: [
+  'huangbo_wanlinglu': [
     { char: '幻翳', pinyin: 'huàn yì', meaning: '幻象与眼翳，比喻虚妄的见闻觉知如眼翳所见之幻相' },
-    { char: '息机', pinyin: 'xī jī', meaning: '止息心机妄动，与"忘见"连用指放下一切分别心' },
-    { char: '寝疾', pinyin: 'qǐn jí', meaning: '卧病在床，"唯置一床寝疾而卧"比喻心不起诸见如人卧病攀缘都息' },
-    { char: '宝器', pinyin: 'bǎo qì', meaning: '珍贵的食器，"诸天共宝器食"谓诸天用同一宝器进食，随福德不同饭色各异' },
-    { char: '铁围山', pinyin: 'tiě wéi shān', meaning: '佛教宇宙观中的铁轮围山，"贬向二铁围山"喻指落入二边见之困境' },
     { char: '权实', pinyin: 'quán shí', meaning: '权智与实智，文殊代表实智，普贤代表权智，究竟而言权实不二' },
     { char: '一体三宝', pinyin: 'yī tǐ sān bǎo', meaning: '于一心中具足佛法僧三宝，法即是佛，佛法俱无即僧' },
     { char: '歌利王', pinyin: 'gē lì wáng', meaning: '佛陀本生故事中的暴君，曾割截忍辱仙人身体，比喻心向外求如游猎' },
-    { char: '摩诃衍', pinyin: 'mó hē yǎn', meaning: '大乘的梵语音译，"摩诃衍胜出"谓大乘能超越三界' },
-    { char: '棙子', pinyin: 'lì zi', meaning: '机关、关键，"遮关棙子"指禅关的机括要害' },
-    { char: '兀然', pinyin: 'wù rán', meaning: '安然不动貌，"兀然无著"指心不动摇无所执着' },
     { char: '黄叶为金', pinyin: 'huáng yè wéi jīn', meaning: '以黄叶当金子哄小孩不哭，比喻佛说一切法只是方便化度，实无有法' },
-    { char: '蠲除', pinyin: 'juān chú', meaning: '清除、去除，"蠲除戏论之粪"指除去心中戏论见解' },
   ],
-  zhaozhouyulu: [
+  'zhaozhouyulu': [
     { char: '𨍏轹', pinyin: 'lì lì', meaning: '人名号，𨍏轹道人为重校赵州语录者' },
     { char: '掠彴子', pinyin: 'lüè zhuó zi', meaning: '小木桥，简陋的便桥，赵州以之对比石桥' },
     { char: '丫角童', pinyin: 'yā jiǎo tóng', meaning: '梳双髻的童子，指行脚途中遇到的异僧' },
-    { char: '齁齁', pinyin: 'hōu hōu', meaning: '酣睡貌，"得一句子直至如今齁齁地饱"比喻饱餐禅味' },
     { char: '啗啄', pinyin: 'dàn zhuó', meaning: '鸟类进食貌，禅宗喻指学人参究时当机立断，不可犹豫' },
-    { char: '洎合', pinyin: 'jì hé', meaning: '恰好、正该，"洎合放过这汉"意为正该放过他' },
     { char: '田厍奴', pinyin: 'tián shè nú', meaning: '田舍奴，讥称乡野无知之人' },
-    { char: '箍桶', pinyin: 'gū tǒng', meaning: '箍制木桶，赵州以"箍桶汉"斥学人，意指本分事' },
-    { char: '觌面', pinyin: 'dí miàn', meaning: '当面、面对面，禅宗常用"觌面相呈"指当面直指' },
     { char: '阐提', pinyin: 'chǎn tí', meaning: '一阐提的简称，指断善根无成佛可能之人' },
-    { char: '双陆', pinyin: 'shuāng lù', meaning: '古代一种博戏，赵州以"不解双陆"表示不谈戏论' },
-    { char: '蓦直', pinyin: 'mò zhí', meaning: '一直、径直，"蓦直去"意为一直前行不回头' },
-    { char: '趯', pinyin: 'tì', meaning: '踢、跃，禅宗"趯出"指跃出、抛出' },
-    { char: '叵耐', pinyin: 'pǒ nài', meaning: '不可忍受，"叵耐"为可恨之意' },
     { char: '不唧溜', pinyin: 'bù jī liū', meaning: '不伶俐、不明事理，十二时歌中自嘲住持无能' },
     { char: '褊衫', pinyin: 'biǎn shān', meaning: '僧人所穿的偏衫，即上衣' },
-    { char: '裈', pinyin: 'kūn', meaning: '裤子，"裈无腰"指裤子没有裤腰' },
     { char: '䭔子', pinyin: 'duī zi', meaning: '一种蒸饼类食物' },
-    { char: '虀', pinyin: 'jī', meaning: '捣碎的腌菜，"蜀黍米饭虀莴苣"指粗食' },
-    { char: '䉬', pinyin: 'dié', meaning: '竹席，"破芦䉬"指破烂的芦苇席' },
-    { char: '幢子', pinyin: 'chuáng zi', meaning: '石柱形的经幢，"幢子无一截"指残断的经幢' },
-    { char: '公验', pinyin: 'gōng yàn', meaning: '官府发放的通行证，赵州以"还我公验来"比喻本分事' },
-    { char: '拨尘', pinyin: 'bō chén', meaning: '扫除尘垢，"拨尘见佛"比喻去妄求真' },
     { char: '衲衣', pinyin: 'nà yī', meaning: '僧人百衲衣，用碎布缝制而成' },
   ],
-    jueguanlun: [
-    { char: '冲虚', pinyin: 'chōng xū', meaning: '深奥空寂，"大道冲虚"指大道深远空寂' },
+  'jueguanlun': [
     { char: '参罗', pinyin: 'sēn luó', meaning: '森罗万象，指宇宙间种种事物' },
     { char: '龟毛兔角', pinyin: 'guī máo tù jiǎo', meaning: '龟没有毛、兔没有角，比喻不存在之物' },
-    { char: '根量', pinyin: 'gēn liàng', meaning: '感官的限度，"离一切根量"指超越感官认知的范围' },
     { char: '玄光', pinyin: 'xuán guāng', meaning: '玄妙之光，比喻超越感官的智慧照用' },
     { char: '意生身', pinyin: 'yì shēng shēn', meaning: '菩萨以意力所化现的身体，非父母所生' },
     { char: '鸯掘', pinyin: 'yāng jué', meaning: '鸯掘魔罗，佛经中杀人后经佛度化出家的人物' },
     { char: '瞿昙', pinyin: 'qú tán', meaning: '释迦牟尼佛的姓氏，此处指佛陀' },
-    { char: '壅', pinyin: 'yōng', meaning: '堵塞不通，"妄动故壅"指妄念使心不通畅' },
-    { char: '腾腾', pinyin: 'téng téng', meaning: '悠然自在的样子，"腾腾任运"指随缘自在' },
     { char: '呵呵唧唧', pinyin: 'hē hē jī jī', meaning: '笑声，形容豁达无拘的样子' },
     { char: '他心智', pinyin: 'tā xīn zhì', meaning: '能知他人心念的智慧，属六通之一' },
     { char: '如来藏', pinyin: 'rú lái zàng', meaning: '一切众生本具的佛性，含藏如来一切功德' },
   ],
-
   'boshan-canchanjingyu': [
     { char: '獦狚', pinyin: 'gé dàn', meaning: '一种犬类动物，禅宗用来比喻呆坐无心的状态' },
     { char: '謦欬', pinyin: 'qǐng kài', meaning: '咳嗽声，比喻发出声响' },
@@ -663,8 +573,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '坌', pinyin: 'bèn', meaning: '尘土聚积，旋坌喻尘劳纷纷围拢' },
     { char: '漭漭', pinyin: 'mǎng mǎng', meaning: '广大空旷貌，漭漭荡荡喻心量无拘' },
   ],
-
-  caoshanyulu: [
+  'caoshanyulu': [
     { char: '觌面', pinyin: 'dí miàn', meaning: '当面、面对面' },
     { char: '黧奴', pinyin: 'lí nú', meaning: '黑猫，禅宗比喻疑情紧盯不放' },
     { char: '髑髅', pinyin: 'dú lóu', meaning: '头骨、骷髅，禅宗喻无分别识' },
@@ -677,8 +586,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '俸', pinyin: 'fèng', meaning: '俸禄、薪俸' },
     { char: '惺惺', pinyin: 'xīng xīng', meaning: '清醒、明白，禅宗指灵觉不昧' },
   ],
-
-  fayanyulu: [
+  'fayanyulu': [
     { char: '啗啄', pinyin: 'dàn zhuó', meaning: '咬啄，比喻言语交涉、机锋对答' },
     { char: '觌面', pinyin: 'dí miàn', meaning: '当面、面对面' },
     { char: '拶', pinyin: 'zā', meaning: '逼迫、紧压，禅宗指逼拶话头' },
@@ -696,7 +604,6 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '馐', pinyin: 'xiū', meaning: '美食、佳肴' },
     { char: '攒', pinyin: 'cuán', meaning: '聚拢、凑集' },
     { char: '觑', pinyin: 'qù', meaning: '看、窥视' },
-    { char: '碓', pinyin: 'duì', meaning: '舂米的器具，法演以"打碓打磨"喻日常劳作' },
     { char: '跣足', pinyin: 'xiǎn zú', meaning: '赤脚' },
     { char: '飏', pinyin: 'yáng', meaning: '飞扬、扬起' },
     { char: '辊', pinyin: 'gǔn', meaning: '滚动、滚转' },
@@ -707,7 +614,8 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '泗洲', pinyin: 'sì zhōu', meaning: '地名，法演诗中引用大圣参拜之典' },
     { char: '叮咽', pinyin: 'dīng yè', meaning: '絮叨、叮咛' },
     { char: '柴棚', pinyin: 'chái péng', meaning: '柴草搭的棚子' },
-  ],  zhonglun: [
+  ],
+  'zhonglun': [
     { char: '偈', pinyin: 'jì', meaning: '佛经中的颂诗、诗偈，通常为四句' },
     { char: '瞿昙', pinyin: 'qú tán', meaning: '佛陀的姓氏，也代指佛陀' },
     { char: '稽首', pinyin: 'qǐ shǒu', meaning: '头至手或地，佛教最敬礼' },
@@ -716,8 +624,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '四句', pinyin: 'sì jù', meaning: '有、无、亦有亦无、非有非无，龙树破斥的四种边见' },
     { char: '中道', pinyin: 'zhōng dào', meaning: '不落空有二边的正见，佛教的核心义理' },
     { char: '缘起', pinyin: 'yuán qǐ', meaning: '因缘和合而生起，佛教对事物存在方式的解释' },
+    { char: '不生不灭', pinyin: 'bù shēng bù miè', meaning: '八不中道之一，破除一切执取生灭之戏论' },
+    { char: '戏论', pinyin: 'xì lùn', meaning: '违背诸法实相的无益言论与虚妄分别' },
+    { char: '自性', pinyin: 'zì xìng', meaning: '事物的独立、固有、不变的自体，中观破斥之' },
+    { char: '假名', pinyin: 'jiǎ míng', meaning: '依因缘和合而假立的名字与概念' },
   ],
-  wanshantongguiji: [
+  'wanshantongguiji': [
     { char: '阂', pinyin: 'ài', meaning: '阻碍、妨碍。理事无阂即理事互不妨碍' },
     { char: '翳', pinyin: 'yì', meaning: '遮蔽、蒙蔽。如“久翳尘劳”' },
     { char: '莹彻', pinyin: 'yíng chè', meaning: '晶莹透彻，明净照彻' },
@@ -729,7 +641,6 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '水月道场', pinyin: 'shuǐ yuè dào chǎng', meaning: '比喻虽知一切道场如水中月幻化无实，仍大作佛事庄严修持' },
     { char: '实相', pinyin: 'shí xiàng', meaning: '一切诸法真实不变之本体，离一切虚妄之相' },
   ],
-
   'chanyuan_zhuquanjiduxu': [
     { char: '户牖', pinyin: 'hù yǒu', meaning: '门窗，喻各宗自立门户' },
     { char: '纷拏', pinyin: 'fēn ná', meaning: '纷争纠缠' },
@@ -756,7 +667,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '病差', pinyin: 'chài', meaning: '病愈；差通瘥' },
     { char: '礭言', pinyin: 'què yán', meaning: '确定之言（确言）' },
   ],
-  biyanlu: [
+  'biyanlu': [
     { char: '髑髅', pinyin: 'dú lóu', meaning: '骷髅，死人头骨，禅语中指情识尽处' },
     { char: '羝羊触藩', pinyin: 'dī yáng chù fān', meaning: '公羊角挂篱笆，进退两难' },
     { char: '醯鸡蠛蠓', pinyin: 'xī jī miè měng', meaning: '醋瓮里的小虫，喻极微细之生灵' },
@@ -786,7 +697,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '拕', pinyin: 'tuō', meaning: '同拖' },
     { char: '邈', pinyin: 'miǎo', meaning: '描绘' },
   ],
-  yangqihoulu: [
+  'yangqihoulu': [
     { char: '趺', pinyin: 'fū', meaning: '盘腿端坐，趺座即结跏趺坐' },
     { char: '槌', pinyin: 'chuí', meaning: '棒槌，维那白槌即鸣槌示意' },
     { char: '洎', pinyin: 'jì', meaning: '及、至，此处意为连同' },
@@ -806,7 +717,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '斫', pinyin: 'zhuó', meaning: '砍、削' },
     { char: '鹄', pinyin: 'gǔ', meaning: '同鹘，猛禽' },
   ],
-  linjianhoulu: [
+  'linjianhoulu': [
     { char: '栢', pinyin: 'bǎi', meaning: '同柏，枣栢为李通玄之号' },
     { char: '翛', pinyin: 'xiāo', meaning: '翛然，无拘无束貌' },
     { char: '跣', pinyin: 'xiǎn', meaning: '赤脚' },
@@ -828,12 +739,11 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '僵仆', pinyin: 'jiāng pū', meaning: '倒地' },
     { char: '粲', pinyin: 'càn', meaning: '鲜明、灿烂' },
   ],
-  shanglibian: [
+  'shanglibian': [
     { char: '蠛蠓', pinyin: 'miè měng', meaning: '微小的飞虫，喻渺小' },
     { char: '睽', pinyin: 'kuí', meaning: '背离、违背' },
     { char: '憍倨', pinyin: 'jiāo jù', meaning: '骄傲自大' },
     { char: '荧惑', pinyin: 'yíng huò', meaning: '迷惑、惑乱' },
-    { char: '賔', pinyin: 'bīn', meaning: '同"宾"，宾客' },
     { char: '俚', pinyin: 'lǐ', meaning: '粗俗、鄙陋' },
     { char: '闾阎', pinyin: 'lǘ yán', meaning: '民间、乡里' },
     { char: '隲', pinyin: 'zhì', meaning: '评定、安排' },
@@ -841,15 +751,10 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '隳', pinyin: 'huī', meaning: '毁坏' },
     { char: '隤', pinyin: 'tuí', meaning: '坠落' },
     { char: '隤然', pinyin: 'tuí rán', meaning: '颓倒貌' },
-    { char: '铛', pinyin: 'chēng', meaning: '平底锅，"半升铛内煮山川"' },
-    { char: '粟', pinyin: 'sù', meaning: '小米，"一粒粟中藏世界"' },
-    { char: '刼', pinyin: 'jié', meaning: '同"劫"，劫数' },
     { char: '爇', pinyin: 'ruò', meaning: '点燃、焚烧' },
     { char: '杻械', pinyin: 'chǒu xiè', meaning: '刑具枷锁' },
     { char: '煨烬', pinyin: 'wēi jìn', meaning: '灰烬' },
     { char: '消殒', pinyin: 'xiāo yǔn', meaning: '消亡殒灭' },
-    { char: '宂', pinyin: 'rǒng', meaning: '同"冗"，多余' },
-    { char: '咲', pinyin: 'xiào', meaning: '同"笑"，嘲笑' },
     { char: '牯', pinyin: 'gǔ', meaning: '水牯牛即水牛' },
     { char: '摝', pinyin: 'lù', meaning: '捞取，河里失钱河里摝' },
     { char: '拕', pinyin: 'tuō', meaning: '同拖，横拕倒拽' },
@@ -879,7 +784,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '鼈', pinyin: 'biē', meaning: '同鳖，巨鼈即大鳖' },
     { char: '馌', pinyin: 'yè', meaning: '给耕作者送饭' },
   ],
-  yangqiyulu: [
+  'yangqiyulu': [
     { char: '拕', pinyin: 'tuō', meaning: '同拖，拕倒拽即拖拽' },
     { char: '崄', pinyin: 'xiǎn', meaning: '同险，山势崄即山势险峻' },
     { char: '摝', pinyin: 'lù', meaning: '捞取，河里失钱河里摝' },
@@ -901,7 +806,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '忌晨', pinyin: 'jì chén', meaning: '忌日，祖师圆寂纪念日' },
     { char: '坐具', pinyin: 'zuò jù', meaning: '僧人随身携带的布垫' },
   ],
-  chanzongjueyiji: [
+  'chanzongjueyiji': [
     { char: '衲', pinyin: 'nà', meaning: '僧人自称，野衲即山野僧人' },
     { char: '迤逦', pinyin: 'yǐ lǐ', meaning: '曲折前行，一路行走' },
     { char: '夔府', pinyin: 'kuí fǔ', meaning: '古地名，今重庆奉节一带' },
@@ -923,7 +828,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '落索', pinyin: 'luò suǒ', meaning: '啰嗦，一番话语' },
     { char: '优昙华', pinyin: 'yōu tán huá', meaning: '优昙钵罗花，三千年一现，喻极稀有' },
   ],
-  huanglonghuinan: [
+  'huanglonghuinan': [
     { char: '獬豸', pinyin: 'xiè zhì', meaning: '古代传说中的异兽，能辨是非，喻刚直之人' },
     { char: '白槌', pinyin: 'bái chuí', meaning: '打白槌，禅林开堂时维那敲槌宣布规矩' },
     { char: '啐啄', pinyin: 'cuì zhuó', meaning: '雏鸟欲出时母鸟啄壳，喻师弟机锋相应' },
@@ -945,7 +850,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '蹔', pinyin: 'zàn', meaning: '同暂，暂时' },
     { char: '夤缘', pinyin: 'yín yuán', meaning: '攀附连缘，向上攀爬' },
   ],
-  zhaolun: [
+  'zhaolun': [
     { char: '沤和', pinyin: 'ōu hé', meaning: '梵语upāya音译，方便善巧，菩萨度生的权智' },
     { char: '般若', pinyin: 'bō rě', meaning: '梵语prajñā音译，通达诸法实相的智慧' },
     { char: '涅槃', pinyin: 'niè pán', meaning: '梵语nirvāṇa音译，烦恼灭尽、生死解脱的究竟境界' },
@@ -980,7 +885,7 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '沤和般若', pinyin: 'ōu hé bō rě', meaning: '方便与般若，权智与实智' },
     { char: '九折十演', pinyin: 'jiǔ zhé shí yǎn', meaning: '涅槃无名论的结构：九次问难、十番演说' },
   ],
-  shangzhibian: [
+  'shangzhibian': [
     { char: '纡', pinyin: 'yū', meaning: '弯曲、曲折' },
     { char: '墙壍', pinyin: 'qiáng qiàn', meaning: '壕沟、壁垒，喻设障蔽' },
     { char: '逢蒙', pinyin: 'féng méng', meaning: '后羿弟子，学射后杀羿，喻背师反噬' },
@@ -1001,33 +906,57 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '剽窃', pinyin: 'piāo qiè', meaning: '抄袭、窃取' },
     { char: '掊', pinyin: 'póu', meaning: '击、抨击' },
     { char: '隳', pinyin: 'huī', meaning: '毁坏' },
-    // 石霜楚圆禅师语录
-    { char: '鎁', pinyin: 'yé', meaning: '同"铘"，鏌鎁即莫邪，宝剑名' },
-    { char: '鏌', pinyin: 'mò', meaning: '同"莫"，鏌鎁即莫邪，宝剑名' },
-    { char: '銕', pinyin: 'tiě', meaning: '同"铁"' },
     { char: '豏', pinyin: 'xiàn', meaning: '酸豏，禅宗语，指难以吞咽之物' },
-    { char: '鐼', pinyin: 'fèn', meaning: '同"棼"，竹木编成的隔层' },
-    { char: '筯', pinyin: 'zhù', meaning: '同"箸"，筷子' },
-    { char: '鎻', pinyin: 'suǒ', meaning: '同"锁"' },
     { char: '鑊', pinyin: 'huò', meaning: '锅，古代的大锅' },
     { char: '鶻', pinyin: 'gǔ', meaning: '鹘，一种猛禽' },
-    { char: '踈', pinyin: 'shū', meaning: '同"疏"' },
-    { char: '鎚', pinyin: 'chuí', meaning: '同"锤"' },
     { char: '踒', pinyin: 'wō', meaning: '折断、扭伤' },
     { char: '鎰', pinyin: 'yì', meaning: '古代重量单位，二十两为一镒' },
     { char: '鎡', pinyin: 'zī', meaning: '鎡基，即锄头' },
-    { char: '莾', pinyin: 'mǎng', meaning: '同"莽"，鲁莽' },
     { char: '烜', pinyin: 'xuǎn', meaning: '显著、明亮' },
-    { char: '𠴭', pinyin: 'liǎo', meaning: '同"了"' },
-    { char: '𨁝', pinyin: 'tiào', meaning: '同"跳"' },
-    { char: '𦘕', pinyin: 'huà', meaning: '同"画"' },
-    { char: '𫕟', pinyin: 'yǎn', meaning: '同"奄"' },
-    { char: '𩥇', pinyin: 'niè', meaning: '同"啮"' },
-    { char: '𢁐', pinyin: 'bì', meaning: '同"弊"' },
-    { char: '𫑮', pinyin: 'mǎo', meaning: '同"卯"' },
-    { char: '謌', pinyin: 'gē', meaning: '同"歌"' },
   ],
-  renyantianmu: [
+  'shishuangchuyuan': [
+    { char: '楚圆', pinyin: 'chǔ yuán', meaning: '石霜楚圆（慈明禅师），临济宗杨岐、黄龙二派之源' },
+    { char: '提撕', pinyin: 'tí sī', meaning: '提醒警觉，使心念时刻觉照不迷' },
+    { char: '逼拶', pinyin: 'bī zǎ', meaning: '禅师以机锋逼迫学人至绝路以求彻悟' },
+    { char: '啐啄', pinyin: 'cuì zhuó', meaning: '母鸡引雏与雏鸡出壳同时动作，喻师徒机缘契合' },
+  ],
+  'xuanshayulu': [
+    { char: '师备', pinyin: 'shī bèi', meaning: '玄沙师备禅师，雪峰义存上足' },
+    { char: '谛当', pinyin: 'dì dāng', meaning: '确凿、真实、不可动摇' },
+    { char: '承当', pinyin: 'chéng dāng', meaning: '直下承担自性本体，无丝毫迟疑' },
+    { char: '函盖', pinyin: 'hán gài', meaning: '包含包容，如盒与盖天然吻合' },
+  ],
+  'xuanshaguanglu': [
+    { char: '举扬', pinyin: 'jǔ yáng', meaning: '提倡、宣扬宗门心法' },
+    { char: '宗乘', pinyin: 'zōng chéng', meaning: '禅宗直指本心的最高教法' },
+    { char: '拶勘', pinyin: 'zǎ kān', meaning: '逼迫勘验学人的悟境真伪' },
+  ],
+  'gaofengyulu': [
+    { char: '原妙', pinyin: 'yuán miào', meaning: '高峰原妙禅师，元代临济宗巨匠' },
+    { char: '死关', pinyin: 'sǐ guān', meaning: '修行者断除情识分别、置之死地而后生的关隘' },
+    { char: '海底泥牛', pinyin: 'hǎi dǐ ní niú', meaning: '禅宗公案喻体，喻心体绝思绝虑、无迹可寻' },
+  ],
+  'xuefengyulu': [
+    { char: '义存', pinyin: 'yì cún', meaning: '雪峰义存禅师，德山宣鉴法嗣，云门法眼之源' },
+    { char: '辊球', pinyin: 'gǔn qiú', meaning: '雪峰接引学人之独特机锋施设' },
+    { char: '鳖鼻', pinyin: 'biē bí', meaning: '南山鳖鼻蛇，雪峰用来逼拶学人的公案' },
+  ],
+  'foguojijielu': [
+    { char: '克勤', pinyin: 'kè qín', meaning: '圆悟克勤（佛果禅师），《碧岩录》《击节录》作者' },
+    { char: '击节', pinyin: 'jī jié', meaning: '打着节拍，赞叹评点古人公案妙趣' },
+    { char: '机用', pinyin: 'jī yòng', meaning: '禅师随宜应机的大机大用' },
+  ],
+  'mianxianyulu': [
+    { char: '咸杰', pinyin: 'xián jié', meaning: '密庵咸杰禅师，临济宗密庵派开山' },
+    { char: '破庵', pinyin: 'pò ān', meaning: '破庵祖先，密庵法嗣' },
+    { char: '垂示', pinyin: 'chuí shì', meaning: '禅师在方丈室中对学人的开示与勘验' },
+  ],
+  'zibaibieji': [
+    { char: '真可', pinyin: 'zhēn kě', meaning: '紫柏真可（达观大师），明末四大高僧之一' },
+    { char: '方册藏', pinyin: 'fāng cè zàng', meaning: '紫柏倡导刻印的线装大藏经（嘉兴藏）' },
+    { char: '法眷', pinyin: 'fǎ juàn', meaning: '佛法上的法脉眷属与同修道友' },
+  ],
+  'renyantianmu': [
     { char: '揀', pinyin: 'jiǎn', meaning: '挑选、选择' },
     { char: '褫', pinyin: 'chǐ', meaning: '剥夺、除去' },
     { char: '誵', pinyin: 'xiáo', meaning: '誵讹，差错' },
@@ -1037,6 +966,23 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '殽', pinyin: 'yáo', meaning: '混杂' },
     { char: '钁', pinyin: 'jué', meaning: '锄头' },
     { char: '颋', pinyin: 'tǐng', meaning: '直、自在' },
+  ],
+  'linjianlu': [
+    { char: '惠洪', pinyin: 'huì hóng', meaning: '宋代著名禅僧德洪惠洪（觉范）' },
+    { char: '丛林', pinyin: 'cóng lín', meaning: '禅宗大型寺院僧团之通称' },
+    { char: '林间', pinyin: 'lín jiān', meaning: '指禅林、僧堂之间的逸闻与道话' },
+  ],
+  'lengqiejing': [
+    { char: '阿跋多罗', pinyin: 'ā bá duō luó', meaning: '梵语入、趣入之意' },
+    { char: '如来藏', pinyin: 'rú lái zàng', meaning: '众生本具的自性清净心，被客尘覆蔽之体' },
+    { char: '藏识', pinyin: 'zàng shí', meaning: '即阿赖耶识，含藏一切善恶种子' },
+    { char: '转识', pinyin: 'zhuǎn shí', meaning: '由藏识变现依缘而起的前七识' },
+  ],
+  'chanyuanqinggui': [
+    { char: '宗赜', pinyin: 'zōng zé', meaning: '长芦宗赜禅师，《禅苑清规》编撰者' },
+    { char: '维那', pinyin: 'wéi nà', meaning: '寺院纲领执事之一，掌管僧众规矩与法事' },
+    { char: '典座', pinyin: 'diǎn zuò', meaning: '寺院中执掌大众斋食烹饪的执事' },
+    { char: '普请', pinyin: 'pǔ qǐng', meaning: '全寺上下不分尊卑共同劳作出坡之法' },
   ],
   'chixiu-baizhang-qinggui': [
     { char: '犍椎', pinyin: 'jiān zhuī', meaning: '梵语犍稚，寺院聚集大众所鸣之钟、磬、木鱼、鼓等发声之法器' },
@@ -1050,5 +996,130 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '霶𩃱', pinyin: 'pāng tuó', meaning: '雨水盛大貌，祈雨祈求甘霖之词' },
     { char: '砧基', pinyin: 'zhēn jī', meaning: '砧基簿，寺院记载田地房产户籍所有权之册籍' },
     { char: '秉拂', pinyin: 'bǐng fú', meaning: '首座或名德代住持持拂子升座说法' },
+  ],
+  'jingangge': [
+    { char: '本觉', pinyin: 'běn jué', meaning: '众生自性本具之清净觉性，非修得' },
+    { char: '任运', pinyin: 'rèn yùn', meaning: '自然而然，不加勉强与造作' },
+    { char: '明空', pinyin: 'míng kōng', meaning: '心性光明与空性无二无别之状态' },
+  ],
+  'ziwojietuo': [
+    { char: '莲花生', pinyin: 'lián huā shēng', meaning: '藏传佛教宁玛派祖师，大圆满法之传布者' },
+    { char: '本净', pinyin: 'běn jìng', meaning: '心性从本以来清净无染' },
+    { char: '妥噶', pinyin: 'tuǒ gá', meaning: '大圆满修行之顿超法门' },
+  ],
+  'songlingbaoxun': [
+    { char: '益西措嘉', pinyin: 'yì xī cuò jiā', meaning: '莲花生大士明妃与上首弟子' },
+    { char: '空行母', pinyin: 'kōng xíng mǔ', meaning: '梵语荼吉尼，护持甚深智慧法门之圣者' },
+    { char: '甚深', pinyin: 'shèn shēn', meaning: '佛法义理幽微深远、不可思议' },
+  ],
+  'xizangduwangjing': [
+    { char: '中阴', pinyin: 'zhōng yīn', meaning: '前一生死后至下一生投胎之间的过渡阶段（中有）' },
+    { char: '闻解脱', pinyin: 'wén jiě tuō', meaning: '仅凭听闻甚深教法法音即可在中阴身获得解脱' },
+    { char: '本尊', pinyin: 'běn zūn', meaning: '修行者所依止修持的特定佛菩萨形象' },
+  ],
+  'xinxingxiuxisong': [
+    { char: '龙钦巴', pinyin: 'lóng qīn bā', meaning: '藏传佛教大圆满法集大成者（无垢光尊者）' },
+    { char: '心性', pinyin: 'xīn xìng', meaning: '心的本来面目与空明本体' },
+    { char: '自性大圆满', pinyin: 'zì xìng dà yuán mǎn', meaning: '一切诸法在心性本觉中本来圆满无缺' },
+  ],
+  'henghedashouyin': [
+    { char: '帝洛巴', pinyin: 'dì luò bā', meaning: '印度八十四大成就者之一，大手印传承祖师' },
+    { char: '那洛巴', pinyin: 'nà luò bā', meaning: '帝洛巴上足弟子，藏传噶举派之源' },
+    { char: '大手印', pinyin: 'dà shǒu yìn', meaning: '直观心性明空不二、任运解脱之法门' },
+  ],
+  'zixingcanjiu': [
+    { char: '拉玛那', pinyin: 'lā mǎ nà', meaning: '拉玛那·马哈希，现代印度非二元智者' },
+    { char: '参究', pinyin: 'cān jiū', meaning: '向内追问“我是谁”，直至自我认同彻底消融' },
+    { char: '阿鲁那查拉', pinyin: 'ā lǔ nà chá lā', meaning: '印度圣山，拉玛那常年驻锡之地' },
+  ],
+  'awatuotazhige': [
+    { char: '达塔特雷亚', pinyin: 'dá tǎ tè léi yà', meaning: '吠陀神话中的智者，《阿瓦陀塔之歌》托名作者' },
+    { char: '阿瓦陀塔', pinyin: 'ā wǎ tuó tǎ', meaning: '彻底摆脱一切世俗与宗教羁绊的极净游方智者' },
+    { char: '非二元', pinyin: 'fēi èr yuán', meaning: '不落能所、主体与客体对立的绝待一体实相' },
+  ],
+  'ashitawakela': [
+    { char: '阿什塔瓦克拉', pinyin: 'ā shí tǎ wǎ kè lā', meaning: '意为八处弯曲，印度古代著名非二元哲人' },
+    { char: '王者之智', pinyin: 'wáng zhě zhī zhì', meaning: '向遮那迦国王传授的无上自性解脱法要' },
+    { char: '见者', pinyin: 'jiàn zhě', meaning: '能知一切经验而自身不被经验所染的纯然觉知' },
+  ],
+  'baifamingmenlun': [
+    { char: '心王', pinyin: 'xīn wáng', meaning: '八识心体，为精神作用之主导' },
+    { char: '心所有法', pinyin: 'xīn suǒ yǒu fǎ', meaning: '从属于心王生起的五十一相应用（心所）' },
+    { char: '心不相应行', pinyin: 'xīn bù xiāng yìng xíng', meaning: '非物质亦非精神的假立分位（二十四种）' },
+    { char: '遍行', pinyin: 'biàn xíng', meaning: '遍一切心、一切地、一切时的五种基本心所' },
+  ],
+  'weishisanshilunsong': [
+    { char: '异熟', pinyin: 'yì shú', meaning: '由善恶因所感召的非善非恶之果报（指阿赖耶识）' },
+    { char: '思量', pinyin: 'sī liáng', meaning: '恒审思量我相，第七末那识之根本特质' },
+    { char: '了境', pinyin: 'liǎo jìng', meaning: '前六识了别外界显现之境界相' },
+    { char: '圆成实', pinyin: 'yuán chéng shí', meaning: '圆满、成就、真实的诸法真如法性' },
+  ],
+  'weishiershilun': [
+    { char: '唯识无境', pinyin: 'wéi shí wú jìng', meaning: '唯有内心识体变现，心外并无实有境物' },
+    { char: '极微', pinyin: 'jí wēi', meaning: '古代外道与小乘所立之物质最小不可分割单位' },
+    { char: '翳眼', pinyin: 'yì yǎn', meaning: '眼睛生翳者妄见空中有发丝，喻识变妄相' },
+  ],
+  'rujingyulu': [
+    { char: '如净', pinyin: 'rú jìng', meaning: '天童如净禅师，宋代曹洞宗大德，道元之师' },
+    { char: '只管打坐', pinyin: 'zhǐ guǎn dǎ zuò', meaning: '不求开悟、不立阶梯，纯然端坐以现成本具佛性' },
+    { char: '身心脱落', pinyin: 'shēn xīn tuō luò', meaning: '彻底放下身心我执，自性朗然独耀' },
+  ],
+  'rujingxuyulu': [
+    { char: '虚堂', pinyin: 'xū táng', meaning: '虚堂智愚禅师，宋代名僧' },
+    { char: '脱落身心', pinyin: 'tuō luò shēn xīn', meaning: '与身心脱落互文，曹洞宗悟证极则' },
+  ],
+  'weishanyulu': [
+    { char: '灵祐', pinyin: 'líng yòu', meaning: '沩山灵祐禅师，百丈怀海法嗣，沩仰宗开山' },
+    { char: '水牯牛', pinyin: 'shuǐ gǔ niú', meaning: '沩山示寂时自道“老僧百年后向山下作一头水牯牛”' },
+    { char: '圆相', pinyin: 'yuán xiàng', meaning: '沩仰宗接引学人的九十六十六种圆相符号' },
+  ],
+  'chengyelun': [
+    { char: '审虑思', pinyin: 'shěn lǜ sī', meaning: '起意之前反复思量之心理阶段' },
+    { char: '决定思', pinyin: 'jué dìng sī', meaning: '思量之后定夺决断之心理阶段' },
+    { char: '动发思', pinyin: 'dòng fā sī', meaning: '发动身体或语言有所造作之业力根本' },
+  ],
+  'bianzhongbianlun': [
+    { char: '虚妄分别', pinyin: 'xū wàng fēn bié', meaning: '凡夫能取与所取的依他起识变功能' },
+    { char: '二障', pinyin: 'èr zhàng', meaning: '障碍涅槃之烦恼障与障碍菩提之所知障' },
+    { char: '十真实', pinyin: 'shí zhēn shí', meaning: '唯识学层层抉择实相的十个认知层面' },
+  ],
+  'qiaoyinyulu': [
+    { char: '樵隐', pinyin: 'qiáo yǐn', meaning: '元代名僧樵隐悟逸禅师' },
+    { char: '拈香', pinyin: 'niān xiāng', meaning: '上堂说法时焚香以敬佛报恩之礼仪' },
+  ],
+  'shoulengyansanmeijing': [
+    { char: '首楞严', pinyin: 'shǒu léng yán', meaning: '梵语Surangama，一切事究竟坚固、健相大定' },
+    { char: '坚意', pinyin: 'jiān yì', meaning: '首楞严三昧经中发起提问之大菩萨' },
+    { char: '师子座', pinyin: 'shī zǐ zuò', meaning: '佛及大菩萨说法时所坐的高广宝座' },
+  ],
+  'shedachenglunben': [
+    { char: '阿僧伽', pinyin: 'ā sēng qié', meaning: '无著菩萨之梵名音译' },
+    { char: '十殊胜', pinyin: 'shí shū shèng', meaning: '《摄大乘论》总摄大乘教理的十种殊胜语' },
+    { char: '染污意', pinyin: 'rǎn wù yì', meaning: '特指第七末那识，恒与四根本烦恼相应' },
+  ],
+  'huanzhu-anqinggui': [
+    { char: '明本', pinyin: 'míng běn', meaning: '中峰明本禅师，高峰原妙法嗣，普应国师' },
+    { char: '幻住', pinyin: 'huàn zhù', meaning: '中峰明本自号幻住道人，喻世间如幻、任运安住' },
+    { char: '日资', pinyin: 'rì zī', meaning: '清规十门之首，一日修行起居之规程与资助' },
+  ],
+  'jieshenmijing': [
+    { char: '阿陀那识', pinyin: 'ā tuó nà shí', meaning: '执持识，阿赖耶识异名，执持诸根与种子不失' },
+    { char: '三无性', pinyin: 'sān wú xìng', meaning: '相无自性、生无自性、胜义无自性' },
+    { char: '分别瑜伽', pinyin: 'fēn bié yú jiā', meaning: '解深密经第六品，系统宣说大乘止观要诀' },
+  ],
+  'miyanjing': [
+    { char: '地婆诃罗', pinyin: 'dì pó hē luó', meaning: '唐代中印度译经三藏，意译“日照”' },
+    { char: '密严', pinyin: 'mì yán', meaning: '超越三界、密不可测、庄严清净之佛国境界' },
+    { char: '金指环喻', pinyin: 'jīn zhǐ huán yù', meaning: '如金与指环一体二名，喻如来藏与阿赖耶识体同名异' },
+  ],
+  'achengjilun': [
+    { char: '对法', pinyin: 'duì fǎ', meaning: '阿毘达磨之意译，以无漏慧面对对向诸法真理' },
+    { char: '本事分', pinyin: 'běn shì fēn', meaning: '集论前半部，系统归纳整理诸法名相纲目' },
+    { char: '决择分', pinyin: 'jué zé fēn', meaning: '集论后半部，对诸法实相深义进行抉择判定' },
+  ],
+  'baoxinglun': [
+    { char: '勒那摩提', pinyin: 'lè nà mó tí', meaning: '北印度三藏法师，后魏时译出《宝性论》' },
+    { char: '九种譬喻', pinyin: 'jiǔ zhǒng pì yù', meaning: '宝性论用萎花佛、地中宝等九喻明一切众生皆有如来藏' },
+    { char: '客尘', pinyin: 'kè chén', meaning: '烦恼非自性所有，如外来宾客与浮游微尘' },
   ],
 };
