@@ -1206,7 +1206,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '方册本', pinyin: 'fāng cè běn', meaning: '打破传统笨重梵夹装订、改用便于携带阅读之线装书册形式大藏经' },
     { char: '圜中语录', pinyin: 'yuán zhōng yǔ lù', meaning: '紫柏大师晚年蒙冤罹诏狱期间所作之开示示众与壮烈临化偈颂' },
   ],
+  'hanshanlaorenmengyouji': [
+    { char: '憨山德清', pinyin: 'hān shān dé qīng', meaning: '明末四大高僧之一，号澄印，融通禅净教，中兴曹溪六祖道场，肉身不坏' },
+    { char: '澄印大师', pinyin: 'chéng yìn dà shī', meaning: '憨山德清法号澄印，见地圆通，行持极其踏实，示现大乘菩萨万行' },
+    { char: '梦游集', pinyin: 'mèng yóu jí', meaning: '憨山大师五十五卷著作总集，取世事如梦、随缘幻住游戏三昧之意' },
+    { char: '参禅切要', pinyin: 'cān chán qiè yào', meaning: '憨山大师径山小参法语，详尽剖析看话头做工夫从起疑至彻悟之完整阶梯' },
+    { char: '自性弥陀', pinyin: 'zì xìng mí tuó', meaning: '心佛众生三无差别，净土不离当下自心，念佛念至能所双忘即见本性弥陀' },
+  ],
 };
+
 
 
 

@@ -128,6 +128,7 @@ MAP = {
  'jingdechuandenglu': [('tanjing','曹溪灯源'), ('biyanlu','公案渊源'), ('wumenguan','机锋所本'), ('congronglu','颂古史料')],
  'guzunsuyulu': [('jingdechuandenglu','灯史双璧'), ('zhaozhouyulu','赵州全录所本'), ('linji','临济全集源流'), ('yunmen','云门广录互映')],
   'zibailaorenquanji': [('boshan-canchanjingyu','明代禅宗相承'), ('tianmuzhongfengguanglu','高峰中峰法脉'), ('linji','临济棒喝真传'), ('tanjing','曹溪心印源流')],
+  'hanshanlaorenmengyouji': [('zibailaorenquanji','明末双璧'), ('tanjing','曹溪祖庭重光'), ('boshan-canchanjingyu','明代禅宗相承'), ('tianmuzhongfengguanglu','禅净合一相承')],
 }
 
 def main():

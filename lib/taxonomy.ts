@@ -3635,19 +3635,25 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "hanshan-deqing",
     "name": "憨山德清",
-    "title": "明代四大高僧之一 / 紫柏法门至交",
+    "title": "明代四大高僧之一 / 曹溪中兴祖师 / 禅净教融通",
     "era": "明嘉靖二十五年—天启三年 (1546-1623)",
-    "lifeStory": "憨山德清，俗姓蔡，安徽全椒人。明代四大高僧之一，与紫柏真可为法门至交。共议复兴明代佛教——紫柏刻藏，憨山弘法。著有《憨山老人梦游集》。曾为紫柏撰塔铭，含嚼齿舌间，所谓“我闻有命，不敢以告人”。",
-    "teachings": "憨山之教兼通禅教净，以弘法为任，为明代佛教复兴之重要人物。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
+    "lifeStory": "憨山德清，字澄印，号憨山，安徽全椒人。十九岁出家，博通经史百家，二十九岁于五台山参禅大彻大悟。后隐居东海崂山建海印寺，万历二十三年因法难谪戍雷州。大师以梦游三昧历尽沧桑而道心弥坚，晚年毅然肩荷中兴曹溪南华寺祖庭重任，令断绝数百年之曹溪法脉死灰复燃。圆寂后肉身千年不坏，与六祖真身同供于南华寺，为明代禅宗中兴之至高巨擘。",
+    "teachings": "憨山之学，融通禅、净、教三门于一心：以《示参禅切要》指明看话头做工夫‘生处转熟、逼拶妄想、大死一番、桶底脱落’之严密阶梯；以《示念佛切要》开显念佛审实起灭、能所双亡、自性弥陀现前之旨；以唯识、华严、楞严融通教下义理；以梦游幻住三昧自在涉入世出世间万境。强调真参实究、行解相应，为后世行者树立了修持楷模。",
     "quotes": [
-      "心佛众生，三无差别；但离妄缘，即如如佛。",
-      "直指人心，见性成佛；不立文字，教外别传。"
-],
-    "classics": [],
-    "relatedConcepts": [],
-    "relatedMethods": [],
+      "做工夫最初要猛利，次要悠久，又要绵密。",
+      "念佛审实从何处起，又向何处灭。起灭俱忘，自性弥陀当下现前。",
+      "休咎不系于心，生死不摇其足。回首千山万壑，一轮孤月独明。",
+      "幻人作幻事，依幻住幻世。幻境本自空，何处有生灭！"
+    ],
+    "classics": [
+      "憨山老人梦游集",
+      "示参禅切要",
+      "示念佛切要"
+    ],
+    "relatedConcepts": ["can-chan-qie-yao", "meng-you-san-mei", "chan-jing-he-yi", "self-nature"],
+    "relatedMethods": ["kanhuatou", "nianfo-chan"],
     "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": []
+    "relatedBooks": ["hanshanlaorenmengyouji", "zibailaorenquanji", "tanjing"]
   },
   {
     "id": "qianqianyi",
@@ -10997,6 +11003,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["kanhuatou", "sui-chu-zuo-zhu", "daji-yuanying"],
     "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
     "relatedBooks": ["zibailaorenquanji", "boshan-canchanjingyu"]
+  },
+  {
+    "id": "can-chan-qie-yao",
+    "title": "参禅切要",
+    "category": "宗门实修",
+    "summary": "参禅切要指憨山德清大师系统总结的参禅看话头实修阶梯：痛念生死、提撕话头、生处转熟、逼拶妄想、大死一番、桶底脱落。",
+    "etymology": "出自憨山德清《憨山老人梦游集·示参禅切要》：“做工夫最初要猛利，次要悠久，又要绵密。久久成熟，自然虚空粉碎。”",
+    "quotes": ["做工夫最初要猛利，次要悠久，又要绵密。 —《憨山老人梦游集》"],
+    "guidance": "修行者当按阶梯次第用功，于日用行住坐卧中死死咬定话头，不作道理文字知解，历经逼拶方得透脱。",
+    "classicRef": "憨山老人梦游集 · 卷八",
+    "relatedConcepts": ["kanhuatou", "zhen-can-shi-wu", "self-nature"],
+    "relatedPersons": ["hanshan-deqing", "zibai-zhenke"],
+    "relatedBooks": ["hanshanlaorenmengyouji", "boshan-canchanjingyu"]
+  },
+  {
+    "id": "meng-you-san-mei",
+    "title": "梦游三昧",
+    "category": "解脱境界",
+    "summary": "梦游三昧指悟达一切世间万法如梦如幻、如露如电，身心寄迹于梦幻之中随缘作佛事、游戏波涛而自心如如不动的大乘大解脱境界。",
+    "etymology": "出自憨山德清《梦游集序》及《自赞》：“休咎不系于心，生死不摇其足，寄迹于梦幻之中，游戏于波涛之内。”",
+    "quotes": ["寄迹于梦幻之中，游戏于波涛之内。回首千山万壑，一轮孤月独明。 —《憨山老人梦游集》"],
+    "guidance": "行者面对顺逆境缘，当观一切皆如梦幻泡影，不起贪嗔分别，于幻境中修一切善法而不着相。",
+    "classicRef": "憨山老人梦游集 · 卷三十",
+    "relatedConcepts": ["emptiness", "sui-chu-zuo-zhu", "samadhi"],
+    "relatedPersons": ["hanshan-deqing"],
+    "relatedBooks": ["hanshanlaorenmengyouji"]
   }
 ];
 
@@ -19996,6 +20028,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["fang-ce-zang", "chan-jiao-huitong"],
     "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
     "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "koan-640",
+    "question": "憨山大师径山示参禅切要如何做工夫？",
+    "answer": "生处转熟熟处转生，大死一番桶底脱落。",
+    "context": "憨山大师在径山禅堂为大众开示参禅切要，详剖从痛念生死、提撕是谁、生处转熟到虚空粉碎之修证阶梯。",
+    "interpretation": "将多生习气熟处转生，将清净觉照生处转熟，在妄想极处死力拼去，方显自性本来现成家珍。",
+    "master": "憨山德清",
+    "source": "《憨山老人梦游集》卷八",
+    "relatedConcepts": ["can-chan-qie-yao", "zhen-can-shi-wu"],
+    "relatedPersons": ["hanshan-deqing"],
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "koan-641",
+    "question": "憨山大师如何以宗门心法融通念佛净土？",
+    "answer": "审实佛号起灭之处，心佛两忘自性弥陀。",
+    "context": "憨山大师开示念佛切要：审实这声佛号从何处起、向何处灭，起灭俱忘能所消融，自性弥陀极乐当下现前。",
+    "interpretation": "以禅修反观之力持佛名号，打破能念所念之对立，直证自心清净极乐，理事圆融万修万人去。",
+    "master": "憨山德清",
+    "source": "《憨山老人梦游集》卷九",
+    "relatedConcepts": ["chan-jing-he-yi", "can-chan-qie-yao"],
+    "relatedPersons": ["hanshan-deqing"],
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "koan-642",
+    "question": "憨山大师晚年中兴六祖曹溪祖庭有何大行？",
+    "answer": "披荆斩棘复还旧观，法脉再续肉身常住。",
+    "context": "憨山大师晚年不畏险阻入曹溪南华寺，整饬清规、平治废墟，重续中断数百年之曹溪心印，示寂后肉身不坏。",
+    "interpretation": "为法忘躯承担如来家业，令六祖心法死灰复燃，示现肉身常住昭示大乘解脱之真实不虚。",
+    "master": "憨山德清",
+    "source": "《憨山老人梦游集》卷十九",
+    "relatedConcepts": ["meng-you-san-mei", "mind-transmission"],
+    "relatedPersons": ["hanshan-deqing", "zibai-zhenke"],
+    "relatedBooks": ["hanshanlaorenmengyouji", "tanjing"]
   }
 ];
 
@@ -36644,5 +36712,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "当学习大师顶天立地、不欺自心的铮铮铁骨，克服软暖浮躁之凡俗习气，在日常百忙中立定脚跟、真参实干，方不负人生难得与佛法难闻。",
     "relatedQa": "koan-638",
     "relatedBooks": ["zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2764",
+    "question": "憨山德清大师是谁，为何被称为明末佛教复兴之集大成者？",
+    "answer": "憨山德清大师（1546-1623），字澄印，明末四大高僧之一。大师博通内外典，参禅彻悟，晚年中兴六祖曹溪祖庭南华寺，示寂后肉身不坏，其著述《梦游集》融通禅净教，为明代佛教集大成之代表。",
+    "relatedQa": "koan-640",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2765",
+    "question": "《憨山老人梦游集》五十五卷涵盖了哪些核心内容？",
+    "answer": "全书收录十二卷法语（含名篇《示参禅切要》《示念佛切要》）、九卷书简（与紫柏真可及明末士大夫交游）、十八卷序跋记文（曹溪南华寺中兴实录）及十六卷诗偈赞颂。",
+    "relatedQa": "koan-640",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2766",
+    "question": "憨山大师在《示参禅切要》中开示的“做工夫六大阶梯”是什么？",
+    "answer": "六大阶梯为：一痛念生死立志发心，二提撕是谁审实自心，三生处转熟熟处转生，四逼拶妄想死力拼去，五直须大死一番绝后苏生，六时节因缘凑泊桶底脱落见到本来。",
+    "relatedQa": "koan-640",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2767",
+    "question": "憨山大师如何阐释“念佛切要”与“自性弥陀”？",
+    "answer": "大师教导念佛时反观审察佛号从何处起、向何处灭；念到极处能念之心与所念之佛双亡，自性弥陀朗然现前，西方净土不离目前，生则决定生、去则实不去。",
+    "relatedQa": "koan-641",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2768",
+    "question": "憨山大师中兴曹溪南华寺有何重大历史贡献？",
+    "answer": "曹溪祖庭荒废数百年积弊丛生，大师受请入山斩除荆棘、平治瓦砾、重订清规戒律，使断绝数百年的曹溪法脉重现光明，成为天下禅林重镇。",
+    "relatedQa": "koan-642",
+    "relatedBooks": ["hanshanlaorenmengyouji", "tanjing"]
+  },
+  {
+    "id": "faq-2769",
+    "question": "何为憨山大师著名的“梦游三昧”？",
+    "answer": "大师一生历经五台大悟、崂山法难、雷州流放与曹溪中兴，视世间万境如梦幻泡影；寄迹梦幻随缘作佛事，休咎不系于心、生死不摇其足，展现大乘菩萨游戏三昧。",
+    "relatedQa": "koan-640",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2770",
+    "question": "憨山大师与紫柏真可大师的生死法门交谊有何感人事迹？",
+    "answer": "二人同愿同行，紫柏誓愿开雕方册大藏经以续佛慧命，憨山以弘法为任；紫柏罹难后憨山含悲作塔铭，二人肉身与精神共同铸就明代佛教复兴之双璧。",
+    "relatedQa": "koan-642",
+    "relatedBooks": ["hanshanlaorenmengyouji", "zibailaorenquanji"]
+  },
+  {
+    "id": "faq-2771",
+    "question": "现代学人阅读《憨山老人梦游集》当如何指导日常实修？",
+    "answer": "学人当依《参禅切要》与《念佛切要》老实做工夫，克除口头狂慧；在生活逆境中修持梦游观，不起贪嗔挂碍，在日用应缘中历练自性清净觉照。",
+    "relatedQa": "koan-640",
+    "relatedBooks": ["hanshanlaorenmengyouji"]
   }
 ];
