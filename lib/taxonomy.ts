@@ -1929,10 +1929,16 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": [
       "景德传灯录"
 ],
-    "relatedConcepts": ["mind-transmission"],
+    "relatedConcepts": [
+      "mind-transmission",
+      "chuan-deng",
+      "dao-que-cha-gan"
+    ],
     "relatedMethods": [],
     "relatedPersons": ["tiantai-deshao"],
-    "relatedBooks": []
+    "relatedBooks": [
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "puji",
@@ -3398,7 +3404,10 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["sanxuan-sanyao"],
     "relatedMethods": ["ciming-wuhui"],
     "relatedPersons": ["shishuang-chuyuan","li-zunxu"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedBooks": [
+      "shishuangchuyuan",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "zhang-zong",
@@ -10888,6 +10897,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["cheng-xian-guan", "emptiness", "erdi"],
     "relatedPersons": ["wuzhu-asanga", "xuanzang"],
     "relatedBooks": ["dachengapidamojilun", "xianyangshengjiaolun"]
+  },
+  {
+    "id": "chuan-deng",
+    "title": "传灯相续",
+    "category": "法脉心印",
+    "summary": "传灯指佛祖以心印心、正法相传如以一灯燃百千灯，冥者皆明、光光相照而光明无尽。",
+    "etymology": "出自《维摩诘经·菩萨品》：“无尽灯者，譬如一灯燃百千灯，冥者皆明，明终不尽。”宋道原禅师以此立《景德传灯录》。",
+    "quotes": ["佛祖传心，法灯相续；灯灯相照，光光不绝。 —《景德传灯录》"],
+    "guidance": "修行者当发菩提心，自明自性心灯，复以大悲方便照亮有情，令正法慧命永续不绝。",
+    "classicRef": "景德传灯录 · 卷一",
+    "relatedConcepts": ["mind-transmission", "self-nature", "zhengfa-yancang"],
+    "relatedPersons": ["daoyuan-monk", "tiantai-deshao", "yang-yi-neihan"],
+    "relatedBooks": ["jingdechuandenglu", "tanjing"]
+  },
+  {
+    "id": "dao-que-cha-gan",
+    "title": "倒却门前刹竿",
+    "category": "宗门机锋",
+    "summary": "倒却门前刹竿指迦叶尊者勘验阿难时令其放倒寺门前立竿，喻指参禅者必须彻底放倒一切名相知见与法执，自性方得全体脱落。",
+    "etymology": "出自《景德传灯录》卷二：“阿难问迦叶：师兄，世尊传金襕外别传何物？迦叶召阿难，阿难应诺。迦叶云：倒却门前刹竿著。阿难大悟。”",
+    "quotes": ["迦叶召阿难，阿难应诺。迦叶云：倒却门前刹竿著。 —《景德传灯录》"],
+    "guidance": "参究者不可死执一知半解之玄妙知见。直下放舍情执、回光自肯，当下便是本来面目。",
+    "classicRef": "景德传灯录 · 卷二",
+    "relatedConcepts": ["chuan-deng", "sui-chu-zuo-zhu", "emptiness"],
+    "relatedPersons": ["daoyuan-monk", "bodhidharma"],
+    "relatedBooks": ["jingdechuandenglu", "wumenguan"]
   }
 ];
 
@@ -19779,6 +19814,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["shi-liu-xing-xiang", "zhuan-shi-cheng-zhi"],
     "relatedPersons": ["wuzhu-asanga", "xuanzang"],
     "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "koan-631",
+    "question": "世尊灵山拈花迦叶微笑传何心印？",
+    "answer": "正法眼藏涅槃妙心，实相无相教外别传。",
+    "context": "世尊在灵山会上拈花示众，大众罔措唯迦叶微笑。世尊当众宣布将正法眼藏付嘱摩诃迦叶，为禅宗以心印心之起源。",
+    "interpretation": "自性超越文字言诠，能见能知之一念清净无染。心心相印无需言句，当下契入不生不灭之寂灭真心。",
+    "master": "道原",
+    "source": "《景德传灯录》卷一",
+    "relatedConcepts": ["chuan-deng", "mind-transmission"],
+    "relatedPersons": ["daoyuan-monk", "bodhidharma"],
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "koan-632",
+    "question": "阿难问别传何物为何迦叶教倒却刹竿？",
+    "answer": "一唤一应本自圆成，放倒刹竿扫尽知见。",
+    "context": "阿难问迦叶世尊除袈裟外别传何物，迦叶唤阿难、阿难应诺，迦叶令倒却门前刹竿，阿难当下豁然大悟。",
+    "interpretation": "阿难妄想心外另有一法可传，迦叶以随声应答显发当下真性，以放倒刹竿斩断其向外驰求的法执葛藤。",
+    "master": "道原",
+    "source": "《景德传灯录》卷二",
+    "relatedConcepts": ["dao-que-cha-gan", "chuan-deng"],
+    "relatedPersons": ["daoyuan-monk"],
+    "relatedBooks": ["jingdechuandenglu", "wumenguan"]
+  },
+  {
+    "id": "koan-633",
+    "question": "永明延寿四料简如何圆融禅净法门？",
+    "answer": "有禅有净如带角虎，心净土净自性弥陀。",
+    "context": "永明延寿大师作《参禅念佛四料简》，融通宗门直指见性与净土万修万人去之实修纲宗。",
+    "interpretation": "禅与净土体用不二。以禅明自心本体，以净土导引归向极乐，理事圆融万不漏一。",
+    "master": "永明延寿",
+    "source": "《景德传灯录》卷二十七",
+    "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
+    "relatedPersons": ["yongming-yanshou", "daoyuan-monk"],
+    "relatedBooks": ["jingdechuandenglu", "tianmuzhongfengguanglu"]
   }
 ];
 
@@ -36259,5 +36330,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "行者当以《集论》的五蕴百法为照妖镜，省察日常起心动念究竟与何种心所（善、烦恼、随烦恼）相应；了知五蕴如幻如泡、无我无执，在实修参究中保持“惺惺寂寂”，不落顽空枯坐。",
     "relatedQa": "koan-628",
     "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2740",
+    "question": "《景德传灯录》由谁纂录，其在中国禅宗史上有何开创性地位？",
+    "answer": "《景德传灯录》三十卷由宋代吴僧道原纂录、翰林学士杨亿等奉旨润色校勘，成书于宋真宗景德元年（1004年）。它是中国佛教第一部官修禅宗灯录，被尊为“五灯之首”与天下禅林第一总汇，奠定了禅宗五家七宗的法脉与公案范式。",
+    "relatedQa": "koan-631",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2741",
+    "question": "《景德传灯录》共收录了多少位禅宗祖师与多少则机锋公案？",
+    "answer": "全书三十卷完整收录了自过去七佛、西天二十八祖、东土六祖，至五代宋初五家七宗共1701位禅门尊宿之生平传记，汇聚了1700余则惊心动魄的禅门机锋问答与示法偈颂。",
+    "relatedQa": "koan-631",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2742",
+    "question": "《景德传灯录》卷一中“灵山拈花微笑”体现了禅宗怎样的根本宗风？",
+    "answer": "世尊灵山拈花、迦叶破颜微笑，确立了“正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传”的根本宗旨，表明自性真如超越语言逻辑，唯有以心印心、直下承当。",
+    "relatedQa": "koan-631",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2743",
+    "question": "阿难问迦叶“别传何物”，迦叶为何教他“倒却门前刹竿”？",
+    "answer": "迦叶一声大喝唤阿难、阿难随声应诺，已彰显当下能知能觉的真如本性圆满无缺；令其倒却刹竿，则是令其彻底摧毁内心执着“另有秘诀密法”的法执妄想。",
+    "relatedQa": "koan-632",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2744",
+    "question": "《景德传灯录》如何系统呈现临济、曹洞、沩仰、云门、法眼五家宗风？",
+    "answer": "书中分卷详载临济玄要喝用、曹洞偏正五位、沩仰圆相默契、云门顾鉴一字关、法眼唯心直指，生动记录了各大宗师接引学人的独创机锋与实修规矩。",
+    "relatedQa": "koan-631",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2745",
+    "question": "永明延寿大师在《景德传灯录》中所立的《四料简》有何深远意义？",
+    "answer": "延寿大师以“有禅有净土，犹如带角虎”力主禅净双修，既强调明心见性的禅宗根本，又开辟求生安养的稳妥出路，深刻影响了宋元明清以降汉传佛教的基本格局。",
+    "relatedQa": "koan-633",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2746",
+    "question": "《景德传灯录》与后来的《五灯会元》《指月录》有怎样的源流继承关系？",
+    "answer": "《景德传灯录》为后世灯录之母本。南宋普济辑《五灯会元》、明代瞿汝稷辑《指月录》，皆以《景德传灯录》为最核心的文献骨架进行删繁就简与机锋提炼。",
+    "relatedQa": "koan-631",
+    "relatedBooks": ["jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2747",
+    "question": "现代学人阅读《景德传灯录》如何避免陷入“口头禅与文字知解”？",
+    "answer": "行者读古德机锋时切忌作逻辑分析或猜谜套解，当体会每一则公案皆是祖师在逼令学人截断妄想；将目光反观自心起心动念处，在日用应缘中践行自性清净觉照。",
+    "relatedQa": "koan-632",
+    "relatedBooks": ["jingdechuandenglu"]
   }
 ];

@@ -1185,7 +1185,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '萨迦耶见', pinyin: 'sà jiā yē jiàn', meaning: '梵语satkāya-dṛṣṭi，意译“身见”或“我见”，于五蕴和合身心妄计为实我我所' },
     { char: '无为法', pinyin: 'wú wéi fǎ', meaning: '不依因缘造作、不生不灭之常住法界实相，集论中立真如、虚空等八种无为' },
   ],
+  'jingdechuandenglu': [
+    { char: '传灯录', pinyin: 'chuán dēng lù', meaning: '宋代道原纂录之中国禅宗第一部官修灯录，记载1701位尊宿之传法谱系' },
+    { char: '景德元年', pinyin: 'jǐng dé yuán nián', meaning: '公元1004年，宋真宗年号，本书于此年由杨亿等奉敕校勘进呈入藏' },
+    { char: '破颜微笑', pinyin: 'pò yán wēi xiào', meaning: '灵山会上世尊拈花示众，摩诃迦叶当下悟旨破颜微笑，禅宗以心印心之源' },
+    { char: '倒却刹竿', pinyin: 'dào què chà gān', meaning: '迦叶问阿难世尊传金襕外别传何物，阿难唤迦叶、迦叶应诺、阿难云倒却门前刹竿' },
+    { char: '千七百则', pinyin: 'qiān qī bǎi zé', meaning: '《景德传灯录》所收录千七百余则禅门机锋公案，宗门参禅悟道之总库' },
+  ],
 };
+
 
 
 
