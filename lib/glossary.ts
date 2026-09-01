@@ -1227,7 +1227,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '转识成智', pinyin: 'zhuǎn shí chéng zhì', meaning: '转八识妄分别成四智菩提，体用如如，理事圆融无碍' },
     { char: '事事无碍', pinyin: 'shì shì wú ài', meaning: '华严最高法界观，以一心真如贯穿万相，森罗万象交参互摄' },
   ],
+  'zhiyuelu': [
+    { char: '指月录', pinyin: 'zhǐ yuè lù', meaning: '晚明瞿汝稷辑录三十二卷公案颂古大成，取楞严经以手指月之意' },
+    { char: '瞿汝稷', pinyin: 'qú rǔ jì', meaning: '明末大居士，号盘谈、那罗延窟学人，师承紫柏真可，辑成《指月录》' },
+    { char: '以手指月', pinyin: 'yǐ shǒu zhǐ yuè', meaning: '楞严经名喻，语言机锋如手指，自性本体如明月，因指见月切勿执指' },
+    { char: '因指见月', pinyin: 'yīn zhǐ jiàn yuè', meaning: '借由语言名相与祖师机锋启发，彻底悟入自心清净本性' },
+    { char: '拈古颂古', pinyin: 'niān gǔ sòng gǔ', meaning: '历代禅师对前代公案机锋所作之提撕评唱与诗偈颂古' },
+  ],
 };
+
 
 
 

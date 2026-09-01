@@ -44,7 +44,8 @@ check('双引号总量为偶', d.count('"') % 2 == 0, f'({d.count(chr(34))})')
 # 4) 分区计数并与 stats.ts 对照
 marks = []
 for sec in ['ZEN_PERSONS', 'ZEN_CONCEPTS', 'ZEN_METHODS', 'ZEN_KOANS', 'ZEN_FAQS']:
-    m = re.search('export const ' + sec, d)
+    pattern = r'(export const ' + sec + r'|const ' + sec + r'_PART1)'
+    m = re.search(pattern, d)
     if m:
         marks.append((sec, m.start()))
 marks.append(('END', len(d)))

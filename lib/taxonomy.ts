@@ -59,6 +59,7 @@ export interface FAQItem {
   "answer": string;
   "relatedBooks": string[];
   relatedQa?: string;
+  [key: string]: any;
 }
 
 export const ZEN_PERSONS: PersonItem[] = [
@@ -4052,6 +4053,26 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["kanhuatou"],
     "relatedPersons": ["daoyuan-monk", "zhaozhou", "linji"],
     "relatedBooks": ["guzunsuyulu", "jingdechuandenglu"]
+  },
+  {
+    "id": "qu-ruji",
+    "name": "瞿汝稷",
+    "title": "《指月录》辑录者 / 那罗延窟学人 / 晚明大居士",
+    "era": "明代嘉靖二十七年—万历三十八年 (1548-1610)",
+    "lifeStory": "瞿汝稷，字元立，号盘谈，常熟（今属江苏）人，明代名臣瞿景淳之子。博学多才，早年参随紫柏真可大师与管东溟先生，深契宗门向上一窍，号“那罗延窟学人”。历官长芦盐运使、湖广按察使等职。师有感于历代公案散佚且少历代宗师评唱，遂广辑自过去七佛至五家七宗千余位禅僧之悟道公案，并备采宋元尊宿之拈古、颂古、代语、别语，编成《指月录》三十二卷。书名取《楞严经》“因指见月”之义，文辞典雅、机锋泼辣，被誉为禅门指归第一书。",
+    "teachings": "瞿汝稷之学，以“见月忘指”为宗旨：强调公案言句皆如指向明月之手指，学人切莫执指为月、随语生解；主张于日用机锋中当下自见本性心月。其辑录《指月录》特别重视历代祖师之评唱颂古与在家居士之真修力行，对晚明禅宗复兴与居士禅之繁荣产生了不可估量的深远影响。",
+    "quotes": [
+      "如人以手指月，应当见月；若复观指以为月体，亦亡其指。 —《指月录》",
+      "指是月之指，月是指之月。因指得月，万法一如。 —《指月录》",
+      "千江有水千江月，万里无云万里天。"
+    ],
+    "classics": [
+      "指月录"
+    ],
+    "relatedConcepts": ["zhi-yue-lu", "gong-an-song-gu", "mind-transmission", "self-nature"],
+    "relatedMethods": ["kanhuatou"],
+    "relatedPersons": ["zibai-zhenke"],
+    "relatedBooks": ["zhiyuelu", "wudenghuiyuan", "biyanlu", "zibailaorenquanji"]
   }
 ];
 
@@ -11081,6 +11102,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["zong-jing-lu", "mind-transmission", "quanshi-shuangxing"],
     "relatedPersons": ["yongming-yanshou", "guifeng-zongmi"],
     "relatedBooks": ["zongjinglu", "chanyuan_zhuquanjiduxu"]
+  },
+  {
+    "id": "zhi-yue-lu",
+    "title": "指月录",
+    "category": "公案典籍",
+    "summary": "指月录指晚明瞿汝稷辑录之三十二卷公案颂古总集，取楞严经以手指月之意，汇聚千古公案与历代祖师拈提颂古于一帙。",
+    "etymology": "出自《楞严经》卷二及明瞿汝稷《指月录序》：“如人以手指月，示人令知其月。”",
+    "quotes": ["如人以手指月，因指见月；见月忘指，契自本心。 —《指月录》"],
+    "guidance": "参究者当顺着祖师言句指引体认自心明月，切莫执着文字手指，方免数他人宝之叹。",
+    "classicRef": "指月录 · 卷一",
+    "relatedConcepts": ["gong-an-song-gu", "wu-deng-hui-yuan", "self-nature"],
+    "relatedPersons": ["qu-ruji", "zibai-zhenke"],
+    "relatedBooks": ["zhiyuelu", "wudenghuiyuan"]
+  },
+  {
+    "id": "gong-an-song-gu",
+    "title": "公案颂古",
+    "category": "宗门体裁",
+    "summary": "公案颂古指禅宗历代宗师以诗偈形式对前代祖师对机公案所作之提撕评唱与赞颂，以诗意灵光启发学人直达心源。",
+    "etymology": "出自宋雪窦重显《雪窦百则颂古》及明瞿汝稷《指月录》全书体例。",
+    "quotes": ["列圣丛中作者知，法王法令不如斯。会中若有仙陀客，何必文殊下一椎！ —《指月录》"],
+    "guidance": "读颂古当领会诗人禅师之弦外之音与大机大用，切勿作格律文词推敲，言下知宗方是真得。",
+    "classicRef": "指月录 · 卷一至卷三十",
+    "relatedConcepts": ["zhi-yue-lu", "mind-transmission", "daji-yuanying"],
+    "relatedPersons": ["qu-ruji", "xuedou-zhongxian", "yuanwu-keqin"],
+    "relatedBooks": ["zhiyuelu", "biyanlu", "congronglu"]
   }
 ];
 
@@ -20188,10 +20235,46 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["zong-jing-lu", "can-chan-qie-yao"],
     "relatedPersons": ["yongming-yanshou"],
     "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "koan-649",
+    "question": "香严智闲击竹作声因何豁然大悟？",
+    "answer": "一击忘所知，更不假修持。",
+    "context": "香严智闲抛掷瓦砾击竹发声，当下万劫情识顿断，作偈‘一击忘所知，动容扬古路，不堕悄然机’。",
+    "interpretation": "在无心偶合的一声脆响之中，彻底震碎一切文字知解，自性法身全体现前，无须丝毫造作修饰。",
+    "master": "香严智闲",
+    "source": "《指月录》卷九",
+    "relatedConcepts": ["zhi-yue-lu", "self-nature"],
+    "relatedPersons": ["qu-ruji"],
+    "relatedBooks": ["zhiyuelu", "wudenghuiyuan"]
+  },
+  {
+    "id": "koan-650",
+    "question": "苏东坡夜参东林如何悟入广长舌？",
+    "answer": "溪声便是广长舌，山色岂非清净身。",
+    "context": "苏东坡居士夜参东林常总禅师谈论心性，黎明大悟作偈‘溪声便是广长舌，山色岂非清净身’。",
+    "interpretation": "山河大地森罗万象无非清净法身之显现，水流风动皆在全副宣说无上妙法，触目菩提无挂无碍。",
+    "master": "东林常总",
+    "source": "《指月录》卷三十二",
+    "relatedConcepts": ["zhi-yue-lu", "gong-an-song-gu"],
+    "relatedPersons": ["qu-ruji"],
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "koan-651",
+    "question": "黄山谷游山闻木樨香如何悟入无隐？",
+    "answer": "闻得花香扑鼻，大道现成无隐。",
+    "context": "黄山谷随晦堂祖心游山，晦堂借扑鼻桂花香点拨‘吾无隐乎尔’，山谷在言下豁然大悟。",
+    "interpretation": "真如自性正如扑鼻桂花香气一般，现现成成摆在眼前毫无隐瞒；当下承当回光反照即得受用。",
+    "master": "晦堂祖心",
+    "source": "《指月录》卷三十二",
+    "relatedConcepts": ["zhi-yue-lu", "self-nature"],
+    "relatedPersons": ["qu-ruji"],
+    "relatedBooks": ["zhiyuelu"]
   }
 ];
 
-export const ZEN_FAQS: FAQItem[] = [
+const ZEN_FAQS_PART1: FAQItem[] = [
 
   {
     "id": "faq-1649",
@@ -29843,7 +29926,10 @@ export const ZEN_FAQS: FAQItem[] = [
   },
   {
     "id": "faq-921",    "question": "宗密为什么要编\"禅藏\"（《禅源诸诠集》）？",    "answer": "两个目的：一为已受师授而悟不透彻、又无缘广参善知识的人——遍览诸师言教可以打通心结、断绝余念；二为已悟而要为人师者——广见闻、增善巧，依解摄众。他还有一层判教的雄心：要判断各宗禅语与佛经是否相合，必须判尽一藏经的大小、权实、了义不了义，所以先写这篇都序立起框架。结集次第也讲究：先录达摩一宗（心是法源），次编诸家杂述，最后圣教印证——如官府文案曹判在前、尊官判后。",    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
-  },
+  }
+];
+
+const ZEN_FAQS_PART2: FAQItem[] = [
   {
     "id": "faq-922",    "question": "\"经是佛语，禅是佛意\"——禅教一致论对今天学佛有什么用？",    "answer": "宗密看到的两病今天更严重：只研究经论的把修行变成学问（说食数宝），只讲究体验的把佛法变成个人感觉（盲修瞎练）。禅教一致的意思是：经论是地图，禅修是行路——没有地图的行走容易迷路，不行路的地图永远到不了目的地。他的方法论很实用：参究得个入处，要用经文印证（佛言量）；读经读懂了，要在心地上检验（现量）。三量勘契——佛语、亲证、义理三处相符才算数。执则字字疮疣，通则文文妙药。",    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
   },
@@ -37004,5 +37090,63 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "当把握‘消归自心’的主线，不迷失于博大名相之中；以经论教理扫除盲修暗练，以宗门见地打破文字知解，在生活日用中踏实履践自心觉照与积功累德。",
     "relatedQa": "koan-646",
     "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2788",
+    "question": "《指月录》由谁辑录，书名‘指月’有何甚深寓意？",
+    "answer": "《指月录》三十二卷由明代大居士瞿汝稷（那罗延窟学人）辑录。书名取《楞严经》‘以手指月’之典，指宗门公案言教皆如手指，学者当顺指见月、悟入自心，切莫执指为月。",
+    "relatedQa": "koan-649",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2789",
+    "question": "《指月录》与《景德传灯录》《五灯会元》相比有何鲜明特色？",
+    "answer": "《指月录》不仅完备收录宗门千余位禅僧之悟道公案，更广收宋元诸祖（雪窦、圆悟、大慧等）之拈古、代语、别语与颂古，并专设居士悟道卷，多维互映、极具参究与文学价值。",
+    "relatedQa": "koan-649",
+    "relatedBooks": ["zhiyuelu", "wudenghuiyuan", "jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2790",
+    "question": "《指月录》为何专辟卷帙载录历代在家尊宿居士之悟道公案？",
+    "answer": "收录庞蕴一家、裴休、白居易、苏东坡、黄山谷等居士机锋，旨在昭示佛法在日用世间，无论出家在家，只要老实参究、明心见性，皆能当下证得无上菩提。",
+    "relatedQa": "koan-650",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2791",
+    "question": "香严智闲‘击竹闻声悟道’公案揭示了宗门怎样的开悟机理？",
+    "answer": "香严历经多年苦参未悟，在无心抛瓦击竹的偶发声响中，前念后念瞬间脱落，打破一切所知障与分别心，显现自性本来现成家珍，直显宗门‘一击忘所知’之顿悟风光。",
+    "relatedQa": "koan-649",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2792",
+    "question": "苏东坡‘溪声便是广长舌，山色岂非清净身’蕴含何等禅宗见地？",
+    "answer": "东坡彻悟一切声色万象皆是真如法身与佛陀广长舌相之大机大用，打破色空与物我之对立，触目无非实相，展现了大乘圆融无碍之无上境界。",
+    "relatedQa": "koan-650",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2793",
+    "question": "晦堂祖心借‘木樨花香’接引黄山谷有何妙用？",
+    "answer": "晦堂借扑鼻花香直指自性大道无遮无掩、现现成成，如孔子云‘吾无隐乎尔’，打破山谷向玄妙文字中求道之迷思，令其当下于日用知觉中直下承当。",
+    "relatedQa": "koan-651",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2794",
+    "question": "为何禅宗强调‘见月而忘指，得兔而忘蹄’？",
+    "answer": "语言名相与公案机锋皆是渡河之舟筏与求兔之罤网；一旦亲见自性本具之心月，就当彻底放下言语知见之执着，安住如如不动之大解脱海。",
+    "relatedQa": "koan-649",
+    "relatedBooks": ["zhiyuelu"]
+  },
+  {
+    "id": "faq-2795",
+    "question": "现代学人当如何研读《指月录》以指导生活与心性修养？",
+    "answer": "当结合公案本缘与历代颂古深入参究，在工作与生活逆顺境界中观照自心起灭；效法历代居士大德，将禅修融入吃茶吃饭、待人接物等日常之中，体证‘日日是好日’。",
+    "relatedQa": "koan-650",
+    "relatedBooks": ["zhiyuelu"]
   }
 ];
+
+export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2];
