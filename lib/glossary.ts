@@ -1150,7 +1150,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '大圆镜智', pinyin: 'dà yuán jìng zhì', meaning: '转第八阿赖耶识所得之究竟清净智，如明镜圆照法界万象' },
     { char: '无住涅槃', pinyin: 'wú zhù niè pán', meaning: '大悲不住涅槃（不独善其身），大智不住生死（不随流转）之究竟解脱' },
   ],
+  'congronglu': [
+    { char: '万松行秀', pinyin: 'wàn sōng xíng xiù', meaning: '金元之际曹洞宗大宗师，燕京报恩寺从容庵退翁，评唱《从容录》' },
+    { char: '从容录', pinyin: 'cóng róng lù', meaning: '《万松老人评唱天童觉和尚颂古从容庵录》，宗门评唱双璧之一' },
+    { char: '耶律楚材', pinyin: 'yē lǜ chǔ cái', meaning: '元代一代名相，法号湛然居士，万松行秀法嗣，力请刊行《从容录》' },
+    { char: '着语', pinyin: 'zhuó yǔ', meaning: '宗门评唱中在公案原文与诗偈之间随句加注的画龙点睛之机锋批注' },
+    { char: '结款出眼', pinyin: 'jié kuǎn chū yǎn', meaning: '如官府断案般判定公案落处（结款），直点祖师向上一窍心印（出眼）' },
+  ],
 };
+
 
 
 

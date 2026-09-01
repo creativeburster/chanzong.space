@@ -120,6 +120,7 @@ MAP = {
  'hongzhiyulu': [('dongshanyulu','曹洞源流'), ('caoshanyulu','洞上宗风'), ('dahuiyulu','默照话头互映'), ('boshan-canchanjingyu','曹洞坐禅相承')],
  'zhuweimojiejing': [('weimojiejing','经文所本'), ('zhaolun','僧肇同著'), ('zhonglun','中观同宗'), ('tanjing','不二法门会通')],
  'dachengzhuangyanjinglun': [('shedachenglunben','弥勒无著同脉'), ('weishisanshilunsong','唯识宗本'), ('bianzhongbianlun','弥勒五论同列'), ('tanjing','转识成智会通')],
+ 'congronglu': [('hongzhiyulu','颂古源本'), ('biyanlu','评唱双璧'), ('foguojijielu','评唱姊妹'), ('dongshanyulu','曹洞宗本')],
 }
 
 def main():

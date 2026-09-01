@@ -1197,12 +1197,19 @@ export const ZEN_PERSONS: PersonItem[] = [
       "照中失默，便成外道；默中失照，便落二乘。"
     ],
     "classics": [
-      "宏智正觉禅师广录"
+      "宏智正觉禅师广录",
+      "从容录"
     ],
     "relatedConcepts": ["momo-wangyan", "zhaozhao-xianqian", "mozhao-chan-concept"],
     "relatedMethods": ["mozhao"],
     "relatedPersons": ["dahui-zonggao", "dongshan", "caoshan-benji"],
-    "relatedBooks": ["hongzhiyulu", "dongshanyulu", "caoshanyulu", "dahuiyulu"]
+    "relatedBooks": [
+      "hongzhiyulu",
+      "dongshanyulu",
+      "caoshanyulu",
+      "dahuiyulu",
+      "congronglu"
+    ]
   },
   {
     "id": "yongming-yanshou",
@@ -1540,8 +1547,14 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["koan","samadhi"],
     "relatedMethods": ["mozhao"],
-    "relatedPersons": ["hongzhi-zhengjue"],
-    "relatedBooks": []
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "zhuhong",
@@ -8431,8 +8444,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "biyanlu",
     "relatedConcepts": ["ping-chang","song-gu","wenzi-chan"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["biyanlu"]
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "wansong-xingxiu"
+    ],
+    "relatedBooks": [
+      "biyanlu",
+      "congronglu"
+    ]
   },
   {
     "id": "chuishi",
@@ -10665,6 +10684,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["non-duality", "prajna"],
     "relatedPersons": ["wuzhu-asanga"],
     "relatedBooks": ["dachengzhuangyanjinglun", "shedachenglunben"]
+  },
+  {
+    "id": "jiekuan-chuyan",
+    "title": "结款出眼",
+    "category": "公案评唱",
+    "summary": "结款出眼指宗门宗师在评唱公案时，如官府明断公案般一语道破古人机关落处（结款），直点向上一窍祖师心印（出眼），令学人彻底绝断情识计较。",
+    "etymology": "出自元代耶律楚材《从容录序》：“其片言只字，咸有指归；结款出眼，高冠今古，足为万世之模楷。”",
+    "quotes": ["结款出眼，高冠今古，足为万世之模楷。 —《从容录序》"],
+    "guidance": "参究公案切忌在枝节词句上分别死咬，直须在宗师结款出眼处回光返照，自肯承当父母未生前的本来面目。",
+    "classicRef": "从容录 · 序",
+    "relatedConcepts": ["zhuoyu", "ping-chang"],
+    "relatedPersons": ["wansong-xingxiu", "hongzhi-zhengjue"],
+    "relatedBooks": ["congronglu", "biyanlu"]
+  },
+  {
+    "id": "congrong-an-lu",
+    "title": "从容家风",
+    "category": "宗门宗风",
+    "summary": "从容家风指曹洞宗在评唱与机锋接引中不急不缓、不缓不急、绵密细致、儒释圆融，于从容自得中透脱生死大关之独特宗风。",
+    "etymology": "出自万松行秀禅师《从容庵录》名义及圣安澄公和尚法语：“从容自在，儒释兼备，辩才无碍。”",
+    "quotes": ["天童不合抽枝，万松那堪引蔓；若要脚跟点地，向葛藤里穿过！ —《从容录序》"],
+    "guidance": "修行不在外在张皇仓促，于行住坐卧四威仪中从容端坐、默默觉照，临机应变而自处安闲。",
+    "classicRef": "从容录 · 序",
+    "relatedConcepts": ["mozhao-chan-concept", "jiekuan-chuyan"],
+    "relatedPersons": ["wansong-xingxiu", "hongzhi-zhengjue"],
+    "relatedBooks": ["congronglu", "hongzhiyulu"]
   }
 ];
 
@@ -19376,6 +19421,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["wu-zhu-nie-pan", "no-abiding"],
     "relatedPersons": ["wuzhu-asanga"],
     "relatedBooks": ["dachengzhuangyanjinglun", "jingangjing"]
+  },
+  {
+    "id": "koan-616",
+    "question": "达磨廓然无圣与不识是谁",
+    "answer": "廓然无圣如红炉点雪，不识是谁截断千差。",
+    "context": "梁武帝问达摩：如何是圣谛第一义？磨云：廓然无圣。帝曰：对朕者谁？磨云：不识。万松从容录评唱：武帝只在朕位上称尊，达磨直向无生里作主。",
+    "interpretation": "武帝死执有为帝王功德与凡圣二见，达摩以廓然无圣彻底荡尽圣解；一句“不识”直指当下一念离名绝相之本来面目，截断一切情识推求。",
+    "master": "菩提达摩",
+    "source": "《从容录》卷一·第二则",
+    "relatedConcepts": ["jiekuan-chuyan", "emptiness"],
+    "relatedPersons": ["bodhidharma", "wansong-xingxiu", "hongzhi-zhengjue"],
+    "relatedBooks": ["congronglu", "biyanlu"]
+  },
+  {
+    "id": "koan-617",
+    "question": "百丈野狐不落与不昧因果",
+    "answer": "不落是执空灭因，不昧是因果历历而不染。",
+    "context": "古老僧因答“大修行人不落因果”堕五百世野狐身，百丈以“不昧因果”一转语令其当下大悟解脱野狐身。万松评唱：一字之差，野狐脱体。",
+    "interpretation": "狂慧行者执着偏空而妄谓无因无果，必然招致轮回大祸；大觉圣者深明缘起不虚、受报分明而心无挂碍染着，是名不昧因果。",
+    "master": "百丈怀海",
+    "source": "《从容录》卷一·第八则",
+    "relatedConcepts": ["jiekuan-chuyan", "non-duality"],
+    "relatedPersons": ["baizhang", "wansong-xingxiu", "hongzhi-zhengjue"],
+    "relatedBooks": ["congronglu", "biyanlu"]
+  },
+  {
+    "id": "koan-618",
+    "question": "南泉斩猫与赵州顶草鞋",
+    "answer": "南泉提刀全提杀令，赵州顶履全显活机。",
+    "context": "两堂僧众争猫，南泉提起猫云“道得即救，道不得即斩”，众无对遂斩之。赵州晚归听闻，脱草鞋顶于头上而出。南泉叹：子若在正好救得猫儿。",
+    "interpretation": "两堂争猫是无明情执之病，南泉挥刀是截断天下人舌头之霹雳手段；赵州头顶草鞋打破一切寻常情理是非，于绝处显发真性大活机。",
+    "master": "南泉普愿",
+    "source": "《从容录》卷一·第九则",
+    "relatedConcepts": ["jiekuan-chuyan", "congrong-an-lu"],
+    "relatedPersons": ["nanquan-puyuan", "zhaozhou", "wansong-xingxiu"],
+    "relatedBooks": ["congronglu", "biyanlu"]
   }
 ];
 
@@ -35576,5 +35657,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "本论揭示了一切烦恼妄念皆是自识变现，歇下妄识分别即是无漏圣智；参学者在日常生活中修持六度时应心无所求、三轮体空，不落入小乘枯寂，亦不随尘劳流转，行深般若以达无住解脱。",
     "relatedQa": "koan-615",
     "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2700",
+    "question": "《从容录》在禅宗公案文学与宗门修证中有何崇高地位？",
+    "answer": "《从容录》六卷一百则由金元曹洞宗大宗师万松行秀评唱宋代天童宏智正觉之百则颂古而成。它与临济宗圆悟克勤的《碧岩录》齐名，合称“宗门评唱双璧”（世称“北宗从容，南宗碧岩”），为参究禅门百则公案、透脱文字葛藤之最高圭臬。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2701",
+    "question": "《从容录》每则公案的体例结构包含哪四大层次？",
+    "answer": "每则皆具：一、示众（万松老人提纲挈领、下断疑情）；二、本则公案与万松逐句着语（如当头棒喝、点破机关）；三、万松长行评唱（博引儒释、详析源流）；四、天童宏智颂古诗偈与万松着语、评唱（诗境禅机交融圆满）。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2702",
+    "question": "元代名相耶律楚材与《从容录》有何殊胜因缘？",
+    "answer": "耶律楚材（湛然居士）为万松行秀禅师的嗣法高足，在随成吉思汗西征途中历时七年、九次致书坚请万松老人评唱宏智颂古。收到书稿后如死而苏，作序并刊行天下，开创了元代“以儒治国，以佛治心”的盛大格局。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2703",
+    "question": "从容录中“结款出眼”是什么意思？",
+    "answer": "“结款出眼”喻指宗师在评唱公案时，如清官判案般一语道破古人公案的根本落处（结款），直点历代祖师向上一窍的智慧心印（出眼），使学人不再被文字表象所惑，当下自悟本性。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2704",
+    "question": "万松行秀在《从容录》中如何评唱“百丈野狐”公案？",
+    "answer": "万松评唱指出：“一字之差，野狐脱体。”“不落因果”是偏执顽空、抹杀缘起的断见狂慧；“不昧因果”则是深明因果缘起历历分明、而自性清净不染的大觉正见，一语扭转乾坤令古老僧解脱五百世狐身。",
+    "relatedQa": "koan-617",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2705",
+    "question": "《从容录》评唱“南泉斩猫”公案的核心禅机是什么？",
+    "answer": "两堂僧众争猫是执着外境之妄情，南泉提刀是要大众当下展现无分别之自性；大众无语南泉斩猫，是全提杀令斩断情识；赵州顶草鞋而出，则是超越常理是非的全机大活用，展现不立文字的自由解脱。",
+    "relatedQa": "koan-618",
+    "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2706",
+    "question": "《从容录》与《碧岩录》在宗风与文学风格上有何异同？",
+    "answer": "《碧岩录》宗出临济，机锋峻烈、气势磅礴，如电光石火、大机大用；《从容录》宗出曹洞，绵密温润、儒释并茂，于从容自得中透显深奥玄理。二书一刚一柔、一动一静，相得益彰，同为宗门公案评唱极则。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu", "biyanlu"]
+  },
+  {
+    "id": "faq-2707",
+    "question": "现代参禅者阅读《从容录》应当如何用功？",
+    "answer": "如耶律楚材所言：“若要脚跟点地、鼻孔撩天，却须向这葛藤里穿过始得。”行者不应死记公案文字作为口头谈资，而应借万松老人的示众与评唱为金刚宝剑，反照自心，扫除一切分别妄想。",
+    "relatedQa": "koan-616",
+    "relatedBooks": ["congronglu"]
   }
 ];
