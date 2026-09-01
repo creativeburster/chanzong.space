@@ -1157,7 +1157,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '着语', pinyin: 'zhuó yǔ', meaning: '宗门评唱中在公案原文与诗偈之间随句加注的画龙点睛之机锋批注' },
     { char: '结款出眼', pinyin: 'jié kuǎn chū yǎn', meaning: '如官府断案般判定公案落处（结款），直点祖师向上一窍心印（出眼）' },
   ],
+  'chengweishilun': [
+    { char: '成唯识论', pinyin: 'chéng wéi shí lùn', meaning: '唯识宗集大成根本论典，玄奘揉译护法等十大论师之释论十卷' },
+    { char: '异熟能变', pinyin: 'yì shú néng biàn', meaning: '第八阿赖耶识随善恶业因而异时、异类、变异而熟之初能变识' },
+    { char: '四分说', pinyin: 'sì fēn shuō', meaning: '心识认知之四重功能：相分（境）、见分（心）、自证分、证自证分' },
+    { char: '自证分', pinyin: 'zì zhèng fēn', meaning: '心识本体能够向内自我证知其见分与相分之灵明觉知功能' },
+    { char: '唯识五位', pinyin: 'wéi shí wǔ wèi', meaning: '资粮位、加行位、通达位、修习位、究竟位之五重转依修道阶梯' },
+  ],
 };
+
 
 
 

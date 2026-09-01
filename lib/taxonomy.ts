@@ -1136,8 +1136,22 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": ["八识规矩颂", "大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论", "成唯识论", "大般若经", "大乘阿毘达磨集论"],
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
-    "relatedPersons": ["wuzhu-asanga", "divakara"],
-    "relatedBooks": ["bashiguijusong", "baifamingmenlun", "weishisanshilunsong", "weishiershilun", "chengyelun", "bianzhongbianlun", "jieshenmijing", "achengjilun"]
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "divakara",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "bashiguijusong",
+      "baifamingmenlun",
+      "weishisanshilunsong",
+      "weishiershilun",
+      "chengyelun",
+      "bianzhongbianlun",
+      "jieshenmijing",
+      "achengjilun",
+      "chengweishilun"
+    ]
   },
   
   {
@@ -3941,6 +3955,27 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["instant-enlightenment"],
     "relatedPersons": ["jiumoluoshi", "seng-zhao", "huineng"],
     "relatedBooks": ["zhuweimojiejing", "weimojiejing", "tanjing"]
+  },
+  {
+    "id": "kuiji",
+    "name": "窥基",
+    "title": "慈恩大师·法相唯识宗开祖·百部论师",
+    "era": "唐代 (632 - 682)",
+    "lifeStory": "窥基法师，俗姓尉迟，京兆长安人，唐开国元勋尉迟敬德之侄。十七岁受度出家，聪慧绝伦，从玄奘三藏研习梵文与因明、大小乘经论。玄奘三藏主持慈恩寺译场，窥基为上足门人，笔受玄奘揉译之《成唯识论》十卷。其后著《成唯识论述记》《成唯识论掌中枢要》《大乘百法明门论解》《瑜伽论略纂》《金刚经赞述》等数十种宏篇巨制，世称“百部论师”。师全面继承并弘发玄奘三藏唯识法相学说，创立中国佛教法相唯识宗（慈恩宗）。其学理精密弘富，以唯识真理破外道二执、以五重唯识观指导行者循序渐进转染成净，对后世唐宋佛教义学与禅门唯心实相观产生了极其深远的历史影响。",
+    "teachings": "窥基大师宗承护法唯识正义，主张“万法唯识，心外无法”，以四分说阐明能知所知之认识结构，立五重唯识观（遣虚存实、舍滥留纯、摄末归本、隐劣显胜、遣相证性），导引行者从粗至细断惑证真。",
+    "quotes": [
+      "识是假境所依事故，亦胜义有。",
+      "境随妄执皆虚，心体依缘非无。",
+      "万法虽多，唯识所变；转识成智，同证菩提。"
+    ],
+    "classics": [
+      "成唯识论",
+      "大乘百法明门论"
+    ],
+    "relatedConcepts": ["weishi-yixin", "si-fen-shuo", "zhuan-shi-cheng-zhi"],
+    "relatedMethods": ["prajna"],
+    "relatedPersons": ["xuanzang", "wuzhu-asanga"],
+    "relatedBooks": ["chengweishilun", "weishisanshilunsong", "baifamingmenlun"]
   }
 ];
 
@@ -10710,6 +10745,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["mozhao-chan-concept", "jiekuan-chuyan"],
     "relatedPersons": ["wansong-xingxiu", "hongzhi-zhengjue"],
     "relatedBooks": ["congronglu", "hongzhiyulu"]
+  },
+  {
+    "id": "si-fen-shuo",
+    "title": "四分说",
+    "category": "唯识认识论",
+    "summary": "四分说指心识认知的四重结构功能：相分（所缘客体境象）、见分（能缘主体心用）、自证分（向内自我证知见分与相分之本体）、证自证分（进一步确证自证分之深层自觉），揭示心体孤明不假外照之唯识实相。",
+    "etymology": "出自护法菩萨造、玄奘译《成唯识论》卷二及卷七：“变谓识体转似二分，相见俱依自证起故……自证与证自证更互为缘，心体孤明，不假外照。”",
+    "quotes": ["相见俱依自证起，自证能知相见分；若无自证心不知，心识孤明自了了。 —《成唯识论》"],
+    "guidance": "参究自心时，直透外在境象（相分）与起心动念（见分），回光反照自性本来能知能觉之自证本体，顿歇一切向外驰求之妄心。",
+    "classicRef": "成唯识论 · 卷七",
+    "relatedConcepts": ["weishi-yixin", "zhuan-shi-cheng-zhi"],
+    "relatedPersons": ["xuanzang", "kuiji"],
+    "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
+  },
+  {
+    "id": "weishi-wuwei",
+    "title": "唯识五位",
+    "category": "唯识修道阶梯",
+    "summary": "唯识五位指大乘唯识行者转依成佛的五大修行位次：一、资粮位（修集福德智慧资粮）；二、加行位（修四寻思四如实智）；三、通达位（真见道登初地断分别障）；四、修习位（十地进修断俱生障）；五、究竟位（转得四智圆满成佛）。",
+    "etymology": "出自世亲菩萨《唯识三十论颂》及玄奘译《成唯识论》卷九至卷十：“何谓唯识修道阶梯？略有五位：一资粮位，二加行位，三通达位，四修习位，五究竟位。”",
+    "quotes": ["若时菩萨于所缘，智都无所得；尔时便住唯识性，远离二取相。 —《成唯识论》"],
+    "guidance": "修行须明理实修并重，以资粮加行为基，一朝契入无分别智见道，更须在日用历境中不断淘炼习气，圆满法界功德。",
+    "classicRef": "成唯识论 · 卷九",
+    "relatedConcepts": ["si-fen-shuo", "zhuan-shi-cheng-zhi"],
+    "relatedPersons": ["xuanzang", "kuiji"],
+    "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
   }
 ];
 
@@ -19457,6 +19518,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["jiekuan-chuyan", "congrong-an-lu"],
     "relatedPersons": ["nanquan-puyuan", "zhaozhou", "wansong-xingxiu"],
     "relatedBooks": ["congronglu", "biyanlu"]
+  },
+  {
+    "id": "koan-619",
+    "question": "万法唯识如何了知实无外境？",
+    "answer": "外境随情非有如识，内识依缘非无如境。",
+    "context": "《成唯识论》卷一立论：愚夫执实我实法皆如患梦，梦力变现外境实无所有，唯有内识依因托缘而生。",
+    "interpretation": "凡夫向心外求法，执着山河大地为实在客体；圣者洞察一切外境皆如梦幻空华，皆自识所变现。了达无外境，当下妄执顿消，契入唯识真性。",
+    "master": "玄奘三藏",
+    "source": "《成唯识论》卷一",
+    "relatedConcepts": ["si-fen-shuo", "weishi-yixin"],
+    "relatedPersons": ["xuanzang", "kuiji"],
+    "relatedBooks": ["chengweishilun", "weishiershilun"]
+  },
+  {
+    "id": "koan-620",
+    "question": "四分自证心体何以不假外照？",
+    "answer": "相见俱依自证起，心体孤明自了了。",
+    "context": "《成唯识论》卷七阐明心识四分：见分缘相分，自证分缘见分，证自证分确证自证分，心体天然具备灵明自觉。",
+    "interpretation": "心识不需心外另设神明来照察它，心识自能证明自己。如同明灯不仅照耀暗室物象，明灯自身亦天然自明。回光自照即是直见本来自性。",
+    "master": "护法菩萨",
+    "source": "《成唯识论》卷七",
+    "relatedConcepts": ["si-fen-shuo", "zhuan-shi-cheng-zhi"],
+    "relatedPersons": ["xuanzang", "kuiji"],
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "koan-621",
+    "question": "通达位见道时如何远离二取相？",
+    "answer": "智都无所得，尔时便住唯识性。",
+    "context": "《成唯识论》卷九明通达位真见道：菩萨修至无分别智与真如实相冥合一如，能取之见分与所取之相分双双脱落。",
+    "interpretation": "宗门大悟时即是唯识真见道：能知的心与所知的事物彻底消融，言语道断，心行处灭，直下安住在离二取相之纯然法界之中。",
+    "master": "玄奘三藏",
+    "source": "《成唯识论》卷九",
+    "relatedConcepts": ["weishi-wuwei", "non-duality"],
+    "relatedPersons": ["xuanzang", "kuiji"],
+    "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
   }
 ];
 
@@ -35713,5 +35810,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "如耶律楚材所言：“若要脚跟点地、鼻孔撩天，却须向这葛藤里穿过始得。”行者不应死记公案文字作为口头谈资，而应借万松老人的示众与评唱为金刚宝剑，反照自心，扫除一切分别妄想。",
     "relatedQa": "koan-616",
     "relatedBooks": ["congronglu"]
+  },
+  {
+    "id": "faq-2708",
+    "question": "《成唯识论》由谁造论、由谁翻译，在佛教中有何崇高地位？",
+    "answer": "《成唯识论》以世亲菩萨《唯识三十论颂》为本，由印度护法、安慧等十大论师各造释论；唐玄奘三藏以护法正义为主、融摄十家提纲挈领揉译成十卷，窥基大师笔受并弘通，是中国法相唯识宗（慈恩宗）之立宗根本大典。",
+    "relatedQa": "koan-619",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2709",
+    "question": "《成唯识论》如何论证“实无外境，唯有内识”？",
+    "answer": "论中以因明正理破除实我与实法执着，指出一切外在境相皆如梦境或眼翳所见之空花，乃是阿赖耶识中种子变现为相见二分之幻象。外境随妄情假立故非真有，内识依因托缘而起故非全无，由此立唯识无境之中道。",
+    "relatedQa": "koan-619",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2710",
+    "question": "什么是唯识学中的“三能变识”？",
+    "answer": "一、初能变（异熟能变）：第八阿赖耶识，含藏一切种子，受善恶异熟果报；二、第二能变（思量能变）：第七末那识，恒常审察思量、执第八识见分为我；三、第三能变（了别境能变）：眼耳鼻舌身意前六识，负责了别色声香味触法六种外境。",
+    "relatedQa": "koan-619",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2711",
+    "question": "《成唯识论》提出的“四分说”包含哪四种功能？",
+    "answer": "一、相分：心识变现之认识对象与境象；二、见分：心识向外了别相分之能缘作用；三、自证分：心识向内自觉并证知识体见分之本体；四、证自证分：对自证分进一步确证之更深层自省。四分表明心识自明自觉，不假外照。",
+    "relatedQa": "koan-620",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2712",
+    "question": "什么是遍计所执、依他起与圆成实“三自性”？",
+    "answer": "依他起性指众缘和合而生之心境现象（如幻有）；遍计所执性指凡夫在依他起幻相上妄生实我实法之偏执分别（如龟毛兔角本无实物）；圆成实性指在依他起上彻底远离遍计所执所显现之圆满清净真如实相（如虚空常住）。",
+    "relatedQa": "koan-619",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2713",
+    "question": "《成唯识论》规定的“唯识五位”修行阶梯是怎样的？",
+    "answer": "一、资粮位：修习广大众善福智资粮；二、加行位：修四寻思与四如实智，伏分别我法二执；三、通达位：真见道初地，断分别二障，证二空真如；四、修习位：二地至十地，断俱生二障，渐转八识；五、究竟位：圆满证得大圆镜智法身佛果。",
+    "relatedQa": "koan-621",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2714",
+    "question": "第七末那识为何被称为生死轮回与我执的根源？",
+    "answer": "末那识以“恒审思量”为性相，一刻不停地执着第八阿赖耶识的见分为真实“自我”，恒常与我痴、我见、我慢、我爱四种根本烦恼形影不离。只要末那识不破，一切善恶行为皆带着潜意识的我执染污。",
+    "relatedQa": "koan-619",
+    "relatedBooks": ["chengweishilun"]
+  },
+  {
+    "id": "faq-2715",
+    "question": "《成唯识论》与禅宗顿悟见性有何内在契合？",
+    "answer": "禅宗直指“万法唯心，见性成佛”，其教理归宿与唯识转依完全一致。禅门参究话头或默照观照，正是直接在第七末那识根子上下功夫截断我执，使心体直下与圆成实真如冥合，一念相应即至通达位见道境界。",
+    "relatedQa": "koan-621",
+    "relatedBooks": ["chengweishilun", "tanjing"]
   }
 ];
