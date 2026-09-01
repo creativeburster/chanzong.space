@@ -1943,22 +1943,22 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "puji",
     "name": "普济",
-    "title": "五灯会元作者 / 临济宗杨岐派",
+    "title": "五灯会元编纂者 / 南宋灵隐寺住持 / 临济杨岐派",
     "era": "南宋 (1179-1253)",
-    "lifeStory": "普济禅师，临安（今浙江杭州）人，俗姓张。少出家，参大慧宗杲法系禅师，为临济宗杨岐派传人。师住灵隐寺，集禅宗五家灯录——《景德传灯录》《天圣广灯录》《建中靖国续灯录》《联灯会要》《嘉泰普灯录》——删繁就简，合为一书，名《五灯会元》二十卷。此书为禅宗灯史之集大成者，录自过去七佛至宋代诸大德之传法因缘、机缘语录，为后世禅宗史传之最重要典籍。",
-    "teachings": "普济之学，以“会元”为志：会五灯之繁冗，归一元之宗旨。其《五灯会元》以简练之笔录禅宗千年法脉，为后世参学之根本指南。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
+    "lifeStory": "普济禅师，俗姓张，临安人。少出家，参大慧宗杲法系诸尊宿，为临济宗杨岐派高足。历住灵隐寺、净慈寺等天下大刹。师见北宋以降五部灯录达数百卷之巨、浩瀚繁复，遂发愿删繁就简，融会《景德传灯录》《天圣广灯录》《建中靖国续灯录》《宗门联灯会要》《嘉泰普灯录》于一炉，编成《五灯会元》二十卷。去粗取精，独存宗门机锋骨髓，成为中国禅宗流传最广、影响最大之第一机锋公案宝典。",
+    "teachings": "普济之学，以“会五灯之繁，归一元之宗”为宗旨：删去繁冗世俗履历，单刀直入呈现千余则惊心动魄之宗门对机。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
     "quotes": [
       "五灯会元，归于一心。 —《五灯会元》",
-      "心佛众生，三无差别；但离妄缘，即如如佛。",
-      "直指人心，见性成佛；不立文字，教外别传。"
-],
+      "会五灯之繁冗，归一元之宗旨。",
+      "一口吸尽西江水，目前处处是灵山。"
+    ],
     "classics": [
       "五灯会元"
-],
-    "relatedConcepts": ["mind-transmission"],
-    "relatedMethods": [],
-    "relatedPersons": ["dahui-zonggao","daoyuan-monk"],
-    "relatedBooks": []
+    ],
+    "relatedConcepts": ["wu-deng-hui-yuan", "wu-jia-qi-zong", "mind-transmission", "self-nature"],
+    "relatedMethods": ["kanhuatou"],
+    "relatedPersons": ["dahui-zonggao", "daoyuan-monk"],
+    "relatedBooks": ["wudenghuiyuan", "jingdechuandenglu", "biyanlu", "wumenguan"]
   },
   {
     "id": "huangtingjian",
@@ -11029,6 +11029,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["emptiness", "sui-chu-zuo-zhu", "samadhi"],
     "relatedPersons": ["hanshan-deqing"],
     "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "wu-deng-hui-yuan",
+    "title": "五灯会元",
+    "category": "灯录典籍",
+    "summary": "五灯会元指南宋普济禅师将北宋以来五部庞杂灯录删繁就简、融为一炉之集大成公案大典，独存宗门机锋精髓，天下宗门奉为圭臬。",
+    "etymology": "出自宋普济《五灯会元序》：“合五灯为一书，去重取精，名曰五灯会元。”",
+    "quotes": ["五灯会元，千圣同心；去繁存精，直指本源。 —《五灯会元》"],
+    "guidance": "行者研读五灯会元，当于千百则激扬机锋中反观自性，切莫作文学逻辑套解，直下承当方见先德真意。",
+    "classicRef": "五灯会元 · 序",
+    "relatedConcepts": ["wu-jia-qi-zong", "mind-transmission", "daji-yuanying"],
+    "relatedPersons": ["puji", "daoyuan-monk"],
+    "relatedBooks": ["wudenghuiyuan", "jingdechuandenglu"]
+  },
+  {
+    "id": "wu-jia-qi-zong",
+    "title": "五家七宗",
+    "category": "宗派流变",
+    "summary": "五家七宗指禅宗自南岳、青原二系分衍出之沩仰、临济、曹洞、云门、法眼五大家风，及临济分衍出之杨岐、黄龙二宗，构成了中国禅宗最宏伟之宗门法脉网络。",
+    "etymology": "出自《五灯会元》全书体例纲宗，分卷详载南岳青原门下五家七宗各大祖师之对机公案。",
+    "quotes": ["临济痛烈，曹洞深密，沩仰方圆，云门险峻，法眼简明。 —《五灯会元》"],
+    "guidance": "参究者当体悉五家七宗皆从自性一心流出，虽接引方便各异，而明心见性之旨同一不二。",
+    "classicRef": "五灯会元 · 卷四至卷二十",
+    "relatedConcepts": ["wu-deng-hui-yuan", "mind-transmission", "self-nature"],
+    "relatedPersons": ["puji", "linji", "dongshan", "yunmen", "fayan-wenyi"],
+    "relatedBooks": ["wudenghuiyuan", "jingdechuandenglu", "guzunsuyulu"]
   }
 ];
 
@@ -20064,6 +20090,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["meng-you-san-mei", "mind-transmission"],
     "relatedPersons": ["hanshan-deqing", "zibai-zhenke"],
     "relatedBooks": ["hanshanlaorenmengyouji", "tanjing"]
+  },
+  {
+    "id": "koan-643",
+    "question": "南泉平常心是道为何云拟向即乖？",
+    "answer": "起心动念即成挂碍，太虚廓然当下圆成。",
+    "context": "赵州问南泉如何是道，南泉答平常心是道、拟向即乖、道不属知不知，赵州言下大悟。",
+    "interpretation": "自性本体现成无缺，稍生追寻取舍之心即落能所对立；无心于万物，目前处处皆是清净大道。",
+    "master": "南泉普愿",
+    "source": "《五灯会元》卷五",
+    "relatedConcepts": ["wu-deng-hui-yuan", "self-nature"],
+    "relatedPersons": ["puji", "zhaozhou"],
+    "relatedBooks": ["wudenghuiyuan", "guzunsuyulu"]
+  },
+  {
+    "id": "koan-644",
+    "question": "庞居士一口吸尽西江水显何境界？",
+    "answer": "不与万法为侣，一口吞尽乾坤。",
+    "context": "庞居士问马祖不与万法为侣者是谁，马祖答待汝一口吸尽西江水即向汝道，居士当下顿领玄旨。",
+    "interpretation": "自性广大涵容十方虚空法界，超越主客依附；一口吸尽西江水，直显独立绝待之无上法身。",
+    "master": "马祖道一",
+    "source": "《五灯会元》卷四",
+    "relatedConcepts": ["wu-deng-hui-yuan", "daji-yuanying"],
+    "relatedPersons": ["puji", "daoyuan-monk"],
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "koan-645",
+    "question": "洞山良价过水睹影渠正是我作何解？",
+    "answer": "切忌向外驰求，处处现成遇渠。",
+    "context": "洞山辞别云岩后过水睹影豁然大悟，作偈‘切忌从他觅迢迢与我疏，渠今正是我我今不是渠’。",
+    "interpretation": "肉身幻相不离自性法身，而法身超越肉身局限；直下承当不假外求，性相圆融无碍。",
+    "master": "洞山良价",
+    "source": "《五灯会元》卷九",
+    "relatedConcepts": ["wu-jia-qi-zong", "self-nature"],
+    "relatedPersons": ["dongshan", "puji"],
+    "relatedBooks": ["wudenghuiyuan", "dongshanyulu"]
   }
 ];
 
@@ -36768,5 +36830,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "学人当依《参禅切要》与《念佛切要》老实做工夫，克除口头狂慧；在生活逆境中修持梦游观，不起贪嗔挂碍，在日用应缘中历练自性清净觉照。",
     "relatedQa": "koan-640",
     "relatedBooks": ["hanshanlaorenmengyouji"]
+  },
+  {
+    "id": "faq-2772",
+    "question": "《五灯会元》由谁编纂，为何被称为中国禅宗第一机锋大典？",
+    "answer": "《五灯会元》二十卷由南宋灵隐寺住持大觉普济禅师编纂，将北宋五部庞大灯录删繁就简、独存机锋公案精髓，生动呈现五家七宗千年法脉，为中国历史上流传最广的禅宗宝典。",
+    "relatedQa": "koan-643",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2773",
+    "question": "《五灯会元》所合并的“宋代五大灯录”具体是哪五部？",
+    "answer": "五灯为：《景德传灯录》（道原纂）、《天圣广灯录》（李遵勖编）、《建中靖国续灯录》（惟白集）、《宗门联灯会要》（悟明辑）、《嘉泰普灯录》（正受编）。",
+    "relatedQa": "koan-643",
+    "relatedBooks": ["wudenghuiyuan", "jingdechuandenglu"]
+  },
+  {
+    "id": "faq-2774",
+    "question": "《五灯会元》在文献剪裁与宗风呈现上有何独到优势？",
+    "answer": "删去了大量重复繁琐的俗家履历、碑铭与应酬文字，保留了最生动、最泼辣的室中对机与接引机锋，使行者能直截了当参究祖师以心印心的大机大用。",
+    "relatedQa": "koan-643",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2775",
+    "question": "《五灯会元》如何系统呈现禅宗“五家七宗”的流变脉络？",
+    "answer": "全书以六祖下南岳怀让与青原行思为两大源流，详载沩仰、临济、曹洞、云门、法眼五家及临济下杨岐、黄龙二宗之开宗立极与宗风演进，脉络井然、一览无余。",
+    "relatedQa": "koan-645",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2776",
+    "question": "为何南泉普愿在《五灯会元》中开示“平常心是道，拟向即乖”？",
+    "answer": "南泉直指自性大道即在日常饥餐困眠等平常日用之中；起心动念去追求反成主客对立与妄想障碍，唯有无心合道、太虚廓然，方见本来面目。",
+    "relatedQa": "koan-643",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2777",
+    "question": "马祖道一接引庞居士为何说“待汝一口吸尽西江水”？",
+    "answer": "庞公问不与万法为侣者是谁，马祖以一口吸尽西江水之雷霆机锋，打破其向心外追寻独立主体的妄执，直显自性心体广大无边、一口吞尽大千法界的超然境界。",
+    "relatedQa": "koan-644",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2778",
+    "question": "洞山良价“过水睹影”公案揭示了怎样的禅宗见地？",
+    "answer": "洞山悟得‘切忌从他觅，迢迢与我疏’，明白真如自性即在当下，幻影肉身虽由法身显现，但不可执着肉身为实我；性相不二，处处逢渠即是本来。",
+    "relatedQa": "koan-645",
+    "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2779",
+    "question": "现代学人阅读《五灯会元》应当如何避免“落入公案文字知解”？",
+    "answer": "切忌将公案当作禅机谜语去猜套分析，当体会每一则公案皆是祖师斩断学人妄念的金刚利剑；在言下反躬自问‘能看公案的是谁’，在日常生活中踏实履践自心觉照。",
+    "relatedQa": "koan-643",
+    "relatedBooks": ["wudenghuiyuan"]
   }
 ];

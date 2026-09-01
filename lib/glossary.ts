@@ -1213,7 +1213,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '参禅切要', pinyin: 'cān chán qiè yào', meaning: '憨山大师径山小参法语，详尽剖析看话头做工夫从起疑至彻悟之完整阶梯' },
     { char: '自性弥陀', pinyin: 'zì xìng mí tuó', meaning: '心佛众生三无差别，净土不离当下自心，念佛念至能所双忘即见本性弥陀' },
   ],
+  'wudenghuiyuan': [
+    { char: '五灯会元', pinyin: 'wǔ dēng huì yuán', meaning: '宋普济禅师合五部灯录为一炉之禅门第一公案机锋大典' },
+    { char: '大觉普济', pinyin: 'dà jué pǔ jì', meaning: '南宋高僧，住持灵隐、净慈等刹，删繁就简编纂二十卷《五灯会元》' },
+    { char: '五家七宗', pinyin: 'wǔ jiā qī zōng', meaning: '沩仰、临济、曹洞、云门、法眼五家及临济分衍之杨岐、黄龙二宗' },
+    { char: '一口吸尽西江水', pinyin: 'yī kǒu xī jìn xī jiāng shuǐ', meaning: '马祖道一接引庞蕴居士机锋，直指自性广大、涵融万象' },
+    { char: '南岳青原', pinyin: 'nán yuè qīng yuán', meaning: '六祖门下怀让与行思两大宗派，分衍出五家七宗天下禅林' },
+  ],
 };
+
 
 
 
