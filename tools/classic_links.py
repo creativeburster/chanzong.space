@@ -122,6 +122,7 @@ MAP = {
  'dachengzhuangyanjinglun': [('shedachenglunben','弥勒无著同脉'), ('weishisanshilunsong','唯识宗本'), ('bianzhongbianlun','弥勒五论同列'), ('tanjing','转识成智会通')],
  'congronglu': [('hongzhiyulu','颂古源本'), ('biyanlu','评唱双璧'), ('foguojijielu','评唱姊妹'), ('dongshanyulu','曹洞宗本')],
  'chengweishilun': [('weishisanshilunsong','颂文本源'), ('weishiershilun','唯识姊妹'), ('baifamingmenlun','名相总要'), ('dachengqixinlun','心识通达')],
+ 'xianyangshengjiaolun': [('shedachenglunben','无著同门'), ('chengweishilun','唯识相承'), ('dachengzhuangyanjinglun','瑜伽同宗'), ('tanjing','心意识融通')],
 }
 
 def main():

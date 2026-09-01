@@ -1164,7 +1164,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '自证分', pinyin: 'zì zhèng fēn', meaning: '心识本体能够向内自我证知其见分与相分之灵明觉知功能' },
     { char: '唯识五位', pinyin: 'wéi shí wǔ wèi', meaning: '资粮位、加行位、通达位、修习位、究竟位之五重转依修道阶梯' },
   ],
+  'xianyangshengjiaolun': [
+    { char: '显扬圣教论', pinyin: 'xiǎn yáng shèng jiào lùn', meaning: '大乘唯识纲领论典，无著菩萨撮要《瑜伽师地论》二十卷' },
+    { char: '摄事品', pinyin: 'shè shì pǐn', meaning: '显扬论首品，总摄五位百法与八识心王之体性业用' },
+    { char: '现观', pinyin: 'xiàn guān', meaning: '梵语abhisamaya，现前如实观照四谛与二空真如之无漏般若智' },
+    { char: '成善巧', pinyin: 'chéng shàn qiǎo', meaning: '通达蕴、界、处、缘起等十种法门之善巧决择大智慧' },
+    { char: '三无自性', pinyin: 'sān wú zì xìng', meaning: '相无自性性、生无自性性、胜义无自性性，大乘中道密意' },
+  ],
 };
+
 
 
 

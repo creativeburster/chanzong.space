@@ -1133,7 +1133,18 @@ export const ZEN_PERSONS: PersonItem[] = [
       "七处征心，八还辨见。 —《楞严经》",
       "心生则种种法生，心灭则种种法灭。"
 ],
-    "classics": ["八识规矩颂", "大乘百法明门论", "唯识三十论颂", "唯识二十论", "大乘成业论", "辨中边论", "成唯识论", "大般若经", "大乘阿毘达磨集论"],
+    "classics": [
+      "八识规矩颂",
+      "大乘百法明门论",
+      "唯识三十论颂",
+      "唯识二十论",
+      "大乘成业论",
+      "辨中边论",
+      "成唯识论",
+      "大般若经",
+      "大乘阿毘达磨集论",
+      "显扬圣教论"
+    ],
     "relatedConcepts": ["weishi-yixin","emptiness","zhuan-shi-cheng-zhi","alaiye-shi","mo-na-shi"],
     "relatedMethods": [],
     "relatedPersons": [
@@ -1150,7 +1161,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "bianzhongbianlun",
       "jieshenmijing",
       "achengjilun",
-      "chengweishilun"
+      "chengweishilun",
+      "xianyangshengjiaolun"
     ]
   },
   
@@ -3845,7 +3857,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "大乘阿毗达磨集论",
       "大乘阿毘达磨集论",
       "究竟一乘宝性论",
-      "大乘庄严经论"
+      "大乘庄严经论",
+      "显扬圣教论"
     ],
     "relatedConcepts": ["weishi", "sanxing-wuxing", "tathagatagarbha", "zhongdao"],
     "relatedMethods": [],
@@ -3854,7 +3867,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "shedachenglunben",
       "achengjilun",
       "baoxinglun",
-      "dachengzhuangyanjinglun"
+      "dachengzhuangyanjinglun",
+      "xianyangshengjiaolun"
     ]
   }
 ,
@@ -10771,6 +10785,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["si-fen-shuo", "zhuan-shi-cheng-zhi"],
     "relatedPersons": ["xuanzang", "kuiji"],
     "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
+  },
+  {
+    "id": "san-wu-zi-xing",
+    "title": "三无自性",
+    "category": "唯识中道实相",
+    "summary": "三无自性指相无自性性（遍计所执无实相）、生无自性性（依他起如幻缘生无独立生体）、胜义无自性性（圆成实真如远离一切世俗名言戏论），为佛陀宣说一切法无自性之大乘深密中道。",
+    "etymology": "出自无著菩萨《显扬圣教论》卷七成无性品及《解深密经》：“由相无性故、由生无性故、由胜义无性故，如来密意说一切法皆无自性。”",
+    "quotes": ["由三无自性故，说一切法无自性。知三性三无性，则入中道。 —《显扬圣教论》"],
+    "guidance": "参悟诸法切莫堕入断灭空见，当了知万象虽幻生无自性，而真如觉性历历孤明，空有无碍方为正觉。",
+    "classicRef": "显扬圣教论 · 卷七",
+    "relatedConcepts": ["sanxing-wuxing", "emptiness", "zhongdao"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["xianyangshengjiaolun", "jieshenmijing", "chengweishilun"]
+  },
+  {
+    "id": "cheng-xian-guan",
+    "title": "真现观",
+    "category": "唯识修证现量",
+    "summary": "真现观（梵语 abhisamaya）指修行者在甚深般若与等持中现前如实证见四圣谛与二空真如之无漏圣智，涵盖思现观、信现观、戒现观、现观智谛现观、现观边智谛现观与究竟现观六门。",
+    "etymology": "出自无著菩萨《显扬圣教论》卷八成现观品及《瑜伽师地论》：“现观者，谓无分别智现前观照真如，得清净信，断分别惑。”",
+    "quotes": ["无分别智现前观，见道证真入如来家。 —《显扬圣教论》"],
+    "guidance": "现观非名言思虑所能及，唯在息灭能取所取分别之刹那，心与真如冥合一如，现量圆明。",
+    "classicRef": "显扬圣教论 · 卷八",
+    "relatedConcepts": ["san-wu-zi-xing", "zhuan-shi-cheng-zhi"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["xianyangshengjiaolun", "shedachenglunben"]
   }
 ];
 
@@ -19554,6 +19594,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["weishi-wuwei", "non-duality"],
     "relatedPersons": ["xuanzang", "kuiji"],
     "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
+  },
+  {
+    "id": "koan-622",
+    "question": "无著菩萨如何错综瑜伽显扬圣教？",
+    "answer": "文约义周而易晓，显扬圣教慈悲故。",
+    "context": "《显扬圣教论》卷一归敬颂：无著菩萨亲承弥勒慈尊受百卷《瑜伽师地论》，为慈悲拔济后学，错综十七地之精要造二十卷十一品，令深法易晓。",
+    "interpretation": "千经万论不离自心一窍。无著菩萨繁者化简、以十一品撮要百卷巨著，正是祖师老婆心切，令一切学人径登大乘觉岸。",
+    "master": "无著菩萨",
+    "source": "《显扬圣教论》卷一",
+    "relatedConcepts": ["san-wu-zi-xing", "weishi-yixin"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["xianyangshengjiaolun", "shedachenglunben"]
+  },
+  {
+    "id": "koan-623",
+    "question": "相生胜义三无性如何直契真如？",
+    "answer": "离相离生离胜义戏论，真如本性历历孤明。",
+    "context": "《显扬圣教论》卷七成无性品：遍计所执如空华（相无性），依他起如幻事（生无性），圆成实离妄名（胜义无性）。",
+    "interpretation": "行者若能于日常起心动念处洞见相由妄执、生由缘起，当下放下一切情识抓取，圆成实清净自性自然朗朗现前。",
+    "master": "无著菩萨",
+    "source": "《显扬圣教论》卷七",
+    "relatedConcepts": ["san-wu-zi-xing", "emptiness"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["xianyangshengjiaolun", "chengweishilun"]
+  },
+  {
+    "id": "koan-624",
+    "question": "瑜伽止观如何双运速证菩提？",
+    "answer": "奢摩他令心一境除散乱，毗钵舍那如理简择除痴暗。",
+    "context": "《显扬圣教论》卷九成瑜伽品阐述大乘止观：止令心体安住一境，观令慧目审察法相，止观如车之双轮、鸟之双翼。",
+    "interpretation": "宗门打坐默照亦须定慧等持：孤然寂静而不落无记昏沉，灵明了了而不生散乱妄动，即是止观双运之无上境界。",
+    "master": "无著菩萨",
+    "source": "《显扬圣教论》卷九",
+    "relatedConcepts": ["cheng-xian-guan", "samadhi"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["xianyangshengjiaolun"]
   }
 ];
 
@@ -35866,5 +35942,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "禅宗直指“万法唯心，见性成佛”，其教理归宿与唯识转依完全一致。禅门参究话头或默照观照，正是直接在第七末那识根子上下功夫截断我执，使心体直下与圆成实真如冥合，一念相应即至通达位见道境界。",
     "relatedQa": "koan-621",
     "relatedBooks": ["chengweishilun", "tanjing"]
+  },
+  {
+    "id": "faq-2716",
+    "question": "《显扬圣教论》由谁造论、由谁翻译，有何独特历史地位？",
+    "answer": "《显扬圣教论》二十卷十一品由古印度大乘瑜伽行派开宗论师无著菩萨造颂并广释，唐玄奘三藏于长安大慈恩寺奉诏译出。它是无著菩萨提炼百卷《瑜伽师地论》十七地精髓之宗纲巨著，世称“小瑜伽论”或“瑜伽枢要”。",
+    "relatedQa": "koan-622",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2717",
+    "question": "《显扬圣教论》全书十一品是如何构架唯识体系的？",
+    "answer": "一摄事品（百法与八识）、二摄净义品（四谛与法界）、三成善巧品（十种善巧）、四成无常品、五成苦品、六成空品、七成无性品（三无自性）、八成现观品（真见道）、九成瑜伽品（止观双运）、十成不思议品（佛三密）、十一摄胜决择品（决择五法三性）。",
+    "relatedQa": "koan-622",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2718",
+    "question": "《显扬圣教论》第一卷如何统摄大乘“五位百法”？",
+    "answer": "论中立五法总摄一切菩萨藏：一、心法（八识心王）；二、心所有法（五十一心所，含遍行5、别境5、善11、烦恼6、随烦恼20、不定4）；三、色法（11种物质现象）；四、心不相应行法（24种分位假立）；五、无为法（6种不生灭真实）。",
+    "relatedQa": "koan-622",
+    "relatedBooks": ["xianyangshengjiaolun", "baifamingmenlun"]
+  },
+  {
+    "id": "faq-2719",
+    "question": "什么是《显扬圣教论》中的“相无性、生无性、胜义无性”？",
+    "answer": "相无自性性：遍计所执之实我实法本无体相；生无自性性：依他起诸法仗因托缘而生、无自然独立之自性；胜义无自性性：圆成实真如远离一切凡夫妄立之我法名言戏论。三无自性是大乘破执显真之究竟中道。",
+    "relatedQa": "koan-623",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2720",
+    "question": "《显扬圣教论》第八卷阐述的“真现观”有何修证意义？",
+    "answer": "现观指无分别般若智现前证见真如。论中立思现观、信现观、戒现观、现观智谛现观、现观边智谛现观、究竟现观六门。行者契入现观即登见道初地，断除分别起烦恼，永脱三恶道，生如来家。",
+    "relatedQa": "koan-624",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2721",
+    "question": "《显扬圣教论》成瑜伽品如何指导“奢摩他与毗钵舍那”实修？",
+    "answer": "奢摩他（止）通过九种心住（安住、等住、摄住等）息灭散乱，使心专一寂静；毗钵舍那（观）通过四种如理作意审察简择诸法实相。行者唯有止观均等、双运修行，方能彻底断除烦恼结缚、速证菩提。",
+    "relatedQa": "koan-624",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2722",
+    "question": "《显扬圣教论》第十卷如何揭示佛陀“身语意三密不可思议”？",
+    "answer": "如来身密能遍现十方微尘刹海示现八相成道；语密能以一圆音演说妙法令随类各解；意密能于一刹那中普知法界一切众生心念与因缘。三密功德如如不动而能广大化导无量有情。",
+    "relatedQa": "koan-622",
+    "relatedBooks": ["xianyangshengjiaolun"]
+  },
+  {
+    "id": "faq-2723",
+    "question": "研读《显扬圣教论》对禅门明心见性有何殊胜助益？",
+    "answer": "禅门修行重在“参究心源、转迷为悟”。《显扬圣教论》将庞大的心意识法相与瑜伽止观融会贯通，为禅者扫除疑情分别、提供不落偏空的金刚正见，使禅修者在静定与日用接物中皆能正念分明、直契本来。",
+    "relatedQa": "koan-624",
+    "relatedBooks": ["xianyangshengjiaolun", "tanjing"]
   }
 ];
