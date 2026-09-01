@@ -40,6 +40,7 @@ def verify_all_classics():
             elif 'chengweishi' in cid: keywords = ['1585', '成唯识']
             elif 'xianyang' in cid: keywords = ['1602', '显扬']
             elif 'zhongfeng' in cid: keywords = ['中峰', '0145', 'B0145']
+            elif 'apidamo' in cid or 'jilun' in cid: keywords = ['1605', '阿毗达磨', '集论']
             
             if any(k in df for k in keywords):
                 matched_txt = df

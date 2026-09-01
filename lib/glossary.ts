@@ -1178,7 +1178,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '辟义解', pinyin: 'pì yì jiě', meaning: '开显《信心铭》深义、扫除名相文字执着之精妙注解三卷' },
     { char: '自性弥陀', pinyin: 'zì xìng mí tuó', meaning: '自心本具之无量寿无量光清净觉性，唯心净土之禅净合一宗趣' },
   ],
+  'dachengapidamojilun': [
+    { char: '阿毘达磨', pinyin: 'ā pí dá mó', meaning: '梵语Abhidharma，意译“对法”或“无比法”，论述佛法甚深名相与慧学' },
+    { char: '本事分', pinyin: 'běn shì fēn', meaning: '《集论》前四卷，阐发蕴界处诸法体性、五位百法与相应成就等根本事理' },
+    { char: '决择分', pinyin: 'jué zé fēn', meaning: '《集论》后三卷，以谛、法、得、论议四门决择大乘修证与因明正理' },
+    { char: '萨迦耶见', pinyin: 'sà jiā yē jiàn', meaning: '梵语satkāya-dṛṣṭi，意译“身见”或“我见”，于五蕴和合身心妄计为实我我所' },
+    { char: '无为法', pinyin: 'wú wéi fǎ', meaning: '不依因缘造作、不生不灭之常住法界实相，集论中立真如、虚空等八种无为' },
+  ],
 };
+
 
 
 

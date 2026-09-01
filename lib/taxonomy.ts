@@ -1162,7 +1162,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "jieshenmijing",
       "achengjilun",
       "chengweishilun",
-      "xianyangshengjiaolun"
+      "xianyangshengjiaolun",
+      "dachengapidamojilun"
     ]
   },
   
@@ -3876,7 +3877,14 @@ export const ZEN_PERSONS: PersonItem[] = [
       "大乘庄严经论",
       "显扬圣教论"
     ],
-    "relatedConcepts": ["weishi", "sanxing-wuxing", "tathagatagarbha", "zhongdao"],
+    "relatedConcepts": [
+      "weishi",
+      "sanxing-wuxing",
+      "tathagatagarbha",
+      "zhongdao",
+      "wu-wei-bai-fa",
+      "shi-liu-xing-xiang"
+    ],
     "relatedMethods": [],
     "relatedPersons": ["shiqin", "xuanzang"],
     "relatedBooks": [
@@ -3884,7 +3892,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "achengjilun",
       "baoxinglun",
       "dachengzhuangyanjinglun",
-      "xianyangshengjiaolun"
+      "xianyangshengjiaolun",
+      "dachengapidamojilun"
     ]
   }
 ,
@@ -10853,6 +10862,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["chan-jing-shuangxiu", "self-nature"],
     "relatedPersons": ["zhongfeng-mingben", "yongming-yanshou"],
     "relatedBooks": ["tianmuzhongfengguanglu", "boshan-canchanjingyu"]
+  },
+  {
+    "id": "wu-wei-bai-fa",
+    "title": "五位百法",
+    "category": "唯识名相",
+    "summary": "五位百法是大乘对法（阿毘达磨）对宇宙万象之最完整分类体系：心王8、心所51、色法11、心不相应行24、无为法8，穷尽心识与法界实相。",
+    "etymology": "出自无著菩萨《大乘阿毘达磨集论》卷一及世亲菩萨《大乘百法明门论》：“一切最胜故，与此相应故，二所现影故，三位差别故，四所显示故，如是次第五位百法。”",
+    "quotes": ["一切者，有五法总摄菩萨藏：心、心所有、色、不相应、无为。 —《大乘阿毘达磨集论》"],
+    "guidance": "禅修者了知百法皆依自心转变、当体无我，便能照破主客对立，不落执着妄想。",
+    "classicRef": "大乘阿毘达磨集论 · 卷一",
+    "relatedConcepts": ["zhuan-shi-cheng-zhi", "si-fen-shuo", "emptiness"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang", "shiqin"],
+    "relatedBooks": ["dachengapidamojilun", "baifamingmenlun", "chengweishilun"]
+  },
+  {
+    "id": "shi-liu-xing-xiang",
+    "title": "十六行相",
+    "category": "修持止观",
+    "summary": "十六行相指对苦、集、灭、道四圣谛所修习之十六种深细智慧观照（苦下非常苦空非我、集下因集生缘、灭下灭静妙离、道下道如行出），能破一切邪执。",
+    "etymology": "出自《大乘阿毘达磨集论》卷五《谛决择品》：“苦有四相，集有四相，灭有四相，道有四相。合为十六行相。修此十六行相，能破十六种外道邪执。”",
+    "quotes": ["观苦非常苦空非我，观集因集生缘，观灭灭静妙离，观道道如行出。 —《大乘阿毘达磨集论》"],
+    "guidance": "于日常起心动念与境缘中，常修此十六种如实观照，息灭贪瞋痴疑，速证无生法忍。",
+    "classicRef": "大乘阿毘达磨集论 · 卷五",
+    "relatedConcepts": ["cheng-xian-guan", "emptiness", "erdi"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["dachengapidamojilun", "xianyangshengjiaolun"]
   }
 ];
 
@@ -19708,6 +19743,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
     "relatedPersons": ["zhongfeng-mingben", "yongming-yanshou"],
     "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "koan-628",
+    "question": "五蕴如何如沫泡焰蕉幻而见自性？",
+    "answer": "聚沫浮泡本无主，识体如幻见真空。",
+    "context": "《阿毘达磨集论》引佛经五喻：色如聚沫受如浮泡想如阳焰行如芭蕉识如幻化，无著菩萨开示五蕴无我、离净、不实之真谛。",
+    "interpretation": "照见五蕴皆空即是度一切苦厄。了知身心世界如泡沫阳焰，不生执取，本来清净自性当下全体现前。",
+    "master": "无著菩萨",
+    "source": "《大乘阿毘达磨集论》卷二",
+    "relatedConcepts": ["wu-wei-bai-fa", "emptiness"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "koan-629",
+    "question": "法界真如为何名为无变异与实际？",
+    "answer": "自性恒常不改，离二我妄执即是胜义实际。",
+    "context": "无著菩萨在《集论》中立八种无为法，阐明善法真如、空性、无相、实际、胜义、法界皆是真如一味异名。",
+    "interpretation": "真如本性在凡不减、在圣不增，彻底斩断能取所取之妄见，当下即安住于绝待清净之实际法界。",
+    "master": "无著菩萨",
+    "source": "《大乘阿毘达磨集论》卷二",
+    "relatedConcepts": ["self-nature", "emptiness"],
+    "relatedPersons": ["wuzhu-asanga", "shiqin"],
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "koan-630",
+    "question": "因明七种论议如何破除万重邪网？",
+    "answer": "现量比量如金刚，立正摧邪显真心。",
+    "context": "无著菩萨在《论议决择品》中系统建立大乘因明辩析体系，以现量、比量、圣教量正理破斥外道盲执。",
+    "interpretation": "宗门机锋与因明正理同归一心。以清净正见斩除一切文字名相与戏论执着，直显不二真实宗纲。",
+    "master": "无著菩萨",
+    "source": "《大乘阿毘达磨集论》卷七",
+    "relatedConcepts": ["shi-liu-xing-xiang", "zhuan-shi-cheng-zhi"],
+    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
+    "relatedBooks": ["dachengapidamojilun"]
   }
 ];
 
@@ -36132,5 +36203,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "行者当效法中峰老人“随处作主，生死心切”之精神，在日常繁忙工作中不随名利八风摇摆；修持时善用话头或佛号澄净妄念，了达万法如幻，在行住坐卧中保任本来清净自性。",
     "relatedQa": "koan-626",
     "relatedBooks": ["tianmuzhongfengguanglu"]
+  },
+  {
+    "id": "faq-2732",
+    "question": "《大乘阿毘达磨集论》由谁所造，其在大乘佛教体系中有何至高地位？",
+    "answer": "《大乘阿毘达磨集论》七卷由古印度大乘瑜伽行派开宗祖师无著菩萨造、唐代玄奘三藏奉诏译出。本论被尊为“大乘对法（阿毘达磨）集大成之作”，后由安慧菩萨作释衍生为《大乘阿毘达磨杂集论》，系统确立了大乘五位百法与修道阶梯之根本范式。",
+    "relatedQa": "koan-628",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2733",
+    "question": "《大乘阿毘达磨集论》的“本事分”与“决择分”两大部有何结构分工？",
+    "answer": "“本事分”（卷一至卷四）分为三法品、摄品、相应品、成就品，系统界定蕴界处、五位百法与心心所相应等根本事理；“决择分”（卷四至卷七）分为谛决择、法决择、得决择、论议决择，深入辨析四圣谛、大乘契经义、现观位次与因明论辩正理。",
+    "relatedQa": "koan-628",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2734",
+    "question": "本论为何说建立五蕴是为了破除“五种我执”？",
+    "answer": "论中指出：凡夫由于无明，妄执五蕴为实我——执肉体色蕴为我身具、执受蕴为我受用、执想蕴为我言说、执行蕴为我造作、执识蕴为我自体。剖析五蕴自性皆空，能彻底瓦解凡夫的五种自我执着。",
+    "relatedQa": "koan-628",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2735",
+    "question": "《阿毘达磨集论》中所立的“五位百法”包含哪些具体法类？",
+    "answer": "包括：1.心王八种（眼耳鼻舌身意六识、末那识、阿赖耶识）；2.心所有法五十一种（遍行5、别境5、善11、烦恼6、随烦恼20、不定4）；3.色法十一种；4.心不相应行法二十四种；5.无为法八种，合为一百种法。",
+    "relatedQa": "koan-628",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2736",
+    "question": "《集论》中阐释的“八种无为法”分别是什么？",
+    "answer": "包括善法真如、不善法真如、无记法真如、虚空无为、非择灭无为（缘缺不生）、择灭无为（涅槃解脱）、不动无为（离苦乐受）、想受灭无为（灭尽定），皆是清净法界不生不灭实相之异名显现。",
+    "relatedQa": "koan-629",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2737",
+    "question": "什么是四圣谛的“十六行相”，菩萨修习它有何殊胜功德？",
+    "answer": "十六行相为：苦谛之非常、苦、空、非我；集谛之因、集、生、缘；灭谛之灭、静、妙、离；道谛之道、如、行、出。菩萨以般若智慧深观十六行相，能彻底破除十六种外道邪见，伏断烦恼证入圣位。",
+    "relatedQa": "koan-629",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2738",
+    "question": "《集论》中的“论议决择品”对禅门辨析与护持正法有何启示？",
+    "answer": "论中建立论体、论处、论据、论庄严等七种论议与现量、比量等八种论据，阐明佛法辩才须依清净正理与慈悲利他为本，为禅者破斥知见葛藤、摧伏邪见树立了不可动摇的因明量论依据。",
+    "relatedQa": "koan-630",
+    "relatedBooks": ["dachengapidamojilun"]
+  },
+  {
+    "id": "faq-2739",
+    "question": "现代修行者参禅用功时，如何结合《集论》的名相分析防止盲修瞎炼？",
+    "answer": "行者当以《集论》的五蕴百法为照妖镜，省察日常起心动念究竟与何种心所（善、烦恼、随烦恼）相应；了知五蕴如幻如泡、无我无执，在实修参究中保持“惺惺寂寂”，不落顽空枯坐。",
+    "relatedQa": "koan-628",
+    "relatedBooks": ["dachengapidamojilun"]
   }
 ];
