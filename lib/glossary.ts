@@ -1129,5 +1129,13 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '蹲鸱', pinyin: 'dūn chī', meaning: '大芋头，形如蹲伏之鸱鸟，禅僧山居常食之粗羹' },
     { char: '豏', pinyin: 'xiàn', meaning: '糕饼肉馅，语录中“铁酸豏”喻无从下口之险绝公案' },
   ],
+  'hongzhiyulu': [
+    { char: '宏智正觉', pinyin: 'hóng zhì zhèng jué', meaning: '宋代曹洞宗中兴宗师，天童山景德寺住持，默照禅提倡者' },
+    { char: '默照', pinyin: 'mò zhào', meaning: '静默忘言（定）而灵明洞照（慧），曹洞宗核心修持法门' },
+    { char: '昭昭', pinyin: 'zhāo zhāo', meaning: '光明朗耀、历历分明之灵知觉性' },
+    { char: '甄陶', pinyin: 'zhēn táo', meaning: '烧制陶器，禅林喻佛祖陶铸化育学人根器' },
+    { char: '枯木岩前', pinyin: 'kū mù yán qián', meaning: '喻参禅至妄念俱息之死寂处，须透出此关方见大机大用' },
+  ],
 };
+
 

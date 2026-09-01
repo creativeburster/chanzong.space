@@ -1186,22 +1186,23 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "hongzhi-zhengjue",
     "name": "宏智正觉",
-    "title": "曹洞宗 / 默照禅创始人",
-    "era": "北宋 (1091-1157)",
-    "lifeStory": "正觉禅师，隰州隰川（今山西隰县）人，俗姓李。十一岁出家，后参丹霞子淳，于子淳座下开悟。师住明州天童寺（今浙江宁波），大弘曹洞宗风。倡“默照禅”——以静坐默究为法门，不参话头，不看公案，只默默坐禅，于沉默中照见本来面目。师着《默照铭》，以“默默忘言，昭昭现前”为纲要。此与大慧宗杲之“看话禅”相对，两家遂起争论，然大慧亦承认默照之正当，唯恐学人落于“枯木死灰”之弊。",
-    "teachings": "宏智之教，以“默照”为宗：默者，不思量、不分判、不造作；照者，了了常知、灵明不昧。默中有照，照中有默，如明镜照物，物来不迎，物去不追。其教贵在“本分”——不假外求，不借方便，只于本分田地中默默坐禅，自然照见本来。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
+    "title": "宋代曹洞宗中兴大宗匠·天童正觉·默照禅集大成者",
+    "era": "宋代 (1091 - 1157)",
+    "lifeStory": "宏智正觉禅师，俗姓李，隰州隰川（今山西隰县）人。十一岁出家，十四岁受具足戒，后参扣丹霞子淳禅师，受其印可嗣法。师住明州天童山景德寺近三十年，大振洞上宗风，被尊为曹洞宗中兴之祖。师系统阐发“默照禅”法门，著《默照铭》《坐禅箴》，倡“默默忘言，昭昭现前”，使默照禅成为两宋禅林与临济宗看话禅并峙之修持双璧。其所作百则颂古辞致清绝、深契禅髓，后由元代万松行秀禅师评唱而成《从容录》。绍兴二十七年，师沐浴更衣端坐书偈而逝，世寿六十七，僧腊五十三，敕谥“宏智禅师”。",
+    "teachings": "宏智之教以“默照同时、心性圆照”为宗：默者不生妄念分别，照者灵明常知不昧。默中有照，照中有默，如古镜照空、古菱涵月，于一切顺逆境中照体独立，当下即定即慧。",
     "quotes": [
-      "默默忘言，昭昭现前。 —《默照铭》",
+      "默默忘言，昭昭现前。",
+      "佛佛要机，祖祖机要。不触事而知，不对缘而照。",
+      "古菱涵月，古镜照空。",
       "照中失默，便成外道；默中失照，便落二乘。"
-],
+    ],
     "classics": [
-      "默照铭",
       "宏智正觉禅师广录"
-],
-    "relatedConcepts": ["samadhi","self-nature", "mozhao-chan-concept"],
+    ],
+    "relatedConcepts": ["momo-wangyan", "zhaozhao-xianqian", "mozhao-chan-concept"],
     "relatedMethods": ["mozhao"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedPersons": ["dahui-zonggao", "dongshan", "caoshan-benji"],
+    "relatedBooks": ["hongzhiyulu", "dongshanyulu", "caoshanyulu", "dahuiyulu"]
   },
   {
     "id": "yongming-yanshou",
@@ -3869,7 +3870,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     relatedMethods: ["kanhuatou", "banghe"],
     relatedPersons: ["linji", "yangqifanghui", "mianxian-xianjie"],
     relatedBooks: ["xutangyulu", "linji", "yangqiyulu"]
-  },
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -10526,6 +10527,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     relatedPersons: ["xutang-zhiyu", "linji"],
     relatedBooks: ["xutangyulu", "linji"]
   },
+  {
+    "id": "momo-wangyan",
+    "title": "默默忘言",
+    "category": "修持心要",
+    "summary": "默默忘言指禅修者万缘放下、忘却一切语言名相与情识造作，令纷扰妄心止息，归于寂然不动之本初寂静，为默照禅之体。",
+    "etymology": "出自宏智正觉禅师《默照铭》首句：“默默忘言，昭昭现前。鉴时廓尔，体处灵然。”",
+    "quotes": ["默默忘言，昭昭现前。 —《宏智正觉禅师广录》"],
+    "guidance": "参修时不随妄念分别流转，亦不起厌离之想，退步就己，安住于万缘止息之寂静深处。",
+    "classicRef": "宏智正觉禅师广录 · 卷一",
+    "relatedConcepts": ["zhaozhao-xianqian", "mozhao-chan-concept"],
+    "relatedPersons": ["hongzhi-zhengjue"],
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "zhaozhao-xianqian",
+    "title": "昭昭现前",
+    "category": "心性妙用",
+    "summary": "昭昭现前指心体寂静无染之时，本自具足之灵明觉照自然洞照万物、清晰历历，不触事而能知、不对缘而能照，为默照禅之用。",
+    "etymology": "出自宏智正觉禅师《默照铭》及《坐禅箴》：“默默忘言，昭昭现前……不触事而知，不对缘而照。”",
+    "quotes": ["默默忘言，昭昭现前。鉴时廓尔，体处灵然。 —《宏智正觉禅师广录》"],
+    "guidance": "静坐时保持了了分明之觉知，既不起分别妄想，亦不落于昏沉断灭，体验照体独立之光明妙境。",
+    "classicRef": "宏智正觉禅师广录 · 卷一",
+    "relatedConcepts": ["momo-wangyan", "mozhao-chan-concept"],
+    "relatedPersons": ["hongzhi-zhengjue"],
+    "relatedBooks": ["hongzhiyulu"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -19129,6 +19156,42 @@ export const ZEN_KOANS: KoanItem[] = [
     relatedPersons: ["xutang-zhiyu"],
     relatedBooks: ["xutangyulu"]
   },
+  {
+    "id": "koan-607",
+    "question": "文殊白槌与密启玄关",
+    "answer": "密启玄关第一机，白槌何必更扬眉。",
+    "context": "世尊一日升座，大众肃静，文殊菩萨白槌云：“谛观法王法，法王法如是。”世尊便下座。宏智正觉禅师对此公案作颂。",
+    "interpretation": "佛陀升座默然，已将离言第一义谛全盘托出。文殊白槌只是随顺世俗因缘结案。宏智颂示：玄关早启，何须扬眉瞬目！领会者当下无事，若在言句上寻思，早已落入第二义。",
+    "master": "宏智正觉",
+    "source": "《宏智正觉禅师广录》卷三",
+    "relatedConcepts": ["momo-wangyan", "zhaozhao-xianqian"],
+    "relatedPersons": ["hongzhi-zhengjue", "wenshu"],
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "koan-608",
+    "question": "万叠重关锁不住",
+    "answer": "平地波涛忽荡漾，回头始见青天阔。",
+    "context": "学僧参问赵州狗子无佛性因缘，宏智正觉禅师拈颂此案。",
+    "interpretation": "宏智以“万叠重关锁不住”直指人人本具的觉性生机绝非语言知见所能封锁。当狂心顿歇、打破情识葛藤时，如波涛骤息，方见本来青天广大无涯。",
+    "master": "宏智正觉",
+    "source": "《宏智正觉禅师广录》卷三",
+    "relatedConcepts": ["zhaozhao-xianqian", "self-nature"],
+    "relatedPersons": ["hongzhi-zhengjue", "zhaozhou"],
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "koan-609",
+    "question": "少林冷坐九年期",
+    "answer": "心不可得安心了，一花五叶播清规。",
+    "context": "宏智正觉禅师颂达摩少林面壁与二祖断臂求安心公案。",
+    "interpretation": "达摩九年面壁是默照之典范，二祖觅心了不可得是照体之真悟。一默一照、一师一徒，直指心源无生，方启东土禅宗千秋万代之慧命。",
+    "master": "宏智正觉",
+    "source": "《宏智正觉禅师广录》卷六",
+    "relatedConcepts": ["momo-wangyan", "mozhao-chan-concept"],
+    "relatedPersons": ["hongzhi-zhengjue", "bodhidharma", "huike"],
+    "relatedBooks": ["hongzhiyulu", "anxin"]
+  }
 ];
 
 export const ZEN_FAQS: FAQItem[] = [
@@ -35161,5 +35224,61 @@ export const ZEN_FAQS: FAQItem[] = [
     relatedQa: "koan-604",
     relatedBooks: ["xutangyulu", "linji", "yangqiyulu"]
   },
+  {
+    "id": "faq-2676",
+    "question": "《宏智正觉禅师广录》的核心主旨与历史地位是什么？",
+    "answer": "《宏智正觉禅师广录》是宋代曹洞宗中兴大宗师宏智正觉（天童正觉）的九卷传世巨著。全书系统奠定了“默照禅”的修持理论与工夫纲要，与大慧宗杲提倡的“看话禅”并列为宋代禅宗两大修持高峰；其百则颂古更为后世《从容录》评唱之根本源泉。",
+    "relatedQa": "koan-607",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2677",
+    "question": "宏智正觉禅师提倡的“默照禅”具体含义是什么？",
+    "answer": "“默”指不生妄念分别、万缘放下、心体寂然不动；“照”指本具灵明觉性了了常知、洞照万象。默中有照，照中有默，默照不二，即定即慧，不借外求而直契本来清净自性。",
+    "relatedQa": "koan-607",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2678",
+    "question": "默照禅与“枯木死灰”或“顽空死定”有何根本区别？",
+    "answer": "宏智禅师明确指出：“照中失默，便成外道；默中失照，便落二乘。”若只默不照，则沦为无知顽空或枯木死灰；若只照不默，则随外境攀缘流转。真正的默照是“默默之中照体独立，昭昭之时灵明不动”，活泼澄澈而非死寂。",
+    "relatedQa": "koan-609",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2679",
+    "question": "宏智《坐禅箴》中“不触事而知，不对缘而照”揭示了什么修证境界？",
+    "answer": "揭示了心性本具的天然大智慧：真正的般若灵知不依仗后天外在事物的接触才产生，不依赖外境的刺激才照耀；它超越了感官与意识分别，是心体本来恒常现前的寂照妙用。",
+    "relatedQa": "koan-607",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2680",
+    "question": "宏智正觉与大慧宗杲的“默照与看话”之辨有何禅史意义？",
+    "answer": "宏智主默照返观，大慧主看话打破。两家虽在接引学人上有法门门庭之分，但其究极解脱目标完全一致。两位大宗师生前论辩互资、道谊极深，宏智临终更将后事付嘱大慧，展现了宋代宗门博大圆融的气象。",
+    "relatedQa": "koan-608",
+    "relatedBooks": ["hongzhiyulu", "dahuiyulu"]
+  },
+  {
+    "id": "faq-2681",
+    "question": "《宏智正觉禅师广录》中的百则颂古与《从容录》有何关系？",
+    "answer": "宏智广录卷二至卷三收录了宏智禅师为百则经典公案所作的颂古，辞采绝妙、深契玄旨。元代万松行秀禅师在此百则颂古的基础上逐一加设示众、评唱与着语，编著成了禅宗公案文学名著《从容录》。",
+    "relatedQa": "koan-608",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2682",
+    "question": "“古菱涵月，古镜照空”在宏智语录中表达了怎样的心性体验？",
+    "answer": "喻指能照之心与所照之境双双忘却消融的大解脱境地。如同菱花镜涵容月影，古铜镜倒映长空，森罗万象自在映现而不留丝毫粘着与痕迹。",
+    "relatedQa": "koan-607",
+    "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2683",
+    "question": "现代修行者如何修持默照禅？",
+    "answer": "在日常静坐或行住坐卧中，身心放松、放下一切攀缘思虑与对是非得失的计较（默），同时保持清清朗朗、了了分明的内在觉察（照），不随念走，亦不起压制之意，常使自心澄澈安稳。",
+    "relatedQa": "koan-609",
+    "relatedBooks": ["hongzhiyulu"]
+  }
 ];
 

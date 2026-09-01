@@ -117,6 +117,7 @@ MAP = {
  'baoxinglun': [('dachengqixinlun','如来藏同源'), ('miyanjing','赖耶即如来藏'), ('jieshenmijing','三性经据'), ('tanjing','即心即佛')],
  'achengjilun': [('baifamingmenlun','百法名目'), ('bianzhongbianlun','三性抉择'), ('weishisanshilunsong','唯识颂本'), ('jieshenmijing','赖耶经据')],
  'xutangyulu': [('linji','临济正宗'), ('yangqiyulu','杨岐远源'), ('mianxianyulu','同门法脉'), ('dahuiyulu','宗门互映')],
+ 'hongzhiyulu': [('dongshanyulu','曹洞源流'), ('caoshanyulu','洞上宗风'), ('dahuiyulu','默照话头互映'), ('boshan-canchanjingyu','曹洞坐禅相承')],
 }
 
 def main():
