@@ -1136,6 +1136,14 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '甄陶', pinyin: 'zhēn táo', meaning: '烧制陶器，禅林喻佛祖陶铸化育学人根器' },
     { char: '枯木岩前', pinyin: 'kū mù yán qián', meaning: '喻参禅至妄念俱息之死寂处，须透出此关方见大机大用' },
   ],
+  'zhuweimojiejing': [
+    { char: '维摩诘', pinyin: 'wéi mó jié', meaning: '梵语Vimalakīrti，意译“净名”或“无垢称”，大乘法身大士' },
+    { char: '僧肇', pinyin: 'sēng zhào', meaning: '后秦著名佛学巨匠，罗什门下解空第一，《肇论》《注维摩经》作者' },
+    { char: '不二法门', pinyin: 'bù èr fǎ mén', meaning: '超越一切对待分别、生灭有无之大乘究竟绝待实相' },
+    { char: '权智', pinyin: 'quán zhì', meaning: '随顺众生根机之善巧方便智，与洞照实相之实智一体两面' },
+    { char: '芥子纳须弥', pinyin: 'jiè zǐ nà xū mí', meaning: '极小之芥子包容极大之须弥山，喻事事无碍、物无定性之实相' },
+  ],
 };
+
 
 

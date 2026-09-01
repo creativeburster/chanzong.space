@@ -3132,12 +3132,16 @@ export const ZEN_PERSONS: PersonItem[] = [
       "即伪即真，故性莫之易。"
 ],
     "classics": [
-      "zhaolun"
-],
+      "zhaolun",
+      "注维摩诘经"
+    ],
     "relatedConcepts": ["wubuqian","buzhenkong","bore-wuzhi","niepan-wuming","zongbenyi"],
     "relatedMethods": ["zhongguan-bore","ouhe-bore"],
     "relatedPersons": ["kumarajiva","hui-da","liu-yi-min"],
-    "relatedBooks": ["zhaolun"]
+    "relatedBooks": [
+      "zhaolun",
+      "zhuweimojiejing"
+    ]
   },
   {
     "id": "hui-da",
@@ -3870,6 +3874,49 @@ export const ZEN_PERSONS: PersonItem[] = [
     relatedMethods: ["kanhuatou", "banghe"],
     relatedPersons: ["linji", "yangqifanghui", "mianxian-xianjie"],
     relatedBooks: ["xutangyulu", "linji", "yangqiyulu"]
+  },
+  {
+    "id": "jiumoluoshi",
+    "name": "鸠摩罗什",
+    "title": "后秦大乘三藏法师·中观大乘经论翻译宗师",
+    "era": "后秦 (344 - 413)",
+    "lifeStory": "鸠摩罗什，天竺西域龟兹国（今新疆库车）人。少年出家，遍学大小乘经论，尤精龙树中观学派。后秦弘始三年（401）入长安，秦王姚兴迎居草堂寺尊为国师。罗什法师主持译场十余载，手执梵本口译汉音，严谨精当、文雅畅达，共译出《金刚经》《维摩诘经》《中论》《百论》《十二门论》《大智度论》《妙法莲华经》《首楞严三昧经》等大乘根本经论，为中国佛教大乘空宗与中观义学奠定了基石。罗什门下高足三千，其中僧肇、竺道生、僧叡、道融被称为“关中四圣”。其译著以中观般若与不二实相直指心源，对后世东土禅宗之确立产生了根本性的深远影响。",
+    "teachings": "罗什法师之教以中观般若“缘起性空、不落二边”为宗，主张一切万法皆无自性，随心所现；随顺因缘善巧施设，而不为法缚，直契离言实相。",
+    "quotes": [
+      "物无定性则其性虚，随心所化大小无碍。",
+      "心无谄曲即是直心，直心之处即是道场。",
+      "明物不从天降、不从地出，皆因缘和合而有。"
+    ],
+    "classics": [
+      "金刚般若波罗蜜经",
+      "维摩诘所说经",
+      "注维摩诘经",
+      "佛说首楞严三昧经"
+    ],
+    "relatedConcepts": ["ru-bu-er-fa-men", "non-duality", "emptiness"],
+    "relatedMethods": ["prajna"],
+    "relatedPersons": ["seng-zhao", "daosheng", "seng-rui"],
+    "relatedBooks": ["zhuweimojiejing", "weimojiejing", "jingangjing", "shoulengyansanmeijing"]
+  },
+  {
+    "id": "daosheng",
+    "name": "竺道生",
+    "title": "东晋后秦义学巨匠·顿悟成佛与佛性本具首倡者",
+    "era": "东晋后秦 (355 - 434)",
+    "lifeStory": "竺道生，俗姓魏，巨鹿（今属河北）人。自幼聪慧超群，从竺法汰出家。后入长安从鸠摩罗什研习中观般若，为罗什门下关中四圣之一。法师深悟般若实相与如来藏佛性之精微，率先提出“一阐提皆得成佛”与“顿悟成佛说”。因当时旧译《大涅槃经》未全，诸僧斥其为异端，生公遂入吴县虎丘山聚石为徒说法，感动群石点头（世称“生公说法，顽石点头”）。后北凉昙无谶译出四十卷大本《涅槃经》，果明阐提有佛性，大众叹服。生公晚年居庐山讲经，端坐麈尾而化。其“顿悟见性、忘象得意”之深邃见地，直接开启了东土禅宗南宗顿悟顿超之法门先河。",
+    "teachings": "生公倡“象以尽意，得意则忘象；言以诠理，入理则忘言”，主张真理不可分割、心性本自具足，证悟自性乃当下顿见而非阶梯渐修。",
+    "quotes": [
+      "一阐提人皆得成佛。",
+      "以言显无言，言犹未尽；以默显无言，默始为极。",
+      "真理自然，悟在当下。"
+    ],
+    "classics": [
+      "注维摩诘经"
+    ],
+    "relatedConcepts": ["buddha-nature", "instant-enlightenment", "ru-bu-er-fa-men"],
+    "relatedMethods": ["instant-enlightenment"],
+    "relatedPersons": ["jiumoluoshi", "seng-zhao", "huineng"],
+    "relatedBooks": ["zhuweimojiejing", "weimojiejing", "tanjing"]
   }
 ];
 
@@ -10552,6 +10599,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["momo-wangyan", "mozhao-chan-concept"],
     "relatedPersons": ["hongzhi-zhengjue"],
     "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "ben-ji-yuan-rong",
+    "title": "本迹圆融",
+    "category": "实相体用",
+    "summary": "本迹圆融指佛陀或法身大士之清净法身理体（本）与其随顺因缘示现之千百亿应化身事迹（迹）体用不二、相即相融之圆融实相境界。",
+    "etymology": "出自僧肇《注维摩诘经序》：“非本无以垂迹，非迹无以显本，本迹虽殊而不思议一也。”",
+    "quotes": ["非本无以垂迹，非迹无以显本，本迹虽殊而不思议一也。 —《注维摩诘经》"],
+    "guidance": "修行中既不偏废理体之空寂，亦不执着事相之生灭，于日常随缘应化中处处照见法身本性。",
+    "classicRef": "注维摩诘经 · 序",
+    "relatedConcepts": ["ru-bu-er-fa-men", "sheng-zhi-wu-zhi"],
+    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
+    "relatedBooks": ["zhuweimojiejing", "zhaolun"]
+  },
+  {
+    "id": "sheng-zhi-wu-zhi",
+    "title": "圣智无知",
+    "category": "般若智慧",
+    "summary": "圣智无知指圣人的般若实相大智无后天情识攀缘与主客观二元分别之妄知（无知），却能天然照临大千宇宙之一切万物（万品俱照）。",
+    "etymology": "出自僧肇《注维摩诘经序》及《肇论·般若无知论》：“夫圣智无知而万品俱照，法身无象而殊形并应。”",
+    "quotes": ["夫圣智无知而万品俱照，法身无象而殊形并应。 —《注维摩诘经》"],
+    "guidance": "参修时放下前尘影事与知解葛藤，歇止妄知妄见，自性无知之般若大智自然洞彻十方。",
+    "classicRef": "注维摩诘经 · 序",
+    "relatedConcepts": ["ben-ji-yuan-rong", "prajna"],
+    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
+    "relatedBooks": ["zhuweimojiejing", "zhaolun"]
   }
 ];
 
@@ -19191,6 +19264,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["momo-wangyan", "mozhao-chan-concept"],
     "relatedPersons": ["hongzhi-zhengjue", "bodhidharma", "huike"],
     "relatedBooks": ["hongzhiyulu", "anxin"]
+  },
+  {
+    "id": "koan-610",
+    "question": "维摩诘默然入不二",
+    "answer": "维摩诘默然无言。文殊赞曰：乃至无有文字语言，是真入不二法门！",
+    "context": "文殊师利问维摩诘：何等是菩萨入不二法门？维摩诘默然不语。竺道生注：以言显无言，言犹未尽；以默显无言，默始为极。",
+    "interpretation": "三十一位菩萨以言说论述超越二边，文殊以无言之言指示不二，唯独维摩诘以彻底的沉默截断一切戏论言诠，直显离言绝相、如如不动之本来面目。",
+    "master": "维摩诘",
+    "source": "《注维摩诘经》卷八·入不二法门品",
+    "relatedConcepts": ["ru-bu-er-fa-men", "sheng-zhi-wu-zhi"],
+    "relatedPersons": ["seng-zhao", "jiumoluoshi", "daosheng"],
+    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+  },
+  {
+    "id": "koan-611",
+    "question": "须弥山纳一微尘芥子",
+    "answer": "以须弥之高广内芥子中，无所增减。",
+    "context": "诸天与声闻弟子疑不可思议解脱境界，维摩诘开示大菩萨能以高广无边的须弥山容纳于微细芥子中，须弥不小，芥子不大。罗什释：物无定性，随心所化，大小相融无碍。",
+    "interpretation": "打破众生对空间大小、方所与实体之死执。万法本自性空，随心识显现，故小中见大、大中容小，事事无碍，法尔如是。",
+    "master": "维摩诘",
+    "source": "《注维摩诘经》卷六·不可思议品",
+    "relatedConcepts": ["ben-ji-yuan-rong", "emptiness"],
+    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
+    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+  },
+  {
+    "id": "koan-612",
+    "question": "天女散花为何着身不堕？",
+    "answer": "菩萨无心花自堕，舍利弗于法生分别故花着不落。",
+    "context": "天女于维摩诘丈室中散花，花至诸大菩萨身上皆滑落，至舍利弗等大弟子身上皆粘住拂之不去。舍利弗神力不能去花。僧肇注：以花显心，心无所住则物无所附。",
+    "interpretation": "借外在散花之境检验行者内在心地。菩萨证悟空性、毫无分别法执，故万境不染；声闻虽断烦恼但法爱犹存、畏惧花染袈裟，心生挂碍则物自粘身。",
+    "master": "天女",
+    "source": "《注维摩诘经》卷七·观众生品",
+    "relatedConcepts": ["ru-bu-er-fa-men", "no-abiding"],
+    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
+    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
   }
 ];
 
@@ -35279,6 +35388,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "在日常静坐或行住坐卧中，身心放松、放下一切攀缘思虑与对是非得失的计较（默），同时保持清清朗朗、了了分明的内在觉察（照），不随念走，亦不起压制之意，常使自心澄澈安稳。",
     "relatedQa": "koan-609",
     "relatedBooks": ["hongzhiyulu"]
+  },
+  {
+    "id": "faq-2684",
+    "question": "《注维摩诘经》由哪几位古代佛学大师共同注疏？",
+    "answer": "《注维摩诘经》十卷由后秦名僧僧肇大师编纂集注，主要汇聚了鸠摩罗什三藏法师（译主亲释）、僧肇大师（般若玄通）、竺道生法师（顿悟佛性）三位顶级义学巨匠的随文真知灼见，是后世研读《维摩诘经》与中观心法最重要的集注宝典。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2685",
+    "question": "僧肇在经序中提出的“圣智无知，法身无象”是什么意思？",
+    "answer": "“圣智无知而万品俱照，法身无象而殊形并应”阐明了法身与般若的究竟实相：圣人般若实智无后天情识分别（无知），却能圆明照彻一切万法；法身本无定相方所（无象），却能随顺众生因缘显现千百亿殊胜化身应化利生。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2686",
+    "question": "《注维摩诘经》如何阐释“心净则佛土净”？",
+    "answer": "经云“随其心净则佛土净”。僧肇注道：“夫以净土为果，心净为因。因净则果净，理之常也。心垢则土秽，心净则土净，非求之于外也。”指出佛土清净非心外有相之净土，而是行者自心离贪嗔垢染之当下现量体验。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2687",
+    "question": "维摩诘丈室中“天女散花”公案有何深层禅机？",
+    "answer": "天女散花时，花落菩萨身上即堕，落在舍利弗等大弟子身上却粘住不掉。僧肇注指出：花本身并无分别，落与不落全在人心。菩萨无分别心与法执，万物自不能粘；舍利弗于相上有好恶与戒相分别，心有所住则花粘衣衫，以此直指断尽法执之重要。",
+    "relatedQa": "koan-612",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2688",
+    "question": "“维摩一默”为何被文殊菩萨赞为“真入不二法门”？",
+    "answer": "入不二法门品中，三十一位菩萨皆用语言辨析超越二边，文殊以无言显不二，维摩诘则默然无语。竺道生注云：“以言显无言，言犹未尽；以默显无言，默始为极。”维摩诘以彻底的沉默截断言诠戏论，与绝待实相融为一体，故为究竟入不二。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2689",
+    "question": "罗什法师如何解释“芥子纳须弥”的不可思议解脱？",
+    "answer": "鸠摩罗什释云：“物无定性，故大非真大、小非真小。性既虚妄，则随心所化，大小相融无碍也。”一切物质现象皆无固定永恒之自性，大小高下皆心识分别所设；一旦证悟空性实相，心境一如，万物随心互摄互容。",
+    "relatedQa": "koan-611",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2690",
+    "question": "竺道生的“顿悟成佛说”在《注维摩诘经》中有何体现？",
+    "answer": "竺道生在注疏中多次强调真理之不可分性与体空的当下圆满。他指出“理空非惑情所图，体夫空理则脱不可思议之惑”，认为对真如实相的把握是直下契入的全盘朗照，为后世禅宗“一念悟即至佛地”提供了根本学理支撑。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing"]
+  },
+  {
+    "id": "faq-2691",
+    "question": "《注维摩诘经》与六祖《坛经》有何内在传承？",
+    "answer": "《六祖坛经》核心名言“直心是道场”、“烦恼即菩提”、“不二之性即是佛性”，皆直接渊源于《维摩诘经》及其三师注疏。六祖大师所倡导的在日常世俗中修行、不离世间得解脱，正是维摩大士与僧肇等注者一脉相承之精神精髓。",
+    "relatedQa": "koan-610",
+    "relatedBooks": ["zhuweimojiejing", "tanjing"]
   }
 ];
-

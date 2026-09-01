@@ -118,6 +118,7 @@ MAP = {
  'achengjilun': [('baifamingmenlun','百法名目'), ('bianzhongbianlun','三性抉择'), ('weishisanshilunsong','唯识颂本'), ('jieshenmijing','赖耶经据')],
  'xutangyulu': [('linji','临济正宗'), ('yangqiyulu','杨岐远源'), ('mianxianyulu','同门法脉'), ('dahuiyulu','宗门互映')],
  'hongzhiyulu': [('dongshanyulu','曹洞源流'), ('caoshanyulu','洞上宗风'), ('dahuiyulu','默照话头互映'), ('boshan-canchanjingyu','曹洞坐禅相承')],
+ 'zhuweimojiejing': [('weimojiejing','经文所本'), ('zhaolun','僧肇同著'), ('zhonglun','中观同宗'), ('tanjing','不二法门会通')],
 }
 
 def main():
