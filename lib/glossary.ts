@@ -1143,7 +1143,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '权智', pinyin: 'quán zhì', meaning: '随顺众生根机之善巧方便智，与洞照实相之实智一体两面' },
     { char: '芥子纳须弥', pinyin: 'jiè zǐ nà xū mí', meaning: '极小之芥子包容极大之须弥山，喻事事无碍、物无定性之实相' },
   ],
+  'dachengzhuangyanjinglun': [
+    { char: '波罗颇蜜多罗', pinyin: 'bō luó pō mì duō luó', meaning: '唐代中印度三藏法师，意译“明友”，翻译《大乘庄严经论》' },
+    { char: '转识成智', pinyin: 'zhuǎn shí chéng zhì', meaning: '通过般若观照转舍染污之八识，转得清净无漏之四智' },
+    { char: '四智三身', pinyin: 'sì zhì sān shēn', meaning: '大圆镜智、平等性智、妙观察智、成所作智与法身、报身、化身' },
+    { char: '大圆镜智', pinyin: 'dà yuán jìng zhì', meaning: '转第八阿赖耶识所得之究竟清净智，如明镜圆照法界万象' },
+    { char: '无住涅槃', pinyin: 'wú zhù niè pán', meaning: '大悲不住涅槃（不独善其身），大智不住生死（不随流转）之究竟解脱' },
+  ],
 };
+
 
 
 

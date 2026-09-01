@@ -3813,11 +3813,22 @@ export const ZEN_PERSONS: PersonItem[] = [
       "无始时来界，一切法等依，由此有诸趣，及涅槃证得。",
       "由摄藏诸法，一切种子识，故名阿赖耶，胜者我开示。"
     ],
-    "classics": ["摄大乘论本", "大乘阿毗达磨集论", "大乘阿毘达磨集论", "究竟一乘宝性论"],
+    "classics": [
+      "摄大乘论本",
+      "大乘阿毗达磨集论",
+      "大乘阿毘达磨集论",
+      "究竟一乘宝性论",
+      "大乘庄严经论"
+    ],
     "relatedConcepts": ["weishi", "sanxing-wuxing", "tathagatagarbha", "zhongdao"],
     "relatedMethods": [],
     "relatedPersons": ["shiqin", "xuanzang"],
-    "relatedBooks": ["shedachenglunben", "achengjilun", "baoxinglun"]
+    "relatedBooks": [
+      "shedachenglunben",
+      "achengjilun",
+      "baoxinglun",
+      "dachengzhuangyanjinglun"
+    ]
   }
 ,
   {
@@ -5557,7 +5568,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《坛经》《八识规矩颂》《成唯识论》",
     "relatedConcepts": ["sizhi","alaiye-shi","weishi"],
     "relatedPersons": ["huineng","xuanzang"],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedBooks": [
+      "bashiguijusong",
+      "dachengzhuangyanjinglun"
+    ]
   },
   {
     "id": "buke-siyi",
@@ -10625,6 +10639,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["ben-ji-yuan-rong", "prajna"],
     "relatedPersons": ["seng-zhao", "jiumoluoshi"],
     "relatedBooks": ["zhuweimojiejing", "zhaolun"]
+  },
+  {
+    "id": "si-zhi-san-shen",
+    "title": "四智三身",
+    "category": "佛果功德",
+    "summary": "四智三身指转八识所得之大圆镜智、平等性智、妙观察智、成所作智，以及由此四智相融所圆满具足之清净法身、圆满受用身（报身）与千百亿变化身（化身）。",
+    "etymology": "出自《大乘庄严经论·菩提品》：“转八识以成四智，束四智以具三身。”唐太宗李百药序亦引此为唯识枢要。",
+    "quotes": ["转八识以成四智，束四智以具三身。 —《大乘庄严经论》"],
+    "guidance": "修行中不住于凡夫染污妄识，亦不落偏空寂灭，直下回光返照自性，体认当下一念即具四智三身之妙用。",
+    "classicRef": "大乘庄严经论 · 卷七",
+    "relatedConcepts": ["zhuan-shi-cheng-zhi", "self-nature"],
+    "relatedPersons": ["wuzhu-asanga", "huineng"],
+    "relatedBooks": ["dachengzhuangyanjinglun", "tanjing"]
+  },
+  {
+    "id": "wu-zhu-nie-pan",
+    "title": "无住涅槃",
+    "category": "究竟解脱",
+    "summary": "无住涅槃指菩萨以大悲心不住涅槃（不沉溺偏空寂灭、恒常度化众生），以般若大智不住生死（不落世俗染污流转）之大乘究竟圆满解脱境界。",
+    "etymology": "出自《大乘庄严经论·修住品》：“悲心无住着，智体恒清凉；不住于生死，亦不住涅槃。”",
+    "quotes": ["不住于生死，亦不住涅槃。 —《大乘庄严经论》"],
+    "guidance": "在日常度生与接人待物中，以出世的大智慧行入世的大慈悲，于生死与涅槃二边皆无挂碍。",
+    "classicRef": "大乘庄严经论 · 卷十",
+    "relatedConcepts": ["non-duality", "prajna"],
+    "relatedPersons": ["wuzhu-asanga"],
+    "relatedBooks": ["dachengzhuangyanjinglun", "shedachenglunben"]
   }
 ];
 
@@ -19300,6 +19340,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["ru-bu-er-fa-men", "no-abiding"],
     "relatedPersons": ["seng-zhao", "jiumoluoshi"],
     "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+  },
+  {
+    "id": "koan-613",
+    "question": "转八识成四智于当下如何承当？",
+    "answer": "迷时八识波涛起，悟后四智月孤圆。",
+    "context": "《大乘庄严经论·菩提品》明转八识成四智：转赖耶为大圆镜智，转末那为平等性智，转意识为妙观察智，转五识为成所作智。六祖坛经承此发挥自性四智。",
+    "interpretation": "八识非外来实物，四智亦非心外新得。一念无明妄动即是八识流转，一念回光顿悟自性即是四智圆明。不改本来面目，唯在迷悟一念之间。",
+    "master": "无著菩萨",
+    "source": "《大乘庄严经论》卷七·菩提品",
+    "relatedConcepts": ["zhuan-shi-cheng-zhi", "si-zhi-san-shen"],
+    "relatedPersons": ["wuzhu-asanga", "huineng"],
+    "relatedBooks": ["dachengzhuangyanjinglun", "tanjing"]
+  },
+  {
+    "id": "koan-614",
+    "question": "大乘何以必为佛亲说？",
+    "answer": "若离于大乘，无有一切智。",
+    "context": "《大乘庄严经论·成宗品》以八种因缘严密破斥小乘非佛说之疑谤，确立大乘为诸佛唯一乘法。",
+    "interpretation": "诸佛出世唯一大事因缘即是开示悟入佛之知见。小乘偏安化城，大乘方归宝所。若无普度大悲与甚深般若，宇宙间绝无圆满一切种智之佛陀。",
+    "master": "弥勒菩萨",
+    "source": "《大乘庄严经论》卷二·成宗品",
+    "relatedConcepts": ["zhongdao", "prajna"],
+    "relatedPersons": ["wuzhu-asanga"],
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "koan-615",
+    "question": "菩萨行六度如何做到三轮体空？",
+    "answer": "无求亦无著，不见施受人。",
+    "context": "《大乘庄严经论·度摄品》开显菩萨行施、戒、忍、进、定、慧六度波罗蜜多时，心体清净无求。",
+    "interpretation": "凡夫行善着相求报，菩萨行度三轮体空。不见能度之我，不见所度之人，不见所修之法，如鸟飞虚空不留痕迹，方名真正到彼岸。",
+    "master": "无著菩萨",
+    "source": "《大乘庄严经论》卷八·度摄品",
+    "relatedConcepts": ["wu-zhu-nie-pan", "no-abiding"],
+    "relatedPersons": ["wuzhu-asanga"],
+    "relatedBooks": ["dachengzhuangyanjinglun", "jingangjing"]
   }
 ];
 
@@ -35444,5 +35520,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "《六祖坛经》核心名言“直心是道场”、“烦恼即菩提”、“不二之性即是佛性”，皆直接渊源于《维摩诘经》及其三师注疏。六祖大师所倡导的在日常世俗中修行、不离世间得解脱，正是维摩大士与僧肇等注者一脉相承之精神精髓。",
     "relatedQa": "koan-610",
     "relatedBooks": ["zhuweimojiejing", "tanjing"]
+  },
+  {
+    "id": "faq-2692",
+    "question": "《大乘庄严经论》在唯识学与大乘佛教中有何重要地位？",
+    "answer": "《大乘庄严经论》十三卷二十四品为相传弥勒菩萨造颂、无著菩萨释之“弥勒五论”之一。全论系统庄严大乘菩萨发心、种姓、六度波罗蜜多及佛果功德，尤其是其“菩提品”系统确立了“转识成智”与“四智三身”的根本学理体系，为大乘转依修证之最高典籍。",
+    "relatedQa": "koan-613",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2693",
+    "question": "《大乘庄严经论》中的“转八识成四智”具体指什么？",
+    "answer": "指修行者通过甚深般若实相观照：转第八阿赖耶识为大圆镜智（朗照万法）、转第七末那识为平等性智（证自他不二）、转第六意识为妙观察智（善观诸法善巧说法）、转眼耳鼻舌身前五识为成所作智（随缘成就一切度生事业）。",
+    "relatedQa": "koan-613",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2694",
+    "question": "“束四智以具三身”揭示了四智与佛陀三身的何种对应关系？",
+    "answer": "大圆镜智清净无染、总摄万德，转具清净法身；平等性智离自他分别、妙观察智善巧观照，相融转具圆满报身（受用身）；成所作智随缘应化、普度群品，转具千百亿化身（变化身）。四智圆融一体即圆满具足三身。",
+    "relatedQa": "koan-613",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2695",
+    "question": "禅宗六祖慧能大师如何吸收并发挥《大乘庄严经论》的四智思想？",
+    "answer": "六祖在《坛经》中以“自性四智”予以顿悟化发挥：“大圆镜智性清净，平等性智心无病，妙观察智见非功，成所作智同圆镜。”六祖指出四智非心外修来，而是自性本来具足之大智慧光明，一念顿悟即转八识为四智妙用。",
+    "relatedQa": "koan-613",
+    "relatedBooks": ["dachengzhuangyanjinglun", "tanjing"]
+  },
+  {
+    "id": "faq-2696",
+    "question": "《大乘庄严经论·成宗品》如何论证“大乘是佛说”？",
+    "answer": "论中提出八种因缘：若佛未曾预记大乘非佛说、同行菩萨皆亲证大乘、小乘法弱不能普度群生、大乘法体深广不可思议、大乘能对治一切微细惑障等。指出若离大乘菩提道，世间便绝无成就一切种智之佛陀。",
+    "relatedQa": "koan-614",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2697",
+    "question": "《大乘庄严经论》所阐述的“无住涅槃”有何深刻内涵？",
+    "answer": "经云“悲心无住着，智体恒清凉；不住于生死，亦不住涅槃”。菩萨以同体大悲不住偏空涅槃，恒常在世间利乐有情；以般若大智不住生死烦恼，在世俗洪流中心体恒常清凉无染，生死涅槃两无挂碍。",
+    "relatedQa": "koan-615",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2698",
+    "question": "本论如何阐明遍计所执、依他起与圆成实“三自性”？",
+    "answer": "凡夫于因缘和合事物上妄起主客观实我实法之执着为“遍计所执性”；万事万物依因托缘而生起显现为“依他起性”；于依他起现象上彻底远离遍计所执分别所显之清净真如实相为“圆成实性”。",
+    "relatedQa": "koan-613",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
+  },
+  {
+    "id": "faq-2699",
+    "question": "《大乘庄严经论》对现代参禅修道者有何修持指导？",
+    "answer": "本论揭示了一切烦恼妄念皆是自识变现，歇下妄识分别即是无漏圣智；参学者在日常生活中修持六度时应心无所求、三轮体空，不落入小乘枯寂，亦不随尘劳流转，行深般若以达无住解脱。",
+    "relatedQa": "koan-615",
+    "relatedBooks": ["dachengzhuangyanjinglun"]
   }
 ];
