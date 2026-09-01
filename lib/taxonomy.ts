@@ -1241,24 +1241,24 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "yongming-yanshou",
     "name": "永明延寿",
-    "title": "法眼宗三世 / 禅净双修倡导者",
+    "title": "法眼宗三世 / 净土宗六祖 / 百卷《宗镜录》著述巨匠",
     "era": "五代吴越 (904-975)",
-    "lifeStory": "延寿禅师，余杭（今浙江杭州）人，俗姓王。曾任库吏，盗用库银放生，被判死刑，吴越王赦之，令出家。师参天台德韶，于德韶座下开悟，为法眼宗三世。后住永明寺（今杭州净慈寺），住众二千人，日行一百零八件佛事，世称“永明大师”、后世尊为“古佛”。著《宗镜录》一百卷，以“举一心为宗，照万法如镜”为旨，融会禅、教、净、律各宗；又著《万善同归集》三卷，阐发万善同归实相、理事无阂、禅净双修之极旨，开后世禅净合流之先河。",
-    "teachings": "永明之教，以“一心”为宗，以“万善同归”为用：万法唯心，心为万法之宗。针对当时禅宗“空腹高心、不修万行”之偏执，广引经论阐明理事无阂、性相融即、权实双行、空有相成。以万行庄严净土，同证寂灭菩提。身兼禅净律密，树立圆修典范。",
+    "lifeStory": "延寿禅师，字冲元，号抱一子，余杭人。早年任华亭镇将及库吏，以慈心盗库银放生获罪，吴越王钱镠知其至诚而特赦之，遂投翠岩令参出家。后参天台德韶国师，一见契悟，受法眼宗印记。建隆初年，受吴越忠懿王钱俶之请住持杭州永明寺（今净慈寺），学徒二千余人，日行一百零八件佛事，世称‘永明大师’，后世尊为弥陀化身。大师广集三宗经论与祖师法语，著百卷《宗镜录》以融通禅教；又撰《万善同归集》，开创中国佛教禅净合流、理事圆融之伟大格局。",
+    "teachings": "永明之学，以“一心”为宗，以“万善同归”为用：高标如来藏自性清净心，统摄天台三观、华严十玄、唯识法相与宗门机锋；大力破除末世禅人“空腹高心、拨无因果、斥教为文字”之盲修，力倡“借教悟宗、见性起修、万行庄严净土”。身兼禅净律密于一身，树立了中国佛教圆修之最高典范。",
     "quotes": [
-      "众善所归，皆宗实相。如空包纳，似地发生。 —《万善同归集》",
-      "若离事而推理，堕声闻之愚；若离理而行事，同凡夫之执。 —《万善同归集》",
-      "建立水月道场，庄严性空世界。罗列幻化供具，供养影响如来。 —《万善同归集》",
-      "举一心为宗，照万法如镜。 —《宗镜录》"
-],
+      "举一心为宗，照万法如镜。 —《宗镜录》",
+      "经是佛语，禅是佛意。诸佛心口，必不相违。 —《宗镜录》",
+      "狂心若歇，歇即菩提；镜净心明，本来是佛。 —《宗镜录》",
+      "众善所归，皆宗实相。如空包纳，似地发生。 —《万善同归集》"
+    ],
     "classics": [
       "宗镜录",
       "万善同归集"
-],
-    "relatedConcepts": ["weishi-yixin","samadhi","wanshan-tonggui","lishi-wuai","chan-jing-shuangxiu","quanshi-shuangxing","xingxiang-rongji"],
-    "relatedMethods": ["wanshan-tonggui-fa","baiba-foshi"],
-    "relatedPersons": ["tiantai-deshao","fayan-wenyi"],
-    "relatedBooks": ["wanshantongguiji"]
+    ],
+    "relatedConcepts": ["zong-jing-lu", "chan-jiao-he-yi", "weishi-yixin", "samadhi", "wanshan-tonggui", "lishi-wuai", "chan-jing-shuangxiu"],
+    "relatedMethods": ["wanshan-tonggui-fa", "baiba-foshi"],
+    "relatedPersons": ["tiantai-deshao", "fayan-wenyi"],
+    "relatedBooks": ["zongjinglu", "wanshantongguiji", "jingdechuandenglu", "hanshanlaorenmengyouji"]
   },
   {
     "id": "fayan-wenyi",
@@ -11055,6 +11055,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["wu-deng-hui-yuan", "mind-transmission", "self-nature"],
     "relatedPersons": ["puji", "linji", "dongshan", "yunmen", "fayan-wenyi"],
     "relatedBooks": ["wudenghuiyuan", "jingdechuandenglu", "guzunsuyulu"]
+  },
+  {
+    "id": "zong-jing-lu",
+    "title": "宗镜录",
+    "category": "禅教总集",
+    "summary": "宗镜录指五代宋初永明延寿大师所著之一百卷巨著，以举一心为宗、照万法如镜为宏纲，融汇经论百二十部与诸祖法语，融通禅教性相于一炉。",
+    "etymology": "出自宋永明延寿《宗镜录序》：“举一心为宗，照万法为鉴，编联古制之深义，撮略宝藏之圆诠，名曰宗镜录。”",
+    "quotes": ["举一心为宗，照万法如镜。真源湛寂，觉海澄清。 —《宗镜录》"],
+    "guidance": "行者当依宗镜明识自心，不落空腹高心之邪狂，不滞文字名相之知解，理事双融圆修万行。",
+    "classicRef": "宗镜录 · 卷一",
+    "relatedConcepts": ["chan-jiao-he-yi", "lishi-wuai", "self-nature"],
+    "relatedPersons": ["yongming-yanshou", "fayan-wenyi"],
+    "relatedBooks": ["zongjinglu", "wanshantongguiji"]
+  },
+  {
+    "id": "chan-jiao-he-yi",
+    "title": "禅教合一",
+    "category": "宗义融通",
+    "summary": "禅教合一指禅宗心印与大乘经教本质上同出一源，“经是佛语，禅是佛意”，破除禅门轻视经教与教门死执名相之二边偏见。",
+    "etymology": "出自唐圭峰宗密《禅源诸诠集都序》及五代永明延寿《宗镜录》：“经是佛语，禅是佛意；诸佛心口，必不相违。”",
+    "quotes": ["经是佛语，禅是佛意；因诠得旨，文字性离即是解脱。 —《宗镜录》"],
+    "guidance": "学人当以经教印证自心，以自心觉照深解义趣，解行相应，方是宗通说通的大乘行者。",
+    "classicRef": "宗镜录 · 卷一",
+    "relatedConcepts": ["zong-jing-lu", "mind-transmission", "quanshi-shuangxing"],
+    "relatedPersons": ["yongming-yanshou", "guifeng-zongmi"],
+    "relatedBooks": ["zongjinglu", "chanyuan_zhuquanjiduxu"]
   }
 ];
 
@@ -20126,6 +20152,42 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["wu-jia-qi-zong", "self-nature"],
     "relatedPersons": ["dongshan", "puji"],
     "relatedBooks": ["wudenghuiyuan", "dongshanyulu"]
+  },
+  {
+    "id": "koan-646",
+    "question": "永明延寿大师如何以一心宗照万法镜？",
+    "answer": "真源湛寂觉海澄清，狂心若歇歇即菩提。",
+    "context": "永明延寿大师著百卷宗镜录，标一心为宗照万法如镜，开示自性真源无能所名相，歇却妄心即见本来。",
+    "interpretation": "自心灵明本具万法，心外无法；向心内息灭妄想驰求，当下明鉴万里，十方虚空全体洞然。",
+    "master": "永明延寿",
+    "source": "《宗镜录》卷一",
+    "relatedConcepts": ["zong-jing-lu", "self-nature"],
+    "relatedPersons": ["yongming-yanshou"],
+    "relatedBooks": ["zongjinglu", "wanshantongguiji"]
+  },
+  {
+    "id": "koan-647",
+    "question": "永明大师如何融通禅宗心印与大乘经教？",
+    "answer": "经是佛语禅是佛意，诸佛心口必不相违。",
+    "context": "学人疑禅宗不立文字何用兼引经教，永明引圭峰法语答：借教悟宗因指见月，文字性离当下解脱。",
+    "interpretation": "以经教为指南印证自心，以禅宗直指透脱文字知解；心口一如，扫除宗门狂慧与教下死执之弊。",
+    "master": "永明延寿",
+    "source": "《宗镜录》卷一",
+    "relatedConcepts": ["chan-jiao-he-yi", "zong-jing-lu"],
+    "relatedPersons": ["yongming-yanshou", "guifeng-zongmi"],
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "koan-648",
+    "question": "永明大师设十问如何勘验禅门修证实地？",
+    "answer": "了了见性如昼观色，顺逆境风一心不动。",
+    "context": "永明延寿在《宗镜录》卷首设十问勘验学人，防范未悟谓悟、生自欺狂慢之心。",
+    "interpretation": "修行须在逢缘对境、行住坐卧四威仪中踏实历练，见色闻声皆得明宗，方显真修实悟之金刚骨气。",
+    "master": "永明延寿",
+    "source": "《宗镜录》卷一",
+    "relatedConcepts": ["zong-jing-lu", "can-chan-qie-yao"],
+    "relatedPersons": ["yongming-yanshou"],
+    "relatedBooks": ["zongjinglu"]
   }
 ];
 
@@ -36886,5 +36948,61 @@ export const ZEN_FAQS: FAQItem[] = [
     "answer": "切忌将公案当作禅机谜语去猜套分析，当体会每一则公案皆是祖师斩断学人妄念的金刚利剑；在言下反躬自问‘能看公案的是谁’，在日常生活中踏实履践自心觉照。",
     "relatedQa": "koan-643",
     "relatedBooks": ["wudenghuiyuan"]
+  },
+  {
+    "id": "faq-2780",
+    "question": "《宗镜录》由谁著作，为何被尊为中国佛教禅教合一之旷世第一巨著？",
+    "answer": "《宗镜录》一百卷由五代宋初永明延寿大师著。大师统摄天台、华严、慈恩三宗义学与宗门尊宿，博采经论百二十部、法语百二十家，以举一心为宗融摄万法，消融门户偏见，被誉为佛法之大洋、宗门之渊府。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2781",
+    "question": "《宗镜录》全书一百卷的宏大框架是如何划分的？",
+    "answer": "全书分三大章：一标宗章（卷一，立心为宗设十问定纲宗），二问答章（卷二至卷九十三，设六十一问详辩心识、空有、理事、性相与修证），三引证章（卷九十四至百，博引百二十部经论印证自心）。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2782",
+    "question": "永明大师在《宗镜录》中如何阐述“举一心为宗，照万法如镜”？",
+    "answer": "大师指出众生与诸佛本具如来藏清净心，世间万象皆由此心幻现；悟透自心本体，如明镜朗照万物，森罗万象皆归自性，无一法能出此心之外。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2783",
+    "question": "永明大师如何化解禅宗“不立文字”与经教“繁多名相”的对立？",
+    "answer": "大师提出“经是佛语，禅是佛意，心口不二”；不立文字是破除文字执着，而非废弃经教；借教悟宗因指见月，明了文字自性本空，文字即是解脱工具。",
+    "relatedQa": "koan-647",
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2784",
+    "question": "《宗镜录》卷首著名的“十问定纲宗”有何深意？",
+    "answer": "十问针对末世学者空腹高心、狂妄盲修之病，以见色闻声能否明宗、顺逆境风能否不动、一代时教能否谛了等十条严厉标准，逼拶学人老实向道。",
+    "relatedQa": "koan-648",
+    "relatedBooks": ["zongjinglu"]
+  },
+  {
+    "id": "faq-2785",
+    "question": "《宗镜录》如何融合唯识学“转识成智”与禅宗见性？",
+    "answer": "大师详析阿赖耶识真妄和合，指出一念迷即八识分别，一念悟即四智菩提；宗门明心见性本质上即是转识成智，体用如如不落二边。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu", "chengweishilun"]
+  },
+  {
+    "id": "faq-2786",
+    "question": "为何《宗镜录》力主“破执理废事，万善同归净土”？",
+    "answer": "针对盲修者以悟为足废弃戒律行门的狂见，大师严厉告诫‘宁起有见如须弥，不起空见如芥子’；力主以自心为本圆修六度万行，理事圆融回向极乐。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu", "wanshantongguiji"]
+  },
+  {
+    "id": "faq-2787",
+    "question": "现代学人阅读《宗镜录》当掌握怎样的修学要领？",
+    "answer": "当把握‘消归自心’的主线，不迷失于博大名相之中；以经论教理扫除盲修暗练，以宗门见地打破文字知解，在生活日用中踏实履践自心觉照与积功累德。",
+    "relatedQa": "koan-646",
+    "relatedBooks": ["zongjinglu"]
   }
 ];

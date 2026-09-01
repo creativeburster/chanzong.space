@@ -1220,7 +1220,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '一口吸尽西江水', pinyin: 'yī kǒu xī jìn xī jiāng shuǐ', meaning: '马祖道一接引庞蕴居士机锋，直指自性广大、涵融万象' },
     { char: '南岳青原', pinyin: 'nán yuè qīng yuán', meaning: '六祖门下怀让与行思两大宗派，分衍出五家七宗天下禅林' },
   ],
+  'zongjinglu': [
+    { char: '宗镜录', pinyin: 'zōng jìng lù', meaning: '五代永明延寿大师著百卷禅教总集，以一心为宗照万法如镜' },
+    { char: '智觉禅师', pinyin: 'zhì jué chán shī', meaning: '永明延寿大师法号，法眼宗三祖、净土宗六祖，禅净合一巨匠' },
+    { char: '一心为宗', pinyin: 'yī xīn wéi zōng', meaning: '全书核心纲领，万法不出一心，心外无别法，悟此即悟佛法' },
+    { char: '转识成智', pinyin: 'zhuǎn shí chéng zhì', meaning: '转八识妄分别成四智菩提，体用如如，理事圆融无碍' },
+    { char: '事事无碍', pinyin: 'shì shì wú ài', meaning: '华严最高法界观，以一心真如贯穿万相，森罗万象交参互摄' },
+  ],
 };
+
 
 
 
