@@ -39,7 +39,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title,
     description: desc || '法门条目',
-    alternates: { canonical: `/methods/${params.id}` },
+    alternates: {
+      canonical: `/methods/${params.id}`,
+      languages: {
+        'zh-Hans': `/methods/${params.id}`,
+        'zh-Hant': `/zh-tw/methods/${params.id}`,
+      },
+    },
     openGraph: {
       type: 'article',
       title: `${name} · 法门 | 禅宗知识库`,

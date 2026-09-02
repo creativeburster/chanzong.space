@@ -15,7 +15,7 @@ interface BreadcrumbProps {
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const fullItems: BreadcrumbItem[] = [
     { label: '首页', href: '/' },
@@ -29,7 +29,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       '@type': 'ListItem',
       position: idx + 1,
       name: item.label,
-      ...(item.href ? { item: `https://chanzong.space${item.href}` } : {}),
+      ...(item.href ? { item: `https://chanzong.space${getHref(item.href)}` } : {}),
     })),
   };
 
@@ -49,7 +49,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
               )}
               {item.href && !isLast ? (
                 <Link
-                  href={item.href}
+                  href={getHref(item.href)}
                   className="hover:text-amber-800 transition-colors inline-flex items-center gap-1"
                 >
                   {idx === 0 && <Home className="w-3.5 h-3.5" />}

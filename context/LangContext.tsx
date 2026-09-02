@@ -1,55 +1,10 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
-import * as OpenCC from 'opencc-js';
+import { usePathname, useRouter } from 'next/navigation';
+import { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref } from '@/lib/opencc';
 
-// 初始化 OpenCC 高性能双向转换器
-// 'twp': 包含台湾/传统繁体常用词汇习惯（如 打印->列印、软件->軟體、网络->網路、信息->資訊、默认->預設 等）
-const s2tConverter = OpenCC.Converter({ from: 'cn', to: 'twp' });
-const t2sConverter = OpenCC.Converter({ from: 'twp', to: 'cn' });
-
-// 内存 LRU 缓存，极大加速高频短文本（UI 按钮、标题、标签）转换
-const tradCache = new Map<string, string>();
-const simpCache = new Map<string, string>();
-const MAX_CACHE_SIZE = 5000;
-
-export function convertToTrad(text: string): string {
-  if (!text) return text;
-  if (tradCache.has(text)) {
-    return tradCache.get(text)!;
-  }
-  const result = s2tConverter(text);
-  if (tradCache.size > MAX_CACHE_SIZE) {
-    tradCache.clear();
-  }
-  tradCache.set(text, result);
-  return result;
-}
-
-export function convertToSimp(text: string): string {
-  if (!text) return text;
-  if (simpCache.has(text)) {
-    return simpCache.get(text)!;
-  }
-  const result = t2sConverter(text);
-  if (simpCache.size > MAX_CACHE_SIZE) {
-    simpCache.clear();
-  }
-  simpCache.set(text, result);
-  return result;
-}
-
-/**
- * 安全 HTML 繁简转换：
- * 仅转换 HTML 标签外侧的文本节点，完整保留所有标签名、class 类名、id、style 与 href 属性！
- */
-export function convertHtmlToTrad(html: string): string {
-  if (!html) return html;
-  return html.replace(/(<[^>]+>)|([^<]+)/g, (_match, tag, text) => {
-    if (tag) return tag;
-    return convertToTrad(text);
-  });
-}
+export { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref };
 
 interface LangContextType {
   isTraditional: boolean;
@@ -59,6 +14,7 @@ interface LangContextType {
   tHtml: (html: string) => string;
   toTrad: (text: string) => string;
   toSimp: (text: string) => string;
+  getHref: (href: string) => string;
 }
 
 const LangContext = createContext<LangContextType>({
@@ -69,13 +25,23 @@ const LangContext = createContext<LangContextType>({
   tHtml: (html: string) => html,
   toTrad: (text: string) => text,
   toSimp: (text: string) => text,
+  getHref: (href: string) => href,
 });
 
 export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const pathname = usePathname();
+  const router = useRouter();
+  const isZhTwPath = pathname?.startsWith('/zh-tw');
+
   const [isTraditional, setIsTraditional] = useState(false);
 
-  // 初始化从 localStorage 读取用户繁简偏好
+  // 初始化根据 URL 或 localStorage 读取用户偏好
   useEffect(() => {
+    if (isZhTwPath) {
+      setIsTraditional(true);
+      document.documentElement.lang = 'zh-Hant';
+      return;
+    }
     try {
       const saved = localStorage.getItem('zen_is_traditional');
       if (saved !== null) {
@@ -86,7 +52,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
     } catch {
       // 兼容非浏览器环境
     }
-  }, []);
+  }, [isZhTwPath]);
 
   const toggleLang = useCallback(() => {
     setIsTraditional((prev) => {
@@ -97,9 +63,19 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
       } catch {
         // ignore
       }
+
+      // 如果有对应的路由，执行平滑路由跳转以保证顶级 SEO
+      if (next && !pathname.startsWith('/zh-tw')) {
+        const target = pathname === '/' ? '/zh-tw' : `/zh-tw${pathname}`;
+        router.push(target);
+      } else if (!next && pathname.startsWith('/zh-tw')) {
+        const target = pathname.replace(/^\/zh-tw/, '') || '/';
+        router.push(target);
+      }
+
       return next;
     });
-  }, []);
+  }, [pathname, router]);
 
   const setLang = useCallback((trad: boolean) => {
     setIsTraditional(trad);
@@ -121,6 +97,10 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return convertHtmlToTrad(html);
   }, [isTraditional]);
 
+  const getHref = useCallback((href: string) => {
+    return getLocalizedHref(href, isTraditional);
+  }, [isTraditional]);
+
   const value = useMemo(() => ({
     isTraditional,
     toggleLang,
@@ -129,7 +109,8 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
     tHtml,
     toTrad: convertToTrad,
     toSimp: convertToSimp,
-  }), [isTraditional, toggleLang, setLang, t, tHtml]);
+    getHref,
+  }), [isTraditional, toggleLang, setLang, t, tHtml, getHref]);
 
   return (
     <LangContext.Provider value={value}>
@@ -139,4 +120,3 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
 };
 
 export const useLang = () => useContext(LangContext);
-

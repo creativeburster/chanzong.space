@@ -8,7 +8,8 @@ export function GET(_req: NextRequest) {
   const base = 'https://chanzong.space';
   const now = new Date().toISOString();
 
-  const urls: { loc: string; lastmod: string; changefreq: string; priority: number }[] = [];
+  type Entry = { simpPath: string; tradPath: string; freq: string; prio: number };
+  const entries: Entry[] = [];
 
   // Static pages
   const staticPages = [
@@ -24,45 +25,95 @@ export function GET(_req: NextRequest) {
     { path: '/sitemap', freq: 'monthly', prio: 0.3 },
   ];
   for (const p of staticPages) {
-    urls.push({ loc: `${base}${p.path}`, lastmod: now, changefreq: p.freq, priority: p.prio });
+    entries.push({
+      simpPath: p.path,
+      tradPath: p.path === '/' ? '/zh-tw' : `/zh-tw${p.path}`,
+      freq: p.freq,
+      prio: p.prio,
+    });
   }
 
-  // Classics
+  // Classics (120 部)
   for (const m of manifest) {
-    urls.push({ loc: `${base}/classics/${m.id}`, lastmod: now, changefreq: 'yearly', priority: 0.9 });
+    entries.push({
+      simpPath: `/classics/${m.id}`,
+      tradPath: `/zh-tw/classics/${m.id}`,
+      freq: 'yearly',
+      prio: 0.9,
+    });
   }
 
-  // Concepts
+  // Concepts (420 个)
   for (const c of ZEN_CONCEPTS) {
-    urls.push({ loc: `${base}/concepts/${c.id}`, lastmod: now, changefreq: 'yearly', priority: 0.8 });
+    entries.push({
+      simpPath: `/concepts/${c.id}`,
+      tradPath: `/zh-tw/concepts/${c.id}`,
+      freq: 'yearly',
+      prio: 0.8,
+    });
   }
 
-  // Methods
+  // Methods (91 种)
   for (const m of ZEN_METHODS) {
-    urls.push({ loc: `${base}/methods/${m.id}`, lastmod: now, changefreq: 'yearly', priority: 0.8 });
+    entries.push({
+      simpPath: `/methods/${m.id}`,
+      tradPath: `/zh-tw/methods/${m.id}`,
+      freq: 'yearly',
+      prio: 0.8,
+    });
   }
 
-  // Koans
+  // Koans (603 则)
   for (const k of ZEN_KOANS) {
-    urls.push({ loc: `${base}/koan/${k.id}`, lastmod: now, changefreq: 'yearly', priority: 0.7 });
+    entries.push({
+      simpPath: `/koan/${k.id}`,
+      tradPath: `/zh-tw/koan/${k.id}`,
+      freq: 'yearly',
+      prio: 0.7,
+    });
   }
 
-  // Persons
+  // Persons (203 位)
   for (const p of ZEN_PERSONS) {
-    urls.push({ loc: `${base}/persons/${p.id}`, lastmod: now, changefreq: 'yearly', priority: 0.8 });
+    entries.push({
+      simpPath: `/persons/${p.id}`,
+      tradPath: `/zh-tw/persons/${p.id}`,
+      freq: 'yearly',
+      prio: 0.8,
+    });
   }
 
-  // FAQs 不逐条收录: FAQ 页为单页交互渲染(分页加载), 锚点条目不可直接定位, 已由 staticPages 中的 /faq 覆盖
+  // 生成全量简体与繁体双轨 URL 节点（带 hreflang）
+  const urlNodes: string[] = [];
+  for (const e of entries) {
+    const simpUrl = `${base}${e.simpPath}`;
+    const tradUrl = `${base}${e.tradPath}`;
+
+    // 简体 URL 节点
+    urlNodes.push(`  <url>
+    <loc>${simpUrl}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>${e.freq}</changefreq>
+    <priority>${e.prio.toFixed(1)}</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
+  </url>`);
+
+    // 繁体 URL 节点
+    urlNodes.push(`  <url>
+    <loc>${tradUrl}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>${e.freq}</changefreq>
+    <priority>${(Math.max(0.1, e.prio - 0.05)).toFixed(1)}</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
+  </url>`);
+  }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority.toFixed(1)}</priority>
-  </url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urlNodes.join('\n')}
 </urlset>`;
 
   return new Response(xml, {

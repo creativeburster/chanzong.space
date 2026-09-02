@@ -8,17 +8,17 @@ import { useLang } from '@/context/LangContext';
 
 export const TopHeader: React.FC = () => {
   const pathname = usePathname();
-  const { isTraditional, toggleLang, t } = useLang();
+  const { isTraditional, toggleLang, t, getHref } = useLang();
 
   const navLinks = [
-    { href: '/', label: t('首页') },
-    { href: '/books', label: t('书籍') },
-    { href: '/concepts', label: t('概念') },
-    { href: '/methods', label: t('法门') },
-    { href: '/koan', label: t('公案') },
-    { href: '/faq', label: t('问答') },
-    { href: '/persons', label: t('人物') },
-    { href: '/graph', label: t('图谱') },
+    { href: getHref('/'), label: t('首页') },
+    { href: getHref('/books'), label: t('书籍') },
+    { href: getHref('/concepts'), label: t('概念') },
+    { href: getHref('/methods'), label: t('法门') },
+    { href: getHref('/koan'), label: t('公案') },
+    { href: getHref('/faq'), label: t('问答') },
+    { href: getHref('/persons'), label: t('人物') },
+    { href: getHref('/graph'), label: t('图谱') },
   ];
 
   return (
@@ -32,7 +32,7 @@ export const TopHeader: React.FC = () => {
         <Menu className="w-5 h-5" />
       </button>
 
-      <Link href="/" className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
+      <Link href={getHref('/')} className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
         "{t('直指人心，见性成佛；教外别传，不立文字。')}"
       </Link>
 

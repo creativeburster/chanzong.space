@@ -39,7 +39,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title,
     description: desc || '人物条目',
-    alternates: { canonical: `/persons/${params.id}` },
+    alternates: {
+      canonical: `/persons/${params.id}`,
+      languages: {
+        'zh-Hans': `/persons/${params.id}`,
+        'zh-Hant': `/zh-tw/persons/${params.id}`,
+      },
+    },
     openGraph: {
       type: 'article',
       title: `${name} · 人物 | 禅宗知识库`,

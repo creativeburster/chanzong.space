@@ -30,6 +30,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
     description: `${summary.slice(0, 100)} 作者：${meta.author}，约${Math.round(meta.word_count / 1000)}千字。`,
     alternates: {
       canonical: `/classics/${meta.id}`,
+      languages: {
+        'zh-Hans': `/classics/${meta.id}`,
+        'zh-Hant': `/zh-tw/classics/${meta.id}`,
+      },
     },
     openGraph: {
       type: 'article',

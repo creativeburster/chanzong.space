@@ -39,7 +39,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title,
     description: desc || '概念条目',
-    alternates: { canonical: `/concepts/${params.id}` },
+    alternates: {
+      canonical: `/concepts/${params.id}`,
+      languages: {
+        'zh-Hans': `/concepts/${params.id}`,
+        'zh-Hant': `/zh-tw/concepts/${params.id}`,
+      },
+    },
     openGraph: {
       type: 'article',
       title: `${name} · 概念 | 禅宗知识库 ChanZong.space`,

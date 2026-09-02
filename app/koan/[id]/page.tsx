@@ -39,7 +39,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title,
     description: desc || '公案条目',
-    alternates: { canonical: `/koan/${params.id}` },
+    alternates: {
+      canonical: `/koan/${params.id}`,
+      languages: {
+        'zh-Hans': `/koan/${params.id}`,
+        'zh-Hant': `/zh-tw/koan/${params.id}`,
+      },
+    },
     openGraph: {
       type: 'article',
       title: `${name} · 公案 | 禅宗知识库`,

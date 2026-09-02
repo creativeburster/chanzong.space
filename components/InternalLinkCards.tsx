@@ -18,7 +18,7 @@ export const LinkCardGrid: React.FC<{
   columns?: 2 | 3;
   initialLimit?: number | false;
 }> = ({ items, variant = 'blue', columns = 2, initialLimit = 6 }) => {
-  const { t } = useLang();
+  const { t, getHref } = useLang();
   const [expanded, setExpanded] = React.useState(false);
   if (items.length === 0) return null;
 
@@ -42,7 +42,7 @@ export const LinkCardGrid: React.FC<{
         {visibleItems.map((item) => (
           <Link
             key={item.id}
-            href={item.href}
+            href={getHref(item.href)}
             className={`p-4 rounded-2xl ${c.bg} border ${c.border} ${c.hoverBorder} hover:shadow-md transition-all group`}
           >
             <p className={`text-[15px] font-bold font-serif-zen ${c.title} transition-colors`}>
@@ -76,14 +76,14 @@ export const PrevNextNav: React.FC<{
   prev?: { id: string; title: string; href: string } | null;
   next?: { id: string; title: string; href: string } | null;
 }> = ({ prev, next }) => {
-  const { t } = useLang();
+  const { t, getHref } = useLang();
   if (!prev && !next) return null;
 
   return (
     <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
       {prev ? (
         <Link
-          href={prev.href}
+          href={getHref(prev.href)}
           className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center space-x-3 shadow-sm group"
         >
           <span className="text-amber-800 group-hover:-translate-x-1 transition-transform text-lg">‹</span>
@@ -98,7 +98,7 @@ export const PrevNextNav: React.FC<{
 
       {next ? (
         <Link
-          href={next.href}
+          href={getHref(next.href)}
           className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto"
         >
           <div>

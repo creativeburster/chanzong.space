@@ -130,7 +130,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   classicsCount = 33,
 }) => {
   const pathname = usePathname();
-  const { t } = useLang();
+  const { t, getHref } = useLang();
   const [coreOpen, setCoreOpen] = useState(true);
   const [classicsOpen, setClassicsOpen] = useState(true);
   const [conceptsOpen, setConceptsOpen] = useState(true);
@@ -159,12 +159,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
     });
   };
 
-  const isActive = (path: string) => pathname === path;
+  const isActive = (path: string) => {
+    const normPath = pathname?.replace(/^\/zh-tw/, '') || '/';
+    const targetNorm = path.replace(/^\/zh-tw/, '') || '/';
+    return normPath === targetNorm;
+  };
+
+  const isPrefixActive = (path: string) => {
+    const normPath = pathname?.replace(/^\/zh-tw/, '') || '/';
+    return normPath.startsWith(path);
+  };
 
   const sidebarContent = (
     <>
       {/* Brand Header（点击回到主页） */}
-      <Link prefetch={false} href="/" className="p-6 border-b border-slate-800 flex items-center space-x-3.5 bg-slate-950/60 hover:bg-slate-900/60 transition-colors group">
+      <Link prefetch={false} href={getHref('/')} className="p-6 border-b border-slate-800 flex items-center space-x-3.5 bg-slate-950/60 hover:bg-slate-900/60 transition-colors group">
         <div className="w-16 h-16 rounded-2xl overflow-hidden border border-slate-700/60 shrink-0 shadow-md bg-[#0F172A]">
           <Image src="/logo-nianhua.png" alt="拈花微笑" width={64} height={64} className="w-full h-full object-cover" priority />
         </div>
@@ -194,9 +203,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </button>
       </div>
 
-      {/* Sidebar Navigation */}
       <div className="flex-1 py-5 px-4 space-y-7 text-[13px] font-medium">
-        {/* Section 1: 核心索引 (Core Indexes) */}
         <div>
           <button
             onClick={() => setCoreOpen(!coreOpen)}
@@ -208,7 +215,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           {coreOpen && (
             <div className="space-y-1.5">
-              <Link prefetch={false} href="/books"
+              <Link prefetch={false} href={getHref('/books')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/books')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -224,7 +231,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </Link>
 
-              <Link prefetch={false} href="/concepts"
+              <Link prefetch={false} href={getHref('/concepts')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/concepts')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -240,7 +247,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </Link>
 
-              <Link prefetch={false} href="/methods"
+              <Link prefetch={false} href={getHref('/methods')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/methods')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -257,9 +264,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </Link>
 
               <div className="relative group">
-                <Link prefetch={false} href="/koan"
+                <Link prefetch={false} href={getHref('/koan')}
                   className={`relative flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
-                    isActive('/koan') || pathname.startsWith('/koan')
+                    isActive('/koan') || isPrefixActive('/koan')
                       ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
                       : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
                   }`}
@@ -274,7 +281,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </Link>
 
                 <div className="hidden group-hover:block absolute left-full top-1/2 -translate-y-1/2 w-52 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl py-2 z-50 hover:block">
-                  <Link prefetch={false} href="/koan"
+                  <Link prefetch={false} href={getHref('/koan')}
                     className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
                       isActive('/koan')
                         ? 'text-amber-300 font-semibold bg-amber-500/10'
@@ -287,7 +294,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     </div>
                     <span className="text-[11px] text-slate-400 font-mono">{STATS.koans}</span>
                   </Link>
-                  <Link prefetch={false} href="/faq"
+                  <Link prefetch={false} href={getHref('/faq')}
                     className={`flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-all ${
                       isActive('/faq')
                         ? 'text-amber-300 font-semibold bg-amber-500/10'
@@ -303,7 +310,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
               </div>
 
-              <Link prefetch={false} href="/faq"
+              <Link prefetch={false} href={getHref('/faq')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/faq')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -319,7 +326,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </Link>
 
-              <Link prefetch={false} href="/persons"
+              <Link prefetch={false} href={getHref('/persons')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/persons')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -335,7 +342,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </Link>
 
-              <Link prefetch={false} href="/graph"
+              <Link prefetch={false} href={getHref('/graph')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/graph')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -348,7 +355,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
               </Link>
 
-              <Link prefetch={false} href="/about"
+              <Link prefetch={false} href={getHref('/about')}
                 className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
                   isActive('/about')
                     ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
@@ -364,7 +371,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           )}
         </div>
 
-        {/* Section 2: 经典著作 Submenu */}
         <div>
           <button
             onClick={() => setClassicsOpen(!classicsOpen)}
@@ -378,7 +384,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="space-y-1 pl-2">
               {(manifest as any[]).slice(0, 5).map((book) => (
                 <Link prefetch={false} key={book.id}
-                  href={`/classics/${book.id}`}
+                  href={getHref(`/classics/${book.id}`)}
                   className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
                     pathname === `/classics/${book.id}`
                       ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
@@ -399,7 +405,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               )}
               {moreClassicsOpen && (manifest as any[]).slice(5).map((book) => (
                 <Link prefetch={false} key={book.id}
-                  href={`/classics/${book.id}`}
+                  href={getHref(`/classics/${book.id}`)}
                   className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
                     pathname === `/classics/${book.id}`
                       ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
@@ -413,7 +419,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           )}
         </div>
 
-        {/* Section 3: 核心概念 Submenu */}
         <div>
           <button
             onClick={() => setConceptsOpen(!conceptsOpen)}
@@ -427,7 +432,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="space-y-1 pl-2">
               {sidebarConcepts.slice(0, 5).map((concept) => (
                 <Link prefetch={false} key={concept.id}
-                  href={`/concepts/${concept.id}`}
+                  href={getHref(`/concepts/${concept.id}`)}
                   className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
                     pathname === `/concepts/${concept.id}`
                       ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'
@@ -448,7 +453,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               )}
               {moreConceptsOpen && sidebarConcepts.slice(5).map((concept) => (
                 <Link prefetch={false} key={concept.id}
-                  href={`/concepts/${concept.id}`}
+                  href={getHref(`/concepts/${concept.id}`)}
                   className={`block px-3 py-2 rounded-xl truncate transition-colors text-sm font-semibold ${
                     pathname === `/concepts/${concept.id}`
                       ? 'text-amber-300 font-bold bg-amber-500/10 border border-amber-500/30'

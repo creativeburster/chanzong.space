@@ -6,7 +6,13 @@ import { ZEN_FAQS } from '@/lib/taxonomy';
 export const metadata: Metadata = {
   title: '问答',
   description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析、修证疑问，覆盖禅宗核心议题与常见疑惑。`,
-  alternates: { canonical: '/faq' },
+  alternates: {
+    canonical: '/faq',
+    languages: {
+      'zh-Hans': '/faq',
+      'zh-Hant': '/zh-tw/faq',
+    },
+  },
   openGraph: {
     type: 'website',
     title: '问答 | 禅宗知识库 ChanZong.space',
