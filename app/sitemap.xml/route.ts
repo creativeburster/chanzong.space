@@ -20,6 +20,7 @@ export function GET(_req: NextRequest) {
     { path: '/koan', freq: 'monthly', prio: 0.9 },
     { path: '/persons', freq: 'monthly', prio: 0.9 },
     { path: '/faq', freq: 'monthly', prio: 0.8 },
+    { path: '/practice', freq: 'weekly', prio: 0.85 },
     { path: '/graph', freq: 'yearly', prio: 0.5 },
     { path: '/about', freq: 'yearly', prio: 0.4 },
     { path: '/sitemap', freq: 'monthly', prio: 0.3 },

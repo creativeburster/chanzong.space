@@ -19,6 +19,7 @@ export const TopHeader: React.FC = () => {
     { href: getHref('/faq'), label: t('问答') },
     { href: getHref('/persons'), label: t('人物') },
     { href: getHref('/graph'), label: t('图谱') },
+    { href: getHref('/practice'), label: t('禅修') },
   ];
 
   return (

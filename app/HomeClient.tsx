@@ -8,6 +8,8 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { StatsOverview } from '@/components/StatsOverview';
 import { QuickEntryGrid } from '@/components/QuickEntryGrid';
+import { DailyKoanCard } from '@/components/practice/DailyKoanCard';
+import { Sparkles, HeartHandshake, Moon, ArrowRight } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
 import {
@@ -87,6 +89,39 @@ export default function HomeClient() {
 
           {/* Quick Entry Cards */}
           <QuickEntryGrid />
+
+          {/* Daily Koan & Zen Practice Entrance */}
+          <div className="my-8 grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
+            <div className="lg:col-span-2">
+              <DailyKoanCard compact={true} />
+            </div>
+
+            <Link
+              prefetch={false}
+              href={getHref('/practice')}
+              className="bg-gradient-to-br from-amber-900 via-[#1E293B] to-slate-950 text-white rounded-2xl p-5 border border-amber-800/30 shadow-sm hover:shadow-md hover:border-amber-500/60 transition-all flex flex-col justify-between group relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+              <div>
+                <div className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold mb-3 border border-amber-500/30">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>{t('禅修静心工坊')}</span>
+                </div>
+                <h3 className="text-lg font-bold font-serif-zen text-amber-100 group-hover:text-amber-300 transition-colors">
+                  {t('电子木鱼 · 坐禅计时')}
+                </h3>
+                <p className="mt-2 text-xs text-slate-300 leading-relaxed">
+                  {t('纯原生空灵木鱼敲击音效、调身调息坐禅倒计时，于日常尘劳中歇下狂心。')}
+                </p>
+              </div>
+
+              <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-amber-400 font-bold">
+                <span>{t('进入禅房静心')}</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          </div>
+
 
           {/* 1. 经典著作精选 */}
           <div className="my-12">
