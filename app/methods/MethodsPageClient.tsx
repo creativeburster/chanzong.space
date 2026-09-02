@@ -7,7 +7,8 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_METHODS } from '@/lib/taxonomy';
-import { Compass, ChevronRight, Search, ChevronDown, BookOpen } from 'lucide-react';
+import { Compass,
+  Sparkles, ChevronRight, Search, ChevronDown, BookOpen } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';

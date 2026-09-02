@@ -7,7 +7,8 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_CONCEPTS } from '@/lib/taxonomy';
-import { Gem, ChevronRight, Search, ChevronDown } from 'lucide-react';
+import { Gem,
+  Sparkles, ChevronRight, Search, ChevronDown } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';

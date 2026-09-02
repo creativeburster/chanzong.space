@@ -14,6 +14,7 @@ import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/l
 import {
   ChevronLeft,
   ChevronRight,
+  Sparkles,
   Copy,
   Check,
   Users,
