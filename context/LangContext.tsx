@@ -37,6 +37,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
   const isZhTwPath = pathname?.startsWith('/zh-tw') || initialTraditional;
 
   const [isTraditional, setIsTraditional] = useState<boolean>(Boolean(initialTraditional || isZhTwPath));
+  const [openccVersion, setOpenccVersion] = useState(0);
 
   // 初始化根据 URL 或 localStorage 读取用户偏好
   useEffect(() => {
@@ -45,9 +46,13 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
       document.documentElement.lang = 'zh-Hant';
       if (typeof window !== 'undefined') {
         if ('requestIdleCallback' in window) {
-          (window as any).requestIdleCallback(() => ensureOpenCC());
+          (window as any).requestIdleCallback(() => {
+            ensureOpenCC().then(() => setOpenccVersion((v) => v + 1));
+          });
         } else {
-          setTimeout(ensureOpenCC, 1500);
+          setTimeout(() => {
+            ensureOpenCC().then(() => setOpenccVersion((v) => v + 1));
+          }, 1500);
         }
       }
       return;
@@ -60,9 +65,13 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
         document.documentElement.lang = val ? 'zh-Hant' : 'zh-Hans';
         if (val && typeof window !== 'undefined') {
           if ('requestIdleCallback' in window) {
-            (window as any).requestIdleCallback(() => ensureOpenCC());
+            (window as any).requestIdleCallback(() => {
+            ensureOpenCC().then(() => setOpenccVersion((v) => v + 1));
+          });
           } else {
-            setTimeout(ensureOpenCC, 1500);
+            setTimeout(() => {
+            ensureOpenCC().then(() => setOpenccVersion((v) => v + 1));
+          }, 1500);
           }
         }
       }
@@ -75,7 +84,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
     setIsTraditional((prev) => {
       const next = !prev;
       if (next) {
-        ensureOpenCC();
+        ensureOpenCC().then(() => setOpenccVersion((v) => v + 1));
       }
       try {
         localStorage.setItem('zen_is_traditional', String(next));
@@ -130,7 +139,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
     toTrad: convertToTrad,
     toSimp: convertToSimp,
     getHref,
-  }), [isTraditional, toggleLang, setLang, t, tHtml, getHref]);
+  }), [isTraditional, toggleLang, setLang, t, tHtml, getHref, openccVersion]);
 
   return (
     <LangContext.Provider value={value}>

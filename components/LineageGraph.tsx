@@ -17,7 +17,7 @@ interface MasterNode {
 }
 
 export const LineageGraph: React.FC = () => {
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   // 1. 直传主干 (达摩至惠能)
   const patriarchs: MasterNode[] = [
@@ -75,7 +75,7 @@ export const LineageGraph: React.FC = () => {
                     <div>
                       <div className="flex items-center space-x-2">
                         {node.id ? (
-                          <Link prefetch={false} href={`/persons/${node.id}`}
+                          <Link prefetch={false} href={getHref(`/persons/${node.id}`)}
                             className="text-base font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors hover:underline"
                           >
                             {t(node.name)}
@@ -112,7 +112,7 @@ export const LineageGraph: React.FC = () => {
                     </div>
                   </div>
                   {node.id && (
-                    <Link prefetch={false} href={`/persons/${node.id}`}
+                    <Link prefetch={false} href={getHref(`/persons/${node.id}`)}
                       className="text-xs text-amber-700 hover:text-amber-900 font-semibold shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       {t('查看')} →
@@ -159,7 +159,7 @@ export const LineageGraph: React.FC = () => {
                     {d.title}
                   </div>
                   {d.id ? (
-                    <Link prefetch={false} href={`/persons/${d.id}`}
+                    <Link prefetch={false} href={getHref(`/persons/${d.id}`)}
                       className={`text-base font-bold font-serif-zen hover:underline ${
                         isMainBranch ? 'text-amber-100' : 'text-slate-900 hover:text-amber-800'
                       }`}
