@@ -5,6 +5,7 @@ import * as d3 from 'd3';
 import { RotateCcw, MoveVertical, Plus, Minus } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
+import { useLang } from '@/context/LangContext';
 
 interface NodeData extends d3.SimulationNodeDatum {
   id: string;
@@ -293,6 +294,7 @@ export const GraphCanvas: React.FC = () => {
   const router = useRouter();
   const currentNodesRef = useRef<NodeData[]>([]);
   const tooltipRef = useRef<HTMLDivElement>(null);
+  const { t, isTraditional } = useLang();
 
   const [visible, setVisible] = useState<Record<string, boolean>>({
     person: true,
@@ -339,9 +341,9 @@ export const GraphCanvas: React.FC = () => {
     const descEl = tip.querySelector('[data-desc]');
     const tagEl = tip.querySelector('[data-type]');
     const dotEl = tip.querySelector('[data-dot]') as HTMLElement | null;
-    if (nameEl) nameEl.textContent = d.name;
-    if (descEl) descEl.textContent = d.desc;
-    if (tagEl) tagEl.textContent = typeLabelMap[d.type] || d.type;
+    if (nameEl) nameEl.textContent = t(d.name);
+    if (descEl) descEl.textContent = t(d.desc);
+    if (tagEl) tagEl.textContent = t(typeLabelMap[d.type] || d.type);
     if (dotEl) dotEl.style.backgroundColor = colorMap[d.type];
     tip.style.opacity = '1';
     updateTooltipPos(event.clientX, event.clientY);
@@ -476,7 +478,7 @@ export const GraphCanvas: React.FC = () => {
         .selectAll<SVGTextElement, LinkData>('text')
         .data(activeLabels, (l) => `${(l.source as NodeData).id}->${(l.target as NodeData).id}`)
         .join('text')
-        .text((l) => l.relation)
+        .text((l) => t(l.relation))
         .attr('x', (l) => (((l.source as NodeData).x ?? 0) + ((l.target as NodeData).x ?? 0)) / 2)
         .attr('y', (l) => (((l.source as NodeData).y ?? 0) + ((l.target as NodeData).y ?? 0)) / 2 - 4);
     };
@@ -495,7 +497,7 @@ export const GraphCanvas: React.FC = () => {
       .attr('stroke-width', 1.5);
 
     node.append('text')
-      .text(d => d.name)
+      .text(d => t(d.name))
       .attr('font-size', '13px')
       .attr('fill', '#fff')
       .attr('text-anchor', 'middle')
@@ -689,18 +691,18 @@ export const GraphCanvas: React.FC = () => {
       >
         {/* Filter chips (右上角分类筛选：支持移动端横向滑动) */}
         <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[80%] md:max-w-[55%] overflow-x-auto no-scrollbar py-1 px-1">
-          {FILTER_TYPES.map((t) => (
+          {FILTER_TYPES.map((tType) => (
             <button
-              key={t}
-              onClick={() => toggleType(t)}
+              key={tType}
+              onClick={() => toggleType(tType)}
               className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[11px] md:text-xs font-bold border transition-all shrink-0 ${
-                visible[t]
+                visible[tType]
                   ? 'bg-white/15 border-white/30 text-white shadow-sm'
                   : 'bg-transparent border-white/10 text-white/35 line-through'
               }`}
             >
-              <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full" style={{ backgroundColor: colorMap[t], opacity: visible[t] ? 1 : 0.3 }} />
-              {typeLabelMap[t]} {COUNTS[t]}
+              <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full" style={{ backgroundColor: colorMap[tType], opacity: visible[tType] ? 1 : 0.3 }} />
+              {t(typeLabelMap[tType])} {COUNTS[tType]}
             </button>
           ))}
         </div>

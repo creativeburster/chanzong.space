@@ -19,7 +19,7 @@ export default function ConceptsPageClient() {
   const [activeCategory, setActiveCategory] = useState('全部');
   const [catDropdownOpen, setCatDropdownOpen] = useState(false);
   const catRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, toSimp, toTrad } = useLang();
 
   const categories = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_CONCEPTS.map((c) => c.category)))],
@@ -30,14 +30,19 @@ export default function ConceptsPageClient() {
     let result = activeCategory === '全部' ? ZEN_CONCEPTS : ZEN_CONCEPTS.filter((c) => c.category === activeCategory);
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (c) =>
-          c.title.toLowerCase().includes(kw) ||
-          c.summary.toLowerCase().includes(kw)
+        (c) => {
+          const tLower = c.title.toLowerCase();
+          const sLower = c.summary.toLowerCase();
+          return kwList.some(k => tLower.includes(k) || sLower.includes(k));
+        }
       );
     }
     return result;
-  }, [activeCategory, keyword]);
+  }, [activeCategory, keyword, toSimp, toTrad]);
 
   const visibleConcepts = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;

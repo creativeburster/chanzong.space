@@ -10,6 +10,7 @@ import manifest from '@/manifest.json';
 import { BookOpen, ChevronRight, Search, ChevronDown, Library, ArrowRight } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { useLang } from '@/context/LangContext';
 
 export default function BooksClient() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export default function BooksClient() {
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
   const catRef = useRef<HTMLDivElement>(null);
   const bookRef = useRef<HTMLDivElement>(null);
+  const { t, toSimp, toTrad } = useLang();
 
   const categories = useMemo(
     () => ['全部', ...Array.from(new Set(manifest.map((item) => item.category)))],
@@ -31,15 +33,20 @@ export default function BooksClient() {
     let result = activeCategory === '全部' ? manifest : manifest.filter((item) => item.category === activeCategory);
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (item) =>
-          item.title.toLowerCase().includes(kw) ||
-          item.author.toLowerCase().includes(kw) ||
-          item.summary.toLowerCase().includes(kw)
+        (item) => {
+          const tLower = item.title.toLowerCase();
+          const aLower = item.author.toLowerCase();
+          const sLower = item.summary.toLowerCase();
+          return kwList.some(k => tLower.includes(k) || aLower.includes(k) || sLower.includes(k));
+        }
       );
     }
     return result;
-  }, [activeCategory, keyword]);
+  }, [activeCategory, keyword, toSimp, toTrad]);
 
   const visibleBooks = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;
@@ -176,7 +183,7 @@ export default function BooksClient() {
           {/* Result count */}
           {(keyword.trim() || activeCategory !== '全部') && (
             <p className="text-[13px] text-slate-500 mb-4">
-              共找到 {filtered.length} 部经典
+              {t('共找到')} {filtered.length} {t('部经典')}
             </p>
           )}
 
@@ -191,29 +198,29 @@ export default function BooksClient() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200/60">
-                      {item.category}
+                      {t(item.category)}
                     </span>
                     <span className="text-xs text-slate-500 font-mono">#{item.idx}</span>
                   </div>
 
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="text-xl font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
-                      {item.title}
+                      {t(item.title)}
                     </h3>
                     {(item as any).translation_note && (
                       <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300/60 whitespace-nowrap shrink-0">
-                        精选译
+                        {t('精选译')}
                       </span>
                     )}
                   </div>
 
                   <p className="text-[13px] text-slate-500 mb-3">
-                    作者：{item.author}
+                    {t('作者')}：{t(item.author)}
                   </p>
                 </div>
 
                 <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
-                  <span>研读全文</span>
+                  <span>{t('研读全文')}</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -224,12 +231,12 @@ export default function BooksClient() {
           {filtered.length === 0 && (
             <div className="text-center py-16">
               <BookOpen className="w-10 h-10 text-slate-300 mx-auto mb-4" />
-              <p className="text-slate-500 text-[15px]">未找到匹配的经典</p>
+              <p className="text-slate-500 text-[15px]">{t('未找到匹配的经典')}</p>
               <button
                 onClick={() => { setKeyword(''); setActiveCategory('全部'); }}
                 className="mt-3 text-amber-800 text-[13px] font-semibold hover:underline"
               >
-                清除筛选条件
+                {t('清除筛选条件')}
               </button>
             </div>
           )}
@@ -247,14 +254,14 @@ export default function BooksClient() {
                 onClick={() => setDisplayCount((c) => c + 12)}
                 className="px-6 py-3 rounded-xl bg-amber-700 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
               >
-                加载更多 ({displayCount} / {filtered.length})
+                {t('加载更多')} ({displayCount} / {filtered.length})
               </button>
             </div>
           )}
 
           {!hasMore && filtered.length > 12 && (
             <p className="mt-6 text-center text-xs text-slate-500">
-              已显示全部 {filtered.length} 部经典
+              {t('已显示全部')} {filtered.length} {t('部经典')}
             </p>
           )}
         </main>

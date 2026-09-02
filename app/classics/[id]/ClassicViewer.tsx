@@ -127,7 +127,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [faqsExpanded, setFaqsExpanded] = useState(false);
   const [savedProgress, setSavedProgress] = useState<number | null>(null);
   const [showProgressBanner, setShowProgressBanner] = useState(false);
-  const { t } = useLang();
+  const { t, tHtml, isTraditional } = useLang();
 
   // 1. 初始化读取用户偏好主题与阅读进度
   useEffect(() => {
@@ -229,6 +229,11 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     { id: 'sec-history', title: '📜 传法背景' },
     { id: 'sec-network', title: '🔗 知识网络与延伸' },
   ];
+
+  const renderedHtml = useMemo(() => {
+    const chunk = getSafeHtmlChunk(htmlContent, displayRatio);
+    return isTraditional ? tHtml(chunk) : chunk;
+  }, [htmlContent, displayRatio, isTraditional, tHtml]);
 
   return (
     <div className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
@@ -349,7 +354,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
                 fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
               }`}
-              dangerouslySetInnerHTML={{ __html: getSafeHtmlChunk(htmlContent, displayRatio) }}
+              dangerouslySetInnerHTML={{ __html: renderedHtml }}
             />
 
             {displayRatio < 1 && (

@@ -57,10 +57,11 @@ export const TopHeader: React.FC = () => {
       {/* Traditional / Simplified Toggle Button */}
       <button
         onClick={toggleLang}
-        className="mr-1 flex items-center space-x-1.5 px-2 py-1.5 text-amber-300 text-[13px] font-semibold hover:text-amber-100 transition-all ml-auto md:ml-3"
+        title={isTraditional ? '切换为简体中文' : '切換為繁體中文'}
+        className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-[13px] font-semibold hover:bg-amber-500/20 hover:text-amber-100 transition-all ml-auto md:ml-3 shadow-sm"
       >
-        <Globe className="w-4 h-4 text-amber-400" />
-        <span>{isTraditional ? '简' : '繁'}</span>
+        <Globe className="w-3.5 h-3.5 text-amber-400" />
+        <span className="font-serif-zen">{isTraditional ? '簡體' : '繁體'}</span>
       </button>
     </header>
   );

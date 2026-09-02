@@ -28,7 +28,7 @@ export default function FAQPageClient() {
   const [displayCount, setDisplayCount] = useState(10);
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
   const bookRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, toSimp, toTrad } = useLang();
 
   const allFaqs: FAQEntry[] = useMemo(() => ZEN_FAQS.map(f => ({ ...f })), []);
 
@@ -60,12 +60,19 @@ export default function FAQPageClient() {
     }
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (f) => f.question.toLowerCase().includes(kw) || f.answer.toLowerCase().includes(kw)
+        (f) => {
+          const qLower = f.question.toLowerCase();
+          const aLower = f.answer.toLowerCase();
+          return kwList.some(k => qLower.includes(k) || aLower.includes(k));
+        }
       );
     }
     return result;
-  }, [allFaqs, selectedBook, keyword]);
+  }, [allFaqs, selectedBook, keyword, toSimp, toTrad]);
 
   const visibleFaqs = filteredFaqs.slice(0, displayCount);
   const hasMore = displayCount < filteredFaqs.length;

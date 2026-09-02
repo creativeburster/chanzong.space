@@ -19,7 +19,7 @@ export default function PersonsPageClient() {
   const [activeEra, setActiveEra] = useState('全部');
   const [eraDropdownOpen, setEraDropdownOpen] = useState(false);
   const eraRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, toSimp, toTrad } = useLang();
 
   const eras = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_PERSONS.map((p) => p.era)))],
@@ -30,16 +30,21 @@ export default function PersonsPageClient() {
     let result = activeEra === '全部' ? ZEN_PERSONS : ZEN_PERSONS.filter((p) => p.era === activeEra);
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (p) =>
-          p.name.toLowerCase().includes(kw) ||
-          p.title.toLowerCase().includes(kw) ||
-          p.teachings.toLowerCase().includes(kw) ||
-          p.era.toLowerCase().includes(kw)
+        (p) => {
+          const nLower = p.name.toLowerCase();
+          const tLower = p.title.toLowerCase();
+          const teLower = p.teachings.toLowerCase();
+          const eLower = p.era.toLowerCase();
+          return kwList.some(k => nLower.includes(k) || tLower.includes(k) || teLower.includes(k) || eLower.includes(k));
+        }
       );
     }
     return result;
-  }, [activeEra, keyword]);
+  }, [activeEra, keyword, toSimp, toTrad]);
 
   const visiblePersons = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;

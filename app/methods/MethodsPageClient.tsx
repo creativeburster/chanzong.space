@@ -19,7 +19,7 @@ export default function MethodsPageClient() {
   const [activeRef, setActiveRef] = useState('全部');
   const [refDropdownOpen, setRefDropdownOpen] = useState(false);
   const refRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, toSimp, toTrad } = useLang();
 
   const classicRefs = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_METHODS.map((m) => m.classicRef)))],
@@ -30,15 +30,19 @@ export default function MethodsPageClient() {
     let result = activeRef === '全部' ? ZEN_METHODS : ZEN_METHODS.filter((m) => m.classicRef === activeRef);
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (m) =>
-          m.title.toLowerCase().includes(kw) ||
-          m.summary.toLowerCase().includes(kw) ||
-          m.steps.some((s) => s.toLowerCase().includes(kw))
+        (m) => {
+          const tLower = m.title.toLowerCase();
+          const sLower = m.summary.toLowerCase();
+          return kwList.some(k => tLower.includes(k) || sLower.includes(k) || m.steps.some((s) => s.toLowerCase().includes(k)));
+        }
       );
     }
     return result;
-  }, [keyword, activeRef]);
+  }, [keyword, activeRef, toSimp, toTrad]);
 
   const visibleMethods = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;

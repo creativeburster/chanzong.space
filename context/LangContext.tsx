@@ -1,102 +1,142 @@
 'use client';
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
+import * as OpenCC from 'opencc-js';
 
-// Common Simplified to Traditional Mapping Dictionary
-const SIMP_TO_TRAD_MAP: Record<string, string> = {
-  禅: '禪',
-  宗: '宗',
-  正: '正',
-  法: '法',
-  心: '心',
-  传: '傳',
-  知: '知',
-  识: '識',
-  库: '庫',
-  典: '典',
-  籍: '籍',
-  书: '書',
-  观: '觀',
-  觉: '覺',
-  性: '性',
-  经: '經',
-  问: '問',
-  答: '答',
-  修: '修',
-  行: '行',
-  祖: '祖',
-  师: '師',
-  体: '體',
-  用: '用',
-  门: '門',
-  显: '顯',
-  无: '無',
-  染: '染',
-  自: '自',
-  解: '解',
-  脱: '脫',
-  图: '圖',
-  谱: '譜',
-  佛: '佛',
-  说: '說',
-  处: '處',
-  宝: '寶',
-  录: '錄',
-  万: '萬',
-  应: '應',
-  对: '對',
-  随: '隨',
-  缘: '緣',
-  报: '報',
-  冤: '冤',
-  极: '極',
-  速: '速',
-  搜: '搜',
-  索: '索',
-  点: '點',
-  击: '擊',
-  关: '關',
-  系: '系',
-  网: '網',
-  络: '絡',
-};
+// 初始化 OpenCC 高性能双向转换器
+// 'twp': 包含台湾/传统繁体常用词汇习惯（如 打印->列印、软件->軟體、网络->網路、信息->資訊、默认->預設 等）
+const s2tConverter = OpenCC.Converter({ from: 'cn', to: 'twp' });
+const t2sConverter = OpenCC.Converter({ from: 'twp', to: 'cn' });
+
+// 内存 LRU 缓存，极大加速高频短文本（UI 按钮、标题、标签）转换
+const tradCache = new Map<string, string>();
+const simpCache = new Map<string, string>();
+const MAX_CACHE_SIZE = 5000;
 
 export function convertToTrad(text: string): string {
-  let result = '';
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i];
-    result += SIMP_TO_TRAD_MAP[char] || char;
+  if (!text) return text;
+  if (tradCache.has(text)) {
+    return tradCache.get(text)!;
   }
+  const result = s2tConverter(text);
+  if (tradCache.size > MAX_CACHE_SIZE) {
+    tradCache.clear();
+  }
+  tradCache.set(text, result);
   return result;
+}
+
+export function convertToSimp(text: string): string {
+  if (!text) return text;
+  if (simpCache.has(text)) {
+    return simpCache.get(text)!;
+  }
+  const result = t2sConverter(text);
+  if (simpCache.size > MAX_CACHE_SIZE) {
+    simpCache.clear();
+  }
+  simpCache.set(text, result);
+  return result;
+}
+
+/**
+ * 安全 HTML 繁简转换：
+ * 仅转换 HTML 标签外侧的文本节点，完整保留所有标签名、class 类名、id、style 与 href 属性！
+ */
+export function convertHtmlToTrad(html: string): string {
+  if (!html) return html;
+  return html.replace(/(<[^>]+>)|([^<]+)/g, (_match, tag, text) => {
+    if (tag) return tag;
+    return convertToTrad(text);
+  });
 }
 
 interface LangContextType {
   isTraditional: boolean;
   toggleLang: () => void;
+  setLang: (trad: boolean) => void;
   t: (text: string) => string;
+  tHtml: (html: string) => string;
+  toTrad: (text: string) => string;
+  toSimp: (text: string) => string;
 }
 
 const LangContext = createContext<LangContextType>({
   isTraditional: false,
   toggleLang: () => {},
+  setLang: () => {},
   t: (text: string) => text,
+  tHtml: (html: string) => html,
+  toTrad: (text: string) => text,
+  toSimp: (text: string) => text,
 });
 
 export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isTraditional, setIsTraditional] = useState(false);
 
-  const toggleLang = () => setIsTraditional((prev) => !prev);
+  // 初始化从 localStorage 读取用户繁简偏好
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('zen_is_traditional');
+      if (saved !== null) {
+        const val = saved === 'true';
+        setIsTraditional(val);
+        document.documentElement.lang = val ? 'zh-Hant' : 'zh-Hans';
+      }
+    } catch {
+      // 兼容非浏览器环境
+    }
+  }, []);
 
-  const t = (text: string) => {
-    if (!isTraditional) return text;
+  const toggleLang = useCallback(() => {
+    setIsTraditional((prev) => {
+      const next = !prev;
+      try {
+        localStorage.setItem('zen_is_traditional', String(next));
+        document.documentElement.lang = next ? 'zh-Hant' : 'zh-Hans';
+      } catch {
+        // ignore
+      }
+      return next;
+    });
+  }, []);
+
+  const setLang = useCallback((trad: boolean) => {
+    setIsTraditional(trad);
+    try {
+      localStorage.setItem('zen_is_traditional', String(trad));
+      document.documentElement.lang = trad ? 'zh-Hant' : 'zh-Hans';
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const t = useCallback((text: string) => {
+    if (!isTraditional || !text) return text;
     return convertToTrad(text);
-  };
+  }, [isTraditional]);
+
+  const tHtml = useCallback((html: string) => {
+    if (!isTraditional || !html) return html;
+    return convertHtmlToTrad(html);
+  }, [isTraditional]);
+
+  const value = useMemo(() => ({
+    isTraditional,
+    toggleLang,
+    setLang,
+    t,
+    tHtml,
+    toTrad: convertToTrad,
+    toSimp: convertToSimp,
+  }), [isTraditional, toggleLang, setLang, t, tHtml]);
 
   return (
-    <LangContext.Provider value={{ isTraditional, toggleLang, t }}>
+    <LangContext.Provider value={value}>
       {children}
     </LangContext.Provider>
   );
 };
 
 export const useLang = () => useContext(LangContext);
+

@@ -19,7 +19,7 @@ export default function KoansPageClient() {
   const [activeMaster, setActiveMaster] = useState('全部');
   const [masterDropdownOpen, setMasterDropdownOpen] = useState(false);
   const masterRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, toSimp, toTrad } = useLang();
 
   const masters = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_KOANS.map((k) => k.master)))],
@@ -30,16 +30,21 @@ export default function KoansPageClient() {
     let result = activeMaster === '全部' ? ZEN_KOANS : ZEN_KOANS.filter((k) => k.master === activeMaster);
     if (keyword.trim()) {
       const kw = keyword.trim().toLowerCase();
+      const kwSimp = toSimp(kw);
+      const kwTrad = toTrad(kw);
+      const kwList = Array.from(new Set([kw, kwSimp, kwTrad]));
       result = result.filter(
-        (k) =>
-          k.question.toLowerCase().includes(kw) ||
-          k.answer.toLowerCase().includes(kw) ||
-          k.master.toLowerCase().includes(kw) ||
-          k.source.toLowerCase().includes(kw)
+        (k) => {
+          const qLower = k.question.toLowerCase();
+          const aLower = k.answer.toLowerCase();
+          const mLower = k.master.toLowerCase();
+          const sLower = k.source.toLowerCase();
+          return kwList.some(key => qLower.includes(key) || aLower.includes(key) || mLower.includes(key) || sLower.includes(key));
+        }
       );
     }
     return result;
-  }, [activeMaster, keyword]);
+  }, [activeMaster, keyword, toSimp, toTrad]);
 
   const visibleKoans = filtered.slice(0, displayCount);
   const hasMore = displayCount < filtered.length;

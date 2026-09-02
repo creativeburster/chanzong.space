@@ -67,14 +67,18 @@ function escapeRegExp(string: string) {
 }
 
 const HighlightText: React.FC<{ text: string; query: string }> = ({ text, query }) => {
-  if (!query.trim()) return <>{text}</>;
+  const { toSimp, toTrad } = useLang();
+  if (!query.trim() || !text) return <>{text}</>;
   const trimmed = query.trim();
-  const regex = new RegExp(`(${escapeRegExp(trimmed)})`, 'gi');
+  const qSimp = toSimp(trimmed);
+  const qTrad = toTrad(trimmed);
+  const variants = Array.from(new Set([trimmed, qSimp, qTrad])).filter(Boolean);
+  const regex = new RegExp(`(${variants.map(escapeRegExp).join('|')})`, 'gi');
   const parts = text.split(regex);
   return (
     <>
       {parts.map((part, i) =>
-        part.toLowerCase() === trimmed.toLowerCase() ? (
+        variants.some(v => v.toLowerCase() === part.toLowerCase()) ? (
           <mark key={i} className="bg-amber-200/90 text-amber-950 font-bold rounded px-0.5">
             {part}
           </mark>
@@ -94,8 +98,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   const [query, setQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<SearchCategory>('all');
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const { t, toSimp, toTrad } = useLang();
   const router = useRouter();
-  const { t } = useLang();
   const resultsContainerRef = useRef<HTMLDivElement>(null);
 
   // 1. 全局快捷键与键盘事件监听
@@ -145,7 +149,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         type: 'person',
         title: p.name,
         subtitle: `${p.title} · ${p.era}`,
-        snippet: p.lifeStory?.slice(0, 100) || p.teachings?.slice(0, 100),
+        snippet: p.lifeStory?.slice(0, 100),
         href: `/persons/${p.id}`,
         score: 0,
       });
@@ -170,8 +174,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         id: m.id,
         type: 'method',
         title: m.title,
-        subtitle: '禅宗修持法门',
-        snippet: m.summary?.slice(0, 100),
+        subtitle: m.summary?.slice(0, 50),
+        snippet: m.steps ? m.steps.join(' · ').slice(0, 100) : '',
         href: `/methods/${m.id}`,
         score: 0,
       });
@@ -206,7 +210,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     return list;
   }, [items]);
 
-  // 3. 执行检索与打分排序
+  // 3. 执行检索与打分排序（双向繁简智能匹配）
   const filteredResults = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) {
@@ -214,6 +218,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         .filter((item) => activeCategory === 'all' || item.type === activeCategory)
         .slice(0, 20);
     }
+
+    const qSimp = toSimp(q).toLowerCase();
+    const qTrad = toTrad(q).toLowerCase();
 
     const scored = allSearchData
       .filter((item) => activeCategory === 'all' || item.type === activeCategory)
@@ -223,12 +230,17 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         const subLower = item.subtitle.toLowerCase();
         const snipLower = (item.snippet || '').toLowerCase();
 
-        if (titleLower === q) score += 100;
-        else if (titleLower.startsWith(q)) score += 50;
-        else if (titleLower.includes(q)) score += 30;
+        // 无论是原 query、简体 query 还是繁体 query，只要命中均加分
+        const queries = Array.from(new Set([q, qSimp, qTrad]));
 
-        if (subLower.includes(q)) score += 15;
-        if (snipLower.includes(q)) score += 5;
+        for (const qKey of queries) {
+          if (titleLower === qKey) score += 100;
+          else if (titleLower.startsWith(qKey)) score += 50;
+          else if (titleLower.includes(qKey)) score += 30;
+
+          if (subLower.includes(qKey)) score += 15;
+          if (snipLower.includes(qKey)) score += 5;
+        }
 
         return { ...item, score };
       })
@@ -236,7 +248,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
       .sort((a, b) => b.score - a.score);
 
     return scored.slice(0, 40);
-  }, [query, activeCategory, allSearchData]);
+  }, [query, activeCategory, allSearchData, toSimp, toTrad]);
 
   // 4. 键盘上下切换与回车跳转
   const handleItemSelect = (href: string) => {
@@ -361,18 +373,18 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     <span
                       className={`inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-lg border shrink-0 mt-0.5 ${cfg.color}`}
                     >
-                      {cfg.label}
+                      {t(cfg.label)}
                     </span>
                     <div className="min-w-0 flex-1">
                       <div className="text-sm sm:text-base font-bold font-serif-zen text-zinc-900 group-hover:text-amber-900 transition-colors leading-snug">
-                        <HighlightText text={item.title} query={query} />
+                        <HighlightText text={t(item.title)} query={query} />
                       </div>
                       <div className="text-xs text-zinc-500 font-medium mt-0.5">
-                        <HighlightText text={item.subtitle} query={query} />
+                        <HighlightText text={t(item.subtitle)} query={query} />
                       </div>
                       {item.snippet && (
                         <div className="text-xs text-zinc-600/80 mt-1 line-clamp-1 leading-relaxed">
-                          <HighlightText text={item.snippet} query={query} />
+                          <HighlightText text={t(item.snippet)} query={query} />
                         </div>
                       )}
                     </div>
