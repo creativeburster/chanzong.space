@@ -11,6 +11,9 @@ import {
   PenTool,
   CloudRain,
   Flame,
+  Eraser,
+  Eye,
+  Calendar,
 } from 'lucide-react';
 import { DailyKoanCard } from '@/components/practice/DailyKoanCard';
 import { DigitalWoodenFish } from '@/components/practice/DigitalWoodenFish';
@@ -20,12 +23,28 @@ import { BreathPacer } from '@/components/practice/BreathPacer';
 import { SingingBowl } from '@/components/practice/SingingBowl';
 import { SutraCopying } from '@/components/practice/SutraCopying';
 import { ZenSoundscapes } from '@/components/practice/ZenSoundscapes';
+import { ZenSandGarden } from '@/components/practice/ZenSandGarden';
+import { HuaTouInquiry } from '@/components/practice/HuaTouInquiry';
+import { LetGoAffliction } from '@/components/practice/LetGoAffliction';
+import { ZenPracticeLog } from '@/components/practice/ZenPracticeLog';
 import { useLang } from '@/context/LangContext';
 
 export default function PracticeClient() {
   const { t } = useLang();
   const [activeTab, setActiveTab] = useState<
-    'all' | 'koan' | 'muyu' | 'mala' | 'meditation' | 'breath' | 'bowl' | 'sutra' | 'soundscape'
+    | 'all'
+    | 'koan'
+    | 'muyu'
+    | 'mala'
+    | 'meditation'
+    | 'breath'
+    | 'bowl'
+    | 'sutra'
+    | 'sand'
+    | 'huatou'
+    | 'letgo'
+    | 'log'
+    | 'soundscape'
   >('all');
 
   const tabs = [
@@ -33,10 +52,14 @@ export default function PracticeClient() {
     { id: 'koan', label: '每日机锋' },
     { id: 'muyu', label: '电子木鱼' },
     { id: 'mala', label: '菩提念珠' },
-    { id: 'meditation', label: '坐禅入定' },
-    { id: 'breath', label: '呼吸调息' },
     { id: 'bowl', label: '颂钵音浴' },
+    { id: 'meditation', label: '坐禅入定' },
+    { id: 'breath', label: '调息律动' },
+    { id: 'huatou', label: '参看话头' },
+    { id: 'letgo', label: '万缘放下' },
+    { id: 'sand', label: '枯山水沙盘' },
     { id: 'sutra', label: '指尖抄经' },
+    { id: 'log', label: '修持印谱' },
     { id: 'soundscape', label: '古刹天籁' },
   ];
 
@@ -48,13 +71,13 @@ export default function PracticeClient() {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/70 text-amber-900 text-xs font-bold shadow-xs">
             <Compass className="w-4 h-4 text-amber-700" />
-            <span>{t('直指人心 · 行住坐卧皆是禅')}</span>
+            <span>{t('直指人心 · 十二大数字禅修法宝')}</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold font-serif-zen text-slate-900 tracking-wide">
             {t('禅修静心工坊')}
           </h1>
           <p className="text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            {t('狂心顿歇，歇即菩提。集结八大数字禅修法宝：机锋灵签、仿真木鱼、菩提念珠、坐禅入定、六妙门调息、青铜颂钵、指尖抄经与古刹天籁，随时随地安住清净自性。')}
+            {t('狂心顿歇，歇即菩提。集结机锋灵签、仿真木鱼、菩提念珠、青铜颂钵、坐禅入定、六妙门调息、参看话头、烦恼断舍离、枯山水耙沙、指尖抄经、修持印谱与古刹天籁。')}
           </p>
 
           {/* 选项卡导航 */}
@@ -99,7 +122,22 @@ export default function PracticeClient() {
             )}
           </div>
 
-          {/* 3. 坐禅入定与呼吸调息 */}
+          {/* 3. 颂钵音浴与看话头疑情室 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {(activeTab === 'all' || activeTab === 'bowl') && (
+              <section className="space-y-4">
+                <SingingBowl />
+              </section>
+            )}
+
+            {(activeTab === 'all' || activeTab === 'huatou') && (
+              <section className="space-y-4">
+                <HuaTouInquiry />
+              </section>
+            )}
+          </div>
+
+          {/* 4. 坐禅入定与呼吸调息 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {(activeTab === 'all' || activeTab === 'meditation') && (
               <section className="space-y-4">
@@ -114,25 +152,40 @@ export default function PracticeClient() {
             )}
           </div>
 
-          {/* 4. 颂钵音浴与古刹天籁 */}
+          {/* 5. 枯山水沙盘与万缘放下化烬池 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {(activeTab === 'all' || activeTab === 'bowl') && (
+            {(activeTab === 'all' || activeTab === 'sand') && (
               <section className="space-y-4">
-                <SingingBowl />
+                <ZenSandGarden />
               </section>
             )}
 
-            {(activeTab === 'all' || activeTab === 'soundscape') && (
+            {(activeTab === 'all' || activeTab === 'letgo') && (
               <section className="space-y-4">
-                <ZenSoundscapes />
+                <LetGoAffliction />
               </section>
             )}
           </div>
 
-          {/* 5. 指尖抄经阁 */}
-          {(activeTab === 'all' || activeTab === 'sutra') && (
+          {/* 6. 指尖抄经阁与修持印谱 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {(activeTab === 'all' || activeTab === 'sutra') && (
+              <section className="space-y-4">
+                <SutraCopying />
+              </section>
+            )}
+
+            {(activeTab === 'all' || activeTab === 'log') && (
+              <section className="space-y-4">
+                <ZenPracticeLog />
+              </section>
+            )}
+          </div>
+
+          {/* 7. 古刹天籁白噪音 */}
+          {(activeTab === 'all' || activeTab === 'soundscape') && (
             <section className="space-y-4">
-              <SutraCopying />
+              <ZenSoundscapes />
             </section>
           )}
         </div>
