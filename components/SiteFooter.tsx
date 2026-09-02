@@ -16,7 +16,11 @@ export const SiteFooter = () => {
           {t('站点地图')}
         </Link>
         <span className="text-slate-600">|</span>
-        <Link prefetch={false} href={getHref('/practice')} className="text-amber-400 hover:text-amber-300 font-semibold transition-colors">{t('禅修工坊')}</Link>\n        <span className="text-slate-600">|</span>\n        <Link prefetch={false} href={getHref('/about')} className="text-slate-400 hover:text-amber-400 transition-colors">
+        <Link prefetch={false} href={getHref('/practice')} className="text-amber-400 hover:text-amber-300 font-semibold transition-colors">
+          {t('禅修工坊')}
+        </Link>
+        <span className="text-slate-600">|</span>
+        <Link prefetch={false} href={getHref('/about')} className="text-slate-400 hover:text-amber-400 transition-colors">
           {t('关于本站')}
         </Link>
       </div>

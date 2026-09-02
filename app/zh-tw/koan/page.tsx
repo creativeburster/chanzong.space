@@ -3,7 +3,7 @@ import KoansPageClient from '@/app/koan/KoansPageClient';
 import { STATS } from '@/lib/stats';
 
 export const metadata: Metadata = {
-  title: '禪宗公案',
+  title: "禪門公案機鋒 · 603則破關參究 | 禪宗知識庫",
   description: `禪宗${STATS.koans}則公案全集——趙州狗子、南泉斬貓、百丈野狐、德山棒臨濟喝等，古德機鋒對決與祖師開悟因緣，附出處與相關經典。`,
   alternates: {
     canonical: '/zh-tw/koan',

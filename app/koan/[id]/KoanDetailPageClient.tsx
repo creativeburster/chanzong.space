@@ -38,7 +38,7 @@ export default function KoanDetailPageClient({ params }: PageProps) {
         <TopHeader />
 
         <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
-          <Breadcrumb items={[{ label: '公案', href: '/koan' }, { label: qa.question }]} />
+          <Breadcrumb items={[{ label: t('公案机锋'), href: '/koan' }, { label: qa.question }]} />
 
           {/* 1. 公案概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">

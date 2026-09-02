@@ -4,7 +4,7 @@ import { STATS } from '@/lib/stats';
 import { ZEN_FAQS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
-  title: '问答',
+  title: "禅宗解惑问答 · 2793则深层疑难答疑 | 禅宗知识库",
   description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析、修证疑问，覆盖禅宗核心议题与常见疑惑。`,
   alternates: {
     canonical: '/faq',

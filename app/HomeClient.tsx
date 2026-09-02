@@ -206,10 +206,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Compass className="w-4 h-4 text-sky-600" />
-                <span>{t('修持法门精选')}</span>
+                <span>{t('修行法门精选')}</span>
               </h2>
               <Link prefetch={false} href={getHref('/methods')} className="text-xs text-amber-800 font-bold hover:underline">
-                {t('查看全部')} {STATS.methods} {t('法门')} →
+                {t('查看全部')} {STATS.methods} {t('种法门')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -236,10 +236,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <MessageSquare className="w-4 h-4 text-rose-600" />
-                <span>{t('公案精选')}</span>
+                <span>{t('公案机锋精选')}</span>
               </h2>
               <Link prefetch={false} href={getHref('/koan')} className="text-xs text-amber-800 font-bold hover:underline">
-                {t('查看全部')} {STATS.koans} {t('则公案')} →
+                {t('查看全部')} {STATS.koans} {t('则公案机锋')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

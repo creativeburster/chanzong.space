@@ -24,14 +24,14 @@ const CollapsibleCard: React.FC<{
 }> = ({ icon, title, count, countLabel, colorClass, defaultOpen = false, children }) => {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="mt-6 bg-white rounded-3xl border border-zinc-200 shadow-md overflow-hidden">
+    <div className="mt-6 bg-white dark:bg-slate-900 rounded-3xl border border-amber-900/10 dark:border-slate-800 shadow-md overflow-hidden transition-colors">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between px-6 sm:px-10 py-5 hover:bg-zinc-50/60 transition-colors"
       >
         <div className="flex items-center space-x-2.5">
           {icon}
-          <span className="text-xl font-bold font-serif-zen text-zinc-900">{title}</span>
+          <span className="text-xl font-bold font-serif-zen text-slate-900 dark:text-slate-100">{title}</span>
           {count !== undefined && (
             <span className="text-xs font-semibold text-zinc-400">
               共 {count} {countLabel || '条'}
@@ -546,11 +546,11 @@ export const AudioCard: React.FC<{ rawContent: string }> = ({ rawContent }) => {
   };
 
   return (
-    <div className="mt-6 bg-white rounded-3xl border border-zinc-200 shadow-md overflow-hidden">
+    <div className="mt-6 bg-white dark:bg-slate-900 rounded-3xl border border-amber-900/10 dark:border-slate-800 shadow-md overflow-hidden transition-colors">
       <div className="px-6 sm:px-10 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center space-x-2.5">
           <Volume2 className="w-5 h-5 text-rose-700" />
-          <span className="text-xl font-bold font-serif-zen text-zinc-900">{t('语音朗读')}</span>
+          <span className="text-xl font-bold font-serif-zen text-slate-900 dark:text-slate-100">{t('语音朗读')}</span>
           <span className="text-xs text-zinc-400">{t('免费 · 浏览器内置语音')}</span>
         </div>
         <div className="flex items-center space-x-2.5">

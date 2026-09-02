@@ -40,7 +40,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
         <TopHeader />
 
         <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
-          <Breadcrumb items={[{ label: '法门', href: '/methods' }, { label: method.title }]} />
+          <Breadcrumb items={[{ label: t('修行法门'), href: '/methods' }, { label: method.title }]} />
 
           {/* 1. 法门概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">

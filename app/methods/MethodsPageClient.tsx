@@ -68,7 +68,7 @@ export default function MethodsPageClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
-          <Breadcrumb items={[{ label: '法门' }]} />
+          <Breadcrumb items={[{ label: t('修行法门') }]} />
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-8">
@@ -77,7 +77,7 @@ export default function MethodsPageClient() {
             </div>
             <div>
               <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
-                {t('法门')}
+                {t('禅宗修行法门')}
               </h1>
               <p className="text-[13px] text-slate-500 mt-0.5">
                 共 {ZEN_METHODS.length} 种 · {t('参究公案、看话头、默照禅、二入四行等实修法门')}

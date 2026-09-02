@@ -3,7 +3,7 @@ import MethodsPageClient from '@/app/methods/MethodsPageClient';
 import { STATS } from '@/lib/stats';
 
 export const metadata: Metadata = {
-  title: '修持法門',
+  title: "禪宗修行法門 · 歷代修持宗綱 | 禪宗知識庫",
   description: `禪宗${STATS.methods}種修持法門——念佛禪、棒喝、機鋒、看話頭、默照禪、坐禪儀等，禪門實修方便與用功方法詳解。`,
   alternates: {
     canonical: '/zh-tw/methods',

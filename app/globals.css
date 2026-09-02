@@ -121,3 +121,94 @@ body {
   box-shadow: 0 10px 25px -5px rgba(161, 98, 7, 0.08);
   transform: translateY(-2px);
 }
+
+/* =========================================================
+   禅宗知识库 · 宣纸 / 竹青 / 暗夜 三大沉浸阅读美学穿透
+   ========================================================= */
+
+/* 1. 竹青主题 (Bamboo Theme) - 温润翠微古籍青色 */
+[data-theme="bamboo"] {
+  background-color: #DFEAE0 !important;
+  color: #122E16 !important;
+}
+[data-theme="bamboo"] article,
+[data-theme="bamboo"] .bg-white,
+[data-theme="bamboo"] .bg-slate-900 {
+  background-color: #EBF3EC !important;
+  border-color: #BDD2BD !important;
+  color: #122E16 !important;
+}
+[data-theme="bamboo"] p,
+[data-theme="bamboo"] li,
+[data-theme="bamboo"] blockquote,
+[data-theme="bamboo"] span {
+  color: #122E16 !important;
+}
+[data-theme="bamboo"] h1,
+[data-theme="bamboo"] h2,
+[data-theme="bamboo"] h3,
+[data-theme="bamboo"] h4,
+[data-theme="bamboo"] strong {
+  color: #0B200E !important;
+}
+[data-theme="bamboo"] .text-slate-600,
+[data-theme="bamboo"] .text-slate-500,
+[data-theme="bamboo"] .text-zinc-500,
+[data-theme="bamboo"] .text-zinc-400 {
+  color: #3D6144 !important;
+}
+[data-theme="bamboo"] .bg-amber-50,
+[data-theme="bamboo"] .bg-amber-50\/60,
+[data-theme="bamboo"] .bg-zinc-50 {
+  background-color: #D3E2D4 !important;
+  border-color: #AFC5B0 !important;
+}
+
+/* 2. 暗夜主题 (Night Theme) - 沉浸玄空月白夜读 */
+[data-theme="night"] {
+  background-color: #090E17 !important;
+  color: #E2E8F0 !important;
+}
+[data-theme="night"] article,
+[data-theme="night"] .bg-white {
+  background-color: #0F172A !important;
+  border-color: #1E293B !important;
+  color: #E2E8F0 !important;
+}
+[data-theme="night"] p,
+[data-theme="night"] li,
+[data-theme="night"] blockquote,
+[data-theme="night"] span:not([class*="text-amber"]):not([class*="text-red"]) {
+  color: #CBD5E1 !important;
+}
+[data-theme="night"] h1,
+[data-theme="night"] h2,
+[data-theme="night"] h3,
+[data-theme="night"] h4,
+[data-theme="night"] strong {
+  color: #F8FAFC !important;
+}
+[data-theme="night"] .text-slate-900,
+[data-theme="night"] .text-zinc-900,
+[data-theme="night"] .text-zinc-800,
+[data-theme="night"] .text-slate-800 {
+  color: #F1F5F9 !important;
+}
+[data-theme="night"] .text-slate-600,
+[data-theme="night"] .text-slate-500,
+[data-theme="night"] .text-zinc-500,
+[data-theme="night"] .text-zinc-400 {
+  color: #94A3B8 !important;
+}
+[data-theme="night"] .bg-amber-50,
+[data-theme="night"] .bg-amber-50\/60,
+[data-theme="night"] .bg-zinc-50,
+[data-theme="night"] .bg-stone-50 {
+  background-color: #1E293B !important;
+  border-color: #334155 !important;
+}
+[data-theme="night"] .border-zinc-200,
+[data-theme="night"] .border-amber-200,
+[data-theme="night"] .border-slate-200 {
+  border-color: #1E293B !important;
+}

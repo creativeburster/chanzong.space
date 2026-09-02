@@ -57,6 +57,7 @@ const THEME_STYLES: Record<
     cardBorder: string;
     proseText: string;
     secondaryText: string;
+    accentColor: string;
   }
 > = {
   paper: {
@@ -64,33 +65,36 @@ const THEME_STYLES: Record<
     icon: Sun,
     pageBg: 'bg-[#FAF9F6]',
     bannerBg: 'bg-white',
-    bannerText: 'text-zinc-900',
+    bannerText: 'text-slate-900',
     cardBg: 'bg-white',
-    cardBorder: 'border-zinc-200',
-    proseText: 'text-zinc-800',
-    secondaryText: 'text-zinc-500',
+    cardBorder: 'border-amber-900/10',
+    proseText: 'text-stone-800',
+    secondaryText: 'text-stone-500',
+    accentColor: 'text-amber-800',
   },
   bamboo: {
     label: '竹青',
     icon: Leaf,
-    pageBg: 'bg-[#F2F6F0]',
-    bannerBg: 'bg-[#F9FCF7]',
-    bannerText: 'text-[#1E3020]',
-    cardBg: 'bg-[#FCFDFB]',
-    cardBorder: 'border-[#DEE7DB]',
-    proseText: 'text-[#2C3E2D]',
-    secondaryText: 'text-[#5C725E]',
+    pageBg: 'bg-[#DFEAE0]',
+    bannerBg: 'bg-[#EBF3EC]',
+    bannerText: 'text-[#0E2512]',
+    cardBg: 'bg-[#EBF3EC]',
+    cardBorder: 'border-[#BDD2BD]',
+    proseText: 'text-[#122E16]',
+    secondaryText: 'text-[#3D6144]',
+    accentColor: 'text-[#1B4D22]',
   },
   night: {
     label: '暗夜',
     icon: Moon,
-    pageBg: 'bg-[#0B1329]',
-    bannerBg: 'bg-[#0F1A38]',
+    pageBg: 'bg-[#090E17]',
+    bannerBg: 'bg-[#0F172A]',
     bannerText: 'text-slate-100',
-    cardBg: 'bg-[#131F42]',
+    cardBg: 'bg-[#0F172A]',
     cardBorder: 'border-slate-800',
     proseText: 'text-slate-200',
     secondaryText: 'text-slate-400',
+    accentColor: 'text-amber-400',
   },
 };
 
@@ -237,7 +241,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   }, [htmlContent, displayRatio, isTraditional, tHtml]);
 
   return (
-    <div className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
+    <div data-theme={theme} className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
       <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
 
       <div className="flex-1 flex flex-col min-w-0">

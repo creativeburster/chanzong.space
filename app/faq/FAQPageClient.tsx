@@ -106,7 +106,7 @@ export default function FAQPageClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
-          <Breadcrumb items={[{ label: '问答' }]} />
+          <Breadcrumb items={[{ label: t('禅宗问答') }]} />
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-8">
@@ -115,7 +115,7 @@ export default function FAQPageClient() {
             </div>
             <div>
               <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
-                {t('问答')}
+                {t('禅宗解惑问答')}
               </h1>
               <p className="text-[13px] text-slate-500 mt-0.5">
                 共 {allFaqs.length} 条 · {t('围绕公案、经典与禅宗义理的常见疑问解答')}

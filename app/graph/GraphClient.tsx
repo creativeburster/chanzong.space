@@ -344,8 +344,8 @@ export default function GraphClient() {
           {/* 页面主标题区 */}
           <div className="border-b border-slate-200/80 pb-8">
             <div className="flex flex-wrap items-center gap-3 mb-2">
-              <span className="px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-bold tracking-wider uppercase">
-                D3 Interactive Knowledge Graph
+              <span className="px-3.5 py-1 bg-amber-100/90 text-amber-900 rounded-full text-xs font-bold tracking-wider border border-amber-300/60 shadow-xs font-serif-zen">
+                {t('全息交互知识网络')}
               </span>
               <span className="text-xs text-slate-500 font-serif-zen">
                 全站网状知识体系总览
