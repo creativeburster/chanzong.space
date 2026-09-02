@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import FAQPageClient from '@/app/faq/FAQPageClient';
 import { STATS } from '@/lib/stats';
 import { ZEN_FAQS } from '@/lib/taxonomy';
+import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: '問答',
@@ -23,6 +24,34 @@ export const metadata: Metadata = {
   },
 };
 
+function FAQPageJsonLd() {
+  const mainEntity = ZEN_FAQS.slice(0, 25).map(f => ({
+    '@type': 'Question',
+    name: convertToTrad(f.question),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: convertToTrad(f.answer),
+    },
+  }));
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: 'zh-TW',
+    mainEntity,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function TradFAQPage() {
-  return <FAQPageClient />;
+  return (
+    <>
+      <FAQPageJsonLd />
+      <FAQPageClient />
+    </>
+  );
 }
