@@ -437,7 +437,7 @@ export const AudioToolbarButton: React.FC<{ rawContent: string }> = ({ rawConten
     return (
       <button
         onClick={togglePlay}
-        className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-zinc-100 border border-zinc-200 text-[13px] font-semibold text-zinc-700 hover:border-rose-700 hover:text-rose-700 transition-all"
+        className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-amber-50/80 hover:bg-amber-100 border border-amber-300/60 text-[13px] font-bold text-amber-900 hover:text-amber-950 transition-all shadow-xs"
       >
         <Volume2 className="w-4 h-4" />
         <span>{t('朗读全文')}</span>

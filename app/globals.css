@@ -123,10 +123,24 @@ body {
 }
 
 /* =========================================================
-   禅宗知识库 · 宣纸 / 竹青 / 暗夜 三大沉浸阅读美学穿透
+   禅宗知识库 · 宣纸 / 竹青 / 暗夜 三大沉浸阅读美学穿透定义
    ========================================================= */
 
-/* 1. 竹青主题 (Bamboo Theme) - 温润翠微古籍青色 */
+/* 通用 Markdown prose a 链接美化 */
+.prose a {
+  color: #A16207;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.prose a:hover {
+  color: #D97706;
+}
+
+/* ---------------------------------------------------------
+   1. 竹青主题 (Bamboo Theme) - 温润翠微古籍青色
+   --------------------------------------------------------- */
 [data-theme="bamboo"] {
   background-color: #DFEAE0 !important;
   color: #122E16 !important;
@@ -138,18 +152,32 @@ body {
   border-color: #BDD2BD !important;
   color: #122E16 !important;
 }
-[data-theme="bamboo"] p,
-[data-theme="bamboo"] li,
-[data-theme="bamboo"] blockquote,
-[data-theme="bamboo"] span {
+[data-theme="bamboo"] .prose blockquote {
+  background-color: #D7E5D8 !important;
+  border-left-color: #2D6A4F !important;
   color: #122E16 !important;
 }
-[data-theme="bamboo"] h1,
-[data-theme="bamboo"] h2,
-[data-theme="bamboo"] h3,
-[data-theme="bamboo"] h4,
-[data-theme="bamboo"] strong {
-  color: #0B200E !important;
+[data-theme="bamboo"] .prose blockquote * {
+  color: #122E16 !important;
+}
+[data-theme="bamboo"] .prose p,
+[data-theme="bamboo"] .prose li,
+[data-theme="bamboo"] .prose span {
+  color: #122E16 !important;
+}
+[data-theme="bamboo"] .prose h1,
+[data-theme="bamboo"] .prose h2,
+[data-theme="bamboo"] .prose h3,
+[data-theme="bamboo"] .prose h4,
+[data-theme="bamboo"] .prose strong {
+  color: #081B0C !important;
+}
+[data-theme="bamboo"] .prose a {
+  color: #1B4D22 !important;
+  text-decoration-color: #2D6A4F !important;
+}
+[data-theme="bamboo"] .prose a:hover {
+  color: #0D2B13 !important;
 }
 [data-theme="bamboo"] .text-slate-600,
 [data-theme="bamboo"] .text-slate-500,
@@ -159,12 +187,24 @@ body {
 }
 [data-theme="bamboo"] .bg-amber-50,
 [data-theme="bamboo"] .bg-amber-50\/60,
-[data-theme="bamboo"] .bg-zinc-50 {
-  background-color: #D3E2D4 !important;
+[data-theme="bamboo"] .bg-zinc-50,
+[data-theme="bamboo"] .bg-zinc-100,
+[data-theme="bamboo"] .bg-orange-50,
+[data-theme="bamboo"] .bg-blue-50,
+[data-theme="bamboo"] .bg-rose-50,
+[data-theme="bamboo"] .bg-purple-50 {
+  background-color: #D7E5D8 !important;
   border-color: #AFC5B0 !important;
 }
+[data-theme="bamboo"] .border-zinc-200,
+[data-theme="bamboo"] .border-amber-200,
+[data-theme="bamboo"] .border-slate-200 {
+  border-color: #BDD2BD !important;
+}
 
-/* 2. 暗夜主题 (Night Theme) - 沉浸玄空月白夜读 */
+/* ---------------------------------------------------------
+   2. 暗夜主题 (Night Theme) - 沉浸玄空月白夜读
+   --------------------------------------------------------- */
 [data-theme="night"] {
   background-color: #090E17 !important;
   color: #E2E8F0 !important;
@@ -175,18 +215,34 @@ body {
   border-color: #1E293B !important;
   color: #E2E8F0 !important;
 }
-[data-theme="night"] p,
-[data-theme="night"] li,
-[data-theme="night"] blockquote,
-[data-theme="night"] span:not([class*="text-amber"]):not([class*="text-red"]) {
+[data-theme="night"] .prose blockquote {
+  background-color: #162238 !important;
+  border-left-color: #F59E0B !important;
+  border: 1px solid #1E293B !important;
+  border-left-width: 4px !important;
+  color: #E2E8F0 !important;
+}
+[data-theme="night"] .prose blockquote * {
+  color: #F1F5F9 !important;
+}
+[data-theme="night"] .prose p,
+[data-theme="night"] .prose li,
+[data-theme="night"] .prose span:not([class*="text-amber"]):not([class*="text-red"]):not([class*="text-emerald"]) {
   color: #CBD5E1 !important;
 }
-[data-theme="night"] h1,
-[data-theme="night"] h2,
-[data-theme="night"] h3,
-[data-theme="night"] h4,
-[data-theme="night"] strong {
+[data-theme="night"] .prose h1,
+[data-theme="night"] .prose h2,
+[data-theme="night"] .prose h3,
+[data-theme="night"] .prose h4,
+[data-theme="night"] .prose strong {
   color: #F8FAFC !important;
+}
+[data-theme="night"] .prose a {
+  color: #FBBF24 !important;
+  text-decoration-color: rgba(251, 191, 36, 0.4) !important;
+}
+[data-theme="night"] .prose a:hover {
+  color: #FDE68A !important;
 }
 [data-theme="night"] .text-slate-900,
 [data-theme="night"] .text-zinc-900,
@@ -200,15 +256,41 @@ body {
 [data-theme="night"] .text-zinc-400 {
   color: #94A3B8 !important;
 }
+/* 暗夜模式下的所有卡片与工具栏背景自适应 */
+[data-theme="night"] .bg-zinc-100,
 [data-theme="night"] .bg-amber-50,
 [data-theme="night"] .bg-amber-50\/60,
 [data-theme="night"] .bg-zinc-50,
-[data-theme="night"] .bg-stone-50 {
-  background-color: #1E293B !important;
-  border-color: #334155 !important;
+[data-theme="night"] .bg-stone-50,
+[data-theme="night"] .bg-orange-50,
+[data-theme="night"] .bg-orange-50\/60,
+[data-theme="night"] .bg-blue-50,
+[data-theme="night"] .bg-purple-50,
+[data-theme="night"] .bg-rose-50 {
+  background-color: #162238 !important;
+  border-color: #24344D !important;
+}
+[data-theme="night"] .text-amber-900,
+[data-theme="night"] .text-orange-900,
+[data-theme="night"] .text-blue-900,
+[data-theme="night"] .text-purple-900 {
+  color: #F1F5F9 !important;
+}
+[data-theme="night"] .text-amber-800,
+[data-theme="night"] .text-orange-800,
+[data-theme="night"] .text-blue-800,
+[data-theme="night"] .text-purple-800 {
+  color: #FCD34D !important;
+}
+[data-theme="night"] .text-amber-700,
+[data-theme="night"] .text-orange-700,
+[data-theme="night"] .text-blue-700,
+[data-theme="night"] .text-purple-700 {
+  color: #F59E0B !important;
 }
 [data-theme="night"] .border-zinc-200,
 [data-theme="night"] .border-amber-200,
-[data-theme="night"] .border-slate-200 {
+[data-theme="night"] .border-slate-200,
+[data-theme="night"] .border-orange-200 {
   border-color: #1E293B !important;
 }
