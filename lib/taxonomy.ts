@@ -13032,9 +13032,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南泉提刀，斩的哪里是猫？斩的是两堂僧人的分别执着、人我是非——猫儿本无归属，争端起于人心；若有一人于当下道得一句，即是于执着处转身，猫儿自然得救。可惜众人只在“猫属谁”的道理里打转，错过了南泉全提正令的时节。赵州脱履安头，是以颠倒示颠倒：你们本末倒置，向心外争猫，何如头顶草鞋、一切放下？此即“道得”——不落言诠，直下转身。后世禅者于此二老一杀一活处，须见取南泉的婆心与赵州的活句，莫作是非会，方不负此一则公案。",
     "master": "南泉普愿",
     "source": "无门关第十四则 · 景德传灯录",
-    "relatedConcepts": ["koan","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-2",
@@ -13044,9 +13053,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“无”字是禅门第一话头，妙处全在截断：佛性岂属有无？学人执“有”问，赵州以“无”答，一剑斩断其有无情见；若学人因此又执个“无”字，早被赵州瞒了。此“无”不是有无对待之无，是无你思维处、无你卜度处、无你开口处的“无”。大慧宗杲教人只看这个“无”字，不作虚无会，不作道理会，二六时中提撕不绝，疑情成片，忽然咬破，方知赵州舌头落地处。所谓“参禅须透祖师关，妙路要须穷绝处”，这一“无”字，正是祖师关。",
     "master": "赵州从谂",
     "source": "无门关第一则",
-    "relatedConcepts": ["koan","buddha-nature"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-3",
@@ -13056,9 +13074,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "棒喝之设，非为打人骂人，正为“直指”二字：学人于思维卜度处开口，禅师于其开口不得处施设，一棒一喝，如金刚王宝剑斩断命根，令其前后际断、能所双亡，于电光石火间瞥见本来面目。此即“以楔出楔，以毒攻毒”——言语道断，心行处灭，正令全提，不留余地。然须是真实证悟的宗师方具此眼目，否则乱施棒喝，尽是狐魅野干；学人若以挨棒为荣、学喝为奇，又是偷心不死。会得棒喝意，方知释迦老子与黄檗临济同出一手。",
     "master": "临济义玄",
     "source": "临济慧照禅师语录 · 五灯会元",
-    "relatedConcepts": ["direct-pointing","beyond-words"],
-    "relatedPersons": ["linji","huangbo"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "linji",
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-4",
@@ -13068,9 +13094,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "一字之差，五百世野狐：“不落因果”是拨无因果的断灭见——大修行人不是超出因果之外，而是于因果了了分明、丝毫不昧。百丈一语“不昧因果”，转得恰到好处：悟道者照样穿衣吃饭、生老病死，因果历然，只是不昧——不被因果所瞒，亦不昧于因果。野狐老人病在“一语道断”的狂慧，将悟境会成因果之外的逍遥；殊不知真悟者恰恰最尊重因果。此则公案警策后世：莫把“空”会作无因果，莫把“自在”会作放逸——拨无因果者，堕野狐身；不昧因果者，方名解脱人。",
     "master": "百丈怀海",
     "source": "无门关第二则 · 百丈怀海禅师语录",
-    "relatedConcepts": ["koan","emptiness"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["baizhang"]
+    "relatedConcepts": [
+      "koan",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "baizhang"
+    ]
   },
   {
     "id": "koan-5",
@@ -13080,9 +13113,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "这一则公案把学人逼到绝处：开口答，即“丧身失命”——堕于言句，失却本分；不开口，又“违他所问”——辜负来机，落于死寂。进退不得、开口不得、默又不得处，正是禅者用功的真实写照——疑情成片时，如口衔树枝悬在虚空，吐又吐不得，咽又咽不得。虎头招上座机灵，不向树上讨消息，反问“未上树时”——那是未曾起念、未曾涉入言句之前的本来风光。香严大笑，不答之答：未上树时，本无问答，本无西来意，你更问个什么？会得此意，方知一切公案皆是闲家具。",
     "master": "香严智闲",
     "source": "无门关第五则",
-    "relatedConcepts": ["koan","beyond-words"],
+    "relatedConcepts": [
+      "koan",
+      "beyond-words"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["chanlinbaoxun","wumenguan"]
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-6",
@@ -13092,9 +13131,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "风动、幡动，本是世间现量；二僧争执，却成了情识上的葛藤。惠能一语“仁者心动”，不是抹杀风幡，而是直指争端的根源——见有风幡可争，正是心随境转处。万法唯心所现：心若不动，风幡各住本位，何争之有？此即“三界唯心，万法唯识”的活注脚。后来学者莫错会：不是风幡不曾动，也不是要人如木石般不见风幡；只是于见闻觉知中不被境转，则山河大地尽是真心妙用。二祖所谓“是心是佛”，六祖此语正与相发明。",
     "master": "六祖惠能",
     "source": "六祖坛经 · 行由品",
-    "relatedConcepts": ["mind-is-buddha","self-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-7",
@@ -13104,9 +13150,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "怀让磨砖，磨的是马祖的执着：坐禅是方便，成佛是本怀；执坐相为成佛之方，如执砖为成镜之料，错认方便为究竟。牛车不行，当打牛不当打车——身如车，心如牛，只调身不调心，终是外求。此则公案破除“以坐姿为禅”的千古迷执：禅在行住坐卧，佛非定相，于无住法不应取舍。然亦不可因此拨无坐禅——初学非坐无以摄心，只是不可执坐为佛。马祖由此悟入，后来说出“平常心是道”，洪州宗风大行天下，皆自这一磨始。",
     "master": "南岳怀让",
     "source": "景德传灯录 · 马祖道一禅师语录",
-    "relatedConcepts": ["mind-is-buddha","ordinary-mind"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-8",
@@ -13116,9 +13169,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "问的是“西来意”——玄之又玄的第一义；答的是“柏树子”——眼前现成的一物。赵州以极平常答极玄妙，正显“物物全真，头头显露”：祖师西来意不在别处，就在庭前柏树子，就在你问话的当下。僧人却作“境”会，以为柏树是心外之境——赵州曰“我不将境示人”：柏树子不是境，全体是真心妙用，见色即是见心，何境之有？再问，再答“庭前柏树子”——答处即是，不劳更问。后人若向柏树子上讨西来意，又是头上安头；若道柏树子不是西来意，又是割裂真俗。直下见得，方知赵州眉毛拖地。",
     "master": "赵州从谂",
     "source": "无门关第三十三则 · 赵州禅师语录",
-    "relatedConcepts": ["koan","self-nature"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-9",
@@ -13128,9 +13190,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三声“吃茶去”，一声深一声：曾到者吃茶，不曾到者吃茶，起疑问的院主也吃茶——赵州将深奥的祖师西来意，化作一盏现成的茶。曾到不曾到，是情识上的分别；吃茶去，是当下的本分事。禅不在“曾到不曾到”的知解里，只在端起茶盏的这一念平常心中。院主起疑，正是落入分别；赵州一唤“院主”，院主应诺——应诺的这个，灵明不昧，即是本来面目，更向何处觅禅？末后一句“吃茶去”，把院主的疑情也一并放下了。赵州禅的妙处正在此：至道无难，唯嫌拣择；拣择才息，茶味禅味，原是一味。",
     "master": "赵州从谂",
     "source": "无门关第十一则 · 赵州禅师语录",
-    "relatedConcepts": ["ordinary-mind","koan"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "koan"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-10",
@@ -13140,9 +13211,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "问处是玄中又玄，答处是平实至极——这正是赵州的杀人刀、活人剑：你向玄妙处问“一归何处”，我偏于现成处答“布衫七斤”。万法归一，一即现前；一归何处？一在穿衣吃饭处，在七斤布衫上。若离当下别觅“一”之归处，早已白云万里。《碧岩录》颂此则曰：“击石火，闪电光，构不构，成狼藉。”——拟议即差，动念即乖。七斤布衫，冷时穿、热时脱，会得这个，便是“一归何处”的实答；会不得，且参“青州布衫”去。",
     "master": "赵州从谂",
     "source": "碧岩录第四十五则",
-    "relatedConcepts": ["all-returns-to-one","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "all-returns-to-one",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-11",
@@ -13152,9 +13231,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "拈花与微笑之间，没有一言半句，而法已传了——这是禅宗最根本的宣言：第一义谛不在文字语言里，只在心心相印处。百万人天不是不见花，是只见花而不见心；迦叶微笑，不是会得什么道理，是与世尊同一鼻孔出气——以本觉印本觉，如两镜相照，光光互摄。后世禅宗一切施设——棒喝机锋、看话默照——皆从这一拈一笑流出：教外别传，不立文字，直指人心，见性成佛。学者须于言句不及处体取：你自家的那一朵花，拈起了么？",
     "master": "释迦牟尼佛",
     "source": "无门关第六则 · 联灯会要",
-    "relatedConcepts": ["mind-transmission","direct-pointing"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["xuemaicong","wumenguan"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-12",
@@ -13164,9 +13251,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "立雪断臂，表的是求法的赤诚；觅心不得，得的却是安心的极则。神光说“我心未宁”，人人皆以为然——烦恼纷飞，此心难安，须求一个法门来安。达摩一句“将心来，与汝安”，如金刚王宝剑直逼咽喉：你说心不安，且把那个不安的心拿出来看！神光返照良久，竟觅此心了不可得——无形无相，无来无去，向何处取？既不可得，又安个什么？原来不安的只是妄念，而妄念本空；本空之处，本自安宁。安心法门，不是安了一个心，是悟得本无心可安。此即达摩禅的第一义：直指之下，狂心顿歇，歇即菩提。",
     "master": "菩提达摩",
     "source": "无门关第四十一则 · 景德传灯录",
-    "relatedConcepts": ["non-mind","self-nature"],
-    "relatedPersons": ["huike","bodhidharma"],
-    "relatedBooks": ["anxin"]
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huike",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "anxin"
+    ]
   },
   {
     "id": "koan-14",
@@ -13176,9 +13271,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法达诵《法华经》三千部，自恃功德，礼拜时头不至地。六祖点破：被经文文字所转、生出贡高我慢，就是“心迷法华转”；若明自心本具“佛之知见”，驾驭经文以为道用，才是“心悟转法华”。经典本是指月之手，切勿将手当月亮。",
     "master": "六祖惠能",
     "source": "六祖坛经 · 机缘品",
-    "relatedConcepts": ["self-nature","no-abiding"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-15",
@@ -13188,9 +13290,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "文字只是标月指，真理则是空中月。盲人认指为月，终不见月。六祖虽不识字，却能直透经文背后的真如自性。直指人心，不立文字，正谓此也。",
     "master": "六祖惠能",
     "source": "六祖坛经 · 行由品",
-    "relatedConcepts": ["mind-transmission","direct-pointing"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-16",
@@ -13200,9 +13309,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世人皆被“生死”与“无常迅速”所逼迫惊怖。六祖直逼一步：何不回光返照、体取不生不灭之自性？玄觉一答“体即无生，了本无速”，直透自性本无生死、本无来去，当下彻悟。",
     "master": "六祖惠能",
     "source": "六祖坛经 · 顿渐品 · 永嘉证道歌",
-    "relatedConcepts": ["instant-enlightenment","self-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","zhengdaoge"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "zhengdaoge"
+    ]
   },
   {
     "id": "koan-17",
@@ -13212,8 +13329,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄檗之打，不是嗔怒，而是大慈悲之截断。学人问“佛法大意”，便是求心外之法；黄檗一棒打下，痛切处前后际断，逼其回光返照。大愚点破“老婆心切”，临济顿悟：自性本自具足，佛法绝无多余奇特！“无多子”三字，道尽最彻底之自性具足。",
     "master": "黄檗希运",
     "source": "镇州临济慧照禅师语录",
-    "relatedConcepts": ["mind-transmission","direct-pointing"],
-    "relatedPersons": ["huangbo","linji"],
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "linji"
+    ],
     "relatedBooks": []
   },
   {
@@ -13224,9 +13347,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "六祖闻《金刚经》“应无所住而生其心”两度契悟。第一度是解悟，第二度是黄梅夜半彻悟。五句“何期自性”，道尽了自性清净、不生不灭、本自具足、本不动摇、能生万法之全貌。金刚经一经，成就曹溪南宗顿教圣道。",
     "master": "六祖惠能",
     "source": "六祖坛经 · 行由品",
-    "relatedConcepts": ["ying-wu-suo-zhu","self-nature"],
-    "relatedPersons": ["huineng","hongren"],
-    "relatedBooks": ["jingangjing","tanjing"]
+    "relatedConcepts": [
+      "ying-wu-suo-zhu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "hongren"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "tanjing"
+    ]
   },
   {
     "id": "koan-20",
@@ -13236,9 +13368,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《金刚经》讲“如来无所说”、“若人言如来有所说法即为谤佛”。傅大士升座，一尺击案，“啪”地一响，言语道断，心行处灭——当体即是真般若！宝志公一旁作陪下转语“大士讲经竟”，二人一唱一和，将《金刚经》离言绝相之极旨演绎得淋漓尽致。",
     "master": "傅大士",
     "source": "碧岩录 · 景德传灯录",
-    "relatedConcepts": ["emptiness","beyond-words"],
-    "relatedPersons": ["fudashi","zhigong"],
-    "relatedBooks": ["jingangjing","xinwangming"]
+    "relatedConcepts": [
+      "emptiness",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "fudashi",
+      "zhigong"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "xinwangming"
+    ]
   },
   {
     "id": "koan-21",
@@ -13248,9 +13389,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《心经》虽仅 260 字，却为大乘般若之至极神咒。玄奘西行渡沙漠、遇绝境，全凭单单一部《心经》“照见五蕴皆空”，心无挂碍恐怖而横渡戈壁险关。心若无所得、五蕴洞空，则世间一切魔障、灾难、恐怖当体即化为乌有。",
     "master": "玄奘法师 / 观自在菩萨",
     "source": "大唐大慈恩寺三藏法师传 · 心经",
-    "relatedConcepts": ["wu-yun-jie-kong","wu-gua-ai","se-ji-shi-kong"],
-    "relatedPersons": ["guanzizai"],
-    "relatedBooks": ["xinjing","jingangjing"]
+    "relatedConcepts": [
+      "wu-yun-jie-kong",
+      "wu-gua-ai",
+      "se-ji-shi-kong"
+    ],
+    "relatedPersons": [
+      "guanzizai"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "jingangjing"
+    ]
   },
   {
     "id": "koan-22",
@@ -13260,9 +13410,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《圆觉经·普贤章》十六字偈是顿悟顿修的最巅峰教理。许多修道者苦于断除妄想烦恼，越压念头念头越多。佛陀点破：妄想身心本来就是虚妄幻化，你只要“看清它是幻”，看清的瞬间你已经不在幻中了（知幻即离），根本不需要再找个方法去打灭它；离幻的瞬间本觉立刻现前（离幻即觉），绝无阶梯渐次。",
     "master": "释迦牟尼佛 / 普贤菩萨",
     "source": "大方广圆觉修多罗了义经 · 普贤章",
-    "relatedConcepts": ["zhi-huan-ji-li","yuanjue-qingjing-xinxing","instant-enlightenment"],
-    "relatedPersons": ["puxian-yuanjue"],
-    "relatedBooks": ["yuanjuejing"]
+    "relatedConcepts": [
+      "zhi-huan-ji-li",
+      "yuanjue-qingjing-xinxing",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
   },
   {
     "id": "koan-23",
@@ -13272,9 +13430,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《禅林宝训·卷二》记载的这一则典故，是千年来禅门苦行守道、甘于淡泊的第一标杆。禅宗宗师绝不追求物质安逸，视富贵名利如浮云，唯以悟道度生为唯一天职。",
     "master": "杨岐方会",
     "source": "禅林宝训 · 卷二",
-    "relatedConcepts": ["tou-xin-wei-si","de-hua-li-zhi"],
-    "relatedPersons": ["yangqi-fanghui","huanglong-huinan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "de-hua-li-zhi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-24",
@@ -13284,9 +13450,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《楞严经·卷一卷二》最具代表性的破妄见性对决。许多人恐惧衰老死亡，以为肉体一死灵魂皆空。佛陀通过“观河之见”这极生动直观的比喻点破：肉体细胞眼皮固然在天天衰老变坏，但你那个能知能觉、几十年来观察世界的“见性觉知”本无一丝一毫衰老！认清此点，生死妄想顿消。",
     "master": "释迦牟尼佛 / 阿难尊者",
     "source": "大佛顶首楞严经 · 卷一卷二",
-    "relatedConcepts": ["qi-chu-zheng-xin","ba-huan-bian-jian","self-nature"],
-    "relatedPersons": ["anan","banramidi"],
-    "relatedBooks": ["lengyanjing"]
+    "relatedConcepts": [
+      "qi-chu-zheng-xin",
+      "ba-huan-bian-jian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "banramidi"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
   },
   {
     "id": "koan-25",
@@ -13296,9 +13471,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "《维摩诘经·第七品与第九品》两大绝妙高潮。第一，“维摩一默”绝非不知不答，而是当一切对立分别与文字言说尽数断绝时，本来面目湛然现前，故称“一默如雷震”；第二，“天女散花”点破贪嗔痴与戒律执着：心有分别求去之念，花反粘身；心无挂碍清净自如，花自坠落脱离。",
     "master": "维摩诘长者 / 文殊菩萨",
     "source": "维摩诘所说经 · 第七品·第九品",
-    "relatedConcepts": ["ru-bu-er-fa-men","xin-jing-ji-fo-tu-jing","beyond-words"],
-    "relatedPersons": ["weimojie","wenshu-yuanjue"],
-    "relatedBooks": ["weimojiejing"]
+    "relatedConcepts": [
+      "ru-bu-er-fa-men",
+      "xin-jing-ji-fo-tu-jing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "koan-293",
@@ -13308,9 +13492,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“庭前柏树子”，非以境示人，乃直指当下。祖师西来意不在别处——即此庭前柏树子，历历在目，何须外求？僧人以为赵州“将境示人”，是以分别心判境与非境——不知赵州之意，境即心，心即境，境非境，心非心。柏树子者，非柏树子，是名柏树子——当下一念不生，柏树子即是祖师西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 无门关第三十七则",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-294",
@@ -13320,9 +13514,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“洗钵去”，示禅宗“平常心是道”之旨。吃粥、洗钵——最平常之日用事，然于此平常中，即具大道。僧人“乍入丛林”，心存“求道”之念——以为道在别处、在玄妙处。赵州以“吃粥了也未”“洗钵去”截断其求心：道不在别处，即此洗钵之当下便是。僧于言下大悟——悟者非悟别事，乃悟道在日用，不离平常。",
     "master": "赵州从谂",
     "source": "赵州语录 / 无门关第七则",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-26",
@@ -13332,9 +13536,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "香严之悟，贵在“自悟”——沩山不为他说破，逼其自行参究。若沩山当时为他说破，智闲只是记取一番道理，终非亲证。后因击竹声而悟——一击之下，一切知见顿断，能所双泯，本来面目自然显现。“忘所知”者，非不知，乃不执着知——知而无知，无知而知，方为真知。",
     "master": "香严智闲",
     "source": "五灯会元 / 碧岩录",
-    "relatedConcepts": ["self-nature","beyond-words","instant-enlightenment"],
-    "relatedPersons": ["xiangyan-zhixian","weishan-lingyou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "self-nature",
+      "beyond-words",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-27",
@@ -13344,9 +13557,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞烧佛，非不敬佛，乃破学人执相之病——佛不在木雕泥塑中，佛在自心。木佛者，相也；佛者，性也。执相而迷性，何如破相而见性？“既无舍利，更取两尊烧”——此语如金刚剑，斩尽一切相执。院主眉须堕落，乃因执相之业火反烧自身——执佛相者，佛反成障。",
     "master": "丹霞天然",
     "source": "五灯会元 / 碧岩录",
-    "relatedConcepts": ["beyond-words","self-nature","non-duality"],
-    "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "beyond-words",
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-28",
@@ -13356,21 +13577,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "天皇道悟以“岭上云”答“西来意”——云在岭上，自然自在，无心而住，无住而生。祖师西来意不在言语思量中，即此岭上白云，去来无心，即是西来意。僧人再问“意旨如何”，已落第二义——以意识分别解会，故道悟叹曰“可惜许”。",
     "master": "天皇道悟",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","no-abiding","direct-pointing"],
-    "relatedPersons": ["tianhuang-daowu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "no-abiding",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "tianhuang-daowu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-29",
     "question": "如何是佛？",
     "answer": "麻三斤。",
-    "context": "僧问洞山良价禅师：“如何是佛？”山曰：“麻三斤。”",
+    "context": "此公案出自《碧岩录第十八则 / 无门关第十二则》。学人就禅门关要参请洞山良价，问及“如何是佛？”。洞山良价直以“麻三斤。”答之，不涉浮言，直指心源。",
     "interpretation": "洞山之“麻三斤”，为禅宗最著名之公案之一。此语不通逻辑、不依道理——佛与麻三斤有何相干？正因不相干，方能截断学人一切思量分别。学人问佛，心中必有一佛之相；洞山以“麻三斤”答之，令其佛相顿破。此即曹洞宗“回互”之旨——以不相干之语，令学人于思量不及处亲见本来。",
     "master": "洞山良价",
     "source": "碧岩录第十八则 / 无门关第十二则",
-    "relatedConcepts": ["koan","beyond-words","self-nature"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["dongshanyulu","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "dongshanyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-30",
@@ -13380,9 +13618,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门之“春来草自青”，示禅宗“自然”之旨。佛法大意不在言语思量中——如春来草自青，不假造作，自然如是。春来非为草而春，草青非为春而青——因缘时至，自然现前。佛法亦如是：悟时非因悟而得佛法，乃佛法本来如是，悟时自然显现。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["linji","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "linji",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-31",
@@ -13392,9 +13639,20 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“无”，为禅宗最著名之话头。佛性本有，经云一切众生皆有佛性——赵州何故答“无”？此“无”非拨无佛性，乃以一字斩断学人“有”“无”之思量分别。学人以意识分别问“有无”，赵州以“无”截断其意识流——令其于“无”字上参究到底，至山穷水尽时，忽然透过“无”字，亲见佛性不在有无中。此即无门关第一则，看话禅之根本话头。",
     "master": "赵州从谂",
     "source": "无门关第一则",
-    "relatedConcepts": ["koan","buddha-nature","kanhua-chan-concept"],
-    "relatedPersons": ["zhaozhou","wumen-huikai"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-32",
@@ -13404,9 +13662,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“父母未生前本来面目”——非指生前之状态，乃指一念未生之前的心之本体。父母未生者，念未生也；本来面目者，心之本体也。参此话头，须穷追“一念未生前”——至思量不及处，忽然透过，即见本来面目。此话头之要在于“未生”二字——已生即是妄念，未生方是真心。",
     "master": "六祖慧能",
     "source": "坛经 / 无门关第二十三则",
-    "relatedConcepts": ["self-nature","kanhua-chan-concept","yiqing"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","wumenguan"]
+    "relatedConcepts": [
+      "self-nature",
+      "kanhua-chan-concept",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-33",
@@ -13416,9 +13683,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "万法归一，一归何处——此为禅宗著名话头。万法者，森罗万象；一者，一心。万法归于一心，一心归于何处？此问逼学人穷追心之源头——心从何来？心向何去？赵州以“我在青州做一领布衫重七斤”答之——此语全不相干，正因不相干，方能截断学人对“一归何处”之思量。赵州之意：不必穷追一归何处，即此布衫七斤，当下即是。",
     "master": "赵州从谂",
     "source": "赵州语录 / 无门关",
-    "relatedConcepts": ["koan","kanhua-chan-concept","all-returns-to-one"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "kanhua-chan-concept",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-34",
@@ -13428,21 +13705,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "老者前世为修行人，因答人问“大修行人还落因果也无”，错答“不落因果”——一语之差，五百世堕野狐身。盖“不落因果”即拨无因果，落恶取空；“不昧因果”即于因果中不昧——知因果宛然而不执着因果，即因果而见性空。一字之差，迷悟天壤。此公案明示：顿悟非拨无因果，乃于因果中得自在。",
     "master": "百丈怀海",
     "source": "无门关第二则 / 五灯会元",
-    "relatedConcepts": ["yinguo","emptiness","self-nature"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["baizhang","wumenguan"]
+    "relatedConcepts": [
+      "yinguo",
+      "emptiness",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "baizhang",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-35",
     "question": "如何是佛法大意？",
     "answer": "即心即佛。",
-    "context": "僧问马祖道一禅师：“如何是佛法大意？”师曰：“即心即佛。”",
+    "context": "此公案出自《马祖语录 / 传灯录》。学人就禅门关要参请马祖道一，问及“如何是佛法大意？”。马祖道一直以“即心即佛。”答之，不涉浮言，直指心源。",
     "interpretation": "马祖之“即心即佛”，为禅宗最核心之开示。佛法大意不在经卷中、不在言语中——即此当下之心即是佛。然学人闻“即心即佛”，往往执“心”为实——不知马祖后又说“非心非佛”，再后又说“不是心，不是佛，不是物”。三说层层遣除：先立“即心即佛”以破向外求佛之执；再以“非心非佛”破执心为佛之执；终以“不是心不是佛不是物”遣尽一切执着。三说虽异，其旨则一——破执显真而已。",
     "master": "马祖道一",
     "source": "马祖语录 / 传灯录",
-    "relatedConcepts": ["mind-is-buddha","not-mind-not-buddha","direct-pointing"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "not-mind-not-buddha",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-36",
@@ -13452,9 +13746,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖反问“汝唤什么作心？汝唤什么作佛？”——截断学人对“即心是佛”之理解。学人闻“即心是佛”，必以意识分别解会：“我的心就是佛”——此解已是妄心，非即心即佛之本意。马祖反问，令其于思量不及处亲见——心非心，佛非佛，即心即佛非言说之事，乃亲证之境。",
     "master": "马祖道一",
     "source": "马祖语录 / 传灯录",
-    "relatedConcepts": ["mind-is-buddha","self-nature","beyond-words"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-37",
@@ -13464,9 +13766,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖不答“祖师西来意”，反问“即今是什么意”——将学人从“祖师西来”之遥远追问拉回当下。祖师西来意不在过去、不在别处——即此当下你问我之“意”，便是祖师西来意。学人舍近求远，马祖以反问截断其远求之心，令其于当下亲见。",
     "master": "马祖道一",
     "source": "传灯录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wu-nian"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-38",
@@ -13476,21 +13786,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济不正面答“西来意”，而说“三十年后大有人错会”——预记后世学人以意识分别错会祖师意。祖师西来意不可以言说解会——一落言说，即成错会。临济此语，既截断当下学人之思量，又预记后世之流弊，一语双关。",
     "master": "临济义玄",
     "source": "临济语录 / 传灯录",
-    "relatedConcepts": ["beyond-words","koan","direct-pointing"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "beyond-words",
+      "koan",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-39",
     "question": "如何是佛？",
     "answer": "干屎橛。",
-    "context": "僧问云门文偃禅师：“如何是佛？”师曰：“干屎橛。”",
+    "context": "此公案出自《五灯会元 / 无门关第二十一则》。学人就禅门关要参请云门文偃，问及“如何是佛？”。云门文偃直以“干屎橛。”答之，不涉浮言，直指心源。",
     "interpretation": "云门之“干屎橛”，为禅宗最峻烈之机锋之一。干屎橛者，拭粪之竹木片也——最秽之物。学人问佛，心中必有一清净庄严之佛相；云门以最秽之干屎橛答之，令其佛相顿破。佛不在净秽中——若执净秽，则佛亦成执。干屎橛者，非干屎橛，是名干屎橛——当下一念不生，干屎橛即是佛。",
     "master": "云门文偃",
     "source": "五灯会元 / 无门关第二十一则",
-    "relatedConcepts": ["koan","beyond-words","non-duality"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-40",
@@ -13500,9 +13827,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“板齿生风”——此语全无道理可讲。板齿如何生风？正因无道理，方能截断学人一切思量分别。云门一字关之特色即在此——以一字或一短句，不容拟议，截断意识流。学人若于此语上思量“板齿为何生风”，已是错会；若能于思量不及处转身，即见祖师西来意。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","jifeng"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-41",
@@ -13512,9 +13847,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法演以诗句答“诸佛出身处”——薰风南来，殿阁生凉，自然之景，不假造作。诸佛出身处不在别处——即此自然之日用。薰风自南来，非为殿阁而风；殿阁生微凉，非为薰风而凉——因缘时至，自然现前。诸佛之出世亦如是：非造作而得，乃因缘时至，自然显现。",
     "master": "五祖法演",
     "source": "五灯会元 / 碧岩录",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-42",
@@ -13524,9 +13867,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "天皇道悟以“大好山”答“道”——道不在抽象概念中，即此眼前之大好山。僧人以分别心判“道”与“山”为二——不知道即山，山即道。道悟反问“汝何不问道何得好山”——翻转学人之问，令其于思量不及处见道不在别处，即此山即是。",
     "master": "天皇道悟",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","non-duality"],
-    "relatedPersons": ["tianhuang-daowu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "tianhuang-daowu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-43",
@@ -13536,9 +13887,20 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南泉之“平常心是道”，为禅宗最重要之开示之一。平常心者，非圣凡之分、非迷悟之别——即此要眠即眠、要坐即坐之日用之心。学人问“还可趣向也无”——欲向道，已是“拟向即乖”：道不属趣向不趣向，一趣向即落造作。南泉进一步明“道不属知不知”——知是妄觉（以分别为体），不知是无记（落入断灭）。真道如太虚，廓然荡豁，不可以知不知、是非、迷悟度量。",
     "master": "南泉普愿",
     "source": "赵州语录 / 传灯录 / 无门关第十九则",
-    "relatedConcepts": ["ordinary-mind","wu-nian","non-mind"],
-    "relatedPersons": ["nanquan-puyuan","zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "nanquan-puyuan",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-44",
@@ -13548,9 +13910,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "德山以“棒喝”闻名，然于沩山面前，一句“来迟了”便无对——可见沩山之机锋，不在言语而在时节因缘。德山自叹“这老汉未忘所得在”——“所得”者，指沩山仍有“接引学人”之痕迹在。然此叹亦是德山之自叹——自己尚有“所得”之念，故被沩山一语堵住。两位大宗师之交锋，不在言语之高下，而在境界之深浅。",
     "master": "德山宣鉴 / 沩山灵祐",
     "source": "五灯会元 / 碧岩录",
-    "relatedConcepts": ["koan","self-nature","wu-nian"],
-    "relatedPersons": ["deshan-xuanjian","weishan-lingyou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "deshan-xuanjian",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-45",
@@ -13560,9 +13931,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“尽大地撮来如粟米大”——将整个大千世界撮成一粒粟米，此乃“一即一切”之华严境界。然“抛向什么处”——此一粒粟米（即一心）抛向何处？雪峰答“抛向漆桶里”——漆桶者，黑暗无光之处，喻无明烦恼。意谓：一粒粟米（清净心）不须抛向别处，即抛向无明烦恼中——烦恼即菩提，生死即涅槃。不须离烦恼求菩提，即烦恼便是菩提。",
     "master": "雪峰义存",
     "source": "五灯会元 / 碧岩录",
-    "relatedConcepts": ["yiji-yiqie","affliction-bodhi","non-duality"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "yiji-yiqie",
+      "affliction-bodhi",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-46",
@@ -13572,21 +13951,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "玄沙之“从来无寸尺”——“自己”非有形相、非有尺寸。学人问“自己”，心中必有一“自己”之相——或以身为自己，或以心为自己。玄沙以“从来无寸尺”破之——自己非形相可得，非尺寸可量。所谓“自己”者，即此无形无相、无寸无尺之清净心。",
     "master": "玄沙师备",
     "source": "五灯会元",
-    "relatedConcepts": ["self-nature","wu-xiang","beyond-words"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "wu-xiang",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-47",
     "question": "如何是佛？",
     "answer": "蹋着秤锤硬似铁。",
-    "context": "僧问石巩慧藏禅师：“如何是佛？”师曰：“蹋着秤锤硬似铁。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请石巩慧藏，问及“如何是佛？”。石巩慧藏直以“蹋着秤锤硬似铁。”答之，不涉浮言，直指心源。",
     "interpretation": "石巩以“蹋着秤锤硬似铁”答“如何是佛”——秤锤者，称量之具；蹋着者，亲身体验。佛不可以称量得——须亲践亲证。秤锤硬似铁，喻佛之实相——坚如金刚，不可破坏。学人以言语问佛，石巩以“蹋着”答之——佛不在言语中，须亲自蹋着、亲自证得。",
     "master": "石巩慧藏",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","self-nature","beyond-words"],
-    "relatedPersons": ["shigong-huizang"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "self-nature",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "shigong-huizang"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-48",
@@ -13596,21 +13991,39 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "庞蕴居士之“神通并妙用，运水及搬柴”，将禅宗“平常心是道”之旨发挥至极。所谓神通妙用，非飞天遁地之神通，乃运水搬柴之日用——挑水劈柴，无非妙用；行住坐卧，皆是禅机。祖师西来意不在玄妙处，即此日用之常。庞蕴以居士之身悟道，正明禅不在出家在家——道在日用，不离平常。",
     "master": "庞蕴居士",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["pang-yun","mazu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-49",
     "question": "如何是道？",
     "answer": "出门便是草。",
-    "context": "僧问赵州从谂禅师：“如何是道？”师曰：“出门便是草。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是道？”。赵州从谂直以“出门便是草。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“出门便是草”——“门”者，本心之门；“草”者，妄念之草。道不在门外——一出心门，便是妄念丛生。赵州之意：道在门内（本心），不在门外（向外求）。学人向外求道，如出门寻草——越求越远。只须回归本心，不出此门，即见道之本体。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-50",
@@ -13620,9 +14033,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "石霜以“井底泥牛吼，窗间木马嘶”答“西来意”——泥牛不能吼，木马不能嘶，此乃不可能之事。石霜之意：祖师西来意不可以言语说、不可以思量得——如泥牛吼、木马嘶，非世间事。学人若以言语思量求祖师意，如求泥牛之吼、木马之嘶——终不可得。唯超越言语思量，方能亲见。",
     "master": "石霜庆诸",
     "source": "五灯会元",
-    "relatedConcepts": ["koan","beyond-words","direct-pointing"],
-    "relatedPersons": ["shishuang-qingzhu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "shishuang-qingzhu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-51",
@@ -13632,9 +14053,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法眼文益之“不使学者断肠”——法眼宗风以“温和”著称，不似临济之棒喝、德山之峻烈。法眼家风，因材施教，循循善诱，不令学人因参究过度而“断肠”——身心俱疲。此非法眼宗不峻烈，乃法眼宗之“峻烈”在温和中——如春风化雨，润物无声，然其截断学人执着之力，不在棒喝之下。",
     "master": "法眼文益",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","jifeng","self-nature"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "jifeng",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-52",
@@ -13644,9 +14073,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄龙慧南以“活句”“死句”判公案之高下。活句者，能令学人悟入之句——如狮子王，威震一切，一闻即透千句万句，豁然大悟。死句者，不能令学人悟入之句——如死蛇，打头头破，打尾尾破，左右不是，徒增困惑。禅宗之公案，须以活句参——不可死参文字，须于活句中亲见本来。",
     "master": "黄龙慧南",
     "source": "五灯会元 / 禅林宝训",
-    "relatedConcepts": ["koan","jifeng","beyond-words"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-53",
@@ -13656,9 +14093,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“殿里底”——殿里者，泥塑木雕之佛像也。学人问佛，心中必有一清净庄严之佛相；赵州以“殿里底”（泥塑佛像）答之，令其佛相顿破。僧人追问“岂不是泥龛塑像”，赵州只答“是”——不辩解，不修正。赵州之意：佛不在泥塑木雕中，然亦不离泥塑木雕——即此泥塑佛像，当下一念不生时，即是真佛。不可执相求佛，亦不可离相求佛。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","buddha-nature","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-54",
@@ -13668,9 +14114,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济不答“西来意”，而令僧“将禅板来”——僧人近前递禅板，正落临济圈套：临济接过便打。此为临济“棒喝”之典型——不与你说道理，只以棒打截断你的思量。祖师西来意不可以言语说——临济以棒代说，令学人于思量不及处亲见。若于此棒下悟去，即见祖师西来意；若不悟，只觉得痛。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["koan","jifeng","beyond-words"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-55",
@@ -13680,21 +14134,39 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“适来记得，今却忘却”——以幽默之语截断学人之追问。学人执意要知“西来意”，赵州以“记得又忘却”答之——既已忘却，何须再问？赵州之意：西来意不在记忆中、不在思量中——越想越远，越问越迷。不如当下放下一切思量，即此“忘却”处，便是西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","wu-nian","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "wu-nian",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-56",
     "question": "如何是西来意？",
     "answer": "斋后困。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“斋后困。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是西来意？”。赵州从谂直以“斋后困。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州以“斋后困”答“西来意”——斋后困者，饭后犯困也。此乃最平常之事——吃饭后犯困，人人皆有。赵州以最平常之事答最玄妙之问——正示“平常心是道”之旨。祖师西来意不在玄妙处，即此斋后犯困之平常心。若于“斋后困”处见道，则知道不在别处——即此日用之常。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-57",
@@ -13704,9 +14176,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "药山以“云在青天水在瓶”答李翱“如何是道”——云在青天，水在瓶中，各住本位，自然如是。道不在玄妙处——即此云在青天、水在瓶之自然。云不自青天出，水不自瓶中生——因缘时至，自然现前。道亦如是：不假造作，自然现前。李翱以儒者之身问道，药山以自然之景示之——道不在经卷中，即此眼前自然之景。",
     "master": "药山惟俨",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","self-nature","wu-nian"],
-    "relatedPersons": ["yaoshan-weiyan","li-ao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "yaoshan-weiyan",
+      "li-ao"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-58",
@@ -13716,9 +14197,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门以“三年逢一闰”答“西来意”——三年一闰，历法之常事。云门以历法之常答祖师西来意——正示“平常心是道”之旨。祖师西来意不在玄妙处，即此历法之常、日用之常。然学人闻此，往往以为云门在回避问题——不知云门正以此答，截断学人向玄妙处求之妄念。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","koan","beyond-words"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-60",
@@ -13728,33 +14217,58 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“久响不如初闻”——久闻其名，不如初闻之一刻。学人久参“西来意”，已成老问题——越参越远，越问越迷。赵州之意：不如回到“初闻”之那一刻——初闻时心无成见、无思量、无分别——即此初闻之清净心，便是祖师西来意。如人初闻一声，心无分别——即此无分别之心，便是道。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["wu-nian","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "wu-nian",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-61",
     "question": "如何是吹毛剑？",
     "answer": "吹毛。",
-    "context": "僧问云门文偃禅师：“如何是吹毛剑？”师曰：“吹毛。”",
+    "context": "此公案出自《云门广录 / 五灯会元》。学人就禅门关要参请云门文偃，问及“如何是吹毛剑？”。云门文偃直以“吹毛。”答之，不涉浮言，直指心源。",
     "interpretation": "吹毛剑者，极锋利之剑——毛放刃上，一吹即断。禅宗以吹毛剑喻般若智慧——能断一切烦恼执着。学人问“吹毛剑”，云门只答“吹毛”——以吹毛还吹毛，不容拟议。学人若于此“吹毛”二字上思量“什么是吹毛”，已是剑未出鞘；若能于此二字下转身，即吹毛剑已断烦恼。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["koan","jifeng","beyond-words"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-62",
     "question": "如何是佛？",
     "answer": "麻三斤。",
-    "context": "僧问洞山良价禅师：“如何是佛？”师曰：“麻三斤。”",
+    "context": "此公案出自《碧岩录第十八则 / 五灯会元》。学人就禅门关要参请洞山良价，问及“如何是佛？”。洞山良价直以“麻三斤。”答之，不涉浮言，直指心源。",
     "interpretation": "洞山之“麻三斤”——此语全无道理可讲。麻三斤与佛何干？正因无道理，方能截断学人一切思量分别。学人问佛，心中必有一佛相；洞山以“麻三斤”答之，令其佛相顿破。麻三斤者，非麻三斤，是名麻三斤——当下一念不生，麻三斤即是佛。此为洞山宗“敲唱俱行”之典型——以不相干之语，截断意识流。",
     "master": "洞山良价",
     "source": "碧岩录第十八则 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","non-duality"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-63",
@@ -13764,9 +14278,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖之“一口吸尽西江水”——此乃不可能之事。一口如何吸尽西江之水？马祖以不可能之事答学人之问——意谓：祖师西来意不可以言语说，如一口不能吸尽西江水。学人若能于此“不可能”处转身——放下一切思量分别，即见祖师西来意。马祖之意：不是不说，乃不可说——须自悟，不从他得。",
     "master": "马祖道一",
     "source": "传灯录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","direct-pointing"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-64",
@@ -13776,9 +14298,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖三说层层遣除：“即心即佛”为止小儿啼——为初学说，令其不向外求佛；“非心非佛”为止啼后说——为已悟者说，令其不执心为佛；“不是心不是佛不是物”为究竟说——遣尽一切执着，令其于思量不及处亲见。三说虽异，其旨则一——破执显真。如用药治病：病不同，药亦不同；病愈则药废。",
     "master": "马祖道一",
     "source": "传灯录 / 五灯会元",
-    "relatedConcepts": ["mind-is-buddha","not-mind-not-buddha","beyond-words"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "not-mind-not-buddha",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-65",
@@ -13788,9 +14318,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大梅之“任他非心非佛，我只管即心即佛”——此为真悟者之气概。马祖说法如用药——即心即佛、非心非佛皆为止啼之方便，非究竟法。大梅不随马祖之言转——马祖说即心即佛时即悟，马祖说非心非佛时不迷——此为真悟。马祖“梅子熟也”之评，即印可大梅已悟——不为师言所转，方为真悟。",
     "master": "大梅法常",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["mind-is-buddha","not-mind-not-buddha","self-nature"],
-    "relatedPersons": ["damei-fachang","mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "not-mind-not-buddha",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "damei-fachang",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-66",
@@ -13800,9 +14339,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "慧忠画一圆相答“西来意”——圆相者，圆满无缺之相，喻自性圆满。然学人不会，慧忠叹“脚跟下已泥深三尺”——意谓自己已落于言语示现之泥沼中。画圆相示人，已是多余——祖师西来意不可以相示，不可以言说。画圆相即落泥沼——不如不画。",
     "master": "南阳慧忠",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","beyond-words","self-nature"],
-    "relatedPersons": ["nanyang-huizhong"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "nanyang-huizhong"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-67",
@@ -13812,9 +14359,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州三句“吃茶去”——曾到也吃茶去，不曾到也吃茶去，院主也吃茶去。三人根机不同，赵州皆以“吃茶去”答之——此为禅宗“平常心是道”之极致。祖师西来意不在玄妙处，即此吃茶之平常心。曾到、不曾到、院主——分别心起处，赵州皆以“吃茶去”截断。吃茶者，非吃茶——乃于吃茶之当下，放下一切思量分别，即此平常心便是道。",
     "master": "赵州从谂",
     "source": "赵州语录 / 无门关第七则",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-68",
@@ -13824,9 +14381,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州以“砖瓦将来”答“西来意”——砖瓦者，最平常之物。学人问祖师西来意，心中必有玄妙之期待；赵州以最平常之砖瓦答之，令其玄妙期待顿破。祖师西来意不在玄妙处，即此砖瓦之平常。僧人追问“岂不是物”——已落分别；赵州答“物即砖瓦”——即物而真，不离物别求道。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","non-duality","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "non-duality",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-69",
@@ -13836,9 +14402,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "俱胝竖一指——此为禅宗最简洁之开示。一指者，非一指——乃万法归一之一。凡有问，唯竖一指——不容拟议，截断一切思量。学人若于一指上思量“这是什么意思”，已是错会；若能于一指下转身，即见万法归一、一即万法。然俱胝临终曰：“吾得天龙一指禅，一生用不尽。”——可见一指非形式，乃悟后之妙用。",
     "master": "俱胝和尚",
     "source": "五灯会元 / 无门关",
-    "relatedConcepts": ["koan","beyond-words","all-returns-to-one"],
-    "relatedPersons": ["juzhi"],
-    "relatedBooks": ["chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "juzhi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-70",
@@ -13848,21 +14423,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄檗之“去，莫向吾这里觅”——佛不在师处、不在别处，即在自己当下之心。学人向师求佛，已是向外求——黄檗以“去”喝退之，令其回光返照，向自心觅。如达摩答慧可：“将心来，与汝安。”——心不在别处，即此当下之心便是佛。",
     "master": "黄檗希运",
     "source": "传心法要 / 五灯会元",
-    "relatedConcepts": ["self-nature","direct-pointing","mind-is-buddha"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "direct-pointing",
+      "mind-is-buddha"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-71",
     "question": "如何是西来意？",
     "answer": "山河大地。",
-    "context": "僧问法眼文益禅师：“如何是西来意？”师曰：“山河大地。”",
+    "context": "此公案出自《五灯会元》。学人就禅门关要参请法眼文益，问及“如何是西来意？”。法眼文益直以“山河大地。”答之，不涉浮言，直指心源。",
     "interpretation": "法眼以“山河大地”答“西来意”——祖师西来意不在别处，即此山河大地。山河大地非心外之境——乃唯心所现之相。法眼宗风以“一切现成”为旨——山河大地即是佛法，不须离山河大地别求佛法。悟得唯心时，则山河大地皆是自性之妙用。",
     "master": "法眼文益",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","wei-xin-zao","direct-pointing"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wei-xin-zao",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-72",
@@ -13872,9 +14463,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "洞山以“龟毛拂子，兔角杖子”答“西来意”——龟无毛，兔无角，此乃不存在之物。洞山以不存在之物答祖师西来意——意谓：祖师西来意如龟毛兔角，不可以有无说、不可以言语得。学人若以言语思量求祖师意，如求龟毛兔角——终不可得。唯超越有无、超越言语，方能亲见。",
     "master": "洞山良价",
     "source": "洞山语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","emptiness"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["linji","dongshanyulu"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "linji",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "koan-73",
@@ -13884,9 +14484,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹山以“白日太升天，黑夜不打鼓”答“西来意”——白日升天，黑夜不打鼓，此乃自然之理。白日升天非造作，黑夜不打鼓非造作——自然如是。祖师西来意亦如是——不假造作，自然现前。曹山宗风以“回互”为旨——此语看似不相干，实则以自然之理示西来意之自然。",
     "master": "曹山本寂",
     "source": "曹山语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","koan","beyond-words"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-74",
@@ -13896,9 +14504,20 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南泉斩猫——此为禅宗最峻烈之公案。东西两堂争猫，南泉以“道得即不斩，道不得即斩”逼众开口——众无对，南泉遂斩。此非南泉残忍——乃以斩猫截断两堂之争执。争执之根在分别心——东西两堂分别“这是我们的猫”“那是你们的猫”，南泉以斩猫截断此分别。赵州脱鞋安头上而出——以反常之行答南泉：鞋安头上，如斩猫之反常——意谓：道不在言语中，即此反常之行便是道。南泉叹“汝若在，即救得猫儿”——赵州之反常行，正是“道得”。",
     "master": "南泉普愿",
     "source": "无门关第十四则 / 五灯会元",
-    "relatedConcepts": ["koan","non-duality","jifeng"],
-    "relatedPersons": ["nanquan-puyuan","zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "non-duality",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "nanquan-puyuan",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-75",
@@ -13908,9 +14527,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈令沩山拨净瓶——此为勘验学人之机。拨净瓶者，以手扶正净瓶——此为常人之行。沩山不动手，以脚踢倒——以反常之行截断百丈之勘验。百丈笑曰“如痴如醉”——非真笑其痴醉，乃印可其行：不为常理所拘，敢于打破常规。此为沩山宗风之雏形——温润中含峻烈，平常中含反常。",
     "master": "沩山灵祐",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","jifeng","ordinary-mind"],
-    "relatedPersons": ["weishan-lingyou","baizhang"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-76",
@@ -13920,9 +14548,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "石巩以张弓射箭接引学人——此为禅宗最独特之机锋。张弓者，非真射箭——乃以弓箭截断学人之思量。三平拊掌——以拊掌答张弓：不惧弓箭，以平常心对之。石巩叹“只射得半个圣人”——三平虽不惧，然仅“拊掌”而已，尚未大悟——故为“半个圣人”。石巩之弓箭，非射身——乃射心：射断学人之妄想执着。",
     "master": "石巩慧藏",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","jifeng","beyond-words"],
-    "relatedPersons": ["shigong-huizang","sanping-yizhong"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "shigong-huizang",
+      "sanping-yizhong"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-77",
@@ -13932,9 +14569,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "灵默以“一言相契即住，不契即去”逼石头开口——石头坐然不顾，不以言语接引。灵默便行——已落第二义：以“去”回应“不顾”，仍是分别。石头呼“上座”——灵默回首——此回首即“回头转脑”，已落思量。石头曰“从生至死只是这个”——“这个”者，即此当下之心。从生至死，只是此心——不须回头转脑别求。灵默于言下大悟——悟得“这个”即是自性。",
     "master": "石头希迁",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","direct-pointing","ordinary-mind"],
-    "relatedPersons": ["shitou","lingmo"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "direct-pointing",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "shitou",
+      "lingmo"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-78",
@@ -13944,9 +14590,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四料简为临济宗接引学人之四种方法。夺人不夺境者，夺其“我”执而存其境界——为中根人说；夺境不夺人者，夺其境界执而存其“我”——为另一种根机说；人境俱夺者，“我”与境界皆夺——为上根人说，令其于一切执着尽处亲见；人境俱不夺者，“我”与境界皆不夺——为已悟者说，任运自在。四料简因材施教，层层遣除——最终人境俱不夺，即悟后之自在境界。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","jifeng","fangbian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "jifeng",
+      "fangbian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-79",
@@ -13956,21 +14610,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "洞山以“鸟道”喻自性——鸟飞空中，不留痕迹，无遮无碍。自性亦如是——心行空中，不留痕迹，无遮无碍。“不履不游，不飞不度”——鸟道非有相之道，不可以足履、不可以身游、不可以翼飞、不可以舟度。自性亦如是——不可以言语入、不可以思量得、不可以修行至、不可以方便度。唯亲证方知——如鸟飞空，自证自知。",
     "master": "洞山良价",
     "source": "洞山语录 / 五灯会元",
-    "relatedConcepts": ["self-nature","beyond-words","wu-xiang"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["linji","dongshanyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "beyond-words",
+      "wu-xiang"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "linji",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "koan-80",
     "question": "如何是云门一字关？",
     "answer": "一字。",
-    "context": "僧问云门文偃禅师：“如何是云门一字关？”师曰：“一字。”",
+    "context": "此公案出自《云门广录 / 五灯会元》。学人就禅门关要参请云门文偃，问及“如何是云门一字关？”。云门文偃直以“一字。”答之，不涉浮言，直指心源。",
     "interpretation": "云门以“一字”答“一字关”——以一字还一字，不容拟议。云门宗风以“一字关”著称——凡有问，常以一字答之。如问“如何是佛”答“干”，问“如何是道”答“透”——一字之下，截断一切思量。一字关之妙在于简——越简越截断思量：不容学人拟议分别，须于一字下转身。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","jifeng"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-81",
@@ -13980,9 +14651,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "慧可断臂求法——此为禅宗最著名之求法公案。达摩“将心来与汝安”——令慧可觅心。慧可“觅心了不可得”——觅心不得，即见心本空。达摩“我与汝安心竟”——心既不可得，即无须安——不可得之心即是安心。此公案明示：心本空寂，不须别安——觅心不得处，即是安心处。",
     "master": "菩提达摩 / 慧可",
     "source": "传灯录 / 五灯会元",
-    "relatedConcepts": ["self-nature","emptiness","direct-pointing"],
-    "relatedPersons": ["bodhidharma","huike"],
-    "relatedBooks": ["xuemaicong","anxin"]
+    "relatedConcepts": [
+      "self-nature",
+      "emptiness",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "anxin"
+    ]
   },
   {
     "id": "koan-82",
@@ -13992,9 +14673,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "船子德诚为药山弟子，以船渡人为业。夹山参船子——船子呼“阇黎”，夹山回首——此回首即落第二念。船子曰“丝毫系念即落冤家”——一丝毫之念起，即落生死冤家。最后覆船入水而逝——以身命为最后之教：不须言语，以身示法。船子之死非自杀——乃以死示法：法已付竟，身可舍去。此为禅宗最壮烈之传法公案。",
     "master": "船子德诚",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["wu-nian","direct-pointing","mind-transmission"],
-    "relatedPersons": ["chuanzi-decheng","jiashan-shanhui"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "wu-nian",
+      "direct-pointing",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "chuanzi-decheng",
+      "jiashan-shanhui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-83",
@@ -14004,9 +14694,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "鲁祖以“今日风起”答“西来意”——风起者，自然之象。祖师西来意不在玄妙处，即此今日风起之自然。风起非造作——因缘时至，自然起风；道亦非造作——因缘时至，自然悟道。鲁祖以最自然之象示最玄妙之问——道法自然，不假功用。",
     "master": "鲁祖宝云",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["luzu-baoyun"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "luzu-baoyun"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-84",
@@ -14016,9 +14714,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "庞蕴之“好雪片片不落别处”——雪落何处，即落何处；不落别处，即落当下。此为悟后之境界——于一切法中见当下，不思前、不思后。雪片片落，每一片皆落当下——如悟自性者，每一念皆住当下，不思过去、不思未来。好雪者，非好坏之好——乃自然如是之好。雪落即落，不落别处——即此当下，即是道。",
     "master": "庞蕴",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["wu-nian","ordinary-mind","no-abiding"],
-    "relatedPersons": ["pang-yun","shitou","mazu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "wu-nian",
+      "ordinary-mind",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "shitou",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-85",
@@ -14028,9 +14736,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞烧木佛——此为禅宗破相之典型公案。木佛者，木雕之佛像——非真佛。丹霞烧之取暖，示“佛不在木雕中”。院主执木佛为佛——以相为佛；丹霞烧之——破其相执。“既无舍利更取两尊烧”——木佛既无舍利（非真佛），烧之何妨？此非不敬佛——乃破执相求佛之妄。真佛在自性——不在木雕中。",
     "master": "丹霞天然",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","buddha-nature","non-duality"],
-    "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-86",
@@ -14040,9 +14756,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "长沙之“百草头上祖师意”——百草者，一切草木；头上者，当下。祖师西来意不在别处，即此百草之当下。百草头上，祖师意——一切草木之生发，皆祖师西来意之显现。如春来草自青——草青即祖师意，不须别求。悟自性者，于百草中见祖师意——即事而真，即相而道。",
     "master": "长沙景岑",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","fajie-yuanqi"],
-    "relatedPersons": ["changsha-jingcen"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "fajie-yuanqi"
+    ],
+    "relatedPersons": [
+      "changsha-jingcen"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-88",
@@ -14052,9 +14776,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“三十年后莫错举”——三十年后，不要举此话问我。意谓：祖师西来意不可以言语说，你三十年后再问，我还是这样答——不如当下自悟。赵州之意：不要在言语上求西来意，须自参自悟。三十年后莫错举——即此当下，不须等待；若不悟，三十年后亦不悟。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-89",
@@ -14064,9 +14797,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“板齿生毛”——板齿者，平板之牙齿；生毛者，牙齿上长毛——此乃不可能之事。赵州以不可能之事答祖师西来意——意谓：祖师西来意如板齿生毛，不可以言语说、不可以思量得。学人若以言语思量求祖师意，如求板齿生毛——终不可得。唯超越言语思量，方能亲见。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","emptiness"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-90",
@@ -14076,9 +14818,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“镇州萝卜重三斤”——与洞山“麻三斤”异曲同工。萝卜三斤与祖师西来意何干？正因无道理，方能截断学人一切思量。学人问玄妙之西来意，赵州以最平常之萝卜答之——祖师西来意不在玄妙处，即此镇州萝卜之平常。当下一念不生，萝卜三斤即是祖师西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","beyond-words"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-91",
@@ -14088,9 +14839,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“过在老僧”——学人问西来意，赵州不答西来意，反说“过在老僧”——过错在我。此为赵州之谦语，亦为截断学人之机锋。学人问西来意，心中必有期待——期待师答以玄妙之语。赵州以“过在老僧”答之——我不该让你问这个问题，问即是错。意谓：西来意不须问，问即是过——过在老僧未及时截断你的追问。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-92",
@@ -14100,9 +14860,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“壁上画土泥”——壁上画土泥，如壁上画饼——不可充饥。赵州以此答西来意——意谓：以言语说西来意，如壁上画土泥——全无实义。学人若以言语求西来意，如以壁上画饼充饥——终不可得。唯亲证方知——如真饼可充饥，真悟可证道。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wenzi-zhang"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wenzi-zhang"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-93",
@@ -14112,21 +14881,39 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“老僧不在明白里”——明白者，清楚、了然。赵州不在明白里——即不在“清楚了然”之境界中。此为赵州之谦语，亦为悟后之境界——悟后不在“明白”中，亦不在“不明白”中。明白与不明白，皆为分别；赵州超越此分别——不在明白，不在不明白，即此超越分别之处，便是祖师西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","non-duality","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "non-duality",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-94",
     "question": "如何是佛法大意？",
     "answer": "且坐吃茶。",
-    "context": "僧问赵州从谂禅师：“如何是佛法大意？”师曰：“且坐吃茶。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是佛法大意？”。赵州从谂直以“且坐吃茶。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“且坐吃茶”——与“吃茶去”异曲同工。佛法大意不在玄妙处，即此且坐吃茶之平常。学人问佛法大意，赵州以最平常之“且坐吃茶”答之——截断学人之玄妙期待。且坐者，安坐当下；吃茶者，平常心。即此安坐当下之平常心，便是佛法大意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-95",
@@ -14136,9 +14923,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济三度问佛法，三度被黄檗打——黄檗不以言语答，以棒打截断临济之思量。临济当时不悟，疑自己有过无过。大愚点破：“黄檗老婆心切”——黄檗以棒打为慈悲，老婆心切为汝得彻困。临济于言下大悟——悟得黄檗棒打之旨：佛法不在言语中，棒打即是直指。“原来黄檗佛法无多子”——黄檗佛法没有多少，即此棒打便是。此为临济悟道之关键公案。",
     "master": "临济义玄 / 大愚",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","direct-pointing","beyond-words"],
-    "relatedPersons": ["linji","huangbo","dayu"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "direct-pointing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "linji",
+      "huangbo",
+      "dayu"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-96",
@@ -14148,9 +14945,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济以“喝”答“西来意”——临济宗风以“棒喝”著称。喝者，非骂人之喝——乃截断思量之喝。一声喝下，学人一切思量分别顿断——若于此喝下转身，即见祖师西来意。僧礼拜——以礼拜答喝，已落第二义：以动作回应喝，仍是分别。临济曰“你这个好礼拜”——非赞叹，乃勘验：你只知礼拜，不知喝之旨。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","koan","beyond-words"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-97",
@@ -14160,9 +14965,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "香严之“上树”公案——如人上树口衔树枝，手不攀枝脚不踏枝，处于极度危险之境。此时有人问西来意——不答则违问，答则丧身失命。此公案逼学人于“进退两难”处转身——答也不是，不答也不是。正于此“两难”处，思量不及、分别不得——若能于此“无路可走”处转身，即见祖师西来意。此为香严以极端情境逼学人顿悟之公案。",
     "master": "香严智闲",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","beyond-words","yiqing"],
-    "relatedPersons": ["xiangyan-zhixian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-98",
@@ -14172,9 +14985,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "沩山不“说破”本来面目——如人饮水冷暖自知，须自参自悟。此为禅宗“不以言语说破”之根本立场。师可为学人指出方向，然不可以代替学人悟道——如可以为人口渴指水，然不能代饮。自参自悟方为真悟——从他得者，如数他人宝，于己无益。",
     "master": "沩山灵祐",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["beyond-words","self-nature","direct-pointing"],
-    "relatedPersons": ["weishan-lingyou","xiangyan-zhixian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "beyond-words",
+      "self-nature",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "xiangyan-zhixian"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-99",
@@ -14184,9 +15006,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“待汝舌头烂了即向汝道”——舌头烂了，此乃不可能之事。与马祖“一口吸尽西江水”异曲同工——以不可能之事答祖师西来意。意谓：祖师西来意不可以言语说，如舌头不能烂——须自悟，不从他得。学人若以言语求西来意，如等舌头烂——终不可得。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-100",
@@ -14196,9 +15027,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖竖拂子——勘验百丈。百丈答“即此用离此用”——已落言语。马祖追问“汝向后开两片皮将何为人”——你以后开口为人说法，将如何？百丈竖拂子——以行动答；马祖再用百丈之语“即此用离此用”——将百丈之语还之。百丈挂拂子——以行动回应。马祖振威一喝，百丈三日耳聋——此喝非寻常之喝，乃直指人心之喝，令百丈于思量不及处亲见。三日耳聋者，非真耳聋——乃一切声音分别顿断，唯余自性之寂静。",
     "master": "马祖道一 / 百丈怀海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["jifeng","direct-pointing","jifeng"],
-    "relatedPersons": ["mazu","baizhang"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "jifeng",
+      "direct-pointing",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-101",
@@ -14208,9 +15048,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "庞蕴之“神通并妙用运水及搬柴”——神通妙用不在玄妙处，即此运水搬柴之平常。运水搬柴者，最平常之日常劳作——然悟自性者，于运水搬柴中显神通妙用。神通非飞天遁地——乃于平常中见不平常。如百丈“一日不作一日不食”——劳作即修行，平常即道。此为禅宗“平常心是道”之极致体现。",
     "master": "庞蕴",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","wu-nian","self-nature"],
-    "relatedPersons": ["pang-yun","baizhang"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-102",
@@ -14220,21 +15069,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州反问“汝唤什么作祖师西来意”——你叫什么作祖师西来意？此为反诘之法——将问题还之学人。学人问西来意，心中必有“西来意”之概念——赵州反问：你叫什么作西来意？逼学人反省：所谓“西来意”不过是自己心中之概念——概念非实，西来意非概念。学人无语——已落思量，无以作答。正于此无语处，若能转身，即见西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-103",
     "question": "如何是佛？",
     "answer": "嘶风木马。",
-    "context": "僧问投子大同禅师：“如何是佛？”师曰：“嘶风木马。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请投子大同，问及“如何是佛？”。投子大同直以“嘶风木马。”答之，不涉浮言，直指心源。",
     "interpretation": "投子之“嘶风木马”——木马者，木雕之马；嘶风者，迎风嘶鸣。木马不能嘶——嘶风木马乃不可能之事。投子以不可能之事答“如何是佛”——意谓：佛不可以言语说、不可以思量得，如木马不能嘶风。学人若以言语思量求佛，如求木马嘶风——终不可得。唯超越言语思量，方能亲见自性佛。",
     "master": "投子大同",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","beyond-words","emptiness"],
-    "relatedPersons": ["touzi-datong"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "touzi-datong"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-104",
@@ -14244,9 +15110,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“册子上亦不明”——册子者，经书典籍。祖师西来意在经书上亦不明说——不可以文字得。赵州示学人：不要在经书上求西来意——经书如指，指非月；经书如药，药非病愈。须自参自悟，不可以经书为究竟。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wenzi-zhang"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wenzi-zhang"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-105",
@@ -14256,9 +15131,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹山之“井中月”——井中月者，水中月影——捞不得。水中月非真月，然不离水而有月影——月影如幻，不可捞取。祖师西来意亦如是——不可以言语得，不可以思量取，如井中月捞不得。然井中月非无——月影宛然，只是不可取。西来意亦非无——悟则宛然，只是不可说、不可取。",
     "master": "曹山本寂",
     "source": "曹山语录 / 五灯会元",
-    "relatedConcepts": ["koan","emptiness","beyond-words"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "emptiness",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-106",
@@ -14268,9 +15151,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“十字街头起一间茅草店”——十字街头者，人来人往之处；茅草店者，最简陋之店铺。祖师西来意不在深山老林，即此十字街头之茅草店——最热闹处、最平常处。赵州以最世俗之象示最玄妙之问——道在闹市，不在深山；道在平常，不在玄妙。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","koan","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "koan",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-107",
@@ -14280,9 +15172,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“黑豆未生芽时”——黑豆未生芽，即未萌发之状态。意谓：祖师西来意在言语未生之前——即此一念未生时。黑豆生芽，如言语生起；未生芽时，如一念未生。赵州以黑豆喻念头——念头未生时，即是祖师西来意。此与“父母未生前本来面目”异曲同工。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","wu-nian","self-nature"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "wu-nian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-108",
@@ -14292,9 +15193,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“一人吃饭一人饱”——吃饭须自己吃，饱须自己饱——他人不能代。祖师西来意亦如是——悟须自悟，他人不能代。师可以为学人指出方向，然不能代学人悟道——如可以为人口渴指水，然不能代饮。赵州以最通俗之语示最深之理：修行是个人事，不假他人。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["self-nature","direct-pointing","koan"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "self-nature",
+      "direct-pointing",
+      "koan"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-109",
@@ -14304,9 +15214,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "翠微之“大好山色”——山色者，眼前之山景。祖师西来意不在别处，即此眼前山色。山色非心外之境——乃唯心所现之相。悟自性者，于山色中见自性——山色即自性之显现。此与法眼“山河大地”异曲同工——即事而真，即相而道。",
     "master": "翠微无学",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wei-xin-zao"],
-    "relatedPersons": ["cuiwei-wuxue"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "wei-xin-zao"
+    ],
+    "relatedPersons": [
+      "cuiwei-wuxue"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-110",
@@ -14316,9 +15234,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪窦之“山花笑野鸟啼”——山花自笑，野鸟自啼——一切自然，不假造作。祖师西来意亦如是——道法自然，不假功用。山花不须努力笑，野鸟不须努力啼——因缘时至，自然如此。悟道亦非努力——因缘时至，自然悟道。雪窦以自然之景示自然之道——一切现成，不假造作。",
     "master": "雪窦重显",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["xuedou-zhongxian"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "xuedou-zhongxian"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-112",
@@ -14328,9 +15254,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“答汝即落今时”——答你即落入当下之言语。祖师西来意超越时间——不在过去、不在未来、不在今时。若以今时之言语答，即落入时间相——已非祖师西来意。赵州不答——非不能答，乃不可答：西来意不可以言语说，说即落今时，落今时即非西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","no-abiding"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-113",
@@ -14340,9 +15275,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“汝道什么”——你说什么？此为反诘之法：将问题还之学人。学人问西来意，赵州反问“汝道什么”——你说的是什么？逼学人反省自己之问：你问的“西来意”是什么？你心中之“西来意”不过是自己之概念——概念非实。学人无语——正于此无语处，若能转身，即见西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-114",
@@ -14352,9 +15296,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "禾山之“钟鸣鼓响”——钟自鸣，鼓自响——一切自然，不假造作。祖师西来意不在别处，即此钟鸣鼓响之当下。钟鸣非为说佛法，鼓响非为示西来意——然悟自性者，于钟鸣鼓响中闻佛法、见西来意。一切声皆是说法——不限于佛经之言语。",
     "master": "禾山无殷",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","fayin","direct-pointing"],
-    "relatedPersons": ["heshan-wuyin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "fayin",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "heshan-wuyin"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-115",
@@ -14364,9 +15316,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "睦州之“三尺杖子破阎浮”——三尺杖子者，禅师手中之杖；阎浮者，阎浮提（我们所在之世界）。三尺杖子破阎浮——以小小杖子破大千世界。此为禅宗“一念破万法”之喻——一念顿悟，即破无始以来之执着。如三尺杖子虽小，能破阎浮——一念虽小，能破无明。",
     "master": "睦州道明",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","direct-pointing","instant-enlightenment"],
-    "relatedPersons": ["muzhou-daoming"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "direct-pointing",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "muzhou-daoming"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-116",
@@ -14376,9 +15336,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门之“南山起云北山下雨”——南山起云，北山下雨——看似不相干，实乃因缘和合之自然现象。南山起云，飘至北山而成雨——因缘和合，不假造作。祖师西来意亦如是——因缘和合，自然现前，不假造作。云门以自然之因缘示西来意之自然——一切现成，不假功用。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","yuanqi","direct-pointing"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "yuanqi",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-117",
@@ -14388,9 +15356,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法眼之“日里看山”——日里看山，山自宛然——不须造作，自然现前。祖师西来意亦如是——不须造作，自然现前。如日里看山——山不须努力使自己被看见，日不须努力使山显现——因缘和合，自然现前。法眼宗风以“一切现成”为旨——日里看山即一切现成之极致。",
     "master": "法眼文益",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","self-nature"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-118",
@@ -14400,9 +15376,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "风穴之“入水求人”——入水求人，此乃不可能之事——人不能在水中生存。风穴以不可能之事答祖师西来意——意谓：祖师西来意不可以言语说、不可以思量得，如入水不能求人。学人若以言语思量求祖师意，如入水求人——终不可得。唯超越言语思量，方能亲见。",
     "master": "风穴延沼",
     "source": "五灯会元",
-    "relatedConcepts": ["koan","beyond-words","emptiness"],
-    "relatedPersons": ["fengxue-yanzhao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "fengxue-yanzhao"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-119",
@@ -14412,9 +15396,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "罗汉之“波斯面壁”——波斯者，胡人；面壁者，达摩面壁之典故。波斯面壁——胡人面壁，此乃反常之象：面壁者本为达摩（天竺人），然罗汉以“波斯面壁”答之——打破学人对“面壁”之固定概念。意谓：祖师西来意不在固定之形式中——不可以“达摩面壁”为西来意，西来意超越一切固定形式。",
     "master": "罗汉桂琛",
     "source": "五灯会元",
-    "relatedConcepts": ["koan","beyond-words","non-duality"],
-    "relatedPersons": ["luohan-guichen"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "luohan-guichen"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-120",
@@ -14424,9 +15416,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "首山之“古佛未生前”——古佛未生前，即无始之前——超越时间之绝对境界。祖师西来意不在时间中——不在过去、不在未来、不在现在。古佛未生前，即此超越时间之当下——即此一念未生时。首山以“古佛未生前”示学人：西来意不在时间中，即此当下之心超越时间。",
     "master": "首山省念",
     "source": "五灯会元",
-    "relatedConcepts": ["koan","self-nature","wu-nian"],
-    "relatedPersons": ["shoushan-xingnian"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "shoushan-xingnian"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-121",
@@ -14436,9 +15436,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大阳之“风吹碧海”——风吹碧海，波涛自然生起——不假造作，因缘和合。祖师西来意亦如是——因缘和合，自然现前。如风吹海——风非造波，海非受波，因缘和合而波自生。悟道亦如是——非造作，非受动，因缘和合而自悟。",
     "master": "大阳警玄",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","yuanqi","direct-pointing"],
-    "relatedPersons": ["taiyang-jingxuan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "yuanqi",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "taiyang-jingxuan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-122",
@@ -14448,9 +15456,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "天童之“五通仙人问世尊”——此为引典故答西来意。五通仙人问世尊者，即佛经中之典故——以典故答西来意，示学人：西来意之根源在佛经中，然不可以经书为究竟。经书如指——因指见月，不可以指为月。天童以典故示学人：须自参自悟，不可以典故为西来意。",
     "master": "天童子凝",
     "source": "五灯会元",
-    "relatedConcepts": ["koan","beyond-words","wenzi-zhang"],
-    "relatedPersons": ["tiantong-zining"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "wenzi-zhang"
+    ],
+    "relatedPersons": [
+      "tiantong-zining"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-123",
@@ -14460,33 +15476,58 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "杨岐之“春日春山里春明春草鲜”——春日春山，春明春草——一切皆春，一切皆自然。祖师西来意不在别处，即此春日春山之自然。春来草自青——不假造作，自然现前。杨岐宗风以“自然”为旨——不以造作求道，因缘时至，自然悟道。此与云门“春来草自青”异曲同工。",
     "master": "杨岐方会",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-126",
     "question": "如何是佛？",
     "answer": "干屎橛。",
-    "context": "僧问云门文偃禅师：“如何是佛？”师曰：“干屎橛。”",
+    "context": "此公案出自《无门关第二十一则 / 五灯会元》。学人就禅门关要参请云门文偃，问及“如何是佛？”。云门文偃直以“干屎橛。”答之，不涉浮言，直指心源。",
     "interpretation": "云门之“干屎橛”——干屎橛者，拭粪之木片——最不净之物。学人问佛，云门以最不净之物答之——此为禅宗破佛执之极致。学人执佛为崇高清净，云门以最卑下不净之物答之——破其高低净秽之分别。佛非崇高——佛在一切处，不择净秽。悟自性者，于干屎橛中见佛性——一切法皆是佛性之显现。",
     "master": "云门文偃",
     "source": "无门关第二十一则 / 五灯会元",
-    "relatedConcepts": ["koan","non-duality","buddha-nature"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "non-duality",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-127",
     "question": "如何是佛？",
     "answer": "张三李四。",
-    "context": "僧问慈化普庵禅师：“如何是佛？”师曰：“张三李四。”",
+    "context": "此公案出自《五灯会元》。学人就禅门关要参请慈化普庵，问及“如何是佛？”。慈化普庵直以“张三李四。”答之，不涉浮言，直指心源。",
     "interpretation": "普庵之“张三李四”——张三李四者，最普通之人名。学人问佛，普庵以最普通之人名答之——佛非特殊人，即此张三李四之普通人。佛性本具一切众生——张三有佛性，李四有佛性，一切人皆有佛性。佛不在玄妙处，即此普通人之自性。此与马祖“平常心是道”异曲同工。",
     "master": "慈化普庵",
     "source": "五灯会元",
-    "relatedConcepts": ["buddha-nature","ordinary-mind","non-duality"],
-    "relatedPersons": ["cihua-puan"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "ordinary-mind",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "cihua-puan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-128",
@@ -14496,21 +15537,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“即汝是”——即汝是佛。学人问佛，大珠直指学人本身——你就是佛。此为禅宗“直指人心，见性成佛”之最直接开示。佛不在外——即汝自性即是佛。学人问“如何领会”——已落第二义：既知即汝是佛，何须更问领会？大珠曰“更问什么”——截断学人之追问，令其当下承担。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["direct-pointing","buddha-nature","self-nature"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "buddha-nature",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-129",
     "question": "如何是道？",
     "answer": "山深水冷。",
-    "context": "僧问赵州从谂禅师：“如何是道？”师曰：“山深水冷。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是道？”。赵州从谂直以“山深水冷。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“山深水冷”——山深水冷者，自然之景。道不在玄妙处，即此山深水冷之自然。山深非造作，水冷非造作——自然如是。道亦如是——不假造作，自然现前。赵州以自然之景示道之自然——道法自然，不假功用。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-130",
@@ -14520,33 +15578,58 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "石头之“动即失不动即迷”——动则失道，不动则迷道。动者，心起分别——起分别即失道；不动者，心住无记——住无记即迷道。道非动非不动——超越动静二边。如六祖“兀兀不修善，腾腾不造恶”——非动非不动，即此平常心即是道。石头以“动即失不动即迷”示学人：道在动静之外——不即动静，不离动静。",
     "master": "石头希迁",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["non-duality","wu-nian","zhongdao"],
-    "relatedPersons": ["shitou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "non-duality",
+      "wu-nian",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "shitou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-131",
     "question": "如何是禅？",
     "answer": "砖瓦将来。",
-    "context": "僧问赵州从谂禅师：“如何是禅？”师曰：“砖瓦将来。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是禅？”。赵州从谂直以“砖瓦将来。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“砖瓦将来”——砖瓦将来者，拿砖瓦来。学人问禅，赵州以“拿砖瓦来”答之——禅不在玄妙处，即此搬砖运瓦之平常。如庞蕴“神通并妙用，运水及搬柴”——禅在日用中，不在蒲团上。赵州以最平常之劳作示禅——平常心是道，搬砖运瓦即是禅。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-132",
     "question": "如何是禅？",
     "answer": "春来草自青。",
-    "context": "僧问云门文偃禅师：“如何是禅？”师曰：“春来草自青。”",
+    "context": "此公案出自《云门广录 / 五灯会元》。学人就禅门关要参请云门文偃，问及“如何是禅？”。云门文偃直以“春来草自青。”答之，不涉浮言，直指心源。",
     "interpretation": "云门之“春来草自青”——此为禅宗最优美之公案。春来草自青——不假造作，因缘时至，自然如此。禅亦如是——不假造作，因缘时至，自然悟道。草不须努力使自己青——春来自然青；人不须努力使自己悟——因缘时至自然悟。云门以自然之景示禅之自然——一切现成，不假功用。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","yuanqi"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "yuanqi"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-133",
@@ -14556,33 +15639,60 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“不道不知不道知”——不说不知，不说知。禅超越知与不知——不可以知得，不可以不知得。知者，分别心之知——以分别心知禅，已落思量；不知者，无记心之不知——以无记心不知禅，已落无记。禅非知非不知——超越知与不知二边。赵州以“不道不知不道知”示学人：禅在知与不知之外——不即知，不离知。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["non-duality","wu-nian","beyond-words"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "non-duality",
+      "wu-nian",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-134",
     "question": "如何是法？",
     "answer": "大好山色。",
-    "context": "僧问赵州从谂禅师：“如何是法？”师曰：“大好山色。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是法？”。赵州从谂直以“大好山色。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“大好山色”——法者，一切法。山色者，一切法之一。法不在经卷中，即此山色——山色即法，法即山色。悟自性者，于山色中见法——一切法皆是自性之显现。赵州以山色示法——法遍一切处，不限于经卷言语。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","fajie"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "fajie"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-135",
     "question": "如何是僧？",
     "answer": "剃头着袈裟。",
-    "context": "僧问赵州从谂禅师：“如何是僧？”师曰：“剃头着袈裟。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是僧？”。赵州从谂直以“剃头着袈裟。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“剃头着袈裟”——僧者，剃头着袈裟之人。此为最直白之答——不以玄妙答之，以最平常之相答之。然此非以相为僧——乃示学人：僧不在玄妙处，即此剃头着袈裟之平常。真僧在心不在相——然不离相而别有心。赵州以相示心——即此剃头着袈裟之相，当体即真僧。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","non-duality","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "non-duality",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-136",
@@ -14592,21 +15702,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“谁缚汝”——谁束缚你？此为禅宗最直接之反诘。学人问解脱，心中必有“被缚”之概念——大珠反问：谁缚你？意谓：本无人缚你——你被自己之妄想执着所缚。既无人缚，何须解脱？知无缚即是解脱——不须别求解脱。如六祖云：“本来无一物，何处惹尘埃。”——本来无缚，何须解脱？",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","emptiness","direct-pointing"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "emptiness",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-137",
     "question": "如何是心？",
     "answer": "即汝是。",
-    "context": "僧问大珠慧海禅师：“如何是心？”师曰：“即汝是。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请大珠慧海，问及“如何是心？”。大珠慧海直以“即汝是。”答之，不涉浮言，直指心源。",
     "interpretation": "大珠之“即汝是”——即汝是心。学人问心，大珠直指学人本身——你就是心。心不在外——即汝自性即是心。此与“即心即佛”异曲同工——心即佛，汝即心，故汝即佛。大珠以最直接之语示学人：不须向外求心——即此当下之汝，便是心。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","mind-is-buddha","direct-pointing"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "mind-is-buddha",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-138",
@@ -14616,9 +15742,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“本自悟”——悟者，本自悟。自性本具般若智——本自悟，不须更悟。然众生迷时，不见本自悟——故须修行以悟。既悟，即知本自悟——悟非得新物，乃知本自具足。如云开月现——月体本在（本自悟），云开（悟）后知月体本在。大珠以“本自悟”示学人：悟非从外得——乃知本自具足。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","benjue-shijue","instant-enlightenment"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "benjue-shijue",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-139",
@@ -14628,9 +15762,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“不生不灭”——涅槃者，不生不灭之境界。学人追问“如何是不生不灭”，赵州答“汝今在生灭中”——你现在正在生灭中。意谓：你问不生不灭，你当下之念正是生灭——念念生灭，即是生灭。然生灭之体即不生不灭——如波生灭，水体不生不灭。赵州示学人：不须离生灭别求不生不灭——即此生灭之体即是不生不灭。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["niepan","busheng-bumie","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "niepan",
+      "busheng-bumie",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-140",
@@ -14640,9 +15783,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“无不知”——般若者，无不知。无不知非“无所不知”之知——乃超越分别之知。知者，分别心之知——以此知此，以彼知彼，有能有所；无不知者，般若智之知——无能无所，一时圆照。如镜照物——镜不分别好丑，物来即照——镜之“知”即“无不知”。般若亦如是——不分别而无所不知。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["prajna","bore-zhi","guanzhao-bore"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "prajna",
+      "bore-zhi",
+      "guanzhao-bore"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-141",
@@ -14652,9 +15803,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“自性是”——善知识者，自性。学人以为善知识在外——须参访名师。大珠直指自性——自性即善知识。六祖云：“自性具三宝”——自性即佛、法、僧。自性本自具足，能生万法——自性即最善之知识。然大珠非否定外在善知识——乃示学人：外在善知识为缘，自性善知识为因——因绿和合方能悟道。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","shan-zhishi","sanbao"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "shan-zhishi",
+      "sanbao"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-142",
@@ -14664,9 +15823,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大珠之“饥来吃饭困来即眠”——此为禅宗最著名之修行公案。学人以为修行在玄妙处，大珠以最平常之“吃饭睡觉”答之——修行在日用中。然“吃饭睡觉”与常人何异？大珠点破：常人吃饭时百种须索（挑食、贪味），睡时千般计较（思虑、妄想）——吃饭睡时心不在当下。悟后之吃饭睡觉——吃饭即吃饭，睡时即睡，心在当下，无妄念。此为“平常心是道”之最佳诠释。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","wu-nian","wuxing"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "wuxing"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-143",
@@ -14676,9 +15843,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“汝什么处去来”——你从哪里来？此为反诘之法：将问题还之学人之行履。学人问西来意，赵州反问“你从哪里来”——你连自己从哪里来都不清楚，还问祖师西来意？意谓：西来意不在别处，即此汝当下之行履。汝从定州来——定州亦有西来意，不须问“祖师”西来意。赵州以学人之行履示西来意之当下——即此当下，便是西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-144",
@@ -14688,9 +15864,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四宾主——宾中宾者，学人未悟，师亦未悟——如客舍相逢，各自东西，两不相干。此为师徒皆在迷中之状态——师不能为人眼目，学人不能见性——如盲人引盲人，终不能到目的地。临济立四宾主以勘验师徒之机——令学人知何为真师，令师知何为真学人。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","jifeng","koan"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "jifeng",
+      "koan"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-145",
@@ -14700,9 +15884,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "宾中主者——学人未悟，师已悟。学人礼拜（求法），师家不顾（不以言语答）——师以不顾为直指，不以言语说破。此为师悟学人未悟之状态——师以机锋接引，不以言语说破。学人须自参自悟——不可以师之言语为悟。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","beyond-words","direct-pointing"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-146",
@@ -14712,9 +15904,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "主中宾者——师已悟，学人未悟。师家垂语（开示），学人罔措（不知所措）——师以言语直指，学人不能领会。此为师虽悟而言语不能令学人悟之状态——言语为宾，悟为主。师虽以言语接引，学人若执言语为道，即落宾位——不能见主。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","wenzi-zhang","beyond-words"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "wenzi-zhang",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-147",
@@ -14724,9 +15924,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "主中主者——师已悟，学人已悟。不入尘中（不着有为），不居尘外（不着无为）——超越有无二边，即此当下便是。此为师徒皆悟之状态——师不为师，学人不为学人——皆在自性中自由自在。主中主为临济四宾主之最高境界——师徒皆悟，机机相扣，如珠走盘，圆融无碍。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["non-duality","no-abiding","self-nature"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "non-duality",
+      "no-abiding",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-149",
@@ -14736,9 +15944,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门三句——一、涵盖乾坤者，绝对之理——一切法皆在自性中，如乾坤涵盖一切；二、截断众流者，顿悟之机——截断一切思量分别，如截断众流；三、随波逐浪者，悟后之境——悟后随缘度日，如随波逐浪。三句为云门宗风之纲——从理（涵盖乾坤）到行（截断众流）到果（随波逐浪），三句圆融，一即三，三即一。",
     "master": "云门文偃",
     "source": "云门广录 / 五灯会元",
-    "relatedConcepts": ["self-nature","instant-enlightenment","wuxing"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "self-nature",
+      "instant-enlightenment",
+      "wuxing"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "koan-150",
@@ -14748,9 +15964,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法眼三界——界内者，生死之内（迷界）；界外者，生死之外（悟界）；界间者，迷悟之间（修行位）。法眼宗风以“一切现成”为旨——然“现成”非不修行——须从界内（迷）经界间（修行）到界外（悟）。三界非固定——悟则界内即界外，迷则界外即界内。法眼以三界示修行之次第——然次第非实，乃方便说。",
     "master": "法眼文益",
     "source": "五灯会元",
-    "relatedConcepts": ["non-duality","dunwu-jianxiu","fangbian"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "non-duality",
+      "dunwu-jianxiu",
+      "fangbian"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-151",
@@ -14760,9 +15984,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹洞五位君臣——正（君）者，理体、自性；偏（臣）者，事相、万法。五位者：正中偏（理中事）——从理起事；偏中正（事中理）——从事见理；正中来（理中理）——纯然理体；偏中至（事中事）——纯然事相；兼中到（理事圆融）——理事不二，君臣道合。五位为曹洞宗风之核心——从理（正）到事（偏）到理事圆融（兼），五位圆融，方为究竟。",
     "master": "洞山良价",
     "source": "洞山语录 / 五灯会元",
-    "relatedConcepts": ["non-duality","li-ju-shi-zao","zhongdao"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["chanlinbaoxun","dongshanyulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "li-ju-shi-zao",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "koan-152",
@@ -14772,9 +16005,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济三玄——体中玄者，自性之体——自性本空，离一切相；句中玄者，言语之用——以言语直指人心，言语即道；玄中玄者，体用不二——自性与言语不二，即言即无言。三玄为临济宗风之纲——从体（体中玄）到用（句中玄）到体用不二（玄中玄），三玄圆融，一即三，三即一。",
     "master": "临济义玄",
     "source": "临济语录 / 五灯会元",
-    "relatedConcepts": ["jifeng","non-duality","self-nature"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "non-duality",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-153",
@@ -14784,9 +16025,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "沩仰圆相——沩仰宗风以画圆相为接引学人之方式。圆相者，圆形——象征圆满、自性、法界。画一圆相，问“是什么”——逼学人于圆相中见自性。圆相非圆相——乃自性之象征。学人若执圆相为圆相，已落相执；若能于圆相中见自性——即此圆相，便是自性之显现。沩仰以圆相示学人：自性圆满如圆——无欠无余，无始无终。",
     "master": "仰山慧寂",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["self-nature","yuanman","non-duality"],
-    "relatedPersons": ["yangshan-huiji","weishan-lingyou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "yuanman",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "yangshan-huiji",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-154",
@@ -14796,9 +16046,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "达摩西来意——此为禅宗之根本宗旨。不立文字者，不以经教文字为究竟——文字如指，指非月；直指人心者，直指学人自性——不假经教，不假言语，直指当下之心；见性成佛者，见自本性即成佛——佛非外得，乃见自性。此三句为禅宗之纲宗——一切公案、机锋、棒喝，皆为此三句之展开。",
     "master": "菩提达摩",
     "source": "六祖坛经 / 传灯录",
-    "relatedConcepts": ["direct-pointing","beyond-words","jianxing-chengfo"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "beyond-words",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-155",
@@ -14808,33 +16066,58 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "六祖得法偈——此为禅宗最著名之偈。神秀“身是菩提树心如明镜台时时勤拂拭勿使惹尘埃”——以身为菩提树，以心为明镜台，须时时拂拭——此为渐修之见。六祖“菩提本无树明镜亦非台本来无一物何处惹尘埃”——菩提无树，明镜非台——破神秀之执。本来无一物——自性本空，无菩提树亦无明镜台；何处惹尘埃——既无一物，尘埃何处可着？此为顿悟之见——自性本空，不须拂拭。五祖以此偈传衣法于六祖——禅宗南顿北渐之分由此而起。",
     "master": "六祖慧能",
     "source": "六祖坛经",
-    "relatedConcepts": ["self-nature","emptiness","dunwu-jianxiu"],
-    "relatedPersons": ["huineng","shenxiu"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "emptiness",
+      "dunwu-jianxiu"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "shenxiu"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-156",
     "question": "如何是即心即佛？",
     "answer": "即心即佛。",
-    "context": "僧问马祖道一禅师：“如何是即心即佛？”师曰：“即心即佛。”",
+    "context": "此公案出自《马祖语录 / 传灯录》。学人就禅门关要参请马祖道一，问及“如何是即心即佛？”。马祖道一直以“即心即佛。”答之，不涉浮言，直指心源。",
     "interpretation": "马祖之“即心即佛”——此为禅宗最根本之教义。即心即佛者，心即是佛——不须向外求佛，即此当下之心即是佛。然此心非妄心——乃自性真心。妄心念念生灭，真心不生不灭。悟真心即见佛性——即心即佛。马祖以此直指学人：佛不在外——即汝自心便是佛。",
     "master": "马祖道一",
     "source": "马祖语录 / 传灯录",
-    "relatedConcepts": ["mind-is-buddha","self-nature","direct-pointing"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-157",
     "question": "如何是非心非佛？",
     "answer": "非心非佛。",
-    "context": "僧问马祖道一禅师：“如何是非心非佛？”师曰：“非心非佛。”",
+    "context": "此公案出自《马祖语录 / 传灯录》。学人就禅门关要参请马祖道一，问及“如何是非心非佛？”。马祖道一直以“非心非佛。”答之，不涉浮言，直指心源。",
     "interpretation": "马祖之“非心非佛”——此为“即心即佛”之进一步。即心即佛者，以心为佛——然学人若执心为佛，即落心执。马祖为破此执，故说“非心非佛”——心亦非，佛亦非。即心即佛为破向外求佛之执；非心非佛为破执心为佛之执。两说皆为方便——究竟而言，即心即佛与非心非佛皆不可得——超越心与佛之二边，方为究竟。",
     "master": "马祖道一",
     "source": "马祖语录 / 传灯录",
-    "relatedConcepts": ["not-mind-not-buddha","non-duality","fangbian"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "not-mind-not-buddha",
+      "non-duality",
+      "fangbian"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-158",
@@ -14844,33 +16127,58 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈野狐——此为禅宗最著名之因果公案。老人答“不落因果”——大修行人不落因果——此为断见，拨无因果，故堕野狐身。百丈答“不昧因果”——大修行人不昧因果——不昧者，不违背、不糊涂——大修行人仍受因果，然不昧因果之理。因果不虚——虽悟自性，不无因果。悟后之人，于因果中得自在——非不受因果，乃不昧因果——知因果而不违因果。一字之差（落与昧），五百生野狐——示学人：不可拨无因果。",
     "master": "百丈怀海",
     "source": "无门关第二则 / 五灯会元",
-    "relatedConcepts": ["yinguo","koan","self-nature"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["baizhang","wumenguan"]
+    "relatedConcepts": [
+      "yinguo",
+      "koan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "baizhang",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-159",
     "question": "如何是无心？",
     "answer": "无心即是道。",
-    "context": "僧问黄檗希运禅师：“如何是无心？”师曰：“无心即是道。”",
+    "context": "此公案出自《黄檗传心法要 / 五灯会元》。学人就禅门关要参请黄檗希运，问及“如何是无心？”。黄檗希运直以“无心即是道。”答之，不涉浮言，直指心源。",
     "interpretation": "黄檗之“无心即是道”——无心者，非无一切心——乃无妄心。妄心者，念念生灭、分别执着之心；无心者，无妄念、无分别、无执着——即此无心，便是道。道非别物——即此无心之当下。如六祖云：“兀兀不修善，腾腾不造恶，寂寂断见闻，荡荡心无着。”——此即无心之境界。无心非死灰——乃于一切境不执着、不分别。",
     "master": "黄檗希运",
     "source": "黄檗传心法要 / 五灯会元",
-    "relatedConcepts": ["wu-nian","self-nature","ordinary-mind"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo"]
+    "relatedConcepts": [
+      "wu-nian",
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo"
+    ]
   },
   {
     "id": "koan-160",
     "question": "如何是本来面目？",
     "answer": "父母未生前。",
-    "context": "僧问六祖慧能：“如何是本来面目？”师曰：“父母未生前。”",
+    "context": "此公案出自《六祖坛经》。学人就禅门关要参请六祖慧能，问及“如何是本来面目？”。六祖慧能直以“父母未生前。”答之，不涉浮言，直指心源。",
     "interpretation": "六祖之“父母未生前”——本来面目者，父母未生前之本来状态。父母未生前——非指时间上之“生前”，乃指一念未生前——即此当下，一念不生时，便是本来面目。本来面目非别物——即此无念之自性。如云开月现——月体本在，云开（念息）后月体宛然。本来面目亦如是——自性本在，念息后自性宛然。",
     "master": "六祖慧能",
     "source": "六祖坛经",
-    "relatedConcepts": ["self-nature","wu-nian","ben-lai-mian-mu"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "wu-nian",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-161",
@@ -14880,9 +16188,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄檗之“色即是空空即是色”——此引《心经》之语以答真空妙有。真空妙有者——真空非断空，妙有非实有。色即是空——色（一切法）当体即空，非色灭后空；空即是色——空非断空，空即是色之体。真空妙有——空而不空（妙有），有而不有（真空）。悟自性者，于色中见空，于空中见色——色空不二，即真空妙有。",
     "master": "黄檗希运",
     "source": "黄檗传心法要 / 心经",
-    "relatedConcepts": ["emptiness","zhenkong-miaoyou","non-duality"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo","xinjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "zhenkong-miaoyou",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo",
+      "xinjing"
+    ]
   },
   {
     "id": "koan-162",
@@ -14892,9 +16209,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖之“平常心是道”——此为禅宗最根本之教义之一。平常心者——无造作（不假功用）、无是非（不分别善恶）、无取舍（不执着好恶）、无断常（不落断常二边）、无凡无圣（不分别凡圣）。即此平常心，便是道。道不在玄妙处——即此最平常之无造作、无分别之心。如赵州“吃茶去”、大珠“饥来吃饭困来即眠”——皆平常心是道之展开。",
     "master": "马祖道一",
     "source": "马祖语录 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","wu-nian","ordinary-mind"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "koan-163",
@@ -14904,9 +16229,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "六祖之“见自本性即名为佛”——见性者，见自本性；成佛者，即名为佛。佛非外得——见自本性即名为佛。不悟即佛是众生——自性本是佛，不悟即迷为众生；一念悟时众生是佛——一念顿悟，众生即佛。佛与众生之别，唯在迷悟——迷则佛是众生，悟则众生是佛。此为禅宗“直指人心，见性成佛”之根本教义。",
     "master": "六祖慧能",
     "source": "六祖坛经",
-    "relatedConcepts": ["jianxing-chengfo","self-nature","instant-enlightenment"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koan-164",
@@ -14916,9 +16249,20 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南泉斩猫——此为禅宗最著名之公案。东西两堂争猫——僧人执着于猫（外物），起争执。南泉提猫曰“道得即不斩道不得即斩”——逼众僧当下道一句。众无语——皆不能道，故斩猫。斩猫非残忍——乃斩众僧之执着。赵州后来，脱草鞋安头上而出——此为赵州之答：以倒行逆施之动作示“道”——道非言语，即此脱鞋安头之当下。南泉叹“汝若在救得猫儿”——赵州已在，猫儿不须斩。",
     "master": "南泉普愿",
     "source": "无门关第十四则 / 五灯会元",
-    "relatedConcepts": ["koan","jifeng","non-duality"],
-    "relatedPersons": ["nanquan-puyuan","zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "jifeng",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "nanquan-puyuan",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-165",
@@ -14928,9 +16272,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞烧佛——此为禅宗破佛执之著名公案。丹霞于天寒烧木佛——非不敬佛，乃破院主之佛执。院主执木佛为佛——丹霞烧之以破其执。院主问“何得烧我木佛”——“我”木佛，已落我执与佛执。丹霞曰“烧取舍利”——木佛若有舍利，烧之即得舍利；既无舍利，木佛不过是木——非真佛。丹霞以烧佛示院主：真佛在自性，不在木像。",
     "master": "丹霞天然",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["koan","buddha-nature","non-duality"],
-    "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-166",
@@ -14940,9 +16292,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "俱胝一指——俱胝和尚以一指答一切问——一指者，一真法界。一指非一指——乃自性之直指。童子模仿竖一指——然童子未悟，一指不过是模仿——非从自性流出。俱胝断童子指——破其模仿之执。童子回首时，俱胝竖一指——此时童子于失指之痛中，忽然见自性——一指非指，乃自性之直指。童子豁然大悟——悟不在指，在自性。",
     "master": "俱胝和尚",
     "source": "无门关第三则 / 五灯会元",
-    "relatedConcepts": ["koan","direct-pointing","self-nature"],
-    "relatedPersons": ["juzhi"],
-    "relatedBooks": ["chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "direct-pointing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "juzhi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-167",
@@ -14952,9 +16313,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "香严击竹——此为禅宗最著名之悟道公案。香严在沩山不能答“父母未生前本来面目”——以思量不能得。后在山中以瓦砾击竹——“啪”一声，忽然大悟。一击忘所知——一击之下，一切思量分别顿断——所知（思量分别之知）顿忘。悟不在思量——在思量断处。如击竹之声——声来即响，声去即寂——不假造作，自然如此。香严于击竹声中悟自性——自性如声，不假造作，自然现前。",
     "master": "香严智闲",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["instant-enlightenment","self-nature","wu-nian"],
-    "relatedPersons": ["xiangyan-zhixian","weishan-lingyou"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-168",
@@ -14964,21 +16334,38 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "灵云桃花——灵云三十年参学不悟，一见桃花忽然大悟。三十年寻剑——寻剑者，寻自性也；落叶抽枝——三十年光阴流转。一见桃花——桃花自开自落，不假造作——灵云于桃花之自然中见自性。自性如桃花——不假造作，自然现前。直至如今更不疑——悟后不疑，如桃花年年开——不须努力，自然如此。灵云以桃花悟道——示学人：道在自然，不在造作。",
     "master": "灵云志勤",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["instant-enlightenment","ordinary-mind","self-nature"],
-    "relatedPersons": ["lingyun-zhiqin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "ordinary-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "lingyun-zhiqin"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-169",
     "question": "如何是禅？",
     "answer": "猛火燃眉毛。",
-    "context": "僧问赵州从谂禅师：“如何是禅？”师曰：“猛火燃眉毛。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是禅？”。赵州从谂直以“猛火燃眉毛。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“猛火燃眉毛”——猛火燃眉毛者，至急之事——不暇思量，须当下承担。禅亦如是——不暇思量，须当下承担。思量即落第二义——如猛火燃眉毛，不暇思量救不救，须当下扑灭。赵州以“猛火燃眉毛”示学人：禅在当下——不暇思量，须直下承担。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","instant-enlightenment","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "instant-enlightenment",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-170",
@@ -14988,45 +16375,77 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法眼之“白云覆青障明月照澄江”——白云覆青障者，自然之景；明月照澄江者，自然之景。道不在别处，即此白云明月之自然。白云不须努力覆青障，明月不须努力照澄江——因缘和合，自然如此。道亦如是——不假造作，自然现前。法眼宗风以“一切现成”为旨——白云明月即一切现成之极致。",
     "master": "法眼文益",
     "source": "五灯会元",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","yuanqi"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "yuanqi"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-171",
     "question": "如何是法身？",
     "answer": "虚空。",
-    "context": "僧问大珠慧海禅师：“如何是法身？”师曰：“虚空。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请大珠慧海，问及“如何是法身？”。大珠慧海直以“虚空。”答之，不涉浮言，直指心源。",
     "interpretation": "大珠之“虚空”——法身者，虚空。虚空者，无相、无边、无碍——法身亦如是。法身非有相之身——乃无相之身。如虚空——无相而含一切相，无边而含一切边，无碍而含一切碍。法身亦如是——无相而含一切法，无边而含一切法，无碍而含一切法。然大珠非以虚空为法身——乃以虚空喻法身：法身如虚空——无相、无边、无碍。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["fashen","emptiness","self-nature"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "fashen",
+      "emptiness",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-172",
     "question": "如何是报身？",
     "answer": "光明。",
-    "context": "僧问大珠慧海禅师：“如何是报身？”师曰：“光明。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请大珠慧海，问及“如何是报身？”。大珠慧海直以“光明。”答之，不涉浮言，直指心源。",
     "interpretation": "大珠之“光明”——报身者，光明。报身者，修行所感之果报身——万德圆满，光明遍照。如日光明——不假造作，自然遍照。报身亦如是——修行圆满，自然光明遍照。然大珠非以光明为报身——乃以光明喻报身：报身如光明——圆满、遍照、无碍。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["baoshen","bore-zhi","self-nature"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "baoshen",
+      "bore-zhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-173",
     "question": "如何是化身？",
     "answer": "随类现身。",
-    "context": "僧问大珠慧海禅师：“如何是化身？”师曰：“随类现身。”",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请大珠慧海，问及“如何是化身？”。大珠慧海直以“随类现身。”答之，不涉浮言，直指心源。",
     "interpretation": "大珠之“随类现身”——化身者，随类现身。化身者，应众生之机而化现之身——如观音“应以何身得度者即现何身而为说法”。随类现身——随众生之类别而化现不同之身。如水——在方器则方，在圆器则圆——水不改变其性，然随器而异形。化身亦如是——法身不变，然随众生之机而化现不同之身。",
     "master": "大珠慧海",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["huashen","fangbian","cibei"],
-    "relatedPersons": ["dazhu-huihai"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "huashen",
+      "fangbian",
+      "cibei"
+    ],
+    "relatedPersons": [
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-174",
@@ -15036,9 +16455,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“青州布衫重七斤”——此为禅宗最著名之“无意义”公案。学人问西来意，赵州以“青州布衫重七斤”答之——布衫与西来意何干？正因无道理，方能截断学人一切思量。学人问西来意，心中必有“西来意”之概念——赵州以毫不相干之“青州布衫重七斤”答之，令学人于思量不及处转身。即此布衫，当下一念不生时，即是西来意。",
     "master": "赵州从谂",
     "source": "碧岩录第四十五则 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-175",
@@ -15048,9 +16475,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“板齿生毛”——板齿者，门牙；生毛者，长毛。门牙长毛——此乃不可能之事。赵州以不可能之事答西来意——意谓：祖师西来意不可以言语说、不可以思量得，如板齿不能生毛。学人若以言语思量求祖师意，如望板齿生毛——终不可得。唯超越言语思量，方能亲见。",
     "master": "赵州从谂",
     "source": "碧岩录 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","emptiness"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-176",
@@ -15060,9 +16495,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖之“一口吸尽西江水”——一口吸尽西江水，此乃不可能之事。马祖以不可能之事答西来意——意谓：祖师西来意不可以言语说。若你能一口吸尽西江水（不可能），我再向你道。然一口吸尽西江水既不可能，则西来意终不可说——唯自参自悟。马祖以“一口吸尽西江水”截断学人之思量——令其于言语道断处转身。",
     "master": "马祖道一",
     "source": "碧岩录第三则 / 传灯录",
-    "relatedConcepts": ["koan","beyond-words","direct-pointing"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-177",
@@ -15072,9 +16515,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖之“神通并妙用运水及搬柴”——神通妙用不在玄妙处，即此运水搬柴之平常。学人以为神通妙用在飞天遁地、呼风唤雨——马祖以“运水搬柴”答之——神通妙用在日用中。如大珠“饥来吃饭困来即眠”——平常心是道，运水搬柴即是神通妙用。祖师西来意不在玄妙处，即此运水搬柴之当下。",
     "master": "马祖道一",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","shentong","wu-nian"],
-    "relatedPersons": ["mazu","pang-yun"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "shentong",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "pang-yun"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-179",
@@ -15084,9 +16536,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“黑豆未生芽”——黑豆未生芽者，一切概念未生起前之状态。黑豆者，喻概念、思量；未生芽者，概念、思量未生起。祖师西来意不在思量中——即此思量未生起之当下。如六祖“不思善不思恶正与么时那个是明上座本来面目”——不思善不思恶即“黑豆未生芽”——即此当下，便是西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","wu-nian","self-nature"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "wu-nian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-183",
@@ -15096,9 +16557,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪窦之“山花笑野鸟啼”——山花自笑，野鸟自啼——一切自然，不假造作。祖师西来意不在别处，即此山花野鸟之自然。山花不须努力使自己笑，野鸟不须努力使自己啼——因缘和合，自然如此。西来意亦如是——不假造作，自然现前。雪窦以自然之景示西来意之自然——一切现成，不假功用。",
     "master": "雪窦重显",
     "source": "碧岩录 / 五灯会元",
-    "relatedConcepts": ["ordinary-mind","wu-nian","direct-pointing"],
-    "relatedPersons": ["xuedou-zhongxian"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "xuedou-zhongxian"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-184",
@@ -15108,33 +16577,59 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "船子夹山——船子德诚传法于夹山善会后，翻船入水而逝——以生命印证法之传承。船子嘱夹山“藏身处没踪迹没踪迹处莫藏身”——藏身于无踪迹处（不住有为），然无踪迹处亦莫藏身（不住无为）——超越有无二边。竿头丝线从君弄——如钓鱼者竿头丝线，任君摆弄——不执着于法；不犯清波意自殊——虽垂丝于水，然不染着于水——虽在世间，然不染世间。船子以渔父之喻示禅之自在——在世而不染世。",
     "master": "船子德诚",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["non-duality","no-abiding","self-nature"],
-    "relatedPersons": ["chuanzi-decheng","jiashan-shanhui"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "non-duality",
+      "no-abiding",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "chuanzi-decheng",
+      "jiashan-shanhui"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-185",
     "question": "鲁祖面壁",
     "answer": "面壁。",
-    "context": "鲁祖宝云禅师见僧来，便面壁。僧无语。",
+    "context": "此公案出自《五灯会元 / 传灯录》。学人就禅门关要参请鲁祖宝云，问及“鲁祖面壁”。鲁祖宝云直以“面壁。”答之，不涉浮言，直指心源。",
     "interpretation": "鲁祖面壁——见僧来便面壁——不以言语接引，以面壁为直指。面壁者，如达摩面壁——不以言语说，以默然为直指。鲁祖之面壁非不接引——乃以默然接引：道不在言语中，即此默然之当下。僧来欲求法——鲁祖面壁示之：法不在言语中，即此面壁之当下便是法。然僧无语——不能领会鲁祖之直指。",
     "master": "鲁祖宝云",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["beyond-words","direct-pointing","wu-nian"],
-    "relatedPersons": ["luzu-baoyun"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "luzu-baoyun"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-186",
     "question": "落汤鸡",
     "answer": "落汤鸡。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“落汤鸡。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“落汤鸡”。赵州从谂直以“落汤鸡。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“落汤鸡”——落汤鸡者，鸡落水中——浑身湿透，狼狈不堪。赵州以“落汤鸡”答西来意——意谓：祖师西来意如落汤鸡——浑身湿透，一切庄严相尽失。学人问西来意，心中必有庄严之概念——赵州以最不庄严之“落汤鸡”答之——破其庄严执。道不在庄严处——即此最不庄严之落汤鸡，便是西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","non-duality"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-187",
@@ -15144,9 +16639,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大梅即心即佛——大梅闻马祖“即心即佛”便悟，住山不去。后闻马祖改说“非心非佛”，大梅不为所动——“任他非心非佛我只管即心即佛”。马祖叹“梅子熟也”——大梅悟道已成熟，不为言语所转。此公案示学人：悟后之人，不为师家之言语所转——即心即佛与非心非佛皆为方便，悟者不执方便。大梅之“我只管即心即佛”——非执着于即心即佛，乃已超越即心即佛与非心非佛之二边——任他变化，我只管自性。",
     "master": "大梅法常",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["mind-is-buddha","self-nature","fangbian"],
-    "relatedPersons": ["damei-fachang","mazu"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature",
+      "fangbian"
+    ],
+    "relatedPersons": [
+      "damei-fachang",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-188",
@@ -15156,9 +16660,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "鸟窠吹毛——白居易问佛法大意，鸟窠吹布毛曰“如是”——吹毛者，最平常之动作。佛法大意不在玄妙处，即此吹毛之当下。然白居易不悟——以思量分别求佛法大意，不能于吹毛之当下见自性。鸟窠以最平常之吹毛示佛法大意——道在日用中，不在玄妙处。然悟与不悟，唯在学人——师家可以直指，不可以代悟。",
     "master": "鸟窠道林",
     "source": "五灯会元 / 传灯录",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wu-nian"],
-    "relatedPersons": ["niaoke-daolin"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "niaoke-daolin"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-189",
@@ -15168,9 +16680,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“庭前柏树子”——此为禅宗最著名之公案。学人问西来意，赵州以“庭前柏树子”答之——柏树子与西来意何干？正因无道理，方能截断学人一切思量。学人问西来意，心中必有“西来意”之概念——赵州以毫不相干之“庭前柏树子”答之，令学人于思量不及处转身。即此柏树子，当下一念不生时，即是西来意。柏树子即法界——一切法皆是自性之显现。",
     "master": "赵州从谂",
     "source": "碧岩录第三十七则 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-190",
@@ -15180,33 +16700,59 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“镇州大萝卜”——镇州大萝卜者，最普通之物。学人问西来意，赵州以最普通之“镇州大萝卜”答之——西来意不在玄妙处，即此最普通之大萝卜。如“庭前柏树子”——一切法皆是自性之显现。赵州以最普通之物示西来意——道在平常，不在玄妙。然大萝卜非大萝卜——当下一念不生时，即此大萝卜便是西来意。",
     "master": "赵州从谂",
     "source": "碧岩录第三十则 / 五灯会元",
-    "relatedConcepts": ["koan","beyond-words","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "koan-191",
     "question": "如何是祖师西来意？",
     "answer": "吃茶去。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“吃茶去。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是祖师西来意？”。赵州从谂直以“吃茶去。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“吃茶去”——此为禅宗最著名之公案。学人问西来意，赵州以“吃茶去”答之——吃茶与西来意何干？正因无道理，方能截断学人一切思量。吃茶者，最平常之事——道在最平常处，不在玄妙处。如大珠“饥来吃饭困来即眠”——平常心是道，吃茶即是西来意之显现。赵州以最平常之吃茶示西来意——不须向外求，即此当下吃茶便是。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-192",
     "question": "如何是祖师西来意？",
     "answer": "洗钵去。",
-    "context": "僧问赵州从谂禅师：“如何是祖师西来意？”师曰：“洗钵去。”",
+    "context": "此公案出自《赵州语录 / 五灯会元》。学人就禅门关要参请赵州从谂，问及“如何是祖师西来意？”。赵州从谂直以“洗钵去。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州之“洗钵去”——洗钵者，饭后洗钵——最平常之事。学人问西来意，赵州以“洗钵去”答之——西来意不在玄妙处，即此洗钵之平常。如“吃茶去”——道在日用中，不在蒲团上。赵州以最平常之洗钵示西来意——平常心是道，洗钵即是西来意之显现。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-193",
@@ -15216,9 +16762,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“今日好晴”——今日好晴者，最平常之天气。学人问西来意，赵州以最平常之“今日好晴”答之——西来意不在玄妙处，即此今日好晴之平常。如“春来草自青”——道在自然，不在造作。赵州以最平常之天气示西来意——道法自然，不假功用。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-194",
@@ -15228,9 +16783,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“无”——此为禅宗最著名之公案（无门关第一则）。学人问狗子有佛性否，赵州答“无”。然经云“一切众生皆有佛性”——狗子何独无？赵州之“无”非否定佛性——乃以“无”截断学人之思量。学人以“有”之概念问佛性——赵州以“无”破其“有”执。有与无皆不可得——超越有无二边，方见佛性。此公案为无门关第一则——以“无”字为话头，令学人于“无”处参究，至能所双亡时，忽然见性。",
     "master": "赵州从谂",
     "source": "无门关第一则 / 五灯会元",
-    "relatedConcepts": ["koan","buddha-nature","emptiness"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["yunmen","chanlinbaoxun","wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "yunmen",
+      "chanlinbaoxun",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-195",
@@ -15240,9 +16805,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“大好山色”——山色者，自然之景。祖师西来意不在别处，即此山色之自然。山色不须努力使自己美——因缘和合，自然如此。西来意亦如是——不假造作，自然现前。赵州以山色示西来意之自然——一切现成，不假功用。悟自性者，于山色中见西来意——山色即法界，一切法皆是自性之显现。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-196",
@@ -15252,9 +16826,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“老僧正在困”——老僧正在困倦。学人问西来意，赵州以“老僧正在困”答之——西来意不在玄妙处，即此困倦之当下。如大珠“困来即眠”——平常心是道，困倦即是西来意之显现。赵州以最平常之困倦示西来意——道在日用中，不在蒲团上。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-198",
@@ -15264,9 +16847,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“春来草自青”——春天来了，草自然青。草不须努力使自己青——因缘和合，自然如此。祖师西来意亦如是——不假造作，自然现前。赵州以自然之景示西来意之自然——一切现成，不假功用。悟自性者，于草青中见西来意——草青即法界，一切法皆是自性之显现。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-199",
@@ -15276,9 +16868,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“盐青米白”——盐是青的，米是白的——最平常之事物。学人问西来意，赵州以最平常之“盐青米白”答之——西来意不在玄妙处，即此盐米之平常。如“吃茶去”、“洗钵去”——道在日用中，不在蒲团上。赵州以最平常之盐米示西来意——平常心是道，盐青米白即是西来意之显现。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-200",
@@ -15288,9 +16889,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州之“老僧正在洗脚”——老僧正在洗脚——最平常之事。学人问西来意，赵州以最平常之“洗脚”答之——西来意不在玄妙处，即此洗脚之当下。如“吃茶去”、“洗钵去”——道在日用中，不在蒲团上。赵州以最平常之洗脚示西来意——平常心是道，洗脚即是西来意之显现。至此，赵州以各种最平常之事物答西来意——柏树子、大萝卜、吃茶、洗钵、好晴、山色、困倦、洗脚——皆示学人：道在平常，不在玄妙；即此当下，便是西来意。",
     "master": "赵州从谂",
     "source": "赵州语录 / 五灯会元",
-    "relatedConcepts": ["koan","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["chanlinbaoxun","yunmen"]
+    "relatedConcepts": [
+      "koan",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-201",
@@ -15300,9 +16910,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "无门慧开以赵州“狗子无佛性”为《无门关》开篇第一则。佛经明言丗生皆有佛性，赵州却答“无”，不是拨无佛性，而是以一字斩断学人“有”“无”的思量分别。无门令学人参这个“无”字——不作虚无会，不作有无会，只管提撕，通身起疑团，如吞热铁丸，吐又吐不出，久久纯熟，蓦然打发，惊天动地。",
     "master": "赵州从谂 / 无门慧开评唱",
     "source": "无门关 第一则",
-    "relatedConcepts": ["koan","wu-men","buddha-nature"],
-    "relatedPersons": ["zhaozhou","wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "wu-men",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-202",
@@ -15312,9 +16931,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈之“不许知”，意在斜断学人以知见卜度为悟。知见即是污染，“不知”方是净土。无门评日：“要是他知，便是陆羽公、水海；他若不知，便是饱食醒眠的污泥。”——知与不知，两边不立，方是无门意。",
     "master": "百丈怀海 / 无门慧开评唱",
     "source": "无门关 第二则",
-    "relatedConcepts": ["koan","wu-men","beyond-words"],
-    "relatedPersons": ["baizhang","wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "wu-men",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-203",
@@ -15324,9 +16952,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "六祖以“不思善不思恶”直指本来面目——善恶忽念不起时，那个了了常知的，就是本来面目。无门评日：“譬如新荔枝剃了壳，去了核送在尔口里，只要尔咽一咽”——六祖老婆心切，几乎替你嚼碎了。本来面目不是“找到”的，而是“认出”的——本自具足，从未丢失。",
     "master": "六祖惠能",
     "source": "无门关 第三则 / 六祖坛经",
-    "relatedConcepts": ["ben-lai-mian-mu","wu-nian","self-nature"],
-    "relatedPersons": ["huineng","wumen-huikai"],
-    "relatedBooks": ["wumenguan","tanjing"]
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "wu-nian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan",
+      "tanjing"
+    ]
   },
   {
     "id": "koan-204",
@@ -15336,9 +16974,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大道本无门，但千差万别皆是入道之路。透得无门之关，则千差万别皆是我家珍宝，乾坤独步，自在无碍。无门以“无”字为敲门瓦子，通身起疑团，如吞热铁丸，吐又吐不出，久久纯熟，蓦然打发，惊天动地。",
     "master": "无门慧开",
     "source": "无门关 颂",
-    "relatedConcepts": ["wu-men","koan","beyond-words"],
-    "relatedPersons": ["wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "wu-men",
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-205",
@@ -15348,9 +16994,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世尊之问，意在勘验无门之见地。无门答“不可乱久”——一吐能沉局院山，但不可乱久。乱久则落入凡情，不乱久则保任自在。此与赵州“吃茶去”异曲同工——平常心是道，但不可执着平常。",
     "master": "世尊 / 无门慧开",
     "source": "无门关 第十七则",
-    "relatedConcepts": ["koan","wu-men","ordinary-mind"],
-    "relatedPersons": ["wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "wu-men",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-206",
@@ -15360,9 +17014,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄檗运示“腊月三十日”即临终时，平日只学口头三晴、说禅说道、呵佛骂祖，到底来都用不着。参禅不是口头上的事，是生死命脖上的事。看“无”字话头，不是理解“无”的含义，而是以“无”为木楫，二十四小时不断提播，打成一片后忽然顿悟。这是后世看话头的源头。",
     "master": "黄檗希运",
     "source": "禅关策进·诸祖法语节要第一",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","zuo-gong-fu"],
-    "relatedPersons": ["huangbo","zhaozhou","zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "zuo-gong-fu"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "zhaozhou",
+      "zhuhong"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "koan-207",
@@ -15372,9 +17036,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "东山法演把“生死”贴在额头上，就是要你时刻提醒自己：我是为了生死大事来参禅的，不是来打哄的。杂念多时不可硬抑，轻轻放下，下地走动再坐，如沸汤掺冷水。这是做工夫的具体方法，不是空谈理论。",
     "master": "东山法演",
     "source": "禅关策进·诸祖法语节要第一",
-    "relatedConcepts": ["yiqing","zuo-gong-fu","kanhua-chan-concept"],
-    "relatedPersons": ["fayan-wenyi","zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "yiqing",
+      "zuo-gong-fu",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "zhuhong"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "koan-208",
@@ -15384,9 +17057,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "蒙山异示参禅十八日就开悟，但开悟后迷信海印三昧，病中全用不得。应了连池大师的警示：不论平日有多少解会，生死关头全用不着。唯有死志做工夫，提起话头不放，才能于病中不被业缘境界所转。这是“带病精修”的典范，也是日本正受老人因此章奋发精进的缘起。",
     "master": "蒙山异",
     "source": "禅关策进·诸祖法语节要第一",
-    "relatedConcepts": ["yiqing","zuo-gong-fu","kanhua-chan-concept"],
-    "relatedPersons": ["zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "yiqing",
+      "zuo-gong-fu",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "zhuhong"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "koan-209",
@@ -15396,9 +17077,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "中峰本示“拼取生与同生、死与同死”，是死志参禅的极致表述。不是叫你去死，是叫你把生死看透，不悟就不罢休。这与沩山警策“以悟为则”完全一致：参禅以彻悟为唯一标准，不是以“懂了”“会了”为标准。",
     "master": "中峰本",
     "source": "禅关策进·诸祖法语节要第一",
-    "relatedConcepts": ["yiqing","zuo-gong-fu","kanhua-chan-concept"],
-    "relatedPersons": ["zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "yiqing",
+      "zuo-gong-fu",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "zhuhong"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "koan-210",
@@ -15408,9 +17097,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "壁峰金参万法公案，疑了三年还不肯放下。晋云海两次勘验，金两次回答都不同——符示万法，扑筡示放下。但金都不肯，说明疑情还在。直到胁不沾席、一坐七日，疑情熟透，闻伐木声而悟。参禅就是这样：疑到极处，往往一声、一动、一境而顽旷然打破。",
     "master": "壁峰金",
     "source": "禅关策进·诸祖苦功节略第二",
-    "relatedConcepts": ["yiqing","zuo-gong-fu","kanhua-chan-concept"],
-    "relatedPersons": ["zhuhong"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "yiqing",
+      "zuo-gong-fu",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "zhuhong"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "koan-211",
@@ -15420,9 +17117,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "这是起信论中最精彩的喻言。迷人谓东为西，方实没有变——心被无明迷惑而“动”，但心体本来不动。如同水因风起波，风止波息，水体不灭。禅宗参究到无路处，正是从生灭门透入真如门——知“动即不动”，就是悟。",
     "master": "马鸣菩萨",
     "source": "大乘起信论·解释分",
-    "relatedConcepts": ["zhenru","wuming","yi-xin-er-men"],
-    "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedConcepts": [
+      "zhenru",
+      "wuming",
+      "yi-xin-er-men"
+    ],
+    "relatedPersons": [
+      "ming-bodhisattva"
+    ],
+    "relatedBooks": [
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "koan-212",
@@ -15432,9 +17137,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "摩尼宝喻解决了“本具”与“修行”的关系：摩尼宝本自明洁，但裹在矿石中，不施功力就不能显现。真如本具功德，但被客尘染污，不修行就不能清净。禅宗虽强调“本来是佛”，但决不废弃修行——本具是理，修行是事，理事并举方能合一。",
     "master": "马鸣菩萨",
     "source": "大乘起信论·解释分",
-    "relatedConcepts": ["zhenru","tathagatagarbha","xun-xi"],
-    "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedConcepts": [
+      "zhenru",
+      "tathagatagarbha",
+      "xun-xi"
+    ],
+    "relatedPersons": [
+      "ming-bodhisattva"
+    ],
+    "relatedBooks": [
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "koan-213",
@@ -15444,9 +17157,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济和尚‘无位真人’在汝诸人六根门头放光动地。宗师劈头揭示自性真人灵明洞彻、不住阶位，逼问学人当下识取。僧拟议，临济便云‘无位真人是什么干屎橛’，彻底扫除学人执实自性为一物之微细法执。",
     "master": "庞蕴居士",
     "source": "圜悟心要·示华藏明首座",
-    "relatedConcepts": ["wuxin-dao-ren","ordinary-mind"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "wuxin-dao-ren",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-214",
@@ -15456,9 +17177,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈‘不昧因果’与‘不落因果’之一字之差，照破野狐五百世之葛藤。不落因果是拨无因果之恶取空，不昧因果是理事圆融、因果历然而不着生灭之大解脱。百丈一语令野狐脱体，显大乘空有不二之极则。",
     "master": "赵州从谂",
     "source": "圜悟心要·示坚道者",
-    "relatedConcepts": ["wuxin-dao-ren"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "wuxin-dao-ren"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-215",
@@ -15468,9 +17196,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州‘狗子无佛性’，单单一个‘无’字，斩断天下衲僧情识葛藤。不是有无之无，不是虚无之无；乃是令参学者于此无滋味处咬定牙关，直透重关、打破桶底之第一话头。",
     "master": "大梅法常",
     "source": "圜悟心要·示印禅人",
-    "relatedConcepts": ["jingang-zhengti"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "jingang-zhengti"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-216",
@@ -15480,9 +17215,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "马祖扭百丈鼻孔，扭的不是鼻孔而是执着。百丈说“飞过了也”，心已随野鸭子飞去——马祖一扭，将他的心从外境上拉回来。何曾飞去——野鸭子飞了，但你的心何曾飞去？百丈于此有省：外境生灭来去，心性不动不摇。",
     "master": "马祖道一",
     "source": "圜悟佛果禅师语录卷十九",
-    "relatedConcepts": ["self-nature","koan","jieduan-zhongliu"],
-    "relatedPersons": ["mazu","baizhang","yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "koan",
+      "jieduan-zhongliu"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "baizhang",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-217",
@@ -15492,9 +17237,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "独坐大雄峰——不是傲慢，而是彻悟后的绝对自在。僧人礼拜表示会得，百丈便打——打的是他的“会得”，因为会得本身已是第二头。圜悟颂“才捋虎须棒头有眼”，赞百丈机锋之峻烈精准。",
     "master": "百丈怀海",
     "source": "圜悟佛果禅师语录卷十九",
-    "relatedConcepts": ["self-nature","koan"],
-    "relatedPersons": ["baizhang","yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "koan"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-218",
@@ -15504,45 +17257,61 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞托幞头——以动作表示求法之诚恳。马祖不收，指他去石头处，因马祖知丹霞之根机在石头座下方能成就。丹霞于石头处从杂役做起，待时机成熟，以“请师刬草”一语获得剃发。骑圣僧项——彻底超越佛圣相，方见本来面目。",
     "master": "丹霞天然",
     "source": "圜悟佛果禅师语录卷十九",
-    "relatedConcepts": ["self-nature","koan","beyond-words"],
-    "relatedPersons": ["mazu","shitou","yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "shitou",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuyulu"
+    ]
   },
   {
     "id": "koan-219",
     "question": "毗婆尸佛偈曰：“身从无相中受生，犹如幻出诸形像。幻人心识本来无，罪福皆空无所住。”此偈何意？",
     "answer": "身从无相中受生——身本无相，从妄想中受生，如幻化人。心识本来空寂，罪福皆不可得。此示万法缘起性空之旨。",
-    "context": "毗婆尸佛传法偈。过去七佛各说一偈，明万法性空之旨。",
+    "context": "此公案出自《七佛传法偈》。学人就禅门关要参请毗婆尸佛，问及“毗婆尸佛偈曰：“身从无相中受生，犹如幻出诸形像。幻人心识本来无，罪福皆空无所住。”此偈何意？”。毗婆尸佛直以“身从无相中受生——身本无相，从妄想中受生，如幻化人。心识本来空寂，罪福皆不可得。此示万法缘起性空之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "德山入门便棒、临济入门便喝，直截根源、迅雷不及掩耳。棒喝之下毫无思量分别之余地，当下一念情识路绝，向上一窍豁然洞开，尽显宗门大机大用之凌厉风发。",
     "master": "毗婆尸佛",
     "source": "七佛传法偈",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["qifo"]
+    "relatedBooks": [
+      "qifo"
+    ]
   },
   {
     "id": "koan-220",
     "question": "释迦牟尼佛偈曰：“法本法无法，无法法亦法。今付无法时，法法何曾法。”此偈何意？",
     "answer": "法本无法——法之本性是空，故曰“法无法”。虽曰无法，此“无法”亦是法，故曰“无法法亦法”。今付此无法之法时，法法何曾有一法可得？此示传法实无所传之旨。",
-    "context": "释迦牟尼佛传法偈，为七佛传法偈之最后一首，明传法实无所传。",
+    "context": "此公案出自《七佛传法偈》。学人就禅门关要参请释迦牟尼佛，问及“释迦牟尼佛偈曰：“法本法无法，无法法亦法。今付无法时，法法何曾法。”此偈何意？”。释迦牟尼佛直以“法本无法——法之本性是空，故曰“法无法”。虽曰无法，此“无法”亦是法，故曰“无法法亦法”。今付此无法之法时，法法何曾有一法可得？此示传法实无所传之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "南泉斩猫，一刀两段。两堂僧徒争猫儿，全体落入人我执见与能所分别。南泉提猫示众：道得即救，道不得即斩。众无对，南泉遂斩之；赵州顶履而出，正见回光反照、超出死局之向上转身。",
     "master": "释迦牟尼佛",
     "source": "七佛传法偈",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["qifo"]
+    "relatedBooks": [
+      "qifo"
+    ]
   },
   {
     "id": "koan-221",
     "question": "《绝观论》问：“云何为心？”答：“不生不灭。”又问：“既不生不灭，何名心？”答：“以不生不灭故，名之为心。”此段何意？",
     "answer": "心本不生不灭，非从因缘生，亦非从因缘灭。以不生不灭故，名之为心。若生灭则有来去，有来去则非心。此示真心本无生灭之旨。",
-    "context": "《绝观论》以问答形式直指心性，明心本不生不灭。",
+    "context": "此公案出自《绝观论》。学人就禅门关要参请牛头法融，问及“《绝观论》问：“云何为心？”答：“不生不灭。”又问：“既不生不灭，何名心？”答：“以不生不灭故，名之为心。”此段何意？”。牛头法融直以“心本不生不灭，非从因缘生，亦非从因缘灭。以不生不灭故，名之为心。若生灭则有来去，有来去则非心。此示真心本无生灭之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "洞山‘麻三斤’答僧问如何是佛，如生铁铸就、毫无缝罅。不向三十二相、八十种好上求佛，只在当下称麻买卖、日用平常之中。一句麻三斤，把学人对神圣佛境的万千妄想一笔勾销。",
     "master": "牛头法融",
     "source": "绝观论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["juelin"]
+    "relatedBooks": [
+      "juelin"
+    ]
   },
   {
     "id": "koan-222",
@@ -15554,79 +17323,94 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "文殊说般若经",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu"]
+    "relatedBooks": [
+      "wenshu"
+    ]
   },
   {
     "id": "koan-223",
     "question": "问：“既云无心，谁能说法？”答：“无心即是说法。若有心即不名说法。”此段何意？",
     "answer": "无心即是说法——有心则有能所，能所对立则非真说法。无心说法，如空谷回声，如镜照物，应而无形。此示无心之妙用。",
-    "context": "《无心论》以问答明无心之旨，无心非死寂，而是无住生心。",
+    "context": "此公案出自《无心论》。学人就禅门关要参请菩提达摩，问及“问：“既云无心，谁能说法？”答：“无心即是说法。若有心即不名说法。”此段何意？”。菩提达摩直以“无心即是说法——有心则有能所，能所对立则非真说法。无心说法，如空谷回声，如镜照物，应而无形。此示无心之妙用。”答之，不涉浮言，直指心源。",
     "interpretation": "法眼‘丙丁童子来求火’，丙丁火神自带火种却向外求火，喻众生本自具足无量智慧德相却向外驰求佛法。法眼一语点醒韶国师，令其当下照见自家宝藏、息灭向外攀缘之妄想狂心。",
     "master": "菩提达摩",
     "source": "无心论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran","wuxinlun"]
+    "relatedBooks": [
+      "wuran",
+      "wuxinlun"
+    ]
   },
   {
     "id": "koan-224",
     "question": "问：“云何名观心？”答：“观心者，观自心也。自心本净，因境生念。但观此念起处，即见自心。”此段何意？",
     "answer": "观心非观外境，而是观自心起念之处。念起即观，观即无念。于念起处见自心本净，即是观心。此为禅宗内观之根本法门。",
-    "context": "《观心论》明观心之方法：观念起处，即见自心。",
+    "context": "此公案出自《观心论》。学人就禅门关要参请菩提达摩，问及“问：“云何名观心？”答：“观心者，观自心也。自心本净，因境生念。但观此念起处，即见自心。”此段何意？”。菩提达摩直以“观心非观外境，而是观自心起念之处。念起即观，观即无念。于念起处见自心本净，即是观心。此为禅宗内观之根本法门。”答之，不涉浮言，直指心源。",
     "interpretation": "石头希迁‘参同契’，融会洞山回互之妙理。理事相即，体用不二；明中有暗，暗中有明。暗相即是体空无相，明相即是用现万千，示人于日用参差万象中洞见一如法界。",
     "master": "菩提达摩",
     "source": "观心论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["zhangzhi"]
+    "relatedBooks": [
+      "zhangzhi"
+    ]
   },
   {
     "id": "koan-225",
     "question": "问：“五行之中，何为究竟？”答：“五行皆方便，唯止观为究竟。前四门为助行，止观为正行。”此段何意？",
     "answer": "施、戒、忍、进四门为助行，止观为正行。前四门积集福德资粮，止观开发智慧。福慧双修，方名究竟。此示禅宗止观并重之旨。",
-    "context": "《五行论》明五种修行，以止观为根本。",
+    "context": "此公案出自《五行论》。学人就禅门关要参请菩提达摩，问及“问：“五行之中，何为究竟？”答：“五行皆方便，唯止观为究竟。前四门为助行，止观为正行。”此段何意？”。菩提达摩直以“施、戒、忍、进四门为助行，止观为正行。前四门积集福德资粮，止观开发智慧。福慧双修，方名究竟。此示禅宗止观并重之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "药山‘指天指瓶’答李翱刺史问如何是道：云在青天水在瓶。法法各住自位，自在随缘；在天为云，在瓶为水，清净自性本无增减，令文人居士当下领悟平常心是道之至理。",
     "master": "菩提达摩",
     "source": "五行论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuxinglun"]
+    "relatedBooks": [
+      "wuxinglun"
+    ]
   },
   {
     "id": "koan-226",
     "question": "问：“云何破相？”答：“相本无相，破无所破。若执有相可破，即是被相所缚。但了相本空，即是破相。”此段何意？",
     "answer": "相本无相——万法之相从因缘生，无有自性，故曰无相。破相非灭相，而是了达相本空。若执有相可破，即被相缚。此示破相实无所破之旨。",
-    "context": "《破相论》明破相之方法：了相本空，即名破相。",
+    "context": "此公案出自《破相论》。学人就禅门关要参请菩提达摩，问及“问：“云何破相？”答：“相本无相，破无所破。若执有相可破，即是被相所缚。但了相本空，即是破相。”此段何意？”。菩提达摩直以“相本无相——万法之相从因缘生，无有自性，故曰无相。破相非灭相，而是了达相本空。若执有相可破，即被相缚。此示破相实无所破之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "大慧宗杲提倡看话头以‘竹篦子’接人：唤作竹篦则触，不唤作竹篦则背。触背两头皆不立，语言道断、心思路绝，令学人于间不容发之处猛省自心、打破无明。",
     "master": "菩提达摩",
     "source": "破相论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun"]
+    "relatedBooks": [
+      "poxianglun"
+    ]
   },
   {
     "id": "koan-227",
     "question": "问：“无心与有心何异？”答：“无心即真心，有心即妄心。真心无心而无不知，妄心有心而全属分别。”此段何意？",
     "answer": "真心无心——无妄念分别，而灵知不昧。妄心有心——有念有相，全属分别。无心非木石无知，而是无妄念之真心。此示真心与妄心之别。",
-    "context": "《无心论》明无心即真心，有心即妄心。",
+    "context": "此公案出自《无心论》。学人就禅门关要参请牛头法融，问及“问：“无心与有心何异？”答：“无心即真心，有心即妄心。真心无心而无不知，妄心有心而全属分别。”此段何意？”。牛头法融直以“真心无心——无妄念分别，而灵知不昧。妄心有心——有念有相，全属分别。无心非木石无知，而是无妄念之真心。此示真心与妄心之别。”答之，不涉浮言，直指心源。",
     "interpretation": "宏智正觉倡‘默照禅’，默默忘言而昭昭现前。如古镜当台，胡来胡现，汉来汉现；于极静默处显极广大之灵明觉照，为曹洞宗直契自性清净心之根本法门。",
     "master": "牛头法融",
     "source": "无心论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuxinlun"]
+    "relatedBooks": [
+      "wuxinlun"
+    ]
   },
   {
     "id": "koan-228",
     "question": "问：“云何息诤？”答：“诤从分别起，无分别即无诤。但了诸法本空，诤自息灭。”此段何意？",
     "answer": "诤论从分别心生——有分别则有是非，有是非则有诤。了达诸法本空，分别自灭，诤亦自息。此示无诤三昧之旨。",
-    "context": "《息诤论》明息诤之方法：了诸法本空，分别自灭。",
+    "context": "此公案出自《息诤论》。学人就禅门关要参请牛头法融，问及“问：“云何息诤？”答：“诤从分别起，无分别即无诤。但了诸法本空，诤自息灭。”此段何意？”。牛头法融直以“诤论从分别心生——有分别则有是非，有是非则有诤。了达诸法本空，分别自灭，诤亦自息。此示无诤三昧之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "虚堂智愚‘铁牛之机’，凌厉峭拔、直透重关。接引学者如万斤铁牛运转，迎刃而解；不假文字罗笼，直指向上第一窍，开创宋元临济宗播扬东瀛之深远宗风。",
     "master": "牛头法融",
     "source": "息诤论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xixulun"]
+    "relatedBooks": [
+      "xixulun"
+    ]
   },
   {
     "id": "koan-229",
@@ -15638,91 +17422,107 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "四行观",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
   {
     "id": "koan-230",
     "question": "《信心铭》曰：“至道无难，唯嫌拣择。但莫憎爱，洞然明白。”此四句何意？",
     "answer": "至道本不难，唯人自生分别——有憎有爱，有取有舍，即成障碍。但莫憎爱，不生分别，至道自然洞然明白。此为禅宗无分别心之根本纲宗。",
-    "context": "三祖僧璨《信心铭》开篇四句，为禅宗纲宗。",
+    "context": "此公案出自《信心铭》。学人就禅门关要参请三祖僧璨，问及“《信心铭》曰：“至道无难，唯嫌拣择。但莫憎爱，洞然明白。”此四句何意？”。三祖僧璨直以“至道本不难，唯人自生分别——有憎有爱，有取有舍，即成障碍。但莫憎爱，不生分别，至道自然洞然明白。此为禅宗无分别心之根本纲宗。”答之，不涉浮言，直指心源。",
     "interpretation": "灵云见桃花而悟道：‘三十年来寻剑客，几回落叶又抽枝。自从一见桃花后，直至如今更不疑。’春日桃花盛开，法尔如是，一触即发，自性光明顿现无余。",
     "master": "三祖僧璨",
     "source": "信心铭",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinxinming"]
+    "relatedBooks": [
+      "xinxinming"
+    ]
   },
   {
     "id": "koan-231",
     "question": "问：“方寸之间，有何物？”答：“方寸本无一物。若有一物，即非方寸。以无物故，能含万法。”此段何意？",
     "answer": "方寸即心。心本无一物——若有物则非心。以无物故，能含万法——心如虚空，不碍万象。此示心性本空而能生万法之旨。",
-    "context": "《方寸论》以“方寸”喻心，明心本空而含万法。",
+    "context": "此公案出自《方寸论》。学人就禅门关要参请牛头法融，问及“问：“方寸之间，有何物？”答：“方寸本无一物。若有一物，即非方寸。以无物故，能含万法。”此段何意？”。牛头法融直以“方寸即心。心本无一物——若有物则非心。以无物故，能含万法——心如虚空，不碍万象。此示心性本空而能生万法之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "雪峰‘辊球’接引学人，木球辊出之际迅疾无伦，学人稍作商量即便蹉过。宗师以无情之木球勘验学者是否常住灵明觉照，示人悟门在刹那电光石火之间。",
     "master": "牛头法融",
     "source": "方寸论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["fangcunlun"]
+    "relatedBooks": [
+      "fangcunlun"
+    ]
   },
   {
     "id": "koan-232",
     "question": "五祖弘忍问：“何名最上乘？”答：“最上乘者，即一心也。一心之外，更无别法。若离一心而求佛法，如缘木求鱼。”此段何意？",
     "answer": "最上乘即一心——心外无法，法外无心。若离心求法，如缘木求鱼，永不可得。此示禅宗“即心即佛”之究竟旨。",
-    "context": "五祖弘忍《最上乘论》明最上乘即一心。",
+    "context": "此公案出自《最上乘论》。学人就禅门关要参请五祖弘忍，问及“五祖弘忍问：“何名最上乘？”答：“最上乘者，即一心也。一心之外，更无别法。若离一心而求佛法，如缘木求鱼。”此段何意？”。五祖弘忍直以“最上乘即一心——心外无法，法外无心。若离心求法，如缘木求鱼，永不可得。此示禅宗“即心即佛”之究竟旨。”答之，不涉浮言，直指心源。",
     "interpretation": "玄沙‘不出岭’接人：‘谛当甚么处，玄沙不出岭。’学人枉费草鞋钱到处参访名山大川，玄沙直指步步踏着自家田地，当下便是灵山胜境，何须脚跟向外奔驰。",
     "master": "五祖弘忍",
     "source": "最上乘论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["zuishangcheng"]
+    "relatedBooks": [
+      "zuishangcheng"
+    ]
   },
   {
     "id": "koan-233",
     "question": "普照知讷《修心诀》曰：“心性本净，客尘所染。但离妄念，即同如来。”此段何意？",
     "answer": "心性本净——真心本来清净。客尘所染——烦恼如客尘，非心本有。但离妄念——去其客尘。即同如来——净心显现，与佛无二。此示禅宗“但离妄念即同如来”之旨。",
-    "context": "高丽普照知讷《修心诀》明修心之要：但离妄念，即同如来。",
+    "context": "此公案出自《修心诀》。学人就禅门关要参请普照知讷，问及“普照知讷《修心诀》曰：“心性本净，客尘所染。但离妄念，即同如来。”此段何意？”。普照知讷直以“心性本净——真心本来清净。客尘所染——烦恼如客尘，非心本有。但离妄念——去其客尘。即同如来——净心显现，与佛无二。此示禅宗“但离妄念即同如来”之旨。”答之，不涉浮言，直指心源。",
     "interpretation": "投子‘油糍与果子’，僧问‘诸佛出世为一大事因缘，和尚出世为甚么事’，投子答‘尹司空请吃油糍’。把崇高宏大的宗教宏愿化为当下吃油糍的平常日用，斩断玄虚狂慧。",
     "master": "普照知讷",
     "source": "修心诀",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xiuxinjue"]
+    "relatedBooks": [
+      "xiuxinjue"
+    ]
   },
   {
     "id": "koan-234",
     "question": "大珠慧海问：“云何名顿悟？”答：“顿者，顿除妄念；悟者，悟无所得。顿除妄念名顿，悟无所得名悟。顿悟者，即顿除妄念、悟无所得也。”此段何意？",
     "answer": "顿悟非渐次修行——顿除妄念，一时放下。悟无所得——本来是佛，无所可得。此示禅宗顿悟法门之根本：但除妄念，即同如来。",
-    "context": "大珠慧海《顿悟入道要门论》明顿悟之义。",
+    "context": "此公案出自《顿悟入道要门论》。学人就禅门关要参请大珠慧海，问及“大珠慧海问：“云何名顿悟？”答：“顿者，顿除妄念；悟者，悟无所得。顿除妄念名顿，悟无所得名悟。顿悟者，即顿除妄念、悟无所得也。”此段何意？”。大珠慧海直以“顿悟非渐次修行——顿除妄念，一时放下。悟无所得——本来是佛，无所可得。此示禅宗顿悟法门之根本：但除妄念，即同如来。”答之，不涉浮言，直指心源。",
     "interpretation": "睦州‘担板汉’勘验参学者：见僧入门便闭门，或喝云‘现成公案放你三十棒’。以雷霆手段逼迫学人放下一切知见担子，直面自己赤裸裸的本来面目。",
     "master": "大珠慧海",
     "source": "顿悟入道要门论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dunwu"]
+    "relatedBooks": [
+      "dunwu"
+    ]
   },
   {
     "id": "koan-235",
     "question": "普照知讷《真心直说》曰：“真心者，本来自性清净，不假修成，但离妄缘，即如如佛。”此段何意？",
     "answer": "真心本自清净——非从修得。但离妄缘——去除妄念因缘。即如如佛——真心显现，本来是佛。此示禅宗“本觉”之旨：修行只是恢复本来，非从外得。",
-    "context": "普照知讷《真心直说》明真心本净，但离妄缘即同如来。",
+    "context": "此公案出自《真心直说》。学人就禅门关要参请普照知讷，问及“普照知讷《真心直说》曰：“真心者，本来自性清净，不假修成，但离妄缘，即如如佛。”此段何意？”。普照知讷直以“真心本自清净——非从修得。但离妄缘——去除妄念因缘。即如如佛——真心显现，本来是佛。此示禅宗“本觉”之旨：修行只是恢复本来，非从外得。”答之，不涉浮言，直指心源。",
     "interpretation": "风穴‘若立一尘，家国兴盛；不立一尘，家国丧亡’。立一尘是妙用万千、化度众生；不立一尘是本体真空、纤尘不染。示人理事无碍、卷舒自在之宗门大作略。",
     "master": "普照知讷",
     "source": "真心直说",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["zhenxin"]
+    "relatedBooks": [
+      "zhenxin"
+    ]
   },
   {
     "id": "koan-236",
     "question": "神会禅师问六祖：“先佛后佛，无有异法，只传一乘。云何一乘？”六祖曰：“一乘者，即一心也。汝若悟一心，即名一乘。”此段何意？",
     "answer": "一乘即一心——佛佛所传，唯传一心。悟一心即名一乘，非别有一乘可修。此示禅宗“以心传心”之究竟旨。",
-    "context": "荷泽神会参六祖惠能，问一乘之义。",
+    "context": "此公案出自《荷泽神会语录》。学人就禅门关要参请六祖惠能，问及“神会禅师问六祖：“先佛后佛，无有异法，只传一乘。云何一乘？”六祖曰：“一乘者，即一心也。汝若悟一心，即名一乘。”此段何意？”。六祖惠能直以“一乘即一心——佛佛所传，唯传一心。悟一心即名一乘，非别有一乘可修。此示禅宗“以心传心”之究竟旨。”答之，不涉浮言，直指心源。",
     "interpretation": "首山‘竹篦子’公案：‘唤作竹篦则触，不唤作竹篦则背。’逼令学者脱离名相与非名相之二元对立，当下桶底脱落、自见本体。",
     "master": "六祖惠能",
     "source": "荷泽神会语录",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["shenhui"]
+    "relatedBooks": [
+      "shenhui"
+    ]
   },
   {
     "id": "koan-237",
@@ -15734,67 +17534,92 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "十牛图",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["shiniutu"]
+    "relatedBooks": [
+      "shiniutu"
+    ]
   },
   {
     "id": "koan-238",
     "question": "洞山良价《宝镜三昧》曰：“如临宝镜，形影相睹。汝不是渠，渠正是汝。”此段何意？",
     "answer": "宝镜喻心。形影相睹——心与境相对，如形与影。汝不是渠——你不是境。渠正是汝——境即是心之显现。此示心境不二、能所一如之旨，为曹洞宗“回互”之根本施设。",
-    "context": "洞山良价《宝镜三昧》以宝镜喻心，明心境不二之旨。",
+    "context": "此公案出自《宝镜三昧》。学人就禅门关要参请洞山良价，问及“洞山良价《宝镜三昧》曰：“如临宝镜，形影相睹。汝不是渠，渠正是汝。”此段何意？”。洞山良价直以“宝镜喻心。形影相睹——心与境相对，如形与影。汝不是渠——你不是境。渠正是汝——境即是心之显现。此示心境不二、能所一如之旨，为曹洞宗“回互”之根本施设。”答之，不涉浮言，直指心源。",
     "interpretation": "慈明楚圆‘引锥自刺’苦修力行，夜间坐禅困倦即以锥刺股；见学者机锋虚浮便施以金刚棒喝，中兴宋代临济宗，育出杨岐、黄龙两大巨擘。",
     "master": "洞山良价",
     "source": "宝镜三昧",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["baojingsanmei"]
+    "relatedBooks": [
+      "baojingsanmei"
+    ]
   },
   {
     "id": "koan-239",
     "question": "永嘉玄觉《证道歌》曰：“梦里明明有六趣，觉后空空无大千。”此句何意？",
     "answer": "梦里六趣——迷时见六道轮回，历历分明。觉后空空——悟时了达万法本空，大千世界了不可得。此示迷悟之别：迷时万法皆有，悟时万法皆空。",
-    "context": "永嘉玄觉《证道歌》以梦觉喻迷悟，明万法性空之旨。",
+    "context": "此公案出自《证道歌》。学人就禅门关要参请永嘉玄觉，问及“永嘉玄觉《证道歌》曰：“梦里明明有六趣，觉后空空无大千。”此句何意？”。永嘉玄觉直以“梦里六趣——迷时见六道轮回，历历分明。觉后空空——悟时了达万法本空，大千世界了不可得。此示迷悟之别：迷时万法皆有，悟时万法皆空。”答之，不涉浮言，直指心源。",
     "interpretation": "杨岐方会‘三脚驴子弄蹄行’，以极险峻奇特之机语勘验学者：寻常四蹄之驴易行，三脚之驴如何弄蹄？破除世间常理之执着，示人向上别有转身之路。",
     "master": "永嘉玄觉",
     "source": "证道歌",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["yongjia","zhengdaoge"]
+    "relatedBooks": [
+      "yongjia",
+      "zhengdaoge"
+    ]
   },
   {
     "id": "koan-240",
     "question": "玄奘大师《八识规矩颂》曰：“性境现量通三性，眼耳身三二地居。”此句何意？",
     "answer": "前五识（眼耳鼻舌身）缘性境，以现量了别，通善、恶、无记三性。眼耳身三识在初禅二地尚有，鼻舌二识唯欲界有。此明前五识之活动范围与功能。",
-    "context": "玄奘《八识规矩颂》明八识之规矩，此为前五识颂。",
+    "context": "此公案出自《八识规矩颂》。学人就禅门关要参请玄奘大师，问及“玄奘大师《八识规矩颂》曰：“性境现量通三性，眼耳身三二地居。”此句何意？”。玄奘大师直以“前五识（眼耳鼻舌身）缘性境，以现量了别，通善、恶、无记三性。眼耳身三识在初禅二地尚有，鼻舌二识唯欲界有。此明前五识之活动范围与功能。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟克勤‘击节评唱’碧岩录，雪窦颂古百则配以圆悟击节评唱，熔经教、公案、颂古、提撕于一炉，被誉为宗门第一书，极大丰富了宋代公案禅之参悟体系。",
     "master": "玄奘大师",
     "source": "八识规矩颂",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedBooks": [
+      "bashiguijusong"
+    ]
   },
   {
     "id": "koan-241",
     "question": "一宿觉",
     "answer": "体即无生，了本无速。——分别亦非意。",
-    "context": "永嘉玄觉参六祖于曹溪，振锡绕祖三匝，卓然而立。祖曰：“夫沙门者，具三千威仪，八万细行。大德自何方而来，生大我慢？”觉曰：“生死事大，无常迅速。”祖曰：“何不体取无生，了无速乎？”觉曰：“体即无生，了本无速。”祖曰：“如是如是。”众僧无不惊叹。觉方具威仪参礼，须臾告辞。祖曰：“返太速乎？”觉曰：“本自非动，岂有速耶？”祖曰：“谁知非动？”觉曰：“仁者自生分别。”祖曰：“汝甚得无生之意。”觉曰：“无生岂有意耶？”祖曰：“无意谁当分别？”觉曰：“分别亦非意。”祖曰：“善哉！少留一宿。”时谓一宿觉矣。永嘉大师与六祖机锋往来，句句无生，言言见性。“体即无生，了本无速”——已悟无生，何来迅速？“分别亦非意”——虽分别而不落意地，此乃寂照同时之境。",
-    "interpretation": "",
+    "context": "永嘉玄觉参六祖于曹溪，振锡绕祖三匝，卓然而立。祖曰：“夫沙门者，具三千威仪，八万细行。大德自何方而来，生大我慢？”觉曰：“生死事大，无常迅速。”祖曰：“何不体取无生，了无速乎？”觉曰：“体即无生，了本无速。”祖曰：“如是如是。”众僧无不惊叹。觉方具威仪参礼，须臾告辞。祖曰：“返太速乎？”觉曰：“本自非动，岂有速耶？”祖曰：“谁知非动？”觉曰：“仁者自生分别。”祖曰：“汝甚得无生之意。”觉曰：“无生岂有意耶？”祖曰：“无意谁当分别？”觉曰：“分别亦非意。”祖曰：“善哉！少留一宿。”时谓一宿觉矣。永嘉大师与六祖机锋往来，句句无生，言言见性。“体即无生，了本无速”——已悟无生，何来迅速？“分别亦非意”——虽分别而不落意地。",
+    "interpretation": "永嘉玄觉在此公案中以极具穿透力之机锋直下勘验。“一宿觉”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "永嘉玄觉",
     "source": "永嘉禅宗集",
-    "relatedConcepts": ["yinian-wusheng","instant-enlightenment"],
-    "relatedPersons": ["yongjia","huineng"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "yinian-wusheng",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "yongjia",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "koan-242",
     "question": "寂寂惺惺",
     "answer": "寂寂惺惺是，无记寂寂非。——寂照同时，方为正法。",
-    "context": "永嘉大师《禅宗集》正修止观章云：“奢摩他者，此云止。毗婆舍那者，此云观。优毕叉者，此云止观等持。止者，寂也。观者，照也。寂照同时，方为正法。寂寂惺惺是，无记寂寂非。”四句口诀，道尽止观要领。寂寂中有惺惺，则不落昏沉；惺惺中有寂寂，则不落散乱。无记寂寂——似止而非止，乃昏沉暗昧；乱想惺惺——似观而非观，乃散乱分别。唯有寂照同时，方为正定。",
-    "interpretation": "",
+    "context": "永嘉大师《禅宗集》正修止观章云：“奢摩他者，此云止。毗婆舍那者，此云观。优毕叉者，此云止观等持。止者，寂也。观者，照也。寂照同时，方为正法。寂寂惺惺是，无记寂寂非。”。",
+    "interpretation": "四句口诀，道尽止观要领。寂寂中有惺惺，则不落昏沉；惺惺中有寂寂，则不落散乱。无记寂寂——似止而非止，乃昏沉暗昧；乱想惺惺——似观而非观，乃散乱分别。唯有寂照同时，方为正定。",
     "master": "永嘉玄觉",
     "source": "永嘉禅宗集",
-    "relatedConcepts": ["zhi-guan","zhi-guan","dinghui"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "zhi-guan",
+      "dinghui"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "koan-243",
@@ -15804,9 +17629,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "一茎草现琼楼玉殿——悟则一茎草即是琼楼玉殿，一物全彰。琼楼玉殿被一茎草盖却——未悟则琼楼玉殿亦被一茎草遮蔽，不见全体。大慧补一句“莫被他热谩”——莫被言语瞒过，须实参实悟。此则体现大慧宗风：不废言句而不死于言句。",
     "master": "大慧宗杲",
     "source": "大慧语录卷第二",
-    "relatedConcepts": ["kanhua-chan-concept","self-nature"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "koan-244",
@@ -15816,9 +17648,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "杀人刀——截断学人知见执着，斩其意识分别。活人剑——活其本命元辰，令其亲见本来面目。须杀活同时：杀其妄而活其真。只杀不活则落断灭，只活不杀则落常见。此为大慧宗风之写照——峻烈痛快而不失慈悲。",
     "master": "大慧宗杲",
     "source": "大慧语录卷第一",
-    "relatedConcepts": ["kanhua-chan-concept","zongfeng"],
-    "relatedPersons": ["dahui-zonggao","linji"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "zongfeng"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "linji"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "koan-245",
@@ -15828,9 +17668,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "不用息心除妄想——妄想本空，何须更息？吃饭噇眠——日用即是修行，何须别求？然大慧又追问“梦中有人索饭钱又作么生”——日用虽是修行，若在梦中（无明中）仍被业力牵引，则吃饭噇眠又成业障。此则看似轻松，实则深峻：即俗即真，而又不可安于俗。",
     "master": "大慧宗杲",
     "source": "大慧语录卷第一",
-    "relatedConcepts": ["self-nature","ordinary-mind"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "koan-246",
@@ -15840,9 +17687,20 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "神会答诸佛之本源神会之佛性——落于知解，以意识分别心描述本心，故被斥为孽子。怀让经八年方悟说似一物即不中——本心不可名状，说它像什么就不对了。嫡子与孽子之别，不在聪明，在于是否落于知解。",
     "master": "六祖惠能",
     "source": "禅家龟鉴",
-    "relatedConcepts": ["self-nature","huoju-siju"],
-    "relatedPersons": ["huineng","huairang","shenhui","tuiyin"],
-    "relatedBooks": ["chanjia_guijian","tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "huoju-siju"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "huairang",
+      "shenhui",
+      "tuiyin"
+    ],
+    "relatedBooks": [
+      "chanjia_guijian",
+      "tanjing"
+    ]
   },
   {
     "id": "koan-247",
@@ -15852,9 +17710,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "老鼠钻入牛角，越钻越窄，到最后无路可走——此喻参话头至思量不及处。不可思量处思量，即逼拶至意识穷尽处。倒断即透脱，非思量所得，乃思量穷尽后蓦然契悟。",
     "master": "退隐禅师",
     "source": "禅家龟鉴",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","huatou-shibing"],
-    "relatedPersons": ["tuiyin"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "huatou-shibing"
+    ],
+    "relatedPersons": [
+      "tuiyin"
+    ],
+    "relatedBooks": [
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "koan-248",
@@ -15864,9 +17730,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "孤轮独照——悟后心如明月，独照江山而不染一尘。自笑一声——自笑从前枉用功夫，天地惊——一悟一切悟，惊天动地。此为退隐禅师全篇总结：始于一物之名状不得，终于莫存知解，以孤轮独照之境收束全篇。",
     "master": "退隐禅师",
     "source": "禅家龟鉴",
-    "relatedConcepts": ["self-nature","huoju-siju"],
-    "relatedPersons": ["tuiyin"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedConcepts": [
+      "self-nature",
+      "huoju-siju"
+    ],
+    "relatedPersons": [
+      "tuiyin"
+    ],
+    "relatedBooks": [
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "koan-249",
@@ -15876,9 +17749,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法融此语不是否定修行，而是彻见本源后的如实语。心性本不生灭——你起心去“知”、起心去“见”，已是头上安头、妄上加妄。本来连一法都不存在，你还在那里讨论熏修炼习，岂非梦中说梦？此则公案须从“无心绝观”处会取：不是不修行，而是不立能修所修之相，但一切莫顾，安心无处，虚明自然现前。",
     "master": "牛头法融",
     "source": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["xinming"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "xinming"
+    ]
   },
   {
     "id": "koan-250",
@@ -15888,9 +17768,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "守菩提者，将菩提作一物去守护，不知菩提本自具足，何须更守？除烦恼者，将烦恼作实法去断除，不知烦恼本自空寂，何须更除？法融点破：灵知自照——菩提不是死物，而是灵知不昷、自照自明；万法归如——烦恼不是异物，而是当体即如、全体即是。守与除，都是将菩提烦恼作二法看。彻见本源，则一味平等，绝观忘守。",
     "master": "牛头法融",
     "source": "心铭",
-    "relatedConcepts": ["dajibenyou","wuxin-jueguan"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["xinming"]
+    "relatedConcepts": [
+      "dajibenyou",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "xinming"
+    ]
   },
   {
     "id": "koan-251",
@@ -15900,9 +17787,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“一切善恶都莫思量”——不是让你变成木石，而是不生分别。善也不思量、恶也不思量，不是不分善恶，而是不在善恶上起心动念。念头起了怎么办？不是去压制，也不是去跟随，而是觉照到——觉照本身就有消融念头的力量。如光照暗，不需要去驱赶黑暗，光到暗自灭。久久功夫成片，则妄念自息，定水澄清，心珠自现。",
     "master": "长芦宗赣",
     "source": "坐禅仪",
-    "relatedConcepts": ["samadhi","chanding-jiwu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["zuochanyi"]
+    "relatedConcepts": [
+      "samadhi",
+      "chanding-jiwu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "zuochanyi"
+    ]
   },
   {
     "id": "koan-252",
@@ -15912,9 +17806,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“一切莫顾”是放下万缘；“安心无处”是安心于无可安之处——不是找一个清净的地方去安心，而是彻见到处都是无可安，心便无可安而自安。如人落水，到底时自然沉定，不须费力。虚明自露——不是你去明，是明自己露，只因无处可安时，妃子自现。",
     "master": "牛头法融",
     "source": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","jingji-ziran"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["xinming"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "jingji-ziran"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "xinming"
+    ]
   },
   {
     "id": "koan-253",
@@ -15924,9 +17825,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "宗赣先说“安乐法门”以鼓励初心，后说“致病”以警告不善用心者。善用心的关键是“善得其意”——得其意则身心自然调和，定力自然增长，如顺水推舟。不善用心则强压妄念，如逆水行舟，不进反退。此则公案须从“善”字会取：不是用力，是用心；不是压制，是觉照。",
     "master": "长芦宗赣",
     "source": "坐禅仪",
-    "relatedConcepts": ["samadhi","zuochan-weiyi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["zuochanyi"]
+    "relatedConcepts": [
+      "samadhi",
+      "zuochan-weiyi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "zuochanyi"
+    ]
   },
   {
     "id": "koan-254",
@@ -15936,225 +17844,380 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "心如海，妄念如波，真心如珠。波浪翻滘时水浅不见底，珠隐不现；定水澄清时，珠自然现前。坐禅就是让波浪平息，不是去找珠——珠本在海底，不须外求，只须让水清。此与法融“虚明自露”异曲同工：法融从无心入手，宗赣从禅定入手，归宿同一心珠。",
     "master": "长芦宗赣",
     "source": "坐禅仪",
-    "relatedConcepts": ["chanding-jiwu","samadhi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["zuochanyi"]
+    "relatedConcepts": [
+      "chanding-jiwu",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "zuochanyi"
+    ]
   },
   {
     "id": "koan-255",
     "question": "本既是佛，那得更有四生六道种种形貌不同？",
     "answer": "诸佛体圆，更无增减，流入六道，处处皆圆，万类之中，个个是佛。譬如一团水银，分散诸处，颗颗皆圆，若不分时，只是一块，此一即一切，一切即一。",
-    "context": "",
+    "context": "此公案记于《黄檗断际禅师宛陵录》。学人参谒黄檗希运，问“本既是佛，那得更有四生六道种种形貌不同？”，黄檗希运遂应机答曰“诸佛体圆，更无增减，流入六道，处处皆圆，万类之中，个个是佛。譬如一团水银，分散诸处，颗颗皆圆，若不分时，只是一块，此一即一切，一切即一。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "黄檗以水银为喻，开示佛性在六道中各各皆圆。水银分散颗颗皆圆，喻佛性在万类中个个是佛；不分时只是一块，喻一即一切、一切即一。种种形貌如屋舍不同，皆是取舍所致，本源之性何得有别？此喻直指一多无碍、生佛平等之旨。",
     "master": "黄檗希运",
     "source": "黄檗断际禅师宛陵录",
-    "relatedConcepts": ["mind-is-buddha","buddha-nature","non-duality"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu","huangbo"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "buddha-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu",
+      "huangbo"
+    ]
   },
   {
     "id": "koan-256",
     "question": "佛与众生何得言无？",
     "answer": "凡所有相皆是虚妄。才作佛见便被佛障，作众生见被众生障。作凡作圣作净作秽等见，尽成其障！障汝心故，总成轮转，犹如猕猴放一捉一，无有歇期。",
-    "context": "",
+    "context": "此公案记于《黄檗断际禅师宛陵录》。学人参谒黄檗希运，问“佛与众生何得言无？”，黄檗希运遂应机答曰“凡所有相皆是虚妄。才作佛见便被佛障，作众生见被众生障。作凡作圣作净作秽等见，尽成其障！障汝心故，总成轮转，犹如猕猴放一捉一，无有歇期。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "黄檗以猕猴放一捉一为喻，揭示一切见执皆成障碍。猕猴放一捉一，喻心识攀缘不停——放下一个执着又抓起另一个，永无止息。唯有无诸见，方能出离轮转。此与“不用求真，唯须息见”相呼应：不是要求真理，而是要止息一切见解。",
     "master": "黄檗希运",
     "source": "黄檗断际禅师宛陵录",
-    "relatedConcepts": ["no-views","non-mind","not-mind-not-buddha"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu","huangbo"]
+    "relatedConcepts": [
+      "no-views",
+      "non-mind",
+      "not-mind-not-buddha"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu",
+      "huangbo"
+    ]
   },
   {
     "id": "koan-257",
     "question": "如何是出三界？",
     "answer": "善恶都莫思量，当处便出三界。若是个丈夫汉，看个公案：僧问赵州“狗子还有佛性也无”，州云“无”。但去二六时中看个“无”字，猛着精彩，日久月深打成一片，忽然心花顿发，悟佛祖之机。",
-    "context": "",
+    "context": "此公案记于《黄檗断际禅师宛陵录》。学人参谒黄檗希运，问“如何是出三界？”，黄檗希运遂应机答曰“善恶都莫思量，当处便出三界。若是个丈夫汉，看个公案：僧问赵州“狗子还有佛性也无”，州云“无”。但去二六时中看个“无”字，猛着精彩，日久月深打成一片，忽然心花顿发，悟佛祖之机。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "黄檗先以“善恶都莫思量”直指出三界之要——心若不生，三界本空。继而授以看“无”字公案之下手方法：二六时中不间断地看，行住坐卧皆不离，猛着精彩，打成一片，忽然心花顿发。此为后世看话禅之先声，黄檗将理之直指与行之功夫合而为一。末后“不是一翻寒彻骨，争得梅花扑鼻香”之颂，警策学人须下死功夫。",
     "master": "黄檗希运",
     "source": "黄檗断际禅师宛陵录",
-    "relatedConcepts": ["no-views","non-mind","wu-wei-famen"],
-    "relatedPersons": ["huangbo","zhaozhou"],
-    "relatedBooks": ["huangbo_wanlinglu","wumenguan"]
+    "relatedConcepts": [
+      "no-views",
+      "non-mind",
+      "wu-wei-famen"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-258",
     "question": "庭前柏树子",
     "answer": "僧问：如何是祖师西来意？赵州云：庭前柏树子。学人云：和尚莫将境示人。赵州云：我不将境示人。学人云：如何是祖师西来意？赵州云：庭前柏树子。",
-    "context": "赵州以庭前柏树子答祖师西来意",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“庭前柏树子”。赵州从谂直以“僧问：如何是祖师西来意？赵州云：庭前柏树子。学人云：和尚莫将境示人。赵州云：我不将境示人。学人云：如何是祖师西来意？赵州云：庭前柏树子。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州不答西来意是什，只指出眼前柏树子。柏树子不属知、不属不知，是祖意、是佛意，当下便是。学人再疑莫将境示人，赵州再答庭前柏树子，截断一切拟议。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["ting-qian-baishuzi","benfen-shi","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu","wumenguan"]
+    "relatedConcepts": [
+      "ting-qian-baishuzi",
+      "benfen-shi",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-259",
     "question": "狗子无佛性",
     "answer": "问：狗子还有佛性也无？赵州云：无。学人云：上至诸佛下至蚁子皆有佛性，狗子为什么无？赵州云：为伊有业识性在。",
-    "context": "赵州以无字截断学人对佛性的思量",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“狗子无佛性”。赵州从谂直以“问：狗子还有佛性也无？赵州云：无。学人云：上至诸佛下至蚁子皆有佛性，狗子为什么无？赵州云：为伊有业识性在。”答之，不涉浮言，直指心源。",
     "interpretation": "赵州答无，非谓狗子实无佛性，而是截断学人有、无之思量。后世大慧宗杲教人只看个无字，即本于此。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["buddha-nature","wu-nian","direct-pointing"],
-    "relatedPersons": ["zhaozhou","dazhu-huihai"],
-    "relatedBooks": ["zhaozhouyulu","wumenguan"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "wu-nian",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-260",
     "question": "吃茶去",
     "answer": "师问二新到：上座曾到此间否？云：不曾到。师云：吃茶去！又问那一人：曾到此间否？云：曾到。师云：吃茶去！院主问：不曾到，教伊吃茶去，即且致；曾到，为什么教伊吃茶去？师云：院主。院主应喏。师云：吃茶去！",
-    "context": "赵州以吃茶去三字接引一切来僧",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“吃茶去”。赵州从谂直以“师问二新到：上座曾到此间否？云：不曾到。师云：吃茶去！又问那一人：曾到此间否？云：曾到。师云：吃茶去！院主问：不曾到，教伊吃茶去，即且致；曾到，为什么教伊吃茶去？师云：院主。院主应喏。师云：吃茶去！”答之，不涉浮言，直指心源。",
     "interpretation": "三个吃茶去，将学人、院主的一切拟议分别全部截断。吃茶去之密意在去字——只管当下去吃茶，不要思量曾到不曾到。此是平常心是道最充分的体现。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["chi-cha-qu","ordinary-mind","benfen-shi"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu","wumenguan"]
+    "relatedConcepts": [
+      "chi-cha-qu",
+      "ordinary-mind",
+      "benfen-shi"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-261",
     "question": "洗钵去",
     "answer": "问：如何是学人自己？赵州云：吃粥了也未？学人云：吃粥了。赵州云：洗钵盂去。",
-    "context": "赵州以洗钵去指示学人于日用中自见本分",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“洗钵去”。赵州从谂直以“问：如何是学人自己？赵州云：吃粥了也未？学人云：吃粥了。赵州云：洗钵盂去。”答之，不涉浮言，直指心源。",
     "interpretation": "学人问自己，赵州不答自己是什么，而问吃粥了也未，再令洗钵盂去。此语之要：学人不可思量自己是什么，只于吃粥洗钵之日用中自己体会。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["benfen-shi","ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu","wumenguan"]
+    "relatedConcepts": [
+      "benfen-shi",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-262",
     "question": "万法归一，一归何所",
     "answer": "问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。",
-    "context": "赵州以布衫重七斤答万法归一之问",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“万法归一，一归何所”。赵州从谂直以“问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。”答之，不涉浮言，直指心源。",
     "interpretation": "学人问一归何所，落在思量中。赵州答我在青州作一领布衫重七斤，截断学人一切拟议。布衫重七斤，不属万法、不属一、不属何所，只是赵州当日实事。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["benfen-shi","ordinary-mind","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "benfen-shi",
+      "ordinary-mind",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "koan-263",
     "question": "赵州石桥度驴度马",
     "answer": "问：久响赵州石桥，到来只见掠彴子。赵州云：你只见掠彴子，不见赵州石桥？问：如何是赵州石桥？赵州云：过来过来。又问：如何是石桥？赵州云：度驴度马。",
-    "context": "赵州以石桥接引学人",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“赵州石桥度驴度马”。赵州从谂直以“问：久响赵州石桥，到来只见掠彴子。赵州云：你只见掠彴子，不见赵州石桥？问：如何是赵州石桥？赵州云：过来过来。又问：如何是石桥？赵州云：度驴度马。”答之，不涉浮言，直指心源。",
     "interpretation": "学人只见掠彴子，不见赵州石桥。赵州云过来过来，令学人当下过来。再问石桥，答度驴度马——石桥之功用在度驴度马，佛法之功用在度一切众生。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["ordinary-mind","benfen-shi","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "benfen-shi",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "koan-264",
     "question": "赵州勘婆子",
     "answer": "台山路有一婆子，要问僧。僧问：台山路，向什么处去？婆云：蓦直去！僧才行，婆云：又这么去也！赵州闻后，便去问：台山路，向什么处去？婆云：蓦直去！赵州才行，婆云：又这么去也！赵州便归，举似大众云：婆子今日被老僧勘破了也。",
-    "context": "赵州勘破台山婆子",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“赵州勘婆子”。赵州从谂直以“台山路有一婆子，要问僧。僧问：台山路，向什么处去？婆云：蓦直去！僧才行，婆云：又这么去也！赵州闻后，便去问：台山路，向什么处去？婆云：蓦直去！赵州才行，婆云：又这么去也！赵州便归，举似大众云：婆子今日被老僧勘破了也。”答之，不涉浮言，直指心源。",
     "interpretation": "婆子以蓦直去接僧，僧才行，婆云又这么去也。赵州去问，婆子仍云蓦直去，赵州才行，婆云又这么去也。赵州便归云婆子今日被老僧勘破了也。赵州之勘破，在于他不落婆子圈套。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["ordinary-mind","benfen-shi","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "benfen-shi",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "koan-265",
     "question": "一领布衫重七斤",
     "answer": "问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。",
-    "context": "赵州以布衫重七斤截断思量",
+    "context": "此公案出自《赵州真际禅师语录》。学人就禅门关要参请赵州从谂，问及“一领布衫重七斤”。赵州从谂直以“问：万法归一，一归何所？赵州云：我在青州作一领布衫，重七斤。”答之，不涉浮言，直指心源。",
     "interpretation": "学人问一归何所，赵州答我在青州作一领布衫重七斤。此语截断学人一切拟议：不属万法、不属一、不属何所，只是赵州当日实事。道不在思量中，只在当下实事中。",
     "master": "赵州从谂",
     "source": "赵州真际禅师语录",
-    "relatedConcepts": ["benfen-shi","ordinary-mind","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "benfen-shi",
+      "ordinary-mind",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "koan-266",
     "question": "云何名心？云何安心？",
     "answer": "汝不须立心，亦不须强安，可谓安矣。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“云何名心？云何安心？”，牛头法融遂应机答曰“汝不须立心，亦不须强安，可谓安矣。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "缘门问心与安心，入理直答不须立心、不须强安。此语将“安心”从“有心可安”的二元对立中解放——心本不有，何须更安？不立不安，即是真安。此为《绝观论》开宗明义之问，与达摩慧可“安心”公案遥相呼应：达摩说“将心来与汝安”，法融说“不须立心”，一脉相承。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "koan-267",
     "question": "有念即有心，无心即真道",
     "answer": "有念即有心，有心即乖道。无念即无心，无心即真道。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“有念即有心，无心即真道”，牛头法融遂应机答曰“有念即有心，有心即乖道。无念即无心，无心即真道。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "法融以四句破立，将心与道的关系一语道破。有念→有心→乖道；无念→无心→真道。此非渐次修行，而是顿悟见地：心与道不二，只在一念之转。此语为牛头禅“无心”宗旨之最简洁表述，与《心铭》“心性不生，何须知见”互为表里。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun","xinming"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun",
+      "xinming"
+    ]
   },
   {
     "id": "koan-268",
     "question": "龟毛喻何物？龟喻何物？",
     "answer": "龟喻于道，毛喻于我。故圣人无我而有道。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“龟毛喻何物？龟喻何物？”，牛头法融遂应机答曰“龟喻于道，毛喻于我。故圣人无我而有道。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "法融以龟毛为喻，破除有无之见。龟有甲无毛——道真实而我本空。道非先无今有故不言有，毛非先有今无故不言无。此喻精妙：既破凡夫执我之有见，又破外道执道可求之无见，双遣有无，直指中道。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","dajibenyou"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "dajibenyou"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "koan-269",
     "question": "道究竟属谁？",
     "answer": "究竟无所属，如空无所依。道若有系属，即有遮有开、有主有寄也。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“道究竟属谁？”，牛头法融遂应机答曰“究竟无所属，如空无所依。道若有系属，即有遮有开、有主有寄也。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "缘门问道属谁，入理答无所属。道若有归属，就有遮有开、有主有寄——落入二元对立。道如虚空，无所依止，无所系属，此为法界性自然之旨。此语破除“道属佛”“道属圣”之一切执着。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["fa-jie-xing-ziran","kong-wei-daoben"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "fa-jie-xing-ziran",
+      "kong-wei-daoben"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "koan-270",
     "question": "若如此者，即一切众生本来解脱",
     "answer": "尚无系缚，何有解脱人！",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“若如此者，即一切众生本来解脱”，牛头法融遂应机答曰“尚无系缚，何有解脱人！”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "缘门从“无谁无说”推出“本来解脱”，入理更进一步：连系缚都没有，哪里有解脱的人？此语将“解脱”也一并扫却——解脱是对治系缚的药，本无系缚何须解脱？此为《绝观论》究竟之旨，与《心铭》“菩提本有，不须用守；烦恼本无，不须用除”同出一轴。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["benwu-xijie","wuxin-jueguan"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun","xinming"]
+    "relatedConcepts": [
+      "benwu-xijie",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun",
+      "xinming"
+    ]
   },
   {
     "id": "koan-271",
     "question": "云何似见、非正见乎？",
     "answer": "汝今所见无有一法者，如彼外道，虽学隐形，而未能灭影亡迹。本无心境，汝莫起生灭之见。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“云何似见、非正见乎？”，牛头法融遂应机答曰“汝今所见无有一法者，如彼外道，虽学隐形，而未能灭影亡迹。本无心境，汝莫起生灭之见。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "缘门已悟“不见一法如微尘许可对说”，入理仍指出此只是“似见”——如外道隐形而未灭影。真正的正见是“本无心境，莫起生灭之见”。此一层翻进，将绝观之旨推至极则：不仅不见一法，连“不见”之见也不可立。此为《绝观论》最精妙之处。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["si-jian-zheng-jian","wuxin-jueguan"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "si-jian-zheng-jian",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "koan-272",
     "question": "智者求心不求佛，了本心源即无余",
     "answer": "若人求道不习此，千劫万劫枉功夫。徒自疲劳忍辛苦，究竟不免堕三涂。譬如求酥钻摇水，力尽不获实由愚。智者求心不求佛，了本心源即无余。",
-    "context": "",
+    "context": "此公案记于《绝观论》。学人参谒牛头法融，问“智者求心不求佛，了本心源即无余”，牛头法融遂应机答曰“若人求道不习此，千劫万劫枉功夫。徒自疲劳忍辛苦，究竟不免堕三涂。譬如求酥钻摇水，力尽不获实由愚。智者求心不求佛，了本心源即无余。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "法融以偈颂总结《绝观论》之旨。求酥钻水——酥在乳中不在水中，求道求心——道在心中不在佛处。智者向内求心，愚人向外求佛。此偈为全书归结，与达摩“理入”之“含生同一真性”、六祖“佛向性中作，莫向身外求”一脉相承。",
     "master": "牛头法融",
     "source": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","self-nature"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "koan-278",
@@ -16164,9 +18227,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹山与洞山的开场对话，是曹洞宗师徒开始的经典公案。本寂是名，不名本寂是道——名可以称呼，但真实的本寂之性超越名相，无法用语言表达。",
     "master": "曹山本寂",
     "source": "抚州曹山本寂禅师语录",
-    "relatedConcepts": ["non-duality","self-nature"],
-    "relatedPersons": ["caoshan-benji","dongshan"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "koan-279",
@@ -16176,9 +18247,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹山以最平实的语句表达最高深的佛法大意。沟壑是人为的分别，填平就是佛法——不高不下，不增不减，平等如如。",
     "master": "曹山本寂",
     "source": "抚州曹山本寂禅师语录",
-    "relatedConcepts": ["non-duality","wuwei-jianji"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "wuwei-jianji"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "koan-280",
@@ -16188,9 +18266,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "死猫儿头是无人看重、无人出价之物，曹山以此喻佛法之尊贵——不可估量，不可比拟。亦喻彻底死尽偷心的修行者，无人珍视却最为尊贵。",
     "master": "曹山本寂",
     "source": "抚州曹山本寂禅师语录",
-    "relatedConcepts": ["self-nature","non-duality"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "koan-281",
@@ -16200,9 +18285,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "枯木龙吟、髑髅眼睛，喻空寂中有活用、死尽中有生机。石霜犹带喜识，故曹山评为声闻见解。真见道须喜识尽时消息尽，方辨浊中清。",
     "master": "曹山本寂",
     "source": "抚州曹山本寂禅师语录",
-    "relatedConcepts": ["non-duality","self-nature"],
-    "relatedPersons": ["caoshan-benji","xiangyan-zhixian","shishuang-qingzhu"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "xiangyan-zhixian",
+      "shishuang-qingzhu"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "koan-282",
@@ -16212,69 +18306,109 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "通身是病喻法身大病，攒簇不得。不医不是不治，而是令其超越生死两端——求生不得求死不得，到无所求处方见本分事。",
     "master": "曹山本寂",
     "source": "抚州曹山本寂禅师语录",
-    "relatedConcepts": ["non-duality","self-nature"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "koan-283",
     "question": "法演白云万里",
     "answer": "法演说说佛说法拀槌竖拉白云万里，德山进门便棒临济进门便喝白云万里。白云万里是法演勘验学人的最高标尺，无论说佛说法德山棒临济喝都隔了万里。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《五祖法演禅师语录》卷上》。学人就禅门关要参请五祖法演，问及“法演白云万里”。五祖法演直以“法演说说佛说法拀槌竖拉白云万里，德山进门便棒临济进门便喝白云万里。白云万里是法演勘验学人的最高标尺，无论说佛说法德山棒临济喝都隔了万里。”答之，不涉浮言，直指心源。",
+    "interpretation": "五祖法演在此公案中以极具穿透力之机锋直下勘验。“法演白云万里”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "五祖法演",
     "source": "《五祖法演禅师语录》卷上",
-    "relatedConcepts": ["baiyun-wanli"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "koan-284",
     "question": "法演一口吸尽西江水",
     "answer": "法演举庵居士问马大师公案，说一口吸尽西江水洛阳牡丹新吰蕊簹土飔尘勿处寻抬头撞著自家底。一口吸尽西江水不是向外寻来的而是自家本有的。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《五祖法演禅师语录》卷中》。学人就禅门关要参请五祖法演，问及“法演一口吸尽西江水”。五祖法演直以“法演举庵居士问马大师公案，说一口吸尽西江水洛阳牡丹新吰蕊簹土飔尘勿处寻抬头撞著自家底。一口吸尽西江水不是向外寻来的而是自家本有的。”答之，不涉浮言，直指心源。",
+    "interpretation": "五祖法演在此公案中以极具穿透力之机锋直下勘验。“法演一口吸尽西江水”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "五祖法演",
     "source": "《五祖法演禅师语录》卷中",
-    "relatedConcepts": ["baiyun-wanli","baiyun-yidi-shui"],
-    "relatedPersons": ["wuzu-fayan","mazu"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli",
+      "baiyun-yidi-shui"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "koan-285",
     "question": "法演驱耕夫之牛夺饥人之食",
     "answer": "法演说驱耕夫之牛令他苗稽滋盛夺饥人之食令他永绝饥虚。这就是禅宗的大死大活。",
-    "context": "",
+    "context": "此公案记于《《五祖法演禅师语录》卷中》。学人参谒五祖法演，问“法演驱耕夫之牛夺饥人之食”，五祖法演遂应机答曰“法演说驱耕夫之牛令他苗稽滋盛夺饥人之食令他永绝饥虚。这就是禅宗的大死大活。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "此乃宗门大杀大活、夺境夺人之雷霆手段，旨在逼令学人死尽偷心，当下承当本地风光。",
     "master": "五祖法演",
     "source": "《五祖法演禅师语录》卷中",
-    "relatedConcepts": ["qugeng-duoshi"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "qugeng-duoshi"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "koan-286",
     "question": "法演达磨得皮肉骨髓",
     "answer": "法演举达磨勘验四弟子公案，评说当时若见他三人恣么道各人好与三十棒。只如白云今日也合吃二十九棒留一棒与你们。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《五祖法演禅师语录》卷中》。学人就禅门关要参请五祖法演，问及“法演达磨得皮肉骨髓”。五祖法演直以“法演举达磨勘验四弟子公案，评说当时若见他三人恣么道各人好与三十棒。只如白云今日也合吃二十九棒留一棒与你们。”答之，不涉浮言，直指心源。",
+    "interpretation": "五祖法演在此公案中以极具穿透力之机锋直下勘验。“法演达磨得皮肉骨髓”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "五祖法演",
     "source": "《五祖法演禅师语录》卷中",
-    "relatedConcepts": ["baiyun-wanli"],
-    "relatedPersons": ["wuzu-fayan","bodhidharma"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "koan-287",
     "question": "法演无缝塔",
     "answer": "法演举肓宗问忠国师无缝塔公案，国师良久后问肓会么肓不会。法演评说当时肓宗如果是作家君王但向道国师国师何必后来该词耽源。",
-    "context": "",
+    "context": "此公案记于《《五祖法演禅师语录》卷上》。学人参谒五祖法演，问“法演无缝塔”，五祖法演遂应机答曰“法演举肓宗问忠国师无缝塔公案，国师良久后问肓会么肓不会。法演评说当时肓宗如果是作家君王但向道国师国师何必后来该词耽源。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "五祖法演借肃宗问慧忠国师‘无缝塔’公案，勘验从上君臣相契之机。无缝塔者，离一切相、不落方所、无缝无罅之清净自性也。法演评当时若有作家君王，但道‘国师国师’，便足与国师心心相印，何须更向言句葛藤中追问模样。",
     "master": "五祖法演",
     "source": "《五祖法演禅师语录》卷上",
-    "relatedConcepts": ["diyi-yi"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "diyi-yi"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "koan-288",
@@ -16284,9 +18418,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州十八岁便“破家荡产”，荡尽的是心中业识家当——五欲眷属、知见葛藤。未破时被十二时辰使唤，做习气的奴仆；破尽后反使得十二时，做时间的主人。僧问“如何是家产”，博山道“卸却皮囊即向汝道”——皮囊即色身，家产即执身为我的一切所有；肯当下卸却，家产本空，何须更道？此一则与赵州语连璧，正见博山评唱之妙：不塞人问路，只指人转身。",
     "master": "博山元来",
     "source": "《博山参禅警语》卷上·评古德垂示警语",
-    "relatedConcepts": ["non-mind","emptiness"],
-    "relatedPersons": ["boshan-yuanlai","zhaozhou"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "non-mind",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-289",
@@ -16296,9 +18438,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "此段自叙悟缘，正是《警语》全书之骨血。博山悟后不以此自足，反去见宝方和尚勘验，一勘便知往日“大悟”只是解路——如方木逗圆孔，方圆不合。由此乃有“我得宝方不肯两个字，受用不尽”之叹。禅师尚且如此，后人稍有心境相应、光影门头便自称彻悟，可不惧哉？博山一生痛陈禅病、教人悟后须见人，皆从这段亲历中来。",
     "master": "博山元来",
     "source": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["chanbing","fashen-bing"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "chanbing",
+      "fashen-bing"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-290",
@@ -16308,9 +18457,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "善知识之“不肯”，是抹掉学人最后的执着——连“悟”也不许你把住。空拶空，是以话头逼拶到能所双亡处，功莫大焉；若还追有个“悟”可得，德犹微矣。“得便宜处失便宜”：占得的便宜正是吃亏处，认下的悟境正是病根。博山一生警策学人勿认光影、勿坐法身边，皆从这两个字中流出。父母能予人衣食，善知识能予人“不肯”——肯处即死处，不肯处才有活路。",
     "master": "博山元来",
     "source": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["fashen-bing","zhuan-shen-tu-qi"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "fashen-bing",
+      "zhuan-shen-tu-qi"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-291",
@@ -16320,9 +18476,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "“昭昭灵灵”即清醒时了了分知的灵知之心。玄沙一问直勘命根：若它真是你的主人，为何熟睡时便不见踪影、做不得主？可见此灵知仍是识心缘影，认它为真即认贼为子。博山进而点醒：睡时尚做不得主，死时四大分离更如何？今日修行人于“能觉察者”上认主宰、认“观照者”为真我，正是识神门头光影，非本来面目。勘验之法至简：境界转换时主人公在么？",
     "master": "玄沙师备（博山评）",
     "source": "《博山参禅警语》卷下·评古德垂示警语",
-    "relatedConcepts": ["shishen","chanbing"],
-    "relatedPersons": ["xuansha-shibei","boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "shishen",
+      "chanbing"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-292",
@@ -16332,9 +18496,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "芭蕉以绝境喻参禅：进不得、退不得、躲不得——正是不许你左思右卜、稍生疑议之处。博山谓做工夫做到无可用心处、万仞悬崖处、水穷山尽处、罗纹结角处，如老鼠入牛角，自有倒断。绝处正是出身之路：疑情逼到无路可走，一时桶底脱落。今人参禅稍有难处便求解会、问人讨说法，正是“免不得”的堕身死汉——不肯死于疑团，便不得活于悟门。",
     "master": "芭蕉禅师（博山评）",
     "source": "《博山参禅警语》卷上·评古德垂示警语",
-    "relatedConcepts": ["yiqing","po-shengsi-xin"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "yiqing",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-295",
@@ -16344,9 +18515,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "这一问答是达摩宗门勘心的原始规程。问者怕绝念成断灭——落入死寂；达摩系的答法不给你讲道理，只指当下：了了自知，言不可及。知在念绝处灵然不昧，正是自性清净心的直接证据。妙在\"毕竟不与他说破知字\"——先说破就成了他的知解，必须他自己摸到，师只负责印证。默传心印之默，不是不说话，是不代替你悟。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
     "master": "达摩系传承（宗密述）",
     "source": "《禅源诸诠集都序》卷中",
-    "relatedConcepts": ["lingzhi","mozhao-chan-concept"],
-    "relatedPersons": ["bodhidharma","guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "lingzhi",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "koan-296",
@@ -16356,9 +18535,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "这是禅宗史上\"心\"与\"知\"之辨的关键公案。达摩说心是标名，荷泽说知是指体——名与体不是两个东西，是一体的两面。宗密的水湿之喻勘破一切名言疑网：凡问\"为什么多了个字\"者，皆认名未认体。悟得湿是水不是名，则清浊水波无义不通；悟得知是心不是名，则真妄垢净无义不通。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
     "master": "荷泽神会（宗密述）",
     "source": "《禅源诸诠集都序》卷中",
-    "relatedConcepts": ["lingzhi","mind-is-buddha"],
-    "relatedPersons": ["shenhui","guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "lingzhi",
+      "mind-is-buddha"
+    ],
+    "relatedPersons": [
+      "shenhui",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "koan-297",
@@ -16368,9 +18555,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "穷问到底的一则教学范例：从名到体，一问再问。答\"是水\"是给名字，答\"湿\"才给到事物本身；答\"是心\"是给概念，答\"知\"才指到当下灵然。一切佛法的名相——佛性、真如、如来藏——若只当名词记忆，全是认名；何者是心？知即是心——这才把人逼回当下体验。学道第一关：名下认体。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
     "master": "宗密",
     "source": "《禅源诸诠集都序》卷下·十异之七",
-    "relatedConcepts": ["lingzhi","self-nature"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "lingzhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "koan-298",
@@ -16380,9 +18574,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "顿悟即佛何以无佛之用——千古之问，宗密一喻了之。悟是病醒，习气是病后虚弱；放光是本艺，须待气力复原。所以顿悟之后必须渐修：悟后保任如将息病体，习气尽处方起大神用。此喻同时护住两头：不以\"尚无神通\"否定人之本悟，也不以\"既悟即佛\"废除悟后之修。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
     "master": "宗密",
     "source": "《禅源诸诠集都序》卷下",
-    "relatedConcepts": ["dunwu-jianxiu","miwu-shizhong"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "miwu-shizhong"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "koan-299",
@@ -16392,9 +18593,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "真理需要保密吗？裴休的回答干脆之至：佛没有秘密，只有愚人解不开的密语。和会诸宗不是泄露天机，是把各宗自封的\"秘藏\"摊开在佛语之下让大家看清——本是一味。这段对话也立了学道者的独立品格：不迷信人（包括祖师），只以法和佛为据。千年之后读之，仍是判别正法与门派之见的试金石。 此则公案之精髓，在于彻底截断学人向外驰求之妄想偷心。禅非逻辑思辨所能及，亦非语言文字所能诠。祖师之言句动作，如羚羊挂角，无迹可求；旨在令参学者反求自心，洞明自性本自具足、不假外求。在现代生活与修行中，当我们面对繁复纷扰之境缘时，若能体会个中机趣，不落得失两边，当下便能照破烦恼执缚，得大自在安详。",
     "master": "裴休",
     "source": "《禅源诸诠集都序·裴休叙》",
-    "relatedConcepts": ["chanjiao-yizhi"],
-    "relatedPersons": ["peixiu","guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "chanjiao-yizhi"
+    ],
+    "relatedPersons": [
+      "peixiu",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "koan-300",
@@ -16404,9 +18612,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "德韶一印，非特印延寿一人之心，实印法眼一宗之化境。延寿得韶师密印后，并不耽著一己枯寂，而以“大兴佛事”为本愿。宗门极则处不在绝尘离世，而在一心圆具万行、广建水月道场。韶师预记弘法眼，正显禅宗至极、理事无阂之全提宗风。",
     "master": "天台德韶 / 永明延寿",
     "source": "《景德传灯录》卷二十六·永明延寿章",
-    "relatedConcepts": ["mind-transmission","wanshan-tonggui","lishi-wuai"],
-    "relatedPersons": ["tiantai-deshao","yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji","chanlinbaoxun"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "wanshan-tonggui",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "tiantai-deshao",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji",
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "koan-301",
@@ -16416,9 +18634,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "平常人视死为大变，延寿视死如归家。挪用库钱非私贪，全出一片同体大悲；就刑无惧非佯狂，盖已了达四大假合、本无死生之实相。这正是《万善同归集》“以无所得而修万善”的最初写照——不惜身命，随顺慈悲，以事显理，生死关头真见本来。",
     "master": "永明延寿",
     "source": "《宋高僧传》卷二十八·永明延寿传",
-    "relatedConcepts": ["po-shengsi-xin","cibei","wanshan-tonggui"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "cibei",
+      "wanshan-tonggui"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "koan-302",
@@ -16428,225 +18654,355 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "延寿拈阄，看似凭神契，实是藉相显心、决断大疑。禅门学人易堕偏空独善，延寿深达法界圆融之旨，以七度拈阄打破“唯禅非净、唯理废事”之隔阂。自此理事齐平、万善同归，开一代宗门定慧庄严、禅净双修之坦途。",
     "master": "永明延寿",
     "source": "《佛祖统纪》卷二十六",
-    "relatedConcepts": ["chan-jing-shuangxiu","wanshan-tonggui","zhengzhu-jianxiu"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "wanshan-tonggui",
+      "zhengzhu-jianxiu"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "koan-303",
     "question": "廓然无圣（碧岩录第一则）",
     "answer": "梁武帝问达摩“如何是圣谛第一义”，达摩云“廓然无圣”。帝曰“对朕者谁”，摩云“不识”。帝不契，达摩遂渡江至魏。圣谛荡荡，何圣凡之可言？武帝以有为功德求圣，达摩以无为真心扫之——廓然无圣，正是第一义的直答。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《碧岩录》第一则》。学人就禅门关要参请达摩，问及“廓然无圣（碧岩录第一则）”。达摩直以“梁武帝问达摩“如何是圣谛第一义”，达摩云“廓然无圣”。帝曰“对朕者谁”，摩云“不识”。帝不契，达摩遂渡江至魏。圣谛荡荡，何圣凡之可言？武帝以有为功德求圣，达摩以无为真心扫之——廓然无圣，正是第一义的直答。”答之，不涉浮言，直指心源。",
+    "interpretation": "达摩在此公案中以极具穿透力之机锋直下勘验。“廓然无圣（碧岩录第一则）”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "达摩",
     "source": "《碧岩录》第一则",
-    "relatedConcepts": ["beyond-words","direct-pointing"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-304",
     "question": "麻三斤（碧岩录第十二则）",
     "answer": "僧问洞山“如何是佛”，山云“麻三斤”。佛之一字，不可于言句上寻讨；洞山答处截断众流，麻三斤即佛、佛即麻三斤，直是难咬嚼、无尔下口处。若向句中觅，参到弥勒下生也未梦见在。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《碧岩录》第十二则》。学人就禅门关要参请洞山守初，问及“麻三斤（碧岩录第十二则）”。洞山守初直以“僧问洞山“如何是佛”，山云“麻三斤”。佛之一字，不可于言句上寻讨；洞山答处截断众流，麻三斤即佛、佛即麻三斤，直是难咬嚼、无尔下口处。若向句中觅，参到弥勒下生也未梦见在。”答之，不涉浮言，直指心源。",
+    "interpretation": "洞山守初在此公案中以极具穿透力之机锋直下勘验。“麻三斤（碧岩录第十二则）”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "洞山守初",
     "source": "《碧岩录》第十二则",
-    "relatedConcepts": ["koan","direct-pointing"],
-    "relatedPersons": ["dongshan-shouchu"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "koan",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "dongshan-shouchu"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-305",
     "question": "日日是好日（碧岩录第六则）",
     "answer": "云门垂语“十五日已前不问汝，十五日已后道将一句来”，自代云“日日是好日”。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。",
-    "context": "",
-    "interpretation": "",
+    "context": "此公案出自《《碧岩录》第六则》。学人就禅门关要参请云门文偃，问及“日日是好日（碧岩录第六则）”。云门文偃直以“云门垂语“十五日已前不问汝，十五日已后道将一句来”，自代云“日日是好日”。不是拣个好日子才叫好日——悟后行住坐卧、顺境逆境，无一日不是好日。好日子不在日历上，在当人自己的眼光里。”答之，不涉浮言，直指心源。",
+    "interpretation": "云门文偃在此公案中以极具穿透力之机锋直下勘验。“日日是好日（碧岩录第六则）”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "云门文偃",
     "source": "《碧岩录》第六则",
-    "relatedConcepts": ["ordinary-mind","present-moment"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "present-moment"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-306",
     "question": "对一说（碧岩录第十四则）",
     "answer": "僧问云门“如何是一代时教”，门云“对一说”。一代时教千言万语，对着“一”说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个“一”上。",
-    "context": "",
+    "context": "此公案记于《《碧岩录》第十四则》。学人参谒云门文偃，问“对一说（碧岩录第十四则）”，云门文偃遂应机答曰“僧问云门“如何是一代时教”，门云“对一说”。一代时教千言万语，对着“一”说——万法归一，教外别传的旨趣不在三藏十二部的文字里，而在这个“一”上。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "云门答‘对一说’，直指一代时教三藏十二部千言万语，无非是对着学人当下一念自性真如而施设的应病与药之谈。若识得当下一念，则千经万论全体是一部大藏；若向文字名相中索解，则如数他人宝藏，自无半文钱分。云门一语点破教海与宗门本自一体无二。",
     "master": "云门文偃",
     "source": "《碧岩录》第十四则",
-    "relatedConcepts": ["all-returns-to-one","direct-pointing"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "all-returns-to-one",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-307",
     "question": "云门糊饼（碧岩录第七十七则）",
     "answer": "僧问云门“如何是超佛越祖之谈”，门云“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。",
-    "context": "",
+    "context": "此公案记于《《碧岩录》第七十七则》。学人参谒云门文偃，问“云门糊饼（碧岩录第七十七则）”，云门文偃遂应机答曰“僧问云门“如何是超佛越祖之谈”，门云“糊饼”。问处高推圣境，答处平常到底——超佛越祖不在玄妙处，只在胡饼、只在目前。云门以糊饼塞断他人口吻，正是水涨船高、泥多佛大。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "超佛越祖之谈，学人往往期求玄妙不可测之高深法义，云门和尚信手拈来‘糊饼’二字劈头掷出。胡饼乃日用充饥之寻常物，不属佛亦不属祖。云门之机用，正是要在学人高推圣境、起心动念分别之处一刀斩断，示人当下日用饥餐渴饮便是无上解脱大道。",
     "master": "云门文偃",
     "source": "《碧岩录》第七十七则",
-    "relatedConcepts": ["ordinary-mind","direct-pointing"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-308",
     "question": "野鸭子（碧岩录第五十三则）",
     "answer": "马祖与百丈行次见野鸭子飞过，祖云“是什么”，丈云“野鸭子”，祖云“什么处去也”，丈云“飞过去也”，祖遂扭百丈鼻头云“何曾飞去”。百丈于言下大悟——野鸭飞去是境，鼻头一扭处，境消心现，何曾飞去？",
-    "context": "",
+    "context": "此公案记于《《碧岩录》第五十三则》。学人参谒马祖道一，问“野鸭子（碧岩录第五十三则）”，马祖道一遂应机答曰“马祖与百丈行次见野鸭子飞过，祖云“是什么”，丈云“野鸭子”，祖云“什么处去也”，丈云“飞过去也”，祖遂扭百丈鼻头云“何曾飞去”。百丈于言下大悟——野鸭飞去是境，鼻头一扭处，境消心现，何曾飞去？”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "百丈见野鸭子飞过答‘飞过去也’，正是落入外境生灭来去之情见中。马祖猛扭其鼻头，痛彻心扉之际断喝‘何曾飞去’，令百丈当下从色尘生灭之妄想中猛醒，直下契证觉性本体从来不曾有一丝一毫的生灭去来，自性湛然常住。",
     "master": "马祖道一",
     "source": "《碧岩录》第五十三则",
-    "relatedConcepts": ["self-nature","direct-pointing"],
-    "relatedPersons": ["mazu","baizhang"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "self-nature",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-309",
     "question": "犀牛扇子（碧岩录第九十一则）",
     "answer": "盐官唤侍者“与我将犀牛扇子来”，侍者云“扇子破也”，官云“扇子既破还我犀牛儿来”，侍者无对。扇子破是事，犀牛儿是理——破的是物，不晦的是那个。盐官以破扇子逼出学人本分田地。",
-    "context": "",
+    "context": "此公案记于《《碧岩录》第九十一则》。学人参谒盐官齐安，问“犀牛扇子（碧岩录第九十一则）”，盐官齐安遂应机答曰“盐官唤侍者“与我将犀牛扇子来”，侍者云“扇子破也”，官云“扇子既破还我犀牛儿来”，侍者无对。扇子破是事，犀牛儿是理——破的是物，不晦的是那个。盐官以破扇子逼出学人本分田地。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "扇子破是事相之成坏，犀牛儿是自性本具之实相。侍者执着于事相之扇破，盐官索取无相之犀牛儿，正是要逼迫侍者打破事相隔阂、回光反照自性真常。无情之物尚有真性，当人脚跟下灵明之犀牛儿又何尝有丝毫破损！",
     "master": "盐官齐安",
     "source": "《碧岩录》第九十一则",
-    "relatedConcepts": ["self-nature","koan"],
-    "relatedPersons": ["yanguan-qian"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "self-nature",
+      "koan"
+    ],
+    "relatedPersons": [
+      "yanguan-qian"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-310",
     "question": "好雪片片（碧岩录第四十二则）",
     "answer": "庞居士辞药山，山命十人禅客相送，居士指空中雪云“好雪片片不落别处”。时有全禅客云“落在什么处”，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问“落在什么处”，早已落别处了也。",
-    "context": "",
+    "context": "此公案记于《《碧岩录》第四十二则》。学人参谒庞蕴居士，问“好雪片片（碧岩录第四十二则）”，庞蕴居士遂应机答曰“庞居士辞药山，山命十人禅客相送，居士指空中雪云“好雪片片不落别处”。时有全禅客云“落在什么处”，士打一掌。片片好雪不落别处，正落当人自己——全禅客一问“落在什么处”，早已落别处了也。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "庞蕴居士指空中飘雪道‘好雪片片不落别处’，直显万法当体全真、法法各住自位，无一法不在法界真如之中。全禅客追问‘落在什么处’，正是心动生疑、头上安头，故庞公迎面一掌打去，令其情识分别当下消歇，休向虚空更觅落处。",
     "master": "庞蕴居士",
     "source": "《碧岩录》第四十二则",
-    "relatedConcepts": ["present-moment","self-nature"],
-    "relatedPersons": ["pang-yun"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "present-moment",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "pang-yun"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-311",
     "question": "师唱谁家曲，宗风嗣阿谁？",
     "answer": "隔江打鼓不闻声。",
-    "context": "",
+    "context": "此公案记于《杨岐方会和尚后录》。学人参谒杨岐方会，问“师唱谁家曲，宗风嗣阿谁？”，杨岐方会遂应机答曰“隔江打鼓不闻声。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "僧问杨岐宗风嗣承谁家，杨岐答“隔江打鼓不闻声”——暗示宗风传承不在言语声相中，超越音声形相，直指心印。",
     "master": "杨岐方会",
     "source": "杨岐方会和尚后录",
-    "relatedConcepts": ["beyond-words","fansheng-lujue"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "beyond-words",
+      "fansheng-lujue"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "koan-312",
     "question": "如何是佛？",
     "answer": "贼是人做。",
-    "context": "",
+    "context": "此公案记于《杨岐方会和尚后录》。学人参谒杨岐方会，问“如何是佛？”，杨岐方会遂应机答曰“贼是人做。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "以反常语破除学人对佛的执着。佛不是高高在上的圣者，而是如“贼是人做”一样平常——做人即是做佛，打破凡圣分别。",
     "master": "杨岐方会",
     "source": "杨岐方会和尚后录",
-    "relatedConcepts": ["ordinary-mind","yiqiefa-foshi"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "yiqiefa-foshi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "koan-313",
     "question": "杨岐一诀，凡圣路绝。无端维摩，特地饶舌。",
     "answer": "上堂直示，喝一喝。",
-    "context": "",
+    "context": "此公案记于《杨岐方会和尚后录》。学人参谒杨岐方会，问“杨岐一诀，凡圣路绝。无端维摩，特地饶舌。”，杨岐方会遂应机答曰“上堂直示，喝一喝。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "杨岐自述宗风心要：一诀之下，凡圣路绝。连维摩诘的辩才也属多余。此是杨岐派直截顿悟、不落渐次的宗风总纲。",
     "master": "杨岐方会",
     "source": "杨岐方会和尚后录",
-    "relatedConcepts": ["fansheng-lujue","suiliu-renxing"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "fansheng-lujue",
+      "suiliu-renxing"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "koan-314",
     "question": "心随万境转，转处实能幽。随流认得性，无喜复无忧。",
     "answer": "天堂地狱罩却汝头，释迦老子在尔脚跟下。",
-    "context": "",
+    "context": "此公案记于《杨岐方会和尚后录》。学人参谒杨岐方会，问“心随万境转，转处实能幽。随流认得性，无喜复无忧。”，杨岐方会遂应机答曰“天堂地狱罩却汝头，释迦老子在尔脚跟下。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "杨岐宗风心要偈。不逃避境界，而在万境流转中认取自性。天堂地狱都在你头上，释迦老子就在你脚跟下——一切不离当下。",
     "master": "杨岐方会",
     "source": "杨岐方会和尚后录",
-    "relatedConcepts": ["suiliu-renxing","xin-sui-wanjing"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "suiliu-renxing",
+      "xin-sui-wanjing"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "koan-315",
     "question": "如何是圣谛第一义？",
     "answer": "廓然无圣。",
-    "context": "梁武帝问达摩，达摩答“廓然无圣”。帝不契，达摩遂渡江北去。",
+    "context": "此公案出自《《碧岩录》第一则》。学人就禅门关要参请菩提达摩，问及“如何是圣谛第一义？”。菩提达摩直以“廓然无圣。”答之，不涉浮言，直指心源。",
     "interpretation": "圣谛本空，无圣可立。武帝执于圣解，达摩以“廓然无圣”截断其分别。此是禅宗东来第一公案。",
     "master": "菩提达摩",
     "source": "《碧岩录》第一则",
-    "relatedConcepts": ["kuo-ran-wu-sheng"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "kuo-ran-wu-sheng"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-316",
     "question": "至道无难，唯嫌拣择。一有言语便是拣择。老僧不在明白里，护惜个什么？",
     "answer": "不知道。",
-    "context": "赵州示众，僧追问，州以“不知”截断。",
+    "context": "此公案出自《《碧岩录》第二则》。学人就禅门关要参请赵州从谂，问及“至道无难，唯嫌拣择。一有言语便是拣择。老僧不在明白里，护惜个什么？”。赵州从谂直以“不知道。”答之，不涉浮言，直指心源。",
     "interpretation": "至道本无难，唯嫌拣择心。一落言语即是拣择。僧追问护惜什么，州以不知截断——不知即无分别智现前处。",
     "master": "赵州从谂",
     "source": "《碧岩录》第二则",
-    "relatedConcepts": ["jianshe"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "jianshe"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-317",
     "question": "如何是佛？",
     "answer": "麻三斤。",
-    "context": "僧问洞山，山云“麻三斤”。",
+    "context": "此公案出自《《碧岩录》第十八则》。学人就禅门关要参请洞山守初，问及“如何是佛？”。洞山守初直以“麻三斤。”答之，不涉浮言，直指心源。",
     "interpretation": "佛不高居殿宇，就在贱物平常处。麻三斤是活句非死句，堵断学人思量，令其于言下回光返照。",
     "master": "洞山守初",
     "source": "《碧岩录》第十八则",
-    "relatedConcepts": ["huoju-siju"],
-    "relatedPersons": ["dongshan-shouchu"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "huoju-siju"
+    ],
+    "relatedPersons": [
+      "dongshan-shouchu"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-318",
     "question": "如何是祖师西来意？",
     "answer": "庭前柏树子。",
-    "context": "僧问赵州，州云“庭前柏树子”。",
+    "context": "此公案出自《《碧岩录》第三十七则》。学人就禅门关要参请赵州从谂，问及“如何是祖师西来意？”。赵州从谂直以“庭前柏树子。”答之，不涉浮言，直指心源。",
     "interpretation": "祖师西来意不在别处，就在庭前柏树子里——道在日用，不假外求。柏树子是活句，堵断学人向玄妙处寻觅。",
     "master": "赵州从谂",
     "source": "《碧岩录》第三十七则",
-    "relatedConcepts": ["dao-zai-riyong"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-319",
     "question": "如何是法身？",
     "answer": "六不收。",
-    "context": "僧问云门，门云“六不收”。",
+    "context": "此公案出自《《碧岩录》第四十七则》。学人就禅门关要参请云门文偃，问及“如何是法身？”。云门文偃直以“六不收。”答之，不涉浮言，直指心源。",
     "interpretation": "法身超绝待对，非六根所能收摄。云门以三字截断思量——六根六识六境皆不能范围法身，须向言语道断处荐取。",
     "master": "云门文偃",
     "source": "《碧岩录》第四十七则",
-    "relatedConcepts": ["fashen-wuxiang"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "fashen-wuxiang"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-320",
     "question": "如何是尘尘三昧？",
     "answer": "钵里饭，桶里水。",
-    "context": "僧问云门，门云“钵里饭桶里水”。",
+    "context": "此公案出自《《碧岩录》第五十则》。学人就禅门关要参请云门文偃，问及“如何是尘尘三昧？”。云门文偃直以“钵里饭，桶里水。”答之，不涉浮言，直指心源。",
     "interpretation": "尘尘三昧不在玄妙处，就在钵里饭桶里水的日用中。一微尘中含三昧，一钵饭里见全体——道在寻常。",
     "master": "云门文偃",
     "source": "《碧岩录》第五十则",
-    "relatedConcepts": ["chenchen-sanmei","dao-zai-riyong"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "chenchen-sanmei",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-321",
@@ -16656,9 +19012,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "透网金鳞喻已透脱者。雪峰壁立万仞，三圣亦是作家方敢回击。二人一出一入，未分胜负——作家相见，一擒一纵。",
     "master": "雪峰义存",
     "source": "《碧岩录》第四十九则",
-    "relatedConcepts": ["zuo-jia-xiang-jian"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "zuo-jia-xiang-jian"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-322",
@@ -16668,9 +19030,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雨滴声本是声色境，若唤作雨声则是迷己逐物。镜清以洎不迷己点拨——出身犹可易，脱体道应难。",
     "master": "镜清道怤",
     "source": "《碧岩录》第四十六则",
-    "relatedConcepts": ["mi-ji-zhu-wu"],
+    "relatedConcepts": [
+      "mi-ji-zhu-wu"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-323",
@@ -16680,21 +19046,33 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "万法归一已是一往之谈，一归何处更无落处。赵州不向玄妙处答，却道青州布衫七斤——直下寻常，截断学人思量。",
     "master": "赵州从谂",
     "source": "《碧岩录》第四十五则",
-    "relatedConcepts": ["all-returns-to-one"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-324",
     "question": "如何是佛法大意？",
     "answer": "填沟塞壑。",
-    "context": "僧问云门“如何是佛法大意”，门云“填沟塞壑”。",
+    "context": "此公案出自《《碧岩录》第三十六则》。学人就禅门关要参请云门文偃，问及“如何是佛法大意？”。云门文偃直以“填沟塞壑。”答之，不涉浮言，直指心源。",
     "interpretation": "佛法大意不在别处，就在填沟塞壑的日用中——道在寻常，不假奇特。与马祖平常心是道同宗旨。",
     "master": "云门文偃",
     "source": "《碧岩录》第三十六则",
-    "relatedConcepts": ["dao-zai-riyong"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-325",
@@ -16704,9 +19082,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "香严多年在沩山处博通经典却无法契悟，因为总在知解上求。一击竹声，能所双泯，知见顿断，本心自现。悟道不假文字思量，唯在时节因缘到来，一击一响之间，豁然顿开。",
     "master": "香严智闲",
     "source": "《林间录后集》·香严赞",
-    "relatedConcepts": ["jizhu-kaiwu","instant-enlightenment"],
-    "relatedPersons": ["xiangyan-zhixian"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "jizhu-kaiwu",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "koan-326",
@@ -16716,9 +19101,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞以狂放行为破除对佛像的执着。木佛非佛，执着即错；不执即真，何须外求。佛在心中，不在木像；破执方能见性。此则公案示人：真供养不在事相，而在悟明自性。",
     "master": "丹霞天然",
     "source": "《林间录后集》·丹霞赞",
-    "relatedConcepts": ["pozhi-kuangfang","non-duality"],
-    "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "pozhi-kuangfang",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "koan-327",
@@ -16728,9 +19120,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈怀海以“大机”开示学人：佛无密语，一切现成；以意求道，反落阴阳二元。大机者，全体大用，不假造作，如狮子王露地而踞，无所畏惧。此赞精炼概括百丈“一日不作一日不食”的禅风——大机大用，在日用中。",
     "master": "百丈怀海",
     "source": "《林间录后集》·百丈真赞",
-    "relatedConcepts": ["daji-dayong","self-nature"],
-    "relatedPersons": ["baizhang","huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "daji-dayong",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "koan-328",
@@ -16740,9 +19140,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "玄沙以“空印印空文”喻禅法：本无可印，亦无能印，一切现成。宝珠喻自性，见者自见——但珠不自知为珠，见亦不自知为见。若起“我独见之”一念，即是妄见。唯有能所双泯，珠自圆、法自全，方契玄沙宗旨。",
     "master": "玄沙师备",
     "source": "《林间录后集》·玄沙备禅师画像赞",
-    "relatedConcepts": ["non-duality","self-nature"],
-    "relatedPersons": ["xuansha-shibei","huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "non-duality",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "koan-329",
@@ -16752,141 +19160,239 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "永嘉玄觉阅维摩经发明心要，往曹溪印可，一宿即悟。惠洪赞其“以槌授公，万象惊缩”——六祖一槌击涂毒鼓，闻者僵仆；将此槌授与永嘉，则万象惊缩。喻永嘉得六祖心印后，机锋峻烈，一言半句令万象消殒。一宿觉之妙，在于情根无功、意识无作，现量圆成。",
     "master": "永嘉玄觉",
     "source": "《林间录后集》·永嘉和尚画像赞",
-    "relatedConcepts": ["instant-enlightenment","self-nature"],
-    "relatedPersons": ["yongjia","huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "yongjia",
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "koan-330",
     "question": "吕洞宾参黄龙——“一粒粟中藏世界，半升铛内煮山川”，此意如何？",
     "answer": "黄龙答：“守尸鬼。”吕曰：“争奈囊中有长生不死药？”龙曰：“饶经八万劫，终是落空亡。”吕含愠而去，至晚飞剑胁之，剑不能入，遂拜求指归。龙厉色问：“如何是一粒粟中藏世界？”吕于言下有省，作偈礼谢。",
-    "context": "",
+    "context": "此公案记于《尚理编》。学人参谒黄龙诲机，问“吕洞宾参黄龙——“一粒粟中藏世界，半升铛内煮山川”，此意如何？”，黄龙诲机遂应机答曰“黄龙答：“守尸鬼。”吕曰：“争奈囊中有长生不死药？”龙曰：“饶经八万劫，终是落空亡。”吕含愠而去，至晚飞剑胁之，剑不能入，遂拜求指归。龙厉色问：“如何是一粒粟中藏世界？”吕于言下有省，作偈礼谢。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "吕洞宾以道家神仙炼术自负，黄龙诲机直斥其为‘守尸鬼’、‘终是落空亡’，因长生之术不过是保全幻化色身与神识，未出三界生死轮回。飞剑不能入黄龙之体，方显宗门彻悟法身真空无相、刀兵不入、水火不侵之无上实相境界，终令纯阳子心悦诚服。",
     "master": "黄龙诲机",
     "source": "尚理编",
-    "relatedConcepts": ["shangli-bianzheng","lianxu-xingshen","jianxing-dadao"],
-    "relatedPersons": ["huanglong-huiji","lv-dongbin","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "lianxu-xingshen",
+      "jianxing-dadao"
+    ],
+    "relatedPersons": [
+      "huanglong-huiji",
+      "lv-dongbin",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "koan-331",
     "question": "德山烧疏钞——龙潭吹灭纸烛，德山何悟？",
     "answer": "德山出门曰珍重，遽回曰：“外面黑。”龙潭点纸烛度与山，山拟接，潭复吹灭。山于此时大悟，明日将疏钞纵火焚之，自秉炬曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。”",
-    "context": "",
+    "context": "此公案记于《尚理编》。学人参谒龙潭信禅师，问“德山烧疏钞——龙潭吹灭纸烛，德山何悟？”，龙潭信禅师遂应机答曰“德山出门曰珍重，遽回曰：“外面黑。”龙潭点纸烛度与山，山拟接，潭复吹灭。山于此时大悟，明日将疏钞纵火焚之，自秉炬曰：“穷诸玄辩，若一毫置于太虚；竭世枢机，似一滴投于巨海。””。机锋电掣，当下截断学人意根思量。",
     "interpretation": "德山依倚金刚经青龙疏钞，自谓深明性空之旨。龙潭信禅师于夜黑之际点纸烛度与德山，德山拟接便吹灭，令其当下万缘皆空、前后际断，桶底彻底脱落！次日焚烧疏钞，叹穷诸玄辩若一毫置于太虚，方是真见性之丈夫作略。",
     "master": "龙潭信禅师",
     "source": "尚理编",
-    "relatedConcepts": ["jianxing-dadao","shangli-bianzheng"],
-    "relatedPersons": ["longtan-xin","deshan-xuanjian","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "jianxing-dadao",
+      "shangli-bianzheng"
+    ],
+    "relatedPersons": [
+      "longtan-xin",
+      "deshan-xuanjian",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "koan-332",
     "question": "张商英兜率悟道——“捉得贼也”，赃在甚么处？",
     "answer": "张商英触枕堕地击声悚然有省，趋方丈扣门。悦云：“是谁？”公云：“商英也。”悦云：“作么生？”公云：“捉得贼也。”悦云：“赃在甚么处？”公亦不能答。次日颂云：“鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。”",
-    "context": "",
+    "context": "此公案记于《尚理编》。学人参谒兜率悦禅师，问“张商英兜率悟道——“捉得贼也”，赃在甚么处？”，兜率悦禅师遂应机答曰“张商英触枕堕地击声悚然有省，趋方丈扣门。悦云：“是谁？”公云：“商英也。”悦云：“作么生？”公云：“捉得贼也。”悦云：“赃在甚么处？”公亦不能答。次日颂云：“鼓寂钟停托钵回，岩头一劄语如电。果然只得三年活，莫是遭他授记来。””。机锋电掣，当下截断学人意根思量。",
     "interpretation": "张商英以枕落有声打破无始黑闇，方丈扣门自道‘捉得贼也’，兜率从悦追问‘赃在甚么处’，商英当下无辞。贼即妄想业识，赃即执受之法。无贼可得、无赃可验，言语道断之际，君臣道合，成就晚明居士宗门佳话。",
     "master": "兜率悦禅师",
     "source": "尚理编",
-    "relatedConcepts": ["shanjian-wudao","dinghui-dengchi"],
-    "relatedPersons": ["zhang-shangying","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shanjian-wudao",
+      "dinghui-dengchi"
+    ],
+    "relatedPersons": [
+      "zhang-shangying",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "koan-333",
     "question": "纸衣道者立化——“只解恁么去，不解恁么来”，何意？",
     "answer": "纸衣道者见曹山章禅师，问纸衣下事，立化而去。山云：“只解恁么去，不解恁么来。”僧复苏问：“一灵真性不假胞胎时如何？”山云：“未是妙。”僧云：“如何是妙？”山云：“不借借。”僧于言下大悟，归单位坐脱而去——此先似到后实到者也。",
-    "context": "",
+    "context": "此公案记于《尚理编》。学人参谒曹山本寂，问“纸衣道者立化——“只解恁么去，不解恁么来”，何意？”，曹山本寂遂应机答曰“纸衣道者见曹山章禅师，问纸衣下事，立化而去。山云：“只解恁么去，不解恁么来。”僧复苏问：“一灵真性不假胞胎时如何？”山云：“未是妙。”僧云：“如何是妙？”山云：“不借借。”僧于言下大悟，归单位坐脱而去——此先似到后实到者也。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "纸衣道者能随念立化坐脱，不过是定力纯熟之幻用，故曹山勘其‘只解恁么去，不解恁么来’。待其借壳复苏问一灵真性，曹山答‘不借’，直指自性本无去来、不历胞胎，超越定境生灭之神仙窠臼，示人向上第一义。",
     "master": "曹山本寂",
     "source": "尚理编",
-    "relatedConcepts": ["zuotuo-liwang","chujia-shenshi","dinghui-dengchi"],
-    "relatedPersons": ["caoshan-benji","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "zuotuo-liwang",
+      "chujia-shenshi",
+      "dinghui-dengchi"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "koan-334",
     "question": "三脚驴子弄蹄行",
     "answer": "僧问：“如何是佛？”师云：“三脚驴子弄蹄行。”进云：“莫只者便是。”师云：“湖南长老。”",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒yangqi-fanghui，问“三脚驴子弄蹄行”，yangqi-fanghui遂应机答曰“僧问：“如何是佛？”师云：“三脚驴子弄蹄行。”进云：“莫只者便是。”师云：“湖南长老。””。机锋电掣，当下截断学人意根思量。",
     "interpretation": "以残缺之三脚驴弄蹄行走，暗示佛性不在完满中，而在当下残缺处。学人追问“莫只者便是”，师以“湖南长老”截之——不可在言语上认取。",
     "master": "yangqi-fanghui",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["sanjiaoluo-mao","yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "sanjiaoluo-mao",
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-335",
     "question": "九峰牵犁杨岐拽杷",
     "answer": "师才下座。九峰勤和尚把住云：“今日喜遇同参。”师云：“同参底事作么生。”峰云：“九峰牵犁杨岐拽杷。”师云：“正当与么时，杨岐在前九峰在前。”峰拟议。师托开云：“将谓同参，元来不是。”",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒yangqi-fanghui，问“九峰牵犁杨岐拽杷”，yangqi-fanghui遂应机答曰“师才下座。九峰勤和尚把住云：“今日喜遇同参。”师云：“同参底事作么生。”峰云：“九峰牵犁杨岐拽杷。”师云：“正当与么时，杨岐在前九峰在前。”峰拟议。师托开云：“将谓同参，元来不是。””。机锋电掣，当下截断学人意根思量。",
     "interpretation": "九峰以“牵犁拽杷”试同参，杨岐以“在前”反勘。九峰一拟议便落第二机，杨岐托开——真同参不在言语拟议中。",
     "master": "yangqi-fanghui",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["yangqi-yijue","yangqi-siyi"],
-    "relatedPersons": ["yangqi-fanghui","jiufeng-qin"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "yangqi-siyi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "jiufeng-qin"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-336",
     "question": "河里失钱河里摝",
     "answer": "上堂。身心清净诸境清净。诸境清净身心清净。还知云盖老人落地处么。乃云。河里失钱河里摝。",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒yangqi-fanghui，问“河里失钱河里摝”，yangqi-fanghui遂应机答曰“上堂。身心清净诸境清净。诸境清净身心清净。还知云盖老人落地处么。乃云。河里失钱河里摝。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "在哪里丢了钱就在哪里捞，在哪里迷失就在哪里找回。直指当下，不离本处觅菩提。身心与诸境互为清净，迷悟不二。",
     "master": "yangqi-fanghui",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-337",
     "question": "杨畋提刑共钵盂吃饭",
     "answer": "杨畋提刑问：“和尚法嗣何人？”云：“慈明大师。”杨云：“见个什么道理便法嗣他？”云：“共钵盂吃饭。”杨云：“与么则不见也。”师捺膝云：“什么处是不见。”杨大笑。师云：“须是提刑始得。",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒yangqi-fanghui，问“杨畋提刑共钵盂吃饭”，yangqi-fanghui遂应机答曰“杨畋提刑问：“和尚法嗣何人？”云：“慈明大师。”杨云：“见个什么道理便法嗣他？”云：“共钵盂吃饭。”杨云：“与么则不见也。”师捺膝云：“什么处是不见。”杨大笑。师云：“须是提刑始得。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "以“共钵盂吃饭”答法嗣之问——平常日用即是传承。杨畋以“不见”反勘，师以“什么处是不见”折之——当下即是，何曾不见？",
     "master": "yangqi-fanghui",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui","yang-tian","shishuang-chuyuan"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "yang-tian",
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-338",
     "question": "卖螺蛳公案",
     "answer": "师在慈明会里。一日提螺蛳一篮绕院云卖螺蛳。令众下语。皆不契。有一老宿揭帘见。以目顾视师。放身便卧。师放篮子便行。",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒yangqi-fanghui，问“卖螺蛳公案”，yangqi-fanghui遂应机答曰“师在慈明会里。一日提螺蛳一篮绕院云卖螺蛳。令众下语。皆不契。有一老宿揭帘见。以目顾视师。放身便卧。师放篮子便行。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "师以“卖螺蛳”试众，众皆不契。老宿不以言语回应，只以目顾视、放身便卧——无言即是。师放下篮子便行——以心传心，不立文字。",
     "master": "yangqi-fanghui",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui","shishuang-chuyuan"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-339",
     "question": "道吾真明暗截断众流",
     "answer": "僧问：“承师有言，明暗两字截断众流，请师便道。”师云：“作么生道。”僧云“作家”，师便喝，僧抚掌，师云“恰是”。",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒daowu-zhen，问“道吾真明暗截断众流”，daowu-zhen遂应机答曰“僧问：“承师有言，明暗两字截断众流，请师便道。”师云：“作么生道。”僧云“作家”，师便喝，僧抚掌，师云“恰是”。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "以明暗截断一切分别之流。僧以“作家”回应，师以喝截之，僧抚掌——默契。师云“恰是”——正是如此，不在言语中。",
     "master": "daowu-zhen",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["mingan-jieduan","linji-zongfeng"],
-    "relatedPersons": ["daowu-zhen"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "mingan-jieduan",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "daowu-zhen"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-340",
     "question": "道吾真掷杖收取",
     "answer": "上堂。众集。师以拄杖掷下来。随后跳下。众拟散。师乃召大众。众回首。师乃云。为老僧收取拄杖。便归方丈。",
-    "context": "",
+    "context": "此公案记于《《杨岐方会和尚语录》》。学人参谒daowu-zhen，问“道吾真掷杖收取”，daowu-zhen遂应机答曰“上堂。众集。师以拄杖掷下来。随后跳下。众拟散。师乃召大众。众回首。师乃云。为老僧收取拄杖。便归方丈。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "掷杖跳下——以非常规动作惊众。众欲散，师召回首——就在此刻，收杖即是。平常动作中暗藏机锋，不离日用。",
     "master": "daowu-zhen",
     "source": "《杨岐方会和尚语录》",
-    "relatedConcepts": ["mingan-jieduan","linji-zongfeng"],
-    "relatedPersons": ["daowu-zhen"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "mingan-jieduan",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "daowu-zhen"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "koan-341",
@@ -16896,21 +19402,39 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "智彻禅师详析此公案：此僧当下若会得赵州开口处，唾面痛骂一场，赵州只得杜口无言。这僧不能领受，通身堕在疑情。疑情重时行也疑坐也疑着衣吃饭也疑，昼夜十二时无顷刻暂息。蓦然疑团子上爆地一声，彻见那边消息。",
     "master": "赵州从谂",
     "source": "禅宗决疑集·彻底穷渊门",
-    "relatedConcepts": ["yiqing-canjiu","kan-wu-nian-wu-yi-wu","all-returns-to-one"],
-    "relatedPersons": ["zhiche","zhaozhou"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "yiqing-canjiu",
+      "kan-wu-nian-wu-yi-wu",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "zhiche",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "koan-342",
     "question": "万法归一，一归何处？",
     "answer": "我在青州做领布衫重七斤。",
-    "context": "僧问赵州万法归一一归何处，州云我在青州做领布衫重七斤。",
+    "context": "此公案出自《禅宗决疑集·指本还真门》。学人就禅门关要参请赵州从谂，问及“万法归一，一归何处？”。赵州从谂直以“我在青州做领布衫重七斤。”答之，不涉浮言，直指心源。",
     "interpretation": "智彻禅师评：此僧却不似那僧疑也，空使赵州舌头拕地。盖谓秤尾不鲜故无买者。此一法乃众生之本源诸佛之妙道，亦是万法之母众圣之尊。迷之者则轮回不息，悟之者则了死超生。一即是心，心即是一。",
     "master": "赵州从谂",
     "source": "禅宗决疑集·指本还真门",
-    "relatedConcepts": ["all-returns-to-one","yiqing-canjiu","huatou-gongfu"],
-    "relatedPersons": ["zhiche","zhaozhou"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "all-returns-to-one",
+      "yiqing-canjiu",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "zhiche",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "koan-343",
@@ -16920,9 +19444,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "智彻禅师设二喻破之：缓念者恰如冰凌上掷豆子，任其所往无可羁绊；急念者浑似更鼓楼上发擂，一通声绝又一通何所益耶？此两种工夫四众用心者甚多，好似一场戏话，深可惜哉。",
     "master": "智彻",
     "source": "禅宗决疑集·失正究竟门",
-    "relatedConcepts": ["kan-wu-nian-wu-yi-wu","yiqing-canjiu","huatou-gongfu"],
-    "relatedPersons": ["zhiche"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "kan-wu-nian-wu-yi-wu",
+      "yiqing-canjiu",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "zhiche"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "koan-344",
@@ -16932,9 +19464,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "‘人人尽有生缘处，那个是上座生缘处？’黄龙第一关直逼学人参究父母未生前本来面目。水母赖虾为目、虾赖水母为身，隐喻心境互依而本无自性；日出东方而吃茶去，示人当下日用即是归家稳坐处。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["huanglong-sanguan","huanglong-shengyuan"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "huanglong-sanguan",
+      "huanglong-shengyuan"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-345",
@@ -16944,9 +19483,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "‘我手何似佛手？’黄龙第二关直指当人举手投足全体是佛性大用现前。若作佛手与人手分别，便落二乘知见；直下承当，举手翻掌之间，早已超佛越祖、干戈永息。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["huanglong-sanguan","huanglong-foshou"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "huanglong-sanguan",
+      "huanglong-foshou"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-346",
@@ -16956,9 +19502,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "‘我脚何似驴脚？’黄龙第三关打破圣凡阶位之牢关。佛足尊贵、驴蹄卑贱，在自性无生平等方面前无二无别。步步踏着大地无生，纵横交错皆是解脱场，方见黄龙三关纵夺之妙。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["huanglong-sanguan","huanglong-lvjiao"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "huanglong-sanguan",
+      "huanglong-lvjiao"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-347",
@@ -16968,9 +19521,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "已过三关者掉臂径去，任运自在，无关可度亦无吏可问；尚在关前向把关人请问可否者，正是心存疑惑、未透重关之行人。黄龙设三关不在言句机巧，全在勘验学者是否真到‘无疑之地’。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["huanglong-sanguan"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "huanglong-sanguan"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-348",
@@ -16980,9 +19539,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄龙答‘昨日方到此，未曾子细看。长者长短者短’，以极平常之景语绝断学人对玄妙道境之卜度。法尔如是，长者自长，短者自短，一切法住法位，世间相常住，何须更用心推求。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["tieniu-zhiji"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "tieniu-zhiji"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-349",
@@ -16992,9 +19557,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自性宝藏不在别处，‘只如今问者是’。转头即见，取之不尽，用之不竭。学人向外驰求求佛求法，如捧金钵沿门托钵乞食，黄龙直指当人即是主人翁。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["zijia-baozang"],
-    "relatedPersons": ["huanglong-huinan","mazu","dazhu-huihai"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "zijia-baozang"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "mazu",
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-350",
@@ -17004,93 +19577,146 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "看经研教与不参不论，一落有为善业、一落无知顽空。如同功德天与黑暗女常相随逐，智者二俱不受，方能两头坐断、超越善恶两边，显发独立无倚之本自清净心。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["fansheng-qingjin"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "fansheng-qingjin"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-352",
     "question": "旋岚偃岳而常静，江河竞注而不流",
     "answer": "僧肇《物不迁论》核心命题。狂风席卷山岳却恒常寂静，江河奔流不息却未曾流动——非谓万物静止不动，乃即动而见不迁。昔物自在昔，今物自在今，物不相往来。功业不可朽，故虽在昔而不化，不化故不迁。即万物之自虚而见动静不二之实相。",
-    "context": "",
+    "context": "此公案记于《肇论·物不迁论》。学人参谒僧肇，问“旋岚偃岳而常静，江河竞注而不流”，僧肇遂应机答曰“僧肇《物不迁论》核心命题。狂风席卷山岳却恒常寂静，江河奔流不息却未曾流动——非谓万物静止不动，乃即动而见不迁。昔物自在昔，今物自在今，物不相往来。功业不可朽，故虽在昔而不化，不化故不迁。即万物之自虚而见动静不二之实相。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "旋岚偃岳而常静，江河竞注而不流。僧肇融通般若与物性，阐明万物刹那生灭、各住自体之时位，去者不至昔，昔者不至今；即动而见常静，不落断常二边，为宗门物不迁之极则。",
     "master": "僧肇",
     "source": "肇论·物不迁论",
-    "relatedConcepts": ["wubuqian","dongjing-buer"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "wubuqian",
+      "dongjing-buer"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-353",
     "question": "即伪即真，故性莫之易",
     "answer": "僧肇《不真空论》核心命题。万物虽有不真，不真故空。即物顺通故物莫之逆，即伪即真故性莫之易。色之性空非色败空——不是色灭坏了才空，而是色当体即空。即万物之自虚，岂待宰割以求通哉。",
-    "context": "",
+    "context": "此公案记于《肇论·不真空论》。学人参谒僧肇，问“即伪即真，故性莫之易”，僧肇遂应机答曰“僧肇《不真空论》核心命题。万物虽有不真，不真故空。即物顺通故物莫之逆，即伪即真故性莫之易。色之性空非色败空——不是色灭坏了才空，而是色当体即空。即万物之自虚，岂待宰割以求通哉。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "即伪即真，故性莫之易。万物虽虚妄无常，然其虚妄之自性当体即是真空实相；非灭色之后方见空，色法当体即是真空。不真即空，空即缘起，展现大乘中观万法一如之圆融见地。",
     "master": "僧肇",
     "source": "肇论·不真空论",
-    "relatedConcepts": ["buzhenkong","youwu-buer"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "buzhenkong",
+      "youwu-buer"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-354",
     "question": "圣心无知，无所不知",
     "answer": "僧肇《般若无知论》核心命题。般若体性真净，本无惑取之知。有所知则有所不知，圣心无知故无所不知。知即不取，故能不取而知。用即寂寂即用，用寂体一。智弥昧照逾明，神弥静应逾动。",
-    "context": "",
+    "context": "此公案记于《肇论·般若无知论》。学人参谒僧肇，问“圣心无知，无所不知”，僧肇遂应机答曰“僧肇《般若无知论》核心命题。般若体性真净，本无惑取之知。有所知则有所不知，圣心无知故无所不知。知即不取，故能不取而知。用即寂寂即用，用寂体一。智弥昧照逾明，神弥静应逾动。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "圣心无知，故无所不知。凡夫有所知则有所不知，执着于名相知见；圣人以般若空慧照彻法界，本体无分别智寂然不动（无知），感而遂通则万象森罗朗然毕现（无所不知）。",
     "master": "僧肇",
     "source": "肇论·般若无知论",
-    "relatedConcepts": ["bore-wuzhi"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "bore-wuzhi"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-355",
     "question": "无所得故为得，是故得无所得",
     "answer": "僧肇《涅槃无名论》终极命题。涅槃非有非无，言语道断心行处灭。无所得谓之得，谁独不然？玄道在于绝域故不得以得之，妙智存乎物外故不知以知之。大象隐于无形故不见以见之，大音匿于希声故不闻以闻之。",
-    "context": "",
+    "context": "此公案记于《肇论·涅槃无名论》。学人参谒僧肇，问“无所得故为得，是故得无所得”，僧肇遂应机答曰“僧肇《涅槃无名论》终极命题。涅槃非有非无，言语道断心行处灭。无所得谓之得，谁独不然？玄道在于绝域故不得以得之，妙智存乎物外故不知以知之。大象隐于无形故不见以见之，大音匿于希声故不闻以闻之。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "无所得故为得，是故得无所得。涅槃大道超越能得所得之二元对立，不可用语言名相捕捉。唯有于一切法不住、一念无所得之际，方与真如法界法尔契合，是为大乘究竟解脱。",
     "master": "僧肇",
     "source": "肇论·涅槃无名论",
-    "relatedConcepts": ["niepan-wuming"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "niepan-wuming"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-356",
     "question": "解空第一，肇公其人",
     "answer": "鸠摩罗什赞叹僧肇之语，由慧达在《肇论序》中引述。僧肇以中观般若学为体，融合老庄玄学，作四论明缘起性空之实相。物不迁即动而静，不真空即伪即真，般若无知而知，涅槃无名而名——四论虽殊，其致一也，皆明即万物之自虚。",
-    "context": "",
+    "context": "此公案记于《肇论序》。学人参谒鸠摩罗什，问“解空第一，肇公其人”，鸠摩罗什遂应机答曰“鸠摩罗什赞叹僧肇之语，由慧达在《肇论序》中引述。僧肇以中观般若学为体，融合老庄玄学，作四论明缘起性空之实相。物不迁即动而静，不真空即伪即真，般若无知而知，涅槃无名而名——四论虽殊，其致一也，皆明即万物之自虚。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "鸠摩罗什称赞僧肇‘解空第一’，正在于僧肇将印度中观性空之旨与东土玄远哲学融为一体，以动静一如、空有不二、知无知双泯之大智慧，为中国禅宗心性哲学奠定了深厚的中观基石。",
     "master": "鸠摩罗什",
     "source": "肇论序",
-    "relatedConcepts": ["zongbenyi"],
-    "relatedPersons": ["seng-zhao","kumarajiva","hui-da"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "zongbenyi"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "kumarajiva",
+      "hui-da"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-357",
     "question": "天地与我同根，万物与我一体",
     "answer": "僧肇《涅槃无名论·妙存第七》引《庄子》语以明即真之境。玄道在于妙悟，妙悟在于即真，即真即有无齐观，齐观即彼己莫二。同我则非复有无，异我则乖于会通。不出不在而道存乎其间——物我冥一，怕尔无朕，乃曰涅槃。",
-    "context": "",
+    "context": "此公案记于《肇论·涅槃无名论》。学人参谒僧肇，问“天地与我同根，万物与我一体”，僧肇遂应机答曰“僧肇《涅槃无名论·妙存第七》引《庄子》语以明即真之境。玄道在于妙悟，妙悟在于即真，即真即有无齐观，齐观即彼己莫二。同我则非复有无，异我则乖于会通。不出不在而道存乎其间——物我冥一，怕尔无朕，乃曰涅槃。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "天地与我同根，万物与我一体。体证涅槃实相者，打破人我物我之分别界限，大千世界情与无情同归于自性一心；自性周遍沙界，山河大地皆为真如法身之全体显现。",
     "master": "僧肇",
     "source": "肇论·涅槃无名论",
-    "relatedConcepts": ["niepan-wuming","youwu-buer"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "niepan-wuming",
+      "youwu-buer"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-358",
     "question": "三鸟出网，同适无患之域",
     "answer": "僧肇《涅槃无名论·会异第十一》以三鸟出网喻三乘同适无为之境。无患虽同而鸟鸟各异，不可以鸟鸟各异谓无患亦异，又不可以无患既一而一于众鸟。无为即乘也，乘即无为也。以未尽无为故有三耳——三乘差别在人不在法。",
-    "context": "",
+    "context": "此公案记于《肇论·涅槃无名论》。学人参谒僧肇，问“三鸟出网，同适无患之域”，僧肇遂应机答曰“僧肇《涅槃无名论·会异第十一》以三鸟出网喻三乘同适无为之境。无患虽同而鸟鸟各异，不可以鸟鸟各异谓无患亦异，又不可以无患既一而一于众鸟。无为即乘也，乘即无为也。以未尽无为故有三耳——三乘差别在人不在法。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "三鸟出网而同适无患之域，喻声闻、缘觉、菩萨三乘根器虽殊，其所证入之无为涅槃真空妙理无有高下。法无差别而根机万殊，示人应随机施化、同归一极。",
     "master": "僧肇",
     "source": "肇论·涅槃无名论",
-    "relatedConcepts": ["niepan-wuming"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "niepan-wuming"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "koan-351",
@@ -17100,189 +19726,307 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄龙答‘向汝道，汝不信。合取狗口’，如金刚王宝剑当头斩下。若言是佛则是头上安头，若言非佛则是执药成病；唯有喝令合口，令学人言语道断、心行处灭，直下荐取。",
     "master": "huanglong-huinan",
     "source": "huanglonghuinan",
-    "relatedConcepts": ["fansheng-qingjin"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "fansheng-qingjin"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "koan-359",
     "question": "满目青山一任看",
     "answer": "佛印元禅师答周敦颐问毕竟以何为道之语。濂溪拟议，元呵呵笑而已，濂脱然有省。道非可言说，满目青山即是道之显现，一任看之而不加分别。拟议即错，呵呵一笑截断知解，濂溪言下有省。",
-    "context": "",
+    "context": "此公案记于《尚直编》。学人参谒佛印元，问“满目青山一任看”，佛印元遂应机答曰“佛印元禅师答周敦颐问毕竟以何为道之语。濂溪拟议，元呵呵笑而已，濂脱然有省。道非可言说，满目青山即是道之显现，一任看之而不加分别。拟议即错，呵呵一笑截断知解，濂溪言下有省。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "佛印禅师答周敦颐‘满目青山一任看’，周濂溪当下大悟。道在眼前日用，青山绿水全体是心印流露，何须起心向言语葛藤中捉摸。儒家‘万物静观皆自得’与宗门‘触目皆道’在此圆融会通。",
     "master": "佛印元",
     "source": "尚直编",
-    "relatedConcepts": ["dao-xue-yuanliu","taiji-tu","shangzhi-hujiao"],
-    "relatedPersons": ["foyin-liaoyuan","zhou-dunyi","konggu-jinglong"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "dao-xue-yuanliu",
+      "taiji-tu",
+      "shangzhi-hujiao"
+    ],
+    "relatedPersons": [
+      "foyin-liaoyuan",
+      "zhou-dunyi",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "koan-360",
     "question": "只消向你自家屋里打点",
     "answer": "黄龙慧南禅师谕周敦颐教外别传之旨。南谕濂溪曰：孔子谓朝闻道夕死可矣，毕竟以何为道？颜子不改其乐，所乐者何事？但于此究竟，久久自然有个契合处。不向外求，只消向自家屋里打点——即反观自心、究明本来面目之意。",
-    "context": "",
+    "context": "此公案记于《尚直编》。学人参谒黄龙慧南，问“只消向你自家屋里打点”，黄龙慧南遂应机答曰“黄龙慧南禅师谕周敦颐教外别传之旨。南谕濂溪曰：孔子谓朝闻道夕死可矣，毕竟以何为道？颜子不改其乐，所乐者何事？但于此究竟，久久自然有个契合处。不向外求，只消向自家屋里打点——即反观自心、究明本来面目之意。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "黄龙慧南谕周敦颐：朝闻夕死与颜子之乐，正是圣贤心法之源。教其向自家屋里打点，令濂溪顿息向外寻求之见，直悟孔颜乐处即是当人不生不灭之本心，开辟宋代理学直承心性之源流。",
     "master": "黄龙慧南",
     "source": "尚直编",
-    "relatedConcepts": ["dao-xue-yuanliu","shangzhi-hujiao"],
-    "relatedPersons": ["huanglong-huinan","zhou-dunyi","konggu-jinglong"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "dao-xue-yuanliu",
+      "shangzhi-hujiao"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "zhou-dunyi",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "koan-361",
     "question": "把这一念提撕狗子话不要商量勇猛直前一刀两段",
     "answer": "开善谦禅师答朱熹请问狗子佛性话头之语。晦庵致书曰向蒙大慧禅师开示狗子佛性话头未有悟入，愿授一言警所不逮。谦答：把这一念提撕狗子话不要商量，勇猛直前一刀两段。晦庵览之有省。此即参话头法——不落知解商量，一味提撕直下契入。",
-    "context": "",
+    "context": "此公案记于《尚直编》。学人参谒开善谦，问“把这一念提撕狗子话不要商量勇猛直前一刀两段”，开善谦遂应机答曰“开善谦禅师答朱熹请问狗子佛性话头之语。晦庵致书曰向蒙大慧禅师开示狗子佛性话头未有悟入，愿授一言警所不逮。谦答：把这一念提撕狗子话不要商量，勇猛直前一刀两段。晦庵览之有省。此即参话头法——不落知解商量，一味提撕直下契入。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "开善谦开示朱熹：把看狗子无佛性话头当作一把金刚宝刀，直下向一念未生前提撕逼拶，不容丝毫思量商量，一刀两断妄想情尘。此是宗门看话禅接引大儒真修力行之切要指南。",
     "master": "开善谦",
     "source": "尚直编",
-    "relatedConcepts": ["dao-xue-yuanliu","paifo-xinbing","shangzhi-hujiao"],
-    "relatedPersons": ["zhuxi-zhunan","konggu-jinglong"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "dao-xue-yuanliu",
+      "paifo-xinbing",
+      "shangzhi-hujiao"
+    ],
+    "relatedPersons": [
+      "zhuxi-zhunan",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "koan-362",
     "question": "一人传虚万人传实",
     "answer": "空谷景隆论晦庵排佛之机。晦庵设个关窍在此后人尚识不破，所谓一人传虚万人传实。晦庵泛用佛意欲掩佛学之德全归自己之功，故立排佛之言栽于书中令人信伏。后人披览承虚接响排之而已，不识其所以然。",
-    "context": "",
+    "context": "此公案记于《尚直编》。学人参谒空谷景隆，问“一人传虚万人传实”，空谷景隆遂应机答曰“空谷景隆论晦庵排佛之机。晦庵设个关窍在此后人尚识不破，所谓一人传虚万人传实。晦庵泛用佛意欲掩佛学之德全归自己之功，故立排佛之言栽于书中令人信伏。后人披览承虚接响排之而已，不识其所以然。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "空谷景隆痛辨晦庵排佛之机：后儒多因一人传虚而万人传实，暗采禅宗明心见性之髓以充实己说，却复立门墙以排佛相尚。直指心性之理古今圣贤所共明，不可因宗派门户而自障正眼。",
     "master": "空谷景隆",
     "source": "尚直编",
-    "relatedConcepts": ["fengmeng-zhiji","paifo-xinbing","qiangqian-shezhang"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "fengmeng-zhiji",
+      "paifo-xinbing",
+      "qiangqian-shezhang"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "koan-363",
     "question": "学而至化出彼墙壍之外自知排佛之非追悔不及矣",
     "answer": "空谷景隆论晦庵墙壍之害。皮肤之学者偏要排佛，才读数十卷书心忿忿然遽以排佛为急务。学至宏博自然通泰排佛之心稍觉轻矣。学而至化出彼墙壍之外自知排佛之非追悔不及矣——须学到变化之地步方能跳出晦庵所设的障蔽。",
-    "context": "",
+    "context": "此公案记于《尚直编》。学人参谒空谷景隆，问“学而至化出彼墙壍之外自知排佛之非追悔不及矣”，空谷景隆遂应机答曰“空谷景隆论晦庵墙壍之害。皮肤之学者偏要排佛，才读数十卷书心忿忿然遽以排佛为急务。学至宏博自然通泰排佛之心稍觉轻矣。学而至化出彼墙壍之外自知排佛之非追悔不及矣——须学到变化之地步方能跳出晦庵所设的障蔽。”。机锋电掣，当下截断学人意根思量。",
     "interpretation": "学问若只停留在章句皮肤，极易生起门户是非之见；唯有学而至化、跳出藩篱墙堑之外，方知三教圣人同归一心，方能悔悟昔日妄生排佛争辩之无谓，体现晚明儒释圆融之博大气象。",
     "master": "空谷景隆",
     "source": "尚直编",
-    "relatedConcepts": ["qiangqian-shezhang","paifo-xinbing","shangzhi-hujiao"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "qiangqian-shezhang",
+      "paifo-xinbing",
+      "shangzhi-hujiao"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "koan-364",
     "question": "水出高源",
     "answer": "僧问：如何是佛？师云：水出高源。",
     "context": "僧问如何是佛，楚圆答“水出高源”。佛性如水发源于高处，自然流淌，不假造作。高源喻本觉真心，水喻妙用流行。",
-    "interpretation": "全用即体，从体起用。佛不在别处，如水之出源，自然而已。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“水出高源”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["shui-chu-gaoyuan","jianxing-chengfo"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "shui-chu-gaoyuan",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-365",
     "question": "弄潮须是弄潮人",
     "answer": "僧问如何是石霜水，师云春夏长如此秋冬亦复然。僧拟议塞断源头，师便打云：弄潮须是弄潮人。",
     "context": "僧以“塞断源头”拟议，楚圆便打。弄潮须是弄潮好手，参禅亦然——拟议即落第二头。",
-    "interpretation": "非亲身入局者不能悟。拟议即非，拟议即打。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“弄潮须是弄潮人”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["nongchao-xushiren","banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "nongchao-xushiren",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-366",
     "question": "金毛师子",
     "answer": "驸马李遵勗问：我闻西河有金毛师子，是否？师云：都尉什么处得这个消息来？都尉便喝，师云：野干鸣。都尉又喝，师云：恰是。都尉拍手大笑。",
     "context": "李遵勗以“金毛师子”勘验楚圆，楚圆反问消息来源。都尉喝，师云野干鸣——非真师子之吼。又喝，师云恰是——方才相应。",
-    "interpretation": "勘验中的喝，有真有假。野干鸣是假，恰是是真。楚圆一一点破。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“金毛师子”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["banghe"],
-    "relatedPersons": ["shishuang-chuyuan","li-zunxu"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "li-zunxu"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-367",
     "question": "对面不相识千里却同风",
     "answer": "杨亿内翰问：对面不相识，千里却同风。师云：某甲奉院门请。内翰云：真个谩语。师云：前月离唐明。内翰便喝，师云：恰是。内翰又喝，师以手面前画一画，内翰吐舌云：龙象。",
     "context": "杨亿以禅机试楚圆，楚圆以平实语对。内翰喝，师云恰是；又喝，师画一画，内翰叹为龙象。",
-    "interpretation": "平实语中有真机。画一画处，宾主分明，内翰方知非常人。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“对面不相识千里却同风”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["sanxuan-sanyao"],
-    "relatedPersons": ["shishuang-chuyuan","yang-yi-neihan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "sanxuan-sanyao"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "yang-yi-neihan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-368",
     "question": "楚王城畔汝水东流",
     "answer": "杨亿问如何是圆上座为人底句，师云：切。内翰云：与么则长裙新妇拖泥走。师云：谁得似内翰？遂举念和尚因缘：僧问如何是佛法大意？念云：楚王城畔，汝水东流。",
     "context": "楚圆以“切”答为人之句，杨亿以“长裙新妇拖泥走”回勘。师举念和尚“楚王城畔汝水东流”——佛法大意不在言语，在眼前日用。",
-    "interpretation": "楚王城畔、汝水东流——法法本然，何须更觅？",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“楚王城畔汝水东流”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jianxing-chengfo"],
-    "relatedPersons": ["shishuang-chuyuan","yang-yi-neihan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "yang-yi-neihan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-369",
     "question": "大路来小路来",
     "answer": "兴教明上座持书到，师接得书便问：大路来？小路来？明云：和尚试道看。便打一坐具。师云：瞎汉！乱统作什么？明嘘一声，师便打。",
     "context": "楚圆以“大路小路”勘验来僧，僧反打坐具。师云瞎汉乱统，僧嘘一声，师便打。",
-    "interpretation": "勘辨中不容拟议。打坐具、嘘一声，皆非本分，师一一截断。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“大路来小路来”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-370",
     "question": "拄杖吞却",
     "answer": "师见僧来，拈起拄杖云：入你鼻孔里去也。僧云：和尚幸是大人。师云：了。又见僧来，拈起拄杖云：你为什么被我拄杖吞却？僧云：不敢。师云：还我草鞋钱来。",
     "context": "楚圆以拄杖吞却学人——拄杖含摄万法。学人不敢承当，师云还我草鞋钱来——不值一文。",
-    "interpretation": "拄杖即法身，法身即拄杖。不敢承当，则辜负来意。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“拄杖吞却”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jingang-yanjing"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jingang-yanjing"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-371",
     "question": "新到吃茶",
     "answer": "问僧近离什么处，僧云：云过千山碧。师云：着忙作什么？僧云：雁去水声凄。师便喝，僧亦喝；师便打，僧亦打。师云：你看这瞎汉，本分打出三门外，念你是新到，且坐吃茶。",
     "context": "僧以诗句答来处，楚圆以“着忙”截断。互喝互打后，师念新到且坐吃茶——打后给糖。",
-    "interpretation": "勘辨中互喝互打，虽不契本分，念是新到，且与吃茶。恩威并施。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“新到吃茶”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-372",
     "question": "波罗提说性在作用",
     "answer": "师举波罗提尊者答国王问：性在作用。王曰是何作用我今不见。答曰今现作用王自不见。说偈曰：在胎曰身在眼曰见在耳曰闻在鼻辨香在口谈论在手执捉在足运奔。识者知是佛性不识者唤作精魂。",
     "context": "楚圆举波罗提公案开示：佛性在日用作用中——见闻觉知、手足运奔皆是佛性。识者知是佛性，不识唤作精魂。",
-    "interpretation": "性在作用——日用寻常即是佛性显发。迷则唤精魂，悟则知佛性。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“波罗提说性在作用”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","fashen-wuxiang"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "fashen-wuxiang"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-373",
     "question": "祖师心印印空印水印泥",
     "answer": "师云：祖师心印，一印印空，一印印水，一印印泥。如今还有印不着者么？良久云：人王三寸铁，遍地是刀枪。",
     "context": "楚圆以印空印水印泥开示祖师心印——心印无所不印。又云人王三寸铁遍地是刀枪——王令威严，宗师机锋亦如是。",
-    "interpretation": "心印遍一切处，无物不印。宗师接机如王令，不容逃避。",
+    "interpretation": "shishuang-chuyuan在此公案中以极具穿透力之机锋直下勘验。“祖师心印印空印水印泥”看似寻常问答，实则步步逼向悬崖撒手处。参修者莫在字句名相上推求，但向当下一念不起、能问能答处蓦直会取。",
     "master": "shishuang-chuyuan",
     "source": "石霜楚圆禅师语录",
-    "relatedConcepts": ["sanxuan-sanyao"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "sanxuan-sanyao"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "koan-374",
@@ -17292,9 +20036,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "玄沙此语勘尽诸方：一切接人施设皆对有眼耳口者而设，若学人真到无见闻觉知处，师家更以何法接之？云门一挃一唤，不从见闻言说教入，全在当下用过即休——盲者能觉拄杖，聋者能应呼唤，痖者自不会而省，正显佛法灵验不假根尘。地藏“现有眼耳口”一句又翻一层：接与不接，皆就当人本分，岂在施设？",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["sanzhong-bingren","chanbing"],
-    "relatedPersons": ["xuansha-shibei","yunmen","luohan-guichen"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "sanzhong-bingren",
+      "chanbing"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "yunmen",
+      "luohan-guichen"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-375",
@@ -17304,9 +20057,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以古镜喻心：物来则现，物去不留，胡汉俱隐处犹有镜在。玄沙“百杂碎”更进一步——能照之镜亦打成一片，能所俱泯，纤尘不立。镜未碎时，尚有照与不照之功夫；百杂碎后，方是玄沙绵密宗风之彻底处。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师广录》卷上",
-    "relatedConcepts": ["emptiness","no-abiding"],
-    "relatedPersons": ["xuansha-shibei","xuefeng-yicun"],
-    "relatedBooks": ["xuanshaguanglu"]
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "koan-376",
@@ -17316,9 +20077,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "僧问参见什么人，拟觅圣名、寻高位；玄沙答以未出家时的本色——钓鱼船上谢三郎。佛与祖不从外来，同参者即是当人自己：认得谢三郎，方识释迦；离却自家面目，释迦亦是路人。此语与“达摩不来东土”同一鼻孔，是玄沙直指之本色。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师广录》卷下",
-    "relatedConcepts": ["self-nature","buddha-nature"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshaguanglu","xuanshayulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshaguanglu",
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-377",
@@ -17328,9 +20097,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "见虎而怖者，认虎为外境、认身为实我，能所对立，恐怖丛生。玄沙一句“是汝虎”翻转主客——所见之虎，即是能见之心，心外无虎，虎外无心。识得“是汝”，则虎亦不妨为法身全体现；识不得，则步步凶险。四种极重事透得，方出得阴界。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["self-nature","non-duality"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-378",
@@ -17340,9 +20116,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "无缝塔本喻法身无形、无迹可寻。僧一问，头上已安“无缝”之名、心中有塔之相——玄沙不与其讲无缝，反问“这一缝大小”，当下令其见缝：才起念处，缝已宛然。游山机缘中，师答“七尺八尺”，更不向无形无相上描画，全体作用即是塔身。无缝不在无迹处，在当人不存塔相见处。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["emptiness","no-abiding"],
-    "relatedPersons": ["xuansha-shibei","xuefeng-yicun"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-379",
@@ -17352,9 +20136,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三幅白纸，不着一字，玄沙之本分家书也。雪峰以“君子千里同风”注解之，虽是好语，已落第二头——把无字又翻成有义，故玄沙道其“蹉过”。师自云“孟春犹寒”，更不解释白纸，就地寒暄，全体现成：纸自纸、寒自寒，何处不是家书？言语道断处，正好吃饭添衣。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["beyond-words","no-abiding"],
-    "relatedPersons": ["xuansha-shibei","xuefeng-yicun"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "beyond-words",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-380",
@@ -17364,9 +20156,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "田地喻本分心地，四至界分皆可分付与人——公案、言句、法门，师家尽皆说破；唯有中心一树，不卖——人人自有一段大事，非师所能代、非言所能传，须当人自肯自证始得。玄沙此语极老婆心切：该说的都说了，剩下一处，要你自去。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["self-nature"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "koan-381",
@@ -17376,9 +20174,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "玄沙对帝王直言不讳：有为功德感人天福报，福尽还堕，不出轮回；成佛惟在见性，非造作可得。此与达摩答梁武帝“并无功德”同一宗旨。师复为王授真如十一名目——佛性、真如、灵台、大圆镜智、如来藏等皆一心之假名——令其识取实相，自然成佛。王室传法之难，难在不徇人情，玄沙当之。",
     "master": "玄沙师备",
     "source": "《玄沙师备禅师广录》卷下《王大王请雪峰与玄沙入内论佛心印录》",
-    "relatedConcepts": ["jianxing-chengfo","buddha-nature"],
-    "relatedPersons": ["xuansha-shibei","wang-shenzhi","xuefeng-yicun"],
-    "relatedBooks": ["xuanshaguanglu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "wang-shenzhi",
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "koan-412",
@@ -17388,9 +20195,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世尊拈花、迦叶微笑是禅宗源头——高峰云'扶头扶尾抬举不起'，意谓正法眼藏从世尊到迦叶一脉相承，然而后人只知抬举古人，不知自己承当。以两手作扶势'也只兀底'——直指当下。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-413",
@@ -17400,9 +20215,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门打杀世尊是宗门著名公案——高峰评世尊'灵龟曳尾自取丧身'，评云门'为他闲事长无明'。高峰自己则'划圆相书丁字展两手'——别出手眼，不落二人窠臼。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-414",
@@ -17412,9 +20235,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "即心是佛非道理会——作'心本是佛'解即落识情。高峰下断语'石压笋斜出，崖悬花倒生'：道理如石压笋，笋从旁边斜出；如悬崖之花，倒挂着生长——道理压不住真机。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-415",
@@ -17424,9 +20255,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈野狐是宗门著名公案——高峰追问'不落'与'不昧'有无得失：若无得失，因何有堕有脱？若有得失，试分明道看。末后云'总是一队野狐精'——将评唱者一并扫却。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-416",
@@ -17436,9 +20275,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "诸方皆谓赵州勘破婆子，高峰别具只眼——赵州自以为勘破，实则被婆子'蓦直去'一语勘破。高峰下断语'以手指云：蓦直去'——三字验破，婆子始终在'蓦直去'处，赵州反落在'勘过'里。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-417",
@@ -17448,9 +20295,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州'无'字是宗门第一话头——高峰喻为'巴豆子'：巴豆是泻药，吞不下搅恼肠肚，吞得下也丧身失命。'无'字之妙正在于此——不论参得透参不透，皆非道理可会。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-418",
@@ -17460,9 +20315,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "赵州以'青州布衫重七斤'答万法归一——高峰评其'绵密工夫'虽好，但'不解相体裁衣翻成钝置'。高峰自己则答'打失一只眼睛，至今指鹿为马'——别出手眼，不落古人窠臼。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-419",
@@ -17472,9 +20335,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南泉以'召大夫—应诺—出也'出鹅——高峰评其'手眼不亲，纵饶出得也是死货'。高峰自己则'才拟祗对便乱棒打出'——不但为大夫脱却鹘臭布衫，更使天下衲僧个个解粘去缚。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-420",
@@ -17484,9 +20355,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆云丧身失命，云门作怕势，玄沙云用南山作么。高峰评雪峰'惯作窃'但诸子'不善参随'——一场勘验反成败露，千载之下恶声犹在。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-421",
@@ -17496,9 +20375,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "德山末后句是宗门最复杂公案之一——高峰评其为'古今公案誵讹无出于此'。岩头密启其意看似助师，高峰却云'犯弥天之咎万劫遭殃'——师徒之间以心传心本不可说破，说破即落第二义。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-422",
@@ -17508,9 +20395,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "石巩以弓箭接引学人——三平承箭作礼，石巩云只射得半个圣人。高峰评二人'张弓傍若无人，承箭弄巧成拙'，末后以'落花流水'之句别转一路——半个圣人亦不可得。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-423",
@@ -17520,9 +20415,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰一生坐断死关，末后以此偈总收摄——'来不入去不出'示生死来去皆不出此死关；'铁蛇钻入海'不可捉摸；'撞倒须弥山'粉碎根本。一生行持尽在此二十字中。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-424",
@@ -17532,9 +20435,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰悟道因缘——参'无'字三年不成片，改参'万法归一'六日即悟。悟后答雪岩'狗舔热油铛'——热油铛舔不得放不下，正是疑情成片之喻。'正要和尚疑着'示悟后机锋不让。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-425",
@@ -17544,9 +20455,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰以三要总摄参禅工夫——信根如须弥不可动摇，愤志如遇杀父冤仇一刀两段，疑情如欲露未露之时。三要缺一即成废器，此是高峰一生经验之谈。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-426",
@@ -17556,9 +20475,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰三关语验学者——非具大根大志者不能下语。三关层层逼拶：第一关勘生死是否真透，第二关勘悟境是否分明，第三关勘行持是否相应。下语不契即闭门不接，门户险绝如此。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-427",
@@ -17568,9 +20495,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰鳖鼻蛇公案——长庆、云门、玄沙三人各出手眼，高峰评雪峰'惯作窃'但诸子'不善参随'。一则公案四尊宿各呈己见，高峰总评之。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-428",
@@ -17580,9 +20515,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰颂赵州无字——'直下一刀成两段，虚空粉碎髑髅乾'示参'无'字须一刀两段；'几多摘叶寻枝客，空使洛阳花满途'斥后人于'无'字上摘叶寻枝，不知本干。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-429",
@@ -17592,9 +20535,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰颂万法归一——'四面洪波万丈深，上天无路地无门'正是疑情成片时无路可走之境界。疑到此处，蓦然爆破即是大悟。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-430",
@@ -17604,9 +20555,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "高峰三戒总摄身口意——开口无益戒之莫言，动念无益戒之莫起，举足无益戒之莫行。三业清净方能参究此事，非仅坐禅而已。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-431",
@@ -17616,9 +20575,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丹霞烧木佛是宗门著名公案——高峰评丹霞'为寒所逼岂有他哉'，评院主'眉须堕落偶尔成文'。末后警云'若作佛法商量管取入地狱如箭'——不可作道理会。",
     "master": "高峰原妙",
     "source": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","all-returns-to-one"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-432",
@@ -17628,9 +20595,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰行脚多年未悟，在鳌山阻雪时被岩头一语点破——悟道不在行脚遍参，在于一言之下桶底脱落。'鳌山成道何处不通'示悟后一切处皆是道场，不必更向外求。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-433",
@@ -17640,9 +20614,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "帝王问成佛之道，雪峰不谈修福造寺，直指见性——见自本性，无物可见，此是难信之法。悟即刹那间，不悟尘沙劫。达磨亲传只是一言，便转凡成圣。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-434",
@@ -17652,9 +20633,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "有为功德感人天福报，福尽还堕，不出轮回——成佛惟在见性，非造作可得。此与达摩答梁武帝并无功德同一宗旨。帝王修福虽善，若不见性，终不出轮回。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-435",
@@ -17664,9 +20652,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以鳖鼻蛇勘验学人——长庆识得丧身失命，云门以拄杖直面，玄沙云用南山作么。一则公案三尊宿各出手眼：长庆落在丧身失命，云门落在怕势，玄沙则总扫一切。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-436",
@@ -17676,9 +20671,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三木毬为雪峰道场独特接引方式——三毬喻三界、喻三身、喻三句。玄沙云'三即一一即三'示三一不二，捉来安旧处示用毕还源。雪峰以此勘验学人能否直下承当。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-437",
@@ -17688,9 +20690,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "尽大地撮来只有粟米粒大——一心含摄万法，万法不出一心。然而漆桶（无眼人）不会，打鼓普请大家来看。雪峰以一粟米粒示一心之妙，直指当下。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-438",
@@ -17700,9 +20709,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "古镜喻心——心含摄世界，世界随心显现。玄沙指火炉问阔多少，雪峰答似古镜阔，玄沙评其脚跟未点地——落在道理会。雪峰答住持事烦，不辩不争，亦是作家本色。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-439",
@@ -17712,9 +20728,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三人各示一境——雪峰云饭篱边坐饿死人，喻守着佛法却不得受用；玄沙改饭篱里坐，喻全身在佛法中仍不得受用；云门改通身是饭通身是水，喻全身即是佛法，更无受用不受用之分。三人层层向上。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-440",
@@ -17724,9 +20747,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以三处相见示道无处不在——望州亭、乌石岭、僧堂前，处处皆是相见处。保福问鹅湖什么处相见，鹅湖骤步归方丈——以行动答；保福便入僧堂——亦以行动答。二人不打话，各自转身。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-441",
@@ -17736,9 +20766,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "洞山问淘沙去米还是淘米去沙——雪峰答沙米一时去，示不落二边。洞山追问大众吃什么，雪峰覆却米盆——全体放下，更无一粒米可得。洞山印之曰合在德山，预示雪峰当于德山座下开悟。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-442",
@@ -17748,9 +20785,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰答亡僧迁化如冰归水——冰化为水，形虽灭而性不灭。玄沙改如水归水——更进一步，水本无冰可化，本来如是。二人一转一深，雪峰许之。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-443",
@@ -17760,9 +20804,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "僧自称寸丝不挂，雪峰以袈裟落地验之——僧回首即落第二念。雪峰打云大好寸丝不挂——寸丝不挂不是口头禅，回首即是挂。此是雪峰勘验学人是否真到寸丝不挂之境。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-444",
@@ -17772,9 +20823,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门教僧传语勘验雪峰——雪峰拦胸把住速道速道，其僧无语。雪峰一拓拓开即知非其语，追问之下知是庄上浙中上座所教。雪峰云大众去庄上迎取五百人善知识来——识得云门是作家。云门来日上山，雪峰问因什么得到与么地，云门低头从兹契合——师徒以心传心，不打一语。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-445",
@@ -17784,9 +20842,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰答古涧寒泉瞪目不见底——示深不可测。饮者不从口入——示道非从外得。赵州改答苦与死——更直截了当。雪峰闻之举赵州古佛从兹不答话——印可赵州，亦示自己不及赵州之直截。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-446",
@@ -17796,9 +20861,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰赞玄沙为把断乾坤汉——玄沙不落赞叹，反问作么生把断。雪峰答岂不是自作用，玄沙改云和尚是乾某甲是坤。师徒对答如珠走盘，雪峰印可玄沙自由自在要用便用要收便收，玄沙云未是分外只是自家底——示本分事不在分外。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-447",
@@ -17808,9 +20880,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以一片地喻造无缝塔——无缝塔喻法身无相。玄沙问高多少，雪峰以目顾视上下——以无言答。玄沙评人天福报不如和尚但灵山授记未梦见在——落在有相。玄沙自答高六七尺——以有相破有相，别出手眼。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-448",
@@ -17820,9 +20899,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三圣问透网金鳞以何为食——喻悟后之人如何保任。雪峰答待汝透出网来即向汝道——反问三圣是否真透网。三圣云一千五百人善知识话头也不识——评雪峰不答。雪峰云老僧住持事烦——不辩不争，亦是作家本色。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-449",
@@ -17832,9 +20918,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以覆船之名勘验学人——生死海未渡为什么覆却船。学人无语，覆船教答渠无生死。雪峰闻之知非学人语——二十棒寄覆船（教人答话之过），二十棒自吃（自己勘验不彻之过），不干学人事。此是雪峰作家风范：过在师处不在学人。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-450",
@@ -17844,9 +20937,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰以古镜喻佛性——人人尽有一面古镜，猕猴亦有一面。三圣追问历劫无名何以彰为古镜，雪峰云瑕生也——落于名言即生瑕疵。三圣喝老汉话头也不识，雪峰云住持事烦——二人机锋相当，各不相让。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-451",
@@ -17856,9 +20956,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "雪峰自制塔铭——从缘有者成坏，非从缘得者常坚。铭中泥牛吼木马嘶冰片满长街密室烂如泥，皆示悟后境界——非言语可会。雪峰预知示寂，自造塔铭，可谓末后一大事因缘。",
     "master": "雪峰义存",
     "source": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "koan-452",
@@ -17868,9 +20975,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节：德山本是西蜀讲金刚经座主，闻南方禅宗大兴，欲破禅宗。及至龙潭言下大悟，住德山三日一回搜堂，凡见文字即时烧却。此则示众，新罗僧未踏船舷便打三十棒——何须等他开口。法眼圆明拈作两橛龙头蛇尾，雪窦拈云要见德山亦未可——德山握棒如大将握剑，有当断则断之威权。圆悟击节直指德山落处。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-453",
@@ -17880,9 +20995,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节：雪峰为一千五百人善知识，日日普请运水搬柴。踏倒这僧归举似长生，长生是活泼泼地汉，便道和尚也须替这僧入涅槃堂始得。雪窦拈云长生大似东家人死西家助哀也好与一踏。圆悟击节云雪窦合吃多少——雪窦拈似与诸人，到这里见得去，自然打着南边动北边。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-454",
@@ -17892,9 +21015,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节百丈拂子公案——百丈拈起拂子即示众，僧问即打。圆悟击节直指百丈拂子非拂子乃宗门正令，一拂之下万古清风。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-455",
@@ -17904,9 +21035,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节赵州偷笋公案——赵州问僧偷笋去，僧无语，赵州云且吃茶去。看似贼过后张弓，实则别有落处——圆悟击节直指赵州机用。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-456",
@@ -17916,21 +21055,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节临济蒿枝公案——临济拈起蒿枝问众，众皆无语，临济自答这个是蒿枝。一茎拈出天下惊——圆悟击节直指临济宗风之峻烈，不落玄妙直示当下。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-457",
     "question": "击节录·云门法身",
     "answer": "云门法身，一拈直下千万里。",
-    "context": "云门一日示众云：法身有三种病、两种光。一切声色，是佛境界。",
+    "context": "此公案出自《佛果击节录》。学人就禅门关要参请圆悟克勤，问及“击节录·云门法身”。圆悟克勤直以“云门法身，一拈直下千万里。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟击节云门法身公案——云门说法身有三种病两种光，直下千万里。圆悟击节印可云门之直截，不落玄妙直示法身。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-458",
@@ -17940,21 +21095,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节三圣金鳞公案——三圣问透网金鳞以何为食，雪峰反问待汝透出网来即向汝道。圆悟击节直指雪峰落处：未透网者不可问透网后事，雪峰住持事烦不辩不争亦是作家本色。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-459",
     "question": "击节录·玄沙过患",
     "answer": "玄沙过患，别具只眼。",
-    "context": "玄沙一日示众云：诸方老宿，尽道有禅有道，且作么生是禅？",
+    "context": "此公案出自《佛果击节录》。学人就禅门关要参请圆悟克勤，问及“击节录·玄沙过患”。圆悟克勤直以“玄沙过患，别具只眼。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟击节玄沙过患公案——玄沙示众别具只眼，直指诸方老宿尽道有禅有道之过患。圆悟击节印可玄沙之宗门眼目。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-460",
@@ -17964,9 +21135,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节船子丝纶公案——船子以垂钓喻接引学人，钓得丝纶即得法脉。圆悟击节直指船子落处。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-461",
@@ -17976,21 +21155,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节投子一言公案——投子以一言益人，僧问即答一言益人。圆悟击节直指投子落处：言下知归，不落多端。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-462",
     "question": "击节录·洞山三顿",
     "answer": "洞山三顿，棒下翻身。",
-    "context": "洞山良价参云岩，三度问佛法大意，三度被打。后于水影中悟道。",
+    "context": "此公案出自《佛果击节录》。学人就禅门关要参请圆悟克勤，问及“击节录·洞山三顿”。圆悟克勤直以“洞山三顿，棒下翻身。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟击节洞山三顿公案——洞山三度问三度被打，后于水影中悟道。圆悟击节直指洞山落处：棒下翻身，不落言句。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-463",
@@ -18000,9 +21195,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节黄檗闭门公案——黄檗闭门，临济来参，开门便礼拜，黄檗便闭门。圆悟击节直指黄檗落处：门外别有，不落门里。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-464",
@@ -18012,21 +21215,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节国师三唤公案——国师三唤侍者，侍者三应。国师云将谓吾孤负汝却是汝孤负吾。圆悟击节直指国师落处：唤主人公，不落应诺。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-465",
     "question": "击节录·雪峰五棒",
     "answer": "雪峰五棒，棒棒全机。",
-    "context": "雪峰一日见僧来，便打五棒。僧云：某甲有什么过？师又打五棒。",
+    "context": "此公案出自《佛果击节录》。学人就禅门关要参请圆悟克勤，问及“击节录·雪峰五棒”。圆悟克勤直以“雪峰五棒，棒棒全机。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟击节雪峰五棒公案——雪峰见僧来便打五棒，僧问有什么过又打五棒。圆悟击节直指雪峰落处：棒棒全机，不落有无。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-466",
@@ -18036,21 +21255,37 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节南泉出世公案——南泉斩猫，直指学人落处。圆悟击节直指南泉落处：斩猫断命，不落思议。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-467",
     "question": "击节录·夹山生死",
     "answer": "夹山生死，生死一如。",
-    "context": "夹山善会禅师，一日示众云：无法可说，是名说法。",
+    "context": "此公案出自《佛果击节录》。学人就禅门关要参请圆悟克勤，问及“击节录·夹山生死”。圆悟克勤直以“夹山生死，生死一如。”答之，不涉浮言，直指心源。",
     "interpretation": "圆悟击节夹山生死公案——夹山示众无法可说是名说法。圆悟击节直指夹山落处：生死一如，不落二边。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-468",
@@ -18060,9 +21295,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节赵州答话公案——赵州问僧峨眉山在什么处，僧无语，赵州云且吃茶去。圆悟击节直指赵州落处：四字拨千斤，不落远近。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-469",
@@ -18072,9 +21315,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节雪峰覆船公案——雪峰以覆船之名勘验学人。圆悟击节直指雪峰落处：生死海未渡为什么覆却船，不落生死。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-470",
@@ -18084,9 +21335,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节德山托钵公案——德山托钵下山，首座问什么处托钵去，德山便归方丈。圆悟击节直指德山落处：钵里乾坤，不落去来。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-471",
@@ -18096,9 +21355,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "圆悟击节雪峰古镜公案——雪峰以古镜喻心，胡来胡现汉来汉现。僧问忽遇明镜来，雪峰云胡汉俱隐。圆悟击节直指雪峰落处：古镜非镜，不落显现。",
     "master": "圆悟克勤",
     "source": "佛果击节录",
-    "relatedConcepts": ["niangu","jijie","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "jijie",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "koan-472",
@@ -18108,9 +21375,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵入方丈据座——此室甚深广大非语默可及，净名居士七佛祖师到此皆纳败愈。杰上座口似乞儿破席袋又如何设施——自谦之余直示不可以言语会。喝一喝云不入洪波里争见弄潮人——不亲入生死波涛怎见得弄潮好手，参禅须亲到险处方有悟分。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-473",
@@ -18120,9 +21394,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵上堂直示心法双遣——佛说一切法为度一切心，我无一切心何用一切法。既无心又无法，山河大地从何而来，见闻觉知复是何物。喝一喝云临崖看浒眼特地一场愁——心法双遣之后，山河大地见闻觉知皆不可得，惟有临崖看浒之愁。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-474",
@@ -18132,9 +21413,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "张镃序记密庵悟道因缘——一见应庵便明大法，破沙盆语盛播丛林。悟道在机缘契合不在久参，破沙盆非破器皿乃破执著窠臼。密庵之语如破沙盆，打破一切窠臼直指人心。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-475",
@@ -18144,9 +21432,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵评三圣兴化二尊宿——美则美矣若要扶临济正宗每人各欠一顿棒在。此是密庵力扶临济正宗之语：二尊宿虽各有一处打得着，然犹欠一顿棒——未到彻底处。密庵以棒喝为临济正宗之标识，力扶宗风。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-476",
@@ -18156,9 +21451,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂德山托钵——斫却月中桂清光转更多，去掉遮蔽光明更盛。狐狸俱屏迹狮子奋金毛，狮子一吼狐狸屏迹——喻宗师一拈之下，一切狐禅屏迹。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-477",
@@ -18168,9 +21470,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂赵州狗子无佛性——杀人便偿命，楚痛百千般，因邪却打正。赵州一'无'字杀人见血，学人于此楚痛百千般，因邪却打正——以邪打正，正邪俱被打却。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-478",
@@ -18180,9 +21489,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂临济三顿棒——一顿浑家尽灭门更加两顿累儿孙，三顿棒下全家灭门累及儿孙。银山铁壁俱穿透万里无云宇宙分——三顿棒后银山铁壁皆透，万里无云宇宙分明。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-479",
@@ -18192,9 +21508,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂百丈野狐——五百生前失却五百生后太错，错错。谁道祥鳞只一角。百丈野狐公案示不落因果与不昧因果之别，密庵以错错二字直指落处。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-480",
@@ -18204,9 +21527,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂马祖一口吸尽西江水——西江一吸了无余突出堂堂大丈夫，尽道世间胡须赤须知更有赤须胡。一吸尽西江水，突出堂堂大丈夫——直下承当之气象。更有赤须胡——别有出身之路。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-481",
@@ -18216,9 +21546,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂马祖即心是佛——大海波涛阔千峰气象雄，古今无间断南北路头通。即心是佛非道理会，大海波涛千峰气象，古今无间断南北路头皆通——直示即心是佛之气象。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-482",
@@ -18228,9 +21565,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵以诗偈颂赵州勘婆——天高地厚人难见海阔山遥只自知，勘破却回休借问得便宜是落便宜。赵州勘婆台山路暗婆子七错，密庵以得便宜是落便宜直指落处。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-483",
@@ -18240,9 +21584,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵上堂直示那伽常在定——一进一退一动一静皆在定中。一擒一纵一杀一活，四方八面话鱍鱍。嘉州大象吃盐多陕府铁牛添得渴——以俗语示禅机。若作佛法商量吃铁棒有日在——不许落于佛法商量。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-484",
@@ -18252,9 +21603,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵上堂引圆觉经——知幻即离不作方便，离幻即觉亦无渐次。以拂子左边击一下云向这里荐取，右边击一下云向这里荐取，中间划一划——三处示众，直指当下。一人发真归元十方虚空悉皆消殞——直示悟后之境。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-485",
@@ -18264,9 +21622,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵举梁山家贼难防公案——识得不为冤，贬向无生国里。死水不藏龙——识得之后不可落于死水，须是活水龙方有气象。密庵举此公案直示学人识得妄念之后不可安于无生，须更进一步。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-486",
@@ -18276,9 +21641,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵举婆子供养庵主公案——庵主答枯木倚寒巖三冬无暖气，婆子云我二十年只供养个俗汉。枯木倚寒巖看似有境，实则落空——婆子识得落空，遂遣去。密庵举此直示学人不可落于枯木寒巖之空境。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-487",
@@ -18288,9 +21660,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵上堂引傅大士诗——有物先天地无形本寂寥，能为万象主不逐四时凋。且道是什么物——直示学人参究。有般无鼻孔汉便道描也描不成——落于玄妙。密庵力斥一句合头语万劫系驴橛——不可落于合头语。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-488",
@@ -18300,9 +21679,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵法语直示祖师门下直截省要不历阶梯立地成佛——学道人多不明此，病在太杀现成不肯承当。一味钻头入知见网中觅佛觅法觅玄觅妙——恰如苍蝇堕在漆盘中粘手缀脚。密庵力斥知见网中之口头禅。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-489",
@@ -18312,9 +21698,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵法语示光禅人——马祖即心即佛非心非佛不是心不是佛不是物，如掘深坑活埋了人。德山一条白棒佛来也打祖来也打——直示德山棒之峻烈。密庵以马祖德山二家宗风示学人。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-490",
@@ -18324,9 +21717,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵法语示应禅人——世尊拈花迦叶微笑，劈头一错直至如今代代相传分宗列派承虚接响。密庵以劈头一错直指拈花微笑之旨——不可落于代代相传之虚响，须识得拈花之落处。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-491",
@@ -18336,9 +21736,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "密庵塔铭记其一生——曹溪一滴源深流长至于临济其道益张。如击石火如闪电光不离当处觌面承当。猗欤杰公直造其堂行解相应非断非常一音演畅七坐道场——密庵承临济正宗，七镇名山，行解相应，为南宋临济宗中坚。",
     "master": "密庵咸杰",
     "source": "密庵咸杰禅师语录",
-    "relatedConcepts": ["poshapen","banghe"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "poshapen",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "koan-492",
@@ -18348,9 +21755,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "钱谦益以王者喻紫柏——气宇如王蹚踏天下，非具大丈夫志者不能如此。紫柏相好魁奇雄硕威掩万众，童真绝染肤体如铁石，自出家即胁不到席四十余年如一日——此等行持非具大丈夫志者不能。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-493",
@@ -18360,9 +21774,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以唯识解禅——唯遮境有识简心空，遮境则识外无法简空则心外无境。八识四分乃相宗之纲骨，究本言之八识四分初无分体。紫柏以唯识之精微解禅宗之直指，示禅教会通之典范。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-494",
@@ -18372,9 +21793,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以煆炼昏沉散乱为做工夫之要——昏沉散乱是参禅两大病，须以决志逼拶煆炼如以火煆金。消昏散于刹那扶止观于大寂——煆昏散非止非观，须以决志逼拶，令昏散消落心体光洁方有悟分。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-495",
@@ -18384,9 +21812,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以三教一心为旨——得仲尼之心方能窥六经，得伯阳之心方能达二篇，得佛心方能了自心。三教皆归于自心：佛不得我心不能说法，伯阳不得我心二篇奚作，仲尼不得我心则不能集大成。三教一心非混滥——须以佛心为了自心之根本。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-496",
@@ -18396,9 +21831,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以留侯佐汉喻悟道——子房佐汉非为汉也志在报韩，报韩克之此情遂死。吾曹求无上菩提若情不死决所欲未遂——欲不可遂若遂之则长劫沦坠安有出期。情死方能悟道，情不死则长劫沦坠。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-497",
@@ -18408,9 +21850,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏引楞严经——一心不生万法何咎。情生则智隔，一心不生得非情未生时乎。首楞严言一切事究竟坚固——智鉴意近理究竟坚固，如来义近事究竟坚固。一心不生则万法皆无咎。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-498",
@@ -18420,9 +21869,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以楞伽经示身心俱不可得——身不自身由心故身，心不自心由身故心。身心俱不可得则智山独立觉海澄渟，情识路穷能所寂断。此是紫柏以禅解教之典范。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-499",
@@ -18432,9 +21888,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏读桃源记悟武陵渔人即洞中人——若非洞中人岂能一见山口有光便舍舟入口中坦然直进了不生心视身若无有。紫柏以桃源记喻悟道——洞中人方能入洞，了不生心方能悟道。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-500",
@@ -18444,9 +21907,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏解毗舍浮佛颂——一切自在觉，既自在觉矣有何物而为障碍。然未觉者不免触途成滞——见色被色障碍见空被空障碍有身被身障碍有心被心障碍。悟得自在觉则一切处无碍，未悟则触途成滞。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-501",
@@ -18456,9 +21926,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以心经为般若之要——般若大部数百万言如沧海云涛汪洋莫测，菩萨流慈束广成略爰有心经。文言要约旨趣全归——心经虽简而般若之旨趣全归于此。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-502",
@@ -18468,9 +21945,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏以馒头喻尽大地——尽大地是一个馒头谁能下口。水银堕地颗颗皆圆月镜澄江头头皆满——一即一切一切即一。紫柏以募缘疏示禅机，文采与禅机并美。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-503",
@@ -18480,9 +21964,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏修径山放生池——沿大人峰寻天目来脉见一池可三亩许。放生池远久芜没紫柏发愿修之——以放生为慈悲之行，以修池为护法之务。紫柏一生以慈愿戒力住世，行脚见名蓝废址必发愿恢复。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-504",
@@ -18492,9 +21983,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏跋林间录——赤肉团上无位真人暂时不在，王房仲以白拈贼手段盗去此录。觉范老汉于石上林间积录成书故名林间录。此中大都皆古德活句居多——紫柏以活句死句评林间录，示宗门眼目。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-505",
@@ -18504,9 +22002,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏因妖书案牵连入狱殉道——拚幻有之躯息清流之祸。东厂底簿载其从容应对不激不挠——王之祯问你是箇高僧如何不在深山修行，达观回说明公说的是。紫柏以慈愿戒力住世舍身护法，诚明代佛教之金刚栋梁。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-506",
@@ -18516,9 +22021,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏一生以刻藏为志倡印嘉兴藏——初祖西来以楞伽印心，从上祖家皆精其义立为纲宗。宋洪觉范忧末法失传遂为智证传僧宝传诸书。紫柏搜得古本大力倡印——为明代佛教文献保存之最大功臣。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-507",
@@ -18528,9 +22040,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏刻藏憨山弘法——二大高僧分工合作共议复兴明代佛教。法门至交千古佳话——紫柏以刻藏为志憨山以弘法为任，二人同心同德为明代佛教复兴之关键人物。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-508",
@@ -18540,9 +22059,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏送龙子归潭柘——潭柘龙子灵应异常其卫法也甚固。紫柏将礼普贤于峨眉白龙父借力——既而达龙泉果然往返乘安流蹈夷径。紫柏以龙子卫法喻护法之灵应，示佛法不可思议。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-509",
@@ -18552,9 +22078,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏跋八大人觉经——八觉精光虽则曲照多方诠摄殆尽。其辞冲远简朗旨趣弘深——八觉为世间无常心为恶源多欲为苦少欲自在等，紫柏以八觉为修行之要，示佛法之精光。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-510",
@@ -18564,9 +22097,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "紫柏韦提观境——稽首释迦佛恩逾昊天德。父母生育我无能使不生君师资教我无能令出苦，惟有大雄氏慧光破我迷。紫柏以韦提观境示念佛三昧——指大捷径路使我坦然行。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-511",
@@ -18576,9 +22116,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "陆符撰紫柏附录——师讳真可达观其字也晚自号紫柏。万历中慈圣皇太后钦师道风上亦雅知师谓若此真可名一僧。师相好魁奇雄硕威掩万众童真绝染肤体如铁石，自出家即胁不到席四十余年如一日——此为研究紫柏生平之重要史料。",
     "master": "紫柏真可",
     "source": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong","xiahunsan"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong",
+      "xiahunsan"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "koan-512",
@@ -18588,9 +22135,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四料拣之一——夺人不夺境。煦日发生铺地锦（存境），婴儿垂发白如丝（夺人）。大慧评此二句一句存境一句夺人——破除对自我的执着而保留外境。临济以诗偈示四料拣之旨，以不同方式接引不同根器的学人。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-513",
@@ -18600,9 +22153,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四料拣之三——人境俱夺。王令已行天下遍（夺境），将军塞外绝烟尘（夺人）。临济以诗偈示人境俱夺之旨——自我与外境俱破，照用未行白云万里青天豁开。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-514",
@@ -18612,9 +22171,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四喝——金刚王宝剑/踞地师子/探竿影草/不作一喝用。临济以四喝接引学人，僧拟议师便喝——一喝之下截断情识。寂音尊者颂四喝之旨：金刚王剑觌露堂堂才涉唇吻即犯锋铓，踞地师子本无窠臼顾伫未拟即俱丧偶。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-515",
@@ -18624,9 +22189,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济三玄三要——一句中须具三玄，一玄中须具三要。汾阳颂三玄三要事难分得意忘言道易亲——三玄三要之旨在于得意忘言。慈明颂三玄三要佛祖要妙——体中玄句里玄玄中玄，一言中具三要。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-516",
@@ -18636,9 +22207,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四宾主——宾中宾/宾中主/主中宾/主中主。临济以宾主关系比喻师徒关系——宾中宾是学人全迷，宾中主是学人将悟，主中宾是师家接引，主中主是师家独断。慈明颂四宾主之旨。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-517",
@@ -18648,9 +22225,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "临济四照用——先照后用/先用后照/照用同时/照用不同时。照则照破学人执着令见本来面目，用则棒喝交驰截断学人情识。慈明颂四照用之旨——先照后用月在云中，先用后照箭离弓弦，照用同时如镜照像。",
     "master": "临济义玄",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-518",
@@ -18660,9 +22243,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门三句——函盖乾坤/截断众流/随波逐浪。云门示众函盖乾坤目机铢两不涉万缘，自代云一镞破三关。德山圆明密分此为三句。圆悟评函盖乾坤则洞然明白，截断众流则万机顿息，随波逐浪则因语识人。普安道颂乾坤并万象物物皆真现。",
     "master": "云门文偃",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-519",
@@ -18672,9 +22261,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云门一字关——我有一字与诸人商量。僧问如何是一字师云是。大慧评云门一字关截断众流不容拟议——学人于此须是透得方见云门用处。一字关之旨在于以一字截断学人情识。",
     "master": "云门文偃",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-520",
@@ -18684,9 +22279,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "巴陵三句——鸡寒上树/金将火试/透网金鳞。巴陵颢鉴为云门侍者，其三句即云门三句之别名。大慧评巴陵三句即云门三句之别名——鸡寒上树即函盖乾坤，金将火试即截断众流，透网金鳞即随波逐浪。",
     "master": "巴陵颢鉴",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["renyantianmu"]
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-521",
@@ -18696,9 +22295,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "汾阳三诀——金刚圈/栗棘蓬/金刚王宝剑。汾阳善昭以三诀接引学人——跳得过则活跳不过则死，吞得下则活吞不下则死，挥得下则活挥不下则死。三诀之旨在截断学人情识，令于言语路绝处荐得。",
     "master": "汾阳善昭",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["fenyang-shanzhao"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "fenyang-shanzhao"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-522",
@@ -18708,9 +22313,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹洞五位君臣——正中偏/偏中正/正中来/兼中至/兼中到。曹山云正位即属空界本来无物，偏位即色界有万形象。偏中正者舍事入理，正中来者背理就事，兼带者冥应众缘不随诸有。大阳颂不立功勋坐庙堂群臣何敢望清光——以君臣关系比喻理事关系。",
     "master": "洞山良价",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-523",
@@ -18720,9 +22331,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹洞功勋五位——向/奉/功/共功/功功。洞山以功勋五位明修行次第——从初发心（向）到承当（奉）到加工（功）到共功（共功）到功功相忘（功功）。五位回互展现从理到事从事到理的修行次第。",
     "master": "洞山良价",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-524",
@@ -18732,9 +22349,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "曹洞三种渗漏——见渗漏/情渗漏/语渗漏。曹山云见渗漏机不离位堕在毒海，情渗漏智常向背见处偏枯，语渗漏体妙失宗机昧终始。三种渗漏是曹洞宗指出学人修行之三种障碍。",
     "master": "曹山本寂",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-525",
@@ -18744,9 +22367,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "沩仰三种生——想生/相生/流注生。沩山以镜智为宗要出三种生——想生即能思之心杂乱，相生即所思之境历然，微细流注俱为尘垢。楞严经云想相为尘识情为垢二俱远离则法眼清明。石佛忠解想生为兔子望月相生为山河大地流注生为无间断。",
     "master": "沩山灵祐",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["weishan-lingyou"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-526",
@@ -18756,9 +22385,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "法眼华严六相义——总别同异成坏。法眼文益融合华严教理立六相义——总相一即一切，别相一切即一，同相万法同一性，异相万法各差别，成相万法因缘和合而成，坏相万法因缘离散而坏。六相义以圆融无碍说明万法之关系。",
     "master": "法眼文益",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-527",
@@ -18768,9 +22403,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄龙三关——生缘/佛手/驴脚。黄龙慧南室中常问三关——人人尽有生缘上座生缘在甚处，我手何似佛手，我脚何似驴脚。凡三十年莫有契其机者。三关之旨在截断学人情识令于言语路绝处荐得。南公自颂生缘有语人皆识水母何曾吃得虾。",
     "master": "黄龙慧南",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-528",
@@ -18780,9 +22421,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "汾阳十智同真——同一质/同一事/同一照/同一体/同一用/同一性/同一机/同一境/同一声/同一力。汾阳善昭以十智同真接引学人——十智同真事本圆，于一真界任方圆，纵横自在无拘系，万象森罗一镜悬。十智同真之旨在万法归一。",
     "master": "汾阳善昭",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["fenyang-shanzhao"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "fenyang-shanzhao"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-529",
@@ -18792,9 +22439,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "兴化验人——敲枷打锁/换骨夺胎/抬脚抹颡。兴化存奖以三种方式验人——敲枷打锁破学人知见之枷锁，换骨夺胎转学人凡夫之骨格为圣贤之骨格，抬脚抹颡验学人脚跟是否点地。此是临济宗验人之法。",
     "master": "兴化存奖",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["renyantianmu"]
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-530",
@@ -18804,9 +22455,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "拈花公案——世尊拈花迦叶微笑。王荆公问佛慧泉禅师世尊拈花出在何典，泉云藏经亦不载。公于翰苑偶见大梵天王问佛决疑经三卷，经文所载甚详——梵王以金色波罗花献佛，世尊拈花示众众皆默然唯迦叶破颜微笑，世尊云吾有正法眼藏涅槃妙心付嘱摩诃迦叶。",
     "master": "释迦牟尼",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["renyantianmu"]
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-531",
@@ -18816,9 +22471,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "五家要括——临济/沩仰/曹洞/云门/法眼五家法脉。临济自南岳马祖百丈传下，沩仰自百丈派出大沩祐，曹洞自青石药山云洞祖传下，云门自青石天龙接德山雪峰云门传下，法眼自雪峰傍出玄沙备传下。五家要括以诗偈概括五家法脉传承。",
     "master": "晦岩智昭",
     "source": "人天眼目",
-    "relatedConcepts": ["siliao-jian"],
-    "relatedPersons": ["huiyan-zhizhao"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "siliao-jian"
+    ],
+    "relatedPersons": [
+      "huiyan-zhizhao"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "koan-532",
@@ -18828,9 +22489,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "兴教小寿禅师随天台韶国师普请时，闻堕薪之声而悟道——扑落非他物纵横不是尘，山河及大地全露法王身。此偈之旨在于一切山河大地皆全露法王身，堕薪之声即是法音。国师颔之而已——印可之也。",
     "master": "兴教小寿",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-533",
@@ -18840,9 +22505,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "茶陵郁和尚过溪有省作偈——我有神珠一颗久被尘劳关锁，今朝尘尽光生照破山河万朵。此偈以神珠比喻佛性，尘劳关锁比喻无明烦恼，尘尽光生比喻烦恼尽除佛性现前。白云守端禅师之落发师即茶陵郁和尚，杨岐会禅师闻此偈而奇之。",
     "master": "茶陵郁",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-534",
@@ -18852,9 +22521,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "黄龙慧南三关语——佛手驴脚生缘。南禅师以三关语问学者，答者甚众南公瞑目如入定未尝可否之——三关之旨在截断学人情识令于言语路绝处荐得。晚年自作偈我手佛手齐举禅流直下荐取不动干戈道处自然无作无为——此是三关语之自颂。",
     "master": "黄龙慧南",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-535",
@@ -18864,9 +22539,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "夹山会禅师初住京口竹林寺升座，僧问如何是法身答曰法身无相，如何是法眼答曰法眼无瑕。道吾笑于众中——笑和尚一等行脚放复子不著所在。道吾指引夹山往见华船子——此是夹山会禅师参华船子之因缘。法身无相法眼无瑕看似无过，实则未透末后一句。",
     "master": "夹山会",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-536",
@@ -18876,9 +22555,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "云居佛印禅师论云门和尚——云门说法如云绝不喜人记录其语，见必骂逐曰汝口不用反记我语他时定贩卖我去。今对机室中录皆香林明教以纸为衣随所闻随即书之。后世学者渔猎文字语言中正如吹网欲满非愚即狂——此是云门对记录语之态度，亦是对后世学者之警诫。",
     "master": "云居佛印",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-537",
@@ -18888,9 +22571,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "玄沙备禅师薪于山中，傍僧呼曰和尚看虎。玄沙见虎顾僧曰是你——此是玄沙以虎喻僧之妄心，虎即是你是也。灵润法师山行野烧安步如常曰心外无火火实自心——与玄沙见虎顾僧曰是你异曲同工，皆明心外无法之旨。",
     "master": "玄沙备",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-538",
@@ -18900,9 +22587,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "唐僧元晓独行荒陂夜宿冢间，渴甚掬水于穴中得泉甘凉，黎明视之髑髅也。大恶之尽欲呕去，忽猛省叹曰心生则种种法生心灭则髑髅不二——此是元晓以掬水髑髅之因缘悟唯心之旨。同一水也，夜以为是甘泉，晨以为是从髑髅出——心生则种种法生心灭则髑髅不二。",
     "master": "元晓",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-539",
@@ -18912,9 +22603,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "惠洪考证达磨面壁非习禅——菩提达磨初自梁之魏经行于嵩山之下，倚杖于少林面壁燕坐而已非习禅也。夫禅那诸行之一耳何足以尽圣人——惠洪以为达磨面壁非习禅，禅那只是诸行之一，不足以尽达磨之圣。当时之人以达磨为习禅，又从而传兹习禅之列，使与枯木死灰之徒为伍——可胜叹哉。",
     "master": "惠洪",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-540",
@@ -18924,9 +22621,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "杨岐会禅师从慈明游最久所至丛林师必作寺主。慈明化去托迹九峰，忽宜春移檄命居杨岐。时长老勤公惊曰会监寺何曾参禅万一受之恐失州郡之望——勤公以会为监寺不曾参禅。会受请即升座机辨逸格一众为倾——会禅师升座后机辨逸格一众为倾。下座勤前握手曰我不意会监寺有此大机锋——此是杨岐会禅师初住持之因缘。",
     "master": "杨岐会",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-541",
@@ -18936,9 +22637,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "仰山和尚以圆相画字示人，僧问意旨如何。仰山曰此亦闲事——圆相画字只是闲事。汝若会不从外来不会亦不失——会与不会皆与圆相无关，佛性不从外来亦不失。仰山进而问汝参禅学道诸方老宿向汝身上指那个是汝佛性——语底是耶默底是耶总是总不是耶——此是仰山以圆相接引学人之旨。",
     "master": "仰山慧寂",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["yangshan-huiji"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "yangshan-huiji"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-542",
@@ -18948,9 +22655,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "惠洪谒云峰悦禅师塔，拜起拊之曰生耶死耶，久之自答曰不可推倒塔子去也——此是惠洪对生死之参究。旁僧曰今日时节正类道吾因缘。惠洪作偈不知即问不见即讨圆满现前何须更道维坚密身生死病老面前塔子且曰推倒——此是惠洪以塔子参究生死之机缘。",
     "master": "惠洪",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-543",
@@ -18960,9 +22673,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "魏府老元华严示众——佛法在日用处在行住坐卧处吃茶吃饭处语言相问处所作所为举心动念，又却不是也。此是华严禅师对佛法在日常中之开示——佛法不离日用，但举心动念又却不是也。又曰时当缺减人寿少有登六七十者——此是华严禅师对学人之警诫，劝其趁早修行。",
     "master": "魏府老元华严",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-544",
@@ -18972,9 +22689,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "晋鸠摩罗什儿时随母至沙勒顶戴佛钵，私念钵形甚大何其轻耶，即重失声下之。母问其故对曰我心有分别故钵有轻重耳——此是罗什以钵之轻重悟唯心之旨。惠洪评曰予以是知一切诸法随念而至念未生时量同太虚——一切诸法随念而至，念未生时量同太虚。",
     "master": "鸠摩罗什",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-545",
@@ -18984,9 +22705,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "草堂禅师笺要——心体灵知不昧如一摩尼珠圆照空净都无差别之相。以体明故对物时能现一切色相色自差而珠无变易——此是以摩尼珠比喻心体。时人以珠为黑者非见珠也，离黑觅珠者亦非见珠也，以明黑都无为珠者亦非见珠也——此是草堂对心体之三种误解之破斥。",
     "master": "草堂",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-546",
@@ -18996,9 +22721,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "惠洪论二祖与牛头之因缘——二祖大师服勤累年至于立雪断臂而达磨仅以一言语之，牛头懒融枯禅穷山初无意于有闻而四祖自往说法。祖师之于师弟子之际其必有旨耶——惠洪以为祖师接引弟子之方式各有不同，二祖以立雪断臂而得法，牛头以四祖自往说法而得法，其必有旨。",
     "master": "惠洪",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-547",
@@ -19008,9 +22739,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大觉禅师琏公以道德为仁庙所敬天下想望风采——此是大觉琏禅师之道德感化。其居处服玩可以化宝坊也而皆不为，独于都城之西为精舍容百许人而已——此是琏禅师之清简。栖贤舜老夫为郡吏临以事民其衣走依琏，琏馆于正寝而自处偏室执弟子礼甚恭——此是琏禅师之谦德。",
     "master": "大觉琏",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-548",
@@ -19020,9 +22755,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "王荆公（王安石）罢相归老钟山，见衲子必探其道学尤通首楞严尝自疏其义——此是王安石归老后对佛法之深入。其文简而肆略诸师之详而详诸师之略非识妙者莫能窥也——惠洪评王安石之楞严疏。每曰今凡看此经者见其所示本觉妙明性觉明妙知根身器界生起不出我心——此是王安石对楞严经之理解。",
     "master": "王安石",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-549",
@@ -19032,9 +22771,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "惠洪批评赞宁大宋高僧传——用十科为品流以义学冠之已可笑，又列嵓头豁禅师为苦行智觉寿禅师为兴福，云门大师僧中王也与之同时竟不载何也——此是惠洪对赞宁大宋高僧传之三大批评：一以义学冠之已可笑，二列嵓头豁为苦行智觉寿为兴福不当，三云门大师僧中王竟不载。",
     "master": "惠洪",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-550",
@@ -19044,9 +22789,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "南禅师居积翠时一夕燕坐光属屋庐诫侍者勿言于外——此是黄龙慧南之禅定光相。嵩明教既化火浴之顶骨眼睛齿舌耳毫男根数珠皆不坏——此是嵩明教之生身不坏。惠洪引世尊言比丘生身不坏发无垢智光者善根功德之力如来知见之力——此是惠洪对生身不坏之解释。",
     "master": "黄龙慧南",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["linjianlu"]
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-551",
@@ -19056,9 +22807,13 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "惠洪游东吴寓西湖净慈寺，闻老衲言永明和尚以贤首慈恩天台三宗互相冰炭不达大全——此是永明延寿和尚对三宗之评判。心馆其徒之精法义者于两阁博阅义海更相质难和尚则以心宗之衡准平之——永明以心宗衡准平三宗之争。又集大藏精要作宗镜录——此是永明集大藏精要作宗镜录之因缘。",
     "master": "永明延寿",
     "source": "林间录",
-    "relatedConcepts": ["instant-enlightenment"],
+    "relatedConcepts": [
+      "instant-enlightenment"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["linjianlu"]
+    "relatedBooks": [
+      "linjianlu"
+    ]
   },
   {
     "id": "koan-552",
@@ -19068,9 +22823,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大慧菩萨赞佛偈——世间离生灭犹如虚空华智不得有无而兴大悲心。此偈赞佛离生灭见不住有无而兴大悲——世间本离生灭犹如虚空华，智者不得有无而兴大悲心度众生。一切法如幻远离於心识——离心识则一切法如幻，智不得有无而兴大悲。此是楞伽经之宗要——离生灭离心识不住有无而兴大悲。",
     "master": "大慧菩萨",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-553",
@@ -19080,9 +22840,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "达磨西来既传心印於二祖慧可，且以楞伽经四卷付之——即是如来心地要门令诸众生开示悟入。此是佛与禅并传而玄与义俱付——楞伽经既是佛所说经教又是禅宗印心之典。至五祖弘忍始易以金刚经传授——故六祖惠能闻客读金刚经而问其所从来。此是禅宗印心经典从楞伽经到金刚经之转变。",
     "master": "达磨",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["lengqiejing"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-554",
@@ -19092,9 +22859,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "楞伽经开篇即明自心现境界善解其义——一切境界皆自心现，善解其义者知自心现量离心无别法。种种众生种种心色无量度门随类普现——此是自心现量之妙用。於五法自性识二无我究竟通达——此是楞伽经之教理纲宗。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-555",
@@ -19104,9 +22876,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "大慧菩萨承佛威神白佛言——我今应於世尊所咨问所疑。佛告大慧恣所欲问我当为汝解释所疑——大慧菩萨即问佛言云何净其一切自心现云何生起有与无云何见痴与惑云何起作。此是楞伽经百八问之开端——大慧菩萨以百八问问佛一切法，佛一一答之。",
     "master": "大慧菩萨",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-556",
@@ -19116,9 +22893,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧譬如巨海浪斯由猛风起洪波鼓冥壑无有断绝时——此是以海浪比喻藏识与转识之关系。藏识海常住境界风所动种种诸识浪腾跃而转生——藏识如海常住，境界如风所动，七识如浪腾跃而转生。海水起波浪七识亦如是心俱和合生——藏识与七识如海与浪非异非不异。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-557",
@@ -19128,9 +22910,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧有五法三种自性八识二种无我——此是楞伽经之教理纲宗。五法者名相妄想正智如如——名相为所执，妄想为能执，正智为能观，如如为所证。三自性者妄想自性缘起自性成自性——妄想自性即遍计所执，缘起自性即依他起，成自性即圆成实。八识二无我——唯识与人法二无我之教理。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-558",
@@ -19140,9 +22927,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧如来藏自性清净转三十二相入於一切众生身中——如来藏自性清净本在一切众生身中。如大价宝垢衣所缠——如来藏如大价宝为垢衣所缠。如来之藏常住不变亦复如是而阴界入垢衣所缠贪欲恚痴不实妄想尘劳所污——如来藏常住不变，但为阴界入垢衣所缠贪欲恚痴不实妄想尘劳所污。此是如来藏思想之核心——自性清净客尘所染。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-559",
@@ -19152,9 +22944,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧一切法离言说相离名字相离心缘相——一切法离言说名字心缘三相。如如正智离妄想相究竟清净——如如正智离妄想相究竟清净。如如者不生不灭不来不去不常不断不一不异——如如离四句绝百非。此是楞伽经离言说相之教——一切法离心缘相，如如正智离妄想相。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-560",
@@ -19164,9 +22961,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧自觉圣智离言说相离妄想相——自觉圣智离心缘相。云何自觉圣智谓一切法自性不生离自性相无生无灭本来寂静自性涅槃——自觉圣智即是一切法自性不生离自性相无生无灭本来寂静自性涅槃。此是楞伽经自觉圣智之教——自觉圣智离言说妄想，一切法自性不生本来寂静自性涅槃。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-561",
@@ -19176,9 +22978,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧二种无我谓人无我法无我——此是楞伽经二无我之教。云何人无我谓离我我所阴界入聚无我我所如草木瓦石愚夫妄想所计——人无我即离我我所阴界入聚无我我所。云何法无我谓一切法自性不生离自性相无生无灭本来寂静自性涅槃——法无我即一切法自性不生离自性相无生无灭本来寂静自性涅槃。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-562",
@@ -19188,9 +22995,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧有二种通谓宗通及说通——此是楞伽经宗通说通之教。宗通者谓缘自得胜进相离言说妄想离文字妄想趣无漏界自觉地自相远离一切虚妄觉想降伏一切外道众魔缘自觉趣光明晖发——宗通是自证离言说妄想。说通者谓随众生心应其所知而为说法——说通是随众生心而为说法。此是禅宗宗通说通之源头——宗通自证说通化他。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-563",
@@ -19200,9 +23012,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧意生身者譬如意去速疾无碍名意生身——意生身如意去速疾无碍。譬如心意於无量百千由旬之外忆先所经意之所到速疾无碍——心意速疾无碍。意生身亦复如是——意生身亦速疾无碍。有三种意生身——三昧乐正受意生身/觉法自性性意生身/种类俱生无行作意生身。此是楞伽经意生身之教——菩萨得意生身速疾无碍。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-564",
@@ -19212,9 +23029,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧一切法离一异俱不俱有无非有非无常无常——此是楞伽经离四句之教。愚夫妄想所计谓一谓异谓俱谓不俱谓有谓无谓非有非无谓常谓无常——愚夫以四句妄想计著一切法。如是一切皆是妄想分别所起——四句皆是妄想分别所起。此是中观离四句绝百非之教理——一切法离四句。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-565",
@@ -19224,9 +23046,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧食肉无慈悲永背正解脱及违圣表相是故不应食——食肉无慈悲永背正解脱及违圣表相。得生梵志种及诸修行处智慧富贵家斯由不食肉——不食肉之功德。菩萨摩诃萨当观食肉如食子肉作是观已不食一切肉——菩萨当观食肉如食子肉。此是楞伽经卷四断肉之教——食肉无慈悲永背正解脱。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-566",
@@ -19236,9 +23063,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧八识有二种谓现识及分别事识——八识分现识与分别事识。现识者犹如明镜顿现一切色像——现识如明镜顿现。分别事识者以依现识种种妄想分别计著——分别事识依现识起妄想分别。转八识成四智——大圆镜智平等性智妙观察智成所作智。此是楞伽经八识转智之教——转八识成四智。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-567",
@@ -19248,9 +23080,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧一切法缘起无自性——一切法缘起无自性。缘起者谓依因待缘而起——缘起即依因待缘而起。一切法缘起无有自性如幻如梦如乾闼婆城如阳焰如水中月——一切法缘起无自性如幻如梦。愚夫妄想所计谓有自性——愚夫妄想计著有自性。此是楞伽经缘起无自性之教——一切法缘起无自性如幻如梦。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-568",
@@ -19260,9 +23097,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧涅槃者自性涅槃本来寂静——涅槃即自性涅槃本来寂静。一切法自性涅槃本来寂静离妄想相——一切法自性涅槃本来寂静离妄想相。愚夫妄想所计谓有生死涅槃之异——愚夫妄想计著生死涅槃之异。生死涅槃本来平等无有二相——生死涅槃本来平等无有二相。此是楞伽经涅槃之教——自性涅槃本来寂静生死涅槃平等。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-569",
@@ -19272,9 +23114,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛告大慧三乘者声闻乘缘觉乘佛乘一乘者佛乘也——三乘与一乘。我为众生说三乘法为调伏众生故——说三乘法为调伏众生。然诸佛世尊唯以一佛乘故说三乘法——诸佛唯以一佛乘说三乘法。如是一切皆是方便引导众生令入一乘——三乘皆是方便引导众生令入一乘。此是楞伽经三乘一乘之教——三乘方便一乘真实。",
     "master": "释迦牟尼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-570",
@@ -19284,9 +23131,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "苏轼序楞伽经——先佛所说微妙第一真实了义故谓之佛语心品。祖师达磨以付二祖曰吾观震旦所有经教惟楞伽四卷可以印心——达磨以楞伽印心。如医之难经句句皆理字字皆法——楞伽如医之难经句句皆理字字皆法。楞伽义辄幽渺文字简古读者或不能句而况遗文以得义忘义以了心者乎——楞伽义幽渺文字简古读者或不能句。此其所以寂寥於世几废而仅存——楞伽经寂寥於世几废而仅存。",
     "master": "苏轼",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-571",
@@ -19296,9 +23148,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "蒋之奇序楞伽经——禅出於佛而玄出於义不以佛废禅不以玄废义则其近之矣——此是蒋之奇对禅与佛玄与义之关系之论述。禅出於佛而玄出於义——禅出自佛玄出自义。不以佛废禅不以玄废义——不以佛废禅不以玄废义。则其近之矣——如此则近之。蒋之奇以孔子调伏弟子为喻——孔子岂有二言哉亦所以调伏之而已——佛说三乘一乘亦是调伏众生。",
     "master": "蒋之奇",
     "source": "楞伽阿跋多罗宝经",
-    "relatedConcepts": ["buddha-nature","self-nature"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["lengqiejing"]
+    "relatedBooks": [
+      "lengqiejing"
+    ]
   },
   {
     "id": "koan-572",
@@ -19308,9 +23165,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "禅门规矩虽与戒律无两样，然衲子家风另是一般规范。禅宗虽不离戒律，然别立禅居、不居律寺，自有其独特之轨度。若能途中受用自然格外清高，如其触向面墙实谓减人瞻敬——禅门清规之设，正在于令衲子有轨可循、有规可依，自然清高而不堕轻慢。",
     "master": "宗赜",
     "source": "禅苑清规序",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-573",
@@ -19320,9 +23184,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丛林之建立根本是为众僧，一切职事皆为众僧而设。长老为开示众僧、首座为表仪众僧、监院为荷负众僧、维那为调和众僧、典座为供养众僧——各职事非为个人权位，而是为安众和合、助道修行。此是禅宗清规之根本精神。",
     "master": "宗赜",
     "source": "禅苑清规·龟镜文",
-    "relatedConcepts": ["conglin-zhidu","qinggui","gui-jing-wen"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui",
+      "gui-jing-wen"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-574",
@@ -19332,9 +23204,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "坐禅之要在莫思量——一切善恶都不要思量。念头起时就觉察，觉察到念头就消失了。久久忘却攀缘，自然打成一片。此是坐禅最核心之方法：不以压制念头为功，而以觉照念头为用。觉之即失——觉照本身即是念头消融之因。久久用功，自然能所双泯、打成一片。",
     "master": "宗赜",
     "source": "禅苑清规·坐禅仪",
-    "relatedConcepts": ["zuochanyi-fa","samadhi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "zuochanyi-fa",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-575",
@@ -19344,9 +23223,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "道行高时魔障也盛，逆顺境界千端万绪。只要保持正念，一切境界都不能留碍。此是宗赜禅师对治魔障之要诀——不以境界为碍，而以正念为盾。正念现前则魔境自消，如日当空则暗自灭。楞严经天台止观圭峰修证仪皆明魔事，学人当预知预备。",
     "master": "宗赜",
     "source": "禅苑清规·坐禅仪",
-    "relatedConcepts": ["zuochanyi-fa","samadhi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "zuochanyi-fa",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-576",
@@ -19356,9 +23242,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "以探珠为喻——探取海底明珠须在静浪之时，若水动则取珠应难。定水澄清则心珠自现，喻禅定成就时自性本心自然显现。不安禅静虑则到这里总是茫然——不在禅定中则无法亲见本心。圆觉经云无碍清净慧皆依禅定生，法华经云安住不动如须弥山，皆明禅定之要。",
     "master": "宗赜",
     "source": "禅苑清规·坐禅仪",
-    "relatedConcepts": ["zuochanyi-fa","samadhi","self-nature"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "zuochanyi-fa",
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-577",
@@ -19368,9 +23262,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "出家之人当以圣默然为宗——神心洞然照了，以默然为宗。既三缄其口，当遵四实语（如实语、不异语、不妄语、不诳语）。窃议政事、私评官寮、讲丰凶、论风俗、工商细务市井闲谈、边鄙兵戈、文章伎艺、衣食货财、自恃己长、隐佗好事、揄扬显过、指摘微瑕——如此游言并伤实德，坐销信施仰愧龙天。",
     "master": "宗赜",
     "source": "禅苑清规·自警文",
-    "relatedConcepts": ["gui-jing-wen"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "gui-jing-wen"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-578",
@@ -19380,9 +23280,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "一生取办尚恐蹉跎岁月，何况迁延度日，将何以敌无始业力？此是宗赜禅师警策精进之语。修行当一生取办，不可迁延——光阴易逝，业力难敌，若不精进，轮回无出。丛林各职事亦当各尽其分，否则有过——丛林不治是上座过、众僧不安是首座过、常住窘乏是监院过。",
     "master": "宗赜",
     "source": "禅苑清规·龟镜文",
-    "relatedConcepts": ["gui-jing-wen","conglin-zhidu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "gui-jing-wen",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-579",
@@ -19392,9 +23299,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈怀海禅师创意别立禅居，不依律寺。其故在于禅宗自达磨至曹溪多居律寺别院，然说法住持未合轨度。百丈所宗非局于大小乘亦非异于大小乘——当博约折中设于制范务其宜。此是禅宗独立于教下之关键——不局不异、博约折中、务其宜也，体现禅宗圆融大小乘而别立禅门之精神。",
     "master": "百丈怀海",
     "source": "禅苑清规·百丈规绳颂",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu","qinggui"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-580",
@@ -19404,9 +23320,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈别立禅居不立佛殿唯搆法堂，其意在表佛祖亲受、当代为尊——禅宗以心传心，不假外像，当代住持即代表佛祖，法堂即传心印之处。入门无佛殿——不以佛像为归；陞座有虚堂——以法堂为说法之处。即此传心印当知是法王——法堂即传心印之所在，住持即法王。",
     "master": "百丈怀海",
     "source": "禅苑清规·百丈规绳颂",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-581",
@@ -19416,9 +23340,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "犯重罪者集众杖之、焚衣钵、逐出偏门——以山藤示耻辱、以偏门示降黜。此条制有四种益：不污清众生恭信心、不毁僧形徇佛制、不扰公门省狱讼、不洩于外护纲宗。然百丈又云：摈逐成何益，安禅不毁僧，公门无狱讼，祖席播嘉声——摈逐非为惩罚，而在安众护法。",
     "master": "百丈怀海",
     "source": "禅苑清规·百丈规绳颂",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-582",
@@ -19428,9 +23360,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "不信天真佛性、来作假比丘混充清众者，即时抽下挂搭摈令出院，去矣莫回头。天真佛即自性本佛——不信自性本佛而混充清众者，非真修行人，当摈出。去矣莫回头——既摈出则莫回头，表决心不再容留。此在安清众、护纲宗。",
     "master": "百丈怀海",
     "source": "禅苑清规·百丈规绳颂",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu","buddha-nature"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-583",
@@ -19440,9 +23381,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "一掬寻常水中有无数微虫——蠢动含灵皆具佛性，再三捞漉便是修行。滤水护生非为细行，实是慈悲——凡夫目不见微虫，天眼则分明。八万四千生在一滴水中，何止千生万生在一掬水中。以此慈悲心滤水护生，即是成佛之因。",
     "master": "宗赜",
     "source": "禅苑清规·新添滤水法",
-    "relatedConcepts": ["lvshui-husheng","buddha-nature"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "lvshui-husheng",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-584",
@@ -19452,9 +23400,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "二比丘向佛所，一人不饮虫水渴死生天见佛得道，一人饮水后至佛所只见黄金丈六躯。佛云：见法者即见我身——以身护戒者即见法身，破戒苟活者只见色身。宁死不亏虫水戒刹那成道澄真常——宁死不犯杀戒，刹那之间成道证真常。此明护戒之功德远胜破戒之苟活。",
     "master": "宗赜",
     "source": "禅苑清规·新添滤水法",
-    "relatedConcepts": ["lvshui-husheng","shoujie-hujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "lvshui-husheng",
+      "shoujie-hujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-585",
@@ -19464,9 +23419,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "沙弥剃头时诵善哉大丈夫偈——赞叹能了世无常弃俗趣泥洹之大丈夫行。落发偈云毁形守志节割爱辞所亲出家弘圣道誓度一切人——明出家之志在毁形守节、割爱辞亲、弘圣道度一切人。最后一结谓之周罗唯佛一人乃能断之——表出家之功德究竟圆满唯佛能尽。",
     "master": "宗赜",
     "source": "禅苑清规·沙弥受戒文",
-    "relatedConcepts": ["shoujie-hujie","shami-shoujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "shoujie-hujie",
+      "shami-shoujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-586",
@@ -19476,9 +23438,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "披袈裟时诵大哉解脱服偈——袈裟是解脱之服、无相福田之衣。披奉如来戒广度诸众生——披袈裟非为装饰，而在披奉如来戒法、广度一切众生。袈裟又名福田衣——众生供养袈裟之人即种福田。此偈明袈裟之功德与出家之本怀。",
     "master": "宗赜",
     "source": "禅苑清规·沙弥受戒文",
-    "relatedConcepts": ["shoujie-hujie","shami-shoujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "shoujie-hujie",
+      "shami-shoujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-587",
@@ -19488,9 +23457,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "八福田——佛法僧父母师长贫穷桥梁疾病——中看病第一。出家之人云游萍寄，一有疾病唯藉同袍慈悲安养。看病之功德最大，因为病人最苦最需关怀。若劝病人专念阿弥陀佛祈生净土，若劝率同袍打磬念之更妙。此明慈悲安养病僧为丛林第一福田。",
     "master": "宗赜",
     "source": "禅苑清规·延寿堂主净头",
-    "relatedConcepts": ["conglin-zhidu","gui-jing-wen"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "gui-jing-wen"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-588",
@@ -19500,9 +23476,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "丛林钟鼓鱼版各有所为——五更鸣大钟警睡眠、厨前打小钟开小静、云版开大静、长版下钵、木鱼集众、三通鼓住持赴堂。从朝至暮钟鼓交参，非唯警悟大众亦乃说法无间——一切音声皆为说法，一切时中皆在警悟。丛林高士各自知时——修行人当知时节因缘，闻声悟道。",
     "master": "宗赜",
     "source": "禅苑清规·警众",
-    "relatedConcepts": ["conglin-zhidu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-589",
@@ -19512,9 +23494,15 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "斋僧以敬为宗——依僧次延迎不得妄生轻重。凡夫肉眼谁辨圣贤——不可分别僧众高下，误起轻心定招薄福。清净福田理应专一——设斋当专一清净不宜杂乱。慎护三业不饮酒食肉——设斋之日当护三业。如此则福德无量。此明斋僧之要在敬与平等。",
     "master": "宗赜",
     "source": "禅苑清规·斋僧仪",
-    "relatedConcepts": ["conglin-zhidu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-590",
@@ -19524,9 +23512,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "住持人之位是代佛扬化、续佛慧命——代佛扬化表异知事，各处一方续佛慧命。当运大心演大法、蕴大德与大行、廓大慈悲作大佛事成大利益。权衡在手纵夺临时——住持之权在权衡纵夺，然规矩准绳故难拟议。令行禁止必在威严，形直影端莫如尊重——住持当以威严令行禁止、以尊重形直影端。",
     "master": "宗赜",
     "source": "禅苑清规·尊宿住持",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-591",
@@ -19536,9 +23531,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百二十问以一生事办否、得人自在否、证大涅槃否为归结——此是修行之终极目标。一生事办——此生修行事业是否成办；得人自在——于人境中是否得自在；证大涅槃——是否证得大涅槃。从初发心敬三宝至证大涅槃，涵盖修行全历程。学人当时时以此三问自省。",
     "master": "宗赜",
     "source": "禅苑清规·一百二十问",
-    "relatedConcepts": ["yibai-ershi-wen","gui-jing-wen"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "yibai-ershi-wen",
+      "gui-jing-wen"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "koan-592",
@@ -19548,9 +23550,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世尊未开金口已说尽法要，文殊一槌击下更不留余地。法王大法本自圆成如如不动，才涉唇吻即落第二义。文殊白椎，世尊下座，如行云流水，当下截断一切分别思量。",
     "master": "文殊师利",
     "source": "敕修百丈清规·法器章",
-    "relatedConcepts": ["faqi-zhangfa","qinggui"],
-    "relatedPersons": ["dehui","baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "faqi-zhangfa",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "koan-593",
@@ -19560,9 +23570,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世人祭祖以牲醴香华，禅门祭祖以自性心印。巴陵三转语透彻云门宗风，云门闻之喜其得人，以真悟为最好供养。清规引此明嗣法师忌之重在激扬宗乘、发扬己悟，非仅世俗追远之文也。",
     "master": "云门文偃",
     "source": "敕修百丈清规·尊祖章",
-    "relatedConcepts": ["qinggui","conglin-zhidu"],
-    "relatedPersons": ["yunmen","dehui"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","yunmen"]
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "yunmen"
+    ]
   },
   {
     "id": "koan-594",
@@ -19572,9 +23591,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈不立佛殿唯立虚堂，僧堂普请天下均力，开中国禅林千古独立之基。司马头陀之预言非仅指山川形胜，实悬指百丈清规将为普天下学人所依止轨范。法王居之，人法相应，千秋师表。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·天下师表阁记",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu","qinggui"],
-    "relatedPersons": ["baizhang","dehui"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-595",
@@ -19584,9 +23613,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "儒家寻觅三代礼乐之盛，不意于禅门丛林日常过堂中亲见。清规以戒律威仪内摄身心，千人共食而寂无杂响，行止步武秩然如一。外显严整礼法，内蕴安详觉照，体现禅宗行住坐卧皆是道场之大机大用。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·欧阳玄叙",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["baizhang","dehui"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "koan-596",
@@ -19596,9 +23633,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈门风以清苦淡泊为宗，农禅并重，自食其力。示寂后大众立碑永禁私置田宅钱谷，防患于未然，断绝贪利争名之源。源头澄澈方保宗风久远，此为禅林永葆清净之金科玉律。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·百丈塔铭",
-    "relatedConcepts": ["baizhang-guisheng","conglin-zhidu","qinggui"],
-    "relatedPersons": ["baizhang","dehui"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-597",
@@ -19608,9 +23655,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "程颢一代理学大儒，见禅寺斋堂威仪而叹三代礼乐犹存。清规以法度摄持身心，行住坐卧皆合轨则，不用世俗礼法而自然合于礼乐之本。此叹非赞佛教，乃叹礼乐之真精神——由内而外、自然而然的秩序之美——竟在禅林得之。",
     "master": "程明道",
     "source": "敕修百丈清规·欧阳玄叙",
-    "relatedConcepts": ["qinggui","conglin-zhidu","zhuli-zhidu"],
-    "relatedPersons": ["dehui"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu",
+      "zhuli-zhidu"
+    ],
+    "relatedPersons": [
+      "dehui"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "koan-598",
@@ -19620,9 +23675,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "司马头陀相地之言，实则预言百丈山因百丈怀海禅师而成为天下禅林之表率。法王非世俗之王，乃法中之王——以法摄众、以德化人者。“天下师表”四字，道尽百丈清规在中国禅宗史上之地位：不仅为一寺之规，更为天下丛林之法式。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·百丈塔铭",
-    "relatedConcepts": ["baizhang-guisheng","qinggui","conglin-zhidu"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-599",
@@ -19632,9 +23696,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "彬林未经火焚而自燃，灵溪正当春汛而枯竭——天地异变，映证大禅师迁化之因缘感应。此非神异之说，乃古人以自然异象寄哀思之笔法，言大师之去，令草木同悲、溪水为之不流。读此当体悟：一代大德之住世，实为天地之宝；其迁化，亦为天地之失。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·百丈塔铭",
-    "relatedConcepts": ["baizhang-guisheng"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-600",
@@ -19644,9 +23715,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈之前，禅僧多寄居律寺，未有别立禅居。百丈怀海折中大小乘律，创立禅门清规——不立佛殿唯树法堂、学众尽入僧堂、行普请法上下均力——使禅宗真正成为独立之宗派。杨亿“禅门独行自此老始”一语，道出百丈在中国禅宗史上之奠基地位：不仅有教理之传，更有制度之立。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·古清规序",
-    "relatedConcepts": ["baizhang-guisheng","qinggui","conglin-zhidu"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-601",
@@ -19656,9 +23736,14 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世尊升座未说一字，文殊白椎便云“法王法如是”——法本如是，何须更说？世尊便下座，印可文殊之白。此为禅宗“不立文字、教外别传”之根本精神：最高之说法即是无说。清规以椎为法器，正是提醒大众：每一次鸣椎，皆是重宣此“法本如是”之旨。",
     "master": "文殊菩萨",
     "source": "敕修百丈清规·法器章",
-    "relatedConcepts": ["faqi-zhangfa","qinggui"],
+    "relatedConcepts": [
+      "faqi-zhangfa",
+      "qinggui"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "koan-602",
@@ -19668,9 +23753,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "百丈怀海以身作则，年高德劭犹随众作务，不作则不食。此非苦行自虐，乃破除僧众依赖之心——修行不在蒲团之上，作务亦是道场。担水劈柴无非妙用，一日不作则一日无以受供。此风一行，禅宗从此不依布施而存，自食其力，独立于世，方有“禅门独行”之根基。",
     "master": "百丈怀海",
     "source": "敕修百丈清规·古清规序",
-    "relatedConcepts": ["baizhang-guisheng","qinggui","conglin-zhidu"],
-    "relatedPersons": ["baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","baizhang"]
+    "relatedConcepts": [
+      "baizhang-guisheng",
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "baizhang"
+    ]
   },
   {
     "id": "koan-603",
@@ -19680,9 +23774,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "欧阳玄以“孝子忠臣”喻德辉，非世俗之忠孝，乃法门之忠孝。孝者，继承百丈遗规、不忘根本；忠者，奉敕重编、校正归一，使清规颁行天下。德辉以一人之力会萃三家清规，删繁补缺，终成定本——此即禅门之“负荷”与“显扬”。修行人亦当如是：既承师法，当以弘传为己任，不负祖意、不枉法化。",
     "master": "德辉",
     "source": "敕修百丈清规·加祖号跋",
-    "relatedConcepts": ["qinggui","conglin-zhidu","zhuli-zhidu"],
-    "relatedPersons": ["dehui","baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu",
+      "zhuli-zhidu"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "koan-604",
@@ -19692,9 +23795,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "虚堂禅师以深山悬崖所拾之物，直指人人本具、亘古不磨的自性真如。最后一声“切忌浑仑吞”，当头棒喝，警示学人切莫将自性当作一个现成的实物在情识知见中囫囵吞下，必须真参实悟方见本来。",
     "master": "虚堂智愚",
     "source": "《虚堂和尚语录》卷一",
-    "relatedConcepts": ["daji-yuanying", "buddha-nature"],
-    "relatedPersons": ["xutang-zhiyu"],
-    "relatedBooks": ["xutangyulu"]
+    "relatedConcepts": [
+      "daji-yuanying",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu"
+    ],
+    "relatedBooks": [
+      "xutangyulu"
+    ]
   },
   {
     "id": "koan-605",
@@ -19704,9 +23814,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三圣与兴化各展宗门大机，虚堂借“占波打鼓大食作舞”照破一切宗门玄奥套路之执念，回归到“有口只吃饭”的平常日用无事风光，平实之中极尽潇洒风流。",
     "master": "虚堂智愚",
     "source": "《虚堂和尚语录》卷一",
-    "relatedConcepts": ["daji-yuanying", "sui-chu-zuo-zhu"],
-    "relatedPersons": ["xutang-zhiyu", "linji"],
-    "relatedBooks": ["xutangyulu"]
+    "relatedConcepts": [
+      "daji-yuanying",
+      "sui-chu-zuo-zhu"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu",
+      "linji"
+    ],
+    "relatedBooks": [
+      "xutangyulu"
+    ]
   },
   {
     "id": "koan-606",
@@ -19716,9 +23834,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "众生自心本如中秋明月般圆满清净、明彻如镜，却偏偏生起千万般机巧妄想与曲折情执（曲如钩）。寒山子的笑与虚堂的答，皆在直指自性本直、何须自扰。",
     "master": "虚堂智愚",
     "source": "《虚堂和尚语录》卷一",
-    "relatedConcepts": ["self-nature", "daji-yuanying"],
-    "relatedPersons": ["xutang-zhiyu"],
-    "relatedBooks": ["xutangyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu"
+    ],
+    "relatedBooks": [
+      "xutangyulu"
+    ]
   },
   {
     "id": "koan-607",
@@ -19728,33 +23853,59 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "佛陀升座默然，已将离言第一义谛全盘托出。文殊白槌只是随顺世俗因缘结案。宏智颂示：玄关早启，何须扬眉瞬目！领会者当下无事，若在言句上寻思，早已落入第二义。",
     "master": "宏智正觉",
     "source": "《宏智正觉禅师广录》卷三",
-    "relatedConcepts": ["momo-wangyan", "zhaozhao-xianqian"],
-    "relatedPersons": ["hongzhi-zhengjue", "wenshu-yuanjue"],
-    "relatedBooks": ["hongzhiyulu"]
+    "relatedConcepts": [
+      "momo-wangyan",
+      "zhaozhao-xianqian"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "koan-608",
     "question": "万叠重关锁不住",
     "answer": "平地波涛忽荡漾，回头始见青天阔。",
-    "context": "学僧参问赵州狗子无佛性因缘，宏智正觉禅师拈颂此案。",
+    "context": "此公案出自《《宏智正觉禅师广录》卷三》。学人就禅门关要参请宏智正觉，问及“万叠重关锁不住”。宏智正觉直以“平地波涛忽荡漾，回头始见青天阔。”答之，不涉浮言，直指心源。",
     "interpretation": "宏智以“万叠重关锁不住”直指人人本具的觉性生机绝非语言知见所能封锁。当狂心顿歇、打破情识葛藤时，如波涛骤息，方见本来青天广大无涯。",
     "master": "宏智正觉",
     "source": "《宏智正觉禅师广录》卷三",
-    "relatedConcepts": ["zhaozhao-xianqian", "self-nature"],
-    "relatedPersons": ["hongzhi-zhengjue", "zhaozhou"],
-    "relatedBooks": ["hongzhiyulu"]
+    "relatedConcepts": [
+      "zhaozhao-xianqian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "koan-609",
     "question": "少林冷坐九年期",
     "answer": "心不可得安心了，一花五叶播清规。",
-    "context": "宏智正觉禅师颂达摩少林面壁与二祖断臂求安心公案。",
+    "context": "此公案出自《《宏智正觉禅师广录》卷六》。学人就禅门关要参请宏智正觉，问及“少林冷坐九年期”。宏智正觉直以“心不可得安心了，一花五叶播清规。”答之，不涉浮言，直指心源。",
     "interpretation": "达摩九年面壁是默照之典范，二祖觅心了不可得是照体之真悟。一默一照、一师一徒，直指心源无生，方启东土禅宗千秋万代之慧命。",
     "master": "宏智正觉",
     "source": "《宏智正觉禅师广录》卷六",
-    "relatedConcepts": ["momo-wangyan", "mozhao-chan-concept"],
-    "relatedPersons": ["hongzhi-zhengjue", "bodhidharma", "huike"],
-    "relatedBooks": ["hongzhiyulu", "anxin"]
+    "relatedConcepts": [
+      "momo-wangyan",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "hongzhiyulu",
+      "anxin"
+    ]
   },
   {
     "id": "koan-610",
@@ -19764,9 +23915,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "三十一位菩萨以言说论述超越二边，文殊以无言之言指示不二，唯独维摩诘以彻底的沉默截断一切戏论言诠，直显离言绝相、如如不动之本来面目。",
     "master": "维摩诘",
     "source": "《注维摩诘经》卷八·入不二法门品",
-    "relatedConcepts": ["ru-bu-er-fa-men", "sheng-zhi-wu-zhi"],
-    "relatedPersons": ["seng-zhao", "jiumoluoshi", "daosheng"],
-    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+    "relatedConcepts": [
+      "ru-bu-er-fa-men",
+      "sheng-zhi-wu-zhi"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi",
+      "daosheng"
+    ],
+    "relatedBooks": [
+      "zhuweimojiejing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "koan-611",
@@ -19776,9 +23937,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "打破众生对空间大小、方所与实体之死执。万法本自性空，随心识显现，故小中见大、大中容小，事事无碍，法尔如是。",
     "master": "维摩诘",
     "source": "《注维摩诘经》卷六·不可思议品",
-    "relatedConcepts": ["ben-ji-yuan-rong", "emptiness"],
-    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
-    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+    "relatedConcepts": [
+      "ben-ji-yuan-rong",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhuweimojiejing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "koan-612",
@@ -19788,9 +23958,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "借外在散花之境检验行者内在心地。菩萨证悟空性、毫无分别法执，故万境不染；声闻虽断烦恼但法爱犹存、畏惧花染袈裟，心生挂碍则物自粘身。",
     "master": "天女",
     "source": "《注维摩诘经》卷七·观众生品",
-    "relatedConcepts": ["ru-bu-er-fa-men", "no-abiding"],
-    "relatedPersons": ["seng-zhao", "jiumoluoshi"],
-    "relatedBooks": ["zhuweimojiejing", "weimojiejing"]
+    "relatedConcepts": [
+      "ru-bu-er-fa-men",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhuweimojiejing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "koan-613",
@@ -19800,9 +23979,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "八识非外来实物，四智亦非心外新得。一念无明妄动即是八识流转，一念回光顿悟自性即是四智圆明。不改本来面目，唯在迷悟一念之间。",
     "master": "无著菩萨",
     "source": "《大乘庄严经论》卷七·菩提品",
-    "relatedConcepts": ["zhuan-shi-cheng-zhi", "si-zhi-san-shen"],
-    "relatedPersons": ["wuzhu-asanga", "huineng"],
-    "relatedBooks": ["dachengzhuangyanjinglun", "tanjing"]
+    "relatedConcepts": [
+      "zhuan-shi-cheng-zhi",
+      "si-zhi-san-shen"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "dachengzhuangyanjinglun",
+      "tanjing"
+    ]
   },
   {
     "id": "koan-614",
@@ -19812,9 +24000,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "诸佛出世唯一大事因缘即是开示悟入佛之知见。小乘偏安化城，大乘方归宝所。若无普度大悲与甚深般若，宇宙间绝无圆满一切种智之佛陀。",
     "master": "弥勒菩萨",
     "source": "《大乘庄严经论》卷二·成宗品",
-    "relatedConcepts": ["zhongdao", "prajna"],
-    "relatedPersons": ["wuzhu-asanga"],
-    "relatedBooks": ["dachengzhuangyanjinglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga"
+    ],
+    "relatedBooks": [
+      "dachengzhuangyanjinglun"
+    ]
   },
   {
     "id": "koan-615",
@@ -19824,9 +24019,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "凡夫行善着相求报，菩萨行度三轮体空。不见能度之我，不见所度之人，不见所修之法，如鸟飞虚空不留痕迹，方名真正到彼岸。",
     "master": "无著菩萨",
     "source": "《大乘庄严经论》卷八·度摄品",
-    "relatedConcepts": ["wu-zhu-nie-pan", "no-abiding"],
-    "relatedPersons": ["wuzhu-asanga"],
-    "relatedBooks": ["dachengzhuangyanjinglun", "jingangjing"]
+    "relatedConcepts": [
+      "wu-zhu-nie-pan",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga"
+    ],
+    "relatedBooks": [
+      "dachengzhuangyanjinglun",
+      "jingangjing"
+    ]
   },
   {
     "id": "koan-616",
@@ -19836,9 +24039,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "武帝死执有为帝王功德与凡圣二见，达摩以廓然无圣彻底荡尽圣解；一句“不识”直指当下一念离名绝相之本来面目，截断一切情识推求。",
     "master": "菩提达摩",
     "source": "《从容录》卷一·第二则",
-    "relatedConcepts": ["jiekuan-chuyan", "emptiness"],
-    "relatedPersons": ["bodhidharma", "wansong-xingxiu", "hongzhi-zhengjue"],
-    "relatedBooks": ["congronglu", "biyanlu"]
+    "relatedConcepts": [
+      "jiekuan-chuyan",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "wansong-xingxiu",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-617",
@@ -19848,9 +24061,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "狂慧行者执着偏空而妄谓无因无果，必然招致轮回大祸；大觉圣者深明缘起不虚、受报分明而心无挂碍染着，是名不昧因果。",
     "master": "百丈怀海",
     "source": "《从容录》卷一·第八则",
-    "relatedConcepts": ["jiekuan-chuyan", "non-duality"],
-    "relatedPersons": ["baizhang", "wansong-xingxiu", "hongzhi-zhengjue"],
-    "relatedBooks": ["congronglu", "biyanlu"]
+    "relatedConcepts": [
+      "jiekuan-chuyan",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "wansong-xingxiu",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-618",
@@ -19860,9 +24083,19 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "两堂争猫是无明情执之病，南泉挥刀是截断天下人舌头之霹雳手段；赵州头顶草鞋打破一切寻常情理是非，于绝处显发真性大活机。",
     "master": "南泉普愿",
     "source": "《从容录》卷一·第九则",
-    "relatedConcepts": ["jiekuan-chuyan", "congrong-an-lu"],
-    "relatedPersons": ["nanquan-puyuan", "zhaozhou", "wansong-xingxiu"],
-    "relatedBooks": ["congronglu", "biyanlu"]
+    "relatedConcepts": [
+      "jiekuan-chuyan",
+      "congrong-an-lu"
+    ],
+    "relatedPersons": [
+      "nanquan-puyuan",
+      "zhaozhou",
+      "wansong-xingxiu"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "biyanlu"
+    ]
   },
   {
     "id": "koan-619",
@@ -19872,9 +24105,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "凡夫向心外求法，执着山河大地为实在客体；圣者洞察一切外境皆如梦幻空华，皆自识所变现。了达无外境，当下妄执顿消，契入唯识真性。",
     "master": "玄奘三藏",
     "source": "《成唯识论》卷一",
-    "relatedConcepts": ["si-fen-shuo", "weishi-yixin"],
-    "relatedPersons": ["xuanzang", "kuiji"],
-    "relatedBooks": ["chengweishilun", "weishiershilun"]
+    "relatedConcepts": [
+      "si-fen-shuo",
+      "weishi-yixin"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "chengweishilun",
+      "weishiershilun"
+    ]
   },
   {
     "id": "koan-620",
@@ -19884,9 +24126,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "心识不需心外另设神明来照察它，心识自能证明自己。如同明灯不仅照耀暗室物象，明灯自身亦天然自明。回光自照即是直见本来自性。",
     "master": "护法菩萨",
     "source": "《成唯识论》卷七",
-    "relatedConcepts": ["si-fen-shuo", "zhuan-shi-cheng-zhi"],
-    "relatedPersons": ["xuanzang", "kuiji"],
-    "relatedBooks": ["chengweishilun"]
+    "relatedConcepts": [
+      "si-fen-shuo",
+      "zhuan-shi-cheng-zhi"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "chengweishilun"
+    ]
   },
   {
     "id": "koan-621",
@@ -19896,9 +24146,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "宗门大悟时即是唯识真见道：能知的心与所知的事物彻底消融，言语道断，心行处灭，直下安住在离二取相之纯然法界之中。",
     "master": "玄奘三藏",
     "source": "《成唯识论》卷九",
-    "relatedConcepts": ["weishi-wuwei", "non-duality"],
-    "relatedPersons": ["xuanzang", "kuiji"],
-    "relatedBooks": ["chengweishilun", "weishisanshilunsong"]
+    "relatedConcepts": [
+      "weishi-wuwei",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "chengweishilun",
+      "weishisanshilunsong"
+    ]
   },
   {
     "id": "koan-622",
@@ -19908,9 +24167,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "千经万论不离自心一窍。无著菩萨繁者化简、以十一品撮要百卷巨著，正是祖师老婆心切，令一切学人径登大乘觉岸。",
     "master": "无著菩萨",
     "source": "《显扬圣教论》卷一",
-    "relatedConcepts": ["san-wu-zi-xing", "weishi-yixin"],
-    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
-    "relatedBooks": ["xianyangshengjiaolun", "shedachenglunben"]
+    "relatedConcepts": [
+      "san-wu-zi-xing",
+      "weishi-yixin"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xianyangshengjiaolun",
+      "shedachenglunben"
+    ]
   },
   {
     "id": "koan-623",
@@ -19920,9 +24188,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "行者若能于日常起心动念处洞见相由妄执、生由缘起，当下放下一切情识抓取，圆成实清净自性自然朗朗现前。",
     "master": "无著菩萨",
     "source": "《显扬圣教论》卷七",
-    "relatedConcepts": ["san-wu-zi-xing", "emptiness"],
-    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
-    "relatedBooks": ["xianyangshengjiaolun", "chengweishilun"]
+    "relatedConcepts": [
+      "san-wu-zi-xing",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xianyangshengjiaolun",
+      "chengweishilun"
+    ]
   },
   {
     "id": "koan-624",
@@ -19932,9 +24209,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "宗门打坐默照亦须定慧等持：孤然寂静而不落无记昏沉，灵明了了而不生散乱妄动，即是止观双运之无上境界。",
     "master": "无著菩萨",
     "source": "《显扬圣教论》卷九",
-    "relatedConcepts": ["cheng-xian-guan", "samadhi"],
-    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
-    "relatedBooks": ["xianyangshengjiaolun"]
+    "relatedConcepts": [
+      "cheng-xian-guan",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xianyangshengjiaolun"
+    ]
   },
   {
     "id": "koan-625",
@@ -19944,9 +24229,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "世间一切功名富贵与身心尘劳皆如空华水月，透脱万法虚妄，当下息灭一切攀缘取舍，于无事安闲中自成圆满解脱。",
     "master": "中峰明本",
     "source": "《天目中峰和尚广录》卷二十",
-    "relatedConcepts": ["huanzhu-sanmei", "sui-chu-zuo-zhu"],
-    "relatedPersons": ["zhongfeng-mingben", "gaofeng-yuanmiao"],
-    "relatedBooks": ["tianmuzhongfengguanglu", "gaofengyulu"]
+    "relatedConcepts": [
+      "huanzhu-sanmei",
+      "sui-chu-zuo-zhu"
+    ],
+    "relatedPersons": [
+      "zhongfeng-mingben",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "tianmuzhongfengguanglu",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "koan-626",
@@ -19956,9 +24250,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "学道切忌枯木坐禅、落入无记昏沉。真正的佛性是在日用应物中活泼泼了了觉照，寂而常照、照而常寂。",
     "master": "中峰明本",
     "source": "《天目中峰和尚广录》卷十二",
-    "relatedConcepts": ["daji-yuanying", "self-nature"],
-    "relatedPersons": ["zhongfeng-mingben", "linji"],
-    "relatedBooks": ["tianmuzhongfengguanglu"]
+    "relatedConcepts": [
+      "daji-yuanying",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhongfeng-mingben",
+      "linji"
+    ],
+    "relatedBooks": [
+      "tianmuzhongfengguanglu"
+    ]
   },
   {
     "id": "koan-627",
@@ -19968,9 +24270,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "念佛非向心外觅佛，一声佛号即是自性光明觉照。以佛号澄净妄心，散乱顿消，当下即是极乐净土。",
     "master": "中峰明本",
     "source": "《天目中峰和尚广录》卷八",
-    "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
-    "relatedPersons": ["zhongfeng-mingben", "yongming-yanshou"],
-    "relatedBooks": ["tianmuzhongfengguanglu"]
+    "relatedConcepts": [
+      "chan-jing-he-yi",
+      "chan-jing-shuangxiu"
+    ],
+    "relatedPersons": [
+      "zhongfeng-mingben",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "tianmuzhongfengguanglu"
+    ]
   },
   {
     "id": "koan-628",
@@ -19980,9 +24290,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "照见五蕴皆空即是度一切苦厄。了知身心世界如泡沫阳焰，不生执取，本来清净自性当下全体现前。",
     "master": "无著菩萨",
     "source": "《大乘阿毘达磨集论》卷二",
-    "relatedConcepts": ["wu-wei-bai-fa", "emptiness"],
-    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
-    "relatedBooks": ["dachengapidamojilun"]
+    "relatedConcepts": [
+      "wu-wei-bai-fa",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "dachengapidamojilun"
+    ]
   },
   {
     "id": "koan-629",
@@ -19992,9 +24310,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "真如本性在凡不减、在圣不增，彻底斩断能取所取之妄见，当下即安住于绝待清净之实际法界。",
     "master": "无著菩萨",
     "source": "《大乘阿毘达磨集论》卷二",
-    "relatedConcepts": ["self-nature", "emptiness"],
-    "relatedPersons": ["wuzhu-asanga", "shiqin"],
-    "relatedBooks": ["dachengapidamojilun"]
+    "relatedConcepts": [
+      "self-nature",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "shiqin"
+    ],
+    "relatedBooks": [
+      "dachengapidamojilun"
+    ]
   },
   {
     "id": "koan-630",
@@ -20004,9 +24330,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "宗门机锋与因明正理同归一心。以清净正见斩除一切文字名相与戏论执着，直显不二真实宗纲。",
     "master": "无著菩萨",
     "source": "《大乘阿毘达磨集论》卷七",
-    "relatedConcepts": ["shi-liu-xing-xiang", "zhuan-shi-cheng-zhi"],
-    "relatedPersons": ["wuzhu-asanga", "xuanzang"],
-    "relatedBooks": ["dachengapidamojilun"]
+    "relatedConcepts": [
+      "shi-liu-xing-xiang",
+      "zhuan-shi-cheng-zhi"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "dachengapidamojilun"
+    ]
   },
   {
     "id": "koan-631",
@@ -20016,9 +24350,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自性超越文字言诠，能见能知之一念清净无染。心心相印无需言句，当下契入不生不灭之寂灭真心。",
     "master": "道原",
     "source": "《景德传灯录》卷一",
-    "relatedConcepts": ["chuan-deng", "mind-transmission"],
-    "relatedPersons": ["daoyuan-monk", "bodhidharma"],
-    "relatedBooks": ["jingdechuandenglu"]
+    "relatedConcepts": [
+      "chuan-deng",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "daoyuan-monk",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "koan-632",
@@ -20028,9 +24370,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "阿难妄想心外另有一法可传，迦叶以随声应答显发当下真性，以放倒刹竿斩断其向外驰求的法执葛藤。",
     "master": "道原",
     "source": "《景德传灯录》卷二",
-    "relatedConcepts": ["dao-que-cha-gan", "chuan-deng"],
-    "relatedPersons": ["daoyuan-monk"],
-    "relatedBooks": ["jingdechuandenglu", "wumenguan"]
+    "relatedConcepts": [
+      "dao-que-cha-gan",
+      "chuan-deng"
+    ],
+    "relatedPersons": [
+      "daoyuan-monk"
+    ],
+    "relatedBooks": [
+      "jingdechuandenglu",
+      "wumenguan"
+    ]
   },
   {
     "id": "koan-633",
@@ -20040,9 +24390,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "禅与净土体用不二。以禅明自心本体，以净土导引归向极乐，理事圆融万不漏一。",
     "master": "永明延寿",
     "source": "《景德传灯录》卷二十七",
-    "relatedConcepts": ["chan-jing-he-yi", "chan-jing-shuangxiu"],
-    "relatedPersons": ["yongming-yanshou", "daoyuan-monk"],
-    "relatedBooks": ["jingdechuandenglu", "tianmuzhongfengguanglu"]
+    "relatedConcepts": [
+      "chan-jing-he-yi",
+      "chan-jing-shuangxiu"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "daoyuan-monk"
+    ],
+    "relatedBooks": [
+      "jingdechuandenglu",
+      "tianmuzhongfengguanglu"
+    ]
   },
   {
     "id": "koan-634",
@@ -20052,9 +24411,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "绝断一切依草附木之知解妄想，无处下口方显本来面目，大死一番自能绝后苏生。",
     "master": "睦州陈尊宿",
     "source": "《古尊宿语录》卷十三",
-    "relatedConcepts": ["shi-zhong-kan-bian", "gu-zun-su"],
-    "relatedPersons": ["ze-zang-zhu", "yunmen"],
-    "relatedBooks": ["guzunsuyulu"]
+    "relatedConcepts": [
+      "shi-zhong-kan-bian",
+      "gu-zun-su"
+    ],
+    "relatedPersons": [
+      "ze-zang-zhu",
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "guzunsuyulu"
+    ]
   },
   {
     "id": "koan-635",
@@ -20064,9 +24431,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自性活佛不假外求，即在目前起心动念与见闻知觉处；若起名相执着，当下便成系缚。",
     "master": "临济义玄",
     "source": "《古尊宿语录》卷十五",
-    "relatedConcepts": ["self-nature", "gu-zun-su"],
-    "relatedPersons": ["linji", "ze-zang-zhu"],
-    "relatedBooks": ["guzunsuyulu", "linji"]
+    "relatedConcepts": [
+      "self-nature",
+      "gu-zun-su"
+    ],
+    "relatedPersons": [
+      "linji",
+      "ze-zang-zhu"
+    ],
+    "relatedBooks": [
+      "guzunsuyulu",
+      "linji"
+    ]
   },
   {
     "id": "koan-636",
@@ -20076,9 +24452,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "打破圣凡情见与高下差别，佛与众生及微贱之物当下同具一心，了无分别而妙用无碍。",
     "master": "黄龙慧南",
     "source": "《古尊宿语录》卷三十四",
-    "relatedConcepts": ["shi-zhong-kan-bian", "daji-yuanying"],
-    "relatedPersons": ["huanglong-huinan", "ze-zang-zhu"],
-    "relatedBooks": ["guzunsuyulu"]
+    "relatedConcepts": [
+      "shi-zhong-kan-bian",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "ze-zang-zhu"
+    ],
+    "relatedBooks": [
+      "guzunsuyulu"
+    ]
   },
   {
     "id": "koan-637",
@@ -20088,9 +24472,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "彻悟本性超越四大肉身生灭，视肉身为客尘，视死生如蜕壳脱屣，直显临济宗金刚铁骨大解脱。",
     "master": "紫柏真可",
     "source": "《紫柏老人全集》卷一",
-    "relatedConcepts": ["zhen-can-shi-wu", "self-nature"],
-    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
-    "relatedBooks": ["zibailaorenquanji"]
+    "relatedConcepts": [
+      "zhen-can-shi-wu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke",
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "zibailaorenquanji"
+    ]
   },
   {
     "id": "koan-638",
@@ -20100,9 +24492,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "悟后起修痛除多生微细烦恼，使行住坐卧动静一如，方能在生死苦海中获得真受用。",
     "master": "紫柏真可",
     "source": "《紫柏老人全集》卷五",
-    "relatedConcepts": ["zhen-can-shi-wu"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibailaorenquanji", "boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "zhen-can-shi-wu"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibailaorenquanji",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "koan-639",
@@ -20112,9 +24511,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "为法忘躯利济众生，打破文字深锁高阁之障，使经教慧命长流人间，为大乘菩萨护法之极则。",
     "master": "紫柏真可",
     "source": "《紫柏老人全集》卷十七",
-    "relatedConcepts": ["fang-ce-zang", "chan-jiao-huitong"],
-    "relatedPersons": ["zibai-zhenke", "hanshan-deqing"],
-    "relatedBooks": ["zibailaorenquanji"]
+    "relatedConcepts": [
+      "fang-ce-zang",
+      "chan-jiao-huitong"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke",
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "zibailaorenquanji"
+    ]
   },
   {
     "id": "koan-640",
@@ -20124,9 +24531,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "将多生习气熟处转生，将清净觉照生处转熟，在妄想极处死力拼去，方显自性本来现成家珍。",
     "master": "憨山德清",
     "source": "《憨山老人梦游集》卷八",
-    "relatedConcepts": ["can-chan-qie-yao", "zhen-can-shi-wu"],
-    "relatedPersons": ["hanshan-deqing"],
-    "relatedBooks": ["hanshanlaorenmengyouji"]
+    "relatedConcepts": [
+      "can-chan-qie-yao",
+      "zhen-can-shi-wu"
+    ],
+    "relatedPersons": [
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "hanshanlaorenmengyouji"
+    ]
   },
   {
     "id": "koan-641",
@@ -20136,9 +24550,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "以禅修反观之力持佛名号，打破能念所念之对立，直证自心清净极乐，理事圆融万修万人去。",
     "master": "憨山德清",
     "source": "《憨山老人梦游集》卷九",
-    "relatedConcepts": ["chan-jing-he-yi", "can-chan-qie-yao"],
-    "relatedPersons": ["hanshan-deqing"],
-    "relatedBooks": ["hanshanlaorenmengyouji"]
+    "relatedConcepts": [
+      "chan-jing-he-yi",
+      "can-chan-qie-yao"
+    ],
+    "relatedPersons": [
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "hanshanlaorenmengyouji"
+    ]
   },
   {
     "id": "koan-642",
@@ -20148,9 +24569,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "为法忘躯承担如来家业，令六祖心法死灰复燃，示现肉身常住昭示大乘解脱之真实不虚。",
     "master": "憨山德清",
     "source": "《憨山老人梦游集》卷十九",
-    "relatedConcepts": ["meng-you-san-mei", "mind-transmission"],
-    "relatedPersons": ["hanshan-deqing", "zibai-zhenke"],
-    "relatedBooks": ["hanshanlaorenmengyouji", "tanjing"]
+    "relatedConcepts": [
+      "meng-you-san-mei",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "hanshan-deqing",
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "hanshanlaorenmengyouji",
+      "tanjing"
+    ]
   },
   {
     "id": "koan-643",
@@ -20160,9 +24590,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自性本体现成无缺，稍生追寻取舍之心即落能所对立；无心于万物，目前处处皆是清净大道。",
     "master": "南泉普愿",
     "source": "《五灯会元》卷五",
-    "relatedConcepts": ["wu-deng-hui-yuan", "self-nature"],
-    "relatedPersons": ["puji", "zhaozhou"],
-    "relatedBooks": ["wudenghuiyuan", "guzunsuyulu"]
+    "relatedConcepts": [
+      "wu-deng-hui-yuan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "puji",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "wudenghuiyuan",
+      "guzunsuyulu"
+    ]
   },
   {
     "id": "koan-644",
@@ -20172,9 +24611,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自性广大涵容十方虚空法界，超越主客依附；一口吸尽西江水，直显独立绝待之无上法身。",
     "master": "马祖道一",
     "source": "《五灯会元》卷四",
-    "relatedConcepts": ["wu-deng-hui-yuan", "daji-yuanying"],
-    "relatedPersons": ["puji", "daoyuan-monk"],
-    "relatedBooks": ["wudenghuiyuan"]
+    "relatedConcepts": [
+      "wu-deng-hui-yuan",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "puji",
+      "daoyuan-monk"
+    ],
+    "relatedBooks": [
+      "wudenghuiyuan"
+    ]
   },
   {
     "id": "koan-645",
@@ -20184,9 +24631,18 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "肉身幻相不离自性法身，而法身超越肉身局限；直下承当不假外求，性相圆融无碍。",
     "master": "洞山良价",
     "source": "《五灯会元》卷九",
-    "relatedConcepts": ["wu-jia-qi-zong", "self-nature"],
-    "relatedPersons": ["dongshan", "puji"],
-    "relatedBooks": ["wudenghuiyuan", "dongshanyulu"]
+    "relatedConcepts": [
+      "wu-jia-qi-zong",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dongshan",
+      "puji"
+    ],
+    "relatedBooks": [
+      "wudenghuiyuan",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "koan-646",
@@ -20196,9 +24652,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "自心灵明本具万法，心外无法；向心内息灭妄想驰求，当下明鉴万里，十方虚空全体洞然。",
     "master": "永明延寿",
     "source": "《宗镜录》卷一",
-    "relatedConcepts": ["zong-jing-lu", "self-nature"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["zongjinglu", "wanshantongguiji"]
+    "relatedConcepts": [
+      "zong-jing-lu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "zongjinglu",
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "koan-647",
@@ -20208,9 +24672,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "以经教为指南印证自心，以禅宗直指透脱文字知解；心口一如，扫除宗门狂慧与教下死执之弊。",
     "master": "永明延寿",
     "source": "《宗镜录》卷一",
-    "relatedConcepts": ["chan-jiao-he-yi", "zong-jing-lu"],
-    "relatedPersons": ["yongming-yanshou", "guifeng-zongmi"],
-    "relatedBooks": ["zongjinglu"]
+    "relatedConcepts": [
+      "chan-jiao-he-yi",
+      "zong-jing-lu"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "zongjinglu"
+    ]
   },
   {
     "id": "koan-648",
@@ -20220,9 +24692,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "修行须在逢缘对境、行住坐卧四威仪中踏实历练，见色闻声皆得明宗，方显真修实悟之金刚骨气。",
     "master": "永明延寿",
     "source": "《宗镜录》卷一",
-    "relatedConcepts": ["zong-jing-lu", "can-chan-qie-yao"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["zongjinglu"]
+    "relatedConcepts": [
+      "zong-jing-lu",
+      "can-chan-qie-yao"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "zongjinglu"
+    ]
   },
   {
     "id": "koan-649",
@@ -20232,9 +24711,17 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "在无心偶合的一声脆响之中，彻底震碎一切文字知解，自性法身全体现前，无须丝毫造作修饰。",
     "master": "香严智闲",
     "source": "《指月录》卷九",
-    "relatedConcepts": ["zhi-yue-lu", "self-nature"],
-    "relatedPersons": ["qu-ruji"],
-    "relatedBooks": ["zhiyuelu", "wudenghuiyuan"]
+    "relatedConcepts": [
+      "zhi-yue-lu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "qu-ruji"
+    ],
+    "relatedBooks": [
+      "zhiyuelu",
+      "wudenghuiyuan"
+    ]
   },
   {
     "id": "koan-650",
@@ -20244,9 +24731,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "山河大地森罗万象无非清净法身之显现，水流风动皆在全副宣说无上妙法，触目菩提无挂无碍。",
     "master": "东林常总",
     "source": "《指月录》卷三十二",
-    "relatedConcepts": ["zhi-yue-lu", "gong-an-song-gu"],
-    "relatedPersons": ["qu-ruji"],
-    "relatedBooks": ["zhiyuelu"]
+    "relatedConcepts": [
+      "zhi-yue-lu",
+      "gong-an-song-gu"
+    ],
+    "relatedPersons": [
+      "qu-ruji"
+    ],
+    "relatedBooks": [
+      "zhiyuelu"
+    ]
   },
   {
     "id": "koan-651",
@@ -20256,9 +24750,16 @@ export const ZEN_KOANS: KoanItem[] = [
     "interpretation": "真如自性正如扑鼻桂花香气一般，现现成成摆在眼前毫无隐瞒；当下承当回光反照即得受用。",
     "master": "晦堂祖心",
     "source": "《指月录》卷三十二",
-    "relatedConcepts": ["zhi-yue-lu", "self-nature"],
-    "relatedPersons": ["qu-ruji"],
-    "relatedBooks": ["zhiyuelu"]
+    "relatedConcepts": [
+      "zhi-yue-lu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "qu-ruji"
+    ],
+    "relatedBooks": [
+      "zhiyuelu"
+    ]
   }
 ];
 

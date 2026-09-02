@@ -55,5 +55,5 @@ Allow: /
 
 # --- 核心 Sitemap 与 LLMs 上下文索引 ---
 Sitemap: https://chanzong.space/sitemap.xml
-# LLMs.txt: https://chanzong.space/llms.txt
-# LLMs-Full.txt: https://chanzong.space/llms-full.txt
+LLMs-Txt: https://chanzong.space/llms.txt
+LLMs-Full-Txt: https://chanzong.space/llms-full.txt
