@@ -1234,21 +1234,4 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '因指见月', pinyin: 'yīn zhǐ jiàn yuè', meaning: '借由语言名相与祖师机锋启发，彻底悟入自心清净本性' },
     { char: '拈古颂古', pinyin: 'niān gǔ sòng gǔ', meaning: '历代禅师对前代公案机锋所作之提撕评唱与诗偈颂古' },
   ],
-  // 121. 南泉普愿禅师语录
-  nanquan: [
-    { char: "无记", pinyin: "wú jì", meaning: "佛教术语，指非善非恶、懵懂无明、不可记别善恶之昏沉状态。" },
-    { char: "顶草鞋", pinyin: "dǐng cǎo xié", meaning: "赵州以草鞋置于顶上，象征本末颠倒、截断两头、无拘无束之脱俗机锋。" }
-  ],
-  // 123. 药山惟俨禅师语录
-  yaoshan: [
-    { char: "兀兀", pinyin: "wù wù", meaning: "端坐静定、安稳不动貌。" }
-  ],
-  // 124. 司空山本净禅师语录
-  benjing: [
-    { char: "司空山", pinyin: "sī kōng shān", meaning: "位于安徽岳西县，二祖慧可曾隐遁避难，本净禅师于此开山弘化。" }
-  ],
-  // 125. 胜鬘夫人狮子吼一乘大便利经
-  shengmanjing: [
-    { char: "胜鬘", pinyin: "shèng mán", meaning: "梵语 Śrīmālā，意为殊胜花鬘，阿育王之女，大乘在家菩萨典范。" }
-  ]
 };
