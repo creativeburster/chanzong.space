@@ -120,7 +120,7 @@ export default function AboutClient() {
                   如发现文本错误、翻译不当、关联遗漏，或有任何建议，欢迎通过以下方式联系：
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-1 text-[15px] text-slate-700">
-                  <li>GitHub Issues: <Link href="https://github.com/gstar-byte/chanzong.space/issues" className="text-amber-700 hover:underline">gstar-byte/chanzong.space</Link></li>
+                  <li>GitHub Issues: <Link prefetch={false} href="https://github.com/gstar-byte/chanzong.space/issues" className="text-amber-700 hover:underline">gstar-byte/chanzong.space</Link></li>
                   <li>邮箱: <a href="mailto:contact@chanzong.space" className="text-amber-700 hover:underline">contact@chanzong.space</a></li>
                 </ul>
                 <p className="text-[15px] leading-relaxed text-slate-700 mt-4">

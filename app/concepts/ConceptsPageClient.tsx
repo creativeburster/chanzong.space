@@ -142,8 +142,7 @@ export default function ConceptsPageClient() {
           {/* Concept List */}
           <div className="space-y-4">
             {visibleConcepts.map((concept) => (
-              <Link
-                key={concept.id}
+              <Link prefetch={false} key={concept.id}
                 href={getHref(`/concepts/${concept.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-emerald-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer block"
               >

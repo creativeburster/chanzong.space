@@ -144,8 +144,7 @@ export default function PersonsPageClient() {
           {/* Person Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {visiblePersons.map((person) => (
-              <Link
-                key={person.id}
+              <Link prefetch={false} key={person.id}
                 href={getHref(`/persons/${person.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-purple-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer"
               >

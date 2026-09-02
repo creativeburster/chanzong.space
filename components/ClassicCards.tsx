@@ -214,7 +214,7 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
         {/* 相关法门的步骤（参考ramanamaharshi.space的实践指导） */}
         {relMethods.map(m => m.steps && m.steps.length > 0 && (
           <div key={m.id}>
-            <Link href={`/methods/${m.id}`} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 hover:text-teal-600 transition-colors">
+            <Link prefetch={false} href={`/methods/${m.id}`} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 hover:text-teal-600 transition-colors">
               <span>🧘 {t(m.title)}</span>
             </Link>
             <div className="space-y-2">
@@ -309,8 +309,7 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
           <div className="p-3 rounded-xl bg-stone-50 border border-stone-200/50 text-center">
             <p className="text-[11px] text-stone-500 font-semibold">{t('作者')}</p>
             {matchedPerson ? (
-              <Link
-                href={`/persons/${matchedPerson.id}`}
+              <Link prefetch={false} href={`/persons/${matchedPerson.id}`}
                 className="text-[14px] font-bold text-blue-800 mt-1 hover:text-blue-600 hover:underline transition-colors block"
               >
                 {t(meta.author)}
@@ -347,8 +346,7 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
             <p className="text-[13px] text-blue-900/80 leading-relaxed line-clamp-3">
               {matchedPerson.teachings}
             </p>
-            <Link
-              href={`/persons/${matchedPerson.id}`}
+            <Link prefetch={false} href={`/persons/${matchedPerson.id}`}
               className="inline-block mt-2 text-[12px] font-semibold text-blue-700 hover:text-blue-500 hover:underline"
             >
               {t('查看完整生平 →')}
@@ -626,8 +624,7 @@ export const RelatedBooksCard: React.FC<{ manifest: ClassicItem[]; currentId: st
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {related.map(book => (
-          <Link
-            key={book.id}
+          <Link prefetch={false} key={book.id}
             href={`/classics/${book.id}`}
             className="p-4 rounded-2xl bg-orange-50/60 border border-orange-200/50 hover:border-orange-400 hover:shadow-md transition-all group"
           >

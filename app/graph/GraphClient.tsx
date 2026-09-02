@@ -482,8 +482,7 @@ export default function GraphClient() {
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.masters.map(m => (
-                                <Link 
-                                  key={m.id} 
+                                <Link prefetch={false} key={m.id} 
                                   href={`/persons/${m.id}`}
                                   className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition shadow-xs"
                                 >
@@ -501,8 +500,7 @@ export default function GraphClient() {
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.classics.map(c => (
-                                <Link 
-                                  key={c.id} 
+                                <Link prefetch={false} key={c.id} 
                                   href={`/classics/${c.id}`}
                                   className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition shadow-xs"
                                 >
@@ -595,8 +593,7 @@ export default function GraphClient() {
                             <div className="text-xs font-bold text-slate-500 mb-2">对应修持法门：</div>
                             <div className="flex flex-wrap gap-2">
                               {path.methods.map((m, i) => (
-                                <Link 
-                                  key={i} 
+                                <Link prefetch={false} key={i} 
                                   href="/methods" 
                                   className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition"
                                 >
@@ -666,8 +663,7 @@ export default function GraphClient() {
                             const b = bookMap.get(bid);
                             if (!b) return null;
                             return (
-                              <Link
-                                key={bid}
+                              <Link prefetch={false} key={bid}
                                 href={`/classics/${bid}`}
                                 className="group p-3.5 rounded-xl border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between space-y-2"
                               >
@@ -731,7 +727,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {manifest.map((b) => (
-                        <Link key={b.id} href={`/classics/${b.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition">
+                        <Link prefetch={false} key={b.id} href={`/classics/${b.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition">
                           {t(b.title)}
                         </Link>
                       ))}
@@ -759,13 +755,13 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_CONCEPTS.slice(0, 120).map((c) => (
-                        <Link key={c.id} href={`/concepts/${c.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition">
+                        <Link prefetch={false} key={c.id} href={`/concepts/${c.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition">
                           {t(c.title)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_CONCEPTS.length > 120 && (
-                      <Link href="/concepts" className="inline-block mt-3 text-xs font-bold text-emerald-700 hover:underline">
+                      <Link prefetch={false} href="/concepts" className="inline-block mt-3 text-xs font-bold text-emerald-700 hover:underline">
                         查看全部 {ZEN_CONCEPTS.length} 个概念 →
                       </Link>
                     )}
@@ -792,7 +788,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_METHODS.map((m) => (
-                        <Link key={m.id} href={`/methods/${m.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition">
+                        <Link prefetch={false} key={m.id} href={`/methods/${m.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition">
                           {t(m.title)}
                         </Link>
                       ))}
@@ -820,7 +816,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_PERSONS.map((p) => (
-                        <Link key={p.id} href={`/persons/${p.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition">
+                        <Link prefetch={false} key={p.id} href={`/persons/${p.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition">
                           {t(p.name)}
                         </Link>
                       ))}
@@ -848,13 +844,13 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_KOANS.slice(0, 60).map((q) => (
-                        <Link key={q.id} href={`/koan/${q.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition max-w-[18rem] truncate">
+                        <Link prefetch={false} key={q.id} href={`/koan/${q.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition max-w-[18rem] truncate">
                           {t(q.question)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_KOANS.length > 60 && (
-                      <Link href="/koan" className="inline-block mt-3 text-xs font-bold text-rose-700 hover:underline">
+                      <Link prefetch={false} href="/koan" className="inline-block mt-3 text-xs font-bold text-rose-700 hover:underline">
                         查看全部 {ZEN_KOANS.length} 则公案 →
                       </Link>
                     )}
@@ -881,13 +877,13 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_FAQS.slice(0, 60).map((f) => (
-                        <Link key={f.id} href={`/faq#${f.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition max-w-[18rem] truncate">
+                        <Link prefetch={false} key={f.id} href={`/faq#${f.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition max-w-[18rem] truncate">
                           {t(f.question)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_FAQS.length > 60 && (
-                      <Link href="/faq" className="inline-block mt-3 text-xs font-bold text-amber-700 hover:underline">
+                      <Link prefetch={false} href="/faq" className="inline-block mt-3 text-xs font-bold text-amber-700 hover:underline">
                         查看全部 {ZEN_FAQS.length} 条问答 →
                       </Link>
                     )}

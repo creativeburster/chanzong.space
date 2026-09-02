@@ -521,8 +521,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           {/* Bottom Pagination */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
             {prevItem ? (
-              <Link
-                href={getHref(`/classics/${prevItem.id}`)}
+              <Link prefetch={false} href={getHref(`/classics/${prevItem.id}`)}
                 className={`w-full sm:w-auto p-4 rounded-2xl ${currentTheme.cardBg} border ${currentTheme.cardBorder} hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center space-x-3 shadow-sm group`}
               >
                 <ChevronLeft className="w-5 h-5 text-amber-800 group-hover:-translate-x-1 transition-transform" />
@@ -536,8 +535,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             ) : <div />}
 
             {nextItem ? (
-              <Link
-                href={getHref(`/classics/${nextItem.id}`)}
+              <Link prefetch={false} href={getHref(`/classics/${nextItem.id}`)}
                 className={`w-full sm:w-auto p-4 rounded-2xl ${currentTheme.cardBg} border ${currentTheme.cardBorder} hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto`}
               >
                 <div>

@@ -163,8 +163,7 @@ export default function SitemapClient() {
                 { title: '经典问答', href: '/faq' },
                 { title: '知识图谱', href: '/graph' },
               ].map((p) => (
-                <Link
-                  key={p.href}
+                <Link prefetch={false} key={p.href}
                   href={p.href}
                   className="px-3.5 py-1.5 rounded-full text-[13px] font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-400 hover:text-amber-800 transition-colors"
                 >
@@ -196,8 +195,7 @@ export default function SitemapClient() {
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Link
-                        href={group.href}
+                      <Link prefetch={false} href={group.href}
                         className={`text-xs font-bold ${group.color} hover:underline`}
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -212,8 +210,7 @@ export default function SitemapClient() {
                     <div className="bg-white p-4 max-h-96 overflow-y-auto">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                         {group.items.map((item) => (
-                          <Link
-                            key={item.id}
+                          <Link prefetch={false} key={item.id}
                             href={item.href}
                             className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors group"
                           >

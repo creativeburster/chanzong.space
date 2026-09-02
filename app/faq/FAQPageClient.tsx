@@ -229,8 +229,7 @@ export default function FAQPageClient() {
 
                       <div className="flex flex-wrap items-center gap-3">
                         {faq.relatedQa && (
-                          <Link
-                            href={getHref(`/koan/${faq.relatedQa}`)}
+                          <Link prefetch={false} href={getHref(`/koan/${faq.relatedQa}`)}
                             className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
                           >
                             <span>{t('参看相关公案')}</span>
@@ -244,8 +243,7 @@ export default function FAQPageClient() {
                               const book = bookMap[bid];
                               if (!book) return null;
                               return (
-                                <Link
-                                  key={bid}
+                                <Link prefetch={false} key={bid}
                                   href={getHref(`/classics/${bid}`)}
                                   className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-zinc-100 text-zinc-600 text-[11px] font-semibold hover:bg-amber-100 hover:text-amber-800 transition-colors"
                                 >

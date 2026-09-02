@@ -40,8 +40,7 @@ export const LinkCardGrid: React.FC<{
     <div className="space-y-3">
       <div className={`grid grid-cols-1 ${colClass} gap-3`}>
         {visibleItems.map((item) => (
-          <Link
-            key={item.id}
+          <Link prefetch={false} key={item.id}
             href={getHref(item.href)}
             className={`p-4 rounded-2xl ${c.bg} border ${c.border} ${c.hoverBorder} hover:shadow-md transition-all group`}
           >
@@ -82,8 +81,7 @@ export const PrevNextNav: React.FC<{
   return (
     <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
       {prev ? (
-        <Link
-          href={getHref(prev.href)}
+        <Link prefetch={false} href={getHref(prev.href)}
           className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center space-x-3 shadow-sm group"
         >
           <span className="text-amber-800 group-hover:-translate-x-1 transition-transform text-lg">‹</span>
@@ -97,8 +95,7 @@ export const PrevNextNav: React.FC<{
       ) : <div />}
 
       {next ? (
-        <Link
-          href={getHref(next.href)}
+        <Link prefetch={false} href={getHref(next.href)}
           className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto"
         >
           <div>

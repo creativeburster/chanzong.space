@@ -32,7 +32,7 @@ export const TopHeader: React.FC = () => {
         <Menu className="w-5 h-5" />
       </button>
 
-      <Link href={getHref('/')} className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
+      <Link prefetch={false} href={getHref('/')} className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
         "{t('直指人心，见性成佛；教外别传，不立文字。')}"
       </Link>
 

@@ -2,9 +2,9 @@
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref } from '@/lib/opencc';
+import { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref, ensureOpenCC } from '@/lib/opencc';
 
-export { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref };
+export { convertToTrad, convertToSimp, convertHtmlToTrad, getLocalizedHref, ensureOpenCC };
 
 interface LangContextType {
   isTraditional: boolean;
@@ -43,6 +43,13 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
     if (isZhTwPath || initialTraditional) {
       setIsTraditional(true);
       document.documentElement.lang = 'zh-Hant';
+      if (typeof window !== 'undefined') {
+        if ('requestIdleCallback' in window) {
+          (window as any).requestIdleCallback(() => ensureOpenCC());
+        } else {
+          setTimeout(ensureOpenCC, 1500);
+        }
+      }
       return;
     }
     try {
@@ -51,6 +58,13 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
         const val = saved === 'true';
         setIsTraditional(val);
         document.documentElement.lang = val ? 'zh-Hant' : 'zh-Hans';
+        if (val && typeof window !== 'undefined') {
+          if ('requestIdleCallback' in window) {
+            (window as any).requestIdleCallback(() => ensureOpenCC());
+          } else {
+            setTimeout(ensureOpenCC, 1500);
+          }
+        }
       }
     } catch {
       // 兼容非浏览器环境
@@ -60,6 +74,9 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
   const toggleLang = useCallback(() => {
     setIsTraditional((prev) => {
       const next = !prev;
+      if (next) {
+        ensureOpenCC();
+      }
       try {
         localStorage.setItem('zen_is_traditional', String(next));
         document.documentElement.lang = next ? 'zh-Hant' : 'zh-Hans';

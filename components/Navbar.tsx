@@ -13,7 +13,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-zinc-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center space-x-3 group">
+        <Link prefetch={false} href="/" className="flex items-center space-x-3 group">
           <div className="w-9 h-9 rounded-xl bg-amber-900/10 border border-amber-900/20 flex items-center justify-center text-amber-800 group-hover:scale-105 transition-transform">
             <Feather className="w-5 h-5" />
           </div>
@@ -29,11 +29,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-700">
-          <Link href="/" className="hover:text-amber-800 transition-colors flex items-center space-x-1.5">
+          <Link prefetch={false} href="/" className="hover:text-amber-800 transition-colors flex items-center space-x-1.5">
             <BookOpen className="w-4 h-4 text-amber-700" />
             <span>典籍大库</span>
           </Link>
-          <Link href="#lineage" className="hover:text-amber-800 transition-colors flex items-center space-x-1.5">
+          <Link prefetch={false} href="#lineage" className="hover:text-amber-800 transition-colors flex items-center space-x-1.5">
             <GitFork className="w-4 h-4 text-amber-700" />
             <span>祖师法脉</span>
           </Link>

@@ -190,8 +190,7 @@ export default function BooksClient() {
           {/* Book Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {visibleBooks.map((item) => (
-              <Link
-                key={item.id}
+              <Link prefetch={false} key={item.id}
                 href={getHref(`/classics/${item.id}`)}
                 className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
               >

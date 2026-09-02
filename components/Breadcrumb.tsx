@@ -48,8 +48,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
                 <ChevronRight className="w-3.5 h-3.5 text-slate-400 mx-0.5 shrink-0" />
               )}
               {item.href && !isLast ? (
-                <Link
-                  href={getHref(item.href)}
+                <Link prefetch={false} href={getHref(item.href)}
                   className="hover:text-amber-800 transition-colors inline-flex items-center gap-1"
                 >
                   {idx === 0 && <Home className="w-3.5 h-3.5" />}

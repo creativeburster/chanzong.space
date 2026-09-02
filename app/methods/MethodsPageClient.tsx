@@ -141,8 +141,7 @@ export default function MethodsPageClient() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {visibleMethods.map((method) => (
-              <Link
-                key={method.id}
+              <Link prefetch={false} key={method.id}
                 href={getHref(`/methods/${method.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-sky-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer block"
               >
