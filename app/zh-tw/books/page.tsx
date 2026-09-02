@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: `收錄${STATS.classics}部禪宗核心典籍，含原文、白話翻譯與公案提取。`,
     url: 'https://chanzong.space/zh-tw/books',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

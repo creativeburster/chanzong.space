@@ -5,6 +5,25 @@ import { convertToTrad } from '@/lib/opencc';
 
 interface PageProps { params: { id: string } }
 
+function EntityJsonLd({ item }: { item: any }) {
+  const name = convertToTrad(String(item.title || ''));
+  const desc = convertToTrad(String(item.summary || '')).replace(/\s+/g, ' ').slice(0, 160);
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    description: desc,
+    url: `https://chanzong.space/zh-tw/methods/${item.id}`,
+    inLanguage: 'zh-TW',
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export function generateStaticParams() {
   return ZEN_METHODS.map((x: any) => ({ id: x.id }));
 }
@@ -27,7 +46,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
     openGraph: {
       type: 'article',
-      title: `${name} · 法門 | 禪宗知識庫`,
+      title: `${name} · 法門 | 禪宗知識庫 ChanZong.space`,
       description: desc.slice(0, 150) || '法門條目',
       url: `https://chanzong.space/zh-tw/methods/${params.id}`,
       siteName: '禪宗知識庫',
@@ -39,5 +58,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
 export default function TradMethodDetailPage({ params }: PageProps) {
   const item = ZEN_METHODS.find((x: any) => x.id === params.id);
   if (!item) return null;
-  return <MethodDetailPageClient params={params} />;
+  return (
+    <>
+      <EntityJsonLd item={item} />
+      <MethodDetailPageClient params={params} />
+    </>
+  );
 }

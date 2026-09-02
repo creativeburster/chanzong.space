@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: '禪宗知識庫全站內容索引。',
     url: 'https://chanzong.space/zh-tw/sitemap',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

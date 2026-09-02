@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: `禪宗${STATS.koans}則公案——古德機鋒對決與祖師開悟因緣。`,
     url: 'https://chanzong.space/zh-tw/koan',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

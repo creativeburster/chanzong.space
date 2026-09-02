@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description: `禪宗${STATS.faqs}條問答——公案解讀、義理辨析與修證疑問。`,
     url: 'https://chanzong.space/zh-tw/faq',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

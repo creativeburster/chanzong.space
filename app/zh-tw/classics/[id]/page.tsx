@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { getClassicById, getManifest } from '@/lib/data';
 import { ClassicViewer } from '@/app/classics/[id]/ClassicViewer';
 import { marked } from 'marked';
-import { ZEN_FAQS } from '@/lib/taxonomy';
 import { convertToTrad, convertHtmlToTrad } from '@/lib/opencc';
 
 interface PageProps {

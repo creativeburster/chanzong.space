@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: '禪宗知識庫的編輯原則、文本來源與版權聲明。',
     url: 'https://chanzong.space/zh-tw/about',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

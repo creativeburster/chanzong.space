@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: `禪宗${STATS.persons}位禪門人物傳記、悟道因緣與教學風格。`,
     url: 'https://chanzong.space/zh-tw/persons',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

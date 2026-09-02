@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: `禪宗${STATS.concepts}個核心概念詳解，涵蓋心性、境界、修證、教理四大類。`,
     url: 'https://chanzong.space/zh-tw/concepts',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

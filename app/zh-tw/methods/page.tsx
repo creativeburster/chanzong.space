@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: `禪宗${STATS.methods}種修持法門——禪門實修方便與用功方法詳解。`,
     url: 'https://chanzong.space/zh-tw/methods',
     locale: 'zh_TW',
+    siteName: '禪宗知識庫',
   },
 };
 

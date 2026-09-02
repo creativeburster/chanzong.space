@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
+import { STATS } from '@/lib/stats';
 const SITE_URL = 'https://chanzong.space';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     default: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
     template: '%s | 禅宗知识库 ChanZong.space',
   },
-  description: '禅宗知识库（chanzong.space）——收录79部禅宗核心典籍，含397个概念、566则公案、190位祖师、89种修持法门、1701条问答。从达摩四论、六祖坛经到无门关、碧岩录，传承顿悟见性之道。',
+  description: `禅宗知识库（chanzong.space）——收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种修持法门、${STATS.faqs}条问答。从达摩四论、六祖坛经到无门关、碧岩录，传承顿悟见性之道。`,
   keywords: ['禅宗', '禅宗知识库', '六祖坛经', '达摩四论', '黄檗传心法要', '无门关', '碧岩录', '禅关策进', '大乘起信论', '公案', '禅宗典籍', 'ChanZong', 'Zen Buddhism', '见性成佛', '顿悟', '止观', '看话头', '参禅', '禅修', '祖师语录'],
   manifest: '/manifest.json',
   metadataBase: new URL(SITE_URL),
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     siteName: '禅宗知识库',
     title: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
-    description: '收录79部禅宗核心典籍，含397个概念、566则公案、190位祖师、89种法门、1701条问答。传承顿悟见性之道。',
+    description: `收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种法门、${STATS.faqs}条问答。传承顿悟见性之道。`,
     url: SITE_URL,
     images: [
       {
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
-    description: '收录79部禅宗核心典籍，含397个概念、566则公案、190位祖师、89种法门。',
+    description: `收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种法门。`,
     images: ['/logo-nianhua-new.jpg'],
   },
   icons: {
@@ -72,24 +73,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: '禅宗知识库',
-    alternateName: 'ChanZong.space',
-    url: SITE_URL,
-    description: '收录79部禅宗核心典籍，含397个概念、566则公案、190位祖师、89种法门、1701条问答。传承顿悟见性之道。',
-    inLanguage: 'zh-CN',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/books`,
-      },
-      'query-input': 'required name=search-term-string',
-    },
-  };
-
   return (
     <html lang="zh-CN" className="scroll-smooth">
       <head>
@@ -97,10 +80,6 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <meta name="theme-color" content="#0F172A" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
         <LangProvider>
