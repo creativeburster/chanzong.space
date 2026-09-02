@@ -222,9 +222,13 @@ class ZenAudioEngine {
   }
 
   /**
-   * 6. 自然天籁白噪音程序化合成 (雨声、溪流、松涛)
+   * 6. 自然与禅房天籁 8 大白噪音实时数学合成
    */
-  setSoundscape(type: 'rain' | 'stream' | 'wind', active: boolean, volume: number = 0.3) {
+  setSoundscape(
+    type: 'rain' | 'stream' | 'wind' | 'bell' | 'fire' | 'insects' | 'tide' | 'windchime',
+    active: boolean,
+    volume: number = 0.3
+  ) {
     const ctx = this.getContext();
     if (!ctx) return;
 
@@ -247,22 +251,21 @@ class ZenAudioEngine {
         return;
       }
 
-      // 生成 5 秒粉红/白噪声循环缓冲
-      const bufferSize = ctx.sampleRate * 5;
+      // 生成 6 秒高保真粉红/白噪声循环缓冲
+      const bufferSize = ctx.sampleRate * 6;
       const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
       const data = buffer.getChannelData(0);
       let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
 
       for (let i = 0; i < bufferSize; i++) {
         const white = Math.random() * 2 - 1;
-        // Paul Kellet's Pink Noise algorithm
         b0 = 0.99886 * b0 + white * 0.0555179;
         b1 = 0.99332 * b1 + white * 0.0750759;
         b2 = 0.96900 * b2 + white * 0.1538520;
         b3 = 0.86650 * b3 + white * 0.3104856;
         b4 = 0.55000 * b4 + white * 0.5329522;
         b5 = -0.7616 * b5 - white * 0.0168980;
-        data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.05;
+        data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.06;
         b6 = white * 0.115926;
       }
 
@@ -273,14 +276,36 @@ class ZenAudioEngine {
       const filter = ctx.createBiquadFilter();
       if (type === 'rain') {
         filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(1000, ctx.currentTime);
+        filter.frequency.setValueAtTime(1100, ctx.currentTime);
       } else if (type === 'stream') {
         filter.type = 'bandpass';
-        filter.frequency.setValueAtTime(800, ctx.currentTime);
-        filter.Q.setValueAtTime(1.5, ctx.currentTime);
-      } else { // wind
+        filter.frequency.setValueAtTime(750, ctx.currentTime);
+        filter.Q.setValueAtTime(1.4, ctx.currentTime);
+      } else if (type === 'wind') {
         filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(450, ctx.currentTime);
+        filter.frequency.setValueAtTime(380, ctx.currentTime);
+      } else if (type === 'bell') {
+        // 晚钟共鸣音 (108Hz 泛音)
+        filter.type = 'bandpass';
+        filter.frequency.setValueAtTime(108, ctx.currentTime);
+        filter.Q.setValueAtTime(8.0, ctx.currentTime);
+      } else if (type === 'fire') {
+        // 薪火微暖爆裂
+        filter.type = 'highpass';
+        filter.frequency.setValueAtTime(1400, ctx.currentTime);
+      } else if (type === 'insects') {
+        // 夏夜流萤虫鸣
+        filter.type = 'bandpass';
+        filter.frequency.setValueAtTime(4500, ctx.currentTime);
+        filter.Q.setValueAtTime(6.0, ctx.currentTime);
+      } else if (type === 'tide') {
+        // 大江潮音
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(280, ctx.currentTime);
+      } else { // windchime 风铃
+        filter.type = 'bandpass';
+        filter.frequency.setValueAtTime(2600, ctx.currentTime);
+        filter.Q.setValueAtTime(9.0, ctx.currentTime);
       }
 
       const gain = ctx.createGain();

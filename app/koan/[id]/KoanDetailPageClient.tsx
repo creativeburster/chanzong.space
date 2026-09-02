@@ -1,5 +1,6 @@
 'use client';
 
+import { ReadingThemeBar } from '@/components/ReadingThemeBar';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';

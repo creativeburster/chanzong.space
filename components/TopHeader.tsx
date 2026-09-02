@@ -33,7 +33,7 @@ export const TopHeader: React.FC = () => {
         <Menu className="w-5 h-5" />
       </button>
 
-      <Link prefetch={false} href={getHref('/')} className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
+      <Link prefetch={true} href={getHref('/')} className="text-[15px] font-semibold text-slate-300 font-serif-zen italic hidden lg:block tracking-wide hover:text-white transition-colors">
         "{t('直指人心，见性成佛；教外别传，不立文字。')}"
       </Link>
 
@@ -42,7 +42,7 @@ export const TopHeader: React.FC = () => {
         {navLinks.map((link) => (
           <Link
             key={link.href}
-            prefetch={false}
+            prefetch={true}
             href={link.href}
             className={`transition-all py-1.5 px-1 ${
               pathname === link.href
