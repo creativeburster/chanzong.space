@@ -28,7 +28,7 @@ export default function FAQPageClient() {
   const [displayCount, setDisplayCount] = useState(10);
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
   const bookRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const allFaqs: FAQEntry[] = useMemo(() => ZEN_FAQS.map(f => ({ ...f })), []);
 
@@ -230,7 +230,7 @@ export default function FAQPageClient() {
                       <div className="flex flex-wrap items-center gap-3">
                         {faq.relatedQa && (
                           <Link
-                            href={`/koan/${faq.relatedQa}`}
+                            href={getHref(`/koan/${faq.relatedQa}`)}
                             className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
                           >
                             <span>{t('参看相关公案')}</span>
@@ -246,7 +246,7 @@ export default function FAQPageClient() {
                               return (
                                 <Link
                                   key={bid}
-                                  href={`/classics/${bid}`}
+                                  href={getHref(`/classics/${bid}`)}
                                   className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-zinc-100 text-zinc-600 text-[11px] font-semibold hover:bg-amber-100 hover:text-amber-800 transition-colors"
                                 >
                                   <BookOpen className="w-3 h-3" />

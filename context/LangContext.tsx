@@ -28,16 +28,19 @@ const LangContext = createContext<LangContextType>({
   getHref: (href: string) => href,
 });
 
-export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditional?: boolean }> = ({
+  children,
+  initialTraditional,
+}) => {
   const pathname = usePathname();
   const router = useRouter();
-  const isZhTwPath = pathname?.startsWith('/zh-tw');
+  const isZhTwPath = pathname?.startsWith('/zh-tw') || initialTraditional;
 
-  const [isTraditional, setIsTraditional] = useState(false);
+  const [isTraditional, setIsTraditional] = useState<boolean>(Boolean(initialTraditional || isZhTwPath));
 
   // 初始化根据 URL 或 localStorage 读取用户偏好
   useEffect(() => {
-    if (isZhTwPath) {
+    if (isZhTwPath || initialTraditional) {
       setIsTraditional(true);
       document.documentElement.lang = 'zh-Hant';
       return;
@@ -52,7 +55,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
     } catch {
       // 兼容非浏览器环境
     }
-  }, [isZhTwPath]);
+  }, [isZhTwPath, initialTraditional]);
 
   const toggleLang = useCallback(() => {
     setIsTraditional((prev) => {

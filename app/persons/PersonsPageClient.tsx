@@ -19,7 +19,7 @@ export default function PersonsPageClient() {
   const [activeEra, setActiveEra] = useState('全部');
   const [eraDropdownOpen, setEraDropdownOpen] = useState(false);
   const eraRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const eras = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_PERSONS.map((p) => p.era)))],
@@ -146,7 +146,7 @@ export default function PersonsPageClient() {
             {visiblePersons.map((person) => (
               <Link
                 key={person.id}
-                href={`/persons/${person.id}`}
+                href={getHref(`/persons/${person.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-purple-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer"
               >
                 <div>

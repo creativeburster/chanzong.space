@@ -23,7 +23,7 @@ interface PageProps {
 
 export default function KoanDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const qa = ZEN_KOANS.find((q) => q.id === params.id);
   if (!qa) {

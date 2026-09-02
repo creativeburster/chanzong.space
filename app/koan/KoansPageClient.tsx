@@ -19,7 +19,7 @@ export default function KoansPageClient() {
   const [activeMaster, setActiveMaster] = useState('全部');
   const [masterDropdownOpen, setMasterDropdownOpen] = useState(false);
   const masterRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const masters = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_KOANS.map((k) => k.master)))],
@@ -144,7 +144,7 @@ export default function KoansPageClient() {
           {/* Koan List */}
           <div className="space-y-6">
             {visibleKoans.map((qa) => (
-              <Link href={`/koan/${qa.id}`} key={qa.id} className="block group">
+              <Link href={getHref(`/koan/${qa.id}`)} key={qa.id} className="block group">
                 <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm group-hover:border-rose-600/50 group-hover:shadow-md transition-all space-y-4">
                   <div className="flex items-start space-x-3">
                     <span className="px-2.5 py-1 rounded-lg bg-rose-100 text-rose-800 font-bold text-xs shrink-0">

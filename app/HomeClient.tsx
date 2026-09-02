@@ -19,6 +19,7 @@ import {
 } from '@/lib/featured';
 import { ChevronRight, Gem, BookOpen, Compass, MessageSquare, Users, Lightbulb } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
+import { useLang } from '@/context/LangContext';
 
 const LineageGraph = dynamic(
   () => import('@/components/LineageGraph').then((m) => m.LineageGraph),
@@ -43,6 +44,7 @@ const formatCount = (n: number) => {
 
 export default function HomeClient() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const { t, getHref } = useLang();
 
   const featuredClassics = ['tanjing', 'huangbo', 'wumenguan', 'linji', 'xinxinming', 'changuancejin']
     .map(id => manifest.find(m => m.id === id))
@@ -67,16 +69,16 @@ export default function HomeClient() {
           {/* Header Tagline & Hero */}
           <div className="text-center mb-10">
             <p className="text-base text-slate-800 font-serif-zen tracking-wide mb-4 leading-relaxed">
-              千载祖师心印 · 顿悟见性之道
+              {t('千载祖师心印 · 顿悟见性之道')}
             </p>
 
             <h1 className="text-3xl sm:text-4xl font-bold font-serif-zen text-slate-900 tracking-tight flex items-center justify-center space-x-3 mb-3">
               <Image src="/favicon.png" alt="拈花微笑" width={48} height={48} className="w-12 h-12 object-contain" priority />
-              <span>禅宗知识库</span>
+              <span>{t('禅宗知识库')}</span>
             </h1>
 
             <p className="text-base text-slate-800 font-serif-zen max-w-2xl mx-auto leading-relaxed">
-              传承自西天二十八祖与东土达摩、六祖、马祖、黄檗、永嘉诸祖 · 自我了悟见性之道
+              {t('传承自西天二十八祖与东土达摩、六祖、马祖、黄檗、永嘉诸祖 · 自我了悟见性之道')}
             </p>
           </div>
 
@@ -91,10 +93,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <BookOpen className="w-4 h-4 text-amber-700" />
-                <span>经典著作精选</span>
+                <span>{t('经典著作精选')}</span>
               </h2>
-              <Link prefetch={false} href="/books" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.classics} 部 →
+              <Link prefetch={false} href={getHref('/books')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {STATS.classics} {t('部')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -102,23 +104,23 @@ export default function HomeClient() {
                 <Link
                   key={item.id}
                   prefetch={false}
-                  href={`/classics/${item.id}`}
+                  href={getHref(`/classics/${item.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-800">
-                        {item.category}
+                        {t(item.category)}
                       </span>
                       <span className="text-xs text-slate-500 font-mono">#{item.idx}</span>
                     </div>
                     <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-1">
-                      {item.title}
+                      {t(item.title)}
                     </h3>
-                    <p className="text-base text-slate-600 mb-3">{item.author}</p>
+                    <p className="text-base text-slate-600 mb-3">{t(item.author)}</p>
                   </div>
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-amber-800 font-bold">
-                    <span>研读原文</span>
+                    <span>{t('研读原文')}</span>
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -131,10 +133,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Gem className="w-4 h-4 text-emerald-600" />
-                <span>核心概念精选</span>
+                <span>{t('核心概念精选')}</span>
               </h2>
-              <Link prefetch={false} href="/concepts" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.concepts} 概念 →
+              <Link prefetch={false} href={getHref('/concepts')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {STATS.concepts} {t('概念')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -142,22 +144,22 @@ export default function HomeClient() {
                 <Link
                   key={concept.id}
                   prefetch={false}
-                  href={`/concepts/${concept.id}`}
+                  href={getHref(`/concepts/${concept.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-emerald-600/50 hover:shadow-sm transition-all group"
                 >
                   <div className="flex items-center justify-between mb-1.5">
                     <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-emerald-800 transition-colors">
-                      {concept.title}
+                      {t(concept.title)}
                     </h3>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">
-                      {concept.category}
+                      {t(concept.category)}
                     </span>
                   </div>
                   <p className="text-base text-slate-600 leading-relaxed font-normal mb-3 line-clamp-3">
-                    {concept.summary}
+                    {t(concept.summary)}
                   </p>
                   <div className="text-xs text-slate-500 font-medium border-t border-slate-100 pt-2">
-                    出处：{concept.classicRef}
+                    {t('出处')}：{t(concept.classicRef)}
                   </div>
                 </Link>
               ))}
@@ -169,10 +171,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Compass className="w-4 h-4 text-sky-600" />
-                <span>修持法门精选</span>
+                <span>{t('修持法门精选')}</span>
               </h2>
-              <Link prefetch={false} href="/methods" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.methods} 法门 →
+              <Link prefetch={false} href={getHref('/methods')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {STATS.methods} {t('法门')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -180,14 +182,14 @@ export default function HomeClient() {
                 <Link
                   key={m.id}
                   prefetch={false}
-                  href={`/methods/${m.id}`}
+                  href={getHref(`/methods/${m.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-sky-600/50 hover:shadow-sm transition-all group"
                 >
                   <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-sky-800 transition-colors mb-2">
-                    {m.title}
+                    {t(m.title)}
                   </h3>
                   <p className="text-base text-slate-600 leading-relaxed line-clamp-3">
-                    {m.summary}
+                    {t(m.summary)}
                   </p>
                 </Link>
               ))}
@@ -199,10 +201,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <MessageSquare className="w-4 h-4 text-rose-600" />
-                <span>公案精选</span>
+                <span>{t('公案精选')}</span>
               </h2>
-              <Link prefetch={false} href="/koan" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.koans} 则公案 →
+              <Link prefetch={false} href={getHref('/koan')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {STATS.koans} {t('则公案')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -210,16 +212,16 @@ export default function HomeClient() {
                 <Link
                   key={k.id}
                   prefetch={false}
-                  href={`/koan/${k.id}`}
+                  href={getHref(`/koan/${k.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-rose-600/50 hover:shadow-sm transition-all group"
                 >
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-rose-800 transition-colors">
-                      {k.question}
+                      {t(k.question)}
                     </h3>
                   </div>
                   <p className="text-base text-slate-500">
-                    {k.master} · {k.source}
+                    {t(k.master)} · {t(k.source)}
                   </p>
                 </Link>
               ))}
@@ -231,10 +233,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Users className="w-4 h-4 text-purple-600" />
-                <span>禅门人物精选</span>
+                <span>{t('禅门人物精选')}</span>
               </h2>
-              <Link prefetch={false} href="/persons" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {STATS.persons} 位人物 →
+              <Link prefetch={false} href={getHref('/persons')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {STATS.persons} {t('位人物')} →
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -242,13 +244,13 @@ export default function HomeClient() {
                 <Link
                   key={p.id}
                   prefetch={false}
-                  href={`/persons/${p.id}`}
+                  href={getHref(`/persons/${p.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-purple-600/50 hover:shadow-sm transition-all group text-center"
                 >
                   <h3 className="text-lg font-bold font-serif-zen text-slate-900 group-hover:text-purple-800 transition-colors mb-1">
-                    {p.name}
+                    {t(p.name)}
                   </h3>
-                  <p className="text-xs text-slate-500">{p.title}</p>
+                  <p className="text-xs text-slate-500">{t(p.title)}</p>
                 </Link>
               ))}
             </div>
@@ -259,10 +261,10 @@ export default function HomeClient() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800">
                 <Lightbulb className="w-4 h-4 text-amber-600" />
-                <span>问答精选</span>
+                <span>{t('问答精选')}</span>
               </h2>
-              <Link prefetch={false} href="/faq" className="text-xs text-amber-800 font-bold hover:underline">
-                查看全部 {formatCount(STATS.faqs)} 条 →
+              <Link prefetch={false} href={getHref('/faq')} className="text-xs text-amber-800 font-bold hover:underline">
+                {t('查看全部')} {formatCount(STATS.faqs)} {t('条')} →
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -270,14 +272,14 @@ export default function HomeClient() {
                 <Link
                   key={f.id}
                   prefetch={false}
-                  href={`/faq#${f.id}`}
+                  href={getHref(`/faq#${f.id}`)}
                   className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/50 hover:shadow-sm transition-all group"
                 >
                   <h3 className="text-base font-bold font-serif-zen text-slate-900 group-hover:text-amber-800 transition-colors mb-2 leading-relaxed">
-                    {f.question}
+                    {t(f.question)}
                   </h3>
                   <p className="text-base text-slate-600 leading-relaxed line-clamp-2">
-                    {f.answer}
+                    {t(f.answer)}
                   </p>
                 </Link>
               ))}

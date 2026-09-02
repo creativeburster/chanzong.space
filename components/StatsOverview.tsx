@@ -1,6 +1,9 @@
+'use client';
+
+import React from 'react';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import { STATS } from '@/lib/stats';
+import { useLang } from '@/context/LangContext';
 
 const formatCount = (n: number) => {
   if (n >= 1000) {
@@ -11,13 +14,15 @@ const formatCount = (n: number) => {
 };
 
 export const StatsOverview = () => {
+  const { t, getHref } = useLang();
+
   const stats = [
-    { num: `${STATS.classics}`, label: '核心著作', action: '查看全部', href: '/books' },
-    { num: `${STATS.concepts}`, label: '核心概念', action: '探索概念', href: '/concepts' },
-    { num: `${STATS.methods}`, label: '修持法门', action: '修持法门', href: '/methods' },
-    { num: `${STATS.koans}`, label: '公案', action: '参究公案', href: '/koan' },
-    { num: formatCount(STATS.faqs), label: '经典问答', action: '阅读问答', href: '/faq' },
-    { num: `${STATS.persons}`, label: '关键人物', action: '阅读传记', href: '/persons' },
+    { num: `${STATS.classics}`, label: t('核心著作'), action: t('查看全部'), href: '/books' },
+    { num: `${STATS.concepts}`, label: t('核心概念'), action: t('探索概念'), href: '/concepts' },
+    { num: `${STATS.methods}`, label: t('修持法门'), action: t('修持法门'), href: '/methods' },
+    { num: `${STATS.koans}`, label: t('公案'), action: t('参究公案'), href: '/koan' },
+    { num: formatCount(STATS.faqs), label: t('经典问答'), action: t('阅读问答'), href: '/faq' },
+    { num: `${STATS.persons}`, label: t('关键人物'), action: t('阅读传记'), href: '/persons' },
   ];
 
   return (
@@ -26,7 +31,7 @@ export const StatsOverview = () => {
         <Link
           key={idx}
           prefetch={false}
-          href={item.href}
+          href={getHref(item.href)}
           className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md hover:border-amber-600/50 transition-all text-center group"
         >
           <div className="text-[32px] sm:text-[40px] leading-none tracking-tight font-bold font-serif-zen text-slate-900 mb-3 group-hover:text-amber-800 transition-colors">

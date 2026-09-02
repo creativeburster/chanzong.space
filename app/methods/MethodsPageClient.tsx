@@ -19,7 +19,7 @@ export default function MethodsPageClient() {
   const [activeRef, setActiveRef] = useState('全部');
   const [refDropdownOpen, setRefDropdownOpen] = useState(false);
   const refRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const classicRefs = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_METHODS.map((m) => m.classicRef)))],
@@ -143,7 +143,7 @@ export default function MethodsPageClient() {
             {visibleMethods.map((method) => (
               <Link
                 key={method.id}
-                href={`/methods/${method.id}`}
+                href={getHref(`/methods/${method.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-sky-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer block"
               >
                 <div>

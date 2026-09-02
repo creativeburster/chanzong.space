@@ -12,7 +12,7 @@ import { useLang } from '@/context/LangContext';
 
 export default function AboutClient() {
   const [searchOpen, setSearchOpen] = useState(false);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">

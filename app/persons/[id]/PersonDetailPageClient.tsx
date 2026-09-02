@@ -53,7 +53,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
   const [lifeStoryExpanded, setLifeStoryExpanded] = useState(false);
   const [quotesExpanded, setQuotesExpanded] = useState(false);
   const [faqsExpanded, setFaqsExpanded] = useState(false);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const person = ZEN_PERSONS.find((p) => p.id === params.id);
   if (!person) {
@@ -94,7 +94,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                   const rp = ZEN_PERSONS.find(p => p.id === rid);
                   if (!rp) return null;
                   return (
-                    <Link key={rid} href={`/persons/${rid}`} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
+                    <Link key={rid} href={getHref(`/persons/${rid}`)} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
                       {t(rp.name)}
                     </Link>
                   );

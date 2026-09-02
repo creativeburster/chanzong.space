@@ -24,7 +24,7 @@ interface PageProps {
 export default function ConceptDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [quotesExpanded, setQuotesExpanded] = useState(false);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const concept = ZEN_CONCEPTS.find((c) => c.id === params.id);
   if (!concept) {

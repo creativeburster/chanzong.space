@@ -19,7 +19,7 @@ export default function ConceptsPageClient() {
   const [activeCategory, setActiveCategory] = useState('全部');
   const [catDropdownOpen, setCatDropdownOpen] = useState(false);
   const catRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const categories = useMemo(
     () => ['全部', ...Array.from(new Set(ZEN_CONCEPTS.map((c) => c.category)))],
@@ -144,7 +144,7 @@ export default function ConceptsPageClient() {
             {visibleConcepts.map((concept) => (
               <Link
                 key={concept.id}
-                href={`/concepts/${concept.id}`}
+                href={getHref(`/concepts/${concept.id}`)}
                 className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:border-emerald-600 hover:shadow-md transition-all flex flex-col justify-between group cursor-pointer block"
               >
                 <div>

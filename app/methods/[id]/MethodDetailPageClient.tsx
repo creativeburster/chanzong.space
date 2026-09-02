@@ -25,7 +25,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [stepsExpanded, setStepsExpanded] = useState(false);
   const [pitfallsExpanded, setPitfallsExpanded] = useState(false);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const method = ZEN_METHODS.find((m) => m.id === params.id);
   if (!method) {

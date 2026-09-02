@@ -127,7 +127,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [faqsExpanded, setFaqsExpanded] = useState(false);
   const [savedProgress, setSavedProgress] = useState<number | null>(null);
   const [showProgressBanner, setShowProgressBanner] = useState(false);
-  const { t, tHtml, isTraditional } = useLang();
+  const { t, tHtml, isTraditional, getHref } = useLang();
 
   // 1. 初始化读取用户偏好主题与阅读进度
   useEffect(() => {
@@ -522,7 +522,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
             {prevItem ? (
               <Link
-                href={`/classics/${prevItem.id}`}
+                href={getHref(`/classics/${prevItem.id}`)}
                 className={`w-full sm:w-auto p-4 rounded-2xl ${currentTheme.cardBg} border ${currentTheme.cardBorder} hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center space-x-3 shadow-sm group`}
               >
                 <ChevronLeft className="w-5 h-5 text-amber-800 group-hover:-translate-x-1 transition-transform" />
@@ -537,7 +537,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
             {nextItem ? (
               <Link
-                href={`/classics/${nextItem.id}`}
+                href={getHref(`/classics/${nextItem.id}`)}
                 className={`w-full sm:w-auto p-4 rounded-2xl ${currentTheme.cardBg} border ${currentTheme.cardBorder} hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto`}
               >
                 <div>

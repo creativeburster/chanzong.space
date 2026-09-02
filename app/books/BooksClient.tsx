@@ -22,7 +22,7 @@ export default function BooksClient() {
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
   const catRef = useRef<HTMLDivElement>(null);
   const bookRef = useRef<HTMLDivElement>(null);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
 
   const categories = useMemo(
     () => ['全部', ...Array.from(new Set(manifest.map((item) => item.category)))],
@@ -111,7 +111,7 @@ export default function BooksClient() {
                   {manifest.map((item) => (
                     <button
                       key={item.id}
-                      onClick={() => router.push(`/classics/${item.id}`)}
+                      onClick={() => router.push(getHref(`/classics/${item.id}`))}
                       className="w-full text-left px-4 py-2 text-[13px] transition-colors hover:bg-amber-50 group/item"
                     >
                       <span className="flex items-center justify-between gap-2">
@@ -192,7 +192,7 @@ export default function BooksClient() {
             {visibleBooks.map((item) => (
               <Link
                 key={item.id}
-                href={`/classics/${item.id}`}
+                href={getHref(`/classics/${item.id}`)}
                 className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-amber-600/60 hover:shadow-md transition-all flex flex-col justify-between group"
               >
                 <div>
