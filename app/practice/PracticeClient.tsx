@@ -11,18 +11,10 @@ import manifest from '@/manifest.json';
 import {
   Sparkles,
   Compass,
-  HeartHandshake,
-  Moon,
-  Disc,
-  Wind,
-  PenTool,
-  CloudRain,
-  Flame,
-  Eraser,
-  Eye,
-  Calendar,
   Home,
-  ArrowLeft,
+  Flame,
+  Wind,
+  Bell,
 } from 'lucide-react';
 import { DailyKoanCard } from '@/components/practice/DailyKoanCard';
 import { DigitalWoodenFish } from '@/components/practice/DigitalWoodenFish';
@@ -36,6 +28,9 @@ import { ZenSandGarden } from '@/components/practice/ZenSandGarden';
 import { HuaTouInquiry } from '@/components/practice/HuaTouInquiry';
 import { LetGoAffliction } from '@/components/practice/LetGoAffliction';
 import { ZenPracticeLog } from '@/components/practice/ZenPracticeLog';
+import { ZenFocusTimer } from '@/components/practice/ZenFocusTimer';
+import { ZenBreathCounter } from '@/components/practice/ZenBreathCounter';
+import { ZenMindfulnessBell } from '@/components/practice/ZenMindfulnessBell';
 import { useLang } from '@/context/LangContext';
 
 export default function PracticeClient() {
@@ -43,26 +38,33 @@ export default function PracticeClient() {
   const { t, getHref } = useLang();
   const [activeTab, setActiveTab] = useState<
     | 'all'
+    | 'focus'
+    | 'breath_counter'
+    | 'bell'
     | 'koan'
     | 'muyu'
     | 'mala'
+    | 'bowl'
     | 'meditation'
     | 'breath'
-    | 'bowl'
-    | 'sutra'
-    | 'sand'
     | 'huatou'
+    | 'sand'
     | 'letgo'
+    | 'sutra'
     | 'log'
     | 'soundscape'
   >('all');
 
   const tabs = [
     { id: 'all', label: '全景禅房' },
-    { id: 'koan', label: '每日机锋' },
+    { id: 'focus', label: '禅门番茄' },
+    { id: 'breath_counter', label: '止观数息' },
+    { id: 'bell', label: '觉醒钟' },
+    { id: 'bowl', label: '颂钵音浴' },
+    { id: 'soundscape', label: '古刹天籁' },
     { id: 'muyu', label: '电子木鱼' },
     { id: 'mala', label: '菩提念珠' },
-    { id: 'bowl', label: '颂钵音浴' },
+    { id: 'koan', label: '每日机锋' },
     { id: 'meditation', label: '坐禅入定' },
     { id: 'breath', label: '调息律动' },
     { id: 'huatou', label: '参看话头' },
@@ -70,7 +72,6 @@ export default function PracticeClient() {
     { id: 'sand', label: '枯山水沙盘' },
     { id: 'sutra', label: '指尖抄经' },
     { id: 'log', label: '修持印谱' },
-    { id: 'soundscape', label: '古刹天籁' },
   ];
 
   return (
@@ -107,13 +108,13 @@ export default function PracticeClient() {
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/70 text-amber-900 text-xs font-bold shadow-xs">
                 <Compass className="w-4 h-4 text-amber-700" />
-                <span>{t('直指人心 · 十二大数字禅修法宝')}</span>
+                <span>{t('直指人心 · 十五大数字禅修法宝')}</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-extrabold font-serif-zen text-slate-900 tracking-wide">
                 {t('禅修静心工坊')}
               </h1>
               <p className="text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
-                {t('狂心顿歇，歇即菩提。集结机锋灵签、仿真木鱼、菩提念珠、青铜颂钵、坐禅入定、六妙门调息、参看话头、烦恼断舍离、枯山水耙沙、指尖抄经、修持印谱与古刹天籁。')}
+                {t('狂心顿歇，歇即菩提。集结禅门番茄钟、止观数息专注室、梅村觉醒钟、五行脉轮颂钵、十四大古刹天籁、仿真木鱼念珠、机锋灵签、看话头、枯山水与指尖抄经。')}
               </p>
 
               {/* 选项卡导航 */}
@@ -136,14 +137,51 @@ export default function PracticeClient() {
 
             {/* 核心内容网格 */}
             <div className="space-y-12">
-              {/* 1. 每日机锋 */}
+              {/* 1. 深度专注力双雄：禅门深度番茄钟 & 止观数息专注室 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                {(activeTab === 'all' || activeTab === 'focus') && (
+                  <section className="space-y-4">
+                    <ZenFocusTimer />
+                  </section>
+                )}
+
+                {(activeTab === 'all' || activeTab === 'breath_counter') && (
+                  <section className="space-y-4">
+                    <ZenBreathCounter />
+                  </section>
+                )}
+              </div>
+
+              {/* 2. 颂钵音浴殿 & 正念觉醒钟 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                {(activeTab === 'all' || activeTab === 'bowl') && (
+                  <section className="space-y-4">
+                    <SingingBowl />
+                  </section>
+                )}
+
+                {(activeTab === 'all' || activeTab === 'bell') && (
+                  <section className="space-y-4">
+                    <ZenMindfulnessBell />
+                  </section>
+                )}
+              </div>
+
+              {/* 3. 古刹天籁十四大白噪音混音器 */}
+              {(activeTab === 'all' || activeTab === 'soundscape') && (
+                <section className="space-y-4">
+                  <ZenSoundscapes />
+                </section>
+              )}
+
+              {/* 4. 每日机锋卡片 */}
               {(activeTab === 'all' || activeTab === 'koan') && (
                 <section className="space-y-4">
                   <DailyKoanCard />
                 </section>
               )}
 
-              {/* 2. 电子木鱼与菩提念珠 */}
+              {/* 5. 电子木鱼与菩提念珠 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                 {(activeTab === 'all' || activeTab === 'muyu') && (
                   <section className="space-y-4">
@@ -158,37 +196,22 @@ export default function PracticeClient() {
                 )}
               </div>
 
-              {/* 3. 颂钵音浴与看话头疑情室 */}
+              {/* 6. 参看话头疑情室 与 坐禅入定 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                {(activeTab === 'all' || activeTab === 'bowl') && (
-                  <section className="space-y-4">
-                    <SingingBowl />
-                  </section>
-                )}
-
                 {(activeTab === 'all' || activeTab === 'huatou') && (
                   <section className="space-y-4">
                     <HuaTouInquiry />
                   </section>
                 )}
-              </div>
 
-              {/* 4. 坐禅入定与呼吸调息 */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                 {(activeTab === 'all' || activeTab === 'meditation') && (
                   <section className="space-y-4">
                     <MeditationTimer />
                   </section>
                 )}
-
-                {(activeTab === 'all' || activeTab === 'breath') && (
-                  <section className="space-y-4">
-                    <BreathPacer />
-                  </section>
-                )}
               </div>
 
-              {/* 5. 枯山水沙盘与万缘放下化烬池 */}
+              {/* 7. 枯山水沙盘与万缘放下化烬池 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                 {(activeTab === 'all' || activeTab === 'sand') && (
                   <section className="space-y-4">
@@ -203,7 +226,7 @@ export default function PracticeClient() {
                 )}
               </div>
 
-              {/* 6. 指尖抄经阁与修持印谱 */}
+              {/* 8. 指尖抄经阁与修持印谱 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                 {(activeTab === 'all' || activeTab === 'sutra') && (
                   <section className="space-y-4">
@@ -218,10 +241,10 @@ export default function PracticeClient() {
                 )}
               </div>
 
-              {/* 7. 古刹天籁白噪音 */}
-              {(activeTab === 'all' || activeTab === 'soundscape') && (
+              {/* 9. 经典调息律动盘 */}
+              {(activeTab === 'all' || activeTab === 'breath') && (
                 <section className="space-y-4">
-                  <ZenSoundscapes />
+                  <BreathPacer />
                 </section>
               )}
             </div>
