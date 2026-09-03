@@ -607,9 +607,31 @@ export const GraphCanvas: React.FC = () => {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
+    // 若 URL 中携带 ?focus=xxx，平滑对焦并悬浮高亮该节点
+    const focusId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('focus') : null;
+    let focusTimer: any = null;
+
+    if (focusId) {
+      const target = nodes.find((n) => n.id === focusId);
+      if (target) {
+        focusTimer = setTimeout(() => {
+          const k = 1.35;
+          const fitX = width / 2 - (target.x ?? cx) * k;
+          const fitY = height / 2 - (target.y ?? cy) * k;
+          svg.transition().duration(900).ease(d3.easeCubicOut).call(zoom.transform, d3.zoomIdentity.translate(fitX, fitY).scale(k));
+          showTooltip({ clientX: width / 2, clientY: height / 2 - 35 }, target);
+        }, 1100);
+      }
+    }
+
     // 仿真 2.2 秒后按实际范围微调居中并冻结物理计算，彻底释放 CPU
     const freezeTimer = setTimeout(() => {
       simulation.stop();
+
+      // 如果有指定聚焦节点，保持当前对焦视图，不重置回整体莲花缩放
+      if (focusId && nodes.some((n) => n.id === focusId)) {
+        return;
+      }
 
       let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
       nodes.forEach((n) => {
@@ -634,6 +656,7 @@ export const GraphCanvas: React.FC = () => {
 
     return () => {
       clearTimeout(freezeTimer);
+      if (focusTimer) clearTimeout(focusTimer);
       simulation.stop();
       svg.remove();
     };

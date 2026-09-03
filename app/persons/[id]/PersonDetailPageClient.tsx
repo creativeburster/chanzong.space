@@ -12,6 +12,7 @@ import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/l
 import { BookOpen, Quote, Sparkles, Compass, ShieldCheck, Users, Share2, Tag, Lightbulb } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
+import { EntityMiniGraph } from '@/components/graph/EntityMiniGraph';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -103,6 +104,18 @@ export default function PersonDetailPageClient({ params }: PageProps) {
               </div>
             )}
           </div>
+
+          {/* 1.5 祖师知识图谱微卡片 */}
+          <EntityMiniGraph
+            entityId={person.id}
+            entityName={person.name}
+            entityType="person"
+            title={`${person.title} · ${person.era}`}
+            relatedPersons={person.relatedPersons}
+            relatedConcepts={person.relatedConcepts}
+            relatedBooks={person.relatedBooks}
+            relatedMethods={person.relatedMethods}
+          />
 
           {/* 2. 生平与求法历程 */}
           <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">

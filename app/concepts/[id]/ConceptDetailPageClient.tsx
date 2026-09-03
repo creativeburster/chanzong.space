@@ -12,6 +12,7 @@ import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/l
 import { BookOpen, Quote, Sparkles, Lightbulb, Users, Link as LinkIcon, Tag, Compass, MessageSquare } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
+import { EntityMiniGraph } from '@/components/graph/EntityMiniGraph';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -66,6 +67,17 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
               )}
             </div>
           </div>
+
+          {/* 1.5 概念知识图谱微卡片 */}
+          <EntityMiniGraph
+            entityId={concept.id}
+            entityName={concept.title}
+            entityType="concept"
+            title={concept.category}
+            relatedPersons={concept.relatedPersons}
+            relatedConcepts={concept.relatedConcepts}
+            relatedBooks={concept.relatedBooks}
+          />
 
           {/* 2. 参修指导 */}
           {concept.guidance && (

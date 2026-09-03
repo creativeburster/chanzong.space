@@ -12,6 +12,7 @@ import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS, ZEN_FAQS } from '@/l
 import { BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare, Lightbulb } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
+import { EntityMiniGraph } from '@/components/graph/EntityMiniGraph';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -61,6 +62,17 @@ export default function MethodDetailPageClient({ params }: PageProps) {
               )}
             </div>
           </div>
+
+          {/* 1.5 法门知识图谱微卡片 */}
+          <EntityMiniGraph
+            entityId={method.id}
+            entityName={method.title}
+            entityType="method"
+            title={method.summary?.slice(0, 30)}
+            relatedPersons={method.relatedPersons}
+            relatedConcepts={method.relatedConcepts}
+            relatedBooks={method.relatedBooks}
+          />
 
           {/* 2. 修行步骤 */}
           {method.steps && method.steps.length > 0 && (
