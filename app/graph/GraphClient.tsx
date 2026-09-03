@@ -23,6 +23,7 @@ import { ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS, ZEN_CONCEPTS } from '@/l
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { LineageViewTabs } from '@/components/lineage/LineageViewTabs';
 
 const GraphCanvas = lazy(() => import('@/components/GraphCanvas').then(m => ({ default: m.GraphCanvas })));
 
@@ -339,7 +340,10 @@ export default function GraphClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-[1440px] mx-auto w-full px-4 py-8 md:px-8 md:py-12 space-y-16">
-          <Breadcrumb items={[{ label: '知识图谱' }]} />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <Breadcrumb items={[{ label: '知识图谱' }]} />
+            <LineageViewTabs />
+          </div>
 
           {/* 页面主标题区 */}
           <div className="border-b border-slate-200/80 pb-8">

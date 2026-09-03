@@ -12,6 +12,7 @@ import {
   MessageSquare,
   Users,
   GitFork,
+  GitBranch,
   Info,
   ChevronDown,
   ChevronRight,
@@ -370,6 +371,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <GitFork className="w-5 h-5 text-amber-400" />
                   <span>{t('知识图谱')}</span>
                 </div>
+              </Link>
+
+              <Link prefetch={true} href={getHref('/lineage')}
+                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                  isActive('/lineage')
+                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center space-x-3">
+                  <GitBranch className="w-5 h-5 text-emerald-400" />
+                  <span>{t('法脉传承')}</span>
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">
+                  {t('五家七宗')}
+                </span>
               </Link>
 
               <Link prefetch={true} href={getHref('/about')}

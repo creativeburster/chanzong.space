@@ -409,6 +409,31 @@ export const LineageGraph: React.FC = () => {
 
         </div>
 
+        {/* 底部全景动态谱系树导流卡片 */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-950 via-slate-900 to-stone-900 text-white border border-amber-500/30 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center md:text-left z-10">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>{t('D3.js 动态交互拓扑树')}</span>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-bold font-serif-zen tracking-wide text-amber-100">
+              {t('探索西天二十八祖 · 东土六祖 · 五家七宗全景交互法脉')}
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+              {t('支持节点收缩展开、宗派高亮筛选、搜索定位、禅师公案生平抽屉与一键导出高清宣纸禅语海报。')}
+            </p>
+          </div>
+          <Link
+            prefetch={true}
+            href={getHref('/lineage')}
+            className="shrink-0 inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-2xl bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold text-sm shadow-lg hover:shadow-amber-500/20 transition-all hover:scale-105 z-10"
+          >
+            <span>{t('进入全景交互法脉谱系树')}</span>
+            <span className="text-base font-mono">→</span>
+          </Link>
+          <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+        </div>
+
       </div>
     </section>
   );
