@@ -5,12 +5,13 @@ import Link from 'next/link';
 import {
   ScrollText, MessageCircle, Quote, Footprints,
   Globe, Landmark, BookOpen, ChevronDown, ChevronUp,
-  Volume2, Square, Pause, Play,
+  Volume2, Square, Pause, Play, Image as ImageIcon,
 } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { ExtractedCards, KoanItem, inferHistory } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { PersonItem, MethodItem } from '@/lib/taxonomy';
+import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 
 /* ===================== 通用可折叠卡片容器 ===================== */
 const CollapsibleCard: React.FC<{
@@ -102,6 +103,7 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
 export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
   const { t } = useLang();
   const [expanded, setExpanded] = useState(false);
+  const [activeKoan, setActiveKoan] = useState<KoanItem | null>(null);
   if (koans.length === 0) return null;
 
   const INITIAL_LIMIT = 4;
@@ -109,38 +111,57 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
   const visibleKoans = shouldLimit && !expanded ? koans.slice(0, INITIAL_LIMIT) : koans;
 
   return (
-    <CollapsibleCard
-      icon={<MessageCircle className="w-5 h-5 text-violet-700" />}
-      title={t('公案精选')}
-      count={koans.length}
-      countLabel={t('则')}
-      colorClass="violet"
-      defaultOpen={true}
-    >
-      <div className="space-y-4">
-        {visibleKoans.map((koan, i) => (
-          <div key={i} className="p-4 rounded-2xl bg-violet-50/60 border border-violet-200/50">
-            <p className="text-[14px] font-semibold text-violet-800 mb-1">
-              问：{koan.question}
-            </p>
-            <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900">
-              答：{koan.answer}
-            </p>
-          </div>
-        ))}
+    <>
+      <CollapsibleCard
+        icon={<MessageCircle className="w-5 h-5 text-violet-700" />}
+        title={t('公案精选')}
+        count={koans.length}
+        countLabel={t('则')}
+        colorClass="violet"
+        defaultOpen={true}
+      >
+        <div className="space-y-4">
+          {visibleKoans.map((koan, i) => (
+            <div key={i} className="p-4 rounded-2xl bg-violet-50/60 border border-violet-200/50 group">
+              <p className="text-[14px] font-semibold text-violet-800 mb-1">
+                问：{koan.question}
+              </p>
+              <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900">
+                答：{koan.answer}
+              </p>
+              <div className="flex justify-end pt-2">
+                <button
+                  onClick={() => setActiveKoan(koan)}
+                  className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-violet-100 hover:bg-violet-200 text-violet-800 text-[11px] font-medium transition flex items-center gap-1"
+                  title={t('生成公案海报')}
+                >
+                  <ImageIcon className="w-3 h-3 text-violet-700" />
+                  <span>{t('海报')}</span>
+                </button>
+              </div>
+            </div>
+          ))}
 
-        {shouldLimit && (
-          <div className="flex justify-center pt-2">
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="px-5 py-2 rounded-xl border border-violet-200 bg-violet-50/60 text-violet-800 text-[13px] font-semibold hover:bg-violet-100 transition-all shadow-sm"
-            >
-              {expanded ? t('收起') : `${t('展开全部公案')} (${t('共')} ${koans.length} ${t('则')})`}
-            </button>
-          </div>
-        )}
-      </div>
-    </CollapsibleCard>
+          {shouldLimit && (
+            <div className="flex justify-center pt-2">
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="px-5 py-2 rounded-xl border border-violet-200 bg-violet-50/60 text-violet-800 text-[13px] font-semibold hover:bg-violet-100 transition-all shadow-sm"
+              >
+                {expanded ? t('收起') : `${t('展开全部公案')} (${t('共')} ${koans.length} ${t('则')})`}
+              </button>
+            </div>
+          )}
+        </div>
+      </CollapsibleCard>
+
+      <ZenQuoteCardModal
+        isOpen={Boolean(activeKoan)}
+        onClose={() => setActiveKoan(null)}
+        quote={`问：“${activeKoan?.question || ''}”\n答：“${activeKoan?.answer || ''}”`}
+        sourceTitle="禅门宗乘公案"
+      />
+    </>
   );
 };
 
@@ -148,6 +169,7 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
 export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = ({ quotes, personNames }) => {
   const { t } = useLang();
   const [expanded, setExpanded] = useState(false);
+  const [activeQuote, setActiveQuote] = useState<{ text: string; source: string } | null>(null);
   if (quotes.length === 0) return null;
 
   const INITIAL_LIMIT = 5;
@@ -155,42 +177,60 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
   const visibleQuotes = shouldLimit && !expanded ? quotes.slice(0, INITIAL_LIMIT) : quotes;
 
   return (
-    <CollapsibleCard
-      icon={<Quote className="w-5 h-5 text-emerald-700" />}
-      title={t('祖师名言')}
-      count={quotes.length}
-      countLabel={t('则')}
-      colorClass="emerald"
-    >
-      <div className="space-y-3">
-        {visibleQuotes.map((quote, i) => {
-          const dashIdx = quote.indexOf('—');
-          const text = dashIdx > 0 ? quote.substring(0, dashIdx).trim() : quote;
-          const source = dashIdx > 0 ? quote.substring(dashIdx + 1).trim() : '';
-          return (
-            <div key={i} className="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/50">
-              <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-emerald-900">
-                {text}
-              </p>
-              {source && (
-                <p className="mt-1.5 text-[12px] text-emerald-600 font-semibold">— {source}</p>
-              )}
-            </div>
-          );
-        })}
+    <>
+      <CollapsibleCard
+        icon={<Quote className="w-5 h-5 text-emerald-700" />}
+        title={t('祖师名言')}
+        count={quotes.length}
+        countLabel={t('则')}
+        colorClass="emerald"
+      >
+        <div className="space-y-3">
+          {visibleQuotes.map((quote, i) => {
+            const dashIdx = quote.indexOf('—');
+            const text = dashIdx > 0 ? quote.substring(0, dashIdx).trim() : quote;
+            const source = dashIdx > 0 ? quote.substring(dashIdx + 1).trim() : (personNames[0] || '');
+            return (
+              <div key={i} className="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/50 flex flex-col justify-between gap-2 group">
+                <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-emerald-900">
+                  {text}
+                </p>
+                <div className="flex items-center justify-between pt-1">
+                  <p className="text-[12px] text-emerald-600 font-semibold">{source ? `— ${source}` : ''}</p>
+                  <button
+                    onClick={() => setActiveQuote({ text, source })}
+                    className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-emerald-100/80 hover:bg-emerald-200 text-emerald-800 text-[11px] font-medium transition flex items-center gap-1"
+                    title={t('生成禅语卡片')}
+                  >
+                    <ImageIcon className="w-3 h-3 text-emerald-700" />
+                    <span>{t('海报')}</span>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
 
-        {shouldLimit && (
-          <div className="flex justify-center pt-2">
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="px-5 py-2 rounded-xl border border-emerald-200 bg-emerald-50/60 text-emerald-800 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-sm"
-            >
-              {expanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${quotes.length} ${t('则')})`}
-            </button>
-          </div>
-        )}
-      </div>
-    </CollapsibleCard>
+          {shouldLimit && (
+            <div className="flex justify-center pt-2">
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="px-5 py-2 rounded-xl border border-emerald-200 bg-emerald-50/60 text-emerald-800 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-sm"
+              >
+                {expanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${quotes.length} ${t('则')})`}
+              </button>
+            </div>
+          )}
+        </div>
+      </CollapsibleCard>
+
+      <ZenQuoteCardModal
+        isOpen={Boolean(activeQuote)}
+        onClose={() => setActiveQuote(null)}
+        quote={activeQuote?.text || ''}
+        author={activeQuote?.source || personNames[0]}
+        sourceTitle="祖师传世法语"
+      />
+    </>
   );
 };
 

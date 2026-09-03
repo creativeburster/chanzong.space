@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Eye, Compass, HelpCircle, ArrowRight } from 'lucide-react';
+import { Sparkles, Eye, Compass, HelpCircle, ArrowRight, Image as ImageIcon, Save, Check } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
+import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 
 const HUATOU_LIST = [
   {
@@ -35,8 +36,19 @@ export const HuaTouInquiry: React.FC = () => {
   const [isPulsing, setIsPulsing] = useState<boolean>(false);
   const [timerSeconds, setTimerSeconds] = useState<number>(0);
   const [isTiming, setIsTiming] = useState<boolean>(true);
+  const [cardModalOpen, setCardModalOpen] = useState<boolean>(false);
+  const [insightNote, setInsightNote] = useState<string>('');
+  const [isSaved, setIsSaved] = useState<boolean>(false);
 
   const currentHuaTou = HUATOU_LIST[selectedIdx];
+
+  // 从本地加载该话头保存的心悟笔记
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(`zen_huatou_note_${selectedIdx}`);
+      setInsightNote(saved || '');
+    } catch {}
+  }, [selectedIdx]);
 
   useEffect(() => {
     let timer: any = null;
@@ -57,6 +69,15 @@ export const HuaTouInquiry: React.FC = () => {
     setSelectedIdx(idx);
     setInquiryCount(0);
     setTimerSeconds(0);
+    setIsSaved(false);
+  };
+
+  const saveInsight = () => {
+    try {
+      localStorage.setItem(`zen_huatou_note_${selectedIdx}`, insightNote);
+      setIsSaved(true);
+      setTimeout(() => setIsSaved(false), 2000);
+    } catch {}
   };
 
   const formatTime = (sec: number) => {
@@ -78,11 +99,22 @@ export const HuaTouInquiry: React.FC = () => {
           </h3>
         </div>
 
-        <div className="flex items-center space-x-2 text-xs font-mono">
-          <span className="text-slate-400">{t('定力时长')}:</span>
-          <span className="text-amber-300 font-bold bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800">
-            {formatTime(timerSeconds)}
-          </span>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setCardModalOpen(true)}
+            className="px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 text-xs font-semibold shadow-xs transition-colors flex items-center gap-1"
+            title={t('生成话头海报')}
+          >
+            <ImageIcon className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">{t('海报')}</span>
+          </button>
+
+          <div className="flex items-center space-x-1.5 text-xs font-mono">
+            <span className="text-slate-400">{t('定力')}:</span>
+            <span className="text-amber-300 font-bold bg-slate-900 px-2 py-1 rounded-lg border border-slate-800">
+              {formatTime(timerSeconds)}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -132,6 +164,40 @@ export const HuaTouInquiry: React.FC = () => {
           <span>{t('点击屏幕提撕疑情 (已参')} {inquiryCount} {t('次)')}</span>
         </div>
       </div>
+
+      {/* 当下心悟笔记 */}
+      <div className="mt-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs font-semibold text-slate-300 flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <span>{t('参究心悟 · 当下自记')}</span>
+          </span>
+          <button
+            onClick={saveInsight}
+            className="px-2.5 py-1 rounded-lg bg-amber-600/80 hover:bg-amber-600 text-white text-[11px] font-medium transition flex items-center gap-1"
+          >
+            {isSaved ? <Check className="w-3 h-3 text-emerald-300" /> : <Save className="w-3 h-3" />}
+            <span>{isSaved ? t('已存入印谱') : t('存悟境')}</span>
+          </button>
+        </div>
+        <textarea
+          value={insightNote}
+          onChange={(e) => setInsightNote(e.target.value)}
+          placeholder={t('于不知处起大疑情，若忽有所契，随手录于此处（自动保存在本地）...')}
+          rows={2}
+          className="w-full bg-slate-900/90 text-slate-200 text-xs rounded-xl p-2.5 border border-slate-700/60 focus:outline-none focus:border-amber-500/70 resize-none font-serif-zen placeholder:text-slate-600"
+        />
+      </div>
+
+      {/* 话头海报弹窗 */}
+      <ZenQuoteCardModal
+        isOpen={cardModalOpen}
+        onClose={() => setCardModalOpen(false)}
+        quote={`“${currentHuaTou.topic}”\n${insightNote ? `\n【参究心悟】：${insightNote}` : ''}`}
+        interpretation={currentHuaTou.hint}
+        sourceTitle="宗门看话 · 祖师禅参究"
+        author={currentHuaTou.master}
+      />
     </div>
   );
 };

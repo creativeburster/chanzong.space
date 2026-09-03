@@ -9,12 +9,13 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_KOANS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_FAQS } from '@/lib/taxonomy';
-import { BookOpen, Quote, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass, Lightbulb } from 'lucide-react';
+import { BookOpen, Quote, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass, Lightbulb, Image as ImageIcon } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 
 interface PageProps {
   params: {
@@ -24,6 +25,7 @@ interface PageProps {
 
 export default function KoanDetailPageClient({ params }: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [cardModalOpen, setCardModalOpen] = useState(false);
   const { t, getHref } = useLang();
 
   const qa = ZEN_KOANS.find((q) => q.id === params.id);
@@ -43,11 +45,21 @@ export default function KoanDetailPageClient({ params }: PageProps) {
 
           {/* 1. 公案概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-[13px] font-semibold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
-                {t(qa.master)}
-              </span>
-              <span className="text-xs text-slate-500 font-bold">出处: {t(qa.source)}</span>
+            <div className="flex items-center justify-between gap-3 mb-4">
+              <div className="flex items-center gap-3">
+                <span className="text-[13px] font-semibold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
+                  {t(qa.master)}
+                </span>
+                <span className="text-xs text-slate-500 font-bold">出处: {t(qa.source)}</span>
+              </div>
+              <button
+                onClick={() => setCardModalOpen(true)}
+                className="px-3.5 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 text-xs font-semibold shadow-xs transition-colors flex items-center gap-1.5"
+                title={t('生成禅语卡片海报')}
+              >
+                <ImageIcon className="w-3.5 h-3.5 text-amber-700" />
+                <span>{t('生成禅语海报')}</span>
+              </button>
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold font-serif-zen text-slate-900 mb-6">
@@ -192,6 +204,15 @@ export default function KoanDetailPageClient({ params }: PageProps) {
       </div>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
+
+      <ZenQuoteCardModal
+        isOpen={cardModalOpen}
+        onClose={() => setCardModalOpen(false)}
+        quote={`问：“${qa.question}”\n答：“${qa.answer}”`}
+        interpretation={qa.interpretation || qa.context}
+        sourceTitle={qa.source}
+        author={qa.master}
+      />
     </div>
   );
 }

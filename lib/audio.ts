@@ -388,6 +388,84 @@ class ZenAudioEngine {
       // ignore
     }
   }
+
+  /**
+   * 8. 播放高泛音古法金铜引磬声 (明彻通顶，起香开静专用)
+   */
+  playYinQing(volume: number = 0.75) {
+    const ctx = this.getContext();
+    if (!ctx) return;
+
+    try {
+      const now = ctx.currentTime;
+      const duration = 4.2;
+      // 引磬的高清亮泛音结构
+      const harmonics = [
+        { freq: 2048, gain: 0.8 },
+        { freq: 4096, gain: 0.35 },
+        { freq: 6144, gain: 0.15 },
+        { freq: 8192, gain: 0.05 },
+      ];
+
+      harmonics.forEach(({ freq, gain: g }) => {
+        const osc = ctx.createOscillator();
+        osc.type = 'sine';
+        // 微小失谐增加金铜真实金属质感
+        osc.frequency.setValueAtTime(freq + (Math.random() - 0.5) * 4, now);
+
+        const gainNode = ctx.createGain();
+        gainNode.gain.setValueAtTime(volume * g, now);
+        gainNode.gain.exponentialRampToValueAtTime(0.00005, now + duration);
+
+        osc.connect(gainNode);
+        gainNode.connect(ctx.destination);
+
+        osc.start(now);
+        osc.stop(now + duration);
+      });
+    } catch {
+      // ignore
+    }
+  }
+
+  /**
+   * 9. 播放深山古刹晚钟 / 晨钟暮鼓百八钟声 (沉雄震荡，拍频悠长)
+   */
+  playTempleBell(volume: number = 0.85) {
+    const ctx = this.getContext();
+    if (!ctx) return;
+
+    try {
+      const now = ctx.currentTime;
+      const duration = 7.5; // 7.5秒悠远余音
+      const harmonics = [
+        { freq: 108, gain: 0.8 },
+        { freq: 109.5, gain: 0.7 }, // 微妙拍频 beats
+        { freq: 216, gain: 0.5 },
+        { freq: 324, gain: 0.3 },
+        { freq: 432, gain: 0.2 },
+        { freq: 648, gain: 0.1 },
+      ];
+
+      harmonics.forEach(({ freq, gain: g }) => {
+        const osc = ctx.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now);
+
+        const gainNode = ctx.createGain();
+        gainNode.gain.setValueAtTime(volume * g, now);
+        gainNode.gain.exponentialRampToValueAtTime(0.00001, now + duration);
+
+        osc.connect(gainNode);
+        gainNode.connect(ctx.destination);
+
+        osc.start(now);
+        osc.stop(now + duration);
+      });
+    } catch {
+      // ignore
+    }
+  }
 }
 
 export const zenAudio = new ZenAudioEngine();

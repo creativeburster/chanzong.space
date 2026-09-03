@@ -2,12 +2,14 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { Sparkles, RefreshCw, Share2, BookOpen, Check, ArrowRight } from 'lucide-react';
+import { Sparkles, RefreshCw, Share2, BookOpen, Check, ArrowRight, Image as ImageIcon } from 'lucide-react';
 import { ZEN_KOANS } from '@/lib/taxonomy';
 import { useLang } from '@/context/LangContext';
+import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 
 export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
   const { t, getHref } = useLang();
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   // 根据当前日期计算默认今日机锋
   const todaySeed = useMemo(() => {
@@ -107,11 +109,12 @@ export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false
 
           <div className="flex items-center space-x-2">
             <button
-              onClick={handleCopy}
-              className="p-2 rounded-xl bg-white/80 hover:bg-amber-100 text-slate-600 hover:text-amber-900 border border-amber-200/60 shadow-xs transition-colors"
-              title={t('复制分享此签文')}
+              onClick={() => setModalOpen(true)}
+              className="p-2 rounded-xl bg-white/80 hover:bg-amber-100 text-slate-600 hover:text-amber-900 border border-amber-200/60 shadow-xs transition-colors flex items-center gap-1"
+              title={t('生成禅语卡片海报')}
             >
-              {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Share2 className="w-4 h-4" />}
+              <ImageIcon className="w-4 h-4 text-amber-700" />
+              <span className="text-xs font-medium text-amber-900 hidden sm:inline">{t('做海报')}</span>
             </button>
             <button
               onClick={handleNext}
@@ -186,6 +189,15 @@ export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false
           )}
         </div>
       </div>
+
+      <ZenQuoteCardModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        quote={`问：“${koan.question}”\n答：“${koan.answer}”`}
+        interpretation={koan.interpretation}
+        sourceTitle={koan.source}
+        author={koan.master}
+      />
     </div>
   );
 };
