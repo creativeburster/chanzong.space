@@ -1,14 +1,15 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
-import { RotateCcw, MoveVertical, Plus, Minus, Flower2, Sparkles } from 'lucide-react';
+import { RotateCcw, MoveVertical, Plus, Minus, Flower2, Sparkles, Eye, CheckCheck } from 'lucide-react';
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { useLang } from '@/context/LangContext';
 
 interface NodeData extends d3.SimulationNodeDatum {
-  id: string;
+  id: string;          // 复合唯一 ID: `${type}:${rawId}`
+  rawId: string;       // 原始业务 ID
   name: string;
   type: string;
   url: string;
@@ -19,7 +20,7 @@ interface NodeData extends d3.SimulationNodeDatum {
   ty?: number;          // 目标锚点 y
   isCore?: boolean;     // 是否位于中央金色莲蓬
   petalSlot?: number;   // 归属的 16 瓣花瓣槽位 (0 ~ 15)
-  importance?: number;  // 3: 莲台核心, 2: 花瓣领衔, 1: 露珠节点
+  importance?: number;  // 3: 莲台核心, 2: 领衔核心, 1: 普通
 }
 
 interface LinkData extends d3.SimulationLinkDatum<NodeData> {
@@ -54,9 +55,9 @@ const petalStrokeColorMap: Record<string, string> = {
 
 const baseRadiusMap: Record<string, number> = {
   person: 13,
-  book: 11,
-  concept: 10,
-  method: 10,
+  book: 12,
+  concept: 11,
+  method: 12,
   koan: 9,
 };
 
@@ -71,9 +72,6 @@ const typeLabelMap: Record<string, string> = {
 const FILTER_TYPES = ['person', 'book', 'concept', 'method', 'koan'] as const;
 
 const shortLabel = (t: string, n = 8) => (t.length > n ? t.slice(0, n) + '…' : t);
-
-// 剔除全站关联过少的碎片节点（度数 < MIN_DEGREE 不入图谱）
-const MIN_DEGREE = 6;
 
 // 16 瓣槽位分配：环绕式渐变色彩排布 (正北为 0，顺时针展开)
 const PETAL_SLOTS = 16;
@@ -93,18 +91,12 @@ const PETAL_TITLES: Record<number, string> = {
   12: '平常是道·大圆', 13: '一行三昧·直趣', 14: '参究默照·妙修', 15: '棒喝玄关·透脱'
 };
 
-// 仅排除少数无度数的孤立外围碎片（达摩等核心祖师已全部回归居于莲心正中）
-const EXCLUDE_GRAPH_IDS = new Set([
-  'xuemaicong', 'wuxinglun', 'poxianglun', 'wuxinlun', 'sixingguan',
-]);
-
 /**
  * 水滴形花瓣在半径 r 处的半角宽度（极坐标弧度）
  */
 function petalHalfAngle(r: number, r0: number, r1: number, wMax: number): number {
   if (r <= r0 || r >= r1) return 0.001;
   const u = (r - r0) / (r1 - r0);
-  // 水滴曲线：在 u = 0.55 处达到饱满最大宽度
   const profile = Math.sin(Math.PI * Math.pow(u, 0.72)) * (1 - 0.15 * u);
   const w = wMax * profile;
   return Math.asin(Math.min(0.95, w / r));
@@ -179,7 +171,7 @@ function clampNodePosition(node: NodeData, cx: number, cy: number) {
 /**
  * 将节点分配到花瓣内的水滴极坐标网格中
  */
-function assignNodesToPetal(nodes: NodeData[], slotIdx: number, cx: number, cy: number) {
+function assignNodesToPetal(nodes: NodeData[], slotIdx: number, cx: number, cy: number, isSingleMode: boolean) {
   const isInner = slotIdx % 2 === 0;
   const r0 = isInner ? 148 : 215;
   const r1 = isInner ? 685 : 895;
@@ -189,7 +181,7 @@ function assignNodesToPetal(nodes: NodeData[], slotIdx: number, cx: number, cy: 
   const n = nodes.length;
   if (n === 0) return;
 
-  const rows = Math.max(5, Math.ceil(Math.sqrt(n * 1.8)));
+  const rows = Math.max(3, Math.ceil(Math.sqrt(n * 1.8)));
   const weights: number[] = [];
   for (let row = 0; row < rows; row++) {
     const u = (row + 0.55) / rows;
@@ -225,49 +217,55 @@ function assignNodesToPetal(nodes: NodeData[], slotIdx: number, cx: number, cy: 
       node.isCore = false;
       node.tx = cx + r * Math.cos(a);
       node.ty = cy + r * Math.sin(a);
-      node.x = node.tx + (Math.random() - 0.5) * 15;
-      node.y = node.ty + (Math.random() - 0.5) * 15;
-      node.importance = (row === 0 || placed < 3) ? 2 : 1;
+      node.x = node.tx + (Math.random() - 0.5) * 12;
+      node.y = node.ty + (Math.random() - 0.5) * 12;
+      // 单类模式下所有节点重要度均为 2 (全量清晰大字显示)，多类模式下前 6 个或第 0-1 行直接展示
+      node.importance = isSingleMode ? 2 : ((row <= 1 || placed < 6) ? 2 : 1);
       placed++;
     }
   }
 }
 
 /**
- * 构建整图数据并完成 16 瓣宝莲几何拓扑映射
+ * 构建全量图拓扑数据 (全站真实数据，杜绝粗暴过滤导致的数量缺失)
  */
 function getGraphData() {
   const allNodes: NodeData[] = [
-    ...ZEN_PERSONS.filter((p) => !EXCLUDE_GRAPH_IDS.has(p.id)).map((p) => ({
-      id: p.id,
+    ...ZEN_PERSONS.map((p) => ({
+      id: `person:${p.id}`,
+      rawId: p.id,
       name: p.name,
       type: 'person',
       url: `/persons/${p.id}`,
       desc: `${p.title} · ${p.era}`,
     })),
-    ...manifest.filter((b) => !EXCLUDE_GRAPH_IDS.has(b.id)).map((b) => ({
-      id: b.id,
+    ...manifest.map((b) => ({
+      id: `book:${b.id}`,
+      rawId: b.id,
       name: shortLabel(b.title),
       type: 'book',
       url: `/classics/${b.id}`,
       desc: `${b.author} · ${b.category}`,
     })),
-    ...ZEN_CONCEPTS.filter((c) => !EXCLUDE_GRAPH_IDS.has(c.id)).map((c) => ({
-      id: c.id,
+    ...ZEN_CONCEPTS.map((c) => ({
+      id: `concept:${c.id}`,
+      rawId: c.id,
       name: c.title,
       type: 'concept',
       url: `/concepts/${c.id}`,
       desc: c.summary.slice(0, 48) + '…',
     })),
-    ...ZEN_METHODS.filter((m) => !EXCLUDE_GRAPH_IDS.has(m.id)).map((m) => ({
-      id: m.id,
+    ...ZEN_METHODS.map((m) => ({
+      id: `method:${m.id}`,
+      rawId: m.id,
       name: m.title,
       type: 'method',
       url: `/methods/${m.id}`,
       desc: m.summary.slice(0, 48) + '…',
     })),
     ...ZEN_KOANS.map((q) => ({
-      id: q.id,
+      id: `koan:${q.id}`,
+      rawId: q.id,
       name: shortLabel(q.question, 7),
       type: 'koan',
       url: `/koan/${q.id}`,
@@ -287,25 +285,25 @@ function getGraphData() {
   };
 
   ZEN_PERSONS.forEach((p) => {
-    p.relatedPersons.forEach((t) => addLink(p.id, t, '法脉'));
-    p.relatedConcepts.forEach((t) => addLink(p.id, t, '阐扬'));
-    p.relatedMethods.forEach((t) => addLink(p.id, t, '行持'));
-    p.relatedBooks.forEach((t) => addLink(p.id, t, '著述'));
+    p.relatedPersons?.forEach((t) => addLink(`person:${p.id}`, `person:${t}`, '法脉'));
+    p.relatedConcepts?.forEach((t) => addLink(`person:${p.id}`, `concept:${t}`, '阐扬'));
+    p.relatedMethods?.forEach((t) => addLink(`person:${p.id}`, `method:${t}`, '行持'));
+    p.relatedBooks?.forEach((t) => addLink(`person:${p.id}`, `book:${t}`, '著述'));
   });
   ZEN_CONCEPTS.forEach((c) => {
-    c.relatedPersons.forEach((t) => addLink(t, c.id, '阐扬'));
-    c.relatedConcepts.forEach((t) => addLink(c.id, t, '法脉'));
-    c.relatedBooks.forEach((t) => addLink(c.id, t, '著述'));
+    c.relatedPersons?.forEach((t) => addLink(`person:${t}`, `concept:${c.id}`, '阐扬'));
+    c.relatedConcepts?.forEach((t) => addLink(`concept:${c.id}`, `concept:${t}`, '法脉'));
+    c.relatedBooks?.forEach((t) => addLink(`concept:${c.id}`, `book:${t}`, '著述'));
   });
   ZEN_METHODS.forEach((m) => {
-    m.relatedPersons.forEach((t) => addLink(t, m.id, '行持'));
-    m.relatedConcepts.forEach((t) => addLink(m.id, t, '阐扬'));
-    m.relatedBooks.forEach((t) => addLink(m.id, t, '著述'));
+    m.relatedPersons?.forEach((t) => addLink(`person:${t}`, `method:${m.id}`, '行持'));
+    m.relatedConcepts?.forEach((t) => addLink(`method:${m.id}`, `concept:${t}`, '阐扬'));
+    m.relatedBooks?.forEach((t) => addLink(`method:${m.id}`, `book:${t}`, '著述'));
   });
   ZEN_KOANS.forEach((q) => {
-    q.relatedPersons.forEach((t) => addLink(t, q.id, '问答'));
-    q.relatedConcepts.forEach((t) => addLink(q.id, t, '阐扬'));
-    q.relatedBooks.forEach((t) => addLink(q.id, t, '著述'));
+    q.relatedPersons?.forEach((t) => addLink(`person:${t}`, `koan:${q.id}`, '问答'));
+    q.relatedConcepts?.forEach((t) => addLink(`koan:${q.id}`, `concept:${t}`, '阐扬'));
+    q.relatedBooks?.forEach((t) => addLink(`koan:${q.id}`, `book:${t}`, '著述'));
   });
 
   const degree = new Map<string, number>();
@@ -314,24 +312,20 @@ function getGraphData() {
     degree.set(l.target as string, (degree.get(l.target as string) || 0) + 1);
   });
 
-  // 保留度数 >= 6 的核心法界实体
-  const keptNodes = allNodes.filter((n) => (degree.get(n.id) || 0) >= MIN_DEGREE);
-  const keptNodeIds = new Set(keptNodes.map((n) => n.id));
-  const keptRawLinks = allLinks.filter((l) => keptNodeIds.has(l.source as string) && keptNodeIds.has(l.target as string));
-
-  keptNodes.forEach((n) => {
+  allNodes.forEach((n) => {
     const d = degree.get(n.id) || 0;
     n.degree = d;
     const base = baseRadiusMap[n.type] || 10;
-    n.r = Math.min(base * 2.5, base + Math.sqrt(d) * 2.2);
+    n.r = Math.min(base * 2.3, base + Math.sqrt(d) * 1.8);
   });
 
-  return { allNodes: keptNodes, allLinks: keptRawLinks };
+  return { allNodes, allLinks };
 }
 
-// 模块级构建一次静态图拓扑
+// 模块级构建一次静态图拓扑 (全站全量真实数据)
 const GRAPH_DATA = getGraphData();
 
+// 全站真实数量徽章 (精准对齐数据库: 祖师203, 经典120, 概念420, 法门91, 公案603)
 const COUNTS: Record<string, number> = FILTER_TYPES.reduce((acc, t) => {
   acc[t] = GRAPH_DATA.allNodes.filter((n) => n.type === t).length;
   return acc;
@@ -354,6 +348,11 @@ export const GraphCanvas: React.FC = () => {
 
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const svgRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined> | null>(null);
+
+  // 判断是否处于单类独览模式
+  const activeCount = useMemo(() => Object.values(visible).filter(Boolean).length, [visible]);
+  const isSingleMode = activeCount === 1;
+  const singleType = useMemo(() => isSingleMode ? FILTER_TYPES.find(t => visible[t]) : null, [isSingleMode, visible]);
 
   const updateTooltipPos = (clientX: number, clientY: number) => {
     const tip = tooltipRef.current;
@@ -434,15 +433,6 @@ export const GraphCanvas: React.FC = () => {
     coreGrad.append('stop').attr('offset', '70%').attr('stop-color', '#D97706').attr('stop-opacity', '0.14');
     coreGrad.append('stop').attr('offset', '100%').attr('stop-color', '#B45309').attr('stop-opacity', '0.02');
 
-    // 2. 节点发光微滤镜
-    const glowFilter = defs.append('filter')
-      .attr('id', 'lotus-glow')
-      .attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
-    glowFilter.append('feGaussianBlur').attr('stdDeviation', '4').attr('result', 'coloredBlur');
-    const feMerge = glowFilter.append('feMerge');
-    feMerge.append('feMergeNode').attr('in', 'coloredBlur');
-    feMerge.append('feMergeNode').attr('in', 'SourceGraphic');
-
     const g = svg.append('g').attr('class', 'main-zoom-layer');
 
     // D3 缩放器
@@ -451,16 +441,18 @@ export const GraphCanvas: React.FC = () => {
       .wheelDelta((event) => -event.deltaY * 0.002)
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
-        // 缩放自适应：当放大查看微观时 (k > 1.15)，平滑渐现普通节点的文字
         const k = event.transform.k;
-        g.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
-          .style('opacity', k > 1.15 ? Math.min(1, (k - 1.15) * 3) : 0);
+        // 单类模式下文字始终常驻；多类模式下放大 (k > 1.12) 时普通文字优雅浮现
+        if (!isSingleMode) {
+          g.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
+            .style('opacity', k > 1.12 ? Math.min(1, (k - 1.12) * 3.5) : 0);
+        }
       });
 
     svg.call(zoom);
     zoomRef.current = zoom;
 
-    /* ---- 过滤当前启用的类型 ---- */
+    /* ---- 过滤当前启用的类型 (全量保留，杜绝孤立节点丢失) ---- */
     const { allNodes, allLinks } = GRAPH_DATA;
     const activeNodes = allNodes.filter((n) => visible[n.type]);
     const activeIds = new Set(activeNodes.map((n) => n.id));
@@ -472,46 +464,73 @@ export const GraphCanvas: React.FC = () => {
     // 按度数从高到低排序
     nodes.sort((a, b) => (b.degree || 0) - (a.degree || 0));
 
-    // 1. 挑选前 24 个中枢节点驻留在金色莲蓬内
-    const coreCount = Math.min(24, Math.floor(nodes.length * 0.08));
-    const coreNodes = nodes.slice(0, coreCount);
-    const nonCoreNodes = nodes.slice(coreCount);
+    if (isSingleMode) {
+      /* =========================================================
+       * 🌟 模式 A：单分类独览模式（如独览 91 个法门）
+       * 91 个法门全部均匀分摊在整朵 16 瓣莲花中，所有名字全量清晰大字展示！
+       * ========================================================= */
+      const coreCount = Math.min(8, Math.floor(nodes.length * 0.1));
+      const coreNodes = nodes.slice(0, coreCount);
+      const nonCoreNodes = nodes.slice(coreCount);
 
-    // 为核心节点分配同心圆环锚点
-    coreNodes.forEach((n, idx) => {
-      n.isCore = true;
-      n.importance = 3;
-      n.petalSlot = undefined;
-      // 内圈 6 个，外圈剩余
-      if (idx < 6) {
-        const theta = -Math.PI / 2 + (idx * Math.PI * 2) / 6;
-        n.tx = cx + 48 * Math.cos(theta);
-        n.ty = cy + 48 * Math.sin(theta);
-      } else {
-        const outerIdx = idx - 6;
-        const outerTotal = coreCount - 6;
-        const theta = -Math.PI / 2 + (outerIdx * Math.PI * 2) / outerTotal + Math.PI / outerTotal;
-        n.tx = cx + 106 * Math.cos(theta);
-        n.ty = cy + 106 * Math.sin(theta);
+      coreNodes.forEach((n, idx) => {
+        n.isCore = true;
+        n.importance = 3;
+        n.petalSlot = undefined;
+        const theta = -Math.PI / 2 + (idx * Math.PI * 2) / coreCount;
+        const cr = coreCount <= 4 ? 50 : 85;
+        n.tx = cx + cr * Math.cos(theta);
+        n.ty = cy + cr * Math.sin(theta);
+        n.x = n.tx + (Math.random() - 0.5) * 8;
+        n.y = n.ty + (Math.random() - 0.5) * 8;
+      });
+
+      for (let slot = 0; slot < PETAL_SLOTS; slot++) {
+        const chunk = nonCoreNodes.filter((_, idx) => idx % PETAL_SLOTS === slot);
+        assignNodesToPetal(chunk, slot, cx, cy, true);
       }
-      n.x = n.tx + (Math.random() - 0.5) * 8;
-      n.y = n.ty + (Math.random() - 0.5) * 8;
-    });
+    } else {
+      /* =========================================================
+       * 🌸 模式 B：五大分类多维全景彩虹宝莲模式
+       * 核心 24 尊大德居中央莲蓬，各分类分占专属方位花瓣
+       * ========================================================= */
+      const coreCount = Math.min(24, Math.floor(nodes.length * 0.05));
+      const coreNodes = nodes.slice(0, coreCount);
+      const nonCoreNodes = nodes.slice(coreCount);
 
-    // 2. 将非核心节点按类型分到对应的 16 瓣
-    const byType = new Map<string, NodeData[]>();
-    nonCoreNodes.forEach(n => {
-      if (!byType.has(n.type)) byType.set(n.type, []);
-      byType.get(n.type)!.push(n);
-    });
+      coreNodes.forEach((n, idx) => {
+        n.isCore = true;
+        n.importance = 3;
+        n.petalSlot = undefined;
+        if (idx < 6) {
+          const theta = -Math.PI / 2 + (idx * Math.PI * 2) / 6;
+          n.tx = cx + 48 * Math.cos(theta);
+          n.ty = cy + 48 * Math.sin(theta);
+        } else {
+          const outerIdx = idx - 6;
+          const outerTotal = coreCount - 6;
+          const theta = -Math.PI / 2 + (outerIdx * Math.PI * 2) / outerTotal + Math.PI / outerTotal;
+          n.tx = cx + 106 * Math.cos(theta);
+          n.ty = cy + 106 * Math.sin(theta);
+        }
+        n.x = n.tx + (Math.random() - 0.5) * 8;
+        n.y = n.ty + (Math.random() - 0.5) * 8;
+      });
 
-    for (let slot = 0; slot < PETAL_SLOTS; slot++) {
-      const type = PETAL_TYPES[slot];
-      const list = byType.get(type) || [];
-      const slotsForType = Object.entries(PETAL_TYPES).filter(([_, t]) => t === type).map(([s]) => Number(s));
-      const ordinal = slotsForType.indexOf(slot);
-      const chunk = list.filter((_, idx) => idx % slotsForType.length === ordinal);
-      assignNodesToPetal(chunk, slot, cx, cy);
+      const byType = new Map<string, NodeData[]>();
+      nonCoreNodes.forEach(n => {
+        if (!byType.has(n.type)) byType.set(n.type, []);
+        byType.get(n.type)!.push(n);
+      });
+
+      for (let slot = 0; slot < PETAL_SLOTS; slot++) {
+        const type = PETAL_TYPES[slot];
+        const list = byType.get(type) || [];
+        const slotsForType = Object.entries(PETAL_TYPES).filter(([_, t]) => t === type).map(([s]) => Number(s));
+        const ordinal = slotsForType.indexOf(slot);
+        const chunk = list.filter((_, idx) => idx % slotsForType.length === ordinal);
+        assignNodesToPetal(chunk, slot, cx, cy, false);
+      }
     }
 
     currentNodesRef.current = nodes;
@@ -520,9 +539,6 @@ export const GraphCanvas: React.FC = () => {
      * 🌸 绘制底层 SVG 俯视盛开宝莲底衬 (The Sacred Lotus Base)
      * ========================================================= */
     const lotusBaseGroup = g.append('g').attr('class', 'lotus-base-layer');
-
-    // 1. 16 片水滴莲瓣底衬（半透明极光彩霞）
-    // 渲染顺序：先绘制外层交错瓣 (奇数)，再绘制内层主瓣 (偶数)，展现层次重叠感
     const renderSlots = [1, 3, 5, 7, 9, 11, 13, 15, 0, 2, 4, 6, 8, 10, 12, 14];
 
     renderSlots.forEach((slotIdx) => {
@@ -531,10 +547,10 @@ export const GraphCanvas: React.FC = () => {
       const r1 = isInner ? 695 : 905;
       const wMax = isInner ? 90 : 102;
       const theta = -Math.PI / 2 + slotIdx * (Math.PI / 8);
-      const type = PETAL_TYPES[slotIdx];
+      // 单类模式下花瓣全部渲染为该类别的专色；多类模式下按 PETAL_TYPES 渐变
+      const type = singleType || PETAL_TYPES[slotIdx];
 
       const petalPathStr = generatePetalPathPolar(cx, cy, theta, r0, r1, wMax);
-
       const petalG = lotusBaseGroup.append('g').attr('class', `petal-group slot-${slotIdx}`);
 
       // 花瓣填充与外框金线
@@ -566,7 +582,6 @@ export const GraphCanvas: React.FC = () => {
         const ym = cy + rMid * Math.sin(theta);
         const halfA = petalHalfAngle(rMid, r0, r1, wMax) * 0.75;
 
-        // 左侧脉
         petalG.append('line')
           .attr('x1', xm).attr('y1', ym)
           .attr('x2', cx + rMid * Math.cos(theta - halfA))
@@ -575,7 +590,6 @@ export const GraphCanvas: React.FC = () => {
           .attr('stroke-width', 0.8)
           .style('opacity', 0.25);
 
-        // 右侧脉
         petalG.append('line')
           .attr('x1', xm).attr('y1', ym)
           .attr('x2', cx + rMid * Math.cos(theta + halfA))
@@ -585,14 +599,15 @@ export const GraphCanvas: React.FC = () => {
           .style('opacity', 0.25);
       });
 
-      // 花瓣顶端题识印记（空灵宋体微字）
+      // 花瓣外缘题识
       const tagR = r1 - 28;
       const tagX = cx + tagR * Math.cos(theta);
       const tagY = cy + tagR * Math.sin(theta);
       const rotDeg = (theta * 180 / Math.PI) + 90;
+      const titleText = isSingleMode ? `${typeLabelMap[type]} · 华瓣 ${slotIdx + 1}` : (PETAL_TITLES[slotIdx] || '');
 
       petalG.append('text')
-        .text(t(PETAL_TITLES[slotIdx] || ''))
+        .text(t(titleText))
         .attr('x', tagX).attr('y', tagY)
         .attr('font-size', '10.5px')
         .attr('fill', colorMap[type])
@@ -607,7 +622,6 @@ export const GraphCanvas: React.FC = () => {
     // 2. 中央金色莲蓬 (Golden Lotus Receptacle Pod)
     const podGroup = lotusBaseGroup.append('g').attr('class', 'lotus-pod-center');
 
-    // 莲蓬发光外光圈
     podGroup.append('circle')
       .attr('cx', cx).attr('cy', cy).attr('r', 148)
       .attr('fill', 'url(#core-pod-gradient)')
@@ -615,7 +629,6 @@ export const GraphCanvas: React.FC = () => {
       .attr('stroke-width', 1.8)
       .attr('stroke-dasharray', '6,3');
 
-    // 莲蓬同心金环
     [48, 106].forEach((cr) => {
       podGroup.append('circle')
         .attr('cx', cx).attr('cy', cy).attr('r', cr)
@@ -640,36 +653,33 @@ export const GraphCanvas: React.FC = () => {
         .attr('stroke-width', 1.2)
         .style('opacity', 0.7);
 
-      // 花药小圆点
       podGroup.append('circle')
         .attr('cx', sx2).attr('cy', sy2).attr('r', 2)
         .attr('fill', '#FBBF24')
         .style('opacity', 0.9);
     }
 
-    // 莲心正中八吉祥微徽
     podGroup.append('text')
-      .text('卍')
+      .text(isSingleMode ? (typeLabelMap[singleType!] || '正法') : '卍')
       .attr('x', cx).attr('y', cy + 5)
-      .attr('font-size', '18px')
-      .attr('fill', 'rgba(251, 191, 36, 0.25)')
+      .attr('font-size', isSingleMode ? '14px' : '18px')
+      .attr('font-weight', 'bold')
+      .attr('fill', 'rgba(251, 191, 36, 0.35)')
       .attr('text-anchor', 'middle')
       .style('pointer-events', 'none')
-      .style('font-family', 'serif');
+      .style('font-family', 'var(--font-serif), serif');
 
     /* =========================================================
      * 🌐 连线与力导向物理引擎 (Force Simulation)
      * ========================================================= */
     const webLinesGroup = g.append('g').attr('class', 'web-lines');
 
-    // 全量连线 path
     const linkPath = g.append('path')
       .attr('fill', 'none')
       .attr('stroke', 'rgba(255, 255, 255, 0.12)')
       .attr('stroke-width', 0.9)
       .style('opacity', 0.85);
 
-    // 悬停高亮连线 path
     const linkHighlight = g.append('path')
       .attr('fill', 'none')
       .attr('stroke-width', 2.4)
@@ -685,7 +695,6 @@ export const GraphCanvas: React.FC = () => {
       linkPath.attr('d', d);
     };
 
-    // 关系文字标签
     const linkLabelGroup = g.append('g')
       .attr('font-size', '10px')
       .attr('fill', 'rgba(255, 255, 255, 0.9)')
@@ -704,7 +713,7 @@ export const GraphCanvas: React.FC = () => {
         .attr('y', (l) => (((l.source as NodeData).y ?? 0) + ((l.target as NodeData).y ?? 0)) / 2 - 4);
     };
 
-    // 力导向设置：弱连线拉力 + 强花瓣锚定力 + 碰撞防重叠
+    // 力导向设置
     const simulation = d3.forceSimulation<NodeData>(nodes)
       .force('link', d3.forceLink<NodeData, LinkData>(links)
         .id(d => d.id)
@@ -736,7 +745,7 @@ export const GraphCanvas: React.FC = () => {
       .attr('cursor', 'pointer')
       .attr('transform', d => `translate(${d.x ?? cx},${d.y ?? cy})`);
 
-    // 核心节点外层光环
+    // 核心节点金光微环
     node.filter(d => !!d.isCore)
       .append('circle')
       .attr('r', d => (d.r ?? 14) + 4)
@@ -753,8 +762,10 @@ export const GraphCanvas: React.FC = () => {
       .attr('stroke-width', d => d.isCore ? 2.2 : 1.4)
       .style('filter', d => d.isCore ? 'drop-shadow(0 0 8px rgba(251, 191, 36, 0.8))' : 'none');
 
-    // 分级文字：核心大节点（莲蓬中枢 + 各瓣领衔）始终展示加粗清晰大字
-    node.filter(d => (d.importance ?? 1) >= 2)
+    // 清晰文字标签：
+    // 1. 如果处于单分类独览模式 (如法门)：所有 91 个法门直接 100% 清晰大字常显！
+    // 2. 如果处于多分类全景模式：核心节点和领衔节点大字常显，普通节点放大时渐现
+    node.filter(d => isSingleMode || (d.importance ?? 1) >= 2)
       .append('text')
       .text(d => t(d.name))
       .attr('font-size', d => d.isCore ? '13.5px' : '11.5px')
@@ -765,19 +776,20 @@ export const GraphCanvas: React.FC = () => {
       .style('text-shadow', '0px 1px 4px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.8)')
       .style('pointer-events', 'none');
 
-    // 普通露珠节点文字：全景缩览下隐藏以防堆叠，放大或悬停时优雅浮现
-    node.filter(d => (d.importance ?? 1) === 1)
-      .append('text')
-      .attr('class', 'node-label-normal')
-      .text(d => t(d.name))
-      .attr('font-size', '10.5px')
-      .attr('fill', '#F1F5F9')
-      .attr('text-anchor', 'middle')
-      .attr('dy', d => (d.r ?? 9) + 12)
-      .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.9)')
-      .style('opacity', 0)
-      .style('pointer-events', 'none')
-      .style('transition', 'opacity 0.25s ease');
+    if (!isSingleMode) {
+      node.filter(d => (d.importance ?? 1) === 1)
+        .append('text')
+        .attr('class', 'node-label-normal')
+        .text(d => t(d.name))
+        .attr('font-size', '10.5px')
+        .attr('fill', '#F1F5F9')
+        .attr('text-anchor', 'middle')
+        .attr('dy', d => (d.r ?? 9) + 12)
+        .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.9)')
+        .style('opacity', 0)
+        .style('pointer-events', 'none')
+        .style('transition', 'opacity 0.25s ease');
+    }
 
     // 拖拽手势交互
     const drag = d3.drag<SVGGElement, NodeData>()
@@ -816,11 +828,11 @@ export const GraphCanvas: React.FC = () => {
 
       node.style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0.15);
 
-      // 高亮关联普通节点的文字
-      node.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
-        .style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0);
+      if (!isSingleMode) {
+        node.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
+          .style('opacity', n => connectedNodeIds.has(n.id) ? 1 : 0);
+      }
 
-      // 高亮连线
       let hd = '';
       links.forEach(l => {
         const s = l.source as NodeData;
@@ -869,10 +881,11 @@ export const GraphCanvas: React.FC = () => {
       linkLabelGroup.selectAll('text').remove();
       webLinesGroup.selectAll('line').remove();
 
-      // 恢复普通文字的显隐状态（根据当前缩放级别）
-      const curK = d3.zoomTransform(svg.node()!).k;
-      node.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
-        .style('opacity', curK > 1.15 ? Math.min(1, (curK - 1.15) * 3) : 0);
+      if (!isSingleMode) {
+        const curK = d3.zoomTransform(svg.node()!).k;
+        node.selectAll<SVGTextElement, NodeData>('text.node-label-normal')
+          .style('opacity', curK > 1.12 ? Math.min(1, (curK - 1.12) * 3.5) : 0);
+      }
 
       hideTooltip();
     })
@@ -884,7 +897,7 @@ export const GraphCanvas: React.FC = () => {
       }
     });
 
-    // 每一帧仿真计算：执行硬边界守护，强保俯视莲花完美对称舒展
+    // 每一帧仿真计算：硬边界守护
     simulation.on('tick', () => {
       for (const n of nodes) {
         clampNodePosition(n, cx, cy);
@@ -894,18 +907,18 @@ export const GraphCanvas: React.FC = () => {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    // 默认视角：以黄金全览比例居中呈现俯视宝莲曼荼罗
+    // 默认居中缩放
     const maxLotusR = 940;
     const k0 = Math.min(width, height) / ((maxLotusR + 50) * 2);
     const fitScale0 = Math.max(0.35, Math.min(0.92, k0));
     svg.call(zoom.transform, d3.zoomIdentity.translate(cx - fitScale0 * cx, cy - fitScale0 * cy).scale(fitScale0));
 
-    // 若 URL 中携带 ?focus=xxx，平滑对焦并悬浮高亮该节点
+    // URL ?focus=xxx 自动对焦
     const focusId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('focus') : null;
     let focusTimer: any = null;
 
     if (focusId) {
-      const target = nodes.find((n) => n.id === focusId);
+      const target = nodes.find((n) => n.rawId === focusId || n.id === focusId);
       if (target) {
         focusTimer = setTimeout(() => {
           const k = 1.35;
@@ -917,7 +930,6 @@ export const GraphCanvas: React.FC = () => {
       }
     }
 
-    // 仿真 2.5 秒后平滑停顿并冻结物理计算，释放 CPU
     const freezeTimer = setTimeout(() => {
       simulation.stop();
     }, 2500);
@@ -928,10 +940,40 @@ export const GraphCanvas: React.FC = () => {
       simulation.stop();
       svg.remove();
     };
-  }, [router, visible]);
+  }, [router, visible, isSingleMode, singleType]);
 
+  // 切换分类显隐
   const toggleType = (t: string) => {
-    setVisible((prev) => ({ ...prev, [t]: !prev[t] }));
+    setVisible((prev) => {
+      const next = { ...prev, [t]: !prev[t] };
+      // 如果全部点灭了，则自动还原为全开
+      if (Object.values(next).every(v => !v)) {
+        return { person: true, book: true, concept: true, method: true, koan: true };
+      }
+      return next;
+    });
+  };
+
+  // 独览某一特定分类 (例如一键独览 91 个法门)
+  const isolateType = (t: string) => {
+    setVisible({
+      person: t === 'person',
+      book: t === 'book',
+      concept: t === 'concept',
+      method: t === 'method',
+      koan: t === 'koan',
+    });
+  };
+
+  // 还原全部五大分类
+  const resetAllTypes = () => {
+    setVisible({
+      person: true,
+      book: true,
+      concept: true,
+      method: true,
+      koan: true,
+    });
   };
 
   const handleZoomBy = (factor: number) => {
@@ -970,33 +1012,67 @@ export const GraphCanvas: React.FC = () => {
         <div className="absolute top-3 left-3 md:top-4 md:left-4 z-10 flex items-center gap-2 pointer-events-none">
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-amber-500/30 shadow-lg text-xs font-bold text-amber-300">
             <Flower2 className="w-4 h-4 text-amber-400 animate-pulse" />
-            <span>{t('自性金莲 · 俯视全景曼荼罗')}</span>
+            <span>
+              {isSingleMode 
+                ? `${t(typeLabelMap[singleType!])} · 独览全景宝莲 (共 ${COUNTS[singleType!]} 项)` 
+                : t('自性金莲 · 俯视全景曼荼罗')}
+            </span>
           </div>
         </div>
 
-        {/* Filter chips (右上角分类筛选) */}
-        <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[80%] md:max-w-[55%] overflow-x-auto no-scrollbar py-1 px-1">
-          {FILTER_TYPES.map((tType) => (
+        {/* Filter chips (右上角分类筛选与独览快捷栏) */}
+        <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[85%] md:max-w-[65%] overflow-x-auto no-scrollbar py-1 px-1">
+          {/* 全部还原按钮 (单类模式下提示) */}
+          {isSingleMode && (
             <button
-              key={tType}
-              onClick={() => toggleType(tType)}
-              className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[11px] md:text-xs font-bold border transition-all shrink-0 ${
-                visible[tType]
-                  ? 'bg-white/15 border-white/30 text-white shadow-sm'
-                  : 'bg-transparent border-white/10 text-white/35 line-through'
-              }`}
+              onClick={resetAllTypes}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] md:text-xs font-bold bg-amber-500/20 border border-amber-400/50 text-amber-200 hover:bg-amber-500/30 transition shadow-sm shrink-0"
+              title="还原全景五大分类"
             >
-              <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full" style={{ backgroundColor: colorMap[tType], opacity: visible[tType] ? 1 : 0.3 }} />
-              {t(typeLabelMap[tType])} {COUNTS[tType]}
+              <CheckCheck className="w-3.5 h-3.5" />
+              <span>{t('全景还原')}</span>
             </button>
-          ))}
+          )}
+
+          {FILTER_TYPES.map((tType) => {
+            const isCurrentSingle = isSingleMode && singleType === tType;
+            return (
+              <div key={tType} className="flex items-center shrink-0">
+                <button
+                  onClick={() => toggleType(tType)}
+                  onDoubleClick={() => isolateType(tType)}
+                  className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[11px] md:text-xs font-bold border transition-all ${
+                    isCurrentSingle
+                      ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-md scale-105'
+                      : visible[tType]
+                      ? 'bg-white/15 border-white/30 text-white shadow-sm hover:bg-white/20'
+                      : 'bg-transparent border-white/10 text-white/35 line-through'
+                  }`}
+                  title={t('单击切换显隐，双击一键独览此类')}
+                >
+                  <span
+                    className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full"
+                    style={{
+                      backgroundColor: colorMap[tType],
+                      opacity: visible[tType] ? 1 : 0.3
+                    }}
+                  />
+                  <span>{t(typeLabelMap[tType])} {COUNTS[tType]}</span>
+                </button>
+              </div>
+            );
+          })}
         </div>
 
         {/* 底部空灵提示 */}
         <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 z-10 pointer-events-none">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/75 backdrop-blur-sm border border-slate-700/60 text-[11px] text-slate-400 font-medium">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm border border-slate-700/60 text-[11px] text-slate-400 font-medium">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>{t('中心莲蓬居达摩六祖法身 · 16瓣宝莲舒展万法源流 · 滚轮放大显微')}</span>
+            <span>
+              {isSingleMode
+                ? `${typeLabelMap[singleType!]}全部 ${COUNTS[singleType!]} 个实体完整绽放 · 点击节点查看详情`
+                : t('点击右上角标签筛选，双击一键独览此类 · 滚轮缩放')}
+            </span>
           </div>
         </div>
 
@@ -1026,7 +1102,7 @@ export const GraphCanvas: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. 桌面端右侧悬浮操作面板（复位、缩放）与页面滚动指引 */}
+      {/* 2. 桌面端右侧悬浮操作面板 */}
       <div className="hidden md:flex sticky top-28 flex-col items-center space-y-3 z-30 py-2">
         <div className="flex flex-col items-center bg-slate-900/90 backdrop-blur-md p-1.5 rounded-2xl border border-slate-700 shadow-xl space-y-1">
           <button
@@ -1057,8 +1133,8 @@ export const GraphCanvas: React.FC = () => {
         <div className="flex flex-col items-center text-center p-2.5 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-700/80 text-[10px] text-slate-300 max-w-[118px] shadow-sm leading-snug">
           <MoveVertical className="w-4 h-4 text-amber-400 animate-bounce mb-1" />
           <span className="font-bold text-amber-200">鼠标置于图外滚轮滚动整页</span>
-          <span className="mt-1.5 pt-1.5 border-t border-slate-700/80 text-slate-400">图内滚轮缩放宝莲</span>
-          <span className="mt-1 text-slate-400">放大显示全部文字</span>
+          <span className="mt-1.5 pt-1.5 border-t border-slate-700/80 text-slate-400">双击分类标签可一键独览</span>
+          <span className="mt-1 text-slate-400">图内滚轮缩放宝莲</span>
         </div>
       </div>
 
