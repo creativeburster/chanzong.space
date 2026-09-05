@@ -224,15 +224,15 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
   // 目录大纲项
   const tocItems = [
-    { id: 'sec-article', title: '📖 典籍导读与原文' },
-    ...(extracted.verses.length > 0 ? [{ id: 'sec-verses', title: '📿 核心偈颂' }] : []),
-    ...(extracted.koans.length > 0 ? [{ id: 'sec-koans', title: '⚡ 公案精选' }] : []),
-    { id: 'sec-translations', title: '💡 白话今译' },
-    { id: 'sec-glossary', title: '🈳 生僻字词注音' },
-    ...(relQuotes.length > 0 ? [{ id: 'sec-quotes', title: '💬 祖师法语' }] : []),
-    ...(extracted.practices.length > 0 ? [{ id: 'sec-practices', title: '🧘 实修要旨' }] : []),
-    { id: 'sec-history', title: '📜 传法背景' },
-    { id: 'sec-network', title: '🔗 知识网络与延伸' },
+    { id: 'sec-article', title: t('📖 典籍导读与原文') },
+    ...(extracted.verses.length > 0 ? [{ id: 'sec-verses', title: t('📿 核心偈颂') }] : []),
+    ...(extracted.koans.length > 0 ? [{ id: 'sec-koans', title: t('⚡ 公案精选') }] : []),
+    { id: 'sec-translations', title: t('💡 白话今译') },
+    { id: 'sec-glossary', title: t('🈳 生僻字词注音') },
+    ...(relQuotes.length > 0 ? [{ id: 'sec-quotes', title: t('💬 祖师法语') }] : []),
+    ...(extracted.practices.length > 0 ? [{ id: 'sec-practices', title: t('🧘 实修要旨') }] : []),
+    { id: 'sec-history', title: t('📜 传法背景') },
+    { id: 'sec-network', title: t('🔗 知识网络与延伸') },
   ];
 
   const renderedHtml = useMemo(() => {
@@ -250,7 +250,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
         {/* Top Banner Header */}
         <div className={`${currentTheme.bannerBg} border-b ${currentTheme.cardBorder} py-6 sm:py-10 shadow-sm transition-colors duration-300`}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <Breadcrumb items={[{ label: '经典', href: '/books' }, { label: meta.title }]} />
+            <Breadcrumb items={[{ label: t('经典'), href: '/books' }, { label: t(meta.title) }]} />
 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
@@ -329,14 +329,14 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             <div className="flex items-center justify-between p-3 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm shadow-sm">
               <div className="flex items-center space-x-2">
                 <BookmarkCheck className="w-4 h-4 text-amber-700 shrink-0" />
-                <span>您上次阅读至约 <strong>{savedProgress}%</strong> 位置</span>
+                <span>{t('您上次阅读至约')} <strong>{savedProgress}%</strong> {t('位置')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <button
                   onClick={resumeReading}
                   className="px-3 py-1 rounded-lg bg-amber-900 text-white font-semibold text-xs hover:bg-amber-800 transition-colors shadow-sm"
                 >
-                  继续阅读
+                  {t('继续阅读')}
                 </button>
                 <button
                   onClick={() => setShowProgressBanner(false)}

@@ -10,9 +10,11 @@ import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
 import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Gem, Compass, MessageSquare, Users, Lightbulb, ChevronDown, ChevronRight, FileText } from 'lucide-react';
+import { useLang } from '@/context/LangContext';
 
 export default function SitemapClient() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const { t, getHref } = useLang();
   const [expanded, setExpanded] = useState<Record<string, boolean>>({
     classics: false,
     concepts: false,
@@ -136,13 +138,13 @@ export default function SitemapClient() {
           <div className="mb-8">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-amber-800 mb-2">
               <FileText className="w-4 h-4 text-amber-600" />
-              <span>站点地图</span>
+              <span>{t('站点地图')}</span>
             </div>
             <h1 className="text-3xl font-bold font-serif-zen text-slate-900 mb-2">
-              禅宗知识库 · 全部页面索引
+              {t('禅宗知识库 · 全部页面索引')}
             </h1>
             <p className="text-sm text-slate-500">
-              共 {STATS.classics + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} 个页面，点击各组标题展开/收起
+              {t('共')} {STATS.classics + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} {t('个页面，点击各组标题展开/收起')}
             </p>
           </div>
 
@@ -150,7 +152,7 @@ export default function SitemapClient() {
           <div className="mb-6">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800 mb-3">
               <ChevronRight className="w-4 h-4 text-slate-500" />
-              <span>主要页面</span>
+              <span>{t('主要页面')}</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {[
@@ -164,10 +166,10 @@ export default function SitemapClient() {
                 { title: '知识图谱', href: '/graph' },
               ].map((p) => (
                 <Link prefetch={false} key={p.href}
-                  href={p.href}
+                  href={getHref(p.href)}
                   className="px-3.5 py-1.5 rounded-full text-[13px] font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-400 hover:text-amber-800 transition-colors"
                 >
-                  {p.title}
+                  {t(p.title)}
                 </Link>
               ))}
             </div>
@@ -188,18 +190,18 @@ export default function SitemapClient() {
                     <div className="flex items-center space-x-3">
                       <Icon className={`w-5 h-5 ${group.color}`} />
                       <span className={`text-base font-bold font-serif-zen ${group.color}`}>
-                        {group.title}
+                        {t(group.title)}
                       </span>
                       <span className={`text-xs font-bold px-2 py-0.5 rounded-full bg-white ${group.color} border ${group.border}`}>
                         {group.count}
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Link prefetch={false} href={group.href}
+                      <Link prefetch={false} href={getHref(group.href)}
                         className={`text-xs font-bold ${group.color} hover:underline`}
                         onClick={(e) => e.stopPropagation()}
                       >
-                        查看全部 →
+                        {t('查看全部 →')}
                       </Link>
                       {isOpen ? <ChevronDown className="w-5 h-5 text-slate-500" /> : <ChevronRight className="w-5 h-5 text-slate-500" />}
                     </div>
@@ -211,16 +213,16 @@ export default function SitemapClient() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                         {group.items.map((item) => (
                           <Link prefetch={false} key={item.id}
-                            href={item.href}
+                            href={getHref(item.href)}
                             className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors group"
                           >
                             <div className="min-w-0 flex-1">
                               <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900 block truncate">
-                                {item.title}
+                                {t(item.title)}
                               </span>
                               {item.sub && (
                                 <span className="text-xs text-slate-500 block truncate">
-                                  {item.sub}
+                                  {t(item.sub)}
                                 </span>
                               )}
                             </div>

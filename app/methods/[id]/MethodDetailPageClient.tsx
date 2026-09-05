@@ -56,7 +56,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
               </p>
               {method.origin && (
                 <div className="text-sm text-slate-500 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                  <span className="font-bold mr-2">法门源流:</span>
+                  <span className="font-bold mr-2">{t('法门源流:')}</span>
                   {t(method.origin)}
                 </div>
               )}

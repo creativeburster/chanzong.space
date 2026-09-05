@@ -72,7 +72,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
         <TopHeader />
 
         <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-12 space-y-8">
-          <Breadcrumb items={[{ label: '人物', href: '/persons' }, { label: person.name }]} />
+          <Breadcrumb items={[{ label: t('人物'), href: '/persons' }, { label: t(person.name) }]} />
 
           {/* 1. 祖师概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">
@@ -91,7 +91,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
             {person.relatedPersons && person.relatedPersons.length > 0 && (
               <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-100">
                 <Users className="w-4 h-4 text-slate-500" />
-                <span className="text-[15px] font-semibold text-slate-600 mr-2">法脉关联:</span>
+                <span className="text-[15px] font-semibold text-slate-600 mr-2">{t('法脉关联:')}</span>
                 {person.relatedPersons.map(rid => {
                   const rp = ZEN_PERSONS.find(p => p.id === rid);
                   if (!rp) return null;

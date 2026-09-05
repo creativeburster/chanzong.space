@@ -323,7 +323,7 @@ export default function GraphClient() {
   const [themeOpen, setThemeOpen] = useState<Record<string, boolean>>({ 'theme-sutras': true, 'theme-koan-commentaries': true });
   const [pathOpen, setPathOpen] = useState<Record<string, boolean>>({ 'path-1': true, 'path-2': true, 'path-3': true });
   const [entityOpen, setEntityOpen] = useState<Record<string, boolean>>({ classics: true, concepts: false });
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const toggleLineage = (key: string) => setLineageOpen(prev => ({ ...prev, [key]: !prev[key] }));
   const toggleTheme = (key: string) => setThemeOpen(prev => ({ ...prev, [key]: !prev[key] }));
@@ -341,7 +341,7 @@ export default function GraphClient() {
 
         <main className="flex-1 max-w-[1440px] mx-auto w-full px-4 py-8 md:px-8 md:py-12 space-y-16">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <Breadcrumb items={[{ label: '知识图谱' }]} />
+            <Breadcrumb items={[{ label: t('知识图谱') }]} />
             <LineageViewTabs />
           </div>
 
@@ -352,7 +352,7 @@ export default function GraphClient() {
                 {t('全息交互知识网络')}
               </span>
               <span className="text-xs text-slate-500 font-serif-zen">
-                全站网状知识体系总览
+                {t('全站网状知识体系总览')}
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold font-serif-zen text-slate-900">
@@ -367,43 +367,43 @@ export default function GraphClient() {
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <BookOpen className="w-5 h-5 text-amber-600 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.classics} <span className="text-xs font-normal text-slate-500">部</span></div>
-                  <div className="text-xs text-slate-500 font-medium">经典著作</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.classics} <span className="text-xs font-normal text-slate-500">{t('部')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('经典著作')}</div>
                 </div>
               </div>
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <Sparkles className="w-5 h-5 text-emerald-600 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.concepts} <span className="text-xs font-normal text-slate-500">个</span></div>
-                  <div className="text-xs text-slate-500 font-medium">核心概念</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.concepts} <span className="text-xs font-normal text-slate-500">{t('个')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('核心概念')}</div>
                 </div>
               </div>
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <Compass className="w-5 h-5 text-sky-600 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.methods} <span className="text-xs font-normal text-slate-500">个</span></div>
-                  <div className="text-xs text-slate-500 font-medium">修持法门</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.methods} <span className="text-xs font-normal text-slate-500">{t('个')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('修持法门')}</div>
                 </div>
               </div>
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <Flame className="w-5 h-5 text-rose-600 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.koans} <span className="text-xs font-normal text-slate-500">则</span></div>
-                  <div className="text-xs text-slate-500 font-medium">公案机锋</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.koans} <span className="text-xs font-normal text-slate-500">{t('则')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('公案机锋')}</div>
                 </div>
               </div>
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <Users className="w-5 h-5 text-purple-600 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.persons} <span className="text-xs font-normal text-slate-500">位</span></div>
-                  <div className="text-xs text-slate-500 font-medium">历代祖师</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.persons} <span className="text-xs font-normal text-slate-500">{t('位')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('历代祖师')}</div>
                 </div>
               </div>
               <div className="bg-white/80 border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center gap-3">
                 <HelpCircle className="w-5 h-5 text-amber-700 shrink-0" />
                 <div>
-                  <div className="text-lg font-bold text-slate-900">{STATS.faqs} <span className="text-xs font-normal text-slate-500">条</span></div>
-                  <div className="text-xs text-slate-500 font-medium">义理问答</div>
+                  <div className="text-lg font-bold text-slate-900">{STATS.faqs} <span className="text-xs font-normal text-slate-500">{t('条')}</span></div>
+                  <div className="text-xs text-slate-500 font-medium">{t('义理问答')}</div>
                 </div>
               </div>
             </div>
@@ -414,11 +414,11 @@ export default function GraphClient() {
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold font-serif-zen text-slate-900 flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-amber-600" />
-                八瓣金莲力导向知识图谱
+                {t('八瓣金莲力导向知识图谱')}
               </h2>
-              <span className="text-xs text-slate-500">支持缩放、拖拽与高亮溯源</span>
+              <span className="text-xs text-slate-500">{t('支持缩放、拖拽与高亮溯源')}</span>
             </div>
-            <Suspense fallback={<div className="h-[750px] bg-slate-950 rounded-2xl flex items-center justify-center text-slate-400">正在生成知识网络金莲图谱…</div>}>
+            <Suspense fallback={<div className="h-[750px] bg-slate-950 rounded-2xl flex items-center justify-center text-slate-400">{t('正在生成知识网络金莲图谱…')}</div>}>
               <GraphCanvas />
             </Suspense>
           </section>
@@ -429,9 +429,9 @@ export default function GraphClient() {
               <div>
                 <h2 className="text-2xl font-bold font-serif-zen text-slate-900 flex items-center gap-2.5">
                   <GitFork className="w-6 h-6 text-amber-700" />
-                  五家七宗法脉源流手风琴
+                  {t('五家七宗法脉源流手风琴')}
                 </h2>
-                <p className="text-sm text-slate-500 mt-1">从东土初祖达摩至曹溪六祖，分流为临济、曹洞、沩仰、云门、法眼五家及杨岐、黄龙二派的全景谱系与宗门心印。</p>
+                <p className="text-sm text-slate-500 mt-1">{t('从东土初祖达摩至曹溪六祖，分流为临济、曹洞、沩仰、云门、法眼五家及杨岐、黄龙二派的全景谱系与宗门心印。')}</p>
               </div>
               <div className="flex items-center gap-2">
                 <button 
@@ -443,7 +443,7 @@ export default function GraphClient() {
                   }}
                   className="px-3 py-1.5 text-xs font-semibold bg-white border border-slate-200 rounded-lg hover:bg-slate-50 text-slate-700 transition shadow-sm"
                 >
-                  {Object.values(lineageOpen).some(Boolean) ? '全部折叠' : '全部展开'}
+                  {Object.values(lineageOpen).some(Boolean) ? t('全部折叠') : t('全部展开')}
                 </button>
               </div>
             </div>
@@ -459,14 +459,14 @@ export default function GraphClient() {
                     >
                       <div className="flex items-center gap-3.5">
                         <span className={`px-2.5 py-1 text-xs font-bold rounded-full ${sect.bgClass}`}>
-                          {sect.badge}
+                          {t(sect.badge)}
                         </span>
                         <span className={`text-base md:text-lg font-bold font-serif-zen ${sect.titleClass}`}>
-                          {sect.name}
+                          {t(sect.name)}
                         </span>
                       </div>
                       <div className="flex items-center gap-3 text-xs text-slate-500">
-                        <span className="hidden sm:inline font-medium">{sect.masters.length} 位宗师 · {sect.classics.length} 部典籍</span>
+                        <span className="hidden sm:inline font-medium">{sect.masters.length} {t('位宗师')} · {sect.classics.length} {t('部典籍')}</span>
                         <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-amber-700' : ''}`} />
                       </div>
                     </button>
@@ -474,7 +474,7 @@ export default function GraphClient() {
                     {isOpen && (
                       <div className="px-6 pb-6 pt-2 border-t border-slate-100 space-y-4">
                         <p className="text-sm text-slate-700 leading-relaxed bg-slate-50/80 p-3.5 rounded-xl border border-slate-100">
-                          {sect.summary}
+                          {t(sect.summary)}
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-1">
@@ -482,15 +482,15 @@ export default function GraphClient() {
                           <div className="space-y-2">
                             <div className="text-xs font-bold text-slate-500 flex items-center gap-1.5 uppercase tracking-wider">
                               <Users className="w-3.5 h-3.5 text-purple-600" />
-                              核心宗师人物
+                              {t('核心宗师人物')}
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.masters.map(m => (
                                 <Link prefetch={false} key={m.id} 
-                                  href={`/persons/${m.id}`}
+                                  href={getHref(`/persons/${m.id}`)}
                                   className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition shadow-xs"
                                 >
-                                  {m.name} <span className="text-purple-500 text-[10px] font-normal">({m.title})</span>
+                                  {t(m.name)} <span className="text-purple-500 text-[10px] font-normal">({t(m.title)})</span>
                                 </Link>
                               ))}
                             </div>
@@ -500,15 +500,15 @@ export default function GraphClient() {
                           <div className="space-y-2">
                             <div className="text-xs font-bold text-slate-500 flex items-center gap-1.5 uppercase tracking-wider">
                               <BookOpen className="w-3.5 h-3.5 text-amber-600" />
-                              传世宗门经典
+                              {t('传世宗门经典')}
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.classics.map(c => (
                                 <Link prefetch={false} key={c.id} 
-                                  href={`/classics/${c.id}`}
+                                  href={getHref(`/classics/${c.id}`)}
                                   className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition shadow-xs"
                                 >
-                                  《{c.title}》
+                                  《{t(c.title)}》
                                 </Link>
                               ))}
                             </div>
@@ -518,12 +518,12 @@ export default function GraphClient() {
                           <div className="space-y-2">
                             <div className="text-xs font-bold text-slate-500 flex items-center gap-1.5 uppercase tracking-wider">
                               <Compass className="w-3.5 h-3.5 text-sky-600" />
-                              纲宗与修持法门
+                              {t('纲宗与修持法门')}
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.methods.map((meth, idx) => (
                                 <span key={idx} className="px-2.5 py-1 rounded-lg text-xs font-medium bg-sky-50 text-sky-800 border border-sky-200">
-                                  {meth}
+                                  {t(meth)}
                                 </span>
                               ))}
                             </div>
@@ -533,12 +533,12 @@ export default function GraphClient() {
                           <div className="space-y-2">
                             <div className="text-xs font-bold text-slate-500 flex items-center gap-1.5 uppercase tracking-wider">
                               <Flame className="w-3.5 h-3.5 text-rose-600" />
-                              宗门代表公案
+                              {t('宗门代表公案')}
                             </div>
                             <div className="flex flex-wrap gap-1.5">
                               {sect.koans.map((k, idx) => (
                                 <span key={idx} className="px-2.5 py-1 rounded-lg text-xs font-medium bg-rose-50 text-rose-800 border border-rose-200">
-                                  {k}
+                                  {t(k)}
                                 </span>
                               ))}
                             </div>
@@ -558,9 +558,9 @@ export default function GraphClient() {
               <div>
                 <h2 className="text-2xl font-bold font-serif-zen text-slate-900 flex items-center gap-2.5">
                   <Compass className="w-6 h-6 text-sky-700" />
-                  修学阶梯与法门系统手风琴
+                  {t('修学阶梯与法门系统手风琴')}
                 </h2>
-                <p className="text-sm text-slate-500 mt-1">从初机摄心、顿悟见性，到看话逼拶、默照回互与理事圆融的完整禅修路径指引。</p>
+                <p className="text-sm text-slate-500 mt-1">{t('从初机摄心、顿悟见性，到看话逼拶、默照回互与理事圆融的完整禅修路径指引。')}</p>
               </div>
             </div>
 
@@ -575,14 +575,14 @@ export default function GraphClient() {
                     >
                       <div className="flex items-center gap-3">
                         <span className="px-2.5 py-1 bg-sky-100 text-sky-800 rounded-md text-xs font-bold font-mono">
-                          {path.step}
+                          {t(path.step)}
                         </span>
                         <span className="text-base md:text-lg font-bold font-serif-zen text-slate-900">
-                          {path.title}
+                          {t(path.title)}
                         </span>
                       </div>
                       <div className="flex items-center gap-3 text-xs text-slate-500">
-                        <span className="hidden sm:inline">{path.methods.length} 种法门</span>
+                        <span className="hidden sm:inline">{path.methods.length} {t('种法门')}</span>
                         <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-sky-700' : ''}`} />
                       </div>
                     </button>
@@ -590,28 +590,28 @@ export default function GraphClient() {
                     {isOpen && (
                       <div className="px-6 pb-6 pt-1 border-t border-slate-100 space-y-3.5">
                         <p className="text-sm text-slate-600 bg-sky-50/50 p-3 rounded-xl border border-sky-100">
-                          {path.summary}
+                          {t(path.summary)}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
-                            <div className="text-xs font-bold text-slate-500 mb-2">对应修持法门：</div>
+                            <div className="text-xs font-bold text-slate-500 mb-2">{t('对应修持法门：')}</div>
                             <div className="flex flex-wrap gap-2">
                               {path.methods.map((m, i) => (
                                 <Link prefetch={false} key={i} 
-                                  href="/methods" 
+                                  href={getHref('/methods')} 
                                   className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition"
                                 >
-                                  {m}
+                                  {t(m)}
                                 </Link>
                               ))}
                             </div>
                           </div>
                           <div>
-                            <div className="text-xs font-bold text-slate-500 mb-2">依凭修证经典：</div>
+                            <div className="text-xs font-bold text-slate-500 mb-2">{t('依凭修证经典：')}</div>
                             <div className="flex flex-wrap gap-2">
                               {path.classics.map((c, i) => (
                                 <span key={i} className="px-3 py-1.5 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200">
-                                  《{c}》
+                                  《{t(c)}》
                                 </span>
                               ))}
                             </div>
@@ -631,9 +631,9 @@ export default function GraphClient() {
               <div>
                 <h2 className="text-2xl font-bold font-serif-zen text-slate-900 flex items-center gap-2.5">
                   <BookOpen className="w-6 h-6 text-amber-700" />
-                  宗乘经论 7 大专题全景手风琴
+                  {t('宗乘经论 7 大专题全景手风琴')}
                 </h2>
-                <p className="text-sm text-slate-500 mt-1">全站 79 部经典按义理归类，提供深度的经论导读与直达研读通道。</p>
+                <p className="text-sm text-slate-500 mt-1">{manifest.length} {t('部经典按义理归类，提供深度的经论导读与直达研读通道。')}</p>
               </div>
             </div>
 
@@ -648,10 +648,10 @@ export default function GraphClient() {
                     >
                       <div className="flex items-center gap-3">
                         <span className={`px-2.5 py-1 text-xs font-bold rounded-lg ${theme.color}`}>
-                          {theme.count} 部典籍
+                          {theme.count} {t('部典籍')}
                         </span>
                         <span className="text-base md:text-lg font-bold font-serif-zen text-slate-900">
-                          {theme.title}
+                          {t(theme.title)}
                         </span>
                       </div>
                       <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-amber-700' : ''}`} />
@@ -660,7 +660,7 @@ export default function GraphClient() {
                     {isOpen && (
                       <div className="px-6 pb-6 pt-1 border-t border-slate-100 space-y-4">
                         <p className="text-sm text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100">
-                          {theme.summary}
+                          {t(theme.summary)}
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                           {theme.bookIds.map(bid => {
@@ -668,23 +668,23 @@ export default function GraphClient() {
                             if (!b) return null;
                             return (
                               <Link prefetch={false} key={bid}
-                                href={`/classics/${bid}`}
+                                href={getHref(`/classics/${bid}`)}
                                 className="group p-3.5 rounded-xl border border-slate-200 bg-white hover:border-amber-400 hover:shadow-md transition flex flex-col justify-between space-y-2"
                               >
                                 <div>
                                   <div className="text-xs font-bold text-amber-800 flex items-center justify-between">
-                                    <span>第 {b.idx} 部</span>
-                                    <span className="text-slate-400 font-normal">{b.word_count.toLocaleString()} 字</span>
+                                    <span>{t('第')} {b.idx} {t('部')}</span>
+                                    <span className="text-slate-400 font-normal">{b.word_count.toLocaleString()} {t('字')}</span>
                                   </div>
                                   <h4 className="text-sm font-bold text-slate-900 group-hover:text-amber-700 transition mt-1">
-                                    《{b.title}》
+                                    《{t(b.title)}》
                                   </h4>
                                   <p className="text-xs text-slate-500 line-clamp-2 mt-1">
-                                    {b.summary}
+                                    {t(b.summary)}
                                   </p>
                                 </div>
                                 <div className="text-[11px] font-semibold text-slate-400 group-hover:text-amber-700 flex items-center gap-1 pt-1 border-t border-slate-100">
-                                  <span>阅读原文与白话</span>
+                                  <span>{t('阅读原文与白话')}</span>
                                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                                 </div>
                               </Link>
@@ -705,9 +705,9 @@ export default function GraphClient() {
               <div>
                 <h2 className="text-2xl font-bold font-serif-zen text-slate-900 flex items-center gap-2.5">
                   <Layers className="w-6 h-6 text-purple-700" />
-                  全站六大实体精华检索手风琴
+                  {t('全站六大实体精华检索手风琴')}
                 </h2>
-                <p className="text-sm text-slate-500 mt-1">经典、概念、法门、公案、祖师、问答六大维度的全景标签云与快速跳转。</p>
+                <p className="text-sm text-slate-500 mt-1">{t('经典、概念、法门、公案、祖师、问答六大维度的全景标签云与快速跳转。')}</p>
               </div>
             </div>
 
@@ -720,10 +720,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-amber-800 flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-amber-600" />
-                    经典著作精华 ({manifest.length} 部)
+                    {t('经典著作精华')} ({manifest.length} {t('部')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.classics ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.classics ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.classics ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -731,7 +731,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {manifest.map((b) => (
-                        <Link prefetch={false} key={b.id} href={`/classics/${b.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition">
+                        <Link prefetch={false} key={b.id} href={getHref(`/classics/${b.id}`)} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition">
                           {t(b.title)}
                         </Link>
                       ))}
@@ -748,10 +748,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-emerald-800 flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-emerald-600" />
-                    核心概念精华 ({ZEN_CONCEPTS.length} 个)
+                    {t('核心概念精华')} ({ZEN_CONCEPTS.length} {t('个')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.concepts ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.concepts ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.concepts ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -759,14 +759,14 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_CONCEPTS.slice(0, 120).map((c) => (
-                        <Link prefetch={false} key={c.id} href={`/concepts/${c.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition">
+                        <Link prefetch={false} key={c.id} href={getHref(`/concepts/${c.id}`)} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition">
                           {t(c.title)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_CONCEPTS.length > 120 && (
-                      <Link prefetch={false} href="/concepts" className="inline-block mt-3 text-xs font-bold text-emerald-700 hover:underline">
-                        查看全部 {ZEN_CONCEPTS.length} 个概念 →
+                      <Link prefetch={false} href={getHref('/concepts')} className="inline-block mt-3 text-xs font-bold text-emerald-700 hover:underline">
+                        {t('查看全部')} {ZEN_CONCEPTS.length} {t('个概念')} →
                       </Link>
                     )}
                   </div>
@@ -781,10 +781,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-sky-800 flex items-center gap-2">
                     <Compass className="w-4 h-4 text-sky-600" />
-                    修持法门精华 ({ZEN_METHODS.length} 个)
+                    {t('修持法门精华')} ({ZEN_METHODS.length} {t('个')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.methods ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.methods ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.methods ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -792,7 +792,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_METHODS.map((m) => (
-                        <Link prefetch={false} key={m.id} href={`/methods/${m.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition">
+                        <Link prefetch={false} key={m.id} href={getHref(`/methods/${m.id}`)} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:bg-sky-100 transition">
                           {t(m.title)}
                         </Link>
                       ))}
@@ -809,10 +809,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-purple-800 flex items-center gap-2">
                     <Users className="w-4 h-4 text-purple-600" />
-                    祖师人物精华 ({ZEN_PERSONS.length} 位)
+                    {t('祖师人物精华')} ({ZEN_PERSONS.length} {t('位')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.persons ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.persons ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.persons ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -820,7 +820,7 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_PERSONS.map((p) => (
-                        <Link prefetch={false} key={p.id} href={`/persons/${p.id}`} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition">
+                        <Link prefetch={false} key={p.id} href={getHref(`/persons/${p.id}`)} className="px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition">
                           {t(p.name)}
                         </Link>
                       ))}
@@ -837,10 +837,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-rose-800 flex items-center gap-2">
                     <Flame className="w-4 h-4 text-rose-600" />
-                    经典公案机锋 ({ZEN_KOANS.length} 则)
+                    {t('经典公案机锋')} ({ZEN_KOANS.length} {t('则')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.koans ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.koans ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.koans ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -848,14 +848,14 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_KOANS.slice(0, 60).map((q) => (
-                        <Link prefetch={false} key={q.id} href={`/koan/${q.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition max-w-[18rem] truncate">
+                        <Link prefetch={false} key={q.id} href={getHref(`/koan/${q.id}`)} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 transition max-w-[18rem] truncate">
                           {t(q.question)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_KOANS.length > 60 && (
-                      <Link prefetch={false} href="/koan" className="inline-block mt-3 text-xs font-bold text-rose-700 hover:underline">
-                        查看全部 {ZEN_KOANS.length} 则公案 →
+                      <Link prefetch={false} href={getHref('/koan')} className="inline-block mt-3 text-xs font-bold text-rose-700 hover:underline">
+                        {t('查看全部')} {ZEN_KOANS.length} {t('则公案')} →
                       </Link>
                     )}
                   </div>
@@ -870,10 +870,10 @@ export default function GraphClient() {
                 >
                   <span className="text-[15px] font-bold text-amber-800 flex items-center gap-2">
                     <HelpCircle className="w-4 h-4 text-amber-600" />
-                    经典问答 FAQ ({ZEN_FAQS.length} 条)
+                    {t('经典问答 FAQ')} ({ZEN_FAQS.length} {t('条')})
                   </span>
                   <span className="flex items-center gap-2 text-xs text-slate-500">
-                    <span>{entityOpen.faqs ? '收起' : '展开全部'}</span>
+                    <span>{entityOpen.faqs ? t('收起') : t('展开全部')}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${entityOpen.faqs ? 'rotate-180' : ''}`} />
                   </span>
                 </button>
@@ -881,14 +881,14 @@ export default function GraphClient() {
                   <div className="px-6 pb-6 pt-1 border-t border-slate-100">
                     <div className="flex flex-wrap gap-2">
                       {ZEN_FAQS.slice(0, 60).map((f) => (
-                        <Link prefetch={false} key={f.id} href={`/faq#${f.id}`} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition max-w-[18rem] truncate">
+                        <Link prefetch={false} key={f.id} href={getHref(`/faq#${f.id}`)} className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition max-w-[18rem] truncate">
                           {t(f.question)}
                         </Link>
                       ))}
                     </div>
                     {ZEN_FAQS.length > 60 && (
-                      <Link prefetch={false} href="/faq" className="inline-block mt-3 text-xs font-bold text-amber-700 hover:underline">
-                        查看全部 {ZEN_FAQS.length} 条问答 →
+                      <Link prefetch={false} href={getHref('/faq')} className="inline-block mt-3 text-xs font-bold text-amber-700 hover:underline">
+                        {t('查看全部')} {ZEN_FAQS.length} {t('条问答')} →
                       </Link>
                     )}
                   </div>

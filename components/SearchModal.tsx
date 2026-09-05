@@ -98,7 +98,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   const [query, setQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<SearchCategory>('all');
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const { t, toSimp, toTrad } = useLang();
+  const { t, toSimp, toTrad, getHref } = useLang();
   const router = useRouter();
   const resultsContainerRef = useRef<HTMLDivElement>(null);
 
@@ -253,7 +253,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   // 4. 键盘上下切换与回车跳转
   const handleItemSelect = (href: string) => {
     onClose();
-    router.push(href);
+    router.push(getHref(href));
   };
 
   const handleKeyDownInInput = (e: React.KeyboardEvent) => {
@@ -302,7 +302,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDownInInput}
-            placeholder="搜索全站经典、祖师、概念、公案、问答（如：六祖、末那识、一颗明珠、野狐...）"
+            placeholder={t('搜索全站经典、祖师、概念、公案、问答（如：六祖、末那识、一颗明珠、野狐...）')}
             className="w-full bg-transparent text-sm sm:text-base text-zinc-900 placeholder-zinc-400 focus:outline-none font-medium"
           />
           {query && (
@@ -310,7 +310,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               onClick={() => setQuery('')}
               className="text-xs text-zinc-400 hover:text-zinc-700 px-1.5 py-0.5 rounded bg-zinc-200/60"
             >
-              清空
+              {t('清空')}
             </button>
           )}
           <button
@@ -337,7 +337,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
-                <span>{tab.label}</span>
+                <span>{t(tab.label)}</span>
               </button>
             );
           })}
@@ -350,8 +350,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         >
           {filteredResults.length === 0 ? (
             <div className="text-center py-16 text-zinc-500 text-sm space-y-2">
-              <p className="font-semibold">未找到与 “{query}” 相关的条目</p>
-              <p className="text-xs text-zinc-400">可尝试搜索其他关键词，或切换分类筛选</p>
+              <p className="font-semibold">{t('未找到与')} “{query}” {t('相关的条目')}</p>
+              <p className="text-xs text-zinc-400">{t('可尝试搜索其他关键词，或切换分类筛选')}</p>
             </div>
           ) : (
             filteredResults.map((item, idx) => {
@@ -412,13 +412,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         <div className="px-4 py-3 bg-zinc-50 border-t border-zinc-200 text-xs text-zinc-500 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span>
-              已检索 <strong>{allSearchData.length}</strong> 条全站实体（{items.length} 经典 · {ZEN_PERSONS.length} 祖师 · {ZEN_KOANS.length} 公案 · {ZEN_FAQS.length} 问答）
+              {t('已检索')} <strong>{allSearchData.length}</strong> {t('条全站实体')}（{items.length} {t('经典')} · {ZEN_PERSONS.length} {t('祖师')} · {ZEN_KOANS.length} {t('公案')} · {ZEN_FAQS.length} {t('问答')}）
             </span>
           </div>
           <div className="flex items-center space-x-3 text-zinc-400">
-            <span className="hidden sm:inline">↑ ↓ 选择</span>
-            <span className="hidden sm:inline">Enter 打开</span>
-            <span>ESC 退出</span>
+            <span className="hidden sm:inline">↑ ↓ {t('选择')}</span>
+            <span className="hidden sm:inline">Enter {t('打开')}</span>
+            <span>ESC {t('退出')}</span>
           </div>
         </div>
       </div>

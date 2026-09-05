@@ -336,7 +336,7 @@ export const GraphCanvas: React.FC = () => {
   const router = useRouter();
   const currentNodesRef = useRef<NodeData[]>([]);
   const tooltipRef = useRef<HTMLDivElement>(null);
-  const { t } = useLang();
+  const { t, getHref } = useLang();
 
   const [visible, setVisible] = useState<Record<string, boolean>>({
     person: true,
@@ -890,10 +890,11 @@ export const GraphCanvas: React.FC = () => {
       hideTooltip();
     })
     .on('click', (event, d) => {
+      const targetUrl = getHref(d.url);
       if (window.matchMedia('(max-width: 768px)').matches) {
-        setTimeout(() => { router.push(d.url); }, 3000);
+        setTimeout(() => { router.push(targetUrl); }, 3000);
       } else {
-        router.push(d.url);
+        router.push(targetUrl);
       }
     });
 
@@ -1070,7 +1071,7 @@ export const GraphCanvas: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>
               {isSingleMode
-                ? `${typeLabelMap[singleType!]}全部 ${COUNTS[singleType!]} 个实体完整绽放 · 点击节点查看详情`
+                ? `${t(typeLabelMap[singleType!])}${t('全部')} ${COUNTS[singleType!]} ${t('个实体完整绽放 · 点击节点查看详情')}`
                 : t('点击右上角标签筛选，双击一键独览此类 · 滚轮缩放')}
             </span>
           </div>
@@ -1081,21 +1082,21 @@ export const GraphCanvas: React.FC = () => {
           <button
             onClick={handleZoomIn}
             className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white active:bg-white/20 rounded-full transition-colors"
-            title="放大"
+            title={t('放大')}
           >
             <Plus className="w-4 h-4" />
           </button>
           <button
             onClick={handleZoomOut}
             className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white active:bg-white/20 rounded-full transition-colors"
-            title="缩小"
+            title={t('缩小')}
           >
             <Minus className="w-4 h-4" />
           </button>
           <button
             onClick={handleReset}
             className="w-8 h-8 flex items-center justify-center text-amber-400 hover:text-amber-300 active:bg-white/20 rounded-full transition-colors"
-            title="复位宝莲"
+            title={t('复位宝莲')}
           >
             <RotateCcw className="w-4 h-4" />
           </button>
@@ -1108,14 +1109,14 @@ export const GraphCanvas: React.FC = () => {
           <button
             onClick={handleZoomIn}
             className="p-2 text-slate-300 hover:text-amber-300 hover:bg-white/10 rounded-xl transition-all active:scale-95"
-            title="放大图谱"
+            title={t('放大图谱')}
           >
             <Plus className="w-4 h-4" />
           </button>
           <button
             onClick={handleZoomOut}
             className="p-2 text-slate-300 hover:text-amber-300 hover:bg-white/10 rounded-xl transition-all active:scale-95"
-            title="缩小图谱"
+            title={t('缩小图谱')}
           >
             <Minus className="w-4 h-4" />
           </button>
@@ -1123,7 +1124,7 @@ export const GraphCanvas: React.FC = () => {
           <button
             onClick={handleReset}
             className="p-2 text-amber-400 hover:text-amber-300 hover:bg-white/10 rounded-xl transition-all active:scale-95"
-            title="复位俯视全景"
+            title={t('复位俯视全景')}
           >
             <RotateCcw className="w-4 h-4" />
           </button>
@@ -1132,9 +1133,9 @@ export const GraphCanvas: React.FC = () => {
         {/* 页面滚动与缩放指引提示 */}
         <div className="flex flex-col items-center text-center p-2.5 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-700/80 text-[10px] text-slate-300 max-w-[118px] shadow-sm leading-snug">
           <MoveVertical className="w-4 h-4 text-amber-400 animate-bounce mb-1" />
-          <span className="font-bold text-amber-200">鼠标置于图外滚轮滚动整页</span>
-          <span className="mt-1.5 pt-1.5 border-t border-slate-700/80 text-slate-400">双击分类标签可一键独览</span>
-          <span className="mt-1 text-slate-400">图内滚轮缩放宝莲</span>
+          <span className="font-bold text-amber-200">{t('鼠标置于图外滚轮滚动整页')}</span>
+          <span className="mt-1.5 pt-1.5 border-t border-slate-700/80 text-slate-400">{t('双击分类标签可一键独览')}</span>
+          <span className="mt-1 text-slate-400">{t('图内滚轮缩放宝莲')}</span>
         </div>
       </div>
 

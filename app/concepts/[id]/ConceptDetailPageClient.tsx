@@ -61,7 +61,7 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
               </p>
               {concept.etymology && (
                 <div className="text-sm text-slate-500 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                  <span className="font-bold mr-2">词源 / 别名:</span>
+                  <span className="font-bold mr-2">{t('词源 / 别名:')}</span>
                   {t(concept.etymology)}
                 </div>
               )}
