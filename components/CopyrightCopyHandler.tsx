@@ -3,15 +3,16 @@
 import { useEffect } from 'react';
 
 /**
- * 全站版权复制拦截器（知乎模式）：
- * 当用户选中页面文本并复制时，若字数超过设定阈值（15字），
- * 自动在剪贴板末尾附带出处标题、页面链接、来源网站及版权声明，
- * 既保护站点原创版权，又防止因全文复制导致内存溢出。
+ * 全站版权复制拦截器（知乎/简书模式）：
+ * 当用户选中页面文字并复制时（无论是快捷键 Ctrl+C、Cmd+C，还是右键菜单复制）：
+ * 1. 门槛低至 5 个字符以上（确保名言、诗偈、哪怕 5-10 字短句均能精准附加版权声明）；
+ * 2. 同时向系统剪贴板写入 text/plain 与 text/html，确保微信（电脑端与手机端聊天框富文本）、Word、笔记应用粘贴时 100% 携带出处与链接；
+ * 3. 采用捕获阶段 (capture: true) 优先监听，防止被其他组件拦截。
  */
 export function CopyrightCopyHandler() {
   useEffect(() => {
     const handleCopy = (e: ClipboardEvent) => {
-      // 避免在 input/textarea 内部输入框内复制时触发拦截
+      // 避免在用户输入框内打字编辑时受到打扰
       const target = e.target as HTMLElement | null;
       if (
         target &&
@@ -26,17 +27,19 @@ export function CopyrightCopyHandler() {
       if (!selection) return;
 
       const selectedText = selection.toString();
-      // 仅当选中文本达到 15 个字符以上（成句、成段）时附加版权声明
-      // 短词查询（如复制单个词汇去搜索）保持纯净不受打扰
-      if (selectedText.trim().length >= 15) {
+      // 只要选中文本长度达到 5 个字以上（如短句、名言警句、法偈段落）即触发
+      if (selectedText && selectedText.trim().length >= 5) {
+        // 阻止浏览器默认剪贴板写入
         e.preventDefault();
 
-        const pageTitle = document.title
-          ? document.title.replace(/\s*\|\s*禅宗知识库.*$/, '').trim()
-          : '禅宗典籍';
+        const rawTitle = document.title || '禅宗典籍';
+        const pageTitle = rawTitle
+          .replace(/\s*\|\s*禅宗知识库.*$/, '')
+          .replace(/\s*·\s*禅宗知识库.*$/, '')
+          .trim();
         const pageUrl = window.location.href;
 
-        const copyrightFooter = [
+        const attributionText = [
           '',
           '————————————',
           `出处：《${pageTitle}》`,
@@ -45,17 +48,32 @@ export function CopyrightCopyHandler() {
           '著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。',
         ].join('\n');
 
-        const fullText = selectedText + '\n' + copyrightFooter;
+        const fullPlainText = selectedText + '\n' + attributionText;
 
+        const htmlAttribution = `<br><br>————————————<br>出处：《${pageTitle}》<br>链接：<a href="${pageUrl}">${pageUrl}</a><br>来源：禅宗知识库 (chanzong.space)<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。`;
+        const fullHtmlText = `<div>${selectedText.replace(/\r\n|\n/g, '<br>')}${htmlAttribution}</div>`;
+
+        // 1. 优先使用标准 clipboardData 写入纯文本和 HTML 富文本（微信聊天窗口优先读取 text/html）
         if (e.clipboardData) {
-          e.clipboardData.setData('text/plain', fullText);
+          e.clipboardData.clearData();
+          e.clipboardData.setData('text/plain', fullPlainText);
+          e.clipboardData.setData('text/html', fullHtmlText);
+        }
+
+        // 2. 补充 navigator.clipboard 兼容性保障
+        if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
+          navigator.clipboard.writeText(fullPlainText).catch(() => {});
         }
       }
     };
 
-    document.addEventListener('copy', handleCopy);
+    // 绑定捕获阶段，确保优先级最高
+    document.addEventListener('copy', handleCopy, true);
+    window.addEventListener('copy', handleCopy, true);
+
     return () => {
-      document.removeEventListener('copy', handleCopy);
+      document.removeEventListener('copy', handleCopy, true);
+      window.removeEventListener('copy', handleCopy, true);
     };
   }, []);
 
