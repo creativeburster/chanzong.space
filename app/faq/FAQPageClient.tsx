@@ -52,7 +52,7 @@ export default function FAQPageClient() {
 
   const koanMap = useMemo(() => {
     const map = new Map<string, typeof ZEN_KOANS[0]>();
-    ZEN_KOANS.forEach((k) => koanMap.set(k.id, k));
+    ZEN_KOANS.forEach((k) => map.set(k.id, k));
     return map;
   }, []);
 
