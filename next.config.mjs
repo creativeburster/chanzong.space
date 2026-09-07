@@ -2,6 +2,12 @@
 const nextConfig = {
   async redirects() {
     return [
+      { source: '/books/liuzutanjing', destination: '/classics/tanjing', permanent: true },
+      { source: '/classics/liuzutanjing', destination: '/classics/tanjing', permanent: true },
+      { source: '/zh-tw/books/liuzutanjing', destination: '/zh-tw/classics/tanjing', permanent: true },
+      { source: '/zh-tw/classics/liuzutanjing', destination: '/zh-tw/classics/tanjing', permanent: true },
+      { source: '/books/:id', destination: '/classics/:id', permanent: true },
+      { source: '/zh-tw/books/:id', destination: '/zh-tw/classics/:id', permanent: true },
       { source: '/classics/runingyulu', destination: '/classics/rujingyulu', permanent: true },
       { source: '/classics/runingxuyulu', destination: '/classics/rujingxuyulu', permanent: true },
       { source: '/persons/baozhi', destination: '/persons/zhigong', permanent: true },
