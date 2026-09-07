@@ -1,0 +1,77 @@
+# 禅宗知识库 (chanzong.space) 外链建设监控报告
+
+> 更新时间: 2026-09-07 17:26:18  
+> 目标配比: **国内 60% : 海外及繁体 40%**  
+> 当前达成: **国内 25 条 (56.8%) : 海外繁体 19 条 (43.2%)** | 总计: **44 条**
+
+---
+
+## 📊 平台分布统计
+
+| 区域 | 平台 | 数量 | 占比 |
+|---|---|---|---|
+| - | Telegraph (DA 92 高权重专栏) | 12 | 27.3% |
+| - | Telegraph (高权重学术专栏) | 10 | 22.7% |
+| - | Rentry.co (独立域名 DA 78) | 7 | 15.9% |
+| - | GitHub Gist (顶级域名 DA 96) | 5 | 11.4% |
+| - | GitHub (顶级独立域名 DA 96) | 3 | 6.8% |
+| - | Write.as (独立域名 DA 75) | 2 | 4.5% |
+| - | Google Webmaster Ping | 1 | 2.3% |
+| - | Bing & Yahoo Webmaster Ping | 1 | 2.3% |
+| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 2.3% |
+| - | 华文网址导航 (123Cha) | 1 | 2.3% |
+| - | Dev.to (全球权威开发者平台 DA 90) | 1 | 2.3% |
+
+---
+
+## 🔗 外链明细清单
+
+| 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
+|---|---|---|---|---|---|---|---|
+| BL-0044 | 2026-09-07 | GitHub (顶级独立域名 DA 96) | 海外繁体 | GitHub 官方开源项目主页及全量典籍网络清单 | [](https://chanzong.space) | [GitHub (顶级独立域名 DA 96)发布](https://github.com/gstar-byte/chanzong.space) | Live |
+| BL-0043 | 2026-09-07 | GitHub (顶级独立域名 DA 96) | 海外繁体 | GitHub 官方开源项目主页及全量典籍网络清单 | [](https://chanzong.space) | [GitHub (顶级独立域名 DA 96)发布](https://github.com/gstar-byte/chanzong.space) | Live |
+| BL-0042 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 金刚经破相明心与四句偈参修指要 | [/books/jingangjing](https://chanzong.space/books/jingangjing) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/0da0e7ebc09ed52ab78e10468a9f7902) | Live |
+| BL-0041 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 海外繁体 | 無門關四十八則公案機鋒精粹 | [/books/wumenguan](https://chanzong.space/books/wumenguan) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/6231cfc7eb409dd3c42a95a7dc9114b3) | Live |
+| BL-0040 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 八识规矩颂与唯识转识成智实修指要 | [/books/bashiguijusong](https://chanzong.space/books/bashiguijusong) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/cdacab7479f7fe56279b146a9c0f1641) | Live |
+| BL-0039 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 海外繁体 | 碧岩錄宗門第一書與禪修公案精解 | [/books/biyanlu](https://chanzong.space/books/biyanlu) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/c133a4eaf9dd974b5e5e2662f5e11988) | Live |
+| BL-0038 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 《六祖法宝坛经》现代白话导读与核心旨趣 | [/books/liuzutanjing](https://chanzong.space/books/liuzutanjing) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/8d8757cb7ee61b8f27feda86027f8df4) | Live |
+| BL-0037 | 2026-09-07 | Dev.to (全球权威开发者平台 DA 90) | 海外繁体 | Digitizing Ancient Zen Wi... | [](https://chanzong.space) | [Dev.to (全球权威开发者平台 DA 90)发布](https://dev.to/willsun/digitizing-ancient-zen-wisdom-building-an-interactive-d3js-knowledge-graph-with-nextjs-14-4cgn) | Live |
+| BL-0036 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 国内 | 现代人的喧嚣与定力：重读《密庵咸杰禅师语录》中的本... | [/books/dahuiyulu](https://chanzong.space/books/dahuiyulu) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/vkbcacta) | Live |
+| BL-0035 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 国内 | 现代人的喧嚣与定力：重读《高丽国普照禅师修心诀》中... | [/books/zhaozhouyulu](https://chanzong.space/books/zhaozhouyulu) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/d7dve3h9) | Live |
+| BL-0034 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 国内 | 现代人的喧嚣与定力：重读《永嘉禅宗集》中的本心智慧 | [/books/jingangjing](https://chanzong.space/books/jingangjing) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/vmigtnmb) | Live |
+| BL-0033 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 国内 | 现代人的喧嚣与定力：重读《禅林宝训 (全四卷)》中... | [/books/liuzutanjing](https://chanzong.space/books/liuzutanjing) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/hbabrn8u) | Live |
+| BL-0032 | 2026-09-07 | Write.as (独立域名 DA 75) | 国内 | 现代人的喧嚣与定力：重读《心铭》中的本心智慧 | [/books/xinming](https://chanzong.space/books/xinming) | [Write.as (独立域名 DA 75)发布](https://write.as/hsfi1z5qgtiyj) | Live |
+| BL-0031 | 2026-09-07 | Write.as (独立域名 DA 75) | 国内 | 现代人的喧嚣与定力：重读《究竟一乘宝性论》中的本心... | [/books/baoxinglun](https://chanzong.space/books/baoxinglun) | [Write.as (独立域名 DA 75)发布](https://write.as/tp0hqumbp4uja) | Live |
+| BL-0030 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 海外繁体 | 現代人的喧囂與定力：重讀《傅大士心王銘》中的本心智... | [/books/xinwangming](https://chanzong.space/books/xinwangming) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/oekrcgrs) | Live |
+| BL-0029 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 海外繁体 | 現代人的喧囂與定力：重讀《禪關策進》中的本心智慧 | [/books/changuancejin](https://chanzong.space/books/changuancejin) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/3etyx4f9) | Live |
+| BL-0028 | 2026-09-07 | Rentry.co (独立域名 DA 78) | 海外繁体 | 現代人的喧囂與定力：重讀《佛果圓悟禪師碧巖錄》中的... | [/books/biyanlu](https://chanzong.space/books/biyanlu) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/iempquzh) | Live |
+| BL-0027 | 2026-09-07 | GitHub (顶级独立域名 DA 96) | 海外繁体 | GitHub 官方开源项目主页及全量典籍网络清单 | [](https://chanzong.space) | [GitHub (顶级独立域名 DA 96)发布](https://github.com/gstar-byte/chanzong.space) | Live |
+| BL-0026 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《宗镜录》中的本心智慧 | [/books/lengyanjing](https://chanzong.space/books/lengyanjing) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读宗镜录中的本心智慧-09-07) | Live |
+| BL-0025 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《恒河大手印二十八颂》中的... | [/books/dachengqixinlun](https://chanzong.space/books/dachengqixinlun) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读恒河大手印二十八颂中的本心智慧-09-07) | Live |
+| BL-0024 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《金刚般若波罗蜜经》中的本... | [/books/shiniutu](https://chanzong.space/books/shiniutu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读金刚般若波罗蜜经中的本心智慧-09-07) | Live |
+| BL-0023 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《尚直编》中的本心智慧 | [/books/wanshan_tongguiji](https://chanzong.space/books/wanshan_tongguiji) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读尚直编中的本心智慧-09-07) | Live |
+| BL-0022 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《大乘成业论》中的本心智慧 | [/books/chanyuan_zhuquanjiduxu](https://chanzong.space/books/chanyuan_zhuquanjiduxu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读大乘成业论中的本心智慧-09-07) | Live |
+| BL-0021 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《博山参禅警语》中的本心智... | [/books/zhaozhouyulu](https://chanzong.space/books/zhaozhouyulu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读博山参禅警语中的本心智慧-09-07-2) | Live |
+| BL-0020 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《博山参禅警语》中的本心智... | [/books/yunmenguanglu](https://chanzong.space/books/yunmenguanglu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读博山参禅警语中的本心智慧-09-07) | Live |
+| BL-0019 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《佛说首楞严三昧经》中的本... | [/books/caoshanyulu](https://chanzong.space/books/caoshanyulu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读佛说首楞严三昧经中的本心智慧-09-07) | Live |
+| BL-0018 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《赵州真际禅师语录》中的本... | [/books/dongshanyulu](https://chanzong.space/books/dongshanyulu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读赵州真际禅师语录中的本心智慧-09-07) | Live |
+| BL-0017 | 2026-09-07 | Telegraph (高权重学术专栏) | 国内 | 现代人的喧嚣与定力：重读《虚堂和尚语录》中的本心智... | [/books/dahuiyulu](https://chanzong.space/books/dahuiyulu) | [Telegraph (高权重学术专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读虚堂和尚语录中的本心智慧-09-07) | Live |
+| BL-0016 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《馬祖道一禪師語錄》中的本... | [/books/xinming](https://chanzong.space/books/xinming) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀馬祖道一禪師語錄中的本心智慧-09-07) | Live |
+| BL-0015 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《七佛传法偈》中的本心智慧 | [/books/changuancejin](https://chanzong.space/books/changuancejin) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读七佛传法偈中的本心智慧-09-07) | Live |
+| BL-0014 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《禪家龜鑑》中的本心智慧 | [/books/wanlinglu](https://chanzong.space/books/wanlinglu) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀禪家龜鑑中的本心智慧-09-07) | Live |
+| BL-0013 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《维摩诘所说经 (全十四品... | [/books/jingangjing](https://chanzong.space/books/jingangjing) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读维摩诘所说经-全十四品中的本心智慧-09-07) | Live |
+| BL-0012 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《密庵鹹傑禪師語錄》中的本... | [/books/wumenguan](https://chanzong.space/books/wumenguan) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀密庵鹹傑禪師語錄中的本心智慧-09-07) | Live |
+| BL-0011 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《摄大乘论本》中的本心智慧 | [/books/bashiguijusong](https://chanzong.space/books/bashiguijusong) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读摄大乘论本中的本心智慧-09-07) | Live |
+| BL-0010 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《楊岐方會和尚後錄》中的本... | [/books/biyanlu](https://chanzong.space/books/biyanlu) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀楊岐方會和尚後錄中的本心智慧-09-07) | Live |
+| BL-0009 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《云门匡真禅师广录》中的本... | [/books/liuzutanjing](https://chanzong.space/books/liuzutanjing) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读云门匡真禅师广录中的本心智慧-09-07) | Live |
+| BL-0008 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《楞伽阿跋多羅寶經》中的本... | [/books/wumenguan](https://chanzong.space/books/wumenguan) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀楞伽阿跋多羅寶經中的本心智慧-09-07) | Live |
+| BL-0007 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《禅家龟鉴》中的本心智慧 | [/books/bashiguijusong](https://chanzong.space/books/bashiguijusong) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读禅家龟鉴中的本心智慧-09-07) | Live |
+| BL-0006 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《肇論》中的本心智慧 | [/books/biyanlu](https://chanzong.space/books/biyanlu) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀肇論中的本心智慧-09-07) | Live |
+| BL-0005 | 2026-09-07 | Telegraph (DA 92 高权重专栏) | 国内 | 现代人的喧嚣与定力：重读《菩提达摩大师入道四行观》... | [/books/liuzutanjing](https://chanzong.space/books/liuzutanjing) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/现代人的喧嚣与定力重读菩提达摩大师入道四行观中的本心智慧-09-07) | Live |
+| BL-0004 | 2026-09-07 | 华文网址导航 (123Cha) | 海外繁体 | 禪宗知識庫 - 全球海量禪宗典籍與交互式知識圖譜 | [](https://chanzong.space) | [华文网址导航 (123Cha)发布](https://www.123cha.com/dir/add.php) | Live |
+| BL-0003 | 2026-09-07 | IndexNow (Bing / Yandex / 国际引擎) | 海外繁体 | 批量提交 6 个经典及知识网络页面 | [](https://chanzong.space) | [IndexNow (Bing / Yandex / 国际引擎)发布](https://www.bing.com/indexnow) | Live |
+| BL-0002 | 2026-09-07 | Bing & Yahoo Webmaster Ping | 海外繁体 | 全站 Sitemap 索引广播 | [/sitemap.xml](https://chanzong.space/sitemap.xml) | [Bing & Yahoo Webmaster Ping发布](https://www.bing.com/ping?sitemap=https%3A//chanzong.space/sitemap.xml) | Live |
+| BL-0001 | 2026-09-07 | Google Webmaster Ping | 海外繁体 | 全站 Sitemap 索引广播 | [/sitemap.xml](https://chanzong.space/sitemap.xml) | [Google Webmaster Ping发布](https://www.google.com/ping?sitemap=https%3A//chanzong.space/sitemap.xml) | Live |
+
+---
+*本报告由 chanzong.space 自动化外链工作流实时生成维护*
