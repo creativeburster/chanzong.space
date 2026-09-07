@@ -1,14 +1,18 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Volume2, X, BookOpen } from 'lucide-react';
+import { Volume2, X, BookOpen, VolumeX, Sparkles, Pin } from 'lucide-react';
 import { GlossaryEntry } from '@/lib/glossary';
 
 /**
- * 将 HTML 文本中的生僻字/禅宗术语注入带 dataset 的 <mark> 标签
+ * 将 HTML 文本中的生僻字/禅宗术语注入带 dataset 与拼音上标的 <ruby> 标签
  * 确保绝不破坏 HTML 标签内部的属性和结构，且优先匹配长词避免嵌套
  */
-export function injectGlossaryMarkups(html: string, entries: GlossaryEntry[]): string {
+export function injectGlossaryMarkups(
+  html: string,
+  entries: GlossaryEntry[],
+  showPinyinAbove: boolean = true
+): string {
   if (!html || !entries || entries.length === 0) return html;
 
   // 1. 去重并按词长降序排列
@@ -38,7 +42,12 @@ export function injectGlossaryMarkups(html: string, entries: GlossaryEntry[]): s
       const charEnc = encodeURIComponent(entry.char);
       const pinyinEnc = encodeURIComponent(entry.pinyin);
       const meaningEnc = encodeURIComponent(entry.meaning);
-      return `<mark class="zen-glossary-term cursor-help select-none font-medium px-1 py-0.5 rounded bg-amber-500/10 text-amber-900 dark:text-amber-300 border-b-2 border-dashed border-amber-500/60 hover:bg-amber-500/25 hover:border-amber-700 transition-colors" data-char="${charEnc}" data-pinyin="${pinyinEnc}" data-meaning="${meaningEnc}" title="点击或悬浮查看注音释义">${match}</mark>`;
+
+      const pinyinHtml = showPinyinAbove
+        ? `<span class="zen-pinyin-rt text-[10px] sm:text-[11px] font-sans font-bold leading-none text-amber-700 dark:text-amber-400 tracking-normal mb-0.5 select-none opacity-90">${entry.pinyin}</span>`
+        : '';
+
+      return `<ruby class="zen-glossary-term cursor-pointer select-none px-1 py-0.5 mx-0.5 rounded-lg bg-amber-500/15 dark:bg-amber-500/20 text-amber-950 dark:text-amber-100 border-b-2 border-amber-600/70 hover:bg-amber-500/30 hover:border-amber-700 dark:hover:bg-amber-500/35 transition-all font-semibold inline-flex flex-col items-center align-middle" data-char="${charEnc}" data-pinyin="${pinyinEnc}" data-meaning="${meaningEnc}" title="点击固定查看详细释义与真人发音">${pinyinHtml}<span class="zen-char-rb leading-normal">${match}</span></ruby>`;
     });
   }
 
@@ -50,6 +59,7 @@ interface ActiveTooltipState {
   pinyin: string;
   meaning: string;
   rect: DOMRect;
+  pinned: boolean; // 是否点击固定
 }
 
 export const InlineGlossaryTooltip: React.FC<{
@@ -67,10 +77,14 @@ export const InlineGlossaryTooltip: React.FC<{
     }
   };
 
-  const scheduleClose = (delay = 250) => {
+  const scheduleClose = (delay = 350) => {
     clearCloseTimer();
     closeTimerRef.current = setTimeout(() => {
-      setActive(null);
+      setActive((prev) => {
+        // 如果已被点击固定，则不自动关闭
+        if (prev?.pinned) return prev;
+        return null;
+      });
     }, delay);
   };
 
@@ -104,7 +118,10 @@ export const InlineGlossaryTooltip: React.FC<{
           const pinyin = decodeURIComponent(pinyinEnc);
           const meaning = decodeURIComponent(meaningEnc);
           const rect = target.getBoundingClientRect();
-          setActive({ char, pinyin, meaning, rect });
+          setActive((prev) => {
+            // 如果之前已经被固定为其他词，悬停新词时切换
+            return { char, pinyin, meaning, rect, pinned: false };
+          });
         }
       }
     };
@@ -112,7 +129,7 @@ export const InlineGlossaryTooltip: React.FC<{
     const handleMouseOut = (e: MouseEvent) => {
       const target = (e.target as HTMLElement)?.closest('.zen-glossary-term');
       if (target) {
-        scheduleClose(300);
+        scheduleClose(350);
       }
     };
 
@@ -128,7 +145,8 @@ export const InlineGlossaryTooltip: React.FC<{
           const pinyin = decodeURIComponent(pinyinEnc);
           const meaning = decodeURIComponent(meaningEnc);
           const rect = target.getBoundingClientRect();
-          setActive({ char, pinyin, meaning, rect });
+          // 点击切换固定状态
+          setActive({ char, pinyin, meaning, rect, pinned: true });
         }
       } else if (tooltipRef.current && !tooltipRef.current.contains(e.target as Node)) {
         setActive(null);
@@ -151,9 +169,9 @@ export const InlineGlossaryTooltip: React.FC<{
   if (!active) return null;
 
   // 计算屏幕定位：优先向上弹出，若上方空间不足则向下弹出
-  const tooltipWidth = 300;
-  const tooltipHeight = 160;
-  const margin = 10;
+  const tooltipWidth = 320;
+  const tooltipHeight = 175;
+  const margin = 12;
 
   let top = active.rect.top - tooltipHeight - margin;
   let placement: 'top' | 'bottom' = 'top';
@@ -164,68 +182,70 @@ export const InlineGlossaryTooltip: React.FC<{
   }
 
   let left = active.rect.left + active.rect.width / 2 - tooltipWidth / 2;
-  if (left < 10) left = 10;
-  if (typeof window !== 'undefined' && left + tooltipWidth > window.innerWidth - 10) {
-    left = window.innerWidth - tooltipWidth - 10;
+  if (left < 12) left = 12;
+  if (typeof window !== 'undefined' && left + tooltipWidth > window.innerWidth - 12) {
+    left = window.innerWidth - tooltipWidth - 12;
   }
 
   return (
     <div
       ref={tooltipRef}
       onMouseEnter={clearCloseTimer}
-      onMouseLeave={() => scheduleClose(200)}
+      onMouseLeave={() => scheduleClose(250)}
       style={{
         position: 'fixed',
         top: `${top}px`,
         left: `${left}px`,
         width: `${tooltipWidth}px`,
-        zIndex: 9999,
+        zIndex: 99999,
       }}
-      className="bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900/60 rounded-2xl shadow-2xl p-4 animate-fade-in text-left pointer-events-auto backdrop-blur-md"
+      className="bg-white/95 dark:bg-slate-900/95 border-2 border-amber-500/70 dark:border-amber-500/50 rounded-2xl shadow-2xl p-4 animate-fade-in text-left pointer-events-auto backdrop-blur-xl ring-4 ring-amber-500/10"
     >
-      {/* 头部：字、拼音、朗读与关闭 */}
-      <div className="flex items-center justify-between pb-2 mb-2 border-b border-amber-100 dark:border-amber-900/40">
-        <div className="flex items-baseline space-x-2">
-          <span className="text-xl font-bold font-serif-zen text-amber-900 dark:text-amber-400">
+      {/* 头部：字形大字、拼音音标、朗读与关闭 */}
+      <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-amber-200/60 dark:border-amber-900/60">
+        <div className="flex items-baseline space-x-2.5">
+          <span className="text-2xl font-bold font-serif-zen text-amber-950 dark:text-amber-300">
             {active.char}
           </span>
-          <span className="text-sm font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded-md border border-emerald-200/60 dark:border-emerald-800/40">
-            {active.pinyin}
+          <span className="text-xs font-mono font-bold text-amber-800 dark:text-amber-300 bg-amber-100/80 dark:bg-amber-950/80 px-2 py-0.5 rounded-lg border border-amber-300/80 dark:border-amber-700/60">
+            [ {active.pinyin} ]
           </span>
         </div>
 
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-1.5">
           <button
             onClick={() => speakChar(active.char)}
-            className={`p-1.5 rounded-lg text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors ${
+            className={`p-1.5 rounded-xl bg-amber-100/80 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 hover:bg-amber-200 dark:hover:bg-amber-900 transition-all ${
               isPlayingAudio ? 'animate-pulse text-amber-600' : ''
             }`}
-            title="朗读读音"
+            title="真人语音朗读"
           >
             <Volume2 className="w-4 h-4" />
           </button>
           <button
             onClick={() => setActive(null)}
-            className="p-1.5 rounded-lg text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
-            title="关闭气泡"
+            className="p-1.5 rounded-xl text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            title="关闭浮层"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
       </div>
 
-      {/* 内容：释义 */}
-      <div className="text-[13px] text-stone-700 dark:text-stone-300 leading-relaxed font-serif-zen">
+      {/* 内容：字词释义 */}
+      <div className="text-[13.5px] text-stone-700 dark:text-stone-200 leading-relaxed font-serif-zen">
         <p>{active.meaning}</p>
       </div>
 
-      {/* 底部小标签 */}
-      <div className="mt-2.5 pt-2 border-t border-amber-50 dark:border-stone-800 flex items-center justify-between text-[11px] text-stone-400">
-        <span className="flex items-center gap-1">
-          <BookOpen className="w-3 h-3 text-amber-700 dark:text-amber-500" />
+      {/* 底部功能栏 */}
+      <div className="mt-3 pt-2 border-t border-amber-100 dark:border-stone-800 flex items-center justify-between text-[11px] text-stone-400">
+        <span className="flex items-center gap-1 text-amber-800 dark:text-amber-400 font-semibold">
+          <BookOpen className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
           禅宗典籍字词注音
         </span>
-        <span className="text-amber-600 dark:text-amber-400 font-medium">chanzong.space</span>
+        <span className="text-amber-600/80 dark:text-amber-400/80">
+          {active.pinned ? '📌 已固定卡片' : '轻触可固定'}
+        </span>
       </div>
     </div>
   );
