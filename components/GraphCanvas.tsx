@@ -349,9 +349,10 @@ export const GraphCanvas: React.FC = () => {
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const svgRef = useRef<d3.Selection<SVGSVGElement, unknown, null, undefined> | null>(null);
 
-  // 判断是否处于单类独览模式
+  // 判断是否处于单类独览模式或全空轮廓模式
   const activeCount = useMemo(() => Object.values(visible).filter(Boolean).length, [visible]);
   const isSingleMode = activeCount === 1;
+  const isNoneMode = activeCount === 0;
   const singleType = useMemo(() => isSingleMode ? FILTER_TYPES.find(t => visible[t]) : null, [isSingleMode, visible]);
 
   const updateTooltipPos = (clientX: number, clientY: number) => {
@@ -553,12 +554,12 @@ export const GraphCanvas: React.FC = () => {
       const petalPathStr = generatePetalPathPolar(cx, cy, theta, r0, r1, wMax);
       const petalG = lotusBaseGroup.append('g').attr('class', `petal-group slot-${slotIdx}`);
 
-      // 花瓣填充与外框金线
+      // 花瓣填充与外框金线 (全空轮廓模式下以空灵金线呈现纯净宝莲轮廓)
       petalG.append('path')
         .attr('d', petalPathStr)
-        .attr('fill', petalBgColorMap[type] || 'rgba(255, 255, 255, 0.05)')
-        .attr('stroke', petalStrokeColorMap[type] || 'rgba(255, 255, 255, 0.25)')
-        .attr('stroke-width', isInner ? 1.4 : 1.1)
+        .attr('fill', isNoneMode ? 'rgba(251, 191, 36, 0.025)' : (petalBgColorMap[type] || 'rgba(255, 255, 255, 0.05)'))
+        .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.38)' : (petalStrokeColorMap[type] || 'rgba(255, 255, 255, 0.25)'))
+        .attr('stroke-width', isInner ? (isNoneMode ? 1.6 : 1.4) : (isNoneMode ? 1.3 : 1.1))
         .style('transition', 'all 0.3s ease');
 
       // 花瓣中轴主叶脉 (Central Vein)
@@ -570,10 +571,10 @@ export const GraphCanvas: React.FC = () => {
       petalG.append('line')
         .attr('x1', x0).attr('y1', y0)
         .attr('x2', x1).attr('y2', y1)
-        .attr('stroke', petalStrokeColorMap[type] || 'rgba(255, 255, 255, 0.2)')
+        .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.28)' : (petalStrokeColorMap[type] || 'rgba(255, 255, 255, 0.2)'))
         .attr('stroke-width', 1)
         .attr('stroke-dasharray', '4,4')
-        .style('opacity', 0.6);
+        .style('opacity', isNoneMode ? 0.8 : 0.6);
 
       // 侧叶脉 (Lateral Veins)
       [0.38, 0.58, 0.76].forEach((u) => {
@@ -586,17 +587,17 @@ export const GraphCanvas: React.FC = () => {
           .attr('x1', xm).attr('y1', ym)
           .attr('x2', cx + rMid * Math.cos(theta - halfA))
           .attr('y2', cy + rMid * Math.sin(theta - halfA))
-          .attr('stroke', petalStrokeColorMap[type])
+          .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.22)' : petalStrokeColorMap[type])
           .attr('stroke-width', 0.8)
-          .style('opacity', 0.25);
+          .style('opacity', isNoneMode ? 0.4 : 0.25);
 
         petalG.append('line')
           .attr('x1', xm).attr('y1', ym)
           .attr('x2', cx + rMid * Math.cos(theta + halfA))
           .attr('y2', cy + rMid * Math.sin(theta + halfA))
-          .attr('stroke', petalStrokeColorMap[type])
+          .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.22)' : petalStrokeColorMap[type])
           .attr('stroke-width', 0.8)
-          .style('opacity', 0.25);
+          .style('opacity', isNoneMode ? 0.4 : 0.25);
       });
 
       // 花瓣外缘题识
@@ -604,16 +605,20 @@ export const GraphCanvas: React.FC = () => {
       const tagX = cx + tagR * Math.cos(theta);
       const tagY = cy + tagR * Math.sin(theta);
       const rotDeg = (theta * 180 / Math.PI) + 90;
-      const titleText = isSingleMode ? `${typeLabelMap[type]} · 华瓣 ${slotIdx + 1}` : (PETAL_TITLES[slotIdx] || '');
+      const titleText = isNoneMode
+        ? (PETAL_TITLES[slotIdx] || '')
+        : isSingleMode 
+        ? `${typeLabelMap[type]} · 华瓣 ${slotIdx + 1}` 
+        : (PETAL_TITLES[slotIdx] || '');
 
       petalG.append('text')
         .text(t(titleText))
         .attr('x', tagX).attr('y', tagY)
         .attr('font-size', '10.5px')
-        .attr('fill', colorMap[type])
+        .attr('fill', isNoneMode ? '#FDE68A' : colorMap[type])
         .attr('text-anchor', 'middle')
         .attr('transform', `rotate(${rotDeg}, ${tagX}, ${tagY})`)
-        .style('opacity', 0.5)
+        .style('opacity', isNoneMode ? 0.35 : 0.5)
         .style('font-family', 'var(--font-serif), serif')
         .style('letter-spacing', '2px')
         .style('pointer-events', 'none');
@@ -625,15 +630,15 @@ export const GraphCanvas: React.FC = () => {
     podGroup.append('circle')
       .attr('cx', cx).attr('cy', cy).attr('r', 148)
       .attr('fill', 'url(#core-pod-gradient)')
-      .attr('stroke', 'rgba(251, 191, 36, 0.4)')
-      .attr('stroke-width', 1.8)
-      .attr('stroke-dasharray', '6,3');
+      .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.6)' : 'rgba(251, 191, 36, 0.4)')
+      .attr('stroke-width', isNoneMode ? 2.2 : 1.8)
+      .attr('stroke-dasharray', isNoneMode ? 'none' : '6,3');
 
     [48, 106].forEach((cr) => {
       podGroup.append('circle')
         .attr('cx', cx).attr('cy', cy).attr('r', cr)
         .attr('fill', 'none')
-        .attr('stroke', 'rgba(251, 191, 36, 0.2)')
+        .attr('stroke', isNoneMode ? 'rgba(251, 191, 36, 0.35)' : 'rgba(251, 191, 36, 0.2)')
         .attr('stroke-width', 1)
         .attr('stroke-dasharray', '3,3');
     });
@@ -660,11 +665,11 @@ export const GraphCanvas: React.FC = () => {
     }
 
     podGroup.append('text')
-      .text(isSingleMode ? (typeLabelMap[singleType!] || '正法') : '卍')
-      .attr('x', cx).attr('y', cy + 5)
-      .attr('font-size', isSingleMode ? '14px' : '18px')
+      .text(isNoneMode ? '○' : isSingleMode ? (typeLabelMap[singleType!] || '正法') : '卍')
+      .attr('x', cx).attr('y', cy + (isNoneMode ? 6 : 5))
+      .attr('font-size', isNoneMode ? '22px' : isSingleMode ? '14px' : '18px')
       .attr('font-weight', 'bold')
-      .attr('fill', 'rgba(251, 191, 36, 0.35)')
+      .attr('fill', isNoneMode ? 'rgba(251, 191, 36, 0.7)' : 'rgba(251, 191, 36, 0.35)')
       .attr('text-anchor', 'middle')
       .style('pointer-events', 'none')
       .style('font-family', 'var(--font-serif), serif');
@@ -941,18 +946,11 @@ export const GraphCanvas: React.FC = () => {
       simulation.stop();
       svg.remove();
     };
-  }, [router, visible, isSingleMode, singleType]);
+  }, [router, visible, isSingleMode, singleType, isNoneMode]);
 
-  // 切换分类显隐
+  // 切换分类显隐 (支持全灭，全灭时呈现纯净金莲轮廓)
   const toggleType = (t: string) => {
-    setVisible((prev) => {
-      const next = { ...prev, [t]: !prev[t] };
-      // 如果全部点灭了，则自动还原为全开
-      if (Object.values(next).every(v => !v)) {
-        return { person: true, book: true, concept: true, method: true, koan: true };
-      }
-      return next;
-    });
+    setVisible((prev) => ({ ...prev, [t]: !prev[t] }));
   };
 
   // 独览某一特定分类 (例如一键独览 91 个法门)
@@ -1012,9 +1010,11 @@ export const GraphCanvas: React.FC = () => {
         {/* 顶部标题与形态指示徽章 */}
         <div className="absolute top-3 left-3 md:top-4 md:left-4 z-10 flex items-center gap-2 pointer-events-none">
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-amber-500/30 shadow-lg text-xs font-bold text-amber-300">
-            <Flower2 className="w-4 h-4 text-amber-400 animate-pulse" />
+            <Flower2 className={`w-4 h-4 ${isNoneMode ? 'text-amber-300/80' : 'text-amber-400 animate-pulse'}`} />
             <span>
-              {isSingleMode 
+              {isNoneMode
+                ? t('自性真空 · 宝莲金线轮廓 (全隐寂照)')
+                : isSingleMode 
                 ? `${t(typeLabelMap[singleType!])} · 独览全景宝莲 (共 ${COUNTS[singleType!]} 项)` 
                 : t('自性金莲 · 俯视全景曼荼罗')}
             </span>
@@ -1023,8 +1023,8 @@ export const GraphCanvas: React.FC = () => {
 
         {/* Filter chips (右上角分类筛选与独览快捷栏) */}
         <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[85%] md:max-w-[65%] overflow-x-auto no-scrollbar py-1 px-1">
-          {/* 全部还原按钮 (单类模式下提示) */}
-          {isSingleMode && (
+          {/* 全部还原按钮 (当划掉任一分类或全部5个划掉时，均提供便捷的一键还原) */}
+          {activeCount < 5 && (
             <button
               onClick={resetAllTypes}
               className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] md:text-xs font-bold bg-amber-500/20 border border-amber-400/50 text-amber-200 hover:bg-amber-500/30 transition shadow-sm shrink-0"
@@ -1070,7 +1070,9 @@ export const GraphCanvas: React.FC = () => {
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm border border-slate-700/60 text-[11px] text-slate-400 font-medium">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>
-              {isSingleMode
+              {isNoneMode
+                ? t('已隐去全部实体节点，仅显金莲空华轮廓 · 单击右上角任意标签即可重新显现')
+                : isSingleMode
                 ? `${t(typeLabelMap[singleType!])}${t('全部')} ${COUNTS[singleType!]} ${t('个实体完整绽放 · 点击节点查看详情')}`
                 : t('点击右上角标签筛选，双击一键独览此类 · 滚轮缩放')}
             </span>
