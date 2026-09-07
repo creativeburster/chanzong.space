@@ -31,3 +31,6 @@ yongjiaji.txt
 bashiguijusong.txt
 changuancejin.txt
 dachengqixinlun.txt
+
+# 外链自动化浏览器缓存
+tools/backlinks/.browser_profile/
