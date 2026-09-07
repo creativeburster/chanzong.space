@@ -168,7 +168,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     if (!svgRef.current || !containerRef.current || !zoomRef.current) return;
     const svg = d3.select(svgRef.current);
     const width = containerRef.current.clientWidth || 1000;
-    const height = isFullScreen ? window.innerHeight - 80 : 740;
+    const height = containerRef.current.clientHeight || (isFullScreen ? window.innerHeight : 960);
 
     const nodesGroup = svg.select('.nodes');
     if (nodesGroup.empty()) return;
@@ -220,12 +220,12 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     }
   }, [isFullScreen, activeSect, direction]);
 
-  // 2. 全景宏观缩览函数（仅在用户显式点击【全景缩览】时启用）
+  // 2. 全景宏观缩览函数（在用户显式点击【全景缩览】时启用，100% 完整展示整棵树全貌）
   const fitToView = useCallback((animate = true) => {
     if (!svgRef.current || !containerRef.current || !zoomRef.current) return;
     const svg = d3.select(svgRef.current);
     const width = containerRef.current.clientWidth || 1000;
-    const height = isFullScreen ? window.innerHeight - 80 : 740;
+    const height = containerRef.current.clientHeight || (isFullScreen ? window.innerHeight : 960);
 
     const nodesGroup = svg.select('.nodes');
     if (nodesGroup.empty()) return;
@@ -242,33 +242,51 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         if (match) {
           const x = parseFloat(match[1]);
           const y = parseFloat(match[2]);
-          if (x - CARD_WIDTH / 2 < minX) minX = x - CARD_WIDTH / 2;
-          if (x + CARD_WIDTH / 2 > maxX) maxX = x + CARD_WIDTH / 2;
-          if (y - CARD_HEIGHT / 2 < minY) minY = y - CARD_HEIGHT / 2;
-          if (y + CARD_HEIGHT / 2 > maxY) maxY = y + CARD_HEIGHT / 2;
+          // 计入卡片尺寸与底部折叠徽章(+/- 按钮)
+          const left = x - CARD_WIDTH / 2;
+          const right = x + CARD_WIDTH / 2;
+          const top = y - CARD_HEIGHT / 2;
+          const bottom = y + CARD_HEIGHT / 2 + 15;
+          if (left < minX) minX = left;
+          if (right > maxX) maxX = right;
+          if (top < minY) minY = top;
+          if (bottom > maxY) maxY = bottom;
         }
       }
     });
 
-    if (minX === Infinity) return;
+    if (minX === Infinity || maxX <= minX || maxY <= minY) return;
 
     const treeW = maxX - minX;
     const treeH = maxY - minY;
-    const padding = 70;
 
-    // 缩览限制在合理比例内，避免过小
-    const scale = Math.max(0.32, Math.min((width - padding * 2) / treeW, (height - padding * 2) / treeH, 0.95));
+    // 顶部控制栏约 50px，必须为顶部预留安全边距（85px），确保最顶层祖师（如释迦佛、迦叶、达摩）绝不被控制钮遮挡！
+    // 底部留出 55px 边距，确保底层宗师绝不被切出视口；左右各留 45px
+    const padTop = 85;
+    const padBottom = 55;
+    const padX = 45;
 
+    const availW = Math.max(100, width - padX * 2);
+    const availH = Math.max(100, height - padTop - padBottom);
+
+    // 真正能容纳全树的 scale，无硬编码下限卡死，最大不超过 1.0x
+    const scaleX = availW / treeW;
+    const scaleY = availH / treeH;
+    const targetScale = Math.max(0.04, Math.min(scaleX, scaleY, 0.95));
+
+    // 计算中心平移：
+    // X 方向在整个视口中完全居中
     const centerX = (minX + maxX) / 2;
+    const tx = width / 2 - centerX * targetScale;
+
+    // Y 方向在 [padTop, height - padBottom] 的有效安全区域内完全居中
     const centerY = (minY + maxY) / 2;
+    const ty = padTop + (availH / 2) - centerY * targetScale;
 
-    const tx = width / 2 - centerX * scale;
-    const ty = height / 2 - centerY * scale;
-
-    const transform = d3.zoomIdentity.translate(tx, ty).scale(scale);
+    const transform = d3.zoomIdentity.translate(tx, ty).scale(targetScale);
 
     if (animate) {
-      svg.transition().duration(600).ease(d3.easeCubicOut).call(zoomRef.current.transform, transform);
+      svg.transition().duration(700).ease(d3.easeCubicOut).call(zoomRef.current.transform, transform);
     } else {
       svg.call(zoomRef.current.transform, transform);
     }
@@ -355,7 +373,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
 
     // 缩放平移交互
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.25, 3.5])
+      .scaleExtent([0.04, 3.5])
       .wheelDelta((event) => -event.deltaY * 0.002)
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
@@ -629,7 +647,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
       className={`relative w-full rounded-3xl border shadow-xl overflow-hidden transition-all duration-300 select-none ${
         isDark ? 'bg-[#070D1B] border-slate-800 text-slate-100' : 'bg-[#FAF8F5] border-amber-900/15 text-slate-900'
       } ${
-        isFullScreen ? 'fixed inset-0 z-50 rounded-none' : 'h-[750px]'
+        isFullScreen ? 'fixed inset-0 z-50 rounded-none' : 'h-[850px] md:h-[920px] lg:h-[980px] xl:h-[1050px]'
       }`}
     >
       {/* 顶部悬浮控制栏（毛玻璃与高对比度控制钮） */}

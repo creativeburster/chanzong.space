@@ -157,7 +157,7 @@ export default function LineageClient() {
 
             {/* 选中的祖师详情抽屉卡片 */}
             {selectedNode && (
-              <div className="lg:col-span-1 bg-white p-6 rounded-3xl border-2 border-amber-900/20 shadow-lg space-y-4 animate-in fade-in slide-in-from-right-4 duration-300">
+              <div className="lg:col-span-1 bg-white p-6 rounded-3xl border-2 border-amber-900/20 shadow-lg space-y-4 animate-in fade-in slide-in-from-right-4 duration-300 sticky top-6 max-h-[calc(100vh-100px)] overflow-y-auto">
                 <div className="flex items-start justify-between">
                   <div>
                     <span
