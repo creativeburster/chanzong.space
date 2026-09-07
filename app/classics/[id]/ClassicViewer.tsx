@@ -7,10 +7,22 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import { TranslationCard } from '@/components/TranslationCard';
 import { GlossaryCard } from '@/components/GlossaryCard';
-import { VerseCard, KoanCard, QuoteCard, PracticeCard, ModernAppCard, HistoryCard, RelatedBooksCard, AudioToolbarButton } from '@/components/ClassicCards';
+import {
+  VerseCard,
+  KoanCard,
+  QuoteCard,
+  PracticeCard,
+  ModernAppCard,
+  HistoryCard,
+  RelatedBooksCard,
+  AudioToolbarButton,
+} from '@/components/ClassicCards';
+import { InlineGlossaryTooltip, injectGlossaryMarkups } from '@/components/InlineGlossaryTooltip';
+import { BilingualReader } from '@/components/BilingualReader';
 import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_GLOSSARY } from '@/lib/glossary';
 import {
   ChevronLeft,
   ChevronRight,
@@ -43,9 +55,10 @@ interface ClassicViewerProps {
   nextItem: ClassicItem | null;
 }
 
-type ReadingTheme = 'paper' | 'bamboo' | 'night';
+export type ReadingTheme = 'paper' | 'bamboo' | 'night';
+export type ClassicViewMode = 'original' | 'bilingual' | 'modern';
 
-const THEME_STYLES: Record<
+export const THEME_STYLES: Record<
   ReadingTheme,
   {
     label: string;
@@ -127,6 +140,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [copied, setCopied] = useState(false);
   const [fontSize, setFontSize] = useState<'normal' | 'large'>('normal');
   const [theme, setTheme] = useState<ReadingTheme>('paper');
+  const [viewMode, setViewMode] = useState<ClassicViewMode>('original');
   const [tocOpen, setTocOpen] = useState(false);
   const [displayRatio, setDisplayRatio] = useState(0.15);
   const [faqsExpanded, setFaqsExpanded] = useState(false);
@@ -134,7 +148,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [showProgressBanner, setShowProgressBanner] = useState(false);
   const { t, tHtml, isTraditional, getHref } = useLang();
 
-  // 1. 初始化读取用户偏好主题与阅读进度
+  // 1. 初始化读取用户偏好主题、阅读进度与阅读模式
   useEffect(() => {
     const localTheme = localStorage.getItem('zen_reading_theme') as ReadingTheme;
     if (localTheme && THEME_STYLES[localTheme]) {
@@ -143,6 +157,10 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     const localFontSize = localStorage.getItem('zen_font_size') as 'normal' | 'large';
     if (localFontSize) {
       setFontSize(localFontSize);
+    }
+    const localMode = localStorage.getItem('zen_classic_view_mode') as ClassicViewMode;
+    if (localMode && ['original', 'bilingual', 'modern'].includes(localMode)) {
+      setViewMode(localMode);
     }
 
     const progKey = `zen_progress_${meta.id}`;
@@ -165,6 +183,11 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     const next = fontSize === 'normal' ? 'large' : 'normal';
     setFontSize(next);
     localStorage.setItem('zen_font_size', next);
+  };
+
+  const handleViewModeChange = (mode: ClassicViewMode) => {
+    setViewMode(mode);
+    localStorage.setItem('zen_classic_view_mode', mode);
   };
 
   // 2. 监听滚动并自动存储阅读进度
@@ -235,10 +258,14 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     { id: 'sec-network', title: t('🔗 知识网络与延伸') },
   ];
 
+  // 生僻字标注与 HTML 转换
+  const classicGlossary = useMemo(() => ZEN_GLOSSARY[meta.id] || [], [meta.id]);
+
   const renderedHtml = useMemo(() => {
     const chunk = getSafeHtmlChunk(htmlContent, displayRatio);
-    return isTraditional ? tHtml(chunk) : chunk;
-  }, [htmlContent, displayRatio, isTraditional, tHtml]);
+    const withGlossary = injectGlossaryMarkups(chunk, classicGlossary);
+    return isTraditional ? tHtml(withGlossary) : withGlossary;
+  }, [htmlContent, displayRatio, isTraditional, tHtml, classicGlossary]);
 
   return (
     <div data-theme={theme} className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
@@ -267,8 +294,36 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
               {/* Toolbar Controls */}
               <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                {/* 三档阅读模式分段切换 */}
+                <div className={`flex items-center p-1 rounded-xl border ${currentTheme.cardBorder} bg-black/5 dark:bg-white/5`}>
+                  {(
+                    [
+                      { id: 'original', label: '📖 原文', full: '原文优先' },
+                      { id: 'bilingual', label: '⚖️ 对照', full: '文白对照' },
+                      { id: 'modern', label: '💡 精读', full: '白话精读' },
+                    ] as const
+                  ).map((item) => {
+                    const isActive = viewMode === item.id;
+                    return (
+                      <button
+                        key={item.id}
+                        onClick={() => handleViewModeChange(item.id)}
+                        className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all ${
+                          isActive
+                            ? 'bg-amber-900 text-white shadow-sm'
+                            : `${currentTheme.secondaryText} hover:text-amber-800 dark:hover:text-amber-300`
+                        }`}
+                        title={`切换为${item.full}模式`}
+                      >
+                        <span className="sm:hidden">{item.label}</span>
+                        <span className="hidden sm:inline">{item.full}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
                 {/* 护眼主题选择器 */}
-                <div className={`flex items-center p-1 rounded-xl border ${currentTheme.cardBorder} bg-black/5`}>
+                <div className={`flex items-center p-1 rounded-xl border ${currentTheme.cardBorder} bg-black/5 dark:bg-white/5`}>
                   {(['paper', 'bamboo', 'night'] as ReadingTheme[]).map((thm) => {
                     const cfg = THEME_STYLES[thm];
                     const Icon = cfg.icon;
@@ -280,7 +335,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                         className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold transition-all ${
                           isActive
                             ? 'bg-amber-900 text-white shadow-sm'
-                            : `${currentTheme.secondaryText} hover:text-amber-800`
+                            : `${currentTheme.secondaryText} hover:text-amber-800 dark:hover:text-amber-300`
                         }`}
                         title={`切换为${cfg.label}主题`}
                       >
@@ -326,7 +381,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
         {/* 续读浮动提示 Banner */}
         {showProgressBanner && savedProgress !== null && (
           <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full mt-4 animate-fade-in">
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm shadow-sm">
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-amber-900 dark:text-amber-200 text-xs sm:text-sm shadow-sm">
               <div className="flex items-center space-x-2">
                 <BookmarkCheck className="w-4 h-4 text-amber-700 shrink-0" />
                 <span>{t('您上次阅读至约')} <strong>{savedProgress}%</strong> {t('位置')}</span>
@@ -351,87 +406,106 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
         {/* Main Reading Viewport */}
         <main className="flex-1 max-w-6xl mx-auto px-3 sm:px-6 py-6 md:py-12 w-full">
-          <article
-            id="sec-article"
-            className={`${currentTheme.cardBg} p-4 sm:p-10 md:p-14 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-md sm:shadow-lg transition-colors duration-300`}
-          >
-            <div
-              className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
-                fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
-              }`}
-              dangerouslySetInnerHTML={{ __html: renderedHtml }}
-            />
+          {/* 全局即时生僻字词悬浮气泡 */}
+          <InlineGlossaryTooltip />
 
-            {displayRatio < 1 && (
-              <div className="mt-8 flex flex-col items-center gap-3">
-                <div className="w-full max-w-xs h-1.5 bg-zinc-200 rounded-full overflow-hidden">
-                  <div className="h-full bg-amber-600 rounded-full transition-all" style={{ width: `${Math.round(displayRatio * 100)}%` }} />
-                </div>
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setDisplayRatio((r) => Math.min(1, r + 0.15))}
-                    className="px-5 py-2.5 rounded-xl bg-amber-900 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
-                  >
-                    {t('加载更多')}
-                  </button>
-                  <button
-                    onClick={() => setDisplayRatio(1)}
-                    className="px-5 py-2.5 rounded-xl border border-zinc-300 text-zinc-600 text-[14px] font-semibold hover:border-amber-700 hover:text-amber-800 transition-all"
-                  >
-                    {t('显示全部')}
-                  </button>
-                </div>
-                <p className="text-xs text-zinc-400">
-                  {t('已显示')} {Math.round(displayRatio * 100)}% · {t('约')} {Math.round(rawContent.length * displayRatio)} / {rawContent.length} {t('字')}
-                </p>
+          {/* 模式 A：原文优先模式 */}
+          {viewMode === 'original' && (
+            <>
+              <article
+                id="sec-article"
+                className={`${currentTheme.cardBg} p-4 sm:p-10 md:p-14 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-md sm:shadow-lg transition-colors duration-300`}
+              >
+                <div
+                  className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
+                    fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
+                  }`}
+                  dangerouslySetInnerHTML={{ __html: renderedHtml }}
+                />
+
+                {displayRatio < 1 && (
+                  <div className="mt-8 flex flex-col items-center gap-3">
+                    <div className="w-full max-w-xs h-1.5 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                      <div className="h-full bg-amber-600 rounded-full transition-all" style={{ width: `${Math.round(displayRatio * 100)}%` }} />
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => setDisplayRatio((r) => Math.min(1, r + 0.15))}
+                        className="px-5 py-2.5 rounded-xl bg-amber-900 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
+                      >
+                        {t('加载更多')}
+                      </button>
+                      <button
+                        onClick={() => setDisplayRatio(1)}
+                        className="px-5 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 text-[14px] font-semibold hover:border-amber-700 hover:text-amber-800 transition-all"
+                      >
+                        {t('显示全部')}
+                      </button>
+                    </div>
+                    <p className="text-xs text-zinc-400">
+                      {t('已显示')} {Math.round(displayRatio * 100)}% · {t('约')} {Math.round(rawContent.length * displayRatio)} / {rawContent.length} {t('字')}
+                    </p>
+                  </div>
+                )}
+              </article>
+
+              {/* 核心偈颂 */}
+              <div id="sec-verses">
+                <VerseCard verses={extracted.verses} />
               </div>
-            )}
-          </article>
 
-          {/* 核心偈颂 */}
-          <div id="sec-verses">
-            <VerseCard verses={extracted.verses} />
-          </div>
+              {/* 公案精选 */}
+              <div id="sec-koans">
+                <KoanCard koans={extracted.koans} />
+              </div>
 
-          {/* 公案精选 */}
-          <div id="sec-koans">
-            <KoanCard koans={extracted.koans} />
-          </div>
+              {/* 白话今译（分页） */}
+              <div id="sec-translations">
+                <TranslationCard classicId={meta.id} />
+              </div>
 
-          {/* 白话今译（分页） */}
-          <div id="sec-translations">
-            <TranslationCard classicId={meta.id} />
-          </div>
+              {/* 生僻字解释 */}
+              <div id="sec-glossary">
+                <GlossaryCard sourceIds={[meta.id]} />
+              </div>
 
-          {/* 生僻字解释 */}
-          <div id="sec-glossary">
-            <GlossaryCard sourceIds={[meta.id]} />
-          </div>
+              {/* 祖师名言 */}
+              <div id="sec-quotes">
+                <QuoteCard quotes={relQuotes} personNames={relPersons.map((p) => p.name)} />
+              </div>
 
-          {/* 祖师名言 */}
-          <div id="sec-quotes">
-            <QuoteCard quotes={relQuotes} personNames={relPersons.map(p => p.name)} />
-          </div>
+              {/* 实践指导 */}
+              <div id="sec-practices">
+                <PracticeCard practices={extracted.practices} relMethods={relMethods} />
+              </div>
 
-          {/* 实践指导 */}
-          <div id="sec-practices">
-            <PracticeCard practices={extracted.practices} relMethods={relMethods} />
-          </div>
+              {/* 现代启示 */}
+              <div id="sec-modern">
+                <ModernAppCard apps={extracted.modernApp} />
+              </div>
+            </>
+          )}
 
-          {/* 现代启示 */}
-          <div id="sec-modern">
-            <ModernAppCard apps={extracted.modernApp} />
-          </div>
+          {/* 模式 B 与 C：文白双栏对照模式 & 白话精读模式 */}
+          {(viewMode === 'bilingual' || viewMode === 'modern') && (
+            <BilingualReader
+              classicId={meta.id}
+              rawContent={rawContent}
+              viewMode={viewMode}
+              fontSize={fontSize}
+              currentTheme={currentTheme}
+            />
+          )}
 
-          {/* 历史背景 */}
+          {/* 历史背景（全模式共享） */}
           <div id="sec-history">
             <HistoryCard meta={meta} relPersons={relPersons} />
           </div>
 
-          {/* 相关经典 */}
+          {/* 相关经典（全模式共享） */}
           <RelatedBooksCard manifest={manifest} currentId={meta.id} />
 
-          {/* 延伸阅读：交叉引用 */}
+          {/* 延伸阅读：交叉引用（全模式共享） */}
           <div id="sec-network">
             {(relPersons.length > 0 || relConcepts.length > 0 || relMethods.length > 0 || relQas.length > 0 || relFaqs.length > 0) && (
               <div className={`mt-10 ${currentTheme.cardBg} p-6 sm:p-10 rounded-3xl border ${currentTheme.cardBorder} shadow-md space-y-6 transition-colors duration-300`}>
@@ -441,12 +515,12 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
                 {relPersons.length > 0 && (
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-blue-800">
+                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-blue-800 dark:text-blue-400">
                       <Users className="w-5 h-5 text-blue-600" />
                       <span>{t('相关祖师')}</span>
                     </div>
                     <LinkCardGrid
-                      items={relPersons.map(p => ({ id: p.id, title: p.name, summary: p.title, href: `/persons/${p.id}` }))}
+                      items={relPersons.map((p) => ({ id: p.id, title: p.name, summary: p.title, href: `/persons/${p.id}` }))}
                       variant="blue"
                     />
                   </div>
@@ -454,12 +528,12 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
                 {relConcepts.length > 0 && (
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-800">
+                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-purple-800 dark:text-purple-400">
                       <Gem className="w-5 h-5 text-purple-600" />
                       <span>{t('相关概念')}</span>
                     </div>
                     <LinkCardGrid
-                      items={relConcepts.map(c => ({ id: c.id, title: c.title, summary: c.summary?.slice(0, 60), href: `/concepts/${c.id}` }))}
+                      items={relConcepts.map((c) => ({ id: c.id, title: c.title, summary: c.summary?.slice(0, 60), href: `/concepts/${c.id}` }))}
                       variant="purple"
                     />
                   </div>
@@ -467,12 +541,12 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
                 {relMethods.length > 0 && (
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-sky-800">
+                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-sky-800 dark:text-sky-400">
                       <Compass className="w-5 h-5 text-sky-600" />
                       <span>{t('相关法门')}</span>
                     </div>
                     <LinkCardGrid
-                      items={relMethods.map(m => ({ id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}` }))}
+                      items={relMethods.map((m) => ({ id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}` }))}
                       variant="sky"
                     />
                   </div>
@@ -480,12 +554,12 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
                 {relQas.length > 0 && (
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-800">
+                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-rose-800 dark:text-rose-400">
                       <MessageSquare className="w-5 h-5 text-rose-600" />
                       <span>{t('相关公案')}</span>
                     </div>
                     <LinkCardGrid
-                      items={relQas.map(q => ({ id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}` }))}
+                      items={relQas.map((q) => ({ id: q.id, title: q.question, summary: q.answer?.slice(0, 60), href: `/koan/${q.id}` }))}
                       variant="rose"
                       columns={3}
                     />
@@ -494,16 +568,16 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
                 {relFaqs.length > 0 && (
                   <div className="space-y-2">
-                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-800">
+                    <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-800 dark:text-emerald-400">
                       <HelpCircle className="w-5 h-5 text-emerald-600" />
                       <span>{t('相关问答')}</span>
-                      <span className="text-xs text-emerald-700/60">({t('共')} {relFaqs.length} {t('条')})</span>
+                      <span className="text-xs text-emerald-700/60 dark:text-emerald-400/60">({t('共')} {relFaqs.length} {t('条')})</span>
                     </div>
                     <div className="space-y-3">
-                      {(relFaqs.length > 4 && !faqsExpanded ? relFaqs.slice(0, 4) : relFaqs).map(f => (
-                        <div key={f.id} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100">
-                          <div className="text-[14px] font-semibold text-emerald-900 mb-1">{t(f.question)}</div>
-                          <div className="text-[13px] text-emerald-800/80 leading-relaxed">{t(f.answer).slice(0, 120)}{f.answer.length > 120 ? '...' : ''}</div>
+                      {(relFaqs.length > 4 && !faqsExpanded ? relFaqs.slice(0, 4) : relFaqs).map((f) => (
+                        <div key={f.id} className="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
+                          <div className="text-[14px] font-semibold text-emerald-900 dark:text-emerald-300 mb-1">{t(f.question)}</div>
+                          <div className="text-[13px] text-emerald-800/80 dark:text-emerald-300/80 leading-relaxed">{t(f.answer).slice(0, 120)}{f.answer.length > 120 ? '...' : ''}</div>
                         </div>
                       ))}
                     </div>
@@ -511,7 +585,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                       <div className="flex justify-center pt-1">
                         <button
                           onClick={() => setFaqsExpanded(!faqsExpanded)}
-                          className="px-4 py-1.5 rounded-xl border border-emerald-200 text-[13px] font-semibold text-emerald-800 hover:bg-emerald-50 transition-all"
+                          className="px-4 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800 text-[13px] font-semibold text-emerald-800 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-all"
                         >
                           {faqsExpanded ? t('收起') : `${t('展开全部问答')} (${t('共')} ${relFaqs.length} ${t('条')})`}
                         </button>
@@ -569,7 +643,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             onClick={(e) => e.stopPropagation()}
           >
             <div>
-              <div className="flex items-center justify-between pb-4 border-b border-zinc-200/50 mb-4">
+              <div className="flex items-center justify-between pb-4 border-b border-zinc-200/50 dark:border-zinc-800 mb-4">
                 <div className="flex items-center space-x-2">
                   <ListOrdered className="w-5 h-5 text-amber-700" />
                   <span className={`font-bold font-serif-zen text-base ${currentTheme.bannerText}`}>
@@ -585,13 +659,13 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               </div>
 
               <div className="space-y-1.5">
-                {tocItems.map((item, idx) => (
+                {tocItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
                     className={`w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold flex items-center justify-between transition-all ${
                       currentTheme.secondaryText
-                    } hover:text-amber-700 hover:bg-amber-50/60`}
+                    } hover:text-amber-700 hover:bg-amber-50/60 dark:hover:bg-amber-950/40`}
                   >
                     <span>{item.title}</span>
                     <ChevronRight className="w-4 h-4 opacity-40" />
