@@ -1,7 +1,6 @@
 'use client';
 
-import { ReadingThemeBar } from '@/components/ReadingThemeBar';
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Sidebar } from '@/components/Sidebar';
@@ -9,7 +8,7 @@ import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
 import { ZEN_KOANS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_FAQS } from '@/lib/taxonomy';
-import { BookOpen, Quote, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass, Lightbulb, Image as ImageIcon } from 'lucide-react';
+import { BookOpen, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass, Lightbulb, Image as ImageIcon, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
 import { useLang } from '@/context/LangContext';
@@ -33,6 +32,44 @@ export default function KoanDetailPageClient({ params }: PageProps) {
     notFound();
   }
 
+  // 典籍映射
+  const bookMap = useMemo(() => {
+    const map = new Map<string, typeof manifest[0]>();
+    manifest.forEach(b => map.set(b.id, b));
+    return map;
+  }, []);
+
+  // 1. 同一禅师的其他经典机锋公案
+  const sameMasterKoans = useMemo(() => {
+    if (!qa.master) return [];
+    return ZEN_KOANS.filter(k => k.id !== qa.id && (k.master === qa.master || (k.master && qa.master && (k.master.includes(qa.master) || qa.master.includes(k.master))))).slice(0, 6);
+  }, [qa]);
+
+  // 2. 出自同一部典籍的更多公案
+  const sameBookKoans = useMemo(() => {
+    return ZEN_KOANS.filter(k => {
+      if (k.id === qa.id) return false;
+      if (qa.relatedBooks && qa.relatedBooks.length > 0 && k.relatedBooks) {
+        if (k.relatedBooks.some(b => qa.relatedBooks!.includes(b))) return true;
+      }
+      if (qa.source && k.source && (k.source.includes(qa.source) || qa.source.includes(k.source))) {
+        return true;
+      }
+      return false;
+    }).slice(0, 6);
+  }, [qa]);
+
+  // 3. 共享破关旨趣/核心概念的其他公案
+  const sameConceptKoans = useMemo(() => {
+    if (!qa.relatedConcepts || qa.relatedConcepts.length === 0) return [];
+    const masterIds = new Set(sameMasterKoans.map(k => k.id));
+    const bookIds = new Set(sameBookKoans.map(k => k.id));
+    return ZEN_KOANS.filter(k => {
+      if (k.id === qa.id || masterIds.has(k.id) || bookIds.has(k.id)) return false;
+      return k.relatedConcepts && k.relatedConcepts.some(c => qa.relatedConcepts.includes(c));
+    }).slice(0, 6);
+  }, [qa, sameMasterKoans, sameBookKoans]);
+
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
       <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
@@ -45,12 +82,16 @@ export default function KoanDetailPageClient({ params }: PageProps) {
 
           {/* 1. 公案概览卡片 */}
           <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-lg">
-            <div className="flex items-center justify-between gap-3 mb-4">
-              <div className="flex items-center gap-3">
+            <div className="flex items-center justify-between gap-3 mb-4 flex-wrap">
+              <div className="flex items-center gap-3 flex-wrap">
                 <span className="text-[13px] font-semibold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
                   {t(qa.master)}
                 </span>
-                <span className="text-xs text-slate-500 font-bold">出处: {t(qa.source)}</span>
+                {qa.source && (
+                  <span className="text-xs text-slate-500 font-bold">
+                    {t('出处:')} {t(qa.source)}
+                  </span>
+                )}
               </div>
               <button
                 onClick={() => setCardModalOpen(true)}
@@ -120,12 +161,12 @@ export default function KoanDetailPageClient({ params }: PageProps) {
             </div>
           )}
 
-          {/* 5. 相关概念 */}
+          {/* 5. 核心关联概念 / 破关旨趣 */}
           {qa.relatedConcepts && qa.relatedConcepts.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
                 <Tag className="w-5 h-5 text-purple-700" />
-                <span>{t('🔗 核心关联概念')}</span>
+                <span>{t('🔗 核心破关旨趣与义理')}</span>
               </h2>
               <LinkCardGrid
                 items={qa.relatedConcepts.map(cid => {
@@ -137,12 +178,95 @@ export default function KoanDetailPageClient({ params }: PageProps) {
             </div>
           )}
 
-          {/* 5b. 相关法门 */}
+          {/* 5b. 同位禅师的其他经典机锋 */}
+          {sameMasterKoans.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-rose-900">
+                  <MessageCircle className="w-5 h-5 text-rose-700" />
+                  <span>{t('🗣️')} {t(qa.master)} {t('的其他经典机锋')}</span>
+                  <span className="text-xs text-rose-700/60 font-mono">({sameMasterKoans.length})</span>
+                </h2>
+                <Link
+                  prefetch={false}
+                  href={getHref(`/koan`)}
+                  className="text-xs text-rose-700 hover:text-rose-900 font-semibold flex items-center gap-1 hover:underline"
+                >
+                  <span>{t('浏览更多机锋')}</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+              <LinkCardGrid
+                items={sameMasterKoans.map(k => ({
+                  id: k.id,
+                  title: k.question,
+                  summary: k.answer,
+                  href: `/koan/${k.id}`
+                }))}
+                variant="rose"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 5c. 出自同一部典籍的更多公案 */}
+          {sameBookKoans.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-amber-900">
+                  <BookOpen className="w-5 h-5 text-amber-700" />
+                  <span>{t('📖 出自同典籍的机锋公案')}</span>
+                  <span className="text-xs text-amber-700/60 font-mono">({sameBookKoans.length})</span>
+                </h2>
+                <Link
+                  prefetch={false}
+                  href={getHref(`/koan`)}
+                  className="text-xs text-amber-800 hover:text-amber-950 font-semibold flex items-center gap-1 hover:underline"
+                >
+                  <span>{t('全部公案')}</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+              <LinkCardGrid
+                items={sameBookKoans.map(k => ({
+                  id: k.id,
+                  title: k.question,
+                  summary: `【${k.master}】${k.answer}`,
+                  href: `/koan/${k.id}`
+                }))}
+                variant="amber"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 5d. 同旨趣参修公案 */}
+          {sameConceptKoans.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-indigo-900">
+                <Sparkles className="w-5 h-5 text-indigo-700" />
+                <span>{t('✨ 类似破关旨趣的公案参修')}</span>
+                <span className="text-xs text-indigo-700/60 font-mono">({sameConceptKoans.length})</span>
+              </h2>
+              <LinkCardGrid
+                items={sameConceptKoans.map(k => ({
+                  id: k.id,
+                  title: k.question,
+                  summary: `【${k.master}】${k.answer}`,
+                  href: `/koan/${k.id}`
+                }))}
+                variant="purple"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 5e. 相关法门 */}
           {ZEN_METHODS.filter(m => m.relatedConcepts.some(c => qa.relatedConcepts.includes(c))).length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
                 <Compass className="w-5 h-5 text-sky-700" />
-                <span>{t('🧘 相关修持法门')}</span>
+                <span>{t('🧘 破关对治与修持法门')}</span>
               </h2>
               <LinkCardGrid
                 items={ZEN_METHODS.filter(m => m.relatedConcepts.some(c => qa.relatedConcepts.includes(c))).map(m => ({
@@ -165,7 +289,7 @@ export default function KoanDetailPageClient({ params }: PageProps) {
 
              <LinkCardGrid
                items={qa.relatedBooks.map(bookId => {
-                 const book = manifest.find(m => m.id === bookId);
+                 const book = bookMap.get(bookId);
                  return { id: bookId, title: book ? book.title : bookId, summary: book?.author, href: `/classics/${bookId}` };
                })}
                variant="amber"
