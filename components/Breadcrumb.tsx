@@ -17,9 +17,21 @@ interface BreadcrumbProps {
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   const { t, getHref } = useLang();
 
+  // 避免调用方传入已经包含“首页”导致重复显示两遍“首页”
+  const cleanItems = items.filter(
+    (item, idx) =>
+      !(
+        idx === 0 &&
+        (item.label === '首页' ||
+          item.label === '首頁' ||
+          item.label === t('首页') ||
+          item.href === '/')
+      )
+  );
+
   const fullItems: BreadcrumbItem[] = [
     { label: '首页', href: '/' },
-    ...items,
+    ...cleanItems,
   ];
 
   const jsonLd = {

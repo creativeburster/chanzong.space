@@ -11,7 +11,6 @@ import manifest from '@/manifest.json';
 import {
   Sparkles,
   Compass,
-  Home,
   Flame,
   Wind,
   Bell,
@@ -105,7 +104,6 @@ export default function PracticeClient() {
           <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
             <Breadcrumb
               items={[
-                { label: t('首页'), href: '/' },
                 { label: t('禅修静心工坊') },
               ]}
             />
@@ -117,14 +115,6 @@ export default function PracticeClient() {
                 <Maximize2 className="w-3.5 h-3.5" />
                 <span>{t('进入全屏沉浸禅房')}</span>
               </button>
-              <Link
-                prefetch={false}
-                href={getHref('/')}
-                className="inline-flex items-center space-x-1.5 text-xs text-amber-800 font-bold hover:underline bg-white px-3 py-1.5 rounded-xl border border-amber-900/10 shadow-2xs"
-              >
-                <Home className="w-3.5 h-3.5" />
-                <span>{t('返回首页')}</span>
-              </Link>
             </div>
           </div>
 
