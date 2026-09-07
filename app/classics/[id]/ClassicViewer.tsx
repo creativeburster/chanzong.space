@@ -141,7 +141,6 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [fontSize, setFontSize] = useState<'normal' | 'large'>('normal');
   const [theme, setTheme] = useState<ReadingTheme>('paper');
   const [viewMode, setViewMode] = useState<ClassicViewMode>('original');
-  const [showPinyin, setShowPinyin] = useState<boolean>(true);
   const [tocOpen, setTocOpen] = useState(false);
   const [displayRatio, setDisplayRatio] = useState(0.15);
   const [faqsExpanded, setFaqsExpanded] = useState(false);
@@ -158,10 +157,6 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     const localFontSize = localStorage.getItem('zen_font_size') as 'normal' | 'large';
     if (localFontSize) {
       setFontSize(localFontSize);
-    }
-    const localPinyin = localStorage.getItem('zen_show_pinyin');
-    if (localPinyin !== null) {
-      setShowPinyin(localPinyin === 'true');
     }
     const localMode = localStorage.getItem('zen_classic_view_mode') as ClassicViewMode;
     if (localMode && ['original', 'bilingual', 'modern'].includes(localMode)) {
@@ -190,10 +185,6 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     localStorage.setItem('zen_font_size', next);
   };
 
-  const handlePinyinToggle = (val: boolean) => {
-    setShowPinyin(val);
-    localStorage.setItem('zen_show_pinyin', String(val));
-  };
 
   const handleViewModeChange = (mode: ClassicViewMode) => {
     setViewMode(mode);
@@ -268,14 +259,14 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     { id: 'sec-network', title: t('🔗 知识网络与延伸') },
   ];
 
-  // 生僻字标注与 HTML 转换
+  // 生僻字标注与 HTML 转换（默认自然注音与解释）
   const classicGlossary = useMemo(() => ZEN_GLOSSARY[meta.id] || [], [meta.id]);
 
   const renderedHtml = useMemo(() => {
     const chunk = getSafeHtmlChunk(htmlContent, displayRatio);
-    const withGlossary = injectGlossaryMarkups(chunk, classicGlossary, showPinyin);
+    const withGlossary = injectGlossaryMarkups(chunk, classicGlossary, true);
     return isTraditional ? tHtml(withGlossary) : withGlossary;
-  }, [htmlContent, displayRatio, isTraditional, tHtml, classicGlossary, showPinyin]);
+  }, [htmlContent, displayRatio, isTraditional, tHtml, classicGlossary]);
 
   return (
     <div data-theme={theme} className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
@@ -356,22 +347,6 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                   })}
                 </div>
 
-                {/* 拼音注音开关 */}
-                {classicGlossary.length > 0 && (
-                  <button
-                    onClick={() => handlePinyinToggle(!showPinyin)}
-                    className={`flex items-center space-x-1 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl border ${
-                      showPinyin
-                        ? 'border-amber-700 bg-amber-100/60 dark:bg-amber-950/60 text-amber-900 dark:text-amber-200'
-                        : `${currentTheme.cardBorder} ${currentTheme.bannerText}`
-                    } text-xs sm:text-[13px] font-semibold transition-all`}
-                    title="开启或隐藏古籍生僻字字头拼音注音"
-                  >
-                    <span className="font-bold font-mono">🈳</span>
-                    <span>{showPinyin ? t('注音:开') : t('注音:关')}</span>
-                  </button>
-                )}
-
                 {/* 字号切换 */}
                 <button
                   onClick={handleFontSizeChange}
@@ -442,23 +417,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                 id="sec-article"
                 className={`${currentTheme.cardBg} p-4 sm:p-10 md:p-14 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-md sm:shadow-lg transition-colors duration-300`}
               >
-                {/* 智能字词注音提示条 */}
-                {classicGlossary.length > 0 && (
-                  <div className="mb-6 p-3.5 sm:p-4 rounded-2xl bg-amber-500/10 dark:bg-amber-950/40 border border-amber-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-[13px] text-amber-950 dark:text-amber-200 shadow-2xs">
-                    <div className="flex items-center space-x-2">
-                      <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
-                      <span>
-                        {t('💡 本篇已启用「智能字词注音」：难读生僻词已在字头标音（共')} <strong>{classicGlossary.length}</strong> {t('处），轻触或悬浮可即时查看详细释义与真人发音。')}
-                      </span>
-                    </div>
-                    <button
-                      onClick={() => handlePinyinToggle(!showPinyin)}
-                      className="self-start sm:self-auto px-3 py-1 rounded-xl bg-amber-900 text-white font-bold text-xs hover:bg-amber-800 transition-colors shadow-2xs shrink-0"
-                    >
-                      {showPinyin ? t('隐藏拼音音标') : t('显示拼音音标')}
-                    </button>
-                  </div>
-                )}
+                {/* 正文内容 */}
                 <div
                   className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
                     fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
