@@ -33,17 +33,17 @@ interface HierarchyDatum extends LineageNode {
 type LayoutDirection = 'vertical' | 'horizontal';
 type ThemeMode = 'dark' | 'light';
 
-// 大号精美思维导图卡片尺寸与步长规范（确保字大饱满、通透呼吸感）
-const CARD_WIDTH = 202;
-const CARD_HEIGHT = 68;
+// 大号精美思维导图卡片尺寸与步长规范（文字放大 30%，确保字大饱满、通透呼吸感）
+const CARD_WIDTH = 252;
+const CARD_HEIGHT = 86;
 
 // 垂直布局（自上而下）：nodeSize([STEP_X, STEP_Y])
-const V_STEP_X = 238;
-const V_STEP_Y = 128;
+const V_STEP_X = 296;
+const V_STEP_Y = 160;
 
 // 水平布局（从左到右）：nodeSize([STEP_Y, STEP_X])
-const H_STEP_X = 284;
-const H_STEP_Y = 94;
+const H_STEP_X = 355;
+const H_STEP_Y = 120;
 
 // 舒适大字清晰阅读比例：1.0x（100% 原始矢量高清呈现，杜绝压缩发虚）
 const COMFORTABLE_SCALE = 1.0;
@@ -523,56 +523,56 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
 
     // 2. 左侧宗派装饰竖条（饱满圆润）
     nodeGroup.append('rect')
-      .attr('x', -CARD_WIDTH / 2 + 2)
-      .attr('y', -CARD_HEIGHT / 2 + 8)
-      .attr('width', 4.5)
-      .attr('height', CARD_HEIGHT - 16)
-      .attr('rx', 2.5)
-      .attr('ry', 2.5)
+      .attr('x', -CARD_WIDTH / 2 + 2.5)
+      .attr('y', -CARD_HEIGHT / 2 + 10)
+      .attr('width', 5.5)
+      .attr('height', CARD_HEIGHT - 20)
+      .attr('rx', 3)
+      .attr('ry', 3)
       .attr('fill', d => SECT_META[d.data.sect]?.color || '#F59E0B');
 
-    // 3. 祖师姓名文本（大号 17px！加粗！绝无模糊阴影，清晰锐利）
+    // 3. 祖师姓名文本（放大30%：大号 22px！加粗！绝无模糊阴影，清晰锐利）
     nodeGroup.append('text')
-      .attr('x', -CARD_WIDTH / 2 + 18)
-      .attr('y', -11)
+      .attr('x', -CARD_WIDTH / 2 + 22)
+      .attr('y', -16)
       .text(d => t(d.data.name))
-      .attr('font-size', '17px')
+      .attr('font-size', '22px')
       .attr('font-weight', '700')
       .attr('font-family', 'var(--font-serif-zen), serif')
       .attr('fill', isDark ? '#FFFFFF' : '#0F172A')
-      .attr('letter-spacing', '0.5px')
+      .attr('letter-spacing', '0.6px')
       .attr('dominant-baseline', 'central');
 
-    // 4. 尊号专属小胶囊底衬（增强尊号识别度与对比度）
+    // 4. 尊号专属小胶囊底衬（增强尊号识别度与对比度，加大加高）
     nodeGroup.append('rect')
-      .attr('x', -CARD_WIDTH / 2 + 16)
-      .attr('y', 4)
+      .attr('x', -CARD_WIDTH / 2 + 18)
+      .attr('y', 8)
       .attr('width', d => {
         const rawTitle = d.data.title.split('·')[0].trim();
         const displayTitle = t(rawTitle.length > 9 ? rawTitle.slice(0, 9) : rawTitle);
-        return Math.min(160, displayTitle.length * 13 + 12);
+        return Math.min(200, displayTitle.length * 16.5 + 18);
       })
-      .attr('height', 20)
-      .attr('rx', 6)
-      .attr('ry', 6)
+      .attr('height', 26)
+      .attr('rx', 7)
+      .attr('ry', 7)
       .attr('fill', d => {
         const isMatched = activeSect === 'all' || d.data.sect === activeSect;
         if (isDark) {
-          return isMatched ? 'rgba(253, 230, 138, 0.12)' : 'rgba(255, 255, 255, 0.05)';
+          return isMatched ? 'rgba(253, 230, 138, 0.14)' : 'rgba(255, 255, 255, 0.05)';
         } else {
-          return isMatched ? 'rgba(217, 119, 6, 0.1)' : 'rgba(0, 0, 0, 0.04)';
+          return isMatched ? 'rgba(217, 119, 6, 0.12)' : 'rgba(0, 0, 0, 0.04)';
         }
       });
 
-    // 5. 祖师尊号/代数文本（12px，粗体，浅金高光 #FDE68A，排版一清二楚）
+    // 5. 祖师尊号/代数文本（放大30%：15.5px，粗体，浅金高光 #FDE68A，排版一清二楚）
     nodeGroup.append('text')
-      .attr('x', -CARD_WIDTH / 2 + 22)
-      .attr('y', 14)
+      .attr('x', -CARD_WIDTH / 2 + 27)
+      .attr('y', 21)
       .text(d => {
         const rawTitle = d.data.title.split('·')[0].trim();
         return t(rawTitle.length > 9 ? rawTitle.slice(0, 9) : rawTitle);
       })
-      .attr('font-size', '12px')
+      .attr('font-size', '15.5px')
       .attr('font-weight', '600')
       .attr('font-family', 'var(--font-serif-zen), serif')
       .attr('dominant-baseline', 'central')
@@ -590,7 +590,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     expandableNodes.append('circle')
       .attr('cx', badgeX)
       .attr('cy', badgeY)
-      .attr('r', 10.5)
+      .attr('r', 13.5)
       .attr('fill', d => {
         if (d.data._children) return SECT_META[d.data.sect]?.color || '#F59E0B';
         return isDark ? '#101C38' : '#FFFFFF';
@@ -599,7 +599,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         if (d.data._children) return '#FFFFFF';
         return SECT_META[d.data.sect]?.color || (isDark ? '#38BDF8' : '#94A3B8');
       })
-      .attr('stroke-width', 2.0)
+      .attr('stroke-width', 2.2)
       .attr('filter', 'url(#card-shadow)');
 
     expandableNodes.append('text')
@@ -614,7 +614,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         }
         return '−';
       })
-      .attr('font-size', d => (d.data._children && d.data._children.length > 1 ? '10px' : '12px'))
+      .attr('font-size', d => (d.data._children && d.data._children.length > 1 ? '12px' : '15px'))
       .attr('font-weight', 'bold')
       .attr('fill', d => {
         if (d.data._children) return '#FFFFFF';
@@ -622,16 +622,15 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
       });
 
     // 视图定位：
-    // 首屏或宗派切换时，绝不调用会导致缩小成芝麻的 fitToView！
-    // 始终以 1.0x 舒适清晰大字聚焦在目标宗派的核心中枢祖师节点上！
+    // 默认进入页面为【全景缩览】，宏观总览整座法脉谱系全貌；用户亦可随时点击【聚焦中枢】切换至清晰大字
     if (isFirstRender.current) {
       isFirstRender.current = false;
-      setTimeout(() => focusOnTargetNode('bodhidharma', false), 50);
+      setTimeout(() => fitToView(false), 50);
     } else {
-      setTimeout(() => focusOnTargetNode(undefined, true), 50);
+      setTimeout(() => fitToView(true), 50);
     }
 
-  }, [rootData, direction, theme, activeSect, searchQuery, isFullScreen, onSelectNode, t, focusOnTargetNode]);
+  }, [rootData, direction, theme, activeSect, searchQuery, isFullScreen, onSelectNode, t, focusOnTargetNode, fitToView]);
 
   // 控制操作：放大、缩小
   const handleZoom = (factor: number) => {
@@ -779,7 +778,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
           isDark ? 'bg-slate-900/85 border-slate-700/80 text-slate-300' : 'bg-white/90 border-amber-200/70 text-slate-700'
         }`}>
           <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-          <span>{t('默认以 1.0x 清晰大字号呈现 · 点击卡片或端点【+】展开后代 · 支持滚轮缩放与自由拖拽')}</span>
+          <span>{t('默认全景缩览全貌 · 文字已放大30%呈现 · 可随时点击【聚焦中枢】看高清大字 · 支持自由滚轮缩放')}</span>
         </div>
       </div>
 
