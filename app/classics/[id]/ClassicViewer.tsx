@@ -29,6 +29,7 @@ import {
   Sparkles,
   Copy,
   Check,
+  Share2,
   Users,
   Gem,
   Compass,
@@ -238,10 +239,23 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const extracted = extractCards(rawContent);
   const relQuotes = relPersons.flatMap((p) => p.quotes || []);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(rawContent);
+  const handleCopyAttribution = () => {
+    const selection = typeof window !== 'undefined' ? window.getSelection()?.toString()?.trim() : '';
+    const pageUrl = typeof window !== 'undefined' ? window.location.href : `https://chanzong.space/classics/${meta.id}`;
+    let textToCopy = '';
+
+    if (selection && selection.length > 0) {
+      textToCopy = `“${selection}”\n\n————————————\n出处：《${meta.title}》（${meta.author} 著）\n链接：${pageUrl}\n来源：禅宗知识库 (chanzong.space)\n著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。`;
+    } else {
+      const summarySnippet = meta.summary || `${meta.title}，${meta.author}著，传承禅宗核心旨趣。`;
+      textToCopy = `《${meta.title}》· ${meta.author} 著\n主旨：${summarySnippet}\n\n阅读全文：${pageUrl}\n来源：禅宗知识库 (chanzong.space)\n著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。`;
+    }
+
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(textToCopy);
+    }
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setTimeout(() => setCopied(false), 2500);
   };
 
   const currentTheme = THEME_STYLES[theme];
@@ -368,11 +382,12 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                 <AudioToolbarButton rawContent={rawContent} />
 
                 <button
-                  onClick={handleCopy}
+                  onClick={handleCopyAttribution}
                   className="flex items-center space-x-1 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-amber-900 text-white text-xs sm:text-[13px] font-semibold hover:bg-amber-800 transition-all shadow-md"
+                  title="复制选中文字或本篇引文与出处链接"
                 >
-                  {copied ? <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
-                  <span>{copied ? t('已复制全文') : t('复制全文')}</span>
+                  {copied ? <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" /> : <Share2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
+                  <span>{copied ? t('已复制出处') : t('复制引文')}</span>
                 </button>
               </div>
             </div>

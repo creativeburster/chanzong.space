@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
+import { CopyrightCopyHandler } from '@/components/CopyrightCopyHandler';
 import { STATS } from '@/lib/stats';
 const SITE_URL = 'https://chanzong.space';
 
@@ -85,6 +86,7 @@ export default function RootLayout({
         <LangProvider>
           {children}
           <PWAInstallBanner />
+          <CopyrightCopyHandler />
         </LangProvider>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
