@@ -33,17 +33,17 @@ interface HierarchyDatum extends LineageNode {
 type LayoutDirection = 'vertical' | 'horizontal';
 type ThemeMode = 'dark' | 'light';
 
-// 大号精美思维导图卡片尺寸与步长规范（文字放大 30%，确保字大饱满、通透呼吸感）
-const CARD_WIDTH = 252;
-const CARD_HEIGHT = 86;
+// 巨型大气思维导图卡片尺寸与步长规范（大方块、大字号，确保视觉分量与清晰可读）
+const CARD_WIDTH = 340;
+const CARD_HEIGHT = 116;
 
 // 垂直布局（自上而下）：nodeSize([STEP_X, STEP_Y])
-const V_STEP_X = 296;
-const V_STEP_Y = 160;
+const V_STEP_X = 390;
+const V_STEP_Y = 200;
 
 // 水平布局（从左到右）：nodeSize([STEP_Y, STEP_X])
-const H_STEP_X = 355;
-const H_STEP_Y = 120;
+const H_STEP_X = 430;
+const H_STEP_Y = 150;
 
 // 舒适大字清晰阅读比例：1.0x（100% 原始矢量高清呈现，杜绝压缩发虚）
 const COMFORTABLE_SCALE = 1.0;
@@ -269,19 +269,26 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     const availW = Math.max(100, width - padX * 2);
     const availH = Math.max(100, height - padTop - padBottom);
 
-    // 真正能容纳全树的 scale，无硬编码下限卡死，最大不超过 1.0x
+    // 设定全景保底舒适比例 (不低于 0.45)，绝不无节制缩小成火柴盒！
     const scaleX = availW / treeW;
     const scaleY = availH / treeH;
-    const targetScale = Math.max(0.04, Math.min(scaleX, scaleY, 0.95));
+    const targetScale = Math.max(0.45, Math.min(scaleX, scaleY, 0.95));
 
-    // 计算中心平移：
+    // 计算平移：
     // X 方向在整个视口中完全居中
     const centerX = (minX + maxX) / 2;
     const tx = width / 2 - centerX * targetScale;
 
-    // Y 方向在 [padTop, height - padBottom] 的有效安全区域内完全居中
-    const centerY = (minY + maxY) / 2;
-    const ty = padTop + (availH / 2) - centerY * targetScale;
+    // Y 方向计算：
+    let ty: number;
+    if (treeH * targetScale <= availH) {
+      // 能够完整容纳，垂直完全居中
+      const centerY = (minY + maxY) / 2;
+      ty = padTop + (availH / 2) - centerY * targetScale;
+    } else {
+      // 超出可用高度，顶部对齐 padTop，保证上方祖师清晰大字展现，下方用户可顺畅滑动
+      ty = padTop - minY * targetScale;
+    }
 
     const transform = d3.zoomIdentity.translate(tx, ty).scale(targetScale);
 
@@ -498,8 +505,8 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
       .attr('y', -CARD_HEIGHT / 2)
       .attr('width', CARD_WIDTH)
       .attr('height', CARD_HEIGHT)
-      .attr('rx', 14)
-      .attr('ry', 14)
+      .attr('rx', 18)
+      .attr('ry', 18)
       .attr('fill', d => {
         const isMatched = activeSect === 'all' || d.data.sect === activeSect;
         if (isDark) {
@@ -516,63 +523,63 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
       })
       .attr('stroke-width', d => {
         const isMatched = activeSect === 'all' || d.data.sect === activeSect;
-        return isMatched ? 2.2 : 1.4;
+        return isMatched ? 2.5 : 1.5;
       })
       .attr('filter', 'url(#card-shadow)')
       .attr('class', 'transition-all duration-200');
 
-    // 2. 左侧宗派装饰竖条（饱满圆润）
+    // 2. 左侧宗派装饰竖条（饱满圆润大条）
     nodeGroup.append('rect')
-      .attr('x', -CARD_WIDTH / 2 + 2.5)
-      .attr('y', -CARD_HEIGHT / 2 + 10)
-      .attr('width', 5.5)
-      .attr('height', CARD_HEIGHT - 20)
-      .attr('rx', 3)
-      .attr('ry', 3)
+      .attr('x', -CARD_WIDTH / 2 + 3.5)
+      .attr('y', -CARD_HEIGHT / 2 + 12)
+      .attr('width', 7)
+      .attr('height', CARD_HEIGHT - 24)
+      .attr('rx', 3.5)
+      .attr('ry', 3.5)
       .attr('fill', d => SECT_META[d.data.sect]?.color || '#F59E0B');
 
-    // 3. 祖师姓名文本（放大30%：大号 22px！加粗！绝无模糊阴影，清晰锐利）
+    // 3. 祖师姓名文本（巨型大号 32px！加粗 800！沉稳大气，醒目极佳）
     nodeGroup.append('text')
-      .attr('x', -CARD_WIDTH / 2 + 22)
-      .attr('y', -16)
+      .attr('x', -CARD_WIDTH / 2 + 28)
+      .attr('y', -20)
       .text(d => t(d.data.name))
-      .attr('font-size', '22px')
-      .attr('font-weight', '700')
+      .attr('font-size', '32px')
+      .attr('font-weight', '800')
       .attr('font-family', 'var(--font-serif-zen), serif')
       .attr('fill', isDark ? '#FFFFFF' : '#0F172A')
-      .attr('letter-spacing', '0.6px')
+      .attr('letter-spacing', '0.8px')
       .attr('dominant-baseline', 'central');
 
-    // 4. 尊号专属小胶囊底衬（增强尊号识别度与对比度，加大加高）
+    // 4. 尊号专属小胶囊底衬（34px 大胶囊，增强尊号识别度与层次）
     nodeGroup.append('rect')
-      .attr('x', -CARD_WIDTH / 2 + 18)
-      .attr('y', 8)
+      .attr('x', -CARD_WIDTH / 2 + 24)
+      .attr('y', 12)
       .attr('width', d => {
         const rawTitle = d.data.title.split('·')[0].trim();
         const displayTitle = t(rawTitle.length > 9 ? rawTitle.slice(0, 9) : rawTitle);
-        return Math.min(200, displayTitle.length * 16.5 + 18);
+        return Math.min(270, displayTitle.length * 21 + 22);
       })
-      .attr('height', 26)
-      .attr('rx', 7)
-      .attr('ry', 7)
+      .attr('height', 34)
+      .attr('rx', 9)
+      .attr('ry', 9)
       .attr('fill', d => {
         const isMatched = activeSect === 'all' || d.data.sect === activeSect;
         if (isDark) {
-          return isMatched ? 'rgba(253, 230, 138, 0.14)' : 'rgba(255, 255, 255, 0.05)';
+          return isMatched ? 'rgba(253, 230, 138, 0.16)' : 'rgba(255, 255, 255, 0.06)';
         } else {
-          return isMatched ? 'rgba(217, 119, 6, 0.12)' : 'rgba(0, 0, 0, 0.04)';
+          return isMatched ? 'rgba(217, 119, 6, 0.14)' : 'rgba(0, 0, 0, 0.05)';
         }
       });
 
-    // 5. 祖师尊号/代数文本（放大30%：15.5px，粗体，浅金高光 #FDE68A，排版一清二楚）
+    // 5. 祖师尊号/代数文本（大号 20px，粗体，浅金高光 #FDE68A，排版一清二楚）
     nodeGroup.append('text')
-      .attr('x', -CARD_WIDTH / 2 + 27)
-      .attr('y', 21)
+      .attr('x', -CARD_WIDTH / 2 + 35)
+      .attr('y', 29)
       .text(d => {
         const rawTitle = d.data.title.split('·')[0].trim();
         return t(rawTitle.length > 9 ? rawTitle.slice(0, 9) : rawTitle);
       })
-      .attr('font-size', '15.5px')
+      .attr('font-size', '20px')
       .attr('font-weight', '600')
       .attr('font-family', 'var(--font-serif-zen), serif')
       .attr('dominant-baseline', 'central')
@@ -581,7 +588,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         return SECT_META[d.data.sect]?.color || '#92400E';
       });
 
-    // 6. 展开/折叠徽章（加大号 +/- 按钮，极其醒目好点）
+    // 6. 展开/折叠徽章（加大号 +/- 按钮，半径16px，极其醒目好点）
     const expandableNodes = nodeGroup.filter(d => Boolean(d.data.children || d.data._children));
 
     const badgeX = isVertical ? 0 : CARD_WIDTH / 2;
@@ -590,7 +597,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     expandableNodes.append('circle')
       .attr('cx', badgeX)
       .attr('cy', badgeY)
-      .attr('r', 13.5)
+      .attr('r', 16)
       .attr('fill', d => {
         if (d.data._children) return SECT_META[d.data.sect]?.color || '#F59E0B';
         return isDark ? '#101C38' : '#FFFFFF';
@@ -599,7 +606,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         if (d.data._children) return '#FFFFFF';
         return SECT_META[d.data.sect]?.color || (isDark ? '#38BDF8' : '#94A3B8');
       })
-      .attr('stroke-width', 2.2)
+      .attr('stroke-width', 2.4)
       .attr('filter', 'url(#card-shadow)');
 
     expandableNodes.append('text')
@@ -614,7 +621,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         }
         return '−';
       })
-      .attr('font-size', d => (d.data._children && d.data._children.length > 1 ? '12px' : '15px'))
+      .attr('font-size', d => (d.data._children && d.data._children.length > 1 ? '14px' : '18px'))
       .attr('font-weight', 'bold')
       .attr('fill', d => {
         if (d.data._children) return '#FFFFFF';
