@@ -1,8 +1,8 @@
 # 禅宗知识库 (chanzong.space) 外链建设监控报告
 
-> 更新时间: 2026-09-08 09:36:28  
+> 更新时间: 2026-09-08 10:03:51  
 > 目标配比: **国内 60% : 海外及繁体 40%**  
-> 当前达成: **国内 31 条 (57.4%) : 海外繁体 23 条 (42.6%)** | 总计: **54 条**
+> 当前达成: **国内 37 条 (61.7%) : 海外繁体 23 条 (38.3%)** | 总计: **60 条**
 
 ---
 
@@ -10,18 +10,18 @@
 
 | 区域 | 平台 | 数量 | 占比 |
 |---|---|---|---|
-| - | Telegraph (DA 92 高权重专栏) | 12 | 22.2% |
-| - | GitHub Gist (顶级域名 DA 96) | 11 | 20.4% |
-| - | Telegraph (高权重学术专栏) | 10 | 18.5% |
-| - | Rentry.co (独立域名 DA 78) | 7 | 13.0% |
-| - | GitHub (顶级独立域名 DA 96) | 3 | 5.6% |
-| - | 知乎 (Zhihu DA 94+) | 3 | 5.6% |
-| - | Write.as (独立域名 DA 75) | 2 | 3.7% |
-| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 3.7% |
-| - | Google Webmaster Ping | 1 | 1.9% |
-| - | Bing & Yahoo Webmaster Ping | 1 | 1.9% |
-| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 1.9% |
-| - | 华文网址导航 (123Cha) | 1 | 1.9% |
+| - | Telegraph (DA 92 高权重专栏) | 12 | 20.0% |
+| - | GitHub Gist (顶级域名 DA 96) | 11 | 18.3% |
+| - | Telegraph (高权重学术专栏) | 10 | 16.7% |
+| - | 知乎 (Zhihu DA 94+) | 9 | 15.0% |
+| - | Rentry.co (独立域名 DA 78) | 7 | 11.7% |
+| - | GitHub (顶级独立域名 DA 96) | 3 | 5.0% |
+| - | Write.as (独立域名 DA 75) | 2 | 3.3% |
+| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 3.3% |
+| - | Google Webmaster Ping | 1 | 1.7% |
+| - | Bing & Yahoo Webmaster Ping | 1 | 1.7% |
+| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 1.7% |
+| - | 华文网址导航 (123Cha) | 1 | 1.7% |
 
 ---
 
@@ -29,6 +29,12 @@
 
 | 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
 |---|---|---|---|---|---|---|---|
+| BL-0060 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 永嘉大师为何说“不除妄想不求真”？ | [/classics/zhengdaoge](https://chanzong.space/classics/zhengdaoge) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1967165225909335858/answer/2080597189684999141) | Live |
+| BL-0059 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 至道无难，唯嫌拣择这句话出自什么哪里？ | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/459168425/answer/2080596824281310060) | Live |
+| BL-0058 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 有谁知道什么是阿赖耶识，如何转识成智？ | [/classics/bashiguijusong](https://chanzong.space/classics/bashiguijusong) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1962834109404542124/answer/2080596233115246671) | Live |
+| BL-0057 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《楞严经》的核心是什么？ | [/classics/lengyanjing](https://chanzong.space/classics/lengyanjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1936384195430687530/answer/2080595975081665597) | Live |
+| BL-0056 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 为什么说见性成佛，而不说见性即佛，见性和成佛之间还... | [/classics/xuemaicong](https://chanzong.space/classics/xuemaicong) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1920463062604940234/answer/2080595715986813616) | Live |
+| BL-0055 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《般若波罗蜜多心经》主要讲了什么？ | [/classics/xinjing](https://chanzong.space/classics/xinjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/2053095292069852633/answer/2080595083485882039) | Live |
 | BL-0054 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《金刚经》能使人大彻大悟吗？ | [/classics/jingangjing](https://chanzong.space/classics/jingangjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1913876847906785200/answer/2080590300813252077) | Live |
 | BL-0053 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《金刚经》上为什么说“凡所有相，皆是虚妄”？如何理... | [/classics/jingangjing](https://chanzong.space/classics/jingangjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1928206401152451835/answer/2080590075331613854) | Live |
 | BL-0052 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 什么佛经都没读过，也不懂佛学，可以读《六祖坛经》吗... | [/classics/tanjing](https://chanzong.space/classics/tanjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/2036422757978723800/answer/2080588671347061388) | Live |
