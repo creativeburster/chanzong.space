@@ -1,8 +1,8 @@
 # 禅宗知识库 (chanzong.space) 外链建设监控报告
 
-> 更新时间: 2026-09-08 10:03:51  
+> 更新时间: 2026-09-08 10:16:13  
 > 目标配比: **国内 60% : 海外及繁体 40%**  
-> 当前达成: **国内 37 条 (61.7%) : 海外繁体 23 条 (38.3%)** | 总计: **60 条**
+> 当前达成: **国内 42 条 (64.6%) : 海外繁体 23 条 (35.4%)** | 总计: **65 条**
 
 ---
 
@@ -10,18 +10,19 @@
 
 | 区域 | 平台 | 数量 | 占比 |
 |---|---|---|---|
-| - | Telegraph (DA 92 高权重专栏) | 12 | 20.0% |
-| - | GitHub Gist (顶级域名 DA 96) | 11 | 18.3% |
-| - | Telegraph (高权重学术专栏) | 10 | 16.7% |
-| - | 知乎 (Zhihu DA 94+) | 9 | 15.0% |
-| - | Rentry.co (独立域名 DA 78) | 7 | 11.7% |
-| - | GitHub (顶级独立域名 DA 96) | 3 | 5.0% |
-| - | Write.as (独立域名 DA 75) | 2 | 3.3% |
-| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 3.3% |
-| - | Google Webmaster Ping | 1 | 1.7% |
-| - | Bing & Yahoo Webmaster Ping | 1 | 1.7% |
-| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 1.7% |
-| - | 华文网址导航 (123Cha) | 1 | 1.7% |
+| - | Telegraph (DA 92 高权重专栏) | 12 | 18.5% |
+| - | GitHub Gist (顶级域名 DA 96) | 11 | 16.9% |
+| - | Telegraph (高权重学术专栏) | 10 | 15.4% |
+| - | 知乎 (Zhihu DA 94+) | 9 | 13.8% |
+| - | Rentry.co (独立域名 DA 78) | 7 | 10.8% |
+| - | 新浪微博 (Weibo DA 90+) | 5 | 7.7% |
+| - | GitHub (顶级独立域名 DA 96) | 3 | 4.6% |
+| - | Write.as (独立域名 DA 75) | 2 | 3.1% |
+| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 3.1% |
+| - | Google Webmaster Ping | 1 | 1.5% |
+| - | Bing & Yahoo Webmaster Ping | 1 | 1.5% |
+| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 1.5% |
+| - | 华文网址导航 (123Cha) | 1 | 1.5% |
 
 ---
 
@@ -29,6 +30,11 @@
 
 | 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
 |---|---|---|---|---|---|---|---|
+| BL-0065 | 2026-09-08 | 新浪微博 (Weibo DA 90+) | 国内 | 【禅修日课 · 阿赖耶识与转识成智】八识规矩颂修心... | [/classics/bashiguijusong](https://chanzong.space/classics/bashiguijusong) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/6196660530/Rh7RU4QuA) | Live |
+| BL-0064 | 2026-09-08 | 新浪微博 (Weibo DA 90+) | 国内 | 【禅修日课 · 开悟楞严与狂心若歇】楞严经明心见性... | [/classics/lengyanjing](https://chanzong.space/classics/lengyanjing) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/6196660530/Rh7RxrfAV) | Live |
+| BL-0063 | 2026-09-08 | 新浪微博 (Weibo DA 90+) | 国内 | 【禅修日课 · 色即是空与心无挂碍】心经照见五蕴皆... | [/classics/xinjing](https://chanzong.space/classics/xinjing) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/6196660530/Rh7Ra3sp6) | Live |
+| BL-0062 | 2026-09-08 | 新浪微博 (Weibo DA 90+) | 国内 | 【禅修日课 · 降伏其心与应无所住】金刚经破相心法 | [/classics/jingangjing](https://chanzong.space/classics/jingangjing) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/6196660530/Rh7QNmzIO) | Live |
+| BL-0061 | 2026-09-08 | 新浪微博 (Weibo DA 90+) | 国内 | 【禅修日课 · 自性本自清净】六祖坛经悟道与心法 | [/classics/tanjing](https://chanzong.space/classics/tanjing) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/6196660530/Rh7Q7jsGi) | Live |
 | BL-0060 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 永嘉大师为何说“不除妄想不求真”？ | [/classics/zhengdaoge](https://chanzong.space/classics/zhengdaoge) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1967165225909335858/answer/2080597189684999141) | Live |
 | BL-0059 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 至道无难，唯嫌拣择这句话出自什么哪里？ | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/459168425/answer/2080596824281310060) | Live |
 | BL-0058 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 有谁知道什么是阿赖耶识，如何转识成智？ | [/classics/bashiguijusong](https://chanzong.space/classics/bashiguijusong) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1962834109404542124/answer/2080596233115246671) | Live |
