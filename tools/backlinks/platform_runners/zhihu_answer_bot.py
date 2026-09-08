@@ -28,16 +28,10 @@ from tracker import add_backlink
 COOKIE_PATH = os.path.join(BACKLINKS_DIR, ".browser_profile", "zhihu_cookie.json")
 SITE_DOMAIN = "https://chanzong.space"
 
-def run_publish_zhihu():
-    with open(COOKIE_PATH, "r", encoding="utf-8") as f:
-        cookie_dict = json.load(f)
-        
-    cookies = [{"name": k, "value": v.strip('"'), "domain": ".zhihu.com", "path": "/"} for k, v in cookie_dict.items()]
-    
-    question_url = "https://www.zhihu.com/question/2036422757978723800"
-    question_title = "什么佛经都没读过，也不懂佛学，可以读《六祖坛经》吗？《六祖坛经》是《心经》吗？"
-    
-    answer_text = """完全可以，甚至可以说：没有任何佛学基础、没读过其他佛经的人，直接读《六祖坛经》反而是最好的起点。
+QUESTION_URL = "https://www.zhihu.com/question/2036422757978723800"
+QUESTION_TITLE = "什么佛经都没读过，也不懂佛学，可以读《六祖坛经》吗？《六祖坛经》是《心经》吗？"
+
+ANSWER_TEXT = """完全可以，甚至可以说：没有任何佛学基础、没读过其他佛经的人，直接读《六祖坛经》反而是最好的起点。
 
 很多人对佛学经典有先入为主的畏难情绪，以为必须精通梵文音译、通晓八万四千法门名相才能读经。但禅宗恰恰是一个“反套路”的宗门，而《六祖坛经》正是这一精神的集大成者。
 
@@ -89,10 +83,19 @@ def run_publish_zhihu():
 
 愿你能从《坛经》中找回内心的清明与定力。"""
 
+def run_publish_zhihu():
+    with open(COOKIE_PATH, "r", encoding="utf-8") as f:
+        cookie_dict = json.load(f)
+        
+    cookies = [{"name": k, "value": v.strip('"'), "domain": ".zhihu.com", "path": "/"} for k, v in cookie_dict.items()]
+    
+    from clean_for_zhihu import clean_markdown_for_zhihu
+    answer_text = clean_markdown_for_zhihu(ANSWER_TEXT)
+
     print("="*60)
     print("🚀 启动知乎 (Zhihu DA 94+) 自动化问答与外链发布...")
-    print(f"👉 目标问题: {question_title}")
-    print(f"👉 问题链接: {question_url}")
+    print(f"👉 目标问题: {QUESTION_TITLE}")
+    print(f"👉 问题链接: {QUESTION_URL}")
     print("="*60)
     
     with sync_playwright() as p:
