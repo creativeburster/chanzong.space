@@ -203,96 +203,261 @@ body {
 }
 
 /* ---------------------------------------------------------
-   2. 暗夜主题 (Night Theme) - 沉浸玄空月白夜读
+   2. 暗夜主题 (Night Theme & Dark Mode) - 沉浸玄空月白夜读
    --------------------------------------------------------- */
-[data-theme="night"] {
+[data-theme="night"],
+html.dark,
+[data-theme="night"] body,
+html.dark body {
   background-color: #090E17 !important;
   color: #E2E8F0 !important;
 }
+
 [data-theme="night"] article,
-[data-theme="night"] .bg-white {
+html.dark article,
+[data-theme="night"] .bg-white,
+html.dark .bg-white,
+[data-theme="night"] [class*="bg-[#FAF9F6]"],
+html.dark [class*="bg-[#FAF9F6]"] {
   background-color: #0F172A !important;
   border-color: #1E293B !important;
   color: #E2E8F0 !important;
 }
-[data-theme="night"] .prose blockquote {
+
+[data-theme="night"] .prose blockquote,
+html.dark .prose blockquote {
   background-color: #162238 !important;
   border-left-color: #F59E0B !important;
   border: 1px solid #1E293B !important;
   border-left-width: 4px !important;
   color: #E2E8F0 !important;
 }
-[data-theme="night"] .prose blockquote * {
+[data-theme="night"] .prose blockquote *,
+html.dark .prose blockquote * {
   color: #F1F5F9 !important;
 }
+
 [data-theme="night"] .prose p,
+html.dark .prose p,
 [data-theme="night"] .prose li,
-[data-theme="night"] .prose span:not([class*="text-amber"]):not([class*="text-red"]):not([class*="text-emerald"]) {
+html.dark .prose li {
   color: #CBD5E1 !important;
 }
+
 [data-theme="night"] .prose h1,
+html.dark .prose h1,
 [data-theme="night"] .prose h2,
+html.dark .prose h2,
 [data-theme="night"] .prose h3,
+html.dark .prose h3,
 [data-theme="night"] .prose h4,
-[data-theme="night"] .prose strong {
+html.dark .prose h4,
+[data-theme="night"] .prose strong,
+html.dark .prose strong {
   color: #F8FAFC !important;
 }
-[data-theme="night"] .prose a {
+
+[data-theme="night"] .prose a,
+html.dark .prose a {
   color: #FBBF24 !important;
   text-decoration-color: rgba(251, 191, 36, 0.4) !important;
 }
-[data-theme="night"] .prose a:hover {
+[data-theme="night"] .prose a:hover,
+html.dark .prose a:hover {
   color: #FDE68A !important;
 }
+
+/* 标题与主要文本高亮映射 */
 [data-theme="night"] .text-slate-900,
+html.dark .text-slate-900,
 [data-theme="night"] .text-zinc-900,
+html.dark .text-zinc-900,
 [data-theme="night"] .text-zinc-800,
-[data-theme="night"] .text-slate-800 {
+html.dark .text-zinc-800,
+[data-theme="night"] .text-slate-800,
+html.dark .text-slate-800 {
   color: #F1F5F9 !important;
 }
+
+[data-theme="night"] .text-slate-700,
+html.dark .text-slate-700,
+[data-theme="night"] .text-zinc-700,
+html.dark .text-zinc-700,
 [data-theme="night"] .text-slate-600,
+html.dark .text-slate-600,
+[data-theme="night"] .text-zinc-600,
+html.dark .text-zinc-600 {
+  color: #CBD5E1 !important;
+}
+
 [data-theme="night"] .text-slate-500,
+html.dark .text-slate-500,
 [data-theme="night"] .text-zinc-500,
-[data-theme="night"] .text-zinc-400 {
+html.dark .text-zinc-500,
+[data-theme="night"] .text-zinc-400,
+html.dark .text-zinc-400 {
   color: #94A3B8 !important;
 }
-/* 暗夜模式下的所有卡片与工具栏背景自适应 */
-[data-theme="night"] .bg-zinc-100,
-[data-theme="night"] .bg-amber-50,
-[data-theme="night"] .bg-amber-50\/60,
-[data-theme="night"] .bg-zinc-50,
-[data-theme="night"] .bg-stone-50,
-[data-theme="night"] .bg-orange-50,
-[data-theme="night"] .bg-orange-50\/60,
-[data-theme="night"] .bg-blue-50,
-[data-theme="night"] .bg-purple-50,
-[data-theme="night"] .bg-rose-50 {
-  background-color: #162238 !important;
-  border-color: #24344D !important;
+
+/* 核心色系深色文本反转至夜间亮色高对比度 */
+[data-theme="night"] .text-emerald-950,
+html.dark .text-emerald-950,
+[data-theme="night"] .text-emerald-900,
+html.dark .text-emerald-900,
+[data-theme="night"] .text-emerald-800,
+html.dark .text-emerald-800 {
+  color: #6EE7B7 !important;
 }
-[data-theme="night"] .text-amber-900,
-[data-theme="night"] .text-orange-900,
+[data-theme="night"] .text-emerald-700,
+html.dark .text-emerald-700 {
+  color: #34D399 !important;
+}
+
+[data-theme="night"] .text-rose-950,
+html.dark .text-rose-950,
+[data-theme="night"] .text-rose-900,
+html.dark .text-rose-900,
+[data-theme="night"] .text-rose-800,
+html.dark .text-rose-800 {
+  color: #FDA4AF !important;
+}
+[data-theme="night"] .text-rose-700,
+html.dark .text-rose-700 {
+  color: #FB7185 !important;
+}
+
+[data-theme="night"] .text-blue-950,
+html.dark .text-blue-950,
 [data-theme="night"] .text-blue-900,
-[data-theme="night"] .text-purple-900 {
-  color: #F1F5F9 !important;
-}
-[data-theme="night"] .text-amber-800,
-[data-theme="night"] .text-orange-800,
+html.dark .text-blue-900,
 [data-theme="night"] .text-blue-800,
-[data-theme="night"] .text-purple-800 {
+html.dark .text-blue-800 {
+  color: #93C5FD !important;
+}
+[data-theme="night"] .text-blue-700,
+html.dark .text-blue-700 {
+  color: #60A5FA !important;
+}
+
+[data-theme="night"] .text-purple-950,
+html.dark .text-purple-950,
+[data-theme="night"] .text-purple-900,
+html.dark .text-purple-900,
+[data-theme="night"] .text-purple-800,
+html.dark .text-purple-800 {
+  color: #D8B4FE !important;
+}
+[data-theme="night"] .text-purple-700,
+html.dark .text-purple-700 {
+  color: #C084FC !important;
+}
+
+[data-theme="night"] .text-sky-950,
+html.dark .text-sky-950,
+[data-theme="night"] .text-sky-900,
+html.dark .text-sky-900,
+[data-theme="night"] .text-sky-800,
+html.dark .text-sky-800 {
+  color: #7DD3FC !important;
+}
+[data-theme="night"] .text-sky-700,
+html.dark .text-sky-700 {
+  color: #38BDF8 !important;
+}
+
+[data-theme="night"] .text-amber-950,
+html.dark .text-amber-950,
+[data-theme="night"] .text-amber-900,
+html.dark .text-amber-900,
+[data-theme="night"] .text-amber-800,
+html.dark .text-amber-800,
+[data-theme="night"] .text-orange-950,
+html.dark .text-orange-950,
+[data-theme="night"] .text-orange-900,
+html.dark .text-orange-900,
+[data-theme="night"] .text-orange-800,
+html.dark .text-orange-800 {
   color: #FCD34D !important;
 }
 [data-theme="night"] .text-amber-700,
+html.dark .text-amber-700,
 [data-theme="night"] .text-orange-700,
-[data-theme="night"] .text-blue-700,
-[data-theme="night"] .text-purple-700 {
+html.dark .text-orange-700 {
   color: #F59E0B !important;
 }
+
+[data-theme="night"] .text-indigo-950,
+html.dark .text-indigo-950,
+[data-theme="night"] .text-indigo-900,
+html.dark .text-indigo-900,
+[data-theme="night"] .text-indigo-800,
+html.dark .text-indigo-800 {
+  color: #A5B4FC !important;
+}
+
+/* 暗夜模式下的所有卡片与工具栏背景自适应 */
+[data-theme="night"] .bg-zinc-100,
+html.dark .bg-zinc-100,
+[data-theme="night"] .bg-slate-50,
+html.dark .bg-slate-50,
+[data-theme="night"] .bg-zinc-50,
+html.dark .bg-zinc-50,
+[data-theme="night"] .bg-stone-50,
+html.dark .bg-stone-50,
+[data-theme="night"] [class*="bg-amber-50"],
+html.dark [class*="bg-amber-50"],
+[data-theme="night"] [class*="bg-orange-50"],
+html.dark [class*="bg-orange-50"],
+[data-theme="night"] [class*="bg-blue-50"],
+html.dark [class*="bg-blue-50"],
+[data-theme="night"] [class*="bg-purple-50"],
+html.dark [class*="bg-purple-50"],
+[data-theme="night"] [class*="bg-rose-50"],
+html.dark [class*="bg-rose-50"],
+[data-theme="night"] [class*="bg-emerald-50"],
+html.dark [class*="bg-emerald-50"],
+[data-theme="night"] [class*="bg-sky-50"],
+html.dark [class*="bg-sky-50"],
+[data-theme="night"] [class*="bg-indigo-50"],
+html.dark [class*="bg-indigo-50"] {
+  background-color: #131E31 !important;
+  border-color: #24344D !important;
+}
+
+/* 浅色边框在暗夜下的自适应 */
 [data-theme="night"] .border-zinc-200,
-[data-theme="night"] .border-amber-200,
+html.dark .border-zinc-200,
 [data-theme="night"] .border-slate-200,
-[data-theme="night"] .border-orange-200 {
+html.dark .border-slate-200,
+[data-theme="night"] [class*="border-amber-200"],
+html.dark [class*="border-amber-200"],
+[data-theme="night"] [class*="border-amber-300"],
+html.dark [class*="border-amber-300"],
+[data-theme="night"] [class*="border-rose-200"],
+html.dark [class*="border-rose-200"],
+[data-theme="night"] [class*="border-blue-200"],
+html.dark [class*="border-blue-200"],
+[data-theme="night"] [class*="border-purple-200"],
+html.dark [class*="border-purple-200"],
+[data-theme="night"] [class*="border-emerald-200"],
+html.dark [class*="border-emerald-200"],
+[data-theme="night"] [class*="border-sky-200"],
+html.dark [class*="border-sky-200"] {
   border-color: #1E293B !important;
+}
+
+/* 生僻字注音与词汇高亮在暗夜模式下的高对比度展现 */
+[data-theme="night"] .zen-pinyin-rt,
+html.dark .zen-pinyin-rt {
+  color: #FDE68A !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+[data-theme="night"] .zen-glossary-word,
+html.dark .zen-glossary-word {
+  color: #F8FAFC !important;
+  border-bottom-color: #F59E0B !important;
 }
 
 

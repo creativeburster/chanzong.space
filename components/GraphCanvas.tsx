@@ -718,7 +718,9 @@ export const GraphCanvas: React.FC = () => {
         .attr('y', (l) => (((l.source as NodeData).y ?? 0) + ((l.target as NodeData).y ?? 0)) / 2 - 4);
     };
 
-    // 力导向设置
+    // 力导向设置：移动端采用极速收敛与高阻尼，避免在手机主线程长时间持续 tick 掉帧
+    const isMobile = width < 768;
+
     const simulation = d3.forceSimulation<NodeData>(nodes)
       .force('link', d3.forceLink<NodeData, LinkData>(links)
         .id(d => d.id)
@@ -736,7 +738,8 @@ export const GraphCanvas: React.FC = () => {
           n.vy = (n.vy || 0) + (n.ty - (n.y || 0)) * 0.42 * alpha;
         }
       }) as any)
-      .alphaDecay(0.04);
+      .alphaDecay(isMobile ? 0.15 : 0.04)
+      .velocityDecay(isMobile ? 0.6 : 0.4);
 
     /* =========================================================
      * 💎 节点与文字渲染 (Node Gems & Hierarchical Typography)
@@ -759,13 +762,13 @@ export const GraphCanvas: React.FC = () => {
       .attr('stroke-width', 1.5)
       .attr('stroke-dasharray', '2,2');
 
-    // 节点宝石本体
+    // 节点宝石本体（移动端关闭开销巨大的 drop-shadow 滤镜，改用纯矢量描边）
     node.append('circle')
       .attr('r', d => d.r ?? 10)
       .attr('fill', d => colorMap[d.type] || '#ccc')
       .attr('stroke', d => d.isCore ? '#FFFBEB' : '#FFFFFF')
       .attr('stroke-width', d => d.isCore ? 2.2 : 1.4)
-      .style('filter', d => d.isCore ? 'drop-shadow(0 0 8px rgba(251, 191, 36, 0.8))' : 'none');
+      .style('filter', d => (!isMobile && d.isCore) ? 'drop-shadow(0 0 8px rgba(251, 191, 36, 0.8))' : 'none');
 
     // 清晰文字标签：
     // 1. 如果处于单分类独览模式 (如法门)：所有 91 个法门直接 100% 清晰大字常显！
@@ -913,10 +916,10 @@ export const GraphCanvas: React.FC = () => {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    // 默认居中缩放
+    // 默认居中缩放：移动端根据视口宽度自适应计算，确保八瓣金莲完整展现不被左右裁切
     const maxLotusR = 940;
     const k0 = Math.min(width, height) / ((maxLotusR + 50) * 2);
-    const fitScale0 = Math.max(0.35, Math.min(0.92, k0));
+    const fitScale0 = isMobile ? Math.max(0.16, Math.min(0.85, k0 * 0.94)) : Math.max(0.35, Math.min(0.92, k0));
     svg.call(zoom.transform, d3.zoomIdentity.translate(cx - fitScale0 * cx, cy - fitScale0 * cy).scale(fitScale0));
 
     // URL ?focus=xxx 自动对焦
@@ -927,18 +930,19 @@ export const GraphCanvas: React.FC = () => {
       const target = nodes.find((n) => n.rawId === focusId || n.id === focusId);
       if (target) {
         focusTimer = setTimeout(() => {
-          const k = 1.35;
+          const k = isMobile ? 0.95 : 1.35;
           const fitX = width / 2 - (target.x ?? cx) * k;
           const fitY = height / 2 - (target.y ?? cy) * k;
           svg.transition().duration(900).ease(d3.easeCubicOut).call(zoom.transform, d3.zoomIdentity.translate(fitX, fitY).scale(k));
           showTooltip({ clientX: width / 2, clientY: height / 2 - 35 }, target);
-        }, 1100);
+        }, 800);
       }
     }
 
+    // 极速冻结：移动端 350ms 内快速收敛停止计算，桌面端 2200ms 冻结
     const freezeTimer = setTimeout(() => {
       simulation.stop();
-    }, 2500);
+    }, isMobile ? 350 : 2200);
 
     return () => {
       clearTimeout(freezeTimer);
@@ -990,9 +994,10 @@ export const GraphCanvas: React.FC = () => {
       const height = containerRef.current.clientHeight || 750;
       const cx = width / 2;
       const cy = height / 2;
+      const isMobile = width < 768;
       const maxLotusR = 940;
       const k0 = Math.min(width, height) / ((maxLotusR + 50) * 2);
-      const fitScale0 = Math.max(0.35, Math.min(0.92, k0));
+      const fitScale0 = isMobile ? Math.max(0.16, Math.min(0.85, k0 * 0.94)) : Math.max(0.35, Math.min(0.92, k0));
       svgRef.current.transition().duration(600).ease(d3.easeCubicOut).call(
         zoomRef.current.transform,
         d3.zoomIdentity.translate(cx - fitScale0 * cx, cy - fitScale0 * cy).scale(fitScale0)
@@ -1008,30 +1013,30 @@ export const GraphCanvas: React.FC = () => {
         ref={containerRef}
       >
         {/* 顶部标题与形态指示徽章 */}
-        <div className="absolute top-3 left-3 md:top-4 md:left-4 z-10 flex items-center gap-2 pointer-events-none">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-amber-500/30 shadow-lg text-xs font-bold text-amber-300">
-            <Flower2 className={`w-4 h-4 ${isNoneMode ? 'text-amber-300/80' : 'text-amber-400 animate-pulse'}`} />
+        <div className="absolute top-2.5 left-2.5 md:top-4 md:left-4 z-10 flex items-center gap-2 pointer-events-none">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-xl md:rounded-2xl bg-slate-900/90 backdrop-blur-md border border-amber-500/30 shadow-lg text-[11px] md:text-xs font-bold text-amber-300">
+            <Flower2 className={`w-3.5 h-3.5 md:w-4 md:h-4 ${isNoneMode ? 'text-amber-300/80' : 'text-amber-400 animate-pulse'}`} />
             <span>
               {isNoneMode
-                ? t('自性真空 · 宝莲金线轮廓 (全隐寂照)')
+                ? t('宝莲金线轮廓')
                 : isSingleMode 
-                ? `${t(typeLabelMap[singleType!])} · 独览全景宝莲 (共 ${COUNTS[singleType!]} 项)` 
-                : t('自性金莲 · 俯视全景曼荼罗')}
+                ? `${t(typeLabelMap[singleType!])} · 独览` 
+                : t('八瓣金莲全景')}
             </span>
           </div>
         </div>
 
         {/* Filter chips (右上角分类筛选与独览快捷栏) */}
-        <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex items-center gap-1.5 md:gap-2 max-w-[85%] md:max-w-[65%] overflow-x-auto no-scrollbar py-1 px-1">
-          {/* 全部还原按钮 (当划掉任一分类或全部5个划掉时，均提供便捷的一键还原) */}
+        <div className="absolute top-2.5 right-2.5 md:top-4 md:right-4 z-10 flex items-center gap-1 md:gap-2 max-w-[68%] md:max-w-[65%] overflow-x-auto no-scrollbar py-0.5 px-1">
+          {/* 全部还原按钮 */}
           {activeCount < 5 && (
             <button
               onClick={resetAllTypes}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] md:text-xs font-bold bg-amber-500/20 border border-amber-400/50 text-amber-200 hover:bg-amber-500/30 transition shadow-sm shrink-0"
+              className="flex items-center gap-1 px-2 py-0.5 md:px-2.5 md:py-1 rounded-full text-[10px] md:text-xs font-bold bg-amber-500/20 border border-amber-400/50 text-amber-200 hover:bg-amber-500/30 transition shadow-sm shrink-0"
               title="还原全景五大分类"
             >
-              <CheckCheck className="w-3.5 h-3.5" />
-              <span>{t('全景还原')}</span>
+              <CheckCheck className="w-3 h-3 md:w-3.5 md:h-3.5" />
+              <span>{t('还原')}</span>
             </button>
           )}
 
@@ -1042,7 +1047,7 @@ export const GraphCanvas: React.FC = () => {
                 <button
                   onClick={() => toggleType(tType)}
                   onDoubleClick={() => isolateType(tType)}
-                  className={`flex items-center gap-1 md:gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[11px] md:text-xs font-bold border transition-all ${
+                  className={`flex items-center gap-1 md:gap-1.5 px-2 py-0.5 md:px-3 md:py-1.5 rounded-full text-[10px] md:text-xs font-bold border transition-all ${
                     isCurrentSingle
                       ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-md scale-105'
                       : visible[tType]
@@ -1052,7 +1057,7 @@ export const GraphCanvas: React.FC = () => {
                   title={t('单击切换显隐，双击一键独览此类')}
                 >
                   <span
-                    className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full"
+                    className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full"
                     style={{
                       backgroundColor: colorMap[tType],
                       opacity: visible[tType] ? 1 : 0.3
@@ -1065,16 +1070,16 @@ export const GraphCanvas: React.FC = () => {
           })}
         </div>
 
-        {/* 底部空灵提示 */}
-        <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 z-10 pointer-events-none">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-sm border border-slate-700/60 text-[11px] text-slate-400 font-medium">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>
+        {/* 底部空灵提示（移动端保留右侧操作区安全距离） */}
+        <div className="absolute bottom-3 left-2.5 right-28 md:right-auto md:bottom-4 md:left-4 z-10 pointer-events-none">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 md:px-3 md:py-1.5 rounded-xl bg-slate-900/85 backdrop-blur-sm border border-slate-700/60 text-[10px] md:text-[11px] text-slate-400 font-medium truncate max-w-full">
+            <Sparkles className="w-3 h-3 md:w-3.5 md:h-3.5 text-amber-400 shrink-0" />
+            <span className="truncate">
               {isNoneMode
-                ? t('已隐去全部实体节点，仅显金莲空华轮廓 · 单击右上角任意标签即可重新显现')
+                ? t('点击右上角标签可重新显现')
                 : isSingleMode
-                ? `${t(typeLabelMap[singleType!])}${t('全部')} ${COUNTS[singleType!]} ${t('个实体完整绽放 · 点击节点查看详情')}`
-                : t('点击右上角标签筛选，双击一键独览此类 · 滚轮缩放')}
+                ? `${t(typeLabelMap[singleType!])}共 ${COUNTS[singleType!]} 项 · 点击节点研读`
+                : t('双指缩放 · 点击节点查看详情')}
             </span>
           </div>
         </div>

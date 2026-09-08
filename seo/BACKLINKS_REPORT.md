@@ -1,8 +1,8 @@
 # 禅宗知识库 (chanzong.space) 外链建设监控报告
 
-> 更新时间: 2026-09-07 17:26:18  
+> 更新时间: 2026-09-08 09:36:28  
 > 目标配比: **国内 60% : 海外及繁体 40%**  
-> 当前达成: **国内 25 条 (56.8%) : 海外繁体 19 条 (43.2%)** | 总计: **44 条**
+> 当前达成: **国内 31 条 (57.4%) : 海外繁体 23 条 (42.6%)** | 总计: **54 条**
 
 ---
 
@@ -10,17 +10,18 @@
 
 | 区域 | 平台 | 数量 | 占比 |
 |---|---|---|---|
-| - | Telegraph (DA 92 高权重专栏) | 12 | 27.3% |
-| - | Telegraph (高权重学术专栏) | 10 | 22.7% |
-| - | Rentry.co (独立域名 DA 78) | 7 | 15.9% |
-| - | GitHub Gist (顶级域名 DA 96) | 5 | 11.4% |
-| - | GitHub (顶级独立域名 DA 96) | 3 | 6.8% |
-| - | Write.as (独立域名 DA 75) | 2 | 4.5% |
-| - | Google Webmaster Ping | 1 | 2.3% |
-| - | Bing & Yahoo Webmaster Ping | 1 | 2.3% |
-| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 2.3% |
-| - | 华文网址导航 (123Cha) | 1 | 2.3% |
-| - | Dev.to (全球权威开发者平台 DA 90) | 1 | 2.3% |
+| - | Telegraph (DA 92 高权重专栏) | 12 | 22.2% |
+| - | GitHub Gist (顶级域名 DA 96) | 11 | 20.4% |
+| - | Telegraph (高权重学术专栏) | 10 | 18.5% |
+| - | Rentry.co (独立域名 DA 78) | 7 | 13.0% |
+| - | GitHub (顶级独立域名 DA 96) | 3 | 5.6% |
+| - | 知乎 (Zhihu DA 94+) | 3 | 5.6% |
+| - | Write.as (独立域名 DA 75) | 2 | 3.7% |
+| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 3.7% |
+| - | Google Webmaster Ping | 1 | 1.9% |
+| - | Bing & Yahoo Webmaster Ping | 1 | 1.9% |
+| - | IndexNow (Bing / Yandex / 国际引擎) | 1 | 1.9% |
+| - | 华文网址导航 (123Cha) | 1 | 1.9% |
 
 ---
 
@@ -28,6 +29,16 @@
 
 | 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
 |---|---|---|---|---|---|---|---|
+| BL-0054 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《金刚经》能使人大彻大悟吗？ | [/classics/jingangjing](https://chanzong.space/classics/jingangjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1913876847906785200/answer/2080590300813252077) | Live |
+| BL-0053 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 《金刚经》上为什么说“凡所有相，皆是虚妄”？如何理... | [/classics/jingangjing](https://chanzong.space/classics/jingangjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/1928206401152451835/answer/2080590075331613854) | Live |
+| BL-0052 | 2026-09-08 | 知乎 (Zhihu DA 94+) | 国内 | 什么佛经都没读过，也不懂佛学，可以读《六祖坛经》吗... | [/classics/tanjing](https://chanzong.space/classics/tanjing) | [知乎 (Zhihu DA 94+)发布](https://www.zhihu.com/question/2036422757978723800/answer/2080588671347061388) | Live |
+| BL-0051 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 马祖道一平常心是道与即心即佛宗风 | [/classics/mazu](https://chanzong.space/classics/mazu) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/b43e68d2d1bf906c80bb58d05be9998c) | Live |
+| BL-0050 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 海外繁体 | 修心訣頓悟漸修與定慧雙修切要開示 | [/zh-tw/classics/xiuxinjue](https://chanzong.space/zh-tw/classics/xiuxinjue) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/4448ba2a3ad809e24834160eeda5f0f6) | Live |
+| BL-0049 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 傅大士心王铭观心空王顿悟心髓 | [/classics/xinwangming](https://chanzong.space/classics/xinwangming) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/725065d5599bd7493ea606de609797f5) | Live |
+| BL-0048 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 海外繁体 | 圓覺經知幻即離與二十五輪修證指歸 | [/zh-tw/classics/yuanjuejing](https://chanzong.space/zh-tw/classics/yuanjuejing) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/81b6c8dfbf6b9a1507553419460df2d3) | Live |
+| BL-0047 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 永嘉证道歌绝学无为与顿悟见性指要 | [/classics/zhengdaoge](https://chanzong.space/classics/zhengdaoge) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/0fa44360da4637a86bf2c1d701b52e1f) | Live |
+| BL-0046 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 海外繁体 | 信心銘至道無難與莫憎愛參究心要 | [/zh-tw/classics/xinxinming](https://chanzong.space/zh-tw/classics/xinxinming) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/fc1b1835bb46aa6a028fea583fa36894) | Live |
+| BL-0045 | 2026-09-07 | Dev.to (全球权威开发者平台 DA 90) | 海外繁体 | Engineering a Digital Can... | [/classics/tanjing](https://chanzong.space/classics/tanjing) | [Dev.to (全球权威开发者平台 DA 90)发布](https://dev.to/willsun/engineering-a-digital-canon-interactive-taxonomies-for-over-40-classical-zen-texts-e66) | Live |
 | BL-0044 | 2026-09-07 | GitHub (顶级独立域名 DA 96) | 海外繁体 | GitHub 官方开源项目主页及全量典籍网络清单 | [](https://chanzong.space) | [GitHub (顶级独立域名 DA 96)发布](https://github.com/gstar-byte/chanzong.space) | Live |
 | BL-0043 | 2026-09-07 | GitHub (顶级独立域名 DA 96) | 海外繁体 | GitHub 官方开源项目主页及全量典籍网络清单 | [](https://chanzong.space) | [GitHub (顶级独立域名 DA 96)发布](https://github.com/gstar-byte/chanzong.space) | Live |
 | BL-0042 | 2026-09-07 | GitHub Gist (顶级域名 DA 96) | 国内 | 金刚经破相明心与四句偈参修指要 | [/books/jingangjing](https://chanzong.space/books/jingangjing) | [GitHub Gist (顶级域名 DA 96)发布](https://gist.github.com/gstar-byte/0da0e7ebc09ed52ab78e10468a9f7902) | Live |

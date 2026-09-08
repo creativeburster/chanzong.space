@@ -204,8 +204,9 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     const targetX = parseFloat(match[1]);
     const targetY = parseFloat(match[2]);
 
-    // 采用 1.0x 舒适高清大字比例
-    const scale = COMFORTABLE_SCALE;
+    // 采用舒适清晰大字比例（移动端按屏幕宽度等比适度自适应，保证目标卡片居中且周围弟子可见）
+    const isMobile = width < 768;
+    const scale = isMobile ? Math.min(0.68, Math.max(0.52, (width - 30) / CARD_WIDTH)) : COMFORTABLE_SCALE;
 
     const isVert = direction === 'vertical';
     const tx = isVert ? (width / 2 - targetX * scale) : (width * 0.35 - targetX * scale);
@@ -226,6 +227,7 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     const svg = d3.select(svgRef.current);
     const width = containerRef.current.clientWidth || 1000;
     const height = containerRef.current.clientHeight || (isFullScreen ? window.innerHeight : 960);
+    const isMobile = width < 768;
 
     const nodesGroup = svg.select('.nodes');
     if (nodesGroup.empty()) return;
@@ -260,19 +262,19 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
     const treeW = maxX - minX;
     const treeH = maxY - minY;
 
-    // 顶部控制栏约 50px，必须为顶部预留安全边距（85px），确保最顶层祖师（如释迦佛、迦叶、达摩）绝不被控制钮遮挡！
-    // 底部留出 55px 边距，确保底层宗师绝不被切出视口；左右各留 45px
-    const padTop = 85;
-    const padBottom = 55;
-    const padX = 45;
+    // 顶部与边缘预留安全边距
+    const padTop = isMobile ? 80 : 85;
+    const padBottom = isMobile ? 35 : 55;
+    const padX = isMobile ? 18 : 45;
 
     const availW = Math.max(100, width - padX * 2);
     const availH = Math.max(100, height - padTop - padBottom);
 
-    // 设定全景保底舒适比例 (不低于 0.45)，绝不无节制缩小成火柴盒！
+    // 设定全景保底舒适比例：移动端允许缩小至0.16完整呈现整座法脉，桌面端不低于0.45
     const scaleX = availW / treeW;
     const scaleY = availH / treeH;
-    const targetScale = Math.max(0.45, Math.min(scaleX, scaleY, 0.95));
+    const minScale = isMobile ? 0.16 : 0.45;
+    const targetScale = Math.max(minScale, Math.min(scaleX, scaleY, 0.95));
 
     // 计算平移：
     // X 方向在整个视口中完全居中
@@ -657,24 +659,24 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
       }`}
     >
       {/* 顶部悬浮控制栏（毛玻璃与高对比度控制钮） */}
-      <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2">
+      <div className="absolute top-2.5 left-2.5 right-2 md:right-auto md:top-4 md:left-4 z-20 flex flex-wrap items-center gap-1.5 md:gap-2">
         {/* 展开/收拢控制 */}
-        <div className={`flex items-center p-1 rounded-2xl backdrop-blur-md border shadow-sm text-xs ${
+        <div className={`flex items-center p-0.5 md:p-1 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm text-[11px] md:text-xs ${
           isDark ? 'bg-slate-900/90 border-slate-700/80 text-slate-200' : 'bg-white/95 border-amber-200/90 text-slate-700'
         }`}>
           <button
             onClick={handleExpandAll}
-            className={`px-3 py-1.5 rounded-xl font-bold transition ${
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl font-bold transition ${
               isDark ? 'hover:bg-slate-800 text-amber-300' : 'hover:bg-amber-50 text-slate-700'
             }`}
             title={t('展开所有法脉分支')}
           >
             {t('全部展开')}
           </button>
-          <div className={`w-[1px] h-3.5 mx-1 ${isDark ? 'bg-slate-700' : 'bg-slate-200'}`} />
+          <div className={`w-[1px] h-3 md:h-3.5 mx-0.5 md:mx-1 ${isDark ? 'bg-slate-700' : 'bg-slate-200'}`} />
           <button
             onClick={handleCollapseToMain}
-            className={`px-3 py-1.5 rounded-xl font-bold transition ${
+            className={`px-2.5 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl font-bold transition ${
               isDark ? 'hover:bg-slate-800 text-slate-300' : 'hover:bg-amber-50 text-slate-700'
             }`}
             title={t('收起至主干与宗师')}
@@ -683,46 +685,46 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
           </button>
         </div>
 
-        {/* 核心功能：聚焦中枢（大字高清 100% 原始比例） */}
+        {/* 核心功能：聚焦中枢 */}
         <button
           onClick={() => focusOnTargetNode(undefined, true)}
-          className={`flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl backdrop-blur-md border shadow-sm text-xs font-bold transition ${
+          className={`flex items-center space-x-1 px-2.5 py-1 md:px-3.5 md:py-2 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm text-[11px] md:text-xs font-bold transition ${
             isDark ? 'bg-amber-950/80 border-amber-600/80 text-amber-200 hover:bg-amber-900' : 'bg-amber-100/90 border-amber-400 text-amber-900 hover:bg-amber-200'
           }`}
           title={t('以大号清晰字号居中回看当前宗派核心宗师')}
         >
-          <Focus className="w-3.5 h-3.5 text-amber-400" />
-          <span>{t('聚焦中枢 (清晰大字)')}</span>
+          <Focus className="w-3 h-3 md:w-3.5 md:h-3.5 text-amber-400" />
+          <span>{t('聚焦中枢')}</span>
         </button>
 
-        {/* 全景缩览（宏观全局俯瞰） */}
+        {/* 全景缩览 */}
         <button
           onClick={() => fitToView(true)}
-          className={`flex items-center space-x-1.5 px-3 py-2 rounded-2xl backdrop-blur-md border shadow-sm text-xs font-bold transition ${
+          className={`flex items-center space-x-1 px-2.5 py-1 md:px-3.5 md:py-2 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm text-[11px] md:text-xs font-bold transition ${
             isDark ? 'bg-slate-900/90 border-slate-700/80 text-slate-300 hover:bg-slate-800' : 'bg-white/95 border-amber-200/90 text-slate-700 hover:bg-amber-50'
           }`}
           title={t('缩览全图，纵览全脉')}
         >
-          <Eye className="w-3.5 h-3.5 text-sky-400" />
+          <Eye className="w-3 h-3 md:w-3.5 md:h-3.5 text-sky-400" />
           <span>{t('全景缩览')}</span>
         </button>
 
-        {/* 布局方向切换开关：自上而下 / 从左到右 */}
+        {/* 布局方向切换 */}
         <button
           onClick={toggleDirection}
-          className={`flex items-center space-x-1.5 px-3 py-2 rounded-2xl backdrop-blur-md border shadow-sm text-xs font-bold transition ${
+          className={`flex items-center space-x-1 px-2.5 py-1 md:px-3.5 md:py-2 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm text-[11px] md:text-xs font-bold transition ${
             isDark ? 'bg-slate-900/90 border-slate-700/80 text-slate-300 hover:bg-slate-800' : 'bg-white/95 border-amber-200/90 text-slate-700 hover:bg-amber-50'
           }`}
           title={direction === 'vertical' ? t('切换为水平横向展开') : t('切换为自上而下垂直展开')}
         >
           {direction === 'vertical' ? (
             <>
-              <ArrowDownUp className="w-3.5 h-3.5 text-amber-400" />
+              <ArrowDownUp className="w-3 h-3 md:w-3.5 md:h-3.5 text-amber-400" />
               <span>{t('自上而下')}</span>
             </>
           ) : (
             <>
-              <ArrowLeftRight className="w-3.5 h-3.5 text-amber-400" />
+              <ArrowLeftRight className="w-3 h-3 md:w-3.5 md:h-3.5 text-amber-400" />
               <span>{t('从左到右')}</span>
             </>
           )}
@@ -731,61 +733,61 @@ export const D3LineageTree: React.FC<D3LineageTreeProps> = ({
         {/* 昼夜主题一键切换 */}
         <button
           onClick={toggleTheme}
-          className={`p-2 rounded-2xl backdrop-blur-md border shadow-sm transition ${
+          className={`p-1.5 md:p-2 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm transition ${
             isDark ? 'bg-slate-900/90 border-slate-700/80 text-amber-400 hover:bg-slate-800' : 'bg-white/95 border-amber-200/90 text-slate-700 hover:bg-amber-50'
           }`}
           title={isDark ? t('切换为温润宣纸浅色') : t('切换为深邃夜空沉浸深色')}
         >
-          {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          {isDark ? <Sun className="w-3.5 h-3.5 md:w-4 md:h-4" /> : <Moon className="w-3.5 h-3.5 md:w-4 md:h-4" />}
         </button>
       </div>
 
-      {/* 右侧缩放与全屏工具栏 */}
-      <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
-        <div className={`flex flex-col p-1 rounded-2xl backdrop-blur-md border shadow-sm ${
+      {/* 缩放与全屏工具栏（移动端置于右下角避免与顶部重叠，桌面端置于右上角） */}
+      <div className="absolute bottom-6 right-2.5 md:top-4 md:right-4 md:bottom-auto z-20 flex flex-col gap-1.5 md:gap-2">
+        <div className={`flex flex-col p-0.5 md:p-1 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm ${
           isDark ? 'bg-slate-900/90 border-slate-700/80 text-slate-300' : 'bg-white/95 border-amber-200/90 text-slate-700'
         }`}>
           <button
             onClick={() => handleZoom(1.25)}
-            className="p-2 rounded-xl hover:bg-white/10 transition"
+            className="p-1.5 md:p-2 rounded-lg md:rounded-xl hover:bg-white/10 transition"
             title={t('放大')}
           >
-            <ZoomIn className="w-4 h-4" />
+            <ZoomIn className="w-3.5 h-3.5 md:w-4 md:h-4" />
           </button>
           <button
             onClick={() => handleZoom(0.8)}
-            className="p-2 rounded-xl hover:bg-white/10 transition"
+            className="p-1.5 md:p-2 rounded-lg md:rounded-xl hover:bg-white/10 transition"
             title={t('缩小')}
           >
-            <ZoomOut className="w-4 h-4" />
+            <ZoomOut className="w-3.5 h-3.5 md:w-4 md:h-4" />
           </button>
           <button
             onClick={() => focusOnTargetNode(undefined, true)}
-            className="p-2 rounded-xl hover:bg-white/10 transition"
+            className="p-1.5 md:p-2 rounded-lg md:rounded-xl hover:bg-white/10 transition"
             title={t('复位聚焦大字')}
           >
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-3.5 h-3.5 md:w-4 md:h-4" />
           </button>
         </div>
 
         <button
           onClick={() => setIsFullScreen(!isFullScreen)}
-          className={`p-2.5 rounded-2xl backdrop-blur-md border shadow-sm transition ${
+          className={`p-2 md:p-2.5 rounded-xl md:rounded-2xl backdrop-blur-md border shadow-sm transition ${
             isDark ? 'bg-slate-900/90 border-slate-700/80 text-slate-300 hover:bg-slate-800' : 'bg-white/95 border-amber-200/90 text-slate-700 hover:bg-amber-50'
           }`}
           title={isFullScreen ? t('退出全屏') : t('沉浸全屏导图')}
         >
-          {isFullScreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+          {isFullScreen ? <Minimize2 className="w-3.5 h-3.5 md:w-4 md:h-4" /> : <Maximize2 className="w-3.5 h-3.5 md:w-4 md:h-4" />}
         </button>
       </div>
 
       {/* 底部交互指引与清晰大字状态说明 */}
-      <div className="absolute bottom-4 left-4 z-20 pointer-events-none">
-        <div className={`px-3.5 py-1.5 rounded-xl backdrop-blur-sm border text-[11px] font-medium flex items-center gap-1.5 shadow-sm ${
+      <div className="absolute bottom-3 left-3 right-16 md:right-auto md:bottom-4 md:left-4 z-20 pointer-events-none hidden sm:flex">
+        <div className={`px-3 py-1.5 rounded-xl backdrop-blur-sm border text-[10px] md:text-[11px] font-medium flex items-center gap-1.5 shadow-sm truncate ${
           isDark ? 'bg-slate-900/85 border-slate-700/80 text-slate-300' : 'bg-white/90 border-amber-200/70 text-slate-700'
         }`}>
-          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-          <span>{t('默认全景缩览全貌 · 文字已放大30%呈现 · 可随时点击【聚焦中枢】看高清大字 · 支持自由滚轮缩放')}</span>
+          <Sparkles className="w-3 h-3 md:w-3.5 md:h-3.5 text-amber-400 shrink-0" />
+          <span className="truncate">{t('默认全景缩览 · 可随时点击【聚焦中枢】看清晰大字 · 支持双指缩放')}</span>
         </div>
       </div>
 

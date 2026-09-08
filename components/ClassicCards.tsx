@@ -70,11 +70,11 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
           // 处理加粗格式
           const parts = verse.split(/\*\*/);
           return (
-            <div key={i} className="p-4 rounded-2xl bg-amber-50/60 border border-amber-200/50">
-              <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-amber-900">
+            <div key={i} className="p-4 rounded-2xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200/50 dark:border-amber-900/50">
+              <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-amber-900 dark:text-amber-200">
                 {parts.map((part, j) =>
                   j % 2 === 1 ? (
-                    <strong key={j} className="text-amber-800">{part}</strong>
+                    <strong key={j} className="text-amber-800 dark:text-amber-300 font-bold">{part}</strong>
                   ) : (
                     <span key={j}>{part}</span>
                   )
@@ -88,7 +88,7 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
           <div className="flex justify-center pt-2">
             <button
               onClick={() => setExpanded(!expanded)}
-              className="px-5 py-2 rounded-xl border border-amber-200 bg-amber-50/60 text-amber-800 text-[13px] font-semibold hover:bg-amber-100 transition-all shadow-sm"
+              className="px-5 py-2 rounded-xl border border-amber-200 dark:border-amber-800 bg-amber-50/60 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 text-[13px] font-semibold hover:bg-amber-100 dark:hover:bg-amber-900/60 transition-all shadow-sm"
             >
               {expanded ? t('收起') : `${t('展开全部偈颂')} (${t('共')} ${verses.length} ${t('首')})`}
             </button>
@@ -113,7 +113,7 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
   return (
     <>
       <CollapsibleCard
-        icon={<MessageCircle className="w-5 h-5 text-violet-700" />}
+        icon={<MessageCircle className="w-5 h-5 text-violet-700 dark:text-violet-400" />}
         title={t('公案精选')}
         count={koans.length}
         countLabel={t('则')}
@@ -122,20 +122,20 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
       >
         <div className="space-y-4">
           {visibleKoans.map((koan, i) => (
-            <div key={i} className="p-4 rounded-2xl bg-violet-50/60 border border-violet-200/50 group">
-              <p className="text-[14px] font-semibold text-violet-800 mb-1">
+            <div key={i} className="p-4 rounded-2xl bg-violet-50/60 dark:bg-violet-950/30 border border-violet-200/50 dark:border-violet-900/50 group">
+              <p className="text-[14px] font-semibold text-violet-800 dark:text-violet-300 mb-1">
                 问：{koan.question}
               </p>
-              <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900">
+              <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900 dark:text-violet-200">
                 答：{koan.answer}
               </p>
               <div className="flex justify-end pt-2">
                 <button
                   onClick={() => setActiveKoan(koan)}
-                  className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-violet-100 hover:bg-violet-200 text-violet-800 text-[11px] font-medium transition flex items-center gap-1"
+                  className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-900/60 hover:bg-violet-200 dark:hover:bg-violet-800 text-violet-800 dark:text-violet-200 text-[11px] font-medium transition flex items-center gap-1"
                   title={t('生成公案海报')}
                 >
-                  <ImageIcon className="w-3 h-3 text-violet-700" />
+                  <ImageIcon className="w-3 h-3 text-violet-700 dark:text-violet-300" />
                   <span>{t('海报')}</span>
                 </button>
               </div>
@@ -146,7 +146,7 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
             <div className="flex justify-center pt-2">
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="px-5 py-2 rounded-xl border border-violet-200 bg-violet-50/60 text-violet-800 text-[13px] font-semibold hover:bg-violet-100 transition-all shadow-sm"
+                className="px-5 py-2 rounded-xl border border-violet-200 dark:border-violet-800 bg-violet-50/60 dark:bg-violet-950/40 text-violet-800 dark:text-violet-300 text-[13px] font-semibold hover:bg-violet-100 dark:hover:bg-violet-900/60 transition-all shadow-sm"
               >
                 {expanded ? t('收起') : `${t('展开全部公案')} (${t('共')} ${koans.length} ${t('则')})`}
               </button>
@@ -179,7 +179,7 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
   return (
     <>
       <CollapsibleCard
-        icon={<Quote className="w-5 h-5 text-emerald-700" />}
+        icon={<Quote className="w-5 h-5 text-emerald-700 dark:text-emerald-400" />}
         title={t('祖师名言')}
         count={quotes.length}
         countLabel={t('则')}
@@ -191,18 +191,18 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
             const text = dashIdx > 0 ? quote.substring(0, dashIdx).trim() : quote;
             const source = dashIdx > 0 ? quote.substring(dashIdx + 1).trim() : (personNames[0] || '');
             return (
-              <div key={i} className="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/50 flex flex-col justify-between gap-2 group">
-                <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-emerald-900">
+              <div key={i} className="p-4 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/50 dark:border-emerald-900/50 flex flex-col justify-between gap-2 group">
+                <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-emerald-900 dark:text-emerald-200">
                   {text}
                 </p>
                 <div className="flex items-center justify-between pt-1">
-                  <p className="text-[12px] text-emerald-600 font-semibold">{source ? `— ${source}` : ''}</p>
+                  <p className="text-[12px] text-emerald-600 dark:text-emerald-400 font-semibold">{source ? `— ${source}` : ''}</p>
                   <button
                     onClick={() => setActiveQuote({ text, source })}
-                    className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-emerald-100/80 hover:bg-emerald-200 text-emerald-800 text-[11px] font-medium transition flex items-center gap-1"
+                    className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-emerald-100/80 dark:bg-emerald-900/60 hover:bg-emerald-200 dark:hover:bg-emerald-800 text-emerald-800 dark:text-emerald-200 text-[11px] font-medium transition flex items-center gap-1"
                     title={t('生成禅语卡片')}
                   >
-                    <ImageIcon className="w-3 h-3 text-emerald-700" />
+                    <ImageIcon className="w-3 h-3 text-emerald-700 dark:text-emerald-300" />
                     <span>{t('海报')}</span>
                   </button>
                 </div>
@@ -214,7 +214,7 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
             <div className="flex justify-center pt-2">
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="px-5 py-2 rounded-xl border border-emerald-200 bg-emerald-50/60 text-emerald-800 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-sm"
+                className="px-5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 text-[13px] font-semibold hover:bg-emerald-100 dark:hover:bg-emerald-900/60 transition-all shadow-sm"
               >
                 {expanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${quotes.length} ${t('则')})`}
               </button>
@@ -243,7 +243,7 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
   if (!hasContent) return null;
   return (
     <CollapsibleCard
-      icon={<Footprints className="w-5 h-5 text-teal-700" />}
+      icon={<Footprints className="w-5 h-5 text-teal-700 dark:text-teal-400" />}
       title={t('实践指导')}
       count={methodSteps.length + practices.length}
       countLabel={t('条')}
@@ -254,16 +254,16 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
         {/* 相关法门的步骤（参考ramanamaharshi.space的实践指导） */}
         {relMethods.map(m => m.steps && m.steps.length > 0 && (
           <div key={m.id}>
-            <Link prefetch={false} href={`/methods/${m.id}`} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 hover:text-teal-600 transition-colors">
+            <Link prefetch={false} href={`/methods/${m.id}`} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 dark:text-teal-300 hover:text-teal-600 transition-colors">
               <span>🧘 {t(m.title)}</span>
             </Link>
             <div className="space-y-2">
               {m.steps.map((step, i) => (
-                <div key={i} className="flex items-start space-x-3 p-3.5 rounded-2xl bg-teal-50/60 border border-teal-200/50">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-700 text-white text-[12px] font-bold flex items-center justify-center mt-0.5">
+                <div key={i} className="flex items-start space-x-3 p-3.5 rounded-2xl bg-teal-50/60 dark:bg-teal-950/30 border border-teal-200/50 dark:border-teal-900/50">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-700 dark:bg-teal-600 text-white text-[12px] font-bold flex items-center justify-center mt-0.5">
                     {i + 1}
                   </span>
-                  <p className="text-[14px] sm:text-[15px] leading-relaxed text-teal-900">{step}</p>
+                  <p className="text-[14px] sm:text-[15px] leading-relaxed text-teal-900 dark:text-teal-200">{step}</p>
                 </div>
               ))}
             </div>
@@ -272,14 +272,14 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
         {/* 自动提取的修行要点 */}
         {practices.length > 0 && (
           <div>
-            {methodSteps.length > 0 && <p className="text-[13px] font-bold text-teal-700 mb-2">📌 {t('本文要点')}</p>}
+            {methodSteps.length > 0 && <p className="text-[13px] font-bold text-teal-700 dark:text-teal-400 mb-2">📌 {t('本文要点')}</p>}
             <div className="space-y-2">
               {practices.map((p, i) => (
-                <div key={i} className="flex items-start space-x-3 p-3.5 rounded-2xl bg-teal-50/40 border border-teal-200/40">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-500 text-white text-[12px] font-bold flex items-center justify-center mt-0.5">
+                <div key={i} className="flex items-start space-x-3 p-3.5 rounded-2xl bg-teal-50/40 dark:bg-teal-950/20 border border-teal-200/40 dark:border-teal-900/40">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-500 dark:bg-teal-600 text-white text-[12px] font-bold flex items-center justify-center mt-0.5">
                     {i + 1}
                   </span>
-                  <p className="text-[14px] sm:text-[15px] leading-relaxed text-teal-900">{p}</p>
+                  <p className="text-[14px] sm:text-[15px] leading-relaxed text-teal-900 dark:text-teal-200">{p}</p>
                 </div>
               ))}
             </div>
@@ -302,7 +302,7 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
 
   return (
     <CollapsibleCard
-      icon={<Globe className="w-5 h-5 text-indigo-700" />}
+      icon={<Globe className="w-5 h-5 text-indigo-700 dark:text-indigo-400" />}
       title={t('现代启示')}
       count={apps.length}
       countLabel={t('条')}
@@ -310,8 +310,8 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
     >
       <div className="space-y-3">
         {visibleApps.map((app, i) => (
-          <div key={i} className="p-4 rounded-2xl bg-indigo-50/60 border border-indigo-200/50">
-            <p className="text-[14px] sm:text-[15px] leading-relaxed text-indigo-900">{app}</p>
+          <div key={i} className="p-4 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-200/50 dark:border-indigo-900/50">
+            <p className="text-[14px] sm:text-[15px] leading-relaxed text-indigo-900 dark:text-indigo-200">{app}</p>
           </div>
         ))}
 
@@ -319,7 +319,7 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
           <div className="flex justify-center pt-2">
             <button
               onClick={() => setExpanded(!expanded)}
-              className="px-5 py-2 rounded-xl border border-indigo-200 bg-indigo-50/60 text-indigo-800 text-[13px] font-semibold hover:bg-indigo-100 transition-all shadow-sm"
+              className="px-5 py-2 rounded-xl border border-indigo-200 dark:border-indigo-800 bg-indigo-50/60 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-300 text-[13px] font-semibold hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-all shadow-sm"
             >
               {expanded ? t('收起') : `${t('展开全部启示')} (${t('共')} ${apps.length} ${t('条')})`}
             </button>
@@ -340,14 +340,14 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
   const history = inferHistory(meta, matchedPerson?.era);
   return (
     <CollapsibleCard
-      icon={<Landmark className="w-5 h-5 text-stone-700" />}
+      icon={<Landmark className="w-5 h-5 text-stone-700 dark:text-stone-300" />}
       title={t('历史背景')}
       colorClass="stone"
     >
       <div className="space-y-3">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div className="p-3 rounded-xl bg-stone-50 border border-stone-200/50 text-center">
-            <p className="text-[11px] text-stone-500 font-semibold">{t('作者')}</p>
+          <div className="p-3 rounded-xl bg-stone-50 dark:bg-slate-800/60 border border-stone-200/50 dark:border-slate-700/60 text-center">
+            <p className="text-[11px] text-stone-500 dark:text-stone-400 font-semibold">{t('作者')}</p>
             {matchedPerson ? (
               <Link prefetch={false} href={`/persons/${matchedPerson.id}`}
                 className="text-[14px] font-bold text-blue-800 mt-1 hover:text-blue-600 hover:underline transition-colors block"
@@ -358,12 +358,12 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
               <p className="text-[14px] font-bold text-stone-800 mt-1">{t(meta.author)}</p>
             )}
           </div>
-          <div className="p-3 rounded-xl bg-stone-50 border border-stone-200/50 text-center">
-            <p className="text-[11px] text-stone-500 font-semibold">{t('分类')}</p>
+          <div className="p-3 rounded-xl bg-stone-50 dark:bg-slate-800/60 border border-stone-200/50 dark:border-slate-700/60 text-center">
+            <p className="text-[11px] text-stone-500 dark:text-stone-400 font-semibold">{t('分类')}</p>
             <p className="text-[14px] font-bold text-stone-800 mt-1">{t(meta.category)}</p>
           </div>
-          <div className="p-3 rounded-xl bg-stone-50 border border-stone-200/50 text-center">
-            <p className="text-[11px] text-stone-500 font-semibold">{t('篇幅')}</p>
+          <div className="p-3 rounded-xl bg-stone-50 dark:bg-slate-800/60 border border-stone-200/50 dark:border-slate-700/60 text-center">
+            <p className="text-[11px] text-stone-500 dark:text-stone-400 font-semibold">{t('篇幅')}</p>
             <p className="text-[14px] font-bold text-stone-800 mt-1">
               {history.sizeLabel} · {meta.word_count >= 10000
                 ? `${(meta.word_count / 10000).toFixed(1)}万字`

@@ -23,12 +23,54 @@ export const LinkCardGrid: React.FC<{
   if (items.length === 0) return null;
 
   const colorMap = {
-    blue: { bg: 'bg-blue-50/60', border: 'border-blue-200/50', hoverBorder: 'hover:border-blue-400', title: 'text-blue-900 group-hover:text-blue-700', desc: 'text-blue-700/70', btn: 'text-blue-700 hover:bg-blue-50 border-blue-200' },
-    purple: { bg: 'bg-purple-50/60', border: 'border-purple-200/50', hoverBorder: 'hover:border-purple-400', title: 'text-purple-900 group-hover:text-purple-700', desc: 'text-purple-700/70', btn: 'text-purple-700 hover:bg-purple-50 border-purple-200' },
-    sky: { bg: 'bg-sky-50/60', border: 'border-sky-200/50', hoverBorder: 'hover:border-sky-400', title: 'text-sky-900 group-hover:text-sky-700', desc: 'text-sky-700/70', btn: 'text-sky-700 hover:bg-sky-50 border-sky-200' },
-    rose: { bg: 'bg-rose-50/60', border: 'border-rose-200/50', hoverBorder: 'hover:border-rose-400', title: 'text-rose-900 group-hover:text-rose-700', desc: 'text-rose-700/70', btn: 'text-rose-700 hover:bg-rose-50 border-rose-200' },
-    amber: { bg: 'bg-amber-50/60', border: 'border-amber-200/50', hoverBorder: 'hover:border-amber-400', title: 'text-amber-900 group-hover:text-amber-700', desc: 'text-amber-700/70', btn: 'text-amber-700 hover:bg-amber-50 border-amber-200' },
-    emerald: { bg: 'bg-emerald-50/60', border: 'border-emerald-200/50', hoverBorder: 'hover:border-emerald-400', title: 'text-emerald-900 group-hover:text-emerald-700', desc: 'text-emerald-700/70', btn: 'text-emerald-700 hover:bg-emerald-50 border-emerald-200' },
+    blue: {
+      bg: 'bg-blue-50/60 dark:bg-blue-950/30',
+      border: 'border-blue-200/50 dark:border-blue-900/50',
+      hoverBorder: 'hover:border-blue-400 dark:hover:border-blue-500',
+      title: 'text-blue-900 dark:text-blue-200 group-hover:text-blue-700 dark:group-hover:text-blue-300',
+      desc: 'text-blue-700/70 dark:text-blue-300/70',
+      btn: 'text-blue-700 dark:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-950/50 border-blue-200 dark:border-blue-800',
+    },
+    purple: {
+      bg: 'bg-purple-50/60 dark:bg-purple-950/30',
+      border: 'border-purple-200/50 dark:border-purple-900/50',
+      hoverBorder: 'hover:border-purple-400 dark:hover:border-purple-500',
+      title: 'text-purple-900 dark:text-purple-200 group-hover:text-purple-700 dark:group-hover:text-purple-300',
+      desc: 'text-purple-700/70 dark:text-purple-300/70',
+      btn: 'text-purple-700 dark:text-purple-300 hover:bg-purple-50 dark:hover:bg-purple-950/50 border-purple-200 dark:border-purple-800',
+    },
+    sky: {
+      bg: 'bg-sky-50/60 dark:bg-sky-950/30',
+      border: 'border-sky-200/50 dark:border-sky-900/50',
+      hoverBorder: 'hover:border-sky-400 dark:hover:border-sky-500',
+      title: 'text-sky-900 dark:text-sky-200 group-hover:text-sky-700 dark:group-hover:text-sky-300',
+      desc: 'text-sky-700/70 dark:text-sky-300/70',
+      btn: 'text-sky-700 dark:text-sky-300 hover:bg-sky-50 dark:hover:bg-sky-950/50 border-sky-200 dark:border-sky-800',
+    },
+    rose: {
+      bg: 'bg-rose-50/60 dark:bg-rose-950/30',
+      border: 'border-rose-200/50 dark:border-rose-900/50',
+      hoverBorder: 'hover:border-rose-400 dark:hover:border-rose-500',
+      title: 'text-rose-900 dark:text-rose-200 group-hover:text-rose-700 dark:group-hover:text-rose-300',
+      desc: 'text-rose-700/70 dark:text-rose-300/70',
+      btn: 'text-rose-700 dark:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/50 border-rose-200 dark:border-rose-800',
+    },
+    amber: {
+      bg: 'bg-amber-50/60 dark:bg-amber-950/30',
+      border: 'border-amber-200/50 dark:border-amber-900/50',
+      hoverBorder: 'hover:border-amber-400 dark:hover:border-amber-500',
+      title: 'text-amber-900 dark:text-amber-200 group-hover:text-amber-700 dark:group-hover:text-amber-300',
+      desc: 'text-amber-700/70 dark:text-amber-300/70',
+      btn: 'text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/50 border-amber-200 dark:border-amber-800',
+    },
+    emerald: {
+      bg: 'bg-emerald-50/60 dark:bg-emerald-950/30',
+      border: 'border-emerald-200/50 dark:border-emerald-900/50',
+      hoverBorder: 'hover:border-emerald-400 dark:hover:border-emerald-500',
+      title: 'text-emerald-900 dark:text-emerald-200 group-hover:text-emerald-700 dark:group-hover:text-emerald-300',
+      desc: 'text-emerald-700/70 dark:text-emerald-300/70',
+      btn: 'text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 border-emerald-200 dark:border-emerald-800',
+    },
   };
   const c = colorMap[variant];
   const colClass = columns === 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2';
@@ -82,12 +124,12 @@ export const PrevNextNav: React.FC<{
     <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
       {prev ? (
         <Link prefetch={false} href={getHref(prev.href)}
-          className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center space-x-3 shadow-sm group"
+          className="w-full sm:w-auto p-4 rounded-2xl bg-white dark:bg-slate-900 border border-zinc-200 dark:border-slate-800 hover:border-amber-700 hover:bg-amber-50/30 dark:hover:bg-slate-800 transition-all flex items-center space-x-3 shadow-sm group"
         >
-          <span className="text-amber-800 group-hover:-translate-x-1 transition-transform text-lg">‹</span>
+          <span className="text-amber-800 dark:text-amber-400 group-hover:-translate-x-1 transition-transform text-lg">‹</span>
           <div>
             <div className="text-[10px] text-zinc-400 font-bold uppercase">{t('上一篇')}</div>
-            <div className="text-[15px] font-semibold font-serif-zen text-zinc-900 group-hover:text-amber-900">
+            <div className="text-[15px] font-semibold font-serif-zen text-zinc-900 dark:text-zinc-100 group-hover:text-amber-900 dark:group-hover:text-amber-300">
               {t(prev.title)}
             </div>
           </div>
@@ -96,15 +138,15 @@ export const PrevNextNav: React.FC<{
 
       {next ? (
         <Link prefetch={false} href={getHref(next.href)}
-          className="w-full sm:w-auto p-4 rounded-2xl bg-white border border-zinc-200 hover:border-amber-700 hover:bg-amber-50/30 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto"
+          className="w-full sm:w-auto p-4 rounded-2xl bg-white dark:bg-slate-900 border border-zinc-200 dark:border-slate-800 hover:border-amber-700 hover:bg-amber-50/30 dark:hover:bg-slate-800 transition-all flex items-center justify-end space-x-3 shadow-sm group text-right ml-auto"
         >
           <div>
             <div className="text-[10px] text-zinc-400 font-bold uppercase">{t('下一篇')}</div>
-            <div className="text-[15px] font-semibold font-serif-zen text-zinc-900 group-hover:text-amber-900">
+            <div className="text-[15px] font-semibold font-serif-zen text-zinc-900 dark:text-zinc-100 group-hover:text-amber-900 dark:group-hover:text-amber-300">
               {t(next.title)}
             </div>
           </div>
-          <span className="text-amber-800 group-hover:translate-x-1 transition-transform text-lg">›</span>
+          <span className="text-amber-800 dark:text-amber-400 group-hover:translate-x-1 transition-transform text-lg">›</span>
         </Link>
       ) : <div />}
     </div>

@@ -16,6 +16,17 @@ export const ReadingThemeBar: React.FC<{ className?: string }> = ({ className = 
       if (saved && (saved === 'paper' || saved === 'bamboo' || saved === 'night')) {
         setTheme(saved);
         document.documentElement.setAttribute('data-theme', saved);
+        if (saved === 'night') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } else {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          setTheme('night');
+          document.documentElement.setAttribute('data-theme', 'night');
+          document.documentElement.classList.add('dark');
+        }
       }
     } catch {}
   }, []);
@@ -25,6 +36,11 @@ export const ReadingThemeBar: React.FC<{ className?: string }> = ({ className = 
     try {
       localStorage.setItem('zen_reading_theme', newTheme);
       document.documentElement.setAttribute('data-theme', newTheme);
+      if (newTheme === 'night') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     } catch {}
   };
 
