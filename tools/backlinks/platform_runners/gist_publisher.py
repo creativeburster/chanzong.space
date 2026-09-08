@@ -22,30 +22,44 @@ SITE_DOMAIN = "https://chanzong.space"
 
 GIST_ITEMS = [
     {
-        "id": "biyanlu",
-        "title": "碧岩錄宗門第一書與禪修公案精解",
-        "filename": "碧岩錄核心導讀.md",
+        "id": "xinxinming",
+        "title": "信心銘至道無難與莫憎愛參究心要",
+        "filename": "信心銘參究要旨.md",
         "trad": True,
         "region": "海外繁体"
     },
     {
-        "id": "bashiguijusong",
-        "title": "八识规矩颂与唯识转识成智实修指要",
-        "filename": "八识规矩颂实修指要.md",
+        "id": "zhengdaoge",
+        "title": "永嘉证道歌绝学无为与顿悟见性指要",
+        "filename": "永嘉证道歌顿悟指要.md",
         "trad": False,
         "region": "国内"
     },
     {
-        "id": "wumenguan",
-        "title": "無門關四十八則公案機鋒精粹",
-        "filename": "無門關公案導讀.md",
+        "id": "yuanjuejing",
+        "title": "圓覺經知幻即離與二十五輪修證指歸",
+        "filename": "圓覺經修證指歸.md",
         "trad": True,
         "region": "海外繁体"
     },
     {
-        "id": "jingangjing",
-        "title": "金刚经破相明心与四句偈参修指要",
-        "filename": "金刚经破相明心.md",
+        "id": "xinwangming",
+        "title": "傅大士心王铭观心空王顿悟心髓",
+        "filename": "心王铭顿悟心髓.md",
+        "trad": False,
+        "region": "国内"
+    },
+    {
+        "id": "xiuxinjue",
+        "title": "修心訣頓悟漸修與定慧雙修切要開示",
+        "filename": "修心訣參修指要.md",
+        "trad": True,
+        "region": "海外繁体"
+    },
+    {
+        "id": "mazu",
+        "title": "马祖道一平常心是道与即心即佛宗风",
+        "filename": "马祖道一平常心是道.md",
         "trad": False,
         "region": "国内"
     }

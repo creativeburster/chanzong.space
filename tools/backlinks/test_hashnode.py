@@ -34,8 +34,9 @@ def test_hashnode():
     )
     try:
         with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            print("Hashnode response:", json.dumps(data, indent=2))
+            raw = resp.read().decode("utf-8")
+            print("Hashnode raw:", raw[:500])
+            data = json.loads(raw)
             return data
     except Exception as e:
         print("Error:", e)

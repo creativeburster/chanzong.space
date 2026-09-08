@@ -103,7 +103,7 @@ def synthesize_article(theme: str = "禅宗与现代心灵", is_traditional: boo
     生成长篇专栏文章（适用：台湾方格子 Vocus、Matters、Medium、简书等）
     """
     classics = get_classics_list()
-    c = random.choice(classics) if classics else {"title": "六祖坛经", "author": "惠能", "id": "liuzutanjing", "summary": "直指人心，见性成佛"}
+    c = random.choice(classics) if classics else {"title": "六祖坛经", "author": "惠能", "id": "tanjing", "summary": "直指人心，见性成佛"}
     
     title = f"现代人的喧嚣与定力：重读《{c['title']}》中的本心智慧"
     book_url = f"{SITE_DOMAIN}/zh-tw/classics/{c['id']}" if is_traditional else f"{SITE_DOMAIN}/classics/{c['id']}"

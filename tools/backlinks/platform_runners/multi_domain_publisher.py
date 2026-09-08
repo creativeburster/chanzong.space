@@ -199,7 +199,7 @@ def run_multi_domain_batch():
     # 2. Rentry.co 独立域名 (rentry.co, DA 78) - 繁体与海外
     seed_tw = [
         {"id": "biyanlu", "title": "碧岩錄"},
-        {"id": "liuzutanjing", "title": "六祖法寶壇經"},
+        {"id": "tanjing", "title": "六祖法寶壇經"},
         {"id": "wumenguan", "title": "無門關"}
     ]
     for item in seed_tw:

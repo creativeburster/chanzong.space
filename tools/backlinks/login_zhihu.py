@@ -21,16 +21,31 @@ ARTIFACT_DIR = r"C:\Users\willp\.gemini\antigravity\brain\8a69131c-a802-4486-b15
 QR_PATH_ARTIFACT = os.path.join(ARTIFACT_DIR, "zhihu_qr.png")
 PROFILE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".browser_profile")
 
-def wait_for_zhihu_scan(timeout_secs: int = 180):
+def wait_for_zhihu_scan(timeout_secs: int = 300):
     os.makedirs(PROFILE_DIR, exist_ok=True)
+    
+    # 清理残留死锁文件
+    for root, dirs, files in os.walk(PROFILE_DIR):
+        for f in files:
+            if f in ["LOCK", "SingletonLock"]:
+                try:
+                    os.remove(os.path.join(root, f))
+                except Exception:
+                    pass
+                    
     p = sync_playwright().start()
     
-    print("[Zhihu] 正在启动后台持久化浏览器会话...")
+    print("="*60)
+    print("🖥️ 正在为您打开可见的纯净浏览器窗口（Headed 模式）...")
+    print("👉 窗口弹出后，请直接在窗口中扫码或输入账号密码/验证码登录知乎。")
+    print("="*60)
+    
     context = p.chromium.launch_persistent_context(
         user_data_dir=PROFILE_DIR,
         channel="msedge",
-        headless=True,
-        viewport={"width": 1280, "height": 800},
+        headless=False,
+        args=["--start-maximized", "--no-first-run", "--no-default-browser-check"],
+        viewport=None,
         user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
         locale="zh-CN"
     )
