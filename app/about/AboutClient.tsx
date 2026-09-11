@@ -118,7 +118,7 @@ export default function AboutClient() {
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-1 text-[15px] text-slate-700">
                   <li>GitHub Issues: <Link prefetch={false} href="https://github.com/gstar-byte/chanzong.space/issues" className="text-amber-700 hover:underline">gstar-byte/chanzong.space</Link></li>
-                  <li>{t('邮箱')}: <a href="mailto:contact@chanzong.space" className="text-amber-700 hover:underline">contact@chanzong.space</a></li>
+                  <li>{t('邮箱')}: <a href="mailto:591611431@qq.com" className="text-amber-700 hover:underline">591611431@qq.com</a></li>
                 </ul>
                 <p className="text-[15px] leading-relaxed text-slate-700 mt-4">
                   {t('本站为个人维护项目，回复可能不及时，但每条反馈都会认真阅读。')}
