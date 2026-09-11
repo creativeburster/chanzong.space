@@ -66,34 +66,45 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     setErrorMessage('');
 
     try {
-      const res = await fetch('/api/contact', {
+      // 动态混淆目标邮箱，杜绝源码与静态爬虫扫描抓取
+      const target = atob('NTkxNjExNDMxQHFxLmNvbQ==');
+      const res = await fetch('https://formsubmit.co/ajax/' + target, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
-          name: name.trim(),
-          contact: contact.trim(),
-          type,
-          message: message.trim(),
+          _subject: '【禅宗知识库】来自 ' + name.trim() + ' 的留言反馈（' + type + '）',
+          称呼: name.trim(),
+          联系方式: contact.trim(),
+          反馈类型: type,
+          留言内容: message.trim(),
+          _template: 'table',
+          _captcha: 'false',
         }),
       });
 
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
+      const isSuccess =
+        res.ok ||
+        data.success === 'true' ||
+        data.success === true ||
+        (typeof data.message === 'string' && (data.message.includes('Activate') || data.message.includes('success')));
 
-      if (res.ok && data.success) {
+      if (isSuccess) {
         setStatus('success');
-        // 成功后清空表单并在 2 秒后关闭
+        // 成功后清空表单并在 2.5 秒后关闭
         setTimeout(() => {
           setName('');
           setContact('');
           setMessage('');
           setStatus('idle');
           onClose();
-        }, 2200);
+        }, 2500);
       } else {
         setStatus('error');
-        setErrorMessage(data.error || t('提交失败，请稍后重试'));
+        setErrorMessage(data.message || t('提交失败，请稍后重试'));
       }
     } catch (err: any) {
       setStatus('error');
