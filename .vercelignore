@@ -1,0 +1,15 @@
+.next
+*.pdf
+*.bat
+*.py
+_pdf_pages
+page_imgs
+raw_ocr
+downloaded_classics
+tools/backlinks
+association_analysis.json
+orphan_*.json
+pagespeed_*.json
+taxonomy_data.json
+*.log
+scratch
