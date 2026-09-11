@@ -9,9 +9,11 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { BookOpen, FileText, Users, Shield, Mail } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { ContactModal } from '@/components/ContactModal';
 
 export default function AboutClient() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   const { t, getHref } = useLang();
 
   return (
@@ -118,7 +120,17 @@ export default function AboutClient() {
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-1 text-[15px] text-slate-700">
                   <li>GitHub Issues: <Link prefetch={false} href="https://github.com/gstar-byte/chanzong.space/issues" className="text-amber-700 hover:underline">gstar-byte/chanzong.space</Link></li>
-                  <li>{t('邮箱')}: <a href="mailto:591611431@qq.com" className="text-amber-700 hover:underline">591611431@qq.com</a></li>
+                  <li>
+                    {t('在线反馈')}:{' '}
+                    <button
+                      type="button"
+                      onClick={() => setContactOpen(true)}
+                      className="text-amber-700 hover:text-amber-800 hover:underline font-medium inline-flex items-center gap-1 cursor-pointer transition-colors"
+                    >
+                      <span>✉️</span>
+                      <span>{t('点击打开在线留言表单（直接送达作者邮箱）')}</span>
+                    </button>
+                  </li>
                 </ul>
                 <p className="text-[15px] leading-relaxed text-slate-700 mt-4">
                   {t('本站为个人维护项目，回复可能不及时，但每条反馈都会认真阅读。')}
@@ -132,6 +144,7 @@ export default function AboutClient() {
       </div>
 
       {searchOpen && <SearchModal isOpen={true} onClose={() => setSearchOpen(false)} items={[]} />}
+      <ContactModal isOpen={contactOpen} onClose={() => setContactOpen(false)} />
     </div>
   );
 }
