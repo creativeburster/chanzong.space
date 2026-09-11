@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -31,7 +33,7 @@ export async function POST(request: Request) {
         'Accept': 'application/json',
         'Referer': 'https://chanzong.space',
         'Origin': 'https://chanzong.space',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)',
       },
       body: JSON.stringify({
         _subject: '【禅宗知识库】来自 ' + name.trim() + ' 的留言反馈（' + feedbackType + '）',
@@ -45,26 +47,32 @@ export async function POST(request: Request) {
       }),
     });
 
-    const result = await response.json();
+    const text = await response.text();
+    let result: any = {};
+    try {
+      result = JSON.parse(text);
+    } catch {
+      result = { message: text };
+    }
 
     const isSuccess = 
       result.success === 'true' || 
       result.success === true || 
-      (result.message && result.message.includes('Activate Form'));
+      (result.message && typeof result.message === 'string' && (result.message.includes('Activate') || result.message.includes('success')));
 
     if (response.ok || isSuccess) {
       return NextResponse.json({ success: true, message: '留言已成功送达！' });
     } else {
       console.error('FormSubmit response error:', result);
       return NextResponse.json(
-        { error: '邮件转发网关响应异常，请稍后重试' },
+        { error: '邮件网关返回异常：' + (result.message || text) },
         { status: 500 }
       );
     }
   } catch (error: any) {
     console.error('Contact API error:', error);
     return NextResponse.json(
-      { error: '服务器异常，请稍后重试' },
+      { error: '服务暂时繁忙，请稍后重试: ' + (error?.message || String(error)) },
       { status: 500 }
     );
   }
