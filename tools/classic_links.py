@@ -131,6 +131,7 @@ MAP = {
   'hanshanlaorenmengyouji': [('zibailaorenquanji','明末双璧'), ('tanjing','曹溪祖庭重光'), ('boshan-canchanjingyu','明代禅宗相承'), ('tianmuzhongfengguanglu','禅净合一相承')],
   'ruzhongriyong': [('chanyuanqinggui', '清规同流'), ('huanzhu-anqinggui', '日用细行'), ('wudenghuiyuan', '丛林轨仪')],
   'chuanfazhengzongdingzutu': [('tanjing', '曹溪法脉'), ('wudenghuiyuan', '五家七宗'), ('jingdechuandenglu', '传灯正印'), ('xinxinming', '心印一源')],
+  'fangshanwenbaoyulu': [('linji', '临济宗风'), ('xutangyulu', '杨歧同调'), ('tianmuzhongfengguanglu', '元禅并照'), ('wumenguan', '转语险关')],
 }
 
 def main():

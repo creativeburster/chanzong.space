@@ -1215,4 +1215,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '一花五叶', pinyin: 'yī huā wǔ yè', meaning: '菩提达摩付法谶言，预示东土禅宗将繁衍分化出五大宗派宗风' },
     { char: '明教大师', pinyin: 'míng jiào dà shī', meaning: '北宋仁宗皇帝嘉叹契嵩著《传法正宗记》护法之功而敕赐之紫茄尊号' },
   ],
+  'fangshanwenbaoyulu': [
+    { char: '方山文宝', pinyin: 'fāng shān wén bǎo', meaning: '元代临济宗杨歧派大宗师，住杭州净慈寺与天台方山，宗风峭拔' },
+    { char: '方山三问', pinyin: 'fāng shān sān wèn', meaning: '文宝禅师所设铁船针孔、临济拔舌、截断中间三道险绝机锋转语' },
+    { char: '梦帆测', pinyin: 'mèng fān cè', meaning: '元代天台高僧，偶于深山破院古佛像腹中寻获方山语录孤本' },
+    { char: '撑铁船', pinyin: 'chēng tiě chuán', meaning: '宗门名喻，比拟定力极深却沉空滞寂、不肯转身展现大机大用之学人' },
+    { char: '鳖鼻蛇', pinyin: 'biē bí shé', meaning: '源自雪峰南山公案，喻自性杀活自在之大用，凡情圣解触着即丧' },
+    { char: '世谛明取', pinyin: 'shì dì míng qǔ', meaning: '文宝禅师核心旨趣，真如实相不离日用世法，当向世谛纷纭中彻悟' },
+  ],
 };

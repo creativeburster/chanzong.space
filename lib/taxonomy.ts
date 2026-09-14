@@ -4149,6 +4149,44 @@ export const ZEN_PERSONS: PersonItem[] = [
       "jingdechuandenglu"
     ]
   }
+,
+  {
+    "id": "fangshan-wenbao",
+    "name": "方山文宝",
+    "title": "净慈方山和尚 · 杨歧宗匠",
+    "era": "元代",
+    "lifeStory": "方山文宝禅师，元代临济宗杨歧派大宗师，曾住杭州净慈寺、天台方山等刹。师宗风峻拔险绝，大机大用雷奔电掣。元明之际，其法语语录久已湮没，后由天台梦帆测禅师游历台雁破院时，于古佛腹中偶然发现秘藏孤本。后由晦岳、如空等大德展读赞叹‘言言见谛，字字超宗，实淑世之真灯’，遂重刊流布天下。",
+    "teachings": "主张直截根源、截断两头。以‘撑铁船过海向针孔叫屈’等方山三问勘验天下学人情识死关；提倡‘世谛中明取真如’、‘百骸俱溃散，一物镇长灵’，打破狂禅偏空死水之弊，展现本色宗师风采。",
+    "quotes": [
+      "百骸俱溃散，一物镇长灵。",
+      "撑铁船过海底人，为什么向针孔里叫屈？",
+      "山僧一夏说底总是世谛之谈，若要与那事相应，直须向世谛中明取！"
+    ],
+    "classics": [
+      "方山文宝禅师语录"
+    ],
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "shidi-mingqu",
+      "linji-zongfeng",
+      "ben-lai-mian-mu"
+    ],
+    "relatedMethods": [
+      "zhuan-yu-kan-yan",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "linji",
+      "zhongfeng-mingben",
+      "xutang-zhiyu"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "linji",
+      "tianmuzhongfengguanglu",
+      "xutangyulu"
+    ]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -11306,6 +11344,56 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "tanjing"
     ]
   }
+,
+  {
+    "id": "fang-shan-san-wen",
+    "title": "方山三问",
+    "category": "宗门机锋",
+    "summary": "元代方山文宝禅师所设的三道绝险勘验关卡：‘撑铁船过海底人为什么向针孔叫屈’、‘既是临济大师为甚入拔舌犁耕’、‘两头不立截断中间为什么不住’。旨在直破沉空滞寂、破除知解圣见、粉碎中道住着。",
+    "etymology": "出自《方山文宝禅师语录》：‘师甞设三问以验学者曰：凡云水高人下语恰当者，破院子两手分付。’",
+    "quotes": [
+      "撑铁船过海底人，为甚么向针孔里叫屈？既是临济大师，为甚入拔舌犁耕？那边不立，者边不行，截断中间，为甚不住？"
+    ],
+    "guidance": "参学者不可随语生解，当向自心体究：绝后如何复苏？无生如何转身？不住两边又向何处安立？",
+    "classicRef": "方山文宝禅师语录",
+    "relatedConcepts": [
+      "linji-zongfeng",
+      "ben-lai-mian-mu",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao",
+      "linji"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "wumenguan"
+    ]
+  },
+  {
+    "id": "shidi-mingqu",
+    "title": "世谛明心",
+    "category": "心性实相",
+    "summary": "方山文宝禅师提出的重要心法：真如第一义谛绝非离开柴米油盐、红尘日用之外另有一法可得，若欲悟入自性真源，必须在纷纭世谛之中亲见实相，真俗不二，体用一如。",
+    "etymology": "《方山文宝禅师语录·上堂》：‘山僧一夏与诸人说底总是世谛之谈，与那事略无干涉。若要与那事相应，直须向世谛中明取！’",
+    "quotes": [
+      "若要与那事相应，直须向世谛中明取。"
+    ],
+    "guidance": "修行切忌厌喧求静、逃离尘劳。当在世间工作生活、接人待物之一举一动中，惺惺寂寂、历历分明，即是契悟那事。",
+    "classicRef": "方山文宝禅师语录",
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "ordinary-mind",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "tanjing"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13261,6 +13349,36 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": [
       "chuanfazhengzongdingzutu",
       "tanjing"
+    ]
+  }
+,
+  {
+    "id": "zhuan-yu-kan-yan",
+    "title": "转语勘验法",
+    "summary": "禅宗大宗师以极其险绝刁钻、不落常套的逆向反诘公案问话，直逼学人当机下语以截断意识分别、验其真伪浅深的严酷勘验法门。如方山三问、黄龙三关。",
+    "origin": "承续宗门祖师机锋勘辩之古风，方山文宝禅师更以此设立破院分付之令，成为杨歧派下锤炼顶门具眼衲僧之利器。",
+    "steps": [
+      "悬设险关：宗师当机设出不容拟议之矛盾问语，断绝学人思维退路。",
+      "当头逼拶：学人直下承当，不许起心思索商量，随问随答。",
+      "辨别玉石：宗师以法眼审听转语是否离念、是否转身，当下判定死活。",
+      "彻困分付：下得透脱转语者，方蒙印可印证，荷担如来家业。"
+    ],
+    "pitfalls": [
+      "切忌当作文字谜语用意识去猜度对仗，一落计较便被宗师痛棒打出。",
+      "切忌背诵古人现成公案语句强作解脱，偷心不死难当大用。"
+    ],
+    "classicRef": "方山文宝禅师语录",
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao",
+      "linji"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "wumenguan"
     ]
   }
 ];
@@ -25041,6 +25159,26 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "chuanfazhengzongdingzutu"
+    ]
+  }
+,
+  {
+    "id": "koan-654",
+    "question": "撑铁船过海底人为什么向针孔里叫屈？",
+    "answer": "大洋海底翻身过，莫教微尘绊住脚！",
+    "context": "方山文宝禅师上堂设三问验天下学者，首问曰：“撑铁船过海底人，为甚么向针孔里叫屈？”凡云水高人下语恰当者，破院子两手分付。大众无语。",
+    "interpretation": "撑铁船过海底喻人定力深沉、坐断凡圣，已得大定；但若死守无生、稍存法见，便犹如巨汉被微细针孔所缚动弹不得。此公案逼令枯木死水禅人粉碎最后法执，绝后复苏，撒手悬崖，重入红尘翻云覆雨！",
+    "master": "方山文宝",
+    "source": "《方山文宝禅师语录》",
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu"
     ]
   }
 ];
@@ -47923,6 +48061,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-653",
     "relatedBooks": [
       "chuanfazhengzongdingzutu"
+    ]
+  }
+,
+  {
+    "id": "faq-2798",
+    "question": "方山文宝禅师著名的‘方山三问’（三转语）在参修上有何绝妙深意？",
+    "answer": "‘方山三问’（撑铁船向针孔叫屈、临济入拔舌犁耕、截断中间为什么不住）是元代宗门极具代表性的险关。第一问破除‘沉空滞寂、死在无生窟里’之顽空枯禅；第二问破除对一切祖师名相、神圣外相的‘圣解执着’，直显杀活自在；第三问破除行者对‘中道、非空非有’之最后执念，令学人两头两岸与中流俱舍，真正体悟大自在真如。",
+    "relatedQa": "koan-654",
+    "relatedBooks": [
+      "fangshanwenbaoyulu"
+    ]
+  },
+  {
+    "id": "faq-2799",
+    "question": "方山文宝禅师开示‘若要与那事相应，直须向世谛中明取’如何指导现代学人？",
+    "answer": "‘那事’指人人本具之清净自性与见性大事。很多修行者误以为修行必须脱离世俗日常去寻觅一个超然物外的境界。文宝禅师大喝点破：佛法不离世间觉！自性真如正体现在穿衣吃饭、待人接物、处理繁冗事务之每一处红尘世谛之中。不在日用中历练保任，所悟之理皆是干慧虚泡；向世谛中惺惺明取，方是真实解脱行径。",
+    "relatedQa": "koan-654",
+    "relatedBooks": [
+      "fangshanwenbaoyulu"
     ]
   }
 ];
