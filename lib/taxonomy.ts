@@ -4073,6 +4073,41 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["zibai-zhenke"],
     "relatedBooks": ["zhiyuelu", "wudenghuiyuan", "biyanlu", "zibailaorenquanji"]
   }
+,
+  {
+    "id": "zongshou",
+    "name": "宗寿",
+    "title": "千龟峰首座 · 无量寿禅师",
+    "era": "南宋",
+    "lifeStory": "宗寿禅师，南宋临济宗高僧，世称无量寿禅师，曾任千龟峰首座。师深谙丛林修持纲纪，见后学入众失仪、动静粗疏，遂广采百丈怀海、长芦宗赜等先哲清规要旨，于南宋嘉泰二年（1202年）汇辑《入众日用》（亦名《无量寿禅师日用小清规》）。以五更晨起至夜卧入浴之十二时辰为序，细致入微地规范禅林学人洗钵、著衣、过堂、登厕、坐禅等行住坐卧细行，被后世禅门奉为入道修身之根本日用准绳。",
+    "teachings": "主张“威仪即佛法，行住坐卧皆是实相”。宗寿禅师强调修行绝非仅在蒲团枯坐，而在日常穿衣吃饭、出入盥漱之一动一静之间。细行不备，难证法身；外具威仪，内心便生绵密觉照。",
+    "quotes": [
+      "修行之人，以威仪为本，行住坐卧，莫离当下一念觉照。",
+      "五观若存，千金易化；三心未了，滴水难消。"
+    ],
+    "classics": [
+      "入众日用"
+    ],
+    "relatedConcepts": [
+      "shi-cun-wu-guan",
+      "san-jing-di",
+      "ordinary-mind",
+      "conglin-zhidu"
+    ],
+    "relatedMethods": [
+      "riyong-xixing",
+      "zuochanyi-famen"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "changlu-zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong",
+      "chanyuanqinggui",
+      "huanzhu-anqinggui"
+    ]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -11128,6 +11163,54 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["qu-ruji", "xuedou-zhongxian", "yuanwu-keqin"],
     "relatedBooks": ["zhiyuelu", "biyanlu", "congronglu"]
   }
+,
+  {
+    "id": "shi-cun-wu-guan",
+    "title": "食存五观",
+    "category": "丛林修持",
+    "summary": "禅林僧众用斋过堂时的五种殊胜正念观照：计功多少量彼来处、忖己德行全缺应供、防心离过贪等为宗、正思良药为疗形枯、为成道业应受此食。将一日饮食受用转化为摄心止念、长养慧命的清净修行。",
+    "etymology": "出自《入众日用·赴堂受食》及道宣律师《四分律行事钞》，乃汉传丛林与宗门过堂用斋之核心修持仪轨。",
+    "quotes": [
+      "计功多少，量彼来处；忖己德行，全缺应供；防心离过，贪等为宗；正思良药，为疗形枯；为成道业，应受此食。"
+    ],
+    "guidance": "用斋时心存惭愧与感恩，不贪美味、不嗔粗粝，一口饭一口明觉，食毕安详，以此资养色身速成佛道。",
+    "classicRef": "入众日用 · 赴堂受食",
+    "relatedConcepts": [
+      "ordinary-mind",
+      "conglin-zhidu",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "zongshou",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "san-jing-di",
+    "title": "三净地",
+    "category": "戒律威仪",
+    "summary": "禅林丛林中判定身心清净与内外威仪的三大标准处所。在《入众日用》中特指登厕出秽后必须彻底涤荡、更衣净手，方得踏入殿堂僧堂，触净分明，表里无瑕。",
+    "etymology": "出自宋宗寿《入众日用·登厕》：“入厕登溷，必须换鞋洗手，触净分明，方登法席。”",
+    "quotes": [
+      "净手涤秽，触净严明；身心一如，方称衲子。"
+    ],
+    "guidance": "外在之触净严明，即是内在对烦恼尘垢之警策觉照。举手投足不污法席，念念清净不染纤尘。",
+    "classicRef": "入众日用 · 出入登厕",
+    "relatedConcepts": [
+      "shi-cun-wu-guan",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongshou"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13020,6 +13103,37 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["ben-lai-mian-mu", "non-duality", "shixiang"],
     "relatedPersons": ["diluoba"],
     "relatedBooks": ["henghedashouyin"]
+  }
+,
+  {
+    "id": "riyong-xixing",
+    "title": "日用细行禅",
+    "summary": "将禅门明心见性彻底落实在一日十二时辰穿衣、吃饭、出寮、如厕、含漱、展钵等一切琐碎细行中的生活修持法门。以无量寿禅师《入众日用》为修学纲目，不尚玄虚，专重脚踏实地与绵密觉照。",
+    "origin": "承继百丈怀海禅师“一日不作，一日不食”之农禅清规精神，由千龟峰宗寿禅师系统规范化，成为宋元以降禅门入道必修细行。",
+    "steps": [
+      "晨起闻板：五更闻钟板声即摄心翻身坐起，整肃衣襟，轻下绳床，不生贪眠懈怠。",
+      "盥洗著衣：洗面含漱不浪掷滴水，穿戴僧袍斜披袈裟，齐整庄严，威仪肃穆。",
+      "过堂受食：端身正坐，展钵默观，食存五观，绝断饮食贪求与评判分别。",
+      "行住坐卧：出入登厕触净严明，行如风、坐如钟、卧如弓，举手投足莫离当下明觉。"
+    ],
+    "pitfalls": [
+      "切忌将日常规矩视作外在死板教条，若失却内心绵密觉照，细行便沦为机械做作之形式主义。",
+      "切忌落入断灭空见与口头狂禅，自诩超脱戒律威仪而轻视出入细行，任由无明习气放逸流转。"
+    ],
+    "classicRef": "入众日用",
+    "relatedConcepts": [
+      "shi-cun-wu-guan",
+      "san-jing-di",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zongshou",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
   }
 ];
 
@@ -24759,6 +24873,26 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "zhiyuelu"
+    ]
+  }
+,
+  {
+    "id": "koan-652",
+    "question": "入众日用何处是佛法大意？",
+    "answer": "展钵受食，折巾收衣；触处是道，不落玄奇。",
+    "context": "学人问千龟峰宗寿首座：“大德编纂《入众日用》，句句皆是洗面、过堂、登厕、折叠袈裟之粗浅细行，祖师西来向上玄妙大意究竟在何处？”宗寿首座答曰：“五更下榻整罗裙，日中展钵受微温。若向虚空寻妙道，错引千人入草深！”学人当下有省。",
+    "interpretation": "禅宗大道从不离世间日用平常。学人往往好高骛远妄求玄妙心法，殊不知佛祖西来真血脉，正在晨起翻身、展钵受食之一念清净觉照之中。",
+    "master": "宗寿（无量寿禅师）",
+    "source": "《入众日用·附录机语》",
+    "relatedConcepts": [
+      "shi-cun-wu-guan",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zongshou"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong"
     ]
   }
 ];
@@ -47603,6 +47737,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-95",
     "relatedBooks": [
       "huanzhu-anqinggui"
+    ]
+  }
+,
+  {
+    "id": "faq-2794",
+    "question": "《入众日用》在禅门修持体系中具有何种独特地位？",
+    "answer": "《入众日用》（又称《无量寿禅师日用小清规》）由宋代宗寿禅师辑成，是将百丈、长芦大部清规提炼为行者随身必读的微型指南。它破除了禅修者好高骛远、落入口头狂禅之弊端，将见性解脱实实在在扎根于晨起、盥洗、用斋、如厕等十二时辰日用身心威仪之中，印证了‘佛法在日用处，行住坐卧皆是道’。",
+    "relatedQa": "koan-652",
+    "relatedBooks": [
+      "ruzhongriyong"
+    ]
+  },
+  {
+    "id": "faq-2795",
+    "question": "《入众日用》中为何极为强调‘食存五观’？",
+    "answer": "五观（计功多少、忖己德行、防心离过、正思良药、为成道业）是禅人借日常饮食降伏贪、嗔、痴三毒的利器。面对饭食，既不起贪恋美味之心，亦不生厌恶粗茶淡饭之念，视食物为治愈饥渴形枯之药石，时时惕厉修行，方能消受十方信施供养，使饮食化为清净定慧资粮。",
+    "relatedQa": "koan-652",
+    "relatedBooks": [
+      "ruzhongriyong"
     ]
   }
 ];

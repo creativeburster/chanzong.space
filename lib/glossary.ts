@@ -1199,4 +1199,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '因指见月', pinyin: 'yīn zhǐ jiàn yuè', meaning: '借由语言名相与祖师机锋启发，彻底悟入自心清净本性' },
     { char: '拈古颂古', pinyin: 'niān gǔ sòng gǔ', meaning: '历代禅师对前代公案机锋所作之提撕评唱与诗偈颂古' },
   ],
+  'ruzhongriyong': [
+    { char: '宗寿', pinyin: 'zōng shòu', meaning: '南宋临济宗高僧，千龟峰首座，汇辑《入众日用》以立禅林细行规范' },
+    { char: '笐竿', pinyin: 'háng gān', meaning: '禅林僧堂或寮房中用以悬挂衣物袈裟之竹竿木架' },
+    { char: '裩袴', pinyin: 'kūn kù', meaning: '僧人日常穿著之合体贴身衬裤或便裤' },
+    { char: '鐼', pinyin: 'fén', meaning: '古代僧堂中盛放热水或盥洗所用之金属或陶瓷脸盆器皿' },
+    { char: '触净', pinyin: 'chù jìng', meaning: '丛林规矩中对如厕等污秽触地与佛殿法堂清净之地之严格区分与清洗要求' },
+    { char: '食存五观', pinyin: 'shí cún wǔ guān', meaning: '禅门受食时计功、忖德、防心、疗形、成道之五种正念观照' },
+  ],
 };
