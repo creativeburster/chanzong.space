@@ -183,7 +183,9 @@ def main():
         lines.insert(insert_at + 1, line)
         open(path, 'w', encoding='utf-8', newline='\n').write('\n'.join(lines))
         updated += 1
-    print(f'写入连线 {updated} 部 | 已有跳过 {skipped} 部')
+    print(f'写入连线 {updated} 部 | 已有跳过 {skipped    "zongjinglu": ["tanjing", "lengqiejing", "yuanjuejing", "wudenghuiyuan"],
+    "zhiyuelu": ["wudenghuiyuan", "jingdechuandenglu", "biyanlu", "zongjinglu"],
+} 部')
 
 if __name__ == '__main__':
     main()
