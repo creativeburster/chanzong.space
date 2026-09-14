@@ -1,5 +1,7 @@
 # 传法正宗定祖图
 
+🔗 经典连线：[六祖坛经](/classics/tanjing)（曹溪法脉） · [五灯会元](/classics/wudenghuiyuan)（五家七宗） · [景德传灯录](/classics/jingdechuandenglu)（传灯正印） · [信心铭](/classics/xinxinming)（心印一源）
+
 > 宋·镡津东山沙门臣僧 契嵩 撰（明教大师）
 
 ---

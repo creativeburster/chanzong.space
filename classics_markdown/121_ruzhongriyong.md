@@ -1,5 +1,7 @@
 # 入众日用
 
+🔗 经典连线：[禅苑清规](/classics/chanyuanqinggui)（清规同流） · [幻住庵清规](/classics/huanzhu-anqinggui)（日用细行） · [五灯会元](/classics/wudenghuiyuan)（丛林轨仪）
+
 ## 💡 现代白话导读与核心旨趣
 
 《入众日用》，又名《无量寿禅师日用小清规》，由南宋嘉定二年（1209年）千龟峰首座宗寿禅师（号无量寿）汇编而成。
