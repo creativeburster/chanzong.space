@@ -3707,12 +3707,15 @@ export const ZEN_PERSONS: PersonItem[] = [
       "一切佛语心品"
 ],
     "classics": [
+    "胜鬘师子吼一乘大方便方广经",
       "楞伽阿跋多罗宝经"
 ],
     "relatedConcepts": ["buddha-nature","self-nature"],
     "relatedMethods": [],
-    "relatedPersons": ["bodhidharma","huike", "divakara"],
-    "relatedBooks": ["lengqiejing"]
+    "relatedPersons": [
+    "shengman-furen","bodhidharma","huike", "divakara"],
+    "relatedBooks": [
+    "shengmanjing","lengqiejing"]
   },
   {
     "id": "dehui",
@@ -4219,6 +4222,43 @@ export const ZEN_PERSONS: PersonItem[] = [
     ],
     "relatedBooks": [
       "zongmenshenan"
+    ]
+  }
+,
+  {
+    "id": "shengman-furen",
+    "name": "胜鬘夫人",
+    "title": "胜鬘夫人 · 大乘如来藏师子吼说法主",
+    "era": "佛陀时代",
+    "lifeStory": "舍卫国波斯匿王与末利夫人之女，阿踰阇国王后。夫人宿殖德本，聪慧利根，得父母书信赞佛即生正信，佛陀空中现身放光加被。夫人当佛前说无量功德偈，自发十大受与三大愿，作无畏师子吼，广演究竟一乘、如来藏与自性清净心奥义，佛为印证并授记作佛。为大乘在家女性说法之最高典范。",
+    "teachings": "如来法身不离烦恼藏，名如来藏。自性清净心为客尘烦恼所染，而体性本无增减；二乘所证非究竟涅槃，唯有一佛乘能度一切生死无明。当以四摄法广度有情，以无畏心摄受正法。",
+    "quotes": [
+      "如来藏者，是法界藏、出世间上上藏、自性清净藏。",
+      "空如来藏，若离若脱若异一切烦恼藏；不空如来藏，过于恒沙不思议诸佛法。"
+    ],
+    "classics": [
+      "胜鬘师子吼一乘大方便方广经"
+    ],
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "kong-bu-kong-ru-lai-zang",
+      "yicheng",
+      "zixing-qingjing",
+      "wu-ming-zhu-di"
+    ],
+    "relatedMethods": [
+      "she-shou-zheng-fa"
+    ],
+    "relatedPersons": [
+      "gunabhadra",
+      "huineng",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "lengqiejing",
+      "lengyanjing",
+      "tanjing"
     ]
   }
 ];
@@ -5042,8 +5082,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "如来藏非一物——不可作“有个东西藏在心中”会，只是当下一念心之本体。迷时为烦恼，悟时为菩提，体无二致。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
     "relatedConcepts": ["buddha-nature","self-nature","real-mind"],
-    "relatedPersons": ["huineng","bodhidharma"],
-    "relatedBooks": ["lengyanjing","dachengqixinlun", "miyanjing", "jieshenmijing", "lengqiejing", "baoxinglun"]
+    "relatedPersons": [
+    "shengman-furen","huineng","bodhidharma"],
+    "relatedBooks": [
+    "shengmanjing","lengyanjing","dachengqixinlun", "miyanjing", "jieshenmijing", "lengqiejing", "baoxinglun"]
   },
   {
     "id": "zhongdao",
@@ -5894,8 +5936,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "一乘非别有法——即此当下之心。悟自性即一乘，迷自性即三乘。不须舍三乘求一乘——即三乘之体即是一乘。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《法华经》《坛经》《维摩诘经》",
     "relatedConcepts": ["instant-enlightenment","direct-pointing","self-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedPersons": [
+    "shengman-furen","huineng"],
+    "relatedBooks": [
+    "shengmanjing","tanjing"]
   },
   {
     "id": "fangbian",
@@ -6667,8 +6711,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "自性清净非修得——乃本自清净。修行非令自性变净——乃去除覆盖。如水被泥浊——水体本净，泥去则净。悟自性即见本自清净——不须向外求净。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《维摩诘经》《大乘起信论》",
     "relatedConcepts": ["self-nature","buddha-nature","yuanman"],
-    "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["tanjing", "xinxingxiuxisong", "baoxinglun"]
+    "relatedPersons": [
+    "shengman-furen","huineng","weimojie"],
+    "relatedBooks": [
+    "shengmanjing","tanjing", "xinxingxiuxisong", "baoxinglun"]
   },
   {
     "id": "fayin",
@@ -11485,6 +11531,60 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "zongmenshenan"
     ]
   }
+,
+  {
+    "id": "kong-bu-kong-ru-lai-zang",
+    "title": "空如来藏与不空如来藏",
+    "category": "心性",
+    "summary": "《胜鬘经》所立如来藏二种法性：空如来藏指自性本体天然超越、脱离一切世间客尘烦恼障垢；不空如来藏指自性圆满具足超越恒沙数不可思议之真实如来清净功德法性。",
+    "etymology": "出自《胜鬘师子吼一乘大方便方广经·空义隐覆真实章第九》：‘世尊！有二种如来藏空智。’为大乘如来藏学派最严谨之中道界定。",
+    "quotes": [
+      "空如来藏，若离、若脱、若异一切烦恼藏；不空如来藏，过于恒沙不思议诸佛法，非离、非脱、非异法身。"
+    ],
+    "guidance": "修道参禅切莫错认空性：禅门明心见性，所见非空无所有之断灭顽空（此偏于空），亦非心外有物之神我（此偏于有），乃真空妙有、空与不空圆融无碍之本来面目。",
+    "classicRef": "《胜鬘师子吼一乘大方便方广经》、《究竟一乘宝性论》",
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "emptiness",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "gunabhadra",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "baoxinglun",
+      "lengqiejing"
+    ]
+  },
+  {
+    "id": "wu-ming-zhu-di",
+    "title": "无明住地",
+    "category": "见地",
+    "summary": "《胜鬘经》所揭示之一切烦恼之根本渊薮。住地意为能生、能依止。三界烦恼分为见一处住地、欲爱住地、色爱住地、有爱住地与无明住地五种，前四种为粗重起烦恼，无明住地为最深细根本惑障，二乘罗汉未能断尽，唯佛智方能究竟断灭。",
+    "etymology": "源自《胜鬘经·一乘章第五》，辨析声闻缘觉与诸佛如来解脱差异之根本理论依据。",
+    "quotes": [
+      "无明住地其力最大……如是四种住地，无明住地为其根本。"
+    ],
+    "guidance": "日常修行断除浮躁贪嗔仅是克制枝末烦恼；唯有在无念无住中直照本源，彻破根本无明，方能桶底脱落、生死永尽。",
+    "classicRef": "《胜鬘师子吼一乘大方便方广经》",
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "affliction-bodhi",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "lengyanjing"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13504,6 +13604,35 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": [
       "zongmenshenan",
       "biyanlu"
+    ]
+  }
+,
+  {
+    "id": "she-shou-zheng-fa",
+    "title": "摄受正法法门",
+    "summary": "胜鬘夫人开显之大乘行门极则。摄受正法即是摄受大乘一切佛法，以菩萨十大弘受与三大弘愿为纲领，在日常世俗生活中修四摄六度，降伏恶逆、济拔贫苦、护持无上真理。",
+    "origin": "源自《胜鬘师子吼一乘大方便方广经·摄受章第四》，胜鬘夫人承佛威神演说摄受正法之不可思议广大功德。",
+    "steps": [
+      "第一步·立菩萨大誓：以胜鬘十大受为准则，严谨止恶防非，心不生犯慢恚嫉悭诸恶心念。",
+      "第二步·修四摄利他：布施、爱语、利行、同事，见苦难者悉心拔济，见正法衰危誓死荷担。",
+      "第三步·圆摄一切法：了达摄受正法即是体认法界如来藏，自他不二，行解相应，直登佛地。"
+    ],
+    "pitfalls": [
+      "流于形式诵念：将大愿停留在口头唱念，遇逆境利害即便起嗔退缩。",
+      "执相求福：误将摄受正法视作求世间福报，未达一乘无漏心性解脱。"
+    ],
+    "classicRef": "《胜鬘师子吼一乘大方便方广经》",
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "yicheng",
+      "kong-bu-kong-ru-lai-zang"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "gunabhadra"
+    ],
+    "relatedBooks": [
+      "shengmanjing"
     ]
   }
 ];
@@ -25326,6 +25455,29 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "zongmenshenan"
+    ]
+  }
+,
+  {
+    "id": "koan-656",
+    "question": "自性清净心，因何为客尘烦恼所染？胜鬘夫人师子吼，道个什么？",
+    "answer": "浮云蔽日日何在？清风卷雾月自明！染亦不染，净亦不净。",
+    "context": "《胜鬘经》云：‘有二法难可了知：谓自性清净心，难可了知；彼心为烦恼所染，亦难可了知。’宗门宗师以此勘验学人是否落在净秽两边二元对立之中。",
+    "interpretation": "自性未曾有一刻真正被染污，所谓‘染’者，只是妄识计执之客尘幻象；若认烦恼为实法而欲排遣除灭，是名头上安头；若执本来清净而放浪形骸，是名狂野狐禅。唯当下截断能所分别，始见真常。",
+    "master": "胜鬘夫人",
+    "source": "《胜鬘师子吼一乘大方便方广经》",
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "kong-bu-kong-ru-lai-zang",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "tanjing"
     ]
   }
 ];
@@ -48246,6 +48398,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-655",
     "relatedBooks": [
       "zongmenshenan"
+    ]
+  }
+,
+  {
+    "id": "faq-2802",
+    "question": "为何《胜鬘经》被禅宗历代祖师奉为明心见性的根本经论之一？",
+    "answer": "禅宗以‘直指人心，见性成佛’为宗，其理论最坚固的基石正是《胜鬘经》所立‘在缠如来藏，出缠即法身’。经中明示一切众生身中皆本具自性清净心，生死烦恼唯是虚妄客尘。这一见地直接奠定了六祖惠能‘何期自性本自清净’的顿悟思想，为行者消除了‘向心外求佛’的终极迷妄。",
+    "relatedQa": "koan-656",
+    "relatedBooks": [
+      "shengmanjing"
+    ]
+  },
+  {
+    "id": "faq-2803",
+    "question": "现代人身处物欲纷扰、焦虑烦恼不断的都市生活，如何运用《胜鬘经》的‘自性清净与客尘’智慧安顿身心？",
+    "answer": "生活中的压力、委屈、焦虑与负面情绪，在《胜鬘经》中皆属‘客尘’——它们如同奔波往来的匆匆过客，有生有灭；而你内在那个能知能觉、清明觉照的本来心体，从没有被任何负面情绪真正染污或损伤。借‘自性本净、客尘作客’的觉照，在情绪泛起时做回‘主人’，不追随、不压抑，静观其自生自灭，内心便能迅速恢复平静安详、自在如如。",
+    "relatedQa": "koan-656",
+    "relatedBooks": [
+      "shengmanjing"
     ]
   }
 ];

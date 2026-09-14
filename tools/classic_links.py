@@ -133,6 +133,7 @@ MAP = {
   'chuanfazhengzongdingzutu': [('tanjing', '曹溪法脉'), ('wudenghuiyuan', '五家七宗'), ('jingdechuandenglu', '传灯正印'), ('xinxinming', '心印一源')],
   'fangshanwenbaoyulu': [('linji', '临济宗风'), ('xutangyulu', '杨歧同调'), ('tianmuzhongfengguanglu', '元禅并照'), ('wumenguan', '转语险关')],
   'zongmenshenan': [('yunmen', '云门祖刹'), ('linji', '纲宗辨正'), ('biyanlu', '活句真机'), ('wumenguan', '机锋透关')],
+  'shengmanjing': [('lengqiejing', '如来藏姊妹'), ('lengyanjing', '法身实相'), ('tanjing', '自性清净'), ('baoxinglun', '一乘宝性')],
 }
 
 def main():

@@ -1231,4 +1231,13 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '冰轮', pinyin: 'bīng lún', meaning: '喻指圆满皎洁之清净自性心月，有目者不待指标即可亲见' },
     { char: '抽钉拔楔', pinyin: 'chōu dīng bá xiē', meaning: '宗师接引学人之大机大用，旨在为学人拔除知见妄执之钉楔' },
   ],
+  'shengmanjing': [
+    { char: '求那跋陀罗', pinyin: 'qiú nà bá tuó luó', meaning: '刘宋中天竺三藏法师，译出《楞伽经》、《胜鬘经》，大乘心性经典东传巨擘' },
+    { char: '胜鬘夫人', pinyin: 'shèng mán fū rén', meaning: '梵名 Śrīmālā，波斯匿王之女，阿踰阇国王后，以在家女居士身说究竟一乘如来藏' },
+    { char: '师子吼', pinyin: 'shī zǐ hǒu', meaning: '比喻佛菩萨说法决定无畏、摧破一切魔外邪见与小乘偏执之无上正法妙音' },
+    { char: '在缠如来藏', pinyin: 'zài chán rú lái zàng', meaning: '众生身中本来具足之清净法身，尚为无明客尘烦恼所缠缚遮蔽时之名称' },
+    { char: '无明住地', pinyin: 'wú míng zhù dì', meaning: '超越见爱等四种住地之根本无明惑障，为一切上烦恼所依，唯佛菩提智方能断尽' },
+    { char: '空如来藏', pinyin: 'kōng rú lái zàng', meaning: '如来藏本性天然远离、解脱并超绝于世间一切贪嗔痴妄染之甚深法性' },
+    { char: '不空如来藏', pinyin: 'bù kōng rú lái zàng', meaning: '如来藏本具超过恒河沙数之无漏真实不可思议诸佛法身智慧功德' },
+  ],
 };
