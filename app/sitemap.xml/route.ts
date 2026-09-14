@@ -34,7 +34,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Classics (120 部)
+  // Classics (130 部)
   for (const m of manifest) {
     entries.push({
       simpPath: `/classics/${m.id}`,
