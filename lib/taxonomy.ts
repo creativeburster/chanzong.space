@@ -1119,8 +1119,8 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["prajna","emptiness","no-abiding"],
     "relatedMethods": [],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["jingangjing","weimojiejing","zhonglun", "shoulengyansanmeijing"]
+    "relatedPersons": ["sengrui", "seng-zhao"],
+    "relatedBooks": ["shiertimenlun", "jingangjing","weimojiejing","zhonglun", "shoulengyansanmeijing"]
   },
   {
     "id": "xuanzang",
@@ -4336,6 +4336,43 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedBooks": [
       "baoxingwangzhenglun",
       "dachengqixinlun"
+    ]
+  },
+  {
+    "id": "sengrui",
+    "name": "僧叡",
+    "title": "后秦高僧 / 罗什门下四圣之一 / 关中大乘巨擘",
+    "era": "后秦 (371-438)",
+    "lifeStory": "僧叡，魏郡长乐（今河南安阳）人。少负高志，十八出家，依止僧贤法师，精研方等深经。游历关陇，从道安法师受教。后秦弘始三年（401年），姚兴迎鸠摩罗什入长安，僧叡入西明阁及逍遥园参预译场，亲承罗什奥义。罗什每叹其“吐辞雅炼，深通玄旨”。僧叡为《十二门论》《大智度论》《中论》《法华经》《维摩诘经》等多部巨著撰序，文采风流，洞照实相，世称“罗什门下四圣”（僧肇、僧叡、道融、昙影）之一。晚年笃志西方，栖止草堂，讲贯不绝，名重一时。",
+    "teachings": "僧叡深通大乘般若性空与法华妙旨。其撰《十二门论序》，力倡“筌我兼忘，始可以几乎实”、“虚实两冥，整归驾于道场”，认为万法虽多，不出因缘生灭与虚妄情见；若能于十二门中直了诸法无自性、毕竟空寂，即可顿空知见、冥契如来法身。其教法重在实证不落空谈，直契向上一着。",
+    "quotes": [
+      "十二门论者，盖是实相之折中，道场之要轨也。 —《十二门论序》",
+      "筌我兼忘，始可以几乎实矣！虚实两冥、得失无际。 —《十二门论序》",
+      "冥而无际，则能忘造次于两玄、泯颠沛于一致，整归驾于道场、毕趣心于佛地。 —《十二门论序》"
+    ],
+    "classics": [
+      "十二门论",
+      "中论",
+      "大智度论"
+    ],
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "bi-jing-kong-ji",
+      "emptiness",
+      "prajna"
+    ],
+    "relatedMethods": [
+      "shi-er-men-po-zhi"
+    ],
+    "relatedPersons": [
+      "kumarajiva",
+      "seng-zhao",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "jingangjing"
     ]
   }
 ];
@@ -11773,6 +11810,65 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "baoxingwangzhenglun",
       "xinxinming"
     ]
+  },
+  {
+    "id": "shi-er-men-guan",
+    "title": "十二门观",
+    "category": "中观般若",
+    "summary": "龙树菩萨于《十二门论》中所立之十二道穷究实相之正观法门，包括观因缘、观有果无果、观缘、观相、观有相无相、观一异、观有无、观性、观因果、观作者、观三时、观生。每门皆直指诸法无自性，层层破除实有情执，导归无生实相。",
+    "etymology": "出自龙树菩萨造、鸠摩罗什译《十二门论》。‘门’者开通无滞之义，行者由于此十二观门，通达诸法缘起性空、毕竟空寂，无有挂碍。",
+    "quotes": [
+      "十二门者，总众枝之大数也；门者，开通无滞之称也；论之者，欲以穷其源、尽其理也。 —僧叡《十二门论序》",
+      "众缘所生法，是即无自性；若无自性者，云何有是法？ —《十二门论·观因缘门》"
+    ],
+    "guidance": "修习中观与禅宗行者，当依十二门正观层层体察当下万念与外境：凡所生起皆从缘生，从缘生者本无自性；既无自性，从何立我立人、立起立灭？直下狂心顿息，契入自性寂然。",
+    "classicRef": "《十二门论》《中论》《肇论》",
+    "relatedConcepts": [
+      "bi-jing-kong-ji",
+      "emptiness",
+      "non-duality",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "kumarajiva",
+      "sengrui"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "bi-jing-kong-ji",
+    "title": "毕竟空寂",
+    "category": "中观般若",
+    "summary": "指万法自性从本以来无生无灭、无去无来、超绝一切对待分别之法性本体。中观与禅宗之‘空寂’绝非虚无断灭，而是彻底涤荡名相情执后，法尔现前、本自圆满灵明的实相涅槃之境。",
+    "etymology": "出自《十二门论·观生门第十二》：‘如是生、不生、生时皆不成，生法不成故。生住灭不成故，有为无为及众生皆不成。是故当知一切法无生，毕竟空寂故。’",
+    "quotes": [
+      "是故当知一切法无生，毕竟空寂故。 —《十二门论·观生门》",
+      "以有空义故，一切法得成；若无空义者，一切则不成。 —《中论·观四谛品》"
+    ],
+    "guidance": "行者切莫将‘空寂’错认为死寂沉空或顽空断见。毕竟空寂乃‘真空妙有’之枢机，因其自性毕竟空，方能森罗万象随缘幻化；参禅至极处，内外脱落，身心世界融入大虚空，不挂纤毫，方契本来真面目。",
+    "classicRef": "《十二门论》《大智度论》《中论》《六祖坛经》",
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "emptiness",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "kumarajiva",
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "tanjing",
+      "xinjing"
+    ]
   }
 ];
 
@@ -13881,6 +13977,39 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": [
       "baoxingwangzhenglun",
       "zhonglun"
+    ]
+  },
+  {
+    "id": "shi-er-men-po-zhi",
+    "title": "十二门破执正观法门",
+    "summary": "依龙树菩萨《十二门论》所开显之中观根本修持。行者以因缘无性、因中无果、破生住灭三相、离三时相因等十二重觉照，层层粉碎情执名相，体证诸法无生、当下即空的心性脱落妙门。",
+    "origin": "源自龙树菩萨造、鸠摩罗什译《十二门论》。中土三论宗嘉祥吉藏与禅宗北宗、牛头禅等早期祖师皆深借此观照法门作为彻破常见、断见、自性见之无上利刃。",
+    "steps": [
+      "推寻缘起：观照眼前一切事物及自心念头，皆由主客观因缘凑合而生，并无独立不变之自性本体；",
+      "破除四句：观心念之生起，为自生、他生、共生、无因生？审察觉知四句皆不可得，觅心了不可得；",
+      "照破三时：观念头相续，在前时、在后时、还是一时？三时推求皆无有实法，因果虚妄不相系缚；",
+      "契入无生：在能观与所观双双脱落之刹那，不落有无两边，安住于毕竟空寂、历历孤明之本源清净心。"
+    ],
+    "pitfalls": [
+      "严禁落入拨无因果之恶取断灭空，切莫误将无自性当作什么都没有；",
+      "亦不可执着于推演逻辑而成为口头知解中观，必须在日用起心动念处踏实行持破执。"
+    ],
+    "classicRef": "《十二门论》《中论》《肇论》",
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "bi-jing-kong-ji",
+      "emptiness",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "kumarajiva",
+      "sengrui"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "jingangjing"
     ]
   }
 ];
@@ -25771,6 +25900,28 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "baoxingwangzhenglun",
+      "zhonglun"
+    ]
+  },
+  {
+    "id": "koan-659",
+    "question": "若一切法无生、毕竟空寂，现前森罗万象从何而起？学人应当向何处安身立命？",
+    "answer": "山僧只管饥来吃饭困来眠；任他沧海变桑田，本来不曾动着一根毫毛！",
+    "context": "有学僧熟读《十二门论》，闻龙树菩萨云“一切法无生，毕竟空寂故”，心中大生疑惑：既然诸法本来不生，森罗万象与生死轮回到底因何而现？遂上堂向禅师请益安身立命之极则。",
+    "interpretation": "学人执著名相文字，将“无生空寂”当成与现实万象对立的死物。禅师直下以“饥来吃饭困来眠”的本分现成大用相答，点破：正因为诸法自性毕竟空无所得，森罗万象方能随缘纵横、生机盎然；无生即在日用平常中，岂需向外另觅玄虚？！这一答截断二边戏论，令学人当下体会真空即妙有、大用现前的无上境界。",
+    "master": "龙树菩萨 / 宗门宗师",
+    "source": "《十二门论·观生门》《景德传灯录》卷十四",
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "bi-jing-kong-ji",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "kumarajiva"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
       "zhonglun"
     ]
   }
@@ -48749,6 +48900,27 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-658",
     "relatedBooks": [
       "baoxingwangzhenglun"
+    ]
+  },
+  {
+    "id": "faq-2808",
+    "question": "《十二门论》说“一切法无生，毕竟空寂”，这与禅宗六祖惠能“何期自性本自清净、本不生灭”有何相通之处？",
+    "answer": "《十二门论》与禅宗心印在根本见地上完全同一。龙树菩萨以因缘、三相、时空十二门层层推勘，证明凡随缘而生之法皆无独立实体，故法尔“无生”、毕竟寂灭；而六祖惠能在听闻《金刚经》开悟时所叹“何期自性本不生灭”，正是亲证了这一脱离一切对待名相的自性实相。龙树菩萨从义理辩证上扫荡一切妄执，六祖则从自心体认上直接领会本来面目，两者一由教入宗、一由宗显教，皆直指众生本自具足、无生无灭的灵明法身。",
+    "relatedQa": "faq-2809",
+    "relatedBooks": [
+      "shiertimenlun",
+      "tanjing",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "faq-2809",
+    "question": "在现代生活与禅修实践中，如何运用《十二门论》的“观三时门”与“离自性”来对治焦虑和执念？",
+    "answer": "现代人的焦虑大多源于对过去无法改变的悔恨，以及对未来尚未发生之事的恐惧。依《十二门论·观三时门》，过去已灭、未来未至、现在不住，时间在自性上根本了不可得，执著于时间维度的因果纠结纯属心识的自造幻影；再依“观因缘门”，眼前所有的得失毁誉、工作压力皆是因缘和合的假相，无一具备永恒不变的实体。当我们以十二门正观照破“我执”与“实有感”，便能从焦虑的精神内耗中彻底跳脱出来，回到当下每一个纯粹清净的觉照之中。",
+    "relatedQa": "faq-2808",
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun"
     ]
   }
 ];

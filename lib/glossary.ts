@@ -1256,4 +1256,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '乐行王', pinyin: 'lè xíng wáng', meaning: '梵名 Sātavāhana，古南印度案达罗国名王，笃信三宝，龙树菩萨应其请问特撰此论' },
     { char: '正教王', pinyin: 'zhèng jiào wáng', meaning: '大乘政治哲学之理想国君，以仁慈抚育万民如赤子、轻刑恤狱、大兴慈济之法王' },
   ],
+  'shiertimenlun': [
+    { char: '十二门论', pinyin: 'shí èr mén lùn', meaning: '梵名 Dvādaśanikāya Śāstra，龙树菩萨造、鸠摩罗什译，中观大乘与三论宗立宗根本圣典' },
+    { char: '僧叡', pinyin: 'sēng ruì', meaning: '后秦高僧，罗什门下四圣八俊之一，才智绝伦，为《十二门论》作序阐发其实相宗极' },
+    { char: '摩诃衍', pinyin: 'mó hē yǎn', meaning: '梵语 Mahāyāna 之音译，即大乘，穷尽诸法边底、能度一切众生、十方诸佛所乘甚深法藏' },
+    { char: '无自性', pinyin: 'wú zì xìng', meaning: '梵语 Niḥsvabhāva，指万法因缘和合而生，无独立不变之固定自体，无自性故即是空' },
+    { char: '离三时生', pinyin: 'lí sān shí shēng', meaning: '中观核心辩证，照破前时生、后时生、同时生等一切时间相生妄执，明自性离时空' },
+    { char: '毕竟空寂', pinyin: 'bì jìng kōng jì', meaning: '万法无生无灭、无去无来之法性实相，非断灭虚无，乃心境双泯、本来寂灭之大般涅槃' },
+  ],
 };
