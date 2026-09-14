@@ -1272,4 +1272,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '心王菩萨', pinyin: 'xīn wáng pú sà', meaning: '经中向佛请问“无生行”之大士，表征自心之王主宰万象、觉照自心即是觉照法界' },
     { char: '无生实相忏', pinyin: 'wú shēng shí xiāng chàn', meaning: '禅宗最高忏悔法门，观罪性本空、如暗室遇明灯顿灭，不滞过去虚妄罪相，直证心源' },
   ],
+  'pingshiyulu': [
+    { char: '平石如砥', pinyin: 'píng shí rú dǐ', meaning: '元代临济宗著名高僧，继主天童景德禅寺，出世说法如饿虎出林、杀活自由' },
+    { char: '十二时歌', pinyin: 'shí èr shí gē', meaning: '禅师传世心性宝训，将二六时辰起居作息与参禅办道之惺惺觉照精妙融为一体' },
+    { char: '摵碎破沙盆', pinyin: 'shè suì pò shā pén', meaning: '摵音摄（砸碎），比喻彻底粉碎心中的佛法情解、公案知见与玄妙知障' },
+    { char: '自擘肚皮', pinyin: 'zì bò dù pí', meaning: '擘音博（筹划料理），直指生死解脱唯在自心觉照自肯，切莫向外依傍求人' },
+    { char: '惺惺长在', pinyin: 'xīng xīng cháng zài', meaning: '宗门保任心印，指自性灵明觉知在二六时中时刻昭昭不昧，不堕昏沉散乱' },
+    { char: '文武火', pinyin: 'wén wǔ huǒ', meaning: '本指道家炼丹火候，宗门借喻执着于渐修阶梯的知见妄执，“扑灭文武火”即顿超阶级' },
+  ],
 };

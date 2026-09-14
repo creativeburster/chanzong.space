@@ -2153,7 +2153,7 @@ export const ZEN_PERSONS: PersonItem[] = [
       "chan-jing-he-yi"
     ],
     "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
+    "relatedPersons": ["pingshi-rudi", "gaofeng-yuanmiao"],
     "relatedBooks": [
       "xiuxinjue",
       "lengyanjing",
@@ -2420,7 +2420,7 @@ export const ZEN_PERSONS: PersonItem[] = [
 ],
     "relatedConcepts": ["kanhua-chan-concept","yiqing","huoju-siju"],
     "relatedMethods": ["canhuoju"],
-    "relatedPersons": ["linji","huangbo","huineng"],
+    "relatedPersons": ["pingshi-rudi", "linji","huangbo","huineng"],
     "relatedBooks": ["chanjia_guijian"]
   },
   
@@ -3977,7 +3977,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["daji-yuanying", "sui-chu-zuo-zhu", "buddha-nature"],
     "relatedMethods": ["kanhuatou", "banghe"],
     "relatedPersons": ["linji", "yangqi-fanghui", "mianxian-xianjie"],
-    "relatedBooks": ["xutangyulu", "linji", "yangqiyulu"]
+    "relatedBooks": ["pingshiyulu", "xutangyulu", "linji", "yangqiyulu"]
   },
   {
     "id": "jiumoluoshi",
@@ -4407,6 +4407,41 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedBooks": [
       "jingangsanmeijing",
       "dachengqixinlun"
+    ]
+  },
+  {
+    "id": "pingshi-rudi",
+    "name": "平石如砥",
+    "title": "元代临济宗高僧 / 天童景德禅寺住持",
+    "era": "元代 (约1268-1350)",
+    "lifeStory": "平石如砥，元代临济宗高僧。出家后参学东南诸方，初参圆应和尚于乳峰，‘如登东山而小鲁’；再参云外和尚于玲珑岩，‘如登泰山而小天下’。历主四明保圣寺、定水寺，后奉诏晋主天下禅宗名刹天童山景德禅寺。出世说法三十载，以机锋峻烈、杀活自由著称。同代阿育王山正印禅师赞其‘如饿虎反睨其父，摵碎破沙盆，扑灭文武火，拗折蓬蒿箭，裂破铁丝网’，誉为众星之孤月。其所作《十二时歌》将二六时中心性修持化为本色歌行，脍炙人口，流传后世。门下法席鼎盛，东瀛日僧巨藏主等亦浮海来参。",
+    "teachings": "平石如砥禅师宗风直承临济大机大用，力扫当时禅林文墨浮华与死执名相之病。主张‘佛之一字尚不喜闻，祖之一字何处安顿’；教诫学人断不可向外驰求、在古人舌头上讨生活，而当‘自家肚皮自擘划，不用低头更问人’。强调在日常十二时辰饥餐渴饮、行住坐卧中时刻保任‘惺惺长在’，在平常细嚼中体认本自具足的本地风光。",
+    "quotes": [
+      "自家肚皮自擘划，不用低头更问人。 —《十二时歌》",
+      "麤飡虽然易得饱，不如细嚼味方真。 —《十二时歌》",
+      "只么惺惺要长在。浅草平田差路多，莫教失脚无明海。 —《十二时歌》",
+      "一尘不立处全彰，方为俊特。风行草偃，月印寒潭！ —《平石如砥禅师语录》"
+    ],
+    "classics": [
+      "平石如砥禅师语录"
+    ],
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "xing-xing-chang-zai",
+      "dao-zai-riyong",
+      "ordinary-mind"
+    ],
+    "relatedMethods": [
+      "shi-er-shi-chen-xiu-chi"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu",
+      "zhongfeng-mingben"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "xutangyulu",
+      "tianmuzhongfengguanglu"
     ]
   }
 ];
@@ -11959,6 +11994,59 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "dachengqixinlun",
       "tanjing"
     ]
+  },
+  {
+    "id": "shi-er-shi-ge",
+    "title": "十二时歌",
+    "category": "禅门宗风",
+    "summary": "禅宗传世修持歌行体裁。平石如砥禅师以日用二六时辰（子丑寅卯辰巳午未申酉戌亥）为脉络，将枯淡起居、柴米油盐与参禅工夫之惺惺提持精妙结合，强调修行解脱唯在自心觉照承担，不离日用平常。",
+    "etymology": "源自平石如砥禅师所作《十二时歌》（载《天童平石和尚语录》卷末）。唐代赵州从谂禅师亦曾作有《十二时歌》，平石禅师承其宗风而益加峻烈平实。",
+    "quotes": [
+      "平旦寅，世间宜假不宜真。自家肚皮自擘划，不用低头更问人。 —平石如砥《十二时歌》",
+      "人定亥，只么惺惺要长在。浅草平田差路多，莫教失脚无明海。 —平石如砥《十二时歌》"
+    ],
+    "guidance": "行者切莫将禅修与日常生活割裂对立。当如《十二时歌》所开示：无论清晨日出还是黄昏人定，面对世事繁杂，自心当历历分明、惺惺不昧；于一饭一水间细细咀嚼体认，自肯自承，步步踏实。",
+    "classicRef": "《平石如砥禅师语录》《赵州录》",
+    "relatedConcepts": [
+      "xing-xing-chang-zai",
+      "dao-zai-riyong",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "zhaozhouyulu"
+    ]
+  },
+  {
+    "id": "xing-xing-chang-zai",
+    "title": "惺惺长在",
+    "category": "心性修持",
+    "summary": "宗门保任心印。‘惺惺’指自性灵明、洞照一切境界而不随物转之纯粹觉性；‘长在’指在行住坐卧、二六时中恒常保任昭昭不昧，不堕昏沉死寂，不随妄念攀缘。",
+    "etymology": "出自平石如砥禅师《十二时歌·人定亥》：‘人定亥，只么惺惺要长在。浅草平田差路多，莫教失脚无明海。’神赞禅师与雪峰义存等古德亦常以‘惺惺寂寂’开示学人。",
+    "quotes": [
+      "只么惺惺要长在。浅草平田差路多，莫教失脚无明海。 —《平石如砥禅师语录》",
+      "惺惺寂寂是，无记寂寂非；寂寂惺惺是，乱想惺惺非。 —宗门保任明训"
+    ],
+    "guidance": "行者在日用对境时，当常自照察：此刻是否灵明历历？面对顺逆境界，能知境界的是谁？保持这份不取不舍、清清楚楚的觉照，便是‘惺惺长在’；久久温养，自然动静一如。",
+    "classicRef": "《平石如砥禅师语录》《景德传灯录》《指月录》",
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "dao-zai-riyong",
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "tanjing"
+    ]
   }
 ];
 
@@ -14131,6 +14219,36 @@ export const ZEN_METHODS: MethodItem[] = [
       "jingangsanmeijing",
       "sixingguan",
       "lengqiejing"
+    ]
+  },
+  {
+    "id": "shi-er-shi-chen-xiu-chi",
+    "title": "十二时辰日用保任法门",
+    "summary": "依平石如砥禅师《十二时歌》所开显之动静一如生活禅行持。行者将觉照功夫融汇于一日十二时辰起卧、饮食、劳作、应酬之中，自家担荷、细嚼真味、惺惺长在，实现事事无碍的本地风光。",
+    "origin": "源自元代平石如砥禅师《天童平石和尚语录·十二时歌》。融汇临济宗向上机锋与赵州十二时歌之平实宗风。",
+    "steps": [
+      "平旦自立：寅时醒来，直下承当自性本足，不向外驰求依傍，自家肚皮自擘划；",
+      "食时细嚼：辰巳饮食对境，不可囫囵吞枣放逸心神，细细咀嚼体会自性法味；",
+      "日午随缘：午未繁忙之际，观世间幻相宜假不宜真，不执苦乐，心常在定；",
+      "人定照管：夜深人定，收摄身心，长保惺惺觉照，防微杜渐，不堕无明流转。"
+    ],
+    "pitfalls": [
+      "将‘惺惺’错认为起心动念去死守一个觉照知见，反成头上安头之大病；",
+      "借口‘日用即道’而在世俗名利中彻底放逸随波逐流，落入凡夫不修之无明海。"
+    ],
+    "classicRef": "《平石如砥禅师语录》《赵州和尚语录》",
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "xing-xing-chang-zai",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "zhaozhouyulu"
     ]
   }
 ];
@@ -26067,6 +26185,27 @@ export const ZEN_KOANS: KoanItem[] = [
       "jingangsanmeijing",
       "sixingguan",
       "tanjing"
+    ]
+  },
+  {
+    "id": "koan-661",
+    "question": "如何是天童门下为人一句？",
+    "answer": "摵碎破沙盆，扑灭文武火！自家肚皮自擘划，莫向山僧讨残羹！",
+    "context": "有学僧慕平石如砥禅师峻拔宗风，特上天童景德禅寺方丈请益：‘学人万里涉水登山，只求和尚天童门下直截为人一句！’平石禅师当头痛喝相答。",
+    "interpretation": "学僧心怀贪求，希望从大宗师舌头上拾取一句半句玄妙当现成法宝。平石和尚劈头棒喝：‘摵碎破沙盆，扑灭文武火！’直截击碎学人心头的知解窠臼与求玄之妄；复点出‘自家肚皮自擘划’，令其彻底断绝外向依靠之偷心，当下承当自家本命元辰！",
+    "master": "平石如砥",
+    "source": "《平石如砥禅师语录》天童上堂、《阿育王山正印跋》",
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "xing-xing-chang-zai",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "linji"
     ]
   }
 ];
@@ -49086,6 +49225,26 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedBooks": [
       "jingangsanmeijing",
       "tanjing"
+    ]
+  },
+  {
+    "id": "faq-2812",
+    "question": "平石如砥禅师在《十二时歌》中所说‘自家肚皮自擘划，不用低头更问人’，对现代学人树立独立心性有何启示？",
+    "answer": "现代人往往容易陷入心理依附与信息焦虑，习惯于从外部导师、网络资讯或鸡汤语录中寻求答案与慰藉，结果往往‘借得他人酒，浇不得自家愁’。平石和尚的‘自家肚皮自擘划’正是一剂强心猛药：它教诫我们，内在的清安、觉悟与担当全在自心当下，佛祖言教皆是指月之指，唯有亲口饮水方知冷暖。不向外求、自信自立，在日常琐细中敢于承担自己的喜怒哀乐与生死责任，才是真正的禅者风骨。",
+    "relatedQa": "faq-2813",
+    "relatedBooks": [
+      "pingshiyulu",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "faq-2813",
+    "question": "面对高压快节奏的职场与生活，如何践行‘麤飡虽然易得饱，不如细嚼味方真’的修持艺术？",
+    "answer": "在快节奏的现代生活中，人们习惯于‘快餐式’的消费与思维，做事追求速成、阅读追求速览、饮食追求速食，内心却日益空虚焦躁。平石禅师以‘砂锅五合煮黄陈，不如细嚼味方真’点破生活禅的精髓：不论是面对一顿粗茶淡饭、一份日常繁杂工作，还是一段平凡的人际相处，都要慢下来、静下心去‘细嚼’。将全副身心投入到当下的每一次呼吸与行动中，体会过程本身的质感与滋味，烦恼自然无处立足，平淡之中自现大真味。",
+    "relatedQa": "faq-2812",
+    "relatedBooks": [
+      "pingshiyulu",
+      "zhaozhouyulu"
     ]
   }
 ];
