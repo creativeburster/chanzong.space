@@ -127,9 +127,11 @@
    - 编号续接现有最大编号（如当前最大 faq-308，则从 faq-309 开始）
    - 字段：`id`, `question`, `answer`, `relatedQa`, `relatedBooks`
 
-### 步骤 7：编译验证
-- 运行 `npx tsc --noEmit` 确保零错误
-- 若有 lint 错误，优先检查字符串中的中文引号转义问题
+### 步骤 7：编译验证与繁体双轨发布（用户钦定铁律）
+- **TypeScript 零报错**：运行 `npx tsc --noEmit` 确保零错误；
+- **繁体发布同步（完成繁体发布）**：做一部简体就必须相应完成繁体发布！验证 `/zh-tw/classics/[id]` 繁体静态页面生成无误，关联人物、概念、法门、公案繁体页面同步落地，`sitemap.xml` 自动生成繁简 hreflang 双向链接；
+- **全站构建验证**：运行 `node node_modules/next/dist/bin/next build` 确保全量 SSG 页面生成成功；
+- **Git 提交推送**：提交代码并 push 到 master 分支，触发 Vercel 生产自动部署。
 
 ---
 

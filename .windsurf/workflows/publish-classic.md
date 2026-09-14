@@ -81,10 +81,17 @@ description: 发布一部禅宗经典的完整流程——从源文本到全站�
 - 不足的部分需补充
 - 验证方法：遍历 manifest.json 中每部经典，统计各实体关联数并输出
 
-## 步骤 11：Git 提交与推送
-- git add -A（添加核心数据文件，排除临时Python脚本）
-- git commit
-- git push（阈值：变更文件数>6 或 变更行数>6000，满足其一即推送；否则只commit不push，累积达标再推）
+## 步骤 11：繁体发布与双轨验证（用户钦定铁律）
+发布每部经典时，**做一部简体就必须相应完成繁体发布**，确保简繁两地学人与海外读者无缝参修：
+- 确认 `/zh-tw/classics/[id]` 繁体静态 HTML 页面成功生成且标题、导读、正文通过 OpenCC 精准繁体化；
+- 确认该经典配套之祖师人物（`/zh-tw/persons/[id]`）、核心概念（`/zh-tw/concepts/[id]`）、修持法门（`/zh-tw/methods/[id]`）、公案（`/zh-tw/koan/[id]`）繁体页面全部同步生成；
+- 确认生僻字卡片与白话今译卡片在繁体路由下调用 `t(...)` 正确渲染繁体字形；
+- 确认 `sitemap.xml` 自动生成对应的 `zh-Hant` alternate hreflang 双向内链。
+
+## 步骤 12：Git 提交与推送上线
+- git add -A（添加核心数据文件、Markdown、classic_links 与代码改动）
+- git commit -m "feat: 发布第X部《...》及配套繁简双轨实体与经典连线"
+- git push origin master（推送到远程仓库，触发生产环境自动部署）
 
 ## 当前数据规模（2026-08-18）
 - 经典：54 部

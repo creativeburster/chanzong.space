@@ -102,7 +102,7 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
                 {/* 汉字首字大标 */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-100/80 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800/60 flex items-center justify-center shadow-2xs">
                   <span className="text-xl font-bold font-serif-zen text-emerald-800 dark:text-emerald-300">
-                    {entry.char.length <= 2 ? entry.char : entry.char[0]}
+                    {t(entry.char.length <= 2 ? entry.char : entry.char[0])}
                   </span>
                 </div>
 
@@ -111,7 +111,7 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
                   <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
                     <div className="flex items-baseline gap-2">
                       <span className="text-[16px] font-bold font-serif-zen text-zinc-900 dark:text-zinc-100">
-                        {entry.char}
+                        {t(entry.char)}
                       </span>
                       <span className="text-[12px] font-mono font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-100/70 dark:bg-emerald-950 px-2 py-0.5 rounded-md">
                         [ {entry.pinyin} ]
@@ -142,7 +142,7 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
                   </div>
 
                   <p className="text-[13px] text-zinc-600 dark:text-zinc-300 leading-relaxed font-serif-zen">
-                    {entry.meaning}
+                    {t(entry.meaning)}
                   </p>
                 </div>
               </div>
