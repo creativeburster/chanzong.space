@@ -4108,6 +4108,47 @@ export const ZEN_PERSONS: PersonItem[] = [
       "huanzhu-anqinggui"
     ]
   }
+,
+  {
+    "id": "qisong",
+    "name": "契嵩",
+    "title": "镡津东山沙门 · 明教大师",
+    "era": "北宋",
+    "lifeStory": "契嵩（1007－1072），字仲灵，自号镡津，藤州镡津（今属广西藤县）人。北宋云门宗高僧，神鼎洪諲禅师法嗣（六祖下第十一世）。师七岁出家，十三得度，十九游方，后结庐居杭州灵隐佛日峰东山。时值欧阳修等士大夫尊儒排佛，教下学人亦以北魏《付法藏传》仅二十四世攻讦禅宗法统虚诞。契嵩居东山十九载，博采群籍，撰《原教论》、《辅教篇》融通儒释，撰《传法正宗记》十二卷及《传法正宗定祖图》一卷，考定东晋《禅经》早已备载二十八祖。嘉祐六年入京呈递朝廷，宋仁宗龙颜大悦，敕赐‘明教大师’紫茄之号，诏令所著悉数编入官版国家大藏经。",
+    "teachings": "力主“禅教一体”、“儒释一贯”。于宗门法统，考据金石梵夹以定西天二十八祖、东土六祖相承正统，彻底扫除后魏昙曜仓卒残漏之疑网；于心法修持，强调宗门以心印心、正法眼藏不离日用平常，被誉为宋代禅门第一护法巨匠。",
+    "quotes": [
+      "吾佛以正法要为一大教之宗，以密传受为一大教之祖。",
+      "宗乃圣贤之道源，祖乃万世之大范。"
+    ],
+    "classics": [
+      "传法正宗定祖图",
+      "传法正宗记",
+      "镡津文集"
+    ],
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "chuan-fa-ji",
+      "xitian-ershiba-zu",
+      "zhengfa-yancang",
+      "mind-transmission"
+    ],
+    "relatedMethods": [
+      "yi-xin-yin-xin-fa",
+      "kanhuatou"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "bodhidharma",
+      "huineng",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "tanjing",
+      "wudenghuiyuan",
+      "jingdechuandenglu"
+    ]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -6063,7 +6104,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission","zhengfa-yancang","jiaowai-biechuan"],
     "relatedPersons": ["bodhidharma","jiaye","nagarjuna"],
-    "relatedBooks": ["yunmen"]
+    "relatedBooks": ["yunmen", "chuanfazhengzongdingzutu"]
   },
   {
     "id": "yixiu-jue",
@@ -11211,6 +11252,60 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "ruzhongriyong"
     ]
   }
+,
+  {
+    "id": "chuan-fa-zheng-zong",
+    "title": "传法正宗",
+    "category": "宗门法统",
+    "summary": "禅宗自灵山世尊拈花微笑、独付大迦叶，经西天二十八代祖师传至达摩，达摩东渡历经慧可、僧璨、道信、弘忍至曹溪惠能大师，代代衣钵相传、以心印心的正统血脉谱系。宋明教大师契嵩作《传法正宗定祖图》以定万世之疑。",
+    "etymology": "出自北宋契嵩大师撰《传法正宗记》及《传法正宗定祖图》，考据东晋《禅经》与历代碑铭，定三十三世为宗门正脉。",
+    "quotes": [
+      "吾佛以正法要为一大教之宗，以密传受为一大教之祖。其宗乃圣贤之道源，其祖乃万世学戒定慧者之大范。 —《传法正宗定祖图序》"
+    ],
+    "guidance": "宗门法统非争名逐利之谱牒，而是十方如来同一心印之源流。行者当知心外无别法，明自本心即契入传法正宗。",
+    "classicRef": "传法正宗定祖图",
+    "relatedConcepts": [
+      "xitian-ershiba-zu",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "wudenghuiyuan",
+      "jingdechuandenglu"
+    ]
+  },
+  {
+    "id": "chuan-fa-ji",
+    "title": "传法正印偈",
+    "category": "宗门印证",
+    "summary": "禅宗自始祖释迦牟尼佛至东土六祖惠能大师，三十三代祖师在付嘱正法眼藏、密授心印时所宣说的核心印心偈颂。阐明法本无法、空有双泯之离言实相。",
+    "etymology": "《传法正宗定祖图》逐代完整载录三十三祖传法心印偈，如释迦‘法本法无法’、达摩‘一花开五叶’等。",
+    "quotes": [
+      "法本法无法，无法法亦法。今付无法时，法法何曾法？ —释迦如来传法偈"
+    ],
+    "guidance": "参悟传法偈切忌落在语言文字逻辑中作思辨分别，当借指见月，回光返照当下一念离相本觉。",
+    "classicRef": "传法正宗定祖图",
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "tanjing"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13133,6 +13228,39 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": [
       "ruzhongriyong",
       "chanyuanqinggui"
+    ]
+  }
+,
+  {
+    "id": "yi-xin-yin-xin-fa",
+    "title": "以心印心法",
+    "summary": "宗门不立文字、教外别传之终极接引与印证法门。师徒之间不假语言阶梯，以本觉印始觉，两心相契如印印泥、如空合空，顿契法界清净本体。",
+    "origin": "源自灵山会上世尊拈花迦叶微笑，历经西天二十八祖至达摩祖师东渡、六祖曹溪大兴，经宋明教契嵩《传法正宗定祖图》考定为万世正脉。",
+    "steps": [
+      "离言默照：放下一切语言分别与名相执着，心如虚空，灵明昭朗。",
+      "当机勘验：师家以绝待机锋或棒喝撕裂学人之情识葛藤，逼其退无可退。",
+      "顿悟本源：学人言下截断妄流，彻见本来面目，桶底脱落。",
+      "印心传法：师资道合，以心印心，付嘱正法眼藏，代代续佛慧命。"
+    ],
+    "pitfalls": [
+      "切忌将以心印心误会为神秘的心灵感应或附会神通，实则是亲证实相、见性同辙。",
+      "切忌未悟谓悟、盲引盲修，若无宗门过来人真切勘验，极易堕入盲修瞎练之邪径。"
+    ],
+    "classicRef": "传法正宗定祖图",
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "chuan-fa-ji",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "tanjing"
     ]
   }
 ];
@@ -24893,6 +25021,26 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "ruzhongriyong"
+    ]
+  }
+,
+  {
+    "id": "koan-653",
+    "question": "契嵩大师东山十九载著定祖图何为宗祖？",
+    "answer": "一毫端现宝王刹，万古疑情一笔消！",
+    "context": "北宋韩琦问明教契嵩大师：“天台学人言达摩二十八祖无据，禅门一宗本出方外，师何必苦居东山十九载，撰《定祖图》与天下学者争辩祖师正伪？”契嵩大师曰：“若不辨其正祖，正法眼藏将沦为无源之水；若知灵山拈花至今未散，此图正为天下衲僧安身立命！”韩公肃然起敬。",
+    "interpretation": "禅宗虽然强调超越文字名相，但正法相承之源流不可混淆。契嵩大师十九年著书立图，非为一人一家之门户之私，而是为天下学人确立正法血脉之不可动摇信心。",
+    "master": "契嵩（明教大师）",
+    "source": "《镡津文集·与韩魏公书》",
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "xitian-ershiba-zu"
+    ],
+    "relatedPersons": [
+      "qisong"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu"
     ]
   }
 ];
@@ -47756,6 +47904,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-652",
     "relatedBooks": [
       "ruzhongriyong"
+    ]
+  }
+,
+  {
+    "id": "faq-2796",
+    "question": "北宋契嵩大师撰写《传法正宗定祖图》的历史背景与核心意义是什么？",
+    "answer": "北宋时教下学人常援引北魏昙曜所编之《付法藏因缘传》（仅列西竺二十四世），攻讦禅宗‘西天二十八祖’之说为杜撰。契嵩大师在东山苦研十九载，详考东晋佛驮跋陀罗所译《禅经》早已备载二十八祖，考订《付法藏传》乃后魏太武灭佛兵荒马乱中昙曜仓卒残记之伪误。契嵩作《定祖图》呈送朝廷，宋仁宗亲自批准编入大藏经并赐号‘明教大师’，彻底平息了禅宗法统千百年来的争议，确立了宗门万世正脉地位。",
+    "relatedQa": "koan-653",
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu"
+    ]
+  },
+  {
+    "id": "faq-2797",
+    "question": "《传法正宗定祖图》中所录三十三代祖师传法偈具有怎样的修行实相价值？",
+    "answer": "传法偈是自释迦如来至曹溪惠能大师代代以心印心的核心印证。每一首偈颂（如释迦之‘法本法无法’、达摩之‘一花开五叶’、六祖之‘心地含诸种’）皆破尽法执与断灭空见，直显‘无法法亦法’之圆融实相。学人参究传法偈，不仅能领会灵山至震旦一脉相承之法统，更能于言下回光返照自心，直契无生妙境。",
+    "relatedQa": "koan-653",
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu"
     ]
   }
 ];

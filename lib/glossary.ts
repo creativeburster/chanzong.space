@@ -1207,4 +1207,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '触净', pinyin: 'chù jìng', meaning: '丛林规矩中对如厕等污秽触地与佛殿法堂清净之地之严格区分与清洗要求' },
     { char: '食存五观', pinyin: 'shí cún wǔ guān', meaning: '禅门受食时计功、忖德、防心、疗形、成道之五种正念观照' },
   ],
+  'chuanfazhengzongdingzutu': [
+    { char: '镡津', pinyin: 'xín jīn', meaning: '宋代藤州之古称（今属广西），云门宗高僧契嵩大师自号镡津东山沙门' },
+    { char: '定祖图', pinyin: 'dìng zǔ tú', meaning: '契嵩大师考定自灵山释迦至曹溪惠能三十三代祖师正统法脉谱图' },
+    { char: '付法藏传', pinyin: 'fù fǎ zàng zhuán', meaning: '后魏昙曜编纂之传记，因仅载二十四祖，契嵩引《禅经》辨破其残缺' },
+    { char: '传法偈', pinyin: 'chuán fǎ jì', meaning: '历代祖师密付正法眼藏、以心印心时所宣说直指自性本体之偈颂' },
+    { char: '一花五叶', pinyin: 'yī huā wǔ yè', meaning: '菩提达摩付法谶言，预示东土禅宗将繁衍分化出五大宗派宗风' },
+    { char: '明教大师', pinyin: 'míng jiào dà shī', meaning: '北宋仁宗皇帝嘉叹契嵩著《传法正宗记》护法之功而敕赐之紫茄尊号' },
+  ],
 };
