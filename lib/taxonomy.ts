@@ -1762,8 +1762,10 @@ export const ZEN_PERSONS: PersonItem[] = [
     "classics": [],
     "relatedConcepts": ["self-nature","tou-xin-wei-si"],
     "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["huitang-zuxin","lingyuan-weiqing"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedPersons": [
+    "chaozong-huifang","huitang-zuxin","lingyuan-weiqing"],
+    "relatedBooks": [
+    "chaozongyulu","chanlinbaoxun"]
   },
   {
     "id": "zhantang-wenzhun",
@@ -4259,6 +4261,44 @@ export const ZEN_PERSONS: PersonItem[] = [
       "lengqiejing",
       "lengyanjing",
       "tanjing"
+    ]
+  }
+,
+  {
+    "id": "chaozong-huifang",
+    "name": "超宗慧方",
+    "title": "禾山超宗慧方禅师 · 黄龙四家宗匠",
+    "era": "北宋",
+    "lifeStory": "北宋临济宗黄龙派高僧。嗣法于黄龙第十二代死心悟新禅师，与草堂善清、觉范慧洪、灵源惟清并称‘黄龙四家’。师初住隆庆，后迁吉州禾山、洪州云岩诸大名刹，宗风高峻峭拔，提撕痛快，名震江淮，深受士夫学衲景仰。作《古镜铭》等示众。",
+    "teachings": "宗门向上一窍，如石火电光，拟议即错。学道人须向言语道断处截流一觑，识取自家顶门上历历神光。心如古菱花镜，物来斯现，历照万法而不随物转，方得大解脱。",
+    "quotes": [
+      "万里神光顶后相。",
+      "直下是家归甚处，大千全现本来人。",
+      "历照千差，肯随物转。觑破前尘，是谁对面？"
+    ],
+    "classics": [
+      "超宗慧方禅师语录（黄龙四家录第四）"
+    ],
+    "relatedConcepts": [
+      "huanglong-sanguan",
+      "gu-jing-ming-concept",
+      "jie-liu-yi-ju",
+      "linji-zongfeng",
+      "ben-lai-mian-mu"
+    ],
+    "relatedMethods": [
+      "gu-jing-guan-zhao",
+      "huanglong-sanguan-fa"
+    ],
+    "relatedPersons": [
+      "sixin-wuxin",
+      "huanglong-huinan",
+      "linji"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "linji",
+      "wumenguan"
     ]
   }
 ];
@@ -11585,6 +11625,63 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "lengyanjing"
     ]
   }
+,
+  {
+    "id": "gu-jing-ming-concept",
+    "title": "古镜照物",
+    "category": "心性",
+    "summary": "超宗慧方禅师《古镜铭》所发扬之禅门根本心性妙喻。古镜比喻人人本具之清净自性，胡来胡现，汉来汉现；历照大千千差万别之境，而镜体常空常寂，永不随外界幻象流转改变。",
+    "etymology": "源自《超宗慧方禅师语录·古镜铭》：‘有古菱花，物来斯现……历照千差，肯随物转。’继承神秀、惠能以镜喻心之传统而转入更深之体用一如大机。",
+    "quotes": [
+      "有古菱花，物来斯现。演若倍瞻，仰山亲荐。",
+      "历照千差，肯随物转。觑破前尘，是谁对面？"
+    ],
+    "guidance": "于日用纷纭尘劳之中，当以此‘古镜照物’功夫觉照身心：事来则应，事去则空；万相历历在目，而自心不生贪嗔取舍，常住如如不动之觉体。",
+    "classicRef": "《超宗慧方禅师语录》、《坛经》",
+    "relatedConcepts": [
+      "self-nature",
+      "ben-lai-mian-mu",
+      "no-abiding",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "jie-liu-yi-ju",
+    "title": "截流一句",
+    "category": "宗风机用",
+    "summary": "宗门禅师接引学人时，当机立断斩截学人妄念情识流之峭拔转语。不容思量推测，如倚天长剑，一剑截断凡圣思量葛藤，令学人当下绝后苏生。",
+    "etymology": "源自宋代临济宗黄龙派宗风，超宗慧方禅师法语：‘顺水张帆息浪花，截流一句不周遮。’",
+    "quotes": [
+      "顺水张帆息浪花，截流一句不周遮。",
+      "截断两头，全彰向上一窍。"
+    ],
+    "guidance": "参禅切忌在思维念头里寻找答案，当在妄念波涛汹涌时，单提一声‘截流一句’，直接斩断起心动念的连绵妄想，反观无念自性。",
+    "classicRef": "《超宗慧方禅师语录》、《碧岩录》",
+    "relatedConcepts": [
+      "jifeng",
+      "linji-zongfeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin",
+      "linji"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "linji",
+      "biyanlu"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13633,6 +13730,35 @@ export const ZEN_METHODS: MethodItem[] = [
     ],
     "relatedBooks": [
       "shengmanjing"
+    ]
+  }
+,
+  {
+    "id": "gu-jing-guan-zhao",
+    "title": "古镜观照法门",
+    "summary": "依超宗慧方禅师《古镜铭》所立之体用并照实修法门。行者在动静之中常以自心如宝镜观照万法，物来则应，物去无痕，应物不滞，超脱世间顺逆。",
+    "origin": "源于北宋禾山超宗慧方禅师《古镜铭》，融通临济黄龙派大机大用与曹溪自性般若。",
+    "steps": [
+      "一·认取镜体：了达现前了了分明能知能见之觉性，即是亘古不灭之自性明镜。",
+      "二·物来斯现：对一切世俗善恶美丑境界，不迎不拒，任其显现，不起第二念计较。",
+      "三·不随物转：外境千差万别，心镜寂然不动，照彻前尘幻影，直下反观‘是谁对面’。"
+    ],
+    "pitfalls": [
+      "执镜著相：死守一个‘我在观照’的念头，反而多了一层法执。",
+      "顽空不起用：误以为不随物转是如木石般无知无觉，堕入死水盲修。"
+    ],
+    "classicRef": "《超宗慧方禅师语录》",
+    "relatedConcepts": [
+      "gu-jing-ming-concept",
+      "self-nature",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin"
+    ],
+    "relatedBooks": [
+      "chaozongyulu"
     ]
   }
 ];
@@ -25478,6 +25604,29 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "shengmanjing",
       "tanjing"
+    ]
+  }
+,
+  {
+    "id": "koan-657",
+    "question": "如来四十九年说不尽底法，达磨九年不了底公案，超宗禅师如何拈出？",
+    "answer": "一喝‘札’！万里神光顶后相！",
+    "context": "超宗慧方禅师初住隆庆开堂，有学僧出列以释迦四十九年未尽之法、达摩少林九年未了之公案发难相逼，禅师当机下喝并指示顶后神光。",
+    "interpretation": "诸佛说法皆是筌蹄标月，达摩面壁亦是方便接人。学人向故纸堆中寻言索句，终是数他人珍宝。超宗禅师一声‘札’截断意根，指出人人顶后亘古圆明之神光，当下即是极则，更无第二公案。",
+    "master": "超宗慧方",
+    "source": "《超宗慧方禅师语录（黄龙四家录第四）》",
+    "relatedConcepts": [
+      "jie-liu-yi-ju",
+      "ben-lai-mian-mu",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "linji"
     ]
   }
 ];
@@ -48417,6 +48566,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-656",
     "relatedBooks": [
       "shengmanjing"
+    ]
+  }
+,
+  {
+    "id": "faq-2804",
+    "question": "为何超宗慧方禅师在《古镜铭》中强调‘历照千差，肯随物转’？",
+    "answer": "凡夫修行常苦于‘境界动荡、心随境转’，被顺逆得失牵着鼻子走。超宗禅师以古镜点破迷关：自性本来如如，万象森罗在心中生生灭灭，正如镜中影像来去匆匆，而镜体从未因美相而增一分，亦未因恶像而污丝毫。明悟此理，便能在复杂世事中任运安住、不染纤尘。",
+    "relatedQa": "koan-657",
+    "relatedBooks": [
+      "chaozongyulu"
+    ]
+  },
+  {
+    "id": "faq-2805",
+    "question": "在快节奏的高压现代生活中，如何运用超宗禅师的‘截流一句’摆脱精神内耗？",
+    "answer": "现代人内耗的根源在于妄想思虑如瀑布奔流，一念引申十念，陷入无休止的自我怀疑与焦虑。学超宗禅师‘截流一句’的宗风：在心智胡思乱想之时，猛烈提起一声觉照（如‘当下是谁’或一声截断），斩断绵延不绝的思维狂流，顿还当下身心的寂静与清明，内耗当下冰消瓦解。",
+    "relatedQa": "koan-657",
+    "relatedBooks": [
+      "chaozongyulu"
     ]
   }
 ];

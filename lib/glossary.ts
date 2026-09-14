@@ -1240,4 +1240,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '空如来藏', pinyin: 'kōng rú lái zàng', meaning: '如来藏本性天然远离、解脱并超绝于世间一切贪嗔痴妄染之甚深法性' },
     { char: '不空如来藏', pinyin: 'bù kōng rú lái zàng', meaning: '如来藏本具超过恒河沙数之无漏真实不可思议诸佛法身智慧功德' },
   ],
+  'chaozongyulu': [
+    { char: '超宗慧方', pinyin: 'chāo zōng huì fāng', meaning: '北宋临济宗黄龙派名宿，死心悟新法嗣，与草堂、觉范、灵源齐名，合称黄龙四家' },
+    { char: '黄龙四家', pinyin: 'huáng lóng sì jiā', meaning: '宋代临济宗黄龙派死心悟新门下四大巨擘：草堂善清、觉范慧洪、灵源惟清、超宗慧方' },
+    { char: '古镜铭', pinyin: 'gǔ jìng míng', meaning: '超宗禅师所撰传世心性至道铭文，以明镜映物喻自性灵光历万象而不动不转' },
+    { char: '禾山打鼓', pinyin: 'hé shān dǎ gǔ', meaning: '宗门著名机锋典故，五代禾山无殷逢僧问即打鼓，超宗住禾山承扬其大机大用' },
+    { char: '截流一句', pinyin: 'jié liú yī jù', meaning: '宗师接引学人截断妄念葛藤、言语道断之向上机锋转语' },
+    { char: '不昧因果', pinyin: 'bù mèi yīn guǒ', meaning: '源自百丈野狐公案，指觉悟之人如实了达因果昭昭，不为业障所蒙昧而体露真常' },
+  ],
 };
