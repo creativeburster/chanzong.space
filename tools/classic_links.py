@@ -137,6 +137,7 @@ MAP = {
   'chaozongyulu': [('linji', '黄龙承临济'), ('wumenguan', '机锋透关'), ('biyanlu', '颂古击节'), ('xutangyulu', '宗门同气')],
   'baoxingwangzhenglun': [('zhonglun', '中观同宗'), ('dachengqixinlun', '真谛译典'), ('baoxinglun', '菩提行门'), ('jingangjing', '般若空性')],
   'shiertimenlun': [('zhonglun', '中观姊妹论'), ('baoxingwangzhenglun', '龙树同造'), ('jingangjing', '般若空义'), ('xinjing', '真空实相')],
+  'jingangsanmeijing': [('sixingguan', '二入四行源头'), ('lengqiejing', '达摩印心姊妹'), ('tanjing', '本觉自性'), ('jingangjing', '金刚无住')],
 }
 
 def main():

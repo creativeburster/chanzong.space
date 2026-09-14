@@ -121,10 +121,10 @@ export const ZEN_PERSONS: PersonItem[] = [
       "菩提达摩大师无心论",
       "菩提达摩大师入道四行观"
 ],
-    "relatedConcepts": ["self-nature","mind-transmission","direct-pointing","non-mind"],
+    "relatedConcepts": ["yi-wei-zhen-shi", "ben-jue-li-ci", "self-nature","mind-transmission","direct-pointing","non-mind"],
     "relatedMethods": ["four-practices"],
-    "relatedPersons": ["huike"],
-    "relatedBooks": ["xuemaicong","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","zhangzhi","zhengdaoge","wuran"]
+    "relatedPersons": ["yuanxiao", "huike"],
+    "relatedBooks": ["jingangsanmeijing", "xuemaicong","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","zhangzhi","zhengdaoge","wuran"]
   },
   {
     "id": "huike",
@@ -4373,6 +4373,40 @@ export const ZEN_PERSONS: PersonItem[] = [
       "shiertimenlun",
       "zhonglun",
       "jingangjing"
+    ]
+  },
+  {
+    "id": "yuanxiao",
+    "name": "元晓",
+    "title": "新罗华严宗与海东大乘开山 / 和诤国师",
+    "era": "新罗 (617-686)",
+    "lifeStory": "元晓，俗姓薛，新罗押梁（今韩国庆尚北道庆山）人。少负大志，出家广学经论。曾与义湘法师入唐求法，夜宿古冢，暗中捧水痛饮，甘如琼浆；天明见是髑髅遗水，顿生呕秽，由是豁然大悟：“心生则种种法生，心灭则种种法灭！三界唯心，万法唯识，岂别有法而求之于外？！”遂返新罗，不复西行。元晓行迹旷达，不拘戒律，提破瓢歌舞化俗，号“小姓居士”。精通大乘三藏，著《金刚三昧经论》《大乘起信论疏》《华严经疏》等，立“和诤”之学，融通空有，被尊为海东佛教第一集大成者，高丽肃宗追谥为“和诤国师”。",
+    "teachings": "元晓大师之学，以“一心法界”与“和诤融通”为宗骨。其注《金刚三昧经》，阐明本觉与始觉不二、一味真实即金刚实际；指出一切争论执见皆起于偏执一曲，若归于本心一味真源，则百家异说融通无碍。其行持随缘利化，不舍世间而恒住寂灭，与禅宗纵横无碍之本地风光冥契无差。",
+    "quotes": [
+      "心生则种种法生，心灭则种种法灭。 —元晓夜饮髑髅水悟道语",
+      "三界唯心，万法唯识。心外无法，胡用别求？ —元晓开悟铭",
+      "一味之道，总摄万法；融通百家，归于一心。 —《金刚三昧经论》"
+    ],
+    "classics": [
+      "金刚三昧经",
+      "大乘起信论",
+      "华严经"
+    ],
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "ben-jue-li-ci",
+      "weishi-yixin",
+      "tathagatagarbha"
+    ],
+    "relatedMethods": [
+      "jin-gang-san-mei-ding"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "dachengqixinlun"
     ]
   }
 ];
@@ -11869,6 +11903,62 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "tanjing",
       "xinjing"
     ]
+  },
+  {
+    "id": "yi-wei-zhen-shi",
+    "title": "一味真实",
+    "category": "大乘胜义",
+    "summary": "《金刚三昧经》根本宗要，指一乘法界平等无二之清净真如实相。佛陀说法虽有千差万别，其极则皆是一味真如；超越大小乘、权实法之对待分别，如天降一雨，平等普润一切草木众生本性。",
+    "etymology": "出自《金刚三昧经·序品第一》：‘为诸大众说大乘经，名一味真实无相无生决定实际本觉利行……一味之法润，普充于一切；犹彼一雨润，皆长菩提芽。’",
+    "quotes": [
+      "一味之法润，普充于一切；犹彼一雨润，皆长菩提芽。 —《金刚三昧经·序品》",
+      "无有诸杂味，犹如一雨润，众草皆悉荣，随其性各异。 —《金刚三昧经·序品》"
+    ],
+    "guidance": "行者当体会自心当下无生无灭之一味本色：无论面对世间得失荣辱，抑或修行中心识之浮沉，体性从本以来无二无别。直下安住一味平怀，狂心息处即是真实道场。",
+    "classicRef": "《金刚三昧经》《法华经》《圆觉经》",
+    "relatedConcepts": [
+      "ben-jue-li-ci",
+      "self-nature",
+      "non-duality",
+      "tathagatagarbha"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "tanjing",
+      "lengqiejing"
+    ]
+  },
+  {
+    "id": "ben-jue-li-ci",
+    "title": "本觉利刺",
+    "category": "如来藏心性",
+    "summary": "指众生本自具足、坚固不动之根本觉性。‘利刺’喻此本觉智慧如神芒利刃，能敏锐穿透一切无明客尘与情识妄想；妄念虽起，本觉不迁，六识情染当下即归一心如来藏海。",
+    "etymology": "出自《金刚三昧经·本觉利品第四》：‘本觉者，众生真性，无始本有，不生不灭，犹如虚空……以本觉智利刺，照破妄想客尘，六识清净，即归一心。’",
+    "quotes": [
+      "本觉者，众生真性，无始本有，不生不灭，犹如虚空。 —《金刚三昧经·本觉利品》",
+      "以本觉智利刺，照破妄想客尘，六识清净，即归一心。 —《金刚三昧经·本觉利品》"
+    ],
+    "guidance": "行者切莫向心外求悟，烦恼生起时，不必费力压制排遣，只需以自性本觉利刺如实一照，妄念如汤沃雪，当下消融。深信本觉天真自足，即是禅宗最上乘之见地。",
+    "classicRef": "《金刚三昧经》《大乘起信论》《华严经》",
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "buddha-nature",
+      "self-nature",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "dachengqixinlun",
+      "tanjing"
+    ]
   }
 ];
 
@@ -14010,6 +14100,37 @@ export const ZEN_METHODS: MethodItem[] = [
       "shiertimenlun",
       "zhonglun",
       "jingangjing"
+    ]
+  },
+  {
+    "id": "jin-gang-san-mei-ding",
+    "title": "金刚三昧实相定",
+    "summary": "依《金刚三昧经》所开显之自性实相大定与真实观忏悔法门。行者深信自心本具金刚法身，收摄六识入真实观；于顺逆境缘中不失本心，若失本心即以实相观照当下消融万劫罪障，入大清凉解脱。",
+    "origin": "源自《金刚三昧经·序品》及《总持品第八》。经云佛说大法毕即入金刚三昧，身心不动；又示‘依此经教入真实观，一入观时诸罪悉灭，犹如暗室遇明灯’。",
+    "steps": [
+      "凝住壁观：舍除外缘杂念，深信众生与佛同具一味真性，凝神观照自心不动；",
+      "照破三相：观一切妄相皆如梦幻，不执着于空，亦不滞于有，心无取舍挂碍；",
+      "起四行入：在日用迎宾对境中，恪守报冤、随缘、无求、称法四行，事理圆融；",
+      "真实忏罪：若失本心生起染着，立即回光返照真如实相，了知罪性本空，心光独朗。"
+    ],
+    "pitfalls": [
+      "误认死寂无知为金刚三昧，枯坐顽空丧失日用灵明大机大用；",
+      "借口‘罪性本空’而放纵身心、胡作非为，堕入拨无因果之恶取空深坑。"
+    ],
+    "classicRef": "《金刚三昧经》《菩提达摩大师入道四行观》《六祖坛经》",
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "ben-jue-li-ci",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "sixingguan",
+      "lengqiejing"
     ]
   }
 ];
@@ -25923,6 +26044,29 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "shiertimenlun",
       "zhonglun"
+    ]
+  },
+  {
+    "id": "koan-660",
+    "question": "既是一味真实、本觉不动，为甚么二祖在雪中立断左臂、求安心竟？",
+    "answer": "莫将髑髅水，错作断魂汤！若不雪深三尺断臂求心，争知觅心了不可得？！",
+    "context": "二祖慧可少林断臂求法，达摩大师授以安心法门：‘将心来，与汝安。’慧可良久曰：‘觅心了不可得。’达摩曰：‘我与汝安心竟。’有学僧览《金刚三昧经·无生行品》，见达摩理入即本经金刚本旨，遂请问师家二祖何必雪中断臂。",
+    "interpretation": "学僧死于教下，以为既然本觉现成，何须苦修求觅。禅师以‘争知觅心了不可得’当头棒喝：正是因为二祖精诚到了极处、向内竭力推求，方能在碰壁绝路处亲见自心虚空、彻底断除情识！经教之一味真实，须经行者真参实悟、死尽偷心，方能全体显现；若作口头知解，反成生死鸩毒！",
+    "master": "菩提达摩 / 慧可大士",
+    "source": "《金刚三昧经·无生行品》《景德传灯录》卷三",
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "ben-jue-li-ci",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "sixingguan",
+      "tanjing"
     ]
   }
 ];
@@ -48921,6 +49065,27 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedBooks": [
       "shiertimenlun",
       "zhonglun"
+    ]
+  },
+  {
+    "id": "faq-2810",
+    "question": "《金刚三昧经》中的‘理入与行入’，与达摩祖师传世的《入道四行观》有何直接源流关系？",
+    "answer": "《金刚三昧经·无生行品第三》所载‘入道多途，要而言之，不出二种：一者理入，二者行入’，在思想内涵、修持次第乃至关键语句上，与达摩祖师传法二祖慧可的《入道四行观》完全契合！理入强调‘深信众生与佛同一真性，舍妄归真，凝住定观，凡圣等一’，即达摩面壁少林之壁观安心宗骨；行入则开示报冤行、随缘行、无所求行、称法行，为理入在日用现实中的具体消磨磨砺之道。由此证明，《金刚三昧经》乃中国早期禅宗极为核心的根本圣典源头。",
+    "relatedQa": "faq-2811",
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "sixingguan",
+      "lengqiejing"
+    ]
+  },
+  {
+    "id": "faq-2811",
+    "question": "现代生活中犯了过失或内心负疚焦虑，如何依照《金刚三昧经》的‘无生实相忏’获得彻底清凉？",
+    "answer": "世间常规的自责悔恨往往让人深陷过去的罪相影事中，如滚雪球般徒增心理内耗与负罪阴影。依《金刚三昧经·总持品》，如来指出‘犹如暗室，若遇明灯，暗即灭矣；无说悔先所有诸罪，而以为说入于过去’。罪业本无自性实体，纯由无明颠倒一念妄动而生。在产生内疚时，学人当立即回光返照自性本觉光明：在当下一念觉照朗然现前时，万千阴暗自相瓦解！由此‘从理而入、以事为行’，在现前工作中积极负责、利他奉献，即是真正圆满的大乘清凉实相忏悔。",
+    "relatedQa": "faq-2810",
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "tanjing"
     ]
   }
 ];

@@ -1264,4 +1264,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '离三时生', pinyin: 'lí sān shí shēng', meaning: '中观核心辩证，照破前时生、后时生、同时生等一切时间相生妄执，明自性离时空' },
     { char: '毕竟空寂', pinyin: 'bì jìng kōng jì', meaning: '万法无生无灭、无去无来之法性实相，非断灭虚无，乃心境双泯、本来寂灭之大般涅槃' },
   ],
+  'jingangsanmeijing': [
+    { char: '金刚三昧', pinyin: 'jīn gāng sān mèi', meaning: '大乘无上实相定，坚固不坏，能摧破一切微细客尘无明惑障，而本体寂然不动' },
+    { char: '一味真实', pinyin: 'yī wèi zhēn shí', meaning: '佛说一乘纯净解脱至理，超越大小权实之分，犹如一雨普润法界一切众生自性' },
+    { char: '理入行入', pinyin: 'lǐ rù xíng rù', meaning: '达摩少林禅法之圣源，理入深信自性本净、壁观凝住；行入于报冤随缘等境界中历练' },
+    { char: '本觉利刺', pinyin: 'běn jué lì cì', meaning: '众生本具灵明觉性，敏锐无碍如吹毛利刃，能直下刺破烦恼客尘网，顿复一心清净' },
+    { char: '心王菩萨', pinyin: 'xīn wáng pú sà', meaning: '经中向佛请问“无生行”之大士，表征自心之王主宰万象、觉照自心即是觉照法界' },
+    { char: '无生实相忏', pinyin: 'wú shēng shí xiāng chàn', meaning: '禅宗最高忏悔法门，观罪性本空、如暗室遇明灯顿灭，不滞过去虚妄罪相，直证心源' },
+  ],
 };
