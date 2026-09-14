@@ -1248,4 +1248,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '截流一句', pinyin: 'jié liú yī jù', meaning: '宗师接引学人截断妄念葛藤、言语道断之向上机锋转语' },
     { char: '不昧因果', pinyin: 'bù mèi yīn guǒ', meaning: '源自百丈野狐公案，指觉悟之人如实了达因果昭昭，不为业障所蒙昧而体露真常' },
   ],
+  'baoxingwangzhenglun': [
+    { char: '宝行王正论', pinyin: 'bǎo xíng wáng zhèng lùn', meaning: '梵名 Ratnāvalī，龙树菩萨晚年大乘宝典，融通中观深密空义与菩萨行政治哲学' },
+    { char: '增上生', pinyin: 'zēng shàng shēng', meaning: '依信根修持十善道所感召之人天尊贵、健康长寿、衣食丰足等现前安乐善报' },
+    { char: '决定胜', pinyin: 'jué dìng shèng', meaning: '依般若实相智彻底断灭无明惑业、超越生死轮回所证得之究竟大涅槃佛果' },
+    { char: '信智二根', pinyin: 'xìn zhì èr gēn', meaning: '成办安乐与解脱之两大根本，信能持法为入道先导，智能了达实相为解脱极则' },
+    { char: '乐行王', pinyin: 'lè xíng wáng', meaning: '梵名 Sātavāhana，古南印度案达罗国名王，笃信三宝，龙树菩萨应其请问特撰此论' },
+    { char: '正教王', pinyin: 'zhèng jiào wáng', meaning: '大乘政治哲学之理想国君，以仁慈抚育万民如赤子、轻刑恤狱、大兴慈济之法王' },
+  ],
 };

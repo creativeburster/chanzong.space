@@ -135,6 +135,7 @@ MAP = {
   'zongmenshenan': [('yunmen', '云门祖刹'), ('linji', '纲宗辨正'), ('biyanlu', '活句真机'), ('wumenguan', '机锋透关')],
   'shengmanjing': [('lengqiejing', '如来藏姊妹'), ('lengyanjing', '法身实相'), ('tanjing', '自性清净'), ('baoxinglun', '一乘宝性')],
   'chaozongyulu': [('linji', '黄龙承临济'), ('wumenguan', '机锋透关'), ('biyanlu', '颂古击节'), ('xutangyulu', '宗门同气')],
+  'baoxingwangzhenglun': [('zhonglun', '中观同宗'), ('dachengqixinlun', '真谛译典'), ('baoxinglun', '菩提行门'), ('jingangjing', '般若空性')],
 }
 
 def main():

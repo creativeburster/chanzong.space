@@ -1328,13 +1328,16 @@ export const ZEN_PERSONS: PersonItem[] = [
       "不生亦不灭，不常亦不断，不一亦不异，不来亦不出。 —《中论》八不中道"
 ],
     "classics": [
+    "宝行王正论",
       "中论",
       "大智度论"
 ],
     "relatedConcepts": ["emptiness","prajna","non-duality"],
     "relatedMethods": [],
-    "relatedPersons": ["kumarajiva","seng-zhao"],
-    "relatedBooks": ["zhonglun"]
+    "relatedPersons": [
+    "paramartha","kumarajiva","seng-zhao"],
+    "relatedBooks": [
+    "baoxingwangzhenglun","zhonglun"]
   },
   {
     "id": "longtan-chongxin",
@@ -4299,6 +4302,40 @@ export const ZEN_PERSONS: PersonItem[] = [
       "chaozongyulu",
       "linji",
       "wumenguan"
+    ]
+  }
+,
+  {
+    "id": "paramartha",
+    "name": "真谛",
+    "title": "陈天竺三藏法师 / 中国佛教四大译经家之一",
+    "era": "南北朝·陈代 (499-569)",
+    "lifeStory": "梵名 Paramārtha，西印度优禅尼国人。精研大小乘经论与唯识实相之学。梁武帝大同十二年迎至南京，后值侯景之乱，辗转流离于富春、岭南等地，于兵戈扰攘中始终译经讲学不辍。译出《大乘起信论》、《宝行王正论》、《摄大乘论》、《俱舍论释》等百余卷，与鸠摩罗什、玄奘、不空并称中国佛教四大翻译家。对中土禅宗心性论与摄论宗之发展起承先启后之巨功。",
+    "teachings": "真谛三藏之学，融通唯识阿赖耶识与如来藏自性清净心。阐发‘如来藏即真如’、‘转染成净’之不二奥义，提倡因信持法、由智达空，解行并重，定慧双修。",
+    "quotes": [
+      "心性本净，客尘所染。",
+      "因信能持法，由智如实了。"
+    ],
+    "classics": [
+      "宝行王正论",
+      "大乘起信论"
+    ],
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "zeng-shang-sheng-yu-jue-ding-sheng",
+      "xin-zhi-er-gen",
+      "self-nature"
+    ],
+    "relatedMethods": [
+      "xin-zhi-shuang-xiu"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "dachengqixinlun"
     ]
   }
 ];
@@ -11682,6 +11719,61 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "biyanlu"
     ]
   }
+,
+  {
+    "id": "zeng-shang-sheng-yu-jue-ding-sheng",
+    "title": "增上生与决定胜",
+    "category": "见地",
+    "summary": "龙树菩萨《宝行王正论》所建立之大乘佛法修学次第体系。增上生指依深信行十善十善戒所获得之人天善道安乐果报（安乐因）；决定胜指依甚深中观般若断尽见思无明惑障所证得之究竟解脱与无上佛果（解脱因）。二者相辅相成，由增上生渐次稳步迈向决定胜。",
+    "etymology": "源自《宝行王正论·安乐解脱品第一》：‘先说乐因法，后辩解脱法；众生前安乐，次后得解脱。’为大乘显密经论所共许之根本道次第框架。",
+    "quotes": [
+      "善道具名乐，解脱谓惑尽；略说此二因，唯信智二根。",
+      "先说乐因法，后辩解脱法；众生前安乐，次后得解脱。"
+    ],
+    "guidance": "修行学佛不可躐等好高骛远：既不能执著人天福报而忘失究竟了脱生死之大志，亦切忌空谈胜义无生而废弃世间道德因果。必须以信持十善培植福德资粮，以智断诸惑契入自性寂灭。",
+    "classicRef": "《宝行王正论》、《菩提道次第广论》",
+    "relatedConcepts": [
+      "xin-zhi-er-gen",
+      "zhongguan",
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "zhonglun"
+    ]
+  },
+  {
+    "id": "xin-zhi-er-gen",
+    "title": "信智二根",
+    "category": "修持",
+    "summary": "大乘行者入道修证之两大核心根本支柱。‘因信能持法’，以纯正信心为入道之先导，能止恶修善、坚固道心；‘由智如实了’，以甚深般若实相智照见万法无自性，断尽一切惑业执见为究竟成佛之极则。",
+    "etymology": "源自《宝行王正论·安乐解脱品第一》：‘因信能持法，由智如实了；二中智最胜，先藉信发行。’",
+    "quotes": [
+      "因信能持法，由智如实了；二中智最胜，先藉信发行。",
+      "由痴贪瞋怖，而能不坏法，当知是有信，吉祥乐名器。"
+    ],
+    "guidance": "信无智则长愚痴，智无信则成狂慧。学禅者当信自家本来是佛、信因果丝毫不爽，并在日用参究中发起真实般若大智，扫荡情识妄见，方能信智圆融、直登彼岸。",
+    "classicRef": "《宝行王正论》、《华严经》",
+    "relatedConcepts": [
+      "zeng-shang-sheng-yu-jue-ding-sheng",
+      "prajna",
+      "zhongguan",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "xinxinming"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -13759,6 +13851,36 @@ export const ZEN_METHODS: MethodItem[] = [
     ],
     "relatedBooks": [
       "chaozongyulu"
+    ]
+  }
+,
+  {
+    "id": "xin-zhi-shuang-xiu",
+    "title": "信智双修法门",
+    "summary": "依龙树菩萨《宝行王正论》所立之悲智双运实修法门。以信根摄受十善净行、广积人天善乐资粮，以智根如实观照万法缘起性空、离二边分别，圆满菩提大愿。",
+    "origin": "源于龙树菩萨《宝行王正论·安乐解脱品》，融通世俗谛之十善因果与胜义谛之中观无生。",
+    "steps": [
+      "第一步·以信立基：依信根受持十善戒法，克制身口意杀盗淫妄与贪嗔痴恶业，培植安乐福德。",
+      "第二步·以智达空：依般若智深观色身不净与五蕴无我，了达非有亦非无，不住二边分别。",
+      "第三步·悲智圆融：在世间行菩萨行，慈济孤弱，护持正法，心不住相，导归无上解脱。"
+    ],
+    "pitfalls": [
+      "有信无智：仅求人天福报与感应，不求明心见性，难免轮回退转。",
+      "狂慧废戒：执理废事，以为一切皆空而轻忽因果十善，自招恶果。"
+    ],
+    "classicRef": "《宝行王正论》",
+    "relatedConcepts": [
+      "xin-zhi-er-gen",
+      "zeng-shang-sheng-yu-jue-ding-sheng",
+      "zhongguan"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "zhonglun"
     ]
   }
 ];
@@ -25627,6 +25749,29 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "chaozongyulu",
       "linji"
+    ]
+  }
+,
+  {
+    "id": "koan-658",
+    "question": "不见有与无，是真见实相；既离有无两边，行者当向何处安足？",
+    "answer": "踏翻沙漠阳焰水，两脚踏破太虚空！一步不移到家舍。",
+    "context": "龙树菩萨于《宝行王正论》开示乐行大王云：‘不见有与无，是真见实相；非有亦非无，不住二边际。’宗门借此勘验学者是否堕在枯木死灰之顽空境界。",
+    "interpretation": "凡夫落有，二乘执无。龙树菩萨以阳焰为喻，直指有无两边皆是情识计执之边见。真如法界非有非无、即有即无；若向句下求安足处，早已白云万里；直下承当，大地山河全露真体。",
+    "master": "龙树菩萨",
+    "source": "《宝行王正论》",
+    "relatedConcepts": [
+      "zhongguan",
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "zhonglun"
     ]
   }
 ];
@@ -48585,6 +48730,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-657",
     "relatedBooks": [
       "chaozongyulu"
+    ]
+  }
+,
+  {
+    "id": "faq-2806",
+    "question": "为何龙树菩萨在《宝行王正论》中强调‘二中智最胜，先藉信发行’？",
+    "answer": "智慧虽是斩断生死无明的究竟根本，但若无深厚纯正的信心，学者极易将智慧误作为逻辑思辨的游戏（口头禅、狂慧），或遇逆境即生退屈。信能立根培德，智能融通解脱；信如足能行路，智如目能视导，二者相济，方能直趣菩提。",
+    "relatedQa": "koan-658",
+    "relatedBooks": [
+      "baoxingwangzhenglun"
+    ]
+  },
+  {
+    "id": "faq-2807",
+    "question": "现代职场与管理中，如何借鉴《宝行王正论·正教王品》中的大乘菩萨道管理智慧？",
+    "answer": "《正教王品》提出‘视民如赤子、无生嗔恨心、但令灭过恶、恤苦济贫’，是极高明的人本管理哲学。现代领导者面对团队过失，不以私怨报复或情绪化斥责，而应以‘助其灭过迁善’为出发点；积极营造关怀支持的组织环境，赋能员工成长，这正是将佛法仁恕智慧落实在世间事务中的大乘活法。",
+    "relatedQa": "koan-658",
+    "relatedBooks": [
+      "baoxingwangzhenglun"
     ]
   }
 ];
