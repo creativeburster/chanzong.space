@@ -4187,6 +4187,40 @@ export const ZEN_PERSONS: PersonItem[] = [
       "xutangyulu"
     ]
   }
+,
+  {
+    "id": "mailang-huai",
+    "name": "麦浪怀",
+    "title": "越州云门麦浪怀禅师 · 明代临济宗匠",
+    "era": "明代",
+    "lifeStory": "明代临济宗高僧，住越州云门道场。禅师宗风高峻，痛棒痛喝，致力于破除晚明学人以语言知解会禅、死在句下的流弊。作《宗门设难》，以临济、云门纲宗发四十三难，直逼学人透脱窠臼，截断情解葛藤，深得禅林推崇。",
+    "teachings": "宗门参禅须参活句，莫参死句。若在古人公案语言上下注脚、作死义会，不仅瞒杀自己，亦瞎后人慧眼。单提向上，绝断解路，乃见祖师骨髓。",
+    "quotes": [
+      "云门麦道人设难，专为盲龟瞎鳖钻破纸窗。",
+      "参须活句，莫参死句。活句下荐得，永劫不忘；死句下荐得，自救不了。"
+    ],
+    "classics": [
+      "云门麦浪怀禅师宗门设难"
+    ],
+    "relatedConcepts": [
+      "huoju-siju",
+      "bingding-tongzi-qiu-huo",
+      "zongmen-shenan",
+      "yunmen-sanju",
+      "linji-zongfeng"
+    ],
+    "relatedMethods": [
+      "canhuoju",
+      "sishisan-nan-kanbian"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "linji"
+    ],
+    "relatedBooks": [
+      "zongmenshenan"
+    ]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -7638,8 +7672,10 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "参活句如蚊子上铁牛，下嘴不得处弃命一攒。非理解，乃逼拶至思量不及处蓦然透脱。参死句则落于理路语路，纵有体会亦自救不了。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅家龟鉴》",
     "relatedConcepts": ["kanhua-chan-concept","yiqing","huatou-shibing"],
-    "relatedPersons": ["tuiyin","dahui-zonggao"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedPersons": [
+    "mailang-huai","tuiyin","dahui-zonggao"],
+    "relatedBooks": [
+    "zongmenshenan","chanjia_guijian"]
   },
   {
     "id": "huatou-shibing",
@@ -11394,6 +11430,61 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "tanjing"
     ]
   }
+,
+  {
+    "id": "bingding-tongzi-qiu-huo",
+    "title": "丙丁童子来求火",
+    "category": "机锋公案",
+    "summary": "禅门著名机锋公案。丙丁在五行天干中属火，‘丙丁童子来求火’即自身本是火反到处乞火，借以直指学人自心本具真如佛性，却偏向心外求法、认奴作郎。",
+    "etymology": "源自天王道悟与玄沙师备答僧公案，明代麦浪怀禅师于《宗门设难》中首发此难，勘验学者是死在言下还是契入活机。",
+    "quotes": [
+      "丙丁童子来求火，正是骑驴觅驴汉。",
+      "道是火，又却求火；道非火，丙丁即是。"
+    ],
+    "guidance": "参此话头须当下反照自心：一切向外寻求玄妙理路，皆是丙丁求火。若能当下狂心歇歇，体认本命元辰，不假外求，即得大受用。",
+    "classicRef": "《云门麦浪怀禅师宗门设难》、《景德传灯录》",
+    "relatedConcepts": [
+      "huoju-siju",
+      "ben-lai-mian-mu",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "xuansha-shibei",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "jingdechuandenglu"
+    ]
+  },
+  {
+    "id": "zongmen-shenan",
+    "title": "宗门设难",
+    "category": "宗风机用",
+    "summary": "明代麦浪怀禅师整肃禅林知解葛藤之绝特施设。以宗门根本纲宗与祖师向上公案，特出四十三道极难，逼拶学人至意路不及、言语道断处，以此斩断死句知解，全提向上真机。",
+    "etymology": "越州云门道场麦道人怀禅师所撰《宗门设难》，其自叙‘发四十三难，欲拔学人葛藤深坑’。",
+    "quotes": [
+      "云门麦道人设难，专为盲龟瞎鳖钻破纸窗。",
+      "一难难倒千圣，两头坐断始见通途。"
+    ],
+    "guidance": "修行切忌将祖师机锋当作学问研究。面对层层设难与难透公案，切不可猜度推理，当向无滋味处死心咬定，待机缘成熟，桶底自然脱落。",
+    "classicRef": "《云门麦浪怀禅师宗门设难》",
+    "relatedConcepts": [
+      "huoju-siju",
+      "jifeng",
+      "koan",
+      "gewai-xuanji"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "yunmen",
+      "linji"
+    ],
+    "relatedBooks": [
+      "zongmenshenan"
+    ]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -12380,8 +12471,10 @@ export const ZEN_METHODS: MethodItem[] = [
 ],
     "classicRef": "碧岩录 / 大慧宗杲语录",
     "relatedConcepts": ["huoju-siju","kanhua-chan-concept","yiqing","huatou-shibing"],
-    "relatedPersons": ["tuiyin","dahui-zonggao"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedPersons": [
+    "mailang-huai","tuiyin","dahui-zonggao"],
+    "relatedBooks": [
+    "zongmenshenan","chanjia_guijian"]
   },
   {
     "id": "jueguan-wangshou",
@@ -13379,6 +13472,38 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": [
       "fangshanwenbaoyulu",
       "wumenguan"
+    ]
+  }
+,
+  {
+    "id": "sishisan-nan-kanbian",
+    "title": "四十三难勘辨法",
+    "summary": "麦浪怀禅师所立宗门勘辨绝技。以四十三道不容拟议的禅关设难，直逼学人放下思维卜度，于言语道断处亲见本来面目。",
+    "origin": "源于明代越州云门麦浪怀禅师《宗门设难》，针对当时浮躁剿袭、以文字义学谈禅之流弊而特设。",
+    "steps": [
+      "一·截断知解：面对设难公案，一概不许依文解字、不许以古德注脚作答。",
+      "二·逼入绝境：将心意识逼至进退维谷、如含生铁橛的无理路境地，令虚妄心行彻底停顿。",
+      "三·向上一窍：在大疑顿发、身心两忘之际，蓦然触机突破，见本来活泼泼的向上玄关。"
+    ],
+    "pitfalls": [
+      "强作解人：以世俗逻辑或佛学辞藻穿凿附会，反增知见所知障。",
+      "畏难退屈：遇到难关便起退心，不能耐得寂寞坚持参究。"
+    ],
+    "classicRef": "《云门麦浪怀禅师宗门设难》",
+    "relatedConcepts": [
+      "huoju-siju",
+      "zongmen-shenan",
+      "yiqing-canjiu",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "dahui-zonggao",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "biyanlu"
     ]
   }
 ];
@@ -25179,6 +25304,28 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "fangshanwenbaoyulu"
+    ]
+  }
+,
+  {
+    "id": "koan-655",
+    "question": "丙丁童子来求火，此是死句还是活句？云门麦浪怀禅师因何设此四十三难？",
+    "answer": "若道是死句，玄沙何以答僧？若道是活句，丙丁何故求火？两头坐断，始见真机。",
+    "context": "明代越州云门道场麦浪怀禅师见晚明学者多在古人葛藤语脉里寻生活，全无真实受用，遂取宗门根本纲宗与机锋法语特设四十三难，勘验死活，截断葛藤知解。",
+    "interpretation": "麦浪怀禅师之难，非为难人，乃为活人。将学人逼至进退两难、言语道断、意根泯绝之处，方肯彻底放下意根卜度，于绝处逢生，领受祖师活泼泼的向上玄机。",
+    "master": "麦浪怀",
+    "source": "《云门麦浪怀禅师宗门设难》",
+    "relatedConcepts": [
+      "huoju-siju",
+      "bingding-tongzi-qiu-huo",
+      "koan"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "zongmenshenan"
     ]
   }
 ];
@@ -48080,6 +48227,25 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-654",
     "relatedBooks": [
       "fangshanwenbaoyulu"
+    ]
+  }
+,
+  {
+    "id": "faq-2800",
+    "question": "为何麦浪怀禅师在《宗门设难》中反复强调参禅必须‘参活句，莫参死句’？",
+    "answer": "死句是落在意识分别、名相情解与文字考据里的葛藤，即便答得巧妙，依旧生死不了；活句则是直截断绝思路、截断意识妄流的机用。学人若在活句下荐得，立地超凡入圣。麦浪怀禅师设四十三难，正是为了击碎知解窠臼。",
+    "relatedQa": "koan-655",
+    "relatedBooks": [
+      "zongmenshenan"
+    ]
+  },
+  {
+    "id": "faq-2801",
+    "question": "普通人在日常生活中面对纷扰困惑，如何借《宗门设难》的智慧破除心理内耗？",
+    "answer": "生活中的焦虑和内耗，本质上都是掉入了逻辑推演与得失计较的‘死句’中。当我们像麦浪怀禅师那样‘设难’自勘——‘念念攀援者究竟是谁？’当下截断妄念葛藤，反观自性清净的当下机用，不被境转，便能从思维反刍的死水中解脱出来，生机盎然。",
+    "relatedQa": "koan-655",
+    "relatedBooks": [
+      "zongmenshenan"
     ]
   }
 ];

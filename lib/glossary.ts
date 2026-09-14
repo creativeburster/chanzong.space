@@ -1223,4 +1223,12 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '鳖鼻蛇', pinyin: 'biē bí shé', meaning: '源自雪峰南山公案，喻自性杀活自在之大用，凡情圣解触着即丧' },
     { char: '世谛明取', pinyin: 'shì dì míng qǔ', meaning: '文宝禅师核心旨趣，真如实相不离日用世法，当向世谛纷纭中彻悟' },
   ],
+  'zongmenshenan': [
+    { char: '麦浪怀', pinyin: 'mài làng huái', meaning: '明代云门寺名宿，自号麦道人，著《宗门设难》以解万世宗门疑谤' },
+    { char: '设难', pinyin: 'shè nàn', meaning: '宗门辨问体裁，以极尖锐之反诘发问，以深究向上心印与修持真机' },
+    { char: '死句活句', pinyin: 'sǐ jù huó jù', meaning: '落言诠思量为死句，不落情识拟议为活句，用处在人不在句' },
+    { char: '丙丁童子', pinyin: 'bǐng dīng tóng zǐ', meaning: '丙丁五行属火，九峰公案借丙丁童子求火喻自性本具切莫外求' },
+    { char: '冰轮', pinyin: 'bīng lún', meaning: '喻指圆满皎洁之清净自性心月，有目者不待指标即可亲见' },
+    { char: '抽钉拔楔', pinyin: 'chōu dīng bá xiē', meaning: '宗师接引学人之大机大用，旨在为学人拔除知见妄执之钉楔' },
+  ],
 };
