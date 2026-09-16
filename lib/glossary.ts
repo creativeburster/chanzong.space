@@ -1304,4 +1304,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '簇簇', pinyin: 'cù cù', meaning: '丛集拥聚之貌。僧问“簇簇上来师意如何”，禅师答“是眼不是眼”，指破随相分别之妄' },
     { char: '六相圆融', pinyin: 'liù xiàng yuán róng', meaning: '华严宗总别、同异、成坏六相之旨，法眼文益禅师将其化为禅门活泼机锋，极显理事无碍' },
   ],
+  'yangshanyulu': [
+    { char: '耽源应真', pinyin: 'dān yuán yīng zhēn', meaning: '南阳慧忠国师门下高足，住袁州耽源山，受传六代祖师九十七种圆相，后付与仰山慧寂' },
+    { char: '九十七圆相', pinyin: 'jiǔ shí qī yuán xiāng', meaning: '沩仰宗独门心印，以○圆相、日相、月相、体相、用相表法，超越言句思维、借相显体' },
+    { char: '劬劳', pinyin: 'qú láo', meaning: '劳苦疲瘁，特指父母抚育子女之辛劳。仰山断手二指誓求正法，以答父母劬劳之恩' },
+    { char: '畬田', pinyin: 'shē tián', meaning: '焚草开荒、耕作播种之山地。仰山一夏“鉏得一片畬，下得一箩种”，成沩仰农禅千古美谈' },
+    { char: '直岁', pinyin: 'zhí suì', meaning: '丛林两序执事之一，掌管寺院田产山林、农耕作务之职。仰山在沩山时亲任直岁' },
+    { char: '鹞子过新罗', pinyin: 'yào zi guò xīn luó', meaning: '宗门著名机锋隐语，鹞鹰疾飞一掠千里已过新罗（朝鲜），喻机锋迅疾不可拟议、早迟千里' },
+    { char: '韩卢逐块', pinyin: 'hán lú zhú kuài', meaning: '韩卢为古代韩国名犬，指蠢狗追逐扔出的泥块石子，喻学者执着佛法语言文字外境，不知回光返照' },
+    { char: '脱却娘生裤', pinyin: 'tuō què niáng shēng kù', meaning: '娘生裤指父母所生之肉身生死与无始业系烦恼，仰山临终示寂名偈，喻彻底粉碎生死系缚、赤裸解脱' },
+    { char: '踢天泰', pinyin: 'tī tiān tài', meaning: '仰山同修泰上座，性格高傲敏锐号称“踢天泰”，问百亿师子公案，被仰山一句“师子腰折也”勘破' },
+    { char: '小释迦', pinyin: 'xiǎo shì jiā', meaning: '诸方禅林对仰山慧寂禅师之尊称，因其机辩智慧横溢、智鉴神明无双，犹如释迦如来再世' },
+  ],
 };

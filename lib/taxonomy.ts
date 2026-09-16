@@ -809,16 +809,21 @@ export const ZEN_PERSONS: PersonItem[] = [
     "lifeStory": "慧寂禅师，韶州浈昌（今广东南雄）人，俗姓叶。十七岁出家，后参沩山灵祐，于沩山座下开悟。师问沩山：“如何是真佛？”沩山曰：“即心是佛，无心非佛。”师于言下契悟。后住袁州仰山（今江西宜春），大弘沩山之旨，与师共称“沩仰宗”。师善用圆相接人——画一圆相，于中书“佛”字或“牛”字，令学人于相中悟超相之旨。",
     "teachings": "仰山以“圆相”为宗门施设：画圆相以示心体圆满，于中书字以显万法不离一心。所谓“以相示心，以心超相”，与沩山“理事圆融”之旨一脉相承。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
     "quotes": [
+      "以思无思之妙，返思灵焰之无穷，思尽还源，性相常住，事理不二，真佛如如。 —《袁州仰山慧寂禅师语录》",
+      "慧寂一览已知其意，但用得，不可执本也。 —《袁州仰山慧寂禅师语录》",
+      "汝等诸人各自回光返照，莫记吾言！ —《袁州仰山慧寂禅师语录》",
+      "师子咬人，韩卢逐块！ —《袁州仰山慧寂禅师语录》",
       "即心是佛，无心非佛。",
       "汝等诸人，各各回光返照，莫向外求。"
 ],
     "classics": [
+      "袁州仰山慧寂禅师语录",
       "仰山语录"
 ],
-    "relatedConcepts": ["mind-is-buddha","non-duality"],
-    "relatedMethods": [],
+    "relatedConcepts": ["yuanxiang", "sijin-huanyuan", "nongchan-bingzhong", "shizi-yaoren", "mind-is-buddha","non-duality"],
+    "relatedMethods": ["yuanxiang-guan", ],
     "relatedPersons": ["weishan-lingyou"],
-    "relatedBooks": ["baizhang","yuanjuejing","chanlinbaoxun","yunmen","wumenguan","huanwuxinyao","huanwuyulu"]
+    "relatedBooks": ["yangshanyulu", "baizhang","yuanjuejing","chanlinbaoxun","yunmen","wumenguan","huanwuxinyao","huanwuyulu"]
   },
   {
     "id": "caoshan-benji",
@@ -10800,7 +10805,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "人天眼目",
     "relatedConcepts": ["wujia-gangzong","san-zhong-sheng"],
     "relatedPersons": ["yangshan-huiji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedBooks": ["yangshanyulu", "renyantianmu"]
   },
   {
     "id": "huayan-liuxiang",
@@ -12155,6 +12160,56 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["yiqie-xiancheng", "zhengfayanzang", "tanjing"],
     "relatedPersons": ["fayan-wenyi", "tiantai-deshao", "huineng"],
     "relatedBooks": ["wenyiyulu", "tanjing", "weixinjue"]
+  }
+,
+  {
+    "id": "sijin-huanyuan",
+    "title": "思尽还源",
+    "category": "心性本质",
+    "summary": "沩山接引仰山之无上心印法语。指运用无分别智反观自心灵焰，当一切情识分别思量彻底穷尽之时，自性复归本源真如，性相常住，事理不二。",
+    "etymology": "源自仰山慧寂问沩山灵祐“如何是真佛住处”，沩山答“以思无思之妙，返思灵焰之无穷，思尽还源，性相常住，事理不二，真佛如如”，仰山言下大悟。",
+    "quotes": [
+      "以思无思之妙，返思灵焰之无穷，思尽还源，性相常住，事理不二，真佛如如。 —沩山灵祐示仰山慧寂",
+      "思尽情亡，真如独露。"
+    ],
+    "guidance": "学人切莫以意识思维去推敲真佛住处，当体会能知能觉处灵焰未尝稍熄。放下思量计较，待情识穷尽，自性法身如如现前。",
+    "classicRef": "《袁州仰山慧寂禅师语录》、《五灯会元》",
+    "relatedConcepts": ["yuanxiang", "zhengfayanzang", "self-nature", "bushi"],
+    "relatedPersons": ["weishan-lingyou", "yangshan-huiji"],
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "renyantianmu"]
+  },
+  {
+    "id": "nongchan-bingzhong",
+    "title": "农禅并重",
+    "category": "修证实践",
+    "summary": "沩仰宗乃至百丈以降禅门丛林立足之根本家风。强调日常劳作耕耘即是菩提行持，于开荒垦田、下种收获中见事理无碍与自性大用。",
+    "etymology": "源自百丈怀海“一日不作一日不食”清规，在沩山与仰山门下大放异彩。仰山一夏“鉏得一片畬，下得一箩种”，成沩仰农禅千古宗风。",
+    "quotes": [
+      "鉏得一片畬，下得一箩种。 —仰山慧寂",
+      "一日不作，一日不食。 —百丈怀海",
+      "日中一食，夜后一寝。 —沩山灵祐"
+    ],
+    "guidance": "修行切莫脱离现实劳作与生活事务。在职场与家务一举手一投足间，以平等心、无住心专注承当，事上磨砺正是心性成熟之无上道场。",
+    "classicRef": "《袁州仰山慧寂禅师语录》、《沩山大圆禅师语录》、《沩山警策》",
+    "relatedConcepts": ["yuanxiang", "chanshi-heyi", "daily-zen", "pingchangxin-shidao"],
+    "relatedPersons": ["weishan-lingyou", "yangshan-huiji", "baizhang"],
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "weishanjingce"]
+  },
+  {
+    "id": "shizi-yaoren",
+    "title": "师子咬人",
+    "category": "见地辨析",
+    "summary": "宗门截断学人逐境生解、随声逐色之至峻机锋譬喻。喻本色行者直取心性源底，如雄狮扑咬发箭之人；切莫如庸犬韩卢一般只会追逐抛掷的泥块石子。",
+    "etymology": "源自仰山慧寂禅师上堂开示名言：“若论佛法向上事，直须做咬人之师子，切莫学逐块之韩卢！”直指参禅须透脱语言假相。",
+    "quotes": [
+      "若论佛法向上事，直须做咬人之师子，切莫学逐块之韩卢！ —仰山慧寂",
+      "狮子咬人，绝思绝虑；韩卢逐块，失却家珍。"
+    ],
+    "guidance": "参禅最忌把古人公案、经教名相当成实法去死记穷研，那正是韩卢逐块。应当回光返照：是谁在听、是谁在读？直咬那个能知者，当下立地成佛。",
+    "classicRef": "《袁州仰山慧寂禅师语录》、《五灯会元》卷九",
+    "relatedConcepts": ["yuanxiang", "huiguang-fanzhao", "sijin-huanyuan"],
+    "relatedPersons": ["yangshan-huiji"],
+    "relatedBooks": ["yangshanyulu", "linji", "wumenguan"]
   }
 ];
 
@@ -14396,6 +14451,26 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["liuxiang-yuanrong", "yiqie-xiancheng", "lishi-wuai"],
     "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
     "relatedBooks": ["wenyiyulu", "renyantianmu", "weixinjue"]
+  }
+,
+  {
+    "id": "yuanxiang-guan",
+    "title": "圆相心体观照法门",
+    "summary": "沩仰宗独步宗门的心性借相观照法门。以南阳忠国师所传九十七种圆相（○）为方便，借图形文字显现自性圆满、离言绝相之理，直达体用一如。",
+    "origin": "南阳慧忠国师秘传六代祖师九十七种圆相，授耽源应真，耽源付仰山慧寂。仰山一览焚之，以大机大用活化于接引学人之中，立为沩仰宗根本法门。",
+    "steps": [
+      "借相显体：观眼前画出或意想之○相，体会自性从本以来圆满无亏、空灵湛寂，无丝毫欠缺。",
+      "字相融通：于○相中书“佛”字、“牛”字或日相月相，观千差万别之万法名相皆在一真圆心之中显现，心外无别法。",
+      "离相绝待：超越图形之死相，体认能画、能见者当下超越一切形相，一览焚之，不执纸墨文字。",
+      "体用起发：于日用万机动静之中随缘起照，如空合空，如水投水，在农禅与人际唱和中得大自在受用。"
+    ],
+    "pitfalls": [
+      "切忌将九十七种圆相当作道家符箓或密咒去搞神秘测度，若死执圆相图形，反成宗门死句与名相枷锁。"
+    ],
+    "classicRef": "《袁州仰山慧寂禅师语录》、《人天眼目》卷四",
+    "relatedConcepts": ["yuanxiang", "sijin-huanyuan", "nongchan-bingzhong"],
+    "relatedPersons": ["yangshan-huiji", "weishan-lingyou"],
+    "relatedBooks": ["yangshanyulu", "renyantianmu", "weishanyulu"]
   }
 ];
 
@@ -26403,6 +26478,31 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["caoyuan-yidishui", "yiqie-xiancheng"],
     "relatedPersons": ["fayan-wenyi", "tiantai-deshao"],
     "relatedBooks": ["wenyiyulu", "tanjing"]
+  }
+,
+  {
+    "id": "koan-666",
+    "question": "耽源受圆相一览便火烧却",
+    "answer": "慧寂一览已知其意，但用得，不可执本也！",
+    "context": "耽源应真禅师将南阳忠国师所传“六代祖师九十七种圆相秘本”授与仰山慧寂，诫以秘惜传受。仰山接得一览，便投火烧却。耽源大惊责怪何得焚之，仰山答“一览已知其意，但用得不可执本”，耽源言后人信不及，仰山随即当场重集一本呈上，丝毫无差。",
+    "interpretation": "宗门至道贵在当人直下见性、临机大用，若把祖师秘笈当成宝贝死守，正是买椟还珠！仰山一览焚之，显宗门不立文字、直透心源之绝顶气魄；旋即重写一本无遗失，显自性具足万德、不坏缘起之大机大用。",
+    "master": "仰山慧寂",
+    "source": "《袁州仰山慧寂禅师语录》、《五灯会元》卷九",
+    "relatedConcepts": ["yuanxiang", "sijin-huanyuan", "self-nature"],
+    "relatedPersons": ["yangshan-huiji"],
+    "relatedBooks": ["yangshanyulu", "renyantianmu"]
+  },
+  {
+    "id": "koan-667",
+    "question": "田中插锹叉手",
+    "answer": "田中多少人？仰山插锹叉手而立！",
+    "context": "仰山在沩山门下任直岁，田间作务归。沩山问“田中多少人”，仰山一言不发，将手中铁锹插在泥中，双手交叉胸前而立。沩山云“今日南山大有人刈茅”，仰山拔锹便走。后玄沙备闻之云：“我若见，即踏倒锹子。”",
+    "interpretation": "沩山问田中多少人，乃借境探心，若答数字即堕凡情数量分别；仰山插锹叉手，以绝对无言之全身体现大机，当阳全提向上本分！沩山“南山刈茅”同声相应，仰山拔锹便行纵横无碍，玄沙踏倒锹子更添辛辣，皆是父子道合、农禅并重之神化大机。",
+    "master": "仰山慧寂",
+    "source": "《袁州仰山慧寂禅师语录》、《景德传灯录》卷十一",
+    "relatedConcepts": ["nongchan-bingzhong", "yuanxiang", "daily-zen"],
+    "relatedPersons": ["yangshan-huiji", "weishan-lingyou"],
+    "relatedBooks": ["yangshanyulu", "weishanyulu"]
   }
 ];
 
@@ -50165,6 +50265,91 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "answer": "唐末五代战乱连绵，佛教经籍大量损毁，禅林末流多趋于不立文字、放浪狂荡的险境。法眼文益及其法嗣德韶、延寿，在吴越与南唐两代国主护持下，一方面遣使赴高丽、日本请回天台等宗绝版典籍，复兴经教；另一方面以法眼宗“理事圆融”为中枢，撰百卷《宗镜录》融通禅净教律，彻底奠定了宋代以降中国佛教圆融统一的大格局，拯救了整个中原佛教法脉于危亡之中。",
     "relatedQa": "koan-665",
     "relatedBooks": ["wenyiyulu", "weixinjue", "wanshantongguiji"]
+  }
+,
+  {
+    "id": "faq-2892",
+    "question": "为什么说仰山慧寂禅师语录的发布，标志着禅门五宗七家在禅宗知识库正式迎来宗风全闭环？",
+    "answer": "禅门五宗七家（沩仰、临济、曹洞、云门、法眼，以及临济下黄龙、杨岐）代表了唐宋禅宗的最高峰与全部主流法脉。在此之前，本库已完备收录临济、曹洞、云门、法眼开祖及黄龙、杨岐之核心典籍；而沩仰宗作为五家之中最早立宗者，沩山灵祐与仰山慧寂师资同德、并称沩仰。随着第132部法眼文益与第133部仰山慧寂语录的相继上线，全站正式实现了五宗七家全系祖师元典的大团圆，构建起中国禅宗最权威、最完整的法脉知识网络。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2893",
+    "question": "仰山慧寂少年时断手二指求法，这一激烈举动体现了宗门何种求道精神？对后学有何深远启示？",
+    "answer": "仰山十四岁时父母欲强令其还俗婚娶，师毅然斩断左手二指跪在父母面前，誓求正法以答父母劬劳，父母大受震动遂许其出家。这一断指之举与二祖慧可断臂求法一脉相承，展现了宗门行者为了悟心源、出离生死轮回，不惜身命骨肉的绝顶金刚大志。后世学者当明：出世修道非避世享乐，乃是‘大丈夫事，非将相所能为’；若无生死事大、无常迅速的痛切省悟，终难跨越世俗情爱名利的重重绊锁。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "changuancejin"]
+  },
+  {
+    "id": "faq-2894",
+    "question": "仰山接得耽源所传九十七种圆相秘本，为何当场一览便火烧却？这与六祖焚袈裟、丹霞烧木佛有何相通之处？",
+    "answer": "南阳忠国师传至耽源的九十七种圆相是宗门至高法本，然而仰山深知：佛法心印唯在当人自心悟证，若将纸墨抄本视为秘笈珍藏，便会堕入经生见知与符相邪执，法宝反成见刺！仰山‘一览便烧’，是将相回归于心，破除对法相之执；随即又能重录一本无遗失，是自性起大用，不坏世相。这与六祖惠能平息争端不传袈裟、丹霞天然寒夜烧木佛取暖而斥偶像如出一辙，皆是直指法界真体、彻底扫除偶像崇拜的祖师风骨。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2895",
+    "question": "沩山灵祐示仰山“以思无思之妙，返思灵焰之无穷，思尽还源”，这句千古名训在实修中如何下手工夫？",
+    "answer": "‘思无思之妙’是指不可用第六意识的寻思推度去求佛，而要以本具灵照、不杂妄想的妙慧反观内省；‘返思灵焰之无穷’是指自性觉知如长明火炬，历千劫未尝熄灭，在眼能见、在耳能闻，二六时中灵明昭昭；‘思尽还源’则是用功至极处，虚妄情识分别思量彻底穷尽剥落，能所双亡，自心自然复归真如实相本源。此时性与相常住不灭，事与理圆融无碍，当下即是如如真佛。这是宗门由定发慧、返妄归真的无上行履轨则。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "weixinjue"]
+  },
+  {
+    "id": "faq-2896",
+    "question": "沩山指田问高低，仰山为何说“不必中间立，亦莫住两头”？“高处高平，低处低平”揭示了怎样的般若中道？",
+    "answer": "世俗人看事物，总落入‘高’与‘低’、‘是’与‘非’的二元对立；凡夫以为站在‘中间’就是公正，殊不知‘中间’同样是与两头相对而安立的虚妄概念，仍未跳出分别牢笼。仰山‘不必中间立，亦莫住两头’，直接粉碎了所有空间方位与概念对立！进而以‘高处高平，低处低平’开显法性平等：诸法缘起千差万别，高山自成其高，深谷自成其低，不坏缘起差别而当体本空、法法各住其位，这正是大乘无住生心、理事无碍的活泼真实中道。",
+    "relatedQa": "koan-667",
+    "relatedBooks": ["yangshanyulu", "zhaolun", "zhonglun"]
+  },
+  {
+    "id": "faq-2897",
+    "question": "仰山在沩山门下田中劳作“插锹叉手”，沩山云“南山大有人刈茅”，玄沙云“我若见即踏倒锹子”，宗门尊宿机锋为何如此奇绝？",
+    "answer": "沩山问‘田中多少人’，若答具体数目，就落入了世俗凡情数量知见；仰山不答一语，直接插锹抱胸而立，是以全身行履全提正令——能见能劳作者当下全体独露，哪里有什么数目多寡！沩山言‘南山大有人刈茅’，乃借山林耕作默契呼应，如空合空；而玄沙备后发‘踏倒锹子’之棒，更是险绝凌厉，生怕后代学人把仰山插锹叉手当成一种固定的机锋姿态去死守模仿，故当头一脚踏翻，令其连无言之相亦不得驻足！三转机锋，步步抽蕉剥茧，极显宗门向上生机。",
+    "relatedQa": "koan-667",
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "xuanshaguanglu"]
+  },
+  {
+    "id": "faq-2898",
+    "question": "仰山夏末问讯沩山，父子二人“鉏得一片畬，下得一箩种”与“日中一食，夜后一寝”如何体现沩仰农禅宗风？",
+    "answer": "这番对话是沩仰宗‘父慈子孝、道合自然’的千古绝唱。仰山以整夏开荒耕耘、下种粮食，表明行者在泥水田间长养圣胎，菩提万行绵绵密密，农作即是真实修证；沩山以日食一餐、夜宿一觉，显现大解脱者绝学无为、饥来吃饭困来眠的本来无事；仰山赞叹之余调皮吐舌，沩山斥其‘何得自伤己命’，父子间既有心领神会的相视一笑，又有严密绝伦的互相勘验。佛法就在一日三餐与耕田劳作之中，彻底泯灭了修行与生活的隔阂。",
+    "relatedQa": "koan-667",
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "baizhang"]
+  },
+  {
+    "id": "faq-2899",
+    "question": "仰山慧寂禅师梦入弥勒内院第二座说“摩诃衍法离四句绝百非”，沩山为何印可其“子已入圣位”？",
+    "answer": "弥勒内院乃一生补处菩萨所聚之圣境，仰山梦中升座白槌开示‘摩诃衍（大乘）法离四句、绝百非’，圣众皆闻法散去。四句即有、无、亦有亦无、非有非无；百非即一切思维名相推演。大乘至道彻底超越一切思量分别语言网，仰山即使在梦中亦不离第一义谛，显其‘八识田中纯是般若真体’、动静一如。沩山印可‘子已入圣位’，并非世俗封赏阶级，而是印证其已亲证离四句绝百非之圣智境界。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "weishanyulu"]
+  },
+  {
+    "id": "faq-2900",
+    "question": "仰山上堂严厉告诫学人“师子咬人，韩卢逐块”，在信息爆炸与碎片化学习的今天有何当头棒喝的现实意义？",
+    "answer": "‘韩卢’是奔跑极快之名犬，但主人扔出一块石子，它便拼命狂奔追逐石子咬嚼，比喻修行者整天逐随经典文字、导师口水或外在名相团团转，沦为文字奴隶；‘师子’则是百兽之王，遇人放箭直接扑咬放箭之人，直捣源头！现代人身处信息洪流之中，极易患上‘信息贪食症’，整日收藏摘抄金句名相，以为这就是学佛修行。仰山如雷棒喝：切莫做逐块的庸狗，当做咬人的雄狮！回光返照：是谁在看手机？是谁在焦虑动念？直下看破能动念的自心，才是直捣黄龙的解脱大道。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "linji"]
+  },
+  {
+    "id": "faq-2901",
+    "question": "仰山禅师为何被天下禅林誉为“小释迦”？其机锋接引风格与临济义玄有何异同？",
+    "answer": "仰山被尊为‘小释迦’，因其智慧渊深如同世尊再世，神变莫测、随问随应，既能深解经教密义，又能以宗门直指当下截断众流。与临济禅师相比：临济宗如金刚宝剑、风雷交作，以痛棒大喝摧枯拉朽夺境夺人，势若奔雷；而仰山慧寂则以内照圆融、借相显体为宗风，常用画圆相（○）、手拓、步退、默然而立等温雅含蓄而内力深沉的方式勘验学人。临济如烈火炼真金，仰山如甘霖润大地，两峰并峙，各极法门之神妙。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "linji", "renyantianmu"]
+  },
+  {
+    "id": "faq-2902",
+    "question": "仰山临终示寂名偈“万人头上行，脱却娘生裤”有何玄旨？为何说这是最彻底的大解脱宣言？",
+    "answer": "‘万人头上行’并非世俗居高临下的傲慢，而是比喻自性法身横超三界、超越一切世俗知见与千圣阶梯，自由往来于无碍虚空法界；‘脱却娘生裤’中，‘娘生裤’特指从娘胎带来的一身血肉四大果报、累劫习气以及生老病死的无明业系。临命终时，仰山将这具业报之躯与生死幻壳如脱去破衣烂裤一般彻底撒手抛下，赤裸裸、净洒洒，全体融入不生不灭的大涅槃法界！全偈无丝毫哀戚缠绵，唯有顶天立地、笑对生死的无上大丈夫洒脱。",
+    "relatedQa": "koan-666",
+    "relatedBooks": ["yangshanyulu", "weishanyulu"]
+  },
+  {
+    "id": "faq-2903",
+    "question": "沩仰宗在宋代之后法脉逐渐融入临济宗，这一历史现象应如何客观看待？其宗风是否真正断绝？",
+    "answer": "五代宋初战乱频繁，沩仰宗因道风温雅纯正、传人择选极严，且其九十七种圆相易被俗汉附会作图谶怪力之术，至宋初第四传后法脉多并入临济宗。然而，法眼融入宋明圆融大潮，沩仰父子道合与农禅并重之精神则深深铸就了中国佛教寺院‘农禅并重、一日不作一日不食’的实体制度基石；其‘思尽还源’与‘圆相借相显体’的妙旨，更成为后世临济、曹洞诸宗历代禅师提撕勘验的不祧法宝。法脉形迹虽隐，法身灵明常在，何曾有片刻断绝！",
+    "relatedQa": "koan-667",
+    "relatedBooks": ["yangshanyulu", "weishanyulu", "wujiazhengzongzan"]
   }
 ];
 
