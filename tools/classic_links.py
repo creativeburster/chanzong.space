@@ -140,6 +140,7 @@ MAP = {
   'jingangsanmeijing': [('sixingguan', '二入四行源头'), ('lengqiejing', '达摩印心姊妹'), ('tanjing', '本觉自性'), ('jingangjing', '金刚无住')],
   'pingshiyulu': [('xutangyulu', '虚堂同刹'), ('tianmuzhongfengguanglu', '元禅并照'), ('biyanlu', '颂古击节'), ('linji', '临济正宗')],
  'weixinjue': [('wanshantongguiji', '永明同著'), ('chanyuan_zhuquanjiduxu', '禅教会通'), ('lengyanjing', '心性融通'), ('dachengqixinlun', '一心二门')],
+ 'wenyiyulu': [('weixinjue', '法脉同宗'), ('renyantianmu', '法眼纲宗'), ('tanjing', '曹源一滴'), ('wumenguan', '当阳截断')],
 }
 
 def main():

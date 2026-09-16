@@ -1292,4 +1292,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '书绅', pinyin: 'shū shēn', meaning: '绅为古代士大夫束在腰间的大带。书绅即将要言佩戒书写于带上以时时自警，劝人铭记一心妙旨' },
     { char: '纯阴纯阳', pinyin: 'chún yīn chún yáng', meaning: '《定慧相资歌》借易理妙喻：偏修定为纯阴烂物坏道芽，偏修慧为纯阳枯物成知见，必须定慧等持' },
   ],
+  'wenyiyulu': [
+    { char: '鄮山', pinyin: 'mào shān', meaning: '古地名，今浙江宁波鄞州区鄮山阿育王寺，文益禅师早年依希觉律师听习经律之处' },
+    { char: '游夏', pinyin: 'yóu xià', meaning: '孔门弟子子游与子夏，文学科杰出代表。希觉律师赞文益深通内外典籍，誉为“我门之游夏”' },
+    { char: '地藏桂琛', pinyin: 'dì zàng guì chēn', meaning: '五代著名禅僧，玄沙师备法嗣，住漳州地藏院，以“不知最亲切”与“一切现成”启发文益大悟' },
+    { char: '不知最亲切', pinyin: 'bù zhī zuì qīn qiè', meaning: '宗门断绝意识思维之至言，指离开第六意识名相测度、当下一念未生之自性本体最为亲切真实' },
+    { char: '一切现成', pinyin: 'yī qiè xiàn chéng', meaning: '法眼宗立宗之根本纲宗，指法界万法与自性清净心本来圆满具足，当下脱体全彰，不假拟议修造' },
+    { char: '子方上座', pinyin: 'zǐ fāng shàng zuò', meaning: '长庆慧棱门下高足，初执“不拨万象”，后于文益“万象之中独露身说甚么拨不拨”机锋下大悟' },
+    { char: '曹源一滴水', pinyin: 'cáo yuán yī dī shuǐ', meaning: '宗门指代六祖曹溪代代相传之清净正法眼藏，文益以此答天台德韶，令其言下大悟' },
+    { char: '策子', pinyin: 'cè zǐ', meaning: '古代折叠成册的经卷义疏。禅师警策学人切莫终日死执策子做口头推敲，当向眼前实际处荐取' },
+    { char: '簇簇', pinyin: 'cù cù', meaning: '丛集拥聚之貌。僧问“簇簇上来师意如何”，禅师答“是眼不是眼”，指破随相分别之妄' },
+    { char: '六相圆融', pinyin: 'liù xiàng yuán róng', meaning: '华严宗总别、同异、成坏六相之旨，法眼文益禅师将其化为禅门活泼机锋，极显理事无碍' },
+  ],
 };

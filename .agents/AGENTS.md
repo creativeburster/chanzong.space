@@ -55,17 +55,24 @@
 
 ---
 
-## 📖 五、 禅宗经典发布完整流程（SOP）
+## 📖 五、 禅宗经典发布完整流程（12 步标准 SOP）
 
-当用户提供一部新的禅宗 PDF/TXT 源文本时，"发布"一部经典意味着完成以下 **全部 7 个步骤**，缺一不可：
+当用户提供一部新的禅宗 PDF/TXT 源文本时，"发布"一部经典意味着完成以下 **全部 12 个步骤**，缺一不可：
 
 ### 步骤 1：源文本获取与深度理解
 - 读取 PDF/TXT 源文本（PDF 需 OCR 或在线搜索获取全文）
 - 确认版权：公有领域（作者逝世超过 50 年）方可使用
-- 深度理解内容：作者背景、核心宗风、历史地位、修行要旨
+- **确认内容为禅宗或与禅宗密切相关**（非泛佛学——净土、道教、原始佛教、般若经、史传类不收录）
+- 深度理解：作者背景、核心宗风、历史地位、修行要旨
+- 所有回复使用中文
 
-### 步骤 2：创建 Markdown 文件 → `classics_markdown/{idx}_{id}.md`
-- 文件名格式：`{两位序号}_{拼音id}.md`，如 `39_bashiguijusong.md`
+### 步骤 2：确定经典 ID 与序号
+- 查看当前 `manifest.json` 最大 idx 值，新经典 idx = 最大值 + 1
+- 拼音 id 规则：全小写拼音，无空格无连字符（如 `bashiguijusong`、`weixinjue`）
+- 查看当前 `lib/taxonomy.ts` 中各数组最大编号，确定新公案、新问答的起始编号
+
+### 步骤 3：创建 Markdown 文件 → `classics_markdown/{两位序号}_{拼音id}.md`
+- 文件名格式：`{两位序号}_{拼音id}.md`，如 `39_bashiguijusong.md`、`131_weixinjue.md`
 - 必须包含以下结构：
   - `## 💡 现代白话导读与核心旨趣` — 针对该典籍独家撰写
   - `## 📌 关键词` — 3-6 个核心术语
@@ -75,63 +82,49 @@
   - `## 🗣️ 名句白话解读` — 核心偈颂/语句的白话
   - `## 📜 典籍原文` — 清洗后的完整原文
 
-### 步骤 3：更新 `manifest.json`
-- 在 JSON 数组末尾追加元数据对象：
-```json
-{
-  "idx": 39,
-  "id": "bashiguijusong",
-  "title": "八识规矩颂",
-  "author": "玄奘",
-  "category": "唯识宗典",
-  "summary": "一句话概括",
-  "word_count": 576,
-  "filename": "39_bashiguijusong.md"
-}
-```
+### 步骤 4：更新 `manifest.json`
+- 在 JSON 数组末尾追加元数据对象（idx, id, title, author, category, summary, word_count, filename）
+- summary 控制在 80-120 字，概括核心旨趣
 
-### 步骤 4：更新 `lib/translations.ts` — 白话翻译
+### 步骤 5：更新 `lib/translations.ts` — 白话翻译
 - 为该经典添加白话译文条目，按段落/偈颂分条
-- 数据结构遵循文件中已有格式（`id` 对应 manifest 中的 `id`）
+- 翻译必须为纯大白话，通俗易懂；按字数梯次提供高水准今译
 
-### 步骤 5：更新 `lib/glossary.ts` — 字词注音
+### 步骤 6：更新 `lib/glossary.ts` — 字词注音
 - 为该经典中的生僻字词添加注音释义
-- 数据结构遵循文件中已有格式
+- 只收录真正的生僻字词，汉语拼音与释义准确简洁
 
-### 步骤 6：更新 `lib/taxonomy.ts` — 扩充知识网络
-这是最核心的步骤，需要扩充以下 **全部 5 个数组**（如该经典涉及）：
+### 步骤 7：更新 `lib/taxonomy.ts` — 扩充知识网络（核心）
+扩充以下全部 5 个数组（如该经典涉及）：
+1. **`ZEN_PERSONS`（人物）**：新增/更新人物，完善传记、法语、关联经典等
+2. **`ZEN_CONCEPTS`（概念）**：新增/更新概念，**新增前必须搜索 id 是否已存在，避免重复**
+3. **`ZEN_METHODS`（法门）**：新增/更新法门，步骤与注意事项清晰
+4. **`ZEN_KOANS`（公案）**：精选公案新增，编号续接现有最大编号
+5. **`ZEN_FAQS`（问答）**：新增深度解惑问答，严格依据字数梯次标准创作（字数少者 ≥5~8 条，字数多者 ≥10~25+ 条）
 
-1. **`ZEN_PERSONS`（人物）**：
-   - 若经典作者/主角尚不存在，新增人物条目
-   - 若已存在，更新其 `relatedBooks`、`relatedConcepts`、`classics` 等字段，加入新经典 id
-   - 字段：`id`, `name`, `title`, `era`, `lifeStory`, `teachings`, `quotes`, `classics`, `relatedConcepts`, `relatedMethods`, `relatedPersons`, `relatedBooks`
+### 步骤 8：经典连线与站点元数据同步
+- 在 `tools/classic_links.py` 中为新书补录 3-4 条法脉/主题语义连线，运行脚本在 Markdown 头部写入 `🔗 经典连线`
+- 更新 `lib/stats.ts` 与 `app/about/AboutClient.tsx` 等页面的全站统计数量
 
-2. **`ZEN_CONCEPTS`（概念）**：
-   - 新增该经典引入的核心概念（如唯识学"末那识"、禅宗"无门"等）
-   - **注意查重**：新增前必须搜索 `id` 是否已存在，避免重复条目
-   - 若概念已存在，更新其 `relatedBooks` 加入新经典 id
-   - 字段：`id`, `title`, `category`, `summary`, `etymology`, `quotes`, `guidance`, `classicRef`, `relatedConcepts`, `relatedPersons`, `relatedBooks`
+### 步骤 9：编译与代码验证
+- 运行 `npx tsc --noEmit` 确保 TypeScript 零报错
+- 检查是否存在悬空引用，确保引用的 ID 在对应数组中全部真实存在
 
-3. **`ZEN_METHODS`（法门）**：
-   - 若该经典引入新的修行法门，新增法门条目
-   - 若已有法门与该经典相关，更新其 `relatedBooks` 和 `relatedPersons`
-   - 字段：`id`, `title`, `summary`, `origin`, `steps`, `pitfalls`, `classicRef`, `relatedConcepts`, `relatedPersons`, `relatedBooks`
+### 步骤 10：数据覆盖与质量验证
+- 验证每部经典的数据关联完整性（人物、概念、法门、公案、问答均充分覆盖）
 
-4. **`ZEN_KOANS`（公案）**：
-   - 若该经典包含公案，精选重要公案新增条目
-   - 编号续接现有最大编号（如当前最大 koan-205，则从 koan-206 开始）
-   - 字段：`id`, `question`, `answer`, `context`, `interpretation`, `master`, `source`, `relatedConcepts`, `relatedPersons`, `relatedBooks`
+### 步骤 11：繁体发布与双轨验证（用户钦定铁律）
+发布每部经典时，**做一部简体就必须相应完成繁体发布**，确保简繁两地学人与海外读者无缝参修：
+- 确认 `/zh-tw/classics/[id]` 繁体静态 HTML 页面成功生成且标题、导读、正文通过 OpenCC 精准繁体化；
+- 确认该经典配套之祖师人物（`/zh-tw/persons/[id]`）、核心概念（`/zh-tw/concepts/[id]`）、修持法门（`/zh-tw/methods/[id]`）、公案（`/zh-tw/koan/[id]`）繁体页面全部同步生成；
+- 确认生僻字卡片与白话今译卡片在繁体路由下调用 `t(...)` 正确渲染繁体字形；
+- 确认 `sitemap.xml` 自动生成对应的 `zh-Hant` alternate hreflang 双向内链。
 
-5. **`ZEN_FAQS`（问答）**：
-   - 新增与该经典相关的常见问题及解答
-   - 编号续接现有最大编号（如当前最大 faq-308，则从 faq-309 开始）
-   - 字段：`id`, `question`, `answer`, `relatedQa`, `relatedBooks`
-
-### 步骤 7：编译验证与繁体双轨发布（用户钦定铁律）
-- **TypeScript 零报错**：运行 `npx tsc --noEmit` 确保零错误；
-- **繁体发布同步（完成繁体发布）**：做一部简体就必须相应完成繁体发布！验证 `/zh-tw/classics/[id]` 繁体静态页面生成无误，关联人物、概念、法门、公案繁体页面同步落地，`sitemap.xml` 自动生成繁简 hreflang 双向链接；
-- **全站构建验证**：运行 `node node_modules/next/dist/bin/next build` 确保全量 SSG 页面生成成功；
-- **Git 提交推送**：提交代码并 push 到 master 分支，触发 Vercel 生产自动部署。
+### 步骤 12：全站 SSG 构建、Git 提交与生产推送
+- 全站构建验证：运行 `node node_modules/next/dist/bin/next build` 确保全量 SSG 页面生成成功（Exit code 0）；
+- Git 提交推送：提交代码并 push 到 master 分支；
+- Vercel 生产部署：通过 `npx vercel --scope chanzong --prod --yes` 触发生产环境部署，验证线上实时生效；
+- **“一部一停”**：每发布完一部经典，完整汇报该部全部数据与链接，停下来等待用户明确指令。
 
 ---
 

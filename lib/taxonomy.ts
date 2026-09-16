@@ -1272,16 +1272,19 @@ export const ZEN_PERSONS: PersonItem[] = [
     "lifeStory": "文益禅师，余杭（今浙江杭州）人，俗姓鲁。七岁出家，后参罗汉桂琛，于桂琛座下开悟。师住金陵清凉院（今南京），以“六相圆融”为宗门施设，开法眼一宗。南唐国主李璟礼为国师，赐号“法眼”。师以华严六相义入禅，明“总别同异成坏”六相圆融之旨，教人于差别中见无差别，于无差别中不碍差别。门下出天台德韶，德韶出永明延寿，法眼宗虽传世不久，然其教理精深，影响远及高丽、日本。",
     "teachings": "法眼宗风以“六相圆融”为纲宗：总别同异成坏，六相虽殊，体性是一。其教贵在“圆融”——不偏理、不废事，于理事无碍中显中道之旨。师常以“一切现成”接人，不同于他家之“向上一路”，而是就当下现前之境，令学人悟入。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
     "quotes": [
+      "若论佛法，一切见成。 —《清凉院文益禅师语录》",
+      "万象之中独露身，说甚么拨不拨！ —《清凉院文益禅师语录》",
+      "如何是曹源一滴水？是曹源一滴水！ —《清凉院文益禅师语录》",
       "一切现成。",
       "总别同异成坏，六相圆融。"
 ],
     "classics": [
       "金陵清凉院文益禅师语录"
 ],
-    "relatedConcepts": ["non-duality","self-nature"],
-    "relatedMethods": [],
+    "relatedConcepts": ["yiqie-xiancheng", "buzhi-zuiqinqie", "caoyuan-yidishui", "non-duality","self-nature"],
+    "relatedMethods": ["liuxiang-yuanrong-guan", ],
     "relatedPersons": ["yongming-yanshou","tiantai-deshao"],
-    "relatedBooks": ["qifo", "wenshu", "xuemaicong", "anxin", "tanjing", "mazu", "jingangjing", "lengyanjing", "weimojiejing", "shiniutu", "dongshanyulu", "yongjia", "yunmen", "wumenguan", "huanwuxinyao", "huanwuyulu", "chanjia_guijian"]
+    "relatedBooks": ["wenyiyulu", "qifo", "wenshu", "xuemaicong", "anxin", "tanjing", "mazu", "jingangjing", "lengyanjing", "weimojiejing", "shiniutu", "dongshanyulu", "yongjia", "yunmen", "wumenguan", "huanwuxinyao", "huanwuyulu", "chanjia_guijian"]
   },
   {
     "id": "tiantai-deshao",
@@ -6290,7 +6293,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《华严经》《宗镜录》",
     "relatedConcepts": ["shishi-wuai","fajie","non-duality"],
     "relatedPersons": ["fayan-wenyi","yongming-yanshou"],
-    "relatedBooks": ["lengyanjing"]
+    "relatedBooks": ["wenyiyulu", "lengyanjing"]
   },
   {
     "id": "weixin-jingtu",
@@ -12103,6 +12106,56 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["yongming-yanshou", "huineng", "tiantai-deshao"],
     "relatedBooks": ["weixinjue", "tanjing", "wanshantongguiji"]
   }
+,
+  {
+    "id": "yiqie-xiancheng",
+    "title": "一切现成",
+    "category": "心性本质",
+    "summary": "法眼宗立宗之根本极则。指法界万象、自性真如本来圆满具足，脱体全彰，不劳心识造作思维，目前实际当下即是大解脱道场。",
+    "etymology": "源自地藏桂琛禅师接引文益名言：“若论佛法，一切见成。”文益禅师言下大悟，遂以此立为法眼宗风之纲宗。",
+    "quotes": [
+      "若论佛法，一切见成。 —地藏桂琛对法眼文益开示",
+      "实际居于目前，翻为多相之境。 —法眼文益《清凉院语录》",
+      "求佛知见，何路最径？师云：无过此。 —法眼文益《清凉院语录》"
+    ],
+    "guidance": "行者切莫向外驰求玄妙佛法，当下能见能闻、起居作息处本来现成。放下思量计较，不立纤毫取舍，当下便契祖师骨髓。",
+    "classicRef": "《金陵清凉院文益禅师语录》、《景德传灯录》",
+    "relatedConcepts": ["liuxiang-yuanrong", "buzhi-zuiqinqie", "wanfa-weixin", "caoyuan-yidishui"],
+    "relatedPersons": ["fayan-wenyi", "tiantai-deshao", "yongming-yanshou"],
+    "relatedBooks": ["wenyiyulu", "weixinjue", "renyantianmu"]
+  },
+  {
+    "id": "buzhi-zuiqinqie",
+    "title": "不知最亲切",
+    "category": "见地辨析",
+    "summary": "宗门截断第六意识思量分别之至高转语。指离开知解名相测度、处于一念未生之自性赤裸状态，与法身本体最为亲密契合。",
+    "etymology": "漳州地藏桂琛问文益行脚何事，文益答“不知”，桂琛遂赞“不知最亲切”，直指离言绝相之自性本源。",
+    "quotes": [
+      "作么生是行脚事？师云：不知。地藏云：不知最亲切！ —《清凉院文益禅师语录》",
+      "前念不生，后念不灭，更无别法，是名亲切。"
+    ],
+    "guidance": "参禅莫以头脑所知所解为得。面对无明惑业或向上一窍，当体会这“不知”处的空灵觉照，不起推敲，直下承当。",
+    "classicRef": "《金陵清凉院文益禅师语录》、《五灯会元》",
+    "relatedConcepts": ["yiqie-xiancheng", "bushi", "no-mind"],
+    "relatedPersons": ["fayan-wenyi"],
+    "relatedBooks": ["wenyiyulu", "renyantianmu"]
+  },
+  {
+    "id": "caoyuan-yidishui",
+    "title": "曹源一滴水",
+    "category": "宗门纲宗",
+    "summary": "禅门指代曹溪六祖世代单传的正法眼藏与源头活水。亦指自性清净心之本源，一法不立、一尘不染，而能流注无尽大千世界。",
+    "etymology": "天台德韶问文益“如何是曹源一滴水”，文益答“是曹源一滴水”，韶国师言下大悟，遂出永明延寿，法眼一派盛极东南。",
+    "quotes": [
+      "如何是曹源一滴水？师云：是曹源一滴水！ —法眼文益答天台德韶",
+      "曹源一滴甘露水，洒向人间化法身。"
+    ],
+    "guidance": "不向言句外求玄求妙，当下这一念觉知即是源头活水。信得及、承当得下，二六时中无不畅饮曹源甘露。",
+    "classicRef": "《金陵清凉院文益禅师语录》、《五灯会元》",
+    "relatedConcepts": ["yiqie-xiancheng", "zhengfayanzang", "tanjing"],
+    "relatedPersons": ["fayan-wenyi", "tiantai-deshao", "huineng"],
+    "relatedBooks": ["wenyiyulu", "tanjing", "weixinjue"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -14323,6 +14376,26 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["wanfa-weixin", "dinghui-xiangzi", "yibai-ershi-xiezong", "chan-jiao-he-yi"],
     "relatedPersons": ["yongming-yanshou", "fayan-wenyi"],
     "relatedBooks": ["weixinjue", "wanshantongguiji", "dachengqixinlun"]
+  }
+,
+  {
+    "id": "liuxiang-yuanrong-guan",
+    "title": "六相圆融观照法门",
+    "summary": "法眼宗独门心性修持法门。融汇华严总、别、同、异、成、坏六相之旨入宗门机锋，教行者于日用一切森罗万象中见事理不二、体用相即。",
+    "origin": "五代法眼文益禅师以华严六相义入禅，示人“一切现成，总别同异成坏不相妨碍”，开创理致清明之法眼禅风。",
+    "steps": [
+      "照见总别：观眼前万物为自性全体所现（总），万象各住其位秩序井然（别），全体即部分，部分即全体。",
+      "融通同异：观诸相本性同一空寂（同），而不坏事物千差万别之功能缘起（异），于差别中不见对立。",
+      "体认成坏：观诸法随缘和合而现（成），法尔迁流不居当体本空（坏），虽在成坏迁变中而自性如如不动。",
+      "直下见成：泯除主客对待与言句知解，以清净本眼安住当下，圆融无碍、随缘自在。"
+    ],
+    "pitfalls": [
+      "切忌把六相当作枯燥的哲学逻辑去思惟推理，落入义学法执，失却活泼泼的当下现成觉照。"
+    ],
+    "classicRef": "《金陵清凉院文益禅师语录》、《人天眼目》",
+    "relatedConcepts": ["liuxiang-yuanrong", "yiqie-xiancheng", "lishi-wuai"],
+    "relatedPersons": ["fayan-wenyi", "yongming-yanshou"],
+    "relatedBooks": ["wenyiyulu", "renyantianmu", "weixinjue"]
   }
 ];
 
@@ -26305,6 +26378,31 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["wanfa-weixin", "dinghui-xiangzi", "wanshan-tonggui", "lishi-wuai"],
     "relatedPersons": ["yongming-yanshou"],
     "relatedBooks": ["weixinjue", "wanshantongguiji", "zongjinglu"]
+  }
+,
+  {
+    "id": "koan-664",
+    "question": "安片石在心头",
+    "answer": "行脚人著甚么来由，安片石在心头？！",
+    "context": "文益禅师早年与同修出岭，因雪阻于漳州地藏院。辞行时，地藏桂琛禅师送至门首，指庭下片石问：“上座寻常说三界唯心，且道此石在心内在心外？”文益依唯心之教答曰：“在心内。”地藏禅师当下逼问：“行脚人著甚么来由安片石在心头？”文益窘无以对，遂决志依止地藏近月余，终大彻大悟。",
+    "interpretation": "学人常以意识知见套用“三界唯心”，以为把山河大地装在脑子里，这实则是把自性降格为装物之袋，平白安一块沉重石头在心头！地藏桂琛直逼文益放下意识情解，粉碎虚妄心境对待，悟入“一切现成”之无上真实。",
+    "master": "法眼文益",
+    "source": "《金陵清凉院文益禅师语录》、《五灯会元》卷十",
+    "relatedConcepts": ["yiqie-xiancheng", "buzhi-zuiqinqie", "wanfa-weixin"],
+    "relatedPersons": ["fayan-wenyi"],
+    "relatedBooks": ["wenyiyulu", "weixinjue"]
+  },
+  {
+    "id": "koan-665",
+    "question": "曹源一滴水",
+    "answer": "是曹源一滴水！",
+    "context": "天台德韶国师初参文益禅师，久未能明心见性。一日入室问文益：“如何是曹源一滴水？”文益禅师神色平淡，脱口答云：“是曹源一滴水！”德韶国师言下疑网冰释，豁然大悟，遂承嗣法眼宗法脉，后开山天台。",
+    "interpretation": "德韶发问时，心外求水，把“曹源一滴水”看作高不可攀的圣境；文益原话奉还，直截指破：问的这个当下便是那一滴真水，何处更去寻觅！一语粉碎学人情识，直显“一切现成”之无上大机。",
+    "master": "法眼文益",
+    "source": "《金陵清凉院文益禅师语录》、《景德传灯录》卷二十五",
+    "relatedConcepts": ["caoyuan-yidishui", "yiqie-xiancheng"],
+    "relatedPersons": ["fayan-wenyi", "tiantai-deshao"],
+    "relatedBooks": ["wenyiyulu", "tanjing"]
   }
 ];
 
@@ -49982,6 +50080,91 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "answer": "延寿大师撰百卷《宗镜录》旨在汇聚印中经论与诸祖言句，以“心镜”消融宗门与教下的千古畛域；而《唯心诀》则是这一宏伟蓝图的提纲契领之精髓——以法眼宗“六相圆融”统摄华严天台，以自心现量圆满唯识法相，以止观双运指归净土万善。大师彻底扭转了晚唐五代以来禅门空疏狂荡之积弊，开创了宋代以降“禅教一致、禅净双修、理事圆融”的全新格局，使大乘佛法重归戒定慧均等、解行并重的正规，被尊为后世千百年佛门无上楷模。",
     "relatedQa": "koan-663",
     "relatedBooks": ["weixinjue", "zongjinglu", "wanshantongguiji"]
+  }
+,
+  {
+    "id": "faq-2880",
+    "question": "法眼宗作为禅门“五宗七家”最后确立的宗派，文益禅师的宗风与临济、云门有何显著区别？",
+    "answer": "临济宗以棒喝交驰、杀活险绝著称，势若惊雷；云门宗以一字关、顾鉴咦峭拔凌厉，截断众流；而法眼文益禅师开创的法眼宗，则以“一切现成、简澹平和、六相圆融”独步宗门。文益禅师极少动用痛棒大喝，而是就学人眼前的一草一木、问答声色，当阳点破，示人于日用平常处见自性法身。其宗风既具儒者的温雅含蓄，又具华严事事无碍的深密哲思，为禅门各派中最具哲思与圆融气质的法门。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2881",
+    "question": "地藏桂琛对文益开示的“不知最亲切”有何究竟义理？是否意味着禅宗提倡愚昧无知？",
+    "answer": "绝非世俗的愚昧无知！世俗之知是第六意识的分别、比量与名相测度，越知越障蔽本性；而“不知”是指彻底超越了能知与所知的对立，心体回到前念已过、后念未生时的赤裸本然状态。此时没有概念横在心与真理之间，因此“最为亲切”。正如六祖所云“本来无一物”，达摩所云“廓然无圣”，唯有跳出知识知解的牢笼，才能真正亲证法身本体。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2882",
+    "question": "地藏桂琛问庭下片石在心内还是心外，文益答“在心内”为何反而遭斥“安片石在心头”？",
+    "answer": "文益当时依循唯识经教回答“在心内”，这看似符合“三界唯心”，实则大错！因为他把“心”想象成了一个有内部空间的肉身或观念容器，把眼前的巨石硬塞进了这个“心”里，造成了严重的法执与知见重负。地藏禅师棒喝“安片石在心头”，正是彻底击碎这种将心体客体化、容器化的妄想，令文益明白真如心体并非与物相对的有限空间，心物不二，岂有内外可分！",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "weixinjue"]
+  },
+  {
+    "id": "faq-2883",
+    "question": "什么是法眼宗的“一切现成”？既然本来一切现成，为何禅修者还要历经长年行脚参究？",
+    "answer": "“一切现成”是指佛性本体与真如实相从无始以来在一切众生身中本来具足圆满，不待修造，山河大地触目皆是。但凡夫与未透关的学者，总被无明妄想遮蔽，终日向心外奔波追逐，甚至把“修行”也当作一种向外抓取的猎物。历经千辛万苦的行脚参究，并非为了求得一个新生的佛性，而是为了彻底碰壁、耗尽一切狂心妄想，直到“词穷理绝”那一刻，方能死心塌地体认到：原来所求之物一直在自己脚跟底下，从无丝毫欠缺！",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2884",
+    "question": "子方上座举拂子答“万象之中独露身”，文益禅师为何严厉喝斥“说甚么拨不拨”？",
+    "answer": "子方举拂子，心中暗藏着“拂子是万象之一、法身借拂子而显露”的对待理解；当文益逼问“唤甚么作万象”时，子方又搬出“古人不拨万象”的教条，认为不排斥万象就是圆融。文益禅师一语道破：“万象之中独露身，说甚么拨不拨！”法身与万象本自一体无二，万象当下全体就是法身！你若心里还在盘算“该拨除万象还是保留万象”，早已将法身与万象切成了两截，正是头上安头、落入情识窠臼。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "linji"]
+  },
+  {
+    "id": "faq-2885",
+    "question": "文益禅师上堂为何告诫学人切莫死背《还源观》、《百门义海》？“实际居于目前，翻为多相之境”如何参究？",
+    "answer": "许多学僧饱读华严义疏，能把十玄六相说得天花乱坠，但在当下临机对境时依然随境流转、生死作不得主。文益禅师痛切指出：深奥玄言一旦被意识所贪执，就沦为妄想分别的游乐场；而真实的法界大道就在眼前眼见耳闻的一刹那，学者却反把它当成千差万别的生灭外境。参究的关键不在于纸上穷经，而在于敢于在现前一念当下翻转情识，歇下分别计校，让目前实际直接与自心冥合。",
+    "relatedQa": "koan-665",
+    "relatedBooks": ["wenyiyulu", "weixinjue"]
+  },
+  {
+    "id": "faq-2886",
+    "question": "僧问“指即不问如何是月”，文益为何反答“阿那个是汝不问底指”？",
+    "answer": "发问的僧人自以为高明，以为抛开了言语方便之“指”，就能单独追问真如实相之“月”，这恰恰堕入了把方便与实相割裂为二的妄见。文益反问“哪一个是你不问的手指”，如同金刚利剑，逼令学人回光返照：离开能发问的手指，你心中的“月”又从何建立？指月同体，能问能所皆是一心显现。禅师一语截断两头，当下将学人推入能所双亡的不二境地。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "wumenguan"]
+  },
+  {
+    "id": "faq-2887",
+    "question": "德韶问“如何是曹源一滴水”，文益回答“是曹源一滴水”，为何看似复读却能令德韶言下大悟？",
+    "answer": "德韶国师历参数十员尊宿，心中早已把“曹源一滴水”神圣化、神秘化，幻想着祖师必有一句玄天奥地的秘诀相授。文益禅师不给任何多余修饰与理论阐述，直接将原语奉还，犹如一面毫无尘埃的镜子直照德韶心底！这一声直答彻底打碎了德韶心头所有的向外推求与期待偷心：眼前这个能听能问的自性，正是曹溪六祖世代单传的无上真水，更往哪里去觅！德韶当下承当，平生大疑冰释瓦解。",
+    "relatedQa": "koan-665",
+    "relatedBooks": ["wenyiyulu", "tanjing"]
+  },
+  {
+    "id": "faq-2888",
+    "question": "僧问“百年暗室一灯能破，如何是一灯”，文益答“论甚么百年”，对破除修行懈怠有何启示？",
+    "answer": "常有行者自叹根性愚钝、累劫业障深重，陷入长期的退屈与自卑，以为必须修三大阿僧祇劫才能成道。文益禅师当头棒喝“论甚么百年”，直指时间本是妄想安立之假相：当下一念觉照生起，如同暗室燃灯，哪怕万年黑暗当下化为乌有！若总在算计自己业障有多久、修行需多少年，正是死在时间虚妄牢笼里；唯有截断时间幻觉，直下承担现前一盏心灯，方得速疾解脱。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "weixinjue"]
+  },
+  {
+    "id": "faq-2889",
+    "question": "法眼宗为何能将华严宗极深之“六相圆融”化为禅门的活泼接引机锋？",
+    "answer": "华严宗的六相（总别、同异、成坏）原本是极严密深奥的教理体系，法眼文益禅师却能举重若轻地将其活化于宗门一问一答之中。他教人于“总相”（一心平等）中见“别相”（万象差殊），于“同相”（皆无自性）中见“异相”（各具妙用），于“成相”（缘起成立）中见“坏相”（当体本空）。理不离事，事不离理，使禅宗摆脱了狂禅落入顽空的危险，为宗门注入了严谨深沉的义理风骨。",
+    "relatedQa": "koan-665",
+    "relatedBooks": ["wenyiyulu", "renyantianmu"]
+  },
+  {
+    "id": "faq-2890",
+    "question": "文益禅师开示“取舍之心成巧伪”，在现代生活与职场决断中如何把握既认真负责又不落巧伪取舍？",
+    "answer": "“取舍之心成巧伪”并非教人消极避世、放弃世间责任，而是指内心不可执着得失成败而生起自私算计的机心。在职场与生活中，面临选择当尽人事、全力以赴，因缘聚则成，因缘散则坏（六相之成坏）；但在内心深处，不以成功而骄狂，不以挫折而沉沦，心境泰然无系。事上有严谨抉择，心上无贪嗔挂碍，这便是“随缘消旧业，任运著衣裳”的法眼智慧。",
+    "relatedQa": "koan-664",
+    "relatedBooks": ["wenyiyulu", "weixinjue"]
+  },
+  {
+    "id": "faq-2891",
+    "question": "法眼宗经由文益传天台德韶、德韶传永明延寿，在五代宋初的历史大变局中起到了怎样的关键作用？",
+    "answer": "唐末五代战乱连绵，佛教经籍大量损毁，禅林末流多趋于不立文字、放浪狂荡的险境。法眼文益及其法嗣德韶、延寿，在吴越与南唐两代国主护持下，一方面遣使赴高丽、日本请回天台等宗绝版典籍，复兴经教；另一方面以法眼宗“理事圆融”为中枢，撰百卷《宗镜录》融通禅净教律，彻底奠定了宋代以降中国佛教圆融统一的大格局，拯救了整个中原佛教法脉于危亡之中。",
+    "relatedQa": "koan-665",
+    "relatedBooks": ["wenyiyulu", "weixinjue", "wanshantongguiji"]
   }
 ];
 
