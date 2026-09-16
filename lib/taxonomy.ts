@@ -4454,6 +4454,83 @@ export const ZEN_PERSONS: PersonItem[] = [
       "xutangyulu",
       "tianmuzhongfengguanglu"
     ]
+  },
+  {
+    "id": "maming",
+    "name": "马鸣菩萨",
+    "title": "印度第十二祖·大乘论师·《起信论》造论者",
+    "era": "古印度（约公元1-2世纪）",
+    "lifeStory": "中天竺人，从第十一祖富那夜奢得法，为禅宗西天第十二祖。辩才宏博，善于音律，作梵呗悲调化导群机，马闻其音悲鸣不食，故号“马鸣”。造《大乘起信论》、《大庄严经论》、《佛所行赞》等，摧伏外道，大阐大乘心性法门。",
+    "teachings": "开创“一心开二门三大”之宏大理论框架，深阐真如内熏、阿赖耶识染净和合与水风识浪之喻，为汉传大乘佛教心性论与禅宗“即心是佛、直指人心”奠定根本理论基石。",
+    "quotes": [
+      "所言法者，谓众生心；是心则摄一切世间出世间法。依于此心，显示摩诃衍义。",
+      "一切诸法，唯依妄念而有差别；若离心念，则无一切境界之相。",
+      "一切法从本已来，离言说相，离名字相，离心缘相，毕竟平等，无有变异，不可破坏，唯是一心，故名真如。"
+    ],
+    "classics": [
+      "大乘起信论（实叉难陀译）",
+      "大乘起信论（真谛译）",
+      "佛所行赞"
+    ],
+    "relatedConcepts": [
+      "yixin-ermen",
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "rulaizang",
+      "tianzhen-zi-xing"
+    ],
+    "relatedMethods": [
+      "zhenru-sanmei-guan",
+      "guan-xin"
+    ],
+    "relatedPersons": [
+      "damo",
+      "huineng",
+      "shichanantuo",
+      "zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu",
+      "fusuoxingzan"
+    ]
+  },
+  {
+    "id": "shichanantuo",
+    "name": "实叉难陀",
+    "title": "唐代三藏法师·于阗高僧·八十华严与起信新译主译",
+    "era": "唐代（652-710）",
+    "lifeStory": "于阗国（今新疆和田）人，智度渊弘，善大小乘。武则天闻其德名，遣使迎请至洛阳主持大乘经典译事，先后主持翻译八十卷本《大方广佛华严经》与《大乘起信论》两卷本（唐译新本）、《入楞伽经》七卷等。贤首法藏亲参笔受。",
+    "teachings": "所译唐本《起信论》梵本完好，文从字顺，订补旧译脱漏，为汉传大乘心性学说与禅宗圆顿心印提供了极为坚实的权威善本。",
+    "quotes": [
+      "心真如者，即是一法界大总相法门体；若心生灭者，依如来藏故有生灭心。",
+      "当知一切染法净法皆悉相待，无有自相可说。"
+    ],
+    "classics": [
+      "大乘起信论（实叉难陀译）",
+      "华严经",
+      "入楞伽经"
+    ],
+    "relatedConcepts": [
+      "yixin-ermen",
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "rulaizang"
+    ],
+    "relatedMethods": [
+      "zhenru-sanmei-guan"
+    ],
+    "relatedPersons": [
+      "maming",
+      "zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "lengqiejing",
+      "chanyuan_zhuquanjiduxu"
+    ]
   }
 ];
 
@@ -12210,6 +12287,91 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["yuanxiang", "huiguang-fanzhao", "sijin-huanyuan"],
     "relatedPersons": ["yangshan-huiji"],
     "relatedBooks": ["yangshanyulu", "linji", "wumenguan"]
+  },
+  {
+    "id": "yixin-ermen",
+    "title": "一心二门",
+    "category": "心性本体",
+    "summary": "《大乘起信论》的核心总纲骨架。众生心即摩诃衍（大乘）之体，依此一心开显出心真如门与心生灭门。心真如门示体性空寂、不生不灭、离言绝相；心生灭门示依如来藏而有阿赖耶识，不生不灭与生灭和合，非一非异，具足染净因缘。二门不相离隔，真如为生灭之体，生灭为真如之用，二门各各总摄一切世间出世间法。禅宗明心见性，正是直悟此生灭妄心当下即是不生不灭之一心真如体。",
+    "quotes": [
+      "依一心法有二种门：一者心真如门，二者心生灭门。是二种门，各各总摄一切法。"
+    ],
+    "guidance": "参学者切莫将真如与生灭割裂为二事。动静起灭处，即是真如全体现前；离却烦恼波浪，别无如来藏海水可得。直下承当，无取无舍。",
+    "classicRef": "《大乘起信论（实叉难陀译）》、《禅源诸诠集都序》",
+    "relatedConcepts": [
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "rulaizang",
+      "yixing-sanmei"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "zongmi",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu",
+      "weixinjue"
+    ]
+  },
+  {
+    "id": "zhenru-neixun",
+    "title": "真如内熏",
+    "category": "修持机理",
+    "summary": "《起信论》揭示众生何以能发菩提心、断惑证真的根本内在原动力。真如本心不仅为诸法平等空性，更本具无量称性功德与无漏智慧光明力。此真如法性恒常于众生无明心中隐微发散熏习之力，令众生于生老病死痛苦中厌倦无常、乐求清净涅槃。无明熏真如令起幻妄诸染，真如熏无明令返本还源。禅宗所谓“本性自悟、元来是佛”，其生生不息之内在生机，即根源于真如本性的法尔内熏。",
+    "quotes": [
+      "以有真如法故，能熏习妄心；以熏习因缘力故，令妄心厌生死苦、乐求涅槃。"
+    ],
+    "guidance": "修行并非从心外造作出一尊新佛，而是顺应自性真如本具的内熏力量，歇下攀缘驰求。当厌苦求脱之心生起时，正当认取这便是本来面目在放光动地。",
+    "classicRef": "《大乘起信论（实叉难陀译）》卷上、《圆觉经》",
+    "relatedConcepts": [
+      "yixin-ermen",
+      "shuifeng-shilang",
+      "benlai-mianmu",
+      "huiguang-fanzhao"
+    ],
+    "relatedPersons": [
+      "maming",
+      "huineng",
+      "zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "yuanjuejing",
+      "lengyanjing"
+    ]
+  },
+  {
+    "id": "shuifeng-shilang",
+    "title": "水风识浪",
+    "category": "喻义机锋",
+    "summary": "起信论用以阐明自性清净心与无明妄念非一非异关系的千古胜喻。真如自性犹如大海之水，无明痴风动荡其体，遂泛起重重分别识浪（七转识与前六识的波澜起伏）。风起浪涌，然而水之湿性未曾迁变丝毫；一旦风息浪静，湿性依然如故。喻示众生虽在生死轮回中起惑造业，其自性清净真如之体无增无减。禅门宗匠借此喻直指：除波觅水是痴汉，知波即水当下清凉。",
+    "quotes": [
+      "譬如大海因风波动，水相风相不相舍离；水非是动，若风止灭，动相则灭，湿性不灭。"
+    ],
+    "guidance": "打坐参禅若死死压制念头、求一个毫无波浪的死水顽空，犹如搬石压草。当参悟念头波浪即是觉性之水，风来随风动，风歇自湛然，莫作水浪二见。",
+    "classicRef": "《大乘起信论（实叉难陀译）》、《楞伽经》卷一",
+    "relatedConcepts": [
+      "yixin-ermen",
+      "zhenru-neixun",
+      "rulaizang",
+      "wuxiu-wuzheng"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "damo"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "lengqiejing",
+      "xinxinming"
+    ]
   }
 ];
 
@@ -14471,6 +14633,41 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["yuanxiang", "sijin-huanyuan", "nongchan-bingzhong"],
     "relatedPersons": ["yangshan-huiji", "weishan-lingyou"],
     "relatedBooks": ["yangshanyulu", "renyantianmu", "weishanyulu"]
+  },
+  {
+    "id": "zhenru-sanmei-guan",
+    "title": "真如三昧止观法门",
+    "summary": "《大乘起信论》卷下所立大乘圆顿修持根本法门。行者端坐正身，摄念归心，不依气息、形色、空地，乃至见闻觉知等一切诸想悉皆离却。若心驰动散乱，随念摄之归于正念——正念者即是自心，了达心外无法。修习此止，渐能舍离诸取着；再起大悲正观，照见世间无常如梦如幻，不起枯寂断灭之见。止观双运，疾疾证入真如三昧，显发广大称性功德。",
+    "steps": [
+      "端坐正身：择清净空闲处，正身正坐，调和气息，远离愦闹纷扰。",
+      "摄念反照：心若起念驰散，随念息除，摄心安住正念，知一切所念皆由无明妄现，心外实无一尘可得。",
+      "离诸攀缘：除坐时修止，于行住坐卧一切时中，常念方便，随顺本源，不起分别妄执。",
+      "止观并济：止以防动，观以破寂。止不堕于顽空枯木，观不迷于生死境相，悲智兼运，融归一心。"
+    ],
+    "pitfalls": [
+      "误将“离念”当成百物不思、枯坐死灰的顽空断灭，堕入无记黑暗深渊；",
+      "稍得虚明静定便生法喜留恋，甚至产生幻觉神异，执以为奇，反成魔业；",
+      "执止废观，不修大悲救度与广观众生苦难，偏入小乘偏真自了汉蹊径。"
+    ],
+    "classicRef": "《大乘起信论（实叉难陀译）》卷下、《大乘起信论义记》",
+    "relatedConcepts": [
+      "yixin-ermen",
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "zhiguan",
+      "yixing-sanmei"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "jingangsanmeijing",
+      "lengqiejing"
+    ]
   }
 ];
 
@@ -26503,6 +26700,51 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["nongchan-bingzhong", "yuanxiang", "daily-zen"],
     "relatedPersons": ["yangshan-huiji", "weishan-lingyou"],
     "relatedBooks": ["yangshanyulu", "weishanyulu"]
+  },
+  {
+    "id": "koan-668",
+    "question": "真如水风识浪",
+    "answer": "动时全是水，静处水全动；若问湿何在，当下绝纤尘！",
+    "context": "马鸣菩萨于《起信论》中设譬云：“譬如大海因风波动，水相风相不相舍离，水非是动，若风止灭，动相则灭，湿性不灭。如是众生自性清净心，因无明风动，心与无明俱无形相不相舍离；心非生灭，若无明灭，相续相灭，智性不灭。”后代学人执着起心灭意，大德喝曰：“痴汉！波歇水在，波起水亦在，汝向何处求湿性？”",
+    "interpretation": "凡夫只认得滔天波浪（五欲六尘、烦恼起伏），迷头认影随波逐流；二乘钝根汉深畏波浪之苦，妄图抽干海水、打死妄心，反成焦芽败种。唯有大乘圆顿宗匠，一眼勘破动荡之波浪全由大海湿水而成。风动水动，动相虽幻，湿性真如湛然不动。歇得狂风，当下即是极乐净土；若狂风未歇，识得波即是水，亦不随境沉沦。",
+    "master": "马鸣菩萨",
+    "source": "《大乘起信论（实叉难陀译）》卷上、《宗镜录》卷五",
+    "relatedConcepts": [
+      "shuifeng-shilang",
+      "yixin-ermen",
+      "rulaizang"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun"
+    ]
+  },
+  {
+    "id": "koan-669",
+    "question": "摩尼宝在礛秽中",
+    "answer": "宝性无尘染，磨治方现奇；休夸本来佛，徒唤奈何兮！",
+    "context": "学人读《起信论》，见“真如本自具足无漏一切功德”，乃问尊宿：“众生本来成佛，心性本自圆成，何须更行六度万行、止观磨治？”尊宿举论中之语答曰：“摩尼宝珠在礛秽之中，其体虽极明洁，若不用巧便细细濯治，终不能得宝珠清净普雨大宝。众生性净真如亦然，无始客尘染着深厚，若不以对治方便历事炼心，如何得见天真佛身？”",
+    "interpretation": "宗门末流最易堕入野狐口头禅，口口声声“即心即佛”、“无修无证”，实际习气深重、贪嗔依旧。马鸣菩萨早在千年前便以“摩尼礛秽”警示后学：宝珠光明是本性天然（理顿悟），洗涤污垢是渐次熏修（事渐修）。理无碍而事不缺，方得理事圆融。若废修废行，只是粪坑里的顽石自夸为摩尼宝，何曾得到分文实益？",
+    "master": "马鸣菩萨",
+    "source": "《大乘起信论（实叉难陀译）》卷下、《景德传灯录》卷二",
+    "relatedConcepts": [
+      "yixin-ermen",
+      "zhenru-neixun",
+      "tianzhen-zi-xing"
+    ],
+    "relatedPersons": [
+      "maming",
+      "zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu"
+    ]
   }
 ];
 
@@ -50350,6 +50592,139 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "answer": "五代宋初战乱频繁，沩仰宗因道风温雅纯正、传人择选极严，且其九十七种圆相易被俗汉附会作图谶怪力之术，至宋初第四传后法脉多并入临济宗。然而，法眼融入宋明圆融大潮，沩仰父子道合与农禅并重之精神则深深铸就了中国佛教寺院‘农禅并重、一日不作一日不食’的实体制度基石；其‘思尽还源’与‘圆相借相显体’的妙旨，更成为后世临济、曹洞诸宗历代禅师提撕勘验的不祧法宝。法脉形迹虽隐，法身灵明常在，何曾有片刻断绝！",
     "relatedQa": "koan-667",
     "relatedBooks": ["yangshanyulu", "weishanyulu", "wujiazhengzongzan"]
+  },
+  {
+    "id": "faq-2904",
+    "question": "《大乘起信论》梁译本与唐译实叉难陀本有何渊源与异同？",
+    "answer": "《大乘起信论》相传为古印度马鸣菩萨所造。梁代真谛三藏首译一卷本，流通极广，然传本时有隐晦脱略；唐代天后武则天执政期间，于阗国实叉难陀三藏法师携梵本再度重译为两卷本，由贤首法藏等华严义学巨匠参译润色。新译本篇幅详备（1.33万余字），文字更加典赡严密，不仅对真如生灭二门、三细六粗染心、真如内熏机制有更详尽的推演，而且在真如三昧与信解行证对治门上补足了旧译脱略的要义，两者互参能够更全面地把握马鸣大士的心宗精髓。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun"
+    ]
+  },
+  {
+    "id": "faq-2905",
+    "question": "起信论立“一心二门三大”之架构，其核心义理与修行指向何在？",
+    "answer": "“一心”即是众生心，此心总摄世间与出世间一切诸法。“二门”即心真如门与心生灭门，真如门显示不生不灭之体性，生灭门显示缘起变化之相用。“三大”即体大（真如自性平等无减）、相大（本具如来藏无量清净功德）、用大（能生一切世间出世间善因果化度众生）。这一架构为修行指明：众生当下起心动念的生灭心，其体性正是不可破坏的真如体大；修行的方向绝非在生灭心外另求真如，而是依生灭门返归真如门，全妄即真，体相用圆满显现。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu"
+    ]
+  },
+  {
+    "id": "faq-2906",
+    "question": "何谓“心真如门”？为何说“离言说相、离名字相、离心缘相”？",
+    "answer": "心真如门即是一法界大总相法门的体性。所谓真如，意为真实不虚、如常不变。一切名相概念、言语宣说乃至思惟分别，皆是众生无明妄念对境界的投射与假立，并非诸法本体。若能息下能缘所缘之分别妄念，则一切万法平等不二、毕竟空寂、离诸变异，不可用言语形容，不可用名字安立，不可用心念捕捉，故云“离言说相、离名字相、离心缘相”。禅宗“不立文字，言语道断，心行处灭”，正是直透心真如门之当体体现。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "xinxinming"
+    ]
+  },
+  {
+    "id": "faq-2907",
+    "question": "何谓“心生灭门”？阿赖耶识在生灭门中扮演何种枢纽角色？",
+    "answer": "心生灭门是依如来藏本性而生起的染净缘起之门。在生灭门中，阿赖耶识扮演着至关重要的“和合枢纽”角色：所谓“不生不灭与生灭和合，非一非异，名为阿赖耶识”。它如同枢纽，一边连接不生不灭的清净如来藏体，一边连接随无明动荡而生的生死流转妄相。它能总摄一切法、能生一切法。正因为非一，所以众生会随无明沦入生死；正因为非异，所以染心当下即可返妄归真、转识成智。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "bashiguijusong"
+    ]
+  },
+  {
+    "id": "faq-2908",
+    "question": "起信论中著名的“水风波浪之喻”如何彻底破解了烦恼与菩提的断常之见？",
+    "answer": "凡夫见波浪翻滚，以为真实有生有灭，随烦恼起伏起惑造业，此落“常见”；二乘外道见波浪生厌，企图抽干海水以求宁静，甚至认为心体亦随波浪断灭，此落“断见”。马鸣大士以水风波浪为喻：大海之水因风动摇而起重重波浪，动相虽起，而水之“湿性”丝毫未曾改变；无明风一旦止歇，动相虽灭，湿性依然如故。这开示行者：烦恼波浪本由自性心水所现，莫向水外灭浪，但息无明痴风，万浪当下即是湛然心海。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "lengqiejing"
+    ]
+  },
+  {
+    "id": "faq-2909",
+    "question": "何谓“真如内熏”？众生发心求证菩提的真正原动力来自哪里？",
+    "answer": "众生处在长劫生死大梦中，为何竟然能厌苦求乐、发心学道？《起信论》回答：这是因为众生本具的真如法性具有不可思议的“内熏”功德。真如体性本具真如净法与无漏智慧，能法尔于众生无明心中持续发散熏习力量，令妄心渐渐觉知世间无常虚妄之苦，从而萌生求证菩提之大愿。若无真如内熏，众生即使遇到诸佛菩萨外缘开导，亦绝不可能发心起修。此义与六祖所说“自性动用，善知识劝令得见”完全同一鼻孔出气。",
+    "relatedQa": "koan-669",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "liuzufabaotanjing"
+    ]
+  },
+  {
+    "id": "faq-2910",
+    "question": "起信论所阐述的“三细六粗”染心阶段，禅宗行者当如何勘破？",
+    "answer": "起信论将从根本无明到世间业报的流转过程剖析为“三细”（业相、能见相、境界相）与“六粗”（智相、相续相、执取相、计名字相、起业相、业系苦相）。三细极其微细，属于阿赖耶识内部深层无明动念；六粗则演化为意识与末那识对外部尘境的贪嗔分别、造业受苦。禅宗修持“截断众流”、“打得念头死，许汝法身活”，正是由粗入细之逆流参验：先于日常境缘上歇下六粗之计较执着，进而回光返照、打破阿赖耶识幽暗微细动念，直透无生法忍。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "bashiguijusong"
+    ]
+  },
+  {
+    "id": "faq-2911",
+    "question": "为什么说“摩尼宝在礛秽中”的譬喻彻底纠正了野狐禅的恶取空？",
+    "answer": "禅门常有狂徒以“自性本清净、本来成佛”为托词，放浪形骸、废弃戒行修持，此为断灭恶取空。马鸣大士深见末世弊病，特立“摩尼宝在礛秽”之喻：摩尼宝珠虽然体性极其明洁光耀，但若深陷在污秽烂泥中，若不用清水明矾等种种巧便方便耐心磨治，宝珠之光终究无法显发，更不可能普雨七宝利益众生。同理，行者虽深信自性即佛，若不以六度、十善、真如三昧历事炼心濯除无始习气，终成粪中顽石，绝难亲证大觉果位。",
+    "relatedQa": "koan-669",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu"
+    ]
+  },
+  {
+    "id": "faq-2912",
+    "question": "起信论开示的“真如三昧”该如何实修？与达摩“壁观”、六祖“一行三昧”有何贯通？",
+    "answer": "起信论的真如三昧修持，要求行者于端坐中收摄散乱，心外无一境可缘，心内亦无一法可留。心若起动，随动即摄，了达所缘之境皆由妄心显现，心外别无实境；而自心亦无自相可得，离一切思惟戏论。这正是达摩祖师“外息诸缘，内心无喘，心如墙壁，可以入道”的理论蓝本；亦与六祖惠能大师在《坛经》中所立“于一切处行住坐卧，常行一直心”的“一行三昧”殊途同归，皆是直指自性本定、任运现成的大圆顿止观。",
+    "relatedQa": "koan-669",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "damodashiyangandongming",
+      "liuzufabaotanjing"
+    ]
+  },
+  {
+    "id": "faq-2913",
+    "question": "论中如何对治学人容易执堕的“人我见”与“法我见”？",
+    "answer": "起信论指出：执着五蕴身心为实我，贪恋不舍，名为人我见；执着涅槃、真如、佛性为某种实体之法，产生求取与住着，名无法我见。对治人我见，当观色受想行识五蕴刹那迁流变灭、空无自性，无有一实我可主宰；对治法我见，当观如来所说真如、法界、涅槃等名，皆是为破除众生妄执而设立的对治药方，实相之中无有一法可立，亦无一法可舍。若执着涅槃实有，则涅槃亦成生死锁链。唯双遣人法二执，方归本源清净法界。",
+    "relatedQa": "koan-669",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "jingangjing"
+    ]
+  },
+  {
+    "id": "faq-2914",
+    "question": "为什么说《大乘起信论》是中国禅宗“直指人心，见性成佛”的根本教理渊薮？",
+    "answer": "中国禅宗不同于印度早期部派佛教与纯粹应成中观，其鲜明特质在于高举“如来藏自性清净心”，直斥向外求佛为外道。《大乘起信论》正是将印度复杂的般若中观空性与唯识阿赖耶识缘起，统摄融通于“众生心即摩诃衍”的划时代圣典。达摩西来传授四卷《楞伽经》以印心，而《起信论》正是将《楞伽经》的一心如来藏义理条理化、体系化的大乘论典。自圭峰宗密大师会通禅教、至宋代永明延寿作《宗镜录》，无不以《起信论》之一心二门作为禅宗“不立文字”背后最坚固圆满的“教外别传”理论盾牌。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "lengqiejing",
+      "zongjinglu"
+    ]
+  },
+  {
+    "id": "faq-2915",
+    "question": "现代行者如何在喧嚣日常中运用《起信论》的心法安住自心？",
+    "answer": "现代生活信息庞杂、物欲炽盛，常人极易在得失毁誉中神魂颠倒。运用《起信论》心法有三大入手处：第一，识得“境界唯心”，面对外部境遇冲突时，省察一切焦虑皆由内心分别妄念而生，境本无情，当下熄灭执取；第二，修习“真如内熏”，在忙碌劳顿后留片刻安坐，反照自心本自宁静的本觉灵光，让内在自性觉性自然洗涤疲惫；第三，践行“水风波浪”，不苛求生活毫无挫折与波澜，知波浪全由水成，于动荡工作中随缘尽责而不染著，安享本来清净自性。",
+    "relatedQa": "koan-668",
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "chanyuan_zhuquanjiduxu"
+    ]
   }
 ];
 

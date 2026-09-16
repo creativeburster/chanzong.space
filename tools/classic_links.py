@@ -142,6 +142,7 @@ MAP = {
  'weixinjue': [('wanshantongguiji', '永明同著'), ('chanyuan_zhuquanjiduxu', '禅教会通'), ('lengyanjing', '心性融通'), ('dachengqixinlun', '一心二门')],
  'wenyiyulu': [('weixinjue', '法脉同宗'), ('renyantianmu', '法眼纲宗'), ('tanjing', '曹源一滴'), ('wumenguan', '当阳截断')],
  'yangshanyulu': [('weishanyulu', '沩仰父子'), ('baizhang', '农禅同脉'), ('renyantianmu', '圆相极则'), ('wenyiyulu', '五宗合璧')],
+ 'dachengqixinlunxinyi': [('dachengqixinlun', '梁译互参'), ('chanyuan_zhuquanjiduxu', '圭峰会通'), ('jingangsanmeijing', '一心印心'), ('weixinjue', '万法唯心')],
 }
 
 def main():

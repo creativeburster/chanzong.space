@@ -1316,4 +1316,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '踢天泰', pinyin: 'tī tiān tài', meaning: '仰山同修泰上座，性格高傲敏锐号称“踢天泰”，问百亿师子公案，被仰山一句“师子腰折也”勘破' },
     { char: '小释迦', pinyin: 'xiǎo shì jiā', meaning: '诸方禅林对仰山慧寂禅师之尊称，因其机辩智慧横溢、智鉴神明无双，犹如释迦如来再世' },
   ],
+  'dachengqixinlunxinyi': [
+    { char: '实叉难陀', pinyin: 'shí chā nán tuó', meaning: 'Siksananda，意为“学喜”，于阗国三藏高僧，武周时重译八十卷《华严经》与《大乘起信论》唐本' },
+    { char: '摩诃衍', pinyin: 'mó hē yǎn', meaning: 'Mahayana，梵语音译，意为“大乘”。论中以“众生心”为摩诃衍体，具足体大、相大、用大' },
+    { char: '阿赖耶识', pinyin: 'ā lài yé shí', meaning: 'Alayavijnana，藏识。本不生灭与生灭和合、非一非异，含藏一切善恶染净种子，起世间生灭流转' },
+    { char: '麁相细相', pinyin: 'cū xiàng xì xiàng', meaning: '麁同“粗”。指心识活动之六粗相（智相、相续、执着等）与三细相（无明业相、能见相、境界相）' },
+    { char: '真如内熏', pinyin: 'zhēn rú nèi xūn', meaning: '众生本具真如自性常恒不灭地在深处内熏无明，令凡夫在生死碰壁中自发产生厌苦求乐、发心向道之机' },
+    { char: '礛秽', pinyin: 'jiān huì', meaning: '礛通“礅”或矿石璞石。论中喻摩尼宝珠被裹在粗糙矿秽之中，须假方便修持洗涤方能显发光明' },
+    { char: '一异双遣', pinyin: 'yī yì shuāng qiǎn', meaning: '既不执为绝对同一（非一），亦不执为割裂两截（非异），双遣断常二边以显圆融中道' },
+    { char: '真如三昧', pinyin: 'zhēn rú sān mèi', meaning: '大乘至高正定，端坐寂静不依声色气息见闻觉知，心境两忘、息灭分别，为一切诸三昧根本' },
+    { char: '止观双运', pinyin: 'zhǐ guān shuāng yùn', meaning: '止息妄念分别（定）与澄明照见因果生灭（慧）平等持修，不偏不倚如车二轮、鸟之双翼' },
+    { char: '性离言说', pinyin: 'xìng lí yán shuō', meaning: '法性真如从本以来超越语言文字名相思维，凡有所说皆是借言遣言之权巧，不可死执言诠' },
+  ],
 };
