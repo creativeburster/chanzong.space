@@ -139,6 +139,7 @@ MAP = {
   'shiertimenlun': [('zhonglun', '中观姊妹论'), ('baoxingwangzhenglun', '龙树同造'), ('jingangjing', '般若空义'), ('xinjing', '真空实相')],
   'jingangsanmeijing': [('sixingguan', '二入四行源头'), ('lengqiejing', '达摩印心姊妹'), ('tanjing', '本觉自性'), ('jingangjing', '金刚无住')],
   'pingshiyulu': [('xutangyulu', '虚堂同刹'), ('tianmuzhongfengguanglu', '元禅并照'), ('biyanlu', '颂古击节'), ('linji', '临济正宗')],
+ 'weixinjue': [('wanshantongguiji', '永明同著'), ('chanyuan_zhuquanjiduxu', '禅教会通'), ('lengyanjing', '心性融通'), ('dachengqixinlun', '一心二门')],
 }
 
 def main():
@@ -182,10 +183,7 @@ def main():
         lines.insert(insert_at, '')
         lines.insert(insert_at + 1, line)
         open(path, 'w', encoding='utf-8', newline='\n').write('\n'.join(lines))
-        updated += 1
-    print(f'写入连线 {updated} 部 | 已有跳过 {skipped    "zongjinglu": ["tanjing", "lengqiejing", "yuanjuejing", "wudenghuiyuan"],
-    "zhiyuelu": ["wudenghuiyuan", "jingdechuandenglu", "biyanlu", "zongjinglu"],
-} 部')
+    print(f'写入连线 {updated} 部 | 已有跳过 {skipped} 部')
 
 if __name__ == '__main__':
     main()

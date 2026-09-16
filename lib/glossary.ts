@@ -1280,4 +1280,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '惺惺长在', pinyin: 'xīng xīng cháng zài', meaning: '宗门保任心印，指自性灵明觉知在二六时中时刻昭昭不昧，不堕昏沉散乱' },
     { char: '文武火', pinyin: 'wén wǔ huǒ', meaning: '本指道家炼丹火候，宗门借喻执着于渐修阶梯的知见妄执，“扑灭文武火”即顿超阶级' },
   ],
+  'weixinjue': [
+    { char: '渤澥', pinyin: 'bó xiè', meaning: '大海、大水汇聚之处。论中比喻一滴水之润性与大海汪洋无二无别，圣凡自性同等' },
+    { char: '摐然', pinyin: 'chuāng rán', meaning: '纷繁杂乱、众相撞击显现之貌。论指自性绝待独立，何惧世间万象摐然纷扰' },
+    { char: '尼乾', pinyin: 'ní gān', meaning: '即尼乾陀（Nirgrantha），古印度外道六师之一，执著无惭无愧及苦行之派，禅师斥其神光下胆魄尽消' },
+    { char: '伏𭡠', pinyin: 'fú ān', meaning: '强行压制、遏捺之意。指盲目静坐强按压抑妄心之病，如以石压草，非究竟解脱' },
+    { char: '眚影', pinyin: 'shěng yǐng', meaning: '眚（shěng）为眼疾。指眼睛生翳所妄见的虚假影子，比喻凡夫妄见外境而妄争是非' },
+    { char: '漏卮', pinyin: 'lòu zhī', meaning: '卮（zhī）为古代酒器。漏卮指有漏洞的杯皿，比喻以无常妄心追求常乐如汲火焰之水灌漏卮' },
+    { char: '逸翮', pinyin: 'yì hé', meaning: '翮（hé）为鸟翎翅。指搏击长空、自由高飞之大鸟，喻悟达一心者身心自在放旷' },
+    { char: '郊逵', pinyin: 'jiāo kuí', meaning: '逵（kuí）为通达之四通大道。指人间郊野通衢，喻悟道者游戏人间、随缘度日' },
+    { char: '书绅', pinyin: 'shū shēn', meaning: '绅为古代士大夫束在腰间的大带。书绅即将要言佩戒书写于带上以时时自警，劝人铭记一心妙旨' },
+    { char: '纯阴纯阳', pinyin: 'chún yīn chún yáng', meaning: '《定慧相资歌》借易理妙喻：偏修定为纯阴烂物坏道芽，偏修慧为纯阳枯物成知见，必须定慧等持' },
+  ],
 };
