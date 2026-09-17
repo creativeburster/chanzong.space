@@ -151,6 +151,7 @@ MAP = {
   'chuanfazhengzonglun': [('chuanfazhengzongdingzutu', '定祖姊妹'), ('tanjing', '曹溪法本'), ('linji', '正宗源流'), ('wumenguan', '透关宗眼')],
   'xisouyulu': [('xutangyulu', '同门法兄'), ('mianxianyulu', '杨岐高足'), ('haiyinyulu', '宋元杨岐'), ('gaofengyulu', '雪岩同门')],
   'damoxinjinganxin': [('xuemaicong', '传心正眼'), ('poxianglun', '观心总摄'), ('sixingguan', '二入四行'), ('wuxinglun', '见性真宗')],
+  'wujianxianduyulu': [('fangshanwenbaoyulu', '本师师承'), ('tianmuzhongfengguanglu', '东南二甘露门'), ('pingshiyulu', '元代并世'), ('wumenguan', '无字宗风')],
 }
 
 

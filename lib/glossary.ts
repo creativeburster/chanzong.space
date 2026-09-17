@@ -1422,5 +1422,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '遍计', pinyin: 'biàn jì', meaning: '即“遍计所执性”。指凡夫于本无实质之五蕴幻法上，妄生周遍推求计较我执与法执之病。' },
     { char: '勤措', pinyin: 'qín cuò', meaning: '刻意造作、勉强安立。“不观善而勤措”指自性本善，无需在心外刻意造作安立善法。' },
   ],
+  'wujianxianduyulu': [
+    { char: '倾湫', pinyin: 'qīng qiū', meaning: '湫读 qiū，深水潭。倾湫比喻水流倾注、江河倒悬，禅宗形容机锋辩才极其迅猛浩荡。' },
+    { char: '筌蹄', pinyin: 'quán tí', meaning: '筌是捕鱼竹器，蹄是捕兔陷阱。语出《庄子》“得鱼忘筌，得兔忘蹄”，佛门比喻文字教相只是借以悟心的工具。' },
+    { char: '嗟脐', pinyin: 'jiē qí', meaning: '即“噬脐莫及”。自己咬不到自己的肚脐，比喻事后痛悔莫及。' },
+    { char: '鹘臭', pinyin: 'hú chòu', meaning: '鹘即雕鹘、猛禽，气味腥臊。“鹘臭布衫”禅林特指学人死守所悟境界不放之严重法执大病。' },
+    { char: '拶破', pinyin: 'zā pò', meaning: '拶读 zā，逼迫、压挤至极处。“拶破面门”比喻在机锋逼拶绝境中彻底击碎疑情、洞见本来面目。' },
+    { char: '关棙子', pinyin: 'guān lì zǐ', meaning: '机轴、枢纽关键。宗门常比喻透脱生死、开启正法眼藏的向上机窍枢纽。' },
+    { char: '挃', pinyin: 'zhì', meaning: '以拄杖或手指猛戳、撞刺。宗师在勘辨学人关键处突然施加之峻烈动作。' },
+    { char: '红蓼', pinyin: 'hóng liǎo', meaning: '水边沙洲生长之草本植物，秋季开红色碎花，禅诗中常用以渲染高古清冷之水天法界。' },
+  ],
 };
 
