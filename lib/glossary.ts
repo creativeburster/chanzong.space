@@ -1388,4 +1388,17 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '兀兀', pinyin: 'wù wù', meaning: '端坐不动、独立自持貌。“兀兀静坐不为理迷”，指深入宴坐修持而不沉迷于枯寂空理' },
     { char: '汩汩', pinyin: 'gǔ gǔ', meaning: '水流急促貌，借指红尘世事如流水般纷繁奔忙。“汩汩应酬不为事碍”，指涉世应物而不染自心' },
   ],
+  'chuanfazhengzonglun': [
+    { char: '摐然', pinyin: 'chuāng rán', meaning: '声音宏亮或顿悟朗然发响之貌。论中形容真机发显、豁然破除群疑之警拔气象' },
+    { char: '呶呶', pinyin: 'náo náo', meaning: '纷乱喧噪不休貌。“如此呶呶，虽累世无以验正”，指义学僧侣对祖脉纷乱无据之争吵' },
+    { char: '訩訩', pinyin: 'xiōng xiōng', meaning: '訩同“汹”，喧哗争辩不决之貌。形容末世学者执着断章残简而妄起是非纷争' },
+    { char: '摈', pinyin: 'bìn', meaning: '排斥、弃绝或黜退。论中指义学者出于宗派门户偏见而横加排挤达摩传法实相' },
+    { char: '罽宾', pinyin: 'jì bīn', meaning: '古代西域大国（今克什米尔一带），西天第二十四祖师子尊者于此弘法并为法国殉难' },
+    { char: '昙曜', pinyin: 'tán yào', meaning: '北魏高僧、云冈石窟开凿者。太武灭佛后与吉迦夜共译《付法藏传》，因时代劫难文多残缺' },
+    { char: '筌蹄', pinyin: 'quán tí', meaning: '庄子名喻，筌用于捕鱼，蹄用于捕兔。比喻语言文字不过是得悟心性实相之工具与途径' },
+    { char: '觖望', pinyin: 'jué wàng', meaning: '觖读 jué，心怀不满、怨望或失望。指义学学者因不能通达禅宗向上幽微而心生怨怼' },
+    { char: '掊击', pinyin: 'pǒu jī', meaning: '掊读 pǒu，抨击、打击与攻讦。形容义学者各执己见、无理攻击西天祖师正统法统' },
+    { char: '爝火', pinyin: 'jué huǒ', meaning: '小火、微弱火炬。《庄子》“日月出矣而爝火不息”，喻义学小见比之先佛大智如爝火比之日月' },
+  ],
 };
+

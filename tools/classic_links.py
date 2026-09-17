@@ -148,7 +148,9 @@ MAP = {
   'ruzhongxuzhi': [('chanyuanqinggui', '清规祖本'), ('ruzhongriyong', '日用细行'), ('huanzhu-anqinggui', '宋元相承'), ('chixiu-baizhang-qinggui', '清规集大成')],
   'pangjushiyulu': [('mazu', '顿悟师承'), ('tanjing', '在家真修'), ('biyanlu', '雪片评唱'), ('wumenguan', '机锋透关')],
   'haiyinyulu': [('gaofengyulu', '同门法兄'), ('yangqiyulu', '杨岐祖脉'), ('jianguanyulu', '宋元宗风'), ('linji', '正宗源流')],
+  'chuanfazhengzonglun': [('chuanfazhengzongdingzutu', '定祖姊妹'), ('tanjing', '曹溪法本'), ('linji', '正宗源流'), ('wumenguan', '透关宗眼')],
 }
+
 
 def main():
     manifest = json.load(open('manifest.json', encoding='utf-8'))
