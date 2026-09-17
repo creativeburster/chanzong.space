@@ -1328,4 +1328,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '止观双运', pinyin: 'zhǐ guān shuāng yùn', meaning: '止息妄念分别（定）与澄明照见因果生灭（慧）平等持修，不偏不倚如车二轮、鸟之双翼' },
     { char: '性离言说', pinyin: 'xìng lí yán shuō', meaning: '法性真如从本以来超越语言文字名相思维，凡有所说皆是借言遣言之权巧，不可死执言诠' },
   ],
+  'jianguanyulu': [
+    { char: '鋩', pinyin: 'máng', meaning: '刀剑锋刃锐利之尖端。“长剑倚天，锋鋩不露”，喻宗门向上真机隐密不可测度' },
+    { char: '噇', pinyin: 'chuáng', meaning: '大口吞咽、饱食。“聚头噇饭不谈禅”，宗门俚语指朴实过堂吃饭、不搞口头狂禅虚套' },
+    { char: '藞苴', pinyin: 'lǎ zhū', meaning: '粗疏、任性率直貌。禅师自嘲为“个样藞苴川僧”，指巴蜀僧人朴实刚直、不事雕琢' },
+    { char: '餔', pinyin: 'bū', meaning: '食、吃。《楚辞》“何不餔其糟而啜其醨”，宗门借指随俗和光同尘之行径' },
+    { char: '啜', pinyin: 'chuò', meaning: '饮、大口喝。《楚辞》“啜其醨”，指饮薄酒' },
+    { char: '醨', pinyin: 'lí', meaning: '味薄之酒。“餔糟啜醨”喻凡夫与俗儒随波逐流、放浪形骸之态' },
+    { char: '白醭', pinyin: 'bái bú', meaning: '发霉所生白霉毛。“口生白醭面生尘”，极言禅僧深山苦行、久不说法之赤贫清峻' },
+    { char: '揑', pinyin: 'niē', meaning: '同“捏”，以手搓捏。“揑双拳，衣露肘”，形容行者精进赤裸之态' },
+    { char: '笤菷', pinyin: 'tiáo zhǒu', meaning: '即笤帚、扫帚。“拾得携苕菷”，描写拾得大士清扫心地尘埃之画意机锋' },
+    { char: '綆', pinyin: 'gěng', meaning: '汲水之井绳。“短綆汲深泉”，喻短浅才识不可妄窥宗门深邃本原' },
+  ],
 };
