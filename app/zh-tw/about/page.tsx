@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { STATS } from '@/lib/stats';
 import AboutClient from '@/app/about/AboutClient';
 
 export const metadata: Metadata = {
   title: '關於本站',
-  description: '禪宗知識庫（chanzong.space）的編輯原則、文本來源、版權聲明與聯繫方式。本站收錄130部禪宗核心典籍，文本源自CBETA電子佛典集成與大正藏，經人工校對與白話翻譯。',
+  description: `禪宗知識庫（chanzong.space）的編輯原則、文本來源、版權聲明與聯繫方式。本站收錄${STATS.classics}部禪宗核心典籍，文本源自CBETA電子佛典集成與大正藏，經人工校對與白話翻譯。`,
   alternates: {
     canonical: '/zh-tw/about',
     languages: {
