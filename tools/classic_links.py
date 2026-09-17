@@ -144,6 +144,7 @@ MAP = {
  'yangshanyulu': [('weishanyulu', '沩仰父子'), ('baizhang', '农禅同脉'), ('renyantianmu', '圆相极则'), ('wenyiyulu', '五宗合璧')],
  'dachengqixinlunxinyi': [('dachengqixinlun', '梁译互参'), ('chanyuan_zhuquanjiduxu', '圭峰会通'), ('jingangsanmeijing', '一心印心'), ('weixinjue', '万法唯心')],
  'jianguanyulu': [('linji', '临济正脉'), ('yangqiyulu', '杨岐宗风'), ('shishuangchuyuan', '慈明骨鲠'), ('xutangyulu', '宋禅同调')],
+ 'shunzhonglun': [('zhonglun', '中观所本'), ('shiertimenlun', '中观姊妹'), ('shedachenglunben', '无著释论'), ('jingangjing', '般若真空')],
 }
 
 def main():

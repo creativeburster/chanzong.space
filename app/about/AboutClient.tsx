@@ -10,6 +10,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { BookOpen, FileText, Users, Shield, Mail } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { ContactModal } from '@/components/ContactModal';
+import { STATS } from '@/lib/stats';
 
 export default function AboutClient() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function AboutClient() {
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
-      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={130} />
+      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={STATS.classics} />
 
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
@@ -35,7 +36,7 @@ export default function AboutClient() {
               </div>
               <div className="prose prose-slate max-w-none">
                 <p className="text-[15px] leading-relaxed text-slate-700">
-                  {t('禅宗知识库(chanzong.space)是一个非营利性的禅宗文献数字化项目，旨在将禅宗核心典籍以结构化、可检索、可对照的方式呈现给现代读者。本站收录131部禅宗核心典籍，涵盖从达摩祖师四论、六祖坛经到宋代五家七宗灯录语录、高丽与日本禅法，并构建了祖师(213位)、概念(443个)、法门(102种)、公案(615则)、问答(2879条)五类知识实体的交叉网络。')}
+                  {t(`禅宗知识库(chanzong.space)是一个非营利性的禅宗文献数字化项目，旨在将禅宗核心典籍以结构化、可检索、可对照的方式呈现给现代读者。本站收录${STATS.classics}部禅宗核心典籍，涵盖从达摩祖师四论、六祖坛经到宋代五家七宗灯录语录、高丽与日本禅法，并构建了祖师(${STATS.persons}位)、概念(${STATS.concepts}个)、法门(${STATS.methods}种)、公案(${STATS.koans}则)、问答(${STATS.faqs}条)五类知识实体的交叉网络。`)}
                 </p>
                 <p className="text-[15px] leading-relaxed text-slate-700 mt-4">
                   {t('所有典籍均提供原文与白话对照翻译，每部经典配有核心概念、相关公案、修持法门、人物关联与常见问答。本站不隶属于任何宗教机构或商业组织，内容开放供学术研究、修行参考与文化传播使用。')}

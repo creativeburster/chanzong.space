@@ -1340,4 +1340,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '笤菷', pinyin: 'tiáo zhǒu', meaning: '即笤帚、扫帚。“拾得携苕菷”，描写拾得大士清扫心地尘埃之画意机锋' },
     { char: '綆', pinyin: 'gěng', meaning: '汲水之井绳。“短綆汲深泉”，喻短浅才识不可妄窥宗门深邃本原' },
   ],
+  'shunzhonglun': [
+    { char: '那伽夷离淳那', pinyin: 'nà jiā yí lí chún nà', meaning: '梵语 Nāgārjuna 之音译全称，意为“龙胜”或“龙树菩萨”，大乘中观学派开山鼻祖' },
+    { char: '阿僧佉', pinyin: 'ā sēng qū', meaning: '梵语 Asaṅga 之音译，意为“无著”，即大乘瑜伽行派（唯识学）开山宗师无著菩萨' },
+    { char: '瞿昙流支', pinyin: 'qú tán liú zhī', meaning: '北魏时期中印度婆罗门高僧、译经三藏法师，全称瞿昙般若流支，曾译《顺中论》《唯识二十论》等' },
+    { char: '憍尸迦', pinyin: 'jiāo shī jiā', meaning: '梵语 Kauśika 之音译，三十三天之主帝释天的姓氏，大乘般若经中常作为佛陀问答对告众' },
+    { char: '阿含', pinyin: 'ā hán', meaning: '梵语 Āgama 之音译，意为“圣教”或“传承圣法”，泛指佛陀所传授之教法法门与契经' },
+    { char: '修多罗', pinyin: 'xiū duō luó', meaning: '梵语 Sūtra 之音译，意为“贯穿线”，指三藏十二部经中之契经，佛陀说法之经文' },
+    { char: '二际', pinyin: 'èr jì', meaning: '生死际与涅槃际、世间与出世间二边界限。“无二际”指二边荡尽、平等无碍之中道实相' },
+    { char: '遮', pinyin: 'zhē', meaning: '遮止、破除、否定。中观般若学以“遮情显理”破除学人执实执常之一切妄见' },
+    { char: '谛相', pinyin: 'dì xiàng', meaning: '诸法究竟真理之真实相状，远离有无、一异、生灭等一切分别戏论' },
+    { char: '戏论', pinyin: 'xì lùn', meaning: '梵语 Prapañca，指违背诸法空寂实相、起于凡情分别的一切虚妄名相、言说概念与思辨葛藤' },
+  ],
 };
