@@ -1400,5 +1400,17 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '掊击', pinyin: 'pǒu jī', meaning: '掊读 pǒu，抨击、打击与攻讦。形容义学者各执己见、无理攻击西天祖师正统法统' },
     { char: '爝火', pinyin: 'jué huǒ', meaning: '小火、微弱火炬。《庄子》“日月出矣而爝火不息”，喻义学小见比之先佛大智如爝火比之日月' },
   ],
+  'xisouyulu': [
+    { char: '叟', pinyin: 'sǒu', meaning: '年老的长者，在禅林中常用于宗师德高望重之尊称或老僧自谦之词，如希叟绍昙' },
+    { char: '昙', pinyin: 'tán', meaning: '梵语“优昙钵花”之略译，意指灵瑞之花，在佛门中象征如来妙法希有难遭' },
+    { char: '阇维', pinyin: 'shé wéi', meaning: '亦作荼毗，梵语 jhālita 之音译，指僧人圆寂后的火化仪式，后多结晶出舍利' },
+    { char: '鋟梓', pinyin: 'qīn zǐ', meaning: '鋟读 qīn，镌刻雕板之意；梓指梓木雕版。鋟梓即指将宗师语录刻版印刷、流通天下' },
+    { char: '单阏', pinyin: 'chán yān', meaning: '古代岁星纪年法中的地支卯年，序文中“屠维单阏”指己卯年（南宋度宗咸淳五年）' },
+    { char: '毳衣', pinyin: 'cuì yī', meaning: '毳读 cuì，细毛所织之衣，借指禅僧云水行脚、清苦修持所着之百衲僧袍' },
+    { char: '挑荠', pinyin: 'tiāo jì', meaning: '采挖田间野菜之劳作，禅门中常用以象征不离平常日用、即事而真的农禅生活' },
+    { char: '图邈', pinyin: 'tú miǎo', meaning: '邈读 miǎo，描绘、画像之意。宗门赞佛祖画像、祖师道影多称“图邈真容”' },
+    { char: '巨鳌', pinyin: 'jù áo', meaning: '传说中在大海负山之巨大神龟，宗门常比喻顶天立地、超越常格之顶尖佛门龙象' },
+    { char: '金钉子', pinyin: 'jīn dīng zǐ', meaning: '禅林赞叹宗师道行刚坚、手段铁硬，如铮铮金钉能立定脚跟、撑拓宗门家法' },
+  ],
 };
 

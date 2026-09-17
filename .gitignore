@@ -38,3 +38,5 @@ tools/backlinks/.browser_profile/
 # 诊断截图与待发布原始文本
 screenshots/
 downloaded_classics/
+
+.vercel

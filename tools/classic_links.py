@@ -149,6 +149,7 @@ MAP = {
   'pangjushiyulu': [('mazu', '顿悟师承'), ('tanjing', '在家真修'), ('biyanlu', '雪片评唱'), ('wumenguan', '机锋透关')],
   'haiyinyulu': [('gaofengyulu', '同门法兄'), ('yangqiyulu', '杨岐祖脉'), ('jianguanyulu', '宋元宗风'), ('linji', '正宗源流')],
   'chuanfazhengzonglun': [('chuanfazhengzongdingzutu', '定祖姊妹'), ('tanjing', '曹溪法本'), ('linji', '正宗源流'), ('wumenguan', '透关宗眼')],
+  'xisouyulu': [('xutangyulu', '同门法兄'), ('mianxianyulu', '杨岐高足'), ('haiyinyulu', '宋元杨岐'), ('gaofengyulu', '雪岩同门')],
 }
 
 
