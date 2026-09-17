@@ -22,13 +22,13 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
   const { t, getHref } = useLang();
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6] dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex flex-col transition-colors">
-      <TopHeader />
+    <div className="min-h-screen flex bg-[#FAF9F6] dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors">
+      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
 
-      <div className="flex-1 flex max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 gap-8">
-        <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
+      <div className="flex-1 flex flex-col min-w-0">
+        <TopHeader />
 
-        <main className="flex-1 min-w-0">
+        <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-10 space-y-8">
           <Breadcrumb
             items={[
               { label: t('书籍'), href: getHref('/books') },
@@ -38,7 +38,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
           />
 
           {/* 专题 Header 英雄区 */}
-          <header className="mt-4 mb-8 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur-sm relative overflow-hidden shadow-xs">
+          <header className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur-sm relative overflow-hidden shadow-xs">
             <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
             
             <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -69,7 +69,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
 
           {/* 考据要点 */}
           {collection.historicalNotes && collection.historicalNotes.length > 0 && (
-            <section className="mb-10">
+            <section>
               <div className="flex items-center gap-2 mb-4">
                 <History className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                 <h2 className="text-xl font-serif font-bold text-slate-900 dark:text-slate-100">
@@ -89,7 +89,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
           )}
 
           {/* 六门法脉导览阵列 */}
-          <section className="mb-12">
+          <section>
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">
                 <Compass className="w-5 h-5 text-amber-600 dark:text-amber-400" />
@@ -149,7 +149,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
           </section>
 
           {/* 关联人物与概念 */}
-          <section className="mb-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6">
             <div className="bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs">
               <div className="flex items-center gap-2 mb-3">
                 <Users className="w-4 h-4 text-amber-600 dark:text-amber-400" />
@@ -197,9 +197,10 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
             </div>
           </section>
         </main>
+
+        <SiteFooter />
       </div>
 
-      <SiteFooter />
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
     </div>
   );
