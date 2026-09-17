@@ -147,6 +147,7 @@ MAP = {
   'shunzhonglun': [('zhonglun', '中观所本'), ('shiertimenlun', '中观姊妹'), ('shedachenglunben', '无著释论'), ('jingangjing', '般若真空')],
   'ruzhongxuzhi': [('chanyuanqinggui', '清规祖本'), ('ruzhongriyong', '日用细行'), ('huanzhu-anqinggui', '宋元相承'), ('chixiu-baizhang-qinggui', '清规集大成')],
   'pangjushiyulu': [('mazu', '顿悟师承'), ('tanjing', '在家真修'), ('biyanlu', '雪片评唱'), ('wumenguan', '机锋透关')],
+  'haiyinyulu': [('gaofengyulu', '同门法兄'), ('yangqiyulu', '杨岐祖脉'), ('jianguanyulu', '宋元宗风'), ('linji', '正宗源流')],
 }
 
 def main():

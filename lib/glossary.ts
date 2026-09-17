@@ -1376,4 +1376,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '十硕', pinyin: 'shí dàn', meaning: '硕通“石”，古代容量重量单位，十石为极多极沉重。“十硕油麻树上摊”，喻妄念难伏' },
     { char: '于頔', pinyin: 'yú dí', meaning: '唐代襄阳节度使、相国，深通佛法，礼事庞居士。居士圆寂时枕其膝而化，頔为之编集语录' },
   ],
+  'haiyinyulu': [
+    { char: '足踣', pinyin: 'zú bó', meaning: '踣读 bó，失足跌倒、跌跤。“雨后度蕉溪，足踣，顿有省”，海印禅师因跌跤顿悟之因缘' },
+    { char: '竹篦', pinyin: 'zhú bì', meaning: '禅宗师资勘验逼拶学人之竹制教具。“雪岩挥竹一击”，当头截断学人之思量分别' },
+    { char: '行幐', pinyin: 'xíng téng', meaning: '幐读 téng，行脚僧所用之绑腿或行囊行李。“解行幐搔痒”，形容行脚参学者放下万缘之洒脱' },
+    { char: '虀粥', pinyin: 'jī zhōu', meaning: '虀同“齑”，腌菜、咸菜配稀粥。借指禅门丛林极其朴素清贫之僧食生活' },
+    { char: '饘粥', pinyin: 'zhān zhōu', meaning: '饘读 zhān，稠稀粥。“饘粥稍亏，或丐或质”，极言寺院缺粮时禅师借贷当衣以安大众之苦心' },
+    { char: '麕至', pinyin: 'jūn zhì', meaning: '麕同“麇”，如群鹿般成群蜂拥而至。“自尔学者麕至”，形容参学者云集依止海印禅师之盛况' },
+    { char: '闍维', pinyin: 'shé wéi', meaning: '梵语 Jhapita（荼毗）之异译，指佛教高僧圆寂后火化遗体之清规葬礼' },
+    { char: '彚征', pinyin: 'huì zhēng', meaning: '彚同“汇”，群聚而行、次第推进。《易经》“拔茅茹以其汇征吉”，借指学人群集共修' },
+    { char: '兀兀', pinyin: 'wù wù', meaning: '端坐不动、独立自持貌。“兀兀静坐不为理迷”，指深入宴坐修持而不沉迷于枯寂空理' },
+    { char: '汩汩', pinyin: 'gǔ gǔ', meaning: '水流急促貌，借指红尘世事如流水般纷繁奔忙。“汩汩应酬不为事碍”，指涉世应物而不染自心' },
+  ],
 };
