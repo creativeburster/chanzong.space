@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server';
 import manifest from '@/manifest.json';
 import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
+import { ZEN_COLLECTIONS } from '@/lib/collections';
 
 export const dynamic = 'force-static';
 
@@ -81,6 +82,16 @@ export function GET(_req: NextRequest) {
       tradPath: `/zh-tw/persons/${p.id}`,
       freq: 'yearly',
       prio: 0.8,
+    });
+  }
+
+  // Collections (专题合集)
+  for (const col of ZEN_COLLECTIONS) {
+    entries.push({
+      simpPath: `/collections/${col.id}`,
+      tradPath: `/zh-tw/collections/${col.id}`,
+      freq: 'monthly',
+      prio: 0.85,
     });
   }
 

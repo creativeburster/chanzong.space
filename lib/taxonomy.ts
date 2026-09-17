@@ -124,7 +124,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["yi-wei-zhen-shi", "ben-jue-li-ci", "self-nature","mind-transmission","direct-pointing","non-mind"],
     "relatedMethods": ["four-practices"],
     "relatedPersons": ["yuanxiao", "huike"],
-    "relatedBooks": ["jingangsanmeijing", "xuemaicong","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","zhangzhi","zhengdaoge","wuran"]
+    "relatedBooks": ["damoxinjinganxin", "jingangsanmeijing", "xuemaicong","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","zhangzhi","zhengdaoge","wuran"]
   },
   {
     "id": "huike",
@@ -12590,7 +12590,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": [
       "yixin-ermen",
       "shuifeng-shilang",
-      "benlai-mianmu",
+      "wuxin-jueguan",
       "huiguang-fanzhao"
     ],
     "relatedPersons": [
@@ -12647,7 +12647,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "quanshou-quanfang",
       "wushuo-wuwen",
       "banghe",
-      "benlai-mianmu"
+      "wuxin-jueguan"
     ],
     "relatedPersons": [
       "jianguan-ziyi",
@@ -12884,7 +12884,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "guidance": "参修切莫向外寻求依靠与伴侣。反观那个能见能闻、不与任何烦恼境相结伴的清净觉照是谁？当下承当，即见本来面目。",
     "classicRef": "《庞居士语录》、《马祖语录》、《五灯会元》",
     "relatedConcepts": [
-      "benlai-mianmu",
+      "wuxin-jueguan",
       "danyuan-kongzhu-suoyou",
       "wu-nian"
     ],
@@ -12963,7 +12963,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": [
       "zi-duan-qishou",
       "yi-bu-ting-xuan",
-      "benlai-mianmu",
+      "wuxin-jueguan",
       "wuzhu"
     ],
     "relatedPersons": [
@@ -13160,6 +13160,67 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedBooks": [
       "xisouyulu",
       "xutangyulu"
+    ]
+  },
+  {
+    "id": "ren-zhu-fa-fa-zhu-ren",
+    "title": "人逐法与法逐人",
+    "category": "宗门心法",
+    "summary": "达摩《安心法门》直指迷悟之根本升降机纽。迷时心随物转、被外界经教名相所牵制羁绊（人逐法）；悟时境随心转、万象森罗皆成自性活泼大用（法逐人）。解则以灵明心识统摄物质色相，迷则被外在色相所奴役拘禁。",
+    "classicRef": "达摩大师心经颂与安心法门",
+    "relatedConcepts": [
+      "guanzhao-bore",
+      "wenzi-chan",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xuemaicong",
+      "poxianglun"
+    ]
+  },
+  {
+    "id": "bo-re-xin-song",
+    "title": "般若心经颂",
+    "category": "印心经藏",
+    "summary": "达摩祖师逐句注解《心经》之五言悟道诗颂。以‘智慧清净海’贯穿色空不二与涅槃实相，融通大乘般若与如来藏妙体，为禅门‘借教悟宗、见性明心’之至高典范。",
+    "classicRef": "达摩大师心经颂与安心法门",
+    "relatedConcepts": [
+      "guanzhao-bore",
+      "jianxing-chengfo",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xinjing",
+      "wuxinglun"
+    ]
+  },
+  {
+    "id": "xin-xin-xin-song",
+    "title": "心心心颂",
+    "category": "明心见性",
+    "summary": "达摩祖师阐发自性心体大无外、细无内之千古印心极则。‘宽时遍法界，窄也不容针’，不厌恶亦不勤善，超越凡夫小乘之一切对待界限，超然独立为宗门祖意之源泉。",
+    "classicRef": "达摩大师心经颂与安心法门",
+    "relatedConcepts": [
+      "ren-zhu-fa-fa-zhu-ren",
+      "wuxin-jueguan",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xuemaicong"
     ]
   }
 ];
@@ -13792,7 +13853,7 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedBooks": ["wenshu","anxin"]
   },
   {
-    "id": "guanxin-fa",
+    "id": "guanzhao-bore",
     "title": "观心法门",
     "summary": "禅宗最根本的返照自性法门。达摩破相论立“唯观心一法总摄诸行”。不向外境攀缘，回光返照自心念念起处，照见妄念本无自性、无来无去，心境双亡，直契真如。此法门直指人心、见性成佛，不历渐次阶级，行者于日常行住坐卧四威仪中体悟当下一念不生，体露真常，破除一切妄想情执，显发本自具足之清净自性。",
     "origin": "达摩祖师《破相论》：“唯观心一法，总摄诸行，最为省要。”智者大师《观心论》；黄檗断际禅师：“莫向外求，但观自心，心外无法。”历代禅门尊宿代代相传，皆以本分事接人，以大机大用破除学人知见葛藤，为宗门修心了办生死之根本指引。",
@@ -15478,7 +15539,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "changjian-yitian",
       "quanshou-quanfang",
       "kanhuatou",
-      "benlai-mianmu"
+      "wuxin-jueguan"
     ],
     "relatedPersons": [
       "jianguan-ziyi",
@@ -15672,6 +15733,32 @@ export const ZEN_METHODS: MethodItem[] = [
       "xisouyulu",
       "baizhang",
       "ruzhongxuzhi"
+    ]
+  },
+  {
+    "id": "ji-shi-ji-fa",
+    "title": "即事即法安心门",
+    "summary": "达摩大师所示最雄浑拔萃之实相行持法门。修道者不离世间一切劳作与逆顺遭遇，深知心体即是法界，跳踉颠蹶悉在法界之内，于现实作务中体认心法不二，生起无碍大机大用。",
+    "classicRef": "达摩大师心经颂与安心法门",
+    "steps": [
+      "回光返照自心，息灭一切向外攀缘有无之分别妄心，亲见己之法王。",
+      "日常作务中不离觉照，于起居劳作乃至逆顺颠蹶中，直观当下皆是法界自性大用。",
+      "不执著文字虚理，在现实人事磨砺中培植雄健道力，任物不任己，安详无碍。"
+    ],
+    "pitfalls": [
+      "死守文字经卷推度名相，致使道力软弱；或误将造恶当解脱，借口罪性空而放纵情欲。"
+    ],
+    "relatedConcepts": [
+      "ren-zhu-fa-fa-zhu-ren",
+      "guanzhao-bore"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "sixingguan",
+      "poxianglun"
     ]
   }
 ];
@@ -27874,7 +27961,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": [
       "ruzhong-zhifa",
       "daily-zen",
-      "benlai-mianmu"
+      "wuxin-jueguan"
     ],
     "relatedPersons": [
       "baizhang",
@@ -27895,7 +27982,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "《庞居士语录》卷上、《碧岩录》第四十二则",
     "relatedConcepts": [
       "buyu-wanfa-weilv",
-      "benlai-mianmu"
+      "wuxin-jueguan"
     ],
     "relatedPersons": [
       "pang-yun"
@@ -27937,7 +28024,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "source": "《海印昭如禅师三会语录》卷末塔铭",
     "relatedConcepts": [
       "miwu-liangwang",
-      "benlai-mianmu",
+      "wuxin-jueguan",
       "wuchang"
     ],
     "relatedPersons": [
@@ -27979,7 +28066,7 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": [
       "sanzang-lingfu",
       "jiaowai-biechuan-zhengzong",
-      "benlai-mianmu"
+      "wuxin-jueguan"
     ],
     "relatedPersons": [
       "bodhidharma",
@@ -28050,6 +28137,44 @@ export const ZEN_KOANS: KoanItem[] = [
     ],
     "relatedBooks": [
       "xisouyulu"
+    ]
+  },
+  {
+    "id": "koan-684",
+    "question": "达摩安心迷悟关",
+    "answer": "迷时人逐法，解时法逐人。解则识摄色，迷则色摄识！",
+    "context": "有学人请问菩提达摩大师：“世间人饱读千部经论，为何终日学道而不得道？”大师端坐开示云：“由见己故不得道。己者我也！迷时人逐法，解时法逐人。解则识摄色，迷则色摄识。但有心分别计较，自身现量者悉皆是梦！若识心寂灭无一动念处，是名正觉。”学人拟议，大师断喝：“若以法界入法界，即是痴人！”学人于言下豁然大悟，礼拜而退。",
+    "interpretation": "学人向外寻求经教规矩，皆是人逐法，被文字名相所转；及至明心见性，方知一切万法皆由自心显现，乃是法逐人。达摩一语截断求道妄心，令学者直下承担主人翁。",
+    "master": "菩提达摩",
+    "source": "少室六门第四门安心法门",
+    "relatedConcepts": [
+      "ren-zhu-fa-fa-zhu-ren",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "koan-685",
+    "question": "达摩心心心颂",
+    "answer": "心心心，难可寻。宽时遍法界，窄也不容针！",
+    "context": "门人请问达摩大师：“诸法既空，毕竟阿谁修道？心性本体究竟作何形状？”大师微吟《心心心颂》以示大众：“心心心，难可寻。宽时遍法界，窄也不容针！亦不睹恶而生嫌，亦不观善而勤措。亦不舍智而近愚，亦不抱迷而就悟。达大道兮过量，通佛心兮出度。不与凡圣同躔，超然名之曰祖！”大众闻之，能所俱空，默契真如。",
+    "interpretation": "达摩祖师以诗偈极谈本源心体：若觅其相，了不可得；若论其用，横遍十方、竖穷三际。不落善恶、迷悟、智愚之二元对立，方见法身圆陀陀、赤洒洒之本来面目。",
+    "master": "菩提达摩",
+    "source": "少室六门第四门安心法门",
+    "relatedConcepts": [
+      "xin-xin-xin-song",
+      "ren-zhu-fa-fa-zhu-ren"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin"
     ]
   }
 ];
@@ -52929,6 +53054,78 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedQa": "koan-682",
     "relatedBooks": [
       "xisouyulu"
+    ]
+  },
+  {
+    "id": "faq-3006",
+    "question": "达摩祖师为何以五言诗偈逐句注解《心经》？这对后世理解禅门“不立文字”有何纠偏意义？",
+    "answer": "世人常误将禅门‘不立文字’理解为彻底废弃经教，导致狂禅末流滋生。达摩祖师亲撰《心经颂》，以五言诗偈逐句阐发《般若心经》，证明宗门直指人心乃是深深植根于大乘般若第一义深密智慧之中。文字是借以显体现相之指月指，不立文字是不滞于文字知见，绝非文盲盲修，达摩以此为后世确立了禅教互融之崇高典范。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3007",
+    "question": "《心经颂》云“经花糸一道，万劫众贤钦”，如何理解这一比喻所阐发的三藏与心性之一贯关系？",
+    "answer": "‘经花糸一道’以极其优美的意象，将三藏十二部经教比作繁茂盛开的五色香花，而将贯穿这些经花的丝线比作自性实相。三世诸佛所说八万四千法门千差万别，但都是由‘见性明心’这同一道金线穿引而成。离此心性金线，一切经卷便成了散乱落花；得此自性灵针，则千经万论全归于一实相印。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3008",
+    "question": "颂文“神咒除三毒，心花五叶开”，为何被历代丛林视作达摩祖师预记禅宗东土一花五叶之千古悬记？",
+    "answer": "达摩在注解心经末尾大明神咒时，赋诗‘神咒除三毒，心花五叶开。果熟根盘结，步步见如来’。这与祖师当年传法慧可大师时所留‘吾本来兹土，传法救迷情；一花开五叶，结果自然成’之付法偈遥相呼应。印证了大乘般若密意一旦扫除众生贪嗔痴三毒，必将感召东方禅门宗派蕃衍、万众见性的宏大历史果实。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3009",
+    "question": "《安心法门》开篇即言“迷时人逐法，解时法逐人；解则识摄色，迷则色摄识”，此语之参修关窍何在？",
+    "answer": "此句是达摩安心法门的最高纲领。凡夫在迷乱时，心神被外界形形色色的规矩教理所驱使奴役，心随境转（人逐法），境为主人而我为奴仆；而在彻悟解脱时，行者自性光明作主，一切天地万象皆成了法身妙用（法逐人）。学人参修当反观：自己是在向外寻找一个叫‘佛法’的客观教条，还是直下歇心承当自心法王？一念迷悟，天地悬隔。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3010",
+    "question": "达摩开示“从事实中得解者气力壮，从文字解者气力弱”，对于今日宗门参究有何警醒？",
+    "answer": "达摩在此严厉警示学道人万不可只在口头纸墨上寻章摘句作知解会。仅从书本推理理解佛法的人，道力如同纸糊，一遇现实烦恼与生死考验便全盘瓦解（气力弱）；唯有在日常生活的切实行履、艰苦作务与磨砺对境中悟透心性的人，才能生起坚不可摧的金刚定慧与大丈夫气骨（气力壮）。修禅当重实修实证，切忌口头禅。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3011",
+    "question": "文中“深从汝种种运为，跳踉颠蹶，悉不出法界，亦不入法界”，如何体现禅宗“即事即法”的当下无碍？",
+    "answer": "达摩破除学人将‘清净法界’看作远离尘世另一空间的二元妄想。行者的自性心体本来完完全全就是整个真如法界，无论是在平坦大道安详端坐，还是在坎坷生活中跳跃奔走、失足跌跤（跳踉颠蹶），这一切动静举措从来不曾离开自心法界毫厘。只要心中无忆想分别，当下行住坐卧全是法身游历，无需头上安头再去‘求入’法界。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3012",
+    "question": "达摩《心心心颂》云“宽时遍法界，窄也不容针……不与凡圣同躔，超然名之曰祖”，其宗骨意旨为何？",
+    "answer": "《心心心颂》是达摩全篇的心髓结晶。‘宽遍法界’道其大用无外，‘窄不容针’示其本体极净一尘不立；后文更强调不因见恶而生嗔嫌，不因见善而刻意造作，亦不舍智求愚、抱迷就悟，彻底将善恶、迷悟、智愚两头双遣。不落凡圣阶级，迥脱对待樊笼，唯有此等顶天立地、自性独朗之大丈夫，方堪称担荷佛祖慧命之一代宗师。",
+    "relatedQa": "koan-685",
+    "relatedBooks": [
+      "damoxinjinganxin"
+    ]
+  },
+  {
+    "id": "faq-3013",
+    "question": "《少室六门》全集为何将《心经颂》置于首门、将《安心法门》置于第四门？这两门在六门体系中有何枢纽作用？",
+    "answer": "《少室六门》有着极其严密的法义结构：第一门《心经颂》以般若空慧立其体，居卷首破除学者凡情知见；第二门《破相论》由体起用，阐明唯观心一法总摄万行；第三门《二种入》落实于理入与行入做工夫；第四门《安心法门》承前启后，直指心法不二、遣除人法对待；第五门《悟性论》破除断常证入无生；第六门《血脉论》以心传心圆满收束。第一门与第四门是六门体系中通达大乘般若与当下安心之不可或缺的双重枢纽。",
+    "relatedQa": "koan-684",
+    "relatedBooks": [
+      "damoxinjinganxin"
     ]
   }
 ];

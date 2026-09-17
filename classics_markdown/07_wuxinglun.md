@@ -1,8 +1,10 @@
 # 菩提达摩大师悟性论
 
-> **作者**: 菩提达摩 | **分类**: 达摩四论
+> **作者**: 菩提达摩 | **分类**: 达摩四论  
+> **所属合集**：[《少室六门》（菩提达摩根本顿悟法门总汇）](/collections/shaoshiliumen)（第五门 · 悟性论）
 
-🔗 经典连线：[菩提达摩大师血脉论](/classics/xuemaicong)（血脉同源） · [菩提达摩大师破相论](/classics/poxianglun)（达摩论） · [菩提达摩大师无心论](/classics/wuxinlun)（无心一脉）
+🔗 经典连线：[少室六门专题总览](/collections/shaoshiliumen)（达摩六门） · [菩提达摩大师血脉论](/classics/xuemaicong)（血脉同源） · [菩提达摩大师破相论](/classics/poxianglun)（达摩论） · [菩提达摩大师无心论](/classics/wuxinlun)（无心一脉）
+
 
 ## 💡 现代白话导读与核心旨趣
 

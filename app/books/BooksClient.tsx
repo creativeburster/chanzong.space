@@ -7,7 +7,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
 import { SearchModal } from '@/components/SearchModal';
 import manifest from '@/manifest.json';
-import { BookOpen, ChevronRight, Search, ChevronDown, Library, ArrowRight } from 'lucide-react';
+import { BookOpen, ChevronRight, Search, ChevronDown, Library, ArrowRight, Scroll, Sparkles } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { useLang } from '@/context/LangContext';
@@ -89,6 +89,35 @@ export default function BooksClient() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* 专题合集推荐横幅 */}
+          <div className="mb-6 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-800 dark:text-amber-300 flex items-center justify-center shrink-0">
+                <Scroll className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-600/15 text-amber-800 dark:text-amber-300 border border-amber-500/30">
+                    {t('专题合集')}
+                  </span>
+                  <h2 className="text-base font-bold font-serif-zen text-slate-900 dark:text-slate-100">
+                    {t('少室六门 · 菩提达摩根本顿悟法门总汇')}
+                  </h2>
+                </div>
+                <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                  {t('收录心经颂、破相论、二种入、安心法门、悟性论、血脉论全六门，100% 完整收录并汇编法脉。')}
+                </p>
+              </div>
+            </div>
+            <Link
+              href={getHref('/collections/shaoshiliumen')}
+              className="shrink-0 px-4 py-2 rounded-xl text-xs font-semibold bg-amber-700 hover:bg-amber-800 text-white shadow-xs transition-colors flex items-center gap-1.5"
+            >
+              <span>{t('浏览六门全景')}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
 
           {/* Filter Bar */}

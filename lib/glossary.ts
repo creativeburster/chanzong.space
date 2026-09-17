@@ -1412,5 +1412,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '巨鳌', pinyin: 'jù áo', meaning: '传说中在大海负山之巨大神龟，宗门常比喻顶天立地、超越常格之顶尖佛门龙象' },
     { char: '金钉子', pinyin: 'jīn dīng zǐ', meaning: '禅林赞叹宗师道行刚坚、手段铁硬，如铮铮金钉能立定脚跟、撑拓宗门家法' },
   ],
+  'damoxinjinganxin': [
+    { char: '糸', pinyin: 'mì', meaning: '微细之丝线。典籍中以“经花糸一道”比喻以一贯实相心印贯穿八万四千经教花冠。' },
+    { char: '躔', pinyin: 'chán', meaning: '天体日月运行之轨辙轨道。引申为凡夫与圣人混杂同行之阶次，“不与凡圣同躔”即超越凡圣对待。' },
+    { char: '跳踉', pinyin: 'tiào liàng', meaning: '跳跃奔走、腾跃动作之貌。比喻日常一切粗重运为与形体举措。' },
+    { char: '颠蹶', pinyin: 'diān jué', meaning: '跌倒挫折、失足扑地之貌。比喻生活中的磕磕碰碰与逆顺遭遇。' },
+    { char: '谩', pinyin: 'màn', meaning: '欺瞒、蒙骗。“执相自心谩”指执着相状其实全被自心虚妄分别所蒙骗。' },
+    { char: '现量', pinyin: 'xiàn liàng', meaning: '佛学因明三量之一。指无分别、离名言、直觉亲证当下现前之客观境界；凡夫执自心现量为实法则成妄想。' },
+    { char: '遍计', pinyin: 'biàn jì', meaning: '即“遍计所执性”。指凡夫于本无实质之五蕴幻法上，妄生周遍推求计较我执与法执之病。' },
+    { char: '勤措', pinyin: 'qín cuò', meaning: '刻意造作、勉强安立。“不观善而勤措”指自性本善，无需在心外刻意造作安立善法。' },
+  ],
 };
 

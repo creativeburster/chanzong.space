@@ -1,8 +1,10 @@
 # 菩提达摩大师入道四行观
 
-> **作者**: 菩提达摩 | **分类**: 达摩四论
+> **作者**: 菩提达摩 | **分类**: 达摩四论  
+> **所属合集**：[《少室六门》（菩提达摩根本顿悟法门总汇）](/collections/shaoshiliumen)（第三门 · 二种入）
 
-🔗 经典连线：[入道安心要方便法门](/classics/anxin)（四行安心） · [菩提达摩大师血脉论](/classics/xuemaicong)（血脉同源） · [最上乘论](/classics/zuishangcheng)（东山续灯）
+🔗 经典连线：[少室六门专题总览](/collections/shaoshiliumen)（达摩六门） · [入道安心要方便法门](/classics/anxin)（四行安心） · [菩提达摩大师血脉论](/classics/xuemaicong)（血脉同源） · [最上乘论](/classics/zuishangcheng)（东山续灯）
+
 
 ## 💡 现代白话导读与核心旨趣
 

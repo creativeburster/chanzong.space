@@ -1,8 +1,9 @@
 # 菩提达摩大师血脉论
 
-> **作者**: 菩提达摩 | **分类**: 达摩四论
+> **作者**: 菩提达摩 | **分类**: 达摩四论  
+> **所属合集**：[《少室六门》（菩提达摩根本顿悟法门总汇）](/collections/shaoshiliumen)（第六门 · 血脉论）
 
-🔗 经典连线：[菩提达摩大师入道四行观](/classics/sixingguan)（达摩四行） · [菩提达摩大师悟性论](/classics/wuxinglun)（达摩论上） · [六祖坛经](/classics/tanjing)（曹溪承之）
+🔗 经典连线：[少室六门专题总览](/collections/shaoshiliumen)（达摩六门） · [菩提达摩大师入道四行观](/classics/sixingguan)（达摩四行） · [菩提达摩大师悟性论](/classics/wuxinglun)（达摩论上） · [六祖坛经](/classics/tanjing)（曹溪承之）
 
 ## 💡 现代白话导读与核心旨趣
 

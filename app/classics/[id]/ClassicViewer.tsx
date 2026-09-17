@@ -23,6 +23,7 @@ import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { ZEN_GLOSSARY } from '@/lib/glossary';
+import { getCollectionByClassicId } from '@/lib/collections';
 import {
   ChevronLeft,
   ChevronRight,
@@ -234,6 +235,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
   const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
   const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
+  const parentCollection = useMemo(() => getCollectionByClassicId(meta.id), [meta.id]);
 
   // 自动提取卡片数据
   const extracted = extractCards(rawContent);
@@ -292,13 +294,32 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
         {/* Top Banner Header */}
         <div className={`${currentTheme.bannerBg} border-b ${currentTheme.cardBorder} py-6 sm:py-10 shadow-sm transition-colors duration-300`}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <Breadcrumb items={[{ label: t('经典'), href: '/books' }, { label: t(meta.title) }]} />
+            <Breadcrumb
+              items={[
+                { label: t('经典'), href: getHref('/books') },
+                ...(parentCollection
+                  ? [{ label: t(parentCollection.title), href: getHref(`/collections/${parentCollection.id}`) }]
+                  : []),
+                { label: t(meta.title) },
+              ]}
+            />
 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <span className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 inline-block mb-2 sm:mb-3">
-                  {t(meta.category)}
-                </span>
+                <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
+                  <span className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 inline-block">
+                    {t(meta.category)}
+                  </span>
+                  {parentCollection && (
+                    <Link
+                      href={getHref(`/collections/${parentCollection.id}`)}
+                      className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-amber-500/15 text-amber-800 dark:text-amber-200 border border-amber-500/30 hover:bg-amber-500/25 transition-all inline-flex items-center gap-1.5 shadow-2xs"
+                    >
+                      <Sparkles className="w-3 h-3 text-amber-600 dark:text-amber-400" />
+                      <span>{t('合集')}：{t(parentCollection.title)}</span>
+                    </Link>
+                  )}
+                </div>
                 <h1 className={`text-2xl sm:text-4xl font-bold font-serif-zen ${currentTheme.bannerText} leading-tight`}>
                   {t(meta.title)}
                 </h1>
