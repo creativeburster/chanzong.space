@@ -1,6 +1,8 @@
 # 平石如砥禅师语录
 
 > **作者**：元·平石如砥 著  
+
+🔗 经典连线：[虚堂和尚语录](/classics/xutangyulu)（虚堂同刹） · [天目中峰和尚广录](/classics/tianmuzhongfengguanglu)（元禅并照） · [佛果圆悟禅师碧岩录](/classics/biyanlu)（颂古击节） · [镇州临济慧照禅师语录](/classics/linji)（临济正宗）
 > **分类**：禅师语录 · 临济宗风  
 > **相关经典**：[虚堂同刹 · 虚堂和尚语录](/classics/xutangyulu) | [元禅并照 · 天目中峰和尚广录](/classics/tianmuzhongfengguanglu) | [颂古击节 · 碧岩录](/classics/biyanlu) | [临济正宗 · 临济录](/classics/linji)
 

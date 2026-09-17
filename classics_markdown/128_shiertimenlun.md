@@ -1,6 +1,8 @@
 # 十二门论
 
 > **作者**：龙树菩萨 造 · 后秦·鸠摩罗什 译  
+
+🔗 经典连线：[中论](/classics/zhonglun)（中观姊妹论） · [宝行王正论](/classics/baoxingwangzhenglun)（龙树同造） · [金刚般若波罗蜜经](/classics/jingangjing)（般若空义） · [般若波罗蜜多心经](/classics/xinjing)（真空实相）
 > **分类**：中观论典 · 大乘论藏  
 > **相关经典**：[中观姊妹论 · 中论](/classics/zhonglun) | [龙树同造 · 宝行王正论](/classics/baoxingwangzhenglun) | [般若空义 · 金刚般若波罗蜜经](/classics/jingangjing) | [真空实相 · 般若波罗蜜多心经](/classics/xinjing)
 

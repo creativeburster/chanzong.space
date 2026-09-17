@@ -1,6 +1,8 @@
 # 金刚三昧经
 
 > **作者**：失译人名（达摩印心根本经）  
+
+🔗 经典连线：[菩提达摩大师入道四行观](/classics/sixingguan)（二入四行源头） · [楞伽阿跋多罗宝经](/classics/lengqiejing)（达摩印心姊妹） · [六祖坛经](/classics/tanjing)（本觉自性） · [金刚般若波罗蜜经](/classics/jingangjing)（金刚无住）
 > **分类**：大乘经藏 · 达摩印心经  
 > **相关经典**：[二入四行源头 · 菩提达摩大师入道四行观](/classics/sixingguan) | [达摩印心姊妹 · 楞伽阿跋多罗宝经](/classics/lengqiejing) | [本觉自性 · 六祖坛经](/classics/tanjing) | [金刚无住 · 金刚般若波罗蜜经](/classics/jingangjing)
 

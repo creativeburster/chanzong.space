@@ -1364,4 +1364,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '唱衣', pinyin: 'chàng yī', meaning: '僧人迁化示寂后，维那在大众面前将亡僧遗留衣钵资具逐件唱名估价、公开结缘分配的法事' },
     { char: '起龛', pinyin: 'qǐ kān', meaning: '龛即僧人的灵柩棺木。举行起龛佛事后，四众手执柴薪随送灵柩前往化身窑举行荼毗火化' },
   ],
+  'pangjushiyulu': [
+    { char: '幞头', pinyin: 'fú tóu', meaning: '古代男子裹发的软巾或纱帽。丹霞与庞居士相戏时互相戴掷，以表脱略俗相与僧相' },
+    { char: '笊篱', pinyin: 'zhào lí', meaning: '用竹篾编制的带柄漏勺，用于捞物滤水。庞居士大悟后散尽家财，在市井卖笊篱自给' },
+    { char: '漉篱', pinyin: 'lù lí', meaning: '即笊篱。庞居士与女儿灵照编织漉篱以糊口，示现身居贫困而自心安闲富足' },
+    { char: '团圞', pinyin: 'tuán luán', meaning: '团圆、圆满围坐。“大家团圞头，共说无生话”，描写全家悟道其乐融融之天伦佛境' },
+    { char: '阇黎', pinyin: 'shé lí', meaning: '梵语 Ācārya（阿阇梨）的略称，尊称有德行的僧宝高僧。“然阇黎”，指丹霞天然禅师' },
+    { char: '搊', pinyin: 'chōu', meaning: '揪住、扯住、抓住。“士便搊住其僧”，宗门逼拶学人当下直面真如的峻烈机锋' },
+    { char: '槖子', pinyin: 'tuò zǐ', meaning: '托子、茶托，承托茶盏之器皿。庞居士与松山吃茶，举茶托以显人人具足之本性' },
+    { char: '老耄', pinyin: 'lǎo mào', meaning: '耄读 mào，年逾八十或年事极高。“阿师老耄，不啻庞公”，居士与则川相互打趣年事' },
+    { char: '十硕', pinyin: 'shí dàn', meaning: '硕通“石”，古代容量重量单位，十石为极多极沉重。“十硕油麻树上摊”，喻妄念难伏' },
+    { char: '于頔', pinyin: 'yú dí', meaning: '唐代襄阳节度使、相国，深通佛法，礼事庞居士。居士圆寂时枕其膝而化，頔为之编集语录' },
+  ],
 };
