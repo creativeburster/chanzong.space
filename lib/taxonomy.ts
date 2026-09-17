@@ -326,12 +326,14 @@ export const ZEN_PERSONS: PersonItem[] = [
       "不昧因果。 —答野狐老人（百丈野狐公案）"
 ],
     "classics": [
+      "入众须知",
       "百丈怀海禅师语录"
 ],
     "relatedConcepts": ["self-nature","ordinary-mind"],
     "relatedMethods": ["banghe","daily-zen"],
     "relatedPersons": ["mazu","huangbo"],
-    "relatedBooks": ["baizhang","huangbo","chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedBooks": [
+      "ruzhongxuzhi","baizhang","huangbo","chanyuanqinggui","chixiu-baizhang-qinggui"]
   },
   {
     "id": "huangbo",
@@ -2451,13 +2453,15 @@ export const ZEN_PERSONS: PersonItem[] = [
       "若无定力，甘伏死门。掩目空归，宛然流浪。 —《坐禅仪》"
 ],
     "classics": [
+      "入众须知",
       "坐禅仪",
       "禅苑清规"
 ],
     "relatedConcepts": ["samadhi","zuochan-weiyi","chanding-jiwu"],
     "relatedMethods": ["zuochan-yi"],
     "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["dongshanyulu", "huanwuyulu", "chanyuanqinggui", "chixiu-baizhang-qinggui"]
+    "relatedBooks": [
+      "ruzhongxuzhi","dongshanyulu", "huanwuyulu", "chanyuanqinggui", "chixiu-baizhang-qinggui"]
   },
   {
     "id": "buddha",
@@ -4352,7 +4356,8 @@ export const ZEN_PERSONS: PersonItem[] = [
       "baoxingwangzhenglun",
       "dachengqixinlun"
     ]
-  },
+  }
+,
   {
     "id": "sengrui",
     "name": "僧叡",
@@ -4610,6 +4615,38 @@ export const ZEN_PERSONS: PersonItem[] = [
       "shunzhonglun",
       "zhonglun",
       "shedachenglunben"
+    ]
+  },
+  {
+    "id": "jieshi-zhiying",
+    "name": "介石智瑛",
+    "title": "宋代临济名僧 / 天台国清主持",
+    "era": "南宋 (12世纪)",
+    "lifeStory": "介石智瑛禅师（1089—1173），号介石，南宋临济宗大德。早年遍参诸方，深明向上玄旨。历主台州国清寺、明州雪窦寺等名刹，道风高峻，领众严肃，深得丛林爱戴。南宋隆兴、乾道年间，朝廷宰执多加崇奉。及寿逾八旬，示疾预知时至，特上书丞相宰辅辞免身后恤典与朝廷补助，嘱咐门人不事虚饰号泣，一切悉遵佛祖古规，安详坐化，世称古佛再来。《入众须知》特载其《介石瑛和尚遗书上宰辅免补助》以为全天下丛林法范，彰显宗门视世名如脱弊履的清峻风骨。",
+    "teachings": "智瑛禅师主张丛林修持以“清规为骨，戒行如冰，知足守道，毫无苟且”为本；提撕学人身无长物即是大解脱，临终遗书谢绝官家补助资助，彻底斩断对名利尘缘之沾染，以实际行持垂示丛林大解脱风范。",
+    "quotes": [
+      "幻躯行止，皆有定数；四大将散，何假外物？",
+      "知足守道，贫而乐道；清规在躬，虽处纷华而心常寂。"
+    ],
+    "classics": [
+      "入众须知"
+    ],
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "changyi-faze",
+      "qinggui"
+    ],
+    "relatedMethods": [
+      "guotang-zhanbo-fa"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "ruzhongriyong"
     ]
   },
 ];
@@ -12047,7 +12084,8 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "baoxingwangzhenglun",
       "xinxinming"
     ]
-  },
+  }
+,
   {
     "id": "shi-er-men-guan",
     "title": "十二门观",
@@ -12610,6 +12648,86 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "shunzhonglun",
       "zhonglun",
       "zhaolun"
+    ]
+  },
+  {
+    "id": "ruzhong-zhifa",
+    "title": "入众之法",
+    "category": "丛林规度",
+    "summary": "禅宗千百大众共住共修之根本威仪行律与身心准则。《入众须知》开篇立纲：“入众之法，睡不在前，起不在后；二更一点开枕，三更五点起……揭帘轻垂手，出堂忌拖鞋。”指明修行并非口头逞俊，而是必须在集体生活微细处化除我见私欲——少取汤水牙药以顾念后人，轻展门帘软步缓行以安顿众念，登厕持咒护指以惜福利幽。借外在极严密规矩陶冶身心，令千百学人如水乳相融，即是平常心即道之切实体现。",
+    "quotes": [
+      "入众之法，睡不在前，起不在后。二更一点开枕，三更五点起。",
+      "揭帘轻垂手，出堂忌拖鞋。少取汤水，少使牙药，处处以大众为念。"
+    ],
+    "guidance": "现代修行人或日常居士切莫轻视外在仪态。在工作与家庭中，关照他人感受、说话低声温和、起居井然有序、随手关灯省水，即是将古刹“入众之法”化为当下安顿自他的生活禅。",
+    "classicRef": "《入众须知》、《入众日用》、《禅苑清规》",
+    "relatedConcepts": [
+      "shicun-wuguan",
+      "changyi-faze",
+      "daily-zen",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze",
+      "jieshi-zhiying"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "shicun-wuguan",
+    "title": "食存五观",
+    "category": "止观实修",
+    "summary": "禅门僧众过堂用斋时端坐内照所作的五种神圣思维观想。《入众须知》规范受食前必须内作五观：“一、计功多少，量彼来处；二、忖己德行全缺，应供难消；三、防心离过，贪等为宗；四、正似良药，为疗形枯；五、为成道业，方受此食。”通过五观，行者在饮食面前彻底降伏对美味的贪爱与对劣食的嫌恶，视食物为治愈身心羸弱的良药，将日常饱腹升华为成就菩提慧命之殊胜资粮。",
+    "quotes": [
+      "计功多少，量彼来处；忖己德行全缺，应供难消；防心离过，贪等为宗；正似良药，为疗形枯；为成道业，方受此食。",
+      "若受食时，当愿众生：禅悦为食，法喜充溢。"
+    ],
+    "guidance": "每日用餐前静默片刻，默念五观：感恩食物来之不易，检点自己今日是否虚度光阴，克制暴饮暴食与贪念，把用餐化作一次感恩大地与滋养觉照的正念修持。",
+    "classicRef": "《入众须知》、《敕修百丈清规》、《禅苑清规》",
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "daily-zen",
+      "sanlun-kongji"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "chixiubaizhangqinggui"
+    ]
+  },
+  {
+    "id": "changyi-faze",
+    "title": "唱衣法则",
+    "category": "丛林规度",
+    "summary": "禅僧圆寂示寂后，维那在大众面前将其遗留衣钵资具逐件唱名估价、公开结缘或归入常住之法定清规。《入众须知》详备“尊宿住持唱衣、平僧大夜念诵、送亡唱衣”等仪制：僧人一旦撒手西归，生前所积之袈裟法器彻底归公结缘，资财用于追荐功德或归常住，绝无子孙私相授受之弊。此项清规体现了宗门“生无长物，死无挂碍”的大解脱本色，彻底铲除修行人对物质私利的贪求根源。",
+    "quotes": [
+      "白大众粥罢，普请送亡僧。除守寮、直堂外，并皆斋赴。",
+      "唱衣念诵，随喜结缘；法物归公，了绝后累。"
+    ],
+    "guidance": "观古人“唱衣”之风，当悟世间名牌衣物、财富存款临终皆是一场幻梦，丝毫带不去。活着时轻装简行、乐善好施，心中自无恐惧牵缠。",
+    "classicRef": "《入众须知》、《禅林备用清规》、《敕修百丈清规》",
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "wuchang",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "jieshi-zhiying",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "huanzhu_an_qinggui"
     ]
   },
 ];
@@ -14720,7 +14838,8 @@ export const ZEN_METHODS: MethodItem[] = [
       "baoxingwangzhenglun",
       "zhonglun"
     ]
-  },
+  }
+,
   {
     "id": "shi-er-men-po-zhi",
     "title": "十二门破执正观法门",
@@ -14971,6 +15090,37 @@ export const ZEN_METHODS: MethodItem[] = [
       "shunzhonglun",
       "zhonglun",
       "shiertimenlun"
+    ]
+  },
+  {
+    "id": "guotang-zhanbo-fa",
+    "title": "过堂展钵法",
+    "summary": "禅宗丛林四众弟子于五观堂用斋时的全套止观行持法门。行者随板声入堂，肃立迎请住持，端身趺坐，闻槌响展钵铺巾，默诵三轮空寂偈；受食时心存五观，恪守“将食就口、轻放无声”之威仪；饭毕以净水荡洗钵盂，持诵折水真言出食普施旷野饥渴鬼神，通体贯穿慈悲戒律与正念实相。",
+    "origin": "百丈怀海立禅门清规，宋代《入众须知》与《禅苑清规》详定其规式",
+    "steps": [
+      "徐步入堂：闻长板与木鱼鸣，整肃袈裟从容缓步入堂，随袈裟自然转身入座，趺坐收摄身心，不露白衣；",
+      "迎师展钵：闻堂前钟鸣下床肃立问讯迎候住持；闻击槌响，解钵囊展开钵布，心念“如来应供器，我今得敷展，愿共诸众生，等三轮空寂”；",
+      "端坐五观：行堂受食，双手就口，不使碗碟碰撞有声；端身正意默作五观，防心离过，借食疗枯；",
+      "折水普施：以净水荡洗钵盂，倒入出水桶中，默念折水偈咒施予十方鬼神，讽经回向毕，整齐收钵起座。"
+    ],
+    "pitfalls": [
+      "用斋时心浮气躁，左顾右盼，与邻单窃窃私语，失却威仪觉照；",
+      "将过堂视为死板仪式或饱腹应酬，未在起心动念间提撕五观与三轮体空。"
+    ],
+    "classicRef": "《入众须知》、《入众日用》、《禅苑清规》",
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "shicun-wuguan",
+      "daily-zen"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong",
+      "chanyuanqinggui"
     ]
   },
 ];
@@ -26863,7 +27013,8 @@ export const ZEN_KOANS: KoanItem[] = [
       "baoxingwangzhenglun",
       "zhonglun"
     ]
-  },
+  }
+,
   {
     "id": "koan-659",
     "question": "若一切法无生、毕竟空寂，现前森罗万象从何而起？学人应当向何处安身立命？",
@@ -27137,6 +27288,50 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "shunzhonglun",
       "jingangjing"
+    ]
+  },
+  {
+    "id": "koan-674",
+    "question": "三轮空寂展钵器",
+    "answer": "施者无心，受者无相，钵中无有一粒米可以当情！",
+    "context": "《入众须知》载禅堂过堂用斋威仪：行者闻长板下钵，维那槌响，大众展钵，默念圣偈：“如来应供器，我今得敷展。愿共诸众生，等三轮空寂。”有僧问祖师：“每日三餐饭，口口嚼米面，因何道等三轮空寂？”祖师叱曰：“若是心存施受、执着滋味，吞下一粒米如吞热铁丸；若识得三轮体空，终日吃饭未曾咬着一粒米！”",
+    "interpretation": "所谓“三轮体空”，即能施者、受施者与所施之物三者本性皆空。禅僧过堂看似寻常就餐，实是一堂大佛事：不以贪心求美味，不以嗔心嫌粗粝，借假修真，心无所染。于一餐一饭中见自性空寂，方是真如应供器。",
+    "master": "宋代禅门宿德",
+    "source": "《入众须知》过堂仪轨、《禅门日诵》",
+    "relatedConcepts": [
+      "shicun-wuguan",
+      "ruzhong-zhifa",
+      "sanlun-kongji"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "koan-675",
+    "question": "古德轻帘软步",
+    "answer": "揭帘轻垂手，出堂忌拖鞋！动静无私隙，虚空自安然！",
+    "context": "《入众须知》开篇规劝学人：“入众之法，睡不在前，起不在后。古云：揭帘轻垂手，出堂忌拖鞋。少取汤水，少使牙药，不可再取，恐后人惹牙风。或吐水须低头，不得盥漱作声。”古尊宿常以此验学人行履：“千百人在一堂，动定无声，宛如虚空，是何境界？”行者答曰：“心无杂念，身自安详。”尊宿云：“若带一丝躁气拖鞋揭帘，早已漏泄千重万重生死葛藤！”",
+    "interpretation": "狂徒每以“不拘小节”自命洒脱，岂知一举手一投足皆是自心定力的直接投射。打帘手重、走路拖泥带水，正是内心散乱、目中无人我慢炽盛的明证。丛林以微细规矩逼拶学人念念回光，使狂心歇下，威仪具足，方是顶天立地衲僧本色。",
+    "master": "宋代丛林宿德",
+    "source": "《入众须知》入众篇、《缁门警训》",
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "daily-zen",
+      "benlai-mianmu"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong"
     ]
   },
 ];
@@ -50115,7 +50310,8 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedBooks": [
       "baoxingwangzhenglun"
     ]
-  },
+  }
+,
   {
     "id": "faq-2808",
     "question": "《十二门论》说“一切法无生，毕竟空寂”，这与禅宗六祖惠能“何期自性本自清净、本不生灭”有何相通之处？",
@@ -51352,6 +51548,129 @@ const ZEN_FAQS_PART2: FAQItem[] = [
       "shunzhonglun",
       "daily-zen",
       "jingangjing"
+    ]
+  },
+  {
+    "id": "faq-2938",
+    "question": "《入众须知》在宋代禅宗丛林清规体系中处于怎样的历史地位？它与《百丈清规》《禅苑清规》有何区别与联系？",
+    "answer": "《百丈清规》开创了禅宗独立丛林制度之先河，而北宋宗赜禅师编纂的《禅苑清规》则是现存最早的完整丛林清规宪典。《入众须知》（卍续藏第63册）是宋代丛林实务操作的“现场细则宝典”：它不同于宏观制度通则，而是极其微观、详尽地记录了禅僧日常行持的具体操作步骤（如洗漱怎样省水、入厕如何护指持咒、过堂怎样端碗放钵、茶榜状式如何书写、亡僧如何公开唱衣等）。它直接反映了南宋丛林高度规范化、生活化与制度化的实景，是研究禅门制度与修行实操的无可替代的珍贵文献。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "ruzhongriyong"
+    ]
+  },
+  {
+    "id": "faq-2939",
+    "question": "《入众须知》为何在开篇首要强调“睡不在前，起不在后；揭帘轻垂手，出堂忌拖鞋”？其背后的心性修行深意何在？",
+    "answer": "这是丛林破除我执、涵养慈悲与定力的第一道关卡。“睡不在前，起不在后”克制的是懈怠与自私；“揭帘轻垂手，出堂忌拖鞋”克制的是粗疏放逸与目中无人的我慢。在千百大众共同参禅的道场中，任何一丝噪音都会惊动他人的甚深觉照。轻轻垂手放帘、轻提脚步不拖鞋底，是在举手投足之间时刻保持对自心念头的觉察，时刻保持对他人的尊重与体恤。心若细腻安详，脚步自然轻柔；心若粗暴放纵，举止必然扰众。微细威仪正是自性定慧的外显。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong"
+    ]
+  },
+  {
+    "id": "faq-2940",
+    "question": "丛林中更换长袍直裰“先盖顶，身上改换，不可露白”的威仪规矩，反映了宗门怎样的自律精神？",
+    "answer": "禅堂是十方圣贤同居参禅的清净福田。禅僧在禅床铺位上更换直裰常服时，规定先把新长袍从头顶罩下，在衣服的遮蔽下从容更换，严禁袒胸露臂或裸露白色内衣（“露白”）。这一规约体现了禅门无与伦比的自律与庄严：第一，杜绝轻慢道场与不净威仪；第二，防范同修之间因身体形相引发分别妄想；第三，令行者在独处或私密起居中亦如面对佛天圣众，慎独慎微，时刻保持清净梵行。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2941",
+    "question": "禅门过堂用斋为何称为“五观堂”？“食存五观”的五条法则如何帮助行者在饮食中破除贪嗔痴？",
+    "answer": "禅门斋堂亦名五观堂，因用斋时必须在心念中作五种神圣观照：一“计功多少量彼来处”，观一粟一米耗费万民心血，破除傲慢；二“忖己德行全缺应供难消”，观自己道业未成难消信施，激发生死惭愧；三“防心离过贪等为宗”，面对美食不起贪心，粗食不起嗔恨，平息贪嗔之毒；四“正似良药为疗形枯”，把饮食视作治愈身体饥渴枯瘦的良药，不贪图口腹快感，破除痴迷；五“为成道业方受此食”，确立受食目的唯在借假修真、圆证菩提。五观令一餐一饮皆成无上降魔实修。",
+    "relatedQa": "koan-674",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2942",
+    "question": "过堂用餐中“将食就口，不得将口就食；取钵放钵，不得作声”的仪态规范，具有何种止观摄心意义？",
+    "answer": "“将食就口”要求行者身躯端直坐如钟，双手端稳钵盂将食物送至口中进食；“不得将口就食”严禁低头弯腰伸颈去就碗抢食，以此戒除禽兽抢食之相，体现大丈夫堂堂正正之端严。“取钵放钵不得作声”则要求心意高度专注凝定，手随心动，轻提稳放，不发出丝毫碗筷碰撞声响。这不仅是对斋堂大众寂静氛围的维护，更是极其深细的动中禅修——在取、放、咽、嚼的每一个动作中，心不离境，境不碍心，动静一如。",
+    "relatedQa": "koan-674",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong"
+    ]
+  },
+  {
+    "id": "faq-2943",
+    "question": "《入众须知》中详细记载的“折钵水施鬼神”与密教真言，体现了宋代禅宗怎样的慈悲与显密圆通特质？",
+    "answer": "饭毕以净水冲洗钵盂所得之残浆水称为“折钵水”。僧人不将其随意倾倒，而是念诵“我此折钵水，如天甘露味，普施诸鬼神，咸令得饱满”及陀罗尼真言，将折水倾入公桶出食布施十方饥渴饿鬼。这表明禅宗虽以“不立文字、直指人心”为极则，但在行履上绝非冷酷枯木，而是具足普度六道众生的大悲愿海；同时，入厕、净手、净身、折水皆诵真言咒语，显发了宋代禅宗汲取密教陀罗尼密护身心、以戒为基的圆通气象。",
+    "relatedQa": "koan-674",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2944",
+    "question": "禅堂坐禅规矩中，“首座巡堂”、“住持巡堂”与“枯禅不打坐禅板”有何深意？",
+    "answer": "在禅堂静坐中，钟鼓声绝之后由首座或住持手持香板巡视禅堂一周，称为巡堂。巡堂宗师以具足的金刚正眼洞察全堂学人的坐相与心境，警策昏沉与掉举；“枯禅不打坐禅板”则特别提示：若行者落入枯木死灰般的顽空无记之中，打板无益，须以利刃机锋或棒喝断喝将其逼拶苏醒。清规强调“昼三夜三，收摄身心，了彻大事”，坐禅不在死坐顽坐，而在生起真正疑情、契证灵明活泼之自性。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2945",
+    "question": "丛林在处理病僧、尊宿圆寂时的“大夜念诵”与“起龛送亡”仪轨，为何能体现宗门对待生死无常的彻悟态度？",
+    "answer": "世俗遇丧病无非悲啼嚎哭或大办奢华虚席；而《入众须知》中规范的亡僧送终则是无上庄严的解脱法事：病僧有专门延寿寮照料念诵；临终安详归西，大众敲钟集众，为之念诵阿弥陀佛与清净陀罗尼回向；出殡起龛，全寺除必要执事外一律手持干柴随行送入化身窑；荼毗火化，示现幻身归尽、法身长存。这种平淡庄严的送亡，教导大众直面无常幻灭，视脱离臭皮囊如脱去破旧衣衫，无哀伤怖畏，唯见大解脱。",
+    "relatedQa": "koan-674",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "huanzhu_an_qinggui"
+    ]
+  },
+  {
+    "id": "faq-2946",
+    "question": "“唱衣”制度在禅宗丛林中有何特殊功能？它如何从根本上预防出家人的物质贪执与寺产纠纷？",
+    "answer": "“唱衣”是佛教丛林极具智慧的财产分配与断执制度。僧人示寂后，遗留之衣物、法器在法堂大众前由维那逐件唱明名称与估价，众僧公开折价请购，所得资财充归常住或举办公开佛事。这一制度保证了：第一，出家人在世明白万般带不去，积攒财物无益，自然安心淡泊；第二，避免了后人或俗家亲属争夺遗产之丑态纠纷；第三，物资循环流通于大众僧宝，利及常住，真正落实了“公产公有、六和合敬”之崇高理想。",
+    "relatedQa": "koan-674",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2947",
+    "question": "论中收录的《介石瑛和尚遗书上宰辅免补助》，反映了宋代宗门高僧对待权贵与世俗名利的何种傲骨与出尘操守？",
+    "answer": "宋代介石智瑛禅师在临终示寂前，特地上书当朝宰辅，郑重辞免朝廷与地方官府对名僧圆寂惯例给予的恤典、赏赐与资助，嘱咐门徒“幻躯行止，皆有定数；四大将散，何假外物”，安详坐化。这一遗书被《入众须知》全篇录入作为典范，深刻展现了南宋临济宗宗匠“贫道安贫、知足守道，绝不因世俗荣利玷污僧格”的高风亮节，令天下丛林行者引为立身自尊的最高座右铭。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui"
+    ]
+  },
+  {
+    "id": "faq-2948",
+    "question": "现代人往往误以为禅宗是“狂放不羁、呵佛骂祖”，《入众须知》如此严整细密的规矩是否与禅宗“见性成佛、平常心是道”相矛盾？",
+    "answer": "这正是世俗学禅最容易堕入的“狂禅恶见”。禅宗古德所谓的“呵佛骂祖”，是针对那些死执名相教条的学人下的猛烈对治药，绝非纵容放荡！百丈怀海禅师言：“百丈立清规，正为防非止恶、护持正法。”如果没有千条万绪的严格清规做骨骼，千百僧人聚居必将沦为乌合之众与争端渊薮！真正的“平常心是道”，正是把无分别的真如觉照，打磨融化在洗面、折被、展钵、如厕、端碗的每一桩平常细行中。规矩纯熟至极处，行住坐卧无非真性流露，自由与戒律在此彻底合一。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "wumenguan"
+    ]
+  },
+  {
+    "id": "faq-2949",
+    "question": "现代生活在快节奏、高压力的职场与家庭中的人们，可以从《入众须知》的“微细觉照与利他威仪”中获得哪些安顿身心的实践智慧？",
+    "answer": "现代人普遍心浮气躁、焦虑内耗，其根源往往在“身心脱节与极度自我中心”。《入众须知》提供了极其落地的解药：第一，学会“慢半拍与轻关照”，关门轻缓、走路稳健、不制造噪音，在动作放慢中让狂乱的思维自然沉淀；第二，学会“食存五观”，在吃饭时放下手机与工作杂念，专注体会食物滋味与感恩来处，把进餐变成身心减压与觉照的仪式；第三，在公共空间多行利他（如顺手关水、爱护公共设施、体恤他人处境），用微小善行逐渐消融狭隘的自我，回归内心的平静清明。",
+    "relatedQa": "koan-675",
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "daily-zen"
     ]
   }
 ];

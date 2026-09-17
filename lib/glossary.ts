@@ -1352,4 +1352,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '谛相', pinyin: 'dì xiàng', meaning: '诸法究竟真理之真实相状，远离有无、一异、生灭等一切分别戏论' },
     { char: '戏论', pinyin: 'xì lùn', meaning: '梵语 Prapañca，指违背诸法空寂实相、起于凡情分别的一切虚妄名相、言说概念与思辨葛藤' },
   ],
+  'ruzhongxuzhi': [
+    { char: '直裰', pinyin: 'zhí duō', meaning: '僧人日常所穿的宽袖长袍，上下相连、蔽覆全身，禅堂更换时先盖顶以防露白' },
+    { char: '笐', pinyin: 'háng', meaning: '挂衣服、巾帕用的竹竿或木架。“系笐于上”，指在浴室、洗手处将毛巾衣物挂在竹竿上' },
+    { char: '户扄', pinyin: 'hù jiōng', meaning: '门闩、门插销，亦借指房门。“户扄只合轻弹指”，入厕推门应轻柔弹指以示有人' },
+    { char: '噉粪鬼', pinyin: 'dàn fèn guǐ', meaning: '噉同“啖”，吃。佛典所载以不净秽物为食的幽冥恶鬼，如厕弹指三下以惊其避让' },
+    { char: '折钵水', pinyin: 'shé bō shuǐ', meaning: '折读 shé，洗涤、荡洗。过堂用斋完毕洗涤钵盂的残水，念诵真言用以出食施予十方饥渴鬼神' },
+    { char: '药石', pinyin: 'yào shí', meaning: '禅林对晚间饮食的特称。禅僧以晚食为疗治饥渴羸瘦之良药，故名药石，示不贪美食之意' },
+    { char: '俵衬', pinyin: 'biào chèn', meaning: '俵，散发分发；衬，财物施舍。指丛林中将施主供养的财物或单资均匀分发给全寺僧众' },
+    { char: '挂搭', pinyin: 'guà dā', meaning: '即挂单。游方参学僧到寺院投宿寄住，将衣钵行囊挂在僧堂衣架钩架上，成为丛林常住大众' },
+    { char: '唱衣', pinyin: 'chàng yī', meaning: '僧人迁化示寂后，维那在大众面前将亡僧遗留衣钵资具逐件唱名估价、公开结缘分配的法事' },
+    { char: '起龛', pinyin: 'qǐ kān', meaning: '龛即僧人的灵柩棺木。举行起龛佛事后，四众手执柴薪随送灵柩前往化身窑举行荼毗火化' },
+  ],
 };
