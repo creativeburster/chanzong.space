@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import KoanDetailPageClient from './KoanDetailPageClient';
 import { ZEN_KOANS } from '@/lib/taxonomy';
 
 interface PageProps { params: { id: string } }
 
-
+export const dynamicParams = false;
 
 function EntityJsonLd({ item }: { item: any }) {
   const name = String(item.question || '');
@@ -58,7 +59,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 export default function KoanDetailPagePage({ params }: PageProps) {
   const item = ZEN_KOANS.find((x: any) => x.id === params.id);
-  if (!item) return null;
+  if (!item) {
+    notFound();
+  }
   return (
     <>
       <EntityJsonLd item={item} />

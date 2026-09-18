@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import ConceptDetailPageClient from './ConceptDetailPageClient';
 import { ZEN_CONCEPTS } from '@/lib/taxonomy';
 
 interface PageProps { params: { id: string } }
 
-
+export const dynamicParams = false;
 
 function EntityJsonLd({ item }: { item: any }) {
   const name = String(item.title || '');
@@ -58,7 +59,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 export default function ConceptDetailPagePage({ params }: PageProps) {
   const item = ZEN_CONCEPTS.find((x: any) => x.id === params.id);
-  if (!item) return null;
+  if (!item) {
+    notFound();
+  }
   return (
     <>
       <EntityJsonLd item={item} />

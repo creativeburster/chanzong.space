@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import MethodDetailPageClient from '@/app/methods/[id]/MethodDetailPageClient';
 import { ZEN_METHODS } from '@/lib/taxonomy';
 import { convertToTrad } from '@/lib/opencc';
 
 interface PageProps { params: { id: string } }
+
+export const dynamicParams = false;
 
 function EntityJsonLd({ item }: { item: any }) {
   const name = convertToTrad(String(item.title || ''));
@@ -57,7 +60,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
 export default function TradMethodDetailPage({ params }: PageProps) {
   const item = ZEN_METHODS.find((x: any) => x.id === params.id);
-  if (!item) return null;
+  if (!item) {
+    notFound();
+  }
   return (
     <>
       <EntityJsonLd item={item} />

@@ -1,28 +1,11 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import PersonDetailPageClient from './PersonDetailPageClient';
 import { ZEN_PERSONS } from '@/lib/taxonomy';
 
 interface PageProps { params: { id: string } }
 
-
-
-function EntityJsonLd({ item }: { item: any }) {
-  const name = String(item.name || '');
-  const desc = String(item.teachings || '').replace(/\s+/g, ' ').slice(0, 160);
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name,
-    description: desc,
-    url: `https://chanzong.space/persons/${item.id}`,
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return ZEN_PERSONS.map((x: any) => ({ id: x.id }));
@@ -56,9 +39,29 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
   };
 }
+function EntityJsonLd({ item }: { item: any }) {
+  const name = String(item.name || '');
+  const desc = String(item.teachings || '').replace(/\s+/g, ' ').slice(0, 160);
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    description: desc,
+    url: `https://chanzong.space/persons/${item.id}`,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function PersonDetailPagePage({ params }: PageProps) {
   const item = ZEN_PERSONS.find((x: any) => x.id === params.id);
-  if (!item) return null;
+  if (!item) {
+    notFound();
+  }
   return (
     <>
       <EntityJsonLd item={item} />

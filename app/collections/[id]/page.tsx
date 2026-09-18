@@ -10,6 +10,8 @@ interface PageProps {
   };
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const collections = getCollections();
   return collections.map((col) => ({

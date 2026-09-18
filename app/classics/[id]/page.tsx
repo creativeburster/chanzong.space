@@ -12,6 +12,8 @@ interface PageProps {
   };
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const manifest = getManifest();
   return manifest.map((item) => ({

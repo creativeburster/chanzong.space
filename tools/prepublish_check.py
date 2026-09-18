@@ -44,7 +44,7 @@ def load_text(path):
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
 
-def check_classic(classic_id, manifest_item, all_manifest_ids, all_tax_ids, tax_text):
+def check_classic(classic_id, manifest_item, all_manifest_ids, all_tax_ids, tax_text, trans_text, gloss_text):
     errors = []
     warnings = []
     
@@ -123,13 +123,11 @@ def check_classic(classic_id, manifest_item, all_manifest_ids, all_tax_ids, tax_
                 errors.append(f"[悬空连线] 经典连线指向不存在的经典 ID: '{rid}' ({title})")
                 
     # 6. translations.ts 检测
-    trans_text = load_text('lib/translations.ts')
-    if f"'{classic_id}':" not in trans_text and f'"{classic_id}":' not in trans_text:
+    if not re.search(rf'[\'"]?{re.escape(classic_id)}[\'"]?\s*:', trans_text):
         errors.append(f"[译文缺失] lib/translations.ts 中未找到 '{classic_id}' 的译文条目！")
         
     # 7. glossary.ts 检测
-    gloss_text = load_text('lib/glossary.ts')
-    if f"'{classic_id}':" not in gloss_text and f'"{classic_id}":' not in gloss_text:
+    if not re.search(rf'[\'"]?{re.escape(classic_id)}[\'"]?\s*:', gloss_text):
         errors.append(f"[注音缺失] lib/glossary.ts 中未找到 '{classic_id}' 的生僻字注音条目！")
         
     # 8. taxonomy.ts 关联实体闭环检测
@@ -193,6 +191,8 @@ def main():
     manifest = load_json('manifest.json')
     all_manifest_ids = set(m['id'] for m in manifest)
     tax_text = load_text('lib/taxonomy.ts')
+    trans_text = load_text('lib/translations.ts')
+    gloss_text = load_text('lib/glossary.ts')
     all_tax_ids = get_taxonomy_ids(tax_text)
     
     print("=" * 70)
@@ -227,7 +227,7 @@ def main():
     
     for item in target_items:
         cid = item['id']
-        errs, warns = check_classic(cid, item, all_manifest_ids, all_tax_ids, tax_text)
+        errs, warns = check_classic(cid, item, all_manifest_ids, all_tax_ids, tax_text, trans_text, gloss_text)
         
         if errs:
             print(f"[FAIL] #{item['idx']:03d} 《{item['title']}》({cid}):")
