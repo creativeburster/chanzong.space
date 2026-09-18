@@ -1432,5 +1432,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '挃', pinyin: 'zhì', meaning: '以拄杖或手指猛戳、撞刺。宗师在勘辨学人关键处突然施加之峻烈动作。' },
     { char: '红蓼', pinyin: 'hóng liǎo', meaning: '水边沙洲生长之草本植物，秋季开红色碎花，禅诗中常用以渲染高古清冷之水天法界。' },
   ],
+  'huitangyulu': [
+    { char: '檠动', pinyin: 'qíng dòng', meaning: '火星微动。比喻心念初萌、微细念头起处。语录云‘瞥尔檠动，便有五行相生相克’。' },
+    { char: '赪尾', pinyin: 'chēng wěi', meaning: '赤红色之鱼尾。出《诗经·汝坟》‘鲂鱼赪尾’，比喻竭力游动之神骏大鱼。' },
+    { char: '楖栗', pinyin: 'jì lì', meaning: '又作‘楖𣗖’，禅僧行脚所携带之山藤拐杖。宗门常以‘楖栗横担’喻独步千峰、洒脱自在。' },
+    { char: '阇梨', pinyin: 'shé lí', meaning: '梵语阿阇梨（Ācārya）之简称，意为正行传授之轨范师，宗门常作为对同道参学僧人之尊称。' },
+    { char: '諵諵', pinyin: 'nán nán', meaning: '低声细语诵读之貌。语录诗云‘奇语諵諵读黄老’。' },
+    { char: '椶笠', pinyin: 'zōng lì', meaning: '椶通‘棕’，以棕榈皮叶编织而成之斗笠，山居行脚僧之朴素雨具。' },
+    { char: '蘂', pinyin: 'ruǐ', meaning: '古同‘蕊’，花蕊、花苞。语录岁旦示众云‘其为新者，则能为明、为媚、为蘂、为香’。' },
+    { char: '蠧', pinyin: 'dù', meaning: '通‘蠹’，器物或书木中之蛀虫，比喻昏昧积垢、暗中侵蚀本性之习气妄染。' },
+  ],
 };
 
