@@ -153,6 +153,7 @@ MAP = {
   'damoxinjinganxin': [('xuemaicong', '传心正眼'), ('poxianglun', '观心总摄'), ('sixingguan', '二入四行'), ('wuxinglun', '见性真宗')],
   'wujianxianduyulu': [('fangshanwenbaoyulu', '本师师承'), ('tianmuzhongfengguanglu', '东南二甘露门'), ('pingshiyulu', '元代并世'), ('wumenguan', '无字宗风')],
   'huitangyulu': [('huanglonghuinan', '本师师承'), ('linjianlu', '黄龙逸事'), ('wumenguan', '公案机锋'), ('tianmuzhongfengguanglu', '临济家风')],
+  'putixingjing': [('shunzhonglun', '龙树中观法脉'), ('baoxingwangzhenglun', '菩萨行道'), ('dachengqixinlun', '一心真如'), ('sixingguan', '理入行入互融')],
 }
 
 
