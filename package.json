@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gate": "python tools/prepublish_check.py --all"
   },
   "dependencies": {
     "@lucide/lab": "^0.2.0",
