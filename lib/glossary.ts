@@ -1452,5 +1452,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '依怙', pinyin: 'yī hù', meaning: '依托、覆护、庇佑之尊长。大乘经典常以大悲菩萨作沉溺六道众生之慈舟、慈父与绝对依怙。' },
     { char: '自证分', pinyin: 'zì zhèng fèn', meaning: '唯识宗所立四分（相分、见分、自证分、证自证分）之一，谓心体具有能自知自身知见之功能。中观般若品立破自证分不自知。' },
   ],
+  'bailun': [
+    { char: '津涂', pinyin: 'jīn tú', meaning: '渡口与坦途。比喻通达无上佛道真理之法门途径。僧肇序云‘通圣心之津涂’。' },
+    { char: '修妬路', pinyin: 'xiū dù lù', meaning: '梵语 Sūtra 之早期汉译音，今通译为‘修多罗’或‘经’。原意为贯穿法义之线，论中指原始经文条目。' },
+    { char: '僧佉', pinyin: 'sēng qū', meaning: '梵语 Sāṃkhya 之音译，古印度六派哲学之一的‘数论派’，迦毗罗仙人所创，主张神我与自性二十五谛。' },
+    { char: '卫世师', pinyin: 'wèi shì shī', meaning: '梵语 Vaiśeṣika 之音译，古印度六派哲学之一的‘胜论派’，优楼迦所创，立实、德、业等六句义。' },
+    { char: '婆薮', pinyin: 'pó sǒu', meaning: '梵语 Vasu 之音译，意译为‘世尊’或‘善巧’。《百论》之作释者婆薮开士，印度著名中观论师。' },
+    { char: '求那', pinyin: 'qiú nà', meaning: '梵语 Guṇa 之音译，胜论派六谛（六句义）之一，意译为‘德’，指色、声、香、味等依附于实体的属性。' },
+    { char: '尼干子', pinyin: 'ní gān zǐ', meaning: '梵语 Nirgrantha 之音译，古印度非婆罗门教派耆那教之称，意译为‘离系’，主张修拔发、断食等苦行以解脱。' },
+    { char: '方分', pinyin: 'fāng fēn', meaning: '方位与部分。佛家分析物理极微时，谓若有东西南北上下之方位划分，即非不可分之极微；若无方分则不能构成物体。' },
+  ],
 };
 

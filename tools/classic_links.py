@@ -154,6 +154,7 @@ MAP = {
   'wujianxianduyulu': [('fangshanwenbaoyulu', '本师师承'), ('tianmuzhongfengguanglu', '东南二甘露门'), ('pingshiyulu', '元代并世'), ('wumenguan', '无字宗风')],
   'huitangyulu': [('huanglonghuinan', '本师师承'), ('linjianlu', '黄龙逸事'), ('wumenguan', '公案机锋'), ('tianmuzhongfengguanglu', '临济家风')],
   'putixingjing': [('shunzhonglun', '龙树中观法脉'), ('baoxingwangzhenglun', '菩萨行道'), ('dachengqixinlun', '一心真如'), ('sixingguan', '理入行入互融')],
+  'bailun': [('zhonglun', '中观法脉同源'), ('shiertimenlun', '三论姊妹'), ('shunzhonglun', '龙树破执'), ('zhaolun', '肇序相映')],
 }
 
 
