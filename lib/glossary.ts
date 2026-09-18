@@ -1472,5 +1472,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '薰莘', pinyin: 'xūn shēn', meaning: '葱蒜韭等五辛气味浓烈之植物。指荤腥辛辣之物，《历代法宝记》称智詵幼年‘常好释教，不食薰莘’。' },
     { char: '孔目', pinyin: 'kǒng mù', meaning: '唐代藩镇使府统领纲纪、掌管各案文书之专职吏员。杜鸿渐平蜀入寺时曾借问亲事孔目官。' },
   ],
+  'shiwuyulu': [
+    { char: '珙', pinyin: 'gǒng', meaning: '大璧、大玉。石屋清珙禅师之法名，喻其道体如温润绝俗之美玉。' },
+    { char: '藜藿', pinyin: 'lí huò', meaning: '藜草与豆叶，泛指粗粝野生菜食。语录云‘煑藜藿于折脚铛中’，喻山居隐修之极简脱俗。' },
+    { char: '铛', pinyin: 'chēng', meaning: '古代烹煮用之铁锅器具，多带有三足。禅林多借‘折脚铛’喻僧家贫无一物、安贫乐道之清风。' },
+    { char: '鑪鞴', pinyin: 'lú bèi', meaning: '冶炼金属用之熔炉与鼓风皮橐（风箱）。宗门常借以比喻宗师大开法席、锻炼陶铸学人习气之辣手。' },
+    { char: '阇维', pinyin: 'shé wéi', meaning: '梵语 Jhāpita 音译，即荼毗，指佛门僧人逝后依律火化之荼毗仪式。' },
+    { char: '屦', pinyin: 'jù', meaning: '用麻草或兽皮制成之鞋履。塔铭称‘户屦骈臻’，形容慕名前来参叩请益者之鞋履挤满门阶。' },
+    { char: '臞', pinyin: 'qú', meaning: '形体消瘦、清癯。塔铭赞石屋禅师‘臞然其形，道韵可掬’，形容宗师风骨清峻、仙风道骨。' },
+    { char: '麫', pinyin: 'miàn', meaning: '古同‘面’（面粉、麦面）。语录云‘打麫还他州土麦’，喻参禅当由自己本真流出。' },
+  ],
 };
 

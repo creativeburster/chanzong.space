@@ -156,6 +156,7 @@ MAP = {
   'putixingjing': [('shunzhonglun', '龙树中观法脉'), ('baoxingwangzhenglun', '菩萨行道'), ('dachengqixinlun', '一心真如'), ('sixingguan', '理入行入互融')],
   'bailun': [('zhonglun', '中观法脉同源'), ('shiertimenlun', '三论姊妹'), ('shunzhonglun', '龙树破执'), ('zhaolun', '肇序相映')],
   'lidaifabaoji': [('tanjing', '曹溪正传'), ('shenhui', '南顿宗旨'), ('xiuxinjue', '顿悟法要'), ('sixingguan', '二入四行')],
+  'shiwuyulu': [('gaofengyulu', '天目同门'), ('pangjushiyulu', '林下高风'), ('biyanlu', '宗门玄枢'), ('xinxinming', '一心不生')],
 }
 
 
