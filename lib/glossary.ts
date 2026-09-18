@@ -1482,6 +1482,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '臞', pinyin: 'qú', meaning: '形体消瘦、清癯。塔铭赞石屋禅师‘臞然其形，道韵可掬’，形容宗师风骨清峻、仙风道骨。' },
     { char: '麫', pinyin: 'miàn', meaning: '古同‘面’（面粉、麦面）。语录云‘打麫还他州土麦’，喻参禅当由自己本真流出。' },
   ],
+  'duanqiaoyulu': [
+    { char: '瑞峯', pinyin: 'ruì fēng', meaning: '台州瑞峰山，断桥妙伦禅师早年应世初次开堂住持之名山道场（瑞峰祇园禅寺）。' },
+    { char: '踞室', pinyin: 'jù shì', meaning: '方丈宗师安坐于方丈丈室中提撕勘验来叩之学人。语录开堂云‘踞室横一丈竖十尺’。' },
+    { char: '赤骨力', pinyin: 'chì gǔ lì', meaning: '宋代禅林方言俗语，意指赤裸裸、毫无挂碍造作与知解包装之自性金刚正骨。' },
+    { char: '鋟梓', pinyin: 'qǐn zǐ', meaning: '雕版印刷。语录序文记清代康熙年间同门法裔将断桥和尚湮没数百年之遗录重新鋟梓流通。' },
+    { char: '旹', pinyin: 'shí', meaning: '古同‘时’，碑版与古籍序跋干支署年之常用古字。重梓序末署‘旹康熙壬申长夏’。' },
+    { char: '抉翳', pinyin: 'jué yì', meaning: '剔除目中阻碍光明之障翳。比喻宗门正见直下扫尽学人情解葛藤与执著习气。' },
+    { char: '金鎞', pinyin: 'jīn bī', meaning: '古代刮除眼中翳障之金针或小刀。大乘经论与禅门常用以比喻如来金刚正眼截断众盲。' },
+    { char: '枣棃', pinyin: 'zǎo lí', meaning: '古代刻书刻板常用坚实之枣木与梨木。‘付枣棃’为宗门将祖师法语遗录付梓出版之雅称。' },
+  ],
   'xiyanyulu': [
     { char: '雁山', pinyin: 'yàn shān', meaning: '浙江乐清雁荡山之略称，亦指西岩了慧禅师早年剃染参学道场定慧寺所在名山。' },
     { char: '太白', pinyin: 'tài bái', meaning: '浙江宁波太白山，江南五山名刹天童景德禅寺所在名山。了慧禅师晚年奉诏住持该寺大扬宗风。' },
