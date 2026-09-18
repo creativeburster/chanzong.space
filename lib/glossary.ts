@@ -1462,5 +1462,15 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '尼干子', pinyin: 'ní gān zǐ', meaning: '梵语 Nirgrantha 之音译，古印度非婆罗门教派耆那教之称，意译为‘离系’，主张修拔发、断食等苦行以解脱。' },
     { char: '方分', pinyin: 'fāng fēn', meaning: '方位与部分。佛家分析物理极微时，谓若有东西南北上下之方位划分，即非不可分之极微；若无方分则不能构成物体。' },
   ],
+  'lidaifabaoji': [
+    { char: '布萨', pinyin: 'bù sà', meaning: '梵语 Uposatha 之音译，意译为‘长养’‘净住’。僧团每半月集会诵戒、检点身心、忏悔过失之清规法事。' },
+    { char: '獦獠', pinyin: 'gé liáo', meaning: '古代对岭南及西南百越部族之旧称。五祖弘忍初见惠能时故意勘验曰‘汝是獦獠，若为堪作佛’。' },
+    { char: '踏碓', pinyin: 'tà duì', meaning: '脚踏舂米之木碓器具。惠能祖师于黄梅凭茂山碓坊腰石负重、踏碓八月以炼心见性。' },
+    { char: '郿县', pinyin: 'méi xiàn', meaning: '古县名，即今陕西宝鸡眉县。保唐无住禅师出家前之本贯祖籍。' },
+    { char: '摩纳', pinyin: 'mó nà', meaning: '梵语音译，即百衲袈裟，以零碎弃布补缀而成之粪扫衣，武则天曾赐惠能‘摩纳袈裟一领’。' },
+    { char: '罽宾', pinyin: 'jì bīn', meaning: '古代西域国名，位于今克什米尔、巴基斯坦北部一带。西天第二十四祖师子比丘弘化殉道之邦。' },
+    { char: '薰莘', pinyin: 'xūn shēn', meaning: '葱蒜韭等五辛气味浓烈之植物。指荤腥辛辣之物，《历代法宝记》称智詵幼年‘常好释教，不食薰莘’。' },
+    { char: '孔目', pinyin: 'kǒng mù', meaning: '唐代藩镇使府统领纲纪、掌管各案文书之专职吏员。杜鸿渐平蜀入寺时曾借问亲事孔目官。' },
+  ],
 };
 
