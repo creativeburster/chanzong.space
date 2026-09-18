@@ -1,9 +1,8 @@
 export const STATS = {
-  classics: 148,
-  concepts: 494,
-  koans: 655,
-  persons: 228,
-  methods: 119,
-  faqs: 3073,
+  classics: 149,
+  concepts: 497,
+  koans: 658,
+  persons: 229,
+  methods: 120,
+  faqs: 3083,
 };
-
