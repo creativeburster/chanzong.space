@@ -1542,6 +1542,17 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '菴摩勒果', pinyin: 'ān mó lè guǒ', meaning: '梵语 Āmalaka 音译，即余甘子。其果清澈晶莹，经中常借以比喻见性明心如观掌中菴摩勒果般历历分明。' },
     { char: '乌波尼杀昙', pinyin: 'wū bō ní shā tán', meaning: '梵语 Upaniṣad 分音译，意译为微细分、极微部分。形容数量极小、不可思议之微细算数比率。' },
   ],
+  'huanxiyulu': [
+    { char: '环溪', pinyin: 'huán xī', meaning: '溪流盘曲回环之胜景。宋末元初临济杨岐派一代大宗师惟一禅师之自号。' },
+    { char: '藞苴', pinyin: 'lǎ zhā', meaning: '泥泞粗粝、放旷不羁之貌。禅师自赞云‘藞苴潇洒’，喻宗师外示质朴无华、内心灵明超迈之本色。' },
+    { char: '橈', pinyin: 'ráo', meaning: '划船之木桨、短棹。船子和尚接化夹山大悟后，‘竖起橈云：汝将谓别有？乃覆船入水而去’。' },
+    { char: '鸑鷟', pinyin: 'yuè zhuó', meaning: '古代神鸟五凤之一（紫凤）。语录上堂云‘鸑鷟麒麟皆是瑞’，喻丛林中德行卓越之龙象法器。' },
+    { char: '薝卜', pinyin: 'zhān bo', meaning: '梵语 Campaka 音译，即瞻博迦花，其香郁烈纯正。经论常与旃檀并提，喻自性法身之妙香。' },
+    { char: '钁头', pinyin: 'jué tóu', meaning: '古代开山垦地之大锄头。船子和尚嘱夹山‘但向深山里、钁头边觅取一个半个’，喻林下埋头苦参真修。' },
+    { char: '回禄', pinyin: 'huí lù', meaning: '古代神话中的火神，代指火灾。行状载天童寺‘居无几而寺忽丁回禄’，师不辞劳苦奔走重建梵刹。' },
+    { char: '秉炬', pinyin: 'bǐng jù', meaning: '手持火炬为圆寂僧人荼毗火化时举行之佛事仪轨，宗师当机以火示法，直指自性无生无死。' },
+  ],
 };
+
 
 
