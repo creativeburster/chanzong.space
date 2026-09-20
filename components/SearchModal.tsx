@@ -16,13 +16,14 @@ import {
   SlidersHorizontal,
 } from 'lucide-react';
 import { ClassicItem } from '@/lib/data';
-import {
-  ZEN_PERSONS,
-  ZEN_CONCEPTS,
-  ZEN_METHODS,
-  ZEN_KOANS,
-  ZEN_FAQS,
+import type {
+  PersonItem,
+  ConceptItem,
+  MethodItem,
+  KoanItem,
+  FAQItem,
 } from '@/lib/taxonomy';
+import { STATS } from '@/lib/stats';
 import { useLang } from '@/context/LangContext';
 
 interface SearchModalProps {
@@ -102,6 +103,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   const router = useRouter();
   const resultsContainerRef = useRef<HTMLDivElement>(null);
 
+  const [taxonomyData, setTaxonomyData] = useState<{
+    persons: PersonItem[];
+    concepts: ConceptItem[];
+    methods: MethodItem[];
+    koans: KoanItem[];
+    faqs: FAQItem[];
+  } | null>(null);
+
   // 1. 全局快捷键与键盘事件监听
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -120,6 +129,28 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
+  // 1.1 当模态框打开时，按需异步加载庞大的 taxonomy 知识图谱（拆包优化，首屏 0 负担）
+  useEffect(() => {
+    if (!isOpen || taxonomyData) return;
+    let isMounted = true;
+    import('@/lib/taxonomy').then((mod) => {
+      if (isMounted) {
+        setTaxonomyData({
+          persons: mod.ZEN_PERSONS,
+          concepts: mod.ZEN_CONCEPTS,
+          methods: mod.ZEN_METHODS,
+          koans: mod.ZEN_KOANS,
+          faqs: mod.ZEN_FAQS,
+        });
+      }
+    }).catch((err) => {
+      console.error('Failed to load taxonomy asynchronously:', err);
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [isOpen, taxonomyData]);
+
   // 重置选中索引
   useEffect(() => {
     setSelectedIndex(0);
@@ -129,7 +160,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
   const allSearchData = useMemo<SearchResultItem[]>(() => {
     const list: SearchResultItem[] = [];
 
-    // 经典
+    // 经典（manifest 立即就绪，零延迟）
     items.forEach((b) => {
       list.push({
         id: b.id,
@@ -142,73 +173,75 @@ export const SearchModal: React.FC<SearchModalProps> = ({
       });
     });
 
-    // 祖师
-    ZEN_PERSONS.forEach((p) => {
-      list.push({
-        id: p.id,
-        type: 'person',
-        title: p.name,
-        subtitle: `${p.title} · ${p.era}`,
-        snippet: p.lifeStory?.slice(0, 100),
-        href: `/persons/${p.id}`,
-        score: 0,
+    if (taxonomyData) {
+      // 祖师
+      taxonomyData.persons.forEach((p) => {
+        list.push({
+          id: p.id,
+          type: 'person',
+          title: p.name,
+          subtitle: `${p.title} · ${p.era}`,
+          snippet: p.lifeStory?.slice(0, 100),
+          href: `/persons/${p.id}`,
+          score: 0,
+        });
       });
-    });
 
-    // 概念
-    ZEN_CONCEPTS.forEach((c) => {
-      list.push({
-        id: c.id,
-        type: 'concept',
-        title: c.title,
-        subtitle: c.category,
-        snippet: c.summary?.slice(0, 100),
-        href: `/concepts/${c.id}`,
-        score: 0,
+      // 概念
+      taxonomyData.concepts.forEach((c) => {
+        list.push({
+          id: c.id,
+          type: 'concept',
+          title: c.title,
+          subtitle: c.category,
+          snippet: c.summary?.slice(0, 100),
+          href: `/concepts/${c.id}`,
+          score: 0,
+        });
       });
-    });
 
-    // 法门
-    ZEN_METHODS.forEach((m) => {
-      list.push({
-        id: m.id,
-        type: 'method',
-        title: m.title,
-        subtitle: m.summary?.slice(0, 50),
-        snippet: m.steps ? m.steps.join(' · ').slice(0, 100) : '',
-        href: `/methods/${m.id}`,
-        score: 0,
+      // 法门
+      taxonomyData.methods.forEach((m) => {
+        list.push({
+          id: m.id,
+          type: 'method',
+          title: m.title,
+          subtitle: m.summary?.slice(0, 50),
+          snippet: m.steps ? m.steps.join(' · ').slice(0, 100) : '',
+          href: `/methods/${m.id}`,
+          score: 0,
+        });
       });
-    });
 
-    // 公案
-    ZEN_KOANS.forEach((k) => {
-      list.push({
-        id: k.id,
-        type: 'koan',
-        title: k.question,
-        subtitle: `${k.master} · ${k.source}`,
-        snippet: k.answer?.slice(0, 100),
-        href: `/koan/${k.id}`,
-        score: 0,
+      // 公案
+      taxonomyData.koans.forEach((k) => {
+        list.push({
+          id: k.id,
+          type: 'koan',
+          title: k.question,
+          subtitle: `${k.master} · ${k.source}`,
+          snippet: k.answer?.slice(0, 100),
+          href: `/koan/${k.id}`,
+          score: 0,
+        });
       });
-    });
 
-    // 问答
-    ZEN_FAQS.forEach((f) => {
-      list.push({
-        id: f.id,
-        type: 'faq',
-        title: f.question,
-        subtitle: '核心问答与解惑',
-        snippet: f.answer?.slice(0, 100),
-        href: `/faq#${f.id}`,
-        score: 0,
+      // 问答
+      taxonomyData.faqs.forEach((f) => {
+        list.push({
+          id: f.id,
+          type: 'faq',
+          title: f.question,
+          subtitle: '核心问答与解惑',
+          snippet: f.answer?.slice(0, 100),
+          href: `/faq#${f.id}`,
+          score: 0,
+        });
       });
-    });
+    }
 
     return list;
-  }, [items]);
+  }, [items, taxonomyData]);
 
   // 3. 执行检索与打分排序（双向繁简智能匹配）
   const filteredResults = useMemo(() => {
@@ -412,7 +445,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         <div className="px-4 py-3 bg-zinc-50 border-t border-zinc-200 text-xs text-zinc-500 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span>
-              {t('已检索')} <strong>{allSearchData.length}</strong> {t('条全站实体')}（{items.length} {t('经典')} · {ZEN_PERSONS.length} {t('祖师')} · {ZEN_KOANS.length} {t('公案')} · {ZEN_FAQS.length} {t('问答')}）
+              {t('已检索')} <strong>{allSearchData.length}</strong> {t('条全站实体')}（{items.length} {t('经典')} · {STATS.persons} {t('祖师')} · {STATS.koans} {t('公案')} · {STATS.faqs} {t('问答')}）
             </span>
           </div>
           <div className="flex items-center space-x-3 text-zinc-400">

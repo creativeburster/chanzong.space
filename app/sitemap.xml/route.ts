@@ -35,7 +35,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Classics (150 部)
+  // Classics (160 部)
   for (const m of manifest) {
     entries.push({
       simpPath: `/classics/${m.id}`,
@@ -45,7 +45,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Concepts (499 个)
+  // Concepts (515 个)
   for (const c of ZEN_CONCEPTS) {
     entries.push({
       simpPath: `/concepts/${c.id}`,
@@ -55,7 +55,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Methods (121 种)
+  // Methods (131 种)
   for (const m of ZEN_METHODS) {
     entries.push({
       simpPath: `/methods/${m.id}`,
@@ -65,7 +65,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Koans (661 则)
+  // Koans (691 则)
   for (const k of ZEN_KOANS) {
     entries.push({
       simpPath: `/koan/${k.id}`,
@@ -75,7 +75,7 @@ export function GET(_req: NextRequest) {
     });
   }
 
-  // Persons (229 位)
+  // Persons (238 位)
   for (const p of ZEN_PERSONS) {
     entries.push({
       simpPath: `/persons/${p.id}`,

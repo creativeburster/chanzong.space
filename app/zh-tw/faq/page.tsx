@@ -5,7 +5,7 @@ import { ZEN_FAQS } from '@/lib/taxonomy';
 import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
-  title: "禪宗解惑問答 · 2793則深層疑難答疑 | 禪宗知識庫",
+  title: `禪宗解惑問答 · ${STATS.faqs}則深層疑難答疑 | 禪宗知識庫`,
   description: `禪宗${STATS.faqs}條問答——公案解讀、義理辨析、修證疑問，覆蓋禪宗核心議題與常見疑惑。`,
   alternates: {
     canonical: '/zh-tw/faq',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    title: '問答 | 禪宗知識庫 ChanZong.space',
+    title: `問答 · ${STATS.faqs}則宗門解惑 | 禪宗知識庫 ChanZong.space`,
     description: `禪宗${STATS.faqs}條問答——公案解讀、義理辨析與修證疑問。`,
     url: 'https://chanzong.space/zh-tw/faq',
     locale: 'zh_TW',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 function FAQPageJsonLd() {
-  const mainEntity = ZEN_FAQS.slice(0, 25).map(f => ({
+  const mainEntity = ZEN_FAQS.slice(0, 30).map(f => ({
     '@type': 'Question',
     name: convertToTrad(f.question),
     acceptedAnswer: {

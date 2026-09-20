@@ -4,7 +4,11 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import manifest from '@/manifest.json';
 import { ZEN_PERSONS } from '@/lib/taxonomy';
 import { Users, ChevronRight, Search, ChevronDown, Clock, BookOpen, X, RotateCcw } from 'lucide-react';

@@ -6,7 +6,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import manifest from '@/manifest.json';
 import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare, Lightbulb, ArrowRight } from 'lucide-react';

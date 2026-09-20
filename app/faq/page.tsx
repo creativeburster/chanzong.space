@@ -4,7 +4,7 @@ import { STATS } from '@/lib/stats';
 import { ZEN_FAQS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
-  title: "禅宗解惑问答 · 2793则深层疑难答疑 | 禅宗知识库",
+  title: `禅宗解惑问答 · ${STATS.faqs}则深层疑难答疑 | 禅宗知识库`,
   description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析、修证疑问，覆盖禅宗核心议题与常见疑惑。`,
   alternates: {
     canonical: '/faq',
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    title: '问答 | 禅宗知识库 ChanZong.space',
+    title: `问答 · ${STATS.faqs}则宗门解惑 | 禅宗知识库 ChanZong.space`,
     description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析与修证疑问。`,
     url: 'https://chanzong.space/faq',
   },
 };
 
 function FAQPageJsonLd() {
-  const mainEntity = ZEN_FAQS.slice(0, 20).map(f => ({
+  const mainEntity = ZEN_FAQS.slice(0, 30).map(f => ({
     '@type': 'Question',
     name: f.question,
     acceptedAnswer: {

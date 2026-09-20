@@ -16,7 +16,11 @@ import {
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
 import { ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS, ZEN_CONCEPTS } from '@/lib/taxonomy';

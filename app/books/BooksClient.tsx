@@ -5,7 +5,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import manifest from '@/manifest.json';
 import { BookOpen, ChevronRight, Search, ChevronDown, Library, ArrowRight, Scroll, Sparkles } from 'lucide-react';
 import { SiteFooter } from '@/components/SiteFooter';

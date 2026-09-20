@@ -53,7 +53,5 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# --- 核心 Sitemap 与 LLMs 上下文索引 ---
+# --- 核心 Sitemap 索引 ---
 Sitemap: https://chanzong.space/sitemap.xml
-LLMs-Txt: https://chanzong.space/llms.txt
-LLMs-Full-Txt: https://chanzong.space/llms-full.txt

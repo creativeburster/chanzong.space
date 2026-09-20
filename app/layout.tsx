@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0F172A',
+  themeColor: '#FAF9F6',
 };
 
 export default function RootLayout({
@@ -80,7 +80,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-        <meta name="theme-color" content="#0F172A" />
+        <meta name="theme-color" content="#FAF9F6" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('zen_reading_theme');var d=t==='night'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.setAttribute('data-theme','night');document.documentElement.classList.add('dark');}else if(t==='bamboo'){document.documentElement.setAttribute('data-theme','bamboo');}}catch(e){}})();`,

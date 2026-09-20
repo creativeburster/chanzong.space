@@ -4,7 +4,11 @@ import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import manifest from '@/manifest.json';
 import { ZEN_FAQS, ZEN_PERSONS, ZEN_KOANS } from '@/lib/taxonomy';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Search, Users, X, RotateCcw } from 'lucide-react';
@@ -26,7 +30,7 @@ export default function FAQPageClient() {
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [selectedPerson, setSelectedPerson] = useState<string | null>(null);
   const [keyword, setKeyword] = useState('');
-  const [displayCount, setDisplayCount] = useState(10);
+  const [displayCount, setDisplayCount] = useState(30);
 
   // 典籍下拉与内联搜索
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
@@ -505,42 +509,40 @@ export default function FAQPageClient() {
                     />
                   </button>
 
-                  {isOpen && (
-                    <div className="px-5 pb-5 -mt-1 space-y-3">
-                      <p className="text-[15px] font-serif-zen text-slate-700 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/60">
-                        {t(faq.answer)}
-                      </p>
+                  <div className={`px-5 pb-5 -mt-1 space-y-3 ${isOpen ? 'block' : 'hidden'}`}>
+                    <p className="text-[15px] font-serif-zen text-slate-700 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/60">
+                      {t(faq.answer)}
+                    </p>
 
-                      <div className="flex flex-wrap items-center gap-3">
-                        {faq.relatedQa && (
-                          <Link prefetch={false} href={getHref(`/koan/${faq.relatedQa}`)}
-                            className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
-                          >
-                            <span>{t('参看相关公案')}</span>
-                            <ArrowRight className="w-3.5 h-3.5" />
-                          </Link>
-                        )}
+                    <div className="flex flex-wrap items-center gap-3">
+                      {faq.relatedQa && (
+                        <Link prefetch={false} href={getHref(`/koan/${faq.relatedQa}`)}
+                          className="inline-flex items-center space-x-1.5 text-[13px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
+                        >
+                          <span>{t('参看相关公案')}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      )}
 
-                        {faq.relatedBooks && faq.relatedBooks.length > 0 && (
-                          <div className="flex flex-wrap gap-1.5 ml-auto">
-                            {faq.relatedBooks.map((bid) => {
-                              const book = bookMap[bid];
-                              if (!book) return null;
-                              return (
-                                <Link prefetch={false} key={bid}
-                                  href={getHref(`/classics/${bid}`)}
-                                  className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-zinc-100 text-zinc-600 text-[11px] font-semibold hover:bg-amber-100 hover:text-amber-800 transition-colors"
-                                >
-                                  <BookOpen className="w-3 h-3" />
-                                  <span>{t(book.title)}</span>
-                                </Link>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </div>
+                      {faq.relatedBooks && faq.relatedBooks.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5 ml-auto">
+                          {faq.relatedBooks.map((bid) => {
+                            const book = bookMap[bid];
+                            if (!book) return null;
+                            return (
+                              <Link prefetch={false} key={bid}
+                                href={getHref(`/classics/${bid}`)}
+                                className="inline-flex items-center space-x-1 px-2 py-0.5 rounded-md bg-zinc-100 text-zinc-600 text-[11px] font-semibold hover:bg-amber-100 hover:text-amber-800 transition-colors"
+                              >
+                                <BookOpen className="w-3 h-3" />
+                                <span>{t(book.title)}</span>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}

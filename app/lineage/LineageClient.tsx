@@ -19,7 +19,11 @@ import {
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { TopHeader } from '@/components/TopHeader';
-import { SearchModal } from '@/components/SearchModal';
+import dynamic from 'next/dynamic';
+const SearchModal = dynamic(
+  () => import('@/components/SearchModal').then((m) => m.SearchModal),
+  { ssr: false }
+);
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import manifest from '@/manifest.json';

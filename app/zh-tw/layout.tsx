@@ -58,14 +58,19 @@ export default function TradLayout({
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/zh-tw/books`,
+        urlTemplate: `${SITE_URL}/zh-tw/books?q={search_term_string}`,
       },
-      'query-input': 'required name=search-term-string',
+      'query-input': 'required name=search_term_string',
     },
   };
 
   return (
     <LangProvider initialTraditional={true}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){try{document.documentElement.lang='zh-TW';}catch(e){}})();`,
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
