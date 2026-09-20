@@ -159,6 +159,7 @@ MAP = {
   'shiwuyulu': [('gaofengyulu', '天目同门'), ('pangjushiyulu', '林下高风'), ('biyanlu', '宗门玄枢'), ('xinxinming', '一心不生')],
   'xiyanyulu': [('duanqiaoyulu', '杨岐同门'), ('rujingyulu', '天童法席'), ('xutangyulu', '南宋巨匠'), ('mianxianyulu', '密庵祖源')],
   'duanqiaoyulu': [('xiyanyulu', '同门法兄'), ('xutangyulu', '南宋巨匠'), ('mianxianyulu', '密庵祖源'), ('shiwuyulu', '杨岐宗派')],
+  'shanhuidashilu': [('damoxinjinganxin', '达摩心性先声'), ('xinxinming', '三祖信心双铭'), ('jingangjing', '金刚经拍案'), ('tanjing', '曹溪心王所承')],
 }
 
 
