@@ -165,6 +165,7 @@ MAP = {
   'dachengbaoyaoyilun': [('baoxinglun', '如来藏宝要'), ('dachengqixinlun', '真如一心法界'), ('lengqiejing', '印心如来藏说'), ('tanjing', '自性本来清净')],
   'huanxiyulu': [('duanqiaoyulu', '同门法兄破庵支系'), ('xiyanyulu', '宋末杨岐同门'), ('shiwuyulu', '元代并世杨岐高风'), ('biyanlu', '临济杨岐评唱宗枢')],
   'fenyangyulu': [('shishuangchuyuan', '上足法嗣慈明大千'), ('yangqiyulu', '临济杨岐法孙宗枢'), ('huanglonghuinan', '临济黄龙法孙广衍'), ('biyanlu', '颂古评唱大成祖源')],
+  'shitianyulu': [('mianxianyulu', '法祖密庵宗匠'), ('xiyanyulu', '同门法兄杨岐高风'), ('duanqiaoyulu', '同门松源破庵法系'), ('biyanlu', '圆悟关前横推旧车')],
 }
 
 
