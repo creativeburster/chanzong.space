@@ -1979,24 +1979,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["huanglong-huinan"],
     "relatedBooks": ["tanjing","lengyanjing","huanwuxinyao","huanwuyulu"]
   },
-  {
-    "id": "xueyan-zuqin",
-    "name": "雪岩祖钦",
-    "title": "宋代禅宗高僧 / 临济宗",
-    "era": "南宋 (1215-1287)",
-    "lifeStory": "祖钦禅师，婺州（今浙江金华）人，俗姓某。少出家，参无准师范，于师范座下开悟。师住雪岩山（今浙江），大弘临济宗风。门下出高峰原妙，为元代禅宗之代表。师之教以“看话头”为宗，承临济看话禅之传统，以“万法归一”为话头逼拶学人。",
-    "teachings": "雪岩宗风承临济看话禅之传统，以“万法归一，一归何处”为话头，逼拶学人于一字上透脱一切知见。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
-    "quotes": [
-      "万法归一，一归何处？",
-      "心佛众生，三无差别；但离妄缘，即如如佛。",
-      "直指人心，见性成佛；不立文字，教外别传。"
-],
-    "classics": [],
-    "relatedConcepts": ["koan"],
-    "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["wuzhun-shifan","gaofeng-yuanmiao"],
-    "relatedBooks": []
-  },
+  
   {
     "id": "poan-zuxian",
     "name": "破庵祖先",
@@ -4004,20 +3987,21 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "xueyan-zuqin",
     "name": "雪岩祖钦",
-    "title": "仰山雪岩禅师 / 临济杨岐破庵正宗",
-    "era": "南宋-元代 (1215-1287)",
-    "lifeStory": "雪岩祖钦禅师，福建漳州人，俗姓苏。十六岁出家，历参诸方，后参天童无准师范禅师，苦参无字话头，深契心印，得受杨岐派破庵支下正脉。历住湖州光孝、袁州仰山等名刹，弘法数十年，法音震动天下，学徒云集。门下英才辈出，上首弟子海印昭如、高峰原妙等皆为一代法将，使得临济宗杨岐法脉在宋元之交大放异彩。元世祖至元二十四年示寂，世寿七十三。",
-    "teachings": "雪岩禅风峻烈孤危，单刀直入，提倡死心苦参赵州无字；强调工夫绵密、行住坐卧一丝不挂，以铁石心肠逼拶学者直下悬崖撒手、自肯承当。",
+    "title": "仰山雪岩和尚 · 临济杨岐破庵法脉巨匠 · 高峰原妙之师",
+    "era": "南宋至元初 (1216—1287)",
+    "lifeStory": "雪岩祖钦（1216—1287），南宋末元初临济宗杨岐派高僧，婺州义乌人，俗姓子。五岁出家，十六受具，十八岁锐志行脚参禅。初在双林铁橛远座下坐禅，后至灵隐见来书记点破‘死水枯木禅’之弊，遂发大疑情参究话头。在净慈寺与漳州修上座结伴办道，得修上座‘高着蒲团、竖起生铁脊梁、屏作一无字尽命一提’之深旨，三昼夜两眼不交睫，忽觉眼前如银山铁壁，翻身上蒲团豁然大悟，如地陷一般，彻见森罗万象尽自妙明真性流出。后参径山无准师范禅师，深蒙印可，付以正法眼藏。历主潭州龙兴、湘西道林、处州佛日、台州护圣、湖州光孝及袁州仰山等巨刹，宗风大震。门下龙象辈出，得法高足高峰原妙开天目山，成为元代禅门擎天巨擘；海印昭如、铁峤绍宣等亦各化一方。至元二十四年示寂，世寿七十二，僧腊五十六。",
+    "teachings": "雪岩祖钦禅师极力提倡看话禅实修工夫，痛斥沉空滞寂、不通动静之死水冷禅。其核心纲宗主张‘参禅须是起疑情，大疑大悟，小疑小悟，不疑不悟’；修持者必须‘高着蒲团，竖起生铁脊梁，教他节节相拄，尽三百六十骨节、八万四千毛窍，并做一个无字尽命一提’，如一人与万人敌直取将军之首。要求行者将生命全副精力押在绝无可通处，打破银山铁壁，证得动静一如、彻见本来面目。",
     "quotes": [
-      "做工夫如堕千尺井底，求出无由，念念在井底，自然得脱。",
-      "一念不生，前后际断，桶底脱落。",
-      "分开泰华，裂破黄河。"
+      "参禅须是起疑情，大疑大悟，小疑小悟，不疑不悟。",
+      "高着蒲团，竖起脊梁，教他节节相拄，尽三百六十骨节、八万四千毛窍，并做一个无字，一提提起！",
+      "目前如一片银山铁壁相似……翻身上蒲团，面前豁然一开，如地陷一般！",
+      "万法重重一字收，拈来顿在鼻尖头；皤然白发镜中见，觌面何曾有赵州？"
     ],
-    "classics": ["雪岩和尚语录"],
-    "relatedConcepts": ["kanhua-chan-concept","wuzi-huatou","tongdi-tuo"],
-    "relatedMethods": ["kanhuatou"],
-    "relatedPersons": ["haiyin-zhaoru"],
-    "relatedBooks": ["haiyinyulu","gaofengyulu"]
+    "classics": ["xueyanyulu"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "wuzi-huatou", "yiqing", "kumu-chan"],
+    "relatedMethods": ["wu-zi-shen-tie-guan", "kanhuatou"],
+    "relatedPersons": ["wuzhun-shifan", "gaofeng-yuanmiao", "haiyin-zhaoru", "shitian-faxun", "zhongfeng-mingben"],
+    "relatedBooks": ["xueyanyulu", "haiyinyulu", "gaofengyulu"]
   },
   {
     "id": "haiyin-zhaoru",
@@ -13177,7 +13161,39 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "chanyuanqinggui",
       "conglinxiaodingqinggui"
     ]
-  }
+  },
+  {
+    "id": "sheng-tie-ji-liang",
+    "title": "生铁脊梁",
+    "category": "看话禅",
+    "classicRef": "《雪岩祖钦禅师语录》卷二《普说》",
+    "summary": "禅宗行者在参究话头与克期取证时所必备之金刚铁汉气魄与绝不退转之定力意志。源自南宋雪岩祖钦禅师普说开示：做工夫切忌随波逐流、偷心不死，必须高置蒲团，直挺身躯，令脊梁骨节节相拄，坚固如生铁铸就，在十二时中四威仪内巍然端坐如须弥山立于额前。以此不可撼动的钢铁决心，破除昏沉散乱之二风，直面生死大事。",
+    "etymology": "生铁脊梁，禅门传统机锋词汇，以未施雕琢、坚硬不可摧折之生铁比喻禅僧修道之金刚坚固心与顶天立地之骨气。",
+    "quotes": [
+      "须是十二时中、四威仪内，无丝毫虚弃底工夫，单单提着一个无字，竖起生铁脊梁，如顶一座须弥山在额角头相似。 —《雪岩和尚语录》",
+      "竖起生铁脊梁，换却凡夫骨气。"
+    ],
+    "guidance": "做工夫不可贪恋身心安适，不可遇逆境即退。当昏沉散乱交攻时，立即抖擞精神，挺起生铁脊梁，使心志坚如金石，方能力敌生死业障。",
+    "relatedConcepts": ["ping-zuo-yi-wu", "wuzi-huatou", "yiqing", "huatou-gongfu"],
+    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao"],
+    "relatedBooks": ["xueyanyulu", "gaofengyulu"]
+  },
+  {
+    "id": "ping-zuo-yi-wu",
+    "title": "屏作一无",
+    "category": "看话禅",
+    "classicRef": "《雪岩祖钦禅师语录》卷二《普说》",
+    "summary": "看话禅参究赵州狗子无佛性话之极则修持境界。‘屏’者，排斥、屏除妄念，将全副心力凝聚并敛为一处之义。行者不向外求、不起知解思维，将通身三百六十个骨节、八万四千个毛孔毛窍以及平生一切力气，全数并拢收摄为一个‘无’字。如一团炽热滚烫之烈火热铁，吞吐不下，绝一切分别路头，令妄识无隙可入，直至打破疑团、豁破牢关。",
+    "etymology": "屏作一无，语出雪岩祖钦禅师《普说》示修上座授诀法要及历代接引学人之法语。",
+    "quotes": [
+      "尽三百六十骨节、八万四千毛窍，并做一个无字，与么提起，更讨甚么昏沉散乱来？ —《雪岩和尚语录》",
+      "单单提一个无字，向未开口以前一咽咽下，便是一粒换骨灵丹。"
+    ],
+    "guidance": "参‘无’字切不可作有无之无会，亦不可作虚无断灭会，更不可口头滑转。必须将身心性命全数押在这个字上，屏绝万缘，唯此一念。",
+    "relatedConcepts": ["sheng-tie-ji-liang", "wuzi-huatou", "yiqing", "kumu-chan"],
+    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao", "wumen-huikai"],
+    "relatedBooks": ["xueyanyulu", "wumenguan", "gaofengyulu"]
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -15926,7 +15942,29 @@ export const ZEN_METHODS: MethodItem[] = [
       "chanlinbeiyongqinggui",
       "ruzhongxuzhi"
     ]
-  }
+  },
+  {
+    "id": "wu-zi-shen-tie-guan",
+    "title": "赵州无字生铁观",
+    "classicRef": "《雪岩祖钦禅师语录》卷二《普说》",
+    "summary": "南宋末元初雪岩祖钦禅师亲承净慈修上座传授并付嘱高峰原妙之看话禅终极参究法门。本法门彻底破除沉空滞寂之死水枯木禅，将坐禅之端肃仪轨与深密疑情、金刚意志熔铸为一炉。行者高垫厚蒲团端坐，竖起生铁脊梁使节节相拄，将周身骨节毛窍屏作一个赵州‘无’字从深心处猛烈提起，三昼夜不交睫，直面如银山铁壁般的疑团，直至虚空粉碎、大地陷落，亲证森罗万象尽自妙明真性流出之实相。",
+    "origin": "源自雪岩祖钦早年在净慈寺行脚时，从漳州修上座处得受‘生铁脊梁并做一无字’之口诀，亲历打破银山铁壁彻悟后，成为其住持六大名刹提撕学人、锻造高峰原妙等法嗣之根本心印。",
+    "steps": [
+      "高置厚蒲团，正身端坐，挺直脊梁，使每一截脊椎骨节节相拄，坚固如生铁，目前视三尺",
+      "将通身三百六十骨节、八万四千毛孔毛窍及平生精力全副神思，并收为一个赵州‘无’字",
+      "从未开口、未动念以前猛力一提，如一团热铁，绝一切有无思量分别与意路思维",
+      "行住坐卧四威仪中不令间断，如一人与万人敌直取中军主将，直面银山铁壁",
+      "于翻身转步或触物遇缘之电光石火间，疑团粉碎，大悟自心妙明真性"
+    ],
+    "pitfalls": [
+      "贪著静适轻安，落入‘澄澄湛湛、坐一日如弹指顷’的死水冷禅而不自知",
+      "在无字上起知解思维，分别有无或玩弄名相葛藤",
+      "工夫提得时断时续，动静打成两橛，未能寤寐一如"
+    ],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "wuzi-huatou", "yiqing"],
+    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao"],
+    "relatedBooks": ["xueyanyulu", "gaofengyulu", "wumenguan"]
+  },
 ];
 
 export const ZEN_KOANS: KoanItem[] = [
@@ -24404,7 +24442,70 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "chanlinbeiyongqinggui"
     ]
+  },
+  {
+    "id": "koan-737",
+    "question": "翻身扑倒银山铁壁（雪岩与修上座行脚做工夫）",
+    "answer": "面前豁然一开，如地陷一般！森罗万象尽自妙明真性流出！",
+    "context": "雪岩祖钦早年在净慈见漳州修上座，问做工夫昏沉散乱打并不去。修上座教以高着蒲团、竖起脊梁、节节相拄，尽三百六十骨节八万四千毛窍并作一个无字尽命一提。雪岩依教行之，三昼夜两眼不交睫，忽觉眼前如银山铁壁，翻身上蒲团豁然大悟如地陷一般。",
+    "interpretation": "雪岩祖钦自述参禅做工夫千古绝唱，示破除枯木死水冷禅之妙诀，尽命一提赵州无字，化身心世界为银山铁壁，绝处逢生，亲证实相。",
+    "master": "雪岩祖钦",
+    "source": "《雪岩祖钦禅师语录》卷二《普说》",
+    "relatedConcepts": [
+      "sheng-tie-ji-liang",
+      "ping-zuo-yi-wu",
+      "wuzi-huatou",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin"
+    ],
+    "relatedBooks": [
+      "xueyanyulu"
+    ]
+  },
+  {
+    "id": "koan-738",
+    "question": "通身一张口百炼炉中翻（雪岩径山题铸钟偈）",
+    "answer": "通身只是一张口，百炼炉中袞出来；断送夕阳归去后，又催明月上楼台！",
+    "context": "雪岩祖钦少时见无准师范于径山，因寺中铸大钟命作疏语，雪岩口占此偈。无准深器其器量拔俗，遂命居侍司。",
+    "interpretation": "大钟悬空唯余巨口，经烈火千锤百炼而成，警醒大千长夜昏迷之众生。雪岩以钟自写金刚铁汉法身，气吞天下宗门。",
+    "master": "雪岩祖钦",
+    "source": "《雪岩祖钦禅师语录》附录《山庵杂录》",
+    "relatedConcepts": [
+      "sheng-tie-ji-liang",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "xueyanyulu"
+    ]
+  },
+  {
+    "id": "koan-739",
+    "question": "虚名塞破乾坤付原妙（雪岩祖钦付嘱高峰）",
+    "answer": "上大今已无人，雪岩可知礼也。虚名塞破乾坤，分付原妙侍者！",
+    "context": "高峰原妙侍奉雪岩祖钦尽领玄旨，请雪岩题自赞，雪岩祖钦挥毫书此绝句，付嘱宗门万钧衣钵。",
+    "interpretation": "雪岩不立纤尘葛藤，将塞破乾坤之正法眼藏托付高峰原妙，开启元代临济杨岐派天目山法席之辉煌全盛。",
+    "master": "雪岩祖钦",
+    "source": "《雪岩祖钦禅师语录》卷四《自赞》",
+    "relatedConcepts": [
+      "sheng-tie-ji-liang",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "xueyanyulu",
+      "gaofengyulu"
+    ]
   }
+
 ];
 
 const ZEN_FAQS_PART1: FAQItem[] = [
@@ -44357,7 +44458,104 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedBooks": [
       "chanlinbeiyongqinggui"
     ]
+  },
+  {
+    "id": "faq-3202",
+    "question": "《雪岩祖钦禅师语录》在宋元禅宗史与临济宗杨岐派流变中具有怎样的划时代地位？",
+    "answer": "《雪岩祖钦禅师语录》是南宋末期至元代初年临济宗杨岐派最具枢纽地位之语录巨典。雪岩祖钦上承径山无准师范大师之正脉法乳，下付天目山开山祖师高峰原妙禅师。南宋末年兵燹动荡，士大夫与禅僧多有颓靡沉空之病，雪岩以极度严苛、猛利的生铁作风力挽狂澜，将大慧宗杲以来之看话禅推向更加纯粹、坚决之实修高度。其语录不仅完整保留了宋末六大巨刹之上堂法语，更因其卷二对自身做工夫行脚因缘之毫无保留的写实复盘，成为后世元、明、清三代参禅学人看话头参究的第一权威范本。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin", "wuzhun-shifan", "gaofeng-yuanmiao"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "wuzi-huatou"]
+  },
+  {
+    "id": "faq-3203",
+    "question": "元代大儒家之巽在序言中盛赞雪岩‘以无准为之父，以高峰为之子’，蕴含着怎样的法脉奥秘？",
+    "answer": "家之巽在大德二年所撰之序言，以万钧之力勾勒出临济杨岐派由宋入元最辉煌的心法传承链条。‘以无准为父’，指雪岩深得南宋一代佛国领袖径山无准师范禅师的心印法乳，渊源纯正博大；‘以高峰为子’，指雪岩将衣钵传授给天目山开山宗师高峰原妙，高峰后来再传中峰明本，宗风席卷华夏与东瀛。‘父作之，子述之，观其所从来，又观其所付授，则岩之道可知矣！’正说明雪岩祖钦处于承前启后的关键枢纽，不滞名相，全提正印，展现出至为圆满之宗门气象。",
+    "relatedBooks": ["xueyanyulu", "gaofengyulu"],
+    "relatedPersons": ["xueyan-zuqin", "wuzhun-shifan", "gaofeng-yuanmiao", "zhongfeng-mingben"],
+    "relatedConcepts": ["direct-pointing", "mind-transmission"]
+  },
+  {
+    "id": "faq-3204",
+    "question": "雪岩祖钦自述早年坐禅得‘澄澄湛湛、坐一日如弹指顷’，为何却被灵隐来书记痛斥为‘死水不济事’？",
+    "answer": "这是禅宗实修史上极其关键之鉴诫。雪岩早年在双林学坐禅，念起时轻轻一提无字，念息便默默坐，坐到‘不动不摇、坐一日如弹指顷、不闻钟鼓之声’。这种境界在普通修行者眼中已是极高深之定境，但灵隐来书记一语道破：‘钦兄！你这工夫是死水，不济得事！动静二相，未免打作两橛。’因为这种定境只是压伏念头所得之枯木静相，一离蒲团、一遇动乱人事即全功尽弃，未曾触及无始无明之根蒂。参禅必须破除对这种死水清凉境界之贪著，直起真疑情，方能于绝处逢生。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["kumu-chan", "yiqing", "chanbing"]
+  },
+  {
+    "id": "faq-3205",
+    "question": "禅宗流传极广的名言‘大疑大悟，小疑小悟，不疑不悟’，在看话禅实修中具有怎样的核心作用？",
+    "answer": "这句名言正是灵隐寺来书记向雪岩祖钦点破死水禅时所提出、并由雪岩亲证宣扬之看话禅根本纲宗。在看话禅中，‘疑情’绝非世俗对真理的怀疑或怀疑论，而是一种面对生命本来面目绝无可通时的‘大疑团’。行者如果只有微弱的寻思解构，只能带来知解上的小悟；若完全不起疑情、只求心安无念，则根本无法爆破情识窠臼（不疑不悟）；唯有调动通身生命气力，死扣公案话头，疑至情识意路皆绝之极处（大疑），方能在时节因缘和合之际迎来彻底翻转虚空的大彻大悟。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["yiqing", "wuzi-huatou", "huatou-gongfu"]
+  },
+  {
+    "id": "faq-3206",
+    "question": "净慈修上座所传授的‘高着蒲团，竖起脊梁，教他节节相拄’具有何等独特的调身调心价值？",
+    "answer": "修上座向雪岩传授的心法，直击禅僧做工夫散漫软弱之通病。‘高着蒲团’使骨盆与腰椎自然形成前倾稳固支撑，重心落于丹田；‘竖起脊梁，教他节节相拄’使整条脊柱如生铁相咬相顶，中轴笔挺不歪不斜，气脉畅通无阻；不仅从生理上杜绝了因含胸驼背带来的昏沉昏睡，更从心理上唤醒了‘一人与万人敌’之英雄魄力。身端则气定，气定则心坚，如此调身调心，方能为深沉浩瀚的疑情提摄提供坚不可摧的物质依托。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "huatou-gongfu"]
+  },
+  {
+    "id": "faq-3207",
+    "question": "什么是‘尽三百六十骨节、八万四千毛窍，并做一个无字’？如何避免落入口头念诵？",
+    "answer": "‘并做一个无字’是看话禅参究赵州公案的最顶级做工要领。凡夫修行往往只用第六意识去思维‘无’字的意思，或者在喉咙口滑溜念诵，这皆是浮光掠影之口头玩弄。雪岩强调，必须调动全身所有骨节、每一个毛孔毛窍与周身血液气息，将全副性命凝聚凝结为一个生铁铸就的‘无’字。此时无字不再是一个字眼或观念，而是将通身化为一个巨大的疑团。行者既不可思量‘无’是有还是无，亦不可期待开悟，唯有全身心死咬住这金刚一窍，方能扫尽昏散。",
+    "relatedBooks": ["xueyanyulu", "wumenguan"],
+    "relatedPersons": ["xueyan-zuqin", "wumen-huikai"],
+    "relatedConcepts": ["ping-zuo-yi-wu", "wuzi-huatou", "sheng-tie-ji-liang"]
+  },
+  {
+    "id": "faq-3208",
+    "question": "雪岩祖钦自述开悟时‘面前豁然一开，如地陷一般’，这种彻悟体验具有怎样的特质？",
+    "answer": "这是宗门大死大活后亲证法界实相之如实刻画。雪岩在依修上座之法尽命一提后，身心世界凝固为不可撼动的银山铁壁，行住坐卧三日三夜不眨眼。当行者在极度纯一之定慧境界中翻身再坐蒲团的一刹那，这道横亘生死的认知铁壁霍然坍塌破碎，其冲击力如‘大地陷落’一般彻底。此时主客对待尽泯，凡圣知见两亡，‘呈似人不得，说似人不得’，超越了一切言语概念框架，证得本来无生无灭之本地风光。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ben-lai-mian-mu", "instant-enlightenment"]
+  },
+  {
+    "id": "faq-3209",
+    "question": "雪岩悟后感叹‘森罗万象向来所厌所弃之物与无明烦恼，元来尽自妙明真性中流出’，揭示了怎样的修证圆融？",
+    "answer": "这一体悟深刻诠释了《华严》事事无碍与禅宗‘烦恼即菩提’之最高法界。行者在未悟之前，往往心存二见，厌恶世间万象、憎恶烦恼散乱，一心只想追求一个清净纯洁的境界，从而落入‘取舍二见’的陷阱。雪岩彻悟之后，与修上座行于柳堤之上，俯仰乾坤，方才如实亲见：不仅清净无染是真性显现，哪怕是红尘中森罗万象、乃至从前被自己视为大敌的妄想烦恼与昏沉散乱，原本全都是从一味无二的妙明真性中所升腾起之大用妙机。无须摒弃外境，境境全真。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["ben-lai-mian-mu", "mind-is-buddha", "zixin-xianliang"]
+  },
+  {
+    "id": "faq-3210",
+    "question": "雪岩祖钦早年在径山题铸钟偈‘通身只是一张口，百炼炉中袞出来’，体现了怎样的禅门风骨？",
+    "answer": "这首铸钟偈不仅是一首绝妙的咏物诗，更是一代宗师以钟自喻、直写金刚心性的宗风宣示。‘通身只是一张口’，喻大钟悬空唯余巨口，亦喻宗师赤条条无牵无挂，唯以祖令开示人天大化；‘百炼炉中袞出来’，喻大钟经千度烈火熔炼浇铸而成，喻禅者历经万千劫难折磨方能脱胎换骨；‘断送夕阳归去后，又催明月上楼台’，更示现出超然于昼夜时间之上、警醒大千长夜昏睡众生之浩荡慈悲与孤高气魄，令无准师范深为折服。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin", "wuzhun-shifan"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3211",
+    "question": "雪岩祖钦与高峰原妙的师徒相承，如何直接奠定了元明清三代看话禅实修的基本范式？",
+    "answer": "雪岩祖钦对高峰原妙的接引极其严酷，不仅传授其‘竖起生铁脊梁、屏作一无字’之看话纲领，更在高峰呈解时屡屡以霹雳手段将其知见逼入绝境，最终让高峰在天目山死关中立下‘不彻不休’之誓愿。高峰原妙日后创立的‘大疑情、大愤志、大信根’参禅三要，以及‘睡觉作得主么？无梦无想主人公在何处’的高峰三关，其根本宗髓皆源自雪岩在龙兴、道林、仰山期间之亲身锤炼。此一法系经中峰明本、天如惟则一路传承，成为元明清看话禅的主流正脉。",
+    "relatedBooks": ["xueyanyulu", "gaofengyulu"],
+    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao", "zhongfeng-mingben"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "wuzi-huatou", "can-san-yao"]
+  },
+  {
+    "id": "faq-3212",
+    "question": "明代莲池大师辑录《禅关策进》时，为何将雪岩祖钦的普说置于高僧做工夫的第一篇？",
+    "answer": "莲池大师在《禅关策进》中极度推崇雪岩祖钦，首选其卷二普说作为后世学人参禅第一指南，原因在于雪岩的自述毫无一般神话色彩与粉饰，而是以第一人称极其详尽、诚恳地记录了自己在做工夫中踩过的所有大坑：如把轻安当开悟（死水禅之病）、因改换话头导致前功尽弃之苦闷、骨瘦如柴心生退意之痛哭、回乡睡觉身心调适之关键，以及得遇良朋直授铁诀、两眼不交睫终破铁壁之胜景。此文给所有跋涉在菩提道上的学人提供了最为真实可信、最接地气且力量万钧之实修路标。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "huatou-gongfu", "kumu-chan"]
+  },
+  {
+    "id": "faq-3213",
+    "question": "现代学人在面对生活与工作中的昏沉散乱与精神内耗时，如何借鉴雪岩祖钦的生铁脊梁工夫？",
+    "answer": "现代人常陷于海量信息与碎片化思维之中，精神涣散、内耗不断，其心境与雪岩自述‘行处坐处只是昏沉散乱，胶胶扰扰，要一霎时净洁不可得’如出一辙。雪岩所开出的生铁法药具有永恒之实修价值：第一是‘身体的端正与定力’，在日常中随时收摄身躯，竖直脊梁，通过骨架节节相拄带起刚健精神；第二是‘专一专注的决断力’，将万千焦虑纠结收归于当下最核心之一念（屏作一事），不被杂乱念头牵引；第三是‘平衡与精进的智慧’，当身心耗竭时学会彻底放松安眠，元气恢复后则以一人与万人敌之勇猛全情投入，于动静纷扰中照见本自清净之妙明自性。",
+    "relatedBooks": ["xueyanyulu"],
+    "relatedPersons": ["xueyan-zuqin"],
+    "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "ordinary-mind"]
   }
+
 ];
 
 export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2];

@@ -168,6 +168,7 @@ MAP = {
   'shitianyulu': [('mianxianyulu', '法祖密庵宗匠'), ('xiyanyulu', '同门法兄杨岐高风'), ('duanqiaoyulu', '同门松源破庵法系'), ('biyanlu', '圆悟关前横推旧车')],
   'mingjueyulu': [('biyanlu', '百则颂古原创底本'), ('yunmen', '宗乘远绍云门正印'), ('hongzhiyulu', '宋代颂古双璧映辉'), ('congronglu', '宗门评唱承规流芳')],
   'chanlinbeiyongqinggui': [('chixiu-baizhang-qinggui', '元代官颁清规所本'), ('chanyuanqinggui', '宋代清规源流法本'), ('conglinxiaodingqinggui', '宋末清规会通互参'), ('ruzhongxuzhi', '日用行持细则指南')],
+  'xueyanyulu': [('gaofengyulu', '天目峰顶亲传师资印心'), ('haiyinyulu', '门人昭如承继法脉编集'), ('shitianyulu', '灵隐参学参究宗乘根源'), ('wumenguan', '赵州无字看话禅法要互参')],
 }
 
 
