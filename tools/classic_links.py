@@ -160,6 +160,7 @@ MAP = {
   'xiyanyulu': [('duanqiaoyulu', '杨岐同门'), ('rujingyulu', '天童法席'), ('xutangyulu', '南宋巨匠'), ('mianxianyulu', '密庵祖源')],
   'duanqiaoyulu': [('xiyanyulu', '同门法兄'), ('xutangyulu', '南宋巨匠'), ('mianxianyulu', '密庵祖源'), ('shiwuyulu', '杨岐宗派')],
   'shanhuidashilu': [('damoxinjinganxin', '达摩心性先声'), ('xinxinming', '三祖信心双铭'), ('jingangjing', '金刚经拍案'), ('tanjing', '曹溪心王所承')],
+  'yuejianyulu': [('xiyanyulu', '本师天童西岩法脉'), ('duanqiaoyulu', '杨岐同门破庵支系'), ('shiwuyulu', '元代并世杨岐高风'), ('linji', '临济正宗家风源流')],
 }
 
 
