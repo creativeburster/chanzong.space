@@ -1532,5 +1532,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '普说', pinyin: 'pǔ shuō', meaning: '住持宗师在法堂为全体大众普泛宣说宗乘义理与丛林训诫之非正式升堂讲法。' },
     { char: '巡堂', pinyin: 'xún táng', meaning: '住持或维那行巡于僧堂内，瞻视大众威仪坐相并警策昏沉懈怠之巡视规矩。' },
   ],
+  'dachengbaoyaoyilun': [
+    { char: '那庾多', pinyin: 'nà yǔ duō', meaning: '梵语 Nayuta 音译，亦作那由他。古印度大数单位，相当于千万或万万，经中常用来校量劫数之广远。' },
+    { char: '俱胝', pinyin: 'jù zhī', meaning: '梵语 Koṭi 音译，意译为千万或万万（亿）。论中形容旷远无量劫时及诸佛世界之数量极多。' },
+    { char: '优昙华', pinyin: 'yōu tán huā', meaning: '梵语 Udumbara 音译，意译灵瑞花。生长于无热恼池北五峰山，三千年一现，佛经喻佛陀出世如优昙华时一现尔。' },
+    { char: '旃陀罗', pinyin: 'zhān tuó luó', meaning: '梵语 Caṇḍāla 音译。古印度阶级之外的操屠宰等业者，经论中引申喻造作残暴恶业、不知惭愧之极恶恶徒。' },
+    { char: '㲲衣', pinyin: 'dié yī', meaning: '亦作氎衣，梵语 Paṭa 意译。以极其柔软洁白之细棉织就的上妙法服，论载阿阇世王以此妙衣供养文殊师利菩萨。' },
+    { char: '路伽耶陀', pinyin: 'lù jiā yé tuó', meaning: '梵语 Lokāyata 音译，意译顺世外道。主张顺从世俗嗜欲、唯物断灭论，否定三世因果与业报轮回。' },
+    { char: '菴摩勒果', pinyin: 'ān mó lè guǒ', meaning: '梵语 Āmalaka 音译，即余甘子。其果清澈晶莹，经中常借以比喻见性明心如观掌中菴摩勒果般历历分明。' },
+    { char: '乌波尼杀昙', pinyin: 'wū bō ní shā tán', meaning: '梵语 Upaniṣad 分音译，意译为微细分、极微部分。形容数量极小、不可思议之微细算数比率。' },
+  ],
 };
+
 
