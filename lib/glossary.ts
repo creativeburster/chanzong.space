@@ -1582,6 +1582,16 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '餧驴', pinyin: 'wèi lǘ', meaning: '餧同“喂”，饲喂牲畜。问黑豆未生芽时如何，师答“餧驴餧马”，斩钉截铁截断情识妄度。' },
     { char: '衒耀', pinyin: 'xuàn yào', meaning: '衒同“炫”，夸耀卖弄也。灵隐开堂示众云“岂敢衒耀见知耻他先作”，示现真实大宗师清白沉潜之本色。' },
   ],
+  'chanlinbeiyongqinggui': [
+    { char: '泽山一咸', pinyin: 'zé shān yī xián', meaning: '元代著名禅僧，住持庐山东林太平兴龙禅寺。历数十载博采尊宿丛规，编纂《禅林备用清规》十卷。' },
+    { char: '袁桷', pinyin: 'yuán jué', meaning: '元代大儒、史馆检阅、著名文学家，号清容居士。为《禅林备用清规》作序，称赞其“清严峻整，讲道不辍”。' },
+    { char: '柈袱', pinyin: 'pán fú', meaning: '柈同“盘”，托盘；袱为包裹信物之包袱布。卷一专使送法衣仪云“柈袱托呈法衣信物入座”，示现交接之敬慎。' },
+    { char: '分剽', pinyin: 'fēn piāo', meaning: '剽读 piāo，划分、分理。卷九病僧涅槃后，知事与大众公同分理清点亡僧遗物账目，称为分剽。' },
+    { char: '锁龛', pinyin: 'suǒ kān', meaning: '龛为安置坐化僧人法体之木函。僧众集会念诵、封锁灵龛之庄严送别仪式，宗师当机下锁龛法语。' },
+    { char: '唱衣', pinyin: 'chàng yī', meaning: '古代丛林公开估价拍卖、高声唱报圆寂僧人遗留衣物之清规仪轨，所得银钱归常住或俵散大众作功德。' },
+    { char: '俵散', pinyin: 'biào sàn', meaning: '俵读 biào，分发、散发。卷九“俵缘钱榜式”，将唱衣结余之资财平均散给常住僧众结缘。' },
+    { char: '警众', pinyin: 'jǐng zhòng', meaning: '以钟鱼鼓板等法器鸣击发声，警策大众破除长夜睡眠与昏沉、依时集会办道之佛门号令。' },
+  ],
 };
 
 

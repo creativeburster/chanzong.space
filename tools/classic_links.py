@@ -167,6 +167,7 @@ MAP = {
   'fenyangyulu': [('shishuangchuyuan', '上足法嗣慈明大千'), ('yangqiyulu', '临济杨岐法孙宗枢'), ('huanglonghuinan', '临济黄龙法孙广衍'), ('biyanlu', '颂古评唱大成祖源')],
   'shitianyulu': [('mianxianyulu', '法祖密庵宗匠'), ('xiyanyulu', '同门法兄杨岐高风'), ('duanqiaoyulu', '同门松源破庵法系'), ('biyanlu', '圆悟关前横推旧车')],
   'mingjueyulu': [('biyanlu', '百则颂古原创底本'), ('yunmen', '宗乘远绍云门正印'), ('hongzhiyulu', '宋代颂古双璧映辉'), ('congronglu', '宗门评唱承规流芳')],
+  'chanlinbeiyongqinggui': [('chixiu-baizhang-qinggui', '元代官颁清规所本'), ('chanyuanqinggui', '宋代清规源流法本'), ('conglinxiaodingqinggui', '宋末清规会通互参'), ('ruzhongxuzhi', '日用行持细则指南')],
 }
 
 
