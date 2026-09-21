@@ -24,8 +24,9 @@ export const metadata: Metadata = {
   },
 };
 
+// 結構化數據：取前 50 條問答（與首屏直出 50 條 details 嚴格一致）
 function FAQPageJsonLd() {
-  const mainEntity = ZEN_FAQS.slice(0, 30).map(f => ({
+  const mainEntity = ZEN_FAQS.slice(0, 50).map(f => ({
     '@type': 'Question',
     name: convertToTrad(f.question),
     acceptedAnswer: {

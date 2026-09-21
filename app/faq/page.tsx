@@ -22,7 +22,8 @@ export const metadata: Metadata = {
 };
 
 function FAQPageJsonLd() {
-  const mainEntity = ZEN_FAQS.slice(0, 30).map(f => ({
+  // 结构化数据：取前 50 条问答（与首屏直出 50 条 details 严格一致）
+  const mainEntity = ZEN_FAQS.slice(0, 50).map(f => ({
     '@type': 'Question',
     name: f.question,
     acceptedAnswer: {
