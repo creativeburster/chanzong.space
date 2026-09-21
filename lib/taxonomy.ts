@@ -4606,6 +4606,26 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["weishan-lingyou", "zongze", "huineng"],
     "relatedBooks": ["zimenjingxun", "chanyuanqinggui"]
   }
+,
+  {
+    "id": "qingbian",
+    "name": "清辩",
+    "title": "中观自续派开祖 · 分别明菩萨",
+    "era": "约6世纪 (约500–570)",
+    "lifeStory": "清辩论师（Bhāviveka，约500—570），古代汉地称分别明菩萨，南印度摩罗耶国人。早年依止龙友论师受具足戒，精研龙树《中论》及诸部般若经典。后住摩竭陀国及南印诸寺，广弘中观法门。论师深通因明，主张破邪必当显正，于世俗谛中自立比量以证成诸法毕竟空性，开创印度中观学派两大主流之一的‘自续派’（Svātantrika）。相传为待弥勒下生成佛以决大疑，入南印阿修罗窟长定待佛。著有《般若灯论释》、《大乘掌珍论》、《中观心论》等，为印度及汉藏佛学极度推重之中观大祖师。",
+    "teachings": "清辩论师极力阐扬八不中道胜义空性。主张胜义谛中一切法‘无自性空’，不容安立微尘许实法；但在世俗谛中，则极重依缘施设之因果法则，并主张运用因明立量来引导学人破除常断两边。其宗风锋芒毕露，力折有部、经部及唯识家执心识实有之偏见。其‘以般若智灯照见法身如来’之核心教说，与禅宗不立文字、离言绝虑、自证法身之直指宗风水乳交融。",
+    "quotes": [
+      "不生亦不灭，不常亦不断，不一亦不异，不来亦不去。",
+      "诸法不自生，亦不从他生，不共不无因，是故知无生。",
+      "以有空义故，一切法得成；若无空义者，一切则不成。",
+      "以此般若灯，愿摄众生类，见法身如来，遍满十方刹！"
+    ],
+    "classics": ["般若灯论释"],
+    "relatedConcepts": ["ban-ruo-deng", "zi-xu-pai", "jia-ming-shi-she", "xi-mie-xi-lun", "kongxing", "erdi"],
+    "relatedMethods": ["ba-bu-xian-liang-guan", "sheng-yi-li-si-ju-guan"],
+    "relatedPersons": ["nagarjuna", "ti-po"],
+    "relatedBooks": ["banruodenglunshi", "shunzhonglun", "shiertimenlun", "bailun"]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -13487,6 +13507,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["xisou-shaotan"],
     "relatedBooks": ["xisouguanglu"]
   }
+,
+  {
+    "id": "ban-ruo-deng",
+    "title": "般若灯",
+    "category": "中观般若妙慧",
+    "summary": "以无分别智寂照二边之胜义智炬。序文言‘借灯为名者，无分别智有寂照之功也’。灯体本明，自照照他，照破无始无明惑暗而不著能照之相；比喻行者离言契入诸法实相，寂而常照、照而常寂之自性灵光。",
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["zi-xu-pai", "xi-mie-xi-lun", "kongxing"],
+    "relatedPersons": ["qingbian", "nagarjuna"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "zi-xu-pai",
+    "title": "中观自续派",
+    "category": "中观宗派纲宗",
+    "summary": "古印度大乘中观两大流派之一，由清辩菩萨所开创。主张在世俗谛中可以运用严密因明比量自立宗因喻三支，以自立量正面破除外道与实事师执著，证成诸法无自性空；在胜义谛中则超绝一切能所建立，归于不生不灭之法性寂灭。",
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["ban-ruo-deng", "jia-ming-shi-she", "erdi"],
+    "relatedPersons": ["qingbian"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "jia-ming-shi-she",
+    "title": "假名施设",
+    "category": "二谛中道义理",
+    "summary": "指世间万法虽无固定自性，但依缘起因缘可以施设名字言说以指陈事理。经论云‘亦为是假名，亦是中道义’。禅门借假名以指见自性月，既不坏世俗因果法相，亦不落实法自性执著，圆通二谛而不悖中道。",
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["zi-xu-pai", "erdi", "kongxing"],
+    "relatedPersons": ["qingbian", "nagarjuna"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "xi-mie-xi-lun",
+    "title": "息灭戏论",
+    "category": "究竟解脱涅槃",
+    "summary": "指息灭一切能所分别、四句百非与常断一异等名言执著。龙树开篇赞佛‘能说是因缘，善灭诸戏论’。当言语道断、心行处灭之时，自证自知不随他缘，如虚空般无有障蔽，即是无上清净法界大涅槃。",
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["ban-ruo-deng", "kongxing", "bu-luo-si-wei"],
+    "relatedPersons": ["qingbian", "nagarjuna"],
+    "relatedBooks": ["banruodenglunshi"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -16411,6 +16472,45 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["tuo-zai-fo-shu", "bu-luo-si-wei"],
     "relatedPersons": ["xisou-shaotan"],
     "relatedBooks": ["xisouguanglu"]
+  }
+,
+  {
+    "id": "ba-bu-xian-liang-guan",
+    "title": "八不中道现量观",
+    "summary": "依《般若灯论释》开卷八不偈所立之直接观心法门。行者面对一切起心动念与外在境象，以‘不生不灭、不断不常、不一不异、不来不去’八重利剑刹那照破，直契现量无生无灭之空寂本体。",
+    "steps": [
+      "第一步【摄心内照，勘破生灭】：观当下前念已灭、后念未生，念头本无自性，不从心生亦不从境来；",
+      "第二步【绝断常异，不落两边】：照见生灭不住即是非断，相续幻现即是非常，一切对待非一非异；",
+      "第三步【离来去相，当体即空】：了达诸法无所从来、亦无所去，如空中云鸟之迹，了不可得；",
+      "第四步【八不圆融，寂照自现】：八边戏论荡尽，无分别智赫然显现，自性法身遍满虚空法界。"
+    ],
+    "pitfalls": [
+      "切忌作纯哲学概念名相之推理论辨而忘失直下观照心体",
+      "不可滞留于‘无’与‘空’之虚无边际而堕入断灭恶见"
+    ],
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["ban-ruo-deng", "xi-mie-xi-lun", "kongxing"],
+    "relatedPersons": ["qingbian", "nagarjuna"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "sheng-yi-li-si-ju-guan",
+    "title": "胜义离四句绝百非观",
+    "summary": "清辩菩萨所传破除一切情执妄想之胜义观门。行者于一切境缘中彻底扫除‘有、无、亦有亦无、非有非无’四种微细心识窠臼，令言语思虑无容身之地，顿入无分别法性。",
+    "steps": [
+      "第一步【破有执】：观照一切相状皆借缘而显，自性了不可得，彻底截断‘执实有’之见；",
+      "第二步【破无执】：照见因果万象森罗现前，非顽空木石，彻底超拔‘堕断灭’之执；",
+      "第三步【破双亦双非】：推究亦有亦无相违不立，非有非无同属戏论假说，尽除相待分别；",
+      "第四步【四句死尽，现量真如】：心路彻底绝断，不求悟亦不落迷，自性清净圆融大觉当下承当。"
+    ],
+    "pitfalls": [
+      "切莫将‘什么都不想’的懵懂无知当作离四句之般若正智",
+      "不可在日常为人处世中以此观作为废弃因果善业之借口"
+    ],
+    "classicRef": "般若灯论释",
+    "relatedConcepts": ["zi-xu-pai", "xi-mie-xi-lun", "bu-luo-si-wei"],
+    "relatedPersons": ["qingbian"],
+    "relatedBooks": ["banruodenglunshi"]
   }
 ];
 
@@ -25100,6 +25200,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["tuo-zai-fo-shu", "ding-men-yi-yan"],
     "relatedPersons": ["xisou-shaotan"],
     "relatedBooks": ["xisouguanglu"]
+  }
+,
+  {
+    "id": "koan-752",
+    "question": "因缘所生之法，如何即空即假即中？",
+    "answer": "众因缘生法，我说即是空，亦为是假名，亦是中道义。一念不生，万法齐彰！",
+    "context": "学人请益大乘中观究竟法门，如何不离缘起而体证法身，宗师以龙树根本偈举示之。",
+    "interpretation": "诸法从缘而生，故无独立自性（空）；虽无自性，因果昭然宛立借名显理（假）；同时不偏空亦不执有，超越二边（中）。宗门行者直下一念圆融三谛，当下即是佛心。",
+    "master": "龙树菩萨",
+    "source": "般若灯论释卷十一·观圣谛品",
+    "relatedConcepts": ["jia-ming-shi-she", "kongxing", "erdi"],
+    "relatedPersons": ["nagarjuna", "qingbian"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "koan-753",
+    "question": "如何是已去未去去时不可得？",
+    "answer": "已去无有去，未去亦无去。离已去未去，去时亦无去。迈步即错，动念即乖！",
+    "context": "参禅行者自谓脚踏实地、四方行脚参学，尊宿以此机锋痛下提撕。",
+    "interpretation": "已去已灭无去相，未去未生亦无去相，当下动静两端俱不可执。宗门借此彻底粉碎学人向外驰求行脚之妄念，令其回光返照脚跟底大事。",
+    "master": "清辩",
+    "source": "般若灯论释卷二·观去来品",
+    "relatedConcepts": ["xi-mie-xi-lun", "bu-luo-si-wei"],
+    "relatedPersons": ["qingbian"],
+    "relatedBooks": ["banruodenglunshi"]
+  },
+  {
+    "id": "koan-754",
+    "question": "薪火相依，如何非一非异？",
+    "answer": "若燃是可燃，作作者则一；若燃异可燃，离可燃有燃。炉火通红，谁在烧柴？",
+    "context": "大众冬日烤火，有僧执火与柴是一是二，师借此公案勘辨学人。",
+    "interpretation": "火不离柴，柴不即火。正如身心与自性之关系：若说心即自性，则心生灭自性亦生灭；若说心离自性，则身心之外别有法身。非一非异，方是不二见地。",
+    "master": "清辩",
+    "source": "般若灯论释卷五·观薪火品",
+    "relatedConcepts": ["ban-ruo-deng", "jia-ming-shi-she"],
+    "relatedPersons": ["qingbian"],
+    "relatedBooks": ["banruodenglunshi"]
   }
 ];
 
@@ -45653,6 +45790,119 @@ const ZEN_FAQS_PART3: FAQItem[] = [
     "answer": "现代人深陷信息洪流与思虑焦虑之中，心识恒常处于无休止的计算、对比与精神内耗。希叟‘掣断玄关、不落思惟’的教诫，正是最猛烈的醒脑良药。参学者无须逃避生活，只需在日常工作处理应对中，时时觉察当下一念，不随是非妄想翻滚缠绕；在困顿逆境处敢于‘撒手绝后’，看破得失浮云，以赤洒洒之金刚自性自在任运，安详自足。",
     "relatedBooks": ["xisouguanglu"],
     "relatedPersons": ["xisou-shaotan"]
+  }
+,
+  {
+    "id": "faq-3278",
+    "question": "《般若灯论释》十五卷在大乘中观思想史上具有怎样的里程碑地位？",
+    "answer": "《般若灯论释》是印度大乘佛学‘中观自续派’的开宗之作。清辩菩萨依据龙树菩萨五百偈《中论》，首次在注疏中系统引入因明因量逻辑，开创了‘以正理比量正面立论显真’的独特中观范式。此论不仅在印度与月称论师所代表的‘应成派’并称中观双璧，更因唐代波罗颇三藏传译、房玄龄等名臣监译，成为汉传佛教中观三论学派最核心的理论宝库之一。",
+    "relatedBooks": ["banruodenglunshi", "shunzhonglun", "shiertimenlun"],
+    "relatedPersons": ["qingbian", "nagarjuna"]
+  },
+  {
+    "id": "faq-3279",
+    "question": "论题取名“般若灯”具何甚深密义？与禅宗心性宗风有何渊源？",
+    "answer": "序文明示‘借灯为名者，无分别智有寂照之功也’。灯具两大特性：第一，灯光能照破深沉幽暗，喻般若智破尽众生烦恼无明；第二，灯火自明不假外照，体性恒常寂静。这正喻行者本具的无分别实相般若，寂而常照、照而常寂。禅宗强调‘一灯能除千年暗，一智能灭万年愚’，本论以般若为灯，直显离念明照之自性本体，与宗门顿悟心法如出一辙。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3280",
+    "question": "开卷“八不中道偈”（不生不灭、不断不常等）如何彻底破除学人的一切执念？",
+    "answer": "众生心识恒常落入两边：要么执着事物实有生起（生、常、一、来），要么执着断灭虚无（灭、断、异、去）。龙树与清辩以‘八不’四对相反范畴，层层推勘因缘所生法当体无自性。不生故不灭，不断故非常，不一故不异，不来故不去。八边既破，戏论全消，行者心识中一切能所分别自然冰消瓦解，直入无住无碍的中道第一义。",
+    "relatedBooks": ["banruodenglunshi", "shunzhonglun"],
+    "relatedPersons": ["qingbian", "nagarjuna"]
+  },
+  {
+    "id": "faq-3281",
+    "question": "论主在“观缘品”中以“四生推求”破自性生，其严密逻辑何在？",
+    "answer": "论中推勘一切法若生，不出四种途径：第一‘自生’，物已有体何须更生？且刀不自割、指不自触，自生不成立；第二‘他生’，若无因果关联之他物能生，牛亦当生马、火当生水，他生不成；第三‘共生’，单自与单他既各无生力，合拼亦如两盲相合不能见色；第四‘无因生’，若无因得生，虚空应常落雨、恶人应常获福，大坏世间因果。四门穷究皆不可得，故证知诸法本自无生。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3282",
+    "question": "“观去来品”以“已去、未去、去时”三时推求，如何破除时间与运动的实有自性？",
+    "answer": "常人执着有真实的‘移动’与‘时间流逝’。论主剖析：已走过的路程上无去法，因为动作已灭；尚未走过的路程上无去法，因为动作未发；离开已去与未去，当下所谓正在移动的‘去时’，若细析至刹那毫厘，除已走与未走之外根本无独立的‘去时’可得。运动者、运动时间与运动路径皆是心识假名安立，推求实性了不可得，直破众生对时空坚固之情执。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3283",
+    "question": "清辩菩萨所开创的中观“自续派”，与月称菩萨的“应成派”有何同异？",
+    "answer": "二派同尊龙树中观，同许胜义谛中一切法毕竟空寂、远离四句。根本分歧在于论证方式与世俗谛处理：自续派（清辩）主张在世俗谛中应当运用因明立量，自立宗因喻正面破邪显正；应成派（佛护、月称）则主张‘唯破不立’，只随顺敌论因明过失破斥其执，不自立任何独立量式。自续派论法严谨缜密，对建立佛法学术因果体系具有极高价值。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3284",
+    "question": "“观薪火品”以木柴与火焰之喻，如何破除主客二元对立的执著？",
+    "answer": "薪喻所受、所取之客观境相，火喻能燃、能取之主观心识。若谓火就是柴，能烧与所烧浑为一体，则烧柴即等于烧火，失去作用；若谓火与柴截然相异，则离开木柴之外应有独立永恒之火，木柴亦不可被引燃。薪火非一非异、相待而显，喻明能取与所取、主观心识与客观世界本是缘起交织的一体两面，全无固定自性。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3285",
+    "question": "如何理解“以有空义故，一切法得成；若无空义者，一切则不成”的辩证妙理？",
+    "answer": "凡夫误认‘空’为虚无毁灭，故闻空生怖。中观揭示：正是因为万法没有固定僵死的不变自性（空），事物才能随着因缘发生变化、相互转化，凡夫才可能修成佛果，种子才可能长成大树；反之，若事物真有‘不空’的实有自性，则善永远是善、恶永远是恶，凡夫永不能解脱，一切修行与因果皆化为乌有。故‘空’是缘起建立的根本前提。",
+    "relatedBooks": ["banruodenglunshi", "shunzhonglun"],
+    "relatedPersons": ["qingbian", "nagarjuna"]
+  },
+  {
+    "id": "faq-3286",
+    "question": "本论如何处理“世俗谛”与“胜义谛”之二谛关系？如何防止恶取空？",
+    "answer": "论中严格坚守二谛界限：胜义谛中‘一切法无自性’，寸丝不挂、绝四句百非；世俗谛中‘假名施设因果不虚’，善恶业报、成佛修证丝毫不爽。防偏关键在于铭记龙树名言：‘若不依俗谛，不得第一义；不得第一义，则不得涅槃。’若废弃世俗因果而高谈胜义顽空，即是‘恶取空者如捉毒蛇’，必遭深重业报沉沦之害。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3287",
+    "question": "“观法品”云“诸法实相者，心行言语断，寂灭如涅槃”，与禅宗“教外别传”有何深层相通？",
+    "answer": "诸法实相本质上超绝人类的思维推度（心行断）与名言称谓（言语断），非言思所能企及，唯是离分别之现量亲证。这与禅宗达摩祖师传来的‘不立文字、教外别传、直指人心、见性成佛’完全在同一鼻孔出气。中观以严密名相推勘至言思死绝之处，禅宗则以棒喝机锋直接截断学者思维，二者殊途同归，同指本源自性。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian", "nagarjuna"]
+  },
+  {
+    "id": "faq-3288",
+    "question": "“观涅槃品”中“涅槃与世间无有少分别”之说，对大乘菩萨道修行有何根本指导？",
+    "answer": "小乘罗汉厌离生死世间、欣求外在实有涅槃，落入灰身灭智之偏枯。大乘中观透达生死世间本无自性，当体即空；既本自无生，何来实有生死可厌？涅槃法性亦是本具空寂，何来实有果位可贪？因此大乘菩萨‘不住生死，亦不住涅槃’，得无住大涅槃，于滚滚红尘中行广大度生事业而心恒安详解脱。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3289",
+    "question": "清辩菩萨在论末发愿“见法身如来遍满十方刹”，体现了中观学怎样的宗教情怀？",
+    "answer": "中观绝非冷酷枯燥的纯哲学辨难，其终极归宿是深广无尽的大悲菩提心。清辩论师造此论破尽千般异执、万种邪见，目的是为扫荡蔽遮众生慧眼的无明垢障，愿以此般若智灯照亮沉沦有情，使大众得以顿见不生不灭、光明周遍十方世界的真如法身，同登大觉宝所。理智与大悲在此达到完美融合。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3290",
+    "question": "唐代房玄龄、杜正伦监译本论的历史背景，体现了怎样的文化气象？",
+    "answer": "唐太宗贞观之治不仅国力昌盛，更具备兼收并蓄之广大文化胸襟。波罗颇蜜多罗三藏不远万里传入中观核心梵本，太宗极为嘉许，敕住名刹并委任当朝首辅房玄龄、太子詹事杜正伦等国家级重臣监护译场，组织数十位名僧义学精严对勘翻传。这不仅彰显了大唐朝野对深奥义学之极度崇敬，更使中观正脉在东土生根发芽。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3291",
+    "question": "清辩论师入阿修罗窟待弥勒下生的传奇故事，在禅宗与大乘传统中象征何种意境？",
+    "answer": "相传清辩论师造论后欲面决深义，以真言加持白芥子击岩入窟，端坐待弥勒降世。此传奇并非怪力乱神，而是深刻象征了法界慧命的薪火相传与行者金刚不坏的坚韧道心。它启示参学行者：对胜义佛法的求证必须有贯穿无量劫、百折不挠的纯净赤诚，在幽深定境中保任自性真火，历久弥坚。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3292",
+    "question": "研读《般若灯论释》对于破除现代禅修者常犯之“口头禅”与“顽空见”有何实效？",
+    "answer": "当代参禅者多好谈玄说妙、以‘一切皆空、无善无恶’为借口放任身口意造恶，或者死守一段顽空枯木当见性，皆是严重顽疾。《般若灯论释》层层剥茧，以如椽大笔将微细意识知解扫除殆尽，逼令学人认识到：未断二边执著前之‘空’唯是分别识神！唯有经受中观严密洗礼，摧碎一切心识情量，方能走出知解葛藤，踏上真修实证的堂奥。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
+  },
+  {
+    "id": "faq-3293",
+    "question": "现代人在快节奏、高压力的生活中，如何运用“息灭戏论”的中观智慧化解精神内耗？",
+    "answer": "现代生活中的大多数焦虑、抑郁与精神内耗，本质上皆是内心‘自编自导’的虚妄戏论——对过去的悔恨追忆（已去）、对未来的忧虑预设（未去）以及对当下自我的过度关注（我执）。借本论三时推求与八不智慧，时时觉察：一切顺逆境遇皆是因缘假合、无实自性。将心从虚妄分别的死结中解脱出来，心行言语断，安住于当下一念之清凉如如，则精神内耗不破自消。",
+    "relatedBooks": ["banruodenglunshi"],
+    "relatedPersons": ["qingbian"]
   }
 ];
 
