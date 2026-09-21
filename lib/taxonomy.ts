@@ -4645,7 +4645,42 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["san-guan-can-jiu-fa", "jian-mo-bian-yi-fa", "kanhuatou"],
     "relatedPersons": ["zhaozhou", "yunmen", "gaofeng-yuanmiao", "zhongfeng-mingben"],
     "relatedBooks": ["yuxuanyulu", "jingdechuandenglu", "zhiyuelu", "zongjinglu"]
-  }
+  },
+  {
+    id: 'yuanji-juding',
+    name: '圆极居顶',
+    title: '东川圆极居顶禅师 / 续传灯录编者',
+    "era": '宋代',
+    lifeStory: '宋代东川高僧，住圆极道场。宋高宗绍兴年间，居顶禅师与诸方缁素尊宿及宋室朝廷编修官共同编纂三十六卷《续传灯录》，上承道原《景德传灯录》，下录大鉴下第十世至第二十五世五家七宗历代宗师传法行实与机锋公案，敕准入藏，为宋代禅门最核心的传灯全书。',
+    teachings: '以灯续灯，法眼常明；厘清五家七宗流派师承，展现临济大用与宋代宗风。',
+    quotes: [
+      '千枝一脉，灯灯相续；若非见性，难入斯宗。',
+      '宗门血脉，昭若日月，续佛慧命，永无断绝。'
+    ],
+    classics: ['续传灯录'],
+    relatedConcepts: ['deng-shi-chuan-cheng', 'sha-ren-dao-huo-ren-ju'],
+    relatedMethods: ['zhu-bi-duo-ji-fa'],
+    relatedPersons: ['daoyuan', 'shoushan-xingnian', 'fenyang-shanzhao'],
+    relatedBooks: ['xuchuandenglu', 'jingdechuandenglu', 'wudenghuiyuan']
+  },
+  {
+    id: 'yexian-guisheng',
+    name: '叶县归省',
+    title: '汝州叶县广教院归省禅师',
+    "era": '五代至北宋',
+    lifeStory: '冀州贾氏子，弱冠依易州保寿院出家。游方参首山省念禅师。首山举竹篦问“唤作竹篦即触，不唤作竹篦即背”，师夺得掷地喝“是甚么”，首山骂“瞎”，师言下豁然大悟。住汝州广教院，宗风峻拔孤硬，有“杀人刀、活人句”之提唱，为首山门下临济劲将。',
+    teachings: '宗门大用，能杀人亦能活人；绝言提撕，截断学人虚妄知解。',
+    quotes: [
+      '杀人须得杀人刀，活人须得活人句。',
+      '唤作竹篦即触，不唤作竹篦即背，是甚么！',
+      '猫有歃血之功，虎有起尸之德。'
+    ],
+    classics: ['续传灯录'],
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'zhu-bi-duo-ji-fa'],
+    relatedMethods: ['zhu-bi-duo-ji-fa'],
+    relatedPersons: ['shoushan-xingnian', 'fenyang-shanzhao', 'yuanji-juding'],
+    relatedBooks: ['xuchuandenglu', 'wudenghuiyuan']
+  },
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -13608,7 +13643,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo", "xi-mie-xi-lun"],
     "relatedPersons": ["yongzheng"],
     "relatedBooks": ["yuxuanyulu"]
-  }
+  },
+  {
+    id: 'sha-ren-dao-huo-ren-ju',
+    title: '杀人刀与活人句',
+    category: '见性体悟',
+    summary: '禅宗宗门勘验学人的两翼大机大用。杀人刀指斩断学人一切思维情识、知见情执的金刚利刃；活人句指启发学人自性起死回生、展现本具圆明灵觉的无上妙用。宗门宗师非双全二者不能随方解缚、开人天眼目。',
+    classicRef: '续传灯录',
+    relatedConcepts: ['tou-san-guan', 'da-si-da-huo'],
+    relatedPersons: ['yexian-guisheng', 'shoushan-xingnian', 'yuanji-juding'],
+    relatedBooks: ['xuchuandenglu', 'wudenghuiyuan']
+  },
+  {
+    id: 'tie-suan-xian',
+    title: '铁酸豏',
+    category: '公案机锋',
+    summary: '禅林中指无可思量拟议、咬嚼不烂的宗门绝相境界。雪窦重显等祖师常用以比喻如生铁铸成之酸馅，迫使学人绝却一切依文解义与葛藤卜度，死尽偷心而后大苏。',
+    classicRef: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'wu-feng-ta-yang'],
+    relatedPersons: ['xuedou-chongxian', 'yuanwu-keqin'],
+    relatedBooks: ['xuchuandenglu', 'biyanlu']
+  },
+  {
+    id: 'wu-feng-ta-yang',
+    title: '无缝塔样',
+    category: '修持境界',
+    summary: '喻清净法身圆融无相、浑然一体、了无分别纤缝痕迹的极则境界。灭翁文礼临终示寂“尽力画不出”，直指本自具足之自性金刚塔非世俗心量图样所能摹写描画。',
+    classicRef: '续传灯录',
+    relatedConcepts: ['tie-suan-xian', 'kong-you-bu-er'],
+    relatedPersons: ['yuanji-juding', 'hongzhi-zhengjue'],
+    relatedBooks: ['xuchuandenglu', 'jingdechuandenglu']
+  },
+  {
+    id: 'deng-shi-chuan-cheng',
+    title: '灯史传承与五家七宗',
+    category: '宗派源流',
+    summary: '禅宗以心印心、如以一灯燃百千灯的法脉传衍体系。自西天二十八祖、东土六祖以迄宋代五家七宗，通过《景德传灯录》、《续传灯录》、《五灯会元》等正统灯史，确立了法脉传承的历史秩序与宗门大义。',
+    classicRef: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'jiao-wai-bie-chuan'],
+    relatedPersons: ['daoyuan', 'yuanji-juding', 'shoushan-xingnian'],
+    relatedBooks: ['xuchuandenglu', 'jingdechuandenglu', 'wudenghuiyuan']
+  },
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -16610,7 +16685,43 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["tou-san-guan", "bu-luo-si-wei"],
     "relatedPersons": ["yongzheng"],
     "relatedBooks": ["yuxuanyulu"]
-  }
+  },
+  {
+    id: 'zhu-bi-duo-ji-fa',
+    title: '竹篦夺机勘验法',
+    summary: '首山省念与叶县归省所示之宗门截断两头、当机立断的猛烈勘验实修法门。以“唤作竹篦即触，不唤作竹篦即背”逼迫学人离却名相分别，在言语道断当下当头棒喝、直下见性。',
+    steps: [
+      '直提两难疑情：面对名相与事实的两边对立，体会两头俱走不通之逼塞绝境',
+      '杜绝情解思量：不生二见，不起思忖，不向名言概念中寻讨虚妄答案',
+      '当机撕破分别：如夺竹篦掷地一般，直下打破能所知见，体会本自无名无相的活泼真心'
+    ],
+    pitfalls: [
+      '切忌掉入是非名相的文字辩论中，错认机锋为口舌把戏',
+      '切忌强作解会，须在情识山穷水尽处体会绝后复苏'
+    ],
+    classicRef: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'tou-san-guan'],
+    relatedPersons: ['shoushan-xingnian', 'yexian-guisheng'],
+    relatedBooks: ['xuchuandenglu', 'wudenghuiyuan']
+  },
+  {
+    id: 'sa-shou-xuan-ya-fa',
+    title: '撒手悬崖绝后苏法',
+    summary: '宋代临济杨岐派圆悟克勤等大宗师所提撕的宗门大彻大悟实修法则。在万仞绝壁顶峰、百尺竿头无处攀援之处，彻底撒手放下所有情执靠山，死尽偷心，而后自性金刚眼睛朗然顿开。',
+    steps: [
+      '孤峰顶上立：屏息万缘，断除向外攀援的一切知见依靠',
+      '悬崖撒手绝情尘：直面心中最后的微细我执与恐惧，彻底放空身心世界',
+      '绝后大苏显全机：在人法俱泯处亲证法身无量大机大用，随处作主、立处皆真'
+    ],
+    pitfalls: [
+      '切忌把悬崖撒手误认为消极断灭或枯木死灰',
+      '若未曾大死一番，便不能体会绝后大苏的活泼妙用'
+    ],
+    classicRef: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'da-si-da-huo'],
+    relatedPersons: ['yuanwu-keqin', 'dahui-zonggao'],
+    relatedBooks: ['xuchuandenglu', 'biyanlu']
+  },
 ];
 
 export const ZEN_KOANS: KoanItem[] = [
@@ -25373,7 +25484,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["lao-guan-mo-hou", "tou-san-guan"],
     "relatedPersons": ["yongzheng"],
     "relatedBooks": ["yuxuanyulu"]
-  }
+  },
+  {
+    id: 'koan-758',
+    question: '首山省念禅师举竹篦问大众：唤作竹篦即触，不唤作竹篦即背。唤作甚么？',
+    answer: '叶县归省禅师掣得掷地上曰：是甚么！首山曰：瞎！归省言下豁然大悟。',
+    context: '《续传灯录》卷一载叶县归省参首山省念之悟道因缘。',
+    interpretation: '竹篦话是宗门最著名的两头截断公案之一。唤作竹篦则执著名相，不唤作竹篦则违背事相。归省当机夺过竹篦掷在地上反问“是甚么”，以行动粉碎名相戏论，首山骂“瞎”更是反击勘验，二祖心印电光石火交锋，全彰宗门杀活大机。',
+    master: '首山省念 / 叶县归省',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'zhu-bi-duo-ji-fa'],
+    relatedPersons: ['shoushan-xingnian', 'yexian-guisheng'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'koan-759',
+    question: '云门雪窦重显和尚颂古云：一镞破三关，分明箭后路。谁是出格人？来啖铁酸豏！',
+    answer: '宗门神箭洞穿凡圣，天下好汉敢吞铁馅！',
+    context: '《续传灯录》卷二载雪窦重显颂古提唱宗风。',
+    interpretation: '雪窦重显以一箭破三关比喻见性之透脱利落，又以无可咬嚼的“铁酸豏”比喻离言绝相的大法门。凡是拟议思量的学人皆无处下口，唯有真正截断知见的情识铁汉方能一口生吞、透出重围。',
+    master: '雪窦重显',
+    source: '续传灯录',
+    relatedConcepts: ['tie-suan-xian', 'tou-san-guan'],
+    relatedPersons: ['xuedou-chongxian', 'yuanwu-keqin'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'koan-760',
+    question: '灭翁文礼禅师示寂前问侍者：谁与我造无缝塔？侍者曰：请师塔样。师如何对？',
+    answer: '师云：尽力画不出！乃怡然脱去。',
+    context: '《续传灯录》卷三十六载天目灭翁文礼禅师示寂之最后法语。',
+    interpretation: '“无缝塔”自南阳慧忠国师以来即为清净法身之无相表征。法身无相无边，没有一丝缝隙破绽，更无物可以描摹。文礼微云“尽力画不出”，既道破了法身体性离相绝待，又表明了自性具足不假造作的无上自在。',
+    master: '天目灭翁文礼',
+    source: '续传灯录',
+    relatedConcepts: ['wu-feng-ta-yang', 'kong-you-bu-er'],
+    relatedPersons: ['yuanji-juding', 'hongzhi-zhengjue'],
+    relatedBooks: ['xuchuandenglu']
+  },
 ];
 
 const ZEN_FAQS_PART1: FAQItem[] = [
@@ -46152,7 +46299,167 @@ const ZEN_FAQS_PART3: FAQItem[] = [
     "answer": "现代人常将工作与生活视为奔波劳碌的‘苦海途中’，渴望逃离到一个安乐的‘退休家舍’。雍正帝‘途中即家舍，家舍即途中’的智慧开示：真正的安详解脱不在千里之外，就在你当下处理邮件、陪伴家人、应对挑战的每一个具体行动之中。只要放下计较得失之心，在奔波中安守本分清凉，步步踏着实地，当下即是极乐净土。",
     "relatedBooks": ["yuxuanyulu"],
     "relatedPersons": ["yongzheng"]
-  }
+  },
+  {
+    id: 'faq-3310',
+    question: '《续传灯录》三十六卷与宋初《景德传灯录》有何承前启后的关系？',
+    answer: '《景德传灯录》成书于北宋真宗景德年间，上起过去七佛、西天东土历代祖师，下讫五代法眼、永明诸师，奠定了禅门正统传灯史的宏伟基石。然而景德以降的两百余年间，宋代禅宗迎来了以临济杨岐派、黄龙派、云门宗、曹洞宗为主干的极盛黄金时代。《续传灯录》由南宋圆极居顶等编纂入藏，正从大鉴下第十世首山省念、智门光祚等宗师接续，详载两宋五家七宗历代龙象出世行履与机锋，二书首尾衔接、气脉连贯，是治禅宗史与参研公案不可或缺的双壁正史。',
+    category: '宗派源流',
+    source: '续传灯录',
+    relatedConcepts: ['deng-shi-chuan-cheng'],
+    relatedPersons: ['daoyuan', 'yuanji-juding'],
+    relatedBooks: ['xuchuandenglu', 'jingdechuandenglu']
+  },
+  {
+    id: 'faq-3311',
+    question: '《续传灯录》为何被誉为研究宋代“五家七宗”演变的最重要第一手史料？',
+    answer: '全书不仅记录了法嗣谱系，更极为详实地保存了宋代各大禅师开堂示众、室中勘验、上堂提唱的原汁原味实录。尤其是石霜楚圆门下分立杨岐方会与黄龙慧南两派、雪窦重显大振云门宗风并开创文字颂古、大洪与宏智复兴曹洞默照家风的历史细节，皆在《续传灯录》中条分缕析地展现。后世著名的《五灯会元》、《指月录》在宋代篇章的编撰上，无不大量直接取资于《续传灯录》。',
+    category: '宗派源流',
+    source: '续传灯录',
+    relatedConcepts: ['deng-shi-chuan-cheng'],
+    relatedPersons: ['yuanji-juding', 'yangqi-fanghui', 'huanglong-huinan'],
+    relatedBooks: ['xuchuandenglu', 'wudenghuiyuan']
+  },
+  {
+    id: 'faq-3312',
+    question: '首山省念禅师举“竹篦子”勘验学人，究竟意在斩断学人的什么知见？',
+    answer: '竹篦子本是丛林中常见的一件竹制用具。首山举起竹篦问：“唤作竹篦即触，不唤作竹篦即背。唤作甚么？”这句著名的两难提撕，直接将学人逼入名相与实事俱不可立的绝境：承认证物是竹篦，便落入名相执著的“触”；否认是竹篦，又违背眼前实相而“背”。首山以此法打破学人习惯于依赖概念思辨的分别意识，逼令学人在言语道断处当体悟入非空非有、无名无相的活泼自性。',
+    category: '公案机锋',
+    source: '续传灯录',
+    relatedConcepts: ['zhu-bi-duo-ji-fa', 'sha-ren-dao-huo-ren-ju'],
+    relatedPersons: ['shoushan-xingnian', 'yexian-guisheng'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3313',
+    question: '叶县归省夺竹篦掷地并喝“是甚么”，为何首山反骂“瞎”而归省言下大悟？',
+    answer: '归省一把夺过竹篦掷在地上，直接以离言之全机大用粉碎了名相与实事的纠葛，显露了临济临机果敢的利刃家风。然而首山省念骂“瞎”，并非真的斥其盲昧，而是宗门炉鞲中进一步的猛烈勘验——看你是否对刚才的夺机动作产生丝毫自以为悟的得意与执受。归省在这一声棒喝反杀之中彻照无碍，心心相印，故而豁然桶底脱落、彻底大悟。',
+    category: '公案机锋',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju'],
+    relatedPersons: ['shoushan-xingnian', 'yexian-guisheng'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3314',
+    question: '叶县归省提出“杀人刀、活人句”，在禅宗实修勘验中具体指什么？',
+    answer: '“杀人刀”指宗师以最凌厉的手段斩绝学人向外攀援的一切情识知见、佛法知解与生死虚妄妄想，使其无可凑泊、大死一番；“活人句”则是宗师于学人情识荡尽之处，启发其展现自性大觉圆通、随处作主的活泼生机。宗门大匠必须杀活并用：若只有杀人刀而无活人句，则易令学人落入顽空死灰；若只有活人句而无杀人刀，则易长养其口头禅与弄虚作假之病。',
+    category: '见性体悟',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'da-si-da-huo'],
+    relatedPersons: ['yexian-guisheng', 'shoushan-xingnian'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3315',
+    question: '汾阳善昭在西河太子院开堂所示的“西河三诀”有何深意？',
+    answer: '汾阳善昭作为首山门下的大宗师，中兴临济北地宗风。其“三诀”即：“第一诀接机立断截断众流，第二诀函盖乾坤泯除凡圣，第三诀随波逐浪妙用无方”。第一诀教人当下截断妄念相续，立斩妄想葛藤；第二诀直明自性法界圆融无缺，色心一体；第三诀则彰显悟后在无常红尘中随缘应化的大机大用。三诀层层递进，构成了宋代临济门风向上提撕的严整体系。',
+    category: '见性体悟',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju'],
+    relatedPersons: ['fenyang-shanzhao', 'shoushan-xingnian'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3316',
+    question: '雪窦重显在云门宗风中提倡“铁酸豏”与《颂古百则》，对禅林产生了何种深远影响？',
+    answer: '雪窦重显接法于智门光祚，大振云门宗风。所谓“铁酸豏”，比喻不可嚼咬、绝断分别的真如实相境界，让天下参学者在无从下口处死尽情识。其所著《颂古百则》以渊博的文字般若融摄古德公案，开启了宋代禅林“颂古”、“评唱”之风气，后来圆悟克勤在此基础上作《碧岩录》，成为宗门“宗门第一书”，深刻塑造了宋代文字禅与宗乘阐幽的历史面貌。',
+    category: '公案机锋',
+    source: '续传灯录',
+    relatedConcepts: ['tie-suan-xian', 'tou-san-guan'],
+    relatedPersons: ['xuedou-chongxian', 'yuanwu-keqin'],
+    relatedBooks: ['xuchuandenglu', 'biyanlu']
+  },
+  {
+    id: 'faq-3317',
+    question: '石霜楚圆门下为何会分化出“杨岐”与“黄龙”两大支派？其家风有何迥异？',
+    answer: '石霜楚圆（慈明禅师）以大机大用著称，门下两大龙象各领风骚：黄龙慧南宗风严整峻烈，开出“黄龙三关”，接引士大夫与学者极其宏阔，法席遍满江淮；杨岐方会则道风孤清纯粹，示众“老屋风吹雪落床头”，临机大用如龙象蹴踏、随方解缚，全得临济活机。宋代以后，黄龙派虽盛极一时但在南宋渐衰，而杨岐派历五祖法演、圆悟克勤、大慧宗杲绵延不绝，成为后世临济宗乃至全天下禅门的正统主流。',
+    category: '宗派源流',
+    source: '续传灯录',
+    relatedConcepts: ['deng-shi-chuan-cheng'],
+    relatedPersons: ['yangqi-fanghui', 'huanglong-huinan'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3318',
+    question: '黄龙慧南的“黄龙三关”（生缘、佛手、驴脚）究竟是如何勘验学人的？',
+    answer: '黄龙慧南常室中问僧：“人人有个生缘在，如何是汝生缘？”“我手何似佛手？”“我脚何似驴脚？”天下学者无能酬对者。此三关意在扫荡一切玄妙知见：生缘问的是本来面目与生命根源，答言“草鞋踏破没寻处”即断绝向外寻找；佛手问的是圣境与凡情的分别，答言“摸索枕子”直示平常心是道；驴脚问的是畜类受报与万法平等，答言“行到阶墀”直显现前起用。三关连环紧扣，使学人彻底脱落凡圣差别情执。',
+    category: '修持法门',
+    source: '续传灯录',
+    relatedConcepts: ['tou-san-guan'],
+    relatedPersons: ['huanglong-huinan'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3319',
+    question: '杨岐方会在寒风破屋中说“一毫端上转大法轮”，体现了怎样的宗风？',
+    answer: '杨岐方会在杨岐山初立门户时，环境极度清苦，风雪破壁。但他开示道：“新丰道远，曹溪路险，云门孤峻，临济纵横。只要诸人于一毫端上，照破三世古今。”这表明杨岐派从一开始就不依托庞大的外在庙产与富贵名利，而是直探心源之极致。在最逼仄寒苦的现实中，自性光明毫不减损，随缘现前，在至微极细的一毫端上圆融十方大千，体现了宗门真正洒脱不羁的金刚气度。',
+    category: '修持境界',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju'],
+    relatedPersons: ['yangqi-fanghui'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3320',
+    question: '《续传灯录》中记载的圆悟克勤“撒手悬崖”说，对于参禅悟道有何指导意义？',
+    answer: '圆悟克勤强调参禅必须具透关眼：“向万仞峰头壁立千仞，在百尺竿头更进一步，直得撒手悬崖，方见法身遍界。”在实际修行中，学人往往执持某一种悟境、禅定或清净境界作为最后的安全堡垒，这依然是微细的我执与知见。唯有敢于在万丈悬崖顶上彻底放空一切把持依靠，经历“大死一番”，才能彻底打破漆桶，迎来绝后大苏、法身无碍的大自在。',
+    category: '修持法门',
+    source: '续传灯录',
+    relatedConcepts: ['sa-shou-xuan-ya-fa', 'da-si-da-huo'],
+    relatedPersons: ['yuanwu-keqin'],
+    relatedBooks: ['xuchuandenglu', 'biyanlu']
+  },
+  {
+    id: 'faq-3321',
+    question: '大慧宗杲提倡的“看话禅”为何在两宋引起如此强烈的宗门反响？',
+    answer: '两宋时期，禅林中文字知见与默照枯坐之弊端日益显著，许多学者以熟读公案、咬文嚼字为悟，或者枯坐沉空。大慧宗杲顺应时弊，极力提倡单单参究一句“赵州狗子无佛性”无字话头。教参学者在喜怒哀乐未发处提起疑情，不准落入情解分析，如同一团烈火逼退万千妄念，令学人在疑团爆破的一刹那真正打破生死牢关。这一法门利落切要，极利士大夫与大众实修，遂成为后世数百年宗门参究之正途。',
+    category: '修持法门',
+    source: '续传灯录',
+    relatedConcepts: ['tou-san-guan'],
+    relatedPersons: ['dahui-zonggao'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3322',
+    question: '宏智正觉禅师发扬的曹洞宗“默照禅”与长芦清了的道风有何特点？',
+    answer: '宏智正觉与真歇清了皆承嗣丹霞子淳，中兴宋代曹洞宗。宏智著《默照铭》，主张“默默忘言，昭昭现前”，强调在静默安住中本觉灵照自然显现，不假外求、不借他光。与大慧宗杲的激烈提撕相比，默照禅呈现出如月映千江、澄潭如镜的绵密内省气度，两派虽有宗风之异，实则相辅相成，共同构成了两宋禅门双峰并峙的壮阔景观。',
+    category: '修持境界',
+    source: '续传灯录',
+    relatedConcepts: ['kong-you-bu-er'],
+    relatedPersons: ['hongzhi-zhengjue'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3323',
+    question: '天目灭翁文礼临终答侍者“谁与我造无缝塔”曰“尽力画不出”，体现了什么最高佛法境界？',
+    answer: '“无缝塔”象征不生不灭、无相圆融的清净法身。侍者请取图样，灭翁直示“尽力画不出”，截断了侍者企图从形象色彩或世俗构件中建立法身模型的虚妄知见。自性妙体超越一切世间形相与分别意识，言语道断、心行处灭，故天地全力亦不能画其万分之一。文礼以这一句作为生平最后的示寂法语，正是将后学直接指归于本无生灭的清净本来面目。',
+    category: '修持境界',
+    source: '续传灯录',
+    relatedConcepts: ['wu-feng-ta-yang', 'kong-you-bu-er'],
+    relatedPersons: ['yuanji-juding'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3324',
+    question: '《续传灯录》中大量记载宋代士大夫参禅入道行实，反映了宋代怎样的社会文化风尚？',
+    answer: '宋代文人士大夫如王随、杨亿、晁迥、黄庭坚、张商英等，深受禅宗心性哲学的影响，纷纷参谒诸方名宿并得法开悟。《续传灯录》特辟居士机锋篇章，记录了士大夫在庙堂行持政务与山林林泉修心之间的融通。这不仅反映出禅宗在宋代已深度融入中华士阶层的精神生命，更展现了大乘心宗不离世间烦恼、在尘劳中就地解脱的圆融力量。',
+    category: '宗门修持',
+    source: '续传灯录',
+    relatedConcepts: ['deng-shi-chuan-cheng'],
+    relatedPersons: ['yuanji-juding'],
+    relatedBooks: ['xuchuandenglu']
+  },
+  {
+    id: 'faq-3325',
+    question: '当代学人参读三十六卷《续传灯录》，应当如何着力才不致落入“口头禅与公案名相”？',
+    answer: '参读大部头灯录，切忌把公案当成文学掌故或谈资。祖师一切喝棒撕问，皆是针对学人当下那一念向外攀援的心病而发。学人阅读时，应将自己置身于公案中被勘验的问话僧地位，反问自己：若是我面对首山的竹篦、归省的夺机、黄龙的三关、灭翁的无缝塔，我当下作何对答？在无言可对、思量计度不灵处，体认那一念朗朗孤明的能知觉性，方是借古人公案照破自己生死大关的真修实证。',
+    category: '修持指南',
+    source: '续传灯录',
+    relatedConcepts: ['sha-ren-dao-huo-ren-ju', 'deng-shi-chuan-cheng'],
+    relatedPersons: ['yuanji-juding', 'yexian-guisheng'],
+    relatedBooks: ['xuchuandenglu']
+  },
 ];
 
 export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2, ...ZEN_FAQS_PART3];

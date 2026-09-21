@@ -1706,6 +1706,18 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '揜', pinyin: 'yǎn', meaning: '古同“掩”，遮掩、隐蔽。总序斥野狐禅“魔形难揜，遁归圆相之中”。' },
     { char: '癸丑', pinyin: 'guǐ chǒu', meaning: '干支纪年。清世宗雍正十一年岁次癸丑（1733年），世宗于四月朔日亲撰御制总序并颁布《御选语录》。' },
   ],
+  'xuchuandenglu': [
+    { char: '竹篦', pinyin: 'zhú bì', meaning: '竹制板条工具。宗门祖师常用来截断学人情识分别，如首山省念“唤作竹篦即触，不唤作竹篦即背”。' },
+    { char: '掣得', pinyin: 'chè dé', meaning: '掣（chè），疾速夺取、猛然抽回之意，形容禅机交锋时出手敏捷断喝无滞。' },
+    { char: '歃血', pinyin: 'shà xuè', meaning: '歃（shà），含血或微饮血以明誓，公案中喻如猫捕鼠般机警利落之天然本能神用。' },
+    { char: '阇黎', pinyin: 'shé lí', meaning: '梵语阿阇梨（Ācārya）之省称，意为轨范师，禅林中尊称行脚参究之同参僧人。' },
+    { char: '草墀', pinyin: 'cǎo chí', meaning: '墀（chí），宫室殿堂前的石阶台阶，“行到阶墀”喻举步踏实、历历在目。' },
+    { char: '一镞', pinyin: 'yī zú', meaning: '镞（zú），金属箭头，喻如利箭发机直下洞穿凡圣情量，“一镞破三关”。' },
+    { char: '酸豏', pinyin: 'suān xiàn', meaning: '豏（xiàn），同“馅”，糕饼内馅。“铁酸豏”喻宗乘极则如铁铸实心，不容半点情识拟议咬嚼。' },
+    { char: '薙落', pinyin: 'tì luò', meaning: '薙（tì），除草、剃发。指辞亲出家、剃发落发受持清净戒品。' },
+    { char: '阇维', pinyin: 'shé wéi', meaning: '梵语 Jhāpita 音译，即茶毗，指佛教出家僧众遗体火化之古称。' },
+    { char: '筀笋', pinyin: 'guì sǔn', meaning: '筀（guì），筀竹，生于南土之坚硬竹笋。公案用作无意味直指机锋，如“南山筀笋東海烏鰂”。' },
+  ],
 };
 
 
