@@ -3729,7 +3729,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["chuan-fa-zheng-zong","chuan-fa-ji","xitian-ershiba-zu","zhengfa-yancang","mind-transmission","jiaowai-biechuan-zhengzong","sanzang-lingfu","gongzai-yanwai"],
     "relatedMethods": ["yi-xin-yin-xin-fa","kanhuatou","tiben-zhengji-guan"],
     "relatedPersons": ["yunmen","bodhidharma","huineng","baizhang"],
-    "relatedBooks": ["chuanfazhengzongdingzutu","chuanfazhengzonglun","tanjing","wudenghuiyuan","jingdechuandenglu"]
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzongdingzutu","chuanfazhengzonglun","tanjing","wudenghuiyuan","jingdechuandenglu"]
   }
 ,
   {
@@ -6540,7 +6540,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "《传灯录》《五灯会元》",
     "relatedConcepts": ["mind-transmission","zhengfa-yancang","jiaowai-biechuan"],
     "relatedPersons": ["bodhidharma","jiaye","nagarjuna"],
-    "relatedBooks": ["yunmen","chuanfazhengzongdingzutu"]
+    "relatedBooks": ["chuanfazhengzongji", "yunmen","chuanfazhengzongdingzutu"]
   },
   {
     "id": "yixiu-jue",
@@ -11679,7 +11679,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "classicRef": "传法正宗定祖图",
     "relatedConcepts": ["xitian-ershiba-zu","mind-transmission","zhengfa-yancang"],
     "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzongdingzutu","wudenghuiyuan","jingdechuandenglu"]
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzongdingzutu","wudenghuiyuan","jingdechuandenglu"]
   },
   {
     "id": "chuan-fa-ji",
@@ -13313,6 +13313,63 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["kai-quan-xian-shi", "yi-cheng-liao-yi", "kai-shi-wu-ru"],
     "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
     "relatedBooks": ["miaofalianhuajing"]
+  }
+,
+  {
+    "id": "nian-hua-wei-xiao",
+    "title": "拈花微笑",
+    "category": "心性",
+    "classicRef": "《传法正宗记》卷一《始祖释迦如来表》",
+    "summary": "禅宗以心印心、教外别传之肇始公案。释迦牟尼佛于灵山会上拈金色波罗花示众，百万人天悉皆罔措，唯大迦叶破颜微笑。佛陀当即付嘱正法眼藏与涅槃妙心。这一默契超越一切语言符号之局限，展现诸法离言实相与两心无间之神圣契合。",
+    "quotes": [
+      "吾有正法眼藏、涅槃妙心、实相无相、微妙正法，不立文字、教外别传，付嘱于汝！ —《传法正宗记》"
+    ],
+    "guidance": "悟此者不离当下六根见闻知觉，体会灵明绝待之自性觉照；不可于花与笑上妄生拟测知解。",
+    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "mind-transmission"],
+    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
+    "relatedBooks": ["chuanfazhengzongji", "wumenguan", "tanjing"]
+  },
+  {
+    "id": "zheng-fa-yan-zang",
+    "title": "正法眼藏",
+    "category": "教理",
+    "classicRef": "《传法正宗记》卷一《始祖释迦如来表》",
+    "summary": "诸佛如来清净无染之如来藏心体，彻照诸法实相之第一慧眼。‘正法’者纯一清净实相，‘眼’者彻照大千之智慧，‘藏’者包涵无尽功德宝藏。宗门所密传者唯此一心，非文字法相所能穷尽，代代祖师以己心印彼心，使正法眼藏常明不晦。",
+    "quotes": [
+      "世尊最后以正法眼藏付大迦叶，令别行于世，其所传者盖心法也。 —《传法正宗记》"
+    ],
+    "guidance": "学者当求自心真眼洞开，彻见本来，切忌把公案语句、名相葛藤当成正法眼藏。",
+    "relatedConcepts": ["chuan-fa-zheng-zong", "nian-hua-wei-xiao", "ben-lai-mian-mu"],
+    "relatedPersons": ["qisong", "huineng"],
+    "relatedBooks": ["chuanfazhengzongji", "tanjing"]
+  },
+  {
+    "id": "yi-hua-kai-wu-ye",
+    "title": "一花开五叶",
+    "category": "境界",
+    "classicRef": "《传法正宗记》卷六《第二十八祖菩提达磨尊者传》",
+    "summary": "菩提达摩西来传心于二祖慧可时所留预记传法偈。‘一花’指达摩所传之一乘自性清净禅，‘五叶’指震旦禅宗由六祖惠能以下繁衍发展成沩仰、临济、曹洞、云门、法眼五家宗风。偈云‘结果自然成’，预言宗门心法将在华夏大地盛开大放、利乐无尽有情。",
+    "quotes": [
+      "吾本来兹土，传法救迷情；一花开五叶，结果自然成。 —《传法正宗记》"
+    ],
+    "guidance": "体会宗门从一味真如自性开显万千大机大用之生机活泼，明白各宗家风虽异而同出一源。",
+    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "ordinary-mind"],
+    "relatedPersons": ["bodhidharma", "huike", "huineng", "qisong"],
+    "relatedBooks": ["chuanfazhengzongji", "tanjing"]
+  },
+  {
+    "id": "mo-zhuan-cheng-jing",
+    "title": "磨砖作镜",
+    "category": "修证",
+    "classicRef": "《传法正宗记》卷九《正宗分家略传·南岳怀让传》",
+    "summary": "南岳怀让禅师接引马祖道一之划时代公案。马祖常日坐禅求佛，怀让取砖在庵前猛磨，指出‘磨砖既不成镜，坐禅岂得成佛’。若执着坐相，非但不能成佛，反成坐缚。犹如牛驾车，车若不行当打牛而非打车；心体若悟，动静四威仪皆是佛道，彻底破除死水枯坐之法执。",
+    "quotes": [
+      "磨砖既不成镜，坐禅岂得成佛？如牛驾车，车若不行，打车即是，打牛即是？ —《传法正宗记》"
+    ],
+    "guidance": "修行切忌贪着枯寂呆坐，当于起心动念处直体心源，活泼泼体现本来佛性大用。",
+    "relatedConcepts": ["ordinary-mind", "mind-is-buddha", "ben-lai-mian-mu"],
+    "relatedPersons": ["huairang", "mazu", "qisong"],
+    "relatedBooks": ["chuanfazhengzongji", "jingdechuandenglu", "wumenguan"]
   }
 ];
 
@@ -16122,6 +16179,45 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
     "relatedPersons": ["huineng", "fada"],
     "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  }
+,
+  {
+    "id": "zheng-zong-chuan-xin-guan",
+    "title": "传法正宗心印观",
+    "classicRef": "《传法正宗记》卷一与卷九总结",
+    "summary": "契嵩大师阐扬宗门正传法脉之实修心观。行者端坐敛念，离言绝句，直观当下灵知一念超越一切时空与名相，与灵山拈花、西天东土历代正宗祖师心印同体无二，直接安住法身常住之金刚正眼。",
+    "origin": "源自契嵩大师考订二十八祖传法因缘，以‘以心传心、密受正法’为宗，提撕学者直趣无言真如本源。",
+    "steps": [
+      "肃整威仪端坐蒲团，扫除一切文字知解与名相分别妄念",
+      "提撕专注自心灵灵不昧之现量知觉，观照历代祖师传法偈颂所指之不可得法体",
+      "于能所双亡、物我两忘之刹那，顿契灵山至曹溪不二心印，直下承当自心即是正法眼藏"
+    ],
+    "pitfalls": [
+      "落入知识考据学问之套路，逐字逐句寻章摘句而荒废自性觉照",
+      "误将虚妄想象之神异传承当成真实心印"
+    ],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "nian-hua-wei-xiao"],
+    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun"]
+  },
+  {
+    "id": "mo-zhuan-jian-xing-fa",
+    "title": "磨砖息心见性法",
+    "classicRef": "《传法正宗记》卷九南岳怀让接引马祖公案",
+    "summary": "破除死坐禅病、反观心源之活泼见性修持法门。行者在坐禅或日用行持中，觉察贪求安逸轻安或执着长坐之微细法执，警惕‘磨砖不成镜’之理，反问自心‘何者是坐、何者是佛’，顿空身心知见。",
+    "origin": "南岳怀让禅师以磨砖开示马祖道一，成为后世禅门转死禅为活禅之千古利器。",
+    "steps": [
+      "坐禅觉照时，一旦察觉贪求静定或希求成佛之妄念升起，立即提起‘磨砖作镜’之警省",
+      "反躬自省：若打坐即是成佛，泥塑木雕何以不成？车不行当打牛，心不悟当打心",
+      "舍弃一切造作成佛之妄想，当下安住平常心与自性天然大解脱"
+    ],
+    "pitfalls": [
+      "偏解祖意而废除日常坐禅定力训练，堕入散乱狂放",
+      "将‘打牛不打车’落入口头清谈葛藤"
+    ],
+    "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"],
+    "relatedPersons": ["huairang", "mazu"],
+    "relatedBooks": ["chuanfazhengzongji", "mazu"]
   }
 ];
 
@@ -24700,6 +24796,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["yi-cheng-liao-yi", "ben-lai-mian-mu", "kai-shi-wu-ru"],
     "relatedPersons": ["jiumoluoshi"],
     "relatedBooks": ["miaofalianhuajing"]
+  }
+,
+  {
+    "id": "koan-743",
+    "question": "灵山拈花迦叶微笑（释迦如来付大迦叶）",
+    "answer": "吾有正法眼藏、涅槃妙心、实相无相、微妙法门，不立文字、教外别传，付嘱摩诃迦叶！",
+    "context": "释迦牟尼佛于灵鹫山法华会上拈花示众，百万人天悉皆默然，唯迦叶尊者破颜微笑。佛即以此付嘱正法眼藏，开千古禅宗传心正脉。",
+    "interpretation": "自性实相离名绝相，无法以语言文字传授，唯有心心相印方契本来。迦叶之一笑，是与三世诸佛法身当下融通。",
+    "master": "释迦牟尼佛",
+    "source": "《传法正宗记》卷一《始祖释迦如来表》",
+    "relatedConcepts": ["nian-hua-wei-xiao", "zheng-fa-yan-zang", "chuan-fa-zheng-zong"],
+    "relatedPersons": ["qisong", "bodhidharma"],
+    "relatedBooks": ["chuanfazhengzongji", "wumenguan"]
+  },
+  {
+    "id": "koan-744",
+    "question": "神光立雪断臂安心（二祖慧可得法达摩）",
+    "answer": "神光曰：‘我心未宁，乞师与安！’达摩曰：‘将心来，与汝安！’神光良久曰：‘觅心了不可得！’达摩曰：‘我与汝安心竟！’",
+    "context": "神光居士侍立达摩于少林雪中过膝，挥刀自断左臂求法。达摩直下勘问其心，神光回光返照觅心无处，当下彻悟。",
+    "interpretation": "凡夫妄认前尘妄影为自心，故有不安；若回光返照穷究心源，妄心当体即空，安与不安了不可得，本来清净。",
+    "master": "菩提达摩",
+    "source": "《传法正宗记》卷七《震旦第二十九祖慧可尊者传》",
+    "relatedConcepts": ["ben-lai-mian-mu", "zheng-fa-yan-zang"],
+    "relatedPersons": ["bodhidharma", "huike"],
+    "relatedBooks": ["chuanfazhengzongji", "tanjing"]
+  },
+  {
+    "id": "koan-745",
+    "question": "磨砖作镜打牛打车（南岳怀让接引马祖）",
+    "answer": "怀让曰：‘磨砖既不成镜，坐禅岂得成佛？如牛驾车，车若不行，打车即是，打牛即是？’",
+    "context": "马祖道一常日坐禅于南岳，怀让禅师以磨砖喻坐禅，指出执相坐禅不能成佛，马祖于言下大悟自心即佛之真理。",
+    "interpretation": "成佛不在身躯坐相，而在自心见性。执着死坐犹如打车，若明自心无为妙用，则行住坐卧皆是如来清净禅。",
+    "master": "怀让",
+    "source": "《传法正宗记》卷九《正宗分家略传·南岳怀让传》",
+    "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"],
+    "relatedPersons": ["huairang", "mazu"],
+    "relatedBooks": ["chuanfazhengzongji", "mazu"]
   }
 ];
 
@@ -44879,6 +45012,135 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedBooks": ["miaofalianhuajing", "tanjing"],
     "relatedPersons": ["huineng", "jiumoluoshi"],
     "relatedConcepts": ["xin-wu-zhuan-fa-hua", "yi-li-ming-zhu", "huo-zhai-bai-niu"]
+  }
+,
+  {
+    "id": "faq-3230",
+    "question": "北宋契嵩大师撰述《传法正宗记》的时代背景与根本动机是什么？",
+    "answer": "北宋仁宗朝时期，欧阳修等儒家士大夫力主辟佛，同时佛教内部义学天台、华严学者亦依据北魏昙曜所撰《付法藏因缘传》，以‘西天法脉至二十四祖师子尊者断绝无嗣’为由，猛烈攻讦禅宗西天二十八祖法统为凭空伪造。面对内外交困的严峻局面，云门宗明教大师契嵩毅然结庐杭州灵隐东山十九载，博采群经梵本金石传记，撰成《传法正宗记》九卷，严正考定自大迦叶至达摩二十八祖、东土六祖直传法脉，并上书宋仁宗。仁宗览毕大悦，敕诏编入大藏，赐号‘明教大师’，不仅彻底平息了法统疑案，更一举奠定了禅宗在大宋官方正统大藏中的崇高法位。",
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun", "chuanfazhengzongdingzutu"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "xitian-ershiba-zu"]
+  },
+  {
+    "id": "faq-3231",
+    "question": "为何《传法正宗记》力辨北魏昙曜《付法藏传》二十四祖之说是“仓卒阙略”？",
+    "answer": "契嵩大师在书中作了详尽严密的史料考据：北魏太武帝太平真君年间发生惨烈毁佛事件，沙门昙曜当时于仓皇惊怖之中避难山泽，仅随手简录古传祖师名目怀藏于胸，未及全书。至文成帝复教、孝文帝时昙曜进为僧统，方出其残稿补修成《付法藏传》，致使师子尊者之后二十五至二十八祖遗落无闻。契嵩举出东晋佛陀跋陀罗在庐山与慧远大师所出之《禅经序》、南朝僧祐《出三藏记集》及北齐那连耶舍所传诸祖谶偈等大量早于或独立于北魏的权威史籍，确凿证明二十八祖世系自古具在，昙曜之作乃‘乱离遗逸’，绝非宗门杜撰。",
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "xitian-ershiba-zu"]
+  },
+  {
+    "id": "faq-3232",
+    "question": "灵山会上“拈花微笑”的公案在《传法正宗记》中被赋予了怎样的根本宗统地位？",
+    "answer": "《传法正宗记》将灵山拈花微笑置于全书开卷的第一枢纽地位。世尊于灵山法筵上拈花示众，迦叶破颜微笑，佛陀当众宣告‘吾有正法眼藏、涅槃妙心、实相无相、微妙法门，不立文字、教外别传，付嘱摩诃迦叶’。契嵩大师指出：如来一代时教说法四十九年，经律论三藏所演皆是言教方便；而世尊于法筵最后将这一乘不共之心印独托迦叶，令别行于世，标志着禅宗作为‘万法之宗、心性正印’独立于文字经教之外的无上合法性。拈花微笑不是神话传说，而是佛法实相超越名相思量的终极现量印证。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong", "bodhidharma"],
+    "relatedConcepts": ["nian-hua-wei-xiao", "zheng-fa-yan-zang", "chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3233",
+    "question": "如何理解禅宗祖祖相传中的“付法偈”？为何每一祖传法时必说一偈？",
+    "answer": "从第一祖大迦叶至二十八祖达摩乃至东土六祖，每逢付授衣钵心印之际，必说四句付法传心偈。契嵩大师在传记中逐一全录这些偈颂。付法偈绝非一般世俗之辞藻吟咏，而是历代祖师在心心相印的电光石火间，对当人自性本来面目与传受因缘所作的终极印证书与勘验表记。如迦叶之‘法法本来法’、达摩之‘一花开五叶’、慧能之‘有情来下种’，偈偈直指无生理体、法尔如是。付法偈是语言的极则，以最简练之符号承载不可言说之真如，成为鉴别后代宗师印可真伪的黄金律条。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
+    "relatedConcepts": ["zheng-fa-yan-zang", "chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3234",
+    "question": "第二十四祖师子尊者从容殉难、白乳涌高的公案，在禅宗法脉流传中具有何种震撼意义？",
+    "answer": "师子尊者在罽宾国遇难，面对无道昏王提刀问‘得蕴空否、求头可得乎’，尊者安详回答‘身尚非己有，何吝于头’，王挥刃断其首，喷涌白乳高逾一丈。这一震撼天地的殉难史实，在《传法正宗记》中被阐释为大乘法身无相常住的最高见证。师子尊者早已亲证五蕴皆空、无我无生，肉身生灭于自性实相毫无挂碍；白乳高涌表法身清净无瑕、毫无凡夫血气嗔怨。尊者不仅以身殉法护持正法，更在生前早已秘密付法于婆舍斯多，确保了如来正法眼藏在烈火兵刃中绝不中断，展现出禅门祖师万死不辞的护法铁骨。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["zheng-fa-yan-zang", "chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3235",
+    "question": "菩提达摩面壁九年与二祖慧可“立雪断臂”的因缘，在《传法正宗记》中如何呈现心性实相？",
+    "answer": "《传法正宗记》卷七极其生动凝练地重现了少林安心公案：神光侍立风雪过膝，自断左臂置师座前以求决疑；达摩见其心志如铁，令其‘将心来与汝安’；神光反观内照良久，坦言‘觅心了不可得’；达摩当头印证‘我与汝安心竟’。契嵩大师点明：凡夫之痛苦颠倒，全因妄执前尘影事为自己实有之心，故生无量烦恼不安；慧可于断臂的剧痛与达摩的霹雳逼勘下，万缘顿歇，一觑觑见妄心本空、自性无寄，当下即与寂灭自性融为一体。这不是心理暗示，而是直捣心源、立地成佛的真实大解脱。",
+    "relatedBooks": ["chuanfazhengzongji", "tanjing"],
+    "relatedPersons": ["bodhidharma", "huike", "qisong"],
+    "relatedConcepts": ["ben-lai-mian-mu", "zheng-fa-yan-zang"]
+  },
+  {
+    "id": "faq-3236",
+    "question": "达摩大师预言的“一花开五叶，结果自然成”，在《传法正宗记》卷八与卷九中如何得到印证？",
+    "answer": "达摩传心慧可时留下‘一花开五叶’之谶语。在《传法正宗记》第八卷与第九卷中，契嵩大师以雄健史笔展现了这一神圣预言的历史圆成：‘一花’乃初祖西来所传之一乘自心禅，经二祖至五祖代代单传；至六祖惠能大师南归曹溪，大阐顿教宗风，门下龙象并起，尤其是青原行思与南岳怀让二大尊宿分镇江左与岭南。青原下孕育曹洞、云门、法眼三家，南岳下孕育沩仰、临济二家，五家宗风如五瓣青莲竞相盛开，结果自然成熟。全书向世人证明：五家七宗看似家风各异，其实尽是达摩一花之繁盛枝叶，法同一味。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["bodhidharma", "huineng", "qisong"],
+    "relatedConcepts": ["yi-hua-kai-wu-ye", "chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3237",
+    "question": "《传法正宗记》卷九为何特辟专篇详载青原行思与南岳怀让二祖的得法机缘？",
+    "answer": "青原行思与南岳怀让是六祖惠能门下最重要的两大擎天巨柱，后世中国五家七宗全部由此二人分流衍派。契嵩大师在第九卷特辟专章，不仅详载青原‘圣谛亦不为，何阶级之有’的绝待见地，更详叙南岳怀让以‘磨砖成镜’勘悟马祖道一的千古公案。契嵩通过这两位宗师的传纪，旨在确立南宗禅从‘一人师授’走向‘丛林大阐’的历史分水岭，表明六祖之后宗门不再单传衣钵，而是心法普开、二水奔流，为天下学者追溯后世临济、曹洞、云门宗源提供了最无可争议的历史祖本。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["huairang", "mazu", "huineng", "qisong"],
+    "relatedConcepts": ["mo-zhuan-cheng-jing", "chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3238",
+    "question": "南岳怀让“磨砖作镜、打牛打车”的机锋，对扫除佛教内部的“死水坐禅”有何革命性意义？",
+    "answer": "马祖道一早年在南岳精勤坐禅，怀让以磨砖喻之，喝问‘磨砖既不成镜，坐禅岂得成佛？如牛驾车，车若不行，打车即是，打牛即是？’这一公案是禅宗修行史上最具革命性的棒喝：‘车’象征行者的肉身与蒲团坐相，‘牛’象征行者的内在心性。行者若不见性，仅执着身躯端坐不动，犹如车不行而猛抽车轱辘，徒劳无益。怀让指出成佛乃自性智慧之大悟大行，非枯槁肉身所能造作。此语彻底打破了小乘枯木死灰禅与外道苦行的窠臼，开辟了后世‘行住坐卧皆是禅、平常心是道’的坦荡大道。",
+    "relatedBooks": ["chuanfazhengzongji", "mazu"],
+    "relatedPersons": ["huairang", "mazu"],
+    "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"]
+  },
+  {
+    "id": "faq-3239",
+    "question": "《传法正宗记》卷九引述唐代名相裴休《圭峰禅师碑铭》，在宗门史学上有何重要证史价值？",
+    "answer": "契嵩大师在卷九引述唐代名相兼大居士裴休为圭峰宗密所撰碑铭：‘释迦如来最后以法眼付大迦叶，令祖祖相传别行于世……自大迦叶至于达磨凡二十八世，达磨传可，可传璨，璨传信，信传忍，忍传能为六祖。’这一引据具有千钧之力：裴休身为唐朝兵部侍郎、同平章事、当代大儒与史家，其所录碑铭代表了晚唐官方与士林对‘西天二十八祖、东土六祖’法统的普遍共识。契嵩借裴休之金石铭文，证明二十八祖世系在唐代早已是公认正传，有力击碎了宋代反对者指责禅宗谱系为晚出的谣诼。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "xitian-ershiba-zu"]
+  },
+  {
+    "id": "faq-3240",
+    "question": "《传法正宗记》与契嵩的另外两部著作《传法正宗定祖图》《传法正宗论》如何构成三璧互补？",
+    "answer": "契嵩大师的‘嘉祐三书’构成了结构严谨、逻辑完备的宗门正统三位一体：第一部《传法正宗论》（二卷），纯用精密辩证的论体，专破北魏昙曜二十四祖之讹误，力辟儒释诸家攻讦，为宗门法统扫清理论疑障；第二部《传法正宗记》（九卷），采用翔实完备的史传体，铺叙释迦灵山至曹溪分宗全部祖师的本纪、行历与付法偈，为正宗确立坚不可摧之史实证据；第三部《传法正宗定祖图》（一卷），则以直观清晰的世系图谱，提纲挈领展现法脉流布与分支脉络。三书论、史、图合璧，堪称中国禅学史上的旷世巨制。",
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun", "chuanfazhengzongdingzutu"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "xitian-ershiba-zu"]
+  },
+  {
+    "id": "faq-3241",
+    "question": "契嵩大师所著《传法正宗记》被宋仁宗御敕编入国家大藏经，在佛教史上具有何种划时代意义？",
+    "answer": "在此之前，大藏经所收录的多为印度翻译经律论三藏以及汉地早期高僧的义疏，禅宗私家语录与灯录尚未取得官方大藏的法定地位，常被教下贬为‘宗门别籍’。宋仁宗嘉祐六年，契嵩大师所呈进的《传法正宗记》等书获得朝廷公认，中书门下正式下达札子颁布天下，敕令将其全帙镂板入藏。这标志着禅宗作为‘教外别传’的正法心印，首次在国家最高文化典籍层面获得了无可争辩的官方正统地位，使禅宗彻底从山林隐遁走向全国朝野共享的宗极主流。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong"]
+  },
+  {
+    "id": "faq-3242",
+    "question": "在禅宗“不立文字”的宗旨下，契嵩大师花费十九年心血撰写数万字史传，是否存在内在矛盾？",
+    "answer": "契嵩大师在自序中对这一疑问作了透彻回答：‘夫不立文字者，非不用文字也，谓不滞于文字耳！’宗门虽以心传心、超脱语言文字，然而法之久远，必赖信史以存。若任由异端讹传、伪执充斥，后世学者将迷失法源，认贼为子。契嵩著书不是为了向外玩弄辞藻义理，而是以文字般若充当金刚巨盾，为历代祖师之正法眼藏正名定位。如同指月之指，指虽非月，因指能见清凉明月。以大文字行无上护法，正是菩萨不舍众生的究竟悲愿，毫无矛盾可言。",
+    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang"]
+  },
+  {
+    "id": "faq-3243",
+    "question": "《传法正宗记》对我们今天理解禅宗“师承接引、法脉相传”的不可替代性有何启示？",
+    "answer": "现代很多人修禅容易陷入盲修瞎炼与狂禅妄见，误以为禅宗既然主张‘自心是佛’，便可以无师自通、自行印证。参研《传法正宗记》全卷，便会深刻认识到：从灵山迦叶到曹溪六祖，每一代圣僧之悟道，无一不是经过真善知识当机勘验、粉碎情识、面命心印方得嗣法。心法虽人人本具，而自欺之情识却如影随形；唯有明眼师资之霹雳打磨与清净法印印可，方保不入魔网。明正师承法脉，是对至道真理最崇高的敬畏，也是杜绝野狐狂禅的唯一防线。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang"]
+  },
+  {
+    "id": "faq-3244",
+    "question": "为何说《传法正宗记》不仅是一部宗派史谱，更是一部波澜壮阔的心性证道教科书？",
+    "answer": "《传法正宗记》九卷所载三十三代祖师传记，绝非冰冷枯燥的年代履历，而是每一位大宗师在直面生死解脱关头、触缘开悟、截断情识的心性实录。从富那夜奢之化导外道、马鸣大士之折服论敌，到二祖立雪断臂、六祖碓坊舂米、青原南岳之机锋激荡，每一章每一节都是千古参禅做工夫的生动教材。学人披阅此书，不仅能通晓三千年禅宗正脉之来龙去脉，更能在历代祖师言行法相的熏陶下激发起金刚道志，照见自家当前面目。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3245",
+    "question": "当代青年学人如何汲取《传法正宗记》中历代祖师“百折不回、忘躯求法”的精神力量？",
+    "answer": "现代人生活在信息爆炸与浮躁功利的时代，往往心浮气躁、意志脆弱，稍遇挫折即生退转。《传法正宗记》中展现的祖师气象是惊天地泣鬼神的：达摩泛重洋三载不畏海浪恶兽、少林面壁九年不畏寒风冰雪；二祖断臂置地无半点痛悔之色；师子尊者面对屠刀含笑以头奉王；六祖腰系重石踏碓八月腰磨见骨……这种为真理与至道视肉躯如弊履、百炼成刚的精神风骨，是中华文化中最刚健博大的精神内核。当代青年参究此记，当以祖师为榜样，在生活与事业中立定生铁脊梁，不为诱惑所迷、不为困难所倒，成就独立健全之光明人格。",
+    "relatedBooks": ["chuanfazhengzongji"],
+    "relatedPersons": ["qisong", "bodhidharma", "huike"],
+    "relatedConcepts": ["chuan-fa-zheng-zong", "ben-lai-mian-mu"]
   }
 ];
 
