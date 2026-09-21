@@ -2193,7 +2193,7 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedConcepts": ["samadhi","zuochan-weiyi","chanding-jiwu"],
     "relatedMethods": ["zuochan-yi"],
     "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["ruzhongxuzhi","dongshanyulu","huanwuyulu","chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedBooks": ["zimenjingxun", "ruzhongxuzhi","dongshanyulu","huanwuyulu","chanyuanqinggui","chixiu-baizhang-qinggui"]
   },
   {
     "id": "buddha",
@@ -4587,6 +4587,24 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedMethods": ["fa-hua-san-mei-guan"],
     "relatedPersons": ["jiumoluoshi"],
     "relatedBooks": ["miaofalianhuajing"]
+  }
+,
+  {
+    "id": "rujin",
+    "name": "如卺",
+    "title": "明代高僧 · 《缁门警训》续辑大德",
+    "era": "明代",
+    "lifeStory": "如卺禅师，明代著名高僧。博研内外群籍，深痛宗门后学放逸自矜、僧规废弛，遂博采自东晋以迄宋元明诸祖关于出家戒行、坐禅实修、切骨警策之文，汇为十卷，命名《缁门警训》重刊颁行，对整肃明清丛林学风起震聋发聩之大功。",
+    "teachings": "痛斥虚度岁月、假借禅名作狂夫之态；主张行解相应、戒定互资，学人须以折慢务学为初机，以观心见性为究竟归宿。",
+    "quotes": [
+      "一性圆明人人具足，瞥然妄念遽尔轮回。",
+      "缁门警训，实乃出家之指南、学道之警策。"
+    ],
+    "classics": ["缁门警训"],
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men", "fa-zu-chao-fang"],
+    "relatedMethods": ["san-zi-xing-cha-fa"],
+    "relatedPersons": ["weishan-lingyou", "zongze", "huineng"],
+    "relatedBooks": ["zimenjingxun", "chanyuanqinggui"]
   }
 ];
 
@@ -13371,6 +13389,63 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["huairang", "mazu", "qisong"],
     "relatedBooks": ["chuanfazhengzongji", "jingdechuandenglu", "wumenguan"]
   }
+,
+  {
+    "id": "zi-men-jing-ce",
+    "title": "缁门警策",
+    "category": "修证",
+    "classicRef": "《缁门警训》卷一《沩山大圆禅师警策》",
+    "summary": "丛林出家修行者割爱辞亲、直面生死大事之切骨警策与检点准绳。行者时刻反省出家初衷，警惕‘发足超方、心形异俗’之神圣本分，不随世俗名利浮沉，以严格戒德与深密观心锻造道骨。",
+    "quotes": [
+      "夫出家者，发足超方，心形异俗。绍隆圣种，震慑魔军。 —《缁门警训》"
+    ],
+    "guidance": "学者日常当常读警策，在顺逆境界中严防放逸与盗名欺世，立定向上志气。",
+    "relatedConcepts": ["fa-zu-chao-fang", "wu-xue-shi-men", "ordinary-mind"],
+    "relatedPersons": ["weishan-lingyou", "rujin"],
+    "relatedBooks": ["zimenjingxun", "weishanyulu"]
+  },
+  {
+    "id": "wu-xue-shi-men",
+    "title": "务学十门",
+    "category": "修证",
+    "classicRef": "《缁门警训》卷一《姑苏景德寺云法师务学十门》",
+    "summary": "宋代姑苏景德寺云法师为学道初机设立之十项根本法则：不修学无以成、不折我无以学、不择师无以法、不习诵无以记、不工书无以传、不学诗无以言、非博览无以据、不历事无以识、不求友无以成、不观心无以通。以折除我慢与回光观心为枢纽。",
+    "quotes": [
+      "不折我无以学，不择师无以法，不观心无以通。 —《缁门警训》"
+    ],
+    "guidance": "求道者不可徒恃小慧自矜，须摧伏慢幢，择明师、亲良友，内外兼修，由观心直契实相。",
+    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang"],
+    "relatedPersons": ["rujin"],
+    "relatedBooks": ["zimenjingxun"]
+  },
+  {
+    "id": "mo-dai-lao-lai",
+    "title": "莫待老来",
+    "category": "境界",
+    "classicRef": "《缁门警训》卷五《慈受怀深禅师示众》",
+    "summary": "宗门深达生死无常、痛除因循推托之警醒境界。‘莫待老来方学道，孤坟多是少年人’。世相如梦，幻躯如泡影，呼吸不来便入黄泉。悟此者一念回光，顿断偷心，立地在日用中精进办道。",
+    "quotes": [
+      "莫待老来方学道，孤坟多是少年人！一口气不来，便成异世。 —《缁门警训》"
+    ],
+    "guidance": "以无常逼切警醒当下身心，切莫寄望于明日或暮年，当下承当方是不死法身。",
+    "relatedConcepts": ["zi-men-jing-ce", "ben-lai-mian-mu"],
+    "relatedPersons": ["rujin"],
+    "relatedBooks": ["zimenjingxun"]
+  },
+  {
+    "id": "fa-zu-chao-fang",
+    "title": "发足超方",
+    "category": "心性",
+    "classicRef": "《缁门警训》卷一《沩山大圆禅师警策》",
+    "summary": "出家沙门舍离凡俗束缚、立志超拔三界六道的大丈夫豪迈气概。‘发足’即毅然举步，‘超方’即超越四方世俗对待羁绊。直下承担弘扬正法、度脱苦海之法王真子本怀。",
+    "quotes": [
+      "发足超方，心形异俗。顶戴梵天，下沉苦海。 —《缁门警训》"
+    ],
+    "guidance": "在世不为世俗风浪所转，于喧扰浊世中常怀拔济一切苦难之清净大愿。",
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"],
+    "relatedPersons": ["weishan-lingyou", "rujin"],
+    "relatedBooks": ["zimenjingxun", "weishanyulu"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -16218,6 +16293,45 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"],
     "relatedPersons": ["huairang", "mazu"],
     "relatedBooks": ["chuanfazhengzongji", "mazu"]
+  }
+,
+  {
+    "id": "san-zi-xing-cha-fa",
+    "title": "三自省察观心法",
+    "classicRef": "《缁门警训》卷二龙门佛眼远禅师《三自省察》",
+    "summary": "龙门佛眼清远禅师垂示之日常省察观照法门。行者每日于静中返观自省：一省出家本愿有无退堕违背；二省日常言行动静有无放逸造业；三省心行念虑有无与真如自性相合，以此截断浮躁妄念，保持灵明惺惺。",
+    "origin": "宋代杨岐派佛眼清远禅师立规垂训，为丛林行者每日修持检视之第一心镜。",
+    "steps": [
+      "每日晨起或夜卧临睡之时，端坐静虑，收敛神思",
+      "反观一日十二时中，起心动念有无贪嗔慢疑与攀缘俗务，一一如实发露觉照",
+      "直视妄念起处，了知其当体无自性，不随妄念流转，自心安住无念清净本体"
+    ],
+    "pitfalls": [
+      "陷入世俗道德纠结悔恨，反增心理重担，未能体悟罪性本空",
+      "流于形式走过场，未曾真切在起心动念处用功"
+    ],
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"],
+    "relatedPersons": ["rujin"],
+    "relatedBooks": ["zimenjingxun"]
+  },
+  {
+    "id": "wu-chang-jing-xin-fa",
+    "title": "无常警策提撕法",
+    "classicRef": "《缁门警训》卷四与卷五长灵守卓与慈受怀深法语",
+    "summary": "借助无常迅速、死生逼切之警策心力，直破行者昏沉散乱与拖延苟安之修持要诀。将‘孤坟多是少年人’之警醒深植肺腑，于一呼一吸之间斩断向外攀缘，单提本参宗眼。",
+    "origin": "源自沩山灵祐与慈受怀深警策法语，为历代丛林大宗师治学人放逸之特效法药。",
+    "steps": [
+      "入座修持前，观想自身四大假合、命如朝露，一口气不来即是隔世",
+      "放下世间恩爱荣辱一切挂碍，如死人一般万缘齐歇",
+      "在死生逼切处单单提起本参话头或觉照灵知，如救头燃，猛勇精进直契无生"
+    ],
+    "pitfalls": [
+      "由观无常堕入悲观消极与厌世断灭，未能生起救拔众生之大悲菩提心",
+      "仅作口头知解思惟，未能形成触目惊心之切身观感"
+    ],
+    "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"],
+    "relatedPersons": ["rujin", "weishan-lingyou"],
+    "relatedBooks": ["zimenjingxun"]
   }
 ];
 
@@ -24833,6 +24947,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"],
     "relatedPersons": ["huairang", "mazu"],
     "relatedBooks": ["chuanfazhengzongji", "mazu"]
+  }
+,
+  {
+    "id": "koan-746",
+    "question": "发足超方心形异俗（沩山大圆开演警策）",
+    "answer": "夫出家者，发足超方，心形异俗。绍隆圣种，震慑魔军，顶戴梵天，下沉苦海！",
+    "context": "唐代沩山灵祐禅师见僧团中有挂名沙门游手好闲、废弛戒业，遂作《警策文》颁示丛林，开卷厉声棒喝，震动天下学林。",
+    "interpretation": "出家乃大丈夫特立独行之伟业，非苟求温饱逃避世俗。若不忘本心、精进见性，天人皆为之垂泪礼赞。",
+    "master": "沩山灵祐",
+    "source": "《缁门警训》卷一《沩山大圆禅师警策》",
+    "relatedConcepts": ["fa-zu-chao-fang", "zi-men-jing-ce"],
+    "relatedPersons": ["weishan-lingyou", "rujin"],
+    "relatedBooks": ["zimenjingxun", "weishanyulu"]
+  },
+  {
+    "id": "koan-747",
+    "question": "不折我慢无以求学（景德云法师务学十门）",
+    "answer": "不折我无以学，不择师无以法，不观心无以通！",
+    "context": "苏台景德寺云法师见学人未明自心而妄尊自大，立《务学十门》示教，以折我慢为入道之先决，以观心源为悟入之极则。",
+    "interpretation": "我慢如高山，不存德水。唯有摧折我慢山头，方能虚己受法；向内观照心源，方能透彻诸法实相。",
+    "master": "云法师",
+    "source": "《缁门警训》卷一《姑苏景德寺云法师务学十门》",
+    "relatedConcepts": ["wu-xue-shi-men", "zi-men-jing-ce"],
+    "relatedPersons": ["rujin"],
+    "relatedBooks": ["zimenjingxun"]
+  },
+  {
+    "id": "koan-748",
+    "question": "莫待老来孤坟少年（慈受怀深警众醒迷）",
+    "answer": "莫待老来方学道，孤坟多是少年人！一口气不来，便成异世。",
+    "context": "宋代慈受怀深禅师上堂示众，见青年学者多存推托苟且之念，遂出此语痛切提撕，警策大众生死无常、刻不容缓。",
+    "interpretation": "世人总谓修道尚早，不知无常不择老少。直下承当、刹那觉照，方是不被生死大鬼吞噬之金刚法身。",
+    "master": "慈受怀深",
+    "source": "《缁门警训》卷五《慈受怀深禅师示众》",
+    "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"],
+    "relatedPersons": ["rujin"],
+    "relatedBooks": ["zimenjingxun"]
   }
 ];
 
@@ -38653,7 +38804,10 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "question": "《碧岩录》第十则“睦州问僧”中，睦州为何常以“现成公案”逼拶学人？",
     "answer": "睦州每见僧便云：“现成公案，放汝三十棒。”意在直截指出佛性当下现成具足，僧人开口拟议便落第二头，起心动念即成违背。故三十棒非为惩罚，而是当头棒喝截断分别思量，令学人当下体认本自圆成的自性。",
     "relatedBooks": ["biyanlu"]
-  },
+  }
+];
+
+const ZEN_FAQS_PART3: FAQItem[] = [
   {
     "id": "faq-2300",
     "question": "《碧岩录》第十一则“黄檗酒糟”公案中，黄檗为何骂参学者为“吃酒糟汉”？",
@@ -45142,6 +45296,135 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedPersons": ["qisong", "bodhidharma", "huike"],
     "relatedConcepts": ["chuan-fa-zheng-zong", "ben-lai-mian-mu"]
   }
+,
+  {
+    "id": "faq-3246",
+    "question": "《缁门警训》在中国佛教丛林中具有何种历史地位与实修价值？",
+    "answer": "《缁门警训》被公认为中国佛教出家学道与僧范修持的第一法宝座右铭。明代高僧如卺在历代祖本基础上重加续辑，汇聚了自东晋道安至元明诸大宗师数十篇最具震撼力之警策、坐禅铭、务学论与垂诫法语。不同于单纯论述名相教理之经疏，亦不同于单一宗派之语录，本书从‘出家发心’、‘摧折我慢’、‘端正威仪’、‘坐禅真诀’直至‘临终遗训’，全方位筑牢行者的戒德操守与见性道眼。丛林传统中新受戒沙弥必先研读此记以正道心，被称为‘缁门行持之纲维、菩提道上之铁符’。",
+    "relatedBooks": ["zimenjingxun", "chanyuanqinggui"],
+    "relatedPersons": ["rujin", "weishan-lingyou"],
+    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang"]
+  },
+  {
+    "id": "faq-3247",
+    "question": "为何《缁门警训》将唐代沩山灵祐禅师的《警策文》置于卷首之冠？",
+    "answer": "沩山灵祐作为南宗沩仰宗开山祖师，《沩山警策》是禅门历史上流传最广、警策力最深透之千古名篇。其文辞开门见山直陈‘夫出家者，发足超方，心形异俗’，既有高视大千、震慑魔军的大乘豪迈，又有‘光阴可惜，时不待人’、‘沉溺爱河，长沦苦海’的慈悲痛切。在佛教史中，《沩山警策》与《四十二章经》《遗教经》并称为‘佛遗教三经’，是僧俗修道之根本心印。将其冠于全书首篇，为整个十卷大典定下了‘直面生死、发大勇猛、严持操守’的宗极基调。",
+    "relatedBooks": ["zimenjingxun", "weishanyulu"],
+    "relatedPersons": ["weishan-lingyou", "rujin"],
+    "relatedConcepts": ["fa-zu-chao-fang", "zi-men-jing-ce"]
+  },
+  {
+    "id": "faq-3248",
+    "question": "姑苏景德寺云法师《务学十门》中，为何将“不折我无以学”置于核心位置？",
+    "answer": "云法师在十门中深中肯綮指出：我执与我慢是修道求学最大的死敌。学者一旦心存自矜自满，自视清高，法水便如倾倒在光滑磐石之上，无法渗入分毫。‘折我’即是彻底摧碎个人的面子、知见与浮躁优越感，甘居卑下、如器受水。唯有将‘我’彻底折伏击碎，方能恭敬择师、依教奉行；进而配合‘不观心无以通’，向内心穷究一切知见烦恼之根源，方能彻见本来面目。这是从凡夫情识迈向圣贤知见的必经死关。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["wu-xue-shi-men", "zi-men-jing-ce"]
+  },
+  {
+    "id": "faq-3249",
+    "question": "长芦慈觉宗赜禅师《坐禅仪》所阐明的“大悲心与菩提愿”，对坐禅修行有何关键指导？",
+    "answer": "长芦赜禅师的《坐禅仪》是北宋乃至后世丛林坐禅的最经典规程。宗赜开宗明义强调：坐禅学般若者，绝不可为了个人追求身心舒泰、逃避世苦或求神通名誉而坐，而必须‘先起大悲心，发弘誓愿，精修三昧，誓度众生，不为自身独求安乐’。大悲菩提愿是坐禅的引擎与护甲：若无大悲弘愿，坐禅极易落入小乘偏真自了之偏枯，或入定境幻相而着魔发狂；唯有以誓度众生之悲愿御心，自心方能浩瀚如虚空，顿空五蕴，直趣一乘圆满实相。",
+    "relatedBooks": ["zimenjingxun", "chanyuanqinggui"],
+    "relatedPersons": ["zongze", "rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "ordinary-mind"]
+  },
+  {
+    "id": "faq-3250",
+    "question": "龙门佛眼清远禅师《坐禅铭》“心光虚映，动寂常禅”，展现了怎样的宗门实相见地？",
+    "answer": "佛眼清远禅师乃北宋杨岐派五祖法演门下三佛之一（佛果、佛鉴、佛眼）。其《坐禅铭》文辞优美、法义绝顶：‘心光虚映，体绝偏圆；金波匝匝，动寂常禅。’一般学人把坐禅理解为闭目枯坐、排除外境；佛眼禅师直截指明：自性心光本来虚灵明朗，体无对待，非动非静。如水上金色波澜，起伏虽殊而水体常一；行住坐卧四威仪中，只要自心不被境惑、惺惺历历，则处处皆是大禅定。这为宋代以后的看话禅与活泼大机大用奠定了纯正的心性见地。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3251",
+    "question": "慈受怀深禅师“莫待老来方学道，孤坟多是少年人”的呼号，如何击碎众生的拖延习气？",
+    "answer": "凡夫众生有一极大痼疾，即总认为死亡离自己尚早，今生当先图名利、安适温饱，待年老体衰时再从容学佛办道。慈受禅师这一千古名句犹如晴天霹雳：黄泉路上无老少，荒草孤坟之中夭折者比比皆是！生命的脆弱只在呼吸之间，一口气呼出不再回复，转眼即成异世孤魂。这种切肤之痛的警策，直截切断了学人向后拖延的一切退路，迫使修行者在当下这一刹那、这一呼吸之间提起生死事大之全副心力，当下顿悟、当下解脱。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"]
+  },
+  {
+    "id": "faq-3252",
+    "question": "《缁门警训》中收录诸多痛陈因果地狱报应之言，与禅宗“自性空寂、不立文字”是否存在冲突？",
+    "answer": "毫无冲突，这恰恰是禅门祖师悲智双运、权实不二的至高智慧。禅宗虽主张自性本来空寂、凡圣无二，那是从‘理体究竟’而言；然而众生若未亲见自性，依然妄起贪嗔痴杀盗淫，其因果业报之业流丝毫不爽，那是‘事相缘起’的铁律。祖师以地狱炽火与堕落恶道痛切警策，正是为了当头棒喝击碎行者的妄想情识，不让其以‘理上见性’为借口而堕入拨无因果、放荡无忌的恶取空盲坑。理彻事圆、戒定双全，方为真宗乘。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin", "weishan-lingyou"],
+    "relatedConcepts": ["zi-men-jing-ce", "ordinary-mind"]
+  },
+  {
+    "id": "faq-3253",
+    "question": "东晋道安法师《遗诫九章》在《缁门警训》卷六中，对确立中国僧团轨制有何奠基意义？",
+    "answer": "道安法师被尊为东晋佛教领袖与中国僧尼制度之奠基鼻祖。他在《遗诫九章》中以至诚至敬之心，详列僧徒持守禁戒、恭敬常住、检束身心、绝不妄交世俗权贵之准绳。道安法师最早统一出家人皆以‘释’为姓，确立行香受食布萨之法。《缁门警训》全卷录其遗诫，旨在警示后昆：中国佛教之所以历经千百年兵荒马乱而薪火不绝，全赖道安等早期圣僧以严明戒轨奠定之金刚法基。无戒德威仪，禅修便成沙上建塔。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"]
+  },
+  {
+    "id": "faq-3254",
+    "question": "元代中峰明本国师在《自警文》中强调“袈裟下失却人身”，对出家修道者有何沉痛告诫？",
+    "answer": "元代临济宗巨擘中峰明本在天目山开山，其道风横绝一时。中峰在《自警文》中痛陈：如来袈裟是解脱之田、人天共仰之圣物，十方施主供养之一粟一粒皆关因果性命。若剃发披缁之后，内无道心、外贪利养，以出家之名行世俗偷安之实，这是‘袈裟下坐消信施、罪大恶极’之尤者。一旦无常到来，堕入泥犁地狱受苦无量，百千万劫难复人身！此文警醒每一位修道者随时扪心自问：今日所作所为，对得起胸前所披之三十二相袈裟否？",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang"]
+  },
+  {
+    "id": "faq-3255",
+    "question": "唐代修雅法师《听诵法华经歌》中“句句白牛亲动步，只在浮生日用中”，传达了怎样的禅宗化境？",
+    "answer": "修雅法师本善吟咏，后听高僧于盘陀石上诵《法华经》大彻大悟，挥笔作此千古长歌。诗歌将法华圆顿实相与禅门日用妙用融为一体：法华经所说之大白牛车，并非身外某种神异之物，高僧诵经一字一句，当下皆是大白牛车在奔腾腾迈步！‘白牛之步疾如风，不在西不在东，只在浮生日用中！’行者在日常穿衣吃饭、运水搬柴的浮生琐屑之中，若能当下觉照自性真如，便是驾御大白牛车直趣佛道，把枯燥的诵经化为了活泼泼的生活禅现量。",
+    "relatedBooks": ["zimenjingxun", "miaofalianhuajing"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "ordinary-mind"]
+  },
+  {
+    "id": "faq-3256",
+    "question": "《缁门警训》卷十收录梁武帝《舍道事佛诏》，在全书结构中起到何种护法正信的表率作用？",
+    "answer": "梁高祖武皇帝萧衍天监三年四月八日颁布《舍道事佛诏》，宣布彻底舍弃老子符图邪术，稽首归命十方三宝，誓愿童男出家、广弘佛法，愿在正法之中长沦恶道、不依老子之教暂得生天。如卺将此诏编于全书压轴卷十，极具深意：一是彰显大乘佛法之至高至尊，使天下王者与卿相皆折服归心；二是警示后世僧徒：连贵为一国之尊的帝王都能万机之中日唯一食、布被草履、笃信正觉，出家缁流身居清净伽蓝，又岂能自甘堕落、背觉合尘？",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang"]
+  },
+  {
+    "id": "faq-3257",
+    "question": "为什么说《缁门警训》是现代禅修者破除“口头禅、狂禅、枯木禅”三大通病的对症良药？",
+    "answer": "当代学人参禅极易犯三病：一是‘口头禅’，熟记公案语录夸夸其谈而实际身心全无证量；二是‘狂禅’，自恃悟了本来便轻蔑戒律威仪、放逸形骸；三是‘枯木禅’，贪恋静坐轻安死在定境之中。《缁门警训》对这三病各施金刚猛药：以十门务学与折慢之训摧毁口头禅；以沩山警策与地狱业报痛棒狂禅；以坐禅铭与日用大用破除枯木禅。它教导我们：真正的开悟必伴随极其严谨的戒德与深重的大悲心，行解如车之双轮，缺一不可。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin", "weishan-lingyou"],
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"]
+  },
+  {
+    "id": "faq-3258",
+    "question": "佛眼清远禅师所授“三自省察”具体如何操作，现代人在生活中如何运用？",
+    "answer": "三自省察法操作简便而力量万钧：每日择一清净时刻（如早晨醒来或入睡前），端坐三分钟反观内省：第一自省‘初心’，反问自己当年立志学道求真的初发心还在不在，是否已被生活琐事磨灭？第二自省‘言行’，反查今天这一整天言语举止有无伤害他人、有无贪婪嗔恚造作恶业？第三自省‘心念’，观照此刻当下自心是清净明亮还是昏沉混乱？以此三省截断妄想恶流。现代职场人若能每日践行三自省察，必能在喧嚣商海与生活压力中始终保持内心的澄澈与安宁。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"]
+  },
+  {
+    "id": "faq-3259",
+    "question": "《缁门警训》中关于“择师求友”的教诫，对现代寻求精神导师有何鉴别标准？",
+    "answer": "书中多篇文章（如孤山智圆、景德云法师等）极其严厉地告诫：‘不择师无以法，不求友无以成！’若盲目追随无真知灼见、贪求供养名利的伪名师，犹如盲人骑瞎马夜半临深池。祖师给出的择师标准是：第一看戒德，是否清净自律、不谋私利；第二看知见，是否以经论祖印为绳墨，见地是否圆融通透；第三看悲愿，是否真正为学人生死着想而非搞个人崇拜。求友亦须选择道心坚固、敢于当面诤谏之良朋道友，方能同舟共济、远涉险滩。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["wu-xue-shi-men", "zi-men-jing-ce"]
+  },
+  {
+    "id": "faq-3260",
+    "question": "在家居士研读《缁门警训》是否合适？能从中获得哪些直接的修行受用？",
+    "answer": "极其合适且受用无穷。《缁门警训》虽文多针对出家沙门，但其核心所阐发的‘痛念无常、摧折我执、端正心行、坐禅实相’，是所有佛弟子共同的心灵基石。在家居士处于红尘烦恼火宅之中，更容易懈怠放逸、为名利爱欲所缚。读此书如服清凉解毒散，能令居士在面对职场挫折与生活欲望时，迅速生起‘莫待老来’之警觉；学习书中的坐禅仪轨与观心方法，更能将在家日用转化为菩提道场，成为具有生铁骨气的居家金刚行者。",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin"],
+    "relatedConcepts": ["zi-men-jing-ce", "ordinary-mind"]
+  },
+  {
+    "id": "faq-3261",
+    "question": "当代年轻人如何在日常学习、工作与生活中活学活用《缁门警训》的刚健精神？",
+    "answer": "现代年轻人常面临焦虑内耗、拖延迷茫与‘躺平’心态，而《缁门警训》展现的正是中华传统文化中最顶天立地的刚健风骨。活学活用有三要：第一是‘立志发足超方’，跳出狭隘的眼前得失计较，立定崇高长远的生命格局；第二是‘不折我无以成’，在工作和学习中放下盲目傲慢，虚心求教、脚踏实地；第三是‘句句白牛在日用’，把每一个当下正在做的事情当成磨炼自性的神圣道场，不拖延、不推诿，在火宅世间活出充实、坦荡、光明而有尊严的人生！",
+    "relatedBooks": ["zimenjingxun"],
+    "relatedPersons": ["rujin", "weishan-lingyou"],
+    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang", "wu-xue-shi-men"]
+  }
 ];
 
-export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2];
+export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2, ...ZEN_FAQS_PART3];

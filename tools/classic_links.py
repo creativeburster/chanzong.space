@@ -171,6 +171,7 @@ MAP = {
   'xueyanyulu': [('gaofengyulu', '天目峰顶亲传师资印心'), ('haiyinyulu', '门人昭如承继法脉编集'), ('shitianyulu', '灵隐参学参究宗乘根源'), ('wumenguan', '赵州无字看话禅法要互参')],
   'miaofalianhuajing': [('tanjing', '法达悟法华转法华'), ('lengyanjing', '大乘开示悟入佛知见'), ('yuanjuejing', '圆觉一乘无二相'), ('weimojiejing', '不二法门入实相')],
   'chuanfazhengzongji': [('chuanfazhengzongdingzutu', '定祖合璧姊妹'), ('chuanfazhengzonglun', '正宗破惑论辩'), ('jingdechuandenglu', '宋代传灯全景'), ('tanjing', '曹溪一花五叶')],
+  'zimenjingxun': [('chanyuanqinggui', '宋代清规源流'), ('weishanyulu', '沩山警策根本法乳'), ('ruzhongxuzhi', '丛林日用威仪规制'), ('changuancejin', '明代宗门策励双璧')],
 }
 
 
