@@ -3619,11 +3619,11 @@ export const ZEN_PERSONS: PersonItem[] = [
       "心无谄曲即是直心，直心之处即是道场。",
       "明物不从天降、不从地出，皆因缘和合而有。"
     ],
-    "classics": ["金刚般若波罗蜜经","维摩诘所说经","注维摩诘经","佛说首楞严三昧经"],
+    "classics": ["金刚般若波罗蜜经","维摩诘所说经","注维摩诘经","佛说首楞严三昧经", "妙法莲华经"],
     "relatedConcepts": ["prajna","ru-bu-er-fa-men","non-duality","emptiness"],
     "relatedMethods": ["zhongguan-bore","weimo-buer-practice"],
     "relatedPersons": ["seng-zhao","daosheng","seng-rui"],
-    "relatedBooks": ["zhuweimojiejing","weimojiejing","jingangjing","shoulengyansanmeijing"]
+    "relatedBooks": ["zhuweimojiejing","weimojiejing","jingangjing","shoulengyansanmeijing", "miaofalianhuajing"]
   },
   {
     "id": "daosheng",
@@ -4551,6 +4551,42 @@ export const ZEN_PERSONS: PersonItem[] = [
       "conglinxiaodingqinggui",
       "ruzhongxuzhi"
     ]
+  }
+,
+  {
+    "id": "fada",
+    "name": "法达",
+    "title": "曹溪六祖高足·法华圆顿顿悟禅师",
+    "era": "唐代 (约654 - 约730)",
+    "lifeStory": "法达禅师，唐代洪州丰城人，七岁出家，常诵《妙法莲华经》。后至韶州曹溪参礼六祖惠能大师，礼拜时头不至地。六祖呵责其心中必有一物，法达答言念诵《法华经》已达三千部。六祖告诫‘礼本折慢幢，头奚不至地。有我罪即生，亡功福无比’，并为开示《法华经》出世本怀唯在‘开示悟入佛之知见’，直下指出‘心迷法华转，心悟转法华；诵经久不昧，与义作仇家’。法达闻偈豁然大悟，悲泣交加，从此领悟本来清净心王，虽依然终日诵经而心无所著，成为曹溪门下以禅悟融通法华之卓越典范。",
+    "teachings": "自心若生贪嗔分别，则心随境转，是被经法所转；自心若历历朗照、无念无著，当下即是真实法华出世，能转十方万法。经文本无缚人处，迷人自生缚碍耳。",
+    "quotes": [
+      "心迷法华转，心悟转法华。诵经久不昧，与义作仇家。无念念即正，有念念成邪。有无俱不计，长御白牛车。",
+      "自昔以来实未曾转法华，乃是法华转！"
+    ],
+    "classics": ["妙法莲华经", "六祖法宝坛经"],
+    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru", "yi-cheng-liao-yi", "huo-zhai-bai-niu"],
+    "relatedMethods": ["zhuan-fa-hua-guan"],
+    "relatedPersons": ["huineng"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "tiantai-zhiyi",
+    "name": "智顗",
+    "title": "天台智者大师·东土释迦·法华三昧圆顿宗祖",
+    "era": "陈隋之际 (538 - 597)",
+    "lifeStory": "智顗大师，字德安，俗姓陈，颍川人。十八岁出家，后往大苏山依止南岳慧思禅师，修习法华三昧二十八日，诵《妙法莲华经·药王菩萨本事品》至‘是真精进，是名真法供养如来’处，身心豁然寂止入定，亲见灵山一会俨然未散、梵筵虚席！慧思禅师当即印可：‘非汝莫证，非我莫识！’后住天台山开山立派，开创天台宗，著《法华玄义》《法华文句》《摩诃止观》三大部，以五时八教与一念三千圆融天下经教，世尊之灵山心印与东土止观法门融会贯通，海内尊称为‘东土小释迦’。",
+    "teachings": "法华一乘乃绝待纯圆之法，三千性相即在一念无明法性心之中；圆顿止观直观当下心念，无前无后，一空一切空，一假一切假，一中一切中，灵山胜会从未终歇。",
+    "quotes": [
+      "法华三昧，亲见灵山一会俨然未散。",
+      "一念心起，即具三千世间，即空即假即中。",
+      "若于一法通达一切法，法法皆是一乘佛知见。"
+    ],
+    "classics": ["妙法莲华经"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi", "kai-shi-wu-ru"],
+    "relatedMethods": ["fa-hua-san-mei-guan"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedBooks": ["miaofalianhuajing"]
   }
 ];
 
@@ -13194,6 +13230,90 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao", "wumen-huikai"],
     "relatedBooks": ["xueyanyulu", "wumenguan", "gaofengyulu"]
   },
+  {
+    "id": "kai-quan-xian-shi",
+    "title": "开权显实",
+    "category": "教理",
+    "classicRef": "《妙法莲华经》卷一《方便品第二》",
+    "summary": "揭开三乘方便施设之权法，彻底显现一乘诸法实相之真实究极妙理。如来过去四十余年因众生根机怯劣，施设声闻、缘觉、菩萨三乘方便（权法）；至法华会上时节因缘成熟，如来彻底开除方便权巧，宣告十方佛土中唯有一乘法、无二亦无三，一切众生皆当成佛。在禅宗看来，一切公案言句、棒喝设施皆是度生之权，直指自性本来成佛方是唯一真实之显现。",
+    "quotes": [
+      "十方佛土中，唯有一乘法，无二亦无三，除佛方便说。 —《妙法莲华经》"
+    ],
+    "guidance": "破除一切滞留于小乘与权小法门的自满执念，令学人直契佛地、不立纤尘，是一乘圆顿宗旨的根本立足点。",
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
+    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi", "huineng"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "yi-cheng-liao-yi",
+    "title": "一乘了义",
+    "category": "教理",
+    "classicRef": "《妙法莲华经》卷一《方便品第二》",
+    "summary": "绝待无外、涵盖一切众生皆共成佛道的无上究竟一佛乘。超越声闻、缘觉、菩萨三乘分别的最上乘了义真理。禅宗所传之‘教外别传、直指人心、见性成佛’，本质上即是法华一乘之单刀直入，不落阶级次第三乘差别，直示自性与三世诸佛同一体性。",
+    "quotes": [
+      "唯此一事实，余二则非真。 —《妙法莲华经》"
+    ],
+    "guidance": "确立‘一切含生皆有佛性、悉皆成佛’的终极信心，不妄自菲薄，直下承当自心本来具足佛性。",
+    "relatedConcepts": ["kai-quan-xian-shi", "kai-shi-wu-ru", "ben-lai-mian-mu"],
+    "relatedPersons": ["jiumoluoshi", "huineng", "tiantai-zhiyi"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing", "lengyanjing"]
+  },
+  {
+    "id": "kai-shi-wu-ru",
+    "title": "开示悟入",
+    "category": "心性",
+    "classicRef": "《妙法莲华经》卷一《方便品第二》",
+    "summary": "诸佛世尊唯以一大事因缘出现于世，即令众生开示悟入佛之知见。开即自心除妄，示即见性现前，悟即洞达真常，入即证入不二。六祖惠能指出，自心即是佛知见，起贪嗔痴妄念即开众生知见，起慈悲平等正智即开佛之知见。",
+    "quotes": [
+      "诸佛世尊唯以一大事因缘故出现于世，所谓欲令众生开示悟入佛之知见。 —《妙法莲华经》"
+    ],
+    "guidance": "佛法修持之终极目的不在积聚文字知见或求外在神异，而在当下了悟自性本来清净之佛知见。",
+    "relatedConcepts": ["kai-quan-xian-shi", "xin-wu-zhuan-fa-hua", "jianxing-chengfo"],
+    "relatedPersons": ["huineng", "fada", "jiumoluoshi"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "yi-li-ming-zhu",
+    "title": "衣里明珠",
+    "category": "心性",
+    "classicRef": "《妙法莲华经》卷四《五百弟子受记品第八》",
+    "summary": "众生自性本自圆满具足佛性珍宝，犹如至亲密系于衣里之无价明珠，虽漂流受苦而毫发无损。众生自无始以来本来具足无漏功德法财，只因被无明酒所醉、不自证知，枉在六道苦海行乞受难；一旦蒙善知识直指本地风光，顿见衣底本来圆成。",
+    "quotes": [
+      "如人至亲友家醉酒而卧，亲友以无价宝珠系其衣里。 —《妙法莲华经》"
+    ],
+    "guidance": "击碎一切凡夫自卑感与外求法执，确立‘自家宝藏、不假外求’的根本禅宗自信。",
+    "relatedConcepts": ["ben-lai-mian-mu", "kai-shi-wu-ru", "yi-cheng-liao-yi"],
+    "relatedPersons": ["jiumoluoshi", "huineng"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "xin-wu-zhuan-fa-hua",
+    "title": "心悟转法华",
+    "category": "修证",
+    "classicRef": "《六祖法宝坛经》机缘品第七",
+    "summary": "曹溪六祖惠能接引法达禅师时所说至理名言。自心迷暗则被经典文字名相所转；自心大悟明彻则当下能转万法与经典。迷人读经执著句读声相，为文字所缠缚，名为‘法华转’；若能回光返照自心，见本来清净自性，不起能诵所诵知见，即是以自性智慧转动一切经法，名为‘转法华’。",
+    "quotes": [
+      "心迷法华转，心悟转法华。诵经久不昧，与义作仇家。 —《六祖坛经》"
+    ],
+    "guidance": "宗门破除‘文字障’与‘经奴’陋习的千古警策，读经须依义不依语，自心觉照方为主宰。",
+    "relatedConcepts": ["kai-shi-wu-ru", "ben-lai-mian-mu", "ordinary-mind"],
+    "relatedPersons": ["huineng", "fada"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "huo-zhai-bai-niu",
+    "title": "火宅白牛车",
+    "category": "境界",
+    "classicRef": "《妙法莲华经》卷二《譬喻品第三》",
+    "summary": "三界犹如四面火起之大宅，长者设羊车（声闻）、鹿车（缘觉）、牛车（权教菩萨）引导诸子脱离险境，待其出宅后，长者不给三种小车，而是平等施与每人一辆以七宝庄严、白牛驾驭之大宝车。大白牛行步平正、其疾如风，喻一乘佛果直登菩提涅槃彼岸。",
+    "quotes": [
+      "乘此宝车，直至道场。 —《妙法莲华经》"
+    ],
+    "guidance": "明示方便与究竟的辩证统一，断除对小乘偏真涅槃的执著，直示唯有一乘方为究竟安身立命之宝。",
+    "relatedConcepts": ["kai-quan-xian-shi", "yi-cheng-liao-yi", "kai-shi-wu-ru"],
+    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
+    "relatedBooks": ["miaofalianhuajing"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -15965,6 +16085,44 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao"],
     "relatedBooks": ["xueyanyulu", "gaofengyulu", "wumenguan"]
   },
+  {
+    "id": "fa-hua-san-mei-guan",
+    "title": "法华三昧圆顿实相观",
+    "classicRef": "《妙法莲华经》与天台智者大师《法华三昧忏仪》",
+    "summary": "直观一念心起即具三千实相，亲证灵山法筵不散之圆顿实相修持法门。行者收摄六根，观一切万法当体全空、当体即假、当体即中，超越虚妄时空隔碍，亲证灵山一会俨然未散之大光明三昧。",
+    "origin": "陈隋之际智者大师于大苏山依南岳慧思修习法华三昧，诵药王菩萨品悟入实相，开演天台圆顿止观。",
+    "steps": [
+      "整肃身心端坐蒲团，息灭外缘与情识测度，收摄六根直归一念无生",
+      "提撕专注诸法实相法音，照见一切色声香味触法当体全空、当体即假、当体即中",
+      "不离当下刹那心念，照见十方诸佛无量佛土尽在自性真如之中，亲证灵山一会俨然未散"
+    ],
+    "pitfalls": [
+      "将灵山未散落入奇特神异感应妄想，偏离心性本源",
+      "偏执空寂不起大用，沉入枯槁顽空"
+    ],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi", "kai-shi-wu-ru"],
+    "relatedPersons": ["tiantai-zhiyi", "jiumoluoshi"],
+    "relatedBooks": ["miaofalianhuajing"]
+  },
+  {
+    "id": "zhuan-fa-hua-guan",
+    "title": "心悟转法华自性观",
+    "classicRef": "《六祖法宝坛经》机缘品第七",
+    "summary": "转破文字经奴执缚，念念回光反照自性心王，以无念正念长御大白牛车。诵读经教时时刻提撕自心，不落知见葛藤，体认自性本来具足法华无尽法藏。",
+    "origin": "六祖惠能大师接引法达禅师，以‘心迷法华转，心悟转法华’偈语示疾断迷，开显宗门不立文字、以心印经之实修观行。",
+    "steps": [
+      "诵读或参究经教时，时刻警惕慢幢傲见与知解执著，观照能诵者是谁、受诵者是谁",
+      "于经文文字过眼时，不起能所对待，不逐名相句读，任文字还归空寂，自心灵明了了不昧",
+      "日常逢人处事四威仪中，体认自性本来具足法华无尽藏，不计有无得失，直心行道"
+    ],
+    "pitfalls": [
+      "借‘无念转经’之名堕入轻慢经教、放逸废修之顽空狂禅",
+      "口念心不行，依然被声名计较牵引"
+    ],
+    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
+    "relatedPersons": ["huineng", "fada"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  }
 ];
 
 export const ZEN_KOANS: KoanItem[] = [
@@ -24506,6 +24664,43 @@ export const ZEN_KOANS: KoanItem[] = [
     ]
   }
 
+,
+  {
+    "id": "koan-740",
+    "question": "心迷法华转（六祖示法达转法华）",
+    "answer": "心迷法华转，心悟转法华；诵经久不昧，与义作仇家。无念念即正，有念念成邪；有无俱不计，长御白牛车！",
+    "context": "僧法达诵《法华经》三千部，往参曹溪六祖惠能，礼拜头不至地。六祖呵斥其骄慢，并为开示《法华》唯以开示悟入佛之知见为宗，法达言下大悟，泣谢伏罪。",
+    "interpretation": "学人读经若起功利与计较心，便沦为文字奴隶；若悟心王无著无碍，则一切经卷皆是自性沛然流露，当下能转大千经藏。",
+    "master": "惠能",
+    "source": "《六祖法宝坛经》机缘品第七",
+    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
+    "relatedPersons": ["huineng", "fada"],
+    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+  },
+  {
+    "id": "koan-741",
+    "question": "灵山一会俨然未散（智者大苏山悟法华）",
+    "answer": "灵山一会，俨然未散！非汝莫证，非我莫识！",
+    "context": "陈代天台智顗大师往大苏山依止南岳慧思禅师修法华三昧，诵至药王菩萨品‘是真精进是名真法供养如来’，豁然寂入大定，亲见释迦灵鹫山说法道场宛然现前，慧思禅师印可赞叹。",
+    "interpretation": "如来法身常住不灭，跨越古今虚妄时空；学者若直契离言法性，当下一念即见灵山法筵，古今同席、圣凡莫二。",
+    "master": "智顗",
+    "source": "《续高僧传》卷十七《智顗传》及天台祖籍",
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi"],
+    "relatedPersons": ["tiantai-zhiyi"],
+    "relatedBooks": ["miaofalianhuajing"]
+  },
+  {
+    "id": "koan-742",
+    "question": "我不敢轻于汝等（常不轻菩萨礼拜四众）",
+    "answer": "我深敬汝等，不敢轻慢！所以者何？汝等皆行菩萨道，当得作佛！",
+    "context": "过去威音王佛灭后像法之中，常不轻菩萨每逢四众不论善恶毁誉，皆遥遥顶礼赞叹；众以杖木瓦石击之，仍高声唱言其皆当作佛，以此纯一敬信得六根清净速成佛道。",
+    "interpretation": "常不轻以无二法眼直照一切含生本具佛性，纵遭唾骂迫害而慈忍不动。禅门顶门具眼者，亦当如是照见众生本具佛心，不敢有纤毫轻慢。",
+    "master": "释迦牟尼佛",
+    "source": "《妙法莲华经》卷六《常不轻菩萨品第二十》",
+    "relatedConcepts": ["yi-cheng-liao-yi", "ben-lai-mian-mu", "kai-shi-wu-ru"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedBooks": ["miaofalianhuajing"]
+  }
 ];
 
 const ZEN_FAQS_PART1: FAQItem[] = [
@@ -44556,6 +44751,135 @@ const ZEN_FAQS_PART2: FAQItem[] = [
     "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "ordinary-mind"]
   }
 
+,
+  {
+    "id": "faq-3214",
+    "question": "《妙法莲华经》在整个大乘佛法体系中为何被称为“成佛的法华”与“诸经之王”？",
+    "answer": "佛门历来有‘成佛的法华，开慧的楞严’之称。在各大乘经典中，《法华经》具有无与伦比之崇高地位，其关键在于它彻底扫除了过去一切教法中的差别与壁垒。在法华之前的教说中，小乘声闻、缘觉被视为焦芽败种、不堪成佛，恶人与女人成佛亦有重重限制；而在《法华经》中，佛陀为舍利弗、目犍连、阿难乃至五百声闻、提婆达多与八岁龙女全员授记当得作佛，宣示‘十方佛土中，唯有一乘法，无二亦无三’。它将一切教法收摄归入究竟一佛乘，直截授与一切众生成佛之凭信，因而被尊为一乘纯圆的大乘圣典之王。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi"]
+  },
+  {
+    "id": "faq-3215",
+    "question": "如何理解《法华经》最核心的“开权显实”与“会三归一”？",
+    "answer": "‘权’指权宜方便之法，‘实’指究竟真实之法；‘三’指声闻、缘觉、菩萨三乘，‘一’指无上究竟之一佛乘。佛陀应机说法四十年，众生根器狭劣，若直说成佛大乘，众生将望而却步、心生恐怖；因此如来慈悲设立三乘果位作为引诱引导。及至法华会上，时节因缘成熟，如来彻底除下方便的面纱，阐明三乘只是引渡众生的阶梯，真实目的唯在一佛乘，这便是‘开权显实’。在禅宗看来，祖师的千七百则公案、棒喝撕咬，亦皆是接引学人之‘权’，唯有明见自心本来是佛，方是透彻极则之‘实’。",
+    "relatedBooks": ["miaofalianhuajing", "tanjing"],
+    "relatedPersons": ["jiumoluoshi", "huineng"],
+    "relatedConcepts": ["kai-quan-xian-shi", "yi-cheng-liao-yi"]
+  },
+  {
+    "id": "faq-3216",
+    "question": "佛陀出世的“一大事因缘”所谓“开示悟入佛之知见”，禅宗如何将其融通为当下顿悟自性？",
+    "answer": "《法华经·方便品》明确指出，诸佛世尊唯以一大事因缘出现于世，即令众生‘开示悟入佛之知见’。禅宗六祖惠能大师在《坛经》中对其作了石破天惊的直指发挥：一切众生本自具足佛知见，只因妄执尘劳而蔽为‘众生知见’。心起邪迷贪爱即开众生知见，心起正智觉照即开佛之知见。所谓‘开’者，自心除妄；‘示’者，照见本来；‘悟’者，洞达真常；‘入’者，证入圆满。四者非有次第，一悟当下全体现成。禅宗的不假阶梯、直指人心，正是对法华‘一大事因缘’最为干脆彻底的履践。",
+    "relatedBooks": ["miaofalianhuajing", "tanjing"],
+    "relatedPersons": ["huineng", "fada"],
+    "relatedConcepts": ["kai-shi-wu-ru", "xin-wu-zhuan-fa-hua"]
+  },
+  {
+    "id": "faq-3217",
+    "question": "六祖惠能对法达禅师开示“心迷法华转，心悟转法华”，对禅修学人打破文字知见障有何警醒？",
+    "answer": "法达诵《法华经》三千部而未明经旨，礼拜六祖时头不至地，慢心炽盛。六祖一针见血呵斥：‘心迷法华转，心悟转法华；诵经久不昧，与义作仇家。’很多修学者将读经遍数、佛学名词积累当成修行功夫，反增所知障与慢心，这便是成为‘经奴’、被法华所转；而真正的大道修行者，明白千经万论无非是自心之注脚，若能明见本来清净自性，不落两边、不随境迁，则自心即是恒常流转之大藏经，举心动念皆在转动真实法华。经文是标月之指，不可执指为月。",
+    "relatedBooks": ["miaofalianhuajing", "tanjing"],
+    "relatedPersons": ["huineng", "fada"],
+    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru"]
+  },
+  {
+    "id": "faq-3218",
+    "question": "火宅三车喻（羊车、鹿车、牛车与大白牛车）中，大白牛车究竟象征着何种究竟境界？",
+    "answer": "在譬喻品中，三界如火宅，长者为救诸子，先以羊车（声闻）、鹿车（缘觉）、牛车（权教菩萨）诱导其逃出火宅；出宅后，长者平等赐予每子一辆极尽庄严、肥白充悦之‘大白牛车’。大白牛象征自性无漏清净大智慧，行步平正象征一乘佛道无有倾危与偏差，其疾如风象征顿悟直趣萨婆若海。佛陀并不因众生根器不同而给劣等小车，而是彻底平等施予极上之宝。这表明白牛大车并非外来赏赐，而是众生本来所应享用之一心真如全体大用。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["huo-zhai-bai-niu", "yi-cheng-liao-yi"]
+  },
+  {
+    "id": "faq-3219",
+    "question": "信解品中的“穷子喻”如何深刻揭示了众生妄自菲薄、不敢直下承担成佛之悲剧？",
+    "answer": "信解品中须菩提等四大声闻自述‘穷子喻’：穷子舍父逃逝五十年，流浪受苦；见大富长者时反心怀恐怖不敢接近；长者善巧方便，脱下华服换穿褴褛之衣雇其除粪二十载，最终令其执掌全部家产。这一譬喻直切众生根性痛点：众生久远劫来本是法王真子，却甘居生死恶趣行乞度日；即使听闻顿悟法门，也自甘下劣，认为成佛高不可攀，宁愿偏安于小乘偏真涅槃的‘除粪之乐’。禅宗大德棒喝接人，正是要当头喝醒此等自轻自贱之妄想，逼令学人直下承当‘我即是佛、本自圆满’。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi"]
+  },
+  {
+    "id": "faq-3220",
+    "question": "五百弟子受记品中的“衣里明珠喻”，与禅宗“自性本来具足、只因迷妄不觉”有何同一性？",
+    "answer": "衣里明珠喻讲述至亲密友于醉汉衣中缝入无价明珠，醉汉醒后不知，长年沿门乞讨备尝辛酸，后遇故友指示始见本宝。此喻与禅宗‘人人本具圆成自性’的宗旨毫无二致。众生颠沛流离于六道长夜，并非因为丢失了佛性，佛性宝珠一刹那也未曾离开过众生身心；只是因为‘无明酒醉’未醒，误以幻妄知见当真实。禅宗明师之点化，恰如故友指明衣里宝珠：不是凭空赐予你某种外在开悟，而是喝醒沉醉、指示当人现前本有之灵明宝珠，使人顿获无尽法财。",
+    "relatedBooks": ["miaofalianhuajing", "tanjing"],
+    "relatedPersons": ["jiumoluoshi", "huineng"],
+    "relatedConcepts": ["yi-li-ming-zhu", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3221",
+    "question": "化城喻品中导师施设“化城”而后“灭化城引向宝所”，对辨识修证过程中的相似觉受有何指导？",
+    "answer": "穿行五百由旬险道的商队因疲惫欲退，导师在三百由旬处化现大城让大众止息，待体力恢复后即灭去化城宣告真正的宝所尚在前头。在禅修实证中，学者常在获得初禅二禅轻安、空灵寂静、或微细定境时，误以为自己已经究竟解脱，从而停滞不前甚至堕入增上慢。化城喻警示修行者：一切定境觉受、小乘寂灭、相似解脱皆是中途歇脚之‘化城’，不可当作究竟宝所。必须勇猛直透、不住化城，方能彻底打碎微细我执，直抵无上大菩提宝所。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
+    "relatedConcepts": ["kai-quan-xian-shi", "yi-cheng-liao-yi"]
+  },
+  {
+    "id": "faq-3222",
+    "question": "药草喻品中“一雨普润，三草二木随分茂盛”，如何体现如来佛性平等而因材施教的大慈悲？",
+    "answer": "天空降下同一纯味之甘霖，然而山川大地上大小药草、灌木巨树各随其体量吸收水分、随分生长。如来法雨纯一清净、一相一味（解脱相、离灭相、究竟涅槃相），在如来心体深处对一切有情毫无偏私与阶级；然而众生根器器量大小不齐，随其接受程度而各得滋养。宗门大德接引后昆亦如是：同一祖师宗风棒喝，利根者言下粉碎虚空、中根者起疑参究、钝根者敛迹行持，皆蒙其化育，显现出一乘法门沛然莫御之普润气象。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi"]
+  },
+  {
+    "id": "faq-3223",
+    "question": "如来寿量品宣示释迦牟尼佛实则久远劫已成佛、“常在灵鹫山不灭度”，禅宗如何看待法身常住？",
+    "answer": "寿量品打破了历史佛陀在菩提树下新成正觉、八十年涅槃入灭的凡夫生灭见，宣告如来实成佛以来已经无量阿僧祇劫，虽示现入灭而实常在灵鹫山不灭度。在禅宗视域下，这正是直显诸佛之常住法身——法身离生灭相、无去无来、超越虚妄时间大劫；众生被虚妄无明障蔽，故见劫火洞烧、天地坏尽，而在明见法身真如者眼中心中，此娑婆世界当下即是安隐无坏之灵山法席。禅者若契入不生不灭之本心，便是与释迦如来于灵山会上觌面相逢。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3224",
+    "question": "常不轻菩萨“我不敢轻于汝等，汝等皆当作佛”的终身礼拜行，为何被视为禅宗见性实相的最深践行？",
+    "answer": "常不轻菩萨不读经典、专事顶礼一切比丘四众，哪怕遭遇毁谤殴打，依然在远处高声赞叹：‘我不敢轻于汝等，汝等皆当作佛！’这种行持不是世俗盲目的客套礼仪，而是纯粹从‘见性成佛’之金刚眼目中沛然流出的无尽敬信。在常不轻眼中，一切众生不论当下行善行恶，其本地风光之真如佛性完完全全与诸佛无差无别。禅门尊宿常言‘一切现成’，能像常不轻这样彻底摧碎自他高下傲慢知见、生生世世把众生视作未来诸佛顶礼者，方是真正彻悟一乘实相之大力菩萨。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "ben-lai-mian-mu"]
+  },
+  {
+    "id": "faq-3225",
+    "question": "方便品云“若人散乱心，入于塔庙中，一称南无佛，皆已成佛道”，这一极低门槛与禅宗“一悟即至佛地”有何内在圆融？",
+    "answer": "表面看，散乱心称名成佛是极浅近之随缘善根，而禅宗要求大彻大悟、桶底脱落，二者看似门槛悬殊。但深入法华圆顿义理便知其完全圆融：众生心本自是佛，散乱心中偶尔所起之一念佛号，当体就是真如自性的偶尔透光；这一念清净金刚种子投落在无尽法界之中，便永远不可能坏灭，历劫因缘汇聚必定引导众生破迷启悟成办佛道。禅宗的‘顿悟’，正是这一念自性金刚种子彻底开花结果的当下一刹那，二者皆建立在‘自性本来具足佛性’的同一真如基石之上。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-shi-wu-ru"]
+  },
+  {
+    "id": "faq-3226",
+    "question": "天台宗智者大师在大苏山诵法华经悟入“法华三昧”，见灵山一会俨然未散，这在禅门定慧体验中意味着什么？",
+    "answer": "智者大师在大苏山诵至药王品‘是真精进是名真法供养如来’时，虚空粉碎、大悟法华三昧，亲见二千余年前释迦佛灵山说法之盛筵赫然就在眼前。南岳慧思印证说‘非汝莫证，非我莫识’。这一殊胜公案在禅门定慧体验中表明：所谓历史时间之过去、现在、未来，纯粹是凡夫前识之妄想妄计；在超越时空执受的一真法界之中，灵鹫山说法从未曾落幕，诸祖师的传心印心亦从未间断。学人若能彻底歇下狂心、根尘脱落，当下蒲团便是灵鹫山峰顶，古佛今人同一法筵。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["tiantai-zhiyi", "jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi"]
+  },
+  {
+    "id": "faq-3227",
+    "question": "龙女八岁于法华会上立地成佛，打破了传统的五障之说，这一公案在禅宗宗门见性上具有怎样的划时代意义？",
+    "answer": "提婆达多品中，八岁娑竭罗龙女以无价宝珠献佛，佛即受之，龙女刹那间化为男子、具足菩萨行、直赴南方无垢世界成等正觉，令在场疑谤其‘女身有五障不可成佛’的舍利弗与诸大阿罗汉瞠目结舌。在禅宗史上，这一公案被视为顿悟见性绝不拘泥于性别、年龄、物种与时间之无上确证。自性非男非女、非老非少，见性成佛唯在当下一念契同佛心。这为后世禅宗女众祖师（如末山尼了然、总持比丘尼、铁磨无学等）在丛林中直登师位接引天下衲僧提供了最强有力的教典背书。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "jianxing-chengfo"]
+  },
+  {
+    "id": "faq-3228",
+    "question": "法华经二十八品中为何特设《观世音菩萨普门品》，圆通慈悲救苦与一乘实相如何相辅相成？",
+    "answer": "《观世音菩萨普门品》作为法华第二十五品流布最广。法华经前二十四品已显发极高之一乘实相真理，而普门品则展现其实相在大悲救苦上的无尽妙用。观世音菩萨寻声救苦、三十二应身随类化现，正是实相自性‘随缘赴感靡不周’的大机大用体现。禅门修行绝非躲进深山枯坐无为，而是‘理则顿悟，事须渐修’，证得自性空体之后，必须发起观世音菩萨同体大悲，入廛垂手、救护苦难众生。实相是大悲之体，大悲是实相之用，体用不二方成大乘法华圆满宗风。",
+    "relatedBooks": ["miaofalianhuajing"],
+    "relatedPersons": ["jiumoluoshi"],
+    "relatedConcepts": ["yi-cheng-liao-yi", "kai-shi-wu-ru"]
+  },
+  {
+    "id": "faq-3229",
+    "question": "现代生活节奏快、烦恼炽盛的都市人，如何以《法华经》的圆顿心胸转烦恼为自性白牛大宝车？",
+    "answer": "现代都市人常处在职场焦虑、人际倾轧与欲望火宅之中，身心焦灼备受熬煎。以《法华经》一乘智慧对照自心，有三层救拔：第一，看清‘火宅真相’，明白世俗名利的短暂与幻妄，不再以苦作乐、受困于外在得失；第二，照亮‘衣里明珠’，坚信自心深处本自清净具足，一切焦虑不安不过是客尘烦恼，自身具有圆融不败的无上佛性底气；第三，驾驭‘自性白牛车’，在日常繁忙琐碎中随时提起觉照，不为毁誉得失所转（转法华），把每一个工作场景与生活境遇都转化为磨炼心性、开佛知见之广阔菩提道场。",
+    "relatedBooks": ["miaofalianhuajing", "tanjing"],
+    "relatedPersons": ["huineng", "jiumoluoshi"],
+    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "yi-li-ming-zhu", "huo-zhai-bai-niu"]
+  }
 ];
 
 export const ZEN_FAQS: FAQItem[] = [...ZEN_FAQS_PART1, ...ZEN_FAQS_PART2];
