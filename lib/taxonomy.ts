@@ -4626,6 +4626,26 @@ export const ZEN_PERSONS: PersonItem[] = [
     "relatedPersons": ["nagarjuna", "ti-po"],
     "relatedBooks": ["banruodenglunshi", "shunzhonglun", "shiertimenlun", "bailun"]
   }
+,
+  {
+    "id": "yongzheng",
+    "name": "雍正帝",
+    "title": "圆明居士 · 大清世宗宪皇帝",
+    "era": "清代 (1678–1735)",
+    "lifeStory": "清世宗雍正皇帝（1678—1735），姓爱新觉罗，名胤禛，自号破尘居士、圆明居士。早年封雍亲王时即深研佛理，延请章嘉国师等大德指导，参究禅宗向上一窍，于康熙五十一年（1712）大彻大悟，透破重关与末后牢关，受章嘉国师亲印。即位后在紫禁城内设禅堂，躬亲接引大臣与诸方衲僧，御批公案，裁断宗风。雍正十一年（1733）御制编选《御选语录》十九卷，并撰《御制总序》系统开阐‘透三关说’，痛斥明末清初狂禅之弊。为中国历史上极罕见深通宗门、具顶门正眼之悟道帝王。",
+    "teachings": "雍正帝宗风刚健峻烈，极重脚踏实地与真修实证。其核心宗义为‘透三关说’：初关破本参（前后际断、山河大地俱消）、重关大死大活（山依旧是山、烦恼即菩提）、末后牢关（家舍即在途中、无透而透）。严斥三端盲禅大病：痛破执空为道之枯木禅、痛破认识神为本心之昭昭灵灵病、痛破抄录葛藤贩卖名利之市侩野狐禅。主张融出世解脱于日用万机，治国安民与明心见性无二无别。",
+    "quotes": [
+      "学人初登解脱之门，觉山河大地，十方虚空，并皆消殒，是则名为初步破参。",
+      "破本参后，乃知山者山，河者河，尽是本分，皆是菩提，是则名为透重关，名为大死大活者。",
+      "透重关后，家舍即在途中，途中不离家舍，方能踏末后一关。虽云透三关，而实无透者。",
+      "见得个昭昭灵灵，便谓是无位真人，作识神之活计，到得腊尽机除时，方知依旧是个茫茫无据。"
+    ],
+    "classics": ["御选语录"],
+    "relatedConcepts": ["tou-san-guan", "chu-guan-po-can", "chong-guan-da-si-da-huo", "lao-guan-mo-hou"],
+    "relatedMethods": ["san-guan-can-jiu-fa", "jian-mo-bian-yi-fa", "kanhuatou"],
+    "relatedPersons": ["zhaozhou", "yunmen", "gaofeng-yuanmiao", "zhongfeng-mingben"],
+    "relatedBooks": ["yuxuanyulu", "jingdechuandenglu", "zhiyuelu", "zongjinglu"]
+  }
 ];
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
@@ -13548,6 +13568,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["qingbian", "nagarjuna"],
     "relatedBooks": ["banruodenglunshi"]
   }
+,
+  {
+    "id": "tou-san-guan",
+    "title": "透三关",
+    "category": "禅宗修证阶梯",
+    "summary": "禅门悟道修证之三大关隘纲宗，由雍正帝于《御选语录总序》中集大成阐扬。分为‘初关破本参’、‘透重关大死大活’与‘末后牢关无透而透’。三关步步踏实，由析相入体、从体起用直至体用不二、归于无修无证，为禅宗极具权威的修证指南。",
+    "classicRef": "御选语录",
+    "relatedConcepts": ["chu-guan-po-can", "chong-guan-da-si-da-huo", "lao-guan-mo-hou"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "chu-guan-po-can",
+    "title": "初关破本参",
+    "category": "禅宗初悟关隘",
+    "summary": "透三关之第一关。行者乍登解脱门，识破七尺肉身地水火风假合，顿觉山河大地与十方虚空一时消殒，前后际断，不挂一丝，亲见本来面目。此位脱却情识生死之缚，但尚滞于空寂境界，故须进一步参透重关。",
+    "classicRef": "御选语录",
+    "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo", "wu-nian"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "chong-guan-da-si-da-huo",
+    "title": "重关大死大活",
+    "category": "禅宗透关妙境",
+    "summary": "透三关之第二关。破本参后向上一着，大死一番后彻底复苏。乃知山依然是山、河依然是河，烦恼无明当下皆是菩提，无一物非我身、无一物是我己；境智融通，色空无碍，于万丈红尘中获得大自在。",
+    "classicRef": "御选语录",
+    "relatedConcepts": ["tou-san-guan", "chu-guan-po-can", "lao-guan-mo-hou", "tou-xin-wei-si"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "lao-guan-mo-hou",
+    "title": "牢关末后一着",
+    "category": "禅宗极则圆满",
+    "summary": "透三关之最后究竟牢关。透重关后履践纯熟，家舍即在途中，途中不离家舍；寂即是照，照即是寂，无生故长生，无灭故不灭。到此虽云透三关，而实无透者，如来如是，我亦如是，圆证无上清净法界大圆镜智。",
+    "classicRef": "御选语录",
+    "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo", "xi-mie-xi-lun"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -16511,6 +16572,44 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["zi-xu-pai", "xi-mie-xi-lun", "bu-luo-si-wei"],
     "relatedPersons": ["qingbian"],
     "relatedBooks": ["banruodenglunshi"]
+  }
+,
+  {
+    "id": "san-guan-can-jiu-fa",
+    "title": "三关参究印心法",
+    "summary": "雍正帝依据宗门正脉所确立之勘验学人见地修证法门。行者以话头疑情为利器，按‘破本参、透重关、踏牢关’三步次第踏实参究，杜绝颟顸虚头，直至体用一如。",
+    "steps": [
+      "第一步【破本参】：死心塌地单提一念，逼尽意根妄想，顿见身心世界悉皆消殒、前后际断；",
+      "第二步【透重关】：由空入有，从体起用，见万象森罗当下皆是自性菩提，境智融通不相碍；",
+      "第三步【踏牢关】：途中即是家舍，行住坐卧寂照双融，无透而透，圆融契合佛祖本怀。"
+    ],
+    "pitfalls": [
+      "切忌未破本参即自诩透得重关牢关，成大妄语",
+      "切莫在破参后执著孤寂空境而自缚不前"
+    ],
+    "classicRef": "御选语录",
+    "relatedConcepts": ["tou-san-guan", "chu-guan-po-can", "chong-guan-da-si-da-huo", "lao-guan-mo-hou"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "jian-mo-bian-yi-fa",
+    "title": "拣魔辨异提撕法",
+    "summary": "取法雍正帝御制总序中痛斥盲禅三病之金刚眼目。行者于自心起念与他师开示处，严加审视勘验，杜绝‘认顽空、认妄识、抄葛藤’三端大病之简择观照法。",
+    "steps": [
+      "第一步【辨枯木顽空】：觉察是否将‘心如槁木死灰、落入断见’误作见性，若是则急须回光翻起大机；",
+      "第二步【辨识神假相】：觉察是否把‘眼耳瞬目、昭昭灵灵之意念知觉’当成自性佛心，莫认贼作子；",
+      "第三步【辨知见贩卖】：觉察是否贪图名利口头弄玄、搬弄古人公案涕唾，急须彻底抛却虚头；",
+      "第四步【正眼洞明】：三魔荡除，真实般若不假思索现前，脚踏实地行持本地风光。"
+    ],
+    "pitfalls": [
+      "不可将拣魔辨异变成与人是非诤辩之口舌资粮",
+      "必须反躬自省、句句勘验自家脚跟"
+    ],
+    "classicRef": "御选语录",
+    "relatedConcepts": ["tou-san-guan", "bu-luo-si-wei"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
   }
 ];
 
@@ -25237,6 +25336,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["ban-ruo-deng", "jia-ming-shi-she"],
     "relatedPersons": ["qingbian"],
     "relatedBooks": ["banruodenglunshi"]
+  }
+,
+  {
+    "id": "koan-755",
+    "question": "如何是学人初步破本参？",
+    "answer": "山河大地十方虚空并皆消殒，七尺之躯不过地水火风，彻底清净，不挂一丝！",
+    "context": "清世宗雍正帝于御制总序中垂示大众，揭露初登解脱之门破本参之真切受用。",
+    "interpretation": "初关破参非是知识理论，而是身心脱落之亲证现量。四大皆空、诸缘顿息，前后际断，彻底粉碎凡圣情量。",
+    "master": "雍正帝",
+    "source": "御选语录·御制总序",
+    "relatedConcepts": ["chu-guan-po-can", "tou-san-guan"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "koan-756",
+    "question": "破本参后，如何是大死大活透重关？",
+    "answer": "山者山，河者河，大地者大地。乃至无明烦恼尽是本分皆是菩提，色空无碍，常住不动！",
+    "context": "世宗开示行者切不可滞留于初关枯木死灰之空境，须大死大活透过重关。",
+    "interpretation": "从体起用，见万法森罗与空性无二。山依然是山，水依然是水，烦恼即菩提，色空不二，得大机大用大自在。",
+    "master": "雍正帝",
+    "source": "御选语录·御制总序",
+    "relatedConcepts": ["chong-guan-da-si-da-huo", "tou-san-guan"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
+  },
+  {
+    "id": "koan-757",
+    "question": "如何是末后牢关向上极则？",
+    "answer": "家舍即在途中，途中不离家舍。虽云透三关，而实无透者。如来如是，我亦如是！",
+    "context": "世宗揭示末后牢关之无上真谛，学人请示至极究竟处，师以此偈答之。",
+    "interpretation": "透至极处，体用一如，动静两忘。无关可透、无道可成，本自圆成，天然真佛现前。",
+    "master": "雍正帝",
+    "source": "御选语录·御制总序",
+    "relatedConcepts": ["lao-guan-mo-hou", "tou-san-guan"],
+    "relatedPersons": ["yongzheng"],
+    "relatedBooks": ["yuxuanyulu"]
   }
 ];
 
@@ -45903,6 +46039,119 @@ const ZEN_FAQS_PART3: FAQItem[] = [
     "answer": "现代生活中的大多数焦虑、抑郁与精神内耗，本质上皆是内心‘自编自导’的虚妄戏论——对过去的悔恨追忆（已去）、对未来的忧虑预设（未去）以及对当下自我的过度关注（我执）。借本论三时推求与八不智慧，时时觉察：一切顺逆境遇皆是因缘假合、无实自性。将心从虚妄分别的死结中解脱出来，心行言语断，安住于当下一念之清凉如如，则精神内耗不破自消。",
     "relatedBooks": ["banruodenglunshi"],
     "relatedPersons": ["qingbian"]
+  }
+,
+  {
+    "id": "faq-3294",
+    "question": "清世宗雍正帝所编选的十九卷《御选语录》，在清代及整个禅宗史上有何特殊地位？",
+    "answer": "《御选语录》凡十九卷，是中国古代历史上由真正深达宗乘实证之帝王亲自编选的唯一一部最高规格禅宗大典。雍正帝在位期间力矫明末清初狂禅之弊，以金刚正眼亲选十二位顶尖宗师语要，并兼融禅道净土。其御制序文与批语直探心髓、极其严厉精审，为清代以降禅林树立了辨明真伪、稳踏正觉的根本准绳，具有无与伦比的权威地位。",
+    "relatedBooks": ["yuxuanyulu", "jingdechuandenglu", "zhiyuelu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3295",
+    "question": "雍正帝御制总序所立“透三关说”（初关、重关、牢关），为何被视为禅门修证千古指南？",
+    "answer": "禅宗自宋代黄龙慧南首立三关问答以来，关于三关修证阶次众说纷纭。雍正帝在总序中破天荒地以明澈见地将其系统化为三大心路里程：第一‘破本参’断除前后际，觉大地皆空；第二‘透重关’大死大活，山依然是山，烦恼皆是菩提；第三‘末后牢关’途中不离家舍，无透而透。阶次井然，既防落入枯木顽空，又防狂妄自足，对行者做工夫极具指导实效。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3296",
+    "question": "何谓“初关破本参”？行者在此阶段有何真切体验？容易产生什么偏差？",
+    "answer": "破本参即初见自性真如。行者单提话头至情识死尽处，顿觉山河大地与十方虚空尽皆消散，身体地水火风脱落无踪，不挂一丝，亲见本来面目。此阶段极易产生的偏差是‘滞于空寂、形同枯木’，贪恋清凉死水之境，不知万法全彰之大机，故世宗诫示必须向后透破重关。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3297",
+    "question": "何谓“透重关大死大活”？为何说“破本参后，乃知山者山，河者河”？",
+    "answer": "破本参后知万法皆空，但若停在空中，则是一空不敌万有。透重关者能于空寂绝后复苏，彻底大活过来：回观世间万象，山还是山，水还是水，无明烦恼当体即是自性菩提妙用；色空无碍，境智交融，能于五欲红尘与生死险道中常住不动、广作度生大用，此即大死大活。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3298",
+    "question": "何谓“末后牢关”？为何雍正帝说“虽云透三关，而实无透者”？",
+    "answer": "末后牢关是体用双泯、无修无证之圆满境界。行者‘家舍即在途中，途中不离家舍’，动静一如，寂照同时；因自性本来无生无灭，原本如此，故至此方悟从无实有关隘可透，亦无任何奇特佛法可得，‘不过如来如是，我亦如是’。彻底破除一切求悟作主之微细我法二执。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3299",
+    "question": "雍正帝痛斥丛林“三端盲禅大病”，第一种“以空为空形同槁木”之害何在？",
+    "answer": "第一种病是学者稍见意识纷飞皆是幻妄，便生欢喜，歇去休去，把顽空当作真常自性。如此则心等死灰、形同槁木，一旦现实顺逆境缘临头，这片死空便毫无力量抵抗；更有甚者固执断灭邪见，自以为因果皆空而放浪肆意造恶，断送菩提慧命，变成盲狂之毒草。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3300",
+    "question": "第二种病“认昭昭灵灵为无位真人”，为何被斥为“作识神活计、宝鱼目为明珠”？",
+    "answer": "第二种病最为普遍：学人未能破参，仅凭六根觉受体会到一点眼耳清醒、灵敏知觉（昭昭灵灵），就误以为见到了临济宗所谓的‘无位真人’；在扬眉瞬目、弄拳竖指间玩弄小聪明。世宗直斥这纯粹是在生死识神窠臼里讨生活，犹如日下点孤灯、含生铁丸自称琼浆，大难临头时依旧是茫茫无据随业轮转。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3301",
+    "question": "第三种病“拾人涕唾贩卖葛藤”，揭露了当时怎样的丛林市侩风气？",
+    "answer": "第三种病是末法丛林之痞棍。自己毫无真实悟证工夫，专门在祖师经教语录中抄摘奇言妙句，窃取前人机锋唾余；向人前搬弄是非、谈玄说妙，以此博取名闻利养与法师高位。世宗痛批其为‘盲驴牵盲驴，绕磨盘而转’，欺心欺佛，招引阿鼻地狱之恶果。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3302",
+    "question": "《御选语录》为何首卷选录东晋僧肇法师《肇论》？其在禅宗渊源中有何特殊意义？",
+    "answer": "僧肇大师为鸠摩罗什门下上首，其《肇论》融通中观般若与老庄玄理。雍正帝评肇师‘虽居文字之域，实得离言之宗’。《肇论》所阐发之‘物不迁’、‘不真空’、‘般若无知而无所不知’，正是达摩东来前中土直悟心性之至高结晶。世宗以此冠首，意在彰显禅宗向上一窍自东晋传译以来即法脉纯正。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3303",
+    "question": "雍正帝为何将紫阳真人张平叔《悟真篇外集》编入正典，体现了怎样的三教观？",
+    "answer": "张伯端（紫阳真人）道教南宗祖师，晚年深究佛法，融禅入道，撰《悟真篇外集》皆是透脱宗门诗偈。世宗敏锐洞见：至道同归一真，紫阳真人所明之心性完全契合曹溪一味宗旨。将其列入语录，不仅打破了门派门户之见，更展现了以根本心性融摄道家金丹大道的极高文化包容格局。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3304",
+    "question": "本典对永嘉玄觉禅师《证道歌》有何极高评价？为何说“法界全融，直造真源”？",
+    "answer": "永嘉大师在六祖曹溪一宿证真，作《证道歌》脍炙人口。世宗赞其‘真如体露，更无纤翳’，肯定其歌句直似金石之声，彻底粉碎学者微细妄执；同时盛赞《永嘉集》兼顾初心阶梯法度，将顿悟与渐修圆满结合，是禅人见性入道的无上指南。",
+    "relatedBooks": ["yuxuanyulu", "zhengdaoge"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3305",
+    "question": "世宗如何看待“参禅与念佛”的关系？为何在语录卷末特附莲池大师净土法语？",
+    "answer": "世宗极力提倡禅净双修。他指出：念佛何碍参禅？真正深达心性渊海之大行者，兼修净业正是随顺真如法性，圆满成佛资粮。莲池大师戒德冰雪，正知正见圆融。世宗选录莲池法汇要语附于末后，意在使未悟者以此建菩提道场，已悟者借此庄严圆满妙觉果海，彻底扫除宗门轻视净土之偏见。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3306",
+    "question": "《圆明居士语录》（第十八卷）展现了雍正帝怎样的悟境与从政禅机？",
+    "answer": "圆明居士（雍正帝）语录真实记录了其于万几宸翰中任运自如的心髓。他开示‘本分事上不存一物，君临天下万机在念，与一宿茅庵面壁何异’。这展现了彻悟自性者在极为繁忙凶险的世间政务中，心常安住不动、随方解缚的大菩萨行愿，破除了修行必须遁世隐居的狭隘执见。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3307",
+    "question": "章嘉国师在雍正帝悟道历程中扮演了怎样重要的师资印证角色？",
+    "answer": "一世章嘉呼图克图阿旺罗桑却丹是藏传佛教格鲁派驻京大国师，亦深通大乘中观宗风。雍正早在潜邸时即师事章嘉国师，受其密授与提撕，经数度精进逼拶，终获国师亲口印可‘已透末后牢关’。这种汉藏高僧大德与中原文韬帝王的师资相契，成为清代佛教史上的一段盛事。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3308",
+    "question": "研读《御选语录》对于纠正现代禅修者常犯的盲修瞎炼与自负狂妄有何药石之功？",
+    "answer": "现代学人接触各种碎片化禅修信息，极易在稍微有一点清安、轻安觉受时就盲目自大、未证谓证。雍正帝的《御选语录》如同一面照妖宝镜，严丝合缝地勘验‘到底有没有破本参、到底有没有透重关’。它能彻底击碎修学者的虚妄骄慢，令其老老实实回到断除前后际、消融我法二执的真修实证道路上来。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
+  },
+  {
+    "id": "faq-3309",
+    "question": "当代身处繁杂工作与生活的世俗大众，如何体悟雍正帝“途中即家舍”的圆融禅心？",
+    "answer": "现代人常将工作与生活视为奔波劳碌的‘苦海途中’，渴望逃离到一个安乐的‘退休家舍’。雍正帝‘途中即家舍，家舍即途中’的智慧开示：真正的安详解脱不在千里之外，就在你当下处理邮件、陪伴家人、应对挑战的每一个具体行动之中。只要放下计较得失之心，在奔波中安守本分清凉，步步踏着实地，当下即是极乐净土。",
+    "relatedBooks": ["yuxuanyulu"],
+    "relatedPersons": ["yongzheng"]
   }
 ];
 

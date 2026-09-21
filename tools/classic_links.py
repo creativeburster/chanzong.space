@@ -174,6 +174,7 @@ MAP = {
   'zimenjingxun': [('chanyuanqinggui', '宋代清规源流'), ('weishanyulu', '沩山警策根本法乳'), ('ruzhongxuzhi', '丛林日用威仪规制'), ('changuancejin', '明代宗门策励双璧')],
   'xisouguanglu': [('xisouyulu', '小本语录与全景广录互参'), ('xutangyulu', '宋末临济同调'), ('biyanlu', '公案颂古向上宗眼'), ('wumenguan', '赵州无字看话同参')],
   'banruodenglunshi': [('shunzhonglun', '中观法相阐幽'), ('shiertimenlun', '龙树中观正脉'), ('bailun', '破外显正空门'), ('baoxingwangzhenglun', '中道实相教诫')],
+  'yuxuanyulu': [('jingdechuandenglu', '宗门传灯渊薮'), ('zhiyuelu', '明代指月法海'), ('zongjinglu', '永明万善同归'), ('wudenghuiyuan', '五宗七派统要')],
 }
 
 

@@ -1694,6 +1694,18 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '迦罗罗', pinyin: 'jiā luó luó', meaning: '梵语 Kalala 之音译，意译为凝滑。有情生命于母胎受孕第一七日内，精卵初合如薄酪之最初位次。' },
     { char: '阇提', pinyin: 'shé tí', meaning: '梵语 Jāti 之音译，意译为“生”。佛教十二缘起支之一，谓有情生命依前生造业引力而于六道中受生之初始刹那。' },
   ],
+  'yuxuanyulu': [
+    { char: '颟顸', pinyin: 'mān hān', meaning: '糊涂马虎、不分明。世宗总序诫示参禅“非可颟顸函胡，自欺欺人”，必须步步有着落。' },
+    { char: '函胡', pinyin: 'hán hú', meaning: '同“含糊”，模棱两可、含混不清。形容盲禅者未悟谓悟、含糊其辞蒙混学者。' },
+    { char: '戔弇', pinyin: 'jiān yǎn', meaning: '戔读 jiān，狭隘浅薄；弇读 yǎn，闭塞狭局。形容小乘行者见识浅隘、执著偏空。' },
+    { char: '淄渑', pinyin: 'zī miǎn', meaning: '淄水与渑水合流，春秋易牙能尝辨二水之味。宗门比喻大宗师金刚眼目，能精准辨识宗门法脉与见地邪正。' },
+    { char: '采掇', pinyin: 'cǎi duō', meaning: '掇读 duō，采纳、拾取、选录。世宗自谦批阅古锥语录，“披览未周，即采掇未及”。' },
+    { char: '弁于', pinyin: 'biàn yú', meaning: '弁读 biàn，置于篇首冠冕之处作为序引。“爰为总序，弁于篇端，刊示来今”。' },
+    { char: '栴檀', pinyin: 'zhān tán', meaning: '梵语 Candana 之音译，名贵白檀香木。总序斥盲修者执著妄心如“觅栴檀于粪土”。' },
+    { char: '噙著', pinyin: 'qín zhe', meaning: '噙读 qín，含在口中。总序讥讽执识神者如“噙著铁丸，口称玉液”，自欺欺人。' },
+    { char: '揜', pinyin: 'yǎn', meaning: '古同“掩”，遮掩、隐蔽。总序斥野狐禅“魔形难揜，遁归圆相之中”。' },
+    { char: '癸丑', pinyin: 'guǐ chǒu', meaning: '干支纪年。清世宗雍正十一年岁次癸丑（1733年），世宗于四月朔日亲撰御制总序并颁布《御选语录》。' },
+  ],
 };
 
 
