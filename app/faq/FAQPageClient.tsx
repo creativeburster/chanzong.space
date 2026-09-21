@@ -10,7 +10,6 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_FAQS } from '@/lib/taxonomy/faqs';
 import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
 import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Search, Users, X, RotateCcw } from 'lucide-react';
@@ -26,13 +25,19 @@ type FAQEntry = {
   relatedBooks?: string[];
 };
 
-export default function FAQPageClient() {
+interface FAQPageClientProps {
+  initialFaqs?: FAQEntry[];
+  totalFaqCount?: number;
+}
+
+export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPageClientProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<string | null>(null);
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [selectedPerson, setSelectedPerson] = useState<string | null>(null);
   const [keyword, setKeyword] = useState('');
   const [displayCount, setDisplayCount] = useState(50);
+  const [fullFaqs, setFullFaqs] = useState<FAQEntry[] | null>(null);
 
   // 典籍下拉与内联搜索
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
@@ -46,7 +51,37 @@ export default function FAQPageClient() {
 
   const { t, toSimp, toTrad, getHref } = useLang();
 
-  const allFaqs: FAQEntry[] = useMemo(() => ZEN_FAQS.map(f => ({ ...f })), []);
+  // 按需/惰性加载完整 3325 条问答库
+  const ensureFullFaqs = useCallback(async () => {
+    if (fullFaqs) return;
+    try {
+      const mod = await import('@/lib/taxonomy/faqs');
+      setFullFaqs(mod.ZEN_FAQS);
+    } catch (e) {
+      console.error('Failed to lazy load full FAQs:', e);
+    }
+  }, [fullFaqs]);
+
+  // 当用户交互（输入搜索词、打开下拉）或触发搜索时立即加载全量问答库
+  useEffect(() => {
+    if (keyword || selectedBook || selectedPerson || bookDropdownOpen || personDropdownOpen) {
+      ensureFullFaqs();
+    }
+  }, [keyword, selectedBook, selectedPerson, bookDropdownOpen, personDropdownOpen, ensureFullFaqs]);
+
+  // 页面空闲时预加载完整问答库
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const timer = setTimeout(() => {
+      ensureFullFaqs();
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [ensureFullFaqs]);
+
+  const allFaqs: FAQEntry[] = useMemo(() => {
+    const list = fullFaqs || initialFaqs;
+    return list.map(f => ({ ...f }));
+  }, [fullFaqs, initialFaqs]);
 
   const bookMap = useMemo(() => {
     const map: Record<string, { id: string; title: string }> = {};
@@ -247,7 +282,7 @@ export default function FAQPageClient() {
                 {t('禅宗解惑问答')}
               </h1>
               <p className="text-[13px] text-slate-500 mt-0.5">
-                共 {allFaqs.length} 条 · {t('围绕公案、经典与禅宗义理的常见疑问解答')}
+                共 {totalFaqCount || allFaqs.length} 条 · {t('围绕公案、经典与禅宗义理的常见疑问解答')}
               </p>
             </div>
           </div>

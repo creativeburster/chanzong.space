@@ -2,9 +2,8 @@
 
 import React, { useState, useMemo } from 'react';
 import { BookOpen, Copy, Check, Volume2, Sparkles, Compass, HelpCircle, Layers, Quote } from 'lucide-react';
-import { ZEN_TRANSLATIONS } from '@/lib/translations';
-import { ZEN_GLOSSARY } from '@/lib/glossary';
 import { injectGlossaryMarkups } from './InlineGlossaryTooltip';
+import type { GlossaryEntry } from '@/lib/glossary';
 import { useLang } from '@/context/LangContext';
 
 interface BilingualReaderProps {
@@ -24,6 +23,8 @@ interface BilingualReaderProps {
     secondaryText: string;
     accentColor: string;
   };
+  translations?: string[];
+  glossaries?: GlossaryEntry[];
 }
 
 // 从 markdown 源码中提取原文段落
@@ -67,18 +68,20 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
   viewMode,
   fontSize,
   currentTheme,
+  translations: propTranslations,
+  glossaries: propGlossaries,
 }) => {
   const { t, isTraditional } = useLang();
   const [copiedIdx, setCopiedIdx] = useState<number | null>(null);
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
 
-  const glossaries = useMemo(() => ZEN_GLOSSARY[classicId] || [], [classicId]);
+  const glossaries = useMemo(() => propGlossaries || [], [propGlossaries]);
   const originalParas = useMemo(() => {
     if (originalParagraphs && originalParagraphs.length > 0) return originalParagraphs;
     return rawContent ? extractOriginalParagraphs(rawContent) : [];
   }, [originalParagraphs, rawContent]);
 
-  const translations = useMemo(() => ZEN_TRANSLATIONS[classicId] || [], [classicId]);
+  const translations = useMemo(() => propTranslations || [], [propTranslations]);
   const { guide, quotes, gist } = useMemo(() => {
     if (summaryInfo) return { guide: summaryInfo.guide || '', quotes: summaryInfo.quotes || '', gist: summaryInfo.gist || '' };
     return rawContent ? extractGuidesAndQuotes(rawContent) : { guide: '', quotes: '', gist: '' };

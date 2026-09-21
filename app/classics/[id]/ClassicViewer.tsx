@@ -25,7 +25,6 @@ import { InlineGlossaryTooltip, injectGlossaryMarkups } from '@/components/Inlin
 import { BilingualReader } from '@/components/BilingualReader';
 import { ClassicItem } from '@/lib/data';
 import type { PersonItem, ConceptItem, MethodItem, KoanItem, FAQItem } from '@/lib/taxonomy';
-import { ZEN_GLOSSARY } from '@/lib/glossary';
 import { getCollectionByClassicId } from '@/lib/collections';
 import { splitClassicVolumes, ClassicVolume } from '@/lib/splitVolumes';
 import {
@@ -73,6 +72,8 @@ interface ClassicViewerProps {
   relMethods?: MethodItem[];
   relQas?: KoanItem[];
   relFaqs?: FAQItem[];
+  translations?: string[];
+  glossaries?: any[];
   // 保留可选 rawContent/htmlContent 仅作兜底兼容
   rawContent?: string;
   htmlContent?: string;
@@ -150,6 +151,8 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   relMethods = [],
   relQas = [],
   relFaqs = [],
+  translations = [],
+  glossaries = [],
   children,
   htmlContent,
   rawContent,
@@ -325,7 +328,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   ];
 
   // 生僻字标注与 HTML 转换（默认自然注音与解释）
-  const classicGlossary = useMemo(() => ZEN_GLOSSARY[meta.id] || [], [meta.id]);
+  const classicGlossary = useMemo(() => glossaries || [], [glossaries]);
 
   // 渲染导读 HTML (仅多卷模式时独立渲染)
   const renderedGuideHtml = useMemo(() => {
@@ -693,7 +696,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
               {/* 白话今译（分页） */}
               <div id="sec-translations">
-                <TranslationCard classicId={meta.id} />
+                <TranslationCard classicId={meta.id} translations={translations} />
               </div>
 
               {/* 生僻字解释 */}
@@ -728,6 +731,8 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
               viewMode={viewMode}
               fontSize={fontSize}
               currentTheme={currentTheme}
+              translations={translations}
+              glossaries={glossaries}
             />
           )}
 

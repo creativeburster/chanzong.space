@@ -6,6 +6,7 @@ import { ClassicViewer } from './ClassicViewer';
 import { marked } from 'marked';
 import { ZEN_FAQS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { ZEN_GLOSSARY } from '@/lib/glossary';
+import { ZEN_TRANSLATIONS } from '@/lib/translations';
 import { injectGlossaryMarkups } from '@/lib/glossaryMarkup';
 import { splitClassicVolumes } from '@/lib/splitVolumes';
 import { extractCards, extractAudioText, extractOriginalParagraphs, extractGuidesAndQuotes } from '@/lib/extractCards';
@@ -163,6 +164,9 @@ export default function ClassicPage({ params }: PageProps) {
     })),
   } : null;
 
+  const classicTranslations = ZEN_TRANSLATIONS[params.id] || [];
+  const classicGlossaries = ZEN_GLOSSARY[params.id] || [];
+
   return (
     <>
       <script
@@ -191,6 +195,8 @@ export default function ClassicPage({ params }: PageProps) {
         relMethods={relMethods}
         relQas={relQas}
         relFaqs={relFaqs}
+        translations={classicTranslations}
+        glossaries={classicGlossaries}
       >
         {children}
       </ClassicViewer>

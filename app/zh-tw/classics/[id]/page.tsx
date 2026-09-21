@@ -7,6 +7,7 @@ import { marked } from 'marked';
 import { ZEN_FAQS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { convertToTrad, convertHtmlToTrad } from '@/lib/opencc';
 import { ZEN_GLOSSARY } from '@/lib/glossary';
+import { ZEN_TRANSLATIONS } from '@/lib/translations';
 import { injectGlossaryMarkups } from '@/lib/glossaryMarkup';
 import { splitClassicVolumes } from '@/lib/splitVolumes';
 import { ExtractedCards, extractCards, extractAudioText, extractOriginalParagraphs, extractGuidesAndQuotes } from '@/lib/extractCards';
@@ -203,6 +204,13 @@ export default function TradClassicPage({ params }: PageProps) {
     })),
   } : null;
 
+  const classicTranslations = (ZEN_TRANSLATIONS[params.id] || []).map(p => convertToTrad(p));
+  const classicGlossaries = (ZEN_GLOSSARY[params.id] || []).map(g => ({
+    ...g,
+    char: convertToTrad(g.char),
+    meaning: convertToTrad(g.meaning),
+  }));
+
   return (
     <>
       <script
@@ -231,6 +239,8 @@ export default function TradClassicPage({ params }: PageProps) {
         relMethods={relMethods}
         relQas={relQas}
         relFaqs={relFaqs}
+        translations={classicTranslations}
+        glossaries={classicGlossaries}
       >
         {children}
       </ClassicViewer>

@@ -45,10 +45,11 @@ function FAQPageJsonLd() {
 }
 
 export default function FAQPagePage() {
+  const initialFaqs = ZEN_FAQS.slice(0, 50);
   return (
     <>
       <FAQPageJsonLd />
-      <FAQPageClient />
+      <FAQPageClient initialFaqs={initialFaqs} totalFaqCount={ZEN_FAQS.length} />
     </>
   );
 }

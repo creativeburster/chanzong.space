@@ -2,14 +2,18 @@
 
 import React, { useState } from 'react';
 import { BookText, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
-import { ZEN_TRANSLATIONS } from '@/lib/translations';
 import { useLang } from '@/context/LangContext';
 
 const PAGE_SIZE = 4;
 
-export const TranslationCard: React.FC<{ classicId: string }> = ({ classicId }) => {
+interface TranslationCardProps {
+  classicId: string;
+  translations?: string[];
+}
+
+export const TranslationCard: React.FC<TranslationCardProps> = ({ classicId, translations }) => {
   const { t } = useLang();
-  const paragraphs = ZEN_TRANSLATIONS[classicId];
+  const paragraphs = translations;
   const [open, setOpen] = useState(true);
   const [page, setPage] = useState(0);
 

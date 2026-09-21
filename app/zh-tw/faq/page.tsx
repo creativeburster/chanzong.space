@@ -49,10 +49,15 @@ function FAQPageJsonLd() {
 }
 
 export default function TradFAQPage() {
+  const initialFaqs = ZEN_FAQS.slice(0, 50).map(f => ({
+    ...f,
+    question: convertToTrad(f.question),
+    answer: convertToTrad(f.answer),
+  }));
   return (
     <>
       <FAQPageJsonLd />
-      <FAQPageClient />
+      <FAQPageClient initialFaqs={initialFaqs} totalFaqCount={ZEN_FAQS.length} />
     </>
   );
 }
