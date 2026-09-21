@@ -4035,11 +4035,11 @@ export const ZEN_PERSONS: PersonItem[] = [
       "雪窦千寻瀑布，自古喷薄雷轰。只要汝等个个如生铁铸就、金刚打成！",
       "莫向沧溟弄钓钩，归去建长重举起！"
     ],
-    "classics": ["希叟绍昙禅师语录"],
-    "relatedConcepts": ["jin-ding-zi","ding-men-yi-yan","dong-du-chuan-fa"],
-    "relatedMethods": ["nongchan-richang","kanhuatou"],
+    "classics": ["希叟绍昙禅师语录", "希叟绍昙禅师广录"],
+    "relatedConcepts": ["jin-ding-zi","ding-men-yi-yan","dong-du-chuan-fa","mu-zha-geng","tuo-zai-fo-shu","huo-li-wu-gui","bu-luo-si-wei"],
+    "relatedMethods": ["nongchan-richang","kanhuatou","jue-hou-fu-su-fa","dian-po-wang-qing-fa"],
     "relatedPersons": ["xutang-zhiyu","mianxian-xianjie","xueyan-zuqin"],
-    "relatedBooks": ["xisouyulu","xutangyulu","mianxianyulu","haiyinyulu"]
+    "relatedBooks": ["xisouyulu","xutangyulu","mianxianyulu","haiyinyulu","xisouguanglu"]
   }
 ,
   {
@@ -13446,6 +13446,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedPersons": ["weishan-lingyou", "rujin"],
     "relatedBooks": ["zimenjingxun", "weishanyulu"]
   }
+,
+  {
+    "id": "mu-zha-geng",
+    "title": "木札羹",
+    "category": "禅门公案隐喻",
+    "summary": "木札羹原指以碎木片烹煮之苦涩羹汤。禅门用以比喻宗师施设之毫无情识滋味、坚硬如铁、极难咬嚼吞咽之本分工夫与向上机关。学人唯有抛弃一切知解算计，奋不顾身一口咬破，方能亲证万法全现之大解脱真味。",
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["jin-ding-zi", "ding-men-yi-yan", "huo-li-wu-gui"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "tuo-zai-fo-shu",
+    "title": "堕在佛数",
+    "category": "心性正见",
+    "summary": "指学人将自心局限于‘成佛作祖、修因证果’之阶级名相与圣凡对待之中。禅门宗匠斥之为‘金裹烂泥团’，强调宗门根本极则在于‘超佛越祖’，必须连‘佛’与‘圣’的清净执着亦彻底扫荡，方得净裸裸赤洒洒之真正解脱。",
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["bu-luo-si-wei", "wu-nian", "ding-men-yi-yan"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "huo-li-wu-gui",
+    "title": "火里乌龟",
+    "category": "绝后复苏妙境",
+    "summary": "语出希叟绍昙示众名句‘心路绝，火里乌龟头戴雪’。乌龟居水而生烈火，头戴冷雪，比喻行者在分别情识彻底死尽、心智道路断绝的万仞绝境之中，所显现之水火交融、大死大活、超越一切世间常情知见的不可思议本地风光与大机大用。",
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["mu-zha-geng", "bu-luo-si-wei", "tou-xin-wei-si"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "bu-luo-si-wei",
+    "title": "不落思惟",
+    "category": "参究宗眼",
+    "summary": "指宗门参究直探一念未生前之现量本觉，不落入心识分别、思量推度与语言意识之葛藤窠臼中。希叟绍昙示众常诫‘觌面当机，是非俱刬，不落思惟透险崖’，唯有刹那截断前后际断之计较，方得顶门金刚正眼洞开。",
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["ding-men-yi-yan", "wu-nian", "yinian-wusheng"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  }
 ];
 
 export const ZEN_METHODS: MethodItem[] = [
@@ -16332,6 +16373,44 @@ export const ZEN_METHODS: MethodItem[] = [
     "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"],
     "relatedPersons": ["rujin", "weishan-lingyou"],
     "relatedBooks": ["zimenjingxun"]
+  }
+,
+  {
+    "id": "jue-hou-fu-su-fa",
+    "title": "绝后复苏大死大活观",
+    "summary": "依据希叟绍昙‘撒手便行心路绝，火里乌龟头戴雪’之向上提撕所立之直参心髓法。行者于静动境界中单提一句本分公案，逼拶至思量计度死尽、悬崖撒手之绝地，顿然绝后复苏，亲见本地风光。",
+    "steps": [
+      "第一步【截断妄想，单提本分】：放下一切世间情见与文字义理知解，于一念未生前单提一念，紧逼不舍；",
+      "第二步【逼至绝境，万缘冰消】：任由枯寂无味，如嚼生铁木札羹，不作迎拒，直至前念已灭、后念未生之黑漆桶底；",
+      "第三步【悬崖撒手，心路尽绝】：在此识情无可奈何处，断然斩断最后一丝求悟与作主之微细我执；",
+      "第四步【绝后复苏，活泼大用】：于心路绝处顿然虚空粉碎、大地平沉，水火相融，任运发显‘火里乌龟头戴雪’之自在宗通大用。"
+    ],
+    "pitfalls": [
+      "切忌将心意识假想之‘死水空寂’误当绝后复苏",
+      "切莫在枯寂中沉空滞寂、认贼作子"
+    ],
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["huo-li-wu-gui", "mu-zha-geng", "bu-luo-si-wei"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "dian-po-wang-qing-fa",
+    "title": "开光点破妄情提撕法",
+    "summary": "取法希叟绍昙为佛像神明开光之小佛事机锋。行者观照万法色相皆如金裹泥团，借森罗万象点破心头微细尘屑，使自性一段本具光明毫端炽然显发之随缘观照法门。",
+    "steps": [
+      "第一步【照见金泥，不著圣相】：了知一切庄严佛相、神圣境界皆是自心影像，执相即成眼中著屑；",
+      "第二步【毫端点破，当体即空】：于见闻觉知起处，如笔点眼睛，当下勘破境与相之虚幻本空；",
+      "第三步【光明普摄，随处承当】：尘屑尽去，自性圆满光明不从外得，于行住坐卧起居日用中全息照耀。"
+    ],
+    "pitfalls": [
+      "切勿落入恶取空见而废弃佛事与恭敬规矩",
+      "不可向外执着光相境界而迷失自性本源"
+    ],
+    "classicRef": "希叟绍昙禅师广录",
+    "relatedConcepts": ["tuo-zai-fo-shu", "bu-luo-si-wei"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
   }
 ];
 
@@ -24984,6 +25063,43 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"],
     "relatedPersons": ["rujin"],
     "relatedBooks": ["zimenjingxun"]
+  }
+,
+  {
+    "id": "koan-749",
+    "question": "如何是心路绝处奇特之境？",
+    "answer": "昨朝颺下破铅刀，撒手便行心路绝。心路绝，火里乌龟头戴雪。",
+    "context": "希叟绍昙禅师示众说法，学人请示绝断思维分别、向上承当之至极风光，师以此偈答之。",
+    "interpretation": "希叟以破铅刀喻世俗有为浅识之小智，撒手便行显大死一番之决绝。心路绝非顽空木石，而是真如体露，故以‘火里乌龟头戴雪’显发常情思维不可测度之大机大用。",
+    "master": "希叟绍昙",
+    "source": "希叟绍昙禅师广录卷四",
+    "relatedConcepts": ["huo-li-wu-gui", "bu-luo-si-wei"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "koan-750",
+    "question": "如何是衲僧庖厨中真妙诀？",
+    "answer": "善煮东山木札羹，餕馅无皮浑是铁。咬破方知百味全，验尽衲僧三寸舌。",
+    "context": "居奇行者善掌庖厨作务，请益宗门向上道业，希叟以此提撕示之。",
+    "interpretation": "木札无味，生铁难咬，正喻参禅工夫必须绝断一切滋味知解。唯有于冷清无下口处一口咬碎，方证具足一切功德之自性真味。",
+    "master": "希叟绍昙",
+    "source": "希叟绍昙禅师广录卷七",
+    "relatedConcepts": ["mu-zha-geng", "jin-ding-zi"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
+  },
+  {
+    "id": "koan-751",
+    "question": "装金刚开光，如何显发本来面目？",
+    "answer": "堕在佛数，金裹烂泥团；卓立门风，脑后抽生铁。去却屑，一段光明，毫端点发！",
+    "context": "大众请希叟绍昙禅师为金刚护法神像开光明，师执笔当阳示众。",
+    "interpretation": "希叟当机破除学人死守圣相佛数之执著，直指人人本具之金刚自性不假外求，毫端一点即是本源自性大光明之全体发露。",
+    "master": "希叟绍昙",
+    "source": "希叟绍昙禅师广录卷七",
+    "relatedConcepts": ["tuo-zai-fo-shu", "ding-men-yi-yan"],
+    "relatedPersons": ["xisou-shaotan"],
+    "relatedBooks": ["xisouguanglu"]
   }
 ];
 
@@ -45424,6 +45540,119 @@ const ZEN_FAQS_PART3: FAQItem[] = [
     "relatedBooks": ["zimenjingxun"],
     "relatedPersons": ["rujin", "weishan-lingyou"],
     "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang", "wu-xue-shi-men"]
+  }
+,
+  {
+    "id": "faq-3262",
+    "question": "《希叟绍昙禅师广录》七卷巨著在宋元禅宗史与东亚禅宗交流中居何重要地位？",
+    "answer": "《希叟绍昙禅师广录》凡七卷，是南宋临济宗杨岐派破庵派法系极为重要的全景式语录大典。希叟绍昙先后主法佛陇、法华、雪窦、开善诸首刹，其宗风雄峻刚劲，被誉为‘宗门金钉子’。广录不仅完整收录其上堂示众、小参直截提唱与百则拈古颂古，更珍贵载录了其《示日本平将军法语》与诸多东渡僧人送行题跋，是研究宋代临济宗禅法体系、看话禅发展脉络以及日本五山禅宗初传法源的第一手核心文献。",
+    "relatedBooks": ["xisouguanglu", "xisouyulu", "xutangyulu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3263",
+    "question": "希叟绍昙入院佛陇山门时说“大解脱门，无入作处。掣断玄关，头头活路”，具何禅机？",
+    "answer": "世人常误以为解脱有固定门径可入，希叟初到山门即单刀直入破除此执。所谓‘无入作处’，说明解脱本自圆成，无门无路、不可造作；‘掣断玄关’是截断学人千思万量之意根分别；一旦前后际断、直契自性，便见万事万物无非本来面目，步步踏着实地，此即‘头头活路’。其随即‘骤步而入’，更以实际行动显露无住任运的天然大用。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3264",
+    "question": "希叟在佛殿前直喝“德山软顽，云门放憨”，是否轻慢先祖？其真正宗旨在何处？",
+    "answer": "绝非轻慢先祖，此乃临济宗‘杀活纵夺、不落佛祖窠臼’之向上大机大用。德山棒、云门饼本为接引后学的慈悲方便，但末世学人死死咬住棒喝话头，作名相义理推求，反成枷锁。希叟痛喝二师‘软顽、放憨’，甚至言‘瞿昙也救不得’，意在逼令学人彻底放下对古佛先祖之偶像崇拜与知见死水，当下独立自肯、自担大事。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3265",
+    "question": "希叟升座提唱“陷虎机，屠龙技，大用现前无小试”，彰显了临济杨岐派怎样的家风？",
+    "answer": "此语极其形象地展现了杨岐宗匠真刀实枪、绝不姑息的情操。‘陷虎机’能擒凶险妄念之猛虎，‘屠龙技’能断玄妙圣解之神龙。禅门向上一窍，关乎生死大事，绝非文人墨客弄笔头、做辞章之小打小闹。唯有大智大勇、肯奋不顾身粉碎身心妄执之英灵汉，方能当阳领受，显发大机大用。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3266",
+    "question": "僧问“野梅的皪寒包玉，六代传衣事若何”，希叟为何答“贼过后关门”？",
+    "answer": "提问者借‘六代传衣’之古风公案，试图探寻付法受记之玄妙玄旨。希叟答以‘贼过后关门’，机锋冷峭：自达摩至六祖，正法眼藏早已当阳交付，信衣亦已止而不传；你今日若还在追究传衣的形式葛藤，犹如盗贼偷光家产之后才慌忙关门上锁，早已落后万重、徒劳心机！意在策励学人切莫数他人珍宝，当急探脚跟下自家宝藏。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3267",
+    "question": "希叟绍昙《示日本平将军法语》中开示“以金刚正眼照破世情幻化”，对东瀛禅宗有何深远影响？",
+    "answer": "南宋末期日本武家政权崛起，镰仓幕府诸将领极度向往禅宗解脱之境。希叟在法语中谆谆告诫平将军：富贵功名如浮云毳毛，若欲了生脱死，必须立金刚志，开金刚正眼，于一念未生前密密究明‘谁作主宰’。这一开示彻底摒弃了繁琐义学与祈福迷信，将纯正的看话实修心法直贯日本政军精英心胸，奠定了镰仓禅宗强调生死气节、向内自省的雄浑底色。",
+    "relatedBooks": ["xisouguanglu", "xisouyulu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3268",
+    "question": "希叟开示晔庵主“住庵不用求多，山中白云是伴，莫随妄境转脚跟”，揭示了怎样的静修原则？",
+    "answer": "开示针对住庵隐修者常犯之‘贪求清静、又耐不住寂寞而攀缘外境’的通病。希叟指出：结庵不必追求广厦多朋，但教内心如如不动，白云流水尽是自性宣流。最要紧者在随缘了旧业、不作新殃，饥餐困眠，不被境界牵缠。更告诫行者即使坐断千圣顶，终须向万仞崖头撒手大舍，不可死守清幽枯禅。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3269",
+    "question": "名句“昨朝颺下破铅刀，撒手便行心路绝。心路绝，火里乌龟头戴雪”，如何指导当代学人参禅？",
+    "answer": "‘破铅刀’喻当代人惯用的世智辨聪、逻辑分析与有为思辨，执此小刀断不可斩破无明。参学者必须下大决心舍却妄想攀缘，达到分别意识穷途末路的‘心路绝’境地。而在心智彻底大死一番之处，非但不是虚无断灭，反倒能亲见‘火里乌龟头戴雪’——在生生不息的热恼尘寰中保有一念清凉大觉，水火无碍，显发绝妙不可思议之大智大用。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3270",
+    "question": "希叟为何将执著圣位成佛讥讽为“堕在佛数，金裹烂泥团”？禅宗为何强调超佛越祖？",
+    "answer": "禅宗以明心见性为根本，自性本自清净具足，不增不减。若人起心动念想要求作‘佛’、希求‘圣果’，便已经落入‘佛’的数名阶级中，成了自心安立的幻相桎梏。金子虽贵，包裹着烂泥也终非清净本体；执著佛圣名相，同样障蔽法身。唯有超脱佛祖知见，如生铁铸就之大丈夫，扫除圣凡情见，方得真解脱。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3271",
+    "question": "希叟称赞庖厨执劳者“善煮东山木札羹，餕馅无皮浑是铁”，在修行用功上喻指什么？",
+    "answer": "‘东山木札羹’是宗门极具分量的修行隐喻。木片无味无汁，铁块无皮无馅，喻指真正的参禅功夫决无世俗之甘甜愉悦与浮华知见，唯是一团不可捉摸、无法下口的疑情死关。修行者若肯在枯燥艰难处死心塌地、奋力咬定不放，一旦咬碎这块生铁，方知无味之中百味俱全，亲证三世诸佛不传之大安乐境。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3272",
+    "question": "希叟在装金刚开光时以笔作点势说“去却屑，一段光明毫端点发”，蕴含怎样的禅门开光妙义？",
+    "answer": "世俗开光多落于形式附会与求福禳灾，希叟则借佛事全提向上心法。他开示泥塑木雕之金刚本无自性，若执著文采形貌则是‘眼中著屑’。宗师以笔虚点，意在拂去学人心目中执相取相的迷妄尘屑；尘屑一除，行者自性中那段不生不灭、光明赫赫的金刚般若真体，便在当下毫端圆满顿现，不假外求。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3273",
+    "question": "希叟绍昙评唱百丈野狐公案时，为何说“不论答落与不昧，见之皆劈面一掌”？",
+    "answer": "百丈公案中，老人因执‘不落因果’堕狐身，因转‘不昧因果’脱狐身。常人往往在‘落’与‘不昧’两句上做理论纠缠。希叟指出：野狐尾巴犹在，凡落入两边对待皆非究竟大机大用。若见老人开口，当头一掌，直截截断两头互相对立之逻辑戏论，令其直契因果不二、超绝阴阳的大觉真性。",
+    "relatedBooks": ["xisouguanglu", "biyanlu", "wumenguan"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3274",
+    "question": "希叟为王逸老草书《心经》题跋称“若作书法看埋没逸老心，若作经卷读蹉过般若体”，意何所在？",
+    "answer": "此题跋深契禅艺合一、借艺明心之至境。逸老草书如惊蛇入草、风雷起伏，乃自性波澜之自然宣泄。若学人仅评赏其笔墨技巧与章法气韵，则落入世俗玩物丧志之坑，辜负了书者透脱的心迹；若死执为白纸黑字之佛经章句，又成文字障，蹉过了字里行间所直指的无相般若本体。唯有离相离念、以心印心，方见墨海神龙之全貌。",
+    "relatedBooks": ["xisouguanglu", "xinjing"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3275",
+    "question": "希叟绍昙在为亡僧下火佛事中屡言“活业用穷呈死伎，火官头上转风车”，揭示了怎样的生死解脱观？",
+    "answer": "禅门下火语非同泛泛送死，乃宗师为临终行者作最后大提撕。世间凡夫执着色身为活命家业，死时百计无施，只能呈其死相伎俩。希叟喝破皮囊幻化，‘火官头上转风车’喻化火焚躯之际，自性火风地水本自空寂，烈火焚烧恰如风车旋空，了无挂碍；在骨肉俱尽之处，金刚法身独露超脱，直证不生不死真乡。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3276",
+    "question": "相比小本单卷的《希叟绍昙禅师语录》，本部七卷《希叟绍昙禅师广录》展现了哪些更宏大的全景内涵？",
+    "answer": "小本《希叟绍昙禅师语录》（第141部）侧重节选其住持名刹时最核心之上堂警策法要；而七卷《广录》则是全景式的巨帙总汇，完整收载了其四主名刹的全部上堂开示、密室小参、百则公案拈古与颂古、中日往来法语、丛林送行轴、书画题跋与下火开光佛事。它立体呈现了一位宋末临济巨匠在僧政、教学、修持、涉外交流与文化艺术各领域的全方位威德，宗门价值倍蓰于小本。",
+    "relatedBooks": ["xisouguanglu", "xisouyulu"],
+    "relatedPersons": ["xisou-shaotan"]
+  },
+  {
+    "id": "faq-3277",
+    "question": "当代学人面对繁杂世俗生活，当如何汲取希叟绍昙“掣断玄关、不落思惟”的宗门智慧以安身立命？",
+    "answer": "现代人深陷信息洪流与思虑焦虑之中，心识恒常处于无休止的计算、对比与精神内耗。希叟‘掣断玄关、不落思惟’的教诫，正是最猛烈的醒脑良药。参学者无须逃避生活，只需在日常工作处理应对中，时时觉察当下一念，不随是非妄想翻滚缠绕；在困顿逆境处敢于‘撒手绝后’，看破得失浮云，以赤洒洒之金刚自性自在任运，安详自足。",
+    "relatedBooks": ["xisouguanglu"],
+    "relatedPersons": ["xisou-shaotan"]
   }
 ];
 

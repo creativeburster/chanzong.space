@@ -172,6 +172,7 @@ MAP = {
   'miaofalianhuajing': [('tanjing', '法达悟法华转法华'), ('lengyanjing', '大乘开示悟入佛知见'), ('yuanjuejing', '圆觉一乘无二相'), ('weimojiejing', '不二法门入实相')],
   'chuanfazhengzongji': [('chuanfazhengzongdingzutu', '定祖合璧姊妹'), ('chuanfazhengzonglun', '正宗破惑论辩'), ('jingdechuandenglu', '宋代传灯全景'), ('tanjing', '曹溪一花五叶')],
   'zimenjingxun': [('chanyuanqinggui', '宋代清规源流'), ('weishanyulu', '沩山警策根本法乳'), ('ruzhongxuzhi', '丛林日用威仪规制'), ('changuancejin', '明代宗门策励双璧')],
+  'xisouguanglu': [('xisouyulu', '小本语录与全景广录互参'), ('xutangyulu', '宋末临济同调'), ('biyanlu', '公案颂古向上宗眼'), ('wumenguan', '赵州无字看话同参')],
 }
 
 

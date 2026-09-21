@@ -1670,6 +1670,18 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '葛巾', pinyin: 'gě jīn', meaning: '以粗葛布所制之便帽头巾。古代隐士与清修沙门所佩戴，喻清贫无欲、超凡脱俗之隐遁高风。' },
     { char: '盲瞽', pinyin: 'máng gǔ', meaning: '瞽读 gǔ，双目皆瞎。形容凡夫背觉合尘，追逐五欲妄境，如盲如瞽，长者虽高声呼唤而迷不回首。' },
   ],
+  'xisouguanglu': [
+    { char: '闹篮', pinyin: 'nào lán', meaning: '禅门俗语，比喻纷纭杂乱、是非争竞之尘俗境地或名利场。语录云“我也无端入闹篮”。' },
+    { char: '的皪', pinyin: 'dì lì', meaning: '鲜明光彩、珠玉晶莹之貌。进云“野梅的皪寒包玉，引得清风度暗香”。' },
+    { char: '胷襟', pinyin: 'xiōng jīn', meaning: '即“胸襟”，心胸、抱负与见识气度。颂古云“天台骨髓，流出胷襟，盖天盖地”。' },
+    { char: '金篦', pinyin: 'jīn bì', meaning: '古代眼科医生刮除白内障障膜之金属针具。宗门常借指直破学人微细妄执、剔除情识遮蔽之般若锐智。' },
+    { char: '庖厨', pinyin: 'páo chú', meaning: '厨房，丛林中称典座职事执劳之处。希叟赞叹居奇行者“悟得庖厨真妙诀”，喻借执劳作务顿见本来面目。' },
+    { char: '木札羹', pinyin: 'mù zhá gēng', meaning: '以木屑碎木片烹煮之羹汤。禅门喻指极苦涩坚硬、毫无世俗滋味、彻底绝断情识知解之宗门真工夫。' },
+    { char: '餕馅', pinyin: 'jùn xiàn', meaning: '餕读 jùn，吃剩之残食或无皮之馅。此喻毫无知见义理之虚假皮相，整块浑然如铁。' },
+    { char: '颺下', pinyin: 'yáng xià', meaning: '颺读 yáng，抛弃、放下、断然舍弃。“昨朝颺下破铅刀，撒手便行心路绝”。' },
+    { char: '铅刀', pinyin: 'qiān dāo', meaning: '质地柔软钝拙之铅制小刀。比喻世俗凡夫浅狭拙劣之小聪明与有为计度手段。' },
+    { char: '那伽', pinyin: 'nuó jiā', meaning: '梵语 Nāga 之音译，意译为龙、象。赞叹大阿罗汉与大觉行者具大威神定力，“那伽常在定，死水不藏龙”。' },
+  ],
 };
 
 
