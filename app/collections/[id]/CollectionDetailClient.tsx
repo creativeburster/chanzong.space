@@ -12,7 +12,8 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { CollectionItem } from '@/lib/collections';
-import { ZEN_CONCEPTS, ZEN_PERSONS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS } from '@/lib/taxonomy/concepts';
+import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
 import { useLang } from '@/context/LangContext';
 import manifest from '@/manifest.json';
 import { BookOpen, Scroll, ArrowRight, Compass, Users, Tag, History, CheckCircle2 } from 'lucide-react';

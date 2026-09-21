@@ -27,7 +27,8 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_KOANS } from '@/lib/taxonomy';
+import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
+import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { LineageNode, SECT_META } from '@/lib/lineageData';
 import { D3LineageTree } from '@/components/lineage/D3LineageTree';
 import { LineageViewTabs } from '@/components/lineage/LineageViewTabs';

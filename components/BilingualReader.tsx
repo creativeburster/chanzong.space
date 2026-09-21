@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useMemo } from 'react';
 import { BookOpen, Copy, Check, Volume2, Sparkles, Compass, HelpCircle, Layers, Quote } from 'lucide-react';
@@ -9,7 +9,9 @@ import { useLang } from '@/context/LangContext';
 
 interface BilingualReaderProps {
   classicId: string;
-  rawContent: string;
+  rawContent?: string;
+  originalParagraphs?: string[];
+  summaryInfo?: { guide?: string; quotes?: string; gist?: string };
   viewMode: 'bilingual' | 'modern';
   fontSize: 'normal' | 'large';
   currentTheme: {
@@ -59,7 +61,9 @@ function extractGuidesAndQuotes(raw: string) {
 
 export const BilingualReader: React.FC<BilingualReaderProps> = ({
   classicId,
-  rawContent,
+  rawContent = '',
+  originalParagraphs,
+  summaryInfo,
   viewMode,
   fontSize,
   currentTheme,
@@ -69,9 +73,16 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
 
   const glossaries = useMemo(() => ZEN_GLOSSARY[classicId] || [], [classicId]);
-  const originalParas = useMemo(() => extractOriginalParagraphs(rawContent), [rawContent]);
+  const originalParas = useMemo(() => {
+    if (originalParagraphs && originalParagraphs.length > 0) return originalParagraphs;
+    return rawContent ? extractOriginalParagraphs(rawContent) : [];
+  }, [originalParagraphs, rawContent]);
+
   const translations = useMemo(() => ZEN_TRANSLATIONS[classicId] || [], [classicId]);
-  const { guide, quotes, gist } = useMemo(() => extractGuidesAndQuotes(rawContent), [rawContent]);
+  const { guide, quotes, gist } = useMemo(() => {
+    if (summaryInfo) return { guide: summaryInfo.guide || '', quotes: summaryInfo.quotes || '', gist: summaryInfo.gist || '' };
+    return rawContent ? extractGuidesAndQuotes(rawContent) : { guide: '', quotes: '', gist: '' };
+  }, [summaryInfo, rawContent]);
 
   // 对齐段落对
   const alignedPairs = useMemo(() => {

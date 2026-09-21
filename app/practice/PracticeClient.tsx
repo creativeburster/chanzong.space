@@ -43,7 +43,7 @@ import { ZenMindfulnessBell } from '@/components/practice/ZenMindfulnessBell';
 import { PracticeMethodPill } from '@/components/practice/PracticeMethodPill';
 import { ZenImmersionModal } from '@/components/practice/ZenImmersionModal';
 import { LinkCardGrid } from '@/components/InternalLinkCards';
-import { ZEN_METHODS } from '@/lib/taxonomy';
+import { ZEN_METHODS } from '@/lib/taxonomy/methods';
 import { useLang } from '@/context/LangContext';
 
 export default function PracticeClient() {

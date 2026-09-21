@@ -183,3 +183,48 @@ export function inferHistory(meta: { author: string; category: string; word_coun
     wordCount: meta.word_count,
   };
 }
+
+/** 从 markdown 源码中提取原文段落（用于双语对照精读） */
+export function extractOriginalParagraphs(raw: string): string[] {
+  const match = raw.match(/##\s*📜?\s*典籍原文([\s\S]*)/);
+  if (!match) return [];
+  const body = match[1].trim();
+  const rawParas = body.split(/\n\s*\n/);
+  const result: string[] = [];
+  for (const p of rawParas) {
+    const trimmed = p.trim();
+    if (!trimmed) continue;
+    if (/^---+$/.test(trimmed)) continue;
+    // 过滤掉开头的纯标题行（如 ### 序）
+    if (trimmed.startsWith('###') && trimmed.length < 20 && !trimmed.includes('\n')) {
+      continue;
+    }
+    result.push(trimmed);
+  }
+  return result;
+}
+
+/** 提取导读与核心名句（用于精读模式概要） */
+export function extractGuidesAndQuotes(raw: string): { guide: string; quotes: string; gist: string } {
+  const guideMatch = raw.match(/##\s*💡\s*现代白话导读与核心旨趣([\s\S]*?)(?=##|---|\n#|$)/);
+  const quotesMatch = raw.match(/##\s*🗣️\s*名句白话解读([\s\S]*?)(?=##|---|\n#|$)/);
+  const gistMatch = raw.match(/\*\*主旨\*\*[:：]([\s\S]*?)(?=\n\n|\n##|$)/);
+
+  return {
+    guide: guideMatch ? guideMatch[1].trim() : '',
+    quotes: quotesMatch ? quotesMatch[1].trim() : '',
+    gist: gistMatch ? gistMatch[1].trim() : '',
+  };
+}
+
+/** 提取轻量朗读文本（导读 + 主旨 + 名句白话），避免传输几 MB 的全量古汉语原文 */
+export function extractAudioText(content: string): string {
+  const summary = extractGuidesAndQuotes(content);
+  const parts: string[] = [];
+  if (summary.gist) parts.push(`主旨：${summary.gist}`);
+  if (summary.guide) parts.push(`白话导读：\n${summary.guide.replace(/[*#>`-]/g, '')}`);
+  if (summary.quotes) parts.push(`名句解读：\n${summary.quotes.replace(/[*#>`-]/g, '')}`);
+  const text = parts.join('\n\n').slice(0, 3000);
+  if (text.length > 50) return text;
+  return content.slice(0, 2000).replace(/[*#>`-]/g, '');
+}

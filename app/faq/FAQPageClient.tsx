@@ -10,7 +10,9 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_FAQS, ZEN_PERSONS, ZEN_KOANS } from '@/lib/taxonomy';
+import { ZEN_FAQS } from '@/lib/taxonomy/faqs';
+import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
+import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Search, Users, X, RotateCcw } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
@@ -30,7 +32,7 @@ export default function FAQPageClient() {
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [selectedPerson, setSelectedPerson] = useState<string | null>(null);
   const [keyword, setKeyword] = useState('');
-  const [displayCount, setDisplayCount] = useState(30);
+  const [displayCount, setDisplayCount] = useState(50);
 
   // 典籍下拉与内联搜索
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
@@ -485,19 +487,17 @@ export default function FAQPageClient() {
 
           {/* FAQ List */}
           <div className="space-y-3">
-            {visibleFaqs.map((faq) => {
-              const isOpen = openFaq === faq.id;
+            {visibleFaqs.map((faq, index) => {
+              const defaultOpen = index < 10;
               return (
-                <div
+                <details
                   key={faq.id}
                   id={faq.id}
-                  className={`rounded-2xl bg-white border shadow-sm transition-all scroll-mt-24 ${
-                    isOpen ? 'border-amber-500/60 shadow-md' : 'border-slate-200/80 hover:border-amber-500/40'
-                  }`}
+                  open={defaultOpen}
+                  className="group rounded-2xl bg-white border border-slate-200/80 shadow-sm transition-all scroll-mt-24 open:border-amber-500/60 open:shadow-md hover:border-amber-500/40"
                 >
-                  <button
-                    onClick={() => setOpenFaq(isOpen ? null : faq.id)}
-                    className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left"
+                  <summary
+                    className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden"
                   >
                     <div className="flex items-start gap-2 min-w-0">
                       <span className="text-[15px] font-bold font-serif-zen text-slate-900 leading-snug">
@@ -505,11 +505,11 @@ export default function FAQPageClient() {
                       </span>
                     </div>
                     <ChevronDown
-                      className={`w-4 h-4 shrink-0 text-amber-700 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                      className="w-4 h-4 shrink-0 text-amber-700 transition-transform group-open:rotate-180"
                     />
-                  </button>
+                  </summary>
 
-                  <div className={`px-5 pb-5 -mt-1 space-y-3 ${isOpen ? 'block' : 'hidden'}`}>
+                  <div className="px-5 pb-5 -mt-1 space-y-3">
                     <p className="text-[15px] font-serif-zen text-slate-700 leading-relaxed bg-amber-50/50 p-4 rounded-xl border border-amber-200/60">
                       {t(faq.answer)}
                     </p>
@@ -543,7 +543,7 @@ export default function FAQPageClient() {
                       )}
                     </div>
                   </div>
-                </div>
+                </details>
               );
             })}
           </div>

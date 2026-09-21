@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import FAQPageClient from '@/app/faq/FAQPageClient';
 import { STATS } from '@/lib/stats';
-import { ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_FAQS } from '@/lib/taxonomy/faqs';
 import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {

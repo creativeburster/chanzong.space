@@ -4,8 +4,12 @@ import type { Metadata } from 'next';
 import { getClassicById, getManifest } from '@/lib/data';
 import { ClassicViewer } from '@/app/classics/[id]/ClassicViewer';
 import { marked } from 'marked';
-import { ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_FAQS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { convertToTrad, convertHtmlToTrad } from '@/lib/opencc';
+import { ZEN_GLOSSARY } from '@/lib/glossary';
+import { injectGlossaryMarkups } from '@/lib/glossaryMarkup';
+import { splitClassicVolumes } from '@/lib/splitVolumes';
+import { ExtractedCards, extractCards, extractAudioText, extractOriginalParagraphs, extractGuidesAndQuotes } from '@/lib/extractCards';
 
 interface PageProps {
   params: {
@@ -70,12 +74,66 @@ export default function TradClassicPage({ params }: PageProps) {
   const prevItem = currentIndex > 0 ? manifest[currentIndex - 1] : null;
   const nextItem = currentIndex < manifest.length - 1 ? manifest[currentIndex + 1] : null;
 
+  const rawText = content || '*正在提取該篇章全文中，請稍候刷新...*';
   const rawHtml = marked
-    .parse(content || '*正在提取該篇章全文中，請稍候刷新...*', { async: false })
+    .parse(rawText, { async: false })
     .replace(/<h1/g, '<h2')
-    .replace(/<\/h1>/g, '</h2>');
+    .replace(/<\/h1>/g, '</h2>') as string;
 
-  const htmlContent = convertHtmlToTrad(rawHtml as string);
+  // 服务端提取轻量结构化卡片并繁体化（仅数 KB，杜绝客户端序列化全书大字符串）
+  const extracted = extractCards(rawText);
+  const tradExtracted: ExtractedCards = {
+    verses: extracted.verses.map(v => convertToTrad(v)),
+    koans: extracted.koans.map(k => ({ question: convertToTrad(k.question), answer: convertToTrad(k.answer) })),
+    practices: extracted.practices.map(p => convertToTrad(p)),
+    modernApp: extracted.modernApp.map(m => convertToTrad(m)),
+    keyQuotes: extracted.keyQuotes.map(q => convertToTrad(q)),
+  };
+
+  const audioText = convertToTrad(extractAudioText(rawText));
+  const originalParagraphs = extractOriginalParagraphs(rawText).slice(0, 50).map(p => convertToTrad(p));
+  const rawSummary = extractGuidesAndQuotes(rawText);
+  const summaryInfo = {
+    guide: convertToTrad(rawSummary.guide),
+    quotes: convertToTrad(rawSummary.quotes),
+    gist: convertToTrad(rawSummary.gist),
+  };
+
+  // 服务端预先注入生僻字注音并繁体化，直接生成正文 JSX 节点作为 children 传入
+  const classicGlossary = ZEN_GLOSSARY[meta.id] || [];
+  const parsedVolumes = splitClassicVolumes(rawHtml);
+
+  let volumesMeta: { index: number; title: string }[] | undefined = undefined;
+  let guideHtml: string | undefined = undefined;
+  let children: React.ReactNode = null;
+
+  if (parsedVolumes.isMultiVolume) {
+    volumesMeta = parsedVolumes.volumes.map(v => ({ index: v.index, title: convertToTrad(v.title) }));
+    const markedGuide = injectGlossaryMarkups(parsedVolumes.guideHtml, classicGlossary, true);
+    guideHtml = convertHtmlToTrad(markedGuide);
+
+    children = (
+      <div className="volume-articles-container">
+        {parsedVolumes.volumes.map((v) => {
+          const markedVHtml = injectGlossaryMarkups(v.html, classicGlossary, true);
+          const tradVHtml = convertHtmlToTrad(markedVHtml);
+          return (
+            <div
+              key={v.index}
+              id={`volume-${v.index}`}
+              data-volume-idx={v.index}
+              className="volume-section"
+              dangerouslySetInnerHTML={{ __html: tradVHtml }}
+            />
+          );
+        })}
+      </div>
+    );
+  } else {
+    const markedHtml = injectGlossaryMarkups(rawHtml, classicGlossary, true);
+    const tradHtml = convertHtmlToTrad(markedHtml);
+    children = <div dangerouslySetInnerHTML={{ __html: tradHtml }} />;
+  }
 
   const titleTrad = convertToTrad(meta.title);
   const authorTrad = convertToTrad(meta.author);
@@ -103,17 +161,44 @@ export default function TradClassicPage({ params }: PageProps) {
     dateModified: new Date().toISOString().split('T')[0],
   };
 
-  const classicFaqs = ZEN_FAQS.filter(f => f.relatedBooks && f.relatedBooks.includes(meta.id)).slice(0, 20);
+  // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）
+  const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id)).map(p => ({
+    ...p,
+    name: convertToTrad(p.name),
+    title: convertToTrad(p.title),
+  }));
+  const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id)).map(c => ({
+    ...c,
+    title: convertToTrad(c.title),
+    summary: convertToTrad(c.summary || ''),
+  }));
+  const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id)).map(m => ({
+    ...m,
+    title: convertToTrad(m.title),
+    summary: convertToTrad(m.summary || ''),
+  }));
+  const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id)).map(q => ({
+    ...q,
+    question: convertToTrad(q.question),
+    answer: convertToTrad(q.answer || ''),
+  }));
+  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id)).map(f => ({
+    ...f,
+    question: convertToTrad(f.question),
+    answer: convertToTrad(f.answer || ''),
+  }));
+
+  const classicFaqs = relFaqs.slice(0, 20);
   const faqPageJsonLd = classicFaqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     inLanguage: 'zh-TW',
     mainEntity: classicFaqs.map(f => ({
       '@type': 'Question',
-      name: convertToTrad(f.question),
+      name: f.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: convertToTrad(f.answer),
+        text: f.answer,
       },
     })),
   } : null;
@@ -132,12 +217,23 @@ export default function TradClassicPage({ params }: PageProps) {
       )}
       <ClassicViewer
         meta={meta}
-        htmlContent={htmlContent}
-        rawContent={content}
         manifest={manifest}
         prevItem={prevItem}
         nextItem={nextItem}
-      />
+        extracted={tradExtracted}
+        audioText={audioText}
+        originalParagraphs={originalParagraphs}
+        summaryInfo={summaryInfo}
+        volumesMeta={volumesMeta}
+        guideHtml={guideHtml}
+        relPersons={relPersons}
+        relConcepts={relConcepts}
+        relMethods={relMethods}
+        relQas={relQas}
+        relFaqs={relFaqs}
+      >
+        {children}
+      </ClassicViewer>
     </>
   );
 }

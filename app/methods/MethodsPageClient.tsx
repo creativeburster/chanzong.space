@@ -10,7 +10,8 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_METHODS, ZEN_PERSONS } from '@/lib/taxonomy';
+import { ZEN_METHODS } from '@/lib/taxonomy/methods';
+import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
 import { Compass, Search, ChevronDown, ChevronRight, BookOpen, User, X, RotateCcw } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';

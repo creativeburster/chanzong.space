@@ -6,7 +6,10 @@ import { useRouter } from 'next/navigation';
 import * as d3 from 'd3';
 import { Network, ExternalLink, Sparkles, Compass, Tag, BookOpen, MessageSquare, Users, RotateCcw } from 'lucide-react';
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
+import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
+import { ZEN_CONCEPTS } from '@/lib/taxonomy/concepts';
+import { ZEN_METHODS } from '@/lib/taxonomy/methods';
+import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { useLang } from '@/context/LangContext';
 
 export interface EntityMiniGraphProps {

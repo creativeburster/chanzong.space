@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Sparkles, RefreshCw, Share2, BookOpen, Check, ArrowRight, Image as ImageIcon } from 'lucide-react';
-import { ZEN_KOANS } from '@/lib/taxonomy';
+import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { useLang } from '@/context/LangContext';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 

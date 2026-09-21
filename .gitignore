@@ -34,6 +34,11 @@ dachengqixinlun.txt
 
 # 外链自动化浏览器缓存
 tools/backlinks/.browser_profile/
+tools/backlinks/.chrome_profile/
+tools/_scratch/
+_audit_out*.txt
+tools/backlinks/*.png
+tools/backlinks/*.log
 
 # 诊断截图与待发布原始文本
 screenshots/

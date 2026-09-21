@@ -1,8 +1,8 @@
 # 禅宗知识库 (chanzong.space) 外链建设监控报告
 
-> 更新时间: 2026-09-16 13:53:56  
+> 更新时间: 2026-09-20 14:36:45  
 > 目标配比: **国内 60% : 海外及繁体 40%**  
-> 当前达成: **国内 229 条 (84.8%) : 海外繁体 41 条 (15.2%)** | 总计: **270 条**
+> 当前达成: **国内 233 条 (80.3%) : 海外繁体 57 条 (19.7%)** | 总计: **290 条**
 
 ---
 
@@ -10,30 +10,40 @@
 
 | 区域 | 平台 | 数量 | 占比 |
 |---|---|---|---|
-| - | 知乎 (Zhihu DA 95+) | 36 | 13.3% |
-| - | 哔哩哔哩 (Bilibili DA 94+) | 31 | 11.5% |
-| - | 新浪微博 (Weibo DA 90+) | 30 | 11.1% |
-| - | 稀土掘金 (Juejin DA 86+) | 27 | 10.0% |
-| - | Telegraph (DA 92 高权重专栏) | 26 | 9.6% |
-| - | 博客园 (CNBlogs DA 89+) | 21 | 7.8% |
-| - | GitHub Gist (顶级域名 DA 96) | 17 | 6.3% |
-| - | CSDN (DA 92+) | 13 | 4.8% |
-| - | 豆瓣 (Douban DA 88+) | 12 | 4.4% |
-| - | Telegraph (高权重学术专栏) | 10 | 3.7% |
-| - | 知乎 (Zhihu DA 94+) | 9 | 3.3% |
-| - | Rentry.co (独立域名 DA 78) | 7 | 2.6% |
-| - | CSDN | 6 | 2.2% |
-| - | 简书 (Jianshu DA 86+) | 5 | 1.9% |
-| - | GitHub (顶级独立域名 DA 96) | 3 | 1.1% |
-| - | 百度贴吧 (Baidu Tieba DA 92+) | 3 | 1.1% |
+| - | 知乎 (Zhihu DA 95+) | 36 | 12.4% |
+| - | Telegraph (DA 92 高权重专栏) | 32 | 11.0% |
+| - | 哔哩哔哩 (Bilibili DA 94+) | 31 | 10.7% |
+| - | 新浪微博 (Weibo DA 90+) | 30 | 10.3% |
+| - | 稀土掘金 (Juejin DA 86+) | 27 | 9.3% |
+| - | 博客园 (CNBlogs DA 89+) | 21 | 7.2% |
+| - | GitHub Gist (顶级域名 DA 96) | 17 | 5.9% |
+| - | CSDN (DA 92+) | 13 | 4.5% |
+| - | 豆瓣 (Douban DA 88+) | 12 | 4.1% |
+| - | Rentry.co (独立域名 DA 78) | 11 | 3.8% |
+| - | Telegraph (高权重学术专栏) | 10 | 3.4% |
+| - | 知乎 (Zhihu DA 94+) | 9 | 3.1% |
+| - | CSDN | 6 | 2.1% |
+| - | 简书 (Jianshu DA 86+) | 5 | 1.7% |
+| - | GitHub (顶级独立域名 DA 96) | 3 | 1.0% |
+| - | 百度贴吧 (Baidu Tieba DA 92+) | 3 | 1.0% |
 | - | Google Webmaster Ping | 2 | 0.7% |
 | - | Bing & Yahoo Webmaster Ping | 2 | 0.7% |
 | - | IndexNow (Bing / Yandex / 国际引擎) | 2 | 0.7% |
 | - | Write.as (独立域名 DA 75) | 2 | 0.7% |
 | - | Dev.to (全球权威开发者平台 DA 90) | 2 | 0.7% |
 | - | 小红书 (Xiaohongshu DA 85+) | 2 | 0.7% |
-| - | 华文网址导航 (123Cha) | 1 | 0.4% |
-| - | GitHub (顶级根域名 DA 96) | 1 | 0.4% |
+| - | 华文网址导航 (123Cha) | 1 | 0.3% |
+| - | GitHub (顶级根域名 DA 96) | 1 | 0.3% |
+| - | NPM Registry (全球官方根域名 DA 94) | 1 | 0.3% |
+| - | Yarnpkg (全球开源包权威平台 DA 88) | 1 | 0.3% |
+| - | JSDelivr (全球顶级开源CDN根域名 DA 91) | 1 | 0.3% |
+| - | Unpkg (全球知名开源分发平台 DA 85) | 1 | 0.3% |
+| - | Bundlephobia (开源生态技术平台 DA 72) | 1 | 0.3% |
+| - | Debian Paste (全球开源根域名 DA 91) | 1 | 0.3% |
+| - | Paste.rs (Rust社区极简平台 DA 65) | 1 | 0.3% |
+| - | Termbin (全球终端文献平台 DA 68) | 1 | 0.3% |
+| - | Cl1p.net (全球知名在线便签 DA 70) | 1 | 0.3% |
+| - | TinyURL (全球顶级路由网络 DA 94) | 1 | 0.3% |
 
 ---
 
@@ -41,6 +51,26 @@
 
 | 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
 |---|---|---|---|---|---|---|---|
+| BL-0290 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 国内 | 三祖僧璨大师信心铭至道无难考释：绝言绝虑与圆同太虚 | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/38s8meib) | Live |
+| BL-0289 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 国内 | 荷泽神会显宗记心髓考据：顿悟成佛与南宗顿教之争 | [/classics/shenhui](https://chanzong.space/classics/shenhui) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/mk3ptndo) | Live |
+| BL-0288 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 禅宗 130 部经典全景知识网络本体模型与分类法 ... | [/glossary](https://chanzong.space/glossary) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/禪宗130部經典全景知識網絡本體模型與分類法Schema架構指南-09-20) | Live |
+| BL-0287 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 海外及繁体 | Next.js 14 App Router 简繁双... | [/zh-tw](https://chanzong.space/zh-tw) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/3gwhuix9) | Live |
+| BL-0286 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 海外及繁体 | D3.js 力导向引擎与防抖自平衡拓扑聚类算法实现... | [/graph](https://chanzong.space/graph) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/ve3ok4i7) | Live |
+| BL-0285 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 菩提達摩大師血脈論·見性即是佛：直指人心見性成佛義... | [/zh-tw/classics/xuemaicong](https://chanzong.space/zh-tw/classics/xuemaicong) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/菩提達摩大師血脈論見性即是佛直指人心見性成佛義理考據-09-20) | Live |
+| BL-0284 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 永嘉大師證道歌·絕學無為閑道人：頓宗心法與圓頓實相... | [/zh-tw/classics/zhengdaoge](https://chanzong.space/zh-tw/classics/zhengdaoge) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/永嘉大師證道歌絕學無為閑道人頓宗心法與圓頓實相研幾-09-20) | Live |
+| BL-0283 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 趙州禪師語錄·吃茶去與平常心是道：叢林機鋒與不二門... | [/zh-tw/classics/zhaozhoulu](https://chanzong.space/zh-tw/classics/zhaozhoulu) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/趙州禪師語錄吃茶去與平常心是道叢林機鋒與不二門境-09-20) | Live |
+| BL-0282 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 六祖法寶壇經·風幡非動仁者心動：大乘無相頓教之根本... | [/zh-tw/classics/liuzutan-jing](https://chanzong.space/zh-tw/classics/liuzutan-jing) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/六祖法寶壇經風幡非動仁者心動大乘無相頓教之根本源流-09-20) | Live |
+| BL-0281 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 黃檗傳心法要·終日吃飯未曾咬一粒米：無心頓悟之第一... | [/zh-tw/classics/huangbo](https://chanzong.space/zh-tw/classics/huangbo) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/黃檗傳心法要終日吃飯未曾咬一粒米無心頓悟之第一義諦研析-09-20) | Live |
+| BL-0280 | 2026-09-20 | TinyURL (全球顶级路由网络 DA 94) | 海外及繁体 | D3.js 全球禅宗知识图谱交互路由 | [/graph](https://chanzong.space/graph) | [TinyURL (全球顶级路由网络 DA 94)发布](https://tinyurl.com/2bce8oeo) | Live |
+| BL-0279 | 2026-09-20 | Cl1p.net (全球知名在线便签 DA 70) | 国内 | 禅宗知识库 130 部核心经典全景导航索引 | [/classics](https://chanzong.space/classics) | [Cl1p.net (全球知名在线便签 DA 70)发布](https://cl1p.net/chanzong-classics-index) | Live |
+| BL-0278 | 2026-09-20 | Termbin (全球终端文献平台 DA 68) | 海外及繁体 | Chanzong Knowledge Base C... | [/classics](https://chanzong.space/classics) | [Termbin (全球终端文献平台 DA 68)发布](https://termbin.com/k900y) | Live |
+| BL-0277 | 2026-09-20 | Paste.rs (Rust社区极简平台 DA 65) | 海外及繁体 | 黄檗传心法要：终日吃饭未曾咬一粒米心法剖析 | [/classics/huangbo](https://chanzong.space/classics/huangbo) | [Paste.rs (Rust社区极简平台 DA 65)发布](https://paste.rs/KbfQ0) | Live |
+| BL-0276 | 2026-09-20 | Debian Paste (全球开源根域名 DA 91) | 国内 | 六祖坛经机缘品白话研析与法达公案考据 | [/classics/liuzutan-jing](https://chanzong.space/classics/liuzutan-jing) | [Debian Paste (全球开源根域名 DA 91)发布](https://paste.debian.net/hidden/bec95604) | Live |
+| BL-0275 | 2026-09-20 | Bundlephobia (开源生态技术平台 DA 72) | 海外及繁体 | Bundlephobia 开源数字人文包结构分析报... | [/about](https://chanzong.space/about) | [Bundlephobia (开源生态技术平台 DA 72)发布](https://bundlephobia.com/package/@willsunagency/chanzong-corpus) | Live |
+| BL-0274 | 2026-09-20 | Unpkg (全球知名开源分发平台 DA 85) | 海外及繁体 | Unpkg 实时分发：禅宗知识库 130 部经典结... | [/concepts](https://chanzong.space/concepts) | [Unpkg (全球知名开源分发平台 DA 85)发布](https://unpkg.com/@willsunagency/chanzong-corpus@1.0.0/README.md) | Live |
+| BL-0273 | 2026-09-20 | JSDelivr (全球顶级开源CDN根域名 DA 91) | 海外及繁体 | JSDelivr CDN 官方镜像：禅宗知识库全量... | [/graph](https://chanzong.space/graph) | [JSDelivr (全球顶级开源CDN根域名 DA 91)发布](https://www.jsdelivr.com/package/npm/@willsunagency/chanzong-corpus) | Live |
+| BL-0272 | 2026-09-20 | Yarnpkg (全球开源包权威平台 DA 88) | 海外及繁体 | Yarn 官方收录 @willsunagency/... | [/classics](https://chanzong.space/classics) | [Yarnpkg (全球开源包权威平台 DA 88)发布](https://yarnpkg.com/package/@willsunagency/chanzong-corpus) | Live |
+| BL-0271 | 2026-09-20 | NPM Registry (全球官方根域名 DA 94) | 海外及繁体 | 禅宗知识库开源数字人文语料库官方包发布 (@wil... | [](https://chanzong.space) | [NPM Registry (全球官方根域名 DA 94)发布](https://www.npmjs.com/package/@willsunagency/chanzong-corpus) | Live |
 | BL-0270 | 2026-09-16 | 豆瓣 (Douban DA 88+) | 国内 | 豆瓣外部书评《六祖坛经修证见地》学术深度探讨回应 | [/classics/jingangsanmeijing](https://chanzong.space/classics/jingangsanmeijing) | [豆瓣 (Douban DA 88+)发布](https://book.douban.com/review/1249631/) | Live |
 | BL-0269 | 2026-09-16 | 豆瓣 (Douban DA 88+) | 国内 | 豆瓣外部书评《浅窥如来藏唯识学》学术深度探讨回应 | [/classics/shengmanjing](https://chanzong.space/classics/shengmanjing) | [豆瓣 (Douban DA 88+)发布](https://book.douban.com/review/5892609/) | Live |
 | BL-0268 | 2026-09-16 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 現代人的喧囂與定力：重讀《阿什塔瓦克拉之歌》中的本... | [/zh-tw/classics/zhiyuelu](https://chanzong.space/zh-tw/classics/zhiyuelu) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/現代人的喧囂與定力重讀阿什塔瓦克拉之歌中的本心智慧-09-16) | Live |

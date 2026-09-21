@@ -399,7 +399,7 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
 };
 
 /* ===================== 8a. 语音朗读工具栏按钮（紧凑版，放在右上角） ===================== */
-export const AudioToolbarButton: React.FC<{ rawContent: string }> = ({ rawContent }) => {
+export const AudioToolbarButton: React.FC<{ rawContent?: string; audioText?: string }> = ({ rawContent = '', audioText }) => {
   const { t } = useLang();
   const [playing, setPlaying] = useState(false);
   const [paused, setPaused] = useState(false);
@@ -420,7 +420,8 @@ export const AudioToolbarButton: React.FC<{ rawContent: string }> = ({ rawConten
 
   if (!supported) return null;
 
-  const cleanText = rawContent
+  const textSource = audioText || rawContent || '';
+  const cleanText = textSource
     .replace(/^#+\s*/gm, '')
     .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/^>\s*/gm, '')

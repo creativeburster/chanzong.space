@@ -4,6 +4,14 @@
 
 ---
 
+> [!NOTE]
+> **🐙 官方 GitHub 仓库与账号规范 (GitHub Repository Info)**
+> * 官方仓库地址：`https://github.com/creativeburster/chanzong.space`
+> * 默认生产分支：`master`
+> * **迁移规范**：本项目已全量迁移至新 GitHub 账号 `creativeburster`。旧账号 `gstar-byte` 已废弃，严禁在任何脚本、配置、文档或外链中引用旧账号地址。
+
+---
+
 ## 🎯 一、 项目定位与长期战略愿景 (模式 B 战略)
 
 1. **宏大长远眼光**：

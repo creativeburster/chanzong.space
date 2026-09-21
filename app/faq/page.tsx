@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import FAQPageClient from './FAQPageClient';
 import { STATS } from '@/lib/stats';
-import { ZEN_FAQS } from '@/lib/taxonomy';
+import { ZEN_FAQS } from '@/lib/taxonomy/faqs';
 
 export const metadata: Metadata = {
   title: `禅宗解惑问答 · ${STATS.faqs}则深层疑难答疑 | 禅宗知识库`,

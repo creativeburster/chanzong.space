@@ -23,14 +23,16 @@ import {
 } from '@/components/ClassicCards';
 import { InlineGlossaryTooltip, injectGlossaryMarkups } from '@/components/InlineGlossaryTooltip';
 import { BilingualReader } from '@/components/BilingualReader';
-import { extractCards } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
+import type { PersonItem, ConceptItem, MethodItem, KoanItem, FAQItem } from '@/lib/taxonomy';
 import { ZEN_GLOSSARY } from '@/lib/glossary';
 import { getCollectionByClassicId } from '@/lib/collections';
+import { splitClassicVolumes, ClassicVolume } from '@/lib/splitVolumes';
 import {
   ChevronLeft,
   ChevronRight,
+  BookOpen,
+  Layers,
   Sparkles,
   Copy,
   Check,
@@ -52,13 +54,28 @@ import { LinkCardGrid } from '@/components/InternalLinkCards';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
+import { ExtractedCards, extractCards, extractAudioText, extractOriginalParagraphs, extractGuidesAndQuotes } from '@/lib/extractCards';
+
 interface ClassicViewerProps {
   meta: ClassicItem;
-  htmlContent: string;
-  rawContent: string;
   manifest: ClassicItem[];
   prevItem: ClassicItem | null;
   nextItem: ClassicItem | null;
+  extracted?: ExtractedCards;
+  audioText?: string;
+  originalParagraphs?: string[];
+  summaryInfo?: { guide?: string; quotes?: string; gist?: string };
+  volumesMeta?: { index: number; title: string }[];
+  guideHtml?: string;
+  children?: React.ReactNode;
+  relPersons?: PersonItem[];
+  relConcepts?: ConceptItem[];
+  relMethods?: MethodItem[];
+  relQas?: KoanItem[];
+  relFaqs?: FAQItem[];
+  // 保留可选 rawContent/htmlContent 仅作兜底兼容
+  rawContent?: string;
+  htmlContent?: string;
 }
 
 export type ReadingTheme = 'paper' | 'bamboo' | 'night';
@@ -117,30 +134,25 @@ export const THEME_STYLES: Record<
   },
 };
 
-function getSafeHtmlChunk(html: string, ratio: number): string {
-  if (ratio >= 1 || html.length < 3000) return html;
-  const targetLen = Math.ceil(html.length * ratio);
-  const closingTags = ['</p>', '</h2>', '</h3>', '</div>', '</blockquote>', '</ul>', '</ol>', '</li>'];
-  let bestPos = -1;
-  for (const tag of closingTags) {
-    const pos = html.indexOf(tag, targetLen);
-    if (pos !== -1 && (bestPos === -1 || pos < bestPos)) {
-      bestPos = pos + tag.length;
-    }
-  }
-  if (bestPos !== -1 && bestPos <= html.length) {
-    return html.slice(0, bestPos);
-  }
-  return html;
-}
-
 export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   meta,
-  htmlContent,
-  rawContent,
   manifest,
   prevItem,
   nextItem,
+  extracted: propExtracted,
+  audioText: propAudioText,
+  originalParagraphs: propOriginalParagraphs,
+  summaryInfo: propSummaryInfo,
+  volumesMeta: propVolumesMeta,
+  guideHtml: propGuideHtml,
+  relPersons = [],
+  relConcepts = [],
+  relMethods = [],
+  relQas = [],
+  relFaqs = [],
+  children,
+  htmlContent,
+  rawContent,
 }) => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -148,11 +160,26 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   const [theme, setTheme] = useState<ReadingTheme>('paper');
   const [viewMode, setViewMode] = useState<ClassicViewMode>('original');
   const [tocOpen, setTocOpen] = useState(false);
-  const [displayRatio, setDisplayRatio] = useState(0.15);
   const [faqsExpanded, setFaqsExpanded] = useState(false);
   const [savedProgress, setSavedProgress] = useState<number | null>(null);
   const [showProgressBanner, setShowProgressBanner] = useState(false);
   const { t, tHtml, isTraditional, getHref } = useLang();
+
+  // 分卷解析与状态（若传入 volumesMeta 则直接使用，避免客户端解析整书大 HTML）
+  const parsedVolumes = useMemo(() => {
+    if (propVolumesMeta) return null;
+    return htmlContent ? splitClassicVolumes(htmlContent) : null;
+  }, [htmlContent, propVolumesMeta]);
+
+  const isMultiVolume = propVolumesMeta ? propVolumesMeta.length > 1 : Boolean(parsedVolumes?.isMultiVolume);
+  const activeVolumesMeta = useMemo(() => {
+    if (propVolumesMeta) return propVolumesMeta;
+    if (parsedVolumes) return parsedVolumes.volumes.map(v => ({ index: v.index, title: v.title }));
+    return [];
+  }, [propVolumesMeta, parsedVolumes]);
+
+  const [selectedVolumeIdx, setSelectedVolumeIdx] = useState(0);
+  const [volumeMode, setVolumeMode] = useState<'single' | 'all'>('all');
 
   // 1. 初始化读取用户偏好主题、阅读进度与阅读模式
   useEffect(() => {
@@ -234,15 +261,33 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
     }
   };
 
-  const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id));
-  const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
-  const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
-  const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
-  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
   const parentCollection = useMemo(() => getCollectionByClassicId(meta.id), [meta.id]);
 
-  // 自动提取卡片数据
-  const extracted = extractCards(rawContent);
+  // 自动提取卡片数据（优先使用服务端预提取轻量结构）
+  const extracted = useMemo(() => {
+    if (propExtracted) return propExtracted;
+    if (rawContent) return extractCards(rawContent);
+    return { verses: [], koans: [], practices: [], modernApp: [], keyQuotes: [] };
+  }, [propExtracted, rawContent]);
+
+  const activeAudioText = useMemo(() => {
+    if (propAudioText) return propAudioText;
+    if (rawContent) return extractAudioText(rawContent);
+    return '';
+  }, [propAudioText, rawContent]);
+
+  const activeOriginalParagraphs = useMemo(() => {
+    if (propOriginalParagraphs) return propOriginalParagraphs;
+    if (rawContent) return extractOriginalParagraphs(rawContent).slice(0, 40);
+    return [];
+  }, [propOriginalParagraphs, rawContent]);
+
+  const activeSummaryInfo = useMemo(() => {
+    if (propSummaryInfo) return propSummaryInfo;
+    if (rawContent) return extractGuidesAndQuotes(rawContent);
+    return undefined;
+  }, [propSummaryInfo, rawContent]);
+
   const relQuotes = relPersons.flatMap((p) => p.quotes || []);
 
   const handleCopyAttribution = () => {
@@ -282,11 +327,36 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   // 生僻字标注与 HTML 转换（默认自然注音与解释）
   const classicGlossary = useMemo(() => ZEN_GLOSSARY[meta.id] || [], [meta.id]);
 
-  const renderedHtml = useMemo(() => {
-    const chunk = getSafeHtmlChunk(htmlContent, displayRatio);
-    const withGlossary = injectGlossaryMarkups(chunk, classicGlossary, true);
+  // 渲染导读 HTML (仅多卷模式时独立渲染)
+  const renderedGuideHtml = useMemo(() => {
+    if (propGuideHtml) return propGuideHtml;
+    if (!parsedVolumes || !parsedVolumes.isMultiVolume) return '';
+    const withGlossary = injectGlossaryMarkups(parsedVolumes.guideHtml, classicGlossary, true);
     return isTraditional ? tHtml(withGlossary) : withGlossary;
-  }, [htmlContent, displayRatio, isTraditional, tHtml, classicGlossary]);
+  }, [propGuideHtml, parsedVolumes, isTraditional, tHtml, classicGlossary]);
+
+  // 渲染正文 HTML (未传 children 时的兜底渲染逻辑，确保 100% 完整直出)
+  const renderedVolumeHtml = useMemo(() => {
+    if (children) return '';
+    if (!htmlContent) return '';
+    if (!parsedVolumes || !parsedVolumes.isMultiVolume) {
+      const withGlossary = injectGlossaryMarkups(htmlContent, classicGlossary, true);
+      return isTraditional ? tHtml(withGlossary) : withGlossary;
+    }
+
+    if (volumeMode === 'single') {
+      const curVol = parsedVolumes.volumes[selectedVolumeIdx] || parsedVolumes.volumes[0];
+      const withGlossary = injectGlossaryMarkups(curVol?.html || '', classicGlossary, true);
+      return isTraditional ? tHtml(withGlossary) : withGlossary;
+    } else {
+      // 全卷展开模式
+      const allVolHtml = parsedVolumes.volumes
+        .map((v) => v.html)
+        .join('\n\n<div class="my-8 border-b border-dashed border-amber-900/20"></div>\n\n');
+      const withGlossary = injectGlossaryMarkups(allVolHtml, classicGlossary, true);
+      return isTraditional ? tHtml(withGlossary) : withGlossary;
+    }
+  }, [children, parsedVolumes, volumeMode, selectedVolumeIdx, htmlContent, isTraditional, tHtml, classicGlossary]);
 
   return (
     <div data-theme={theme} className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
@@ -404,7 +474,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                   <span>{t('目录')}</span>
                 </button>
 
-                <AudioToolbarButton rawContent={rawContent} />
+                <AudioToolbarButton rawContent={rawContent} audioText={activeAudioText} />
 
                 <button
                   onClick={handleCopyAttribution}
@@ -419,28 +489,28 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           </div>
         </div>
 
-        {/* 续读浮动提示 Banner */}
+        {/* 恢复阅读进度横幅 */}
         {showProgressBanner && savedProgress !== null && (
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full mt-4 animate-fade-in">
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-amber-900 dark:text-amber-200 text-xs sm:text-sm shadow-sm">
-              <div className="flex items-center space-x-2">
-                <BookmarkCheck className="w-4 h-4 text-amber-700 shrink-0" />
-                <span>{t('您上次阅读至约')} <strong>{savedProgress}%</strong> {t('位置')}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <button
-                  onClick={resumeReading}
-                  className="px-3 py-1 rounded-lg bg-amber-900 text-white font-semibold text-xs hover:bg-amber-800 transition-colors shadow-sm"
-                >
-                  {t('继续阅读')}
-                </button>
-                <button
-                  onClick={() => setShowProgressBanner(false)}
-                  className="p-1 text-amber-700/60 hover:text-amber-900"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
+          <div className="bg-amber-900/90 backdrop-blur-sm text-white px-4 py-2.5 text-xs sm:text-sm flex items-center justify-between sticky top-14 z-20 shadow-md">
+            <div className="flex items-center space-x-2">
+              <BookmarkCheck className="w-4 h-4 text-amber-300" />
+              <span>
+                {t('上次读到约')} <strong className="text-amber-200">{savedProgress}%</strong> {t('处')}
+              </span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <button
+                onClick={resumeReading}
+                className="px-3 py-1 bg-amber-600 hover:bg-amber-500 rounded-lg font-semibold text-xs transition-colors"
+              >
+                {t('继续阅读')}
+              </button>
+              <button
+                onClick={() => setShowProgressBanner(false)}
+                className="p-1 hover:bg-white/10 rounded-lg transition-colors text-white/70 hover:text-white"
+              >
+                <X className="w-4 h-4" />
+              </button>
             </div>
           </div>
         )}
@@ -457,37 +527,157 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                 id="sec-article"
                 className={`${currentTheme.cardBg} p-4 sm:p-10 md:p-14 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-md sm:shadow-lg transition-colors duration-300`}
               >
-                {/* 正文内容 */}
-                <div
-                  className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
-                    fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
-                  }`}
-                  dangerouslySetInnerHTML={{ __html: renderedHtml }}
-                />
+                {isMultiVolume ? (
+                  <>
+                    {/* 现代白话导读与重点区域 */}
+                    {renderedGuideHtml && (
+                      <div
+                        className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed pb-8 border-b ${currentTheme.cardBorder} mb-8 ${
+                          fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
+                        }`}
+                        dangerouslySetInnerHTML={{ __html: renderedGuideHtml }}
+                      />
+                    )}
 
-                {displayRatio < 1 && (
-                  <div className="mt-8 flex flex-col items-center gap-3">
-                    <div className="w-full max-w-xs h-1.5 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-amber-600 rounded-full transition-all" style={{ width: `${Math.round(displayRatio * 100)}%` }} />
+                    {/* 卷级导航工具条 Volume Navigator */}
+                    <div className={`p-4 sm:p-5 rounded-2xl border ${currentTheme.cardBorder} bg-amber-500/5 mb-8 space-y-3`}>
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div className="flex items-center space-x-2">
+                          <span className="px-2.5 py-1 rounded-lg bg-amber-900 text-white text-xs font-bold shrink-0">
+                            {t('第')} {selectedVolumeIdx + 1} / {activeVolumesMeta.length} {t('卷')}
+                          </span>
+                          <h3 className={`text-base sm:text-lg font-bold font-serif-zen ${currentTheme.bannerText} truncate`}>
+                            {t(activeVolumesMeta[selectedVolumeIdx]?.title || '')}
+                          </h3>
+                        </div>
+
+                        {/* 翻卷与模式控制 */}
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <button
+                            disabled={selectedVolumeIdx <= 0}
+                            onClick={() => {
+                              setSelectedVolumeIdx(prev => Math.max(0, prev - 1));
+                              setVolumeMode('single');
+                              scrollToSection('sec-volume-content');
+                            }}
+                            className="px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs font-semibold disabled:opacity-30 hover:border-amber-700 transition-all flex items-center gap-1"
+                          >
+                            <ChevronLeft className="w-3.5 h-3.5" />
+                            <span>{t('上一卷')}</span>
+                          </button>
+
+                          {/* 卷次下拉快速跳转 */}
+                          <select
+                            value={selectedVolumeIdx}
+                            onChange={(e) => {
+                              setSelectedVolumeIdx(Number(e.target.value));
+                              setVolumeMode('single');
+                              scrollToSection('sec-volume-content');
+                            }}
+                            className={`px-2.5 py-1.5 rounded-lg border ${currentTheme.cardBorder} bg-transparent text-xs font-semibold cursor-pointer max-w-[150px] sm:max-w-[220px] truncate`}
+                          >
+                            {activeVolumesMeta.map((v, i) => (
+                              <option key={i} value={i} className="text-zinc-900">
+                                {t(v.title)}
+                              </option>
+                            ))}
+                          </select>
+
+                          <button
+                            disabled={selectedVolumeIdx >= activeVolumesMeta.length - 1}
+                            onClick={() => {
+                              setSelectedVolumeIdx(prev => Math.min(activeVolumesMeta.length - 1, prev + 1));
+                              setVolumeMode('single');
+                              scrollToSection('sec-volume-content');
+                            }}
+                            className="px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs font-semibold disabled:opacity-30 hover:border-amber-700 transition-all flex items-center gap-1"
+                          >
+                            <span>{t('下一卷')}</span>
+                            <ChevronRight className="w-3.5 h-3.5" />
+                          </button>
+
+                          {/* 模式切换 */}
+                          <button
+                            onClick={() => setVolumeMode(m => m === 'single' ? 'all' : 'single')}
+                            className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-all border ${
+                              volumeMode === 'all'
+                                ? 'bg-amber-900 text-white border-amber-900 shadow-sm'
+                                : 'border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300'
+                            }`}
+                          >
+                            {volumeMode === 'single' ? t('展开全卷') : t('单卷精读')}
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <button
-                        onClick={() => setDisplayRatio((r) => Math.min(1, r + 0.15))}
-                        className="px-5 py-2.5 rounded-xl bg-amber-900 text-white text-[14px] font-semibold hover:bg-amber-800 transition-all shadow-md"
-                      >
-                        {t('加载更多')}
-                      </button>
-                      <button
-                        onClick={() => setDisplayRatio(1)}
-                        className="px-5 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 text-[14px] font-semibold hover:border-amber-700 hover:text-amber-800 transition-all"
-                      >
-                        {t('显示全部')}
-                      </button>
+
+                    {/* 单卷模式下的隐藏/显示样式控制 */}
+                    {volumeMode === 'single' && (
+                      <style>{`
+                        #sec-volume-content .volume-section { display: none !important; }
+                        #sec-volume-content .volume-section[data-volume-idx="${selectedVolumeIdx + 1}"] { display: block !important; }
+                      `}</style>
+                    )}
+
+                    {/* 卷正文区域 */}
+                    <div
+                      id="sec-volume-content"
+                      className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
+                        fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
+                      }`}
+                    >
+                      {children ? children : <div dangerouslySetInnerHTML={{ __html: renderedVolumeHtml }} />}
                     </div>
-                    <p className="text-xs text-zinc-400">
-                      {t('已显示')} {Math.round(displayRatio * 100)}% · {t('约')} {Math.round(rawContent.length * displayRatio)} / {rawContent.length} {t('字')}
-                    </p>
-                  </div>
+
+                    {/* 单卷模式下的卷末引导翻页卡片 */}
+                    {volumeMode === 'single' && activeVolumesMeta.length > 0 && (
+                      <div className={`mt-10 p-5 sm:p-6 rounded-2xl border ${currentTheme.cardBorder} bg-black/5 dark:bg-white/5 flex flex-col sm:flex-row items-center justify-between gap-4`}>
+                        <div className="text-center sm:text-left">
+                          <p className="text-xs text-zinc-400 font-semibold">{t('本卷已阅毕')}</p>
+                          <p className={`text-sm font-bold font-serif-zen ${currentTheme.bannerText}`}>
+                            {t(activeVolumesMeta[selectedVolumeIdx]?.title || '')}
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          {selectedVolumeIdx > 0 && (
+                            <button
+                              onClick={() => {
+                                setSelectedVolumeIdx(prev => prev - 1);
+                                scrollToSection('sec-volume-content');
+                              }}
+                              className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 text-xs font-semibold hover:border-amber-700 transition-all flex items-center gap-1.5"
+                            >
+                              <ChevronLeft className="w-4 h-4" />
+                              <span>{t('上一卷')}</span>
+                            </button>
+                          )}
+                          {selectedVolumeIdx < activeVolumesMeta.length - 1 && (
+                            <button
+                              onClick={() => {
+                                setSelectedVolumeIdx(prev => prev + 1);
+                                scrollToSection('sec-volume-content');
+                              }}
+                              className="px-5 py-2 rounded-xl bg-amber-900 text-white text-xs font-semibold hover:bg-amber-800 transition-all shadow-md flex items-center gap-1.5"
+                            >
+                              <span>{t('进入下一卷')}</span>
+                              <ChevronRight className="w-4 h-4" />
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {/* 单篇传统渲染（100% 完整直出，彻底杜绝渐进式截断） */}
+                    <div
+                      className={`prose prose-zinc max-w-none font-serif-zen ${currentTheme.proseText} leading-relaxed ${
+                        fontSize === 'large' ? 'text-[18px] sm:text-[21px] space-y-5 sm:space-y-6' : 'text-[16px] sm:text-[19px] space-y-3.5 sm:space-y-4'
+                      }`}
+                    >
+                      {children ? children : <div dangerouslySetInnerHTML={{ __html: renderedVolumeHtml }} />}
+                    </div>
+                  </>
                 )}
               </article>
 
@@ -533,6 +723,8 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             <BilingualReader
               classicId={meta.id}
               rawContent={rawContent}
+              originalParagraphs={activeOriginalParagraphs}
+              summaryInfo={activeSummaryInfo}
               viewMode={viewMode}
               fontSize={fontSize}
               currentTheme={currentTheme}
@@ -714,6 +906,36 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                   </button>
                 ))}
               </div>
+
+              {/* 多卷专属分卷目录 */}
+              {isMultiVolume && activeVolumesMeta.length > 0 && (
+                <div className="mt-6 pt-4 border-t border-zinc-200/50 dark:border-zinc-800">
+                  <div className="flex items-center space-x-1.5 mb-2 px-1 text-xs font-bold text-amber-800 dark:text-amber-300">
+                    <Layers className="w-3.5 h-3.5" />
+                    <span>{t('全书分卷目录')} ({activeVolumesMeta.length} {t('卷')})</span>
+                  </div>
+                  <div className="space-y-1 max-h-64 overflow-y-auto pr-1">
+                    {activeVolumesMeta.map((v, i) => (
+                      <button
+                        key={i}
+                        onClick={() => {
+                          setSelectedVolumeIdx(i);
+                          setTocOpen(false);
+                          scrollToSection('sec-volume-content');
+                        }}
+                        className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-medium flex items-center justify-between transition-all ${
+                          selectedVolumeIdx === i
+                            ? 'bg-amber-900 text-white font-bold'
+                            : `${currentTheme.secondaryText} hover:bg-black/5 dark:hover:bg-white/5`
+                        }`}
+                      >
+                        <span className="truncate pr-2">{t(v.title)}</span>
+                        <span className="opacity-60 shrink-0">#{i + 1}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className={`pt-4 border-t ${currentTheme.cardBorder} text-xs ${currentTheme.secondaryText} text-center`}>
