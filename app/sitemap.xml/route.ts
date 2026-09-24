@@ -16,6 +16,7 @@ export function GET(_req: NextRequest) {
   const staticPages = [
     { path: '/', freq: 'weekly', prio: 1.0 },
     { path: '/books', freq: 'weekly', prio: 0.95 },
+    { path: '/collections', freq: 'weekly', prio: 0.95 },
     { path: '/concepts', freq: 'monthly', prio: 0.9 },
     { path: '/methods', freq: 'monthly', prio: 0.9 },
     { path: '/koan', freq: 'monthly', prio: 0.9 },

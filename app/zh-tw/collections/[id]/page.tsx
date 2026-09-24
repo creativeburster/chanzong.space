@@ -29,7 +29,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const desc = `${summaryTrad} 包含 ${col.books.length} 門根本法門，傳承禪宗宗門精義。`;
 
   return {
-    title: convertToTrad(`${col.title}（菩提達摩根本法門總匯）`),
+    title: convertToTrad(`${col.title} · ${col.subtitle}`),
     description: desc,
     alternates: {
       canonical: `/zh-tw/collections/${col.id}`,

@@ -37,7 +37,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
           <Breadcrumb
             items={[
               { label: t('书籍'), href: getHref('/books') },
-              { label: t('典籍合集'), href: getHref('/books') },
+              { label: t('典籍合集'), href: getHref('/collections') },
               { label: t(collection.title) }
             ]}
           />
@@ -49,14 +49,14 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
             <div className="flex flex-wrap items-center gap-3 mb-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-600/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
                 <Scroll className="w-3.5 h-3.5" />
-                {t(collection.cbetaRef || '大正藏汇编')}
+                {t(collection.cbetaRef || '大藏经汇编')}
               </span>
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
                 {t(collection.period)} · {t(collection.author)}
               </span>
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 flex items-center gap-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
-                {t('六门齐备 · 100% 收录')}
+                {t(`共收录 ${collection.books.length} 部典籍`)}
               </span>
             </div>
 
@@ -99,11 +99,11 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
               <div className="flex items-center gap-2">
                 <Compass className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                 <h2 className="text-xl sm:text-2xl font-serif font-bold text-slate-900 dark:text-slate-100">
-                  {t('少室六门法脉体系')}
+                  {t(`${collection.title} 典籍法脉`)}
                 </h2>
               </div>
               <span className="text-xs text-slate-500 dark:text-slate-400">
-                {t(`共 ${collection.books.length} 门根本法门`)}
+                {t(`共 ${collection.books.length} 篇修持典籍`)}
               </span>
             </div>
 
@@ -142,7 +142,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
                   <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
                     <span className="flex items-center gap-1">
                       <BookOpen className="w-3.5 h-3.5" />
-                      {t('达摩面壁正传')}
+                      {t(collection.author)}
                     </span>
                     <span className="text-amber-600 dark:text-amber-400 font-medium">
                       {t('进入精读 →')}

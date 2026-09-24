@@ -27,7 +27,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const desc = `${col.summary.slice(0, 140)} 包含 ${col.books.length} 门根本法门，传承禅宗宗门精义。`;
 
   return {
-    title: `${col.title}（菩提达摩根本法门总汇）`,
+    title: `${col.title} · ${col.subtitle}`,
     description: desc,
     alternates: {
       canonical: `/collections/${col.id}`,

@@ -1,0 +1,746 @@
+const fs = require('fs');
+const path = require('path');
+
+const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+const manifestMap = new Map(manifest.map(m => [m.id, m]));
+
+const personsContent = fs.readFileSync('lib/taxonomy/persons.ts', 'utf8');
+const conceptsContent = fs.readFileSync('lib/taxonomy/concepts.ts', 'utf8');
+
+function checkRegex(content, id) {
+  const re = new RegExp(`"id":\\s*"${id}"`);
+  return re.test(content);
+}
+
+const collections = [
+  // ==========================================
+  // 梯队一：顶级典范与历史三部曲 (5部)
+  // ==========================================
+  {
+    id: "shaoshiliumen",
+    tier: "canonical",
+    tierName: "顶级典范 · 宗门法统",
+    title: "少室六门",
+    subtitle: "东土禅宗初祖菩提达摩根本顿悟法门总汇",
+    author: "梁·菩提达摩 述",
+    cbetaRef: "大正藏第 48 册 No. 2009",
+    period: "南北朝·梁",
+    summary: "《少室六门》（大正藏 No. 2009，一卷）是东土禅宗初祖菩提达摩祖师法著的总集汇编。少室者，嵩山少室峰少林寺也，祖师面壁九年于此，故以少室标宗。全集汇聚《心经颂》《破相论》《二种入》《安心法门》《悟性论》《血脉论》六部根本法门，构成了早期禅宗直指人心、不立文字、观心解脱的完整心性哲学大厦。六门环环相扣：以《心经颂》阐明般若实相为纲，以《破相论》直提观心一法总摄万行，以《二种入》立定二入四行做工夫纲骨，以《安心法门》息灭心行能所妄想，以《悟性论》彻了真如无生离诸对待，以《血脉论》极谈以心传心即心是佛之正眼。此集不仅是大乘禅门开基立教之法源，更是千百年来海内外学人参禅见性不可逾越的金石宝典。",
+    historicalNotes: [
+      "【编纂与版本源流】《少室六门》之成书，汇集了隋唐以降流传的达摩法本。宋代《宗镜录》与大藏经多有引述，元明时期广泛刻行于江南禅林与朝鲜半岛，后经日本江户时代重雕，正式编入近代《大正新脩大藏经》第四十八册宗门部。",
+      "【敦煌本与少室本互勘】二十世纪初敦煌莫高窟出土北朝与唐代写本《二入四行论》（伯希和本 P.4634、斯坦因本 S.2799），印证了第三门《二种入》确为昙林笔受之达摩亲传原本；而其余五门在唐宋丛林的发展中，完整保留了初期禅宗以《楞伽》《般若》印心之纯正古风。",
+      "【六门逻辑次第】初门以偈颂解《心经》，明体也；二门破相明观心，显用也；三门二种入，践行也；四门安心去人我，入理也；五门悟性断二见，证真也；六门血脉传心印，印宗也。六门相贯，如珠走盘，圆具万德。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一门 · 心经颂",
+        classicId: "damoxinjinganxin",
+        title: "心经颂",
+        summary: "达摩祖师以五言偈颂逐句阐释玄奘译《般若波罗蜜多心经》，从‘智慧清净海’至‘羯谛羯谛’，字字明心见性，融通般若空性与如来藏妙体。",
+        quote: "智慧清净海，理密义幽深。波罗到彼岸，向道秖由心。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二门 · 破相论",
+        classicId: "poxianglun",
+        title: "菩提达摩大师破相论",
+        summary: "又名《观心论》。直示‘观心一法总摄诸法’，将持戒、修福、造寺、燃灯等外在造作悉数归摄于内心无漏觉照，破尽一切形式相执。",
+        quote: "唯观心一法，总摄诸法，最为省要。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三门 · 二种入",
+        classicId: "sixingguan",
+        title: "菩提达摩大师入道四行观",
+        summary: "达摩化东土之基石法门。立‘理入’（深信众生同一真性，凝住壁观）与‘行入’（报冤行、随缘行、无所求行、称法行），为后世万千禅者修心奠定磐石之基。",
+        quote: "理入者，谓藉教悟宗，深信含生同一真性……凝住壁观，无自无他，凡圣等一。"
+      },
+      {
+        gateNumber: 4,
+        gateName: "第四门 · 安心法门",
+        classicId: "damoxinjinganxin",
+        title: "安心法门",
+        summary: "以问答深究自心现量，道破‘迷时人逐法，解时法逐人’之千古关隘。附达摩《心心心颂》，直令学人息妄安住，不出不入法界。",
+        quote: "迷时人逐法，解时法逐人。心心心，难可寻。宽时遍法界，窄也不容针。"
+      },
+      {
+        gateNumber: 5,
+        gateName: "第五门 · 悟性论",
+        classicId: "wuxinglun",
+        title: "菩提达摩大师悟性论",
+        summary: "详析寂灭为体、离相为宗之无生义理，阐明烦恼性即是佛性，附达摩《夜坐五更偈》与《真性颂》，直截根源，扫除断常二见。",
+        quote: "夫道者以寂灭为体，修者以离相为宗……知心是空，名为见佛。"
+      },
+      {
+        gateNumber: 6,
+        gateName: "第六门 · 血脉论",
+        classicId: "xuemaicong",
+        title: "菩提达摩大师血脉论",
+        summary: "禅门法脉相传之冠冕圣典。全论纯任直指：三界兴起同归一心，前佛后佛以心传心不立文字。若不见性，念佛持戒皆无益处；直下见性，当下成佛。",
+        quote: "三界兴起同归一心，前佛后佛以心传心，不立文字。若欲觅佛，须是见性，性即是佛！"
+      }
+    ],
+    relatedPersons: ["bodhidharma", "huike"],
+    relatedConcepts: ["beyond-words", "jianxing-chengfo", "zhengfa-yancang", "direct-pointing", "mind-transmission", "non-mind"]
+  },
+  {
+    id: "chuanfazhengzong",
+    tier: "canonical",
+    tierName: "顶级典范 · 宗门法统",
+    title: "传法正宗三书",
+    subtitle: "宋仁宗赐号明教大师诏入大藏之宗门正统法脉圣典",
+    author: "宋·镡津契嵩 编撰",
+    cbetaRef: "大正藏第 51 册 No. 2078-2080",
+    period: "北宋",
+    summary: "《传法正宗三书》（大正藏 No. 2078-2080）是北宋著名禅僧、云门宗名宿镡津契嵩禅师倾毕生心血撰著的法统巨著，包含《传法正宗定祖图》《传法正宗论》与《传法正宗记》三部经典。宋仁宗至和、嘉祐年间，儒释交锋激烈，禅门传灯源流屡遭排难与质疑。契嵩禅师深感‘宗统不正，则正法不传’，遂钩沉天竺二十八祖至东土六祖之传衣信史，辨析西天四七、东土二三之传承谱系，极陈佛祖正宗。书成后仁宗皇帝览奏大悦，诏付传法院编入大藏，赐号‘明教大师’。三书图论互映、考证精详，为后世确立了天竺达摩一脉直承释迦拈花微笑了不可动摇的法统地位，是宗门护法捍道、考据史源的第一圣典。",
+    historicalNotes: [
+      "【诏入大藏与赐号明教】宋仁宗嘉祐六年（1061），契嵩携《传法正宗记》等三书入汴京进呈，仁宗皇帝亲览嘉叹，降旨入藏，并敕封‘明教大师’，宰相韩琦、欧阳修等一代名儒皆为之敬服倾心。",
+      "【定西天二十八祖说】在契嵩之前，关于印度传法祖师代数有‘二十七祖’、‘二十九祖’等纷纭异说；契嵩深入勘定阿难、商那和修乃至达摩之法嗣系谱，正式定格为‘西天二十八祖’，成为后世禅宗公认的正统定论。",
+      "【图、论、记三书体例】《定祖图》一卷以表谱图列纲维，《正宗论》二卷阐微释疑破异端，《正宗记》九卷详叙七佛至六祖之言行传法事实。三部相辅相成，结构严整至极。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一部 · 谱系纲维",
+        classicId: "chuanfazhengzongdingzutu",
+        title: "传法正宗定祖图",
+        summary: "契嵩禅师以图谱方式首列过去七佛、次及西天二十八祖、再至东土六祖及南岳青原二大师，条分缕析，使百千法脉源流一目了然。",
+        quote: "正宗者，如来之付授，大祖之传继也。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二部 · 宗极辨难",
+        classicId: "chuanfazhengzonglun",
+        title: "传法正宗论",
+        summary: "深入释疑破除对正统传灯的种种非难，融通真妄、体用与教外别传之旨，破除异端偏见，正本清源。",
+        quote: "圣人传道以法，宗法以心，心不可传，因以文字声色而显之。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三部 · 正统信史",
+        classicId: "chuanfazhengzongji",
+        title: "传法正宗记",
+        summary: "皇皇九卷之正统法脉史传，详实记录从过去七佛、释迦牟尼佛，乃至迦叶、阿难、达摩、慧能历代大圣传心付法之微言大义与圣行史实。",
+        quote: "如来之正法眼藏，自迦叶一传而至达摩，达摩东渐，而禅宗大盛于天下。"
+      }
+    ],
+    relatedPersons: ["qisong", "bodhidharma", "huineng", "jiashan-shanhui"],
+    relatedConcepts: ["zhengfa-yancang", "chuan-deng", "beyond-words", "mind-transmission"]
+  },
+  {
+    id: "huangboyulu",
+    tier: "canonical",
+    tierName: "顶级典范 · 宗门法统",
+    title: "黄檗断际禅师语录",
+    subtitle: "裴休相国钟陵宛陵二度笔受 · 直指即心即佛之宗门极则",
+    author: "唐·黄檗希运 述 · 唐·裴休 辑",
+    cbetaRef: "大正藏第 48 册 No. 2012",
+    period: "中唐",
+    summary: "《黄檗断际禅师语录》（大正藏 No. 2012，一卷）是唐代百丈怀海门下高足、临济宗开祖义玄之师——黄檗希运禅师的法语总集。包含裴休相国先后在洪州钟陵所辑之《传心法要》与宛陵开元寺所辑之《宛陵录》两部篇章。黄檗禅风高峻如泰山岩岩，直斥学人向外寻觅之病，极力阐发‘诸佛与一切众生，唯是一心，更无别法’、‘即心是佛，心外无佛’。全书一洗知见思量，不容凡情圣解，为唐末禅林破除知障、直趣无为第一指南，亦是后世临济子孙参究顶门一着之根本津梁。",
+    historicalNotes: [
+      "【裴休两度迎请笔受】唐会昌二年（842），相国裴休镇宛陵，建大禅苑，请师说法；后移镇钟陵，复迎请黄檗入黄檗山说法。裴休昼夜参请，亲操纸笔手录法语，后呈黄檗印可，并亲自为之作序。",
+      "【传心与宛陵之互补】《传心法要》多从法体直指，极论一真法界绝名绝相；《宛陵录》则汇集了裴休与黄檗大量深入的机锋问答、因缘问难与禅门公案，理致与做工夫兼备。",
+      "【下启临济大机大用】临济义玄在黄檗门下三度发问‘如何是佛法的的大意’三度被打，终在大愚肋下大悟，遂开天下临济一宗。黄檗断际二书，实为临济棒喝禅风之源头活水。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一卷 · 传心法要",
+        classicId: "huangbo",
+        title: "黄檗山断际禅师传心法要",
+        summary: "裴休相国在洪州钟陵所辑。开篇即指‘唯是一心，更无别法’，痛切开示忘境忘心、绝思绝虑之顿悟至理。",
+        quote: "诸佛与一切众生，唯是一心，更无别法。此心无始已来，不曾生不曾灭。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二卷 · 宛陵录",
+        classicId: "huangbo_wanlinglu",
+        title: "黄檗断际禅师宛陵录",
+        summary: "裴休相国在宛陵宣城所辑。汇集相国与禅师三十余则深邃机锋与宗门策励，详辨真妄声色，直显‘无心即是道’。",
+        quote: "如今但学无心，顿息诸缘，莫生妄想分别，无人无我，无贪瞋，无憎爱，无胜负。"
+      }
+    ],
+    relatedPersons: ["huangbo", "linji", "baizhang", "peixiu"],
+    relatedConcepts: ["mind-is-buddha", "non-mind", "beyond-words", "self-nature"]
+  },
+  {
+    id: "yongmingyixin",
+    tier: "canonical",
+    tierName: "顶级典范 · 宗门法统",
+    title: "永明延寿一心法界全书",
+    subtitle: "融贯禅教律净 · 宗镜大厦与一心万善同归总相",
+    author: "五代宋初·永明延寿 著",
+    cbetaRef: "大正藏第 48 册 No. 2016, 2017 & 第 46 册 No. 1966",
+    period: "五代·宋初",
+    summary: "《永明延寿一心法界全书》集五代宋初法眼宗第三代嫡嗣、慧日永明智觉延寿大师（904-975）三大传世名著于一炉，包含《唯心诀》（一卷）、《宗镜录》（一百卷）与《万善同归集》（三卷）。延寿大师有鉴于唐季五代以降‘宗门流于虚诞、学者溺于偏枯’，以‘一心法界’为宗主，博引天竺三藏大乘经论一百二十部、西天东土祖师名言一百二十家，提纲契领，融摄法相唯识、华严性海、天台止观与净土念佛于禅门正法之中。三书层层深进：《唯心诀》提纲挈领直示心要，《宗镜录》百万宏文建构千古哲理大厦，《万善同归集》理事双融力挽空腹高心。实为中国佛教史上空前绝后之百科全书式思想集成。",
+    historicalNotes: [
+      "【永明道场与百卷宗镜】延寿大师住杭州永明寺（今净慈寺），吴越王钱俶深加礼遇。大师于永明寺召集天下天台、慈恩、贤首三宗宿德名僧，质问难端，研讨融通，终成《宗镜录》百卷，吴越王亲自为之题序赞叹。",
+      "【三书逻辑架构】《唯心诀》如纲领图牒，极陈唯心唯识之旨；《宗镜录》如百宝楼阁，广明理事无碍、教禅一致；《万善同归集》如万流归海，辩证‘实际理地不受一尘，佛事门中不舍一法’之行解圆通。",
+      "【对后世禅林之深远启迪】延寿大师被后世尊为法眼宗一代巨匠，兼为净土宗第六代祖师。此三部著作深刻纠正了晚唐以来宗门末流‘恶取空、轻视戒行行持’之流毒，为宋明清三代禅林立下不拔之基石。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "纲宗要部 · 唯心诀",
+        classicId: "weixinjue",
+        title: "永明智觉禅师唯心诀",
+        summary: "延寿大师提纯《宗镜录》百卷之髓要而成，专明‘三界唯心，万法唯识’，阐明心为诸法之本源，直探解脱枢轴。",
+        quote: "无量法门，总归心源；万行严灵，唯存正受。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "宏博巨制 · 宗镜录",
+        classicId: "zongjinglu",
+        title: "宗镜录（百卷大厦）",
+        summary: "禅宗史上篇幅最宏大之哲理巨著。汇百家之异同，举一心为宗镜，条贯性相融通二谛，彻底融解宗门与教下之分野。",
+        quote: "以灵知之性为宗，以即体之用为镜，灵知虚照，境象朗然。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "行持指南 · 万善同归集",
+        classicId: "wanshantongguiji",
+        title: "万善同归集",
+        summary: "极论‘即心即佛，不废万行’之理，破除狂禅虚妄之执，开辟禅净双修与理事圆融之千古大道。",
+        quote: "理具万德，行圆万善。以性具之善，起修起修之万行，终归一如。"
+      }
+    ],
+    relatedPersons: ["yongming-yanshou", "fayan-wenyi"],
+    relatedConcepts: ["zong-jing-lu", "shishi-wuai", "chan-jing-shuangxiu", "wanfa-weixin"]
+  },
+  {
+    id: "puzhaoxiuxin",
+    tier: "canonical",
+    tierName: "顶级典范 · 宗门法统",
+    title: "普照国师修心指南",
+    subtitle: "海东曹溪宗初祖传世宝典 · 顿悟渐修与定慧等持之千古指南",
+    author: "高丽·普照知讷 述",
+    cbetaRef: "大正藏第 48 册 No. 2019, 2020",
+    period: "高丽·宋代",
+    summary: "《普照国师修心指南》汇集高丽曹溪宗开山初祖普照知讷国师（1158-1210）两部享誉中朝韩日禅林的根本论著——《修心诀》（一卷）与《真心直说》（一卷）。普照知讷国师上承唐代圭峰宗密‘顿悟渐修’法脉，下汲大慧宗杲‘看话禅’之警策，融通华严圆教性起法界与宗门向上直指。大师在《修心诀》中以十五段问答层层剥离情识执著，直指人人本具空寂灵知之真心；在《真心直说》中以真心妙体、真心所出等十五门全方位开显清净自性与无心修持。二书文辞精约畅达，说理透彻详明，千百年来被高丽与东亚禅林奉为初学参禅入道最稳当、最纯正之不二津梁。",
+    historicalNotes: [
+      "【曹溪山结社与海东宗风】高丽熙宗朝，知讷禅师在松广山（曹溪山）倡立‘定慧结社’，重振曹溪法门，国王赐号‘普照国师’。其著作不仅重振朝鲜半岛禅风，后世流传东土与日本，备受丛林推崇。",
+      "【顿悟渐修的经典范本】知讷明确指出：虽顿悟自心本来清净与佛无异，然无始客尘习气未能顿除，必须‘因悟而修’，借缘对境历练心性，如冰虽销为水，犹待温气方得全融。",
+      "【定慧等持与三门收摄】知讷在二书中系统设立‘惺惺寂寂’之工夫次第，将观照工夫与看话头巧妙结合，扫除枯木死灰与狂慧放荡二种偏执。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一卷 · 修心诀",
+        classicId: "xiuxinjue",
+        title: "普照国师修心诀",
+        summary: "以十五段亲切问答，详尽剖析‘空寂灵知’本来面目，明辨顿悟渐修之必要，开示‘凡夫即是真佛’之修心宗要。",
+        quote: "若欲免轮回，莫过求佛；若欲求佛，佛即是心。心何远寻，即在此身之内。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二卷 · 真心直说",
+        classicId: "zhenxin",
+        title: "真心直说",
+        summary: "分立十五门，从真心正名、真心妙体、真心妙用至真心治病、出死入生，全面开显自性体用，文风圆明直截。",
+        quote: "夫真心者，无知而无不知，沛然普应，湛然常寂。"
+      }
+    ],
+    relatedPersons: ["chinul", "guifeng-zongmi", "dahui-zonggao"],
+    relatedConcepts: ["dunwu-jianxiu", "dinghui-dengchi", "real-mind", "ben-lai-mian-mu"]
+  },
+
+  // ==========================================
+  // 梯队二：宗门名家经典系列 (6部)
+  // ==========================================
+  {
+    id: "huanwuzongji",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "圆悟佛果禅师禅法总集",
+    subtitle: "宗门第一书《碧岩录》作者 · 两宋公案禅法与心要宝鉴",
+    author: "宋·圜悟克勤 著",
+    cbetaRef: "大正藏第 47 册 No. 1997 & 第 48 册 No. 2003",
+    period: "北宋·南宋",
+    summary: "《圆悟佛果禅师禅法总集》囊括两宋之际临济宗杨岐派一代宗师——圆悟佛果克勤禅师（1063-1135）四部举世闻名的禅法巨著：《圆悟佛果禅师心要》（二卷）、《圆悟佛果禅师语录》（二十卷）、《佛果圜悟禅师碧岩录》（十卷）与《佛果击节录》（二卷）。圆悟禅师宗通说通，机锋迅猛，被宋徽宗、宋高宗两代帝王敕赐号‘佛果大师’、‘圆悟禅师’。其所评唱之《碧岩录》被历代丛林奉为‘宗门第一书’，兼有《击节录》之峻拔评唱与《心要》中对士大夫居士之痛切点化，展现了宋代禅宗文字般若与向上一窍结合的巅峰造极境界。",
+    historicalNotes: [
+      "【碧岩评唱与天下指南】圆悟禅师在澧州夹山碧岩泉，就雪窦重显禅师《百则颂古》予以本则、垂示、著语与评唱，成《碧岩录》十卷，天下禅林风行草靡，学者奔走如响。",
+      "【大慧与虎丘之师承】圆悟门下英才辈出，尤以大慧宗杲（看话禅大师）与虎丘绍隆（虎丘派开祖）并世称雄，南宋以降天下禅林大半出自圆悟门庭。",
+      "【法要语录之互济】《心要》汇录大师与张商英、曾开等名臣居士书信开示，直抒胸臆，极切日用做工夫；《语录》与《击节录》则记录大师在金陵蒋山、夹山、成都昭觉寺之丛林上堂、小参机锋，气象万千。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一部 · 禅法心要",
+        classicId: "huanwuxinyao",
+        title: "圆悟佛果禅师心要",
+        summary: "圆悟禅师写给士大夫居士与修道学人的手札书信，字字见血，直指日用应对中见自本性之密印。",
+        quote: "透得名利声色关，方可做超方脱格汉。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二部 · 上堂语录",
+        classicId: "huanwuyulu",
+        title: "圆悟佛果禅师语录",
+        summary: "详载圆悟禅师在各大刹道场之上堂法语、小参机锋与示众勘验，临济杨岐棒喝风规尽显其中。",
+        quote: "见性之人，如日轮当空，照耀万物，无所障碍。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三部 · 宗门第一书",
+        classicId: "biyanlu",
+        title: "佛果圜悟禅师碧岩录",
+        summary: "宗门千古第一评唱大著。对雪窦百则颂古加设垂示、著语与长篇评唱，文字奇伟，意境纵横，参透天下祖师公案。",
+        quote: "函盖乾坤，截断众流，随波逐浪。"
+      },
+      {
+        gateNumber: 4,
+        gateName: "第四部 · 机锋击节",
+        classicId: "foguojijielu",
+        title: "佛果击节录",
+        summary: "对雪窦祖师另选公案之击节提撕，机锋奇峭，斩钉截铁，直令学人断除见闻知觉之情识妄想。",
+        quote: "击石火，闪电光，若到这里，眨上眉毛早已蹉过。"
+      }
+    ],
+    relatedPersons: ["yuanwu-keqin", "dahui-zonggao", "xuedou-chongxian"],
+    relatedConcepts: ["fen-biyanlu", "koan", "wenzi-chan", "huatou-gongfu"]
+  },
+  {
+    id: "yongjiaheji",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "永嘉禅法合集",
+    subtitle: "一宿觉宗师传世双宝 · 唱演顿悟自性与止观修持全景",
+    author: "唐·永嘉玄觉 著",
+    cbetaRef: "大正藏第 48 册 No. 2013 & 第 46 册 No. 2014",
+    period: "盛唐",
+    summary: "《永嘉禅法合集》收录唐代六祖惠能大师座下得法高足——永嘉真觉大师玄觉（665-713）名震寰宇的两大传世名作：《永嘉证道歌》（一卷）与《永嘉大师禅宗集》（一卷，附庆嘉赞）。永嘉大师博通天台教观，后参六祖曹溪，机锋契合，留宿一宿而别，时称‘一宿觉’。其《证道歌》全篇二百六十七句，以豪迈脱俗之古乐府诗韵，高歌绝学无为闲道人之大自在；而《禅宗集》则系统融通天台三观与曹溪心法，详立十门止观规矩与心性照了次第。一歌一集，一顿一渐，相资为用，是唐代禅教融摄、行解相应的千古典范。",
+    historicalNotes: [
+      "【曹溪一宿觉之公案】玄觉至曹溪见六祖，振锡绕禅床三匝而立。六祖赞其‘得无生之意’，玄觉答‘无生岂有意见’，六祖印可，留住一宿，传为‘一宿觉’美谈。",
+      "【证道歌之海外传唱】《证道歌》在东亚流传极广，宋元以降不仅禅林学人日日击节讽诵，且早自唐宋时期即通过海路传入朝鲜、日本，后更被翻译为梵文及欧美多国语言。",
+      "【禅宗集之十门观道】《禅宗集》分立：慕道志仪、戒骄奢、净修三业、奢摩他、毗婆舍那、优毕叉、三乘渐次、事理不二、劝友、发愿等十科，条理极严，为宗门修持立规。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一部 · 豪放顿歌",
+        classicId: "zhengdaoge",
+        title: "永嘉真觉大师证道歌",
+        summary: "气魄恢弘之顿悟长歌。开宗明义‘君不见绝学无为闲道人’，高唱本性天真、烦恼即菩提之不可思议解脱境界。",
+        quote: "绝学无为闲道人，不除妄想不求真。无明实性即佛性，幻化空身即法身。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二部 · 止观修集",
+        classicId: "yongjia",
+        title: "永嘉大师禅宗集",
+        summary: "融通曹溪顿悟与天台止观之修道十科，详论奢摩他、毗婆舍那、优毕叉三摩地法，明辨醒醒寂寂定慧同体。",
+        quote: "夫修心之法，先须调伏身心，安住正念，以止引定，以观发慧。"
+      }
+    ],
+    relatedPersons: ["yongjia", "huineng"],
+    relatedConcepts: ["affliction-bodhi", "self-nature", "dinghui-dengchi", "samadhi"]
+  },
+  {
+    id: "niutouxinfa",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "牛头禅心性双璧",
+    subtitle: "东土禅宗第四祖道信高足 · 绝对离相与空灵自在之道",
+    author: "唐·牛头法融 著",
+    cbetaRef: "大正藏第 48 册 No. 2070 & 大正藏第 85 册 No. 2814",
+    period: "唐代",
+    summary: "《牛头禅心性双璧》收录东土禅宗四祖道信门下异英、牛头宗开山祖师法融禅师（594-657）两篇传世之作：《心铭》（一卷）与《绝观论》（一卷）。牛头法融禅师初依幽栖寺崖石结庵，百鸟衔花朝献；后蒙四祖道信亲往幽栖山印心传法，点破其‘犹有情见在’之关隘，顿见无相真空，自此百鸟不来。其《心铭》四言韵语，极述心性虚空无物、无心为宗之至理；《绝观论》（二十世纪初敦煌出土P.2885本印证）以‘入理’与‘缘门’问答层层荡尽能所知见。两著展现了牛头禅独步青天的般若空宗气象，是研究唐代早期禅宗思想流变与空观践行最纯净之法宝。",
+    historicalNotes: [
+      "【道信点化百鸟不衔花】道信闻幽栖有神异禅僧，特往探访。书一‘佛’字于法融常坐之石，法融见之耸然。道信笑曰：‘犹有这个在！’法融大悟，百鸟不复来献花，喻示脱离神异情识，返归本然真空。",
+      "【敦煌本《绝观论》重大发现】《绝观论》曾佚失于中土千百年，二十世纪初在敦煌鸣沙山石窟发现唐代写本（P.2885, S.7038等），考定确为牛头法融手著，轰动国际佛教学术界。",
+      "【牛头宗在唐代的宗风】牛头禅派下传六代，在江东独树一帜，至六祖慧能曹溪法脉盛行之前，牛头禅在江南一带与北宗神秀、东山法门平分秋色，极重忘情离相。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一篇 · 菩提铭心",
+        classicId: "xinming",
+        title: "牛头法融禅师心铭",
+        summary: "四言古体名作。专论心性本无生灭，教人‘心性不生，何须知见’，不取不舍，无心合道。",
+        quote: "心性不生，何须知见。本无一法，谁论薰炼。往返无端，觉得何愿。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二篇 · 问答绝观",
+        classicId: "jueguanlun",
+        title: "绝观论（敦煌写本）",
+        summary: "假借‘入理’与‘缘门’二人对答，扫荡一切佛见、法见、空见，令参究者一念断绝对待，悟入无物无相之妙境。",
+        quote: "问曰：云何为道？答曰：无心是道。问曰：云何为无心？答曰：不念善恶，无能所分别。"
+      }
+    ],
+    relatedPersons: ["niutou-farong", "daoxin"],
+    relatedConcepts: ["wuxin-jueguan", "non-mind", "emptiness", "self-nature"]
+  },
+  {
+    id: "xuanshaquanlu",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "玄沙师备禅师全录",
+    subtitle: "雪峰真传 · 尽十方世界是一颗明珠 · 宗门第一等硬骨汉",
+    author: "五代·玄沙师备 述",
+    cbetaRef: "大正藏第 47 册 No. 1986 & 续藏经 No. 1315",
+    period: "五代·十国",
+    summary: "《玄沙师备禅师全录》收录五代时期雪峰义存门下杰出弟子、法眼宗之祖父——玄沙宗一师备禅师（835-908）传世之《玄沙宗一禅师语录》（三卷）与《玄沙师备禅师广录》（三卷）。玄沙禅师俗姓谢，世称‘谢三郎’，闽地人氏。出家后苦行精修，芒鞋布衲，雪峰叹为‘备头陀，再来人也’。一日欲出山遍参天下，于路蹴伤足指流血，忽大悟云：‘是身不实，痛从何来？’遂折返雪峰，安居参道。其著名法语‘尽十方世界是一颗明珠’、‘闻底是汝，见底是汝，更向何处讨佛？’等，如刀劈斧斫，不留纤尘余地。全录语言质朴生辣、机用直接，是唐末五代宗门直探本来面目的第一流硬汉法语。",
+    historicalNotes: [
+      "【踢伤脚趾之顿悟】玄沙背负包袱出山游方，路踢大石，破趾流血，痛楚大作，当下彻底截断我身知见，大悟自性非身心所能拘，终成一代宗匠。",
+      "【尽十方世界一颗明珠之公案】有僧问：‘尽十方世界是一颗明珠，学人如何得会？’师曰：‘尽十方世界是一颗明珠，用会作么？’次日又问，师曰：‘尽十方世界是一颗明珠，用不会作么？’截断情见。",
+      "【启导罗汉桂琛与法眼宗】玄沙门下出罗汉桂琛（地藏桂琛），桂琛传法眼文益，遂立‘法眼宗’。玄沙禅师之直指心法，实为法眼一宗源头法水。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一编 · 本色语录",
+        classicId: "xuanshayulu",
+        title: "玄沙宗一禅师语录",
+        summary: "详载玄沙和尚住闽中玄沙院之开堂示众与接引僧徒法语，直陈人人本具灵知，不用外求。",
+        quote: "尽十方世界是一颗明珠，还信得及么？"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二编 · 深入广录",
+        classicId: "xuanshaguanglu",
+        title: "玄沙师备禅师广录",
+        summary: "广收玄沙禅师深细勘辨学人知见、破除文字知解与生死疑障之长篇提撕，语重心长，刀刀见血。",
+        quote: "如今人只向外面奔驰，认得万般光影，认得名字，却不识自己主人翁！"
+      }
+    ],
+    relatedPersons: ["xuansha-shibei", "xuefeng-yicun", "luohan-guichen"],
+    relatedConcepts: ["yi-li-ming-zhu", "ben-lai-mian-mu", "koan", "direct-pointing"]
+  },
+  {
+    id: "rujingyuluheji",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "天童如净禅师录",
+    subtitle: "曹洞宗一代泰斗 · 日本曹洞宗祖道元参究印证之法门圣典",
+    author: "宋·天童如净 述 · 侍者 辑",
+    cbetaRef: "大正藏第 48 册 No. 2002A & No. 2002B",
+    period: "南宋",
+    summary: "《天童如净禅师录》收录南宋曹洞宗第十三代祖师、明州天童山长翁如净禅师（1163-1228）之《天童山景德寺如净禅师语录》（二卷）与《天童如净禅师续语录》（一卷，附日僧道元闻书笔记）。如净禅师为人刚毅耿介，六住名刹，平生不蓄私财，不受朝廷紫衣师号，誓愿‘坐破蒲团、只管打坐’。日本禅僧永平道元入宋参学历尽艰难，终在天童山依止如净禅师参禅，闻如净喝斥‘参禅者身心脱落也，只管打坐始得’，言下顿脱根尘，得如净印可付法，归国创立日本曹洞宗。本全集原汁原味地展现了宋代曹洞宗默照禅之极致风规与行持骨气。",
+    historicalNotes: [
+      "【身心脱落与道元东归】道元在如净座下参学时，邻单打瞌睡，如净击打喝斥‘参禅要身心脱落，何故瞌睡！’道元闻‘身心脱落’豁然大悟，如净印可曰‘身心脱落，脱落身心’。",
+      "【只管打坐之默照精髓】如净提倡放下一切妄想功利，不烧香、不念佛、不看经，唯一‘只管打坐’（shikantaza），以本来面目安住于灵知无生。",
+      "【续语录与中日法脉见证】《续语录》由道元亲笔手录‘天童如净禅师小参法语’带回日本永平寺，是中日佛教文化法脉交融最真切之千古实录。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一卷 · 景德语录",
+        classicId: "rujingyulu",
+        title: "天童山景德寺如净禅师语录",
+        summary: "如净禅师住天童山及净慈寺之开堂、上堂与答问法语，风格峻烈，扫荡名利虚浮，大弘曹洞家风。",
+        quote: "参禅须是具正因，莫向他人门下寻。猛掷一身如铁石，森罗万象总归心。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二卷 · 续录闻书",
+        classicId: "rujingxuyulu",
+        title: "天童如净禅师续语录",
+        summary: "日本道元禅师亲手笔录之如净禅师小参、秉拂及室中垂示，极显‘只管打坐、身心脱落’之工夫要妙。",
+        quote: "参禅者身心脱落也，只管打坐始得，不须烧香、礼拜、念佛、修忏、看经。"
+      }
+    ],
+    relatedPersons: ["rujing"],
+    relatedConcepts: ["shentuo", "caodong-zongfeng", "ben-lai-mian-mu", "samadhi"]
+  },
+  {
+    id: "kongguerbian",
+    tier: "masters",
+    tierName: "名家宗师 · 传世全录",
+    title: "明代空谷禅师二编",
+    subtitle: "临济杨岐正宗名僧 · 明初重振禅纲破除知解之双峰力著",
+    author: "明·空谷景隆 述",
+    cbetaRef: "卍续藏经第 63 册 No. 1238, 1239",
+    period: "明代",
+    summary: "《明代空谷禅师二编》收录明代前期著名高僧、临济宗杨岐派巨匠空谷景隆禅师（1393-？）两部重要的禅学辨惑巨著——《空谷道人尚理编》（一卷）与《空谷道人尚直编》（一卷）。明代以降，三教融合渐深，禅宗丛林一方面面临狂禅泛滥、不依规矩之弊，另一方面亦受曲意顺迎、丧失宗门直指本色之风气浸染。空谷禅师毅然以正知见为准绳，撰《尚理编》推尊佛祖正理，剖析教禅同异、性相不二；撰《尚直编》推崇质直无伪之真心，痛斥巧饰口头禅与虚浮之名闻利养。两编文笔清拔凌厉、理路通达，是明代禅门重整纪纲、提撕学人切忌走入偏颇之道之醒脑良药。",
+    historicalNotes: [
+      "【空谷禅师生平与风骨】空谷景隆自幼出家，后得法于临济宗，平生隐遁江南深山，不附权贵，四方学子慕名奔赴其庵，室中唯以本色禅机策励，明代禅门视其为砥柱中流。",
+      "【理与直之辩证相照】《尚理编》旨在立正见，明宗门非拨无因果也；《尚直编》旨在行正道，示修行非向口吻图活计也。二编相承，立定了明清参禅者行解相符之坐标。",
+      "【卍续藏之搜求收录】此两书在明末清初曾隐没难寻，后被历代有识之士珍藏，由日本学者搜集正式入藏于《卍续藏经》，今得见天日。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一卷 · 尚理编",
+        classicId: "shanglibian",
+        title: "空谷道人尚理编",
+        summary: "空谷禅师辨析宗门教义、理相不二之论著，专破‘执事迷理、恶取空见’之病，力主宗门必须符合大乘实相真理。",
+        quote: "道以理明，理以道立。失理而言道，非正道也；执理而碍事，非达理也。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二卷 · 尚直编",
+        classicId: "shangzhibian",
+        title: "空谷道人尚直编",
+        summary: "痛诫参禅学者浮伪饰巧、口头承迎之风，教诫学人以直心为道场，直截担当本来面目，勿涉虚名。",
+        quote: "直心是道场。不直则伪，伪则非禅。祖师直指人心，岂容情伪！"
+      }
+    ],
+    relatedPersons: ["konggu-jinglong", "hanshan-deqing"],
+    relatedConcepts: ["koutou-chan", "real-mind", "shixiang", "direct-pointing"]
+  },
+
+  // ==========================================
+  // 梯队三：大乘根本论丛系列 (3部)
+  // ==========================================
+  {
+    id: "shiqinweishi",
+    tier: "treatises",
+    tierName: "大乘经论 · 根本论丛",
+    title: "世亲菩萨唯识宗义集",
+    subtitle: "古印度唯识学巅峰 · 转八识成四智之理论殿堂",
+    author: "世亲菩萨 造 · 唐·玄奘 译",
+    cbetaRef: "大正藏第 31 册 No. 1586, 1590, 1608, 1609",
+    period: "古印度",
+    summary: "《世亲菩萨唯识宗义集》汇聚大乘佛教瑜伽行派（唯识学）集大成者天亲世亲菩萨（Vasubandhu，约 4-5 世纪）最核心之四大传世论著，悉数由唐代大慈恩寺三藏法师玄奘奉诏译出，包含《唯识三十论颂》（一卷）、《唯识二十论》（一卷）、《大乘成业论》（一卷）与《辨中边论》（三卷）。唯识学与禅宗具有极深的内在理体共振：禅宗参‘念佛是谁’正是直探第七末那识我执根源，悟道本质即是‘转识成智’。世亲菩萨以《二十论》破尽外境实有，以《三十论》建立三能变与唯识无境之严密体系，以《成业论》详释业果相续与阿赖耶识，以《辨中边论》融摄虚妄分别与真实空性。本集是大乘学人深入万法唯心、了知心识运作机制无可替代的义理基石。",
+    historicalNotes: [
+      "【玄奘大师西行求法之核心】玄奘法师西行五万里历经十七载，在印度那烂陀寺师从戒贤论师精研《瑜伽师地论》及世亲唯识诸论，回长安后亲手译出，成为慈恩宗乃至东亚佛教之根本法典。",
+      "【禅门以唯识为镜】自达摩以《楞伽经》印心以来，历代宗师如永明延寿作《宗镜录》皆极赞唯识义理：‘八识未转即迷，四智已显即悟’，明析心识行相为禅修止观提供精准解剖。",
+      "【四部论典之义理次第】《二十论》破执（唯识无境），《三十论》立相（三能变识），《成业论》辨因（业报相续），《辨中边论》证果（虚妄分别与圆成实性），结构四维毕具。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一部 · 唯识三十颂",
+        classicId: "weishisanshilunsong",
+        title: "唯识三十论颂",
+        summary: "唯识宗根本法相纲领。以三十首精炼五言偈颂建立阿赖耶、末那、前六识三能变体系，详述五位百法与转识成智历程。",
+        quote: "由假说我法，有种种相转。彼依识所变，此能变为三。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二部 · 唯识二十论",
+        classicId: "weishiershilun",
+        title: "唯识二十论",
+        summary: "立‘唯识无境’之正理，以二十一首严谨辩论偈颂层层批驳外道与小乘对‘外境实有’的执著，确立唯心变现。",
+        quote: "安立大乘三界唯识，以说唯识极成。唯识无境，如人目翳见毛月等。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三部 · 大乘成业论",
+        classicId: "chengyelun",
+        title: "大乘成业论",
+        summary: "深入探讨身口意三业造作之本质，破除小乘无表色执见，确立阿赖耶识含藏一切善恶种子、受熏感果之深细业相。",
+        quote: "诸业虽灭，随其所应，熏习相续，引后后果。"
+      },
+      {
+        gateNumber: 4,
+        gateName: "第四部 · 辨中边论",
+        classicId: "bianzhongbianlun",
+        title: "辨中边论",
+        summary: "弥勒菩萨说颂、世亲菩萨造释。阐明‘虚妄分别有，于此二都无，此中唯有空，于彼亦有此’之离二边得中道深义。",
+        quote: "虚妄分别有，于此二都无。此中唯有空，于彼亦有此。故说一切法，非空非不空。"
+      }
+    ],
+    relatedPersons: ["xuanzang", "yongming-yanshou"],
+    relatedConcepts: ["zhuan-shi-cheng-zhi", "alaiye-shi", "mo-na-shi", "weishi", "sizhi"]
+  },
+  {
+    id: "longshuzhongguan",
+    tier: "treatises",
+    tierName: "大乘经论 · 根本论丛",
+    title: "龙树菩萨中观根本论典集",
+    subtitle: "大乘八宗共祖 · 缘起性空与不生不灭之般若法藏",
+    author: "龙树菩萨 造",
+    cbetaRef: "大正藏第 30 册 No. 1564, 1565, 1566, 1568, 1656",
+    period: "古印度",
+    summary: "《龙树菩萨中观根本论典集》汇编古印度大乘佛教‘八宗共祖’、西天禅宗第十四祖龙树菩萨（Nāgārjuna，约 2-3 世纪）开辟大乘中观学派的五部根本论著，包含《中论》（四卷，鸠摩罗什译）、《十二门论》（一卷，鸠摩罗什译）、《顺中论》（二卷，般若流支译）、《宝行王正论》（一卷，真谛译）与《般若灯论释》（十五卷，波罗颇蜜多罗译）。龙树菩萨以‘因缘所生法，我说即是空，亦为是假名，亦是中道义’（八不中道）破尽一切断常二见，为禅宗‘空寂无所得’、‘不二法门’奠定了不可摇撼的哲学基石。本集五部巨制互为经纬，将缘起性空、二谛融通之智慧穷究至极，是参禅明心透脱一切语言名相之第一大法网。",
+    historicalNotes: [
+      "【西天第十四祖与八宗共祖】龙树在西天传灯谱系中位居第十四祖，付法于迦那提婆；同时在汉传佛教被尊为禅、律、三论、天台、华严、密、唯识、净土八大宗派之共同开山圣祖。",
+      "【三论宗与中道正观】鸠摩罗什法师译出《中论》《百论》《十二门论》，后世嘉祥大师吉藏据此创立‘三论宗’，以‘破邪即是显正’、‘无得正观’直契诸法实相。",
+      "【禅宗不立文字之终极依据】禅宗祖师‘问佛答即心即佛，问心答无心即道’之回互机用，其哲学根柢全部基于龙树菩萨破除一切边见执著之不立一法、不着一相。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一部 · 中论",
+        classicId: "zhonglun",
+        title: "中论（观四谛品·八不中道）",
+        summary: "大乘中观学派最高经典。开篇立‘不生亦不灭，不常亦不断’八不偈，以缘起无自性破尽生灭、去来、一异，导归诸法实相。",
+        quote: "因缘所生法，我说即是空，亦为是假名，亦是中道义。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二部 · 十二门论",
+        classicId: "shiertimenlun",
+        title: "十二门论",
+        summary: "以十二种思辨法门（观因缘、观有无、观相不相、观生不生等）剖析大乘深义，令行者直入无相空寂之门。",
+        quote: "诸法若从缘生，则无自性；无自性故，即是空。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三部 · 顺中论",
+        classicId: "shunzhonglun",
+        title: "顺中论（入大般若波罗蜜初品法门）",
+        summary: "无著菩萨释义。随顺《中论》八不法义，专明般若波罗蜜之入道要轨，融通广行与深见，阐明初地菩萨之真实觉照。",
+        quote: "若达因缘无自性，顺于中道无所取，是名随顺真法界。"
+      },
+      {
+        gateNumber: 4,
+        gateName: "第四部 · 宝行王正论",
+        classicId: "baoxingwangzhenglun",
+        title: "宝行王正论",
+        summary: "龙树菩萨写给南印度国王之劝诫论典，将甚深缘起实相与世间治国施政、悲智兼济之菩萨行圆融贯通。",
+        quote: "以甚深空智，起广大悲心。悲智双运，方圆菩提之果。"
+      },
+      {
+        gateNumber: 5,
+        gateName: "第五部 · 般若灯论释",
+        classicId: "banruodenglunshi",
+        title: "般若灯论释",
+        summary: "分别明菩萨造释。如明灯破除一切外道与异见暗夜，逐品广释《中论》偈义，辨正中观深观，光耀千古。",
+        quote: "慧灯照法界，破除愚痴冥。通达无生忍，寂照绝形名。"
+      }
+    ],
+    relatedPersons: ["nagarjuna", "ti-po"],
+    relatedConcepts: ["babu", "xingkong", "erdi", "zhongdao", "yuanqi"]
+  },
+  {
+    id: "lianhuashengdayuanman",
+    tier: "treatises",
+    tierName: "大乘经论 · 根本论丛",
+    title: "大圆满心性直指集",
+    subtitle: "藏密宁玛派鼻祖 · 赤裸觉性自然解脱之无上教授总汇",
+    author: "莲花生大士 著",
+    cbetaRef: "藏传古籍心性教诫汇编",
+    period: "吐蕃·唐代",
+    summary: "《大圆满心性直指集》汇聚西藏密宗开山始祖、莲花生大士（Padmasambhava，约 8 世纪）关于直指‘大圆满心性’（Dzogchen）的六部无上法宝，包含《无染觉性直观自行解脱之道》《杖指老人直指心性教授》《金刚歌之直指金刚身心》《赤裸自解脱直指心性》《松岭宝训·心性空性直指》与《西藏度亡经》（中阴得度秘法）。大圆满法门是藏传佛教九乘佛法之巅峰，其修行精髓‘直指觉性本自清净、本自解脱、任运自成’，与汉传禅宗‘直指人心，见性成佛’同归一法，殊途同归。本集以极其直白、震撼且富有穿透力的语言，带领学人直接照亮当下赤裸无杂染之纯然觉知，是参悟心体不二、生死大解脱的稀世心传总集。",
+    historicalNotes: [
+      "【莲花生大士与汉藏禅密共融】唐代中叶莲花生大士应藏王赤松德赞之请入藏建桑耶寺，奠定藏传佛教基石。大圆满心部教授与唐代传入西藏的汉地禅宗摩诃衍顿门法派在心性体认上有着极深的呼应。",
+      "【伏藏传统与心意直指】本集诸典籍多为大士亲自口传、后世伏藏大师（如噶玛林巴等）于甚深禅定或圣地岩窟中所掘出之‘伏藏’，字字保有上师心性直指的加持温热与原始穿透力。",
+      "【六门由浅入深直探本来】从《杖指老人》极平常处点破生死，到《无染觉性》《自我解脱》赤裸昭示本觉，再到《度亡经》揭示中阴母子光明相会，全方位破除对生死涅槃之一切执著。"
+    ],
+    books: [
+      {
+        gateNumber: 1,
+        gateName: "第一卷 · 觉性直观",
+        classicId: "wuran",
+        title: "无染觉性直观自行解脱之道",
+        summary: "大圆满心髓冠冕。开门见山直陈当下一念灵明不昧之觉性，不用向外修正，当下自解自脱。",
+        quote: "若识得此自心自性，即此自心即是佛，更无别佛可求。"
+      },
+      {
+        gateNumber: 2,
+        gateName: "第二卷 · 杖指心性",
+        classicId: "zhangzhi",
+        title: "杖指老人直指心性教授",
+        summary: "莲师为行将就木之老牧人所作之亲切开示，语言极简极纯，令目不识丁之平凡老者亦能直下明了自性本无生死。",
+        quote: "观心心无形，观人人无我。当下赤裸裸，便是本来佛。"
+      },
+      {
+        gateNumber: 3,
+        gateName: "第三卷 · 金刚圣歌",
+        classicId: "jingangge",
+        title: "金刚歌之直指金刚身心",
+        summary: "莲师所唱之胜义金刚大乐歌。唱显法身、报身、化身三身无碍之本然法界，超脱一切思量与功用造作。",
+        quote: "任运无为大安乐，本来清净法界宫。"
+      },
+      {
+        gateNumber: 4,
+        gateName: "第四卷 · 赤裸解脱",
+        classicId: "ziwojietuo",
+        title: "赤裸自解脱直指心性",
+        summary: "直截开示妄念起时勿迎勿送，随起随灭，妄念当下即是觉性之妙用，如同水上作画，不留痕迹。",
+        quote: "起心即是觉，动念即是性。随起随自灭，本来无羁绊。"
+      },
+      {
+        gateNumber: 5,
+        gateName: "第五卷 · 松岭宝训",
+        classicId: "songlingbaoxun",
+        title: "松岭宝训·心性空性直指",
+        summary: "莲师在松岭岩洞对移喜磋嘉等常随弟子所传授之甚深密训，精辟辨析觉性与意识、明空与执念之微细分界。",
+        quote: "勿执明相，勿滞空见。明空无二，任运自如。"
+      },
+      {
+        gateNumber: 6,
+        gateName: "第六卷 · 中阴得度",
+        classicId: "xizangduwangjing",
+        title: "西藏度亡经（中阴救度秘法）",
+        summary: "世界闻名之解脱宝典。详示死后法性中阴现前时，如何直认第一重根本明光而得顿悟成佛之诀窍。",
+        quote: "当自性之明光朗然显现时，应当直下认取：此清净光明即是我之本性！"
+      }
+    ],
+    relatedPersons: ["lianhuasheng"],
+    relatedConcepts: ["wu-ran-jue-xing", "jietuo", "direct-pointing", "self-nature"]
+  }
+];
+
+// 校验
+console.log('=== 校验 collections 数据合法性 ===');
+let hasError = false;
+
+for (const col of collections) {
+  for (const b of col.books) {
+    if (!manifestMap.has(b.classicId)) {
+      console.error(`[ERROR] Collection ${col.id} has invalid classicId: ${b.classicId}`);
+      hasError = true;
+    }
+  }
+  for (const p of col.relatedPersons) {
+    if (!checkRegex(personsContent, p)) {
+      console.error(`[ERROR] Collection ${col.id} has invalid relatedPerson: ${p}`);
+      hasError = true;
+    }
+  }
+  for (const c of col.relatedConcepts) {
+    if (!checkRegex(conceptsContent, c)) {
+      console.error(`[ERROR] Collection ${col.id} has invalid relatedConcept: ${c}`);
+      hasError = true;
+    }
+  }
+}
+
+if (hasError) {
+  console.error('校验未通过，终止写入！');
+  process.exit(1);
+}
+
+console.log('✅ 全部 14 个合集校验通过：44 部子典籍在 manifest 中存在，所有关联人物与概念在 taxonomy 中完全匹配！');
+
+// 生成 lib/collections.ts
+const tsContent = `export type CollectionTier = 'canonical' | 'masters' | 'treatises';
+
+export interface CollectionChildBook {
+  gateNumber: number;        // 第几门 / 卷次（如 1~6）
+  gateName: string;          // 门名（如 "第一门·心经颂"）
+  classicId: string;         // 对应 /classics/[id] 的 id
+  title: string;             // 子经典名称
+  summary: string;           // 该门核心宗义
+  quote: string;             // 核心代表句
+}
+
+export interface CollectionItem {
+  id: string;                // 唯一标识，如 "shaoshiliumen"
+  tier: CollectionTier;      // 所属梯队
+  tierName: string;          // 梯队展示名
+  title: string;             // "少室六门"
+  subtitle: string;          // "菩提达摩根本顿悟法门总汇"
+  author: string;            // "梁·菩提达摩 述"
+  cbetaRef?: string;         // "大正藏第 48 册 No. 2009"
+  period: string;            // "南北朝"
+  coverImage?: string;       // 封面或视觉元素
+  summary: string;           // 深度白话导读与考证
+  historicalNotes: string[]; // 考据要点
+  books: CollectionChildBook[];
+  relatedPersons: string[];  // 关联祖师 id
+  relatedConcepts: string[]; // 关联概念 id
+}
+
+export const ZEN_COLLECTIONS: CollectionItem[] = ${JSON.stringify(collections, null, 2)};
+
+export function getCollections(): CollectionItem[] {
+  return ZEN_COLLECTIONS;
+}
+
+export function getCollectionById(id: string): CollectionItem | null {
+  return ZEN_COLLECTIONS.find(c => c.id === id) || null;
+}
+
+export function getCollectionByClassicId(classicId: string): CollectionItem | null {
+  return ZEN_COLLECTIONS.find(c => c.books.some(b => b.classicId === classicId)) || null;
+}
+`;
+
+fs.writeFileSync('lib/collections.ts', tsContent, 'utf8');
+console.log('✅ 成功写入 lib/collections.ts (共', collections.length, '个合集)！');

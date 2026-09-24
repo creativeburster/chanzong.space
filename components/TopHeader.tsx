@@ -13,6 +13,7 @@ export const TopHeader: React.FC = () => {
   const navLinks = [
     { href: getHref('/'), label: t('首页') },
     { href: getHref('/books'), label: t('书籍') },
+    { href: getHref('/collections'), label: t('合集') },
     { href: getHref('/concepts'), label: t('概念') },
     { href: getHref('/methods'), label: t('法门') },
     { href: getHref('/koan'), label: t('公案') },
