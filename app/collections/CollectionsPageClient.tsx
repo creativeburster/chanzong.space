@@ -80,7 +80,7 @@ export function CollectionsPageClient({ collections }: CollectionsPageClientProp
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
 
-        <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-10 space-y-8">
+        <main className="flex-1 max-w-[1440px] 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-8 md:py-10 space-y-8">
           <Breadcrumb
             items={[
               { label: t('首页'), href: getHref('/') },
@@ -89,7 +89,7 @@ export function CollectionsPageClient({ collections }: CollectionsPageClientProp
           />
 
           {/* Header 英雄区 */}
-          <header className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur-sm relative overflow-hidden shadow-xs">
+          <header className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 md:p-10 backdrop-blur-sm relative overflow-hidden shadow-xs">
             <div className="absolute top-0 right-0 -mt-10 -mr-10 w-56 h-56 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -103,13 +103,13 @@ export function CollectionsPageClient({ collections }: CollectionsPageClientProp
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 dark:text-amber-100 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-amber-100 tracking-tight">
               {t('典籍合集大厅')}
             </h1>
-            <p className="mt-2 text-base sm:text-lg text-amber-900/80 dark:text-amber-200/80 font-medium">
+            <p className="mt-2 text-base sm:text-lg md:text-xl text-amber-900/80 dark:text-amber-200/80 font-medium">
               {t('宗门三部曲 · 历代名家全书 · 根本论丛专题汇编')}
             </p>
-            <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-3xl">
+            <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-4xl">
               {t('将同一祖师、法脉传绪或具有明确历史合刊源流的多部经典聚合为专题丛书，重现《少室六门》《传法正宗三书》《宗镜百卷大厦》等法脉体系，助行者系统通达宗门博大精深之理境与工夫。')}
             </p>
           </header>
@@ -167,7 +167,7 @@ export function CollectionsPageClient({ collections }: CollectionsPageClientProp
 
           {/* 合集卡片网格 */}
           {filteredCollections.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
               {filteredCollections.map((col) => (
                 <div
                   key={col.id}

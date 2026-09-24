@@ -33,7 +33,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
 
-        <main className="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:px-6 md:py-10 space-y-8">
+        <main className="flex-1 max-w-[1440px] 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-8 md:py-10 space-y-8">
           <Breadcrumb
             items={[
               { label: t('书籍'), href: getHref('/books') },
@@ -43,7 +43,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
           />
 
           {/* 专题 Header 英雄区 */}
-          <header className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur-sm relative overflow-hidden shadow-xs">
+          <header className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-amber-900/20 dark:via-slate-900 border border-amber-500/20 rounded-2xl p-6 sm:p-8 md:p-10 backdrop-blur-sm relative overflow-hidden shadow-xs">
             <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
             
             <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -60,14 +60,14 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 dark:text-amber-100 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-amber-100 tracking-tight">
               {t(collection.title)}
             </h1>
-            <p className="mt-2 text-base sm:text-lg text-amber-900/80 dark:text-amber-200/80 font-medium">
+            <p className="mt-2 text-base sm:text-lg md:text-xl text-amber-900/80 dark:text-amber-200/80 font-medium">
               {t(collection.subtitle)}
             </p>
 
-            <p className="mt-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="mt-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-5xl">
               {t(collection.summary)}
             </p>
           </header>
@@ -107,7 +107,7 @@ export function CollectionDetailClient({ collection }: CollectionDetailClientPro
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className={`grid grid-cols-1 md:grid-cols-2 ${collection.books.length % 3 === 0 || collection.books.length >= 5 ? 'xl:grid-cols-3' : 'xl:grid-cols-2'} gap-5`}>
               {collection.books.map((b) => (
                 <Link
                   key={b.gateNumber}
