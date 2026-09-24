@@ -26,6 +26,7 @@ import { BilingualReader } from '@/components/BilingualReader';
 import { ClassicItem } from '@/lib/data';
 import type { PersonItem, ConceptItem, MethodItem, KoanItem, FAQItem } from '@/lib/taxonomy';
 import { getCollectionByClassicId } from '@/lib/collections';
+import { getCategoriesByClassicId } from '@/lib/categories';
 import { splitClassicVolumes, ClassicVolume } from '@/lib/splitVolumes';
 import {
   ChevronLeft,
@@ -265,6 +266,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   };
 
   const parentCollection = useMemo(() => getCollectionByClassicId(meta.id), [meta.id]);
+  const classicCategories = useMemo(() => getCategoriesByClassicId(meta.id), [meta.id]);
 
   // 自动提取卡片数据（优先使用服务端预提取轻量结构）
   const extracted = useMemo(() => {
@@ -374,6 +376,9 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             <Breadcrumb
               items={[
                 { label: t('经典'), href: getHref('/books') },
+                ...(classicCategories.length > 0
+                  ? [{ label: t(classicCategories[0].name), href: getHref(`/categories/${classicCategories[0].id}`) }]
+                  : []),
                 ...(parentCollection
                   ? [{ label: t(parentCollection.title), href: getHref(`/collections/${parentCollection.id}`) }]
                   : []),
@@ -384,9 +389,23 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
-                  <span className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 inline-block">
-                    {t(meta.category)}
-                  </span>
+                  {classicCategories.length > 0 ? (
+                    classicCategories.map((cat) => (
+                      <Link
+                        key={cat.id}
+                        href={getHref(`/categories/${cat.id}`)}
+                        className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 border border-emerald-500/25 hover:bg-emerald-500/20 transition-all inline-flex items-center gap-1 shadow-2xs"
+                        title={t(cat.subtitle)}
+                      >
+                        <span className="select-none">{cat.icon}</span>
+                        <span>{t(cat.name)}</span>
+                      </Link>
+                    ))
+                  ) : (
+                    <span className="text-[12px] sm:text-[13px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 inline-block">
+                      {t(meta.category)}
+                    </span>
+                  )}
                   {parentCollection && (
                     <Link
                       href={getHref(`/collections/${parentCollection.id}`)}

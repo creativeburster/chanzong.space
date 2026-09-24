@@ -2,6 +2,7 @@ import { NextRequest } from 'next/server';
 import manifest from '@/manifest.json';
 import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
 import { ZEN_COLLECTIONS } from '@/lib/collections';
+import { ZEN_CATEGORIES } from '@/lib/categories';
 
 export const dynamic = 'force-static';
 
@@ -16,6 +17,7 @@ export function GET(_req: NextRequest) {
   const staticPages = [
     { path: '/', freq: 'weekly', prio: 1.0 },
     { path: '/books', freq: 'weekly', prio: 0.95 },
+    { path: '/categories', freq: 'weekly', prio: 0.95 },
     { path: '/collections', freq: 'weekly', prio: 0.95 },
     { path: '/concepts', freq: 'monthly', prio: 0.9 },
     { path: '/methods', freq: 'monthly', prio: 0.9 },
@@ -93,6 +95,16 @@ export function GET(_req: NextRequest) {
       tradPath: `/zh-tw/collections/${col.id}`,
       freq: 'monthly',
       prio: 0.85,
+    });
+  }
+
+  // Categories (11 大经藏分类)
+  for (const cat of ZEN_CATEGORIES) {
+    entries.push({
+      simpPath: `/categories/${cat.id}`,
+      tradPath: `/zh-tw/categories/${cat.id}`,
+      freq: 'monthly',
+      prio: 0.9,
     });
   }
 

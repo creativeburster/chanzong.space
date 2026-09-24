@@ -22,6 +22,7 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   Library,
+  Layers,
 } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 import { ZEN_COLLECTIONS } from '@/lib/collections';
@@ -248,6 +249,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
                   {classicsCount}
+                </span>
+              </Link>
+
+              <Link prefetch={true} href={getHref('/categories')}
+                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                  isActive('/categories')
+                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center space-x-3">
+                  <Layers className="w-5 h-5 text-emerald-400" />
+                  <span>{t('经藏分类')}</span>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
+                  11
                 </span>
               </Link>
 
