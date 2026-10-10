@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     statusBarStyle: 'black-translucent',
     title: '禪宗知識庫',
   },
+  verification: {
+    other: {
+      'msvalidate.01': 'F238CD74AF5EBE0E4362F6C77DD3D999',
+    },
+  },
 };
 
 export default function TradLayout({

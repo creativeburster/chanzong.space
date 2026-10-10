@@ -62,6 +62,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    other: {
+      'msvalidate.01': 'F238CD74AF5EBE0E4362F6C77DD3D999',
+    },
+  },
 };
 
 export const viewport: Viewport = {
@@ -80,6 +85,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <meta name="theme-color" content="#FAF9F6" />
+        {/* Bing Webmaster Tools 验证 */}
+        <meta name="msvalidate.01" content="F238CD74AF5EBE0E4362F6C77DD3D999" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('zen_reading_theme');var d=t==='night'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.setAttribute('data-theme','night');document.documentElement.classList.add('dark');}else if(t==='bamboo'){document.documentElement.setAttribute('data-theme','bamboo');}}catch(e){}})();`,
