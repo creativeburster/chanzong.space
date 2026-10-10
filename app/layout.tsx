@@ -1,6 +1,5 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import { LangProvider } from '@/context/LangContext';
 import { PWAInstallBanner } from '@/components/PWAInstallBanner';
 import { CopyrightCopyHandler } from '@/components/CopyrightCopyHandler';
@@ -86,6 +85,21 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('zen_reading_theme');var d=t==='night'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.setAttribute('data-theme','night');document.documentElement.classList.add('dark');}else if(t==='bamboo'){document.documentElement.setAttribute('data-theme','bamboo');}}catch(e){}})();`,
           }}
         />
+        {/* Google tag (gtag.js) - 按照 Google Search Console 规范置于 <head> 中，用于站长所有权验证与 GA4 分析 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-E33EPY0QV7', { send_page_view: true });
+            `,
+          }}
+        />
       </head>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
         <LangProvider>
@@ -93,18 +107,6 @@ export default function RootLayout({
           <PWAInstallBanner />
           <CopyrightCopyHandler />
         </LangProvider>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E33EPY0QV7');
-          `}
-        </Script>
       </body>
     </html>
   );
