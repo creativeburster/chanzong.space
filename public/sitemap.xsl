@@ -52,14 +52,41 @@
         <div class="container">
           <h1>XML Sitemap · 禅宗知识库</h1>
           <p class="subtitle">本文件为面向搜索引擎的 XML 站点地图。更多信息请访问 <a href="https://sitemaps.org">sitemaps.org</a>。</p>
-          <p class="stats">共 <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> 个页面</p>
+          <xsl:if test="sitemap:sitemapindex">
+            <p class="stats">Sitemap Index · 包含 <xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/> 个分片子站点地图</p>
+            <details class="g-static" open="open">
+              <summary><div class="left"><span>分片站点地图索引 (Sitemap Index)</span><span class="group-badge"><xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/></span></div><span class="arrow">▶</span></summary>
+              <div class="table-wrap"><table><thead><tr><th>子地图分类</th><th>子地图地址 (Sitemap URL)</th><th style="width:240px;">最后更新时间</th></tr></thead><tbody>
+                <xsl:for-each select="sitemap:sitemapindex/sitemap:sitemap">
+                  <tr>
+                    <td style="font-weight:700;color:#0f172a;">
+                      <xsl:choose>
+                        <xsl:when test="contains(sitemap:loc, 'classics')">经典著作 (Classics)</xsl:when>
+                        <xsl:when test="contains(sitemap:loc, 'concepts')">核心概念 (Concepts)</xsl:when>
+                        <xsl:when test="contains(sitemap:loc, 'koans')">禅宗公案 (Koans)</xsl:when>
+                        <xsl:when test="contains(sitemap:loc, 'persons')">历代祖师 (Masters)</xsl:when>
+                        <xsl:when test="contains(sitemap:loc, 'methods')">修持法门 (Methods)</xsl:when>
+                        <xsl:when test="contains(sitemap:loc, 'collections')">典籍合集与分类 (Collections)</xsl:when>
+                        <xsl:otherwise>基础核心页面 (Static Pages)</xsl:otherwise>
+                      </xsl:choose>
+                    </td>
+                    <td><a href="{sitemap:loc}"><xsl:value-of select="sitemap:loc"/></a></td>
+                    <td><xsl:value-of select="sitemap:lastmod"/></td>
+                  </tr>
+                </xsl:for-each>
+              </tbody></table></div>
+            </details>
+          </xsl:if>
 
-          <details class="g-static" open="open">
-            <summary><div class="left"><span>主要页面</span><span class="group-badge"><xsl:value-of select="count(sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))])"/></span></div><span class="arrow">▶</span></summary>
-            <div class="table-wrap"><table><thead><tr><th>URL</th><th style="width:130px;">更新频率</th><th style="width:90px;text-align:center;">优先级</th></tr></thead><tbody>
-              <xsl:for-each select="sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))]"><xsl:call-template name="row"/></xsl:for-each>
-            </tbody></table></div>
-          </details>
+          <xsl:if test="sitemap:urlset">
+            <p class="stats">共 <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> 个页面</p>
+
+            <details class="g-static" open="open">
+              <summary><div class="left"><span>主要页面</span><span class="group-badge"><xsl:value-of select="count(sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))])"/></span></div><span class="arrow">▶</span></summary>
+              <div class="table-wrap"><table><thead><tr><th>URL</th><th style="width:130px;">更新频率</th><th style="width:90px;text-align:center;">优先级</th></tr></thead><tbody>
+                <xsl:for-each select="sitemap:urlset/sitemap:url[not(contains(sitemap:loc,'/classics/')) and not(contains(sitemap:loc,'/concepts/')) and not(contains(sitemap:loc,'/methods/')) and not(contains(sitemap:loc,'/koan/')) and not(contains(sitemap:loc,'/persons/')) and not(contains(sitemap:loc,'/faq#'))]"><xsl:call-template name="row"/></xsl:for-each>
+              </tbody></table></div>
+            </details>
 
           <details class="g-classics">
             <summary><div class="left"><span>经典著作</span><span class="group-badge"><xsl:value-of select="count(sitemap:urlset/sitemap:url[contains(sitemap:loc,'/classics/')])"/></span></div><span class="arrow">▶</span></summary>
@@ -102,6 +129,7 @@
               <xsl:for-each select="sitemap:urlset/sitemap:url[contains(sitemap:loc,'/faq#')]"><xsl:call-template name="row"/></xsl:for-each>
             </tbody></table></div>
           </details>
+          </xsl:if>
 
         </div>
         <div class="footer">© 禅宗知识库 (chanzong.space) · 传承顿悟见性之道</div>

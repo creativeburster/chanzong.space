@@ -4,7 +4,7 @@ import { getCollections } from '@/lib/collections';
 import { CollectionsPageClient } from './CollectionsPageClient';
 
 export const metadata: Metadata = {
-  title: '典籍合集大厅 · 历代宗门著作专题汇编 | 禅宗知识库',
+  title: '典籍合集大厅 · 历代宗门著作专题汇编',
   description: '禅宗知识库典籍合集大厅，系统汇集《少室六门》《传法正宗三书》《永明延寿一心法界全书》《普照国师修心指南》《圆悟克勤禅法总集》《龙树中观根本论典集》等14大宗师经典合集，全方位重现法统源流与修持大厦。',
   alternates: {
     canonical: '/collections',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: '典籍合集大厅 · 历代宗门著作专题汇编 | 禅宗知识库',
+    title: '典籍合集大厅 · 历代宗门著作专题汇编',
     description: '系统汇集14大宗师经典合集，涵盖44部核心典籍。重现少室六门、传法正宗、宗镜大厦等法脉体系。',
   },
 };

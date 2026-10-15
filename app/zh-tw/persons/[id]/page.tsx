@@ -11,12 +11,32 @@ export const dynamicParams = false;
 function EntityJsonLd({ item }: { item: any }) {
   const name = convertToTrad(String(item.name || ''));
   const desc = convertToTrad(String(item.teachings || '')).replace(/\s+/g, ' ').slice(0, 160);
+  const knows = (item.relatedPersons || []).map((rid: string) => {
+    const rp = ZEN_PERSONS.find((p: any) => p.id === rid);
+    return {
+      '@type': 'Person',
+      name: rp ? convertToTrad(rp.name) : rid,
+      url: `https://chanzong.space/zh-tw/persons/${rid}`,
+    };
+  });
+  const subjectOf = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    url: `https://chanzong.space/zh-tw/classics/${bid}`,
+  }));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name,
+    jobTitle: convertToTrad(item.title || ''),
     description: desc,
     url: `https://chanzong.space/zh-tw/persons/${item.id}`,
+    knows: knows.length > 0 ? knows : undefined,
+    subjectOf: subjectOf.length > 0 ? subjectOf : undefined,
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: convertToTrad('禅宗祖师 / 佛教高僧'),
+    },
     inLanguage: 'zh-TW',
   };
   return (

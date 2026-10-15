@@ -12,10 +12,17 @@ function EntityJsonLd({ item }: { item: any }) {
   const desc = String(item.summary || '').replace(/\s+/g, ' ').slice(0, 160);
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Concept',
+    '@type': 'DefinedTerm',
     name,
     description: desc,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: '禅宗核心心性与修持概念库',
+      url: 'https://chanzong.space/concepts',
+    },
+    termCode: item.id,
     url: `https://chanzong.space/concepts/${item.id}`,
+    inLanguage: 'zh-CN',
   };
   return (
     <script

@@ -123,8 +123,10 @@ export default function ClassicPage({ params }: PageProps) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'Book',
+    name: meta.title,
     headline: meta.title,
+    alternateName: meta.cbeta_id ? `${meta.title} (${meta.cbeta_id})` : meta.title,
     author: {
       '@type': 'Person',
       name: meta.author,
@@ -136,10 +138,11 @@ export default function ClassicPage({ params }: PageProps) {
     },
     description: articleSummary.slice(0, 160),
     url: `https://chanzong.space/classics/${meta.id}`,
-    inLanguage: 'zh-CN',
+    inLanguage: ['lzh', 'zh-Hans'],
     genre: meta.category,
     wordCount: meta.word_count,
     dateModified: new Date().toISOString().split('T')[0],
+    ...(meta.cbeta_id ? { identifier: meta.cbeta_id, isPartOf: meta.canon_source } : {}),
   };
 
   // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）

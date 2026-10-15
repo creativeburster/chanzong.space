@@ -136,6 +136,155 @@ export default function PersonDetailPageClient({ params }: PageProps) {
             )}
           </div>
 
+          {/* 1.1 祖师法脉与知识实体档案 (Entity Semantic Infobox - 原生HTML三元组，极速索引) */}
+          <section aria-label="祖师实体关系档案" className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div className="flex items-center space-x-2 text-slate-800 font-bold">
+                <Users className="w-5 h-5 text-indigo-600" />
+                <span className="text-base">{t('📊 祖师法脉与知识实体档案')}</span>
+              </div>
+              <span className="text-xs text-slate-400 font-mono hidden sm:inline">Lineage & Semantic Infobox</span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-700 divide-y divide-slate-100">
+                <tbody>
+                  <tr className="hover:bg-slate-50/60">
+                    <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                      {t('德号尊称')}
+                    </th>
+                    <td className="py-2.5 px-4 font-serif-zen">
+                      {t(person.title)}
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-slate-50/60">
+                    <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                      {t('历史时期')}
+                    </th>
+                    <td className="py-2.5 px-4">
+                      {t(person.era)}
+                    </td>
+                  </tr>
+                  {person.relatedPersons && person.relatedPersons.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('法脉师承')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {person.relatedPersons.map(rid => {
+                            const rp = ZEN_PERSONS.find(p => p.id === rid);
+                            if (!rp) return null;
+                            return (
+                              <Link
+                                prefetch={false}
+                                key={rid}
+                                href={getHref(`/persons/${rid}`)}
+                                className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                              >
+                                {t(rp.name)} ({t(rp.era)})
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {person.relatedBooks && person.relatedBooks.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('传世经典')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {person.relatedBooks.map(bid => {
+                            const actualId = CLASSIC_ALIAS[bid] || bid;
+                            const classic = (manifest as any[]).find((m: any) => m.id === actualId || m.title === bid);
+                            const title = classic ? classic.title : bid;
+                            return (
+                              <Link
+                                prefetch={false}
+                                key={bid}
+                                href={getHref(`/classics/${classic ? classic.id : actualId}`)}
+                                className="text-emerald-700 hover:text-emerald-900 hover:underline bg-emerald-50/80 px-2 py-0.5 rounded text-xs font-medium inline-flex items-center gap-1"
+                              >
+                                <BookOpen className="w-3 h-3 inline" />
+                                《{t(title)}》{classic?.cbeta_id ? `(${classic.cbeta_id})` : ''}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {personConcepts.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('核心义理')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {personConcepts.slice(0, 8).map(c => (
+                            <Link
+                              prefetch={false}
+                              key={c.id}
+                              href={getHref(`/concepts/${c.id}`)}
+                              className="text-purple-700 hover:text-purple-900 hover:underline bg-purple-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(c.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {personMethods.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('修持法门')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {personMethods.slice(0, 6).map(m => (
+                            <Link
+                              prefetch={false}
+                              key={m.id}
+                              href={getHref(`/methods/${m.id}`)}
+                              className="text-amber-800 hover:text-amber-950 hover:underline bg-amber-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(m.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {personKoans.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('代表公案')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {personKoans.slice(0, 5).map(q => (
+                            <Link
+                              prefetch={false}
+                              key={q.id}
+                              href={getHref(`/koan/${q.id}`)}
+                              className="text-rose-700 hover:text-rose-900 hover:underline bg-rose-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(q.question.slice(0, 24))}{q.question.length > 24 ? '...' : ''}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           {/* 1.5 祖师知识图谱微卡片 */}
           <EntityMiniGraph
             entityId={person.id}

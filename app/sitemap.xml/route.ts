@@ -1,145 +1,35 @@
 import { NextRequest } from 'next/server';
-import manifest from '@/manifest.json';
-import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS } from '@/lib/taxonomy';
-import { ZEN_COLLECTIONS } from '@/lib/collections';
-import { ZEN_CATEGORIES } from '@/lib/categories';
+import { SITE_BASE } from '@/lib/sitemap-data';
 
 export const dynamic = 'force-static';
 
 export function GET(_req: NextRequest) {
-  const base = 'https://chanzong.space';
   const now = new Date().toISOString();
 
-  type Entry = { simpPath: string; tradPath: string; freq: string; prio: number };
-  const entries: Entry[] = [];
-
-  // Static pages
-  const staticPages = [
-    { path: '/', freq: 'weekly', prio: 1.0 },
-    { path: '/books', freq: 'weekly', prio: 0.95 },
-    { path: '/categories', freq: 'weekly', prio: 0.95 },
-    { path: '/collections', freq: 'weekly', prio: 0.95 },
-    { path: '/concepts', freq: 'monthly', prio: 0.9 },
-    { path: '/methods', freq: 'monthly', prio: 0.9 },
-    { path: '/koan', freq: 'monthly', prio: 0.9 },
-    { path: '/persons', freq: 'monthly', prio: 0.9 },
-    { path: '/faq', freq: 'monthly', prio: 0.8 },
-    { path: '/practice', freq: 'weekly', prio: 0.85 },
-    { path: '/graph', freq: 'yearly', prio: 0.5 },
-    { path: '/about', freq: 'yearly', prio: 0.4 },
-    { path: '/sitemap', freq: 'monthly', prio: 0.3 },
+  const subSitemaps = [
+    { path: '/sitemaps/classics.xml' },
+    { path: '/sitemaps/concepts.xml' },
+    { path: '/sitemaps/koans.xml' },
+    { path: '/sitemaps/persons.xml' },
+    { path: '/sitemaps/methods.xml' },
+    { path: '/sitemaps/collections.xml' },
+    { path: '/sitemaps/static.xml' },
   ];
-  for (const p of staticPages) {
-    entries.push({
-      simpPath: p.path,
-      tradPath: p.path === '/' ? '/zh-tw' : `/zh-tw${p.path}`,
-      freq: p.freq,
-      prio: p.prio,
-    });
-  }
 
-  // Classics (160 部)
-  for (const m of manifest) {
-    entries.push({
-      simpPath: `/classics/${m.id}`,
-      tradPath: `/zh-tw/classics/${m.id}`,
-      freq: 'yearly',
-      prio: 0.9,
-    });
-  }
-
-  // Concepts (515 个)
-  for (const c of ZEN_CONCEPTS) {
-    entries.push({
-      simpPath: `/concepts/${c.id}`,
-      tradPath: `/zh-tw/concepts/${c.id}`,
-      freq: 'yearly',
-      prio: 0.8,
-    });
-  }
-
-  // Methods (131 种)
-  for (const m of ZEN_METHODS) {
-    entries.push({
-      simpPath: `/methods/${m.id}`,
-      tradPath: `/zh-tw/methods/${m.id}`,
-      freq: 'yearly',
-      prio: 0.8,
-    });
-  }
-
-  // Koans (691 则)
-  for (const k of ZEN_KOANS) {
-    entries.push({
-      simpPath: `/koan/${k.id}`,
-      tradPath: `/zh-tw/koan/${k.id}`,
-      freq: 'yearly',
-      prio: 0.75,
-    });
-  }
-
-  // Persons (238 位)
-  for (const p of ZEN_PERSONS) {
-    entries.push({
-      simpPath: `/persons/${p.id}`,
-      tradPath: `/zh-tw/persons/${p.id}`,
-      freq: 'yearly',
-      prio: 0.8,
-    });
-  }
-
-  // Collections (专题合集)
-  for (const col of ZEN_COLLECTIONS) {
-    entries.push({
-      simpPath: `/collections/${col.id}`,
-      tradPath: `/zh-tw/collections/${col.id}`,
-      freq: 'monthly',
-      prio: 0.85,
-    });
-  }
-
-  // Categories (11 大经藏分类)
-  for (const cat of ZEN_CATEGORIES) {
-    entries.push({
-      simpPath: `/categories/${cat.id}`,
-      tradPath: `/zh-tw/categories/${cat.id}`,
-      freq: 'monthly',
-      prio: 0.9,
-    });
-  }
-
-  // 生成全量简体与繁体双轨 URL 节点（带 hreflang）
-  const urlNodes: string[] = [];
-  for (const e of entries) {
-    const simpUrl = `${base}${e.simpPath}`;
-    const tradUrl = `${base}${e.tradPath}`;
-
-    // 简体 URL 节点
-    urlNodes.push(`  <url>
-    <loc>${simpUrl}</loc>
+  const sitemapNodes = subSitemaps
+    .map(
+      (s) => `  <sitemap>
+    <loc>${SITE_BASE}${s.path}</loc>
     <lastmod>${now}</lastmod>
-    <changefreq>${e.freq}</changefreq>
-    <priority>${e.prio.toFixed(1)}</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
-  </url>`);
-
-    // 繁体 URL 节点
-    urlNodes.push(`  <url>
-    <loc>${tradUrl}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>${e.freq}</changefreq>
-    <priority>${(Math.max(0.1, e.prio - 0.05)).toFixed(1)}</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
-  </url>`);
-  }
+  </sitemap>`
+    )
+    .join('\n');
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${urlNodes.join('\n')}
-</urlset>`;
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapNodes}
+</sitemapindex>`;
 
   return new Response(xml, {
     headers: {

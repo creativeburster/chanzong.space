@@ -109,6 +109,56 @@ export default function AboutClient() {
               </div>
             </section>
 
+            {/* 知识库版本演进史与长期愿景 */}
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <Users className="w-5 h-5 text-amber-700" />
+                <h2 className="text-xl font-bold font-serif-zen text-slate-900">{t('版本演进编年史与收录路线图')}</h2>
+              </div>
+              <div className="prose prose-slate max-w-none text-[15px] leading-relaxed text-slate-700 space-y-3">
+                <div className="border-l-2 border-amber-700/40 pl-4 space-y-3 my-2">
+                  <div>
+                    <span className="font-mono text-xs px-2 py-0.5 rounded bg-amber-500/15 text-amber-800 font-bold">v2.0 (2026 当前版本)</span>
+                    <p className="mt-1 font-semibold text-slate-800">
+                      {t(`全量多维知识网络体系：收录 ${STATS.classics} 部核心经典、${STATS.collections} 大宗师合集、11 大经藏门类、${STATS.concepts} 个概念、${STATS.koans} 则公案、${STATS.persons} 位祖师、${STATS.methods} 种法门、${STATS.faqs} 条义理答疑，全面支持 CBETA 大藏经经号锚定与双轨分片地图。`)}
+                    </p>
+                  </div>
+                  <div>
+                    <span className="font-mono text-xs px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">v1.5 (2025)</span>
+                    <p className="mt-1 text-slate-600">
+                      {t('拓展至五家七宗宗门语录与大乘印心经论（120+部经卷、500+核心概念、60+历代祖师与200+公案），引入 D3.js 拓扑图谱与多语言架构。')}
+                    </p>
+                  </div>
+                  <div>
+                    <span className="font-mono text-xs px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold">v1.0 (2024 奠基期)</span>
+                    <p className="mt-1 text-slate-600">
+                      {t('种子经典汇编：涵盖达摩四论、六祖坛经、黄檗传心法要、无门关、碧岩录等35部根本典籍的文白对照与生僻字注音。')}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-500 mt-2">
+                  {t('本站遵循长期扩充规划（详见开源路线图 PENDING_CLASSICS_ROADMAP.md），中长期目标稳步迈向 1,000+ 典籍与 5,000+ 公案海量矩阵。')}
+                </p>
+              </div>
+            </section>
+
+            {/* 姊妹知识库 */}
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="w-5 h-5 text-amber-700" />
+                <h2 className="text-xl font-bold font-serif-zen text-slate-900">{t('学术脉络与姊妹知识库')}</h2>
+              </div>
+              <div className="prose prose-slate max-w-none text-[15px] leading-relaxed text-slate-700">
+                <p>
+                  {t('禅宗之“直指人心，见性成佛”，与印度纯正不二论（Advaita Vedanta）及当代圣哲拉玛那·马哈希（Ramana Maharshi）之“参究谁是我（Self-Enquiry）”在究极心源上同参一理。本站与姊妹站点')}{' '}
+                  <a href="https://ramanamaharshi.space" target="_blank" rel="noopener noreferrer" className="text-amber-700 font-semibold hover:underline">
+                    {t('拉玛那马哈希知识库 (ramanamaharshi.space)')}
+                  </a>{' '}
+                  {t('共同构成东方非二元明心见性实修数字人文矩阵。')}
+                </p>
+              </div>
+            </section>
+
             {/* 联系方式 */}
             <section>
               <div className="flex items-center gap-2 mb-4">
@@ -120,7 +170,7 @@ export default function AboutClient() {
                   {t('如发现文本错误、翻译不当、关联遗漏，或有任何建议，欢迎通过以下方式联系：')}
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-1 text-[15px] text-slate-700">
-                  <li>GitHub Issues: <Link prefetch={false} href="https://github.com/gstar-byte/chanzong.space/issues" className="text-amber-700 hover:underline">gstar-byte/chanzong.space</Link></li>
+                  <li>GitHub Issues: <Link prefetch={false} href="https://github.com/creativeburster/chanzong.space/issues" className="text-amber-700 hover:underline">creativeburster/chanzong.space</Link></li>
                   <li>
                     {t('在线反馈')}:{' '}
                     <button
@@ -134,7 +184,7 @@ export default function AboutClient() {
                   </li>
                 </ul>
                 <p className="text-[15px] leading-relaxed text-slate-700 mt-4">
-                  {t('本站为个人维护项目，回复可能不及时，但每条反馈都会认真阅读。')}
+                  {t('本站为开源公益项目，每条校勘纠错与意见反馈都会被认真审阅并同步更新进代码库。')}
                 </p>
               </div>
             </section>

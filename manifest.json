@@ -7,7 +7,11 @@
     "category": "祖师铭颂",
     "summary": "过去七佛传法偈颂，展现从释迦牟尼佛至迦叶尊者的正法眼藏印心偈言。",
     "word_count": 549,
-    "filename": "01_qifo.md"
+    "filename": "01_qifo.md",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 2,
@@ -17,7 +21,11 @@
     "category": "祖师铭颂",
     "summary": "“若人欲了知，三世一切佛，应观法界性，一切唯心造。”禅宗最核心的心造万法偈颂。",
     "word_count": 1072,
-    "filename": "02_juelin.md"
+    "filename": "02_juelin.md",
+    "cbeta_id": "T0279",
+    "canon_source": "《大正新脩大藏经》 T0279",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 3,
@@ -27,7 +35,11 @@
     "category": "印心经藏",
     "summary": "阐明一行三昧与摩诃般若无相之理，为达摩与六祖所依凭的核心经文。",
     "word_count": 8499,
-    "filename": "03_wenshu.md"
+    "filename": "03_wenshu.md",
+    "cbeta_id": "T0232",
+    "canon_source": "《大正新脩大藏经》 T0232",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 4,
@@ -37,7 +49,11 @@
     "category": "密法与非二元",
     "summary": "莲花生大士开示直观本觉、无染自解脱之大圆满与禅宗同质心法。",
     "word_count": 5630,
-    "filename": "04_wuran.md"
+    "filename": "04_wuran.md",
+    "cbeta_id": "密乘无染心法",
+    "canon_source": "藏传不二了义密部",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 5,
@@ -47,7 +63,11 @@
     "category": "密法与非二元",
     "summary": "莲花生大士以杖直指老人心间指示觉醒心，令其直下见性、彻断疑惑之极简大圆满心髓。",
     "word_count": 1473,
-    "filename": "05_zhangzhi.md"
+    "filename": "05_zhangzhi.md",
+    "cbeta_id": "西藏大手印经论",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 6,
@@ -57,7 +77,11 @@
     "category": "达摩论典",
     "summary": "达摩祖师直指“若见性即是佛，不见性即是众生”。立心即佛、离心无佛之教外别传旨趣。",
     "word_count": 4440,
-    "filename": "06_xuemaicong.md"
+    "filename": "06_xuemaicong.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 7,
@@ -67,7 +91,11 @@
     "category": "达摩论典",
     "summary": "论述寂照不二、无念无妄与大圆镜智之悟性极旨。",
     "word_count": 3764,
-    "filename": "07_wuxinglun.md"
+    "filename": "07_wuxinglun.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 8,
@@ -77,7 +105,11 @@
     "category": "达摩论典",
     "summary": "破除外在名相形式执着，将六度、持戒、建寺、诵经归结于自心观照。",
     "word_count": 4303,
-    "filename": "08_poxianglun.md"
+    "filename": "08_poxianglun.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 9,
@@ -87,7 +119,11 @@
     "category": "达摩论典",
     "summary": "直探“无心”之真谛，无妄心者即名无心，非同木石。",
     "word_count": 1468,
-    "filename": "09_wuxinlun.md"
+    "filename": "09_wuxinlun.md",
+    "cbeta_id": "T2831",
+    "canon_source": "《大正新脩大藏经》 T2831",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 10,
@@ -97,7 +133,11 @@
     "category": "达摩论典",
     "summary": "阐明息灭妄想狂心、契入无生法忍之顿悟修行。",
     "word_count": 1595,
-    "filename": "10_xixulun.md"
+    "filename": "10_xixulun.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 11,
@@ -107,7 +147,11 @@
     "category": "达摩论典",
     "summary": "报冤行、随缘行、无所求行、称法行，理入与行入并重。",
     "word_count": 568,
-    "filename": "11_sixingguan.md"
+    "filename": "11_sixingguan.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 12,
@@ -117,7 +161,11 @@
     "category": "宗门心法",
     "summary": "“至道无难，唯嫌挑选。但莫憎爱，洞然明白。”禅宗不二法门第一铭文。",
     "word_count": 872,
-    "filename": "12_xinxinming.md"
+    "filename": "12_xinxinming.md",
+    "cbeta_id": "T2010",
+    "canon_source": "《大正新脩大藏经》 T2010",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 13,
@@ -127,7 +175,11 @@
     "category": "宗门心法",
     "summary": "直论方寸本心之清净寂照。",
     "word_count": 241,
-    "filename": "13_fangcunlun.md"
+    "filename": "13_fangcunlun.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 14,
@@ -137,7 +189,11 @@
     "category": "宗门心法",
     "summary": "依《楞伽经》诸佛心第一，依《文殊说般若经》一行三昧。",
     "word_count": 3776,
-    "filename": "14_anxin.md"
+    "filename": "14_anxin.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 15,
@@ -147,7 +203,11 @@
     "category": "宗门心法",
     "summary": "“守本真心”为成佛第一要务，自心本来清净。",
     "word_count": 3221,
-    "filename": "15_zuishangcheng.md"
+    "filename": "15_zuishangcheng.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 16,
@@ -157,7 +217,11 @@
     "category": "宗门心法",
     "summary": "禅宗最具代表性核心经典。自性顿悟、定慧等持、无念无相无住。",
     "word_count": 19920,
-    "filename": "16_tanjing.md"
+    "filename": "16_tanjing.md",
+    "cbeta_id": "T2008",
+    "canon_source": "《大正新脩大藏经》 T2008",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 17,
@@ -167,7 +231,11 @@
     "category": "祖师铭颂",
     "summary": "“君不见，绝学无为闲道人，不除妄想不求真。”一宿觉禅师顿悟高歌。",
     "word_count": 1812,
-    "filename": "17_zhengdaoge.md"
+    "filename": "17_zhengdaoge.md",
+    "cbeta_id": "T2014",
+    "canon_source": "《大正新脩大藏经》 T2014",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 18,
@@ -177,7 +245,11 @@
     "category": "禅师语录",
     "summary": "“即心即佛”、“平常心是道”、“非心非佛”，马祖道一开创洪州宗，座下法嗣百三十九人，临济沩仰皆出其门。本录记载其一生开示与机缘语录。",
     "word_count": 4527,
-    "filename": "18_mazu.md"
+    "filename": "18_mazu.md",
+    "cbeta_id": "X1321",
+    "canon_source": "《卍新纂续藏经》 X1321",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 19,
@@ -187,7 +259,11 @@
     "category": "禅师语录",
     "summary": "立禅门清规，“一日不作，一日不食”，开创丛林制度。",
     "word_count": 2864,
-    "filename": "19_baizhang.md"
+    "filename": "19_baizhang.md",
+    "cbeta_id": "X1322",
+    "canon_source": "《卍新纂续藏经》 X1322",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 20,
@@ -197,7 +273,11 @@
     "category": "禅师语录",
     "summary": "诸佛与一切众生唯是一心，更无别法。裴休相国记录集结。",
     "word_count": 1805,
-    "filename": "20_huangbo.md"
+    "filename": "20_huangbo.md",
+    "cbeta_id": "T2012A",
+    "canon_source": "《大正新脩大藏经》 T2012A",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 21,
@@ -207,7 +287,11 @@
     "category": "禅修指南",
     "summary": "海东禅宗巨擘普照知呐禅师论顿悟渐修、定慧双修之切要开示。",
     "word_count": 714,
-    "filename": "21_xiuxinjue.md"
+    "filename": "21_xiuxinjue.md",
+    "cbeta_id": "T2020",
+    "canon_source": "《大正新脩大藏经》 T2020",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 22,
@@ -217,7 +301,11 @@
     "category": "禅师语录",
     "summary": "临济宗开山祖师，棒喝交驰，“赤肉团上有一无位真人”。",
     "word_count": 626,
-    "filename": "22_linji.md"
+    "filename": "22_linji.md",
+    "cbeta_id": "T1985",
+    "canon_source": "《大正新脩大藏经》 T1985",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 23,
@@ -227,7 +315,11 @@
     "category": "宗门心法",
     "summary": "“顿者，顿除妄念；悟者，悟无所得。”解禅门切要问答。",
     "word_count": 720,
-    "filename": "23_dunwu.md"
+    "filename": "23_dunwu.md",
+    "cbeta_id": "X1250",
+    "canon_source": "《卍新纂续藏经》 X1250",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 24,
@@ -237,7 +329,11 @@
     "category": "禅修指南",
     "summary": "全套 15 章直论真心正信、真心名体、真心所往，海东最著名禅修法要。",
     "word_count": 795,
-    "filename": "24_zhenxin.md"
+    "filename": "24_zhenxin.md",
+    "cbeta_id": "T2020",
+    "canon_source": "《大正新脩大藏经》 T2020",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 25,
@@ -247,7 +343,11 @@
     "category": "祖师铭颂",
     "summary": "梁代宝志公大士《大乘赞》《十二时颂》《万空歌》顿悟警世诗偈。",
     "word_count": 1094,
-    "filename": "25_zhigong.md"
+    "filename": "25_zhigong.md",
+    "cbeta_id": "T1984",
+    "canon_source": "《大正新脩大藏经》 T1984",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 26,
@@ -257,7 +357,11 @@
     "category": "祖师铭颂",
     "summary": "“观心空王，玄妙难测。”傅大士直指自性心王顿悟铭文。",
     "word_count": 320,
-    "filename": "26_xinwangming.md"
+    "filename": "26_xinwangming.md",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 27,
@@ -267,7 +371,11 @@
     "category": "宗门心法",
     "summary": "荷泽神会大师定曹溪南宗顿悟正统之切要铭记。",
     "word_count": 347,
-    "filename": "27_shenhui.md"
+    "filename": "27_shenhui.md",
+    "cbeta_id": "敦煌石室写本",
+    "canon_source": "敦煌遗书写卷精校",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 28,
@@ -277,7 +385,11 @@
     "category": "印心经藏",
     "summary": "禅宗印心第一圣经。离我相人相众生相寿者相，应无所住而生其心，凡所有相皆是虚妄。",
     "word_count": 5151,
-    "filename": "28_jingangjing.md"
+    "filename": "28_jingangjing.md",
+    "cbeta_id": "T0235",
+    "canon_source": "《大正新脩大藏经》 T0235",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 29,
@@ -287,7 +399,11 @@
     "category": "印心经藏",
     "summary": "全大藏经般若核心精华。照见五蕴皆空，度一切苦厄，色不异空空不异色，心无挂碍远离颠倒梦想。",
     "word_count": 268,
-    "filename": "29_xinjing.md"
+    "filename": "29_xinjing.md",
+    "cbeta_id": "T0232",
+    "canon_source": "《大正新脩大藏经》 T0232",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 30,
@@ -297,7 +413,11 @@
     "category": "印心经藏",
     "summary": "禅宗顿悟见性第一了义指南。知幻即离不作方便，离幻即觉亦无渐次。十二大菩萨请问圆觉清净妙心。",
     "word_count": 10007,
-    "filename": "30_yuanjuejing.md"
+    "filename": "30_yuanjuejing.md",
+    "cbeta_id": "T0842",
+    "canon_source": "《大正新脩大藏经》 T0842",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 31,
@@ -307,7 +427,11 @@
     "category": "护教文集",
     "summary": "宋代至今禅门丛林弟子必读的道德修持与住持指南。汇聚黄龙慧南、杨岐方会、慈明楚圆、灵源惟清、死心悟新等数十位大宗师警策法语。",
     "word_count": 33942,
-    "filename": "31_chanlinbaoxun.md"
+    "filename": "31_chanlinbaoxun.md",
+    "cbeta_id": "T2022",
+    "canon_source": "《大正新脩大藏经》 T2022",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 32,
@@ -319,7 +443,11 @@
     "word_count": 199815,
     "filename": "32_lengyanjing.md",
     "translation_note": "精选品段全译，非全本逐句翻译",
-    "tradition_note": "本经为大乘了义经典（楞严系），非禅宗祖师语录；因其中七处征心、耳根圆通、五十阴魔等与禅宗参究见性之理相通，为禅门所重、历代参究引用，故收录于此。"
+    "tradition_note": "本经为大乘了义经典（楞严系），非禅宗祖师语录；因其中七处征心、耳根圆通、五十阴魔等与禅宗参究见性之理相通，为禅门所重、历代参究引用，故收录于此。",
+    "cbeta_id": "T0945",
+    "canon_source": "《大正新脩大藏经》 T0945",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 33,
@@ -330,7 +458,11 @@
     "summary": "大乘居士禅顿悟第一极旨圣典。心净则佛土净，维摩长者弹叱小乘声闻，天女散花破除执着，维摩一默如雷震直入不二法门。",
     "word_count": 107409,
     "filename": "33_weimojiejing.md",
-    "translation_note": "精选品段全译，非全本逐句翻译"
+    "translation_note": "精选品段全译，非全本逐句翻译",
+    "cbeta_id": "T0475",
+    "canon_source": "《大正新脩大藏经》 T0475",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 34,
@@ -340,7 +472,11 @@
     "category": "祖师铭颂",
     "summary": "禅宗修行次第图示经典。以寻牛、见迹、见牛、得牛、牧牛、骑牛归家、忘牛存人、人牛俱忘、返本还源、入廛垂手十阶段，系统描绘从发心修行到明心见性、入世度生的完整心路历程。",
     "word_count": 921,
-    "filename": "34_shiniutu.md"
+    "filename": "34_shiniutu.md",
+    "cbeta_id": "X1255",
+    "canon_source": "《卍新纂续藏经》 X1255",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 35,
@@ -350,7 +486,11 @@
     "category": "祖师铭颂",
     "summary": "曹洞宗根本经典。洞山良价以四言九十四句阐明偏正回互之旨，以宝镜喻心性，以形影喻体用，以重离六爻演五位说，以主中主收束全篇。全篇三百七十六字，集曹洞宗纲宗之大成。",
     "word_count": 585,
-    "filename": "35_baojingsanmei.md"
+    "filename": "35_baojingsanmei.md",
+    "cbeta_id": "T1986",
+    "canon_source": "《大正新脩大藏经》 T1986",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 36,
@@ -360,7 +500,11 @@
     "category": "禅师语录",
     "summary": "曹洞宗开山祖师洞山良价的言行录。记载其行脚参学、无情说法悟道、过水睹影证道、五位颂立宗、三路接人、三种渗漏等核心内容，展现曹洞宗偏正回互、绵密细腻的宗风。",
     "word_count": 8330,
-    "filename": "36_dongshanyulu.md"
+    "filename": "36_dongshanyulu.md",
+    "cbeta_id": "T1986B",
+    "canon_source": "《大正新脩大藏经》 T1986B",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 37,
@@ -370,7 +514,11 @@
     "category": "宗门心法",
     "summary": "永嘉玄觉大师所著，融合天台止观与禅宗心法的系统论著。全书十章，从皈敬三宝到观心十门，系统阐述从发心、持戒到正修止观、妙契元源的完整修行路径，为教禅一致的典范之作。",
     "word_count": 12817,
-    "filename": "37_yongjia.md"
+    "filename": "37_yongjia.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 38,
@@ -380,7 +528,11 @@
     "category": "禅师语录",
     "summary": "云门宗开山祖师文偃的言行录。以对机三百二十则为主体，辅以室中语要、垂示代语、勘辨、偈颂、行录、遗诫等。云门三句（函盖乾坤、截断众流、随波逐浪）为其纲宗，机锋险绝，一句中具三句，一言才举，千差同辙。",
     "word_count": 4125,
-    "filename": "38_yunmen.md"
+    "filename": "38_yunmen.md",
+    "cbeta_id": "T1988",
+    "canon_source": "《大正新脩大藏经》 T1988",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 39,
@@ -390,7 +542,11 @@
     "category": "唯识宗典",
     "summary": "唐代玄奘大师所著唯识纲要十二首颂文，并附明代憨山德清大师《八识规矩通说》全本，为禅宗学人洞明八识运作、转识成智的必读宗典。",
     "word_count": 6357,
-    "filename": "39_bashiguijusong.md"
+    "filename": "39_bashiguijusong.md",
+    "cbeta_id": "T1586",
+    "canon_source": "《大正新脩大藏经》 T1586",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 40,
@@ -400,7 +556,11 @@
     "category": "公案评唱",
     "summary": "宋代禅宗最著名公案集。无门慧开精选四十八则公案，每则附评唱与颂古。以'无门'为法门，以'无字'为话头，逼拶学人当下透脱。与《碧岩录》并称禅宗双璧，风格更简练峻烈。",
     "word_count": 6996,
-    "filename": "40_wumenguan.md"
+    "filename": "40_wumenguan.md",
+    "cbeta_id": "T2005",
+    "canon_source": "《大正新脩大藏经》 T2005",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 41,
@@ -410,7 +570,11 @@
     "category": "禅修指南",
     "summary": "明代云栖莲池大师辑录的禅修策励文集。汇集诸祖法语、苦功事迹与经论引证，专为指导修行人看话头、起疑情、做工夫而编。以古德实参苦功为榜样，激励发决定志、以悟为则、不悟不休。",
     "word_count": 5878,
-    "filename": "41_changuancejin.md"
+    "filename": "41_changuancejin.md",
+    "cbeta_id": "T2024",
+    "canon_source": "《大正新脩大藏经》 T2024",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 42,
@@ -420,7 +584,11 @@
     "category": "论释义理",
     "summary": "大乘佛教核心论典。以一心二门三大为框架，系统阐述真如与生灭互熏机理，开示从初发心到证悟的修行阶次。禅宗明心见性之理论基础，真如内熏说为众生本具佛性提供依据。",
     "word_count": 3967,
-    "filename": "42_dachengqixinlun.md"
+    "filename": "42_dachengqixinlun.md",
+    "cbeta_id": "T1666",
+    "canon_source": "《大正新脩大藏经》 T1666",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 43,
@@ -430,7 +598,11 @@
     "category": "禅师语录",
     "summary": "北宋临济宗杨岐派宗师圜悟克勤所撰示众法语集，由嗣法弟子子文编集。分卷上卷下，收录八十余篇开示法语，直指人心见性成佛，痛切令人当下契悟。圜悟承五祖法演宗风，以金刚圈栗棘蓬接人，强调透顶透底截断笼罗。书中广引赵州德山临济云门等古德公案以为印证，是研究宋代禅宗思想的重要文献。",
     "word_count": 47786,
-    "filename": "43_huanwuxinyao.md"
+    "filename": "43_huanwuxinyao.md",
+    "cbeta_id": "T2003",
+    "canon_source": "《大正新脩大藏经》 T2003",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 44,
@@ -440,7 +612,11 @@
     "category": "禅师语录",
     "summary": "北宋临济宗杨岐派宗师圜悟克勤的全面语录记录，由门人虎丘绍隆等编集，共二十卷。涵盖上堂法语、小参普说、示众法语、拈古、颂古、偈颂、真赞、佛事等各种体裁，是研究圜悟宗风最完整的第一手文献。语录广引古德公案加以拈颂，宗风峻烈痛快，与碧岩录圜悟心要并列为圜悟三大著作。",
     "word_count": 133918,
-    "filename": "44_huanwuyulu.md"
+    "filename": "44_huanwuyulu.md",
+    "cbeta_id": "T1997",
+    "canon_source": "《大正新脩大藏经》 T1997",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 45,
@@ -450,7 +626,11 @@
     "category": "禅师语录",
     "summary": "南宋临济宗杨岐派大慧宗杲禅师之语录集，由弟子蕴闻编集，共三十卷。涵盖上堂示众、室中机缘、颂古、偈颂、赞佛祖、普说、法语等，是看话禅思想的集大成文献。大慧极力提倡参无字话头，以疑情截断意识分别，痛斥默照禅与文字禅，对后世禅宗影响深远。",
     "word_count": 182369,
-    "filename": "45_dahuiyulu.md"
+    "filename": "45_dahuiyulu.md",
+    "cbeta_id": "T1998A",
+    "canon_source": "《大正新脩大藏经》 T1998A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 46,
@@ -460,7 +640,11 @@
     "category": "禅修指南",
     "summary": "高丽国西山退隐禅师所述禅宗修行指南。退隐禅师住西山十年，博览五十本经论语录，辑录日用中参决要切之语句，间加注解。全书以本心为宗，辨析禅教二途，阐明参话头活句死句、三要（信根·愤志·疑情）、话头十病，论述戒定慧三学、五宗家风、临济宗旨（三玄三要·四料拣·四宾主·四照用），兼及念佛与禅宗关系、末法警策。言言见谛，句句朝宗，堪称禅教之龟鉴、解行之良药。",
     "word_count": 2201,
-    "filename": "46_chanjia_guijian.md"
+    "filename": "46_chanjia_guijian.md",
+    "cbeta_id": "X1249",
+    "canon_source": "《卍新纂续藏经》 X1249",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 47,
@@ -470,7 +654,11 @@
     "category": "宗门心法",
     "summary": "唐代牛头法融禅师所撰四言铭文，共一百九十六句。以“心性不生”开篇，层层破遣，从“一切莫作”到“绝观忘守”，从“心外无境”到“无心顺物”，最终归于“智者方知，非言诠悟”。法融为四祖道信旁出弟子，开牛头宗一脉，其思想以空寂无生为宗，深受般若中观影响。本铭与三祖僧璨《信心铭》遥相呼应，堪称牛头禅思想之精粹。",
     "word_count": 798,
-    "filename": "47_xinming.md"
+    "filename": "47_xinming.md",
+    "cbeta_id": "T2010",
+    "canon_source": "《大正新脩大藏经》 T2010",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 48,
@@ -480,7 +668,11 @@
     "category": "禅修指南",
     "summary": "北宋长芦宗赜禅师所撰坐禅指导文献，全文不足千字。从发心、调身、调息到调心、出定、护持，次第分明。文中“一切善恶都莫思量，念起即觉，觉之即失”道尽坐禅调心要术；“探珠宜静浪，动水取应难”之喻说明定水澄清方能心珠自现。宗赜禅师为禅净双修大德，既著《禅苑清规》规范禅门制度，又倡莲华盛会弘扬念佛，其坐禅教导兼具禅门宗风与净土悲愿。",
     "word_count": 649,
-    "filename": "48_zuochanyi.md"
+    "filename": "48_zuochanyi.md",
+    "cbeta_id": "X1245",
+    "canon_source": "《卍新纂续藏经》 X1245",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 49,
@@ -490,7 +682,11 @@
     "category": "禅师语录",
     "summary": "即心是佛无心是道，裴休问黄檗禅师开示记录。",
     "word_count": 4517,
-    "filename": "49_huangbo_wanlinglu.md"
+    "filename": "49_huangbo_wanlinglu.md",
+    "cbeta_id": "T2012",
+    "canon_source": "《大正新脩大藏经》 T2012",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 50,
@@ -500,7 +696,11 @@
     "category": "禅师语录",
     "summary": "赵州从谂禅师语录，参学门人文远记录。以平常心是道为宗，以本分事接人。庭前柏树子、狗子无佛性、吃茶去、洗钵去等公案流传千古，为后世看话禅之源头。",
     "word_count": 19442,
-    "filename": "50_zhaozhouyulu.md"
+    "filename": "50_zhaozhouyulu.md",
+    "cbeta_id": "X1315",
+    "canon_source": "《卍新纂续藏经》 X1315",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 51,
@@ -510,7 +710,11 @@
     "category": "宗门心法",
     "summary": "牛头法融禅师重要论著，以师徒问答形式阐扬无心绝观之旨。通过十六节问答，层层破除学人对心、道、圣凡、因果等一切妄执，直指法界本然寂灭之理。",
     "word_count": 5100,
-    "filename": "51_jueguanlun.md"
+    "filename": "51_jueguanlun.md",
+    "cbeta_id": "T2832",
+    "canon_source": "《大正新脩大藏经》 T2832",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 52,
@@ -520,7 +724,11 @@
     "category": "禅修指南",
     "summary": "明代曹洞宗禅师博山元来撰。以警策为宗，痛陈参禅中种种微细弊病——偷心未死、耽着静境、认识神为佛事、疑情发不起等，开示初心学人做工夫之正途：须具真实信心，举起话头，发起疑情，逼拶至极处忽然契悟。全书分上下两卷，含示初心做工夫警语、评古德垂示警语、示疑情发不起警语、示疑情发得起警语、示禅人参公案警语及参禅偈十首，为后世禅修之重要指南。",
     "word_count": 18066,
-    "filename": "52_boshan-canchanjingyu.md"
+    "filename": "52_boshan-canchanjingyu.md",
+    "cbeta_id": "X1257",
+    "canon_source": "《卍新纂续藏经》 X1257",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 53,
@@ -530,7 +738,11 @@
     "category": "禅师语录",
     "summary": "唐代曹洞宗二祖曹山本寂禅师之语录，由明代郭凝之编集、日本沙门玄契重编。核心内容包括五位君臣旨诀、三等堕（类堕、随堕、尊贵堕）、四禁偈、异类中行、枯木龙吟公案、法身偈注释、八要玄机等。曹山以回互为宗，阐明体用回互、理事圆融之妙，是研究曹洞宗思想的核心文献。",
     "word_count": 5124,
-    "filename": "53_caoshanyulu.md"
+    "filename": "53_caoshanyulu.md",
+    "cbeta_id": "T1987A",
+    "canon_source": "《大正新脩大藏经》 T1987A",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 54,
@@ -540,7 +752,11 @@
     "category": "禅师语录",
     "summary": "按：\"五祖\"指五祖山（今湖北黄梅），非禅宗第五代祖师弘忍。宋代临济宗杨岐派祖师五祖法演禅师之语录，由门人惟庆编集。记录法演在四面山、太平、白云海会、黄梅东山四处住持期间的上堂开示、小参及偈颂。法演为白云守端弟子，门下出佛果克勤、佛眼清远、佛鉴慧勤三大家。其禅风峻烈而富文采，以“白云万里”为最高标尺，极力提倡赵州“狗子无佛性”话头，开创看话禅先声，是研究宋代禅宗史和杨岐派思想的核心文献。",
     "word_count": 24867,
-    "filename": "54_fayanyulu.md"
+    "filename": "54_fayanyulu.md",
+    "cbeta_id": "T1995",
+    "canon_source": "《大正新脩大藏经》 T1995",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 55,
@@ -550,7 +766,11 @@
     "category": "论释义理",
     "summary": "龙树菩萨核心论典，以八不中道为纲领，破斥一切边见，显示缘起性空的中道实相。全论27品，运用严密的逻辑推理，破除对有无、生灭、常断等二元对立的执着，为大乘佛教中观学派奠定理论基础。",
     "word_count": 43555,
-    "filename": "55_zhonglun.md"
+    "filename": "55_zhonglun.md",
+    "cbeta_id": "T1564",
+    "canon_source": "《大正新脩大藏经》 T1564",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 56,
@@ -560,7 +780,11 @@
     "category": "论释义理",
     "summary": "五代永明延寿禅师代表作，阐明万善同归净土、理事无阂圆融之旨。广引经论，对治禅宗空腹高心之病，倡导禅净双修、悲智双运，以万行庄严净土、同证菩提。",
     "word_count": 50967,
-    "filename": "56_wanshantongguiji.md"
+    "filename": "56_wanshantongguiji.md",
+    "cbeta_id": "T2017",
+    "canon_source": "《大正新脩大藏经》 T2017",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 57,
@@ -570,7 +794,11 @@
     "category": "论释义理",
     "summary": "唐代圭峰宗密和会禅教之判教巨著：以如来三种教印禅宗三宗，判五味禅以最上乘禅为极致，广辨空宗性宗十异，立迷悟各十重，明顿悟资于渐修。裴休赞为禅门未曾有之会通总纲。",
     "word_count": 17314,
-    "filename": "57_chanyuan_zhuquanjiduxu.md"
+    "filename": "57_chanyuan_zhuquanjiduxu.md",
+    "cbeta_id": "T2015",
+    "canon_source": "《大正新脩大藏经》 T2015",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 58,
@@ -580,7 +808,11 @@
     "category": "公案评唱",
     "summary": "北宋圆悟克勤就雪窦重显《颂古百则》加垂示、着语、评唱而成的公案评唱巨著，十卷百则，被誉为宗门第一书、文字禅巅峰之作。以垂示总提纲宗、着语随文点破、评唱抉发血脉，与曹洞宗《从容录》并称禅门双璧，后其弟子大慧宗杲因学人流于知解而焚版，遂成禅林著名公案。",
     "word_count": 110343,
-    "filename": "58_biyanlu.md"
+    "filename": "58_biyanlu.md",
+    "cbeta_id": "T2003",
+    "canon_source": "《大正新脩大藏经》 T2003",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 59,
@@ -590,7 +822,11 @@
     "category": "禅师语录",
     "summary": "临济宗杨岐派创始人杨岐方会禅师的上堂开示与勘辩机锋记录。以拄杖棒喝直指人心，宗风兼具临济峻烈与云门平和，“杨岐一诀，凡圣路绝”为其心要。",
     "word_count": 3533,
-    "filename": "59_yangqihoulu.md"
+    "filename": "59_yangqihoulu.md",
+    "cbeta_id": "T1994A",
+    "canon_source": "《大正新脩大藏经》 T1994A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 60,
@@ -600,7 +836,11 @@
     "category": "护教文集",
     "summary": "北宋禅僧惠洪（觉范）的赞铭诗文合集，为《林间录》续编。收录释迦佛、六代祖师、枣栢大士、百丈怀海、永明延寿、永嘉玄觉、法眼文益、云门文偃、玄沙师备等禅门宗师画像赞辞，观音菩萨、弥勒菩萨像赞，明极斋、明白庵、甘露灭斋、延福钟等铭文，及歌咏万回、药山、宝志、亮公、香严、丹霞六位禅门人物的渔父词。以骈俪文学笔法传达禅宗见地，是“文字禅”的典型作品。",
     "word_count": 5023,
-    "filename": "60_linjianhoulu.md"
+    "filename": "60_linjianhoulu.md",
+    "cbeta_id": "X1624",
+    "canon_source": "《卍新纂续藏经》 X1624",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 61,
@@ -610,7 +850,11 @@
     "category": "护教文集",
     "summary": "明代空谷景隆禅师护教辩论文著。以问答体裁驳正道家修炼之术，辨明禅宗见性大道与炼术形气之学的根本区别，详述吕洞宾参黄龙、德山烧疏钞、纸衣道者立化等公案，附姚广孝《佛法不可灭论》。",
     "word_count": 8196,
-    "filename": "61_shanglibian.md"
+    "filename": "61_shanglibian.md",
+    "cbeta_id": "B0133",
+    "canon_source": "《大藏经补编》 B0133",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 62,
@@ -621,7 +865,11 @@
     "summary": "临济宗杨岐派创始人杨岐方会禅师的主要语录记录，涵盖杨岐山与云盖山两处道场的上堂开示、道吾真禅师语要、勘辨机锋、十首偈颂及序跋。与《杨岐方会和尚后录》互为补充，展现杨岐宗风全貌。",
     "word_count": 8049,
     "filename": "62_yangqiyulu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "T1994A",
+    "canon_source": "《大正新脩大藏经》 T1994A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 63,
@@ -631,7 +879,11 @@
     "category": "禅修指南",
     "summary": "元代西蜀野衲智彻禅师所著禅修实践指南，以自身修行经历为线索，系统阐述参话头、起疑情、做工夫的完整次第。全书十七门，从离尘精进到归源实际，详细辨析参禅过程中的疑惑、偏差与退堕，区分看无字、念无字与疑无字三种态度，强调无疑不悟，并关注修行者身心健康。",
     "word_count": 9682,
-    "filename": "63_chanzongjueyiji.md"
+    "filename": "63_chanzongjueyiji.md",
+    "cbeta_id": "T2021",
+    "canon_source": "《大正新脩大藏经》 T2021",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 64,
@@ -641,7 +893,11 @@
     "category": "禅师语录",
     "summary": "临济宗黄龙派创始人黄龙慧南禅师的语录集，收录同安、归宗、黄檗、黄龙四地道场的上堂法语与机缘问答，以及偈颂三十七首。以三关勘验闻名天下——生缘处、我手何似佛手、我脚何似驴脚，三十余年示此三问，学者多不凑机。续补部分由日本两足院东晙辑录，内容更为丰富。",
     "word_count": 13609,
-    "filename": "64_huanglonghuinan.md"
+    "filename": "64_huanglonghuinan.md",
+    "cbeta_id": "T1993",
+    "canon_source": "《大正新脩大藏经》 T1993",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 65,
@@ -651,7 +907,11 @@
     "category": "论释义理",
     "summary": "后秦长安释僧肇法师所著四论合集，由慧达作序。以中观般若学为体，融合老庄玄学与佛家空宗，阐明缘起性空的实相义。物不迁论即动而静，不真空论即伪即真，般若无知论圣心无知而无所不知，涅槃无名论以九折十演穷尽涅槃之理。鸠摩罗什赞为解空第一，是中国佛教哲学的奠基之作，对禅宗影响深远。",
     "word_count": 16297,
-    "filename": "65_zhaolun.md"
+    "filename": "65_zhaolun.md",
+    "cbeta_id": "T1858",
+    "canon_source": "《大正新脩大藏经》 T1858",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 66,
@@ -661,7 +921,11 @@
     "category": "护教文集",
     "summary": "明代禅僧空谷景隆所著护教文献，与《尚理编》为姊妹篇。以问答体裁系统驳斥宋儒朱熹排佛言论，揭露朱熹暗用佛法著书立说而表面排佛的心病。详述濂溪周子、二程道学源流实出于禅宗——周敦颐叩问黄龙慧南、佛印元、东林总禅师，程颢深味华严合论，程颐问道于大源清禅师，朱熹本人亦从大慧禅师参话头。本书引证丰富，从三教关系、虚无寂灭、神识不灭、道学源流等多角度逐一辨正，是明代护教文献代表作。",
     "word_count": 26661,
-    "filename": "66_shangzhibian.md"
+    "filename": "66_shangzhibian.md",
+    "cbeta_id": "B0132",
+    "canon_source": "《大藏经补编》 B0132",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 67,
@@ -671,7 +935,11 @@
     "category": "禅师语录",
     "summary": "临济宗石霜楚圆（慈明）禅师五会住持语录，由黄檗慧南重编。收录禅师在南源、道吾、石霜、福严、兴化五处住持的开堂法语、机缘问答、勘辨及偈颂。楚圆嗣法汾阳善昭，门下出杨岐方会、黄龙慧南，开临济杨岐、黄龙二派。语录机锋峻烈，棒喝交加，后附三玄三要、五位君臣、十二时歌等宗门纲宗偈颂，是研究临济宗风的重要文献。",
     "word_count": 16519,
-    "filename": "67_shishuangchuyuan.md"
+    "filename": "67_shishuangchuyuan.md",
+    "cbeta_id": "X1338",
+    "canon_source": "《卍新纂续藏经》 X1338",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 68,
@@ -682,7 +950,11 @@
     "summary": "雪峰义存法嗣玄沙师备禅师之语录三卷，明天启年间闽中林弘衍搜辑诸集汇编，曹洞宗湛然圆澄作序。卷上载行实与上堂法语，力破妄认昭昭灵灵之识神见，直指秘密金刚体；卷中为垂语纲宗，著名之三种病人公案与玄沙三句俱在，附诸老宿拈颂；卷下举古评唱，于俱胝一指、鲁祖面壁、灵云桃花等千古公案一一下断语。师门下有罗汉桂琛传清凉文益，开出法眼一宗，师遂为法眼法脉之先导。",
     "word_count": 18181,
     "filename": "68_xuanshayulu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1445",
+    "canon_source": "《卍新纂续藏经》 X1445",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 69,
@@ -693,7 +965,11 @@
     "summary": "现存最古老完整之玄沙师备语录版本。唐光化三年门人智严集，宋元丰三年孙觉知福州时校合残编刻板行世，中土久佚，赖日本秘藏宋版存续，元禄年间重刊回传。上卷上堂示众与机缘问答，开卷即提清净本然性相般若智海；中卷行光五问、德彦五问及师亲释三句纲宗之长篇法语，与雪峰、招庆师资激扬；下卷法语问答、方丈录及王大王请雪峰与玄沙入内论佛心印录——闽王王审知请二师入宫论心印之实录。末附五代林澂撰宗一大师碑文，为玄沙生平最翔实之早期史料。",
     "word_count": 37894,
     "filename": "69_xuanshaguanglu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1445",
+    "canon_source": "《卍新纂续藏经》 X1445",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 70,
@@ -704,7 +980,11 @@
     "summary": "宋末元初禅宗巨匠高峰原妙禅师之说，参学门人编集，明万历二十七年云栖袾宏重梓。卷上载序、双髻庵及师子禅寺法语、示禅人；卷下载拈古、颂古、补遗、偈颂、小佛事、赞佛祖、自赞，并附行状二篇及塔铭。高峰一生以万法归一、一归何处为话头接引学人，入张公洞扁死关不越户十五年，为看话禅核心文献。",
     "word_count": 31361,
     "filename": "70_gaofengyulu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1400",
+    "canon_source": "《卍新纂续藏经》 X1400",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 71,
@@ -715,7 +995,11 @@
     "summary": "唐五代禅宗巨匠雪峰义存禅师之说，明崇祯己卯年闽中得山居士林弘衍搜辑编次，曹洞宗石雨明方作序。卷上载刻语录缘起、序、师语录、偈语、规制、遗诫；卷下载闽王王审知请雪峰与玄沙入内论佛心印录、年谱、附录。雪峰承德山宣鉴开悟，座下一千五百众，门下出云门、法眼二宗，为五代禅宗中心。",
     "word_count": 31856,
     "filename": "71_xuefengyulu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1333",
+    "canon_source": "《卍新纂续藏经》 X1333",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 72,
@@ -726,7 +1010,11 @@
     "summary": "宋圆悟克勤击节、雪窦重显拈古，卍续藏第67册No.1301。全书一百则，每则含雪窦拈古与圆悟击节——雪窦举古德公案而拈提之，圆悟于其下击节赞赏别下断语。与碧岩录为圆悟两大评唱著作：碧岩录以颂古为中心，击节录以拈古为中心，更为简洁直截。元文戊午年常州沙门说驴序重刻，黑太淳校正补阙。",
     "word_count": 33709,
     "filename": "72_foguojijielu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 73,
@@ -737,7 +1025,11 @@
     "summary": "南宋临济宗杨岐派密庵咸杰禅师之说，参学小师崇岳了悟等编，淳熙十五年张镃序。大正藏第47册No.1999。全书载七处住持语录（乌巨、祥符、蒋山、华藏、径山、灵隐、天童）、小参、普说、颂赞九则、偈颂。密庵为应庵昙华嗣法，应庵为虎丘绍隆嗣法，虎丘为圆悟克勤嗣法——密庵为圆悟法孙，杨岐虎丘系之重要传人。以破沙盆语闻名丛林，门下出松源崇岳、破庵祖先等。",
     "word_count": 34571,
     "filename": "73_mianxianyulu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "T1999",
+    "canon_source": "《大正新脩大藏经》 T1999",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 74,
@@ -748,7 +1040,11 @@
     "summary": "明代四大高僧之一紫柏真可尊者之别集，钱谦益纂阅，契颖寿梓。卍续藏第73册No.1453。本集为《紫柏尊者全集》之补遗，取全集所未载者排为四卷：卷一杂文（阿赖识四分略解/前五识略解/天池山煆昏散道场说等）、卷二赞偈诗、卷三书问、卷四语录及附录跋。紫柏以禅教会通为宗，倡印嘉兴藏，因妖书案殉道，为明代佛教复兴之关键人物。",
     "word_count": 40877,
     "filename": "74_zibaibieji.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1452",
+    "canon_source": "《卍新纂续藏经》 X1452",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 75,
@@ -758,7 +1054,11 @@
     "category": "论释义理",
     "summary": "南宋淳熙年间晦岩智昭禅师编纂的禅宗纲宗集，共六卷。系统整理临济、云门、曹洞、沩仰、法眼五家核心教法，包括临济四料拣/三玄三要/四照用/四宾主、云门三句/一字关、曹洞五位君臣/功勋五位/三种渗漏、沩仰三种生/圆相、法眼华严六相义等纲宗语句，并汇集历代祖师颂古评唱。是研究禅宗五家宗风差异的核心文献，也是理解纲宗即禅门接引学人的标准化施设的必读之作。",
     "word_count": 40874,
-    "filename": "75_renyantianmu.md"
+    "filename": "75_renyantianmu.md",
+    "cbeta_id": "T2006",
+    "canon_source": "《大正新脩大藏经》 T2006",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 76,
@@ -769,7 +1069,11 @@
     "summary": "北宋惠洪（洪觉范）禅师所撰禅宗笔记，分上下两卷，记录丛林胜士之高行、尊宿之遗训、诸佛菩萨之微旨、贤士大夫之余论，垂十年间得三百余事。后集一卷收录赞铭偈颂。是研究北宋禅宗史、禅宗文学、禅宗与士大夫关系之重要文献。",
     "word_count": 49028,
     "filename": "76_linjianlu.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1624",
+    "canon_source": "《卍新纂续藏经》 X1624",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 77,
@@ -780,7 +1084,11 @@
     "summary": "刘宋元嘉年间天竺三藏求那跋陀罗译出，四卷皆题一切佛语心品。佛入楞伽山答大慧菩萨百八问，广说五法三自性八识二无我如来藏自心现量等义，以佛语心为宗——一切佛语皆以心为宗要。达磨以此经付二祖慧可，以为印心之典，祖祖相授，为禅宗根本经典。",
     "word_count": 44457,
     "filename": "77_lengqiejing.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "T0670",
+    "canon_source": "《大正新脩大藏经》 T0670",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 78,
@@ -791,7 +1099,11 @@
     "summary": "北宋真定府十方洪济禅院住持传法慈觉大师宗赜集，十卷，为现存最早之禅宗清规专著。承百丈怀海禅师百丈规绳颂之遗意，系统编纂禅宗丛林一切轨度制度——受戒护戒、挂搭入室、上堂念诵、结夏解夏、知事头首职分、茶汤煎点、亡僧津送、住持入院退院、坐禅仪、龟镜文、一百二十问、沙弥受戒、百丈规绳颂，并附新添滤水法。后世敕修百丈清规即在此书基础上增删而成，为研究北宋禅宗丛林制度之根本文献。",
     "word_count": 45060,
     "filename": "78_chanyuanqinggui.md",
-    "translation_note": "精选核心品段/法语全译"
+    "translation_note": "精选核心品段/法语全译",
+    "cbeta_id": "X1245",
+    "canon_source": "《卍新纂续藏经》 X1245",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 79,
@@ -801,7 +1113,11 @@
     "category": "清规戒律",
     "summary": "元代大智寿圣禅寺住持东阳德辉奉敕重编，大龙翔集庆寺住持大訢（笑隐）奉敕校正，八卷九章。会萃宋代崇宁（宗赜）、咸淳（惟勉）、至大（弌咸）三家清规，校正归一，定为祝厘、报恩、报本、尊祖、住持、两序、大众、节腊、法器九章，颁行天下丛林，成为此后七百年中国禅宗丛林之标准规范。附录百丈祖师塔铭、天下师表阁记、古清规序（杨亿）、崇宁咸淳至大清规序及敕修百丈清规叙（欧阳玄），极具禅宗史文献价值。",
     "word_count": 68767,
-    "filename": "79_chixiu-baizhang-qinggui.md"
+    "filename": "79_chixiu-baizhang-qinggui.md",
+    "cbeta_id": "T2025",
+    "canon_source": "《大正新脩大藏经》 T2025",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 80,
@@ -811,7 +1127,11 @@
     "category": "密法与非二元",
     "summary": "莲花生大士以数十联金刚偈总摄大圆满见、修、行、果：心性本无生灭，明空赤裸自圆成；妄念如波不离水，闹市深山总一般；一念回光，顿见成佛。全篇直指当下灵觉，为大圆满见地之极浓缩纲要。",
     "word_count": 152,
-    "filename": "80_jingangge.md"
+    "filename": "80_jingangge.md",
+    "cbeta_id": "T0235",
+    "canon_source": "《大正新脩大藏经》 T0235",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 81,
@@ -821,7 +1141,11 @@
     "category": "密法与非二元",
     "summary": "又名《直指觉性赤裸现量自我解脱法》。分四节：直指自心为佛之总纲，三身五智于一念心性中本具，见修行果无上要义，及直指心性金刚语。明言“心外无佛，佛外无心”，若了此心则千经万论一时通达。",
     "word_count": 679,
-    "filename": "81_ziwojietuo.md"
+    "filename": "81_ziwojietuo.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 82,
@@ -831,7 +1155,11 @@
     "category": "密法与非二元",
     "summary": "莲花生大士对佛母益西措嘉之甚深言教，以问答开示四个直指：见无所见方为真见，无修之修是为真修，不舍世缘而行佛道，本来现成无得无失。文短义深，动静一如之无上大修尽在其中。",
     "word_count": 445,
-    "filename": "82_songlingbaoxun.md"
+    "filename": "82_songlingbaoxun.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 83,
@@ -841,7 +1169,11 @@
     "category": "密法与非二元",
     "summary": "即《中阴得度法》，莲师生所说、伏藏大师噶玛林巴掘出。本章精选三阶段口诀：临终中阴直指本面母光明，法性中阴五方佛智光逐日显现之趋入要诀，投生中阴闭合胎门之法。核心印语：一切光明境相皆是自心本具智慧之变现，心不生怖，直下融通，当下解脱。",
     "word_count": 741,
-    "filename": "83_xizangduwangjing.md"
+    "filename": "83_xizangduwangjing.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 84,
@@ -851,7 +1183,11 @@
     "category": "密法与非二元",
     "summary": "遍知龙钦巴尊者（1308-1364）总结一生闻思修之心髓。九品次第：由暇满难得、寿命无常、轮回过患、业因果转入依师皈依发心，再入奢摩他寂止与毗钵舍那胜观，末以第九品直指心性收摄全论——“识得本来面目者，生死当下即涅槃”。",
     "word_count": 390,
-    "filename": "84_xinxingxiuxisong.md"
+    "filename": "84_xinxingxiuxisong.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 85,
@@ -861,7 +1197,11 @@
     "category": "密法与非二元",
     "summary": "印度八十四大成就者之首帝洛巴尊者于恒河岸边对弟子那洛巴之传授。大手印法离戏论、无言无说：心无所住住本然，紧缚自然得解脱；无修无整无作意，即是大手印真修。烦恼当下即菩提，生死即是大涅槃。",
     "word_count": 318,
-    "filename": "85_henghedashouyin.md"
+    "filename": "85_henghedashouyin.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 86,
@@ -871,7 +1211,11 @@
     "category": "密法与非二元",
     "summary": "近代印度圣哲拉玛那·马哈希（Ramana Maharshi，1879-1950）《我是谁？》与《真实四十颂》精要合刊。以“我是谁”之参究为究竟法门：逐一勘破肉身、感官、呼吸、念头皆非我，最后唯余纯粹觉知即是真我。其回光返照之路径与禅宗参话头异曲同工。",
     "word_count": 792,
-    "filename": "86_zixingcanjiu.md"
+    "filename": "86_zixingcanjiu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 87,
@@ -881,7 +1225,11 @@
     "category": "密法与非二元",
     "summary": "古印度托钵圣者达塔特雷亚（Dattatreya）所述之自由解脱绝唱：一切万有皆是唯一绝对梵体，无生无死、无缚无脱；超越心智造作，“饥来吃饭，困来即眠，处处皆是至真解脱”，与禅门日用功夫遥相印证。",
     "word_count": 293,
-    "filename": "87_awatuotazhige.md"
+    "filename": "87_awatuotazhige.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 88,
@@ -891,7 +1239,11 @@
     "category": "密法与非二元",
     "summary": "吠陀非二元论（Advaita）至高圣典：八曲仙人开示遮罗迦国王。你非地水火风虚空，乃觉照万相之纯粹觉性；“智者不求涅槃，亦不畏生死”，一切造作皆是病、追求皆是网，歇下偷心，无修无证，方为至道。",
     "word_count": 505,
-    "filename": "88_ashitawakela.md"
+    "filename": "88_ashitawakela.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 89,
@@ -901,7 +1253,11 @@
     "category": "唯识宗典",
     "summary": "世亲菩萨造、玄奘大师译，全文仅五百余字的唯识学总纲。将一切法归纳为五位百法——八种心法、五十一种心所有法、十一种色法、二十四种心不相应行法、六种无为法，一一列举名目，最后归于补特伽罗无我与法无我，是一张随身携带的心念地图。",
     "word_count": 578,
-    "filename": "89_baifamingmenlun.md"
+    "filename": "89_baifamingmenlun.md",
+    "cbeta_id": "T1614",
+    "canon_source": "《大正新脩大藏经》 T1614",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 90,
@@ -911,7 +1267,11 @@
     "category": "唯识宗典",
     "summary": "世亲菩萨晚年绝笔，唯识学集大成之总纲。三十颂分三段：初二十四颂明唯识相（异熟、思量、了别境识三能变），次一颂明唯识真如之性，后五颂依次第说资粮、加行、通达、修习、究竟五位悟入。护法等十大论师为之造释，玄奘糅译为《成唯识论》，本篇即其骨架原文。",
     "word_count": 1200,
-    "filename": "90_weishisanshilunsong.md"
+    "filename": "90_weishisanshilunsong.md",
+    "cbeta_id": "T1586",
+    "canon_source": "《大正新脩大藏经》 T1586",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 91,
@@ -921,7 +1281,11 @@
     "category": "唯识宗典",
     "summary": "与《唯识三十论颂》互为表里之破执专著：三十颂从正面立唯识理，本论则集中破斥“离识外境实有”。以设四难开题，借梦喻、饿鬼脓河、地狱狱卒三大譬喻证成处定时定等四义，继而层层简别极微不成、现量非证、他心智境，穷辩密如棋谱，是汉传因明论辩文的典范。",
     "word_count": 3655,
-    "filename": "91_weishiershilun.md"
+    "filename": "91_weishiershilun.md",
+    "cbeta_id": "T1590",
+    "canon_source": "《大正新脩大藏经》 T1590",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 92,
@@ -931,7 +1295,11 @@
     "category": "禅师语录",
     "summary": "曹洞宗南宋中兴巨匠天童长翁如净禅师六会语录（清凉、瑞岩、净慈、明州瑞岩、再住净慈、天童）合编两卷。上堂、小参、普说、法语、颂古、赞佛祖、小佛事、偈颂俱备。其风孤峻泼辣，拄杖拂子圆相兼施，借杜诗说禅、以恶拳痛棒陶冶学者，卷末附辞世颂，为道元禅师之师、日本曹洞宗远祖之行实录。",
     "word_count": 14989,
-    "filename": "92_rujingyulu.md"
+    "filename": "92_rujingyulu.md",
+    "cbeta_id": "T2002A",
+    "canon_source": "《大正新脩大藏经》 T2002A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 93,
@@ -941,7 +1309,11 @@
     "category": "禅师语录",
     "summary": "如净禅师天童上堂法语二十则，由嗣法弟子义远搜辑补遗，日本曹洞宗开祖道元亲记其机缘。上堂孤迥峭拔——\"放行也瓦砾生光，把住也真金失色\"；并举曹山四则公案拈提，重申洞上宗风。卷末道元所记如净行状，正是\"身心脱落\"公案的原始出处：惩坐睡衲子一句，令道元豁然大悟。",
     "word_count": 4671,
-    "filename": "93_rujingxuyulu.md"
+    "filename": "93_rujingxuyulu.md",
+    "cbeta_id": "T2002B",
+    "canon_source": "《大正新脩大藏经》 T2002B",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 94,
@@ -951,7 +1323,11 @@
     "category": "禅师语录",
     "summary": "沩仰宗开山祖师沩山灵祐（771-853）语录，与仰山慧寂父子唱和实录。载拨炉火悟缘、司马头陀择山、踢倒净瓶、蛇虎让路开山诸缘起，上堂\"实际理地不受一尘，万行门中不舍一法\"之纲宗，摘茶论体用、过净瓶、画圆相通书等著名公案。沩仰宗风\"父子和敬、师资唱和\"，于此卷可亲见。",
     "word_count": 7441,
-    "filename": "94_weishanyulu.md"
+    "filename": "94_weishanyulu.md",
+    "cbeta_id": "T1989",
+    "canon_source": "《大正新脩大藏经》 T1989",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 95,
@@ -961,7 +1337,11 @@
     "category": "唯识宗典",
     "summary": "世亲菩萨论\"业\"的唯识学专著。先破正量部\"形色为身表\"与\"行动为身表\"之说，继立经部\"思为业体、思熏成种\"义，会通三业契经与十业道，最终归到\"思差别熏习阿赖耶识令其相续转变差别，能引当来爱非爱果\"——把业从身体动作安放到意志及其熏习种子上，为唯识\"种子生现行\"奠基，兼破一常实我。",
     "word_count": 7411,
-    "filename": "95_chengyelun.md"
+    "filename": "95_chengyelun.md",
+    "cbeta_id": "T1609",
+    "canon_source": "《大正新脩大藏经》 T1609",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 96,
@@ -971,7 +1351,11 @@
     "category": "唯识宗典",
     "summary": "弥勒菩萨造颂、世亲菩萨释论、玄奘大师译，大乘瑜伽行派根本论典之一。全论七品：辩相（虚妄分别与空性不一不异之中道）、辩障（烦恼所知二障及三十六障）、辩真实（十种真实）、辩对治（十波罗蜜多）、辩分位、辩得果、辩无上乘。以\"非空非不空，有无及有故，是则契中道\"一偈总摄大乘中道义。",
     "word_count": 16509,
-    "filename": "96_bianzhongbianlun.md"
+    "filename": "96_bianzhongbianlun.md",
+    "cbeta_id": "T1600",
+    "canon_source": "《大正新脩大藏经》 T1600",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 97,
@@ -981,7 +1365,11 @@
     "category": "禅师语录",
     "summary": "元代雪峰崇圣禅寺再住持樵隐悟逸禅师语录，两卷：卷上为再住雪峰语录（上堂、小参、拈古），卷下为法语、题跋、偈颂、佛事。延祐元年进寺，拈香自署\"臣僧悟逸\"。宗风峻快而富诗情——\"第一句\"答以\"天晴普请拽木\"，浴佛则云\"年年此日一盆汤，至竟洗尘难洗骨\"，卷下偈颂送别诸篇尤见元代丛林文字之盛。",
     "word_count": 21081,
-    "filename": "97_qiaoyinyulu.md"
+    "filename": "97_qiaoyinyulu.md",
+    "cbeta_id": "X1385",
+    "canon_source": "《卍新纂续藏经》 X1385",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 98,
@@ -991,7 +1379,11 @@
     "category": "印心经藏",
     "summary": "鸠摩罗什译，上下两卷。坚意菩萨启问\"何三昧能令菩萨示现诸功德而不毕竟入涅槃\"，佛答以首楞严三昧（意译健相、一切事究竟坚固）。全经以帝释无所住而得、随器取水、大药树王、摩尼珠层层映夺诸喻，阐明住此三昧者智辩不减、随缘度生；文殊说真多闻\"闻一句解千万亿义\"，卷下明四种授记、佛寿七百阿僧祇劫与持经二十不可思议功德。",
     "word_count": 23323,
-    "filename": "98_shoulengyansanmeijing.md"
+    "filename": "98_shoulengyansanmeijing.md",
+    "cbeta_id": "T0642",
+    "canon_source": "《大正新脩大藏经》 T0642",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 99,
@@ -1001,7 +1393,11 @@
     "category": "唯识宗典",
     "summary": "无著菩萨依《阿毘达磨大乘经·摄大乘品》造，玄奘译，三卷十分。以十种殊胜殊胜语总摄大乘佛法全部要义：所知依（阿赖耶识）、所知相（三自性）、入所知相（唯识性）、彼入因果（六波罗蜜多）、彼因果修差别（十地）、增上戒心慧三学、彼果断（无住涅槃）、彼果智（三种佛身）。是瑜伽行派的纲领性论书，世亲、无性皆为之释。",
     "word_count": 24640,
-    "filename": "99_shedachenglunben.md"
+    "filename": "99_shedachenglunben.md",
+    "cbeta_id": "T1594",
+    "canon_source": "《大正新脩大藏经》 T1594",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 100,
@@ -1011,7 +1407,11 @@
     "category": "清规戒律",
     "summary": "元代临济宗一代宗匠中峰明本（普应国师）居湖州弁山幻住庵时所订庵居清规，延祐四年自序。以\"日用须知\"十门——日资、月进、年规、世范、营办、家风、名分、践履、摄养、津送——为小规模庵居众立寻常起居之则，坐禅四时、朔望祝圣、节年佛事、盂兰盆疏仪俱备。序中\"心存乎道，不待礼而自中\"一语，道出清规之本质：规矩为道而设，非道为规矩而存。",
     "word_count": 24511,
-    "filename": "100_huanzhuanqinggui.md"
+    "filename": "100_huanzhuanqinggui.md",
+    "cbeta_id": "X1248",
+    "canon_source": "《卍新纂续藏经》 X1248",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 101,
@@ -1021,7 +1421,11 @@
     "category": "唯识宗典",
     "summary": "唯识宗所依根本经典，玄奘译，八品。胜义谛相品立胜义与诸行\"不一不异\"；心意识相品说一切种子心识（阿陀那识）；一切法相品立遍计所执、依他起、圆成实三相；无自性相品立三无性；分别瑜伽品说\"我说识所缘，唯识所现故\"，为止观总纲；末二品明十地与佛果。《摄大乘论》《成唯识论》皆引为本据。",
     "word_count": 31994,
-    "filename": "101_jieshenmijing.md"
+    "filename": "101_jieshenmijing.md",
+    "cbeta_id": "T0676",
+    "canon_source": "《大正新脩大藏经》 T0676",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 102,
@@ -1031,7 +1435,11 @@
     "category": "唯识宗典",
     "summary": "三卷三品，地婆诃罗（日照三藏）译。佛住超越三界的密严佛国，应金刚藏菩萨之问宣说赖耶缘起与如来藏义：\"如来清净藏，世间阿赖耶，如金与指环，展转无差别\"——赖耶与如来藏如金与指环，一体二名。经中明言\"当知赖耶识，即名为密严\"，全经以密严净土为赖耶转依之境，是唯识与如来藏思想交汇的关键经典。",
     "word_count": 25749,
-    "filename": "102_miyanjing.md"
+    "filename": "102_miyanjing.md",
+    "cbeta_id": "T0681",
+    "canon_source": "《大正新脩大藏经》 T0681",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 103,
@@ -1041,7 +1449,11 @@
     "category": "唯识宗典",
     "summary": "无著菩萨造、玄奘译，七卷。两大部分：本事分四品广明三法（蕴界处、缘起、谛）、摄品、相应品、成就品；决择分四品对诸法体义重加抉择。全论系统整理阿毘达磨（对法）体系，涵盖蕴处界百法、缘起、四谛、烦恼差别、波罗蜜多等瑜伽行派全部基本概念，是无著菩萨义学体系的百科全书式总结，与《瑜伽师地论》并列为唯识学根本论典。",
     "word_count": 42251,
-    "filename": "103_achengjilun.md"
+    "filename": "103_achengjilun.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 104,
@@ -1051,7 +1463,11 @@
     "category": "唯识宗典",
     "summary": "弥勒菩萨（未来佛）造颂、后魏勒那摩提译，如来藏思想的根本论典。全论以七品抉择如来藏三义：体（自性清净真如）、因（信般若三昧大悲）、果（无量功德），以九种譬喻（萎花中佛、地中宝藏、弊衣裹金像、贫女怀轮王、焦泥宝像等）层层揭示\"一切众生皆有如来藏\"——凡夫、菩萨、佛的心性本体无二无别，唯垢染有浅深而已。与《大乘起信论》《密严经》共同构成如来藏系思想的经论三角。",
     "word_count": 39963,
-    "filename": "104_baoxinglun.md"
+    "filename": "104_baoxinglun.md",
+    "cbeta_id": "T1611",
+    "canon_source": "《大正新脩大藏经》 T1611",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 105,
@@ -1061,7 +1477,11 @@
     "category": "禅师语录",
     "summary": "南宋临济宗杨岐派大宗匠虚堂智愚禅师（1185—1269）语录十卷，参学妙源等编。收录兴圣、报恩光孝、显孝、瑞岩、万寿、育王、净慈、径山八大丛林上堂、小参、示众、普说、机缘、百则颂古与偈颂。师宗风峻拔、机锋超迈，直倡\"大机圆应，随处作主\"。日本南浦绍明入宋得师真传印可，归国开创日本临济宗\"应灯关派\"（大德寺、妙心寺派宗祖），虚堂因而被尊为日本禅宗远祖。",
     "word_count": 103287,
-    "filename": "105_xutangyulu.md"
+    "filename": "105_xutangyulu.md",
+    "cbeta_id": "T2000",
+    "canon_source": "《大正新脩大藏经》 T2000",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 106,
@@ -1071,7 +1491,11 @@
     "category": "禅师语录",
     "summary": "宋代曹洞宗中兴大宗师宏智正觉禅师（1091—1157，天童正觉）平生巨著九卷。收录泗州、舒州、庐山、真州、天童山等各刹上堂、小参、法语、真赞、偈颂箴铭与著名的百则颂古。师系统确立\"默照禅\"法门，著《默照铭》《坐禅箴》，倡\"默默忘言，昭昭现前\"。与大慧宗杲看话禅并称两宋禅林双绝，其百则颂古更为后世万松行秀评唱《从容录》之底本。",
     "word_count": 47444,
-    "filename": "106_hongzhiyulu.md"
+    "filename": "106_hongzhiyulu.md",
+    "cbeta_id": "T2001",
+    "canon_source": "《大正新脩大藏经》 T2001",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 107,
@@ -1081,7 +1505,11 @@
     "category": "论释义理",
     "summary": "后秦著名高僧僧肇大师（384—414）编纂集注之大乘宝典，十卷十四品。汇聚鸠摩罗什、僧肇、竺道生三大导师随文注疏。经文阐发\"不二法门\"、\"直心是道场\"与在俗菩萨行之深旨；三师注疏将\"法身无象殊形并应，圣智无知万品俱照\"、芥子纳须弥、维摩一默等妙境发挥到极致，融通中观般若与宗门心法，历代禅师皆引为参悟不二法门之最高指南。",
     "word_count": 116306,
-    "filename": "107_zhuweimojiejing.md"
+    "filename": "107_zhuweimojiejing.md",
+    "cbeta_id": "T1775",
+    "canon_source": "《大正新脩大藏经》 T1775",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 108,
@@ -1091,7 +1519,11 @@
     "category": "唯识宗典",
     "summary": "大乘佛教瑜伽行派（唯识学）\"弥勒五论\"之一，十三卷二十四品。弥勒菩萨造颂、无著菩萨作长行广释、唐中印度高僧波罗颇蜜多罗（明友三藏）译出。全论以二十四品严整体系阐发大乘菩萨因行与果德，尤其是其第七卷\"菩提品\"系统奠定了\"转八识成四智，束四智具三身\"（大圆镜智、平等性智、妙观察智、成所作智与法身、报身、化身）之根本学理，对唐代六祖坛经与中国禅宗转识成智、见性成佛理论产生了深远影响。",
     "word_count": 92089,
-    "filename": "108_dachengzhuangyanjinglun.md"
+    "filename": "108_dachengzhuangyanjinglun.md",
+    "cbeta_id": "T1604",
+    "canon_source": "《大正新脩大藏经》 T1604",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 109,
@@ -1101,7 +1533,11 @@
     "category": "公案机锋",
     "summary": "禅宗公案文学与宗门评唱之旷世双璧之一（与《碧岩录》并称\"北从容，南碧岩\"），六卷百则。由金元曹洞宗大宗师万松行秀禅师应中书令耶律楚材（湛然居士）坚请而作。精选宋代天童宏智正觉禅师百则颂古为底本，每则皆具\"示众、本则、着语、评唱、颂古\"五重严整体例。辞采高古雄浑、义理深邃透骨，博通儒释、结款出眼，为后世参究禅门百则公案、透脱文字葛藤之最高圭臬。",
     "word_count": 95984,
-    "filename": "109_congronglu.md"
+    "filename": "109_congronglu.md",
+    "cbeta_id": "T2004",
+    "canon_source": "《大正新脩大藏经》 T2004",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 110,
@@ -1111,7 +1547,11 @@
     "category": "唯识宗典",
     "summary": "汉传佛教唯识宗（法相宗）立宗根本大典，十卷。世亲菩萨造《唯识三十论颂》，印度护法、安慧等十大论师各作释论百卷；唐玄奘三藏以护法正义为主、融摄十家精华提纲挈领揉译而成。全论破我法二执，详析三能变识（阿赖耶识、末那识、前六识）、四分说（相分、见分、自证分、证自证分）与三自性，严整建立唯识五位修证阶梯，为大乘转识成智、见性归真提供了最坚实深邃的理论与修证实操基石。",
     "word_count": 81083,
-    "filename": "110_chengweishilun.md"
+    "filename": "110_chengweishilun.md",
+    "cbeta_id": "T1585",
+    "canon_source": "《大正新脩大藏经》 T1585",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 111,
@@ -1121,7 +1561,11 @@
     "category": "唯识宗典",
     "summary": "古印度大乘瑜伽行派宗纲大论，二十卷十一品。无著菩萨为摄受后学，将弥勒菩萨百卷《瑜伽师地论》十七地精要\"文约义周\"错综提炼而成，世称\"小瑜伽论\"。唐玄奘三藏奉诏译出。全论以摄事、摄净义、成善巧、成无常、成苦、成空、成无性、成现观、成瑜伽、成不思议、摄胜决择十一品，系统阐发五位百法、八识心王、三无自性、现观位次与瑜伽止观双运之甚深法门。",
     "word_count": 139122,
-    "filename": "111_xianyangshengjiaolun.md"
+    "filename": "111_xianyangshengjiaolun.md",
+    "cbeta_id": "T1602",
+    "canon_source": "《大正新脩大藏经》 T1602",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 112,
@@ -1131,7 +1575,11 @@
     "category": "禅师语录",
     "summary": "元代临济宗杨岐派一代泰斗、天目山高峰原妙禅师法嗣——中峰明本禅师（幻住庵主）三十卷宏伟全集。收录示众、小参、拈古、颂古、法语、书问、佛祖赞、山房夜话三卷、信心铭辟义解三卷、楞严征心辩见或问、幻住家训及怀净土百首等。禅风峻拔深邃、儒释融通，极倡\"大机圆应、随处作主、自性弥陀\"，对元明清三代禅宗及日本临济宗幻住派产生了深远持久的巨擘影响。",
     "word_count": 211007,
-    "filename": "112_tianmuzhongfengguanglu.md"
+    "filename": "112_tianmuzhongfengguanglu.md",
+    "cbeta_id": "B0145",
+    "canon_source": "《大藏经补编》 B0145",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 113,
@@ -1141,7 +1589,11 @@
     "category": "唯识宗典",
     "summary": "大乘瑜伽行派（对法学）根本宗典，七卷。无著菩萨总集大乘对法宗要于一炉，唐玄奘三藏奉诏译出。全论分为本事分（三法品、摄品、相应品、成就品）与决择分（谛决择、法决择、得决择、论议决择）两大部。系统确立大乘五位百法名相、八识体用、四圣谛十六行相、现观修道阶梯与因明论议正理，为大乘菩萨破除二执、转识成智提供了最严密完整的法相与止观基石。",
     "word_count": 42251,
-    "filename": "113_dachengapidamojilun.md"
+    "filename": "113_dachengapidamojilun.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 114,
@@ -1151,7 +1603,11 @@
     "category": "灯录史传",
     "summary": "中国佛教禅宗第一部官修灯录巨著，三十卷。宋真宗景德元年东吴沙门道原纂录、翰林学士杨亿等奉敕润色刊布。全书系统收录自过去七佛、西天二十八祖、东土六祖，至五代宋初南岳、青原下五家七宗共一千七百零一位禅门尊宿之传法世系、生平事迹、机锋问答与示法偈颂。被誉为\"禅宗灯录之冠\"与\"天下禅门第一百科全书\"，为后世参究禅宗公案机锋、考辨宗门法脉的最高权威圭臬。",
     "word_count": 380322,
-    "filename": "114_jingdechuandenglu.md"
+    "filename": "114_jingdechuandenglu.md",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 115,
@@ -1161,7 +1617,11 @@
     "category": "禅师语录",
     "summary": "中国禅宗史上第一部规模宏大的历代先德语录专集，四十八卷。宋代沙门赜藏主旁搜广采，汇辑南岳怀让、马祖道一、百丈怀海、赵州从谂（专集八卷）、睦州陈尊宿、临济义玄（专集四卷）、云门文偃（专集五卷）、云岩昙晟、投子大同、风穴延沼、首山省念、汾阳善昭、石霜楚圆、杨歧方会、黄龙慧南、真净克文、佛眼清远等唐宋二十余家巨匠之完整上堂法语与室中对机实录。辞旨高峻峭拔、朴质无伪，被后世公认为历代禅宗语录专集之开山鼻祖。",
     "word_count": 446987,
-    "filename": "115_guzunsuyulu.md"
+    "filename": "115_guzunsuyulu.md",
+    "cbeta_id": "X1315",
+    "canon_source": "《卍新纂续藏经》 X1315",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 116,
@@ -1171,7 +1631,11 @@
     "category": "禅师语录",
     "summary": "明末四大高僧之一紫柏真可大师（达观真可）生平著述之宏伟总集，三十卷。法友憨山德清等校次刊布。收录大师圜中语录（蒙冤下狱从容立化之壮烈实录）、法语十卷（痛斥口头狂禅、力主真参实悟克除习气之极精纯开示）、经论深解（以宗门见地融通心经、金刚、楞严、八识规矩）、刻藏缘起（开雕方册本《嘉兴藏》之万古鸿愿）及与晚明名士公卿往来书简。风骨奇伟、辞旨刚正，为明代禅宗中兴之精神丰碑。",
     "word_count": 342903,
-    "filename": "116_zibailaorenquanji.md"
+    "filename": "116_zibailaorenquanji.md",
+    "cbeta_id": "X1452",
+    "canon_source": "《卍新纂续藏经》 X1452",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 117,
@@ -1181,7 +1645,11 @@
     "category": "禅师语录",
     "summary": "明末四大高僧之一憨山德清大师一生著述与弘法之集大成巨帙，五十五卷。门人通炯等编次。全书收录大师法语十二卷（含名垂千古之《示参禅切要》《示念佛切要》）、书简九卷（与紫柏真可生死相勉及与晚明名士公卿交游）、序跋记文十八卷（曹溪南华寺中兴实录、五台崂山庐山道场始末）及赞颂诗偈十六卷。见地极圆、工夫极纯，融通禅净教于自性一心，为明代禅宗中兴与曹溪法脉再续之最高宗乘指南。",
     "word_count": 519509,
-    "filename": "117_hanshanlaorenmengyouji.md"
+    "filename": "117_hanshanlaorenmengyouji.md",
+    "cbeta_id": "X1456",
+    "canon_source": "《卍新纂续藏经》 X1456",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 118,
@@ -1191,7 +1659,11 @@
     "category": "灯录史传",
     "summary": "中国禅宗史上流传最广、影响最大之机锋公案集大成宝典，二十卷。南宋灵隐普济禅师将北宋以来《景德传灯录》《天圣广灯录》《建中靖国续灯录》《宗门联灯会要》《嘉泰普灯录》五部灯录删繁就简、融为一炉。全书以南岳、青原二系为主线，系统记载自过去七佛、西天东土祖师至宋代五家七宗（沩仰、临济、曹洞、云门、法眼、杨岐、黄龙）数千位禅僧最生动、最险峻之对机问答与悟道因缘。辞旨简古、机锋峭拔，被公认为禅门第一公案大典与文人学禅首选之书。",
     "word_count": 593519,
-    "filename": "118_wudenghuiyuan.md"
+    "filename": "118_wudenghuiyuan.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 119,
@@ -1201,7 +1673,11 @@
     "category": "禅教总集",
     "summary": "中国佛教史上规模最宏大、融通最彻底之禅教合一旷世巨著，一百卷。法眼宗三祖、净土宗六祖永明延寿大师（智觉禅师）著。大师统摄天台、华严、慈恩三宗高僧及宗门尊宿，广集大乘经论百二十部、诸祖言教百二十家，融汇于一炉。全书以“举一心为宗，照万法如镜”为宏纲，设三大章（标宗章、问答章六十一问、引证章），深析性相体用、理事无碍、真妄不二之极则，扫尽禅人盲修瞎炼与教家死执名相之病，为后世开辟理事圆融、禅净双修之无上坦途。",
     "word_count": 779693,
-    "filename": "119_zongjinglu.md"
+    "filename": "119_zongjinglu.md",
+    "cbeta_id": "T2016",
+    "canon_source": "《大正新脩大藏经》 T2016",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 120,
@@ -1211,7 +1687,11 @@
     "category": "灯录史传",
     "summary": "中国禅宗史上最脍炙人口、汇聚千古公案与历代祖师拈古颂古之集大成巨著，三十二卷。晚明大居士瞿汝稷（那罗延窟学人）辑。书名取《楞严经》“因指见月”之旨。全书不仅系统记载自过去七佛、西天东土祖师至五家七宗千余位宗师之悟道公案，更广收宋元名宿（雪窦重显、圆悟克勤、大慧宗杲、宏智正觉等）之拈古、代语、别语、颂古，并专辟卷帙载录历代在家尊宿居士（庞蕴、裴休、苏东坡、黄山谷等）之机锋行谊。体例完备、多维互映，被公认为禅人参悟与文人学禅之第一指归宝典。",
     "word_count": 467314,
-    "filename": "120_zhiyuelu.md"
+    "filename": "120_zhiyuelu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 121,
@@ -1221,7 +1701,11 @@
     "category": "禅林清规",
     "summary": "南宋千龟峰首座宗寿禅师（无量寿）汇集，亦称《无量寿禅师日用小清规》。系统详尽记录宋代禅林僧众从五更晨起、盥洗着衣、过堂用斋、食存五观、出寮入厕至夜卧入浴的一日十二时辰细微身心律仪，是禅宗“行住坐卧皆是道”、“平常心是道”最接地气的根本行持指南。",
     "word_count": 3275,
-    "filename": "121_ruzhongriyong.md"
+    "filename": "121_ruzhongriyong.md",
+    "cbeta_id": "X1246",
+    "canon_source": "《卍新纂续藏经》 X1246",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 122,
@@ -1231,7 +1715,11 @@
     "category": "灯录史传",
     "summary": "北宋云门宗明教契嵩大师详考西天梵夹、诸祖碑铭而撰，一卷图记并序。以确凿史料辩破后魏昙曜《付法藏传》残缺之谬，铁证如山地确立灵山拈花至曹溪一滴‘西天二十八祖、东土六祖’相承之法统正脉，并完整录出三十三代祖师传法心印偈，为禅宗万世定祖之宪纲大典。",
     "word_count": 6134,
-    "filename": "122_chuanfazhengzongdingzutu.md"
+    "filename": "122_chuanfazhengzongdingzutu.md",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 123,
@@ -1241,7 +1729,11 @@
     "category": "禅师语录",
     "summary": "元代临济宗杨歧派大宗师方山文宝禅师孤本法语集，曾秘藏于天台破院古佛腹中。全书宗风峭拔绝伦，直承临济棒喝大机大用，创设“撑铁船过海底向针孔叫屈”等方山三转语勘验学者，倡“于世谛中明取自心、百骸溃散一物长灵”，为元代禅门稀世法宝。",
     "word_count": 7029,
-    "filename": "123_fangshanwenbaoyulu.md"
+    "filename": "123_fangshanwenbaoyulu.md",
+    "cbeta_id": "X1395",
+    "canon_source": "《卍新纂续藏经》 X1395",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 124,
@@ -1251,7 +1743,11 @@
     "category": "禅师语录",
     "summary": "明末云门山麦浪怀禅师与设难者的机锋辨答实录。深入剖析达摩不立文字与五家立纲宗之圆融、死句与活句之用处在人、初心行者退屈心之对治，引“丙丁童子来求火”公案阐明离言大机大用，为晚明宗门破除狂禅与顽空死水之指路明灯。",
     "word_count": 7829,
-    "filename": "124_zongmenshenan.md"
+    "filename": "124_zongmenshenan.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 125,
@@ -1261,7 +1757,11 @@
     "category": "经部典籍",
     "summary": "大乘如来藏三大根本圣典之一。在家女居士胜鬘夫人承佛威神作无畏师子吼，发十大受与三大愿，极显自性清净心在缠为如来藏、出缠为法身之究竟一乘心性实相。",
     "word_count": 8559,
-    "filename": "125_shengmanjing.md"
+    "filename": "125_shengmanjing.md",
+    "cbeta_id": "T0353",
+    "canon_source": "《大正新脩大藏经》 T0353",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 126,
@@ -1271,7 +1771,11 @@
     "category": "宗门语录",
     "summary": "北宋临济宗黄龙派核心文献。超宗慧方禅师嗣法死心悟新，与草堂善清、觉范慧洪、灵源惟清并称黄龙四家。语录汇辑初住隆庆、禾山、云岩之上堂开示、公案机锋、精辟颂古及《古镜铭》。",
     "word_count": 9819,
-    "filename": "126_chaozongyulu.md"
+    "filename": "126_chaozongyulu.md",
+    "cbeta_id": "X1345",
+    "canon_source": "《卍新纂续藏经》 X1345",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 127,
@@ -1281,7 +1785,11 @@
     "category": "论部论典",
     "summary": "中观学派开山祖师龙树菩萨晚年大乘宝典。龙树菩萨应南印度国王请问，依中观般若与大悲菩提心，广论信智二根、十善安乐、五蕴无我、菩提资粮与大乘仁恕治国之法。",
     "word_count": 10368,
-    "filename": "127_baoxingwangzhenglun.md"
+    "filename": "127_baoxingwangzhenglun.md",
+    "cbeta_id": "T1656",
+    "canon_source": "《大正新脩大藏经》 T1656",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 128,
@@ -1291,7 +1799,11 @@
     "category": "中观论典",
     "summary": "大乘中观学派与三论宗立宗根本圣典。龙树菩萨造、鸠摩罗什译。论中设因缘、有果无果、缘、相、有相无相、一异、有无、性、因果、作、三时、生等十二门正观，层层推求诸法生灭之虚妄，荡涤一切自性执与二边见，直证缘起性空、毕竟空寂与法本无生。",
     "word_count": 11137,
-    "filename": "128_shiertimenlun.md"
+    "filename": "128_shiertimenlun.md",
+    "cbeta_id": "T1568",
+    "canon_source": "《大正新脩大藏经》 T1568",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 129,
@@ -1301,7 +1813,11 @@
     "category": "大乘经藏",
     "summary": "禅门印心之无上圣典，达摩祖师“二入四行”根本教理圣源。全经八品，融贯金刚般若与如来藏本觉，宣演理入与行入、本觉利行、无相无生与真实观忏悔，直指自性一味真实、本自清净不动。",
     "word_count": 11487,
-    "filename": "129_jingangsanmeijing.md"
+    "filename": "129_jingangsanmeijing.md",
+    "cbeta_id": "T0273",
+    "canon_source": "《大正新脩大藏经》 T0273",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 130,
@@ -1311,7 +1827,11 @@
     "category": "禅师语录",
     "summary": "元代临济宗一代宗师平石如砥禅师开示巨汇。师历住保圣、定水、天童三大名刹，宗风孤拔峭绝，操纵予夺如饿虎出林。语录载上堂、小参、真赞、法语及传世《十二时歌》，直指解脱唯在自心觉照，不立纤毫情解。",
     "word_count": 14979,
-    "filename": "130_pingshiyulu.md"
+    "filename": "130_pingshiyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 131,
@@ -1321,7 +1841,11 @@
     "category": "论释义理",
     "summary": "法眼宗三祖、净土宗六祖永明延寿禅师心性论巨著。融贯华严法界、天台止观与曹溪禅印，极论万法唯心、心外无境之妙旨；力破一百二十种偏邪知见与狂慧痴禅；后附《定慧相资歌》与《警世》文，普劝定慧双修、知苦断集、即心成佛。",
     "word_count": 6329,
-    "filename": "131_weixinjue.md"
+    "filename": "131_weixinjue.md",
+    "cbeta_id": "T2018",
+    "canon_source": "《大正新脩大藏经》 T2018",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 132,
@@ -1331,7 +1855,11 @@
     "category": "宗门语录",
     "summary": "法眼宗开山祖师文益禅师开示全集。师参罗汉桂琛，于“不知最亲切”与“一切现成”下顿彻心源。语录汇集临川崇寿、金陵报恩与清凉三大道场之上堂法语与机锋辨问，圆融华严六相大义与曹溪心印，标志禅门五宗七家祖师语录圆满闭环。",
     "word_count": 8371,
-    "filename": "132_wenyiyulu.md"
+    "filename": "132_wenyiyulu.md",
+    "cbeta_id": "T1991",
+    "canon_source": "《大正新脩大藏经》 T1991",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 133,
@@ -1341,7 +1869,11 @@
     "category": "宗门语录",
     "summary": "沩仰宗第二代祖师仰山慧寂禅师法语集。师幼断二指求法，承耽源九十七种圆相一览焚之，执侍沩山十五载父子相照。开堂仰山，机辩神化，号小释迦。详录农禅体用、圆相接机、上堂示众与临终示寂，补全禅门五宗七家祖师法脉最后拼图。",
     "word_count": 9309,
-    "filename": "133_yangshanyulu.md"
+    "filename": "133_yangshanyulu.md",
+    "cbeta_id": "T1990",
+    "canon_source": "《大正新脩大藏经》 T1990",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 134,
@@ -1351,7 +1883,11 @@
     "category": "论释义理",
     "summary": "大乘佛教如来藏与心性论集大成圣典。唐代实叉难陀携梵本重译之两卷全本，贤首法藏等参译。立一心二门三大为纲骨，深阐真如内熏、生灭和合之阿赖耶识与水风识浪之喻，开显信解行证四阶与真如三昧止观双修，为禅宗见性成佛提供至深理论基石。",
     "word_count": 11704,
-    "filename": "134_dachengqixinlunxinyi.md"
+    "filename": "134_dachengqixinlunxinyi.md",
+    "cbeta_id": "T1666",
+    "canon_source": "《大正新脩大藏经》 T1666",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 135,
@@ -1361,7 +1897,11 @@
     "category": "宗门语录",
     "summary": "南宋临济宗杨岐派剑关子益禅师开堂法语与诗颂集。师出蜀中剑州，开法隆兴兴化、云岩及福州怡山长庆。林希逸序赞其为“真风穴、杨岐种子”。录中机锋峭拔，以“长剑倚天、全收全放”全提向上，融极险截断与日用平常于一炉，尽展杨岐派峻烈宗风。",
     "word_count": 9555,
-    "filename": "135_jianguanyulu.md"
+    "filename": "135_jianguanyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 136,
@@ -1371,7 +1911,11 @@
     "category": "论释义理",
     "summary": "中观鼻祖龙树造颂、唯识宗师无著广释之绝世合璧圣典，元魏瞿昙流支译，两卷本。深阐《中论》八不根本偈，大破死执五蕴无常之“相似般若”与“执空成见诸佛不救”之顽疾，指明无取无舍、自性体空、二谛不二之真实般若，为禅宗不立文字直指人心提供至深中道辩证理论。",
     "word_count": 14074,
-    "filename": "136_shunzhonglun.md"
+    "filename": "136_shunzhonglun.md",
+    "cbeta_id": "T1565",
+    "canon_source": "《大正新脩大藏经》 T1565",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 137,
@@ -1381,7 +1925,11 @@
     "category": "丛林清规",
     "summary": "宋代禅门丛林清规实务操作集大成实录，一卷本。详录禅僧从晨起、洗漱、登厕、着衣、坐禅、过堂用斋、巡堂念诵，到挂搭请益、特为茶礼、知事进退、钟鼓法则、病僧送亡及沙弥受戒之全部细则，具象呈现禅宗借森严规矩消磨我慢执着、于平常威仪中彻显自性的丛林治道。",
     "word_count": 14190,
-    "filename": "137_ruzhongxuzhi.md"
+    "filename": "137_ruzhongxuzhi.md",
+    "cbeta_id": "X1247",
+    "canon_source": "《卍新纂续藏经》 X1247",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 138,
@@ -1391,7 +1939,11 @@
     "category": "宗门语录",
     "summary": "唐代襄阳庞蕴居士机缘语录与诗偈合集，三卷本。师世称东土维摩诘，参石头掩口、参马祖一口吸尽西江水而大悟。满船资财沉江，携女编篱度日。详录与药山、丹霞、百灵等当代名僧机锋，一家四口坐脱立亡之千古绝唱，以及“但愿空诸所有，慎勿实诸所无”之维摩至道。",
     "word_count": 14514,
-    "filename": "138_pangjushiyulu.md"
+    "filename": "138_pangjushiyulu.md",
+    "cbeta_id": "X1336",
+    "canon_source": "《卍新纂续藏经》 X1336",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 139,
@@ -1401,7 +1953,11 @@
     "category": "宗门语录",
     "summary": "元代临济宗杨岐派巨著。海印昭如禅师出世住持袁州木平、临江慧力、饶州荐福三会说法合集。师参雪岩祖钦大悟，与高峰原妙并为雪岩门下二上首。元贞年间敕赐普照大禅师。详阐“迷悟两忘，自断其首”、“意不停玄、句不停意、用不停机”之全机大用，临终绝笔“末后句无别说，六月炎天飞片雪”为宗门千古绝唱。",
     "word_count": 15143,
-    "filename": "139_haiyinyulu.md"
+    "filename": "139_haiyinyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 140,
@@ -1411,7 +1967,11 @@
     "category": "宗门论辩",
     "summary": "北宋明教大师契嵩所撰宗门护法巨著，两卷四篇。针对义学者执《付法藏传》对达摩祖裔之攻讦，深入考辨两传得失，辨明教外别传乃传先佛微密实相心印而非离教别求，考实西天二十八祖与东土六祖授受法统，以戒定为梯航、微密般若为灵府，彻底确立禅宗正统地位。",
     "word_count": 15412,
-    "filename": "140_chuanfazhengzonglun.md"
+    "filename": "140_chuanfazhengzonglun.md",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 141,
@@ -1421,7 +1981,11 @@
     "category": "宗门语录",
     "summary": "南宋临济宗杨岐派一代宗匠希叟绍昙住持佛陇、法华、雪窦与瑞岩开善四大名刹之开堂法语与诗偈集。师道风峭拔，号为撑拓宗门之铮然金钉子。详录农禅机锋、全提向上，以及与日本建长寺兰溪道隆门人等求法僧之机缘酬答，为中日禅宗法脉交融之重要实录。",
     "word_count": 15542,
-    "filename": "141_xisouyulu.md"
+    "filename": "141_xisouyulu.md",
+    "cbeta_id": "X1389",
+    "canon_source": "《卍新纂续藏经》 X1389",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 142,
@@ -1431,7 +1995,11 @@
     "category": "达摩论典",
     "summary": "大正藏 No. 2009《少室六门》第一门与第四门合辑。达摩大师以五言绝妙诗偈逐句阐发《心经》大乘空慧，以直捷问答开示自心现量与“迷时人逐法、解时法逐人”之安心极则，彻底补全少室六门法脉拼图。",
     "word_count": 2462,
-    "filename": "142_damoxinjinganxin.md"
+    "filename": "142_damoxinjinganxin.md",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 143,
@@ -1441,7 +2009,11 @@
     "category": "宗门语录",
     "summary": "元代临济宗破庵派高僧先睹禅师住天台山华顶峰善兴寺之传世精要。师大坐华顶四十年影不出山，与中峰明本并尊为东南二甘露门。其示徒直立“四绝路头”斩断情识，痛喝死守悟迹之“鹘臭布衫”，开示饥餐困眠之天然佛性，机锋峭拔，备受元代朝野与东亚求法僧推崇。",
     "word_count": 15085,
-    "filename": "143_wujianxianduyulu.md"
+    "filename": "143_wujianxianduyulu.md",
+    "cbeta_id": "X1393",
+    "canon_source": "《卍新纂续藏经》 X1393",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 144,
@@ -1451,7 +2023,11 @@
     "category": "语录",
     "summary": "北宋临济宗黄龙派第二代宗师晦堂祖心之权威语录。祖心承嗣黄龙慧南，大振宗风三十载，接化黄山谷以木犀天香顿悟本心。室中以黄龙拳头打破触背牢关，提撕学者顿忘诸见、著衣吃饭、履践自家田地。卷首御史徐禧序，卷尾枢密王韶序，见证宋代禅儒交融之盛。",
     "word_count": 16136,
-    "filename": "144_huitangyulu.md"
+    "filename": "144_huitangyulu.md",
+    "cbeta_id": "X1343",
+    "canon_source": "《卍新纂续藏经》 X1343",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 145,
@@ -1461,7 +2037,11 @@
     "category": "经论",
     "summary": "大乘佛教阐述菩提心、六波罗蜜与中观空性智慧之千古论典（即藏传《入菩萨行论》之宋译四卷本）。全书八品，以赞菩提心开篇，立自他平等与自他相换破除我执，以般若空慧极明二谛胜义，以大悲普皆回向。空悲不二，为禅人从理入贯通行入之行持宝典。",
     "word_count": 16132,
-    "filename": "145_putixingjing.md"
+    "filename": "145_putixingjing.md",
+    "cbeta_id": "T1662",
+    "canon_source": "《大正新脩大藏经》 T1662",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 146,
@@ -1471,7 +2051,11 @@
     "category": "经论",
     "summary": "大乘中观学派三论之一，圣天提婆菩萨破邪显正之冠顶论典。全书十品，僧肇作序赞其言而无当、破而无执。由舍罪福、破神我、破一异、破情尘，层层剥茧乃至第十品破空，扫尽一切有为无为法执。破而不立，与禅宗见佛杀佛、不立一法之宗风血脉相通。",
     "word_count": 20011,
-    "filename": "146_bailun.md"
+    "filename": "146_bailun.md",
+    "cbeta_id": "T1569",
+    "canon_source": "《大正新脩大藏经》 T1569",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 147,
@@ -1481,7 +2065,11 @@
     "category": "唐代禅宗文献 · 保唐宗根本祖典",
     "summary": "敦煌藏经洞出土唐代禅门绝品，亦名《师资众脉传》《最上乘顿悟法门》。记述达摩六祖相传、武后迎信衣转赐资州智詵，历处寂、新罗无相（金和尚）至保唐无住之剑南法脉。高举“无忆、无念、莫妄”三句极则，扫尽虚妄事相，直指无念本源。",
     "word_count": 25313,
-    "filename": "147_lidaifabaoji.md"
+    "filename": "147_lidaifabaoji.md",
+    "cbeta_id": "T2075",
+    "canon_source": "《大正新脩大藏经》 T2075",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 148,
@@ -1491,7 +2079,11 @@
     "category": "元代禅宗语录 · 临济宗杨岐派 · 天湖山居诗",
     "summary": "元代临济宗杨岐派巨匠石屋清珙之语录与天湖山居诗全帙。师承及菴信、远继高峰原妙，为韩国佛教太古宗之中土宗祖。全书收录福源寺上堂法语与山居绝唱百八十余首，高标“无山不带云，有水皆含月”之林下动静一如家风。",
     "word_count": 25145,
-    "filename": "148_shiwuyulu.md"
+    "filename": "148_shiwuyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 149,
@@ -1501,7 +2093,11 @@
     "category": "宋代禅宗语录 · 临济宗杨岐派 · 天童名刹",
     "summary": "南宋临济宗杨岐派巨匠西岩了慧住持平江定慧、雁荡能仁、庐山东林、庆元天童及瑞岩开善之法语汇编。深承径山无准师范大机大用，与断桥妙伦、物初大观齐名，示日本证上人并撰藤原舍经记，展现宋元之际中日传法盛况。",
     "word_count": 25504,
-    "filename": "149_xiyanyulu.md"
+    "filename": "149_xiyanyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 150,
@@ -1511,7 +2107,11 @@
     "category": "宋代禅宗语录 · 临济宗杨岐派",
     "summary": "南宋临济宗杨岐派破庵支系巨擘断桥妙伦禅师语录全帙。师承径山无准师范，与西岩了慧、雪岩祖钦并称南宋杨岐三大尊宿。历主瑞峰、瑞岩、天台国清及杭州净慈报恩光孝禅寺，以断桥活路、截断众流、不立阶梯接引四海学人与日本求法僧，宗风峻拔雄浑。",
     "word_count": 30657,
-    "filename": "150_duanqiaoyulu.md"
+    "filename": "150_duanqiaoyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 151,
@@ -1521,7 +2121,11 @@
     "category": "宗师语录",
     "summary": "南朝梁代傅大士（弥勒应身）之根本语录与诗偈总集。载其双林树下苦修、见梁武帝论道、金刚经拍案示法等公案，并收录名重千古之《心王铭》《还源诗》《行路难》，为禅宗观心安心与三教同源之源头文献。",
     "word_count": 35037,
-    "filename": "151_shanhuidashilu.md"
+    "filename": "151_shanhuidashilu.md",
+    "cbeta_id": "X1335",
+    "canon_source": "《卍新纂续藏经》 X1335",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 152,
@@ -1531,7 +2135,11 @@
     "category": "宗师语录",
     "summary": "宋末元初临济杨岐派宗师月磵和尚之五会语录与诗颂全集。禅师嗣法天童西岩了慧，两历宋元鼎革，以撞破生铁网、踏翻虚空界之峭拔宗风接引后学，大开选佛场直显心空及第。",
     "word_count": 35451,
-    "filename": "152_yuejianyulu.md"
+    "filename": "152_yuejianyulu.md",
+    "cbeta_id": "X1392",
+    "canon_source": "《卍新纂续藏经》 X1392",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 153,
@@ -1541,7 +2149,11 @@
     "category": "禅门清规",
     "summary": "南宋咸淳十年金华后湖比丘惟勉编订之清规大成。上承百丈遗轨与崇宁禅苑，下开敕修百丈清规之先河，详定宋代僧堂十六板首、四节茶汤图位、两班职事进退与坐禅放参号令，为宗门事理圆融之纲维。",
     "word_count": 37129,
-    "filename": "153_conglinxiaodingqinggui.md"
+    "filename": "153_conglinxiaodingqinggui.md",
+    "cbeta_id": "X1249",
+    "canon_source": "《卍新纂续藏经》 X1249",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 154,
@@ -1551,7 +2163,11 @@
     "category": "大乘经论",
     "summary": "北宋译经三藏法护与惟净等奉诏合译之十卷大乘集要大论。博引百余部大乘经典圣言量，详论发菩提心与大悲行愿，层层勘破增上慢与微细魔事，深抉如来藏本来清净与第一义空无自性之圆融真谛，为宗门见性明心之义理圭臬。",
     "word_count": 36326,
-    "filename": "154_dachengbaoyaoyilun.md"
+    "filename": "154_dachengbaoyaoyilun.md",
+    "cbeta_id": "T1635",
+    "canon_source": "《大正新脩大藏经》 T1635",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 155,
@@ -1561,7 +2177,11 @@
     "category": "宗师语录",
     "summary": "宋末元初临济杨岐派一代巨擘环溪惟一禅师之九会语录与题跋全集。禅师嗣法径山无准师范，历主建宁瑞岩、福州雪峰、庆元天童等九座东南巨刹。宗风如雷霆风烈，以揽醍醐为毒药之霹雳机锋痛剿学人偷心，抗节不屈，力振正法。",
     "word_count": 38456,
-    "filename": "155_huanxiyulu.md"
+    "filename": "155_huanxiyulu.md",
+    "cbeta_id": "X1388",
+    "canon_source": "《卍新纂续藏经》 X1388",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 156,
@@ -1571,7 +2191,11 @@
     "category": "宗师语录",
     "summary": "北宋临济宗中兴巨匠汾阳善昭禅师语录三卷。师承首山省念，聚徒汾州太子院三十载，丛林尊为西河师子。首创汾阳十八问与三玄三要，开宋代百则颂古拈古之先河，育就石霜楚圆等大器，开辟两宋临济杨岐、黄龙天下宗风。",
     "word_count": 45919,
-    "filename": "156_fenyangyulu.md"
+    "filename": "156_fenyangyulu.md",
+    "cbeta_id": "T1992",
+    "canon_source": "《大正新脩大藏经》 T1992",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 157,
@@ -1581,7 +2205,11 @@
     "category": "宗师语录",
     "summary": "南宋临济宗杨岐派大宗师石田法薰禅师语录四卷。师承松源崇岳，历主平江高峰、枫桥普明、蒋山太平兴国、杭州净慈与灵隐五大名刹。宗风孤拔纯真，早年高峰开炉有“死柴头上火”之句，入圆悟关显“旧车横推”之大机大用，示寂前垂示“但得本莫愁末”，极具力量。",
     "word_count": 48541,
-    "filename": "157_shitianyulu.md"
+    "filename": "157_shitianyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 158,
@@ -1591,7 +2219,11 @@
     "category": "宗师语录",
     "summary": "北宋云门宗中兴大祖雪窦重显禅师语录六卷。禅师上承智门光祚，历主洞庭翠峰与明州雪窦山三十一年，门下出天衣义怀等大器。其以如海诗才精选百则公案作颂古，成为后世圆悟克勤评唱《碧岩录》之根本底本；融贯云门三句与宗门三印，开创宋代文字禅典范。",
     "word_count": 54457,
-    "filename": "158_mingjueyulu.md"
+    "filename": "158_mingjueyulu.md",
+    "cbeta_id": "T1996",
+    "canon_source": "《大正新脩大藏经》 T1996",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 159,
@@ -1601,7 +2233,11 @@
     "category": "禅门清规",
     "summary": "元代著名高僧泽山一咸（东林一咸）历数十载遍访名刹尊宿编纂之丛林清规十卷巨著。依《千字文》编次门目，详定祝圣祈祷、坐禅晚参、两班职事、特为茶汤、持犯纠察、涅槃送终与警众法器等百余项轨范，主张“备而不用”，为元代四大清规关键枢纽。",
     "word_count": 59561,
-    "filename": "159_chanlinbeiyongqinggui.md"
+    "filename": "159_chanlinbeiyongqinggui.md",
+    "cbeta_id": "X1250",
+    "canon_source": "《卍新纂续藏经》 X1250",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 160,
@@ -1611,7 +2247,11 @@
     "category": "宗师语录",
     "summary": "南宋末元初临济宗杨岐派宗师雪岩祖钦禅师住龙兴、道林、佛日、护圣、光孝、仰山语录。核心收录其自述行脚因缘、破除死水枯木禅、与修上座参研生铁脊梁及尽命提赵州无字话头开示，上承无准师范，下开高峰原妙，为宋元看话禅实修极则宝典。",
     "word_count": 64263,
-    "filename": "160_xueyanyulu.md"
+    "filename": "160_xueyanyulu.md",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 161,
@@ -1621,7 +2261,11 @@
     "category": "大乘经论",
     "summary": "大乘一乘圆教根本圣典，后秦鸠摩罗什译。全经七卷二十八品，阐明开权显实、会三归一，宣告声闻缘觉皆当作佛。借火宅、穷子、化城、衣里明珠等七喻直指自性本具，六祖破法达心悟转法华，为宗门见性成佛核心经论。",
     "word_count": 72034,
-    "filename": "161_miaofalianhuajing.md"
+    "filename": "161_miaofalianhuajing.md",
+    "cbeta_id": "T0262",
+    "canon_source": "《大正新脩大藏经》 T0262",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 162,
@@ -1631,7 +2275,11 @@
     "category": "灯录史传",
     "summary": "北宋明教大师契嵩考定禅宗正统法脉之九卷史学巨典。详叙西天二十八祖、东土六祖乃至南岳青原二支法脉传法因缘与付法偈颂，破后魏昙曜《付法藏传》之阙略，确立宗门正统法统，宋仁宗敕编入大藏。",
     "word_count": 73869,
-    "filename": "162_chuanfazhengzongji.md"
+    "filename": "162_chuanfazhengzongji.md",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 163,
@@ -1641,7 +2289,11 @@
     "category": "清规训诫",
     "summary": "明代如卺所辑丛林警策训诫第一大典，凡十卷。汇聚东晋道安、唐沩山、黄檗、宋圆悟、大慧、中峰明本等历代宗师教诫，涵盖出家行持、坐禅真髓、破除放逸、整肃威仪，被誉为缁门入道第一宝鉴。",
     "word_count": 76427,
-    "filename": "163_zimenjingxun.md"
+    "filename": "163_zimenjingxun.md",
+    "cbeta_id": "T2023",
+    "canon_source": "《大正新脩大藏经》 T2023",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 164,
@@ -1651,7 +2303,11 @@
     "category": "语录公案",
     "summary": "宋代临济宗杨岐派希叟绍昙禅师大部头全景广录，凡七卷。汇集其历住佛陇、法华、雪窦、开善诸寺之上堂法语、小参、提唱、序说、拈古颂古、题画送行与诸祖像赞，宗风峻拔险绝，直指自性，充分展现宋末临济宗大机大用与向东瀛传法的深远法脉。",
     "word_count": 81943,
-    "filename": "164_xisouguanglu.md"
+    "filename": "164_xisouguanglu.md",
+    "cbeta_id": "X1389",
+    "canon_source": "《卍新纂续藏经》 X1389",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 165,
@@ -1661,7 +2317,11 @@
     "category": "大乘经论",
     "summary": "古印度大乘中观自续派开宗立派根本大论，凡十五卷二十七品。龙树菩萨造根本颂，清辩（分别明）菩萨造释，唐初波罗颇蜜多罗三藏译出。以因明因量广破外道小乘实有诸执，融贯二谛，抉择八不缘起、诸法毕竟空性，为禅宗彻破见思情执、直显无分别本觉之胜义慧炬。",
     "word_count": 111545,
-    "filename": "165_banruodenglunshi.md"
+    "filename": "165_banruodenglunshi.md",
+    "cbeta_id": "T1566",
+    "canon_source": "《大正新脩大藏经》 T1566",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 166,
@@ -1671,7 +2331,11 @@
     "category": "语录公案",
     "summary": "清世宗雍正帝（圆明居士）御选历代禅宗宗门十九卷皇皇巨典。分正集、外集、前集、后集，精选自僧肇、永嘉、寒山拾得、沩山、赵州、云门、永明延寿、雪窦、圆悟、高峰、中峰至玉林通琇诸大祖师顶尖法语公案，并兼收紫阳真人及圆明居士自著语要。御制总序确立‘透三关’宗门正统纲宗，痛斥野狐狂禅三端病根，宗眼如炬，为清代宗门第一权威选本。",
     "word_count": 279122,
-    "filename": "166_yuxuanyulu.md"
+    "filename": "166_yuxuanyulu.md",
+    "cbeta_id": "X1319",
+    "canon_source": "《卍新纂续藏经》 X1319",
+    "dynasty": "清代/近代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   },
   {
     "idx": 167,
@@ -1681,6 +2345,10 @@
     "category": "灯史源流",
     "summary": "宋代道原《景德传灯录》之正统续编，南宋圆极居顶等编集，经宋廷敕准入藏。全书三十六卷，详录大鉴下第十世至第二十五世五家七宗历代宗师（汾阳善昭、雪窦重显、杨岐方会、黄龙慧南、圆悟克勤、宏智正觉、大慧宗杲等）生平行实与大机大用机锋公案，为宋代禅宗最核心的传灯全书。",
     "word_count": 337760,
-    "filename": "167_xuchuandenglu.md"
+    "filename": "167_xuchuandenglu.md",
+    "cbeta_id": "T2077",
+    "canon_source": "《大正新脩大藏经》 T2077",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
   }
 ]

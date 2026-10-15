@@ -53,5 +53,12 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# --- 核心 Sitemap 索引 ---
+# --- 核心 Sitemap 索引与分片子地图 ---
 Sitemap: https://chanzong.space/sitemap.xml
+Sitemap: https://chanzong.space/sitemaps/classics.xml
+Sitemap: https://chanzong.space/sitemaps/concepts.xml
+Sitemap: https://chanzong.space/sitemaps/koans.xml
+Sitemap: https://chanzong.space/sitemaps/persons.xml
+Sitemap: https://chanzong.space/sitemaps/methods.xml
+Sitemap: https://chanzong.space/sitemaps/collections.xml
+Sitemap: https://chanzong.space/sitemaps/static.xml

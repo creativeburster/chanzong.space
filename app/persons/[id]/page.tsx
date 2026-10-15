@@ -42,12 +42,33 @@ export function generateMetadata({ params }: PageProps): Metadata {
 function EntityJsonLd({ item }: { item: any }) {
   const name = String(item.name || '');
   const desc = String(item.teachings || '').replace(/\s+/g, ' ').slice(0, 160);
+  const knows = (item.relatedPersons || []).map((rid: string) => {
+    const rp = ZEN_PERSONS.find((p: any) => p.id === rid);
+    return {
+      '@type': 'Person',
+      name: rp ? rp.name : rid,
+      url: `https://chanzong.space/persons/${rid}`,
+    };
+  });
+  const subjectOf = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    url: `https://chanzong.space/classics/${bid}`,
+  }));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name,
+    jobTitle: item.title,
     description: desc,
     url: `https://chanzong.space/persons/${item.id}`,
+    knows: knows.length > 0 ? knows : undefined,
+    subjectOf: subjectOf.length > 0 ? subjectOf : undefined,
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: '禅宗祖师 / 佛教高僧',
+    },
+    inLanguage: 'zh-CN',
   };
   return (
     <script

@@ -422,6 +422,30 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                 <p className={`mt-1.5 sm:mt-2 text-xs font-bold ${currentTheme.secondaryText}`}>
                   {t('作者')}：{t(meta.author)} · {t('分类')}：{t(meta.category)} · {Math.round(meta.word_count / 1000 * 10) / 10}k {t('字')}
                 </p>
+                {(meta.cbeta_id || meta.canon_source) && (
+                  <div className="mt-2.5 flex items-center gap-2 flex-wrap text-xs">
+                    {meta.cbeta_id && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-amber-500/15 text-amber-800 dark:text-amber-200 border border-amber-500/30 font-mono font-semibold" title="大藏经/CBETA 权威典籍编目编号">
+                        <span className="opacity-75">{t('经号')}:</span>
+                        <span>{meta.cbeta_id}</span>
+                      </span>
+                    )}
+                    {meta.canon_source && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-slate-500/10 text-slate-700 dark:text-slate-300 border border-slate-500/20" title="文献底本出处藏经">
+                        <span className="opacity-75">{t('底本')}:</span>
+                        <span>{t(meta.canon_source)}</span>
+                      </span>
+                    )}
+                    {meta.dynasty && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-stone-500/10 text-stone-700 dark:text-stone-300 border border-stone-500/20">
+                        <span>{t(meta.dynasty)}</span>
+                      </span>
+                    )}
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 border border-emerald-500/20" title={meta.collation_note || '经过CBETA电子佛典对照人工分段标点与校勘'}>
+                      <span>✓ {t('权威校勘认证')}</span>
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Toolbar Controls */}

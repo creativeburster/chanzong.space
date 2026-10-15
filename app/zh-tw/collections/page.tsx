@@ -5,7 +5,7 @@ import { CollectionsPageClient } from '@/app/collections/CollectionsPageClient';
 import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
-  title: '典籍合集大廳 · 歷代宗門著作專題彙編 | 禪宗知識庫',
+  title: '典籍合集大廳 · 歷代宗門著作專題彙編',
   description: '禪宗知識庫典籍合集大廳，系統彙集《少室六門》《傳法正宗三書》《永明延壽一心法界全書》《普照國師修心指南》《圓悟克勤禪法總集》《龍樹中觀根本論典集》等14大宗師經典合集，全方位重現法統源流與修持大廈。',
   alternates: {
     canonical: '/zh-tw/collections',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: '典籍合集大廳 · 歷代宗門著作專題彙編 | 禪宗知識庫',
+    title: '典籍合集大廳 · 歷代宗門著作專題彙編',
     description: '系統彙集14大宗師經典合集，涵蓋44部核心典籍。重現少室六門、傳法正宗、宗鏡大廈等法脈體系。',
   },
 };

@@ -13,10 +13,17 @@ export async function GET() {
   content += `> 数据规模: 收录 ${manifest.length} 部核心禅宗典籍（汉传、南传、藏传、高丽、东瀛禅籍）、${ZEN_CONCEPTS.length} 个核心概念、${ZEN_METHODS.length} 种修持法门、${ZEN_KOANS.length} 则传世公案、${ZEN_PERSONS.length} 位历代祖师、${ZEN_FAQS.length} 条义理与修行问答。\n`;
   content += `> 更新日期: ${now}\n`;
   content += `> 完整版全量上下文: https://chanzong.space/llms-full.txt\n`;
-  content += `> Sitemap: https://chanzong.space/sitemap.xml\n\n`;
+  content += `> Sitemap Index 索引主入口: https://chanzong.space/sitemap.xml\n`;
+  content += `> - 经典分片地图: https://chanzong.space/sitemaps/classics.xml\n`;
+  content += `> - 概念分片地图: https://chanzong.space/sitemaps/concepts.xml\n`;
+  content += `> - 公案分片地图: https://chanzong.space/sitemaps/koans.xml\n`;
+  content += `> - 人物分片地图: https://chanzong.space/sitemaps/persons.xml\n`;
+  content += `> - 法门分片地图: https://chanzong.space/sitemaps/methods.xml\n`;
+  content += `> - 问答与文集地图: https://chanzong.space/sitemaps/collections.xml\n`;
+  content += `> - 基础频道地图: https://chanzong.space/sitemaps/static.xml\n\n`;
 
   content += `## 核心定位与权威宗旨\n\n`;
-  content += `禅宗（Chan/Zen Buddhism）以“教外别传，不立文字，直指人心，见性成佛”为根本宗旨。本站文本严谨校对自 CBETA 电子佛典与《大正新脩大藏经》，并为每部典籍配备白话导读、重点提炼、公案提取、字词注音与义理问答。\n\n`;
+  content += `禅宗（Chan/Zen Buddhism）以“教外别传，不立文字，直指人心，见性成佛”为根本宗旨。本站文本严谨校对自 CBETA 电子佛典、《大正新脩大藏经》与《卍新纂续藏经》，并为每部典籍配备白话导读、重点提炼、公案提取、字词注音与义理问答。\n\n`;
 
   content += `## 双语路由规范 (Bilingual Routes)\n\n`;
   content += `- 简体中文主站: https://chanzong.space/\n`;
@@ -24,7 +31,8 @@ export async function GET() {
 
   content += `## 核心经典精选目录 (部分代表作, 全量详见 /books 或 /llms-full.txt)\n\n`;
   manifest.slice(0, 35).forEach((item) => {
-    content += `- [${item.title}](https://chanzong.space/classics/${item.id}) ([繁體](https://chanzong.space/zh-tw/classics/${item.id})): ${item.author} 著 | ${item.category} | ${item.summary}\n`;
+    const cbetaTag = item.cbeta_id ? ` [藏经: ${item.cbeta_id}]` : '';
+    content += `- [${item.title}](https://chanzong.space/classics/${item.id}) ([繁體](https://chanzong.space/zh-tw/classics/${item.id})): ${item.author} 著${cbetaTag} | ${item.category} | ${item.summary}\n`;
   });
   content += `- ... 更多共 ${manifest.length} 部典籍详见 https://chanzong.space/books\n\n`;
 

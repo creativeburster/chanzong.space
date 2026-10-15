@@ -17,6 +17,7 @@ export async function GET() {
     content += `### ${b.idx}. 《${b.title}》\n`;
     content += `- 链接: https://chanzong.space/classics/${b.id}\n`;
     content += `- 繁体: https://chanzong.space/zh-tw/classics/${b.id}\n`;
+    if (b.cbeta_id) content += `- 藏经编号: ${b.cbeta_id} (${b.canon_source || 'CBETA / 大正藏'})\n`;
     content += `- 作者: ${b.author}\n`;
     content += `- 分类: ${b.category}\n`;
     content += `- 字数: 约${Math.round(b.word_count / 1000)}千字\n`;

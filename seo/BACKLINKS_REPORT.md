@@ -1,8 +1,8 @@
 # 禅宗知识库 (chanzong.space) 外链建设监控报告
 
-> 更新时间: 2026-09-20 14:36:45  
+> 更新时间: 2026-10-15 16:26:34  
 > 目标配比: **国内 60% : 海外及繁体 40%**  
-> 当前达成: **国内 233 条 (80.3%) : 海外繁体 57 条 (19.7%)** | 总计: **290 条**
+> 当前达成: **国内 244 条 (80.5%) : 海外繁体 58 条 (19.1%)** | 总计: **303 条**
 
 ---
 
@@ -10,27 +10,27 @@
 
 | 区域 | 平台 | 数量 | 占比 |
 |---|---|---|---|
-| - | 知乎 (Zhihu DA 95+) | 36 | 12.4% |
-| - | Telegraph (DA 92 高权重专栏) | 32 | 11.0% |
-| - | 哔哩哔哩 (Bilibili DA 94+) | 31 | 10.7% |
-| - | 新浪微博 (Weibo DA 90+) | 30 | 10.3% |
-| - | 稀土掘金 (Juejin DA 86+) | 27 | 9.3% |
-| - | 博客园 (CNBlogs DA 89+) | 21 | 7.2% |
-| - | GitHub Gist (顶级域名 DA 96) | 17 | 5.9% |
-| - | CSDN (DA 92+) | 13 | 4.5% |
-| - | 豆瓣 (Douban DA 88+) | 12 | 4.1% |
-| - | Rentry.co (独立域名 DA 78) | 11 | 3.8% |
-| - | Telegraph (高权重学术专栏) | 10 | 3.4% |
-| - | 知乎 (Zhihu DA 94+) | 9 | 3.1% |
-| - | CSDN | 6 | 2.1% |
+| - | 知乎 (Zhihu DA 95+) | 37 | 12.2% |
+| - | 哔哩哔哩 (Bilibili DA 94+) | 36 | 11.9% |
+| - | Telegraph (DA 92 高权重专栏) | 32 | 10.6% |
+| - | 新浪微博 (Weibo DA 90+) | 32 | 10.6% |
+| - | 稀土掘金 (Juejin DA 86+) | 29 | 9.6% |
+| - | 博客园 (CNBlogs DA 89+) | 21 | 6.9% |
+| - | GitHub Gist (顶级域名 DA 96) | 17 | 5.6% |
+| - | 豆瓣 (Douban DA 88+) | 13 | 4.3% |
+| - | CSDN (DA 92+) | 13 | 4.3% |
+| - | Rentry.co (独立域名 DA 78) | 11 | 3.6% |
+| - | Telegraph (高权重学术专栏) | 10 | 3.3% |
+| - | 知乎 (Zhihu DA 94+) | 9 | 3.0% |
+| - | CSDN | 6 | 2.0% |
 | - | 简书 (Jianshu DA 86+) | 5 | 1.7% |
 | - | GitHub (顶级独立域名 DA 96) | 3 | 1.0% |
+| - | Dev.to (全球权威开发者平台 DA 90) | 3 | 1.0% |
 | - | 百度贴吧 (Baidu Tieba DA 92+) | 3 | 1.0% |
 | - | Google Webmaster Ping | 2 | 0.7% |
 | - | Bing & Yahoo Webmaster Ping | 2 | 0.7% |
 | - | IndexNow (Bing / Yandex / 国际引擎) | 2 | 0.7% |
 | - | Write.as (独立域名 DA 75) | 2 | 0.7% |
-| - | Dev.to (全球权威开发者平台 DA 90) | 2 | 0.7% |
 | - | 小红书 (Xiaohongshu DA 85+) | 2 | 0.7% |
 | - | 华文网址导航 (123Cha) | 1 | 0.3% |
 | - | GitHub (顶级根域名 DA 96) | 1 | 0.3% |
@@ -44,6 +44,7 @@
 | - | Termbin (全球终端文献平台 DA 68) | 1 | 0.3% |
 | - | Cl1p.net (全球知名在线便签 DA 70) | 1 | 0.3% |
 | - | TinyURL (全球顶级路由网络 DA 94) | 1 | 0.3% |
+| - | CSDN (DA 92+ 专家博客) | 1 | 0.3% |
 
 ---
 
@@ -51,6 +52,19 @@
 
 | 编号 | 时间 | 平台 | 区域 | 标题/主题 | 目标落地页 | 外部链接 | 状态 |
 |---|---|---|---|---|---|---|---|
+| BL-0303 | 2026-10-15 | 哔哩哔哩 (Bilibili DA 94+) | 华语/中国大陆 | 【平常是道 · 祖师家风】赵州从谂禅师“狗子佛性”... | [/classics/zhaozhoulu](https://chanzong.space/classics/zhaozhoulu) | [哔哩哔哩 (Bilibili DA 94+)发布](https://t.bilibili.com/1259346202924679204) | Active |
+| BL-0302 | 2026-10-15 | 哔哩哔哩 (Bilibili DA 94+) | 国内大陆 | 【至道无难 · 绝学无为】永嘉玄觉大师《证道歌》心... | [/classics/zhengdaoge](https://chanzong.space/classics/zhengdaoge) | [哔哩哔哩 (Bilibili DA 94+)发布](https://t.bilibili.com/1259344656739598336) | Live |
+| BL-0301 | 2026-10-15 | 哔哩哔哩 (Bilibili DA 94+) | 国内大陆 | 【动静一如 · 咬着米了吗】黄檗希运禅师《传心法要... | [/classics/huangbo](https://chanzong.space/classics/huangbo) | [哔哩哔哩 (Bilibili DA 94+)发布](https://t.bilibili.com/1259335899312816152) | Live |
+| BL-0300 | 2026-09-30 | 稀土掘金 (Juejin DA 86+) | 国内大陆 | 大规模古典哲学知识网络的前端渲染性能优化与 D3 ... | [/graph](https://chanzong.space/graph) | [稀土掘金 (Juejin DA 86+)发布](https://juejin.cn/post/7683394933153382440) | Live |
+| BL-0299 | 2026-09-30 | 稀土掘金 (Juejin DA 86+) | 国内大陆 | 大规模古典哲学知识网络的前端渲染性能优化与 D3 ... | [/graph](https://chanzong.space/graph) | [稀土掘金 (Juejin DA 86+)发布](https://juejin.cn/post/7683804372279377920) | Live |
+| BL-0298 | 2026-09-30 | CSDN (DA 92+ 专家博客) | 国内大陆 | 数字人文前沿：基于 D3.js 物理力导向算法与 ... | [/graph](https://chanzong.space/graph) | [CSDN (DA 92+ 专家博客)发布](https://blog.csdn.net/oWillSun/article/details/165226160) | Live |
+| BL-0297 | 2026-09-30 | Dev.to (全球权威开发者平台 DA 90) | 海外繁体 | Engineering a Scalable Di... | [/graph](https://chanzong.space/graph) | [Dev.to (全球权威开发者平台 DA 90)发布](https://dev.to/willsun/engineering-a-scalable-digital-humanities-knowledge-graph-for-130-zen-classics-with-nextjs-14--4k1g) | Live |
+| BL-0296 | 2026-09-22 | 豆瓣 (Douban DA 88+) | 国内 | 豆瓣学者外部书评《三祖僧璨信心铭要典》学术深度探讨... | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [豆瓣 (Douban DA 88+)发布](https://book.douban.com/review/12383629/) | Live |
+| BL-0295 | 2026-09-22 | 知乎 (Zhihu DA 95+) | 国内 | 无念为宗，无相为体，无住为本：六祖坛经顿悟心法与现... | [/classics/liuzutan-jing](https://chanzong.space/classics/liuzutan-jing) | [知乎 (Zhihu DA 95+)发布](https://zhuanlan.zhihu.com/p/2085751440807613797) | Live |
+| BL-0294 | 2026-09-22 | 哔哩哔哩 (Bilibili DA 94+) | 国内 | 【曹溪正传 · 顿悟法雷】荷泽神会显宗记心髓考据 | [/classics/shenhui](https://chanzong.space/classics/shenhui) | [哔哩哔哩 (Bilibili DA 94+)发布](https://t.bilibili.com/1250793681800134660) | Live |
+| BL-0293 | 2026-09-22 | 哔哩哔哩 (Bilibili DA 94+) | 国内 | 【古佛家风 · 平常是道】赵州和尚“吃茶去”与不二... | [/classics/zhaozhoulu](https://chanzong.space/classics/zhaozhoulu) | [哔哩哔哩 (Bilibili DA 94+)发布](https://t.bilibili.com/1250791882195206144) | Live |
+| BL-0292 | 2026-09-22 | 新浪微博 (Weibo DA 90+) | 国内 | 【至道无难 · 歇却爱憎】读三祖僧璨大师《信心铭》... | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/2562810123/RiXuefNXo) | Live |
+| BL-0291 | 2026-09-22 | 新浪微博 (Weibo DA 90+) | 国内 | 【动静一如 · 咬着米了吗】黄檗禅师无心顿悟法门 | [/classics/huangbo](https://chanzong.space/classics/huangbo) | [新浪微博 (Weibo DA 90+)发布](https://weibo.com/2337102433/RjafnqDdK) | Live |
 | BL-0290 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 国内 | 三祖僧璨大师信心铭至道无难考释：绝言绝虑与圆同太虚 | [/classics/xinxinming](https://chanzong.space/classics/xinxinming) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/38s8meib) | Live |
 | BL-0289 | 2026-09-20 | Rentry.co (独立域名 DA 78) | 国内 | 荷泽神会显宗记心髓考据：顿悟成佛与南宗顿教之争 | [/classics/shenhui](https://chanzong.space/classics/shenhui) | [Rentry.co (独立域名 DA 78)发布](https://rentry.co/mk3ptndo) | Live |
 | BL-0288 | 2026-09-20 | Telegraph (DA 92 高权重专栏) | 海外繁体 | 禅宗 130 部经典全景知识网络本体模型与分类法 ... | [/glossary](https://chanzong.space/glossary) | [Telegraph (DA 92 高权重专栏)发布](https://telegra.ph/禪宗130部經典全景知識網絡本體模型與分類法Schema架構指南-09-20) | Live |

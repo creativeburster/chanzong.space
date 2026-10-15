@@ -10,6 +10,10 @@ export interface ClassicItem {
   summary?: string;
   word_count: number;
   filename: string;
+  cbeta_id?: string;
+  canon_source?: string;
+  dynasty?: string;
+  collation_note?: string;
 }
 
 const ROOT_DIR = process.cwd();

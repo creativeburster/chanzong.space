@@ -21,6 +21,30 @@ import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
+/* 书名变体别名：经典卡书名 → manifest id */
+const CLASSIC_ALIAS: Record<string, string> = {
+  '赵州禅师语录': 'zhaozhouyulu',
+  '六祖法宝坛经': 'tanjing',
+  '六祖坛经': 'tanjing',
+  '杨岐方会禅师语录': 'yangqiyulu',
+  '慈明禅师语录': 'shishuangchuyuan',
+  '沩山语录': 'weishanyulu',
+  '曹山语录': 'caoshanyulu',
+  '金刚经': 'jingangjing',
+  '肇论': 'zhaolun',
+  '绝观论': 'jueguanlun',
+  '无门关': 'wumenguan',
+  '坐禅仪': 'zuochanyi',
+  '禅苑清规': 'chanyuanqinggui',
+  '普明十牛图颂': 'shiniutu',
+  '云门匡真禅师广录': 'yunmen',
+  '文殊师利所说摩诃般若波罗蜜经': 'wenshu',
+  '七佛传法偈': 'qifo',
+  '黄龙慧南禅师语录': 'huanglonghuinan',
+  '筠州洞山悟本禅师语录': 'dongshanyulu',
+  '维摩诘经': 'weimojiejing',
+};
+
 interface PageProps {
   params: {
     id: string;
@@ -118,6 +142,161 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
               )}
             </div>
           </div>
+
+          {/* 1.1 概念语义实体档案 (Entity Semantic Infobox - 原生HTML三元组，极速索引) */}
+          <section aria-label="概念实体关系档案" className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div className="flex items-center space-x-2 text-slate-800 font-bold">
+                <Tag className="w-5 h-5 text-blue-600" />
+                <span className="text-base">{t('📊 概念义理与知识实体档案')}</span>
+              </div>
+              <span className="text-xs text-slate-400 font-mono hidden sm:inline">Concept & Semantic Infobox</span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-700 divide-y divide-slate-100">
+                <tbody>
+                  <tr className="hover:bg-slate-50/60">
+                    <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                      {t('义理范畴')}
+                    </th>
+                    <td className="py-2.5 px-4 font-medium text-blue-800">
+                      {t(concept.category)}
+                    </td>
+                  </tr>
+                  {concept.etymology && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('词源别名')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-slate-600">
+                        {t(concept.etymology)}
+                      </td>
+                    </tr>
+                  )}
+                  {concept.relatedBooks && concept.relatedBooks.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('出处典籍')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {concept.relatedBooks.map(bid => {
+                            const actualId = CLASSIC_ALIAS[bid] || bid;
+                            const classic = (manifest as any[]).find((m: any) => m.id === actualId || m.title === bid);
+                            const title = classic ? classic.title : bid;
+                            return (
+                              <Link
+                                prefetch={false}
+                                key={bid}
+                                href={getHref(`/classics/${classic ? classic.id : actualId}`)}
+                                className="text-emerald-700 hover:text-emerald-900 hover:underline bg-emerald-50/80 px-2 py-0.5 rounded text-xs font-medium inline-flex items-center gap-1"
+                              >
+                                <BookOpen className="w-3 h-3 inline" />
+                                《{t(title)}》{classic?.cbeta_id ? `(${classic.cbeta_id})` : ''}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {concept.relatedPersons && concept.relatedPersons.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('阐发宗师')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {concept.relatedPersons.map(pid => {
+                            const p = ZEN_PERSONS.find(x => x.id === pid);
+                            if (!p) return null;
+                            return (
+                              <Link
+                                prefetch={false}
+                                key={pid}
+                                href={getHref(`/persons/${pid}`)}
+                                className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                              >
+                                {t(p.name)} ({t(p.era)})
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {concept.relatedConcepts && concept.relatedConcepts.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('关联概念')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {concept.relatedConcepts.map(cid => {
+                            const c = ZEN_CONCEPTS.find(x => x.id === cid);
+                            if (!c) return null;
+                            return (
+                              <Link
+                                prefetch={false}
+                                key={cid}
+                                href={getHref(`/concepts/${cid}`)}
+                                className="text-purple-700 hover:text-purple-900 hover:underline bg-purple-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                              >
+                                {t(c.title)}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {relatedMethods.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('实修法门')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedMethods.map(m => (
+                            <Link
+                              prefetch={false}
+                              key={m.id}
+                              href={getHref(`/methods/${m.id}`)}
+                              className="text-amber-800 hover:text-amber-950 hover:underline bg-amber-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(m.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {relatedKoans.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('载载公案')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedKoans.slice(0, 4).map(q => (
+                            <Link
+                              prefetch={false}
+                              key={q.id}
+                              href={getHref(`/koan/${q.id}`)}
+                              className="text-rose-700 hover:text-rose-900 hover:underline bg-rose-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(q.question.slice(0, 24))}{q.question.length > 24 ? '...' : ''}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
           {/* 1.5 概念知识图谱微卡片 */}
           <EntityMiniGraph

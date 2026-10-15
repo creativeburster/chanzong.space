@@ -5,7 +5,7 @@ import { CategoriesPageClient } from '@/app/categories/CategoriesPageClient';
 import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
-  title: '經藏分類大廳 · 歷代宗門十一大正統門類 | 禪宗知識庫',
+  title: '經藏分類大廳 · 歷代宗門十一大正統門類',
   description: '禪宗知識庫十一大標準經藏分類大廳，嚴格遵照《大藏經》宗門部與歷代文獻傳統，系統歸納宗門語錄、印心經藏、達摩根本、叢林清規、公案評唱、傳燈史傳、祖師銘頌、禪修心要、宗義經論、護法論辯、密乘直指等11大正統門類，全景呈現禪門萬千法要。',
   alternates: {
     canonical: '/zh-tw/categories',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: '經藏分類大廳 · 歷代宗門十一大正統門類 | 禪宗知識庫',
+    title: '經藏分類大廳 · 歷代宗門十一大正統門類',
     description: '嚴格遵照大藏經宗門部傳統，系統歸類167部禪宗經典至11大正統門類。',
   },
 };

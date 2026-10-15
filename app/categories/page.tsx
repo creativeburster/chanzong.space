@@ -4,7 +4,7 @@ import { getCategories } from '@/lib/categories';
 import { CategoriesPageClient } from './CategoriesPageClient';
 
 export const metadata: Metadata = {
-  title: '经藏分类大厅 · 历代宗门十一大正统门类 | 禅宗知识库',
+  title: '经藏分类大厅 · 历代宗门十一大正统门类',
   description: '禅宗知识库十一大标准经藏分类大厅，严格遵照《大藏经》宗门部与历代文献传统，系统归纳宗门语录、印心经藏、达摩根本、丛林清规、公案评唱、传灯史传、祖师铭颂、禅修心要、宗义经论、护法论辩、密乘直指等11大正统门类，全景呈现禅门万千法要。',
   alternates: {
     canonical: '/categories',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: '经藏分类大厅 · 历代宗门十一大正统门类 | 禅宗知识库',
+    title: '经藏分类大厅 · 历代宗门十一大正统门类',
     description: '严格遵照大藏经宗门部传统，系统归类167部禅宗经典至11大正统门类。',
   },
 };

@@ -16,6 +16,12 @@ function EntityJsonLd({ item }: { item: any }) {
     '@type': 'DefinedTerm',
     name,
     description: desc,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: convertToTrad('禅宗核心心性与修持概念库'),
+      url: 'https://chanzong.space/zh-tw/concepts',
+    },
+    termCode: item.id,
     url: `https://chanzong.space/zh-tw/concepts/${item.id}`,
     inLanguage: 'zh-TW',
   };

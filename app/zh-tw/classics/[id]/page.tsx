@@ -143,8 +143,10 @@ export default function TradClassicPage({ params }: PageProps) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'Book',
+    name: titleTrad,
     headline: titleTrad,
+    alternateName: meta.cbeta_id ? `${titleTrad} (${meta.cbeta_id})` : titleTrad,
     author: {
       '@type': 'Person',
       name: authorTrad,
@@ -156,10 +158,11 @@ export default function TradClassicPage({ params }: PageProps) {
     },
     description: summaryTrad.slice(0, 160),
     url: `https://chanzong.space/zh-tw/classics/${meta.id}`,
-    inLanguage: 'zh-TW',
+    inLanguage: ['lzh', 'zh-Hant'],
     genre: catTrad,
     wordCount: meta.word_count,
     dateModified: new Date().toISOString().split('T')[0],
+    ...(meta.cbeta_id ? { identifier: meta.cbeta_id, isPartOf: convertToTrad(meta.canon_source || '') } : {}),
   };
 
   // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）
