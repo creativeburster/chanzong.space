@@ -12,7 +12,6 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_METHODS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare, Lightbulb, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
@@ -25,39 +24,39 @@ interface PageProps {
   params: {
     id: string;
   };
+  initialMethod?: any;
+  otherMethods?: any[];
+  relatedKoans?: any[];
+  relatedPersonsData?: any[];
+  relatedConceptsData?: any[];
+  relatedFaqsData?: any[];
+  prevMethod?: { id: string; title: string } | null;
+  nextMethod?: { id: string; title: string } | null;
 }
 
-export default function MethodDetailPageClient({ params }: PageProps) {
+export default function MethodDetailPageClient({
+  params,
+  initialMethod,
+  otherMethods: propOtherMethods = [],
+  relatedKoans: propRelatedKoans = [],
+  relatedPersonsData = [],
+  relatedConceptsData = [],
+  relatedFaqsData = [],
+  prevMethod = null,
+  nextMethod = null,
+}: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [stepsExpanded, setStepsExpanded] = useState(false);
   const [pitfallsExpanded, setPitfallsExpanded] = useState(false);
   const { t, getHref } = useLang();
 
-  const method = ZEN_METHODS.find((m) => m.id === params.id);
+  const method = initialMethod;
   if (!method) {
     notFound();
   }
 
-  // 1. 同门其他修持法门推荐
-  const otherMethods = useMemo(() => {
-    return ZEN_METHODS.filter(m => {
-      if (m.id === method.id) return false;
-      // 共享概念或祖师
-      const shareConcept = m.relatedConcepts && method.relatedConcepts && m.relatedConcepts.some(c => method.relatedConcepts.includes(c));
-      const sharePerson = m.relatedPersons && method.relatedPersons && m.relatedPersons.some(p => method.relatedPersons.includes(p));
-      return shareConcept || sharePerson;
-    }).slice(0, 4);
-  }, [method]);
-
-  // 2. 契合此法门的机锋公案印证
-  const relatedKoans = useMemo(() => {
-    return ZEN_KOANS.filter(q => {
-      const matchConcept = q.relatedConcepts && method.relatedConcepts && q.relatedConcepts.some(c => method.relatedConcepts.includes(c));
-      const matchPerson = q.relatedPersons && method.relatedPersons && q.relatedPersons.some(p => method.relatedPersons.includes(p));
-      const matchText = q.question.includes(method.title) || q.answer.includes(method.title);
-      return matchConcept || matchPerson || matchText;
-    }).slice(0, 6);
-  }, [method]);
+  const otherMethods = propOtherMethods;
+  const relatedKoans = propRelatedKoans;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -102,6 +101,104 @@ export default function MethodDetailPageClient({ params }: PageProps) {
             </div>
           </div>
 
+          {/* 1.1 法门知识实体档案 (Entity Semantic Infobox - 原生HTML三元组，极速索引) */}
+          <section aria-label="法门实体关系档案" className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div className="flex items-center space-x-2 text-slate-800 font-bold">
+                <Compass className="w-5 h-5 text-sky-600" />
+                <span className="text-base">{t('📊 修持法门与知识实体档案')}</span>
+              </div>
+              <span className="text-xs text-slate-400 font-mono hidden sm:inline">Method & Semantic Infobox</span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-700 divide-y divide-slate-100">
+                <tbody>
+                  <tr className="hover:bg-slate-50/60">
+                    <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                      {t('法门名称')}
+                    </th>
+                    <td className="py-2.5 px-4 font-serif-zen font-semibold text-sky-900">
+                      🧘 {t(method.title)}
+                    </td>
+                  </tr>
+                  {method.origin && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('法门源流')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-slate-700">
+                        {t(method.origin)}
+                      </td>
+                    </tr>
+                  )}
+                  {method.classicRef && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('所依经论')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-amber-800 font-medium">
+                        📖 {t(method.classicRef)}
+                      </td>
+                    </tr>
+                  )}
+                  {relatedPersonsData.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('传授祖师')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-blue-800">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedPersonsData.map((p: any) => (
+                            <Link
+                              key={p.id}
+                              prefetch={false}
+                              href={getHref(`/persons/${p.id}`)}
+                              className="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-100 text-xs"
+                            >
+                              👤 {t(p.name)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {relatedConceptsData.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('核心义理')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-purple-800">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedConceptsData.map((c: any) => (
+                            <Link
+                              key={c.id}
+                              prefetch={false}
+                              href={getHref(`/concepts/${c.id}`)}
+                              className="px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-100 text-xs"
+                            >
+                              🏷️ {t(c.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {method.steps && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('参修次第')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen text-green-800">
+                        {t('全')} {method.steps.length} {t('个循序要诀步骤')}
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           {/* 1.5 法门知识图谱微卡片 */}
           <EntityMiniGraph
             entityId={method.id}
@@ -122,7 +219,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-green-700/60">({t('共')} {method.steps.length} {t('步')})</span>
               </h2>
               <div className="space-y-3 pl-4">
-                {(method.steps.length > 5 && !stepsExpanded ? method.steps.slice(0, 5) : method.steps).map((step, idx) => (
+                {(method.steps.length > 5 && !stepsExpanded ? method.steps.slice(0, 5) : method.steps).map((step: any, idx: number) => (
                   <div key={idx} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-green-500 before:rounded-full">
                     <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed">
                       {t(step)}
@@ -152,7 +249,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-rose-700/60">({t('共')} {method.pitfalls.length} {t('条')})</span>
               </h2>
               <div className="space-y-3">
-                {(method.pitfalls.length > 4 && !pitfallsExpanded ? method.pitfalls.slice(0, 4) : method.pitfalls).map((pitfall, idx) => (
+                {(method.pitfalls.length > 4 && !pitfallsExpanded ? method.pitfalls.slice(0, 4) : method.pitfalls).map((pitfall: any, idx: number) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-rose-50 border-l-4 border-rose-500 text-[15px] font-serif-zen text-rose-800"
@@ -175,34 +272,38 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 4. 代表祖师与门风传人 */}
-          {method.relatedPersons && method.relatedPersons.length > 0 && (
+          {relatedPersonsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                 <Users className="w-5 h-5 text-blue-700" />
                 <span>{t('👥 传授祖师与门风领袖')}</span>
               </h2>
               <LinkCardGrid
-                items={method.relatedPersons.map(pid => {
-                  const rp = ZEN_PERSONS.find(p => p.id === pid);
-                  return rp ? { id: rp.id, title: rp.name, summary: rp.title, href: `/persons/${pid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedPersonsData.map(rp => ({
+                  id: rp.id,
+                  title: rp.name,
+                  summary: rp.title,
+                  href: `/persons/${rp.id}`
+                }))}
                 variant="blue"
               />
             </div>
           )}
 
           {/* 5. 核心关联概念 */}
-          {method.relatedConcepts && method.relatedConcepts.length > 0 && (
+          {relatedConceptsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
                 <Tag className="w-5 h-5 text-purple-700" />
                 <span>{t('🔗 依凭之核心义理概念')}</span>
               </h2>
               <LinkCardGrid
-                items={method.relatedConcepts.map(cid => {
-                  const rc = ZEN_CONCEPTS.find(c => c.id === cid);
-                  return rc ? { id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${cid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedConceptsData.map(rc => ({
+                  id: rc.id,
+                  title: rc.title,
+                  summary: rc.summary?.slice(0, 60),
+                  href: `/concepts/${rc.id}`
+                }))}
                 variant="purple"
               />
             </div>
@@ -276,7 +377,7 @@ export default function MethodDetailPageClient({ params }: PageProps) {
              </h2>
 
              <LinkCardGrid
-               items={method.relatedBooks.map(bookId => {
+               items={method.relatedBooks.map((bookId: string) => {
                  const book = manifest.find(m => m.id === bookId);
                  return { id: bookId, title: book ? book.title : bookId, summary: book?.author, href: `/classics/${bookId}` };
                })}
@@ -287,14 +388,14 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 9. 相关问答 */}
-          {ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).length > 0 && (
+          {relatedFaqsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && method.relatedBooks && f.relatedBooks.some(b => method.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
+                items={relatedFaqsData.map(f => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
                 }))}
                 variant="emerald"
@@ -304,12 +405,12 @@ export default function MethodDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 上下篇导航 */}
-          {(() => {
-            const idx = ZEN_METHODS.findIndex(m => m.id === method.id);
-            const prev = idx > 0 ? { id: ZEN_METHODS[idx - 1].id, title: ZEN_METHODS[idx - 1].title, href: `/methods/${ZEN_METHODS[idx - 1].id}` } : null;
-            const next = idx < ZEN_METHODS.length - 1 ? { id: ZEN_METHODS[idx + 1].id, title: ZEN_METHODS[idx + 1].title, href: `/methods/${ZEN_METHODS[idx + 1].id}` } : null;
-            return <PrevNextNav prev={prev} next={next} />;
-          })()}
+          {(prevMethod || nextMethod) && (
+            <PrevNextNav
+              prev={prevMethod ? { id: prevMethod.id, title: prevMethod.title, href: `/methods/${prevMethod.id}` } : null}
+              next={nextMethod ? { id: nextMethod.id, title: nextMethod.title, href: `/methods/${nextMethod.id}` } : null}
+            />
+          )}
         </main>
 
         <SiteFooter />

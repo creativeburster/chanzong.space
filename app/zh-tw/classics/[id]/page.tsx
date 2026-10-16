@@ -91,7 +91,6 @@ export default function TradClassicPage({ params }: PageProps) {
     keyQuotes: extracted.keyQuotes.map(q => convertToTrad(q)),
   };
 
-  const audioText = convertToTrad(extractAudioText(rawText));
   const originalParagraphs = extractOriginalParagraphs(rawText).slice(0, 50).map(p => convertToTrad(p));
   const rawSummary = extractGuidesAndQuotes(rawText);
   const summaryInfo = {
@@ -232,7 +231,6 @@ export default function TradClassicPage({ params }: PageProps) {
         prevItem={prevItem}
         nextItem={nextItem}
         extracted={tradExtracted}
-        audioText={audioText}
         originalParagraphs={originalParagraphs}
         summaryInfo={summaryInfo}
         volumesMeta={volumesMeta}

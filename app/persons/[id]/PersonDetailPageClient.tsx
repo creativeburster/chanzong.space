@@ -12,7 +12,6 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Quote, Sparkles, Compass, Users, Tag, Lightbulb, MessageSquare, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
@@ -49,48 +48,41 @@ interface PageProps {
   params: {
     id: string;
   };
+  initialPerson?: any;
+  personKoans?: any[];
+  personMethods?: any[];
+  personConcepts?: any[];
+  relatedPersonsData?: any[];
+  relatedFaqsData?: any[];
+  prevPerson?: { id: string; title: string } | null;
+  nextPerson?: { id: string; title: string } | null;
 }
 
-export default function PersonDetailPageClient({ params }: PageProps) {
+export default function PersonDetailPageClient({
+  params,
+  initialPerson,
+  personKoans: propPersonKoans = [],
+  personMethods: propPersonMethods = [],
+  personConcepts: propPersonConcepts = [],
+  relatedPersonsData = [],
+  relatedFaqsData = [],
+  prevPerson = null,
+  nextPerson = null,
+}: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [lifeStoryExpanded, setLifeStoryExpanded] = useState(false);
   const [quotesExpanded, setQuotesExpanded] = useState(false);
   const { t, getHref } = useLang();
 
-  const person = ZEN_PERSONS.find((p) => p.id === params.id);
+  const person = initialPerson;
   if (!person) {
     notFound();
   }
 
   const isLongStory = person.lifeStory && person.lifeStory.length > 280;
-
-  // 1. 该祖师相关的全部机锋公案（双向聚合：relatedPersons 引用 + master 名字匹配）
-  const personKoans = useMemo(() => {
-    const pName = person.name;
-    return ZEN_KOANS.filter((q) => {
-      if (q.relatedPersons && q.relatedPersons.includes(person.id)) return true;
-      if (q.master && (q.master === pName || q.master.includes(pName) || pName.includes(q.master))) return true;
-      return false;
-    });
-  }, [person]);
-
-  // 2. 该祖师传授/倡导的修持法门
-  const personMethods = useMemo(() => {
-    const fromPerson = (person.relatedMethods || []).map(mid => ZEN_METHODS.find(m => m.id === mid)).filter(Boolean) as typeof ZEN_METHODS;
-    const fromMethods = ZEN_METHODS.filter(m => m.relatedPersons && m.relatedPersons.includes(person.id));
-    const set = new Map<string, typeof ZEN_METHODS[0]>();
-    [...fromPerson, ...fromMethods].forEach(m => set.set(m.id, m));
-    return Array.from(set.values());
-  }, [person]);
-
-  // 3. 该祖师阐发的核心概念
-  const personConcepts = useMemo(() => {
-    const fromPerson = (person.relatedConcepts || []).map(cid => ZEN_CONCEPTS.find(c => c.id === cid)).filter(Boolean) as typeof ZEN_CONCEPTS;
-    const fromConcepts = ZEN_CONCEPTS.filter(c => c.relatedPersons && c.relatedPersons.includes(person.id));
-    const set = new Map<string, typeof ZEN_CONCEPTS[0]>();
-    [...fromPerson, ...fromConcepts].forEach(c => set.set(c.id, c));
-    return Array.from(set.values());
-  }, [person]);
+  const personKoans = propPersonKoans;
+  const personMethods = propPersonMethods;
+  const personConcepts = propPersonConcepts;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -119,19 +111,15 @@ export default function PersonDetailPageClient({ params }: PageProps) {
             </h1>
 
             {/* 法脉师承关联 */}
-            {person.relatedPersons && person.relatedPersons.length > 0 && (
+            {relatedPersonsData.length > 0 && (
               <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-slate-100">
                 <Users className="w-4 h-4 text-slate-500" />
                 <span className="text-[15px] font-semibold text-slate-600 mr-2">{t('法脉师承:')}</span>
-                {person.relatedPersons.map(rid => {
-                  const rp = ZEN_PERSONS.find(p => p.id === rid);
-                  if (!rp) return null;
-                  return (
-                    <Link prefetch={false} key={rid} href={getHref(`/persons/${rid}`)} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
-                      {t(rp.name)}
-                    </Link>
-                  );
-                })}
+                {relatedPersonsData.map((rp: any) => (
+                  <Link prefetch={false} key={rp.id} href={getHref(`/persons/${rp.id}`)} className="inline-flex px-3 py-1.5 rounded-full text-[13px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition-colors">
+                    {t(rp.name)}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
@@ -165,27 +153,23 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                       {t(person.era)}
                     </td>
                   </tr>
-                  {person.relatedPersons && person.relatedPersons.length > 0 && (
+                  {relatedPersonsData.length > 0 && (
                     <tr className="hover:bg-slate-50/60">
                       <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
                         {t('法脉师承')}
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {person.relatedPersons.map(rid => {
-                            const rp = ZEN_PERSONS.find(p => p.id === rid);
-                            if (!rp) return null;
-                            return (
-                              <Link
-                                prefetch={false}
-                                key={rid}
-                                href={getHref(`/persons/${rid}`)}
-                                className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
-                              >
-                                {t(rp.name)} ({t(rp.era)})
-                              </Link>
-                            );
-                          })}
+                          {relatedPersonsData.map((rp: any) => (
+                            <Link
+                              prefetch={false}
+                              key={rp.id}
+                              href={getHref(`/persons/${rp.id}`)}
+                              className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(rp.name)} {rp.era ? `(${t(rp.era)})` : ''}
+                            </Link>
+                          ))}
                         </div>
                       </td>
                     </tr>
@@ -197,7 +181,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {person.relatedBooks.map(bid => {
+                          {person.relatedBooks.map((bid: string) => {
                             const actualId = CLASSIC_ALIAS[bid] || bid;
                             const classic = (manifest as any[]).find((m: any) => m.id === actualId || m.title === bid);
                             const title = classic ? classic.title : bid;
@@ -224,7 +208,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {personConcepts.slice(0, 8).map(c => (
+                          {personConcepts.slice(0, 8).map((c: any) => (
                             <Link
                               prefetch={false}
                               key={c.id}
@@ -245,7 +229,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {personMethods.slice(0, 6).map(m => (
+                          {personMethods.slice(0, 6).map((m: any) => (
                             <Link
                               prefetch={false}
                               key={m.id}
@@ -266,7 +250,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {personKoans.slice(0, 5).map(q => (
+                          {personKoans.slice(0, 5).map((q: any) => (
                             <Link
                               prefetch={false}
                               key={q.id}
@@ -345,7 +329,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-rose-700/60">({t('共')} {person.quotes.length} {t('则')})</span>
               </h2>
               <div className="space-y-3">
-                {(person.quotes.length > 5 && !quotesExpanded ? person.quotes.slice(0, 5) : person.quotes).map((quote, idx) => (
+                {(person.quotes.length > 5 && !quotesExpanded ? person.quotes.slice(0, 5) : person.quotes).map((quote: string, idx: number) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
@@ -386,7 +370,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                 </Link>
               </div>
               <LinkCardGrid
-                items={personKoans.slice(0, 6).map(q => ({
+                items={personKoans.slice(0, 6).map((q: any) => ({
                   id: q.id,
                   title: q.question,
                   summary: q.answer,
@@ -407,7 +391,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-sky-700/60 font-mono">({personMethods.length})</span>
               </h2>
               <LinkCardGrid
-                items={personMethods.map(m => ({
+                items={personMethods.map((m: any) => ({
                   id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}`
                 }))}
                 variant="sky"
@@ -424,7 +408,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-purple-700/60 font-mono">({personConcepts.length})</span>
               </h2>
               <LinkCardGrid
-                items={personConcepts.slice(0, 6).map(rc => ({
+                items={personConcepts.slice(0, 6).map((rc: any) => ({
                   id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${rc.id}`
                 }))}
                 variant="purple"
@@ -444,7 +428,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
              </h2>
 
              <LinkCardGrid
-               items={person.classics.map((classicName, idx) => {
+               items={person.classics.map((classicName: string, idx: number) => {
                  const rel = person.relatedBooks ?? [];
                  const aliased = CLASSIC_ALIAS[classicName];
                  if (aliased) { const ab = manifest.find(m => m.id === aliased); return { id: aliased, title: classicName, summary: ab?.author, href: ab ? `/classics/${aliased}` : '#' }; }
@@ -456,7 +440,7 @@ export default function PersonDetailPageClient({ params }: PageProps) {
                    manifest.find(m => rel.includes(m.id) && m.id === classicName);
                  const bookId = book?.id;
                  return { id: bookId || `c${idx}`, title: classicName, summary: book?.author, href: book ? `/classics/${book.id}` : '#' };
-               }).filter(item => item.href !== '#')}
+               }).filter((item: any) => item.href !== '#')}
                variant="amber"
              />
            </div>
@@ -464,14 +448,14 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 9. 相关问答 */}
-          {ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).length > 0 && (
+          {relatedFaqsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && person.relatedBooks && f.relatedBooks.some(b => person.relatedBooks!.includes(b))).map(f => ({
+                items={relatedFaqsData.map((f: any) => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
                 }))}
                 variant="emerald"
@@ -482,12 +466,12 @@ export default function PersonDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 上下篇导航 */}
-          {(() => {
-            const idx = ZEN_PERSONS.findIndex(p => p.id === person.id);
-            const prev = idx > 0 ? { id: ZEN_PERSONS[idx - 1].id, title: ZEN_PERSONS[idx - 1].name, href: `/persons/${ZEN_PERSONS[idx - 1].id}` } : null;
-            const next = idx < ZEN_PERSONS.length - 1 ? { id: ZEN_PERSONS[idx + 1].id, title: ZEN_PERSONS[idx + 1].name, href: `/persons/${ZEN_PERSONS[idx + 1].id}` } : null;
-            return <PrevNextNav prev={prev} next={next} />;
-          })()}
+          {(prevPerson || nextPerson) && (
+            <PrevNextNav
+              prev={prevPerson ? { id: prevPerson.id, title: prevPerson.title, href: `/persons/${prevPerson.id}` } : null}
+              next={nextPerson ? { id: nextPerson.id, title: nextPerson.title, href: `/persons/${nextPerson.id}` } : null}
+            />
+          )}
         </main>
 
         <SiteFooter />

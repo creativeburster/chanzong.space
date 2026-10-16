@@ -83,7 +83,6 @@ export default function ClassicPage({ params }: PageProps) {
 
   // 服务端提取轻量结构化卡片与辅助信息（仅数 KB，杜绝客户端序列化全书大字符串）
   const extracted = extractCards(rawText);
-  const audioText = extractAudioText(rawText);
   const originalParagraphs = extractOriginalParagraphs(rawText).slice(0, 50);
   const summaryInfo = extractGuidesAndQuotes(rawText);
 
@@ -188,7 +187,6 @@ export default function ClassicPage({ params }: PageProps) {
         prevItem={prevItem}
         nextItem={nextItem}
         extracted={extracted}
-        audioText={audioText}
         originalParagraphs={originalParagraphs}
         summaryInfo={summaryInfo}
         volumesMeta={volumesMeta}

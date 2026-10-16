@@ -179,64 +179,68 @@ export default function SitemapClient() {
             </div>
           </div>
 
-          {/* 分组展开列表 */}
-          <div className="space-y-3">
+          {/* 分组展开列表 - 使用原生 details/summary 确保静态 HTML 中 100% 存在所有内链 */}
+          <div className="space-y-4">
             {groups.map((group) => {
               const Icon = group.icon;
-              const isOpen = expanded[group.key];
               return (
-                <div key={group.key} className={`rounded-2xl border ${group.border} overflow-hidden`}>
-                  {/* 组标题 */}
-                  <button
-                    onClick={() => toggle(group.key)}
-                    className={`w-full flex items-center justify-between px-5 py-4 ${group.bg} hover:brightness-95 transition-all`}
+                <details
+                  key={group.key}
+                  open
+                  className={`rounded-2xl border ${group.border} bg-white overflow-hidden shadow-xs group`}
+                >
+                  {/* 组标题 summary */}
+                  <summary
+                    className={`w-full list-none cursor-pointer flex items-center justify-between px-5 py-4 ${group.bg} hover:brightness-95 transition-all select-none`}
                   >
                     <div className="flex items-center space-x-3">
                       <Icon className={`w-5 h-5 ${group.color}`} />
                       <span className={`text-base font-bold font-serif-zen ${group.color}`}>
                         {t(group.title)}
                       </span>
-                      <span className={`text-xs font-bold px-2 py-0.5 rounded-full bg-white ${group.color} border ${group.border}`}>
+                      <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full bg-white ${group.color} border ${group.border}`}>
                         {group.count}
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Link prefetch={false} href={getHref(group.href)}
+                      <Link
+                        prefetch={false}
+                        href={getHref(group.href)}
                         className={`text-xs font-bold ${group.color} hover:underline`}
                         onClick={(e) => e.stopPropagation()}
                       >
-                        {t('查看全部 →')}
+                        {t('查看频道全部 →')}
                       </Link>
-                      {isOpen ? <ChevronDown className="w-5 h-5 text-slate-500" /> : <ChevronRight className="w-5 h-5 text-slate-500" />}
+                      <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform duration-200" />
                     </div>
-                  </button>
+                  </summary>
 
-                  {/* 展开内容 */}
-                  {isOpen && (
-                    <div className="bg-white p-4 max-h-96 overflow-y-auto">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                        {group.items.map((item) => (
-                          <Link prefetch={false} key={item.id}
-                            href={getHref(item.href)}
-                            className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors group"
-                          >
-                            <div className="min-w-0 flex-1">
-                              <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900 block truncate">
-                                {t(item.title)}
+                  {/* 实体全量内链网格 - 100% 存在于静态 HTML，爬虫无阻碍遍历 */}
+                  <div className="p-4 sm:p-6 bg-white border-t border-slate-100 max-h-[500px] overflow-y-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                      {group.items.map((item) => (
+                        <Link
+                          prefetch={false}
+                          key={item.id}
+                          href={getHref(item.href)}
+                          className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200 group/item"
+                        >
+                          <div className="min-w-0 flex-1">
+                            <span className="text-sm font-medium text-slate-700 group-hover/item:text-amber-900 block truncate">
+                              {t(item.title)}
+                            </span>
+                            {item.sub && (
+                              <span className="text-xs text-slate-400 block truncate">
+                                {t(item.sub)}
                               </span>
-                              {item.sub && (
-                                <span className="text-xs text-slate-500 block truncate">
-                                  {t(item.sub)}
-                                </span>
-                              )}
-                            </div>
-                            <ChevronRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-slate-500 shrink-0 ml-2" />
-                          </Link>
-                        ))}
-                      </div>
+                            )}
+                          </div>
+                          <ChevronRight className="w-3.5 h-3.5 text-slate-300 group-hover/item:text-slate-600 shrink-0 ml-1.5" />
+                        </Link>
+                      ))}
                     </div>
-                  )}
-                </div>
+                  </div>
+                </details>
               );
             })}
           </div>

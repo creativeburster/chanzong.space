@@ -11,7 +11,6 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_KOANS, ZEN_PERSONS, ZEN_CONCEPTS, ZEN_METHODS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Sparkles, MessageCircle, HelpCircle, Users, Tag, Compass, Lightbulb, Image as ImageIcon, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
@@ -24,55 +23,44 @@ interface PageProps {
   params: {
     id: string;
   };
+  initialQa?: any;
+  sameMasterKoans?: any[];
+  sameBookKoans?: any[];
+  sameConceptKoans?: any[];
+  relatedPersonsData?: any[];
+  relatedConceptsData?: any[];
+  relatedMethodsData?: any[];
+  relatedFaqsData?: any[];
+  prevKoan?: { id: string; title: string } | null;
+  nextKoan?: { id: string; title: string } | null;
 }
 
-export default function KoanDetailPageClient({ params }: PageProps) {
+export default function KoanDetailPageClient({
+  params,
+  initialQa,
+  sameMasterKoans: propSameMaster = [],
+  sameBookKoans: propSameBook = [],
+  sameConceptKoans: propSameConcept = [],
+  relatedPersonsData = [],
+  relatedConceptsData = [],
+  relatedMethodsData = [],
+  relatedFaqsData = [],
+  prevKoan = null,
+  nextKoan = null,
+}: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [cardModalOpen, setCardModalOpen] = useState(false);
   const { t, getHref } = useLang();
+  const bookMap = useMemo(() => new Map(manifest.map(m => [m.id, m])), []);
 
-  const qa = ZEN_KOANS.find((q) => q.id === params.id);
+  const qa = initialQa;
   if (!qa) {
     notFound();
   }
 
-  // 典籍映射
-  const bookMap = useMemo(() => {
-    const map = new Map<string, typeof manifest[0]>();
-    manifest.forEach(b => map.set(b.id, b));
-    return map;
-  }, []);
-
-  // 1. 同一禅师的其他经典机锋公案
-  const sameMasterKoans = useMemo(() => {
-    if (!qa.master) return [];
-    return ZEN_KOANS.filter(k => k.id !== qa.id && (k.master === qa.master || (k.master && qa.master && (k.master.includes(qa.master) || qa.master.includes(k.master))))).slice(0, 6);
-  }, [qa]);
-
-  // 2. 出自同一部典籍的更多公案
-  const sameBookKoans = useMemo(() => {
-    return ZEN_KOANS.filter(k => {
-      if (k.id === qa.id) return false;
-      if (qa.relatedBooks && qa.relatedBooks.length > 0 && k.relatedBooks) {
-        if (k.relatedBooks.some(b => qa.relatedBooks!.includes(b))) return true;
-      }
-      if (qa.source && k.source && (k.source.includes(qa.source) || qa.source.includes(k.source))) {
-        return true;
-      }
-      return false;
-    }).slice(0, 6);
-  }, [qa]);
-
-  // 3. 共享破关旨趣/核心概念的其他公案
-  const sameConceptKoans = useMemo(() => {
-    if (!qa.relatedConcepts || qa.relatedConcepts.length === 0) return [];
-    const masterIds = new Set(sameMasterKoans.map(k => k.id));
-    const bookIds = new Set(sameBookKoans.map(k => k.id));
-    return ZEN_KOANS.filter(k => {
-      if (k.id === qa.id || masterIds.has(k.id) || bookIds.has(k.id)) return false;
-      return k.relatedConcepts && k.relatedConcepts.some(c => qa.relatedConcepts.includes(c));
-    }).slice(0, 6);
-  }, [qa, sameMasterKoans, sameBookKoans]);
+  const sameMasterKoans = propSameMaster;
+  const sameBookKoans = propSameBook;
+  const sameConceptKoans = propSameConcept;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -122,6 +110,137 @@ export default function KoanDetailPageClient({ params }: PageProps) {
             </div>
           </div>
 
+          {/* 1.1 公案法要与知识实体档案 (Entity Semantic Infobox - 原生HTML三元组，极速索引) */}
+          <section aria-label="公案实体关系档案" className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <div className="flex items-center space-x-2 text-slate-800 font-bold">
+                <HelpCircle className="w-5 h-5 text-rose-600" />
+                <span className="text-base">{t('📊 公案机锋与知识实体档案')}</span>
+              </div>
+              <span className="text-xs text-slate-400 font-mono hidden sm:inline">Koan & Semantic Infobox</span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-700 divide-y divide-slate-100">
+                <tbody>
+                  {qa.master && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('主角宗师')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen font-semibold text-rose-800">
+                        {relatedPersonsData.find(p => p.name === qa.master || (p.name && qa.master.includes(p.name))) ? (
+                          <Link
+                            prefetch={false}
+                            href={getHref(`/persons/${relatedPersonsData.find(p => p.name === qa.master || (p.name && qa.master.includes(p.name)))!.id}`)}
+                            className="hover:underline text-rose-800"
+                          >
+                            👤 {t(qa.master)}
+                          </Link>
+                        ) : (
+                          <span>👤 {t(qa.master)}</span>
+                        )}
+                      </td>
+                    </tr>
+                  )}
+                  {qa.source && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('出处载籍')}
+                      </th>
+                      <td className="py-2.5 px-4 font-serif-zen">
+                        {qa.relatedBooks && qa.relatedBooks.length > 0 ? (
+                          <div className="flex flex-wrap gap-2">
+                            {qa.relatedBooks.map((bid: string) => {
+                              const b = (manifest as any[]).find(m => m.id === bid || m.title === bid);
+                              const bTitle = b ? b.title : bid;
+                              return (
+                                <Link
+                                  prefetch={false}
+                                  key={bid}
+                                  href={getHref(`/classics/${b ? b.id : bid}`)}
+                                  className="text-amber-800 hover:text-amber-950 hover:underline bg-amber-50/80 px-2 py-0.5 rounded text-xs font-medium inline-flex items-center gap-1"
+                                >
+                                  <BookOpen className="w-3 h-3 inline" />
+                                  《{t(bTitle)}》{b?.cbeta_id ? `(${b.cbeta_id})` : ''}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        ) : (
+                          <span className="text-slate-600">📖 《{t(qa.source)}》</span>
+                        )}
+                      </td>
+                    </tr>
+                  )}
+                  {relatedConceptsData.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('破关旨趣')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedConceptsData.map((c: any) => (
+                            <Link
+                              prefetch={false}
+                              key={c.id}
+                              href={getHref(`/concepts/${c.id}`)}
+                              className="text-purple-700 hover:text-purple-900 hover:underline bg-purple-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(c.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {relatedPersonsData.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('关联祖师')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedPersonsData.map((p: any) => (
+                            <Link
+                              prefetch={false}
+                              key={p.id}
+                              href={getHref(`/persons/${p.id}`)}
+                              className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(p.name)} ({t(p.era)})
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                  {relatedMethodsData.length > 0 && (
+                    <tr className="hover:bg-slate-50/60">
+                      <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
+                        {t('参究法门')}
+                      </th>
+                      <td className="py-2.5 px-4">
+                        <div className="flex flex-wrap gap-2">
+                          {relatedMethodsData.map((m: any) => (
+                            <Link
+                              prefetch={false}
+                              key={m.id}
+                              href={getHref(`/methods/${m.id}`)}
+                              className="text-sky-800 hover:text-sky-950 hover:underline bg-sky-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(m.title)}
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           {/* 2. 背景故事 */}
           {qa.context && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
@@ -149,34 +268,38 @@ export default function KoanDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 4. 相关人物 */}
-          {qa.relatedPersons && qa.relatedPersons.length > 0 && (
+          {relatedPersonsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                 <Users className="w-5 h-5 text-blue-700" />
                 <span>{t('👥 相关祖师')}</span>
               </h2>
               <LinkCardGrid
-                items={qa.relatedPersons.map(pid => {
-                  const rp = ZEN_PERSONS.find(p => p.id === pid);
-                  return rp ? { id: rp.id, title: rp.name, summary: rp.title, href: `/persons/${pid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedPersonsData.map(rp => ({
+                  id: rp.id,
+                  title: rp.name,
+                  summary: rp.title,
+                  href: `/persons/${rp.id}`
+                }))}
                 variant="blue"
               />
             </div>
           )}
 
           {/* 5. 核心关联概念 / 破关旨趣 */}
-          {qa.relatedConcepts && qa.relatedConcepts.length > 0 && (
+          {relatedConceptsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-purple-900">
                 <Tag className="w-5 h-5 text-purple-700" />
                 <span>{t('🔗 核心破关旨趣与义理')}</span>
               </h2>
               <LinkCardGrid
-                items={qa.relatedConcepts.map(cid => {
-                  const rc = ZEN_CONCEPTS.find(c => c.id === cid);
-                  return rc ? { id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${cid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedConceptsData.map(rc => ({
+                  id: rc.id,
+                  title: rc.title,
+                  summary: rc.summary?.slice(0, 60),
+                  href: `/concepts/${rc.id}`
+                }))}
                 variant="purple"
               />
             </div>
@@ -266,14 +389,14 @@ export default function KoanDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 5e. 相关法门 */}
-          {ZEN_METHODS.filter(m => m.relatedConcepts.some(c => qa.relatedConcepts.includes(c))).length > 0 && (
+          {relatedMethodsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
                 <Compass className="w-5 h-5 text-sky-700" />
                 <span>{t('🧘 破关对治与修持法门')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_METHODS.filter(m => m.relatedConcepts.some(c => qa.relatedConcepts.includes(c))).map(m => ({
+                items={relatedMethodsData.map(m => ({
                   id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}`
                 }))}
                 variant="sky"
@@ -292,7 +415,7 @@ export default function KoanDetailPageClient({ params }: PageProps) {
              </h2>
 
              <LinkCardGrid
-               items={qa.relatedBooks.map(bookId => {
+               items={qa.relatedBooks.map((bookId: string) => {
                  const book = bookMap.get(bookId);
                  return { id: bookId, title: book ? book.title : bookId, summary: book?.author, href: `/classics/${bookId}` };
                })}
@@ -303,14 +426,14 @@ export default function KoanDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 相关问答 */}
-          {ZEN_FAQS.filter(f => f.relatedBooks && qa.relatedBooks && f.relatedBooks.some(b => qa.relatedBooks!.includes(b))).length > 0 && (
+          {relatedFaqsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && qa.relatedBooks && f.relatedBooks.some(b => qa.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
+                items={relatedFaqsData.map((f: any) => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
                 }))}
                 variant="emerald"
@@ -319,13 +442,81 @@ export default function KoanDetailPageClient({ params }: PageProps) {
             </div>
           )}
 
+          {/* 5c. 出自同一部典籍的更多公案 */}
+          {sameBookKoans.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-amber-900">
+                  <BookOpen className="w-5 h-5 text-amber-700" />
+                  <span>{t('📖 出自同典籍的机锋公案')}</span>
+                  <span className="text-xs text-amber-700/60 font-mono">({sameBookKoans.length})</span>
+                </h2>
+                <Link
+                  prefetch={false}
+                  href={getHref(`/koan`)}
+                  className="text-xs text-amber-800 hover:text-amber-950 font-semibold flex items-center gap-1 hover:underline"
+                >
+                  <span>{t('全部公案')}</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+              <LinkCardGrid
+                items={sameBookKoans.map(k => ({
+                  id: k.id,
+                  title: k.question,
+                  summary: `【${k.master}】${k.answer}`,
+                  href: `/koan/${k.id}`
+                }))}
+                variant="amber"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 5d. 同旨趣参修公案 */}
+          {sameConceptKoans.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-indigo-900">
+                <Sparkles className="w-5 h-5 text-indigo-700" />
+                <span>{t('✨ 类似破关旨趣的公案参修')}</span>
+                <span className="text-xs text-indigo-700/60 font-mono">({sameConceptKoans.length})</span>
+              </h2>
+              <LinkCardGrid
+                items={sameConceptKoans.map(k => ({
+                  id: k.id,
+                  title: k.question,
+                  summary: `【${k.master}】${k.answer}`,
+                  href: `/koan/${k.id}`
+                }))}
+                variant="purple"
+                columns={3}
+              />
+            </div>
+          )}
+
+          {/* 5e. 相关法门 */}
+          {relatedMethodsData.length > 0 && (
+            <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
+              <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-sky-900">
+                <Compass className="w-5 h-5 text-sky-700" />
+                <span>{t('🧘 破关对治与修持法门')}</span>
+              </h2>
+              <LinkCardGrid
+                items={relatedMethodsData.map(m => ({
+                  id: m.id, title: m.title, summary: m.summary?.slice(0, 60), href: `/methods/${m.id}`
+                }))}
+                variant="sky"
+              />
+            </div>
+          )}
+
           {/* 上下篇导航 */}
-          {(() => {
-            const idx = ZEN_KOANS.findIndex(q => q.id === qa.id);
-            const prev = idx > 0 ? { id: ZEN_KOANS[idx - 1].id, title: ZEN_KOANS[idx - 1].question, href: `/koan/${ZEN_KOANS[idx - 1].id}` } : null;
-            const next = idx < ZEN_KOANS.length - 1 ? { id: ZEN_KOANS[idx + 1].id, title: ZEN_KOANS[idx + 1].question, href: `/koan/${ZEN_KOANS[idx + 1].id}` } : null;
-            return <PrevNextNav prev={prev} next={next} />;
-          })()}
+          {(prevKoan || nextKoan) && (
+            <PrevNextNav
+              prev={prevKoan ? { id: prevKoan.id, title: prevKoan.title, href: `/koan/${prevKoan.id}` } : null}
+              next={nextKoan ? { id: nextKoan.id, title: nextKoan.title, href: `/koan/${nextKoan.id}` } : null}
+            />
+          )}
         </main>
 
         <SiteFooter />

@@ -12,7 +12,6 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Quote, Sparkles, Lightbulb, Users, Tag, Compass, MessageSquare, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
@@ -49,61 +48,41 @@ interface PageProps {
   params: {
     id: string;
   };
+  initialConcept?: any;
+  sameCategoryConcepts?: any[];
+  relatedKoans?: any[];
+  relatedMethods?: any[];
+  relatedPersonsData?: any[];
+  relatedCrossConceptsData?: any[];
+  relatedFaqsData?: any[];
+  prevConcept?: { id: string; title: string } | null;
+  nextConcept?: { id: string; title: string } | null;
 }
 
-export default function ConceptDetailPageClient({ params }: PageProps) {
+export default function ConceptDetailPageClient({
+  params,
+  initialConcept,
+  sameCategoryConcepts: propSameCategory = [],
+  relatedKoans: propRelatedKoans = [],
+  relatedMethods: propRelatedMethods = [],
+  relatedPersonsData = [],
+  relatedCrossConceptsData = [],
+  relatedFaqsData = [],
+  prevConcept = null,
+  nextConcept = null,
+}: PageProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [quotesExpanded, setQuotesExpanded] = useState(false);
   const { t, getHref } = useLang();
 
-  const concept = ZEN_CONCEPTS.find((c) => c.id === params.id);
+  const concept = initialConcept;
   if (!concept) {
     notFound();
   }
 
-  // 1. 同一范畴的其他概念
-  const sameCategoryConcepts = useMemo(() => {
-    if (!concept.category) return [];
-    return ZEN_CONCEPTS.filter(c => c.id !== concept.id && c.category === concept.category).slice(0, 6);
-  }, [concept]);
-
-  // 2. 阐发此概念的代表公案
-  const relatedKoans = useMemo(() => {
-    // 优先：显式关联
-    const explicit = ZEN_KOANS.filter(q => q.relatedConcepts && q.relatedConcepts.includes(concept.id));
-    if (explicit.length >= 6) return explicit.slice(0, 6);
-
-    const explicitIds = new Set(explicit.map(q => q.id));
-    // 补充：问答/解读中直接探讨该概念
-    const implicit = ZEN_KOANS.filter(q => {
-      if (explicitIds.has(q.id)) return false;
-      return (
-        q.question.includes(concept.title) ||
-        q.answer.includes(concept.title) ||
-        (q.interpretation && q.interpretation.includes(concept.title))
-      );
-    });
-
-    return [...explicit, ...implicit].slice(0, 6);
-  }, [concept]);
-
-  // 3. 践行此概念的实修法门
-  const relatedMethods = useMemo(() => {
-    const explicit = ZEN_METHODS.filter(m => m.relatedConcepts && m.relatedConcepts.includes(concept.id));
-    if (explicit.length >= 4) return explicit.slice(0, 4);
-
-    const explicitIds = new Set(explicit.map(m => m.id));
-    const implicit = ZEN_METHODS.filter(m => {
-      if (explicitIds.has(m.id)) return false;
-      return (
-        m.title.includes(concept.title) ||
-        m.summary.includes(concept.title) ||
-        m.steps.some(s => s.includes(concept.title))
-      );
-    });
-
-    return [...explicit, ...implicit].slice(0, 4);
-  }, [concept]);
+  const sameCategoryConcepts = propSameCategory;
+  const relatedKoans = propRelatedKoans;
+  const relatedMethods = propRelatedMethods;
 
   return (
     <div className="min-h-screen flex bg-[#FAF9F6] text-slate-900">
@@ -181,7 +160,7 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {concept.relatedBooks.map(bid => {
+                          {concept.relatedBooks.map((bid: string) => {
                             const actualId = CLASSIC_ALIAS[bid] || bid;
                             const classic = (manifest as any[]).find((m: any) => m.id === actualId || m.title === bid);
                             const title = classic ? classic.title : bid;
@@ -201,52 +180,44 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
                       </td>
                     </tr>
                   )}
-                  {concept.relatedPersons && concept.relatedPersons.length > 0 && (
+                  {relatedPersonsData.length > 0 && (
                     <tr className="hover:bg-slate-50/60">
                       <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
                         {t('阐发宗师')}
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {concept.relatedPersons.map(pid => {
-                            const p = ZEN_PERSONS.find(x => x.id === pid);
-                            if (!p) return null;
-                            return (
-                              <Link
-                                prefetch={false}
-                                key={pid}
-                                href={getHref(`/persons/${pid}`)}
-                                className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
-                              >
-                                {t(p.name)} ({t(p.era)})
-                              </Link>
-                            );
-                          })}
+                          {relatedPersonsData.map((p: any) => (
+                            <Link
+                              prefetch={false}
+                              key={p.id}
+                              href={getHref(`/persons/${p.id}`)}
+                              className="text-blue-700 hover:text-blue-900 hover:underline bg-blue-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(p.name)} {p.era ? `(${t(p.era)})` : ''}
+                            </Link>
+                          ))}
                         </div>
                       </td>
                     </tr>
                   )}
-                  {concept.relatedConcepts && concept.relatedConcepts.length > 0 && (
+                  {relatedCrossConceptsData.length > 0 && (
                     <tr className="hover:bg-slate-50/60">
                       <th scope="row" className="py-2.5 px-3 font-semibold text-slate-500 w-28 whitespace-nowrap bg-slate-50/50 rounded-l-lg">
                         {t('关联概念')}
                       </th>
                       <td className="py-2.5 px-4">
                         <div className="flex flex-wrap gap-2">
-                          {concept.relatedConcepts.map(cid => {
-                            const c = ZEN_CONCEPTS.find(x => x.id === cid);
-                            if (!c) return null;
-                            return (
-                              <Link
-                                prefetch={false}
-                                key={cid}
-                                href={getHref(`/concepts/${cid}`)}
-                                className="text-purple-700 hover:text-purple-900 hover:underline bg-purple-50/80 px-2 py-0.5 rounded text-xs font-medium"
-                              >
-                                {t(c.title)}
-                              </Link>
-                            );
-                          })}
+                          {relatedCrossConceptsData.map((c: any) => (
+                            <Link
+                              prefetch={false}
+                              key={c.id}
+                              href={getHref(`/concepts/${c.id}`)}
+                              className="text-purple-700 hover:text-purple-900 hover:underline bg-purple-50/80 px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                              {t(c.title)}
+                            </Link>
+                          ))}
                         </div>
                       </td>
                     </tr>
@@ -331,7 +302,7 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
                 <span className="text-xs text-rose-700/60">({t('共')} {concept.quotes.length} {t('则')})</span>
               </h2>
               <div className="space-y-3">
-                {(concept.quotes.length > 5 && !quotesExpanded ? concept.quotes.slice(0, 5) : concept.quotes).map((quote, idx) => (
+                {(concept.quotes.length > 5 && !quotesExpanded ? concept.quotes.slice(0, 5) : concept.quotes).map((quote: string, idx: number) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
@@ -354,17 +325,19 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 4. 倡导此概念的历代祖师 */}
-          {concept.relatedPersons && concept.relatedPersons.length > 0 && (
+          {relatedPersonsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                 <Users className="w-5 h-5 text-blue-700" />
                 <span>{t('👥 阐发此概念的历代祖师')}</span>
               </h2>
               <LinkCardGrid
-                items={concept.relatedPersons.map(pid => {
-                  const rp = ZEN_PERSONS.find(p => p.id === pid);
-                  return rp ? { id: rp.id, title: rp.name, summary: rp.title, href: `/persons/${pid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedPersonsData.map((rp: any) => ({
+                  id: rp.id,
+                  title: rp.name,
+                  summary: rp.title,
+                  href: `/persons/${rp.id}`
+                }))}
                 variant="blue"
               />
             </div>
@@ -450,17 +423,19 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 8. 交叉关联概念 */}
-          {concept.relatedConcepts && concept.relatedConcepts.length > 0 && (
+          {relatedCrossConceptsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
                <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-slate-900">
                 <Tag className="w-5 h-5 text-slate-700" />
                 <span>{t('🔗 交叉互参概念')}</span>
               </h2>
               <LinkCardGrid
-                items={concept.relatedConcepts.map(cid => {
-                  const rc = ZEN_CONCEPTS.find(c => c.id === cid);
-                  return rc ? { id: rc.id, title: rc.title, summary: rc.summary?.slice(0, 60), href: `/concepts/${cid}` } : null;
-                }).filter(Boolean) as any[]}
+                items={relatedCrossConceptsData.map((rc: any) => ({
+                  id: rc.id,
+                  title: rc.title,
+                  summary: rc.summary?.slice(0, 60),
+                  href: `/concepts/${rc.id}`
+                }))}
                 variant="purple"
               />
             </div>
@@ -477,7 +452,7 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
              </h2>
 
              <LinkCardGrid
-               items={concept.relatedBooks.map(bookId => {
+               items={concept.relatedBooks.map((bookId: string) => {
                  const book = manifest.find(m => m.id === bookId);
                  return { id: bookId, title: book ? book.title : bookId, summary: book?.author, href: `/classics/${bookId}` };
                })}
@@ -488,14 +463,14 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 10. 相关问答 */}
-          {ZEN_FAQS.filter(f => f.relatedBooks && concept.relatedBooks.some(b => f.relatedBooks!.includes(b))).length > 0 && (
+          {relatedFaqsData.length > 0 && (
             <div className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md space-y-4">
               <h2 className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-900">
                 <Lightbulb className="w-5 h-5 text-emerald-700" />
                 <span>{t('💡 相关参究问答')}</span>
               </h2>
               <LinkCardGrid
-                items={ZEN_FAQS.filter(f => f.relatedBooks && concept.relatedBooks.some(b => f.relatedBooks!.includes(b))).slice(0, 6).map(f => ({
+                items={relatedFaqsData.map((f: any) => ({
                   id: f.id, title: f.question, summary: f.answer?.slice(0, 60), href: `/faq`
                 }))}
                 variant="emerald"
@@ -505,12 +480,12 @@ export default function ConceptDetailPageClient({ params }: PageProps) {
           )}
 
           {/* 上下篇导航 */}
-          {(() => {
-            const idx = ZEN_CONCEPTS.findIndex(c => c.id === concept.id);
-            const prev = idx > 0 ? { id: ZEN_CONCEPTS[idx - 1].id, title: ZEN_CONCEPTS[idx - 1].title, href: `/concepts/${ZEN_CONCEPTS[idx - 1].id}` } : null;
-            const next = idx < ZEN_CONCEPTS.length - 1 ? { id: ZEN_CONCEPTS[idx + 1].id, title: ZEN_CONCEPTS[idx + 1].title, href: `/concepts/${ZEN_CONCEPTS[idx + 1].id}` } : null;
-            return <PrevNextNav prev={prev} next={next} />;
-          })()}
+          {(prevConcept || nextConcept) && (
+            <PrevNextNav
+              prev={prevConcept ? { id: prevConcept.id, title: prevConcept.title, href: `/concepts/${prevConcept.id}` } : null}
+              next={nextConcept ? { id: nextConcept.id, title: nextConcept.title, href: `/concepts/${nextConcept.id}` } : null}
+            />
+          )}
         </main>
 
         <SiteFooter />

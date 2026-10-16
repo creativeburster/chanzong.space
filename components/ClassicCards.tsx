@@ -420,19 +420,29 @@ export const AudioToolbarButton: React.FC<{ rawContent?: string; audioText?: str
 
   if (!supported) return null;
 
-  const textSource = audioText || rawContent || '';
-  const cleanText = textSource
-    .replace(/^#+\s*/gm, '')
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .replace(/^>\s*/gm, '')
-    .replace(/^[-*]\s*/gm, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/[💡🗝️📌⚠️💬✅❌🔗]/g, '')
-    .replace(/\n{2,}/g, '。')
-    .replace(/\n/g, '，')
-    .trim();
+  const getCleanText = () => {
+    let textSource = audioText || rawContent || '';
+    if (!textSource && typeof document !== 'undefined') {
+      const articleEl = document.getElementById('sec-article') || document.querySelector('article');
+      if (articleEl) {
+        textSource = (articleEl as HTMLElement).innerText || '';
+      }
+    }
+    return textSource
+      .replace(/^#+\s*/gm, '')
+      .replace(/\*\*([^*]+)\*\*/g, '$1')
+      .replace(/^>\s*/gm, '')
+      .replace(/^[-*]\s*/gm, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/[💡🗝️📌⚠️💬✅❌🔗]/g, '')
+      .replace(/\n{2,}/g, '。')
+      .replace(/\n/g, '，')
+      .trim();
+  };
 
   const doSpeak = (r: number) => {
+    const cleanText = getCleanText();
+    if (!cleanText) return;
     const synth = window.speechSynthesis;
     synth.cancel();
     const utter = new SpeechSynthesisUtterance(cleanText);

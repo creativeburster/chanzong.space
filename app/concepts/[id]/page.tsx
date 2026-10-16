@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ConceptDetailPageClient from './ConceptDetailPageClient';
-import { ZEN_CONCEPTS } from '@/lib/taxonomy';
+import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 
 interface PageProps { params: { id: string } }
 
@@ -36,7 +36,6 @@ export function generateStaticParams() {
   return ZEN_CONCEPTS.map((x: any) => ({ id: x.id }));
 }
 
-
 export function generateMetadata({ params }: PageProps): Metadata {
   const item = ZEN_CONCEPTS.find((x: any) => x.id === params.id);
   if (!item) return {};
@@ -64,15 +63,88 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
   };
 }
+
 export default function ConceptDetailPagePage({ params }: PageProps) {
   const item = ZEN_CONCEPTS.find((x: any) => x.id === params.id);
   if (!item) {
     notFound();
   }
+
+  // 1. 同一范畴的其他概念
+  const sameCategoryConcepts = item.category
+    ? ZEN_CONCEPTS.filter((c: any) => c.id !== item.id && c.category === item.category).slice(0, 6)
+    : [];
+
+  // 2. 阐发此概念的代表公案
+  const explicitKoans = ZEN_KOANS.filter((q: any) => q.relatedConcepts && q.relatedConcepts.includes(item.id));
+  let relatedKoans = explicitKoans;
+  if (explicitKoans.length < 6) {
+    const explicitIds = new Set(explicitKoans.map((q: any) => q.id));
+    const implicitKoans = ZEN_KOANS.filter((q: any) => {
+      if (explicitIds.has(q.id)) return false;
+      return (
+        q.question.includes(item.title) ||
+        q.answer.includes(item.title) ||
+        (q.interpretation && q.interpretation.includes(item.title))
+      );
+    });
+    relatedKoans = [...explicitKoans, ...implicitKoans].slice(0, 6);
+  } else {
+    relatedKoans = explicitKoans.slice(0, 6);
+  }
+
+  // 3. 践行此概念的实修法门
+  const explicitMethods = ZEN_METHODS.filter((m: any) => m.relatedConcepts && m.relatedConcepts.includes(item.id));
+  let relatedMethods = explicitMethods;
+  if (explicitMethods.length < 4) {
+    const explicitIds = new Set(explicitMethods.map((m: any) => m.id));
+    const implicitMethods = ZEN_METHODS.filter((m: any) => {
+      if (explicitIds.has(m.id)) return false;
+      return (
+        m.title.includes(item.title) ||
+        m.summary.includes(item.title) ||
+        (Array.isArray(m.steps) && m.steps.some((s: string) => s.includes(item.title)))
+      );
+    });
+    relatedMethods = [...explicitMethods, ...implicitMethods].slice(0, 4);
+  } else {
+    relatedMethods = explicitMethods.slice(0, 4);
+  }
+
+  // 4. 阐发宗师与交叉概念
+  const relatedPersonsData = (item.relatedPersons || [])
+    .map((pid: string) => ZEN_PERSONS.find((p: any) => p.id === pid))
+    .filter(Boolean);
+
+  const relatedCrossConceptsData = (item.relatedConcepts || [])
+    .map((cid: string) => ZEN_CONCEPTS.find((c: any) => c.id === cid))
+    .filter(Boolean);
+
+  // 5. 相关问答
+  const relatedFaqsData = ZEN_FAQS.filter((f: any) =>
+    f.relatedBooks && item.relatedBooks && item.relatedBooks.some((b: string) => f.relatedBooks!.includes(b))
+  ).slice(0, 6);
+
+  // 6. 上下篇导航
+  const idx = ZEN_CONCEPTS.findIndex((c: any) => c.id === item.id);
+  const prevConcept = idx > 0 ? { id: ZEN_CONCEPTS[idx - 1].id, title: ZEN_CONCEPTS[idx - 1].title } : null;
+  const nextConcept = idx < ZEN_CONCEPTS.length - 1 ? { id: ZEN_CONCEPTS[idx + 1].id, title: ZEN_CONCEPTS[idx + 1].title } : null;
+
   return (
     <>
       <EntityJsonLd item={item} />
-      <ConceptDetailPageClient params={params} />
+      <ConceptDetailPageClient
+        params={params}
+        initialConcept={item}
+        sameCategoryConcepts={sameCategoryConcepts}
+        relatedKoans={relatedKoans}
+        relatedMethods={relatedMethods}
+        relatedPersonsData={relatedPersonsData}
+        relatedCrossConceptsData={relatedCrossConceptsData}
+        relatedFaqsData={relatedFaqsData}
+        prevConcept={prevConcept}
+        nextConcept={nextConcept}
+      />
     </>
   );
 }
