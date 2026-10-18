@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import PersonsPageClient from '@/app/persons/PersonsPageClient';
 import { STATS } from '@/lib/stats';
+import { ZEN_PERSONS } from '@/lib/taxonomy';
+import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: '禪門人物',
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/persons',
       'zh-Hant': '/zh-tw/persons',
+      'x-default': '/persons',
     },
   },
   openGraph: {
@@ -23,5 +26,32 @@ export const metadata: Metadata = {
 };
 
 export default function TradPersonsPage() {
-  return <PersonsPageClient />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://chanzong.space/zh-tw/persons#collection',
+    name: '禪門歷代祖師與人物誌',
+    description: `禪宗${STATS.persons}位禪門人物傳記、悟道因緣與教學風格。`,
+    url: 'https://chanzong.space/zh-tw/persons',
+    inLanguage: 'zh-TW',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: ZEN_PERSONS.length,
+      itemListElement: ZEN_PERSONS.slice(0, 50).map((p, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: convertToTrad(p.name),
+        url: `https://chanzong.space/zh-tw/persons/${p.id}`,
+      })),
+    },
+  };
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <PersonsPageClient />
+    </>
+  );
 }

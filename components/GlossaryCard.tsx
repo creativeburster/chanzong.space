@@ -59,7 +59,6 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
 
   const INITIAL_LIMIT = 8;
   const shouldLimit = entries.length > INITIAL_LIMIT;
-  const visibleEntries = shouldLimit && !expanded ? entries.slice(0, INITIAL_LIMIT) : entries;
 
   return (
     <div className="mt-8 bg-white dark:bg-[#0F172A] rounded-3xl border border-emerald-900/15 dark:border-emerald-900/40 shadow-md overflow-hidden transition-colors">
@@ -87,17 +86,20 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
         />
       </button>
 
-      {open && (
-        <div className="px-6 sm:px-10 pb-8 space-y-4">
-          <p className="text-xs text-stone-500 dark:text-stone-400">
-            {t('收录本篇经文之梵语音译、生僻难读与多音异读字词。点击小喇叭可试听读音，点击定位可直达正文。')}
-          </p>
+      <div className={`px-6 sm:px-10 pb-8 space-y-4 ${open ? '' : 'hidden'}`}>
+        <p className="text-xs text-stone-500 dark:text-stone-400">
+          {t('收录本篇经文之梵语音译、生僻难读与多音异读字词。点击小喇叭可试听读音，点击定位可直达正文。')}
+        </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            {visibleEntries.map((entry, i) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          {entries.map((entry, i) => {
+            const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
+            return (
               <div
                 key={i}
-                className="flex items-start gap-3.5 p-4 rounded-2xl bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-900/40 hover:border-emerald-400 dark:hover:border-emerald-700 transition-all group"
+                className={`${
+                  isHidden ? 'hidden' : 'flex'
+                } items-start gap-3.5 p-4 rounded-2xl bg-emerald-50/40 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-900/40 hover:border-emerald-400 dark:hover:border-emerald-700 transition-all group`}
               >
                 {/* 汉字首字大标 */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-emerald-100/80 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800/60 flex items-center justify-center shadow-2xs">
@@ -146,23 +148,23 @@ export const GlossaryCard: React.FC<{ sourceIds: string[] }> = ({ sourceIds }) =
                   </p>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {shouldLimit && (
-            <div className="flex justify-center pt-2">
-              <button
-                onClick={() => setExpanded(!expanded)}
-                className="px-5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-2xs"
-              >
-                {expanded
-                  ? t('收起')
-                  : `${t('展开全部生僻字')} (${t('共')} ${entries.length} ${t('词')})`}
-              </button>
-            </div>
-          )}
+            );
+          })}
         </div>
-      )}
+
+        {shouldLimit && (
+          <div className="flex justify-center pt-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="px-5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 text-[13px] font-semibold hover:bg-emerald-100 transition-all shadow-2xs"
+            >
+              {expanded
+                ? t('收起')
+                : `${t('展开全部生僻字')} (${t('共')} ${entries.length} ${t('词')})`}
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

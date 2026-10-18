@@ -1,26 +1,55 @@
+import { SIMP_CHARS, TRAD_CHARS, PHRASE_OVERRIDES } from './opencc-sync-dict';
+
 let s2tConverter: ((text: string) => string) | null = null;
 let t2sConverter: ((text: string) => string) | null = null;
 let isInitializing = false;
 let initPromise: Promise<void> | null = null;
 
-const tradCache = new Map<string, string>();
+const tradCache = new Map<string, string>(Object.entries(PHRASE_OVERRIDES));
 const simpCache = new Map<string, string>();
-const MAX_CACHE_SIZE = 10000;
+const MAX_CACHE_SIZE = 15000;
+
+// 构建极速同步单字映射表（供客户端首帧 Hydration 0ms 零延迟同步转换，彻底消除 React 水合 #418/#425 与简繁闪回）
+const s2tCharMap = new Map<string, string>();
+const t2sCharMap = new Map<string, string>();
+for (let i = 0; i < SIMP_CHARS.length; i++) {
+  s2tCharMap.set(SIMP_CHARS[i], TRAD_CHARS[i]);
+  t2sCharMap.set(TRAD_CHARS[i], SIMP_CHARS[i]);
+}
+
+function syncConvertToTrad(text: string): string {
+  if (PHRASE_OVERRIDES[text]) return PHRASE_OVERRIDES[text];
+  let out = '';
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    out += s2tCharMap.get(ch) || ch;
+  }
+  return out;
+}
+
+function syncConvertToSimp(text: string): string {
+  let out = '';
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    out += t2sCharMap.get(ch) || ch;
+  }
+  return out;
+}
 
 // 服务端环境（SSG 静态生成）直接同步初始化 OpenCC 保证 HTML 全量繁体预渲染
 if (typeof window === 'undefined') {
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const OpenCC = require('opencc-js');
-    s2tConverter = OpenCC.Converter({ from: 'cn', to: 'twp' });
-    t2sConverter = OpenCC.Converter({ from: 'twp', to: 'cn' });
+    s2tConverter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+    t2sConverter = OpenCC.Converter({ from: 'tw', to: 'cn' });
   } catch {
     // ignore
   }
 }
 
 /**
- * 客户端按需异步加载 OpenCC 模块
+ * 客户端按需异步加载完整 OpenCC 词库模块
  */
 export async function ensureOpenCC(): Promise<void> {
   if (s2tConverter && t2sConverter) return;
@@ -29,8 +58,8 @@ export async function ensureOpenCC(): Promise<void> {
   initPromise = (async () => {
     try {
       const OpenCC = await import('opencc-js');
-      s2tConverter = OpenCC.Converter({ from: 'cn', to: 'twp' });
-      t2sConverter = OpenCC.Converter({ from: 'twp', to: 'cn' });
+      s2tConverter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+      t2sConverter = OpenCC.Converter({ from: 'tw', to: 'cn' });
     } catch (e) {
       console.error('Failed to load OpenCC:', e);
     }
@@ -49,11 +78,14 @@ export function convertToTrad(text: string): string {
       isInitializing = true;
       ensureOpenCC();
     }
-    return text;
+    return syncConvertToTrad(text);
   }
   const result = s2tConverter(text);
   if (tradCache.size > MAX_CACHE_SIZE) {
     tradCache.clear();
+    for (const [k, v] of Object.entries(PHRASE_OVERRIDES)) {
+      tradCache.set(k, v);
+    }
   }
   tradCache.set(text, result);
   return result;
@@ -69,7 +101,7 @@ export function convertToSimp(text: string): string {
       isInitializing = true;
       ensureOpenCC();
     }
-    return text;
+    return syncConvertToSimp(text);
   }
   const result = t2sConverter(text);
   if (simpCache.size > MAX_CACHE_SIZE) {

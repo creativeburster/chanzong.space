@@ -14,6 +14,7 @@ function EntityJsonLd({ item }: { item: any }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTerm',
+    '@id': `https://chanzong.space/zh-tw/concepts/${item.id}#term`,
     name,
     description: desc,
     inDefinedTermSet: {
@@ -24,6 +25,10 @@ function EntityJsonLd({ item }: { item: any }) {
     termCode: item.id,
     url: `https://chanzong.space/zh-tw/concepts/${item.id}`,
     inLanguage: 'zh-TW',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'main p'],
+    },
   };
   return (
     <script
@@ -51,6 +56,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/concepts/${params.id}`,
         'zh-Hant': `/zh-tw/concepts/${params.id}`,
+        'x-default': `/concepts/${params.id}`,
       },
     },
     openGraph: {

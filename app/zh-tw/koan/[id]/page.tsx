@@ -20,6 +20,7 @@ function EntityJsonLd({ item }: { item: any }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'QAPage',
+    '@id': `https://chanzong.space/zh-tw/koan/${item.id}#koan`,
     mainEntity: {
       '@type': 'Question',
       name,
@@ -41,6 +42,10 @@ function EntityJsonLd({ item }: { item: any }) {
     },
     url: `https://chanzong.space/zh-tw/koan/${item.id}`,
     inLanguage: 'zh-TW',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'main p'],
+    },
   };
   return (
     <script
@@ -68,6 +73,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/koan/${params.id}`,
         'zh-Hant': `/zh-tw/koan/${params.id}`,
+        'x-default': `/koan/${params.id}`,
       },
     },
     openGraph: {

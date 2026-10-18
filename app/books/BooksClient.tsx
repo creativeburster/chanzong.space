@@ -56,6 +56,14 @@ export default function BooksClient() {
   const hasMore = displayCount < filtered.length;
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('q');
+      if (q) setKeyword(q);
+    }
+  }, []);
+
+  useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (catRef.current && !catRef.current.contains(e.target as Node)) setCatDropdownOpen(false);
       if (bookRef.current && !bookRef.current.contains(e.target as Node)) setBookDropdownOpen(false);
@@ -296,6 +304,30 @@ export default function BooksClient() {
               {t('已显示全部')} {filtered.length} {t('部经典')}
             </p>
           )}
+
+          {/* 全量典籍速览总目（确保 167 部禅宗经典 100% 静态 HTML 直链可达） */}
+          <section aria-label={t('禅宗典籍全量总目')} className="mt-14 pt-8 border-t border-slate-200/80">
+            <details open className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs group">
+              <summary className="cursor-pointer select-none flex items-center justify-between text-sm sm:text-base font-bold font-serif-zen text-slate-800">
+                <span>📚 {t('藏经阁全量典籍总目索引')} ({manifest.length} {t('部')})</span>
+                <span className="text-xs text-slate-400 font-sans group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 text-xs">
+                {manifest.map((b) => (
+                  <Link
+                    key={b.id}
+                    prefetch={false}
+                    href={getHref(`/classics/${b.id}`)}
+                    className="px-2.5 py-1.5 rounded-lg bg-slate-50 hover:bg-amber-50 text-slate-700 hover:text-amber-900 border border-slate-200/60 hover:border-amber-300 truncate transition-colors"
+                    title={`${b.title} · ${b.author}`}
+                  >
+                    <span className="text-[10px] text-slate-400 font-mono mr-1">#{b.idx}</span>
+                    {t(b.title)}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          </section>
         </main>
 
         <SiteFooter />

@@ -28,6 +28,7 @@ export function formatUrlsetXml(entries: SitemapEntry[]): string {
     <priority>${e.prio.toFixed(1)}</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${simpUrl}" />
   </url>`);
 
     // 繁体 URL 节点
@@ -38,6 +39,7 @@ export function formatUrlsetXml(entries: SitemapEntry[]): string {
     <priority>${(Math.max(0.1, e.prio - 0.05)).toFixed(1)}</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="${simpUrl}" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="${tradUrl}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${simpUrl}" />
   </url>`);
   }
 
@@ -124,6 +126,7 @@ export function getStaticEntries(): SitemapEntry[] {
     { path: '/methods', freq: 'monthly', prio: 0.9 },
     { path: '/koan', freq: 'monthly', prio: 0.9 },
     { path: '/persons', freq: 'monthly', prio: 0.9 },
+    { path: '/lineage', freq: 'monthly', prio: 0.9 },
     { path: '/faq', freq: 'monthly', prio: 0.8 },
     { path: '/practice', freq: 'weekly', prio: 0.85 },
     { path: '/graph', freq: 'yearly', prio: 0.5 },

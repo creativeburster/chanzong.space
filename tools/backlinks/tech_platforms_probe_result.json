@@ -1,0 +1,48 @@
+{
+  "oschina": {
+    "name": "开源中国 (OSChina)",
+    "url": "https://www.oschina.net/home/login",
+    "title": "登录 - OSCHINA - 开源 × AI · 开发者生态社区",
+    "third_parties": [
+      "手机短信",
+      "账号密码"
+    ],
+    "has_direct_qr": false,
+    "login_screenshot": "probe_oschina_login.png"
+  },
+  "cnblogs": {
+    "name": "博客园 (CNBlogs)",
+    "url": "https://account.cnblogs.com/signin",
+    "title": "用户中心 - 博客园",
+    "third_parties": [
+      "账号密码"
+    ],
+    "has_direct_qr": false,
+    "login_screenshot": "probe_cnblogs_login.png"
+  },
+  "juejin": {
+    "name": "掘金 (Juejin)",
+    "url": "https://juejin.cn/login",
+    "title": "掘金 - 登录",
+    "third_parties": [
+      "GitHub授权",
+      "手机短信",
+      "账号密码"
+    ],
+    "has_direct_qr": true,
+    "login_screenshot": "probe_juejin_login.png"
+  },
+  "csdn": {
+    "name": "CSDN",
+    "url": "https://passport.csdn.net/login",
+    "title": "CSDN-专业IT技术社区-登录",
+    "third_parties": [
+      "微信扫码",
+      "GitHub授权",
+      "QQ",
+      "账号密码"
+    ],
+    "has_direct_qr": true,
+    "login_screenshot": "probe_csdn_login.png"
+  }
+}

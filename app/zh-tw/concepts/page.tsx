@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import ConceptsPageClient from '@/app/concepts/ConceptsPageClient';
 import { STATS } from '@/lib/stats';
+import { ZEN_CONCEPTS } from '@/lib/taxonomy';
+import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: '核心概念',
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/concepts',
       'zh-Hant': '/zh-tw/concepts',
+      'x-default': '/concepts',
     },
   },
   openGraph: {
@@ -23,5 +26,32 @@ export const metadata: Metadata = {
 };
 
 export default function TradConceptsPage() {
-  return <ConceptsPageClient />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://chanzong.space/zh-tw/concepts#collection',
+    name: '禪宗核心概念庫',
+    description: `禪宗${STATS.concepts}個核心概念詳解——涵蓋心性、境界、修證、教理四大類。`,
+    url: 'https://chanzong.space/zh-tw/concepts',
+    inLanguage: 'zh-TW',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: ZEN_CONCEPTS.length,
+      itemListElement: ZEN_CONCEPTS.slice(0, 50).map((c, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: convertToTrad(c.title),
+        url: `https://chanzong.space/zh-tw/concepts/${c.id}`,
+      })),
+    },
+  };
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ConceptsPageClient />
+    </>
+  );
 }

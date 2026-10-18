@@ -1,0 +1,1505 @@
+[
+  {
+    "id": "qifo",
+    "title": "七佛传法偈",
+    "author": "迦叶尊者等",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "juelin",
+    "title": "觉林菩萨偈",
+    "author": "觉林菩萨",
+    "cbeta_id": "T0279",
+    "canon_source": "《大正新脩大藏经》 T0279",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wenshu",
+    "title": "文殊师利所说摩诃般若波罗蜜经",
+    "author": "文殊菩萨",
+    "cbeta_id": "T0232",
+    "canon_source": "《大正新脩大藏经》 T0232",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wuran",
+    "title": "无染觉性直观自行解脱之道",
+    "author": "莲花生大士",
+    "cbeta_id": "密乘无染心法",
+    "canon_source": "藏传不二了义密部",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhangzhi",
+    "title": "杖指教授",
+    "author": "莲花生大士",
+    "cbeta_id": "西藏大手印经论",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xuemaicong",
+    "title": "菩提达摩大师血脉论",
+    "author": "菩提达摩",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wuxinglun",
+    "title": "菩提达摩大师悟性论",
+    "author": "菩提达摩",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "poxianglun",
+    "title": "菩提达摩大师破相论",
+    "author": "菩提达摩",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wuxinlun",
+    "title": "菩提达摩大师无心论",
+    "author": "菩提达摩",
+    "cbeta_id": "T2831",
+    "canon_source": "《大正新脩大藏经》 T2831",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xixulun",
+    "title": "菩提达摩大师息诤论",
+    "author": "菩提达摩",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "sixingguan",
+    "title": "菩提达摩大师入道四行观",
+    "author": "菩提达摩",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xinxinming",
+    "title": "信心铭",
+    "author": "三祖僧璨",
+    "cbeta_id": "T2010",
+    "canon_source": "《大正新脩大藏经》 T2010",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "fangcunlun",
+    "title": "方寸论",
+    "author": "禅宗古德",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "anxin",
+    "title": "入道安心要方便法门",
+    "author": "四祖道信",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zuishangcheng",
+    "title": "最上乘论",
+    "author": "五祖弘忍",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "tanjing",
+    "title": "六祖坛经",
+    "author": "六祖惠能",
+    "cbeta_id": "T2008",
+    "canon_source": "《大正新脩大藏经》 T2008",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhengdaoge",
+    "title": "永嘉证道歌",
+    "author": "永嘉玄觉",
+    "cbeta_id": "T2014",
+    "canon_source": "《大正新脩大藏经》 T2014",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "mazu",
+    "title": "马祖道一禅师语录",
+    "author": "马祖道一",
+    "cbeta_id": "X1321",
+    "canon_source": "《卍新纂续藏经》 X1321",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "baizhang",
+    "title": "百丈怀海禅师语录",
+    "author": "百丈怀海",
+    "cbeta_id": "X1322",
+    "canon_source": "《卍新纂续藏经》 X1322",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huangbo",
+    "title": "黄檗山断际禅师传心法要",
+    "author": "黄檗希运",
+    "cbeta_id": "T2012A",
+    "canon_source": "《大正新脩大藏经》 T2012A",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xiuxinjue",
+    "title": "高丽国普照禅师修心诀",
+    "author": "普照知呐",
+    "cbeta_id": "T2020",
+    "canon_source": "《大正新脩大藏经》 T2020",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "linji",
+    "title": "镇州临济慧照禅师语录",
+    "author": "临济义玄",
+    "cbeta_id": "T1985",
+    "canon_source": "《大正新脩大藏经》 T1985",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dunwu",
+    "title": "顿悟入道要门论",
+    "author": "大珠慧海",
+    "cbeta_id": "X1250",
+    "canon_source": "《卍新纂续藏经》 X1250",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhenxin",
+    "title": "高丽国普照禅师真心直说",
+    "author": "普照知呐",
+    "cbeta_id": "T2020",
+    "canon_source": "《大正新脩大藏经》 T2020",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhigong",
+    "title": "宝志公禅师颂偈诗",
+    "author": "宝志公",
+    "cbeta_id": "T1984",
+    "canon_source": "《大正新脩大藏经》 T1984",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xinwangming",
+    "title": "傅大士心王铭",
+    "author": "傅大士",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shenhui",
+    "title": "荷泽大师显宗记",
+    "author": "荷泽神会",
+    "cbeta_id": "敦煌石室写本",
+    "canon_source": "敦煌遗书写卷精校",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jingangjing",
+    "title": "金刚般若波罗蜜经",
+    "author": "鸠摩罗什 译",
+    "cbeta_id": "T0235",
+    "canon_source": "《大正新脩大藏经》 T0235",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xinjing",
+    "title": "般若波罗蜜多心经",
+    "author": "玄奘 译",
+    "cbeta_id": "T0232",
+    "canon_source": "《大正新脩大藏经》 T0232",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yuanjuejing",
+    "title": "大方广圆觉修多罗了义经",
+    "author": "佛陀多罗 译",
+    "cbeta_id": "T0842",
+    "canon_source": "《大正新脩大藏经》 T0842",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanlinbaoxun",
+    "title": "禅林宝训 (全四卷)",
+    "author": "大慧宗杲 · 竹庵士珪 辑",
+    "cbeta_id": "T2022",
+    "canon_source": "《大正新脩大藏经》 T2022",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "lengyanjing",
+    "title": "大佛顶首楞严经 (全十卷)",
+    "author": "般刺密帝 译 / 房融 笔受",
+    "cbeta_id": "T0945",
+    "canon_source": "《大正新脩大藏经》 T0945",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "weimojiejing",
+    "title": "维摩诘所说经 (全十四品)",
+    "author": "鸠摩罗什 译",
+    "cbeta_id": "T0475",
+    "canon_source": "《大正新脩大藏经》 T0475",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shiniutu",
+    "title": "十牛图颂并序",
+    "author": "宋·廓庵师远",
+    "cbeta_id": "X1255",
+    "canon_source": "《卍新纂续藏经》 X1255",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "baojingsanmei",
+    "title": "宝镜三昧歌",
+    "author": "唐·洞山良价",
+    "cbeta_id": "T1986",
+    "canon_source": "《大正新脩大藏经》 T1986",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dongshanyulu",
+    "title": "洞山良价禅师语录",
+    "author": "唐·洞山良价（门人郭凝之编集）",
+    "cbeta_id": "T1986B",
+    "canon_source": "《大正新脩大藏经》 T1986B",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yongjia",
+    "title": "永嘉禅宗集",
+    "author": "唐·永嘉玄觉",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yunmen",
+    "title": "云门匡真禅师广录",
+    "author": "五代·云门文偃（门人守坚集）",
+    "cbeta_id": "T1988",
+    "canon_source": "《大正新脩大藏经》 T1988",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "bashiguijusong",
+    "title": "八识规矩颂",
+    "author": "玄奘 (憨山德清述)",
+    "cbeta_id": "T1586",
+    "canon_source": "《大正新脩大藏经》 T1586",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wumenguan",
+    "title": "禅宗无门关",
+    "author": "宋·无门慧开",
+    "cbeta_id": "T2005",
+    "canon_source": "《大正新脩大藏经》 T2005",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "changuancejin",
+    "title": "禅关策进",
+    "author": "明·袾宏（云栖莲池大师）",
+    "cbeta_id": "T2024",
+    "canon_source": "《大正新脩大藏经》 T2024",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dachengqixinlun",
+    "title": "大乘起信论",
+    "author": "马鸣菩萨 造 / 唐·实叉难陀 译",
+    "cbeta_id": "T1666",
+    "canon_source": "《大正新脩大藏经》 T1666",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huanwuxinyao",
+    "title": "佛果圜悟真觉禅师心要",
+    "author": "宋·圜悟克勤禅师",
+    "cbeta_id": "T2003",
+    "canon_source": "《大正新脩大藏经》 T2003",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huanwuyulu",
+    "title": "圆悟佛果禅师语录",
+    "author": "宋·圜悟克勤禅师",
+    "cbeta_id": "T1997",
+    "canon_source": "《大正新脩大藏经》 T1997",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dahuiyulu",
+    "title": "大慧普觉禅师语录",
+    "author": "宋·大慧宗杲禅师",
+    "cbeta_id": "T1998A",
+    "canon_source": "《大正新脩大藏经》 T1998A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanjia_guijian",
+    "title": "禅家龟鉴",
+    "author": "高丽·西山退隐禅师",
+    "cbeta_id": "X1249",
+    "canon_source": "《卍新纂续藏经》 X1249",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xinming",
+    "title": "心铭",
+    "author": "唐·牛头法融",
+    "cbeta_id": "T2010",
+    "canon_source": "《大正新脩大藏经》 T2010",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zuochanyi",
+    "title": "坐禅仪",
+    "author": "宋·长芦宗赜",
+    "cbeta_id": "X1245",
+    "canon_source": "《卍新纂续藏经》 X1245",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huangbo_wanlinglu",
+    "title": "黄檗断际禅师宛陵录",
+    "author": "黄檗希运",
+    "cbeta_id": "T2012",
+    "canon_source": "《大正新脩大藏经》 T2012",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhaozhouyulu",
+    "title": "赵州真际禅师语录",
+    "author": "赵州从谂",
+    "cbeta_id": "X1315",
+    "canon_source": "《卍新纂续藏经》 X1315",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jueguanlun",
+    "title": "绝观论",
+    "author": "牛头法融",
+    "cbeta_id": "T2832",
+    "canon_source": "《大正新脩大藏经》 T2832",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "boshan-canchanjingyu",
+    "title": "博山参禅警语",
+    "author": "博山元来",
+    "cbeta_id": "X1257",
+    "canon_source": "《卍新纂续藏经》 X1257",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "caoshanyulu",
+    "title": "抚州曹山本寂禅师语录",
+    "author": "唐·曹山本寂禅师",
+    "cbeta_id": "T1987A",
+    "canon_source": "《大正新脩大藏经》 T1987A",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "fayanyulu",
+    "title": "五祖法演禅师语录",
+    "author": "宋·五祖法演禅师",
+    "cbeta_id": "T1995",
+    "canon_source": "《大正新脩大藏经》 T1995",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhonglun",
+    "title": "中论",
+    "author": "龙树菩萨造 鸠摩罗什译",
+    "cbeta_id": "T1564",
+    "canon_source": "《大正新脩大藏经》 T1564",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wanshantongguiji",
+    "title": "万善同归集",
+    "author": "永明延寿",
+    "cbeta_id": "T2017",
+    "canon_source": "《大正新脩大藏经》 T2017",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanyuan_zhuquanjiduxu",
+    "title": "禅源诸诠集都序",
+    "author": "宗密",
+    "cbeta_id": "T2015",
+    "canon_source": "《大正新脩大藏经》 T2015",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "biyanlu",
+    "title": "佛果圆悟禅师碧岩录",
+    "author": "雪窦重显颂古 / 圆悟克勤评唱",
+    "cbeta_id": "T2003",
+    "canon_source": "《大正新脩大藏经》 T2003",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yangqihoulu",
+    "title": "杨岐方会和尚后录",
+    "author": "杨岐方会",
+    "cbeta_id": "T1994A",
+    "canon_source": "《大正新脩大藏经》 T1994A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "linjianhoulu",
+    "title": "林间录后集",
+    "author": "惠洪觉范",
+    "cbeta_id": "X1624",
+    "canon_source": "《卍新纂续藏经》 X1624",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shanglibian",
+    "title": "尚理编",
+    "author": "明·空谷景隆",
+    "cbeta_id": "B0133",
+    "canon_source": "《大藏经补编》 B0133",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yangqiyulu",
+    "title": "杨岐方会和尚语录",
+    "author": "宋·杨岐方会",
+    "cbeta_id": "T1994A",
+    "canon_source": "《大正新脩大藏经》 T1994A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanzongjueyiji",
+    "title": "禅宗决疑集",
+    "author": "元·智彻",
+    "cbeta_id": "T2021",
+    "canon_source": "《大正新脩大藏经》 T2021",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huanglonghuinan",
+    "title": "黄龙慧南禅师语录",
+    "author": "宋·黄龙慧南",
+    "cbeta_id": "T1993",
+    "canon_source": "《大正新脩大藏经》 T1993",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhaolun",
+    "title": "肇论",
+    "author": "后秦·僧肇",
+    "cbeta_id": "T1858",
+    "canon_source": "《大正新脩大藏经》 T1858",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shangzhibian",
+    "title": "尚直编",
+    "author": "明·空谷景隆",
+    "cbeta_id": "B0132",
+    "canon_source": "《大藏经补编》 B0132",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shishuangchuyuan",
+    "title": "石霜楚圆禅师语录",
+    "author": "宋·石霜楚圆",
+    "cbeta_id": "X1338",
+    "canon_source": "《卍新纂续藏经》 X1338",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xuanshayulu",
+    "title": "玄沙师备禅师语录",
+    "author": "五代·玄沙师备",
+    "cbeta_id": "X1445",
+    "canon_source": "《卍新纂续藏经》 X1445",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xuanshaguanglu",
+    "title": "玄沙师备禅师广录",
+    "author": "五代·玄沙师备",
+    "cbeta_id": "X1445",
+    "canon_source": "《卍新纂续藏经》 X1445",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "gaofengyulu",
+    "title": "高峰原妙禅师语录",
+    "author": "宋元·高峰原妙",
+    "cbeta_id": "X1400",
+    "canon_source": "《卍新纂续藏经》 X1400",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xuefengyulu",
+    "title": "雪峰义存禅师语录",
+    "author": "唐五代·雪峰义存",
+    "cbeta_id": "X1333",
+    "canon_source": "《卍新纂续藏经》 X1333",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "foguojijielu",
+    "title": "佛果击节录",
+    "author": "宋·圆悟克勤击节 / 雪窦重显拈古",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "mianxianyulu",
+    "title": "密庵咸杰禅师语录",
+    "author": "南宋·密庵咸杰",
+    "cbeta_id": "T1999",
+    "canon_source": "《大正新脩大藏经》 T1999",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zibaibieji",
+    "title": "紫柏老人别集",
+    "author": "明·紫柏真可",
+    "cbeta_id": "X1452",
+    "canon_source": "《卍新纂续藏经》 X1452",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "renyantianmu",
+    "title": "人天眼目",
+    "author": "宋·晦岩智昭",
+    "cbeta_id": "T2006",
+    "canon_source": "《大正新脩大藏经》 T2006",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "linjianlu",
+    "title": "林间录",
+    "author": "宋·惠洪（洪觉范）",
+    "cbeta_id": "X1624",
+    "canon_source": "《卍新纂续藏经》 X1624",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "lengqiejing",
+    "title": "楞伽阿跋多罗宝经",
+    "author": "刘宋·求那跋陀罗译",
+    "cbeta_id": "T0670",
+    "canon_source": "《大正新脩大藏经》 T0670",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanyuanqinggui",
+    "title": "禅苑清规",
+    "author": "宋·宗赜集",
+    "cbeta_id": "X1245",
+    "canon_source": "《卍新纂续藏经》 X1245",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chixiu-baizhang-qinggui",
+    "title": "敕修百丈清规",
+    "author": "元·德辉重编 大訢校正",
+    "cbeta_id": "T2025",
+    "canon_source": "《大正新脩大藏经》 T2025",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jingangge",
+    "title": "大圆满见修行果金刚歌",
+    "author": "莲花生大士",
+    "cbeta_id": "T0235",
+    "canon_source": "《大正新脩大藏经》 T0235",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "ziwojietuo",
+    "title": "自我解脱直指心性深法",
+    "author": "莲花生大士",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "songlingbaoxun",
+    "title": "松岭宝训·益西措嘉问答录",
+    "author": "莲花生大士",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xizangduwangjing",
+    "title": "西藏度亡经·中阴闻解脱",
+    "author": "莲花生大士",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xinxingxiuxisong",
+    "title": "大圆满心性休息颂",
+    "author": "龙钦巴尊者",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "henghedashouyin",
+    "title": "恒河大手印二十八颂",
+    "author": "帝洛巴尊者",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zixingcanjiu",
+    "title": "自性参究与我是谁",
+    "author": "拉玛那·马哈希",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "awatuotazhige",
+    "title": "阿瓦陀塔之歌",
+    "author": "古印度·达塔特雷亚",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "ashitawakela",
+    "title": "阿什塔瓦克拉之歌",
+    "author": "古印度·八曲仙人",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "baifamingmenlun",
+    "title": "大乘百法明门论",
+    "author": "天亲菩萨造·玄奘译",
+    "cbeta_id": "T1614",
+    "canon_source": "《大正新脩大藏经》 T1614",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "weishisanshilunsong",
+    "title": "唯识三十论颂",
+    "author": "世亲菩萨造·玄奘译",
+    "cbeta_id": "T1586",
+    "canon_source": "《大正新脩大藏经》 T1586",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "weishiershilun",
+    "title": "唯识二十论",
+    "author": "世亲菩萨造·玄奘译",
+    "cbeta_id": "T1590",
+    "canon_source": "《大正新脩大藏经》 T1590",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "rujingyulu",
+    "title": "如净和尚语录",
+    "author": "宋·天童如净（门人文素等编集）",
+    "cbeta_id": "T2002A",
+    "canon_source": "《大正新脩大藏经》 T2002A",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "rujingxuyulu",
+    "title": "天童如净禅师续语录",
+    "author": "宋·天童如净（嗣法义远编·道元记）",
+    "cbeta_id": "T2002B",
+    "canon_source": "《大正新脩大藏经》 T2002B",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "weishanyulu",
+    "title": "沩山灵祐禅师语录",
+    "author": "唐·沩山灵祐（语风圆信、郭凝之编集）",
+    "cbeta_id": "T1989",
+    "canon_source": "《大正新脩大藏经》 T1989",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chengyelun",
+    "title": "大乘成业论",
+    "author": "世亲菩萨造·玄奘译",
+    "cbeta_id": "T1609",
+    "canon_source": "《大正新脩大藏经》 T1609",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "bianzhongbianlun",
+    "title": "辨中边论",
+    "author": "弥勒菩萨颂·世亲菩萨释·玄奘译",
+    "cbeta_id": "T1600",
+    "canon_source": "《大正新脩大藏经》 T1600",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "qiaoyinyulu",
+    "title": "樵隐和尚语录",
+    "author": "元·樵隐悟逸（侍者正定等编集）",
+    "cbeta_id": "X1385",
+    "canon_source": "《卍新纂续藏经》 X1385",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shoulengyansanmeijing",
+    "title": "佛说首楞严三昧经",
+    "author": "后秦·鸠摩罗什译",
+    "cbeta_id": "T0642",
+    "canon_source": "《大正新脩大藏经》 T0642",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shedachenglunben",
+    "title": "摄大乘论本",
+    "author": "无著菩萨造·玄奘译",
+    "cbeta_id": "T1594",
+    "canon_source": "《大正新脩大藏经》 T1594",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huanzhu-anqinggui",
+    "title": "幻住庵清规",
+    "author": "元·中峰明本（普应国师）",
+    "cbeta_id": "X1248",
+    "canon_source": "《卍新纂续藏经》 X1248",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jieshenmijing",
+    "title": "解深密经",
+    "author": "唐·玄奘译",
+    "cbeta_id": "T0676",
+    "canon_source": "《大正新脩大藏经》 T0676",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "miyanjing",
+    "title": "大乘密严经",
+    "author": "唐·地婆诃罗译",
+    "cbeta_id": "T0681",
+    "canon_source": "《大正新脩大藏经》 T0681",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "achengjilun",
+    "title": "大乘阿毘达磨集论",
+    "author": "无著菩萨造·玄奘译",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "baoxinglun",
+    "title": "究竟一乘宝性论",
+    "author": "弥勒菩萨颂·勒那摩提译",
+    "cbeta_id": "T1611",
+    "canon_source": "《大正新脩大藏经》 T1611",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xutangyulu",
+    "title": "虚堂和尚语录",
+    "author": "宋·虚堂智愚（妙源等编）",
+    "cbeta_id": "T2000",
+    "canon_source": "《大正新脩大藏经》 T2000",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "hongzhiyulu",
+    "title": "宏智正觉禅师广录",
+    "author": "宋·宏智正觉（天童正觉）",
+    "cbeta_id": "T2001",
+    "canon_source": "《大正新脩大藏经》 T2001",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhuweimojiejing",
+    "title": "注维摩诘经",
+    "author": "后秦·僧肇集注（罗什·道生等注）",
+    "cbeta_id": "T1775",
+    "canon_source": "《大正新脩大藏经》 T1775",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dachengzhuangyanjinglun",
+    "title": "大乘庄严经论",
+    "author": "弥勒菩萨造颂·无著菩萨释·波罗颇蜜多罗译",
+    "cbeta_id": "T1604",
+    "canon_source": "《大正新脩大藏经》 T1604",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "congronglu",
+    "title": "从容录",
+    "author": "宋·宏智正觉颂古·元·万松行秀评唱",
+    "cbeta_id": "T2004",
+    "canon_source": "《大正新脩大藏经》 T2004",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chengweishilun",
+    "title": "成唯识论",
+    "author": "护法等菩萨造·唐·玄奘译",
+    "cbeta_id": "T1585",
+    "canon_source": "《大正新脩大藏经》 T1585",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xianyangshengjiaolun",
+    "title": "显扬圣教论",
+    "author": "无著菩萨造·唐·玄奘译",
+    "cbeta_id": "T1602",
+    "canon_source": "《大正新脩大藏经》 T1602",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "tianmuzhongfengguanglu",
+    "title": "天目中峰和尚广录",
+    "author": "元·中峰明本著",
+    "cbeta_id": "B0145",
+    "canon_source": "《大藏经补编》 B0145",
+    "dynasty": "元代/高丽",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dachengapidamojilun",
+    "title": "大乘阿毘达磨集论",
+    "author": "无著菩萨造·唐·玄奘译",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jingdechuandenglu",
+    "title": "景德传灯录",
+    "author": "宋·道原纂·杨亿等奉旨校勘",
+    "cbeta_id": "T2076",
+    "canon_source": "《大正新脩大藏经》 T2076",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "guzunsuyulu",
+    "title": "古尊宿语录",
+    "author": "宋·赜藏主辑·物初大观序",
+    "cbeta_id": "X1315",
+    "canon_source": "《卍新纂续藏经》 X1315",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zibailaorenquanji",
+    "title": "紫柏老人全集",
+    "author": "明·紫柏真可著·憨山德清等编",
+    "cbeta_id": "X1452",
+    "canon_source": "《卍新纂续藏经》 X1452",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "hanshanlaorenmengyouji",
+    "title": "憨山老人梦游集",
+    "author": "明·憨山德清著·门人通炯等编",
+    "cbeta_id": "X1456",
+    "canon_source": "《卍新纂续藏经》 X1456",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wudenghuiyuan",
+    "title": "五灯会元",
+    "author": "宋·大觉普济编纂",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zongjinglu",
+    "title": "宗镜录",
+    "author": "五代宋初·永明延寿著",
+    "cbeta_id": "T2016",
+    "canon_source": "《大正新脩大藏经》 T2016",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zhiyuelu",
+    "title": "指月录",
+    "author": "明·瞿汝稷辑",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "明代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "ruzhongriyong",
+    "title": "入众日用",
+    "author": "宋·宗寿 辑（无量寿禅师）",
+    "cbeta_id": "X1246",
+    "canon_source": "《卍新纂续藏经》 X1246",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chuanfazhengzongdingzutu",
+    "title": "传法正宗定祖图",
+    "author": "宋·契嵩 撰（明教大师）",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "fangshanwenbaoyulu",
+    "title": "方山文宝禅师语录",
+    "author": "元·方山文宝（净慈方山禅师）",
+    "cbeta_id": "X1395",
+    "canon_source": "《卍新纂续藏经》 X1395",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zongmenshenan",
+    "title": "云门麦浪怀禅师宗门设难",
+    "author": "明·麦浪怀（云门麦道人）",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shengmanjing",
+    "title": "胜鬘师子吼一乘大方便方广经",
+    "author": "刘宋·求那跋陀罗 译 / 胜鬘夫人 说",
+    "cbeta_id": "T0353",
+    "canon_source": "《大正新脩大藏经》 T0353",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chaozongyulu",
+    "title": "超宗慧方禅师语录（黄龙四家录第四）",
+    "author": "宋·超宗慧方",
+    "cbeta_id": "X1345",
+    "canon_source": "《卍新纂续藏经》 X1345",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "baoxingwangzhenglun",
+    "title": "宝行王正论",
+    "author": "龙树菩萨 造 / 陈·真谛 译",
+    "cbeta_id": "T1656",
+    "canon_source": "《大正新脩大藏经》 T1656",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shiertimenlun",
+    "title": "十二门论",
+    "author": "龙树菩萨造 / 鸠摩罗什 译",
+    "cbeta_id": "T1568",
+    "canon_source": "《大正新脩大藏经》 T1568",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jingangsanmeijing",
+    "title": "金刚三昧经",
+    "author": "失译人名（达摩印心根本经）",
+    "cbeta_id": "T0273",
+    "canon_source": "《大正新脩大藏经》 T0273",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "pingshiyulu",
+    "title": "平石如砥禅师语录",
+    "author": "元·平石如砥",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "weixinjue",
+    "title": "永明智觉禅师唯心诀",
+    "author": "五代·永明延寿",
+    "cbeta_id": "T2018",
+    "canon_source": "《大正新脩大藏经》 T2018",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wenyiyulu",
+    "title": "金陵清凉院文益禅师语录",
+    "author": "五代·法眼文益",
+    "cbeta_id": "T1991",
+    "canon_source": "《大正新脩大藏经》 T1991",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yangshanyulu",
+    "title": "袁州仰山慧寂禅师语录",
+    "author": "唐·仰山慧寂",
+    "cbeta_id": "T1990",
+    "canon_source": "《大正新脩大藏经》 T1990",
+    "dynasty": "唐末五代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dachengqixinlunxinyi",
+    "title": "大乘起信论（实叉难陀译）",
+    "author": "马鸣菩萨 造 / 唐·实叉难陀 译",
+    "cbeta_id": "T1666",
+    "canon_source": "《大正新脩大藏经》 T1666",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "jianguanyulu",
+    "title": "剑关子益禅师语录",
+    "author": "宋·剑关子益",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shunzhonglun",
+    "title": "顺中论",
+    "author": "龙树菩萨造颂·无著菩萨释·瞿昙般若流支译",
+    "cbeta_id": "T1565",
+    "canon_source": "《大正新脩大藏经》 T1565",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "ruzhongxuzhi",
+    "title": "入众须知",
+    "author": "宋·丛林清规编者 汇集",
+    "cbeta_id": "X1247",
+    "canon_source": "《卍新纂续藏经》 X1247",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "pangjushiyulu",
+    "title": "庞居士语录",
+    "author": "唐·庞蕴 述 · 唐·于頔 编集",
+    "cbeta_id": "X1336",
+    "canon_source": "《卍新纂续藏经》 X1336",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "haiyinyulu",
+    "title": "海印昭如禅师三会语录",
+    "author": "元·海印昭如 述 · 门人行纯 编集",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chuanfazhengzonglun",
+    "title": "传法正宗论",
+    "author": "宋·镡津契嵩 著",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xisouyulu",
+    "title": "希叟绍昙禅师语录",
+    "author": "宋·希叟绍昙 述 · 门人自悟等 编",
+    "cbeta_id": "X1389",
+    "canon_source": "《卍新纂续藏经》 X1389",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "damoxinjinganxin",
+    "title": "达摩大师心经颂与安心法门",
+    "author": "梁·菩提达摩 述",
+    "cbeta_id": "T2011",
+    "canon_source": "《大正新脩大藏经》 T2011",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "wujianxianduyulu",
+    "title": "天台无见先睹禅师语录",
+    "author": "元·先睹 述 · 门人智度等 编",
+    "cbeta_id": "X1393",
+    "canon_source": "《卍新纂续藏经》 X1393",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huitangyulu",
+    "title": "黄龙晦堂心和尚语录",
+    "author": "宋·晦堂祖心 述 · 侍者子和 录",
+    "cbeta_id": "X1343",
+    "canon_source": "《卍新纂续藏经》 X1343",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "putixingjing",
+    "title": "菩提行经",
+    "author": "圣龙树菩萨 集颂 · 寂天菩萨 造 · 宋·天息灾 译",
+    "cbeta_id": "T1662",
+    "canon_source": "《大正新脩大藏经》 T1662",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "bailun",
+    "title": "百论",
+    "author": "提婆菩萨 造 · 婆薮开士 释 · 姚秦·鸠摩罗什 译 · 释僧肇 序",
+    "cbeta_id": "T1569",
+    "canon_source": "《大正新脩大藏经》 T1569",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "lidaifabaoji",
+    "title": "历代法宝记",
+    "author": "唐·杜朏 等编集",
+    "cbeta_id": "T2075",
+    "canon_source": "《大正新脩大藏经》 T2075",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shiwuyulu",
+    "title": "石屋清珙禅师语录",
+    "author": "元·石屋清珙 述 · 门人至柔 等编集",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xiyanyulu",
+    "title": "西岩了慧禅师语录",
+    "author": "宋·西岩了慧 述 · 门人智潮 等编集",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "duanqiaoyulu",
+    "title": "断桥妙伦禅师语录",
+    "author": "宋·断桥妙伦 述 · 门人文宝 等编集",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shanhuidashilu",
+    "title": "善慧大士语录（傅大士录）",
+    "author": "梁·傅大士 述 · 唐·楼颖 编集 · 宋·楼炤 刊正",
+    "cbeta_id": "X1335",
+    "canon_source": "《卍新纂续藏经》 X1335",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yuejianyulu",
+    "title": "月磵和尚语录",
+    "author": "宋末元初·月磵 述 · 门人妙寅 等编",
+    "cbeta_id": "X1392",
+    "canon_source": "《卍新纂续藏经》 X1392",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "conglinxiaodingqinggui",
+    "title": "丛林校定清规总要",
+    "author": "宋·金华后湖比丘 惟勉 编次",
+    "cbeta_id": "X1249",
+    "canon_source": "《卍新纂续藏经》 X1249",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "dachengbaoyaoyilun",
+    "title": "大乘宝要义论",
+    "author": "宋·法护、惟净等 奉诏译",
+    "cbeta_id": "T1635",
+    "canon_source": "《大正新脩大藏经》 T1635",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "huanxiyulu",
+    "title": "环溪和尚语录",
+    "author": "宋·环溪惟一 述 · 门人觉此 等编",
+    "cbeta_id": "X1388",
+    "canon_source": "《卍新纂续藏经》 X1388",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "fenyangyulu",
+    "title": "汾阳无德禅师语录",
+    "author": "宋·汾阳善昭 述 · 门人石霜楚圆 等集",
+    "cbeta_id": "T1992",
+    "canon_source": "《大正新脩大藏经》 T1992",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "shitianyulu",
+    "title": "石田法薰禅师语录",
+    "author": "宋·石田法薰 述 · 门人师坦 等编",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "mingjueyulu",
+    "title": "明觉禅师语录",
+    "author": "宋·雪窦重显 述 · 门人惟盖竺 等编",
+    "cbeta_id": "T1996",
+    "canon_source": "《大正新脩大藏经》 T1996",
+    "dynasty": "宋代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chanlinbeiyongqinggui",
+    "title": "禅林备用清规",
+    "author": "元·泽山一咸 编 · 袁桷 序",
+    "cbeta_id": "X1250",
+    "canon_source": "《卍新纂续藏经》 X1250",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xueyanyulu",
+    "title": "雪岩祖钦禅师语录",
+    "author": "宋·雪岩祖钦 述 · 门人昭如 等编",
+    "cbeta_id": "历代宗门传本",
+    "canon_source": "宗门传本 / 古德汇录",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "miaofalianhuajing",
+    "title": "妙法莲华经",
+    "author": "后秦·鸠摩罗什 译",
+    "cbeta_id": "T0262",
+    "canon_source": "《大正新脩大藏经》 T0262",
+    "dynasty": "南北朝/唐代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "chuanfazhengzongji",
+    "title": "传法正宗记",
+    "author": "宋·镡津契嵩 编撰",
+    "cbeta_id": "T2078",
+    "canon_source": "《大正新脩大藏经》 T2078",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "zimenjingxun",
+    "title": "缁门警训",
+    "author": "明·如卺 续辑",
+    "cbeta_id": "T2023",
+    "canon_source": "《大正新脩大藏经》 T2023",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xisouguanglu",
+    "title": "希叟绍昙禅师广录",
+    "author": "宋·希叟绍昙 述 · 门人法澄等 编集",
+    "cbeta_id": "X1389",
+    "canon_source": "《卍新纂续藏经》 X1389",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "banruodenglunshi",
+    "title": "般若灯论释",
+    "author": "龙树菩萨 造颂 · 清辩菩萨 造释 · 唐·波罗颇蜜多罗 译",
+    "cbeta_id": "T1566",
+    "canon_source": "《大正新脩大藏经》 T1566",
+    "dynasty": "古印度/西天",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "yuxuanyulu",
+    "title": "御选语录",
+    "author": "清·世宗雍正帝 编选",
+    "cbeta_id": "X1319",
+    "canon_source": "《卍新纂续藏经》 X1319",
+    "dynasty": "清代/近代",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  },
+  {
+    "id": "xuchuandenglu",
+    "title": "续传灯录",
+    "author": "宋·圆极居顶 等编",
+    "cbeta_id": "T2077",
+    "canon_source": "《大正新脩大藏经》 T2077",
+    "dynasty": "唐宋宗门",
+    "collation_note": "以权威古本与CBETA佛典底本为基准，经人工分段标点与数字人文排版校勘"
+  }
+]

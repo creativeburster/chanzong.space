@@ -91,10 +91,10 @@ export async function GET(
       content += `\n`;
     });
   } else if (slug === 'faqs.txt') {
-    content += `# 禅修见地与宗门解惑问答精选 (${ZEN_FAQS.length}条) - ChanZong.space\n`;
+    content += `# 禅修见地与宗门解惑问答全集 (${ZEN_FAQS.length}条) - ChanZong.space\n`;
     content += `> 更新日期: ${now}\n`;
     content += `> 官方站点: https://chanzong.space/faq\n\n`;
-    ZEN_FAQS.slice(0, 300).forEach((f) => {
+    ZEN_FAQS.forEach((f) => {
       content += `### 问: ${f.question}\n`;
       content += `- 答: ${f.answer}\n\n`;
     });

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ZenKnowledgeBaseTaxonomy",
+  "description": "禅宗知识库 130 部经典、人物、概念、法门与音义全景数据本体架构",
+  "homepage": "https://chanzong.space",
+  "glossary_url": "https://chanzong.space/glossary",
+  "classics_count": 130,
+  "properties": {
+    "classics": {
+      "type": "array",
+      "description": "130 部核心禅宗典籍元数据集合",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "根本经论",
+              "六祖与初期禅",
+              "五家七宗",
+              "公案机锋",
+              "清规与修行"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "relatedConcepts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relatedPersons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "author",
+          "category",
+          "url"
+        ]
+      }
+    },
+    "glossary": {
+      "type": "array",
+      "description": "全站生僻字词注音与古今语义对勘",
+      "url": "https://chanzong.space/glossary",
+      "items": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string"
+          },
+          "pinyin": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "source_classic": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "reference_links": [
+    {
+      "name": "禅宗知识库生僻字与术语释义库",
+      "url": "https://chanzong.space/glossary"
+    },
+    {
+      "name": "D3.js 全球禅宗知识图谱",
+      "url": "https://chanzong.space/graph"
+    },
+    {
+      "name": "130 部经典白话导读索引",
+      "url": "https://chanzong.space/classics"
+    }
+  ]
+}

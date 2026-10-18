@@ -50,8 +50,27 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 User-agent: Bytespider
 Allow: /
+
+# --- 生成式引擎 (GEO / LLM) 专属知识索引 ---
+# LLMs-Txt: https://chanzong.space/llms.txt
+# LLMs-Full-Txt: https://chanzong.space/llms-full.txt
 
 # --- 核心 Sitemap 索引与分片子地图 ---
 Sitemap: https://chanzong.space/sitemap.xml

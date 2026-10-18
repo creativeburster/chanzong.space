@@ -627,6 +627,28 @@ export default function ConceptsPageClient() {
               {t('已显示全部')} {filtered.length} {t('条概念')}
             </p>
           )}
+
+          {/* 全量核心概念速览总目（确保 544 个禅宗概念 100% 静态 HTML 直链可达） */}
+          <section aria-label={t('禅宗核心概念全量总目')} className="mt-14 pt-8 border-t border-slate-200/80">
+            <details open className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs group">
+              <summary className="cursor-pointer select-none flex items-center justify-between text-sm sm:text-base font-bold font-serif-zen text-slate-800">
+                <span>💎 {t('禅宗核心概念全量总目索引')} ({ZEN_CONCEPTS.length} {t('条')})</span>
+                <span className="text-xs text-slate-400 font-sans group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs">
+                {ZEN_CONCEPTS.map((c) => (
+                  <Link
+                    key={c.id}
+                    prefetch={false}
+                    href={getHref(`/concepts/${c.id}`)}
+                    className="px-2.5 py-1 rounded-lg bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-900 border border-slate-200/60 hover:border-emerald-300 transition-colors"
+                  >
+                    {t(c.title)}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          </section>
         </main>
 
         <SiteFooter />

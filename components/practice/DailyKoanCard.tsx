@@ -3,13 +3,14 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Sparkles, RefreshCw, Share2, BookOpen, Check, ArrowRight, Image as ImageIcon } from 'lucide-react';
-import { ZEN_KOANS } from '@/lib/taxonomy/koans';
+import { FEATURED_KOANS } from '@/lib/featured';
 import { useLang } from '@/context/LangContext';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 
 export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
   const { t, getHref } = useLang();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [koanPool, setKoanPool] = useState<any[]>(FEATURED_KOANS);
 
   // 根据当前日期计算默认今日机锋
   const todaySeed = useMemo(() => {
@@ -20,19 +21,29 @@ export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false
       hash = (hash << 5) - hash + str.charCodeAt(i);
       hash |= 0;
     }
-    return Math.abs(hash) % ZEN_KOANS.length;
+    return Math.abs(hash) % FEATURED_KOANS.length;
   }, []);
 
   const [currentIndex, setCurrentIndex] = useState<number>(todaySeed);
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
 
-  const koan = ZEN_KOANS[currentIndex] || ZEN_KOANS[0];
+  const koan = koanPool[currentIndex] || koanPool[0];
 
-  const handleNext = (e: React.MouseEvent) => {
+  const handleNext = async (e: React.MouseEvent) => {
     e.stopPropagation();
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev + 1) % ZEN_KOANS.length);
+    if (koanPool.length === FEATURED_KOANS.length) {
+      try {
+        const mod = await import('@/lib/taxonomy/koans');
+        if (mod.ZEN_KOANS && mod.ZEN_KOANS.length > 0) {
+          setKoanPool(mod.ZEN_KOANS);
+          setCurrentIndex((prev) => (prev + 1) % mod.ZEN_KOANS.length);
+          return;
+        }
+      } catch {}
+    }
+    setCurrentIndex((prev) => (prev + 1) % koanPool.length);
   };
 
   const handleCopy = (e: React.MouseEvent) => {

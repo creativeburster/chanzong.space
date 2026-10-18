@@ -84,6 +84,8 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+        <link rel="alternate" type="text/plain" href="https://chanzong.space/llms.txt" title="禅宗知识库 LLM AI Index" />
+        <link rel="alternate" type="text/plain" href="https://chanzong.space/llms-full.txt" title="禅宗知识库 Full LLM Corpus" />
         <meta name="theme-color" content="#FAF9F6" />
         {/* Bing Webmaster Tools 验证 */}
         <meta name="msvalidate.01" content="F238CD74AF5EBE0E4362F6C77DD3D999" />

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import ConceptsPageClient from './ConceptsPageClient';
 import { STATS } from '@/lib/stats';
+import { ZEN_CONCEPTS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
   title: '核心概念',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/concepts',
       'zh-Hant': '/zh-tw/concepts',
+      'x-default': '/concepts',
     },
   },
   openGraph: {
@@ -21,5 +23,32 @@ export const metadata: Metadata = {
 };
 
 export default function ConceptsPagePage() {
-  return <ConceptsPageClient />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://chanzong.space/concepts#collection',
+    name: '禅宗核心概念库',
+    description: `禅宗${STATS.concepts}个核心概念详解——涵盖心性、境界、修证、教理四大类。`,
+    url: 'https://chanzong.space/concepts',
+    inLanguage: 'zh-CN',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: ZEN_CONCEPTS.length,
+      itemListElement: ZEN_CONCEPTS.slice(0, 50).map((c, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: c.title,
+        url: `https://chanzong.space/concepts/${c.id}`,
+      })),
+    },
+  };
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ConceptsPageClient />
+    </>
+  );
 }

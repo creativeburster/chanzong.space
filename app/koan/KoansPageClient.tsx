@@ -622,6 +622,30 @@ export default function KoansPageClient() {
               {t('已显示全部')} {filtered.length} {t('条公案')}
             </p>
           )}
+
+          {/* 全量公案机锋速览总目（确保 712 则禅宗公案 100% 静态 HTML 直链可达） */}
+          <section aria-label={t('禅宗公案全量总目')} className="mt-14 pt-8 border-t border-slate-200/80">
+            <details open className="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs group">
+              <summary className="cursor-pointer select-none flex items-center justify-between text-sm sm:text-base font-bold font-serif-zen text-slate-800">
+                <span>⚡ {t('禅宗机锋公案全量总目索引')} ({ZEN_KOANS.length} {t('则')})</span>
+                <span className="text-xs text-slate-400 font-sans group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1.5 text-xs">
+                {ZEN_KOANS.map((k) => (
+                  <Link
+                    key={k.id}
+                    prefetch={false}
+                    href={getHref(`/koan/${k.id}`)}
+                    className="px-2.5 py-1.5 rounded-lg bg-slate-50 hover:bg-rose-50 text-slate-700 hover:text-rose-900 border border-slate-200/60 hover:border-rose-300 truncate transition-colors"
+                    title={`${k.master}：${k.question}`}
+                  >
+                    <span className="text-[10px] text-rose-700 font-semibold mr-1">[{t(k.master)}]</span>
+                    {t(k.question)}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          </section>
         </main>
 
         <SiteFooter />

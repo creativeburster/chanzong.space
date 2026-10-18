@@ -18,7 +18,6 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({ classicId, tra
   const [page, setPage] = useState(0);
 
   const totalPages = paragraphs ? Math.ceil(paragraphs.length / PAGE_SIZE) : 0;
-  const pageItems = paragraphs?.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE) ?? [];
 
   return (
     <div className="mt-10 bg-white rounded-3xl border border-zinc-200 shadow-md overflow-hidden">
@@ -38,21 +37,25 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({ classicId, tra
         <ChevronDown className={`w-5 h-5 text-zinc-400 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
 
-      {open && (
-        <div className="px-6 sm:px-10 pb-8">
-          {paragraphs ? (
-            <>
-              <div className="space-y-4">
-                {pageItems.map((p, i) => (
+      <div className={`px-6 sm:px-10 pb-8 ${open ? '' : 'hidden'}`}>
+        {paragraphs ? (
+          <>
+            <div className="space-y-4">
+              {paragraphs.map((p, i) => {
+                const isVisible = i >= page * PAGE_SIZE && i < (page + 1) * PAGE_SIZE;
+                return (
                   <p
-                    key={page * PAGE_SIZE + i}
-                    className="text-[16px] font-serif-zen text-zinc-700 leading-loose bg-amber-50/50 px-5 py-4 rounded-2xl border border-amber-200/50"
+                    key={i}
+                    className={`${
+                      isVisible ? 'block' : 'hidden'
+                    } text-[16px] font-serif-zen text-zinc-700 leading-loose bg-amber-50/50 px-5 py-4 rounded-2xl border border-amber-200/50`}
                   >
-                    <span className="text-xs font-bold text-amber-700 mr-2">{page * PAGE_SIZE + i + 1}.</span>
+                    <span className="text-xs font-bold text-amber-700 mr-2">{i + 1}.</span>
                     {t(p)}
                   </p>
-                ))}
-              </div>
+                );
+              })}
+            </div>
 
               {totalPages > 1 && (
                 <div className="mt-6 flex items-center justify-between">
@@ -83,8 +86,7 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({ classicId, tra
               {t('本篇白话今译整理中，敬请期待。')}
             </p>
           )}
-        </div>
-      )}
+      </div>
     </div>
   );
 };

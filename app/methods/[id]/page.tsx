@@ -20,11 +20,16 @@ function EntityJsonLd({ item }: { item: any }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
+    '@id': `https://chanzong.space/methods/${item.id}#method`,
     name: `禅宗修持法门 · ${name}`,
     description: desc,
     step: steps,
     url: `https://chanzong.space/methods/${item.id}`,
     inLanguage: 'zh-CN',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'main p'],
+    },
   };
   return (
     <script
@@ -53,6 +58,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/methods/${params.id}`,
         'zh-Hant': `/zh-tw/methods/${params.id}`,
+        'x-default': `/methods/${params.id}`,
       },
     },
     openGraph: {

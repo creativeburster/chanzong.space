@@ -566,6 +566,60 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           {/* 全局即时生僻字词悬浮气泡 */}
           <InlineGlossaryTooltip />
 
+          {/* 典籍文献与校勘档案（语义化 HTML 表格，赋能 E-E-A-T 与生成式 AI 结构化引证） */}
+          <section aria-label={t('典籍文献与校勘档案')} className="mb-6">
+            <details className={`${currentTheme.cardBg} rounded-2xl border ${currentTheme.cardBorder} shadow-2xs overflow-hidden group transition-colors duration-300`}>
+              <summary className="px-4 sm:px-6 py-3 cursor-pointer select-none flex items-center justify-between text-xs sm:text-sm font-semibold text-amber-800 dark:text-amber-300 hover:bg-amber-500/5 transition-colors">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span>📜 {t('古籍文献编目与校勘档案')}</span>
+                  {meta.cbeta_id && (
+                    <span className="font-mono text-[11px] px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
+                      {meta.cbeta_id}
+                    </span>
+                  )}
+                  {meta.canon_source && (
+                    <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                      · {t(meta.canon_source)}
+                    </span>
+                  )}
+                </div>
+                <span className="text-[11px] text-zinc-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className={`px-4 sm:px-6 pb-4 pt-2 border-t ${currentTheme.cardBorder} overflow-x-auto`}>
+                <table className="w-full text-left border-collapse text-xs sm:text-[13px]">
+                  <tbody className="divide-y divide-zinc-200/60 dark:divide-zinc-800">
+                    <tr>
+                      <th scope="row" className="py-2 pr-4 font-semibold text-zinc-500 dark:text-zinc-400 w-32 sm:w-40">{t('典籍名称')}</th>
+                      <td className={`py-2 font-serif-zen font-bold ${currentTheme.bannerText}`}>《{t(meta.title)}》</td>
+                      <th scope="row" className="py-2 px-4 font-semibold text-zinc-500 dark:text-zinc-400 w-32 sm:w-40">{t('著述 / 编纂')}</th>
+                      <td className={`py-2 ${currentTheme.proseText}`}>{t(meta.author)} {meta.dynasty ? `（${t(meta.dynasty)}）` : ''}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="py-2 pr-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('大藏经编目')}</th>
+                      <td className="py-2 font-mono font-semibold text-amber-800 dark:text-amber-300">{meta.cbeta_id || 'CBETA / 禅门史传汇编'}</td>
+                      <th scope="row" className="py-2 px-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('文献底本')}</th>
+                      <td className={`py-2 ${currentTheme.proseText}`}>{t(meta.canon_source || '《大正新修大藏经》及《卍新纂续藏经》通行校本')}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="py-2 pr-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('部类与字数')}</th>
+                      <td className={`py-2 ${currentTheme.proseText}`}>{t(meta.category)} · {t('约')} {meta.word_count.toLocaleString()} {t('字')}</td>
+                      <th scope="row" className="py-2 px-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('知识图谱关联')}</th>
+                      <td className={`py-2 ${currentTheme.proseText}`}>
+                        {relPersons.length} {t('位祖师')} · {relConcepts.length} {t('个概念')} · {relQas.length} {t('则公案')} · {relFaqs.length} {t('条问答')}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="py-2 pr-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('校勘与标点说明')}</th>
+                      <td colSpan={3} className="py-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        {t(meta.collation_note || '底本经 CBETA 电子佛典交叉比对、现代新式标点分段及异体字规范化校勘；现代白话导读与分段今译独立成区，严守古籍原典与现代阐释之学术边界。')}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </section>
+
           {/* 模式 A：原文优先模式 */}
           {viewMode === 'original' && (
             <>
@@ -856,12 +910,22 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                       <span className="text-xs text-emerald-700/60 dark:text-emerald-400/60">({t('共')} {relFaqs.length} {t('条')})</span>
                     </div>
                     <div className="space-y-3">
-                      {(relFaqs.length > 4 && !faqsExpanded ? relFaqs.slice(0, 4) : relFaqs).map((f) => (
-                        <div key={f.id} className="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
-                          <div className="text-[14px] font-semibold text-emerald-900 dark:text-emerald-300 mb-1">{t(f.question)}</div>
-                          <div className="text-[13px] text-emerald-800/80 dark:text-emerald-300/80 leading-relaxed">{t(f.answer).slice(0, 120)}{f.answer.length > 120 ? '...' : ''}</div>
-                        </div>
-                      ))}
+                      {relFaqs.slice(0, 20).map((f, idx) => {
+                        const isHidden = !faqsExpanded && idx >= 4;
+                        return (
+                          <div
+                            key={f.id}
+                            className={`${
+                              isHidden ? 'hidden' : 'block'
+                            } p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40`}
+                          >
+                            <h3 className="text-[14px] font-semibold text-emerald-900 dark:text-emerald-300 mb-1">{t(f.question)}</h3>
+                            <p className={`text-[13px] text-emerald-800/80 dark:text-emerald-300/80 leading-relaxed ${faqsExpanded ? '' : 'line-clamp-3'}`}>
+                              {t(f.answer)}
+                            </p>
+                          </div>
+                        );
+                      })}
                     </div>
                     {relFaqs.length > 4 && (
                       <div className="flex justify-center pt-1">
@@ -869,7 +933,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                           onClick={() => setFaqsExpanded(!faqsExpanded)}
                           className="px-4 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800 text-[13px] font-semibold text-emerald-800 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-all"
                         >
-                          {faqsExpanded ? t('收起') : `${t('展开全部问答')} (${t('共')} ${relFaqs.length} ${t('条')})`}
+                          {faqsExpanded ? t('收起') : `${t('展开全部问答')} (${t('共')} ${Math.min(relFaqs.length, 20)} ${t('条')})`}
                         </button>
                       </div>
                     )}

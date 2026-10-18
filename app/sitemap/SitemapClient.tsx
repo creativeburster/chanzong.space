@@ -115,14 +115,14 @@ export default function SitemapClient() {
     },
     {
       key: 'faqs',
-      title: '经典问答',
+      title: '经典问答（精选前100条）',
       icon: Lightbulb,
       color: 'text-amber-600',
       bg: 'bg-amber-50',
       border: 'border-amber-200',
       count: STATS.faqs,
       href: '/faq',
-      items: ZEN_FAQS.map((f) => ({
+      items: ZEN_FAQS.slice(0, 100).map((f) => ({
         id: f.id,
         title: f.question,
         sub: '',
@@ -148,7 +148,7 @@ export default function SitemapClient() {
               {t('禅宗知识库 · 全部页面索引')}
             </h1>
             <p className="text-sm text-slate-500">
-              {t('共')} {STATS.classics + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} {t('个页面，点击各组标题展开/收起')}
+              {t('共')} {STATS.classics + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} {t('个知识条目，点击各组标题展开/收起')}
             </p>
           </div>
 
@@ -162,12 +162,17 @@ export default function SitemapClient() {
               {[
                 { title: '首页', href: '/' },
                 { title: '书籍总览', href: '/books' },
+                { title: '六大部类', href: '/categories' },
+                { title: '专题合集', href: '/collections' },
                 { title: '核心概念', href: '/concepts' },
                 { title: '修持法门', href: '/methods' },
                 { title: '禅宗公案', href: '/koan' },
                 { title: '祖师人物', href: '/persons' },
+                { title: '法脉传承', href: '/lineage' },
                 { title: '经典问答', href: '/faq' },
+                { title: '禅修工坊', href: '/practice' },
                 { title: '知识图谱', href: '/graph' },
+                { title: '关于本站', href: '/about' },
               ].map((p) => (
                 <Link prefetch={false} key={p.href}
                   href={getHref(p.href)}

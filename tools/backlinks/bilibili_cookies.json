@@ -1,0 +1,158 @@
+[
+  {
+    "name": "buvid3",
+    "value": "C8101220-2DB4-B00C-F744-7C42C3FAB6FC81051infoc",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "b_nut",
+    "value": "1788856981",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "_uuid",
+    "value": "2C12E921-4EDA-2788-8168-1F4B94D1F2DF81907infoc",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "buvid4",
+    "value": "98BEEE75-AD56-E1DD-2BB3-9A9AF2B42CC783934-126090816-5Uzezra3eE6njWDeDMpXrQ%3D%3D",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "buvid_fp",
+    "value": "2b6f585c0877cda65798b417a3bfbbe1",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "lang",
+    "value": "zh-Hans",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "DedeUserID",
+    "value": "520219006",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "DedeUserID__ckMd5",
+    "value": "0c271d43cea6e684",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "theme-tip-show",
+    "value": "SHOWED",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "theme-avatar-tip-show",
+    "value": "SHOWED",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "CURRENT_FNVAL",
+    "value": "4048",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "CURRENT_QUALITY",
+    "value": "0",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "rpdid",
+    "value": "|(u~)Yk~)|Rk0J'u~)))l)))l",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "home_feed_column",
+    "value": "4",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "hit-dyn-v2",
+    "value": "1",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bp_t_offset_520219006",
+    "value": "1247445037483032576",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bmg_af_switch",
+    "value": "1",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bmg_src_def_domain",
+    "value": "i1.hdslb.com",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bmg_af_sc",
+    "value": "{\"none\":{\"on\":1,\"def\":\"i1.hdslb.com\"},\"sgp\":{\"on\":1,\"def\":\"i1-sgp.hdslb.com\"}}",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bili_ticket",
+    "value": "eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTAzMTk0NzcsImlhdCI6MTc5MDA2MDIxNywicGx0IjotMX0.Mi5n415O-p1bxrCPQCACCSlZIRvB87hFJ78DoxO6Gfo",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bili_ticket_expires",
+    "value": "1790319417",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "SESSDATA",
+    "value": "95471ec9%2C1805612284%2Cb0fe4%2A91CjC9kBMMWr4w5wSGACYjRl_sDJxogcNmqse1u2Rs87PNAK9RpdbW9iNWVMzNKYgy1jwSVjNBb1BfQlVUdUxVMjkzWG8zb3lSNVNyV1doWktTNXdkMEdhaEhSVF9ic1RuWUVZOW42VmF2ZnU1TEN1RkUwa0pQQVN5Vm1Bc1MzX09MVVRaT1FlWnJRIIEC",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "bili_jct",
+    "value": "1fba5a08ddf91bae24195238e18f2c43",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "sid",
+    "value": "q92tk4kh",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "browser_resolution",
+    "value": "1132-1567",
+    "domain": ".bilibili.com",
+    "path": "/"
+  },
+  {
+    "name": "b_lsid",
+    "value": "01778EB6_1A0C7ED3418",
+    "domain": ".bilibili.com",
+    "path": "/"
+  }
+]

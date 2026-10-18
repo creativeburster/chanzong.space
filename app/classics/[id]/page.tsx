@@ -40,6 +40,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/classics/${meta.id}`,
         'zh-Hant': `/zh-tw/classics/${meta.id}`,
+        'x-default': `/classics/${meta.id}`,
       },
     },
     openGraph: {
@@ -59,6 +60,19 @@ export function generateMetadata({ params }: PageProps): Metadata {
     other: {
       'article:author': meta.author,
       'article:section': meta.category,
+      'citation_title': meta.title,
+      'citation_author': meta.author,
+      'citation_publisher': '禅宗知识库 (ChanZong.space)',
+      'citation_language': 'zh-CN',
+      'citation_public_url': `https://chanzong.space/classics/${meta.id}`,
+      ...(meta.cbeta_id ? { 'citation_keywords': `${meta.title},${meta.author},${meta.cbeta_id},${meta.category}` } : {}),
+      'DC.title': meta.title,
+      'DC.creator': meta.author,
+      'DC.subject': `禅宗;${meta.category}`,
+      'DC.publisher': '禅宗知识库 (ChanZong.space)',
+      'DC.language': 'zh-Hans',
+      'DC.rights': 'Public Domain (Original Text) / CC BY-NC-SA 4.0 (Modern Vernacular & Annotation)',
+      ...(meta.cbeta_id ? { 'DC.identifier': meta.cbeta_id } : {}),
     },
   };
 }
@@ -120,18 +134,28 @@ export default function ClassicPage({ params }: PageProps) {
 
   const articleSummary = meta.summary || `${meta.title}，${meta.author}著，${meta.category}类经典。`;
 
+  // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）
+  const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id));
+  const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
+  const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
+  const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
+  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Book',
+    '@id': `https://chanzong.space/classics/${meta.id}#book`,
     name: meta.title,
     headline: meta.title,
     alternateName: meta.cbeta_id ? `${meta.title} (${meta.cbeta_id})` : meta.title,
     author: {
       '@type': 'Person',
       name: meta.author,
+      ...(relPersons[0] ? { '@id': `https://chanzong.space/persons/${relPersons[0].id}#person`, url: `https://chanzong.space/persons/${relPersons[0].id}` } : {}),
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://chanzong.space/#organization',
       name: '禅宗知识库',
       url: 'https://chanzong.space',
     },
@@ -140,16 +164,31 @@ export default function ClassicPage({ params }: PageProps) {
     inLanguage: ['lzh', 'zh-Hans'],
     genre: meta.category,
     wordCount: meta.word_count,
+    isAccessibleForFree: true,
+    license: 'https://creativecommons.org/publicdomain/mark/1.0/',
     dateModified: new Date().toISOString().split('T')[0],
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '#sec-article h2', '#sec-translations p'],
+    },
+    ...(relConcepts.length > 0 ? {
+      about: relConcepts.slice(0, 8).map(c => ({
+        '@type': 'DefinedTerm',
+        '@id': `https://chanzong.space/concepts/${c.id}#term`,
+        name: c.title,
+        url: `https://chanzong.space/concepts/${c.id}`,
+      })),
+    } : {}),
+    ...(relPersons.length > 0 ? {
+      mentions: relPersons.slice(0, 8).map(p => ({
+        '@type': 'Person',
+        '@id': `https://chanzong.space/persons/${p.id}#person`,
+        name: p.name,
+        url: `https://chanzong.space/persons/${p.id}`,
+      })),
+    } : {}),
     ...(meta.cbeta_id ? { identifier: meta.cbeta_id, isPartOf: meta.canon_source } : {}),
   };
-
-  // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）
-  const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id));
-  const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id));
-  const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id));
-  const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id));
-  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
 
   // FAQPage schema for this classic's FAQs
   const classicFaqs = relFaqs.slice(0, 20);

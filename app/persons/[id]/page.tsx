@@ -26,6 +26,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/persons/${params.id}`,
         'zh-Hant': `/zh-tw/persons/${params.id}`,
+        'x-default': `/persons/${params.id}`,
       },
     },
     openGraph: {
@@ -46,18 +47,21 @@ function EntityJsonLd({ item }: { item: any }) {
     const rp = ZEN_PERSONS.find((p: any) => p.id === rid);
     return {
       '@type': 'Person',
+      '@id': `https://chanzong.space/persons/${rid}#person`,
       name: rp ? rp.name : rid,
       url: `https://chanzong.space/persons/${rid}`,
     };
   });
   const subjectOf = (item.relatedBooks || []).map((bid: string) => ({
     '@type': 'Book',
+    '@id': `https://chanzong.space/classics/${bid}#book`,
     url: `https://chanzong.space/classics/${bid}`,
   }));
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': `https://chanzong.space/persons/${item.id}#person`,
     name,
     jobTitle: item.title,
     description: desc,
@@ -69,6 +73,10 @@ function EntityJsonLd({ item }: { item: any }) {
       name: '禅宗祖师 / 佛教高僧',
     },
     inLanguage: 'zh-CN',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'main p'],
+    },
   };
   return (
     <script

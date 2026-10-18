@@ -15,7 +15,10 @@ import manifest from '@/manifest.json';
 import { BookOpen, Route, AlertTriangle, Users, Tag, Compass, MessageSquare, Lightbulb, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
-import { EntityMiniGraph } from '@/components/graph/EntityMiniGraph';
+const EntityMiniGraph = dynamic(
+  () => import('@/components/graph/EntityMiniGraph').then((m) => m.EntityMiniGraph),
+  { ssr: false }
+);
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -219,13 +222,21 @@ export default function MethodDetailPageClient({
                 <span className="text-xs text-green-700/60">({t('共')} {method.steps.length} {t('步')})</span>
               </h2>
               <div className="space-y-3 pl-4">
-                {(method.steps.length > 5 && !stepsExpanded ? method.steps.slice(0, 5) : method.steps).map((step: any, idx: number) => (
-                  <div key={idx} className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-green-500 before:rounded-full">
-                    <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed">
-                      {t(step)}
-                    </p>
-                  </div>
-                ))}
+                {method.steps.map((step: any, idx: number) => {
+                  const isHidden = method.steps.length > 5 && !stepsExpanded && idx >= 5;
+                  return (
+                    <div
+                      key={idx}
+                      className={`${
+                        isHidden ? 'hidden' : 'block'
+                      } relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-green-500 before:rounded-full`}
+                    >
+                      <p className="text-[17px] text-slate-700 font-serif-zen leading-relaxed">
+                        {t(step)}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
               {method.steps.length > 5 && (
                 <div className="flex justify-center pt-1">
@@ -249,14 +260,19 @@ export default function MethodDetailPageClient({
                 <span className="text-xs text-rose-700/60">({t('共')} {method.pitfalls.length} {t('条')})</span>
               </h2>
               <div className="space-y-3">
-                {(method.pitfalls.length > 4 && !pitfallsExpanded ? method.pitfalls.slice(0, 4) : method.pitfalls).map((pitfall: any, idx: number) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-rose-50 border-l-4 border-rose-500 text-[15px] font-serif-zen text-rose-800"
-                  >
-                    {t(pitfall)}
-                  </div>
-                ))}
+                {method.pitfalls.map((pitfall: any, idx: number) => {
+                  const isHidden = method.pitfalls.length > 4 && !pitfallsExpanded && idx >= 4;
+                  return (
+                    <div
+                      key={idx}
+                      className={`${
+                        isHidden ? 'hidden' : 'block'
+                      } p-5 rounded-2xl bg-rose-50 border-l-4 border-rose-500 text-[15px] font-serif-zen text-rose-800`}
+                    >
+                      {t(pitfall)}
+                    </div>
+                  );
+                })}
               </div>
               {method.pitfalls.length > 4 && (
                 <div className="flex justify-center pt-1">

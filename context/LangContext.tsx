@@ -43,7 +43,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
   useEffect(() => {
     if (isZhTwPath || initialTraditional) {
       setIsTraditional(true);
-      document.documentElement.lang = 'zh-Hant';
+      document.documentElement.lang = 'zh-TW';
       if (typeof window !== 'undefined') {
         if ('requestIdleCallback' in window) {
           (window as any).requestIdleCallback(() => {
@@ -62,7 +62,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
       if (saved !== null) {
         const val = saved === 'true';
         setIsTraditional(val);
-        document.documentElement.lang = val ? 'zh-Hant' : 'zh-Hans';
+        document.documentElement.lang = val ? 'zh-TW' : 'zh-CN';
         if (val && typeof window !== 'undefined') {
           if ('requestIdleCallback' in window) {
             (window as any).requestIdleCallback(() => {
@@ -88,7 +88,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
       }
       try {
         localStorage.setItem('zen_is_traditional', String(next));
-        document.documentElement.lang = next ? 'zh-Hant' : 'zh-Hans';
+        document.documentElement.lang = next ? 'zh-TW' : 'zh-CN';
       } catch {
         // ignore
       }
@@ -110,7 +110,7 @@ export const LangProvider: React.FC<{ children: React.ReactNode; initialTraditio
     setIsTraditional(trad);
     try {
       localStorage.setItem('zen_is_traditional', String(trad));
-      document.documentElement.lang = trad ? 'zh-Hant' : 'zh-Hans';
+      document.documentElement.lang = trad ? 'zh-TW' : 'zh-CN';
     } catch {
       // ignore
     }

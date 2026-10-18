@@ -40,7 +40,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
     itemListElement: fullItems.map((item, idx) => ({
       '@type': 'ListItem',
       position: idx + 1,
-      name: item.label,
+      name: t(item.label),
       ...(item.href ? { item: `https://chanzong.space${getHref(item.href)}` } : {}),
     })),
   };

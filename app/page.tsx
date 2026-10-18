@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/',
       'zh-Hant': '/zh-tw',
+      'x-default': '/',
     },
   },
   openGraph: {
@@ -27,20 +28,41 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: '禅宗知识库',
-    alternateName: 'ChanZong.space',
-    url: 'https://chanzong.space/',
-    description: `收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种法门、${STATS.faqs}条问答。传承顿悟见性之道。`,
-    inLanguage: 'zh-CN',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://chanzong.space/books',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://chanzong.space/#website',
+        name: '禅宗知识库',
+        alternateName: ['ChanZong.space', 'ChanZong Knowledge Base'],
+        url: 'https://chanzong.space/',
+        description: `收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种法门、${STATS.faqs}条问答。传承顿悟见性之道。`,
+        inLanguage: 'zh-CN',
+        publisher: {
+          '@id': 'https://chanzong.space/#organization',
+        },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://chanzong.space/books?q={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
       },
-      'query-input': 'required name=search-term-string',
-    },
+      {
+        '@type': 'Organization',
+        '@id': 'https://chanzong.space/#organization',
+        name: '禅宗知识库',
+        alternateName: 'ChanZong.space',
+        url: 'https://chanzong.space/',
+        logo: 'https://chanzong.space/logo-nianhua-new.jpg',
+        publishingPrinciples: 'https://chanzong.space/about',
+        sameAs: [
+          'https://github.com/creativeburster/chanzong.space',
+          'https://ramanamaharshi.space',
+        ],
+      },
+    ],
   };
 
   return (

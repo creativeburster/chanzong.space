@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import MethodsPageClient from '@/app/methods/MethodsPageClient';
 import { STATS } from '@/lib/stats';
+import { ZEN_METHODS } from '@/lib/taxonomy';
+import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: "禪宗修行法門 · 歷代修持宗綱",
@@ -10,6 +12,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/methods',
       'zh-Hant': '/zh-tw/methods',
+      'x-default': '/methods',
     },
   },
   openGraph: {
@@ -23,5 +26,32 @@ export const metadata: Metadata = {
 };
 
 export default function TradMethodsPage() {
-  return <MethodsPageClient />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://chanzong.space/zh-tw/methods#collection',
+    name: '禪宗修持法門庫',
+    description: `禪宗${STATS.methods}種修持法門——禪門實修方便與用功方法詳解。`,
+    url: 'https://chanzong.space/zh-tw/methods',
+    inLanguage: 'zh-TW',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: ZEN_METHODS.length,
+      itemListElement: ZEN_METHODS.slice(0, 50).map((m, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: convertToTrad(m.title),
+        url: `https://chanzong.space/zh-tw/methods/${m.id}`,
+      })),
+    },
+  };
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <MethodsPageClient />
+    </>
+  );
 }

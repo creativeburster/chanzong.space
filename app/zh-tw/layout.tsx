@@ -51,34 +51,12 @@ export default function TradLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: '禪宗知識庫',
-    alternateName: 'ChanZong.space',
-    url: `${SITE_URL}/zh-tw`,
-    description: `收錄${STATS.classics}部禪宗核心典籍，含${STATS.concepts}個概念、${STATS.koans}則公案、${STATS.persons}位祖師、${STATS.methods}種法門、${STATS.faqs}條問答。傳承頓悟見性之道。`,
-    inLanguage: 'zh-TW',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/zh-tw/books?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
   return (
     <LangProvider initialTraditional={true}>
       <script
         dangerouslySetInnerHTML={{
           __html: `(function(){try{document.documentElement.lang='zh-TW';}catch(e){}})();`,
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {children}
     </LangProvider>

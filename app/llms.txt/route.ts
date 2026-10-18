@@ -35,9 +35,14 @@ export async function GET() {
   content += `- 问答分片: https://chanzong.space/sitemaps/collections.xml\n`;
   content += `- 静态频道: https://chanzong.space/sitemaps/static.xml\n\n`;
 
-  content += `## 🌐 双语路由规范 (Bilingual Routes)\n\n`;
+  content += `## 🌐 双语路由与核心频道导航 (Core Channels & Bilingual Routes)\n\n`;
   content += `- 简体中文主站: https://chanzong.space/\n`;
   content += `- 繁體中文站點: https://chanzong.space/zh-tw/\n`;
+  content += `- 六大藏经部类导航: https://chanzong.space/categories\n`;
+  content += `- 专题典籍合集 (如《少室六门》): https://chanzong.space/collections\n`;
+  content += `- 禅宗西天二十八祖与东土五家七宗法脉谱系: https://chanzong.space/lineage\n`;
+  content += `- 现代交互式禅修工坊 (看话头/坐禅计时/木鱼引磬): https://chanzong.space/practice\n`;
+  content += `- D3.js 交互式禅宗知识图谱: https://chanzong.space/graph\n`;
   content += `注: 所有典籍、公案、概念、人物、法门均具备一一对应的繁体纯静态 HTML 页面（如 /zh-tw/classics/tanjing）。\n\n`;
 
   content += `## 📖 核心代表经典 (精选示例，全量见 /llms/classics.txt)\n\n`;

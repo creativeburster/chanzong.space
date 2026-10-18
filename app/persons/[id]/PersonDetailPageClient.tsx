@@ -15,7 +15,10 @@ import manifest from '@/manifest.json';
 import { BookOpen, Quote, Sparkles, Compass, Users, Tag, Lightbulb, MessageSquare, ArrowRight } from 'lucide-react';
 import { GlossaryCard } from '@/components/GlossaryCard';
 import { LinkCardGrid, PrevNextNav } from '@/components/InternalLinkCards';
-import { EntityMiniGraph } from '@/components/graph/EntityMiniGraph';
+const EntityMiniGraph = dynamic(
+  () => import('@/components/graph/EntityMiniGraph').then((m) => m.EntityMiniGraph),
+  { ssr: false }
+);
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -329,14 +332,19 @@ export default function PersonDetailPageClient({
                 <span className="text-xs text-rose-700/60">({t('共')} {person.quotes.length} {t('则')})</span>
               </h2>
               <div className="space-y-3">
-                {(person.quotes.length > 5 && !quotesExpanded ? person.quotes.slice(0, 5) : person.quotes).map((quote: string, idx: number) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800"
-                  >
-                    “{t(quote)}”
-                  </div>
-                ))}
+                {person.quotes.map((quote: string, idx: number) => {
+                  const isHidden = person.quotes.length > 5 && !quotesExpanded && idx >= 5;
+                  return (
+                    <div
+                      key={idx}
+                      className={`${
+                        isHidden ? 'hidden' : 'block'
+                      } p-5 rounded-2xl bg-zinc-50 border-l-4 border-amber-500 text-[15px] font-serif-zen italic text-zinc-800`}
+                    >
+                      “{t(quote)}”
+                    </div>
+                  );
+                })}
               </div>
               {person.quotes.length > 5 && (
                 <div className="flex justify-center pt-1">
