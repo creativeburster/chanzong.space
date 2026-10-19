@@ -90,7 +90,7 @@ export default function PracticeClient() {
 
   // 推荐核心实修法门
   const practiceMethods = ZEN_METHODS.filter((m) =>
-    ['kanhuatou', 'mozhao', 'zuochan', 'liumiaomen', 'nianfo-chan', 'daily-zen'].includes(m.id)
+    ['kanhuatou', 'mozhao', 'zuochan-yi', 'zhiguan-shuangxiu', 'nianfo-chan', 'daily-zen'].includes(m.id)
   );
 
   return (
@@ -258,7 +258,7 @@ export default function PracticeClient() {
                       originTitle="丛林香檠禅时制 · 一炷香的工夫"
                       summary="坐一炷香、参一炷香，定相续不乱"
                       links={[
-                        { label: '坐禅法', href: '/methods/zuochan', type: 'method' },
+                        { label: '坐禅法', href: '/methods/zuochan-yi', type: 'method' },
                         { label: '六祖坛经', href: '/classics/tanjing', type: 'classic' },
                       ]}
                     />
@@ -272,8 +272,8 @@ export default function PracticeClient() {
                       originTitle="天台智者大师《六妙法门》"
                       summary="数、随、止、观、还、净之初门基石"
                       links={[
-                        { label: '六妙门', href: '/methods/liumiaomen', type: 'method' },
-                        { label: '六妙法门原典', href: '/classics/liumiaomen', type: 'classic' },
+                        { label: '止观法门', href: '/methods/zhiguan-shuangxiu', type: 'method' },
+                        { label: '坐禅仪原典', href: '/classics/zuochanyi', type: 'classic' },
                       ]}
                     />
                     <ZenBreathCounter />
@@ -289,7 +289,7 @@ export default function PracticeClient() {
                       originTitle="《首楞严经》观世音菩萨耳根圆通章"
                       summary="初于闻中，入流亡所，动静二相，了然不生"
                       links={[
-                        { label: '耳根圆通', href: '/methods/ergen-yuantong', type: 'method' },
+                        { label: '耳根圆通', href: '/methods/er-gen-yuan-tong-practice', type: 'method' },
                         { label: '首楞严经', href: '/classics/lengyanjing', type: 'classic' },
                       ]}
                     />
@@ -303,7 +303,7 @@ export default function PracticeClient() {
                       originTitle="禅门钟板警策清规"
                       summary="闻钟声，烦恼轻，智慧长，菩提生"
                       links={[
-                        { label: '正念', href: '/concepts/zhengnian', type: 'concept' },
+                        { label: '寂寂惺惺', href: '/concepts/jiji-xingxing', type: 'concept' },
                         { label: '日常生活禅', href: '/methods/daily-zen', type: 'method' },
                       ]}
                     />
@@ -319,7 +319,7 @@ export default function PracticeClient() {
                     originTitle="苏轼参东林常总禅师悟道偈"
                     summary="溪声便是广长舌，山色岂非清净身。夜来八万四千偈，他日如何举似人"
                     links={[
-                      { label: '苏轼', href: '/persons/su-shi', type: 'person' },
+                      { label: '佛印了元（苏轼禅友）', href: '/persons/foyin-liaoyuan', type: 'person' },
                       { label: '自然禅', href: '/methods/daily-zen', type: 'method' },
                     ]}
                   />
@@ -334,7 +334,7 @@ export default function PracticeClient() {
                     originTitle="禅宗千七百则公案机锋宝库"
                     summary="不涉言诠，直下承当，电光石火中剿绝情识"
                     links={[
-                      { label: '公案全库 (205则)', href: '/koan', type: 'koan' },
+                      { label: '公案全库 (712则)', href: '/koan', type: 'koan' },
                       { label: '禅宗无门关', href: '/classics/wumenguan', type: 'classic' },
                     ]}
                   />
@@ -350,7 +350,7 @@ export default function PracticeClient() {
                       originTitle="丛林百丈清规木鱼法器制"
                       summary="木鱼昼夜不合目，以此警策学者不可放逸懈怠"
                       links={[
-                        { label: '止观法门', href: '/methods/liumiaomen', type: 'method' },
+                        { label: '止观法门', href: '/methods/zhiguan-shuangxiu', type: 'method' },
                         { label: '百丈怀海', href: '/persons/baizhang', type: 'person' },
                       ]}
                     />
@@ -396,7 +396,7 @@ export default function PracticeClient() {
                       originTitle="菩提达摩面壁与长芦宗赜《坐禅仪》"
                       summary="端身正坐，息诸妄缘，心同虚空，不挂一缕"
                       links={[
-                        { label: '正宗坐禅仪', href: '/methods/zuochan', type: 'method' },
+                        { label: '正宗坐禅仪', href: '/methods/zuochan-yi', type: 'method' },
                         { label: '菩提达摩', href: '/persons/bodhidharma', type: 'person' },
                       ]}
                     />
@@ -413,7 +413,7 @@ export default function PracticeClient() {
                       originTitle="一砂一极乐 · 枯山水虚空境界"
                       summary="无水而见浩渺江河，无山而现巍峨须弥"
                       links={[
-                        { label: '不二法门', href: '/concepts/buer', type: 'concept' },
+                        { label: '不二法门', href: '/concepts/non-duality', type: 'concept' },
                         { label: '日常生活禅', href: '/methods/daily-zen', type: 'method' },
                       ]}
                     />
@@ -428,7 +428,7 @@ export default function PracticeClient() {
                       summary="得失是非，一时放却。二由一有，一亦莫守"
                       links={[
                         { label: '信心铭原文', href: '/classics/xinxinming', type: 'classic' },
-                        { label: '无住生心', href: '/concepts/wuzhu', type: 'concept' },
+                        { label: '无住生心', href: '/concepts/no-abiding', type: 'concept' },
                       ]}
                     />
                     <LetGoAffliction />
@@ -474,7 +474,7 @@ export default function PracticeClient() {
                     originTitle="调身、调息、调心三调秘钥"
                     summary="息调则心宁，心宁则神寂，入道之前阶"
                     links={[
-                      { label: '六妙门', href: '/methods/liumiaomen', type: 'method' },
+                      { label: '止观法门', href: '/methods/zhiguan-shuangxiu', type: 'method' },
                     ]}
                   />
                   <BreathPacer />

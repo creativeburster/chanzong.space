@@ -66,6 +66,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/zh-tw/concepts/${params.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
     },
   };
 }

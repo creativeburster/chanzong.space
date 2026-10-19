@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getCategories, getCategoryById } from '@/lib/categories';
 import { CategoryDetailPageClient } from '@/app/categories/[slug]/CategoryDetailPageClient';
+import { ZEN_CONCEPTS, ZEN_PERSONS } from '@/lib/taxonomy';
 import { convertToTrad } from '@/lib/opencc';
 import manifest from '@/manifest.json';
 
@@ -38,6 +39,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       languages: {
         'zh-Hans': `/categories/${cat.id}`,
         'zh-Hant': `/zh-tw/categories/${cat.id}`,
+        'x-default': `/categories/${cat.id}`,
       },
     },
     openGraph: {
@@ -47,6 +49,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/zh-tw/categories/${cat.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
     },
     twitter: {
       card: 'summary',
@@ -69,6 +72,15 @@ export default function TradCategoryDetailPage({ params }: PageProps) {
   const books = category.classicIds
     .map((cid) => manifestMap.get(cid))
     .filter((b): b is typeof manifest[0] => Boolean(b));
+
+  const resolvedPersons = category.relatedPersons.map((pid) => {
+    const p = ZEN_PERSONS.find((x) => x.id === pid);
+    return { id: pid, name: p ? p.name : pid };
+  });
+  const resolvedConcepts = category.relatedConcepts.map((cid) => {
+    const c = ZEN_CONCEPTS.find((x) => x.id === cid);
+    return { id: cid, title: c ? c.title : cid };
+  });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -96,7 +108,12 @@ export default function TradCategoryDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <CategoryDetailPageClient category={category} allCategories={allCategories} />
+      <CategoryDetailPageClient
+        category={category}
+        allCategories={allCategories}
+        resolvedPersons={resolvedPersons}
+        resolvedConcepts={resolvedConcepts}
+      />
     </>
   );
 }

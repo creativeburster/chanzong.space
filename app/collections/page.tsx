@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/collections',
       'zh-Hant': '/zh-tw/collections',
+      'x-default': '/collections',
     },
   },
   openGraph: {
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     url: 'https://chanzong.space/collections',
     siteName: '禅宗知识库',
     locale: 'zh_CN',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
   twitter: {
     card: 'summary',

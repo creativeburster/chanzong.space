@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: '禅门人物 | 禅宗知识库 ChanZong.space',
     description: `禅宗${STATS.persons}位禅门人物传记、悟道因缘与教学风格。`,
     url: 'https://chanzong.space/persons',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

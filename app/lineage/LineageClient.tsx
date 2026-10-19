@@ -27,46 +27,69 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
-import { ZEN_KOANS } from '@/lib/taxonomy/koans';
 import { LineageNode, SECT_META } from '@/lib/lineageData';
 import { D3LineageTree } from '@/components/lineage/D3LineageTree';
 import { LineageViewTabs } from '@/components/lineage/LineageViewTabs';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
 import { useLang } from '@/context/LangContext';
 
-export default function LineageClient() {
+export interface LineagePersonItem {
+  id: string;
+  name: string;
+  title: string;
+  era: string;
+}
+
+interface LineageClientProps {
+  personsList?: LineagePersonItem[];
+}
+
+export default function LineageClient({ personsList = [] }: LineageClientProps) {
   const { t, getHref } = useLang();
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeSect, setActiveSect] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedNode, setSelectedNode] = useState<LineageNode | null>(null);
   const [cardModalOpen, setCardModalOpen] = useState(false);
+  const [matchedKoans, setMatchedKoans] = useState<{ id: string; question: string }[]>([]);
 
-  // 获取选中祖师在 ZEN_PERSONS 中的详细信息
+  // 获取选中祖师在 personsList 中的详细信息
   const matchedPerson = useMemo(() => {
     if (!selectedNode) return null;
     if (selectedNode.personId) {
-      return ZEN_PERSONS.find((p) => p.id === selectedNode.personId) || null;
+      return personsList.find((p) => p.id === selectedNode.personId) || null;
     }
     return (
-      ZEN_PERSONS.find(
+      personsList.find(
         (p) =>
           p.id === selectedNode.id ||
           p.name.includes(selectedNode.name) ||
           selectedNode.name.includes(p.name)
       ) || null
     );
-  }, [selectedNode]);
+  }, [selectedNode, personsList]);
 
-  // 获取选中祖师相关的公案
-  const matchedKoans = useMemo(() => {
-    if (!selectedNode) return [];
-    return ZEN_KOANS.filter(
-      (k) =>
-        k.master.includes(selectedNode.name) ||
-        (selectedNode.personId && k.relatedPersons?.includes(selectedNode.personId))
-    ).slice(0, 3);
+  // 选中节点时按需动态加载相关公案（避免首屏打包 1.2MB koans 数据）
+  React.useEffect(() => {
+    if (!selectedNode) {
+      setMatchedKoans([]);
+      return;
+    }
+    let active = true;
+    import('@/lib/taxonomy/koans').then((m) => {
+      if (!active) return;
+      const list = m.ZEN_KOANS.filter(
+        (k) =>
+          k.master.includes(selectedNode.name) ||
+          (selectedNode.personId && k.relatedPersons?.includes(selectedNode.personId))
+      )
+        .slice(0, 3)
+        .map((k) => ({ id: k.id, question: k.question }));
+      setMatchedKoans(list);
+    });
+    return () => {
+      active = false;
+    };
   }, [selectedNode]);
 
   return (
@@ -324,6 +347,33 @@ export default function LineageClient() {
               </p>
             </div>
           </div>
+
+          {/* 静态全量祖师法脉名录（确保搜索引擎与 AI 爬虫无阻碍遍历全部祖师实体） */}
+          {personsList.length > 0 && (
+            <details open className="mt-8 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-2xs">
+              <summary className="cursor-pointer font-serif-zen font-bold text-lg text-slate-900 flex items-center justify-between">
+                <span>📜 {t('历代禅宗祖师法脉全名录')} ({personsList.length} {t('位')})</span>
+                <span className="text-xs font-sans font-normal text-slate-400">{t('点击收起 / 展开')}</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+                {personsList.map((p) => (
+                  <Link
+                    key={p.id}
+                    prefetch={false}
+                    href={getHref(`/persons/${p.id}`)}
+                    className="px-3 py-2 rounded-xl bg-stone-50/80 hover:bg-amber-50 border border-slate-200/70 hover:border-amber-300 transition-colors flex flex-col justify-between"
+                  >
+                    <span className="text-xs font-bold font-serif-zen text-slate-800 truncate">
+                      {t(p.name)}
+                    </span>
+                    <span className="text-[10px] text-slate-400 truncate mt-0.5">
+                      {t(p.era)} · {t(p.title)}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </details>
+          )}
         </main>
 
         <SiteFooter />

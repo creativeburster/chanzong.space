@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LineageClient from '@/app/lineage/LineageClient';
+import { ZEN_PERSONS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
   title: '禪宗祖師法脈傳承樹 | 一花開五葉 · 五家七宗世系全圖',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/lineage',
       'zh-Hant': '/zh-tw/lineage',
+      'x-default': '/lineage',
     },
   },
   openGraph: {
@@ -18,9 +20,16 @@ export const metadata: Metadata = {
     url: 'https://chanzong.space/zh-tw/lineage',
     locale: 'zh_TW',
     siteName: '禪宗知識庫',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
   },
 };
 
 export default function ZhTwLineagePage() {
-  return <LineageClient />;
+  const personsList = ZEN_PERSONS.map((p) => ({
+    id: p.id,
+    name: p.name,
+    title: p.title,
+    era: p.era,
+  }));
+  return <LineageClient personsList={personsList} />;
 }

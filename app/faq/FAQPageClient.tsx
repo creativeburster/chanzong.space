@@ -10,8 +10,7 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 import manifest from '@/manifest.json';
-import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
-import { ZEN_KOANS } from '@/lib/taxonomy/koans';
+import type { PersonItem, KoanItem } from '@/lib/taxonomy';
 import { Lightbulb, ChevronDown, ArrowRight, BookOpen, Search, Users, X, RotateCcw } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { SiteFooter } from '@/components/SiteFooter';
@@ -38,6 +37,8 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
   const [keyword, setKeyword] = useState('');
   const [displayCount, setDisplayCount] = useState(50);
   const [fullFaqs, setFullFaqs] = useState<FAQEntry[] | null>(null);
+  const [fullPersons, setFullPersons] = useState<PersonItem[]>([]);
+  const [fullKoans, setFullKoans] = useState<KoanItem[]>([]);
 
   // 典籍下拉与内联搜索
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false);
@@ -51,12 +52,18 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
 
   const { t, toSimp, toTrad, getHref } = useLang();
 
-  // 按需/惰性加载完整 3325 条问答库
+  // 按需/惰性加载完整 3325 条问答库及关联人物/公案映射
   const ensureFullFaqs = useCallback(async () => {
     if (fullFaqs) return;
     try {
-      const mod = await import('@/lib/taxonomy/faqs');
-      setFullFaqs(mod.ZEN_FAQS);
+      const [faqMod, personMod, koanMod] = await Promise.all([
+        import('@/lib/taxonomy/faqs'),
+        import('@/lib/taxonomy/persons'),
+        import('@/lib/taxonomy/koans'),
+      ]);
+      setFullFaqs(faqMod.ZEN_FAQS);
+      setFullPersons(personMod.ZEN_PERSONS);
+      setFullKoans(koanMod.ZEN_KOANS);
     } catch (e) {
       console.error('Failed to lazy load full FAQs:', e);
     }
@@ -92,10 +99,10 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
   }, []);
 
   const koanMap = useMemo(() => {
-    const map = new Map<string, typeof ZEN_KOANS[0]>();
-    ZEN_KOANS.forEach((k) => map.set(k.id, k));
+    const map = new Map<string, KoanItem>();
+    fullKoans.forEach((k) => map.set(k.id, k));
     return map;
-  }, []);
+  }, [fullKoans]);
 
   const bookAuthorMap = useMemo(() => {
     const map = new Map<string, string>();
@@ -165,13 +172,13 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
 
   // 人物选项列表与统计
   const personsWithFaqs = useMemo(() => {
-    return ZEN_PERSONS.map((p) => {
+    return fullPersons.map((p) => {
       const count = allFaqs.filter((f) => checkFaqMatchPerson(f, p.id, p.name)).length;
       return { id: p.id, name: p.name, title: p.title, count };
     })
       .filter((p) => p.count > 0)
       .sort((a, b) => b.count - a.count);
-  }, [allFaqs, checkFaqMatchPerson]);
+  }, [allFaqs, fullPersons, checkFaqMatchPerson]);
 
   const filteredPersonOptions = useMemo(() => {
     if (!personSearch.trim()) return personsWithFaqs;
@@ -194,8 +201,8 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
 
   const selectedPersonObj = useMemo(() => {
     if (!selectedPerson) return null;
-    return ZEN_PERSONS.find((p) => p.id === selectedPerson) || null;
-  }, [selectedPerson]);
+    return fullPersons.find((p) => p.id === selectedPerson) || null;
+  }, [selectedPerson, fullPersons]);
 
   // 双重多维过滤：典籍 + 人物 + 关键词
   const filteredFaqs = useMemo(() => {
@@ -208,7 +215,7 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
 
     // 2. 人物过滤
     if (selectedPerson) {
-      const pObj = ZEN_PERSONS.find((p) => p.id === selectedPerson);
+      const pObj = fullPersons.find((p) => p.id === selectedPerson);
       if (pObj) {
         result = result.filter((faq) => checkFaqMatchPerson(faq, pObj.id, pObj.name));
       }
@@ -228,20 +235,20 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
     }
 
     return result;
-  }, [allFaqs, selectedBook, selectedPerson, keyword, checkFaqMatchPerson, toSimp, toTrad]);
+  }, [allFaqs, fullPersons, selectedBook, selectedPerson, keyword, checkFaqMatchPerson, toSimp, toTrad]);
 
   const visibleFaqs = filteredFaqs.slice(0, displayCount);
   const hasMore = displayCount < filteredFaqs.length;
 
   const handleBookChange = (bookId: string | null) => {
     setSelectedBook(bookId);
-    setDisplayCount(10);
+    setDisplayCount(bookId ? 20 : 50);
     setOpenFaq(null);
   };
 
   const handlePersonChange = (personId: string | null) => {
     setSelectedPerson(personId);
-    setDisplayCount(10);
+    setDisplayCount(personId ? 20 : 50);
     setOpenFaq(null);
   };
 
@@ -258,8 +265,12 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
   }, []);
 
   useEffect(() => {
-    setDisplayCount(10);
-    setOpenFaq(null);
+    if (keyword || selectedBook || selectedPerson) {
+      setDisplayCount(20);
+      setOpenFaq(null);
+    } else {
+      setDisplayCount(50);
+    }
   }, [keyword, selectedBook, selectedPerson]);
 
   return (
@@ -295,7 +306,7 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
                 type="text"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                placeholder="搜索问题或回答内容…"
+                placeholder={t('搜索问题或回答内容…')}
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-amber-600/60 focus:ring-2 focus:ring-amber-600/10 transition-all"
               />
             </div>
@@ -615,6 +626,27 @@ export default function FAQPageClient({ initialFaqs = [], totalFaqCount }: FAQPa
               </button>
             </div>
           )}
+
+          {/* 全典籍解惑问答静态导航目录（服务搜索引擎与 AI 抓取深度发现） */}
+          <details open className="mt-12 bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm">
+            <summary className="cursor-pointer font-serif-zen font-bold text-slate-800 text-base flex items-center justify-between">
+              <span>📚 {t('按典籍参究宗门解惑问答')}（{manifest.length} {t('部经典全索引')}）</span>
+              <span className="text-xs font-normal text-slate-400">{t('点击进入各部经典专属解惑问答')}</span>
+            </summary>
+            <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+              {manifest.map((b) => (
+                <Link
+                  key={b.id}
+                  prefetch={false}
+                  href={getHref(`/classics/${b.id}`)}
+                  className="text-xs text-slate-600 hover:text-amber-800 hover:underline truncate py-1"
+                  title={`${t(b.title)} · ${t('解惑问答')}`}
+                >
+                  《{t(b.title)}》{t('问答')}
+                </Link>
+              ))}
+            </div>
+          </details>
         </main>
 
         <SiteFooter />

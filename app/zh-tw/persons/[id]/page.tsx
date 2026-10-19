@@ -82,6 +82,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/zh-tw/persons/${params.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
     },
   };
 }
@@ -103,56 +104,55 @@ export default function TradPersonDetailPage({ params }: PageProps) {
     classics: Array.isArray(item.classics) ? item.classics.map((c: string) => convertToTrad(c)) : item.classics,
   };
 
-  // 1. 祖师机锋公案
+  // 1. 祖师机锋公案（轻量 DTO）
   const pName = item.name;
   const personKoans = ZEN_KOANS.filter((q: any) => {
     if (q.relatedPersons && q.relatedPersons.includes(item.id)) return true;
     if (q.master && (q.master === pName || q.master.includes(pName) || pName.includes(q.master))) return true;
     return false;
-  }).map((q: any) => ({
-    ...q,
+  }).slice(0, 12).map((q: any) => ({
+    id: q.id,
     question: convertToTrad(q.question),
-    answer: convertToTrad(q.answer),
-    master: q.master ? convertToTrad(q.master) : q.master,
+    answer: convertToTrad((q.answer || '').slice(0, 80)),
   }));
 
-  // 2. 传授法门
+  // 2. 传授法门（轻量 DTO）
   const fromPersonMethods = (item.relatedMethods || []).map((mid: string) => ZEN_METHODS.find((m: any) => m.id === mid)).filter(Boolean);
   const fromMethods = ZEN_METHODS.filter((m: any) => m.relatedPersons && m.relatedPersons.includes(item.id));
   const methodMap = new Map<string, any>();
   [...fromPersonMethods, ...fromMethods].forEach((m: any) => methodMap.set(m.id, m));
   const personMethods = Array.from(methodMap.values()).map((m: any) => ({
-    ...m,
+    id: m.id,
     title: convertToTrad(m.title),
-    summary: convertToTrad(m.summary || ''),
+    summary: convertToTrad((m.summary || '').slice(0, 60)),
   }));
 
-  // 3. 阐发核心概念
+  // 3. 阐发核心概念（轻量 DTO）
   const fromPersonConcepts = (item.relatedConcepts || []).map((cid: string) => ZEN_CONCEPTS.find((c: any) => c.id === cid)).filter(Boolean);
   const fromConcepts = ZEN_CONCEPTS.filter((c: any) => c.relatedPersons && c.relatedPersons.includes(item.id));
   const conceptMap = new Map<string, any>();
   [...fromPersonConcepts, ...fromConcepts].forEach((c: any) => conceptMap.set(c.id, c));
-  const personConcepts = Array.from(conceptMap.values()).map((c: any) => ({
-    ...c,
+  const personConcepts = Array.from(conceptMap.values()).slice(0, 12).map((c: any) => ({
+    id: c.id,
     title: convertToTrad(c.title),
-    summary: convertToTrad(c.summary || ''),
+    summary: convertToTrad((c.summary || '').slice(0, 60)),
   }));
 
-  // 4. 师承祖师
+  // 4. 师承祖师（轻量 DTO）
   const relatedPersonsData = (item.relatedPersons || [])
     .map((rid: string) => {
       const p = ZEN_PERSONS.find((x: any) => x.id === rid);
-      return p ? { ...p, name: convertToTrad(p.name), title: convertToTrad(p.title), era: convertToTrad(p.era) } : null;
+      return p ? { id: p.id, name: convertToTrad(p.name), era: convertToTrad(p.era) } : null;
     })
     .filter(Boolean);
 
-  // 5. 相关问答
+  // 5. 相关问答（轻量 DTO，截断前 12 条防止大部头经典关联问答撑爆 RSC 载荷）
   const relatedFaqsData = ZEN_FAQS.filter((f: any) =>
     f.relatedBooks && item.relatedBooks && item.relatedBooks.some((b: string) => f.relatedBooks!.includes(b))
-  ).map((f: any) => ({
-    ...f,
+  ).slice(0, 12).map((f: any) => ({
+    id: f.id,
     question: convertToTrad(f.question),
-    answer: convertToTrad(f.answer || ''),
+    answer: convertToTrad((f.answer || '').slice(0, 60)),
   }));
 
   // 6. 上下篇

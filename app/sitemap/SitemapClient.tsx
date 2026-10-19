@@ -12,25 +12,33 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
-import { ZEN_CONCEPTS, ZEN_PERSONS, ZEN_METHODS, ZEN_KOANS, ZEN_FAQS } from '@/lib/taxonomy';
 import { BookOpen, Gem, Compass, MessageSquare, Users, Lightbulb, ChevronDown, ChevronRight, FileText } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
-export default function SitemapClient() {
+export interface SitemapItem {
+  id: string;
+  title: string;
+  sub: string;
+  href: string;
+}
+
+interface SitemapClientProps {
+  concepts?: SitemapItem[];
+  methods?: SitemapItem[];
+  koans?: SitemapItem[];
+  persons?: SitemapItem[];
+  faqs?: SitemapItem[];
+}
+
+export default function SitemapClient({
+  concepts = [],
+  methods = [],
+  koans = [],
+  persons = [],
+  faqs = [],
+}: SitemapClientProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const { t, getHref } = useLang();
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({
-    classics: false,
-    concepts: false,
-    methods: false,
-    koans: false,
-    persons: false,
-    faqs: false,
-  });
-
-  const toggle = (key: string) => {
-    setExpanded((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
 
   const groups = [
     {
@@ -58,12 +66,7 @@ export default function SitemapClient() {
       border: 'border-emerald-200',
       count: STATS.concepts,
       href: '/concepts',
-      items: ZEN_CONCEPTS.map((c) => ({
-        id: c.id,
-        title: c.title,
-        sub: c.category,
-        href: `/concepts/${c.id}`,
-      })),
+      items: concepts,
     },
     {
       key: 'methods',
@@ -74,12 +77,7 @@ export default function SitemapClient() {
       border: 'border-sky-200',
       count: STATS.methods,
       href: '/methods',
-      items: ZEN_METHODS.map((m) => ({
-        id: m.id,
-        title: m.title,
-        sub: '',
-        href: `/methods/${m.id}`,
-      })),
+      items: methods,
     },
     {
       key: 'koans',
@@ -90,12 +88,7 @@ export default function SitemapClient() {
       border: 'border-rose-200',
       count: STATS.koans,
       href: '/koan',
-      items: ZEN_KOANS.map((k) => ({
-        id: k.id,
-        title: k.question,
-        sub: `${k.master} · ${k.source}`,
-        href: `/koan/${k.id}`,
-      })),
+      items: koans,
     },
     {
       key: 'persons',
@@ -106,12 +99,7 @@ export default function SitemapClient() {
       border: 'border-purple-200',
       count: STATS.persons,
       href: '/persons',
-      items: ZEN_PERSONS.map((p) => ({
-        id: p.id,
-        title: p.name,
-        sub: p.title,
-        href: `/persons/${p.id}`,
-      })),
+      items: persons,
     },
     {
       key: 'faqs',
@@ -122,12 +110,7 @@ export default function SitemapClient() {
       border: 'border-amber-200',
       count: STATS.faqs,
       href: '/faq',
-      items: ZEN_FAQS.slice(0, 100).map((f) => ({
-        id: f.id,
-        title: f.question,
-        sub: '',
-        href: `/faq#${f.id}`,
-      })),
+      items: faqs,
     },
   ];
 

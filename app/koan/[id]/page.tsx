@@ -84,6 +84,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/koan/${params.id}`,
       siteName: '禅宗知识库',
       locale: 'zh_CN',
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
     },
   };
 }

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: '禅宗典籍藏经阁 | 禅宗知识库 ChanZong.space',
     description: `收录${STATS.classics}部禅宗核心典籍，含原文、白话翻译与公案提取。`,
     url: 'https://chanzong.space/books',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

@@ -12,8 +12,6 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { CategoryItem, getCategoriesByClassicId } from '@/lib/categories';
-import { ZEN_CONCEPTS } from '@/lib/taxonomy/concepts';
-import { ZEN_PERSONS } from '@/lib/taxonomy/persons';
 import { useLang } from '@/context/LangContext';
 import manifest from '@/manifest.json';
 import {
@@ -33,11 +31,15 @@ import {
 interface CategoryDetailPageClientProps {
   category: CategoryItem;
   allCategories: CategoryItem[];
+  resolvedPersons?: { id: string; name: string }[];
+  resolvedConcepts?: { id: string; title: string }[];
 }
 
 export function CategoryDetailPageClient({
   category,
   allCategories,
+  resolvedPersons = [],
+  resolvedConcepts = [],
 }: CategoryDetailPageClientProps) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -303,18 +305,15 @@ export function CategoryDetailPageClient({
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {category.relatedPersons.map((pid) => {
-                  const person = ZEN_PERSONS.find((p) => p.id === pid);
-                  return (
-                    <Link
-                      key={pid}
-                      href={getHref(`/persons/${pid}`)}
-                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 dark:bg-slate-800 border border-emerald-200 dark:border-slate-700 text-emerald-900 dark:text-emerald-200 hover:border-emerald-400 transition-colors"
-                    >
-                      {person ? t(person.name) : pid}
-                    </Link>
-                  );
-                })}
+                {resolvedPersons.map((person) => (
+                  <Link
+                    key={person.id}
+                    href={getHref(`/persons/${person.id}`)}
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-50 dark:bg-slate-800 border border-emerald-200 dark:border-slate-700 text-emerald-900 dark:text-emerald-200 hover:border-emerald-400 transition-colors"
+                  >
+                    {t(person.name)}
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -326,18 +325,15 @@ export function CategoryDetailPageClient({
                 </h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                {category.relatedConcepts.map((cid) => {
-                  const concept = ZEN_CONCEPTS.find((c) => c.id === cid);
-                  return (
-                    <Link
-                      key={cid}
-                      href={getHref(`/concepts/${cid}`)}
-                      className="px-2.5 py-1 rounded-md text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors border border-transparent hover:border-slate-300 dark:hover:border-slate-700"
-                    >
-                      {concept ? t(concept.title) : cid}
-                    </Link>
-                  );
-                })}
+                {resolvedConcepts.map((concept) => (
+                  <Link
+                    key={concept.id}
+                    href={getHref(`/concepts/${concept.id}`)}
+                    className="px-2.5 py-1 rounded-md text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors border border-transparent hover:border-slate-300 dark:hover:border-slate-700"
+                  >
+                    {t(concept.title)}
+                  </Link>
+                ))}
               </div>
             </div>
           </section>

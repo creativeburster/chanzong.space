@@ -94,11 +94,11 @@ export const LineageGraph: React.FC = () => {
                       {node.sub && (
                         <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate sm:overflow-visible">
                           {node.subLinks
-                            ? t(node.sub).split(node.subLinks[0].text).map((part, i) => (
+                            ? t(node.sub).split(t(node.subLinks[0].text)).map((part, i) => (
                                 <React.Fragment key={i}>
                                   {part}
                                   {i < node.subLinks!.length && (
-                                    <Link prefetch={false} href={node.subLinks![i].href}
+                                    <Link prefetch={false} href={getHref(node.subLinks![i].href)}
                                       className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold"
                                     >
                                       {t(node.subLinks![i].text)}
@@ -156,7 +156,7 @@ export const LineageGraph: React.FC = () => {
                   }`}
                 >
                   <div className="text-xs font-semibold opacity-70 mb-1">
-                    {d.title}
+                    {d.title ? t(d.title) : ''}
                   </div>
                   {d.id ? (
                     <Link prefetch={false} href={getHref(`/persons/${d.id}`)}
@@ -173,11 +173,11 @@ export const LineageGraph: React.FC = () => {
                   )}
                   <div className={`text-xs mt-1 truncate ${isMainBranch ? 'text-amber-200/80' : 'text-slate-600 dark:text-slate-400'}`}>
                     {d.subLinks
-                      ? t(d.sub || '').split(d.subLinks[0].text).map((part, i) => (
+                      ? t(d.sub || '').split(t(d.subLinks[0].text)).map((part, i) => (
                           <React.Fragment key={i}>
                             {part}
                             {i < d.subLinks!.length && (
-                              <Link prefetch={false} href={d.subLinks![i].href}
+                              <Link prefetch={false} href={getHref(d.subLinks![i].href)}
                                 className={`hover:underline ${isMainBranch ? 'text-amber-300 hover:text-amber-200' : 'text-amber-700 dark:text-amber-400 hover:text-amber-900'} font-semibold`}
                               >
                                 {t(d.subLinks![i].text)}
@@ -226,13 +226,13 @@ export const LineageGraph: React.FC = () => {
               {/* 马祖 */}
               <div className="p-4 rounded-2xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/50 text-center mb-6">
                 <div className="text-xs font-bold text-amber-800 dark:text-amber-400">{t('洪州大师')}</div>
-                <Link prefetch={false} href="/persons/mazu" className="text-lg font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">
+                <Link prefetch={false} href={getHref('/persons/mazu')} className="text-lg font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">
                   {t('马祖道一')}
                 </Link>
                 <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                  <Link prefetch={false} href="/concepts/mind-is-buddha" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('即心即佛')}</Link>
+                  <Link prefetch={false} href={getHref('/concepts/mind-is-buddha')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('即心即佛')}</Link>
                   {' · '}
-                  <Link prefetch={false} href="/concepts/ordinary-mind" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('平常心是道')}</Link>
+                  <Link prefetch={false} href={getHref('/concepts/ordinary-mind')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('平常心是道')}</Link>
                 </div>
               </div>
 
@@ -243,38 +243,38 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
                   <div>
                     <div className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-1">{t('百丈系')}</div>
-                    <Link prefetch={false} href="/persons/baizhang" className="text-base font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">
+                    <Link prefetch={false} href={getHref('/persons/baizhang')} className="text-base font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">
                       {t('百丈怀海')}
                     </Link>
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
-                      <Link prefetch={false} href="/methods/daily-zen" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('一日不作 一日不食')}</Link>
+                      <Link prefetch={false} href={getHref('/methods/daily-zen')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('一日不作 一日不食')}</Link>
                     </div>
 
                     <div className="space-y-3 pt-3 border-t border-slate-200 dark:border-slate-800">
                       {/* 黄檗 -> 临济宗 */}
                       <div className="p-3 rounded-xl bg-rose-50/80 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50">
-                        <Link prefetch={false} href="/persons/huangbo" className="text-xs font-bold text-slate-900 dark:text-slate-100 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
+                        <Link prefetch={false} href={getHref('/persons/huangbo')} className="text-xs font-bold text-slate-900 dark:text-slate-100 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                           {t('黄檗希运')}
                         </Link>
                         <div className="mt-1 flex items-center justify-between">
-                          <Link prefetch={false} href="/persons/linji" className="text-xs font-bold font-serif-zen text-rose-900 dark:text-rose-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
+                          <Link prefetch={false} href={getHref('/persons/linji')} className="text-xs font-bold font-serif-zen text-rose-900 dark:text-rose-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                             {t('临济义玄')}
                           </Link>
                           <span className="px-2 py-0.5 rounded text-[10px] font-black bg-rose-700 text-white shadow-sm">
-                            <Link prefetch={false} href="/persons/linji" className="hover:underline">{t('临济宗')}</Link>
+                            <Link prefetch={false} href={getHref('/persons/linji')} className="hover:underline">{t('临济宗')}</Link>
                           </span>
                         </div>
                       </div>
 
                       {/* 沩山 -> 沩仰宗 */}
                       <div className="p-3 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/50">
-                        <Link prefetch={false} href="/persons/weishan-lingyou" className="text-xs font-bold text-slate-900 dark:text-slate-100 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
+                        <Link prefetch={false} href={getHref('/persons/weishan-lingyou')} className="text-xs font-bold text-slate-900 dark:text-slate-100 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                           {t('沩山灵祐')}
                         </Link>
                         <div className="mt-1 flex items-center justify-between">
-                          <Link prefetch={false} href="/persons/yangshan-huiji" className="text-xs font-bold font-serif-zen text-amber-900 dark:text-amber-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('仰山慧寂')}</Link>
+                          <Link prefetch={false} href={getHref('/persons/yangshan-huiji')} className="text-xs font-bold font-serif-zen text-amber-900 dark:text-amber-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('仰山慧寂')}</Link>
                           <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white shadow-sm">
-                            <Link prefetch={false} href="/persons/weishan-lingyou" className="hover:underline">{t('沩仰宗')}</Link>
+                            <Link prefetch={false} href={getHref('/persons/weishan-lingyou')} className="hover:underline">{t('沩仰宗')}</Link>
                           </span>
                         </div>
                       </div>
@@ -286,20 +286,20 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
                   <div>
                     <div className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-1">{t('南泉系')}</div>
-                    <Link prefetch={false} href="/persons/nanquan-puyuan" className="text-base font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">{t('南泉普愿')}</Link>
+                    <Link prefetch={false} href={getHref('/persons/nanquan-puyuan')} className="text-base font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-amber-800 dark:hover:text-amber-400 hover:underline">{t('南泉普愿')}</Link>
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
-                      <Link prefetch={false} href="/koan/koan-1" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('南泉斩猫')}</Link>
+                      <Link prefetch={false} href={getHref('/koan/koan-1')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('南泉斩猫')}</Link>
                     </div>
 
                     <div className="pt-3 border-t border-slate-200 dark:border-slate-800">
                       <div className="p-3 rounded-xl bg-sky-50/80 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-900/50">
-                        <Link prefetch={false} href="/persons/zhaozhou" className="text-xs font-bold font-serif-zen text-sky-900 dark:text-sky-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
+                        <Link prefetch={false} href={getHref('/persons/zhaozhou')} className="text-xs font-bold font-serif-zen text-sky-900 dark:text-sky-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                           {t('赵州从谂')}
                         </Link>
                         <div className="text-[11px] text-sky-700 dark:text-sky-400 mt-0.5">
-                          <Link prefetch={false} href="/concepts/chi-cha-qu" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('吃茶去')}</Link>
+                          <Link prefetch={false} href={getHref('/concepts/chi-cha-qu')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('吃茶去')}</Link>
                           {' · '}
-                          <Link prefetch={false} href="/concepts/ting-qian-baishuzi" className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('庭前柏树子')}</Link>
+                          <Link prefetch={false} href={getHref('/concepts/ting-qian-baishuzi')} className="text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 hover:underline font-semibold">{t('庭前柏树子')}</Link>
                         </div>
                       </div>
                     </div>
@@ -333,7 +333,7 @@ export const LineageGraph: React.FC = () => {
               {/* 石头 */}
               <div className="p-4 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900/50 text-center mb-6">
                 <div className="text-xs font-bold text-emerald-800 dark:text-emerald-400">{t('石头大师')}</div>
-                <Link prefetch={false} href="/persons/shitou" className="text-lg font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-emerald-800 dark:hover:text-emerald-400 hover:underline">
+                <Link prefetch={false} href={getHref('/persons/shitou')} className="text-lg font-bold font-serif-zen text-slate-900 dark:text-slate-100 hover:text-emerald-800 dark:hover:text-emerald-400 hover:underline">
                   {t('石头希迁')}
                 </Link>
                 <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{t('参同契 · 草庵歌')}</div>
@@ -346,17 +346,17 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">{t('药山枝线')}</div>
-                    <Link prefetch={false} href="/persons/yaoshan-weiyan" className="text-xs text-slate-700 dark:text-slate-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('药山惟俨')}</Link>
+                    <Link prefetch={false} href={getHref('/persons/yaoshan-weiyan')} className="text-xs text-slate-700 dark:text-slate-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('药山惟俨')}</Link>
                     <div className="text-xs text-slate-700 dark:text-slate-300 mt-1">
-                      <Link prefetch={false} href="/persons/dongshan" className="hover:underline hover:text-emerald-800 dark:hover:text-emerald-400 min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
+                      <Link prefetch={false} href={getHref('/persons/dongshan')} className="hover:underline hover:text-emerald-800 dark:hover:text-emerald-400 min-h-[24px] min-w-[24px] inline-flex items-center justify-center">
                         {t('洞山良价')}
                       </Link>
                     </div>
-                    <Link prefetch={false} href="/persons/caoshan-benji" className="text-xs text-slate-700 dark:text-slate-300 mt-0.5 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('曹山本寂')}</Link>
+                    <Link prefetch={false} href={getHref('/persons/caoshan-benji')} className="text-xs text-slate-700 dark:text-slate-300 mt-0.5 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('曹山本寂')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 dark:border-slate-800 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-emerald-700 text-white shadow-sm block">
-                      <Link prefetch={false} href="/persons/dongshan" className="hover:underline">{t('曹洞宗')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/dongshan')} className="hover:underline">{t('曹洞宗')}</Link>
                     </span>
                   </div>
                 </div>
@@ -366,22 +366,22 @@ export const LineageGraph: React.FC = () => {
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">{t('天皇枝线')}</div>
                     <div className="text-xs text-slate-700 dark:text-slate-300">
-                      <Link prefetch={false} href="/persons/tianhuang-daowu" className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('天皇道悟')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/tianhuang-daowu')} className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('天皇道悟')}</Link>
                       {' → '}
-                      <Link prefetch={false} href="/persons/longtan-chongxin" className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('龙潭')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/longtan-chongxin')} className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('龙潭')}</Link>
                     </div>
                     <div className="text-xs text-slate-700 dark:text-slate-300">
-                      <Link prefetch={false} href="/persons/deshan-xuanjian" className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('德山宣鉴')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/deshan-xuanjian')} className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('德山宣鉴')}</Link>
                       {' → '}
-                      <Link prefetch={false} href="/persons/xuefeng-yicun" className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('雪峰')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/xuefeng-yicun')} className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('雪峰')}</Link>
                     </div>
                     <div className="text-xs text-slate-700 dark:text-slate-300 mt-1">
-                      <Link prefetch={false} href="/persons/yunmen" className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('云门文偃')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/yunmen')} className="hover:text-purple-700 dark:hover:text-purple-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('云门文偃')}</Link>
                     </div>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 dark:border-slate-800 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-purple-700 text-white shadow-sm block">
-                      <Link prefetch={false} href="/persons/yunmen" className="hover:underline">{t('云门宗')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/yunmen')} className="hover:underline">{t('云门宗')}</Link>
                     </span>
                   </div>
                 </div>
@@ -390,15 +390,15 @@ export const LineageGraph: React.FC = () => {
                 <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
                   <div>
                     <div className="text-[11px] font-bold text-slate-500 dark:text-slate-400 mb-1">{t('罗汉枝线')}</div>
-                    <Link prefetch={false} href="/persons/luohan-guichen" className="text-xs text-slate-700 dark:text-slate-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('罗汉桂琛')}</Link>
+                    <Link prefetch={false} href={getHref('/persons/luohan-guichen')} className="text-xs text-slate-700 dark:text-slate-300 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('罗汉桂琛')}</Link>
                     <div className="text-xs text-slate-700 dark:text-slate-300 mt-0.5">
-                      <Link prefetch={false} href="/persons/xuansha-shibei" className="hover:text-indigo-700 dark:hover:text-indigo-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('玄沙师备')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/xuansha-shibei')} className="hover:text-indigo-700 dark:hover:text-indigo-400 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('玄沙师备')}</Link>
                     </div>
-                    <Link prefetch={false} href="/persons/fayan-wenyi" className="text-xs text-slate-700 dark:text-slate-300 mt-1 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('法眼文益')}</Link>
+                    <Link prefetch={false} href={getHref('/persons/fayan-wenyi')} className="text-xs text-slate-700 dark:text-slate-300 mt-1 hover:underline min-h-[24px] min-w-[24px] inline-flex items-center justify-center">{t('法眼文益')}</Link>
                   </div>
                   <div className="mt-3 pt-2 border-t border-slate-200 dark:border-slate-800 text-center">
                     <span className="px-2 py-1 rounded text-[10px] font-black bg-indigo-700 text-white shadow-sm block">
-                      <Link prefetch={false} href="/persons/fayan-wenyi" className="hover:underline">{t('法眼宗')}</Link>
+                      <Link prefetch={false} href={getHref('/persons/fayan-wenyi')} className="hover:underline">{t('法眼宗')}</Link>
                     </span>
                   </div>
                 </div>

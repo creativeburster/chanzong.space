@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/faq',
       'zh-Hant': '/zh-tw/faq',
+      'x-default': '/faq',
     },
   },
   openGraph: {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     title: `问答 · ${STATS.faqs}则宗门解惑 | 禅宗知识库 ChanZong.space`,
     description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析与修证疑问。`,
     url: 'https://chanzong.space/faq',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

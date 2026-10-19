@@ -2660,17 +2660,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "id": "jieduan-zhongliu",
     "title": "截断众流",
     "category": "禅法",
-    "summary": "截断众流是圜悟克勤宗风的核心特征。众流指一切思量分别、知见解路、凡情圣解。圜悟上堂云“玄机独唱截断众流，摆拨不拘更无回互”——以金刚圈、栗棘蓬接人，不令学人有丝毫回避处。此法非否定语言文字，而是于言句中截断言句，令学人于思量不及处亲见本来。与云门三句“截断众流”一脉相承。",
-    "etymology": "出《圜悟佛果禅师语录》卷一“玄机独唱截断众流”。云门宗有三句，其一为“截断众流”。 源自大乘了义经教与宗门祖师言教。梵汉名相融通，历代禅门尊宿在提撕学人、举扬个事时屡屡拈出，旨在借名显体，破除对名相文字之死执，直透向上一窍。",
+    "summary": "禅门宗风三大机用（函盖乾坤、截断众流、随波逐浪）之一，亦是云门文偃、圜悟克勤与断桥妙伦等宗师的核心机用。众流指一切意识分别、思量葛藤、知见解路与凡情圣解。圜悟上堂云“玄机独唱截断众流，摆拨不拘更无回互”——指宗师以迅雷不及掩耳之大机大用，或以金刚圈、栗棘蓬接人，于言句中截断言句，令学人妄念奔流顿然枯竭，于思量不及处亲见本来面目。",
+    "etymology": "源出唐代云门文偃禅师“云门三句”（函盖乾坤、截断众流、随波逐浪），后见《圜悟佛果禅师语录》卷一“玄机独唱截断众流”及《断桥妙伦禅师语录》。梵汉名相融通，历代禅门尊宿在提撕学人、举扬个事时屡屡拈出，旨在借名显体，破除对名相文字之死执，直透向上一窍。",
     "quotes": [
       "玄机独唱截断众流，摆拨不拘更无回互。 —圜悟克勤",
-      "三世诸佛只言自知，历代祖师全提不起。 —圜悟克勤"
-],
-    "guidance": "截断众流不是让你不说话不思维，而是于说话思维处蓦然截断，直下透脱。如人正问时忽然被打，正思量时忽然被喝——于思量不及处，方有少分相应。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
-    "classicRef": "圜悟佛果禅师语录",
-    "relatedConcepts": ["jingang-zhengti","mozhao-chan-concept","koan"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuyulu","huanwuxinyao"]
+      "三世诸佛只言自知，历代祖师全提不起。 —圜悟克勤",
+      "二千年前我不如你，二千年后你不如我。冷处与你著把火！ —断桥妙伦",
+      "截断妄想葛藤，不容丝毫拟议。"
+    ],
+    "guidance": "截断众流不是让你不说话不思维，而是于说话思维处蓦然截断，直下透脱。心念常如奔腾江水起伏不息，修行须有一刀两断之气概，如人正问时忽然被打、正思量时忽然被喝，在念头生起的刹那截断它，不随妄念相续流转，自性灵光当下显现。",
+    "classicRef": "《云门广录》《圜悟佛果禅师语录》《断桥妙伦禅师语录》",
+    "relatedConcepts": ["jingang-zhengti","mozhao-chan-concept","koan","duanqiao-huolu","instant-enlightenment"],
+    "relatedPersons": ["yuanwu-keqin","duanqiao-miaolun","yunmen"],
+    "relatedBooks": ["huanwuyulu","huanwuxinyao","duanqiaoyulu","yunmen"]
   },
   {
     "id": "yiyin-yanfa",
@@ -8236,22 +8238,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "relatedConcepts": ["tiaochu-tuzhe","direct-pointing"],
     "relatedPersons": ["duanqiao-miaolun","wuzhun-shifan"],
     "relatedBooks": ["duanqiaoyulu"]
-  },
-  {
-    "id": "jieduan-zhongliu",
-    "title": "截断众流",
-    "category": "见地",
-    "summary": "禅门宗风三大机用（函盖乾坤、截断众流、随波逐浪）之一。指宗师以迅雷不及掩耳之大机大用，直下斩断学人一切意识分别、思量葛藤与语言途辙，令妄念奔流顿然枯竭，亲见本来面目。",
-    "etymology": "源出唐代云门文偃禅师三句，南宋断桥妙伦在台州与杭州净慈开堂时大力阐发此机锋妙用。",
-    "quotes": [
-      "二千年前我不如你，二千年后你不如我。冷处与你著把火！",
-      "截断妄想葛藤，不容丝毫拟议。"
-    ],
-    "guidance": "心念常如奔腾江水起伏不息。修行必须有一刀两断之气概，在念头生起的刹那截断它，不随妄念相续流转，自性灵光当下显现。",
-    "classicRef": "断桥妙伦禅师语录",
-    "relatedConcepts": ["duanqiao-huolu","instant-enlightenment"],
-    "relatedPersons": ["duanqiao-miaolun","yunmen"],
-    "relatedBooks": ["duanqiaoyulu","yunmen"]
   },
   {
     "id": "chiguli",

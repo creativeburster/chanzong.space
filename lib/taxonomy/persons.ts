@@ -1182,19 +1182,23 @@ export const ZEN_PERSONS: PersonItem[] = [
   {
     "id": "fenyang-shanzhao",
     "name": "汾阳善昭",
-    "title": "临济宗中兴先驱 / 慈明楚圆之师",
+    "title": "临济宗中兴之祖 / 西河师子 / 慈明楚圆之师",
     "era": "北宋 (947-1024)",
-    "lifeStory": "善昭禅师，太原（今山西太原）人，俗姓俞。十四岁出家，博通经论，后参首山省念，于省念座下开悟。师住汾州（今山西汾阳），大弘临济宗旨。师性孤高，七次受请方出住持。门下出慈明楚圆，楚圆门下又出杨岐方会、黄龙慧南，临济宗由此中兴。师以“三句”接人——不着语言、不立玄妙、不存规矩，直指人心。又集古德公案为“汾阳颂古”，开宋代文字禅之先河。",
-    "teachings": "汾阳宗风以“孤高”著称：不徇人情，不苟世俗，七请方出。其教以“三句”为纲：第一句不着语言，第二句不立玄妙，第三句不存规矩——层层遣除，直指本源。 其教法直指心源，宗风峻拔圆融。强调佛法不在言句名相，而在当下自心觉照；行住坐卧四威仪中不离本真，随缘任运，不住有无二边。主张真修实证，解行相应，破除学人死执经教与枯坐盲修之偏，导归大乘见性成佛、游戏三昧之无上菩提。",
+    "lifeStory": "汾阳善昭禅师（947—1024），太原俞氏子，北宋临济宗一代中兴大宗师，首山省念法嗣。十四岁出家，博通经论，遍历名山，参谒尊宿七十一员，最后归止汝州首山。因问“百丈卷席意作么生”，首山答“龙袖拂开全体现，象王行处绝狐踪”而大彻玄机，密印心法。宋太宗淳化年间，西河僧俗千余人七次削牍延请方出住持，驻锡汾州太平寺太子院，说法三十载，足不出户三十年，海内尊为“西河师子”。首创汾阳十八问、汾阳三句（不着语言、不立玄妙、不存规矩），大阐三玄三要，首开百则颂古拈古之先河。门下育就石霜楚圆（慈明）、琅琊慧觉、大沩有为等大器；楚圆下更衍出杨岐方会与黄龙慧南二大门派，使两宋天下宗门几全归临济，公认为临济宗中兴之祖。",
+    "teachings": "临济中兴，当门师子；一句三玄，一玄三要；十八问机，百则颂古。汾阳宗风以“孤高”与“杀活大机”著称，其教以“三句”为纲：第一句不着语言，第二句不立玄妙，第三句不存规矩——层层遣除，直指本源；又以三玄三要与十八问之精微法式，为宗门勘验立下极则准绳。主张真参实悟，任运随缘，以佛法为身家性命。",
     "quotes": [
       "七次受请，方出住持。",
-      "不着语言，不立玄妙，不存规矩。 —汾阳三句"
-],
+      "不着语言，不立玄妙，不存规矩。 —汾阳三句",
+      "掘地觅天，不识幽玄。",
+      "虚空无障碍，来往任纵横。",
+      "仰面哭苍天，入地更深埋。",
+      "不出院来三十年，不知门外有林泉。只将佛法安身命，任运随缘过日眠。"
+    ],
     "classics": ["汾阳善昭禅师语录"],
-    "relatedConcepts": ["beyond-words","koan"],
-    "relatedMethods": [],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["dongshanyulu","changuancejin","huanwuxinyao"]
+    "relatedConcepts": ["beyond-words","koan","linji-zongfeng","gong-an-song-gu","banghe"],
+    "relatedMethods": ["kanhuatou"],
+    "relatedPersons": ["shoushan-xingnian","shishuang-chuyuan","yangqi-fanghui","huanglong-huinan","linji","fengxue-yanzhao"],
+    "relatedBooks": ["fenyangyulu","shishuangchuyuan","yangqiyulu","huanglonghuinan","dongshanyulu","changuancejin","huanwuxinyao"]
   },
   {
     "id": "wuzu-fayan",
@@ -4332,46 +4336,6 @@ export const ZEN_PERSONS: PersonItem[] = [
       "duanqiaoyulu",
       "xiyanyulu",
       "shiwuyulu"
-    ]
-  },
-  {
-    "id": "fenyang-shanzhao",
-    "name": "汾阳善昭",
-    "title": "临济宗中兴之祖 / 西河师子",
-    "era": "北宋",
-    "lifeStory": "汾阳善昭禅师（947—1024），太原俞氏子，北宋临济宗一代中兴大宗师，首山省念法嗣。早年遍历名山，参谒尊宿七十一员，最后归止汝州首山。因问“百丈卷席意作么生”，首山答“龙袖拂开全体现，象王行处绝狐踪”而大彻玄机，密印心法。宋太宗淳化年间，西河僧俗千余人削牍延请，师驻锡汾州太平寺太子院，说法三十载，足不出户三十年，海内尊为“西河师子”。首创汾阳十八问，大阐三玄三要，首开百则颂古拈古之先河。门下育就石霜楚圆（慈明）、琅琊慧觉、大沩有为等六人大器；楚圆下更衍出杨岐方会与黄龙慧南二大门派，使两宋天下宗门几全归临济，公认为临济宗中兴之祖。",
-    "teachings": "临济中兴，当门师子；一句三玄，一玄三要；十八问机，百则颂古。 其教法峻烈圆通，以西河师子之杀活大机当门踞坐，咬断衲僧分别命根；又以三玄三要与十八问之精微法式，为宗门勘验立下极则准绳。主张真参实悟，任运随缘，以佛法为身家性命。",
-    "quotes": [
-      "掘地觅天，不识幽玄。",
-      "虚空无障碍，来往任纵横。",
-      "仰面哭苍天，入地更深埋。",
-      "不出院来三十年，不知门外有林泉。只将佛法安身命，任运随缘过日眠。"
-    ],
-    "classics": [
-      "fenyangyulu"
-    ],
-    "relatedConcepts": [
-      "linji-zongfeng",
-      "gong-an-song-gu",
-      "banghe"
-    ],
-    "relatedMethods": [
-      "kanhuatou"
-    ],
-    "relatedPersons": [
-      "shoushan-xingnian",
-      "shishuang-chuyuan",
-      "yangqi-fanghui",
-      "huanglong-huinan",
-      "linji",
-      "fengxue-yanzhao"
-    ],
-    "relatedBooks": [
-      "fenyangyulu",
-      "shishuangchuyuan",
-      "yangqiyulu",
-      "huanglonghuinan",
-      "biyanlu"
     ]
   },
   {

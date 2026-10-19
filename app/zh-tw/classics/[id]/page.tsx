@@ -55,6 +55,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
       authors: [authorTrad],
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
     },
     twitter: {
       card: 'summary',
@@ -94,10 +95,11 @@ export default function TradClassicPage({ params }: PageProps) {
   const nextItem = currentIndex < manifest.length - 1 ? manifest[currentIndex + 1] : null;
 
   const rawText = content || '*正在提取該篇章全文中，請稍候刷新...*';
-  const rawHtml = marked
-    .parse(rawText, { async: false })
+  const rawHtml = (marked
+    .parse(rawText, { async: false }) as string)
     .replace(/<h1/g, '<h2')
-    .replace(/<\/h1>/g, '</h2>') as string;
+    .replace(/<\/h1>/g, '</h2>')
+    .replace(/href="\/(classics|concepts|persons|methods|koan|faq|categories|collections|books|practice|lineage|graph|about|sitemap)(\/[^"]*)?"/g, 'href="/zh-tw/$1$2"');
 
   // 服务端提取轻量结构化卡片并繁体化（仅数 KB，杜绝客户端序列化全书大字符串）
   const extracted = extractCards(rawText);
@@ -158,32 +160,53 @@ export default function TradClassicPage({ params }: PageProps) {
   const catTrad = convertToTrad(meta.category);
   const summaryTrad = convertToTrad(meta.summary || `${meta.title}，${meta.author}著，${meta.category}類經典。`);
 
-  // 服务端预先查找本经典关联的实体（避免客户端组件全量打包 3.8MB taxonomy）
+  // 服务端预先查找本经典关联的实体并提取轻量 DTO（避免客户端 RSC 载荷序列化大体积字段）
   const relPersons = ZEN_PERSONS.filter((p) => p.relatedBooks.includes(meta.id)).map(p => ({
-    ...p,
+    id: p.id,
     name: convertToTrad(p.name),
     title: convertToTrad(p.title),
+    era: convertToTrad(p.era),
   }));
   const relConcepts = ZEN_CONCEPTS.filter((c) => c.relatedBooks.includes(meta.id)).map(c => ({
-    ...c,
+    id: c.id,
     title: convertToTrad(c.title),
-    summary: convertToTrad(c.summary || ''),
+    category: convertToTrad(c.category),
+    summary: convertToTrad((c.summary || '').slice(0, 80)),
   }));
   const relMethods = ZEN_METHODS.filter((m) => m.relatedBooks.includes(meta.id)).map(m => ({
-    ...m,
+    id: m.id,
     title: convertToTrad(m.title),
-    summary: convertToTrad(m.summary || ''),
+    steps: (m.steps || []).map(s => convertToTrad(s)),
+    summary: convertToTrad((m.summary || '').slice(0, 80)),
   }));
   const relQas = ZEN_KOANS.filter((q) => q.relatedBooks.includes(meta.id)).map(q => ({
-    ...q,
+    id: q.id,
     question: convertToTrad(q.question),
-    answer: convertToTrad(q.answer || ''),
+    answer: convertToTrad((q.answer || '').slice(0, 100)),
+    master: convertToTrad(q.master || ''),
   }));
-  const relFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id)).map(f => ({
-    ...f,
+  const allRelFaqs = ZEN_FAQS.filter((f) => f.relatedBooks && f.relatedBooks.includes(meta.id));
+  const totalFaqCount = allRelFaqs.length;
+  const classicFaqs = allRelFaqs.slice(0, 20).map(f => ({
+    id: f.id,
     question: convertToTrad(f.question),
     answer: convertToTrad(f.answer || ''),
+    category: convertToTrad(f.category),
   }));
+
+  const relatedBooks = manifest
+    .filter((b) => b.id !== meta.id && (b.category === meta.category || Math.abs(b.idx - meta.idx) <= 3))
+    .slice(0, 6)
+    .map((b) => ({
+      id: b.id,
+      idx: b.idx,
+      title: b.title,
+      author: b.author,
+      category: b.category,
+      word_count: b.word_count,
+      summary: (b.summary || '').slice(0, 60),
+      filename: b.filename,
+    }));
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -234,7 +257,6 @@ export default function TradClassicPage({ params }: PageProps) {
     ...(meta.cbeta_id ? { identifier: meta.cbeta_id, isPartOf: convertToTrad(meta.canon_source || '') } : {}),
   };
 
-  const classicFaqs = relFaqs.slice(0, 20);
   const faqPageJsonLd = classicFaqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -270,7 +292,7 @@ export default function TradClassicPage({ params }: PageProps) {
       )}
       <ClassicViewer
         meta={meta}
-        manifest={manifest}
+        relatedBooks={relatedBooks}
         prevItem={prevItem}
         nextItem={nextItem}
         extracted={tradExtracted}
@@ -282,7 +304,8 @@ export default function TradClassicPage({ params }: PageProps) {
         relConcepts={relConcepts}
         relMethods={relMethods}
         relQas={relQas}
-        relFaqs={relFaqs}
+        relFaqs={classicFaqs}
+        totalFaqCount={totalFaqCount}
         translations={classicTranslations}
         glossaries={classicGlossaries}
       >

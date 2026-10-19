@@ -71,9 +71,9 @@ const ZEN_LINEAGES = [
     masters: [
       { id: 'linji', name: '临济义玄', title: '开山宗师' },
       { id: 'huangbo', name: '黄檗希运', title: '临济之师' },
-      { id: 'shishuangchuyuan', name: '石霜楚圆', title: '慈明宗师' },
-      { id: 'yangqifanghui', name: '杨岐方会', title: '杨岐派开祖' },
-      { id: 'huanglonghuinan', name: '黄龙慧南', title: '黄龙派开祖' }
+      { id: 'shishuang-chuyuan', name: '石霜楚圆', title: '慈明宗师' },
+      { id: 'yangqi-fanghui', name: '杨岐方会', title: '杨岐派开祖' },
+      { id: 'huanglong-huinan', name: '黄龙慧南', title: '黄龙派开祖' }
     ],
     classics: [
       { id: 'linji', title: '临济录' },

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/graph',
       'zh-Hant': '/zh-tw/graph',
+      'x-default': '/graph',
     },
   },
   openGraph: {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     title: '知识图谱 | 禅宗知识库 ChanZong.space',
     description: `${STATS.concepts}个概念、${STATS.classics}部著作、${STATS.persons}位祖师、${STATS.koans}则公案的关联全景图。`,
     url: 'https://chanzong.space/graph',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

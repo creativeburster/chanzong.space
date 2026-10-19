@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     languages: {
       'zh-Hans': '/about',
       'zh-Hant': '/zh-tw/about',
+      'x-default': '/about',
     },
   },
   openGraph: {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     title: '关于本站 | 禅宗知识库 ChanZong.space',
     description: '禅宗知识库的编辑原则、文本来源与版权声明。',
     url: 'https://chanzong.space/about',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

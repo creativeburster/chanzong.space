@@ -58,9 +58,10 @@ import { ExtractedCards, extractCards, extractAudioText, extractOriginalParagrap
 
 interface ClassicViewerProps {
   meta: ClassicItem;
-  manifest: ClassicItem[];
-  prevItem: ClassicItem | null;
-  nextItem: ClassicItem | null;
+  manifest?: ClassicItem[];
+  relatedBooks?: Array<Pick<ClassicItem, 'id' | 'title' | 'author' | 'category' | 'word_count'>>;
+  prevItem: Pick<ClassicItem, 'id' | 'title'> | null;
+  nextItem: Pick<ClassicItem, 'id' | 'title'> | null;
   extracted?: ExtractedCards;
   audioText?: string;
   originalParagraphs?: string[];
@@ -68,11 +69,12 @@ interface ClassicViewerProps {
   volumesMeta?: { index: number; title: string }[];
   guideHtml?: string;
   children?: React.ReactNode;
-  relPersons?: PersonItem[];
-  relConcepts?: ConceptItem[];
-  relMethods?: MethodItem[];
-  relQas?: KoanItem[];
-  relFaqs?: FAQItem[];
+  relPersons?: Array<Pick<PersonItem, 'id' | 'name' | 'title'> & Partial<PersonItem>>;
+  relConcepts?: Array<Pick<ConceptItem, 'id' | 'title'> & Partial<ConceptItem>>;
+  relMethods?: Array<Pick<MethodItem, 'id' | 'title' | 'steps'> & Partial<MethodItem>>;
+  relQas?: Array<Pick<KoanItem, 'id' | 'question'> & Partial<KoanItem>>;
+  relFaqs?: Array<Pick<FAQItem, 'id' | 'question' | 'answer'> & Partial<FAQItem>>;
+  totalFaqCount?: number;
   translations?: string[];
   glossaries?: any[];
   // 保留可选 rawContent/htmlContent 仅作兜底兼容
@@ -139,6 +141,7 @@ export const THEME_STYLES: Record<
 export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   meta,
   manifest,
+  relatedBooks,
   prevItem,
   nextItem,
   extracted: propExtracted,
@@ -152,6 +155,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
   relMethods = [],
   relQas = [],
   relFaqs = [],
+  totalFaqCount,
   translations = [],
   glossaries = [],
   children,
@@ -365,7 +369,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
   return (
     <div data-theme={theme} className={`min-h-screen flex ${currentTheme.pageBg} transition-colors duration-300`}>
-      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest.length} />
+      <Sidebar onOpenSearch={() => setSearchOpen(true)} classicsCount={manifest?.length || 167} />
 
       <div className="flex-1 flex flex-col min-w-0">
         <TopHeader />
@@ -605,7 +609,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                       <td className={`py-2 ${currentTheme.proseText}`}>{t(meta.category)} · {t('约')} {meta.word_count.toLocaleString()} {t('字')}</td>
                       <th scope="row" className="py-2 px-4 font-semibold text-zinc-500 dark:text-zinc-400">{t('知识图谱关联')}</th>
                       <td className={`py-2 ${currentTheme.proseText}`}>
-                        {relPersons.length} {t('位祖师')} · {relConcepts.length} {t('个概念')} · {relQas.length} {t('则公案')} · {relFaqs.length} {t('条问答')}
+                        {relPersons.length} {t('位祖师')} · {relConcepts.length} {t('个概念')} · {relQas.length} {t('则公案')} · {totalFaqCount ?? relFaqs.length} {t('条问答')}
                       </td>
                     </tr>
                     <tr>
@@ -839,7 +843,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
           </div>
 
           {/* 相关经典（全模式共享） */}
-          <RelatedBooksCard manifest={manifest} currentId={meta.id} />
+          <RelatedBooksCard manifest={manifest} relatedBooks={relatedBooks} currentId={meta.id} />
 
           {/* 延伸阅读：交叉引用（全模式共享） */}
           <div id="sec-network">
@@ -907,7 +911,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                     <div className="flex items-center space-x-2 text-[15px] font-semibold text-emerald-800 dark:text-emerald-400">
                       <HelpCircle className="w-5 h-5 text-emerald-600" />
                       <span>{t('相关问答')}</span>
-                      <span className="text-xs text-emerald-700/60 dark:text-emerald-400/60">({t('共')} {relFaqs.length} {t('条')})</span>
+                      <span className="text-xs text-emerald-700/60 dark:text-emerald-400/60">({t('共')} {totalFaqCount ?? relFaqs.length} {t('条')})</span>
                     </div>
                     <div className="space-y-3">
                       {relFaqs.slice(0, 20).map((f, idx) => {
@@ -1057,7 +1061,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
         </div>
       )}
 
-      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} items={manifest} />
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </div>
   );
 };

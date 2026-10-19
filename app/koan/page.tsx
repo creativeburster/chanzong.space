@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: '禅宗公案 | 禅宗知识库 ChanZong.space',
     description: `禅宗${STATS.koans}则公案——古德机锋对决与祖师开悟因缘。`,
     url: 'https://chanzong.space/koan',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

@@ -22,7 +22,7 @@ const CollapsibleCard: React.FC<{
   colorClass: string;
   defaultOpen?: boolean;
   children: React.ReactNode;
-}> = ({ icon, title, count, countLabel, colorClass, defaultOpen = false, children }) => {
+}> = ({ icon, title, count, countLabel, colorClass, defaultOpen = true, children }) => {
   const [open, setOpen] = useState(defaultOpen);
   return (
     <div className="mt-6 bg-white dark:bg-slate-900 rounded-3xl border border-amber-900/10 dark:border-slate-800 shadow-md overflow-hidden transition-colors">
@@ -41,7 +41,7 @@ const CollapsibleCard: React.FC<{
         </div>
         <ChevronDown className={`w-5 h-5 text-zinc-400 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
-      {open && <div className="px-6 sm:px-10 pb-8">{children}</div>}
+      <div className={open ? 'px-6 sm:px-10 pb-8 block' : 'hidden'}>{children}</div>
     </div>
   );
 };
@@ -54,7 +54,6 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
 
   const INITIAL_LIMIT = 6;
   const shouldLimit = verses.length > INITIAL_LIMIT;
-  const visibleVerses = shouldLimit && !expanded ? verses.slice(0, INITIAL_LIMIT) : verses;
 
   return (
     <CollapsibleCard
@@ -66,11 +65,11 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
       defaultOpen={true}
     >
       <div className="space-y-4">
-        {visibleVerses.map((verse, i) => {
-          // 处理加粗格式
+        {verses.map((verse, i) => {
+          const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
           const parts = verse.split(/\*\*/);
           return (
-            <div key={i} className="p-4 rounded-2xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200/50 dark:border-amber-900/50">
+            <div key={i} className={`${isHidden ? 'hidden' : 'block'} p-4 rounded-2xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200/50 dark:border-amber-900/50`}>
               <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-amber-900 dark:text-amber-200">
                 {parts.map((part, j) =>
                   j % 2 === 1 ? (
@@ -108,7 +107,6 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
 
   const INITIAL_LIMIT = 4;
   const shouldLimit = koans.length > INITIAL_LIMIT;
-  const visibleKoans = shouldLimit && !expanded ? koans.slice(0, INITIAL_LIMIT) : koans;
 
   return (
     <>
@@ -121,26 +119,29 @@ export const KoanCard: React.FC<{ koans: KoanItem[] }> = ({ koans }) => {
         defaultOpen={true}
       >
         <div className="space-y-4">
-          {visibleKoans.map((koan, i) => (
-            <div key={i} className="p-4 rounded-2xl bg-violet-50/60 dark:bg-violet-950/30 border border-violet-200/50 dark:border-violet-900/50 group">
-              <p className="text-[14px] font-semibold text-violet-800 dark:text-violet-300 mb-1">
-                问：{koan.question}
-              </p>
-              <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900 dark:text-violet-200">
-                答：{koan.answer}
-              </p>
-              <div className="flex justify-end pt-2">
-                <button
-                  onClick={() => setActiveKoan(koan)}
-                  className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-900/60 hover:bg-violet-200 dark:hover:bg-violet-800 text-violet-800 dark:text-violet-200 text-[11px] font-medium transition flex items-center gap-1"
-                  title={t('生成公案海报')}
-                >
-                  <ImageIcon className="w-3 h-3 text-violet-700 dark:text-violet-300" />
-                  <span>{t('海报')}</span>
-                </button>
+          {koans.map((koan, i) => {
+            const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
+            return (
+              <div key={i} className={`${isHidden ? 'hidden' : 'block'} p-4 rounded-2xl bg-violet-50/60 dark:bg-violet-950/30 border border-violet-200/50 dark:border-violet-900/50 group`}>
+                <p className="text-[14px] font-semibold text-violet-800 dark:text-violet-300 mb-1">
+                  {t('问')}：{koan.question}
+                </p>
+                <p className="text-[15px] sm:text-[16px] font-serif-zen text-violet-900 dark:text-violet-200">
+                  {t('答')}：{koan.answer}
+                </p>
+                <div className="flex justify-end pt-2">
+                  <button
+                    onClick={() => setActiveKoan(koan)}
+                    className="opacity-80 group-hover:opacity-100 px-2.5 py-1 rounded-lg bg-violet-100 dark:bg-violet-900/60 hover:bg-violet-200 dark:hover:bg-violet-800 text-violet-800 dark:text-violet-200 text-[11px] font-medium transition flex items-center gap-1"
+                    title={t('生成公案海报')}
+                  >
+                    <ImageIcon className="w-3 h-3 text-violet-700 dark:text-violet-300" />
+                    <span>{t('海报')}</span>
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
 
           {shouldLimit && (
             <div className="flex justify-center pt-2">
@@ -174,7 +175,6 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
 
   const INITIAL_LIMIT = 5;
   const shouldLimit = quotes.length > INITIAL_LIMIT;
-  const visibleQuotes = shouldLimit && !expanded ? quotes.slice(0, INITIAL_LIMIT) : quotes;
 
   return (
     <>
@@ -184,14 +184,16 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
         count={quotes.length}
         countLabel={t('则')}
         colorClass="emerald"
+        defaultOpen={true}
       >
         <div className="space-y-3">
-          {visibleQuotes.map((quote, i) => {
+          {quotes.map((quote, i) => {
+            const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
             const dashIdx = quote.indexOf('—');
             const text = dashIdx > 0 ? quote.substring(0, dashIdx).trim() : quote;
             const source = dashIdx > 0 ? quote.substring(dashIdx + 1).trim() : (personNames[0] || '');
             return (
-              <div key={i} className="p-4 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/50 dark:border-emerald-900/50 flex flex-col justify-between gap-2 group">
+              <div key={i} className={`${isHidden ? 'hidden' : 'flex'} p-4 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/50 dark:border-emerald-900/50 flex-col justify-between gap-2 group`}>
                 <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-emerald-900 dark:text-emerald-200">
                   {text}
                 </p>
@@ -214,7 +216,7 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
             <div className="flex justify-center pt-2">
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="px-5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 text-[13px] font-semibold hover:bg-emerald-100 dark:hover:bg-emerald-900/60 transition-all shadow-sm"
+                className="px-5 py-2 rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/60 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 text-[13px] font-semibold hover:bg-emerald-100 dark:hover:bg-emerald-800/60 transition-all shadow-sm"
               >
                 {expanded ? t('收起') : `${t('展开全部名言')} (${t('共')} ${quotes.length} ${t('则')})`}
               </button>
@@ -235,8 +237,8 @@ export const QuoteCard: React.FC<{ quotes: string[]; personNames: string[] }> = 
 };
 
 /* ===================== 4. 修行指南卡 ===================== */
-export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodItem[] }> = ({ practices, relMethods = [] }) => {
-  const { t } = useLang();
+export const PracticeCard: React.FC<{ practices: string[]; relMethods?: Array<Pick<MethodItem, 'id' | 'title' | 'steps'> & Partial<MethodItem>> }> = ({ practices, relMethods = [] }) => {
+  const { t, getHref } = useLang();
   // 合并：相关法门的steps + 自动提取的practices
   const methodSteps = relMethods.flatMap(m => (m.steps || []).map(s => ({ method: m.title, step: s, id: m.id })));
   const hasContent = practices.length > 0 || methodSteps.length > 0;
@@ -251,10 +253,10 @@ export const PracticeCard: React.FC<{ practices: string[]; relMethods?: MethodIt
       defaultOpen={true}
     >
       <div className="space-y-5">
-        {/* 相关法门的步骤（参考ramanamaharshi.space的实践指导） */}
+        {/* 相关法门的步骤 */}
         {relMethods.map(m => m.steps && m.steps.length > 0 && (
           <div key={m.id}>
-            <Link prefetch={false} href={`/methods/${m.id}`} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 dark:text-teal-300 hover:text-teal-600 transition-colors">
+            <Link prefetch={false} href={getHref(`/methods/${m.id}`)} className="inline-flex items-center space-x-1.5 mb-2 text-[14px] font-bold text-teal-800 dark:text-teal-300 hover:text-teal-600 transition-colors">
               <span>🧘 {t(m.title)}</span>
             </Link>
             <div className="space-y-2">
@@ -298,7 +300,6 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
 
   const INITIAL_LIMIT = 4;
   const shouldLimit = apps.length > INITIAL_LIMIT;
-  const visibleApps = shouldLimit && !expanded ? apps.slice(0, INITIAL_LIMIT) : apps;
 
   return (
     <CollapsibleCard
@@ -307,13 +308,17 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
       count={apps.length}
       countLabel={t('条')}
       colorClass="indigo"
+      defaultOpen={true}
     >
       <div className="space-y-3">
-        {visibleApps.map((app, i) => (
-          <div key={i} className="p-4 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-200/50 dark:border-indigo-900/50">
-            <p className="text-[14px] sm:text-[15px] leading-relaxed text-indigo-900 dark:text-indigo-200">{app}</p>
-          </div>
-        ))}
+        {apps.map((app, i) => {
+          const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
+          return (
+            <div key={i} className={`${isHidden ? 'hidden' : 'block'} p-4 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-200/50 dark:border-indigo-900/50`}>
+              <p className="text-[14px] sm:text-[15px] leading-relaxed text-indigo-900 dark:text-indigo-200">{app}</p>
+            </div>
+          );
+        })}
 
         {shouldLimit && (
           <div className="flex justify-center pt-2">
@@ -331,8 +336,8 @@ export const ModernAppCard: React.FC<{ apps: string[] }> = ({ apps }) => {
 };
 
 /* ===================== 6. 历史背景卡 ===================== */
-export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[] }> = ({ meta, relPersons = [] }) => {
-  const { t } = useLang();
+export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: Array<Pick<PersonItem, 'id' | 'name' | 'title'> & Partial<PersonItem>> }> = ({ meta, relPersons = [] }) => {
+  const { t, getHref } = useLang();
   // 匹配作者对应的人物（作者字符串中包含人物名，或人物名包含在作者中）
   const matchedPerson = relPersons.find(p =>
     meta.author.includes(p.name) || p.name.includes(meta.author.replace(/\s*译\s*$/, '').trim())
@@ -343,13 +348,14 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
       icon={<Landmark className="w-5 h-5 text-stone-700 dark:text-stone-300" />}
       title={t('历史背景')}
       colorClass="stone"
+      defaultOpen={true}
     >
       <div className="space-y-3">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div className="p-3 rounded-xl bg-stone-50 dark:bg-slate-800/60 border border-stone-200/50 dark:border-slate-700/60 text-center">
             <p className="text-[11px] text-stone-500 dark:text-stone-400 font-semibold">{t('作者')}</p>
             {matchedPerson ? (
-              <Link prefetch={false} href={`/persons/${matchedPerson.id}`}
+              <Link prefetch={false} href={getHref(`/persons/${matchedPerson.id}`)}
                 className="text-[14px] font-bold text-blue-800 mt-1 hover:text-blue-600 hover:underline transition-colors block"
               >
                 {t(meta.author)}
@@ -365,28 +371,30 @@ export const HistoryCard: React.FC<{ meta: ClassicItem; relPersons?: PersonItem[
           <div className="p-3 rounded-xl bg-stone-50 dark:bg-slate-800/60 border border-stone-200/50 dark:border-slate-700/60 text-center">
             <p className="text-[11px] text-stone-500 dark:text-stone-400 font-semibold">{t('篇幅')}</p>
             <p className="text-[14px] font-bold text-stone-800 mt-1">
-              {history.sizeLabel} · {meta.word_count >= 10000
-                ? `${(meta.word_count / 10000).toFixed(1)}万字`
-                : `${meta.word_count}字`}
+              {t(history.sizeLabel)} · {meta.word_count >= 10000
+                ? `${(meta.word_count / 10000).toFixed(1)}${t('万字')}`
+                : `${meta.word_count}${t('字')}`}
             </p>
           </div>
           <div className="p-3 rounded-xl bg-stone-50 border border-stone-200/50 text-center">
             <p className="text-[11px] text-stone-500 font-semibold">{t('时代')}</p>
-            <p className="text-[14px] font-bold text-stone-800 mt-1">{history.era || t('待考')}</p>
+            <p className="text-[14px] font-bold text-stone-800 mt-1">{history.era ? t(history.era) : t('待考')}</p>
           </div>
         </div>
         {history.eraDesc && (
-          <p className="text-[13px] text-stone-600 leading-relaxed">{history.eraDesc}</p>
+          <p className="text-[13px] text-stone-600 leading-relaxed">{t(history.eraDesc)}</p>
         )}
         {matchedPerson && (
           <div className="p-4 rounded-2xl bg-blue-50/50 border border-blue-200/40">
             <p className="text-[12px] font-bold text-blue-700 mb-1">
               {t('关于')} {t(matchedPerson.name)} · {t(matchedPerson.title)}
             </p>
-            <p className="text-[13px] text-blue-900/80 leading-relaxed line-clamp-3">
-              {matchedPerson.teachings}
-            </p>
-            <Link prefetch={false} href={`/persons/${matchedPerson.id}`}
+            {matchedPerson.teachings && (
+              <p className="text-[13px] text-blue-900/80 leading-relaxed line-clamp-3">
+                {matchedPerson.teachings}
+              </p>
+            )}
+            <Link prefetch={false} href={getHref(`/persons/${matchedPerson.id}`)}
               className="inline-block mt-2 text-[12px] font-semibold text-blue-700 hover:text-blue-500 hover:underline"
             >
               {t('查看完整生平 →')}
@@ -656,15 +664,21 @@ export const AudioCard: React.FC<{ rawContent: string }> = ({ rawContent }) => {
 };
 
 /* ===================== 7. 相关经典卡 ===================== */
-export const RelatedBooksCard: React.FC<{ manifest: ClassicItem[]; currentId: string }> = ({ manifest, currentId }) => {
-  const { t } = useLang();
-  const current = manifest.find(m => m.id === currentId);
-  if (!current) return null;
-  // 同分类优先，再同作者
-  const sameCategory = manifest.filter(m => m.id !== currentId && m.category === current.category);
-  const sameAuthor = manifest.filter(m => m.id !== currentId && m.author === current.author && m.category !== current.category);
-  const related = [...sameCategory, ...sameAuthor].slice(0, 6);
-  if (related.length === 0) return null;
+export const RelatedBooksCard: React.FC<{
+  manifest?: Array<Pick<ClassicItem, 'id' | 'title' | 'author' | 'category' | 'word_count'>>;
+  relatedBooks?: Array<Pick<ClassicItem, 'id' | 'title' | 'author' | 'category' | 'word_count'>>;
+  currentId: string;
+}> = ({ manifest = [], relatedBooks, currentId }) => {
+  const { t, getHref } = useLang();
+  let related = relatedBooks;
+  if (!related) {
+    const current = manifest.find(m => m.id === currentId);
+    if (!current) return null;
+    const sameCategory = manifest.filter(m => m.id !== currentId && m.category === current.category);
+    const sameAuthor = manifest.filter(m => m.id !== currentId && m.author === current.author && m.category !== current.category);
+    related = [...sameCategory, ...sameAuthor].slice(0, 6);
+  }
+  if (!related || related.length === 0) return null;
   return (
     <CollapsibleCard
       icon={<BookOpen className="w-5 h-5 text-orange-700" />}
@@ -672,11 +686,12 @@ export const RelatedBooksCard: React.FC<{ manifest: ClassicItem[]; currentId: st
       count={related.length}
       countLabel={t('部')}
       colorClass="orange"
+      defaultOpen={true}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {related.map(book => (
           <Link prefetch={false} key={book.id}
-            href={`/classics/${book.id}`}
+            href={getHref(`/classics/${book.id}`)}
             className="p-4 rounded-2xl bg-orange-50/60 border border-orange-200/50 hover:border-orange-400 hover:shadow-md transition-all group"
           >
             <p className="text-[15px] font-bold font-serif-zen text-orange-900 group-hover:text-orange-700">
@@ -685,8 +700,8 @@ export const RelatedBooksCard: React.FC<{ manifest: ClassicItem[]; currentId: st
             <p className="mt-1 text-[12px] text-orange-600">{t(book.author)}</p>
             <p className="mt-0.5 text-[11px] text-zinc-400">
               {book.word_count >= 10000
-                ? `${(book.word_count / 10000).toFixed(1)}万字`
-                : `${book.word_count}字`}
+                ? `${(book.word_count / 10000).toFixed(1)}${t('万字')}`
+                : `${book.word_count}${t('字')}`}
             </p>
           </Link>
         ))}

@@ -84,7 +84,7 @@ export default function BooksClient() {
         <TopHeader />
 
         <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 md:px-6 md:py-10">
-          <Breadcrumb items={[{ label: '禅宗典籍藏经阁' }]} />
+          <Breadcrumb items={[{ label: t('禅宗典籍藏经阁') }]} />
 
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
@@ -94,10 +94,10 @@ export default function BooksClient() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold font-serif-zen text-slate-900 leading-tight">
-                  禅宗典籍藏经阁
+                  {t('禅宗典籍藏经阁')}
                 </h1>
                 <p className="text-[13px] text-slate-500 mt-0.5">
-                  共 {manifest.length} 部经典 · 含原文、白话翻译与生僻字注音
+                  {t(`共 ${manifest.length} 部经典 · 含原文、白话翻译与生僻字注音`)}
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function BooksClient() {
               >
                 <span className="flex items-center gap-2">
                   <ArrowRight className="w-4 h-4 shrink-0" />
-                  直达典籍
+                  {t('直达典籍')}
                 </span>
                 <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${bookDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -157,14 +157,14 @@ export default function BooksClient() {
                     >
                       <span className="flex items-center justify-between gap-2">
                         <span className="font-semibold text-slate-700 group-hover/item:text-amber-800 truncate">
-                          {item.title}
+                          {t(item.title)}
                         </span>
                         <span className="text-[11px] text-slate-400 font-mono shrink-0">
                           #{item.idx}
                         </span>
                       </span>
                       <span className="block text-[11px] text-slate-400 mt-0.5 truncate">
-                        {item.author} · {item.category}
+                        {t(item.author)} · {t(item.category)}
                       </span>
                     </button>
                   ))}
@@ -178,7 +178,7 @@ export default function BooksClient() {
                 type="text"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                placeholder="搜索书名、作者或关键词…"
+                placeholder={t('搜索书名、作者或关键词…')}
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-amber-600/60 focus:ring-2 focus:ring-amber-600/10 transition-all"
               />
             </div>
@@ -195,7 +195,7 @@ export default function BooksClient() {
               >
                 <span className="flex items-center gap-2">
                   <BookOpen className="w-4 h-4 shrink-0" />
-                  {activeCategory === '全部' ? '全部分类' : activeCategory}
+                  {activeCategory === '全部' ? t('全部分类') : t(activeCategory)}
                 </span>
                 <ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${catDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -212,7 +212,7 @@ export default function BooksClient() {
                           : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
-                      {cat}
+                      {t(cat)}
                     </button>
                   ))}
                 </div>

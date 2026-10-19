@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: '修持法门 | 禅宗知识库 ChanZong.space',
     description: `禅宗${STATS.methods}种修持法门——禅门实修方便与用功方法详解。`,
     url: 'https://chanzong.space/methods',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

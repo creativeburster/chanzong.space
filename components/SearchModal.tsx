@@ -16,6 +16,7 @@ import {
   SlidersHorizontal,
 } from 'lucide-react';
 import { ClassicItem } from '@/lib/data';
+import defaultManifest from '@/manifest.json';
 import type {
   PersonItem,
   ConceptItem,
@@ -29,7 +30,7 @@ import { useLang } from '@/context/LangContext';
 interface SearchModalProps {
   isOpen: boolean;
   onClose: () => void;
-  items: ClassicItem[];
+  items?: ClassicItem[];
 }
 
 type SearchCategory = 'all' | 'book' | 'person' | 'concept' | 'method' | 'koan' | 'faq';
@@ -94,7 +95,7 @@ const HighlightText: React.FC<{ text: string; query: string }> = ({ text, query 
 export const SearchModal: React.FC<SearchModalProps> = ({
   isOpen,
   onClose,
-  items,
+  items = defaultManifest as ClassicItem[],
 }) => {
   const [query, setQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<SearchCategory>('all');

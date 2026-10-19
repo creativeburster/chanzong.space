@@ -36,6 +36,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/persons/${params.id}`,
       siteName: '禅宗知识库',
       locale: 'zh_CN',
+      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
     },
   };
 }
@@ -92,37 +93,56 @@ export default function PersonDetailPagePage({ params }: PageProps) {
     notFound();
   }
 
-  // 1. 祖师机锋公案
+  // 1. 祖师机锋公案（轻量 DTO）
   const pName = item.name;
   const personKoans = ZEN_KOANS.filter((q: any) => {
     if (q.relatedPersons && q.relatedPersons.includes(item.id)) return true;
     if (q.master && (q.master === pName || q.master.includes(pName) || pName.includes(q.master))) return true;
     return false;
-  });
+  }).slice(0, 12).map((q: any) => ({
+    id: q.id,
+    question: q.question,
+    answer: (q.answer || '').slice(0, 80),
+  }));
 
-  // 2. 传授法门
+  // 2. 传授法门（轻量 DTO）
   const fromPersonMethods = (item.relatedMethods || []).map((mid: string) => ZEN_METHODS.find((m: any) => m.id === mid)).filter(Boolean);
   const fromMethods = ZEN_METHODS.filter((m: any) => m.relatedPersons && m.relatedPersons.includes(item.id));
   const methodMap = new Map<string, any>();
   [...fromPersonMethods, ...fromMethods].forEach((m: any) => methodMap.set(m.id, m));
-  const personMethods = Array.from(methodMap.values());
+  const personMethods = Array.from(methodMap.values()).map((m: any) => ({
+    id: m.id,
+    title: m.title,
+    summary: (m.summary || '').slice(0, 60),
+  }));
 
-  // 3. 阐发核心概念
+  // 3. 阐发核心概念（轻量 DTO）
   const fromPersonConcepts = (item.relatedConcepts || []).map((cid: string) => ZEN_CONCEPTS.find((c: any) => c.id === cid)).filter(Boolean);
   const fromConcepts = ZEN_CONCEPTS.filter((c: any) => c.relatedPersons && c.relatedPersons.includes(item.id));
   const conceptMap = new Map<string, any>();
   [...fromPersonConcepts, ...fromConcepts].forEach((c: any) => conceptMap.set(c.id, c));
-  const personConcepts = Array.from(conceptMap.values());
+  const personConcepts = Array.from(conceptMap.values()).slice(0, 12).map((c: any) => ({
+    id: c.id,
+    title: c.title,
+    summary: (c.summary || '').slice(0, 60),
+  }));
 
-  // 4. 师承祖师
+  // 4. 师承祖师（轻量 DTO）
   const relatedPersonsData = (item.relatedPersons || [])
-    .map((rid: string) => ZEN_PERSONS.find((p: any) => p.id === rid))
+    .map((rid: string) => {
+      const p = ZEN_PERSONS.find((x: any) => x.id === rid);
+      return p ? { id: p.id, name: p.name, era: p.era } : null;
+    })
     .filter(Boolean);
 
-  // 5. 相关问答
+  // 5. 相关问答（轻量 DTO，截断前 12 条防止大部头经典关联问答撑爆 RSC 载荷）
   const relatedFaqsData = ZEN_FAQS.filter((f: any) =>
     f.relatedBooks && item.relatedBooks && item.relatedBooks.some((b: string) => f.relatedBooks!.includes(b))
-  );
+  ).slice(0, 12).map((f: any) => ({
+    id: f.id,
+    question: f.question,
+    answer: (f.answer || '').slice(0, 60),
+  }));
 
   // 6. 上下篇
   const idx = ZEN_PERSONS.findIndex((p: any) => p.id === item.id);

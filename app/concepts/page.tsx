@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: '核心概念 | 禅宗知识库 ChanZong.space',
     description: `禅宗${STATS.concepts}个核心概念详解，涵盖心性、境界、修证、教理四大类。`,
     url: 'https://chanzong.space/concepts',
+    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 
