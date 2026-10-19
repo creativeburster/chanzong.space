@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { RotateCcw, Volume2, VolumeX, Sparkles, Flame, CheckCircle } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
+import { markPracticeToday } from '@/lib/practiceLog';
 
 export const DigitalMalaBeads: React.FC = () => {
   const { t } = useLang();
@@ -12,7 +13,6 @@ export const DigitalMalaBeads: React.FC = () => {
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
   const [wish, setWish] = useState<string>('阿弥陀佛');
   const [offset, setOffset] = useState<number>(0);
-  const [isPulling, setIsPulling] = useState<boolean>(false);
   const startYRef = useRef<number>(0);
 
   const wishes = ['阿弥陀佛', '嗡嘛呢叭咪吽', '照见五蕴皆空', '南无本师释迦牟尼佛', '自性清净'];
@@ -29,6 +29,7 @@ export const DigitalMalaBeads: React.FC = () => {
   }, []);
 
   const handleBeadPass = useCallback(() => {
+    markPracticeToday();
     if (soundEnabled) {
       zenAudio.playBeadClick(0.7);
     }
@@ -42,26 +43,42 @@ export const DigitalMalaBeads: React.FC = () => {
     });
   }, [soundEnabled]);
 
-  const handleTouchStart = (e: React.TouchEvent | React.MouseEvent) => {
-    const y = 'touches' in e ? e.touches[0].clientY : e.clientY;
-    startYRef.current = y;
-    setIsPulling(true);
+  // 统一用 Pointer 事件：触屏与鼠标一次处理，避免“触摸后又合成鼠标事件”导致一次拨动被计两次
+  const pullingRef = useRef(false);
+  const movedRef = useRef(false);
+  const offsetRef = useRef(0);
+
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // 个别浏览器 / 合成事件下 pointerId 无效，忽略即可
+    }
+    startYRef.current = e.clientY;
+    pullingRef.current = true;
+    movedRef.current = false;
+    offsetRef.current = 0;
   };
 
-  const handleTouchMove = (e: React.TouchEvent | React.MouseEvent) => {
-    if (!isPulling) return;
-    const y = 'touches' in e ? e.touches[0].clientY : e.clientY;
-    const diff = y - startYRef.current;
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!pullingRef.current) return;
+    const diff = e.clientY - startYRef.current;
+    if (Math.abs(diff) > 6) movedRef.current = true;
     if (diff > 0) {
-      setOffset(Math.min(diff, 60));
+      const o = Math.min(diff, 60);
+      offsetRef.current = o;
+      setOffset(o);
     }
   };
 
-  const handleTouchEnd = () => {
-    if (offset > 25) {
+  const finishPull = (commit: boolean) => {
+    if (!pullingRef.current) return;
+    pullingRef.current = false;
+    // 向下拨动超过阈值，或轻点（几乎没有位移）都算拨一珠，与界面提示“向下滑动或点击”一致
+    if (commit && (offsetRef.current > 25 || !movedRef.current)) {
       handleBeadPass();
     }
-    setIsPulling(false);
+    offsetRef.current = 0;
     setOffset(0);
   };
 
@@ -132,13 +149,11 @@ export const DigitalMalaBeads: React.FC = () => {
 
       {/* 念珠拨动操作区 */}
       <div
-        onMouseDown={handleTouchStart}
-        onMouseMove={handleTouchMove}
-        onMouseUp={handleTouchEnd}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        className="relative h-64 bg-radial from-amber-100/40 to-transparent rounded-3xl border border-amber-200/60 flex items-center justify-center cursor-grab active:cursor-grabbing overflow-hidden group shadow-inner"
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={() => finishPull(true)}
+        onPointerCancel={() => finishPull(false)}
+        className="touch-none relative h-64 bg-radial from-amber-100/40 to-transparent rounded-3xl border border-amber-200/60 flex items-center justify-center cursor-grab active:cursor-grabbing overflow-hidden group shadow-inner"
       >
         {/* 穿线绳 */}
         <div className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-amber-700 via-amber-900 to-amber-700 opacity-60" />

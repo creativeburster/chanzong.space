@@ -93,6 +93,11 @@ const nextConfig = {
         ],
       },
       {
+        // 繁体站响应头显式声明语言（静态 HTML 根标签 lang 由共享根布局决定，响应头与 hreflang / inLanguage 共同提供繁体信号）
+        source: '/zh-tw/:path*',
+        headers: [{ key: 'Content-Language', value: 'zh-Hant' }],
+      },
+      {
         source: '/manifest.json',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=86400' },

@@ -4,13 +4,15 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, Award, CheckCircle, Share2, Sparkles, Image as ImageIcon } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
+import { localDateKey, readStreak } from '@/lib/practiceLog';
 
 export const ZenPracticeLog: React.FC = () => {
   const { t } = useLang();
   const [muyuCount, setMuyuCount] = useState<number>(0);
   const [malaCount, setMalaCount] = useState<number>(0);
   const [meditationMinutes, setMeditationMinutes] = useState<number>(0);
-  const [streakDays, setStreakDays] = useState<number>(1);
+  const [streakDays, setStreakDays] = useState<number>(0);
+  const [today, setToday] = useState<string>('');
   const [copied, setCopied] = useState<boolean>(false);
   const [cardModalOpen, setCardModalOpen] = useState<boolean>(false);
 
@@ -22,20 +24,10 @@ export const ZenPracticeLog: React.FC = () => {
       setMuyuCount(muyu);
       setMalaCount(mala);
       setMeditationMinutes(meditation);
-
-      // 计算连续修行天数
-      const today = new Date().toISOString().split('T')[0];
-      const last = localStorage.getItem('zen_last_practice_date');
-      const savedStreak = parseInt(localStorage.getItem('zen_streak_days') || '1', 10);
-
-      if (last !== today) {
-        localStorage.setItem('zen_last_practice_date', today);
-        localStorage.setItem('zen_streak_days', String(savedStreak + 1));
-        setStreakDays(savedStreak + 1);
-      } else {
-        setStreakDays(savedStreak);
-      }
     } catch {}
+    // 连续天数由各修持工具在“真正修行时”记录；中断超过一天会归零，而不是每次打开页面就 +1
+    setStreakDays(readStreak());
+    setToday(localDateKey());
   }, []);
 
   const handleShare = () => {
@@ -86,10 +78,10 @@ export const ZenPracticeLog: React.FC = () => {
       <div className="p-6 bg-white rounded-2xl border border-amber-200/80 shadow-sm space-y-4 font-serif-zen relative">
         <div className="flex items-center justify-between border-b border-amber-900/10 pb-3">
           <span className="text-sm font-bold text-slate-800">
-            {t('今日禅行纪录')}
+            {t('累计禅行纪录')}
           </span>
           <span className="text-xs text-amber-800 font-mono font-bold">
-            {new Date().toISOString().split('T')[0]}
+            {today}
           </span>
         </div>
 

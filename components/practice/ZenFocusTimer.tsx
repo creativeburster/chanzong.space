@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Play,
   Pause,
@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { zenAudio, SoundscapeType } from '@/lib/audio';
+import { localDateKey, markPracticeToday } from '@/lib/practiceLog';
+import { useAccurateTicker, useWakeLock } from './timerHooks';
 
 // 禅门四大经典坐香时长预设
 interface TimerPreset {
@@ -104,10 +106,22 @@ export const ZenFocusTimer: React.FC = () => {
 
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // 初始化统计
+  // 以“结束时间戳”为准计时：后台标签页、手机息屏恢复后不会漂移
+  const endAtRef = useRef<number>(0);
+  const finishedRef = useRef<boolean>(false);
+  // 本组件自己启动的白噪音（避免误关“古刹天籁”混音器里用户开启的同名音轨）
+  const ownSoundscapeRef = useRef<SoundscapeType | null>(null);
+  // 统计数据的最新值（供完成回调读取，避免闭包过期）
+  const statsRef = useRef({ count: 0, mins: 0 });
+  statsRef.current = { count: todayCompletedCount, mins: todayMinutes };
+
+  // 计时中保持屏幕常亮
+  useWakeLock(isRunning);
+
+  // 初始化统计（按本地时区的“今天”）
   useEffect(() => {
     try {
-      const today = new Date().toISOString().slice(0, 10);
+      const today = localDateKey();
       const savedDate = localStorage.getItem('zen_focus_date');
       if (savedDate === today) {
         setTodayCompletedCount(parseInt(localStorage.getItem('zen_focus_count') || '0', 10));
@@ -130,83 +144,12 @@ export const ZenFocusTimer: React.FC = () => {
     setTotalSeconds(sec);
     setSecondsLeft(sec);
     setIsCompleted(false);
-  };
-
-  // 倒计时主循环
-  useEffect(() => {
-    let timer: any = null;
-    if (isRunning && secondsLeft > 0) {
-      timer = setInterval(() => {
-        setSecondsLeft((prev) => {
-          if (prev <= 1) {
-            handleComplete();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-    return () => {
-      if (timer) clearInterval(timer);
-    };
-  }, [isRunning, secondsLeft]);
-
-  // 白噪音伴音生命周期控制
-  useEffect(() => {
-    if (!isRunning || !soundEnabled || soundscape === 'none') {
-      // 停止所有可能启动的白噪音
-      FOCUS_SOUNDSCAPES.forEach((s) => {
-        if (s.id !== 'none') {
-          zenAudio.setSoundscape(s.id, false);
-        }
-      });
-      return;
-    }
-
-    // 开启选中的白噪音
-    FOCUS_SOUNDSCAPES.forEach((s) => {
-      if (s.id !== 'none') {
-        zenAudio.setSoundscape(s.id, s.id === soundscape, 0.22);
-      }
-    });
-
-    return () => {
-      FOCUS_SOUNDSCAPES.forEach((s) => {
-        if (s.id !== 'none') {
-          zenAudio.setSoundscape(s.id, false);
-        }
-      });
-    };
-  }, [isRunning, soundEnabled, soundscape]);
-
-  // 开始/暂停
-  const toggleStart = () => {
-    if (isCompleted) {
-      // 重新开始
-      resetTimer();
-      return;
-    }
-
-    if (!isRunning) {
-      // 起香开静仪轨：引磬清脆响一声
-      zenAudio.playYinQing(0.85);
-      setIsRunning(true);
-    } else {
-      setIsRunning(false);
-    }
-  };
-
-  // 重置
-  const resetTimer = () => {
-    setIsRunning(false);
-    setIsCompleted(false);
-    const p = PRESETS.find((item) => item.id === selectedPreset);
-    const sec = p ? p.minutes * 60 : totalSeconds;
-    setSecondsLeft(sec);
+    endAtRef.current = 0;
+    finishedRef.current = false;
   };
 
   // 专注完成
-  const handleComplete = () => {
+  const handleComplete = useCallback(() => {
     setIsRunning(false);
     setIsCompleted(true);
 
@@ -222,34 +165,109 @@ export const ZenFocusTimer: React.FC = () => {
 
     // 记录统计
     const minsGained = Math.round(totalSeconds / 60);
-    const newCount = todayCompletedCount + 1;
-    const newMins = todayMinutes + minsGained;
+    const newCount = statsRef.current.count + 1;
+    const newMins = statsRef.current.mins + minsGained;
     setTodayCompletedCount(newCount);
     setTodayMinutes(newMins);
 
     try {
+      localStorage.setItem('zen_focus_date', localDateKey());
       localStorage.setItem('zen_focus_count', String(newCount));
       localStorage.setItem('zen_focus_mins', String(newMins));
     } catch {
       // ignore
     }
+    markPracticeToday();
+  }, [totalSeconds]);
+
+  // 心跳：根据结束时间戳重新计算剩余秒数
+  const tick = useCallback(() => {
+    if (!endAtRef.current || finishedRef.current) return;
+    const remain = Math.max(0, Math.ceil((endAtRef.current - Date.now()) / 1000));
+    setSecondsLeft(remain);
+    if (remain === 0) {
+      finishedRef.current = true;
+      handleComplete();
+    }
+  }, [handleComplete]);
+
+  useAccurateTicker(isRunning, tick, 250);
+
+  // 白噪音伴音生命周期控制：只管理自己启动的那一路
+  useEffect(() => {
+    const stopOwn = () => {
+      if (ownSoundscapeRef.current) {
+        zenAudio.setSoundscape(ownSoundscapeRef.current, false);
+        ownSoundscapeRef.current = null;
+      }
+    };
+
+    if (!isRunning || !soundEnabled || soundscape === 'none') {
+      stopOwn();
+      return;
+    }
+
+    // 若用户已在混音器里开了同一路，就不接管，也不会在暂停时把它关掉
+    if (!zenAudio.isSoundscapeActive(soundscape)) {
+      zenAudio.setSoundscape(soundscape, true, 0.22);
+      ownSoundscapeRef.current = soundscape;
+    }
+    return stopOwn;
+  }, [isRunning, soundEnabled, soundscape]);
+
+  // 开始/暂停
+  const toggleStart = () => {
+    if (isCompleted) {
+      // 重新开始
+      resetTimer();
+      return;
+    }
+
+    if (!isRunning) {
+      // 起香开静仪轨：引磬清脆响一声
+      zenAudio.playYinQing(0.85);
+      finishedRef.current = false;
+      endAtRef.current = Date.now() + secondsLeft * 1000;
+      setIsRunning(true);
+    } else {
+      // 暂停：按当前时间结算剩余秒数
+      if (endAtRef.current) {
+        setSecondsLeft(Math.max(0, Math.ceil((endAtRef.current - Date.now()) / 1000)));
+      }
+      setIsRunning(false);
+    }
   };
 
-  // 全屏切换
+  // 重置
+  const resetTimer = () => {
+    setIsRunning(false);
+    setIsCompleted(false);
+    const p = PRESETS.find((item) => item.id === selectedPreset);
+    const sec = p ? p.minutes * 60 : totalSeconds;
+    setSecondsLeft(sec);
+    endAtRef.current = 0;
+    finishedRef.current = false;
+  };
+
+  // 全屏切换（并同步用户按 Esc 退出的情况；iOS 等不支持 Fullscreen API 的浏览器退化为铺满页面）
   const toggleFullscreen = () => {
     if (!containerRef.current) return;
     if (!isFullscreen) {
-      if (containerRef.current.requestFullscreen) {
-        containerRef.current.requestFullscreen();
-      }
+      containerRef.current.requestFullscreen?.().catch(() => {});
       setIsFullscreen(true);
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
       setIsFullscreen(false);
     }
   };
+
+  useEffect(() => {
+    const onChange = () => {
+      if (!document.fullscreenElement) setIsFullscreen(false);
+    };
+    document.addEventListener('fullscreenchange', onChange);
+    return () => document.removeEventListener('fullscreenchange', onChange);
+  }, []);
 
   // 计算百分比
   const progressPercent = totalSeconds > 0 ? (secondsLeft / totalSeconds) * 100 : 0;

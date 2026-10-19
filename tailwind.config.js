@@ -8,6 +8,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // 站内多处已使用但从未定义的工具类（animate-fade-in / animate-in / animate-fade-up / scale-98 / scale-175 / bg-radial）
+      scale: {
+        98: '0.98',
+        175: '1.75',
+      },
+      backgroundImage: {
+        radial: 'radial-gradient(circle, var(--tw-gradient-stops))',
+      },
+      keyframes: {
+        'zen-fade-in': { from: { opacity: '0' }, to: { opacity: '1' } },
+        'zen-in': {
+          from: { opacity: '0', transform: 'scale(0.98)' },
+          to: { opacity: '1', transform: 'none' },
+        },
+        'zen-fade-up': {
+          '0%': { opacity: '1', transform: 'translateY(0)' },
+          '100%': { opacity: '0', transform: 'translateY(-44px)' },
+        },
+      },
+      animation: {
+        'fade-in': 'zen-fade-in 0.35s ease-out both',
+        in: 'zen-in 0.3s ease-out both',
+        'fade-up': 'zen-fade-up 1.1s ease-out forwards',
+      },
       colors: {
         zen: {
           bg: '#FAF9F6',

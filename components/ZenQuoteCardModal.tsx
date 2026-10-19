@@ -196,9 +196,15 @@ export default function ZenQuoteCardModal({
     try {
       canvas.toBlob(async (blob) => {
         if (!blob) return;
-        await navigator.clipboard.write([
-          new ClipboardItem({ 'image/png': blob })
-        ]);
+        // 回调是异步执行的，必须在回调内部捕获错误（不支持 ClipboardItem 的浏览器会在这里抛错），
+        // 否则外层 try/catch 接不到，用户点了“复制图片”却毫无反应
+        try {
+          await navigator.clipboard.write([
+            new ClipboardItem({ 'image/png': blob })
+          ]);
+        } catch {
+          await navigator.clipboard.writeText(`「${quote}」\n${interpretation ? `${interpretation}\n` : ''}—— 见《${sourceTitle || '禅宗典籍'}》`);
+        }
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       });

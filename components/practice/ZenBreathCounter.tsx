@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { zenAudio } from '@/lib/audio';
+import { markPracticeToday } from '@/lib/practiceLog';
 
 // 呼吸模式定义
 type BreathPatternId = 'box' | 'calm_478' | 'coherence_55' | 'free';
@@ -206,6 +207,10 @@ export const ZenBreathCounter: React.FC = () => {
   // 键盘空格键数息
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // 在输入框 / 按钮上按空格是正常输入或点击，不能被数息功能劫持（例如在“话头心悟笔记”里打字）
+      const el = e.target as HTMLElement | null;
+      const tag = el?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || tag === 'BUTTON' || el?.isContentEditable) return;
       if (e.code === 'Space' && isActive) {
         e.preventDefault();
         countOneBreath();
@@ -221,6 +226,7 @@ export const ZenBreathCounter: React.FC = () => {
       zenAudio.playBeadClick(0.7);
     }
 
+    markPracticeToday();
     const nextCount = breathCount >= 10 ? 1 : breathCount + 1;
     const nextStreak = streakCount + 1;
 
@@ -278,19 +284,27 @@ export const ZenBreathCounter: React.FC = () => {
   const toggleFullscreen = () => {
     if (!containerRef.current) return;
     if (!isFullscreen) {
-      if (containerRef.current.requestFullscreen) {
-        containerRef.current.requestFullscreen();
-      }
+      containerRef.current.requestFullscreen?.().catch(() => {});
       setIsFullscreen(true);
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
       setIsFullscreen(false);
     }
   };
 
+  // 用户按 Esc 退出浏览器全屏时同步状态（否则界面会卡在“全屏样式”）
+  useEffect(() => {
+    const onChange = () => {
+      if (!document.fullscreenElement) setIsFullscreen(false);
+    };
+    document.addEventListener('fullscreenchange', onChange);
+    return () => document.removeEventListener('fullscreenchange', onChange);
+  }, []);
+
   const currentDetails = getPhaseDetails(phase);
+  // 光环伸缩时长与当前阶段秒数一致（吸 4~5s 缓缓扩大、呼 8s 缓缓收拢），而不是固定 1 秒
+  const phaseLen = phase === 'inhale' ? currentPattern.inhale : phase === 'exhale' ? currentPattern.exhale : 0;
+  const ringDuration = phaseLen > 0 ? `${phaseLen}s` : '0.4s';
 
   return (
     <div
@@ -373,7 +387,8 @@ export const ZenBreathCounter: React.FC = () => {
         <div className="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center">
           {/* 外环呼吸光晕 */}
           <div
-            className={`absolute inset-4 rounded-full border-4 transition-all duration-1000 ease-in-out ${
+            style={{ transitionDuration: ringDuration }}
+            className={`absolute inset-4 rounded-full border-4 transition-all ease-in-out ${
               isActive ? currentDetails.ringColor : 'border-stone-200'
             } ${isActive ? currentDetails.scale : 'scale-100'}`}
           />

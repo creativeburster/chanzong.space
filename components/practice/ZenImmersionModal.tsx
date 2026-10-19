@@ -16,6 +16,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { useAccurateTicker } from './timerHooks';
 
 interface ZenImmersionModalProps {
   isOpen: boolean;
@@ -43,16 +44,18 @@ export const ZenImmersionModal: React.FC<ZenImmersionModalProps> = ({ isOpen, on
   const [breathPhase, setBreathPhase] = useState<'吸气' | '持息' | '呼气'>('吸气');
   const audioCtxRef = useRef<AudioContext | null>(null);
 
-  // 1. 计时器
+  // 1. 计时器：按真实流逝时间累计，切到后台标签页不会少计
+  const lastTickRef = useRef<number>(0);
+  const accMsRef = useRef<number>(0);
   useEffect(() => {
-    let timer: any;
-    if (isOpen && isRunning) {
-      timer = setInterval(() => {
-        setSeconds((s) => s + 1);
-      }, 1000);
-    }
-    return () => clearInterval(timer);
+    lastTickRef.current = Date.now();
   }, [isOpen, isRunning]);
+  useAccurateTicker(isOpen && isRunning, () => {
+    const now = Date.now();
+    accMsRef.current += now - lastTickRef.current;
+    lastTickRef.current = now;
+    setSeconds(Math.floor(accMsRef.current / 1000));
+  }, 500);
 
   // 2. 呼吸节律循环：吸气4s -> 持息4s -> 呼气6s (共14s)
   useEffect(() => {
@@ -154,6 +157,8 @@ export const ZenImmersionModal: React.FC<ZenImmersionModalProps> = ({ isOpen, on
   };
 
   const curTheme = themeMap[theme];
+  // 光环伸缩时长与呼吸阶段一致（吸气 4s / 呼气 6s）
+  const breathMs = breathPhase === '吸气' ? '4s' : breathPhase === '呼气' ? '6s' : '0.3s';
   const formatTime = (sec: number) => {
     const m = Math.floor(sec / 60);
     const s = sec % 60;
@@ -162,6 +167,9 @@ export const ZenImmersionModal: React.FC<ZenImmersionModalProps> = ({ isOpen, on
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="沉浸定境"
       className={`fixed inset-0 z-50 flex flex-col justify-between p-4 sm:p-8 ${curTheme.bg} transition-colors duration-700 animate-fade-in select-none backdrop-blur-xl`}
     >
       {/* 顶部极简控制栏 */}
@@ -232,7 +240,8 @@ export const ZenImmersionModal: React.FC<ZenImmersionModalProps> = ({ isOpen, on
         {/* 动态呼吸光晕环 */}
         <div className="relative flex items-center justify-center">
           <div
-            className={`w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 ${curTheme.circleRing} transition-all duration-1000 flex items-center justify-center ${
+            style={{ transitionDuration: breathMs }}
+            className={`w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 ${curTheme.circleRing} transition-all flex items-center justify-center ${
               breathPhase === '吸气'
                 ? 'scale-110 shadow-2xl shadow-amber-500/20'
                 : breathPhase === '持息'
@@ -282,6 +291,7 @@ export const ZenImmersionModal: React.FC<ZenImmersionModalProps> = ({ isOpen, on
           <button
             onClick={() => {
               setSeconds(0);
+              accMsRef.current = 0;
               playChime();
             }}
             className={`p-2.5 rounded-2xl border ${curTheme.panelBg} ${curTheme.subText} hover:text-amber-700 transition-colors`}

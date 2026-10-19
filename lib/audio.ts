@@ -109,10 +109,32 @@ export type SoundscapeType =
   | 'temple_chant'
   | 'deep_night';
 
+/**
+ * 各白噪音的响度补偿系数。
+ * 窄带滤波（钟、风铃、虫鸣、鸟、梵呗等）经带通后能量只有雨声的 1/5~1/6，
+ * 同样音量滑块下几乎听不见；按 RMS 仿真结果做温和补偿，使各音轨听感量级接近。
+ * 低频类（雷、静夜、潮）本身能量已足，保持 1。
+ */
+const SOUNDSCAPE_MAKEUP: Partial<Record<SoundscapeType, number>> = {
+  stream: 1.4,
+  bell: 3,
+  insects: 2.5,
+  windchime: 3,
+  bamboo: 1.6,
+  birds: 2,
+  tea: 1.5,
+  temple_chant: 2.5,
+};
+
 class ZenAudioEngine {
   private ctx: AudioContext | null = null;
   private continuousSingNodes: { oscs: OscillatorNode[]; gain: GainNode } | null = null;
   private soundscapeNodes: Record<string, { source: AudioNode; gain: GainNode; interval?: any } | null> = {};
+
+  /** 查询某个白噪音当前是否正在播放（用于页面切换回来后恢复 UI 状态、避免多个工具互相误关） */
+  isSoundscapeActive(type: SoundscapeType): boolean {
+    return !!this.soundscapeNodes[type];
+  }
 
   private getContext(): AudioContext | null {
     if (typeof window === 'undefined') return null;
@@ -376,7 +398,7 @@ class ZenAudioEngine {
       }
 
       if (existing) {
-        existing.gain.gain.setValueAtTime(volume, ctx.currentTime);
+        existing.gain.gain.setTargetAtTime(volume * (SOUNDSCAPE_MAKEUP[type] ?? 1), ctx.currentTime, 0.05);
         return;
       }
 
@@ -486,7 +508,7 @@ class ZenAudioEngine {
 
       const gain = ctx.createGain();
       gain.gain.setValueAtTime(0.001, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(volume, ctx.currentTime + 1.0);
+      gain.gain.linearRampToValueAtTime(volume * (SOUNDSCAPE_MAKEUP[type] ?? 1), ctx.currentTime + 1.0);
 
       noise.connect(filter);
       filter.connect(gain);

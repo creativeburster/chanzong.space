@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Wind, Sparkles } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
@@ -28,34 +28,36 @@ export const BreathPacer: React.FC = () => {
     rest: { label: '歇息', tip: '一念不生 · 空灵寂静', color: 'from-blue-400 to-indigo-500' },
   };
 
+  // 用 ref 保存状态机：避免在 setState 更新函数里再 setState / 触发副作用（严格模式下会被重复推进）
+  const machineRef = useRef<{ phase: Phase; count: number }>({ phase: 'inhale', count: 4 });
+
   useEffect(() => {
     if (!isActive) return;
 
     const timer = setInterval(() => {
-      setCount((prev) => {
-        if (prev <= 1) {
-          // 切换下一阶段
-          if (phase === 'inhale') {
-            setPhase('hold');
-            return durations.hold;
-          } else if (phase === 'hold') {
-            setPhase('exhale');
-            return durations.exhale;
-          } else if (phase === 'exhale') {
-            setPhase('rest');
-            return durations.rest;
-          } else {
-            setPhase('inhale');
-            setCycleCount((c) => (c >= 10 ? 1 : c + 1));
-            return durations.inhale;
-          }
+      const m = machineRef.current;
+      if (m.count <= 1) {
+        if (m.phase === 'inhale') {
+          m.phase = 'hold';
+        } else if (m.phase === 'hold') {
+          m.phase = 'exhale';
+        } else if (m.phase === 'exhale') {
+          m.phase = 'rest';
+        } else {
+          m.phase = 'inhale';
+          setCycleCount((c) => (c >= 10 ? 1 : c + 1));
         }
-        return prev - 1;
-      });
+        m.count = durations[m.phase];
+      } else {
+        m.count -= 1;
+      }
+      setPhase(m.phase);
+      setCount(m.count);
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [isActive, phase]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isActive]);
 
   const toggle = () => {
     setIsActive(!isActive);
@@ -66,9 +68,12 @@ export const BreathPacer: React.FC = () => {
     setPhase('inhale');
     setCount(durations.inhale);
     setCycleCount(1);
+    machineRef.current = { phase: 'inhale', count: durations.inhale };
   };
 
   const currentInfo = phaseNames[phase];
+  // 光圈伸缩时长与当前阶段秒数一致（吸气 4s 慢慢变大、呼气 6s 慢慢收拢），而不是固定 1 秒
+  const breathMs = phase === 'inhale' || phase === 'exhale' ? `${durations[phase]}s` : '0.3s';
 
   return (
     <div className="max-w-xl mx-auto bg-gradient-to-b from-stone-50 via-white to-amber-50/40 rounded-3xl p-6 sm:p-8 border border-amber-900/15 shadow-sm text-center select-none">
@@ -105,14 +110,16 @@ export const BreathPacer: React.FC = () => {
       <div className="relative h-64 flex items-center justify-center my-4">
         {/* 外圈水墨光晕 */}
         <div
-          className={`absolute rounded-full transition-all duration-1000 bg-gradient-to-br ${currentInfo.color} opacity-20 blur-xl ${
+          style={{ transitionDuration: breathMs }}
+          className={`absolute rounded-full transition-all ease-in-out bg-gradient-to-br ${currentInfo.color} opacity-20 blur-xl ${
             phase === 'inhale' || phase === 'hold' ? 'w-56 h-56 scale-110' : 'w-28 h-28 scale-90'
           }`}
         />
 
         {/* 核心动态圆盘 */}
         <div
-          className={`relative rounded-full transition-all duration-1000 flex flex-col items-center justify-center shadow-lg bg-gradient-to-br ${currentInfo.color} text-white ${
+          style={{ transitionDuration: breathMs }}
+          className={`relative rounded-full transition-all ease-in-out flex flex-col items-center justify-center shadow-lg bg-gradient-to-br ${currentInfo.color} text-white ${
             phase === 'inhale' || phase === 'hold' ? 'w-48 h-48 scale-105' : 'w-32 h-32 scale-90'
           }`}
         >

@@ -10,6 +10,7 @@ export const ZenSandGarden: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isDrawing, setIsDrawing] = useState<boolean>(false);
   const lastPointRef = useRef<{ x: number; y: number } | null>(null);
+  const lastSoundRef = useRef<number>(0);
 
   // 初始化沙地与禅石
   const initCanvas = () => {
@@ -69,7 +70,12 @@ export const ZenSandGarden: React.FC = () => {
     if (!ctx) return;
 
     if (lastPointRef.current) {
-      zenAudio.playSandRake(0.18);
+      // 节流：鼠标/手指每秒可触发上百次移动事件，耙沙声每 90ms 最多响一次
+      const nowTs = Date.now();
+      if (nowTs - lastSoundRef.current > 90) {
+        zenAudio.playSandRake(0.18);
+        lastSoundRef.current = nowTs;
+      }
       const prev = lastPointRef.current;
 
       // 绘制多股平行梳齿波纹 (模拟五齿木耙)
@@ -96,22 +102,33 @@ export const ZenSandGarden: React.FC = () => {
     lastPointRef.current = { x, y };
   };
 
-  const handleStart = (e: React.MouseEvent | React.TouchEvent) => {
-    setIsDrawing(true);
-    const rect = canvasRef.current?.getBoundingClientRect();
-    if (!rect) return;
+  // 画布内部分辨率固定为 500x320，而显示尺寸会随容器缩放（手机上通常只有 300px 左右），
+  // 必须把指针坐标换算到画布坐标系，否则划痕会偏离手指位置
+  const getPoint = (e: React.MouseEvent | React.TouchEvent) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return null;
+    const rect = canvas.getBoundingClientRect();
+    if (!rect.width || !rect.height) return null;
     const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
-    lastPointRef.current = { x: clientX - rect.left, y: clientY - rect.top };
+    return {
+      x: (clientX - rect.left) * (canvas.width / rect.width),
+      y: (clientY - rect.top) * (canvas.height / rect.height),
+    };
+  };
+
+  const handleStart = (e: React.MouseEvent | React.TouchEvent) => {
+    setIsDrawing(true);
+    const p = getPoint(e);
+    if (!p) return;
+    lastPointRef.current = p;
   };
 
   const handleMove = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDrawing) return;
-    const rect = canvasRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
-    const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
-    drawRakeLines(clientX - rect.left, clientY - rect.top);
+    const p = getPoint(e);
+    if (!p) return;
+    drawRakeLines(p.x, p.y);
   };
 
   const handleEnd = () => {

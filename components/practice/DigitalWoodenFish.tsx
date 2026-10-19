@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Volume2, VolumeX, Play, Pause, RotateCcw, Sparkles } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
+import { markPracticeToday } from '@/lib/practiceLog';
 
 interface FloatingWord {
   id: number;
@@ -43,6 +44,7 @@ export const DigitalWoodenFish: React.FC = () => {
     if (soundEnabled) {
       zenAudio.playWoodenFish(0.85);
     }
+    markPracticeToday();
     setIsStriking(true);
     setTimeout(() => setIsStriking(false), 90);
 
@@ -131,7 +133,7 @@ export const DigitalWoodenFish: React.FC = () => {
           {count.toLocaleString()}
         </span>
         <div className="text-xs text-slate-500 mt-1 font-medium">
-          {t('今日静心敲击次數')}
+          {t('累计静心敲击次数')}
         </div>
       </div>
 
@@ -142,15 +144,18 @@ export const DigitalWoodenFish: React.FC = () => {
           <div
             key={w.id}
             style={{ transform: `translate(${w.x}px, ${w.y}px)` }}
-            className="absolute top-1/3 pointer-events-none font-serif-zen font-extrabold text-amber-800 text-lg sm:text-xl drop-shadow-sm animate-fade-up"
+            className="absolute top-1/3 pointer-events-none"
           >
-            {w.text}
+            <span className="block font-serif-zen font-extrabold text-amber-800 text-lg sm:text-xl drop-shadow-sm animate-fade-up">
+              {w.text}
+            </span>
           </div>
         ))}
 
         {/* 木鱼 SVG 拟物 */}
         <button
           onClick={() => handleStrike()}
+          aria-label={t('敲木鱼')}
           className={`relative p-6 rounded-full outline-none transition-all duration-75 active:scale-90 ${
             isStriking ? 'scale-95' : 'hover:scale-105'
           }`}

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Bell,
   BellOff,
@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 import { zenAudio, SingingBowlType } from '@/lib/audio';
+import { localDateKey } from '@/lib/practiceLog';
+import { useAccurateTicker } from './timerHooks';
 
 type BellSound = 'yinqing' | 'temple_bell' | 'bowl_root' | 'bowl_crystal';
 
@@ -65,10 +67,14 @@ export const ZenMindfulnessBell: React.FC = () => {
   // 今日统计
   const [todayAwakeCount, setTodayAwakeCount] = useState<number>(0);
 
-  // 初始化今日记录
+  // 今日觉醒次数的最新值（供计时回调读取，避免闭包过期）
+  const todayCountRef = useRef<number>(0);
+  todayCountRef.current = todayAwakeCount;
+
+  // 初始化今日记录（按本地时区的“今天”）
   useEffect(() => {
     try {
-      const today = new Date().toISOString().slice(0, 10);
+      const today = localDateKey();
       const savedDate = localStorage.getItem('zen_bell_date');
       if (savedDate === today) {
         setTodayAwakeCount(parseInt(localStorage.getItem('zen_bell_count') || '0', 10));
@@ -94,12 +100,6 @@ export const ZenMindfulnessBell: React.FC = () => {
     }
   };
 
-  // 手动测试鸣钟
-  const strikeBellNow = () => {
-    playSound(selectedSound);
-    triggerPrompt();
-  };
-
   // 触发正念提撕
   const triggerPrompt = () => {
     const v = MINDFULNESS_VERSES[Math.floor(Math.random() * MINDFULNESS_VERSES.length)];
@@ -108,35 +108,53 @@ export const ZenMindfulnessBell: React.FC = () => {
     setIsPausing(true);
     setPauseTimer(30);
 
-    const newCount = todayAwakeCount + 1;
+    const newCount = todayCountRef.current + 1;
+    todayCountRef.current = newCount;
     setTodayAwakeCount(newCount);
     try {
+      localStorage.setItem('zen_bell_date', localDateKey());
       localStorage.setItem('zen_bell_count', String(newCount));
     } catch {
       // ignore
     }
   };
 
-  // 倒计时后台主循环
+  // 手动测试鸣钟
+  const strikeBellNow = () => {
+    playSound(selectedSound);
+    triggerPrompt();
+  };
+
+  // 以“下次鸣钟时间戳”为准：切到其他标签页期间也能按点响钟，不会因后台节流而推迟
+  const nextAtRef = useRef<number>(0);
+
+  // 启用 / 修改间隔时重设下次鸣钟时间
   useEffect(() => {
     if (!isEnabled) {
       setSecondsUntilNext(intervalMinutes * 60);
+      nextAtRef.current = 0;
       return;
     }
+    nextAtRef.current = Date.now() + intervalMinutes * 60 * 1000;
+    setSecondsUntilNext(intervalMinutes * 60);
+  }, [isEnabled, intervalMinutes]);
 
-    const timer = setInterval(() => {
-      setSecondsUntilNext((prev) => {
-        if (prev <= 1) {
-          playSound(selectedSound);
-          triggerPrompt();
-          return intervalMinutes * 60;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+  const bellTick = useCallback(() => {
+    if (!nextAtRef.current) return;
+    const now = Date.now();
+    if (now >= nextAtRef.current) {
+      // 页面长时间被冻结时只响一次，然后从现在起重新计时
+      playSound(selectedSound);
+      triggerPrompt();
+      nextAtRef.current = now + intervalMinutes * 60 * 1000;
+      setSecondsUntilNext(intervalMinutes * 60);
+    } else {
+      setSecondsUntilNext(Math.ceil((nextAtRef.current - now) / 1000));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedSound, intervalMinutes]);
 
-    return () => clearInterval(timer);
-  }, [isEnabled, intervalMinutes, selectedSound]);
+  useAccurateTicker(isEnabled, bellTick, 500);
 
   // 30秒正念微暂停倒数
   useEffect(() => {
@@ -312,7 +330,7 @@ export const ZenMindfulnessBell: React.FC = () => {
           <strong className="text-amber-900 font-mono text-sm">{todayAwakeCount}</strong> {t('次')}
         </div>
         <div className="text-[11px] text-stone-400">
-          {t('建议在长时间看屏工作时常驻开启')}
+          {t('需保持本页打开（可切到其他标签页；手机锁屏后浏览器会暂停）')}
         </div>
       </div>
     </div>

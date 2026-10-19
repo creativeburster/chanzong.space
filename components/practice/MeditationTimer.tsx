@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { Play, Pause, RotateCcw, Bell, Maximize2, Minimize2, Sparkles, BookOpen, Volume2, VolumeX, CheckCircle, Image as ImageIcon } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
+import { markPracticeToday } from '@/lib/practiceLog';
+import { useAccurateTicker, useWakeLock } from './timerHooks';
 
 export const MeditationTimer: React.FC = () => {
   const { t } = useLang();
@@ -26,8 +28,13 @@ export const MeditationTimer: React.FC = () => {
   const [isCompleted, setIsCompleted] = useState<boolean>(false);
   const [cardModalOpen, setCardModalOpen] = useState<boolean>(false);
 
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const elapsedRef = useRef<number>(0);
+  // 以“结束时间戳”为准计时：后台标签页、手机息屏恢复后不会漂移
+  const endAtRef = useRef<number>(0);
+  const lastChimeSlotRef = useRef<number>(0);
+  const finishedRef = useRef<boolean>(false);
+
+  // 计时中保持屏幕常亮（手机端息屏会中断计时与钟声）
+  useWakeLock(isRunning);
 
   // 切换预设时长
   const selectPreset = (mins: number) => {
@@ -35,67 +42,84 @@ export const MeditationTimer: React.FC = () => {
     setIsCompleted(false);
     setPresetMinutes(mins);
     setTimeLeft(mins * 60);
-    elapsedRef.current = 0;
+    endAtRef.current = 0;
+    lastChimeSlotRef.current = 0;
+    finishedRef.current = false;
   };
 
-  // 倒计时逻辑
-  useEffect(() => {
-    if (isRunning) {
-      timerRef.current = setInterval(() => {
-        elapsedRef.current += 1;
+  // 坐禅圆满
+  const finish = useCallback(() => {
+    setIsRunning(false);
+    setIsCompleted(true);
+    // 坐禅圆满：古刹沉雄大钟 7.5 秒余震
+    zenAudio.playTempleBell(0.9);
+    setTimeout(() => zenAudio.playYinQing(0.7), 2500);
 
-        // 每5分钟木鱼轻点一声防昏沉
-        if (enableAwakeningChime && elapsedRef.current > 0 && elapsedRef.current % 300 === 0) {
-          zenAudio.playWoodenFish(0.65);
-        }
+    // 记录坐禅分钟数到本地修持印谱
+    try {
+      const currentMins = parseInt(localStorage.getItem('zen_meditation_minutes') || '0', 10);
+      localStorage.setItem('zen_meditation_minutes', String(currentMins + presetMinutes));
+    } catch {}
+    markPracticeToday();
+  }, [presetMinutes]);
 
-        setTimeLeft((prev) => {
-          if (prev <= 1) {
-            setIsRunning(false);
-            setIsCompleted(true);
-            // 坐禅圆满：古刹沉雄大钟 7.5 秒余震
-            zenAudio.playTempleBell(0.9);
-            setTimeout(() => zenAudio.playYinQing(0.7), 2500);
+  // 心跳：根据结束时间戳重新计算剩余秒数
+  const tick = useCallback(() => {
+    if (!endAtRef.current || finishedRef.current) return;
+    const remain = Math.max(0, Math.ceil((endAtRef.current - Date.now()) / 1000));
+    const elapsed = presetMinutes * 60 - remain;
 
-            // 记录坐禅分钟数到本地修持印谱
-            try {
-              const currentMins = parseInt(localStorage.getItem('zen_meditation_minutes') || '0', 10);
-              localStorage.setItem('zen_meditation_minutes', String(currentMins + presetMinutes));
-            } catch {}
-
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    } else if (timerRef.current) {
-      clearInterval(timerRef.current);
-      timerRef.current = null;
+    // 每5分钟木鱼轻点一声防昏沉（后台补算时只响一声）
+    if (enableAwakeningChime && remain > 0) {
+      const slot = Math.floor(elapsed / 300);
+      if (slot > lastChimeSlotRef.current) {
+        lastChimeSlotRef.current = slot;
+        zenAudio.playWoodenFish(0.65);
+      }
     }
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isRunning, presetMinutes, enableAwakeningChime]);
+
+    setTimeLeft(remain);
+    if (remain === 0) {
+      finishedRef.current = true;
+      finish();
+    }
+  }, [presetMinutes, enableAwakeningChime, finish]);
+
+  useAccurateTicker(isRunning, tick, 250);
 
   const toggleTimer = () => {
-    if (!isRunning && (timeLeft === 0 || isCompleted)) {
-      setTimeLeft(presetMinutes * 60);
+    if (isRunning) {
+      // 暂停：先按当前时间结算剩余秒数，恢复时据此重设结束时间
+      if (endAtRef.current) {
+        setTimeLeft(Math.max(0, Math.ceil((endAtRef.current - Date.now()) / 1000)));
+      }
+      setIsRunning(false);
+      return;
+    }
+
+    let startLeft = timeLeft;
+    if (timeLeft === 0 || isCompleted) {
+      startLeft = presetMinutes * 60;
+      setTimeLeft(startLeft);
       setIsCompleted(false);
-      elapsedRef.current = 0;
     }
-    if (!isRunning) {
-      // 起板入定：清越引磬连叩三通
-      zenAudio.playYinQing(0.85);
-      setTimeout(() => zenAudio.playYinQing(0.65), 1200);
-    }
-    setIsRunning(!isRunning);
+    finishedRef.current = false;
+    endAtRef.current = Date.now() + startLeft * 1000;
+    lastChimeSlotRef.current = Math.floor((presetMinutes * 60 - startLeft) / 300);
+
+    // 起板入定：清越引磬连叩三通
+    zenAudio.playYinQing(0.85);
+    setTimeout(() => zenAudio.playYinQing(0.65), 1200);
+    setIsRunning(true);
   };
 
   const resetTimer = () => {
     setIsRunning(false);
     setIsCompleted(false);
     setTimeLeft(presetMinutes * 60);
-    elapsedRef.current = 0;
+    endAtRef.current = 0;
+    lastChimeSlotRef.current = 0;
+    finishedRef.current = false;
   };
 
   // 格式化时间

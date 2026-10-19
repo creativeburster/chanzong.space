@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { PenTool, CheckCircle, RefreshCw, Sparkles, Share2 } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
+import { markPracticeToday } from '@/lib/practiceLog';
 
 const SUTRA_PASSAGES = [
   {
@@ -28,6 +29,9 @@ const SUTRA_PASSAGES = [
   },
 ];
 
+// 标签简称（原先截取标题前 4 个字，“般若波罗蜜多心经”会变成“般若波罗”）
+const SHORT_TITLES = ['心经', '信心铭', '二入四行', '无相颂'];
+
 export const SutraCopying: React.FC = () => {
   const { t } = useLang();
   const [selectedIdx, setSelectedIdx] = useState<number>(0);
@@ -44,6 +48,7 @@ export const SutraCopying: React.FC = () => {
     setCharIndex(next);
     if (next >= fullText.length) {
       setIsCompleted(true);
+      markPracticeToday();
       setTimeout(() => zenAudio.playSingingBowl(0.8), 300);
     }
   };
@@ -83,7 +88,7 @@ export const SutraCopying: React.FC = () => {
                   : 'bg-white border border-amber-200 text-slate-700 hover:bg-amber-50'
               }`}
             >
-              {t(s.title.slice(0, 4))}
+              {t(SHORT_TITLES[idx] || s.title)}
             </button>
           ))}
         </div>

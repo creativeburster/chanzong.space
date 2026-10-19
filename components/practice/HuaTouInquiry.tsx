@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, Eye, Compass, HelpCircle, ArrowRight, Image as ImageIcon, Save, Check } from 'lucide-react';
 import { zenAudio } from '@/lib/audio';
 import { useLang } from '@/context/LangContext';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
+import { markPracticeToday } from '@/lib/practiceLog';
+import { useAccurateTicker } from './timerHooks';
 
 const HUATOU_LIST = [
   {
@@ -29,6 +31,9 @@ const HUATOU_LIST = [
   },
 ];
 
+// 话头切换标签的简称（原先直接截取前 5 个字，会出现“万法归一，...”这类断句）
+const SHORT_LABELS = ['念佛是谁', '本来面目', '万法归一', '狗子佛性'];
+
 export const HuaTouInquiry: React.FC = () => {
   const { t } = useLang();
   const [selectedIdx, setSelectedIdx] = useState<number>(0);
@@ -50,16 +55,15 @@ export const HuaTouInquiry: React.FC = () => {
     } catch {}
   }, [selectedIdx]);
 
-  useEffect(() => {
-    let timer: any = null;
-    if (isTiming) {
-      timer = setInterval(() => setTimerSeconds((s) => s + 1), 1000);
-    }
-    return () => clearInterval(timer);
-  }, [isTiming]);
+  // 以起始时间戳计算“定力”时长，切到其他标签页再回来也不会少计
+  const startedAtRef = useRef<number>(Date.now());
+  useAccurateTicker(isTiming, () => {
+    setTimerSeconds(Math.floor((Date.now() - startedAtRef.current) / 1000));
+  }, 500);
 
   const handleInquire = () => {
     zenAudio.playSingingBowlDeep(0.7);
+    markPracticeToday();
     setIsPulsing(true);
     setInquiryCount((c) => c + 1);
     setTimeout(() => setIsPulsing(false), 300);
@@ -69,6 +73,7 @@ export const HuaTouInquiry: React.FC = () => {
     setSelectedIdx(idx);
     setInquiryCount(0);
     setTimerSeconds(0);
+    startedAtRef.current = Date.now();
     setIsSaved(false);
   };
 
@@ -130,7 +135,7 @@ export const HuaTouInquiry: React.FC = () => {
                 : 'bg-slate-900 text-slate-400 border border-slate-800 hover:bg-slate-800'
             }`}
           >
-            {t(h.topic.slice(0, 5))}...
+            {t(SHORT_LABELS[idx] || h.topic)}
           </button>
         ))}
       </div>
@@ -138,6 +143,15 @@ export const HuaTouInquiry: React.FC = () => {
       {/* 话头提撕主体 */}
       <div
         onClick={handleInquire}
+        role="button"
+        tabIndex={0}
+        aria-label={t('点击提撕疑情')}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleInquire();
+          }
+        }}
         className="cursor-pointer py-10 my-4 text-center relative group rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-amber-500/50 transition-all"
       >
         {/* 疑情震荡波纹 */}

@@ -80,7 +80,7 @@ export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false
           {t(koan.question)}
         </h3>
         <p className="mt-2 text-xs text-slate-600 line-clamp-2 leading-relaxed">
-          {t(koan.context || koan.interpretation || '')}
+          {t(koan.context || koan.interpretation || koan.answer || '')}
         </p>
 
         <div className="mt-3.5 pt-3 border-t border-amber-900/10 flex items-center justify-between text-xs">
@@ -179,7 +179,7 @@ export const DailyKoanCard: React.FC<{ compact?: boolean }> = ({ compact = false
 
               <div className="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/60 text-xs sm:text-sm text-slate-800 leading-relaxed font-serif-zen">
                 <span className="font-bold text-emerald-900 mr-1.5">{t('【参修要旨】')}</span>
-                {t(koan.interpretation || '')}
+                {t(koan.interpretation || koan.answer || '')}
               </div>
 
               <div className="flex items-center justify-between pt-2">

@@ -78,7 +78,14 @@ const MASTER_PRESETS: MasterPreset[] = [
 
 export const ZenSoundscapes: React.FC = () => {
   const { t } = useLang();
-  const [activeStates, setActiveStates] = useState<Record<string, boolean>>({});
+  // 声音引擎是全局单例：切换页面再回来时，从引擎读取真实播放状态，避免“界面显示关闭但声音仍在响”
+  const [activeStates, setActiveStates] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {};
+    SOUND_TRACKS.forEach((track) => {
+      if (zenAudio.isSoundscapeActive(track.id)) initial[track.id] = true;
+    });
+    return initial;
+  });
   const [volumes, setVolumes] = useState<Record<string, number>>({
     rain: 0.35,
     stream: 0.3,
