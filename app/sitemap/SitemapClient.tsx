@@ -12,7 +12,7 @@ const SearchModal = dynamic(
 import { SiteFooter } from '@/components/SiteFooter';
 import manifest from '@/manifest.json';
 import { STATS } from '@/lib/stats';
-import { BookOpen, Gem, Compass, MessageSquare, Users, Lightbulb, ChevronDown, ChevronRight, FileText } from 'lucide-react';
+import { BookOpen, Gem, Compass, MessageSquare, Users, Lightbulb, ChevronDown, ChevronRight, FileText, Layers, FolderKanban } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
 export interface SitemapItem {
@@ -23,6 +23,8 @@ export interface SitemapItem {
 }
 
 interface SitemapClientProps {
+  categories?: SitemapItem[];
+  collections?: SitemapItem[];
   concepts?: SitemapItem[];
   methods?: SitemapItem[];
   koans?: SitemapItem[];
@@ -31,6 +33,8 @@ interface SitemapClientProps {
 }
 
 export default function SitemapClient({
+  categories = [],
+  collections = [],
   concepts = [],
   methods = [],
   koans = [],
@@ -57,6 +61,28 @@ export default function SitemapClient({
         href: `/classics/${m.id}`,
       })),
     },
+    ...(categories.length > 0 ? [{
+      key: 'categories',
+      title: '十一大部类',
+      icon: FolderKanban,
+      color: 'text-indigo-700',
+      bg: 'bg-indigo-50',
+      border: 'border-indigo-200',
+      count: categories.length,
+      href: '/categories',
+      items: categories,
+    }] : []),
+    ...(collections.length > 0 ? [{
+      key: 'collections',
+      title: '专题合集',
+      icon: Layers,
+      color: 'text-teal-700',
+      bg: 'bg-teal-50',
+      border: 'border-teal-200',
+      count: collections.length,
+      href: '/collections',
+      items: collections,
+    }] : []),
     {
       key: 'concepts',
       title: '核心概念',
@@ -131,11 +157,10 @@ export default function SitemapClient({
               {t('禅宗知识库 · 全部页面索引')}
             </h1>
             <p className="text-sm text-slate-500">
-              {t('共')} {STATS.classics + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} {t('个知识条目，点击各组标题展开/收起')}
+              {t('共')} {STATS.classics + categories.length + collections.length + STATS.concepts + STATS.methods + STATS.koans + STATS.persons + STATS.faqs} {t('个知识条目，点击各组标题展开/收起')}
             </p>
           </div>
 
-          {/* 静态页面 */}
           <div className="mb-6">
             <div className="flex items-center space-x-2 text-[15px] font-semibold text-slate-800 mb-3">
               <ChevronRight className="w-4 h-4 text-slate-500" />
@@ -145,7 +170,7 @@ export default function SitemapClient({
               {[
                 { title: '首页', href: '/' },
                 { title: '书籍总览', href: '/books' },
-                { title: '六大部类', href: '/categories' },
+                { title: '十一大部类', href: '/categories' },
                 { title: '专题合集', href: '/collections' },
                 { title: '核心概念', href: '/concepts' },
                 { title: '修持法门', href: '/methods' },
@@ -167,7 +192,6 @@ export default function SitemapClient({
             </div>
           </div>
 
-          {/* 分组展开列表 - 使用原生 details/summary 确保静态 HTML 中 100% 存在所有内链 */}
           <div className="space-y-4">
             {groups.map((group) => {
               const Icon = group.icon;
@@ -177,7 +201,6 @@ export default function SitemapClient({
                   open
                   className={`rounded-2xl border ${group.border} bg-white overflow-hidden shadow-xs group`}
                 >
-                  {/* 组标题 summary */}
                   <summary
                     className={`w-full list-none cursor-pointer flex items-center justify-between px-5 py-4 ${group.bg} hover:brightness-95 transition-all select-none`}
                   >
@@ -203,7 +226,6 @@ export default function SitemapClient({
                     </div>
                   </summary>
 
-                  {/* 实体全量内链网格 - 100% 存在于静态 HTML，爬虫无阻碍遍历 */}
                   <div className="p-4 sm:p-6 bg-white border-t border-slate-100 max-h-[500px] overflow-y-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                       {group.items.map((item) => (

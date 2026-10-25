@@ -16,6 +16,20 @@ function EntityJsonLd({ item }: { item: any }) {
     name: `第 ${idx + 1} 步`,
     text: s,
   })) : undefined;
+  const isBasedOn = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    '@id': `https://chanzong.space/classics/${bid}#book`,
+    url: `https://chanzong.space/classics/${bid}`,
+  }));
+  const authors = (item.relatedPersons || []).map((pid: string) => {
+    const p = ZEN_PERSONS.find((x: any) => x.id === pid);
+    return {
+      '@type': 'Person',
+      '@id': `https://chanzong.space/persons/${pid}#person`,
+      name: p ? p.name : pid,
+      url: `https://chanzong.space/persons/${pid}`,
+    };
+  });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -24,6 +38,14 @@ function EntityJsonLd({ item }: { item: any }) {
     name: `禅宗修持法门 · ${name}`,
     description: desc,
     step: steps,
+    ...(isBasedOn.length > 0 ? { isBasedOn } : {}),
+    ...(authors.length > 0 ? { author: authors } : {}),
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://chanzong.space/#organization',
+      name: '禅宗知识库',
+      url: 'https://chanzong.space',
+    },
     url: `https://chanzong.space/methods/${item.id}`,
     inLanguage: 'zh-CN',
     speakable: {
@@ -68,7 +90,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/methods/${params.id}`,
       siteName: '禅宗知识库',
       locale: 'zh_CN',
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禅宗知识库 ChanZong.space' }],
     },
   };
 }
@@ -79,7 +101,6 @@ export default function MethodDetailPagePage({ params }: PageProps) {
     notFound();
   }
 
-  // 服务端预先计算关联数据，避免客户端组件全量打包 3.8MB taxonomy
   const otherMethods = ZEN_METHODS.filter((m: any) => {
     if (m.id === item.id) return false;
     const shareConcept = m.relatedConcepts && item.relatedConcepts && m.relatedConcepts.some((c: string) => item.relatedConcepts.includes(c));
@@ -127,4 +148,3 @@ export default function MethodDetailPagePage({ params }: PageProps) {
     </>
   );
 }
-

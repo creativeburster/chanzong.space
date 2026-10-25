@@ -469,12 +469,12 @@ export const ZEN_LINEAGE_TREE: LineageNode = {
                                                                                       summary: '立‘云门三句’（涵盖乾坤、截断众流、随波逐浪）。一字关、顾鉴咦。孤危耸拔。',
                                                                                       children: [
                                                                                         {
-                                                                                          id: 'xuedou-zhongxian',
+                                                                                          id: 'xuedou-chongxian',
                                                                                           name: '雪窦重显',
                                                                                           title: '明觉禅师 · 颂古百则作者',
                                                                                           era: '980-1052',
                                                                                           sect: 'yunmen',
-                                                                                          personId: 'xuedou-zhongxian',
+                                                                                          personId: 'xuedou-chongxian',
                                                                                           summary: '云门宗巨擘，文辞华茂，著《颂古百则》，后成为《碧岩录》之骨髓。',
                                                                                         },
                                                                                       ],

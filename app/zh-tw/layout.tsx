@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/zh-tw`,
     images: [
       {
-        url: '/logo-nianhua-new.jpg',
-        width: 512,
-        height: 512,
-        alt: '禪宗知識庫',
+        url: '/og-banner.jpg',
+        width: 1200,
+        height: 630,
+        alt: '禪宗知識庫 ChanZong.space',
       },
     ],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '禪宗知識庫 | 頓悟見性之道 | ChanZong.space',
     description: `收錄${STATS.classics}部禪宗核心典籍，含${STATS.concepts}個概念、${STATS.koans}則公案、${STATS.persons}位祖師、${STATS.methods}種法門。`,
-    images: ['/logo-nianhua-new.jpg'],
+    images: ['/og-banner.jpg'],
   },
   appleWebApp: {
     capable: true,

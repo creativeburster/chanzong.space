@@ -11,6 +11,21 @@ export const dynamicParams = false;
 function EntityJsonLd({ item }: { item: any }) {
   const name = convertToTrad(String(item.title || ''));
   const desc = convertToTrad(String(item.summary || '')).replace(/\s+/g, ' ').slice(0, 160);
+  const isBasedOn = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    '@id': `https://chanzong.space/zh-tw/classics/${bid}#book`,
+    url: `https://chanzong.space/zh-tw/classics/${bid}`,
+  }));
+  const mentions = (item.relatedPersons || []).map((pid: string) => {
+    const p = ZEN_PERSONS.find((x: any) => x.id === pid);
+    return {
+      '@type': 'Person',
+      '@id': `https://chanzong.space/zh-tw/persons/${pid}#person`,
+      name: p ? convertToTrad(p.name) : pid,
+      url: `https://chanzong.space/zh-tw/persons/${pid}`,
+    };
+  });
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTerm',
@@ -22,6 +37,8 @@ function EntityJsonLd({ item }: { item: any }) {
       name: convertToTrad('禅宗核心心性与修持概念库'),
       url: 'https://chanzong.space/zh-tw/concepts',
     },
+    ...(isBasedOn.length > 0 ? { isBasedOn } : {}),
+    ...(mentions.length > 0 ? { subjectOf: mentions } : {}),
     termCode: item.id,
     url: `https://chanzong.space/zh-tw/concepts/${item.id}`,
     inLanguage: 'zh-TW',
@@ -66,7 +83,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/zh-tw/concepts/${params.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
     },
   };
 }
@@ -87,7 +104,6 @@ export default function TradConceptDetailPage({ params }: PageProps) {
     quotes: Array.isArray(item.quotes) ? item.quotes.map((q: string) => convertToTrad(q)) : item.quotes,
   };
 
-  // 1. 同一范畴的其他概念
   const sameCategoryConcepts = item.category
     ? ZEN_CONCEPTS.filter((c: any) => c.id !== item.id && c.category === item.category).slice(0, 6).map((c: any) => ({
         ...c,
@@ -97,7 +113,6 @@ export default function TradConceptDetailPage({ params }: PageProps) {
       }))
     : [];
 
-  // 2. 阐发此概念的代表公案
   const explicitKoans = ZEN_KOANS.filter((q: any) => q.relatedConcepts && q.relatedConcepts.includes(item.id));
   let relatedKoans = explicitKoans;
   if (explicitKoans.length < 6) {
@@ -121,7 +136,6 @@ export default function TradConceptDetailPage({ params }: PageProps) {
     master: q.master ? convertToTrad(q.master) : q.master,
   }));
 
-  // 3. 践行此概念的实修法门
   const explicitMethods = ZEN_METHODS.filter((m: any) => m.relatedConcepts && m.relatedConcepts.includes(item.id));
   let relatedMethods = explicitMethods;
   if (explicitMethods.length < 4) {
@@ -144,7 +158,6 @@ export default function TradConceptDetailPage({ params }: PageProps) {
     summary: convertToTrad(m.summary || ''),
   }));
 
-  // 4. 阐发宗师与交叉概念
   const relatedPersonsData = (item.relatedPersons || [])
     .map((pid: string) => {
       const p = ZEN_PERSONS.find((x: any) => x.id === pid);
@@ -159,16 +172,14 @@ export default function TradConceptDetailPage({ params }: PageProps) {
     })
     .filter(Boolean);
 
-  // 5. 相关问答
   const relatedFaqsData = ZEN_FAQS.filter((f: any) =>
-    f.relatedBooks && item.relatedBooks && item.relatedBooks.some((b: string) => f.relatedBooks!.includes(b))
+    f.relatedBooks && item.relatedBooks && item.relatedBooks.some((b: string) => item.relatedBooks!.includes(b))
   ).slice(0, 6).map((f: any) => ({
     ...f,
     question: convertToTrad(f.question),
     answer: convertToTrad(f.answer || ''),
   }));
 
-  // 6. 上下篇导航
   const idx = ZEN_CONCEPTS.findIndex((c: any) => c.id === item.id);
   const prevConcept = idx > 0 ? { id: ZEN_CONCEPTS[idx - 1].id, title: convertToTrad(ZEN_CONCEPTS[idx - 1].title) } : null;
   const nextConcept = idx < ZEN_CONCEPTS.length - 1 ? { id: ZEN_CONCEPTS[idx + 1].id, title: convertToTrad(ZEN_CONCEPTS[idx + 1].title) } : null;

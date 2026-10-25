@@ -38,7 +38,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
   return {
     title: `${titleTrad} · ${authorTrad}`,
-    description: `${summaryTrad.slice(0, 100)} 作者：${authorTrad}，約${Math.round(meta.word_count / 1000)}千字。`,
+    description: `《${titleTrad}》（${authorTrad}${meta.cbeta_id ? ` · CBETA ${convertToTrad(meta.cbeta_id)}` : ''}，${catTrad}，${meta.word_count >= 1000 ? `約${Math.round(meta.word_count / 1000)}千字` : `${meta.word_count}字`}）：${summaryTrad}`.replace(/\s+/g, ' ').slice(0, 145),
     alternates: {
       canonical: `/zh-tw/classics/${meta.id}`,
       languages: {
@@ -55,7 +55,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
       authors: [authorTrad],
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
     },
     twitter: {
       card: 'summary',
@@ -232,7 +232,7 @@ export default function TradClassicPage({ params }: PageProps) {
     genre: catTrad,
     wordCount: meta.word_count,
     isAccessibleForFree: true,
-    license: 'https://creativecommons.org/publicdomain/mark/1.0/',
+    license: ['https://creativecommons.org/publicdomain/mark/1.0/', 'https://creativecommons.org/licenses/by-nc-sa/4.0/'],
     dateModified: new Date().toISOString().split('T')[0],
     speakable: {
       '@type': 'SpeakableSpecification',

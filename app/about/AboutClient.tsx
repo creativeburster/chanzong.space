@@ -99,7 +99,7 @@ export default function AboutClient() {
               </div>
               <div className="prose prose-slate max-w-none">
                 <p className="text-[15px] leading-relaxed text-slate-700">
-                  {t('本站收录的典籍原文属于公共领域或遵循原始授权协议(CBETA文本遵循其开放授权)。白话翻译、结构化整理、知识图谱关联为本站原创内容，采用')} <strong>Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)</strong> {t('授权：')}
+                  {t('本站收录的典籍原文属于公共领域(Public Domain)或遵循原始授权协议(CBETA文本遵循其开放授权)。现代白话今译、导读解析、结构化整理与知识图谱关联为本站原创整理内容，统一采用')} <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)</strong> {t('授权：')}
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-1 text-[15px] text-slate-700">
                   <li>{t('允许非商业性使用、分享、改编，但须注明出处为"禅宗知识库 chanzong.space"。')}</li>

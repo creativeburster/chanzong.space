@@ -1,4 +1,4 @@
-import { ConceptItem } from './types';
+import type { ConceptItem } from './types';
 
 export const ZEN_CONCEPTS: ConceptItem[] = [
   {
@@ -11,12 +11,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "不生亦不灭，不常亦不断，不一亦不异，不来亦不出。 —《中论·破因缘品》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "八不是方法论不是戏论：破除对现象界的一切执见后，于当下一念中体会不生不灭的实相——不是没有生灭，而是不执著生灭。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》",
-    "relatedConcepts": ["zhongdao","xingkong","erdi"],
-    "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["zhonglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "xingkong",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "zhonglun"
+    ]
   },
   {
     "id": "xingkong",
@@ -28,12 +36,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "以有空义故，一切法得成；若无空义者，一切则不成。 —《中论》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "性空不是分析出来的结论，而是直下照见：见花知花无自性，见月知月无自性——于一切法不执自性，即是观性空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》",
-    "relatedConcepts": ["zhongdao","yuanqi","babu","emptiness"],
-    "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["zhonglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "yuanqi",
+      "babu",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "zhonglun"
+    ]
   },
   {
     "id": "erdi",
@@ -45,12 +62,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "诸佛依二谛，为众生说法；一以世俗谛，二第一义谛。 —《中论·观四谛品》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "修行不离二谛：在世间则循世俗谛明因果，证道时则当下契第一义谛——二谛圆融，说空不废有，说有不碍空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》",
-    "relatedConcepts": ["zhongdao","xingkong","babu"],
-    "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["zhonglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "xingkong",
+      "babu"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "zhonglun"
+    ]
   },
   {
     "id": "siju",
@@ -62,12 +87,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一切实非实，亦实亦非实；非实非非实，是名诸佛法。 —《中论·观法品》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "用四句自检：对任何说法，问它落于有、无、双亦、双非哪一句——凡落句者皆可破，破到无句可落处，消息自来。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》",
-    "relatedConcepts": ["zhongdao","babu","xingkong"],
-    "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["zhonglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "babu",
+      "xingkong"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "zhonglun"
+    ]
   },
   {
     "id": "zhongguan",
@@ -79,12 +112,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "众因缘生法，我说即是空，亦为是假名，亦是中道义。 —《中论·观四谛品》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "学中观不是学论辩，是学放舍：以中观的抉破力，对治自心深处最珍爱的那一念自性执——执尽处，即见中道。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》《大智度论》《十二门论》",
-    "relatedConcepts": ["zhongdao","babu","xingkong","erdi","siju"],
-    "relatedPersons": ["nagarjuna","kumarajiva"],
-    "relatedBooks": ["zhonglun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "babu",
+      "xingkong",
+      "erdi",
+      "siju"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhonglun"
+    ]
   },
   {
     "id": "buddha-nature",
@@ -95,12 +139,31 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一切众生悉有佛性。 —《大般涅槃经》",
       "狗子还有佛性也无？——无。 —赵州从谂"
-],
+    ],
     "guidance": "信得自心本来是佛，方肯直下承当。修行不是制造一个佛，而是除去遮蔽佛性的妄想执着；黑云散时，日轮本自圆明，不从他得。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "涅槃经 · 六祖坛经",
-    "relatedConcepts": ["self-nature","real-mind"],
-    "relatedPersons": ["huineng","zhaozhou","hongren"],
-    "relatedBooks": ["tanjing","wuran","xuemaicong","wuxinglun","poxianglun","xixulun","zuishangcheng","zhengdaoge","zhigong","shenhui","baoxinglun"]
+    "relatedConcepts": [
+      "self-nature",
+      "real-mind"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "zhaozhou",
+      "hongren"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "wuran",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "xixulun",
+      "zuishangcheng",
+      "zhengdaoge",
+      "zhigong",
+      "shenhui",
+      "baoxinglun"
+    ]
   },
   {
     "id": "prajna",
@@ -111,12 +174,31 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空。 —《心经》",
       "用自真如性，以智慧观照，于一切法不取不舍，即是见性成佛道。 —《六祖坛经》"
-],
+    ],
     "guidance": "般若不在经卷文字里，在当下不取不舍的一念里。遇事时但能照而不染、应而无住，即是般若现前；若向文字里寻，转寻转远。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "金刚经 · 六祖坛经",
-    "relatedConcepts": ["emptiness","no-abiding"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","wenshu","qifo","juelin","wuran","wuxinglun","poxianglun","wuxinlun","xinxinming","zhengdaoge","shenhui","jingangjing","shoulengyansanmeijing"]
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "wenshu",
+      "qifo",
+      "juelin",
+      "wuran",
+      "wuxinglun",
+      "poxianglun",
+      "wuxinlun",
+      "xinxinming",
+      "zhengdaoge",
+      "shenhui",
+      "jingangjing",
+      "shoulengyansanmeijing"
+    ]
   },
   {
     "id": "emptiness",
@@ -127,12 +209,44 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "色不异空，空不异色；色即是空，空即是色。 —《心经》",
       "何期自性本自清净。 —《六祖坛经》"
-],
+    ],
     "guidance": "观一切法如梦幻泡影，而了了常知者不空；于有而不染，于空而不着，方契中道。切忌把“空”当作一个道理把玩，那是“空病”。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心经 · 金刚经",
-    "relatedConcepts": ["prajna","originally-nothing"],
-    "relatedPersons": ["bodhidharma","huineng"],
-    "relatedBooks": ["xuemaicong","qifo","juelin","wenshu","wuran","zhangzhi","wuxinglun","poxianglun","sixingguan","xinxinming","fangcunlun","zuishangcheng","zhengdaoge","baizhang","huangbo","xiuxinjue","dunwu","zhenxin","zhigong","xinwangming","shenhui","jingangjing","shiniutu","yongjia","bashiguijusong"]
+    "relatedConcepts": [
+      "prajna",
+      "originally-nothing"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "qifo",
+      "juelin",
+      "wenshu",
+      "wuran",
+      "zhangzhi",
+      "wuxinglun",
+      "poxianglun",
+      "sixingguan",
+      "xinxinming",
+      "fangcunlun",
+      "zuishangcheng",
+      "zhengdaoge",
+      "baizhang",
+      "huangbo",
+      "xiuxinjue",
+      "dunwu",
+      "zhenxin",
+      "zhigong",
+      "xinwangming",
+      "shenhui",
+      "jingangjing",
+      "shiniutu",
+      "yongjia",
+      "bashiguijusong"
+    ]
   },
   {
     "id": "non-duality",
@@ -145,12 +259,40 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "如我意者，于一切法无言无说，无示无识，离诸问答，是为入不二法门。 —《维摩诘经》",
       "信心不二，不二信心。 —《信心铭》",
       "菩提烦恼不二，生死涅槃一如。 —宝志公《十四科颂》"
-],
+    ],
     "guidance": "日用中凡起好恶、取舍、凡圣之见，即是二；但莫拣择，一种平怀，泯然自尽。不二不是混滥是非，而是于心无所住。",
     "classicRef": "维摩诘经 · 信心铭",
-    "relatedConcepts": ["samadhi","affliction-bodhi","emptiness"],
-    "relatedPersons": ["sengcan","dongshan","zhigong"],
-    "relatedBooks": ["xinxinming","weimojiejing","zhigong","juelin","wenshu","wuran","zhangzhi","wuxinglun","zhengdaoge","xiuxinjue","dunwu","zhenxin","baojingsanmei","yongjia","henghedashouyin","zixingcanjiu","awatuotazhige","ashitawakela","baoxinglun"]
+    "relatedConcepts": [
+      "samadhi",
+      "affliction-bodhi",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "sengcan",
+      "dongshan",
+      "zhigong"
+    ],
+    "relatedBooks": [
+      "xinxinming",
+      "weimojiejing",
+      "zhigong",
+      "juelin",
+      "wenshu",
+      "wuran",
+      "zhangzhi",
+      "wuxinglun",
+      "zhengdaoge",
+      "xiuxinjue",
+      "dunwu",
+      "zhenxin",
+      "baojingsanmei",
+      "yongjia",
+      "henghedashouyin",
+      "zixingcanjiu",
+      "awatuotazhige",
+      "ashitawakela",
+      "baoxinglun"
+    ]
   },
   {
     "id": "koan",
@@ -161,12 +303,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "狗子还有佛性也无？——无。 —赵州从谂",
       "庭前柏树子。 —赵州从谂"
-],
+    ],
     "guidance": "参公案切忌以意识卜度、寻文解义；但将一则话头如鸡抱卵，疑情成片，自有到家时节。未悟之前，公案是铁壁银山；悟后看来，尽是老婆心切。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "无门关 · 碧岩录",
-    "relatedConcepts": ["beyond-words","instant-enlightenment"],
-    "relatedPersons": ["zhaozhou","chinul"],
-    "relatedBooks": ["mazu","baizhang","linjianlu","weishanyulu","qiaoyinyulu"]
+    "relatedConcepts": [
+      "beyond-words",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "chinul"
+    ],
+    "relatedBooks": [
+      "mazu",
+      "baizhang",
+      "linjianlu",
+      "weishanyulu",
+      "qiaoyinyulu"
+    ]
   },
   {
     "id": "samadhi",
@@ -177,12 +331,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "妄念不生为禅，坐见本性为定。 —大珠慧海《顿悟入道要门论》",
       "定是慧体，慧是定用。犹如灯光，有灯即光，无灯即暗。 —《六祖坛经》"
-],
+    ],
     "guidance": "初学宜以坐禅摄心，久久则须于动用中保任：对境无心，八风不动，方是真定。定慧不可偏废——有定无慧是死水，有慧无定是狂慧。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "文殊说般若经 · 六祖坛经",
-    "relatedConcepts": ["non-duality","prajna"],
-    "relatedPersons": ["daoxin","chinul"],
-    "relatedBooks": ["anxin","wenshu","changuancejin","juelin","jingangjing","baojingsanmei"]
+    "relatedConcepts": [
+      "non-duality",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "daoxin",
+      "chinul"
+    ],
+    "relatedBooks": [
+      "anxin",
+      "wenshu",
+      "changuancejin",
+      "juelin",
+      "jingangjing",
+      "baojingsanmei"
+    ]
   },
   {
     "id": "affliction-bodhi",
@@ -193,12 +360,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "前念着境即烦恼，后念离境即菩提。 —《六祖坛经》",
       "无明实性即佛性，幻化空身即法身。 —《证道歌》"
-],
+    ],
     "guidance": "烦恼起时正是用功时：不随它去，也不压它，只一照，看它从何处起、向何处灭。照破之时，烦恼即是觉悟的资粮。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "六祖坛经 · 证道歌",
-    "relatedConcepts": ["emptiness","non-duality"],
-    "relatedPersons": ["huineng","yongjia"],
-    "relatedBooks": ["tanjing","zhigong"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "zhigong"
+    ]
   },
   {
     "id": "no-abiding",
@@ -209,12 +385,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "应无所住而生其心。 —《金刚经》",
       "心不住一切处，即是无住。不住一切处，即是真心。 —大珠慧海《顿悟入道要门论》"
-],
+    ],
     "guidance": "于顺境不起贪，于逆境不起嗔，于平淡不起痴——事来则应，事去则空，即是无住的功夫。若刻意求无住，又被“无住”缚了。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "金刚经 · 六祖坛经",
-    "relatedConcepts": ["prajna","ordinary-mind"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","qifo","juelin","wenshu","zhangzhi","dunwu","shenhui","jingangjing"]
+    "relatedConcepts": [
+      "prajna",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "qifo",
+      "juelin",
+      "wenshu",
+      "zhangzhi",
+      "dunwu",
+      "shenhui",
+      "jingangjing"
+    ]
   },
   {
     "id": "mind-is-buddha",
@@ -225,12 +415,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "即心即佛。 —马祖道一",
       "诸佛与一切众生，唯是一心，更无别法。 —《传心法要》"
-],
+    ],
     "guidance": "信得即心即佛，便不必向外驰求；但若死死抱着“我心是佛”的念头，又成法执。药病俱消，方见马祖本意。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "马祖语录 · 传心法要",
-    "relatedConcepts": ["not-mind-not-buddha","self-nature"],
-    "relatedPersons": ["mazu","huangbo"],
-    "relatedBooks": ["mazu","xuemaicong","zhigong","xinwangming","chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "not-mind-not-buddha",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "mazu",
+      "xuemaicong",
+      "zhigong",
+      "xinwangming",
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "not-mind-not-buddha",
@@ -241,12 +443,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "为止小儿啼。啼止时如何？——非心非佛。 —马祖道一",
       "任汝非心非佛，我只管即心即佛。 —大梅法常"
-],
+    ],
     "guidance": "莫把祖师的言语当作实法：即心即佛是药，非心非佛也是药，病愈药除，方是真受用。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "马祖道一禅师语录",
-    "relatedConcepts": ["mind-is-buddha","beyond-words"],
-    "relatedPersons": ["mazu"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "all-returns-to-one",
@@ -258,12 +467,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "万法归一，一归何处？——我在青州作一领布衫，重七斤。 —赵州从谂",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "参“一归何处”，不是找一个答案，而是把能问能寻的那个彻底放下。布衫重七斤，冷时穿、热时脱，会么？ 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "碧岩录第四十五则",
-    "relatedConcepts": ["non-duality","koan"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhigong"]
+    "relatedConcepts": [
+      "non-duality",
+      "koan"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhigong"
+    ]
   },
   {
     "id": "direct-pointing",
@@ -274,12 +490,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "直指人心，见性成佛。 —禅门四句纲宗",
       "若欲见佛，须是见性，性即是佛。 —《血脉论》"
-],
+    ],
     "guidance": "闻直指之语时，莫作道理解会，莫待将来领会——只于现前听法的这一念上，回光一照。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "血脉论 · 六祖坛经",
-    "relatedConcepts": ["mind-transmission","self-nature"],
-    "relatedPersons": ["bodhidharma","linji"],
-    "relatedBooks": ["qifo","wuran","huangbo","xiuxinjue","zhenxin","xinwangming","bashiguijusong"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "linji"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "wuran",
+      "huangbo",
+      "xiuxinjue",
+      "zhenxin",
+      "xinwangming",
+      "bashiguijusong"
+    ]
   },
   {
     "id": "mind-transmission",
@@ -290,12 +520,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。 —世尊拈花付法",
       "法则以心传心，皆令自悟自解。 —《六祖坛经》"
-],
+    ],
     "guidance": "以心传心不是神秘授受，而是明眼人印证明眼处。学者但求真实开悟，勿执师承名相——悟处即是传承处。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "血脉论 · 景德传灯录",
-    "relatedConcepts": ["direct-pointing","beyond-words"],
-    "relatedPersons": ["bodhidharma","huineng"],
-    "relatedBooks": ["xuemaicong"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xuemaicong"
+    ]
   },
   {
     "id": "beyond-words",
@@ -306,12 +544,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "如人以手指月示人，彼人因指当应看月；若复观指以为月体，此人岂唯亡失月轮，亦亡其指。 —《楞严经》",
       "此宗非文字相，不离文字。若执文字，是为魔网；离文字，亦为魔网。 —《显宗记》"
-],
+    ],
     "guidance": "读经看教时，须作活句会，莫作死句解：得意忘言，方不负佛祖。若废文字而盲修，又是暗证禅师。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "血脉论 · 显宗记",
-    "relatedConcepts": ["koan","direct-pointing"],
-    "relatedPersons": ["bodhidharma","linji"],
-    "relatedBooks": ["xuemaicong","qifo"]
+    "relatedConcepts": [
+      "koan",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "linji"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "qifo"
+    ]
   },
   {
     "id": "originally-nothing",
@@ -323,12 +570,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "菩提本无树，明镜亦非台。本来无一物，何处惹尘埃。 —《六祖坛经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "“本来无一物”不是叫人拨无因果、废弃修行，而是指示用功的见地：悟此而后修，如红日当空，霜露自消。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "六祖坛经 · 行由品",
-    "relatedConcepts": ["emptiness","self-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "self-nature",
@@ -339,12 +593,42 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "何期自性，本自清净；何期自性，本不生灭；何期自性，本自具足。 —《六祖坛经》",
       "菩提自性，本来清净，但用此心，直了成佛。 —《六祖坛经》"
-],
+    ],
     "guidance": "参修不必向外觅佛求法，只须回光返照，看取当下听法的是谁。于一切时中念念自见自性，不被境转，不随念流，饥来吃饭困来即眠，平常心即是道场。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "六祖坛经 · 行由品",
-    "relatedConcepts": ["buddha-nature","emptiness","originally-nothing","real-mind"],
-    "relatedPersons": ["huineng","bodhidharma","hongren"],
-    "relatedBooks": ["tanjing","xuemaicong","wenshu","zhangzhi","wuxinglun","poxianglun","wuxinlun","xixulun","sixingguan","xinxinming","zuishangcheng","zhengdaoge","baizhang","xiuxinjue","jingangjing","shiniutu","baojingsanmei","ziwojietuo","xinxingxiuxisong","zixingcanjiu"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "emptiness",
+      "originally-nothing",
+      "real-mind"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "bodhidharma",
+      "hongren"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "xuemaicong",
+      "wenshu",
+      "zhangzhi",
+      "wuxinglun",
+      "poxianglun",
+      "wuxinlun",
+      "xixulun",
+      "sixingguan",
+      "xinxinming",
+      "zuishangcheng",
+      "zhengdaoge",
+      "baizhang",
+      "xiuxinjue",
+      "jingangjing",
+      "shiniutu",
+      "baojingsanmei",
+      "ziwojietuo",
+      "xinxingxiuxisong",
+      "zixingcanjiu"
+    ]
   },
   {
     "id": "instant-enlightenment",
@@ -356,12 +640,32 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "迷闻经累劫，悟则刹那间。 —《六祖坛经》",
       "前念迷即凡夫，后念悟即佛。 —《六祖坛经》",
       "理即顿悟，乘悟并销；事非顿除，因次第尽。 —《显宗记》"
-],
+    ],
     "guidance": "顿悟之机，贵在直下承当。闻法参究时莫作思量卜度，莫待将来成佛，只于现前一念回光返照，识自本心。悟后仍须保任，于顺逆境中验之，方是真悟。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "六祖坛经 · 般若品",
-    "relatedConcepts": ["self-nature","prajna","real-mind"],
-    "relatedPersons": ["huineng","shenhui","dazhu-huihai","yongjia","chinul"],
-    "relatedBooks": ["tanjing","dunwu","xiuxinjue","zhangzhi","xixulun","baizhang","xinwangming","shenhui","zhengdaoge"]
+    "relatedConcepts": [
+      "self-nature",
+      "prajna",
+      "real-mind"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "shenhui",
+      "dazhu-huihai",
+      "yongjia",
+      "chinul"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "dunwu",
+      "xiuxinjue",
+      "zhangzhi",
+      "xixulun",
+      "baizhang",
+      "xinwangming",
+      "shenhui",
+      "zhengdaoge"
+    ]
   },
   {
     "id": "ordinary-mind",
@@ -373,12 +677,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "道不用修，但莫染污。 —马祖道一",
       "佛法无用功处，只是平常无事。 —《临济录》",
       "道不属知，不属不知。知是妄觉，不知是无记。 —南泉普愿示赵州"
-],
+    ],
     "guidance": "日用之中，饥来吃饭，困来即眠，随缘任运，不加计较。但于寻常举动上不起第二念的贪嗔拣择，即是保任平常心。切莫将平常心错认作放逸懈怠。",
     "classicRef": "马祖道一禅师语录 · 临济录",
-    "relatedConcepts": ["mind-is-buddha","self-nature","no-abiding","instant-enlightenment"],
-    "relatedPersons": ["mazu","zhaozhou","linji"],
-    "relatedBooks": ["mazu"]
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature",
+      "no-abiding",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "zhaozhou",
+      "linji"
+    ],
+    "relatedBooks": [
+      "mazu"
+    ]
   },
   {
     "id": "non-mind",
@@ -389,12 +704,29 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "无妄心者即名无心，非同木石。 —《菩提达摩大师无心论》",
       "无心者，无一切心也。如如之体，内如木石，不动不摇；外如虚空，不塞不碍。 —《传心法要》"
-],
+    ],
     "guidance": "用功之际，不必刻意压制念头，亦不必追逐境界；念起即觉，觉之即无。行住坐卧中但能于物上不起爱憎取舍，无心之用自然现前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "菩提达摩大师无心论",
-    "relatedConcepts": ["emptiness","self-nature","non-duality"],
-    "relatedPersons": ["bodhidharma","huike","huangbo"],
-    "relatedBooks": ["wuxinlun","huangbo","wenshu","xuemaicong","poxianglun","baizhang","dunwu","xinwangming"]
+    "relatedConcepts": [
+      "emptiness",
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike",
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "wuxinlun",
+      "huangbo",
+      "wenshu",
+      "xuemaicong",
+      "poxianglun",
+      "baizhang",
+      "dunwu",
+      "xinwangming"
+    ]
   },
   {
     "id": "real-mind",
@@ -405,12 +737,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "信自身中本有真心。此心不生不灭，无形无相。 —《真心直说》",
       "见色闻声，知寒识热，皆是真心之用。然其用时，不着诸相，如镜照物，物去不留。 —《真心直说》"
-],
+    ],
     "guidance": "日常起心动念处，直认能见能闻者即是真心妙用，不必离此另觅。妄念起时不随不压，如镜照物，物去不留，久久纯熟，真心自然常现在前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "高丽国普照禅师真心直说",
-    "relatedConcepts": ["self-nature","buddha-nature","non-mind"],
-    "relatedPersons": ["chinul","huineng"],
-    "relatedBooks": ["zhenxin","xiuxinjue","wuxinlun","xinxinming","zuishangcheng","huangbo","dunwu","bashiguijusong"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "chinul",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "zhenxin",
+      "xiuxinjue",
+      "wuxinlun",
+      "xinxinming",
+      "zuishangcheng",
+      "huangbo",
+      "dunwu",
+      "bashiguijusong"
+    ]
   },
   {
     "id": "yinian-wusheng",
@@ -421,11 +769,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一心不生，万法无咎。 —《信心铭》",
       "一念无生，即入佛地。"
-],
+    ],
     "guidance": "参修时切忌硬压念头，亦不可随念流转。只需回光返照念头生起之处，看清其无自性，念头自然消融于寂照之中。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "三祖僧璨《信心铭》· 荷泽神会《显宗记》",
-    "relatedConcepts": ["non-mind","self-nature"],
-    "relatedPersons": ["sengcan","shenhui"],
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "sengcan",
+      "shenhui"
+    ],
     "relatedBooks": []
   },
   {
@@ -437,11 +791,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "自心现量，无有心外法。",
       "得赤肉团上无位真人，显自心现量。"
-],
+    ],
     "guidance": "遇顺境不生欢喜取着，遇逆境不生怨恨惊怖。时刻观照一切境界皆如镜中花、水中月，本是自心现量。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "达摩祖师《入道四行观》·《楞伽经》",
-    "relatedConcepts": ["self-nature","mind-transmission"],
-    "relatedPersons": ["bodhidharma","huike"],
+    "relatedConcepts": [
+      "self-nature",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
     "relatedBooks": []
   },
   {
@@ -453,12 +813,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "于一切处，行住坐卧，常行直心。 —《六祖坛经》",
       "系心一佛，专称名字。 —《文殊说般若经》"
-],
+    ],
     "guidance": "在工作、生活、待人接物中，保持一颗坦荡无谄之直心。不作伪造作，直下承当。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《文殊说摩诃般若波罗蜜经》·《六祖坛经》",
-    "relatedConcepts": ["instant-enlightenment","no-abiding"],
-    "relatedPersons": ["daoxin","huineng"],
-    "relatedBooks": ["wenshu","anxin","tanjing"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "daoxin",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "wenshu",
+      "anxin",
+      "tanjing"
+    ]
   },
   {
     "id": "sanlun-tikong",
@@ -470,11 +840,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "通达施者、受者、施物三轮体空，不偏不着。 —《四行观》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "做善事、行布施或助人后，切勿挂在心头求回报或自矜功德，当下作完当下放下。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "达摩祖师《入道四行观》",
-    "relatedConcepts": ["emptiness","no-abiding"],
-    "relatedPersons": ["bodhidharma"],
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
     "relatedBooks": []
   },
   {
@@ -486,12 +861,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "诸佛与一切众生唯是一心，更无别法。 —《传心法要》",
       "唯传一心，更无别法。"
-],
+    ],
     "guidance": "明白一切佛法、神通、妙用皆不离自己当下这颗灵觉之心，勿向心外寻觅任何奇特。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄檗希运《传心法要》",
-    "relatedConcepts": ["mind-transmission","self-nature"],
-    "relatedPersons": ["huangbo","peixiu"],
-    "relatedBooks": ["huangbo","zuishangcheng"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "peixiu"
+    ],
+    "relatedBooks": [
+      "huangbo",
+      "zuishangcheng"
+    ]
   },
   {
     "id": "ying-wu-suo-zhu",
@@ -502,12 +886,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "应无所住，而生其心。 —《金刚经》",
       "何期自性本自清净，何期自性本不生灭。 —《六祖坛经》"
-],
+    ],
     "guidance": "于日常工作中全情投入，事毕即空，心如明镜照物，物去不留痕。切忌于心头挂碍执着不放。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚般若波罗蜜经》·《六祖坛经》",
-    "relatedConcepts": ["no-abiding","self-nature"],
-    "relatedPersons": ["huineng","hongren","xubuti"],
-    "relatedBooks": ["jingangjing"]
+    "relatedConcepts": [
+      "no-abiding",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "hongren",
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
   },
   {
     "id": "si-xiang",
@@ -518,12 +911,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "若菩萨有我相、人相、众生相、寿者相，即非菩萨。 —《金刚经》",
       "离一切诸相，则名诸佛。 —《金刚经》"
-],
+    ],
     "guidance": "随时觉察自己是否陷于“自我优越感”、“他人评判”、“群体偏见”或“生死恐惧”中。四相破除，真性自现。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚般若波罗蜜经》",
-    "relatedConcepts": ["emptiness","non-mind"],
-    "relatedPersons": ["xubuti","bodhidharma"],
-    "relatedBooks": ["poxianglun","wuxinlun","dunwu","chanlinbaoxun","lengyanjing","weimojiejing"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "xubuti",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "poxianglun",
+      "wuxinlun",
+      "dunwu",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "ru-meng-huan-pao-ying",
@@ -535,12 +941,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一切有为法，如梦幻泡影，如露亦如电，应作如是观。 —《金刚经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在面对人生得失荣辱、生老病死时，常以此四句偈提撕观照，当下脱离幻局，归于本真。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚般若波罗蜜经》",
-    "relatedConcepts": ["emptiness","no-abiding"],
-    "relatedPersons": ["xubuti"],
-    "relatedBooks": ["jingangjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
   },
   {
     "id": "wu-yun-jie-kong",
@@ -552,12 +965,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空，度一切苦厄。 —《心经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "当焦虑、痛苦、悲伤生起时，觉察“受与想”只是流动不居的幻象，并非真正的你。五蕴照空，痛苦顿消。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《般若波罗蜜多心经》",
-    "relatedConcepts": ["emptiness","non-mind"],
-    "relatedPersons": ["guanzizai","huineng"],
-    "relatedBooks": ["xinjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xinjing"
+    ]
   },
   {
     "id": "se-ji-shi-kong",
@@ -569,12 +990,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "色不异空，空不异色，色即是空，空即是色。 —《心经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "不要执着于物质世界（色），也不要陷入冷枯虚无（空）。在滚滚红尘中行所当行，心却如虚空般一尘不染。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《般若波罗蜜多心经》",
-    "relatedConcepts": ["emptiness","non-duality"],
-    "relatedPersons": ["guanzizai","fudashi"],
-    "relatedBooks": ["xinjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "fudashi"
+    ],
+    "relatedBooks": [
+      "xinjing"
+    ]
   },
   {
     "id": "wu-gua-ai",
@@ -586,12 +1015,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "以无所得故，菩提萨埵，依般若波罗蜜多故，心无挂碍；无挂碍故，无有恐怖，远离颠倒梦想，究竟涅槃。 —《心经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "检视自己内心深处对名利、得失、人际关系的羁绊。能放下“有所得”的贪念，即能获得真正的自在无碍。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《般若波罗蜜多心经》",
-    "relatedConcepts": ["no-abiding","emptiness"],
-    "relatedPersons": ["guanzizai","xubuti"],
-    "relatedBooks": ["xinjing"]
+    "relatedConcepts": [
+      "no-abiding",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "xubuti"
+    ],
+    "relatedBooks": [
+      "xinjing"
+    ]
   },
   {
     "id": "zhi-huan-ji-li",
@@ -602,12 +1039,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "知幻即离，不作方便；离幻即觉，亦无渐次。 —《圆觉经》",
       "众生幻心还依幻灭，诸幻尽灭觉心不动。 —《圆觉经》"
-],
+    ],
     "guidance": "于生活中一旦觉察到焦虑、欲望或妄念，只需看清它是“幻化”，看清的瞬间即已脱离（知幻即离），无需费力对治打击。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大方广圆觉修多罗了义经》",
-    "relatedConcepts": ["instant-enlightenment","emptiness"],
-    "relatedPersons": ["puxian-yuanjue","huineng"],
-    "relatedBooks": ["yuanjuejing"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
   },
   {
     "id": "yuanjue-qingjing-xinxing",
@@ -618,12 +1063,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "无上法王有大陀罗尼门，名为圆觉。 —《圆觉经》",
       "圆觉自性，非性性有，循诸性起，无取无证。 —《圆觉经》"
-],
+    ],
     "guidance": "坚信自心本具圆觉，不假外求。在日常行住坐卧中，安住于本觉寂照，不随客尘妄想流转。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大方广圆觉修多罗了义经》",
-    "relatedConcepts": ["self-nature","buddha-nature"],
-    "relatedPersons": ["puxian-yuanjue","fotuoduoluo"],
-    "relatedBooks": ["yuanjuejing"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "fotuoduoluo"
+    ],
+    "relatedBooks": [
+      "yuanjuejing"
+    ]
   },
   {
     "id": "si-bing",
@@ -635,12 +1088,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "彼圆觉性，非作得故说名为病；非止合故说名为病；非任有故说名为病；非寂相故说名为病。 —《圆觉经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "检查自己的修持：是否在用力强做（作）、死压念头（止）、随波逐流（任）或逃避厌世（灭）？超越这四种执着，即是正观。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大方广圆觉修多罗了义经》",
-    "relatedConcepts": ["no-abiding","beyond-words"],
-    "relatedPersons": ["puxian-yuanjue"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "no-abiding",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "tou-xin-wei-si",
@@ -652,12 +1112,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "参禅学者极恶偷心未死。偷心未死，即是名利客。 —《禅林宝训》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "深省内心：是否在修道或工作中暗藏侥幸、虚荣、讨巧、谄媚之私念？将偷心死尽，灵明自性方显。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅林宝训》",
-    "relatedConcepts": ["non-mind","no-abiding"],
-    "relatedPersons": ["huanglong-huinan","yangqi-fanghui"],
-    "relatedBooks": ["lengyanjing","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "non-mind",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "lengyanjing",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "de-hua-li-zhi",
@@ -669,11 +1138,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "住持大有三：德化也，礼治也，政刑也。 —《禅林宝训》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "无论是管理团队还是修身立命，先立道德心与公义心，以德服人，远胜于强权与威压。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅林宝训》",
-    "relatedConcepts": ["tou-xin-wei-si"],
-    "relatedPersons": ["huanglong-huinan","shishuang-chuyuan"],
+    "relatedConcepts": [
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "shishuang-chuyuan"
+    ],
     "relatedBooks": []
   },
   {
@@ -685,11 +1159,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "此非汝心！乃是前尘虚妄相想，惑汝真性。 —《楞严经》",
       "一切众生，从无始来，生死相续，皆由不知常住真心性净明体，用诸妄想，此想不真，故有轮转。 —《楞严经》"
-],
+    ],
     "guidance": "检视当下起心动念：随情绪、环境起伏的喜怒哀乐，全是被外境牵着走的“缘影妄心”，非你自性真正的灵魂主宰。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大佛顶首楞严经》",
-    "relatedConcepts": ["non-mind","self-nature"],
-    "relatedPersons": ["anan","banramidi"],
+    "relatedConcepts": [
+      "non-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "banramidi"
+    ],
     "relatedBooks": []
   },
   {
@@ -701,11 +1181,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "诸可还者，自然非汝；不汝还者，非汝而谁？ —《楞严经》",
       "波斯匿王观河之见，变者受灭，彼不变者，原无生灭！ —《楞严经》"
-],
+    ],
     "guidance": "认清身体与外在名利有生老病死衰变，而你当下能知能觉的灵明自性永远不动不坏，从而获得无畏安心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大佛顶首楞严经》",
-    "relatedConcepts": ["self-nature","buddha-nature"],
-    "relatedPersons": ["anan","guanzizai"],
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "anan",
+      "guanzizai"
+    ],
     "relatedBooks": []
   },
   {
@@ -718,12 +1204,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "不作圣心，名善境界；若作圣解，即受群邪。 —《楞严经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "修道或冥想时若出现异景、异香、轻安快感，切勿傲慢执着或自命不凡，保持平静平常心即是破魔铠甲。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大佛顶首楞严经》",
-    "relatedConcepts": ["no-abiding","si-bing"],
-    "relatedPersons": ["anan"],
-    "relatedBooks": ["jingangjing","chanlinbaoxun","weimojiejing","dongshanyulu","bashiguijusong","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian"]
+    "relatedConcepts": [
+      "no-abiding",
+      "si-bing"
+    ],
+    "relatedPersons": [
+      "anan"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "chanlinbaoxun",
+      "weimojiejing",
+      "dongshanyulu",
+      "bashiguijusong",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "dahuiyulu",
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "xin-jing-ji-fo-tu-jing",
@@ -734,12 +1235,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "随其心净则佛土净；欲净佛土，先净其心。 —《维摩诘经》",
       "若菩萨欲得净土，当净其心；随其心净，则佛土净。 —《维摩诘经》"
-],
+    ],
     "guidance": "不必寄希望于改变外在环境或逃避尘劳。将注意力收回自身内心，洗涤攀缘执着与贪嗔痴，当下所在之处即是琉璃清净佛土。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《维摩诘所说经》",
-    "relatedConcepts": ["self-nature","mind-transmission"],
-    "relatedPersons": ["weimojie","huineng"],
-    "relatedBooks": ["weimojiejing"]
+    "relatedConcepts": [
+      "self-nature",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "ru-bu-er-fa-men",
@@ -750,11 +1259,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "维摩一默如雷震！言语道断，心行处灭。 —《维摩诘经》",
       "无言无说，无示无识，离诸问答，是真入不二法门。 —《维摩诘经》"
-],
+    ],
     "guidance": "超越黑与白、对与错、成功与失败的双重对立思维。在言语词穷、思维断绝处，直下契入本来平等的生命真如。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《维摩诘所说经》",
-    "relatedConcepts": ["beyond-words","direct-pointing"],
-    "relatedPersons": ["weimojie","wenshu-yuanjue"],
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
     "relatedBooks": []
   },
   {
@@ -766,12 +1281,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "若人欲了知，三世一切佛，应观法界性，一切唯心造。 —《华严经·觉林菩萨偈》",
       "何期自性能生万法。 —《六祖坛经》"
-],
+    ],
     "guidance": "遇顺逆境界时，不作外境实有之想，回观自心：顺境之喜由心生，逆境之恼亦由心生。心若不染，境自清净。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "华严经 · 六祖坛经",
-    "relatedConcepts": ["self-nature","mind-is-buddha","zixin-xianliang"],
-    "relatedPersons": ["huineng","bodhidharma"],
-    "relatedBooks": ["juelin"]
+    "relatedConcepts": [
+      "self-nature",
+      "mind-is-buddha",
+      "zixin-xianliang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "juelin"
+    ]
   },
   {
     "id": "wu-ran-jue-xing",
@@ -782,12 +1306,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "此觉性本来清净，无染无着，不因烦恼而减，不因修证而增。 —莲花生大士",
       "何期自性本自清净。 —《六祖坛经》"
-],
+    ],
     "guidance": "不用刻意去“修”一个清净心，只需认取当下能知能觉者，让它自然安住。妄念起时不随不拒，直观其自生自灭——这本身就是解脱。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "无染觉性直观自行解脱之道 · 六祖坛经",
-    "relatedConcepts": ["self-nature","real-mind","non-mind","originally-nothing"],
-    "relatedPersons": ["huineng","bodhidharma","lianhuasheng"],
-    "relatedBooks": ["wuran","songlingbaoxun"]
+    "relatedConcepts": [
+      "self-nature",
+      "real-mind",
+      "non-mind",
+      "originally-nothing"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "bodhidharma",
+      "lianhuasheng"
+    ],
+    "relatedBooks": [
+      "wuran",
+      "songlingbaoxun"
+    ]
   },
   {
     "id": "po-xiang",
@@ -798,12 +1334,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "凡所有相，皆是虚妄。若见诸相非相，即见如来。 —《金刚经》",
       "修六度者，在于心行，非在事相。 —《破相论》"
-],
+    ],
     "guidance": "修行不在形式多寡，在心是否清净。拜佛诵经时回光返照：能拜能诵者是谁？若心外求佛、心外求法，纵然建七级浮屠，亦是梦中佛事。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "菩提达摩大师破相论 · 金刚经",
-    "relatedConcepts": ["emptiness","beyond-words","no-abiding","si-xiang"],
-    "relatedPersons": ["bodhidharma","huineng"],
-    "relatedBooks": ["poxianglun"]
+    "relatedConcepts": [
+      "emptiness",
+      "beyond-words",
+      "no-abiding",
+      "si-xiang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "poxianglun"
+    ]
   },
   {
     "id": "tathagatagarbha",
@@ -815,12 +1361,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "我以佛眼观一切众生，贪欲恚痴诸烦恼中，有如来智、如来眼、如来身，结跏趺坐俨然不动。 —《如来藏经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "如来藏非一物——不可作“有个东西藏在心中”会，只是当下一念心之本体。迷时为烦恼，悟时为菩提，体无二致。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《楞伽经》《如来藏经》《坛经》",
-    "relatedConcepts": ["buddha-nature","self-nature","real-mind"],
-    "relatedPersons": ["shengman-furen","huineng","bodhidharma"],
-    "relatedBooks": ["shengmanjing","lengyanjing","dachengqixinlun","miyanjing","jieshenmijing","lengqiejing","baoxinglun"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature",
+      "real-mind"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "lengyanjing",
+      "dachengqixinlun",
+      "miyanjing",
+      "jieshenmijing",
+      "lengqiejing",
+      "baoxinglun"
+    ]
   },
   {
     "id": "zhongdao",
@@ -832,12 +1394,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "因缘所生法，我说即是空，亦为是假名，亦是中道义。 —《中论》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "中道非中间——中间亦是对待。真正的中道是“即两边而离两边”：不离烦恼而证菩提，不离生死而入涅槃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》《金刚经》《坛经》",
-    "relatedConcepts": ["emptiness","non-duality","prajna"],
-    "relatedPersons": ["nagarjuna","huineng","mazu"],
-    "relatedBooks": ["tanjing","wuxinlun","fangcunlun","yongjia","awatuotazhige","ashitawakela"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "huineng",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "wuxinlun",
+      "fangcunlun",
+      "yongjia",
+      "awatuotazhige",
+      "ashitawakela"
+    ]
   },
   {
     "id": "yuanqi",
@@ -849,12 +1426,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "诸法因缘生，诸法因缘灭。 —《杂阿含经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "缘起非理论——当下一念心生，即万法缘起。观此一念从何而来、向何而去，于无处来、无处去中，亲见缘起性空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》《金刚经》《楞伽经》",
-    "relatedConcepts": ["emptiness","zhongdao","prajna"],
-    "relatedPersons": ["nagarjuna"],
-    "relatedBooks": ["lengyanjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "zhongdao",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "lengyanjing"
+    ]
   },
   {
     "id": "wuwo",
@@ -865,12 +1450,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一切法无我。 —《楞伽经》",
       "本来无一物，何处惹尘埃。 —六祖坛经"
-],
+    ],
     "guidance": "无我非断灭——不是没有“我”在做事，而是做事时不立“我”相。如镜照物，物来即照，物去即空，镜不自言“我照”。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《楞伽经》《金刚经》《坛经》",
-    "relatedConcepts": ["emptiness","originally-nothing","self-nature"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["tanjing","lengyanjing","xixulun","sixingguan"]
+    "relatedConcepts": [
+      "emptiness",
+      "originally-nothing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "lengyanjing",
+      "xixulun",
+      "sixingguan"
+    ]
   },
   {
     "id": "niepan",
@@ -881,12 +1478,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "生灭灭已，寂灭为乐。 —《涅槃经》",
       "佛法在世间，不离世间觉。 —六祖坛经"
-],
+    ],
     "guidance": "涅槃非死后方得——当下一念心歇，烦恼不生，即是涅槃。涅槃不在别处，即此此刻之心，息灭一切造作攀缘，本来寂静。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《涅槃经》《坛经》《金刚经》",
-    "relatedConcepts": ["emptiness","affliction-bodhi","self-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["xinjing","fangcunlun","huangbo","zhenxin","yongjia"]
+    "relatedConcepts": [
+      "emptiness",
+      "affliction-bodhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "fangcunlun",
+      "huangbo",
+      "zhenxin",
+      "yongjia"
+    ]
   },
   {
     "id": "banruo-boluomi",
@@ -898,12 +1507,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "应无所住而生其心。 —《金刚经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "般若非知识——不可以分别心求般若。当下一念无心，不取不舍、不分别不执着，即是般若波罗蜜现前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《心经》《坛经》",
-    "relatedConcepts": ["prajna","emptiness","ying-wu-suo-zhu"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["xinjing","jingangjing","tanjing"]
+    "relatedConcepts": [
+      "prajna",
+      "emptiness",
+      "ying-wu-suo-zhu"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "jingangjing",
+      "tanjing"
+    ]
   },
   {
     "id": "wenzi-chan",
@@ -915,12 +1535,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "以指指月，欲人看月，不欲人看指。 —《楞严经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "文字禅之要在于“透过”——透过文字而见月。若执文字为实，则成知见禅；若透过文字而悟心，则文字即是禅。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《从容录》《无门关》",
-    "relatedConcepts": ["koan","beyond-words"],
-    "relatedPersons": ["yuanwu-keqin","wansong-xingxiu","fenyang-shanzhao"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "wansong-xingxiu",
+      "fenyang-shanzhao"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "mozhao-chan-concept",
@@ -932,12 +1561,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "默默忘言，昭昭现前。 —宏智正觉《默照铭》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "默照非枯坐——默中有照，照中有默。若只默不照，则落枯木死灰；若只照不默，则成散乱分别。须默照同时，方为正行。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《默照铭》《宏智正觉禅师广录》",
-    "relatedConcepts": ["samadhi","self-nature","non-mind"],
-    "relatedPersons": ["hongzhi-zhengjue","dahui-zonggao"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "kanhua-chan-concept",
@@ -949,12 +1587,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "参禅须透祖师关，妙悟要穷心路绝。 —《无门关》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "看话之要在于“疑”——不是理解，不是分析，而是以疑情逼至思量不及处。如猫捕鼠，如鸡孵卵，不杂用心，一味参去。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《无门关》",
-    "relatedConcepts": ["koan","tou-xin-wei-si","self-nature"],
-    "relatedPersons": ["dahui-zonggao","wumen-huikai"],
-    "relatedBooks": ["changuancejin","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "koan",
+      "tou-xin-wei-si",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "changuancejin",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "canjiu",
@@ -966,12 +1614,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "参须实参，悟须实悟。 —大慧宗杲",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "参究非研究——研究是用意识分别，参究是以疑情截断意识。参究如钻木取火，不歇不止，直至火起。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
-    "relatedConcepts": ["kanhua-chan-concept","koan","tou-xin-wei-si"],
-    "relatedPersons": ["dahui-zonggao","wumen-huikai","boshan-yuanlai"],
-    "relatedBooks": ["zhenxin","chanlinbaoxun","changuancejin","bashiguijusong","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "koan",
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "wumen-huikai",
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "zhenxin",
+      "chanlinbaoxun",
+      "changuancejin",
+      "bashiguijusong",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "yiqing",
@@ -983,12 +1645,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "大疑大悟，小疑小悟，不疑不悟。 —大慧宗杲",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "疑情非疑惑——疑惑是犹豫不决，疑情是穷追不舍。疑情如石头堵在胸口，吐不出、咽不下，非弄明白不可——此即参禅之动力。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《博山参禅警语》",
-    "relatedConcepts": ["kanhua-chan-concept","canjiu","tou-xin-wei-si"],
-    "relatedPersons": ["dahui-zonggao","boshan-yuanlai"],
-    "relatedBooks": ["zhenxin","changuancejin","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "canjiu",
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "zhenxin",
+      "changuancejin",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "zhuan-shen-ju",
@@ -1000,12 +1673,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一言转身，即超佛越祖。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "转身非身体转——乃心之转向。从执着转向放下，从分别转向无分别，从迷转向悟。转身处即悟处。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《无门关》《临济语录》",
-    "relatedConcepts": ["koan","beyond-words","instant-enlightenment"],
-    "relatedPersons": ["linji","huangbo","deshan-xuanjian"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "linji",
+      "huangbo",
+      "deshan-xuanjian"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "xiangshang-guanliezi",
@@ -1017,11 +1701,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "向上一路，千圣不传。 —《碧岩录》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "向上非向外求——乃向内返照。关捩子不在别处，即此当下之心。宗师之棒喝机锋，皆为打开此关捩子之方便。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《无门关》《临济语录》",
-    "relatedConcepts": ["koan","direct-pointing","mind-transmission"],
-    "relatedPersons": ["linji","yuanwu-keqin"],
+    "relatedConcepts": [
+      "koan",
+      "direct-pointing",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "linji",
+      "yuanwu-keqin"
+    ],
     "relatedBooks": []
   },
   {
@@ -1034,11 +1725,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "格外玄机，不容拟议。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "格外非无法——乃超越常法。如良医用药，有时以毒攻毒；大宗师接人，有时以逆为顺。不可以常情度量，须具正眼方能识得。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《无门关》《五灯会元》",
-    "relatedConcepts": ["koan","beyond-words","non-duality"],
-    "relatedPersons": ["danxia-tianran","mazu","linji"],
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran",
+      "mazu",
+      "linji"
+    ],
     "relatedBooks": []
   },
   {
@@ -1051,12 +1750,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "宗门三种病：不了根身、不了境缘、不了心体。 —玄沙师备",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "禅病之根治在于“正见”——先明禅宗宗旨，方不落诸病。有正见则枯木中有生机，口头中有实参，狂放中有规矩，知见中有体证。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《博山参禅警语》《禅林宝训》《玄沙师备禅师广录》",
-    "relatedConcepts": ["tou-xin-wei-si","self-nature","mozhao-chan-concept"],
-    "relatedPersons": ["xuansha-shibei","boshan-yuanlai","dahui-zonggao"],
-    "relatedBooks": ["boshan-canchanjingyu","xuanshayulu","xuanshaguanglu"]
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "self-nature",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "boshan-yuanlai",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu",
+      "xuanshayulu",
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "wu-nian",
@@ -1067,12 +1778,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "于诸境上心不染，曰无念。 —六祖坛经",
       "若百物不思，当令念绝，即是法缚，即名边见。 —六祖坛经"
-],
+    ],
     "guidance": "无念非无心——心仍起用，只是不执着。如人行走，步步踏地而不恋地；如鸟飞空，处处过空而不留空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》",
-    "relatedConcepts": ["no-abiding","self-nature","non-mind"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "no-abiding",
+      "self-nature",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "wu-xiang",
@@ -1083,14 +1802,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "于相而离相。 —六祖坛经",
       "凡所有相，皆是虚妄。若见诸相非相，即见如来。 —《金刚经》"
-],
+    ],
     "guidance": "无相非灭相——相本空幻，灭亦不得。只须于相上不生执着，即相而离相，即相而见性。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》",
-    "relatedConcepts": ["emptiness","self-nature","wu-nian"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","xuemaicong","fangcunlun","huangbo","zhenxin"]
+    "relatedConcepts": [
+      "emptiness",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "xuemaicong",
+      "fangcunlun",
+      "huangbo",
+      "zhenxin"
+    ]
   },
-  
   {
     "id": "dunwu-jianxiu",
     "title": "顿悟渐修",
@@ -1101,12 +1831,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "理须顿悟，事须渐修。 —永嘉玄觉",
       "时时勤拂拭，勿使惹尘埃。 —神秀",
       "本来无一物，何处惹尘埃。 —慧能"
-],
+    ],
     "guidance": "顿悟非一悟便了——悟后仍须保任。如人初见自性，如日出暗消；然习气深厚，仍须渐除，如雾渐散。顿悟为体，渐修为用，不可偏废。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《永嘉集》《大乘起信论》",
-    "relatedConcepts": ["instant-enlightenment","self-nature","originally-nothing"],
-    "relatedPersons": ["huineng","yongjia","shenhui","ming-bodhisattva"],
-    "relatedBooks": ["xiuxinjue"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature",
+      "originally-nothing"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongjia",
+      "shenhui",
+      "maming"
+    ],
+    "relatedBooks": [
+      "xiuxinjue"
+    ]
   },
   {
     "id": "yixin-sanguan",
@@ -1118,12 +1859,41 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一空一切空，一假一切假，一中一切中。 —天台教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "一心三观非次第修——乃于一念中同时具足三观。空即假即中，非先后、非彼此。如一点落入水中，波即空（无自性）、即假（缘起相）、即中（空假不二）。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《宗镜录》《摩诃止观》",
-    "relatedConcepts": ["zhongdao","samadhi","weishi-yixin"],
-    "relatedPersons": ["tiantai-deshao","yongming-yanshou"],
-    "relatedBooks": ["wuran","xuemaicong","wuxinglun","xixulun","xinxinming","zuishangcheng","zhengdaoge","mazu","huangbo","yuanjuejing","lengyanjing","weimojiejing","yongjia","yunmen","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","xinming","huangbo_wanlinglu","zhaozhouyulu"]
+    "relatedConcepts": [
+      "zhongdao",
+      "samadhi",
+      "weishi-yixin"
+    ],
+    "relatedPersons": [
+      "tiantai-deshao",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wuran",
+      "xuemaicong",
+      "wuxinglun",
+      "xixulun",
+      "xinxinming",
+      "zuishangcheng",
+      "zhengdaoge",
+      "mazu",
+      "huangbo",
+      "yuanjuejing",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "yunmen",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "xinming",
+      "huangbo_wanlinglu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "putixin",
@@ -1135,12 +1905,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "菩提本自性，起心即是妄。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "菩提心非从外发——乃自性本具。悟得自性，即是发无上菩提心；不悟自性，纵发千愿万誓，亦是生灭心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《大乘起信论》",
-    "relatedConcepts": ["self-nature","mind-is-buddha","buddha-nature"],
-    "relatedPersons": ["huineng","ming-bodhisattva"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "mind-is-buddha",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "maming"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "liudu",
@@ -1152,14 +1931,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "般若若智慧，一切处用，即是波罗蜜。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "六度非六件事——乃一心中之六种用。以无执着心行布施、持戒、忍辱、精进、禅定、般若，一一皆成波罗蜜。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《坛经》《大乘起信论》",
-    "relatedConcepts": ["banruo-boluomi","samadhi","wuwo"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["sixingguan"]
+    "relatedConcepts": [
+      "banruo-boluomi",
+      "samadhi",
+      "wuwo"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
-  
   {
     "id": "buyi-buyi",
     "title": "不一不异",
@@ -1170,11 +1956,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "不一不异，不常不断。 —《中论》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "不一不异非折中——乃超越对待。不可说是一（有分别相故），不可说是异（体无二致故）。于言语道断处亲见，方知不一不异之真义。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》《金刚经》",
-    "relatedConcepts": ["zhongdao","non-duality","emptiness"],
-    "relatedPersons": ["nagarjuna"],
+    "relatedConcepts": [
+      "zhongdao",
+      "non-duality",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
     "relatedBooks": []
   },
   {
@@ -1187,11 +1979,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一切众生，皆有如来智慧德相，但以妄想执着不能证得。 —《华严经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "如来智非修得——乃本具。如云遮月，月体不减；云开月现，月体不增。只须去除妄想执着，如来智自然显现。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《坛经》《大乘起信论》",
-    "relatedConcepts": ["tathagatagarbha","buddha-nature","self-nature"],
-    "relatedPersons": ["huineng","ming-bodhisattva"],
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "buddha-nature",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "maming"
+    ],
     "relatedBooks": []
   },
   {
@@ -1204,12 +2003,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "清净法身，汝之性也。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "法身非遥不可及——即此当下清净心。心清净时即是法身，心染污时即是众生。法身不离众生，众生本是法身。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《大乘起信论》",
-    "relatedConcepts": ["self-nature","tathagatagarbha","buddha-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","xixulun","xinxinming"]
+    "relatedConcepts": [
+      "self-nature",
+      "tathagatagarbha",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "xixulun",
+      "xinxinming"
+    ]
   },
   {
     "id": "sanbao",
@@ -1221,12 +2030,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "归依觉，两足尊；归依正，离欲尊；归依净，众中尊。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "三宝不在外——自性即三宝。归依自性之觉而不迷，归依自性之正而不邪，归依自性之净而不染，方为真归依。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》",
-    "relatedConcepts": ["self-nature","mind-is-buddha","buddha-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "mind-is-buddha",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "jiedinghui",
@@ -1237,12 +2054,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "定是慧体，慧是定用。 —六祖坛经",
       "心地无非自性戒，心地无乱自性定，心地无痴自性慧。 —六祖坛经"
-],
+    ],
     "guidance": "戒定慧非三件事——乃一心中之三种德用。心不染即戒，不乱即定，不迷即慧。三即一，一即三。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《楞严经》",
-    "relatedConcepts": ["samadhi","prajna","self-nature"],
-    "relatedPersons": ["huineng","youpoli"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "samadhi",
+      "prajna",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "youpoli"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "yinguo",
@@ -1253,12 +2079,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "不昧因果。 —百丈野狐禅公案",
       "豁达空，拨因果，莽莽荡荡招殃祸。 —永嘉玄觉"
-],
+    ],
     "guidance": "因果非宿命——因果者，因缘也。因缘可转，非不可变。悟自性者，于因果中得自在——不造恶因，不惧恶果，随缘消旧业，更不造新殃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
-    "relatedConcepts": ["yuanqi","emptiness","self-nature"],
-    "relatedPersons": ["huineng","yongjia","baizhang"],
-    "relatedBooks": ["yongjia","sixingguan"]
+    "relatedConcepts": [
+      "yuanqi",
+      "emptiness",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongjia",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "yongjia",
+      "sixingguan"
+    ]
   },
   {
     "id": "lunhui",
@@ -1269,12 +2106,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "前念迷即凡夫，后念悟即佛。 —六祖坛经",
       "知幻即离，不作方便。 —《圆觉经》"
-],
+    ],
     "guidance": "轮回非在别处——即此当下之迷心。一念迷即轮回，一念悟即解脱。破我执即断轮回根，我执若破，生死本空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《圆觉经》",
-    "relatedConcepts": ["wuwo","niepan","affliction-bodhi"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","yuanjuejing"]
+    "relatedConcepts": [
+      "wuwo",
+      "niepan",
+      "affliction-bodhi"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "yuanjuejing"
+    ]
   },
   {
     "id": "jietuo",
@@ -1285,12 +2131,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "本来无一物，何处惹尘埃。 —六祖坛经",
       "佛法在世间，不离世间觉。 —六祖坛经"
-],
+    ],
     "guidance": "解脱非从外得——本无缚，何须解？只须悟得本来清净，即知缚本空幻，解亦不得。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》",
-    "relatedConcepts": ["wuwo","niepan","originally-nothing"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "wuwo",
+      "niepan",
+      "originally-nothing"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "weishi",
@@ -1302,12 +2156,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "三界唯心，万法唯识。 —《华严经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "唯识非理论——乃当下之事实。一切所见所闻所觉所知，皆是心识之变现。了知唯识，则不执着外境——境非境，乃心之影也。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《八识规矩颂》《宗镜录》《坛经》",
-    "relatedConcepts": ["weishi-yixin","self-nature","wei-xin-zao"],
-    "relatedPersons": ["xuanzang","yongming-yanshou"],
-    "relatedBooks": ["bashiguijusong","miyanjing","chengyelun","bianzhongbianlun","jieshenmijing","shedachenglunben","baoxinglun","achengjilun"]
+    "relatedConcepts": [
+      "weishi-yixin",
+      "self-nature",
+      "wei-xin-zao"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "bashiguijusong",
+      "miyanjing",
+      "chengyelun",
+      "bianzhongbianlun",
+      "jieshenmijing",
+      "shedachenglunben",
+      "baoxinglun",
+      "achengjilun"
+    ]
   },
   {
     "id": "alaiye-shi",
@@ -1319,12 +2189,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "大圆镜智性清净。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "阿赖耶识非离自性别有——迷时为阿赖耶，悟时为大圆镜。不用消灭阿赖耶识，只须转迷为悟，染污种子自然清净。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《八识规矩颂》《楞伽经》《坛经》",
-    "relatedConcepts": ["weishi","tathagatagarbha","self-nature"],
-    "relatedPersons": ["xuanzang","huineng"],
-    "relatedBooks": ["bashiguijusong","lengyanjing","dachengqixinlun","miyanjing","chengyelun","jieshenmijing","shedachenglunben","lengqiejing"]
+    "relatedConcepts": [
+      "weishi",
+      "tathagatagarbha",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "bashiguijusong",
+      "lengyanjing",
+      "dachengqixinlun",
+      "miyanjing",
+      "chengyelun",
+      "jieshenmijing",
+      "shedachenglunben",
+      "lengqiejing"
+    ]
   },
   {
     "id": "rulai-chan-zushi-chan",
@@ -1336,11 +2222,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "汝只得如来禅，未得祖师禅。 —仰山慧寂",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "如来禅与祖师禅非二法——如来禅为基，祖师禅为顶。无如来禅之渐修基础，祖师禅之顿悟无由生起。然执如来禅而不进，则终在途中；须透过如来禅，方入祖师禅。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《五灯会元》《传灯录》",
-    "relatedConcepts": ["dunwu-jianxiu","direct-pointing","instant-enlightenment"],
-    "relatedPersons": ["yangshan-huiji","xiangyan-zhixian"],
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "direct-pointing",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "yangshan-huiji",
+      "xiangyan-zhixian"
+    ],
     "relatedBooks": []
   },
   {
@@ -1353,12 +2246,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "教外别传，不立文字；直指人心，见性成佛。 —达摩传法偈",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "教外别传非不用经教——乃不执着经教。经教如药方，悟道如病愈——病愈后何须药方？然未愈前，药方不可废。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《无门关》《传灯录》",
-    "relatedConcepts": ["direct-pointing","mind-transmission","beyond-words"],
-    "relatedPersons": ["bodhidharma","huineng"],
-    "relatedBooks": ["qifo","xuemaicong","chanlinbaoxun","bashiguijusong"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "mind-transmission",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "xuemaicong",
+      "chanlinbaoxun",
+      "bashiguijusong"
+    ]
   },
   {
     "id": "zhengfa-yancang",
@@ -1370,12 +2275,31 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。 —《传灯录》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "正法眼藏非从外得——乃自性本具。悟自性即开正法眼，见实相即得正法藏。不悟自性，纵读尽三藏十二部，亦不得正法眼藏。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《传灯录》《无门关》《碧岩录》",
-    "relatedConcepts": ["mind-transmission","direct-pointing","jiaowai-biechuan"],
-    "relatedPersons": ["buddha","jiaye","bodhidharma"],
-    "relatedBooks": ["qifo","xuemaicong","tanjing","shiniutu"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "direct-pointing",
+      "jiaowai-biechuan",
+      "chuan-fa-zheng-zong",
+      "nian-hua-wei-xiao",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "buddha",
+      "jiaye",
+      "bodhidharma",
+      "qisong",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "xuemaicong",
+      "tanjing",
+      "shiniutu",
+      "chuanfazhengzongji"
+    ]
   },
   {
     "id": "niepan-miaoxin",
@@ -1387,11 +2311,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "吾有正法眼藏，涅槃妙心，实相无相。 —《传灯录》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "涅槃妙心非别有心——即此当下不生不灭之心。心不生不灭，即是涅槃妙心。不须别求，只须悟得当下之心本来涅槃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《传灯录》《坛经》《心经》",
-    "relatedConcepts": ["zhengfa-yancang","self-nature","niepan"],
-    "relatedPersons": ["buddha","jiaye","huineng"],
+    "relatedConcepts": [
+      "zhengfa-yancang",
+      "self-nature",
+      "niepan"
+    ],
+    "relatedPersons": [
+      "buddha",
+      "jiaye",
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -1403,12 +2335,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "实相无相。 —《金刚经》义",
       "凡所有相，皆是虚妄。若见诸相非相，即见如来。 —《金刚经》"
-],
+    ],
     "guidance": "实相非别有相——即此当下一切法之真实相。不被相转，即见实相。如镜照物，物来不迎，物去不追——镜体清净，即实相也。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《坛经》《中论》",
-    "relatedConcepts": ["emptiness","self-nature","zhongdao"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["jingangjing"]
+    "relatedConcepts": [
+      "emptiness",
+      "self-nature",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "jingangjing"
+    ]
   },
   {
     "id": "zhenru",
@@ -1419,12 +2360,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "何期自性本不动摇。 —六祖坛经",
       "真如者，无虚妄不变异。 —《大乘起信论》"
-],
+    ],
     "guidance": "真如非别有物——即此当下心之本体。心不随境转，即是真如现前。如水常湿，虽波有起伏，湿性不变——湿性即真如，波即生灭法。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大乘起信论》《坛经》《楞伽经》",
-    "relatedConcepts": ["self-nature","tathagatagarbha","shixiang"],
-    "relatedPersons": ["huineng","ming-bodhisattva"],
-    "relatedBooks": ["tanjing","dachengqixinlun","baojingsanmei"]
+    "relatedConcepts": [
+      "self-nature",
+      "tathagatagarbha",
+      "shixiang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "maming"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "dachengqixinlun",
+      "baojingsanmei"
+    ]
   },
   {
     "id": "fajie",
@@ -1435,12 +2387,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一即一切，一切即一。 —华严教义",
       "心如虚空，名之为大。 —六祖坛经"
-],
+    ],
     "guidance": "法界非在心外——即此心之全体大用。心量广大，犹如虚空——能包万法，不拒万法。了知法界唯心，则不执着一隅——心包太虚，量周沙界。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《坛经》《宗镜录》",
-    "relatedConcepts": ["self-nature","wei-xin-zao","emptiness"],
-    "relatedPersons": ["huineng","yongming-yanshou"],
-    "relatedBooks": ["tanjing","fangcunlun","baojingsanmei"]
+    "relatedConcepts": [
+      "self-nature",
+      "wei-xin-zao",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "fangcunlun",
+      "baojingsanmei"
+    ]
   },
   {
     "id": "lishi-wuai",
@@ -1452,12 +2415,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "理随事变，事得理融。 —华严教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "理事无碍非理与事合——理即事，事即理。如波即水，水即波。不须离波求水，不须离事求理——即事明理，即波见水。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《宗镜录》",
-    "relatedConcepts": ["fajie","non-duality","ordinary-mind"],
-    "relatedPersons": ["yongming-yanshou","tiantai-deshao"],
-    "relatedBooks": ["wanshantongguiji","mazu","baojingsanmei","yongjia","huanwuyulu"]
+    "relatedConcepts": [
+      "fajie",
+      "non-duality",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "tiantai-deshao"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji",
+      "mazu",
+      "baojingsanmei",
+      "yongjia",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "shishi-wuai",
@@ -1468,11 +2444,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一花一世界，一叶一菩提。",
       "一即一切，一切即一。 —华严教义"
-],
+    ],
     "guidance": "事事无碍非理论——乃悟后之境界。悟得万法唯心、一即一切时，则一花一叶皆是佛法，一语一默皆是禅机。不须离事求道，即事即道。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《宗镜录》",
-    "relatedConcepts": ["fajie","lishi-wuai","non-duality"],
-    "relatedPersons": ["fayan-wenyi","yongming-yanshou"],
+    "relatedConcepts": [
+      "fajie",
+      "lishi-wuai",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
     "relatedBooks": []
   },
   {
@@ -1484,11 +2467,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一即一切，一切即一。 —华严教义",
       "万法归一。 —禅宗公案"
-],
+    ],
     "guidance": "一即一切非理论——乃悟后之亲证。悟得一心时，则一花即万法，一念即三世。不须遍游万法方知万法——于一法中见万法，即一即一切。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《宗镜录》",
-    "relatedConcepts": ["fajie","all-returns-to-one","self-nature"],
-    "relatedPersons": ["yongming-yanshou","fayan-wenyi"],
+    "relatedConcepts": [
+      "fajie",
+      "all-returns-to-one",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi"
+    ],
     "relatedBooks": []
   },
   {
@@ -1500,11 +2490,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "色即是空，空即是色。 —《心经》",
       "色不异空，空不异色。 —《心经》"
-],
+    ],
     "guidance": "色空不二非色与空合——色即空，空即色。不须离色求空，即色见空；不须离空求色，即空见色。如即波见水，即水见波——波水不二。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《心经》《金刚经》《坛经》",
-    "relatedConcepts": ["emptiness","non-duality","wu-xiang"],
-    "relatedPersons": ["huineng","xuanzang"],
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality",
+      "wu-xiang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "xuanzang"
+    ],
     "relatedBooks": []
   },
   {
@@ -1516,12 +2513,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "是故空中无色，无受想行识，不生不灭。 —《心经》",
       "何期自性本不动摇。 —六祖坛经"
-],
+    ],
     "guidance": "不生不灭非死寂——乃生灭中之不生灭性。如波有起伏而水不变——波生波灭，水不生不灭。悟得此不生不灭之性，则于生灭中得大自在。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《心经》《中论》《坛经》",
-    "relatedConcepts": ["zhongdao","zhenru","shixiang"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["xinjing","tanjing"]
+    "relatedConcepts": [
+      "zhongdao",
+      "zhenru",
+      "shixiang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "tanjing"
+    ]
   },
   {
     "id": "foxing-changzhu",
@@ -1532,12 +2539,48 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "何期自性本自清净。 —六祖坛经",
       "佛性常住，无有变易。 —《涅槃经》"
-],
+    ],
     "guidance": "佛性常住非理论——乃修行之根本信心。信佛性常住，则不向外求、不从他得——只须去除客尘妄想，佛性自然显现。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《涅槃经》《坛经》《大乘起信论》",
-    "relatedConcepts": ["buddha-nature","self-nature","zhenru"],
-    "relatedPersons": ["huineng","ming-bodhisattva"],
-    "relatedBooks": ["wuran","xuemaicong","wuxinglun","poxianglun","xixulun","anxin","zuishangcheng","zhengdaoge","mazu","linji","zhigong","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","yongjia","yunmen","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian","huangbo_wanlinglu","zhaozhouyulu","baoxinglun"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature",
+      "zhenru"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "maming"
+    ],
+    "relatedBooks": [
+      "wuran",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "xixulun",
+      "anxin",
+      "zuishangcheng",
+      "zhengdaoge",
+      "mazu",
+      "linji",
+      "zhigong",
+      "shenhui",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "yongjia",
+      "yunmen",
+      "wumenguan",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "dahuiyulu",
+      "chanjia_guijian",
+      "huangbo_wanlinglu",
+      "zhaozhouyulu",
+      "baoxinglun"
+    ]
   },
   {
     "id": "yinian-sanqian",
@@ -1549,12 +2592,47 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一念心中具足三千世间。 —天台教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "一念三千非理论——乃悟后之亲证。悟得一念心时，则一念即三千，三千即一念。不须遍历三千方知三千——于一念中见三千，即一即一切。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《摩诃止观》《宗镜录》",
-    "relatedConcepts": ["yiji-yiqie","fajie","self-nature"],
-    "relatedPersons": ["tiantai-deshao","yongming-yanshou"],
-    "relatedBooks": ["wenshu","wuran","zhangzhi","xuemaicong","wuxinglun","poxianglun","xinxinming","fangcunlun","anxin","tanjing","mazu","baizhang","huangbo","xiuxinjue","linji","zhigong","shenhui","jingangjing","yuanjuejing","lengyanjing","weimojiejing","yongjia","wumenguan","changuancejin","huanwuxinyao","huanwuyulu","huangbo_wanlinglu"]
+    "relatedConcepts": [
+      "yiji-yiqie",
+      "fajie",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "tiantai-deshao",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wenshu",
+      "wuran",
+      "zhangzhi",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "xinxinming",
+      "fangcunlun",
+      "anxin",
+      "tanjing",
+      "mazu",
+      "baizhang",
+      "huangbo",
+      "xiuxinjue",
+      "linji",
+      "zhigong",
+      "shenhui",
+      "jingangjing",
+      "yuanjuejing",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "wumenguan",
+      "changuancejin",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "xingju-shane",
@@ -1566,11 +2644,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "自性具三十六对法。 —六祖坛经义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "性具善恶非纵恶——乃知善恶皆自性之妙用。悟自性者，善恶皆为我所用，我不为善恶所用。如摩尼珠现众色，珠体不染。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《摩诃止观》《坛经》",
-    "relatedConcepts": ["buddha-nature","self-nature","non-duality"],
-    "relatedPersons": ["tiantai-deshao","yongming-yanshou"],
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "tiantai-deshao",
+      "yongming-yanshou"
+    ],
     "relatedBooks": []
   },
   {
@@ -1582,12 +2667,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "无明实性即佛性。 —《中论》义",
       "前念迷即凡夫，后念悟即佛。 —六祖坛经"
-],
+    ],
     "guidance": "无明非实有——如梦中事，醒来即无。不须断无明——只须悟得无明本空，即无明转为菩提。如冰不须断——只须融之，冰即化为水。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大乘起信论》《坛经》《中论》",
-    "relatedConcepts": ["affliction-bodhi","self-nature","lunhui"],
-    "relatedPersons": ["huineng","ming-bodhisattva","nagarjuna"],
-    "relatedBooks": ["tanjing","dachengqixinlun"]
+    "relatedConcepts": [
+      "affliction-bodhi",
+      "self-nature",
+      "lunhui"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "maming",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "sanshen",
@@ -1599,12 +2695,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "清净法身，汝之性也；圆满报身，汝之智也；千百亿化身，汝之行也。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "三身非别有三身——乃一心之体相用。悟自性即见法身，起智慧即现报身，度众生即起化身。三身即一身，一身即三身。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《大乘起信论》",
-    "relatedConcepts": ["fashen","self-nature","buddha-nature"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "fashen",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "sizhi",
@@ -1616,12 +2720,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "大圆镜智性清净，平等性智心无病，妙观察智见非功，成所作智同圆镜。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "四智非从外得——乃自性本具。迷时为八识，悟时为四智。不须断八识——只须转迷为悟，八识自然转为四智。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《八识规矩颂》《成唯识论》",
-    "relatedConcepts": ["alaiye-shi","weishi","self-nature"],
-    "relatedPersons": ["huineng","xuanzang"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "alaiye-shi",
+      "weishi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "zhuan-shi-cheng-zhi",
@@ -1632,12 +2745,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "大圆镜智性清净。 —六祖坛经",
       "转八识成四智。 —唯识教义"
-],
+    ],
     "guidance": "转识成智非从外得——乃心之迷悟转变。迷即识，悟即智。不须断识——只须悟得自性清净，识自然转为智。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《八识规矩颂》《成唯识论》",
-    "relatedConcepts": ["sizhi","alaiye-shi","weishi"],
-    "relatedPersons": ["huineng","xuanzang"],
-    "relatedBooks": ["bashiguijusong","dachengzhuangyanjinglun"]
+    "relatedConcepts": [
+      "sizhi",
+      "alaiye-shi",
+      "weishi"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "bashiguijusong",
+      "dachengzhuangyanjinglun"
+    ]
   },
   {
     "id": "buke-siyi",
@@ -1648,12 +2771,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "妙理非言所及。 —六祖坛经义",
       "如人饮水，冷暖自知。 —禅宗常语"
-],
+    ],
     "guidance": "不可思议非不可知——乃不可以思维分别知、不可以言语议论知。唯亲证方知——如人饮水，冷暖自知，不假言说。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《维摩诘经》《华严经》",
-    "relatedConcepts": ["beyond-words","shixiang","jiaowai-biechuan"],
-    "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["tanjing","weimojiejing"]
+    "relatedConcepts": [
+      "beyond-words",
+      "shixiang",
+      "jiaowai-biechuan"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "yicheng",
@@ -1664,12 +2797,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "十方佛土中，唯有一乘法，无二亦无三。 —《法华经》",
       "法无顿渐，见有迟疾。 —六祖坛经"
-],
+    ],
     "guidance": "一乘非别有法——即此当下之心。悟自性即一乘，迷自性即三乘。不须舍三乘求一乘——即三乘之体即是一乘。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《法华经》《坛经》《维摩诘经》",
-    "relatedConcepts": ["instant-enlightenment","direct-pointing","self-nature"],
-    "relatedPersons": ["shengman-furen","huineng"],
-    "relatedBooks": ["shengmanjing","tanjing"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "direct-pointing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "tanjing"
+    ]
   },
   {
     "id": "fangbian",
@@ -1680,12 +2823,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "吾若言有法与人，即为诳汝。 —六祖坛经义",
       "方便即究竟。 —天台教义"
-],
+    ],
     "guidance": "方便非可执——如筏喻者，到岸即舍。然未到岸前，不可无方便。执方便为究竟，则成知见；弃方便而求究竟，则无门可入。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《法华经》《坛经》《维摩诘经》",
-    "relatedConcepts": ["jiaowai-biechuan","canjiu","koan"],
-    "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["tanjing","weimojiejing"]
+    "relatedConcepts": [
+      "jiaowai-biechuan",
+      "canjiu",
+      "koan"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "shan-zhishi",
@@ -1696,12 +2849,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "若自不悟，须觅大乘善知识，解最上乘法者，直示正路。 —六祖坛经",
       "若自悟者，不假外求。 —六祖坛经"
-],
+    ],
     "guidance": "善知识为指路之人——因指见月，不可执指为月。善知识为渡河之筏——到岸即舍，不可负筏而行。究竟须自悟，善知识仅助缘。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《法华经》《禅林宝训》",
-    "relatedConcepts": ["fangbian","direct-pointing","canjiu"],
-    "relatedPersons": ["huineng","dahui-zonggao"],
-    "relatedBooks": ["tanjing","chanlinbaoxun"]
+    "relatedConcepts": [
+      "fangbian",
+      "direct-pointing",
+      "canjiu"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "wenzi-zhang",
@@ -1712,11 +2875,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "道在心悟，不在文字。 —禅宗常语",
       "终日数他宝，自无半钱分。 —永嘉玄觉"
-],
+    ],
     "guidance": "文字障非不用文字——乃不执着文字。文字如药，病愈即舍；文字如指，见月即忘。以文字入道，不以文字为道。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《永嘉集》《碧岩录》",
-    "relatedConcepts": ["jiaowai-biechuan","beyond-words","wenzi-chan"],
-    "relatedPersons": ["huineng","yongjia"],
+    "relatedConcepts": [
+      "jiaowai-biechuan",
+      "beyond-words",
+      "wenzi-chan"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongjia"
+    ],
     "relatedBooks": []
   },
   {
@@ -1729,12 +2899,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "汝向去有把茆盖头，或为知解宗徒。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "知解非全无用——初学须藉知解入门。然不可以知解为究竟——知解如地图，亲证如到地。须从知解入，从亲证出。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《禅林宝训》",
-    "relatedConcepts": ["wenzi-zhang","wenzi-chan","beyond-words"],
-    "relatedPersons": ["huineng","shenhui"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "wenzi-zhang",
+      "wenzi-chan",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "shenhui"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "koutou-chan",
@@ -1746,12 +2925,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "以口头禅为悟，如以蛇为龙。 —大慧宗杲义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "口头禅非真禅——须实参实究。能说一丈不如行一尺——说得百般道理，不如当下实参一句“念佛是谁”。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《禅林宝训》《禅关策进》",
-    "relatedConcepts": ["wenzi-chan","zhijie-zongtu","canjiu"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "wenzi-chan",
+      "zhijie-zongtu",
+      "canjiu"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "kuang-chan",
@@ -1763,11 +2950,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "豁达空，拨因果，莽莽荡荡招殃祸。 —永嘉玄觉",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "狂禅非禅——乃以禅为借口之放纵。真悟者不拨因果——于因果中得自在，非拨无因果。真悟者不废修行——悟后更须保任磨炼。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《永嘉集》《禅林宝训》《禅关策进》",
-    "relatedConcepts": ["yinguo","affliction-bodhi","baoren"],
-    "relatedPersons": ["yongjia","dahui-zonggao","zhuhong"],
+    "relatedConcepts": [
+      "yinguo",
+      "affliction-bodhi",
+      "baoren"
+    ],
+    "relatedPersons": [
+      "yongjia",
+      "dahui-zonggao",
+      "zhuhong"
+    ],
     "relatedBooks": []
   },
   {
@@ -1780,11 +2975,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "枯木死灰，非真禅定。 —大慧宗杲义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "枯木禅非真禅——真禅者，寂而常照、照而常寂。如镜之寂——物来不迎，物去不追，然镜体常明。枯木之病在于无明——寂而无照，死而无活。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《默照铭》《禅林宝训》",
-    "relatedConcepts": ["mozhao-chan-concept","chanbing","samadhi"],
-    "relatedPersons": ["dahui-zonggao","hongzhi-zhengjue"],
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "chanbing",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "hongzhi-zhengjue"
+    ],
     "relatedBooks": []
   },
   {
@@ -1796,12 +2998,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "如来者，无所从来，亦无所去，故名如来。 —《金刚经》",
       "如来者，自性也。 —六祖坛经义"
-],
+    ],
     "guidance": "如来非在别处——即此自性。悟自性即见如来——如来不来不去，即法身常住。不须向外求如来，即此当下之心即是如来。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《坛经》",
-    "relatedConcepts": ["self-nature","fashen","zhenru"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["jingangjing","tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "fashen",
+      "zhenru"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "jingangjing",
+      "tanjing"
+    ]
   },
   {
     "id": "puti",
@@ -1812,12 +3023,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "菩提本自性。 —六祖坛经",
       "菩提本无树，明镜亦非台。 —六祖坛经"
-],
+    ],
     "guidance": "菩提非从外得——乃自性本具。只须去除烦恼覆盖，菩提自然显现。如云开月现——月体本在，不须别求。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》",
-    "relatedConcepts": ["self-nature","putixin","niepan"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","jingangjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "putixin",
+      "niepan"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "jingangjing"
+    ]
   },
   {
     "id": "liuxiang-yuanrong",
@@ -1829,12 +3049,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一即一切，一切即一。 —华严教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "六相圆融非理论——乃悟后之境界。悟得万法唯心时，则总别不二、同异不二、成坏不二——一切圆融，无障无碍。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《宗镜录》",
-    "relatedConcepts": ["shishi-wuai","fajie","non-duality"],
-    "relatedPersons": ["fayan-wenyi","yongming-yanshou"],
-    "relatedBooks": ["wenyiyulu","lengyanjing"]
+    "relatedConcepts": [
+      "shishi-wuai",
+      "fajie",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wenyiyulu",
+      "lengyanjing"
+    ]
   },
   {
     "id": "weixin-jingtu",
@@ -1845,12 +3075,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "迷人念佛求生于彼，悟人自净其心。 —六祖坛经",
       "心净则佛土净。 —《维摩诘经》"
-],
+    ],
     "guidance": "唯心净土非否定西方净土——乃明净土之体唯心。心净则土净——不须离此心别求净土。然未悟前，不妨念佛求生西方——以事修助理悟。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《维摩诘经》《万善同归集》",
-    "relatedConcepts": ["wei-xin-zao","self-nature","chan-jing-shuangxiu"],
-    "relatedPersons": ["huineng","yongming-yanshou","weimojie"],
-    "relatedBooks": ["weimojiejing"]
+    "relatedConcepts": [
+      "wei-xin-zao",
+      "self-nature",
+      "chan-jing-shuangxiu"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongming-yanshou",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "xin-fo-zhongsheng",
@@ -1861,11 +3101,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "心佛及众生，是三无差别。 —《华严经》",
       "前念迷即凡夫，后念悟即佛。 —六祖坛经"
-],
+    ],
     "guidance": "三无差别非混同——乃明三者同以一心为体。迷时心为众生，悟时心为佛——迷悟虽异，心体无别。不须离心别求佛，不须离众生别求心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《坛经》",
-    "relatedConcepts": ["mind-is-buddha","self-nature","buddha-nature"],
-    "relatedPersons": ["huineng","yongming-yanshou"],
+    "relatedConcepts": [
+      "mind-is-buddha",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "yongming-yanshou"
+    ],
     "relatedBooks": []
   },
   {
@@ -1877,11 +3124,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "不离生死而得涅槃。 —《维摩诘经》",
       "佛法在世间，不离世间觉。 —六祖坛经"
-],
+    ],
     "guidance": "生死即涅槃非不离生死——乃于生死中悟得涅槃。如波即水——不须断波别求水，只须即波见水。生死即涅槃——不须离生死别求涅槃，只须即生死见涅槃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《维摩诘经》《坛经》",
-    "relatedConcepts": ["affliction-bodhi","niepan","non-duality"],
-    "relatedPersons": ["huineng","weimojie"],
+    "relatedConcepts": [
+      "affliction-bodhi",
+      "niepan",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
     "relatedBooks": []
   },
   {
@@ -1894,12 +3148,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "何期自性能生万法。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "法性非别有物——即此万法之本性。如波之湿性——波虽千差，湿性不二。万法虽异，法性不二——悟法性者，于万法中见一性。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《中论》《大乘起信论》",
-    "relatedConcepts": ["zhenru","self-nature","shixiang"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "zhenru",
+      "self-nature",
+      "shixiang"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "xinxin-xiangyin",
@@ -1911,11 +3174,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "以心传心，不立文字。 —禅宗常语",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "心心相印非师给予弟子——乃弟子之心与师之心相应。如两镜相照——镜体本同，光光相摄。悟自性即与祖师心心相印——不假外求，不假言说。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《传灯录》《碧岩录》《无门关》",
-    "relatedConcepts": ["mind-transmission","jiaowai-biechuan","zhengfa-yancang"],
-    "relatedPersons": ["bodhidharma","huineng","jiaye"],
+    "relatedConcepts": [
+      "mind-transmission",
+      "jiaowai-biechuan",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng",
+      "jiaye"
+    ],
     "relatedBooks": []
   },
   {
@@ -1928,12 +3199,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一花开五叶，结果自然成。 —达摩传法偈",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "一花开五叶非别有五叶——五叶即一花之展开。五家宗风虽异，心印则一——皆以明心见性为根本。不可执一花而废五叶，亦不可执五叶而忘一花。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《传灯录》《五灯会元》",
-    "relatedConcepts": ["mind-transmission","jiaowai-biechuan","direct-pointing"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "jiaowai-biechuan",
+      "direct-pointing",
+      "chuan-fa-zheng-zong",
+      "zhengfa-yancang",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike",
+      "huineng",
+      "qisong"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "chuanfazhengzongji"
+    ]
   },
   {
     "id": "xitian-ershiba-zu",
@@ -1945,12 +3231,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "吾有正法眼藏，涅槃妙心，付嘱摩诃迦叶。 —《传灯录》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "西天二十八祖非历史考证——乃禅宗传承之法脉。法脉以心传心，不以文字传——悟自性即与二十八祖心心相印，不悟则虽读尽传承世系亦不得法脉。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《传灯录》《五灯会元》",
-    "relatedConcepts": ["mind-transmission","zhengfa-yancang","jiaowai-biechuan"],
-    "relatedPersons": ["bodhidharma","jiaye","nagarjuna"],
-    "relatedBooks": ["chuanfazhengzongji", "yunmen","chuanfazhengzongdingzutu"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "zhengfa-yancang",
+      "jiaowai-biechuan"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "jiaye",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "yunmen",
+      "chuanfazhengzongdingzutu"
+    ]
   },
   {
     "id": "yixiu-jue",
@@ -1962,12 +3260,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "体即无生，了本无速。 —永嘉玄觉",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "一宿觉非时间之长短——乃悟入之快慢。悟则一宿即觉，不悟则经劫犹迷。悟在当下一念——不在时间长短。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《永嘉集》《传灯录》",
-    "relatedConcepts": ["instant-enlightenment","direct-pointing","self-nature"],
-    "relatedPersons": ["yongjia","huineng"],
-    "relatedBooks": ["tanjing","yongjia"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "direct-pointing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "yongjia",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "yongjia"
+    ]
   },
   {
     "id": "dunjiao",
@@ -1978,12 +3286,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "法无顿渐，见有迟疾。 —六祖坛经",
       "前念迷即凡夫，后念悟即佛。 —六祖坛经"
-],
+    ],
     "guidance": "顿教非无修行——乃明修行之归宿在顿悟。渐修为方便，顿悟为究竟。不须舍渐修求顿悟——即渐修之终点即顿悟。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《顿悟入道要门论》",
-    "relatedConcepts": ["instant-enlightenment","dunwu-jianxiu","yicheng"],
-    "relatedPersons": ["huineng","shenhui"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "dunwu-jianxiu",
+      "yicheng"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "shenhui"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "jianjiao",
@@ -1995,11 +3312,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "法无顿渐，见有迟疾。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "渐教非低顿教一等——乃因材施教之方便。钝根须渐修，利根可顿悟。然渐修之归宿在顿悟——渐修如磨镜，镜明即顿悟。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《楞严经》",
-    "relatedConcepts": ["dunwu-jianxiu","dunjiao","fangbian"],
-    "relatedPersons": ["shenhui"],
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "dunjiao",
+      "fangbian"
+    ],
+    "relatedPersons": [
+      "shenhui"
+    ],
     "relatedBooks": []
   },
   {
@@ -2012,12 +3335,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "诸法因缘生，诸法因缘灭。 —《缘起偈》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "因缘非宿命——乃一切法之生起条件。了知因缘，则不执着一切法——法既因缘和合而生，缘散即灭，何可执着？悟因缘者，于缘起中见性空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《缘起偈》《中论》《坛经》",
-    "relatedConcepts": ["yuanqi","emptiness","wuwo"],
-    "relatedPersons": ["nagarjuna","huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "yuanqi",
+      "emptiness",
+      "wuwo"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "sanfa-yin",
@@ -2029,11 +3361,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "诸行无常，诸法无我，涅槃寂静。 —佛教根本教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "三法印非理论——乃修行之验证。悟自性者，于无常中见真常——自性不生不灭；于无我中见真我——自性非分别心之我；于生死中见涅槃——自性本自清净。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《阿含经》《中论》《坛经》",
-    "relatedConcepts": ["emptiness","wuwo","niepan"],
-    "relatedPersons": ["nagarjuna","huineng"],
+    "relatedConcepts": [
+      "emptiness",
+      "wuwo",
+      "niepan"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -2046,14 +3385,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "依法不依人，依义不依语，依智不依识，依了义不依不了义。 —《涅槃经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "四依非排斥经教——乃明经教之指归在实义。如以指指月——因指见月，依义不依语；不可以指为月——依语不依义，即为文字障。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《涅槃经》《坛经》",
-    "relatedConcepts": ["jiaowai-biechuan","wenzi-zhang","beyond-words"],
-    "relatedPersons": ["huineng"],
+    "relatedConcepts": [
+      "jiaowai-biechuan",
+      "wenzi-zhang",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
     "relatedBooks": []
   },
-  
   {
     "id": "ba-zhengdao",
     "title": "八正道",
@@ -2064,11 +3408,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "八正道者，古仙道。 —《阿含经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "八正道非渐修专利——顿悟之人，一念具足八正道。正见即般若正见，正定即自性大定。不须次第修八正道——悟自性即八正道同时具足。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《阿含经》《坛经》",
-    "relatedConcepts": ["jiedinghui","fangbian","baoren"],
-    "relatedPersons": ["buddha","huineng"],
+    "relatedConcepts": [
+      "jiedinghui",
+      "fangbian",
+      "baoren"
+    ],
+    "relatedPersons": [
+      "buddha",
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -2081,11 +3432,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "无明灭则行灭，行灭则识灭……生灭则老死灭。 —《阿含经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "十二因缘非须次第断——一念顿悟无明本空，十二因缘一时脱落。如梦中十二事——醒来一时皆空。悟自性即断无明——无明灭则十二支皆灭。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《阿含经》《中论》《坛经》",
-    "relatedConcepts": ["wuming","lunhui","yuanqi"],
-    "relatedPersons": ["buddha","nagarjuna"],
+    "relatedConcepts": [
+      "wuming",
+      "lunhui",
+      "yuanqi"
+    ],
+    "relatedPersons": [
+      "buddha",
+      "nagarjuna"
+    ],
     "relatedBooks": []
   },
   {
@@ -2098,12 +3456,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "此是苦，此是集，此是灭，此是道。 —《转法轮经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "四谛非须次第修——一念顿悟烦恼本空，苦集一时脱落，灭道同时具足。悟自性即灭谛——自性本无烦恼，自性即是涅槃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《阿含经》《坛经》",
-    "relatedConcepts": ["ba-zhengdao","wuming","niepan"],
-    "relatedPersons": ["buddha","huineng"],
-    "relatedBooks": ["achengjilun"]
+    "relatedConcepts": [
+      "ba-zhengdao",
+      "wuming",
+      "niepan"
+    ],
+    "relatedPersons": [
+      "buddha",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "achengjilun"
+    ]
   },
   {
     "id": "wu-yun",
@@ -2115,12 +3482,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "照见五蕴皆空，度一切苦厄。 —《心经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "五蕴皆空非五蕴不存在——乃五蕴无自性。如波虽现而水不变——五蕴虽现而自性不动。悟自性者，于五蕴中见空——即五蕴而见空，不离五蕴别求空。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《心经》《坛经》",
-    "relatedConcepts": ["wuwo","emptiness","sekong-buer"],
-    "relatedPersons": ["huineng","xuanzang"],
-    "relatedBooks": ["xinjing","tanjing","achengjilun"]
+    "relatedConcepts": [
+      "wuwo",
+      "emptiness",
+      "sekong-buer"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "tanjing",
+      "achengjilun"
+    ]
   },
   {
     "id": "shiba-jie",
@@ -2132,12 +3510,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "无眼耳鼻舌身意，无色声香味触法。 —《心经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "十八界唯心——根尘识皆心之变现。悟自性者，于十八界中见一心——十八界虽异，心体不二。不须离十八界别求自性——即十八界之体即是自性。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《心经》《楞严经》《坛经》",
-    "relatedConcepts": ["wu-yun","wei-xin-zao","self-nature"],
-    "relatedPersons": ["huineng","xuanzang"],
-    "relatedBooks": ["xinjing","tanjing"]
+    "relatedConcepts": [
+      "wu-yun",
+      "wei-xin-zao",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xinjing",
+      "tanjing"
+    ]
   },
   {
     "id": "jielv",
@@ -2148,12 +3536,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "心平何劳持戒，行直何用修禅。 —六祖坛经",
       "一日不作，一日不食。 —百丈怀海"
-],
+    ],
     "guidance": "戒律之体在自性——自性清净则自然不犯。然未悟前，须以事相戒律约束身心——如未学步者须扶杖，既学步则杖可弃。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《百丈清规》《梵网经》",
-    "relatedConcepts": ["jiedinghui","self-nature","baoren"],
-    "relatedPersons": ["huineng","baizhang"],
-    "relatedBooks": ["chanlinbaoxun"]
+    "relatedConcepts": [
+      "jiedinghui",
+      "self-nature",
+      "baoren"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "chanding",
@@ -2165,12 +3562,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "外离相为禅，内不乱为定。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "禅定非坐禅——乃心不散乱。行住坐卧，心不散乱即是禅定。不须拘于坐相——坐中不乱是禅定，行中不乱亦是禅定。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《楞严经》《禅源诸诠集都序》",
-    "relatedConcepts": ["samadhi","jiedinghui","mozhao-chan-concept"],
-    "relatedPersons": ["huineng","mazu"],
-    "relatedBooks": ["tanjing","chanlinbaoxun"]
+    "relatedConcepts": [
+      "samadhi",
+      "jiedinghui",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "chanlinbaoxun"
+    ]
   },
   {
     "id": "bore-zhi",
@@ -2181,12 +3588,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "何期自性本自具足。 —六祖坛经",
       "般若无知，无所不知。 —《大智度论》义"
-],
+    ],
     "guidance": "般若智非从外得——乃自性本具。迷时为烦恼所覆，悟时自然显现。如云开月现——月体本在，不须别求。修行非求般若——乃去除覆盖般若之烦恼。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《大智度论》《金刚经》",
-    "relatedConcepts": ["prajna","self-nature","sizhi"],
-    "relatedPersons": ["huineng","nagarjuna"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "prajna",
+      "self-nature",
+      "sizhi"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "cibei",
@@ -2198,12 +3614,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "无缘大慈，同体大悲。 —佛教常语",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "慈悲非造作——乃自性之流露。悟自性者，见一切众生本具佛性，自然起慈悲——如镜照物，不择好丑。不须勉强慈悲——只须悟自性，慈悲自然流露。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《涅槃经》《坛经》《维摩诘经》",
-    "relatedConcepts": ["putixin","self-nature","buddha-nature"],
-    "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "putixin",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "wenzi-bore",
@@ -2215,12 +3640,43 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "不立文字，而不离文字。 —禅宗常语",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "文字般若为入般若之方便——因指见月，不可以指为月。不废文字般若——然不可以文字般若为究竟。究竟在实相般若——亲证方知。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《坛经》《碧岩录》",
-    "relatedConcepts": ["prajna","guanzhao-bore","shixiang-bore"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["qifo","wenshu","zhangzhi","xuemaicong","wuxinglun","wuxinlun","xixulun","anxin","baizhang","huangbo","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","yongjia","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian","huangbo_wanlinglu","qiaoyinyulu"]
+    "relatedConcepts": [
+      "prajna",
+      "guanzhao-bore",
+      "shixiang-bore"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "wenshu",
+      "zhangzhi",
+      "xuemaicong",
+      "wuxinglun",
+      "wuxinlun",
+      "xixulun",
+      "anxin",
+      "baizhang",
+      "huangbo",
+      "shenhui",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "wumenguan",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "dahuiyulu",
+      "chanjia_guijian",
+      "huangbo_wanlinglu",
+      "qiaoyinyulu"
+    ]
   },
   {
     "id": "guanzhao-bore",
@@ -2232,11 +3688,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "智慧观照，内外明彻，识自本心。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "观照般若非以分别心观察——乃以般若智观照。如镜照物——不分别好丑，物来即照。以观照之力，截断妄想，亲见自性。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》《心经》",
-    "relatedConcepts": ["prajna","wenzi-bore","shixiang-bore"],
-    "relatedPersons": ["huineng"],
+    "relatedConcepts": [
+      "prajna",
+      "wenzi-bore",
+      "shixiang-bore"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -2249,11 +3711,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "实相无相。 —《金刚经》义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "实相般若非从外得——乃自性之体。文字般若为入，观照般若为行，实相般若为证。三般若一体——不须离文字别求观照，不离观照别求实相。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《金刚经》《坛经》《大智度论》",
-    "relatedConcepts": ["prajna","wenzi-bore","guanzhao-bore"],
-    "relatedPersons": ["huineng","nagarjuna"],
+    "relatedConcepts": [
+      "prajna",
+      "wenzi-bore",
+      "guanzhao-bore"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "nagarjuna"
+    ],
     "relatedBooks": []
   },
   {
@@ -2266,12 +3735,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "何期自性本自具足。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "圆满非从修行得——乃本自具足。修行非增加——乃去除覆盖。如摩尼珠——珠体本圆，只须去垢。悟自性即见圆满——不欠不余，本来如是。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《华严经》",
-    "relatedConcepts": ["self-nature","buddha-nature","foxing-changzhu"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "foxing-changzhu"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "fajie-yuanqi",
@@ -2283,11 +3760,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一即一切，一切即一。 —华严教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "法界缘起非理论——乃悟后之境界。悟自性者，于一法中见一切法——一法即一切法之缘起；于一切法中见一法——一切法即一法之显现。重重无尽，相即相入。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《宗镜录》",
-    "relatedConcepts": ["yuanqi","shishi-wuai","fajie"],
-    "relatedPersons": ["fayan-wenyi","yongming-yanshou"],
+    "relatedConcepts": [
+      "yuanqi",
+      "shishi-wuai",
+      "fajie"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
     "relatedBooks": []
   },
   {
@@ -2300,12 +3784,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "何期自性能生万法。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "性起非否定缘起——乃明缘起之体在真如。一切法因缘和合而生，然其体即真如——真如随缘而起万法。悟自性者，知万法从自性起——不须向外求。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《华严经》《坛经》",
-    "relatedConcepts": ["fajie-yuanqi","self-nature","yuanqi"],
-    "relatedPersons": ["huineng","fayan-wenyi"],
-    "relatedBooks": ["tanjing"]
+    "relatedConcepts": [
+      "fajie-yuanqi",
+      "self-nature",
+      "yuanqi"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "tanjing"
+    ]
   },
   {
     "id": "shi-ru",
@@ -2317,11 +3810,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "如是相，如是性，如是体，如是力，如是作……如是本末究竟。 —《法华经》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "十如非理论——乃一切法之十个层面。即此当下之相，当体即真——相即性、性即体、体即力……本末究竟，皆是一心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《法华经》《中论》",
-    "relatedConcepts": ["shixiang","yuanqi","yin-yuan"],
-    "relatedPersons": ["huineng"],
+    "relatedConcepts": [
+      "shixiang",
+      "yuanqi",
+      "yin-yuan"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -2334,11 +3833,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一空一切空，一假一切假，一中一切中。 —天台教义",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "三谛圆融非次第修——一谛即三谛。空非离假别有空——即假即空；中非离空假别有中——即空即假即中。悟自性者，于一切法中同时见空假中——三谛圆融，无障无碍。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《中论》《法华经》《摩诃止观》",
-    "relatedConcepts": ["erdi","zhongdao","sekong-buer"],
-    "relatedPersons": ["nagarjuna"],
+    "relatedConcepts": [
+      "erdi",
+      "zhongdao",
+      "sekong-buer"
+    ],
+    "relatedPersons": [
+      "nagarjuna"
+    ],
     "relatedBooks": []
   },
   {
@@ -2351,14 +3856,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "何期自性能生万法。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "理具事造非二——理具为体，事造为用。如水本具成波之性，风至则成波——水波不二。悟自性者，于事相中见理体——即事造而见理具。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《摩诃止观》《坛经》",
-    "relatedConcepts": ["xingqi","self-nature","yuanqi"],
-    "relatedPersons": ["huineng"],
+    "relatedConcepts": [
+      "xingqi",
+      "self-nature",
+      "yuanqi"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
     "relatedBooks": []
   },
-  
   {
     "id": "jiaoli-guanxing",
     "title": "教理观行",
@@ -2369,12 +3879,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "依教修行，依理观行。 —禅宗常语",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "教理观行并重——有解有行，解行并进。不可以教理为修行——如以地图为目的地；不可以观行弃教理——如行路无地图。解行并进，方为正修行。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《禅源诸诠集都序》",
-    "relatedConcepts": ["si-yi","fangbian","guanzhao-bore"],
-    "relatedPersons": ["huineng","guifeng-zongmi"],
-    "relatedBooks": ["xinwangming","shenhui","weimojiejing","yongjia","huanwuxinyao","dahuiyulu"]
+    "relatedConcepts": [
+      "si-yi",
+      "fangbian",
+      "guanzhao-bore"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "xinwangming",
+      "shenhui",
+      "weimojiejing",
+      "yongjia",
+      "huanwuxinyao",
+      "dahuiyulu"
+    ]
   },
   {
     "id": "benjue-shijue",
@@ -2386,12 +3910,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "心体离念，即是本觉。 —《大乘起信论》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "本觉始觉非二——始觉即本觉之显现。如云开月现——月体本在（本觉），月光普照（始觉）。悟非得新物——乃本觉之显现。修行非增加觉性——乃去除覆盖，令本觉显现。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大乘起信论》《坛经》",
-    "relatedConcepts": ["self-nature","buddha-nature","foxing-changzhu"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["wuran","anxin","lengyanjing","shiniutu","dachengqixinlun","huanwuyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "foxing-changzhu"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "wuran",
+      "anxin",
+      "lengyanjing",
+      "shiniutu",
+      "dachengqixinlun",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "zhengjue",
@@ -2403,11 +3940,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "前念迷即凡夫，后念悟即佛。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "正觉非从外得——乃自性本具之觉性显现。如灯破暗——灯非外来，乃室内本具；暗非实有，乃灯未点燃。悟自性即正觉——自性之灯点燃，无明之暗顿破。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《金刚经》",
-    "relatedConcepts": ["puti","self-nature","mozhao-chan-concept"],
-    "relatedPersons": ["huineng"],
+    "relatedConcepts": [
+      "puti",
+      "self-nature",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -2420,11 +3963,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "兀兀不修善，腾腾不造恶。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "无行非不行——乃行而无行相。悟自性者，自然行善不着善相，自然不造恶。如镜照物——物来即照，镜体不动。无行为悟后之自然境界。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《维摩诘经》",
-    "relatedConcepts": ["no-abiding","wu-nian","baoren"],
-    "relatedPersons": ["huineng","weimojie"],
+    "relatedConcepts": [
+      "no-abiding",
+      "wu-nian",
+      "baoren"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
     "relatedBooks": []
   },
   {
@@ -2437,12 +3987,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "何期自性本自清净。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "自性清净非修得——乃本自清净。修行非令自性变净——乃去除覆盖。如水被泥浊——水体本净，泥去则净。悟自性即见本自清净——不须向外求净。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《坛经》《维摩诘经》《大乘起信论》",
-    "relatedConcepts": ["self-nature","buddha-nature","yuanman"],
-    "relatedPersons": ["shengman-furen","huineng","weimojie"],
-    "relatedBooks": ["shengmanjing","tanjing","xinxingxiuxisong","baoxinglun"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "yuanman"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "tanjing",
+      "xinxingxiuxisong",
+      "baoxinglun"
+    ]
   },
   {
     "id": "fayin",
@@ -2454,11 +4017,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "溪声尽是广长舌，山色无非清净身。 —苏东坡",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "法音非限于言语——一切音声皆为法音。悟自性者，于一切音声中闻法音——竹声、溪声、鸟声，皆为说法。不限于佛经之言语——一切声皆说法。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《法华经》《坛经》",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","jiaoli-guanxing"],
-    "relatedPersons": ["xiangyan-zhixian","dongshan"],
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "jiaoli-guanxing"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian",
+      "dongshan"
+    ],
     "relatedBooks": []
   },
   {
@@ -2470,12 +4040,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "从无住本立一切法。 —《维摩诘经》",
       "我此法门，以无住为本。 —六祖坛经"
-],
+    ],
     "guidance": "无住本者——心无所住，万法生起。如镜不住物——物来即照，物去不留。心若无所住，则万法生起；心若有所住，则成执着。悟无住本者，于万法中自由自在。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《维摩诘经》《坛经》",
-    "relatedConcepts": ["no-abiding","self-nature","wu-nian"],
-    "relatedPersons": ["huineng","weimojie"],
-    "relatedBooks": ["weimojiejing"]
+    "relatedConcepts": [
+      "no-abiding",
+      "self-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "weimojie"
+    ],
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "mo-na-shi",
@@ -2486,12 +4065,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "恒审思量我相随，有情日夜镇昏迷。 —《八识规矩颂》",
       "四惑八大相应起，六转呼为染净依。 —《八识规矩颂》"
-],
+    ],
     "guidance": "末那识是“我执”的根源——一切“我”“我所”的执着都从此出。参禅参“谁”字，正是逼此识现形。破我执不是道理上破，而是参究到山穷水尽处，蓦然爆破——俱生我执顿断，平等性智现前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "八识规矩颂 · 成唯识论",
-    "relatedConcepts": ["zhuan-shi-cheng-zhi","alaiye-shi"],
-    "relatedPersons": ["xuanzang"],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedConcepts": [
+      "zhuan-shi-cheng-zhi",
+      "alaiye-shi"
+    ],
+    "relatedPersons": [
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "bashiguijusong"
+    ]
   },
   {
     "id": "wu-men",
@@ -2502,28 +4088,55 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "大道无门，千差有路。透得此关，乾坤独步。 —《无门关》",
       "参禅须透祖师关，妙悟要穷心路绝。 —《无门关》"
-],
+    ],
     "guidance": "无门不是没有方法，而是不从任何“门”（概念、道理、方便）进入——直以疑情逼拶到无路处，蓦然透脱。参“无”字时，莫作虚无会，莫作有无会，只管提撕。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "无门关",
-    "relatedConcepts": ["koan","yiqing","beyond-words"],
-    "relatedPersons": ["wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "yiqing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "yi-xin-er-men",
     "title": "一心二门",
     "category": "心性论",
-    "summary": "《大乘起信论》核心架构：一心即众生心，含真如门与生灭门。真如门显大乘体，生灭门显大乘体相用。二门各摄一切法，展转不相离。此架构与禅宗“迷即众生，悟即佛”的宗旨一脉相通。 在禅宗心法中，此概念直指行者自心本具之真如实相，揭示迷悟不二、染净同体之甚深义理。行者若能透达此理，便能于纷繁复杂之世间万相中洞见空性本质，不住两边，圆融无碍。",
+    "summary": "《大乘起信论》的核心总纲骨架。众生心即摩诃衍（大乘）之体，依此一心开显出心真如门与心生灭门。心真如门示体性空寂、不生不灭、离言绝相；心生灭门示依如来藏而有阿赖耶识，不生不灭与生灭和合，非一非异，具足染净因缘。二门不相离隔，真如为生灭之体，生灭为真如之用，二门各各总摄一切世间出世间法。禅宗明心见性，正是直悟此生灭妄心当下即是不生不灭之一心真如体。",
     "etymology": "出自《大乘起信论》：“依于一心有二种门，所谓心真如门，心生灭门。此二种门各摄一切法，以此展转不相离故。” 源自大乘了义经教与宗门祖师言教。梵汉名相融通，历代禅门尊宿在提撕学人、举扬个事时屡屡拈出，旨在借名显体，破除对名相文字之死执，直透向上一窍。",
     "quotes": [
       "心真如者，即是一法界大总相法门体，以心本性不生不灭故。",
       "犹如迷人谓东为西方实不转，众生亦尔，无明迷故谓心为动而实不动。"
-],
+    ],
     "guidance": "参禅者须知：生灭门中一切境界皆如镜中像，无体可得。若知动心即不生灭，即得入于真如之门。禅宗参究到无路处，正是从生灭门透入真如门。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "dachengqixinlun",
-    "relatedConcepts": ["zhenru","wuming","xun-xi","alaiye-shi"],
-    "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedConcepts": [
+      "zhenru",
+      "wuming",
+      "xun-xi",
+      "alaiye-shi",
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "tathagatagarbha",
+      "yixing-sanmei"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "guifeng-zongmi",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "dachengqixinlun",
+      "dachengqixinlunxinyi",
+      "chanyuan_zhuquanjiduxu",
+      "weixinjue"
+    ]
   },
   {
     "id": "xun-xi",
@@ -2534,12 +4147,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "真如熏故说有净用——众生本具佛性，真如内熏令起厌求。",
       "以熏习因缘力故，令妄念心厌生死苦求涅槃乐。"
-],
+    ],
     "guidance": "修行即是真如熏习无明的过程。众生虽具真如，若无外缘善知识教化，亦不能起修。因缘具足，方得厌生死苦、求涅槃乐。禅宗参究话头，正是以疑情为真如熏习之力，不断熏染无明壳子，久久自能打破。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "dachengqixinlun",
-    "relatedConcepts": ["zhenru","wuming","yi-xin-er-men","tathagatagarbha"],
-    "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedConcepts": [
+      "zhenru",
+      "wuming",
+      "yi-xin-er-men",
+      "tathagatagarbha"
+    ],
+    "relatedPersons": [
+      "maming"
+    ],
+    "relatedBooks": [
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "zuo-gong-fu",
@@ -2551,12 +4173,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "黄檗运禅师：预前若打不彻，腊月三十日到来，管取尔热乱。",
       "圜悟勤禅师：山僧在众无一时异缘，十年方得打彻。",
       "中峯本禅师：拚取生与同生死与同死，谁管三生五生，若不彻悟，决定不休。"
-],
+    ],
     "guidance": "做工夫须具三要素：一发决定志——以悟为则，不悟不休；二提话头——守一则公案，昼夜提撕；三起疑情——疑来疑去，打成一片。切忌坐在无事甲里，亦不可蒲团上死坐。杂念多时轻轻放下，下地走一遭再上蒲团。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "changuancejin",
-    "relatedConcepts": ["yiqing","kanhua-chan-concept","wu-men"],
-    "relatedPersons": ["zhuhong","huangbo","zhaozhou","yuanwu-keqin","dahui-zonggao"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "yiqing",
+      "kanhua-chan-concept",
+      "wu-men"
+    ],
+    "relatedPersons": [
+      "zhuhong",
+      "huangbo",
+      "zhaozhou",
+      "yuanwu-keqin",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "zhi-guan",
@@ -2568,12 +4202,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若止观不具，必不能得无上菩提。",
       "修行止者，对治凡夫乐着生死，亦治二乘执着生死而生怖畏。修行观者，对治凡夫不修善根，亦治二乘不起大悲狭劣心过。",
       "应观过去法如梦，现在法如电，未来法如云，忽尔而起。"
-],
+    ],
     "guidance": "修止时住寂静处结加趺坐，不依气息形色虚空等，一切分别想念皆除。修观时观世间诸法生灭不停，无常故苦，苦故无我。止观双行，虽念诸法无自性，亦见因缘业报不失。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "dachengqixinlun",
-    "relatedConcepts": ["zhenru","samadhi","yi-xin-er-men"],
-    "relatedPersons": ["ming-bodhisattva"],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedConcepts": [
+      "zhenru",
+      "samadhi",
+      "yi-xin-er-men"
+    ],
+    "relatedPersons": [
+      "maming"
+    ],
+    "relatedBooks": [
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "ben-lai-mian-mu",
@@ -2584,12 +4226,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "不思善不思恶，正与么时，那个是明上座本来面目。 —六祖惠能",
       "本来面目没处藏，世界坏时渠不朽。 —《无门关》"
-],
+    ],
     "guidance": "不要向思善思恶处寻觅本来面目——善恶不起时，那个了了常知的，就是。它不是你“找到”的，而是你“认出”的——本自具足，从未丢失。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "六祖坛经 · 无门关",
-    "relatedConcepts": ["self-nature","buddha-nature","wu-nian"],
-    "relatedPersons": ["huineng"],
-    "relatedBooks": ["tanjing","wumenguan","jingangge","ziwojietuo","songlingbaoxun","xizangduwangjing","xinxingxiuxisong","henghedashouyin"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "wumenguan",
+      "jingangge",
+      "ziwojietuo",
+      "songlingbaoxun",
+      "xizangduwangjing",
+      "xinxingxiuxisong",
+      "henghedashouyin"
+    ]
   },
   {
     "id": "jingang-zhengti",
@@ -2600,12 +4257,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "无非发扬个金刚正体。 —圜悟克勤",
       "生死幻翳永消，金刚正体独露。 —圜悟克勤"
-],
+    ],
     "guidance": "金刚正体不是修成的，而是本具的。修行只是拂去遮蔽它的客尘，让它自然显露。如摩尼宝在矿秽中，不施功力终不可得清净，但功力只是去矿，非是造宝。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "圜悟心要",
-    "relatedConcepts": ["zhenru","self-nature","buddha-nature"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedConcepts": [
+      "zhenru",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao"
+    ]
   },
   {
     "id": "tongdi-tuo",
@@ -2616,12 +4281,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "到究竟至实之处须是桶底子脱始得。 —圜悟克勤",
       "待渠时节到来，翛然自桶底子脱。 —圜悟克勤"
-],
+    ],
     "guidance": "桶底子脱不是理解来的，而是放下到极处自然发生的。如人负重行走，到力尽处自然放下。不要试图“使”桶底脱落，只管放下身心，冥然叩寂，待时节到来。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "圜悟心要",
-    "relatedConcepts": ["ben-lai-mian-mu","jingang-zhengti"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "jingang-zhengti"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao"
+    ]
   },
   {
     "id": "wuxin-dao-ren",
@@ -2633,12 +4305,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "我见百千个汉子只是觅作佛底的，中间觅个无心道人难得。 —圜悟克勤",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "不要试图“成为”无心道人——试图成为本身已是“有心”。无心是情想都尽后的自然状态，如人睡醒后不再做梦，不是努力不做梦。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "圜悟心要",
-    "relatedConcepts": ["ordinary-mind","jingang-zhengti"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "jingang-zhengti"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao"
+    ]
   },
   {
     "id": "dacheng-yipian",
@@ -2649,12 +4328,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "世法佛法打成一片，物物头头有出身处。 —圜悟克勤",
       "二六时中纯一无杂，自然左右逢源打成一片。 —圜悟克勤"
-],
+    ],
     "guidance": "打成一片不是消除差别，而是于差别中见无差别。吃饭穿衣、迎宾待客皆是道用，不须离俗求真。初时或有间断，久自无间。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "圜悟心要",
-    "relatedConcepts": ["baoren","jingang-zhengti"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "baoren",
+      "jingang-zhengti"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "jieduan-zhongliu",
@@ -2670,9 +4357,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "截断众流不是让你不说话不思维，而是于说话思维处蓦然截断，直下透脱。心念常如奔腾江水起伏不息，修行须有一刀两断之气概，如人正问时忽然被打、正思量时忽然被喝，在念头生起的刹那截断它，不随妄念相续流转，自性灵光当下显现。",
     "classicRef": "《云门广录》《圜悟佛果禅师语录》《断桥妙伦禅师语录》",
-    "relatedConcepts": ["jingang-zhengti","mozhao-chan-concept","koan","duanqiao-huolu","instant-enlightenment"],
-    "relatedPersons": ["yuanwu-keqin","duanqiao-miaolun","yunmen"],
-    "relatedBooks": ["huanwuyulu","huanwuxinyao","duanqiaoyulu","yunmen"]
+    "relatedConcepts": [
+      "jingang-zhengti",
+      "mozhao-chan-concept",
+      "koan",
+      "duanqiao-huolu",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "duanqiao-miaolun",
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "huanwuyulu",
+      "huanwuxinyao",
+      "duanqiaoyulu",
+      "yunmen"
+    ]
   },
   {
     "id": "yiyin-yanfa",
@@ -2683,12 +4385,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛以一音而演说法，故一切法同此一音。 —耿延禧序圜悟语录",
       "不作此音会而作语言謷讹妄生分别，无有是处。 —耿延禧序圜悟语录"
-],
+    ],
     "guidance": "一音不是某种特殊的声音，而是指一切法皆是佛的教化。风声水声、鸟鸣虫叫，乃至麻三斤、庭前柏树子——若能于此音中会得，处处是佛法；若作语言文字会，则处处是謷讹。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "圜悟佛果禅师语录·序",
-    "relatedConcepts": ["jiaowai-biechuan","beyond-words","koan"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["tanjing","weimojiejing","dongshanyulu","yongjia"]
+    "relatedConcepts": [
+      "jiaowai-biechuan",
+      "beyond-words",
+      "koan"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "yongjia"
+    ]
   },
   {
     "id": "wuchang",
@@ -2701,12 +4414,29 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","wuran","xuemaicong","anxin","zuishangcheng","tanjing","zhengdaoge","xiuxinjue","chanlinbaoxun","lengyanjing","weimojiejing","yongjia","dachengqixinlun","huanwuxinyao","huanwuyulu","huangbo_wanlinglu"]
+    "relatedBooks": [
+      "wenshu",
+      "wuran",
+      "xuemaicong",
+      "anxin",
+      "zuishangcheng",
+      "tanjing",
+      "zhengdaoge",
+      "xiuxinjue",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "kongxing",
@@ -2719,12 +4449,59 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["qifo","juelin","wenshu","wuran","zhangzhi","xuemaicong","wuxinglun","poxianglun","sixingguan","xinxinming","fangcunlun","anxin","zuishangcheng","tanjing","zhengdaoge","mazu","baizhang","huangbo","xiuxinjue","dunwu","zhenxin","zhigong","xinwangming","shenhui","jingangjing","xinjing","yuanjuejing","chanlinbaoxun","lengyanjing","weimojiejing","shiniutu","dongshanyulu","yongjia","yunmen","bashiguijusong","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","dahuiyulu","chanjia_guijian","xinming","zuochanyi","huangbo_wanlinglu","zhaozhouyulu"]
+    "relatedBooks": [
+      "qifo",
+      "juelin",
+      "wenshu",
+      "wuran",
+      "zhangzhi",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "sixingguan",
+      "xinxinming",
+      "fangcunlun",
+      "anxin",
+      "zuishangcheng",
+      "tanjing",
+      "zhengdaoge",
+      "mazu",
+      "baizhang",
+      "huangbo",
+      "xiuxinjue",
+      "dunwu",
+      "zhenxin",
+      "zhigong",
+      "xinwangming",
+      "shenhui",
+      "jingangjing",
+      "xinjing",
+      "yuanjuejing",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "shiniutu",
+      "dongshanyulu",
+      "yongjia",
+      "yunmen",
+      "bashiguijusong",
+      "wumenguan",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "dahuiyulu",
+      "chanjia_guijian",
+      "xinming",
+      "zuochanyi",
+      "huangbo_wanlinglu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "baoshen",
@@ -2737,12 +4514,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran","wuxinglun","zuishangcheng","tanjing","lengyanjing","weimojiejing","dongshanyulu","yongjia"]
+    "relatedBooks": [
+      "wuran",
+      "wuxinglun",
+      "zuishangcheng",
+      "tanjing",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "yongjia"
+    ]
   },
   {
     "id": "huashen",
@@ -2755,12 +4541,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran","wuxinglun","tanjing","zhigong","lengyanjing","weimojiejing","yongjia","huanwuyulu"]
+    "relatedBooks": [
+      "wuran",
+      "wuxinglun",
+      "tanjing",
+      "zhigong",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "wuzhiliang",
@@ -2773,12 +4568,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinjing"]
+    "relatedBooks": [
+      "xinjing"
+    ]
   },
   {
     "id": "wusuode",
@@ -2791,12 +4588,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing","huangbo","dunwu","zhigong","jingangjing","xinjing","yuanjuejing","lengyanjing","weimojiejing","yongjia","huanwuyulu","huangbo_wanlinglu"]
+    "relatedBooks": [
+      "tanjing",
+      "huangbo",
+      "dunwu",
+      "zhigong",
+      "jingangjing",
+      "xinjing",
+      "yuanjuejing",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "huanwuyulu",
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "zhengliang",
@@ -2809,12 +4619,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran"]
+    "relatedBooks": [
+      "wuran"
+    ]
   },
   {
     "id": "xianliang",
@@ -2827,12 +4639,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xinjing","bashiguijusong","huanwuxinyao"]
+    "relatedBooks": [
+      "xinjing",
+      "bashiguijusong",
+      "huanwuxinyao"
+    ]
   },
   {
     "id": "biliang",
@@ -2845,12 +4661,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["bashiguijusong"]
+    "relatedBooks": [
+      "bashiguijusong"
+    ]
   },
   {
     "id": "fengfan",
@@ -2863,12 +4681,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing","wumenguan","huanwuxinyao"]
+    "relatedBooks": [
+      "tanjing",
+      "wumenguan",
+      "huanwuxinyao"
+    ]
   },
   {
     "id": "wujian",
@@ -2881,12 +4703,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["xuemaicong","anxin","tanjing","zhengdaoge","linji","lengyanjing","weimojiejing","baojingsanmei","dongshanyulu","yongjia","changuancejin","huanwuxinyao","huanwuyulu","zuochanyi"]
+    "relatedBooks": [
+      "xuemaicong",
+      "anxin",
+      "tanjing",
+      "zhengdaoge",
+      "linji",
+      "lengyanjing",
+      "weimojiejing",
+      "baojingsanmei",
+      "dongshanyulu",
+      "yongjia",
+      "changuancejin",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "zuochanyi"
+    ]
   },
   {
     "id": "jiaocan",
@@ -2899,12 +4736,15 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dongshanyulu","huanwuyulu"]
+    "relatedBooks": [
+      "dongshanyulu",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "huangji",
@@ -2917,12 +4757,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing","shiniutu","yongjia","huanwuyulu"]
+    "relatedBooks": [
+      "lengyanjing",
+      "shiniutu",
+      "yongjia",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "zhengyin",
@@ -2935,12 +4780,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuran","poxianglun","zhigong","chanlinbaoxun","weimojiejing","yongjia","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu"]
+    "relatedBooks": [
+      "wuran",
+      "poxianglun",
+      "zhigong",
+      "chanlinbaoxun",
+      "weimojiejing",
+      "yongjia",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "liaoyin",
@@ -2953,12 +4809,15 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing","bashiguijusong"]
+    "relatedBooks": [
+      "lengyanjing",
+      "bashiguijusong"
+    ]
   },
   {
     "id": "yuan-yin",
@@ -2971,12 +4830,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedBooks": [
+      "huanwuyulu"
+    ]
   },
   {
     "id": "sande",
@@ -2989,12 +4850,15 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["yongjia","zhaozhouyulu"]
+    "relatedBooks": [
+      "yongjia",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "eryi",
@@ -3007,12 +4871,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["lengyanjing","weimojiejing","huanwuyulu"]
+    "relatedBooks": [
+      "lengyanjing",
+      "weimojiejing",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "shidi",
@@ -3025,12 +4893,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun","zuishangcheng","huangbo","lengyanjing","weimojiejing","yongjia","bashiguijusong","huanwuyulu","huangbo_wanlinglu"]
+    "relatedBooks": [
+      "poxianglun",
+      "zuishangcheng",
+      "huangbo",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia",
+      "bashiguijusong",
+      "huanwuyulu",
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "zhenkong-miaoyou",
@@ -3043,12 +4921,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["shenhui"]
+    "relatedBooks": [
+      "shenhui"
+    ]
   },
   {
     "id": "wuzhu-ben",
@@ -3061,12 +4941,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["tanjing","shenhui","weimojiejing"]
+    "relatedBooks": [
+      "tanjing",
+      "shenhui",
+      "weimojiejing"
+    ]
   },
   {
     "id": "yixinyuan",
@@ -3079,12 +4963,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["zhengdaoge"]
+    "relatedBooks": [
+      "zhengdaoge"
+    ]
   },
   {
     "id": "benjue",
@@ -3097,12 +4983,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","wuran","zhangzhi","xuemaicong","poxianglun","anxin","zuishangcheng","tanjing","huangbo","xinwangming","yuanjuejing","lengyanjing","shiniutu","dachengqixinlun","huanwuyulu"]
+    "relatedBooks": [
+      "wenshu",
+      "wuran",
+      "zhangzhi",
+      "xuemaicong",
+      "poxianglun",
+      "anxin",
+      "zuishangcheng",
+      "tanjing",
+      "huangbo",
+      "xinwangming",
+      "yuanjuejing",
+      "lengyanjing",
+      "shiniutu",
+      "dachengqixinlun",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "shijue",
@@ -3115,12 +5017,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "大乘起信论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dachengqixinlun"]
+    "relatedBooks": [
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "bujue",
@@ -3133,12 +5037,31 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","xuemaicong","wuxinlun","xixulun","zuishangcheng","tanjing","baizhang","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","xinming","zhaozhouyulu"]
+    "relatedBooks": [
+      "wenshu",
+      "xuemaicong",
+      "wuxinlun",
+      "xixulun",
+      "zuishangcheng",
+      "tanjing",
+      "baizhang",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "wumenguan",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "xinming",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "ranxin",
@@ -3151,12 +5074,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun","dachengqixinlun","huanwuyulu"]
+    "relatedBooks": [
+      "poxianglun",
+      "dachengqixinlun",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "jingxin",
@@ -3169,12 +5096,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun","anxin","tanjing","baizhang","xinwangming","jingangjing","yuanjuejing","lengyanjing","weimojiejing","dachengqixinlun"]
+    "relatedBooks": [
+      "poxianglun",
+      "anxin",
+      "tanjing",
+      "baizhang",
+      "xinwangming",
+      "jingangjing",
+      "yuanjuejing",
+      "lengyanjing",
+      "weimojiejing",
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "wuhou",
@@ -3187,12 +5125,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","weimojiejing","yunmen"]
+    "relatedBooks": [
+      "wenshu",
+      "weimojiejing",
+      "yunmen"
+    ]
   },
   {
     "id": "dangnian",
@@ -3205,12 +5147,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","tanjing","weimojiejing","huanwuyulu"]
+    "relatedBooks": [
+      "wenshu",
+      "tanjing",
+      "weimojiejing",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "yiguan",
@@ -3223,12 +5170,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing","huanwuxinyao","huanwuyulu"]
+    "relatedBooks": [
+      "weimojiejing",
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "zhengming",
@@ -3241,12 +5192,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing","yongjia","huanwuyulu"]
+    "relatedBooks": [
+      "weimojiejing",
+      "yongjia",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "zhengye",
@@ -3259,12 +5214,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "zhengyu",
@@ -3277,12 +5234,14 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "song-gu",
@@ -3294,12 +5253,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "参禅须透祖师关，妙路要须穷绝处。 —无门慧开《无门关》颂",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "颂古不是文学创作——乃悟后之自然流露。读颂古时，不可作诗文理解，须透过文字见其悟境。如无门颂曰“参禅须透祖师关，妙路要须穷绝处”——不是在讲道理，而是在逼拶学人。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "无门关",
-    "relatedConcepts": ["koan","ping-chang","wu-men"],
-    "relatedPersons": ["wumen-huikai","yuanwu-keqin"],
-    "relatedBooks": ["wumenguan","biyanlu"]
+    "relatedConcepts": [
+      "koan",
+      "ping-chang",
+      "wu-men"
+    ],
+    "relatedPersons": [
+      "wumen-huikai",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "wumenguan",
+      "biyanlu"
+    ]
   },
   {
     "id": "ping-chang",
@@ -3311,12 +5280,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "无门曰：参禅须透祖师关，妙路要须穷绝处。 —无门慧开",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "评唱不是解释公案——而是点明公案的关捩子，逼学人于思量不及处转身。读评唱时，不可作道理会，须透过评唱见其指归。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "无门关 · 碧岩录",
-    "relatedConcepts": ["koan","song-gu","wu-men"],
-    "relatedPersons": ["wumen-huikai","yuanwu-keqin"],
-    "relatedBooks": ["wumenguan","biyanlu"]
+    "relatedConcepts": [
+      "koan",
+      "song-gu",
+      "wu-men"
+    ],
+    "relatedPersons": [
+      "wumen-huikai",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "wumenguan",
+      "biyanlu"
+    ]
   },
   {
     "id": "jiaochan-yizhi",
@@ -3327,12 +5306,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "教是佛语，禅是佛心。 —古德",
       "事理圆融，不可偏废。 —永嘉玄觉"
-],
+    ],
     "guidance": "教禅一致非混同教与禅——教是入门之阶，禅是究竟之归。以教明理，以禅证心。不可执教废禅，亦不可执禅废教。如永嘉大师先精天台止观，后参六祖印可——教禅双美，方为圆顿。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "永嘉禅宗集",
-    "relatedConcepts": ["zhi-guan","shili-buer","instant-enlightenment"],
-    "relatedPersons": ["yongjia","huineng"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "shili-buer",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "yongjia",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "shili-buer",
@@ -3344,12 +5332,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "即事而真，用祛倒见也。 —永嘉玄觉《禅宗集》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "事理不二不是理论——乃修行之亲证。修行人若离事求理，则理成虚妄；若执事迷理，则事成染污。唯有即事而真，于日用中见本体，方能祛除颠倒见。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "永嘉禅宗集",
-    "relatedConcepts": ["jiaochan-yizhi","non-duality","zhenru"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "jiaochan-yizhi",
+      "non-duality",
+      "zhenru"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "jiji-xingxing",
@@ -3361,12 +5357,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "寂寂惺惺是，无记寂寂非。 —永嘉玄觉《禅宗集》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "寂寂惺惺是修行用功的口诀——昏沉时须惺惺（提起觉照），掉举时须寂寂（收摄止静）。无记似寂而非寂，乱想似惺而非惺。修行人须善辨此四相，方能对症下药。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "永嘉禅宗集",
-    "relatedConcepts": ["zhi-guan","samadhi","dinghui"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "samadhi",
+      "dinghui"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "fen-biyanlu",
@@ -3378,11 +5382,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "大慧禅师因学人入室下语颇异，疑之，才勘而邪锋自挫，再鞠而纳款自降，曰：我《碧岩集》中记来，实非有悟。因虑其后不明根本，专尚语言，以图口捷，由是火之，以救斯弊也。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "焚碧岩录非毁其书——乃救其弊。文字本身无过，过在学人执文字为禅。大慧此举，意在令学人回归实参实究，不以文字知解为悟。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》",
-    "relatedConcepts": ["wenzi-chan","kanhua-chan-concept"],
-    "relatedPersons": ["dahui-zonggao","yuanwu-keqin"],
+    "relatedConcepts": [
+      "wenzi-chan",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "yuanwu-keqin"
+    ],
     "relatedBooks": []
   },
   {
@@ -3395,12 +5405,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "杀人须是杀人刀，活人须是活人剑。 —大慧宗杲",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "宗风无高下——临济棒喝、曹洞默照、云门一字、法眼循循，皆为应机施教。学者须择适合自己根机者而参，不必执此非彼。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》《五灯会元》",
-    "relatedConcepts": ["kanhua-chan-concept","mozhao-chan-concept"],
-    "relatedPersons": ["dahui-zonggao","hongzhi-zhengjue","linji"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "hongzhi-zhengjue",
+      "linji"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "pu-shuo",
@@ -3411,12 +5430,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "普说为语录中最接地气之部分——上堂有仪式感，法语有针对性，唯普说兼具系统性与随缘性，最宜初学阅读。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "fa-yu",
@@ -3427,12 +5453,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "法语最切实际——因针对具体学人之具体问题而答，故最宜初学对照自身修行困惑来读。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《大慧语录》",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","canjiu"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["dahuiyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "canjiu"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "dahuiyulu"
+    ]
   },
   {
     "id": "huoju-siju",
@@ -3444,12 +5478,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "活句下荐得堪与佛祖为师，死句下荐得自救不了。 —退隐禅师",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "参活句如蚊子上铁牛，下嘴不得处弃命一攒。非理解，乃逼拶至思量不及处蓦然透脱。参死句则落于理路语路，纵有体会亦自救不了。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅家龟鉴》",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","huatou-shibing"],
-    "relatedPersons": ["mailang-huai","tuiyin","dahui-zonggao"],
-    "relatedBooks": ["zongmenshenan","chanjia_guijian"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "huatou-shibing"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "tuiyin",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "huatou-shibing",
@@ -3461,12 +5506,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "离此十种病者，但举话时略抖擞精神，只疑是个甚么。 —退隐禅师",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "十病总归于以意识心参禅。参话头之要在于疑情截断意识，而非以意识分别思量。如蚊子叮铁牛，下嘴不得处弃命一攒，方为正参。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅家龟鉴》",
-    "relatedConcepts": ["kanhua-chan-concept","huoju-siju","yiqing"],
-    "relatedPersons": ["tuiyin"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "huoju-siju",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "tuiyin"
+    ],
+    "relatedBooks": [
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "can-san-yao",
@@ -3478,11 +5531,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "参禅须具三要：一有大信根，二有大愤志，三有大疑情。苟阙其一，如折足之鼎，终成废器。 —退隐禅师",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "信根——深信自心即佛，不向外求。愤志——生死心切，非悟不可。疑情——举话头时通身起疑团，如吞热铁丸。三者同时具足，参究自然得力。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅家龟鉴》",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","huoju-siju"],
-    "relatedPersons": ["tuiyin","yongjia"],
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "huoju-siju"
+    ],
+    "relatedPersons": [
+      "tuiyin",
+      "yongjia"
+    ],
     "relatedBooks": []
   },
   {
@@ -3497,12 +5557,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "云门家风：拄杖子跳上天，盏子里诸佛说法。",
       "沩仰家风：断碑横古路，铁牛眠少室。",
       "法眼家风：风送断云归岭去，月和流水过桥来。"
-],
+    ],
     "guidance": "五宗家风无高下——临济棒喝、曹洞默照、云门一字、沩仰师资、法眼善巧，皆为应机施教。学者须择适合自己根机者而参。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅家龟鉴》《五灯会元》《人天眼目》",
-    "relatedConcepts": ["zongfeng","kanhua-chan-concept","mozhao-chan-concept"],
-    "relatedPersons": ["linji","dongshan","yunmen","weishan-lingyou","fayan-wenyi"],
-    "relatedBooks": ["chanjia_guijian"]
+    "relatedConcepts": [
+      "zongfeng",
+      "kanhua-chan-concept",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "linji",
+      "dongshan",
+      "yunmen",
+      "weishan-lingyou",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "wuxin-jueguan",
@@ -3513,12 +5585,45 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "心性不生，何须知见。本来无一法，谁论熏炼习。 —牛头法融《心铭》",
       "无归无受，绝观忘守。四德不生，三身本有。 —牛头法融《心铭》"
-],
+    ],
     "guidance": "修行不是增添什么，而是歇下一切造作。知见起处便是妄，观照立处便是病。但一切莫顾，安心无处，无处安心则虚明自露——不是你去见性，是性自己现前。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
-    "relatedConcepts": ["non-mind","dajibenyou","jingji-ziran"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["qifo","juelin","wenshu","xuemaicong","wuxinglun","poxianglun","wuxinlun","anxin","tanjing","mazu","baizhang","huangbo","dunwu","zhigong","xinwangming","shenhui","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","yongjia","huanwuxinyao","huanwuyulu","huangbo_wanlinglu","zhaozhouyulu","jueguanlun"]
+    "relatedConcepts": [
+      "non-mind",
+      "dajibenyou",
+      "jingji-ziran"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "juelin",
+      "wenshu",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "wuxinlun",
+      "anxin",
+      "tanjing",
+      "mazu",
+      "baizhang",
+      "huangbo",
+      "dunwu",
+      "zhigong",
+      "xinwangming",
+      "shenhui",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "yongjia",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "huangbo_wanlinglu",
+      "zhaozhouyulu",
+      "jueguanlun"
+    ]
   },
   {
     "id": "xin-busheng-fajue",
@@ -3529,12 +5634,49 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "后念不生，前念自灭。三世无物，无心无佛。 —牛头法融《心铭》",
       "一心不生，万法无咎。 —三祖僧瓚《信心铭》"
-],
+    ],
     "guidance": "不要去灭念头——你灭念头的那个心，本身就是念头。只须后念不生，前念自然成空。如虚云老和尚所说：“不怕念起，只怕觉迟。”念头起了不续，即是修行。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["qifo","juelin","wenshu","wuran","xuemaicong","wuxinglun","poxianglun","wuxinlun","xinxinming","anxin","zuishangcheng","tanjing","mazu","huangbo","dunwu","zhenxin","jingangjing","yuanjuejing","chanlinbaoxun","lengyanjing","weimojiejing","dongshanyulu","yongjia","yunmen","wumenguan","changuancejin","dachengqixinlun","huanwuxinyao","huanwuyulu","huangbo_wanlinglu","zhaozhouyulu"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "qifo",
+      "juelin",
+      "wenshu",
+      "wuran",
+      "xuemaicong",
+      "wuxinglun",
+      "poxianglun",
+      "wuxinlun",
+      "xinxinming",
+      "anxin",
+      "zuishangcheng",
+      "tanjing",
+      "mazu",
+      "huangbo",
+      "dunwu",
+      "zhenxin",
+      "jingangjing",
+      "yuanjuejing",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu",
+      "yongjia",
+      "yunmen",
+      "wumenguan",
+      "changuancejin",
+      "dachengqixinlun",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "huangbo_wanlinglu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "dajibenyou",
@@ -3545,12 +5687,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "菩提本有，不须用守。烦恼本无，不须用除。 —牛头法融《心铭》",
       "何期自性本自清净。 —六祖惠能"
-],
+    ],
     "guidance": "信得菩提本有，方肯放下守取之心；信得烦恼本无，方肯放下断除之念。守与除，都是将菩提烦恼作二法看。彻见本源，则烦恼即是菩提，何须更除何须更守？ 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","buddha-nature","self-nature"],
-    "relatedPersons": ["niutou-farong","huineng"],
-    "relatedBooks": ["baizhang","chanlinbaoxun","weimojiejing","huanwuxinyao","huanwuyulu","chanjia_guijian","jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "buddha-nature",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "niutou-farong",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "baizhang",
+      "chanlinbaoxun",
+      "weimojiejing",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "chanjia_guijian",
+      "jueguanlun"
+    ]
   },
   {
     "id": "jingji-ziran",
@@ -3561,12 +5718,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "惺惺其寂，寂寂其明。万象常真，森罗一相。 —牛头法融《心铭》",
       "惺寂双运，寂寂惺惺。 —永嘉玄觉"
-],
+    ],
     "guidance": "不要落在惺惺里（散乱），也不要落在寂寂里（昏沉）。惺中有寂，寂中有惺，如灯之明与静并存——灯明而不躁，静而不暗，即是明寂自然。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","samadhi"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["xinming","jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "xinming",
+      "jueguanlun"
+    ]
   },
   {
     "id": "zuochan-weiyi",
@@ -3577,11 +5742,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "令威仪齐整，然后结跈趋坐。 —长芦宗赣《坐禅仪》",
       "令腰脊头颈骨节相拴，状如浮屠。 —长芦宗赣《坐禅仪》"
-],
+    ],
     "guidance": "坐禅先调身：座铺厚软，衣带宽松，结跈端坐，身如浮屠。身调则气调，气调则心调，三者相依，如鼎三足。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "坐禅仪",
-    "relatedConcepts": ["samadhi","chanding-jiwu"],
-    "relatedPersons": ["zongze"],
+    "relatedConcepts": [
+      "samadhi",
+      "chanding-jiwu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
     "relatedBooks": []
   },
   {
@@ -3594,12 +5764,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "禅定一门，最为急务。 —长芦宗赣《坐禅仪》",
       "探珠宜静浪，动水取应难。定水澄清，心珠自现。 —长芦宗赣《坐禅仪》",
       "无碍清净慧，皆依禅定生。 —《圆觉经》"
-],
+    ],
     "guidance": "禅定不是可选项，而是必经之路。一生取办尚恐蹪跞，何况迁延时日？故古人说：“若无定力，甘伏死门。掩目空归，宛然流浪。”趁色力康健时，早办修行。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "坐禅仪",
-    "relatedConcepts": ["samadhi","zuochan-weiyi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["wuxinglun","poxianglun","anxin","tanjing","dunwu","yuanjuejing","chanlinbaoxun","lengyanjing","weimojiejing"]
+    "relatedConcepts": [
+      "samadhi",
+      "zuochan-weiyi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "wuxinglun",
+      "poxianglun",
+      "anxin",
+      "tanjing",
+      "dunwu",
+      "yuanjuejing",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing"
+    ]
   },
   {
     "id": "no-views",
@@ -3612,12 +5797,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "黄檗断际禅师宛陵录",
-    "relatedConcepts": ["non-mind","mind-is-buddha","not-mind-not-buddha"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu"]
+    "relatedConcepts": [
+      "non-mind",
+      "mind-is-buddha",
+      "not-mind-not-buddha"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "wu-wei-famen",
@@ -3630,12 +5823,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "黄檗断际禅师宛陵录",
-    "relatedConcepts": ["non-mind","mind-is-buddha","direct-pointing"],
-    "relatedPersons": ["huangbo"],
-    "relatedBooks": ["huangbo_wanlinglu"]
+    "relatedConcepts": [
+      "non-mind",
+      "mind-is-buddha",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "huangbo"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "benfen-shi",
@@ -3646,12 +5847,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "老僧此间即以本分事接人",
       "但有人问，以本分事接人"
-],
+    ],
     "guidance": "'本分事'不是不理人，而是不随人根机说教。学人问'如何是佛'，赵州答'你是佛么'；问'如何是祖师西来意'，答'庭前柏树子'。看似答非所问，实则直指当人本分，截断一切拟议思量。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "赵州真际禅师语录",
-    "relatedConcepts": ["ordinary-mind","direct-pointing","wu-nian","self-nature"],
-    "relatedPersons": ["zhaozhou","nanquan-puyuan"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "direct-pointing",
+      "wu-nian",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "nanquan-puyuan"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "chi-cha-qu",
@@ -3663,12 +5874,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "吃茶去",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "吃茶去之密意在'去'字，不在'茶'字。赵州不论问者曾到与否，皆以吃茶去截断之，意在令学人放下一切思量分别，只管当下吃茶去。此与'平常心是道'一脉相承：道不在思量中，只于当下吃茶处便是。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "赵州真际禅师语录",
-    "relatedConcepts": ["ordinary-mind","benfen-shi","wu-nian"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "benfen-shi",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "ting-qian-baishuzi",
@@ -3679,12 +5898,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "庭前柏树子",
       "柏树子还有佛性也无？有。几时成佛？待虚空落地。"
-],
+    ],
     "guidance": "庭前柏树子之妙，在于不答而答。不答西来意是什，因为一说即是知解；不答非什，因为一落否定即属拣择。只指出眼前柏树子，令学人于当下见处自悟。此与'吃茶去'同一机杼：道在日用中，不在思量中。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "赵州真际禅师语录",
-    "relatedConcepts": ["ordinary-mind","benfen-shi","buddha-nature","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "benfen-shi",
+      "buddha-nature",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "kong-wei-daoben",
@@ -3697,12 +5925,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["fa-jie-xing-ziran","wuxin-jueguan"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun","xinming"]
+    "relatedConcepts": [
+      "fa-jie-xing-ziran",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun",
+      "xinming"
+    ]
   },
   {
     "id": "xing-yu-feidao",
@@ -3715,12 +5951,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","non-mind"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "benwu-xijie",
@@ -3733,12 +5976,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","dajibenyou"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun","xinming"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "dajibenyou"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun",
+      "xinming"
+    ]
   },
   {
     "id": "si-jian-zheng-jian",
@@ -3751,12 +6002,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","wu-zhi-zhi-zhi"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "wu-zhi-zhi-zhi"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "fa-jie-xing-ziran",
@@ -3767,12 +6025,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["kong-wei-daoben","jingji-ziran"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "kong-wei-daoben",
+      "jingji-ziran"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
   {
     "id": "wu-zhi-zhi-zhi",
@@ -3783,14 +6048,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "绝观论",
-    "relatedConcepts": ["wuxin-jueguan","si-jian-zheng-jian"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "si-jian-zheng-jian"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "jueguanlun"
+    ]
   },
-  
   {
     "id": "sanduo",
     "title": "三等堕",
@@ -3802,12 +6073,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "caoshanyulu",
-    "relatedConcepts": ["wuwei-jianji","yilei-zhongxing"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "yilei-zhongxing"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "yilei-zhongxing",
@@ -3820,12 +6098,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "caoshanyulu",
-    "relatedConcepts": ["sanduo","wuwei-jianji"],
-    "relatedPersons": ["caoshan-benji","dongshan"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "sanduo",
+      "wuwei-jianji"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "jian-dai-yu",
@@ -3838,12 +6124,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "caoshanyulu",
-    "relatedConcepts": ["wuwei-jianji","hu-hu"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "hu-hu"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "sijin-ji",
@@ -3856,12 +6149,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "caoshanyulu",
     "relatedConcepts": [],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "bayao-xuanji",
@@ -3874,12 +6171,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "caoshanyulu",
-    "relatedConcepts": ["wuwei-jianji","hu-hu"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "hu-hu"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "baiyun-wanli",
@@ -3892,12 +6196,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["toushi-guan","diyi-yi"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "toushi-guan",
+      "diyi-yi"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "wuzi-huatou",
@@ -3910,12 +6221,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["toushi-guan","baiyun-wanli"],
-    "relatedPersons": ["wuzu-fayan","zhaozhou"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "toushi-guan",
+      "baiyun-wanli"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "toushi-guan",
@@ -3928,12 +6247,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["baiyun-wanli","wuzi-huatou"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli",
+      "wuzi-huatou"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "qugeng-duoshi",
@@ -3946,12 +6272,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["baiyun-wanli"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "baiyun-yidi-shui",
@@ -3964,12 +6296,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["baiyun-wanli","ordinary-mind"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "diyi-yi",
@@ -3982,12 +6321,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "fayanyulu",
-    "relatedConcepts": ["baiyun-wanli","toushi-guan"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli",
+      "toushi-guan"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "po-shengsi-xin",
@@ -3998,12 +6344,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "做工夫，最初要发个破生死心坚硬，看破世界身心悉是假缘，无实主宰。 —博山元来《参禅警语》",
       "将此一念，作个敲门瓦子，如坐在烈火焰中求出相似。 —博山元来"
-],
+    ],
     "guidance": "现代人虽不必人人出家，亦可时时自警：生死大事未明，一口气不来便随业流转。以此警觉为修行之底色，工夫才不致因循成口头禅。破生死心是疑情之母——生死心真切，则话头自然亲切，疑情自然浓密。",
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["yiqing","qie-zi-jue"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "yiqing",
+      "qie-zi-jue"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "qie-zi-jue",
@@ -4014,12 +6367,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "做工夫最要紧是个“切”字。切字最有力，不切则懈怠生。 —博山元来《参禅警语》",
       "切之一字，是最亲切句。用心亲切，则无闲隙，故魔不能入。 —博山元来"
-],
+    ],
     "guidance": "修行如百里程途，行一步则少一步；切字便是步步不停之力。现代人用功最忌“不打紧”三字——今日复明日，大事蹉跎。无论参禅做事，把心切下去，懈怠放逸自然无隙可乘。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["po-shengsi-xin","yiqing"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "jiang-xin-dai-wu",
@@ -4031,12 +6391,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "做工夫不得将心待悟！如人行路，住在路上待到家终不到家，只须行到家。 —博山元来《参禅警语》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "参禅只管提起话头、发起疑情，悟不悟时节到来自然成就，不容拟议安排。此理通于万事：种树但管浇水松土，开花自有时节；日日盯着“怎么还不开花”，反添焦虑障成长。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["chanbing","yiqing","tou-xin-wei-si"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "chanbing",
+      "yiqing",
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "shishen",
@@ -4047,12 +6415,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "做工夫最怕认识神为佛事……若把识神当事，做外道奴也不得。 —博山元来《参禅警语》",
       "汝若认昭昭灵灵是汝真实，为甚瞌睡时又不成昭昭灵灵？ —玄沙师备"
-],
+    ],
     "guidance": "清醒时了了分明的灵知并非本来面目——熟睡时它何在？生死到来它何在？用功须向“能知觉者”未生前究，莫在知觉门头认主宰。今人谈“觉察”“觉知”亦当辨此：觉察是工具，非主人。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语、卷下·评古德垂示警语",
-    "relatedConcepts": ["chanbing","non-mind"],
-    "relatedPersons": ["boshan-yuanlai","xuansha-shibei"],
-    "relatedBooks": ["boshan-canchanjingyu","xuanshayulu"]
+    "relatedConcepts": [
+      "chanbing",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai",
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu",
+      "xuanshayulu"
+    ]
   },
   {
     "id": "fashen-bing",
@@ -4063,12 +6440,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "法身中病最多，只须大病一场，始识得病根。 —博山元来《参禅警语》",
       "假饶尽大地人参禅，未有一个不受法身病者。 —博山元来"
-],
+    ],
     "guidance": "悟非终点，法身边亦须转身。凡有一境可住、一得可守——光皎皎地、净裸裸地、隐隐有物——皆是病。博山示人：既与理相应，须向万仞岩头翻筋斗打将下来，方是大人用心。修行人得少为足、认光影门头，宜深警此病。",
     "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",
-    "relatedConcepts": ["chanbing","zhuan-shen-tu-qi"],
-    "relatedPersons": ["boshan-yuanlai","yunmen"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "chanbing",
+      "zhuan-shen-tu-qi"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai",
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "zhuan-shen-tu-qi",
@@ -4079,12 +6464,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "若命根断去，不知转身吐气，唤作堕身死汉，非究竟也。 —博山元来《参禅警语》",
       "坐断十方犹点额，密移一步看飞龙。 —天童正觉"
-],
+    ],
     "guidance": "死水不藏龙。修行到一念不生、澄澄湛湛处，正须转身——从静入动、从体起用、入廛垂手接引学人。今人闭关清修得轻安境界，若以此为极则，正是坐在饭箩边饿杀。悟后重起疑、更见人，方能转身吐气。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《博山参禅警语》卷下·示疑情发得起警语",
-    "relatedConcepts": ["zhuan-shen-ju","fashen-bing"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "zhuan-shen-ju",
+      "fashen-bing"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "jifeng",
@@ -4096,12 +6488,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "古人一语一言，如大火聚，近之不得、触之不得。 —博山元来《参禅警语》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "机锋不可学、不可仿——学来的机锋是口头三昧。参机锋公案，不当谜语猜，须见其截断意识之用：凡让你左思右想皆不是处的，正是机锋立处。今人读公案若只觉说话艺术高明，尽失其旨。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《临济录》《无门关》《博山参禅警语》",
-    "relatedConcepts": ["koan","instant-enlightenment"],
-    "relatedPersons": ["linji","deshan-xuanjian","yunmen","mazu","zhaozhou"],
-    "relatedBooks": ["linji","wumenguan","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "koan",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "linji",
+      "deshan-xuanjian",
+      "yunmen",
+      "mazu",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "linji",
+      "wumenguan",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "baoren",
@@ -4113,12 +6518,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "初心顿悟，犹有无始旷劫习气未能顿净，须教渠净除现业流识。 —沩山灵祐",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "悟后不可自足——博山云：悟后不见大善知识，纵得安逸，终是未了。保任不是守着一片寂静，而是在行住坐卧、逆顺境缘中勘验：境缘当前，悟境还在么？不动摇，方是真保任。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《真心直说》《禅林宝训》",
-    "relatedConcepts": ["real-mind","chanbing"],
-    "relatedPersons": ["pang-yun","boshan-yuanlai","huineng","dahui-zonggao"],
-    "relatedBooks": ["zhenxin","chanlinbaoxun","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "real-mind",
+      "chanbing"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "boshan-yuanlai",
+      "huineng",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "zhenxin",
+      "chanlinbaoxun",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "zheng-pian",
@@ -4130,12 +6547,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "正位即空界，本来无物；偏位即色界，有万象形。 —曹山本寂",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "五位非次第渐进之阶梯，乃勘验心地之五面照镜。行人勿于名相上排比，须自勘：我今坐在正中偏（唯认理体）乎？偏中正（沉空守寂）乎？还是理事双融、君臣道合？ 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《曹山语录》《宝镜三昧》",
-    "relatedConcepts": ["wuwei-jianji","hu-hu"],
-    "relatedPersons": ["dongshan","caoshan-benji"],
-    "relatedBooks": ["caoshanyulu","baojingsanmei"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "hu-hu"
+    ],
+    "relatedPersons": [
+      "dongshan",
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu",
+      "baojingsanmei"
+    ]
   },
   {
     "id": "hu-hu",
@@ -4147,12 +6573,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "重离六爻，偏正回互。 —《宝镜三昧》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "万法归一，一在万法（正中有偏）；水月空花，全彰佛性（偏中有正）。日用中见色便是见心，于心不染于色——回互而不混滥，方是曹洞血脉。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《宝镜三昧》《曹山语录》",
-    "relatedConcepts": ["zheng-pian","wuwei-jianji"],
-    "relatedPersons": ["dongshan","caoshan-benji"],
-    "relatedBooks": ["baojingsanmei","caoshanyulu"]
+    "relatedConcepts": [
+      "zheng-pian",
+      "wuwei-jianji"
+    ],
+    "relatedPersons": [
+      "dongshan",
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "baojingsanmei",
+      "caoshanyulu"
+    ]
   },
   {
     "id": "dinghui",
@@ -4164,12 +6599,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "外离相为禅，内不乱为定。外禅内定，是为定慧。 —六祖坛经",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "修行人常落两边：或贪静求定而愈坐愈昏，或钻研义理而分别愈粗。对治唯一“等”字——提话头时，历历不昏是慧，绵绵不乱是定；一句佛号、一则公案上同时成就定慧。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《六祖坛经·定慧品》",
-    "relatedConcepts": ["jiedinghui","yixing-sanmei"],
-    "relatedPersons": ["huineng","daoxin"],
-    "relatedBooks": ["tanjing","zhenxin","anxin"]
+    "relatedConcepts": [
+      "jiedinghui",
+      "yixing-sanmei"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "daoxin"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "zhenxin",
+      "anxin"
+    ]
   },
   {
     "id": "jianxing-chengfo",
@@ -4181,12 +6626,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "直指人心，见性成佛。 —达摩西来宗旨",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "莫将见性作见光见华、得特殊体验会——凡有所见皆非。性在作用：见色闻声、扬眉瞬目的是谁？于此参究，蓦地彻见能见之性本空本净，是名见性。见性之后尚须保任，非一悟便了。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《血脉论》《六祖坛经》",
-    "relatedConcepts": ["buddha-nature","direct-pointing","self-nature"],
-    "relatedPersons": ["bodhidharma","huineng"],
-    "relatedBooks": ["xuemaicong","tanjing"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "direct-pointing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xuemaicong",
+      "tanjing"
+    ]
   },
   {
     "id": "shentong",
@@ -4198,12 +6653,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "神通并妙用，运水及搬柴。 —马祖道一",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "修行中若现异境——光、影、预知、他心——皆不作圣解，一概以话头化之。神通不求自得，得而不执方不受害；以神通惑众者，魔业也。平常心是道，运水搬柴无非佛事。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《马祖语录》《楞严经》",
-    "relatedConcepts": ["ordinary-mind","chanbing"],
-    "relatedPersons": ["mazu","pang-yun"],
-    "relatedBooks": ["mazu","lengyanjing"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "chanbing"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "pang-yun"
+    ],
+    "relatedBooks": [
+      "mazu",
+      "lengyanjing"
+    ]
   },
   {
     "id": "chanyuan",
@@ -4215,12 +6679,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "源者，是一切众生本觉真性，亦名佛性，亦名心地。 —宗密《禅源诸诠集都序》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "修行先识源：一切禅定智慧皆从本觉真性流出，莫离源觅流、抛家宝行乞。见一切法门同出一源，则诸宗纷诤自然平息——此\"会归禅源\"之读法。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷上",
-    "relatedConcepts": ["self-nature","buddha-nature","rulai-qingjing-chan"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "self-nature",
+      "buddha-nature",
+      "rulai-qingjing-chan"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "rulai-qingjing-chan",
@@ -4232,12 +6704,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若顿悟自心本来清净，元无烦恼，无漏智性，本自具足，此心即佛，毕竟无异，依此而修者，是最上乘禅。 —宗密",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "五禅之判是照妖镜：修行人所修到底是外道禅（带着邪见与欣厌）还是凡夫禅（只为福报）？唯有安住本具清净心而修，方名最上乘。检验不在打坐姿势，在见地与用心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷上·五种禅",
-    "relatedConcepts": ["chanyuan","yixing-sanmei","mind-is-buddha"],
-    "relatedPersons": ["guifeng-zongmi","bodhidharma"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "chanyuan",
+      "yixing-sanmei",
+      "mind-is-buddha"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "sanzong",
@@ -4249,12 +6730,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "禅三宗者，一息妄修心宗，二泯绝无寄宗，三直显心性宗。 —宗密",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "三宗是三面镜子：看自己修行落在何处——还在拂尘看净（息妄）？还是沉空守寂（泯绝）？还是直认本性（直显）？次第可由浅入深，见地不可混滥；至道归一，不应执一非余。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷中",
-    "relatedConcepts": ["sanjiao","chanyuan"],
-    "relatedPersons": ["guifeng-zongmi","shenxiu","shitou","mazu","shenhui"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "sanjiao",
+      "chanyuan"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi",
+      "shenxiu",
+      "shitou",
+      "mazu",
+      "shenhui"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "sanjiao",
@@ -4266,12 +6758,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "谓一藏经论，统唯三种。禅门言教，亦统唯三宗。配对相符，方成圆见。 —宗密",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "读经先识三分：说因果事相的是第一教，荡相遣执的是第二教，直指真心的才是第三教。三教是一味佛法之深浅次第，执法相者勿谤破相为断灭，习空观者勿斥显性为执有——深必该浅，浅不至深。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷中",
-    "relatedConcepts": ["sanzong","tathagatagarbha","alaiye-shi"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "sanzong",
+      "tathagatagarbha",
+      "alaiye-shi"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "lingzhi",
@@ -4282,12 +6782,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "空寂之心，灵知不昧。即此空寂之知，是汝真性。",
       "知之一字，众妙之门。 —荷泽神会/宗密"
-],
+    ],
     "guidance": "辨知与识：缘境分别、睡时便断的是识；不待缘发、迷悟恒然的是灵知。参\"念佛是谁\"正要于此能知背后勘落识尘。切忌把\"灵知\"又变成一个玄妙境界去把捉——知是心之体，不是心中一物。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷中·直显心性宗",
-    "relatedConcepts": ["shishen","self-nature","real-mind"],
-    "relatedPersons": ["guifeng-zongmi","shenhui"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "shishen",
+      "self-nature",
+      "real-mind"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi",
+      "shenhui"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "chanjiao-yizhi",
@@ -4298,12 +6807,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "经是佛语，禅是佛意，诸佛心口必不相违。 —宗密",
       "执则字字疮疣，通则文文妙药。"
-],
+    ],
     "guidance": "今人学佛亦分两党：只读经论的说禅是空谈，只参禅的说教是葛藤。宗密之判是良药：教无禅则说食数宝，禅无教则盲修瞎练——如绳墨与工巧，如斗称与货物，相资为用。学一边者当自省。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》全卷",
-    "relatedConcepts": ["sanzong","sanjiao","dunwu-jianxiu"],
-    "relatedPersons": ["guifeng-zongmi","peixiu"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "sanzong",
+      "sanjiao",
+      "dunwu-jianxiu"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi",
+      "peixiu"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "miwu-shizhong",
@@ -4315,12 +6833,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "日光顿出，霜露渐消；孩子顿生，志气渐立。 —宗密",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "此图是修行地图：常自勘验\"我在何门，佛在何位\"——落在第几重？病在何处？对图服药：执实有的修空观破法执，分自他的修平等破我执。一即因该果海，十即果彻因源——初心即佛与究竟成佛，一图贯通。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《禅源诸诠集都序》卷下",
-    "relatedConcepts": ["dunwu-jianxiu","tathagatagarbha","alaiye-shi"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "tathagatagarbha",
+      "alaiye-shi"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "wanshan-tonggui",
@@ -4333,12 +6859,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：众善所归，皆宗实相。如空包纳，似地发生。",
-    "relatedConcepts": ["lishi-wuai","chan-jing-shuangxiu","quanshi-shuangxing"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "lishi-wuai",
+      "chan-jing-shuangxiu",
+      "quanshi-shuangxing"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "chan-jing-shuangxiu",
@@ -4351,12 +6885,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：誓断无染尘劳，愿生惟心净土。履践实际理地，出入无得观门。",
-    "relatedConcepts": ["wanshan-tonggui","lishi-wuai"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "wanshan-tonggui",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "quanshi-shuangxing",
@@ -4369,12 +6910,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：实则真际，权则化门。从真际而起化，实外无权；因事迹而得本，权外无实。",
-    "relatedConcepts": ["lishi-wuai","wanshan-tonggui"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "lishi-wuai",
+      "wanshan-tonggui"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "erdi-bingchen",
@@ -4387,12 +6935,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：诸佛常依二谛说法。俗是真诠，了俗无性即是真谛。",
-    "relatedConcepts": ["lishi-wuai","quanshi-shuangxing","erdi"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "lishi-wuai",
+      "quanshi-shuangxing",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "xingxiang-rongji",
@@ -4405,12 +6961,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：从一真心具不变随缘二义。不变是性，随缘是相。性是相之体，相是性之用。",
-    "relatedConcepts": ["tiyong-zizai","lishi-wuai"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "tiyong-zizai",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "tiyong-zizai",
@@ -4423,12 +6986,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：体即法性之理，用乃智应之事。举体全用，用即非一；举用全体，体即非异。",
-    "relatedConcepts": ["xingxiang-rongji","lishi-wuai"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "xingxiang-rongji",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "kongyou-xiangcheng",
@@ -4441,12 +7011,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：空因有立，缘生故性空；有假空成，无性故缘起。",
-    "relatedConcepts": ["lishi-wuai","wanshan-tonggui"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "lishi-wuai",
+      "wanshan-tonggui"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "zhengzhu-jianxiu",
@@ -4459,12 +7036,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：正即是主，助即是伴。因伴成主，无助即正终不圆；从主得伴，无正则助无由立。",
-    "relatedConcepts": ["wanshan-tonggui","lishi-wuai"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "wanshan-tonggui",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "xiuxing-buer",
@@ -4477,12 +7061,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "《万善同归集》：由修显本有之性，因性发今日之修。全性成修，全修成性，修性无二，因缘似分。",
-    "relatedConcepts": ["wanshan-tonggui","lishi-wuai"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "wanshan-tonggui",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "zhuoyu",
@@ -4495,12 +7086,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "biyanlu",
-    "relatedConcepts": ["ping-chang","song-gu","wenzi-chan"],
-    "relatedPersons": ["yuanwu-keqin","wansong-xingxiu"],
-    "relatedBooks": ["biyanlu","congronglu"]
+    "relatedConcepts": [
+      "ping-chang",
+      "song-gu",
+      "wenzi-chan"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "wansong-xingxiu"
+    ],
+    "relatedBooks": [
+      "biyanlu",
+      "congronglu"
+    ]
   },
   {
     "id": "chuishi",
@@ -4513,12 +7114,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "biyanlu",
-    "relatedConcepts": ["ping-chang","song-gu","zhuoyu"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "ping-chang",
+      "song-gu",
+      "zhuoyu"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "present-moment",
@@ -4529,12 +7138,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "日日是好日。 —云门文偃",
       "三心了不可得。 —《金刚经》"
-],
+    ],
     "guidance": "修行人常被两种时间幻觉拖走：懊悔过去、忧惧将来，独独错过当下。勘验之法：此刻正提起的这一念，觉知它的是谁？当下承担，当下即是；不离当念向外觅，觅即失却。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《碧岩录》《金刚经》",
-    "relatedConcepts": ["ordinary-mind","no-abiding"],
-    "relatedPersons": ["yunmen","zhaozhou"],
-    "relatedBooks": ["biyanlu","jingangjing"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "biyanlu",
+      "jingangjing"
+    ]
   },
   {
     "id": "fansheng-lujue",
@@ -4547,12 +7165,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqihoulu",
-    "relatedConcepts": ["suiliu-renxing","yiqiefa-foshi"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "suiliu-renxing",
+      "yiqiefa-foshi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "suiliu-renxing",
@@ -4565,12 +7190,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqihoulu",
-    "relatedConcepts": ["fansheng-lujue","xin-sui-wanjing"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "fansheng-lujue",
+      "xin-sui-wanjing"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "yiqiefa-foshi",
@@ -4583,12 +7215,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqihoulu",
-    "relatedConcepts": ["fansheng-lujue","ordinary-mind"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "fansheng-lujue",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "xin-sui-wanjing",
@@ -4601,12 +7240,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqihoulu",
-    "relatedConcepts": ["suiliu-renxing","no-abiding"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "suiliu-renxing",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "zanming",
@@ -4619,12 +7265,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "linjianhoulu",
-    "relatedConcepts": ["wenzi-chan"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "wenzi-chan"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "jizhu-kaiwu",
@@ -4637,12 +7289,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "linjianhoulu",
-    "relatedConcepts": ["instant-enlightenment","self-nature"],
-    "relatedPersons": ["xiangyan-zhixian"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "instant-enlightenment",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xiangyan-zhixian"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "pozhi-kuangfang",
@@ -4655,12 +7314,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "linjianhoulu",
-    "relatedConcepts": ["po-zhizhuo","non-duality"],
-    "relatedPersons": ["danxia-tianran"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "po-zhizhuo",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "danxia-tianran"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "huayan-jing",
@@ -4673,12 +7339,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "linjianhoulu",
-    "relatedConcepts": ["wenzi-chan","shier-yuanqi"],
-    "relatedPersons": ["li-tongxuan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "wenzi-chan",
+      "shier-yuanqi"
+    ],
+    "relatedPersons": [
+      "li-tongxuan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "shangli-bianzheng",
@@ -4691,12 +7364,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["jianxing-dadao","lianxu-xingshen","shangli-hujiao"],
-    "relatedPersons": ["konggu-jinglong","huanglong-huiji","lv-dongbin"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "jianxing-dadao",
+      "lianxu-xingshen",
+      "shangli-hujiao"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "huanglong-huiji",
+      "lv-dongbin"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "jianxing-dadao",
@@ -4709,12 +7392,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["shangli-bianzheng","lianxu-xingshen","chujia-shenshi"],
-    "relatedPersons": ["konggu-jinglong","deshan-xuanjian","longtan-xin"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "lianxu-xingshen",
+      "chujia-shenshi"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "deshan-xuanjian",
+      "longtan-xin"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "lianxu-xingshen",
@@ -4727,12 +7420,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["shangli-bianzheng","chujia-shenshi","sanjie-chulun"],
-    "relatedPersons": ["lv-dongbin","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "chujia-shenshi",
+      "sanjie-chulun"
+    ],
+    "relatedPersons": [
+      "lv-dongbin",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "sanjie-chulun",
@@ -4745,12 +7447,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["shangli-bianzheng","jianxing-dadao","lianxu-xingshen"],
-    "relatedPersons": ["konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "jianxing-dadao",
+      "lianxu-xingshen"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "zuotuo-liwang",
@@ -4763,12 +7473,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["dinghui-dengchi","chujia-shenshi","jianxing-dadao"],
-    "relatedPersons": ["shishuang-chuyuan","caoshan-benji","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "dinghui-dengchi",
+      "chujia-shenshi",
+      "jianxing-dadao"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "caoshan-benji",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "fo-buke-mie",
@@ -4781,12 +7501,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["shangli-hujiao","shangli-bianzheng"],
-    "relatedPersons": ["yaoguangxiao","konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-hujiao",
+      "shangli-bianzheng"
+    ],
+    "relatedPersons": [
+      "yaoguangxiao",
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "chujia-shenshi",
@@ -4799,12 +7527,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["lianxu-xingshen","zuotuo-liwang","dinghui-dengchi"],
-    "relatedPersons": ["konggu-jinglong"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "lianxu-xingshen",
+      "zuotuo-liwang",
+      "dinghui-dengchi"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "dinghui-dengchi",
@@ -4817,12 +7553,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["zuotuo-liwang","jianxing-dadao","chujia-shenshi"],
-    "relatedPersons": ["konggu-jinglong","zhang-shangying"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "zuotuo-liwang",
+      "jianxing-dadao",
+      "chujia-shenshi"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhang-shangying"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "shangli-hujiao",
@@ -4835,12 +7580,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "shanglibian",
-    "relatedConcepts": ["shangli-bianzheng","fo-buke-mie"],
-    "relatedPersons": ["konggu-jinglong","yaoguangxiao"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "fo-buke-mie"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "yaoguangxiao"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "yangqi-siyi",
@@ -4853,12 +7606,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu","yangqihoulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu",
+      "yangqihoulu"
+    ]
   },
   {
     "id": "mingan-jieduan",
@@ -4871,15 +7632,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["yangqi-yijue","linji-zongfeng"],
-    "relatedPersons": ["daowu-zhen","yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "daowu-zhen",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
-  
-  
   {
     "id": "sibinzhu",
     "title": "四宾主",
@@ -4891,12 +7658,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["linji-zongfeng","sanxuan-sanyao","sizhao-yong"],
-    "relatedPersons": ["daowu-zhen","linji"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "linji-zongfeng",
+      "sanxuan-sanyao",
+      "sizhao-yong"
+    ],
+    "relatedPersons": [
+      "daowu-zhen",
+      "linji"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "wuwei-jianji",
@@ -4909,12 +7685,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["caodong-zongfeng","sibinzhu"],
-    "relatedPersons": ["daowu-zhen","dongshan"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "caodong-zongfeng",
+      "sibinzhu"
+    ],
+    "relatedPersons": [
+      "daowu-zhen",
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "shuo-meng",
@@ -4927,12 +7711,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui","yang-jie"],
-    "relatedBooks": ["yangqiyulu","yangqihoulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "yang-jie"
+    ],
+    "relatedBooks": [
+      "yangqiyulu",
+      "yangqihoulu"
+    ]
   },
   {
     "id": "zuoduan-fangguo",
@@ -4945,12 +7738,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["yangqi-yijue","yangqi-siyi"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "yangqi-siyi"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "sanjiaoluo-mao",
@@ -4963,12 +7763,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "yangqiyulu",
-    "relatedConcepts": ["yangqi-yijue","jianxing-chengfo"],
-    "relatedPersons": ["yangqi-fanghui","yang-jie"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "yangqi-yijue",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui",
+      "yang-jie"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "yiqing-canjiu",
@@ -4979,12 +7787,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "无疑不悟，未有不疑而成事者也",
       "疑者疑此一归何处，归何处三字是考究这一向何处安身立命"
-],
+    ],
     "guidance": "用疑时先须发愤怒心，疑赵州因甚道无。此愤怒心或出声不出声学人自取方便。这一箇疑字单只疑赵州因甚道无，不是看赵州无，不是念赵州无。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["huatou-gongfu","kan-wu-nian-wu-yi-wu"],
-    "relatedPersons": ["zhiche","zhaozhou"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "huatou-gongfu",
+      "kan-wu-nian-wu-yi-wu"
+    ],
+    "relatedPersons": [
+      "zhiche",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "kan-wu-nian-wu-yi-wu",
@@ -4995,12 +7811,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "今时学人多是看这无字念这无字，真可怜也",
       "详这缓念者恰如冰凌上掷豆子相似，详这急念者浑似更鼓楼上发擂一般"
-],
+    ],
     "guidance": "参无字不是看也不是念，而是疑赵州因甚道无。先须发愤怒心，单只疑这一个无字。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu","huatou-gongfu"],
-    "relatedPersons": ["zhiche","zhaozhou"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "yiqing-canjiu",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "zhiche",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "tui-duo-duizhi",
@@ -5011,12 +7835,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "退者退菩提心退长远心退精进心",
       "此念如汤消冰倏尔无余纯一净念"
-],
+    ],
     "guidance": "遇退念起时，即便燃香发露忏悔，求佛哀祐即举话头，此念应时随灭。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu","huatou-gongfu"],
-    "relatedPersons": ["zhiche"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "yiqing-canjiu",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "zhiche"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "huatou-gongfu",
@@ -5027,12 +7858,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "如击钟磬一般匀调击之声则和顺",
       "不可信人说不要开口举话头，若信此语闭口禁声后必有患也"
-],
+    ],
     "guidance": "举话头时或出声不出声皆可，但不得太急又不得太缓。只贵话头上疑情得力不得力处取用切。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "chanzongjueyiji",
-    "relatedConcepts": ["yiqing-canjiu","kan-wu-nian-wu-yi-wu","all-returns-to-one"],
-    "relatedPersons": ["zhiche"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "yiqing-canjiu",
+      "kan-wu-nian-wu-yi-wu",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "zhiche"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "huanglong-sanguan",
@@ -5044,12 +7883,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "人人尽有生缘处，那个是上座生缘处。",
       "我手何似佛手。",
       "我脚何似驴脚。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "huanglong-shengyuan",
@@ -5061,12 +7904,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "生缘有语人皆识，水母何曾离得虾。但见日头东畔上，谁能更吃赵州茶。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "huanglong-foshou",
@@ -5078,12 +7925,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "我手佛手兼举，禅人直下荐取。不动干戈道出，当处超佛越祖。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "huanglong-lvjiao",
@@ -5095,12 +7946,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "我脚驴脚并行，步步踏着无生。会得云收日卷，方知此道纵横。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "zhuanshen-yilu",
@@ -5112,12 +7967,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "行脚人须得转身一路。若也转得，一为无量，无量为一。若转不得，布袋里老鸦虽活如死。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "zijia-baozang",
@@ -5129,12 +7988,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "汝等诸人各有自家宝藏，为什么不得其用？只为不回头。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan","mazu","dazhu-huihai"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan",
+      "mazu",
+      "dazhu-huihai"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "fansheng-qingjin",
@@ -5146,12 +8011,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "凡圣情尽，体露真常，但离妄缘，即如如佛。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "tieniu-zhiji",
@@ -5163,12 +8032,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "祖师心印，状似铁牛之机。去即印住，住即印破。只如不去不住，又作么生搭印。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "黄龙慧南禅师语录",
     "relatedConcepts": [],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "wubuqian",
@@ -5181,12 +8054,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["dongjing-buer","zongbenyi"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "dongjing-buer",
+      "zongbenyi"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "buzhenkong",
@@ -5199,12 +8079,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["youwu-buer","zongbenyi"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "youwu-buer",
+      "zongbenyi"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "bore-wuzhi",
@@ -5217,12 +8104,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["zongbenyi"],
-    "relatedPersons": ["seng-zhao","liu-yi-min"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "zongbenyi"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "liu-yi-min"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "niepan-wuming",
@@ -5235,12 +8129,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["zongbenyi"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "zongbenyi"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "zongbenyi",
@@ -5253,12 +8153,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["wubuqian","buzhenkong","bore-wuzhi","niepan-wuming"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "wubuqian",
+      "buzhenkong",
+      "bore-wuzhi",
+      "niepan-wuming"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "dongjing-buer",
@@ -5271,12 +8180,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["wubuqian"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "wubuqian"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "youwu-buer",
@@ -5289,12 +8204,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["buzhenkong"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "buzhenkong"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "yuanti-suoti",
@@ -5307,12 +8228,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "肇论",
-    "relatedConcepts": ["buzhenkong","niepan-wuming"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "buzhenkong",
+      "niepan-wuming"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "shangzhi-hujiao",
@@ -5325,12 +8253,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangli-hujiao","paifo-xinbing","dao-xue-yuanliu"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangli-hujiao",
+      "paifo-xinbing",
+      "dao-xue-yuanliu"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "paifo-xinbing",
@@ -5343,12 +8280,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","dao-xue-yuanliu"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "dao-xue-yuanliu"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "dao-xue-yuanliu",
@@ -5361,12 +8306,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","taiji-tu","paifo-xinbing"],
-    "relatedPersons": ["konggu-jinglong","zhou-dunyi","cheng-hao","cheng-yi","zhuxi-zhunan","donglin-zong"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "taiji-tu",
+      "paifo-xinbing"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhou-dunyi",
+      "cheng-hao",
+      "cheng-yi",
+      "zhuxi-zhunan",
+      "donglin-zong"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "taiji-tu",
@@ -5379,12 +8337,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["dao-xue-yuanliu","shangzhi-hujiao"],
-    "relatedPersons": ["konggu-jinglong","zhou-dunyi","donglin-zong"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "dao-xue-yuanliu",
+      "shangzhi-hujiao"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhou-dunyi",
+      "donglin-zong"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "xushi-jimie",
@@ -5397,12 +8364,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","paifo-xinbing"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "paifo-xinbing"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "shenshi-bumie",
@@ -5415,12 +8390,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","paifo-xinbing"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "paifo-xinbing"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "fengmeng-zhiji",
@@ -5433,12 +8416,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","paifo-xinbing"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "paifo-xinbing"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "qiangqian-shezhang",
@@ -5451,12 +8442,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "尚直编",
-    "relatedConcepts": ["shangzhi-hujiao","paifo-xinbing"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "paifo-xinbing"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "jingang-yanjing",
@@ -5469,12 +8468,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["sanxuan-sanyao","sizhao-yong"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "sanxuan-sanyao",
+      "sizhao-yong"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "nongchao-xushiren",
@@ -5487,12 +8493,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "shui-chu-gaoyuan",
@@ -5505,12 +8518,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","fashen-wuxiang"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "fashen-wuxiang"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "ciming-sijia-lu",
@@ -5523,12 +8543,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["linji-zongfeng"],
-    "relatedPersons": ["shishuang-chuyuan","yangqi-fanghui","baiyun-shouduan","wuzu-fayan","zhang-zong"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "yangqi-fanghui",
+      "baiyun-shouduan",
+      "wuzu-fayan",
+      "zhang-zong"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "wuwei-zhuyong",
@@ -5541,15 +8571,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["wuwei-jianji","zheng-pian"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "zheng-pian"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
-    "id": "shier-shi-ge",
+    "id": "shi-er-shi-ge",
     "title": "十二时歌",
     "category": "日用修行",
     "summary": "楚圆禅师所作，从鸡鸣丑到夜半子，十二时辰各有一偈，描绘禅者日用修行写照。语言通俗活泼，将禅修融入日常作息，饥餐困眠皆是道。 在禅宗心法中，此概念直指行者自心本具之真如实相，揭示迷悟不二、染净同体之甚深义理。行者若能透达此理，便能于纷繁复杂之世间万相中洞见空性本质，不住两边，圆融无碍。 宗门大德开示，知此名相非为空谈，贵在当人反躬自省，照见本来无一物之自性，体用一如。",
@@ -5559,12 +8596,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jianxing-chengfo"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "xing-xing-chang-zai",
+      "dao-zai-riyong",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan",
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan",
+      "pingshiyulu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "mutong-ge",
@@ -5577,12 +8627,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["shiniu"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "shiniu"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "yangqi-yijue",
@@ -5595,12 +8651,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "杨岐方会禅师语录",
-    "relatedConcepts": ["linji-zongfeng"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "banghe",
@@ -5613,12 +8675,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "临济录",
-    "relatedConcepts": ["jifeng"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "linji-zongfeng",
@@ -5631,12 +8699,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "临济语录",
-    "relatedConcepts": ["sanxuan-sanyao"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "sanxuan-sanyao"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "caodong-zongfeng",
@@ -5649,12 +8723,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "洞山语录",
     "relatedConcepts": [],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["dongshanyulu"]
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "dongshanyulu"
+    ]
   },
   {
     "id": "dao-zai-riyong",
@@ -5667,12 +8745,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "赵州语录",
-    "relatedConcepts": ["ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "fashen-wuxiang",
@@ -5685,12 +8769,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "金刚经",
-    "relatedConcepts": ["emptiness","self-nature"],
+    "relatedConcepts": [
+      "emptiness",
+      "self-nature"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["jingangjing"]
+    "relatedBooks": [
+      "jingangjing"
+    ]
   },
   {
     "id": "jianshe",
@@ -5703,14 +8792,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "赵州语录",
-    "relatedConcepts": ["ordinary-mind"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
-  
   {
     "id": "kuo-ran-wu-sheng",
     "title": "廓然无圣",
@@ -5722,12 +8816,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["emptiness","beyond-words"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "emptiness",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "chenchen-sanmei",
@@ -5740,12 +8841,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["emptiness","non-duality"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["yunmen"]
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "yunmen"
+    ]
   },
   {
     "id": "zuo-jia-xiang-jian",
@@ -5758,12 +8866,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["jifeng"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "mi-ji-zhu-wu",
@@ -5776,10 +8890,12 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["jifeng"],
+    "relatedConcepts": [
+      "jifeng"
+    ],
     "relatedPersons": [],
     "relatedBooks": []
   },
@@ -5794,12 +8910,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "临济录",
-    "relatedConcepts": ["jifeng","banghe"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["linji"]
+    "relatedConcepts": [
+      "jifeng",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "linji"
+    ]
   },
   {
     "id": "shentong-miaoyong",
@@ -5812,10 +8935,12 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["ordinary-mind"],
+    "relatedConcepts": [
+      "ordinary-mind"
+    ],
     "relatedPersons": [],
     "relatedBooks": []
   },
@@ -5830,11 +8955,15 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["self-nature"],
-    "relatedPersons": ["zhigong"],
+    "relatedConcepts": [
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhigong"
+    ],
     "relatedBooks": []
   },
   {
@@ -5848,10 +8977,12 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["self-nature"],
+    "relatedConcepts": [
+      "self-nature"
+    ],
     "relatedPersons": [],
     "relatedBooks": []
   },
@@ -5866,12 +8997,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "碧岩录",
-    "relatedConcepts": ["wenzi-chan","beyond-words"],
+    "relatedConcepts": [
+      "wenzi-chan",
+      "beyond-words"
+    ],
     "relatedPersons": [],
-    "relatedBooks": ["biyanlu"]
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "po-zhizhuo",
@@ -5884,10 +9020,13 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "五灯会元",
-    "relatedConcepts": ["emptiness","no-abiding"],
+    "relatedConcepts": [
+      "emptiness",
+      "no-abiding"
+    ],
     "relatedPersons": [],
     "relatedBooks": []
   },
@@ -5902,10 +9041,12 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "华严经",
-    "relatedConcepts": ["emptiness"],
+    "relatedConcepts": [
+      "emptiness"
+    ],
     "relatedPersons": [],
     "relatedBooks": []
   },
@@ -5920,12 +9061,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["mutong-ge"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "mutong-ge"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "xuansha-sanju",
@@ -5936,12 +9083,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "第一句且自承当，现成具足。 —玄沙师备",
       "第三句，知有大智性相之本，通其过量之见。 —玄沙师备"
-],
+    ],
     "guidance": "参三句者须辨：第一句是信位承当，莫死于此；第二句须转出，于生杀纵夺中得自在；第三句方是慈定大用。若于第一句即谓了毕，正是玄沙所斥“死在句下，未有自由分”。",
     "classicRef": "《玄沙师备禅师语录》卷上 / 《玄沙师备禅师广录》卷中",
-    "relatedConcepts": ["self-nature","instant-enlightenment"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu","xuanshaguanglu"]
+    "relatedConcepts": [
+      "self-nature",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu",
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "sanzhong-bingren",
@@ -5952,12 +9107,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "若接不得，佛法无灵验。 —玄沙师备",
       "三种病人，一种法门。 —佛鉴勤颂"
-],
+    ],
     "guidance": "参此语不可于盲聋哑三字上作道理会。玄沙之意：佛法灵验不在施设之多，而在当人自肯。若向“如何接”处起思忖，正落玄沙彀中。云门一挃一唤，全在当下用过即休。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《玄沙师备禅师语录》卷中",
-    "relatedConcepts": ["chanbing","beyond-words"],
-    "relatedPersons": ["xuansha-shibei","yunmen","luohan-guichen"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "chanbing",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei",
+      "yunmen",
+      "luohan-guichen"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "mimi-jingangti",
@@ -5968,12 +9132,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "但识取汝秘密金刚体。圆成正遍，遍周沙界。 —玄沙师备",
       "山河大地、十方国土、色空明暗及汝身心，莫非尽承汝圆成威光所现。 —玄沙师备"
-],
+    ],
     "guidance": "识金刚体之要，在于不向能知能觉上认取。日体之喻最切：万物承日光而成，日体却无一物之形；行人但于山河大地、见闻觉知处回光——能现者是谁？莫认昭昭灵灵之光影门头为真。",
     "classicRef": "《玄沙师备禅师语录》卷上",
-    "relatedConcepts": ["buddha-nature","self-nature","shishen"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu"]
+    "relatedConcepts": [
+      "buddha-nature",
+      "self-nature",
+      "shishen"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu"
+    ]
   },
   {
     "id": "yongchu-buhuanji",
@@ -5984,12 +9156,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "我比来向汝道用处不换机，因什么只管对话？ —玄沙师备",
       "学者当用处不换机。 —《智证传》引玄沙语"
-],
+    ],
     "guidance": "日用功夫但验一处：对答之间、应事之际，是逐他语句转，还是自住本位？一念逐境，机已换却；念念不换，用处即是。参学者当于对话生解处猛省。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "《玄沙师备禅师语录》卷中 / 《玄沙师备禅师广录》卷上",
-    "relatedConcepts": ["self-nature","no-abiding"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu","xuanshaguanglu"]
+    "relatedConcepts": [
+      "self-nature",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu",
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "bian-zisu",
@@ -6000,12 +9180,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "直须辨缁素，莫与么儱侗，无有是处。 —玄沙师备",
       "唤青作黄得么？ —玄沙答“如何是辩黑白”"
-],
+    ],
     "guidance": "今人学禅最易堕笼统：“都是空”“一切平等”“不要分别”——玄沙谓之儱侗。真平等不妨坏假名而说：青黄赤白一一分明，是非好恶丝毫不混；于分毫不得混滥处，见一一皆得解脱。用功须就明眼人决择，不可自是没头民主张。",
     "classicRef": "《玄沙师备禅师广录》卷上",
-    "relatedConcepts": ["chanbing","non-duality"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshaguanglu","xuanshayulu"]
+    "relatedConcepts": [
+      "chanbing",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshaguanglu",
+      "xuanshayulu"
+    ]
   },
   {
     "id": "siguan",
@@ -6016,12 +9204,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "来不入死关，去不出死关。铁蛇钻入海，撞倒须弥山。—高峰原妙",
       "大彻底人本脱生死，因甚命根不断？—高峰三关语"
-],
+    ],
     "guidance": "死关非关门窗，乃心关——以必死之志参究本来，不悟不休。三关语验学者：下语不契则闭门不接，非具大根大志者不能入。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","keqi-quzheng"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "keqi-quzheng"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "aoshan-chengdao",
@@ -6033,12 +9229,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "鳌山成道，何处不通。—雪峰义存",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "悟道不在行脚遍参，在于一言之下桶底脱落——鳌山之雪、德山之棒，皆是因缘。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "zhenru-shiyi",
@@ -6050,12 +9253,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "一名佛性，二名真如，三名玄旨，四名清净法身界，五名灵台，六名真魂，七名赤子，八名大圆镜智，九名空宗，十名第一义，十一名白净识。—雪峰义存",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "十一名皆指一心——识得一名即识全体，不须遍求十一名。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "雪峰义存禅师语录",
-    "relatedConcepts": ["jianxing-chengfo","self-nature","buddha-nature"],
-    "relatedPersons": ["xuefeng-yicun"],
-    "relatedBooks": ["xuefengyulu"]
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "xuefeng-yicun"
+    ],
+    "relatedBooks": [
+      "xuefengyulu"
+    ]
   },
   {
     "id": "niangu",
@@ -6067,12 +9278,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "拈古举公案而评判，颂古以诗偈重显——二者皆为禅宗评唱之体。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "拈古非解释公案，乃举而评判——须具宗门眼目方能下断语。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "佛果击节录",
-    "relatedConcepts": ["ping-chang","koan"],
-    "relatedPersons": ["xuedou-zhongxian","yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "ping-chang",
+      "koan"
+    ],
+    "relatedPersons": [
+      "xuedou-chongxian",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "jijie",
@@ -6084,12 +9303,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "击节非解释，乃直指古人落处——德山大似握阃外威权，雪窦具顶门一只眼。",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "击节处正是参究入手处——不可滑口读过，须于圆悟断语处转身。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "佛果击节录",
-    "relatedConcepts": ["niangu","ping-chang"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["foguojijielu"]
+    "relatedConcepts": [
+      "niangu",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "foguojijielu"
+    ]
   },
   {
     "id": "poshapen",
@@ -6101,12 +9327,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "破沙盆语，盛播丛林。—密庵咸杰语录序",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "破沙盆非破器皿，乃破执著——打破一切窠臼，直指人心。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "密庵咸杰禅师语录",
-    "relatedConcepts": ["banghe","kanhua-chan-concept"],
-    "relatedPersons": ["mianxian-xianjie"],
-    "relatedBooks": ["mianxianyulu"]
+    "relatedConcepts": [
+      "banghe",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "mianxian-xianjie"
+    ],
+    "relatedBooks": [
+      "mianxianyulu"
+    ]
   },
   {
     "id": "chan-jiao-huitong",
@@ -6118,12 +9351,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "禅是佛心，教是佛语，净是佛行。—紫柏真可",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "禅教会通非混滥——须以禅悟为根本，以教理为解门，以净土为归趣，三者相资而不相碍。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "紫柏老人别集",
-    "relatedConcepts": ["weishi-jiechan","self-nature"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "weishi-jiechan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "weishi-jiechan",
@@ -6135,12 +9375,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "阿赖识四分略解、前五识略解。—紫柏真可",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "唯识解禅非以教代禅——须以教理为解门，以禅悟为证入，教禅相资而不相碍。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "紫柏老人别集",
-    "relatedConcepts": ["chan-jiao-huitong"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "chan-jiao-huitong"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "xiahunsan",
@@ -6152,12 +9398,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "天池山煆昏散道场说。—紫柏真可",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "煆昏散非止非观——须以决志逼拶，如以火煆金，令昏散消落，心体光洁。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "紫柏老人别集",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing"],
-    "relatedPersons": ["zibai-zhenke"],
-    "relatedBooks": ["zibaibieji"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zibaibieji"
+    ]
   },
   {
     "id": "keqi-quzheng",
@@ -6168,12 +9421,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "大限九旬，小限七日。粗中有细，细中有密。—高峰原妙",
       "如善射者仰箭射空，复以后箭射前箭筈，筈筈承箭，箭箭中筈，住于空中，经久不堕，盖是精进之功。—高峰原妙"
-],
+    ],
     "guidance": "克期取证须具三要：大信根、大愤志、大疑情。十二时中果能具此三要，管取克日成功。如折足之鼎缺一即成废器。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "高峰原妙禅师语录",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","siguan"],
-    "relatedPersons": ["gaofeng-yuanmiao"],
-    "relatedBooks": ["gaofengyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "siguan"
+    ],
+    "relatedPersons": [
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "gaofengyulu"
+    ]
   },
   {
     "id": "wujia-gangzong",
@@ -6186,12 +9447,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
     "relatedConcepts": [],
-    "relatedPersons": ["huiyan-zhizhao"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedPersons": [
+      "huiyan-zhizhao"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "siliao-jian",
@@ -6202,12 +9467,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu","linji"]
+    "relatedConcepts": [
+      "wujia-gangzong"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "linji"
+    ]
   },
   {
     "id": "sanxuan-sanyao",
@@ -6220,12 +9492,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["linji","fenyang-shanzhao"],
-    "relatedBooks": ["renyantianmu","linji"]
+    "relatedConcepts": [
+      "wujia-gangzong",
+      "linji-zongfeng",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "linji",
+      "fenyang-shanzhao",
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "linji",
+      "fenyangyulu",
+      "shishuangchuyuan",
+      "biyanlu"
+    ]
   },
   {
     "id": "sizhao-yong",
@@ -6238,14 +9524,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu","linji"]
+    "relatedConcepts": [
+      "wujia-gangzong"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "linji"
+    ]
   },
-  
   {
     "id": "yunmen-sanju",
     "title": "云门三句",
@@ -6255,12 +9547,27 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["renyantianmu","yunmen"]
+    "relatedConcepts": [
+      "wujia-gangzong",
+      "ben-lai-mian-mu",
+      "banghe",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "yunmen",
+      "xuedou-chongxian",
+      "yuanwu-keqin",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "yunmen",
+      "mingjueyulu",
+      "biyanlu"
+    ]
   },
   {
     "id": "yizi-guan",
@@ -6273,14 +9580,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong","yunmen-sanju"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["renyantianmu","yunmen"]
+    "relatedConcepts": [
+      "wujia-gangzong",
+      "yunmen-sanju"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "yunmen"
+    ]
   },
-  
   {
     "id": "gongxun-wuwei",
     "title": "功勋五位",
@@ -6292,12 +9606,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong","wuwei-jianji"],
-    "relatedPersons": ["dongshan"],
-    "relatedBooks": ["renyantianmu","dongshanyulu"]
+    "relatedConcepts": [
+      "wujia-gangzong",
+      "wuwei-jianji"
+    ],
+    "relatedPersons": [
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "san-zhong-sheng",
@@ -6310,12 +9632,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["weishan-lingyou"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "wujia-gangzong"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "yuanxiang",
@@ -6328,12 +9656,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong","san-zhong-sheng"],
-    "relatedPersons": ["yangshan-huiji"],
-    "relatedBooks": ["yangshanyulu","renyantianmu"]
+    "relatedConcepts": [
+      "wujia-gangzong",
+      "san-zhong-sheng"
+    ],
+    "relatedPersons": [
+      "yangshan-huiji"
+    ],
+    "relatedBooks": [
+      "yangshanyulu",
+      "renyantianmu"
+    ]
   },
   {
     "id": "huayan-liuxiang",
@@ -6346,12 +9682,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "若能转物，则同如来。",
       "见色便见心，心色何曾异。",
       "平常心是道，著意即差。"
-],
+    ],
     "guidance": "在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。 参学者须于一切顺逆境缘中深自磨砺，不落两边，时时提起觉照，令自心常处于惺惺寂寂、自在无碍之妙境。",
     "classicRef": "人天眼目",
-    "relatedConcepts": ["wujia-gangzong"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "wujia-gangzong"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "conglin-zhidu",
@@ -6362,12 +9704,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "禅门事例虽无两样毗尼，衲子家风别是一般规范。 —宗赜《禅苑清规序》",
       "百丈存纲领，诸方酌古今，始终三十事，一一护丛林。 —《百丈规绳颂》"
-],
+    ],
     "guidance": "丛林制度以戒腊为序、以职事分工、以茶汤为礼、以普请为务，一切皆为安众和合、助道修行。学人入丛林当先辨道具、受戒护戒、挂搭入室，次习粥饭茶汤之礼，再参请因缘入室请益，方为如法禅僧。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规",
-    "relatedConcepts": ["qinggui","baizhang-guisheng","shoujie-hujie","guata","jiejia-xiejia"],
-    "relatedPersons": ["zongze","baizhang"],
-    "relatedBooks": ["chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "qinggui",
+      "baizhang-guisheng",
+      "shoujie-hujie",
+      "guata",
+      "jiejia-xiejia"
+    ],
+    "relatedPersons": [
+      "zongze",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui",
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "qinggui",
@@ -6378,12 +9732,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "少林消息已是剜肉成疮，百丈规绳可谓新条特地。 —宗赜《禅苑清规序》",
       "百丈存纲领，诸方酌古今，始终三十事，一一护丛林。 —《百丈规绳颂》"
-],
+    ],
     "guidance": "清规虽为制度，然其精神在于慈悲安众——丛林之设本为众僧，一切职事皆为众僧而设。学人当以慈悲心行规矩度，不以规矩束缚大众，而以规矩安存大众。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规",
-    "relatedConcepts": ["conglin-zhidu","baizhang-guisheng"],
-    "relatedPersons": ["zongze","baizhang"],
-    "relatedBooks": ["chanyuanqinggui","chixiu-baizhang-qinggui","huanzhu-anqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "baizhang-guisheng"
+    ],
+    "relatedPersons": [
+      "zongze",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui",
+      "chixiu-baizhang-qinggui",
+      "huanzhu-anqinggui"
+    ]
   },
   {
     "id": "baizhang-guisheng",
@@ -6394,12 +9758,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "昔时居律寺，别院启禅门，大智禅师后，方知祖道尊。 —《百丈规绳颂》",
       "入門无佛殿，陞座有虚堂，即此传心印，当知是法王。 —《百丈规绳颂》"
-],
+    ],
     "guidance": "百丈规绳颂以偈颂体概括丛林三十事，每事一首四句五言颂，须对照长行细读方能理解。其要在别立禅居、不立佛殿、夏次安排、普请均力、各司其局。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·百丈规绳颂",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui",
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "zuochanyi-fa",
@@ -6410,12 +9783,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "一切善恶都莫思量，念起即觉，觉之即失，久久忘缘，自成一片。 —《坐禅仪》",
       "探珠宜静浪，动水取应难，定水澄清，心珠自现。 —《坐禅仪》"
-],
+    ],
     "guidance": "坐禅乃安乐法门，善得此意则自然四大轻安精神爽利正念分明法味资神。道高魔盛逆顺万端，但能正念现前一切不能留碍。出定之后一切时中常作方便护持定力如护婴儿。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·坐禅仪",
-    "relatedConcepts": ["samadhi","zuochan-weiyi"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "samadhi",
+      "zuochan-weiyi"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "gui-jing-wen",
@@ -6426,12 +9806,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "丛林之设，要之本为众僧。 —《龟镜文》",
       "一生取办，尚恐蹉跎，况乃迁延，将何敌业。 —《龟镜文》"
-],
+    ],
     "guidance": "丛林之下道业惟新，上上之机一生取办，中流之士长养圣胎，至如未悟心源时中亦不虚弃。回念多人之力宁不知恩报恩——晨参暮请所以报长老，尊卑有序所以报首座，外遵法令内守规绳所以报监院，六和共聚水乳相参所以报维那。",
     "classicRef": "禅苑清规·龟镜文",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "yibai-ershi-wen",
@@ -6442,12 +9829,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "敬佛法僧否，求善知识否，发悟菩提否。 —《一百二十问》",
       "一生事办否，得人自在否，证大涅槃否。 —《一百二十问》"
-],
+    ],
     "guidance": "此百二十问涵盖修行一切方面——从敬三宝、求知识、发菩提心，至坐禅、对境、般若、慈悲、护法、和合、布施、忍辱，终至一生事办证大涅槃。学人当时时自省，有则改之无则加勉。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·一百二十问",
-    "relatedConcepts": ["gui-jing-wen"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "gui-jing-wen"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "lvshui-husheng",
@@ -6458,12 +9851,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "蠢动皆含佛性灵，再三捞漉是修行，君看一掬寻常水，何啻千生与万生。 —《滤水法颂》",
       "宁死不亏虫水戒，刹那成道澄真常。 —《滤水法颂》"
-],
+    ],
     "guidance": "滤水护生虽为戒律细行，然体现禅宗慈悲为本之精神。杀戒偏居十重前，一虫一堕理照然。粗心饮用无惭愧，束手泉门被业牵。出家之人当以慈悲心护惜一切生命，从滤水一事做起。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·新添滤水法",
-    "relatedConcepts": ["shoujie-hujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "shoujie-hujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "shoujie-hujie",
@@ -6474,12 +9873,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "参禅问道戒律为先，既非离过防非，何以成佛作祖。 —《禅苑清规·受戒》",
       "精进持净戒，犹如护明珠。 —《禅苑清规·护戒》"
-],
+    ],
     "guidance": "受戒须如法——三衣钵具新净衣物，不得借借；护戒须精进——宁有法死不无法生。读诵通利善知持犯开遮，但依金口圣言莫擅随于庸辈。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·受戒护戒",
-    "relatedConcepts": ["conglin-zhidu","lvshui-husheng"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "lvshui-husheng"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "guata",
@@ -6491,12 +9897,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "久向道风，此者特来依栖左右，且望慈悲。 —《禅苑清规·挂搭》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "挂搭之礼须具威仪、依戒腊、呈祠部、巡堂问讯，三日內守待茶汤不得闲游。新到当谦下温恭，不以戒腊凌人，不以名德慢众。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·挂搭",
-    "relatedConcepts": ["conglin-zhidu","shoujie-hujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "shoujie-hujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "jiejia-xiejia",
@@ -6507,12 +9920,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "当法王禁足之辰，是释子护生之日。 —《禅苑清规·结夏》",
       "九旬无难，一众咸安。 —《禅苑清规·解夏》"
-],
+    ],
     "guidance": "结夏解夏为丛林每年大事，安居期间禁足护生、精进修行，九旬之中当勤精进如救头燃，但念无常慎勿放逸。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·结夏解夏",
-    "relatedConcepts": ["conglin-zhidu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "chayu-jiandian",
@@ -6524,12 +9943,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "院门特为茶汤，礼数殷重，受请之人不宜慢易。 —《禅苑清规·赴茶汤》",
       "佛语心为宗，无门为法门。",
       "若能转物，则同如来。"
-],
+    ],
     "guidance": "茶汤煎点之礼数殷重，受请之人不宜慢易。闻鼓版声及时先到，明记坐位照牌免致仓遑错乱。吃茶时安详取盏橐两手当胸执之，不得放手近下亦不得太高。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·堂头煎点等",
-    "relatedConcepts": ["conglin-zhidu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "shami-shoujie",
@@ -6541,14 +9966,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "善哉大丈夫，能了世无常，弃俗趣泥洹，希有难思议。 —《沙弥受戒文》",
       "毁形守志节，割爱辞所亲，出家弘圣道，誓度一切人。 —《沙弥受戒文》",
       "大哉解脱服，无相福田衣，披奉如来戒，广度诸众生。 —《沙弥受戒文》"
-],
+    ],
     "guidance": "沙弥受戒为出家之始——先受五戒次受十戒，未披剃前不得著七条九条及用头钵，坐卧僧床与大僧杂处。若犯沙弥戒即不得比丘戒。常应精勤礼念志求大戒，及读诵沙弥戒经。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "禅苑清规·沙弥受戒文",
-    "relatedConcepts": ["shoujie-hujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "shoujie-hujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
-  
   {
     "id": "liangxu",
     "title": "两序体制",
@@ -6558,12 +9988,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "开示众僧故有长老，表仪众僧故有首座，荷负众僧故有监院，调和众僧故有维那，供养众僧故有典座。 —《龟镜文》",
       "凡两序头首知事，皆为众僧办道而设。 —《敕修百丈清规·两序章》"
-],
+    ],
     "guidance": "两序职务非为谋求世俗权位，而系全心为十方僧众服务。西序重于弘道阐教，东序重于护持常住，二者相辅相成，维持丛林清修。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "敕修百丈清规·两序章",
-    "relatedConcepts": ["conglin-zhidu","qinggui"],
-    "relatedPersons": ["dehui","baizhang","zongze"],
-    "relatedBooks": ["chixiu-baizhang-qinggui","chanyuanqinggui"]
+    "relatedConcepts": [
+      "conglin-zhidu",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui",
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "faqi-zhangfa",
@@ -6574,12 +10014,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "大钟晓击则破长夜警睡眠，暮击则觉昏衢疏冥昧。 —《敕修百丈清规·法器章》",
       "鱼昼夜常醒，刻木象形击之，所以警昏惰也。 —《敕修百丈清规·法器章》"
-],
+    ],
     "guidance": "法器音声即是无间说法，鸣扣之间须心存专注与慈悲，声声回向法界众生。听闻钟磬鱼版之声，当即摄心息念，随法器号令而起行止。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "敕修百丈清规·法器章",
-    "relatedConcepts": ["qinggui","conglin-zhidu"],
-    "relatedPersons": ["dehui","baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "zhuli-zhidu",
@@ -6590,14 +10038,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "quotes": [
       "人之所贵在明道。故自古圣君崇吾西方圣人之教，不以世礼待吾徒，尊其道也。 —《敕修百丈清规·祝厘章序》",
       "特蠲赋役使安厥居，而期以悉力于道。 —《敕修百丈清规·祝厘章序》"
-],
+    ],
     "guidance": "祝厘非世俗谄媚，而是僧众报国恩之体现。一日二时斋粥之间不忘祝赞，是将修行与感恩融为一体。学人当知：禅寺清净修行，本身即是最好的祈福回向。 在现代日常修持与工作生活中，当以此正见观照身心动静。遇顺境不生贪爱执著，遇逆境不起嗔恨分别。于言谈动静、待人接物之间，随缘作主，反观自心能知能觉之自性，化烦恼为菩提，达到心境两忘、泰然自在之境。",
     "classicRef": "敕修百丈清规·祝厘章第一",
-    "relatedConcepts": ["qinggui","conglin-zhidu","baizhang-guisheng"],
-    "relatedPersons": ["dehui","baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
-  }
-,
+    "relatedConcepts": [
+      "qinggui",
+      "conglin-zhidu",
+      "baizhang-guisheng"
+    ],
+    "relatedPersons": [
+      "dehui",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
+  },
   {
     "id": "shentuo",
     "title": "身心脱落",
@@ -6610,9 +10066,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参此话头不在静中强作脱卸状，只在坐禅时觉察\"这个要站起来的\"是谁、\"这团能知能觉的\"往哪里放。久而久之，忽然一个不期然而然——身不是我的身，心不是我的心，坐不是我在坐。切忌以静中轻安相似境界当翻身时节。",
     "classicRef": "天童如净禅师续语录·道元记",
-    "relatedConcepts": ["mozhao-chan-concept","ben-lai-mian-mu","zixing-qingjing"],
-    "relatedPersons": ["rujing","daoyuan"],
-    "relatedBooks": ["rujingyulu","rujingxuyulu"]
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "ben-lai-mian-mu",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "rujing",
+      "daoyuan"
+    ],
+    "relatedBooks": [
+      "rujingyulu",
+      "rujingxuyulu"
+    ]
   },
   {
     "id": "sanxing-wuxing",
@@ -6626,9 +10092,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "读唯识先立三性以为眼目：见任何一法，先分清\"我于其上加了什么\"（遍计）、\"它依何缘而起\"（依他）、\"离执之后是什么\"（圆成）。再以三无性荡尽三性之执——连\"三性\"亦不可执实。如此则唯识不成戏论，而成为一步一个脚印的破执地图。",
     "classicRef": "唯识三十论颂·第二十至二十五颂",
-    "relatedConcepts": ["weishi","zhongdao","zhongguan","shixiang"],
-    "relatedPersons": ["shiqin","xuanzang"],
-    "relatedBooks": ["weishisanshilunsong","baifamingmenlun","weishiershilun","bianzhongbianlun","jieshenmijing","shedachenglunben"]
+    "relatedConcepts": [
+      "weishi",
+      "zhongdao",
+      "zhongguan",
+      "shixiang"
+    ],
+    "relatedPersons": [
+      "shiqin",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "weishisanshilunsong",
+      "baifamingmenlun",
+      "weishiershilun",
+      "bianzhongbianlun",
+      "jieshenmijing",
+      "shedachenglunben"
+    ]
   },
   {
     "id": "daji-yuanying",
@@ -6636,12 +10117,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "心性妙用",
     "summary": "大机圆应指禅者彻悟自性后，般若大机如明镜照物般圆满随顺一切因缘境界，无方所、无执著，遇物应缘而自在无碍之妙用。",
     "etymology": "出自《虚堂和尚语录》卷一：“大机圆应，大道无方，去来不以象，掇转虚空；动静不以心，当轩大坐。”",
-    "quotes": ["大机圆应，大道无方，去来不以象，掇转虚空，动静不以心，当轩大坐。 —《虚堂和尚语录》"],
+    "quotes": [
+      "大机圆应，大道无方，去来不以象，掇转虚空，动静不以心，当轩大坐。 —《虚堂和尚语录》"
+    ],
     "guidance": "参修时切莫落于死定空寂，当体会日用应物之处活泼泼之觉性，虽应万缘而自性本不动摇。",
     "classicRef": "虚堂和尚语录 · 卷一",
-    "relatedConcepts": ["sui-chu-zuo-zhu","self-nature"],
-    "relatedPersons": ["xutang-zhiyu","linji"],
-    "relatedBooks": ["xutangyulu"]
+    "relatedConcepts": [
+      "sui-chu-zuo-zhu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu",
+      "linji"
+    ],
+    "relatedBooks": [
+      "xutangyulu"
+    ]
   },
   {
     "id": "sui-chu-zuo-zhu",
@@ -6649,12 +10140,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "修持境界",
     "summary": "随处作主指修行者不被顺逆外境所转，于一切时、一切处皆能安住本来觉性，立处皆真，在任何境遇中皆能做得了心性之真正主宰。",
     "etymology": "溯源于《临济录》“随处作主，立处皆真”，《虚堂语录》发挥为“兵随印转，将逐符行，遇物应缘，随处作主”。",
-    "quotes": ["兵随印转，将逐符行，遇物应缘，随处作主。 —《虚堂和尚语录》"],
+    "quotes": [
+      "兵随印转，将逐符行，遇物应缘，随处作主。 —《虚堂和尚语录》"
+    ],
     "guidance": "于日常生活与工作顺逆诸境中，常自回光返照：谁在此处作主？不随客尘流转，当下即得大自在。",
     "classicRef": "虚堂和尚语录 · 卷一",
-    "relatedConcepts": ["daji-yuanying","no-abiding"],
-    "relatedPersons": ["xutang-zhiyu","linji"],
-    "relatedBooks": ["xutangyulu","linji"]
+    "relatedConcepts": [
+      "daji-yuanying",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "xutang-zhiyu",
+      "linji"
+    ],
+    "relatedBooks": [
+      "xutangyulu",
+      "linji"
+    ]
   },
   {
     "id": "momo-wangyan",
@@ -6662,12 +10164,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "修持心要",
     "summary": "默默忘言指禅修者万缘放下、忘却一切语言名相与情识造作，令纷扰妄心止息，归于寂然不动之本初寂静，为默照禅之体。",
     "etymology": "出自宏智正觉禅师《默照铭》首句：“默默忘言，昭昭现前。鉴时廓尔，体处灵然。”",
-    "quotes": ["默默忘言，昭昭现前。 —《宏智正觉禅师广录》"],
+    "quotes": [
+      "默默忘言，昭昭现前。 —《宏智正觉禅师广录》"
+    ],
     "guidance": "参修时不随妄念分别流转，亦不起厌离之想，退步就己，安住于万缘止息之寂静深处。",
     "classicRef": "宏智正觉禅师广录 · 卷一",
-    "relatedConcepts": ["zhaozhao-xianqian","mozhao-chan-concept"],
-    "relatedPersons": ["hongzhi-zhengjue"],
-    "relatedBooks": ["hongzhiyulu"]
+    "relatedConcepts": [
+      "zhaozhao-xianqian",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "zhaozhao-xianqian",
@@ -6675,12 +10186,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "心性妙用",
     "summary": "昭昭现前指心体寂静无染之时，本自具足之灵明觉照自然洞照万物、清晰历历，不触事而能知、不对缘而能照，为默照禅之用。",
     "etymology": "出自宏智正觉禅师《默照铭》及《坐禅箴》：“默默忘言，昭昭现前……不触事而知，不对缘而照。”",
-    "quotes": ["默默忘言，昭昭现前。鉴时廓尔，体处灵然。 —《宏智正觉禅师广录》"],
+    "quotes": [
+      "默默忘言，昭昭现前。鉴时廓尔，体处灵然。 —《宏智正觉禅师广录》"
+    ],
     "guidance": "静坐时保持了了分明之觉知，既不起分别妄想，亦不落于昏沉断灭，体验照体独立之光明妙境。",
     "classicRef": "宏智正觉禅师广录 · 卷一",
-    "relatedConcepts": ["momo-wangyan","mozhao-chan-concept"],
-    "relatedPersons": ["hongzhi-zhengjue"],
-    "relatedBooks": ["hongzhiyulu"]
+    "relatedConcepts": [
+      "momo-wangyan",
+      "mozhao-chan-concept"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "ben-ji-yuan-rong",
@@ -6688,12 +10208,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "实相体用",
     "summary": "本迹圆融指佛陀或法身大士之清净法身理体（本）与其随顺因缘示现之千百亿应化身事迹（迹）体用不二、相即相融之圆融实相境界。",
     "etymology": "出自僧肇《注维摩诘经序》：“非本无以垂迹，非迹无以显本，本迹虽殊而不思议一也。”",
-    "quotes": ["非本无以垂迹，非迹无以显本，本迹虽殊而不思议一也。 —《注维摩诘经》"],
+    "quotes": [
+      "非本无以垂迹，非迹无以显本，本迹虽殊而不思议一也。 —《注维摩诘经》"
+    ],
     "guidance": "修行中既不偏废理体之空寂，亦不执着事相之生灭，于日常随缘应化中处处照见法身本性。",
     "classicRef": "注维摩诘经 · 序",
-    "relatedConcepts": ["ru-bu-er-fa-men","sheng-zhi-wu-zhi"],
-    "relatedPersons": ["seng-zhao","jiumoluoshi"],
-    "relatedBooks": ["zhuweimojiejing","zhaolun"]
+    "relatedConcepts": [
+      "ru-bu-er-fa-men",
+      "sheng-zhi-wu-zhi"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhuweimojiejing",
+      "zhaolun"
+    ]
   },
   {
     "id": "sheng-zhi-wu-zhi",
@@ -6701,12 +10232,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "般若智慧",
     "summary": "圣智无知指圣人的般若实相大智无后天情识攀缘与主客观二元分别之妄知（无知），却能天然照临大千宇宙之一切万物（万品俱照）。",
     "etymology": "出自僧肇《注维摩诘经序》及《肇论·般若无知论》：“夫圣智无知而万品俱照，法身无象而殊形并应。”",
-    "quotes": ["夫圣智无知而万品俱照，法身无象而殊形并应。 —《注维摩诘经》"],
+    "quotes": [
+      "夫圣智无知而万品俱照，法身无象而殊形并应。 —《注维摩诘经》"
+    ],
     "guidance": "参修时放下前尘影事与知解葛藤，歇止妄知妄见，自性无知之般若大智自然洞彻十方。",
     "classicRef": "注维摩诘经 · 序",
-    "relatedConcepts": ["ben-ji-yuan-rong","prajna"],
-    "relatedPersons": ["seng-zhao","jiumoluoshi"],
-    "relatedBooks": ["zhuweimojiejing","zhaolun"]
+    "relatedConcepts": [
+      "ben-ji-yuan-rong",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhuweimojiejing",
+      "zhaolun"
+    ]
   },
   {
     "id": "si-zhi-san-shen",
@@ -6714,12 +10256,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "佛果功德",
     "summary": "四智三身指转八识所得之大圆镜智、平等性智、妙观察智、成所作智，以及由此四智相融所圆满具足之清净法身、圆满受用身（报身）与千百亿变化身（化身）。",
     "etymology": "出自《大乘庄严经论·菩提品》：“转八识以成四智，束四智以具三身。”唐太宗李百药序亦引此为唯识枢要。",
-    "quotes": ["转八识以成四智，束四智以具三身。 —《大乘庄严经论》"],
+    "quotes": [
+      "转八识以成四智，束四智以具三身。 —《大乘庄严经论》"
+    ],
     "guidance": "修行中不住于凡夫染污妄识，亦不落偏空寂灭，直下回光返照自性，体认当下一念即具四智三身之妙用。",
     "classicRef": "大乘庄严经论 · 卷七",
-    "relatedConcepts": ["zhuan-shi-cheng-zhi","self-nature"],
-    "relatedPersons": ["wuzhu-asanga","huineng"],
-    "relatedBooks": ["dachengzhuangyanjinglun","tanjing"]
+    "relatedConcepts": [
+      "zhuan-shi-cheng-zhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "dachengzhuangyanjinglun",
+      "tanjing"
+    ]
   },
   {
     "id": "wu-zhu-nie-pan",
@@ -6727,12 +10280,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "究竟解脱",
     "summary": "无住涅槃指菩萨以大悲心不住涅槃（不沉溺偏空寂灭、恒常度化众生），以般若大智不住生死（不落世俗染污流转）之大乘究竟圆满解脱境界。",
     "etymology": "出自《大乘庄严经论·修住品》：“悲心无住着，智体恒清凉；不住于生死，亦不住涅槃。”",
-    "quotes": ["不住于生死，亦不住涅槃。 —《大乘庄严经论》"],
+    "quotes": [
+      "不住于生死，亦不住涅槃。 —《大乘庄严经论》"
+    ],
     "guidance": "在日常度生与接人待物中，以出世的大智慧行入世的大慈悲，于生死与涅槃二边皆无挂碍。",
     "classicRef": "大乘庄严经论 · 卷十",
-    "relatedConcepts": ["non-duality","prajna"],
-    "relatedPersons": ["wuzhu-asanga"],
-    "relatedBooks": ["dachengzhuangyanjinglun","shedachenglunben"]
+    "relatedConcepts": [
+      "non-duality",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga"
+    ],
+    "relatedBooks": [
+      "dachengzhuangyanjinglun",
+      "shedachenglunben"
+    ]
   },
   {
     "id": "jiekuan-chuyan",
@@ -6740,12 +10303,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "公案评唱",
     "summary": "结款出眼指宗门宗师在评唱公案时，如官府明断公案般一语道破古人机关落处（结款），直点向上一窍祖师心印（出眼），令学人彻底绝断情识计较。",
     "etymology": "出自元代耶律楚材《从容录序》：“其片言只字，咸有指归；结款出眼，高冠今古，足为万世之模楷。”",
-    "quotes": ["结款出眼，高冠今古，足为万世之模楷。 —《从容录序》"],
+    "quotes": [
+      "结款出眼，高冠今古，足为万世之模楷。 —《从容录序》"
+    ],
     "guidance": "参究公案切忌在枝节词句上分别死咬，直须在宗师结款出眼处回光返照，自肯承当父母未生前的本来面目。",
     "classicRef": "从容录 · 序",
-    "relatedConcepts": ["zhuoyu","ping-chang"],
-    "relatedPersons": ["wansong-xingxiu","hongzhi-zhengjue"],
-    "relatedBooks": ["congronglu","biyanlu"]
+    "relatedConcepts": [
+      "zhuoyu",
+      "ping-chang"
+    ],
+    "relatedPersons": [
+      "wansong-xingxiu",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "biyanlu"
+    ]
   },
   {
     "id": "congrong-an-lu",
@@ -6753,12 +10327,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门宗风",
     "summary": "从容家风指曹洞宗在评唱与机锋接引中不急不缓、不缓不急、绵密细致、儒释圆融，于从容自得中透脱生死大关之独特宗风。",
     "etymology": "出自万松行秀禅师《从容庵录》名义及圣安澄公和尚法语：“从容自在，儒释兼备，辩才无碍。”",
-    "quotes": ["天童不合抽枝，万松那堪引蔓；若要脚跟点地，向葛藤里穿过！ —《从容录序》"],
+    "quotes": [
+      "天童不合抽枝，万松那堪引蔓；若要脚跟点地，向葛藤里穿过！ —《从容录序》"
+    ],
     "guidance": "修行不在外在张皇仓促，于行住坐卧四威仪中从容端坐、默默觉照，临机应变而自处安闲。",
     "classicRef": "从容录 · 序",
-    "relatedConcepts": ["mozhao-chan-concept","jiekuan-chuyan"],
-    "relatedPersons": ["wansong-xingxiu","hongzhi-zhengjue"],
-    "relatedBooks": ["congronglu","hongzhiyulu"]
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "jiekuan-chuyan"
+    ],
+    "relatedPersons": [
+      "wansong-xingxiu",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "congronglu",
+      "hongzhiyulu"
+    ]
   },
   {
     "id": "si-fen-shuo",
@@ -6766,12 +10351,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "唯识认识论",
     "summary": "四分说指心识认知的四重结构功能：相分（所缘客体境象）、见分（能缘主体心用）、自证分（向内自我证知见分与相分之本体）、证自证分（进一步确证自证分之深层自觉），揭示心体孤明不假外照之唯识实相。",
     "etymology": "出自护法菩萨造、玄奘译《成唯识论》卷二及卷七：“变谓识体转似二分，相见俱依自证起故……自证与证自证更互为缘，心体孤明，不假外照。”",
-    "quotes": ["相见俱依自证起，自证能知相见分；若无自证心不知，心识孤明自了了。 —《成唯识论》"],
+    "quotes": [
+      "相见俱依自证起，自证能知相见分；若无自证心不知，心识孤明自了了。 —《成唯识论》"
+    ],
     "guidance": "参究自心时，直透外在境象（相分）与起心动念（见分），回光反照自性本来能知能觉之自证本体，顿歇一切向外驰求之妄心。",
     "classicRef": "成唯识论 · 卷七",
-    "relatedConcepts": ["weishi-yixin","zhuan-shi-cheng-zhi"],
-    "relatedPersons": ["xuanzang","kuiji"],
-    "relatedBooks": ["chengweishilun","weishisanshilunsong"]
+    "relatedConcepts": [
+      "weishi-yixin",
+      "zhuan-shi-cheng-zhi"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "chengweishilun",
+      "weishisanshilunsong"
+    ]
   },
   {
     "id": "weishi-wuwei",
@@ -6779,12 +10375,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "唯识修道阶梯",
     "summary": "唯识五位指大乘唯识行者转依成佛的五大修行位次：一、资粮位（修集福德智慧资粮）；二、加行位（修四寻思四如实智）；三、通达位（真见道登初地断分别障）；四、修习位（十地进修断俱生障）；五、究竟位（转得四智圆满成佛）。",
     "etymology": "出自世亲菩萨《唯识三十论颂》及玄奘译《成唯识论》卷九至卷十：“何谓唯识修道阶梯？略有五位：一资粮位，二加行位，三通达位，四修习位，五究竟位。”",
-    "quotes": ["若时菩萨于所缘，智都无所得；尔时便住唯识性，远离二取相。 —《成唯识论》"],
+    "quotes": [
+      "若时菩萨于所缘，智都无所得；尔时便住唯识性，远离二取相。 —《成唯识论》"
+    ],
     "guidance": "修行须明理实修并重，以资粮加行为基，一朝契入无分别智见道，更须在日用历境中不断淘炼习气，圆满法界功德。",
     "classicRef": "成唯识论 · 卷九",
-    "relatedConcepts": ["si-fen-shuo","zhuan-shi-cheng-zhi"],
-    "relatedPersons": ["xuanzang","kuiji"],
-    "relatedBooks": ["chengweishilun","weishisanshilunsong"]
+    "relatedConcepts": [
+      "si-fen-shuo",
+      "zhuan-shi-cheng-zhi"
+    ],
+    "relatedPersons": [
+      "xuanzang",
+      "kuiji"
+    ],
+    "relatedBooks": [
+      "chengweishilun",
+      "weishisanshilunsong"
+    ]
   },
   {
     "id": "san-wu-zi-xing",
@@ -6792,12 +10399,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "唯识中道实相",
     "summary": "三无自性指相无自性性（遍计所执无实相）、生无自性性（依他起如幻缘生无独立生体）、胜义无自性性（圆成实真如远离一切世俗名言戏论），为佛陀宣说一切法无自性之大乘深密中道。",
     "etymology": "出自无著菩萨《显扬圣教论》卷七成无性品及《解深密经》：“由相无性故、由生无性故、由胜义无性故，如来密意说一切法皆无自性。”",
-    "quotes": ["由三无自性故，说一切法无自性。知三性三无性，则入中道。 —《显扬圣教论》"],
+    "quotes": [
+      "由三无自性故，说一切法无自性。知三性三无性，则入中道。 —《显扬圣教论》"
+    ],
     "guidance": "参悟诸法切莫堕入断灭空见，当了知万象虽幻生无自性，而真如觉性历历孤明，空有无碍方为正觉。",
     "classicRef": "显扬圣教论 · 卷七",
-    "relatedConcepts": ["sanxing-wuxing","emptiness","zhongdao"],
-    "relatedPersons": ["wuzhu-asanga","xuanzang"],
-    "relatedBooks": ["xianyangshengjiaolun","jieshenmijing","chengweishilun"]
+    "relatedConcepts": [
+      "sanxing-wuxing",
+      "emptiness",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xianyangshengjiaolun",
+      "jieshenmijing",
+      "chengweishilun"
+    ]
   },
   {
     "id": "cheng-xian-guan",
@@ -6805,12 +10425,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "唯识修证现量",
     "summary": "真现观（梵语 abhisamaya）指修行者在甚深般若与等持中现前如实证见四圣谛与二空真如之无漏圣智，涵盖思现观、信现观、戒现观、现观智谛现观、现观边智谛现观与究竟现观六门。",
     "etymology": "出自无著菩萨《显扬圣教论》卷八成现观品及《瑜伽师地论》：“现观者，谓无分别智现前观照真如，得清净信，断分别惑。”",
-    "quotes": ["无分别智现前观，见道证真入如来家。 —《显扬圣教论》"],
+    "quotes": [
+      "无分别智现前观，见道证真入如来家。 —《显扬圣教论》"
+    ],
     "guidance": "现观非名言思虑所能及，唯在息灭能取所取分别之刹那，心与真如冥合一如，现量圆明。",
     "classicRef": "显扬圣教论 · 卷八",
-    "relatedConcepts": ["san-wu-zi-xing","zhuan-shi-cheng-zhi"],
-    "relatedPersons": ["wuzhu-asanga","xuanzang"],
-    "relatedBooks": ["xianyangshengjiaolun","shedachenglunben"]
+    "relatedConcepts": [
+      "san-wu-zi-xing",
+      "zhuan-shi-cheng-zhi"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "xianyangshengjiaolun",
+      "shedachenglunben"
+    ]
   },
   {
     "id": "huanzhu-sanmei",
@@ -6818,12 +10449,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "修持境界",
     "summary": "幻住三昧指禅者洞见四大假合之身心与山河大地一切境象皆如梦幻泡影，虽随缘安住于世间幻境之中，而自性本来无住、当体即空的解脱大三昧。",
     "etymology": "出自元代中峰明本禅师《幻住庵歌》及《圆觉经》：“一切诸众生，无始幻无明……幻身灭故，幻心亦灭；幻心灭故，幻尘亦灭；幻灭灭故，非幻不灭。”",
-    "quotes": ["身是幻，心亦幻，幻住庵中无一事。但知万法本来空，游戏人间成三昧。 —《天目中峰广录》"],
+    "quotes": [
+      "身是幻，心亦幻，幻住庵中无一事。但知万法本来空，游戏人间成三昧。 —《天目中峰广录》"
+    ],
     "guidance": "于日常处事待人中，常观自身如幻人、诸事如幻境。不随幻境生起贪爱取舍，当下便能洒脱自在做得了主。",
     "classicRef": "天目中峰和尚广录 · 卷二十",
-    "relatedConcepts": ["sui-chu-zuo-zhu","emptiness","no-abiding"],
-    "relatedPersons": ["zhongfeng-mingben","gaofeng-yuanmiao"],
-    "relatedBooks": ["tianmuzhongfengguanglu","gaofengyulu"]
+    "relatedConcepts": [
+      "sui-chu-zuo-zhu",
+      "emptiness",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "zhongfeng-mingben",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "tianmuzhongfengguanglu",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "chan-jing-he-yi",
@@ -6831,12 +10474,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅净合一",
     "summary": "自性弥陀指阿弥陀佛之无量寿无量光本自具足于行者当下自心，西方极乐不离灵明觉性，以禅悟为本、以念佛为用之圆融实修正见。",
     "etymology": "出自中峰明本禅师《怀净土诗》及《山房夜话》：“清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。生则决定生，去则实不去。”",
-    "quotes": ["清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。 —《天目中峰广录》"],
+    "quotes": [
+      "清珠投于浊水，浊水不得不清；念佛投于乱心，乱心不得不佛。 —《天目中峰广录》"
+    ],
     "guidance": "行者既切忌执事废理，亦不可执理废事。念佛时心心念念回光返照自性真如，心净则佛土净。",
     "classicRef": "天目中峰和尚广录 · 卷八",
-    "relatedConcepts": ["chan-jing-shuangxiu","self-nature"],
-    "relatedPersons": ["zhongfeng-mingben","yongming-yanshou"],
-    "relatedBooks": ["tianmuzhongfengguanglu","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhongfeng-mingben",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "tianmuzhongfengguanglu",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "wu-wei-bai-fa",
@@ -6844,12 +10498,26 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "唯识名相",
     "summary": "五位百法是大乘对法（阿毘达磨）对宇宙万象之最完整分类体系：心王8、心所51、色法11、心不相应行24、无为法8，穷尽心识与法界实相。",
     "etymology": "出自无著菩萨《大乘阿毘达磨集论》卷一及世亲菩萨《大乘百法明门论》：“一切最胜故，与此相应故，二所现影故，三位差别故，四所显示故，如是次第五位百法。”",
-    "quotes": ["一切者，有五法总摄菩萨藏：心、心所有、色、不相应、无为。 —《大乘阿毘达磨集论》"],
+    "quotes": [
+      "一切者，有五法总摄菩萨藏：心、心所有、色、不相应、无为。 —《大乘阿毘达磨集论》"
+    ],
     "guidance": "禅修者了知百法皆依自心转变、当体无我，便能照破主客对立，不落执着妄想。",
     "classicRef": "大乘阿毘达磨集论 · 卷一",
-    "relatedConcepts": ["zhuan-shi-cheng-zhi","si-fen-shuo","emptiness"],
-    "relatedPersons": ["wuzhu-asanga","xuanzang","shiqin"],
-    "relatedBooks": ["dachengapidamojilun","baifamingmenlun","chengweishilun"]
+    "relatedConcepts": [
+      "zhuan-shi-cheng-zhi",
+      "si-fen-shuo",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang",
+      "shiqin"
+    ],
+    "relatedBooks": [
+      "dachengapidamojilun",
+      "baifamingmenlun",
+      "chengweishilun"
+    ]
   },
   {
     "id": "shi-liu-xing-xiang",
@@ -6857,12 +10525,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "修持止观",
     "summary": "十六行相指对苦、集、灭、道四圣谛所修习之十六种深细智慧观照（苦下非常苦空非我、集下因集生缘、灭下灭静妙离、道下道如行出），能破一切邪执。",
     "etymology": "出自《大乘阿毘达磨集论》卷五《谛决择品》：“苦有四相，集有四相，灭有四相，道有四相。合为十六行相。修此十六行相，能破十六种外道邪执。”",
-    "quotes": ["观苦非常苦空非我，观集因集生缘，观灭灭静妙离，观道道如行出。 —《大乘阿毘达磨集论》"],
+    "quotes": [
+      "观苦非常苦空非我，观集因集生缘，观灭灭静妙离，观道道如行出。 —《大乘阿毘达磨集论》"
+    ],
     "guidance": "于日常起心动念与境缘中，常修此十六种如实观照，息灭贪瞋痴疑，速证无生法忍。",
     "classicRef": "大乘阿毘达磨集论 · 卷五",
-    "relatedConcepts": ["cheng-xian-guan","emptiness","erdi"],
-    "relatedPersons": ["wuzhu-asanga","xuanzang"],
-    "relatedBooks": ["dachengapidamojilun","xianyangshengjiaolun"]
+    "relatedConcepts": [
+      "cheng-xian-guan",
+      "emptiness",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "wuzhu-asanga",
+      "xuanzang"
+    ],
+    "relatedBooks": [
+      "dachengapidamojilun",
+      "xianyangshengjiaolun"
+    ]
   },
   {
     "id": "chuan-deng",
@@ -6870,12 +10550,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "法脉心印",
     "summary": "传灯指佛祖以心印心、正法世代相传。如以一灯燃百千灯，冥者皆明、光光相照而灯体无损。象征佛陀正法眼藏与涅槃妙心在历代祖师与学人之间薪火不绝、破除众生千古无明暗室。",
     "etymology": "出自《维摩诘经·菩萨品》：“无尽灯者，譬如一灯燃百千灯，冥者皆明，明终不尽。”宋道原禅师以此立《景德传灯录》。",
-    "quotes": ["佛祖传心，法灯相续；灯灯相照，光光不绝。 —《景德传灯录》"],
+    "quotes": [
+      "佛祖传心，法灯相续；灯灯相照，光光不绝。 —《景德传灯录》"
+    ],
     "guidance": "修行者当发菩提心，自明自性心灯，复以大悲方便照亮有情，令正法慧命永续不绝。",
     "classicRef": "景德传灯录 · 卷一",
-    "relatedConcepts": ["mind-transmission","self-nature","zhengfa-yancang"],
-    "relatedPersons": ["daoyuan-monk","tiantai-deshao","yang-yi-neihan"],
-    "relatedBooks": ["jingdechuandenglu","tanjing"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "self-nature",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "daoyuan-monk",
+      "tiantai-deshao",
+      "yang-yi-neihan"
+    ],
+    "relatedBooks": [
+      "jingdechuandenglu",
+      "tanjing"
+    ]
   },
   {
     "id": "dao-que-cha-gan",
@@ -6883,12 +10576,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门机锋",
     "summary": "倒却门前刹竿指迦叶尊者勘验阿难时令其放倒寺门前立竿，喻指参禅者必须彻底放倒一切名相知见与法执，自性方得全体脱落。",
     "etymology": "出自《景德传灯录》卷二：“阿难问迦叶：师兄，世尊传金襕外别传何物？迦叶召阿难，阿难应诺。迦叶云：倒却门前刹竿著。阿难大悟。”",
-    "quotes": ["迦叶召阿难，阿难应诺。迦叶云：倒却门前刹竿著。 —《景德传灯录》"],
+    "quotes": [
+      "迦叶召阿难，阿难应诺。迦叶云：倒却门前刹竿著。 —《景德传灯录》"
+    ],
     "guidance": "参究者不可死执一知半解之玄妙知见。直下放舍情执、回光自肯，当下便是本来面目。",
     "classicRef": "景德传灯录 · 卷二",
-    "relatedConcepts": ["chuan-deng","sui-chu-zuo-zhu","emptiness"],
-    "relatedPersons": ["daoyuan-monk","bodhidharma"],
-    "relatedBooks": ["jingdechuandenglu","wumenguan"]
+    "relatedConcepts": [
+      "chuan-deng",
+      "sui-chu-zuo-zhu",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "daoyuan-monk",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "jingdechuandenglu",
+      "wumenguan"
+    ]
   },
   {
     "id": "gu-zun-su",
@@ -6896,12 +10601,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门称谓",
     "summary": "古尊宿是对唐宋及早期禅宗历史上德高望重、行解相应、具顶门眼与肘后符之大宗师的崇高敬称。其语录与机锋开示被后世奉为参禅悟道之金科玉律，为宗门立下万世不磨之榜样。",
     "etymology": "出自宋赜藏主所辑《古尊宿语录》序：“异时有藏主者，旁搜广采，仅得南泉而下二十二家示众机语，总曰古尊宿语。”",
-    "quotes": ["古尊宿行到说到，如国家兵器，不得已而用之。 —《古尊宿语录序》"],
+    "quotes": [
+      "古尊宿行到说到，如国家兵器，不得已而用之。 —《古尊宿语录序》"
+    ],
     "guidance": "参究者当体悉古尊宿老婆心切之苦心，于言语相外直取自家本来面目，不作口头知解。",
     "classicRef": "古尊宿语录 · 序",
-    "relatedConcepts": ["mind-transmission","daji-yuanying"],
-    "relatedPersons": ["ze-zang-zhu","daoyuan-monk","zhaozhou"],
-    "relatedBooks": ["guzunsuyulu","jingdechuandenglu"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "ze-zang-zhu",
+      "daoyuan-monk",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "guzunsuyulu",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "shi-zhong-kan-bian",
@@ -6909,12 +10626,25 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "接引法门",
     "summary": "室中勘辨指禅宗大宗师在方丈室或方丈密室中，单对单对机勘验学僧见地真伪之险峻宗风。宗师运用棒喝、转语、反诘与无理公案，直截截断学人偷心妄想，逼令其在绝境处亲见自性本来。",
     "etymology": "出自《古尊宿语录》物初大观序：“室中垂示勘辨，学者征拈代别，皆有机语流布寰中。”",
-    "quotes": ["室中垂示勘辨，针砭药饵，起死回生。 —《古尊宿语录序》"],
+    "quotes": [
+      "室中垂示勘辨，针砭药饵，起死回生。 —《古尊宿语录序》"
+    ],
     "guidance": "行者面对师家勘辨，须毫无遮掩、直下呈露自家真实见地，绝不可玩弄口头套语。",
     "classicRef": "古尊宿语录 · 卷十三",
-    "relatedConcepts": ["daji-yuanying","banghe","sui-chu-zuo-zhu"],
-    "relatedPersons": ["ze-zang-zhu","linji","yunmen"],
-    "relatedBooks": ["guzunsuyulu","linji"]
+    "relatedConcepts": [
+      "daji-yuanying",
+      "banghe",
+      "sui-chu-zuo-zhu"
+    ],
+    "relatedPersons": [
+      "ze-zang-zhu",
+      "linji",
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "guzunsuyulu",
+      "linji"
+    ]
   },
   {
     "id": "fang-ce-zang",
@@ -6922,12 +10652,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "护法文献",
     "summary": "方册大藏经指明万历年间由紫柏真可倡议、憨山德清等襄助开雕之线装书册形式大藏经（嘉兴藏），改变了传统梵夹笨重难传之局限，便于普天下受持研读。",
     "etymology": "出自紫柏真可《刻大藏经缘起》：“经教者诸佛之慧命，梵夹大本流通不易，今改刻方册，使天下学人皆得受持读诵。”",
-    "quotes": ["改梵夹为方册，续佛慧命于万代。 —《紫柏老人全集》"],
+    "quotes": [
+      "改梵夹为方册，续佛慧命于万代。 —《紫柏老人全集》"
+    ],
     "guidance": "行者当珍惜法宝流通之不易，深入经藏、智慧如海，以正知见引导禅修实践。",
     "classicRef": "紫柏老人全集 · 卷十七",
-    "relatedConcepts": ["mind-transmission","chan-jiao-huitong"],
-    "relatedPersons": ["zibai-zhenke","hanshan-deqing"],
-    "relatedBooks": ["zibailaorenquanji"]
+    "relatedConcepts": [
+      "mind-transmission",
+      "chan-jiao-huitong"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke",
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "zibailaorenquanji"
+    ]
   },
   {
     "id": "zhen-can-shi-wu",
@@ -6935,12 +10675,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门实修",
     "summary": "真参实悟指修行者死尽偷心、痛除旷劫微细习气、在心地深处脚踏实地做工夫，坚决反对口头文字狂禅。强调唯有亲历大死大活一番、言下脱落身心，方是真实受用成办生死大事之真悟。",
     "etymology": "出自紫柏真可《紫柏老人全集·法语》：“今人参禅多尚口耳之学，弄几个光影门头句子便以为悟；必须真参实悟，脚踏实地。”",
-    "quotes": ["做工夫不可有丝毫自欺，必须痛下针砭，克除习气。 —《紫柏老人全集》"],
+    "quotes": [
+      "做工夫不可有丝毫自欺，必须痛下针砭，克除习气。 —《紫柏老人全集》"
+    ],
     "guidance": "参究者不可贪图玄妙知见。于日用行住坐卧中咬定话头、历境验心，使动静一如方为真工夫。",
     "classicRef": "紫柏老人全集 · 卷三",
-    "relatedConcepts": ["sui-chu-zuo-zhu","daji-yuanying"],
-    "relatedPersons": ["zibai-zhenke","hanshan-deqing"],
-    "relatedBooks": ["zibailaorenquanji","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "sui-chu-zuo-zhu",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "zibai-zhenke",
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "zibailaorenquanji",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "can-chan-qie-yao",
@@ -6948,12 +10699,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门实修",
     "summary": "参禅切要指憨山德清大师系统总结的参禅看话头实修阶梯：痛念生死、提撕话头、生处转熟、逼拶妄想、大死一番、桶底脱落。",
     "etymology": "出自憨山德清《憨山老人梦游集·示参禅切要》：“做工夫最初要猛利，次要悠久，又要绵密。久久成熟，自然虚空粉碎。”",
-    "quotes": ["做工夫最初要猛利，次要悠久，又要绵密。 —《憨山老人梦游集》"],
+    "quotes": [
+      "做工夫最初要猛利，次要悠久，又要绵密。 —《憨山老人梦游集》"
+    ],
     "guidance": "修行者当按阶梯次第用功，于日用行住坐卧中死死咬定话头，不作道理文字知解，历经逼拶方得透脱。",
     "classicRef": "憨山老人梦游集 · 卷八",
-    "relatedConcepts": ["zhen-can-shi-wu","self-nature"],
-    "relatedPersons": ["hanshan-deqing","zibai-zhenke"],
-    "relatedBooks": ["hanshanlaorenmengyouji","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "zhen-can-shi-wu",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "hanshan-deqing",
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "hanshanlaorenmengyouji",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "meng-you-san-mei",
@@ -6961,12 +10723,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "解脱境界",
     "summary": "梦游三昧指悟达一切世间万法如梦如幻、如露如电，身心寄迹于梦幻之中随缘作佛事、游戏波涛而自心如如不动的大乘大解脱境界。",
     "etymology": "出自憨山德清《梦游集序》及《自赞》：“休咎不系于心，生死不摇其足，寄迹于梦幻之中，游戏于波涛之内。”",
-    "quotes": ["寄迹于梦幻之中，游戏于波涛之内。回首千山万壑，一轮孤月独明。 —《憨山老人梦游集》"],
+    "quotes": [
+      "寄迹于梦幻之中，游戏于波涛之内。回首千山万壑，一轮孤月独明。 —《憨山老人梦游集》"
+    ],
     "guidance": "行者面对顺逆境缘，当观一切皆如梦幻泡影，不起贪嗔分别，于幻境中修一切善法而不着相。",
     "classicRef": "憨山老人梦游集 · 卷三十",
-    "relatedConcepts": ["emptiness","sui-chu-zuo-zhu","samadhi"],
-    "relatedPersons": ["hanshan-deqing"],
-    "relatedBooks": ["hanshanlaorenmengyouji"]
+    "relatedConcepts": [
+      "emptiness",
+      "sui-chu-zuo-zhu",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "hanshan-deqing"
+    ],
+    "relatedBooks": [
+      "hanshanlaorenmengyouji"
+    ]
   },
   {
     "id": "wu-deng-hui-yuan",
@@ -6974,12 +10746,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "灯录典籍",
     "summary": "五灯会元指南宋普济禅师将北宋以来五部庞杂灯录删繁就简、融为一炉之集大成公案大典，独存宗门机锋精髓，天下宗门奉为圭臬。",
     "etymology": "出自宋普济《五灯会元序》：“合五灯为一书，去重取精，名曰五灯会元。”",
-    "quotes": ["五灯会元，千圣同心；去繁存精，直指本源。 —《五灯会元》"],
+    "quotes": [
+      "五灯会元，千圣同心；去繁存精，直指本源。 —《五灯会元》"
+    ],
     "guidance": "行者研读五灯会元，当于千百则激扬机锋中反观自性，切莫作文学逻辑套解，直下承当方见先德真意。",
     "classicRef": "五灯会元 · 序",
-    "relatedConcepts": ["wu-jia-qi-zong","mind-transmission","daji-yuanying"],
-    "relatedPersons": ["puji","daoyuan-monk"],
-    "relatedBooks": ["wudenghuiyuan","jingdechuandenglu"]
+    "relatedConcepts": [
+      "wu-jia-qi-zong",
+      "mind-transmission",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "puji",
+      "daoyuan-monk"
+    ],
+    "relatedBooks": [
+      "wudenghuiyuan",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "wu-jia-qi-zong",
@@ -6987,12 +10771,28 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗派流变",
     "summary": "五家七宗指禅宗自南岳、青原二系分衍出之沩仰、临济、曹洞、云门、法眼五大家风，及临济分衍出之杨岐、黄龙二宗，构成了中国禅宗最宏伟之宗门法脉网络。",
     "etymology": "出自《五灯会元》全书体例纲宗，分卷详载南岳青原门下五家七宗各大祖师之对机公案。",
-    "quotes": ["临济痛烈，曹洞深密，沩仰方圆，云门险峻，法眼简明。 —《五灯会元》"],
+    "quotes": [
+      "临济痛烈，曹洞深密，沩仰方圆，云门险峻，法眼简明。 —《五灯会元》"
+    ],
     "guidance": "参究者当体悉五家七宗皆从自性一心流出，虽接引方便各异，而明心见性之旨同一不二。",
     "classicRef": "五灯会元 · 卷四至卷二十",
-    "relatedConcepts": ["wu-deng-hui-yuan","mind-transmission","self-nature"],
-    "relatedPersons": ["puji","linji","dongshan","yunmen","fayan-wenyi"],
-    "relatedBooks": ["wudenghuiyuan","jingdechuandenglu","guzunsuyulu"]
+    "relatedConcepts": [
+      "wu-deng-hui-yuan",
+      "mind-transmission",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "puji",
+      "linji",
+      "dongshan",
+      "yunmen",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "wudenghuiyuan",
+      "jingdechuandenglu",
+      "guzunsuyulu"
+    ]
   },
   {
     "id": "zong-jing-lu",
@@ -7000,12 +10800,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅教总集",
     "summary": "宗镜录指五代宋初永明延寿大师所著之一百卷巨著，以举一心为宗、照万法如镜为宏纲，融汇经论百二十部与诸祖法语，融通禅教性相于一炉。",
     "etymology": "出自宋永明延寿《宗镜录序》：“举一心为宗，照万法为鉴，编联古制之深义，撮略宝藏之圆诠，名曰宗镜录。”",
-    "quotes": ["举一心为宗，照万法如镜。真源湛寂，觉海澄清。 —《宗镜录》"],
+    "quotes": [
+      "举一心为宗，照万法如镜。真源湛寂，觉海澄清。 —《宗镜录》"
+    ],
     "guidance": "行者当依宗镜明识自心，不落空腹高心之邪狂，不滞文字名相之知解，理事双融圆修万行。",
     "classicRef": "宗镜录 · 卷一",
-    "relatedConcepts": ["chan-jiao-he-yi","lishi-wuai","self-nature"],
-    "relatedPersons": ["yongming-yanshou","fayan-wenyi"],
-    "relatedBooks": ["zongjinglu","wanshantongguiji"]
+    "relatedConcepts": [
+      "chan-jiao-he-yi",
+      "lishi-wuai",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "zongjinglu",
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "chan-jiao-he-yi",
@@ -7013,12 +10825,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗义融通",
     "summary": "禅教合一指禅宗心印与大乘经教本质上同出一源，“经是佛语，禅是佛意”，破除禅门轻视经教与教门死执名相之二边偏见。",
     "etymology": "出自唐圭峰宗密《禅源诸诠集都序》及五代永明延寿《宗镜录》：“经是佛语，禅是佛意；诸佛心口，必不相违。”",
-    "quotes": ["经是佛语，禅是佛意；因诠得旨，文字性离即是解脱。 —《宗镜录》"],
+    "quotes": [
+      "经是佛语，禅是佛意；因诠得旨，文字性离即是解脱。 —《宗镜录》"
+    ],
     "guidance": "学人当以经教印证自心，以自心觉照深解义趣，解行相应，方是宗通说通的大乘行者。",
     "classicRef": "宗镜录 · 卷一",
-    "relatedConcepts": ["zong-jing-lu","mind-transmission","quanshi-shuangxing"],
-    "relatedPersons": ["yongming-yanshou","guifeng-zongmi"],
-    "relatedBooks": ["zongjinglu","chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "zong-jing-lu",
+      "mind-transmission",
+      "quanshi-shuangxing"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "zongjinglu",
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "zhi-yue-lu",
@@ -7026,12 +10850,24 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "公案典籍",
     "summary": "指月录指晚明瞿汝稷辑录之三十二卷公案颂古总集，取楞严经以手指月之意，汇聚千古公案与历代祖师拈提颂古于一帙。",
     "etymology": "出自《楞严经》卷二及明瞿汝稷《指月录序》：“如人以手指月，示人令知其月。”",
-    "quotes": ["如人以手指月，因指见月；见月忘指，契自本心。 —《指月录》"],
+    "quotes": [
+      "如人以手指月，因指见月；见月忘指，契自本心。 —《指月录》"
+    ],
     "guidance": "参究者当顺着祖师言句指引体认自心明月，切莫执着文字手指，方免数他人宝之叹。",
     "classicRef": "指月录 · 卷一",
-    "relatedConcepts": ["gong-an-song-gu","wu-deng-hui-yuan","self-nature"],
-    "relatedPersons": ["qu-ruji","zibai-zhenke"],
-    "relatedBooks": ["zhiyuelu","wudenghuiyuan"]
+    "relatedConcepts": [
+      "gong-an-song-gu",
+      "wu-deng-hui-yuan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "qu-ruji",
+      "zibai-zhenke"
+    ],
+    "relatedBooks": [
+      "zhiyuelu",
+      "wudenghuiyuan"
+    ]
   },
   {
     "id": "gong-an-song-gu",
@@ -7039,28 +10875,56 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门体裁",
     "summary": "公案颂古指禅宗历代宗师以诗偈形式对前代祖师对机公案所作之提撕评唱与赞颂，以诗意灵光启发学人直达心源。",
     "etymology": "出自宋雪窦重显《雪窦百则颂古》及明瞿汝稷《指月录》全书体例。",
-    "quotes": ["列圣丛中作者知，法王法令不如斯。会中若有仙陀客，何必文殊下一椎！ —《指月录》"],
+    "quotes": [
+      "列圣丛中作者知，法王法令不如斯。会中若有仙陀客，何必文殊下一椎！ —《指月录》"
+    ],
     "guidance": "读颂古当领会诗人禅师之弦外之音与大机大用，切勿作格律文词推敲，言下知宗方是真得。",
     "classicRef": "指月录 · 卷一至卷三十",
-    "relatedConcepts": ["zhi-yue-lu","mind-transmission","daji-yuanying"],
-    "relatedPersons": ["qu-ruji","xuedou-zhongxian","yuanwu-keqin"],
-    "relatedBooks": ["zhiyuelu","biyanlu","congronglu"]
-  }
-,
+    "relatedConcepts": [
+      "zhi-yue-lu",
+      "mind-transmission",
+      "daji-yuanying"
+    ],
+    "relatedPersons": [
+      "qu-ruji",
+      "xuedou-chongxian",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "zhiyuelu",
+      "biyanlu",
+      "congronglu"
+    ]
+  },
   {
-    "id": "shi-cun-wu-guan",
+    "id": "shicun-wuguan",
     "title": "食存五观",
     "category": "丛林修持",
-    "summary": "禅林僧众用斋过堂时的五种殊胜正念观照：计功多少量彼来处、忖己德行全缺应供、防心离过贪等为宗、正思良药为疗形枯、为成道业应受此食。将一日饮食受用转化为摄心止念、长养慧命的清净修行。",
+    "summary": "禅门僧众过堂用斋时端坐内照所作的五种神圣思维观想。《入众须知》规范受食前必须内作五观：“一、计功多少，量彼来处；二、忖己德行全缺，应供难消；三、防心离过，贪等为宗；四、正似良药，为疗形枯；五、为成道业，方受此食。”通过五观，行者在饮食面前彻底降伏对美味的贪爱与对劣食的嫌恶，视食物为治愈身心羸弱的良药，将日常饱腹升华为成就菩提慧命之殊胜资粮。",
     "etymology": "出自《入众日用·赴堂受食》及道宣律师《四分律行事钞》，乃汉传丛林与宗门过堂用斋之核心修持仪轨。",
     "quotes": [
       "计功多少，量彼来处；忖己德行，全缺应供；防心离过，贪等为宗；正思良药，为疗形枯；为成道业，应受此食。"
     ],
     "guidance": "用斋时心存惭愧与感恩，不贪美味、不嗔粗粝，一口饭一口明觉，食毕安详，以此资养色身速成佛道。",
     "classicRef": "入众日用 · 赴堂受食",
-    "relatedConcepts": ["ordinary-mind","conglin-zhidu","ben-lai-mian-mu"],
-    "relatedPersons": ["zongshou","baizhang"],
-    "relatedBooks": ["ruzhongriyong","chanyuanqinggui"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "conglin-zhidu",
+      "ben-lai-mian-mu",
+      "ruzhong-zhifa",
+      "sanlun-tikong"
+    ],
+    "relatedPersons": [
+      "zongshou",
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong",
+      "chanyuanqinggui",
+      "ruzhongxuzhi",
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "san-jing-di",
@@ -7073,11 +10937,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "外在之触净严明，即是内在对烦恼尘垢之警策觉照。举手投足不污法席，念念清净不染纤尘。",
     "classicRef": "入众日用 · 出入登厕",
-    "relatedConcepts": ["shi-cun-wu-guan","conglin-zhidu"],
-    "relatedPersons": ["zongshou"],
-    "relatedBooks": ["ruzhongriyong"]
-  }
-,
+    "relatedConcepts": [
+      "shicun-wuguan",
+      "conglin-zhidu"
+    ],
+    "relatedPersons": [
+      "zongshou"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong"
+    ]
+  },
   {
     "id": "chuan-fa-zheng-zong",
     "title": "传法正宗",
@@ -7089,9 +10959,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "宗门法统非争名逐利之谱牒，而是十方如来同一心印之源流。行者当知心外无别法，明自本心即契入传法正宗。",
     "classicRef": "传法正宗定祖图",
-    "relatedConcepts": ["xitian-ershiba-zu","mind-transmission","zhengfa-yancang"],
-    "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzongdingzutu","wudenghuiyuan","jingdechuandenglu"]
+    "relatedConcepts": [
+      "xitian-ershiba-zu",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "chuanfazhengzongdingzutu",
+      "wudenghuiyuan",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "chuan-fa-ji",
@@ -7104,11 +10987,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参悟传法偈切忌落在语言文字逻辑中作思辨分别，当借指见月，回光返照当下一念离相本觉。",
     "classicRef": "传法正宗定祖图",
-    "relatedConcepts": ["chuan-fa-zheng-zong","mind-transmission","zhengfa-yancang"],
-    "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzongdingzutu","tanjing"]
-  }
-,
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "tanjing"
+    ]
+  },
   {
     "id": "fang-shan-san-wen",
     "title": "方山三问",
@@ -7120,9 +11013,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参学者不可随语生解，当向自心体究：绝后如何复苏？无生如何转身？不住两边又向何处安立？",
     "classicRef": "方山文宝禅师语录",
-    "relatedConcepts": ["linji-zongfeng","ben-lai-mian-mu","erdi"],
-    "relatedPersons": ["fangshan-wenbao","linji"],
-    "relatedBooks": ["fangshanwenbaoyulu","wumenguan"]
+    "relatedConcepts": [
+      "linji-zongfeng",
+      "ben-lai-mian-mu",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao",
+      "linji"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "shidi-mingqu",
@@ -7135,11 +11038,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行切忌厌喧求静、逃离尘劳。当在世间工作生活、接人待物之一举一动中，惺惺寂寂、历历分明，即是契悟那事。",
     "classicRef": "方山文宝禅师语录",
-    "relatedConcepts": ["fang-shan-san-wen","ordinary-mind","erdi"],
-    "relatedPersons": ["fangshan-wenbao"],
-    "relatedBooks": ["fangshanwenbaoyulu","tanjing"]
-  }
-,
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "ordinary-mind",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "tanjing"
+    ]
+  },
   {
     "id": "bingding-tongzi-qiu-huo",
     "title": "丙丁童子来求火",
@@ -7152,9 +11063,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参此话头须当下反照自心：一切向外寻求玄妙理路，皆是丙丁求火。若能当下狂心歇歇，体认本命元辰，不假外求，即得大受用。",
     "classicRef": "《云门麦浪怀禅师宗门设难》、《景德传灯录》",
-    "relatedConcepts": ["huoju-siju","ben-lai-mian-mu","zixing-qingjing"],
-    "relatedPersons": ["mailang-huai","xuansha-shibei","fayan-wenyi"],
-    "relatedBooks": ["zongmenshenan","jingdechuandenglu"]
+    "relatedConcepts": [
+      "huoju-siju",
+      "ben-lai-mian-mu",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "xuansha-shibei",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "zongmen-shenan",
@@ -7168,11 +11090,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行切忌将祖师机锋当作学问研究。面对层层设难与难透公案，切不可猜度推理，当向无滋味处死心咬定，待机缘成熟，桶底自然脱落。",
     "classicRef": "《云门麦浪怀禅师宗门设难》",
-    "relatedConcepts": ["huoju-siju","jifeng","koan","gewai-xuanji"],
-    "relatedPersons": ["mailang-huai","yunmen","linji"],
-    "relatedBooks": ["zongmenshenan"]
-  }
-,
+    "relatedConcepts": [
+      "huoju-siju",
+      "jifeng",
+      "koan",
+      "gewai-xuanji"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "yunmen",
+      "linji"
+    ],
+    "relatedBooks": [
+      "zongmenshenan"
+    ]
+  },
   {
     "id": "kong-bu-kong-ru-lai-zang",
     "title": "空如来藏与不空如来藏",
@@ -7184,9 +11116,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修道参禅切莫错认空性：禅门明心见性，所见非空无所有之断灭顽空（此偏于空），亦非心外有物之神我（此偏于有），乃真空妙有、空与不空圆融无碍之本来面目。",
     "classicRef": "《胜鬘师子吼一乘大方便方广经》、《究竟一乘宝性论》",
-    "relatedConcepts": ["tathagatagarbha","emptiness","self-nature","buddha-nature"],
-    "relatedPersons": ["shengman-furen","gunabhadra","huineng"],
-    "relatedBooks": ["shengmanjing","baoxinglun","lengqiejing"]
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "emptiness",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "gunabhadra",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "baoxinglun",
+      "lengqiejing"
+    ]
   },
   {
     "id": "wu-ming-zhu-di",
@@ -7199,11 +11144,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "日常修行断除浮躁贪嗔仅是克制枝末烦恼；唯有在无念无住中直照本源，彻破根本无明，方能桶底脱落、生死永尽。",
     "classicRef": "《胜鬘师子吼一乘大方便方广经》",
-    "relatedConcepts": ["tathagatagarbha","affliction-bodhi","instant-enlightenment"],
-    "relatedPersons": ["shengman-furen","huineng"],
-    "relatedBooks": ["shengmanjing","lengyanjing"]
-  }
-,
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "affliction-bodhi",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shengmanjing",
+      "lengyanjing"
+    ]
+  },
   {
     "id": "gu-jing-ming-concept",
     "title": "古镜照物",
@@ -7216,9 +11170,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "于日用纷纭尘劳之中，当以此‘古镜照物’功夫觉照身心：事来则应，事去则空；万相历历在目，而自心不生贪嗔取舍，常住如如不动之觉体。",
     "classicRef": "《超宗慧方禅师语录》、《坛经》",
-    "relatedConcepts": ["self-nature","ben-lai-mian-mu","no-abiding","zixing-qingjing"],
-    "relatedPersons": ["chaozong-huifang","sixin-wuxin","huineng"],
-    "relatedBooks": ["chaozongyulu","tanjing"]
+    "relatedConcepts": [
+      "self-nature",
+      "ben-lai-mian-mu",
+      "no-abiding",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "tanjing"
+    ]
   },
   {
     "id": "jie-liu-yi-ju",
@@ -7232,11 +11198,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅切忌在思维念头里寻找答案，当在妄念波涛汹涌时，单提一声‘截流一句’，直接斩断起心动念的连绵妄想，反观无念自性。",
     "classicRef": "《超宗慧方禅师语录》、《碧岩录》",
-    "relatedConcepts": ["jifeng","linji-zongfeng","beyond-words"],
-    "relatedPersons": ["chaozong-huifang","sixin-wuxin","linji"],
-    "relatedBooks": ["chaozongyulu","linji","biyanlu"]
-  }
-,
+    "relatedConcepts": [
+      "jifeng",
+      "linji-zongfeng",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin",
+      "linji"
+    ],
+    "relatedBooks": [
+      "chaozongyulu",
+      "linji",
+      "biyanlu"
+    ]
+  },
   {
     "id": "zeng-shang-sheng-yu-jue-ding-sheng",
     "title": "增上生与决定胜",
@@ -7249,9 +11226,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行学佛不可躐等好高骛远：既不能执著人天福报而忘失究竟了脱生死之大志，亦切忌空谈胜义无生而废弃世间道德因果。必须以信持十善培植福德资粮，以智断诸惑契入自性寂灭。",
     "classicRef": "《宝行王正论》、《菩提道次第广论》",
-    "relatedConcepts": ["xin-zhi-er-gen","zhongguan","emptiness","non-duality"],
-    "relatedPersons": ["nagarjuna","paramartha"],
-    "relatedBooks": ["baoxingwangzhenglun","zhonglun"]
+    "relatedConcepts": [
+      "xin-zhi-er-gen",
+      "zhongguan",
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "zhonglun"
+    ]
   },
   {
     "id": "xin-zhi-er-gen",
@@ -7265,11 +11253,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "信无智则长愚痴，智无信则成狂慧。学禅者当信自家本来是佛、信因果丝毫不爽，并在日用参究中发起真实般若大智，扫荡情识妄见，方能信智圆融、直登彼岸。",
     "classicRef": "《宝行王正论》、《华严经》",
-    "relatedConcepts": ["zeng-shang-sheng-yu-jue-ding-sheng","prajna","zhongguan","instant-enlightenment"],
-    "relatedPersons": ["nagarjuna","paramartha"],
-    "relatedBooks": ["baoxingwangzhenglun","xinxinming"]
-  }
-,
+    "relatedConcepts": [
+      "zeng-shang-sheng-yu-jue-ding-sheng",
+      "prajna",
+      "zhongguan",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "xinxinming"
+    ]
+  },
   {
     "id": "shi-er-men-guan",
     "title": "十二门观",
@@ -7282,9 +11280,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修习中观与禅宗行者，当依十二门正观层层体察当下万念与外境：凡所生起皆从缘生，从缘生者本无自性；既无自性，从何立我立人、立起立灭？直下狂心顿息，契入自性寂然。",
     "classicRef": "《十二门论》《中论》《肇论》",
-    "relatedConcepts": ["bi-jing-kong-ji","emptiness","non-duality","prajna"],
-    "relatedPersons": ["nagarjuna","kumarajiva","sengrui"],
-    "relatedBooks": ["shiertimenlun","zhonglun","jingangjing"]
+    "relatedConcepts": [
+      "bi-jing-kong-ji",
+      "emptiness",
+      "non-duality",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "jiumoluoshi",
+      "sengrui"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "jingangjing"
+    ]
   },
   {
     "id": "bi-jing-kong-ji",
@@ -7298,9 +11309,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者切莫将‘空寂’错认为死寂沉空或顽空断见。毕竟空寂乃‘真空妙有’之枢机，因其自性毕竟空，方能森罗万象随缘幻化；参禅至极处，内外脱落，身心世界融入大虚空，不挂纤毫，方契本来真面目。",
     "classicRef": "《十二门论》《大智度论》《中论》《六祖坛经》",
-    "relatedConcepts": ["shi-er-men-guan","emptiness","self-nature","buddha-nature"],
-    "relatedPersons": ["nagarjuna","kumarajiva","seng-zhao"],
-    "relatedBooks": ["shiertimenlun","zhonglun","tanjing","xinjing"]
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "emptiness",
+      "self-nature",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "jiumoluoshi",
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "tanjing",
+      "xinjing"
+    ]
   },
   {
     "id": "yi-wei-zhen-shi",
@@ -7314,9 +11339,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者当体会自心当下无生无灭之一味本色：无论面对世间得失荣辱，抑或修行中心识之浮沉，体性从本以来无二无别。直下安住一味平怀，狂心息处即是真实道场。",
     "classicRef": "《金刚三昧经》《法华经》《圆觉经》",
-    "relatedConcepts": ["ben-jue-li-ci","self-nature","non-duality","tathagatagarbha"],
-    "relatedPersons": ["bodhidharma","yuanxiao"],
-    "relatedBooks": ["jingangsanmeijing","tanjing","lengqiejing"]
+    "relatedConcepts": [
+      "ben-jue-li-ci",
+      "self-nature",
+      "non-duality",
+      "tathagatagarbha"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "tanjing",
+      "lengqiejing"
+    ]
   },
   {
     "id": "ben-jue-li-ci",
@@ -7330,25 +11367,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者切莫向心外求悟，烦恼生起时，不必费力压制排遣，只需以自性本觉利刺如实一照，妄念如汤沃雪，当下消融。深信本觉天真自足，即是禅宗最上乘之见地。",
     "classicRef": "《金刚三昧经》《大乘起信论》《华严经》",
-    "relatedConcepts": ["yi-wei-zhen-shi","buddha-nature","self-nature","ben-lai-mian-mu"],
-    "relatedPersons": ["bodhidharma","yuanxiao"],
-    "relatedBooks": ["jingangsanmeijing","dachengqixinlun","tanjing"]
-  },
-  {
-    "id": "shi-er-shi-ge",
-    "title": "十二时歌",
-    "category": "禅门宗风",
-    "summary": "禅宗传世修持歌行体裁。平石如砥禅师以日用二六时辰（子丑寅卯辰巳午未申酉戌亥）为脉络，将枯淡起居、柴米油盐与参禅工夫之惺惺提持精妙结合，强调修行解脱唯在自心觉照承担，不离日用平常。",
-    "etymology": "源自平石如砥禅师所作《十二时歌》（载《天童平石和尚语录》卷末）。唐代赵州从谂禅师亦曾作有《十二时歌》，平石禅师承其宗风而益加峻烈平实。",
-    "quotes": [
-      "平旦寅，世间宜假不宜真。自家肚皮自擘划，不用低头更问人。 —平石如砥《十二时歌》",
-      "人定亥，只么惺惺要长在。浅草平田差路多，莫教失脚无明海。 —平石如砥《十二时歌》"
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "buddha-nature",
+      "self-nature",
+      "ben-lai-mian-mu"
     ],
-    "guidance": "行者切莫将禅修与日常生活割裂对立。当如《十二时歌》所开示：无论清晨日出还是黄昏人定，面对世事繁杂，自心当历历分明、惺惺不昧；于一饭一水间细细咀嚼体认，自肯自承，步步踏实。",
-    "classicRef": "《平石如砥禅师语录》《赵州录》",
-    "relatedConcepts": ["xing-xing-chang-zai","dao-zai-riyong","self-nature"],
-    "relatedPersons": ["pingshi-rudi","zhaozhou"],
-    "relatedBooks": ["pingshiyulu","zhaozhouyulu"]
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "dachengqixinlun",
+      "tanjing"
+    ]
   },
   {
     "id": "xing-xing-chang-zai",
@@ -7362,11 +11395,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者在日用对境时，当常自照察：此刻是否灵明历历？面对顺逆境界，能知境界的是谁？保持这份不取不舍、清清楚楚的觉照，便是‘惺惺长在’；久久温养，自然动静一如。",
     "classicRef": "《平石如砥禅师语录》《景德传灯录》《指月录》",
-    "relatedConcepts": ["shi-er-shi-ge","dao-zai-riyong","self-nature","ordinary-mind"],
-    "relatedPersons": ["pingshi-rudi","zhaozhou"],
-    "relatedBooks": ["pingshiyulu","tanjing"]
-  }
-,
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "dao-zai-riyong",
+      "self-nature",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "tanjing"
+    ]
+  },
   {
     "id": "wanfa-weixin",
     "title": "万法唯心",
@@ -7380,9 +11423,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者于日用境界中，遇顺逆忧喜莫随境转，直观现前能知能觉之自心。境不自境，由心现境；了达唯心，外尘自脱，分别不生，当下即大寂灭道场。",
     "classicRef": "《永明智觉禅师唯心诀》、《宗镜录》、《华严经》、《楞伽经》",
-    "relatedConcepts": ["weishi-yixin","lishi-wuai","zong-jing-lu","dinghui-xiangzi"],
-    "relatedPersons": ["yongming-yanshou","fayan-wenyi","tiantai-deshao"],
-    "relatedBooks": ["weixinjue","wanshantongguiji","lengyanjing","dachengqixinlun"]
+    "relatedConcepts": [
+      "weishi-yixin",
+      "lishi-wuai",
+      "zong-jing-lu",
+      "dinghui-xiangzi"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi",
+      "tiantai-deshao"
+    ],
+    "relatedBooks": [
+      "weixinjue",
+      "wanshantongguiji",
+      "lengyanjing",
+      "dachengqixinlun"
+    ]
   },
   {
     "id": "yibai-ershi-xiezong",
@@ -7397,9 +11454,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅办道切忌堕入见网：既不可执着无修为无事而放肆造业，亦不可强压妄念搞枯木死灰。须以法性融通、理事无碍为鉴，了知“理即生死，妄本菩提”，方免执药成病。",
     "classicRef": "《永明智觉禅师唯心诀》",
-    "relatedConcepts": ["wanfa-weixin","dinghui-xiangzi","chan-jiao-he-yi","kuang-chan"],
-    "relatedPersons": ["yongming-yanshou","fayan-wenyi"],
-    "relatedBooks": ["weixinjue","wanshantongguiji","zongmenshenan"]
+    "relatedConcepts": [
+      "wanfa-weixin",
+      "dinghui-xiangzi",
+      "chan-jiao-he-yi",
+      "kuang-chan"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "weixinjue",
+      "wanshantongguiji",
+      "zongmenshenan"
+    ]
   },
   {
     "id": "dinghui-xiangzi",
@@ -7414,11 +11483,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行不可偏废：若终日静坐压念，则心成顽空槁木；若只尚言句机锋，则成浮华狂慧。行者须以妙定涵养心地，以正智洞照万缘，动静一如，定慧等持。",
     "classicRef": "《永明智觉禅师唯心诀·定慧相资歌》、《六祖坛经》",
-    "relatedConcepts": ["dinghui-dengchi","wanfa-weixin","yibai-ershi-xiezong","samadhi"],
-    "relatedPersons": ["yongming-yanshou","huineng","tiantai-deshao"],
-    "relatedBooks": ["weixinjue","tanjing","wanshantongguiji"]
-  }
-,
+    "relatedConcepts": [
+      "dinghui-dengchi",
+      "wanfa-weixin",
+      "yibai-ershi-xiezong",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "huineng",
+      "tiantai-deshao"
+    ],
+    "relatedBooks": [
+      "weixinjue",
+      "tanjing",
+      "wanshantongguiji"
+    ]
+  },
   {
     "id": "yiqie-xiancheng",
     "title": "一切现成",
@@ -7432,9 +11513,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者切莫向外驰求玄妙佛法，当下能见能闻、起居作息处本来现成。放下思量计较，不立纤毫取舍，当下便契祖师骨髓。",
     "classicRef": "《金陵清凉院文益禅师语录》、《景德传灯录》",
-    "relatedConcepts": ["liuxiang-yuanrong","buzhi-zuiqinqie","wanfa-weixin","caoyuan-yidishui"],
-    "relatedPersons": ["fayan-wenyi","tiantai-deshao","yongming-yanshou"],
-    "relatedBooks": ["wenyiyulu","weixinjue","renyantianmu"]
+    "relatedConcepts": [
+      "liuxiang-yuanrong",
+      "buzhi-zuiqinqie",
+      "wanfa-weixin",
+      "caoyuan-yidishui"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "tiantai-deshao",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wenyiyulu",
+      "weixinjue",
+      "renyantianmu"
+    ]
   },
   {
     "id": "buzhi-zuiqinqie",
@@ -7448,9 +11542,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅莫以头脑所知所解为得。面对无明惑业或向上一窍，当体会这“不知”处的空灵觉照，不起推敲，直下承当。",
     "classicRef": "《金陵清凉院文益禅师语录》、《五灯会元》",
-    "relatedConcepts": ["yiqie-xiancheng","liudu","non-mind"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["wenyiyulu","renyantianmu"]
+    "relatedConcepts": [
+      "yiqie-xiancheng",
+      "liudu",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "wenyiyulu",
+      "renyantianmu"
+    ]
   },
   {
     "id": "caoyuan-yidishui",
@@ -7464,11 +11567,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "不向言句外求玄求妙，当下这一念觉知即是源头活水。信得及、承当得下，二六时中无不畅饮曹源甘露。",
     "classicRef": "《金陵清凉院文益禅师语录》、《五灯会元》",
-    "relatedConcepts": ["yiqie-xiancheng","zhengfa-yancang"],
-    "relatedPersons": ["fayan-wenyi","tiantai-deshao","huineng"],
-    "relatedBooks": ["wenyiyulu","tanjing","weixinjue"]
-  }
-,
+    "relatedConcepts": [
+      "yiqie-xiancheng",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "tiantai-deshao",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "wenyiyulu",
+      "tanjing",
+      "weixinjue"
+    ]
+  },
   {
     "id": "sijin-huanyuan",
     "title": "思尽还源",
@@ -7481,9 +11594,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "学人切莫以意识思维去推敲真佛住处，当体会能知能觉处灵焰未尝稍熄。放下思量计较，待情识穷尽，自性法身如如现前。",
     "classicRef": "《袁州仰山慧寂禅师语录》、《五灯会元》",
-    "relatedConcepts": ["yuanxiang","zhengfa-yancang","self-nature","liudu"],
-    "relatedPersons": ["weishan-lingyou","yangshan-huiji"],
-    "relatedBooks": ["yangshanyulu","weishanyulu","renyantianmu"]
+    "relatedConcepts": [
+      "yuanxiang",
+      "zhengfa-yancang",
+      "self-nature",
+      "liudu"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "yangshan-huiji"
+    ],
+    "relatedBooks": [
+      "yangshanyulu",
+      "weishanyulu",
+      "renyantianmu"
+    ]
   },
   {
     "id": "nongchan-bingzhong",
@@ -7498,9 +11623,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行切莫脱离现实劳作与生活事务。在职场与家务一举手一投足间，以平等心、无住心专注承当，事上磨砺正是心性成熟之无上道场。",
     "classicRef": "《袁州仰山慧寂禅师语录》、《沩山大圆禅师语录》、《沩山警策》",
-    "relatedConcepts": ["yuanxiang","chan-jiao-he-yi","ordinary-mind"],
-    "relatedPersons": ["weishan-lingyou","yangshan-huiji","baizhang"],
-    "relatedBooks": ["yangshanyulu","weishanyulu"]
+    "relatedConcepts": [
+      "yuanxiang",
+      "chan-jiao-he-yi",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "yangshan-huiji",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "yangshanyulu",
+      "weishanyulu"
+    ]
   },
   {
     "id": "shizi-yaoren",
@@ -7514,23 +11650,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅最忌把古人公案、经教名相当成实法去死记穷研，那正是韩卢逐块。应当回光返照：是谁在听、是谁在读？直咬那个能知者，当下立地成佛。",
     "classicRef": "《袁州仰山慧寂禅师语录》、《五灯会元》卷九",
-    "relatedConcepts": ["yuanxiang","self-nature","sijin-huanyuan"],
-    "relatedPersons": ["yangshan-huiji"],
-    "relatedBooks": ["yangshanyulu","linji","wumenguan"]
-  },
-  {
-    "id": "yixin-ermen",
-    "title": "一心二门",
-    "category": "心性本体",
-    "summary": "《大乘起信论》的核心总纲骨架。众生心即摩诃衍（大乘）之体，依此一心开显出心真如门与心生灭门。心真如门示体性空寂、不生不灭、离言绝相；心生灭门示依如来藏而有阿赖耶识，不生不灭与生灭和合，非一非异，具足染净因缘。二门不相离隔，真如为生灭之体，生灭为真如之用，二门各各总摄一切世间出世间法。禅宗明心见性，正是直悟此生灭妄心当下即是不生不灭之一心真如体。",
-    "quotes": [
-      "依一心法有二种门：一者心真如门，二者心生灭门。是二种门，各各总摄一切法。"
+    "relatedConcepts": [
+      "yuanxiang",
+      "self-nature",
+      "sijin-huanyuan"
     ],
-    "guidance": "参学者切莫将真如与生灭割裂为二事。动静起灭处，即是真如全体现前；离却烦恼波浪，别无如来藏海水可得。直下承当，无取无舍。",
-    "classicRef": "《大乘起信论（实叉难陀译）》、《禅源诸诠集都序》",
-    "relatedConcepts": ["zhenru-neixun","shuifeng-shilang","tathagatagarbha","yixing-sanmei"],
-    "relatedPersons": ["maming","shichanantuo","guifeng-zongmi","huineng"],
-    "relatedBooks": ["dachengqixinlunxinyi","dachengqixinlun","chanyuan_zhuquanjiduxu","weixinjue"]
+    "relatedPersons": [
+      "yangshan-huiji"
+    ],
+    "relatedBooks": [
+      "yangshanyulu",
+      "linji",
+      "wumenguan"
+    ]
   },
   {
     "id": "zhenru-neixun",
@@ -7542,9 +11674,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行并非从心外造作出一尊新佛，而是顺应自性真如本具的内熏力量，歇下攀缘驰求。当厌苦求脱之心生起时，正当认取这便是本来面目在放光动地。",
     "classicRef": "《大乘起信论（实叉难陀译）》卷上、《圆觉经》",
-    "relatedConcepts": ["yixin-ermen","shuifeng-shilang","wuxin-jueguan","self-nature"],
-    "relatedPersons": ["maming","huineng","guifeng-zongmi"],
-    "relatedBooks": ["dachengqixinlunxinyi","dachengqixinlun","yuanjuejing","lengyanjing"]
+    "relatedConcepts": [
+      "yi-xin-er-men",
+      "shuifeng-shilang",
+      "wuxin-jueguan",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "maming",
+      "huineng",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "yuanjuejing",
+      "lengyanjing"
+    ]
   },
   {
     "id": "shuifeng-shilang",
@@ -7556,9 +11702,23 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "打坐参禅若死死压制念头、求一个毫无波浪的死水顽空，犹如搬石压草。当参悟念头波浪即是觉性之水，风来随风动，风歇自湛然，莫作水浪二见。",
     "classicRef": "《大乘起信论（实叉难陀译）》、《楞伽经》卷一",
-    "relatedConcepts": ["yixin-ermen","zhenru-neixun","tathagatagarbha","wuzhiliang"],
-    "relatedPersons": ["maming","shichanantuo","bodhidharma"],
-    "relatedBooks": ["dachengqixinlunxinyi","dachengqixinlun","lengqiejing","xinxinming"]
+    "relatedConcepts": [
+      "yi-xin-er-men",
+      "zhenru-neixun",
+      "tathagatagarbha",
+      "wuzhiliang"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "lengqiejing",
+      "xinxinming"
+    ]
   },
   {
     "id": "changjian-yitian",
@@ -7570,9 +11730,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参学者切莫将“长剑”作杀伐兵戈理解，亦莫作狂妄狂禅会。此是斩断自己胸中贪嗔痴慢、是非圣凡的无上般若慧剑。向不可测度处直下承当，方免死在句下。",
     "classicRef": "《剑关子益禅师语录》、《临济语录》",
-    "relatedConcepts": ["quanshou-quanfang","wushuo-wuwen","banghe","wuxin-jueguan"],
-    "relatedPersons": ["jianguan-ziyi","linji","yangqi-fanghui"],
-    "relatedBooks": ["jianguanyulu","linji","wumenguan"]
+    "relatedConcepts": [
+      "quanshou-quanfang",
+      "wushuo-wuwen",
+      "banghe",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "jianguan-ziyi",
+      "linji",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "jianguanyulu",
+      "linji",
+      "wumenguan"
+    ]
   },
   {
     "id": "quanshou-quanfang",
@@ -7584,9 +11757,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "打坐静修莫作死水不流的偏枯汉，涉世行履莫作随波逐浪的流俗客。在千差万别的尘劳琐事中常保独立清凉，在寂静独处时不堕顽空枯木，方是真衲僧手眼。",
     "classicRef": "《剑关子益禅师语录》、《临济录》",
-    "relatedConcepts": ["changjian-yitian","ordinary-mind","dongjing-buer"],
-    "relatedPersons": ["jianguan-ziyi","linji"],
-    "relatedBooks": ["jianguanyulu","linji","xutangyulu"]
+    "relatedConcepts": [
+      "changjian-yitian",
+      "ordinary-mind",
+      "dongjing-buer"
+    ],
+    "relatedPersons": [
+      "jianguan-ziyi",
+      "linji"
+    ],
+    "relatedBooks": [
+      "jianguanyulu",
+      "linji",
+      "xutangyulu"
+    ]
   },
   {
     "id": "wushuo-wuwen",
@@ -7598,9 +11782,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "读公案、阅经教，莫在字面上死记硬背。应当反观：那个听法、读书的活泼觉照是什么？言语说不到、心念攀不到处，正是本来面目。",
     "classicRef": "《剑关子益禅师语录》、《金刚经》",
-    "relatedConcepts": ["changjian-yitian","yixin-ermen","beyond-words"],
-    "relatedPersons": ["jianguan-ziyi","huineng"],
-    "relatedBooks": ["jianguanyulu","jingangjing","tanjing"]
+    "relatedConcepts": [
+      "changjian-yitian",
+      "yi-xin-er-men",
+      "beyond-words"
+    ],
+    "relatedPersons": [
+      "jianguan-ziyi",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "jianguanyulu",
+      "jingangjing",
+      "tanjing"
+    ]
   },
   {
     "id": "xiangsibanru",
@@ -7612,9 +11807,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参修切忌落入思维推度的相似境界。若心存“我懂了空”、“我见到了无常”的一念知解，仍是相似般若之情识把玩；必须向一念未生前彻底截断，亲证无取无舍之自性光明。",
     "classicRef": "《顺中论》、《大智度论》、《金刚经》",
-    "relatedConcepts": ["qukong-shengjian","erdi-buer","prajna","wushuo-wuwen"],
-    "relatedPersons": ["nagarjuna","wuzhu-asanga","qutan-liuzhi"],
-    "relatedBooks": ["shunzhonglun","zhonglun","jingangjing"]
+    "relatedConcepts": [
+      "qukong-shengjian",
+      "erdi-buer",
+      "prajna",
+      "wushuo-wuwen"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "wuzhu-asanga",
+      "qutan-liuzhi"
+    ],
+    "relatedBooks": [
+      "shunzhonglun",
+      "zhonglun",
+      "jingangjing"
+    ]
   },
   {
     "id": "qukong-shengjian",
@@ -7626,9 +11834,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "破一切执，莫执于破。学禅之人若开口便是“一切皆空、因果亦空”，视作修行高妙，正是堕入“取空生见”。当知真如实相非空非有，真空妙有，历历孤明，岂可落断灭坑！",
     "classicRef": "《顺中论》、《中论》、《六祖坛经》",
-    "relatedConcepts": ["xiangsibanru","kongxing","zhongdao","wu-nian"],
-    "relatedPersons": ["nagarjuna","wuzhu-asanga","huineng"],
-    "relatedBooks": ["shunzhonglun","zhonglun","tanjing"]
+    "relatedConcepts": [
+      "xiangsibanru",
+      "kongxing",
+      "zhongdao",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "wuzhu-asanga",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "shunzhonglun",
+      "zhonglun",
+      "tanjing"
+    ]
   },
   {
     "id": "erdi-buer",
@@ -7641,9 +11862,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行不可偏于离世索居或沉溺世俗。在日用穿衣吃饭、待人接物中，体会事事物物皆是真如妙用，事理不二，体用一如，即是安住中道。",
     "classicRef": "《顺中论》、《中论》、《肇论》",
-    "relatedConcepts": ["zhongdao","shi-er-yinyuan","zhenru","liuxiang-yuanrong"],
-    "relatedPersons": ["nagarjuna","wuzhu-asanga","seng-zhao"],
-    "relatedBooks": ["shunzhonglun","zhonglun","zhaolun"]
+    "relatedConcepts": [
+      "zhongdao",
+      "shi-er-yinyuan",
+      "zhenru",
+      "liuxiang-yuanrong"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "wuzhu-asanga",
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "shunzhonglun",
+      "zhonglun",
+      "zhaolun"
+    ]
   },
   {
     "id": "ruzhong-zhifa",
@@ -7656,24 +11890,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "现代修行人或日常居士切莫轻视外在仪态。在工作与家庭中，关照他人感受、说话低声温和、起居井然有序、随手关灯省水，即是将古刹“入众之法”化为当下安顿自他的生活禅。",
     "classicRef": "《入众须知》、《入众日用》、《禅苑清规》",
-    "relatedConcepts": ["shicun-wuguan","changyi-faze","ordinary-mind","qinggui"],
-    "relatedPersons": ["baizhang","zongze","jieshi-zhiying"],
-    "relatedBooks": ["ruzhongxuzhi","ruzhongriyong","chanyuanqinggui"]
-  },
-  {
-    "id": "shicun-wuguan",
-    "title": "食存五观",
-    "category": "止观实修",
-    "summary": "禅门僧众过堂用斋时端坐内照所作的五种神圣思维观想。《入众须知》规范受食前必须内作五观：“一、计功多少，量彼来处；二、忖己德行全缺，应供难消；三、防心离过，贪等为宗；四、正似良药，为疗形枯；五、为成道业，方受此食。”通过五观，行者在饮食面前彻底降伏对美味的贪爱与对劣食的嫌恶，视食物为治愈身心羸弱的良药，将日常饱腹升华为成就菩提慧命之殊胜资粮。",
-    "quotes": [
-      "计功多少，量彼来处；忖己德行全缺，应供难消；防心离过，贪等为宗；正似良药，为疗形枯；为成道业，方受此食。",
-      "若受食时，当愿众生：禅悦为食，法喜充溢。"
+    "relatedConcepts": [
+      "shicun-wuguan",
+      "changyi-faze",
+      "ordinary-mind",
+      "qinggui"
     ],
-    "guidance": "每日用餐前静默片刻，默念五观：感恩食物来之不易，检点自己今日是否虚度光阴，克制暴饮暴食与贪念，把用餐化作一次感恩大地与滋养觉照的正念修持。",
-    "classicRef": "《入众须知》、《敕修百丈清规》、《禅苑清规》",
-    "relatedConcepts": ["ruzhong-zhifa","ordinary-mind","sanlun-tikong"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["ruzhongxuzhi","chanyuanqinggui","chixiu-baizhang-qinggui"]
+    "relatedPersons": [
+      "baizhang",
+      "zongze",
+      "jieshi-zhiying"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "changyi-faze",
@@ -7686,9 +11918,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "观古人“唱衣”之风，当悟世间名牌衣物、财富存款临终皆是一场幻梦，丝毫带不去。活着时轻装简行、乐善好施，心中自无恐惧牵缠。",
     "classicRef": "《入众须知》、《禅林备用清规》、《敕修百丈清规》",
-    "relatedConcepts": ["ruzhong-zhifa","wuchang","qinggui"],
-    "relatedPersons": ["jieshi-zhiying","baizhang"],
-    "relatedBooks": ["ruzhongxuzhi","chanyuanqinggui","huanzhu-anqinggui"]
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "wuchang",
+      "qinggui"
+    ],
+    "relatedPersons": [
+      "jieshi-zhiying",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "chanyuanqinggui",
+      "huanzhu-anqinggui"
+    ]
   },
   {
     "id": "buyu-wanfa-weilv",
@@ -7701,9 +11944,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参修切莫向外寻求依靠与伴侣。反观那个能见能闻、不与任何烦恼境相结伴的清净觉照是谁？当下承当，即见本来面目。",
     "classicRef": "《庞居士语录》、《马祖语录》、《五灯会元》",
-    "relatedConcepts": ["wuxin-jueguan","danyuan-kongzhu-suoyou","wu-nian"],
-    "relatedPersons": ["pang-yun","mazu","shitou"],
-    "relatedBooks": ["pangjushiyulu","mazu"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "danyuan-kongzhu-suoyou",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "mazu",
+      "shitou"
+    ],
+    "relatedBooks": [
+      "pangjushiyulu",
+      "mazu"
+    ]
   },
   {
     "id": "danyuan-kongzhu-suoyou",
@@ -7715,9 +11969,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行最忌“头上安头”。放下心中的执念与妄想即是修行，莫在心外苦苦寻找一个叫做“悟”的实体。心空无物，万法安然。",
     "classicRef": "《庞居士语录》、《景德传灯录》、《指月录》",
-    "relatedConcepts": ["buyu-wanfa-weilv","yunshui-banchai","wuzhu-ben"],
-    "relatedPersons": ["pang-yun","ling-zhao"],
-    "relatedBooks": ["pangjushiyulu","jingdechuandenglu"]
+    "relatedConcepts": [
+      "buyu-wanfa-weilv",
+      "yunshui-banchai",
+      "wuzhu-ben"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "ling-zhao"
+    ],
+    "relatedBooks": [
+      "pangjushiyulu",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "yunshui-banchai",
@@ -7730,9 +11994,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "莫将修行与工作生活割裂为两件事。在办公室打字、厨房洗碗、照顾家人时，专注当下、心平气和，即是在行持最上乘的神通妙用。",
     "classicRef": "《庞居士语录》、《传法正宗记》、《宗宝本坛经》",
-    "relatedConcepts": ["ordinary-mind","danyuan-kongzhu-suoyou"],
-    "relatedPersons": ["pang-yun","shitou"],
-    "relatedBooks": ["pangjushiyulu","tanjing"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "danyuan-kongzhu-suoyou"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "shitou"
+    ],
+    "relatedBooks": [
+      "pangjushiyulu",
+      "tanjing"
+    ]
   },
   {
     "id": "miwu-liangwang",
@@ -7745,9 +12018,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "莫要整日忧心自己未悟，亦莫自矜已有所悟。于日常起居中，息灭得失计较，体认当下一念灵明自性，不随妄生亦不随妄灭，即入迷悟两忘之清凉家山。",
     "classicRef": "《海印昭如禅师三会语录》、《证道歌》、《大乘起信论》",
-    "relatedConcepts": ["zi-duan-qishou","yi-bu-ting-xuan","wuxin-jueguan","wuzhu-ben"],
-    "relatedPersons": ["haiyin-zhaoru","xueyan-zuqin"],
-    "relatedBooks": ["haiyinyulu"]
+    "relatedConcepts": [
+      "zi-duan-qishou",
+      "yi-bu-ting-xuan",
+      "wuxin-jueguan",
+      "wuzhu-ben"
+    ],
+    "relatedPersons": [
+      "haiyin-zhaoru",
+      "xueyan-zuqin"
+    ],
+    "relatedBooks": [
+      "haiyinyulu"
+    ]
   },
   {
     "id": "zi-duan-qishou",
@@ -7760,9 +12043,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "在反观自心时，切莫在心上又建立一个“能觉照的我”去盯着杂念。只须狂心一歇，能所俱空，自性真空本体自然现前。",
     "classicRef": "《海印昭如禅师三会语录》、《圆觉经》、《楞严经》",
-    "relatedConcepts": ["miwu-liangwang","yi-bu-ting-xuan","wuzhu-ben"],
-    "relatedPersons": ["haiyin-zhaoru"],
-    "relatedBooks": ["haiyinyulu"]
+    "relatedConcepts": [
+      "miwu-liangwang",
+      "yi-bu-ting-xuan",
+      "wuzhu-ben"
+    ],
+    "relatedPersons": [
+      "haiyin-zhaoru"
+    ],
+    "relatedBooks": [
+      "haiyinyulu"
+    ]
   },
   {
     "id": "yi-bu-ting-xuan",
@@ -7775,9 +12066,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "在现代职场与人际交往中，不可死板固守教条观念，亦不可沉溺于玄空理论。应当临事专注敏捷，应机自如，事过境迁心了无痕迹，即得大用现前。",
     "classicRef": "《海印昭如禅师三会语录》、《临济录》、《虚堂语录》",
-    "relatedConcepts": ["miwu-liangwang","jifeng","ordinary-mind"],
-    "relatedPersons": ["haiyin-zhaoru","xueyan-zuqin"],
-    "relatedBooks": ["haiyinyulu","linji"]
+    "relatedConcepts": [
+      "miwu-liangwang",
+      "jifeng",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "haiyin-zhaoru",
+      "xueyan-zuqin"
+    ],
+    "relatedBooks": [
+      "haiyinyulu",
+      "linji"
+    ]
   },
   {
     "id": "jiaowai-biechuan-zhengzong",
@@ -7790,9 +12091,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "现代学人不可把‘教外别传’误解为否定经典知识，亦不可沉溺于文字知解而认指为月。当以经教为明镜指引，在起心动念处直下照破能所，亲证自性心源。",
     "classicRef": "《传法正宗论》、《传法正宗记》、《六祖坛经》",
-    "relatedConcepts": ["zhengfa-yancang","mind-transmission","chuan-fa-zheng-zong"],
-    "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzonglun","chuanfazhengzongdingzutu","tanjing"]
+    "relatedConcepts": [
+      "zhengfa-yancang",
+      "mind-transmission",
+      "chuan-fa-zheng-zong"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzonglun",
+      "chuanfazhengzongdingzutu",
+      "tanjing"
+    ]
   },
   {
     "id": "sanzang-lingfu",
@@ -7805,9 +12118,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "不论阅读何种经典、修习何种法门，当直探其背后的自性觉照灵府。若心不离本性，世出世间一切事业皆是无上佛事。",
     "classicRef": "《传法正宗论》、《大智度论》、《大乘起信论》",
-    "relatedConcepts": ["jiaowai-biechuan-zhengzong","zhengfa-yancang","yuanjue-qingjing-xinxing"],
-    "relatedPersons": ["qisong","bodhidharma","nagarjuna"],
-    "relatedBooks": ["chuanfazhengzonglun","chuanfazhengzongdingzutu","dachengqixinlunxinyi"]
+    "relatedConcepts": [
+      "jiaowai-biechuan-zhengzong",
+      "zhengfa-yancang",
+      "yuanjue-qingjing-xinxing"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzonglun",
+      "chuanfazhengzongdingzutu",
+      "dachengqixinlunxinyi"
+    ]
   },
   {
     "id": "gongzai-yanwai",
@@ -7820,9 +12145,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参修者当体察日常言谈思维之外那个不随念头起伏的知觉本体。不被语言概念转动，当下即是安乐解脱境地。",
     "classicRef": "《传法正宗论》、《大乘起信论》、《大慧宗杲法语》",
-    "relatedConcepts": ["jiaowai-biechuan-zhengzong","sanzang-lingfu","mind-transmission"],
-    "relatedPersons": ["qisong","bodhidharma","dahui-zonggao"],
-    "relatedBooks": ["chuanfazhengzonglun","wumenguan"]
+    "relatedConcepts": [
+      "jiaowai-biechuan-zhengzong",
+      "sanzang-lingfu",
+      "mind-transmission"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzonglun",
+      "wumenguan"
+    ]
   },
   {
     "id": "jin-ding-zi",
@@ -7830,9 +12166,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门机锋",
     "summary": "禅宗比喻宗师手段坚刚硬挺、如金钉铁铆般不可拔动摇撼之刚烈气骨与透关机用。在南宋丛林学风偶有趋向虚浮妥协之势时，希叟绍昙以‘撑拓宗门金钉子’自任，凡见学人生起情解分别、依草附木，必以金刚巨刃当阳斩绝，立定宗风门庭。",
     "classicRef": "希叟绍昙禅师语录",
-    "relatedConcepts": ["ding-men-yi-yan","xiangshang-guanliezi"],
-    "relatedPersons": ["xisou-shaotan","xutang-zhiyu"],
-    "relatedBooks": ["xisouyulu","xutangyulu"]
+    "relatedConcepts": [
+      "ding-men-yi-yan",
+      "xiangshang-guanliezi"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan",
+      "xutang-zhiyu"
+    ],
+    "relatedBooks": [
+      "xisouyulu",
+      "xutangyulu"
+    ]
   },
   {
     "id": "ding-men-yi-yan",
@@ -7840,9 +12185,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "明心见性",
     "summary": "指超越凡夫肉眼、天眼、慧眼、法眼、佛眼等思维对待，直接洞照真如实相、烁破大千虚空的根本般若正眼。希叟绍昙升座常卓拄杖警策：‘山僧为诸人挑出顶门金刚眼去也！’意在唤醒学人莫执着于声色知见，于绝言绝虑处当下亲证此无上透关慧眼。",
     "classicRef": "希叟绍昙禅师语录",
-    "relatedConcepts": ["jin-ding-zi","zhengfa-yancang","xiangshang-guanliezi"],
-    "relatedPersons": ["xisou-shaotan","xueyan-zuqin"],
-    "relatedBooks": ["xisouyulu","haiyinyulu","gaofengyulu"]
+    "relatedConcepts": [
+      "jin-ding-zi",
+      "zhengfa-yancang",
+      "xiangshang-guanliezi"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan",
+      "xueyan-zuqin"
+    ],
+    "relatedBooks": [
+      "xisouyulu",
+      "haiyinyulu",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "dong-du-chuan-fa",
@@ -7850,9 +12206,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅宗史话",
     "summary": "指南宋至元代中日禅僧跨越风涛大海、往返求法与弘法的波澜壮阔历史现象。宋代临济杨岐派宗匠如兰溪道隆、无学祖元等赴日开创建长寺、圆觉寺，而日本求法僧如温英、国光等泛海入宋，依止希叟绍昙、虚堂智愚参学受印。希叟语录详录与东瀛门人之酬答赠偈，为考订中日禅文化交融之关键证据。",
     "classicRef": "希叟绍昙禅师语录",
-    "relatedConcepts": ["zhengfa-yancang","jianxing-chengfo"],
-    "relatedPersons": ["xisou-shaotan","xutang-zhiyu"],
-    "relatedBooks": ["xisouyulu","xutangyulu"]
+    "relatedConcepts": [
+      "zhengfa-yancang",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan",
+      "xutang-zhiyu"
+    ],
+    "relatedBooks": [
+      "xisouyulu",
+      "xutangyulu"
+    ]
   },
   {
     "id": "ren-zhu-fa-fa-zhu-ren",
@@ -7860,9 +12225,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗门心法",
     "summary": "达摩《安心法门》直指迷悟之根本升降机纽。迷时心随物转、被外界经教名相所牵制羁绊（人逐法）；悟时境随心转、万象森罗皆成自性活泼大用（法逐人）。解则以灵明心识统摄物质色相，迷则被外在色相所奴役拘禁。",
     "classicRef": "达摩大师心经颂与安心法门",
-    "relatedConcepts": ["guanzhao-bore","wenzi-chan","zhengfa-yancang"],
-    "relatedPersons": ["bodhidharma","huike"],
-    "relatedBooks": ["damoxinjinganxin","xuemaicong","poxianglun"]
+    "relatedConcepts": [
+      "guanzhao-bore",
+      "wenzi-chan",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xuemaicong",
+      "poxianglun"
+    ]
   },
   {
     "id": "bo-re-xin-song",
@@ -7870,9 +12246,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "印心经藏",
     "summary": "达摩祖师逐句注解《心经》之五言悟道诗颂。以‘智慧清净海’贯穿色空不二与涅槃实相，融通大乘般若与如来藏妙体，为禅门‘借教悟宗、见性明心’之至高典范。",
     "classicRef": "达摩大师心经颂与安心法门",
-    "relatedConcepts": ["guanzhao-bore","jianxing-chengfo","zhengfa-yancang"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["damoxinjinganxin","xinjing","wuxinglun"]
+    "relatedConcepts": [
+      "guanzhao-bore",
+      "jianxing-chengfo",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xinjing",
+      "wuxinglun"
+    ]
   },
   {
     "id": "xin-xin-xin-song",
@@ -7880,11 +12266,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "明心见性",
     "summary": "达摩祖师阐发自性心体大无外、细无内之千古印心极则。‘宽时遍法界，窄也不容针’，不厌恶亦不勤善，超越凡夫小乘之一切对待界限，超然独立为宗门祖意之源泉。",
     "classicRef": "达摩大师心经颂与安心法门",
-    "relatedConcepts": ["ren-zhu-fa-fa-zhu-ren","wuxin-jueguan","zhengfa-yancang"],
-    "relatedPersons": ["bodhidharma","huike"],
-    "relatedBooks": ["damoxinjinganxin","xuemaicong"]
-  }
-,
+    "relatedConcepts": [
+      "ren-zhu-fa-fa-zhu-ren",
+      "wuxin-jueguan",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "huike"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "xuemaicong"
+    ]
+  },
   {
     "id": "si-jue-lu-tou",
     "title": "四绝路头",
@@ -7897,9 +12292,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "学者日常修持不可在理路上咬文嚼字，当将身心世界、起心动念全盘放下，在此四绝悬崖峭壁之上单提话头，一念万年，蓦然顿脱。",
     "classicRef": "天台无见先睹禅师语录",
-    "relatedConcepts": ["hu-chou-bu-shan","shi-jia-mi-le-you-shi-ta-nu"],
-    "relatedPersons": ["wujian-xiandu"],
-    "relatedBooks": ["wujianxianduyulu"]
+    "relatedConcepts": [
+      "hu-chou-bu-shan",
+      "shi-jia-mi-le-you-shi-ta-nu"
+    ],
+    "relatedPersons": [
+      "wujian-xiandu"
+    ],
+    "relatedBooks": [
+      "wujianxianduyulu"
+    ]
   },
   {
     "id": "hu-chou-bu-shan",
@@ -7913,9 +12315,15 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参修稍有宁静或灵明之境，切莫沾沾自喜作胜妙会。必须如丢弃腥臭烂衣般彻底荡尽，不留纤毫悟迹。",
     "classicRef": "天台无见先睹禅师语录",
-    "relatedConcepts": ["si-jue-lu-tou"],
-    "relatedPersons": ["wujian-xiandu"],
-    "relatedBooks": ["wujianxianduyulu"]
+    "relatedConcepts": [
+      "si-jue-lu-tou"
+    ],
+    "relatedPersons": [
+      "wujian-xiandu"
+    ],
+    "relatedBooks": [
+      "wujianxianduyulu"
+    ]
   },
   {
     "id": "shi-jia-mi-le-you-shi-ta-nu",
@@ -7929,11 +12337,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参究此话头切忌作尊卑高下之佛学理论解，当直下返照：那个令三世佛祖皆俯首称臣的主人公，究竟作何面目？",
     "classicRef": "天台无见先睹禅师语录",
-    "relatedConcepts": ["si-jue-lu-tou"],
-    "relatedPersons": ["wujian-xiandu"],
-    "relatedBooks": ["wujianxianduyulu"]
-  }
-,
+    "relatedConcepts": [
+      "si-jue-lu-tou"
+    ],
+    "relatedPersons": [
+      "wujian-xiandu"
+    ],
+    "relatedBooks": [
+      "wujianxianduyulu"
+    ]
+  },
   {
     "id": "huang-long-quan-tou",
     "title": "黄龙拳头",
@@ -7946,9 +12359,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "学者参究此机锋，切忌在‘是拳’与‘非拳’的知见上思量卜度。须向两头坐断、无可名状处全身一跃，打破意根牢关，方见自家真实履践。",
     "classicRef": "黄龙晦堂心和尚语录",
-    "relatedConcepts": ["wu-yin-hu-er","dun-wang-zhu-jian"],
-    "relatedPersons": ["huitang-zuxin","huanglong-huinan"],
-    "relatedBooks": ["huitangyulu"]
+    "relatedConcepts": [
+      "wu-yin-hu-er",
+      "dun-wang-zhu-jian"
+    ],
+    "relatedPersons": [
+      "huitang-zuxin",
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huitangyulu"
+    ]
   },
   {
     "id": "wu-yin-hu-er",
@@ -7962,9 +12383,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "道在目前，触处即真。学人参禅莫向玄奥高远处向外驰求，但能于眼前声色见闻处消融能所，当下见得这个无遮无障之本来真性。",
     "classicRef": "黄龙晦堂心和尚语录",
-    "relatedConcepts": ["huang-long-quan-tou","dun-wang-zhu-jian"],
-    "relatedPersons": ["huitang-zuxin"],
-    "relatedBooks": ["huitangyulu"]
+    "relatedConcepts": [
+      "huang-long-quan-tou",
+      "dun-wang-zhu-jian"
+    ],
+    "relatedPersons": [
+      "huitang-zuxin"
+    ],
+    "relatedBooks": [
+      "huitangyulu"
+    ]
   },
   {
     "id": "dun-wang-zhu-jian",
@@ -7978,11 +12406,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "日常参修最忌‘以知见解知见’，若执经论葛藤作实法，如水母借虾为目。必须彻底斩断一切情识思量，令心中一尘不立，方显本地风光。",
     "classicRef": "黄龙晦堂心和尚语录",
-    "relatedConcepts": ["huang-long-quan-tou"],
-    "relatedPersons": ["huitang-zuxin"],
-    "relatedBooks": ["huitangyulu"]
-  }
-,
+    "relatedConcepts": [
+      "huang-long-quan-tou"
+    ],
+    "relatedPersons": [
+      "huitang-zuxin"
+    ],
+    "relatedBooks": [
+      "huitangyulu"
+    ]
+  },
   {
     "id": "zi-ta-xiang-huan",
     "title": "自他相换",
@@ -7995,9 +12428,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "日常遇逆境或痛苦时，切莫怨天尤人，当发愿：“愿一切众生之痛苦尽皆成熟于我身，愿一切众生永离疾苦。”此念一生，我执冰消，当下即是菩萨净土。",
     "classicRef": "菩提行经",
-    "relatedConcepts": ["zi-ta-ping-deng","pu-ti-xin-bao"],
-    "relatedPersons": ["ji-tian"],
-    "relatedBooks": ["putixingjing"]
+    "relatedConcepts": [
+      "zi-ta-ping-deng",
+      "pu-ti-xin-bao"
+    ],
+    "relatedPersons": [
+      "ji-tian"
+    ],
+    "relatedBooks": [
+      "putixingjing"
+    ]
   },
   {
     "id": "zi-ta-ping-deng",
@@ -8011,9 +12451,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "见一切众生遭受苦难，当如自身手足受伤般自然护卫。在行住坐卧中平等视一切人，消融主客二元对立。",
     "classicRef": "菩提行经",
-    "relatedConcepts": ["zi-ta-xiang-huan","pu-ti-xin-bao"],
-    "relatedPersons": ["ji-tian"],
-    "relatedBooks": ["putixingjing"]
+    "relatedConcepts": [
+      "zi-ta-xiang-huan",
+      "pu-ti-xin-bao"
+    ],
+    "relatedPersons": [
+      "ji-tian"
+    ],
+    "relatedBooks": [
+      "putixingjing"
+    ]
   },
   {
     "id": "pu-ti-xin-bao",
@@ -8027,9 +12474,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修道者朝夕当自反省：此心究竟是为一己求安乐，还是为法界众生求正觉？唯有念念不离菩提心宝，方与三世诸佛同一鼻孔出气。",
     "classicRef": "菩提行经",
-    "relatedConcepts": ["zi-ta-xiang-huan","zi-ta-ping-deng"],
-    "relatedPersons": ["ji-tian"],
-    "relatedBooks": ["putixingjing"]
+    "relatedConcepts": [
+      "zi-ta-xiang-huan",
+      "zi-ta-ping-deng"
+    ],
+    "relatedPersons": [
+      "ji-tian"
+    ],
+    "relatedBooks": [
+      "putixingjing"
+    ]
   },
   {
     "id": "po-xie-xian-zheng",
@@ -8043,9 +12497,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者切莫在“破”之外另求一个“正法”来执持。起心动念处但看此念从何而起、自性何在；见其无自性，当下放下，便是自性风光。",
     "classicRef": "百论",
-    "relatedConcepts": ["zhongguan","zhongdao","xingkong","buzhenkong"],
-    "relatedPersons": ["ti-po","nagarjuna","seng-zhao"],
-    "relatedBooks": ["bailun","zhonglun"]
+    "relatedConcepts": [
+      "zhongguan",
+      "zhongdao",
+      "xingkong",
+      "buzhenkong"
+    ],
+    "relatedPersons": [
+      "ti-po",
+      "nagarjuna",
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "bailun",
+      "zhonglun"
+    ]
   },
   {
     "id": "yan-er-wu-dang",
@@ -8059,9 +12525,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "读经闻法，最忌依文解义、死在句下。当知千经万论皆是黄叶止啼，言语只是开悟之舟筏，得月当忘指，悟心须离言。",
     "classicRef": "百论",
-    "relatedConcepts": ["po-xie-xian-zheng","beyond-words","zhongguan"],
-    "relatedPersons": ["seng-zhao","ti-po"],
-    "relatedBooks": ["bailun","zhaolun"]
+    "relatedConcepts": [
+      "po-xie-xian-zheng",
+      "beyond-words",
+      "zhongguan"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "ti-po"
+    ],
+    "relatedBooks": [
+      "bailun",
+      "zhaolun"
+    ]
   },
   {
     "id": "po-kong-xian-zhen",
@@ -8075,9 +12551,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅修道最怕堕入死水冷灰的断灭顽空。破尽一切所知障后，莫守着一个空境以为究竟；须翻过虚空，从百尺竿头再进一步，活泼泼大机大用方得现前。",
     "classicRef": "百论",
-    "relatedConcepts": ["po-xie-xian-zheng","qukong-shengjian","zhongguan","zhongdao"],
-    "relatedPersons": ["ti-po","nagarjuna"],
-    "relatedBooks": ["bailun","zhonglun"]
+    "relatedConcepts": [
+      "po-xie-xian-zheng",
+      "qukong-shengjian",
+      "zhongguan",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "ti-po",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "bailun",
+      "zhonglun"
+    ]
   },
   {
     "id": "wuyi-wunian-mowang",
@@ -8091,9 +12578,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "行者日常当回光检点：对过往是非莫留恋挂怀，对未来得失莫虚妄筹量；于当下动静处不起计度，心境自然安然泰定。",
     "classicRef": "历代法宝记",
-    "relatedConcepts": ["wu-nian","yinian-wusheng","instant-enlightenment","zixing-qingjing"],
-    "relatedPersons": ["wuxiang","baotang-wuzhu"],
-    "relatedBooks": ["lidaifabaoji","tanjing"]
+    "relatedConcepts": [
+      "wu-nian",
+      "yinian-wusheng",
+      "instant-enlightenment",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "wuxiang",
+      "baotang-wuzhu"
+    ],
+    "relatedBooks": [
+      "lidaifabaoji",
+      "tanjing"
+    ]
   },
   {
     "id": "baotang-wunian",
@@ -8107,9 +12605,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行最忌在形式规矩上装模作样。若心识仍在攀缘分别，外相再严谨亦是空花泡影；唯有自心妄念歇止，才是真报佛恩。",
     "classicRef": "历代法宝记",
-    "relatedConcepts": ["wuyi-wunian-mowang","wu-nian","non-mind"],
-    "relatedPersons": ["baotang-wuzhu"],
-    "relatedBooks": ["lidaifabaoji"]
+    "relatedConcepts": [
+      "wuyi-wunian-mowang",
+      "wu-nian",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "baotang-wuzhu"
+    ],
+    "relatedBooks": [
+      "lidaifabaoji"
+    ]
   },
   {
     "id": "ji-shi-wu-sheng",
@@ -8123,9 +12629,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "身处喧闹市井与纷繁工作之中，外在声音事务随缘来去，反观自心那个了了分明的知觉体性，未曾起灭分毫，即得当下解脱。",
     "classicRef": "历代法宝记",
-    "relatedConcepts": ["self-nature","yinian-wusheng","wu-nian"],
-    "relatedPersons": ["baotang-wuzhu"],
-    "relatedBooks": ["lidaifabaoji"]
+    "relatedConcepts": [
+      "self-nature",
+      "yinian-wusheng",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "baotang-wuzhu"
+    ],
+    "relatedBooks": [
+      "lidaifabaoji"
+    ]
   },
   {
     "id": "shiju-huoju",
@@ -8139,9 +12653,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅参公案，最忌在文字道理上寻思答案，越琢磨离道越远；须将全身心逼至山穷水尽处，蓦地翻身，当下自成活句。",
     "classicRef": "石屋清珙禅师语录",
-    "relatedConcepts": ["direct-pointing","instant-enlightenment","wu-nian"],
-    "relatedPersons": ["shiwu-qinggong","gaofeng-yuanmiao"],
-    "relatedBooks": ["shiwuyulu","gaofengyulu"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "instant-enlightenment",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "shiwu-qinggong",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "shiwuyulu",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "shanju-chan",
@@ -8155,9 +12679,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "山居精要不在外在避世，而在自心物欲执念之彻底歇止。在极简中守护纯粹，随缘任运，虽身处尘市亦能保任一片清凉林下风骨。",
     "classicRef": "石屋清珙禅师语录",
-    "relatedConcepts": ["self-nature","non-mind","dongjing-buer"],
-    "relatedPersons": ["shiwu-qinggong"],
-    "relatedBooks": ["shiwuyulu","pangjushiyulu"]
+    "relatedConcepts": [
+      "self-nature",
+      "non-mind",
+      "dongjing-buer"
+    ],
+    "relatedPersons": [
+      "shiwu-qinggong"
+    ],
+    "relatedBooks": [
+      "shiwuyulu",
+      "pangjushiyulu"
+    ]
   },
   {
     "id": "touwang-jinlin",
@@ -8171,9 +12704,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行万不可自囿于小成小安之知见泥潭，须发起大勇猛心，扫尽一切知解偏见，方得做个透网金鳞、自由人。",
     "classicRef": "石屋清珙禅师语录",
-    "relatedConcepts": ["direct-pointing","shiju-huoju"],
-    "relatedPersons": ["shiwu-qinggong","taigu-puyu"],
-    "relatedBooks": ["shiwuyulu"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "shiju-huoju"
+    ],
+    "relatedPersons": [
+      "shiwu-qinggong",
+      "taigu-puyu"
+    ],
+    "relatedBooks": [
+      "shiwuyulu"
+    ]
   },
   {
     "id": "tiaochu-tuzhe",
@@ -8187,9 +12728,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修行学人最忌在文字知见与师承名号下依草附木、作活计。唯有敢于跳出古人知解途辙，将所有依怙彻底放下，于日用动静中直见无生，方得脱体通畅、做个自在无事道人。",
     "classicRef": "西岩了慧禅师语录",
-    "relatedConcepts": ["direct-pointing","instant-enlightenment","xuan-fo-chang"],
-    "relatedPersons": ["xiyan-liaohui","wuzhun-shifan"],
-    "relatedBooks": ["xiyanyulu"]
+    "relatedConcepts": [
+      "direct-pointing",
+      "instant-enlightenment",
+      "xuan-fo-chang"
+    ],
+    "relatedPersons": [
+      "xiyan-liaohui",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "xiyanyulu"
+    ]
   },
   {
     "id": "fengtong-li-yang",
@@ -8203,9 +12753,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "参禅切莫落入常识因果与逻辑推演中算计。当直面思维死角与极狭险处，痛下苦功斩断寻思妄想，方能打破疑团、掀翻窠臼。",
     "classicRef": "西岩了慧禅师语录",
-    "relatedConcepts": ["tiaochu-tuzhe","koan","jifeng"],
-    "relatedPersons": ["xiyan-liaohui","wuzhun-shifan"],
-    "relatedBooks": ["xiyanyulu"]
+    "relatedConcepts": [
+      "tiaochu-tuzhe",
+      "koan",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "xiyan-liaohui",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "xiyanyulu"
+    ]
   },
   {
     "id": "xuan-fo-chang",
@@ -8219,9 +12778,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "修心非为增益知解功德，而是损之又损。将一切是非较量、求成求证之心彻底放空，在无求无著之平常心境中，顿了本无欠少，圆满及第。",
     "classicRef": "西岩了慧禅师语录",
-    "relatedConcepts": ["tiaochu-tuzhe","wu-wei-famen","danyuan-kongzhu-suoyou"],
-    "relatedPersons": ["xiyan-liaohui","pang-yun"],
-    "relatedBooks": ["xiyanyulu","pangjushiyulu"]
+    "relatedConcepts": [
+      "tiaochu-tuzhe",
+      "wu-wei-famen",
+      "danyuan-kongzhu-suoyou"
+    ],
+    "relatedPersons": [
+      "xiyan-liaohui",
+      "pang-yun"
+    ],
+    "relatedBooks": [
+      "xiyanyulu",
+      "pangjushiyulu"
+    ]
   },
   {
     "id": "duanqiao-huolu",
@@ -8235,9 +12804,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "现代学人修行切莫总是寻找捷径与拐杖。唯有敢于切断内心的依赖与妄想，在无阶梯处直面真实身心，方能展现独立不羁的自性妙用。",
     "classicRef": "断桥妙伦禅师语录",
-    "relatedConcepts": ["tiaochu-tuzhe","direct-pointing"],
-    "relatedPersons": ["duanqiao-miaolun","wuzhun-shifan"],
-    "relatedBooks": ["duanqiaoyulu"]
+    "relatedConcepts": [
+      "tiaochu-tuzhe",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "duanqiao-miaolun",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "duanqiaoyulu"
+    ]
   },
   {
     "id": "chiguli",
@@ -8251,11 +12828,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ],
     "guidance": "不要自轻自贱，亦不要向他人乞讨解脱。直下承担自己这颗不生不灭的清净觉心，以赤子般的真实本色面对生活的一切考验。",
     "classicRef": "断桥妙伦禅师语录",
-    "relatedConcepts": ["duanqiao-huolu","direct-pointing"],
-    "relatedPersons": ["duanqiao-miaolun"],
-    "relatedBooks": ["duanqiaoyulu"]
-  }
-,
+    "relatedConcepts": [
+      "duanqiao-huolu",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "duanqiao-miaolun"
+    ],
+    "relatedBooks": [
+      "duanqiaoyulu"
+    ]
+  },
   {
     "id": "xin-wang",
     "title": "心王 / 观心空王",
@@ -8276,7 +12859,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "non-duality"
     ],
     "relatedPersons": [
-      "fu-dashi",
+      "fudashi",
       "bodhidharma",
       "huineng"
     ],
@@ -8285,8 +12868,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "damoxinjinganxin",
       "tanjing"
     ]
-  }
-,
+  },
   {
     "id": "sheng-tie-wang",
     "title": "生铁网 / 撞破铁网",
@@ -8313,8 +12895,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "yuejianyulu",
       "xiyanyulu"
     ]
-  }
-,
+  },
   {
     "id": "shiliu-banshou",
     "title": "十六板首 / 僧堂钵位十六板首",
@@ -8343,8 +12924,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "chanyuanqinggui",
       "chixiu-baizhang-qinggui"
     ]
-  }
-,
+  },
   {
     "id": "rulaizang",
     "title": "如来藏 / 自性清净如来藏",
@@ -8377,8 +12957,7 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "tanjing",
       "dachengqixinlun"
     ]
-  }
-,
+  },
   {
     "id": "lan-ti-hu-wei-du-yao",
     "title": "揽醍醐为毒药 / 醍醐翻成毒药",
@@ -8406,32 +12985,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "huanxiyulu",
       "duanqiaoyulu",
       "xiyanyulu"
-    ]
-  },
-  {
-    "id": "san-xuan-san-yao",
-    "title": "三玄三要",
-    "category": "宗门纲要",
-    "summary": "临济宗极为重要的宗门极则与机用法度体系，由临济义玄首标其名、汾阳善昭大加弘阐发挥。“一句中须具三玄门，一玄门须具三要”。三玄者：一者体中玄（离言显体，不落语言思量知见）、二者句中玄（虽设言语而不滞名相、杀活自在）、三者玄中玄（离言绝相，妙用无碍不可思议）；三要者：一句之中有照有用、有权有实、理事无碍。三玄三要将临济宗峻烈之棒喝化为深密微细之学理骨架，示学人直向言前领旨、格外明宗。",
-    "etymology": "源自临济义玄上堂法语：“大凡演唱宗乘，一句中须具三玄门，一玄门须具三要，有权有用，汝等诸人作么生会？”汾阳善昭作颂与答问，大明其旨。",
-    "quotes": [
-      "一句中须具三玄门，一玄门须具三要。 —临济义玄",
-      "如何是第一玄？亲嘱饮光前。如何是第二玄？绝遮障。如何是第三玄？明了无私偏。 —汾阳善昭"
-    ],
-    "classicRef": "《汾阳无德禅师语录》",
-    "relatedConcepts": [
-      "linji-zongfeng",
-      "banghe"
-    ],
-    "relatedPersons": [
-      "fenyang-shanzhao",
-      "linji",
-      "shishuang-chuyuan"
-    ],
-    "relatedBooks": [
-      "fenyangyulu",
-      "shishuangchuyuan",
-      "biyanlu"
     ]
   },
   {
@@ -8525,31 +13078,6 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     ]
   },
   {
-    "id": "yun-men-san-ju",
-    "title": "云门三句",
-    "category": "宗门纲宗",
-    "summary": "云门宗根本机锋与纲宗准绳，由五代云门文偃禅师确立、北宋雪窦重显禅师发扬光大。包含三句：一曰‘函盖乾坤句’，直示本来真心包裹天地太虚，一尘一物无非真如法界，全体现成；二曰‘截断众流句’，师家以霹雳手段将学人一切意识思维、知见葛藤在电光石火间彻底斩断，不容拟议；三曰‘随波逐浪句’，宗师在得大解脱后和光同尘，随学者根机高低自由接引、杀活自在而不住自性涅槃。",
-    "classicRef": "《明觉禅师语录》",
-    "quotes": [
-      "函盖乾坤句，截断众流句，随波逐浪句。 —云门三句"
-    ],
-    "relatedConcepts": [
-      "ben-lai-mian-mu",
-      "banghe",
-      "linji-zongfeng"
-    ],
-    "relatedPersons": [
-      "xuedou-chongxian",
-      "yuanwu-keqin",
-      "hongzhi-zhengjue"
-    ],
-    "relatedBooks": [
-      "mingjueyulu",
-      "biyanlu",
-      "yunmen"
-    ]
-  },
-  {
     "id": "bei-er-bu-yong",
     "title": "备而不用",
     "category": "清规仪轨",
@@ -8606,9 +13134,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "竖起生铁脊梁，换却凡夫骨气。"
     ],
     "guidance": "做工夫不可贪恋身心安适，不可遇逆境即退。当昏沉散乱交攻时，立即抖擞精神，挺起生铁脊梁，使心志坚如金石，方能力敌生死业障。",
-    "relatedConcepts": ["ping-zuo-yi-wu", "wuzi-huatou", "yiqing", "huatou-gongfu"],
-    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao"],
-    "relatedBooks": ["xueyanyulu", "gaofengyulu"]
+    "relatedConcepts": [
+      "ping-zuo-yi-wu",
+      "wuzi-huatou",
+      "yiqing",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "xueyanyulu",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "ping-zuo-yi-wu",
@@ -8622,9 +13161,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "单单提一个无字，向未开口以前一咽咽下，便是一粒换骨灵丹。"
     ],
     "guidance": "参‘无’字切不可作有无之无会，亦不可作虚无断灭会，更不可口头滑转。必须将身心性命全数押在这个字上，屏绝万缘，唯此一念。",
-    "relatedConcepts": ["sheng-tie-ji-liang", "wuzi-huatou", "yiqing", "kumu-chan"],
-    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao", "wumen-huikai"],
-    "relatedBooks": ["xueyanyulu", "wumenguan", "gaofengyulu"]
+    "relatedConcepts": [
+      "sheng-tie-ji-liang",
+      "wuzi-huatou",
+      "yiqing",
+      "kumu-chan"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin",
+      "gaofeng-yuanmiao",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "xueyanyulu",
+      "wumenguan",
+      "gaofengyulu"
+    ]
   },
   {
     "id": "kai-quan-xian-shi",
@@ -8636,9 +13188,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "十方佛土中，唯有一乘法，无二亦无三，除佛方便说。 —《妙法莲华经》"
     ],
     "guidance": "破除一切滞留于小乘与权小法门的自满执念，令学人直契佛地、不立纤尘，是一乘圆顿宗旨的根本立足点。",
-    "relatedConcepts": ["yi-cheng-liao-yi", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
-    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi", "huineng"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+    "relatedConcepts": [
+      "yi-cheng-liao-yi",
+      "kai-shi-wu-ru",
+      "huo-zhai-bai-niu"
+    ],
+    "relatedPersons": [
+      "jiumoluoshi",
+      "tiantai-zhiyi",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing"
+    ]
   },
   {
     "id": "yi-cheng-liao-yi",
@@ -8650,9 +13213,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "唯此一事实，余二则非真。 —《妙法莲华经》"
     ],
     "guidance": "确立‘一切含生皆有佛性、悉皆成佛’的终极信心，不妄自菲薄，直下承当自心本来具足佛性。",
-    "relatedConcepts": ["kai-quan-xian-shi", "kai-shi-wu-ru", "ben-lai-mian-mu"],
-    "relatedPersons": ["jiumoluoshi", "huineng", "tiantai-zhiyi"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing", "lengyanjing"]
+    "relatedConcepts": [
+      "kai-quan-xian-shi",
+      "kai-shi-wu-ru",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "jiumoluoshi",
+      "huineng",
+      "tiantai-zhiyi"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing",
+      "lengyanjing"
+    ]
   },
   {
     "id": "kai-shi-wu-ru",
@@ -8664,9 +13239,20 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "诸佛世尊唯以一大事因缘故出现于世，所谓欲令众生开示悟入佛之知见。 —《妙法莲华经》"
     ],
     "guidance": "佛法修持之终极目的不在积聚文字知见或求外在神异，而在当下了悟自性本来清净之佛知见。",
-    "relatedConcepts": ["kai-quan-xian-shi", "xin-wu-zhuan-fa-hua", "jianxing-chengfo"],
-    "relatedPersons": ["huineng", "fada", "jiumoluoshi"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+    "relatedConcepts": [
+      "kai-quan-xian-shi",
+      "xin-wu-zhuan-fa-hua",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "fada",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing"
+    ]
   },
   {
     "id": "yi-li-ming-zhu",
@@ -8678,9 +13264,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "如人至亲友家醉酒而卧，亲友以无价宝珠系其衣里。 —《妙法莲华经》"
     ],
     "guidance": "击碎一切凡夫自卑感与外求法执，确立‘自家宝藏、不假外求’的根本禅宗自信。",
-    "relatedConcepts": ["ben-lai-mian-mu", "kai-shi-wu-ru", "yi-cheng-liao-yi"],
-    "relatedPersons": ["jiumoluoshi", "huineng"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "kai-shi-wu-ru",
+      "yi-cheng-liao-yi"
+    ],
+    "relatedPersons": [
+      "jiumoluoshi",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing"
+    ]
   },
   {
     "id": "xin-wu-zhuan-fa-hua",
@@ -8692,9 +13288,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "心迷法华转，心悟转法华。诵经久不昧，与义作仇家。 —《六祖坛经》"
     ],
     "guidance": "宗门破除‘文字障’与‘经奴’陋习的千古警策，读经须依义不依语，自心觉照方为主宰。",
-    "relatedConcepts": ["kai-shi-wu-ru", "ben-lai-mian-mu", "ordinary-mind"],
-    "relatedPersons": ["huineng", "fada"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing"]
+    "relatedConcepts": [
+      "kai-shi-wu-ru",
+      "ben-lai-mian-mu",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "fada"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing"
+    ]
   },
   {
     "id": "huo-zhai-bai-niu",
@@ -8706,11 +13312,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "乘此宝车，直至道场。 —《妙法莲华经》"
     ],
     "guidance": "明示方便与究竟的辩证统一，断除对小乘偏真涅槃的执著，直示唯有一乘方为究竟安身立命之宝。",
-    "relatedConcepts": ["kai-quan-xian-shi", "yi-cheng-liao-yi", "kai-shi-wu-ru"],
-    "relatedPersons": ["jiumoluoshi", "tiantai-zhiyi"],
-    "relatedBooks": ["miaofalianhuajing"]
-  }
-,
+    "relatedConcepts": [
+      "kai-quan-xian-shi",
+      "yi-cheng-liao-yi",
+      "kai-shi-wu-ru"
+    ],
+    "relatedPersons": [
+      "jiumoluoshi",
+      "tiantai-zhiyi"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing"
+    ]
+  },
   {
     "id": "nian-hua-wei-xiao",
     "title": "拈花微笑",
@@ -8721,37 +13335,21 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "吾有正法眼藏、涅槃妙心、实相无相、微妙正法，不立文字、教外别传，付嘱于汝！ —《传法正宗记》"
     ],
     "guidance": "悟此者不离当下六根见闻知觉，体会灵明绝待之自性觉照；不可于花与笑上妄生拟测知解。",
-    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "mind-transmission"],
-    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
-    "relatedBooks": ["chuanfazhengzongji", "wumenguan", "tanjing"]
-  },
-  {
-    "id": "zheng-fa-yan-zang",
-    "title": "正法眼藏",
-    "category": "教理",
-    "classicRef": "《传法正宗记》卷一《始祖释迦如来表》",
-    "summary": "诸佛如来清净无染之如来藏心体，彻照诸法实相之第一慧眼。‘正法’者纯一清净实相，‘眼’者彻照大千之智慧，‘藏’者包涵无尽功德宝藏。宗门所密传者唯此一心，非文字法相所能穷尽，代代祖师以己心印彼心，使正法眼藏常明不晦。",
-    "quotes": [
-      "世尊最后以正法眼藏付大迦叶，令别行于世，其所传者盖心法也。 —《传法正宗记》"
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "zhengfa-yancang",
+      "mind-transmission"
     ],
-    "guidance": "学者当求自心真眼洞开，彻见本来，切忌把公案语句、名相葛藤当成正法眼藏。",
-    "relatedConcepts": ["chuan-fa-zheng-zong", "nian-hua-wei-xiao", "ben-lai-mian-mu"],
-    "relatedPersons": ["qisong", "huineng"],
-    "relatedBooks": ["chuanfazhengzongji", "tanjing"]
-  },
-  {
-    "id": "yi-hua-kai-wu-ye",
-    "title": "一花开五叶",
-    "category": "境界",
-    "classicRef": "《传法正宗记》卷六《第二十八祖菩提达磨尊者传》",
-    "summary": "菩提达摩西来传心于二祖慧可时所留预记传法偈。‘一花’指达摩所传之一乘自性清净禅，‘五叶’指震旦禅宗由六祖惠能以下繁衍发展成沩仰、临济、曹洞、云门、法眼五家宗风。偈云‘结果自然成’，预言宗门心法将在华夏大地盛开大放、利乐无尽有情。",
-    "quotes": [
-      "吾本来兹土，传法救迷情；一花开五叶，结果自然成。 —《传法正宗记》"
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
     ],
-    "guidance": "体会宗门从一味真如自性开显万千大机大用之生机活泼，明白各宗家风虽异而同出一源。",
-    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "ordinary-mind"],
-    "relatedPersons": ["bodhidharma", "huike", "huineng", "qisong"],
-    "relatedBooks": ["chuanfazhengzongji", "tanjing"]
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "wumenguan",
+      "tanjing"
+    ]
   },
   {
     "id": "mo-zhuan-cheng-jing",
@@ -8763,11 +13361,22 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "磨砖既不成镜，坐禅岂得成佛？如牛驾车，车若不行，打车即是，打牛即是？ —《传法正宗记》"
     ],
     "guidance": "修行切忌贪着枯寂呆坐，当于起心动念处直体心源，活泼泼体现本来佛性大用。",
-    "relatedConcepts": ["ordinary-mind", "mind-is-buddha", "ben-lai-mian-mu"],
-    "relatedPersons": ["huairang", "mazu", "qisong"],
-    "relatedBooks": ["chuanfazhengzongji", "jingdechuandenglu", "wumenguan"]
-  }
-,
+    "relatedConcepts": [
+      "ordinary-mind",
+      "mind-is-buddha",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "huairang",
+      "mazu",
+      "qisong"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "jingdechuandenglu",
+      "wumenguan"
+    ]
+  },
   {
     "id": "zi-men-jing-ce",
     "title": "缁门警策",
@@ -8778,9 +13387,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "夫出家者，发足超方，心形异俗。绍隆圣种，震慑魔军。 —《缁门警训》"
     ],
     "guidance": "学者日常当常读警策，在顺逆境界中严防放逸与盗名欺世，立定向上志气。",
-    "relatedConcepts": ["fa-zu-chao-fang", "wu-xue-shi-men", "ordinary-mind"],
-    "relatedPersons": ["weishan-lingyou", "rujin"],
-    "relatedBooks": ["zimenjingxun", "weishanyulu"]
+    "relatedConcepts": [
+      "fa-zu-chao-fang",
+      "wu-xue-shi-men",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "rujin"
+    ],
+    "relatedBooks": [
+      "zimenjingxun",
+      "weishanyulu"
+    ]
   },
   {
     "id": "wu-xue-shi-men",
@@ -8792,9 +13411,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "不折我无以学，不择师无以法，不观心无以通。 —《缁门警训》"
     ],
     "guidance": "求道者不可徒恃小慧自矜，须摧伏慢幢，择明师、亲良友，内外兼修，由观心直契实相。",
-    "relatedConcepts": ["zi-men-jing-ce", "fa-zu-chao-fang"],
-    "relatedPersons": ["rujin"],
-    "relatedBooks": ["zimenjingxun"]
+    "relatedConcepts": [
+      "zi-men-jing-ce",
+      "fa-zu-chao-fang"
+    ],
+    "relatedPersons": [
+      "rujin"
+    ],
+    "relatedBooks": [
+      "zimenjingxun"
+    ]
   },
   {
     "id": "mo-dai-lao-lai",
@@ -8806,9 +13432,16 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "莫待老来方学道，孤坟多是少年人！一口气不来，便成异世。 —《缁门警训》"
     ],
     "guidance": "以无常逼切警醒当下身心，切莫寄望于明日或暮年，当下承当方是不死法身。",
-    "relatedConcepts": ["zi-men-jing-ce", "ben-lai-mian-mu"],
-    "relatedPersons": ["rujin"],
-    "relatedBooks": ["zimenjingxun"]
+    "relatedConcepts": [
+      "zi-men-jing-ce",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "rujin"
+    ],
+    "relatedBooks": [
+      "zimenjingxun"
+    ]
   },
   {
     "id": "fa-zu-chao-fang",
@@ -8820,20 +13453,36 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "发足超方，心形异俗。顶戴梵天，下沉苦海。 —《缁门警训》"
     ],
     "guidance": "在世不为世俗风浪所转，于喧扰浊世中常怀拔济一切苦难之清净大愿。",
-    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"],
-    "relatedPersons": ["weishan-lingyou", "rujin"],
-    "relatedBooks": ["zimenjingxun", "weishanyulu"]
-  }
-,
+    "relatedConcepts": [
+      "zi-men-jing-ce",
+      "wu-xue-shi-men"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "rujin"
+    ],
+    "relatedBooks": [
+      "zimenjingxun",
+      "weishanyulu"
+    ]
+  },
   {
     "id": "mu-zha-geng",
     "title": "木札羹",
     "category": "禅门公案隐喻",
     "summary": "木札羹原指以碎木片烹煮之苦涩羹汤。禅门用以比喻宗师施设之毫无情识滋味、坚硬如铁、极难咬嚼吞咽之本分工夫与向上机关。学人唯有抛弃一切知解算计，奋不顾身一口咬破，方能亲证万法全现之大解脱真味。",
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["jin-ding-zi", "ding-men-yi-yan", "huo-li-wu-gui"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
+    "relatedConcepts": [
+      "jin-ding-zi",
+      "ding-men-yi-yan",
+      "huo-li-wu-gui"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
   },
   {
     "id": "tuo-zai-fo-shu",
@@ -8841,9 +13490,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "心性正见",
     "summary": "指学人将自心局限于‘成佛作祖、修因证果’之阶级名相与圣凡对待之中。禅门宗匠斥之为‘金裹烂泥团’，强调宗门根本极则在于‘超佛越祖’，必须连‘佛’与‘圣’的清净执着亦彻底扫荡，方得净裸裸赤洒洒之真正解脱。",
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["bu-luo-si-wei", "wu-nian", "ding-men-yi-yan"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
+    "relatedConcepts": [
+      "bu-luo-si-wei",
+      "wu-nian",
+      "ding-men-yi-yan"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
   },
   {
     "id": "huo-li-wu-gui",
@@ -8851,9 +13508,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "绝后复苏妙境",
     "summary": "语出希叟绍昙示众名句‘心路绝，火里乌龟头戴雪’。乌龟居水而生烈火，头戴冷雪，比喻行者在分别情识彻底死尽、心智道路断绝的万仞绝境之中，所显现之水火交融、大死大活、超越一切世间常情知见的不可思议本地风光与大机大用。",
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["mu-zha-geng", "bu-luo-si-wei", "tou-xin-wei-si"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
+    "relatedConcepts": [
+      "mu-zha-geng",
+      "bu-luo-si-wei",
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
   },
   {
     "id": "bu-luo-si-wei",
@@ -8861,20 +13526,36 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "参究宗眼",
     "summary": "指宗门参究直探一念未生前之现量本觉，不落入心识分别、思量推度与语言意识之葛藤窠臼中。希叟绍昙示众常诫‘觌面当机，是非俱刬，不落思惟透险崖’，唯有刹那截断前后际断之计较，方得顶门金刚正眼洞开。",
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["ding-men-yi-yan", "wu-nian", "yinian-wusheng"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
-  }
-,
+    "relatedConcepts": [
+      "ding-men-yi-yan",
+      "wu-nian",
+      "yinian-wusheng"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
+  },
   {
     "id": "ban-ruo-deng",
     "title": "般若灯",
     "category": "中观般若妙慧",
     "summary": "以无分别智寂照二边之胜义智炬。序文言‘借灯为名者，无分别智有寂照之功也’。灯体本明，自照照他，照破无始无明惑暗而不著能照之相；比喻行者离言契入诸法实相，寂而常照、照而常寂之自性灵光。",
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["zi-xu-pai", "xi-mie-xi-lun", "kongxing"],
-    "relatedPersons": ["qingbian", "nagarjuna"],
-    "relatedBooks": ["banruodenglunshi"]
+    "relatedConcepts": [
+      "zi-xu-pai",
+      "xi-mie-xi-lun",
+      "kongxing"
+    ],
+    "relatedPersons": [
+      "qingbian",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
   },
   {
     "id": "zi-xu-pai",
@@ -8882,9 +13563,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "中观宗派纲宗",
     "summary": "古印度大乘中观两大流派之一，由清辩菩萨所开创。主张在世俗谛中可以运用严密因明比量自立宗因喻三支，以自立量正面破除外道与实事师执著，证成诸法无自性空；在胜义谛中则超绝一切能所建立，归于不生不灭之法性寂灭。",
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["ban-ruo-deng", "jia-ming-shi-she", "erdi"],
-    "relatedPersons": ["qingbian"],
-    "relatedBooks": ["banruodenglunshi"]
+    "relatedConcepts": [
+      "ban-ruo-deng",
+      "jia-ming-shi-she",
+      "erdi"
+    ],
+    "relatedPersons": [
+      "qingbian"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
   },
   {
     "id": "jia-ming-shi-she",
@@ -8892,9 +13581,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "二谛中道义理",
     "summary": "指世间万法虽无固定自性，但依缘起因缘可以施设名字言说以指陈事理。经论云‘亦为是假名，亦是中道义’。禅门借假名以指见自性月，既不坏世俗因果法相，亦不落实法自性执著，圆通二谛而不悖中道。",
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["zi-xu-pai", "erdi", "kongxing"],
-    "relatedPersons": ["qingbian", "nagarjuna"],
-    "relatedBooks": ["banruodenglunshi"]
+    "relatedConcepts": [
+      "zi-xu-pai",
+      "erdi",
+      "kongxing"
+    ],
+    "relatedPersons": [
+      "qingbian",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
   },
   {
     "id": "xi-mie-xi-lun",
@@ -8902,20 +13600,36 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "究竟解脱涅槃",
     "summary": "指息灭一切能所分别、四句百非与常断一异等名言执著。龙树开篇赞佛‘能说是因缘，善灭诸戏论’。当言语道断、心行处灭之时，自证自知不随他缘，如虚空般无有障蔽，即是无上清净法界大涅槃。",
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["ban-ruo-deng", "kongxing", "bu-luo-si-wei"],
-    "relatedPersons": ["qingbian", "nagarjuna"],
-    "relatedBooks": ["banruodenglunshi"]
-  }
-,
+    "relatedConcepts": [
+      "ban-ruo-deng",
+      "kongxing",
+      "bu-luo-si-wei"
+    ],
+    "relatedPersons": [
+      "qingbian",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
+  },
   {
     "id": "tou-san-guan",
     "title": "透三关",
     "category": "禅宗修证阶梯",
     "summary": "禅门悟道修证之三大关隘纲宗，由雍正帝于《御选语录总序》中集大成阐扬。分为‘初关破本参’、‘透重关大死大活’与‘末后牢关无透而透’。三关步步踏实，由析相入体、从体起用直至体用不二、归于无修无证，为禅宗极具权威的修证指南。",
     "classicRef": "御选语录",
-    "relatedConcepts": ["chu-guan-po-can", "chong-guan-da-si-da-huo", "lao-guan-mo-hou"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "chu-guan-po-can",
+      "chong-guan-da-si-da-huo",
+      "lao-guan-mo-hou"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "chu-guan-po-can",
@@ -8923,9 +13637,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅宗初悟关隘",
     "summary": "透三关之第一关。行者乍登解脱门，识破七尺肉身地水火风假合，顿觉山河大地与十方虚空一时消殒，前后际断，不挂一丝，亲见本来面目。此位脱却情识生死之缚，但尚滞于空寂境界，故须进一步参透重关。",
     "classicRef": "御选语录",
-    "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo", "wu-nian"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "chong-guan-da-si-da-huo",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "chong-guan-da-si-da-huo",
@@ -8933,9 +13655,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅宗透关妙境",
     "summary": "透三关之第二关。破本参后向上一着，大死一番后彻底复苏。乃知山依然是山、河依然是河，烦恼无明当下皆是菩提，无一物非我身、无一物是我己；境智融通，色空无碍，于万丈红尘中获得大自在。",
     "classicRef": "御选语录",
-    "relatedConcepts": ["tou-san-guan", "chu-guan-po-can", "lao-guan-mo-hou", "tou-xin-wei-si"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "chu-guan-po-can",
+      "lao-guan-mo-hou",
+      "tou-xin-wei-si"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "lao-guan-mo-hou",
@@ -8943,9 +13674,17 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "禅宗极则圆满",
     "summary": "透三关之最后究竟牢关。透重关后履践纯熟，家舍即在途中，途中不离家舍；寂即是照，照即是寂，无生故长生，无灭故不灭。到此虽云透三关，而实无透者，如来如是，我亦如是，圆证无上清净法界大圆镜智。",
     "classicRef": "御选语录",
-    "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo", "xi-mie-xi-lun"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "chong-guan-da-si-da-huo",
+      "xi-mie-xi-lun"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "sha-ren-dao-huo-ren-ju",
@@ -8953,9 +13692,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "见性体悟",
     "summary": "禅宗宗门勘验学人的两翼大机大用。杀人刀指斩断学人一切思维情识、知见情执的金刚利刃；活人句指启发学人自性起死回生、展现本具圆明灵觉的无上妙用。宗门宗师非双全二者不能随方解缚、开人天眼目。",
     "classicRef": "续传灯录",
-    "relatedConcepts": ["tou-san-guan", "chong-guan-da-si-da-huo"],
-    "relatedPersons": ["yexian-guisheng", "shoushan-xingnian", "yuanji-juding"],
-    "relatedBooks": ["xuchuandenglu", "wudenghuiyuan"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "chong-guan-da-si-da-huo"
+    ],
+    "relatedPersons": [
+      "yexian-guisheng",
+      "shoushan-xingnian",
+      "yuanji-juding"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "wudenghuiyuan"
+    ]
   },
   {
     "id": "tie-suan-xian",
@@ -8963,9 +13712,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "公案机锋",
     "summary": "禅林中指无可思量拟议、咬嚼不烂的宗门绝相境界。雪窦重显等祖师常用以比喻如生铁铸成之酸馅，迫使学人绝却一切依文解义与葛藤卜度，死尽偷心而后大苏。",
     "classicRef": "续传灯录",
-    "relatedConcepts": ["sha-ren-dao-huo-ren-ju", "wu-feng-ta-yang"],
-    "relatedPersons": ["xuedou-chongxian", "yuanwu-keqin"],
-    "relatedBooks": ["xuchuandenglu", "biyanlu"]
+    "relatedConcepts": [
+      "sha-ren-dao-huo-ren-ju",
+      "wu-feng-ta-yang"
+    ],
+    "relatedPersons": [
+      "xuedou-chongxian",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "biyanlu"
+    ]
   },
   {
     "id": "wu-feng-ta-yang",
@@ -8973,9 +13731,18 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "修持境界",
     "summary": "喻清净法身圆融无相、浑然一体、了无分别纤缝痕迹的极则境界。灭翁文礼临终示寂“尽力画不出”，直指本自具足之自性金刚塔非世俗心量图样所能摹写描画。",
     "classicRef": "续传灯录",
-    "relatedConcepts": ["tie-suan-xian", "sekong-buer"],
-    "relatedPersons": ["yuanji-juding", "hongzhi-zhengjue"],
-    "relatedBooks": ["xuchuandenglu", "jingdechuandenglu"]
+    "relatedConcepts": [
+      "tie-suan-xian",
+      "sekong-buer"
+    ],
+    "relatedPersons": [
+      "yuanji-juding",
+      "hongzhi-zhengjue"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "jingdechuandenglu"
+    ]
   },
   {
     "id": "deng-shi-chuan-cheng",
@@ -8983,9 +13750,19 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
     "category": "宗派源流",
     "summary": "禅宗以心印心、如以一灯燃百千灯的法脉传衍体系。自西天二十八祖、东土六祖以迄宋代五家七宗，通过《景德传灯录》、《续传灯录》、《五灯会元》等正统灯史，确立了法脉传承的历史秩序与宗门大义。",
     "classicRef": "续传灯录",
-    "relatedConcepts": ["sha-ren-dao-huo-ren-ju", "jiaowai-biechuan"],
-    "relatedPersons": ["daoyuan", "yuanji-juding", "shoushan-xingnian"],
-    "relatedBooks": ["xuchuandenglu", "jingdechuandenglu", "wudenghuiyuan"]
-  },
+    "relatedConcepts": [
+      "sha-ren-dao-huo-ren-ju",
+      "jiaowai-biechuan"
+    ],
+    "relatedPersons": [
+      "daoyuan",
+      "yuanji-juding",
+      "shoushan-xingnian"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "jingdechuandenglu",
+      "wudenghuiyuan"
+    ]
+  }
 ];
-

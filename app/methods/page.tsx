@@ -5,7 +5,7 @@ import { ZEN_METHODS } from '@/lib/taxonomy';
 
 export const metadata: Metadata = {
   title: "禅宗修行法门 · 历代修持宗纲",
-  description: `禅宗${STATS.methods}种修持法门——念佛禅、棒喝、机锋、看话头、默照禅、坐禅仪等，禅门实修方便与用功方法详解。`,
+  description: `禅宗知识库收录${STATS.methods}种修持法门——涵盖看话头、默照禅、坐禅仪、一行三昧、棒喝机锋、五位君臣与日常观心等禅门实修步骤与防偏指南。`,
   alternates: {
     canonical: '/methods',
     languages: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: '修持法门 | 禅宗知识库 ChanZong.space',
     description: `禅宗${STATS.methods}种修持法门——禅门实修方便与用功方法详解。`,
     url: 'https://chanzong.space/methods',
-    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
+    images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

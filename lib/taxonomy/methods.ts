@@ -1,4 +1,4 @@
-import { MethodItem } from './types';
+import type { MethodItem } from './types';
 
 export const ZEN_METHODS: MethodItem[] = [
   {
@@ -12,16 +12,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "念念相续，不令间断，念成一片",
       "能念之心与所念之佛忽然脱落，能所双亡",
       "于无念中灵然不昧，亲见自性弥陀"
-],
+    ],
     "pitfalls": [
       "口念心不念，有口无心，念成空响",
       "心外求佛，希求感应，背觉合尘",
       "得少为足，以散心为功夫，不肯深入"
-],
+    ],
     "classicRef": "文殊说般若经 · 入道安心要方便法门",
-    "relatedConcepts": ["samadhi","self-nature"],
-    "relatedPersons": ["daoxin"],
-    "relatedBooks": ["wenshu"]
+    "relatedConcepts": [
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "daoxin"
+    ],
+    "relatedBooks": [
+      "wenshu"
+    ]
   },
   {
     "id": "banghe",
@@ -34,16 +41,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "拟议思量之际，棒喝齐施，截断众流",
       "学人情识顿息，迥脱根尘",
       "若根器猛利，于痛处豁然契悟；否则更参"
-],
+    ],
     "pitfalls": [
       "未得宗师眼目而乱施棒喝，成狂禅恶习",
       "学人以挨棒为光荣，故作姿态，尽是偷心",
       "将棒喝会作玄妙道理，错过当下"
-],
+    ],
     "classicRef": "临济慧照禅师语录 · 无门关",
-    "relatedConcepts": ["beyond-words","direct-pointing"],
-    "relatedPersons": ["linji","huangbo","baizhang"],
-    "relatedBooks": ["linji","huangbo"]
+    "relatedConcepts": [
+      "beyond-words",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "linji",
+      "huangbo",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "linji",
+      "huangbo"
+    ]
   },
   {
     "id": "daily-zen",
@@ -56,16 +73,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "遇事则应，事去即空，如镜照物",
       "于顺逆诸境中保持平常心，不欣不厌",
       "久久纯熟，行住坐卧无非妙道"
-],
+    ],
     "pitfalls": [
       "错认放逸为平常心，纵情造业",
       "执静厌闹，离事觅心，打成两截",
       "以“日用即道”为口头禅，无真实受用"
-],
+    ],
     "classicRef": "马祖道一禅师语录 · 顿悟入道要门论",
-    "relatedConcepts": ["ordinary-mind","no-abiding"],
-    "relatedPersons": ["mazu","dazhu-huihai","baizhang"],
-    "relatedBooks": ["chixiu-baizhang-qinggui"]
+    "relatedConcepts": [
+      "ordinary-mind",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "mazu",
+      "dazhu-huihai",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "chixiu-baizhang-qinggui"
+    ]
   },
   {
     "id": "jifeng",
@@ -78,16 +104,27 @@ export const ZEN_METHODS: MethodItem[] = [
       "学人若拟议思量，早落第二义",
       "于言下回光返照，瞥见本分",
       "师资道合，啐啄同时，相与印可"
-],
+    ],
     "pitfalls": [
       "以世智辩聪斗机锋，增长我慢",
       "背却本分，专学古人语，成鹦鹉禅",
       "未悟言悟，以机锋掩盖未证，误己误人"
-],
+    ],
     "classicRef": "五灯会元 · 赵州禅师语录",
-    "relatedConcepts": ["beyond-words","koan"],
-    "relatedPersons": ["zhaozhou","linji","mazu"],
-    "relatedBooks": ["mazu","huangbo","dunwu"]
+    "relatedConcepts": [
+      "beyond-words",
+      "koan"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "linji",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "mazu",
+      "huangbo",
+      "dunwu"
+    ]
   },
   {
     "id": "wumen",
@@ -100,16 +137,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "疑情成片，行不知行，坐不知坐",
       "功夫纯熟，能所双忘，漆桶忽破",
       "彻见本来，方知“无”字本是闲家具"
-],
+    ],
     "pitfalls": [
       "将“无”字作空无领会，堕入无记",
       "等待开悟，存心求悟，悟之一字反成障碍",
       "疑情未成而中途改换话头，浅尝辄止"
-],
+    ],
     "classicRef": "无门关第一则 · 大慧普觉禅师语录",
-    "relatedConcepts": ["koan","buddha-nature"],
-    "relatedPersons": ["zhaozhou","chinul","wumen-huikai"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "koan",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "chinul",
+      "wumen-huikai"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "four-practices",
@@ -122,15 +168,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "随缘行：得失从缘，心无增减，喜风不动，冥顺于道",
       "无所求行：了达三界无安犹如火宅，息想无求，无求乃乐",
       "称法行：称性净之理而行六度，行无所行，不倚不着"
-],
+    ],
     "pitfalls": [
       "只重理入而废行入，沦为口头禅",
       "受苦时生冤诉心，逢乐时生贪着心，皆与道相违",
       "以“无所求”为借口消极怠惰，错会达摩本意"
-],
+    ],
     "classicRef": "菩提达摩大师入道四行观",
-    "relatedConcepts": ["emptiness","non-duality"],
-    "relatedPersons": ["bodhidharma"],
+    "relatedConcepts": [
+      "emptiness",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
     "relatedBooks": []
   },
   {
@@ -144,16 +195,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "灵然独照，照而无照，不堕昏沉无记",
       "动静一如，行住坐卧绵密保任",
       "情尘脱落，本觉现前，默照同时"
-],
+    ],
     "pitfalls": [
       "堕入无记空寂，成死水不藏龙",
       "执静厌动，离座即失，动静打成两截",
       "以“休歇”为放任，不肯真用功"
-],
+    ],
     "classicRef": "宏智正觉《默照铭》",
-    "relatedConcepts": ["non-duality","samadhi","non-mind"],
-    "relatedPersons": ["dongshan","yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "non-duality",
+      "samadhi",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "dongshan",
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "kanhuatou",
@@ -166,16 +226,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "疑情成片，如丧考妣，放舍不下",
       "时节因缘至，疑团粉碎，彻见本来面目",
       "悟后保任，历境验心，方得受用"
-],
+    ],
     "pitfalls": [
       "以意识心揣摩话头义解，成文字游戏",
       "无真疑情，只图速悟，尽是偷心",
       "把话头当咒语念，有口无心，疑情不起"
-],
+    ],
     "classicRef": "大慧普觉禅师语录",
-    "relatedConcepts": ["koan","beyond-words","instant-enlightenment"],
-    "relatedPersons": ["chinul","zhaozhou"],
-    "relatedBooks": ["changuancejin","boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "koan",
+      "beyond-words",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "chinul",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "changuancejin",
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "yixing-sanmei-practice",
@@ -187,14 +257,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·四威仪照：行住坐卧四威仪中，绵密观照自心，不令攀缘走失。",
       "第三步·不住法相：口说直心而心不行谄曲，行于世间而不着世间之相。",
       "第四步·成一行定：动静一如，事理圆融，一切处皆是清净解脱道场。"
-],
+    ],
     "pitfalls": [
       "口谈直心而心怀诡诈，把鲁莽无礼误认作直心。学人当依正法眼藏老实参究，不可自欺欺人。",
       "执着于常坐不动才算一行三昧，为外相所缚。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "文殊说般若经 / 六祖坛经 · 定慧品",
-    "relatedConcepts": ["yixing-sanmei","no-abiding"],
-    "relatedPersons": ["daoxin","huineng"],
+    "relatedConcepts": [
+      "yixing-sanmei",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "daoxin",
+      "huineng"
+    ],
     "relatedBooks": []
   },
   {
@@ -207,15 +283,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·微细观照：不随外境迁流，单单守住当下一念虚明灵知之体。",
       "第三步·妄念自消：妄念起时，不迎不拒，知其虚妄，但守真心，妄念即灭。",
       "第四步·体性自现：久久纯熟，能所双亡，自心佛性犹如云开日出，遍照无碍。"
-],
+    ],
     "pitfalls": [
       "用力过猛强行压念，导致胸闷头昏、神思劳损。学人当依正法眼藏老实参究，不可自欺欺人。",
       "误将无记昏睡认作真心显现，失却灵明觉照。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "五祖弘忍 · 最上乘论",
-    "relatedConcepts": ["self-nature","non-mind"],
-    "relatedPersons": ["hongren"],
-    "relatedBooks": ["zuishangcheng"]
+    "relatedConcepts": [
+      "self-nature",
+      "non-mind"
+    ],
+    "relatedPersons": [
+      "hongren"
+    ],
+    "relatedBooks": [
+      "zuishangcheng"
+    ]
   },
   {
     "id": "guan-zizai-banya-practice",
@@ -227,14 +310,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·深照皆空：以甚深智慧照了五蕴生灭无常，缘起性空，无独立自性。",
       "第三步·度一切苦：照破身见与执取，苦乐爱憎自然脱落，苦厄当下消融。",
       "第四步·自在解脱：心无挂碍，无挂碍故无有恐怖，远离颠倒梦想，究竟涅槃。"
-],
+    ],
     "pitfalls": [
       "口头诵念“五蕴皆空”，遇逆境挫折时依旧执着身心受苦。",
       "落入恶取空见，执空而废因果与万行。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "般若波罗蜜多心经",
-    "relatedConcepts": ["wu-yun-jie-kong","se-ji-shi-kong","wu-gua-ai"],
-    "relatedPersons": ["guanzizai"],
+    "relatedConcepts": [
+      "wu-yun-jie-kong",
+      "se-ji-shi-kong",
+      "wu-gua-ai"
+    ],
+    "relatedPersons": [
+      "guanzizai"
+    ],
     "relatedBooks": []
   },
   {
@@ -247,15 +336,29 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·修三摩钵提：以菩提慧观照世间一切如幻，起大悲幻化度化众生。",
       "第三步·修禅那寂灭：远离静相与幻化二相，心体寂灭，入于离相妙觉。",
       "第四步·圆修二十五轮：随根基与因缘，单修或交错兼修三种清净观门。"
-],
+    ],
     "pitfalls": [
       "修奢摩他时执着于静相，视动乱为障碍，无法动静一如。",
       "修三摩钵提时随幻境流转，反为幻化情尘所转。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大方广圆觉修多罗了义经",
-    "relatedConcepts": ["zhi-huan-ji-li","yuanjue-qingjing-xinxing","si-bing"],
-    "relatedPersons": ["puxian-yuanjue","fotuoduoluo"],
-    "relatedBooks": ["zhengdaoge","chanlinbaoxun","lengyanjing","weimojiejing","huanwuyulu","zuochanyi"]
+    "relatedConcepts": [
+      "zhi-huan-ji-li",
+      "yuanjue-qingjing-xinxing",
+      "si-bing"
+    ],
+    "relatedPersons": [
+      "puxian-yuanjue",
+      "fotuoduoluo"
+    ],
+    "relatedBooks": [
+      "zhengdaoge",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "huanwuyulu",
+      "zuochanyi"
+    ]
   },
   {
     "id": "chanlin-jingce-practice",
@@ -267,15 +370,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·取法高贤：常读祖师传记与苦行法语，以内省惭愧心对治散乱。",
       "第三步·严立律仪：在丛林或日常中端正起卧作息，遵守规绳，不放逸偷安。",
       "第四步·勇猛精进：如临深渊、如履薄冰，绵密提撕参究，直待大事明了。"
-],
+    ],
     "pitfalls": [
       "偏执苦行外相折磨肉体，而未在心地上真正断除攀缘妄想。",
       "容易因急躁求功而产生虚火上炎，导致情绪躁动不安。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅关策进 / 禅林宝训",
-    "relatedConcepts": ["tou-xin-wei-si","de-hua-li-zhi"],
-    "relatedPersons": ["huanglong-huinan","yangqi-fanghui"],
-    "relatedBooks": ["changuancejin","huanwuyulu"]
+    "relatedConcepts": [
+      "tou-xin-wei-si",
+      "de-hua-li-zhi"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "changuancejin",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "er-gen-yuan-tong-practice",
@@ -287,14 +399,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·动静不生：声起是动、声灭是静，能闻之性于动静二相中湛然常住。",
       "第三步·闻尽觉空：闻与所闻皆尽，觉与所觉皆空，超脱能所对立之局限。",
       "第四步·寂灭现前：空与所空俱灭，生灭既灭，寂灭涅槃与无尽妙用同时现前。"
-],
+    ],
     "pitfalls": [
       "误将耳朵捕捉声音的生理机能当作闻性，在声尘上辨别高低。",
       "在“入流”过程中强求无声境界，排斥环境正常声响。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大佛顶首楞严经 · 卷五",
-    "relatedConcepts": ["ba-huan-bian-jian","self-nature","emptiness"],
-    "relatedPersons": ["guanzizai","anan"],
+    "relatedConcepts": [
+      "ba-huan-bian-jian",
+      "self-nature",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "guanzizai",
+      "anan"
+    ],
     "relatedBooks": []
   },
   {
@@ -307,15 +426,32 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·照了融通：观生灭无二、垢净同体、烦恼即菩提、生死即涅槃。",
       "第三步·离诸戏论：不落言诠与概念名相，于万法之中体认平等不二之实相。",
       "第四步·默然契入：言语道断，心行处灭，如维摩一默，如雷贯耳，得大自在。"
-],
+    ],
     "pitfalls": [
       "用意识逻辑在口头上辩论“不二”，内心却处处生起二元爱憎分别。",
       "将不二法门理解为是非不分、善恶同流，堕于邪见。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "维摩诘所说经 · 入不二法门品",
-    "relatedConcepts": ["xin-jing-ji-fo-tu-jing","ru-bu-er-fa-men"],
-    "relatedPersons": ["weimojie","wenshu-yuanjue"],
-    "relatedBooks": ["anxin","zuishangcheng","tanjing","zhengdaoge","dunwu","chanlinbaoxun","dongshanyulu","huanwuxinyao","huanwuyulu","zhaozhouyulu"]
+    "relatedConcepts": [
+      "xin-jing-ji-fo-tu-jing",
+      "ru-bu-er-fa-men"
+    ],
+    "relatedPersons": [
+      "weimojie",
+      "wenshu-yuanjue"
+    ],
+    "relatedBooks": [
+      "anxin",
+      "zuishangcheng",
+      "tanjing",
+      "zhengdaoge",
+      "dunwu",
+      "chanlinbaoxun",
+      "dongshanyulu",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "zhiguan-dazuo",
@@ -331,16 +467,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "只管打坐——坐禅本身即是修行，即是证悟，非因坐而得悟",
       "坐中一切境界——昏沉、散乱、轻安、空明——皆不迎不拒",
       "下座后亦保持“只管”之心态——行住坐卧皆是打坐"
-],
+    ],
     "pitfalls": [
       "落枯木死灰——只默不照，沉空滞寂，落入无记",
       "落昏沉睡眠——不提精神，浑浑噩噩，非坐禅而是睡觉",
       "落无记空——以“什么都不想”为究竟，不知默中有照",
       "求境界——暗中期待开悟或特殊体验，失“只管”之旨"
-],
+    ],
     "classicRef": "《默照铭》《普劝坐禅仪》《正法眼藏》",
-    "relatedConcepts": ["mozhao-chan-concept","samadhi","self-nature"],
-    "relatedPersons": ["hongzhi-zhengjue","daoyuan","changlu-zongze"],
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "samadhi",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "hongzhi-zhengjue",
+      "daoyuan",
+      "changlu-zongze"
+    ],
     "relatedBooks": []
   },
   {
@@ -356,18 +500,28 @@ export const ZEN_METHODS: MethodItem[] = [
       "逼至山穷水尽——一切思量分别统统用不上，意识断流",
       "疑情爆破——忽然如梦初醒、如冰消融，豁然大悟",
       "悟后保任——悟后仍须保任磨炼，非一悟便了"
-],
+    ],
     "pitfalls": [
       "将话头当口头念——念来念去，无异念佛，无参究之力",
       "以意识分析——用逻辑推理解会公案，成知见禅",
       "疑情不起——无“不明白”之力量，参究无力",
       "急求开悟——越急越远，须从容自然，如春雨润物",
       "落昏沉——参至沉闷时落入睡眠，须提精神"
-],
+    ],
     "classicRef": "《大慧语录》《无门关》《博山参禅警语》",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","canjiu"],
-    "relatedPersons": ["dahui-zonggao","wumen-huikai","boshan-yuanlai"],
-    "relatedBooks": ["changuancejin"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "canjiu"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "wumen-huikai",
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "changuancejin"
+    ]
   },
   {
     "id": "muniu-tuxi",
@@ -385,15 +539,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "人牛俱忘/独照——理事俱寂，寂而常照",
       "返本还源/双泯——归无所得，本来如是",
       "入廛垂手——悟后度生，和光同尘"
-],
+    ],
     "pitfalls": [
       "执着次第——十牛图为方便施设，非实有阶次",
       "停滞一境——于某一阶段生满足，不知向上",
       "以图代修——研究十牛图之理论而不实修"
-],
+    ],
     "classicRef": "《十牛图颂》《普明十牛图颂》",
-    "relatedConcepts": ["self-nature","ordinary-mind","dunwu-jianxiu"],
-    "relatedPersons": ["kuoan","puming"],
+    "relatedConcepts": [
+      "self-nature",
+      "ordinary-mind",
+      "dunwu-jianxiu"
+    ],
+    "relatedPersons": [
+      "kuoan",
+      "puming"
+    ],
     "relatedBooks": []
   },
   {
@@ -408,17 +569,31 @@ export const ZEN_METHODS: MethodItem[] = [
       "接受勘验——宗师或肯或否，或棒或喝，皆须虚心接受",
       "反复参访——一处参毕再往他处，广参博访，磨砺见地",
       "择师印可——至确信某宗师与己有缘，依之修行，得其印可"
-],
+    ],
     "pitfalls": [
       "游方为名——参访只为广交朋友、博取虚名",
       "走马观花——到处走走看看，不实参究",
       "执一师之见——守一师之说，不肯广参，门户之见",
       "分别师之高下——以意识分别评判宗师高下，失参学之益"
-],
+    ],
     "classicRef": "《禅林宝训》《赵州语录》《五灯会元》",
-    "relatedConcepts": ["canjiu","ordinary-mind","self-nature"],
-    "relatedPersons": ["zhaozhou","dahui-zonggao"],
-    "relatedBooks": ["tanjing","dongshanyulu","yunmen","huanwuxinyao","huanwuyulu","zhaozhouyulu"]
+    "relatedConcepts": [
+      "canjiu",
+      "ordinary-mind",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "zhaozhou",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "tanjing",
+      "dongshanyulu",
+      "yunmen",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "pushuo-xiaocan",
@@ -430,16 +605,27 @@ export const ZEN_METHODS: MethodItem[] = [
       "小参时坦诚呈见——将修行中之疑情、境界、困惑呈于宗师，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "宗师或肯或破——肯则印可，破则令其继续参究，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "依教奉行——无论肯或破，皆须依宗师之指导修行，在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "只听不参——听普说如听故事，不实参究，学人当依正法眼藏老实参究，不可自欺欺人。",
       "执着宗师之言——将宗师开示执为实法，不知宗师因人施教",
       "小参时隐瞒——不敢坦诚呈见，怕被宗师否定，学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "《禅林宝训》《大慧语录》《碧岩录》",
-    "relatedConcepts": ["canjiu","jifeng","self-nature"],
-    "relatedPersons": ["dahui-zonggao","yuanwu-keqin"],
-    "relatedBooks": ["changuancejin","huanwuyulu","dahuiyulu"]
+    "relatedConcepts": [
+      "canjiu",
+      "jifeng",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "changuancejin",
+      "huanwuyulu",
+      "dahuiyulu"
+    ]
   },
   {
     "id": "banghe-jiaocan",
@@ -451,16 +637,27 @@ export const ZEN_METHODS: MethodItem[] = [
       "或棒或喝——以峻烈手段截断学人意识流",
       "学人于思量不及处——或悟或疑，悟则亲见本来，疑则继续参究",
       "棒喝后观机——宗师观察学人反应，判断其是否悟入"
-],
+    ],
     "pitfalls": [
       "以棒喝为嗔怒——以为宗师发脾气，不知其为慈悲施设",
       "模仿棒喝——无宗师之眼与手，乱棒乱喝，成狂禅",
       "畏惧棒喝——因怕棒喝而不敢参叩，失接引之机"
-],
+    ],
     "classicRef": "《临济语录》《碧岩录》《五灯会元》",
-    "relatedConcepts": ["jifeng","zhuan-shen-ju","gewai-xuanji"],
-    "relatedPersons": ["linji","huangbo","deshan-xuanjian"],
-    "relatedBooks": ["linji","huangbo"]
+    "relatedConcepts": [
+      "jifeng",
+      "zhuan-shen-ju",
+      "gewai-xuanji"
+    ],
+    "relatedPersons": [
+      "linji",
+      "huangbo",
+      "deshan-xuanjian"
+    ],
+    "relatedBooks": [
+      "linji",
+      "huangbo"
+    ]
   },
   {
     "id": "biguan-daqi",
@@ -474,19 +671,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "精进修行——不杂用心，不涉他事，一味参去",
       "主七和尚适时开示——为学人提撕警策",
       "七日圆满——或悟或疑，皆须向和尚呈见，和尚勘验印可"
-],
+    ],
     "pitfalls": [
       "以打七为形式——身在禅堂，心在外境",
       "急求开悟——越急越远，须从容自然",
       "执着境界——于坐中见光见华、觉轻安觉空明，皆不可执着",
       "下座即忘——打七时精进，下座后放逸，失克期取证之益"
-],
+    ],
     "classicRef": "《坐禅仪》《参禅警语》《禅关策进》",
-    "relatedConcepts": ["canjiu","yiqing","samadhi"],
-    "relatedPersons": ["changlu-zongze","boshan-yuanlai","zhuhong"],
+    "relatedConcepts": [
+      "canjiu",
+      "yiqing",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "changlu-zongze",
+      "boshan-yuanlai",
+      "zhuhong"
+    ],
     "relatedBooks": []
   },
-  
   {
     "id": "wangqing-juezhao",
     "title": "忘情绝照",
@@ -497,15 +701,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·绝观忘守：不立能观之心、不守所观之境，连观照之念一齐放下。",
       "第三步·任运随缘：饥来吃饭困来眠，行住坐卧，触目皆是道场妙用。",
       "第四步·自性天真：恢复天然本具之赤裸觉性，了无挂碍，大休大歇。"
-],
+    ],
     "pitfalls": [
       "误将放逸懒惰当作忘情绝照，随顺私欲烦恼流转。学人当依正法眼藏老实参究，不可自欺欺人。",
       "落入麻木无知的无记状态，失却明澈敏锐之本觉智照。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "牛头法融 · 心铭 / 信心铭",
-    "relatedConcepts": ["jingang-zhengti","tongdi-tuo","wuxin-dao-ren"],
-    "relatedPersons": ["yuanwu-keqin"],
-    "relatedBooks": ["huanwuxinyao","huanwuyulu"]
+    "relatedConcepts": [
+      "jingang-zhengti",
+      "tongdi-tuo",
+      "wuxin-dao-ren"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "tuibu-xiuxie",
@@ -517,14 +730,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·万缘休歇：放下对是非、得失、功名、修证的一切躁进期盼。",
       "第三步·枯木生花：在极度休歇、死尽偷心之处，真如慧命自然活泼萌发。",
       "第四步·照彻法界：以澄澈空明之默照心，随缘应照大千世界而不染一尘。"
-],
+    ],
     "pitfalls": [
       "把休歇变成消极避世、逃避生活责任之借口。学人当依正法眼藏老实参究，不可自欺欺人。",
       "沉溺于死水清幽之境，不肯出头利益众生。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "宏智正觉 · 坐禅箴 / 默照铭",
-    "relatedConcepts": ["mozhao-chan-concept","jingang-zhengti","dacheng-yipian"],
-    "relatedPersons": ["yuanwu-keqin"],
+    "relatedConcepts": [
+      "mozhao-chan-concept",
+      "jingang-zhengti",
+      "dacheng-yipian"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin"
+    ],
     "relatedBooks": []
   },
   {
@@ -537,15 +756,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·了达宿因：作念此皆宿世烦恼恶业现行，甘心领受，不怨天尤人。",
       "第三步·体合于道：心无嗔恨怨诉，心境泰然，借苦境磨砺自性定力。",
       "第四步·转苦为智：于逆顺二境中常保平等如如，入于法性忍。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "误将报冤行视为消极忍气吞声，未在心地上体认因果空性。",
       "外表强忍而内心积怨，导致嗔心暗滋，未能真正心安理得。"
-],
+    ],
     "classicRef": "二入四行论 · 报冤行",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
   {
     "id": "suiyuan-xing",
@@ -557,15 +778,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·得失从缘：富贵荣华知是缘聚，衰败挫折知是缘散，心不起波动。",
       "第三步·喜风不动：逢顺境不生狂喜贪恋，遇赞叹不生傲慢自满。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·冥顺自道：随顺世间因缘任运起用，常安住清净无为之理体。"
-],
+    ],
     "pitfalls": [
       "执着于顺境享受而产生贪爱挂碍，丧失警惕觉照。学人当依正法眼藏老实参究，不可自欺欺人。",
       "把随缘混同于随波逐流、放任懈怠，失去精进修行之正念。"
-],
+    ],
     "classicRef": "二入四行论 · 随缘行",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
   {
     "id": "wusuoqiu-xing",
@@ -577,15 +800,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·安心无为：息灭希求功德、希求境界等一切攀缘偷心。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·形随运转：随顺客观环境与职责运转，尽己本分而不求回报。",
       "第四步·常安解脱：于无所得中体证本自具足之佛性，受用解脱大乐。"
-],
+    ],
     "pitfalls": [
       "执着无求而落入顽空枯寂，废弃一切利他行愿与日常善法。",
       "心存希求开悟成佛之胜妙执著，反成为入道的最大障门。"
-],
+    ],
     "classicRef": "二入四行论 · 无所求行",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
   {
     "id": "chengfa-xing",
@@ -597,15 +822,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·行檀布施：舍除身命财物之执著，以清净心广修布施供养。",
       "第三步·三轮体空：施者、受者、所施之物皆不执著，行六度而不着六度相。",
       "第四步·自他兼利：称合清净法性随缘度生，如日丽中天，照物无私。"
-],
+    ],
     "pitfalls": [
       "修布施善行时执着功德与名相，落入人天有漏善报。学人当依正法眼藏老实参究，不可自欺欺人。",
       "偏执理上法性本空，废弃事上慈悲利生之真实行持。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "二入四行论 · 称法行",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["sixingguan"]
+    "relatedBooks": [
+      "sixingguan"
+    ]
   },
   {
     "id": "yixing-sanmei",
@@ -617,15 +844,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·四仪不退：行住坐卧四威仪中，心境如一，不生二见。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·不住两端：超越顺逆、苦乐、善恶两边，安住一相法界。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·圆成三昧：身口意业与清净法性完全相应，动静俱定。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "以为只有闭门打坐才有一行三昧，到动乱环境中便失却定力。",
       "错把直率执拗当作直心，伤人害物。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "六祖坛经 · 定慧品",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","anxin"]
+    "relatedBooks": [
+      "wenshu",
+      "anxin"
+    ]
   },
   {
     "id": "guanzhao-bore",
@@ -637,15 +867,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·回光反照：不随念走、不压制念，单单观照当前这颗能知能觉之心。",
       "第三步·见念无生：观察念头生起、驻留、消逝之过程，体认妄念本无实体。",
       "第四步·安住真源：妄念歇息处，灵明虚澈之真如心体湛然显现。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "用一个能观的心去观一个所观的念，形成能所对立，掉入妄想坑中。",
       "在观心过程中追求神秘感应或玄妙境界，引发神经衰弱。"
-],
+    ],
     "classicRef": "达摩破相论 / 观心论",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["poxianglun","anxin","tanjing","xinwangming","lengyanjing","weimojiejing","yongjia"]
+    "relatedBooks": [
+      "poxianglun",
+      "anxin",
+      "tanjing",
+      "xinwangming",
+      "lengyanjing",
+      "weimojiejing",
+      "yongjia"
+    ]
   },
   {
     "id": "po-xiang-fa",
@@ -657,15 +895,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·破除我相：审视五蕴假合之身心，破除身见与恒常我执。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·破除法相：了知三藏十二部教法皆为渡河之筏，过河须舍。",
       "第四步·归于实相：诸相荡尽之时，离相之实相、灵光独耀之自性全彰。"
-],
+    ],
     "pitfalls": [
       "执着有一个实有的相去破除，反陷入能破所破之对立。学人当依正法眼藏老实参究，不可自欺欺人。",
       "落入顽空断灭，以为破相即是否定因果伦理。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "达摩破相论 / 金刚经",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wuxinglun"]
+    "relatedBooks": [
+      "wuxinglun"
+    ]
   },
   {
     "id": "xi-zheng-fa",
@@ -677,11 +917,11 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·体认平等：了知万法缘起性空，真理非言辩所能尽，众生同具一性。",
       "第三步·息灭胜负：舍弃求胜好辩之心，以圣默然或慈悲语化解对立。",
       "第四步·住无诤定：常行无诤三昧，心同虚空，包容万象而不受损恼。"
-],
+    ],
     "pitfalls": [
       "以息诤为借口而混淆是非黑白，失去根本正见。学人当依正法眼藏老实参究，不可自欺欺人。",
       "强行压抑争强好胜之心，外表沉默而内心愤懑不平。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "金刚经 · 一体同观分 / 肇论",
     "relatedConcepts": [],
     "relatedPersons": [],
@@ -697,15 +937,27 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·念起即觉：起心动念当下观照，知其虚妄不实，不随不拒。",
       "第三步·常离妄相：于自念之中不执著任何名相概念，回归湛然明照之体。",
       "第四步·触处起用：言谈动静任运随缘，起心动念无非真如自性之妙用。"
-],
+    ],
     "pitfalls": [
       "误以为无念是压制念头、强求无思无想，落入枯木死灰之断灭空。",
       "认取狂慧为无念，口说无念而心随尘转，自欺欺人。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "六祖坛经 · 定慧品",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["wenshu","wuran","wuxinglun","zuishangcheng","zhengdaoge","dunwu","shenhui","chanlinbaoxun","weimojiejing","huanwuxinyao","huanwuyulu"]
+    "relatedBooks": [
+      "wenshu",
+      "wuran",
+      "wuxinglun",
+      "zuishangcheng",
+      "zhengdaoge",
+      "dunwu",
+      "shenhui",
+      "chanlinbaoxun",
+      "weimojiejing",
+      "huanwuxinyao",
+      "huanwuyulu"
+    ]
   },
   {
     "id": "wuxiang-fa",
@@ -717,15 +969,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·外离诸相：于一切声色境象中不起执取与排斥之情识。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·显发法体：离相之时，清净无染之如来法身本体自然显发。",
       "第四步·即相离相：在日用万相之中随缘作主，不住于相而妙用恒沙。"
-],
+    ],
     "pitfalls": [
       "将无相理解为空无一物，排斥外在环境与正常生活。学人当依正法眼藏老实参究，不可自欺欺人。",
       "著于无相之名相，反成“无相执”，为法所缚。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "六祖坛经 · 定慧品",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["weimojiejing"]
+    "relatedBooks": [
+      "weimojiejing"
+    ]
   },
   {
     "id": "wuzhu-fa",
@@ -737,15 +991,33 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·今念不住：当下应事接物，随缘应对而不产生粘着羁绊。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·后念不迎：对未来未至之境不作虚妄预设与忧虑期盼。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·活泼任运：心如行云流水、虚空鸟迹，过而不留，生生不息。"
-],
+    ],
     "pitfalls": [
       "把无住理解为逃避现实责任、做事情不负责任。学人当依正法眼藏老实参究，不可自欺欺人。",
       "试图用一个“无住的心”去压制住着，不知能住所住皆是妄心。"
-],
+    ],
     "classicRef": "六祖坛经 · 定慧品",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["qifo","juelin","wenshu","zhangzhi","mazu","linji","dunwu","shenhui","jingangjing","chanlinbaoxun","lengyanjing","weimojiejing","changuancejin","huanwuxinyao","huanwuyulu","xinming","huangbo_wanlinglu"]
+    "relatedBooks": [
+      "qifo",
+      "juelin",
+      "wenshu",
+      "zhangzhi",
+      "mazu",
+      "linji",
+      "dunwu",
+      "shenhui",
+      "jingangjing",
+      "chanlinbaoxun",
+      "lengyanjing",
+      "weimojiejing",
+      "changuancejin",
+      "huanwuxinyao",
+      "huanwuyulu",
+      "xinming",
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "zhiguan-shuangxiu",
@@ -757,15 +1029,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·起观照了：在心神安定之状态下，观照身心万法无常、苦、空、无我。",
       "第三步·寂照同时：止中有观，定而不昧（惺惺）；观中有止，慧而不动（寂寂）。",
       "第四步·圆融无碍：定慧圆融一体，行住坐卧皆在大定慧海之中。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "偏于止则落入无记昏沉与枯木死灰之死水。学人当依正法眼藏老实参究，不可自欺欺人。",
       "偏于观则起浮躁散乱与口头狂慧之妄动。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "六祖坛经 · 定慧品 / 永嘉证道歌",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dachengqixinlun","bashiguijusong","xiuxinjue","wuxinglun","yuanjuejing","lengyanjing","weimojiejing","jieshenmijing"]
+    "relatedBooks": [
+      "dachengqixinlun",
+      "bashiguijusong",
+      "xiuxinjue",
+      "wuxinglun",
+      "yuanjuejing",
+      "lengyanjing",
+      "weimojiejing",
+      "jieshenmijing"
+    ]
   },
   {
     "id": "canjiu-fa",
@@ -777,11 +1058,11 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·专注提持：行住坐卧绵密照顾，不令疑情间断，不求文字解释。",
       "第三步·逼拶忘缘：疑情成片，外不知世界、内不知身心，逼至悬崖绝壁。",
       "第四步·虚空粉碎：机缘成熟之际，受触而发，绝后复苏，豁然大悟。"
-],
+    ],
     "pitfalls": [
       "用文字义理去分析猜测公案，把参话头变成意识思量。学人当依正法眼藏老实参究，不可自欺欺人。",
       "没有真正疑情，只是机械念诵话头字句，变成无意义的念咒。"
-],
+    ],
     "classicRef": "参禅警语 / 大慧语录",
     "relatedConcepts": [],
     "relatedPersons": [],
@@ -797,11 +1078,11 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·远离尘劳：收摄眼耳鼻舌身意六根，不攀缘世俗杂染名利。",
       "第三步·拂拭客尘：觉察贪嗔痴慢等烦恼习气，如云雾遮日，不认贼作子。",
       "第四步·朗现真心：妄尘脱落之际，天然本净之真心虚明普照。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "执着于有一个实有的“脏心”需要去洗干净，落入二乘渐修见解。",
       "以为自性本净便放纵习气妄行，落入狂禅恶取空。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "黄檗传心法要 / 六祖坛经",
     "relatedConcepts": [],
     "relatedPersons": [],
@@ -817,15 +1098,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·截断众流：在一言半句或机锋指点下，截断意识思量分别。",
       "第三步·顿开正眼：如同桶底脱落、顶门眼开，亲见本来无位真人。",
       "第四步·保任妙用：悟后随缘保任，除尽多生无始习气，起大机大用。"
-],
+    ],
     "pitfalls": [
       "把意识上的理解与口头禅误当作开悟，落入大妄语。学人当依正法眼藏老实参究，不可自欺欺人。",
       "顿悟之后废弃保任与戒行，导致习气反扑而堕落。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "六祖坛经 · 般若品 / 显宗记",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["dunwu","zhengdaoge","yongjia"]
+    "relatedBooks": [
+      "dunwu",
+      "zhengdaoge",
+      "yongjia"
+    ]
   },
   {
     "id": "huixiang-fa",
@@ -837,15 +1122,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·回因向果：不求人天有漏善果，唯求回向无上正等菩提与法界解脱。",
       "第三步·回事向理：不执着事相之功德，泯入自性如来藏之清净理体。",
       "第四步·同体大悲：以无缘大慈、同体大悲摄受一切有情，圆满菩萨万行。"
-],
+    ],
     "pitfalls": [
       "回向时带有功利计较之心，盼求自己得到更大回报。学人当依正法眼藏老实参究，不可自欺欺人。",
       "口头诵念回向文而内心冷漠，未能真正发起菩提大悲心。"
-],
+    ],
     "classicRef": "华严经 · 普贤行愿品",
     "relatedConcepts": [],
     "relatedPersons": [],
-    "relatedBooks": ["huangbo","lengyanjing","weimojiejing","dongshanyulu"]
+    "relatedBooks": [
+      "huangbo",
+      "lengyanjing",
+      "weimojiejing",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "shamatha",
@@ -857,15 +1147,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·系念止妄：将心念安置于呼吸或所缘境上，不起分别思量。",
       "第三步·息除攀缘：妄念若起，随拔除之，离一切攀缘之想。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·澄然安住：心念渐渐调柔安定，内证寂然不动之清凉定境。"
-],
+    ],
     "pitfalls": [
       "陷入昏沉昏睡状态，误以为是奢摩他之寂静。学人当依正法眼藏老实参究，不可自欺欺人。",
       "贪著定中轻安喜乐，不肯进一步修习毗婆舍那发慧。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大乘起信论 · 修行信心分 / 圆觉经",
-    "relatedConcepts": ["zhi-guan","jiji-xingxing","samadhi"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "jiji-xingxing",
+      "samadhi"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "vipashyana",
@@ -877,15 +1175,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·照了实相：细致观察色身不净、受是苦、心无常、法无我。",
       "第三步·破除我执：了知一切烦恼皆从妄执有我而生，体悟无我真空。",
       "第四步·圆融发慧：彻见缘起性空之妙理，断尽分别惑，得无碍解脱。"
-],
+    ],
     "pitfalls": [
       "在无定力支持下强行思辨，流于思维狂想与散乱。学人当依正法眼藏老实参究，不可自欺欺人。",
       "执着所观之空理，不肯回向大悲利他事业。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大乘起信论 / 摩诃止观",
-    "relatedConcepts": ["zhi-guan","jiji-xingxing","prajna"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "jiji-xingxing",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "upa-shiksha",
@@ -897,15 +1203,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·受持戒相：受持三归五戒、沙弥戒或菩萨戒，严净三业。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·调顺威仪：在行住坐卧四威仪中克己复礼，摄持身心。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·助发胜道：以清净戒行庄严定慧，作为直登佛乘之阶梯。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "把学处变成僵化教条，只注重外表做作而内心毫无德行。",
       "以戒自傲、轻慢破戒众生，违背大乘慈悲之本怀。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅苑清规 · 卷一受戒",
-    "relatedConcepts": ["zhi-guan","jiji-xingxing","zhongdao","dinghui"],
-    "relatedPersons": ["yongjia"],
-    "relatedBooks": ["yongjia"]
+    "relatedConcepts": [
+      "zhi-guan",
+      "jiji-xingxing",
+      "zhongdao",
+      "dinghui"
+    ],
+    "relatedPersons": [
+      "yongjia"
+    ],
+    "relatedBooks": [
+      "yongjia"
+    ]
   },
   {
     "id": "can-wu-zi",
@@ -917,15 +1232,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·堵截偷心：不许在有无上讲道理，不许在字句上作文字解。",
       "第三步·疑情如铁：如同吞了一丸热铁丸相似，吐又吐不出，咽又咽不下。",
       "第四步·触机粉碎：忽然疑团爆裂，如桶底脱落，照天照地，当下大悟。"
-],
+    ],
     "pitfalls": [
       "把“无”当作断灭空或者“没有”来理解，掉入断见。学人当依正法眼藏老实参究，不可自欺欺人。",
       "把参无字变成口头念字，有口无心，失却真正的大疑情。"
-],
+    ],
     "classicRef": "无门关 · 第一关赵州狗子",
-    "relatedConcepts": ["wu-men","koan","yiqing","kanhua-chan-concept"],
-    "relatedPersons": ["wumen-huikai","zhaozhou"],
-    "relatedBooks": ["wumenguan"]
+    "relatedConcepts": [
+      "wu-men",
+      "koan",
+      "yiqing",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "wumen-huikai",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "wumenguan"
+    ]
   },
   {
     "id": "can-shengsi",
@@ -937,14 +1262,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·追问源底：审究自己未生之前谁是我，一口气断后我归何处。",
       "第三步·打破生死：追逼至自心深处，顿见本来不生不灭、无来无去之真性。",
       "第四步·得大自在：悟透生死如梦幻空华，来去自由，游戏三昧。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "畏惧死亡而生忧虑恐惧，未能借无常转化为勇猛精进之力。",
       "口说为了生死，行为举止却依然贪图世俗名利享乐。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅关策进 / 禅宗决疑集",
-    "relatedConcepts": ["yiqing","kanhua-chan-concept","canjiu"],
-    "relatedPersons": ["dahui-zonggao"],
+    "relatedConcepts": [
+      "yiqing",
+      "kanhua-chan-concept",
+      "canjiu"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
     "relatedBooks": []
   },
   {
@@ -957,15 +1288,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·观心无常：观察贪嗔喜怒、念念起灭，前念已灭后念未生，何处是我？",
       "第三步·泯绝人我：照见自他不二，人我执情如汤泼雪，当下消融。",
       "第四步·证无我体：证得法界一体同观，以无我大悲利益一切有情。"
-],
+    ],
     "pitfalls": [
       "破了我执又执着于“无我”之见，成为法执。学人当依正法眼藏老实参究，不可自欺欺人。",
       "误以为破我执就是消灭自我人格，变成冷漠麻木。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "金刚经 / 达摩悟性论",
-    "relatedConcepts": ["kanhua-chan-concept","yiqing","self-nature"],
-    "relatedPersons": ["dahui-zonggao"],
-    "relatedBooks": ["huanwuyulu"]
+    "relatedConcepts": [
+      "kanhua-chan-concept",
+      "yiqing",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "huanwuyulu"
+    ]
   },
   {
     "id": "canhuoju",
@@ -977,15 +1316,27 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·咬定活句：选取如“麻三斤”、“庭前柏树子”等毫无道理可测之活句。",
       "第三步·绝思绝虑：在活句下不起意识分别，死尽偷心，逼至言语道断。",
       "第四步·大机大用：一旦桶底脱落，从活句中悟出本地风光，纵横无碍。"
-],
+    ],
     "pitfalls": [
       "把活句当成公案谜语去用智巧猜度，越猜离道越远。学人当依正法眼藏老实参究，不可自欺欺人。",
       "模仿祖师喝骂棒打之形式，徒具外表而无真实悟境。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "碧岩录 / 大慧宗杲语录",
-    "relatedConcepts": ["huoju-siju","kanhua-chan-concept","yiqing","huatou-shibing"],
-    "relatedPersons": ["mailang-huai","tuiyin","dahui-zonggao"],
-    "relatedBooks": ["zongmenshenan","chanjia_guijian"]
+    "relatedConcepts": [
+      "huoju-siju",
+      "kanhua-chan-concept",
+      "yiqing",
+      "huatou-shibing"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "tuiyin",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "chanjia_guijian"
+    ]
   },
   {
     "id": "jueguan-wangshou",
@@ -998,17 +1349,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "于日用中无心顺物，不生前后念，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "惺寂等持，明寂自然，不可言说，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "任运浮沉，外似顽嚣，内心虚真，在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "将“无心”作无心解，落入断灭顽空，学人当依正法眼藏老实参究，不可自欺欺人。",
       "将“绝观”作不修行解，放纵烦恼，学人当依正法眼藏老实参究，不可自欺欺人。",
       "口说无心，心实分别，言行相违，学人当依正法眼藏老实参究，不可自欺欺人。",
       "未彻本源而强说本有，成增上慢，学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "心铭",
-    "relatedConcepts": ["wuxin-jueguan","dajibenyou","jingji-ziran"],
-    "relatedPersons": ["niutou-farong"],
-    "relatedBooks": ["xinming","jueguanlun"]
+    "relatedConcepts": [
+      "wuxin-jueguan",
+      "dajibenyou",
+      "jingji-ziran"
+    ],
+    "relatedPersons": [
+      "niutou-farong"
+    ],
+    "relatedBooks": [
+      "xinming",
+      "jueguanlun"
+    ]
   },
   {
     "id": "zuochan-yi",
@@ -1023,17 +1383,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "舌抵上腆，微开双目，调匀气息",
       "一切善恶都莫思量，念头起时觉照自消",
       "久久打成一片，出定后常护定力如护婴儿"
-],
+    ],
     "pitfalls": [
       "闭目坐禅，堕入昏沉，所谓“黑山鬼窟”",
       "不善用心而致病，皆因强压念头或过分用力",
       "得少为足，以轻安为究竟，不肯深入",
       "出定他尽，定力散失，如婴儿失护"
-],
+    ],
     "classicRef": "坐禅仪",
-    "relatedConcepts": ["samadhi","zuochan-weiyi","chanding-jiwu"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["zuochanyi"]
+    "relatedConcepts": [
+      "samadhi",
+      "zuochan-weiyi",
+      "chanding-jiwu"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "zuochanyi"
+    ]
   },
   {
     "id": "kan-wuzi",
@@ -1045,15 +1413,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·杜绝猜度：不作有无会，不作玄妙会，如咬生铁橛一般。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·疑团凝聚：通身如一个大疑团，行不知行，坐不知坐。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·顿见本来：受触机缘，虚空粉碎，亲见本来父母未生正面目。"
-],
+    ],
     "pitfalls": [
       "将无字当作咒语快速念诵，失去向内参究逼拶之疑情。学人当依正法眼藏老实参究，不可自欺欺人。",
       "急于求悟，产生焦躁妄想，导致心浮气躁。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大慧书 / 无门关",
-    "relatedConcepts": ["non-mind","no-views","wu-wei-famen"],
-    "relatedPersons": ["huangbo","zhaozhou"],
-    "relatedBooks": ["huangbo_wanlinglu"]
+    "relatedConcepts": [
+      "non-mind",
+      "no-views",
+      "wu-wei-famen"
+    ],
+    "relatedPersons": [
+      "huangbo",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "huangbo_wanlinglu"
+    ]
   },
   {
     "id": "benfen-jieren",
@@ -1065,15 +1442,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·当阳显露：以当下动作言谈（如递茶、搬柴），直接展示自性妙用。",
       "第三步·逼令承当：不容拟议思量，逼迫学人在言下当下承担“我是佛”。",
       "第四步·印可纵夺：视学人悟境深浅，施以纵夺杀活，令其彻底透彻。"
-],
+    ],
     "pitfalls": [
       "盲目模仿祖师棒喝，变成江湖无赖之恶作剧。学人当依正法眼藏老实参究，不可自欺欺人。",
       "学者若根器未熟，强施本分接引容易导致学人退失信心。"
-],
+    ],
     "classicRef": "临济慧照禅师语录",
-    "relatedConcepts": ["benfen-shi","ordinary-mind","direct-pointing"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "benfen-shi",
+      "ordinary-mind",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "xi-bo-qu",
@@ -1085,15 +1470,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·荡涤知见：如同洗钵洗去油腻，彻底洗尽心中对佛法奇特之贪求。",
       "第三步·安于平常：明白平常心是道，不再向外寻求别有玄妙奇特。",
       "第四步·无事道人：做个天下无事闲道人，随缘消旧业，更不造新殃。"
-],
+    ],
     "pitfalls": [
       "把洗钵去当成机械做家务，心仍在胡思乱想。学人当依正法眼藏老实参究，不可自欺欺人。",
       "误以为洗钵去是否定学习经教，走向盲目愚钝。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "赵州和尚语录 / 宏智广录",
-    "relatedConcepts": ["benfen-shi","ordinary-mind","chi-cha-qu"],
-    "relatedPersons": ["zhaozhou"],
-    "relatedBooks": ["zhaozhouyulu"]
+    "relatedConcepts": [
+      "benfen-shi",
+      "ordinary-mind",
+      "chi-cha-qu"
+    ],
+    "relatedPersons": [
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "zhaozhouyulu"
+    ]
   },
   {
     "id": "wuwei-junchen-fa",
@@ -1106,15 +1499,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第三步·正中来：从理出事，无中有路出尘埃，体露真常，妙用大开。",
       "第四步·兼中至：理事并行，两刃交锋不须避，理事无碍，纵横自在。",
       "第五步·兼中到：理事双亡，混然超绝，不落有无，大休大歇，尊贵自在。"
-],
+    ],
     "pitfalls": [
       "把五位君臣当成死板的阶梯公式去背诵，失去活泼宗风。",
       "滞留在某一位中不肯前进，尤易落入正位（枯寂）或偏位（散乱）。"
-],
+    ],
     "classicRef": "洞山良价语录 · 五位君臣颂",
-    "relatedConcepts": ["wuwei-jianji","hu-hu"],
-    "relatedPersons": ["caoshan-benji","dongshan"],
-    "relatedBooks": ["caoshanyulu","baojingsanmei"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "hu-hu"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "caoshanyulu",
+      "baojingsanmei"
+    ]
   },
   {
     "id": "sanduo-fa",
@@ -1126,15 +1528,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·入异类中：不守清净圣位，甘愿披毛戴角入尘劳苦海度化众生。",
       "第三步·涉境不染：见色闻声，随处作主，于一切六尘境界中解脱自在。",
       "第四步·礼绝百僚：超然独脱，连佛祖位亦不居，达到无可名状之究竟圆满。"
-],
+    ],
     "pitfalls": [
       "未曾开悟便盲目模仿“披毛戴角”，堕入真正轮回受苦。",
       "把礼绝百僚当作狂妄自大、目空一切，自绝于正道。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "曹山元证禅师语录",
-    "relatedConcepts": ["sanduo","yilei-zhongxing"],
-    "relatedPersons": ["caoshan-benji"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "sanduo",
+      "yilei-zhongxing"
+    ],
+    "relatedPersons": [
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "yilei-zhongxing-fa",
@@ -1146,15 +1555,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·舍离圣见：不住佛位、不住圣境，视净土与秽土平等无二。",
       "第三步·随缘涉尘：深入市井红尘、异类众生之中，随顺众生根性示导。",
       "第四步·同体大悲：同其受苦，同其劳作，润物细无声，广度有缘。"
-],
+    ],
     "pitfalls": [
       "凡夫未悟，借口“异类中行”而贪恋酒色名利，自甘堕落。",
       "缺乏定力而入红尘，反被恶劣环境所染污，迷失本心。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "赵州和尚语录 / 指月录",
-    "relatedConcepts": ["yilei-zhongxing","sanduo"],
-    "relatedPersons": ["caoshan-benji","dongshan"],
-    "relatedBooks": ["caoshanyulu"]
+    "relatedConcepts": [
+      "yilei-zhongxing",
+      "sanduo"
+    ],
+    "relatedPersons": [
+      "caoshan-benji",
+      "dongshan"
+    ],
+    "relatedBooks": [
+      "caoshanyulu"
+    ]
   },
   {
     "id": "wuzi-can",
@@ -1166,15 +1583,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·截断妄流：念头一起，即以无字照破，使妄念无立足之地。",
       "第三步·逼入绝境：疑情成片，心行路绝，天地之间唯此一无字。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·豁然破迷：机缘契合，触处开通，悟知无字即是本来面目。"
-],
+    ],
     "pitfalls": [
       "用头脑去分析无字的语法、哲学含义，落入知见魔障。学人当依正法眼藏老实参究，不可自欺欺人。",
       "枯坐念字而无切骨疑情，成为机械劳动。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "无门关 · 赵州狗子",
-    "relatedConcepts": ["wuzi-huatou","toushi-guan"],
-    "relatedPersons": ["wuzu-fayan","zhaozhou"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "wuzi-huatou",
+      "toushi-guan"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "baiyun-wanli-kan",
@@ -1186,15 +1611,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·照见相隔：深知只要心存有所得、有所求，即与自性万里悬隔。",
       "第三步·当下休歇：不拟议、不思量、不起心动念去凑泊真理。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·当阳直下：歇尽狂心，原来自性未曾离开半步，当下即是。"
-],
+    ],
     "pitfalls": [
       "试图用一个“不思量的心”去消除思量，头上安头。学人当依正法眼藏老实参究，不可自欺欺人。",
       "沉溺于自责悔恨，反而增加了心中的葛藤障碍。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "信心铭 / 马祖语录",
-    "relatedConcepts": ["baiyun-wanli","toushi-guan"],
-    "relatedPersons": ["wuzu-fayan"],
-    "relatedBooks": ["fayanyulu"]
+    "relatedConcepts": [
+      "baiyun-wanli",
+      "toushi-guan"
+    ],
+    "relatedPersons": [
+      "wuzu-fayan"
+    ],
+    "relatedBooks": [
+      "fayanyulu"
+    ]
   },
   {
     "id": "sizi-tie-e-fa",
@@ -1206,15 +1638,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "将“死”字如贴额上，行住坐卧不离，如猛虎在后，不敢住脚半步",
       "单单提起本参话头，发起疑情，行不知行、坐不知坐",
       "每晚勘验：今日一枝香，工夫有损益否？光景易过，时不待人"
-],
+    ],
     "pitfalls": [
       "念死非消极厌世——是以死为师策发道心，若沉溺恐惧颓唐，反成障碍",
       "不可念成口头禅：口说无常，心逐五欲，正博山所斥“不打紧”三字之病"
-],
+    ],
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["po-shengsi-xin","yiqing"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "jingyu-zijing-fa",
@@ -1226,15 +1665,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "每日插香自省：工夫如前有损益否？一年若干许香耶？",
       "遇逆顺境缘动人念处，即时觉破，提起话头，不随境转",
       "以“参禅须铁汉，毋论期与限”等偈颂时时提撕，防止因循度日"
-],
+    ],
     "pitfalls": [
       "警语用于自警，不可用来责人——博山云自己打未彻，只可办自己事，不可教人",
       "若只诵警语而不实做工夫，警语反成文字障、口头禅"
-],
+    ],
     "classicRef": "《博山参禅警语》全卷",
-    "relatedConcepts": ["qie-zi-jue","po-shengsi-xin"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "qie-zi-jue",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "siyao-gongfu-fa",
@@ -1246,15 +1692,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "正：以祖师言教印证所行，具择法眼，不落邪径、不沾世法",
       "绵密：行住坐卧不离本参话头，针札不入水洒不湿，无毫厘闲隙",
       "融豁：不拘执一处、不系坠两头，内不见身心、外不见世界，漭漭荡荡"
-],
+    ],
     "pitfalls": [
       "紧而不正则枉用工，正而不紧则不能入——四要偏废皆病",
       "绵密而成拘执，即失融豁之妙；融豁而成散漫，即失绵密之功"
-],
+    ],
     "classicRef": "《博山参禅警语》卷上·示初心做工夫警语",
-    "relatedConcepts": ["yiqing","kanhua-chan-concept"],
-    "relatedPersons": ["boshan-yuanlai"],
-    "relatedBooks": ["boshan-canchanjingyu"]
+    "relatedConcepts": [
+      "yiqing",
+      "kanhua-chan-concept"
+    ],
+    "relatedPersons": [
+      "boshan-yuanlai"
+    ],
+    "relatedBooks": [
+      "boshan-canchanjingyu"
+    ]
   },
   {
     "id": "wanshan-tonggui-fa",
@@ -1266,15 +1719,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·广修万善：礼佛、诵经、坐禅、布施、持戒、作务，一切善行无不奉行。",
       "第三步·三轮体空：虽修万善而不着万善之相，了达善法因缘所生、本自性空。",
       "第四步·回向一心：万善齐修皆归于本觉真心，理事圆融，庄严无上菩提。"
-],
+    ],
     "pitfalls": [
       "执事废理：只着重外在有为功德，不修自性定慧，落入人天福报。",
       "执理废事：自恃见理玄妙而废弃持戒修善，堕入恶取空。"
-],
+    ],
     "classicRef": "永明延寿 · 万善同归集",
-    "relatedConcepts": ["wanshan-tonggui","lishi-wuai","chan-jing-shuangxiu"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "wanshan-tonggui",
+      "lishi-wuai",
+      "chan-jing-shuangxiu"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "baiba-foshi",
@@ -1286,15 +1747,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·如法施设：按照清规仪轨举行上堂、晚参、普说、茶汤等各项法事。",
       "第三步·直显宗乘：于举扬文疏、击椎敲版、答问机锋中直透向上一窍。",
       "第四步·安众和合：一切佛事皆以安众修道、令正法久住为唯一旨趣。"
-],
+    ],
     "pitfalls": [
       "把佛事演变为世俗繁文缛节，丧失禅宗直指人心之根本精神。",
       "借举办法事谋取名闻利养与世俗恭敬，违背清规初衷。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "敕修百丈清规 · 住持章 / 禅苑清规",
-    "relatedConcepts": ["wanshan-tonggui","zhengzhu-jianxiu"],
-    "relatedPersons": ["yongming-yanshou"],
-    "relatedBooks": ["wanshantongguiji"]
+    "relatedConcepts": [
+      "wanshan-tonggui",
+      "zhengzhu-jianxiu"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wanshantongguiji"
+    ]
   },
   {
     "id": "yijiao-yinxin-fa",
@@ -1306,15 +1774,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·参禅实修：在蒲团上与日常中切实参究自心，求证真实悟境。",
       "第三步·以教印心：将所得之见地与经教圣言量对照，检验是否落入偏邪。",
       "第四步·融通无碍：教理与禅悟相互发明，通达无碍，圆成大宗师风范。"
-],
+    ],
     "pitfalls": [
       "死执文字名相，把佛经当作学术研究，未能化为内心觉照。",
       "自恃盲修境界，排斥经教印证，落入野狐禅而不自知。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅源诸诠集都序 / 宗镜录",
-    "relatedConcepts": ["chanjiao-yizhi","sanjiao"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "chanjiao-yizhi",
+      "sanjiao"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "shizhong-fanzhao-fa",
@@ -1326,16 +1801,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "勘位：反照自身，见色闻声时落在第几重——执实？分自他？起贪嗔？",
       "逆观：依悟后十重，从粗逆次翻破，先破我执次破法执",
       "对图自问：我在何门，佛在何位，为当别体，为复同源"
-],
+    ],
     "pitfalls": [
       "观图成知识讲谈，不对自身勘验则枉费",
       "见自己是凡夫而自弃，或妄计圣位而僭滥——图正治此二病",
       "执十重为实有次第，不知一即因该果海"
-],
+    ],
     "classicRef": "《禅源诸诠集都序》卷下",
-    "relatedConcepts": ["miwu-shizhong","dunwu-jianxiu"],
-    "relatedPersons": ["guifeng-zongmi"],
-    "relatedBooks": ["chanyuan_zhuquanjiduxu"]
+    "relatedConcepts": [
+      "miwu-shizhong",
+      "dunwu-jianxiu"
+    ],
+    "relatedPersons": [
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuan_zhuquanjiduxu"
+    ]
   },
   {
     "id": "songgu-canjiu",
@@ -1347,15 +1829,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·体玩诗颂：细细参详祖师所作之颂古诗句，体察其言外之意与弦外之音。",
       "第三步·离句绝情：不落入诗词文采之赏析，透过优美辞藻直探祖师心印。",
       "第四步·透关透机：在诗意机锋交融处豁然领会，触类旁通，大开眼界。"
-],
+    ],
     "pitfalls": [
       "把颂古当作文学诗词来鉴赏玩味，沉迷辞藻而遗忘生死大事。",
       "依文解字、死板套用诗意，未能体悟祖师超方之活泼机用。"
-],
+    ],
     "classicRef": "碧岩录 / 从容录",
-    "relatedConcepts": ["song-gu","ping-chang","zhuoyu","chuishi"],
-    "relatedPersons": ["yuanwu-keqin","xuedou-zhongxian"],
-    "relatedBooks": ["biyanlu"]
+    "relatedConcepts": [
+      "song-gu",
+      "ping-chang",
+      "zhuoyu",
+      "chuishi"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "xuedou-chongxian"
+    ],
+    "relatedBooks": [
+      "biyanlu"
+    ]
   },
   {
     "id": "yangqi-yijue",
@@ -1367,15 +1859,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·截断分别：在无法理喻处直下承担，逼死一切知解思量。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·绝处逢生：情识断绝之时，忽然触处碰着，悟见本来真常。",
       "第四步·大机纵横：悟后如金刚宝剑，触之即断，机用圆转，不受万物笼罩。"
-],
+    ],
     "pitfalls": [
       "用逻辑思维去揣测“三脚驴子”是什么比喻，掉入意识深坑。",
       "以为一绝是怪诞言论，流于狂放荒诞。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "杨岐方会和尚语录",
-    "relatedConcepts": ["fansheng-lujue","suiliu-renxing"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqihoulu"]
+    "relatedConcepts": [
+      "fansheng-lujue",
+      "suiliu-renxing"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqihoulu"
+    ]
   },
   {
     "id": "zanming-canfa",
@@ -1387,15 +1886,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·随文入观：如读“至道无难，唯嫌挑选”，当下观照自己心中是否有挑选爱憎。",
       "第三步·切实体证：将铭文之开示落实于日常生活，做到语默动静一如。",
       "第四步·得意忘言：彻底领悟铭文所指之自性真如，超越语言文字之相。"
-],
+    ],
     "pitfalls": [
       "只停留在文字背诵与义理讲解上，未能实际回光反照自心。",
       "把铭文当成一般哲学格言，缺乏切身之实修体悟。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "信心铭 / 心铭 / 坐禅箴",
-    "relatedConcepts": ["wenzi-chan","zanming"],
-    "relatedPersons": ["huihong-juefan"],
-    "relatedBooks": ["linjianhoulu"]
+    "relatedConcepts": [
+      "wenzi-chan",
+      "zanming"
+    ],
+    "relatedPersons": [
+      "huihong-juefan"
+    ],
+    "relatedBooks": [
+      "linjianhoulu"
+    ]
   },
   {
     "id": "hujiao-bianzheng",
@@ -1407,15 +1913,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·觉察邪偏：敏锐觉察暗证禅、口头狂慧、不守戒律等末世流弊。",
       "第三步·慈悲辨正：以大悲心引经据典，破除学人邪执，指归向上一路。",
       "第四步·绍隆佛种：弘扬正法，令禅门正道灯灯相续，永不泯灭。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "以争强好胜之心进行诤论辩驳，沦为世俗名利是非之争。",
       "缺乏真修实证，仅凭一知半解妄加批评他人法门。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "大慧宗杲 · 正法眼藏 / 尚直编",
-    "relatedConcepts": ["shangli-bianzheng","shangli-hujiao","fo-buke-mie"],
-    "relatedPersons": ["konggu-jinglong","yaoguangxiao"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "shangli-bianzheng",
+      "shangli-hujiao",
+      "fo-buke-mie"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "yaoguangxiao"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "jianxing-dadao-fa",
@@ -1427,15 +1942,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·见性无染：回光照察，见本心自性本自清净、本不生灭、本自具足。",
       "第三步·随处立主：在行住坐卧、视听言动处作得主宰，不被境缘所转。",
       "第四步·圆通无碍：自性光明圆照法界，体用不二，大机大用任运纵横。"
-],
+    ],
     "pitfalls": [
       "把意识思维中“想象出来的自性”当成真见性，落入知见魔网。",
       "口头说见性成佛，行为举止却依然受贪嗔痴烦恼驱使。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "达摩血脉论 / 六祖坛经",
-    "relatedConcepts": ["jianxing-dadao","shangli-bianzheng","sanjie-chulun"],
-    "relatedPersons": ["konggu-jinglong","deshan-xuanjian"],
-    "relatedBooks": ["shanglibian"]
+    "relatedConcepts": [
+      "jianxing-dadao",
+      "shangli-bianzheng",
+      "sanjie-chulun"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "deshan-xuanjian"
+    ],
+    "relatedBooks": [
+      "shanglibian"
+    ]
   },
   {
     "id": "yangqi-siyi-fa",
@@ -1447,15 +1971,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·随处点化：借眼前竹椅、茶杯、石阶等现前实物直指心性。",
       "第三步·翻转情量：在学人自以为领会处再次打破其所得知见。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·圆成器宇：锤炼学人直至透脱无碍，成为荷担大法之法器。"
-],
+    ],
     "pitfalls": [
       "死执四意为固定教学套路，失去临机应变之妙用。学人当依正法眼藏老实参究，不可自欺欺人。",
       "学人以猜谜心态对待机锋，未能真正反求自心。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "杨岐方会和尚语录",
-    "relatedConcepts": ["yangqi-siyi","yangqi-yijue"],
-    "relatedPersons": ["yangqi-fanghui"],
-    "relatedBooks": ["yangqiyulu","yangqihoulu"]
+    "relatedConcepts": [
+      "yangqi-siyi",
+      "yangqi-yijue"
+    ],
+    "relatedPersons": [
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "yangqiyulu",
+      "yangqihoulu"
+    ]
   },
   {
     "id": "daowu-gangzong-fa",
@@ -1467,15 +1999,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·识席上珍：回光自省，认得当下能言能听之自性即是衣里明珠。",
       "第三步·不假外求：息灭一切向外驰求之妄想，安心受用本分家产。",
       "第四步·宗风广大：随缘化导，以本具智慧照破一切学人之疑滞。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "虽知名相为翳，却又生起对“除翳”之执着。学人当依正法眼藏老实参究，不可自欺欺人。",
       "未见真珍，把顽空妄识误认作衣里明珠。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "道吾宗智禅师语录 / 五灯会元",
-    "relatedConcepts": ["mingan-jieduan","sanxuan-sanyao","sizhao-yong","sibinzhu","wuwei-jianji"],
-    "relatedPersons": ["daowu-zhen"],
-    "relatedBooks": ["yangqiyulu"]
+    "relatedConcepts": [
+      "mingan-jieduan",
+      "sanxuan-sanyao",
+      "sizhao-yong",
+      "sibinzhu",
+      "wuwei-jianji"
+    ],
+    "relatedPersons": [
+      "daowu-zhen"
+    ],
+    "relatedBooks": [
+      "yangqiyulu"
+    ]
   },
   {
     "id": "canhuatou-qiyiqing-fa",
@@ -1487,15 +2029,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·切切提撕：字字分明在心头提撕，向不明处追问：究竟是谁？",
       "第三步·疑团成片：不放过丝毫空隙，使疑情如铁丸滚滚，绵密不断。",
       "第四步·崩破大悟：疑到极处，不疑而自疑，机缘相触，疑团破裂，大彻大悟。"
-],
+    ],
     "pitfalls": [
       "用妄想意识去回答话头，把看话头当成自问自答。学人当依正法眼藏老实参究，不可自欺欺人。",
       "急功近利，几天不见效便心生疑慢而放弃。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "高峰原妙禅师禅要 / 参禅警语",
-    "relatedConcepts": ["yiqing-canjiu","kan-wu-nian-wu-yi-wu","huatou-gongfu","all-returns-to-one"],
-    "relatedPersons": ["zhiche","yunfeng-heshang"],
-    "relatedBooks": ["chanzongjueyiji"]
+    "relatedConcepts": [
+      "yiqing-canjiu",
+      "kan-wu-nian-wu-yi-wu",
+      "huatou-gongfu",
+      "all-returns-to-one"
+    ],
+    "relatedPersons": [
+      "zhiche",
+      "yunfeng-heshang"
+    ],
+    "relatedBooks": [
+      "chanzongjueyiji"
+    ]
   },
   {
     "id": "huanglong-sanguan-fa",
@@ -1507,15 +2059,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·参佛手关：打破凡圣界限，了达自心与诸佛之手无二无别。",
       "第三步·参驴脚关：入于异类无碍，见驴脚与佛手、凡夫与畜生性体平等。",
       "第四步·三关齐透：透脱三关，跳出圣凡樊笼，横行天下，自由自在。"
-],
+    ],
     "pitfalls": [
       "把三关当成三个独立问题去用巧辩对答，未能见性。学人当依正法眼藏老实参究，不可自欺欺人。",
       "在驴脚佛手处妄生秽净分别，落入两边。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "黄龙慧南禅师语录",
-    "relatedConcepts": ["huanglong-sanguan","huanglong-shengyuan","huanglong-foshou","huanglong-lvjiao"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "huanglong-sanguan",
+      "huanglong-shengyuan",
+      "huanglong-foshou",
+      "huanglong-lvjiao"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "huanglong-zhuanshen-fa",
@@ -1527,15 +2088,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·悬崖撒手：放下心中一切依靠、所得与保任之念，彻底放空。",
       "第三步·绝后复苏：在一念不生处翻身转来，如梦初醒，天地顿宽。",
       "第四步·大机起用：转身之后，逢缘得妙，随处作主，不落阶级。在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "不敢彻底放下手中知见，留有偷心，无法完成真正转身。",
       "把口头妄谈“转身”当作实证，自欺欺人。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "黄龙慧南语录 / 林间录",
-    "relatedConcepts": ["zhuanshen-yilu","fansheng-qingjin"],
-    "relatedPersons": ["huanglong-huinan"],
-    "relatedBooks": ["huanglonghuinan"]
+    "relatedConcepts": [
+      "zhuanshen-yilu",
+      "fansheng-qingjin"
+    ],
+    "relatedPersons": [
+      "huanglong-huinan"
+    ],
+    "relatedBooks": [
+      "huanglonghuinan"
+    ]
   },
   {
     "id": "zhongguan-bore",
@@ -1547,15 +2115,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·破除二边：不落断灭空见，不落常住实有见，两边双遣。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第三步·契入中道：于不落两边中当下契入非有非空、即有即空之真如。",
       "第四步·圆融起用：随顺世俗谛行一切善法，常住第一义谛如如不动。"
-],
+    ],
     "pitfalls": [
       "把中道理解为折中调和或模棱两可，流于世俗中庸。学人当依正法眼藏老实参究，不可自欺欺人。",
       "执着中道之名相，又成一种新的法执。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "中论 · 观四谛品 / 肇论",
-    "relatedConcepts": ["wubuqian","buzhenkong","bore-wuzhi","niepan-wuming"],
-    "relatedPersons": ["seng-zhao","kumarajiva"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "wubuqian",
+      "buzhenkong",
+      "bore-wuzhi",
+      "niepan-wuming"
+    ],
+    "relatedPersons": [
+      "seng-zhao",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "ouhe-bore",
@@ -1567,15 +2145,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·发起大悲：不舍沉沦受苦之六道众生，发起无尽方便大愿。",
       "第三步·善巧施设：随顺众生不同根基与时节因缘，开示八万四千方便门。",
       "第四步·体用一如：施设方便而不离般若真空，虽度一切众生而实无众生可度。"
-],
+    ],
     "pitfalls": [
       "无般若空慧而行方便，沦为世俗世智辩聪与攀缘。学人当依正法眼藏老实参究，不可自欺欺人。",
       "有般若而无方便，落入二乘自了汉之冷灰死水。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "维摩诘经 / 肇论 · 般若无知论",
-    "relatedConcepts": ["zongbenyi","bore-wuzhi"],
-    "relatedPersons": ["seng-zhao"],
-    "relatedBooks": ["zhaolun"]
+    "relatedConcepts": [
+      "zongbenyi",
+      "bore-wuzhi"
+    ],
+    "relatedPersons": [
+      "seng-zhao"
+    ],
+    "relatedBooks": [
+      "zhaolun"
+    ]
   },
   {
     "id": "shangzhi-bianzheng",
@@ -1587,15 +2172,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·审辨邪正：严格对照古德典范，辨析真悟与狂慧、真空与顽空。",
       "第三步·脚踏实地：扫除口头禅浮夸风气，强调苦修实证与行持相应。",
       "第四步·荷担正法：以刚正不阿之志气护持僧团清净，绍隆佛法正统。"
-],
+    ],
     "pitfalls": [
       "将辨正演变为门派攻击与学术论战，失去慈悲救弊之初衷。",
       "只知评判他人是非，自己却不肯下真实功夫用功。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "尚直编 / 紫柏尊者全集",
-    "relatedConcepts": ["shangzhi-hujiao","paifo-xinbing","dao-xue-yuanliu"],
-    "relatedPersons": ["konggu-jinglong","zhuxi-zhunan"],
-    "relatedBooks": ["shangzhibian"]
+    "relatedConcepts": [
+      "shangzhi-hujiao",
+      "paifo-xinbing",
+      "dao-xue-yuanliu"
+    ],
+    "relatedPersons": [
+      "konggu-jinglong",
+      "zhuxi-zhunan"
+    ],
+    "relatedBooks": [
+      "shangzhibian"
+    ]
   },
   {
     "id": "ciming-wuhui",
@@ -1607,15 +2201,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·截断妄情：在问答机锋中毫不留情，棒喝交驰，打破学人虚妄自尊。",
       "第三步·绝处点化：在学人走投无路、大死一番之际，施以慈悲点拨。",
       "第四步·大活大用：令学人如狮子出窟，具备独立开堂、化导一方之大气魄。"
-],
+    ],
     "pitfalls": [
       "盲目模仿慈明严酷之表象，缺乏其内在深厚之菩提大悲。",
       "学人意志薄弱，受挫后心生怨退，半途而废。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "石霜楚圆禅师语录",
-    "relatedConcepts": ["jingang-yanjing","sanxuan-sanyao","sizhao-yong","banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jingang-yanjing",
+      "sanxuan-sanyao",
+      "sizhao-yong",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "zhu-zhang-tunque",
@@ -1627,15 +2230,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·吞尽万缘：将眼前一切善恶是非、身心世界如竹杖般一口吞尽。",
       "第三步·内外一如：无内无外，无心无境，唯见一片虚明湛寂。在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "第四步·彻底爆脱：触机成熟，豁然大彻，虚空大地尽成自己光明法身。"
-],
+    ],
     "pitfalls": [
       "用文字意象去想象如何“吞却”，掉入妄想幻境中。学人当依正法眼藏老实参究，不可自欺欺人。",
       "产生自大狂妄心理，以为山河大地真由自己肉身所控。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "天目中峰广录",
-    "relatedConcepts": ["jingang-yanjing","banghe"],
-    "relatedPersons": ["shishuang-chuyuan"],
-    "relatedBooks": ["shishuangchuyuan"]
+    "relatedConcepts": [
+      "jingang-yanjing",
+      "banghe"
+    ],
+    "relatedPersons": [
+      "shishuang-chuyuan"
+    ],
+    "relatedBooks": [
+      "shishuangchuyuan"
+    ]
   },
   {
     "id": "sanju-jieyin",
@@ -1647,16 +2257,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·回光返照：不随妄念流转，单单提起正念，观照当前这一念虚灵不昧之能知能觉心体。",
       "第三步·泯绝能所：在极度专注与休歇之中，超越主客体分别，破除我执与法执，达于心境两忘。",
       "第四步·随缘起用：体证自性本自具足，在日常穿衣吃饭、应事接物中大机大用，纵横自在无碍。"
-],
+    ],
     "pitfalls": [
       "死于第一句下：但成平等法，明前不明后，未有自由分，学人当依正法眼藏老实参究，不可自欺欺人。",
       "执平等一如为究竟：落在平实分证法身之量，未有出格之句",
       "不辨缁素、儱侗真如：笼统说个“人人具足”，正是玄沙所斥"
-],
+    ],
     "classicRef": "《玄沙师备禅师语录》卷上 / 《玄沙师备禅师广录》卷中",
-    "relatedConcepts": ["xuansha-sanju","instant-enlightenment"],
-    "relatedPersons": ["xuansha-shibei"],
-    "relatedBooks": ["xuanshayulu","xuanshaguanglu"]
+    "relatedConcepts": [
+      "xuansha-sanju",
+      "instant-enlightenment"
+    ],
+    "relatedPersons": [
+      "xuansha-shibei"
+    ],
+    "relatedBooks": [
+      "xuanshayulu",
+      "xuanshaguanglu"
+    ]
   },
   {
     "id": "linji-gangzong",
@@ -1668,15 +2286,25 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·三玄三要融：在一言一句中具足玄要，句中有玄，玄中有要。",
       "第三步·四照用施设：先照后用、先用后照、照用同时、照用不同时，灵活施化。",
       "第四步·建立正令：横按镆铘，当阳发令，接引利根学人直登佛位。"
-],
+    ],
     "pitfalls": [
       "将临济纲宗当成理论教条去分门别类，失去机锋闪电之活泼宗风。",
       "大叫乱喝、模仿临济喝风而内心一无所明。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "镇州临济慧照禅师语录",
-    "relatedConcepts": ["siliao-jian","sanxuan-sanyao","sizhao-yong","sibinzhu"],
-    "relatedPersons": ["linji"],
-    "relatedBooks": ["renyantianmu","linji"]
+    "relatedConcepts": [
+      "siliao-jian",
+      "sanxuan-sanyao",
+      "sizhao-yong",
+      "sibinzhu"
+    ],
+    "relatedPersons": [
+      "linji"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "linji"
+    ]
   },
   {
     "id": "yunmen-gangzong",
@@ -1688,15 +2316,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·截断众流：在一言半句中截断学人一切思量葛藤，令其言语道断。",
       "第三步·随波逐浪：悟后随顺众生机缘，和光同尘，随缘建立一切方便。",
       "第四步·一字透关：以极其简炼之一字（如是、顾）直下令人见性。"
-],
+    ],
     "pitfalls": [
       "把云门三句当作世间哲学三阶段去分析论证。学人当依正法眼藏老实参究，不可自欺欺人。",
       "模仿云门一字关而随口胡言，未明字后之大机大用。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "云门匡真禅师广录 / 人天眼目",
-    "relatedConcepts": ["yunmen-sanju","yizi-guan"],
-    "relatedPersons": ["yunmen"],
-    "relatedBooks": ["renyantianmu","yunmen"]
+    "relatedConcepts": [
+      "yunmen-sanju",
+      "yizi-guan"
+    ],
+    "relatedPersons": [
+      "yunmen"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "yunmen"
+    ]
   },
   {
     "id": "caodong-gangzong",
@@ -1708,15 +2344,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·五位参涉：从正中偏至兼中到，层层历练，使理事圆融无间。",
       "第三步·除三渗漏：谨防机不离位（见渗漏）、情滞枯木（情渗漏）、究妙失宗（语渗漏）。",
       "第四步·宝镜当台：如宝镜当台，物来则显，物去不留，寂照同时。"
-],
+    ],
     "pitfalls": [
       "落入过于琐碎之名相推演，导致机锋迟钝、缺乏生机。学人当依正法眼藏老实参究，不可自欺欺人。",
       "偏执正位寂静，落入枯木死灰之黑山鬼窟。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "洞山语录 / 宝镜三昧 / 人天眼目",
-    "relatedConcepts": ["wuwei-jianji","gongxun-wuwei"],
-    "relatedPersons": ["dongshan","caoshan-benji"],
-    "relatedBooks": ["renyantianmu","dongshanyulu"]
+    "relatedConcepts": [
+      "wuwei-jianji",
+      "gongxun-wuwei"
+    ],
+    "relatedPersons": [
+      "dongshan",
+      "caoshan-benji"
+    ],
+    "relatedBooks": [
+      "renyantianmu",
+      "dongshanyulu"
+    ]
   },
   {
     "id": "weiyang-gangzong",
@@ -1728,15 +2373,23 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·圆相变用：在圆相中书写各种字句或作动作，随机指点迷津。",
       "第三步·师资相契：如水入水、如空合空，心心相印，无丝毫间隙。",
       "第四步·深密妙用：在平和温润之言谈举止中，隐显莫测，润物无声。"
-],
+    ],
     "pitfalls": [
       "把圆相当成外道神秘符号或占卜图式。学人当依正法眼藏老实参究，不可自欺欺人。",
       "只知画圆之形式，不知圆相所表显之无相真心。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "沩山语录 / 仰山语录 / 人天眼目",
-    "relatedConcepts": ["san-zhong-sheng","yuanxiang"],
-    "relatedPersons": ["weishan-lingyou","yangshan-huiji"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "san-zhong-sheng",
+      "yuanxiang"
+    ],
+    "relatedPersons": [
+      "weishan-lingyou",
+      "yangshan-huiji"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "fayan-gangzong",
@@ -1748,15 +2401,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·六相圆照：观万法虽有总别、同异、成坏之差，而体性一如。",
       "第三步·对病施药：随学人所执之病当下点破，不立奇特，言简意赅。",
       "第四步·圆融无碍：事事无碍，触目菩提，举手投足无非如来大圆觉海。"
-],
+    ],
     "pitfalls": [
       "将唯心所现误解为主观唯心主义妄想，否定客观因果事相。",
       "沉溺于华严名相思辨，丧失禅门直截了当之本色。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "金陵清凉院文益禅师语录 / 宗门十规论",
-    "relatedConcepts": ["huayan-liuxiang"],
-    "relatedPersons": ["fayan-wenyi"],
-    "relatedBooks": ["renyantianmu"]
+    "relatedConcepts": [
+      "huayan-liuxiang"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "renyantianmu"
+    ]
   },
   {
     "id": "zuochanyi-famen",
@@ -1772,17 +2431,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "念起即觉觉之即失，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "久久忘缘自成一片，在日常生活动静之间绵密觉察，保持心性灵明不昧。",
       "出定后常作方便护持定力如护婴儿，在日常生活动静之间绵密觉察，保持心性灵明不昧。"
-],
+    ],
     "pitfalls": [
       "闭目坐禅——宗赜诃人闭目坐禅以谓黑山鬼窟，学人当依正法眼藏老实参究，不可自欺欺人。",
       "耸身太过令人气急不安，学人当依正法眼藏老实参究，不可自欺欺人。",
       "不善用心多致疾患，学人当依正法眼藏老实参究，不可自欺欺人。",
       "道高魔盛逆顺万端须能正念，学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅苑清规·坐禅仪",
-    "relatedConcepts": ["zuochanyi-fa","samadhi","zuochan-weiyi"],
-    "relatedPersons": ["zongze","guifeng-zongmi"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "zuochanyi-fa",
+      "samadhi",
+      "zuochan-weiyi"
+    ],
+    "relatedPersons": [
+      "zongze",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "shami-shoujie-fa",
@@ -1794,15 +2462,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·落发受偈：剃发时诵“善哉大丈夫偈”，落发时诵“毁形守志节偈”。",
       "第三步·披袈裟衣：披上福田袈裟，诵“大哉解脱服偈”，领纳如来清净戒体。",
       "第四步·持十戒法：受持不杀、不盗、不淫等沙弥十戒，精勤参禅修道。"
-],
+    ],
     "pitfalls": [
       "只求出家外表好看，内心毫无割爱辞亲、上求佛道之弘誓大愿。",
       "受戒之后放逸懈怠，不学戒律，不遵丛林清规规绳。学人当依正法眼藏老实参究，不可自欺欺人。"
-],
+    ],
     "classicRef": "禅苑清规 · 卷九沙弥受戒文 / 敕修百丈清规",
-    "relatedConcepts": ["shoujie-hujie","shami-shoujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
+    "relatedConcepts": [
+      "shoujie-hujie",
+      "shami-shoujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "lvshui-fa",
@@ -1814,84 +2489,117 @@ export const ZEN_METHODS: MethodItem[] = [
       "第二步·漉水护生：汲水入槛，细心过滤，观察水中微细浮游生命。",
       "第三步·回放生灵：将滤出之微虫轻轻放归江河清流，诵护生神咒回向。",
       "第四步·长养慈心：从日常一瓢水中体认众生一体，时时处处行菩萨道。"
-],
+    ],
     "pitfalls": [
       "将滤水视作麻烦琐事而偷懒略过，犯轻慢众生命戒。学人当依正法眼藏老实参究，不可自欺欺人。",
       "机械滤水而内心毫无慈悲怜悯之情，失去佛法实修意义。"
-],
+    ],
     "classicRef": "禅苑清规 · 附录新添滤水法",
-    "relatedConcepts": ["lvshui-husheng","shoujie-hujie"],
-    "relatedPersons": ["zongze"],
-    "relatedBooks": ["chanyuanqinggui"]
-  }
-,
+    "relatedConcepts": [
+      "lvshui-husheng",
+      "shoujie-hujie"
+    ],
+    "relatedPersons": [
+      "zongze"
+    ],
+    "relatedBooks": [
+      "chanyuanqinggui"
+    ]
+  },
   {
     "id": "dafengman-liduan",
-    "title": "\u5927\u5706\u6ee1\u7acb\u65ad",
-    "summary": "\u85cf\u4f20\u5927\u5706\u6ee1\u5fc3\u90e8\u7684\u6838\u5fc3\u4fee\u6cd5\u3002\"\u7acb\u65ad\"\u610f\u4e3a\u5f53\u4e0b\u622a\u65ad\u5984\u5ff5\u4e4b\u6d41\uff0c\u4e0d\u8ffd\u968f\u8fc7\u53bb\u3001\u4e0d\u8fce\u53d6\u672a\u6765\u3001\u4e0d\u6539\u9020\u5f53\u4e0b\u2014\u2014\u5728\u5984\u5ff5\u8d77\u706d\u7684\u95f4\u9699\u76f4\u8ba4\u672c\u89c9\u3002\u884c\u8005\u4e8e\u4e0a\u5e08\u76f4\u6307\u540e\uff0c\u4e8e\u5750\u4f4f\u884c\u5367\u4e2d\u4fdd\u6301\u89c9\u6027\u4e0d\u6563\uff0c\u5984\u5ff5\u5982\u96ea\u843d\u70ed\u77f3\u3001\u89e6\u4e4b\u5373\u878d\uff0c\u4e0d\u9700\u538b\u5236\u4ea6\u4e0d\u9700\u8f6c\u5316\uff0c\u53ea\u987b\u8ba4\u51fa\u5176\u81ea\u89e3\u8131\u7684\u672c\u8d28\u3002\u672c\u6cd5\u4e0e\u5927\u624b\u5370\u5e76\u79f0\uff0c\u4e0e\u7985\u5b97\u76f4\u6307\u4eba\u5fc3\u540c\u4e00\u5473\u3002",
-    "origin": "\u6e90\u4e8e\u5b81\u739b\u6d3e\u5927\u5706\u6ee1\u5fc3\u90e8\u4f20\u627f\uff0c\u7531\u83b2\u82b1\u751f\u5927\u58eb\u4f20\u5165\u897f\u85cf\uff0c\u7ecf\u9f99\u94a6\u5df4\u5c0a\u8005\u96c6\u5927\u6210\u3002\u53d6\u4e49\u4e8e\u5bc6\u4e25\u7ecf\"\u5f53\u77e5\u8d56\u8036\u8bc6\uff0c\u5373\u540d\u4e3a\u5bc6\u4e25\"\u2014\u2014\u8d56\u8036\u8f6c\u4f9d\u5373\u5bc6\u4e25\u56fd\uff0c\u7acb\u65ad\u5373\u8f6c\u4f9d\u7684\u4e0b\u624b\u5904\u3002",
+    "title": "大圆满立断",
+    "summary": "藏传大圆满心部的核心修法。\"立断\"意为当下截断妄念之流，不追随过去、不迎取未来、不改造当下——在妄念起灭的间隙直认本觉。行者于上师直指后，于坐住行卧中保持觉性不散，妄念如雪落热石、触之即融，不需压制亦不需转化，只须认出其自解脱的本质。本法与大手印并称，与禅宗直指人心同一味。",
+    "origin": "源于宁玛派大圆满心部传承，由莲花生大士传入西藏，经龙钦巴尊者集大成。取义于密严经\"当知赖耶识，即名为密严\"——赖耶转依即密严国，立断即转依的下手处。",
     "steps": [
-      "\u4e8e\u5177\u5fb7\u4e0a\u5e08\u5ea7\u524d\u53d7\u76f4\u6307\uff0c\u8ba4\u53d6\u89c9\u6027\u672c\u4f53",
-      "\u65e5\u591c\u4e0d\u5206\uff0c\u51e1\u5984\u5ff5\u8d77\u65f6\u5373\u523b\u8ba4\u53d6\u5176\u81ea\u6027\u2014\u2014\u5982\u6ce2\u8ba4\u6c34",
-      "\u4e0d\u538b\u5236\u3001\u4e0d\u8ddf\u968f\u3001\u4e0d\u6539\u9020\uff0c\u4efb\u8fd0\u5b89\u4f4f\u4e8e\u89c9\u6027\u4e4b\u4e2d",
-      "\u884c\u4f4f\u5750\u5367\u4e0d\u79bb\u89c9\u7167\uff0c\u7761\u68a6\u4ea6.try\u4fdd\u6301\u660e\u7a7a\u4e0d\u4e8c",
-      "\u5984\u5ff5\u81ea\u884c\u89e3\u8131\u65f6\uff0c\u4e0d\u751f\u6b22\u559c\uff1b\u6563\u4e71\u65f6\uff0c\u4e0d\u751f\u6cae\u4e27"
+      "于具德上师座前受直指，认取觉性本体",
+      "日夜不分，凡妄念起时即刻认取其自性——如波认水",
+      "不压制、不跟随、不改造，任运安住于觉性之中",
+      "行住坐卧不离觉照，睡梦亦.try保持明空不二",
+      "妄念自行解脱时，不生欢喜；散乱时，不生沮丧"
     ],
     "pitfalls": [
-      "\u6700\u5fcc\u5c06\"\u4e0d\u9020\u4f5c\"\u8bef\u89e3\u4e3a\u653e\u4efb\u6563\u4e71\u2014\u2014\u8ba4\u53d6\u89c9\u6027\u4e0e\u653e\u9038\u662f\u5929\u6e0a\u4e4b\u522b",
-      "\u4e0d\u53ef\u6267\u8457\u89c9\u6027\u7684\u6e05\u660e\u89c9\u53d7\uff0c\u89c9\u53d7\u5982\u8679\u9713\u6682\u73b0\uff0c\u6267\u5219\u969c\u9053",
-      "\u7acb\u65ad\u662f\u89c1\u5730\u4e0a\u7684\u987f\u65ad\uff0c\u975e\u5de5\u592b\u4e0a\u7684\u6e10\u6b21\u2014\u2014\u4e0d\u53ef\u4e0e\u6b21\u7b2c\u6cd5\u95e8\u6df7\u6dc6\u9ad8\u4e0b"
+      "最忌将\"不造作\"误解为放任散乱——认取觉性与放逸是天渊之别",
+      "不可执著觉性的清明觉受，觉受如虹霓暂现，执则障道",
+      "立断是见地上的顿断，非工夫上的渐次——不可与次第法门混淆高下"
     ],
-    "classicRef": "\u5927\u5706\u6ee1\u89c1\u4fee\u884c\u679c\u91d1\u521a\u6b4c",
-    "relatedConcepts": ["ben-lai-mian-mu","self-nature","wu-ran-jue-xing"],
-    "relatedPersons": ["lianhuasheng","longqinba"],
-    "relatedBooks": ["jingangge","ziwojietuo","songlingbaoxun","xinxingxiuxisong","henghedashouyin"]
+    "classicRef": "大圆满见修行果金刚歌",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "self-nature",
+      "wu-ran-jue-xing"
+    ],
+    "relatedPersons": [
+      "lianhuasheng",
+      "longqinba"
+    ],
+    "relatedBooks": [
+      "jingangge",
+      "ziwojietuo",
+      "songlingbaoxun",
+      "xinxingxiuxisong",
+      "henghedashouyin"
+    ]
   },
   {
     "id": "zhongyin-jidu",
-    "title": "\u4e2d\u9634\u6551\u5ea6\u5fc6\u5ff5\u6cd5",
-    "summary": "\u85cf\u4f20\u4e2d\u9634\u6551\u5ea6\u7684\u5b9e\u4fee\u8981\u9886\u3002\u884c\u8005\u751f\u524d\u719f\u4e60\u4e2d\u9634\u5404\u9636\u6bb5\u7684\u5f81\u5146\u4e0e\u53e3\u8bc0\uff0c\u4e34\u7ec8\u56db\u5927\u5206\u89e3\u65f6\u8ba4\u53d6\"\u6bcd\u5149\u660e\"\uff0c\u6cd5\u6027\u4e2d\u9634\u8fa8\u4e94\u65b9\u4f5b\u667a\u5149\uff0c\u6295\u751f\u4e2d\u9634\u95ed\u5408\u80ce\u95e8\u3002\u6838\u5fc3\u53e3\u8bc0\u53ea\u6709\u4e00\u53e5\uff1a\u4e00\u5207\u4e2d\u9634\u5883\u76f8\u7686\u662f\u81ea\u5fc3\u672c\u5177\u667a\u6167\u4e4b\u53d8\u73b0\uff0c\u5fc3\u4e0d\u751f\u6016\uff0c\u76f4\u4e0b\u878d\u901a\uff0c\u5f53\u4e0b\u89e3\u8131\u3002\u672c\u6cd5\u9700\u751f\u524d\u53cd\u590d\u4e32\u4e60\uff0c\u4e34\u7ec8\u65b9\u6709\u6548\u9a8c\u3002",
-    "origin": "\u51fa\u81ea\u83b2\u82b1\u751f\u5927\u58eb\u6240\u8457\u3001\u4f0f\u85cf\u5927\u5e08\u5676\u739b\u6797\u5df4\u6398\u51fa\u7684\u300a\u4e2d\u9634\u95fb\u89e3\u8131\u5927\u6cd5\u300b\uff08\u4fd7\u79f0\u897f\u85cf\u5ea6\u4ea1\u7ecf\uff09\uff0c\u4e3a\u85cf\u4f20\u4f5b\u6559\u72ec\u5177\u7684\u8d85\u5ea6\u4e0e\u81ea\u5ea6\u53cc\u8fd0\u6cd5\u95e8\u3002\u672c\u7ad9\u5df2\u5f55\u5176\u4e09\u9636\u6bb5\u6838\u5fc3\u53e3\u8bc0\u7cbe\u8981\u3002",
+    "title": "中阴救度忆念法",
+    "summary": "藏传中阴救度的实修要领。行者生前熟习中阴各阶段的征兆与口诀，临终四大分解时认取\"母光明\"，法性中阴辨五方佛智光，投生中阴闭合胎门。核心口诀只有一句：一切中阴境相皆是自心本具智慧之变现，心不生怖，直下融通，当下解脱。本法需生前反复串习，临终方有效验。",
+    "origin": "出自莲花生大士所著、伏藏大师噶玛林巴掘出的《中阴闻解脱大法》（俗称西藏度亡经），为藏传佛教独具的超度与自度双运法门。本站已录其三阶段核心口诀精要。",
     "steps": [
-      "\u751f\u524d\u4e32\u4e60\uff1a\u719f\u8bb0\u4e2d\u9634\u5404\u9636\u6bb5\u5f81\u5146\u4e0e\u76f4\u6307\u53e3\u8bc0",
-      "\u4e34\u7ec8\u5173\u8981\uff1a\u5916\u606f\u5df2\u65ad\u5185\u606f\u672a\u7eed\u4e4b\u4e00\u5239\u90a3\uff0c\u76f4\u8ba4\u6bcd\u5149\u660e",
-      "\u6cd5\u6027\u4e2d\u9634\uff1a\u4e94\u65b9\u4f5b\u667a\u5149\u9010\u65e5\u663e\u73b0\uff0c\u8fa8\u771f\u4f2a\u3001\u8d8b\u667a\u5149\u3001\u820d\u516d\u9053\u5149",
-      "\u6295\u751f\u4e2d\u9634\uff1a\u89c2\u80ce\u95e8\u4e3a\u4f5b\u7236\u4f5b\u6bcd\u53cc\u8fd0\uff0c\u4e00\u5fc3\u7948\u8bf7\u83b2\u82b1\u5316\u751f",
-      "\u5e73\u65f6\u4fee\u6301\uff1a\u4e8e\u68a6\u4e2d\u7ec3\u4e60\u8ba4\u68a6\u3001\u8f6c\u68a6\uff0c\u4e3a\u4e2d\u9634\u505a\u9884\u4e60"
+      "生前串习：熟记中阴各阶段征兆与直指口诀",
+      "临终关要：外息已断内息未续之一刹那，直认母光明",
+      "法性中阴：五方佛智光逐日显现，辨真伪、趋智光、舍六道光",
+      "投生中阴：观胎门为佛父佛母双运，一心祈请莲花化生",
+      "平时修持：于梦中练习认梦、转梦，为中阴做预习"
     ],
     "pitfalls": [
-      "\u6700\u5927\u8bef\u533a\u662f\u4ee5\u4e3a\u4e34\u7ec8\u518d\u4fee\u5c31\u6765\u5f97\u53ca\u2014\u2014\u5b9e\u9645\u5fc5\u987b\u751f\u524d\u53cd\u590d\u4e32\u4e60\u81f3\u7eaf\u719f",
-      "\u4e0d\u53ef\u6267\u8457\u4e2d\u9634\u5883\u76f8\u4e3a\u5b9e\u6709\uff0c\u4e00\u5207\u5149\u76f8\u5de8\u54cd\u7686\u81ea\u5fc3\u53d8\u73b0",
-      "\u4e0d\u8bc6\u5b57\u8005\u53ef\u7531\u4ed6\u4eba\u8033\u8fb9\u8bfb\u8bf5\u5f15\u5bfc\uff0c\u5176\u6548\u529b\u6e90\u4e8e\u95fb\u58f0\u8005\u81ea\u5fc3\u672c\u5177\u4e4b\u4f5b\u6027"
+      "最大误区是以为临终再修就来得及——实际必须生前反复串习至纯熟",
+      "不可执著中阴境相为实有，一切光相巨响皆自心变现",
+      "不识字者可由他人耳边读诵引导，其效力源于闻声者自心本具之佛性"
     ],
-    "classicRef": "\u897f\u85cf\u5ea6\u4ea1\u7ecf\u00b7\u4e2d\u9634\u95fb\u89e3\u8131",
-    "relatedConcepts": ["ben-lai-mian-mu","zixing-qingjing"],
-    "relatedPersons": ["lianhuasheng"],
-    "relatedBooks": ["xizangduwangjing"]
+    "classicRef": "西藏度亡经·中阴闻解脱",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "zixing-qingjing"
+    ],
+    "relatedPersons": [
+      "lianhuasheng"
+    ],
+    "relatedBooks": [
+      "xizangduwangjing"
+    ]
   },
   {
     "id": "dashouyin-renyun",
-    "title": "\u5927\u624b\u5370\u4efb\u8fd0\u4f4f",
-    "summary": "\u5676\u4e3e\u6d3e\u5927\u624b\u5370\u5fc3\u9ad3\u7684\u5b89\u4f4f\u6cd5\u95e8\u3002\"\u4efb\u8fd0\u4f4f\"\u5373\u4e0d\u8fce\u4e0d\u62d2\u3001\u4e0d\u4fee\u4e0d\u6574\u3001\u4e0d\u6563\u4e0d\u6267\uff0c\u4efb\u8fd0\u5b89\u4f4f\u4e8e\u672c\u660e\u4e4b\u4e2d\u2014\u2014\u5982\u865a\u7a7a\u4e0d\u52a8\u6447\u800c\u5bb9\u4e07\u8c61\uff0c\u5982\u5927\u6d77\u4e0d\u52a8\u6447\u800c\u7eb3\u767e\u5ddd\u3002\u884c\u8005\u4e8e\u5984\u5ff5\u8d77\u65f6\u8ba4\u53d6\u5176\u4f53\u6027\u672c\u7a7a\uff0c\u4e0d\u968f\u4e0d\u9063\uff0c\u5984\u5ff5\u81ea\u6eb6\u5f52\u672c\u660e\uff0c\u5982\u540c\u6ce2\u6d6a\u81ea\u6eb6\u5f52\u5927\u6d77\u3002\u6052\u6cb3\u5927\u624b\u5370\u4e91\uff1a\u83ab\u601d\u83ab\u8651\u83ab\u89c2\u7167\uff0c\u83ab\u968f\u83ab\u5236\u4efb\u8fd0\u4f4f\u3002",
-    "origin": "\u5e1d\u6d1b\u5df4\u5c0a\u8005\u4e8e\u6052\u6cb3\u5cb8\u8fb9\u5bf9\u90a3\u6d1b\u5df4\u53e3\u6388\uff0c\u5386\u7ecf\u739b\u5c14\u5df4\u3001\u5bc6\u52d2\u65e5\u5df4\u3001\u5188\u6ce2\u5df4\u81f3\u5386\u4ee3\u5927\u5b9d\u6cd5\u738b\uff0c\u4e3a\u5676\u4e3e\u6d3e\u6700\u6df1\u4e4b\u5fc3\u9ad3\u6cd5\u95e8\u3002\u4e0e\u5927\u5706\u6ee1\u7acb\u65ad\u4e92\u4e3a\u8868\u91cc\uff0c\u7985\u5b97\u8c13\u4e4b\"\u4efb\u8fd0\u817e\u817e\u3001\u817e\u817e\u4efb\u8fd0\"\u3002",
+    "title": "大手印任运住",
+    "summary": "噶举派大手印心髓的安住法门。\"任运住\"即不迎不拒、不修不整、不散不执，任运安住于本明之中——如虚空不动摇而容万象，如大海不动摇而纳百川。行者于妄念起时认取其体性本空，不随不遣，妄念自溶归本明，如同波浪自溶归大海。恒河大手印云：莫思莫虑莫观照，莫随莫制任运住。",
+    "origin": "帝洛巴尊者于恒河岸边对那洛巴口授，历经玛尔巴、密勒日巴、冈波巴至历代大宝法王，为噶举派最深之心髓法门。与大圆满立断互为表里，禅宗谓之\"任运腾腾、腾腾任运\"。",
     "steps": [
-      "\u4e8e\u5177\u683c\u4e0a\u5e08\u5ea7\u524d\u5f97\u56db\u704c\u9876\uff0c\u8ba4\u53d6\u5fc3\u4f53\u672c\u660e",
-      "\u5984\u5ff5\u8d77\u65f6\uff0c\u4e0d\u968f\u4e0d\u9063\uff0c\u7167\u89c1\u5176\u4f53\u6027\u672c\u7a7a",
-      "\u5982\u865a\u7a7a\u5bb9\u4e07\u8c61\uff0c\u4e0d\u4f4f\u597d\u574f\u5584\u6076\u4efb\u4f55\u4e00\u8fb9",
-      "\u884c\u4f4f\u5750\u5367\u3001\u8bed\u9ed8\u52a8\u9759\uff0c\u7686\u4e0d\u79bb\u672c\u660e\u89c9\u7167",
-      "\u4e45\u4e45\u7eaf\u719f\uff0c\u5ea7\u4e0b\u5ea7\u4e0a\u6253\u6210\u4e00\u7247\uff0c\u52a8\u9759\u4e00\u5982"
+      "于具格上师座前得四灌顶，认取心体本明",
+      "妄念起时，不随不遣，照见其体性本空",
+      "如虚空容万象，不住好坏善恶任何一边",
+      "行住坐卧、语默动静，皆不离本明觉照",
+      "久久纯熟，座下座上打成一片，动静一如"
     ],
     "pitfalls": [
-      "\u6700\u5927\u9677\u9631\u662f\u5c06\u660f\u6c89\u5927\u7761\u5f53\u4f5c\"\u4efb\u8fd0\u4f4f\"\u2014\u2014\u4efb\u8fd0\u662f\u660e\u89c9\u4e0d\u5931\u7684\u5b89\u4f4f\uff0c\u4e0d\u662f\u65e0\u77e5\u65e0\u89c9\u7684\u653e\u7a7a",
-      "\u4e0d\u53ef\u5c06\u5076\u5c14\u7684\u8f7b\u5b89\u89c9\u53d7\u5f53\u4f5c\u8bc1\u609f\uff0c\u89c9\u53d7\u5982\u5ba2\u5c18\u6765\u53bb\uff0c\u672c\u660e\u4e0d\u52a8",
-      "\u4e0d\u8bb8\u523b\u610f\u5236\u9020\"\u65e0\u5ff5\"\u2014\u2014\u538b\u5236\u5ff5\u5934\u6070\u662f\u80cc\u79bb\u5927\u624b\u5370"
+      "最大陷阱是将昏沉大睡当作\"任运住\"——任运是明觉不失的安住，不是无知无觉的放空",
+      "不可将偶尔的轻安觉受当作证悟，觉受如客尘来去，本明不动",
+      "不许刻意制造\"无念\"——压制念头恰是背离大手印"
     ],
-    "classicRef": "\u6052\u6cb3\u5927\u624b\u5370\u4e8c\u5341\u516b\u9882",
-    "relatedConcepts": ["ben-lai-mian-mu","non-duality","shixiang"],
-    "relatedPersons": ["diluoba"],
-    "relatedBooks": ["henghedashouyin"]
-  }
-,
+    "classicRef": "恒河大手印二十八颂",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "non-duality",
+      "shixiang"
+    ],
+    "relatedPersons": [
+      "diluoba"
+    ],
+    "relatedBooks": [
+      "henghedashouyin"
+    ]
+  },
   {
     "id": "riyong-xixing",
     "title": "日用细行禅",
@@ -1908,11 +2616,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌落入断灭空见与口头狂禅，自诩超脱戒律威仪而轻视出入细行，任由无明习气放逸流转。"
     ],
     "classicRef": "入众日用",
-    "relatedConcepts": ["shi-cun-wu-guan","san-jing-di","ordinary-mind"],
-    "relatedPersons": ["zongshou","baizhang"],
-    "relatedBooks": ["ruzhongriyong","chanyuanqinggui"]
-  }
-,
+    "relatedConcepts": [
+      "shicun-wuguan",
+      "san-jing-di",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "zongshou",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
+  },
   {
     "id": "yi-xin-yin-xin-fa",
     "title": "以心印心法",
@@ -1929,11 +2646,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌未悟谓悟、盲引盲修，若无宗门过来人真切勘验，极易堕入盲修瞎练之邪径。"
     ],
     "classicRef": "传法正宗定祖图",
-    "relatedConcepts": ["chuan-fa-zheng-zong","chuan-fa-ji","mind-transmission","zhengfa-yancang"],
-    "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzongdingzutu","tanjing"]
-  }
-,
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "chuan-fa-ji",
+      "mind-transmission",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongdingzutu",
+      "tanjing"
+    ]
+  },
   {
     "id": "zhuan-yu-kan-yan",
     "title": "转语勘验法",
@@ -1950,11 +2678,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌背诵古人现成公案语句强作解脱，偷心不死难当大用。"
     ],
     "classicRef": "方山文宝禅师语录",
-    "relatedConcepts": ["fang-shan-san-wen","linji-zongfeng"],
-    "relatedPersons": ["fangshan-wenbao","linji"],
-    "relatedBooks": ["fangshanwenbaoyulu","wumenguan"]
-  }
-,
+    "relatedConcepts": [
+      "fang-shan-san-wen",
+      "linji-zongfeng"
+    ],
+    "relatedPersons": [
+      "fangshan-wenbao",
+      "linji"
+    ],
+    "relatedBooks": [
+      "fangshanwenbaoyulu",
+      "wumenguan"
+    ]
+  },
   {
     "id": "sishisan-nan-kanbian",
     "title": "四十三难勘辨法",
@@ -1970,11 +2706,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "畏难退屈：遇到难关便起退心，不能耐得寂寞坚持参究。"
     ],
     "classicRef": "《云门麦浪怀禅师宗门设难》",
-    "relatedConcepts": ["huoju-siju","zongmen-shenan","yiqing-canjiu","jifeng"],
-    "relatedPersons": ["mailang-huai","dahui-zonggao","yuanwu-keqin"],
-    "relatedBooks": ["zongmenshenan","biyanlu"]
-  }
-,
+    "relatedConcepts": [
+      "huoju-siju",
+      "zongmen-shenan",
+      "yiqing-canjiu",
+      "jifeng"
+    ],
+    "relatedPersons": [
+      "mailang-huai",
+      "dahui-zonggao",
+      "yuanwu-keqin"
+    ],
+    "relatedBooks": [
+      "zongmenshenan",
+      "biyanlu"
+    ]
+  },
   {
     "id": "she-shou-zheng-fa",
     "title": "摄受正法法门",
@@ -1990,11 +2737,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "执相求福：误将摄受正法视作求世间福报，未达一乘无漏心性解脱。"
     ],
     "classicRef": "《胜鬘师子吼一乘大方便方广经》",
-    "relatedConcepts": ["tathagatagarbha","yicheng","kong-bu-kong-ru-lai-zang"],
-    "relatedPersons": ["shengman-furen","gunabhadra"],
-    "relatedBooks": ["shengmanjing"]
-  }
-,
+    "relatedConcepts": [
+      "tathagatagarbha",
+      "yicheng",
+      "kong-bu-kong-ru-lai-zang"
+    ],
+    "relatedPersons": [
+      "shengman-furen",
+      "gunabhadra"
+    ],
+    "relatedBooks": [
+      "shengmanjing"
+    ]
+  },
   {
     "id": "gu-jing-guan-zhao",
     "title": "古镜观照法门",
@@ -2010,11 +2765,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "顽空不起用：误以为不随物转是如木石般无知无觉，堕入死水盲修。"
     ],
     "classicRef": "《超宗慧方禅师语录》",
-    "relatedConcepts": ["gu-jing-ming-concept","self-nature","no-abiding"],
-    "relatedPersons": ["chaozong-huifang","sixin-wuxin"],
-    "relatedBooks": ["chaozongyulu"]
-  }
-,
+    "relatedConcepts": [
+      "gu-jing-ming-concept",
+      "self-nature",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "chaozong-huifang",
+      "sixin-wuxin"
+    ],
+    "relatedBooks": [
+      "chaozongyulu"
+    ]
+  },
   {
     "id": "xin-zhi-shuang-xiu",
     "title": "信智双修法门",
@@ -2030,11 +2793,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "狂慧废戒：执理废事，以为一切皆空而轻忽因果十善，自招恶果。"
     ],
     "classicRef": "《宝行王正论》",
-    "relatedConcepts": ["xin-zhi-er-gen","zeng-shang-sheng-yu-jue-ding-sheng","zhongguan"],
-    "relatedPersons": ["nagarjuna","paramartha"],
-    "relatedBooks": ["baoxingwangzhenglun","zhonglun"]
-  }
-,
+    "relatedConcepts": [
+      "xin-zhi-er-gen",
+      "zeng-shang-sheng-yu-jue-ding-sheng",
+      "zhongguan"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "paramartha"
+    ],
+    "relatedBooks": [
+      "baoxingwangzhenglun",
+      "zhonglun"
+    ]
+  },
   {
     "id": "shi-er-men-po-zhi",
     "title": "十二门破执正观法门",
@@ -2051,9 +2823,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "亦不可执着于推演逻辑而成为口头知解中观，必须在日用起心动念处踏实行持破执。"
     ],
     "classicRef": "《十二门论》《中论》《肇论》",
-    "relatedConcepts": ["shi-er-men-guan","bi-jing-kong-ji","emptiness","prajna"],
-    "relatedPersons": ["nagarjuna","kumarajiva","sengrui"],
-    "relatedBooks": ["shiertimenlun","zhonglun","jingangjing"]
+    "relatedConcepts": [
+      "shi-er-men-guan",
+      "bi-jing-kong-ji",
+      "emptiness",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "jiumoluoshi",
+      "sengrui"
+    ],
+    "relatedBooks": [
+      "shiertimenlun",
+      "zhonglun",
+      "jingangjing"
+    ]
   },
   {
     "id": "jin-gang-san-mei-ding",
@@ -2071,9 +2856,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "借口‘罪性本空’而放纵身心、胡作非为，堕入拨无因果之恶取空深坑。"
     ],
     "classicRef": "《金刚三昧经》《菩提达摩大师入道四行观》《六祖坛经》",
-    "relatedConcepts": ["yi-wei-zhen-shi","ben-jue-li-ci","self-nature"],
-    "relatedPersons": ["bodhidharma","yuanxiao"],
-    "relatedBooks": ["jingangsanmeijing","sixingguan","lengqiejing"]
+    "relatedConcepts": [
+      "yi-wei-zhen-shi",
+      "ben-jue-li-ci",
+      "self-nature"
+    ],
+    "relatedPersons": [
+      "bodhidharma",
+      "yuanxiao"
+    ],
+    "relatedBooks": [
+      "jingangsanmeijing",
+      "sixingguan",
+      "lengqiejing"
+    ]
   },
   {
     "id": "shi-er-shi-chen-xiu-chi",
@@ -2091,11 +2887,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "借口‘日用即道’而在世俗名利中彻底放逸随波逐流，落入凡夫不修之无明海。"
     ],
     "classicRef": "《平石如砥禅师语录》《赵州和尚语录》",
-    "relatedConcepts": ["shi-er-shi-ge","xing-xing-chang-zai","dao-zai-riyong"],
-    "relatedPersons": ["pingshi-rudi","zhaozhou"],
-    "relatedBooks": ["pingshiyulu","zhaozhouyulu"]
-  }
-,
+    "relatedConcepts": [
+      "shi-er-shi-ge",
+      "xing-xing-chang-zai",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "pingshi-rudi",
+      "zhaozhou"
+    ],
+    "relatedBooks": [
+      "pingshiyulu",
+      "zhaozhouyulu"
+    ]
+  },
   {
     "id": "weixin-guan",
     "title": "唯心观心法门",
@@ -2107,13 +2912,26 @@ export const ZEN_METHODS: MethodItem[] = [
       "观心照寂：直探能知能觉之灵智本体，寂而常照，照而常寂，不起断灭之想，亦不住有为功德。",
       "定慧双运：于日常行住坐卧中不舍万行、常怀仁慈，以此无住清净心冥合真如实相，不动尘劳圆成正觉。"
     ],
-    "pitfalls": ["切忌以意识强行“伏捺妄心”或“刳情凝空”，更不可执“心外无法”而落入拨无因果、任情放逸之狂禅邪见。"],
+    "pitfalls": [
+      "切忌以意识强行“伏捺妄心”或“刳情凝空”，更不可执“心外无法”而落入拨无因果、任情放逸之狂禅邪见。"
+    ],
     "classicRef": "《永明智觉禅师唯心诀》",
-    "relatedConcepts": ["wanfa-weixin","dinghui-xiangzi","yibai-ershi-xiezong","chan-jiao-he-yi"],
-    "relatedPersons": ["yongming-yanshou","fayan-wenyi"],
-    "relatedBooks": ["weixinjue","wanshantongguiji","dachengqixinlun"]
-  }
-,
+    "relatedConcepts": [
+      "wanfa-weixin",
+      "dinghui-xiangzi",
+      "yibai-ershi-xiezong",
+      "chan-jiao-he-yi"
+    ],
+    "relatedPersons": [
+      "yongming-yanshou",
+      "fayan-wenyi"
+    ],
+    "relatedBooks": [
+      "weixinjue",
+      "wanshantongguiji",
+      "dachengqixinlun"
+    ]
+  },
   {
     "id": "liuxiang-yuanrong-guan",
     "title": "六相圆融观照法门",
@@ -2129,11 +2947,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌把六相当作枯燥的哲学逻辑去思惟推理，落入义学法执，失却活泼泼的当下现成觉照。"
     ],
     "classicRef": "《金陵清凉院文益禅师语录》、《人天眼目》",
-    "relatedConcepts": ["liuxiang-yuanrong","yiqie-xiancheng","lishi-wuai"],
-    "relatedPersons": ["fayan-wenyi","yongming-yanshou"],
-    "relatedBooks": ["wenyiyulu","renyantianmu","weixinjue"]
-  }
-,
+    "relatedConcepts": [
+      "liuxiang-yuanrong",
+      "yiqie-xiancheng",
+      "lishi-wuai"
+    ],
+    "relatedPersons": [
+      "fayan-wenyi",
+      "yongming-yanshou"
+    ],
+    "relatedBooks": [
+      "wenyiyulu",
+      "renyantianmu",
+      "weixinjue"
+    ]
+  },
   {
     "id": "yuanxiang-guan",
     "title": "圆相心体观照法门",
@@ -2149,9 +2977,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌将九十七种圆相当作道家符箓或密咒去搞神秘测度，若死执圆相图形，反成宗门死句与名相枷锁。"
     ],
     "classicRef": "《袁州仰山慧寂禅师语录》、《人天眼目》卷四",
-    "relatedConcepts": ["yuanxiang","sijin-huanyuan","nongchan-bingzhong"],
-    "relatedPersons": ["yangshan-huiji","weishan-lingyou"],
-    "relatedBooks": ["yangshanyulu","renyantianmu","weishanyulu"]
+    "relatedConcepts": [
+      "yuanxiang",
+      "sijin-huanyuan",
+      "nongchan-bingzhong"
+    ],
+    "relatedPersons": [
+      "yangshan-huiji",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "yangshanyulu",
+      "renyantianmu",
+      "weishanyulu"
+    ]
   },
   {
     "id": "zhenru-sanmei-guan",
@@ -2169,9 +3008,24 @@ export const ZEN_METHODS: MethodItem[] = [
       "执止废观，不修大悲救度与广观众生苦难，偏入小乘偏真自了汉蹊径。"
     ],
     "classicRef": "《大乘起信论（实叉难陀译）》卷下、《大乘起信论义记》",
-    "relatedConcepts": ["yixin-ermen","zhenru-neixun","shuifeng-shilang","zhi-guan","yixing-sanmei"],
-    "relatedPersons": ["maming","shichanantuo","guifeng-zongmi"],
-    "relatedBooks": ["dachengqixinlunxinyi","dachengqixinlun","jingangsanmeijing","lengqiejing"]
+    "relatedConcepts": [
+      "yi-xin-er-men",
+      "zhenru-neixun",
+      "shuifeng-shilang",
+      "zhi-guan",
+      "yixing-sanmei"
+    ],
+    "relatedPersons": [
+      "maming",
+      "shichanantuo",
+      "guifeng-zongmi"
+    ],
+    "relatedBooks": [
+      "dachengqixinlunxinyi",
+      "dachengqixinlun",
+      "jingangsanmeijing",
+      "lengqiejing"
+    ]
   },
   {
     "id": "renxia-fanshen",
@@ -2188,9 +3042,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "口头模拟“翻身”之态，狂妄自夸，实则胸中分别得失丝毫未去，堕入口头狂禅险坑。"
     ],
     "classicRef": "《剑关子益禅师语录》、《五家正宗赞》",
-    "relatedConcepts": ["changjian-yitian","quanshou-quanfang","kanhua-chan-concept","wuxin-jueguan"],
-    "relatedPersons": ["jianguan-ziyi","linji","yangqi-fanghui"],
-    "relatedBooks": ["jianguanyulu","linji","wumenguan"]
+    "relatedConcepts": [
+      "changjian-yitian",
+      "quanshou-quanfang",
+      "kanhua-chan-concept",
+      "wuxin-jueguan"
+    ],
+    "relatedPersons": [
+      "jianguan-ziyi",
+      "linji",
+      "yangqi-fanghui"
+    ],
+    "relatedBooks": [
+      "jianguanyulu",
+      "linji",
+      "wumenguan"
+    ]
   },
   {
     "id": "babu-zhongdao-guan",
@@ -2208,9 +3075,22 @@ export const ZEN_METHODS: MethodItem[] = [
       "因观“不生不灭”而堕入枯寂断灭，落入顽空顽石无记之境。"
     ],
     "classicRef": "《顺中论》、《中论》、《十二门论》",
-    "relatedConcepts": ["xiangsibanru","qukong-shengjian","erdi-buer","zhongdao"],
-    "relatedPersons": ["nagarjuna","wuzhu-asanga","qutan-liuzhi"],
-    "relatedBooks": ["shunzhonglun","zhonglun","shiertimenlun"]
+    "relatedConcepts": [
+      "xiangsibanru",
+      "qukong-shengjian",
+      "erdi-buer",
+      "zhongdao"
+    ],
+    "relatedPersons": [
+      "nagarjuna",
+      "wuzhu-asanga",
+      "qutan-liuzhi"
+    ],
+    "relatedBooks": [
+      "shunzhonglun",
+      "zhonglun",
+      "shiertimenlun"
+    ]
   },
   {
     "id": "guotang-zhanbo-fa",
@@ -2228,9 +3108,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "将过堂视为死板仪式或饱腹应酬，未在起心动念间提撕五观与三轮体空。"
     ],
     "classicRef": "《入众须知》、《入众日用》、《禅苑清规》",
-    "relatedConcepts": ["ruzhong-zhifa","shicun-wuguan","ordinary-mind"],
-    "relatedPersons": ["baizhang","zongze"],
-    "relatedBooks": ["ruzhongxuzhi","ruzhongriyong","chanyuanqinggui"]
+    "relatedConcepts": [
+      "ruzhong-zhifa",
+      "shicun-wuguan",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "baizhang",
+      "zongze"
+    ],
+    "relatedBooks": [
+      "ruzhongxuzhi",
+      "ruzhongriyong",
+      "chanyuanqinggui"
+    ]
   },
   {
     "id": "jushi-canchan-fa",
@@ -2248,9 +3139,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "将生活与修行截然割裂，工作时心猿意马，闲暇时枯坐自闭。"
     ],
     "classicRef": "《庞居士语录》、《大慧语录》、《圆悟心要》",
-    "relatedConcepts": ["yunshui-banchai","danyuan-kongzhu-suoyou","buyu-wanfa-weilv","ordinary-mind"],
-    "relatedPersons": ["pang-yun","ling-zhao"],
-    "relatedBooks": ["pangjushiyulu","dahuiyulu"]
+    "relatedConcepts": [
+      "yunshui-banchai",
+      "danyuan-kongzhu-suoyou",
+      "buyu-wanfa-weilv",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "pang-yun",
+      "ling-zhao"
+    ],
+    "relatedBooks": [
+      "pangjushiyulu",
+      "dahuiyulu"
+    ]
   },
   {
     "id": "san-bu-ting-fa",
@@ -2268,9 +3170,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "借“出不随应”为由逃避世俗应尽职责，或是假借大机大用而放纵妄动。"
     ],
     "classicRef": "《海印昭如禅师三会语录》、《临济录》、《剑关语录》",
-    "relatedConcepts": ["yi-bu-ting-xuan","miwu-liangwang","ordinary-mind"],
-    "relatedPersons": ["haiyin-zhaoru","xueyan-zuqin"],
-    "relatedBooks": ["haiyinyulu","linji"]
+    "relatedConcepts": [
+      "yi-bu-ting-xuan",
+      "miwu-liangwang",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "haiyin-zhaoru",
+      "xueyan-zuqin"
+    ],
+    "relatedBooks": [
+      "haiyinyulu",
+      "linji"
+    ]
   },
   {
     "id": "tiben-zhengji-guan",
@@ -2287,9 +3199,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "拨无经教言说，沉空滞寂，堕入狂禅恶取空。"
     ],
     "classicRef": "《传法正宗论》、《传法正宗记》、《辅教篇》",
-    "relatedConcepts": ["jiaowai-biechuan-zhengzong","sanzang-lingfu","zhengfa-yancang"],
-    "relatedPersons": ["qisong","bodhidharma","huineng"],
-    "relatedBooks": ["chuanfazhengzonglun","chuanfazhengzongdingzutu","tanjing"]
+    "relatedConcepts": [
+      "jiaowai-biechuan-zhengzong",
+      "sanzang-lingfu",
+      "zhengfa-yancang"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzonglun",
+      "chuanfazhengzongdingzutu",
+      "tanjing"
+    ]
   },
   {
     "id": "nongchan-richang",
@@ -2304,9 +3228,19 @@ export const ZEN_METHODS: MethodItem[] = [
     "pitfalls": [
       "执着外在劳作为究竟，堕入凡夫顽痴劳碌；或死守静默枯坐，厌恶日常作务之二见偏差。"
     ],
-    "relatedConcepts": ["jin-ding-zi","ding-men-yi-yan"],
-    "relatedPersons": ["xisou-shaotan","baizhang"],
-    "relatedBooks": ["xisouyulu","baizhang","ruzhongxuzhi"]
+    "relatedConcepts": [
+      "jin-ding-zi",
+      "ding-men-yi-yan"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan",
+      "baizhang"
+    ],
+    "relatedBooks": [
+      "xisouyulu",
+      "baizhang",
+      "ruzhongxuzhi"
+    ]
   },
   {
     "id": "ji-shi-ji-fa",
@@ -2321,11 +3255,19 @@ export const ZEN_METHODS: MethodItem[] = [
     "pitfalls": [
       "死守文字经卷推度名相，致使道力软弱；或误将造恶当解脱，借口罪性空而放纵情欲。"
     ],
-    "relatedConcepts": ["ren-zhu-fa-fa-zhu-ren","guanzhao-bore"],
-    "relatedPersons": ["bodhidharma"],
-    "relatedBooks": ["damoxinjinganxin","sixingguan","poxianglun"]
-  }
-,
+    "relatedConcepts": [
+      "ren-zhu-fa-fa-zhu-ren",
+      "guanzhao-bore"
+    ],
+    "relatedPersons": [
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "damoxinjinganxin",
+      "sixingguan",
+      "poxianglun"
+    ]
+  },
   {
     "id": "si-jue-can-jiu",
     "title": "四绝截流参究法",
@@ -2343,11 +3285,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌半途而废，须具金刚不坏之誓愿与勇猛绝伦之死力。"
     ],
     "classicRef": "天台无见先睹禅师语录",
-    "relatedConcepts": ["si-jue-lu-tou","hu-chou-bu-shan"],
-    "relatedPersons": ["wujian-xiandu"],
-    "relatedBooks": ["wujianxianduyulu"]
-  }
-,
+    "relatedConcepts": [
+      "si-jue-lu-tou",
+      "hu-chou-bu-shan"
+    ],
+    "relatedPersons": [
+      "wujian-xiandu"
+    ],
+    "relatedBooks": [
+      "wujianxianduyulu"
+    ]
+  },
   {
     "id": "quan-tou-chu-bei-guan",
     "title": "触背牢关参究法",
@@ -2365,11 +3313,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "必须亲历‘大死一番’之逼拶，直下打破牢关，方免成时人话靶。"
     ],
     "classicRef": "黄龙晦堂心和尚语录",
-    "relatedConcepts": ["huang-long-quan-tou","dun-wang-zhu-jian"],
-    "relatedPersons": ["huitang-zuxin"],
-    "relatedBooks": ["huitangyulu"]
-  }
-,
+    "relatedConcepts": [
+      "huang-long-quan-tou",
+      "dun-wang-zhu-jian"
+    ],
+    "relatedPersons": [
+      "huitang-zuxin"
+    ],
+    "relatedBooks": [
+      "huitangyulu"
+    ]
+  },
   {
     "id": "zi-ta-xiang-huan-guan",
     "title": "自他相换修心法",
@@ -2387,9 +3341,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可执着有‘能换之我’与‘所救之他’，最终须融归般若三轮体空。"
     ],
     "classicRef": "菩提行经",
-    "relatedConcepts": ["zi-ta-xiang-huan","zi-ta-ping-deng","pu-ti-xin-bao"],
-    "relatedPersons": ["ji-tian"],
-    "relatedBooks": ["putixingjing"]
+    "relatedConcepts": [
+      "zi-ta-xiang-huan",
+      "zi-ta-ping-deng",
+      "pu-ti-xin-bao"
+    ],
+    "relatedPersons": [
+      "ji-tian"
+    ],
+    "relatedBooks": [
+      "putixingjing"
+    ]
   },
   {
     "id": "po-xie-xian-zheng-can-jiu",
@@ -2408,9 +3370,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "破除妄见后不可起‘我在悟中’之傲慢，当回光自照。"
     ],
     "classicRef": "百论",
-    "relatedConcepts": ["po-xie-xian-zheng","yan-er-wu-dang","po-kong-xian-zhen","zhongguan"],
-    "relatedPersons": ["ti-po","seng-zhao","bodhidharma"],
-    "relatedBooks": ["bailun","zhonglun"]
+    "relatedConcepts": [
+      "po-xie-xian-zheng",
+      "yan-er-wu-dang",
+      "po-kong-xian-zhen",
+      "zhongguan"
+    ],
+    "relatedPersons": [
+      "ti-po",
+      "seng-zhao",
+      "bodhidharma"
+    ],
+    "relatedBooks": [
+      "bailun",
+      "zhonglun"
+    ]
   },
   {
     "id": "wuyi-wunian-guan",
@@ -2429,9 +3403,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "观照时莫生‘我在观心’之能所对立，随起随觉，觉之即无。"
     ],
     "classicRef": "历代法宝记",
-    "relatedConcepts": ["wuyi-wunian-mowang","baotang-wunian","ji-shi-wu-sheng","wu-nian"],
-    "relatedPersons": ["wuxiang","baotang-wuzhu"],
-    "relatedBooks": ["lidaifabaoji","tanjing"]
+    "relatedConcepts": [
+      "wuyi-wunian-mowang",
+      "baotang-wunian",
+      "ji-shi-wu-sheng",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "wuxiang",
+      "baotang-wuzhu"
+    ],
+    "relatedBooks": [
+      "lidaifabaoji",
+      "tanjing"
+    ]
   },
   {
     "id": "shanju-canjiu",
@@ -2450,9 +3435,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可生起隐居胜于入世之傲慢分别，动静本无二致。"
     ],
     "classicRef": "石屋清珙禅师语录",
-    "relatedConcepts": ["shanju-chan","dongjing-buer","shiju-huoju"],
-    "relatedPersons": ["shiwu-qinggong"],
-    "relatedBooks": ["shiwuyulu","pangjushiyulu"]
+    "relatedConcepts": [
+      "shanju-chan",
+      "dongjing-buer",
+      "shiju-huoju"
+    ],
+    "relatedPersons": [
+      "shiwu-qinggong"
+    ],
+    "relatedBooks": [
+      "shiwuyulu",
+      "pangjushiyulu"
+    ]
   },
   {
     "id": "xiyan-canjiu",
@@ -2471,9 +3465,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "防范落入顽空死水，见性之后须起大悲利他之万行妙用。"
     ],
     "classicRef": "西岩了慧禅师语录",
-    "relatedConcepts": ["tiaochu-tuzhe","fengtong-li-yang","xuan-fo-chang"],
-    "relatedPersons": ["xiyan-liaohui","wuzhun-shifan"],
-    "relatedBooks": ["xiyanyulu"]
+    "relatedConcepts": [
+      "tiaochu-tuzhe",
+      "fengtong-li-yang",
+      "xuan-fo-chang"
+    ],
+    "relatedPersons": [
+      "xiyan-liaohui",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "xiyanyulu"
+    ]
   },
   {
     "id": "duanqiao-jieduan",
@@ -2492,11 +3495,19 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可执着于无门无路而堕入空腹高心之狂禅，须在日用事相中历练纯熟。"
     ],
     "classicRef": "断桥妙伦禅师语录",
-    "relatedConcepts": ["duanqiao-huolu","jieduan-zhongliu","chiguli"],
-    "relatedPersons": ["duanqiao-miaolun","wuzhun-shifan"],
-    "relatedBooks": ["duanqiaoyulu"]
-  }
-,
+    "relatedConcepts": [
+      "duanqiao-huolu",
+      "jieduan-zhongliu",
+      "chiguli"
+    ],
+    "relatedPersons": [
+      "duanqiao-miaolun",
+      "wuzhun-shifan"
+    ],
+    "relatedBooks": [
+      "duanqiaoyulu"
+    ]
+  },
   {
     "id": "guan-xin-kong-wang",
     "title": "观心空王法门",
@@ -2518,13 +3529,12 @@ export const ZEN_METHODS: MethodItem[] = [
       "non-duality"
     ],
     "relatedPersons": [
-      "fu-dashi"
+      "fudashi"
     ],
     "relatedBooks": [
       "shanhuidashilu"
     ]
-  }
-,
+  },
   {
     "id": "chuan-po-tie-wang",
     "title": "冲决铁网参究法",
@@ -2553,8 +3563,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "yuejianyulu",
       "xiyanyulu"
     ]
-  }
-,
+  },
   {
     "id": "chanyuan-chali",
     "title": "丛林茶礼参修法",
@@ -2583,8 +3592,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "conglinxiaodingqinggui",
       "chanyuanqinggui"
     ]
-  }
-,
+  },
   {
     "id": "jin-guang-dabei-guan",
     "title": "铁金光菩提心大悲观",
@@ -2615,8 +3623,7 @@ export const ZEN_METHODS: MethodItem[] = [
       "dachengqixinlun",
       "baoxinglun"
     ]
-  }
-,
+  },
   {
     "id": "lie-yan-ben-lai-guan",
     "title": "烈焰回光本来面目观",
@@ -2765,9 +3772,21 @@ export const ZEN_METHODS: MethodItem[] = [
       "在无字上起知解思维，分别有无或玩弄名相葛藤",
       "工夫提得时断时续，动静打成两橛，未能寤寐一如"
     ],
-    "relatedConcepts": ["sheng-tie-ji-liang", "ping-zuo-yi-wu", "wuzi-huatou", "yiqing"],
-    "relatedPersons": ["xueyan-zuqin", "gaofeng-yuanmiao"],
-    "relatedBooks": ["xueyanyulu", "gaofengyulu", "wumenguan"]
+    "relatedConcepts": [
+      "sheng-tie-ji-liang",
+      "ping-zuo-yi-wu",
+      "wuzi-huatou",
+      "yiqing"
+    ],
+    "relatedPersons": [
+      "xueyan-zuqin",
+      "gaofeng-yuanmiao"
+    ],
+    "relatedBooks": [
+      "xueyanyulu",
+      "gaofengyulu",
+      "wumenguan"
+    ]
   },
   {
     "id": "fa-hua-san-mei-guan",
@@ -2784,9 +3803,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "将灵山未散落入奇特神异感应妄想，偏离心性本源",
       "偏执空寂不起大用，沉入枯槁顽空"
     ],
-    "relatedConcepts": ["yi-cheng-liao-yi", "kai-quan-xian-shi", "kai-shi-wu-ru"],
-    "relatedPersons": ["tiantai-zhiyi", "jiumoluoshi"],
-    "relatedBooks": ["miaofalianhuajing"]
+    "relatedConcepts": [
+      "yi-cheng-liao-yi",
+      "kai-quan-xian-shi",
+      "kai-shi-wu-ru"
+    ],
+    "relatedPersons": [
+      "tiantai-zhiyi",
+      "jiumoluoshi"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing"
+    ]
   },
   {
     "id": "zhuan-fa-hua-guan",
@@ -2803,11 +3831,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "借‘无念转经’之名堕入轻慢经教、放逸废修之顽空狂禅",
       "口念心不行，依然被声名计较牵引"
     ],
-    "relatedConcepts": ["xin-wu-zhuan-fa-hua", "kai-shi-wu-ru", "huo-zhai-bai-niu"],
-    "relatedPersons": ["huineng", "fada"],
-    "relatedBooks": ["miaofalianhuajing", "tanjing"]
-  }
-,
+    "relatedConcepts": [
+      "xin-wu-zhuan-fa-hua",
+      "kai-shi-wu-ru",
+      "huo-zhai-bai-niu"
+    ],
+    "relatedPersons": [
+      "huineng",
+      "fada"
+    ],
+    "relatedBooks": [
+      "miaofalianhuajing",
+      "tanjing"
+    ]
+  },
   {
     "id": "zheng-zong-chuan-xin-guan",
     "title": "传法正宗心印观",
@@ -2823,9 +3860,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "落入知识考据学问之套路，逐字逐句寻章摘句而荒废自性觉照",
       "误将虚妄想象之神异传承当成真实心印"
     ],
-    "relatedConcepts": ["chuan-fa-zheng-zong", "zheng-fa-yan-zang", "nian-hua-wei-xiao"],
-    "relatedPersons": ["qisong", "bodhidharma", "huineng"],
-    "relatedBooks": ["chuanfazhengzongji", "chuanfazhengzonglun"]
+    "relatedConcepts": [
+      "chuan-fa-zheng-zong",
+      "zhengfa-yancang",
+      "nian-hua-wei-xiao"
+    ],
+    "relatedPersons": [
+      "qisong",
+      "bodhidharma",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "chuanfazhengzonglun"
+    ]
   },
   {
     "id": "mo-zhuan-jian-xing-fa",
@@ -2842,11 +3890,20 @@ export const ZEN_METHODS: MethodItem[] = [
       "偏解祖意而废除日常坐禅定力训练，堕入散乱狂放",
       "将‘打牛不打车’落入口头清谈葛藤"
     ],
-    "relatedConcepts": ["mo-zhuan-cheng-jing", "ordinary-mind", "mind-is-buddha"],
-    "relatedPersons": ["huairang", "mazu"],
-    "relatedBooks": ["chuanfazhengzongji", "mazu"]
-  }
-,
+    "relatedConcepts": [
+      "mo-zhuan-cheng-jing",
+      "ordinary-mind",
+      "mind-is-buddha"
+    ],
+    "relatedPersons": [
+      "huairang",
+      "mazu"
+    ],
+    "relatedBooks": [
+      "chuanfazhengzongji",
+      "mazu"
+    ]
+  },
   {
     "id": "san-zi-xing-cha-fa",
     "title": "三自省察观心法",
@@ -2862,9 +3919,16 @@ export const ZEN_METHODS: MethodItem[] = [
       "陷入世俗道德纠结悔恨，反增心理重担，未能体悟罪性本空",
       "流于形式走过场，未曾真切在起心动念处用功"
     ],
-    "relatedConcepts": ["zi-men-jing-ce", "wu-xue-shi-men"],
-    "relatedPersons": ["rujin"],
-    "relatedBooks": ["zimenjingxun"]
+    "relatedConcepts": [
+      "zi-men-jing-ce",
+      "wu-xue-shi-men"
+    ],
+    "relatedPersons": [
+      "rujin"
+    ],
+    "relatedBooks": [
+      "zimenjingxun"
+    ]
   },
   {
     "id": "wu-chang-jing-xin-fa",
@@ -2881,11 +3945,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "由观无常堕入悲观消极与厌世断灭，未能生起救拔众生之大悲菩提心",
       "仅作口头知解思惟，未能形成触目惊心之切身观感"
     ],
-    "relatedConcepts": ["mo-dai-lao-lai", "zi-men-jing-ce"],
-    "relatedPersons": ["rujin", "weishan-lingyou"],
-    "relatedBooks": ["zimenjingxun"]
-  }
-,
+    "relatedConcepts": [
+      "mo-dai-lao-lai",
+      "zi-men-jing-ce"
+    ],
+    "relatedPersons": [
+      "rujin",
+      "weishan-lingyou"
+    ],
+    "relatedBooks": [
+      "zimenjingxun"
+    ]
+  },
   {
     "id": "jue-hou-fu-su-fa",
     "title": "绝后复苏大死大活观",
@@ -2901,9 +3972,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "切莫在枯寂中沉空滞寂、认贼作子"
     ],
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["huo-li-wu-gui", "mu-zha-geng", "bu-luo-si-wei"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
+    "relatedConcepts": [
+      "huo-li-wu-gui",
+      "mu-zha-geng",
+      "bu-luo-si-wei"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
   },
   {
     "id": "dian-po-wang-qing-fa",
@@ -2919,11 +3998,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可向外执着光相境界而迷失自性本源"
     ],
     "classicRef": "希叟绍昙禅师广录",
-    "relatedConcepts": ["tuo-zai-fo-shu", "bu-luo-si-wei"],
-    "relatedPersons": ["xisou-shaotan"],
-    "relatedBooks": ["xisouguanglu"]
-  }
-,
+    "relatedConcepts": [
+      "tuo-zai-fo-shu",
+      "bu-luo-si-wei"
+    ],
+    "relatedPersons": [
+      "xisou-shaotan"
+    ],
+    "relatedBooks": [
+      "xisouguanglu"
+    ]
+  },
   {
     "id": "ba-bu-xian-liang-guan",
     "title": "八不中道现量观",
@@ -2939,9 +4024,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可滞留于‘无’与‘空’之虚无边际而堕入断灭恶见"
     ],
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["ban-ruo-deng", "xi-mie-xi-lun", "kongxing"],
-    "relatedPersons": ["qingbian", "nagarjuna"],
-    "relatedBooks": ["banruodenglunshi"]
+    "relatedConcepts": [
+      "ban-ruo-deng",
+      "xi-mie-xi-lun",
+      "kongxing"
+    ],
+    "relatedPersons": [
+      "qingbian",
+      "nagarjuna"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
   },
   {
     "id": "sheng-yi-li-si-ju-guan",
@@ -2958,11 +4052,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "不可在日常为人处世中以此观作为废弃因果善业之借口"
     ],
     "classicRef": "般若灯论释",
-    "relatedConcepts": ["zi-xu-pai", "xi-mie-xi-lun", "bu-luo-si-wei"],
-    "relatedPersons": ["qingbian"],
-    "relatedBooks": ["banruodenglunshi"]
-  }
-,
+    "relatedConcepts": [
+      "zi-xu-pai",
+      "xi-mie-xi-lun",
+      "bu-luo-si-wei"
+    ],
+    "relatedPersons": [
+      "qingbian"
+    ],
+    "relatedBooks": [
+      "banruodenglunshi"
+    ]
+  },
   {
     "id": "san-guan-can-jiu-fa",
     "title": "三关参究印心法",
@@ -2977,9 +4078,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "切莫在破参后执著孤寂空境而自缚不前"
     ],
     "classicRef": "御选语录",
-    "relatedConcepts": ["tou-san-guan", "chu-guan-po-can", "chong-guan-da-si-da-huo", "lao-guan-mo-hou"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "chu-guan-po-can",
+      "chong-guan-da-si-da-huo",
+      "lao-guan-mo-hou"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "jian-mo-bian-yi-fa",
@@ -2996,9 +4106,16 @@ export const ZEN_METHODS: MethodItem[] = [
       "必须反躬自省、句句勘验自家脚跟"
     ],
     "classicRef": "御选语录",
-    "relatedConcepts": ["tou-san-guan", "bu-luo-si-wei"],
-    "relatedPersons": ["yongzheng"],
-    "relatedBooks": ["yuxuanyulu"]
+    "relatedConcepts": [
+      "tou-san-guan",
+      "bu-luo-si-wei"
+    ],
+    "relatedPersons": [
+      "yongzheng"
+    ],
+    "relatedBooks": [
+      "yuxuanyulu"
+    ]
   },
   {
     "id": "zhu-bi-duo-ji-fa",
@@ -3014,9 +4131,18 @@ export const ZEN_METHODS: MethodItem[] = [
       "切忌强作解会，须在情识山穷水尽处体会绝后复苏"
     ],
     "classicRef": "续传灯录",
-    "relatedConcepts": ["sha-ren-dao-huo-ren-ju", "tou-san-guan"],
-    "relatedPersons": ["shoushan-xingnian", "yexian-guisheng"],
-    "relatedBooks": ["xuchuandenglu", "wudenghuiyuan"]
+    "relatedConcepts": [
+      "sha-ren-dao-huo-ren-ju",
+      "tou-san-guan"
+    ],
+    "relatedPersons": [
+      "shoushan-xingnian",
+      "yexian-guisheng"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "wudenghuiyuan"
+    ]
   },
   {
     "id": "sa-shou-xuan-ya-fa",
@@ -3032,9 +4158,17 @@ export const ZEN_METHODS: MethodItem[] = [
       "若未曾大死一番，便不能体会绝后大苏的活泼妙用"
     ],
     "classicRef": "续传灯录",
-    "relatedConcepts": ["sha-ren-dao-huo-ren-ju", "chong-guan-da-si-da-huo"],
-    "relatedPersons": ["yuanwu-keqin", "dahui-zonggao"],
-    "relatedBooks": ["xuchuandenglu", "biyanlu"]
-  },
+    "relatedConcepts": [
+      "sha-ren-dao-huo-ren-ju",
+      "chong-guan-da-si-da-huo"
+    ],
+    "relatedPersons": [
+      "yuanwu-keqin",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "xuchuandenglu",
+      "biyanlu"
+    ]
+  }
 ];
-

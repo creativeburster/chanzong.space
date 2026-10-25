@@ -45,12 +45,12 @@ export function CopyrightCopyHandler() {
           `出处：《${pageTitle}》`,
           `链接：${pageUrl}`,
           '来源：禅宗知识库 (chanzong.space)',
-          '著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。',
+          '版权声明：古籍原文属公有领域；本站白话今译与导读遵循 CC BY-NC-SA 4.0 协议，非商业性使用请注明出处。',
         ].join('\n');
 
         const fullPlainText = selectedText + '\n' + attributionText;
 
-        const htmlAttribution = `<br><br>————————————<br>出处：《${pageTitle}》<br>链接：<a href="${pageUrl}">${pageUrl}</a><br>来源：禅宗知识库 (chanzong.space)<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。`;
+        const htmlAttribution = `<br><br>————————————<br>出处：《${pageTitle}》<br>链接：<a href="${pageUrl}">${pageUrl}</a><br>来源：禅宗知识库 (chanzong.space)<br>版权声明：古籍原文属公有领域；本站白话今译与导读遵循 CC BY-NC-SA 4.0 协议，非商业性使用请注明出处。`;
         const fullHtmlText = `<div>${selectedText.replace(/\r\n|\n/g, '<br>')}${htmlAttribution}</div>`;
 
         // 1. 优先使用标准 clipboardData 写入纯文本和 HTML 富文本（微信聊天窗口优先读取 text/html）

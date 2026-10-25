@@ -5,7 +5,7 @@ import { ZEN_FAQS } from '@/lib/taxonomy/faqs';
 
 export const metadata: Metadata = {
   title: `禅宗解惑问答 · ${STATS.faqs}则深层疑难答疑`,
-  description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析、修证疑问，覆盖禅宗核心议题与常见疑惑。`,
+  description: `禅宗知识库收录${STATS.faqs}条深度问答——涵盖公案机锋解读、心性义理辨析、日常参禅修证疑问与典籍导读，全面解答禅门核心议题与常见疑惑。`,
   alternates: {
     canonical: '/faq',
     languages: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: `问答 · ${STATS.faqs}则宗门解惑 | 禅宗知识库 ChanZong.space`,
     description: `禅宗${STATS.faqs}条问答——公案解读、义理辨析与修证疑问。`,
     url: 'https://chanzong.space/faq',
-    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
+    images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禅宗知识库 ChanZong.space' }],
   },
 };
 

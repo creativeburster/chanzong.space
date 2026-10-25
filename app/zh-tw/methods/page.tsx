@@ -6,7 +6,7 @@ import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: "禪宗修行法門 · 歷代修持宗綱",
-  description: `禪宗${STATS.methods}種修持法門——念佛禪、棒喝、機鋒、看話頭、默照禪、坐禪儀等，禪門實修方便與用功方法詳解。`,
+  description: `禪宗知識庫收錄${STATS.methods}種修持法門——涵蓋看話頭、默照禪、坐禪儀、一行三昧、棒喝機鋒、五位君臣與日常觀心等禪門實修步驟與防偏指南。`,
   alternates: {
     canonical: '/zh-tw/methods',
     languages: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://chanzong.space/zh-tw/methods',
     locale: 'zh_TW',
     siteName: '禪宗知識庫',
-    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+    images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
   },
 };
 

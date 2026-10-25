@@ -8,14 +8,61 @@ interface PageProps { params: { id: string } }
 
 export const dynamicParams = false;
 
+function buildTradKoanTitleAndDesc(item: any): { title: string; desc: string } {
+  const name = String(item.question || item.id).trim();
+  const master = String(item.master || '').trim();
+  const cleanAns = String(item.answer || '').replace(/\s+/g, ' ').replace(/^[“"「]|[”"」]$/g, '').trim();
+  const shortAns = cleanAns.length > 14 ? cleanAns.slice(0, 14) + '…' : cleanAns;
+  const masterPart = master && !name.includes(master.slice(0, 2)) ? `${master}：` : '';
+  const ansPart = shortAns && !name.includes(shortAns.replace(/…$/, '').replace(/[。！？，]/g, '')) ? `「${shortAns}」` : '';
+  const baseTitle = `${masterPart}${name}${ansPart}`;
+  const srcClean = String(item.source || '').replace(/[《》\s]/g, '').slice(0, 10);
+
+  const duplicates = ZEN_KOANS.filter((k: any) => {
+    const n2 = String(k.question || k.id).trim();
+    const m2 = String(k.master || '').trim();
+    const a2 = String(k.answer || '').replace(/\s+/g, ' ').replace(/^[“"「]|[”"」]$/g, '').trim();
+    const s2 = a2.length > 14 ? a2.slice(0, 14) + '…' : a2;
+    const mp2 = m2 && !n2.includes(m2.slice(0, 2)) ? `${m2}：` : '';
+    const ap2 = s2 && !n2.includes(s2.replace(/…$/, '').replace(/[。！？，]/g, '')) ? `「${s2}」` : '';
+    return `${mp2}${n2}${ap2}` === baseTitle;
+  });
+
+  let simpTitle = `${baseTitle} · 公案`;
+  if (duplicates.length > 1) {
+    const sameSrc = duplicates.filter((k: any) => String(k.source || '').replace(/[《》\s]/g, '').slice(0, 10) === srcClean);
+    if (sameSrc.length > 1) {
+      simpTitle = `${baseTitle}（${srcClean ? srcClean + '·' : ''}${item.id.replace('koan-', '第')}则） · 公案`;
+    } else {
+      simpTitle = `${baseTitle}（${srcClean || item.id}） · 公案`;
+    }
+  }
+
+  const combinedDesc = [
+    item.context,
+    item.interpretation ? `【宗门评唱】${item.interpretation}` : '',
+    item.source ? `（出自${item.source}）` : '',
+  ].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+
+  return {
+    title: convertToTrad(simpTitle),
+    desc: convertToTrad(combinedDesc.slice(0, 145) || '宗门公案机锋开示与义理评唱。'),
+  };
+}
+
 function EntityJsonLd({ item }: { item: any }) {
   const name = convertToTrad(String(item.question || ''));
-  const desc = convertToTrad(String(item.context || item.interpretation || item.answer || '')).replace(/\s+/g, ' ').slice(0, 160);
   const answerText = [
     item.answer ? `【祖師答語】${convertToTrad(item.answer)}` : '',
     item.context ? `【因緣背景】${convertToTrad(item.context)}` : '',
     item.interpretation ? `【宗門義解】${convertToTrad(item.interpretation)}` : '',
   ].filter(Boolean).join('\n\n');
+
+  const isBasedOn = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    '@id': `https://chanzong.space/zh-tw/classics/${bid}#book`,
+    url: `https://chanzong.space/zh-tw/classics/${bid}`,
+  }));
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -29,6 +76,7 @@ function EntityJsonLd({ item }: { item: any }) {
       author: item.master ? {
         '@type': 'Person',
         name: convertToTrad(item.master),
+        ...(item.relatedPersons?.[0] ? { '@id': `https://chanzong.space/zh-tw/persons/${item.relatedPersons[0]}#person` } : {}),
       } : undefined,
       acceptedAnswer: {
         '@type': 'Answer',
@@ -36,9 +84,17 @@ function EntityJsonLd({ item }: { item: any }) {
         author: item.master ? {
           '@type': 'Person',
           name: convertToTrad(item.master),
+          ...(item.relatedPersons?.[0] ? { '@id': `https://chanzong.space/zh-tw/persons/${item.relatedPersons[0]}#person` } : {}),
         } : undefined,
         url: `https://chanzong.space/zh-tw/koan/${item.id}`,
       },
+    },
+    ...(isBasedOn.length > 0 ? { isBasedOn } : {}),
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://chanzong.space/#organization',
+      name: '禪宗知識庫',
+      url: 'https://chanzong.space/zh-tw',
     },
     url: `https://chanzong.space/zh-tw/koan/${item.id}`,
     inLanguage: 'zh-TW',
@@ -62,12 +118,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   const item = ZEN_KOANS.find((x: any) => x.id === params.id);
   if (!item) return {};
-  const name = convertToTrad(String(item.question || params.id));
-  const desc = convertToTrad(String(item.context || '')).replace(/\s+/g, ' ').slice(0, 140);
-  const title = `${name} · 公案`;
+  const { title, desc } = buildTradKoanTitleAndDesc(item);
   return {
     title,
-    description: desc || '公案條目',
+    description: desc,
     alternates: {
       canonical: `/zh-tw/koan/${params.id}`,
       languages: {
@@ -78,12 +132,12 @@ export function generateMetadata({ params }: PageProps): Metadata {
     },
     openGraph: {
       type: 'article',
-      title: `${name} · 公案 | 禪宗知識庫 ChanZong.space`,
-      description: desc.slice(0, 150) || '公案條目',
+      title: `${title} | 禪宗知識庫 ChanZong.space`,
+      description: desc.slice(0, 150),
       url: `https://chanzong.space/zh-tw/koan/${params.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
     },
   };
 }
@@ -94,7 +148,6 @@ export default function TradKoanDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  // 服务端预先计算繁体化关联数据，彻底消除客户端水合闪回与 3.8MB 全量 bundle
   const tradItem = {
     ...item,
     question: convertToTrad(item.question),

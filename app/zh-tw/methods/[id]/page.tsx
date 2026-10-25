@@ -17,6 +17,20 @@ function EntityJsonLd({ item }: { item: any }) {
     name: `第 ${idx + 1} 步`,
     text: convertToTrad(s),
   })) : undefined;
+  const isBasedOn = (item.relatedBooks || []).map((bid: string) => ({
+    '@type': 'Book',
+    '@id': `https://chanzong.space/zh-tw/classics/${bid}#book`,
+    url: `https://chanzong.space/zh-tw/classics/${bid}`,
+  }));
+  const authors = (item.relatedPersons || []).map((pid: string) => {
+    const p = ZEN_PERSONS.find((x: any) => x.id === pid);
+    return {
+      '@type': 'Person',
+      '@id': `https://chanzong.space/zh-tw/persons/${pid}#person`,
+      name: p ? convertToTrad(p.name) : pid,
+      url: `https://chanzong.space/zh-tw/persons/${pid}`,
+    };
+  });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -25,6 +39,14 @@ function EntityJsonLd({ item }: { item: any }) {
     name: `禪宗修持法門 · ${name}`,
     description: desc,
     step: steps,
+    ...(isBasedOn.length > 0 ? { isBasedOn } : {}),
+    ...(authors.length > 0 ? { author: authors } : {}),
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://chanzong.space/#organization',
+      name: '禪宗知識庫',
+      url: 'https://chanzong.space/zh-tw',
+    },
     url: `https://chanzong.space/zh-tw/methods/${item.id}`,
     inLanguage: 'zh-TW',
     speakable: {
@@ -68,7 +90,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       url: `https://chanzong.space/zh-tw/methods/${params.id}`,
       siteName: '禪宗知識庫',
       locale: 'zh_TW',
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
     },
   };
 }
@@ -79,7 +101,6 @@ export default function TradMethodDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  // 服务端预先计算繁体化关联数据，彻底消除客户端水合闪回与 3.8MB 全量 bundle
   const tradItem = {
     ...item,
     title: convertToTrad(item.title),

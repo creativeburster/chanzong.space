@@ -6,7 +6,7 @@ import { convertToTrad } from '@/lib/opencc';
 
 export const metadata: Metadata = {
   title: `禪宗解惑問答 · ${STATS.faqs}則深層疑難答疑`,
-  description: `禪宗${STATS.faqs}條問答——公案解讀、義理辨析、修證疑問，覆蓋禪宗核心議題與常見疑惑。`,
+  description: `禪宗知識庫收錄${STATS.faqs}條深度問答——涵蓋公案機鋒解讀、心性義理辨析、日常參禪修證疑問與典籍導讀，全面解答禪門核心議題與常見疑惑。`,
   alternates: {
     canonical: '/zh-tw/faq',
     languages: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://chanzong.space/zh-tw/faq',
     locale: 'zh_TW',
     siteName: '禪宗知識庫',
-    images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禪宗知識庫 ChanZong.space' }],
+    images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禪宗知識庫 ChanZong.space' }],
   },
 };
 

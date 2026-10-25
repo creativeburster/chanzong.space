@@ -31,10 +31,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   if (!meta) return {};
 
   const summary = meta.summary || `${meta.title}，${meta.author}著，${meta.category}类经典。`;
+  const wordCountStr = meta.word_count >= 1000 ? `约${Math.round(meta.word_count / 1000)}千字` : `${meta.word_count}字`;
+  const canonStr = meta.cbeta_id ? ` · CBETA ${meta.cbeta_id}` : '';
+  const fullDesc = `《${meta.title}》（${meta.author}${canonStr}，${meta.category}，${wordCountStr}）：${summary}`.replace(/\s+/g, ' ').slice(0, 145);
 
   return {
     title: `${meta.title} · ${meta.author}`,
-    description: `${summary.slice(0, 100)} 作者：${meta.author}，约${Math.round(meta.word_count / 1000)}千字。`,
+    description: fullDesc,
     alternates: {
       canonical: `/classics/${meta.id}`,
       languages: {
@@ -46,17 +49,18 @@ export function generateMetadata({ params }: PageProps): Metadata {
     openGraph: {
       type: 'article',
       title: `${meta.title} · ${meta.author} | 禅宗知识库 ChanZong.space`,
-      description: summary.slice(0, 160),
+      description: fullDesc,
       url: `https://chanzong.space/classics/${meta.id}`,
       siteName: '禅宗知识库',
       locale: 'zh_CN',
       authors: [meta.author],
-      images: [{ url: '/logo-nianhua-new.jpg', width: 512, height: 512, alt: '禅宗知识库 ChanZong.space' }],
+      images: [{ url: '/og-banner.jpg', width: 1200, height: 630, alt: '禅宗知识库 ChanZong.space' }],
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: `${meta.title} · ${meta.author}`,
-      description: summary.slice(0, 140),
+      description: fullDesc,
+      images: ['/og-banner.jpg'],
     },
     other: {
       'article:author': meta.author,
@@ -195,7 +199,7 @@ export default function ClassicPage({ params }: PageProps) {
     genre: meta.category,
     wordCount: meta.word_count,
     isAccessibleForFree: true,
-    license: 'https://creativecommons.org/publicdomain/mark/1.0/',
+    license: ['https://creativecommons.org/publicdomain/mark/1.0/', 'https://creativecommons.org/licenses/by-nc-sa/4.0/'],
     dateModified: new Date().toISOString().split('T')[0],
     speakable: {
       '@type': 'SpeakableSpecification',

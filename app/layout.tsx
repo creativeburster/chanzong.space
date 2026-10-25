@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     images: [
       {
-        url: '/logo-nianhua-new.jpg',
-        width: 512,
-        height: 512,
+        url: '/og-banner.jpg',
+        width: 1200,
+        height: 630,
         alt: '禅宗知识库',
       },
     ],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '禅宗知识库 | 顿悟见性之道 | ChanZong.space',
     description: `收录${STATS.classics}部禅宗核心典籍，含${STATS.concepts}个概念、${STATS.koans}则公案、${STATS.persons}位祖师、${STATS.methods}种法门。`,
-    images: ['/logo-nianhua-new.jpg'],
+    images: ['/og-banner.jpg'],
   },
   icons: {
     icon: [

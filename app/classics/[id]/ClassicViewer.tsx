@@ -572,7 +572,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
 
           {/* 典籍文献与校勘档案（语义化 HTML 表格，赋能 E-E-A-T 与生成式 AI 结构化引证） */}
           <section aria-label={t('典籍文献与校勘档案')} className="mb-6">
-            <details className={`${currentTheme.cardBg} rounded-2xl border ${currentTheme.cardBorder} shadow-2xs overflow-hidden group transition-colors duration-300`}>
+            <details open className={`${currentTheme.cardBg} rounded-2xl border ${currentTheme.cardBorder} shadow-2xs overflow-hidden group transition-colors duration-300`}>
               <summary className="px-4 sm:px-6 py-3 cursor-pointer select-none flex items-center justify-between text-xs sm:text-sm font-semibold text-amber-800 dark:text-amber-300 hover:bg-amber-500/5 transition-colors">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span>📜 {t('古籍文献编目与校勘档案')}</span>
@@ -913,23 +913,22 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                       <span>{t('相关问答')}</span>
                       <span className="text-xs text-emerald-700/60 dark:text-emerald-400/60">({t('共')} {totalFaqCount ?? relFaqs.length} {t('条')})</span>
                     </div>
-                    <div className="space-y-3">
-                      {relFaqs.slice(0, 20).map((f, idx) => {
-                        const isHidden = !faqsExpanded && idx >= 4;
-                        return (
-                          <div
-                            key={f.id}
-                            className={`${
-                              isHidden ? 'hidden' : 'block'
-                            } p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40`}
-                          >
-                            <h3 className="text-[14px] font-semibold text-emerald-900 dark:text-emerald-300 mb-1">{t(f.question)}</h3>
-                            <p className={`text-[13px] text-emerald-800/80 dark:text-emerald-300/80 leading-relaxed ${faqsExpanded ? '' : 'line-clamp-3'}`}>
-                              {t(f.answer)}
-                            </p>
-                          </div>
-                        );
-                      })}
+                    <div className="space-y-2.5">
+                      {relFaqs.slice(0, 20).map((f, idx) => (
+                        <details
+                          key={f.id}
+                          open={idx < 4 || faqsExpanded}
+                          className="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 group"
+                        >
+                          <summary className="cursor-pointer list-none flex items-center justify-between gap-2 text-[14px] font-semibold text-emerald-900 dark:text-emerald-300">
+                            <span>{t(f.question)}</span>
+                            <span className="text-[11px] text-emerald-600/70 group-open:rotate-180 transition-transform shrink-0">▼</span>
+                          </summary>
+                          <p className="mt-2 pt-2 border-t border-emerald-200/40 dark:border-emerald-800/40 text-[13px] text-emerald-800/80 dark:text-emerald-300/80 leading-relaxed">
+                            {t(f.answer)}
+                          </p>
+                        </details>
+                      ))}
                     </div>
                     {relFaqs.length > 4 && (
                       <div className="flex justify-center pt-1">
@@ -937,7 +936,7 @@ export const ClassicViewer: React.FC<ClassicViewerProps> = ({
                           onClick={() => setFaqsExpanded(!faqsExpanded)}
                           className="px-4 py-1.5 rounded-xl border border-emerald-200 dark:border-emerald-800 text-[13px] font-semibold text-emerald-800 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-all"
                         >
-                          {faqsExpanded ? t('收起') : `${t('展开全部问答')} (${t('共')} ${Math.min(relFaqs.length, 20)} ${t('条')})`}
+                          {faqsExpanded ? t('折叠部分答案') : `${t('一键展开全部答案')} (${t('共')} ${Math.min(relFaqs.length, 20)} ${t('条')})`}
                         </button>
                       </div>
                     )}
