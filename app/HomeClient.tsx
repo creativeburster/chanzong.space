@@ -325,6 +325,31 @@ export default function HomeClient() {
           <div className="my-16">
             <LineageGraph />
           </div>
+
+          {/* 姊妹知识库互链卡片 */}
+          <div className="my-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-amber-50/70 via-white to-slate-50 border border-amber-200/70 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+            <div className="space-y-2 max-w-2xl">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100/80 text-amber-900 text-xs font-bold">
+                <span>🕉️</span>
+                <span>{t('姊妹知识库 · 东方非二元心性对读')}</span>
+              </div>
+              <h2 className="text-lg sm:text-xl font-bold font-serif-zen text-slate-900">
+                {t('拉玛那·马哈希知识库 (ramanamaharshi.space)')}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                {t('禅宗看话禅之“参念佛是谁”与当代印度圣哲拉玛那·马哈希（Ramana Maharshi）之“参我是谁（Atma-Vichara / Self-Inquiry）”直探同一本源心性。欢迎访问姊妹站，深度对读不二论与禅宗明心见性之道。')}
+              </p>
+            </div>
+            <a
+              href="https://ramanamaharshi.space/"
+              target="_blank"
+              rel="noopener"
+              className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-sm font-semibold transition-colors shadow-sm"
+            >
+              <span>{t('访问马哈希知识库')}</span>
+              <span>↗</span>
+            </a>
+          </div>
         </main>
 
         <SiteFooter />

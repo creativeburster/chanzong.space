@@ -436,6 +436,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <span>{t('关于本站')}</span>
                 </div>
               </Link>
+
+              <a
+                href="https://ramanamaharshi.space/"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all hover:bg-slate-800/80 text-slate-200 hover:text-white"
+                title={t('姊妹知识库：拉玛那·马哈希知识库 (ramanamaharshi.space)')}
+              >
+                <div className="flex items-center space-x-3">
+                  <span className="text-base leading-none">🕉️</span>
+                  <span>{t('拉玛那·马哈希知识库')}</span>
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">
+                  {t('姊妹站')}
+                </span>
+              </a>
             </div>
           )}
         </div>

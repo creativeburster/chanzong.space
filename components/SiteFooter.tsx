@@ -85,6 +85,19 @@ export const SiteFooter = () => {
               <span>🙏</span>
               <span>{t('支持本站')}</span>
             </button>
+
+            <span className="text-slate-700">|</span>
+
+            <a
+              href="https://ramanamaharshi.space/"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1 hover:text-amber-400 transition-colors"
+              title={t('姊妹知识库：拉玛那·马哈希知识库 (ramanamaharshi.space)')}
+            >
+              <span>🕉️</span>
+              <span>{t('姊妹站：拉玛那·马哈希知识库')}</span>
+            </a>
           </div>
         </div>
       </footer>

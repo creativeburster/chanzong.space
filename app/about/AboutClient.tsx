@@ -151,7 +151,7 @@ export default function AboutClient() {
               <div className="prose prose-slate max-w-none text-[15px] leading-relaxed text-slate-700">
                 <p>
                   {t('禅宗之“直指人心，见性成佛”，与印度纯正不二论（Advaita Vedanta）及当代圣哲拉玛那·马哈希（Ramana Maharshi）之“参究谁是我（Self-Enquiry）”在究极心源上同参一理。本站与姊妹站点')}{' '}
-                  <a href="https://ramanamaharshi.space" target="_blank" rel="noopener noreferrer" className="text-amber-700 font-semibold hover:underline">
+                  <a href="https://ramanamaharshi.space/" target="_blank" rel="noopener" className="text-amber-700 font-semibold hover:underline">
                     {t('拉玛那马哈希知识库 (ramanamaharshi.space)')}
                   </a>{' '}
                   {t('共同构成东方非二元明心见性实修数字人文矩阵。')}
