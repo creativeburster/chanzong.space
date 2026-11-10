@@ -94,20 +94,71 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('zen_reading_theme');var d=t==='night'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.setAttribute('data-theme','night');document.documentElement.classList.add('dark');}else if(t==='bamboo'){document.documentElement.setAttribute('data-theme','bamboo');}}catch(e){}})();`,
           }}
         />
-        {/* Google tag (gtag.js) - 按照 Google Search Console 规范置于 <head> 中，用于站长所有权验证与 GA4 分析 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
-        />
+        {/* Google tag (gtag.js) - 防机房无头 Bot 精准熔断 & GA4 零延迟初始化 */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-E33EPY0QV7', { send_page_view: true });
+              (function() {
+                try {
+                  var gaId = 'G-E33EPY0QV7';
+                  var ua = navigator.userAgent || '';
+                  var sw = window.screen ? window.screen.width : 0;
+                  var sh = window.screen ? window.screen.height : 0;
+                  var res = sw + 'x' + sh;
+                  var botResolutions = {
+                    '1280x1200': 1,
+                    '1366x1366': 1,
+                    '1280x1280': 1,
+                    '1600x1600': 1,
+                    '1280x1600': 1,
+                    '1600x1200': 1,
+                    '800x600': 1
+                  };
+                  var isBot = (navigator.webdriver === true) ||
+                    /HeadlessChrome|PhantomJS|Playwright|Puppeteer|SlimerJS|CasperJS/i.test(ua) ||
+                    (botResolutions[res] === 1) ||
+                    (sw > 0 && sw === sh);
+
+                  if (!isBot) {
+                    try {
+                      var canvas = document.createElement('canvas');
+                      var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                      if (gl) {
+                        var ext = gl.getExtension('WEBGL_debug_renderer_info');
+                        if (ext) {
+                          var renderer = gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || '';
+                          if (/SwiftShader|llvmpipe|Software Rasterizer/i.test(renderer)) {
+                            isBot = true;
+                          }
+                        }
+                      }
+                    } catch (_) {}
+                  }
+
+                  if (isBot) {
+                    window['ga-disable-' + gaId] = true;
+                    return;
+                  }
+
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  window.gtag = gtag;
+                  gtag('js', new Date());
+                  gtag('config', gaId, { send_page_view: true });
+                } catch (_) {
+                  window.dataLayer = window.dataLayer || [];
+                  function gtagFallback(){dataLayer.push(arguments);}
+                  window.gtag = gtagFallback;
+                  gtagFallback('js', new Date());
+                  gtagFallback('config', 'G-E33EPY0QV7', { send_page_view: true });
+                }
+              })();
             `,
           }}
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E33EPY0QV7"
         />
       </head>
       <body className="bg-[#FAF9F6] text-zinc-900 font-sans antialiased selection:bg-amber-900 selection:text-white">
