@@ -133,7 +133,7 @@ const nextConfig = {
       {
         source: '/manifest.json',
         headers: [
-          { key: 'Cache-Control', value: 'public, max-age=86400' },
+          { key: 'Cache-Control', value: 'public, max-age=86400, s-maxage=604800' },
         ],
       },
       {
@@ -152,6 +152,27 @@ const nextConfig = {
         source: '/favicon.png',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+      {
+        // 静态图片资产（Logo、OG Banner、打赏码等）长期边缘强缓存，禁止重复回源
+        source: '/(logo-.*|og-banner.jpg|images/:path*)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+      {
+        // 站点地图、robots 与 GEO 索引文件，允许 CDN 边缘强缓存 7 天，阻断爬虫并发回源穿透
+        source: '/(sitemap.xml|sitemaps/:path*|llms.txt|llms-full.txt|robots.txt)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400' },
+        ],
+      },
+      {
+        // 全站所有页面：浏览器端协商缓存（max-age=0），Vercel 边缘 CDN 节点强缓存 7 天（s-maxage=604800），彻底消除 Fast Origin Transfer 回源流量
+        source: '/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=604800, stale-while-revalidate=86400' },
         ],
       },
     ];
