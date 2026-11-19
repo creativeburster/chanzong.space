@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Globe, Menu, ChevronDown, BookOpen, Layers, Library } from 'lucide-react';
+import { Globe, Menu, ChevronDown, BookOpen, Layers, Library, BookMarked } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
 
 export const TopHeader: React.FC = () => {
@@ -16,7 +16,9 @@ export const TopHeader: React.FC = () => {
     pathname.startsWith('/categories') ||
     pathname.startsWith('/zh-tw/categories') ||
     pathname.startsWith('/collections') ||
-    pathname.startsWith('/zh-tw/collections');
+    pathname.startsWith('/zh-tw/collections') ||
+    pathname.startsWith('/wangxianglu') ||
+    pathname.startsWith('/zh-tw/wangxianglu');
 
   const otherNavLinks = [
     { href: getHref('/concepts'), label: t('概念'), active: pathname.startsWith('/concepts') || pathname.startsWith('/zh-tw/concepts') },
@@ -107,6 +109,17 @@ export const TopHeader: React.FC = () => {
                 <div>
                   <div className="font-semibold text-slate-200">{t('典籍合集')}</div>
                   <div className="text-[10px] text-slate-400">{t('14大宗师专题法脉')}</div>
+                </div>
+              </Link>
+              <Link
+                prefetch={true}
+                href={getHref('/wangxianglu')}
+                className="flex items-center gap-3 px-3 py-2 rounded-lg text-[13px] text-slate-300 hover:text-white hover:bg-slate-800/90 transition-colors"
+              >
+                <BookMarked className="w-4 h-4 text-sky-400 shrink-0" />
+                <div>
+                  <div className="font-semibold text-slate-200">{t('共读精译札记')}</div>
+                  <div className="text-[10px] text-slate-400">{t('王骧陆全集白话与问答')}</div>
                 </div>
               </Link>
             </div>

@@ -476,3 +476,26 @@ main {
     transform: translateY(0);
   }
 }
+
+/* 王骧陆全集共读札记 · 原生 Scrollspy 与 Fallback 支持 */
+.wxl-scrollspy-nav {
+  scroll-target-group: auto;
+}
+.wxl-scrollspy-nav a:is(:target-current, .target-current) {
+  color: #92400e;
+  background-color: rgba(251, 191, 36, 0.16);
+  border-left-color: #b45309;
+  font-weight: 700;
+}
+[data-theme="bamboo"] .wxl-scrollspy-nav a:is(:target-current, .target-current) {
+  color: #14532d;
+  background-color: rgba(45, 106, 79, 0.14);
+  border-left-color: #2d6a4f;
+  font-weight: 700;
+}
+html[data-theme='night'] .wxl-scrollspy-nav a:is(:target-current, .target-current),
+html.dark .wxl-scrollspy-nav a:is(:target-current, .target-current) {
+  color: #fbbf24;
+  background-color: rgba(245, 158, 11, 0.15);
+  border-left-color: #f59e0b;
+}

@@ -23,6 +23,7 @@ import {
   PanelLeftOpen,
   Library,
   Layers,
+  BookMarked,
 } from 'lucide-react';
 import { STATS } from '@/lib/stats';
 import { ZEN_COLLECTIONS } from '@/lib/collections';
@@ -281,6 +282,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
                 <span className="px-2.5 py-0.5 rounded-full bg-slate-800 text-xs text-slate-300 font-mono font-bold">
                   {ZEN_COLLECTIONS.length}
+                </span>
+              </Link>
+
+              <Link prefetch={true} href={getHref('/wangxianglu')}
+                className={`flex items-center justify-between px-4 py-2.5 rounded-2xl text-[13px] transition-all ${
+                  isActive('/wangxianglu')
+                    ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-sm'
+                    : 'hover:bg-slate-800/80 text-slate-200 hover:text-white'
+                }`}
+              >
+                <div className="flex items-center space-x-3">
+                  <BookMarked className="w-5 h-5 text-sky-400" />
+                  <span>{t('共读精译札记')}</span>
+                </div>
+                <span className="px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-200 text-[10px] font-bold">
+                  {t('王骧陆')}
                 </span>
               </Link>
 
