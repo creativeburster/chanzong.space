@@ -5,12 +5,16 @@ import dynamic from 'next/dynamic';
 import {
   BookMarked,
   BookOpen,
+  ChevronDown,
+  ChevronLeft,
   ChevronRight,
   ExternalLink,
   FileText,
+  Layers,
   ListChecks,
   MessageCircle,
   Quote,
+  RotateCcw,
   Search,
   Sparkles,
   Type,
@@ -39,8 +43,24 @@ const SearchModal = dynamic(
   { ssr: false }
 );
 
-type ViewMode = 'all' | 'translations' | 'discussions' | 'quotes' | 'catalog';
+type ViewMode = 'translations' | 'discussions' | 'quotes' | 'catalog';
+type BrowseStyle = 'pager' | 'feed';
 type FontSizeMode = 'sm' | 'md' | 'lg';
+
+interface FlatSectionItem {
+  book: WxlBookProgress;
+  sec: WxlSection;
+  globalIndex: number;
+}
+
+interface FlatQuoteItem {
+  id: string;
+  bookIndex: number;
+  bookTitle: string;
+  sectionTitle: string;
+  sectionId: string;
+  quote: WxlQuote;
+}
 
 function escapeRegExp(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -144,22 +164,26 @@ function RichParagraph({
   );
 }
 
-interface FlatQuoteItem {
-  id: string;
-  bookIndex: number;
-  bookTitle: string;
-  sectionTitle: string;
-  sectionId: string;
-  quote: WxlQuote;
-}
+const SECTION_FEED_STEP = 2;
+const QA_FEED_STEP = 2;
+const QUOTES_STEP = 8;
+const CATALOG_PAGE_SIZE = 10;
 
 export default function WangXiangluClient() {
   const { t } = useLang();
   const [searchOpen, setSearchOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<ViewMode>('all');
+  const [viewMode, setViewMode] = useState<ViewMode>('translations');
+  const [browseStyle, setBrowseStyle] = useState<BrowseStyle>('pager');
+  const [selectedBookId, setSelectedBookId] = useState<string>('all');
+  const [sectionPageIdx, setSectionPageIdx] = useState<number>(0);
+  const [sectionFeedCount, setSectionFeedCount] = useState<number>(SECTION_FEED_STEP);
+  const [qaPageIdx, setQaPageIdx] = useState<number>(0);
+  const [qaFeedCount, setQaFeedCount] = useState<number>(QA_FEED_STEP);
+  const [quotesCount, setQuotesCount] = useState<number>(QUOTES_STEP);
+  const [catalogPage, setCatalogPage] = useState<number>(0);
   const [query, setQuery] = useState('');
   const [fontSize, setFontSize] = useState<FontSizeMode>('md');
-  const scrollNavRef = useRef<HTMLElement | null>(null);
+  const contentTopRef = useRef<HTMLDivElement | null>(null);
 
   const fontSizeClass =
     fontSize === 'sm'
@@ -178,21 +202,43 @@ export default function WangXiangluClient() {
     return rawLower.includes(normalizedQuery) || localizedLower.includes(normalizedQuery);
   };
 
-  const filteredBooks = useMemo<WxlBookProgress[]>(() => {
-    if (!normalizedQuery) return WXL_BOOKS_NOTES;
-    return WXL_BOOKS_NOTES.map((book) => {
-      const matchedSections = book.sections.filter((sec) => {
-        if (matchesText(book.title) || matchesText(sec.title) || matchesText(sec.sutraText) || matchesText(sec.originalExcerpt)) {
-          return true;
+  // Reset pagination indices whenever query or book filter changes
+  useEffect(() => {
+    setSectionPageIdx(0);
+    setSectionFeedCount(SECTION_FEED_STEP);
+    setQaPageIdx(0);
+    setQaFeedCount(QA_FEED_STEP);
+    setQuotesCount(QUOTES_STEP);
+    setCatalogPage(0);
+  }, [normalizedQuery, selectedBookId]);
+
+  const scrollToContentTop = () => {
+    contentTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const flatSections = useMemo<FlatSectionItem[]>(() => {
+    const items: FlatSectionItem[] = [];
+    let gIdx = 0;
+    for (const book of WXL_BOOKS_NOTES) {
+      if (selectedBookId !== 'all' && book.id !== selectedBookId) continue;
+      for (const sec of book.sections) {
+        const matched =
+          !normalizedQuery ||
+          matchesText(book.title) ||
+          matchesText(sec.title) ||
+          matchesText(sec.sutraText) ||
+          matchesText(sec.originalExcerpt) ||
+          sec.translationParagraphs.some((p) => matchesText(p)) ||
+          sec.summaryPoints.some((sp) => matchesText(sp)) ||
+          sec.quotes.some((q) => matchesText(q.original) || matchesText(q.insight));
+        if (matched) {
+          gIdx += 1;
+          items.push({ book, sec, globalIndex: gIdx });
         }
-        if (sec.translationParagraphs.some((p) => matchesText(p))) return true;
-        if (sec.summaryPoints.some((sp) => matchesText(sp))) return true;
-        if (sec.quotes.some((q) => matchesText(q.original) || matchesText(q.insight))) return true;
-        return false;
-      });
-      return { ...book, sections: matchedSections };
-    }).filter((b) => b.sections.length > 0);
-  }, [normalizedQuery, t]);
+      }
+    }
+    return items;
+  }, [normalizedQuery, selectedBookId, t]);
 
   const filteredDiscussions = useMemo<WxlDiscussion[]>(() => {
     if (!normalizedQuery) return WXL_DISCUSSIONS;
@@ -241,102 +287,26 @@ export default function WangXiangluClient() {
     );
   }, [normalizedQuery, t]);
 
-  const tocItems = useMemo(() => {
-    const items: { id: string; label: string; kind: 'book' | 'section' | 'qa' | 'other' }[] = [];
-    if (viewMode === 'all' || viewMode === 'translations') {
-      for (const book of filteredBooks) {
-        items.push({
-          id: book.id,
-          label: `${String(book.index).padStart(2, '0')} · ${t(book.title)}`,
-          kind: 'book',
-        });
-        for (const sec of book.sections) {
-          items.push({
-            id: sec.id,
-            label: t(sec.title),
-            kind: 'section',
-          });
-        }
-      }
-    }
-    if (viewMode === 'all' || viewMode === 'discussions') {
-      if (filteredDiscussions.length > 0) {
-        items.push({
-          id: 'discussions-area',
-          label: t('共读问答备忘录'),
-          kind: 'book',
-        });
-        for (const qa of filteredDiscussions) {
-          items.push({
-            id: qa.id,
-            label: `${t('专题')} ${String(qa.index).padStart(2, '0')}：${t(qa.title)}`,
-            kind: 'qa',
-          });
-        }
-      }
-    }
-    if (viewMode === 'quotes') {
-      items.push({ id: 'quotes-area', label: t('原典金句速查库'), kind: 'book' });
-    }
-    if (viewMode === 'catalog') {
-      items.push({ id: 'catalog-area', label: t('全集 29 册共读进度表'), kind: 'book' });
-    }
-    return items;
-  }, [viewMode, filteredBooks, filteredDiscussions, t]);
+  const safeSectionIdx = Math.min(sectionPageIdx, Math.max(0, flatSections.length - 1));
+  const safeQaIdx = Math.min(qaPageIdx, Math.max(0, filteredDiscussions.length - 1));
+  const totalCatalogPages = Math.max(1, Math.ceil(filteredCatalog.length / CATALOG_PAGE_SIZE));
+  const safeCatalogPage = Math.min(catalogPage, totalCatalogPages - 1);
 
-  useEffect(() => {
-    const navEl = scrollNavRef.current;
-    if (!navEl) return;
-    const navLinks = Array.from(navEl.querySelectorAll<HTMLAnchorElement>('a[href^="#"]'));
-    if (navLinks.length === 0) return;
+  const visibleSections =
+    browseStyle === 'pager'
+      ? flatSections.slice(safeSectionIdx, safeSectionIdx + 1)
+      : flatSections.slice(0, sectionFeedCount);
 
-    const supportsScrollTargetGroup =
-      typeof CSS !== 'undefined' &&
-      typeof CSS.supports === 'function' &&
-      CSS.supports('scroll-target-group: auto');
+  const visibleDiscussions =
+    browseStyle === 'pager'
+      ? filteredDiscussions.slice(safeQaIdx, safeQaIdx + 1)
+      : filteredDiscussions.slice(0, qaFeedCount);
 
-    if (supportsScrollTargetGroup) {
-      const syncAriaCurrent = () => {
-        const currentLink = navEl.querySelector('a:target-current');
-        navLinks.forEach((link) => {
-          link.setAttribute('aria-current', link === currentLink ? 'true' : 'false');
-        });
-      };
-      syncAriaCurrent();
-      document.addEventListener('scrollend', syncAriaCurrent);
-      return () => {
-        document.removeEventListener('scrollend', syncAriaCurrent);
-      };
-    }
-
-    const sections = navLinks
-      .map((link) => {
-        const id = link.getAttribute('href')?.slice(1);
-        return id ? document.getElementById(id) : null;
-      })
-      .filter((el): el is HTMLElement => Boolean(el));
-
-    if (sections.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach((link) => {
-              const isActive = link.getAttribute('href') === `#${id}`;
-              link.classList.toggle('target-current', isActive);
-              link.setAttribute('aria-current', isActive ? 'true' : 'false');
-            });
-          }
-        });
-      },
-      { rootMargin: '-25% 0px -65% 0px', threshold: 0 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
-  }, [tocItems]);
+  const visibleQuotes = allQuotes.slice(0, quotesCount);
+  const visibleCatalog = filteredCatalog.slice(
+    safeCatalogPage * CATALOG_PAGE_SIZE,
+    (safeCatalogPage + 1) * CATALOG_PAGE_SIZE
+  );
 
   const totalTranslatedSections = WXL_BOOKS_NOTES.reduce((acc, b) => acc + b.sections.length, 0);
   const totalQuotesCount = WXL_BOOKS_NOTES.reduce(
@@ -344,13 +314,212 @@ export default function WangXiangluClient() {
     0
   );
 
-  const viewTabs: { id: ViewMode; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
-    { id: 'all', label: '全景共读（正篇 + 问答）', icon: Sparkles },
-    { id: 'translations', label: `正篇白话精译（${totalTranslatedSections}节）`, icon: BookOpen },
-    { id: 'discussions', label: `共读问答备忘录（${WXL_DISCUSSIONS.length}篇）`, icon: MessageCircle },
-    { id: 'quotes', label: `原典金句速查库（${totalQuotesCount}句）`, icon: Quote },
-    { id: 'catalog', label: '全集29册进度表', icon: ListChecks },
+  const viewTabs: {
+    id: ViewMode;
+    tabId: string;
+    panelId: string;
+    label: string;
+    icon: React.ComponentType<{ className?: string }>;
+  }[] = [
+    {
+      id: 'translations',
+      tabId: 'wxl-tab-translations',
+      panelId: 'wxl-panel-translations',
+      label: `正篇白话精译（${totalTranslatedSections}节）`,
+      icon: BookOpen,
+    },
+    {
+      id: 'discussions',
+      tabId: 'wxl-tab-discussions',
+      panelId: 'wxl-panel-discussions',
+      label: `共读问答备忘（${WXL_DISCUSSIONS.length}篇）`,
+      icon: MessageCircle,
+    },
+    {
+      id: 'quotes',
+      tabId: 'wxl-tab-quotes',
+      panelId: 'wxl-panel-quotes',
+      label: `原典金句速查（${totalQuotesCount}句）`,
+      icon: Quote,
+    },
+    {
+      id: 'catalog',
+      tabId: 'wxl-tab-catalog',
+      panelId: 'wxl-panel-catalog',
+      label: '全集29册进度表',
+      icon: ListChecks,
+    },
   ];
+
+  const handleJumpToSection = (sectionId: string) => {
+    setViewMode('translations');
+    setSelectedBookId('all');
+    const targetIdx = WXL_BOOKS_NOTES.flatMap((b) => b.sections).findIndex((s) => s.id === sectionId);
+    if (targetIdx !== -1) {
+      if (browseStyle === 'pager') {
+        setSectionPageIdx(targetIdx);
+        scrollToContentTop();
+      } else {
+        setSectionFeedCount((c) => Math.max(c, targetIdx + 1));
+        setTimeout(() => {
+          document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        }, 60);
+      }
+    }
+  };
+
+  const renderSectionPagerBar = (position: 'top' | 'bottom') => {
+    if (flatSections.length <= 1) return null;
+    const prevItem = safeSectionIdx > 0 ? flatSections[safeSectionIdx - 1] : null;
+    const nextItem =
+      safeSectionIdx < flatSections.length - 1 ? flatSections[safeSectionIdx + 1] : null;
+
+    return (
+      <div className="bg-white rounded-2xl border border-amber-900/15 shadow-xs p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3">
+        <button
+          type="button"
+          disabled={!prevItem}
+          onClick={() => {
+            if (prevItem) {
+              setSectionPageIdx(safeSectionIdx - 1);
+              if (position === 'bottom') scrollToContentTop();
+            }
+          }}
+          className={`inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+            prevItem
+              ? 'bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100'
+              : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+          }`}
+        >
+          <ChevronLeft className="w-4 h-4 shrink-0" />
+          <span className="truncate max-w-[160px] sm:max-w-[220px]">
+            {prevItem ? t(`上一节：${prevItem.sec.title}`) : t('已是第一小节')}
+          </span>
+        </button>
+
+        {/* Direct section selector + page indicator */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-mono text-slate-500">
+            {safeSectionIdx + 1} / {flatSections.length}
+          </span>
+          <select
+            aria-label={t('选择跳转小节')}
+            value={safeSectionIdx}
+            onChange={(e) => {
+              setSectionPageIdx(Number(e.target.value));
+              if (position === 'bottom') scrollToContentTop();
+            }}
+            className="text-xs sm:text-sm font-semibold bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-none focus:border-amber-600 max-w-[200px] sm:max-w-[280px]"
+          >
+            {flatSections.map((item, idx) => (
+              <option key={item.sec.id} value={idx}>
+                {`${String(idx + 1).padStart(2, '0')}. [${t(`第${item.book.index}册`)}] ${t(item.sec.title)}`}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <button
+          type="button"
+          disabled={!nextItem}
+          onClick={() => {
+            if (nextItem) {
+              setSectionPageIdx(safeSectionIdx + 1);
+              if (position === 'bottom') scrollToContentTop();
+            }
+          }}
+          className={`inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+            nextItem
+              ? 'bg-amber-900 text-amber-100 hover:bg-amber-800 shadow-xs'
+              : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+          }`}
+        >
+          <span className="truncate max-w-[160px] sm:max-w-[220px]">
+            {nextItem ? t(`下一节：${nextItem.sec.title}`) : t('已到最新一节')}
+          </span>
+          <ChevronRight className="w-4 h-4 shrink-0" />
+        </button>
+      </div>
+    );
+  };
+
+  const renderQaPagerBar = (position: 'top' | 'bottom') => {
+    if (filteredDiscussions.length <= 1) return null;
+    const prevQa = safeQaIdx > 0 ? filteredDiscussions[safeQaIdx - 1] : null;
+    const nextQa =
+      safeQaIdx < filteredDiscussions.length - 1 ? filteredDiscussions[safeQaIdx + 1] : null;
+
+    return (
+      <div className="bg-white rounded-2xl border border-amber-900/15 shadow-xs p-3.5 sm:p-4 flex flex-wrap items-center justify-between gap-3">
+        <button
+          type="button"
+          disabled={!prevQa}
+          onClick={() => {
+            if (prevQa) {
+              setQaPageIdx(safeQaIdx - 1);
+              if (position === 'bottom') scrollToContentTop();
+            }
+          }}
+          className={`inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+            prevQa
+              ? 'bg-sky-50 text-sky-900 border border-sky-200 hover:bg-sky-100'
+              : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+          }`}
+        >
+          <ChevronLeft className="w-4 h-4 shrink-0" />
+          <span className="truncate max-w-[160px] sm:max-w-[220px]">
+            {prevQa
+              ? t(`上一篇：专题 ${String(prevQa.index).padStart(2, '0')}`)
+              : t('已是第一篇')}
+          </span>
+        </button>
+
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-mono text-slate-500">
+            {safeQaIdx + 1} / {filteredDiscussions.length}
+          </span>
+          <select
+            aria-label={t('选择跳转问答专题')}
+            value={safeQaIdx}
+            onChange={(e) => {
+              setQaPageIdx(Number(e.target.value));
+              if (position === 'bottom') scrollToContentTop();
+            }}
+            className="text-xs sm:text-sm font-semibold bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-none focus:border-amber-600 max-w-[200px] sm:max-w-[280px]"
+          >
+            {filteredDiscussions.map((qa, idx) => (
+              <option key={qa.id} value={idx}>
+                {`${t('专题')} ${String(qa.index).padStart(2, '0')}：${t(qa.title)}`}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <button
+          type="button"
+          disabled={!nextQa}
+          onClick={() => {
+            if (nextQa) {
+              setQaPageIdx(safeQaIdx + 1);
+              if (position === 'bottom') scrollToContentTop();
+            }
+          }}
+          className={`inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
+            nextQa
+              ? 'bg-amber-900 text-amber-100 hover:bg-amber-800 shadow-xs'
+              : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+          }`}
+        >
+          <span className="truncate max-w-[160px] sm:max-w-[220px]">
+            {nextQa
+              ? t(`下一篇：专题 ${String(nextQa.index).padStart(2, '0')}`)
+              : t('已是最后一篇')}
+          </span>
+          <ChevronRight className="w-4 h-4 shrink-0" />
+        </button>
+      </div>
+    );
+  };
 
   const renderSectionCard = (book: WxlBookProgress, sec: WxlSection) => (
     <section
@@ -458,7 +627,7 @@ export default function WangXiangluClient() {
             <summary className="cursor-pointer select-none px-4 py-3 text-xs sm:text-sm font-semibold text-slate-700 hover:text-amber-800 flex items-center justify-between list-none">
               <span className="flex items-center space-x-2">
                 <BookOpen className="w-4 h-4 text-amber-700" />
-                <span>{t('展开查看本节半文言原典对照（支持浏览器 Ctrl+F 页内直搜）')}</span>
+                <span>{t('展开查看本节半文言原典对照')}</span>
               </span>
               <ChevronRight className="w-4 h-4 text-slate-400 transition-transform group-open:rotate-90" />
             </summary>
@@ -580,7 +749,7 @@ export default function WangXiangluClient() {
           </div>
 
           {/* Hero Banner */}
-          <article className="bg-white rounded-3xl border border-amber-900/15 shadow-sm p-6 sm:p-8 mb-8 space-y-5">
+          <article className="bg-white rounded-3xl border border-amber-900/15 shadow-sm p-6 sm:p-8 mb-6 space-y-5">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div className="space-y-2 max-w-3xl">
                 <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300/70 text-amber-900 text-xs font-bold">
@@ -592,7 +761,7 @@ export default function WangXiangluClient() {
                 </h1>
                 <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
                   {t(
-                    '按原书册目逐节精译为纯现代汉语，收录原典金句、半文言对照及实修讨论备忘，方便在电脑与手机随时检索重温。'
+                    '按原书册目逐节精译为纯现代汉语，收录原典金句、半文言对照及实修讨论备忘。支持单节翻页阅读与加载更多两种模式。'
                   )}
                 </p>
               </div>
@@ -661,179 +830,401 @@ export default function WangXiangluClient() {
                 )}
               </div>
 
-              {/* View Mode Switcher */}
-              <div className="flex flex-wrap items-center gap-2">
-                {viewTabs.map((tab) => {
-                  const Icon = tab.icon;
-                  const active = viewMode === tab.id;
-                  return (
+              {/* Single-row scrollable Tablist + Browse Style Toggle */}
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div
+                  role="tablist"
+                  aria-label={t('共读专栏板块切换')}
+                  className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full"
+                >
+                  {viewTabs.map((tab) => {
+                    const Icon = tab.icon;
+                    const active = viewMode === tab.id;
+                    return (
+                      <button
+                        key={tab.id}
+                        id={tab.tabId}
+                        role="tab"
+                        aria-selected={active}
+                        type="button"
+                        onClick={() => setViewMode(tab.id)}
+                        className={`relative flex-none inline-flex items-center space-x-1.5 px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold transition-colors ${
+                          active
+                            ? 'bg-amber-900 text-amber-100 shadow-xs after:content-[""] after:absolute after:inset-x-3 after:bottom-0 after:border-b-2 after:border-amber-300'
+                            : 'bg-slate-50 text-slate-700 border border-slate-200 hover:bg-amber-50 hover:border-amber-300'
+                        }`}
+                      >
+                        <Icon className="w-3.5 h-3.5 shrink-0" />
+                        <span>{t(tab.label)}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Browse style switcher: Pager vs Load More Feed */}
+                {(viewMode === 'translations' || viewMode === 'discussions') && (
+                  <div className="inline-flex items-center p-1 bg-slate-100 rounded-2xl border border-slate-200 text-xs font-bold">
                     <button
-                      key={tab.id}
                       type="button"
-                      onClick={() => setViewMode(tab.id)}
-                      className={`inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-bold transition-all ${
-                        active
-                          ? 'bg-amber-900 text-amber-100 shadow-sm'
-                          : 'bg-slate-50 text-slate-700 border border-slate-200 hover:bg-amber-50 hover:border-amber-300'
+                      onClick={() => setBrowseStyle('pager')}
+                      className={`px-3 py-1.5 rounded-xl transition-all ${
+                        browseStyle === 'pager'
+                          ? 'bg-white text-amber-900 shadow-xs'
+                          : 'text-slate-600 hover:text-slate-900'
                       }`}
                     >
-                      <Icon className="w-3.5 h-3.5" />
-                      <span>{t(tab.label)}</span>
+                      {t('单篇翻页')}
                     </button>
-                  );
-                })}
+                    <button
+                      type="button"
+                      onClick={() => setBrowseStyle('feed')}
+                      className={`px-3 py-1.5 rounded-xl transition-all ${
+                        browseStyle === 'feed'
+                          ? 'bg-white text-amber-900 shadow-xs'
+                          : 'text-slate-600 hover:text-slate-900'
+                      }`}
+                    >
+                      {t('列表加载更多')}
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </article>
 
-          {/* Main Grid: Content + Sticky Scrollspy Nav */}
+          <div ref={contentTopRef} className="scroll-mt-20" />
+
+          {/* Main Grid: Content + Sticky TOC Sidebar */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-9 space-y-10 min-w-0">
-              {/* Translations View */}
-              {(viewMode === 'all' || viewMode === 'translations') && (
-                <div className="space-y-8">
-                  {filteredBooks.length === 0 ? (
-                    <div className="bg-white rounded-3xl border border-slate-200 p-8 text-center text-sm text-slate-500">
-                      {t('正篇精译中未检索到匹配关键词的内容。')}
+            <div className="lg:col-span-9 min-w-0">
+              {/* TAB PANEL 1: Translations */}
+              <div
+                id="wxl-panel-translations"
+                role="tabpanel"
+                aria-labelledby="wxl-tab-translations"
+                hidden={viewMode !== 'translations'}
+              >
+                <div className="space-y-6">
+                  {/* Book Filter Pills */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xs font-bold text-slate-500 mr-1 flex items-center gap-1">
+                      <Layers className="w-3.5 h-3.5 text-amber-700" />
+                      {t('按册筛选：')}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedBookId('all')}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                        selectedBookId === 'all'
+                          ? 'bg-amber-900 text-amber-100 shadow-xs'
+                          : 'bg-white text-slate-700 border border-slate-200 hover:bg-amber-50'
+                      }`}
+                    >
+                      {t(`全部已译（${totalTranslatedSections}节）`)}
+                    </button>
+                    {WXL_BOOKS_NOTES.map((b) => (
+                      <button
+                        key={b.id}
+                        type="button"
+                        onClick={() => setSelectedBookId(b.id)}
+                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                          selectedBookId === b.id
+                            ? 'bg-amber-900 text-amber-100 shadow-xs'
+                            : 'bg-white text-slate-700 border border-slate-200 hover:bg-amber-50'
+                        }`}
+                      >
+                        {t(`第${String(b.index).padStart(2, '0')}册《${b.title}》（${b.sections.length}节）`)}
+                      </button>
+                    ))}
+                  </div>
+
+                  {flatSections.length === 0 ? (
+                    <div className="bg-white rounded-3xl border border-slate-200 p-10 text-center space-y-3">
+                      <p className="text-sm text-slate-500">
+                        {t('正篇精译中未检索到匹配关键词的内容。')}
+                      </p>
+                      {query && (
+                        <button
+                          type="button"
+                          onClick={() => setQuery('')}
+                          className="inline-flex items-center space-x-1 text-xs font-bold text-amber-800 hover:underline"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5" />
+                          <span>{t('清空搜索词')}</span>
+                        </button>
+                      )}
                     </div>
                   ) : (
-                    filteredBooks.map((book) => (
-                      <div key={book.id} className="space-y-5">
-                        <section
-                          id={book.id}
-                          tabIndex={-1}
-                          className="scroll-mt-24 focus:outline-none"
-                        >
-                          <div className="flex flex-wrap items-center justify-between gap-3 px-1 pb-2 border-b-2 border-amber-700/30">
-                            <h2 className="text-xl sm:text-2xl font-extrabold font-serif-zen text-slate-900">
-                              {t(`第 ${String(book.index).padStart(2, '0')} 册：《${book.title}》`)}
-                            </h2>
-                            <span
-                              className={`text-xs font-bold px-3 py-1 rounded-full ${
-                                book.status === 'completed'
-                                  ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
-                                  : 'bg-amber-50 text-amber-800 border border-amber-200'
-                              }`}
-                            >
-                              {book.status === 'completed'
-                                ? t(`已精读完 · ${book.completedSections}/${book.totalSections} 节`)
-                                : t(`连载中 · 已读 ${book.completedSections}/${book.totalSections} 节`)}
-                            </span>
-                          </div>
-                        </section>
+                    <>
+                      {browseStyle === 'pager' && renderSectionPagerBar('top')}
 
-                        <div className="space-y-6">
-                          {book.sections.map((sec) => renderSectionCard(book, sec))}
-                        </div>
+                      <div className="space-y-6">
+                        {visibleSections.map(({ book, sec }) => renderSectionCard(book, sec))}
                       </div>
-                    ))
+
+                      {browseStyle === 'pager' ? (
+                        renderSectionPagerBar('bottom')
+                      ) : (
+                        <div className="pt-2 flex flex-col items-center gap-3">
+                          <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-amber-700 rounded-full transition-all"
+                              style={{
+                                width: `${Math.min(100, Math.round((visibleSections.length / flatSections.length) * 100))}%`,
+                              }}
+                            />
+                          </div>
+                          {visibleSections.length < flatSections.length ? (
+                            <div className="flex flex-wrap items-center justify-center gap-2.5">
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setSectionFeedCount((c) =>
+                                    Math.min(flatSections.length, c + SECTION_FEED_STEP)
+                                  )
+                                }
+                                className="inline-flex items-center space-x-1.5 px-6 py-2.5 rounded-xl bg-amber-900 text-amber-100 text-sm font-bold hover:bg-amber-800 transition-all shadow-sm"
+                              >
+                                <ChevronDown className="w-4 h-4" />
+                                <span>
+                                  {t('加载更多小节')} ({visibleSections.length} / {flatSections.length})
+                                </span>
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setSectionFeedCount(flatSections.length)}
+                                className="px-4 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 text-xs font-bold hover:bg-amber-50 transition-all"
+                              >
+                                {t(`展开全部 ${flatSections.length} 节`)}
+                              </button>
+                            </div>
+                          ) : (
+                            <div className="flex items-center gap-3 text-xs text-slate-500">
+                              <span>
+                                {t(`已显示全部 ${flatSections.length} 节精译`)}
+                              </span>
+                              {flatSections.length > SECTION_FEED_STEP && (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setSectionFeedCount(SECTION_FEED_STEP);
+                                    scrollToContentTop();
+                                  }}
+                                  className="text-amber-800 font-bold hover:underline"
+                                >
+                                  {t('收起至前 2 节')}
+                                </button>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
-              )}
+              </div>
 
-              {/* Discussions View */}
-              {(viewMode === 'all' || viewMode === 'discussions') && (
+              {/* TAB PANEL 2: Discussions */}
+              <div
+                id="wxl-panel-discussions"
+                role="tabpanel"
+                aria-labelledby="wxl-tab-discussions"
+                hidden={viewMode !== 'discussions'}
+              >
                 <div className="space-y-6">
-                  <section
-                    id="discussions-area"
-                    tabIndex={-1}
-                    className="scroll-mt-24 focus:outline-none"
-                  >
-                    <div className="flex flex-wrap items-center justify-between gap-3 px-1 pb-2 border-b-2 border-sky-700/30">
-                      <h2 className="text-xl sm:text-2xl font-extrabold font-serif-zen text-slate-900">
-                        {t('共读问答与心要备忘录')}
-                      </h2>
-                      <span className="text-xs text-slate-500">
-                        {t('收录共读期间针对关键概念与实修困惑的完整拆解')}
-                      </span>
-                    </div>
-                  </section>
-
                   {filteredDiscussions.length === 0 ? (
-                    <div className="bg-white rounded-3xl border border-slate-200 p-8 text-center text-sm text-slate-500">
+                    <div className="bg-white rounded-3xl border border-slate-200 p-10 text-center text-sm text-slate-500">
                       {t('问答备忘录中未检索到匹配关键词的专题。')}
                     </div>
                   ) : (
-                    <div className="space-y-6">
-                      {filteredDiscussions.map((qa) => renderDiscussionCard(qa))}
-                    </div>
+                    <>
+                      {browseStyle === 'pager' && renderQaPagerBar('top')}
+
+                      <div className="space-y-6">
+                        {visibleDiscussions.map((qa) => renderDiscussionCard(qa))}
+                      </div>
+
+                      {browseStyle === 'pager' ? (
+                        renderQaPagerBar('bottom')
+                      ) : (
+                        <div className="pt-2 flex flex-col items-center gap-3">
+                          <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-sky-700 rounded-full transition-all"
+                              style={{
+                                width: `${Math.min(100, Math.round((visibleDiscussions.length / filteredDiscussions.length) * 100))}%`,
+                              }}
+                            />
+                          </div>
+                          {visibleDiscussions.length < filteredDiscussions.length ? (
+                            <div className="flex flex-wrap items-center justify-center gap-2.5">
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setQaFeedCount((c) =>
+                                    Math.min(filteredDiscussions.length, c + QA_FEED_STEP)
+                                  )
+                                }
+                                className="inline-flex items-center space-x-1.5 px-6 py-2.5 rounded-xl bg-amber-900 text-amber-100 text-sm font-bold hover:bg-amber-800 transition-all shadow-sm"
+                              >
+                                <ChevronDown className="w-4 h-4" />
+                                <span>
+                                  {t('加载更多问答专题')} ({visibleDiscussions.length} /{' '}
+                                  {filteredDiscussions.length})
+                                </span>
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setQaFeedCount(filteredDiscussions.length)}
+                                className="px-4 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 text-xs font-bold hover:bg-amber-50 transition-all"
+                              >
+                                {t(`展开全部 ${filteredDiscussions.length} 篇`)}
+                              </button>
+                            </div>
+                          ) : (
+                            <div className="flex items-center gap-3 text-xs text-slate-500">
+                              <span>
+                                {t(`已显示全部 ${filteredDiscussions.length} 篇心要问答`)}
+                              </span>
+                              {filteredDiscussions.length > QA_FEED_STEP && (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setQaFeedCount(QA_FEED_STEP);
+                                    scrollToContentTop();
+                                  }}
+                                  className="text-amber-800 font-bold hover:underline"
+                                >
+                                  {t('收起至前 2 篇')}
+                                </button>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
-              )}
+              </div>
 
-              {/* Quotes Library View */}
-              {viewMode === 'quotes' && (
-                <section
-                  id="quotes-area"
-                  tabIndex={-1}
-                  className="scroll-mt-24 focus:outline-none space-y-4"
-                >
+              {/* TAB PANEL 3: Quotes Library */}
+              <div
+                id="wxl-panel-quotes"
+                role="tabpanel"
+                aria-labelledby="wxl-tab-quotes"
+                hidden={viewMode !== 'quotes'}
+              >
+                <div className="space-y-5">
                   <div className="flex flex-wrap items-center justify-between gap-3 px-1 pb-2 border-b-2 border-amber-700/30">
                     <h2 className="text-xl sm:text-2xl font-extrabold font-serif-zen text-slate-900">
                       {t('原典金句速查库')}
                     </h2>
                     <span className="text-xs text-slate-500">
-                      {t(`共匹配 ${allQuotes.length} 条原典金句`)}
+                      {t(`当前显示 ${visibleQuotes.length} / ${allQuotes.length} 条原典金句`)}
                     </span>
                   </div>
+
                   {allQuotes.length === 0 ? (
                     <div className="bg-white rounded-3xl border border-slate-200 p-8 text-center text-sm text-slate-500">
                       {t('未检索到匹配的原典金句。')}
                     </div>
                   ) : (
-                    <div className="grid grid-cols-1 gap-4">
-                      {allQuotes.map((item) => (
-                        <article
-                          key={item.id}
-                          className="bg-white rounded-3xl border border-amber-900/15 shadow-sm p-5 space-y-2.5"
-                        >
-                          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                            <span className="font-semibold text-amber-800">
-                              {t(`第 ${String(item.bookIndex).padStart(2, '0')} 册`)} · {t(item.bookTitle)} ·{' '}
-                              {t(item.sectionTitle)}
-                            </span>
+                    <>
+                      <div className="grid grid-cols-1 gap-4">
+                        {visibleQuotes.map((item) => (
+                          <article
+                            key={item.id}
+                            className="bg-white rounded-3xl border border-amber-900/15 shadow-sm p-5 space-y-2.5"
+                          >
+                            <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+                              <span className="font-semibold text-amber-800">
+                                {t(`第 ${String(item.bookIndex).padStart(2, '0')} 册`)} ·{' '}
+                                {t(item.bookTitle)} · {t(item.sectionTitle)}
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() => handleJumpToSection(item.sectionId)}
+                                className="text-amber-700 hover:underline font-semibold"
+                              >
+                                {t('跳转阅读该小节')}
+                              </button>
+                            </div>
+                            <blockquote className="font-serif-zen text-base sm:text-lg font-semibold text-amber-950 leading-relaxed border-l-4 border-amber-600 pl-3.5 py-1 bg-amber-50/50 rounded-r-xl">
+                              “{renderHighlighted(t(item.quote.original), query, `${item.id}-o`)}”
+                            </blockquote>
+                            <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed">
+                              <span className="font-bold text-amber-800">{t('白话点睛：')}</span>
+                              {renderHighlighted(t(item.quote.insight), query, `${item.id}-i`)}
+                            </p>
+                          </article>
+                        ))}
+                      </div>
+
+                      {allQuotes.length > QUOTES_STEP && (
+                        <div className="pt-2 flex flex-col items-center gap-3">
+                          <div className="w-full max-w-xs h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-amber-700 rounded-full transition-all"
+                              style={{
+                                width: `${Math.min(100, Math.round((visibleQuotes.length / allQuotes.length) * 100))}%`,
+                              }}
+                            />
+                          </div>
+                          {visibleQuotes.length < allQuotes.length ? (
+                            <div className="flex flex-wrap items-center justify-center gap-2.5">
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setQuotesCount((c) => Math.min(allQuotes.length, c + QUOTES_STEP))
+                                }
+                                className="inline-flex items-center space-x-1.5 px-6 py-2.5 rounded-xl bg-amber-900 text-amber-100 text-sm font-bold hover:bg-amber-800 transition-all shadow-sm"
+                              >
+                                <ChevronDown className="w-4 h-4" />
+                                <span>
+                                  {t('加载更多金句')} ({visibleQuotes.length} / {allQuotes.length})
+                                </span>
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setQuotesCount(allQuotes.length)}
+                                className="px-4 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 text-xs font-bold hover:bg-amber-50 transition-all"
+                              >
+                                {t(`显示全部 ${allQuotes.length} 条`)}
+                              </button>
+                            </div>
+                          ) : (
                             <button
                               type="button"
                               onClick={() => {
-                                setViewMode('all');
-                                setTimeout(() => {
-                                  document
-                                    .getElementById(item.sectionId)
-                                    ?.scrollIntoView({ behavior: 'smooth' });
-                                }, 80);
+                                setQuotesCount(QUOTES_STEP);
+                                scrollToContentTop();
                               }}
-                              className="text-amber-700 hover:underline font-semibold"
+                              className="text-xs font-bold text-amber-800 hover:underline"
                             >
-                              {t('定位到正文小节')}
+                              {t('收起至前 8 条金句')}
                             </button>
-                          </div>
-                          <blockquote className="font-serif-zen text-base sm:text-lg font-semibold text-amber-950 leading-relaxed border-l-4 border-amber-600 pl-3.5 py-1 bg-amber-50/50 rounded-r-xl">
-                            “{renderHighlighted(t(item.quote.original), query, `${item.id}-o`)}”
-                          </blockquote>
-                          <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed">
-                            <span className="font-bold text-amber-800">{t('白话点睛：')}</span>
-                            {renderHighlighted(t(item.quote.insight), query, `${item.id}-i`)}
-                          </p>
-                        </article>
-                      ))}
-                    </div>
+                          )}
+                        </div>
+                      )}
+                    </>
                   )}
-                </section>
-              )}
+                </div>
+              </div>
 
-              {/* Catalog 29 Books View */}
-              {viewMode === 'catalog' && (
-                <section
-                  id="catalog-area"
-                  tabIndex={-1}
-                  className="scroll-mt-24 focus:outline-none space-y-4"
-                >
+              {/* TAB PANEL 4: 29-Book Catalog with Pagination */}
+              <div
+                id="wxl-panel-catalog"
+                role="tabpanel"
+                aria-labelledby="wxl-tab-catalog"
+                hidden={viewMode !== 'catalog'}
+              >
+                <div className="space-y-4">
                   <div className="flex flex-wrap items-center justify-between gap-3 px-1 pb-2 border-b-2 border-amber-700/30">
                     <h2 className="text-xl sm:text-2xl font-extrabold font-serif-zen text-slate-900">
                       {t('《王骧陆居士全集》全 29 册共读进度总表')}
                     </h2>
                     <span className="text-xs text-slate-500">
-                      {t('合订本总计 1238 页 · 数据源：印心书库')}
+                      {t(`第 ${safeCatalogPage + 1} / ${totalCatalogPages} 页 · 合订本总计 1238 页`)}
                     </span>
                   </div>
 
@@ -851,7 +1242,7 @@ export default function WangXiangluClient() {
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-slate-100">
-                          {filteredCatalog.map((row) => (
+                          {visibleCatalog.map((row) => (
                             <tr key={row.index} className="hover:bg-amber-50/40 transition-colors">
                               <td className="py-3 px-4 font-mono text-slate-500">
                                 {String(row.index).padStart(2, '0')}
@@ -895,36 +1286,156 @@ export default function WangXiangluClient() {
                       </table>
                     </div>
                   </article>
-                </section>
-              )}
+
+                  {totalCatalogPages > 1 && (
+                    <div className="flex items-center justify-center gap-2 pt-2">
+                      <button
+                        type="button"
+                        disabled={safeCatalogPage === 0}
+                        onClick={() => setCatalogPage((p) => Math.max(0, p - 1))}
+                        className={`px-3.5 py-1.5 rounded-xl text-xs font-bold ${
+                          safeCatalogPage > 0
+                            ? 'bg-white border border-slate-200 text-slate-700 hover:bg-amber-50'
+                            : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+                        }`}
+                      >
+                        {t('上一页')}
+                      </button>
+                      {Array.from({ length: totalCatalogPages }).map((_, idx) => (
+                        <button
+                          key={idx}
+                          type="button"
+                          onClick={() => setCatalogPage(idx)}
+                          className={`w-8 h-8 rounded-xl text-xs font-bold ${
+                            safeCatalogPage === idx
+                              ? 'bg-amber-900 text-amber-100'
+                              : 'bg-white border border-slate-200 text-slate-700 hover:bg-amber-50'
+                          }`}
+                        >
+                          {idx + 1}
+                        </button>
+                      ))}
+                      <button
+                        type="button"
+                        disabled={safeCatalogPage >= totalCatalogPages - 1}
+                        onClick={() =>
+                          setCatalogPage((p) => Math.min(totalCatalogPages - 1, p + 1))
+                        }
+                        className={`px-3.5 py-1.5 rounded-xl text-xs font-bold ${
+                          safeCatalogPage < totalCatalogPages - 1
+                            ? 'bg-white border border-slate-200 text-slate-700 hover:bg-amber-50'
+                            : 'bg-zinc-100 text-slate-400 cursor-not-allowed'
+                        }`}
+                      >
+                        {t('下一页')}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
 
-            {/* Right Sticky Scrollspy Sidebar */}
+            {/* Right Sticky Interactive Directory Sidebar */}
             <aside className="hidden lg:block lg:col-span-3 sticky top-20">
               <div className="bg-white rounded-3xl border border-amber-900/15 shadow-sm p-4 space-y-3">
-                <div className="text-xs font-bold text-slate-500 tracking-wider uppercase px-2">
-                  {t('本页快速目录')}
+                <div className="flex items-center justify-between px-2">
+                  <span className="text-xs font-bold text-slate-500 tracking-wider uppercase">
+                    {viewMode === 'discussions' ? t('心要问答目录') : t('已译章节目录')}
+                  </span>
+                  <span className="text-[11px] font-mono text-amber-800">
+                    {viewMode === 'discussions'
+                      ? `${safeQaIdx + 1}/${filteredDiscussions.length || 1}`
+                      : `${safeSectionIdx + 1}/${flatSections.length || 1}`}
+                  </span>
                 </div>
-                <nav
-                  ref={scrollNavRef}
-                  aria-label={t('本页目录导航')}
-                  className="wxl-scrollspy-nav space-y-1 max-h-[calc(100vh-11rem)] overflow-y-auto pr-1"
-                >
-                  {tocItems.map((item) => (
-                    <a
-                      key={item.id}
-                      href={`#${item.id}`}
-                      className={`block border-l-2 border-transparent rounded-r-lg transition-colors truncate ${
-                        item.kind === 'book'
-                          ? 'px-2.5 py-1.5 text-xs font-bold text-slate-800 hover:bg-amber-50/60 mt-1.5'
-                          : 'pl-5 pr-2.5 py-1 text-xs text-slate-600 hover:text-amber-900 hover:bg-amber-50/40'
-                      }`}
-                      title={item.label}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </nav>
+
+                {viewMode === 'discussions' ? (
+                  <div className="space-y-1 max-h-[calc(100vh-12rem)] overflow-y-auto pr-1">
+                    {filteredDiscussions.map((qa, idx) => {
+                      const isCurrent =
+                        browseStyle === 'pager' ? idx === safeQaIdx : idx < qaFeedCount;
+                      return (
+                        <button
+                          key={qa.id}
+                          type="button"
+                          onClick={() => {
+                            if (browseStyle === 'pager') {
+                              setQaPageIdx(idx);
+                              scrollToContentTop();
+                            } else {
+                              setQaFeedCount((c) => Math.max(c, idx + 1));
+                              setTimeout(() => {
+                                document
+                                  .getElementById(qa.id)
+                                  ?.scrollIntoView({ behavior: 'smooth' });
+                              }, 50);
+                            }
+                          }}
+                          className={`w-full text-left px-3 py-2 rounded-xl text-xs transition-all flex items-start gap-2 ${
+                            browseStyle === 'pager' && idx === safeQaIdx
+                              ? 'bg-amber-900 text-amber-100 font-bold shadow-xs'
+                              : isCurrent
+                                ? 'text-slate-800 hover:bg-amber-50 font-medium'
+                                : 'text-slate-500 hover:bg-slate-50'
+                          }`}
+                        >
+                          <span className="font-mono shrink-0">
+                            {String(qa.index).padStart(2, '0')}.
+                          </span>
+                          <span className="line-clamp-2">{t(qa.title)}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="space-y-1 max-h-[calc(100vh-12rem)] overflow-y-auto pr-1">
+                    {flatSections.map((item, idx) => {
+                      const isActive =
+                        browseStyle === 'pager' &&
+                        viewMode === 'translations' &&
+                        idx === safeSectionIdx;
+                      return (
+                        <button
+                          key={item.sec.id}
+                          type="button"
+                          onClick={() => {
+                            setViewMode('translations');
+                            if (browseStyle === 'pager') {
+                              setSectionPageIdx(idx);
+                              scrollToContentTop();
+                            } else {
+                              setSectionFeedCount((c) => Math.max(c, idx + 1));
+                              setTimeout(() => {
+                                document
+                                  .getElementById(item.sec.id)
+                                  ?.scrollIntoView({ behavior: 'smooth' });
+                              }, 50);
+                            }
+                          }}
+                          className={`w-full text-left px-3 py-2 rounded-xl text-xs transition-all flex items-start gap-2 ${
+                            isActive
+                              ? 'bg-amber-900 text-amber-100 font-bold shadow-xs'
+                              : 'text-slate-700 hover:bg-amber-50'
+                          }`}
+                        >
+                          <span className="font-mono shrink-0 opacity-75">
+                            {String(idx + 1).padStart(2, '0')}.
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            <div className="truncate font-semibold">{t(item.sec.title)}</div>
+                            <div
+                              className={`text-[10px] truncate ${
+                                isActive ? 'text-amber-200' : 'text-slate-400'
+                              }`}
+                            >
+                              {t(`第 ${String(item.book.index).padStart(2, '0')} 册 · ${item.book.title}`)}
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             </aside>
           </div>
