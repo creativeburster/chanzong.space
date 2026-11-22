@@ -13764,5 +13764,46 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "jingdechuandenglu",
       "wudenghuiyuan"
     ]
+  },
+  {
+    "id": "si-chan-bing",
+    "title": "禅宗四弊（客位禅客）",
+    "category": "禅病",
+    "summary": "王骧陆居士于《印心语录》开篇标举的四种似是而非之禅宗流弊：一曰文人禅（偏爱文字般若、卖弄机锋诗歌）；二曰枯寂禅（死守空定、厌恶尘劳，以法见自缚）；三曰香堂禅（死抱固定坐香仪式与死话头，致昏沉断灭）；四曰狂放禅（误解一切无碍而流于放纵）。四者皆从外在知见或死法进入，故称为“禅客，住在客位，未见主人”。",
+    "classicRef": "印心语录",
+    "relatedConcepts": [
+      "wenzi-chan",
+      "kuang-chan",
+      "ben-lai-mian-mu",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "yinxinyulu",
+      "tanjing"
+    ]
+  },
+  {
+    "id": "jue-hou-dai-wei",
+    "title": "觉后带尾（第二念粘着）",
+    "category": "修行观照",
+    "summary": "《印心语录》揭示的微细摄心关窍。念头初起并不可畏，真正滋生无明与轮回病根的，是念头生起并刚“凛觉”之后，自心不肯当下一刀两段回归无住本位，反而紧接着产生懊恼、得意、分析、对治等第二念——这便是“带尾”。若不于觉后瞬间截断此尾，连“能觉”本身亦成病根，沦为相续不断之生死种子。",
+    "classicRef": "印心语录",
+    "relatedConcepts": [
+      "wu-nian",
+      "no-abiding",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "yinxinyulu",
+      "dahuiyulu"
+    ]
   }
 ];

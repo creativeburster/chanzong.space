@@ -13861,5 +13861,103 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "xuchuandenglu"
     ]
+  },
+  {
+    "id": "koan-761",
+    "question": "文人禅、枯寂禅、香堂禅、狂放禅皆有所得，何以王骧陆居士斥之为“非禅”？",
+    "answer": "须知此等人于禅宗虽属外道，亦自有其意境在，较诸惘然者略胜一筹，但总是夙世习气，以外入故，名为禅客，住在客位，未见主人也。",
+    "context": "《印心语录》第一则，王骧陆居士开宗明义辨析近现代学人极易落入的四种似是而非之禅病。",
+    "interpretation": "修道最怕“以客作主”。玩弄诗偈机锋是从文字入，死守定境是从觉受入，死抱固定仪式话头是从套路入，曲解无碍流于放纵是从欲念入——凡有所倚靠外境或固定境界而入者，终究只是流连客舍的客人，不曾亲见自心真正作主的主人。",
+    "master": "王骧陆",
+    "source": "印心语录",
+    "relatedConcepts": [
+      "si-chan-bing",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yinxinyulu"
+    ]
+  },
+  {
+    "id": "koan-762",
+    "question": "罗睺罗尊者仗为佛之子，不求精进，待佛为度。一日佛食次问尊者曰：我已饱否？",
+    "answer": "答言：佛自食，云何问人饱否？佛言：则我自成佛，非关汝事。尊者言下大悟，遂成密行第一。",
+    "context": "《印心语录》第二十三则引世尊吃饭点化罗睺罗尊者公案，痛斥学人倚靠明师代行、不肯自证自悟之依赖心。",
+    "interpretation": "吃饭只能自己吃自己饱，成佛见性亦只能自己疑、自己悟，半点替代不得。如果师长只是一味给学生发放现成的依赖方法而不令其独立承当、咬紧疑情自参自透，反而是从一开始就把学人推进了自误的火坑。",
+    "master": "王骧陆",
+    "source": "印心语录",
+    "relatedConcepts": [
+      "direct-pointing",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "luohouluo"
+    ],
+    "relatedBooks": [
+      "yinxinyulu"
+    ]
+  },
+  {
+    "id": "koan-763",
+    "question": "方向只是一路，变化却有万千。登太华之巅，俯视一切无不周遍，为何依然有所不见？",
+    "answer": "但脚下踏住这一块，还是不见。必也腾空再上，方无遗漏处。悟此即明无住之大用。",
+    "context": "《印心语录》第二十六则，以攀登华山极顶为喻，点破学人最后最隐微的立足死执。",
+    "interpretation": "修行人往往能看破万事万物的空妄，却恰恰看不见那个“正在看破一切、以此为得意立足点”的能观自我（脚下这一块）。唯有把最后这一块站立的依托也连根腾空放下（无住），方能真见法界浑融、全无遗漏的本来风光。",
+    "master": "王骧陆",
+    "source": "印心语录",
+    "relatedConcepts": [
+      "no-abiding",
+      "wuzhu-ben"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yinxinyulu"
+    ]
+  },
+  {
+    "id": "koan-764",
+    "question": "在家人日理俗务、尘劳琐碎，何以大慧宗杲禅师与王骧陆均言“在家人修道，较比丘得力且二十倍”？",
+    "answer": "欲修最上乘，尘劳为资粮，冤家一齐到，庄严此道场。故人于不幸时，莫辜负了这倒霉，就此着力，便证菩提。",
+    "context": "《印心语录》第三十一则，为现代居士在工作与家庭纠葛中实修破除退屈自卑之心。",
+    "interpretation": "顺境安逸极易滋长隐微的枯寂自满；相反，恰恰是职场摩擦、家务繁琐乃至“倒霉”委屈来袭的当口，能最真切地照出心中潜藏的名心、利心与嗔痴我执。不逃避逆境，就在烦恼火宅正中央回光反照、不随境转，正是无上菩提的绝佳磨刀石。",
+    "master": "王骧陆",
+    "source": "印心语录",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "jue-hou-dai-wei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "yinxinyulu",
+      "dahuiyulu"
+    ]
+  },
+  {
+    "id": "koan-765",
+    "question": "学人诉称修学佛法之后每每自感孤寂冷清，王骧陆居士如何一语勘破？",
+    "answer": "不知孤则有之，寂则未也，能修到寂，便自不孤。倘真见寂静寂灭之相，则无处不怡然自得。宇宙一切，皆备于我，又何孤寂之有！",
+    "context": "《印心语录》第四十三则，剖析世俗冷清郁闷之“孤”与佛法真性澄明之“寂”的本质差异。",
+    "interpretation": "感到“孤单冷清”，说明心里仍旧死守着一个狭隘与世隔绝的“小我”，因为失去了俗世热闹的攀附而觉得空虚失落；真正的“寂”，是能所双泯后与十方宇宙万象合为一体的广大空明，不仅绝不孤单，反而随处充满、怡然自足。",
+    "master": "王骧陆",
+    "source": "印心语录",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yinxinyulu"
+    ]
   }
 ];

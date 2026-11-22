@@ -175,7 +175,8 @@ MAP = {
   'xisouguanglu': [('xisouyulu', '小本语录与全景广录互参'), ('xutangyulu', '宋末临济同调'), ('biyanlu', '公案颂古向上宗眼'), ('wumenguan', '赵州无字看话同参')],
   'banruodenglunshi': [('shunzhonglun', '中观法相阐幽'), ('shiertimenlun', '龙树中观正脉'), ('bailun', '破外显正空门'), ('baoxingwangzhenglun', '中道实相教诫')],
   'yuxuanyulu': [('jingdechuandenglu', '宗门传灯渊薮'), ('zhiyuelu', '明代指月法海'), ('zongjinglu', '永明万善同归'), ('wudenghuiyuan', '五宗七派统要')],
-  'xuchuandenglu': [('jingdechuandenglu', '正统传灯前后续篇'), ('wudenghuiyuan', '宗门五灯源流合会'), ('zhiyuelu', '历代传灯机锋指月'), ('biyanlu', '雪窦圆悟机用发微')],
+  'xuchuandenglu': [('jingdechuandenglu', '正统传灯前后续篇'), ('wudenghuiyuan', '宗门五灯源流合会'), ('zhiyuelu', '历代传灯机锋指月'), ('biyanlu', '雪窦圆悟机用发微')],,
+  'yinxinyulu': [('tanjing', '曹溪顿悟本源'), ('dahuiyulu', '在家人修道得力二十倍之法源'), ('jingangjing', '应无所住般若心印'), ('changuancejin', '生死心切鞭策工夫')],
 }
 
 

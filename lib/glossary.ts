@@ -1718,6 +1718,20 @@ export const ZEN_GLOSSARY: Record<string, GlossaryEntry[]> = {
     { char: '阇维', pinyin: 'shé wéi', meaning: '梵语 Jhāpita 音译，即茶毗，指佛教出家僧众遗体火化之古称。' },
     { char: '筀笋', pinyin: 'guì sǔn', meaning: '筀（guì），筀竹，生于南土之坚硬竹笋。公案用作无意味直指机锋，如“南山筀笋東海烏鰂”。' },
   ],
+  'yinxinyulu': [
+    { char: "智隍", pinyin: "zhì huáng", meaning: "唐代禅僧，初习枯寂坐禅二十年自以为得道，经玄策与六祖点破执定之病后豁然大悟。本书以此喻“枯寂禅”弊病。" },
+    { char: "颟顸", pinyin: "mān hān", meaning: "糊涂笼统、含混敷衍，不加审察分辨。文中警惕学者若将现成误作不修，便成“颟顸”。" },
+    { char: "觌面", pinyin: "dí miàn", meaning: "觌读 dí，当面相见、直面相对而不相避，指功夫时刻与自心本源直接面对。" },
+    { char: "凛觉", pinyin: "lǐn jué", meaning: "凛读 lǐn，警醒敬畏而毫不放逸的觉照。指念头微动时立刻清清楚楚照见察觉。" },
+    { char: "一曝十寒", pinyin: "yī pù shí hán", meaning: "比喻修行功夫不能持续，用功一日而懈怠十日，终究难以得力成就。" },
+    { char: "好高骛远", pinyin: "hào gāo wù yuǎn", meaning: "骛读 wù，只顾追求高深奇特玄妙，却轻慢当下极寻常的本心用功处。" },
+    { char: "考妣", pinyin: "kǎo bǐ", meaning: "古称已故的父亲为考、母亲为妣。“如丧考妣”形容参禅求出离生死之迫切心如痛失双亲。" },
+    { char: "掊击", pinyin: "póu jī", meaning: "掊读 póu，击破、打击粉碎。“掊击尔智”指唯有大智慧方能打破世俗小聪明与意识计度。" },
+    { char: "罗睺罗", pinyin: "luó hóu luó", meaning: "梵语 Rāhula 之音译，释迦牟尼佛之子，十大弟子中密行第一。文中引佛问饱食公案破弟子依赖心。" },
+    { char: "醍醐", pinyin: "tí hú", meaning: "从牛乳反复提炼出的最精纯甘美油脂，佛教用以比喻无上清凉畅快的佛法真实智慧。" },
+    { char: "大愚阿阇黎", pinyin: "dà yú ā shé lí", meaning: "印心宗初祖（1888—1946），法名慈观，以禅门参究彻悟后受传“心中心密法”并传付王骧陆居士。阿阇黎意为轨范师。" },
+    { char: "三摩他", pinyin: "sān mó tā", meaning: "梵语 Śamatha 之音译，意为止、奢摩他、寂静正定。文中指修心中心密千座后所证之真实寂静定慧境界。" },
+  ],
 };
 
 

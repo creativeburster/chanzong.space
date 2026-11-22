@@ -76,7 +76,8 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "xisouguanglu",
       "yuxuanyulu",
       "biyanlu",
-      "zongjinglu"
+      "zongjinglu",
+      "yinxinyulu"
     ],
     "relatedPersons": [
       "mazu",
@@ -86,7 +87,8 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "zhaozhou",
       "yunmen",
       "dongshan",
-      "yuanwu-keqin"
+      "yuanwu-keqin",
+      "wang-xianglu"
     ],
     "relatedConcepts": [
       "mind-is-buddha",
@@ -297,13 +299,15 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "yongjia",
       "jueguanlun",
       "sixingguan",
-      "zhengdaoge"
+      "zhengdaoge",
+      "yinxinyulu"
     ],
     "relatedPersons": [
       "chinul",
       "guifeng-zongmi",
       "yongjia",
-      "bodhidharma"
+      "bodhidharma",
+      "wang-xianglu"
     ],
     "relatedConcepts": [
       "dunwu-jianxiu",
@@ -412,10 +416,12 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "henghedashouyin",
       "zixingcanjiu",
       "awatuotazhige",
-      "ashitawakela"
+      "ashitawakela",
+      "yinxinyulu"
     ],
     "relatedPersons": [
-      "lianhuasheng"
+      "lianhuasheng",
+      "wang-xianglu"
     ],
     "relatedConcepts": [
       "wu-ran-jue-xing",
