@@ -1,0 +1,61 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/zh-tw
+  Content-Language: zh-Hant
+
+/zh-tw/*
+  Content-Language: zh-Hant
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/og-banner.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/logo-nianhua.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/logo-nianhua-new.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/logo-nianhua-highcontrast.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/sitemap.xsl
+  Cache-Control: public, max-age=86400
+
+/sitemaps/*
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/llms.txt
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/llms-full.txt
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/llms/*
+  Cache-Control: public, max-age=3600, s-maxage=86400

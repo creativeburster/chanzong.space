@@ -45,3 +45,4 @@ screenshots/
 downloaded_classics/
 
 .vercel
+.wrangler/

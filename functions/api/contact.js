@@ -1,31 +1,34 @@
-import { NextResponse } from 'next/server';
+// Cloudflare Pages Function: POST /api/contact
+// 替代原 Next.js 动态 API 路由 app/api/contact/route.ts，适配静态导出模式
 
-export const dynamic = 'force-dynamic';
+function jsonResponse(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+  });
+}
 
-export async function POST(request: Request) {
+export async function onRequestPost(context) {
   try {
-    const body = await request.json();
-    const { name, contact, type, message } = body;
+    const body = await context.request.json();
+    const { name, contact, type, message } = body || {};
 
-    // 参数校验
     if (!name || typeof name !== 'string' || !name.trim()) {
-      return NextResponse.json({ error: '请提供您的称呼' }, { status: 400 });
+      return jsonResponse({ error: '请提供您的称呼' }, 400);
     }
     if (!contact || typeof contact !== 'string' || !contact.trim()) {
-      return NextResponse.json({ error: '请提供您的联系方式（邮箱或微信）' }, { status: 400 });
+      return jsonResponse({ error: '请提供您的联系方式（邮箱或微信）' }, 400);
     }
     if (!message || typeof message !== 'string' || !message.trim()) {
-      return NextResponse.json({ error: '留言内容不能为空' }, { status: 400 });
+      return jsonResponse({ error: '留言内容不能为空' }, 400);
     }
-
     if (message.length > 2000) {
-      return NextResponse.json({ error: '留言内容超出长度限制（2000字以内）' }, { status: 400 });
+      return jsonResponse({ error: '留言内容超出长度限制（2000字以内）' }, 400);
     }
 
-    const recipientEmail = process.env.CONTACT_EMAIL || '591611431@qq.com';
+    const recipientEmail = (context.env && context.env.CONTACT_EMAIL) || '591611431@qq.com';
     const feedbackType = type || '综合留言反馈';
 
-    // 转发给 FormSubmit API
     const response = await fetch('https://formsubmit.co/ajax/' + recipientEmail, {
       method: 'POST',
       headers: {
@@ -48,32 +51,30 @@ export async function POST(request: Request) {
     });
 
     const text = await response.text();
-    let result: any = {};
+    let result = {};
     try {
       result = JSON.parse(text);
     } catch {
       result = { message: text };
     }
 
-    const isSuccess = 
-      result.success === 'true' || 
-      result.success === true || 
+    const isSuccess =
+      result.success === 'true' ||
+      result.success === true ||
       (result.message && typeof result.message === 'string' && (result.message.includes('Activate') || result.message.includes('success')));
 
     if (response.ok || isSuccess) {
-      return NextResponse.json({ success: true, message: '留言已成功送达！' });
-    } else {
-      console.error('FormSubmit response error:', result);
-      return NextResponse.json(
-        { error: '邮件网关返回异常：' + (result.message || text) },
-        { status: 500 }
-      );
+      return jsonResponse({ success: true, message: '留言已成功送达！' }, 200);
     }
-  } catch (error: any) {
-    console.error('Contact API error:', error);
-    return NextResponse.json(
+
+    return jsonResponse(
+      { error: '邮件网关返回异常：' + (result.message || text) },
+      500
+    );
+  } catch (error) {
+    return jsonResponse(
       { error: '服务暂时繁忙，请稍后重试: ' + (error?.message || String(error)) },
-      { status: 500 }
+      500
     );
   }
 }
