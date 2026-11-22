@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#FAF9F6',
+  themeColor: '#F4EFE2',
 };
 
 export default function RootLayout({
@@ -79,14 +79,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" className="scroll-smooth bg-[#FAF9F6] text-slate-900">
+    <html lang="zh-CN" className="scroll-smooth bg-[#F4EFE2] text-slate-900">
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <link rel="alternate" type="text/plain" href="https://chanzong.space/llms.txt" title="禅宗知识库 LLM AI Index" />
         <link rel="alternate" type="text/plain" href="https://chanzong.space/llms-full.txt" title="禅宗知识库 Full LLM Corpus" />
-        <meta name="theme-color" content="#FAF9F6" />
+        <meta name="theme-color" content="#F4EFE2" />
         {/* Bing Webmaster Tools 验证 */}
         <meta name="msvalidate.01" content="F238CD74AF5EBE0E4362F6C77DD3D999" />
         <script

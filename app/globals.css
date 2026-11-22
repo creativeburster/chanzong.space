@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --bg-zen: #FAF9F6;
-  --paper-zen: #FFFFFF;
+  --bg-zen: #F4EFE2;
+  --paper-zen: #FAF5E8;
   --ink-zen: #18181B;
   --stone-zen: #71717A;
   --amber-zen: #A16207;
@@ -57,7 +57,7 @@ body {
 }
 .prose blockquote {
   border-left: 4px solid #A16207;
-  background: #FDF8EF;
+  background: #EFE6D2;
   padding: 0.8em 1.2em;
   margin: 1.4em 0;
   border-radius: 0 8px 8px 0;
@@ -139,14 +139,32 @@ body {
 }
 
 /* ---------------------------------------------------------
+   0. 宣纸默认主题 (Paper Theme) - 柔和米黄护眼全站统一
+   --------------------------------------------------------- */
+html:not([data-theme="bamboo"]):not([data-theme="night"]):not(.dark) [class*="bg-[#FAF9F6]"] {
+  background-color: #F4EFE2;
+}
+html:not([data-theme="bamboo"]):not([data-theme="night"]):not(.dark) .bg-white {
+  background-color: #FAF5E8;
+}
+html:not([data-theme="bamboo"]):not([data-theme="night"]):not(.dark) .bg-white\/95,
+html:not([data-theme="bamboo"]):not([data-theme="night"]):not(.dark) .bg-white\/90,
+html:not([data-theme="bamboo"]):not([data-theme="night"]):not(.dark) .bg-white\/80 {
+  background-color: rgba(250, 245, 232, 0.92);
+}
+
+/* ---------------------------------------------------------
    1. 竹青主题 (Bamboo Theme) - 温润翠微古籍青色
    --------------------------------------------------------- */
-[data-theme="bamboo"] {
+[data-theme="bamboo"],
+[data-theme="bamboo"] [class*="bg-[#FAF9F6]"],
+[data-theme="bamboo"] [class*="bg-[#F4EFE2]"] {
   background-color: #DFEAE0 !important;
   color: #122E16 !important;
 }
 [data-theme="bamboo"] article,
 [data-theme="bamboo"] .bg-white,
+[data-theme="bamboo"] [class*="bg-[#FAF5E8]"],
 [data-theme="bamboo"] .bg-slate-900 {
   background-color: #EBF3EC !important;
   border-color: #BDD2BD !important;
@@ -218,7 +236,11 @@ html.dark article,
 [data-theme="night"] .bg-white,
 html.dark .bg-white,
 [data-theme="night"] [class*="bg-[#FAF9F6]"],
-html.dark [class*="bg-[#FAF9F6]"] {
+html.dark [class*="bg-[#FAF9F6]"],
+[data-theme="night"] [class*="bg-[#F4EFE2]"],
+html.dark [class*="bg-[#F4EFE2]"],
+[data-theme="night"] [class*="bg-[#FAF5E8]"],
+html.dark [class*="bg-[#FAF5E8]"] {
   background-color: #0F172A !important;
   border-color: #1E293B !important;
   color: #E2E8F0 !important;

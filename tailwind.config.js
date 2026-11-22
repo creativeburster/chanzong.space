@@ -34,8 +34,8 @@ module.exports = {
       },
       colors: {
         zen: {
-          bg: '#FAF9F6',
-          paper: '#FFFFFF',
+          bg: '#F4EFE2',
+          paper: '#FAF5E8',
           dark: '#18181B',
           ink: '#09090B',
           accent: '#A16207',
