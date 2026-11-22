@@ -313,6 +313,32 @@ export default function WangXiangluClient() {
     (acc, b) => acc + b.sections.reduce((sAcc, s) => sAcc + s.quotes.length, 0),
     0
   );
+  const completedBookIndices = WXL_BOOKS_NOTES.filter((b) => b.status === 'completed').map(
+    (b) => b.index
+  );
+  const readingBook = WXL_BOOKS_NOTES.find((b) => b.status === 'reading');
+  const totalBooksCount = WANGXIANGLU_ALL_29_CATALOG.length || 29;
+  const completedBookWeight = WXL_BOOKS_NOTES.reduce((acc, b) => {
+    if (b.status === 'completed') return acc + 1;
+    if (b.status === 'reading' && b.totalSections > 0) {
+      return acc + b.completedSections / b.totalSections;
+    }
+    return acc;
+  }, 0);
+  const progressPercent = Math.max(
+    1,
+    Math.round((completedBookWeight / totalBooksCount) * 100)
+  );
+  const progressSummaryText = [
+    completedBookIndices.length > 0
+      ? `第 ${completedBookIndices.join('、')} 册已读完`
+      : null,
+    readingBook
+      ? `正在共读第 ${readingBook.index} 册（第 ${readingBook.completedSections} / ${readingBook.totalSections} 小节）`
+      : null,
+  ]
+    .filter(Boolean)
+    .join('，');
 
   const viewTabs: {
     id: ViewMode;
@@ -791,9 +817,7 @@ export default function WangXiangluClient() {
             {/* Progress bar & Search + Mode Tabs */}
             <div className="space-y-4 pt-2 border-t border-amber-900/10">
               <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
-                <span>
-                  {t('当前阅读进度：第 1、2 册已读完，正在共读第 3 册（第 1 / 8 小节）')}
-                </span>
+                <span>{t(`当前阅读进度：${progressSummaryText}`)}</span>
                 <span className="font-mono text-slate-500">
                   {t('最近更新')}：{WXL_LAST_UPDATED}
                 </span>
@@ -801,7 +825,7 @@ export default function WangXiangluClient() {
               <div className="w-full h-2 rounded-full bg-zinc-100 overflow-hidden">
                 <div
                   className="h-full bg-amber-700 rounded-full transition-all"
-                  style={{ width: `${Math.round((2.125 / 29) * 100)}%` }}
+                  style={{ width: `${progressPercent}%` }}
                 />
               </div>
 
