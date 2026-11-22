@@ -59,7 +59,7 @@
 
 - **框架**：Next.js 14 (App Router) + React 18 + TypeScript + Tailwind CSS
 - **数据层**：`lib/taxonomy.ts`（包含全量强类型结构化数据与交叉引用 ID 数组）与 `manifest.json`
-- **构建测试**：在修改任何代码后，运行 `npx tsc --noEmit` 确保 exit code 0 且无报错。完整构建用 `node node_modules/next/dist/bin/next build`。
+- **构建测试**：在修改任何代码后，运行 `npx tsc --noEmit` 确保 exit code 0 且无报错。完整构建用 `npm run build`（执行 `next build && node tools/postbuild_i18n.js`，静态导出至 `out/` 目录；路由重定向、响应头与动态接口分别托管于 `public/_redirects`、`public/_headers` 与 `functions/`）。
 
 ---
 
@@ -128,10 +128,10 @@
 - 确认生僻字卡片与白话今译卡片在繁体路由下调用 `t(...)` 正确渲染繁体字形；
 - 确认 `sitemap.xml` 自动生成对应的 `zh-Hant` alternate hreflang 双向内链。
 
-### 步骤 12：全站 SSG 构建、Git 提交与生产推送
-- 全站构建验证：运行 `node node_modules/next/dist/bin/next build` 确保全量 SSG 页面生成成功（Exit code 0）；
-- Git 提交推送：提交代码并 push 到 master 分支；
-- Vercel 生产部署：通过 `npx vercel --scope chanzong --prod --yes` 触发生产环境部署，验证线上实时生效；
+### 步骤 12：全站 SSG 静态导出、Git 提交与生产推送
+- 全站构建验证：运行 `npm run build`（即 `next build && node tools/postbuild_i18n.js`）确保全量静态页面导出至 `out/` 并完成繁体 `lang="zh-TW"` 注入（Exit code 0）；
+- Git 提交推送：提交代码并 push 到 `master` 分支；
+- Cloudflare Pages 生产部署：通过 `npx wrangler pages deploy out --project-name=chanzong-space --branch=master`（或使用本机 `F:\geokit\node_modules\.bin\wrangler.cmd`）部署至生产环境（站点已全面迁离 Vercel，严禁再使用 Vercel 部署），验证线上实时生效；
 - **“一部一停”**：每发布完一部经典，完整汇报该部全部数据与链接，停下来等待用户明确指令。
 
 ---
