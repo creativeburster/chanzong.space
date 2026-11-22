@@ -13805,5 +13805,131 @@ export const ZEN_CONCEPTS: ConceptItem[] = [
       "yinxinyulu",
       "dahuiyulu"
     ]
+  },
+  {
+    "id": "xin-zhong-xin-fa",
+    "title": "心中心法（无相密乘）",
+    "category": "法门源流",
+    "summary": "二十世纪二十年代由大愚阿阇黎于庐山闭关传出、王骧陆居士弘传于津沪的密部第四真如门。不繁琐设坛供养，唯以六种手印及佛心真言修持，借助三分之二佛力与三分之一自力，直从第八识破无明、显本性，然后再于悟后起修除尽习气。",
+    "classicRef": "王骧陆居士序传 · 乙亥讲演录",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "jianxing-chengfo",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "dayu-asheli",
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan",
+      "yihaijiangyanlu",
+      "xuefocongtan",
+      "yinxinyulu",
+      "zhenglihouji"
+    ]
+  },
+  {
+    "id": "chan-jing-mi-gui-yuan",
+    "title": "禅净密归元不二",
+    "category": "宗派圆融",
+    "summary": "王骧陆居士贯穿全集二十九册的核心会通思想：禅宗“见性成佛”、净土“花开见佛”、密宗“即身成佛”，名称手段虽有方便差别，归根结底同归“悟无所得、明自本心”的同一实相。分宗立户攻击他宗者，皆属因地不正。",
+    "classicRef": "净土修持问题 · 阿弥陀心要",
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "yin-xin-wu-zhu",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dayu-asheli"
+    ],
+    "relatedBooks": [
+      "jingtuxiuchiwenti",
+      "amituoxinyao",
+      "jingtuyinxinfayao",
+      "rufomingzongdawen"
+    ]
+  },
+  {
+    "id": "fan-nao-wei-zi-liang",
+    "title": "尘劳为资粮",
+    "category": "修行观照",
+    "summary": "王骧陆居士继承大慧宗杲居士禅宗风，指出在家人日处繁忙工作、家庭纠葛与人际冤对中修道，反而较深山闭修得力二十倍。尘劳逆境不是障碍，恰恰是迫出心中潜藏我执、庄严心地道场并成就菩提的现成资粮。",
+    "classicRef": "印心语录 · 学佛最初之决定",
+    "relatedConcepts": [
+      "jue-hou-dai-wei",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dahui-zonggao"
+    ],
+    "relatedBooks": [
+      "yinxinyulu",
+      "xuefozuichuzhijueding",
+      "diandi",
+      "guanweizashuo"
+    ]
+  },
+  {
+    "id": "xin-su-wu-zhu",
+    "title": "心素（素心与随缘行素）",
+    "category": "心性修持",
+    "summary": "见于王骧陆《养生论》之精辟界定：世人多执口素而心荤（一边吃素一边心中嗔恨名利计较不止），不知真素食重在“心素”——不执吃素为功德，不以食肉斥他人罪恶，内心清净无妄、随缘行素，破除荤素二见方名真净。",
+    "classicRef": "养生论",
+    "relatedConcepts": [
+      "no-abiding",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yangshenglun",
+      "guanweizashuo"
+    ]
+  },
+  {
+    "id": "zheng-shou-san-mei",
+    "title": "正受三昧（受而等于不受）",
+    "category": "定慧境界",
+    "summary": "王骧陆在《心经》《金刚经》《净土印心法要》中反复点明的禅定核心：三昧翻为“正受”，所谓正受并非昏昧麻木无觉，而是面对世间一切顺逆苦乐皆知其本空，内心不取着、不受染，做到“知而若无知，受而等于不受”。",
+    "classicRef": "金刚般若波罗蜜经白话述义 · 净土印心法要",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingbaihuashuyi",
+      "jingtuyinxinfayao",
+      "xinjingbaihuafenduanjieshi"
+    ]
+  },
+  {
+    "id": "yin-xin-wu-zhu",
+    "title": "印心无住（挂而无碍）",
+    "category": "般若核心",
+    "summary": "王骧陆诠释《金刚经》《心经》与《坛经》的核心枢要：世人误将“心无挂碍”作枯木无事解，不知实修中一切世务仍须随缘料理负责，只是心体如镜照影“挂而无碍”，行云流水般不粘著半点成败我相。",
+    "classicRef": "般若波罗蜜多心经分段贯释 · 大鉴禅师法宝坛经述旨",
+    "relatedConcepts": [
+      "no-abiding",
+      "zheng-shou-san-mei",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "xinjingfenduanguanshi",
+      "tanjingshuzhi",
+      "jingangjingfenduanguanshi",
+      "xinjingsuishuo"
+    ]
   }
 ];

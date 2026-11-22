@@ -13959,5 +13959,1611 @@ export const ZEN_KOANS: KoanItem[] = [
     "relatedBooks": [
       "yinxinyulu"
     ]
+  },
+  {
+    "id": "koan-766",
+    "question": "近代参学者同样天天参究话头，何以元音老人在《序》中叹其“致二三十年不得消息”？",
+    "answer": "争奈疑情难起，退而重于默念话头，致二三十年不得消息。",
+    "context": "《王骧陆居士序传·元音序》评述近世禅门衰微、徒留法卷而罕见实悟之病根。",
+    "interpretation": "参话头不是嘴里或者心里背诵一句台词。“念佛是谁”必须逼出真正发自肺腑的急切大疑情，才能憋死妄想分别；如果疑情提不起而退化成顺口溜式的默念，就成了催眠曲，坐再久也难以打开桶底。",
+    "master": "元音老人",
+    "source": "王骧陆居士序传",
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "huatou-gongfu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dayu-asheli"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan"
+    ]
+  },
+  {
+    "id": "koan-767",
+    "question": "各宗学人往往各自标榜自家法门最殊胜、攻击他宗，王骧陆居士在《传略》中如何开破？",
+    "answer": "分宗为便于专一起见，乃一门深入之意，因各人根器不同，有性所近者故立先后，及将到达彼岸，则同一归宗矣。",
+    "context": "《王骧陆居士传略》载居士痛斥学佛人分宗立派、互相诋毁之偏见。",
+    "interpretation": "分宗是医院分内科外科，目的是让你对症专心治疗好病，不是让病人之间互相吵架比较谁的科室尊贵。到了彼岸之后，船都不需要了，还有什么门派高下？",
+    "master": "王骧陆",
+    "source": "王骧陆居士序传",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan"
+    ]
+  },
+  {
+    "id": "koan-768",
+    "question": "世人每每误解学佛是看破红尘、躲起来消极自利，王骧陆居士在《传略》中如何以儒佛会通点破？",
+    "answer": "学佛是要认识自己，了达人生观，明白做人的所以然，简言之，就是明白做人的道理，此便是忠。拿这个道理去对别人，通达他人的一切心理，才能尽对人之道，此便是恕。",
+    "context": "《王骧陆居士传略》述居士在沪设印心精舍时接引在家居士之核心开示。",
+    "interpretation": "真佛法绝不离世间人伦。认识自心不自欺是“忠”，体恤他人苦处不执我见是“恕”。把心量打开了，家庭工作人情处世反而更加圆融完美，绝非消极逃避。",
+    "master": "王骧陆",
+    "source": "王骧陆居士序传",
+    "relatedConcepts": [
+      "fan-nao-wei-zi-liang",
+      "xin-su-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan"
+    ]
+  },
+  {
+    "id": "koan-769",
+    "question": "《心经》言“心无挂碍”，难道开悟之人就应当像木石一样冷酷不管世事了吗？",
+    "answer": "诸法空净，心无挂碍矣，非不挂也，挂而无碍也。",
+    "context": "《心经分段贯释·果德分第五》辨析大乘无住自在与凡夫逃避退缩之区别。",
+    "interpretation": "逃避责任、什么都不管叫“逃挂”，而非无挂碍。真正的菩萨日常照样挑担子、尽义务、办一切事业，事事挂在手头料理清楚，然而心中不黏滞成败得失，这叫“挂而无碍”。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经分段贯释",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-770",
+    "question": "既然已用般若智慧照见五蕴皆空、破除一切色相，为何还说“斯空空矣”？",
+    "answer": "但慧照亦心也，更以甚深般若，扫此慧照，则不著空，斯空空矣。",
+    "context": "《心经分段贯释·色空分第二》警示行者莫滞着于“能观之慧照”。",
+    "interpretation": "用扫帚扫去院中尘土固然干净，可如果一直手里举着扫帚不放，院子里依然多了一件多余之物。看破万物空之后，还要把那个“我正在看空”的心念本身也照破扫净。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经分段贯释",
+    "relatedConcepts": [
+      "emptiness",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-771",
+    "question": "为何王骧陆居士言“人事千万章，不敌一死，死又千万度，不敌一修”？",
+    "answer": "修可千万世，不敌一时之明悟，其重大岂可以世情比论哉。",
+    "context": "《心经分段贯释·秘密分第七》策励世人早发大心、修习顿悟心地法门。",
+    "interpretation": "人生荣辱得失千百件大事，无常一到全数归零；死后不知轮回多少趟，抵不上今生真正发心实修；而在黑夜里摸索盲修亿万劫，远不如一朝明师指点豁然睁开心地慧眼。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经分段贯释",
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-772",
+    "question": "世人每每混淆“无实体”之心与真实大脑心意，如何只用夏季纳凉一喻让人瞬间明白心之性空？",
+    "answer": "譬如夏天凉爽的席上，人睡得甜美之极，这时候便没有我，没有心；忽然蚊虫咬了一口觉得了，这觉得的便是蚊虫和我集合而起的心。",
+    "context": "《心经白话分段解释·总持分》以生活日常剖析无相心念之因缘集起。",
+    "interpretation": "心不是一个藏在胸腔里日夜静坐的实有小人。睡甜无梦时心在何处？蚊虫叮咬的一刹那，条件相撞才有“疼痒感知”现起。既然遇缘方集起，缘散即消灭，足证此心了无实体。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经白话分段解释",
+    "relatedConcepts": [
+      "emptiness",
+      "wu-nian"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingbaihuafenduanjieshi"
+    ]
+  },
+  {
+    "id": "koan-773",
+    "question": "既知万法皆空，人生遭遇实在的灾病苦楚时究竟如何才算“度一切苦厄”？",
+    "answer": "不是不知，不是不受；因为有智慧知道本来空，能够知而有若无知，受而等于不受……心不著意，便无苦厄了。",
+    "context": "《心经白话分段解释·总持分》剖析“苦厄全由心起，不著意即无苦厄”。",
+    "interpretation": "痛觉是身体的客观信号，苦厄却是心上叠加的抗拒和折磨。同受一样的遭遇，心不往上面抓着搅和，身体尽管承受触感，内心却稳如磐石等于不受。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经白话分段解释",
+    "relatedConcepts": [
+      "zheng-shou-san-mei",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingbaihuafenduanjieshi"
+    ]
+  },
+  {
+    "id": "koan-774",
+    "question": "为何世上很多修行人常说“莫著了空”，居士却直言反驳其“根本不曾明空”？",
+    "answer": "又修行人往往有口头禅，说：“莫著了空！”这是怕他执著空见，正因为他根本不曾明空，总在空有二见上作道理，格外搅扰不清了。",
+    "context": "《心经白话分段解释·总持分》斥偏执空有二边讲道理之学究禅病。",
+    "interpretation": "真懂了真空绝不是死水断灭，它本自包含随缘妙用，哪里还会有什么“怕著空”的忧虑？天天把莫着空当口头禅防备的，恰恰证明手里抓着一个有相实体不敢松手。",
+    "master": "王骧陆",
+    "source": "般若波罗蜜多心经白话分段解释",
+    "relatedConcepts": [
+      "si-chan-bing",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingbaihuafenduanjieshi"
+    ]
+  },
+  {
+    "id": "koan-775",
+    "question": "读《金刚经》究竟应当依何立场才能既不滞于文字，又不落于空口瞎谈？",
+    "answer": "从门入者，不是家珍，须自己胸中流出，方有少分相应。",
+    "context": "《金刚般若波罗蜜经分段贯释序》警策学人切忌把古今注释当作自己受用。",
+    "interpretation": "别人家宝库再丰富、师长讲得再透彻，那也都是外面的门径。只有靠自己把妄想执着一层层磨碎、从自心里真正生起不随境转的受用，才算数。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经分段贯释",
+    "relatedConcepts": [
+      "wenzi-bore",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-776",
+    "question": "《金刚经》言“度一切众生而实无众生得灭度者”，既然修六度与破四相俱空，还用修吗？",
+    "answer": "著于有矣……又著于空矣。惟取法而无住，不著二边，则取舍自在。",
+    "context": "《金刚经分段贯释》剖析“应如所教住”与“取法无住”之活机。",
+    "interpretation": "执着“我有布施和度人功劳”是著有，借口空性干脆一毛不拔什么都不做是著空；唯有大做布施利人之事而又三轮体空、心中半丝不滞，才是取舍自在的真菩萨。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经分段贯释",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-777",
+    "question": "如何用最简练的两句话概括整部《金刚经》指出的苦乐之源？",
+    "answer": "众苦只缘取相，最乐无过明心，三千七宝，未足为胜。",
+    "context": "《金刚般若波罗蜜经分段贯释》末段总结读经证悟大乐之归宿。",
+    "interpretation": "哪怕拥有三千大千世界的金银七宝，依然逃不出患得患失、老病死的抓取煎熬；只有彻底看破幻相并亲见明心，才拥有夺不走的无上喜乐。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经分段贯释",
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingfenduanguanshi"
+    ]
+  },
+  {
+    "id": "koan-778",
+    "question": "现代人布施总爱算计外在福报功德，如何才算真正懂得对“自己”布施？",
+    "answer": "我的意要舍，气自平了；我的物要舍，身自轻了；我的见要舍，心自空了；连我的功德心也要舍，法自净了。",
+    "context": "《金刚般若波罗蜜经白话述义》讲解檀波罗蜜四重内舍功夫。",
+    "interpretation": "向外捐钱只是布施的皮毛，如果捐完钱还在心里生闷气、自居恩人，那根本没舍干净。真正的布施从舍弃自己的傲气、物欲、偏见乃至“好人功德架子”做起。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经白话述义",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingbaihuashuyi"
+    ]
+  },
+  {
+    "id": "koan-779",
+    "question": "经中极赞“三昧”定功，究竟日常遭遇苦乐顺逆时做到什么地步方名得正受？",
+    "answer": "三昧是正受，正受即是不受，世上一切一切，不是不见，不是不知，但决定知道是性空不实，不必作真，也暂勿当假，便是受而不受。",
+    "context": "《金刚般若波罗蜜经白话述义》以大白话释无诤三昧之真义。",
+    "interpretation": "修定不是闭关堵耳朵做死物。眼睛看得清、耳朵听得明，只是内心里看破全是梦中演戏，绝不往心坎里揽烦忧，这就是受而不受之大极乐。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经白话述义",
+    "relatedConcepts": [
+      "zheng-shou-san-mei",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingbaihuashuyi"
+    ]
+  },
+  {
+    "id": "koan-780",
+    "question": "既然人人有佛性、无高下，为何大庭广众下还是有很多人闻见《金刚经》却不敢信入？",
+    "answer": "《金刚经》的正义在平平淡淡，毫无奇特处，老老实实，人人可做，只是不肯做……只因人求福德相，不明福德性。",
+    "context": "《金刚经白话述义》剖析世人贪奇求玄而不信平实直指之由。",
+    "interpretation": "人总喜欢找一个能保佑发财的灵验奇迹或炫目神通（福德相），而不相信放下执念就是福德（福德性）。老实平凡处人人办得到，只因人心贪巧反倒当面错过。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经白话述义",
+    "relatedConcepts": [
+      "fan-nao-wei-zi-liang",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingbaihuashuyi"
+    ]
+  },
+  {
+    "id": "koan-781",
+    "question": "《坛经》言“起心即是妄”，难道学佛人只要脑海里一动念头工作思考就全成了妄想吗？",
+    "answer": "起心即是妄句，拟改为心迷即成妄。以见性人，起心未必即妄也，不见性人，虽不起心，妄仍在也，遇缘即发矣。",
+    "context": "《大鉴禅师法宝坛经述旨·般若品第二》第32条注，王骧陆居士以法眼独到勘订古本句读。",
+    "interpretation": "把“起心就是妄”当作清规戒律死背，就会让人变得害怕思考、死死压念头。关键不在于念头起不起，而在于起念的当下“迷不迷”。随起随觉不随境转，起心皆是妙用；不明自性者哪怕呆坐压得一念不生，无明种子照样伏在识田伺机而发。",
+    "master": "王骧陆",
+    "source": "大鉴禅师法宝坛经述旨",
+    "relatedConcepts": [
+      "wu-nian",
+      "jue-hou-dai-wei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjingshuzhi"
+    ]
+  },
+  {
+    "id": "koan-782",
+    "question": "如何以浅显实在的方式悟透六祖《定慧品》所说的“定是慧体，慧是定用，定慧一体”？",
+    "answer": "定慧二义一体不二者，如能力，能为表于事，其可见者也，力含于能之内，不可见者也，能为慧，力为定，是一非二。",
+    "context": "《大鉴禅师法宝坛经述旨·定慧品第四》注，居士巧用“能与力”比喻阐释定慧等学。",
+    "interpretation": "平时离开现实事相专谈一个孤立的“定”是枯坐，离开内在定力而光凭口舌敏锐去讲的是狂慧。就像做功显现出的能量与潜伏内在的力量本是一体两面，打坐时培养的是定力，日常处事不迷不乱正展现的是智慧。",
+    "master": "王骧陆",
+    "source": "大鉴禅师法宝坛经述旨",
+    "relatedConcepts": [
+      "non-duality",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjingshuzhi"
+    ]
+  },
+  {
+    "id": "koan-783",
+    "question": "青原行思答六祖“圣谛亦不为，何阶级之有”，莫非悟道之人连世俗做人的俗谛也全都不要了吗？",
+    "answer": "圣谛可不为，俗谛则何如，不了俗谛，安达圣谛，惟为而不为，了无圣俗之见。",
+    "context": "《大鉴禅师法宝坛经述旨·机缘品第七》评点青原行思禅师见地。",
+    "interpretation": "不了解世间一切人情事理并尽心担负职责（俗谛），空喊超越佛法台阶不过是狂禅。唯有于俗事尽心“为”之，而心中半分不粘滞成败名相“不为”之，才是真正圣俗圆融。",
+    "master": "王骧陆",
+    "source": "大鉴禅师法宝坛经述旨",
+    "relatedConcepts": [
+      "fan-nao-wei-zi-liang",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "tanjingshuzhi"
+    ]
+  },
+  {
+    "id": "koan-784",
+    "question": "刚破无明见性时，多年老毛病习气还是会习惯性涌上来，怎么判断自己算不算“退失退转”？",
+    "answer": "譬如病人昏迷而苏，虽已觉苏，自尚无力起行，虽无力起行，决不再入昏迷也，汝今知幻而习气常来，于习气正来时，汝之知幻觉性，曾有所退失否？",
+    "context": "《圆觉经抉隐》剖析“无明与习气”差别，为初见道者破除自我否定之疑。",
+    "interpretation": "彻底苏醒的病人尽管一时两腿发软还不能下地奔跑，但已经永远离开了昏迷状态。习气只是惯性遗留的余震，只要它冒头的那一刻你的觉照心里明明白白知道“这是虚幻老毛病”，根本就不曾迷退，只需坚持凛觉消磨即可。",
+    "master": "王骧陆",
+    "source": "大方广圆觉修多罗了义经抉隐",
+    "relatedConcepts": [
+      "jue-hou-dai-wei",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yuanjuejingjueyin"
+    ]
+  },
+  {
+    "id": "koan-785",
+    "question": "修行人离了“作、任、止、灭”四病之外，究竟还要把心摆在哪里才算对？",
+    "answer": "性非觉不显，觉非修不圆，圆不圆，在汝自己……故必于日用中离此四病，随顺觉性，不作造作亦不放任。",
+    "context": "《圆觉经抉隐》详论普觉菩萨章祛除禅修四病之法要。",
+    "interpretation": "刻意用蛮力造作、听之任之放纵、死板憋住念头、彻底绝灭感官——全是以有限对治去强凑无限本心。真修行是清醒认清这颗本来圆觉心，在平常一切动作里不随妄转、不加造作。",
+    "master": "王骧陆",
+    "source": "大方广圆觉修多罗了义经抉隐",
+    "relatedConcepts": [
+      "si-chan-bing",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yuanjuejingjueyin"
+    ]
+  },
+  {
+    "id": "koan-786",
+    "question": "既然众生人人本具大圆觉自性，为什么还是生出“凡圣、众生、菩萨”等无量差别？",
+    "answer": "譬如火，是圆觉自性，火之忽而烛照，忽而焚如，忽而烹煮，差别不等，而火之本体圆觉，随缘而转，用虽差别，体则不动。",
+    "context": "《圆觉经抉隐》释净诸业障章随顺觉性之体用关系。",
+    "interpretation": "同样一簇火苗，照亮暗室、烧烤食物、毁掉废物看似千差万别，火焰本身的烧热光明体性几曾变过？见差别是用上随缘，识不动方为真圆觉。",
+    "master": "王骧陆",
+    "source": "大方广圆觉修多罗了义经抉隐",
+    "relatedConcepts": [
+      "non-duality",
+      "buddha-nature"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yuanjuejingjueyin"
+    ]
+  },
+  {
+    "id": "koan-787",
+    "question": "修净土人往往以为离开西方极乐世界别无可修、而视禅宗密宗为杂修，王骧陆居士如何点破？",
+    "answer": "净土二字，乃果地圆成之德号，非属于法，不可单树一门而与他宗分胜劣，亦非西方为净而他方为秽者也。因法法皆归净土。",
+    "context": "《佛说阿弥陀经经义略说》明辨一切禅密律教同归净土果地之义。",
+    "interpretation": "把“果地境界号”误认成一个狭窄“排他小宗派”，就如同坐车到达北京站却宣称只有自己这条铁路才叫北京。凡能令自心净除染污的正法，无一不是净土津梁。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经经义略说",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingjingyilueshuo"
+    ]
+  },
+  {
+    "id": "koan-788",
+    "question": "何谓“念佛”之真义？若仅口里日夜不断呼唤佛号却依然爱憎分明，算不算真念佛？",
+    "answer": "佛者觉也，念佛者念念在觉也，心若有所贪嗔时，一念觉则顿转为净矣。",
+    "context": "《佛说阿弥陀经经义略说》将净土持名与禅宗回光觉照熔于一炉。",
+    "interpretation": "佛是觉悟之意，若嘴里高呼阿弥陀佛而心坎里正算计发火，那叫念嘴不叫念佛。在贪嗔念起的一瞬立刻一念觉破，使心思顿归清净，才是真真正正在“念佛”。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经经义略说",
+    "relatedConcepts": [
+      "jue-hou-dai-wei",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingjingyilueshuo"
+    ]
+  },
+  {
+    "id": "koan-789",
+    "question": "为何同样在《阿弥陀经》里，既言“十念可生”，佛又反复叹“此甚难之事”？",
+    "answer": "不知难易者，都属分别，非法有难易也，乃众生因缘不同，易者十念尚属费事，一念足矣；难者累劫尚在沉沦，地狱至今不空。",
+    "context": "《佛说阿弥陀经经义略说》末段剖析学人执着难易二见之妄想。",
+    "interpretation": "把一切世情牵挂一刀放空、死尽偷心的痛切之人，一念清净就到家；心头放不下名利情欲却想拿嘴上计数混过关的人，几辈子也跨不过去。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经经义略说",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingjingyilueshuo"
+    ]
+  },
+  {
+    "id": "koan-790",
+    "question": "经中极力铺陈极乐世界七宝黄金、妙鸟天乐，难道净土宗是叫人换个地方享福吗？",
+    "answer": "极乐世界者，心极乐也，但又何可废色声耶？惟不著于相，不为声色所缚，得大自在之极乐耳。",
+    "context": "《佛说阿弥陀经分段正义》辨析净土依报庄严之真实受用境界。",
+    "interpretation": "凡夫听到黄金珠宝天乐动心，那是把欲望搬到了天上；真证入清净法身者，眼耳面对万般美好色声却如镜照影、一尘不染，心不被物转，这才是究竟大乐。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经分段正义",
+    "relatedConcepts": [
+      "zheng-shou-san-mei",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingfenduanzhengyi"
+    ]
+  },
+  {
+    "id": "koan-791",
+    "question": "阿弥陀佛既在十万亿佛土之西，行者在此土究竟如何才能与之真正相感交接？",
+    "answer": "彼佛空行摄化，我以空心受摄，若是而不往生者，未之有也，不此之务，而兴无谓之诤，其谁欺乎？",
+    "context": "《佛说阿弥陀经分段正义》点破“一普互摄”之感应枢机。",
+    "interpretation": "佛光犹如无线电波昼夜不停遍洒宇宙，但你自己的收音机如果里面塞满贪嗔我执废铁（不空心），频率对不上怎么接收？内心空灵清净了，当即和彼佛悲愿严密咬合。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经分段正义",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingfenduanzhengyi"
+    ]
+  },
+  {
+    "id": "koan-792",
+    "question": "既然临终佛来接引方才生西，何以居士断然称“世人偏执于死后方可往生，此为根本大误”？",
+    "answer": "生西原在死后，但能否往生，决在生前……此是至难行，至难信之法，断非临时张皇可办。",
+    "context": "《佛说阿弥陀经分段正义》驳斥学人平时懒散懈怠、指望死后侥幸往生。",
+    "interpretation": "临死四大分散如活牛剥皮，平时没练过“不恋尘情、一念入空”的狠功夫，临终痛得昏迷颠倒谁还想得起念佛？生前在世一日不空，死后一步难行。",
+    "master": "王骧陆",
+    "source": "佛说阿弥陀经分段正义",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingfenduanzhengyi"
+    ]
+  },
+  {
+    "id": "koan-793",
+    "question": "人人天天诵读《心经》二百六十字，到底应当用怎样的心态才不会枉费功课？",
+    "answer": "《心经》不是讲的经，是参的经，是修行时印证心地的经……重在彼此印心。以心印经，以经印心，再以心印空，所谓“心空及第”。",
+    "context": "《心经随说》开篇点破读诵般若经典却苦厄依旧的病根。",
+    "interpretation": "把心经当文学演讲来背，犹如天天对着菜单唱赞歌却不吃一口饭。真正读经时，要把经文每一句反指回来拷问自己此刻的心念：我放下了吗？挂碍消了吗？",
+    "master": "王骧陆",
+    "source": "心经随说",
+    "relatedConcepts": [
+      "wenzi-bore",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingsuishuo"
+    ]
+  },
+  {
+    "id": "koan-794",
+    "question": "《心经》连说“无无明，亦无无明尽”，连去无明的功夫也要不要掉吗？",
+    "answer": "智者不独一切不立，並此不立亦不立，是名曰“尽”，不独无无明，言无无明亦无也。即前云以剑斩见，更以剑斩剑，得无所斩，斯名曰“尽”。",
+    "context": "《心经随说》巧用剑客双剑喻解析《心经》无无明尽绝妙境。",
+    "interpretation": "初学靠智慧照破烦恼（以剑斩见）；等烦恼妄见全都消散后，心里若还留着“我已斩尽一切执着”的傲气，便又成了新障碍，须反手连手里这把剑一并劈空。",
+    "master": "王骧陆",
+    "source": "心经随说",
+    "relatedConcepts": [
+      "wu-nian",
+      "jue-hou-dai-wei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingsuishuo"
+    ]
+  },
+  {
+    "id": "koan-795",
+    "question": "老一辈常对初学说“观照五蕴皆空那是大菩萨的事，凡夫只管多念书别乱问”，王骧陆居士曾亲历何种惨痛代价？",
+    "answer": "彼云：“此是菩萨事，不是我辈凡夫事，我既不配说，君亦不配问，只要多读，自然能开”云云。余受此打击，几坐误十年，因思受此一语之害者，不知凡几，实为痛心。",
+    "context": "《心经随说》自叙早年求法被推诿敷衍之教训，激励末学勇敢直取三昧。",
+    "interpretation": "把最高般若心法架空成高不可攀的神话，让凡夫只准磕头不敢起心修证，恰恰是佛法衰微的毒瘤。只要肯得正法实修三昧，人人皆可从当下起步。",
+    "master": "王骧陆",
+    "source": "心经随说",
+    "relatedConcepts": [
+      "buddha-nature",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinjingsuishuo"
+    ]
+  },
+  {
+    "id": "koan-796",
+    "question": "《金刚经》统摄《大般若经》六百卷八十一科，全经最扼要的总开关究竟是哪一句？",
+    "answer": "《大般若经》具八十一科，色为八十一科之首。《金刚经》说一句“不住色布施”，言以一赅八十一科……菩提涅槃等，尽不可住是也。",
+    "context": "《金刚经义随说》揭示《金刚经》如何以简驭繁统摄全部分科般若。",
+    "interpretation": "整部《大般若经》谈完各种空相与法门要六百卷，而《金刚经》单凭“不住色布施”五个字便把一切色蕴乃至于佛果涅槃的执着一网扫尽，最宜凡夫直接下手。",
+    "master": "王骧陆",
+    "source": "金刚经义随说",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingyisuishuo"
+    ]
+  },
+  {
+    "id": "koan-797",
+    "question": "山阴陈竹籁请问近代佛法衰微之故，居士何以叹曰“只由不明因果”？莫非连戒杀行善也还不够明因果吗？",
+    "answer": "因果岂限于杀报等而已哉，凡学佛不明因地，欲求证果，何异拨无因果。故学佛以见性为主因，若反外求事相……岂是佛性分内之事。",
+    "context": "《金刚经义随说》末尾记录王骧陆答陈竹籁居士问，破除狭隘因果观。",
+    "interpretation": "平时天天追名逐利、固执门户，就是种下了染污散乱之因，临终却希望靠十念侥幸直接跳入清净净土极果——这就如同种下稗子却盼着收稻谷，正是不懂修心之根本大因果。",
+    "master": "王骧陆",
+    "source": "金刚经义随说",
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingyisuishuo"
+    ]
+  },
+  {
+    "id": "koan-798",
+    "question": "世人读《金刚经》只知要破“我人四相”，可如何察觉四相在内心是如何暗中运作生起的？",
+    "answer": "以众生迷妄之习，在根为见，在境为相，一切相乃一切见之根本也，终不离我、人、憎、爱四种情妄。",
+    "context": "《金刚经义随说》剖析全经“前半破四相、后半破法见”之理路。",
+    "interpretation": "眼睛耳朵一碰触外物形成“外相”，内心立马生起偏好、厌恶的“偏见”，一团喜欢和讨厌纠缠出我、人、众生、寿者四相。故欲破四相，必从破外相离偏见入手。",
+    "master": "王骧陆",
+    "source": "金刚经义随说",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "jue-hou-dai-wei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingyisuishuo"
+    ]
+  },
+  {
+    "id": "koan-799",
+    "question": "当今世人往往把烧香学佛看作“迷信”，王骧陆在《释义意见》中如何反客为主一针刺破？",
+    "answer": "遂迷声色，迷货利，迷武力，迷邪说，一切皆迷信，而以我是为众迷之根。佛求人类自觉，要人根本打破自己之迷信，人乃反以迷信目之，宁非怪事。",
+    "context": "《金刚经释义意见》首段驳斥世俗将佛教视作迷信之颠倒偏见。",
+    "interpretation": "什么是迷信？执着名利钞票永远保值、执着感官享受是真快乐、执着武力或小我永生不灭，这才是彻头彻尾的大迷信！佛法正用最彻底的理智教你打破这个“我是”大迷梦，怎么反成了迷信？",
+    "master": "王骧陆",
+    "source": "金刚经释义意见",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshiyiyijian"
+    ]
+  },
+  {
+    "id": "koan-800",
+    "question": "历代名家注《金刚经》汗牛充栋，为什么王骧陆偏批评大多是“释字，非属释义”？",
+    "answer": "《金刚经》多重文复句，而义各有别，不能但依文字直讲也……讲者每多依文解字，布段分章，此是释字，非属释义。",
+    "context": "《金刚经释义意见》点出传统训诂注经容易遮掩经脉真义的局限。",
+    "interpretation": "把经文当成语文阅读理解来翻译字义、切分段落，却搞不清前面为什么这样问、后面又破的是哪个微细心病，等于光把药瓶外包装念得滚瓜烂熟，不知如何服药治病。",
+    "master": "王骧陆",
+    "source": "金刚经释义意见",
+    "relatedConcepts": [
+      "wenzi-bore",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshiyiyijian"
+    ]
+  },
+  {
+    "id": "koan-801",
+    "question": "从读经听课跨越到真正动手修心，讲经的最高一步“释心”究竟怎么讲法？",
+    "answer": "到此讲时，不能按照经文，分章布段的细说，直须离开文字，将“心”字反复讨论，互相参证……故释心云者，释心不可得，用反复讨论之法以讲《金刚经》耳。",
+    "context": "《金刚经释义意见》末段提出超越讲台教条、以生活实战对参的“释心”法。",
+    "interpretation": "讲到最后要把经本合上，师徒直接拿现实遇境的心念波动来拷问参合——八风吹来动不动、念头起时如何照破？这才把佛经从纸面请进了活生生的人生。",
+    "master": "王骧陆",
+    "source": "金刚经释义意见",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "direct-pointing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshiyiyijian"
+    ]
+  },
+  {
+    "id": "koan-802",
+    "question": "《金刚经》千变万化的降心妙义与我们这颗整天起灭的妄心究竟是什么关系？",
+    "answer": "性如镜，心如影，非一非二，万德庄严，皆由性中起，心上发扬，幻起幻灭，性体却恒久不动不变。",
+    "context": "《金刚般若波罗蜜经受持法略说》开宗明义喻解真性（金刚）与妄心（影）的关系。",
+    "interpretation": "如果以为影子和镜子完全是两物，那离开妄心便找不到真心；如果把影子认作镜子本身，又会随影子生灭痛苦不堪。知其“非一非二”，看破影起影落而自守明镜不动，即名金刚。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经受持法略说",
+    "relatedConcepts": [
+      "ben-lai-mian-mu",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshouchifalueshuo"
+    ]
+  },
+  {
+    "id": "koan-803",
+    "question": "《金刚经》开头“世尊乞食洗足敷座”几句看似记流水账，为何王骧陆称其无比重要？",
+    "answer": "此段，佛特为大众敷演金刚般若，先表示所谓般若者，须于金刚性体中见，显示于四威仪中……处处教授，而众人不见其机。",
+    "context": "《金刚经受持法略说》剖白如来不开金口而于行住坐卧全演六波罗蜜多。",
+    "interpretation": "真正的佛法不是等上台拿麦克风讲经才开始。佛穿衣吃饭走路坐下的每一个当下，全都是“不住色生心”的现成教材。只可惜众人等着听神异玄理，恰恰错过了最朴实的如来威仪。",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经受持法略说",
+    "relatedConcepts": [
+      "direct-pointing",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshouchifalueshuo"
+    ]
+  },
+  {
+    "id": "koan-804",
+    "question": "已经下狠心修禅悟道的人，还剩下最后哪一道极隐蔽的“幻梦”急需打净？",
+    "answer": "昔有幻心、幻相、幻法、幻苦、幻生死，今有幻修、幻证、幻名称、幻涅槃，不知一切皆幻，独有一非幻的不生不灭、常恒不变如来藏性，永永存在。",
+    "context": "《金刚经受持法略说》第四要法点破学佛人容易沾沾自喜的修行名相假相。",
+    "interpretation": "未学佛时被名利生死五种幻相捆死；学佛之后千万别又把“我在修行、我证到了几地、我是大师兄、我得了涅槃”当作实有金招牌挂在脖子上——只要是名相修证，统统扫作幻梦！",
+    "master": "王骧陆",
+    "source": "金刚般若波罗蜜经受持法略说",
+    "relatedConcepts": [
+      "jue-hou-dai-wei",
+      "si-chan-bing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingshouchifalueshuo"
+    ]
+  },
+  {
+    "id": "koan-805",
+    "question": "一位治国安邦的领袖或团体负责人只要心存慈悲良善就够了吗？佛法为何还要强调“般若”？",
+    "answer": "不仁者不能护持其国。徒有仁心而无般若智慧，亦不能护持其国。必仁智兼备，威德足孚，引导人民，咸归正道，其国自安如磐石矣。",
+    "context": "《仁王护国般若波罗蜜多经略说》析因地果地护国之根本要件。",
+    "interpretation": "历史上有多少昏君或庸人看似慈悲柔和、却因为不明事理轻信谗言而亡国丧身！真正的护持大业需要大慈悲（仁）作为发心底座，更需要照破虚妄洞察因果的般若大智（智）掌舵方向。",
+    "master": "王骧陆",
+    "source": "仁王护国般若波罗蜜多经略说",
+    "relatedConcepts": [
+      "prajna",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "renwangjinglueshuo"
+    ]
+  },
+  {
+    "id": "koan-806",
+    "question": "面对死刑刀斧即将临头，月光王如何仅用几句偈言就把嗜杀暴君班足王彻底感化悔悟？",
+    "answer": "况我幻身，我身且灭，国于何有……须知三界无安，盛衰如电，有为不实，一切皆空。徒因业识茫茫，无明爱缚……应知国土，幻化亦然。",
+    "context": "《仁王护国般若波罗蜜多经略说》举班足王悔过典故彰显般若观照无常之力。",
+    "interpretation": "一切野心争夺全建立在错把肉身和领土当成“永恒归我”的幻梦上。当月光王用最冷静震撼的真相道破“连身体马上都要烂掉，疆土又能抱走几寸”时，暴君内心抓紧权欲的执念顿时失去根基。",
+    "master": "王骧陆",
+    "source": "仁王护国般若波罗蜜多经略说",
+    "relatedConcepts": [
+      "emptiness",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "renwangjinglueshuo"
+    ]
+  },
+  {
+    "id": "koan-807",
+    "question": "经中讲到国家动荡七难爆发，到底是谁制造了这些灾厄？",
+    "answer": "其所以如此者，皆由人民作恶，戾气所感而致：第一不孝父母。第二不敬师长。第三轻慢僧尼，远离善道。第四上下不合，政治不良，不行正法。",
+    "context": "《仁王护国般若波罗蜜多经略说》阐释天灾人祸背后的集体人心共业。",
+    "interpretation": "外在世界环境从来不是无缘无故乱套的，它正是所有生活在此地的人心念品行集体投射出的镜子。敬亲尊师、心怀正善，社会自然趋于祥和稳固。",
+    "master": "王骧陆",
+    "source": "仁王护国般若波罗蜜多经略说",
+    "relatedConcepts": [
+      "fan-nao-wei-zi-liang"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "renwangjinglueshuo"
+    ]
+  },
+  {
+    "id": "koan-808",
+    "question": "修心中心法必须坐满两小时，有时非但不得清净，反而几十年前旧事翻江倒海般涌出，愈坐愈乱，是何道理？",
+    "answer": "此法以拔根为主，故不许压制，正要翻出潜伏种子。仿佛愈坐愈乱，正不必怕，此已是得定时，以不定则不知乱也。",
+    "context": "选自《学佛最初之决定》答问部分第四问，答初修者坐中妄念剧增之疑。",
+    "interpretation": "常人平日心如沸汤泥水，看不清自身妄想有多汹涌；一旦上座持咒心渐沉定，泥沙反得以显形分离。若误以为自己退步而中止，便永无澄清之日。",
+    "master": "王骧陆",
+    "source": "学佛最初之决定",
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "fan-nao-wei-zi-liang"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefozuichuzhijueding"
+    ]
+  },
+  {
+    "id": "koan-809",
+    "question": "先除习气还是先明心？为何说未明心前硬除习气劳而无功？",
+    "answer": "譬如暗室中整理物品，不可得也，劳而无功。必焉先开电灯，乃有办法。开灯即破无明明心，整理物品方是除习气。",
+    "context": "选自全书前半关于“不经开悟，不得名修”之核心譬喻。",
+    "interpretation": "不知主人公所在而用压服法克制欲望，如同摸黑在房中收拾家具，搬走一处撞倒另一处。唯有智慧灯光先亮，习气自无藏身余地，清理始得省力究竟。",
+    "master": "王骧陆",
+    "source": "学佛最初之决定",
+    "relatedConcepts": [
+      "jianxing-chengfo",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefozuichuzhijueding"
+    ]
+  },
+  {
+    "id": "koan-810",
+    "question": "学佛发大心求佛果与普通行善积福有何天渊之别？日常动念如何把关？",
+    "answer": "于一念初动处用一“阿”字诀：自凛我今入如是因，将来必得如是果。世间千万个死抵不过一修，千万个修抵不过一觉，觉则心空。",
+    "context": "选自《学佛最初之决定》第七条“示要诀”。",
+    "interpretation": "学佛根本不在事相多寡，而在因地是否能于当下念头初起时照破空寂。这一念凛觉既是戒、定、慧总持，亦是跳出生死最重法码。",
+    "master": "王骧陆",
+    "source": "学佛最初之决定",
+    "relatedConcepts": [
+      "wu-nian",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefozuichuzhijueding"
+    ]
+  },
+  {
+    "id": "koan-811",
+    "question": "许多精进居士每日早晚打坐念咒从不间断，为何一下座处理家务事业依旧烦躁发火、毫无定力？",
+    "answer": "凡念佛打坐修法，不得名为修持，只可名为培养……故出佛堂下座后，行住坐卧，一切人事，种种行为，方是正修行。",
+    "context": "选自《乙亥讲演录·正修分》“四要诀”第一诀。",
+    "interpretation": "彻底颠倒的正是“正副主次”：把加油站当成目的地，进了马路反把驾驶证抛诸脑后。唯以行住坐卧全为练心正战场，打坐能量方才真正流向生活。",
+    "master": "王骧陆",
+    "source": "乙亥讲演录",
+    "relatedConcepts": [
+      "dao-zai-riyong",
+      "ordinary-mind"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yihaijiangyanlu"
+    ]
+  },
+  {
+    "id": "koan-812",
+    "question": "修密十年之人仪轨精熟、供品庄严，为何习气依然丝毫未减？是密法不灵吗？",
+    "answer": "修密人第一习气在求神秘，一切靠之于佛，而自己不开不动，偏于仪轨，不明心要，飞机始终不飞。心佛众生，三无差别，岂法之咎哉？",
+    "context": "选自《乙亥讲演录·正修分》评修密重相轻心之弊。",
+    "interpretation": "把自性佛力全部外包给咒语坛城，自己既不觉照亦不改脾气，恰如病人只拜药瓶不肯服药。密宗事相全在表显清净心体，离此则成外道迷信。",
+    "master": "王骧陆",
+    "source": "乙亥讲演录",
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yihaijiangyanlu"
+    ]
+  },
+  {
+    "id": "koan-813",
+    "question": "行者用功渐深入后，忽然看山不是山，看别人都充满错处，还常动笔写偈子、觉得自已见解很高明，是悟了还是病了？",
+    "answer": "此正深入而未翻身时，以及夙世习气种子……世人目为狂禅，能再痛切打扫，自臻圆净，虽然得此禅病，已属不易。",
+    "context": "选自《乙亥讲演录·印证分》十五条印证验相。",
+    "interpretation": "这是悟道边缘必经之阵痛：因破了些许常俗世见便生出傲慢与“所知障”。不可止步自喜，更不可自鸣清高，唯有再回头狠狠扫荡此傲心，方证平等智光。",
+    "master": "王骧陆",
+    "source": "乙亥讲演录",
+    "relatedConcepts": [
+      "kuang-chan",
+      "si-chan-bing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yihaijiangyanlu"
+    ]
+  },
+  {
+    "id": "koan-814",
+    "question": "《金刚经》句“当得阿耨多罗三藐三菩提”，一般人都照平常读平声作“未来应当证得”，何以居士教人依义而读作去声？",
+    "answer": "通达般若妙义，无时间前后来去诸相，当下即是，宜读作去声，此依于义者也。",
+    "context": "选自《入佛明宗答问》解说“四依四不依”中“依义不依文”之经典案例。",
+    "interpretation": "一读之转，正是“修在今因、证在来世”渐执与“直下无生、即此便是”顿宗的分水岭。教人读经不可只做文字训诂，而须读活自家般若现量。",
+    "master": "王骧陆",
+    "source": "入佛明宗答问",
+    "relatedConcepts": [
+      "wenzi-bore",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "rufomingzongdawen"
+    ]
+  },
+  {
+    "id": "koan-815",
+    "question": "既然众生平日放空发呆或刚一念不生时也很安静，和佛的“本来寂静”差在哪里？",
+    "answer": "于一念未起前，一念正放下时，两头亦都是寂然空净，湛然不动，与佛不二，惟虽寂然湛然，始终不明所以，故是众生。",
+    "context": "选自《入佛明宗答问》近末尾“众生本来是佛”问答。",
+    "interpretation": "极为锐利地划清了“无记顽空（昏沉发呆）”与“灵明照寂（明心见性）”的界限。同一片寂静，迷人坐在黑暗里懵懂无知，觉者则在明晃晃中了然照彻。",
+    "master": "王骧陆",
+    "source": "入佛明宗答问",
+    "relatedConcepts": [
+      "wu-nian",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "rufomingzongdawen"
+    ]
+  },
+  {
+    "id": "koan-816",
+    "question": "既说“不假方便即可顿悟如来地”，那前面何以又要教大家结弥陀印、诵《弥陀经》、打坐持名？",
+    "answer": "一觉即慧开，一放下即佛境现前，不劳再事故作，若稍故作，即又失本来矣，此乃明心后，除习气之最简要法门。",
+    "context": "选自《入佛明宗答问》末则“不假方便”答问。",
+    "interpretation": "未明心前用净禅密作船筏以摄妄心，明心之后若仍紧紧抱着船筏“故作修持相”，反成头上安头。放下即是，正是扫尽法执的妙药。",
+    "master": "王骧陆",
+    "source": "入佛明宗答问",
+    "relatedConcepts": [
+      "no-abiding",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "rufomingzongdawen"
+    ]
+  },
+  {
+    "id": "koan-817",
+    "question": "现代人常批评佛教里有不少形式主义与迷信陋习，对佛法究竟该如何看待？",
+    "answer": "借佛的导力是一二，靠自己的努力是八九，若全然想靠佛或定要靠自己不依佛法，这都是大迷信。",
+    "context": "选自《学佛丛谈》首篇《佛法的真精神》。",
+    "interpretation": "彻底劈开“宗教外相仪式”与“佛法觉悟理智”两重维度。不依正法理路而蛮干是盲人骑瞎马；只求偶像降福而不改自心则是迷信，二者皆须打破。",
+    "master": "王骧陆",
+    "source": "学佛丛谈",
+    "relatedConcepts": [
+      "buddha-nature",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefocongtan"
+    ]
+  },
+  {
+    "id": "koan-818",
+    "question": "人人想成佛，偏偏自己脾气坏、业障重、生活一团糟，岂不是连修行的本钱都没有吗？",
+    "answer": "是诸无明烦恼夙业苦厄者，乃我今日成佛之资粮也。倘无诸苦警惕者，即不肯发心矣。",
+    "context": "选自《学佛丛谈》“成佛资粮五法”第二条。",
+    "interpretation": "扭转学人“等顺境来了才开始修”的逃避感。恰如炼铁需要大火与铁锤，没有痛苦撞击与烦恼现前磨心，本具慧剑永远无法出鞘，烦恼即菩提正在于此。",
+    "master": "王骧陆",
+    "source": "学佛丛谈",
+    "relatedConcepts": [
+      "fan-nao-wei-zi-liang",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefocongtan"
+    ]
+  },
+  {
+    "id": "koan-819",
+    "question": "用功想改掉自身积习，越用力忍耐压制，心中憋得越难受，如何用功才不流于死压？",
+    "answer": "用功必须巧劲，若在习气业障上硬去对治，必愈趋愈远，要且暂时放开不管，专在一念未动前，看那个本能的性体究是怎样。",
+    "context": "选自《学佛丛谈》“成佛资粮五法”第五条。",
+    "interpretation": "如用左手抓右手，越抓越紧；巧劲是在心理的源头截流——“忍”不过是心上悬刀，先回到“无刀可悬”的未动心体上，脾气无源之水自枯。",
+    "master": "王骧陆",
+    "source": "学佛丛谈",
+    "relatedConcepts": [
+      "wu-nian",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xuefocongtan"
+    ]
+  },
+  {
+    "id": "koan-820",
+    "question": "人如果能一辈子专注在书斋玩赏高雅古玩、清静无争，岂不也算极高的心安快乐吗？",
+    "answer": "不是究竟的。因为古玩是靠不住的，终有两个爱别离苦，不是他离你，如遗失伤坏等类；就是你离他，如你死的时候，终究要苦了。",
+    "context": "选自《心锽》论人受“前面有个物”所引而终归不安之段。",
+    "interpretation": "世间一切有形依赖——无论金钱俗物还是雅玩书画——本质皆不免聚散无常。唯有安住不依赖任何外境的自性明觉，才能摆脱“终有一失”的隐隐焦虑。",
+    "master": "王骧陆",
+    "source": "心锽",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinhuang"
+    ]
+  },
+  {
+    "id": "koan-821",
+    "question": "有些学佛或讲修养的人言谈举止极其温良体面，内里烦躁贪妒却一点没减，病根在哪里？",
+    "answer": "剃刀心：只光表面，不求根本解除。",
+    "context": "选自《心锽》“众生心相”点评条目。",
+    "interpretation": "如同剃须只截露出的须尖却不触动毛囊，仅靠礼貌与仪态包装遮掩我执，不过是更精致的伪装；修行必须老实从动念根处剥皮见骨。",
+    "master": "王骧陆",
+    "source": "心锽",
+    "relatedConcepts": [
+      "si-chan-bing",
+      "jianxing-chengfo"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinhuang"
+    ]
+  },
+  {
+    "id": "koan-822",
+    "question": "究竟怎样才算社会与人际间的真平等，而不是流于压抑进取心的平均主义？",
+    "answer": "有一分能力的人，便尽一分能力，有十分能力的人，便尽十分能力，人人尽其心力，然后得到同等的享受，这便是真平等。",
+    "context": "选自《心锽》后半关于社会经济制度与真假平等辨析。",
+    "interpretation": "立足于平等佛性与人间现实能力差异之间取得绝妙平衡：绝不纵容弱肉强食，亦不扼杀才智勤劳，而是令“各尽全力、限制暴奢、反哺公益”。",
+    "master": "王骧陆",
+    "source": "心锽",
+    "relatedConcepts": [
+      "non-duality",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "xinhuang"
+    ]
+  },
+  {
+    "id": "koan-823",
+    "question": "人人皆说净土只靠老实念佛求接引最省力最容易，为什么您偏偏说“双修易，单修难”？",
+    "answer": "但口说而心不行，执持名号，心不发信愿是为单修。心口相应，是为双修。其实双修易，单修难，双修决定往生，单修断断无用。",
+    "context": "选自《阿弥陀心要》开篇核心辨析。",
+    "interpretation": "若习气贪嗔未减一分而干巴巴靠口头喊佛，内心充满对抗与厌倦，走得步履维艰；而明心相应、心口不违的双修，因为水到渠成且无虚伪，反觉轻松法喜而必至彼岸。",
+    "master": "王骧陆",
+    "source": "阿弥陀心要",
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituoxinyao"
+    ]
+  },
+  {
+    "id": "koan-824",
+    "question": "我发誓一辈子专修净土，对密宗神神叨叨持咒结印和禅宗参话头一概排斥，这样算专一护法吗？",
+    "answer": "自承前此种种罪过，净密分家，罪同谤佛……近人执定非净不修，反对密宗，自己却又持往生咒。故知执名号，为修净方便法门之一。",
+    "context": "选自《阿弥陀心要》破净密宗派水火之段。",
+    "interpretation": "《往生咒》本身就是密部陀罗尼真言。不明佛法一体而盲目排斥他宗，既暴露知识盲区，更体现心中严重的门户我执——带着严重我执排他，何能与清净极乐相应？",
+    "master": "王骧陆",
+    "source": "阿弥陀心要",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituoxinyao"
+    ]
+  },
+  {
+    "id": "koan-825",
+    "question": "每天拼命用计数器攒到好几万声佛号、念到嗓子嘶哑，这功德不是很大吗？",
+    "answer": "妄将念佛功德，当作锡箔寄库存放，其诚愚不可及……念佛至一分纯熟，即一分功德；改去一分习气，即一分功德。熟在自心，自心即是宝库。",
+    "context": "选自《阿弥陀心要》立“功德格”之名段。",
+    "interpretation": "极痛快地把“宗教数量主义”转化为“心地品质主义”。不是念给账房先生看的数字，而是念完是否比昨天少一分躁气、多一分安详清明。",
+    "master": "王骧陆",
+    "source": "阿弥陀心要",
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituoxinyao"
+    ]
+  },
+  {
+    "id": "koan-826",
+    "question": "经上说念佛人能“带业往生”，那是不是我不用努力改掉坏毛病，只要死前念几声佛也能带着满身业障溜去极乐世界？",
+    "answer": "带业往生者，非言有罪恶者可以往生也。言习气尚在，作恶之种子未净，而往生之因缘已熟，往生已，常与诸上善人相处，自然花开见佛，此佛即指自性净土。",
+    "context": "选自《净土印心法要》解《弥陀经》正义及“花开见佛”段。",
+    "interpretation": "彻底澄清佛门最常被滥用的“带业往生”：业种虽未澈净但善缘成熟已不随恶流，且去了西方之后仍需“加行修持”，绝非投机免试毕业。",
+    "master": "王骧陆",
+    "source": "净土印心法要",
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuyinxinfayao"
+    ]
+  },
+  {
+    "id": "koan-827",
+    "question": "我们净土宗人平时常拿着念珠一串串拨着念佛记数，难道这也有什么不好吗？",
+    "answer": "念珠是后来人欲记数而用，反失去身密之用，並误意密，亦不能专，身口意不密，安名瑜珈。",
+    "context": "选自《净土印心法要》末段论述念佛三密相应。",
+    "interpretation": "手一拨珠便失掉定印威仪，心一记数便分出第二念头算总数，反而把本来身口意浑然一体的清净力量切成碎片。舍数而专注，方见瑜伽力用。",
+    "master": "王骧陆",
+    "source": "净土印心法要",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "xin-zhong-xin-fa"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuyinxinfayao"
+    ]
+  },
+  {
+    "id": "koan-828",
+    "question": "有人打坐念佛到微细清静时，认为“能观和所观一切都没有了、死寂一团”，这就是最高境界了吗？",
+    "answer": "了不着意，无一毫之见存于其中，是名能所双忘。不是双亡，亡则落于断灭，忘乃无着之意，自在之境，然亦微细之习也。更进而善习亦空，空不着空，是光常寂。",
+    "context": "选自《净土印心法要》“加行八自问”后之证入层析。",
+    "interpretation": "只差“忘”与“亡”一字，定出大乘明镜空明（自在无执）与二乘顽空死水（断灭）之判然高下，并且连这“自在”也不停留，直达空不着空之寂光。",
+    "master": "王骧陆",
+    "source": "净土印心法要",
+    "relatedConcepts": [
+      "emptiness",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuyinxinfayao"
+    ]
+  },
+  {
+    "id": "koan-829",
+    "question": "既说“佛法全要靠自己明心见性才作数”，那净土宗所仰仗的阿弥陀佛临终接引还有什么意义？",
+    "answer": "此乃双方合力成就法也……譬如一人落井，迫切求出，井上有人悬绳救之，井中人尤须先自捆扎牢固，与井上人相接，斯可接引出险。",
+    "context": "选自《净土修持问题》问答核心喻辞。",
+    "interpretation": "彻底调和禅净千年来“全凭自力”与“全凭他力”的二元对立：绳子早已垂在眼前，但连绳结都不肯亲手系在身上（不愿改习收心），谁也拽不动。",
+    "master": "王骧陆",
+    "source": "净土修持问题",
+    "relatedConcepts": [
+      "chan-jing-shuangxiu",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuxiuchiwenti"
+    ]
+  },
+  {
+    "id": "koan-830",
+    "question": "净土门号称“十念即可往生、三根普被”，为什么现实里真念到稳当把握往生的人依然不多？",
+    "answer": "因其太易而轻之，遂不痛切，有佛接引，依赖心起，遂生待心，临终请人助念，平时更不必着急，是极易而转为极难。",
+    "context": "选自《净土修持问题》剖白学人“太易轻慢”之病。",
+    "interpretation": "最容易得的门票往往最容易被扔在抽屉里吃灰。因为以为有兜底、临终能突击救场，人便纵容自己一辈子散漫下去，等无常降临手足无措。",
+    "master": "王骧陆",
+    "source": "净土修持问题",
+    "relatedConcepts": [
+      "po-shengsi-xin",
+      "chan-jing-shuangxiu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuxiuchiwenti"
+    ]
+  },
+  {
+    "id": "koan-831",
+    "question": "修净土的看不起参禅太悬，学密宗的嫌念佛太浅，学禅的又笑修密太着相，到底谁正宗谁旁门？",
+    "answer": "禅宗见性成佛，净土华开见佛，密宗即身成佛，都是自己明心见性的净业。非禅宗所悟得者与密宗有二，亦非密宗见性与净土华开有异也。",
+    "context": "选自《净土修持问题》开篇总论。",
+    "interpretation": "同一块清净心地在不同根器手上换了个叫法罢了。凡在各派间相互贬低攻击者，本质上连自己那一派的“清净”门槛都尚未摸着。",
+    "master": "王骧陆",
+    "source": "净土修持问题",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "non-duality"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingtuxiuchiwenti"
+    ]
+  },
+  {
+    "id": "koan-832",
+    "question": "人到了七老八十白发苍苍、精力大不如前，学佛开悟和修行证果是不是早就来不及了？",
+    "answer": "师发已白，为发白耶，为心白耶？尊者曰：我但发白，非心白耳。毬多曰：我身十七，非性十七也。",
+    "context": "选自《观微杂说》“发白非性白”引述禅宗印度三祖与四祖印证故事。",
+    "interpretation": "头发变白、肌肉老化只是血肉皮囊遵循成住坏空规律演变；真正能闻法见性的那颗觉性从来不受岁月增减，只要一念回光，古今老少同一本来。",
+    "master": "王骧陆",
+    "source": "观微杂说",
+    "relatedConcepts": [
+      "buddha-nature",
+      "ben-lai-mian-mu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "guanweizashuo"
+    ]
+  },
+  {
+    "id": "koan-833",
+    "question": "为了健身长寿，有些人打坐喜欢专门把意念死死盯着肚脐眼下丹田或者导引运气，为什么不妥？",
+    "answer": "每日宜静坐一小时，切不可守窍练气，以防气阻血滞，最好不出声念佛或持咒，使心有所寄，必得其寿。",
+    "context": "选自《观微杂说》养身长寿法第六条“多坐”。",
+    "interpretation": "用后天妄想的念力硬去卡住体内气血，反破坏身体原本自然的循环；给心头轻轻寄托一句清净佛咒而不造作，血脉反而在极大松弛中自然周流。",
+    "master": "王骧陆",
+    "source": "观微杂说",
+    "relatedConcepts": [
+      "xin-su-wu-zhu",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "guanweizashuo"
+    ]
+  },
+  {
+    "id": "koan-834",
+    "question": "既然佛法说“万法皆空、思想只是缘影”，做人岂不是可以不管公益、凡事随缘敷衍甚至不问是非？",
+    "answer": "以既在人世，要尽世用，不许断灭，不许消极，所以明知是幻，而要用那个幻成就他那大悲的事业。",
+    "context": "选自《观微杂说》后半论述“佛子的思想”。",
+    "interpretation": "绝妙区分“小乘逃避消极”与“大乘般若入世”：看穿幻影不是让你退场罢工，而是让你不再因为怕输怕骂怕丢面子而畏缩，放开手脚行利他大悲业。",
+    "master": "王骧陆",
+    "source": "观微杂说",
+    "relatedConcepts": [
+      "non-duality",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "guanweizashuo"
+    ]
+  },
+  {
+    "id": "koan-835",
+    "question": "现代人工作忙得不可开交，就算凑齐了八小时睡觉，怎么依然感到浑身疲倦、失眠胃痛百病缠身？",
+    "answer": "于八小时工作时，不感兴趣，或工作紧张，这八小时吃力，过于十二小时，所以心难维持，日多思虑……于是诸病引起，正气日耗。",
+    "context": "选自《养生论·谈养生之道》论现代工作疲累与三八制。",
+    "interpretation": "损耗精力的真凶往往不是工作时长本身，而是内心的抗拒焦虑与“患得患失”。一旦心力内耗翻倍，再充足的睡眠也补不回神气的漏损。",
+    "master": "王骧陆",
+    "source": "养生论",
+    "relatedConcepts": [
+      "ordinary-mind",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yangshenglun"
+    ]
+  },
+  {
+    "id": "koan-836",
+    "question": "打坐调养身体时，是不是要用意识引导真气在经络里打转、冲通大小周天？",
+    "answer": "血气本来可以自然流通，却不可作意去使它流通。当排除其阻碍物，使得天然发展。而那阻碍者，正是自己的妄念颠倒作祟。",
+    "context": "选自《养生论·谈养生之道》评气功与静坐正法。",
+    "interpretation": "绝佳的禅医一味洞见：人体比大脑高明亿万倍，妄加“作意引气”不过是在添乱堵路；先停下手脚动作一小时，调息止妄，自愈大药自己会开动。",
+    "master": "王骧陆",
+    "source": "养生论",
+    "relatedConcepts": [
+      "no-abiding",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yangshenglun"
+    ]
+  },
+  {
+    "id": "koan-837",
+    "question": "身体本是肉身凡胎、吃好喝好保养即可，怎么大病一来花大钱吃好药还越来越糟？",
+    "answer": "人生无量苦恼，百苦交煎，只缘不得安心法……因为思想不搞通，贪心不息，总没有满足的时候。",
+    "context": "选自《养生论·养生祛病法》篇首。",
+    "interpretation": "如果治病只盯着皮囊修修补补，却放任焦躁、贪婪、恐死的火炉日夜在心里烧烤，就像一边向水箱加水一边底孔全漏，终非安心立命长久之计。",
+    "master": "王骧陆",
+    "source": "养生论",
+    "relatedConcepts": [
+      "xin-su-wu-zhu",
+      "po-shengsi-xin"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yangshenglun"
+    ]
+  },
+  {
+    "id": "koan-838",
+    "question": "许多精明好学的人一读佛经就一听就懂，道理说得比谁都漂亮，为何十几年过去脾气和受苦依然如旧？",
+    "answer": "灵慧者，不难在见，而难在见而能信得深，又难在信而敢于承当，尤难在勿看轻而草草忽过，更难在每日有二三十次勿忘记，以增其力。",
+    "context": "选自《点滴》开篇《丁亥天贶节赠言》。",
+    "interpretation": "把“理悟”误当“证悟”是知识分子第一大坑。知道了游泳原理而不下水划动，一遇洪峰依旧呛水；每天哪怕想起用功照破念头三十回，累积之力方成真本领。",
+    "master": "王骧陆",
+    "source": "点滴",
+    "relatedConcepts": [
+      "dunwu-jianxiu",
+      "dao-zai-riyong"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "diandi"
+    ]
+  },
+  {
+    "id": "koan-839",
+    "question": "打坐念佛参究做到心境两空、仿佛一切念头世界全都消失了，是不是就证得最高实相了？",
+    "answer": "第五门泯心泯境。此法最险，容易落入死水坑中……昔智隍枯坐二十年，即中此病，非玄策引之见六祖，便活不过来。",
+    "context": "选自《点滴·真心息妄法》第五门按语。",
+    "interpretation": "空掉杂念只是擦干净镜子表面的灰，不等于镜子能照物起用；若一头扎死在黑漆漆的“什么都没了”里面欢喜不动，便变成无记枯木，失去了活生生的觉照大用。",
+    "master": "王骧陆",
+    "source": "点滴",
+    "relatedConcepts": [
+      "kumu-chan",
+      "si-chan-bing"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "huineng"
+    ],
+    "relatedBooks": [
+      "diandi"
+    ]
+  },
+  {
+    "id": "koan-840",
+    "question": "每天忙碌还要抽空专修《金刚延寿法》求身体健康延寿，怎么发心才算合乎大乘佛法而不落世俗贪生？",
+    "answer": "不专为自己一生求寿而修，为修佛成就，用以度众生而修。以尽大悲本愿，则灵应不可思议。",
+    "context": "选自《点滴·金刚延寿法》（民国三十四年乙酉三月）。",
+    "interpretation": "同样求健康延寿，贪生怕死者心量缩成一粒芝麻；悲愿度生者借这具稳固躯壳当好船筏再多修几分功德、多帮几个人，念起即是菩萨大愿，自与法性呼应。",
+    "master": "王骧陆",
+    "source": "点滴",
+    "relatedConcepts": [
+      "putixin",
+      "cibei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "diandi"
+    ]
+  },
+  {
+    "id": "koan-841",
+    "question": "禅宗修行人读了很多公案语录，遇到规矩老实念阿弥陀佛的人总觉得对方着相、忍不住想用禅语点拨嘲笑几句，这毛病怎么破？",
+    "answer": "即修禅宗者，亦不必打讥讽引公案而分胜负。同处于生死海中，未必彼善于此……生前不往生，死后如何往生？",
+    "context": "选自《文辞与书信·弥陀法会二周年纪念辞》（1946年《觉有情》原刊）。",
+    "interpretation": "拿着祖师打碎我执的兵器去增长自己的我执与口舌傲慢，恰是典型的嘴头禅病。不论参禅念佛，各自先照见自身在生死面前有几分定力再说。",
+    "master": "王骧陆",
+    "source": "文辞与书信",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "wenzi-chan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "wenciyushuxin"
+    ]
+  },
+  {
+    "id": "koan-842",
+    "question": "现代科学飞速进步，揭示了微观粒子与相对论时空，是否会让古老的佛教世界观过时淘汰？",
+    "answer": "相对律者，以上下左右前后过去未来为对者也……而我大雄氏之言“成住坏空”四字，已尽其循环生灭之妙……独佛法逾见明显。",
+    "context": "选自《文辞与书信·〈学佛一得〉序》。",
+    "interpretation": "佛陀从不把世界描绘成固定不变的泥塑，反而早早破除了绝对时空与微观实有性；科学越深入物质底层，越反过来印证了缘起性空的大乘实相。",
+    "master": "王骧陆",
+    "source": "文辞与书信",
+    "relatedConcepts": [
+      "yuanqi",
+      "emptiness"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "wenciyushuxin"
+    ]
+  },
+  {
+    "id": "koan-843",
+    "question": "既然佛法和科学都能解析世界万物由微小因素构成，二者真正相差的根本分水岭在哪里？",
+    "answer": "是佛以科学法指示虚妄，解除众生之痛苦。而众生反以科学法执迷幻想，增进自己之烦恼。",
+    "context": "选自《文辞与书信·〈学佛一得〉序》末尾论述。",
+    "interpretation": "佛法看穿原子虚妄是为了让人“放下贪恋得解脱”；世人研究物质分子却只为了造出更精致的享乐与武器来刺激更贪婪的占有一念——工具本身无罪，用心方向全在人心。",
+    "master": "王骧陆",
+    "source": "文辞与书信",
+    "relatedConcepts": [
+      "prajna",
+      "no-abiding"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "wenciyushuxin"
+    ]
+  },
+  {
+    "id": "koan-844",
+    "question": "做超度法事或者自己在家里给先人诵经祈福，到底怎么念才真的有效，而不是徒具形式？",
+    "answer": "荐度亡灵，以通神为主。使自己心神，与亡魂相接，我如是，彼亦如是，欢喜自在……先使生者读之，顿然开悟。",
+    "context": "选自《千偈瑜珈焰口》“用法说明”总原则。",
+    "interpretation": "再华丽的佛号仪轨，倘若念经人心里散乱迷糊或充满害怕怨厌，发出的信息便是暗沉焦虑的。唯有先令生者自己读明白道理、身心清净欢喜，才真具足拨乱转迷的超拔力。",
+    "master": "王骧陆",
+    "source": "千偈瑜珈焰口",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "qianjiyujiayankou"
+    ]
+  },
+  {
+    "id": "koan-845",
+    "question": "我们没拜过金刚上师正式求授密宗手印和密咒的人，看懂《千偈瑜珈焰口》后能照着在家做吗？会不算盗法？",
+    "answer": "如无咒印者，则念皈依金刚上师皈依佛皈依法皈依僧，亦二十一通……如无此法者即用蒙山施食代之。",
+    "context": "选自《千偈瑜珈焰口》第六节、第八节按语。",
+    "interpretation": "极其体恤大众之法门善巧：在必须严守师承之密咒印处贴心预留了公开汉文替代诵法，既保全密法尊严不致盲修盗法，又不阻断普通孝子的行慈孝之路。",
+    "master": "王骧陆",
+    "source": "千偈瑜珈焰口",
+    "relatedConcepts": [
+      "fangbian",
+      "cibei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "qianjiyujiayankou"
+    ]
+  },
+  {
+    "id": "koan-846",
+    "question": "如果真向逝去亲友和六道鬼魂说法，面对痛苦深重的幽灵，第一句最切中要害的开示应该讲什么？",
+    "answer": "道在自心，心本光明，只一我见，遂障汝真，真亡心迷，永堕沉轮……佛教布施用以除贪，佛教平等用以治嗔，佛教修慧用开迷惘。",
+    "context": "选自《千偈瑜珈焰口》第七节“教授”开示正文。",
+    "interpretation": "无论人道还是鬼趣，轮回苦根全在于执着“我见”而生贪嗔痴；唯有令之当下识透自身光明本有，教以布施平等智慧三剂妙药，方为最究竟的灵魂放生。",
+    "master": "王骧陆",
+    "source": "千偈瑜珈焰口",
+    "relatedConcepts": [
+      "emptiness",
+      "prajna"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "qianjiyujiayankou"
+    ]
+  },
+  {
+    "id": "koan-847",
+    "question": "明真既是王骧陆居士的亲孙子，又亲自耗费六年推动全集出版，难道不嫌有“借家族之私推崇祖辈”的嫌疑吗？",
+    "answer": "我想为祖父出全集，并非因我是他的后代，而是因为祖父确系修证大德、得佛法精髓的佛学家。不论从修行还是从研究的角度，他的论著公诸于世，都是有益于社会的。",
+    "context": "选自《整理后记》明真诚挚剖白编纂立意之段。",
+    "interpretation": "真学者立言立行皆以是否真正利益苍生慧命为准，内举不避亲，恰因后人自己也遍参诸师、亲手印证了法脉的救世实效与不可替代的文献价值。",
+    "master": "王骧陆",
+    "source": "整理后记",
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "deng-shi-chuan-cheng"
+    ],
+    "relatedPersons": [
+      "mingzhen",
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "zhenglihouji"
+    ]
+  },
+  {
+    "id": "koan-848",
+    "question": "相比古来浩如烟海的《大藏经》疏钞和学术考据，《王骧陆居士全集》全套二十九册真正的最大特色在哪里？",
+    "answer": "本书特点不似一般佛经注释，不是重在研究教理文字，但为引导修行之资助，故通译浅近教义，以启其机，以坚其信，以正其因。",
+    "context": "选自《整理后记》精准概括全集编写特点。",
+    "interpretation": "不去卖弄高头讲章，把艰深梵义化作现代人看得懂、抓得住的直截下手处——就像真正急着医人的老良医只开对症见效药方，绝不在病床边卖弄论文长篇。",
+    "master": "王骧陆",
+    "source": "整理后记",
+    "relatedConcepts": [
+      "wenzi-bore",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "zhenglihouji"
+    ]
+  },
+  {
+    "id": "koan-849",
+    "question": "既然初祖大愚阿阇黎只留下《解脱歌》等寥寥数诗，为什么心中心法依然能传遍海内外、代代成就无数人？",
+    "answer": "大愚法师除早期《解脱歌》一首，临归隐前告别诗一首仅存外，别无著作，印心精髓尽由祖父著述……特别是祖父的传法继承人，我的师父元音老人，努力宏此大法，数十年如一日。",
+    "context": "选自《整理后记》追述大愚法师—王骧陆居士—元音老人三代传灯脉络。",
+    "interpretation": "佛法如薪火相传：大愚开其机锋与大印，王骧陆以数十年健笔建立完备理论与实修指南，元音老人再历经沧桑普传四海，缺一环皆不能成就今日心密兴盛。",
+    "master": "王骧陆",
+    "source": "整理后记",
+    "relatedConcepts": [
+      "deng-shi-chuan-cheng",
+      "xin-zhong-xin-fa"
+    ],
+    "relatedPersons": [
+      "dayu-asheli",
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "zhenglihouji"
+    ]
   }
 ];

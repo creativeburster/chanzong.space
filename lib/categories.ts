@@ -77,7 +77,19 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "yuxuanyulu",
       "biyanlu",
       "zongjinglu",
-      "yinxinyulu"
+      "yinxinyulu",
+      "tanjingshuzhi",
+      "jingangjingshouchifalueshuo",
+      "xuefozuichuzhijueding",
+      "yihaijiangyanlu",
+      "rufomingzongdawen",
+      "xinhuang",
+      "jingtuyinxinfayao",
+      "jingtuxiuchiwenti",
+      "guanweizashuo",
+      "yangshenglun",
+      "diandi",
+      "wenciyushuxin"
     ],
     "relatedPersons": [
       "mazu",
@@ -118,7 +130,13 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "jingangsanmeijing",
       "miaofalianhuajing",
       "jieshenmijing",
-      "miyanjing"
+      "miyanjing",
+      "xinjingfenduanguanshi",
+      "xinjingbaihuafenduanjieshi",
+      "jingangjingfenduanguanshi",
+      "yuanjuejingjueyin",
+      "xinjingsuishuo",
+      "renwangjinglueshuo"
     ],
     "relatedPersons": [
       "bodhidharma",
@@ -176,7 +194,8 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "ruzhongxuzhi",
       "conglinxiaodingqinggui",
       "chanlinbeiyongqinggui",
-      "zimenjingxun"
+      "zimenjingxun",
+      "qianjiyujiayankou"
     ],
     "relatedPersons": [
       "baizhang",
@@ -202,7 +221,8 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "foguojijielu",
       "congronglu",
       "xisouguanglu",
-      "yuxuanyulu"
+      "yuxuanyulu",
+      "rufomingzongdawen"
     ],
     "relatedPersons": [
       "yuanwu-keqin",
@@ -230,7 +250,10 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "chuanfazhengzongdingzutu",
       "chuanfazhengzongji",
       "xuchuandenglu",
-      "lidaifabaoji"
+      "lidaifabaoji",
+      "wangxiangluxuzhuan",
+      "wenciyushuxin",
+      "zhenglihouji"
     ],
     "relatedPersons": [
       "qisong",
@@ -261,7 +284,8 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "baojingsanmei",
       "xinxinming",
       "xinming",
-      "fangcunlun"
+      "fangcunlun",
+      "diandi"
     ],
     "relatedPersons": [
       "sengcan",
@@ -300,7 +324,25 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "jueguanlun",
       "sixingguan",
       "zhengdaoge",
-      "yinxinyulu"
+      "yinxinyulu",
+      "jingangjingbaihuashuyi",
+      "amituojingjingyilueshuo",
+      "amituojingfenduanzhengyi",
+      "xinjingsuishuo",
+      "jingangjingyisuishuo",
+      "jingangjingshiyiyijian",
+      "jingangjingshouchifalueshuo",
+      "xuefozuichuzhijueding",
+      "yihaijiangyanlu",
+      "rufomingzongdawen",
+      "xuefocongtan",
+      "xinhuang",
+      "amituoxinyao",
+      "jingtuyinxinfayao",
+      "jingtuxiuchiwenti",
+      "guanweizashuo",
+      "yangshenglun",
+      "qianjiyujiayankou"
     ],
     "relatedPersons": [
       "chinul",
@@ -350,13 +392,25 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "zongjinglu",
       "weixinjue",
       "wanshantongguiji",
-      "zhaolun"
+      "zhaolun",
+      "xinjingfenduanguanshi",
+      "xinjingbaihuafenduanjieshi",
+      "jingangjingfenduanguanshi",
+      "jingangjingbaihuashuyi",
+      "tanjingshuzhi",
+      "yuanjuejingjueyin",
+      "amituojingjingyilueshuo",
+      "amituojingfenduanzhengyi",
+      "jingangjingyisuishuo",
+      "jingangjingshiyiyijian",
+      "amituoxinyao"
     ],
     "relatedPersons": [
       "yongming-yanshou",
       "xuanzang",
       "nagarjuna",
-      "ti-po"
+      "ti-po",
+      "wang-xianglu"
     ],
     "relatedConcepts": [
       "zhuan-shi-cheng-zhi",
@@ -384,12 +438,20 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "chuanfazhengzonglun",
       "renyantianmu",
       "chanyuan_zhuquanjiduxu",
-      "zhuweimojiejing"
+      "zhuweimojiejing",
+      "renwangjinglueshuo",
+      "xuefocongtan",
+      "xinhuang",
+      "jingtuxiuchiwenti",
+      "guanweizashuo",
+      "diandi",
+      "wenciyushuxin"
     ],
     "relatedPersons": [
       "qisong",
       "konggu-jinglong",
-      "hanshan-deqing"
+      "hanshan-deqing",
+      "wang-xianglu"
     ],
     "relatedConcepts": [
       "zhengfa-yancang",
@@ -417,7 +479,14 @@ export const ZEN_CATEGORIES: CategoryItem[] = [
       "zixingcanjiu",
       "awatuotazhige",
       "ashitawakela",
-      "yinxinyulu"
+      "yinxinyulu",
+      "xuefozuichuzhijueding",
+      "yihaijiangyanlu",
+      "xuefocongtan",
+      "amituoxinyao",
+      "jingtuyinxinfayao",
+      "qianjiyujiayankou",
+      "zhenglihouji"
     ],
     "relatedPersons": [
       "lianhuasheng",

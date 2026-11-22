@@ -4228,5 +4228,119 @@ export const ZEN_METHODS: MethodItem[] = [
       "yinxinyulu",
       "dahuiyulu"
     ]
+  },
+  {
+    "id": "chi-ming-kan-xin-fa",
+    "title": "禅净双修持名印心法",
+    "summary": "王骧陆居士于《阿弥陀经》及《净土印心法要》所立之禅净密融合念佛法门。反对把念佛当作糊涂求福报的外道依赖法，主张口持金刚持不出声、手结弥陀印、心则回光看清“能念之物究为何物”，念至能所双忘与自性弥陀相印。",
+    "steps": [
+      "正其因地：明确念佛目的在断烦恼、了生死、见自性弥陀，而非求世间福报",
+      "三密相应：手结弥陀定印、唇微动金刚默持（不伤气）、心念专注观照佛德光明",
+      "动中每日十照：下座后于日常顺逆人事至少反躬观照十次，检验爱憎习气",
+      "克期取证：如行净七，每日限时上座不急不躁，不求见光见佛等幻相，直证一心不乱"
+    ],
+    "pitfalls": [
+      "最忌不顾平时习气，妄想全靠死后佛来接引之单修依赖心",
+      "最忌连日大声高喊耗伤肺气，或贪看幻光幻佛招引魔扰"
+    ],
+    "classicRef": "净土印心法要 · 净土修持问题",
+    "relatedConcepts": [
+      "chan-jing-mi-gui-yuan",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "amituojingjingyilueshuo",
+      "amituojingfenduanzhengyi",
+      "amituoxinyao",
+      "jingtuyinxinfayao",
+      "jingtuxiuchiwenti"
+    ]
+  },
+  {
+    "id": "tiao-xi-yang-sheng-fa",
+    "title": "静坐息心与心素养生法",
+    "summary": "出自王骧陆《养生论》及《观微杂说》，将佛家“万缘放下”与中医水火相济、导引护生法门结合的实用身心里疗体系。主张“卫生（养心安神）高于卫身（安适起居）”，先不胡思乱想扰动病体，配以静坐、掐足三里、叩齿等法调顺四大。",
+    "steps": [
+      "立决定心：停止在心里反复忧虑病情，做到“不许再去打扰病体，只做个无事人”",
+      "百日静坐：每日恒常静坐息心，令心息神安、水火相济、血气流畅",
+      "人事摄心：白天应事忌恼怒忧疑之“乱”字，保持心气和平",
+      "破除二见：修行心素，不因蔬食而自鸣功德，亦不强压贪味而生虚伪"
+    ],
+    "pitfalls": [
+      "切忌单靠营养进补（卫身）却整日怒虑烦乱（失却卫生）",
+      "切忌“舌素心荤”，表面持素而内心充满嗔恨攀比"
+    ],
+    "classicRef": "养生论 · 观微杂说",
+    "relatedConcepts": [
+      "xin-su-wu-zhu",
+      "yin-xin-wu-zhu"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "yangshenglun",
+      "guanweizashuo",
+      "xinhuang"
+    ]
+  },
+  {
+    "id": "yan-kou-jie-yuan-fa",
+    "title": "千偈瑜珈焰口在家施食法",
+    "summary": "王骧陆居士于1934年专为在家居士简编的焰口施食与普利法门。破除传统法会必须繁琐铺张的限制，重在行者以自性空观作“忏悔如除掌中油垢”“解冤即转化心念”等观想，借神咒之力普济幽冥并消融自身我执。",
+    "steps": [
+      "依式设坛：奉请五方如来，在家简易净洁即可，不必铺张费财",
+      "观空忏悔：作一切罪业如梦幻本空之观，自掌净则诸障自消",
+      "慈光施食：观想咒光遍照法界，众生饱满清凉、冤亲平等",
+      "解冤回向：化仇怨为欢喜度化愿力，一切放下后安住无住本心"
+    ],
+    "pitfalls": [
+      "切忌只照本念诵字句而不起悲心与性空观照",
+      "切忌将施食当作外道求鬼神护佑之交易心态"
+    ],
+    "classicRef": "千偈瑜珈焰口",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "qianjiyujiayankou"
+    ]
+  },
+  {
+    "id": "jin-gang-shou-chi-fa",
+    "title": "金刚般若无住受持法",
+    "summary": "综合王骧陆居士《金刚经分段贯释》《受持法略说》《释义意见》归纳出的读诵参修《金刚经》之五步活参路线：释文、释疑（天亲二十七疑）、释住（无著十八住）、释旨、释心，最终达到对境“不住色布施、心行无所住”的真实受用。",
+    "steps": [
+      "由文入义：借注疏通解全经结构，打破对字面复句的困惑",
+      "破我人四相：于日常布施、待人处事中不存“我在施、我在度”的傲慢",
+      "不住而住：在眼耳鼻舌身意接触六尘当口，随缘应物而不粘滞境界",
+      "以心印经：离开书本文字，在生活烦难中亲证三心不可得之空明妙体"
+    ],
+    "pitfalls": [
+      "切忌仅把《金刚经》当成求福消灾的祈祷书机械念诵",
+      "切忌把“一切有为法如梦幻泡影”误解为什么责任都不管的断灭空"
+    ],
+    "classicRef": "金刚般若波罗蜜经受持法略说 · 金刚经释义意见",
+    "relatedConcepts": [
+      "yin-xin-wu-zhu",
+      "zheng-shou-san-mei"
+    ],
+    "relatedPersons": [
+      "wang-xianglu"
+    ],
+    "relatedBooks": [
+      "jingangjingfenduanguanshi",
+      "jingangjingbaihuashuyi",
+      "jingangjingyisuishuo",
+      "jingangjingshiyiyijian",
+      "jingangjingshouchifalueshuo"
+    ]
   }
 ];

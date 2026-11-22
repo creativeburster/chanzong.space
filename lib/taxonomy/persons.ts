@@ -7282,7 +7282,35 @@ export const ZEN_PERSONS: PersonItem[] = [
       "借有法法，证无心心，寂灭轻安，敢云究竟？"
     ],
     "classics": [
-      "印心语录"
+      "印心语录",
+      "王骧陆居士序传",
+      "般若波罗蜜多心经分段贯释",
+      "般若波罗蜜多心经白话分段解释",
+      "金刚般若波罗蜜经分段贯释",
+      "金刚般若波罗蜜经白话述义",
+      "大鉴禅师法宝坛经述旨",
+      "大方广圆觉修多罗了义经抉隐",
+      "佛说阿弥陀经经义略说",
+      "佛说阿弥陀经分段正义",
+      "心经随说",
+      "金刚经义随说",
+      "金刚经释义意见",
+      "金刚般若波罗蜜经受持法略说",
+      "仁王护国般若波罗蜜多经略说",
+      "学佛最初之决定",
+      "乙亥讲演录",
+      "入佛明宗答问",
+      "学佛丛谈",
+      "心锽",
+      "阿弥陀心要",
+      "净土印心法要",
+      "净土修持问题",
+      "观微杂说",
+      "养生论",
+      "点滴",
+      "文辞与书信",
+      "千偈瑜珈焰口",
+      "整理后记"
     ],
     "relatedConcepts": [
       "si-chan-bing",
@@ -7301,14 +7329,111 @@ export const ZEN_PERSONS: PersonItem[] = [
       "huineng",
       "dahui-zonggao",
       "luohouluo",
-      "bodhidharma"
+      "bodhidharma",
+      "dayu-asheli",
+      "mingzhen"
     ],
     "relatedBooks": [
       "yinxinyulu",
+      "wangxiangluxuzhuan",
+      "xinjingfenduanguanshi",
+      "xinjingbaihuafenduanjieshi",
+      "jingangjingfenduanguanshi",
+      "jingangjingbaihuashuyi",
+      "tanjingshuzhi",
+      "yuanjuejingjueyin",
+      "amituojingjingyilueshuo",
+      "amituojingfenduanzhengyi",
+      "xinjingsuishuo",
+      "jingangjingyisuishuo",
+      "jingangjingshiyiyijian",
+      "jingangjingshouchifalueshuo",
+      "renwangjinglueshuo",
+      "xuefozuichuzhijueding",
+      "yihaijiangyanlu",
+      "rufomingzongdawen",
+      "xuefocongtan",
+      "xinhuang",
+      "amituoxinyao",
+      "jingtuyinxinfayao",
+      "jingtuxiuchiwenti",
+      "guanweizashuo",
+      "yangshenglun",
+      "diandi",
+      "wenciyushuxin",
+      "qianjiyujiayankou",
+      "zhenglihouji",
       "tanjing",
       "dahuiyulu",
       "jingangjing",
       "xinjing"
+    ]
+  },
+  {
+    "id": "dayu-asheli",
+    "name": "大愚阿阇黎",
+    "title": "印心宗开山初祖 · 庐山东林寺苦修高僧",
+    "era": "清末民初（1888—1946）",
+    "lifeStory": "大愚法师（1888—1946），法名慈观，号大愚阿阇黎，近现代印心宗（无相密心中心法）开山初祖。早年参禅修苦行，精进勤劬。二十世纪二十年代目睹世乱人苦、学佛者难得要领，乃入庐山闭关苦修七年，于深定中蒙普贤菩萨灌顶授受《佛心经品亦通大随求陀罗尼》之核心六印一咒（即“心中心密法”）。出关后赴京津沪各地大弘佛法、随机救度，传法弟子以王骧陆居士最为著称。后为避世纷隐迹不知所终，遗世仅存《解脱歌》与《告别诗》等珍贵法语。",
+    "teachings": "大愚初祖所开之“心中心法”，乃直证心田之无相密部法门，融合禅净密于一炉，强调三分之二仗诸佛慈力、三分之一赖行者自力，先从第八识修起，首破无明亲见本来面目，而后于日用尘劳中消磨习气，令末世忙碌学人可在二三年内稳妥明心见性。",
+    "quotes": [
+      "此乃直证心田之妙法，先破无明，后除习气。",
+      "悟后起修，于尘劳中消磨无始习气。"
+    ],
+    "classics": [
+      "王骧陆居士序传",
+      "大方广圆觉修多罗了义经抉隐",
+      "印心语录"
+    ],
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "chan-jing-mi-gui-yuan",
+      "jianxing-chengfo"
+    ],
+    "relatedMethods": [
+      "xin-zhong-xin-mi-yin-fa",
+      "yi-xin-yin-xin-fa"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "mingzhen"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan",
+      "yuanjuejingjueyin",
+      "yinxinyulu",
+      "zhenglihouji"
+    ]
+  },
+  {
+    "id": "mingzhen",
+    "name": "明真",
+    "title": "《王骧陆居士全集》编校整理者 · 印心宗法嗣后学",
+    "era": "近现代",
+    "lifeStory": "明真，王骧陆居士之嫡孙、元音老人（李钟鼎）之入室弟子，毕生致力于先祖父王骧陆居士佛学著作的抢救搜集与编校整理，曾任《中国密宗大典》主编之一。因十年动乱期间王骧陆手稿多遭焚毁，明真与其父王科祥奔走津沪杭等地遍访同门师伯弟子，在元音老人全力支持与无锡祥符禅寺、金陵刻经处助力下，历时六年终将幸存二十九册文稿辑成《王骧陆居士全集》，并亲撰《王骧陆居士传略》与《整理后记》留芳后世。",
+    "teachings": "极力阐明先祖父王骧陆“学佛是要认识自己、了达人生观、不是消极自利”的入世救世精神，指出心中心法“目的在印心、得真实受用”，并强调以简明易懂之注疏引导初学破除门户之见。",
+    "quotes": [
+      "我人所修，在于求得根本，目的是在印心，得真实受用。",
+      "佛法是人生最主要的学问，最重大的事业，不是消极自利。"
+    ],
+    "classics": [
+      "王骧陆居士序传",
+      "整理后记"
+    ],
+    "relatedConcepts": [
+      "xin-zhong-xin-fa",
+      "chan-jing-mi-gui-yuan"
+    ],
+    "relatedMethods": [
+      "xin-zhong-xin-mi-yin-fa"
+    ],
+    "relatedPersons": [
+      "wang-xianglu",
+      "dayu-asheli"
+    ],
+    "relatedBooks": [
+      "wangxiangluxuzhuan",
+      "zhenglihouji"
     ]
   }
 ];
