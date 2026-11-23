@@ -87,18 +87,25 @@ function renderHighlighted(text: string, query: string, keyPrefix: string): Reac
 }
 
 function renderInlineFormatting(text: string, query: string, keyPrefix: string): React.ReactNode {
-  const tokenRegex = /(\*\*[^*]+\*\*|`[^`]+`)/g;
+  const tokenRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   const segments = text.split(tokenRegex);
   return segments.map((seg, i) => {
     const k = `${keyPrefix}-${i}`;
-    if (seg.startsWith('**') && seg.endsWith('**') && seg.length > 4) {
+    if (seg.startsWith('**') && seg.endsWith('**') && seg.length >= 4) {
       return (
         <strong key={k} className="font-bold text-slate-900">
           {renderHighlighted(seg.slice(2, -2), query, k)}
         </strong>
       );
     }
-    if (seg.startsWith('`') && seg.endsWith('`') && seg.length > 2) {
+    if (seg.startsWith('*') && seg.endsWith('*') && seg.length >= 2) {
+      return (
+        <em key={k} className="font-semibold text-amber-900 not-italic">
+          {renderHighlighted(seg.slice(1, -1), query, k)}
+        </em>
+      );
+    }
+    if (seg.startsWith('`') && seg.endsWith('`') && seg.length >= 2) {
       return (
         <span
           key={k}
@@ -129,38 +136,60 @@ function RichParagraph({
     const heading = text.replace(/^####\s+/, '');
     return (
       <h4 className="text-base sm:text-lg font-bold font-serif-zen text-amber-900 pt-3 pb-1 border-b border-amber-900/10">
-        {renderHighlighted(heading, query, 'h4')}
+        {renderInlineFormatting(heading, query, 'h4')}
       </h4>
     );
   }
 
-  const lines = text.split('\n').filter((l) => l.trim().length > 0);
-  const allBullets = lines.length > 0 && lines.every((l) => /^(-|\d+\.)\s/.test(l.trim()));
-
-  if (allBullets) {
-    return (
-      <ul className={`space-y-2.5 pl-4 border-l-2 border-amber-300/70 ${fontSizeClass} text-slate-700 leading-relaxed`}>
-        {lines.map((ln, idx) => {
-          const clean = ln.trim().replace(/^-\s+/, '');
-          return (
-            <li key={idx} className="leading-relaxed">
-              {renderInlineFormatting(clean, query, `li-${idx}`)}
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
+  const lines = text.split('\n');
 
   return (
-    <p className={`${fontSizeClass} text-slate-700 leading-[1.9]`}>
-      {lines.map((ln, idx) => (
-        <React.Fragment key={idx}>
-          {idx > 0 && <br />}
-          {renderInlineFormatting(ln, query, `p-${idx}`)}
-        </React.Fragment>
-      ))}
-    </p>
+    <div className={`space-y-2 ${fontSizeClass} text-slate-700 leading-relaxed`}>
+      {lines.map((ln, idx) => {
+        const trimmed = ln.trim();
+        const k = `p-${idx}`;
+        if (!trimmed) {
+          return <div key={k} className="h-1.5" />;
+        }
+
+        // 匹配有序编号列表：如 "1. "、"2. "
+        const orderedMatch = trimmed.match(/^(\d+)\.\s+(.*)$/);
+        if (orderedMatch) {
+          return (
+            <div key={k} className="flex items-start gap-2.5 my-1 pl-1 leading-relaxed">
+              <span className="select-none font-bold text-amber-800 text-xs mt-1 w-5 shrink-0 text-right">
+                {orderedMatch[1]}.
+              </span>
+              <div className="flex-1 leading-relaxed">
+                {renderInlineFormatting(orderedMatch[2], query, `ol-${idx}`)}
+              </div>
+            </div>
+          );
+        }
+
+        // 匹配无序列表：如 "- "、"* "
+        const bulletMatch = trimmed.match(/^[-*]\s+(.*)$/);
+        if (bulletMatch) {
+          return (
+            <div key={k} className="flex items-start gap-2.5 my-1 pl-1 leading-relaxed">
+              <span className="select-none text-amber-700/80 font-bold text-sm shrink-0 mt-0.5 leading-none">
+                •
+              </span>
+              <div className="flex-1 leading-relaxed">
+                {renderInlineFormatting(bulletMatch[1], query, `ul-${idx}`)}
+              </div>
+            </div>
+          );
+        }
+
+        // 普通正文行
+        return (
+          <p key={k} className="leading-[1.9]">
+            {renderInlineFormatting(ln, query, k)}
+          </p>
+        );
+      })}
+    </div>
   );
 }
 
@@ -635,11 +664,11 @@ export default function WangXiangluClient() {
                   className="p-4 rounded-2xl bg-amber-50/50 border border-amber-200/80 space-y-2"
                 >
                   <blockquote className="font-serif-zen text-[15px] sm:text-base font-semibold text-amber-950 leading-relaxed">
-                    “{renderHighlighted(t(q.original), query, `${sec.id}-qo-${qIdx}`)}”
+                    “{renderInlineFormatting(t(q.original), query, `${sec.id}-qo-${qIdx}`)}”
                   </blockquote>
                   <p className="text-sm text-slate-700 leading-relaxed">
                     <span className="font-bold text-amber-800">{t('点睛：')}</span>
-                    {renderHighlighted(t(q.insight), query, `${sec.id}-qi-${qIdx}`)}
+                    {renderInlineFormatting(t(q.insight), query, `${sec.id}-qi-${qIdx}`)}
                   </p>
                 </div>
               ))}
@@ -658,7 +687,7 @@ export default function WangXiangluClient() {
               <ChevronRight className="w-4 h-4 text-slate-400 transition-transform group-open:rotate-90" />
             </summary>
             <div className="px-4 pb-4 pt-2 border-t border-zinc-200/80 font-serif-zen text-sm text-slate-700 whitespace-pre-wrap leading-relaxed">
-              {renderHighlighted(t(sec.originalExcerpt), query, `${sec.id}-orig`)}
+              {renderInlineFormatting(t(sec.originalExcerpt), query, `${sec.id}-orig`)}
             </div>
           </details>
         )}
@@ -687,9 +716,9 @@ export default function WangXiangluClient() {
           <h3 className="text-xl sm:text-2xl font-extrabold font-serif-zen text-slate-900">
             {renderHighlighted(t(qa.title), query, `${qa.id}-t`)}
           </h3>
-          <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-slate-700">
+          <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-slate-700 leading-relaxed">
             <span className="font-bold text-slate-900">{t('共读缘起提问：')}</span>
-            {renderHighlighted(t(qa.userQuestion), query, `${qa.id}-uq`)}
+            {renderInlineFormatting(t(qa.userQuestion), query, `${qa.id}-uq`)}
           </div>
           <div className="flex flex-wrap gap-1.5">
             {qa.tags.map((tg) => (
@@ -708,7 +737,7 @@ export default function WangXiangluClient() {
             <div key={bIdx} className="space-y-3">
               {blk.heading && (
                 <h4 className="text-base sm:text-lg font-bold font-serif-zen text-amber-900 pt-1">
-                  {renderHighlighted(t(blk.heading), query, `${qa.id}-bh-${bIdx}`)}
+                  {renderInlineFormatting(t(blk.heading), query, `${qa.id}-bh-${bIdx}`)}
                 </h4>
               )}
               {blk.quote && (
@@ -1174,11 +1203,11 @@ export default function WangXiangluClient() {
                               </button>
                             </div>
                             <blockquote className="font-serif-zen text-base sm:text-lg font-semibold text-amber-950 leading-relaxed border-l-4 border-amber-600 pl-3.5 py-1 bg-amber-50/50 rounded-r-xl">
-                              “{renderHighlighted(t(item.quote.original), query, `${item.id}-o`)}”
+                              “{renderInlineFormatting(t(item.quote.original), query, `${item.id}-o`)}”
                             </blockquote>
                             <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed">
                               <span className="font-bold text-amber-800">{t('白话点睛：')}</span>
-                              {renderHighlighted(t(item.quote.insight), query, `${item.id}-i`)}
+                              {renderInlineFormatting(t(item.quote.insight), query, `${item.id}-i`)}
                             </p>
                           </article>
                         ))}

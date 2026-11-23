@@ -5,6 +5,7 @@ import { BookOpen, Copy, Check, Volume2, Sparkles, Compass, HelpCircle, Layers, 
 import { injectGlossaryMarkups } from './InlineGlossaryTooltip';
 import type { GlossaryEntry } from '@/lib/glossary';
 import { useLang } from '@/context/LangContext';
+import { FormattedMarkdown } from '@/components/FormattedMarkdown';
 
 interface BilingualReaderProps {
   classicId: string;
@@ -156,18 +157,18 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
 
         {/* 导读与核心旨趣 */}
         {guide && (
-          <div className={`${currentTheme.cardBg} p-5 sm:p-8 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-sm space-y-3`}>
+          <div className={`${currentTheme.cardBg} p-5 sm:p-8 rounded-2xl sm:rounded-3xl border ${currentTheme.cardBorder} shadow-sm space-y-4`}>
             <div className="flex items-center space-x-2 text-amber-800 dark:text-amber-400 font-bold text-[15px]">
               <Compass className="w-4 h-4" />
               <span>{t('💡 现代白话导读与核心旨趣')}</span>
             </div>
-            <p className={`text-[15px] sm:text-[16px] leading-relaxed font-serif-zen ${currentTheme.proseText} whitespace-pre-line`}>
-              {t(guide)}
-            </p>
+            <div className={`text-[15px] sm:text-[16px] leading-relaxed font-serif-zen ${currentTheme.proseText}`}>
+              <FormattedMarkdown content={t(guide)} />
+            </div>
             {gist && (
               <div className="mt-3 pt-3 border-t border-amber-900/10 dark:border-amber-900/40 text-[13px] text-amber-900 dark:text-amber-300 bg-amber-50/50 dark:bg-amber-950/30 p-3.5 rounded-xl">
                 <span className="font-bold mr-1.5">{t('核心主旨')}：</span>
-                {t(gist)}
+                <FormattedMarkdown content={t(gist)} className="inline" />
               </div>
             )}
           </div>
@@ -180,8 +181,8 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
               <Quote className="w-4 h-4" />
               <span>{t('🗣️ 名句白话精析')}</span>
             </div>
-            <div className={`text-[14px] sm:text-[15px] leading-relaxed font-serif-zen ${currentTheme.secondaryText} whitespace-pre-line bg-black/5 dark:bg-white/5 p-4 rounded-xl`}>
-              {t(quotes)}
+            <div className={`text-[14px] sm:text-[15px] leading-relaxed font-serif-zen ${currentTheme.secondaryText} bg-black/5 dark:bg-white/5 p-4 sm:p-5 rounded-2xl`}>
+              <FormattedMarkdown content={t(quotes)} />
             </div>
           </div>
         )}
@@ -221,13 +222,13 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
                   </button>
                 </div>
               </div>
-              <p
+              <div
                 className={`font-serif-zen ${currentTheme.proseText} leading-loose ${
                   fontSize === 'large' ? 'text-[18px] sm:text-[20px]' : 'text-[16px] sm:text-[17px]'
                 }`}
               >
-                {t(para)}
-              </p>
+                <FormattedMarkdown content={t(para)} />
+              </div>
             </div>
           ))}
         </div>
@@ -373,15 +374,15 @@ export const BilingualReader: React.FC<BilingualReaderProps> = ({
                     </div>
 
                     {pair.translation ? (
-                      <p
+                      <div
                         className={`font-serif-zen text-stone-800 dark:text-stone-200 ${
                           fontSize === 'large'
                             ? 'text-[17px] sm:text-[19px] leading-loose'
                             : 'text-[15px] sm:text-[17px] leading-relaxed'
                         }`}
                       >
-                        {t(pair.translation)}
-                      </p>
+                        <FormattedMarkdown content={t(pair.translation)} />
+                      </div>
                     ) : (
                       <p className="text-xs text-stone-400 italic">
                         {t('（本段今释整理中，请参详左侧古文与文末白话今译）')}

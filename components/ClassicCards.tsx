@@ -12,6 +12,7 @@ import { ExtractedCards, KoanItem, inferHistory } from '@/lib/extractCards';
 import { ClassicItem } from '@/lib/data';
 import { PersonItem, MethodItem } from '@/lib/taxonomy';
 import ZenQuoteCardModal from '@/components/ZenQuoteCardModal';
+import { FormattedMarkdown } from '@/components/FormattedMarkdown';
 
 /* ===================== 通用可折叠卡片容器 ===================== */
 const CollapsibleCard: React.FC<{
@@ -67,18 +68,11 @@ export const VerseCard: React.FC<{ verses: string[] }> = ({ verses }) => {
       <div className="space-y-4">
         {verses.map((verse, i) => {
           const isHidden = shouldLimit && !expanded && i >= INITIAL_LIMIT;
-          const parts = verse.split(/\*\*/);
           return (
             <div key={i} className={`${isHidden ? 'hidden' : 'block'} p-4 rounded-2xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200/50 dark:border-amber-900/50`}>
-              <p className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-amber-900 dark:text-amber-200">
-                {parts.map((part, j) =>
-                  j % 2 === 1 ? (
-                    <strong key={j} className="text-amber-800 dark:text-amber-300 font-bold">{part}</strong>
-                  ) : (
-                    <span key={j}>{part}</span>
-                  )
-                )}
-              </p>
+              <div className="text-[15px] sm:text-[16px] leading-relaxed font-serif-zen text-amber-900 dark:text-amber-200">
+                <FormattedMarkdown content={t(verse)} />
+              </div>
             </div>
           );
         })}

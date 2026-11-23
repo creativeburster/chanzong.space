@@ -16,6 +16,10 @@ export interface ExtractedCards {
 /** 从markdown原文中提取偈颂（连续短句韵文段落） */
 function extractVerses(content: string): string[] {
   const verses: string[] = [];
+  // 优先从典籍原文正文中提取，避免将导读区加粗误判为偈颂
+  const bodyMatch = content.match(/##\s*📜?\s*典籍原文([\s\S]*)/);
+  const targetContent = bodyMatch ? bodyMatch[1] : content;
+
   // 匹配显式偈颂段落
   const versePatterns = [
     /偈[曰云]?\s*[：:]\s*([\s\S]{10,300}?)(?=\n\n|\n###|\n##|$)/g,
@@ -24,17 +28,17 @@ function extractVerses(content: string): string[] {
   ];
   for (const pat of versePatterns) {
     let m;
-    while ((m = pat.exec(content)) !== null) {
+    while ((m = pat.exec(targetContent)) !== null) {
       const text = m[1].trim().replace(/\n+/g, '，').replace(/，{2,}/g, '，');
       if (text.length > 10 && text.length < 500 && !verses.some(v => v === text)) {
         verses.push(text);
       }
     }
   }
-  // 匹配markdown中的加粗偈颂行（如五位颂）
+  // 匹配markdown正文中的加粗偈颂行（如五位颂）
   const boldPattern = /\*\*([^*]{4,20})\*\*[：:]\s*([^*\n]{10,100})/g;
   let bm: RegExpExecArray | null;
-  while ((bm = boldPattern.exec(content)) !== null) {
+  while ((bm = boldPattern.exec(targetContent)) !== null) {
     const text = `**${bm[1]}**：${bm[2].trim()}`;
     if (!verses.some(v => v.includes(bm![1]))) {
       verses.push(text);

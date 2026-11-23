@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { BookText, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLang } from '@/context/LangContext';
+import { FormattedMarkdown } from '@/components/FormattedMarkdown';
 
 const PAGE_SIZE = 4;
 
@@ -44,15 +45,17 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({ classicId, tra
               {paragraphs.map((p, i) => {
                 const isVisible = i >= page * PAGE_SIZE && i < (page + 1) * PAGE_SIZE;
                 return (
-                  <p
+                  <div
                     key={i}
                     className={`${
-                      isVisible ? 'block' : 'hidden'
+                      isVisible ? 'flex items-start gap-2.5' : 'hidden'
                     } text-[16px] font-serif-zen text-zinc-700 leading-loose bg-amber-50/50 px-5 py-4 rounded-2xl border border-amber-200/50`}
                   >
-                    <span className="text-xs font-bold text-amber-700 mr-2">{i + 1}.</span>
-                    {t(p)}
-                  </p>
+                    <span className="text-xs font-bold text-amber-700 mt-1 shrink-0">{i + 1}.</span>
+                    <div className="flex-1 leading-relaxed">
+                      <FormattedMarkdown content={t(p)} />
+                    </div>
+                  </div>
                 );
               })}
             </div>
