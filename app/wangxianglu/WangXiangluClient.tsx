@@ -283,6 +283,15 @@ export default function WangXiangluClient() {
     });
   }, [normalizedQuery, t]);
 
+  // 当用户搜索时，如果正篇中无匹配但问答中存在匹配，智能自动切换到问答 Tab
+  useEffect(() => {
+    if (normalizedQuery) {
+      if (flatSections.length === 0 && filteredDiscussions.length > 0 && viewMode === 'translations') {
+        setViewMode('discussions');
+      }
+    }
+  }, [normalizedQuery, flatSections.length, filteredDiscussions.length, viewMode]);
+
   const allQuotes = useMemo<FlatQuoteItem[]>(() => {
     const items: FlatQuoteItem[] = [];
     for (const book of WXL_BOOKS_NOTES) {
@@ -380,21 +389,21 @@ export default function WangXiangluClient() {
       id: 'translations',
       tabId: 'wxl-tab-translations',
       panelId: 'wxl-panel-translations',
-      label: `正篇白话精译（${totalTranslatedSections}节）`,
+      label: normalizedQuery ? `正篇精译 (${flatSections.length})` : `正篇白话精译（${totalTranslatedSections}节）`,
       icon: BookOpen,
     },
     {
       id: 'discussions',
       tabId: 'wxl-tab-discussions',
       panelId: 'wxl-panel-discussions',
-      label: `共读问答备忘（${WXL_DISCUSSIONS.length}篇）`,
+      label: normalizedQuery ? `共读问答 (${filteredDiscussions.length})` : `共读问答备忘（${WXL_DISCUSSIONS.length}篇）`,
       icon: MessageCircle,
     },
     {
       id: 'quotes',
       tabId: 'wxl-tab-quotes',
       panelId: 'wxl-panel-quotes',
-      label: `原典金句速查（${totalQuotesCount}句）`,
+      label: normalizedQuery ? `原典金句 (${allQuotes.length})` : `原典金句速查（${totalQuotesCount}句）`,
       icon: Quote,
     },
     {
@@ -992,19 +1001,45 @@ export default function WangXiangluClient() {
                   </div>
 
                   {flatSections.length === 0 ? (
-                    <div className="bg-white rounded-3xl border border-slate-200 p-10 text-center space-y-3">
-                      <p className="text-sm text-slate-500">
-                        {t('正篇精译中未检索到匹配关键词的内容。')}
+                    <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 text-center space-y-4">
+                      <p className="text-sm text-slate-600 font-medium">
+                        {t('正篇白话精译中未检索到匹配内容。')}
                       </p>
+                      {filteredDiscussions.length > 0 && (
+                        <div className="pt-1">
+                          <button
+                            type="button"
+                            onClick={() => setViewMode('discussions')}
+                            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-2xl bg-amber-100 text-amber-900 text-xs sm:text-sm font-bold hover:bg-amber-200 transition-colors shadow-xs"
+                          >
+                            <MessageCircle className="w-4 h-4 text-amber-700" />
+                            <span>{t(`在【共读问答备忘】中找到 ${filteredDiscussions.length} 篇相关讨论，点击前往查看 ➔`)}</span>
+                          </button>
+                        </div>
+                      )}
+                      {allQuotes.length > 0 && (
+                        <div>
+                          <button
+                            type="button"
+                            onClick={() => setViewMode('quotes')}
+                            className="inline-flex items-center space-x-2 px-4 py-2 rounded-2xl bg-slate-100 text-slate-800 text-xs sm:text-sm font-bold hover:bg-slate-200 transition-colors"
+                          >
+                            <Quote className="w-4 h-4 text-slate-600" />
+                            <span>{t(`在【原典金句速查】中找到 ${allQuotes.length} 句相关金句，点击前往查看 ➔`)}</span>
+                          </button>
+                        </div>
+                      )}
                       {query && (
-                        <button
-                          type="button"
-                          onClick={() => setQuery('')}
-                          className="inline-flex items-center space-x-1 text-xs font-bold text-amber-800 hover:underline"
-                        >
-                          <RotateCcw className="w-3.5 h-3.5" />
-                          <span>{t('清空搜索词')}</span>
-                        </button>
+                        <div className="pt-2">
+                          <button
+                            type="button"
+                            onClick={() => setQuery('')}
+                            className="inline-flex items-center space-x-1 text-xs font-bold text-slate-500 hover:text-amber-800 hover:underline"
+                          >
+                            <RotateCcw className="w-3.5 h-3.5" />
+                            <span>{t('清空搜索词')}</span>
+                          </button>
+                        </div>
                       )}
                     </div>
                   ) : (
